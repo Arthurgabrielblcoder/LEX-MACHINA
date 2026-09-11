@@ -483,7 +483,7 @@ int avancoGlyphArimo(uint16_t cp)
 // =====================================================
 // ESTADO GERAL
 // =====================================================
-enum TelaAtual { TELA_PASTAS, TELA_LEITOR };
+enum TelaAtual { TELA_PASTAS, TELA_LEITOR, TELA_PRINCIPAL };
 TelaAtual telaAtual = TELA_PASTAS;
 
 bool tecladoConectado = false;
@@ -497,6 +497,7 @@ bool sdOK = false;
 #define PASTAS_VISIVEIS 6
 
 String pastas[MAX_PASTAS];
+bool itemEhPasta[MAX_PASTAS];
 int totalPastas = 0;
 int pastaSelecionada = 0;
 int primeiraPastaVisivel = 0;
@@ -512,7 +513,7 @@ volatile bool pedirRedesenharBusca = false;
 // =====================================================
 // LEITOR TXT
 // =====================================================
-String pastaAtual = "";
+String pastaAtual = "/";
 String caminhoArquivoAtual = "";
 String nomeArquivoAtual = "";
 String artigoDigitado = "";
@@ -553,6 +554,8 @@ uint16_t bufferLinhaLeitor[LEITOR_BUFFER_W * LEITOR_LINHA_H];
 bool touchAtivo = false;
 int ultimoTouchY = 0;
 int acumuladorTouch = 0;
+int inicioTouchX=0, inicioTouchY=0, itemTouch=-1;
+bool touchArrastou=false, touchConsumido=false;
 
 // =====================================================
 // UTF-8 / ACENTOS PORTUGUESES
@@ -774,31 +777,44 @@ bool terminaComTXT(String nome)
   return nome.endsWith(".txt");
 }
 
-bool carregarPastas()
+String caminhoFilho(const String &pasta, const String &nome)
 {
+  return pasta=="/" ? "/"+nome : pasta+"/"+nome;
+}
+
+bool carregarPastas(const String &caminho)
+{
+  // Falhas de abertura preservam o contexto anterior.
+  if(!sdOK){statusSD="ERRO: CARTAO SD NAO ENCONTRADO"; return false;}
+  File dir=SD.open(caminho.c_str());
+  if(!dir || !dir.isDirectory()){
+    if(dir) dir.close();
+    statusSD="ERRO AO ABRIR PASTA";
+    return false;
+  }
+  pastaAtual=caminho;
+  for(int i=0;i<MAX_PASTAS;i++){pastas[i]=""; itemEhPasta[i]=false;}
   totalPastas=0;
   pastaSelecionada=0;
   primeiraPastaVisivel=0;
-
-  if(!sdOK){statusSD="ERRO: CARTAO SD NAO ENCONTRADO"; return false;}
-
-  File raiz=SD.open("/");
-  if(!raiz){statusSD="ERRO AO ABRIR SD"; return false;}
-
-  while(totalPastas<MAX_PASTAS){
-    File item=raiz.openNextFile();
+  bool limitado=false;
+  while(true){
+    File item=dir.openNextFile();
     if(!item) break;
-    if(item.isDirectory()){
-      String nome=somenteNome(String(item.name()));
-      if(nome.length()>0 && nome!="System Volume Information" && nome!="." && nome!="..")
-        pastas[totalPastas++]=nome;
-    }
+    String nome=somenteNome(String(item.name()));
+    bool pasta=item.isDirectory();
+    bool incluir=nome.length()>0 && nome!="System Volume Information" &&
+                 nome!="." && nome!=".." && (pasta || terminaComTXT(nome));
     item.close();
+    if(!incluir) continue;
+    if(totalPastas>=MAX_PASTAS){limitado=true; break;}
+    pastas[totalPastas]=nome;
+    itemEhPasta[totalPastas++]=pasta;
   }
-  raiz.close();
-
-  statusSD=totalPastas>0 ? String(totalPastas)+" PASTA(S)" : "NENHUMA PASTA";
-  return totalPastas>0;
+  dir.close();
+  statusSD=limitado ? "LIMITE: PRIMEIROS 48 ITENS" :
+           (totalPastas>0 ? String(totalPastas)+" ITEM(NS)" : "PASTA VAZIA / SEM TXT");
+  return true;
 }
 
 // =====================================================
@@ -821,7 +837,12 @@ void desenharLinhaPasta(int linhaVisual)
   tft.drawRoundRect(10,y,300,24,4,cor);
 
   tft.drawRect(18,y+7,14,10,sel?COR_VERDE:COR_VERDE_SUAVE);
-  tft.drawFastHLine(20,y+5,7,sel?COR_VERDE:COR_VERDE_SUAVE);
+  if(itemEhPasta[indice])
+    tft.drawFastHLine(20,y+5,7,sel?COR_VERDE:COR_VERDE_SUAVE);
+  else{
+    tft.drawFastHLine(21,y+10,8,sel?COR_VERDE:COR_VERDE_SUAVE);
+    tft.drawFastHLine(21,y+13,8,sel?COR_VERDE:COR_VERDE_SUAVE);
+  }
 
   String nome=pastas[indice];
   imprimirUTF8(40,y+6,nome,sel?COR_VERDE:COR_VERDE_SUAVE,COR_FUNDO,38);
@@ -840,8 +861,11 @@ void desenharTelaPastas()
   tft.fillScreen(COR_FUNDO);
   desenharMolduraCyber();
 
-  tft.setTextSize(2); tft.setTextColor(COR_VERDE,COR_FUNDO);
-  tft.setCursor(12,10); tft.print("PASTAS DO CARTAO SD");
+  tft.drawRoundRect(3,2,68,23,3,COR_VERDE);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(10,10); tft.print("< VOLTAR");
+  String titulo=pastaAtual=="/" ? "SD / (RAIZ)" : somenteNome(pastaAtual);
+  imprimirUTF8(78,10,titulo,COR_VERDE,COR_FUNDO,39);
   tft.drawFastHLine(10,31,300,COR_VERDE_ESCURO);
 
   tft.setTextSize(1); tft.setTextColor(COR_VERDE_SUAVE,COR_FUNDO);
@@ -872,43 +896,6 @@ void moverSelecaoPasta(int delta)
   }else{
     desenharTodasLinhasPastas();
   }
-}
-
-// =====================================================
-// LOCALIZAR TXT
-// =====================================================
-bool localizarPrimeiroTXT(const String &nomePasta)
-{
-  caminhoArquivoAtual="";
-  nomeArquivoAtual="";
-
-  String caminhoPasta="/"+nomePasta;
-  File dir=SD.open(caminhoPasta.c_str());
-  if(!dir || !dir.isDirectory()){if(dir)dir.close(); return false;}
-
-  while(true){
-    File item=dir.openNextFile();
-    if(!item) break;
-
-    if(!item.isDirectory()){
-      String completo=String(item.name());
-      String curto=somenteNome(completo);
-      if(terminaComTXT(curto)){
-        nomeArquivoAtual=curto;
-        if(completo.startsWith("/") && completo.indexOf(nomePasta)>=0)
-          caminhoArquivoAtual=completo;
-        else
-          caminhoArquivoAtual="/"+nomePasta+"/"+curto;
-        tamanhoArquivoAtual=item.size();
-        item.close();
-        break;
-      }
-    }
-    item.close();
-  }
-
-  dir.close();
-  return caminhoArquivoAtual.length()>0;
 }
 
 // =====================================================
@@ -1321,18 +1308,34 @@ void rolarLeitor(int delta)
   desenharViewportLeitor();
 }
 
+void desenharTelaPrincipal()
+{
+  desenharTelaBoot();
+  tft.drawRoundRect(60,166,200,28,4,COR_VERDE);
+  centralizarTexto("ABRIR SD / ENTER",176,1,COR_VERDE);
+}
+
 void abrirPastaSelecionada()
 {
   if(pastaSelecionada<0 || pastaSelecionada>=totalPastas) return;
-
-  pastaAtual=pastas[pastaSelecionada];
-  if(!localizarPrimeiroTXT(pastaAtual)){
-    tft.fillRect(10,35,300,12,COR_FUNDO);
-    imprimirUTF8(12,36,"SEM ARQUIVO TXT NESTA PASTA",COR_VERDE,COR_FUNDO,45);
+  String caminho=caminhoFilho(pastaAtual,pastas[pastaSelecionada]);
+  if(itemEhPasta[pastaSelecionada]){
+    carregarPastas(caminho);
+    desenharTelaPastas();
     return;
   }
-
-  // Abertura imediata: nada de indexar Constituicao inteira aqui.
+  File arquivo=SD.open(caminho.c_str(),FILE_READ);
+  if(!arquivo || arquivo.isDirectory()){
+    if(arquivo) arquivo.close();
+    statusSD="ERRO AO ABRIR TXT";
+    desenharTelaPastas();
+    return;
+  }
+  caminhoArquivoAtual=caminho;
+  nomeArquivoAtual=pastas[pastaSelecionada];
+  tamanhoArquivoAtual=arquivo.size();
+  arquivo.close();
+  // Preserva a indexacao sob demanda e o cache do leitor estavel.
   reiniciarIndice(0);
   artigoDigitado="";
   telaAtual=TELA_LEITOR;
@@ -1341,9 +1344,31 @@ void abrirPastaSelecionada()
 
 void voltarPastas()
 {
-  telaAtual=TELA_PASTAS;
   artigoDigitado="";
-  desenharTelaPastas();
+  if(telaAtual==TELA_LEITOR){
+    // Mantem a pasta, a selecao e a posicao da lista ao sair do TXT.
+    telaAtual=TELA_PASTAS;
+    desenharTelaPastas();
+  }else if(telaAtual==TELA_PASTAS){
+    if(pastaAtual=="/"){
+      telaAtual=TELA_PRINCIPAL;
+      desenharTelaPrincipal();
+      return;
+    }
+    String anterior=somenteNome(pastaAtual);
+    int separador=pastaAtual.lastIndexOf('/');
+    String pai=separador<=0 ? String("/") : pastaAtual.substring(0,separador);
+    if(carregarPastas(pai)){
+      for(int i=0;i<totalPastas;i++){
+        if(itemEhPasta[i] && pastas[i]==anterior){
+          pastaSelecionada=i;
+          primeiraPastaVisivel=max(0,i-PASTAS_VISIVEIS+1);
+          break;
+        }
+      }
+    }
+    desenharTelaPastas();
+  }
 }
 
 // =====================================================
@@ -1463,56 +1488,58 @@ void processarTouch()
   bool tocando=lerTouchRaw(rx,ry);
   int x=0,y=0;
   if(tocando) converterTouch(rx,ry,x,y);
-
   if(tocando && !touchAtivo){
     touchAtivo=true;
     ultimoTouchY=y;
+    inicioTouchX=x;
+    inicioTouchY=y;
     acumuladorTouch=0;
-
-    // VOLTAR responde imediatamente ao toque no cabecalho.
-    if(telaAtual==TELA_LEITOR && x>=0 && x<=82 && y>=0 && y<=25){
+    touchArrastou=false;
+    touchConsumido=false;
+    itemTouch=-1;
+    if((telaAtual==TELA_LEITOR || telaAtual==TELA_PASTAS) && x<=71 && y<=25){
       pedirVoltar=true;
-    }
-  }
-
-  if(tocando && touchAtivo){
-    int dy=y-ultimoTouchY;
-    ultimoTouchY=y;
-    acumuladorTouch+=dy;
-
-    // Sensibilidade de 10 px: resposta mais imediata sem ficar nervosa.
-    while(acumuladorTouch<=-10){
-      if(telaAtual==TELA_LEITOR) deltaLeitor++;
-      else deltaPastas++;
-      acumuladorTouch+=10;
-    }
-    while(acumuladorTouch>=10){
-      if(telaAtual==TELA_LEITOR) deltaLeitor--;
-      else deltaPastas--;
-      acumuladorTouch-=10;
-    }
-  }
-
-  if(!tocando && touchAtivo){
-    touchAtivo=false;
-    acumuladorTouch=0;
-  }
-
-  if(tocando && !touchAnterior){
-    if(telaAtual==TELA_PASTAS && y>=PASTA_Y0 && y<PASTA_Y0+PASTAS_VISIVEIS*PASTA_H){
+      touchConsumido=true;
+    }else if(telaAtual==TELA_PASTAS && y>=PASTA_Y0 && y<PASTA_Y0+PASTAS_VISIVEIS*PASTA_H){
       int idx=primeiraPastaVisivel+(y-PASTA_Y0)/PASTA_H;
       if(idx>=0 && idx<totalPastas){
+        itemTouch=idx;
         int velho=pastaSelecionada;
         pastaSelecionada=idx;
         desenharLinhaPasta(velho-primeiraPastaVisivel);
         desenharLinhaPasta(idx-primeiraPastaVisivel);
-
-        // Tocar na seta da direita abre a pasta.
-        if(x>250) pedirAbrir=true;
       }
     }
   }
-
+  if(tocando && touchAtivo && !touchConsumido){
+    int dy=y-ultimoTouchY;
+    ultimoTouchY=y;
+    acumuladorTouch+=dy;
+    if(abs(y-inicioTouchY)>=10 || abs(x-inicioTouchX)>=10) touchArrastou=true;
+    // Mantem os passos de arrasto de 10 px do firmware original.
+    while(acumuladorTouch<=-10){
+      if(telaAtual==TELA_LEITOR) deltaLeitor++;
+      else if(telaAtual==TELA_PASTAS) deltaPastas++;
+      acumuladorTouch+=10;
+    }
+    while(acumuladorTouch>=10){
+      if(telaAtual==TELA_LEITOR) deltaLeitor--;
+      else if(telaAtual==TELA_PASTAS) deltaPastas--;
+      acumuladorTouch-=10;
+    }
+  }
+  if(!tocando && touchAtivo){
+    // Toque curto abre ao soltar; arrastar nao abre itens acidentalmente.
+    if(!touchConsumido && !touchArrastou){
+      if(telaAtual==TELA_PASTAS && itemTouch>=0 && itemTouch==pastaSelecionada)
+        pedirAbrir=true;
+      else if(telaAtual==TELA_PRINCIPAL && inicioTouchX>=60 && inicioTouchX<=260 &&
+              inicioTouchY>=166 && inicioTouchY<=194) pedirAbrir=true;
+    }
+    touchAtivo=false;
+    acumuladorTouch=0;
+    itemTouch=-1;
+  }
   touchAnterior=tocando;
 }
 
@@ -1537,8 +1564,12 @@ void iniciarBluetooth()
   keyboard.onKeyboard([](const EspBleHidKeyboardEvent &event){
     if(!event.pressed) return;
 
-    // ESC funciona em qualquer ponto do leitor.
-    if(event.usage==0x29 && telaAtual==TELA_LEITOR){pedirVoltar=true; return;}
+    // ESC retorna um nivel no navegador ou no leitor.
+    if(event.usage==0x29 && telaAtual!=TELA_PRINCIPAL){pedirVoltar=true; return;}
+    if(telaAtual==TELA_PRINCIPAL){
+      if(event.usage==0x28) pedirAbrir=true;
+      return;
+    }
 
     if(telaAtual==TELA_PASTAS){
       if(event.usage==0x52){deltaPastas--; return;}
@@ -1582,7 +1613,7 @@ void iniciarBluetooth()
     if(event.wheel==0) return;
     int d=(event.wheel>0)?-1:1;
     if(telaAtual==TELA_PASTAS) deltaPastas += (d<0?-1:1);
-    else deltaLeitor += d;
+    else if(telaAtual==TELA_LEITOR) deltaLeitor += d;
   });
 
   EspBleConfig config;
@@ -1666,7 +1697,7 @@ void setup()
   delay(2200);
 
   iniciarSDUmaVez();
-  carregarPastas();
+  carregarPastas("/");
   desenharTelaPastas();
 
   Serial.print("Heap antes do BLE: ");
@@ -1696,14 +1727,22 @@ void loop()
     if(telaAtual==TELA_LEITOR) rolarLeitor(dl);
   }
 
-  if(pedirAbrir){
-    pedirAbrir=false;
-    if(telaAtual==TELA_PASTAS) abrirPastaSelecionada();
-  }
-
   if(pedirVoltar){
     pedirVoltar=false;
-    if(telaAtual==TELA_LEITOR) voltarPastas();
+    pedirAbrir=false;
+    pedirBuscar=false;
+    pedirRedesenharBusca=false;
+    touchConsumido=true;
+    voltarPastas();
+  }else if(pedirAbrir){
+    pedirAbrir=false;
+    touchConsumido=true;
+    if(telaAtual==TELA_PASTAS) abrirPastaSelecionada();
+    else if(telaAtual==TELA_PRINCIPAL){
+      carregarPastas("/");
+      telaAtual=TELA_PASTAS;
+      desenharTelaPastas();
+    }
   }
 
   if(pedirRedesenharBusca){
