@@ -1,0 +1,21 @@
+LEX MACHINA UPDATER - V3 STF REPERCUSSAO GERAL
+================================================
+
+Novidade:
+- Consulta o portal oficial do STF para descobrir Temas de Repercussao Geral.
+- Mantem apenas temas com repercussao geral reconhecida e forte sinal consumerista.
+- Extrai automaticamente relacoes com artigos do CDC SOMENTE quando a fonte oficial
+  explicita o artigo e o CDC/Lei 8.078 na mesma referencia.
+- Nao infere artigo por assunto.
+- Grava os registros em catalogo_precedentes.json.
+- O main.py passa a gerar INDICE_PRECEDENTES.txt com esses registros.
+- Em falha de rede/mudanca do portal, preserva o catalogo anterior.
+
+Execucao normal:
+  python main.py
+
+Para ignorar temporariamente a consulta ao STF:
+  python main.py --sem-stf
+
+Fonte oficial principal:
+https://portal.stf.jus.br/jurisprudenciaRepercussao/todostemas.asp
