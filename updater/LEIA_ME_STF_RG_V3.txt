@@ -12,10 +12,66 @@ Novidade:
 - Em falha de rede/mudanca do portal, preserva o catalogo anterior.
 
 Execucao normal:
+  Requer Python 3.10 ou superior.
+  python -m pip install -r requirements.txt
   python main.py
+
+TLS:
+- A sessao HTTPS do STF usa truststore e o repositorio nativo de certificados
+  do sistema (CryptoAPI no Windows), validando cadeia e nome do servidor.
+- Nao desativa TLS nem altera globalmente o SSL das outras consultas.
+- Falhas em detalhes/andamentos, estrutura nao reconhecida, importacao vazia
+  ou temas anteriores fora da consulta impedem a substituicao do catalogo.
+- A gravacao continua usando arquivo temporario e substituicao atomica.
+
+Testes locais (sem rede):
+  python -m unittest -v test_importar_stf_repercussao_geral
+
+Fonte atual e pesquisa da estrutura (15/09/2026):
+- A URL antiga todostemas.asp devolveu pagina 404 com HTTP 200 e foi retirada
+  da descoberta. O importador rejeita falso sucesso, resposta vazia/202,
+  redirecionamento, JSON invalido, duplicatas e registros incompletos.
+- tesesJulgamento.asp foi examinada primeiro: tabela com Tema, Titulo,
+  Leading Case, Relator, Situacao Atual e Tese/Data Tese. A resposta continha
+  somente 2 temas em julgamento; DataTables pagina o HTML no navegador,
+  sem endpoint AJAX de dados nessa tabela. Nao e o banco completo de teses.
+- O botao Exportar Dados aponta para ../jurisprudenciaRepercussao/exportarDados.asp.
+  A consulta teve timeout e depois retornou HTTP 202 vazio; nao foi adotada.
+- O banco oficial /repercussaogeral/teses.asp carrega todas as teses em JSON,
+  via POST retornartesesrepercussaogeral.asp com tipo=com. Esse contrato esta
+  no script oficial /scripts/tesesrepercussaogeral.js. Paginacao, ordenacao e
+  pesquisa sao locais, por array.slice; nao ha paginas adicionais a buscar.
+- O importador prefere esse JSON oficial completo de teses COM repercussao
+  geral. Nao inclui o banco SEM repercussao nem temas ainda sem tese fixada.
+- O filtro consumerista existente e aplicado ao texto das teses. Para cada
+  candidato, tema.asp fornece titulo, descricao, relator e situacao. Numero
+  do tema e leading case precisam conferir; erro em qualquer detalhe impede
+  a gravacao de toda a atualizacao. A tese e sua data vem diretamente do JSON.
+- Somente titulo, descricao e tese entram na extracao de artigos; menus,
+  rodapes e assuntos nao criam vinculos. Referencias a artigos de outras leis
+  nao podem ser atravessadas para relacionar numeros ao CDC.
+
+Verificacao final em Windows/Python 3.12:
+- 18 testes locais passaram, preservando os testes TLS e de catalogo anteriores.
+- pip check e git diff --check passaram.
+- Importador isolado: 811 temas oficiais com tese, 37 candidatos, 37 importados,
+  1 vinculado explicitamente ao CDC: Tema 1075, art. 93 (inciso II na fonte).
+- python main.py concluiu com os mesmos numeros STF, sem erro de certificado.
+  Resumo geral: 0 erros e 1 alerta de integridade do Catalogo Mestre,
+  independente do STF. Saidas e logs ficaram em saida/.
+- Logs: saida/verificacao_stf_json.log e saida/verificacao_main_stf_json.log.
+
+Saidas, ZIPs, caches e ambientes virtuais sao ignorados por updater/.gitignore.
+Arquivos desse tipo ja rastreados anteriormente nao sao removidos por essa regra.
 
 Para ignorar temporariamente a consulta ao STF:
   python main.py --sem-stf
 
-Fonte oficial principal:
-https://portal.stf.jus.br/jurisprudenciaRepercussao/todostemas.asp
+Banco oficial usado:
+https://portal.stf.jus.br/repercussaogeral/teses.asp
+Endpoint (POST, tipo=com):
+https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp
+Script oficial que documenta o contrato:
+https://portal.stf.jus.br/scripts/tesesrepercussaogeral.js
+Pagina de sessoes examinada:
+https://portal.stf.jus.br/jurisprudenciaRepercussao/tesesJulgamento.asp

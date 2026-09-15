@@ -2,14 +2,47 @@ from __future__ import annotations
 
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 import json
 import re
+import ssl
 
 import requests
 from bs4 import BeautifulSoup
 
-URL_TODOS_TEMAS = "https://portal.stf.jus.br/jurisprudenciaRepercussao/todostemas.asp"
+
+class _AdaptadorTLSNativo(requests.adapters.HTTPAdapter):
+    """Trust store do sistema, restrito à sessão do importador (Python 3.10+)."""
+
+    def __init__(self):
+        import truststore
+
+        self.contexto = truststore.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+        super().__init__()
+
+    def build_connection_pool_key_attributes(self, request, verify, cert=None):
+        if verify is False:
+            raise ValueError("a sessão STF exige validação TLS")
+        host, kwargs = super().build_connection_pool_key_attributes(request, verify, cert)
+        kwargs["ssl_context"] = self.contexto
+        return host, kwargs
+
+    def proxy_manager_for(self, proxy, **proxy_kwargs):
+        if proxy.lower().startswith("https://"):
+            proxy_kwargs["proxy_ssl_context"] = self.contexto
+        return super().proxy_manager_for(proxy, **proxy_kwargs)
+
+
+def _criar_session() -> requests.Session:
+    adaptador = _AdaptadorTLSNativo()
+    session = requests.Session()
+    session.mount("https://", adaptador)
+    return session
+
+URL_TESES = "https://portal.stf.jus.br/jurisprudenciaRepercussao/tesesJulgamento.asp"
+URL_TODOS_TEMAS = URL_TESES  # Compatibilidade com os testes e consumidores anteriores.
+URL_BANCO_TESES = "https://portal.stf.jus.br/repercussaogeral/teses.asp"
+URL_TESES_JSON = "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
 URL_TEMA = "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num={numero}"
 HEADERS_STF = {
     "User-Agent": (
@@ -36,6 +69,37 @@ def _limpar(texto: str) -> str:
 
 def _texto_soup(soup: BeautifulSoup) -> str:
     return "\n".join(_limpar(x) for x in soup.stripped_strings if _limpar(x))
+
+
+def _url_oficial(url: str) -> str:
+    partes = urlparse(url)
+    if partes.scheme != "https" or partes.hostname != "portal.stf.jus.br":
+        raise RuntimeError(f"URL fora da fonte oficial HTTPS: {url}")
+    return url
+
+
+def _validar_resposta(r: requests.Response) -> None:
+    r.raise_for_status()
+    if r.status_code != 200 or not r.content:
+        raise RuntimeError(f"resposta oficial incompleta: HTTP {r.status_code}")
+    if isinstance(r.url, str):
+        _url_oficial(r.url)
+    soup = BeautifulSoup(r.content, "html.parser")
+    texto = _limpar(soup.get_text(" ", strip=True)).lower()
+    if any(m in texto for m in (
+        "não encontramos o que você está procurando", "página não encontrada",
+        "pagina nao encontrada", "404 not found", "access denied",
+        "acesso negado", "serviço indisponível", "site em manutenção",
+    )):
+        raise RuntimeError("portal retornou página de erro, mesmo com HTTP 200")
+
+
+def _obter_html(session: requests.Session, url: str) -> BeautifulSoup:
+    r = session.get(_url_oficial(url), headers=HEADERS_STF, timeout=60,
+                    allow_redirects=False)
+    _validar_resposta(r)
+    soup = BeautifulSoup(r.content, "html.parser")
+    return soup
 
 
 def _extrair_entre(texto: str, inicio: str, finais: tuple[str, ...]) -> str:
@@ -73,20 +137,24 @@ def _relacoes_cdc(texto: str) -> list[str]:
 
     lei = r"(?:Lei\s*(?:n[ºo\.]?\s*)?8[\.]?078(?:/1990)?|Código\s+de\s+Defesa\s+do\s+Consumidor|CDC)"
     art = r"art(?:igo)?s?\.?(?:\s+|\s*º\s*)"
+    # Aceita apenas enumerações de artigos/incisos, nunca palavras livres
+    # que poderiam atravessar uma referência à Constituição ou a outra lei.
+    numero = r"\d{1,3}[º°]?(?:\s*,\s*[IVXLCDM]+)?"
+    lista = rf"{numero}(?:\s*(?:,|e)\s*{numero})*"
 
     # Ex.: "arts. 6º, III, 14 e 51 da Lei 8.078/1990"
     padrao_antes = re.compile(
-        rf"\b{art}(.{{0,100}}?)(?:\s+d[aoe]\s+|\s*,\s*){lei}",
+        rf"\b{art}({lista})(?:\s*,?\s+d[aoe]\s+|\s*,\s*){lei}\b",
         re.I,
     )
     # Ex.: "Lei 8.078/1990, arts. 6º e 14"
     padrao_depois = re.compile(
-        rf"\b{lei}\s*[,;:\-]\s*{art}(.{{0,100}}?)(?=(?:\.|;|\)|$))",
+        rf"\b{lei}\s*[,;:\-]\s*{art}({lista})(?=\s*(?:\.|;|\)|$))",
         re.I,
     )
     # Ex.: "CDC art. 43" / "CDC arts. 42 e 43"
     padrao_direto = re.compile(
-        rf"\bCDC\s+{art}(.{{0,80}}?)(?=(?:\.|;|\)|$))",
+        rf"\bCDC\s+{art}({lista})(?=\s*(?:\.|;|\)|$))",
         re.I,
     )
 
@@ -107,38 +175,45 @@ def _relacoes_cdc(texto: str) -> list[str]:
 
 
 def _descobrir_temas(session: requests.Session) -> list[dict]:
-    r = session.get(URL_TODOS_TEMAS, headers=HEADERS_STF, timeout=60)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.content, "html.parser")
-    encontrados: dict[int, dict] = {}
+    """Banco oficial completo de teses COM RG; paginação é apenas no cliente.
 
-    for a in soup.find_all("a", href=True):
-        href = a.get("href", "")
-        m = re.search(r"tema\.asp\?num=(\d+)", href, re.I)
-        if not m:
-            continue
-        numero = int(m.group(1))
-        tr = a.find_parent("tr")
-        texto_linha = _limpar(tr.get_text(" ", strip=True) if tr else a.get_text(" ", strip=True))
+    Contrato publicado em /scripts/tesesrepercussaogeral.js, usado pela página
+    /repercussaogeral/teses.asp. Não usa o recorte de sessões em julgamento.
+    """
+    r = session.post(URL_TESES_JSON, data={"tipo": "com"},
+                     headers=HEADERS_STF, timeout=60, allow_redirects=False)
+    _validar_resposta(r)
+    try:
+        dados = json.loads(r.content)
+    except (ValueError, UnicodeError) as exc:
+        raise RuntimeError("o banco de teses não retornou JSON oficial válido") from exc
+    if not isinstance(dados, list) or not dados:
+        raise RuntimeError("o banco de teses retornou estrutura inesperada ou vazia")
+    encontrados = {}
+    campos = ("numeroTema", "incidente", "siglaClasse", "numeroProcesso",
+              "descricaoTese", "dataAndamento")
+    for item in dados:
+        if not isinstance(item, dict) or any(
+            not isinstance(item.get(c), str) or not item[c].strip() for c in campos
+        ):
+            raise RuntimeError("registro incompleto no banco oficial de teses")
+        if any(not re.fullmatch(r"[0-9]+", item[c]) or int(item[c]) <= 0
+               for c in ("numeroTema", "incidente", "numeroProcesso")):
+            raise RuntimeError("identificador inválido no banco oficial de teses")
+        datetime.strptime(item["dataAndamento"], "%d/%m/%Y")
+        numero = int(item["numeroTema"])
+        if numero in encontrados:
+            raise RuntimeError(f"Tema {numero} duplicado no banco oficial")
+        tese = _limpar(BeautifulSoup(item["descricaoTese"], "html.parser").get_text(" ", strip=True))
+        if not tese:
+            raise RuntimeError(f"Tema {numero} sem texto de tese")
         encontrados[numero] = {
-            "numero": numero,
-            "texto_linha": texto_linha,
-            "url": urljoin(URL_TODOS_TEMAS, href),
+            "numero": numero, "texto_linha": tese, "tese_oficial": tese,
+            "data_tese": item["dataAndamento"],
+            "processo_oficial": _limpar(item["siglaClasse"] + " " + item["numeroProcesso"]),
+            "url": URL_TEMA.format(numero=numero),
+            "url_tese": URL_BANCO_TESES,
         }
-
-    # Fallback: alguns layouts deixam o número do tema fora do href visível.
-    if not encontrados:
-        for tr in soup.find_all("tr"):
-            txt = _limpar(tr.get_text(" ", strip=True))
-            m = re.match(r"0*(\d{1,4})\b", txt)
-            if m:
-                numero = int(m.group(1))
-                encontrados[numero] = {
-                    "numero": numero,
-                    "texto_linha": txt,
-                    "url": URL_TEMA.format(numero=numero),
-                }
-
     return [encontrados[k] for k in sorted(encontrados)]
 
 
@@ -150,10 +225,11 @@ def _eh_candidato_consumidor(texto: str) -> bool:
 def _carregar_detalhe(session: requests.Session, tema: dict) -> dict | None:
     numero = tema["numero"]
     url = URL_TEMA.format(numero=numero)
-    r = session.get(url, headers=HEADERS_STF, timeout=45)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.content, "html.parser")
-    texto = _texto_soup(soup)
+    soup = _obter_html(session, url)
+    texto = _texto_soup(soup.select_one("#conteudo") or soup)
+    identidade = re.search(r"Tema:\s*0*(\d+)\b", texto)
+    if identidade is None or int(identidade.group(1)) != numero:
+        raise RuntimeError(f"Tema {numero}: identidade da página não confere")
 
     titulo = _extrair_entre(texto, "Título:", ("Descrição:", "Ver assuntos:"))
     descricao = _extrair_entre(texto, "Descrição:", ("Ver assuntos:", "Informações gerais"))
@@ -161,30 +237,34 @@ def _carregar_detalhe(session: requests.Session, tema: dict) -> dict | None:
     ministro = _extrair_entre(texto, "Ministro:", ("Plenário Virtual", "Situação atual"))
     repercussao = _extrair_entre(texto, "Repercussão geral:", ("Data da Repercussão geral:", "Situação:"))
     data_rg = _extrair_entre(texto, "Data da Repercussão geral:", ("Situação:", "Tese:"))
-    situacao = _extrair_entre(texto, "Situação:", ("Tese:", "Praça dos Três Poderes"))
+    situacao = _extrair_entre(texto, "Situação:", ("Tese:", "Mapa do Site", "Praça dos Três Poderes"))
+    if not titulo or not descricao or not repercussao or not situacao:
+        raise RuntimeError(f"Tema {numero}: estrutura oficial não reconhecida")
 
     # O link de andamento costuma trazer a tese de maneira estruturada.
-    tese = ""
-    url_andamento = ""
-    for a in soup.find_all("a", href=True):
+    tese = tema.get("tese_oficial", "")
+    url_andamento = tema.get("url_tese", "")
+    for a in soup.find_all("a", href=True) if not tese else []:
         href = a.get("href", "")
         if "verAndamentoProcesso.asp" in href:
             url_andamento = urljoin(url, href)
             break
-    if url_andamento:
+    if url_andamento and not tese:
         try:
-            ra = session.get(url_andamento, headers=HEADERS_STF, timeout=45)
-            ra.raise_for_status()
-            ta = _texto_soup(BeautifulSoup(ra.content, "html.parser"))
+            ta = _texto_soup(_obter_html(session, url_andamento))
             tese = _extrair_entre(ta, "Tese:", ("Data Andamento", "Data | Andamento", "Número do Protocolo:"))
             if not descricao:
                 descricao = _extrair_entre(ta, "Descrição:", ("Tese:",))
             if not leading:
                 leading = _extrair_entre(ta, "Leading Case:", ("Descrição:",))
-        except requests.RequestException:
-            pass
+            if "Tese:" not in ta:
+                raise RuntimeError(f"Tema {numero}: estrutura do andamento não reconhecida")
+        except requests.RequestException as exc:
+            raise RuntimeError(f"Tema {numero}: falha ao consultar andamento") from exc
 
-    combinado = " ".join([tema.get("texto_linha", ""), titulo, descricao, tese, texto])
+    combinado = " ".join([titulo, descricao, tese])
+    if tema.get("processo_oficial") and _limpar(leading) != tema["processo_oficial"]:
+        raise RuntimeError(f"Tema {numero}: leading case diverge do banco oficial")
     # Só aceitamos temas com repercussão geral reconhecida. Não transformar
     # temas negados em "precedentes qualificados" no Lex Machina.
     rep_low = repercussao.lower()
@@ -199,7 +279,9 @@ def _carregar_detalhe(session: requests.Session, tema: dict) -> dict | None:
     if not _eh_candidato_consumidor(combinado):
         return None
 
-    relacoes = _relacoes_cdc(combinado)
+    relacoes = sorted({rel for campo in (titulo, descricao, tese)
+                       for rel in _relacoes_cdc(campo)},
+                      key=lambda rel: int(rel.rsplit(" ", 1)[1]))
     processo = re.sub(r"\s+", " ", leading).strip()
     texto_principal = tese or descricao or titulo
     if not texto_principal:
@@ -226,6 +308,8 @@ def _carregar_detalhe(session: requests.Session, tema: dict) -> dict | None:
         "situacao_oficial_stf": situacao,
         "repercussao_geral_stf": repercussao,
         "data_repercussao_geral": data_rg,
+        "data_tese": tema.get("data_tese", ""),
+        "url_descoberta": URL_TESES_JSON,
         "usar_tese_oficial": bool(tese),
         "fonte_texto_preferencial": "texto_oficial_verificado" if tese else "texto",
         "origem_importacao": "STF_OFICIAL_REPERCUSSAO_GERAL",
@@ -238,17 +322,16 @@ def atualizar_catalogo_precedentes(caminho_catalogo: Path, verbose: bool = True)
     Em falha de rede ou mudança de layout, o catálogo existente é preservado.
     """
     caminho_catalogo = Path(caminho_catalogo)
-    existentes = []
-    if caminho_catalogo.exists():
-        try:
+    session = None
+    temas = []
+    candidatos = []
+    try:
+        existentes = []
+        if caminho_catalogo.exists():
             existentes = json.loads(caminho_catalogo.read_text(encoding="utf-8"))
             if not isinstance(existentes, list):
-                existentes = []
-        except Exception:
-            existentes = []
-
-    session = requests.Session()
-    try:
+                raise ValueError("o catálogo existente não é uma lista")
+        session = _criar_session()
         temas = _descobrir_temas(session)
         if not temas:
             raise RuntimeError("o portal oficial não retornou temas reconhecíveis")
@@ -270,6 +353,21 @@ def atualizar_catalogo_precedentes(caminho_catalogo: Path, verbose: bool = True)
                 erros += 1
                 if verbose:
                     print(f"  [AVISO STF RG] Tema {tema['numero']}: {exc}")
+
+        if erros or not candidatos or not importados:
+            raise RuntimeError(
+                f"importação incompleta ou vazia: {erros} erros, "
+                f"{len(candidatos)} candidatos, {len(importados)} importados"
+            )
+
+        numeros_consultados = {t["numero"] for t in candidatos}
+        numeros_anteriores = {
+            int(r["numero"]) for r in existentes if isinstance(r, dict)
+            and r.get("origem_importacao") == "STF_OFICIAL_REPERCUSSAO_GERAL"
+            and r.get("tribunal") == "STF" and r.get("tipo") == "repercussao_geral"
+        }
+        if not numeros_anteriores.issubset(numeros_consultados):
+            raise RuntimeError("temas do catálogo anterior ficaram fora da consulta de detalhes")
 
         # Só substitui a fatia automática do STF; entradas manuais e outros
         # subtipos (ADI/ADC/ADPF/IRDR/IAC...) são preservados.
@@ -298,7 +396,11 @@ def atualizar_catalogo_precedentes(caminho_catalogo: Path, verbose: bool = True)
         if verbose:
             print(f"[AVISO] STF Repercussão Geral não atualizado: {exc}")
             print("        Catálogo anterior preservado.")
-        return {"ok": False, "erro": str(exc), "importados": 0, "com_relacao_cdc": 0}
+        return {"ok": False, "erro": str(exc), "temas_descobertos": len(temas),
+                "candidatos": len(candidatos), "importados": 0, "com_relacao_cdc": 0}
+    finally:
+        if session is not None:
+            session.close()
 
 
 if __name__ == "__main__":
