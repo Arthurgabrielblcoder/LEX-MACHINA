@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 from importar_stf_repercussao_geral import atualizar_catalogo_precedentes
 from importar_stf_controle_concentrado import atualizar_controle_concentrado
 from importar_stf_sumulas_vinculantes import atualizar_sumulas_vinculantes
+from importar_sumulas_comuns import atualizar_sumulas_comuns
 
 
 # ============================================================
@@ -4789,6 +4790,21 @@ def gerar_indice_sumulas_vinculantes(registros):
     return caminho
 
 
+def gerar_indice_sumulas(registros):
+    selecionados = [r for r in registros if str(r.get("tipo", "")).lower() == "sumula"]
+    pasta = PASTA_SAIDA / "99_RELATIONS_V1" / "01_SUMULAS"
+    pasta.mkdir(parents=True, exist_ok=True)
+    caminho = pasta / "INDICE_SUMULAS.txt"
+    linhas = [f"{r['tribunal']}|{r['numero']}|{r.get('status', '')}|{r['arquivo']}|{r['pasta_destino']}"
+              for r in sorted(selecionados, key=lambda x: (x["tribunal"], int(x["numero"])))
+              if str(r.get("status", "")).lower() not in {"cancelado", "superado"}]
+    caminho.write_text(f"SÚMULAS ({len(linhas)})\n" + "="*72 +
+                       "\nFORMATO: TRIBUNAL|NÚMERO|STATUS|ARQUIVO|PASTA_DESTINO\n" + "="*72 +
+                       "\n\n" + "\n".join(linhas) + ("\n" if linhas else ""),
+                       encoding="utf-8", newline="\n")
+    return caminho
+
+
 def gerar_manifesto_camadas_juridicas(registros):
     pasta = PASTA_SAIDA / "99_RELATIONS_V1"
     pasta.mkdir(parents=True, exist_ok=True)
@@ -5441,6 +5457,20 @@ def main():
         if ARQUIVO_CATALOGO_ACORDAOS.exists()
         else []
     )
+    print("STF/STJ - SÚMULAS COMUNS")
+    print("-" * 70)
+    resultado_sumulas = atualizar_sumulas_comuns(
+        ARQUIVO_CATALOGO_JURISPRUDENCIA,
+        verbose=True,
+        outros_registros=registros_acordaos,
+    )
+    PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+    (PASTA_SAIDA / "relatorio_sumulas_comuns.json").write_text(
+        json.dumps(resultado_sumulas, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    registros_juris = carregar_json(ARQUIVO_CATALOGO_JURISPRUDENCIA)
+    print()
     # Atualiza primeiro a fatia oficial de Repercussão Geral do STF.
     # Em caso de indisponibilidade do portal ou mudança de layout, o
     # importador preserva integralmente o catálogo local anterior.
@@ -5782,12 +5812,14 @@ def main():
         indice_sumulas_vinculantes = gerar_indice_sumulas_vinculantes(
             registros_juris_todos
         )
+        indice_sumulas = gerar_indice_sumulas(registros_juris_todos)
         manifesto_camadas = gerar_manifesto_camadas_juridicas(
             registros_juris_todos
         )
         print(f"Índice de acórdãos: {indice_acordaos}")
         print(f"Índice de precedentes: {indice_precedentes}")
         print(f"Índice de Súmulas Vinculantes: {indice_sumulas_vinculantes}")
+        print(f"Índice de Súmulas: {indice_sumulas}")
         print(f"Manifesto das camadas: {manifesto_camadas}")
 
     except OSError as erro:
