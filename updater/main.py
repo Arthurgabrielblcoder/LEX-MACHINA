@@ -12,6 +12,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from importar_stf_repercussao_geral import atualizar_catalogo_precedentes
+from importar_stf_controle_concentrado import atualizar_controle_concentrado
 
 
 # ============================================================
@@ -3082,10 +3083,15 @@ def argumentos_main():
         "--sem-stf",
         action="store_true",
         help=(
-            "Não consulta o portal oficial do STF para atualizar "
-            "Temas de Repercussão Geral. O catálogo local de "
+            "Não consulta o STF (Repercussão Geral e controle concentrado). O catálogo local de "
             "precedentes é mantido como está."
         ),
+    )
+
+    parser.add_argument(
+        "--sem-stf-controle",
+        action="store_true",
+        help="Não atualiza ADI/ADC/ADPF/ADO; mantém a consulta de Repercussão Geral.",
     )
 
     args = parser.parse_args()
@@ -4269,6 +4275,16 @@ def salvar_jurisprudencia(
             )
 
     # --------------------------------------------------------
+    # Registros de controle concentrado não são teses de Repercussão Geral.
+    # Preserva a natureza do texto e a cronologia publicada pelo STF.
+    if registro.get("natureza_texto_oficial") == "registro_de_decisao_final_no_corte_aberta":
+        titulo_conteudo = "DECISÃO DE MÉRITO E ANDAMENTOS POSTERIORES:"
+        origem_texto = "REGISTROS OFICIAIS DO CORTE ABERTA / STF"
+        aviso_status = (
+            "Julgamento de mérito acompanhado dos andamentos posteriores disponíveis na base. "
+            "A ordenação não interpreta os efeitos de embargos, modulação ou revisão."
+        )
+
     # STATUS OFICIAL DO STJ
     # --------------------------------------------------------
 
@@ -5409,6 +5425,21 @@ def main():
                 f"{resultado_stf.get('importados', 0)} precedentes consumeristas; "
                 f"{resultado_stf.get('com_relacao_cdc', 0)} com artigo do CDC explícito."
             )
+        print()
+
+    if not args.sem_stf and not args.sem_stf_controle:
+        print("STF - CONTROLE CONCENTRADO (ADI, ADC, ADPF, ADO)")
+        print("-" * 70)
+        resultado_controle = atualizar_controle_concentrado(
+            ARQUIVO_CATALOGO_PRECEDENTES,
+            verbose=True,
+            outros_registros=registros_juris + registros_acordaos,
+        )
+        PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+        (PASTA_SAIDA / "relatorio_stf_controle_concentrado.json").write_text(
+            json.dumps(resultado_controle, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
         print()
 
     registros_precedentes = (

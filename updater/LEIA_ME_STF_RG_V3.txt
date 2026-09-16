@@ -67,6 +67,12 @@ Arquivos desse tipo ja rastreados anteriormente nao sao removidos por essa regra
 Para ignorar temporariamente a consulta ao STF:
   python main.py --sem-stf
 
+Controle concentrado (ADI/ADC/ADPF/ADO):
+- Consulte LEIA_ME_STF_CONTROLE_CONCENTRADO.md para fontes, criterios e testes.
+- main.py consulta as duas camadas STF; --sem-stf desativa ambas.
+- --sem-stf-controle desativa somente controle concentrado e mantem RG.
+- O importador de RG preserva os registros das demais classes.
+
 Banco oficial usado:
 https://portal.stf.jus.br/repercussaogeral/teses.asp
 Endpoint (POST, tipo=com):
