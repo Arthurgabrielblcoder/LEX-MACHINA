@@ -13,6 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 from importar_stf_repercussao_geral import atualizar_catalogo_precedentes
 from importar_stf_controle_concentrado import atualizar_controle_concentrado
+from importar_stf_sumulas_vinculantes import atualizar_sumulas_vinculantes
 
 
 # ============================================================
@@ -4763,12 +4764,41 @@ def gerar_indice_relacoes_especializado(registros, categoria):
     return caminho
 
 
+def gerar_indice_sumulas_vinculantes(registros):
+    """Lista própria para a futura opção SÚMULAS VINCULANTES do firmware."""
+    selecionados = [
+        r for r in registros
+        if str(r.get("tipo", "")).strip().lower() == "sumula_vinculante"
+    ]
+    pasta = PASTA_SAIDA / "99_RELATIONS_V1" / "02_SUMULAS_VINCULANTES"
+    pasta.mkdir(parents=True, exist_ok=True)
+    caminho = pasta / "INDICE_SUMULAS_VINCULANTES.txt"
+    linhas = [
+        f"{r['numero']}|{r.get('status', '')}|{r['arquivo']}|{r['pasta_destino']}"
+        for r in sorted(selecionados, key=lambda x: int(x["numero"]))
+    ]
+    conteudo = (
+        f"SÚMULAS VINCULANTES ({len(selecionados)})\n"
+        + "=" * 72 + "\n"
+        + "FORMATO: NÚMERO|STATUS|ARQUIVO|PASTA_DESTINO\n"
+        + "=" * 72 + "\n\n"
+        + "\n".join(linhas)
+        + ("\n" if linhas else "")
+    )
+    caminho.write_text(conteudo, encoding="utf-8", newline="\n")
+    return caminho
+
+
 def gerar_manifesto_camadas_juridicas(registros):
     pasta = PASTA_SAIDA / "99_RELATIONS_V1"
     pasta.mkdir(parents=True, exist_ok=True)
     caminho = pasta / "LEIA-ME_CAMADAS_JURIDICAS.txt"
 
-    qtd_sumulas = sum(1 for r in registros if str(r.get("tipo", "")).lower() in {"sumula", "sumula_vinculante"})
+    qtd_sumulas = sum(1 for r in registros if str(r.get("tipo", "")).lower() == "sumula")
+    qtd_sumulas_vinculantes = sum(
+        1 for r in registros
+        if str(r.get("tipo", "")).lower() == "sumula_vinculante"
+    )
     qtd_repetitivos = sum(1 for r in registros if str(r.get("tipo", "")).lower() == "repetitivo")
     qtd_acordaos = sum(1 for r in registros if _eh_acordao_registro(r))
     qtd_precedentes = sum(1 for r in registros if _eh_precedente_registro(r))
@@ -4777,11 +4807,13 @@ def gerar_manifesto_camadas_juridicas(registros):
         "LEX MACHINA - CAMADAS JURÍDICAS\n"
         + "=" * 72 + "\n"
         + "1 = SÚMULAS\n"
-        + "2 = REPETITIVOS\n"
+        + "2 = SÚMULAS VINCULANTES\n"
         + "3 = ACÓRDÃOS\n"
-        + "4 = PRECEDENTES QUALIFICADOS\n"
-        + "5 = CORRELATAS (legislação relacionada; não é jurisprudência)\n\n"
+        + "4 = TEMAS DE REPERCUSSÃO GERAL\n"
+        + "5 = RECURSOS REPETITIVOS\n"
+        + "6 = PRECEDENTES RELEVANTES\n\n"
         + f"Súmulas cadastradas: {qtd_sumulas}\n"
+        + f"SÚMULAS VINCULANTES ({qtd_sumulas_vinculantes})\n"
         + f"Repetitivos cadastrados: {qtd_repetitivos}\n"
         + f"Acórdãos cadastrados: {qtd_acordaos}\n"
         + f"Precedentes cadastrados: {qtd_precedentes}\n\n"
@@ -5442,6 +5474,21 @@ def main():
         )
         print()
 
+    if not args.sem_stf:
+        print("STF - SÚMULAS VINCULANTES")
+        print("-" * 70)
+        resultado_sv = atualizar_sumulas_vinculantes(
+            ARQUIVO_CATALOGO_PRECEDENTES,
+            verbose=True,
+            outros_registros=registros_juris + registros_acordaos,
+        )
+        PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+        (PASTA_SAIDA / "relatorio_stf_sumulas_vinculantes.json").write_text(
+            json.dumps(resultado_sv, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+        print()
+
     registros_precedentes = (
         carregar_json(ARQUIVO_CATALOGO_PRECEDENTES)
         if ARQUIVO_CATALOGO_PRECEDENTES.exists()
@@ -5732,11 +5779,15 @@ def main():
             registros_juris_todos,
             "precedentes",
         )
+        indice_sumulas_vinculantes = gerar_indice_sumulas_vinculantes(
+            registros_juris_todos
+        )
         manifesto_camadas = gerar_manifesto_camadas_juridicas(
             registros_juris_todos
         )
         print(f"Índice de acórdãos: {indice_acordaos}")
         print(f"Índice de precedentes: {indice_precedentes}")
+        print(f"Índice de Súmulas Vinculantes: {indice_sumulas_vinculantes}")
         print(f"Manifesto das camadas: {manifesto_camadas}")
 
     except OSError as erro:
