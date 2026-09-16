@@ -147,6 +147,13 @@ class CatalogoTests(unittest.TestCase):
         self.assertFalse(self.executar([outro])["ok"])
         self.assertEqual(self.path.read_bytes(), original)
 
+    def test_subtipos_distintos_de_precedente_relevante_nao_colidem(self):
+        outros = [
+            {"tribunal": "STF", "tipo": "precedente_relevante", "subtipo": "adi", "numero": 1},
+            {"tribunal": "STF", "tipo": "precedente_relevante", "subtipo": "adpf", "numero": 1},
+        ]
+        self.assertTrue(self.executar(outros)["ok"])
+
     def test_falha_parcial_preserva_catalogo(self):
         original = self.path.read_bytes()
         with patch.object(m, "_criar_session", return_value=Mock()), \

@@ -140,11 +140,13 @@ def _deduplicar_temas(linhas: list[dict[str, str]], validar_colecao: bool = True
     return [temas[n] for n in sorted(temas)]
 
 
-def _agrupar_processos(linhas: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+def _agrupar_processos(
+    linhas: list[dict[str, str]], tipos=("Tema",)
+) -> dict[str, list[dict[str, str]]]:
     grupos: dict[str, list[dict[str, str]]] = {}
     vistos: set[tuple[str, ...]] = set()
     for linha in linhas:
-        if _limpar(linha["tipoPrecedente"]) != "Tema":
+        if _limpar(linha["tipoPrecedente"]) not in set(tipos):
             continue
         seq = _limpar(linha["sequencialPrecedente"])
         numero = _limpar(linha["numeroPrecedente"])
@@ -272,7 +274,9 @@ def _validar_duplicacoes(final: list[dict], outros: list[dict]) -> None:
     chaves = set()
     urls = {}
     for registro in [*final, *outros]:
-        chave = (registro.get("tribunal"), registro.get("tipo"), registro.get("numero"))
+        tipo = registro.get("tipo")
+        classe = registro.get("subtipo") if tipo == "precedente_relevante" else tipo
+        chave = (registro.get("tribunal"), classe, registro.get("numero"))
         if chave in chaves:
             raise ValueError("registro jurisprudencial duplicado")
         chaves.add(chave)

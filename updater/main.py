@@ -16,6 +16,7 @@ from importar_stf_controle_concentrado import atualizar_controle_concentrado
 from importar_stf_sumulas_vinculantes import atualizar_sumulas_vinculantes
 from importar_sumulas_comuns import atualizar_sumulas_comuns
 from importar_stj_repetitivos import atualizar_repetitivos_stj
+from importar_precedentes_relevantes import atualizar_precedentes_relevantes
 
 
 # ============================================================
@@ -3840,6 +3841,7 @@ def normalizar_tipo_jurisprudencia(
         ),
         "acordao": "ACÓRDÃO",
         "precedente": "PRECEDENTE QUALIFICADO",
+        "precedente_relevante": "PRECEDENTE RELEVANTE",
         "irdr": "IRDR",
         "iac": "IAC",
         "irr": "IRR",
@@ -4710,9 +4712,11 @@ def _eh_acordao_registro(registro):
 
 def _eh_precedente_registro(registro):
     tipo = str(registro.get("tipo", "")).strip().lower()
+    # Aceita o esquema legado durante migrações e testes de compatibilidade;
+    # o catálogo persistido usa precedente_relevante + subtipo.
     return tipo in {
-        "precedente", "repercussao_geral", "irdr", "iac",
-        "irr", "adi", "adc", "adpf", "ado",
+        "precedente", "precedente_relevante", "irdr", "iac",
+        "adi", "adc", "adpf", "ado",
     }
 
 
@@ -4806,6 +4810,31 @@ def gerar_indice_sumulas(registros):
     return caminho
 
 
+def gerar_indice_precedentes_relevantes(registros):
+    selecionados = [
+        r for r in registros
+        if str(r.get("tipo", "")).lower() == "precedente_relevante"
+    ]
+    pasta = PASTA_SAIDA / "99_RELATIONS_V1" / "03_PRECEDENTES_RELEVANTES"
+    pasta.mkdir(parents=True, exist_ok=True)
+    caminho = pasta / "INDICE_PRECEDENTES_RELEVANTES.txt"
+    linhas = [
+        f"{str(r.get('subtipo', '')).upper()}|{r['tribunal']}|{r['numero']}|"
+        f"{r.get('status', '')}|{r['arquivo']}|{r['pasta_destino']}"
+        for r in sorted(
+            selecionados,
+            key=lambda x: (str(x.get("subtipo", "")), str(x.get("tribunal", "")), str(x.get("numero", ""))),
+        )
+    ]
+    caminho.write_text(
+        f"PRECEDENTES RELEVANTES ({len(linhas)})\n" + "=" * 80
+        + "\nFORMATO: SUBTIPO|TRIBUNAL|NÚMERO|STATUS|ARQUIVO|PASTA_DESTINO\n"
+        + "=" * 80 + "\n\n" + "\n".join(linhas) + ("\n" if linhas else ""),
+        encoding="utf-8", newline="\n",
+    )
+    return caminho
+
+
 def gerar_indice_repetitivos(registros):
     """Lista somente Temas Repetitivos que podem ser apresentados como atuais."""
     selecionados = [
@@ -4849,7 +4878,10 @@ def gerar_manifesto_camadas_juridicas(registros):
                        not in {"cancelado", "desafetado", "sem_tese_aplicavel"}))
     )
     qtd_acordaos = sum(1 for r in registros if _eh_acordao_registro(r))
-    qtd_precedentes = sum(1 for r in registros if _eh_precedente_registro(r))
+    qtd_precedentes = sum(
+        1 for r in registros
+        if str(r.get("tipo", "")).lower() == "precedente_relevante"
+    )
 
     conteudo = (
         "LEX MACHINA - CAMADAS JURÍDICAS\n"
@@ -4864,9 +4896,8 @@ def gerar_manifesto_camadas_juridicas(registros):
         + f"SÚMULAS VINCULANTES ({qtd_sumulas_vinculantes})\n"
         + f"RECURSOS REPETITIVOS ({qtd_repetitivos})\n"
         + f"Acórdãos cadastrados: {qtd_acordaos}\n"
-        + f"Precedentes cadastrados: {qtd_precedentes}\n\n"
-        + "Subtipos aceitos em PRECEDENTES: repercussao_geral, irdr, iac, "
-          "irr, adi, adc, adpf e ado.\n"
+        + f"PRECEDENTES RELEVANTES ({qtd_precedentes})\n\n"
+        + "Subtipos internos em PRECEDENTES RELEVANTES: adi, adc, adpf, ado, iac e sirdr.\n"
         + "Os índices 02_ACORDAOS e 03_PRECEDENTES possuem o caminho "
           "de destino explícito para o firmware.\n"
     )
@@ -5555,6 +5586,21 @@ def main():
         )
         print()
 
+    print("STF/STJ - PRECEDENTES RELEVANTES")
+    print("-" * 70)
+    registros_precedentes = carregar_json(ARQUIVO_CATALOGO_PRECEDENTES)
+    resultado_relevantes = atualizar_precedentes_relevantes(
+        ARQUIVO_CATALOGO_PRECEDENTES,
+        verbose=True,
+        outros_registros=registros_juris + registros_acordaos,
+    )
+    PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+    (PASTA_SAIDA / "relatorio_precedentes_relevantes.json").write_text(
+        json.dumps(resultado_relevantes, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    print()
+
     if not args.sem_stf:
         print("STF - SÚMULAS VINCULANTES")
         print("-" * 70)
@@ -5865,6 +5911,7 @@ def main():
         )
         indice_sumulas = gerar_indice_sumulas(registros_juris_todos)
         indice_repetitivos = gerar_indice_repetitivos(registros_juris_todos)
+        indice_relevantes = gerar_indice_precedentes_relevantes(registros_juris_todos)
         manifesto_camadas = gerar_manifesto_camadas_juridicas(
             registros_juris_todos
         )
@@ -5873,6 +5920,7 @@ def main():
         print(f"Índice de Súmulas Vinculantes: {indice_sumulas_vinculantes}")
         print(f"Índice de Súmulas: {indice_sumulas}")
         print(f"Índice de Recursos Repetitivos: {indice_repetitivos}")
+        print(f"Índice de Precedentes Relevantes: {indice_relevantes}")
         print(f"Manifesto das camadas: {manifesto_camadas}")
 
     except OSError as erro:

@@ -137,7 +137,9 @@ def atualizar_sumulas_vinculantes(caminho_catalogo: Path, verbose=True, outros_r
         preservados = [x for x in catalogo if x.get("origem_importacao") != ORIGEM]
         vistos = set()
         for x in [*preservados, *outros_registros, *novos]:
-            chave = (str(x.get("tribunal", "")).upper(), str(x.get("tipo", "")).lower(), x.get("numero"))
+            tipo = str(x.get("tipo", "")).lower()
+            classe = str(x.get("subtipo", tipo)).lower() if tipo == "precedente_relevante" else tipo
+            chave = (str(x.get("tribunal", "")).upper(), classe, x.get("numero"))
             if chave in vistos:
                 raise ValueError("duplicação entre categorias jurisprudenciais")
             vistos.add(chave)
