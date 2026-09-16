@@ -17,6 +17,7 @@ from importar_stf_sumulas_vinculantes import atualizar_sumulas_vinculantes
 from importar_sumulas_comuns import atualizar_sumulas_comuns
 from importar_stj_repetitivos import atualizar_repetitivos_stj
 from importar_precedentes_relevantes import atualizar_precedentes_relevantes
+from importar_acordaos import atualizar_acordaos
 
 
 # ============================================================
@@ -4757,8 +4758,9 @@ def gerar_indice_relacoes_especializado(registros, categoria):
             )
 
     linhas.sort()
+    cabecalho = f"ACÓRDÃOS ({len(selecionados)})" if categoria == "acordaos" else f"LEX MACHINA - ÍNDICE DE {titulo}"
     conteudo = (
-        f"LEX MACHINA - ÍNDICE DE {titulo}\n"
+        cabecalho + "\n"
         + "=" * 90 + "\n"
         + "FORMATO:\n"
         + "REFERÊNCIA|TRIBUNAL|TIPO|NÚMERO|STATUS|ARQUIVO|PASTA_DESTINO\n"
@@ -4895,7 +4897,7 @@ def gerar_manifesto_camadas_juridicas(registros):
         + f"Súmulas cadastradas: {qtd_sumulas}\n"
         + f"SÚMULAS VINCULANTES ({qtd_sumulas_vinculantes})\n"
         + f"RECURSOS REPETITIVOS ({qtd_repetitivos})\n"
-        + f"Acórdãos cadastrados: {qtd_acordaos}\n"
+        + f"ACÓRDÃOS ({qtd_acordaos})\n"
         + f"PRECEDENTES RELEVANTES ({qtd_precedentes})\n\n"
         + "Subtipos internos em PRECEDENTES RELEVANTES: adi, adc, adpf, ado, iac e sirdr.\n"
         + "Os índices 02_ACORDAOS e 03_PRECEDENTES possuem o caminho "
@@ -5615,6 +5617,22 @@ def main():
             encoding="utf-8",
         )
         print()
+
+    print("STJ - ACÓRDÃOS CONSUMERISTAS SELECIONADOS")
+    print("-" * 70)
+    registros_precedentes = carregar_json(ARQUIVO_CATALOGO_PRECEDENTES)
+    resultado_acordaos = atualizar_acordaos(
+        ARQUIVO_CATALOGO_ACORDAOS,
+        verbose=True,
+        registros_qualificados=registros_juris + registros_precedentes,
+    )
+    PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+    (PASTA_SAIDA / "relatorio_acordaos.json").write_text(
+        json.dumps(resultado_acordaos, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    registros_acordaos = carregar_json(ARQUIVO_CATALOGO_ACORDAOS)
+    print()
 
     registros_precedentes = (
         carregar_json(ARQUIVO_CATALOGO_PRECEDENTES)
