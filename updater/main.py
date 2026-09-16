@@ -15,6 +15,7 @@ from importar_stf_repercussao_geral import atualizar_catalogo_precedentes
 from importar_stf_controle_concentrado import atualizar_controle_concentrado
 from importar_stf_sumulas_vinculantes import atualizar_sumulas_vinculantes
 from importar_sumulas_comuns import atualizar_sumulas_comuns
+from importar_stj_repetitivos import atualizar_repetitivos_stj
 
 
 # ============================================================
@@ -4805,6 +4806,32 @@ def gerar_indice_sumulas(registros):
     return caminho
 
 
+def gerar_indice_repetitivos(registros):
+    """Lista somente Temas Repetitivos que podem ser apresentados como atuais."""
+    selecionados = [
+        r for r in registros
+        if str(r.get("tribunal", "")).upper() == "STJ"
+        and str(r.get("tipo", "")).lower() == "repetitivo"
+        and bool(r.get("vigente_aplicavel", str(r.get("status", "")).lower()
+                       not in {"cancelado", "desafetado", "sem_tese_aplicavel"}))
+    ]
+    pasta = PASTA_SAIDA / "99_RELATIONS_V1" / "05_RECURSOS_REPETITIVOS"
+    pasta.mkdir(parents=True, exist_ok=True)
+    caminho = pasta / "INDICE_RECURSOS_REPETITIVOS.txt"
+    linhas = [
+        f"{r['numero']}|{r.get('situacao_oficial_stj', r.get('status', ''))}|"
+        f"{r['arquivo']}|{r['pasta_destino']}"
+        for r in sorted(selecionados, key=lambda x: int(x["numero"]))
+    ]
+    caminho.write_text(
+        f"RECURSOS REPETITIVOS ({len(linhas)})\n" + "=" * 72
+        + "\nFORMATO: TEMA|SITUAÇÃO OFICIAL|ARQUIVO|PASTA_DESTINO\n" + "=" * 72
+        + "\n\n" + "\n".join(linhas) + ("\n" if linhas else ""),
+        encoding="utf-8", newline="\n",
+    )
+    return caminho
+
+
 def gerar_manifesto_camadas_juridicas(registros):
     pasta = PASTA_SAIDA / "99_RELATIONS_V1"
     pasta.mkdir(parents=True, exist_ok=True)
@@ -4815,7 +4842,12 @@ def gerar_manifesto_camadas_juridicas(registros):
         1 for r in registros
         if str(r.get("tipo", "")).lower() == "sumula_vinculante"
     )
-    qtd_repetitivos = sum(1 for r in registros if str(r.get("tipo", "")).lower() == "repetitivo")
+    qtd_repetitivos = sum(
+        1 for r in registros
+        if str(r.get("tipo", "")).lower() == "repetitivo"
+        and bool(r.get("vigente_aplicavel", str(r.get("status", "")).lower()
+                       not in {"cancelado", "desafetado", "sem_tese_aplicavel"}))
+    )
     qtd_acordaos = sum(1 for r in registros if _eh_acordao_registro(r))
     qtd_precedentes = sum(1 for r in registros if _eh_precedente_registro(r))
 
@@ -4830,7 +4862,7 @@ def gerar_manifesto_camadas_juridicas(registros):
         + "6 = PRECEDENTES RELEVANTES\n\n"
         + f"Súmulas cadastradas: {qtd_sumulas}\n"
         + f"SÚMULAS VINCULANTES ({qtd_sumulas_vinculantes})\n"
-        + f"Repetitivos cadastrados: {qtd_repetitivos}\n"
+        + f"RECURSOS REPETITIVOS ({qtd_repetitivos})\n"
         + f"Acórdãos cadastrados: {qtd_acordaos}\n"
         + f"Precedentes cadastrados: {qtd_precedentes}\n\n"
         + "Subtipos aceitos em PRECEDENTES: repercussao_geral, irdr, iac, "
@@ -5457,6 +5489,25 @@ def main():
         if ARQUIVO_CATALOGO_ACORDAOS.exists()
         else []
     )
+    registros_precedentes = (
+        carregar_json(ARQUIVO_CATALOGO_PRECEDENTES)
+        if ARQUIVO_CATALOGO_PRECEDENTES.exists()
+        else []
+    )
+    print("STJ - RECURSOS REPETITIVOS")
+    print("-" * 70)
+    resultado_repetitivos = atualizar_repetitivos_stj(
+        ARQUIVO_CATALOGO_JURISPRUDENCIA,
+        verbose=True,
+        outros_registros=registros_acordaos + registros_precedentes,
+    )
+    PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
+    (PASTA_SAIDA / "relatorio_stj_repetitivos.json").write_text(
+        json.dumps(resultado_repetitivos, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    registros_juris = carregar_json(ARQUIVO_CATALOGO_JURISPRUDENCIA)
+    print()
     print("STF/STJ - SÚMULAS COMUNS")
     print("-" * 70)
     resultado_sumulas = atualizar_sumulas_comuns(
@@ -5813,6 +5864,7 @@ def main():
             registros_juris_todos
         )
         indice_sumulas = gerar_indice_sumulas(registros_juris_todos)
+        indice_repetitivos = gerar_indice_repetitivos(registros_juris_todos)
         manifesto_camadas = gerar_manifesto_camadas_juridicas(
             registros_juris_todos
         )
@@ -5820,6 +5872,7 @@ def main():
         print(f"Índice de precedentes: {indice_precedentes}")
         print(f"Índice de Súmulas Vinculantes: {indice_sumulas_vinculantes}")
         print(f"Índice de Súmulas: {indice_sumulas}")
+        print(f"Índice de Recursos Repetitivos: {indice_repetitivos}")
         print(f"Manifesto das camadas: {manifesto_camadas}")
 
     except OSError as erro:
