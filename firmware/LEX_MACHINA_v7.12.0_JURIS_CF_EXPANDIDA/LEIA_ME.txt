@@ -1,0 +1,34 @@
+LEX MACHINA v7.12.0 JURIS CF EXPANDIDA
+======================================
+
+Base: v7.11.1 JURIS CF PILOTO, já validada fisicamente.
+
+Objetivo exclusivo
+------------------
+Remover o teto operacional de 64 entradas do JUR_LOOKUP sem alterar formato,
+semântica, interface, navegação, contexto jurídico ou Relations V2.
+
+O loader conta no boot todas as linhas de JUR_LOOKUP.IDX, aloca exatamente N
+estruturas em PSRAM, carrega os dois índices integralmente e valida schema,
+números, offsets alinhados, quantidades e total de registros. Se algo falhar,
+libera a memória e mantém o fallback SD sem crash.
+
+O limite de 4.096 entradas é proteção contra arquivo corrompido, não capacidade
+pré-alocada. Não existe corte silencioso. Foram testadas 0, 1, 64, 65, 178 e
+256 chaves simuladas.
+
+Serial esperado com os índices J4
+---------------------------------
+JUR CACHE: lookups=178 registros=296 bytes=64888 local=PSRAM PSRAM_livre_antes=...
+PSRAM_livre_depois=... tempo=... ms fonte=CACHE
+
+Arquivos de compilação
+----------------------
+- LEX_MACHINA_v7.12.0_JURIS_CF_EXPANDIDA.ino
+- contexto_juridico.h
+- assets/lex_boot_screen.h
+- assets/lex_boot_screen_preview.png
+
+Compilação: ESP32S3 Dev Module; PSRAM = OPI PSRAM.
+
+Não copiar índices J4 para o SD real e não fazer upload físico nesta etapa.
