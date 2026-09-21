@@ -12,6 +12,10 @@
 
 // =====================================================
 // LEX MACHINA - CYBERDECK JURIDICO
+// v7.10.2 RELATIONS V2 FLUIDA - RELACOES.IDX em PSRAM + diagnostico agregado
+//               + elimina leitura do indice de relacoes durante a rolagem
+//               + remove redraw duplicado do rodape ao abrir o leitor
+//               + fallback preservado para leitura direta do SD
 // v7.10.1 RELATIONS V2 FAST - cache V2 em PSRAM + rodape sem redraw redundante
 //               + mantem integralmente a base v7.9.4 CF BUSCA/CONTEXTO
 //               + lookup por artigo/paragrafo/inciso/alinea com fallback de especificidade
@@ -606,6 +610,12 @@ uint8_t enterTextoPressionado = 0;
 uint8_t backTextoPressionado = 0;
 uint8_t enterSplashPressionado = 0;
 
+// Diagnostico leve: agrega 32 movimentos antes de escrever no Serial, para
+// que a propria instrumentacao nao introduza travadas perceptiveis no scroll.
+uint32_t perfScrollTotalUs=0;
+uint32_t perfScrollMaxUs=0;
+uint16_t perfScrollAmostras=0;
+
 // Temporario: desativar apos identificar o botao fisico escolhido.
 #define DIAGNOSTICO_HID 1
 
@@ -784,6 +794,8 @@ struct NormaExternaV2Cache {
 
 LookupRelationsV2Cache *lookupV2Cache=nullptr;
 NormaExternaV2Cache *normasV2Cache=nullptr;
+char *relacoesV2Cache=nullptr;
+size_t tamanhoRelacoesV2Cache=0;
 int totalLookupV2Cache=0;
 int totalNormasV2Cache=0;
 bool cacheRelationsV2Carregado=false;
@@ -805,7 +817,8 @@ bool carregarCacheRelationsV2()
 {
   if(cacheRelationsV2Carregado) return true;
   if(!sdOK) return false;
-  if(!SD.exists(CAMINHO_REL_LOOKUP_V2) || !SD.exists(CAMINHO_EXT_NORMAS_V2))
+  if(!SD.exists(CAMINHO_REL_LOOKUP_V2) || !SD.exists(CAMINHO_EXT_NORMAS_V2) ||
+     !SD.exists(CAMINHO_RELACOES_V2))
     return false;
 
   bool temPSRAM=psramFound();
@@ -867,9 +880,33 @@ bool carregarCacheRelationsV2()
   }
   fn.close();
 
+  // REL_LOOKUP.IDX guarda offsets absolutos dentro de RELACOES.IDX. Mantendo
+  // uma copia byte a byte deste arquivo na PSRAM, os mesmos offsets continuam
+  // validos e a semantica juridica nao muda. Se a PSRAM/cache falhar, a rotina
+  // de consulta conserva o caminho anterior e le diretamente do SD.
+  File fr=SD.open(CAMINHO_RELACOES_V2,FILE_READ);
+  if(fr){
+    size_t bytes=(size_t)fr.size();
+    if(temPSRAM && bytes>0){
+      relacoesV2Cache=(char*)heap_caps_malloc(bytes+1,MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+      if(relacoesV2Cache){
+        size_t lidos=fr.read((uint8_t*)relacoesV2Cache,bytes);
+        if(lidos==bytes){
+          relacoesV2Cache[bytes]='\0';
+          tamanhoRelacoesV2Cache=bytes;
+        }else{
+          heap_caps_free(relacoesV2Cache);
+          relacoesV2Cache=nullptr;
+        }
+      }
+    }
+    fr.close();
+  }
+
   cacheRelationsV2Carregado=true;
-  Serial.printf("RELV2 CACHE: lookup=%d normas=%d tempo=%lu ms (%s)\\n",
+  Serial.printf("RELV2 CACHE: lookup=%d normas=%d relacoes=%u bytes tempo=%lu ms (%s)\\n",
                 totalLookupV2Cache,totalNormasV2Cache,
+                (unsigned)tamanhoRelacoesV2Cache,
                 (micros()-t0)/1000,temPSRAM?"PSRAM":"RAM");
   return true;
 }
@@ -1461,7 +1498,8 @@ bool carregarCorrelatasRelationsV2(const String &artigo)
 {
   String norma=normaOrigemRelationsV2Atual();
   if(norma.length()==0) return false;
-  if(!SD.exists(CAMINHO_REL_LOOKUP_V2) || !SD.exists(CAMINHO_RELACOES_V2))
+  if(!relacoesV2Cache &&
+     (!SD.exists(CAMINHO_REL_LOOKUP_V2) || !SD.exists(CAMINHO_RELACOES_V2)))
     return false;
 
   uint32_t offset=0;
@@ -1471,16 +1509,10 @@ bool carregarCorrelatasRelationsV2(const String &artigo)
                                     parUsado,incUsado,aliUsada))
     return false;
 
-  File f=SD.open(CAMINHO_RELACOES_V2,FILE_READ);
-  if(!f || !f.seek(offset)){ if(f) f.close(); return false; }
-
   String origem=rotuloOrigemRelationsV2(norma,artigo,parUsado,incUsado,aliUsada);
-  int lidas=0;
-  while(f.available() && lidas<quantidade && totalCorrelatasArtigo<MAX_RELACOES_ARTIGO){
-    String linha=f.readStringUntil('\n');
+  auto processarLinha=[&](String linha)->bool {
     linha.trim();
-    if(linha.length()==0 || linha[0]=='#') continue;
-    lidas++;
+    if(linha.length()==0 || linha[0]=='#') return false;
 
     String relacaoId=campoPipe(linha,5);
     String normaId=campoPipe(linha,6);
@@ -1510,12 +1542,37 @@ bool carregarCorrelatasRelationsV2(const String &artigo)
     }else{
       adicionarCorrelataV2(origem,relacaoId,normaId,nome,modo,"",caminho);
     }
-  }
-  f.close();
+    return true;
+  };
 
-  Serial.printf("RELATIONS V2: %s -> %d correlata(s), chave %s|%s|%s|%s\n",
+  int lidas=0;
+  if(relacoesV2Cache && offset<tamanhoRelacoesV2Cache){
+    size_t cursor=offset;
+    while(cursor<tamanhoRelacoesV2Cache && lidas<quantidade &&
+          totalCorrelatasArtigo<MAX_RELACOES_ARTIGO){
+      size_t fim=cursor;
+      while(fim<tamanhoRelacoesV2Cache && relacoesV2Cache[fim]!='\n') fim++;
+      String linha;
+      linha.reserve((unsigned)(fim-cursor));
+      for(size_t i=cursor;i<fim;i++)
+        if(relacoesV2Cache[i]!='\r') linha+=(char)relacoesV2Cache[i];
+      if(processarLinha(linha)) lidas++;
+      cursor=fim<tamanhoRelacoesV2Cache ? fim+1 : fim;
+    }
+  }else{
+    File f=SD.open(CAMINHO_RELACOES_V2,FILE_READ);
+    if(!f || !f.seek(offset)){ if(f) f.close(); return false; }
+    while(f.available() && lidas<quantidade && totalCorrelatasArtigo<MAX_RELACOES_ARTIGO){
+      String linha=f.readStringUntil('\n');
+      if(processarLinha(linha)) lidas++;
+    }
+    f.close();
+  }
+
+  Serial.printf("RELATIONS V2: %s -> %d correlata(s), chave %s|%s|%s|%s (%s)\n",
                 artigo.c_str(),totalCorrelatasArtigo,
-                artigo.c_str(),parUsado.c_str(),incUsado.c_str(),aliUsada.c_str());
+                artigo.c_str(),parUsado.c_str(),incUsado.c_str(),aliUsada.c_str(),
+                relacoesV2Cache?"PSRAM":"SD");
   return totalCorrelatasArtigo>0;
 }
 
@@ -2832,7 +2889,6 @@ void desenharTelaLeitor()
   tft.fillScreen(COR_FUNDO);
   desenharCabecalhoLeitor();
   desenharViewportLeitor();
-  desenharBarraBusca();
 }
 
 // =====================================================
@@ -3066,6 +3122,7 @@ void moverSelecaoRelacao(int delta)
 void rolarLeitor(int delta)
 {
   if(delta==0) return;
+  uint32_t t0=micros();
 
   // Limita saltos absurdos produzidos por varios eventos acumulados de touch,
   // mantendo resposta previsivel. Page Up/Down continuam funcionando.
@@ -3100,6 +3157,20 @@ void rolarLeitor(int delta)
   // O cache reaproveita as linhas que ja estavam em RAM e le do SD apenas
   // as linhas novas que entraram na tela.
   desenharViewportLeitor();
+
+  uint32_t duracao=micros()-t0;
+  perfScrollTotalUs+=duracao;
+  if(duracao>perfScrollMaxUs) perfScrollMaxUs=duracao;
+  perfScrollAmostras++;
+  if(perfScrollAmostras>=32){
+    Serial.printf("PERF SCROLL: media=%lu us max=%lu us heap=%u psram=%u relv2=%s\n",
+                  perfScrollTotalUs/perfScrollAmostras,perfScrollMaxUs,
+                  (unsigned)ESP.getFreeHeap(),(unsigned)ESP.getFreePsram(),
+                  relacoesV2Cache?"PSRAM":"SD");
+    perfScrollTotalUs=0;
+    perfScrollMaxUs=0;
+    perfScrollAmostras=0;
+  }
 }
 
 void abrirRelacaoSelecionada()
@@ -4590,7 +4661,7 @@ void setup()
   Serial.print("TESTE CONTEXTO JURIDICO: ");
   if(falhasContexto==0) Serial.println("OK");
   else { Serial.print(falhasContexto); Serial.println(" FALHA(S)"); }
-  Serial.println("LEX MACHINA V7.10.0 RELATIONS V2");
+  Serial.println("LEX MACHINA V7.10.2 RELATIONS V2 FLUIDA");
   Serial.print("Motivo do reset: ");
   Serial.println((int)esp_reset_reason());
   Serial.print("Heap ao iniciar: ");
@@ -4732,4 +4803,3 @@ void loop()
   atualizarInatividadeDisplay();
   delay(1);
 }
-

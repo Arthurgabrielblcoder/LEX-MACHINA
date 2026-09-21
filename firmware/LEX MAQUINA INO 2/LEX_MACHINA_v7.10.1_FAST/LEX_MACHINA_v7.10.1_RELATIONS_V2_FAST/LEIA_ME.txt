@@ -1,22 +1,61 @@
-LEX MACHINA — CORREÇÃO DE CONTEXTO PARA DISPOSITIVOS CURTOS
+LEX MACHINA v7.10.2 RELATIONS V2 FLUIDA
 
-Problema corrigido:
-- incisos/parágrafos muito curtos podiam ser pulados pelo indicador.
-- exemplo observado: ART. 201, INC. I -> INC. III, sem selecionar INC. II.
+BASE PRESERVADA
+- v7.10.1 RELATIONS V2 FAST.
+- contexto_juridico.h corrigido para dispositivos curtos.
+- assets/lex_boot_screen.h original.
+- Relations V2 e fallback V1 sem mudanca de formato ou regra juridica.
 
-Causa:
-- algoritmo antigo usava predominância em 5 linhas centrais
-- novo contexto precisava superar o atual por 2 linhas.
+OTIMIZACOES DESTA VERSAO
+- REL_LOOKUP.IDX permanece em cache compacto.
+- EXT_NORMAS.IDX permanece em cache compacto.
+- RELACOES.IDX passa a ser carregado byte a byte em OPI PSRAM.
+- os offsets de REL_LOOKUP.IDX continuam sendo usados sem conversao.
+- a mudanca de artigo/paragrafo/inciso/alinea deixa de abrir RELACOES.IDX no SD.
+- se o cache de RELACOES.IDX falhar, o caminho anterior pelo SD continua ativo.
+- removido um segundo desenho redundante do rodape ao abrir o leitor.
+- medicao de scroll agregada a cada 32 movimentos, sem log por movimento.
 
-Nova regra:
-- a linha central da tela tem prioridade.
-- predominância de 5 linhas continua somente como fallback.
+DIAGNOSTICO SERIAL ESPERADO
+RELV2 CACHE: lookup=41 normas=20 relacoes=8101 bytes ... (PSRAM)
+PERF SCROLL: media=... us max=... us heap=... psram=... relv2=PSRAM
 
-Como instalar:
-1. Feche o Arduino IDE.
-2. Na pasta do firmware v7.10.1 FAST, substitua APENAS
-   o arquivo contexto_juridico.h pelo novo arquivo deste pacote.
-3. NÃO altere assets.
-4. Mantenha PSRAM = OPI PSRAM.
-5. Compile e faça upload.
-6. Teste novamente CF art. 201, incisos I, II e III.
+CONFIGURACAO OBRIGATORIA
+- placa: ESP32-S3 Dev Module.
+- PSRAM: OPI PSRAM.
+- nao desabilitar PSRAM: o BLE ja apresentou abort/panic sem ela.
+
+ARQUIVOS PARA SUBSTITUICAO COMPLETA
+- LEX_MACHINA_v7.10.1_RELATIONS_V2_FAST.ino (conteudo v7.10.2).
+- contexto_juridico.h.
+- assets/lex_boot_screen.h.
+
+CHECKLIST DE TESTE FISICO
+1. Confirmar no Serial: TESTE CONTEXTO JURIDICO: OK.
+2. Confirmar no Serial: PSRAM detectada: SIM.
+3. Confirmar no Serial: RELV2 ... relacoes=8101 bytes e relv2=PSRAM.
+4. Conectar o teclado BLE e verificar que nao ha reboot.
+5. Na CF, rolar o art. 201 e confirmar INC. I, II e III no contexto.
+6. Na CF art. 5, XLIII, confirmar 1 LEGISLACAO.
+7. Abrir a Lei 13.260/2016 e confirmar salto ao art. 1.
+8. Abrir uma correlata sem salto e confirmar abertura no inicio da norma.
+9. Testar roda e touch em rolagem continua, comparando a media/max do Serial.
+10. Testar busca por artigo e busca textual.
+11. Testar menu, navegacao por pastas, voltar e sleep/despertar.
+12. Confirmar que a memoria heap permanece estavel depois de varios minutos.
+
+AUDITORIA ESTATICA DO SD DE TESTE (20/09/2026)
+- 41 chaves de lookup.
+- 46 bindings.
+- 46 linhas de relacao.
+- 20 normas externas.
+- 549 artigos externos.
+- 21 bindings com salto interno.
+- 25 bindings sem salto.
+- 0 offsets invalidos.
+
+LIMITES DA VERIFICACAO
+- A fluidez perceptiva, BLE, touch, roda, sleep e estabilidade termica exigem o
+  teste no hardware real. O display possui defeito fisico dependente de
+  temperatura; tela esbranquicada a frio nao deve ser atribuida ao firmware.
+- Jurisprudencia da CF nao foi adicionada nesta etapa.
