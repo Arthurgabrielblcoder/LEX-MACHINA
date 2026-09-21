@@ -1,0 +1,22 @@
+LEX MACHINA — CORREÇÃO DE CONTEXTO PARA DISPOSITIVOS CURTOS
+
+Problema corrigido:
+- incisos/parágrafos muito curtos podiam ser pulados pelo indicador.
+- exemplo observado: ART. 201, INC. I -> INC. III, sem selecionar INC. II.
+
+Causa:
+- algoritmo antigo usava predominância em 5 linhas centrais
+- novo contexto precisava superar o atual por 2 linhas.
+
+Nova regra:
+- a linha central da tela tem prioridade.
+- predominância de 5 linhas continua somente como fallback.
+
+Como instalar:
+1. Feche o Arduino IDE.
+2. Na pasta do firmware v7.10.1 FAST, substitua APENAS
+   o arquivo contexto_juridico.h pelo novo arquivo deste pacote.
+3. NÃO altere assets.
+4. Mantenha PSRAM = OPI PSRAM.
+5. Compile e faça upload.
+6. Teste novamente CF art. 201, incisos I, II e III.

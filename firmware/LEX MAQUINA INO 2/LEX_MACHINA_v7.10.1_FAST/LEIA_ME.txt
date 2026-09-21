@@ -1,0 +1,25 @@
+LEX MACHINA v7.10.1 RELATIONS V2 FAST
+
+CORRECOES:
+- REL_LOOKUP.IDX carregado uma unica vez em cache (preferencialmente PSRAM)
+- EXT_NORMAS.IDX carregado uma unica vez em cache
+- lookup contextual da CF passa a ser feito em memoria
+- limpeza leve das correlatas durante scroll da CF
+- remove redraw duplicado do rodape por mudanca de contexto
+- preserva toda a base v7.10.0 e o Relations V2
+
+IMPORTANTE:
+Este pacote contem o arquivo .ino completo.
+Mantenha na mesma pasta do sketch os auxiliares que ja existem e compilaram:
+- contexto_juridico.h
+- assets/lex_boot_screen.h
+
+PSRAM deve continuar configurada como OPI PSRAM no Arduino IDE.
+
+TESTE DE CORRELATA:
+Na CF, art. 5, a relacao existente no indice atual e no inciso XLIII.
+Nos incisos I, II, III etc. nao ha relacao cadastrada no pacote atual.
+
+JURISPRUDENCIA:
+A jurisprudencia atual do firmware continua baseada no indice consumerista/CDC.
+Ainda nao existe neste pacote um indice jurisprudencial da CF pronto para exibicao.
