@@ -1,0 +1,120 @@
+{
+  "approved_without_proof": [
+    {
+      "authority": "APLICACAO_DA_POLITICA_HUMANA",
+      "date": "2026-09-26",
+      "decisao": "APROVAR_SEGUNDO_POLITICA",
+      "device_id": "CF88:ART.205",
+      "existing_claims": [
+        {
+          "claim": {
+            "context": [
+              "BRASIL",
+              "DECADA_1930_1940"
+            ],
+            "effects": [],
+            "objects": [
+              "SALARIO_MINIMO"
+            ],
+            "participants": [
+              {
+                "concept": "TRABALHADOR",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "HISTORIAR",
+            "subjects": [
+              "TRABALHADOR"
+            ]
+          },
+          "id": "EXP-LIV-004#E01",
+          "source_hash": "c10e5e93f4a92200f7b19eaf5ca97d33c7f80fc4f74964762ba97698c295270a",
+          "state": "VALIDADA"
+        },
+        {
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "EDUCACAO",
+              "CIDADANIA"
+            ],
+            "participants": [
+              {
+                "concept": "PESSOA",
+                "role": "ACTOR"
+              }
+            ],
+            "predicate": "HISTORIAR",
+            "subjects": [
+              "PESSOA"
+            ]
+          },
+          "id": "EXP-LIV-004#R1C01",
+          "source_hash": "e31a9972feb711f2e1f8dd0b1a148badf3e453b72a386353c8bedc5fa6ee2e08",
+          "state": "VALIDADA"
+        }
+      ],
+      "fonte_causal": "DECOMPOSICAO_CAUSAL_FN_R1C.json",
+      "justificativa": "A fonte R1C p.11 historia explicitamente educação como condição da cidadania. CONTEXTUALIZACAO_HISTORICA não exige prática EDUCAR.",
+      "obra": "Cidadania no Brasil: O Longo Caminho",
+      "pair_id": "5f0ccaf905acf56c6971",
+      "policy": "POLITICA_EDITORIAL_REFERENCIAS_V2_V1",
+      "regras": [
+        "A",
+        "E"
+      ],
+      "rotulo_adjudicado_v1": "APROVAR",
+      "rotulo_historico": "APROVAR",
+      "work_id": "EXP-LIV-004"
+    }
+  ],
+  "at": "2026-09-26T03:00:09.812148+00:00",
+  "checks": {
+    "contractual_cases_disposed": true,
+    "four_fp_eliminated": true,
+    "frozen_input": true,
+    "integrity": true,
+    "known_fp_controlled": true,
+    "mechanisms10_negative_preserved": true,
+    "mechanisms15_preserved": true,
+    "no_new_structural_failure": false,
+    "old_tp_not_artificially_protected": true,
+    "recent20_negative_preserved": true,
+    "recent25_preserved": false,
+    "recent35_controlled": true,
+    "single_regression": true,
+    "technical_eight_closed": true,
+    "tests": true
+  },
+  "decision": "BLOQUEAR_EXECUCAO_COMPLETA_R1D",
+  "historical_label_matrix": {
+    "FN": 84,
+    "FP": 0,
+    "NAO_AVALIAVEL": 4,
+    "TN": 234,
+    "TP": 76,
+    "binary_total": 394,
+    "precision": 1.0,
+    "recall": 0.475
+  },
+  "holdout_opened": false,
+  "input_hash": "3fc68c046d9e6aa5070857b40a13f04e9000f136d11651d525b816ddde40f7f0",
+  "matrix": {
+    "FN": 62,
+    "FP": 0,
+    "NAO_AVALIAVEL": 23,
+    "TN": 237,
+    "TP": 76,
+    "binary_total": 375,
+    "precision": 1.0,
+    "recall": 0.5507246376811594
+  },
+  "new_fp": [],
+  "passed": false,
+  "policy_pending_allowed": true,
+  "status": "R1D_REGRESSION_COMPLETE_GATE_FAILED",
+  "technical_resolution_mismatches": [],
+  "unexpected_tp_losses": [],
+  "unexplained_transitions": []
+}

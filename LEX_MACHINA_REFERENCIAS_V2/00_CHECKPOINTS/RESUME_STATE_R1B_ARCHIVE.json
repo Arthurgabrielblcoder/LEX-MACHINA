@@ -1,0 +1,114 @@
+{
+  "status": "V2_EXPERIMENTAL_INCOMPLETA",
+  "subfase": "EXPANSION_R1B_REGRESSION_COMPLETE_GATE_FAILED",
+  "logical_timestamp": "V2-RETOMADA-FINAL-2026-09-24",
+  "canonical_input": "01_SCHEMA/CANONICAL_EVALUATION_INPUT_V2_R1B.json",
+  "input_hash": "3401d086d8a68e7b61ac9456732d133a6d61a00f2ff5c94ce03f589519cdcc91",
+  "structural_revisions_used": 1,
+  "factual_passes_used": 1,
+  "regression_r1": {
+    "TN_NAO_PUBLICADO": 230,
+    "FN": 110,
+    "FP": 4,
+    "TP": 50,
+    "NAO_AVALIAVEL": 4
+  },
+  "regression_r1b": {
+    "TN_NAO_PUBLICADO": 230,
+    "FN": 105,
+    "FP": 4,
+    "TP": 55,
+    "NAO_AVALIAVEL": 4
+  },
+  "known_unique_pairs": 398,
+  "valid_binary_pairs": 394,
+  "unresolved_labels": {
+    "conflicts": 3,
+    "pending": 1
+  },
+  "fn_causes": {
+    "REPRESENTACAO_DISPOSITIVO_INCOMPLETA": 52,
+    "FONTE_INSUFICIENTE": 17,
+    "CONTRATO_DE_NATUREZA_INADEQUADO": 12,
+    "EVIDENCIA_OBRA_PROPOSTA_NAO_VALIDADA": 24
+  },
+  "phase9_final_executed": false,
+  "integral_two_run_determinism": false,
+  "holdout": {
+    "pairs": 120,
+    "human_labels": 0,
+    "sha256": "b71a87a8292ac621a209201e2082935813563f8002f9203430af3b781414adf1"
+  },
+  "rc1_generated": false,
+  "protected_files": {
+    "checked": 545,
+    "unchanged": 545
+  },
+  "tests": {
+    "passed": 122,
+    "failed": 0,
+    "historical": 90,
+    "current_r1b": 32
+  },
+  "hashes": [
+    {
+      "path": "06_BENCHMARKS/REGRESSAO_COMPLETA_EXPANSION_R1.json",
+      "sha256": "e59297ec4a855b9c637291d29bc2f11a9d99a0a23304192d25d57699ccd5af3c"
+    },
+    {
+      "path": "06_BENCHMARKS/REGRESSAO_COMPLETA_EXPANSION_R1B.json",
+      "sha256": "f097f472fe8a122a2290fddf4ba35960d848a2a49603913537106514a5d62407"
+    },
+    {
+      "path": "06_BENCHMARKS/PROVAS_EXPANSAO_R1B.json",
+      "sha256": "56800ec93c262ebff3da059b7f1597e0a42d072cb936c6166ce2dd9a78489beb"
+    },
+    {
+      "path": "06_BENCHMARKS/DECOMPOSICAO_CAUSAL_FN_R1B.json",
+      "sha256": "7f1dd4559398233ac67ffcee2efc8230ae65932fb22bc9c2240968ee072994b4"
+    },
+    {
+      "path": "06_BENCHMARKS/HOLDOUT_V2_BLIND.json",
+      "sha256": "b71a87a8292ac621a209201e2082935813563f8002f9203430af3b781414adf1"
+    },
+    {
+      "path": "00_CHECKPOINTS/INTEGRITY_FINAL.json",
+      "sha256": "37f7f3ba77cf85df505df9021d537c3ae0f44a22f863878e467a6f50dae862af"
+    },
+    {
+      "path": "00_CHECKPOINTS/TEST_RESULTS_FINAL.json",
+      "sha256": "38af80b307bac1b54bbba915af72432d0cf3be6cf6674402cd103c7a1cfdc3df"
+    },
+    {
+      "path": "00_CHECKPOINTS/FINAL_DEVELOPMENT_GATE.json",
+      "sha256": "437b6145d2634abfe840730086bfc5321dba7f83938a340f63fec8db126ffda4"
+    },
+    {
+      "path": "09_RELATORIOS/V2_EXPERIMENTAL_INCOMPLETA.md",
+      "sha256": "066eaec2e4e19d1e95feacbbddab251215c30ebf1e0a7723816f174f974d939c"
+    }
+  ],
+  "complete_manifest": "00_CHECKPOINTS/FINAL_ARTIFACT_MANIFEST.json",
+  "pending": [
+    "52 FN de representação incompleta, 24 de evidência proposta, 17 de fonte insuficiente, 12 de natureza de contrato.",
+    "4 FP por transposição da ampla defesa a regimes funcionais; nenhuma exceção individual permitida.",
+    "3 conflitos e 1 pendente para adjudicação humana; holdout ainda sem rótulos.",
+    "Gate de preservação dos positivos não satisfeito. Nova revisão estrutural não autorizada."
+  ],
+  "next_action": "PARAR. Ler o relatório final e os diagnósticos salvos. Aguardar decisão humana e nova autorização versionada para qualquer curadoria adicional ou alteração estrutural. Não reexecutar R1/R1B nem iniciar fase 9/RC.",
+  "prohibitions": [
+    "R2 arquitetural",
+    "segundo passe factual",
+    "autorrotular holdout",
+    "firmware",
+    "SD físico",
+    "IDX produção",
+    "substituir catálogo/DNA oficiais"
+  ],
+  "git": {
+    "head": "d4e816fb5a904f401b5ea1133720fc052d69412d",
+    "outside_v2_changes_since_snapshot": 0,
+    "preexisting_dirty_firmware_preserved": true,
+    "commit_created": false
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "additional": {
+    "APROVAR": 3,
+    "EVIDENCIA_INSUFICIENTE": 6,
+    "PENDENTE_HUMANO": 3,
+    "REJEITAR": 2
+  },
+  "at": "2026-09-26T03:01:20.436641+00:00",
+  "changed_binary_labels": [
+    {
+      "authority": "APLICACAO_DA_POLITICA_HUMANA",
+      "device_id": "CF88:ART.55:PAR.3",
+      "motivo": "Defesa em persecução opaca não traz âncora de mandato parlamentar ou declaração pela Mesa. Rejeição editorial desse suporte, não prova negativa sobre toda a obra.",
+      "rotulo_adjudicado_v1": "REJEITAR",
+      "rotulo_historico": "APROVAR",
+      "work_id": "REF-LIV-0002"
+    },
+    {
+      "authority": "HUMANA_EXPLICITA",
+      "device_id": "CF88:ART.5:INC.LV",
+      "motivo": "Reexame de prova e dúvida probatória não demonstram contraditório/ampla defesa; revisão humana expressa do APROVAR histórico.",
+      "rotulo_adjudicado_v1": "REJEITAR",
+      "rotulo_historico": "APROVAR",
+      "work_id": "REF-FIL-0001"
+    },
+    {
+      "authority": "APLICACAO_DA_POLITICA_HUMANA",
+      "device_id": "CF88:ART.5:INC.XII",
+      "motivo": "Exploração de dados pessoais não demonstra violação de sigilo de comunicação/interceptação. Não confundir objeto protegido com o art.5 LXXIX.",
+      "rotulo_adjudicado_v1": "REJEITAR",
+      "rotulo_historico": "APROVAR",
+      "work_id": "REF-DOC-0001"
+    }
+  ],
+  "changed_label_counts": {
+    "APROVAR": 138,
+    "CONFLITO": 3,
+    "EVIDENCIA_INSUFICIENTE": 11,
+    "PENDENTE": 1,
+    "PENDENTE_HUMANO": 8,
+    "REJEITAR": 237
+  },
+  "full": null,
+  "full_execution": false,
+  "gate": "BLOQUEAR_EXECUCAO_COMPLETA_R1D",
+  "gate_diagnostic": "09_RELATORIOS/DIAGNOSTICO_GATE_R1D.md",
+  "groups": {
+    "external36": {
+      "FN": 3,
+      "FP": 0,
+      "NAO_AVALIAVEL": 2,
+      "TN": 23,
+      "TP": 8,
+      "binary_total": 34,
+      "precision": 1.0,
+      "recall": 0.7272727272727273
+    },
+    "human134": {
+      "FN": 7,
+      "FP": 0,
+      "NAO_AVALIAVEL": 2,
+      "TN": 114,
+      "TP": 11,
+      "binary_total": 132,
+      "precision": 1.0,
+      "recall": 0.6111111111111112
+    },
+    "mechanisms15": {
+      "FN": 0,
+      "FP": 0,
+      "NAO_AVALIAVEL": 2,
+      "TN": 1,
+      "TP": 12,
+      "binary_total": 13,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "negatives10": {
+      "FN": 0,
+      "FP": 0,
+      "NAO_AVALIAVEL": 0,
+      "TN": 10,
+      "TP": 0,
+      "binary_total": 10,
+      "precision": null,
+      "recall": null
+    },
+    "old176": {
+      "FN": 54,
+      "FP": 0,
+      "NAO_AVALIAVEL": 15,
+      "TN": 53,
+      "TP": 54,
+      "binary_total": 161,
+      "precision": 1.0,
+      "recall": 0.5
+    },
+    "protected20": {
+      "FN": 7,
+      "FP": 0,
+      "NAO_AVALIAVEL": 2,
+      "TN": 0,
+      "TP": 11,
+      "binary_total": 18,
+      "precision": 1.0,
+      "recall": 0.6111111111111112
+    },
+    "recent20": {
+      "FN": 0,
+      "FP": 0,
+      "NAO_AVALIAVEL": 0,
+      "TN": 18,
+      "TP": 2,
+      "binary_total": 20,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "recent60": {
+      "FN": 2,
+      "FP": 0,
+      "NAO_AVALIAVEL": 7,
+      "TN": 36,
+      "TP": 15,
+      "binary_total": 53,
+      "precision": 1.0,
+      "recall": 0.8823529411764706
+    }
+  },
+  "historical_label_matrix": {
+    "FN": 84,
+    "FP": 0,
+    "NAO_AVALIAVEL": 4,
+    "TN": 234,
+    "TP": 76,
+    "binary_total": 394,
+    "precision": 1.0,
+    "recall": 0.475
+  },
+  "human_adjudications": 12,
+  "integrity": {
+    "checked_at": "2026-09-26T03:01:20.425999+00:00",
+    "holdout_content_opened": false,
+    "holdout_sha256": "b71a87a8292ac621a209201e2082935813563f8002f9203430af3b781414adf1",
+    "passed": true,
+    "preexisting_v2_changed": [],
+    "preexisting_v2_checked": 162,
+    "protected_changed": [],
+    "protected_checked": 545
+  },
+  "matrix": {
+    "FN": 62,
+    "FP": 0,
+    "NAO_AVALIAVEL": 23,
+    "TN": 237,
+    "TP": 76,
+    "binary_total": 375,
+    "precision": 1.0,
+    "recall": 0.5507246376811594
+  },
+  "next_step": "Em futura revisão versionada de R1D, completar CF88:ART.205#N1 com CONTEXTUALIZACAO_HISTORICA de HISTORIAR/ANALISAR EDUCACAO e CIDADANIA; preservar a dependência N3. Novo freeze e nova regressão somente mediante nova autorização. Não reexecutar R1C/R1D congeladas nem criar R2.",
+  "rc1": false,
+  "simulation": {
+    "FP_ELIMINADO": 4,
+    "NEGATIVO_PRESERVADO": 3,
+    "TP_HISTORICO_PARA_READJUDICACAO": 5
+  },
+  "status": "R1D_REGRESSION_COMPLETE_GATE_FAILED",
+  "technical": {
+    "EVIDENCIA_INSUFICIENTE": 2,
+    "RESOLVIDA": 6
+  },
+  "tests": {
+    "at": "2026-09-26T02:59:08.162317+00:00",
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "scope": "Estrutura, integridade e afirmações sintéticas; sem reavaliar benchmarks ou holdout.",
+    "tests_run": 11
+  }
+}

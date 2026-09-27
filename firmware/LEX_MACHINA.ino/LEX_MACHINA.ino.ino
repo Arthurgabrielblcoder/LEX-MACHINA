@@ -5,12 +5,16 @@
 #include <Adafruit_ILI9341.h>
 #include <EspBle.h>
 #include <esp_system.h>
+#include <esp_heap_caps.h>
+#include <new>
 #include "assets/lex_boot_screen.h"
 #include "contexto_juridico.h"
 
 // =====================================================
 // LEX MACHINA - CYBERDECK JURIDICO
-// v7.9.3 RODAPE SIMPLIFICADO - atalhos sem contadores no leitor
+// v7.9.4 CF BUSCA/CONTEXTO - corrige cabecalhos partidos "Art." + numero na linha seguinte
+//               + mantem integralmente a base v7.9.3 RODAPE SIMPLIFICADO
+//               + atalhos sem contadores no leitor
 //               + quantidade exibida somente dentro da categoria
 //               + opções do rodapé aparecem apenas quando houver conteúdo
 //               + correção de navegação por roda e touch na tela de relações
@@ -541,7 +545,7 @@ int avancoGlyphArimo(uint16_t cp)
 // =====================================================
 // ESTADO GERAL
 // =====================================================
-enum TelaAtual { TELA_PASTAS, TELA_LEITOR, TELA_BUSCA_TEXTO, TELA_SPLASH, TELA_RELACOES };
+enum TelaAtual { TELA_PASTAS, TELA_LEITOR, TELA_BUSCA_TEXTO, TELA_SPLASH, TELA_RELACOES, TELA_JURIS_CATEGORIAS, TELA_REFERENCIAS };
 TelaAtual telaAtual = TELA_PASTAS;
 // O tipo de busca nao depende de o teclado virtual estar visivel.
 enum BuscaAtiva { BUSCA_NENHUMA, BUSCA_ARTIGO, BUSCA_TEXTO };
@@ -634,7 +638,16 @@ uint32_t tamanhoArquivoAtual = 0;
 #define MAX_RELACOES_ARTIGO 32
 #define RELACOES_VISIVEIS 6
 
-enum CategoriaRelacao { REL_NENHUMA=0, REL_SUMULAS=1, REL_REPETITIVOS=2, REL_CORRELATAS=3 };
+enum CategoriaRelacao {
+  REL_NENHUMA=0,
+  REL_CORRELATAS=1,
+  REL_SUMULAS=2,
+  REL_SUMULAS_VINCULANTES=3,
+  REL_ACORDAOS=4,
+  REL_REPERCUSSAO_GERAL=5,
+  REL_REPETITIVOS=6,
+  REL_PRECEDENTES_RELEVANTES=7
+};
 
 struct RelacaoJuridica {
   String referencia;
@@ -643,6 +656,7 @@ struct RelacaoJuridica {
   String numero;
   String status;
   String arquivo;
+  String caminho;
 };
 
 struct CorrelataJuridica {
@@ -652,19 +666,50 @@ struct CorrelataJuridica {
   String pastaDestino;
 };
 
+// Os indices do SD sao parseados uma unica vez. O conjunto contextual exibido
+// continua pequeno; estes vetores sao apenas a fonte em RAM para as consultas.
+#define MAX_REGISTROS_INDICE_JUR 128
+#define MAX_REGISTROS_INDICE_COR 128
+#define CONTEXTOS_LRU 4
+RelacaoJuridica *indiceJurisCache=nullptr;
+CorrelataJuridica *indiceCorrelatasCache=nullptr;
+int totalIndiceJurisCache=0, totalIndiceCorrelatasCache=0;
+bool indicesContextuaisCarregados=false;
+
+struct ResultadoContextoLRU {
+  String chave;
+  uint8_t juris[MAX_RELACOES_ARTIGO];
+  uint8_t correlatas[MAX_RELACOES_ARTIGO];
+  uint8_t totalJuris, totalCorrelatas;
+  uint32_t uso;
+  bool valido;
+};
+ResultadoContextoLRU contextosLRU[CONTEXTOS_LRU];
+uint32_t relogioContextosLRU=0;
+
 // Prototipos explicitos: evitam que o pre-processador do Arduino IDE
 // gere declaracoes automaticas antes de conhecer os tipos customizados
 // RelacaoJuridica e CategoriaRelacao.
-String caminhoArquivoRelacao(const RelacaoJuridica &r);
+String caminhoArquivoRelacao(RelacaoJuridica &r);
 String primeiroTXTDaPasta(String pasta);
+String localizarArquivoRecursivo(const String &pasta, const String &arquivo, int profundidade);
+bool carregarIndicesContextuais();
 void abrirCategoriaRelacao(CategoriaRelacao categoria);
+void desenharBarraBusca();
+String nomeCategoriaRelacao(CategoriaRelacao categoria);
+int quantidadeCategoriaRelacao(CategoriaRelacao categoria);
 
 RelacaoJuridica relacoesArtigo[MAX_RELACOES_ARTIGO];
 CorrelataJuridica correlatasArtigo[MAX_RELACOES_ARTIGO];
 int totalRelacoesArtigo=0;
 int totalSumulasArtigo=0;
+int totalSumulasVinculantesArtigo=0;
+int totalAcordaosArtigo=0;
+int totalRepercussaoGeralArtigo=0;
 int totalRepetitivosArtigo=0;
+int totalPrecedentesRelevantesArtigo=0;
 int totalCorrelatasArtigo=0;
+int totalReferenciasArtigo=0;
 bool menuRelacoesAtivo=false;
 bool modoDigitacaoArtigo=true;
 String artigoRelacoes="";
@@ -674,6 +719,9 @@ int indicesRelacaoCategoria[MAX_RELACOES_ARTIGO];
 int totalRelacoesCategoria=0;
 int relacaoSelecionada=0;
 int primeiraRelacaoVisivel=0;
+CategoriaRelacao categoriasJurisDisponiveis[6];
+int totalCategoriasJuris=0;
+int categoriaJurisSelecionada=0;
 
 // Ao abrir uma sumula/tema, guardamos apenas o minimo necessario para voltar
 // exatamente ao contexto do artigo, sem duplicar o grande indice de linhas.
@@ -683,6 +731,12 @@ String origemNomeArtigo="";
 uint32_t origemTamanhoArtigo=0;
 uint32_t origemTopoByte=0;
 String origemArtigoDigitado="";
+String contextoRelacoesRotulo="";
+String contextoDocumentoReferencia="";
+CategoriaRelacao origemCategoriaRelacao=REL_NENHUMA;
+int origemRelacaoSelecionada=0;
+int origemPrimeiraRelacaoVisivel=0;
+int origemCategoriaJurisSelecionada=0;
 
 const char *CAMINHO_INDICE_CDC =
   "/9-CÓDIGO DE DEFESA DO CONSUMIDOR/99_INDICES/INDICE_JURISPRUDENCIA_CDC.txt";
@@ -743,7 +797,7 @@ void reiniciarBuscaTexto()
 
 // Arimo proporcional rasterizada diretamente em 12 px, com antialias A4.
 // Nao ha ampliacao de pixels; as metricas abaixo pertencem ao novo raster.
-#define LEITOR_LINHAS_VISIVEIS 13
+#define LEITOR_LINHAS_VISIVEIS 12
 #define MAX_LINHAS_INDEXADAS 16000
 #define LEITOR_TEXTO_W 312
 #define LEITOR_LINHA_H 15
@@ -769,6 +823,15 @@ uint32_t offsetLinhaCache[LEITOR_LINHAS_VISIVEIS];
 ContextoJuridicoAtivo contextoLinhasCache[LEITOR_LINHAS_VISIVEIS];
 ContextoJuridicoAtivo contextoAntesCache;
 ContextoJuridicoAtivo contextoJuridicoAtivo;
+#define MAX_CHECKPOINTS_CONTEXTO 128
+struct CheckpointContexto {
+  uint32_t offset;
+  ContextoJuridicoAtivo contexto; // contexto imediatamente antes de offset
+  bool valido;
+};
+CheckpointContexto *checkpointsContexto=nullptr;
+int proximoCheckpointContexto=0;
+String arquivoCheckpoints="";
 // Intervalos no cache derivados dos bytes ORIGINAIS; o texto nao e modificado.
 uint16_t destaqueInicioCache[LEITOR_LINHAS_VISIVEIS];
 uint16_t destaqueFimCache[LEITOR_LINHAS_VISIVEIS];
@@ -1048,9 +1111,109 @@ bool referenciaEhDoArtigoCDC(const String &referencia, const String &artigo)
   return somenteDigitos(parte)==somenteDigitos(artigo);
 }
 
+int especificidadeReferenciaAtiva(const String &referencia, const String &artigo)
+{
+  if(!referenciaEhDoArtigoCDC(referencia,artigo)) return -1;
+  int nivel=1;
+  int virgula=referencia.indexOf(',');
+  if(virgula<0) return nivel;
+
+  String detalhe=referencia.substring(virgula+1);
+  detalhe.trim();
+  String par=contextoJuridicoAtivo.paragrafo;
+  String inc=contextoJuridicoAtivo.inciso;
+  String ali=contextoJuridicoAtivo.alinea;
+
+  int marcaPar=detalhe.indexOf("§");
+  if(marcaPar>=0){
+    if(par.length()==0) return -1;
+    int fimPar=detalhe.indexOf(',',marcaPar);
+    String trechoPar=fimPar<0?detalhe.substring(marcaPar):detalhe.substring(marcaPar,fimPar);
+    String digitosRef=somenteDigitos(trechoPar);
+    String digitosAtivo=somenteDigitos(par);
+    if(digitosRef.length()>0 || digitosAtivo.length()>0){
+      if(digitosRef!=digitosAtivo) return -1;
+    }else{
+      String refUnico=trechoPar; refUnico.toLowerCase();
+      String ativoUnico=par; ativoUnico.toLowerCase();
+      if(refUnico.indexOf("nico")<0 || ativoUnico.indexOf("nico")<0) return -1;
+    }
+    nivel=2;
+    if(fimPar>=0) detalhe=detalhe.substring(fimPar+1);
+    else detalhe="";
+    detalhe.trim();
+  }
+
+  if(detalhe.length()>0){
+    int fimInc=detalhe.indexOf(',');
+    String trechoInc=fimInc<0?detalhe:detalhe.substring(0,fimInc);
+    trechoInc.trim(); trechoInc.toUpperCase();
+    String incAtivo=inc; incAtivo.trim(); incAtivo.toUpperCase();
+    if(incAtivo.length()==0 || trechoInc!=incAtivo) return -1;
+    nivel=3;
+    if(fimInc>=0){
+      String trechoAli=detalhe.substring(fimInc+1);
+      trechoAli.trim(); trechoAli.toLowerCase();
+      String aliAtiva=ali; aliAtiva.trim(); aliAtiva.toLowerCase();
+      trechoAli.replace(")","");
+      if(aliAtiva.length()==0 || trechoAli!=aliAtiva) return -1;
+      nivel=4;
+    }
+  }
+  return nivel;
+}
+
 bool arquivoAtualPertenceAoCDC()
 {
   return caminhoArquivoAtual.startsWith("/9-CÓDIGO DE DEFESA DO CONSUMIDOR/");
+}
+
+bool inicializarCachesGrandes()
+{
+  if(indiceJurisCache && indiceCorrelatasCache && checkpointsContexto) return true;
+
+  bool temPSRAM=psramFound();
+  Serial.print("PSRAM detectada: ");
+  Serial.println(temPSRAM ? "SIM" : "NAO");
+  if(temPSRAM){
+    Serial.print("PSRAM livre antes dos caches: ");
+    Serial.println(ESP.getFreePsram());
+  }
+
+  auto alocarBloco=[&](size_t bytes)->void* {
+    void *mem=nullptr;
+    if(temPSRAM)
+      mem=heap_caps_malloc(bytes,MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+    if(!mem)
+      mem=heap_caps_malloc(bytes,MALLOC_CAP_8BIT);
+    return mem;
+  };
+
+  void *memJ=alocarBloco(sizeof(RelacaoJuridica)*MAX_REGISTROS_INDICE_JUR);
+  void *memC=alocarBloco(sizeof(CorrelataJuridica)*MAX_REGISTROS_INDICE_COR);
+  void *memP=alocarBloco(sizeof(CheckpointContexto)*MAX_CHECKPOINTS_CONTEXTO);
+  if(!memJ || !memC || !memP){
+    Serial.println("ERRO: memoria insuficiente para caches juridicos");
+    if(memJ) heap_caps_free(memJ);
+    if(memC) heap_caps_free(memC);
+    if(memP) heap_caps_free(memP);
+    return false;
+  }
+
+  indiceJurisCache=(RelacaoJuridica*)memJ;
+  indiceCorrelatasCache=(CorrelataJuridica*)memC;
+  checkpointsContexto=(CheckpointContexto*)memP;
+  for(int i=0;i<MAX_REGISTROS_INDICE_JUR;i++) new (&indiceJurisCache[i]) RelacaoJuridica();
+  for(int i=0;i<MAX_REGISTROS_INDICE_COR;i++) new (&indiceCorrelatasCache[i]) CorrelataJuridica();
+  memset(checkpointsContexto,0,sizeof(CheckpointContexto)*MAX_CHECKPOINTS_CONTEXTO);
+
+  Serial.print("Heap apos caches juridicos: ");
+  Serial.println(ESP.getFreeHeap());
+  if(temPSRAM){
+    Serial.print("PSRAM livre apos caches: ");
+    Serial.println(ESP.getFreePsram());
+  }
+  return true;
 }
 
 void limparRelacoesArtigo()
@@ -1062,6 +1225,7 @@ void limparRelacoesArtigo()
     relacoesArtigo[i].numero="";
     relacoesArtigo[i].status="";
     relacoesArtigo[i].arquivo="";
+    relacoesArtigo[i].caminho="";
   }
   for(int i=0;i<MAX_RELACOES_ARTIGO;i++){
     correlatasArtigo[i].origem="";
@@ -1071,96 +1235,253 @@ void limparRelacoesArtigo()
   }
   totalRelacoesArtigo=0;
   totalSumulasArtigo=0;
+  totalSumulasVinculantesArtigo=0;
+  totalAcordaosArtigo=0;
+  totalRepercussaoGeralArtigo=0;
   totalRepetitivosArtigo=0;
+  totalPrecedentesRelevantesArtigo=0;
   totalCorrelatasArtigo=0;
+  totalReferenciasArtigo=0;
   menuRelacoesAtivo=false;
   artigoRelacoes="";
   categoriaRelacaoAtual=REL_NENHUMA;
   totalRelacoesCategoria=0;
   relacaoSelecionada=0;
   primeiraRelacaoVisivel=0;
+  totalCategoriasJuris=0;
+  categoriaJurisSelecionada=0;
+}
+
+String chaveContextoAtual(const String &artigo)
+{
+  return artigo+"|"+String(contextoJuridicoAtivo.paragrafo)+"|"+
+         String(contextoJuridicoAtivo.inciso)+"|"+String(contextoJuridicoAtivo.alinea);
+}
+
+// Uma unica caminhada associa os nomes do indice aos caminhos reais. Ela e
+// feita ao montar o cache, nunca ao abrir cada item.
+void indexarCaminhosJurisprudencia(const String &pasta, int profundidade)
+{
+  if(profundidade<0) return;
+  File dir=SD.open(pasta.c_str());
+  if(!dir || !dir.isDirectory()){ if(dir) dir.close(); return; }
+  while(true){
+    File item=dir.openNextFile();
+    if(!item) break;
+    String nome=somenteNome(String(item.name()));
+    bool ehPasta=item.isDirectory();
+    item.close();
+    String caminho=pasta+"/"+nome;
+    if(ehPasta) indexarCaminhosJurisprudencia(caminho,profundidade-1);
+    else{
+      for(int i=0;i<totalIndiceJurisCache;i++)
+        if(indiceJurisCache[i].caminho.length()==0 && indiceJurisCache[i].arquivo==nome)
+          indiceJurisCache[i].caminho=caminho;
+    }
+    yield();
+  }
+  dir.close();
+}
+
+bool carregarIndicesContextuais()
+{
+  if(indicesContextuaisCarregados) return true;
+  if(!inicializarCachesGrandes()) return false;
+  uint32_t t0=micros(), tLeitura=0, tParse=0;
+  totalIndiceJurisCache=totalIndiceCorrelatasCache=0;
+  File f=SD.open(CAMINHO_INDICE_CDC,FILE_READ);
+  if(!f) return false;
+  while(f.available() && totalIndiceJurisCache<MAX_REGISTROS_INDICE_JUR){
+    uint32_t a=micros(); String linha=f.readStringUntil('\n'); tLeitura+=micros()-a;
+    linha.trim();
+    if(linha.length()==0 || linha[0]=='=' || linha.startsWith("LEX MACHINA") ||
+       linha.startsWith("FORMATO:") || linha.startsWith("REFERÊNCIA|") ||
+       linha.startsWith("REFERENCIA|")) continue;
+    a=micros();
+    RelacaoJuridica &r=indiceJurisCache[totalIndiceJurisCache++];
+    r.referencia=campoPipe(linha,0); r.tribunal=campoPipe(linha,1);
+    r.tipo=campoPipe(linha,2); r.numero=campoPipe(linha,3);
+    r.status=campoPipe(linha,4); r.arquivo=campoPipe(linha,5); r.caminho="";
+    tParse+=micros()-a;
+  }
+  f.close();
+  File fc=SD.open(CAMINHO_INDICE_CORRELATAS,FILE_READ);
+  if(fc){
+    while(fc.available() && totalIndiceCorrelatasCache<MAX_REGISTROS_INDICE_COR){
+      uint32_t a=micros(); String linha=fc.readStringUntil('\n'); tLeitura+=micros()-a;
+      linha.trim(); if(linha.length()==0 || linha[0]=='#' || linha[0]=='=') continue;
+      a=micros();
+      CorrelataJuridica &c=indiceCorrelatasCache[totalIndiceCorrelatasCache++];
+      c.origem=campoPipe(linha,0); c.normaDestino=campoPipe(linha,1);
+      c.artigoDestino=campoPipe(linha,2); c.pastaDestino=campoPipe(linha,3);
+      tParse+=micros()-a;
+    }
+    fc.close();
+  }
+  // Nao percorremos mais toda a arvore de jurisprudencia aqui.
+  // Os caminhos sao resolvidos sob demanda por categoria/nome de arquivo e
+  // ficam memorizados no proprio registro. Isso evita centenas de acessos ao SD
+  // durante a primeira mudanca de contexto do CDC.
+  indicesContextuaisCarregados=true;
+  Serial.printf("PERF INDICE_JUR: %lu ms (leitura=%lu, parsing=%lu, caminhos=adiados, registros=%d)\n",
+    (micros()-t0)/1000,tLeitura/1000,tParse/1000,totalIndiceJurisCache);
+  return true;
 }
 
 bool carregarRelacoesDoArtigo(const String &artigo)
 {
+  uint32_t t0=micros();
   limparRelacoesArtigo();
   artigoRelacoes=artigo;
-  if(!sdOK || !arquivoAtualPertenceAoCDC()) return false;
+  contextoRelacoesRotulo=montarRotuloContextoRelacoes(artigo);
+  if(!sdOK || !arquivoAtualPertenceAoCDC() || !carregarIndicesContextuais()) return false;
 
-  // 1) Sumulas e repetitivos, a partir do indice ja existente.
-  File f=SD.open(CAMINHO_INDICE_CDC,FILE_READ);
-  if(f){
-    while(f.available() && totalRelacoesArtigo<MAX_RELACOES_ARTIGO){
-      String linha=f.readStringUntil('\n');
-      linha.trim();
-      if(linha.length()==0 || linha.startsWith("LEX MACHINA") ||
-         linha.startsWith("FORMATO:") || linha.startsWith("REFERÊNCIA|") ||
-         linha.startsWith("REFERENCIA|") || linha[0]=='=') continue;
+  String chave=chaveContextoAtual(artigo);
+  ResultadoContextoLRU *entrada=nullptr;
+  for(int i=0;i<CONTEXTOS_LRU;i++)
+    if(contextosLRU[i].valido && contextosLRU[i].chave==chave){ entrada=&contextosLRU[i]; break; }
 
-      String referencia=campoPipe(linha,0);
-      if(!referenciaEhDoArtigoCDC(referencia,artigo)) continue;
-
-      RelacaoJuridica &r=relacoesArtigo[totalRelacoesArtigo];
-      r.referencia=referencia;
-      r.tribunal=campoPipe(linha,1);
-      r.tipo=campoPipe(linha,2);
-      r.numero=campoPipe(linha,3);
-      r.status=campoPipe(linha,4);
-      r.arquivo=campoPipe(linha,5);
-
-      String tipoMinusculo=r.tipo; tipoMinusculo.toLowerCase();
-      if(tipoMinusculo.indexOf("sumula")>=0 || tipoMinusculo.indexOf("súmula")>=0)
-        totalSumulasArtigo++;
-      else if(tipoMinusculo.indexOf("repetitivo")>=0)
-        totalRepetitivosArtigo++;
-      else
-        continue;
-
-      totalRelacoesArtigo++;
+  bool hit=(entrada!=nullptr);
+  if(!entrada){
+    int slot=0;
+    for(int i=0;i<CONTEXTOS_LRU;i++){
+      if(!contextosLRU[i].valido){ slot=i; break; }
+      if(contextosLRU[i].uso<contextosLRU[slot].uso) slot=i;
     }
-    f.close();
+    entrada=&contextosLRU[slot];
+    entrada->chave=chave; entrada->totalJuris=entrada->totalCorrelatas=0; entrada->valido=true;
+    int melhor=-1;
+    for(int i=0;i<totalIndiceJurisCache;i++)
+      melhor=max(melhor,especificidadeReferenciaAtiva(indiceJurisCache[i].referencia,artigo));
+    for(int i=0;i<totalIndiceJurisCache && entrada->totalJuris<MAX_RELACOES_ARTIGO;i++)
+      if(especificidadeReferenciaAtiva(indiceJurisCache[i].referencia,artigo)==melhor)
+        entrada->juris[entrada->totalJuris++]=(uint8_t)i;
+    melhor=-1;
+    for(int i=0;i<totalIndiceCorrelatasCache;i++)
+      melhor=max(melhor,especificidadeReferenciaAtiva(indiceCorrelatasCache[i].origem,artigo));
+    for(int i=0;i<totalIndiceCorrelatasCache && entrada->totalCorrelatas<MAX_RELACOES_ARTIGO;i++)
+      if(especificidadeReferenciaAtiva(indiceCorrelatasCache[i].origem,artigo)==melhor)
+        entrada->correlatas[entrada->totalCorrelatas++]=(uint8_t)i;
   }
+  entrada->uso=++relogioContextosLRU;
 
-  // 2) Correlatas. Formato V1:
-  // ORIGEM|NORMA_DESTINO|ARTIGO_DESTINO|PASTA_DESTINO
-  File fc=SD.open(CAMINHO_INDICE_CORRELATAS,FILE_READ);
-  if(fc){
-    while(fc.available() && totalCorrelatasArtigo<MAX_RELACOES_ARTIGO){
-      String linha=fc.readStringUntil('\n');
-      linha.trim();
-      if(linha.length()==0 || linha[0]=='#' || linha[0]=='=') continue;
-      String origem=campoPipe(linha,0);
-      if(!referenciaEhDoArtigoCDC(origem,artigo)) continue;
-
-      CorrelataJuridica &c=correlatasArtigo[totalCorrelatasArtigo++];
-      c.origem=origem;
-      c.normaDestino=campoPipe(linha,1);
-      c.artigoDestino=campoPipe(linha,2);
-      c.pastaDestino=campoPipe(linha,3);
-    }
-    fc.close();
+  for(int i=0;i<entrada->totalJuris;i++){
+    RelacaoJuridica &r=relacoesArtigo[totalRelacoesArtigo];
+    r=indiceJurisCache[entrada->juris[i]];
+    String tipo=r.tipo; tipo.toLowerCase();
+    if(tipo=="sumula") totalSumulasArtigo++;
+    else if(tipo=="sumula_vinculante") totalSumulasVinculantesArtigo++;
+    else if(tipo=="acordao") totalAcordaosArtigo++;
+    else if(tipo=="repercussao_geral") totalRepercussaoGeralArtigo++;
+    else if(tipo.indexOf("repetitivo")>=0) totalRepetitivosArtigo++;
+    else if(tipo=="precedente_relevante") totalPrecedentesRelevantesArtigo++;
+    else continue;
+    totalRelacoesArtigo++;
   }
+  for(int i=0;i<entrada->totalCorrelatas;i++)
+    correlatasArtigo[totalCorrelatasArtigo++]=indiceCorrelatasCache[entrada->correlatas[i]];
 
-  menuRelacoesAtivo=(totalSumulasArtigo>0 || totalRepetitivosArtigo>0 || totalCorrelatasArtigo>0);
+  if(totalSumulasArtigo) categoriasJurisDisponiveis[totalCategoriasJuris++]=REL_SUMULAS;
+  if(totalSumulasVinculantesArtigo) categoriasJurisDisponiveis[totalCategoriasJuris++]=REL_SUMULAS_VINCULANTES;
+  if(totalAcordaosArtigo) categoriasJurisDisponiveis[totalCategoriasJuris++]=REL_ACORDAOS;
+  if(totalRepercussaoGeralArtigo) categoriasJurisDisponiveis[totalCategoriasJuris++]=REL_REPERCUSSAO_GERAL;
+  if(totalRepetitivosArtigo) categoriasJurisDisponiveis[totalCategoriasJuris++]=REL_REPETITIVOS;
+  if(totalPrecedentesRelevantesArtigo) categoriasJurisDisponiveis[totalCategoriasJuris++]=REL_PRECEDENTES_RELEVANTES;
+  menuRelacoesAtivo=(totalCategoriasJuris>0 || totalCorrelatasArtigo>0 || totalReferenciasArtigo>0);
   modoDigitacaoArtigo=!menuRelacoesAtivo;
+  Serial.printf("PERF RODAPE_CONTEXTO: %lu us (%s)\n",micros()-t0,hit?"LRU":"RAM");
+  Serial.print("JURISPRUDENCIA: SUMULAS="); Serial.print(totalSumulasArtigo);
+  Serial.print(" SV="); Serial.print(totalSumulasVinculantesArtigo);
+  Serial.print(" ACORDAOS="); Serial.print(totalAcordaosArtigo);
+  Serial.print(" RG="); Serial.print(totalRepercussaoGeralArtigo);
+  Serial.print(" REP="); Serial.print(totalRepetitivosArtigo);
+  Serial.print(" PREC="); Serial.println(totalPrecedentesRelevantesArtigo);
   return menuRelacoesAtivo;
 }
-
-String caminhoArquivoRelacao(const RelacaoJuridica &r)
+String caminhoArquivoRelacao(RelacaoJuridica &r)
 {
-  String tipo=r.tipo; tipo.toLowerCase();
-  String base="/9-CÓDIGO DE DEFESA DO CONSUMIDOR/19_JURISPRUDENCIA/STJ/";
-  if(tipo.indexOf("sumula")>=0 || tipo.indexOf("súmula")>=0)
-    return base+"SUMULAS/"+r.arquivo;
+  if(r.caminho.length()) return r.caminho;
 
-  if(tipo.indexOf("repetitivo")>=0){
-    const char *pastasStatus[]={"JULGADOS","PENDENTES","SOBRESTADOS","CANCELADOS"};
-    for(int i=0;i<4;i++){
-      String c=base+"REPETITIVOS/"+String(pastasStatus[i])+"/"+r.arquivo;
-      if(SD.exists(c.c_str())) return c;
+  const String raiz="/9-CÓDIGO DE DEFESA DO CONSUMIDOR/19_JURISPRUDENCIA";
+  String nome=r.arquivo;
+  String tipo=r.tipo; tipo.toLowerCase();
+  String status=r.status; status.toLowerCase();
+  String candidato="";
+
+  auto existeArquivo=[&](const String &caminho)->bool {
+    if(!SD.exists(caminho.c_str())) return false;
+    File f=SD.open(caminho.c_str(),FILE_READ);
+    bool ok=(bool)f && !f.isDirectory();
+    if(f) f.close();
+    if(ok){ r.caminho=caminho; return true; }
+    return false;
+  };
+
+  // Pastas deterministicas da colecao atual. A resolucao por caminho conhecido
+  // custa apenas poucos exists/open em vez de uma varredura recursiva de ~480 TXT.
+  if(tipo=="sumula"){
+    if(nome.startsWith("stf_")) candidato=raiz+"/STF/SUMULAS/"+nome;
+    else candidato=raiz+"/STJ/SUMULAS/"+nome;
+    if(existeArquivo(candidato)) return r.caminho;
+  }else if(tipo=="sumula_vinculante"){
+    candidato=raiz+"/STF/SUMULAS_VINCULANTES/"+nome;
+    if(existeArquivo(candidato)) return r.caminho;
+  }else if(tipo=="acordao"){
+    candidato=raiz+"/STJ/ACORDAOS/"+nome;
+    if(existeArquivo(candidato)) return r.caminho;
+  }else if(tipo=="repercussao_geral"){
+    candidato=raiz+"/STF/PRECEDENTES/REPERCUSSAO_GERAL/"+nome;
+    if(existeArquivo(candidato)) return r.caminho;
+  }else if(tipo.indexOf("repetitivo")>=0){
+    const char *pastas[4]={"JULGADOS","PENDENTES","SOBRESTADOS","CANCELADOS"};
+    int primeira=0;
+    if(status.indexOf("pend")>=0) primeira=1;
+    else if(status.indexOf("sobrest")>=0) primeira=2;
+    else if(status.indexOf("cancel")>=0) primeira=3;
+    for(int passo=0;passo<4;passo++){
+      int idx=(primeira+passo)%4;
+      candidato=raiz+"/STJ/REPETITIVOS/"+String(pastas[idx])+"/"+nome;
+      if(existeArquivo(candidato)) return r.caminho;
     }
+  }else if(tipo=="precedente_relevante"){
+    if(nome.startsWith("stf_adi_")) candidato=raiz+"/STF/PRECEDENTES/ADI/"+nome;
+    else if(nome.startsWith("stf_adc_")) candidato=raiz+"/STF/PRECEDENTES/ADC/"+nome;
+    else if(nome.startsWith("stf_adpf_")) candidato=raiz+"/STF/PRECEDENTES/ADPF/"+nome;
+    else if(nome.startsWith("stf_ado_")) candidato=raiz+"/STF/PRECEDENTES/ADO/"+nome;
+    else if(nome.startsWith("stj_iac_")) candidato=raiz+"/STJ/PRECEDENTES_RELEVANTES/IAC/"+nome;
+    else if(nome.startsWith("stj_sirdr_")) candidato=raiz+"/STJ/PRECEDENTES_RELEVANTES/SIRDR/"+nome;
+    if(candidato.length() && existeArquivo(candidato)) return r.caminho;
   }
-  return "";
+
+  // Compatibilidade defensiva: se surgir uma categoria/nome novo no SD,
+  // procura apenas quando o usuario realmente abrir esse item. O resultado
+  // encontrado fica cacheado em r.caminho para as proximas aberturas.
+  String encontrado=localizarArquivoRecursivo(raiz,nome,5);
+  if(encontrado.length()) r.caminho=encontrado;
+  return r.caminho;
+}
+
+String localizarArquivoRecursivo(const String &pasta, const String &arquivo, int profundidade)
+{
+  if(profundidade<0) return "";
+  File dir=SD.open(pasta.c_str());
+  if(!dir || !dir.isDirectory()){
+    if(dir) dir.close();
+    return "";
+  }
+  String achado="";
+  while(achado.length()==0){
+    File item=dir.openNextFile();
+    if(!item) break;
+    String nome=somenteNome(String(item.name()));
+    bool ehPasta=item.isDirectory();
+    item.close();
+    String caminho=pasta+"/"+nome;
+    if(ehPasta) achado=localizarArquivoRecursivo(caminho,arquivo,profundidade-1);
+    else if(nome==arquivo) achado=caminho;
+  }
+  dir.close();
+  return achado;
 }
 
 String primeiroTXTDaPasta(String pasta)
@@ -1457,14 +1778,18 @@ int indexarAntesDaJanela()
   }
 
   // Anel pequeno de offsets: guarda so as ultimas linhas antes do limite.
-  uint32_t anteriores[LEITOR_LINHAS_VISIVEIS];
+  // Mantemos quatro telas anteriores. Quando o leitor chega ao inicio da
+  // janela durante a subida, uma unica indexacao alimenta varios passos e evita
+  // as pequenas pausas que antes reapareciam a cada ~13 linhas.
+  const int LINHAS_PRE_INDEXADAS=LEITOR_LINHAS_VISIVEIS*4;
+  uint32_t anteriores[LINHAS_PRE_INDEXADAS];
   int quantidade=0;
   int proxima=0;
   uint32_t pos=inicio;
   while(pos<limite){
     anteriores[proxima]=pos;
-    proxima=(proxima+1)%LEITOR_LINHAS_VISIVEIS;
-    if(quantidade<LEITOR_LINHAS_VISIVEIS) quantidade++;
+    proxima=(proxima+1)%LINHAS_PRE_INDEXADAS;
+    if(quantidade<LINHAS_PRE_INDEXADAS) quantidade++;
     uint32_t seguinte=pos;
     avancarUmaLinhaVisual(f,pos,seguinte);
     if(seguinte<=pos){f.close(); return 0;}
@@ -1479,9 +1804,9 @@ int indexarAntesDaJanela()
   int manter=min(linhasIndexadas,MAX_LINHAS_INDEXADAS-quantidade);
   if(manter<linhasIndexadas) fimDoArquivoIndexado=false;
   memmove(offsetsLinhas+quantidade,offsetsLinhas,manter*sizeof(offsetsLinhas[0]));
-  int primeiro=quantidade==LEITOR_LINHAS_VISIVEIS ? proxima : 0;
+  int primeiro=quantidade==LINHAS_PRE_INDEXADAS ? proxima : 0;
   for(int i=0;i<quantidade;i++)
-    offsetsLinhas[i]=anteriores[(primeiro+i)%LEITOR_LINHAS_VISIVEIS];
+    offsetsLinhas[i]=anteriores[(primeiro+i)%LINHAS_PRE_INDEXADAS];
   linhasIndexadas=manter+quantidade;
   linhaTopo+=quantidade; // Mesmo byte visivel, agora em outro indice da janela.
   cacheLeitorValido=false;
@@ -1576,19 +1901,110 @@ void lerLinhaVisualParaBuffer(File &f, int indice, char *saida, int capacidade, 
   saida[pos]='\0';
 }
 
-// Reconstrucao pontual usada ao abrir, buscar ou rolar para cima. A rolagem
-// normal para baixo reaproveita o contexto que ja estava no cache.
+void guardarCheckpointContexto(uint32_t offset, const ContextoJuridicoAtivo &contexto)
+{
+  if(!checkpointsContexto && !inicializarCachesGrandes()) return;
+  if(arquivoCheckpoints!=caminhoArquivoAtual){
+    if(!checkpointsContexto && !inicializarCachesGrandes()) return;
+    memset(checkpointsContexto,0,sizeof(CheckpointContexto)*MAX_CHECKPOINTS_CONTEXTO);
+    proximoCheckpointContexto=0; arquivoCheckpoints=caminhoArquivoAtual;
+  }
+  for(int i=0;i<MAX_CHECKPOINTS_CONTEXTO;i++)
+    if(checkpointsContexto[i].valido && checkpointsContexto[i].offset==offset){
+      checkpointsContexto[i].contexto=contexto; return;
+    }
+  CheckpointContexto &cp=checkpointsContexto[proximoCheckpointContexto];
+  cp.offset=offset; cp.contexto=contexto; cp.valido=true;
+  proximoCheckpointContexto=(proximoCheckpointContexto+1)%MAX_CHECKPOINTS_CONTEXTO;
+}
+
+bool obterCheckpointContexto(uint32_t limite, uint32_t &offset, ContextoJuridicoAtivo &contexto)
+{
+  if(!checkpointsContexto && !inicializarCachesGrandes()) return false;
+  if(arquivoCheckpoints!=caminhoArquivoAtual) return false;
+  bool achou=false; offset=0;
+  for(int i=0;i<MAX_CHECKPOINTS_CONTEXTO;i++)
+    if(checkpointsContexto[i].valido && checkpointsContexto[i].offset<=limite &&
+       (!achou || checkpointsContexto[i].offset>offset)){
+      offset=checkpointsContexto[i].offset; contexto=checkpointsContexto[i].contexto; achou=true;
+    }
+  return achou;
+}
+
+// Reconstrucao pontual usada ao abrir, buscar ou rolar para cima. Parte do
+// checkpoint anterior mais proximo; a janela de 256 KB e apenas o fallback da
+// primeira visita a uma regiao, nunca o custo recorrente de cada passo.
+bool arquivoAtualEhConstituicao()
+{
+  return caminhoArquivoAtual.startsWith("/1- CONSTITUIÇÃO FEDERAL/") ||
+         nomeArquivoAtual.equalsIgnoreCase("cf.txt");
+}
+
+bool linhaEhMarcadorArtigoIsolado(const char *linha)
+{
+  if(!linha) return false;
+  while(*linha==' ' || *linha=='\t') linha++;
+  char tmp[8];
+  int n=0;
+  while(*linha && n<(int)sizeof(tmp)-1){
+    char c=*linha++;
+    if(c!=' ' && c!='\t' && c!='\r') tmp[n++]=c;
+  }
+  tmp[n]='\0';
+  if(n==3 || n==4){
+    char a=tmp[0], r=tmp[1], t=tmp[2];
+    if(a>='A'&&a<='Z') a+=32;
+    if(r>='A'&&r<='Z') r+=32;
+    if(t>='A'&&t<='Z') t+=32;
+    if(a=='a' && r=='r' && t=='t' && (n==3 || tmp[3]=='.')) return true;
+  }
+  return false;
+}
+
+bool linhaComecaNumeroArtigo(const char *linha)
+{
+  if(!linha) return false;
+  while(*linha==' ' || *linha=='\t') linha++;
+  return *linha>='0' && *linha<='9';
+}
+
+void aplicarLinhaContextoCompatCF(ContextoJuridicoAtivo &contexto,
+                                  const char *linha,
+                                  bool inicioFisico,
+                                  uint32_t offset,
+                                  const char *proximaLinha=nullptr)
+{
+  // O cf.txt possui trechos no formato:
+  // Art.
+  // 12. São brasileiros...
+  // O parser juridico original recebe linhas isoladas. Para a CF, quando
+  // detectamos esse par, criamos apenas para o parser uma linha logica
+  // "Art. 12...". O TXT exibido e o arquivo no SD permanecem intocados.
+  if(arquivoAtualEhConstituicao() && proximaLinha &&
+     linhaEhMarcadorArtigoIsolado(linha) && linhaComecaNumeroArtigo(proximaLinha)){
+    char logica[512];
+    snprintf(logica,sizeof(logica),"Art. %s",proximaLinha);
+    aplicarLinhaContextoJuridico(contexto,logica,true,offset);
+    return;
+  }
+  aplicarLinhaContextoJuridico(contexto,linha,inicioFisico,offset);
+}
+
 void reconstruirContextoAntesOffset(uint32_t limite, ContextoJuridicoAtivo &saida)
 {
+  uint32_t t0=micros();
   limparContextoJuridico(saida,nomeArquivoAtual.c_str());
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
   if(!f) return;
   const uint32_t JANELA_RECONSTRUCAO=262144;
-  uint32_t inicio=limite>JANELA_RECONSTRUCAO ? limite-JANELA_RECONSTRUCAO : 0;
-  if(inicio>0){
+  uint32_t inicio=0;
+  bool usouCheckpoint=obterCheckpointContexto(limite,inicio,saida);
+  if(!usouCheckpoint) inicio=limite>JANELA_RECONSTRUCAO ? limite-JANELA_RECONSTRUCAO : 0;
+  if(inicio>0 && !usouCheckpoint){
     f.seek(inicio);
     while(f.available() && f.position()<limite && f.read()!='\n') yield();
-  }else f.seek(0);
+    inicio=f.position();
+  }else f.seek(inicio);
 
   char linha[512];
   while(f.available() && f.position()<limite){
@@ -1600,10 +2016,37 @@ void reconstruirContextoAntesOffset(uint32_t limite, ContextoJuridicoAtivo &said
       if(b!='\r' && n<(int)sizeof(linha)-1) linha[n++]=(char)b;
     }
     linha[n]='\0';
-    aplicarLinhaContextoJuridico(saida,linha,true,offset);
+
+    if(arquivoAtualEhConstituicao() && linhaEhMarcadorArtigoIsolado(linha) && f.position()<limite){
+      uint32_t inicioProxima=f.position();
+      char proxima[512];
+      int np=0;
+      while(f.available() && f.position()<limite){
+        int b=f.read();
+        if(b=='\n') break;
+        if(b!='\r' && np<(int)sizeof(proxima)-1) proxima[np++]=(char)b;
+      }
+      proxima[np]='\0';
+      if(linhaComecaNumeroArtigo(proxima)){
+        aplicarLinhaContextoCompatCF(saida,linha,true,offset,proxima);
+        // A linha numerada ja foi consumida pelo look-ahead. Aplicamo-la
+        // normalmente para que paragrafos/incisos na mesma linha continuem
+        // podendo atualizar o contexto sem perder o artigo recem-detectado.
+        aplicarLinhaContextoJuridico(saida,proxima,true,inicioProxima);
+        guardarCheckpointContexto(f.position(),saida);
+        yield();
+        continue;
+      }
+      f.seek(inicioProxima);
+    }
+
+    aplicarLinhaContextoCompatCF(saida,linha,true,offset);
+    guardarCheckpointContexto(f.position(),saida);
     yield();
   }
   f.close();
+  Serial.printf("PERF CONTEXTO_UP: %lu us (checkpoint=%s, bytes=%lu)\n",
+    micros()-t0,usouCheckpoint?"sim":"nao",limite-inicio);
 }
 
 void recalcularContextosCache(const ContextoJuridicoAtivo &antes)
@@ -1615,13 +2058,19 @@ void recalcularContextosCache(const ContextoJuridicoAtivo &antes)
       limparContextoJuridico(contextoLinhasCache[i],nomeArquivoAtual.c_str());
       continue;
     }
-    aplicarLinhaContextoJuridico(corrente,cacheLeitor[i],inicioFisicoCache[i],offsetLinhaCache[i]);
+    guardarCheckpointContexto(offsetLinhaCache[i],corrente);
+    const char *proximaLinha=nullptr;
+    if(i+1<LEITOR_LINHAS_VISIVEIS && linhaCacheValida[i+1])
+      proximaLinha=cacheLeitor[i+1];
+    aplicarLinhaContextoCompatCF(corrente,cacheLeitor[i],inicioFisicoCache[i],
+                                 offsetLinhaCache[i],proximaLinha);
     contextoLinhasCache[i]=corrente;
   }
 }
 
 void diagnosticarContextoSeMudou()
 {
+  uint32_t t0=micros();
   int indice=escolherContextoPredominante(
     contextoLinhasCache,LEITOR_LINHAS_VISIVEIS,contextoJuridicoAtivo
   );
@@ -1633,6 +2082,15 @@ void diagnosticarContextoSeMudou()
   Serial.print(" PAR="); Serial.print(novo.paragrafo[0]?novo.paragrafo:"-");
   Serial.print(" INC="); Serial.print(novo.inciso[0]?novo.inciso:"-");
   Serial.print(" ALINEA="); Serial.println(novo.alinea[0]?novo.alinea:"-");
+
+  // Os indices atuais usam artigo. A chamada ocorre somente na troca estavel
+  // de contexto; quando surgirem chaves mais especificas, a mesma consulta
+  // podera tentar alinea, inciso e paragrafo antes deste fallback.
+  if(!visualizandoReferencia && novo.artigo[0]){
+    carregarRelacoesDoArtigo(String(novo.artigo));
+    if(telaAtual==TELA_LEITOR) desenharBarraBusca();
+  }
+  Serial.printf("PERF CONTEXTO_ATUALIZAR: %lu us\n",micros()-t0);
 }
 
 // =====================================================
@@ -1640,6 +2098,46 @@ void diagnosticarContextoSeMudou()
 // =====================================================
 const int TEXTO_Y0=23;
 const int TEXTO_H=LEITOR_LINHA_H;
+
+String rotuloContextoFixoRodape()
+{
+  // Ao visualizar um documento relacionado, preserva o vinculo exato que
+  // originou a abertura. No leitor da lei seca, mostra o dispositivo ativo.
+  if(visualizandoReferencia && contextoDocumentoReferencia.length())
+    return contextoDocumentoReferencia;
+
+  if(!contextoJuridicoAtivo.artigo[0]) return "";
+
+  String r="ART. "+String(contextoJuridicoAtivo.artigo);
+  if(contextoJuridicoAtivo.paragrafo[0]){
+    if(strcmp(contextoJuridicoAtivo.paragrafo,"unico")==0) r+=" | PAR. UNICO";
+    else r+=" | § "+String(contextoJuridicoAtivo.paragrafo)+"º";
+  }
+  if(contextoJuridicoAtivo.inciso[0])
+    r+=" | INC. "+String(contextoJuridicoAtivo.inciso);
+  if(contextoJuridicoAtivo.alinea[0])
+    r+=" | AL. "+String(contextoJuridicoAtivo.alinea)+")";
+  return r;
+}
+
+void desenharIndicadorContextoRodape()
+{
+  // Faixa fixa imediatamente acima dos botoes. Ela nunca depende de o caput
+  // estar visivel na tela; assim artigos longos mantem o referencial juridico.
+  tft.fillRect(0,204,320,16,COR_FUNDO);
+  tft.drawFastHLine(0,204,320,COR_VERDE_ESCURO);
+  tft.drawFastHLine(0,219,320,COR_VERDE_ESCURO);
+
+  String contexto=rotuloContextoFixoRodape();
+  if(contexto.length()==0){
+    imprimirUTF8(6,208,"CONTEXTO: --",COR_VERDE_SUAVE,COR_FUNDO,48);
+    return;
+  }
+
+  String texto="CONTEXTO: "+contexto;
+  if(texto.length()>50) texto=texto.substring(0,50);
+  imprimirUTF8(6,208,texto,COR_VERDE_SUAVE,COR_FUNDO,50);
+}
 
 void desenharAtalhoRodape(int x, int y, int w, const char *rotulo)
 {
@@ -1655,55 +2153,30 @@ void desenharAtalhoRodape(int x, int y, int w, const char *rotulo)
 
 void desenharBarraBusca()
 {
+  desenharIndicadorContextoRodape();
   tft.fillRect(0,220,320,20,COR_FUNDO);
   tft.drawFastHLine(0,220,320,COR_VERDE_ESCURO);
   tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
   tft.setCursor(4,228);
 
   if(visualizandoReferencia){
-    tft.print("ESC/BACKSPACE: voltar ao artigo");
+    tft.print("BACK: lista");
+    String contextoMostrar=contextoDocumentoReferencia.length()?contextoDocumentoReferencia:contextoRelacoesRotulo;
+    if(contextoMostrar.length()){
+      tft.print(" | ");
+      String curto=contextoMostrar;
+      if(curto.length()>34) curto=curto.substring(0,34);
+      tft.print(curto);
+    }
     return;
   }
 
   if(menuRelacoesAtivo && !modoDigitacaoArtigo){
-    // Rodape com caixas individuais para separar melhor cada atalho.
-    // As quantidades continuam escondidas aqui e aparecem somente
-    // depois que a categoria e aberta.
-    struct AtalhoRodape {
-      const char *rotulo;
-      int largura;
-    } itens[3];
-    int total=0;
-
-    if(totalSumulasArtigo>0){
-      itens[total].rotulo="1 SUMULAS";
-      itens[total].largura=64;
-      total++;
-    }
-    if(totalRepetitivosArtigo>0){
-      itens[total].rotulo="2 REPETITIVOS";
-      itens[total].largura=88;
-      total++;
-    }
-    if(totalCorrelatasArtigo>0){
-      itens[total].rotulo="3 CORRELATAS";
-      itens[total].largura=82;
-      total++;
-    }
-
-    if(total<=0) return;
-
-    const int gap=6;
-    int larguraTotal=0;
-    for(int i=0;i<total;i++) larguraTotal+=itens[i].largura;
-    larguraTotal+=gap*(total-1);
-
-    int x=(320-larguraTotal)/2;
-    if(x<4) x=4;
-    for(int i=0;i<total;i++){
-      desenharAtalhoRodape(x, 223, itens[i].largura, itens[i].rotulo);
-      x+=itens[i].largura+gap;
-    }
+    // Posicoes fixas preservam o significado de 1, 2 e 3 mesmo quando um
+    // item intermediario esta oculto por nao possuir conteudo.
+    if(totalCorrelatasArtigo>0) desenharAtalhoRodape(4,223,100,"1 LEGISLACAO");
+    if(totalCategoriasJuris>0) desenharAtalhoRodape(110,223,100,"2 JURISPR.");
+    if(totalReferenciasArtigo>0) desenharAtalhoRodape(216,223,100,"3 REFER.");
     return;
   }
 
@@ -1918,7 +2391,8 @@ void desenharViewportLeitor()
 
   // Pequena faixa entre a ultima linha e a barra inferior.
   int fim=TEXTO_Y0+LEITOR_LINHAS_VISIVEIS*TEXTO_H;
-  if(fim<220) tft.fillRect(0,fim,320,220-fim,COR_FUNDO);
+  if(fim<204) tft.fillRect(0,fim,320,204-fim,COR_FUNDO);
+  desenharIndicadorContextoRodape();
 }
 
 void desenharCabecalhoLeitor()
@@ -1947,6 +2421,129 @@ void desenharTelaLeitor()
 // =====================================================
 // TELA DE RELACOES JURIDICAS
 // =====================================================
+String nomeCategoriaRelacao(CategoriaRelacao categoria)
+{
+  switch(categoria){
+    case REL_SUMULAS: return "SUMULAS";
+    case REL_SUMULAS_VINCULANTES: return "SUMULAS VINCULANTES";
+    case REL_ACORDAOS: return "ACORDAOS";
+    case REL_REPERCUSSAO_GERAL: return "REPERCUSSAO GERAL";
+    case REL_REPETITIVOS: return "RECURSOS REPETITIVOS";
+    case REL_PRECEDENTES_RELEVANTES: return "PRECEDENTES RELEVANTES";
+    case REL_CORRELATAS: return "LEGISLACAO CORRELATA";
+    default: return "";
+  }
+}
+
+int quantidadeCategoriaRelacao(CategoriaRelacao categoria)
+{
+  switch(categoria){
+    case REL_SUMULAS: return totalSumulasArtigo;
+    case REL_SUMULAS_VINCULANTES: return totalSumulasVinculantesArtigo;
+    case REL_ACORDAOS: return totalAcordaosArtigo;
+    case REL_REPERCUSSAO_GERAL: return totalRepercussaoGeralArtigo;
+    case REL_REPETITIVOS: return totalRepetitivosArtigo;
+    case REL_PRECEDENTES_RELEVANTES: return totalPrecedentesRelevantesArtigo;
+    case REL_CORRELATAS: return totalCorrelatasArtigo;
+    default: return 0;
+  }
+}
+
+String montarRotuloContextoRelacoes(const String &artigo)
+{
+  String r="ART. "+artigo;
+  if(contextoJuridicoAtivo.paragrafo[0]){
+    if(strcmp(contextoJuridicoAtivo.paragrafo,"unico")==0) r+=" | PAR. UNICO";
+    else r+=" | § "+String(contextoJuridicoAtivo.paragrafo)+"º";
+  }
+  if(contextoJuridicoAtivo.inciso[0]) r+=" | "+String(contextoJuridicoAtivo.inciso);
+  if(contextoJuridicoAtivo.alinea[0]) r+=" | "+String(contextoJuridicoAtivo.alinea)+")";
+  return r;
+}
+
+String contextoExatoCategoriaAtual()
+{
+  if(categoriaRelacaoAtual==REL_CORRELATAS){
+    if(totalRelacoesCategoria>0) return correlatasArtigo[0].origem;
+    return contextoRelacoesRotulo;
+  }
+  if(totalRelacoesCategoria>0){
+    int idx=indicesRelacaoCategoria[0];
+    if(idx>=0 && idx<totalRelacoesArtigo && relacoesArtigo[idx].referencia.length())
+      return relacoesArtigo[idx].referencia;
+  }
+  if(totalRelacoesArtigo>0 && relacoesArtigo[0].referencia.length())
+    return relacoesArtigo[0].referencia;
+  return contextoRelacoesRotulo;
+}
+
+void desenharContextoRelacoesCabecalho(const String &rotulo="")
+{
+  String texto=rotulo.length()?rotulo:contextoRelacoesRotulo;
+  if(texto.length()==0) return;
+  imprimirUTF8(80,22,texto,COR_VERDE_SUAVE,COR_FUNDO,38);
+}
+
+void desenharLinhaCategoriaJuris(int indice)
+{
+  int y=43+indice*28;
+  tft.fillRect(6,y,308,26,COR_FUNDO);
+  if(indice<0 || indice>=totalCategoriasJuris) return;
+  bool sel=indice==categoriaJurisSelecionada;
+  tft.drawRoundRect(8,y,304,24,3,sel?COR_VERDE:COR_VERDE_ESCURO);
+  CategoriaRelacao categoria=categoriasJurisDisponiveis[indice];
+  String rotulo=nomeCategoriaRelacao(categoria)+" ("+String(quantidadeCategoriaRelacao(categoria))+")";
+  imprimirUTF8(14,y+6,rotulo,sel?COR_VERDE:COR_VERDE_SUAVE,COR_FUNDO,42);
+}
+
+void desenharTelaCategoriasJuris()
+{
+  tft.fillScreen(COR_FUNDO);
+  desenharMolduraCyber();
+  tft.drawRoundRect(3,2,68,20,3,COR_VERDE);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(10,8); tft.print("< VOLTAR");
+  imprimirUTF8(78,7,"JURISPRUDENCIA",COR_VERDE,COR_FUNDO,37);
+  String contextoJuris=(totalRelacoesArtigo>0 && relacoesArtigo[0].referencia.length()) ? relacoesArtigo[0].referencia : contextoRelacoesRotulo;
+  desenharContextoRelacoesCabecalho(contextoJuris);
+  tft.drawFastHLine(8,36,304,COR_VERDE_ESCURO);
+  for(int i=0;i<6;i++) desenharLinhaCategoriaJuris(i);
+  tft.drawFastHLine(8,216,304,COR_VERDE_ESCURO);
+  imprimirUTF8(10,224,"RODA/TOUCH: mover  ENTER: abrir",COR_VERDE_SUAVE,COR_FUNDO,48);
+}
+
+void desenharTelaReferenciasProvisoria()
+{
+  tft.fillScreen(COR_FUNDO);
+  desenharMolduraCyber();
+  tft.drawRoundRect(3,2,68,20,3,COR_VERDE);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(10,8); tft.print("< VOLTAR");
+  imprimirUTF8(78,7,"REFERENCIAS",COR_VERDE,COR_FUNDO,37);
+  imprimirUTF8(24,104,"SEM DADOS PARA ESTE CONTEXTO",COR_VERDE_SUAVE,COR_FUNDO,44);
+}
+
+void abrirTelaCategoriasJuris()
+{
+  if(totalCategoriasJuris<=0) return;
+  uint32_t t0=micros();
+  categoriaJurisSelecionada=0;
+  telaAtual=TELA_JURIS_CATEGORIAS;
+  desenharTelaCategoriasJuris();
+  Serial.printf("PERF ABRIR_JURIS: %lu us\n",micros()-t0);
+}
+
+void moverSelecaoCategoriaJuris(int delta)
+{
+  if(delta==0 || totalCategoriasJuris<=0) return;
+  int antigo=categoriaJurisSelecionada;
+  categoriaJurisSelecionada=constrain(categoriaJurisSelecionada+delta,0,totalCategoriasJuris-1);
+  if(antigo!=categoriaJurisSelecionada){
+    desenharLinhaCategoriaJuris(antigo);
+    desenharLinhaCategoriaJuris(categoriaJurisSelecionada);
+  }
+}
+
 void desenharLinhaRelacao(int linhaVisual)
 {
   if(linhaVisual<0 || linhaVisual>=RELACOES_VISIVEIS) return;
@@ -1968,6 +2565,8 @@ void desenharLinhaRelacao(int linhaVisual)
     RelacaoJuridica &r=relacoesArtigo[idx];
     rotulo+=r.tribunal+" ";
     if(categoriaRelacaoAtual==REL_SUMULAS) rotulo+="SUMULA ";
+    else if(categoriaRelacaoAtual==REL_SUMULAS_VINCULANTES) rotulo+="SV ";
+    else if(categoriaRelacaoAtual==REL_ACORDAOS) rotulo+="ACORDAO ";
     else rotulo+="TEMA ";
     rotulo+=r.numero;
   }
@@ -1982,14 +2581,11 @@ void desenharTelaRelacoes()
   tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
   tft.setCursor(10,8); tft.print("< VOLTAR");
 
-  String titulo;
-  if(categoriaRelacaoAtual==REL_SUMULAS) titulo="SUMULAS";
-  else if(categoriaRelacaoAtual==REL_REPETITIVOS) titulo="REPETITIVOS";
-  else titulo="CORRELATAS";
-  // A quantidade aparece somente dentro da categoria, nunca no rodape do artigo.
-  titulo+=" ("+String(totalRelacoesCategoria)+") - ART. "+artigoRelacoes;
+  String titulo=nomeCategoriaRelacao(categoriaRelacaoAtual);
+  titulo+=" ("+String(totalRelacoesCategoria)+")";
   imprimirUTF8(78,7,titulo,COR_VERDE,COR_FUNDO,37);
-  tft.drawFastHLine(8,30,304,COR_VERDE_ESCURO);
+  desenharContextoRelacoesCabecalho(contextoExatoCategoriaAtual());
+  tft.drawFastHLine(8,36,304,COR_VERDE_ESCURO);
 
   for(int i=0;i<RELACOES_VISIVEIS;i++) desenharLinhaRelacao(i);
 
@@ -2000,6 +2596,7 @@ void desenharTelaRelacoes()
 
 void abrirCategoriaRelacao(CategoriaRelacao categoria)
 {
+  uint32_t t0=micros();
   categoriaRelacaoAtual=categoria;
   totalRelacoesCategoria=0;
   relacaoSelecionada=0;
@@ -2010,9 +2607,12 @@ void abrirCategoriaRelacao(CategoriaRelacao categoria)
   }else{
     for(int i=0;i<totalRelacoesArtigo;i++){
       String tipo=relacoesArtigo[i].tipo; tipo.toLowerCase();
-      bool incluir=(categoria==REL_SUMULAS &&
-                   (tipo.indexOf("sumula")>=0 || tipo.indexOf("súmula")>=0)) ||
-                  (categoria==REL_REPETITIVOS && tipo.indexOf("repetitivo")>=0);
+      bool incluir=(categoria==REL_SUMULAS && tipo=="sumula") ||
+                  (categoria==REL_SUMULAS_VINCULANTES && tipo=="sumula_vinculante") ||
+                  (categoria==REL_ACORDAOS && tipo=="acordao") ||
+                  (categoria==REL_REPERCUSSAO_GERAL && tipo=="repercussao_geral") ||
+                  (categoria==REL_REPETITIVOS && tipo.indexOf("repetitivo")>=0) ||
+                  (categoria==REL_PRECEDENTES_RELEVANTES && tipo=="precedente_relevante");
       if(incluir && totalRelacoesCategoria<MAX_RELACOES_ARTIGO)
         indicesRelacaoCategoria[totalRelacoesCategoria++]=i;
     }
@@ -2023,6 +2623,7 @@ void abrirCategoriaRelacao(CategoriaRelacao categoria)
   }
   telaAtual=TELA_RELACOES;
   desenharTelaRelacoes();
+  Serial.printf("PERF ABRIR_LISTA: %lu us (itens=%d)\n",micros()-t0,totalRelacoesCategoria);
 }
 
 void moverSelecaoRelacao(int delta)
@@ -2084,6 +2685,7 @@ void rolarLeitor(int delta)
 
 void abrirRelacaoSelecionada()
 {
+  uint32_t t0=micros();
   if(telaAtual!=TELA_RELACOES || relacaoSelecionada<0 ||
      relacaoSelecionada>=totalRelacoesCategoria) return;
 
@@ -2108,6 +2710,11 @@ void abrirRelacaoSelecionada()
     origemTamanhoArtigo=tamanhoArquivoAtual;
     origemTopoByte=(linhasIndexadas>0 && linhaTopo<linhasIndexadas)?offsetsLinhas[linhaTopo]:0;
     origemArtigoDigitado=artigoRelacoes;
+    origemCategoriaRelacao=categoriaRelacaoAtual;
+    origemRelacaoSelecionada=relacaoSelecionada;
+    origemPrimeiraRelacaoVisivel=primeiraRelacaoVisivel;
+    origemCategoriaJurisSelecionada=categoriaJurisSelecionada;
+    contextoDocumentoReferencia=c.origem;
 
     caminhoArquivoAtual=caminho;
     nomeArquivoAtual=c.normaDestino+" - ART. "+c.artigoDestino;
@@ -2135,6 +2742,7 @@ void abrirRelacaoSelecionada()
 
     telaAtual=TELA_LEITOR;
     desenharTelaLeitor();
+    Serial.printf("PERF ABRIR_ITEM: %lu us (correlata)\n",micros()-t0);
     return;
   }
 
@@ -2159,6 +2767,11 @@ void abrirRelacaoSelecionada()
   origemTamanhoArtigo=tamanhoArquivoAtual;
   origemTopoByte=(linhasIndexadas>0 && linhaTopo<linhasIndexadas)?offsetsLinhas[linhaTopo]:0;
   origemArtigoDigitado=artigoRelacoes;
+  origemCategoriaRelacao=categoriaRelacaoAtual;
+  origemRelacaoSelecionada=relacaoSelecionada;
+  origemPrimeiraRelacaoVisivel=primeiraRelacaoVisivel;
+  origemCategoriaJurisSelecionada=categoriaJurisSelecionada;
+  contextoDocumentoReferencia=r.referencia;
 
   caminhoArquivoAtual=caminho;
   nomeArquivoAtual=r.tribunal+" "+
@@ -2175,6 +2788,7 @@ void abrirRelacaoSelecionada()
   reiniciarIndice(0);
   telaAtual=TELA_LEITOR;
   desenharTelaLeitor();
+  Serial.printf("PERF ABRIR_ITEM: %lu us (direto)\n",micros()-t0);
 }
 
 void restaurarArtigoAposReferencia()
@@ -2185,21 +2799,32 @@ void restaurarArtigoAposReferencia()
   tamanhoArquivoAtual=origemTamanhoArtigo;
   artigoDigitado=origemArtigoDigitado;
   visualizandoReferencia=false;
+  contextoDocumentoReferencia="";
   buscaAtiva=BUSCA_ARTIGO;
   modoDigitacaoArtigo=false;
   reiniciarIndice(origemTopoByte);
   linhaTopo=0;
-  telaAtual=TELA_LEITOR;
-  desenharTelaLeitor();
+  categoriaRelacaoAtual=origemCategoriaRelacao;
+  relacaoSelecionada=origemRelacaoSelecionada;
+  primeiraRelacaoVisivel=origemPrimeiraRelacaoVisivel;
+  categoriaJurisSelecionada=origemCategoriaJurisSelecionada;
+  telaAtual=TELA_RELACOES;
+  desenharTelaRelacoes();
 }
 
 void voltarDaTelaRelacoes()
 {
   if(telaAtual!=TELA_RELACOES) return;
+  bool veioDaJuris=categoriaRelacaoAtual!=REL_CORRELATAS;
   categoriaRelacaoAtual=REL_NENHUMA;
-  telaAtual=TELA_LEITOR;
-  modoDigitacaoArtigo=false;
-  desenharTelaLeitor();
+  if(veioDaJuris){
+    telaAtual=TELA_JURIS_CATEGORIAS;
+    desenharTelaCategoriasJuris();
+  }else{
+    telaAtual=TELA_LEITOR;
+    modoDigitacaoArtigo=false;
+    desenharTelaLeitor();
+  }
 }
 
 void abrirPastaSelecionada()
@@ -2238,6 +2863,12 @@ void abrirPastaSelecionada()
 
 void voltarPastas()
 {
+  if(telaAtual==TELA_JURIS_CATEGORIAS || telaAtual==TELA_REFERENCIAS){
+    telaAtual=TELA_LEITOR;
+    modoDigitacaoArtigo=false;
+    desenharTelaLeitor();
+    return;
+  }
   if(telaAtual==TELA_RELACOES){
     voltarDaTelaRelacoes();
     return;
@@ -2339,86 +2970,184 @@ bool acharPadraoNoBuffer(char *buf, int total, const char *padrao, int &indice, 
   return false;
 }
 
+bool correspondeArtigoNoInicioLinhaRapido(const char *buf, int total, int i,
+                                          const char *numero, int numeroLen,
+                                          bool ultimoBloco, bool permitirQuebraLinha,
+                                          int &fimMatch)
+{
+  int p=i;
+  if(p+3>total) return false;
+  char a0=buf[p], a1=buf[p+1], a2=buf[p+2];
+  if(a0>='A'&&a0<='Z') a0+=32;
+  if(a1>='A'&&a1<='Z') a1+=32;
+  if(a2>='A'&&a2<='Z') a2+=32;
+  if(a0!='a' || a1!='r' || a2!='t') return false;
+  p+=3;
+
+  // Aceita "Art.", "Art" e "Artigo". Para "Artigo", exige separacao.
+  bool palavraArtigo=false;
+  if(p+3<=total){
+    char c0=buf[p], c1=buf[p+1], c2=buf[p+2];
+    if(c0>='A'&&c0<='Z') c0+=32;
+    if(c1>='A'&&c1<='Z') c1+=32;
+    if(c2>='A'&&c2<='Z') c2+=32;
+    if(c0=='i' && c1=='g' && c2=='o'){ palavraArtigo=true; p+=3; }
+  }
+  if(!palavraArtigo && p<total && buf[p]=='.') p++;
+
+  int espacos=0;
+  while(p<total && (buf[p]==' ' || buf[p]=='\t' || buf[p]=='\r' ||
+                     (permitirQuebraLinha && buf[p]=='\n'))){
+    p++; if(++espacos>32) return false;
+  }
+  if(palavraArtigo && espacos==0) return false;
+
+  // Compara o numero ignorando pontos de milhar no TXT (1.000 == 1000).
+  int n=0;
+  while(p<total && n<numeroLen){
+    if(buf[p]=='.'){ p++; continue; }
+    if(buf[p]!=numero[n]) return false;
+    p++; n++;
+  }
+  if(n!=numeroLen) return false;
+  while(p<total && buf[p]=='.'){
+    // Um ponto seguido de digito ainda pertence a um numero maior.
+    if(p+1>=total){ if(!ultimoBloco) return false; break; }
+    if(ehDigitoAscii(buf[p+1])) return false;
+    break;
+  }
+  if(p>=total && !ultimoBloco) return false;
+  if(p<total && ehDigitoAscii(buf[p])) return false;
+  fimMatch=p;
+  return true;
+}
+
 bool pesquisarArtigo(const String &numero, uint32_t inicioBusca)
 {
+  uint32_t t0=micros();
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
   if(!f) return false;
-  if(inicioBusca>=f.size() || !f.seek(inicioBusca)){
+  uint32_t tamanho=f.size();
+  if(inicioBusca>=tamanho || !f.seek(inicioBusca)){
     f.close();
     return false;
   }
 
-  // Agrupa da direita para a esquerda, sem conversao numerica ou limite de 3 digitos.
-  String comMilhar="";
-  for(unsigned int i=0;i<numero.length();i++){
-    if(i>0 && (numero.length()-i)%3==0) comMilhar+='.';
-    comMilhar+=numero[i];
+  // O arquivo pode ter MB. A busca antiga usava blocos de 2 KB e fazia ate
+  // quatro varreduras completas por bloco. Aqui fazemos UMA passagem por
+  // blocos grandes, preferencialmente em PSRAM, examinando apenas inicios de linha.
+  const int BLOCO_PSRAM=32768;
+  const int BLOCO_FALLBACK=4096;
+  const int SOBREPOSICAO=128;
+  int bloco=BLOCO_FALLBACK;
+  char *buf=nullptr;
+  if(psramFound()){
+    buf=(char*)heap_caps_malloc(BLOCO_PSRAM+SOBREPOSICAO+1,
+                               MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+    if(buf) bloco=BLOCO_PSRAM;
   }
-  String padroes[4]={"art. "+numero, "artigo "+numero,
-                     "art. "+comMilhar, "artigo "+comMilhar};
-  int totalPadroes=(comMilhar==numero)?2:4;
+  if(!buf) buf=(char*)heap_caps_malloc(BLOCO_FALLBACK+SOBREPOSICAO+1,MALLOC_CAP_8BIT);
+  if(!buf){ f.close(); return false; }
 
-  // Apenas ~2 KB de RAM para a pesquisa. A V7/V7.2 adicionava buffers
-  // grandes antes de iniciar o BLE; aqui voltamos a uma margem segura.
-  const int BLOCO=2048;
-  // 6 (Artigo) + 32 whitespace + 10 (8 digitos com milhar) +
-  // 2 bytes de limite numerico = 50: cabe na sobreposicao de 64 bytes.
-  const int SOBREPOSICAO=64;
-  static char buf[BLOCO+SOBREPOSICAO+1];
+  char numeroAscii[24];
+  int numeroLen=min((int)numero.length(),(int)sizeof(numeroAscii)-1);
+  memcpy(numeroAscii,numero.c_str(),numeroLen); numeroAscii[numeroLen]='\0';
 
   int carry=0;
-  // Continuacao comeca um byte apos o A do resultado anterior, dentro da
-  // mesma linha. So o proximo LF pode habilitar outro inicio de dispositivo.
   bool inicioLinhaNoBuffer=(inicioBusca==0);
-  uint32_t bytesLidos=inicioBusca; // Posicao absoluta, inclusive apos seek().
+  uint32_t bytesLidos=inicioBusca;
   uint32_t posAchada=0;
   bool achou=false;
 
   while(f.available()){
-    int n=f.read((uint8_t*)buf+carry,BLOCO);
+    int n=f.read((uint8_t*)buf+carry,bloco);
     if(n<=0) break;
-
     int total=carry+n;
     buf[total]='\0';
     uint32_t baseBuffer=(bytesLidos >= (uint32_t)carry) ? bytesLidos-(uint32_t)carry : 0;
-
-    int idx=-1;
-    int melhor=-1;
     bool ultimoBloco=!f.available();
-    for(int p=0;p<totalPadroes;p++){
-      if(acharPadraoNoBuffer(buf,total,padroes[p].c_str(),idx,ultimoBloco,inicioLinhaNoBuffer) &&
-         (melhor<0 || idx<melhor)) melhor=idx;
-    }
 
-    if(melhor>=0){
-      posAchada=baseBuffer+(uint32_t)melhor;
-      achou=true;
-      break;
+    // A maioria das normas usa cabeçalhos de artigo no início físico da linha.
+    // O cf.txt é uma exceção histórica: vários artigos foram extraídos no meio
+    // de linhas longas. Para a CF aceitamos também "Art." com A MAIÚSCULO
+    // fora do início da linha. Remissões comuns aparecem como "art." minúsculo
+    // e continuam descartadas, preservando a precisão da busca rápida.
+    bool arquivoConstituicao = caminhoArquivoAtual.startsWith("/1- CONSTITUIÇÃO FEDERAL/") ||
+                              nomeArquivoAtual.equalsIgnoreCase("cf.txt");
+    bool inicioLinha=inicioLinhaNoBuffer;
+    for(int i=0;i<total;i++){
+      bool candidatoInicioLinha=inicioLinha;
+      char atual=buf[i];
+      inicioLinha=(atual=='\n') || (inicioLinha && (atual==' ' || atual=='\t'));
+
+      bool candidatoCFMeioLinha = arquivoConstituicao && buf[i]=='A';
+      if(!candidatoInicioLinha && !candidatoCFMeioLinha) continue;
+
+      int fimMatch=0;
+      if(correspondeArtigoNoInicioLinhaRapido(buf,total,i,numeroAscii,numeroLen,
+                                             ultimoBloco,arquivoConstituicao,fimMatch)){
+        posAchada=baseBuffer+(uint32_t)i;
+        achou=true;
+        break;
+      }
     }
+    if(achou) break;
 
     bytesLidos+=(uint32_t)n;
     carry=min(SOBREPOSICAO,total);
-    // Avanca o contexto apenas pelos bytes descartados, nao pela sobreposicao.
-    // Assim um recuo longo preserva inicio de linha, mas espacos apos uma
-    // citacao nunca viram inicio de paragrafo ao trocar de bloco.
-    for(int i=0;i<total-carry;i++){
-      char atual=buf[i];
-      inicioLinhaNoBuffer=(atual=='\n') ||
-                         (inicioLinhaNoBuffer && (atual==' ' || atual=='\t'));
+    int descartados=total-carry;
+    // Estado de inicio de linha no ponto que vira buf[0] no proximo bloco.
+    bool estado=inicioLinhaNoBuffer;
+    for(int i=0;i<descartados;i++){
+      char c=buf[i];
+      estado=(c=='\n') || (estado && (c==' ' || c=='\t'));
     }
-    memmove(buf,buf+total-carry,carry);
+    inicioLinhaNoBuffer=estado;
+    memmove(buf,buf+descartados,carry);
+    yield();
   }
 
+  heap_caps_free(buf);
   f.close();
-  if(!achou) return false;
+  if(!achou){
+    Serial.printf("PERF BUSCA_ARTIGO: %lu ms (nao encontrado, bloco=%d)\n",
+                  (micros()-t0)/1000,bloco);
+    return false;
+  }
 
-  // Salto por byte absoluto, sem segunda varredura desde o inicio do TXT.
-  // Ao subir alem desta janela, indexarAntesDaJanela recupera o trecho anterior.
   reiniciarIndice(posAchada);
   linhaTopo=0;
+
+  // A busca acabou de localizar o inicio exato do artigo. Antes, ao desenhar
+  // a primeira tela depois do salto, o leitor reconstruia ate 256 KB de texto
+  // anterior apenas para descobrir o contexto juridico. Para um salto direto
+  // isso e desnecessario: antes da propria linha "Art. N" o contexto pode
+  // comecar vazio, pois a linha visivel sera parseada imediatamente e passara
+  // a ser o contexto ativo. Este checkpoint exato elimina a releitura massiva
+  // do SD na abertura de artigos distantes (correlatas e busca numerica).
+  ContextoJuridicoAtivo contextoAntesDoArtigo;
+  limparContextoJuridico(contextoAntesDoArtigo,nomeArquivoAtual.c_str());
+
+  // Na Constituição, alguns cabeçalhos "Art. N" não começam uma linha física.
+  // Nesse caso o parser visual, por segurança, não os trataria como dispositivo.
+  // Como a própria busca acabou de validar o cabeçalho solicitado, semeamos o
+  // contexto com o número encontrado. Isso mantém o indicador do rodapé correto
+  // sem alterar a regra geral anti-falso-positivo do leitor.
+  bool arquivoConstituicao = caminhoArquivoAtual.startsWith("/1- CONSTITUIÇÃO FEDERAL/") ||
+                            nomeArquivoAtual.equalsIgnoreCase("cf.txt");
+  if(arquivoConstituicao){
+    copiarContextoCampo(contextoAntesDoArtigo.artigo,
+                        sizeof(contextoAntesDoArtigo.artigo),
+                        numero.c_str());
+    contextoAntesDoArtigo.offsetArtigo=posAchada;
+  }
+  guardarCheckpointContexto(posAchada,contextoAntesDoArtigo);
+
   offsetUltimaOcorrencia=posAchada;
   inicioProximaBusca=posAchada+1;
   temOcorrenciaDaBusca=true;
+  Serial.printf("PERF BUSCA_ARTIGO: %lu ms (offset=%lu, bloco=%d)\n",
+                (micros()-t0)/1000,(unsigned long)posAchada,bloco);
   return true;
 }
 
@@ -2448,9 +3177,8 @@ void executarBusca()
   tft.setCursor(4,228); tft.print("Buscando Art. "); tft.print(n); tft.print("...");
 
   if(pesquisarArtigo(n,inicio)){
-    // A lei seca aparece primeiro, exatamente como antes. Somente depois do
-    // salto bem-sucedido consultamos o pequeno indice juridico do CDC.
-    carregarRelacoesDoArtigo(n);
+    // O viewport atualiza o contexto ativo e somente entao consulta o indice,
+    // evitando usar paragrafo/inciso da posicao anterior durante o salto.
     desenharViewportLeitor();
     desenharBarraBusca();
   }else{
@@ -3013,6 +3741,9 @@ void redesenharTelaAtual()
     case TELA_LEITOR: desenharTelaLeitor(); break;
     case TELA_BUSCA_TEXTO: desenharTelaBuscaTexto(); break;
     case TELA_SPLASH: desenharSplashLexMachina(); break;
+    case TELA_RELACOES: desenharTelaRelacoes(); break;
+    case TELA_JURIS_CATEGORIAS: desenharTelaCategoriasJuris(); break;
+    case TELA_REFERENCIAS: desenharTelaReferenciasProvisoria(); break;
   }
 }
 
@@ -3066,9 +3797,22 @@ void processarTouch()
     }else if(telaAtual==TELA_LEITOR && x>=264 && y<=20){
       touchConsumido=true;
       abrirBuscaTexto();
-    }else if((telaAtual==TELA_LEITOR || telaAtual==TELA_PASTAS || telaAtual==TELA_RELACOES) && x<=71 && y<=25){
+    }else if((telaAtual==TELA_LEITOR || telaAtual==TELA_PASTAS || telaAtual==TELA_RELACOES || telaAtual==TELA_JURIS_CATEGORIAS) && x<=71 && y<=25){
       pedirVoltar=true;
       touchConsumido=true;
+    }else if(telaAtual==TELA_LEITOR && y>=220 && menuRelacoesAtivo && !modoDigitacaoArtigo){
+      if(x>=4 && x<104 && totalCorrelatasArtigo>0) pedirCategoriaRelacao=REL_CORRELATAS;
+      else if(x>=110 && x<210 && totalCategoriasJuris>0) pedirCategoriaRelacao=255;
+      touchConsumido=true;
+    }else if(telaAtual==TELA_JURIS_CATEGORIAS && y>=43 && y<43+6*28){
+      int idx=(y-43)/28;
+      if(idx>=0 && idx<totalCategoriasJuris){
+        int velho=categoriaJurisSelecionada;
+        categoriaJurisSelecionada=idx;
+        itemTouch=idx;
+        desenharLinhaCategoriaJuris(velho);
+        desenharLinhaCategoriaJuris(idx);
+      }
     }else if(telaAtual==TELA_RELACOES && y>=43 && y<43+RELACOES_VISIVEIS*28){
       int idx=primeiraRelacaoVisivel+(y-43)/28;
       if(idx>=0 && idx<totalRelacoesCategoria){
@@ -3099,12 +3843,14 @@ void processarTouch()
       if(telaAtual==TELA_LEITOR) deltaLeitor++;
       else if(telaAtual==TELA_PASTAS) deltaPastas++;
       else if(telaAtual==TELA_RELACOES) deltaRelacoes++;
+      else if(telaAtual==TELA_JURIS_CATEGORIAS) deltaRelacoes++;
       acumuladorTouch+=10;
     }
     while(acumuladorTouch>=10){
       if(telaAtual==TELA_LEITOR) deltaLeitor--;
       else if(telaAtual==TELA_PASTAS) deltaPastas--;
       else if(telaAtual==TELA_RELACOES) deltaRelacoes--;
+      else if(telaAtual==TELA_JURIS_CATEGORIAS) deltaRelacoes--;
       acumuladorTouch-=10;
     }
   }
@@ -3115,6 +3861,8 @@ void processarTouch()
         pedirAbrir=true;
       else if(telaAtual==TELA_RELACOES && itemTouch>=0 && itemTouch==relacaoSelecionada)
         pedirAbrirRelacao=true;
+      else if(telaAtual==TELA_JURIS_CATEGORIAS && itemTouch>=0 && itemTouch==categoriaJurisSelecionada)
+        pedirCategoriaRelacao=(uint8_t)categoriasJurisDisponiveis[categoriaJurisSelecionada];
     }
     touchAtivo=false;
     acumuladorTouch=0;
@@ -3219,6 +3967,17 @@ void iniciarBluetooth()
       return;
     }
 
+    if(telaAtual==TELA_JURIS_CATEGORIAS){
+      if(event.usage==0x2A){pedirVoltar=true; return;}
+      if(event.usage==0x52){deltaRelacoes--; return;}
+      if(event.usage==0x51){deltaRelacoes++; return;}
+      if(event.usage==0x28 && totalCategoriasJuris>0){
+        pedirCategoriaRelacao=(uint8_t)categoriasJurisDisponiveis[categoriaJurisSelecionada];
+        return;
+      }
+      return;
+    }
+
     if(telaAtual==TELA_LEITOR){
       if(visualizandoReferencia){
         if(event.usage==0x2A){pedirVoltar=true; return;}
@@ -3242,16 +4001,12 @@ void iniciarBluetooth()
             pedirRedesenharBusca=true;
             return;
           }
-          if(event.ascii=='1' && totalSumulasArtigo>0){
-            pedirCategoriaRelacao=REL_SUMULAS;
-            return;
-          }
-          if(event.ascii=='2' && totalRepetitivosArtigo>0){
-            pedirCategoriaRelacao=REL_REPETITIVOS;
-            return;
-          }
-          if(event.ascii=='3' && totalCorrelatasArtigo>0){
+          if(event.ascii=='1' && totalCorrelatasArtigo>0){
             pedirCategoriaRelacao=REL_CORRELATAS;
+            return;
+          }
+          if(event.ascii=='2' && totalCategoriasJuris>0){
+            pedirCategoriaRelacao=255;
             return;
           }
           // 4..9 iniciam diretamente uma nova busca; para artigos iniciados em
@@ -3332,6 +4087,7 @@ void iniciarBluetooth()
     if(telaAtual==TELA_PASTAS) deltaPastas += (d<0?-1:1);
     else if(telaAtual==TELA_LEITOR) deltaLeitor += d;
     else if(telaAtual==TELA_RELACOES) deltaRelacoes += d;
+    else if(telaAtual==TELA_JURIS_CATEGORIAS) deltaRelacoes += d;
   });
 
   EspBleConfig config;
@@ -3432,6 +4188,7 @@ void setup()
   iniciarBluetooth();
   Serial.print("Heap depois do BLE: ");
   Serial.println(ESP.getFreeHeap());
+  inicializarCachesGrandes();
   ultimaInteracaoMs=(uint32_t)millis();
 }
 
@@ -3466,12 +4223,16 @@ void loop()
   if(dr!=0){
     deltaRelacoes=0;
     if(telaAtual==TELA_RELACOES) moverSelecaoRelacao(dr);
+    else if(telaAtual==TELA_JURIS_CATEGORIAS) moverSelecaoCategoriaJuris(dr);
   }
 
   if(pedirCategoriaRelacao!=0){
     uint8_t categoria=pedirCategoriaRelacao;
     pedirCategoriaRelacao=0;
-    if(telaAtual==TELA_LEITOR && menuRelacoesAtivo && !visualizandoReferencia)
+    if(categoria==255 && telaAtual==TELA_LEITOR && menuRelacoesAtivo && !visualizandoReferencia)
+      abrirTelaCategoriasJuris();
+    else if((telaAtual==TELA_LEITOR || telaAtual==TELA_JURIS_CATEGORIAS) &&
+            menuRelacoesAtivo && !visualizandoReferencia)
       abrirCategoriaRelacao((CategoriaRelacao)categoria);
   }
 
@@ -3524,3 +4285,4 @@ void loop()
   atualizarInatividadeDisplay();
   delay(1);
 }
+

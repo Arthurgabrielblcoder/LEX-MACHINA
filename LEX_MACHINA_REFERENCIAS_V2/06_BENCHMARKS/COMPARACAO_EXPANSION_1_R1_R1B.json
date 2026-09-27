@@ -1,0 +1,288 @@
+{
+  "scope": "398 pares conhecidos; 394 binários. Não extrapolar para todo o universo.",
+  "input_hash": "3401d086d8a68e7b61ac9456732d133a6d61a00f2ff5c94ce03f589519cdcc91",
+  "matrices": {
+    "EXPANSION_1": {
+      "TP": 45,
+      "FP": 2,
+      "TN": 232,
+      "FN": 115,
+      "NAO_AVALIAVEL": 4
+    },
+    "EXPANSION_R1": {
+      "TP": 50,
+      "FP": 4,
+      "TN": 230,
+      "FN": 110,
+      "NAO_AVALIAVEL": 4
+    },
+    "EXPANSION_R1B": {
+      "TP": 55,
+      "FP": 4,
+      "TN": 230,
+      "FN": 105,
+      "NAO_AVALIAVEL": 4
+    },
+    "ALPHA3": {
+      "TN_NAO_PUBLICADO": 178,
+      "FP": 56,
+      "FN": 32,
+      "TP": 128,
+      "NAO_AVALIAVEL": 4
+    }
+  },
+  "states_known_398": {
+    "EXPANSION_1": {
+      "ADMISSIVEL": 47,
+      "REVISAO_EDITORIAL": 0,
+      "EVIDENCIA_INSUFICIENTE": 342,
+      "INCOMPATIVEL": 0,
+      "FONTE_EM_REVISAO": 9
+    },
+    "EXPANSION_R1": {
+      "ADMISSIVEL": 54,
+      "REVISAO_EDITORIAL": 0,
+      "EVIDENCIA_INSUFICIENTE": 335,
+      "INCOMPATIVEL": 0,
+      "FONTE_EM_REVISAO": 9
+    },
+    "EXPANSION_R1B": {
+      "ADMISSIVEL": 59,
+      "REVISAO_EDITORIAL": 0,
+      "EVIDENCIA_INSUFICIENTE": 330,
+      "INCOMPATIVEL": 0,
+      "FONTE_EM_REVISAO": 9
+    }
+  },
+  "groups_overlapping": {
+    "human134": {
+      "EXPANSION_1": {
+        "TN_NAO_PUBLICADO": 114,
+        "FN": 11,
+        "TP": 9
+      },
+      "EXPANSION_R1": {
+        "TN_NAO_PUBLICADO": 114,
+        "FN": 11,
+        "TP": 9
+      },
+      "EXPANSION_R1B": {
+        "TN_NAO_PUBLICADO": 114,
+        "FN": 10,
+        "TP": 10
+      }
+    },
+    "external36": {
+      "EXPANSION_1": {
+        "FN": 6,
+        "TN_NAO_PUBLICADO": 23,
+        "TP": 7
+      },
+      "EXPANSION_R1": {
+        "FN": 6,
+        "TN_NAO_PUBLICADO": 23,
+        "TP": 7
+      },
+      "EXPANSION_R1B": {
+        "FN": 6,
+        "TN_NAO_PUBLICADO": 23,
+        "TP": 7
+      }
+    },
+    "old176": {
+      "EXPANSION_1": {
+        "TP": 27,
+        "FN": 96,
+        "TN_NAO_PUBLICADO": 49,
+        "NAO_AVALIAVEL": 2,
+        "FP": 2
+      },
+      "EXPANSION_R1": {
+        "TP": 31,
+        "FN": 92,
+        "TN_NAO_PUBLICADO": 47,
+        "NAO_AVALIAVEL": 2,
+        "FP": 4
+      },
+      "EXPANSION_R1B": {
+        "TP": 34,
+        "FN": 89,
+        "TN_NAO_PUBLICADO": 47,
+        "NAO_AVALIAVEL": 2,
+        "FP": 4
+      }
+    },
+    "mechanisms15": {
+      "EXPANSION_1": {
+        "TP": 6,
+        "FN": 9
+      },
+      "EXPANSION_R1": {
+        "TP": 10,
+        "FN": 5
+      },
+      "EXPANSION_R1B": {
+        "TP": 11,
+        "FN": 4
+      }
+    },
+    "negatives10": {
+      "EXPANSION_1": {
+        "TN_NAO_PUBLICADO": 10
+      },
+      "EXPANSION_R1": {
+        "TN_NAO_PUBLICADO": 10
+      },
+      "EXPANSION_R1B": {
+        "TN_NAO_PUBLICADO": 10
+      }
+    },
+    "protected20": {
+      "EXPANSION_1": {
+        "FN": 11,
+        "TP": 9
+      },
+      "EXPANSION_R1": {
+        "FN": 11,
+        "TP": 9
+      },
+      "EXPANSION_R1B": {
+        "FN": 10,
+        "TP": 10
+      }
+    },
+    "recent60": {
+      "EXPANSION_1": {
+        "TN_NAO_PUBLICADO": 35,
+        "TP": 12,
+        "FN": 13
+      },
+      "EXPANSION_R1": {
+        "TN_NAO_PUBLICADO": 35,
+        "TP": 15,
+        "FN": 10
+      },
+      "EXPANSION_R1B": {
+        "TN_NAO_PUBLICADO": 35,
+        "TP": 15,
+        "FN": 10
+      }
+    },
+    "recent20": {
+      "EXPANSION_1": {
+        "TN_NAO_PUBLICADO": 18,
+        "TP": 2
+      },
+      "EXPANSION_R1": {
+        "TN_NAO_PUBLICADO": 18,
+        "TP": 2
+      },
+      "EXPANSION_R1B": {
+        "TN_NAO_PUBLICADO": 18,
+        "TP": 2
+      }
+    }
+  },
+  "disjoint_partition_order": [
+    "recent60",
+    "recent20",
+    "human134",
+    "external36",
+    "mechanisms15",
+    "negatives10",
+    "old176",
+    "protected20",
+    "demais_rotulos_deduplicados"
+  ],
+  "disjoint_partition": {
+    "recent60": {
+      "total": 60,
+      "counts": {
+        "TN_NAO_PUBLICADO": 33,
+        "TP": 15,
+        "FN": 10,
+        "NAO_AVALIAVEL": 2
+      }
+    },
+    "recent20": {
+      "total": 20,
+      "counts": {
+        "TN_NAO_PUBLICADO": 18,
+        "TP": 2
+      }
+    },
+    "human134": {
+      "total": 134,
+      "counts": {
+        "TN_NAO_PUBLICADO": 114,
+        "FN": 10,
+        "TP": 10
+      }
+    },
+    "external36": {
+      "total": 34,
+      "counts": {
+        "FN": 6,
+        "TN_NAO_PUBLICADO": 20,
+        "TP": 7,
+        "NAO_AVALIAVEL": 1
+      }
+    },
+    "mechanisms15": {
+      "total": 11,
+      "counts": {
+        "TP": 7,
+        "FN": 4
+      }
+    },
+    "negatives10": {
+      "total": 0,
+      "counts": {}
+    },
+    "old176": {
+      "total": 139,
+      "counts": {
+        "FN": 75,
+        "TP": 14,
+        "TN_NAO_PUBLICADO": 45,
+        "NAO_AVALIAVEL": 1,
+        "FP": 4
+      }
+    },
+    "protected20": {
+      "total": 0,
+      "counts": {}
+    },
+    "demais_rotulos_deduplicados": {
+      "total": 0,
+      "cases": [],
+      "counts": {}
+    }
+  },
+  "recovered_r1b": [
+    {
+      "device_id": "CF88:ART.1:INC.III",
+      "work_id": "REF-SER-0002"
+    },
+    {
+      "device_id": "CF88:ART.226:PAR.7",
+      "work_id": "REF-SER-0002"
+    },
+    {
+      "device_id": "CF88:ART.5:INC.X",
+      "work_id": "REF-LIV-0001"
+    },
+    {
+      "device_id": "CF88:ART.5:INC.XV",
+      "work_id": "REF-JOG-0001"
+    },
+    {
+      "device_id": "CF88:ART.6",
+      "work_id": "EXP-LIV-008"
+    }
+  ],
+  "fp_reduction_vs_alpha3_percent": 92.85714285714286,
+  "recall_known_positive_percent": 34.375,
+  "phases_9_10_11_12_13_final": "NOT_RUN_GATE_FAILED",
+  "global_r1b_metrics": null
+}

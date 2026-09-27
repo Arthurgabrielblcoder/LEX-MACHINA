@@ -1,0 +1,1968 @@
+{
+  "ambiguous": [],
+  "base_input_hash": "ccf92bce6ffd07c93bb069c3b0783adc192c2e850feb0af94c1189c01c92849c",
+  "cases": [
+    {
+      "decisao_editorial_simulada": "SEM_MUDANCA",
+      "device_id": "CF88:ART.103-B:PAR.4:INC.III",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "SEPARACAO_PODERES"
+            ],
+            "participants": [
+              {
+                "concept": "AUTOR",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "ESTADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "DEFENDER",
+            "subjects": [
+              "AUTOR"
+            ]
+          },
+          "content_type": "ARGUMENTO_ACADEMICO",
+          "evidence_id": "EXP-LIV-006#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_experimental",
+            "not_targeted_to_device": true,
+            "source_checked": true,
+            "version": "EXPANSION-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "b8441faff95034875f7ffa7c2d4645588e6548120bb7574a60908e3e085a7003",
+            "hash_scope": "SHA256 da ficha documental, não bytes remotos",
+            "identifier": "https://guides.loc.gov/federalist-papers/text-41-50",
+            "locator": "Federalist 47, primeiros parágrafos; Federalist 48, abertura",
+            "paraphrase": "Madison defende a distinção dos poderes legislativo, executivo e judiciário e, no ensaio seguinte, controles constitucionais recíprocos.",
+            "tier": "PRIMARIA_TEXTO_INSTITUCIONAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Modelo estadunidense de 1788; não representa conselho disciplinar, estabilidade funcional ou competência brasileira particular."
+          ],
+          "work_id": "EXP-LIV-006"
+        }
+      ],
+      "impacto": "NEGATIVO_PRESERVADO",
+      "metric_r1c": "TN_NAO_PUBLICADO",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "O Federalista",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "EVIDENCIA_INSUFICIENTE",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.103-B:PAR.4:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "JUIZ"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.103-B:PAR.4:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": []
+          }
+        }
+      ],
+      "work_id": "EXP-LIV-006"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.103-B:PAR.4:INC.III",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "PROCESSO_OPACO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-LIV-0002#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "203eecac17e6fee4af7b5b2a85b2ad0987bf94b8734ea420a57547d0e2e51210",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.penguinrandomhouse.ca/books/532503/the-trial-by-franz-kafka-translated-with-an-introduction-and-notes-by-idris-parry/9780241678893",
+            "locator": "Descrição editorial, parágrafo sobre crime desconhecido",
+            "paraphrase": "Josef K. enfrenta uma persecução sem conhecer a natureza da acusação.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Defesa efetiva é interpretação da falta de acusação inteligível; não retrata carreira pública nem avaliação de desempenho."
+          ],
+          "work_id": "REF-LIV-0002"
+        }
+      ],
+      "impacto": "FP_ELIMINADO",
+      "metric_r1c": "FP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "O Processo",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.103-B:PAR.4:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "JUIZ"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.103-B:PAR.4:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": []
+          }
+        }
+      ],
+      "work_id": "REF-LIV-0002"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.103-B:PAR.4:INC.III",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "INTERROGATORIO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              },
+              {
+                "concept": "ADOLESCENTE",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO",
+              "ADOLESCENTE"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "0aeef3f08d1122d6a82687a60297a8b61334d98c8bd54d656f3e70909a9fac78",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.netflix.com/title/80200549?s=i",
+            "locator": "Sinopse do episódio 1",
+            "paraphrase": "Cinco adolescentes são detidos e coagidos a confessar um ataque que não cometeram.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Anotação de obstrução da defesa decorre da coação; não retrata processo administrativo brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "PRESUNCAO_INOCENCIA"
+            ],
+            "participants": [
+              {
+                "concept": "PODER_JUDICIARIO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "CONDENAR_INJUSTAMENTE",
+            "subjects": [
+              "PODER_JUDICIARIO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "A condenação por crime não cometido é o fato; PRESUNCAO_INOCENCIA é a dimensão pedagógica já prevista na ontologia/contrato, não citação constitucional na série.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "55ac226fbae249e7b44a1d93f9b62dc8e6d28ed3f8a0b4ec9a69af1d08fc6183",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://media.netflix.com/en/only-on-netflix/80200549",
+            "locator": "Synopsis, primeiro parágrafo e referência à exoneração em 2002",
+            "paraphrase": "A série retrata cinco adolescentes condenados por estupro que não cometeram e sua posterior exoneração.",
+            "tier": "PRIMARIA_PRODUTORA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Condenação injusta documentada; não afirmar equivalência de todas as garantias ou do regime de condenação brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "INTEGRIDADE_PRESO"
+            ],
+            "participants": [
+              {
+                "concept": "PESSOA",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "AGENTE_PUBLICO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "PRESO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "VIOLAR",
+            "subjects": [
+              "PESSOA",
+              "AGENTE_PUBLICO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "Korey já preso; violência de guardas e outros presos. Não transportar ao sujeito juiz ou a todas as prisões.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "f7c74fd89047e24d7dd9b31eadb35cfb74b2606286a8796ab7f817214e23a0c5",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://andscape.com/features/when-they-see-us-ava-duvernay-netflix-central-park-five/",
+            "locator": "Soraya Nadia McDonald; parágrafos sobre atuação de Jharrel Jerome, guardas, presos e isolamento (linhas 57–58 consultadas)",
+            "paraphrase": "A série mostra Korey sofrendo violência física na prisão; o isolamento afasta agressões, mas agrava sofrimento psíquico.",
+            "tier": "SECUNDARIA_REPUTADA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Evento de integridade de pessoa presa; não converter isolamento protetivo em proibição formal de comunicação."
+          ],
+          "work_id": "REF-SER-0001"
+        }
+      ],
+      "impacto": "FP_ELIMINADO",
+      "metric_r1c": "FP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "Olhos que Condenam",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.103-B:PAR.4:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "JUIZ"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.103-B:PAR.4:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": []
+          }
+        }
+      ],
+      "work_id": "REF-SER-0001"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.247:PAR.UNICO",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "PROCESSO_OPACO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-LIV-0002#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "203eecac17e6fee4af7b5b2a85b2ad0987bf94b8734ea420a57547d0e2e51210",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.penguinrandomhouse.ca/books/532503/the-trial-by-franz-kafka-translated-with-an-introduction-and-notes-by-idris-parry/9780241678893",
+            "locator": "Descrição editorial, parágrafo sobre crime desconhecido",
+            "paraphrase": "Josef K. enfrenta uma persecução sem conhecer a natureza da acusação.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Defesa efetiva é interpretação da falta de acusação inteligível; não retrata carreira pública nem avaliação de desempenho."
+          ],
+          "work_id": "REF-LIV-0002"
+        }
+      ],
+      "impacto": "TP_HISTORICO_PARA_READJUDICACAO",
+      "metric_r1c": "TP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "O Processo",
+      "proofs": [],
+      "rotulo_historico": "APROVAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.247:PAR.UNICO#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "SERVIDOR_PUBLICO"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.247:PAR.UNICO#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "ACUSADO"
+            ]
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.247:PAR.UNICO#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "CARGO_PUBLICO"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "PROCESSAR_PERDA_CARGO"
+            ],
+            "subjects_any": [
+              "ADMINISTRACAO_PUBLICA"
+            ]
+          }
+        }
+      ],
+      "work_id": "REF-LIV-0002"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.247:PAR.UNICO",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "INTERROGATORIO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              },
+              {
+                "concept": "ADOLESCENTE",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO",
+              "ADOLESCENTE"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "0aeef3f08d1122d6a82687a60297a8b61334d98c8bd54d656f3e70909a9fac78",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.netflix.com/title/80200549?s=i",
+            "locator": "Sinopse do episódio 1",
+            "paraphrase": "Cinco adolescentes são detidos e coagidos a confessar um ataque que não cometeram.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Anotação de obstrução da defesa decorre da coação; não retrata processo administrativo brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "PRESUNCAO_INOCENCIA"
+            ],
+            "participants": [
+              {
+                "concept": "PODER_JUDICIARIO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "CONDENAR_INJUSTAMENTE",
+            "subjects": [
+              "PODER_JUDICIARIO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "A condenação por crime não cometido é o fato; PRESUNCAO_INOCENCIA é a dimensão pedagógica já prevista na ontologia/contrato, não citação constitucional na série.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "55ac226fbae249e7b44a1d93f9b62dc8e6d28ed3f8a0b4ec9a69af1d08fc6183",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://media.netflix.com/en/only-on-netflix/80200549",
+            "locator": "Synopsis, primeiro parágrafo e referência à exoneração em 2002",
+            "paraphrase": "A série retrata cinco adolescentes condenados por estupro que não cometeram e sua posterior exoneração.",
+            "tier": "PRIMARIA_PRODUTORA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Condenação injusta documentada; não afirmar equivalência de todas as garantias ou do regime de condenação brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "INTEGRIDADE_PRESO"
+            ],
+            "participants": [
+              {
+                "concept": "PESSOA",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "AGENTE_PUBLICO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "PRESO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "VIOLAR",
+            "subjects": [
+              "PESSOA",
+              "AGENTE_PUBLICO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "Korey já preso; violência de guardas e outros presos. Não transportar ao sujeito juiz ou a todas as prisões.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "f7c74fd89047e24d7dd9b31eadb35cfb74b2606286a8796ab7f817214e23a0c5",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://andscape.com/features/when-they-see-us-ava-duvernay-netflix-central-park-five/",
+            "locator": "Soraya Nadia McDonald; parágrafos sobre atuação de Jharrel Jerome, guardas, presos e isolamento (linhas 57–58 consultadas)",
+            "paraphrase": "A série mostra Korey sofrendo violência física na prisão; o isolamento afasta agressões, mas agrava sofrimento psíquico.",
+            "tier": "SECUNDARIA_REPUTADA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Evento de integridade de pessoa presa; não converter isolamento protetivo em proibição formal de comunicação."
+          ],
+          "work_id": "REF-SER-0001"
+        }
+      ],
+      "impacto": "FP_ELIMINADO",
+      "metric_r1c": "FP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "Olhos que Condenam",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.247:PAR.UNICO#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "SERVIDOR_PUBLICO"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.247:PAR.UNICO#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "ACUSADO"
+            ]
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.247:PAR.UNICO#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "CARGO_PUBLICO"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "PROCESSAR_PERDA_CARGO"
+            ],
+            "subjects_any": [
+              "ADMINISTRACAO_PUBLICA"
+            ]
+          }
+        }
+      ],
+      "work_id": "REF-SER-0001"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.24:INC.XII",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "REINO_UNIDO",
+              "INCAPACIDADE"
+            ],
+            "effects": [],
+            "objects": [
+              "SAUDE"
+            ],
+            "participants": [
+              {
+                "concept": "TRABALHADOR",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "DESPROTEGER",
+            "subjects": [
+              "TRABALHADOR"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "EXP-FIL-006#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "15b06a5219b7bc83e1b955fd7c4cdde01f3e686c544941062c9c7b838dcde50c",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.transmissionfilms.com.au/uploads/media/I__DANIEL_BLAKE_Transmission_Films_Production_Notes.pdf",
+            "locator": "PDF p.8 (índice 7), entrevista: Describe the character of Daniel",
+            "paraphrase": "Após infarto e orientação médica para não trabalhar, Daniel é considerado apto pelo sistema de benefícios e precisa sobreviver nessa condição.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "A desproteção é inferência pedagógica sobre benefício por incapacidade; não recusa de tratamento no NHS, nem remuneração de agentes."
+          ],
+          "work_id": "EXP-FIL-006"
+        },
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "REINO_UNIDO",
+              "VULNERABILIDADE"
+            ],
+            "effects": [],
+            "objects": [
+              "ALIMENTACAO"
+            ],
+            "participants": [
+              {
+                "concept": "CRIANCA",
+                "role": "CONTEXT"
+              },
+              {
+                "concept": "MAE",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "DESPROTEGER",
+            "subjects": [
+              "CRIANCA",
+              "MAE"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "EXP-FIL-006#E02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "a795bbef6159afd84124ccd3b3b25d8419ed4c6904ad38b3603503bd633dafe1",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.rtp.pt/programa/tv/p36172",
+            "locator": "Sobre o programa, sinopse",
+            "paraphrase": "Katie, mãe de duas crianças, e Daniel enfrentam falta de sustento e recorrem a banco alimentar.",
+            "tier": "INSTITUCIONAL_EMISSORA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "A fonte inclui família com crianças; não atribuir toda a trama a direitos infantis.",
+            "A fonte não individualiza fome nas crianças; sua presença no grupo familiar não prova que sofreram a mesma privação narrada para a mãe."
+          ],
+          "work_id": "EXP-FIL-006"
+        }
+      ],
+      "impacto": "TP_HISTORICO_PARA_READJUDICACAO",
+      "metric_r1c": "TP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "Eu, Daniel Blake",
+      "proofs": [],
+      "rotulo_historico": "APROVAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.24:INC.XII#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "SAUDE"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "LEGISLAR_CONCORRENTEMENTE"
+            ],
+            "subjects_any": []
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.24:INC.XII#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "PREVIDENCIA_SOCIAL"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "LEGISLAR_CONCORRENTEMENTE"
+            ],
+            "subjects_any": []
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.24:INC.XII#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "SAUDE"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "DESPROTEGER"
+            ],
+            "subjects_any": [
+              "LEGISLADOR"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.24:INC.XII#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "UNIAO_ESTADOS_DF"
+            ],
+            "objects_all": [
+              "SAUDE"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "DESPROTEGER"
+            ],
+            "subjects_any": []
+          }
+        }
+      ],
+      "work_id": "EXP-FIL-006"
+    },
+    {
+      "decisao_editorial_simulada": "SEM_MUDANCA",
+      "device_id": "CF88:ART.24:INC.XII",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "YONKERS"
+            ],
+            "effects": [],
+            "objects": [
+              "HABITACAO_PUBLICA"
+            ],
+            "participants": [
+              {
+                "concept": "ESTADO",
+                "role": "ACTOR"
+              }
+            ],
+            "predicate": "IMPLEMENTAR_PROGRAMA",
+            "subjects": [
+              "ESTADO"
+            ]
+          },
+          "content_type": "PRATICA_INSTITUCIONAL",
+          "evidence_id": "EXP-SER-006#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "fcb7bbd943d2a2bad6f525f0793db5853e31c73c0fdd093937b950bcad85d9f0",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://tv.apple.com/us/show/show-me-a-hero/umc.cmc.1pbkdtnsqnczu0gr9tzynf66x",
+            "locator": "Descrições Part 4 e Part 5",
+            "paraphrase": "A construção de moradias de dessegregação começa enquanto o prefeito enfrenta oposição local; moradores são selecionados para as unidades.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Analogia de política habitacional; não identidade do federalismo brasileiro."
+          ],
+          "work_id": "EXP-SER-006"
+        },
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "HABITACAO_PUBLICA"
+            ],
+            "effects": [],
+            "objects": [
+              "DISCRIMINACAO_RACIAL"
+            ],
+            "participants": [
+              {
+                "concept": "MORADORES",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "DISCRIMINAR",
+            "subjects": [
+              "MORADORES"
+            ]
+          },
+          "content_type": "PRATICA_INSTITUCIONAL",
+          "evidence_id": "EXP-SER-006#E02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "6d90e0cc9e566c0703e5b5d0bcc49d1b33f8b1341979a7bd4d5a3644d9761fb1",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://tv.apple.com/us/show/show-me-a-hero/umc.cmc.1pbkdtnsqnczu0gr9tzynf66x",
+            "locator": "Sinopse e descrição Part 1",
+            "paraphrase": "Moradores brancos resistem à integração habitacional num conflito municipal racializado.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira."
+          ],
+          "work_id": "EXP-SER-006"
+        }
+      ],
+      "impacto": "NEGATIVO_PRESERVADO",
+      "metric_r1c": "TN_NAO_PUBLICADO",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "Show Me a Hero",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "EVIDENCIA_INSUFICIENTE",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.24:INC.XII#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "SAUDE"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "LEGISLAR_CONCORRENTEMENTE"
+            ],
+            "subjects_any": []
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.24:INC.XII#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "PREVIDENCIA_SOCIAL"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "LEGISLAR_CONCORRENTEMENTE"
+            ],
+            "subjects_any": []
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.24:INC.XII#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "SAUDE"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "DESPROTEGER"
+            ],
+            "subjects_any": [
+              "LEGISLADOR"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.24:INC.XII#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "UNIAO_ESTADOS_DF"
+            ],
+            "objects_all": [
+              "SAUDE"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "DESPROTEGER"
+            ],
+            "subjects_any": []
+          }
+        }
+      ],
+      "work_id": "EXP-SER-006"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.41:PAR.1:INC.II",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "INTERROGATORIO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              },
+              {
+                "concept": "ADOLESCENTE",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO",
+              "ADOLESCENTE"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "0aeef3f08d1122d6a82687a60297a8b61334d98c8bd54d656f3e70909a9fac78",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.netflix.com/title/80200549?s=i",
+            "locator": "Sinopse do episódio 1",
+            "paraphrase": "Cinco adolescentes são detidos e coagidos a confessar um ataque que não cometeram.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Anotação de obstrução da defesa decorre da coação; não retrata processo administrativo brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "PRESUNCAO_INOCENCIA"
+            ],
+            "participants": [
+              {
+                "concept": "PODER_JUDICIARIO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "CONDENAR_INJUSTAMENTE",
+            "subjects": [
+              "PODER_JUDICIARIO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "A condenação por crime não cometido é o fato; PRESUNCAO_INOCENCIA é a dimensão pedagógica já prevista na ontologia/contrato, não citação constitucional na série.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "55ac226fbae249e7b44a1d93f9b62dc8e6d28ed3f8a0b4ec9a69af1d08fc6183",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://media.netflix.com/en/only-on-netflix/80200549",
+            "locator": "Synopsis, primeiro parágrafo e referência à exoneração em 2002",
+            "paraphrase": "A série retrata cinco adolescentes condenados por estupro que não cometeram e sua posterior exoneração.",
+            "tier": "PRIMARIA_PRODUTORA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Condenação injusta documentada; não afirmar equivalência de todas as garantias ou do regime de condenação brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "INTEGRIDADE_PRESO"
+            ],
+            "participants": [
+              {
+                "concept": "PESSOA",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "AGENTE_PUBLICO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "PRESO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "VIOLAR",
+            "subjects": [
+              "PESSOA",
+              "AGENTE_PUBLICO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "Korey já preso; violência de guardas e outros presos. Não transportar ao sujeito juiz ou a todas as prisões.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "f7c74fd89047e24d7dd9b31eadb35cfb74b2606286a8796ab7f817214e23a0c5",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://andscape.com/features/when-they-see-us-ava-duvernay-netflix-central-park-five/",
+            "locator": "Soraya Nadia McDonald; parágrafos sobre atuação de Jharrel Jerome, guardas, presos e isolamento (linhas 57–58 consultadas)",
+            "paraphrase": "A série mostra Korey sofrendo violência física na prisão; o isolamento afasta agressões, mas agrava sofrimento psíquico.",
+            "tier": "SECUNDARIA_REPUTADA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Evento de integridade de pessoa presa; não converter isolamento protetivo em proibição formal de comunicação."
+          ],
+          "work_id": "REF-SER-0001"
+        }
+      ],
+      "impacto": "TP_HISTORICO_PARA_READJUDICACAO",
+      "metric_r1c": "TP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "Olhos que Condenam",
+      "proofs": [],
+      "rotulo_historico": "APROVAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.II#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "SERVIDOR_PUBLICO"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.II#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "ACUSADO"
+            ]
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.II#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "CARGO_PUBLICO"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "PROCESSAR_PERDA_CARGO"
+            ],
+            "subjects_any": [
+              "ADMINISTRACAO_PUBLICA"
+            ]
+          }
+        }
+      ],
+      "work_id": "REF-SER-0001"
+    },
+    {
+      "decisao_editorial_simulada": "SEM_MUDANCA",
+      "device_id": "CF88:ART.41:PAR.1:INC.III",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "SEPARACAO_PODERES"
+            ],
+            "participants": [
+              {
+                "concept": "AUTOR",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "ESTADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "DEFENDER",
+            "subjects": [
+              "AUTOR"
+            ]
+          },
+          "content_type": "ARGUMENTO_ACADEMICO",
+          "evidence_id": "EXP-LIV-006#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_experimental",
+            "not_targeted_to_device": true,
+            "source_checked": true,
+            "version": "EXPANSION-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "b8441faff95034875f7ffa7c2d4645588e6548120bb7574a60908e3e085a7003",
+            "hash_scope": "SHA256 da ficha documental, não bytes remotos",
+            "identifier": "https://guides.loc.gov/federalist-papers/text-41-50",
+            "locator": "Federalist 47, primeiros parágrafos; Federalist 48, abertura",
+            "paraphrase": "Madison defende a distinção dos poderes legislativo, executivo e judiciário e, no ensaio seguinte, controles constitucionais recíprocos.",
+            "tier": "PRIMARIA_TEXTO_INSTITUCIONAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Modelo estadunidense de 1788; não representa conselho disciplinar, estabilidade funcional ou competência brasileira particular."
+          ],
+          "work_id": "EXP-LIV-006"
+        }
+      ],
+      "impacto": "NEGATIVO_PRESERVADO",
+      "metric_r1c": "TN_NAO_PUBLICADO",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "O Federalista",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "EVIDENCIA_INSUFICIENTE",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "SERVIDOR_PUBLICO"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "ACUSADO"
+            ]
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "CARGO_PUBLICO"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "PROCESSAR_PERDA_CARGO"
+            ],
+            "subjects_any": [
+              "ADMINISTRACAO_PUBLICA"
+            ]
+          }
+        }
+      ],
+      "work_id": "EXP-LIV-006"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.41:PAR.1:INC.III",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "PROCESSO_OPACO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-LIV-0002#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "203eecac17e6fee4af7b5b2a85b2ad0987bf94b8734ea420a57547d0e2e51210",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.penguinrandomhouse.ca/books/532503/the-trial-by-franz-kafka-translated-with-an-introduction-and-notes-by-idris-parry/9780241678893",
+            "locator": "Descrição editorial, parágrafo sobre crime desconhecido",
+            "paraphrase": "Josef K. enfrenta uma persecução sem conhecer a natureza da acusação.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Defesa efetiva é interpretação da falta de acusação inteligível; não retrata carreira pública nem avaliação de desempenho."
+          ],
+          "work_id": "REF-LIV-0002"
+        }
+      ],
+      "impacto": "TP_HISTORICO_PARA_READJUDICACAO",
+      "metric_r1c": "TP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "O Processo",
+      "proofs": [],
+      "rotulo_historico": "APROVAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "SERVIDOR_PUBLICO"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "ACUSADO"
+            ]
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "CARGO_PUBLICO"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "PROCESSAR_PERDA_CARGO"
+            ],
+            "subjects_any": [
+              "ADMINISTRACAO_PUBLICA"
+            ]
+          }
+        }
+      ],
+      "work_id": "REF-LIV-0002"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.41:PAR.1:INC.III",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "INTERROGATORIO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              },
+              {
+                "concept": "ADOLESCENTE",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO",
+              "ADOLESCENTE"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "0aeef3f08d1122d6a82687a60297a8b61334d98c8bd54d656f3e70909a9fac78",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.netflix.com/title/80200549?s=i",
+            "locator": "Sinopse do episódio 1",
+            "paraphrase": "Cinco adolescentes são detidos e coagidos a confessar um ataque que não cometeram.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Anotação de obstrução da defesa decorre da coação; não retrata processo administrativo brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "PRESUNCAO_INOCENCIA"
+            ],
+            "participants": [
+              {
+                "concept": "PODER_JUDICIARIO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "CONDENAR_INJUSTAMENTE",
+            "subjects": [
+              "PODER_JUDICIARIO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "A condenação por crime não cometido é o fato; PRESUNCAO_INOCENCIA é a dimensão pedagógica já prevista na ontologia/contrato, não citação constitucional na série.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "55ac226fbae249e7b44a1d93f9b62dc8e6d28ed3f8a0b4ec9a69af1d08fc6183",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://media.netflix.com/en/only-on-netflix/80200549",
+            "locator": "Synopsis, primeiro parágrafo e referência à exoneração em 2002",
+            "paraphrase": "A série retrata cinco adolescentes condenados por estupro que não cometeram e sua posterior exoneração.",
+            "tier": "PRIMARIA_PRODUTORA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Condenação injusta documentada; não afirmar equivalência de todas as garantias ou do regime de condenação brasileiro."
+          ],
+          "work_id": "REF-SER-0001"
+        },
+        {
+          "centrality": "PONTUAL",
+          "claim": {
+            "context": [],
+            "effects": [],
+            "objects": [
+              "INTEGRIDADE_PRESO"
+            ],
+            "participants": [
+              {
+                "concept": "PESSOA",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "AGENTE_PUBLICO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "PRESO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "VIOLAR",
+            "subjects": [
+              "PESSOA",
+              "AGENTE_PUBLICO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0001#R1C02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "annotation_note": "Korey já preso; violência de guardas e outros presos. Não transportar ao sujeito juiz ou a todas as prisões.",
+            "human_validated": false,
+            "method": "curadoria_documental_factual",
+            "not_targeted_to_device": true,
+            "version": "EXPANSAO_R1C"
+          },
+          "source": {
+            "consulted_at": "2026-09-25",
+            "hash": "f7c74fd89047e24d7dd9b31eadb35cfb74b2606286a8796ab7f817214e23a0c5",
+            "hash_scope": "SHA256 da ficha documental, não dos bytes remotos",
+            "identifier": "https://andscape.com/features/when-they-see-us-ava-duvernay-netflix-central-park-five/",
+            "locator": "Soraya Nadia McDonald; parágrafos sobre atuação de Jharrel Jerome, guardas, presos e isolamento (linhas 57–58 consultadas)",
+            "paraphrase": "A série mostra Korey sofrendo violência física na prisão; o isolamento afasta agressões, mas agrava sofrimento psíquico.",
+            "tier": "SECUNDARIA_REPUTADA"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Evento de integridade de pessoa presa; não converter isolamento protetivo em proibição formal de comunicação."
+          ],
+          "work_id": "REF-SER-0001"
+        }
+      ],
+      "impacto": "FP_ELIMINADO",
+      "metric_r1c": "FP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "Olhos que Condenam",
+      "proofs": [],
+      "rotulo_historico": "REJEITAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "SERVIDOR_PUBLICO"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA_EFETIVA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "ACUSADO"
+            ]
+          }
+        },
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.41:PAR.1:INC.III#N2",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "CARGO_PUBLICO"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "PROCESSAR_PERDA_CARGO"
+            ],
+            "subjects_any": [
+              "ADMINISTRACAO_PUBLICA"
+            ]
+          }
+        }
+      ],
+      "work_id": "REF-SER-0001"
+    },
+    {
+      "decisao_editorial_simulada": "REJEITAR_SEM_ANCORA",
+      "device_id": "CF88:ART.93:INC.II:AL.d",
+      "evidencia_validada": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "PROCESSO_OPACO"
+            ],
+            "effects": [],
+            "objects": [
+              "DEFESA_EFETIVA"
+            ],
+            "participants": [
+              {
+                "concept": "ACUSADO",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "OBSTRUIR",
+            "subjects": [
+              "ACUSADO"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-LIV-0002#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "203eecac17e6fee4af7b5b2a85b2ad0987bf94b8734ea420a57547d0e2e51210",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://www.penguinrandomhouse.ca/books/532503/the-trial-by-franz-kafka-translated-with-an-introduction-and-notes-by-idris-parry/9780241678893",
+            "locator": "Descrição editorial, parágrafo sobre crime desconhecido",
+            "paraphrase": "Josef K. enfrenta uma persecução sem conhecer a natureza da acusação.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Defesa efetiva é interpretação da falta de acusação inteligível; não retrata carreira pública nem avaliação de desempenho."
+          ],
+          "work_id": "REF-LIV-0002"
+        }
+      ],
+      "impacto": "TP_HISTORICO_PARA_READJUDICACAO",
+      "metric_r1c": "TP",
+      "nota": "Rejeição editorial do vínculo com o regime, não prova negativa de inexistência do fato na obra.",
+      "obra": "O Processo",
+      "proofs": [],
+      "rotulo_historico": "APROVAR",
+      "state_r1c": "ADMISSIVEL",
+      "state_simulado": "EVIDENCIA_INSUFICIENTE",
+      "unmet_contracts": [
+        {
+          "contract_index": 0,
+          "nucleus_id": "CF88:ART.93:INC.II:AL.d#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "AFFECTED",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": [
+              "JUIZ"
+            ]
+          }
+        },
+        {
+          "contract_index": 1,
+          "nucleus_id": "CF88:ART.93:INC.II:AL.d#N1",
+          "reason": "Sem afirmação validada que satisfaça conjuntamente os papéis exigidos.",
+          "requires": {
+            "context_all": [
+              "CARGO_PUBLICO"
+            ],
+            "objects_all": [
+              "DEFESA"
+            ],
+            "participant_role": "ACTOR",
+            "predicates": [
+              "OBSTRUIR"
+            ],
+            "subjects_any": []
+          }
+        }
+      ],
+      "work_id": "REF-LIV-0002"
+    }
+  ],
+  "counts": {
+    "FP_ELIMINADO": 4,
+    "NEGATIVO_PRESERVADO": 3,
+    "TP_HISTORICO_PARA_READJUDICACAO": 5
+  },
+  "created_at": "2026-09-26T02:48:34.162239+00:00",
+  "fn_alterados": [],
+  "implementation_applied": false,
+  "input_simulation_hash": "56a4de7a978191162b8d0b7260ff482ac7d6f1780b9a16556d3d7598433dd6ee",
+  "known_universe": 398,
+  "limits": [
+    "Somente pares conhecidos; holdout não aberto.",
+    "Inclui competência legislativa: tema saúde não é âncora de competência.",
+    "Garantias autônomas do art. 5 não entram nesta família.",
+    "TP histórico sem âncora será PENDENTE_HUMANO no ledger; não se conserva por ser TP."
+  ],
+  "policy": "POLITICA_EDITORIAL_REFERENCIAS_V2_V1",
+  "schema": "SIMULACAO_GARANTIA_DEPENDENTE_V1",
+  "scope": [
+    {
+      "category": "REGRA_ESPECIFICA",
+      "device_id": "CF88:ART.103-B:PAR.4:INC.III",
+      "family": "GARANTIA_EM_REGIME_FUNCIONAL",
+      "reason": "Garantia inserida em regime funcional ou competência legislativa; política B/D."
+    },
+    {
+      "category": "REGRA_ESPECIFICA",
+      "device_id": "CF88:ART.247:PAR.UNICO",
+      "family": "GARANTIA_EM_REGIME_FUNCIONAL",
+      "reason": "Garantia inserida em regime funcional ou competência legislativa; política B/D."
+    },
+    {
+      "category": "REGRA_ESPECIFICA",
+      "device_id": "CF88:ART.24:INC.XII",
+      "family": "COMPETENCIA_LEGISLATIVA",
+      "reason": "Garantia inserida em regime funcional ou competência legislativa; política B/D."
+    },
+    {
+      "category": "REGRA_ESPECIFICA",
+      "device_id": "CF88:ART.41:PAR.1:INC.II",
+      "family": "GARANTIA_EM_REGIME_FUNCIONAL",
+      "reason": "Garantia inserida em regime funcional ou competência legislativa; política B/D."
+    },
+    {
+      "category": "REGRA_ESPECIFICA",
+      "device_id": "CF88:ART.41:PAR.1:INC.III",
+      "family": "GARANTIA_EM_REGIME_FUNCIONAL",
+      "reason": "Garantia inserida em regime funcional ou competência legislativa; política B/D."
+    },
+    {
+      "category": "REGRA_ESPECIFICA",
+      "device_id": "CF88:ART.93:INC.II:AL.d",
+      "family": "GARANTIA_EM_REGIME_FUNCIONAL",
+      "reason": "Garantia inserida em regime funcional ou competência legislativa; política B/D."
+    }
+  ],
+  "total": 12
+}

@@ -1,0 +1,379 @@
+{
+  "base_r1_hash": "de9b63833bacedbc2cef7f94045099e32b2b48c19d474b028d66bef4f72c22cd",
+  "changes": [
+    {
+      "added": "PRIVACIDADE",
+      "evidence_id": "REF-LIV-0001#E01",
+      "field": "claim.objects",
+      "reason": "A ficha documenta observação de Winston dentro de casa; não apenas transmissão de comunicação.",
+      "source": {
+        "consulted_at": "2026-09-24",
+        "hash": "de99219a23b5938ca17230d339bf13985a5acd0e513d90dd617a2ba90efd500f",
+        "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+        "identifier": "https://penguinrandomhousesecondaryeducation.com/book/?isbn=9780452284234",
+        "locator": "Excerpt, abertura da narrativa, parágrafo sobre recepção/transmissão da teletela",
+        "paraphrase": "A teletela recebe e transmite; capta os sons e observa Winston dentro de casa.",
+        "tier": "PRIMARIA_OFICIAL"
+      },
+      "work_id": "REF-LIV-0001"
+    },
+    {
+      "added": "AUTONOMIA_REPRODUTIVA",
+      "evidence_id": "REF-SER-0002#E01",
+      "field": "claim.objects",
+      "reason": "A ficha documenta servidão reprodutiva; dimensão factual omitida da anotação de igualdade de gênero.",
+      "source": {
+        "consulted_at": "2026-09-24",
+        "hash": "b19fc43d0e32a007f534e251b9af07afb3b607caaeea56766194c6fe495b65b2",
+        "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+        "identifier": "https://press.hulu.com/shows/the-handmaids-tale/",
+        "locator": "SERIES SYNOPSIS",
+        "paraphrase": "Mulheres férteis são submetidas à servidão reprodutiva em Gilead.",
+        "tier": "PRIMARIA_OFICIAL"
+      },
+      "work_id": "REF-SER-0002"
+    },
+    {
+      "added": "prática de discriminação na moradia",
+      "evidence_id": "EXP-LIV-008#E02",
+      "field": "evidences",
+      "reason": "A descrição editorial já atribui segregação residencial a políticas públicas; explicita-se a prática na moradia, sem equivalência entre moradia e raça.",
+      "source": {
+        "consulted_at": "2026-09-24",
+        "hash": "90223a01b505b8d9aed396129207a1108516634317a0ee9270539933a96c26a0",
+        "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+        "identifier": "https://wwnorton.co.uk/books/9781631494536-the-color-of-law",
+        "locator": "Description",
+        "paraphrase": "Rothstein analisa como políticas federais, estaduais e locais produziram segregação residencial.",
+        "tier": "PRIMARIA_OFICIAL"
+      },
+      "work_id": "EXP-LIV-008"
+    },
+    {
+      "added": "núcleo de ingresso no território",
+      "device_id": "CF88:ART.5:INC.XV",
+      "field": "nuclei",
+      "reason": "O dispositivo existia, mas tinha zero núcleos. Segmento literal da fotografia; arquitetura, ontologia e contratos já existentes não foram alterados.",
+      "source_hash": "745d367dae70c8959378f5d6e557d6fb220f3ce9a4f4e06bce4bb337bbb61a14",
+      "source_span": "podendo qualquer pessoa, nos termos da lei, nele entrar, permanecer ou dele sair com seus bens"
+    }
+  ],
+  "devices": [
+    {
+      "annotation_status": "CURADA_PARCIAL_R1B",
+      "device_id": "CF88:ART.5:INC.XV",
+      "family": "GARANTIA",
+      "hierarchical_context": [
+        {
+          "device_id": "CF88:ART.5",
+          "text": "Todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se aos brasileiros e aos estrangeiros residentes no País a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade, nos termos seguintes:"
+        }
+      ],
+      "nuclei": [
+        {
+          "contracts_by_relation": [
+            {
+              "editorial_review": false,
+              "forbidden_inferences": [
+                "identidade_de_regime",
+                "recusa_automaticamente_ilegal",
+                "controle_como_violacao",
+                "circulacao_interna_automaticamente_provada"
+              ],
+              "object_reached": "GARANTIA",
+              "relation": "ANALOGIA_CONTROLADA",
+              "requires": {
+                "context_all": [],
+                "objects_all": [
+                  "INGRESSO_TERRITORIO"
+                ],
+                "participant_role": "ACTOR",
+                "predicates": [
+                  "CONTROLAR"
+                ],
+                "subjects_any": []
+              },
+              "scope_policy": "Analogia limitada à tensão entre ingresso no território e controle de entrada. Não afirma que cada recusa seja ilegal, que a regra estrangeira reproduza a CF ou que todo o inciso seja representado."
+            }
+          ],
+          "depends_on": [],
+          "nucleus_id": "CF88:ART.5:INC.XV#N1",
+          "proposition": {
+            "condicoes": [
+              "território nacional; tempo de paz; nos termos da lei"
+            ],
+            "excecoes": [],
+            "finalidades": [],
+            "modalidade": "DIREITO",
+            "objetos": [
+              "INGRESSO_TERRITORIO"
+            ],
+            "predicado": "ASSEGURAR",
+            "sujeitos": [
+              "PESSOA"
+            ]
+          },
+          "provenance": {
+            "human_validated": false,
+            "method": "anotacao_do_segmento_literal_da_fotografia_congelada",
+            "version": "EXPANSAO_R1B"
+          },
+          "residual_text_policy": "Locomoção interna, permanência, saída e bens não são implicitamente provados pelo núcleo de ingresso.",
+          "role": "AUTONOMO",
+          "source_spans": [
+            {
+              "device_id": "CF88:ART.5:INC.XV",
+              "end": 154,
+              "start": 60,
+              "text": "podendo qualquer pessoa, nos termos da lei, nele entrar, permanecer ou dele sair com seus bens"
+            }
+          ],
+          "state": "CURADA_EXPERIMENTAL",
+          "template": "GARANTIA"
+        }
+      ],
+      "source_hash": "745d367dae70c8959378f5d6e557d6fb220f3ce9a4f4e06bce4bb337bbb61a14",
+      "source_version": "CF_SEGMENTADA_V2",
+      "text": "é livre a locomoção no território nacional em tempo de paz, podendo qualquer pessoa, nos termos da lei, nele entrar, permanecer ou dele sair com seus bens;",
+      "text_identity_status": "CONSISTENTE_NA_FOTOGRAFIA"
+    }
+  ],
+  "policy": "Completude de anotação apoiada em fontes já verificadas. Nenhuma nova pesquisa, promoção de PROPOSTA, equivalência ou alteração de contrato preexistente.",
+  "version": "EXPANSAO_R1B_DADOS_1",
+  "works": [
+    {
+      "ano": 1949,
+      "evidences": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "DISTOPIA"
+            ],
+            "effects": [],
+            "objects": [
+              "COMUNICACAO_PRIVADA",
+              "PRIVACIDADE"
+            ],
+            "participants": [
+              {
+                "concept": "ESTADO",
+                "role": "ACTOR"
+              },
+              {
+                "concept": "PESSOA",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "VIGIAR",
+            "subjects": [
+              "ESTADO",
+              "PESSOA"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-LIV-0001#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "r1b_completion": {
+              "human_validated": false,
+              "reason": "A ficha documenta observação de Winston dentro de casa; não apenas transmissão de comunicação.",
+              "source_card_reused": "de99219a23b5938ca17230d339bf13985a5acd0e513d90dd617a2ba90efd500f"
+            },
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "de99219a23b5938ca17230d339bf13985a5acd0e513d90dd617a2ba90efd500f",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://penguinrandomhousesecondaryeducation.com/book/?isbn=9780452284234",
+            "locator": "Excerpt, abertura da narrativa, parágrafo sobre recepção/transmissão da teletela",
+            "paraphrase": "A teletela recebe e transmite; capta os sons e observa Winston dentro de casa.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Não demonstra publicidade ou sigilo de atos processuais."
+          ],
+          "work_id": "REF-LIV-0001"
+        }
+      ],
+      "nome": "1984",
+      "tipo": "LIVRO",
+      "work_id": "REF-LIV-0001"
+    },
+    {
+      "ano": 2017,
+      "evidences": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "DISTOPIA",
+              "GILEAD"
+            ],
+            "effects": [],
+            "objects": [
+              "IGUALDADE_GENERO",
+              "AUTONOMIA_REPRODUTIVA"
+            ],
+            "participants": [
+              {
+                "concept": "MULHER",
+                "role": "AFFECTED"
+              }
+            ],
+            "predicate": "SUBORDINAR",
+            "subjects": [
+              "MULHER"
+            ]
+          },
+          "content_type": "EVENTO_NARRATIVO",
+          "evidence_id": "REF-SER-0002#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "r1b_completion": {
+              "human_validated": false,
+              "reason": "A ficha documenta servidão reprodutiva; dimensão factual omitida da anotação de igualdade de gênero.",
+              "source_card_reused": "b19fc43d0e32a007f534e251b9af07afb3b607caaeea56766194c6fe495b65b2"
+            },
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "b19fc43d0e32a007f534e251b9af07afb3b607caaeea56766194c6fe495b65b2",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://press.hulu.com/shows/the-handmaids-tale/",
+            "locator": "SERIES SYNOPSIS",
+            "paraphrase": "Mulheres férteis são submetidas à servidão reprodutiva em Gilead.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Alegoria da subordinação de gênero, não direito positivo brasileiro."
+          ],
+          "work_id": "REF-SER-0002"
+        }
+      ],
+      "nome": "The Handmaid's Tale",
+      "tipo": "SÉRIE",
+      "work_id": "REF-SER-0002"
+    },
+    {
+      "ano": 2017,
+      "evidences": [
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "SEGREGACAO_RESIDENCIAL"
+            ],
+            "effects": [],
+            "objects": [
+              "DISCRIMINACAO_RACIAL"
+            ],
+            "participants": [
+              {
+                "concept": "ESTADO",
+                "role": "ACTOR"
+              }
+            ],
+            "predicate": "ANALISAR",
+            "subjects": [
+              "ESTADO"
+            ]
+          },
+          "content_type": "ARGUMENTO_ACADEMICO",
+          "evidence_id": "EXP-LIV-008#E01",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "90223a01b505b8d9aed396129207a1108516634317a0ee9270539933a96c26a0",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://wwnorton.co.uk/books/9781631494536-the-color-of-law",
+            "locator": "Description",
+            "paraphrase": "Rothstein analisa como políticas federais, estaduais e locais produziram segregação residencial.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Segregação residencial não representa competência legislativa sobre educação/saúde."
+          ],
+          "work_id": "EXP-LIV-008"
+        },
+        {
+          "centrality": "CENTRAL",
+          "claim": {
+            "context": [
+              "EUA",
+              "SEGREGACAO_RESIDENCIAL"
+            ],
+            "effects": [],
+            "objects": [
+              "MORADIA"
+            ],
+            "participants": [
+              {
+                "concept": "ESTADO",
+                "role": "ACTOR"
+              }
+            ],
+            "predicate": "DISCRIMINAR",
+            "subjects": [
+              "ESTADO"
+            ]
+          },
+          "content_type": "PRATICA_INSTITUCIONAL",
+          "evidence_id": "EXP-LIV-008#E02",
+          "polarity": "AFIRMADA",
+          "provenance": {
+            "human_validated": false,
+            "method": "curadoria_documental_V2",
+            "r1b_completion": {
+              "human_validated": false,
+              "reason": "A descrição editorial já atribui segregação residencial a políticas públicas; explicita-se a prática na moradia, sem equivalência entre moradia e raça.",
+              "source_card_reused": "90223a01b505b8d9aed396129207a1108516634317a0ee9270539933a96c26a0"
+            },
+            "semantics": "Predicado/objetos são anotação editorial da paráfrase; não extração automática nem rótulo humano.",
+            "version": "PILOT-1"
+          },
+          "source": {
+            "consulted_at": "2026-09-24",
+            "hash": "90223a01b505b8d9aed396129207a1108516634317a0ee9270539933a96c26a0",
+            "hash_scope": "sha256 da ficha documental (URL + localizador + paráfrase), NÃO dos bytes da página remota",
+            "identifier": "https://wwnorton.co.uk/books/9781631494536-the-color-of-law",
+            "locator": "Description",
+            "paraphrase": "Rothstein analisa como políticas federais, estaduais e locais produziram segregação residencial.",
+            "tier": "PRIMARIA_OFICIAL"
+          },
+          "state": "VALIDADA",
+          "transposition_limits": [
+            "Não afirma equivalência institucional com a Constituição brasileira.",
+            "Segregação residencial não representa competência legislativa sobre educação/saúde.",
+            "Prática histórica descrita na fonte bibliográfica; não representa administração pública brasileira nem competência legislativa."
+          ],
+          "work_id": "EXP-LIV-008"
+        }
+      ],
+      "nome": "A Cor da Lei",
+      "tipo": "LIVRO",
+      "work_id": "EXP-LIV-008"
+    }
+  ]
+}

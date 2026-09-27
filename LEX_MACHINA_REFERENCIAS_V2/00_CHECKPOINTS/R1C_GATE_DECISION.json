@@ -1,0 +1,93 @@
+{
+  "status": "R1C_REGRESSION_COMPLETE_GATE_FAILED",
+  "decision": "AINDA_PRECISA_CURADORIA",
+  "passed": false,
+  "phase_9_authorized": false,
+  "reason": "Ganho de 12 TP sem FP novo é promissor, mas quatro pares seguem com representação não coberta e quatro sem a fonte específica localizada; além dos 12 contratos originais, a análise pós-validação identifica outras 14 questões contratuais. O bloqueio não se reduz aos 12 e não exige eliminar os 59 FN sem prova nas fontes auditadas.",
+  "metrics": {
+    "TP": 67,
+    "FP": 4,
+    "TN": 230,
+    "FN": 93,
+    "recent25": 17,
+    "recent35_fp": 0,
+    "recent20_correct": 20,
+    "mechanisms15": 12,
+    "negatives10": 10
+  },
+  "fn_causes": {
+    "AUSENCIA_REAL_DE_EVIDENCIA": 59,
+    "CANDIDATO_NAO_RECUPERADO": 0,
+    "CONTRATO_REQUER_ADJUDICACAO": 26,
+    "FONTE_INSUFICIENTE": 4,
+    "FONTE_JURIDICA_EM_REVISAO": 0,
+    "OUTRO": 0,
+    "REPRESENTACAO_AINDA_INCOMPLETA": 4
+  },
+  "curation_blocking_cases": [
+    {
+      "device_id": "CF88:ART.170",
+      "work_id": "EXP-DOC-003",
+      "obra": "Desigualdade para Todos",
+      "cause": "REPRESENTACAO_AINDA_INCOMPLETA",
+      "reason": "A anotação literal explicita o objeto amplo, mas os núcleos/rotas existentes não o cobrem. Completar uma rota de admissão requer autorização além da curadoria factual congelada."
+    },
+    {
+      "device_id": "CF88:ART.3:INC.IV",
+      "work_id": "REF-LIV-0006",
+      "obra": "A Revolução dos Bichos",
+      "cause": "REPRESENTACAO_AINDA_INCOMPLETA",
+      "reason": "A anotação literal explicita o objeto amplo, mas os núcleos/rotas existentes não o cobrem. Completar uma rota de admissão requer autorização além da curadoria factual congelada."
+    },
+    {
+      "device_id": "CF88:ART.5",
+      "work_id": "REF-FIL-0004",
+      "obra": "Filadélfia",
+      "cause": "REPRESENTACAO_AINDA_INCOMPLETA",
+      "reason": "A anotação literal explicita o objeto amplo, mas os núcleos/rotas existentes não o cobrem. Completar uma rota de admissão requer autorização além da curadoria factual congelada."
+    },
+    {
+      "device_id": "CF88:ART.5",
+      "work_id": "REF-LIV-0006",
+      "obra": "A Revolução dos Bichos",
+      "cause": "REPRESENTACAO_AINDA_INCOMPLETA",
+      "reason": "A anotação literal explicita o objeto amplo, mas os núcleos/rotas existentes não o cobrem. Completar uma rota de admissão requer autorização além da curadoria factual congelada."
+    },
+    {
+      "device_id": "CF88:ART.5:INC.IV",
+      "work_id": "REF-FIL-0002",
+      "obra": "V de Vingança",
+      "cause": "FONTE_INSUFICIENTE",
+      "reason": "A pesquisa oficial não localizou evento concreto de repressão; proposta não validada."
+    },
+    {
+      "device_id": "CF88:ART.5:INC.IX",
+      "work_id": "REF-FIL-0002",
+      "obra": "V de Vingança",
+      "cause": "FONTE_INSUFICIENTE",
+      "reason": "A pesquisa oficial não localizou evento concreto de repressão; proposta não validada."
+    },
+    {
+      "device_id": "CF88:ART.5:INC.LXXIX",
+      "work_id": "REF-LIV-0001",
+      "obra": "1984",
+      "cause": "FONTE_INSUFICIENTE",
+      "reason": "Guia consultado confirma censura e captura, mas não localiza a afirmação específica de exploração de dado pessoal. Não equiparar vigilância/interrogatório ao predicado EXPLORAR."
+    },
+    {
+      "device_id": "CF88:ART.5:INC.VI",
+      "work_id": "REF-SER-0002",
+      "obra": "The Handmaid's Tale",
+      "cause": "FONTE_INSUFICIENTE",
+      "reason": "Recap identifica sacerdote executado, sem estabelecer por que foi executado; não basta para provar impedimento de culto ou coação de crença. Fonte Hulu existente não supre."
+    }
+  ],
+  "contracts_requiring_adjudication": 26,
+  "original_contracts_dossier": 12,
+  "new_contractual_findings_in_residual_audit": 14,
+  "require_all_historical_positives": false,
+  "new_admissibility_gate_or_threshold": false,
+  "next_step": "Adjudicação humana dos 12 contratos documentados e dos 4 FP, com triagem dos 14 achados contratuais adicionais; decidir em nova autorização o destino dos 4 casos de representação e 4 de fonte. Manter R1C congelada; não repetir regressão nem executar globalmente nesta missão.",
+  "full_execution": false,
+  "research_closed": true
+}

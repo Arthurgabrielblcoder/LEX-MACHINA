@@ -1,0 +1,365 @@
+{
+  "version": "EXPANSAO_R1C_EVIDENCIAS_1",
+  "updates": [
+    {
+      "work_id": "EXP-SER-007",
+      "evidence_id": "EXP-SER-007#E01",
+      "state": "VALIDADA",
+      "source_id": "S_R1C_PACHINKO",
+      "reason": "Confirmação da família da série; conservar sujeito gramatical SOFRER e papel afetado, sem atribuir discriminação no trabalho.",
+      "claim_patch": {
+        "participants": [
+          {
+            "concept": "FAMILIA_COREANA",
+            "role": "AFFECTED"
+          }
+        ]
+      }
+    },
+    {
+      "work_id": "REF-DOC-0003",
+      "evidence_id": "REF-DOC-0003#E01",
+      "state": "VALIDADA",
+      "source_id": "S_R1C_DEMOCRACIA",
+      "reason": "Impeachment explicitamente identificado em fonte institucional, não inferido da ascensão/queda.",
+      "claim_patch": null
+    },
+    {
+      "work_id": "REF-SER-0003",
+      "evidence_id": "REF-SER-0003#E01",
+      "state": "VALIDADA",
+      "source_id": "S_R1C_CHERNOBYL_OCULTACAO",
+      "reason": "Encobrimento e obstáculos governamentais confirmados nas sinopses oficiais.",
+      "claim_patch": null
+    },
+    {
+      "work_id": "REF-FIL-0008",
+      "evidence_id": "REF-FIL-0008#E01",
+      "state": "VALIDADA",
+      "source_id": "S_R1C_HOTEL",
+      "reason": "Abrigo protetivo do gerente confirmado; não acrescenta racismo como predicado do gerente.",
+      "claim_patch": null
+    },
+    {
+      "work_id": "REF-JOG-0002",
+      "evidence_id": "REF-JOG-0002#E01",
+      "state": "VALIDADA",
+      "source_id": "S_R1C_TWOM",
+      "reason": "Busca civil por comida/remédios confirmada, sem transformar escassez em negativa ativa.",
+      "claim_patch": null
+    },
+    {
+      "work_id": "EXP-SER-005",
+      "evidence_id": "EXP-SER-005#E01",
+      "state": "VALIDADA",
+      "source_id": "S_R1C_3PORCENTO",
+      "reason": "Correção de papéis: jovens são selecionados, não gestores do Processo; ator institucional literal não recebe ID inventado.",
+      "claim_patch": {
+        "subjects": [],
+        "participants": [
+          {
+            "concept": "JOVEM",
+            "role": "AFFECTED"
+          }
+        ]
+      }
+    },
+    {
+      "work_id": "EXP-JOG-003",
+      "evidence_id": "EXP-JOG-003#E01",
+      "state": "INSUFICIENTE",
+      "source_id": "S_R1C_FROST_LIMITE",
+      "reason": "Ficha retida confirma gestão, não os argumentos necessários ao vínculo laboral; investigação externa encerrada pela triagem.",
+      "claim_patch": null
+    },
+    {
+      "work_id": "REF-FIL-0002",
+      "evidence_id": "REF-FIL-0002#E01",
+      "state": "INSUFICIENTE",
+      "source_id": "S_R1C_V_LIMITE",
+      "reason": "Fontes oficiais consultadas não localizam ato concreto de repressão política; não usar resumo de enciclopédia como promoção.",
+      "claim_patch": null
+    },
+    {
+      "work_id": "REF-LIV-0007",
+      "evidence_id": "REF-LIV-0007#E01",
+      "state": "INSUFICIENTE",
+      "source_id": null,
+      "reason": "Confinamento e violência são documentados, mas a proposta específica DESPROTEGER SAUDE atribuída ao Estado não foi integralmente comprovada; nova afirmação alimentar independente é registrada.",
+      "claim_patch": null
+    }
+  ],
+  "new_evidences": [
+    {
+      "work_id": "REF-SER-0003",
+      "evidence_id": "REF-SER-0003#R1C01",
+      "source_id": "S_R1C_CHERNOBYL_AMBIENTE",
+      "claim": {
+        "predicate": "DEGRADAR",
+        "subjects": [],
+        "objects": [
+          "AMBIENTE_EQUILIBRADO"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "POPULACAO",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "Evento de explosão e dispersão radioativa. A usina é origem literal; sem conceito equivalente na ontologia, não se inventa sujeito tipado nem intenção do Estado."
+    },
+    {
+      "work_id": "REF-LIV-0007",
+      "evidence_id": "REF-LIV-0007#R1C01",
+      "source_id": "S_R1C_CEGUEIRA_ALIMENTO",
+      "claim": {
+        "predicate": "NEGAR_ACESSO",
+        "subjects": [
+          "PESSOA"
+        ],
+        "objects": [
+          "ALIMENTACAO"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "PESSOA",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "PESSOA",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "PESSOA ACTOR = internos que controlam comida; PESSOA AFFECTED = demais internos. Não atribuir a conduta alimentar ao Estado."
+    },
+    {
+      "work_id": "REF-LIV-0001",
+      "evidence_id": "REF-LIV-0001#R1C01",
+      "source_id": "S_R1C_1984_REPRESSAO",
+      "claim": {
+        "predicate": "REPRIMIR",
+        "subjects": [
+          "ESTADO"
+        ],
+        "objects": [
+          "DISSENSO_POLITICO"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "ESTADO",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "PESSOA",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "Tipagem factual da paráfrase; não pressupõe admissão constitucional."
+    },
+    {
+      "work_id": "REF-FIL-0006",
+      "evidence_id": "REF-FIL-0006#R1C01",
+      "source_id": "S_R1C_POST_CENSURA",
+      "claim": {
+        "predicate": "REPRIMIR",
+        "subjects": [
+          "ESTADO"
+        ],
+        "objects": [
+          "DISSENSO_POLITICO"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "ESTADO",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "PESSOA",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "Tentativa governamental de restringir expressão crítica documentada no release; não exige inferir sucesso da censura."
+    },
+    {
+      "work_id": "REF-SER-0001",
+      "evidence_id": "REF-SER-0001#R1C01",
+      "source_id": "S_R1C_OLHOS_CONDENACAO",
+      "claim": {
+        "predicate": "CONDENAR_INJUSTAMENTE",
+        "subjects": [
+          "PODER_JUDICIARIO"
+        ],
+        "objects": [
+          "PRESUNCAO_INOCENCIA"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "PODER_JUDICIARIO",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "ACUSADO",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "A condenação por crime não cometido é o fato; PRESUNCAO_INOCENCIA é a dimensão pedagógica já prevista na ontologia/contrato, não citação constitucional na série."
+    },
+    {
+      "work_id": "REF-LIV-0003",
+      "evidence_id": "REF-LIV-0003#R1C01",
+      "source_id": "S_R1C_MOCKINGBIRD",
+      "claim": {
+        "predicate": "CONDENAR_INJUSTAMENTE",
+        "subjects": [
+          "PODER_JUDICIARIO"
+        ],
+        "objects": [
+          "PRESUNCAO_INOCENCIA"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "PODER_JUDICIARIO",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "ACUSADO",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "Veredito injusto no romance, complementando a falsa acusação da fonte anterior; não se altera a rota pedagógica existente."
+    },
+    {
+      "work_id": "REF-SER-0001",
+      "evidence_id": "REF-SER-0001#R1C02",
+      "source_id": "S_R1C_OLHOS_PRISAO",
+      "claim": {
+        "predicate": "VIOLAR",
+        "subjects": [
+          "PESSOA",
+          "AGENTE_PUBLICO"
+        ],
+        "objects": [
+          "INTEGRIDADE_PRESO"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "PESSOA",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "AGENTE_PUBLICO",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "PRESO",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "Korey já preso; violência de guardas e outros presos. Não transportar ao sujeito juiz ou a todas as prisões."
+    },
+    {
+      "work_id": "REF-DOC-0002",
+      "evidence_id": "REF-DOC-0002#R1C01",
+      "source_id": "S_R1C_13TH_PRISAO",
+      "claim": {
+        "predicate": "VIOLAR",
+        "subjects": [],
+        "objects": [
+          "INTEGRIDADE_PRESO"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "PRESO",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "ARGUMENTO_DOCUMENTAL",
+      "annotation_note": "Testemunho de condições prisionais brutais; fonte não individualiza agressor, portanto sem sujeito tipado inventado."
+    },
+    {
+      "work_id": "REF-FIL-0003",
+      "evidence_id": "REF-FIL-0003#R1C01",
+      "source_id": "S_R1C_VIDA_DADOS",
+      "claim": {
+        "predicate": "EXPLORAR",
+        "subjects": [
+          "AGENTE_PUBLICO"
+        ],
+        "objects": [
+          "DADOS_PESSOAIS"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "AGENTE_PUBLICO",
+            "role": "ACTOR"
+          },
+          {
+            "concept": "PESSOA",
+            "role": "AFFECTED"
+          }
+        ]
+      },
+      "content_type": "EVENTO_NARRATIVO",
+      "annotation_note": "Informação sobre dependência química utilizada coercitivamente; não simples observação ou arquivo."
+    },
+    {
+      "work_id": "EXP-LIV-004",
+      "evidence_id": "EXP-LIV-004#R1C01",
+      "source_id": "S_R1C_CIDADANIA_EDUCACAO",
+      "claim": {
+        "predicate": "HISTORIAR",
+        "subjects": [
+          "PESSOA"
+        ],
+        "objects": [
+          "EDUCACAO",
+          "CIDADANIA"
+        ],
+        "context": [],
+        "effects": [],
+        "participants": [
+          {
+            "concept": "PESSOA",
+            "role": "ACTOR"
+          }
+        ]
+      },
+      "content_type": "ARGUMENTO_ACADEMICO",
+      "annotation_note": "Autor analisa historicamente a educação popular. Não anotado como EDUCAR, que imputaria prática não documentada."
+    }
+  ],
+  "policy": "Plano factual final anterior à prova/regressão. Nenhum campo de rótulo, par, dispositivo-alvo ou resultado esperado. Fontes completas em FONTES_DOCUMENTAIS_R1C.json."
+}

@@ -1,0 +1,1303 @@
+RETOME O PROJETO:
+
+C:\GitHub\LEX-MACHINA\LEX_MACHINA_REFERENCIAS_V2
+
+CONTEXTO ATUAL:
+
+- Engine constitucional V2 R1D1 congelada.
+- RC1 preservado.
+- RC2 humanamente revisado e congelado em:
+
+08_RELEASE_CANDIDATE/CF_REFERENCIAS_V2_RC2_HUMAN_REVIEWED/
+
+- RC2:
+  - 101 vínculos únicos aprovados;
+  - 105 rotas de prova;
+  - 43 dispositivos cobertos;
+  - 35 obras utilizadas;
+  - Engine NÃO deve ser alterada.
+- Catálogo cultural atual possui 69 obras.
+- Objetivo desta missão:
+  EXPANDIR O CATÁLOGO CULTURAL BRUTO COM ATÉ 200 NOVAS OBRAS CANDIDATAS.
+
+NÃO executar a Engine.
+
+NÃO gerar novos vínculos Constituição↔obra.
+
+NÃO mexer em firmware.
+
+NÃO gerar IDX.
+
+NÃO escrever no cartão SD.
+
+NÃO abrir holdout.
+
+NÃO alterar RC1 ou RC2.
+
+==================================================
+OBJETIVO
+==================================================
+
+Receber as 200 candidatas listadas ao final deste prompt e realizar:
+
+1. normalização de identidade;
+2. comparação com as 69 obras atuais;
+3. detecção de duplicatas;
+4. pesquisa documental;
+5. triagem editorial;
+6. construção de dossiês factuais preliminares;
+7. classificação das obras aptas para futura ingestão pela Engine R1D1.
+
+A meta NÃO é obrigatoriamente aprovar 200.
+
+Esperamos que parte seja:
+
+- duplicata;
+- redundante;
+- pouco documentável;
+- juridicamente fraca;
+- excessivamente especulativa;
+- sem fonte confiável suficiente.
+
+A meta estratégica é terminar, após todas as etapas futuras, com aproximadamente 200 obras úteis no catálogo total.
+
+Temos atualmente 69.
+
+Estamos deliberadamente testando 200 novas candidatas para chegar a um universo bruto de até 269.
+
+==================================================
+REGRA FUNDAMENTAL
+==================================================
+
+NÃO procure dispositivos constitucionais para justificar uma obra.
+
+Primeiro documente a obra.
+
+A evidência deve existir independentemente do dispositivo.
+
+Todos os novos evidence cards devem carregar:
+
+"not_targeted_to_device": true
+
+A curadoria deve registrar FATOS, MECÂNICAS, EVENTOS, ARGUMENTOS DOCUMENTAIS ou TEMAS EXPLICITAMENTE SUSTENTADOS POR FONTE.
+
+Não transformar:
+
+“esta obra poderia falar de X”
+
+em:
+
+“esta obra prova X”.
+
+==================================================
+PASTA NOVA
+==================================================
+
+Criar:
+
+09_CATALOGO_EXPANSAO_200/
+
+Estrutura sugerida:
+
+09_CATALOGO_EXPANSAO_200/
+  00_ENTRADA/
+  01_IDENTIDADE/
+  02_TRIAGEM/
+  03_FONTES/
+  04_DOSSIERS/
+  05_REJEITADAS/
+  06_RELATORIOS/
+  07_CATALOGO_CANDIDATO/
+  08_MANIFEST/
+
+Não alterar pastas congeladas anteriores.
+
+==================================================
+PROCESSAMENTO EM LOTES
+==================================================
+
+Processar as 200 obras em lotes internos de 25.
+
+NÃO pedir confirmação entre lotes.
+
+Ao concluir cada lote:
+
+- salvar resultado;
+- salvar fontes;
+- salvar dossiês;
+- atualizar checkpoint;
+- continuar para o próximo lote.
+
+Criar:
+
+06_RELATORIOS/CHECKPOINT_LOTES.json
+
+com:
+
+- lote;
+- intervalo;
+- processadas;
+- aptas;
+- ressalva;
+- rejeitadas;
+- fontes_em_revisao;
+- timestamp;
+- hashes dos arquivos produzidos.
+
+Objetivo:
+
+evitar perda de todo o trabalho se uma execução for interrompida.
+
+==================================================
+FASE 1 — NORMALIZAÇÃO DE IDENTIDADE
+==================================================
+
+Para cada candidata:
+
+registrar:
+
+candidate_id;
+titulo_informado;
+titulo_canonico;
+titulo_original;
+titulo_ptbr, se existir;
+tipo;
+ano;
+pais_origem;
+criador_principal;
+publisher_distribuidor_editora;
+franquia, se aplicável.
+
+Comparar com TODAS as 69 obras já existentes.
+
+Comparar por:
+
+- título canônico;
+- título original;
+- título em português;
+- aliases;
+- remake;
+- edição;
+- adaptação;
+- subtítulo;
+- franquia.
+
+Não considerar automaticamente obras da mesma franquia como duplicadas.
+
+Exemplo:
+
+Deus Ex: Human Revolution
+e
+Deus Ex: Mankind Divided
+
+são obras distintas.
+
+Mas edição GOTY / remaster / tradução do mesmo produto não deve gerar nova obra.
+
+Se já existir nas 69:
+
+status:
+
+REJEITADA_DUPLICATA_EXISTENTE
+
+Não gerar novo dossiê.
+
+==================================================
+FASE 2 — FONTES
+==================================================
+
+Pesquisar fontes para cada obra.
+
+Prioridade:
+
+TIER A — PRIMÁRIA OFICIAL
+
+- site oficial;
+- estúdio;
+- produtora;
+- publisher;
+- desenvolvedora;
+- editora;
+- autor;
+- press kit oficial;
+- manual oficial;
+- roteiro oficial publicado;
+- página institucional oficial;
+- material de produção;
+- documentação do próprio produto.
+
+TIER B — INSTITUCIONAL / ACADÊMICA
+
+- universidade;
+- biblioteca;
+- museu;
+- arquivo;
+- periódico acadêmico;
+- instituição pública;
+- organização internacional;
+- instituto de pesquisa.
+
+TIER C — SECUNDÁRIA REPUTÁVEL
+
+- veículo jornalístico consolidado;
+- crítica especializada;
+- entrevista confiável;
+- resenha acadêmica;
+- publicação profissional.
+
+NÃO usar como prova principal:
+
+- Wikipédia;
+- fandom;
+- wiki de jogo;
+- Reddit;
+- fóruns;
+- blog pessoal;
+- resumo gerado por IA;
+- página SEO;
+- listas “top 10”.
+
+Essas fontes podem, no máximo, ajudar a localizar a fonte real.
+
+==================================================
+REGRA ESPECIAL PARA JOGOS
+==================================================
+
+Jogos são prioridade desta expansão.
+
+O catálogo atual possui poucos jogos em comparação com as demais mídias.
+
+NÃO aplicar a jogos um padrão documental impossível.
+
+São evidências legítimas:
+
+1. descrição oficial da narrativa;
+2. manual oficial;
+3. site da desenvolvedora;
+4. press kit;
+5. documentação oficial de mecânicas;
+6. páginas oficiais do publisher;
+7. material institucional da plataforma quando reproduzir descrição oficial;
+8. artigo acadêmico sobre o jogo;
+9. entrevista do criador;
+10. mecânica objetiva documentada.
+
+Separar claramente:
+
+NARRATIVA
+
+de
+
+MECÂNICA.
+
+Exemplo:
+
+se o jogador:
+
+- controla fronteira;
+- verifica documentos;
+- aplica regras migratórias;
+- decide admissibilidade;
+
+isso pode ser um fato mecânico documentado.
+
+Não é necessário existir uma cena cinematográfica.
+
+Registrar:
+
+content_type:
+
+MECANICA_INTERATIVA
+
+quando apropriado.
+
+Outros tipos possíveis:
+
+EVENTO_NARRATIVO
+PRATICA_INSTITUCIONAL
+ARGUMENTO_DOCUMENTAL
+ARGUMENTO_ACADEMICO
+EVENTO_HISTORICO
+EVENTO_AUTOBIOGRAFICO
+REGRA_DIEGETICA
+
+==================================================
+FASE 3 — EVIDENCE CARDS
+==================================================
+
+Cada obra aprovada deve possuir no mínimo:
+
+1 evidence card CENTRAL válido.
+
+Idealmente:
+
+2 a 5 evidence cards.
+
+Não inflar artificialmente.
+
+Cada evidence card deverá conter:
+
+evidence_id;
+work_id;
+centrality;
+content_type;
+claim;
+source;
+state;
+provenance;
+transposition_limits.
+
+Estrutura de claim compatível com V2:
+
+predicate;
+objects;
+participants;
+subjects;
+context;
+effects.
+
+Não criar conceito novo na ontologia silenciosamente.
+
+Quando não houver conceito adequado:
+
+usar descrição factual controlada e registrar:
+
+ONTOLOGY_GAP
+
+em campo separado.
+
+Não alterar a ontologia nesta missão.
+
+==================================================
+CENTRALIDADE
+==================================================
+
+CENTRAL:
+
+elemento central da obra.
+
+FORTE:
+
+relevante e recorrente.
+
+PONTUAL:
+
+evento real/documentado, mas limitado.
+
+Não transformar elemento pontual em tema principal.
+
+==================================================
+FASE 4 — TRIAGEM EDITORIAL
+==================================================
+
+Classificar cada candidata em exatamente um destes estados:
+
+APTA
+
+APTA_COM_RESSALVA
+
+FONTE_EM_REVISAO
+
+REJEITADA_DUPLICATA_EXISTENTE
+
+REJEITADA_REDUNDANCIA_EXTREMA
+
+REJEITADA_EVIDENCIA_FRACA
+
+REJEITADA_FONTE_INSUFICIENTE
+
+REJEITADA_INCOMPATIBILIDADE
+
+Não usar apenas “aprovar/rejeitar”.
+
+==================================================
+CRITÉRIO — APTA
+==================================================
+
+APTA quando:
+
+- identidade confirmada;
+- fonte confiável;
+- pelo menos uma evidência central ou forte;
+- fato suficientemente delimitado;
+- utilidade jurídica potencial sem depender de interpretação forçada;
+- limites de transposição identificáveis.
+
+==================================================
+APTA COM RESSALVA
+==================================================
+
+Usar quando:
+
+- obra é relevante;
+- evidência é real;
+- mas há risco forte de transposição.
+
+Exemplos:
+
+- distopia;
+- fantasia;
+- instituição estrangeira;
+- ficção histórica;
+- sátira;
+- sistema jurídico incompatível;
+- realidade política sensível;
+- dramatização baseada em fatos.
+
+Registrar a ressalva explicitamente.
+
+==================================================
+REDUNDÂNCIA
+==================================================
+
+Não rejeitar apenas porque duas obras tratam do mesmo tema.
+
+Uma nova obra pode ser útil se acrescentar:
+
+- outra mídia;
+- outro país;
+- outra época;
+- outro sujeito;
+- outra prática institucional;
+- outro tipo de evidência;
+- maior força pedagógica;
+- dimensão jurídica distinta.
+
+REJEITADA_REDUNDANCIA_EXTREMA somente quando:
+
+a nova obra praticamente não acrescenta evidência, perspectiva ou utilidade frente ao catálogo já existente.
+
+==================================================
+NÃO PRODUZIR VÍNCULOS JURÍDICOS
+==================================================
+
+Nesta etapa NÃO gerar:
+
+CF88:ART...
+CC:ART...
+CPC...
+CP...
+etc.
+
+É permitido registrar somente:
+
+AREAS_POTENCIAIS
+
+e
+
+OBJETOS_JURIDICOS_POTENCIAIS
+
+em nível amplo.
+
+Exemplos:
+
+- liberdade de expressão;
+- processo penal;
+- trabalho;
+- moradia;
+- meio ambiente;
+- família;
+- proteção de dados;
+- administração pública;
+- propriedade;
+- consumo;
+- relações internacionais.
+
+Isso é metadata editorial.
+
+NÃO é vínculo dispositivo↔obra.
+
+==================================================
+COBERTURA ESTRATÉGICA
+==================================================
+
+Favorecer diversidade jurídica.
+
+Não deixar o catálogo concentrar excessivamente em:
+
+racismo;
+prisão;
+liberdade de expressão;
+autoritarismo.
+
+Buscar também evidências relacionadas a:
+
+DIREITO CIVIL
+- propriedade;
+- posse;
+- contratos;
+- família;
+- sucessões;
+- responsabilidade civil;
+- personalidade;
+- obrigações.
+
+PROCESSO
+- prova;
+- contraditório;
+- defesa;
+- jurisdição;
+- investigação;
+- execução;
+- imparcialidade.
+
+PENAL
+- tipicidade;
+- culpabilidade;
+- pena;
+- sistema prisional;
+- investigação;
+- erro judiciário.
+
+ADMINISTRATIVO
+- administração;
+- corrupção;
+- polícia;
+- poder público;
+- serviço público;
+- licitação;
+- políticas públicas.
+
+TRABALHO
+- emprego;
+- exploração;
+- greve;
+- sindicatos;
+- ambiente laboral;
+- discriminação.
+
+TRIBUTÁRIO / ECONÔMICO
+- tributação;
+- desigualdade;
+- mercado;
+- sistema financeiro;
+- orçamento;
+- regulação.
+
+AMBIENTAL
+- poluição;
+- recursos;
+- povos tradicionais;
+- território;
+- responsabilidade ambiental.
+
+DIGITAL
+- IA;
+- algoritmos;
+- privacidade;
+- dados;
+- vigilância;
+- plataformas.
+
+INTERNACIONAL
+- guerra;
+- refugiados;
+- diplomacia;
+- genocídio;
+- ocupação;
+- direitos humanos.
+
+POLÍTICO / CONSTITUCIONAL
+- eleições;
+- separação de Poderes;
+- imprensa;
+- democracia;
+- federação;
+- autoritarismo;
+- participação.
+
+==================================================
+DIVERSIDADE DE MÍDIA DESTA EXPANSÃO
+==================================================
+
+Candidatas fornecidas:
+
+50 JOGOS
+40 FILMES
+35 SÉRIES
+35 DOCUMENTÁRIOS
+40 LIVROS
+
+Total:
+
+200.
+
+Não alterar artificialmente o tipo apenas para bater meta.
+
+==================================================
+LISTA — JOGOS
+==================================================
+
+1. Disco Elysium
+2. Phoenix Wright: Ace Attorney Trilogy
+3. The Great Ace Attorney Chronicles
+4. Ace Attorney Investigations Collection
+5. L.A. Noire
+6. Detroit: Become Human
+7. Deus Ex: Human Revolution
+8. Deus Ex: Mankind Divided
+9. Cyberpunk 2077
+10. Red Dead Redemption 2
+11. Mafia: Definitive Edition
+12. Mafia III
+13. Spec Ops: The Line
+14. Metal Gear Solid 2: Sons of Liberty
+15. Metal Gear Solid V: The Phantom Pain
+16. Beholder
+17. Beholder 2
+18. Orwell: Keeping an Eye On You
+19. Orwell: Ignorance is Strength
+20. Not For Broadcast
+21. The Republia Times
+22. We. The Revolution
+23. The Life and Suffering of Sir Brante
+24. Yes, Your Grace
+25. Crusader Kings III
+26. Victoria 3
+27. Europa Universalis IV
+28. Hearts of Iron IV
+29. Sid Meier's Civilization VII
+30. The Political Process
+31. Lawgivers II
+32. Not Tonight
+33. Not Tonight 2
+34. Headliner: NoviNews
+35. Do Not Feed the Monkeys
+36. Telling Lies
+37. Her Story
+38. Return of the Obra Dinn
+39. The Case of the Golden Idol
+40. Pentiment
+41. Kingdom Come: Deliverance II
+42. Frostpunk 2
+43. Tyranny
+44. This Is the Police
+45. Legal Dungeon
+46. Contraband Police
+47. Mind Scanners
+48. The Red Strings Club
+49. The Occupation
+50. 1979 Revolution: Black Friday
+
+==================================================
+LISTA — FILMES
+==================================================
+
+51. Erin Brockovich
+52. The Insider
+53. Spotlight
+54. All the President's Men
+55. A Few Good Men
+56. Just Mercy
+57. The Trial of the Chicago 7
+58. Judas and the Black Messiah
+59. The Mauritanian
+60. Official Secrets
+61. Snowden
+62. The Report
+63. Michael Clayton
+64. The Constant Gardener
+65. Syriana
+66. Blood Diamond
+67. Lincoln
+68. Milk
+69. On the Basis of Sex
+70. Loving
+71. Marshall
+72. Amistad
+73. The People vs. Larry Flynt
+74. Anatomy of a Fall
+75. Saint Omer
+76. Richard Jewell
+77. The Whistleblower
+78. The Zone of Interest
+79. Green Border
+80. Ainda Estou Aqui
+81. Medida Provisória
+82. 7 Prisioneiros
+83. Pureza
+84. Carandiru
+85. Pixote
+86. Que Horas Ela Volta?
+87. O Som ao Redor
+88. Tropa de Elite
+89. Tropa de Elite 2: O Inimigo Agora É Outro
+90. Batismo de Sangue
+
+==================================================
+LISTA — SÉRIES
+==================================================
+
+91. Better Call Saul
+92. The Wire
+93. The Good Wife
+94. The Good Fight
+95. For Life
+96. Unbelievable
+97. Maid
+98. Dopesick
+99. The Night Of
+100. Your Honor
+101. The People v. O.J. Simpson: American Crime Story
+102. American Crime
+103. Unorthodox
+104. The Looming Tower
+105. The Newsroom
+106. Succession
+107. House of Cards
+108. Madam Secretary
+109. Designated Survivor
+110. The Diplomat
+111. We Own This City
+112. The Plot Against America
+113. Black Mirror
+114. Severance
+115. The Capture
+116. Mr. Robot
+117. The Dropout
+118. Adolescence
+119. Juvenile Justice
+120. Justiça
+121. Sob Pressão
+122. Irmandade
+123. Bom Dia, Verônica
+124. Segunda Chamada
+125. Carcereiros
+
+==================================================
+LISTA — DOCUMENTÁRIOS
+==================================================
+
+126. Citizenfour
+127. Collective
+128. Crip Camp
+129. I Am Not Your Negro
+130. The Square
+131. Winter on Fire: Ukraine's Fight for Freedom
+132. Navalny
+133. The Dissident
+134. The Social Dilemma
+135. Enron: The Smartest Guys in the Room
+136. Inside Job
+137. The Panama Papers
+138. Dirty Money
+139. The Cove
+140. Coded Bias
+141. The Cleaners
+142. Terms and Conditions May Apply
+143. Food, Inc.
+144. American Factory
+145. Time
+146. 5 Broken Cameras
+147. For Sama
+148. Flee
+149. Bad Press
+150. Seven Winters in Tehran
+151. Ratified
+152. Land of My Dreams
+153. We Are Guardians
+154. Black Box Diaries
+155. Ônibus 174
+156. Notícias de uma Guerra Particular
+157. Juízo
+158. A Lei da Água — Novo Código Florestal
+159. Espero Tua (Re)Volta
+160. Cidadão Boilesen
+
+==================================================
+LISTA — LIVROS
+==================================================
+
+161. The Rule of Law — Tom Bingham
+162. On Liberty — John Stuart Mill
+163. The Spirit of the Laws — Montesquieu
+164. Democracy in America — Alexis de Tocqueville
+165. The Origins of Totalitarianism — Hannah Arendt
+166. How Democracies Die — Steven Levitsky e Daniel Ziblatt
+167. Why Nations Fail — Daron Acemoglu e James Robinson
+168. The Narrow Corridor — Daron Acemoglu e James Robinson
+169. Seeing Like a State — James C. Scott
+170. The Fifth Risk — Michael Lewis
+171. The New Jim Crow — Michelle Alexander
+172. Evicted — Matthew Desmond
+173. Poverty, by America — Matthew Desmond
+174. The Warmth of Other Suns — Isabel Wilkerson
+175. Caste — Isabel Wilkerson
+176. The Sum of Us — Heather McGhee
+177. Weapons of Math Destruction — Cathy O'Neil
+178. Algorithms of Oppression — Safiya Umoja Noble
+179. The Age of Surveillance Capitalism — Shoshana Zuboff
+180. Permanent Record — Edward Snowden
+181. Bad Blood — John Carreyrou
+182. Empire of Pain — Patrick Radden Keefe
+183. The Immortal Life of Henrietta Lacks — Rebecca Skloot
+184. No Logo — Naomi Klein
+185. The Shock Doctrine — Naomi Klein
+186. Silent Spring — Rachel Carson
+187. Merchants of Doubt — Naomi Oreskes e Erik M. Conway
+188. The Jungle — Upton Sinclair
+189. Germinal — Émile Zola
+190. Les Misérables — Victor Hugo
+191. Native Son — Richard Wright
+192. Memórias do Cárcere — Graciliano Ramos
+193. Holocausto Brasileiro — Daniela Arbex
+194. Estação Carandiru — Drauzio Varella
+195. Rota 66 — Caco Barcellos
+196. Racismo Estrutural — Silvio Almeida
+197. Mulheres, Raça e Classe — Angela Davis
+198. Ideias para Adiar o Fim do Mundo — Ailton Krenak
+199. A Queda do Céu — Davi Kopenawa e Bruce Albert
+200. Vidas Secas — Graciliano Ramos
+
+==================================================
+VERIFICAÇÃO DE TÍTULOS
+==================================================
+
+A lista acima é uma lista CANDIDATA.
+
+Não confiar cegamente em:
+
+- ano;
+- grafia;
+- subtítulo;
+- tradução;
+- país;
+- formato;
+- autoria.
+
+Verificar documentalmente.
+
+Se houver erro factual na entrada:
+
+corrigir no catálogo de candidatos
+
+e registrar a correção em:
+
+06_RELATORIOS/CORRECOES_ENTRADA.json
+
+Não interpretar uma correção factual como autorização para substituir a obra.
+
+==================================================
+DOSSIÊ INDIVIDUAL
+==================================================
+
+Para cada APTA ou APTA_COM_RESSALVA criar:
+
+04_DOSSIERS/<WORK_ID>.json
+
+Campos mínimos:
+
+work_id
+titulo
+titulo_original
+titulo_ptbr
+tipo
+ano
+pais
+criadores
+status_triagem
+
+resumo_factual_curto
+
+evidencias[]
+
+fontes[]
+
+areas_potenciais[]
+objetos_juridicos_potenciais[]
+
+riscos[]
+transposition_limits[]
+
+provenance
+
+Cada evidência deve apontar para fonte concreta.
+
+==================================================
+WORK IDs
+==================================================
+
+Não reutilizar IDs existentes.
+
+Criar namespace explícito da expansão.
+
+Sugestão:
+
+EXP2-JOG-001...
+EXP2-FIL-001...
+EXP2-SER-001...
+EXP2-DOC-001...
+EXP2-LIV-001...
+
+Mas antes verificar o sistema atual de IDs.
+
+Se houver convenção oficial melhor:
+
+seguir a convenção oficial
+
+e documentar.
+
+==================================================
+QUALIDADE DAS PARÁFRASES
+==================================================
+
+Paráfrases das fontes devem ser:
+
+- factuais;
+- curtas;
+- verificáveis;
+- sem conclusão jurídica embutida.
+
+RUIM:
+
+“A obra viola o direito constitucional à privacidade.”
+
+BOM:
+
+“O sistema permite ao jogador acessar comunicações privadas e compilar informações pessoais dos cidadãos.”
+
+A interpretação jurídica será responsabilidade posterior da Engine.
+
+==================================================
+ALERTA SOBRE OBRAS FICCIONAIS
+==================================================
+
+Não interpretar automaticamente:
+
+prisão → devido processo
+
+guerra → direito internacional
+
+pobreza → política assistencial
+
+empresa → ordem econômica
+
+trabalho → direito trabalhista específico
+
+vigilância → interceptação de comunicação
+
+racismo → crime constitucional de racismo
+
+morte → direito à vida
+
+eleição → sistema eleitoral brasileiro
+
+Essas relações dependerão posteriormente do contrato jurídico da Engine.
+
+==================================================
+ALERTA SOBRE LIVROS TEÓRICOS
+==================================================
+
+Livros acadêmicos, políticos, econômicos ou jurídicos podem gerar:
+
+ARGUMENTO_ACADEMICO
+
+ou
+
+ARGUMENTO_DOCUMENTAL.
+
+Não tratá-los como evento narrativo.
+
+Registrar precisamente:
+
+o que o autor ANALISA;
+o que HISTORIA;
+o que COMPARA;
+o que ARGUMENTA.
+
+Distinguir:
+
+descrição histórica
+
+de
+
+posição normativa do autor.
+
+==================================================
+REJEIÇÕES
+==================================================
+
+Para cada rejeição criar registro em:
+
+05_REJEITADAS/REJEICOES.json
+
+com:
+
+candidate_id;
+obra;
+status;
+motivo;
+fontes_consultadas;
+possibilidade_de_reconsideracao.
+
+Não apagar candidata silenciosamente.
+
+==================================================
+RELATÓRIO DE REDUNDÂNCIA
+==================================================
+
+Criar:
+
+06_RELATORIOS/REDUNDANCIA_69_MAIS_200.json
+
+e:
+
+06_RELATORIOS/REDUNDANCIA_69_MAIS_200.md
+
+Avaliar:
+
+- duplicidade exata;
+- redundância muito alta;
+- complementaridade;
+- mídia alternativa;
+- contexto nacional diferente;
+- época distinta;
+- objeto distinto.
+
+==================================================
+RELATÓRIO ESPECIAL — JOGOS
+==================================================
+
+Criar:
+
+06_RELATORIOS/JOGOS_EXPANSAO.md
+
+Informar:
+
+- 50 candidatos;
+- quantos APTOS;
+- quantos COM RESSALVA;
+- quantos rejeitados;
+- quantos possuem evidência mecânica;
+- quantos possuem evidência narrativa;
+- principais áreas jurídicas cobertas;
+- fontes usadas;
+- dificuldades documentais;
+- obras mais promissoras.
+
+Não penalizar jogos por não terem roteiro tradicional.
+
+==================================================
+CATÁLOGO CANDIDATO
+==================================================
+
+Ao final criar:
+
+07_CATALOGO_CANDIDATO/CATALOGO_EXPANSAO_200.json
+
+contendo apenas:
+
+APTA
+
+e
+
+APTA_COM_RESSALVA.
+
+Também gerar:
+
+07_CATALOGO_CANDIDATO/CATALOGO_TOTAL_69_MAIS_APTAS.json
+
+IMPORTANTE:
+
+isso ainda NÃO é o catálogo oficial.
+
+Identificar:
+
+"status_catalogo": "CANDIDATO_NAO_INTEGRADO"
+
+==================================================
+MÉTRICAS FINAIS
+==================================================
+
+Calcular:
+
+candidatas iniciais = 200
+
+por tipo:
+jogos;
+filmes;
+séries;
+documentários;
+livros.
+
+total duplicatas;
+
+total APTA;
+
+total APTA_COM_RESSALVA;
+
+total FONTE_EM_REVISAO;
+
+total rejeitada por evidência;
+
+total rejeitada por fonte;
+
+total rejeitada por redundância;
+
+total final de novas candidatas utilizáveis;
+
+total potencial:
+
+69 + novas aptas.
+
+Calcular diversidade por mídia antes e depois.
+
+==================================================
+ANÁLISE DE COBERTURA
+==================================================
+
+Sem executar a Engine, produzir mapa editorial de:
+
+areas_potenciais
+
+e
+
+objetos_juridicos_potenciais.
+
+Identificar lacunas que continuam pobres mesmo após expansão.
+
+Exemplo:
+
+- sucessões;
+- contratos;
+- tributação;
+- orçamento;
+- empresarial;
+- propriedade intelectual;
+- eleitoral;
+- processo civil;
+- consumidor;
+- povos indígenas;
+- infância;
+- deficiência.
+
+NÃO inventar vínculo para preencher lacuna.
+
+Somente apontar que ainda falta evidência.
+
+==================================================
+MANIFEST
+==================================================
+
+Criar:
+
+08_MANIFEST/MANIFEST.json
+
+com hashes SHA256 de todos os arquivos da expansão.
+
+Registrar hashes dos arquivos congelados usados somente como referência.
+
+Não modificar esses arquivos.
+
+==================================================
+DETERMINISMO
+==================================================
+
+A pesquisa web naturalmente pode mudar.
+
+Portanto:
+
+não exigir determinismo da COLETA.
+
+Mas, após congelar:
+
+- identidade;
+- fontes;
+- evidence cards;
+- estados editoriais;
+
+rodar o compilador do catálogo candidato duas vezes.
+
+As duas compilações locais devem produzir hashes idênticos.
+
+==================================================
+INTEGRIDADE
+==================================================
+
+Ao final verificar explicitamente:
+
+RC1 intacto;
+
+RC2 intacto;
+
+Engine R1D1 intacta;
+
+holdout intacto;
+
+catálogo atual de 69 intacto;
+
+firmware intacto;
+
+IDX intactos;
+
+SD não tocado.
+
+==================================================
+NÃO FAZER NESTA MISSÃO
+==================================================
+
+NÃO:
+
+rodar 69+obras contra 3.461 dispositivos;
+
+gerar referências;
+
+treinar regras com RC2;
+
+criar R1D2;
+
+criar Engine V3;
+
+alterar ontologia;
+
+alterar contratos;
+
+ajustar score;
+
+mexer no holdout;
+
+integrar catálogo oficial;
+
+gerar firmware;
+
+gerar IDX.
+
+==================================================
+RESPOSTA FINAL
+==================================================
+
+Responder em exatamente esta estrutura:
+
+1. candidatas recebidas;
+2. duplicatas com catálogo atual;
+3. identidades corrigidas;
+4. APTA;
+5. APTA_COM_RESSALVA;
+6. FONTE_EM_REVISAO;
+7. rejeitadas;
+8. novas candidatas utilizáveis;
+9. total potencial 69 + aptas;
+10. jogos — resultado específico;
+11. filmes;
+12. séries;
+13. documentários;
+14. livros;
+15. evidence cards gerados;
+16. fontes primárias;
+17. fontes institucionais/acadêmicas;
+18. fontes secundárias;
+19. principais áreas novas;
+20. lacunas restantes;
+21. redundâncias importantes;
+22. determinismo da compilação;
+23. integridade dos congelados;
+24. arquivos produzidos;
+25. principais riscos editoriais;
+26. 20 obras mais promissoras da expansão;
+27. próximo passo recomendado.
+
+NÃO EXECUTAR A ENGINE.
+
+NÃO GERAR VÍNCULOS.
+
+NÃO INTEGRAR AS OBRAS AO CATÁLOGO OFICIAL.
