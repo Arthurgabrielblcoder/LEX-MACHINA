@@ -1,0 +1,224 @@
+{
+  "a5b_authorized_by_this_plan": false,
+  "comparison_scope": {
+    "deferred_to_a6": [
+      "formal Dataset Lock comparison"
+    ],
+    "record_in_a5b": [
+      "two base catalogs",
+      "seven ENRIQUECIDO_V1 members",
+      "199 usable works",
+      "221 base cards",
+      "71 new cards",
+      "292 final cards",
+      "111 consumed overlays/decisions",
+      "three applied revisions",
+      "inner manifest",
+      "observable ordering"
+    ]
+  },
+  "expected_outputs": [
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/CATALOGO_EXPANSAO_200.json",
+      "sha256": "5764d749f83d5c1ce99a84ff521178c048d922f40591dc9a598f2af543ec5c43",
+      "size": 959745
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/CATALOGO_TOTAL_69_MAIS_APTAS.json",
+      "sha256": "6bf04fec443416d0b9fd92b65a4254960a3b37691d171942fc5950e0ca14abb6",
+      "size": 76121
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/CATALOGO_EXPANSAO_ENRIQUECIDO_V1.json",
+      "sha256": "cddb00344f6e3075f552fb042b168d184463b85e513f695eb1089139ee301da7",
+      "size": 1154254
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/CATALOGO_TOTAL_ENRIQUECIDO_V1.json",
+      "sha256": "5446da1294cee6311dcef3a0c5438b7c7de2bc2adec586fe38b85f199394305d",
+      "size": 69418
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/DECISOES_ENRIQUECIMENTO.json",
+      "sha256": "de779c2f5873d665953d849d37643e21219da428df89b534a24781b8031e8c30",
+      "size": 116799
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/EVIDENCE_CARDS_ENRIQUECIDOS_V1.json",
+      "sha256": "3446c073eda030045bc20efe0ac0854c924fe7b11e66a71d0671d6717f054a07",
+      "size": 607221
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/METADADOS_ENRIQUECIDO_V1.json",
+      "sha256": "27a427ccd18813992f633e8f94bb59e8a2e46a1d6558b95d8c37ef7e037c2f02",
+      "size": 11588
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/README.md",
+      "sha256": "423b90dde03d10cd268681b55f18e6fa51007fd1af939d09b80be952a2cbe9e3",
+      "size": 1269
+    },
+    {
+      "comparison": "BYTE_IDENTICAL",
+      "path": "07_CATALOGO_CANDIDATO/REPLAY_ENRIQUECIDO_V1/MANIFEST.json",
+      "sha256": "0312e5f091981f8065673529aca04437ed0fc7ecaac26cd144d2af26ab37774c",
+      "size": 1044
+    }
+  ],
+  "head": "b134aa2130965275d39aa3e6ab372aa010c17a47",
+  "input_copy_contract": {
+    "groups": [
+      {
+        "count": 8,
+        "id": "triage_lots",
+        "manifest_sha256": "eca731b4f6b94ba2bc7f61a0a186ce666c91b1f441e694cad50a258bab69ece0"
+      },
+      {
+        "count": 199,
+        "id": "base_dossiers",
+        "manifest_sha256": "7de5b76ccfd32be5baff828340b6dd246a6e37bd972fbc798043c19c24d4dcaf"
+      },
+      {
+        "count": 111,
+        "id": "overlays",
+        "manifest_sha256": "d9e29c82dbd40b7c785bd11b1ec7f563d96a91789e9ad0fce0e1c6cae5ea076d"
+      }
+    ],
+    "single_files": [
+      {
+        "path": "00_ENTRADA/REFERENCIA_CATALOGO_69.json",
+        "sha256": "5443ae84050764950b1b9648733016f697eaf740a6c920be6201583327829129"
+      },
+      {
+        "path": "06_RELATORIOS/CHECKPOINT_ENRIQUECIMENTO.json",
+        "sha256": "479997a8aa3b09c8b56505705e0e4b75b14211bd061b4e1213cc4bbde4a9c293"
+      },
+      {
+        "path": "06_RELATORIOS/REVISOES_ENRIQUECIMENTO_V1.json",
+        "sha256": "1b1a8e439d52d24c379c13d2c2da1be8e1750f116f519f8cd77c4ba8f2d966dd"
+      },
+      {
+        "path": "07_CATALOGO_CANDIDATO/compilar_catalogo.py",
+        "sha256": "4e53ca2a87bd0577facb4461b09b685223c4daabe869cfaff81610e6cdc66a7d"
+      },
+      {
+        "path": "07_CATALOGO_CANDIDATO/compilar_enriquecido_v1.py",
+        "sha256": "d0621feaeaf0288285475cebc747ffad76a4cb40a8e65ec076b8541bb5053a08"
+      }
+    ]
+  },
+  "network_policy": {
+    "enforcement": "sandbox offline runner denies socket.*, subprocess.Popen and writes outside sandbox",
+    "remote_phases_executed": false,
+    "required": "OFFLINE"
+  },
+  "phases": [
+    {
+      "classification": "PURE_LOCAL_DETERMINISTIC",
+      "id": "P1",
+      "outputs": 2,
+      "required": true,
+      "script": "07_CATALOGO_CANDIDATO/compilar_catalogo.py"
+    },
+    {
+      "classification": "PURE_LOCAL_DETERMINISTIC",
+      "id": "P2",
+      "outputs": 7,
+      "required": true,
+      "script": "07_CATALOGO_CANDIDATO/compilar_enriquecido_v1.py"
+    },
+    {
+      "classification": "LOCAL_BUT_STATEFUL",
+      "id": "P3",
+      "reason": "would create or mutate overlays, checkpoints, triage and dossiers",
+      "required": false,
+      "scripts": [
+        "06_RELATORIOS/enriquecer_v1.py",
+        "06_RELATORIOS/editorial_enriquecimento_v1.py",
+        "06_RELATORIOS/aplicar_saneamento_pre_enriquecimento.py"
+      ]
+    },
+    {
+      "classification": "REMOTE_OR_NONDETERMINISTIC",
+      "id": "P4",
+      "reason": "network and/or current time, mtime, repository scan and fixed in-place writes",
+      "required": false,
+      "scripts": [
+        "06_RELATORIOS/consultar_fontes_enriquecimento.py",
+        "06_RELATORIOS/gerar_relatorios.py",
+        "08_MANIFEST/gerar_manifest.py"
+      ]
+    },
+    {
+      "classification": "NOT_REQUIRED_FOR_REPLAY",
+      "id": "P5",
+      "required": false,
+      "scripts": [
+        "06_RELATORIOS/estado_retomada.py",
+        "06_RELATORIOS/relatorios_enriquecimento_v1.py",
+        "06_RELATORIOS/estimar_enriquecimento.py",
+        "06_RELATORIOS/gerar_relatorios.py",
+        "08_MANIFEST/gerar_manifest.py"
+      ]
+    }
+  ],
+  "restricted_local": {
+    "occurrence_ids": [
+      "D05_MANAGED_ROOT:03_FONTES/BUSCA_118.json",
+      "D05_MANAGED_ROOT:06_RELATORIOS/CONSULTA_CP11.txt",
+      "D05_MANAGED_ROOT:06_RELATORIOS/CONSULTA_CP12.txt"
+    ],
+    "reason": "neither required compiler opens these files",
+    "required_for_replay": false
+  },
+  "run_record": {
+    "copy_to_repository": false,
+    "planned_path": "<sandbox>/run_record/D05_REPLAY_RUN.json",
+    "required_fields": [
+      "run_id",
+      "head",
+      "platform",
+      "python",
+      "input_hashes",
+      "commands",
+      "exit_codes",
+      "outputs",
+      "output_hashes",
+      "logs",
+      "differences",
+      "network_disabled",
+      "sandbox_path"
+    ]
+  },
+  "safe_for_a5b": true,
+  "sandbox": {
+    "original_repository_writable_by_pipeline": false,
+    "output_root_inside_sandbox": true,
+    "preserve_after_run": true,
+    "proposed_root": "C:/GitHub/_LEX_MACHINA_D05_REPLAY_TEMP/<run_id>"
+  },
+  "status": "A5A_PLANNING_ONLY_NO_PIPELINE_EXECUTION",
+  "volatility": {
+    "blocking": [],
+    "controllable": [
+      "Python version fixed to 3.12.9",
+      "PYTHONHASHSEED=0",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "UTF-8 mode",
+      "Windows platform",
+      "sandbox absolute path recorded"
+    ],
+    "ignored_by_design": [
+      "run_id and run-record timestamps",
+      "sandbox path and logs are operational evidence, not historical outputs"
+    ]
+  }
+}
