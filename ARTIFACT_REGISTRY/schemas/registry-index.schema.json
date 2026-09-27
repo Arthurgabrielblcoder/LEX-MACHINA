@@ -1,0 +1,59 @@
+{
+  "$id": "urn:lex-machina:artifact-registry:index:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "canonicalization": {
+      "const": "json-utf8-lf-sorted-keys-indent-2-final-lf-v1"
+    },
+    "fragments": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dataset_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "schema_version": {
+            "const": 1
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "size": {
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "path",
+          "schema_version",
+          "sha256",
+          "size"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "registry_id": {
+      "const": "lex-machina-artifact-registry"
+    },
+    "schema_version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "canonicalization",
+    "fragments",
+    "registry_id",
+    "schema_version"
+  ],
+  "type": "object"
+}

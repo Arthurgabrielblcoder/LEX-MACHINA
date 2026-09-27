@@ -1,0 +1,241 @@
+{
+  "$defs": {
+    "artifact": {
+      "additionalProperties": false,
+      "properties": {
+        "access_class": {
+          "enum": [
+            "repository",
+            "restricted_local"
+          ],
+          "type": "string"
+        },
+        "artifact_role": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "byte_policy": {
+          "const": "BYTE_EXACT"
+        },
+        "canonical_hash_algo": {
+          "const": "SHA-256"
+        },
+        "created_by_run_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "generation_recipe": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "lifecycle_state": {
+          "enum": [
+            "CANDIDATE_OUTPUT",
+            "FROZEN_EVIDENCE",
+            "FROZEN_INPUT",
+            "HISTORICAL_RECORD",
+            "TOOLING"
+          ],
+          "type": "string"
+        },
+        "logical_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "media_type": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "occurrence_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "provenance": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "relative_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "reproducibility": {
+          "enum": [
+            "PROVEN",
+            "UNPROVEN",
+            "NOT_APPLICABLE"
+          ],
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "size": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "storage_root_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "supersedes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "access_class",
+        "artifact_role",
+        "byte_policy",
+        "canonical_hash_algo",
+        "created_by_run_id",
+        "generation_recipe",
+        "lifecycle_state",
+        "logical_id",
+        "media_type",
+        "occurrence_id",
+        "provenance",
+        "relative_path",
+        "reproducibility",
+        "sha256",
+        "size",
+        "storage_root_id",
+        "supersedes",
+        "version"
+      ],
+      "type": "object"
+    },
+    "storage_root": {
+      "additionalProperties": false,
+      "properties": {
+        "base": {
+          "const": "REPOSITORY_ROOT"
+        },
+        "managed": {
+          "type": "boolean"
+        },
+        "relative_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "storage_root_id": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "base",
+        "managed",
+        "relative_path",
+        "storage_root_id"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:lex-machina:artifact-registry:fragment:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifacts": {
+      "items": {
+        "$ref": "#/$defs/artifact"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "authority": {
+      "const": "LEGACY_PIPELINE"
+    },
+    "canonicalization": {
+      "const": "json-utf8-lf-sorted-keys-indent-2-final-lf-v1"
+    },
+    "dataset_id": {
+      "const": "d05.catalogo-expansao-200"
+    },
+    "dataset_version": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "description": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "golden_references": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "invariants": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "known_gaps": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "managed_roots": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "mode": {
+      "const": "SHADOW"
+    },
+    "observed_selection": {
+      "type": "object"
+    },
+    "relations": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "storage_roots": {
+      "items": {
+        "$ref": "#/$defs/storage_root"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "artifacts",
+    "authority",
+    "canonicalization",
+    "dataset_id",
+    "dataset_version",
+    "description",
+    "golden_references",
+    "invariants",
+    "known_gaps",
+    "managed_roots",
+    "mode",
+    "observed_selection",
+    "relations",
+    "schema_version",
+    "storage_roots"
+  ],
+  "type": "object"
+}
