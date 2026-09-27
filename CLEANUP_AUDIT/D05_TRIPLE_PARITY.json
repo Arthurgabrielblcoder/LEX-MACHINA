@@ -1,0 +1,524 @@
+{
+  "GOLDEN_LOCK_PARITY": "PASS",
+  "GOLDEN_REPLAY_PARITY": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+  "HEAD": "d6d21da193f6022ec3492ae7d294a36b06dea017",
+  "LOCK_REPLAY_PARITY": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+  "absence_parity": {
+    "categories": [
+      {
+        "absence_kind": "NO_ENRICHMENT_OVERLAY_BY_DESIGN",
+        "classification": "CONFIRMED_BY_REPLAY",
+        "count": 88,
+        "evidence": "199 base works minus 111 observed overlay reads; byte-identical decisions output preserves the exact no-overlay cases"
+      },
+      {
+        "absence_kind": "CANDIDATE_EXCLUDED_FROM_USABLE_CATALOG",
+        "classification": "CONFIRMED_BY_REPLAY",
+        "count": 1,
+        "evidence": "P1 consumed 200 unique candidates and emitted 199 usable works with byte-identical output"
+      },
+      {
+        "absence_kind": "NO_ADDITIONAL_CARD_AFTER_EXAMINATION",
+        "classification": "CONFIRMED_BY_REPLAY",
+        "count": 47,
+        "evidence": "byte-identical decisions and metadata outputs preserve the 47 +0 decisions"
+      },
+      {
+        "absence_kind": "WEB_SOURCE_WITHOUT_COMPLETE_LOCAL_RECEIPT",
+        "classification": "OUTSIDE_EXECUTED_PHASE",
+        "count": 9,
+        "evidence": "remote/source collection was excluded"
+      },
+      {
+        "absence_kind": "REMOTE_FETCH_FAILED_WITH_METADATA_PRESERVED",
+        "classification": "OUTSIDE_EXECUTED_PHASE",
+        "count": 6,
+        "evidence": "remote/source collection was excluded"
+      }
+    ],
+    "confirmed_by_replay": 136,
+    "mismatches": 0,
+    "outside_executed_phase": 15,
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+    "total": 151
+  },
+  "blocking_mismatches": [],
+  "dataset_id": "d05.catalogo-expansao-200",
+  "dependency_parity": {
+    "consistent_not_directly_observable": 1,
+    "dependencies": [
+      {
+        "dependency_id": "catalog_69",
+        "evidence": "P1/P2 read REFERENCIA_CATALOGO_69.json and reproduced outputs, but did not open the external CATALOG_69_ROOT occurrence itself",
+        "lock_selected": true,
+        "replay_observed": "FROZEN_REFERENCE_WRAPPER",
+        "status": "CONSISTENT_BUT_NOT_DIRECTLY_OBSERVABLE"
+      },
+      {
+        "dependency_id": "base_catalog",
+        "evidence": "P1 produced the exact base catalog and P2 read it",
+        "lock_selected": true,
+        "replay_observed": true,
+        "status": "MATCH"
+      },
+      {
+        "dependency_id": "enrichment_checkpoint_state",
+        "evidence": "P2 audit records the exact checkpoint read",
+        "lock_selected": true,
+        "replay_observed": true,
+        "status": "MATCH"
+      },
+      {
+        "dependency_id": "enrichment_revision_layer",
+        "evidence": "P2 audit records the exact revision layer read and three applied revisions",
+        "lock_selected": true,
+        "replay_observed": true,
+        "status": "MATCH"
+      }
+    ],
+    "direct_matches": 3,
+    "mismatches": 0,
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+    "total": 4
+  },
+  "determinism_scope": {
+    "PYTHONHASHSEED": "0",
+    "claim": "historical outputs equal A5B replay outputs byte for byte",
+    "cross_machine_claim": false,
+    "encoding": "UTF-8",
+    "inputs": "A5B frozen copies",
+    "platform": "Windows",
+    "python": "CPython 3.12.9",
+    "run_id": "d05-replay-2026-09-27-a5b"
+  },
+  "golden_lock": {
+    "absence_match": true,
+    "dependency_match": true,
+    "extra_items": 0,
+    "member_match": true,
+    "multiplicity_match": true,
+    "occurrence_matches": 855,
+    "order_match": true,
+    "registry_occurrences": 855,
+    "selection_sets": 11,
+    "semantic_items": 1699,
+    "status": "PASS"
+  },
+  "golden_reference_sha256": "f82e82d9c3907186e916a54436493ebe8f426d1a09f7b3a3aa3b092c2e09cdc7",
+  "golden_replay": {
+    "cardinalities": [
+      {
+        "golden": 199,
+        "metric": "usable_works",
+        "replay": 199,
+        "status": "MATCH"
+      },
+      {
+        "golden": 221,
+        "metric": "base_cards",
+        "replay": 221,
+        "status": "MATCH"
+      },
+      {
+        "golden": 71,
+        "metric": "new_cards",
+        "replay": 71,
+        "status": "MATCH"
+      },
+      {
+        "golden": 292,
+        "metric": "final_cards",
+        "replay": 292,
+        "status": "MATCH"
+      },
+      {
+        "golden": 111,
+        "metric": "decisions_applied",
+        "replay": 111,
+        "status": "MATCH"
+      },
+      {
+        "golden": 3,
+        "metric": "revisions_applied",
+        "replay": 3,
+        "status": "MATCH"
+      }
+    ],
+    "direct_input_observations": {
+      "base_dossiers": 199,
+      "catalog_69_reference": 1,
+      "checkpoint": 1,
+      "overlays": 111,
+      "revision_layer": 1,
+      "triage_lots": 8
+    },
+    "limits": [
+      "historical provenance and remote collection phases were not executed",
+      "member-level order inside triage lots was not instrumented"
+    ],
+    "outputs": {
+      "matched": 9,
+      "total": 9
+    },
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS"
+  },
+  "legacy_authoritative": true,
+  "lock_replay": {
+    "not_applicable_sets": 3,
+    "not_observable_sets": 1,
+    "observed_match_sets": 7,
+    "selection_sets": [
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "PIPELINE_INPUT",
+        "evidence": "audit read order contains the eight exact LOTE_01..08 paths",
+        "executed_phase": "P1",
+        "expected_items": 8,
+        "matched_items": 8,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 8,
+        "order": "ORDER_MATCH",
+        "ordered_by_lock": true,
+        "semantic_role": "TRIAGE_BATCH_INPUTS",
+        "set_id": "triage_batch_paths"
+      },
+      {
+        "classification": "NOT_OBSERVABLE_BY_REPLAY",
+        "consumption_class": "HISTORICAL_ORDER_ASSERTION",
+        "evidence": "P1 exit 0 proves 200 unique candidates, but the audit hook did not capture member-level iteration order inside lot JSON files",
+        "executed_phase": "P1",
+        "expected_items": 200,
+        "matched_items": 0,
+        "membership": "NOT_DIRECTLY_OBSERVABLE",
+        "multiplicity": "MATCH",
+        "observed_items": 0,
+        "order": "ORDER_NOT_OBSERVABLE",
+        "ordered_by_lock": true,
+        "semantic_role": "TRIAGE_MEMBER_ORDER",
+        "set_id": "triage_candidate_numbers"
+      },
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "PIPELINE_INPUT",
+        "evidence": "audit read order equals the 199 locked dossier occurrences",
+        "executed_phase": "P1",
+        "expected_items": 199,
+        "matched_items": 199,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 199,
+        "order": "ORDER_MATCH",
+        "ordered_by_lock": true,
+        "semantic_role": "USABLE_DOSSIER_INPUTS",
+        "set_id": "base_catalog_work_ids"
+      },
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "PIPELINE_INPUT",
+        "evidence": "frozen reference input was read and the byte-identical combined outputs encode the same 69 sorted ids",
+        "executed_phase": "P1/P2",
+        "expected_items": 69,
+        "matched_items": 69,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 69,
+        "order": "ORDER_MATCH",
+        "ordered_by_lock": true,
+        "semantic_role": "EXTERNAL_CATALOG_MEMBER_ORDER",
+        "set_id": "catalog_69_ids"
+      },
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "PIPELINE_INPUT",
+        "evidence": "the exact checkpoint was read and all 111 queue members were consumed as a mapping; dictionary construction does not expose queue order",
+        "executed_phase": "P2",
+        "expected_items": 111,
+        "matched_items": 111,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 111,
+        "order": "ORDER_NOT_OBSERVABLE",
+        "ordered_by_lock": true,
+        "semantic_role": "ENRICHMENT_QUEUE_ORDER",
+        "set_id": "enrichment_queue_work_ids"
+      },
+      {
+        "classification": "NOT_APPLICABLE_TO_EXECUTED_PHASE",
+        "consumption_class": "PROVENANCE_INPUT",
+        "evidence": "historical checkpoint sequence was deliberately excluded from P1/P2",
+        "executed_phase": null,
+        "expected_items": 12,
+        "matched_items": 0,
+        "membership": "NOT_APPLICABLE",
+        "multiplicity": "NOT_APPLICABLE",
+        "observed_items": 0,
+        "order": "NOT_APPLICABLE",
+        "ordered_by_lock": true,
+        "semantic_role": "CHECKPOINT_SEQUENCE",
+        "set_id": "enrichment_checkpoints"
+      },
+      {
+        "classification": "NOT_APPLICABLE_TO_EXECUTED_PHASE",
+        "consumption_class": "PROVENANCE_INPUT",
+        "evidence": "remote/source collection was deliberately excluded from A5B",
+        "executed_phase": null,
+        "expected_items": 128,
+        "matched_items": 0,
+        "membership": "NOT_APPLICABLE",
+        "multiplicity": "NOT_APPLICABLE",
+        "observed_items": 0,
+        "order": "NOT_APPLICABLE",
+        "ordered_by_lock": true,
+        "semantic_role": "ENRICHMENT_SOURCE_CAPTURE_SEQUENCE",
+        "set_id": "enrichment_capture_paths_lexical"
+      },
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "PIPELINE_INPUT",
+        "evidence": "audit read order equals the 111 locked overlay occurrences",
+        "executed_phase": "P2",
+        "expected_items": 111,
+        "matched_items": 111,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 111,
+        "order": "ORDER_MATCH",
+        "ordered_by_lock": true,
+        "semantic_role": "ENRICHMENT_OVERLAY_INPUTS",
+        "set_id": "enrichment_overlay_paths_build_order"
+      },
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "OUTPUT_REFERENCE",
+        "evidence": "the naturally produced inner manifest is byte-identical and lists the same six payloads in locked order",
+        "executed_phase": "P2",
+        "expected_items": 6,
+        "matched_items": 6,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 6,
+        "order": "ORDER_MATCH",
+        "ordered_by_lock": true,
+        "semantic_role": "ENRICHED_PACKAGE_PAYLOADS",
+        "set_id": "enriched_payload_paths"
+      },
+      {
+        "classification": "NOT_APPLICABLE_TO_EXECUTED_PHASE",
+        "consumption_class": "AUDIT_CLOSURE",
+        "evidence": "gerar_manifest.py and outer historical snapshot closure were deliberately excluded",
+        "executed_phase": null,
+        "expected_items": 852,
+        "matched_items": 0,
+        "membership": "NOT_APPLICABLE",
+        "multiplicity": "NOT_APPLICABLE",
+        "observed_items": 0,
+        "order": "NOT_APPLICABLE",
+        "ordered_by_lock": true,
+        "semantic_role": "FINAL_HISTORICAL_SNAPSHOT_MEMBERS",
+        "set_id": "outer_manifest_member_paths"
+      },
+      {
+        "classification": "OBSERVED_MATCH",
+        "consumption_class": "PIPELINE_INPUT",
+        "evidence": "revision layer was read; P2 exit 0 proves all three ids were applied and output cardinality is three",
+        "executed_phase": "P2",
+        "expected_items": 3,
+        "matched_items": 3,
+        "membership": "MATCH",
+        "multiplicity": "MATCH",
+        "observed_items": 3,
+        "order": "UNORDERED_SET",
+        "ordered_by_lock": false,
+        "semantic_role": "POST_CODEX_REVISION_PATCHES",
+        "set_id": "post_codex_revision_members"
+      }
+    ],
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS"
+  },
+  "lock_sha256": "5d9f6d0ba4fa1895f70a139510b0d441d62e187eb63ad99de030820946c29f39",
+  "multiplicity_parity": {
+    "executed_phase_relevant_items": 707,
+    "matched_items": 707,
+    "not_applicable_items": 992,
+    "note": "counts preserve semantic roles; no hash-based deduplication was applied",
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS"
+  },
+  "next_step_recommendation": {
+    "action": "introduce a read-only shadow resolver that reads Registry plus Lock and emits a candidate selection for comparison only",
+    "authority": "LEGACY_AUTHORITATIVE",
+    "option": "A",
+    "pipeline_feed": false
+  },
+  "not_observable_dimensions": [
+    {
+      "dimension": "triage_candidate_member_sequence",
+      "items": 200,
+      "reason": "member-level iteration inside eight JSON lots was not captured by the audit hook"
+    },
+    {
+      "dimension": "enrichment_queue_order",
+      "items": 111,
+      "reason": "P2 consumed the checkpoint as a mapping, so membership/count are observed but the locked historical order is not"
+    },
+    {
+      "dimension": "historical_checkpoint_sequence",
+      "items": 12,
+      "reason": "not executed by P1/P2"
+    },
+    {
+      "dimension": "source_capture_sequence",
+      "items": 128,
+      "reason": "remote/source collection was excluded"
+    },
+    {
+      "dimension": "outer_manifest_closure",
+      "items": 852,
+      "reason": "outer manifest generation was excluded"
+    },
+    {
+      "dimension": "external_catalog_occurrence_read",
+      "items": 1,
+      "reason": "replay read the frozen reference wrapper, not the external dependency occurrence"
+    },
+    {
+      "dimension": "remote_absence_events",
+      "items": 15,
+      "reason": "nine incomplete receipts and six remote failures belong to excluded collection phases"
+    }
+  ],
+  "order_parity": {
+    "not_applicable_sets": 3,
+    "order_match_sets": 5,
+    "order_not_observable_sets": 2,
+    "ordered_sets": 10,
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS"
+  },
+  "output_parity": {
+    "comparison": "SHA-256_AND_SIZE",
+    "matched": 9,
+    "outputs": [
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/CATALOGO_EXPANSAO_200.json",
+        "golden_sha256": "5764d749f83d5c1ce99a84ff521178c048d922f40591dc9a598f2af543ec5c43",
+        "golden_size": 959745,
+        "replay_sha256": "5764d749f83d5c1ce99a84ff521178c048d922f40591dc9a598f2af543ec5c43",
+        "replay_size": 959745,
+        "role": "base_catalog",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/CATALOGO_TOTAL_69_MAIS_APTAS.json",
+        "golden_sha256": "6bf04fec443416d0b9fd92b65a4254960a3b37691d171942fc5950e0ca14abb6",
+        "golden_size": 76121,
+        "replay_sha256": "6bf04fec443416d0b9fd92b65a4254960a3b37691d171942fc5950e0ca14abb6",
+        "replay_size": 76121,
+        "role": "combined_base_catalog",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/CATALOGO_EXPANSAO_ENRIQUECIDO_V1.json",
+        "golden_sha256": "cddb00344f6e3075f552fb042b168d184463b85e513f695eb1089139ee301da7",
+        "golden_size": 1154254,
+        "replay_sha256": "cddb00344f6e3075f552fb042b168d184463b85e513f695eb1089139ee301da7",
+        "replay_size": 1154254,
+        "role": "enriched_catalog",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/CATALOGO_TOTAL_ENRIQUECIDO_V1.json",
+        "golden_sha256": "5446da1294cee6311dcef3a0c5438b7c7de2bc2adec586fe38b85f199394305d",
+        "golden_size": 69418,
+        "replay_sha256": "5446da1294cee6311dcef3a0c5438b7c7de2bc2adec586fe38b85f199394305d",
+        "replay_size": 69418,
+        "role": "combined_enriched_catalog",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/DECISOES_ENRIQUECIMENTO.json",
+        "golden_sha256": "de779c2f5873d665953d849d37643e21219da428df89b534a24781b8031e8c30",
+        "golden_size": 116799,
+        "replay_sha256": "de779c2f5873d665953d849d37643e21219da428df89b534a24781b8031e8c30",
+        "replay_size": 116799,
+        "role": "enrichment_decisions_output",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/EVIDENCE_CARDS_ENRIQUECIDOS_V1.json",
+        "golden_sha256": "3446c073eda030045bc20efe0ac0854c924fe7b11e66a71d0671d6717f054a07",
+        "golden_size": 607221,
+        "replay_sha256": "3446c073eda030045bc20efe0ac0854c924fe7b11e66a71d0671d6717f054a07",
+        "replay_size": 607221,
+        "role": "enriched_cards_flat",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/METADADOS_ENRIQUECIDO_V1.json",
+        "golden_sha256": "27a427ccd18813992f633e8f94bb59e8a2e46a1d6558b95d8c37ef7e037c2f02",
+        "golden_size": 11588,
+        "replay_sha256": "27a427ccd18813992f633e8f94bb59e8a2e46a1d6558b95d8c37ef7e037c2f02",
+        "replay_size": 11588,
+        "role": "enriched_metadata",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/README.md",
+        "golden_sha256": "423b90dde03d10cd268681b55f18e6fa51007fd1af939d09b80be952a2cbe9e3",
+        "golden_size": 1269,
+        "replay_sha256": "423b90dde03d10cd268681b55f18e6fa51007fd1af939d09b80be952a2cbe9e3",
+        "replay_size": 1269,
+        "role": "enriched_package_documentation",
+        "status": "BYTE_IDENTICAL"
+      },
+      {
+        "golden_path": "07_CATALOGO_CANDIDATO/ENRIQUECIDO_V1/MANIFEST.json",
+        "golden_sha256": "0312e5f091981f8065673529aca04437ed0fc7ecaac26cd144d2af26ab37774c",
+        "golden_size": 1044,
+        "replay_sha256": "0312e5f091981f8065673529aca04437ed0fc7ecaac26cd144d2af26ab37774c",
+        "replay_size": 1044,
+        "role": "enriched_package_manifest",
+        "status": "BYTE_IDENTICAL"
+      }
+    ],
+    "percent": 100,
+    "status": "PASS",
+    "total": 9
+  },
+  "replay_run": {
+    "environment": {
+      "PYTHONHASHSEED": "0",
+      "encoding": {
+        "default": "utf-8",
+        "filesystem": "utf-8"
+      },
+      "platform": {
+        "platform": "Windows-11-10.0.26200-SP0",
+        "sys_platform": "win32"
+      },
+      "python": {
+        "executable": "C:\\Program Files\\Python312\\python.exe",
+        "version": "3.12.9 (tags/v3.12.9:fdb8142, Feb  4 2025, 15:27:58) [MSC v.1942 64 bit (AMD64)]"
+      }
+    },
+    "evidence_sha256": "24b934fc5a578314ba3dbf27ae567c8f79c271e9c2ced97f19ec6df5efaebc82",
+    "final_status": "MIGRACAO_A5B_CONCLUIDA_REPLAY_D05_BYTE_IDENTICO",
+    "run_id": "d05-replay-2026-09-27-a5b",
+    "source_head": "73ce4d81d2e424a21bfe523eacc9d6134a99a2e9"
+  },
+  "selection_parity": {
+    "executed_phase_relevant_items": 707,
+    "executed_phase_selection_parity": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+    "full_lock_items": 1699,
+    "full_lock_selection_parity": "NOT_FULLY_OBSERVED",
+    "not_applicable_to_executed_phase_items": 992,
+    "not_observable_by_replay_items": 200,
+    "observed_match_items": 507
+  },
+  "source_hashes": {
+    "a5b_result": "37796dfa97cf8e973603f59459e30545a1e78bafc19fff8926032b4a5f672716",
+    "registry_fragment": "022c88a293b9cdb9e661fca0b5d0dbd3ccb814cf57fb44acdcb51aff83d4a921",
+    "registry_index": "a14e1365de384b627d76f6bf5bfed18d2deac41704c90370581590d179d40aa6"
+  },
+  "triple_parity_status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+  "version": "d05-triple-parity/1"
+}
