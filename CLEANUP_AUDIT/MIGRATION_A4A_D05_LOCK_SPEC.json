@@ -1,0 +1,369 @@
+{
+  "a4b_files_planned": [
+    "DATASET_LOCKS/d05-historical-parity-v1.lock.json",
+    "DATASET_LOCKS/schemas/dataset-lock.schema.json",
+    "DATASET_LOCKS/verify_dataset_lock.py",
+    "CLEANUP_AUDIT/MIGRATION_A4B_D05_LOCK_BASELINE.json",
+    "CLEANUP_AUDIT/MIGRATION_A4B_D05_LOCK_RESULT.md"
+  ],
+  "absence_policy": [
+    {
+      "category": "AUSÊNCIA_OPERACIONAL_DO_LOCK",
+      "count": 88,
+      "kind": "NO_ENRICHMENT_OVERLAY_BY_DESIGN",
+      "representation": "One explicit entity-state entry per work_id; no artifact reference is fabricated."
+    },
+    {
+      "category": "AUSÊNCIA_OPERACIONAL_DO_LOCK",
+      "count": 1,
+      "kind": "CANDIDATE_EXCLUDED_FROM_USABLE_CATALOG",
+      "representation": "Explicit exclusion of candidate 92 / EXP2-SER-002; no executable editorial filter."
+    },
+    {
+      "category": "EVIDÊNCIA_HISTÓRICA_APENAS",
+      "count": 47,
+      "kind": "NO_ADDITIONAL_CARD_AFTER_EXAMINATION",
+      "representation": "Asserted by selected overlay bytes and parity evidence; not an absent artifact."
+    },
+    {
+      "category": "EVIDÊNCIA_HISTÓRICA_APENAS",
+      "count": 9,
+      "kind": "WEB_SOURCE_WITHOUT_COMPLETE_LOCAL_RECEIPT",
+      "representation": "Known gap only; no receipt occurrence is invented."
+    },
+    {
+      "category": "EVIDÊNCIA_HISTÓRICA_APENAS",
+      "count": 6,
+      "kind": "REMOTE_FETCH_FAILED_WITH_METADATA_PRESERVED",
+      "representation": "Select failure-metadata occurrences; no remote body is invented."
+    },
+    {
+      "category": "NÃO_PERTENCE_AO_LOCK",
+      "count": 2,
+      "kind": "UNKNOWN_CHRONOLOGIES",
+      "representation": "Remote retrieval and human deliberation chronology remain outside selection semantics."
+    }
+  ],
+  "canonicalization": "json-utf8-lf-sorted-keys-indent-2-final-lf-v1",
+  "constraints": {
+    "allow_glob": false,
+    "allow_implicit_resolution": false,
+    "allow_latest": false,
+    "allow_regex_discovery": false,
+    "allow_wildcard": false,
+    "fail_closed": true,
+    "legacy_pipeline_authoritative": true,
+    "mode": "SHADOW",
+    "ordinal_sequence": "ONE_BASED_CONTIGUOUS_WHEN_ORDERED",
+    "same_occurrence_across_sets": "ALLOWED_WITH_DISTINCT_SET_SEMANTICS",
+    "same_occurrence_repeated_within_artifact_member_set": "ALLOWED_ONLY_WITH_UNIQUE_MEMBER_REF",
+    "same_occurrence_repeated_within_artifact_occurrence_set": "FORBIDDEN"
+  },
+  "dataset_id": "d05.catalogo-expansao-200",
+  "dependencies": [
+    {
+      "dependency_id": "catalog_69",
+      "required": true,
+      "selection": "CATALOG_69_ROOT:CATALOGO_69_CANONICO.json"
+    },
+    {
+      "dependency_id": "base_catalog",
+      "required": true,
+      "selection": "D05_MANAGED_ROOT:07_CATALOGO_CANDIDATO/CATALOGO_EXPANSAO_200.json"
+    },
+    {
+      "dependency_id": "enrichment_checkpoint_state",
+      "required": true,
+      "selection": "D05_MANAGED_ROOT:06_RELATORIOS/CHECKPOINT_ENRIQUECIMENTO.json"
+    },
+    {
+      "dependency_id": "enrichment_revision_layer",
+      "required": true,
+      "selection": "D05_MANAGED_ROOT:06_RELATORIOS/REVISOES_ENRIQUECIMENTO_V1.json"
+    }
+  ],
+  "future_lock_shape": {
+    "required_top_level_fields": [
+      "schema_version",
+      "lock_version",
+      "lock_id",
+      "dataset_id",
+      "profile_id",
+      "mode",
+      "registry_index_sha256",
+      "registry_fragments",
+      "golden_reference",
+      "selection_sets",
+      "explicit_absences",
+      "dependencies",
+      "constraints"
+    ],
+    "selection_item_conditional_fields": [
+      "ordinal",
+      "member_ref"
+    ],
+    "selection_item_required_fields": [
+      "logical_id",
+      "version",
+      "occurrence_id"
+    ],
+    "selection_set_required_fields": [
+      "set_id",
+      "semantic_role",
+      "consumption_class",
+      "ordered",
+      "ordering_rule_id",
+      "items"
+    ]
+  },
+  "golden_reference_binding": {
+    "golden_reference_sha256": "f82e82d9c3907186e916a54436493ebe8f426d1a09f7b3a3aa3b092c2e09cdc7",
+    "golden_reference_version": "d05-golden-reference/1",
+    "path": "CLEANUP_AUDIT/D05_GOLDEN_REFERENCE.json"
+  },
+  "historical_filter_policy": {
+    "lock_must_not_own": "Executable editorial predicates such as APTA/APTA_COM_RESSALVA; these remain generation/history documentation.",
+    "lock_owns": "The explicit 199-work result, 111-overlay selection, order, multiplicity, and explicit exclusions.",
+    "rule": "Materialize the historical result, do not recompute the business filter."
+  },
+  "invariants": [
+    "Lock JSON is schema-valid and canonically serialized.",
+    "Registry index and D05 fragment hashes match the bindings.",
+    "Golden Reference hash and version match during shadow migration.",
+    "Every artifact item resolves to exactly one registry occurrence.",
+    "Every member_ref exists in the referenced artifact and is unique with its occurrence inside the set.",
+    "Artifact occurrence_id is unique within each ARTIFACT_OCCURRENCE set.",
+    "Ordinals in ordered sets are unique and form 1..N.",
+    "Unordered sets do not assert ordinal semantics.",
+    "Multiplicity and semantic absences match the Golden Reference.",
+    "No wildcard, glob, regex discovery, latest, folder scan, or implicit fallback exists.",
+    "Restricted-local selections fail closed when absent.",
+    "Required external and internal dependencies are complete.",
+    "No selected artifact exists outside the declared explicit items."
+  ],
+  "lock_id": "d05-historical-parity-v1.lock",
+  "lock_version": "1",
+  "profile_id": "d05-historical-parity-v1",
+  "registry_binding": {
+    "fragment_sha256": "022c88a293b9cdb9e661fca0b5d0dbd3ccb814cf57fb44acdcb51aff83d4a921",
+    "index_sha256": "a14e1365de384b627d76f6bf5bfed18d2deac41704c90370581590d179d40aa6",
+    "registry_id": "lex-machina-artifact-registry",
+    "schema_version": 1
+  },
+  "restricted_local_policy": {
+    "absence_result": "FAIL_CLOSED",
+    "automatic_replacement": false,
+    "copy_to_git": false,
+    "occurrence_ids": [
+      "D05_MANAGED_ROOT:03_FONTES/BUSCA_118.json",
+      "D05_MANAGED_ROOT:06_RELATORIOS/CONSULTA_CP11.txt",
+      "D05_MANAGED_ROOT:06_RELATORIOS/CONSULTA_CP12.txt"
+    ],
+    "portability": "A Git-only checkout cannot satisfy this historical-parity profile."
+  },
+  "schema_version": 1,
+  "selection_digest_rule": "SHA-256 of the source item array serialized as UTF-8 canonical JSON (sorted keys, indent 2, final LF); unordered revision member IDs are lexically sorted before serialization.",
+  "selection_sets": [
+    {
+      "absence_semantics": "NONE",
+      "consumption_class": "PIPELINE_INPUT",
+      "element_count": 8,
+      "golden_items_sha256": "91d4ae07891d4981a878f5476b2420c0a5c18d4cdc8c70543e6cadd8281732a0",
+      "golden_set_id": "triage_batch_paths",
+      "item_kind": "ARTIFACT_OCCURRENCE",
+      "materialization_rule": "Map each stored path to its unique registry occurrence and materialize ordinals 1..8.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:triage_batch_paths",
+      "ordinal_base": 1,
+      "output_relations": [
+        "base_catalog_outputs"
+      ],
+      "semantic_role": "TRIAGE_BATCH_INPUTS",
+      "set_id": "triage_batch_paths"
+    },
+    {
+      "absence_semantics": "NONE",
+      "consumption_class": "HISTORICAL_ORDER_ASSERTION",
+      "element_count": 200,
+      "golden_items_sha256": "7b9e82b1e31b77b9e228ae1c1bdbc2380e179516a58b62ffcafaab2f85989a65",
+      "golden_set_id": "triage_candidate_numbers",
+      "item_kind": "MEMBER_WITHIN_ARTIFACT",
+      "materialization_rule": "For each candidate number, reference its containing triage-batch occurrence plus member_ref kind=candidate_number.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:triage_candidate_numbers",
+      "ordinal_base": 1,
+      "output_relations": [
+        "base_catalog_outputs"
+      ],
+      "semantic_role": "TRIAGE_MEMBER_ORDER",
+      "set_id": "triage_candidate_numbers"
+    },
+    {
+      "absence_semantics": "CANDIDATE_92_EXCLUDED",
+      "consumption_class": "PIPELINE_INPUT",
+      "element_count": 199,
+      "golden_items_sha256": "38a3ffa2129de38505972ce211090c8f9201428f67644503822aab3f3a088ca8",
+      "golden_set_id": "base_catalog_work_ids",
+      "item_kind": "ARTIFACT_OCCURRENCE_WITH_MEMBER_ID",
+      "materialization_rule": "Map each work_id to the exact base-dossier occurrence and assign the Golden ordinal.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:base_catalog_work_ids",
+      "ordinal_base": 1,
+      "output_relations": [
+        "base_catalog_outputs",
+        "enriched_catalog_outputs"
+      ],
+      "semantic_role": "USABLE_DOSSIER_INPUTS",
+      "set_id": "base_catalog_work_ids"
+    },
+    {
+      "absence_semantics": "NONE",
+      "consumption_class": "PIPELINE_INPUT",
+      "element_count": 69,
+      "golden_items_sha256": "d2e55a60cd1297d85d966ed7ad476c36ffaf7862180afff609c3f47e52c9c8dd",
+      "golden_set_id": "catalog_69_ids",
+      "item_kind": "MEMBER_WITHIN_ARTIFACT",
+      "materialization_rule": "Reference CATALOG_69_ROOT:CATALOGO_69_CANONICO.json for every member and distinguish items by member_ref kind=catalog_69_id.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:catalog_69_ids",
+      "ordinal_base": 1,
+      "output_relations": [
+        "combined_base_catalog",
+        "combined_enriched_catalog"
+      ],
+      "semantic_role": "EXTERNAL_CATALOG_MEMBER_ORDER",
+      "set_id": "catalog_69_ids"
+    },
+    {
+      "absence_semantics": "88_WORKS_NOT_ENQUEUED",
+      "consumption_class": "PIPELINE_INPUT",
+      "element_count": 111,
+      "golden_items_sha256": "77bd5e43312655583a6b8e3a9643a7db58fbb9e1f1c1caba140bbdd16c4dbc02",
+      "golden_set_id": "enrichment_queue_work_ids",
+      "item_kind": "MEMBER_WITHIN_ARTIFACT",
+      "materialization_rule": "Reference the single checkpoint-state occurrence and distinguish queue entries by member_ref kind=work_id.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:enrichment_queue_work_ids",
+      "ordinal_base": 1,
+      "output_relations": [
+        "enriched_catalog_outputs"
+      ],
+      "semantic_role": "ENRICHMENT_QUEUE_ORDER",
+      "set_id": "enrichment_queue_work_ids"
+    },
+    {
+      "absence_semantics": "NONE",
+      "consumption_class": "PROVENANCE_INPUT",
+      "element_count": 12,
+      "golden_items_sha256": "2ec2e5096c1367c155e37c0d1fb35a8763d44a9e66a8bfe5c4065a0bba1bec73",
+      "golden_set_id": "enrichment_checkpoints",
+      "item_kind": "ARTIFACT_OCCURRENCE_WITH_ORDERED_MEMBERS",
+      "materialization_rule": "Reference each CP occurrence by checkpoint number; preserve its recorded candidate_numbers as ordered members.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:enrichment_checkpoints",
+      "ordinal_base": 1,
+      "output_relations": [
+        "enrichment_decision_evidence"
+      ],
+      "semantic_role": "CHECKPOINT_SEQUENCE",
+      "set_id": "enrichment_checkpoints"
+    },
+    {
+      "absence_semantics": "REMOTE_RECEIPT_GAPS_REMAIN_EVIDENCE_ONLY",
+      "consumption_class": "PROVENANCE_INPUT",
+      "element_count": 128,
+      "golden_items_sha256": "afac00402ee36c5e046ae8e20e324a1afd0a6b2cf5586eacf9510a35cd5b3390",
+      "golden_set_id": "enrichment_capture_paths_lexical",
+      "item_kind": "ARTIFACT_OCCURRENCE",
+      "materialization_rule": "Map every Golden path to one registry occurrence; materialize all 128 ordinals explicitly.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:enrichment_capture_paths_lexical",
+      "ordinal_base": 1,
+      "output_relations": [
+        "enrichment_decision_evidence"
+      ],
+      "semantic_role": "ENRICHMENT_SOURCE_CAPTURE_SEQUENCE",
+      "set_id": "enrichment_capture_paths_lexical"
+    },
+    {
+      "absence_semantics": "88_WORKS_WITHOUT_OVERLAY",
+      "consumption_class": "PIPELINE_INPUT",
+      "element_count": 111,
+      "golden_items_sha256": "64361e9f00c98d6764b6c69277deaf7fd9035c6e8e38ad9c050d40c1cfdbd84a",
+      "golden_set_id": "enrichment_overlay_paths_build_order",
+      "item_kind": "ARTIFACT_OCCURRENCE",
+      "materialization_rule": "Map every Golden overlay path to one registry occurrence; materialize all 111 build ordinals explicitly.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:enrichment_overlay_paths_build_order",
+      "ordinal_base": 1,
+      "output_relations": [
+        "enriched_catalog_outputs"
+      ],
+      "semantic_role": "ENRICHMENT_OVERLAY_INPUTS",
+      "set_id": "enrichment_overlay_paths_build_order"
+    },
+    {
+      "absence_semantics": "NONE",
+      "consumption_class": "OUTPUT_REFERENCE",
+      "element_count": 6,
+      "golden_items_sha256": "7333603852b681c0e91ba474ac668142944e3dee4930bb9be3e631084a6fb222",
+      "golden_set_id": "enriched_payload_paths",
+      "item_kind": "ARTIFACT_OCCURRENCE",
+      "materialization_rule": "Map six payload paths to their exact registry occurrences in persisted manifest order.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:enriched_payload_paths",
+      "ordinal_base": 1,
+      "output_relations": [
+        "enriched_package_manifest"
+      ],
+      "semantic_role": "ENRICHED_PACKAGE_PAYLOADS",
+      "set_id": "enriched_payload_paths"
+    },
+    {
+      "absence_semantics": "GLOBAL_MANIFEST_OMITS_MANIFEST_BASENAMES",
+      "consumption_class": "AUDIT_CLOSURE",
+      "element_count": 852,
+      "golden_items_sha256": "8c1fea8d38cf4c70613b944650c5c184f05b3337ce9bde8bfa9473e108b0ab6b",
+      "golden_set_id": "outer_manifest_member_paths",
+      "item_kind": "ARTIFACT_OCCURRENCE",
+      "materialization_rule": "Map all 852 persisted member paths to registry occurrences and materialize ordinals explicitly.",
+      "multiplicity_policy": "PRESERVE_OCCURRENCES_AND_MEMBER_IDENTITIES",
+      "ordered": true,
+      "ordering_rule_id": "golden:outer_manifest_member_paths",
+      "ordinal_base": 1,
+      "output_relations": [
+        "historical_snapshot"
+      ],
+      "semantic_role": "FINAL_HISTORICAL_SNAPSHOT_MEMBERS",
+      "set_id": "outer_manifest_member_paths"
+    },
+    {
+      "absence_semantics": "NONE",
+      "consumption_class": "PIPELINE_INPUT",
+      "element_count": 3,
+      "golden_items_sha256": "3a2f84ba7db92425142b50432082e5222306293e608b54db622b95d8acba05c0",
+      "golden_set_id": null,
+      "item_kind": "MEMBER_WITHIN_ARTIFACT",
+      "materialization_rule": "Reference the revision-ledger occurrence for each evidence_id; order is not semantically asserted.",
+      "multiplicity_policy": "PRESERVE_THREE_DISTINCT_EVIDENCE_IDS",
+      "ordered": false,
+      "ordering_rule_id": null,
+      "ordinal_base": null,
+      "output_relations": [
+        "enriched_catalog_outputs"
+      ],
+      "semantic_role": "POST_CODEX_REVISION_PATCHES",
+      "set_id": "post_codex_revision_members"
+    }
+  ],
+  "specification_status": "A4A_SPECIFICATION_ONLY_NO_FUNCTIONAL_LOCK"
+}

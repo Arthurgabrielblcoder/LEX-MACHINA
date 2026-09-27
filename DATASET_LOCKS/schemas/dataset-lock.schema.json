@@ -1,0 +1,392 @@
+{
+  "$id": "https://lex-machina.local/schemas/dataset-lock.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "canonicalization": {
+      "const": "json-utf8-lf-sorted-keys-indent-2-final-lf-v1",
+      "type": "string"
+    },
+    "constraints": {
+      "additionalProperties": false,
+      "properties": {
+        "allow_glob": {
+          "const": false,
+          "type": "boolean"
+        },
+        "allow_implicit_resolution": {
+          "const": false,
+          "type": "boolean"
+        },
+        "allow_latest": {
+          "const": false,
+          "type": "boolean"
+        },
+        "allow_regex_discovery": {
+          "const": false,
+          "type": "boolean"
+        },
+        "allow_wildcard": {
+          "const": false,
+          "type": "boolean"
+        },
+        "fail_closed": {
+          "const": true,
+          "type": "boolean"
+        },
+        "legacy_pipeline_authoritative": {
+          "const": true,
+          "type": "boolean"
+        },
+        "ordinal_sequence": {
+          "const": "ONE_BASED_CONTIGUOUS_WHEN_ORDERED",
+          "type": "string"
+        },
+        "restricted_local_absence_result": {
+          "const": "FAIL_CLOSED",
+          "type": "string"
+        },
+        "restricted_local_occurrence_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 3,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "allow_glob",
+        "allow_implicit_resolution",
+        "allow_latest",
+        "allow_regex_discovery",
+        "allow_wildcard",
+        "fail_closed",
+        "legacy_pipeline_authoritative",
+        "ordinal_sequence",
+        "restricted_local_absence_result",
+        "restricted_local_occurrence_ids"
+      ],
+      "type": "object"
+    },
+    "dataset_id": {
+      "const": "d05.catalogo-expansao-200",
+      "type": "string"
+    },
+    "dependencies": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dependency_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "logical_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "occurrence_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "required": {
+            "const": true,
+            "type": "boolean"
+          },
+          "version": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "dependency_id",
+          "logical_id",
+          "occurrence_id",
+          "required",
+          "version"
+        ],
+        "type": "object"
+      },
+      "minItems": 4,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "explicit_absences": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "absence_kind": {
+            "enum": [
+              "NO_ENRICHMENT_OVERLAY_BY_DESIGN",
+              "CANDIDATE_EXCLUDED_FROM_USABLE_CATALOG",
+              "NO_ADDITIONAL_CARD_AFTER_EXAMINATION",
+              "WEB_SOURCE_WITHOUT_COMPLETE_LOCAL_RECEIPT",
+              "REMOTE_FETCH_FAILED_WITH_METADATA_PRESERVED"
+            ],
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "LOCK_OPERATIONAL",
+              "HISTORICAL_EVIDENCE"
+            ],
+            "type": "string"
+          },
+          "member_ref": {
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "candidate_number",
+                  "work_id",
+                  "catalog_69_id",
+                  "checkpoint",
+                  "evidence_id",
+                  "candidate",
+                  "capture_path"
+                ],
+                "type": "string"
+              },
+              "value": {
+                "type": [
+                  "string",
+                  "integer",
+                  "object"
+                ]
+              }
+            },
+            "required": [
+              "kind",
+              "value"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "absence_kind",
+          "category",
+          "member_ref"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "golden_reference": {
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "version": {
+          "const": "d05-golden-reference/1",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sha256",
+        "version"
+      ],
+      "type": "object"
+    },
+    "lock_id": {
+      "const": "d05-historical-parity-v1.lock",
+      "type": "string"
+    },
+    "lock_version": {
+      "const": "1",
+      "type": "string"
+    },
+    "mode": {
+      "const": "SHADOW",
+      "type": "string"
+    },
+    "profile_id": {
+      "const": "d05-historical-parity-v1",
+      "type": "string"
+    },
+    "registry_fragments": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dataset_id": {
+            "const": "d05.catalogo-expansao-200",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "registry_id": {
+      "const": "lex-machina-artifact-registry",
+      "type": "string"
+    },
+    "registry_index_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "selection_sets": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "consumption_class": {
+            "enum": [
+              "PIPELINE_INPUT",
+              "PROVENANCE_INPUT",
+              "HISTORICAL_ORDER_ASSERTION",
+              "OUTPUT_REFERENCE",
+              "AUDIT_CLOSURE"
+            ],
+            "type": "string"
+          },
+          "expected_count": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "expected_items_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "item_kind": {
+            "enum": [
+              "ARTIFACT_OCCURRENCE",
+              "MEMBER_WITHIN_ARTIFACT",
+              "ARTIFACT_OCCURRENCE_WITH_MEMBER_ID",
+              "ARTIFACT_OCCURRENCE_WITH_ORDERED_MEMBERS"
+            ],
+            "type": "string"
+          },
+          "items": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "logical_id": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "member_ref": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "kind": {
+                      "enum": [
+                        "candidate_number",
+                        "work_id",
+                        "catalog_69_id",
+                        "checkpoint",
+                        "evidence_id",
+                        "candidate",
+                        "capture_path"
+                      ],
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": [
+                        "string",
+                        "integer",
+                        "object"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                "occurrence_id": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "ordinal": {
+                  "minimum": 1,
+                  "type": "integer"
+                },
+                "version": {
+                  "minLength": 1,
+                  "type": "string"
+                }
+              },
+              "required": [
+                "logical_id",
+                "occurrence_id",
+                "version"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "ordered": {
+            "type": "boolean"
+          },
+          "ordering_rule_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "semantic_role": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "set_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "consumption_class",
+          "expected_count",
+          "expected_items_sha256",
+          "item_kind",
+          "items",
+          "ordered",
+          "ordering_rule_id",
+          "semantic_role",
+          "set_id"
+        ],
+        "type": "object"
+      },
+      "minItems": 11,
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "canonicalization",
+    "constraints",
+    "dataset_id",
+    "dependencies",
+    "explicit_absences",
+    "golden_reference",
+    "lock_id",
+    "lock_version",
+    "mode",
+    "profile_id",
+    "registry_fragments",
+    "registry_id",
+    "registry_index_sha256",
+    "schema_version",
+    "selection_sets"
+  ],
+  "title": "LEX MACHINA D05 Shadow Dataset Lock",
+  "type": "object"
+}

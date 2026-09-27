@@ -1,0 +1,125 @@
+{
+  "all_negative_tests_fail_closed": true,
+  "lock_id": "d05-historical-parity-v1.lock",
+  "lock_sha256": "5d9f6d0ba4fa1895f70a139510b0d441d62e187eb63ad99de030820946c29f39",
+  "negative_tests": [
+    {
+      "actual_result": "FAIL",
+      "error": "occurrence_id inexistente: D05_MANAGED_ROOT:NAO_EXISTE.json",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "occurrence_id inexistente",
+      "test_id": "N01"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "hash do Registry index diverge",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "hash do Registry incorreto",
+      "test_id": "N02"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "hash da Golden Reference diverge",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "hash da Golden Reference incorreto",
+      "test_id": "N03"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "ordinais inválidos: triage_batch_paths",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "ordinal duplicado",
+      "test_id": "N04"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "ordinais inválidos: triage_batch_paths",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "ordinal fora da sequência",
+      "test_id": "N05"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "total semântico diverge de 1699",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "item extra",
+      "test_id": "N06"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "total semântico diverge de 1699",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "multiplicidade reduzida",
+      "test_id": "N07"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "schema lock.dependencies: poucos itens",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "dependência removida",
+      "test_id": "N08"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "ocorrência selecionada ausente: D05_MANAGED_ROOT:03_FONTES/BUSCA_118.json",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "restricted_local ausente",
+      "test_id": "N09"
+    },
+    {
+      "actual_result": "FAIL",
+      "error": "valor de seleção implícita proibido em lock.selection_sets[0].items[0].logical_id: '*'",
+      "expected_result": "FAIL",
+      "passed": true,
+      "return_code": 1,
+      "test": "wildcard introduzido",
+      "test_id": "N10"
+    }
+  ],
+  "negative_tests_failed_closed": 10,
+  "negative_tests_total": 10,
+  "positive_verification": {
+    "ABSENCE_MATCH": true,
+    "DEPENDENCY_MATCH": true,
+    "EXTRA_ITEMS": 0,
+    "MEMBER_MATCH": true,
+    "MULTIPLICITY_MATCH": true,
+    "ORDER_MATCH": true,
+    "absence_counts": {
+      "CANDIDATE_EXCLUDED_FROM_USABLE_CATALOG": 1,
+      "NO_ADDITIONAL_CARD_AFTER_EXAMINATION": 47,
+      "NO_ENRICHMENT_OVERLAY_BY_DESIGN": 88,
+      "REMOTE_FETCH_FAILED_WITH_METADATA_PRESERVED": 6,
+      "WEB_SOURCE_WITHOUT_COMPLETE_LOCAL_RECEIPT": 9
+    },
+    "dependencies": 4,
+    "lock_id": "d05-historical-parity-v1.lock",
+    "ordered_sets": 10,
+    "registry_entries": 855,
+    "restricted_local": 3,
+    "result": "PASS",
+    "selection_sets": 11,
+    "semantic_items": 1699,
+    "unordered_sets": 1
+  },
+  "positive_verification_return_code": 0,
+  "test_mode": "TEMPORARY_CANONICAL_COPIES_AND_READ_ONLY_MISSING_SIMULATION"
+}
