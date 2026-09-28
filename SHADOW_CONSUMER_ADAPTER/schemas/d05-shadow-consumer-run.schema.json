@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:lex-machina:d05-shadow-consumer-run:1",
+  "additionalProperties": false,
+  "properties": {
+    "adapter_errors": {"items": {"$ref": "#/$defs/error"}, "type": "array"},
+    "adapter_version": {"minLength": 1, "type": "string"},
+    "artifact_class": {"const": "DERIVED_DIAGNOSTIC"},
+    "authority": {"const": "NON_AUTHORITATIVE"},
+    "bindings": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "status": {"const": "PROVIDED"},
+          "storage_root_id": {"minLength": 1, "type": "string"}
+        },
+        "required": ["storage_root_id", "status"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "comparison": {"type": "object"},
+    "consumer": {"minLength": 1, "type": "string"},
+    "diagnostic_status": {"enum": ["NOT_REQUESTED", "PENDING", "WRITTEN", "WRITE_FAILED"]},
+    "legacy_authoritative": {"const": true},
+    "legacy_exit_status": {"type": "integer"},
+    "legacy_output_hashes": {
+      "additionalProperties": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+      "type": "object"
+    },
+    "legacy_runtime_summary": {"type": "object"},
+    "legacy_status": {"enum": ["PASS", "FAIL"]},
+    "mismatches": {"items": {"type": "object"}, "type": "array"},
+    "performance": {
+      "additionalProperties": false,
+      "properties": {
+        "adapter_wall_duration_ms": {"minimum": 0, "type": "number"},
+        "comparison_duration_ms": {"minimum": 0, "type": "number"},
+        "diagnostic_write_duration_ms": {"minimum": 0, "type": "number"},
+        "legacy_duration_ms": {"minimum": 0, "type": "number"},
+        "overhead_absolute_ms": {"minimum": 0, "type": "number"},
+        "overhead_percent_vs_direct_legacy": {"minimum": 0, "type": ["number", "null"]},
+        "shadow_duration_ms": {"minimum": 0, "type": "number"},
+        "shadow_overhead_ms": {"minimum": 0, "type": "number"},
+        "shadow_overhead_percent": {"minimum": 0, "type": ["number", "null"]},
+        "shadow_resolution_duration_ms": {"minimum": 0, "type": "number"},
+        "total_duration_ms": {"minimum": 0, "type": "number"}
+      },
+      "required": [
+        "legacy_duration_ms", "shadow_duration_ms", "shadow_resolution_duration_ms",
+        "comparison_duration_ms", "diagnostic_write_duration_ms", "total_duration_ms",
+        "adapter_wall_duration_ms", "shadow_overhead_ms", "overhead_absolute_ms",
+        "shadow_overhead_percent", "overhead_percent_vs_direct_legacy"
+      ],
+      "type": "object"
+    },
+    "shadow_authoritative": {"const": false},
+    "shadow_did_affect_output": {"const": false},
+    "shadow_enabled": {"type": "boolean"},
+    "shadow_errors": {"items": {"$ref": "#/$defs/error"}, "type": "array"},
+    "shadow_runtime_summary": {"type": "object"},
+    "shadow_status": {"enum": ["SHADOW_DISABLED", "SHADOW_OK", "SHADOW_FAIL_CLOSED", "SHADOW_INTERNAL_ERROR"]}
+  },
+  "required": [
+    "artifact_class", "authority", "adapter_version", "consumer", "legacy_authoritative",
+    "shadow_authoritative", "shadow_enabled", "legacy_status", "legacy_exit_status",
+    "shadow_status", "legacy_runtime_summary", "shadow_runtime_summary", "comparison",
+    "mismatches", "shadow_errors", "adapter_errors", "legacy_output_hashes",
+    "shadow_did_affect_output", "bindings", "performance", "diagnostic_status"
+  ],
+  "type": "object",
+  "$defs": {
+    "error": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {"minLength": 1, "type": "string"},
+        "message": {"type": "string"}
+      },
+      "required": ["code", "message"],
+      "type": "object"
+    }
+  }
+}

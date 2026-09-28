@@ -1,0 +1,56 @@
+{
+  "adapter_phase": "SCA1B1",
+  "adapter_scope": "ISOLATED_FIXTURES_AND_FAKES_ONLY",
+  "consumer_executed": false,
+  "consumer_sha256": "4e53ca2a87bd0577facb4461b09b685223c4daabe869cfaff81610e6cdc66a7d",
+  "critical_isolation": {
+    "passed": 1,
+    "run": 1
+  },
+  "failures": [],
+  "functional_outputs_produced": false,
+  "negative": {
+    "cases": [
+      "test_negative_01_invalid_registry_is_fail_closed",
+      "test_negative_02_invalid_lock_is_fail_closed",
+      "test_negative_03_missing_binding_is_fail_closed",
+      "test_negative_04_missing_restricted_local_is_fail_closed",
+      "test_negative_05_shadow_hash_mismatch",
+      "test_negative_06_shadow_member_mismatch",
+      "test_negative_07_order_mismatch",
+      "test_negative_08_multiplicity_mismatch",
+      "test_negative_09_adapter_exception_visible",
+      "test_negative_10_diagnostic_not_writable_preserves_legacy",
+      "test_negative_11_secret_and_signed_url_are_redacted",
+      "test_negative_12_shadow_worker_failure_preserves_legacy"
+    ],
+    "passed": 12,
+    "planned_minimum": 12,
+    "run": 12
+  },
+  "pipeline_executed": false,
+  "positive": {
+    "cases": [
+      "test_positive_01_flag_defaults_off",
+      "test_positive_02_off_does_not_require_registry",
+      "test_positive_03_off_does_not_require_lock",
+      "test_positive_04_off_does_not_require_bindings_or_resolver_import",
+      "test_positive_05_legacy_authority_true",
+      "test_positive_06_shadow_authority_false",
+      "test_positive_07_capture_preserves_order",
+      "test_positive_08_capture_preserves_multiplicity",
+      "test_positive_09_first_functional_write_seals_capture",
+      "test_positive_10_comparison_match_preserves_not_observable",
+      "test_positive_11_diagnostic_is_safe_and_noncanonical",
+      "test_positive_12_shadow_never_changes_simulated_legacy",
+      "test_positive_13_performance_formula_and_fields",
+      "test_positive_14_consumer_hash_is_unchanged_without_execution",
+      "test_positive_15_schema_requires_authority_and_safety_fields"
+    ],
+    "passed": 15,
+    "planned_minimum": 12,
+    "run": 15
+  },
+  "result": "PASS",
+  "tests_run": 30
+}
