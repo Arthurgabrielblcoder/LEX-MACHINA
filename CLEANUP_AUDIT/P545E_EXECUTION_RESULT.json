@@ -1,0 +1,897 @@
+{
+ "schema_version": "lex-machina-p545e/1",
+ "status": "P545E_CONCLUIDA",
+ "policy": "PROTECTED545_RELOCATION/PROTECTED545_RELOCATION_POLICY_V2.md",
+ "commits": {
+  "pre": "d114f68aed7828a98df127cdb06976de4255f2ef",
+  "batch1": "2afc9976b426e758c0c904f724eebca467ec5b74",
+  "batch3": "a2192f558234b87057130a2b227a952f6747445e"
+ },
+ "tags": [
+  "pre-protected545-relocation-2026-09-28",
+  "protected545-relocation-batch1-2026-09-28",
+  "protected545-relocation-idx-batch-2026-09-28"
+ ],
+ "ledger": {
+  "path": "PROTECTED545_RELOCATION/ledger/P545_RELOCATION_LEDGER.json",
+  "head": {
+   "count": 230,
+   "event_hash": "4665bae677a9dd5bdfe8e4f04df537a48d1fce994dc01ab22222618dda436ae1"
+  },
+  "sha256": "b1522733cddf42bda9239aef1d4fe00b7fa7273900c4243be9af9606bcf44b52",
+  "events": 230,
+  "event_types": [
+   "RELOCATE"
+  ]
+ },
+ "summary": {
+  "AUTHORIZED": 29,
+  "MOVED": 29,
+  "DEFERRED": 0,
+  "FAILED": 0,
+  "BYTES_RELOCATED": 2857446527,
+  "FILES_RELOCATED": 22273,
+  "PROTECTED_OCCURRENCES_RELOCATED": 230,
+  "ORIGINAL_PATH_PRESENT_COUNT": 315,
+  "VALID_RELOCATION_COUNT": 230,
+  "MISSING_COUNT": 0,
+  "HASH_MISMATCH_COUNT": 0,
+  "AMBIGUOUS_COUNT": 0,
+  "INVALID_LINEAGE_COUNT": 0,
+  "IDX_RELOCATED": 109,
+  "IDX_VALIDATED": 109,
+  "IDX_PROTECTED_OCCURRENCES_OK": 130,
+  "LEGACY_VIEW_545": 545,
+  "FROZEN_R1D_SUPPORT_INTEGRITY_ON_VIEW": true,
+  "V2_281": 281,
+  "V2_281_IN_VIEW": 281,
+  "ENRIQUECIDO_V1": 7,
+  "REGISTRY": "PASS",
+  "LOCK": "PASS",
+  "RESOLVER": "PASS",
+  "ORIGINAL_PROOF_SHA256": "a319f0ea917b0e6c00e037ba5b7a5c97b351d1b0af00b79862ae98db7cfd91c2",
+  "D01_SELECTION_UNCHANGED": true,
+  "ROLLBACK_READY": true,
+  "NON_AUTHORIZED_CANDIDATES_UNTOUCHED": "26/26",
+  "E2E5_E2E6_E2E41_PRESENT": {
+   "LEX-MACHINAETAPA_2E5": true,
+   "LEX-MACHINA_ETAPA_2E6_SD_TESTE": true,
+   "LEX-MACHINAETAPA_2E41": true
+  },
+  "ROOT_CANDIDATES_BEFORE": 59,
+  "ROOT_CANDIDATES_AFTER": 33,
+  "ROOT_DIRECTORIES_BEFORE": 72,
+  "ROOT_DIRECTORIES_AFTER": 46,
+  "FIRMWARE_SUBDIRS_MOVED": 3,
+  "ARCHIVE_ROOT": "C:\\LMA\\p545e\\20260928",
+  "ARCHIVE_IS_BACKUP": false,
+  "DISK_SPACE_FREED": 0,
+  "PERMANENT_DELETIONS": 0,
+  "LEDGER_HEAD": {
+   "count": 230,
+   "event_hash": "4665bae677a9dd5bdfe8e4f04df537a48d1fce994dc01ab22222618dda436ae1"
+  }
+ },
+ "final_checks": {
+  "label": "final",
+  "proof_sha256": "a319f0ea917b0e6c00e037ba5b7a5c97b351d1b0af00b79862ae98db7cfd91c2",
+  "derived": {
+   "result": "PASS",
+   "counts": {
+    "ORIGINAL_PATH_PRESENT": 315,
+    "VALID_RELOCATION": 230
+   },
+   "ledger_errors": [],
+   "idx_occurrences": 130,
+   "idx_ok": 130
+  },
+  "registry": "PASS",
+  "lock": "PASS",
+  "resolver": "PASS",
+  "v2_281_live": {
+   "total": 281,
+   "identical": 281
+  },
+  "enriquecido_v1": 7,
+  "d01_selection": {
+   "marker_files": 55,
+   "selection_sha256": "0a1a32ba421581b50f8a07c8ec0dfa6f43e6403ceac6b15a67acd1347733cf91"
+  },
+  "git": {
+   "head": "a2192f558234b87057130a2b227a952f6747445e",
+   "tracked_changes": [],
+   "staged": []
+  },
+  "non_authorized_present": {
+   "total": 26,
+   "present": 26,
+   "e2e41_present": true
+  },
+  "legacy_view": {
+   "view": "C:\\LMA\\lv\\final",
+   "materialize": {
+    "result": "PASS",
+    "occurrences": 545,
+    "target": "C:\\LMA\\lv\\final",
+    "relocated": 230
+   },
+   "protected545_in_view": 545,
+   "frozen_r1d_support_integrity": {
+    "checked_at": "2026-09-28T18:49:55.515866+00:00",
+    "preexisting_v2_checked": 162,
+    "preexisting_v2_changed": 0,
+    "protected_checked": 545,
+    "protected_changed": 0,
+    "holdout_sha256": "b71a87a8292ac621a209201e2082935813563f8002f9203430af3b781414adf1",
+    "holdout_content_opened": false,
+    "passed": true
+   },
+   "v2_281_in_view": {
+    "total": 281,
+    "identical": 281
+   },
+   "proof_sha_in_view": "a319f0ea917b0e6c00e037ba5b7a5c97b351d1b0af00b79862ae98db7cfd91c2"
+  },
+  "PASS": true,
+  "authorized": {
+   "total": 29,
+   "moved_absent_at_origin": 29,
+   "present_in_archive": 29,
+   "bytes": 2857446527
+  },
+  "not_authorized": [
+   {
+    "candidate_id": "W2R-002",
+    "path": "CF_SEGMENTADA_V2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-031",
+    "path": "LEX-MACHINAETAPA_2E5",
+    "classification": "READY_AFTER_MULTIPLE_FIXES",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-032",
+    "path": "LEX-MACHINA_ETAPA_2E6_SD_TESTE",
+    "classification": "READY_AFTER_MULTIPLE_FIXES",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-039",
+    "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_ASTRA_V1",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-040",
+    "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_CAUSAL_V132_V1",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-043",
+    "path": "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V2_FINAL",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-044",
+    "path": "LEX_MACHINA_REFERENCIAS_BENCHMARK_69_HUMANO_V1",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-045",
+    "path": "LEX_MACHINA_REFERENCIAS_BENCHMARK_CF_V2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-048",
+    "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-049",
+    "path": "LEX_MACHINA_REFERENCIAS_CF_ENGINE_RUN_V1",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-052",
+    "path": "LEX_MACHINA_REFERENCIAS_CF_REVISAO_ALTA_CONFIANCA_V1",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-054",
+    "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-055",
+    "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_1",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-056",
+    "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-057",
+    "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-058",
+    "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_1",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-059",
+    "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-064",
+    "path": "LEX_MACHINA_REFERENCIAS_FORCA_TEMA_LOTE45_V1_FINAL",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-065",
+    "path": "LEX_MACHINA_REFERENCIAS_PREPARACAO_V14_ALPHA2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-066",
+    "path": "LEX_MACHINA_REFERENCIAS_REFINAMENTO_R7_V2",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-068",
+    "path": "LEX_MACHINA_REFERENCIAS_TESTE_COMPLETO_ALPHA3_V1",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-070",
+    "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-071",
+    "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA2",
+    "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-072",
+    "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA3",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-077",
+    "path": "firmware/LEX MAQUINA INO 2",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   },
+   {
+    "candidate_id": "W2R-081",
+    "path": "firmware/LEX_MACHINA_v7.12.0_JURIS_CF_EXPANDIDA",
+    "classification": "STILL_ACTIVE_KEEP",
+    "present": true
+   }
+  ],
+  "special": {
+   "LEX-MACHINAETAPA_2E5": true,
+   "LEX-MACHINA_ETAPA_2E6_SD_TESTE": true,
+   "LEX-MACHINAETAPA_2E41": true
+  },
+  "root_dirs_now": 46
+ },
+ "moves": [
+  {
+   "candidate_id": "W2R-062",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA3",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 11,
+   "size_bytes": 35676,
+   "protected_members": 11,
+   "idx": 0,
+   "inventory_sha256_pre": "44298f688c521b9c5793edd27c6e428bd3aa585156b27422ca27cbe52f79e421",
+   "inventory_sha256_post": "44298f688c521b9c5793edd27c6e428bd3aa585156b27422ca27cbe52f79e421",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    1,
+    11
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA3",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA3",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-061",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA2",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 7,
+   "size_bytes": 45079,
+   "protected_members": 7,
+   "idx": 0,
+   "inventory_sha256_pre": "d440ba700704d5adf57022f2e7716f8723ddd38e09e8bb7d771bdcb46a0d6923",
+   "inventory_sha256_post": "d440ba700704d5adf57022f2e7716f8723ddd38e09e8bb7d771bdcb46a0d6923",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    12,
+    18
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA2",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA2",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-060",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 7,
+   "size_bytes": 52129,
+   "protected_members": 7,
+   "idx": 0,
+   "inventory_sha256_pre": "a362e28447c18395093cfb6dac2b3b7581e3ca49215cf133e552bc188cba238d",
+   "inventory_sha256_post": "a362e28447c18395093cfb6dac2b3b7581e3ca49215cf133e552bc188cba238d",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    19,
+    25
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-051",
+   "path": "LEX_MACHINA_REFERENCIAS_CF_J5_1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 2,
+   "size_bytes": 81566,
+   "protected_members": 2,
+   "idx": 0,
+   "inventory_sha256_pre": "0ce15825b029b88d10bc60de20c6d8d46ed53ff0d9cb29b474a94bbcdffc9c30",
+   "inventory_sha256_post": "0ce15825b029b88d10bc60de20c6d8d46ed53ff0d9cb29b474a94bbcdffc9c30",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    26,
+    27
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_CF_J5_1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_CF_J5_1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-050",
+   "path": "LEX_MACHINA_REFERENCIAS_CF_J5",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 6,
+   "size_bytes": 100385,
+   "protected_members": 6,
+   "idx": 0,
+   "inventory_sha256_pre": "e963f94d2d6906f900f8ba0e37450ac99950b287957e9cd842515a4e7e4c57ac",
+   "inventory_sha256_post": "e963f94d2d6906f900f8ba0e37450ac99950b287957e9cd842515a4e7e4c57ac",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    28,
+    33
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_CF_J5",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_CF_J5",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-046",
+   "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_EXPANSAO_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 7,
+   "size_bytes": 127575,
+   "protected_members": 7,
+   "idx": 0,
+   "inventory_sha256_pre": "f08c7de05833026ffd90cbe456713d48d715c169f80748407aa1a9041b76777e",
+   "inventory_sha256_post": "f08c7de05833026ffd90cbe456713d48d715c169f80748407aa1a9041b76777e",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    34,
+    40
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_CATALOGO_EXPANSAO_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_CATALOGO_EXPANSAO_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-069",
+   "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_EXTERNA_R7_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 5,
+   "size_bytes": 154331,
+   "protected_members": 5,
+   "idx": 0,
+   "inventory_sha256_pre": "3eb25a4fa71fad2f05ffdefec21313e035c7f31469fb6a71e209ca88b288a788",
+   "inventory_sha256_post": "3eb25a4fa71fad2f05ffdefec21313e035c7f31469fb6a71e209ca88b288a788",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    41,
+    45
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_VALIDACAO_EXTERNA_R7_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_VALIDACAO_EXTERNA_R7_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-041",
+   "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_CONTRATO_ENGINE_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 10,
+   "size_bytes": 162521,
+   "protected_members": 10,
+   "idx": 0,
+   "inventory_sha256_pre": "0b85bda7b716eb7a9efeb827fa620c291f1c7570c0ee32777b2250db5829cbdf",
+   "inventory_sha256_post": "0b85bda7b716eb7a9efeb827fa620c291f1c7570c0ee32777b2250db5829cbdf",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    46,
+    55
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_AUDITORIA_CONTRATO_ENGINE_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_AUDITORIA_CONTRATO_ENGINE_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-042",
+   "path": "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 8,
+   "size_bytes": 165113,
+   "protected_members": 8,
+   "idx": 0,
+   "inventory_sha256_pre": "60891746eb2e811502a1167baab999db9400f99600ba110e957dc523d424d54c",
+   "inventory_sha256_post": "60891746eb2e811502a1167baab999db9400f99600ba110e957dc523d424d54c",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    56,
+    63
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-053",
+   "path": "LEX_MACHINA_REFERENCIAS_DIAGNOSTICO_NUCLEOS_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 8,
+   "size_bytes": 238381,
+   "protected_members": 8,
+   "idx": 0,
+   "inventory_sha256_pre": "5a2d9bf3d602e31386109bbcacadb6559e8185dd94ac153a1d7af0aa9bccaae7",
+   "inventory_sha256_post": "5a2d9bf3d602e31386109bbcacadb6559e8185dd94ac153a1d7af0aa9bccaae7",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    64,
+    71
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_DIAGNOSTICO_NUCLEOS_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_DIAGNOSTICO_NUCLEOS_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-047",
+   "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 8,
+   "size_bytes": 316045,
+   "protected_members": 8,
+   "idx": 0,
+   "inventory_sha256_pre": "a18d8f2002af0471c31bab7de0ce04de371fb8954d831d00441eb51179b8a677",
+   "inventory_sha256_post": "a18d8f2002af0471c31bab7de0ce04de371fb8954d831d00441eb51179b8a677",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    72,
+    79
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-067",
+   "path": "LEX_MACHINA_REFERENCIAS_TEMAS_LOTE45_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 9,
+   "size_bytes": 408005,
+   "protected_members": 9,
+   "idx": 0,
+   "inventory_sha256_pre": "c6313d2b4f762dd675d3f5c5bd04a4dd0ef920d124845f796d587dd6dd7e1139",
+   "inventory_sha256_post": "c6313d2b4f762dd675d3f5c5bd04a4dd0ef920d124845f796d587dd6dd7e1139",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    80,
+    88
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_TEMAS_LOTE45_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_TEMAS_LOTE45_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-078",
+   "path": "firmware/LEX_MACHINA_BACKUP_POS_CODEX_16-09",
+   "family": "FIRMWARE_ANTIGO",
+   "lot": "P545E_1",
+   "file_count": 4,
+   "size_bytes": 831728,
+   "protected_members": 4,
+   "idx": 0,
+   "inventory_sha256_pre": "ea592e08c6278b39a2e3301ee4db031f8756d135ac11225e3d4273a067f90028",
+   "inventory_sha256_post": "ea592e08c6278b39a2e3301ee4db031f8756d135ac11225e3d4273a067f90028",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    89,
+    92
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\firmware\\LEX_MACHINA_BACKUP_POS_CODEX_16-09",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\firmware\\LEX_MACHINA_BACKUP_POS_CODEX_16-09",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-079",
+   "path": "firmware/LEX_MACHINA_v7.11.0_JURIS_CF_PILOTO",
+   "family": "FIRMWARE_ANTIGO",
+   "lot": "P545E_1",
+   "file_count": 6,
+   "size_bytes": 882401,
+   "protected_members": 6,
+   "idx": 0,
+   "inventory_sha256_pre": "f96796a6a55bd11d11e0d4dca104591d0e0efd93ef96b0ede97006f2fba1965e",
+   "inventory_sha256_post": "f96796a6a55bd11d11e0d4dca104591d0e0efd93ef96b0ede97006f2fba1965e",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    93,
+    98
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\firmware\\LEX_MACHINA_v7.11.0_JURIS_CF_PILOTO",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\firmware\\LEX_MACHINA_v7.11.0_JURIS_CF_PILOTO",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-080",
+   "path": "firmware/LEX_MACHINA_v7.11.1_JURIS_CF_PILOTO",
+   "family": "FIRMWARE_ANTIGO",
+   "lot": "P545E_1",
+   "file_count": 7,
+   "size_bytes": 890116,
+   "protected_members": 7,
+   "idx": 0,
+   "inventory_sha256_pre": "9b55277000fe3b3615b0c98dc5a7ffa94db74008eaa71ddef6816bb2185c4a72",
+   "inventory_sha256_post": "9b55277000fe3b3615b0c98dc5a7ffa94db74008eaa71ddef6816bb2185c4a72",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    99,
+    105
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\firmware\\LEX_MACHINA_v7.11.1_JURIS_CF_PILOTO",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\firmware\\LEX_MACHINA_v7.11.1_JURIS_CF_PILOTO",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-063",
+   "path": "LEX_MACHINA_REFERENCIAS_EXPERIMENTO_24_VS_69_V1",
+   "family": "REFERENCIAS_V1",
+   "lot": "P545E_1",
+   "file_count": 16,
+   "size_bytes": 27973403,
+   "protected_members": 16,
+   "idx": 0,
+   "inventory_sha256_pre": "3b83bf0e87f1e00bb637327a079007601990f7e65fb9c98f51f9676faa8a05f6",
+   "inventory_sha256_post": "3b83bf0e87f1e00bb637327a079007601990f7e65fb9c98f51f9676faa8a05f6",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    106,
+    121
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_REFERENCIAS_EXPERIMENTO_24_VS_69_V1",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_REFERENCIAS_EXPERIMENTO_24_VS_69_V1",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-036",
+   "path": "LEX_MACHINA_JURIS_CF_J3",
+   "family": "JURIS_CF_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 35,
+   "size_bytes": 40864,
+   "protected_members": 2,
+   "idx": 2,
+   "inventory_sha256_pre": "468737fcdfd92fc50bc93cffff2e62a5c4d07a1fc3362c66e0f0eb6e3981ff56",
+   "inventory_sha256_post": "468737fcdfd92fc50bc93cffff2e62a5c4d07a1fc3362c66e0f0eb6e3981ff56",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    122,
+    123
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_JURIS_CF_J3",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_JURIS_CF_J3",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-035",
+   "path": "LEX_MACHINA_JURIS_CF_J2_5",
+   "family": "JURIS_CF_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 13,
+   "size_bytes": 260073,
+   "protected_members": 2,
+   "idx": 2,
+   "inventory_sha256_pre": "9f163b41008cdd8f41d9bf45d041f8a86db9440b7fe0337264736439bc01074d",
+   "inventory_sha256_post": "9f163b41008cdd8f41d9bf45d041f8a86db9440b7fe0337264736439bc01074d",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    124,
+    125
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_JURIS_CF_J2_5",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_JURIS_CF_J2_5",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-038",
+   "path": "LEX_MACHINA_JURIS_CF_J4_6",
+   "family": "JURIS_CF_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 229,
+   "size_bytes": 279831,
+   "protected_members": 2,
+   "idx": 2,
+   "inventory_sha256_pre": "deb890736d206495355863b1d0ae009dd6fa61d89094655c42febd34cb83918a",
+   "inventory_sha256_post": "deb890736d206495355863b1d0ae009dd6fa61d89094655c42febd34cb83918a",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    126,
+    127
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_JURIS_CF_J4_6",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_JURIS_CF_J4_6",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-034",
+   "path": "LEX_MACHINA_JURIS_CF_J2",
+   "family": "JURIS_CF_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 14,
+   "size_bytes": 347908,
+   "protected_members": 2,
+   "idx": 2,
+   "inventory_sha256_pre": "433bd8e0aac27021d38089a02a9a1f6ce3cbb06b8226c7e21fc79504c9911e99",
+   "inventory_sha256_post": "433bd8e0aac27021d38089a02a9a1f6ce3cbb06b8226c7e21fc79504c9911e99",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    128,
+    129
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_JURIS_CF_J2",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_JURIS_CF_J2",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-037",
+   "path": "LEX_MACHINA_JURIS_CF_J4",
+   "family": "JURIS_CF_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 84,
+   "size_bytes": 7436773,
+   "protected_members": 2,
+   "idx": 2,
+   "inventory_sha256_pre": "d47aa18951b5272bf6319a56f6f53e71f7d8cdec0ebc9074b69ae23d56c2b3ff",
+   "inventory_sha256_post": "d47aa18951b5272bf6319a56f6f53e71f7d8cdec0ebc9074b69ae23d56c2b3ff",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    130,
+    131
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_JURIS_CF_J4",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_JURIS_CF_J4",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-074",
+   "path": "LEX_MACHINA_UPDATER_RELATIONS_V2",
+   "family": "RELATIONS_VERSOES_ANTIGAS",
+   "lot": "P545E_3",
+   "file_count": 1696,
+   "size_bytes": 223029243,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "c43a1311ca2fb7117c3a1b4728803eb5e2f0015aa5cc9a821e7335ab1cac3144",
+   "inventory_sha256_post": "c43a1311ca2fb7117c3a1b4728803eb5e2f0015aa5cc9a821e7335ab1cac3144",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    132,
+    140
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_UPDATER_RELATIONS_V2",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_UPDATER_RELATIONS_V2",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-013",
+   "path": "LEX-MACHINAETAPA_2D2",
+   "family": "UPDATER_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 1739,
+   "size_bytes": 224619125,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "1150d4278681d93b1e8c6d854effa11afb83e9a92ae5399a5ac7c5ef9636db2a",
+   "inventory_sha256_post": "1150d4278681d93b1e8c6d854effa11afb83e9a92ae5399a5ac7c5ef9636db2a",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    141,
+    149
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX-MACHINAETAPA_2D2",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX-MACHINAETAPA_2D2",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-003",
+   "path": "LEX-MACHINAETAPA_2C",
+   "family": "UPDATER_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 1734,
+   "size_bytes": 225107994,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "01eca792055effe6a36db9418e4172b11954c877d169a57cbc5cbc6646350b6a",
+   "inventory_sha256_post": "01eca792055effe6a36db9418e4172b11954c877d169a57cbc5cbc6646350b6a",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    150,
+    158
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX-MACHINAETAPA_2C",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX-MACHINAETAPA_2C",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-004",
+   "path": "LEX-MACHINAETAPA_2D",
+   "family": "UPDATER_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 1736,
+   "size_bytes": 225551763,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "e11d84c8d9b3b19a5f0a47162bcf32298e9067a0e61c9560bb8d6ca73002713c",
+   "inventory_sha256_post": "e11d84c8d9b3b19a5f0a47162bcf32298e9067a0e61c9560bb8d6ca73002713c",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    159,
+    167
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX-MACHINAETAPA_2D",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX-MACHINAETAPA_2D",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-075",
+   "path": "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+   "family": "RELATIONS_VERSOES_ANTIGAS",
+   "lot": "P545E_3",
+   "file_count": 1704,
+   "size_bytes": 252414298,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "2a55733194c9556d1ecf93d2e527bc370101b3d7318119d9f1ed9d03d67dee86",
+   "inventory_sha256_post": "2a55733194c9556d1ecf93d2e527bc370101b3d7318119d9f1ed9d03d67dee86",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    168,
+    176
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-001",
+   "path": "1- LEX-MACHINAETAPA_2D3",
+   "family": "UPDATER_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 2060,
+   "size_bytes": 255003071,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "f815dddc95215f90c6bea23b4fd5539415f5b474efcb9d0b292350ca048166b6",
+   "inventory_sha256_post": "f815dddc95215f90c6bea23b4fd5539415f5b474efcb9d0b292350ca048166b6",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    177,
+    185
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\1- LEX-MACHINAETAPA_2D3",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\1- LEX-MACHINAETAPA_2D3",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-073",
+   "path": "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+   "family": "BACKUPS_MANUAIS",
+   "lot": "P545E_3",
+   "file_count": 4197,
+   "size_bytes": 456585722,
+   "protected_members": 9,
+   "idx": 9,
+   "inventory_sha256_pre": "37b24f7a413e998d54740707348554caf62e82e5c3b82f54e74386ceb4ccec7d",
+   "inventory_sha256_post": "37b24f7a413e998d54740707348554caf62e82e5c3b82f54e74386ceb4ccec7d",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    186,
+    194
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+   "rollback_possible": true
+  },
+  {
+   "candidate_id": "W2R-076",
+   "path": "updater_stage2a_corrigida_v2",
+   "family": "UPDATER_ETAPAS",
+   "lot": "P545E_3",
+   "file_count": 6911,
+   "size_bytes": 954305408,
+   "protected_members": 36,
+   "idx": 36,
+   "inventory_sha256_pre": "368c325dccc5ed32250b47914412b2ec5a2d67b493cd5a0276a946fa9e852d70",
+   "inventory_sha256_post": "368c325dccc5ed32250b47914412b2ec5a2d67b493cd5a0276a946fa9e852d70",
+   "byte_identity_verified": true,
+   "ledger_events": [
+    195,
+    230
+   ],
+   "rollback_from": "C:\\LMA\\p545e\\20260928\\updater_stage2a_corrigida_v2",
+   "rollback_to": "C:\\GitHub\\LEX-MACHINA\\updater_stage2a_corrigida_v2",
+   "rollback_possible": true
+  }
+ ],
+ "operational_rules": [
+  "HISTORICAL_TOOL_REQUIRES_LEGACY_VIEW: r1d_support.integrity()/r1d1_pipeline/gates R1D, consolidate_labels, compare_pilot, run_regression*, enriquecer_v1.py, gerar_manifest.py so sobre visao reconstruida (materialize_legacy_view.py)",
+  "Nunca executar montar_sd_teste_relations_v2.py (2E6) no repo vivo",
+  "Rollback = eventos ROLLBACK append-only + rename inverso + reverificacao de inventario"
+ ],
+ "warnings": [
+  "core.autocrlf=true e o ledger nao tem regra em .gitattributes: um checkout novo gravaria CRLF; a validade do ledger e semantica (cadeia de hash sobre JSON canonico), mas o SHA-256 do arquivo mudaria. Recomenda-se regra -text para PROTECTED545_RELOCATION/ledger/** numa etapa futura."
+ ]
+}
