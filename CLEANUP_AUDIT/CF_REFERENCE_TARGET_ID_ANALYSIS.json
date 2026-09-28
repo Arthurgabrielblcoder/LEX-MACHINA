@@ -1,0 +1,466 @@
+{
+ "schema_version": "lex-machina-cf-ref-a1/1",
+ "mission": "CF-REF-A1",
+ "head": "4c7333fc361ae6335f6afad3bcad9bed4a813a2b",
+ "tag": "root-cleanup-finalized-2026-09-28",
+ "cf_sources": {
+  "canonical_for_structure": {
+   "path": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+   "sha256": "d9f3d6b92ffd524c26a73e311f8c7daa4bf31772193d6d24932acff29c4c2da4",
+   "bytes": 928009,
+   "encoding": "UTF-8 sem BOM, CRLF",
+   "origin": "Planalto, texto compilado com redacoes historicas; fonte da segmentacao V2 (CF_SEGMENTADA_V2) e do motor de referencias",
+   "contains_adct": true,
+   "adct_marker": "ATO DAS DISPOSIÇÕES CONSTITUCIONAIS TRANSITÓRIAS (linha 6825)",
+   "layout": "um dispositivo por linha (Art. 1º ..., § 1º ..., Parágrafo único. ..., I - ..., a) ...); redacoes antigas repetem o rotulo antes da vigente; alguns incisos sem travessao (I as ações...); cabecalhos TÍTULO/CAPÍTULO/SEÇÃO/SUBSEÇÃO + titulo nominal; formula de encerramento Brasília, 5 de outubro de 1988. antes do ADCT e no fim"
+  },
+  "operational_sd_text": {
+   "path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "bytes": 429832,
+   "origin": "Senado Federal, compilacao monovigente (catalogo mestre id CF88, arquivo_sugerido constituicao_federal_1988.txt)",
+   "contains_adct": false,
+   "layout": "cabecalho LEX MACHINA; Art. em linha propria seguido do numero; palavra caput quebrada em linhas separadas; so a redacao vigente",
+   "targets": 2919,
+   "monovigente_structure_missing_from_canonical": 0,
+   "canonical_body_targets_absent_from_monovigente": 76,
+   "absent_examples": [
+    "CF88:ART.100:PAR.1-A",
+    "CF88:ART.102:PAR.UNICO",
+    "CF88:ART.105:PAR.UNICO",
+    "CF88:ART.105:PAR.UNICO:INC.I",
+    "CF88:ART.105:PAR.UNICO:INC.II",
+    "CF88:ART.107:PAR.UNICO",
+    "CF88:ART.111:PAR.1:INC.I",
+    "CF88:ART.111:PAR.1:INC.II",
+    "CF88:ART.114:INC.VIII",
+    "CF88:ART.115:PAR.UNICO",
+    "CF88:ART.115:PAR.UNICO:INC.I",
+    "CF88:ART.115:PAR.UNICO:INC.II",
+    "CF88:ART.115:PAR.UNICO:INC.III",
+    "CF88:ART.117:PAR.UNICO",
+    "CF88:ART.134:PAR.UNICO",
+    "CF88:ART.146:PAR.UNICO",
+    "CF88:ART.146:PAR.UNICO:INC.I",
+    "CF88:ART.146:PAR.UNICO:INC.II",
+    "CF88:ART.146:PAR.UNICO:INC.III",
+    "CF88:ART.146:PAR.UNICO:INC.IV"
+   ],
+   "note": "Os rotulos ausentes existem so no compilado historico (revogados/renumerados) ou tem formatacao divergente no texto do Senado; indicativo, nao prova de vigencia."
+  },
+  "other_copies": [
+   "updater/backup_saida/antes_recuperacao_monovigente_20260913_162304/.../cf.txt (sha d9f3d6b9..., identico)",
+   "updater/backup_saida/antes_restauracao_20260913_153659/.../cf.txt (sha 107da5a0...)",
+   "updater/saida/LEXDATA_V4_BUILD/LEIS/CF88.TXT (sha 29735020..., build ESP32)"
+  ]
+ },
+ "existing_id_schemes": [
+  {
+   "name": "chave_dispositivo / device_id",
+   "format": "CF88:ART.37:PAR.6:INC.I:AL.a ; ADCT:ART.5 ; PAR.UNICO ; ART.103-A",
+   "where": [
+    "CF_SEGMENTADA_V2/CF_DISPOSITIVOS_LIMPOS.json (3461)",
+    "LEX_MACHINA_REFERENCIAS_V2 (Engine, benchmarks, RC1/RC2, checkpoints congelados)",
+    "LEX_MACHINA_REFERENCIAS_V2/05_COMPILADOR/prepare_expansion.py:58"
+   ],
+   "status": "canonico de fato, com defeitos: sem sufixo em paragrafo/inciso (colisoes silenciosas pela regra de ultima redacao); artigo = texto do caput; sem alvo raiz CF88/ADCT; incisos sem travessao ignorados"
+  },
+  {
+   "name": "norma_id",
+   "format": "CF88, CC2002, CPC2015 ... (72)",
+   "where": [
+    "updater/catalogo_mestre_vademecum.json itens[].id"
+   ],
+   "status": "reutilizado como namespace"
+  },
+  {
+   "name": "pipe fields SD",
+   "format": "CF88|5||XLIII| (norma|artigo|paragrafo|inciso|alinea); paragrafo unico = unico",
+   "where": [
+    "REL_LOOKUP.IDX, RELACOES.IDX, JUR_LOOKUP.IDX",
+    "firmware chaveContextoAtual(): artigo|paragrafo|inciso|alinea sem norma"
+   ],
+   "status": "conversores from_pipe_fields/to_pipe_fields"
+  },
+  {
+   "name": "colon fields jurisprudencia",
+   "format": "STF:RG:1015:CF88:1:-:III:-",
+   "where": [
+    "JURISPRUDENCIA.IDX (J4_6)"
+   ],
+   "status": "conversor from_colon_fields"
+  },
+  {
+   "name": "work_id / evidence_id",
+   "format": "identidade de obra/evidencia da curadoria",
+   "where": [
+    "V2, 09_CATALOGO_EXPANSAO_200"
+   ],
+   "status": "nao e identidade de dispositivo; fora do escopo"
+  }
+ ],
+ "decision": {
+  "classification": "B) EXISTING_ID_NEEDS_EXTENSION",
+  "summary": "Reutiliza a chave_dispositivo V2 como target_id (mesma string para 100% das chaves V2) e estende com sufixos -A em PAR/INC, CAPUT distinto do ARTIGO, alvos raiz CF88 e ADCT, parent estrutural, namespaces do catalogo mestre e conversores dos formatos pipe/colon. Nenhuma identidade concorrente criada.",
+  "compatibility": {
+   "v2_keys_valid": true,
+   "v2_keys_present_in_index": "3461/3461 (ART.N legado continua valido como artigo-unidade; o texto V2 dele e o do CAPUT)",
+   "v2_collided_keys": [
+    "ADCT:ART.107:PAR.6",
+    "ADCT:ART.97:PAR.16",
+    "CF88:ART.100:PAR.19",
+    "CF88:ART.109:INC.V",
+    "CF88:ART.144:PAR.5",
+    "CF88:ART.149:PAR.1",
+    "CF88:ART.156:PAR.1",
+    "CF88:ART.166:PAR.9",
+    "CF88:ART.201:PAR.9",
+    "CF88:ART.239:PAR.3",
+    "CF88:ART.40:PAR.4",
+    "CF88:ART.92:INC.I",
+    "CF88:ART.92:INC.II",
+    "CF88:ART.93:INC.VIII"
+   ]
+  }
+ },
+ "grammar": {
+  "module": "LEGAL_TARGET_ID/target_id.py",
+  "functions": [
+   "parse_target_id",
+   "format_target_id",
+   "parent_target_id",
+   "validate_target_id",
+   "ancestors",
+   "normalize_number_label",
+   "normalize_paragraph_label",
+   "normalize_inciso_label",
+   "normalize_alinea_label",
+   "from_pipe_fields",
+   "from_colon_fields",
+   "to_pipe_fields",
+   "roman_to_int"
+  ],
+  "ebnf": [
+   "target_id := NS | NS \":ART.\" ART [ \":CAPUT\" | [\":PAR.\" PAR] [\":INC.\" INC [\":AL.\" AL]] ]",
+   "NS := [A-Z][A-Z0-9]{1,15} registrado (catalogo mestre + subnamespaces)",
+   "ART := [1-9][0-9]{0,3} (\"-\"[A-Z])?",
+   "PAR := [1-9][0-9]{0,2} (\"-\"[A-Z])? | \"UNICO\"",
+   "INC := romano canonico (\"-\"[A-Z])?",
+   "AL := [a-z] (\"-\"[A-Z])?"
+  ],
+  "parent_rules": [
+   "AL -> INC",
+   "INC -> PAR (se houver) senao ART:CAPUT",
+   "PAR/CAPUT -> ART",
+   "ART -> NS",
+   "ADCT -> CF88",
+   "CF88 -> None"
+  ],
+  "namespaces_file": "LEGAL_TARGET_ID/namespaces.json",
+  "max_length": 64
+ },
+ "cf_index": {
+  "path": "LEGAL_TARGET_ID/derived/CF88_TARGET_INDEX.json",
+  "file_sha256": "63a93c4477ec9e440c6ee279427fd33d59cc1835279e2501c2d3bf7098e7a2c2",
+  "TARGET_INDEX_SHA256": "96ab692a6f3b16f686974556683a1e2b2db69115efc2a6c0030e65f7ed14b5c0",
+  "definition": "sha256 da lista ordenada de target_id unidos por LF (ASCII)",
+  "total_targets": 3956,
+  "TARGET_ID_DUPLICATES": 0,
+  "counts_by_kind": {
+   "ALINEA": 387,
+   "ARTIGO": 424,
+   "CAPUT": 424,
+   "INCISO": 1575,
+   "NAMESPACE": 1,
+   "NORMA": 1,
+   "PARAGRAFO": 1039,
+   "PARAGRAFO_UNICO": 105
+  },
+  "counts_by_namespace": {
+   "ADCT": {
+    "ALINEA": 69,
+    "ARTIGO": 148,
+    "CAPUT": 148,
+    "INCISO": 272,
+    "NAMESPACE": 1,
+    "PARAGRAFO": 286,
+    "PARAGRAFO_UNICO": 37
+   },
+   "CF88": {
+    "ALINEA": 318,
+    "ARTIGO": 276,
+    "CAPUT": 276,
+    "INCISO": 1303,
+    "NORMA": 1,
+    "PARAGRAFO": 753,
+    "PARAGRAFO_UNICO": 68
+   }
+  },
+  "repeated_label_targets": 450,
+  "anomalies": {
+   "INCISO_WITHOUT_SEPARATOR_ACCEPTED_BY_SEQUENCE": 54,
+   "POSSIBLE_INCISO_WITHOUT_SEPARATOR": 3,
+   "CLOSING_MARKER": 2
+  },
+  "anomalies_rejected": [
+   {
+    "line": 2704,
+    "code": "POSSIBLE_INCISO_WITHOUT_SEPARATOR",
+    "context": "CF88:ART.93:INC.IV",
+    "label": "III",
+    "text": "III o acesso aos tribunais de segundo grau far-se-á por antigüidade e mereciment"
+   },
+   {
+    "line": 2726,
+    "code": "POSSIBLE_INCISO_WITHOUT_SEPARATOR",
+    "context": "CF88:ART.93:INC.XI",
+    "label": "VII",
+    "text": "VII o juiz titular residirá na respectiva comarca, salvo autorização do tribunal"
+   },
+   {
+    "line": 2728,
+    "code": "POSSIBLE_INCISO_WITHOUT_SEPARATOR",
+    "context": "CF88:ART.93:INC.XI",
+    "label": "VIII",
+    "text": "VIII o ato de remoção, disponibilidade e aposentadoria do magistrado, por intere"
+   }
+  ],
+  "suffix_targets": [
+   "ADCT:ART.107:PAR.6-A",
+   "ADCT:ART.107:PAR.6-B",
+   "ADCT:ART.107:PAR.6-C",
+   "ADCT:ART.97:PAR.16-A",
+   "CF88:ART.100:PAR.1-A",
+   "CF88:ART.100:PAR.19-A",
+   "CF88:ART.109:INC.V-A",
+   "CF88:ART.144:PAR.5-A",
+   "CF88:ART.149:PAR.1-A",
+   "CF88:ART.149:PAR.1-B",
+   "CF88:ART.149:PAR.1-C",
+   "CF88:ART.156:PAR.1-A",
+   "CF88:ART.166:PAR.9-A",
+   "CF88:ART.201:PAR.9-A",
+   "CF88:ART.239:PAR.3-A",
+   "CF88:ART.40:PAR.4-A",
+   "CF88:ART.40:PAR.4-B",
+   "CF88:ART.40:PAR.4-C",
+   "CF88:ART.92:INC.I-A",
+   "CF88:ART.92:INC.II-A",
+   "CF88:ART.93:INC.VIII-A",
+   "CF88:ART.93:INC.VIII-B"
+  ],
+  "determinism": "duas execucoes: arquivo byte-identico"
+ },
+ "key_targets": {
+  "CF88": {
+   "target_id": "CF88",
+   "parent_id": null,
+   "kind": "NORMA",
+   "line_start": 11,
+   "preview": null
+  },
+  "ADCT": {
+   "target_id": "ADCT",
+   "parent_id": "CF88",
+   "kind": "NAMESPACE",
+   "line_start": 6825,
+   "preview": null
+  },
+  "CF88:ART.37": {
+   "target_id": "CF88:ART.37",
+   "parent_id": "CF88",
+   "kind": "ARTIGO",
+   "line_start": 1276,
+   "preview": null
+  },
+  "CF88:ART.37:CAPUT": {
+   "target_id": "CF88:ART.37:CAPUT",
+   "parent_id": "CF88:ART.37",
+   "kind": "CAPUT",
+   "line_start": 1276,
+   "preview": "A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito"
+  },
+  "CF88:ART.37:PAR.6": {
+   "target_id": "CF88:ART.37:PAR.6",
+   "parent_id": "CF88:ART.37",
+   "kind": "PARAGRAFO",
+   "line_start": 1378,
+   "preview": "As pessoas jurídicas de direito público e as de direito privado prestadoras de serviços públicos res"
+  },
+  "CF88:ART.37:PAR.10": {
+   "target_id": "CF88:ART.37:PAR.10",
+   "parent_id": "CF88:ART.37",
+   "kind": "PARAGRAFO",
+   "line_start": 1392,
+   "preview": "É vedada a percepção simultânea de proventos de aposentadoria decorrentes do art. 40 ou dos arts. 42"
+  },
+  "CF88:ART.37:INC.XXI": {
+   "target_id": "CF88:ART.37:INC.XXI",
+   "parent_id": "CF88:ART.37:CAPUT",
+   "kind": "INCISO",
+   "line_start": 1356,
+   "preview": "ressalvados os casos especificados na legislação, as obras, serviços, compras e alienações serão con"
+  },
+  "CF88:ART.60": {
+   "target_id": "CF88:ART.60",
+   "parent_id": "CF88",
+   "kind": "ARTIGO",
+   "line_start": 2142,
+   "preview": null
+  },
+  "CF88:ART.60:PAR.4": {
+   "target_id": "CF88:ART.60:PAR.4",
+   "parent_id": "CF88:ART.60",
+   "kind": "PARAGRAFO",
+   "line_start": 2156,
+   "preview": "Não será objeto de deliberação a proposta de emenda tendente a abolir:"
+  },
+  "CF88:ART.60:PAR.4:INC.IV": {
+   "target_id": "CF88:ART.60:PAR.4:INC.IV",
+   "parent_id": "CF88:ART.60:PAR.4",
+   "kind": "INCISO",
+   "line_start": 2164,
+   "preview": "os direitos e garantias individuais."
+  },
+  "CF88:ART.5": {
+   "target_id": "CF88:ART.5",
+   "parent_id": "CF88",
+   "kind": "ARTIGO",
+   "line_start": 69,
+   "preview": null
+  },
+  "ADCT:ART.5": {
+   "target_id": "ADCT:ART.5",
+   "parent_id": "ADCT",
+   "kind": "ARTIGO",
+   "line_start": 6849,
+   "preview": null
+  },
+  "ADCT:ART.5:PAR.1": {
+   "target_id": "ADCT:ART.5:PAR.1",
+   "parent_id": "ADCT:ART.5",
+   "kind": "PARAGRAFO",
+   "line_start": 6851,
+   "preview": "Para as eleições de 15 de novembro de 1988 será exigido domicílio eleitoral na circunscrição pelo me"
+  },
+  "CF88:ART.40:PAR.4-A": {
+   "target_id": "CF88:ART.40:PAR.4-A",
+   "parent_id": "CF88:ART.40",
+   "kind": "PARAGRAFO",
+   "line_start": 1542,
+   "preview": "Poderão ser estabelecidos por lei complementar do respectivo ente federativo idade e tempo de contri"
+  },
+  "CF88:ART.114:INC.I": {
+   "target_id": "CF88:ART.114:INC.I",
+   "parent_id": "CF88:ART.114:CAPUT",
+   "kind": "INCISO",
+   "line_start": 3436,
+   "preview": "as ações oriundas da relação de trabalho, abrangidos os entes de direito público externo e da admini"
+  }
+ },
+ "tests": {
+  "file": "LEGAL_TARGET_ID/tests/test_target_id.py",
+  "result": "18/18 OK",
+  "positive_corpus_ids": 32,
+  "negative_ids": 30
+ },
+ "reference_coverage": {
+  "total_references": 1186,
+  "totals": {
+   "AMBIGUOUS_V2_COLLISION": 3,
+   "ARTICLE_LEVEL_NEEDS_RULE": 268,
+   "AUTO_SUBDIVISION": 893,
+   "NOT_FOUND_NO_SUCH_DEVICE": 22
+  },
+  "percent": {
+   "AMBIGUOUS_V2_COLLISION": 0.3,
+   "ARTICLE_LEVEL_NEEDS_RULE": 22.6,
+   "AUTO_SUBDIVISION": 75.3,
+   "NOT_FOUND_NO_SUCH_DEVICE": 1.9
+  },
+  "per_dataset": {
+   "V2_RC2_REFERENCES": {
+    "source": "LEX_MACHINA_REFERENCIAS_V2/08_RELEASE_CANDIDATE/CF_REFERENCIAS_V2_RC2_HUMAN_REVIEWED/REFERENCIAS_RC2.json",
+    "total": 105,
+    "counts": {
+     "ARTICLE_LEVEL_NEEDS_RULE": 27,
+     "AUTO_SUBDIVISION": 78
+    }
+   },
+   "V2_RC1_REFERENCES": {
+    "source": "LEX_MACHINA_REFERENCIAS_V2/08_RELEASE_CANDIDATE/CF_REFERENCIAS_V2_RC1/REFERENCIAS_RC1.json",
+    "total": 125,
+    "counts": {
+     "ARTICLE_LEVEL_NEEDS_RULE": 32,
+     "AUTO_SUBDIVISION": 93
+    }
+   },
+   "V2_ALL_DISTINCT_DEVICE_IDS": {
+    "source": "LEX_MACHINA_REFERENCIAS_V2/**/*.json (exceto 09_CATALOGO_EXPANSAO_200)",
+    "total": 441,
+    "counts": {
+     "AMBIGUOUS_V2_COLLISION": 3,
+     "ARTICLE_LEVEL_NEEDS_RULE": 107,
+     "AUTO_SUBDIVISION": 331
+    }
+   },
+   "SD_RELATIONS_REL_LOOKUP": {
+    "source": "LEX-MACHINA_ETAPA_2E6_SD_TESTE/montador_sd/SD_PRONTO/99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX",
+    "total": 41,
+    "counts": {
+     "ARTICLE_LEVEL_NEEDS_RULE": 3,
+     "AUTO_SUBDIVISION": 38
+    }
+   },
+   "SD_JURIS_J4_6_JUR_LOOKUP": {
+    "source": "archive(read-only):LEX_MACHINA_JURIS_CF_J4_6/.../JUR_LOOKUP.IDX",
+    "total": 178,
+    "counts": {
+     "ARTICLE_LEVEL_NEEDS_RULE": 35,
+     "AUTO_SUBDIVISION": 133,
+     "NOT_FOUND_NO_SUCH_DEVICE": 10
+    }
+   },
+   "SD_JURIS_J4_6_IDS": {
+    "source": "archive(read-only):LEX_MACHINA_JURIS_CF_J4_6/.../JURISPRUDENCIA.IDX (sufixo norma:art:par:inc:ali)",
+    "total": 296,
+    "counts": {
+     "ARTICLE_LEVEL_NEEDS_RULE": 64,
+     "AUTO_SUBDIVISION": 220,
+     "NOT_FOUND_NO_SUCH_DEVICE": 12
+    }
+   }
+  },
+  "notes": [
+   "ARTICLE_LEVEL_NEEDS_RULE: chave legada CF88:ART.N (a V2 avaliou o texto do caput); uma regra de migracao decide ARTIGO x CAPUT.",
+   "NOT_FOUND_NO_SUCH_DEVICE: dispositivos inexistentes na CF referenciados pelos indices de jurisprudencia J4_6 (ex.: CF88:ART.1:PAR.1, ART.3:PAR.3, ART.25:INC.I); erros de dados detectados pela gramatica.",
+   "AMBIGUOUS_V2_COLLISION: referencias V2 cujo texto veio de dispositivo colapsado (ex.: CF88:ART.40:PAR.4 guardava o texto do § 4º-C)."
+  ]
+ },
+ "esp32": {
+  "max_len": 35,
+  "mean_len": 19.48,
+  "median_len": 18.0,
+  "total_targets": 3956,
+  "total_id_bytes": 77070,
+  "fnv1a32_collisions": 0,
+  "notes": [
+   "o firmware atual usa a chave artigo|paragrafo|inciso|alinea sem norma: ADCT colide com o corpo principal; o target_id resolve com namespace",
+   "IDs cabem em char[40]; nao precisam ficar todos em RAM: indice ordenado no SD com busca binaria ou hash FNV-1a 32 bits (0 colisoes na CF)",
+   "to_pipe_fields mantem compatibilidade com os IDX atuais"
+  ]
+ },
+ "generalization": [
+  "namespaces vem do catalogo mestre (72 normas), sem if norma == CF",
+  "parser configurado por namespaces.json (marcadores de subnamespace) e --end-marker",
+  "gramatica sem regra especifica de CF; ADCT e apenas um subnamespace declarado"
+ ],
+ "legal_content_changed": false,
+ "not_done": [
+  "referencias novas",
+  "ENTENDA",
+  "correlatas/jurisprudencia novas",
+  "SD/firmware",
+  "aplicacao as outras 71 normas"
+ ]
+}
