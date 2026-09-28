@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "note": "Configuracao por norma. Nenhum codigo do motor conhece uma norma especifica; CF88 e apenas o dataset piloto.",
+  "norms": {
+    "CF88": {
+      "target_index": "derived/CF88_TARGET_INDEX.json",
+      "target_status": "derived/CF88_TARGET_STATUS.json",
+      "references_catalog": "derived/CF88_REFERENCES_CANONICAL.json",
+      "quarantine_resolution": "derived/CF88_QUARANTINE_RESOLUTION.json"
+    }
+  },
+  "export": {
+    "layers": {
+      "V2_RC2_REFERENCES": "WORK_REFERENCE",
+      "SD_JURIS_J4_6_IDS": "JURISPRUDENCE",
+      "SD_RELATIONS_REL_LOOKUP": "CORRELATA"
+    },
+    "excluded_layers": {
+      "V2_RC1_REFERENCES": "superado pelo RC2 (versao anterior)",
+      "V2_ALL_DISTINCT_DEVICE_IDS": "inventario de auditoria, nao e vinculo",
+      "SD_JURIS_J4_6_JUR_LOOKUP": "indice derivado; o export reconstroi o indice a partir dos vinculos"
+    },
+    "visibility": {
+      "HISTORICAL_ONLY": "HISTORICAL_HIDDEN_BY_DEFAULT",
+      "default": "CURRENT_VISIBLE"
+    }
+  }
+}
