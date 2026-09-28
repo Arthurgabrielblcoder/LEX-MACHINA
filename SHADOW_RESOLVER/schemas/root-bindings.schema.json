@@ -1,0 +1,38 @@
+{
+  "$id": "urn:lex-machina:shadow-resolver:root-bindings:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "bindings": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "absolute_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "storage_root_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "absolute_path",
+          "storage_root_id"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "bindings",
+    "schema_version"
+  ],
+  "type": "object"
+}

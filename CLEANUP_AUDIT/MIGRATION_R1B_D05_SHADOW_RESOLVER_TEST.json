@@ -1,0 +1,87 @@
+{
+  "expected_fail_closed": 16,
+  "fail_closed_passed": 16,
+  "result": "PASS",
+  "tests": [
+    {
+      "name": "registry_hash_mismatch",
+      "observed": "REGISTRY_HASH_MISMATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "lock_hash_mismatch",
+      "observed": "LOCK_HASH_MISMATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "root_binding_missing",
+      "observed": "ROOT_BINDING_MISSING_OR_DUPLICATE",
+      "result": "PASS"
+    },
+    {
+      "name": "root_binding_unknown",
+      "observed": "ROOT_BINDING_MISSING_OR_DUPLICATE",
+      "result": "PASS"
+    },
+    {
+      "name": "occurrence_missing",
+      "observed": "OCCURRENCE_NOT_FOUND_OR_AMBIGUOUS",
+      "result": "PASS"
+    },
+    {
+      "name": "occurrence_ambiguous",
+      "observed": "OCCURRENCE_NOT_FOUND_OR_AMBIGUOUS",
+      "result": "PASS"
+    },
+    {
+      "name": "file_missing",
+      "observed": "FILE_MISSING",
+      "result": "PASS"
+    },
+    {
+      "name": "size_mismatch",
+      "observed": "SIZE_MISMATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "sha256_mismatch",
+      "observed": "SHA256_MISMATCH",
+      "result": "PASS"
+    },
+    {
+      "name": "path_traversal",
+      "observed": "UNSAFE_PATH",
+      "result": "PASS"
+    },
+    {
+      "name": "absolute_relative_path",
+      "observed": "UNSAFE_PATH",
+      "result": "PASS"
+    },
+    {
+      "name": "junction_reparse_escape",
+      "observed": "SYMLINK_OR_JUNCTION_ESCAPE",
+      "result": "PASS"
+    },
+    {
+      "name": "ordinal_duplicate",
+      "observed": "ORDINAL_INVALID",
+      "result": "PASS"
+    },
+    {
+      "name": "multiplicity_reduced",
+      "observed": "MULTIPLICITY_CHANGED",
+      "result": "PASS"
+    },
+    {
+      "name": "wildcard_or_fallback",
+      "observed": "IMPLICIT_DISCOVERY_REQUESTED",
+      "result": "PASS"
+    },
+    {
+      "name": "restricted_local_missing",
+      "observed": "RESTRICTED_LOCAL_MISSING",
+      "result": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "$defs": {
+    "member_ref": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "candidate_number",
+            "work_id",
+            "catalog_69_id",
+            "checkpoint",
+            "evidence_id",
+            "candidate",
+            "capture_path"
+          ],
+          "type": "string"
+        },
+        "value": {
+          "type": [
+            "string",
+            "integer",
+            "object"
+          ]
+        }
+      },
+      "required": [
+        "kind",
+        "value"
+      ],
+      "type": "object"
+    },
+    "resolved_item": {
+      "additionalProperties": false,
+      "properties": {
+        "logical_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "member_ref": {
+          "$ref": "#/$defs/member_ref"
+        },
+        "occurrence_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "ordinal": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "relative_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "resolution_status": {
+          "const": "RESOLVED_VERIFIED",
+          "type": "string"
+        },
+        "semantic_role": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "set_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "size": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "storage_root_id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "version": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "logical_id",
+        "occurrence_id",
+        "relative_path",
+        "resolution_status",
+        "semantic_role",
+        "set_id",
+        "sha256",
+        "size",
+        "storage_root_id",
+        "version"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:lex-machina:shadow-resolver:resolved-selection:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_class": {
+      "const": "DERIVED",
+      "type": "string"
+    },
+    "authority": {
+      "const": "NON_AUTHORITATIVE",
+      "type": "string"
+    },
+    "canonicalization": {
+      "const": "json-utf8-lf-sorted-keys-indent-2-final-lf-v1",
+      "type": "string"
+    },
+    "dataset_id": {
+      "const": "d05.catalogo-expansao-200",
+      "type": "string"
+    },
+    "dependencies": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dependency_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "logical_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "occurrence_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "relative_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "required": {
+            "const": true,
+            "type": "boolean"
+          },
+          "resolution_status": {
+            "const": "RESOLVED_VERIFIED",
+            "type": "string"
+          },
+          "semantic_role": {
+            "const": "LOCK_DEPENDENCY",
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "size": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "storage_root_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "dependency_id",
+          "logical_id",
+          "occurrence_id",
+          "relative_path",
+          "required",
+          "resolution_status",
+          "semantic_role",
+          "sha256",
+          "size",
+          "storage_root_id",
+          "version"
+        ],
+        "type": "object"
+      },
+      "minItems": 4,
+      "type": "array"
+    },
+    "explicit_absences": {
+      "items": {
+        "type": "object"
+      },
+      "minItems": 151,
+      "type": "array"
+    },
+    "lock_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "mode": {
+      "const": "SHADOW",
+      "type": "string"
+    },
+    "profile_id": {
+      "const": "d05-historical-parity-v1",
+      "type": "string"
+    },
+    "registry_fragments": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "dataset_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "dataset_id",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "registry_id": {
+      "const": "lex-machina-artifact-registry",
+      "type": "string"
+    },
+    "registry_index_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "resolution_summary": {
+      "additionalProperties": false,
+      "properties": {
+        "dependencies": {
+          "const": 4,
+          "type": "integer"
+        },
+        "explicit_absences": {
+          "const": 151,
+          "type": "integer"
+        },
+        "restricted_local": {
+          "const": 3,
+          "type": "integer"
+        },
+        "selection_sets": {
+          "const": 11,
+          "type": "integer"
+        },
+        "semantic_items": {
+          "const": 1699,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "dependencies",
+        "explicit_absences",
+        "restricted_local",
+        "selection_sets",
+        "semantic_items"
+      ],
+      "type": "object"
+    },
+    "resolver_version": {
+      "const": "d05-shadow-resolver/1",
+      "type": "string"
+    },
+    "root_binding_ids": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 2,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "selection_sets": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "consumption_class": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "expected_items_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "item_kind": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "items": {
+            "items": {
+              "$ref": "#/$defs/resolved_item"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "ordered": {
+            "type": "boolean"
+          },
+          "ordering_rule_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "semantic_role": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "set_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "consumption_class",
+          "expected_items_sha256",
+          "item_kind",
+          "items",
+          "ordered",
+          "ordering_rule_id",
+          "semantic_role",
+          "set_id"
+        ],
+        "type": "object"
+      },
+      "minItems": 11,
+      "type": "array"
+    }
+  },
+  "required": [
+    "artifact_class",
+    "authority",
+    "canonicalization",
+    "dataset_id",
+    "dependencies",
+    "explicit_absences",
+    "lock_sha256",
+    "mode",
+    "profile_id",
+    "registry_fragments",
+    "registry_id",
+    "registry_index_sha256",
+    "resolution_summary",
+    "resolver_version",
+    "root_binding_ids",
+    "schema_version",
+    "selection_sets"
+  ],
+  "type": "object"
+}
