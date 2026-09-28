@@ -1,0 +1,134 @@
+{
+  "adapter_policy": {
+    "fallback_to_shadow": false,
+    "legacy_authoritative": true,
+    "shadow_authoritative": false,
+    "shadow_can_affect_functional_output": false
+  },
+  "adapter_version": "SCA1A-D05-SHADOW-CONSUMER-SPEC/1",
+  "baseline": {
+    "consumer_sha256": "4e53ca2a87bd0577facb4461b09b685223c4daabe869cfaff81610e6cdc66a7d",
+    "head": "1ab8a788dba29678ea0eae6cdd0cdaacb33e5180",
+    "legacy_capture_sha256": "c9c48e8852f3952a1c05de528a6cf25124ce264f1f86194400bea2812f460ae0",
+    "legacy_shadow_comparison_sha256": "1365007b58e74bdab0c8ddf6411ea670301671f6f156b88c057904e8486dc831",
+    "legacy_shadow_status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+    "shadow_selection_sha256": "28212c24f88f07538d4cd5c50d1ce9f0ff603d684c477dfd23ec9984ae8db57a"
+  },
+  "comparison": {
+    "dimensions": [
+      "MEMBERSHIP",
+      "ORDER",
+      "MULTIPLICITY",
+      "DEPENDENCIES",
+      "ABSENCES",
+      "BYTE_IDENTITY"
+    ],
+    "runtime_member_level_sets": [
+      "triage_batch_paths",
+      "base_catalog_work_ids"
+    ],
+    "statuses": [
+      "MATCH",
+      "MATCH_CARDINALITY_ONLY",
+      "NOT_OBSERVABLE",
+      "SHADOW_ONLY",
+      "LEGACY_ONLY",
+      "ORDER_MISMATCH",
+      "MULTIPLICITY_MISMATCH",
+      "BYTE_MISMATCH",
+      "SHADOW_RESOLUTION_FAILURE",
+      "ADAPTER_INTERNAL_FAILURE"
+    ]
+  },
+  "consumer": {
+    "alternatives_evaluated": [
+      "compilar_catalogo.py",
+      "compilar_enriquecido_v1.py"
+    ],
+    "human_reference": {
+      "first_functional_write_around_line": 82,
+      "non_binding": true,
+      "selection_complete_around_line": 80
+    },
+    "integration_boundary": "LEGACY_SELECTION_COMPLETE_BEFORE_FIRST_FUNCTIONAL_OUTPUT_WRITE",
+    "path": "LEX_MACHINA_REFERENCIAS_V2/09_CATALOGO_EXPANSAO_200/07_CATALOGO_CANDIDATO/compilar_catalogo.py",
+    "selected": "compilar_catalogo.py",
+    "selection_function": "main"
+  },
+  "diagnostic": {
+    "canonical": false,
+    "default_location": "EXTERNAL_RUNTIME_TEMP",
+    "filename": "D05_SHADOW_CONSUMER_RUN.json",
+    "functional_tree_writes_allowed": false,
+    "required_authority_fields": {
+      "legacy_authoritative": true,
+      "shadow_authoritative": false,
+      "shadow_did_affect_output": false
+    }
+  },
+  "failure_policy": {
+    "adapter_internal_failure_changes_legacy_result": false,
+    "diagnostic_write_failure_changes_legacy_result": false,
+    "legacy_failure_remains_primary": true,
+    "shadow_failure_changes_legacy_result": false,
+    "shadow_internal_mode": "FAIL_CLOSED",
+    "silent_exception_swallowing_allowed": false
+  },
+  "feature_flag": {
+    "default": "OFF",
+    "primary_mechanism": "--shadow-compare",
+    "registry_lock_required_when_off": false,
+    "scope": "NEW_EXTERNAL_RUNNER_ONLY"
+  },
+  "future_files": [
+    "SHADOW_CONSUMER_ADAPTER/run_d05_catalog_shadow.py",
+    "SHADOW_CONSUMER_ADAPTER/runtime_compare.py",
+    "SHADOW_CONSUMER_ADAPTER/schemas/d05-shadow-consumer-run.schema.json",
+    "SHADOW_CONSUMER_ADAPTER/tests/test_d05_catalog_shadow.py",
+    "CLEANUP_AUDIT/MIGRATION_SCA1B_D05_SHADOW_CONSUMER_RESULT.md"
+  ],
+  "integration": {
+    "consumer_imports_shadow_stack": false,
+    "consumer_modification_planned": false,
+    "legacy_capture_method": "CPYTHON_AUDIT_HOOK_OBSERVATIONAL_ONLY",
+    "option": "A_EXTERNAL_WRAPPER",
+    "selection_freeze_boundary": "FIRST_FUNCTIONAL_OUTPUT_WRITE_EVENT",
+    "shadow_execution_isolated": true
+  },
+  "observability_limits": {
+    "catalog_69_ids_member_identity": "NOT_OBSERVABLE",
+    "historical_lock_items_runtime_observed": false,
+    "legacy_logic_reimplementation_allowed": false,
+    "triage_candidate_numbers_member_identity": "NOT_OBSERVABLE"
+  },
+  "performance_metrics": [
+    "legacy_duration_ms",
+    "shadow_resolution_duration_ms",
+    "comparison_duration_ms",
+    "diagnostic_write_duration_ms",
+    "adapter_wall_duration_ms",
+    "overhead_absolute_ms",
+    "overhead_percent_vs_direct_legacy"
+  ],
+  "phase": "SPECIFICATION_ONLY",
+  "sca1b_started": false,
+  "security": {
+    "absolute_paths_allowed_only_in_local_noncanonical_diagnostic": true,
+    "binding_persistence_allowed": false,
+    "restricted_local_content_logging_allowed": false,
+    "secret_logging_allowed": false,
+    "shadow_write_access_to_legacy_output_root": false
+  },
+  "success_gates": [
+    "OPT_IN_DEFAULT_OFF",
+    "CONSUMER_UNMODIFIED",
+    "SHADOW_OFF_REQUIRES_NO_REGISTRY_LOCK_OR_BINDINGS",
+    "DIRECT_OFF_ON_OUTPUTS_BYTE_IDENTICAL",
+    "LEGACY_SELECTION_OBSERVED_NOT_REIMPLEMENTED",
+    "SHADOW_FAILURE_NON_BLOCKING_FOR_HEALTHY_LEGACY",
+    "ZERO_SHADOW_FALLBACK",
+    "SAFE_DIAGNOSTIC_OUTSIDE_FUNCTIONAL_TREES",
+    "OVERHEAD_MEASURED",
+    "NO_NOT_OBSERVABLE_DIMENSION_PROMOTED_TO_MATCH"
+  ]
+}
