@@ -1,0 +1,762 @@
+{
+ "schema_version": "lex-machina-cf-ref-a2/1",
+ "mission": "CF-REF-A2",
+ "a1_commit": "0c2c14794ade9894761f017a629ad62540fc70ac",
+ "a1_tag": "cf-target-id-canonical-2026-09-28",
+ "summary": {
+  "TOTAL_SOURCE_REFERENCES": 1186,
+  "VALID_CANONICAL_REFERENCES": 1130,
+  "MIGRATED_AUTOMATICALLY": 893,
+  "MIGRATED_ARTICLE_TO_CAPUT": 176,
+  "KEPT_AS_ARTICLE": 56,
+  "ARTICLE_CAPUT_NEEDS_REVIEW": 36,
+  "RESOLVED_COLLISIONS": 3,
+  "RESOLVED_INVALID_WITH_EVIDENCE": 2,
+  "QUARANTINED_AMBIGUOUS": 0,
+  "QUARANTINED_INVALID": 20,
+  "OTHER_REVIEW": 0,
+  "QUARANTINE_TOTAL": 56,
+  "DUPLICATES_EXACT": 0,
+  "POSSIBLE_DUPLICATES": 9,
+  "CURRENT_TARGETS": 991,
+  "HISTORICAL_TARGETS": 17,
+  "STRUCTURAL_TARGETS": 56,
+  "UNKNOWN_VALIDITY_TARGETS": 66
+ },
+ "classification": {
+  "AMBIGUOUS_V2_COLLISION": 3,
+  "ARTICLE_VS_CAPUT_RESOLVABLE": 268,
+  "AUTO_MEMBER_MATCH": 893,
+  "INVALID_TARGET": 22
+ },
+ "migration": {
+  "AUTO_MEMBER_MATCH": 893,
+  "KEPT_AS_ARTICLE": 56,
+  "MIGRATED_TO_CAPUT": 176,
+  "NEEDS_REVIEW": 36,
+  "QUARANTINED": 20,
+  "RESOLVED_WITH_EVIDENCE": 5
+ },
+ "article_vs_caput": {
+  "counts": {
+   "KEPT_AS_ARTICLE": 56,
+   "MIGRATED_TO_CAPUT": 176,
+   "NEEDS_REVIEW": 36
+  },
+  "reasons": {
+   "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT": 165,
+   "LEGACY_V2_TEXT_INCLUDED_CHILD_DEVICES": 1,
+   "SOURCE_EDITORIAL_SCOPE_IS_WHOLE_ARTICLE": 2,
+   "SOURCE_EDITORIAL_SCOPE_SAYS_CAPUT": 1,
+   "CITATION_NAMES_ARTICLE_WITHOUT_SUBDIVISION": 53,
+   "CITATION_NAMES_CAPUT": 10
+  },
+  "examples": {
+   "MIGRATED_TO_CAPUT": [
+    {
+     "record": "73ca0e0326c4219832ab3a60",
+     "layer": "V2_RC2_REFERENCES",
+     "key": "CF88:ART.14",
+     "target": "CF88:ART.14:CAPUT",
+     "reason": "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT"
+    },
+    {
+     "record": "7130480e605348785f4fa3bb",
+     "layer": "V2_RC2_REFERENCES",
+     "key": "CF88:ART.170",
+     "target": "CF88:ART.170:CAPUT",
+     "reason": "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT"
+    },
+    {
+     "record": "e8fecf206825efb48cb68dcd",
+     "layer": "V2_RC2_REFERENCES",
+     "key": "CF88:ART.170",
+     "target": "CF88:ART.170:CAPUT",
+     "reason": "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT"
+    },
+    {
+     "record": "eeb563a3dd7869bf80df1115",
+     "layer": "V2_RC2_REFERENCES",
+     "key": "CF88:ART.170",
+     "target": "CF88:ART.170:CAPUT",
+     "reason": "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT"
+    },
+    {
+     "record": "049f22ea4a51e6ec4601f48c",
+     "layer": "V2_RC2_REFERENCES",
+     "key": "CF88:ART.170",
+     "target": "CF88:ART.170:CAPUT",
+     "reason": "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT"
+    },
+    {
+     "record": "f487bda0437e487d56441c5a",
+     "layer": "V2_RC2_REFERENCES",
+     "key": "CF88:ART.170",
+     "target": "CF88:ART.170:CAPUT",
+     "reason": "LEGACY_V2_ARTICLE_KEY_REPRESENTED_CAPUT"
+    }
+   ],
+   "KEPT_AS_ARTICLE": [
+    {
+     "record": "V2DEV:CF88:ART.130-A",
+     "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+     "key": "CF88:ART.130-A",
+     "target": "CF88:ART.130-A",
+     "reason": "LEGACY_V2_TEXT_INCLUDED_CHILD_DEVICES"
+    },
+    {
+     "record": "REL_LOOKUP:L14",
+     "layer": "SD_RELATIONS_REL_LOOKUP",
+     "key": "CF88:ART.146",
+     "target": "CF88:ART.146",
+     "reason": "SOURCE_EDITORIAL_SCOPE_IS_WHOLE_ARTICLE"
+    },
+    {
+     "record": "REL_LOOKUP:L24",
+     "layer": "SD_RELATIONS_REL_LOOKUP",
+     "key": "CF88:ART.182",
+     "target": "CF88:ART.182",
+     "reason": "SOURCE_EDITORIAL_SCOPE_IS_WHOLE_ARTICLE"
+    },
+    {
+     "record": "JUR_LOOKUP:L2",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.1",
+     "target": "CF88:ART.1",
+     "reason": "CITATION_NAMES_ARTICLE_WITHOUT_SUBDIVISION"
+    },
+    {
+     "record": "JUR_LOOKUP:L25",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.6",
+     "target": "CF88:ART.6",
+     "reason": "CITATION_NAMES_ARTICLE_WITHOUT_SUBDIVISION"
+    },
+    {
+     "record": "JUR_LOOKUP:L44",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.16",
+     "target": "CF88:ART.16",
+     "reason": "CITATION_NAMES_ARTICLE_WITHOUT_SUBDIVISION"
+    }
+   ],
+   "NEEDS_REVIEW": [
+    {
+     "record": "JUR_LOOKUP:L6",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.2",
+     "target": null,
+     "reason": "CITATION_EVIDENCE_MISSING_OR_MIXED"
+    },
+    {
+     "record": "JUR_LOOKUP:L7",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.3",
+     "target": null,
+     "reason": "CITATION_EVIDENCE_MISSING_OR_MIXED"
+    },
+    {
+     "record": "JUR_LOOKUP:L9",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.5",
+     "target": null,
+     "reason": "CITATION_EVIDENCE_MISSING_OR_MIXED"
+    },
+    {
+     "record": "JUR_LOOKUP:L26",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.7",
+     "target": null,
+     "reason": "CITATION_EVIDENCE_MISSING_OR_MIXED"
+    },
+    {
+     "record": "JUR_LOOKUP:L37",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.10",
+     "target": null,
+     "reason": "CITATION_EVIDENCE_MISSING_OR_MIXED"
+    },
+    {
+     "record": "JUR_LOOKUP:L71",
+     "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+     "key": "CF88:ART.40",
+     "target": null,
+     "reason": "CITATION_EVIDENCE_MISSING_OR_MIXED"
+    }
+   ]
+  }
+ },
+ "per_layer": {
+  "SD_JURIS_J4_6_IDS": {
+   "ARTICLE_VS_CAPUT_RESOLVABLE/KEPT_AS_ARTICLE": 36,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/MIGRATED_TO_CAPUT": 6,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/NEEDS_REVIEW": 22,
+   "AUTO_MEMBER_MATCH/AUTO_MEMBER_MATCH": 220,
+   "INVALID_TARGET/QUARANTINED": 11,
+   "INVALID_TARGET/RESOLVED_WITH_EVIDENCE": 1
+  },
+  "SD_JURIS_J4_6_JUR_LOOKUP": {
+   "ARTICLE_VS_CAPUT_RESOLVABLE/KEPT_AS_ARTICLE": 17,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/MIGRATED_TO_CAPUT": 4,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/NEEDS_REVIEW": 14,
+   "AUTO_MEMBER_MATCH/AUTO_MEMBER_MATCH": 133,
+   "INVALID_TARGET/QUARANTINED": 9,
+   "INVALID_TARGET/RESOLVED_WITH_EVIDENCE": 1
+  },
+  "SD_RELATIONS_REL_LOOKUP": {
+   "ARTICLE_VS_CAPUT_RESOLVABLE/KEPT_AS_ARTICLE": 2,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/MIGRATED_TO_CAPUT": 1,
+   "AUTO_MEMBER_MATCH/AUTO_MEMBER_MATCH": 38
+  },
+  "V2_ALL_DISTINCT_DEVICE_IDS": {
+   "AMBIGUOUS_V2_COLLISION/RESOLVED_WITH_EVIDENCE": 3,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/KEPT_AS_ARTICLE": 1,
+   "ARTICLE_VS_CAPUT_RESOLVABLE/MIGRATED_TO_CAPUT": 106,
+   "AUTO_MEMBER_MATCH/AUTO_MEMBER_MATCH": 331
+  },
+  "V2_RC1_REFERENCES": {
+   "ARTICLE_VS_CAPUT_RESOLVABLE/MIGRATED_TO_CAPUT": 32,
+   "AUTO_MEMBER_MATCH/AUTO_MEMBER_MATCH": 93
+  },
+  "V2_RC2_REFERENCES": {
+   "ARTICLE_VS_CAPUT_RESOLVABLE/MIGRATED_TO_CAPUT": 27,
+   "AUTO_MEMBER_MATCH/AUTO_MEMBER_MATCH": 78
+  }
+ },
+ "collisions": [
+  {
+   "key": "CF88:ART.239:PAR.3",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "result": "RESOLVED_WITH_EVIDENCE",
+   "target": "CF88:ART.239:PAR.3-A",
+   "rule": "LEGACY_TEXT_STARTS_WITH_SUFFIX_REMNANT_A_AND_MATCHES_CF88:ART.239:PAR.3-A",
+   "candidates": [
+    "CF88:ART.239:PAR.3",
+    "CF88:ART.239:PAR.3-A"
+   ],
+   "legacy_text": "-A. O limite para elegibilidade do benefício de que trata o § 3º deste artigo não será inferior ao valor equivalente ao salário mínimo do período trabalhado multiplicado pelo índice de 1,5 (um inteiro e cinco décimos).     (Incluído pela Em"
+  },
+  {
+   "key": "CF88:ART.40:PAR.4",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "result": "RESOLVED_WITH_EVIDENCE",
+   "target": "CF88:ART.40:PAR.4-C",
+   "rule": "LEGACY_TEXT_STARTS_WITH_SUFFIX_REMNANT_C_AND_MATCHES_CF88:ART.40:PAR.4-C",
+   "candidates": [
+    "CF88:ART.40:PAR.4",
+    "CF88:ART.40:PAR.4-A",
+    "CF88:ART.40:PAR.4-B",
+    "CF88:ART.40:PAR.4-C"
+   ],
+   "legacy_text": "-C. Poderão ser estabelecidos por lei complementar do respectivo ente federativo idade e tempo de contribuição diferenciados para aposentadoria de servidores cujas atividades sejam exercidas com efetiva exposição a agentes químicos, físicos"
+  },
+  {
+   "key": "CF88:ART.93:INC.VIII",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "result": "RESOLVED_WITH_EVIDENCE",
+   "target": "CF88:ART.93:INC.VIII-B",
+   "rule": "LEGACY_TEXT_STARTS_WITH_SUFFIX_REMNANT_B_AND_MATCHES_CF88:ART.93:INC.VIII-B",
+   "candidates": [
+    "CF88:ART.93:INC.VIII",
+    "CF88:ART.93:INC.VIII-A",
+    "CF88:ART.93:INC.VIII-B"
+   ],
+   "legacy_text": "B - a permuta de magistrados de comarca de igual entrância, quando for o caso, e dentro do mesmo segmento de justiça, inclusive entre os juízes de segundo grau, vinculados a diferentes tribunais, na esfera da justiça estadual, federal ou do"
+  }
+ ],
+ "invalid": [
+  {
+   "record": "JUR_LOOKUP:L5",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.1:PAR.1",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "§ 1º do artigo 1 || É constitucional o § 1º do artigo 1.361 do Código Civil no que revela a possibilidade de ter-se como constituída a propriedade fiduciária de veículos com o registro do contrato na "
+  },
+  {
+   "record": "JUR_LOOKUP:L8",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.3:PAR.3",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "O art. 3º, § 3º, da Lei 10.259/2001 é compatível com a Constituição Federal || O art. 3º, § 3º, da Lei 10.259/2001 é compatível com a Constituição Federal, devendo ser interpretado no sentido de que a"
+  },
+  {
+   "record": "JUR_LOOKUP:L48",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.20:PAR.3",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "§ 3º do artigo 20 || É inconstitucional o § 3º do artigo 20 da Lei 8.742/1993, que estabelece a renda familiar mensal per capita inferior a um quarto do salário mínimo como requisito obrigatório para "
+  },
+  {
+   "record": "JUR_LOOKUP:L57",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.25:INC.I",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "artigo 25, incisos I e II || cional a contribuição à seguridade social, a cargo do empregador rural pessoa jurídica, incidente sobre a receita bruta proveniente da comercialização da sua produção, pre"
+  },
+  {
+   "record": "JUR_LOOKUP:L58",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.25:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "artigo 25, incisos I e II || cional a contribuição à seguridade social, a cargo do empregador rural pessoa jurídica, incidente sobre a receita bruta proveniente da comercialização da sua produção, pre"
+  },
+  {
+   "record": "JUR_LOOKUP:L89",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.50:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF || da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº"
+  },
+  {
+   "record": "JUR_LOOKUP:L93",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.65:INC.I",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "de que comprovado o valor efetivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF || de que co"
+  },
+  {
+   "record": "JUR_LOOKUP:L97",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.78:PAR.4",
+   "result": "RESOLVED_WITH_EVIDENCE",
+   "target": "ADCT:ART.78:PAR.4",
+   "category": "A_EXTRACTION_ERROR_NAMESPACE",
+   "citation": "§4º do art. 78 || É constitucional o sequestro de verbas públicas pela autoridade judicial competente nas hipóteses do §4º do art. 78 do ADCT, cuja normatividade veicula regime especial de pagamento d"
+  },
+  {
+   "record": "JUR_LOOKUP:L99",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.92:INC.I:AL.b",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "mos do art. 102 do Código Penal Militar e do art. 92, I, 'b', do Código Penal, respectivamente. 2) Nos termos do artigo 125, § 4º, da Constituição Federal || a graduação da praça pode ser declarada co"
+  },
+  {
+   "record": "JUR_LOOKUP:L103",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "key": "CF88:ART.94:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "órgão fracionário que se recusa a aplicar o art. 94, II, da Lei 9.472/1997, sem observar a cláusula de reserva de Plenário (CF || É nula a decisão de órgão fracionário que se recusa a aplicar o art. 9"
+  },
+  {
+   "record": "STF:RG:349:CF88:1:1:-:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.1:PAR.1",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "§ 1º do artigo 1 || É constitucional o § 1º do artigo 1.361 do Código Civil no que revela a possibilidade de ter-se como constituída a propriedade fiduciária de veículos com o registro do contrato na "
+  },
+  {
+   "record": "STF:RG:1277:CF88:3:3:-:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.3:PAR.3",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "O art. 3º, § 3º, da Lei 10.259/2001 é compatível com a Constituição Federal || O art. 3º, § 3º, da Lei 10.259/2001 é compatível com a Constituição Federal, devendo ser interpretado no sentido de que a"
+  },
+  {
+   "record": "STF:RG:27:CF88:20:3:-:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.20:PAR.3",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "§ 3º do artigo 20 || É inconstitucional o § 3º do artigo 20 da Lei 8.742/1993, que estabelece a renda familiar mensal per capita inferior a um quarto do salário mínimo como requisito obrigatório para "
+  },
+  {
+   "record": "STF:RG:651:CF88:25:-:I:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.25:INC.I",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "artigo 25, incisos I e II || cional a contribuição à seguridade social, a cargo do empregador rural pessoa jurídica, incidente sobre a receita bruta proveniente da comercialização da sua produção, pre"
+  },
+  {
+   "record": "STF:RG:651:CF88:25:-:II:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.25:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "artigo 25, incisos I e II || cional a contribuição à seguridade social, a cargo do empregador rural pessoa jurídica, incidente sobre a receita bruta proveniente da comercialização da sua produção, pre"
+  },
+  {
+   "record": "STF:RG:966:CF88:50:-:II:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.50:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF || Terço adicional de férias (CF, art. 7º, XVII); Pagamento de auxíli"
+  },
+  {
+   "record": "STF:RG:976:CF88:50:-:II:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.50:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF || Terço adicional de férias (CF, art. 7º, XVII); Pagamento de auxíli"
+  },
+  {
+   "record": "STF:RG:966:CF88:65:-:I:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.65:INC.I",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "de que comprovado o valor efetivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF || es limite"
+  },
+  {
+   "record": "STF:RG:976:CF88:65:-:I:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.65:INC.I",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "de que comprovado o valor efetivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF || es limite"
+  },
+  {
+   "record": "STF:RG:231:CF88:78:4:-:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.78:PAR.4",
+   "result": "RESOLVED_WITH_EVIDENCE",
+   "target": "ADCT:ART.78:PAR.4",
+   "category": "A_EXTRACTION_ERROR_NAMESPACE",
+   "citation": "§4º do art. 78 || É constitucional o sequestro de verbas públicas pela autoridade judicial competente nas hipóteses do §4º do art. 78 do ADCT, cuja normatividade veicula regime especial de pagamento d"
+  },
+  {
+   "record": "STF:RG:1200:CF88:92:-:I:b",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.92:INC.I:AL.b",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "mos do art. 102 do Código Penal Militar e do art. 92, I, 'b', do Código Penal, respectivamente. 2) Nos termos do artigo 125, § 4º, da Constituição Federal || a graduação da praça pode ser declarada co"
+  },
+  {
+   "record": "STF:RG:739:CF88:94:-:II:-",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "key": "CF88:ART.94:INC.II",
+   "result": "QUARANTINED",
+   "target": null,
+   "category": "C_OTHER_NORM_CITED",
+   "citation": "órgão fracionário que se recusa a aplicar o art. 94, II, da Lei 9.472/1997, sem observar a cláusula de reserva de Plenário (CF || É nula a decisão de órgão fracionário que se recusa a aplicar o art. 9"
+  }
+ ],
+ "invalid_categories": {
+  "C_OTHER_NORM_CITED": 20,
+  "A_EXTRACTION_ERROR_NAMESPACE": 2
+ },
+ "source_policy": {
+  "STRUCTURAL_CANONICAL_SOURCE": {
+   "path": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+   "sha256": "d9f3d6b92ffd524c26a73e311f8c7daa4bf31772193d6d24932acff29c4c2da4",
+   "role": "identidade estrutural (targets), compatibilidade historica com a V2; contem ADCT e redacoes historicas"
+  },
+  "OPERATIONAL_CURRENT_TEXT_SOURCE": {
+   "path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "role": "texto vigente apresentado ao usuario (Senado monovigente); hoje sem ADCT"
+  },
+  "target_id_independent_of_bytes": true,
+  "status_mechanism": "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json: CURRENT (rotulo ou texto no vigente), HISTORICAL_ONLY (ausente do vigente ou renumerado), STRUCTURAL (norma/namespace/artigo), UNKNOWN_VALIDITY (ADCT, sem texto vigente)",
+  "target_status_counts": {
+   "CURRENT": 2644,
+   "HISTORICAL_ONLY": 74,
+   "STRUCTURAL": 426,
+   "UNKNOWN_VALIDITY": 812
+  }
+ },
+ "catalogs": {
+  "canonical": "LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json",
+  "quarantine": "LEGAL_TARGET_ID/derived/CF88_REFERENCES_QUARANTINE.json",
+  "status": "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json",
+  "golden": "LEGAL_TARGET_ID/derived/CF88_GOLDEN_CORPUS.json",
+  "sha256": {
+   "CF88_REFERENCES_CANONICAL.json": "89bd39c48c45e71eeb4b14c4e323f67c2e945c14ded8c86089c37e6578e19319",
+   "CF88_REFERENCES_QUARANTINE.json": "38fe75efed1940b055dc9ae98be04113256670efbb15469728e0f0ae7b657a0b",
+   "CF88_TARGET_STATUS.json": "5b88efebe9b41dae2cb3439805110e1e576d1c2a7ee67f1bdf4017dfa603a53b",
+   "CF88_GOLDEN_CORPUS.json": "84a0bafbf0fe7afcdc1f9155b9eae2d5d829a554677efe1c7907de510ae63eff"
+  },
+  "determinism": "duas execucoes: canonical, quarantine e status byte-identicos",
+  "gate": "validate_reference_record(): validate_target_id + existencia no indice + campos obrigatorios; aplicado a 100% do catalogo"
+ },
+ "deduplication": {
+  "key": "(source_layer, target_id, reference_type, subject_id[work_id ou tema])",
+  "exact": 0,
+  "possible": 9,
+  "note": "Os 9 possiveis sao rotas multiplas do mesmo vinculo obra x dispositivo (RC2: 105 rotas/101 vinculos; RC1: 125/120) - desenho do V2, nao removidos. RC1 x RC2 sao versoes (RC1 superado), nao duplicatas."
+ },
+ "historical_only_references": [
+  {
+   "target": "CF88:ART.171:PAR.2",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "type": "V2_DEVICE_MENTION"
+  },
+  {
+   "target": "CF88:ART.202:INC.II",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "type": "V2_DEVICE_MENTION"
+  },
+  {
+   "target": "CF88:ART.233:PAR.1",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "type": "V2_DEVICE_MENTION"
+  },
+  {
+   "target": "CF88:ART.42:PAR.4",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "type": "V2_DEVICE_MENTION"
+  },
+  {
+   "target": "CF88:ART.92:PAR.UNICO",
+   "layer": "V2_ALL_DISTINCT_DEVICE_IDS",
+   "type": "V2_DEVICE_MENTION"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.II",
+   "layer": "SD_RELATIONS_REL_LOOKUP",
+   "type": "CORRELATA_INDEX_ENTRY"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.III",
+   "layer": "SD_RELATIONS_REL_LOOKUP",
+   "type": "CORRELATA_INDEX_ENTRY"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.II",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "type": "JURISPRUDENCE_INDEX_ENTRY"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.III",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "type": "JURISPRUDENCE_INDEX_ENTRY"
+  },
+  {
+   "target": "CF88:ART.40:PAR.7:INC.I",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "type": "JURISPRUDENCE_INDEX_ENTRY"
+  },
+  {
+   "target": "CF88:ART.114:INC.VIII",
+   "layer": "SD_JURIS_J4_6_JUR_LOOKUP",
+   "type": "JURISPRUDENCE_INDEX_ENTRY"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.II",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "type": "JURISPRUDENCE_LINK"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.II",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "type": "JURISPRUDENCE_LINK"
+  },
+  {
+   "target": "CF88:ART.40:PAR.4:INC.III",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "type": "JURISPRUDENCE_LINK"
+  },
+  {
+   "target": "CF88:ART.40:PAR.7:INC.I",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "type": "JURISPRUDENCE_LINK"
+  },
+  {
+   "target": "CF88:ART.114:INC.VIII",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "type": "JURISPRUDENCE_LINK"
+  },
+  {
+   "target": "CF88:ART.114:INC.VIII",
+   "layer": "SD_JURIS_J4_6_IDS",
+   "type": "JURISPRUDENCE_LINK"
+  }
+ ],
+ "firmware": {
+  "FIRMWARE_NAMESPACE_FIX_REQUIRED": true,
+  "problem": "chaveContextoAtual() = artigo|paragrafo|inciso|alinea sem namespace; cf.txt no SD traria CF e ADCT no mesmo arquivo; lookups JUR/REL usam CF88 fixo; ADCT art.5 colide com CF art.5",
+  "proposal": [
+   "chave de contexto = target_id canonico (ex.: CF88:ART.5:INC.LXXVIII, ADCT:ART.5:PAR.1), char[40]",
+   "namespace ativo definido pelo arquivo/secao aberta (marcador ATO DAS DISPOSICOES... ou arquivo ADCT separado)",
+   "lookups: coluna ORIGEM_NORMA passa a aceitar ADCT (to_pipe_fields ja gera ADCT|5|1||)",
+   "CAPUT: contexto no texto do caput = ART.n:CAPUT; referencias de ARTIGO (unidade) exibidas em todo o artigo",
+   "nao implementado nesta missao"
+  ]
+ },
+ "adct": {
+  "OPERATIONAL_CF_TEXT_MISSING_ADCT": true,
+  "options": {
+   "A": "incorporar o ADCT ao arquivo atual da CF (apos o corpo, com marcador)",
+   "B": "arquivo separado do ADCT na mesma pasta da CF (namespace ADCT)",
+   "C": "organizacao alternativa (ex.: pasta propria ADCT)"
+  },
+  "recommendation": "B: arquivo separado do ADCT (namespace inequivoco por arquivo, sem reintroduzir a colisao de numeracao no mesmo arquivo; mantem o texto vigente da CF inalterado); requer fonte monovigente do ADCT e a correcao de namespace do firmware antes de publicar",
+  "executed": false
+ },
+ "golden_corpus": [
+  {
+   "article": "CF88:ART.1",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "INCISO": 5,
+    "PARAGRAFO_UNICO": 1
+   },
+   "references": {
+    "JURISPRUDENCE_INDEX_ENTRY": 3,
+    "JURISPRUDENCE_LINK": 6,
+    "V2_DEVICE_MENTION": 4,
+    "WORK_REFERENCE": 7,
+    "WORK_REFERENCE_SUPERSEDED": 8
+   },
+   "migration": {
+    "AUTO_MEMBER_MATCH": 25,
+    "KEPT_AS_ARTICLE": 2,
+    "MIGRATED_TO_CAPUT": 1
+   }
+  },
+  {
+   "article": "CF88:ART.5",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ALINEA": 24,
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "INCISO": 79,
+    "PARAGRAFO": 4
+   },
+   "references": {
+    "CORRELATA_INDEX_ENTRY": 1,
+    "JURISPRUDENCE_INDEX_ENTRY": 15,
+    "JURISPRUDENCE_LINK": 23,
+    "V2_DEVICE_MENTION": 39,
+    "WORK_REFERENCE": 35,
+    "WORK_REFERENCE_SUPERSEDED": 43
+   },
+   "migration": {
+    "AUTO_MEMBER_MATCH": 150,
+    "MIGRATED_TO_CAPUT": 6
+   }
+  },
+  {
+   "article": "CF88:ART.37",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ALINEA": 3,
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "INCISO": 28,
+    "PARAGRAFO": 16
+   },
+   "references": {
+    "CORRELATA_INDEX_ENTRY": 4,
+    "JURISPRUDENCE_INDEX_ENTRY": 10,
+    "JURISPRUDENCE_LINK": 27,
+    "V2_DEVICE_MENTION": 15
+   },
+   "migration": {
+    "AUTO_MEMBER_MATCH": 53,
+    "MIGRATED_TO_CAPUT": 3
+   }
+  },
+  {
+   "article": "CF88:ART.60",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "INCISO": 7,
+    "PARAGRAFO": 5
+   },
+   "references": {
+    "V2_DEVICE_MENTION": 1
+   },
+   "migration": {
+    "AUTO_MEMBER_MATCH": 1
+   }
+  },
+  {
+   "article": "CF88:ART.150",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ALINEA": 8,
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "INCISO": 6,
+    "PARAGRAFO": 7
+   },
+   "references": {
+    "CORRELATA_INDEX_ENTRY": 1,
+    "JURISPRUDENCE_INDEX_ENTRY": 7,
+    "JURISPRUDENCE_LINK": 21,
+    "V2_DEVICE_MENTION": 1
+   },
+   "migration": {
+    "AUTO_MEMBER_MATCH": 30
+   }
+  },
+  {
+   "article": "CF88:ART.225",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "INCISO": 8,
+    "PARAGRAFO": 7
+   },
+   "references": {
+    "V2_DEVICE_MENTION": 8,
+    "WORK_REFERENCE": 2,
+    "WORK_REFERENCE_SUPERSEDED": 3
+   },
+   "migration": {
+    "AUTO_MEMBER_MATCH": 8,
+    "MIGRATED_TO_CAPUT": 5
+   }
+  },
+  {
+   "article": "ADCT:ART.5",
+   "status": "STRUCTURAL",
+   "targets": {
+    "ARTIGO": 1,
+    "CAPUT": 1,
+    "PARAGRAFO": 5
+   },
+   "references": {},
+   "migration": {}
+  }
+ ],
+ "tests": {
+  "file": "LEGAL_TARGET_ID/tests/test_reference_canonicalization.py",
+  "a2_tests": 13,
+  "total_suite": "31/31 OK"
+ },
+ "legal_content_changed": false,
+ "firmware_changed": false,
+ "sd_changed": false,
+ "originals_modified": false
+}
