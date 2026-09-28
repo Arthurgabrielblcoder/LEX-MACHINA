@@ -1,0 +1,181 @@
+{
+  "blocking_mismatches": 0,
+  "consumer_sha256": "4e53ca2a87bd0577facb4461b09b685223c4daabe869cfaff81610e6cdc66a7d",
+  "direct_run": {
+    "duration_ms": 165.3,
+    "exit_code": 0,
+    "historical_byte_parity": "2/2",
+    "outputs": [
+      {
+        "name": "CATALOGO_EXPANSAO_200.json",
+        "sha256": "5764d749f83d5c1ce99a84ff521178c048d922f40591dc9a598f2af543ec5c43",
+        "size": 959745
+      },
+      {
+        "name": "CATALOGO_TOTAL_69_MAIS_APTAS.json",
+        "sha256": "6bf04fec443416d0b9fd92b65a4254960a3b37691d171942fc5950e0ca14abb6",
+        "size": 76121
+      }
+    ]
+  },
+  "environment": {
+    "default_encoding": "utf-8",
+    "filesystem_encoding": "utf-8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "preferred_encoding": "utf-8",
+    "python": "3.12.9",
+    "pythondontwritebytecode": "1",
+    "pythonhashseed": "0",
+    "pythonutf8": "1"
+  },
+  "final_status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+  "first_write_seal": {
+    "boundary": "LEGACY_SELECTION_COMPLETE_BEFORE_FIRST_FUNCTIONAL_OUTPUT_WRITE",
+    "operation": "WRITE",
+    "result": "PASS",
+    "seal_event_seen": true,
+    "selection_frozen": true
+  },
+  "input_copy_integrity": {
+    "byte_match_count": 208,
+    "copy_count": 208,
+    "mismatch_count": 0,
+    "result": "PASS"
+  },
+  "negative_tests": [
+    {
+      "comparison_status": "SHADOW_RESOLUTION_FAILURE",
+      "diagnostic_status": "WRITTEN",
+      "legacy_exit": 0,
+      "output1_sha_match": true,
+      "output2_sha_match": true,
+      "scenario": "BINDING_MISSING",
+      "shadow_did_affect_output": false,
+      "shadow_status": "SHADOW_FAIL_CLOSED"
+    },
+    {
+      "comparison_status": "SHADOW_RESOLUTION_FAILURE",
+      "diagnostic_status": "WRITTEN",
+      "legacy_exit": 0,
+      "output1_sha_match": true,
+      "output2_sha_match": true,
+      "scenario": "SHADOW_HASH_MISMATCH",
+      "shadow_did_affect_output": false,
+      "shadow_status": "SHADOW_FAIL_CLOSED"
+    },
+    {
+      "comparison_status": "MISMATCH",
+      "diagnostic_status": "WRITTEN",
+      "legacy_exit": 0,
+      "output1_sha_match": true,
+      "output2_sha_match": true,
+      "scenario": "ARTIFICIAL_SELECTION_MISMATCH",
+      "shadow_did_affect_output": false,
+      "shadow_status": "SHADOW_OK"
+    },
+    {
+      "comparison_status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+      "diagnostic_status": "WRITE_FAILED",
+      "legacy_exit": 0,
+      "output1_sha_match": true,
+      "output2_sha_match": true,
+      "scenario": "DIAGNOSTIC_NOT_WRITABLE",
+      "shadow_did_affect_output": false,
+      "shadow_status": "SHADOW_OK",
+      "warning_seen": true
+    },
+    {
+      "comparison_status": "ADAPTER_INTERNAL_FAILURE",
+      "diagnostic_status": "WRITTEN",
+      "legacy_exit": 0,
+      "output1_sha_match": true,
+      "output2_sha_match": true,
+      "scenario": "SHADOW_INTERNAL_ERROR",
+      "shadow_did_affect_output": false,
+      "shadow_status": "SHADOW_INTERNAL_ERROR"
+    }
+  ],
+  "negative_tests_summary": {
+    "negative_shadow_isolation": "PASS",
+    "outputs_byte_identical": 10,
+    "outputs_total": 10
+  },
+  "performance": {
+    "classification": "OBSERVED_SINGLE_RUN_OVERHEAD",
+    "comparison_duration_ms": 1.2758,
+    "diagnostic_write_duration_ms": 11.4176,
+    "direct_duration_ms": 165.3,
+    "off_duration_ms": 242.948,
+    "on_legacy_duration_ms": 116.6526,
+    "on_shadow_duration_ms": 1316.1449,
+    "on_total_duration_ms": 1561.018,
+    "on_vs_direct_overhead_ms": 1395.718,
+    "on_vs_direct_overhead_percent": 844.355,
+    "performance_followup_classification": "NON_BLOCKING_PERFORMANCE_FOLLOWUP",
+    "performance_requires_followup": true,
+    "production_performance_approved": false,
+    "unit": "milliseconds"
+  },
+  "repository_integrity": {
+    "consumer_intact": true,
+    "registry_lock_resolver_post": "PASS/PASS/PASS",
+    "staging_empty": true,
+    "tracked_clean": true
+  },
+  "run_id": "d05-shadow-consumer-2026-09-28-sca1b2",
+  "runtime_comparison": {
+    "blocking_mismatches": 0,
+    "dependencies": "MATCH",
+    "member_level_sets": "MATCH",
+    "not_observable_dimensions_preserved": true,
+    "order": "MATCH",
+    "status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS"
+  },
+  "runtime_selection_observation": {
+    "auxiliary_reads_before_seal": 5,
+    "base_catalog_work_ids": 199,
+    "selection_paths": 207,
+    "triage_batch_paths": 8,
+    "wrapper_dependency_reads": 1
+  },
+  "sandbox_root": {
+    "classification": "EXTERNAL_TEMP_SANDBOX",
+    "inside_repository": false,
+    "preserved_for_audit": true
+  },
+  "shadow_off_run": {
+    "duration_ms": 242.948,
+    "exit_code": 0,
+    "registry_available_in_runner_root": false,
+    "lock_available_in_runner_root": false,
+    "shadow_off_independent": true
+  },
+  "shadow_on_run": {
+    "comparison_status": "PASS_WITH_NOT_OBSERVABLE_DIMENSIONS",
+    "diagnostic_artifact_class": "DERIVED_DIAGNOSTIC",
+    "diagnostic_authority": "NON_AUTHORITATIVE",
+    "diagnostic_schema_valid": true,
+    "diagnostic_status": "WRITTEN",
+    "duration_ms": 1561.018,
+    "legacy_authoritative": true,
+    "legacy_exit_code": 0,
+    "shadow_authoritative": false,
+    "shadow_did_affect_output": false,
+    "shadow_status": "SHADOW_OK"
+  },
+  "triple_output_parity": {
+    "direct_off_byte_parity": "2/2",
+    "direct_on_byte_parity": "2/2",
+    "exit_code_parity": true,
+    "off_on_byte_parity": "2/2",
+    "outputs_matching": 2,
+    "outputs_total": 2,
+    "result": "PASS",
+    "stderr_parity": true,
+    "stdout_parity": true
+  },
+  "write_boundary": {
+    "functional_writes_outside_sandbox": 0,
+    "result": "PASS"
+  }
+}
