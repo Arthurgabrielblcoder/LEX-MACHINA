@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lex-machina/protected545-relocation-ledger/1",
+  "title": "protected545 relocation ledger (append-only, hash-chained, derived from INTEGRITY_BEFORE.json)",
+  "type": "object",
+  "required": ["header", "events", "head"],
+  "additionalProperties": false,
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "relpath": {"type": "string", "minLength": 1, "pattern": "^(?![/\\\\])(?![A-Za-z]:)(?!.*(^|/)\\.\\.?(/|$))(?!.*\\\\)(?!.*//).+$"},
+    "location": {
+      "type": "object",
+      "required": ["root_id", "relative_path"],
+      "additionalProperties": false,
+      "properties": {"root_id": {"type": "string", "minLength": 1}, "relative_path": {"$ref": "#/$defs/relpath"}}
+    }
+  },
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["schema_version", "ledger_id", "original_proof", "roots"],
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {"const": 1},
+        "ledger_id": {"type": "string", "minLength": 1},
+        "original_proof": {
+          "type": "object",
+          "required": ["root_id", "relative_path", "sha256"],
+          "additionalProperties": false,
+          "properties": {"root_id": {"const": "REPO_ROOT"}, "relative_path": {"$ref": "#/$defs/relpath"}, "sha256": {"$ref": "#/$defs/sha256"}}
+        },
+        "roots": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["seq", "event_type", "occurrence_id", "original", "from_location", "to_location", "post_move_sha256",
+                     "post_move_size", "byte_identity_verified", "reason", "source_manifest", "batch", "prev_event_hash", "event_hash"],
+        "additionalProperties": false,
+        "properties": {
+          "seq": {"type": "integer", "minimum": 1},
+          "event_type": {"enum": ["RELOCATE", "ROLLBACK"]},
+          "occurrence_id": {"type": "string", "pattern": "^p545-[0-9a-f]{24}$"},
+          "original": {
+            "type": "object",
+            "required": ["root_id", "relative_path", "sha256", "size"],
+            "additionalProperties": false,
+            "properties": {"root_id": {"const": "REPO_ROOT"}, "relative_path": {"$ref": "#/$defs/relpath"},
+                           "sha256": {"$ref": "#/$defs/sha256"}, "size": {"type": "integer", "minimum": 0}}
+          },
+          "from_location": {"$ref": "#/$defs/location"},
+          "to_location": {"$ref": "#/$defs/location"},
+          "post_move_sha256": {"$ref": "#/$defs/sha256"},
+          "post_move_size": {"type": "integer", "minimum": 0},
+          "byte_identity_verified": {"const": true},
+          "reason": {"type": "string", "minLength": 1},
+          "source_manifest": {"type": "string", "minLength": 1},
+          "batch": {
+            "type": ["object", "null"],
+            "required": ["batch_id", "directory_from", "directory_to", "directory_inventory_sha256"],
+            "properties": {
+              "batch_id": {"type": "string"},
+              "directory_from": {"$ref": "#/$defs/location"},
+              "directory_to": {"$ref": "#/$defs/location"},
+              "directory_inventory_sha256": {"$ref": "#/$defs/sha256"}
+            }
+          },
+          "prev_event_hash": {"$ref": "#/$defs/sha256"},
+          "event_hash": {"$ref": "#/$defs/sha256"}
+        }
+      }
+    },
+    "head": {
+      "type": "object",
+      "required": ["count", "event_hash"],
+      "additionalProperties": false,
+      "properties": {"count": {"type": "integer", "minimum": 0}, "event_hash": {"$ref": "#/$defs/sha256"}}
+    }
+  }
+}

@@ -1,0 +1,2724 @@
+{
+ "schema_version": "lex-machina-p545a/1",
+ "mission": "P545A",
+ "head": "9e7ae67f8f9ae49a618f1cf14953187b36c4dc92",
+ "tag_base": "post-wave2-execution-2026-09-28",
+ "executes_moves": false,
+ "original_proof_modified": false,
+ "sources": [
+  "CLEANUP_AUDIT/WAVE2R_REEVALUATION.json",
+  "CLEANUP_AUDIT/WAVE2E_RELOCATION_MANIFEST.json",
+  "LEX_MACHINA_REFERENCIAS_V2/00_CHECKPOINTS/INTEGRITY_BEFORE.json"
+ ],
+ "policy": {
+  "model": "ORIGINAL PROOF (congelada) + RELOCATION PROOF (derivada, append-only)",
+  "identity": "occurrence_id = p545-<sha256(\"INTEGRITY_BEFORE\\0\"+path+\"\\0\"+sha256+\"\\0\"+bytes)[:24]>; SHA igual nao identifica ocorrencia",
+  "live_verification": "PROTECTED545_RELOCATION/verify_relocation.py (proof + ledger + filesystem)",
+  "legacy_reexecution": "ferramentas congeladas da V2 so rodam sobre visao reconstruida (materialize_legacy_view.py); no repo vivo o r1d_support.integrity() falharia por FileNotFoundError",
+  "approval_required": "PROTECTED545_POLICY.md proibe mover sem nova autorizacao explicita: P545E exige aprovacao humana desta politica derivada"
+ },
+ "ledger_spec": {
+  "schema": "PROTECTED545_RELOCATION/schemas/protected545-relocation-ledger.schema.json",
+  "library": "PROTECTED545_RELOCATION/relocation_ledger.py",
+  "event_fields": [
+   "seq",
+   "event_type RELOCATE|ROLLBACK",
+   "occurrence_id",
+   "original{root_id,relative_path,sha256,size}",
+   "from_location",
+   "to_location",
+   "post_move_sha256",
+   "post_move_size",
+   "byte_identity_verified",
+   "reason",
+   "source_manifest",
+   "batch{batch_id,directory_from,directory_to,directory_inventory_sha256}",
+   "prev_event_hash",
+   "event_hash"
+  ],
+  "mapping_to_requested": {
+   "protected_id": "occurrence_id",
+   "original_path": "original.relative_path (root REPO_ROOT)",
+   "original_relative_path": "original.relative_path",
+   "original_sha256": "original.sha256",
+   "original_size": "original.size",
+   "original_inventory_hash": "batch.directory_inventory_sha256",
+   "relocation_generation": "posicao do evento na lineage da occurrence",
+   "new_path": "to_location",
+   "new_relative_path": "to_location.relative_path",
+   "post_move_sha256": "post_move_sha256",
+   "byte_identity_verified": "byte_identity_verified",
+   "relocation_reason": "reason",
+   "source_manifest": "source_manifest",
+   "rollback_path": "from_location do RELOCATE ativo",
+   "rollback_possible": "derivado: lineage valida + destino atual verificado",
+   "status": "calculado pelo verificador (nao armazenado)"
+  },
+  "append_only": "eventos nunca editados; prev_event_hash encadeado; head{count,event_hash}; ancora externa (commit/manifest) detecta truncamento com head reescrito",
+  "lineage": "A->B e B->C ficam como dois eventos; ROLLBACK desempilha para o local anterior sem apagar eventos"
+ },
+ "verifier": {
+  "path": "PROTECTED545_RELOCATION/verify_relocation.py",
+  "statuses": [
+   "ORIGINAL_PATH_PRESENT",
+   "VALID_RELOCATION",
+   "MISSING",
+   "HASH_MISMATCH",
+   "AMBIGUOUS_RELOCATION",
+   "INVALID_LINEAGE"
+  ],
+  "unit_tests": "PROTECTED545_RELOCATION/tests/test_verify_relocation.py: 23/23 OK",
+  "live_repo_run": {
+   "result": "PASS",
+   "ORIGINAL_PATH_PRESENT": 545
+  }
+ },
+ "sandbox": {
+  "summary": "CLEANUP_AUDIT/P545_SANDBOX_PROOF.json",
+  "verdict": "PASS",
+  "dirs": [
+   "C:\\GitHub_LEX_MACHINA_P545_TEMP\\p545a-2026-09-28",
+   "C:\\GitHub_LEX_MACHINA_P545_TEMP\\p545a-2026-09-28-r2"
+  ]
+ },
+ "code_map": {
+  "original_proof": {
+   "path": "LEX_MACHINA_REFERENCIAS_V2/00_CHECKPOINTS/INTEGRITY_BEFORE.json",
+   "sha256": "a319f0ea917b0e6c00e037ba5b7a5c97b351d1b0af00b79862ae98db7cfd91c2",
+   "structure": "{schema_version:'2.0.phase0', logical_timestamp, scope, astra407_verified, git_before, files:[{path, sha256, bytes}] x545}",
+   "identity_fields": [
+    "path (relativo a raiz do repositorio, POSIX)",
+    "sha256",
+    "bytes (nao verificado pelo codigo legado)"
+   ],
+   "creator": "Nenhum script no repositorio cria o arquivo (gerado na fase 0 da V2, schema 2.0.phase0); somente leitores existem."
+  },
+  "readers": [
+   {
+    "code": "LEX_MACHINA_REFERENCIAS_V2/05_COMPILADOR/r1d_support.py:36-45",
+    "function": "integrity()",
+    "logic": "protected = load(ROOT/'00_CHECKPOINTS/INTEGRITY_BEFORE.json')['files']; external_changed = [r['path'] for r in protected if file_hash(ROOT.parent/r['path']) != r['sha256']]",
+    "path_mode": "relativo ao repo (ROOT.parent/path); sem path absoluto",
+    "missing_behavior": "FileNotFoundError (falha por excecao, sem status MISSING)",
+    "size_checked": false,
+    "alias_or_relocation": false,
+    "frozen_v2_member": true
+   },
+   {
+    "code": "LEX_MACHINA_REFERENCIAS_V2/05_COMPILADOR/r1d1_pipeline.py:29-35",
+    "function": "integrity()",
+    "logic": "envolve r1d_support.integrity(); protected545 = protected_checked/protected_changed",
+    "frozen_v2_member": true
+   },
+   {
+    "code": "callers com require(integrity()[\"passed\"])",
+    "function": "gates",
+    "files": [
+     "05_COMPILADOR/r1d1_pipeline.py:55,128,156",
+     "06_BENCHMARKS/gate_r1d.py:20",
+     "06_BENCHMARKS/run_regression_r1d.py:30",
+     "07_EXECUCAO_COMPLETA/runner_integral_r1d.py:21",
+     "09_RELATORIOS/finalize_r1d.py:12"
+    ],
+    "consequence": "qualquer membro protected545 fora do path original impede reexecutar a linha R1D/R1D1 no repo vivo"
+   },
+   {
+    "code": "CLEANUP_AUDIT/_auditoria_higiene.py:82, _concluir_onda0.py:63",
+    "function": "auditoria",
+    "role": "AUDIT_ONLY"
+   }
+  ],
+  "existing_alias_or_relocation": "Nenhum mecanismo de alias/relocacao existe no codigo legado."
+ },
+ "discovery": [
+  {
+   "id": "D01",
+   "code": "LEX_MACHINA_REFERENCIAS_V2/06_BENCHMARKS/consolidate_labels.py:56",
+   "function": "build()",
+   "root": "REPO (raiz do repo)",
+   "pattern": "REPO.glob('LEX_MACHINA_REFERENCIAS*') + folder.rglob('*.json'), ordenado; filtro por marcadores decisao_humana/decisao_humana_informada/status_humano; SRCnnn por ordem",
+   "selectable_candidates": [
+    "LEX_MACHINA_REFERENCIAS_AUDITORIA_ASTRA_V1",
+    "LEX_MACHINA_REFERENCIAS_AUDITORIA_CAUSAL_V132_V1",
+    "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V2_FINAL",
+    "LEX_MACHINA_REFERENCIAS_BENCHMARK_69_HUMANO_V1",
+    "LEX_MACHINA_REFERENCIAS_BENCHMARK_CF_V2",
+    "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V2",
+    "LEX_MACHINA_REFERENCIAS_CF_ENGINE_RUN_V1",
+    "LEX_MACHINA_REFERENCIAS_CF_REVISAO_ALTA_CONFIANCA_V1",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_1",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_2",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_1",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_2",
+    "LEX_MACHINA_REFERENCIAS_FORCA_TEMA_LOTE45_V1_FINAL",
+    "LEX_MACHINA_REFERENCIAS_PREPARACAO_V14_ALPHA2",
+    "LEX_MACHINA_REFERENCIAS_REFINAMENTO_R7_V2",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA2",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA3"
+   ],
+   "selectable_count": 20,
+   "marker_files_in_candidates": 52,
+   "non_selected_referencias": [
+    "LEX_MACHINA_REFERENCIAS_AUDITORIA_CONTRATO_ENGINE_V1",
+    "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V1",
+    "LEX_MACHINA_REFERENCIAS_CATALOGO_EXPANSAO_V1",
+    "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V1",
+    "LEX_MACHINA_REFERENCIAS_CF_J5",
+    "LEX_MACHINA_REFERENCIAS_CF_J5_1",
+    "LEX_MACHINA_REFERENCIAS_DIAGNOSTICO_NUCLEOS_V1",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA2",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA3",
+    "LEX_MACHINA_REFERENCIAS_EXPERIMENTO_24_VS_69_V1",
+    "LEX_MACHINA_REFERENCIAS_TEMAS_LOTE45_V1",
+    "LEX_MACHINA_REFERENCIAS_TESTE_COMPLETO_ALPHA3_V1",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_EXTERNA_R7_V1"
+   ],
+   "nature": "OPERACIONAL (reproducao do ledger de rotulos da V2); arquivo no conjunto congelado V2 281 - nao editavel",
+   "effect_of_move": "pastas COM marcador: somem fontes e os SRCnnn seguintes sao renumerados; pastas SEM marcador: nenhum efeito",
+   "minimal_fix": [
+    "1) sem editar o arquivo congelado: reexecucao so na visao legada reconstruida (materialize_legacy_view.py) - validado no sandbox",
+    "2) futura versao NAO congelada: lista explicita ordenada das 55 fontes (path original + sha256 + SRCnnn) resolvida pelo ledger",
+    "3) archive root sempre FORA do repo (C:\\GitHub_LEX_MACHINA_ARCHIVE...) para que REPO.glob nunca o alcance"
+   ]
+  },
+  {
+   "id": "D01b",
+   "code": "06_BENCHMARKS/consolidate_labels.py:82-93, compare_pilot.py:20-27, compare_pilot_r1.py:20-27, run_regression*.py, r1d1_pipeline.py:20, runner_integral_r1d.py:50",
+   "function": "groupdefs / HISTORICAL",
+   "root": "REPO",
+   "pattern": "paths literais",
+   "selectable_candidates": [
+    "LEX_MACHINA_REFERENCIAS_TESTE_COMPLETO_ALPHA3_V1",
+    "LEX_MACHINA_REFERENCIAS_BENCHMARK_69_HUMANO_V1",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA3",
+    "LEX_MACHINA_REFERENCIAS_AUDITORIA_ASTRA_V1",
+    "LEX_MACHINA_REFERENCIAS_BENCHMARK_CF_V2",
+    "LEX_MACHINA_REFERENCIAS_PREPARACAO_V14_ALPHA2",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_2",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_2",
+    "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V2"
+   ],
+   "nature": "OPERACIONAL literal (nao dinamico); congelado V2",
+   "minimal_fix": [
+    "manter na raiz (STILL_ACTIVE_KEEP) ou reexecutar via visao legada"
+   ]
+  },
+  {
+   "id": "D02",
+   "code": "LEX_MACHINA_REFERENCIAS_V2/09_CATALOGO_EXPANSAO_200/06_RELATORIOS/enriquecer_v1.py:28 e 08_MANIFEST/gerar_manifest.py:50,54",
+   "function": "baseline() / <module>",
+   "root": "REPO",
+   "pattern": "REPO.rglob('*.IDX') e REPO.rglob('*') (mtime)",
+   "selectable_candidates": [
+    "1- LEX-MACHINAETAPA_2D3",
+    "LEX-MACHINAETAPA_2C",
+    "LEX-MACHINAETAPA_2D",
+    "LEX-MACHINAETAPA_2D2",
+    "LEX-MACHINAETAPA_2E5",
+    "LEX-MACHINA_ETAPA_2E6_SD_TESTE",
+    "LEX_MACHINA_JURIS_CF_J2",
+    "LEX_MACHINA_JURIS_CF_J2_5",
+    "LEX_MACHINA_JURIS_CF_J3",
+    "LEX_MACHINA_JURIS_CF_J4",
+    "LEX_MACHINA_JURIS_CF_J4_6",
+    "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+    "LEX_MACHINA_UPDATER_RELATIONS_V2",
+    "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+    "updater_stage2a_corrigida_v2"
+   ],
+   "selectable_count": 15,
+   "nature": "HISTORICO: baseline() aborta se BASELINE ja existe (one-shot); gerar_manifest nao foi executado no replay D05; ambos sao membros do Registry D05 (editar quebraria Registry PASS)",
+   "effect_of_move": "reexecucao de gerar_manifest.py contaria menos IDX em INTEGRIDADE_DEPOIS; MANIFEST.json do D05 nao depende de IDX",
+   "minimal_fix": [
+    "nao reexecutar no repo vivo apos P545E; reexecucao historica somente na visao legada",
+    "futuro (fora do D05 congelado): manifest fechado das 130 ocorrencias IDX resolvido pelo ledger"
+   ]
+  },
+  {
+   "id": "D12",
+   "code": "LEX-MACHINA_ETAPA_2E6_SD_TESTE/montador_sd/montar_sd_teste_relations_v2.py:46,71,78,144",
+   "function": "main()",
+   "root": "--pacote (default absoluto C:\\GitHub\\LEX-MACHINA\\LEX-MACHINAETAPA_2E41\\...) e Path(__file__).parent",
+   "pattern": "origem_normas.iterdir() EXT_*; glob('*.txt'); dst_normas.glob('EXT_*/*.txt'); rmtree(SD_PRONTO)",
+   "selectable_candidates": [
+    "LEX-MACHINAETAPA_2E41 (nao protected545, fora dos 55)",
+    "LEX-MACHINA_ETAPA_2E6_SD_TESTE (relativo ao script)"
+   ],
+   "nature": "FERRAMENTA PRESERVADA (nao executada); destrutiva sobre SD_PRONTO protegido",
+   "minimal_fix": [
+    "nunca executar no repo vivo; se necessario, executar numa copia com --pacote explicito",
+    "mover 2E6 junto com 2E41 (mesmo lote) ou manter ambos; paths internos sao relativos ao script"
+   ]
+  },
+  {
+   "id": "OTHER_SCANS",
+   "code": "updater/*.py (auditar_*, construir_lexdata_*, implantar_sd.py, sanear_saida.py), firmware openNextFile",
+   "root": "updater/saida, updater/backup_sd, SD",
+   "selectable_candidates": [],
+   "nature": "nao alcancam os 55 (raizes fora da raiz do repo)"
+  }
+ ],
+ "idx_analysis": {
+  "question": "Se o diretorio for realocado preservando conteudo e layout relativo interno, o vinculo IDX<->texto continua valido?",
+  "method": "Leitura de todos os 130 IDX protected545: formato, presenca de paths (absolutos/relativos), offsets e verificacao de offsets contra os textos/indices irmaos dentro do mesmo candidato.",
+  "findings": [
+   "Nenhum IDX contem path absoluto do repositorio (C:\\...) nem backslash.",
+   "Paths presentes sao relativos a raiz do SD (/99_LEXDATA_ESP32_OFICIAL_V4_TESTE/..., /99_RELATIONS_V2/..., /9-CODIGO.../19_JURISPRUDENCIA/...).",
+   "ARTIGOS/EXT_ARTIGOS: OFFSET|TAMANHO em bytes do TXT da norma; JUR_LOOKUP/REL_LOOKUP: OFFSET em bytes do JURISPRUDENCIA.IDX/RELACOES.IDX irmao.",
+   "Ordem fisica de diretorio so importa no SD (firmware openNextFile), nao no repositorio.",
+   "Offsets verificados dentro do proprio candidato: 100% validos em todos os grupos (ex.: 12.637/12.637 por copia do updater; 50.548/50.548 em updater_stage2a_corrigida_v2).",
+   "2E5 e 2E6/indices apontam textos EXT_* que so existem no pacote 2E41 (vinculo entre candidatos)."
+  ],
+  "groups": [
+   {
+    "group": "UPDATER builds (LEXDATA/INDICES_BINARIOS)",
+    "candidates": [
+     "1- LEX-MACHINAETAPA_2D3",
+     "LEX-MACHINAETAPA_2C",
+     "LEX-MACHINAETAPA_2D",
+     "LEX-MACHINAETAPA_2D2",
+     "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+     "LEX_MACHINA_UPDATER_RELATIONS_V2",
+     "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+     "updater_stage2a_corrigida_v2"
+    ],
+    "classification": "IDX_RELOCATABLE_WITH_PARENT",
+    "reason": "textos e BIN no mesmo build; paths relativos ao SD; offsets 100% validos"
+   },
+   {
+    "group": "JURIS CF J2..J4_6",
+    "candidates": [
+     "LEX_MACHINA_JURIS_CF_J2",
+     "LEX_MACHINA_JURIS_CF_J2_5",
+     "LEX_MACHINA_JURIS_CF_J3",
+     "LEX_MACHINA_JURIS_CF_J4",
+     "LEX_MACHINA_JURIS_CF_J4_6"
+    ],
+    "classification": "IDX_RELOCATABLE_WITH_PARENT",
+    "reason": "JUR_LOOKUP aponta offsets do JURISPRUDENCIA.IDX irmao; demais referencias sao URLs"
+   },
+   {
+    "group": "Relations 2E5/2E6",
+    "candidates": [
+     "LEX-MACHINAETAPA_2E5",
+     "LEX-MACHINA_ETAPA_2E6_SD_TESTE"
+    ],
+    "classification": "IDX_REQUIRES_FURTHER_PROOF",
+    "reason": "vinculo com textos do pacote 2E41 (fora do candidato); mover exige lote conjunto com 2E41 ou prova adicional"
+   }
+  ],
+  "idx_requires_rebuild": [],
+  "idx_active_blocker": [],
+  "binding_detail": {
+   "1- LEX-MACHINAETAPA_2D3": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "1- LEX-MACHINAETAPA_2D3/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "1- LEX-MACHINAETAPA_2D3/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX-MACHINAETAPA_2C": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "LEX-MACHINAETAPA_2C/updater_stage2c/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "LEX-MACHINAETAPA_2C/updater_stage2c/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX-MACHINAETAPA_2D": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "LEX-MACHINAETAPA_2D/updater_stage2d/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "LEX-MACHINAETAPA_2D/updater_stage2d/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX-MACHINAETAPA_2D2": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "LEX-MACHINAETAPA_2D2/updater_stage2d/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "LEX-MACHINAETAPA_2D2/updater_stage2d/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX-MACHINAETAPA_2E5": {
+    "idx": 4,
+    "kinds": [
+     "EXT_ARTIGOS.IDX",
+     "EXT_NORMAS.IDX",
+     "RELACOES.IDX",
+     "REL_LOOKUP.IDX"
+    ],
+    "path_refs": 40,
+    "path_resolved": 0,
+    "unresolved_examples": [
+     "LEX-MACHINAETAPA_2E5/etapa2e5_work/saida/PACOTE_INDICES_ESP32_2E5/99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_NORMAS.IDX -> /99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC108_2001/lc_108_2001_correlata.txt",
+     "LEX-MACHINAETAPA_2E5/etapa2e5_work/saida/PACOTE_INDICES_ESP32_2E5/99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_NORMAS.IDX -> /99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC109_2001/lc_109_2001_correlata.txt"
+    ],
+    "offset_checks": 41,
+    "offset_ok": 41,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX-MACHINA_ETAPA_2E6_SD_TESTE": {
+    "idx": 8,
+    "kinds": [
+     "EXT_ARTIGOS.IDX",
+     "EXT_NORMAS.IDX",
+     "RELACOES.IDX",
+     "REL_LOOKUP.IDX"
+    ],
+    "path_refs": 80,
+    "path_resolved": 40,
+    "unresolved_examples": [
+     "LEX-MACHINA_ETAPA_2E6_SD_TESTE/montador_sd/indices/EXT_NORMAS.IDX -> /99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC108_2001/lc_108_2001_correlata.txt",
+     "LEX-MACHINA_ETAPA_2E6_SD_TESTE/montador_sd/indices/EXT_NORMAS.IDX -> /99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC109_2001/lc_109_2001_correlata.txt"
+    ],
+    "offset_checks": 631,
+    "offset_ok": 631,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX_MACHINA_JURIS_CF_J2": {
+    "idx": 2,
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "unresolved_examples": [],
+    "offset_checks": 35,
+    "offset_ok": 35,
+    "repo_absolute_paths": false,
+    "url_refs": 35
+   },
+   "LEX_MACHINA_JURIS_CF_J2_5": {
+    "idx": 2,
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "unresolved_examples": [],
+    "offset_checks": 35,
+    "offset_ok": 35,
+    "repo_absolute_paths": false,
+    "url_refs": 35
+   },
+   "LEX_MACHINA_JURIS_CF_J3": {
+    "idx": 2,
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "unresolved_examples": [],
+    "offset_checks": 35,
+    "offset_ok": 35,
+    "repo_absolute_paths": false,
+    "url_refs": 35
+   },
+   "LEX_MACHINA_JURIS_CF_J4": {
+    "idx": 2,
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "unresolved_examples": [],
+    "offset_checks": 178,
+    "offset_ok": 178,
+    "repo_absolute_paths": false,
+    "url_refs": 296
+   },
+   "LEX_MACHINA_JURIS_CF_J4_6": {
+    "idx": 2,
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "unresolved_examples": [],
+    "offset_checks": 178,
+    "offset_ok": 178,
+    "repo_absolute_paths": false,
+    "url_refs": 296
+   },
+   "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX_MACHINA_UPDATER_RELATIONS_V2": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "LEX_MACHINA_UPDATER_RELATIONS_V2/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "LEX_MACHINA_UPDATER_RELATIONS_V2/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A/updater_stage2a/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A/updater_stage2a/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "updater [FORA_DOS_55]": {
+    "idx": 9,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "unresolved_examples": [
+     "updater/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "updater/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "updater_stage2a_corrigida_v2": {
+    "idx": 36,
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 1216,
+    "path_resolved": 928,
+    "unresolved_examples": [
+     "updater_stage2a_corrigida_v2/updater_stage2a_fix3/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ABUSO2019.BIN",
+     "updater_stage2a_corrigida_v2/updater_stage2a_fix3/saida/INDICES_BINARIOS_V1_BUILD/NORMAS_BIN.IDX -> /99_LEXDATA_ESP32_OFICIAL_V4_TESTE/BIN_V1/ACAOPOP1965.BIN"
+    ],
+    "offset_checks": 50548,
+    "offset_ok": 50548,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   }
+  }
+ },
+ "aggregates": {
+  "TOTAL_P545_CANDIDATES": 55,
+  "TOTAL_P545_BLOCKED_BYTES": 2888909303,
+  "P545_ONLY_BLOCKED_COUNT": 16,
+  "P545_ONLY_BYTES": 32464454,
+  "P545_PLUS_OTHER_BLOCKERS_COUNT": 39,
+  "P545_PLUS_OTHER_BYTES": 2856444849,
+  "READY_AFTER_P545_ONLY_BYTES": 32464454,
+  "READY_AFTER_P545_DYNAMIC_BYTES": 14310109,
+  "READY_AFTER_P545_IDX_BYTES": 2824982073,
+  "READY_AFTER_MULTIPLE_BYTES": 1025149,
+  "STILL_ACTIVE_BYTES": 16127518,
+  "MANUAL_BYTES": 0,
+  "MOVABLE_AFTER_ALL_FIXES_COUNT": 43,
+  "MOVABLE_AFTER_ALL_FIXES_BYTES": 2872781785,
+  "MOVABLE_PERCENT_OF_P545_BYTES": 99.442,
+  "MOVABLE_AFTER_P545_PLUS_IDX_WITHOUT_D01_COUNT": 29,
+  "MOVABLE_AFTER_P545_PLUS_IDX_WITHOUT_D01_BYTES": 2857446527,
+  "DISK_SPACE_FREED_IF_SAME_VOLUME": 0
+ },
+ "by_classification": {
+  "READY_AFTER_P545_RELOCATION_PROOF": {
+   "count": 16,
+   "bytes": 32464454,
+   "files": 121
+  },
+  "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX": {
+   "count": 12,
+   "bytes": 14310109,
+   "files": 156
+  },
+  "READY_AFTER_P545_PLUS_IDX_PROOF": {
+   "count": 13,
+   "bytes": 2824982073,
+   "files": 22152
+  },
+  "READY_AFTER_MULTIPLE_FIXES": {
+   "count": 2,
+   "bytes": 1025149,
+   "files": 45
+  },
+  "STILL_ACTIVE_KEEP": {
+   "count": 12,
+   "bytes": 16127518,
+   "files": 124
+  },
+  "MANUAL_REVIEW_REQUIRED": {
+   "count": 0,
+   "bytes": 0,
+   "files": 0
+  }
+ },
+ "p545e_lots": [
+  {
+   "lot": "P545E_1",
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "candidate_ids": [
+    "W2R-062",
+    "W2R-061",
+    "W2R-060",
+    "W2R-051",
+    "W2R-050",
+    "W2R-046",
+    "W2R-069",
+    "W2R-041",
+    "W2R-042",
+    "W2R-053",
+    "W2R-047",
+    "W2R-067",
+    "W2R-078",
+    "W2R-079",
+    "W2R-080",
+    "W2R-063"
+   ],
+   "paths": [
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA3",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA2",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA",
+    "LEX_MACHINA_REFERENCIAS_CF_J5_1",
+    "LEX_MACHINA_REFERENCIAS_CF_J5",
+    "LEX_MACHINA_REFERENCIAS_CATALOGO_EXPANSAO_V1",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_EXTERNA_R7_V1",
+    "LEX_MACHINA_REFERENCIAS_AUDITORIA_CONTRATO_ENGINE_V1",
+    "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V1",
+    "LEX_MACHINA_REFERENCIAS_DIAGNOSTICO_NUCLEOS_V1",
+    "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V1",
+    "LEX_MACHINA_REFERENCIAS_TEMAS_LOTE45_V1",
+    "firmware/LEX_MACHINA_BACKUP_POS_CODEX_16-09",
+    "firmware/LEX_MACHINA_v7.11.0_JURIS_CF_PILOTO",
+    "firmware/LEX_MACHINA_v7.11.1_JURIS_CF_PILOTO",
+    "LEX_MACHINA_REFERENCIAS_EXPERIMENTO_24_VS_69_V1"
+   ],
+   "count": 16,
+   "bytes": 32464454,
+   "files": 121,
+   "protected545_members": 121
+  },
+  {
+   "lot": "P545E_2",
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "candidate_ids": [
+    "W2R-066",
+    "W2R-055",
+    "W2R-054",
+    "W2R-071",
+    "W2R-052",
+    "W2R-043",
+    "W2R-064",
+    "W2R-057",
+    "W2R-058",
+    "W2R-070",
+    "W2R-040",
+    "W2R-049"
+   ],
+   "paths": [
+    "LEX_MACHINA_REFERENCIAS_REFINAMENTO_R7_V2",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_1",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA2",
+    "LEX_MACHINA_REFERENCIAS_CF_REVISAO_ALTA_CONFIANCA_V1",
+    "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V2_FINAL",
+    "LEX_MACHINA_REFERENCIAS_FORCA_TEMA_LOTE45_V1_FINAL",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3",
+    "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_1",
+    "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA",
+    "LEX_MACHINA_REFERENCIAS_AUDITORIA_CAUSAL_V132_V1",
+    "LEX_MACHINA_REFERENCIAS_CF_ENGINE_RUN_V1"
+   ],
+   "count": 12,
+   "bytes": 14310109,
+   "files": 156,
+   "protected545_members": 156
+  },
+  {
+   "lot": "P545E_3",
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "candidate_ids": [
+    "W2R-036",
+    "W2R-035",
+    "W2R-038",
+    "W2R-034",
+    "W2R-037",
+    "W2R-074",
+    "W2R-013",
+    "W2R-003",
+    "W2R-004",
+    "W2R-075",
+    "W2R-001",
+    "W2R-073",
+    "W2R-076"
+   ],
+   "paths": [
+    "LEX_MACHINA_JURIS_CF_J3",
+    "LEX_MACHINA_JURIS_CF_J2_5",
+    "LEX_MACHINA_JURIS_CF_J4_6",
+    "LEX_MACHINA_JURIS_CF_J2",
+    "LEX_MACHINA_JURIS_CF_J4",
+    "LEX_MACHINA_UPDATER_RELATIONS_V2",
+    "LEX-MACHINAETAPA_2D2",
+    "LEX-MACHINAETAPA_2C",
+    "LEX-MACHINAETAPA_2D",
+    "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+    "1- LEX-MACHINAETAPA_2D3",
+    "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+    "updater_stage2a_corrigida_v2"
+   ],
+   "count": 13,
+   "bytes": 2824982073,
+   "files": 22152,
+   "protected545_members": 109
+  },
+  {
+   "lot": "P545E_4",
+   "classification": "READY_AFTER_MULTIPLE_FIXES",
+   "candidate_ids": [
+    "W2R-031",
+    "W2R-032"
+   ],
+   "paths": [
+    "LEX-MACHINAETAPA_2E5",
+    "LEX-MACHINA_ETAPA_2E6_SD_TESTE"
+   ],
+   "count": 2,
+   "bytes": 1025149,
+   "files": 45,
+   "protected545_members": 12
+  }
+ ],
+ "p545e_preconditions": [
+  "aprovacao humana explicita da politica ORIGINAL PROOF + RELOCATION PROOF (PROTECTED545_POLICY.md)",
+  "archive root FORA do repo e com prefixo curto (ex.: C:\\LMA\\p545e) ou tooling long-path: 6 candidatos chegariam a >=260 chars com o prefixo da ONDA 2E",
+  "ledger real versionado e ancorado (head em commit/tag) a cada lote; um RELOCATE por membro protected545 + batch com inventory hash do diretorio",
+  "gates por lote: verify_relocation PASS, materialize_legacy_view + r1d_support-equivalente PASS, IDX 130/130 via ledger, V2 281/281, Registry/Lock/Resolver PASS",
+  "P545E_2 so apos decidir D01 (visao legada como caminho oficial de reexecucao ou lista explicita em versao nao congelada)",
+  "P545E_4 (2E5/2E6) somente em lote conjunto com 2E41 e sem executar o montador"
+ ],
+ "candidates": [
+  {
+   "candidate_id": "W2R-001",
+   "path": "1- LEX-MACHINAETAPA_2D3",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 255003071,
+   "file_count": 2060,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 227
+  },
+  {
+   "candidate_id": "W2R-002",
+   "path": "CF_SEGMENTADA_V2",
+   "family": "OUTROS_LEGADOS",
+   "size_bytes": 1733591,
+   "file_count": 5,
+   "protected545_member_count": 5,
+   "protected545_bytes": 1733591,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "LEX_MACHINA_REFERENCIAS_V2/05_COMPILADOR/prepare_expansion.py:17",
+    "LEX_MACHINA_REFERENCIAS_V2/tests/test_expansion.py:23",
+    "LEX_MACHINA_REFERENCIAS_ADAPTADOR_CATALOGO_69_V1/adaptar_catalogo_69.py:12",
+    "LEX_MACHINA_REFERENCIAS_ADAPTADOR_CATALOGO_69_V1/test_adaptador_catalogo_69.py:87"
+   ],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "KEEP_IN_ROOT_INTENTIONALLY",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 75
+  },
+  {
+   "candidate_id": "W2R-003",
+   "path": "LEX-MACHINAETAPA_2C",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 225107994,
+   "file_count": 1734,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "LONG_PATH: maior path hoje 239; com archive root de 44 chars ficaria 262 (>=260)"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 239
+  },
+  {
+   "candidate_id": "W2R-004",
+   "path": "LEX-MACHINAETAPA_2D",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 225551763,
+   "file_count": 1736,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "LONG_PATH: maior path hoje 239; com archive root de 44 chars ficaria 262 (>=260)"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 239
+  },
+  {
+   "candidate_id": "W2R-013",
+   "path": "LEX-MACHINAETAPA_2D2",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 224619125,
+   "file_count": 1739,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "LONG_PATH: maior path hoje 240; com archive root de 44 chars ficaria 263 (>=260)"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 240
+  },
+  {
+   "candidate_id": "W2R-031",
+   "path": "LEX-MACHINAETAPA_2E5",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 292452,
+   "file_count": 14,
+   "protected545_member_count": 4,
+   "protected545_bytes": 27473,
+   "idx_files": 4,
+   "idx_classification": "IDX_REQUIRES_FURTHER_PROOF",
+   "idx_binding": {
+    "kinds": [
+     "EXT_ARTIGOS.IDX",
+     "EXT_NORMAS.IDX",
+     "RELACOES.IDX",
+     "REL_LOOKUP.IDX"
+    ],
+    "path_refs": 40,
+    "path_resolved": 0,
+    "offset_checks": 41,
+    "offset_ok": 41,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": "EXT_NORMAS/RELACOES apontam 20 textos /99_RELATIONS_V2/03_NORMAS_EXTERNAS/* que NAO estao no candidato (vivem no pacote 2E41); vinculo cruzado entre candidatos",
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_MULTIPLE_FIXES",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 143
+  },
+  {
+   "candidate_id": "W2R-032",
+   "path": "LEX-MACHINA_ETAPA_2E6_SD_TESTE",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 732697,
+   "file_count": 31,
+   "protected545_member_count": 8,
+   "protected545_bytes": 54946,
+   "idx_files": 8,
+   "idx_classification": "IDX_REQUIRES_FURTHER_PROOF",
+   "idx_binding": {
+    "kinds": [
+     "EXT_ARTIGOS.IDX",
+     "EXT_NORMAS.IDX",
+     "RELACOES.IDX",
+     "REL_LOOKUP.IDX"
+    ],
+    "path_refs": 80,
+    "path_resolved": 40,
+    "offset_checks": 631,
+    "offset_ok": 631,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": "indices/ (copia de trabalho) depende do pacote 2E41 (20/40 refs externas); SD_PRONTO resolve internamente; montador D12 faz shutil.rmtree(SD_PRONTO) antes de remontar",
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)",
+     "D12 montar_sd_teste_relations_v2.py:71,78,144 (iterdir/glob sobre pacote 2E41 e SD_PRONTO relativo ao script)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "montador executa shutil.rmtree(SD_PRONTO) que contem 4 IDX protected545: nunca executar no repo vivo"
+    ]
+   },
+   "classification": "READY_AFTER_MULTIPLE_FIXES",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 156
+  },
+  {
+   "candidate_id": "W2R-034",
+   "path": "LEX_MACHINA_JURIS_CF_J2",
+   "family": "JURIS_CF_ETAPAS",
+   "size_bytes": 347908,
+   "file_count": 14,
+   "protected545_member_count": 2,
+   "protected545_bytes": 7067,
+   "idx_files": 2,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "offset_checks": 35,
+    "offset_ok": 35,
+    "repo_absolute_paths": false,
+    "url_refs": 35
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 90
+  },
+  {
+   "candidate_id": "W2R-035",
+   "path": "LEX_MACHINA_JURIS_CF_J2_5",
+   "family": "JURIS_CF_ETAPAS",
+   "size_bytes": 260073,
+   "file_count": 13,
+   "protected545_member_count": 2,
+   "protected545_bytes": 7067,
+   "idx_files": 2,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "offset_checks": 35,
+    "offset_ok": 35,
+    "repo_absolute_paths": false,
+    "url_refs": 35
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 82
+  },
+  {
+   "candidate_id": "W2R-036",
+   "path": "LEX_MACHINA_JURIS_CF_J3",
+   "family": "JURIS_CF_ETAPAS",
+   "size_bytes": 40864,
+   "file_count": 35,
+   "protected545_member_count": 2,
+   "protected545_bytes": 7067,
+   "idx_files": 2,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "offset_checks": 35,
+    "offset_ok": 35,
+    "repo_absolute_paths": false,
+    "url_refs": 35
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 117
+  },
+  {
+   "candidate_id": "W2R-037",
+   "path": "LEX_MACHINA_JURIS_CF_J4",
+   "family": "JURIS_CF_ETAPAS",
+   "size_bytes": 7436773,
+   "file_count": 84,
+   "protected545_member_count": 2,
+   "protected545_bytes": 57962,
+   "idx_files": 2,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "offset_checks": 178,
+    "offset_ok": 178,
+    "repo_absolute_paths": false,
+    "url_refs": 296
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "Corpus da baseline fisica validada (J4); proveniencia do SD atual"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 91
+  },
+  {
+   "candidate_id": "W2R-038",
+   "path": "LEX_MACHINA_JURIS_CF_J4_6",
+   "family": "JURIS_CF_ETAPAS",
+   "size_bytes": 279831,
+   "file_count": 229,
+   "protected545_member_count": 2,
+   "protected545_bytes": 57962,
+   "idx_files": 2,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "JURISPRUDENCIA.IDX",
+     "JUR_LOOKUP.IDX"
+    ],
+    "path_refs": 0,
+    "path_resolved": 0,
+    "offset_checks": 178,
+    "offset_ok": 178,
+    "repo_absolute_paths": false,
+    "url_refs": 296
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 122
+  },
+  {
+   "candidate_id": "W2R-039",
+   "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_ASTRA_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 653063,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 653063,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "06_BENCHMARKS/compare_pilot.py:27",
+    "compare_pilot_r1.py:27",
+    "consolidate_labels.py:93"
+   ],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 97
+  },
+  {
+   "candidate_id": "W2R-040",
+   "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_CAUSAL_V132_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 1029253,
+   "file_count": 17,
+   "protected545_member_count": 17,
+   "protected545_bytes": 1029253,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 121
+  },
+  {
+   "candidate_id": "W2R-041",
+   "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_CONTRATO_ENGINE_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 162521,
+   "file_count": 10,
+   "protected545_member_count": 10,
+   "protected545_bytes": 162521,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 126
+  },
+  {
+   "candidate_id": "W2R-042",
+   "path": "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 165113,
+   "file_count": 8,
+   "protected545_member_count": 8,
+   "protected545_bytes": 165113,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 115
+  },
+  {
+   "candidate_id": "W2R-043",
+   "path": "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V2_FINAL",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 590169,
+   "file_count": 11,
+   "protected545_member_count": 11,
+   "protected545_bytes": 590169,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 5,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (5 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 122
+  },
+  {
+   "candidate_id": "W2R-044",
+   "path": "LEX_MACHINA_REFERENCIAS_BENCHMARK_69_HUMANO_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 669254,
+   "file_count": 1,
+   "protected545_member_count": 1,
+   "protected545_bytes": 669254,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "06_BENCHMARKS/compare_pilot.py:20",
+    "compare_pilot_r1.py:20",
+    "consolidate_labels.py:82 (groupdefs)"
+   ],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": false,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 94
+  },
+  {
+   "candidate_id": "W2R-045",
+   "path": "LEX_MACHINA_REFERENCIAS_BENCHMARK_CF_V2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 393760,
+   "file_count": 9,
+   "protected545_member_count": 9,
+   "protected545_bytes": 393760,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "06_BENCHMARKS/consolidate_labels.py:84 (groupdefs)",
+    "ADAPTADOR/adaptar_catalogo_69.py:13",
+    "ADAPTADOR/test_adaptador_catalogo_69.py:86"
+   ],
+   "d01_marker_files": 2,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (2 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 107
+  },
+  {
+   "candidate_id": "W2R-046",
+   "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_EXPANSAO_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 127575,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 127575,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 103
+  },
+  {
+   "candidate_id": "W2R-047",
+   "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 316045,
+   "file_count": 8,
+   "protected545_member_count": 8,
+   "protected545_bytes": 316045,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 98
+  },
+  {
+   "candidate_id": "W2R-048",
+   "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 413109,
+   "file_count": 6,
+   "protected545_member_count": 6,
+   "protected545_bytes": 413109,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "ADAPTADOR/adaptar_catalogo_69.py:10,11",
+    "ADAPTADOR/test_adaptador_catalogo_69.py:52,63"
+   ],
+   "d01_marker_files": 5,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (5 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 98
+  },
+  {
+   "candidate_id": "W2R-049",
+   "path": "LEX_MACHINA_REFERENCIAS_CF_ENGINE_RUN_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 7965659,
+   "file_count": 11,
+   "protected545_member_count": 11,
+   "protected545_bytes": 7965659,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 104
+  },
+  {
+   "candidate_id": "W2R-050",
+   "path": "LEX_MACHINA_REFERENCIAS_CF_J5",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 100385,
+   "file_count": 6,
+   "protected545_member_count": 6,
+   "protected545_bytes": 100385,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 80
+  },
+  {
+   "candidate_id": "W2R-051",
+   "path": "LEX_MACHINA_REFERENCIAS_CF_J5_1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 81566,
+   "file_count": 2,
+   "protected545_member_count": 2,
+   "protected545_bytes": 81566,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 89
+  },
+  {
+   "candidate_id": "W2R-052",
+   "path": "LEX_MACHINA_REFERENCIAS_CF_REVISAO_ALTA_CONFIANCA_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 503841,
+   "file_count": 9,
+   "protected545_member_count": 9,
+   "protected545_bytes": 503841,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 115
+  },
+  {
+   "candidate_id": "W2R-053",
+   "path": "LEX_MACHINA_REFERENCIAS_DIAGNOSTICO_NUCLEOS_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 238381,
+   "file_count": 8,
+   "protected545_member_count": 8,
+   "protected545_bytes": 238381,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 127
+  },
+  {
+   "candidate_id": "W2R-054",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 307228,
+   "file_count": 18,
+   "protected545_member_count": 18,
+   "protected545_bytes": 307228,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 2,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (2 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 100
+  },
+  {
+   "candidate_id": "W2R-055",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 283371,
+   "file_count": 21,
+   "protected545_member_count": 21,
+   "protected545_bytes": 283371,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 2,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (2 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 102
+  },
+  {
+   "candidate_id": "W2R-056",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 282107,
+   "file_count": 31,
+   "protected545_member_count": 31,
+   "protected545_bytes": 282107,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "ADAPTADOR/adaptar_catalogo_69.py:9,14,223",
+    "ADAPTADOR/test_adaptador_catalogo_69.py:57,75,88"
+   ],
+   "d01_marker_files": 2,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (2 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 112
+  },
+  {
+   "candidate_id": "W2R-057",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 705636,
+   "file_count": 15,
+   "protected545_member_count": 15,
+   "protected545_bytes": 705636,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 108
+  },
+  {
+   "candidate_id": "W2R-058",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 819539,
+   "file_count": 15,
+   "protected545_member_count": 15,
+   "protected545_bytes": 819539,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 106
+  },
+  {
+   "candidate_id": "W2R-059",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 941487,
+   "file_count": 17,
+   "protected545_member_count": 17,
+   "protected545_bytes": 941487,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "ADAPTADOR/adaptar_catalogo_69.py:15 (run_v132.py)"
+   ],
+   "d01_marker_files": 1,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (1 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 106
+  },
+  {
+   "candidate_id": "W2R-060",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 52129,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 52129,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 108
+  },
+  {
+   "candidate_id": "W2R-061",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 45079,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 45079,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 110
+  },
+  {
+   "candidate_id": "W2R-062",
+   "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_4_ALPHA3",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 35676,
+   "file_count": 11,
+   "protected545_member_count": 11,
+   "protected545_bytes": 35676,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 123
+  },
+  {
+   "candidate_id": "W2R-063",
+   "path": "LEX_MACHINA_REFERENCIAS_EXPERIMENTO_24_VS_69_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 27973403,
+   "file_count": 16,
+   "protected545_member_count": 16,
+   "protected545_bytes": 27973403,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 104
+  },
+  {
+   "candidate_id": "W2R-064",
+   "path": "LEX_MACHINA_REFERENCIAS_FORCA_TEMA_LOTE45_V1_FINAL",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 664888,
+   "file_count": 11,
+   "protected545_member_count": 11,
+   "protected545_bytes": 664888,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 3,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (3 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 128
+  },
+  {
+   "candidate_id": "W2R-065",
+   "path": "LEX_MACHINA_REFERENCIAS_PREPARACAO_V14_ALPHA2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 191835,
+   "file_count": 11,
+   "protected545_member_count": 11,
+   "protected545_bytes": 191835,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "06_BENCHMARKS/consolidate_labels.py:85,86 (groupdefs)"
+   ],
+   "d01_marker_files": 3,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (3 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 108
+  },
+  {
+   "candidate_id": "W2R-066",
+   "path": "LEX_MACHINA_REFERENCIAS_REFINAMENTO_R7_V2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 57922,
+   "file_count": 8,
+   "protected545_member_count": 8,
+   "protected545_bytes": 57922,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 5,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (5 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 98
+  },
+  {
+   "candidate_id": "W2R-067",
+   "path": "LEX_MACHINA_REFERENCIAS_TEMAS_LOTE45_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 408005,
+   "file_count": 9,
+   "protected545_member_count": 9,
+   "protected545_bytes": 408005,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 110
+  },
+  {
+   "candidate_id": "W2R-068",
+   "path": "LEX_MACHINA_REFERENCIAS_TESTE_COMPLETO_ALPHA3_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 8620157,
+   "file_count": 14,
+   "protected545_member_count": 14,
+   "protected545_bytes": 8620157,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "LEX_MACHINA_REFERENCIAS_V2/05_COMPILADOR/r1d1_pipeline.py:20",
+    "LEX_MACHINA_REFERENCIAS_V2/06_BENCHMARKS/run_regression.py:12",
+    "run_regression_r1.py:12",
+    "run_regression_r1b.py:12",
+    "run_regression_r1c.py:12",
+    "run_regression_r1d.py:36",
+    "LEX_MACHINA_REFERENCIAS_V2/07_EXECUCAO_COMPLETA/runner_integral_r1d.py:50"
+   ],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 108
+  },
+  {
+   "candidate_id": "W2R-069",
+   "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_EXTERNA_R7_V1",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 154331,
+   "file_count": 5,
+   "protected545_member_count": 5,
+   "protected545_bytes": 154331,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 105
+  },
+  {
+   "candidate_id": "W2R-070",
+   "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 917002,
+   "file_count": 12,
+   "protected545_member_count": 12,
+   "protected545_bytes": 917002,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 5,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (5 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 100
+  },
+  {
+   "candidate_id": "W2R-071",
+   "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA2",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 465601,
+   "file_count": 8,
+   "protected545_member_count": 8,
+   "protected545_bytes": 465601,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 5,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (5 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_DYNAMIC_DISCOVERY_FIX",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 113
+  },
+  {
+   "candidate_id": "W2R-072",
+   "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA3",
+   "family": "REFERENCIAS_V1",
+   "size_bytes": 415175,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 415175,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "06_BENCHMARKS/compare_pilot.py:21",
+    "compare_pilot_r1.py:21",
+    "consolidate_labels.py:83,87 (groupdefs)"
+   ],
+   "d01_marker_files": 5,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [
+     "D01 consolidate_labels.py:56 (5 arquivo(s) marcador(es) seriam removidos da consolidacao)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 99
+  },
+  {
+   "candidate_id": "W2R-073",
+   "path": "LEX_MACHINA_UPDATER_BACKUP_V1_17-09-2026",
+   "family": "BACKUPS_MANUAIS",
+   "size_bytes": 456585722,
+   "file_count": 4197,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "LONG_PATH: maior path hoje 244; com archive root de 44 chars ficaria 267 (>=260)",
+     "contem .venv (139 MB) e 96 nomes nao-ASCII"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 244
+  },
+  {
+   "candidate_id": "W2R-074",
+   "path": "LEX_MACHINA_UPDATER_RELATIONS_V2",
+   "family": "RELATIONS_VERSOES_ANTIGAS",
+   "size_bytes": 223029243,
+   "file_count": 1696,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 236
+  },
+  {
+   "candidate_id": "W2R-075",
+   "path": "LEX_MACHINA_UPDATER_RELATIONS_V2_ETAPA2A",
+   "family": "RELATIONS_VERSOES_ANTIGAS",
+   "size_bytes": 252414298,
+   "file_count": 1704,
+   "protected545_member_count": 9,
+   "protected545_bytes": 335915,
+   "idx_files": 9,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 304,
+    "path_resolved": 232,
+    "offset_checks": 12637,
+    "offset_ok": 12637,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "LONG_PATH: maior path hoje 260; com archive root de 44 chars ficaria 283 (>=260)"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 260
+  },
+  {
+   "candidate_id": "W2R-076",
+   "path": "updater_stage2a_corrigida_v2",
+   "family": "UPDATER_ETAPAS",
+   "size_bytes": 954305408,
+   "file_count": 6911,
+   "protected545_member_count": 36,
+   "protected545_bytes": 1343660,
+   "idx_files": 36,
+   "idx_classification": "IDX_RELOCATABLE_WITH_PARENT",
+   "idx_binding": {
+    "kinds": [
+     "ARTIGOS.IDX",
+     "JURIS.IDX",
+     "MENU.IDX",
+     "NORMAS.IDX",
+     "NORMAS_BIN.IDX"
+    ],
+    "path_refs": 1216,
+    "path_resolved": 928,
+    "offset_checks": 50548,
+    "offset_ok": 50548,
+    "repo_absolute_paths": false,
+    "url_refs": 0
+   },
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": true,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [
+     "D02 REPO.rglob('*.IDX') em enriquecer_v1.py:28 / gerar_manifest.py:50 (ferramentas D05 historicas)"
+    ],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": true,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": [
+     "LONG_PATH: maior path hoje 264; com archive root de 44 chars ficaria 287 (>=260)"
+    ]
+   },
+   "classification": "READY_AFTER_P545_PLUS_IDX_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 264
+  },
+  {
+   "candidate_id": "W2R-077",
+   "path": "firmware/LEX MAQUINA INO 2",
+   "family": "FIRMWARE_ANTIGO",
+   "size_bytes": 914952,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 914952,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "6 arquivos tracked no Git; mover exige mudanca de arvore versionada"
+   ],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 6,
+   "max_abs_path_len_now": 153
+  },
+  {
+   "candidate_id": "W2R-078",
+   "path": "firmware/LEX_MACHINA_BACKUP_POS_CODEX_16-09",
+   "family": "FIRMWARE_ANTIGO",
+   "size_bytes": 831728,
+   "file_count": 4,
+   "protected545_member_count": 4,
+   "protected545_bytes": 831728,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 100
+  },
+  {
+   "candidate_id": "W2R-079",
+   "path": "firmware/LEX_MACHINA_v7.11.0_JURIS_CF_PILOTO",
+   "family": "FIRMWARE_ANTIGO",
+   "size_bytes": 882401,
+   "file_count": 6,
+   "protected545_member_count": 6,
+   "protected545_bytes": 882401,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 106
+  },
+  {
+   "candidate_id": "W2R-080",
+   "path": "firmware/LEX_MACHINA_v7.11.1_JURIS_CF_PILOTO",
+   "family": "FIRMWARE_ANTIGO",
+   "size_bytes": 890116,
+   "file_count": 7,
+   "protected545_member_count": 7,
+   "protected545_bytes": 890116,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": false,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "READY_AFTER_P545_RELOCATION_PROOF",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 0,
+   "max_abs_path_len_now": 106
+  },
+  {
+   "candidate_id": "W2R-081",
+   "path": "firmware/LEX_MACHINA_v7.12.0_JURIS_CF_EXPANDIDA",
+   "family": "FIRMWARE_ANTIGO",
+   "size_bytes": 899028,
+   "file_count": 9,
+   "protected545_member_count": 9,
+   "protected545_bytes": 899028,
+   "idx_files": 0,
+   "idx_classification": null,
+   "idx_binding": null,
+   "idx_note": null,
+   "active_dependency_refs": [
+    "9 arquivos tracked (commit d4e816f, tag backup-v7.12.0-juris-cf-expandida-hardware-ok); baseline fisica validada em hardware"
+   ],
+   "d01_marker_files": 0,
+   "blockers": {
+    "PROTECTED545_PATH_IDENTITY": true,
+    "IDX": false,
+    "ACTIVE_DEPENDENCY": true,
+    "DYNAMIC_DISCOVERY": [],
+    "UNIQUE_EVIDENCE": true,
+    "ABSOLUTE_PATH": false,
+    "MANIFEST_REFERENCE": true,
+    "OTHER": []
+   },
+   "classification": "STILL_ACTIVE_KEEP",
+   "wave2r_classification": "STILL_BLOCKED_PROTECTED545",
+   "git_tracked_files": 9,
+   "max_abs_path_len_now": 112
+  }
+ ]
+}

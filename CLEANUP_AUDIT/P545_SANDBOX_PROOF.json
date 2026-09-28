@@ -1,0 +1,277 @@
+{
+ "sandbox": "C:\\GitHub_LEX_MACHINA_P545_TEMP\\p545a-2026-09-28-r2",
+ "original_proof": {
+  "path": "LEX_MACHINA_REFERENCIAS_V2/00_CHECKPOINTS/INTEGRITY_BEFORE.json",
+  "sha256": "a319f0ea917b0e6c00e037ba5b7a5c97b351d1b0af00b79862ae98db7cfd91c2",
+  "unchanged_in_repo": true
+ },
+ "copied_members": 545,
+ "steps": {
+  "before": {
+   "derived": {
+    "result": "PASS",
+    "counts": {
+     "ORIGINAL_PATH_PRESENT": 545
+    },
+    "ledger_errors": []
+   },
+   "legacy": {
+    "result": "PASS",
+    "changed": 0
+   }
+  },
+  "after_move": {
+   "derived": {
+    "result": "PASS",
+    "counts": {
+     "ORIGINAL_PATH_PRESENT": 531,
+     "VALID_RELOCATION": 14
+    },
+    "ledger_errors": []
+   },
+   "legacy": {
+    "result": "FAIL",
+    "error": "FileNotFoundError",
+    "detail": "lex_boot_screen_preview.png"
+   }
+  },
+  "after_gen2_and_rollback": {
+   "derived": {
+    "result": "PASS",
+    "counts": {
+     "ORIGINAL_PATH_PRESENT": 537,
+     "VALID_RELOCATION": 8
+    },
+    "ledger_errors": []
+   },
+   "lineage_example": {
+    "original": "LEX_MACHINA_JURIS_CF_J2/JUR_LOOKUP.IDX",
+    "status": "VALID_RELOCATION",
+    "chain": [
+     "LEX_MACHINA_JURIS_CF_J2/JUR_LOOKUP.IDX -> LEX_MACHINA_JURIS_CF_J2/JUR_LOOKUP.IDX",
+     "LEX_MACHINA_JURIS_CF_J2/JUR_LOOKUP.IDX -> gen2/LEX_MACHINA_JURIS_CF_J2/JUR_LOOKUP.IDX"
+    ]
+   },
+   "rollback_example": {
+    "original": "LEX_MACHINA_REFERENCIAS_CF_J5/gerar_referencias_j5.py",
+    "status": "ORIGINAL_PATH_PRESENT",
+    "events": 2
+   },
+   "ledger_events": 22,
+   "ledger_head": {
+    "count": 22,
+    "event_hash": "73638c5e52dca3e8e42893cbda484b567fee564ef41ba58fa0032315f2cc5a7f"
+   }
+  },
+  "legacy_view": {
+   "materialize": {
+    "result": "PASS",
+    "occurrences": 545,
+    "target": "C:\\GitHub_LEX_MACHINA_P545_TEMP\\p545a-2026-09-28-r2\\legacy_view",
+    "relocated": 8
+   },
+   "legacy_on_view": {
+    "result": "PASS",
+    "changed": 0
+   },
+   "legacy_on_live_relocated_repo": {
+    "result": "FAIL",
+    "error": "FileNotFoundError",
+    "detail": "lex_boot_screen_preview.png"
+   }
+  }
+ },
+ "negative_tests": [
+  {
+   "test": "1_destino_faltando",
+   "expected": "MISSING",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "MISSING",
+    []
+   ],
+   "detail": "destino renomeado temporariamente"
+  },
+  {
+   "test": "2_hash_alterado",
+   "expected": "SHA256_MISMATCH",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "HASH_MISMATCH",
+    [
+     "SHA256_MISMATCH"
+    ]
+   ],
+   "detail": "um byte alterado"
+  },
+  {
+   "test": "3_tamanho_alterado",
+   "expected": "SIZE_MISMATCH",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "HASH_MISMATCH",
+    [
+     "SIZE_MISMATCH"
+    ]
+   ],
+   "detail": "um byte acrescentado"
+  },
+  {
+   "test": "4_ledger_sem_occurrence",
+   "expected": "MISSING",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "MISSING",
+    []
+   ],
+   "detail": "ledger reconstruido sem a occurrence do firmware"
+  },
+  {
+   "test": "5_dois_destinos",
+   "expected": "AMBIGUOUS_RELOCATION",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "AMBIGUOUS_RELOCATION",
+    [
+     "AMBIGUOUS_BRANCH"
+    ]
+   ],
+   "detail": "segundo destino a partir do path original"
+  },
+  {
+   "test": "6_ciclo",
+   "expected": "CYCLE",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "INVALID_LINEAGE",
+    [
+     "CYCLE"
+    ]
+   ],
+   "detail": "RELOCATE de volta ao original (nao ROLLBACK)"
+  },
+  {
+   "test": "7_path_errado",
+   "expected": "BROKEN_LINEAGE",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "INVALID_LINEAGE",
+    [
+     "BROKEN_LINEAGE"
+    ]
+   ],
+   "detail": "from_location diferente da localizacao corrente"
+  },
+  {
+   "test": "8_occurrence_errada",
+   "expected": "WRONG_OCCURRENCE",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "INVALID_LINEAGE",
+    [
+     "WRONG_OCCURRENCE"
+    ]
+   ],
+   "detail": "evento com occurrence_id do firmware e dados originais de outra occurrence (cadeia valida)"
+  },
+  {
+   "test": "9_colisao_casefold",
+   "expected": "LOCATION_COLLISION_CASEFOLD_NFC",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "AMBIGUOUS_RELOCATION",
+    [
+     "LOCATION_COLLISION_CASEFOLD_NFC"
+    ]
+   ],
+   "detail": "duas occurrences no mesmo destino por casefold"
+  },
+  {
+   "test": "10_ledger_adulterado",
+   "expected": "LEDGER_CORRUPT",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "INVALID_LINEAGE",
+    [
+     "INVALID_ROLLBACK"
+    ]
+   ],
+   "detail": "to_location de um evento editado sem recalcular a cadeia"
+  },
+  {
+   "test": "11_ledger_truncado",
+   "expected": "LEDGER_TRUNCATED_OR_CORRUPT",
+   "result": "FAIL",
+   "failed_explicitly": true,
+   "observed": [
+    "MISSING",
+    []
+   ],
+   "detail": "ultimo evento removido e head reescrito; ancora externa detecta"
+  }
+ ],
+ "moved_directories": {
+  "LEX_MACHINA_REFERENCIAS_CF_J5": {
+   "members": 6,
+   "pre": {
+    "file_count": 6,
+    "size_bytes": 100385,
+    "inventory_sha256": "e963f94d2d6906f900f8ba0e37450ac99950b287957e9cd842515a4e7e4c57ac"
+   },
+   "post": {
+    "file_count": 6,
+    "size_bytes": 100385,
+    "inventory_sha256": "e963f94d2d6906f900f8ba0e37450ac99950b287957e9cd842515a4e7e4c57ac"
+   },
+   "byte_identity": true
+  },
+  "LEX_MACHINA_JURIS_CF_J2": {
+   "members": 2,
+   "pre": {
+    "file_count": 2,
+    "size_bytes": 7067,
+    "inventory_sha256": "669ee633d7a023f4170809ba9ee5e9078da7b8540c5926a708ab42dcc4042c5d"
+   },
+   "post": {
+    "file_count": 2,
+    "size_bytes": 7067,
+    "inventory_sha256": "669ee633d7a023f4170809ba9ee5e9078da7b8540c5926a708ab42dcc4042c5d"
+   },
+   "byte_identity": true
+  },
+  "firmware/LEX_MACHINA_v7.11.0_JURIS_CF_PILOTO": {
+   "members": 6,
+   "pre": {
+    "file_count": 6,
+    "size_bytes": 882401,
+    "inventory_sha256": "f96796a6a55bd11d11e0d4dca104591d0e0efd93ef96b0ede97006f2fba1965e"
+   },
+   "post": {
+    "file_count": 6,
+    "size_bytes": 882401,
+    "inventory_sha256": "f96796a6a55bd11d11e0d4dca104591d0e0efd93ef96b0ede97006f2fba1965e"
+   },
+   "byte_identity": true
+  }
+ },
+ "final_state": {
+  "result": "PASS",
+  "counts": {
+   "ORIGINAL_PATH_PRESENT": 537,
+   "VALID_RELOCATION": 8
+  },
+  "ledger_errors": []
+ },
+ "all_negative_failed_explicitly": true,
+ "verdict": "PASS"
+}
