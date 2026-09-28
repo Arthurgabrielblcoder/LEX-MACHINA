@@ -1,0 +1,541 @@
+{
+ "schema_version": "lex-machina-root-cleanup-final/1",
+ "status": "LIMPEZA_RAIZ_FINALIZADA",
+ "head_base": "bdd9fc4309bf8f394a03f154fa93c24892f0e828",
+ "summary": {
+  "BEFORE": {
+   "repo_audited_files": 28838,
+   "repo_audited_bytes": 3421025370,
+   "source": "CLEANUP_AUDIT/INVENTARIO_REPOSITORIO.json (2026-09-26, sem .git)",
+   "wave2_candidates": 81,
+   "wave2_bytes": 2921061459,
+   "wave2_files": 23379
+  },
+  "AFTER": {
+   "repo_files": 6383,
+   "repo_bytes": 615124817,
+   "wave2_candidates_remaining": 35,
+   "wave2_bytes_remaining": 56050778
+  },
+  "MOVED_FROM_ROOT": {
+   "candidates": 46,
+   "wave2e": 17,
+   "p545e": 29,
+   "top_level_root_entries": 43,
+   "firmware_subdirs": 3
+  },
+  "BYTES_RELOCATED": 2865010681,
+  "BYTES_RELOCATED_WAVE2E": 7564154,
+  "BYTES_RELOCATED_P545E": 2857446527,
+  "FILES_RELOCATED": 22550,
+  "BYTES_PERMANENTLY_DELETED": {
+   "wave1_pyc": 583302,
+   "note": "ONDA 1: 22 .pyc de updater/__pycache__; unica exclusao definitiva da fase"
+  },
+  "PHYSICAL_DISK_SPACE_FREED": 583302,
+  "PHYSICAL_DISK_SPACE_FREED_NOTE": "So a ONDA 1 (583.302 bytes) liberou disco. Todas as relocacoes ficaram no mesmo volume C: (0 bytes liberados); sandboxes/visoes legadas externas ocupam espaco adicional.",
+  "PROTECTED545_RELOCATED": 230,
+  "PROTECTED545_REMAINING": 315,
+  "WAVE2_CANDIDATES_REMAINING": 35,
+  "WAVE2_CANDIDATES_REMAINING_BYTES": 56050778,
+  "WAVE2_REDUCTION_PERCENT_BYTES": 98.081,
+  "REPO_REDUCTION_PERCENT_BYTES": 82.019,
+  "TOP_LEVEL_DIRECTORIES_BEFORE": 88,
+  "TOP_LEVEL_DIRECTORIES_AFTER": 46,
+  "TOP_LEVEL_DIRECTORIES_NOTE": "88 = diretorios de topo antes da ONDA 2E (auditoria WAVE2R); desde entao foram criados ARTIFACT_REGISTRY etc. antes e PROTECTED545_RELOCATION durante a fase.",
+  "TOP_LEVEL_FILES": 4,
+  "ROOT_HISTORICAL_TOP_LEVEL_CANDIDATES": 33,
+  "OPERATIONAL_ROOT_BYTES_APPROX": 559074039,
+  "REMAINING_BLOCKERS": {
+   "A_ACTIVE_KEEP": {
+    "count": 12,
+    "bytes": 16127518
+   },
+   "B_D01_DYNAMIC_DISCOVERY": {
+    "count": 12,
+    "bytes": 14310109
+   },
+   "C_MULTIPLE_BLOCKER": {
+    "count": 3,
+    "bytes": 1865964
+   },
+   "D_HUMAN_HOLD": {
+    "count": 1,
+    "bytes": 49357
+   },
+   "E_EXTRACT_PRIMARY_EVIDENCE": {
+    "count": 7,
+    "bytes": 23697830
+   },
+   "F_OTHER_INTENTIONAL": {
+    "count": 1,
+    "bytes": 0
+   }
+  }
+ },
+ "categories": {
+  "A_ACTIVE_KEEP": {
+   "count": 12,
+   "bytes": 16127518,
+   "files": 124,
+   "protected545_members": 124,
+   "reason": "Lidos por path literal em codigo congelado/ativo (pipeline R1D1, regressoes, compare_pilot, consolidate_labels groupdefs, adaptador catalogo 69, prepare_expansion) ou firmware versionado no Git (v7.12.0 baseline fisica, LEX MAQUINA INO 2). Canonicos: permanecem.",
+   "candidates": [
+    {
+     "candidate_id": "W2R-002",
+     "path": "CF_SEGMENTADA_V2",
+     "bytes": 1733591,
+     "protected545_members": 5
+    },
+    {
+     "candidate_id": "W2R-039",
+     "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_ASTRA_V1",
+     "bytes": 653063,
+     "protected545_members": 7
+    },
+    {
+     "candidate_id": "W2R-044",
+     "path": "LEX_MACHINA_REFERENCIAS_BENCHMARK_69_HUMANO_V1",
+     "bytes": 669254,
+     "protected545_members": 1
+    },
+    {
+     "candidate_id": "W2R-045",
+     "path": "LEX_MACHINA_REFERENCIAS_BENCHMARK_CF_V2",
+     "bytes": 393760,
+     "protected545_members": 9
+    },
+    {
+     "candidate_id": "W2R-048",
+     "path": "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V2",
+     "bytes": 413109,
+     "protected545_members": 6
+    },
+    {
+     "candidate_id": "W2R-056",
+     "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_2",
+     "bytes": 282107,
+     "protected545_members": 31
+    },
+    {
+     "candidate_id": "W2R-059",
+     "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_2",
+     "bytes": 941487,
+     "protected545_members": 17
+    },
+    {
+     "candidate_id": "W2R-065",
+     "path": "LEX_MACHINA_REFERENCIAS_PREPARACAO_V14_ALPHA2",
+     "bytes": 191835,
+     "protected545_members": 11
+    },
+    {
+     "candidate_id": "W2R-068",
+     "path": "LEX_MACHINA_REFERENCIAS_TESTE_COMPLETO_ALPHA3_V1",
+     "bytes": 8620157,
+     "protected545_members": 14
+    },
+    {
+     "candidate_id": "W2R-072",
+     "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA3",
+     "bytes": 415175,
+     "protected545_members": 7
+    },
+    {
+     "candidate_id": "W2R-077",
+     "path": "firmware/LEX MAQUINA INO 2",
+     "bytes": 914952,
+     "protected545_members": 7
+    },
+    {
+     "candidate_id": "W2R-081",
+     "path": "firmware/LEX_MACHINA_v7.12.0_JURIS_CF_EXPANDIDA",
+     "bytes": 899028,
+     "protected545_members": 9
+    }
+   ]
+  },
+  "B_D01_DYNAMIC_DISCOVERY": {
+   "count": 12,
+   "bytes": 14310109,
+   "files": 156,
+   "protected545_members": 156,
+   "reason": "protected545 + arquivos marcadores selecionados por consolidate_labels.py:56 (REPO.glob LEX_MACHINA_REFERENCIAS*); mover renumeraria SRCnnn. Depende de decidir o caminho oficial do D01 (visao legada ou lista explicita em versao nao congelada).",
+   "candidates": [
+    {
+     "candidate_id": "W2R-040",
+     "path": "LEX_MACHINA_REFERENCIAS_AUDITORIA_CAUSAL_V132_V1",
+     "bytes": 1029253,
+     "protected545_members": 17
+    },
+    {
+     "candidate_id": "W2R-043",
+     "path": "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V2_FINAL",
+     "bytes": 590169,
+     "protected545_members": 11
+    },
+    {
+     "candidate_id": "W2R-049",
+     "path": "LEX_MACHINA_REFERENCIAS_CF_ENGINE_RUN_V1",
+     "bytes": 7965659,
+     "protected545_members": 11
+    },
+    {
+     "candidate_id": "W2R-052",
+     "path": "LEX_MACHINA_REFERENCIAS_CF_REVISAO_ALTA_CONFIANCA_V1",
+     "bytes": 503841,
+     "protected545_members": 9
+    },
+    {
+     "candidate_id": "W2R-054",
+     "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1",
+     "bytes": 307228,
+     "protected545_members": 18
+    },
+    {
+     "candidate_id": "W2R-055",
+     "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_1",
+     "bytes": 283371,
+     "protected545_members": 21
+    },
+    {
+     "candidate_id": "W2R-057",
+     "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3",
+     "bytes": 705636,
+     "protected545_members": 15
+    },
+    {
+     "candidate_id": "W2R-058",
+     "path": "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_1",
+     "bytes": 819539,
+     "protected545_members": 15
+    },
+    {
+     "candidate_id": "W2R-064",
+     "path": "LEX_MACHINA_REFERENCIAS_FORCA_TEMA_LOTE45_V1_FINAL",
+     "bytes": 664888,
+     "protected545_members": 11
+    },
+    {
+     "candidate_id": "W2R-066",
+     "path": "LEX_MACHINA_REFERENCIAS_REFINAMENTO_R7_V2",
+     "bytes": 57922,
+     "protected545_members": 8
+    },
+    {
+     "candidate_id": "W2R-070",
+     "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA",
+     "bytes": 917002,
+     "protected545_members": 12
+    },
+    {
+     "candidate_id": "W2R-071",
+     "path": "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA2",
+     "bytes": 465601,
+     "protected545_members": 8
+    }
+   ]
+  },
+  "C_MULTIPLE_BLOCKER": {
+   "count": 3,
+   "bytes": 1865964,
+   "files": 76,
+   "protected545_members": 12,
+   "reason": "2E5/2E6: protected545 + IDX com vinculo aos textos do pacote 2E41 + montador D12 destrutivo (rmtree SD_PRONTO); 2E41: default absoluto do montador e alvo D12. So em lote conjunto com prova adicional.",
+   "candidates": [
+    {
+     "candidate_id": "W2R-030",
+     "path": "LEX-MACHINAETAPA_2E41",
+     "bytes": 840815,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-031",
+     "path": "LEX-MACHINAETAPA_2E5",
+     "bytes": 292452,
+     "protected545_members": 4
+    },
+    {
+     "candidate_id": "W2R-032",
+     "path": "LEX-MACHINA_ETAPA_2E6_SD_TESTE",
+     "bytes": 732697,
+     "protected545_members": 8
+    }
+   ]
+  },
+  "D_HUMAN_HOLD": {
+   "count": 1,
+   "bytes": 49357,
+   "files": 5,
+   "protected545_members": 0,
+   "reason": "Tecnicamente READY, mas decisao humana anterior de nao mover (WAVE2C_DECOUPLING_PLAN.md:30,429).",
+   "candidates": [
+    {
+     "candidate_id": "W2R-029",
+     "path": "LEX-MACHINAETAPA_2E4",
+     "bytes": 49357,
+     "protected545_members": 0
+    }
+   ]
+  },
+  "E_EXTRACT_PRIMARY_EVIDENCE": {
+   "count": 7,
+   "bytes": 23697830,
+   "files": 468,
+   "protected545_members": 0,
+   "reason": "Capturas oficiais/dado curado unicos sem copia Git/snapshot; exigem copia fria verificada em meio externo antes de arquivar.",
+   "candidates": [
+    {
+     "candidate_id": "W2R-014",
+     "path": "LEX-MACHINAETAPA_2D4",
+     "bytes": 1512426,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-015",
+     "path": "LEX-MACHINAETAPA_2D5",
+     "bytes": 552521,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-017",
+     "path": "LEX-MACHINAETAPA_2D6_1",
+     "bytes": 56716,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-020",
+     "path": "LEX-MACHINAETAPA_2D6_4",
+     "bytes": 166471,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-021",
+     "path": "LEX-MACHINAETAPA_2D7",
+     "bytes": 14748414,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-022",
+     "path": "LEX-MACHINAETAPA_2D8",
+     "bytes": 6618625,
+     "protected545_members": 0
+    },
+    {
+     "candidate_id": "W2R-033",
+     "path": "LEX_MACHINA_JURIS_CF_J1",
+     "bytes": 42657,
+     "protected545_members": 0
+    }
+   ]
+  },
+  "F_OTHER_INTENTIONAL": {
+   "count": 1,
+   "bytes": 0,
+   "files": 0,
+   "protected545_members": 0,
+   "reason": "Fora do universo WAVE2: diretorio vazio registrado como NEW_CLEANUP_CANDIDATE na WAVE2R; nao incluido em nenhuma execucao sem decisao explicita.",
+   "candidates": [
+    {
+     "candidate_id": "NEW-001",
+     "path": "LEX-MACHINAETAPA_2B",
+     "bytes": 0,
+     "protected545_members": 0
+    }
+   ]
+  }
+ },
+ "top_level_directories": [
+  "ARTIFACT_REGISTRY",
+  "CF_SEGMENTADA_V2",
+  "CLEANUP_AUDIT",
+  "DATASET_LOCKS",
+  "LEX-MACHINAETAPA_2B",
+  "LEX-MACHINAETAPA_2D4",
+  "LEX-MACHINAETAPA_2D5",
+  "LEX-MACHINAETAPA_2D6_1",
+  "LEX-MACHINAETAPA_2D6_4",
+  "LEX-MACHINAETAPA_2D7",
+  "LEX-MACHINAETAPA_2D8",
+  "LEX-MACHINAETAPA_2E4",
+  "LEX-MACHINAETAPA_2E41",
+  "LEX-MACHINAETAPA_2E5",
+  "LEX-MACHINA_ETAPA_2E6_SD_TESTE",
+  "LEX_MACHINA_JURIS_CF_J1",
+  "LEX_MACHINA_REFERENCIAS_ADAPTADOR_CATALOGO_69_V1",
+  "LEX_MACHINA_REFERENCIAS_AUDITORIA_ASTRA_V1",
+  "LEX_MACHINA_REFERENCIAS_AUDITORIA_CAUSAL_V132_V1",
+  "LEX_MACHINA_REFERENCIAS_AVALIACAO_J5_LOTE45_V2_FINAL",
+  "LEX_MACHINA_REFERENCIAS_BENCHMARK_69_HUMANO_V1",
+  "LEX_MACHINA_REFERENCIAS_BENCHMARK_CF_V2",
+  "LEX_MACHINA_REFERENCIAS_CATALOGO_LOTE_45_V2",
+  "LEX_MACHINA_REFERENCIAS_CF_ENGINE_RUN_V1",
+  "LEX_MACHINA_REFERENCIAS_CF_REVISAO_ALTA_CONFIANCA_V1",
+  "LEX_MACHINA_REFERENCIAS_ENGINE_V1",
+  "LEX_MACHINA_REFERENCIAS_ENGINE_V1_1",
+  "LEX_MACHINA_REFERENCIAS_ENGINE_V1_2",
+  "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3",
+  "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_1",
+  "LEX_MACHINA_REFERENCIAS_ENGINE_V1_3_2",
+  "LEX_MACHINA_REFERENCIAS_FORCA_TEMA_LOTE45_V1_FINAL",
+  "LEX_MACHINA_REFERENCIAS_PREPARACAO_V14_ALPHA2",
+  "LEX_MACHINA_REFERENCIAS_REFINAMENTO_R7_V2",
+  "LEX_MACHINA_REFERENCIAS_TESTE_COMPLETO_ALPHA3_V1",
+  "LEX_MACHINA_REFERENCIAS_V2",
+  "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA",
+  "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA2",
+  "LEX_MACHINA_REFERENCIAS_VALIDACAO_V14_ALPHA3",
+  "PROTECTED545_RELOCATION",
+  "SHADOW_CONSUMER_ADAPTER",
+  "SHADOW_RESOLVER",
+  "docs",
+  "firmware",
+  "sdcard",
+  "updater"
+ ],
+ "top_level_files": [
+  ".gitattributes",
+  ".gitignore",
+  "HISTORICO_RELEASES.md",
+  "README.md"
+ ],
+ "operational_areas": {
+  "updater": {
+   "files": 4282,
+   "bytes": 460582794
+  },
+  "LEX_MACHINA_REFERENCIAS_V2": {
+   "files": 1135,
+   "bytes": 37294564
+  },
+  "LEX_MACHINA_REFERENCIAS_ADAPTADOR_CATALOGO_69_V1": {
+   "files": 8,
+   "bytes": 646707
+  },
+  "firmware": {
+   "files": 21,
+   "bytes": 2660045
+  },
+  "sdcard": {
+   "files": 1,
+   "bytes": 1079
+  },
+  "docs": {
+   "files": 3,
+   "bytes": 6544
+  },
+  "CLEANUP_AUDIT": {
+   "files": 86,
+   "bytes": 57691662
+  },
+  "ARTIFACT_REGISTRY": {
+   "files": 5,
+   "bytes": 903484
+  },
+  "DATASET_LOCKS": {
+   "files": 3,
+   "bytes": 541659
+  },
+  "SHADOW_RESOLVER": {
+   "files": 6,
+   "bytes": 58659
+  },
+  "SHADOW_CONSUMER_ADAPTER": {
+   "files": 8,
+   "bytes": 43822
+  },
+  "PROTECTED545_RELOCATION": {
+   "files": 8,
+   "bytes": 442930
+  }
+ },
+ "external_locations": {
+  "C:\\GitHub_LEX_MACHINA_ARCHIVE\\2026-09-28-wave2": {
+   "files": 277,
+   "bytes": 7564154
+  },
+  "C:\\LMA\\p545e\\20260928": {
+   "files": 22273,
+   "bytes": 2857446527
+  },
+  "C:\\LMA\\lv": {
+   "files": 11760,
+   "bytes": 741587140
+  },
+  "C:\\LMA\\ct": {
+   "files": 224,
+   "bytes": 145864411
+  },
+  "C:\\GitHub_LEX_MACHINA_P545_TEMP": {
+   "files": 1640,
+   "bytes": 206354302
+  },
+  "C:\\GitHub_LEX_MACHINA_SAFETY_PRE_CLEANUP_2026-09-26": {
+   "files": 4,
+   "bytes": 46758440
+  },
+  "C:\\GitHub\\_LEX_MACHINA_D05_REPLAY_TEMP": {
+   "files": 349,
+   "bytes": 10116066
+  },
+  "C:\\GitHub\\_LEX_MACHINA_SCA1B2_TEMP": {
+   "files": 1109,
+   "bytes": 29477872
+  }
+ },
+ "ledger": {
+  "path": "PROTECTED545_RELOCATION/ledger/P545_RELOCATION_LEDGER.json",
+  "sha256": "b1522733cddf42bda9239aef1d4fe00b7fa7273900c4243be9af9606bcf44b52",
+  "events": 230,
+  "head": "4665bae677a9dd5bdfe8e4f04df537a48d1fce994dc01ab22222618dda436ae1",
+  "gitattributes_rule": "PROTECTED545_RELOCATION/ledger/P545_RELOCATION_LEDGER.json -text",
+  "clone_test": {
+   "path": "C:\\LMA\\ct\\ledger-attr-test-1",
+   "core_autocrlf": true,
+   "core_longpaths": true,
+   "without_rule_sha256": "4dc46a0d26b6acfaaa495e7987f976d2b7af87d7125360d4e695c32fe719ea91",
+   "without_rule_byte_identical": false,
+   "with_rule_sha256": "b1522733cddf42bda9239aef1d4fe00b7fa7273900c4243be9af9606bcf44b52",
+   "with_rule_byte_identical": true
+  }
+ },
+ "verification": {
+  "derived": {
+   "result": "PASS",
+   "counts": {
+    "ORIGINAL_PATH_PRESENT": 315,
+    "VALID_RELOCATION": 230
+   },
+   "ledger_errors": [],
+   "idx_occurrences": 130,
+   "idx_ok": 130
+  },
+  "registry": "PASS",
+  "lock": "PASS",
+  "resolver": "PASS",
+  "v2_281_live": {
+   "total": 281,
+   "identical": 281
+  },
+  "enriquecido_v1": 7,
+  "original_proof_sha256": "a319f0ea917b0e6c00e037ba5b7a5c97b351d1b0af00b79862ae98db7cfd91c2",
+  "d01_selection": {
+   "marker_files": 55,
+   "selection_sha256": "0a1a32ba421581b50f8a07c8ec0dfa6f43e6403ceac6b15a67acd1347733cf91"
+  },
+  "legacy_view": {
+   "view": "C:\\LMA\\lv\\finalize",
+   "protected545": 545,
+   "frozen_r1d_support_integrity": true,
+   "v2_281": 281
+  },
+  "non_authorized_present": {
+   "total": 26,
+   "present": 26,
+   "e2e41_present": true
+  },
+  "unit_tests": "23/23"
+ },
+ "closing": "A limpeza pesada da raiz esta encerrada. O que permanece e intencional (ativo/canonico ou hold humano) ou depende de trabalho especifico futuro (D01, 2E5/2E6/2E41, copia fria das capturas primarias).",
+ "temporary_verification_artifacts_note": "C:/LMA/lv (visoes legadas), C:/LMA/ct (clone test) e C:/GitHub_LEX_MACHINA_P545_TEMP (sandbox P545A) sao artefatos de verificacao descartaveis (~1,09 GB); nao foram apagados nesta missao; remocao exige decisao do operador."
+}
