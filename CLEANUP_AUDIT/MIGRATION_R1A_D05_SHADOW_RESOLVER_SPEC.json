@@ -1,0 +1,248 @@
+{
+  "authority": {
+    "legacy_pipeline": "AUTHORITATIVE",
+    "resolver": "SHADOW_ONLY",
+    "resolved_selection": "DERIVED_NON_AUTHORITATIVE"
+  },
+  "canonicalization": {
+    "absolute_paths_in_canonical_core": false,
+    "encoding": "UTF-8",
+    "final_newline": true,
+    "key_order": "SORTED",
+    "line_endings": "LF",
+    "timestamps": false,
+    "version": "json-utf8-lf-sorted-keys-indent-2-final-lf-v1"
+  },
+  "dataset_id": "d05.catalogo-expansao-200",
+  "fail_closed_conditions": [
+    "REGISTRY_HASH_MISMATCH",
+    "LOCK_HASH_MISMATCH",
+    "ROOT_BINDING_MISSING_OR_DUPLICATE",
+    "OCCURRENCE_NOT_FOUND_OR_AMBIGUOUS",
+    "IDENTITY_MISMATCH",
+    "MEMBER_REF_NOT_UNIQUE",
+    "UNSAFE_PATH",
+    "PATH_COLLISION",
+    "SYMLINK_OR_JUNCTION_ESCAPE",
+    "FILE_MISSING",
+    "SIZE_MISMATCH",
+    "SHA256_MISMATCH",
+    "ORDINAL_INVALID",
+    "MULTIPLICITY_CHANGED",
+    "DEPENDENCY_UNRESOLVED",
+    "IMPLICIT_DISCOVERY_REQUESTED",
+    "RESTRICTED_LOCAL_MISSING"
+  ],
+  "future_cli": {
+    "binding_modes": {
+      "file": "--root-bindings <runtime-json>",
+      "inline": "--bind STORAGE_ROOT_ID=ABSOLUTE_PATH (repeatable)",
+      "rule": "exactly one mode; duplicate ids or mixed modes fail"
+    },
+    "inputs": [
+      "--registry ARTIFACT_REGISTRY/index.json",
+      "--lock DATASET_LOCKS/d05-historical-parity-v1.lock.json",
+      "--expected-lock-sha256 <64 lowercase hex>",
+      "one explicit root-binding mode"
+    ],
+    "outputs": [
+      "--output <caller-selected runtime path or stdout>",
+      "--runtime-report <optional noncanonical diagnostic path>"
+    ]
+  },
+  "future_files": [
+    "SHADOW_RESOLVER/resolve_selection.py",
+    "SHADOW_RESOLVER/verify_resolved_selection.py",
+    "SHADOW_RESOLVER/schemas/resolved-selection.schema.json",
+    "SHADOW_RESOLVER/schemas/root-bindings.schema.json",
+    "SHADOW_RESOLVER/root-bindings.example.json",
+    "SHADOW_RESOLVER/tests/test_d05_shadow_resolver.py"
+  ],
+  "inputs": {
+    "forbidden_operational_inputs": [
+      "CLEANUP_AUDIT/D05_GOLDEN_REFERENCE.json",
+      "CLEANUP_AUDIT/D05_REPLAY_RUN.json",
+      "filesystem inventory",
+      "consumer output"
+    ],
+    "required": [
+      "Artifact Registry index and its explicitly listed D05 fragment",
+      "D05 Dataset Lock",
+      "expected Dataset Lock SHA-256",
+      "explicit runtime root bindings"
+    ]
+  },
+  "member_resolution": {
+    "identity_key": [
+      "logical_id",
+      "version",
+      "occurrence_id"
+    ],
+    "member_adapters": {
+      "candidate_number": "exactly one list item whose number equals member_ref.value",
+      "catalog_69_id": "exactly one obras item whose id equals member_ref.value",
+      "checkpoint": "top-level numero and obras_examinadas exactly equal the structured member_ref.value",
+      "evidence_id": "exactly one revisoes item whose evidence_id equals member_ref.value",
+      "none": "the occurrence itself is the selected member",
+      "work_id_base_dossier": "top-level work_id exactly equals member_ref.value",
+      "work_id_enrichment_queue": "exactly one fila item whose work_id equals member_ref.value"
+    },
+    "result_cardinality": "EXACTLY_ONE",
+    "zero_or_many": "FAIL_CLOSED"
+  },
+  "negative_tests": [
+    "registry hash mismatch",
+    "lock hash mismatch",
+    "missing root binding",
+    "missing occurrence",
+    "ambiguous occurrence",
+    "missing file",
+    "size mismatch",
+    "SHA-256 mismatch",
+    "path traversal",
+    "absolute relative_path",
+    "symlink or junction escape",
+    "duplicate ordinal",
+    "changed multiplicity",
+    "wildcard introduction",
+    "fallback attempt",
+    "missing restricted_local"
+  ],
+  "output_contract": {
+    "canonical_core_fields": [
+      "resolver_version",
+      "schema_version",
+      "mode",
+      "authority",
+      "dataset_id",
+      "profile_id",
+      "registry_id",
+      "registry_index_sha256",
+      "registry_fragments",
+      "lock_sha256",
+      "root_binding_ids",
+      "selection_sets",
+      "explicit_absences",
+      "dependencies",
+      "resolution_summary"
+    ],
+    "item_fields": [
+      "set_id",
+      "semantic_role",
+      "ordinal when ordered",
+      "logical_id",
+      "version",
+      "occurrence_id",
+      "member_ref when present",
+      "storage_root_id",
+      "relative_path",
+      "sha256",
+      "size",
+      "resolution_status"
+    ],
+    "labels": [
+      "DERIVED",
+      "SHADOW",
+      "NON_AUTHORITATIVE"
+    ],
+    "machine_absolute_paths": "excluded from canonical core; optional only in separate noncanonical runtime report",
+    "recommended_location": "caller-selected temporary runtime directory, outside D05 and outside authoritative Registry/Lock trees"
+  },
+  "path_security": {
+    "checks": [
+      "relative_path is canonical NFC POSIX syntax",
+      "relative_path is not absolute, drive-relative, UNC, device-path or ADS syntax",
+      "no empty, dot or dot-dot components",
+      "root binding is explicit, absolute, existing and unique",
+      "resolved target remains within the resolved root",
+      "no selected path traverses a symlink, junction or reparse point",
+      "no NFC-plus-casefold collision inside a storage root",
+      "Windows reserved names and trailing dot/space aliases are rejected",
+      "basename never substitutes for occurrence identity"
+    ],
+    "platform_focus": "Windows fail-closed"
+  },
+  "pilot": {
+    "lock_id": "d05-historical-parity-v1.lock",
+    "profile_id": "d05-historical-parity-v1",
+    "scope": "D05 only",
+    "selection_sets": 11,
+    "semantic_items": 1699
+  },
+  "resolution_algorithm": [
+    "parse only explicitly supplied files and bindings",
+    "validate canonical JSON and schemas",
+    "compare actual Lock SHA-256 to the explicit expected digest",
+    "compare Registry index SHA-256 to the digest pinned by the Lock",
+    "open only fragment paths explicitly listed by the Registry index and validate descriptor size/hash",
+    "compare Lock fragment pins to the validated Registry fragments",
+    "build in-memory uniqueness indexes without filesystem enumeration",
+    "validate Lock constraints, counts, digests, ordinals and no-implicit-selection rules without Golden",
+    "resolve each Lock item by logical_id plus version plus occurrence_id",
+    "bind storage_root_id explicitly and validate the physical path",
+    "check file existence, stable size and SHA-256 using the opened file",
+    "resolve member_ref through the fixed D05 adapter for its set and kind",
+    "append the resolved item in Lock set/item order without deduplication",
+    "copy explicit_absences without attempting file resolution",
+    "resolve all four dependencies and enforce restricted_local fail-closed",
+    "serialize the canonical shadow output deterministically"
+  ],
+  "root_bindings": {
+    "example_ids": [
+      "D05_MANAGED_ROOT",
+      "CATALOG_69_ROOT"
+    ],
+    "identity_effect": "NONE",
+    "machine_specific_file": "runtime only; do not commit",
+    "no_auto_discovery": true,
+    "required_ids": "exactly the storage_root_id values referenced by selected occurrences and dependencies"
+  },
+  "spec_version": "R1A-D05-SHADOW-RESOLVER-SPEC/1",
+  "success_criteria_r1b": [
+    "runs without Golden Reference",
+    "runs without replay evidence",
+    "zero filesystem discovery",
+    "reproduces 11 sets and 1699 semantic items",
+    "preserves order, multiplicity and explicit absences",
+    "resolves four dependencies",
+    "verifies size and SHA-256",
+    "fails closed when restricted_local is absent",
+    "changes no consumer and produces no functional D05 output",
+    "keeps LEGACY_AUTHORITATIVE"
+  ],
+  "verifier_contract": [
+    "validate Registry canonical structure and cryptographic links without orphan scanning",
+    "validate Lock canonical structure, explicit expected hash and Registry pins without Golden",
+    "validate complete and unique root bindings",
+    "validate exact one-to-one occurrence and member resolution",
+    "validate path confinement and Windows alias/collision rules",
+    "validate file existence, size and SHA-256",
+    "validate order and ordinal continuity",
+    "validate multiplicity without hash deduplication",
+    "validate explicit absences are preserved as data",
+    "validate dependencies and restricted_local",
+    "validate zero extra item and zero implicit discovery",
+    "fail closed on every error"
+  ],
+  "zero_discovery": {
+    "allowed_filesystem_operations": [
+      "open an explicitly resolved path",
+      "check explicit path existence",
+      "read size from an explicit file handle/path",
+      "hash explicit file bytes",
+      "inspect explicit path components for reparse points"
+    ],
+    "forbidden": [
+      "glob",
+      "rglob",
+      "os.walk",
+      "listdir",
+      "scandir",
+      "regex selection",
+      "latest selection",
+      "folder enumeration",
+      "fallback candidate search"
+    ],
+    "guaranteed_by_design": true
+  }
+}
