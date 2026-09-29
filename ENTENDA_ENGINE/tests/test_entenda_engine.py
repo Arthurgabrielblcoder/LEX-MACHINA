@@ -166,7 +166,7 @@ class PilotCorpusTest(unittest.TestCase):
             self.assertEqual(got['context_targets'], rec['granularity']['context_targets'])
             self.assertEqual(got['sections']['O QUE DIZ'], rec['content']['o_que_diz'])
             self.assertEqual(got['sections']['EXEMPLO PRÁTICO'], rec['content']['exemplo_pratico'])
-            self.assertEqual((got['match'], got['review']), ('EXACT', 'HUMAN_APPROVED_T1'))
+            self.assertEqual((got['resolution_type'], got['review']), ('DIRECT', 'HUMAN_APPROVED_T1'))
         self.assertEqual(E.lookup_idx('CF88:ART.37:PAR.6', RUN1 / 'ENTENDA_LOOKUP.IDX', RUN1 / 'ENTENDA_PAYLOAD.DAT')['reference_count'], 5)
         for missing in ('CF88:ART.2', 'CF88:ART.60:PAR.4:INC.I', 'ADCT:ART.5', 'ZZZ:ART.1'):
             self.assertIsNone(E.lookup_idx(missing, RUN1 / 'ENTENDA_LOOKUP.IDX', RUN1 / 'ENTENDA_PAYLOAD.DAT'))

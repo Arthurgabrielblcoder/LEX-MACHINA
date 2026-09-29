@@ -42,9 +42,11 @@ STATUSES = ('ACTIVE', 'STALE', 'RETIRED')
 REVIEW = ('DRAFT', 'PENDING_HUMAN_REVIEW', 'HUMAN_APPROVED_T1', 'CHANGES_REQUESTED', 'APPROVED', 'REJECTED')
 EXTERNAL_VERIFICATION = 'CURRENT_OFFICIAL_EXTERNAL_VERIFICATION'
 # lint (warnings only; never rewrites content)
-ABSOLUTE_RE = re.compile(r'\b(?:sempre|nunca|jamais|absolut[oa]s?|absolutamente|em qualquer (?:caso|hip[óo]tese|circunst[âa]ncia)|sem exce[çc][ãa]o|'
+ABSOLUTE_RE = re.compile(r'\b(?:sempre|nunca|jamais|(?<!maioria )absolut[oa]s?|absolutamente|em qualquer (?:caso|hip[óo]tese|circunst[âa]ncia)|sem exce[çc][ãa]o|'
                          r'todo e qualquer|incondicional(?:mente)?|automaticamente)\b', re.I)
-BODY_JURIS_RE = re.compile(r'\b(?:jurisprud[êe]ncia|tribunais|tribunal superior|doutrina majorit[áa]ria|entende-se|entendimento consolidado)\b', re.I)
+# real jurisprudential references (checked in the body sections only; CAMADA EXTERNA may contain them)
+BODY_JURIS_RE = re.compile(r'\b(?:STF|STJ|TST|TSE|S[úu]mulas?(?:\s+Vinculantes?)?|Temas?\s+(?:n[ºo.]?\s*)?\d+|Repercuss[ãa]o\s+Geral|'
+                           r'jurisprud[êe]ncias?|precedentes?)\b', re.I)
 REQUIREMENT_RE = re.compile(r'\b(?:precisa|precisar[áa]|deve|dever[áa]|devem|[ée] obrigat[óo]ri[oa]|exige|exigir[áa]|somente se|s[óo] se|desde que)\b', re.I)
 ID_RE = re.compile(r'^ENTENDA/(?P<target>[A-Za-z0-9:.\-]+)/(?P<variant>[A-Z][A-Z0-9_]{0,15})/(?P<version>[1-9][0-9]{0,3})$')
 SHA_RE = re.compile(r'^[0-9a-f]{64}$')
@@ -209,6 +211,10 @@ def validate_explanation(rec, ctx):
             raise EntendaError('ENTENDA_COVERED_INVALID', f'{tid}: {c} nao e CURRENT')
     if covered and g.get('role') != 'BLOCK':
         raise EntendaError('ENTENDA_COVERED_INVALID', f'{tid}: covered_targets exige role BLOCK')
+    if g.get('anchor_target_id', tid) != tid or ('display_targets' in g and g['display_targets'] != display_targets(rec, ctx)):
+        raise EntendaError('ENTENDA_DISPLAY_INVALID', tid)
+    if 'coverage_type' in g and (g['coverage_type'] != 'BLOCK' or not covered):
+        raise EntendaError('ENTENDA_DISPLAY_INVALID', f'{tid}: coverage_type')
     if g.get('role') == 'BLOCK' and not ctx.children.get(tid) and not covered:
         raise EntendaError('ENTENDA_GRANULARITY_INVALID', f'{tid}: BLOCK sem subdivisoes nem covered_targets')
     if not (g.get('editorial_reason') or '').strip():
@@ -254,7 +260,8 @@ def validate_explanation(rec, ctx):
     for t in texts:
         if any(line.startswith(('#', '@')) for line in t.split('\n')) or '|' in t:
             raise EntendaError('ENTENDA_RESERVED_CHAR', tid)
-    body = [c[k] for k in REQUIRED_TEXT] + ([c['atencao']] if c['atencao'] else []) + [t['explicacao'] for t in terms] + list(rec['external_layer_notes'])
+    # hard block applies to the body only; external_layer_notes may name the external layer and its references
+    body = [c[k] for k in REQUIRED_TEXT] + ([c['atencao']] if c['atencao'] else []) + [t['explicacao'] for t in terms]
     hit = next((EXTERNAL_CASE_RE.search(t) for t in body if EXTERNAL_CASE_RE.search(t)), None)
     if hit:
         raise EntendaError('ENTENDA_EXTERNAL_CASE_CONTENT', f'{tid}: "{hit.group(0)}" pertence a camada JURISPRUDENCIA')
@@ -395,7 +402,9 @@ def stamp(drafts, ctx, existing=()):
                    template_version=d['template_version'], prompt_version=d['prompt_version'],
                    granularity=dict(target_kind=ctx.kind(tid), role=e['role'], semantic_autonomy=e['semantic_autonomy'],
                                     context_targets=ctx.context_chain(tid), editorial_reason=e['editorial_reason'],
-                                    **({'covered_targets': covered} if covered else {})),
+                                    **({'anchor_target_id': tid, 'covered_targets': covered, 'coverage_type': 'BLOCK',
+                                        'display_targets': sorted([tid] + covered, key=lambda t: ctx.order[t])} if covered else {}),
+                                    **({'display_topic': e['display_topic']} if e.get('display_topic') else {})),
                    validity=dict(target_status=ctx.effective_status(tid), validity_note=e.get('validity_note'),
                                  **({'external_verification': e['external_verification']} if e.get('external_verification') else {})),
                    source=source, content=content, external_layer_notes=e.get('external_layer_notes', []),
@@ -424,6 +433,99 @@ def get_explanation(target_id, corpus, variant='BASE'):
         raise EntendaError('LOOKUP_INVALID_TARGET_ID', f'{target_id}: {err}')
     hits = [r for r in corpus if r['target_id'] == target_id and r['variant'] == variant and r['status'] in ('ACTIVE', 'STALE')]
     return max(hits, key=lambda r: r['editorial_version']) if hits else None
+
+
+ROMAN_ORDER = re.compile(r'^[IVXLCDM]+')
+
+
+def _art_label(t):
+    n = t['article']
+    m = re.match(r'^(\d+)(.*)$', n)
+    num = f'{m.group(1)}º{m.group(2)}' if int(m.group(1)) < 10 else n
+    return ('ADCT, art. ' if t['namespace'] != t['norma_id'] else 'Art. ') + num
+
+
+def _last_label(t):
+    if t['alinea']:
+        return 'alínea', t['alinea']
+    if t['inciso']:
+        return 'inciso', t['inciso']
+    if t['paragraph']:
+        if t['paragraph'] == 'UNICO':
+            return 'parágrafo único', None
+        m = re.match(r'^(\d+)(.*)$', t['paragraph'])
+        return '§', (f'{m.group(1)}º{m.group(2)}' if int(m.group(1)) < 10 else t['paragraph'])
+    if t['caput']:
+        return 'caput', None
+    return None, None
+
+
+def _join(items):
+    return items[0] if len(items) == 1 else ', '.join(items[:-1]) + ' e ' + items[-1]
+
+
+def target_label(target_id):
+    """Human label derived from the canonical target_id (e.g. 'Art. 5º, § 4º, inciso IV')."""
+    t = T.parse_target_id(target_id)
+    if not t['article']:
+        return target_id
+    parts = [_art_label(t)]
+    if t['paragraph']:
+        k, v = _last_label(dict(t, inciso=None, alinea=None))
+        parts.append(k if v is None else f'{k} {v}')
+    if t['inciso']:
+        parts.append(f"inciso {t['inciso']}")
+    if t['alinea']:
+        parts.append(f"alínea \"{t['alinea']}\"")
+    if t['caput'] and not (t['paragraph'] or t['inciso']):
+        parts.append('caput')
+    return ', '.join(parts)
+
+
+def display_targets(rec, ctx=None):
+    g = rec['granularity']
+    ids = [rec['target_id']] + list(g.get('covered_targets', []))
+    return sorted(ids, key=lambda t: ctx.order[t]) if ctx else g.get('display_targets', ids)
+
+
+def group_label(ids):
+    """'Art. 5º, incisos IV, V, IX e XIV' for siblings of the same kind; otherwise the individual labels joined."""
+    if len(ids) == 1:
+        return target_label(ids[0])
+    ps = [T.parse_target_id(i) for i in ids]
+    kinds = {_last_label(p)[0] for p in ps}
+    parents = {T.parent_target_id(i) for i in ids}
+    if len(kinds) == 1 and len(parents) == 1 and None not in kinds and 'caput' not in kinds and 'parágrafo único' not in kinds:
+        kind = kinds.pop()
+        vals = [_last_label(p)[1] for p in ps]
+        prefix = target_label(parents.pop()).replace(', caput', '')
+        noun = {'inciso': 'incisos', 'alínea': 'alíneas', '§': '§§'}[kind]
+        vals = [f'"{v}"' for v in vals] if kind == 'alínea' else vals
+        return f'{prefix}, {noun} {_join(vals)}'
+    return _join([target_label(i) for i in ids])
+
+
+def display_title(rec):
+    """Display title generated from editorial metadata (never hardcoded): label of all displayed targets + optional topic."""
+    topic = rec['granularity'].get('display_topic')
+    label = group_label(display_targets(rec))
+    return f'{label} — {topic}' if topic else label
+
+
+def resolve_explanation(target_id, corpus, variant='BASE'):
+    """Product lookup (ENTENDA button). DIRECT when the target has its own explanation; COVERED_BY_BLOCK when an explanation
+    explicitly lists it in covered_targets. Explicit editorial coverage only: never structural inheritance from the parent."""
+    rec = get_explanation(target_id, corpus, variant)
+    if rec:
+        return dict(record=rec, matched_target_id=target_id, anchor_target_id=rec['target_id'], resolution_type='DIRECT',
+                    display_title=display_title(rec), display_targets=display_targets(rec))
+    hits = [r for r in corpus if r['variant'] == variant and r['status'] in ('ACTIVE', 'STALE')
+            and target_id in r['granularity'].get('covered_targets', [])]
+    if not hits:
+        return None
+    rec = max(hits, key=lambda r: r['editorial_version'])
+    return dict(record=rec, matched_target_id=target_id, anchor_target_id=rec['target_id'], resolution_type='COVERED_BY_BLOCK',
+                display_title=display_title(rec), display_targets=display_targets(rec))
 
 
 def context_links(target_id, corpus):
@@ -494,6 +596,9 @@ def render_payload(rec, freshness, ref_count):
     lines = [f"@{rec['explanation_id']}", f"T|{rec['target_id']}", f"K|{g['target_kind']}|{g['role']}|{g['semantic_autonomy']}",
              f"V|{display_validity(rec)}", f"R|{rec['review_status']}", f"F|{freshness}",
              f"H|{rec['source']['source_text_sha256'][:16]}"]
+    lines.append(f'D|{display_title(rec)}')
+    if g.get('covered_targets'):
+        lines.append('X|' + ','.join(display_targets(rec)))
     lines += [f'C|{t}' for t in g['context_targets']]
     lines += [f'B|{t}' for t in g.get('covered_targets', [])]
     if ref_count:
@@ -515,6 +620,7 @@ def render_payload(rec, freshness, ref_count):
 
 def build_entenda_index(ctx, corpus, out_dir):
     """Validated corpus -> ENTENDA_LOOKUP.IDX (sorted target_id -> byte offset/length) + ENTENDA_PAYLOAD.DAT + manifest."""
+    corpus = sorted(corpus, key=lambda r: (ctx.order[r['target_id']], r['variant'], r['editorial_version'], r['status']))
     pairs = validate_corpus(corpus, ctx)
     allowed = set(ctx.ncfg['export_review_statuses'])
     fresh = {s['explanation_id']: s['state'] for s in stale_report(corpus, ctx) if 'explanation_id' in s}
@@ -522,16 +628,16 @@ def build_entenda_index(ctx, corpus, out_dir):
     rows = [r for r in corpus if r['status'] == 'ACTIVE' and r['review_status'] in allowed]
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
-    head = '#LEXMACHINA|ENTENDA_PAYLOAD|2\n#BLOCO: @ID / T|K|V|R|F|H|C|B|N|W / #SECOES / @END\n'.encode('utf-8')
+    head = '#LEXMACHINA|ENTENDA_PAYLOAD|2\n#BLOCO: @ID / T|K|V|R|F|H|D|C|B|N|W / #SECOES / @END\n'.encode('utf-8')
     offset, blobs, lookup, per = len(head), [], [], []
     for r in sorted(rows, key=lambda r: r['target_id']):
         blob = render_payload(r, fresh.get(r['explanation_id'], 'UNKNOWN'), refs.get(r['target_id'], 0))
         if len(blob) > ctx.limits['max_payload_bytes']:
             raise EntendaError('ENTENDA_PAYLOAD_TOO_LARGE', f"{r['target_id']}: {len(blob)}")
         tail = f"{r['explanation_id']}|{display_validity(r)}|{fresh.get(r['explanation_id'], 'UNKNOWN')}|{r['review_status']}"
-        lookup.append(f"{r['target_id']}|{offset}|{len(blob)}|{tail}|EXACT")
+        lookup.append(f"{r['target_id']}|{offset}|{len(blob)}|{tail}|DIRECT")
         # explicit editorial coverage (covered_targets), never structural inheritance
-        lookup += [f"{c}|{offset}|{len(blob)}|{tail}|COVERED" for c in r['granularity'].get('covered_targets', [])]
+        lookup += [f"{c}|{offset}|{len(blob)}|{tail}|COVERED_BY_BLOCK" for c in r['granularity'].get('covered_targets', [])]
         per.append(dict(target_id=r['target_id'], explanation_id=r['explanation_id'], role=r['granularity']['role'], payload_bytes=len(blob),
                         words=sum(len(words(r['content'][k])) for k in REQUIRED_TEXT) + len(words(r['content']['atencao'] or '')) +
                         sum(len(words(t['termo'] + ' ' + t['explicacao'])) for t in r['content']['palavras_dificeis']),
@@ -540,7 +646,7 @@ def build_entenda_index(ctx, corpus, out_dir):
         offset += len(blob)
     (out / 'ENTENDA_PAYLOAD.DAT').write_bytes(head + b''.join(blobs))
     lookup.sort(key=lambda l: l.split('|', 1)[0])
-    (out / 'ENTENDA_LOOKUP.IDX').write_bytes(('#LEXMACHINA|ENTENDA_LOOKUP|2\n#TARGET_ID|OFFSET|BYTES|EXPLANATION_ID|VALIDITY|FRESHNESS|REVIEW|MATCH\n'
+    (out / 'ENTENDA_LOOKUP.IDX').write_bytes(('#LEXMACHINA|ENTENDA_LOOKUP|2\n#TARGET_ID|OFFSET|BYTES|EXPLANATION_ID|VALIDITY|FRESHNESS|REVIEW|RESOLUTION\n'
                                               + ''.join(l + '\n' for l in lookup)).encode('utf-8'))
     files = {p.name: dict(sha256=hashlib.sha256(p.read_bytes()).hexdigest(), bytes=p.stat().st_size)
              for p in (out / 'ENTENDA_LOOKUP.IDX', out / 'ENTENDA_PAYLOAD.DAT')}
@@ -574,8 +680,8 @@ def parse_payload(blob):
                 meta[k] = v
         elif section and line != '@END':
             sections[section].append(line)
-    rec.update(target_id=meta.get('T'), kind=meta.get('K'), validity=meta.get('V'), review=meta.get('R'), freshness=meta.get('F'),
-               context_targets=meta['C'], covered_targets=meta['B'], reference_count=int(meta.get('N', 0)), sections={k: '\n'.join(v) for k, v in sections.items()})
+    rec.update(target_id=meta.get('T'), display_title=meta.get('D'), kind=meta.get('K'), validity=meta.get('V'), review=meta.get('R'), freshness=meta.get('F'),
+               context_targets=meta['C'], covered_targets=meta['B'], display_targets_order=meta['X'].split(',') if meta.get('X') else [meta.get('T')] + meta['B'], reference_count=int(meta.get('N', 0)), sections={k: '\n'.join(v) for k, v in sections.items()})
     return rec
 
 
@@ -589,7 +695,9 @@ def lookup_idx(target_id, lookup_path, payload_path):
             with open(payload_path, 'rb') as fh:
                 fh.seek(int(rows[mid][1]))
                 rec = parse_payload(fh.read(int(rows[mid][2])))
-            rec['match'] = rows[mid][7] if len(rows[mid]) > 7 else 'EXACT'
+            rec['resolution_type'] = rows[mid][7] if len(rows[mid]) > 7 else 'DIRECT'
+            rec['matched_target_id'], rec['anchor_target_id'] = target_id, rec['target_id']
+            rec['display_targets'] = rec.pop('display_targets_order')
             return rec
         if rows[mid][0] < target_id:
             lo = mid + 1

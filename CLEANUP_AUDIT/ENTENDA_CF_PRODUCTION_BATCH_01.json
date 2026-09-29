@@ -1,0 +1,543 @@
+{
+ "schema_version": "lex-machina-entenda-cf-a2/1",
+ "mission": "ENTENDA-CF-A2",
+ "a1_review": {
+  "decision": "APROVADO COM AJUSTES",
+  "changed_targets": [
+   "ADCT:ART.10:INC.II",
+   "CF88:ART.225",
+   "CF88:ART.37:PAR.6",
+   "CF88:ART.5",
+   "CF88:ART.60:PAR.4:INC.IV"
+  ],
+  "changes": 8,
+  "diff": "ENTENDA_ENGINE/derived/CF88_PILOT_HUMAN_REVIEW_DIFF.json",
+  "adct_validity": "CURRENT_OFFICIAL_EXTERNAL (UNKNOWN no texto operacional; verificacao externa oficial 2026-09-28)"
+ },
+ "ENTENDA_T1_STATUS": "APPROVED",
+ "standard": "ENTENDA_ENGINE/ENTENDA_T1_EDITORIAL_STANDARD.md",
+ "commit": {
+  "sha": "8ad6714988675e9e3ae71d6268a59f1530612f00",
+  "tag": "entenda-t1-approved-2026-09-28",
+  "message": "feat: establish approved ENTENDA editorial engine"
+ },
+ "batch": {
+  "id": "ENTENDA_CF_PRODUCTION_BATCH_01",
+  "scope": [
+   "CF88:ART.1",
+   "CF88:ART.2",
+   "CF88:ART.3",
+   "CF88:ART.4",
+   "CF88:ART.5"
+  ],
+  "summary": {
+   "targets_evaluated": 138,
+   "targets_current": 138,
+   "selected": 53,
+   "by_classification": {
+    "BLOCK": 21,
+    "DEVICE": 1,
+    "ITEM": 26,
+    "NO_SEPARATE_EXPLANATION": 85,
+    "OVERVIEW": 5
+   },
+   "historical_excluded": 0,
+   "reused_from_pilot": 2,
+   "new_explanations": 51,
+   "batch_total_explanations": 53,
+   "soft_target": [
+    20,
+    45
+   ],
+   "hard_cap": 60,
+   "soft_target_status": "OUTSIDE_JUSTIFIED",
+   "soft_target_justification": "51 explicacoes novas (acima de 45, abaixo do teto de 60). O art. 5º tem 79 incisos com alta autonomia (direitos, garantias penais e processuais e cinco remedios constitucionais). A selecao ja agrupou 31 incisos irmaos em 17 blocos com covered_targets e explicou 4 incisos-bloco com alineas, deixando 60 dispositivos do art. 5º sem explicacao propria (liberdade de expressao, crenca, associacao, propriedade, penas, prisao, direitos do preso, mandado de seguranca, gratuidades etc.). Cortar mais significaria fundir institutos distintos (por exemplo, habeas corpus com mandado de seguranca ou devido processo com contraditorio) ou excluir dispositivos relevantes apenas para reduzir numeros, o que a politica T1 proibe.",
+   "new_words_mean": 205,
+   "new_payload_bytes_mean": 1655,
+   "largest": {
+    "target_id": "CF88:ART.5",
+    "explanation_id": "ENTENDA/CF88:ART.5/BASE/2",
+    "role": "OVERVIEW",
+    "payload_bytes": 2744,
+    "words": 350,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   "files": {
+    "ENTENDA_LOOKUP.IDX": {
+     "sha256": "1e56bb13d46bc1b0443a78141b463ce04423c7a53e64aeb70cc610e108209cda",
+     "bytes": 9013
+    },
+    "ENTENDA_PAYLOAD.DAT": {
+     "sha256": "ec97be3a2e9a9f95f35fb42dfe16f17292344cfccabd46c2bf72f114ce0261ae",
+     "bytes": 89501
+    },
+    "ENTENDA_BUILD_MANIFEST.json": {
+     "sha256": "e3f1874e01b72ac01d8ed2935797717cbfd84f17023198c7e0807ce85adcd93a",
+     "bytes": 31699
+    }
+   },
+   "lookup_rows": 84,
+   "targets_with_references": 27,
+   "warnings": 44,
+   "warning_counts": {
+    "ABSOLUTE_CLAIM": 3,
+    "EXAMPLE_REQUIREMENT_LANGUAGE": 12,
+    "JURISPRUDENCE_WORDING_IN_BODY": 2,
+    "NEAR_COPY_OF_OFFICIAL_TEXT": 22,
+    "TERM_LOW_UTILITY": 2,
+    "TERM_NOT_USED": 3
+   },
+   "focus_article": {
+    "target": "CF88:ART.5",
+    "evaluated": 109,
+    "own_explanations": 49,
+    "new_explanations": 48,
+    "incisos_evaluated": 79,
+    "no_separate": 60,
+    "by_classification": {
+     "OVERVIEW": 1,
+     "DEVICE": 1,
+     "BLOCK": 21,
+     "ITEM": 26,
+     "NO_SEPARATE_EXPLANATION": 60
+    }
+   }
+  },
+  "new_by_role": {
+   "BLOCK": 21,
+   "DEVICE": 1,
+   "ITEM": 26,
+   "OVERVIEW": 3
+  },
+  "no_separate_by_coverage": {
+   "ARTICLE_OVERVIEW": 30,
+   "BLOCK_COVERED_SIBLING": 31,
+   "BLOCK_COVERED_SUBDIVISION": 6,
+   "BLOCK_SUBDIVISION": 18
+  },
+  "selection_report": "ENTENDA_ENGINE/derived/production_batch_01/SELECTION_REPORT.json",
+  "review_sheet": "ENTENDA_ENGINE/derived/production_batch_01/REVIEW_BATCH_01.md",
+  "index": "ENTENDA_ENGINE/derived/production_batch_01/index/",
+  "batch_corpus": "ENTENDA_ENGINE/derived/production_batch_01/CF88_BATCH_01.entenda.jsonl",
+  "warnings": [
+   {
+    "target_id": "CF88:ART.1",
+    "explanation_id": "ENTENDA/CF88:ART.1/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "valores sociais do trabalho e da livre iniciativa"
+   },
+   {
+    "target_id": "CF88:ART.2",
+    "explanation_id": "ENTENDA/CF88:ART.2/BASE/1",
+    "code": "ABSOLUTE_CLAIM",
+    "section": "exemplo_pratico",
+    "detail": "absoluta"
+   },
+   {
+    "target_id": "CF88:ART.5",
+    "explanation_id": "ENTENDA/CF88:ART.5/BASE/2",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Como qualquer brasileiro, deve ser informado de seus direitos, entre eles o de permanecer calado (inciso LXIII), e sua prisão deve ser comun"
+   },
+   {
+    "target_id": "CF88:ART.5",
+    "explanation_id": "ENTENDA/CF88:ART.5/BASE/2",
+    "code": "TERM_NOT_USED",
+    "section": "palavras_dificeis",
+    "detail": "Remédio constitucional"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.I",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.I/BASE/1",
+    "code": "TERM_NOT_USED",
+    "section": "palavras_dificeis",
+    "detail": "Isonomia"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.IV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.IV/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "indenização por dano material moral ou à imagem"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XI/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Sem o consentimento do morador, deve aguardar o período diurno para cumprir a ordem."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "comunicações telegráficas de dados e das comunicações telefônicas"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XIII/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Para exercer a advocacia, a lei exige graduação em Direito e aprovação no Exame de Ordem, com inscrição na OAB."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XV/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "locomoção no território nacional em tempo de paz"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XV/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Não precisa de autorização de nenhuma autoridade para atravessar os Estados e fixar residência no novo local."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XVI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XVI/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Não precisam esperar uma permissão para realizar o ato, desde que ele seja pacífico e sem armas."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XVII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XVII/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "a suspensão depende de decisão judicial, e a dissolução exige ainda que essa decisão tenha transitado em julgado."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXX",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXX/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "a sucessão de bens de estrangeiros situados no"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXX",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXX/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Na partilha desse bem, deve ser aplicada a lei mais favorável a ela, comparando a lei brasileira com a lei pessoal do falecido."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXXIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXIII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "no prazo da lei sob pena de responsabilidade"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXXIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXIII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_significa",
+    "detail": "imprescindível à segurança da sociedade e do estado"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXXIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXIII/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Trata-se de informação de interesse coletivo, e a prefeitura deve fornecê-la no prazo previsto em lei, salvo se demonstrar hipótese legítima"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXXIV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXIV/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Um servidor aposentado precisa comprovar o tempo de serviço prestado a um Município para requerer um benefício."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXXVII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXVII/BASE/1",
+    "code": "JURISPRUDENCE_WORDING_IN_BODY",
+    "section": "atencao",
+    "detail": "tribunais"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XXXVII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXVII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "ninguém será processado nem sentenciado senão pela autoridade"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XLII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XLII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "contra a ordem constitucional e o estado democrático"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XLVI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XLVI/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "a obrigação de reparar o dano e a"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XLVII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XLVII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "de morte salvo em caso de guerra declarada"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XLIX",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XLIX/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "aos presos o respeito à integridade física e"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.XLIX",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XLIX/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "O estabelecimento prisional deve oferecer condições para que ela permaneça com o bebê durante o período de amamentação, em vez de separá-los"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LI/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "de estrangeiro por crime político ou de opinião"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LV/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "em processo judicial ou administrativo e aos acusados"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LV/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "Antes de qualquer punição, deve ser informado das acusações, ter acesso às provas, apresentar defesa e produzir as provas que considerar nec"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LVI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LVI/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "inadmissíveis no processo as provas obtidas por meios"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LVII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LVII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "ninguém será considerado culpado até o trânsito em"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXI/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "levado à prisão ou nela mantido quando a"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXI/BASE/1",
+    "code": "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "section": "exemplo_pratico",
+    "detail": "A prisão é ilegal e deve ser relaxada imediatamente pelo juiz ao tomar conhecimento dela."
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXIII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "comunicados imediatamente ao juiz competente e à família"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXVII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXVII/BASE/1",
+    "code": "JURISPRUDENCE_WORDING_IN_BODY",
+    "section": "atencao",
+    "detail": "JURISPRUDÊNCIA"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXIX",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXIX/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "de segurança para proteger direito líquido e certo"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXIX",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXIX/BASE/1",
+    "code": "TERM_NOT_USED",
+    "section": "palavras_dificeis",
+    "detail": "Autoridade coatora"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXXI",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXI/BASE/1",
+    "code": "ABSOLUTE_CLAIM",
+    "section": "exemplo_pratico",
+    "detail": "nunca"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXXII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXII/BASE/1",
+    "code": "ABSOLUTE_CLAIM",
+    "section": "o_que_significa",
+    "detail": "sempre"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXXII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXII/BASE/1",
+    "code": "TERM_LOW_UTILITY",
+    "section": "palavras_dificeis",
+    "detail": "Impetrante"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXXIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXIII/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "ou de entidade de que o estado participe"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXXV",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXV/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "ficar preso além do tempo fixado na sentença"
+   },
+   {
+    "target_id": "CF88:ART.5:INC.LXXVIII",
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXVIII/BASE/1",
+    "code": "TERM_LOW_UTILITY",
+    "section": "palavras_dificeis",
+    "detail": "Celeridade"
+   },
+   {
+    "target_id": "CF88:ART.5:PAR.3",
+    "explanation_id": "ENTENDA/CF88:ART.5:PAR.3/BASE/1",
+    "code": "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "section": "o_que_diz",
+    "detail": "dois turnos por três quintos dos votos dos"
+   }
+  ],
+  "untracked": true
+ },
+ "changes": {
+  "lei_seca": false,
+  "jurisprudencia": false,
+  "referencias": false,
+  "firmware": false,
+  "sd": false
+ },
+ "a3_final": {
+  "status": "HUMAN_APPROVED_T1",
+  "dir": "ENTENDA_ENGINE/derived/production_batch_01_final/",
+  "summary": {
+   "targets_evaluated": 138,
+   "targets_current": 138,
+   "selected": 55,
+   "by_classification": {
+    "BLOCK": 21,
+    "DEVICE": 2,
+    "ITEM": 27,
+    "NO_SEPARATE_EXPLANATION": 83,
+    "OVERVIEW": 5
+   },
+   "historical_excluded": 0,
+   "reused_from_pilot": 2,
+   "new_explanations": 53,
+   "batch_total_explanations": 55,
+   "soft_target": [
+    20,
+    45
+   ],
+   "hard_cap": 60,
+   "soft_target_status": "OUTSIDE_JUSTIFIED",
+   "soft_target_justification": "53 explicacoes proprias no lote final (51 revisadas + LVIII e § 4º criados pela revisao humana), abaixo do teto de 60. Justificativa de granularidade identica a do lote pendente: o art. 5º tem 79 incisos de alta autonomia, ja agrupados em blocos.",
+   "new_words_mean": 206,
+   "new_payload_bytes_mean": 1770,
+   "largest": {
+    "target_id": "CF88:ART.5",
+    "explanation_id": "ENTENDA/CF88:ART.5/BASE/2",
+    "role": "OVERVIEW",
+    "payload_bytes": 2755,
+    "words": 350,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   "files": {
+    "ENTENDA_LOOKUP.IDX": {
+     "sha256": "7b58ff84e1112f2aff15592eae988152b76a47ba0f8b3e6f2f6a6e335b7e00ef",
+     "bytes": 9310
+    },
+    "ENTENDA_PAYLOAD.DAT": {
+     "sha256": "c533afb8740ead19601d01ee540c0dcff9ec9a2c9c09fdb6d02c1bc5f7fe8a86",
+     "bytes": 98921
+    },
+    "ENTENDA_BUILD_MANIFEST.json": {
+     "sha256": "df7b5ee06ae23303812a87f8b1a9b741416a6902bc50c47647b7137d5e200b05",
+     "bytes": 32381
+    }
+   },
+   "lookup_rows": 86,
+   "targets_with_references": 27,
+   "warnings": 43,
+   "warning_counts": {
+    "ABSOLUTE_CLAIM": 2,
+    "EXAMPLE_REQUIREMENT_LANGUAGE": 13,
+    "JURISPRUDENCE_WORDING_IN_BODY": 1,
+    "NEAR_COPY_OF_OFFICIAL_TEXT": 22,
+    "TERM_LOW_UTILITY": 2,
+    "TERM_NOT_USED": 3
+   },
+   "focus_article": {
+    "target": "CF88:ART.5",
+    "evaluated": 109,
+    "own_explanations": 51,
+    "new_explanations": 50,
+    "incisos_evaluated": 79,
+    "no_separate": 58,
+    "by_classification": {
+     "OVERVIEW": 1,
+     "DEVICE": 2,
+     "BLOCK": 21,
+     "ITEM": 27,
+     "NO_SEPARATE_EXPLANATION": 58
+    }
+   },
+   "retired_versions": 19,
+   "review_status_counts": {
+    "HUMAN_APPROVED_T1": 55
+   },
+   "jurisprudence_recommendations": {
+    "total": 7,
+    "ready_to_link": 0,
+    "pending_external_ingestion": 7
+   }
+  },
+  "decision_counts": {
+   "APPROVED": 34,
+   "APPROVED_AFTER_ADJUSTMENT": 19
+  },
+  "created_by_review": [
+   "CF88:ART.5:INC.LVIII",
+   "CF88:ART.5:PAR.4"
+  ],
+  "jurisprudence": {
+   "total": 7,
+   "ready_to_link": 0,
+   "pending_external_ingestion": 7
+  },
+  "evidence_preserved": "ENTENDA_ENGINE/derived/production_batch_01/ (superseded_by_final)"
+ }
+}

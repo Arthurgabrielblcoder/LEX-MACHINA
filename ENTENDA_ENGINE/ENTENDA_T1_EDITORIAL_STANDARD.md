@@ -1,6 +1,6 @@
 # ENTENDA-T1 — Padrão editorial
 
-**ENTENDA_T1_STATUS = APPROVED** · aprovado em 2026-09-28 por revisão humana ("APROVADO COM AJUSTES") do piloto CF88.
+**ENTENDA_T1_STATUS = APPROVED** · aprovado em 2026-09-28 por revisão humana ("APROVADO COM AJUSTES") do piloto CF88 · adendo A3 (BLOCK formal, resolução por cobertura, lint por seção) na seção 13.
 
 Este padrão vale para todas as normas do acervo. O piloto foi a Constituição.
 
@@ -171,3 +171,64 @@ Regras:
 | Rascunhos legíveis | `ENTENDA_ENGINE/editorial/*.json` |
 | SD (por norma) | `ENTENDA_LOOKUP.IDX`: `TARGET_ID\|OFFSET\|BYTES\|EXPLANATION_ID\|VALIDITY\|FRESHNESS\|REVIEW\|MATCH`, ordenado em ASCII |
 | SD (por norma) | `ENTENDA_PAYLOAD.DAT`: blocos com `@ID`, linhas `T K V R F H C B N W`, as seções `#…` e `@END` |
+
+---
+
+## 13. Adendo A3 (2026-09-28): BLOCK formal, resolução e lint por seção
+
+O conteúdo editorial do T1 não muda. Mudam o comportamento do BLOCK na consulta e o lint.
+
+### BLOCK formal
+
+Toda explicação com `covered_targets` grava os seguintes campos:
+
+| Campo | Conteúdo |
+|---|---|
+| `anchor_target_id` | o target real que ancora a explicação |
+| `covered_targets[]` | os irmãos cobertos |
+| `coverage_type` | `BLOCK` |
+| `display_targets[]` | âncora e cobertos, em ordem estrutural |
+| `display_topic` (opcional) | tema editorial |
+
+O `display_title` é gerado a partir desses metadados, sem valores fixos no código. Exemplo: "Art. 5º, incisos IV, V, IX e XIV — Liberdade de expressão e informação". Ele vai no payload na linha `D|`, e a linha `X|` leva os `display_targets`.
+
+Validações:
+
+- **Âncora** **[BLOQUEIA]:** a âncora deve ser o próprio target.
+- **`display_targets`** **[BLOQUEIA]:** deve coincidir com a ordem estrutural.
+- **`coverage_type`** **[BLOQUEIA]:** só pode existir quando há `covered_targets`.
+
+### Resolução (botão ENTENDA)
+
+`resolve_explanation(target_id)` e `lookup_idx` devolvem:
+
+| Situação | `resolution_type` | Demais campos |
+|---|---|---|
+| O target tem explicação própria | `DIRECT` | `matched_target_id` = `anchor_target_id` = o target |
+| O target está em `covered_targets` de um bloco | `COVERED_BY_BLOCK` | payload do bloco, `matched_target_id` = o target pedido, `anchor_target_id` = a âncora |
+
+- Um dispositivo coberto nunca aparece como "sem ENTENDA".
+- Não há herança estrutural: só a cobertura editorial explícita resolve.
+- `get_explanation()` continua devolvendo apenas o target exato.
+- O índice passa a ter a coluna `RESOLUTION` (`DIRECT` ou `COVERED_BY_BLOCK`).
+
+### Lint e jurisprudência
+
+- **Palavras jurídicas comuns** como "tribunal", "juiz" e "jurisdição" não são jurisprudência.
+- **O que conta como referência jurisprudencial:**
+  - no corpo, gera aviso `JURISPRUDENCE_WORDING_IN_BODY`: STF, STJ, TST, TSE, Súmula e Súmula Vinculante, Tema nº, Repercussão Geral, jurisprudência e precedente;
+  - no corpo, bloqueia (`ENTENDA_EXTERNAL_CASE_CONTENT`): siglas de tribunais, Súmula, Tema nº e números de processo.
+- **CAMADA EXTERNA** (`external_layer_notes`) pode citar essas referências sem falhar.
+- **"Maioria absoluta"** é termo técnico e não gera `ABSOLUTE_CLAIM`.
+
+### Revisão de lote e recomendações jurisprudenciais
+
+- **Revisão de lote** (`apply_batch_review.py`):
+  - uma decisão por explicação (`APPROVED` ou `APPROVED_AFTER_ADJUSTMENT`), com `review_reason` e `changed_sections[]`;
+  - os textos originais ficam preservados em `HUMAN_REVIEW_DECISIONS.json`;
+  - explicação ajustada ganha nova `editorial_version`, e a anterior fica `RETIRED`;
+  - o lote pendente continua como evidência congelada (`superseded_by_final`).
+- **Recomendações jurisprudenciais:** a lista `JURISPRUDENCE_LINK_RECOMMENDATIONS.json` é só para integração e revisão.
+  - `READY_TO_LINK` só quando a identidade do registro local curado está comprovada (por exemplo, `source_id` `STF:SV:16`).
+  - Caso contrário, `PENDING_EXTERNAL_INGESTION`.
+  - Nenhum registro é fabricado.

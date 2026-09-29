@@ -1,0 +1,83 @@
+{
+  "norma_id": "CF88",
+  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_01",
+  "scope": [
+    "CF88:ART.1",
+    "CF88:ART.2",
+    "CF88:ART.3",
+    "CF88:ART.4",
+    "CF88:ART.5"
+  ],
+  "focus_article": "CF88:ART.5",
+  "drafts": "EDITORIAL_SOURCE.json",
+  "batch_corpus": "CF88_BATCH_01_FINAL.entenda.jsonl",
+  "index_dir": ".",
+  "expected_review_status": "HUMAN_APPROVED_T1",
+  "decisions": "HUMAN_REVIEW_DECISIONS.json",
+  "review_sheet": "FINAL_REVIEW_SUMMARY.md",
+  "supersedes_corpus": "ENTENDA_ENGINE/derived/production_batch_01/CF88_BATCH_01.entenda.jsonl",
+  "soft_target": [
+    20,
+    45
+  ],
+  "hard_cap": 60,
+  "soft_target_justification": "53 explicacoes proprias no lote final (51 revisadas + LVIII e § 4º criados pela revisao humana), abaixo do teto de 60. Justificativa de granularidade identica a do lote pendente: o art. 5º tem 79 incisos de alta autonomia, ja agrupados em blocos.",
+  "reused": {
+    "CF88:ART.1": "Visao geral do art. 1º aprovada no piloto (HUMAN_APPROVED_T1): cobre caput, cinco fundamentos e paragrafo unico.",
+    "CF88:ART.5": "Visao geral do art. 5º aprovada no piloto (HUMAN_APPROVED_T1): estrutura do catalogo, caput e §§ 1º, 2º e 4º."
+  },
+  "overview_covers_all_subdivisions": [
+    "CF88:ART.1",
+    "CF88:ART.2",
+    "CF88:ART.3",
+    "CF88:ART.4"
+  ],
+  "no_separate_reasons": {
+    "CF88:ART.5:PAR.1": "Aplicacao imediata ja explicada na visao geral aprovada do art. 5º (ajuste humano de 2026-09-28); explicacao propria repetiria o pai.",
+    "CF88:ART.5:PAR.2": "Clausula de abertura ja explicada na visao geral aprovada do art. 5º; explicacao propria repetiria o pai."
+  },
+  "jurisprudence_recommendations": [
+    {
+      "target_id": "CF88:ART.5:INC.X",
+      "desired_reference": "STJ Súmula 403 (uso indevido de imagem com fins comerciais)",
+      "local_identity": "STJ:SUM:403",
+      "purpose": "regra especifica sobre indenizacao por uso de imagem, retirada do corpo do exemplo"
+    },
+    {
+      "target_id": "CF88:ART.5:INC.XVI",
+      "desired_reference": "STF Tema 855 (Repercussão Geral) — aviso prévio no direito de reunião",
+      "local_identity": "STF:RG:855",
+      "purpose": "forma e alcance do previo aviso"
+    },
+    {
+      "target_id": "CF88:ART.5:INC.XXXVI",
+      "desired_reference": "STF — entendimento sobre inexistência de direito adquirido a regime jurídico",
+      "local_identity": null,
+      "purpose": "conclusao removida do corpo por ser jurisprudencial; sem identificador unico definido"
+    },
+    {
+      "target_id": "CF88:ART.5:INC.LV",
+      "desired_reference": "STF Súmula Vinculante 5 (defesa técnica em processo administrativo disciplinar)",
+      "local_identity": "STF:SV:5",
+      "purpose": "advogado em processo administrativo"
+    },
+    {
+      "target_id": "CF88:ART.5:INC.LVII",
+      "desired_reference": "STF Tema 1068 (Repercussão Geral) — execução da pena no Tribunal do Júri",
+      "local_identity": "STF:RG:1068",
+      "purpose": "execucao de pena fora do corpo constitucional"
+    },
+    {
+      "target_id": "CF88:ART.5:INC.LXVII",
+      "desired_reference": "STF Súmula Vinculante 25 (prisão civil do depositário infiel)",
+      "local_identity": "STF:SV:25",
+      "purpose": "aplicabilidade atual da excecao do depositario infiel"
+    },
+    {
+      "target_id": "CF88:ART.5:PAR.3",
+      "desired_reference": "STF — hierarquia de tratados de direitos humanos aprovados sem o rito do § 3º",
+      "local_identity": null,
+      "purpose": "posicao dos tratados aprovados pelo rito comum permanece camada externa"
+    }
+  ]
+}

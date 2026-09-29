@@ -1,0 +1,39 @@
+{
+  "norma_id": "CF88",
+  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_01",
+  "scope": [
+    "CF88:ART.1",
+    "CF88:ART.2",
+    "CF88:ART.3",
+    "CF88:ART.4",
+    "CF88:ART.5"
+  ],
+  "focus_article": "CF88:ART.5",
+  "drafts": "BATCH_01_DRAFTS.json",
+  "batch_corpus": "CF88_BATCH_01.entenda.jsonl",
+  "index_dir": "index",
+  "soft_target": [
+    20,
+    45
+  ],
+  "hard_cap": 60,
+  "soft_target_justification": "51 explicacoes novas (acima de 45, abaixo do teto de 60). O art. 5º tem 79 incisos com alta autonomia (direitos, garantias penais e processuais e cinco remedios constitucionais). A selecao ja agrupou 31 incisos irmaos em 17 blocos com covered_targets e explicou 4 incisos-bloco com alineas, deixando 60 dispositivos do art. 5º sem explicacao propria (liberdade de expressao, crenca, associacao, propriedade, penas, prisao, direitos do preso, mandado de seguranca, gratuidades etc.). Cortar mais significaria fundir institutos distintos (por exemplo, habeas corpus com mandado de seguranca ou devido processo com contraditorio) ou excluir dispositivos relevantes apenas para reduzir numeros, o que a politica T1 proibe.",
+  "reused": {
+    "CF88:ART.1": "Visao geral do art. 1º aprovada no piloto (HUMAN_APPROVED_T1): cobre caput, cinco fundamentos e paragrafo unico.",
+    "CF88:ART.5": "Visao geral do art. 5º aprovada no piloto (HUMAN_APPROVED_T1): estrutura do catalogo, caput e §§ 1º, 2º e 4º."
+  },
+  "overview_covers_all_subdivisions": [
+    "CF88:ART.1",
+    "CF88:ART.2",
+    "CF88:ART.3",
+    "CF88:ART.4"
+  ],
+  "no_separate_reasons": {
+    "CF88:ART.5:INC.LVIII": "Regra pontual (identificacao criminal do civilmente identificado, salvo hipoteses legais); compreensivel pela Lei Seca e dependente da lei especifica; sem conceito proprio que justifique explicacao separada neste lote. Candidata a revisao humana.",
+    "CF88:ART.5:PAR.1": "Aplicacao imediata ja explicada na visao geral aprovada do art. 5º (ajuste humano de 2026-09-28); explicacao propria repetiria o pai.",
+    "CF88:ART.5:PAR.2": "Clausula de abertura ja explicada na visao geral aprovada do art. 5º; explicacao propria repetiria o pai.",
+    "CF88:ART.5:PAR.4": "Submissao ao Tribunal Penal Internacional enunciada na visao geral do art. 5º; regra de um periodo sem enumeracao. Candidata a explicacao propria se a revisao humana pedir."
+  },
+  "review_sheet": "REVIEW_BATCH_01.md",
+  "superseded_by_final": "ENTENDA_ENGINE/derived/production_batch_01_final"
+}
