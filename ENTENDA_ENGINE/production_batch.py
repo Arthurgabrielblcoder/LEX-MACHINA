@@ -10,6 +10,7 @@ record identity is proven in a local curated dataset (otherwise PENDING_EXTERNAL
 Usage: python production_batch.py <batch_dir>   (batch_dir contains BATCH_SPEC.json and the drafts named in it)
 """
 import json
+import re
 import statistics
 import sys
 from pathlib import Path
@@ -41,9 +42,15 @@ def classify(spec, ctx, reused, new):
     for tid in scope:
         status = ctx.effective_status(tid)
         row = dict(target_id=tid, kind=ctx.kind(tid), status=status)
+        if spec.get('report_schema', 1) >= 2:
+            row.update(structurally_present=ctx.structurally_present(tid), legal_status=ctx.legal_status(tid),
+                       legally_current=ctx.legally_current(tid))
         art = next(a for a in spec['scope'] if tid == a or tid.startswith(a + ':'))
         if status == 'HISTORICAL':
             row.update(classification='EXCLUDED_HISTORICAL', selection_reason='redacao historica: producao CURRENT-only')
+        elif status == 'REVOKED':
+            row.update(classification='EXCLUDED_REVOKED',
+                       selection_reason='estruturalmente presente no texto consolidado, mas legal_status REVOKED: nao recebe ENTENDA vigente')
         elif status != 'CURRENT':
             row.update(classification='EXCLUDED_NOT_CURRENT', selection_reason=f'status {status}: producao CURRENT-only')
         elif tid in own:
@@ -129,8 +136,67 @@ def review_sheet(spec, ctx, new, rows, manifest, decisions=None):
     return '\n'.join(lines) + '\n'
 
 
+def _catalog(ctx):
+    """Local curated jurisprudence catalog (official thesis text), keyed by tribunal:tipo:numero."""
+    p = ctx.ncfg.get('jurisprudence_catalog')
+    path = Path(p) if p and Path(p).is_absolute() else (ctx.base / p if p else None)
+    if not path or not path.is_file():
+        return {}
+    code = {'repercussao_geral': 'RG', 'sumula_vinculante': 'SV'}
+    out = {}
+    for x in json.loads(path.read_text(encoding='utf-8')):
+        key = f"{x['tribunal']}:{code.get(x['tipo'], x['tipo'])}:{x['numero']}"
+        out.setdefault(key, []).append(x)
+    return out
+
+
+def _verify_subject(rec, keywords):
+    thesis = (rec.get('tese_ou_resumo') or '')
+    low = thesis.lower()
+    missing = [k for k in keywords if k.lower() not in low]
+    return dict(verified=bool(keywords) and bool(thesis) and not missing, keywords=keywords, missing_keywords=missing,
+                catalog_record_id=rec.get('vinculo_id'), thesis_excerpt=thesis[:400] or None,
+                official_source_sha256=(rec.get('fonte_oficial') or {}).get('sha256_conteudo'),
+                official_source_url=(rec.get('fonte_oficial') or {}).get('url'))
+
+
+def jurisprudence_recommendations_v2(spec, ctx, local):
+    """READY_TO_LINK only with local proof of tribunal + tipo + numero + pertinent subject (keywords found in the local official
+    thesis text, and the curated link on the same target). Identity without subject proof -> IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION."""
+    cat = _catalog(ctx)
+    out = []
+    for r in spec.get('jurisprudence_recommendations', []):
+        ident = r.get('local_identity') or ''
+        found = local.get(ident, [])
+        on_target = [f for f in found if f['target_id'] == r['target_id']]
+        recs = [x for x in cat.get(ident, []) if x.get('vinculo_id', '').startswith(ident + ':')]
+        ver = _verify_subject(recs[0], r.get('subject_keywords', [])) if recs else None
+        if found and on_target and ver and ver['verified']:
+            status = 'READY_TO_LINK'
+        elif found or recs:
+            status = 'IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION'
+        else:
+            status = 'PENDING_EXTERNAL_INGESTION'
+        item = dict(target_id=r['target_id'], desired_reference=r['desired_reference'], purpose=r['purpose'],
+                    local_identity_searched=r.get('local_identity'), local_record_found=bool(found or recs),
+                    local_reference_id=(on_target or found)[0]['reference_id'] if found else None,
+                    already_linked_to_target=bool(on_target), subject_verification=ver, status=status)
+        if r.get('human_supplied'):
+            item['human_supplied'] = r['human_supplied']  # informed by the human review; not a local record
+        if status == 'PENDING_EXTERNAL_INGESTION':
+            item['note'] = 'Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial.'
+        elif status != 'READY_TO_LINK':
+            item['note'] = 'Identidade encontrada localmente, mas o assunto/tese nao foi comprovado localmente; nao vincular ainda.'
+        out.append(item)
+    counts = {k: sum(1 for x in out if x['status'] == k) for k in ('READY_TO_LINK', 'IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION', 'PENDING_EXTERNAL_INGESTION')}
+    return dict(schema_version=2, batch_id=spec['batch_id'], policy='ENTENDA nao incorpora jurisprudencia; READY_TO_LINK exige tribunal, tipo, numero e assunto comprovados localmente',
+                local_sources=[ctx.ncfg.get('reference_export'), ctx.ncfg.get('jurisprudence_catalog')], total=len(out),
+                ready_to_link=counts['READY_TO_LINK'], identity_found_pending_subject_verification=counts['IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION'],
+                pending_external_ingestion=counts['PENDING_EXTERNAL_INGESTION'], recommendations=out)
+
+
 def jurisprudence_recommendations(spec, ctx):
-    """Recommendations only. READY_TO_LINK iff a local curated record with the same identity exists (source_id match)."""
+    """Recommendations only (schema 1: identity match). Schema 2 (report_schema >= 2) also requires subject verification."""
     p = ctx.ncfg.get('reference_export')
     doc = json.loads((ctx.base / p).read_text(encoding='utf-8')) if p else {'references': {}}
     local = {}
@@ -138,6 +204,8 @@ def jurisprudence_recommendations(spec, ctx):
         for l in links:
             if l['reference_type'] == 'JURISPRUDENCE':
                 local.setdefault(l['source_id'], []).append(dict(target_id=tid, reference_id=l['reference_id'], label=l['label']))
+    if spec.get('report_schema', 1) >= 2:
+        return jurisprudence_recommendations_v2(spec, ctx, local)
     out = []
     for r in spec.get('jurisprudence_recommendations', []):
         found = local.get(r.get('local_identity') or '', [])
@@ -145,6 +213,9 @@ def jurisprudence_recommendations(spec, ctx):
         out.append(dict(target_id=r['target_id'], desired_reference=r['desired_reference'], purpose=r['purpose'],
                         local_identity_searched=r.get('local_identity'), local_record_found=bool(found),
                         local_reference_id=(on_target or found)[0]['reference_id'] if found else None,
+                        **({'local_label': (on_target or found)[0]['label'],
+                            'identity_basis': 'tribunal + tipo + numero (source_id do acervo local curado); tema material nao reverificado localmente'}
+                           if found else {}),
                         already_linked_to_target=bool(on_target),
                         status='READY_TO_LINK' if found else 'PENDING_EXTERNAL_INGESTION',
                         note=None if found else 'Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial.'))
@@ -209,7 +280,8 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
     summary = dict(
         targets_evaluated=len(rows), targets_current=sum(1 for r in rows if r['status'] == 'CURRENT'),
         selected=sum(counts.get(k, 0) for k in SELECTED), by_classification=dict(sorted(counts.items())),
-        historical_excluded=counts.get('EXCLUDED_HISTORICAL', 0), reused_from_pilot=len(reused), new_explanations=len(new),
+        historical_excluded=counts.get('EXCLUDED_HISTORICAL', 0),
+        **({'revoked_excluded': counts['EXCLUDED_REVOKED']} if counts.get('EXCLUDED_REVOKED') else {}), reused_from_pilot=len(reused), new_explanations=len(new),
         batch_total_explanations=len(combined), soft_target=spec['soft_target'], hard_cap=spec['hard_cap'],
         soft_target_status='WITHIN' if spec['soft_target'][0] <= len(new) <= spec['soft_target'][1] else 'OUTSIDE_JUSTIFIED',
         soft_target_justification=spec.get('soft_target_justification'),
@@ -231,6 +303,19 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
     juris = jurisprudence_recommendations(spec, ctx)
     summary['jurisprudence_recommendations'] = dict(total=juris['total'], ready_to_link=juris['ready_to_link'],
                                                     pending_external_ingestion=juris['pending_external_ingestion'])
+    if spec.get('report_schema', 1) >= 2:
+        summary['jurisprudence_recommendations']['identity_found_pending_subject_verification'] = juris['identity_found_pending_subject_verification']
+        summary.update(targets_structurally_present=sum(1 for r in rows if r['structurally_present']),
+                       targets_legally_current=sum(1 for r in rows if r['legally_current']),
+                       targets_revoked=sum(1 for r in rows if r['legal_status'] == 'REVOKED'))
+        temporal = E.temporal_report(combined, spec['as_of_date'])
+        summary['temporal_notes'] = dict(as_of=spec['as_of_date'], total=len(temporal),
+                                         not_yet_effective=sum(1 for t in temporal if t['state'] == 'NOT_YET_EFFECTIVE'),
+                                         review_due=sum(1 for t in temporal if t['review_due']))
+        if temporal:
+            (bd / 'TEMPORAL_NOTES.json').write_bytes((json.dumps(dict(schema_version=1, batch_id=spec['batch_id'], as_of=spec['as_of_date'],
+                                                                      policy='data explicita (nunca o relogio do sistema); updater revisa quando review_after/future_effective_date chegar',
+                                                                      notes=temporal), ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     (bd / 'SELECTION_REPORT.json').write_bytes((json.dumps(report, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     (bd / 'JURISPRUDENCE_LINK_RECOMMENDATIONS.json').write_bytes((json.dumps(juris, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     (bd / spec.get('review_sheet', 'REVIEW_BATCH.md')).write_bytes(review_sheet(spec, ctx, new, rows, manifest, decisions).encode('utf-8'))

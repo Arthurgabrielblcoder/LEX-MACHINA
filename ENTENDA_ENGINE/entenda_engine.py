@@ -41,6 +41,13 @@ VALIDITY = {'CURRENT': 'CURRENT', 'HISTORICAL_ONLY': 'HISTORICAL', 'UNKNOWN_VALI
 STATUSES = ('ACTIVE', 'STALE', 'RETIRED')
 REVIEW = ('DRAFT', 'PENDING_HUMAN_REVIEW', 'HUMAN_APPROVED_T1', 'CHANGES_REQUESTED', 'APPROVED', 'REJECTED')
 EXTERNAL_VERIFICATION = 'CURRENT_OFFICIAL_EXTERNAL_VERIFICATION'
+# structural presence and legal status are separate axes: a label kept in the consolidated text only with a revocation
+# marker is structurally present but not legally current
+REVOKED_TEXT_RE = re.compile(r'^\(?\s*Revogad[oa]', re.I)
+LEGAL_STATUS = {'CURRENT': 'CURRENT', 'HISTORICAL_ONLY': 'HISTORICAL_ONLY', 'UNKNOWN_VALIDITY': 'UNKNOWN'}
+DATE_RE = re.compile(r'^\d{4}-\d{2}-\d{2}$')
+TEMPORAL_REQUIRED = ('note_id', 'text', 'source_type', 'source_id', 'review_after')
+TEMPORAL_DATES = ('valid_from', 'valid_until', 'future_effective_date', 'review_after', 'effective_change_date', 'verified_on')
 # lint (warnings only; never rewrites content)
 ABSOLUTE_RE = re.compile(r'\b(?:sempre|nunca|jamais|(?<!maioria )absolut[oa]s?|absolutamente|em qualquer (?:caso|hip[óo]tese|circunst[âa]ncia)|sem exce[çc][ãa]o|'
                          r'todo e qualquer|incondicional(?:mente)?|automaticamente)\b', re.I)
@@ -144,12 +151,33 @@ class NormContext:
         chain = [a for a in T.ancestors(target_id) if self.targets.get(a, {}).get('kind') not in (None, 'NORMA', 'NAMESPACE')]
         return list(reversed(chain))
 
+    def structurally_present(self, target_id):
+        return target_id in self.targets
+
+    def legal_status(self, target_id):
+        """CURRENT, REVOKED, HISTORICAL_ONLY or UNKNOWN (independent of structural presence)."""
+        if self.status.get(target_id, {}).get('revoked_marker') or REVOKED_TEXT_RE.match(self.text.get(target_id, '')):
+            return 'REVOKED'
+        s = self.status.get(target_id, {}).get('status') or self.ncfg.get('default_target_status')
+        if s in LEGAL_STATUS:
+            return LEGAL_STATUS[s]
+        below = {self.legal_status(c) for c in self.children.get(target_id, [])}
+        for v in ('CURRENT', 'UNKNOWN', 'HISTORICAL_ONLY', 'REVOKED'):
+            if v in below:
+                return v
+        return 'UNKNOWN'
+
+    def legally_current(self, target_id):
+        return self.legal_status(target_id) == 'CURRENT'
+
     def effective_status(self, target_id):
+        if self.legal_status(target_id) == 'REVOKED':
+            return 'REVOKED'
         s = self.status.get(target_id, {}).get('status') or self.ncfg.get('default_target_status')
         if s in VALIDITY:
             return VALIDITY[s]
         below = {self.effective_status(c) for c in self.children.get(target_id, [])}
-        for v in ('CURRENT', 'UNKNOWN', 'HISTORICAL'):
+        for v in ('CURRENT', 'UNKNOWN', 'HISTORICAL', 'REVOKED'):
             if v in below:
                 return v
         return 'UNKNOWN'
@@ -225,6 +253,10 @@ def validate_explanation(rec, ctx):
     status = ctx.effective_status(tid)
     if v.get('target_status') != status:
         raise EntendaError('ENTENDA_STATUS_MISMATCH', f'{tid}: {v.get("target_status")} != {status}')
+    if status == 'REVOKED':
+        raise EntendaError('ENTENDA_REVOKED_NOT_ALLOWED', tid)
+    if rec.get('temporal') is not None:
+        validate_temporal(rec['temporal'], tid)
     if status == 'HISTORICAL' and not ctx.ncfg.get('allow_historical', False):
         raise EntendaError('ENTENDA_HISTORICAL_NOT_ALLOWED', tid)
     if status == 'UNKNOWN' and not (v.get('validity_note') or '').strip():
@@ -326,6 +358,47 @@ def validate_corpus(records, ctx):
 
 # ---------------------------------------------------------------- stale
 
+def validate_temporal(t, tid=''):
+    """Generic temporal metadata: legislation published but not yet in force, transitional rules with a future date."""
+    if not isinstance(t, dict) or not isinstance(t.get('time_sensitive'), bool) or not isinstance(t.get('notes'), list) or not t['notes']:
+        raise EntendaError('ENTENDA_TEMPORAL_INVALID', tid)
+    ids = set()
+    for n in t['notes']:
+        if any(not n.get(k) for k in TEMPORAL_REQUIRED) or n['note_id'] in ids:
+            raise EntendaError('ENTENDA_TEMPORAL_INVALID', f'{tid}: {n.get("note_id")}')
+        ids.add(n['note_id'])
+        for k in TEMPORAL_DATES:
+            if n.get(k) is not None and not DATE_RE.match(n[k]):
+                raise EntendaError('ENTENDA_TEMPORAL_INVALID', f'{tid}: {k}={n[k]}')
+        if n.get('valid_from') and n.get('valid_until') and n['valid_from'] > n['valid_until']:
+            raise EntendaError('ENTENDA_TEMPORAL_INVALID', f'{tid}: valid_from > valid_until')
+        if '|' in n['text'] or n['text'].startswith(('#', '@')):
+            raise EntendaError('ENTENDA_RESERVED_CHAR', tid)
+    return True
+
+
+def temporal_state(note, as_of):
+    """State of a temporal note on a given date (ISO). Deterministic: the date is always explicit, never the system clock."""
+    if note.get('future_effective_date') and as_of < note['future_effective_date']:
+        state = 'NOT_YET_EFFECTIVE'
+    elif note.get('valid_until') and as_of > note['valid_until']:
+        state = 'EXPIRED'
+    else:
+        state = 'IN_EFFECT'
+    return dict(state=state, review_due=as_of >= note['review_after'])
+
+
+def temporal_report(corpus, as_of):
+    out = []
+    for r in corpus:
+        if r['status'] != 'ACTIVE' or not r.get('temporal'):
+            continue
+        for n in r['temporal']['notes']:
+            out.append(dict(target_id=r['target_id'], explanation_id=r['explanation_id'], note_id=n['note_id'], as_of=as_of,
+                            **temporal_state(n, as_of), note=n))
+    return out
+
+
 def check_stale(target_id, current_text, corpus, variant='BASE', current_context=None):
     """Compare the current official text of a target (subtree snapshot) with the hash the explanation was written on."""
     rec = get_explanation(target_id, corpus, variant)
@@ -384,7 +457,8 @@ def stamp(drafts, ctx, existing=()):
         eid = explanation_id(tid, variant, ver)
         content = {k: e['content'].get(k) for k, _ in SECTION_TITLES}
         prev = old.get(eid)
-        if prev and (prev['content'] != content or prev['external_layer_notes'] != e.get('external_layer_notes', [])):
+        if prev and (prev['content'] != content or prev['external_layer_notes'] != e.get('external_layer_notes', [])
+                     or prev.get('temporal') != e.get('temporal')):
             raise EntendaError('ENTENDA_CONTENT_CHANGED_WITHOUT_VERSION_BUMP', eid)
         covered = e.get('covered_targets', [])
         if prev:
@@ -410,6 +484,8 @@ def stamp(drafts, ctx, existing=()):
                    source=source, content=content, external_layer_notes=e.get('external_layer_notes', []),
                    status='ACTIVE', review_status=e.get('review_status', d['review_status']), authoring=dict(d['authoring']),
                    usage_policy=USAGE_POLICY)
+        if e.get('temporal'):
+            rec['temporal'] = e['temporal']
         if e.get('human_review') or d.get('human_review'):
             rec['human_review'] = dict(d.get('human_review') or {}, **(e.get('human_review') or {}))
         out.append(rec)
@@ -605,6 +681,8 @@ def render_payload(rec, freshness, ref_count):
         lines.append(f'N|{ref_count}')
     if rec['validity'].get('validity_note'):
         lines.append(f"W|{rec['validity']['validity_note']}")
+    if rec.get('temporal', {}).get('time_sensitive'):
+        lines.append(f"Z|TIME_SENSITIVE|{min(n['review_after'] for n in rec['temporal']['notes'])}")
     for key, title in SECTION_TITLES:
         val = c[key]
         if not val:
@@ -614,6 +692,10 @@ def render_payload(rec, freshness, ref_count):
     if rec['external_layer_notes']:
         lines.append('#CAMADAS EXTERNAS')
         lines += rec['external_layer_notes']
+    if rec.get('temporal'):
+        t = rec['temporal']
+        lines.append('#NOTAS TEMPORAIS')
+        lines += [f"[{n['note_id']}; revisar após {n['review_after']}] {n['text']}" for n in t['notes']]
     lines.append('@END')
     return ('\n'.join(lines) + '\n').encode('utf-8')
 

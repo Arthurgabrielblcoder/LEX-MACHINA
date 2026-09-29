@@ -1,0 +1,176 @@
+{
+  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_02",
+  "review_scope": "CF88_ARTS_6_17",
+  "original_drafts": "BATCH_02_DRAFTS.json",
+  "reviewed_drafts_out": "../production_batch_02_final/EDITORIAL_SOURCE.json",
+  "decisions_out": ["HUMAN_REVIEW_DECISIONS.json", "../production_batch_02_final/HUMAN_REVIEW_DECISIONS.json"],
+  "human_review": {
+    "decision": "BATCH 02 REVISADO: APROVADO (ajustes pontuais, notas temporais e duas explicacoes criadas pela revisao)",
+    "reviewed_on": "2026-09-28",
+    "reviewer": "revisao humana (usuario do projeto)",
+    "standard": "ENTENDA-T1",
+    "review_scope": "CF88_ARTS_6_17",
+    "decisions": "ENTENDA_ENGINE/derived/production_batch_02/HUMAN_REVIEW_DECISIONS.json"
+  },
+  "reviews": [
+    {"target_id": "CF88:ART.6", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Aprovado; aplicada a formulacao opcional mais cautelosa sobre a atuacao positiva do Estado.",
+     "edits": [{"section": "o_que_significa", "before": "Os direitos sociais exigem, em regra, atuação do Estado por meio de políticas públicas, serviços e prestações.", "after": "Muitos direitos sociais exigem atuação positiva do Estado por meio de políticas, serviços ou prestações.", "kind": "HUMAN_OPTIONAL"}]},
+    {"target_id": "CF88:ART.7", "decision": "APPROVED", "review_reason": "Aprovado; estrutura por familias preservada."},
+    {"target_id": "CF88:ART.7:INC.I", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Separar as fontes: lei complementar nao editada, regime transitorio do art. 10 do ADCT e indenizacao de 40% do FGTS pela legislacao do FGTS; o ADCT nao fixou diretamente a multa de 40%.",
+     "edits": [
+       {"section": "o_que_significa", "before": "A lei complementar do inciso I ainda não foi editada nos moldes previstos; por isso, o art. 10 do ADCT fixou uma regra provisória de indenização, conhecida na prática como multa sobre os depósitos do FGTS, além de estabilidades temporárias.", "after": "O inciso I remete a uma lei complementar que ainda não foi editada. Enquanto isso, o art. 10 do ADCT estabeleceu um regime transitório de proteção, e a legislação do FGTS concretiza atualmente parte dessa proteção por meio de indenização de quarenta por cento sobre os depósitos feitos durante o contrato, nas hipóteses legais."},
+       {"section": "exemplo_pratico", "before": "pode sacar o FGTS e receber a indenização provisória prevista no ADCT e,", "after": "pode sacar o FGTS e receber a indenização de quarenta por cento sobre os depósitos, nas hipóteses previstas na legislação do FGTS, e,"},
+       {"section": "atencao", "before": "A regra provisória está no art. 10 do ADCT, e os valores e prazos concretos estão na legislação.", "after": "O regime transitório está no art. 10 do ADCT; valores, prazos e hipóteses concretas estão na legislação."}]},
+    {"target_id": "CF88:ART.7:INC.IV", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Retirar a explicacao causal sobre pressao no reajuste; indicar que o alcance da vedacao e objeto de interpretacao.",
+     "edits": [{"section": "o_que_significa", "before": "A proibição de vincular o salário mínimo a outros fins evita que ele seja usado como indexador de preços e obrigações, o que pressionaria seu reajuste.", "after": "A vedação impede que o salário mínimo seja automaticamente utilizado como indexador de outras obrigações; o alcance concreto da proibição é objeto de interpretação."}]},
+    {"target_id": "CF88:ART.7:INC.VIII", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Microajuste no glossario: nao sugerir regulamentacao geral completa de atividade penosa.",
+     "edits": [{"section": "palavras_dificeis", "termo": "Penosa", "before": "atividade especialmente desgastante, conforme definição legal.", "after": "atividade especialmente desgastante, cuja disciplina depende da legislação aplicável."}]},
+    {"target_id": "CF88:ART.7:INC.XI", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Retirar inferencia economica ('estimula sua adocao'); explicar apenas a desvinculacao nos termos da legislacao.",
+     "edits": [{"section": "o_que_significa", "before": "A expressão \"desvinculada da remuneração\" indica que a participação nos lucros ou resultados não integra o salário para outros efeitos, o que estimula sua adoção pelas empresas.", "after": "Pelo texto, a participação nos lucros ou resultados é desvinculada da remuneração, nos termos da legislação aplicável."}]},
+    {"target_id": "CF88:ART.7:INC.XIII", "decision": "APPROVED", "review_reason": "Aprovado; aviso 'absoluta' e falso positivo e nao motiva reescrita."},
+    {"target_id": "CF88:ART.7:INC.XVIII", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Atualizacao legislativa: corpo temporalmente estavel (licenca-paternidade nos termos da lei, sem duracao no inciso XIX); Lei 15.371/2026 (vigencia em 2027-01-01) e regra do ADCT registradas em nota temporal.",
+     "edits": [
+       {"section": "o_que_significa", "before": "A licença-paternidade depende de lei; enquanto ela não disciplinar o tema, o art. 10, § 1º, do ADCT fixou prazo provisório.", "after": "A Constituição garante a licença-paternidade nos termos da lei, sem fixar no inciso XIX a sua duração; o art. 10, § 1º, do ADCT contém regra transitória sobre o prazo."},
+       {"section": "atencao", "before": "A duração da licença-paternidade não está fixada no inciso XIX: depende da lei e, provisoriamente, do ADCT.", "after": "A duração da licença-paternidade não está fixada no inciso XIX: depende da lei e da regra transitória do ADCT (ver nota temporal)."},
+       {"section": "external_layer_notes", "before": "A duração atual da licença-paternidade e eventuais ampliações por programas legais estão na legislação; questões sobre licença em adoção e casos específicos são tratadas na camada JURISPRUDÊNCIA.", "after": "Questões sobre licença em adoção e casos específicos são tratadas na legislação e na camada JURISPRUDÊNCIA."},
+       {"section": "temporal", "before": null, "after": {
+         "time_sensitive": true, "as_of": "2026-09-28", "effective_change_date": "2027-01-01", "future_legislation": "Lei 15.371/2026",
+         "notes": [{"note_id": "LICENCA_PATERNIDADE_LEI_15371_2026", "source_type": "LEI", "source_id": "Lei 15.371/2026",
+                    "text": "Situação em 2026-09-28: a Lei 15.371/2026, sancionada em 31/03/2026, regulamenta a licença-paternidade e o salário-paternidade e entra em vigor em 01/01/2027, com transição prevista na própria lei (10 dias em 2027, 15 dias em 2028 e 20 dias em 2029, observada a condição fiscal nela prevista). Enquanto a nova lei não estiver em vigor, permanece relevante a regra transitória do art. 10, § 1º, do ADCT para o regime aplicável.",
+                    "valid_from": "2026-03-31", "future_effective_date": "2027-01-01", "review_after": "2027-01-01", "verified_on": "2026-09-28",
+                    "provenance": "informado pela revisao humana de 2026-09-28"}]}}]},
+    {"target_id": "CF88:ART.7:INC.XXII", "decision": "APPROVED", "review_reason": "Aprovado; separacao dolo/culpa (texto) x responsabilidade objetiva (jurisprudencia) preservada."},
+    {"target_id": "CF88:ART.7:INC.XXVI", "decision": "APPROVED", "review_reason": "Aprovado; limites do negociado sobre o legislado ficam na camada externa."},
+    {"target_id": "CF88:ART.7:INC.XXIX", "decision": "APPROVED", "review_reason": "Aprovado; prescricao quinquenal com limite de dois anos preservada; FGTS fica na jurisprudencia."},
+    {"target_id": "CF88:ART.7:INC.XXX", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Exemplo objetivo sem exceção embutida; questoes excepcionais para a camada externa.",
+     "edits": [
+       {"section": "exemplo_pratico", "before": "Uma empresa anuncia vaga exigindo que os candidatos sejam solteiros e tenham menos de trinta anos, sem que a função justifique esses critérios.", "after": "Uma empresa anuncia vaga utilizando diretamente idade e estado civil como critérios de admissão, exigindo candidatos solteiros e com menos de trinta anos."},
+       {"section": "atencao", "before": "As proibições atingem distinções feitas por esses motivos. Exigências ligadas à própria natureza da função e previstas em lei são examinadas caso a caso.", "after": "As proibições atingem distinções feitas por esses motivos."},
+       {"section": "external_layer_notes", "after": "Situações excepcionais em que a natureza da função é invocada para justificar critérios diferenciados são tratadas na legislação e na camada JURISPRUDÊNCIA."}]},
+    {"target_id": "CF88:ART.7:INC.XXXIII", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.7:PAR.UNICO", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Aprovado; registrada na camada externa a LC 150/2015 como legislacao central dos domesticos (opcional).",
+     "edits": [{"section": "external_layer_notes", "before": "A regulamentação dos direitos condicionados está na lei complementar dos trabalhadores domésticos.", "after": "A regulamentação dos direitos condicionados está na Lei Complementar nº 150/2015, legislação central dos trabalhadores domésticos.", "kind": "HUMAN_OPTIONAL"}]},
+    {"target_id": "CF88:ART.8", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Aprovado; retirada da visao geral a dependencia de explicar o inciso I, que agora tem explicacao propria.",
+     "edits": [
+       {"section": "o_que_significa", "before": "O Estado não autoriza a criação nem interfere na vida do sindicato, e ninguém é obrigado a se filiar ou a permanecer filiado.", "after": "A criação do sindicato não depende de autorização estatal (ponto explicado no inciso I), e ninguém é obrigado a se filiar ou a permanecer filiado."},
+       {"section": "exemplo_pratico", "before": "Trabalhadores de uma categoria decidem fundar um sindicato em seu Município. Não precisam de autorização do governo, mas devem fazer o registro no órgão competente e respeitar a existência de outro sindicato da mesma categoria na mesma base.", "after": "Um trabalhador decide não se filiar ao sindicato de sua categoria. Ele não pode ser obrigado a filiar-se nem a manter-se filiado (inciso V), e o sindicato continua a representar a categoria nas negociações coletivas."}]},
+    {"target_id": "CF88:ART.8:INC.II", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.8:INC.III", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.8:INC.IV", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Exemplo neutro: a Constituicao nao resolve sozinha quem pode ser obrigado; SV 40 e contribuicao assistencial (Tema 935) separadas na camada externa.",
+     "edits": [
+       {"section": "exemplo_pratico", "before": "A assembleia de um sindicato aprova uma contribuição para custear a estrutura confederativa. A empresa passa a descontar o valor na folha dos trabalhadores abrangidos pela deliberação.", "after": "A assembleia de um sindicato aprova uma contribuição para custear o sistema confederativo. O inciso prevê o desconto em folha para a categoria profissional, mas a Constituição, sozinha, não resolve quem pode ser obrigado a pagá-la."},
+       {"section": "external_layer_notes", "before": "A exigibilidade da contribuição confederativa apenas dos filiados e o regime atual da contribuição sindical legal são tratados na camada JURISPRUDÊNCIA e na legislação (recomendação de vínculo registrada separadamente).", "after": "STF, Súmula Vinculante 40: a contribuição confederativa só é exigível dos filiados ao sindicato respectivo (recomendação de vínculo registrada separadamente)."},
+       {"section": "external_layer_notes", "after": "A contribuição assistencial é figura distinta da contribuição confederativa, com tratamento jurisprudencial próprio (STF, Tema 935); as duas teses não se confundem. O regime da contribuição sindical legal está na legislação."}]},
+    {"target_id": "CF88:ART.8:INC.VIII", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.9", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Nao apresentar a definicao tecnica de greve como literal do art. 9º; exemplo sem 'atendimento minimo'.",
+     "edits": [
+       {"section": "o_que_significa", "before": "A greve é a suspensão coletiva do trabalho como forma de pressão dos trabalhadores.", "after": "A Constituição garante aos trabalhadores o uso da greve como instrumento coletivo de reivindicação; a legislação disciplina as condições concretas de seu exercício."},
+       {"section": "exemplo_pratico", "before": "devem manter o atendimento mínimo exigido pela lei para as necessidades inadiáveis da população.", "after": "devem ser garantidos os serviços indispensáveis ao atendimento das necessidades inadiáveis da comunidade, nos termos da lei."},
+       {"section": "palavras_dificeis", "termo": "Greve", "before": "suspensão coletiva e temporária da prestação de serviços pelos trabalhadores.", "after": "instrumento coletivo de reivindicação dos trabalhadores; sua definição técnica está na lei de greve.", "kind": "COHERENCE_MINIMAL"},
+       {"section": "external_layer_notes", "after": "A Lei nº 7.783/1989 define tecnicamente a greve e disciplina seu exercício."}]},
+    {"target_id": "CF88:ART.10", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Retirar do exemplo a composicao 'ao lado dos representantes do governo', que o art. 10 nao define.",
+     "edits": [{"section": "exemplo_pratico", "before": "Um conselho público responsável por deliberar sobre a aplicação de recursos de um fundo destinado aos trabalhadores deve contar com representantes dos trabalhadores e dos empregadores, ao lado dos representantes do governo.", "after": "Um colegiado público que discute interesses profissionais ou previdenciários deve assegurar a participação de representantes de trabalhadores e empregadores, como um conselho que delibera sobre a aplicação de recursos de um fundo destinado aos trabalhadores."}]},
+    {"target_id": "CF88:ART.11", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.12", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.12:INC.I", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Harmonizar o glossario: usar 'criterio sanguineo' no texto.",
+     "edits": [{"section": "o_que_significa", "before": "O segundo é o do sangue, combinado com outros requisitos:", "after": "O segundo é o critério sanguíneo, combinado com outros requisitos:"}]},
+    {"target_id": "CF88:ART.12:INC.II", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Evitar impressao de concessao automatica pelo simples requerimento.",
+     "edits": [{"section": "atencao", "before": "Na alínea b, cumpridos os requisitos, basta o requerimento; o procedimento está na legislação.", "after": "Na alínea b, a Constituição fixa os requisitos materiais; preenchidos eles, o interessado pode requerer a naturalização, cujo processamento é disciplinado pela legislação."}]},
+    {"target_id": "CF88:ART.12:PAR.1", "decision": "APPROVED", "review_reason": "Aprovado; preservado que nao e naturalizacao."},
+    {"target_id": "CF88:ART.12:PAR.3", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Nao justificar toda a lista apenas por tres razoes; indicar que a lista foi reservada pela propria Constituicao.",
+     "edits": [{"section": "o_que_significa", "before": "O § 3º traz a mais conhecida delas: cargos ligados à linha sucessória da Presidência, à defesa nacional e às relações exteriores exigem brasileiro nato.", "after": "O § 3º enumera cargos que a própria Constituição reservou aos brasileiros natos, envolvendo, entre outros, posições da linha sucessória da Presidência, a diplomacia, a defesa nacional e o cargo de Ministro do Supremo Tribunal Federal."}]},
+    {"target_id": "CF88:ART.12:PAR.4", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Corrigir: so quem tinha nacionalidade originaria pode readquiri-la; naturalizado nao se torna nato. Preservadas as duas vias de perda e a regra da EC 131/2023.",
+     "edits": [
+       {"section": "o_que_diz", "before": "O § 5º permite a quem renunciou readquirir a nacionalidade brasileira originária, nos termos da lei.", "after": "O § 5º permite que quem renunciou à nacionalidade brasileira originária volte a tê-la, nos termos da lei."},
+       {"section": "o_que_significa", "before": "Quem renunciou pode voltar a ser brasileiro nato, na forma da lei.", "after": "Quem possuía nacionalidade brasileira originária e renunciou a ela pode readquiri-la, nos termos da lei."}]},
+    {"target_id": "CF88:ART.13", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.14", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.14:CAPUT", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Explicitar que os percentuais da iniciativa popular vem do art. 61, § 2º, e nao do art. 14.",
+     "edits": [{"section": "exemplo_pratico", "before": "Cidadãos coletam assinaturas de pelo menos um por cento do eleitorado nacional, distribuídas por no mínimo cinco Estados e com não menos de três décimos por cento dos eleitores de cada um deles, e apresentam à Câmara dos Deputados um projeto de lei de iniciativa popular.", "after": "Para projetos de lei federais, o art. 61, § 2º, estabelece os requisitos concretos de apoio do eleitorado: assinaturas de pelo menos um por cento do eleitorado nacional, distribuídas por no mínimo cinco Estados, com não menos de três décimos por cento dos eleitores de cada um deles. Cumpridos esses requisitos, o projeto de iniciativa popular pode ser apresentado à Câmara dos Deputados."}]},
+    {"target_id": "CF88:ART.14:PAR.1", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.14:PAR.3", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Corpo aprovado; momento de afericao da idade registrado como legislacao correlata time-sensitive (Lei 9.504/1997, art. 11, § 2º).",
+     "edits": [{"section": "temporal", "before": null, "after": {
+         "time_sensitive": true, "as_of": "2026-09-28",
+         "notes": [{"note_id": "IDADE_MINIMA_AFERICAO_LEI_9504_ART11_PAR2", "source_type": "LEI", "source_id": "Lei 9.504/1997, art. 11, § 2º",
+                    "text": "Legislação correlata verificada em 2026-09-28: pela Lei 9.504/1997, art. 11, § 2º, na redação atualizada, a idade mínima é aferida na data da posse para cargos do Executivo; na data-limite para o pedido de registro para as Câmaras Municipais; e na data da posse presumida, nos termos legais, para as demais Casas Legislativas.",
+                    "verified_on": "2026-09-28", "review_after": "2027-09-28", "provenance": "informado pela revisao humana de 2026-09-28"}]}}]},
+    {"target_id": "CF88:ART.14:PAR.5", "decision": "APPROVED", "review_reason": "Corpo aprovado; STF Tema 1229 registrado apenas como recomendacao jurisprudencial."},
+    {"target_id": "CF88:ART.14:PAR.6", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Aprovado; suavizada (opcional) a explicacao teleologica sobre uso da maquina publica.",
+     "edits": [{"section": "o_que_significa", "before": "precisa deixar o cargo com antecedência, para que não use a máquina pública a seu favor na campanha.", "after": "precisa deixar o cargo com a antecedência fixada no texto.", "kind": "HUMAN_OPTIONAL"}]},
+    {"target_id": "CF88:ART.14:PAR.7", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Evitar regra absoluta sobre outro Municipio; limitacao em regra a circunscricao do titular.",
+     "edits": [{"section": "atencao", "before": "A inelegibilidade vale apenas no território de jurisdição do titular: o irmão de um prefeito pode concorrer em outro Município.", "after": "Em regra, a inelegibilidade fica limitada à circunscrição do titular; situações territoriais específicas podem ter tratamento próprio fora do texto."}]},
+    {"target_id": "CF88:ART.14:PAR.8", "decision": "APPROVED", "review_reason": "Aprovado; filiacao do militar e tempo de servico ficam na camada externa, sem solucao inventada para exatamente dez anos."},
+    {"target_id": "CF88:ART.14:PAR.9", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Corpo explica a autorizacao a lei complementar; exemplo generico; LC 64/1990 e LC 135/2010 na camada externa.",
+     "edits": [
+       {"section": "o_que_significa", "before": " A principal lei sobre o tema é a Lei Complementar nº 64/1990, alterada pela Lei Complementar nº 135/2010, conhecida como Lei da Ficha Limpa.", "after": ""},
+       {"section": "exemplo_pratico", "before": "Uma pessoa condenada por decisão de órgão colegiado por crime previsto na lei complementar de inelegibilidades fica impedida de se candidatar pelo prazo nela fixado, ainda que caiba recurso da condenação.", "after": "Uma lei complementar pode definir que determinadas situações jurídicas anteriores do candidato gerem inelegibilidade, dentro das finalidades previstas pelo § 9º, e fixar o prazo em que essa inelegibilidade deixa de valer."},
+       {"section": "external_layer_notes", "after": "Legislação correlata: Lei Complementar nº 64/1990, alterada pela Lei Complementar nº 135/2010 (Lei da Ficha Limpa)."}]},
+    {"target_id": "CF88:ART.14:PAR.10", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Retirar a finalidade atribuida ao segredo de justica.",
+     "edits": [{"section": "o_que_significa", "before": "O segredo de justiça protege o eleito contra exposição indevida, e a responsabilização do autor desestimula ações sem fundamento.", "after": "A Constituição determina que a ação tramite em segredo de justiça, e o autor responde, na forma da lei, se a ação for temerária ou de manifesta má-fé."}]},
+    {"target_id": "CF88:ART.14:PAR.12", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.15", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Remover a classificacao doutrinaria perda=definitiva / suspensao=temporaria do corpo; exemplo sem resolver a classificacao; TSE Sumula 9 na camada externa.",
+     "edits": [
+       {"section": "o_que_significa", "before": "A Constituição não indica, caso a caso, quais hipóteses são de perda e quais são de suspensão; essa classificação é feita pela doutrina, que costuma tratar como perda a situação definitiva e como suspensão a temporária.", "after": "A Constituição proíbe a cassação dos direitos políticos e admite perda ou suspensão apenas nas hipóteses que enumera. Cada hipótese tem pressupostos próprios: a naturalização precisa ter sido cancelada por sentença definitiva; a incapacidade civil absoluta é definida pela lei civil; a condenação criminal precisa ter transitado em julgado; a recusa se refere à obrigação geral e à prestação alternativa do art. 5º, VIII; e a improbidade segue o art. 37, § 4º."},
+       {"section": "exemplo_pratico", "before": "Uma pessoa condenada criminalmente, com trânsito em julgado, fica com os direitos políticos suspensos enquanto durarem os efeitos da condenação. Nesse período, não pode votar nem ser votada; cumprida ou extinta a pena, os direitos são restabelecidos.", "after": "Uma condenação criminal transitada em julgado produz restrição aos direitos políticos enquanto durarem seus efeitos, nos termos do inciso III. Durante esse período, a pessoa não pode votar nem ser votada."},
+       {"section": "atencao", "before": "A suspensão por condenação criminal exige trânsito em julgado e dura enquanto durarem seus efeitos.", "after": "A restrição por condenação criminal exige trânsito em julgado e dura enquanto durarem seus efeitos."},
+       {"section": "external_layer_notes", "after": "TSE, Súmula 9: a suspensão de direitos políticos decorrente de condenação criminal transitada em julgado cessa com o cumprimento ou a extinção da pena, independendo de reabilitação ou de prova de reparação dos danos (recomendação de vínculo registrada separadamente)."},
+       {"section": "external_layer_notes", "after": "A classificação doutrinária de cada hipótese como perda ou suspensão pertence à camada REFERÊNCIAS, e não ao texto constitucional."}]},
+    {"target_id": "CF88:ART.16", "decision": "APPROVED", "review_reason": "Aprovado; anualidade em alteracoes constitucionais fica na recomendacao jurisprudencial."},
+    {"target_id": "CF88:ART.17", "decision": "APPROVED", "review_reason": "Aprovado; o carater obrigatorio do partido ja aparece ligado a exigencia de filiacao como condicao de elegibilidade."},
+    {"target_id": "CF88:ART.17:CAPUT", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Trocar 'O Estado nao controla a criacao de partidos' por liberdade condicionada aos requisitos constitucionais e legais.",
+     "edits": [{"section": "o_que_significa", "before": "O Estado não controla a criação de partidos, mas os partidos precisam respeitar valores essenciais da democracia.", "after": "A criação de partidos é livre, mas deve observar os requisitos constitucionais e legais, e os partidos precisam respeitar valores essenciais da democracia."}]},
+    {"target_id": "CF88:ART.17:PAR.1", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Retirar a formulacao absoluta sobre coligacoes majoritarias.",
+     "edits": [{"section": "o_que_significa", "before": "pode formar coligações com liberdade; nas proporcionais,", "after": "os partidos podem formar coligações, observadas as regras da legislação eleitoral; nas proporcionais,"}]},
+    {"target_id": "CF88:ART.17:PAR.3", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Distinguir o regime permanente do § 3º (pleno a partir de 2030) da transicao da EC 97/2017 aplicavel em 2026, em nota temporal.",
+     "edits": [
+       {"section": "atencao", "before": "Os percentuais do § 3º são a regra permanente. A emenda constitucional que criou a cláusula fixou uma transição gradual, com exigências menores até as eleições de 2030; em cada eleição, é preciso verificar qual patamar se aplica.", "after": "Os requisitos do § 3º formam o regime permanente, aplicável plenamente a partir das eleições de 2030. Até lá vale a transição fixada pela emenda constitucional que criou a cláusula (ver nota temporal)."},
+       {"section": "temporal", "before": null, "after": {
+         "time_sensitive": true, "as_of": "2026-09-28", "temporal_scope": "ELEICOES_2026", "next_rule_change": "ELEICOES_2030",
+         "notes": [{"note_id": "CLAUSULA_DESEMPENHO_TRANSICAO_ELEICOES_2026", "source_type": "EMENDA_CONSTITUCIONAL", "source_id": "EC 97/2017, art. 3º",
+                    "text": "Nas eleições de 2026 ainda se aplica a transição da EC 97/2017: têm acesso ao fundo partidário e à propaganda gratuita os partidos que, alternativamente, obtiverem ao menos 2,5% dos votos válidos nacionais para a Câmara dos Deputados, distribuídos em pelo menos um terço das unidades da Federação, com mínimo de 1,5% dos votos válidos em cada uma delas, ou elegerem pelo menos 13 deputados federais distribuídos em pelo menos um terço das unidades da Federação. O regime permanente do § 3º aplica-se plenamente a partir das eleições de 2030.",
+                    "temporal_scope": "ELEICOES_2026", "next_rule_change": "ELEICOES_2030", "review_after": "2027-01-01", "verified_on": "2026-09-28",
+                    "provenance": "informado pela revisao humana de 2026-09-28"}]}}]},
+    {"target_id": "CF88:ART.17:PAR.6", "decision": "APPROVED", "review_reason": "Aprovado sem alteracao."},
+    {"target_id": "CF88:ART.17:PAR.7", "decision": "APPROVED_AFTER_ADJUSTMENT", "review_reason": "Precisao: piso e proporcionalidade das candidaturas femininas; percentuais nao se somam; uma candidatura pode pertencer aos dois grupos; operacionalizacao na legislacao e jurisprudencia.",
+     "edits": [
+       {"section": "o_que_significa", "before": "reservar parte dos recursos de campanha e do tempo de propaganda para candidaturas de mulheres e de pessoas pretas e pardas.", "after": "reservar parte dos recursos de campanha e do tempo de propaganda. Para as candidatas, a Constituição fixa um piso de trinta por cento, que acompanha a proporção de candidaturas femininas; para candidaturas de pessoas pretas e pardas, fixa a aplicação de trinta por cento dos recursos de campanha. Os percentuais não são simplesmente somados: uma mesma candidatura pode pertencer aos dois grupos."},
+       {"section": "exemplo_pratico", "before": "Ele deve destinar ao menos trinta por cento às suas candidatas, proporcionalmente ao número delas, e reservar trinta por cento desses recursos a candidatos pretos e pardos, nas circunscrições definidas segundo sua estratégia.", "after": "Se as mulheres forem quarenta por cento das candidaturas do partido, a parcela destinada a elas acompanha essa proporção, respeitado o piso de trinta por cento; além disso, trinta por cento dos recursos de campanha devem ir para candidaturas de pessoas pretas e pardas. Como uma mesma candidatura pode pertencer aos dois grupos, o cômputo concreto segue a legislação eleitoral."},
+       {"section": "external_layer_notes", "after": "A operacionalização concreta das cotas de recursos e de propaganda, inclusive quando uma candidatura pertence aos dois grupos, é tratada na legislação eleitoral e na camada JURISPRUDÊNCIA."}]}
+  ],
+  "new_explanations": [
+    {
+      "target_id": "CF88:ART.7:INC.XII", "role": "ITEM", "semantic_autonomy": "DEPENDENT_ON_PARENT", "selection_criteria": [1, 4, 5],
+      "display_topic": "Salário-família",
+      "editorial_reason": "Criada por determinacao da revisao humana de 2026-09-28: regra propria de alta utilidade e conceito que se perde quando fica apenas na visao geral.",
+      "review_reason": "Revisao humana determinou explicacao propria para o inciso XII.",
+      "content": {
+        "o_que_diz": "Garante o salário-família ao trabalhador de baixa renda que tenha dependentes, conforme a disciplina da lei.",
+        "o_que_significa": "O salário-família não é uma parcela salarial devida simplesmente porque o trabalhador tem família. É um direito constitucional ligado a dois elementos: a existência de dependente e a condição de baixa renda do trabalhador, definida juridicamente.\nA Constituição assegura o direito, mas deixa sua disciplina concreta à legislação.",
+        "exemplo_pratico": "Um trabalhador com renda dentro do limite legal de baixa renda tem um filho que se enquadra como dependente nos termos da lei. Preenchidos os requisitos legais, ele tem direito ao salário-família em razão desse dependente.",
+        "atencao": "Valor, faixa de renda, dependentes considerados e forma de pagamento são definidos pela legislação, e não pelo inciso XII.",
+        "palavras_dificeis": [
+          {"termo": "Salário-família", "explicacao": "benefício pago ao trabalhador de baixa renda em razão de seus dependentes, na forma da lei."},
+          {"termo": "Dependente", "explicacao": "pessoa que, segundo a lei, é considerada dependente do trabalhador para fins do benefício."}
+        ]
+      },
+      "external_layer_notes": ["A disciplina do salário-família está na legislação previdenciária e trabalhista aplicável."]
+    },
+    {
+      "target_id": "CF88:ART.8:INC.I", "role": "ITEM", "semantic_autonomy": "DEPENDENT_ON_PARENT", "selection_criteria": [1, 4, 5],
+      "display_topic": "Liberdade sindical: registro não é autorização",
+      "editorial_reason": "Criada por determinacao da revisao humana de 2026-09-28: nucleo da liberdade sindical (registro x autorizacao) com conceito proprio.",
+      "review_reason": "Revisao humana determinou explicacao propria para o inciso I.",
+      "content": {
+        "o_que_diz": "Proíbe a lei de exigir autorização do Estado para fundar sindicato, mantendo apenas o registro no órgão competente, e veda ao poder público interferir ou intervir na organização sindical.",
+        "o_que_significa": "O ponto central é que registro não é autorização. O Estado não decide, por conveniência política, se uma categoria pode ou não criar seu sindicato. O registro no órgão competente existe dentro do modelo constitucional de organização sindical, que também inclui a unicidade do inciso II.\nDepois de criado, o sindicato organiza-se sem interferência ou intervenção do poder público.",
+        "exemplo_pratico": "Trabalhadores de uma categoria organizam um novo sindicato. Não precisam pedir autorização política ao governo para criá-lo, mas devem providenciar o registro no órgão competente e observar as demais regras constitucionais e legais.",
+        "atencao": "O inciso I deve ser lido junto com o inciso II: a liberdade de criação não permite dois sindicatos da mesma categoria na mesma base territorial.",
+        "palavras_dificeis": [
+          {"termo": "Intervenção estatal", "explicacao": "atuação do poder público que interfere na direção ou no funcionamento da entidade."},
+          {"termo": "Registro sindical", "explicacao": "inscrição do sindicato no órgão competente, que não se confunde com autorização para existir."}
+        ]
+      },
+      "external_layer_notes": ["O procedimento do registro sindical está na legislação e em atos do órgão competente."]
+    }
+  ]
+}

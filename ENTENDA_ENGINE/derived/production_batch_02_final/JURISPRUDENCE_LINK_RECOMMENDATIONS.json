@@ -1,0 +1,285 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_02",
+ "policy": "ENTENDA nao incorpora jurisprudencia; READY_TO_LINK exige tribunal, tipo, numero e assunto comprovados localmente",
+ "local_sources": [
+  "LEGAL_TARGET_ID/derived/export_test/run1/CF88_REFERENCES_EXPORT.json",
+  "C:/LMA/p545e/20260928/LEX_MACHINA_JURIS_CF_J4/VINCULOS_EXPLICITOS.json"
+ ],
+ "total": 16,
+ "ready_to_link": 7,
+ "identity_found_pending_subject_verification": 0,
+ "pending_external_ingestion": 9,
+ "recommendations": [
+  {
+   "target_id": "CF88:ART.7:INC.IV",
+   "desired_reference": "STF Súmula Vinculante 16 (salário mínimo e remuneração total do servidor)",
+   "purpose": "alcance do salario minimo para servidores",
+   "local_identity_searched": "STF:SV:16",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:SV:16:CF88:7:-:IV:-@CF88:ART.7:INC.IV",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "total da remunera",
+     "servidor"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:SV:16:CF88:7:-:IV:-",
+    "thesis_excerpt": "Os artigos 7º, IV, e 39, § 3º (redação da EC 19/98), da Constituição, referem-se ao total da remuneração percebida pelo servidor público.",
+    "official_source_sha256": "8da749d2560f75d00513d09b155c17bf1407e5a9d9741514385c17634c1de43d",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1237"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXVIII",
+   "desired_reference": "STF Tema 932 (Repercussão Geral) — responsabilidade objetiva do empregador em atividade de risco",
+   "purpose": "responsabilidade sem culpa, mantida fora do corpo",
+   "local_identity_searched": "STF:RG:932",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:932:CF88:7:-:XXVIII:-@CF88:ART.7:INC.XXVIII",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "objetiva",
+     "empregador",
+     "acidentes de trabalho",
+     "risco"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:932:CF88:7:-:XXVIII:-",
+    "thesis_excerpt": "O artigo 927, parágrafo único, do Código Civil é compatível com o artigo 7º, XXVIII, da Constituição Federal, sendo constitucional a responsabilização objetiva do empregador por danos decorrentes de acidentes de trabalho, nos casos especificados em lei, ou quando a atividade normalmente desenvolvida, por sua natureza, apresentar exposição habitual a risco especial, com potencialidade lesiva e impl",
+    "official_source_sha256": "6cd115fab5bfcb8cb26287f9930140fa783d97d660bfaade4783fc50322aed9e",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXIX",
+   "desired_reference": "STF Tema 608 (Repercussão Geral) — prazo prescricional do FGTS",
+   "purpose": "prescricao do FGTS, mantida fora do corpo",
+   "local_identity_searched": "STF:RG:608",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:608:CF88:7:-:XXIX:-@CF88:ART.7:INC.XXIX",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "FGTS",
+     "quinquenal"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:608:CF88:7:-:XXIX:-",
+    "thesis_excerpt": "O prazo prescricional aplicável à cobrança de valores não depositados no Fundo de Garantia por Tempo de Serviço (FGTS) é quinquenal, nos termos do art. 7º, XXIX, da Constituição Federal.",
+    "official_source_sha256": "4589145e8f6fe966cd5b6ca600d7235e5f25db083a54f1e0081aea69ccd675f3",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXVI",
+   "desired_reference": "STF Tema 1046 (Repercussão Geral) — limites do negociado sobre o legislado",
+   "purpose": "limites da negociacao coletiva",
+   "local_identity_searched": "STF:RG:1046",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.8:INC.IV",
+   "desired_reference": "STF Súmula Vinculante 40 (contribuição confederativa exigível só dos filiados)",
+   "purpose": "quem deve a contribuicao confederativa",
+   "local_identity_searched": "STF:SV:40",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:SV:40:CF88:8:-:IV:-@CF88:ART.8:INC.IV",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "confederativa",
+     "filiados"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:SV:40:CF88:8:-:IV:-",
+    "thesis_excerpt": "A contribuição confederativa de que trata o art. 8º, IV, da Constituição Federal, só é exigível dos filiados ao sindicato respectivo.",
+    "official_source_sha256": "a6ab0636a001666c7b5771ddcd96867497486ff1420764e37244bb500e640b1f",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=2204"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.8:INC.IV",
+   "desired_reference": "STF Tema 935 (Repercussão Geral) — contribuição assistencial (tese distinta da confederativa)",
+   "purpose": "contribuicao assistencial, separada da confederativa",
+   "local_identity_searched": "STF:RG:935",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.8:INC.III",
+   "desired_reference": "STF — substituição processual ampla pelos sindicatos",
+   "purpose": "alcance da defesa judicial pelo sindicato",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.9",
+   "desired_reference": "STF — greve de servidores públicos na ausência de lei específica (mandados de injunção)",
+   "purpose": "greve no servico publico, mantida fora do corpo",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.5",
+   "desired_reference": "STF Tema 564 (Repercussão Geral) — segunda reeleição em ente federativo diverso",
+   "purpose": "limites da reeleicao",
+   "local_identity_searched": "STF:RG:564",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:564:CF88:14:5:-:-@CF88:ART.14:PAR.5",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "segunda reelei",
+     "ente da Federa"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:564:CF88:14:5:-:-",
+    "thesis_excerpt": "I - O art. 14, § 5º, da Constituição deve ser interpretado no sentido de que a proibição da segunda reeleição é absoluta e torna inelegível para determinado cargo de Chefe do Poder Executivo o cidadão que já exerceu dois mandatos consecutivos (reeleito uma única vez) em cargo da mesma natureza, ainda que em ente da Federação diverso;II - As decisões do Tribunal Superior Eleitoral - TSE que, no cur",
+    "official_source_sha256": "d0d14b5249bdd75ad7d28bcfc5892251b215830987afe3f4cd0ad6aaa5b81812",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.5",
+   "desired_reference": "STF Tema 1229 (Repercussão Geral) — exercício da chefia do Executivo por decisão judicial não transitada em julgado",
+   "purpose": "contagem de mandato para reeleicao",
+   "local_identity_searched": "STF:RG:1229",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "human_supplied": {
+    "thesis": "O exercício da chefia do Poder Executivo, nos seis meses anteriores ao pleito, em decorrência de decisão judicial não transitada em julgado, não conta como exercício de um mandato para efeito de reeleição.",
+    "transit_in_rem_judicatam": "2026-03-27",
+    "source": "revisao humana de 2026-09-28 (nao e registro local)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.7",
+   "desired_reference": "STF Súmula Vinculante 18 (dissolução do vínculo conjugal no curso do mandato)",
+   "purpose": "inelegibilidade reflexa",
+   "local_identity_searched": "STF:SV:18",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:SV:18:CF88:14:7:-:-@CF88:ART.14:PAR.7",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "dissolu",
+     "inelegibilidade",
+     "14"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:SV:18:CF88:14:7:-:-",
+    "thesis_excerpt": "A dissolução da sociedade ou do vínculo conjugal, no curso do mandato, não afasta a inelegibilidade prevista no § 7º do artigo 14 da Constituição Federal.",
+    "official_source_sha256": "bdd0671a52b1e99b4a646e4b3e3a4249dbbb5f610d93570b85f81b8fa12ba617",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1245"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.9",
+   "desired_reference": "STF — constitucionalidade da Lei da Ficha Limpa e presunção de inocência",
+   "purpose": "compatibilidade com a presuncao de inocencia",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.15",
+   "desired_reference": "TSE Súmula 9 (fim da suspensão com cumprimento ou extinção da pena)",
+   "purpose": "termino da suspensao dos direitos politicos",
+   "local_identity_searched": "TSE:SUM:9",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.15:INC.III",
+   "desired_reference": "STF Tema 370 (Repercussão Geral) — suspensão de direitos políticos e pena restritiva de direitos",
+   "purpose": "alcance da suspensao por condenacao criminal",
+   "local_identity_searched": "STF:RG:370",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:370:CF88:15:-:III:-@CF88:ART.15:INC.III",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "suspens",
+     "restritiva de direitos"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:370:CF88:15:-:III:-",
+    "thesis_excerpt": "A suspensão de direitos políticos prevista no art. 15, inc. III, da Constituição Federal aplica-se no caso de substituição da pena privativa de liberdade pela restritiva de direitos.",
+    "official_source_sha256": "a21021998a43ba6538b26156d597a9c5d63700715664bda4c578cbf785599741",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.16",
+   "desired_reference": "STF — anualidade eleitoral e alterações do processo eleitoral por emenda constitucional",
+   "purpose": "incidencia do art. 16 sobre emendas constitucionais",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.6",
+   "desired_reference": "STF — fidelidade partidária e eleitos pelo sistema majoritário",
+   "purpose": "situacao dos eleitos pelo sistema majoritario",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  }
+ ]
+}

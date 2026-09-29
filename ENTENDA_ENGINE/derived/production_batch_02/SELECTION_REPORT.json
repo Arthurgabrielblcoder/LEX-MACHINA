@@ -1,0 +1,1716 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_02",
+ "norma_id": "CF88",
+ "scope": [
+  "CF88:ART.6",
+  "CF88:ART.7",
+  "CF88:ART.8",
+  "CF88:ART.9",
+  "CF88:ART.10",
+  "CF88:ART.11",
+  "CF88:ART.12",
+  "CF88:ART.13",
+  "CF88:ART.14",
+  "CF88:ART.15",
+  "CF88:ART.16",
+  "CF88:ART.17"
+ ],
+ "policy": "ENTENDA-T1 (semantica)",
+ "summary": {
+  "targets_evaluated": 151,
+  "targets_current": 151,
+  "selected": 48,
+  "by_classification": {
+   "BLOCK": 21,
+   "DEVICE": 8,
+   "EXCLUDED_REVOKED": 4,
+   "ITEM": 7,
+   "NO_SEPARATE_EXPLANATION": 99,
+   "OVERVIEW": 12
+  },
+  "historical_excluded": 0,
+  "revoked_excluded": 4,
+  "reused_from_pilot": 0,
+  "new_explanations": 48,
+  "batch_total_explanations": 48,
+  "soft_target": [
+   30,
+   55
+  ],
+  "hard_cap": 65,
+  "soft_target_status": "WITHIN",
+  "soft_target_justification": null,
+  "new_words_mean": 201,
+  "new_payload_bytes_mean": 1743,
+  "largest": {
+   "target_id": "CF88:ART.7:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.I/BASE/1",
+   "role": "BLOCK",
+   "payload_bytes": 2418,
+   "words": 280,
+   "freshness": "FRESH",
+   "reference_count": 0
+  },
+  "files": {
+   "ENTENDA_LOOKUP.IDX": {
+    "sha256": "3b6dc04f3ee28314f35a4f164b2e98baa16defc4502dffcd28597e10e35e7c0c",
+    "bytes": 8457
+   },
+   "ENTENDA_PAYLOAD.DAT": {
+    "sha256": "8562b5a338e3381df1a10e9b89b2d1d3572c1b73ed05986bebfeb34c19cb9d8d",
+    "bytes": 83750
+   },
+   "ENTENDA_BUILD_MANIFEST.json": {
+    "sha256": "177550ecb7d5c081cd33648be6775021d91d743a4433cbc0c107880f5439fe08",
+    "bytes": 27299
+   }
+  },
+  "lookup_rows": 78,
+  "targets_with_references": 13,
+  "warnings": 41,
+  "warning_counts": {
+   "ABSOLUTE_CLAIM": 3,
+   "EXAMPLE_REQUIREMENT_LANGUAGE": 10,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 22,
+   "PARENT_REPETITION": 3,
+   "TERM_LOW_UTILITY": 2,
+   "TERM_NOT_USED": 1
+  },
+  "focus_article": {
+   "target": "CF88:ART.7",
+   "evaluated": 39,
+   "own_explanations": 13,
+   "new_explanations": 13,
+   "incisos_evaluated": 34,
+   "no_separate": 24,
+   "by_classification": {
+    "OVERVIEW": 1,
+    "DEVICE": 1,
+    "BLOCK": 7,
+    "ITEM": 4,
+    "NO_SEPARATE_EXPLANATION": 24
+   }
+  },
+  "retired_versions": 0,
+  "review_status_counts": {
+   "PENDING_HUMAN_REVIEW": 48
+  },
+  "jurisprudence_recommendations": {
+   "total": 12,
+   "ready_to_link": 7,
+   "pending_external_ingestion": 5
+  }
+ },
+ "selection": [
+  {
+   "target_id": "CF88:ART.6",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.6/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Artigo curto (caput com o rol de direitos sociais + paragrafo unico sobre renda basica familiar): a visao geral explica ambos sem repeticao."
+  },
+  {
+   "target_id": "CF88:ART.6:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.6",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.6:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.6",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.7/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    6
+   ],
+   "selection_reason": "Artigo extenso (34 incisos + paragrafo unico). A visao geral apresenta a estrutura; as familias de direitos recebem blocos proprios."
+  },
+  {
+   "target_id": "CF88:ART.7:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.I/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    3,
+    6
+   ],
+   "selection_reason": "Incisos I, II, III e XXI tratam juntos da protecao do trabalhador no fim do vinculo: despedida, seguro-desemprego, FGTS e aviso previo proporcional."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.IV/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Incisos IV, V, VI, VII e X formam o regime constitucional do salario: minimo, piso, irredutibilidade, garantia para remuneracao variavel e protecao contra retencao."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.IV",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.IV",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.IV",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.VIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.VIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos VIII, IX, XVI e XXIII tratam de parcelas que acrescem a remuneracao: decimo terceiro, adicional noturno, hora extra e adicionais de atividades penosas, insalubres ou perigosas."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.IX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.VIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.X",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.IV",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XI/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Direito proprio com regra relevante (desvinculacao da remuneracao) e participacao excepcional na gestao."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Salario-familia: beneficio previdenciario de conteudo minimo no inciso, regulado por lei; mencionado na visao geral e no paragrafo unico (domesticos). Candidato a explicacao propria se a revisao pedir.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Incisos XIII, XIV, XV e XVII formam o regime do tempo de trabalho e de descanso: jornada, turnos de revezamento, repouso semanal e ferias."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XIV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XVI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.VIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XVII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XVIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XVIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Incisos XVIII, XIX, XX e XXV tratam da protecao da maternidade, da paternidade, do mercado de trabalho da mulher e da assistencia aos filhos pequenos."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XIX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XVIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XVIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XXII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Incisos XXII e XXVIII tratam da prevencao de riscos e da reparacao de acidentes de trabalho."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.VIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXIV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Inciso de uma palavra ('aposentadoria'); o regime esta em outros artigos (arts. 40 e 201); explicacao propria apenas remeteria a eles.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XVIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXVI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XXVI/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Reconhecimento constitucional da negociacao coletiva: regra autonoma de alta utilidade interpretativa."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXVII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Protecao em face da automacao, na forma da lei: comando dependente de lei, sem conteudo operativo proprio no texto; coberto pela visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXVIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XXII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXIX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XXIX/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Prazo prescricional trabalhista (cinco anos, limitado a dois apos o fim do contrato): regra autonoma de altissimo uso. As alineas estao revogadas."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXIX:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "rotulo presente no texto vigente apenas com a marca de revogacao; sem conteudo normativo"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXIX:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "rotulo presente no texto vigente apenas com a marca de revogacao; sem conteudo normativo"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XXX/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos XXX, XXXI, XXXII e XXXIV formam o conjunto de proibicoes de discriminacao e de igualdade de direitos no trabalho."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXXI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XXX",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXXII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XXX",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXXIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XXXIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regras autonomas de idade minima e protecao do trabalho do menor, com excecao do aprendiz."
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXXIV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.7:INC.XXX",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.7:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.7:PAR.UNICO/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    6
+   ],
+   "selection_reason": "Paragrafo com regra propria e extensa sobre quais direitos alcancam os domesticos, em dois grupos (imediatos e condicionados a lei)."
+  },
+  {
+   "target_id": "CF88:ART.8",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.8/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Artigo com enunciado + oito incisos + paragrafo unico. A visao geral explica a liberdade sindical e os incisos curtos (I, V, VII, paragrafo unico); unicidade, atuacao, contribuicao e estabilidade recebem explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.8:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.8",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.8:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.8",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Fundacao de sindicato sem autorizacao estatal, com registro, e vedacao de interferencia: nucleo da liberdade sindical explicado expressamente na visao geral do art. 8º.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.8:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.8:INC.II/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Unicidade sindical: conceito proprio e distintivo do modelo brasileiro."
+  },
+  {
+   "target_id": "CF88:ART.8:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.8:INC.III/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Incisos III e VI tratam da atuacao do sindicato: defesa da categoria (inclusive em juizo) e participacao obrigatoria nas negociacoes coletivas."
+  },
+  {
+   "target_id": "CF88:ART.8:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.8:INC.IV/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Contribuicao fixada em assembleia para o sistema confederativo: regra autonoma, distinta da contribuicao prevista em lei."
+  },
+  {
+   "target_id": "CF88:ART.8:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.8",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Liberdade de filiacao: explicada expressamente na visao geral do art. 8º (inclusive na ATENCAO sobre unicidade).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.8:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.8:INC.III",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.8:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.8",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Direito do aposentado filiado de votar e ser votado: regra pontual enunciada na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.8:INC.VIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.8:INC.VIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Estabilidade provisoria do dirigente sindical: regra autonoma com marcos temporais proprios."
+  },
+  {
+   "target_id": "CF88:ART.8:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.8",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Extensao das regras aos sindicatos rurais e colonias de pescadores: enunciada na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.9",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.9/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Artigo curto (caput + dois paragrafos) sobre o direito de greve: visao geral unica, separando texto constitucional de regulamentacao e jurisprudencia."
+  },
+  {
+   "target_id": "CF88:ART.9:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.9",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.9:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.9",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.9:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.9",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.10",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.10/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1
+   ],
+   "selection_reason": "Artigo de caput unico com regra propria de participacao: unidade ARTIGO."
+  },
+  {
+   "target_id": "CF88:ART.10:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.10",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.11",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.11/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1
+   ],
+   "selection_reason": "Artigo de caput unico com regra propria: unidade ARTIGO."
+  },
+  {
+   "target_id": "CF88:ART.11:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.11",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.12/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    6
+   ],
+   "selection_reason": "Artigo estrutural da nacionalidade. A visao geral organiza natos, naturalizados, quase-nacionalidade, distincoes e perda; cada grupo recebe explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.12:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.12:INC.I/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Inciso-bloco com tres alineas que definem os criterios de nacionalidade originaria."
+  },
+  {
+   "target_id": "CF88:ART.12:INC.I:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:INC.I",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:INC.I:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:INC.I",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:INC.I:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:INC.I",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.12:INC.II/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Inciso-bloco com duas alineas que definem as vias de naturalizacao."
+  },
+  {
+   "target_id": "CF88:ART.12:INC.II:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:INC.II",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:INC.II:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:INC.II",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.12:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Paragrafo com regra propria (quase-nacionalidade) dependente de reciprocidade."
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.12:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "O § 2º (a lei nao pode distinguir natos e naturalizados, salvo casos constitucionais) so se entende com o § 3º (principal caso de distincao: cargos privativos). Bloco com ancora real no § 3º."
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.3:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.12:PAR.4/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "O § 4º (hipoteses de perda) e o § 5º (reaquisicao apos renuncia) formam o regime da perda da nacionalidade na redacao da EC 131/2023. As alineas revogadas do inciso II ficam excluidas."
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.4:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.4",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.4:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.4",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.4:INC.II:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "rotulo presente no texto vigente apenas com a marca de revogacao; sem conteudo normativo"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.4:INC.II:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "rotulo presente no texto vigente apenas com a marca de revogacao; sem conteudo normativo"
+  },
+  {
+   "target_id": "CF88:ART.12:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.12:PAR.4",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.13",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.13/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1
+   ],
+   "selection_reason": "Artigo curto (caput + dois paragrafos): visao geral unica."
+  },
+  {
+   "target_id": "CF88:ART.13:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.13",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.13:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.13",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.13:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.13",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.14/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    6
+   ],
+   "selection_reason": "Artigo extenso (caput com incisos + treze paragrafos). A visao geral mostra a estrutura; soberania popular, alistamento, elegibilidade, reeleicao, desincompatibilizacao, inelegibilidades, militar, impugnacao de mandato e consultas locais recebem explicacoes proprias."
+  },
+  {
+   "target_id": "CF88:ART.14:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.14:CAPUT/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    5
+   ],
+   "selection_reason": "Caput com comando distinto da visao geral (formas de exercicio da soberania popular) e tres incisos; artigo com paragrafos."
+  },
+  {
+   "target_id": "CF88:ART.14:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "O § 1º (voto obrigatorio e facultativo) e o § 2º (inalistaveis) definem juntos quem vota."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.1:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.1:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.1:INC.II:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.1:INC.II:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.1:INC.II:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.1",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "O § 3º (condicoes de elegibilidade e idades minimas) e o § 4º (inalistaveis e analfabetos inelegiveis) definem juntos quem pode ser candidato."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.VI:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.VI:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.VI:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.3:INC.VI:AL.d",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.3",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.5/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Paragrafo com regra propria e muito consultada (reeleicao para um unico periodo subsequente)."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.6",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.6/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Paragrafo com regra propria (renuncia seis meses antes do pleito para concorrer a outro cargo)."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.7",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.7/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Paragrafo com regra propria e de alta incidencia (inelegibilidade reflexa)."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.8",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.8/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Paragrafo-bloco (enunciado + dois incisos) com regra propria para o militar alistavel."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.8:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.8",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.8:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.8",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.9",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.9/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Paragrafo que autoriza lei complementar a criar inelegibilidades, com finalidades constitucionais expressas."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.10",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.10/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "O § 10 (acao de impugnacao de mandato) e o § 11 (segredo de justica e responsabilidade do autor) formam o regime unico dessa acao."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.11",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.10",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.12",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.14:PAR.12/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Os §§ 12 e 13 tratam juntos das consultas populares locais realizadas com as eleicoes municipais e da respectiva campanha."
+  },
+  {
+   "target_id": "CF88:ART.14:PAR.13",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.14:PAR.12",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.15",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.15/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    5
+   ],
+   "selection_reason": "Artigo sem paragrafos (caput + cinco incisos): a unidade e o ARTIGO, que explica a vedacao de cassacao e as cinco hipoteses."
+  },
+  {
+   "target_id": "CF88:ART.15:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.15",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.15:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.15",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.15:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.15",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.15:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.15",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.15:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.15",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.15:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.15",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "item curto de lista explicado na visao geral do artigo; explicacao propria repetiria o artigo",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.16",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.16/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Artigo de caput unico com regra propria de grande importancia: unidade ARTIGO."
+  },
+  {
+   "target_id": "CF88:ART.16:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.16",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.17/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    6
+   ],
+   "selection_reason": "Artigo com caput + incisos e nove paragrafos. A visao geral apresenta a estrutura; caput, autonomia, desempenho, fidelidade e recursos para candidaturas recebem explicacoes proprias; §§ 2º e 4º ficam na visao geral."
+  },
+  {
+   "target_id": "CF88:ART.17:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.17:CAPUT/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2
+   ],
+   "selection_reason": "Caput com comando distinto da visao geral (liberdade de criacao e limites) e quatro incisos de preceitos; artigo com paragrafos."
+  },
+  {
+   "target_id": "CF88:ART.17:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:CAPUT",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.17:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Paragrafo com regras proprias e muito consultadas: autonomia interna, coligacoes apenas majoritarias, ausencia de verticalizacao e fidelidade partidaria."
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Personalidade juridica na forma da lei civil e registro dos estatutos no TSE: explicado expressamente na visao geral do art. 17 (texto e exemplo).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.17:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "O § 3º (requisitos de desempenho para fundo partidario e propaganda) e o § 5º (situacao do eleito por partido que nao os atingiu) formam um regime unico."
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.3:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.3:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Vedacao de organizacao paramilitar pelos partidos: regra de um periodo, explicada na visao geral do art. 17.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:PAR.3",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.6",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.17:PAR.6/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Paragrafo com regra propria de fidelidade partidaria para mandatos proporcionais."
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.7",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.17:PAR.7/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "Os §§ 7º, 8º e 9º tratam juntos de destinacoes obrigatorias de recursos partidarios e de propaganda para inclusao politica."
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.8",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:PAR.7",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.9",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "covered_by": "CF88:ART.17:PAR.7",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  }
+ ]
+}

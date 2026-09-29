@@ -232,3 +232,47 @@ Validações:
   - `READY_TO_LINK` só quando a identidade do registro local curado está comprovada (por exemplo, `source_id` `STF:SV:16`).
   - Caso contrário, `PENDING_EXTERNAL_INGESTION`.
   - Nenhum registro é fabricado.
+
+---
+
+## 14. Adendo A4 (2026-09-28): vigência em dois eixos, notas temporais e verificação material de jurisprudência
+
+### Estrutura × vigência
+
+A presença estrutural e a vigência passam a ser eixos separados:
+
+- **`structurally_present`:** o target existe no índice estrutural.
+- **`legal_status`:** um de `CURRENT`, `REVOKED`, `HISTORICAL_ONLY` ou `UNKNOWN`.
+- **`legally_current`:** verdadeiro somente quando `legal_status` é `CURRENT`.
+
+Regras:
+
+- **Rótulo apenas com marca de revogação.** Um rótulo mantido no texto consolidado só com a marca "(Revogado/a)" é `structurally_present=true`, `legal_status=REVOKED` e `legally_current=false`. O mesmo vale quando o status marca `revoked_marker`.
+- **Target revogado não recebe explicação** **[BLOQUEIA]** (`ENTENDA_REVOKED_NOT_ALLOWED`). A seleção o classifica como `EXCLUDED_REVOKED`, e ele não entra na contagem CURRENT.
+- **Relatórios de seleção** com `report_schema >= 2` trazem os três campos por target.
+
+### Notas temporais (genéricas; nenhuma lei é codificada no motor)
+
+O campo opcional `temporal` tem `time_sensitive` e `notes[]`.
+
+- **Campos obrigatórios de cada nota:** `note_id`, `text`, `source_type`, `source_id` e `review_after`.
+- **Campos opcionais:** `valid_from`, `valid_until`, `future_effective_date`, `effective_change_date`, `verified_on`, `temporal_scope`, `next_rule_change` e `provenance`.
+- **Datas** em formato ISO **[BLOQUEIA]**.
+- **Posição.** A nota fica fora do corpo: o corpo deve ser temporalmente estável. No payload, aparece na seção `#NOTAS TEMPORAIS` e na linha `Z|TIME_SENSITIVE|<revisar após>`.
+- **Estado da nota** (`temporal_state(nota, as_of)`): `NOT_YET_EFFECTIVE`, `IN_EFFECT` ou `EXPIRED`, mais `review_due`.
+- **Data explícita.** A data de referência vem do spec do lote (`as_of_date`) e nunca do relógio do sistema.
+- **Uso pelo updater.** O arquivo `TEMPORAL_NOTES.json` permite ao updater detectar quando uma explicação precisa ser revista.
+- **Alterar notas temporais exige nova `editorial_version`.**
+
+### Jurisprudência: verificação material
+
+Estados possíveis de uma recomendação:
+
+| Status | Exige |
+|---|---|
+| `READY_TO_LINK` | tribunal, tipo e número no acervo local curado, vínculo local no mesmo target e assunto comprovado (as palavras-chave editoriais `subject_keywords` aparecem no texto oficial da tese armazenado localmente, com sha256 da fonte) |
+| `IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION` | identidade encontrada localmente, sem comprovação do assunto |
+| `PENDING_EXTERNAL_INGESTION` | registro inexistente localmente; nada é fabricado |
+
+- Informação fornecida pela revisão humana sobre uma tese ainda não ingerida fica em `human_supplied` e não altera o status.
+- A política vale para os lotes com `report_schema >= 2`. O Batch 01 aprovado permanece byte-idêntico.

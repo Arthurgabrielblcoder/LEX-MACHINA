@@ -53,7 +53,17 @@ def apply(spec_path):
                         raise SystemExit(f'TERM_NOT_FOUND {tid} {ed["termo"]}')
                     hit[0]['explicacao'] = ed['after']
             elif sec == 'external_layer_notes':
-                cur.setdefault('external_layer_notes', []).append(ed['after'])
+                notes = cur.setdefault('external_layer_notes', [])
+                if ed.get('before') is None:
+                    notes.append(ed['after'])
+                elif notes.count(ed['before']) != 1:
+                    raise SystemExit(f'NOTE_NOT_FOUND {tid}: {ed["before"][:60]}')
+                else:
+                    notes[notes.index(ed['before'])] = ed['after']
+            elif sec == 'temporal':
+                if cur.get('temporal') is not None and ed.get('before') != cur['temporal']:
+                    raise SystemExit(f'TEMPORAL_MISMATCH {tid}')
+                cur['temporal'] = ed['after']
             else:
                 raise SystemExit(f'UNKNOWN_SECTION {sec}')
             changes.append(dict(section=sec, termo=ed.get('termo'), before=ed.get('before'), after=ed['after'], kind=ed.get('kind', 'HUMAN_REQUESTED')))

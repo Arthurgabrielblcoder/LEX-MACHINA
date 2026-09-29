@@ -1,0 +1,42 @@
+{
+  "norma_id": "CF88",
+  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_02",
+  "scope": ["CF88:ART.6", "CF88:ART.7", "CF88:ART.8", "CF88:ART.9", "CF88:ART.10", "CF88:ART.11", "CF88:ART.12", "CF88:ART.13", "CF88:ART.14", "CF88:ART.15", "CF88:ART.16", "CF88:ART.17"],
+  "focus_article": "CF88:ART.7",
+  "drafts": "BATCH_02_DRAFTS.json",
+  "batch_corpus": "CF88_BATCH_02.entenda.jsonl",
+  "index_dir": "index",
+  "review_sheet": "REVIEW_BATCH_02.md",
+  "prior_corpora": ["ENTENDA_ENGINE/derived/production_batch_01_final/CF88_BATCH_01_FINAL.entenda.jsonl"],
+  "soft_target": [30, 55],
+  "hard_cap": 65,
+  "soft_target_justification": null,
+  "reused": {},
+  "overview_covers_all_subdivisions": ["CF88:ART.6", "CF88:ART.9", "CF88:ART.10", "CF88:ART.11", "CF88:ART.13", "CF88:ART.15", "CF88:ART.16"],
+  "no_separate_reasons": {
+    "CF88:ART.7:INC.XII": "Salario-familia: beneficio previdenciario de conteudo minimo no inciso, regulado por lei; mencionado na visao geral e no paragrafo unico (domesticos). Candidato a explicacao propria se a revisao pedir.",
+    "CF88:ART.7:INC.XXIV": "Inciso de uma palavra ('aposentadoria'); o regime esta em outros artigos (arts. 40 e 201); explicacao propria apenas remeteria a eles.",
+    "CF88:ART.7:INC.XXVII": "Protecao em face da automacao, na forma da lei: comando dependente de lei, sem conteudo operativo proprio no texto; coberto pela visao geral.",
+    "CF88:ART.8:INC.I": "Fundacao de sindicato sem autorizacao estatal, com registro, e vedacao de interferencia: nucleo da liberdade sindical explicado expressamente na visao geral do art. 8º.",
+    "CF88:ART.8:INC.V": "Liberdade de filiacao: explicada expressamente na visao geral do art. 8º (inclusive na ATENCAO sobre unicidade).",
+    "CF88:ART.8:INC.VII": "Direito do aposentado filiado de votar e ser votado: regra pontual enunciada na visao geral.",
+    "CF88:ART.8:PAR.UNICO": "Extensao das regras aos sindicatos rurais e colonias de pescadores: enunciada na visao geral.",
+    "CF88:ART.17:PAR.2": "Personalidade juridica na forma da lei civil e registro dos estatutos no TSE: explicado expressamente na visao geral do art. 17 (texto e exemplo).",
+    "CF88:ART.17:PAR.4": "Vedacao de organizacao paramilitar pelos partidos: regra de um periodo, explicada na visao geral do art. 17."
+  },
+  "jurisprudence_recommendations": [
+    {"target_id": "CF88:ART.7:INC.IV", "desired_reference": "STF Súmula Vinculante 16 (salário mínimo e remuneração total do servidor)", "local_identity": "STF:SV:16", "purpose": "alcance do salario minimo para servidores"},
+    {"target_id": "CF88:ART.7:INC.XXVIII", "desired_reference": "STF Tema 932 (Repercussão Geral) — responsabilidade do empregador por acidente em atividade de risco", "local_identity": "STF:RG:932", "purpose": "responsabilidade sem culpa, mantida fora do corpo"},
+    {"target_id": "CF88:ART.7:INC.XXIX", "desired_reference": "STF Tema 608 (Repercussão Geral) — prazo prescricional do FGTS", "local_identity": "STF:RG:608", "purpose": "prescricao do FGTS, mantida fora do corpo"},
+    {"target_id": "CF88:ART.7:INC.XXVI", "desired_reference": "STF Tema 1046 (Repercussão Geral) — limites do negociado sobre o legislado", "local_identity": "STF:RG:1046", "purpose": "limites da negociacao coletiva"},
+    {"target_id": "CF88:ART.8:INC.IV", "desired_reference": "STF Súmula Vinculante 40 (contribuição confederativa exigível só dos filiados)", "local_identity": "STF:SV:40", "purpose": "quem deve a contribuicao confederativa"},
+    {"target_id": "CF88:ART.8:INC.III", "desired_reference": "STF — substituição processual ampla pelos sindicatos", "local_identity": null, "purpose": "alcance da defesa judicial pelo sindicato"},
+    {"target_id": "CF88:ART.9", "desired_reference": "STF — greve de servidores públicos na ausência de lei específica (mandados de injunção)", "local_identity": null, "purpose": "greve no servico publico, mantida fora do corpo"},
+    {"target_id": "CF88:ART.14:PAR.5", "desired_reference": "STF Tema 564 (Repercussão Geral) — candidatura sucessiva de prefeito em outro Município", "local_identity": "STF:RG:564", "purpose": "limites da reeleicao"},
+    {"target_id": "CF88:ART.14:PAR.7", "desired_reference": "STF Súmula Vinculante 18 (dissolução do vínculo conjugal no curso do mandato)", "local_identity": "STF:SV:18", "purpose": "inelegibilidade reflexa"},
+    {"target_id": "CF88:ART.14:PAR.9", "desired_reference": "STF — constitucionalidade da Lei da Ficha Limpa", "local_identity": null, "purpose": "compatibilidade com a presuncao de inocencia"},
+    {"target_id": "CF88:ART.15:INC.III", "desired_reference": "STF Tema 370 (Repercussão Geral) — suspensão de direitos políticos e pena restritiva de direitos", "local_identity": "STF:RG:370", "purpose": "alcance da suspensao por condenacao criminal"},
+    {"target_id": "CF88:ART.17:PAR.6", "desired_reference": "STF — fidelidade partidária e eleitos pelo sistema majoritário", "local_identity": null, "purpose": "situacao dos eleitos pelo sistema majoritario"}
+  ],
+  "superseded_by_final": "ENTENDA_ENGINE/derived/production_batch_02_final"
+}

@@ -3,8 +3,14 @@
   "note": "Configuracao por norma. O motor ENTENDA nao conhece nenhuma norma especifica; CF88 e apenas o piloto. Caminhos relativos a raiz do repositorio.",
   "usage_policy": "EDITORIAL_OUTPUT_ONLY: ENTENDA e saida editorial derivada; nunca e fonte para correlatas, jurisprudencia, referencias ou relations engine.",
   "limits": {
-    "words_overview": [120, 560],
-    "words_device": [80, 400],
+    "words_overview": [
+      120,
+      560
+    ],
+    "words_device": [
+      80,
+      400
+    ],
     "max_terms": 5,
     "max_verbatim_words": 10,
     "max_section_similarity": 0.35,
@@ -16,12 +22,16 @@
       "target_status": "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json",
       "text_sources": [
         {
-          "namespaces": ["CF88"],
+          "namespaces": [
+            "CF88"
+          ],
           "path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
           "role": "OPERATIONAL_CURRENT_TEXT_SOURCE"
         },
         {
-          "namespaces": ["ADCT"],
+          "namespaces": [
+            "ADCT"
+          ],
           "path": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
           "role": "STRUCTURAL_CANONICAL_SOURCE_FALLBACK",
           "note": "o texto operacional atual nao contem o ADCT; alvos ADCT ficam UNKNOWN_VALIDITY"
@@ -29,8 +39,13 @@
       ],
       "corpus": "ENTENDA_ENGINE/corpus/CF88.entenda.jsonl",
       "reference_export": "LEGAL_TARGET_ID/derived/export_test/run1/CF88_REFERENCES_EXPORT.json",
+      "jurisprudence_catalog": "C:/LMA/p545e/20260928/LEX_MACHINA_JURIS_CF_J4/VINCULOS_EXPLICITOS.json",
       "allow_historical": false,
-      "export_review_statuses": ["PENDING_HUMAN_REVIEW", "HUMAN_APPROVED_T1", "APPROVED"]
+      "export_review_statuses": [
+        "PENDING_HUMAN_REVIEW",
+        "HUMAN_APPROVED_T1",
+        "APPROVED"
+      ]
     }
   }
 }
