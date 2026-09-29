@@ -1,0 +1,368 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_03",
+ "policy": "ENTENDA nao incorpora jurisprudencia; READY_TO_LINK exige tribunal, tipo, numero e assunto comprovados localmente",
+ "local_sources": [
+  "LEGAL_TARGET_ID/derived/export_test/run1/CF88_REFERENCES_EXPORT.json",
+  "C:/LMA/p545e/20260928/LEX_MACHINA_JURIS_CF_J4/VINCULOS_EXPLICITOS.json"
+ ],
+ "total": 18,
+ "ready_to_link": 11,
+ "identity_found_pending_subject_verification": 0,
+ "pending_external_ingestion": 6,
+ "material_mismatch_excluded": 1,
+ "recommendations": [
+  {
+   "target_id": "CF88:ART.18:PAR.4",
+   "desired_reference": "STF Tema 400 (Repercussão Geral) — plebiscito na criação de Municípios",
+   "purpose": "exigencia de plebiscito",
+   "local_identity_searched": "STF:RG:400",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:400:CF88:18:4:-:-@CF88:ART.18:PAR.4",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "plebiscito",
+     "art. 18"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:400:CF88:18:4:-:-",
+    "thesis_excerpt": "A exigência da realização de plebiscito, conforme se determina no § 4º do art. 18 da Constituição da República, não foi afastada pelo art. 96, inserido no Ato das Disposições Constitucionais Transitórias da Constituição da República pela Emenda Constitucional n. 57/2008, sendo ilegítimo o município ocupante para cobrar o Imposto sobre a Propriedade Predial e Territorial Urbana - IPTU nos territóri",
+    "official_source_sha256": "898af04ace163ba85d6bc54b1230c6e09371a5e9093e41012b48c8e3d8f372d9",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.18:PAR.4",
+   "desired_reference": "STF — Municípios criados sem a lei complementar federal (omissão legislativa)",
+   "purpose": "situacao de Municipios criados sem a lei complementar",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.19",
+   "desired_reference": "Vínculo local existente (STF Tema 1157) — verificar pertinência ao art. 19 da CF",
+   "purpose": "verificar se o vinculo local trata de laicidade ou de outro dispositivo",
+   "local_identity_searched": "STF:RG:1157",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:1157:CF88:19:-:-:-@CF88:ART.19",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": false,
+    "keywords": [
+     "religi"
+    ],
+    "missing_keywords": [
+     "religi"
+    ],
+    "catalog_record_id": "STF:RG:1157:CF88:19:-:-:-",
+    "thesis_excerpt": "É vedado o reenquadramento, em novo Plano de Cargos, Carreiras e Remuneração, de servidor admitido sem concurso público antes da promulgação da Constituição Federal de 1988, mesmo que beneficiado pela estabilidade excepcional do artigo 19 do ADCT, haja vista que esta regra transitória não prevê o di-reito à efetividade, nos termos do artigo 37, II, da Constituição Federal e decisão proferida na AD",
+    "official_source_sha256": "8683f1a6b2044fc474d601fe550a0e8dc2a4b4b4a46552231bcfd196a4188c64",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "material_mismatch": {
+    "verified_subject": "reenquadramento de servidor admitido sem concurso antes de 1988 (estabilidade excepcional do art. 19 do ADCT)",
+    "expected_subject": "laicidade e demais vedacoes do art. 19 da CF",
+    "reason": "A tese local cita o art. 19 do ADCT, nao o art. 19 do corpo permanente da CF; o vinculo local e um falso positivo de numeracao."
+   },
+   "note": "Tese local conferida: trata de outro assunto. Vinculo local existente NAO deve ser usado como jurisprudencia pertinente a este target."
+  },
+  {
+   "target_id": "CF88:ART.19",
+   "desired_reference": "STF — ensino religioso em escolas públicas e laicidade",
+   "purpose": "laicidade, mantida fora do corpo",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.20:INC.VII",
+   "desired_reference": "STF Tema 676 (Repercussão Geral) — terrenos de marinha após a EC 46/2005",
+   "purpose": "titularidade dos terrenos de marinha em ilhas costeiras com sede de Municipio (bloco art. 20, III, IV, VI e VII)",
+   "local_identity_searched": "STF:RG:676",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:676:CF88:20:-:VII:-@CF88:ART.20:INC.VII",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "terrenos de marinha",
+     "46/2005"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:676:CF88:20:-:VII:-",
+    "thesis_excerpt": "A Emenda Constitucional nº 46/2005 não interferiu na propriedade da União, nos moldes do art. 20, VII, da Constituição da República, sobre os terrenos de marinha e seus acrescidos situados em ilhas costeiras sede de Municípios.",
+    "official_source_sha256": "236a8710acf9ab92319c71ac985d71473021f689bd4d46840d9c3d4c153867dd",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.20:INC.XI",
+   "desired_reference": "STF Tema 1031 (Repercussão Geral) — demarcação e regime das terras tradicionalmente ocupadas pelos povos indígenas",
+   "purpose": "vinculo principal no art. 231 (alvo principal futuro do ENTENDA) e correlato no art. 20, XI",
+   "local_identity_searched": "STF:RG:1031",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:1031:CF88:231:-:-:-@CF88:ART.231",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "indígena",
+     "terras públicas",
+     "inalienáveis"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:1031:CF88:231:-:-:-",
+    "thesis_excerpt": "I - A demarcação consiste em procedimento declaratório do direito originário territorial à posse das terras ocupadas tradicionalmente por comunidade indígena;II - A posse tradicional indígena é distinta da posse civil, consistindo na ocupação das terras habitadas em caráter permanente pelos indígenas, nas utilizadas para suas atividades produtivas, nas imprescindíveis à preservação dos recursos am",
+    "official_source_sha256": "aec00c90d1a6d1eb43ee1b7bba81a0896fb7b97aa6bace0b61f77fc1620d9fcf",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK",
+   "primary_target_id": "CF88:ART.231",
+   "correlated_target_id": "CF88:ART.20:INC.XI",
+   "excluded_local_links": [
+    {
+     "target_id": "CF88:ART.16",
+     "reason": "Falso positivo: a tese cita o 'art. 16.4 da Convenção 169 OIT', e nao o art. 16 da CF (anualidade eleitoral).",
+     "local_link_present": true,
+     "status": "MATERIAL_MISMATCH_EXCLUDED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XII:AL.b",
+   "desired_reference": "STF Tema 774 (Repercussão Geral) — norma estadual e concessionária de energia elétrica",
+   "purpose": "limites da atuacao estadual sobre concessionarias federais",
+   "local_identity_searched": "STF:RG:774",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:774:CF88:21:-:XII:b@CF88:ART.21:INC.XII:AL.b",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "energia elétrica"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:774:CF88:21:-:XII:b",
+    "thesis_excerpt": "A norma estadual que impõe à concessionária de geração de energia elétrica a promoção de investimentos, com recursos identificados como parcela da receita que aufere, voltados à proteção e à preservação de mananciais hídricos é inconstitucional por configurar intervenção indevida do Estado no contrato de concessão da exploração do aproveitamento energético dos cursos de água, atividade de competên",
+    "official_source_sha256": "75109ddcf10677b5a48b13facc26cc4e3ee48066a19f2586db0794c5e756535f",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XVI",
+   "desired_reference": "STF ADI 2404 — classificação indicativa e vinculação a horários de exibição",
+   "purpose": "classificacao indicativa nao equivale a autorizacao ou censura previa de exibicao; tese mantida fora do corpo",
+   "local_identity_searched": "STF:ADI:2404",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "human_supplied": {
+    "summary": "Ideia central informada pela revisao humana: a classificacao indicativa nao equivale a autorizacao ou censura previa de exibicao. Ementa e tese nao foram ingeridas; nada foi fabricado.",
+    "source": "revisao humana de 2026-09-29 (nao e registro local)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.22:INC.I",
+   "desired_reference": "STF Tema 1246 (Repercussão Geral) — norma penal em branco complementada por atos dos entes",
+   "purpose": "competencia penal e complementacao por atos infralegais",
+   "local_identity_searched": "STF:RG:1246",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:1246:CF88:22:-:I:-@CF88:ART.22:INC.I",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "norma penal em branco"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:1246:CF88:22:-:I:-",
+    "thesis_excerpt": "O art. 268 do Código Penal veicula norma penal em branco que pode ser complementada por atos normativos infralegais editados pelos entes federados (União, Estados, Distrito Federal e Municípios), respeitadas as respectivas esferas de atuação, sem que isso implique ofensa à competência privativa da União para legislar sobre direito penal (CF, art. 22, I).",
+    "official_source_sha256": "69ff3ccbbc1ca681593aa7e712abfa88c4deb55fb3804deff7fc68b38d11f929",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.22:INC.IV",
+   "desired_reference": "STF Tema 1235 (Repercussão Geral) — lei municipal e telecomunicações",
+   "purpose": "invasao da competencia sobre telecomunicacoes",
+   "local_identity_searched": "STF:RG:1235",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:1235:CF88:22:-:IV:-@CF88:ART.22:INC.IV",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "telecomunica"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:1235:CF88:22:-:IV:-",
+    "thesis_excerpt": "É inconstitucional a Lei 13.756/2004 do Município de São Paulo, por configurar invasão à competência privativa da União para legislar sobre telecomunicações e radiodifusão (artigo 22, IV, da Constituição Federal).",
+    "official_source_sha256": "5f191ce02578ba98d8a3b0e81af620bd34183b79f275a9ca831f4bc972962e32",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.22:INC.IV",
+   "desired_reference": "STF Tema 919 (Repercussão Geral) — taxa de fiscalização de torres e antenas",
+   "purpose": "taxa sobre infraestrutura de telecomunicacoes",
+   "local_identity_searched": "STF:RG:919",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:919:CF88:22:-:IV:-@CF88:ART.22:INC.IV",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "torres",
+     "competência privativa"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:919:CF88:22:-:IV:-",
+    "thesis_excerpt": "A instituição de taxa de fiscalização do funcionamento de torres e antenas de transmissão e recepção de dados e voz é de competência privativa da União, nos termos do art. 22, IV, da Constituição Federal, não competindo aos Municípios instituir referida taxa.",
+    "official_source_sha256": "ce6bd1d5372d50564f580fe2aabe554b0ac02045726d7cea9da1569b07cebb38",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.22:INC.VI",
+   "desired_reference": "STF Tema 5 (Repercussão Geral) — sistema monetário (Lei 8.880/1994)",
+   "purpose": "competencia sobre sistema monetario",
+   "local_identity_searched": "STF:RG:5",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:5:CF88:22:-:VI:-@CF88:ART.22:INC.VI",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "sistema monetário"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:5:CF88:22:-:VI:-",
+    "thesis_excerpt": "I - Ao editar a Lei 8.880/1994, a União legislou sobre o sistema monetário e exerceu a sua competência prevista no art. 22, VI, da Constituição de 1988. Assim, qualquer lei, seja ela estadual ou municipal, que discipline a conversão da moeda Cruzeiro Real em URV no que tange à remuneração de seus servidores de uma forma incompatível com a prevista na Lei nº 8.880/94 será inconstitucional, mormente",
+    "official_source_sha256": "73267cc8e169404cf22ecf9106acca6e841d21efcbe84b32b474509b87cc649f",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XI",
+   "desired_reference": "STF Tema 967 (Repercussão Geral) — transporte individual por aplicativo",
+   "purpose": "limites de leis locais sobre transporte",
+   "local_identity_searched": "STF:RG:967",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:967:CF88:22:-:XI:-@CF88:ART.22:INC.XI",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "transporte"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:967:CF88:22:-:XI:-",
+    "thesis_excerpt": "1. A proibição ou restrição da atividade de transporte privado individual por motorista cadastrado em aplicativo é inconstitucional, por violação aos princípios da livre iniciativa e da livre concorrência; e 2. No exercício de sua competência para regulamentação e fiscalização do transporte privado individual de passageiros, os Municípios e o Distrito Federal não podem contrariar os parâmetros fix",
+    "official_source_sha256": "abed87c7e7062e521a5166448f857e69f31a3f34c2e6c8b710d8f7da0673b1f4",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XX",
+   "desired_reference": "STF — exploração de loterias pelos Estados e competência da União para legislar sobre sistemas de consórcios e sorteios",
+   "purpose": "legislar sobre sorteios nao se confunde com explorar loterias",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XXI",
+   "desired_reference": "STF Tema 1177 (Repercussão Geral) — normas gerais sobre inatividades e pensões de militares estaduais",
+   "purpose": "alcance das normas gerais",
+   "local_identity_searched": "STF:RG:1177",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:1177:CF88:22:-:XXI:-@CF88:ART.22:INC.XXI",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "polícias militares"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:1177:CF88:22:-:XXI:-",
+    "thesis_excerpt": "A competência privativa da União para a edição de normas gerais sobre inatividades e pensões das polícias militares e dos corpos de bombeiros militares (artigo 22, XXI, da Constituição, na redação da Emenda Constitucional 103/2019) não exclui a competência legislativa dos Estados para a fixação das alíquotas da contribuição previdenciária incidente sobre os proventos de seus próprios militares ina",
+    "official_source_sha256": "21fa45b1d7eac8072f9e4cf1e9dd6f1f45287a62a1413679c5a6696ea645e049",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  },
+  {
+   "target_id": "CF88:ART.23:INC.II",
+   "desired_reference": "STF Tema 793 (Repercussão Geral) — responsabilidade dos entes federados em demandas de saúde",
+   "purpose": "responsabilidade solidaria dos entes na saude, mantida fora do corpo",
+   "local_identity_searched": "STF:RG:793",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.23:PAR.UNICO",
+   "desired_reference": "STF — cooperação federativa em matéria ambiental (lei complementar de cooperação)",
+   "purpose": "divisao de atribuicoes ambientais",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.24:INC.VI",
+   "desired_reference": "STF Tema 145 (Repercussão Geral) — Município e legislação ambiental no interesse local",
+   "purpose": "atuacao legislativa municipal em materia concorrente",
+   "local_identity_searched": "STF:RG:145",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:145:CF88:24:-:VI:-@CF88:ART.24:INC.VI",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "meio ambiente",
+     "interesse local"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:145:CF88:24:-:VI:-",
+    "thesis_excerpt": "O município é competente para legislar sobre o meio ambiente com a União e o Estado, no limite do seu interesse local e desde que tal regramento seja harmônico com a disciplina estabelecida pelos demais entes federados (art. 24, VI, c/c 30, I e II, da Constituição Federal).",
+    "official_source_sha256": "a590c653cf53580a4d62481835b544bba67a68adf45081cdc5f2916ddd65c628",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK"
+  }
+ ]
+}

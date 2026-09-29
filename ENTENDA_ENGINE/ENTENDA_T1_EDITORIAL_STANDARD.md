@@ -276,3 +276,23 @@ Estados possíveis de uma recomendação:
 
 - Informação fornecida pela revisão humana sobre uma tese ainda não ingerida fica em `human_supplied` e não altera o status.
 - A política vale para os lotes com `report_schema >= 2`. O Batch 01 aprovado permanece byte-idêntico.
+
+## 15. Adendo A5 (2026-09-29): linguagem para iniciantes, vínculos corrigidos e mismatch material
+
+### Regra editorial fixa: leitor dos primeiros semestres de Direito
+
+- **Não presumir jargão.** O texto deve ser compreensível para quem está nos primeiros semestres de Direito.
+- **Termo técnico dispensável:** preferir a expressão comum.
+- **Termo técnico importante:** (1) explicar primeiro em linguagem simples; (2) apresentar o termo jurídico; (3) registrá-lo em PALAVRAS DIFÍCEIS.
+  - Evitar: "a outorga será concedida...". Preferir: "o poder público autoriza o uso da água. Essa autorização é chamada de outorga."
+- **PALAVRAS DIFÍCEIS** prepara o futuro DICIONÁRIO (camada própria e clicável, ainda não implementada): definição curta e útil, nunca um mini-tratado.
+- **Dados institucionais mutáveis** (nome ou natureza de órgãos e entidades, leis regulamentadoras recentes) não entram no núcleo permanente: ficam na CAMADA EXTERNA e em nota temporal, com fonte e data de verificação.
+
+### Jurisprudência: estados adicionais
+
+| Status | Quando |
+|---|---|
+| `MATERIAL_MISMATCH_EXCLUDED` | a identidade existe localmente, a tese local foi lida e trata de outro assunto (declarado em `material_mismatch` no spec; o build falha se a tese local contiver o assunto) |
+
+- **Alvo principal × correlato.** `primary_target_id` indica o dispositivo em que o vínculo curado deve ficar (ex.: art. 231); o target da recomendação é o correlato (ex.: art. 20, XI). `READY_TO_LINK` exige o vínculo local no alvo principal e a tese materialmente conferida.
+- **Vínculo local equivocado.** `excluded_local_links` registra, como overlay, o vínculo local errado (ex.: Tema 1031 → art. 16, falso positivo do "art. 16.4 da Convenção 169 OIT"). As fontes originais de jurisprudência não são editadas; o vínculo excluído nunca é usado.

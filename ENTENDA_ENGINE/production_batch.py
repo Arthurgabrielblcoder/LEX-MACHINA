@@ -150,6 +150,13 @@ def _catalog(ctx):
     return out
 
 
+def _catalog_key(target_id):
+    """CF88:ART.231:PAR.1 -> CF88:231:1:-:- (vinculo_id suffix of the curated catalog)."""
+    parts = target_id.split(':')
+    seg = {p.split('.')[0]: p.split('.', 1)[1] for p in parts[1:] if '.' in p}
+    return ':'.join([parts[0], seg.get('ART', '-'), seg.get('PAR', '-'),seg.get('INC', '-'), seg.get('AL', '-')])
+
+
 def _verify_subject(rec, keywords):
     thesis = (rec.get('tese_ou_resumo') or '')
     low = thesis.lower()
@@ -168,11 +175,21 @@ def jurisprudence_recommendations_v2(spec, ctx, local):
     for r in spec.get('jurisprudence_recommendations', []):
         ident = r.get('local_identity') or ''
         found = local.get(ident, [])
-        on_target = [f for f in found if f['target_id'] == r['target_id']]
+        # primary_target_id: the curated link lives on the principal device (e.g. art. 231) and this target is a correlated one
+        link_target = r.get('primary_target_id') or r['target_id']
+        excluded = {x['target_id'] for x in r.get('excluded_local_links', [])}
+        on_target = [f for f in found if f['target_id'] == link_target]
         recs = [x for x in cat.get(ident, []) if x.get('vinculo_id', '').startswith(ident + ':')]
+        if r.get('primary_target_id'):  # read the thesis from the catalog record of the principal device
+            recs = sorted(recs, key=lambda x: x.get('vinculo_id') != f"{ident}:{_catalog_key(link_target)}")
         ver = _verify_subject(recs[0], r.get('subject_keywords', [])) if recs else None
+        if r.get('material_mismatch') and ver and ver['verified']:
+            raise BatchError('JURIS_MISMATCH_CONTRADICTED', f"{r['target_id']} {ident}: tese local contem o assunto; revisar material_mismatch")
         if found and on_target and ver and ver['verified']:
             status = 'READY_TO_LINK'
+        elif r.get('material_mismatch') and recs:
+            # identity exists locally, the local thesis was read and it treats another subject: never link to this target
+            status = 'MATERIAL_MISMATCH_EXCLUDED'
         elif found or recs:
             status = 'IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION'
         else:
@@ -181,18 +198,31 @@ def jurisprudence_recommendations_v2(spec, ctx, local):
                     local_identity_searched=r.get('local_identity'), local_record_found=bool(found or recs),
                     local_reference_id=(on_target or found)[0]['reference_id'] if found else None,
                     already_linked_to_target=bool(on_target), subject_verification=ver, status=status)
+        if r.get('primary_target_id'):
+            item.update(primary_target_id=link_target, correlated_target_id=r['target_id'])
+        if r.get('excluded_local_links'):
+            # overlay only: the original catalog/export is never edited; the wrong local link is recorded and never used
+            item['excluded_local_links'] = [dict(x, local_link_present=any(f['target_id'] == x['target_id'] for f in found),
+                                                 status='MATERIAL_MISMATCH_EXCLUDED') for x in r['excluded_local_links']]
+            if on_target and on_target[0]['target_id'] in excluded:
+                raise BatchError('JURIS_EXCLUDED_LINK_USED', f"{r['target_id']} {ident}")
         if r.get('human_supplied'):
             item['human_supplied'] = r['human_supplied']  # informed by the human review; not a local record
-        if status == 'PENDING_EXTERNAL_INGESTION':
+        if status == 'MATERIAL_MISMATCH_EXCLUDED':
+            item['material_mismatch'] = r['material_mismatch']
+            item['note'] = 'Tese local conferida: trata de outro assunto. Vinculo local existente NAO deve ser usado como jurisprudencia pertinente a este target.'
+        elif status == 'PENDING_EXTERNAL_INGESTION':
             item['note'] = 'Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial.'
         elif status != 'READY_TO_LINK':
             item['note'] = 'Identidade encontrada localmente, mas o assunto/tese nao foi comprovado localmente; nao vincular ainda.'
         out.append(item)
-    counts = {k: sum(1 for x in out if x['status'] == k) for k in ('READY_TO_LINK', 'IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION', 'PENDING_EXTERNAL_INGESTION')}
+    counts = {k: sum(1 for x in out if x['status'] == k) for k in ('READY_TO_LINK', 'IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION', 'PENDING_EXTERNAL_INGESTION',
+                                                                  'MATERIAL_MISMATCH_EXCLUDED')}
+    extra = dict(material_mismatch_excluded=counts['MATERIAL_MISMATCH_EXCLUDED']) if counts['MATERIAL_MISMATCH_EXCLUDED'] else {}
     return dict(schema_version=2, batch_id=spec['batch_id'], policy='ENTENDA nao incorpora jurisprudencia; READY_TO_LINK exige tribunal, tipo, numero e assunto comprovados localmente',
                 local_sources=[ctx.ncfg.get('reference_export'), ctx.ncfg.get('jurisprudence_catalog')], total=len(out),
                 ready_to_link=counts['READY_TO_LINK'], identity_found_pending_subject_verification=counts['IDENTITY_FOUND_PENDING_SUBJECT_VERIFICATION'],
-                pending_external_ingestion=counts['PENDING_EXTERNAL_INGESTION'], recommendations=out)
+                pending_external_ingestion=counts['PENDING_EXTERNAL_INGESTION'], **extra, recommendations=out)
 
 
 def jurisprudence_recommendations(spec, ctx):
@@ -305,6 +335,8 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
                                                     pending_external_ingestion=juris['pending_external_ingestion'])
     if spec.get('report_schema', 1) >= 2:
         summary['jurisprudence_recommendations']['identity_found_pending_subject_verification'] = juris['identity_found_pending_subject_verification']
+        if juris.get('material_mismatch_excluded'):
+            summary['jurisprudence_recommendations']['material_mismatch_excluded'] = juris['material_mismatch_excluded']
         summary.update(targets_structurally_present=sum(1 for r in rows if r['structurally_present']),
                        targets_legally_current=sum(1 for r in rows if r['legally_current']),
                        targets_revoked=sum(1 for r in rows if r['legal_status'] == 'REVOKED'))

@@ -97,6 +97,8 @@ def apply(spec_path):
     doc = dict(schema_version=1, batch_id=spec['batch_id'], review_date=spec['human_review']['reviewed_on'], review_status='HUMAN_REVIEW_COMPLETED',
                original_drafts=spec['original_drafts'], original_drafts_preserved=True, decision_counts=dict(sorted(counts.items())),
                created_by_review=[n['target_id'] for n in spec.get('new_explanations', [])], decisions=decisions)
+    if spec.get('decisions_schema', 1) >= 2:  # batch 03+: scope and hashes of the evidence handed to the reviewer
+        doc = dict(doc, schema_version=2, review_scope=spec['review_scope'], original_evidence_sha256=spec['evidence_sha256'])
     for p in spec['decisions_out']:
         _dump(doc, base / p)
     _dump(out, base / spec['reviewed_drafts_out'])

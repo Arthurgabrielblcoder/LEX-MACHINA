@@ -1,0 +1,829 @@
+{
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_03",
+ "review_scope": "CF88_ARTS_18_24",
+ "decisions_schema": 2,
+ "original_drafts": "BATCH_03_DRAFTS.json",
+ "reviewed_drafts_out": "../production_batch_03_final/EDITORIAL_SOURCE.json",
+ "decisions_out": [
+  "HUMAN_REVIEW_DECISIONS.json",
+  "../production_batch_03_final/HUMAN_REVIEW_DECISIONS.json"
+ ],
+ "evidence_sha256": {
+  "BATCH_03_DRAFTS.json": "e3c084f981f49cc72e22db1167f75d4d137102294de75ed50fdc05413138675c",
+  "REVIEW_BATCH_03.md": "732dbb2d73ab2c3994924cbd15acbc2bd467f235c3d9ae422197ec365f1208da",
+  "CF88_BATCH_03.entenda.jsonl": "5dfc4f94fcc7432b7ea474d165a012fb69ab9b5d4a49146494dce723c218272c",
+  "SELECTION_REPORT.json": "e6b8834fd414c280bb227df2d930bfc6dcbbb8b975350fd5c4b4cd37f3b31c64",
+  "JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "bd701814e0d83c3bafb1a65e29937c625cba0412e0438d1d4d929f3bfd851cbf",
+  "index/ENTENDA_LOOKUP.IDX": "970765ad0387951becc626d2b3ab7b1bf5eefccd91832adfd95ff0f6ecc27912",
+  "index/ENTENDA_PAYLOAD.DAT": "728979fb6da92602d7fd71bb68b1f3ebc018d4a3aea6b17a9c11a53171afa7ec",
+  "index/ENTENDA_BUILD_MANIFEST.json": "305ed948532d931dff59a10c68cd797b944f3cd6f0518f30595df58ef67469f0",
+  "BATCH_SPEC.json (antes de superseded_by_final)": "3ab3e5987b6ace2506428c8052a3d7072f539b18614959a0e0a1e3edf0fb15ad"
+ },
+ "human_review": {
+  "decision": "BATCH 03 REVISADO: APROVADO (ajustes pontuais, atualizacoes legislativas conferidas em fonte oficial e tres explicacoes criadas pela revisao)",
+  "reviewed_on": "2026-09-29",
+  "reviewer": "revisao humana (usuario do projeto)",
+  "standard": "ENTENDA-T1 (+ regra editorial de linguagem para iniciantes, §15)",
+  "review_scope": "CF88_ARTS_18_24",
+  "decisions": "ENTENDA_ENGINE/derived/production_batch_03/HUMAN_REVIEW_DECISIONS.json"
+ },
+ "reviews": [
+  {
+   "target_id": "CF88:ART.18",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve: retirado do nucleo permanente o dado de fato sobre a inexistencia atual de Territorios; mantida a formulacao estrutural (Territorios integram a Uniao, sem a autonomia dos entes).",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O artigo apresenta os entes da Federação. Autonomia significa que cada ente tem esfera própria de atuação definida pela Constituição: organiza-se, elege seus governantes, administra seus serviços e edita suas leis dentro das competências constitucionais. Autonomia não é soberania: a soberania pertence à República Federativa do Brasil como um todo.\nOs Territórios Federais não são entes autônomos: integram a União. Criar um Território, convertê-lo em Estado ou devolvê-lo ao Estado de onde saiu depende de lei complementar. Hoje não há Territórios Federais instalados, mas a Constituição mantém a possibilidade.",
+     "after": "O artigo apresenta os entes da Federação. Autonomia significa que cada ente tem uma esfera própria de atuação definida pela Constituição: organiza-se, elege seus governantes, administra seus serviços e edita suas leis dentro das competências constitucionais. Autonomia não é soberania: a soberania pertence à República Federativa do Brasil como um todo.\nOs Territórios Federais integram a União e não possuem a mesma autonomia constitucional dos entes federativos. Criar um Território, transformá-lo em Estado ou reintegrá-lo ao Estado de origem depende de lei complementar."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.18:PAR.3",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado: plebiscito da populacao diretamente interessada + lei complementar do Congresso Nacional; sem aprofundar no corpo quem compoe a populacao interessada."
+  },
+  {
+   "target_id": "CF88:ART.18:PAR.4",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante por legislacao de 2026: corpo constitucional preservado; LC 230/2026 conferida no texto oficial e registrada na camada externa e em nota temporal, sem generalizar para criacao de Municipios.",
+   "edits": [
+    {
+     "section": "external_layer_notes",
+     "before": "A edição da lei complementar federal prevista no parágrafo e a situação de Municípios criados sem ela são tratadas na camada JURISPRUDÊNCIA.",
+     "after": "A situação de Municípios criados sem a lei complementar federal é tratada na camada JURISPRUDÊNCIA."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": null,
+     "after": "Legislação (verificada em 2026-09-29 no texto oficial): a Lei Complementar nº 230/2026 (DOU de 16/04/2026) fixou normas gerais apenas para o desmembramento de parte de um Município para incorporação a outro, limítrofe. Por essa via não pode ser criado novo Município (art. 1º, § 1º), e a lei não se aplica a conflitos de natureza interestadual (art. 1º, § 2º). Ela não é autorização geral para criar Municípios. Ver nota temporal."
+    },
+    {
+     "section": "temporal",
+     "before": null,
+     "after": {
+      "time_sensitive": true,
+      "as_of": "2026-09-29",
+      "notes": [
+       {
+        "note_id": "LC_230_2026_DESMEMBRAMENTO_INCORPORACAO_LIMITROFE",
+        "source_type": "LEI_COMPLEMENTAR",
+        "source_id": "LC 230/2026",
+        "text": "Situação em 2026-09-29: a Lei Complementar nº 230, de 15/04/2026, publicada no DOU de 16/04/2026 e em vigor na data da publicação (art. 8º), estabelece normas gerais aplicáveis ao desmembramento de parte de um Município para incorporação a outro, limítrofe, nos termos do § 4º do art. 18. Em nenhuma hipótese esse desmembramento pode resultar na criação de novo Município (art. 1º, § 1º); a lei não se aplica a conflitos de natureza interestadual (art. 1º, § 2º); e o período para esse desmembramento é de 15 anos contados da publicação (art. 1º, § 3º). A lei não disciplina a criação de novos Municípios.",
+        "valid_from": "2026-04-16",
+        "review_after": "2027-09-29",
+        "verified_on": "2026-09-29",
+        "source_url": "https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-230-15-abril-2026-798953-publicacaooriginal-178916-pl.html"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.19",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajustado: sem afirmacao ampla de que o Estado nao financia cultos; exemplo sem o caso do templo; fe dos documentos sem formula absoluta. Laicidade nao e hostilidade preservado; Tema 1157 segue MATERIAL_MISMATCH_EXCLUDED.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O inciso I consagra a laicidade do Estado: o poder público não adota religião oficial, não financia cultos e não cria obstáculos a eles. A laicidade não impede a colaboração de interesse público, desde que prevista em lei.\nO inciso II garante que um documento público emitido por um ente seja aceito pelos demais, sem desconfiança sobre sua autenticidade. O inciso III impede que os entes tratem brasileiros de forma diferente conforme sua origem ou que um ente favoreça outro indevidamente.",
+     "after": "O inciso I trata da neutralidade do Estado em matéria religiosa, chamada de laicidade. O poder público não pode estabelecer, subvencionar ou favorecer cultos ou igrejas como religião estatal, nem embaraçar seu funcionamento. A Constituição admite colaboração de interesse público, na forma da lei.\nO inciso II impede que um ente público recuse fé a documento público apenas porque ele foi expedido por outro ente. O inciso III impede que os entes criem distinções entre brasileiros ou preferências entre si."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Um Município não pode custear a construção de um templo de determinada religião, porque isso seria subvencionar culto. Pode, porém, firmar parceria com entidade religiosa para manter um abrigo de pessoas em situação de rua, se houver interesse público e previsão legal.",
+     "after": "Um Município não pode criar subsídio destinado simplesmente a custear a atividade religiosa de determinada igreja. Pode haver colaboração com entidade religiosa em atividade de interesse público, como o acolhimento de pessoas em situação de rua, observados a lei e o dever de neutralidade estatal."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Subvencionar",
+     "before": "custear ou financiar com recursos públicos.",
+     "after": "sustentar uma atividade com dinheiro público, por exemplo por meio de subsídio."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.20",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado; ajuste de linguagem: 'povos indigenas' em vez de 'indios' no ENTENDA (a Lei Seca permanece literal). Mantido o ponto central bem da Uniao x competencia da Uniao.",
+   "edits": [
+    {
+     "section": "o_que_diz",
+     "before": "O art. 20 enumera os bens da União. O rol inclui os bens que ela já possui ou venha a receber, terras devolutas ligadas à defesa e à preservação ambiental, águas e ilhas em certas situações, mar territorial, terrenos de marinha, recursos naturais da plataforma continental e da zona econômica exclusiva, potenciais de energia hidráulica, recursos minerais, cavidades naturais, sítios arqueológicos e terras tradicionalmente ocupadas pelos índios. Os parágrafos tratam da participação nos resultados da exploração de recursos e da faixa de fronteira.",
+     "after": "O art. 20 enumera os bens da União. O rol inclui os bens que ela já possui ou venha a receber, terras devolutas ligadas à defesa e à preservação ambiental, águas e ilhas em certas situações, mar territorial, terrenos de marinha, recursos naturais da plataforma continental e da zona econômica exclusiva, potenciais de energia hidráulica, recursos minerais, cavidades naturais, sítios arqueológicos e terras tradicionalmente ocupadas pelos povos indígenas. Os parágrafos tratam da participação nos resultados da exploração de recursos e da faixa de fronteira."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.20:INC.III",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado; bloco preservado. Tema 676 mantido como recomendacao apenas com verificacao material (terrenos de marinha apos a EC 46/2005)."
+  },
+  {
+   "target_id": "CF88:ART.20:INC.V",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve: cavidades e sitios arqueologicos descritos de forma objetiva (bens da Uniao com regime proprio de protecao), sem misturar titularidade com protecao coletiva.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O bloco reúne recursos de grande valor econômico, estratégico e cultural. Um ponto central é a separação entre o solo e o subsolo: quem é dono de um terreno não é dono dos minérios que existem nele, que pertencem à União. A exploração depende de autorização ou concessão da União, conforme o art. 176.\nOs sítios arqueológicos e as cavernas são protegidos como patrimônio de todos, sob titularidade da União.",
+     "after": "O bloco reúne recursos de grande valor econômico, estratégico e cultural. Um ponto central é a separação entre o solo e o subsolo: quem é dono de um terreno não é dono dos minérios que existem nele, que pertencem à União. A exploração depende de autorização ou concessão da União, conforme o art. 176.\nAs cavidades naturais subterrâneas, assim como os sítios arqueológicos e pré-históricos, também são bens da União e possuem regime próprio de proteção."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Jazida",
+     "add": true,
+     "after": "local onde há concentração natural de minério com valor econômico."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.20:INC.XI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante: sem interpretacao teleologica da titularidade; regime especial do art. 231 descrito objetivamente; exemplo sem simplificacao absoluta; 'povos indigenas'. Tema 1031: vinculo principal no art. 231 e correlato no art. 20, XI; vinculo local com o art. 16 excluido.",
+   "edits": [
+    {
+     "section": "o_que_diz",
+     "before": "Inclui entre os bens da União as terras tradicionalmente ocupadas pelos índios.",
+     "after": "Inclui entre os bens da União as terras que os povos indígenas tradicionalmente ocupam."
+    },
+    {
+     "section": "o_que_significa",
+     "before": "Essas terras pertencem à União, mas sua destinação é voltada aos povos indígenas. O art. 231 garante a eles a posse permanente e o usufruto exclusivo das riquezas do solo, dos rios e dos lagos nelas existentes.\nA titularidade da União serve para proteger essas terras, que são inalienáveis e indisponíveis, e não para permitir que a União as destine a outras finalidades.",
+     "after": "Embora sejam bens da União, essas terras possuem regime constitucional especial. O art. 231 assegura aos povos indígenas a posse permanente e o usufruto exclusivo das riquezas do solo, dos rios e dos lagos, além de estabelecer outras garantias próprias.\nUsufruto exclusivo quer dizer que somente a comunidade indígena pode usar e aproveitar essas riquezas. Essas terras também são inalienáveis, isto é, não podem ser vendidas nem transferidas."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma área reconhecida como terra tradicionalmente ocupada por um povo indígena não pode ser vendida pela União nem ocupada por terceiros. A comunidade indígena tem a posse permanente e o usufruto exclusivo das riquezas do solo, dos rios e dos lagos, nos termos do art. 231.",
+     "after": "Uma terra reconhecida como tradicionalmente ocupada não pode ser tratada pela União como imóvel público comum disponível para venda. Sua posse e utilização seguem o regime especial do art. 231."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": "Os critérios de demarcação e de reconhecimento da ocupação tradicional são tratados na camada JURISPRUDÊNCIA e na legislação (recomendação registrada separadamente).",
+     "after": "Os critérios de demarcação e de reconhecimento da ocupação tradicional são tratados na legislação e na camada JURISPRUDÊNCIA (recomendação registrada com vínculo principal no art. 231 e o art. 20, XI, como dispositivo correlato)."
+    }
+   ],
+   "display_topic": "Terras tradicionalmente ocupadas pelos povos indígenas"
+  },
+  {
+   "target_id": "CF88:ART.20:PAR.1",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve: formulacao nao restritiva sobre royalties; mencionados todos os entes; calculo e distribuicao pela legislacao.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Embora esses recursos sejam bens da União, os entes afetados pela exploração participam de seus resultados. É daqui que vêm os royalties e as compensações financeiras pagos aos Estados e Municípios onde ocorre a exploração.\nA forma de cálculo e de distribuição é definida pela lei.",
+     "after": "Embora esses recursos sejam bens da União, a Constituição garante a todos os entes — União, Estados, Distrito Federal e Municípios — participação no resultado da exploração ou compensação financeira, nos termos da lei.\nEsse dispositivo fornece fundamento constitucional para participações no resultado e compensações financeiras relacionadas à exploração desses recursos, entre elas os chamados royalties. A forma de cálculo e distribuição é definida pela legislação."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.20:PAR.2",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve no exemplo: sem sugerir que toda compra imobiliaria sofre as mesmas exigencias. Faixa de fronteira nao e propriedade automatica da Uniao preservado.",
+   "edits": [
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma empresa quer adquirir imóvel rural situado a oitenta quilômetros da fronteira terrestre. Como a área está na faixa de fronteira, a aquisição deve observar as condições especiais previstas na legislação.",
+     "after": "Uma empresa com participação estrangeira pretende adquirir ou explorar imóvel rural situado dentro da faixa de fronteira. A operação pode estar sujeita às condições especiais previstas na legislação."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado: art. 21 = fazer/executar/administrar; art. 22 = legislar; 'exclusivas' registrado como classificacao doutrinaria."
+  },
+  {
+   "target_id": "CF88:ART.21:INC.I",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado."
+  },
+  {
+   "target_id": "CF88:ART.21:INC.VII",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado."
+  },
+  {
+   "target_id": "CF88:ART.21:INC.IX",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado."
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante: separado o servico postal (a Uniao o mantem) das formas de exploracao dos incisos XI e XII (direta ou por autorizacao, concessao ou permissao, conforme o caso); retirada a generalizacao de que todos podem ser delegados.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O bloco define serviços e infraestruturas de interesse nacional cuja titularidade é da União. Ela pode prestá-los diretamente ou delegá-los a empresas por autorização, concessão ou permissão, mantendo a regulação e a fiscalização.\nA titularidade federal explica por que o transporte rodoviário interestadual de passageiros é regulado pela União, enquanto o transporte coletivo dentro de uma cidade é, em regra, assunto municipal.",
+     "after": "O bloco reúne serviços e infraestruturas atribuídos constitucionalmente à União. No serviço postal, o texto determina que a União o mantenha. Nos serviços dos incisos XI e XII, a Constituição prevê, conforme o caso, exploração direta ou por autorização, concessão ou permissão.\nComo o transporte rodoviário interestadual de passageiros está entre esses serviços federais, ele é regulado pela União; o transporte coletivo dentro de uma cidade é, em regra, assunto municipal."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Permissão",
+     "before": "delegação de serviço público a particular, em regra mais precária que a concessão.",
+     "after": "forma de o poder público transferir a um particular a prestação de um serviço, em regra com vínculo menos estável que a concessão."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Concessão",
+     "add": true,
+     "after": "contrato pelo qual o poder público transfere a uma empresa a prestação de um serviço público, que continua sob regras e fiscalização públicas."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado com microajuste no glossario de 'Polícia de fronteiras', sem misturar com atribuicao aduaneira.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Polícia de fronteiras",
+     "before": "atividade policial de controle da entrada e saída de pessoas e bens nas fronteiras do País.",
+     "after": "atividade policial exercida nas áreas de fronteira para proteção e fiscalização relacionadas à segurança e ao ingresso e saída do território nacional."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XVI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante de camada: criterios concretos (violencia, sexo, drogas) retirados do corpo e remetidos a regulamentacao; ADI 2404 registrada apenas na camada externa.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A União informa ao público a faixa etária recomendada para espetáculos e programas, considerando conteúdos como violência, sexo e drogas. A expressão \"para efeito indicativo\" é essencial: a classificação orienta pais, responsáveis e o público, mas não autoriza censura prévia.\nA regra deve ser lida com a liberdade de expressão (art. 5º, IX) e com a proteção de crianças e adolescentes.",
+     "after": "A União classifica determinados conteúdos para informar ao público a faixa etária recomendada. O caráter é indicativo; os critérios concretos utilizados são definidos pela regulamentação.\nA expressão \"para efeito indicativo\" é essencial: a classificação orienta pais, responsáveis e o público. A regra deve ser lida com a liberdade de expressão (art. 5º, IX) e com a proteção de crianças e adolescentes."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": "A vinculação da classificação indicativa a horários obrigatórios de exibição é tratada na camada JURISPRUDÊNCIA.",
+     "after": "Recomendação à camada JURISPRUDÊNCIA: STF, ADI 2404 (classificação indicativa e vinculação a horários de exibição). A tese não é incorporada ao corpo do ENTENDA."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XVII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste na definicao de anistia (lei que alcanca fatos ou infracoes e extingue a punibilidade dos abrangidos); distincao anistia x indulto x graca sem aprofundamento; mantida a expressao 'anistia penal'.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Anistia é o perdão concedido em relação a fatos, apagando seus efeitos penais para todos os que os praticaram. Por ser competência da União, é concedida por lei federal aprovada pelo Congresso Nacional (art. 48, VIII).\nA anistia não se confunde com o indulto e a graça, que são concedidos pelo Presidente da República (art. 84, XII) e atingem pessoas ou grupos, e não os fatos em si.",
+     "after": "Anistia é uma medida concedida por lei que alcança determinados fatos ou infrações e extingue a punibilidade das pessoas abrangidas por ela, isto é, afasta a possibilidade de puni-las por aqueles fatos. Por ser competência da União, é concedida por lei federal aprovada pelo Congresso Nacional (art. 48, VIII).\nA anistia não se confunde com o indulto e a graça, que são atos do Presidente da República (art. 84, XII): o indulto beneficia, em regra, um grupo de condenados, e a graça, uma pessoa determinada."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Anistia",
+     "before": "perdão estatal que alcança fatos e extingue seus efeitos penais para todos os envolvidos.",
+     "after": "medida concedida por lei que alcança determinados fatos ou infrações e extingue a punibilidade das pessoas abrangidas por ela."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Graça",
+     "add": true,
+     "after": "benefício individual concedido pelo Presidente da República a um condenado determinado."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Punibilidade",
+     "add": true,
+     "after": "possibilidade de o Estado aplicar pena a quem praticou uma infração."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XVIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve: a Uniao institui o sistema e define criterios; execucao e concessao concreta das autorizacoes seguem a legislacao. Para iniciante: 'autorizacao de uso da agua' antes de 'outorga'.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Calamidades como secas e enchentes ultrapassam os limites de um único ente, e por isso a União tem o dever de planejar e promover sua prevenção de forma permanente. A gestão da água também é organizada em sistema nacional, com critérios para autorizar seu uso.\nOs Estados e Municípios participam da execução, mas o sistema e os critérios gerais são definidos pela União.",
+     "after": "Calamidades como secas e enchentes ultrapassam os limites de um único ente, e por isso cabe à União planejar e promover sua prevenção de forma permanente.\nNa gestão da água, o poder público autoriza quem pode usar a água de rios, lagos e outros recursos hídricos. Essa autorização é chamada de outorga. A União institui o sistema nacional e define critérios para autorizar o uso dos recursos hídricos. A execução e a concessão concreta dessas autorizações seguem a repartição e a disciplina previstas na legislação."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma indústria quer captar água de um rio para seu processo produtivo. Ela precisa de outorga do direito de uso de recursos hídricos, segundo os critérios do sistema nacional de gerenciamento, concedida pelo órgão competente.",
+     "after": "Uma indústria quer retirar água de um rio para usar em sua produção. Ela precisa de autorização do poder público para esse uso, isto é, de outorga, concedida pelo órgão competente segundo os critérios do sistema nacional."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Outorga",
+     "before": "ato pelo qual o poder público autoriza o uso de um recurso, como a água.",
+     "after": "autorização dada pelo poder público para uso de determinado recurso, como a água, nas condições jurídicas aplicáveis."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XXIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante: sem 'toda atividade nuclear sob monopolio'; monopolio restrito as atividades com minerios nucleares; redacao das alineas b e c conferida com o texto vigente (EC 118/2022), incluindo 'comercializacao'.",
+   "edits": [
+    {
+     "section": "o_que_diz",
+     "before": "Compete à União explorar os serviços e instalações nucleares e exercer monopólio estatal sobre pesquisa, lavra, enriquecimento, reprocessamento, industrialização e comércio de minérios nucleares, observados quatro princípios: atividade nuclear apenas para fins pacíficos e com aprovação do Congresso; radioisótopos para pesquisa e usos agrícolas e industriais sob regime de permissão; produção e uso de radioisótopos para pesquisa e usos médicos também sob permissão; e responsabilidade civil por danos nucleares independentemente de culpa.",
+     "after": "Compete à União explorar os serviços e instalações nucleares e exercer monopólio estatal sobre pesquisa, lavra, enriquecimento, reprocessamento, industrialização e comércio de minérios nucleares e seus derivados, observados estes princípios: atividade nuclear apenas para fins pacíficos e com aprovação do Congresso Nacional (a); comercialização e utilização de radioisótopos para pesquisa e usos agrícolas e industriais autorizadas sob regime de permissão (b); produção, comercialização e utilização de radioisótopos para pesquisa e usos médicos também autorizadas sob regime de permissão (c); e responsabilidade civil por danos nucleares independentemente de culpa (d)."
+    },
+    {
+     "section": "o_que_significa",
+     "before": "A atividade nuclear é tratada como assunto estratégico e de alto risco, sob monopólio da União. A Constituição impõe o uso exclusivamente pacífico e o controle do Congresso. Há abertura controlada para o uso de radioisótopos em pesquisa, agricultura, indústria e medicina, por permissão.\nQuanto aos danos nucleares, a responsabilidade civil independe da existência de culpa.",
+     "after": "Cabe à União explorar os serviços e instalações nucleares. Determinadas atividades relativas aos minérios nucleares, como pesquisa, lavra, enriquecimento e comércio, estão submetidas ao monopólio estatal previsto pela Constituição. Monopólio significa que só o Estado pode exercer aquela atividade econômica.\nA Constituição exige uso exclusivamente pacífico e aprovação do Congresso. Há abertura controlada para os radioisótopos: em pesquisa, agricultura e indústria, sua comercialização e utilização são autorizadas por permissão; em pesquisa e medicina, também sua produção. Quanto aos danos nucleares, a responsabilidade civil não depende de culpa."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Um hospital utiliza radioisótopos para exames de medicina nuclear. Essa atividade é permitida sob regime de permissão, conforme a alínea c, mas o enriquecimento de urânio permanece monopólio da União.",
+     "after": "Um hospital utiliza radioisótopos em exames de medicina nuclear, atividade que pode ser exercida sob regime de permissão, conforme a alínea c. Já o enriquecimento de urânio, por envolver minério nuclear, está sob o monopólio estatal."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Permissão",
+     "add": true,
+     "after": "forma de o poder público autorizar um particular a exercer determinada atividade, sob suas regras e fiscalização."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XXVI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste obrigatorio de estabilidade temporal: nucleo sem acoplamento a estrutura administrativa; estrutura vigente da ANPD (agencia reguladora, Lei 15.352/2026) registrada so na camada externa e em nota temporal.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O inciso atribui à União o papel administrativo de estruturar e fiscalizar o cumprimento das regras de proteção de dados. Na prática, isso inclui manter a autoridade nacional responsável pela fiscalização e aplicar sanções previstas em lei.\nEle complementa o direito fundamental à proteção de dados (art. 5º, LXXIX) e a competência privativa da União para legislar sobre o tema (art. 22, XXX).",
+     "after": "O inciso atribui à União a responsabilidade administrativa de organizar e fiscalizar a proteção dos dados pessoais e a forma como eles são tratados, conforme definido pela lei. Na prática, isso inclui estruturar a fiscalização e aplicar as sanções previstas em lei, por meio da entidade federal que a lei indicar.\nEle complementa o direito fundamental à proteção de dados (art. 5º, LXXIX) e a competência privativa da União para legislar sobre o tema (art. 22, XXX)."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma empresa sofre vazamento de dados de clientes. A apuração administrativa e a eventual sanção ficam a cargo da autoridade nacional de proteção de dados, órgão pelo qual a União exerce essa competência de fiscalizar.",
+     "after": "Uma empresa sofre vazamento de dados de clientes. A apuração administrativa e a eventual sanção cabem à entidade federal que a lei encarrega de fiscalizar a proteção de dados pessoais."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": null,
+     "after": "Estrutura institucional (verificada em 2026-09-29 em fonte oficial): a Agência Nacional de Proteção de Dados (ANPD) é agência reguladora federal. Foi transformada pela Medida Provisória nº 1.317/2025, convertida na Lei nº 15.352/2026, que a incluiu no rol de agências da Lei nº 13.848/2019. Ver nota temporal."
+    },
+    {
+     "section": "temporal",
+     "before": null,
+     "after": {
+      "time_sensitive": true,
+      "as_of": "2026-09-29",
+      "notes": [
+       {
+        "note_id": "ANPD_AGENCIA_REGULADORA_LEI_15352_2026",
+        "source_type": "LEI",
+        "source_id": "Lei 15.352/2026",
+        "text": "Situação em 2026-09-29: a ANPD, antes Autoridade Nacional de Proteção de Dados, foi transformada em Agência Nacional de Proteção de Dados, agência reguladora federal, pela Medida Provisória nº 1.317, de 17/09/2025, convertida na Lei nº 15.352, de 25/02/2026, que a inseriu no rol de agências da Lei nº 13.848/2019. A estrutura administrativa pode mudar sem alteração do art. 21, XXVI.",
+        "valid_from": "2025-09-17",
+        "review_after": "2027-09-29",
+        "verified_on": "2026-09-29",
+        "source_url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/base-juridica"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado com microajuste: sem regra absoluta de inconstitucionalidade de toda lei estadual ou municipal sobre os temas; preservada a delegacao do paragrafo unico.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Aqui a competência é legislativa: trata de quem pode editar leis. Nessas matérias, a regra é que só a União legisla, o que garante uniformidade nacional. Uma lei estadual ou municipal que invada esses temas é inconstitucional.\n\"Privativa\" não significa, porém, indelegável: o parágrafo único admite que lei complementar autorize os Estados a legislar sobre questões específicas. Parte da doutrina reserva o termo \"exclusiva\" para competências que não admitem delegação.",
+     "after": "Aqui a competência é legislativa: trata de quem pode editar leis. Nessas matérias, a regra é que a União legisla. Em regra, Estados e Municípios não podem criar legislação que invada o núcleo das matérias reservadas à União; em cada caso é necessário considerar também as demais competências constitucionais incidentes.\n\"Privativa\" não significa, porém, indelegável: o parágrafo único admite que lei complementar autorize os Estados a legislar sobre questões específicas. Parte da doutrina reserva o termo \"exclusiva\" para competências que não admitem delegação."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.I",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante: o texto nao sugere mais que Municipios recebem a delegacao do paragrafo unico; destinatarios sao os Estados.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Os grandes ramos do direito que regulam a vida privada, os crimes, os processos judiciais, as eleições e as relações de trabalho são disciplinados por leis federais, válidas em todo o País. Por isso existe um único Código Civil, um único Código Penal e uma única legislação trabalhista.\nEstados e Municípios não podem editar leis sobre esses ramos, salvo delegação por lei complementar em questões específicas (parágrafo único).",
+     "after": "Os grandes ramos do direito que regulam a vida privada, os crimes, os processos judiciais, as eleições e as relações de trabalho são disciplinados por leis federais, válidas em todo o País. Por isso existe um único Código Civil, um único Código Penal e uma única legislação trabalhista.\nA regra é que essas matérias sejam legisladas pela União. O parágrafo único permite que lei complementar autorize os Estados a legislar sobre questões específicas."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.II",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado; linguagem de iniciante: desapropriacao e requisicao explicadas em palavras simples antes dos termos tecnicos.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "As regras gerais sobre como o poder público pode tomar ou usar bens particulares são uniformes em todo o País, porque são leis federais. Isso não significa que só a União possa desapropriar: Estados, Distrito Federal e Municípios também desapropriam, mas seguindo as leis federais sobre o tema.",
+     "after": "Desapropriação é a retirada obrigatória de um bem particular pelo poder público, nas hipóteses previstas na Constituição e na lei, em regra com indenização. Requisição é o uso temporário de um bem ou serviço particular pelo poder público, em situação admitida pela Constituição, como perigo iminente ou guerra.\nAs regras sobre esses dois instrumentos são leis federais, uniformes em todo o País. Isso não significa que só a União possa desapropriar: Estados, Distrito Federal e Municípios também desapropriam, seguindo as leis federais sobre o tema."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Requisição",
+     "before": "uso temporário de bem ou serviço particular pelo poder público diante de perigo iminente ou guerra.",
+     "after": "uso temporário de bem ou serviço particular pelo poder público, em situação admitida pela Constituição, como perigo iminente."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Desapropriação",
+     "add": true,
+     "after": "retirada obrigatória (compulsória) de um bem particular pelo poder público, nas hipóteses legais, em regra mediante indenização."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.IV",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve: retirada a justificativa causal ('precisam de regras uniformes'); mantida a distincao legislar x executar/fiscalizar localmente.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Setores de infraestrutura que funcionam em rede nacional precisam de regras uniformes. Por isso, as leis sobre telecomunicações, energia, transportes e trânsito são federais, como o Código de Trânsito Brasileiro.\nEstados e Municípios continuam atuando administrativamente nesses setores, por exemplo na fiscalização do trânsito ou na gestão do transporte local, mas dentro das leis federais.",
+     "after": "A Constituição reservou à União a legislação sobre esses setores, de modo que suas principais regras jurídicas são federais, como o Código de Trânsito Brasileiro.\nEstados e Municípios continuam atuando administrativamente nesses setores, por exemplo na fiscalização do trânsito ou na gestão do transporte local, mas dentro das leis federais."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.VI",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado: legislar sobre sistemas de sorteios nao se confunde com explorar loterias; loterias na camada externa."
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XII",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado."
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste editorial: 'povos indigenas'; 'regras juridicas sobre entrada, permanencia e retirada de estrangeiros do territorio brasileiro'.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Quem é brasileiro, como alguém se naturaliza e como estrangeiros entram, permanecem ou são retirados do País são questões ligadas à soberania e precisam de tratamento uniforme. A proteção dos povos indígenas também é disciplinada por lei federal.\nAs regras constitucionais de base estão nos arts. 12 e 231; as leis federais as detalham.",
+     "after": "Quem é brasileiro, como alguém se naturaliza e quais são as regras jurídicas sobre entrada, permanência e retirada de estrangeiros do território brasileiro são questões ligadas à soberania e recebem tratamento nacional. A proteção dos povos indígenas também é disciplinada por lei federal.\nAs regras constitucionais de base estão nos arts. 12 e 231; as leis federais as detalham."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XVI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste didatico: removido o exemplo simplificador do diploma de medico; condicoes de profissoes regulamentadas definidas nacionalmente; seguridade social explicada no corpo (saude, previdencia e assistencia).",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Os requisitos para exercer profissões, como a exigência de formação ou de registro em conselho, são definidos por lei federal, o que se liga à liberdade profissional do art. 5º, XIII. As bases do sistema de seguridade social e as diretrizes e bases da educação também são nacionais.\nIsso garante, por exemplo, que um diploma de médico permita o exercício da profissão em todo o País, observadas as regras federais.",
+     "after": "As condições jurídicas para exercer uma profissão regulamentada, como a exigência de formação ou de registro em conselho, são estabelecidas nacionalmente, por lei federal; isso se liga à liberdade profissional do art. 5º, XIII. Um Estado ou Município não pode criar habilitação profissional incompatível com a legislação federal.\nSeguridade social é o conjunto formado por saúde, previdência e assistência social. As bases desse sistema e as diretrizes e bases da educação também são fixadas nacionalmente."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma lei municipal passa a exigir registro local e prova própria para o exercício da advocacia no Município. A lei invade a competência da União para legislar sobre condições para o exercício de profissões.",
+     "after": "Um Município não pode exigir prova municipal própria para que advogado regularmente habilitado possa exercer a advocacia em seu território. As condições para exercer essa profissão são definidas pela legislação federal."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Seguridade social",
+     "before": "conjunto de ações de saúde, previdência e assistência social.",
+     "after": "conjunto formado por saúde, previdência e assistência social."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XVII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado; adicionada linguagem simples para 'inatividade'.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Inatividade",
+     "add": true,
+     "after": "situação de policiais e militares estaduais que deixam o serviço ativo, como reserva ou reforma, conforme o regime aplicável."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XVIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste pequeno: exemplos de registros sem misturar categorias registrais (registro de empresas e de juntas comerciais retirado do glossario).",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Informações oficiais precisam de padrões nacionais para serem comparáveis e confiáveis. Os registros públicos, como registro civil de nascimento, registro de imóveis e registro de títulos, seguem lei federal, o que garante segurança jurídica em todo o País.",
+     "after": "Informações oficiais precisam de padrões nacionais para serem comparáveis e confiáveis. Registros como nascimento, casamento, imóveis, títulos e outros atos sujeitos a registro público seguem legislação federal, o que dá segurança jurídica em todo o País."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Registros públicos",
+     "before": "sistemas oficiais de registro de atos e fatos jurídicos, como nascimentos, imóveis e empresas.",
+     "after": "sistemas oficiais de registro de atos e fatos jurídicos, como nascimentos, casamentos e imóveis."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XXVII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante: exemplo neutro (sistema eletronico e fluxo interno); separados administracao direta/autarquias/fundacoes (normas gerais) e estatais (regime legal proprio); Leis 14.133/2021 e 13.303/2016 na camada externa.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A União edita a lei geral de licitações e contratos, válida para União, Estados, Distrito Federal e Municípios. Como o texto limita a competência privativa às normas gerais, os demais entes podem disciplinar aspectos específicos de suas próprias licitações, desde que respeitem essas normas.\nPara as empresas estatais, a Constituição prevê regime próprio, previsto no art. 173.",
+     "after": "A União edita as normas gerais de licitação e contratação, válidas para União, Estados, Distrito Federal e Municípios. Os demais entes têm espaço para disciplinar aspectos específicos de suas próprias licitações, conforme a Constituição, desde que respeitem essas normas gerais.\nPara a administração direta, as autarquias e as fundações, aplicam-se as normas gerais federais. Para empresas públicas e sociedades de economia mista, a Constituição prevê regime legal próprio (art. 173, § 1º, III), disciplinado em legislação federal específica."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Um Município edita decreto sobre detalhes do funcionamento de seu pregão eletrônico, como cadastro de fornecedores locais. Pode fazê-lo, desde que não contrarie a lei geral federal de licitações e contratos.",
+     "after": "Um Município pode regulamentar detalhes operacionais do seu sistema eletrônico de licitações ou de seu fluxo administrativo interno, desde que respeite as normas gerais federais."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Licitação",
+     "before": "procedimento de disputa pelo qual a administração escolhe com quem contratar.",
+     "after": "disputa organizada pela qual a administração pública escolhe com quem vai contratar."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Autarquia",
+     "add": true,
+     "after": "entidade pública criada por lei para exercer atividade própria da administração, com autonomia administrativa."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": "A lei geral federal vigente é a Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos).",
+     "after": "A lei geral federal vigente é a Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos). Para empresas públicas e sociedades de economia mista, aplica-se a Lei nº 13.303/2016."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XXX",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado: triade art. 5º, LXXIX (direito fundamental), art. 21, XXVI (organizar/fiscalizar) e art. 22, XXX (legislar) preservada."
+  },
+  {
+   "target_id": "CF88:ART.22:PAR.UNICO",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado com microajuste: explicado o sentido de delegar; Municipios nao sao destinatarios; nuance do Distrito Federal registrada de forma simples; LC 103/2000 revalidada (autoriza Estados e DF a instituir piso salarial, por aplicacao do paragrafo unico do art. 22).",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A competência privativa da União pode ser parcialmente delegada. Há três exigências: a delegação deve ser feita por lei complementar; o destinatário previsto no texto são os Estados; e ela deve tratar de questões específicas, e não transferir uma matéria inteira.\nÉ esse parágrafo que permite diferenciar a competência privativa, que admite delegação, de competências que não a admitem.",
+     "after": "Delegar, aqui, significa permitir que outro ente exerça uma parte específica da competência legislativa. A competência privativa da União pode ser delegada dessa forma, com três exigências: a delegação deve ser feita por lei complementar federal; o destinatário previsto no texto são os Estados; e ela deve tratar de questões específicas, e não transferir uma matéria inteira.\nOs Municípios não são destinatários dessa autorização. O Distrito Federal acumula competências legislativas atribuídas aos Estados e aos Municípios e pode aparecer em autorizações concretas, como na lei do exemplo."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.23",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste importante de didatica: retirado 'todos podem e devem atuar ao mesmo tempo'; competencia comum como atribuicoes administrativas organizadas pela Constituicao, leis e cooperacao; nao e competencia para legislar.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Competência comum é administrativa, ou material: todos os entes podem e devem atuar nessas áreas ao mesmo tempo, com políticas, serviços e fiscalização. Não há hierarquia entre eles nessa atuação; a coordenação deve ocorrer pela cooperação prevista no parágrafo único.\nNão se trata de competência para legislar. A competência legislativa compartilhada está no art. 24 (concorrente), em que a lógica é diferente.",
+     "after": "Competência comum significa que União, Estados, Distrito Federal e Municípios possuem atribuições administrativas nessas matérias. A atuação de cada ente é organizada pela Constituição, pelas leis e pelos mecanismos de cooperação, de modo que as responsabilidades concretas podem ser distribuídas entre eles.\nNão se trata de competência para legislar; trata-se principalmente de agir administrativamente, prestar serviços, fiscalizar, proteger e executar políticas públicas. A competência legislativa compartilhada está no art. 24 (concorrente), em que a lógica é diferente."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.23:INC.II",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste: substituido 'nenhum ente pode se omitir' por responsabilidade compartilhada com distribuicao concreta de funcoes; Tema 793 registrado na camada externa, sem 'responsabilidade solidaria' no corpo.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Essas são as grandes políticas sociais em que todos os entes devem atuar. A responsabilidade é compartilhada: nenhum ente pode se omitir alegando que o tema é de outro. A forma de dividir tarefas e recursos é definida por leis, programas e acordos de cooperação.",
+     "after": "Essas são grandes políticas sociais em que todos os entes têm atribuições. A responsabilidade constitucional é compartilhada, embora a legislação e as políticas públicas distribuam funções concretas entre os diferentes entes, com divisão de tarefas e recursos definida por leis, programas e acordos de cooperação."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": "A responsabilidade solidária dos entes em demandas de saúde é tratada na camada JURISPRUDÊNCIA.",
+     "after": "A responsabilidade dos entes em ações judiciais de saúde (responsabilidade solidária) é tratada na camada JURISPRUDÊNCIA (recomendação: STF, Tema 793)."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.23:INC.III",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado."
+  },
+  {
+   "target_id": "CF88:ART.23:INC.VI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado com microajuste: responsabilidades ambientais de todos, com distribuicao legal do licenciamento; licenciamento explicado em linguagem simples; LC 140/2011 na camada externa; sem sugerir licencas simultaneas.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A proteção ambiental é tarefa de todos os entes. Cada um pode fiscalizar, licenciar atividades e aplicar sanções administrativas dentro de suas atribuições. Para evitar sobreposição, a divisão de tarefas é organizada por lei complementar de cooperação, prevista no parágrafo único.",
+     "after": "Todos os entes possuem responsabilidades ambientais. A legislação distribui qual ente licencia cada empreendimento e como os demais participam da fiscalização e da cooperação.\nLicenciar, aqui, significa autorizar que uma atividade capaz de afetar o meio ambiente seja instalada e funcione, com condições para reduzir seus impactos. Esse procedimento é chamado de licenciamento ambiental."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma fábrica polui um rio. Os órgãos ambientais do Município, do Estado e da União podem fiscalizar, e a lei complementar de cooperação define qual ente é responsável pelo licenciamento e como os demais atuam.",
+     "after": "Uma fábrica polui um rio. Os órgãos ambientais podem agir para fiscalizar, e a lei complementar de cooperação define qual ente é responsável pelo licenciamento da fábrica e como os demais participam."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": "A divisão de atribuições ambientais entre os entes é disciplinada por lei complementar de cooperação e tratada na camada JURISPRUDÊNCIA.",
+     "after": "A lei complementar de cooperação em matéria ambiental é a Lei Complementar nº 140/2011, segundo a qual cada empreendimento é licenciado por um único ente federativo; a divisão concreta de atribuições também é tratada na camada JURISPRUDÊNCIA."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.23:PAR.UNICO",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado com microajuste: 'cooperacao entre os entes' antes de 'federalismo cooperativo'; exemplo sem sugerir tres licencas para o mesmo fim; LC 140/2011 mantida.",
+   "edits": [
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma lei complementar de cooperação ambiental define que certos empreendimentos são licenciados pelo órgão estadual, outros pelo municipal e outros pelo federal, evitando que uma mesma obra precise de três licenças para o mesmo fim.",
+     "after": "Uma lei complementar de cooperação ambiental define quais empreendimentos são licenciados pelo órgão federal, quais pelo estadual e quais pelo municipal. Assim, cada empreendimento tem um ente responsável pelo licenciamento, e os demais podem colaborar e se manifestar."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Federalismo cooperativo",
+     "before": "modelo em que os entes atuam de forma coordenada nas tarefas comuns.",
+     "after": "nome técnico para o modelo de cooperação entre os entes nas tarefas comuns."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.24",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado; adicionada a didatica 'concorrente nao significa competicao'.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Na competência concorrente, mais de um ente legisla sobre o mesmo tema, mas em níveis diferentes: a União fixa normas gerais, e os Estados e o Distrito Federal complementam e adaptam essas normas às suas realidades. É uma forma de conciliar uniformidade nacional com diversidade regional.\nO mecanismo detalhado está nos §§ 1º a 4º, explicados em blocos próprios.",
+     "after": "Concorrente, aqui, não significa competição. Significa que mais de um ente pode legislar sobre o mesmo assunto, cada um dentro da função definida pela Constituição: a União fixa normas gerais, e os Estados e o Distrito Federal complementam e adaptam essas normas às suas realidades.\nO mecanismo detalhado está nos §§ 1º a 4º, explicados em blocos próprios."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.24:INC.I",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste leve: substituido 'cada Estado institui e regula seus proprios tributos'; comparacao tributario/financeiro (concorrente) x civil/penal/processual (privativo) preservada.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Nessas matérias, a União edita normas gerais válidas em todo o País, e cada Estado detalha as regras para sua realidade. No direito tributário, por exemplo, as normas gerais estão em lei complementar nacional, e cada Estado institui e regula seus próprios tributos.",
+     "after": "Nessas matérias, a União edita normas gerais válidas em todo o País, e os Estados detalham as regras para sua realidade. Cada ente institui os tributos que a Constituição lhe atribui. No caso dos Estados, eles podem legislar sobre seus tributos dentro das normas gerais aplicáveis."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.24:INC.V",
+   "decision": "APPROVED",
+   "review_reason": "Aprovado."
+  },
+  {
+   "target_id": "CF88:ART.24:INC.IX",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste didatico: seguridade social (saude, previdencia e assistencia) e previdencia como parte da seguridade, distinguindo art. 22, XXIII de art. 24, XII.",
+   "edits": [
+    {
+     "section": "atencao",
+     "before": "Educação e previdência também aparecem na competência privativa da União (diretrizes e bases da educação e seguridade social, art. 22, XXIV e XXIII). A convivência entre essas previsões é tema de interpretação.",
+     "after": "Seguridade social é o conjunto formado por saúde, previdência e assistência social; a previdência social é uma parte da seguridade. Por isso educação e previdência também aparecem na competência privativa da União (diretrizes e bases da educação e seguridade social, art. 22, XXIV e XXIII), e a convivência entre essas previsões é tema de interpretação."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.24:INC.X",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado com microajuste: 'procedimento' explicado em linguagem simples; nota externa sobre juizado de pequenas causas e Juizados Especiais.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Procedimento",
+     "before": "forma e ordem dos atos processuais, distinta das regras do processo em si.",
+     "after": "maneira prática como os atos de um processo são organizados e realizados."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": null,
+     "after": "A Constituição utiliza a expressão 'juizado de pequenas causas'; a legislação posterior estruturou os atuais Juizados Especiais."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.24:PAR.1",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Ajuste de camada: a vedacao de a Uniao esgotar a materia foi movida do nucleo para a camada externa; competencia suplementar explicada em linguagem simples.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Quando existe lei federal de normas gerais, a divisão é esta: a União fixa as bases, válidas para todo o País, e os Estados suplementam, detalhando e adaptando essas bases à sua realidade. A União não pode, a pretexto de editar normas gerais, esgotar todo o assunto a ponto de eliminar o espaço dos Estados.",
+     "after": "Quando existe norma geral federal, a União fixa as bases, válidas para todo o País, e os Estados podem complementar essa disciplina para atender às suas peculiaridades, sem contrariar a regra geral.\nSuplementar significa completar a regra geral, adaptando-a às necessidades locais sem contrariá-la."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Competência suplementar",
+     "before": "competência para complementar a legislação federal de normas gerais, adaptando-a às peculiaridades locais.",
+     "after": "competência para completar a regra geral federal, adaptando-a às necessidades locais sem contrariá-la."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": null,
+     "after": "Os limites do que a União pode fixar como norma geral, sem esgotar o assunto e eliminar o espaço dos Estados, são tratados na doutrina e na camada JURISPRUDÊNCIA."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.24:PAR.3",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Aprovado; suspensao da eficacia x revogacao preservado; para iniciantes, 'se uma lei federal surgir posteriormente' antes de introduzir 'superveniencia'; nota simples sobre o DF.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Se a União ainda não editou normas gerais, o Estado não fica paralisado: pode legislar de forma plena, incluindo as normas gerais, para atender às suas peculiaridades.\nSe depois a União edita a lei de normas gerais, a lei estadual não é revogada: sua eficácia fica suspensa apenas no que for contrário à lei federal. As partes compatíveis continuam produzindo efeitos.",
+     "after": "Se a União ainda não editou normas gerais, o Estado não fica paralisado: pode legislar de forma plena, incluindo as normas gerais, para atender às suas peculiaridades.\nSe uma lei federal de normas gerais surgir posteriormente, a lei estadual não é revogada: sua eficácia, isto é, sua aptidão para produzir efeitos, fica suspensa apenas no que for contrário à lei federal. As partes compatíveis continuam produzindo efeitos. Esse surgimento posterior da lei federal é chamado de superveniência. O Distrito Federal, que também legisla concorrentemente, segue a mesma lógica."
+    }
+   ]
+  }
+ ],
+ "new_explanations": [
+  {
+   "target_id": "CF88:ART.21:INC.XXIV",
+   "role": "ITEM",
+   "semantic_autonomy": "DEPENDENT_ON_PARENT",
+   "selection_criteria": [
+    1,
+    6
+   ],
+   "display_topic": "Inspeção do trabalho",
+   "editorial_reason": "Criado pela revisao humana: competencia material propria, util para distinguir fiscalizar (art. 21) de legislar sobre direito do trabalho (art. 22, I).",
+   "review_reason": "Novo target criado pela revisao humana de 2026-09-29.",
+   "content": {
+    "o_que_diz": "A União organiza, mantém e executa a inspeção do trabalho.",
+    "o_que_significa": "Inspecionar o trabalho significa verificar, na prática, se empresas e empregadores cumprem as regras trabalhistas, como as de jornada, registro de empregados e segurança e saúde no trabalho. Essa fiscalização administrativa cabe à União, em todo o País.\nFiscalizar e aplicar as regras (art. 21, XXIV) é diferente de criá-las: legislar sobre direito do trabalho é competência privativa da União prevista no art. 22, I.",
+    "exemplo_pratico": "Fiscais do trabalho da União visitam uma empresa e verificam se os empregados estão registrados e se as normas de segurança são cumpridas. Se encontrarem irregularidades, podem registrar a infração e aplicar as penalidades administrativas previstas em lei.",
+    "atencao": "Não confundir a inspeção do trabalho, que é atividade administrativa de fiscalização, com o julgamento de ações trabalhistas, que cabe à Justiça do Trabalho.",
+    "palavras_dificeis": [
+     {
+      "termo": "Inspeção do trabalho",
+      "explicacao": "fiscalização administrativa, feita pela União, do cumprimento das normas de proteção ao trabalho."
+     }
+    ]
+   },
+   "external_layer_notes": []
+  },
+  {
+   "target_id": "CF88:ART.21:INC.XXV",
+   "role": "ITEM",
+   "semantic_autonomy": "DEPENDENT_ON_PARENT",
+   "selection_criteria": [
+    1,
+    6
+   ],
+   "display_topic": "Áreas e condições para garimpagem associativa",
+   "editorial_reason": "Criado pela revisao humana: atribuicao material propria que conecta bens da Uniao (art. 20), atribuicao administrativa (art. 21) e legislacao mineral (art. 22).",
+   "review_reason": "Novo target criado pela revisao humana de 2026-09-29.",
+   "content": {
+    "o_que_diz": "Cabe à União definir em quais áreas e sob quais condições a garimpagem pode ser exercida de forma associativa, como em cooperativas.",
+    "o_que_significa": "Garimpagem é a extração de minerais, como o ouro, feita em geral com métodos mais simples que os da grande mineração. Quando organizada de forma associativa, os garimpeiros atuam reunidos, por exemplo em cooperativas. A União define onde e em quais condições essa modalidade pode funcionar.\nO tema aparece em três artigos com funções diferentes: os recursos minerais são bens da União (art. 20, IX); definir áreas e condições para a garimpagem é atribuição administrativa (art. 21, XXV); e legislar sobre jazidas, minas e recursos minerais é competência legislativa privativa (art. 22, XII).",
+    "exemplo_pratico": "Uma cooperativa de garimpeiros somente pode atuar em área e nas condições admitidas pelo regime jurídico aplicável, com os títulos exigidos pela legislação mineral.",
+    "atencao": "Definir áreas e condições não dispensa as regras ambientais e minerárias. A organização dos garimpeiros em cooperativas também é tratada no art. 174, §§ 3º e 4º.",
+    "palavras_dificeis": [
+     {
+      "termo": "Garimpagem",
+      "explicacao": "extração de minerais, em geral por métodos mais simples que os da mineração industrial, nas condições da lei."
+     },
+     {
+      "termo": "Garimpagem associativa",
+      "explicacao": "garimpagem exercida por garimpeiros reunidos, como em cooperativas."
+     }
+    ]
+   },
+   "external_layer_notes": []
+  },
+  {
+   "target_id": "CF88:ART.22:INC.XXIX",
+   "role": "ITEM",
+   "semantic_autonomy": "DEPENDENT_ON_PARENT",
+   "selection_criteria": [
+    1,
+    6
+   ],
+   "display_topic": "Propaganda comercial",
+   "editorial_reason": "Criado pela revisao humana: materia do rol com ponto de confusao frequente (propaganda comercial x eleitoral x institucional).",
+   "review_reason": "Novo target criado pela revisao humana de 2026-09-29.",
+   "content": {
+    "o_que_diz": "A União tem competência privativa para legislar sobre propaganda comercial.",
+    "o_que_significa": "Propaganda comercial é a comunicação usada para promover produtos, serviços ou atividades econômicas. As regras legislativas gerais sobre essa publicidade pertencem à União, e por isso as principais normas sobre o que pode ser anunciado, e de que forma, são nacionais.\nA própria Constituição prevê restrições legais à propaganda comercial de certos produtos, como tabaco, bebidas alcoólicas, agrotóxicos, medicamentos e terapias (art. 220, § 4º).",
+    "exemplo_pratico": "Uma lei federal estabelece regras para a propaganda comercial de bebidas alcoólicas no rádio e na televisão, válidas em todo o País. Em regra, um Estado não pode criar, por lei própria, um regime diferente para esse tipo de propaganda.",
+    "atencao": "Propaganda comercial não é a mesma coisa que propaganda eleitoral nem publicidade institucional do poder público. Cada uma possui regime jurídico próprio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Propaganda comercial",
+      "explicacao": "comunicação destinada a promover produtos, serviços ou atividades econômicas."
+     }
+    ]
+   },
+   "external_layer_notes": []
+  }
+ ]
+}
