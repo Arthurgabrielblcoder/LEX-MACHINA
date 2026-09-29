@@ -18,6 +18,12 @@ import target_id as T
 SUFFIX = r'(?:-([A-Z])(?![A-Za-zÀ-ÿ]))?'
 ART_RE = re.compile(r'^Art\.?\s*(\d{1,4})(?:º|°|o)?' + SUFFIX + r'(?:\s*\.\s*|\s+|$)(.*)$', re.I)
 ART_ALONE_RE = re.compile(r'^Art\.?$', re.I)
+# Opt-in (article_case_sensitive=True): only 'Art' with capital A opens an article and a namespace title must match
+# exactly. Needed for sources whose hyperlinked cross-references become their own lines ('art. 2º da Lei nº 12.858...',
+# 'Ato das Disposições Constitucionais Transitórias' in the middle of a sentence). Default off: approved indexes built
+# before this option are unchanged.
+ART_RE_CS = re.compile(ART_RE.pattern)
+ART_ALONE_RE_CS = re.compile(ART_ALONE_RE.pattern)
 PAR_RE = re.compile(r'^§\s*(\d{1,3})(?:º|°|o)?' + SUFFIX + r'\s*\.?\s*(.*)$')
 PAR_UNICO_RE = re.compile(r'^Par[aá]grafo\s+[uú]nico\s*[.:\-–—]?\s*(.*)$', re.I)
 # The separator dash must be followed by whitespace: 'I-A o Conselho' is inciso I-A, never inciso I with text 'A o...'.
@@ -32,7 +38,7 @@ def _clean(s):
     return re.sub(r'\s+', ' ', s).strip()
 
 
-def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100):
+def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, article_case_sensitive=False):
     reg = reg or T.registry()
     if not reg.known(norma_id) or reg.parent(norma_id):
         raise T.TargetIdError('UNKNOWN_NORM', norma_id)
@@ -44,6 +50,7 @@ def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100):
     after_marker = False
     pending_art = None
     anchor = {'tid': None}  # last device opened (context for anomalies even after open_tid is closed)
+    art_re, art_alone_re = (ART_RE_CS, ART_ALONE_RE_CS) if article_case_sensitive else (ART_RE, ART_ALONE_RE)
 
     def add(tid, kind_line, text_line, lineno, structural_only=False):
         rec = targets.get(tid)
@@ -71,17 +78,19 @@ def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100):
             anomalies.append(dict(line=i, code='CLOSING_MARKER', text=line[:80]))
             art, par, inc, open_tid = None, None, None, None
             continue
-        if line.upper() in markers:
+        # strict mode: the namespace title must match exactly (a hyperlink fragment 'Ato das Disposições Constitucionais
+        # Transitórias' in the middle of a sentence is not the ADCT title)
+        if (line in markers) if article_case_sensitive else (line.upper() in markers):
             ns, art, par, inc, open_tid = markers[line.upper()], None, None, None, None
             add(ns, None, None, i, structural_only=True)
             continue
         if pending_art is not None:
             line = 'Art. ' + line
             pending_art = None
-        if ART_ALONE_RE.match(line):
+        if art_alone_re.match(line):
             pending_art = i
             continue
-        m = ART_RE.match(line)
+        m = art_re.match(line)
         if m:
             art = T.normalize_number_label(m.group(1) + ('-' + m.group(2) if m.group(2) else ''))
             par = inc = None

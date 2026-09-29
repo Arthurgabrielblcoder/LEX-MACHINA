@@ -1,0 +1,152 @@
+{
+ "mission": "LEX_MACHINA_DEVICE_INTEGRATION_V1_A2B",
+ "date": "2026-09-29",
+ "head": "2e2211c05fa2cf93be776f872a87242bb8d53e53",
+ "result": "RUNTIME_CANONICO_E_ROLLBACK_FISICO_PRONTOS",
+ "sources": {
+  "CF88": {
+   "norma_id_senado": "579494",
+   "publicacao_url": "https://legis.senado.leg.br/norma/579494/publicacao/16434817",
+   "raw_sha256": "5beff7a47d7723594a6c48b5a72a99bbe13b300c91f4befce2284ae7f3b86808",
+   "normalizado_sha256": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2",
+   "adquirido_em_utc": "2026-09-29T16:37:48Z",
+   "tipo_compilacao": "COMPILACAO_MONOVIGENTE"
+  },
+  "ADCT": {
+   "norma_id_senado": "604119",
+   "publicacao_url": "https://legis.senado.leg.br/norma/604119/publicacao/16434816",
+   "raw_sha256": "2e7bf19d595106fdd83f6ddc13ed9dd2a8f3561c4d2e2b34bc036d50d70b03ee",
+   "normalizado_sha256": "887617267a648cccd36128323db07c2659194326c1e85020f1ddfd636067006a",
+   "adquirido_em_utc": "2026-09-29T16:37:50Z",
+   "tipo_compilacao": "COMPILACAO_MONOVIGENTE"
+  }
+ },
+ "runtime": {
+  "bytes": 587134,
+  "lines": 4537,
+  "sha256": "75a27b0a2899e7082a2bf65f06f2725b1a40874746c49091e08225dd266e7998",
+  "adct_offset": 429243,
+  "normalization": "HEADER_NORMALIZATION_RULE_V1",
+  "header_normalization": {
+   "CF88": {
+    "joined_headers": 276,
+    "joined_headers_case_b": 0,
+    "split_glued_paragraphs_case_c": 1,
+    "lines_in": 3724,
+    "lines_out": 3448
+   },
+   "ADCT": {
+    "joined_headers": 146,
+    "joined_headers_case_b": 2,
+    "split_glued_paragraphs_case_c": 0,
+    "lines_in": 1237,
+    "lines_out": 1089
+   }
+  },
+  "historical_markers": {
+   "Redação dada pel": 0,
+   "Incluído pel": 0,
+   "Incluída pel": 0,
+   "Texto original": 0
+  },
+  "editorial_notes": {
+   "(Vide ": 1
+  }
+ },
+ "targets": {
+  "legacy": 3956,
+  "runtime": 3811,
+  "runtime_index_sha256": "c87aaa50f0c93029a661dc04cbc1922875154e2287f0ccbc53f6f3bde605d612",
+  "diff": {
+   "ADDED:EXPECTED_RUNTIME_CHANGE": 2,
+   "REMOVED:EXPECTED_REMOVAL_HISTORICAL": 144,
+   "REMOVED:EXPECTED_RUNTIME_CHANGE": 3
+  },
+  "reviewed_exceptions": [
+   "CF88:ART.155:INC.I:AL.c",
+   "ADCT:ART.77:INC.I:AL.a",
+   "ADCT:ART.77:INC.I:AL.b"
+  ],
+  "source_defect_official": "CF art. 114 \"VII I -\" (inciso VIII nao enderecavel; nao corrigido)"
+ },
+ "text_map": {
+  "rows": 3386,
+  "line_checks": 3386,
+  "bound_to_source_sha256": "75a27b0a2899e7082a2bf65f06f2725b1a40874746c49091e08225dd266e7998",
+  "adct_offset": 429243
+ },
+ "layer_validation": {
+  "entenda_lookup_rows": 283,
+  "entenda_direct": 163,
+  "entenda_resolved": 283,
+  "reference_targets": 242,
+  "reference_rows": 432,
+  "reference_targets_resolved": 238,
+  "reference_targets_absent_historical_hidden": [
+   "CF88:ART.114:INC.VIII",
+   "CF88:ART.40:PAR.4:INC.II",
+   "CF88:ART.40:PAR.4:INC.III",
+   "CF88:ART.40:PAR.7:INC.I"
+  ]
+ },
+ "package": {
+  "build_id": "73cb833129b3ae8b",
+  "total_bytes": 1288050,
+  "files": {
+   "99_LEX_V1/00_SYS/LEXV1.VER": 600,
+   "99_LEX_V1/05_TEXT/CF88_RUNTIME.txt": 587134,
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": 165422,
+   "99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX": 123540,
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": 6579,
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": 65546,
+   "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": 30462,
+   "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": 302915,
+   "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": 5852
+  }
+ },
+ "sd": {
+  "status": "BACKUP_VERIFIED",
+  "drive": "D:",
+  "filesystem": "FAT32",
+  "capacity": 31902400512,
+  "free": 31843516416,
+  "files": 1062,
+  "bytes": 24574047,
+  "aggregate_manifest_sha256": "f00e6d562f239b23c033844b879a9afdf2b878980550068e3acc4101bad49b38",
+  "path": "DEVICE_INTEGRATION/backups/sd_20260929T163407Z",
+  "physical_cf": {
+   "path": "/1- CONSTITUIÇÃO FEDERAL/cf.txt",
+   "bytes": 429242,
+   "sha256": "d8469e18e45e027872f04bc56ba1076bcc6d1bb3295c71173bd5b728b22dca6e",
+   "classification": "MATCH_UPDATER_CF_BODY"
+  },
+  "reverified_unchanged": true
+ },
+ "flash": {
+  "status": "PHYSICAL_FLASH_BACKUP_VERIFIED",
+  "sha256": "061849a357d77f571d735a108fc5f4a032d7c12e4f7e3c8f3b34c0f3357d6727"
+ },
+ "rollback": "FULL_PHYSICAL_ROLLBACK_AVAILABLE",
+ "firmware": {
+  "candidate": "firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE",
+  "flag0": [
+   989395,
+   124452
+  ],
+  "flag1": [
+   997319,
+   124452
+  ]
+ },
+ "relations_v2_64": {
+  "physical_rel_lookup": 41,
+  "physical_ext_normas": 20,
+  "classification": "NON_BLOCKING"
+ },
+ "tests": {
+  "device": "31/31",
+  "entenda": "80/80",
+  "legal_target_id": "47/47"
+ },
+ "determinism": "runtime e staging BYTE_IDENTICAL (2 builds)"
+}

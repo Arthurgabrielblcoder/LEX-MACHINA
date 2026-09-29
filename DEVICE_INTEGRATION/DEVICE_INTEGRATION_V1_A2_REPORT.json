@@ -1,0 +1,97 @@
+{
+ "mission": "LEX_MACHINA_DEVICE_INTEGRATION_V1_A2",
+ "date": "2026-09-29",
+ "head": "2e2211c05fa2cf93be776f872a87242bb8d53e53",
+ "result": "CANONICAL_CF_SOURCE_UNRESOLVED (CANONICAL_ADCT_SOURCE_NOT_RESOLVED); flash verificada; SD pendente",
+ "sd": {
+  "status": "SD_NOT_UNIQUELY_IDENTIFIED / BACKUP_NOT_AVAILABLE",
+  "reason": "cartao inserido no aparelho; nenhum volume removivel no PC",
+  "physical_cf": "UNKNOWN"
+ },
+ "esp32": {
+  "port": "COM3",
+  "bridge": "CH343 VID_1A86&PID_55D3",
+  "chip": "ESP32-S3 (QFN56) rev v0.2",
+  "mac": "e0:72:a1:f4:fd:28",
+  "flash_bytes": 16777216,
+  "banner": "LEX MACHINA V7.12.0 JURIS CF EXPANDIDA",
+  "firmware": "PHYSICAL_FIRMWARE_CONFIRMED_V7_12_0",
+  "dump": {
+   "result": "PHYSICAL_FLASH_BACKUP_VERIFIED",
+   "sha256": "061849a357d77f571d735a108fc5f4a032d7c12e4f7e3c8f3b34c0f3357d6727",
+   "path": "DEVICE_INTEGRATION/backups/esp32/raw_flash_16MB_read1.bin"
+  }
+ },
+ "runtime_cf": {
+  "status": "CANONICAL_ADCT_SOURCE_NOT_RESOLVED",
+  "text_map_runtime_status": "LEGACY_STRUCTURAL_NOT_RUNTIME",
+  "note": "CF88_RUNTIME (CF vigente + ADCT vigente) nao criado: nao ha fonte oficial do ADCT vigente armazenada nem pipeline que a gere."
+ },
+ "package": {
+  "type": "SD_OVERLAY_CANDIDATE",
+  "build_id": "6ffede65274a1a81",
+  "entenda": 163,
+  "scope": "CF88_ARTS_1_24_PLUS_APPROVED_PILOTS",
+  "pilots": [
+   "CF88:ART.37",
+   "CF88:ART.37:PAR.6",
+   "CF88:ART.37:PAR.10",
+   "CF88:ART.60",
+   "CF88:ART.60:PAR.4",
+   "CF88:ART.60:PAR.4:INC.IV",
+   "CF88:ART.150",
+   "CF88:ART.225",
+   "ADCT:ART.10:INC.II"
+  ],
+  "total_bytes": 731341,
+  "files": {
+   "99_LEX_V1/00_SYS/LEXV1.VER": 422,
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": 172555,
+   "99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX": 148682,
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": 6579,
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": 65546,
+   "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": 30462,
+   "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": 302915,
+   "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": 4180
+  }
+ },
+ "parser_vs_map": {
+  "agree": 3986,
+  "mapped": 4074,
+  "agreement": 0.9784,
+  "divergences_in_entenda_targets": 0
+ },
+ "firmware_candidate": {
+  "path": "firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE",
+  "base": "v7.12.0 (hashes verificados)",
+  "flag": "LEX_DEVICE_V1_ENABLED (padrao 0)",
+  "compile": {
+   "fqbn": "esp32:esp32:esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default",
+   "v7120": [
+    989395,
+    124452
+   ],
+   "flag0": [
+    989395,
+    124452
+   ],
+   "flag1": [
+    995271,
+    124452
+   ],
+   "flag0_vs_v7120": "69 bytes diferentes (hash ELF/imagem), codigo identico"
+  },
+  "host_cpp_test": "NAO executado: politica de Controle de Aplicativo do Windows bloqueou o compilador host; algoritmo validado pelo simulador Python equivalente"
+ },
+ "relations_v2_64": {
+  "classification": "NON_BLOCKING",
+  "current_lines": 41,
+  "limit": 64
+ },
+ "tests": {
+  "device": "14/14",
+  "entenda": "80/80",
+  "legal_target_id": "47/47"
+ },
+ "determinism": "BYTE_IDENTICAL (2 builds)"
+}

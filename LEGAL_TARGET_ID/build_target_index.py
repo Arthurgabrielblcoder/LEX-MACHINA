@@ -14,10 +14,10 @@ import structure_parser as SP  # noqa: E402
 import target_id as T  # noqa: E402
 
 
-def build(norma, source, end_markers=()):
+def build(norma, source, end_markers=(), article_case_sensitive=False):
     raw = Path(source).read_bytes()
     text = raw.decode('utf-8-sig')
-    targets, anomalies, _ = SP.parse_structure(text, norma, end_markers=end_markers)
+    targets, anomalies, _ = SP.parse_structure(text, norma, end_markers=end_markers, article_case_sensitive=article_case_sensitive)
     ids = [t['target_id'] for t in targets]
     dup = len(ids) - len(set(ids))
     ordered = '\n'.join(sorted(ids)).encode('ascii')
@@ -45,8 +45,9 @@ def main():
     ap.add_argument('--source', required=True)
     ap.add_argument('--output', required=True)
     ap.add_argument('--end-marker', action='append', default=[])
+    ap.add_argument('--article-case-sensitive', action='store_true')
     a = ap.parse_args()
-    idx = build(a.norma, a.source, tuple(a.end_marker))
+    idx = build(a.norma, a.source, tuple(a.end_marker), a.article_case_sensitive)
     if idx['target_id_duplicates']:
         raise SystemExit('TARGET_ID_DUPLICATES=%d: refusing to write' % idx['target_id_duplicates'])
     Path(a.output).parent.mkdir(parents=True, exist_ok=True)

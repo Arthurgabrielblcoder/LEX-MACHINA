@@ -105,6 +105,29 @@ FONTES_ESPECIAIS_MESTRE = {
             "os tribunais de contas são instituições permanentes",
         ],
     },
+    # ADCT como fonte canônica própria (decisão humana de 2026-09-29, DEVICE INTEGRATION V1-A2B).
+    # Mesma via oficial da CF: Senado Federal, Compilação Monovigente, norma 604119. Não é item do catálogo
+    # mestre (não gera pasta própria no cartão); é ingerido por ingerir_fontes_oficiais_senado.py e composto
+    # com a CF no CF88_RUNTIME. Validação forte igual à da CF.
+    "ADCT": {
+        "norma_url": "https://legis.senado.leg.br/norma/604119",
+        "titulo_inicio": (
+            "ATO DAS DISPOSIÇÕES CONSTITUCIONAIS TRANSITÓRIAS"
+        ),
+        "min_caracteres": 100000,
+        "min_linhas": 800,
+        "min_artigos": 130,
+        "artigo_final": "138",
+        "artigos_ancora": [
+            "1", "2", "10", "18-A", "34", "54-A", "60",
+            "76", "76-B", "92-B", "107", "111-A", "120",
+            "124", "130", "138",
+        ],
+        "frases_recentes": [
+            "imposto sobre bens e serviços",
+            "fundo de compensação de benefícios fiscais",
+        ],
+    },
     "CC2002": {
         "norma_url": "https://legis.senado.leg.br/norma/552282",
         "titulo_inicio": (

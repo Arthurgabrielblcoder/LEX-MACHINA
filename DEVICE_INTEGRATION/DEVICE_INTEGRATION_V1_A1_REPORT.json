@@ -1,0 +1,672 @@
+{
+ "mission": "LEX_MACHINA_DEVICE_INTEGRATION_V1_A1",
+ "date": "2026-09-29",
+ "head": "2e2211c05fa2cf93be776f872a87242bb8d53e53",
+ "tag": "entenda-cf-batch03-approved-2026-09-29",
+ "package_type": "SD_OVERLAY_CANDIDATE",
+ "build_id": "74a4e732eecde950",
+ "build_date": "2026-09-29T14:27:22Z",
+ "entenda_explanation_count": 154,
+ "entenda_scope": "CF88_ARTS_1_24",
+ "targets": 3954,
+ "text_map_rows": 4074,
+ "size_table": [
+  {
+   "component": "Lei Seca (nao incluida no overlay)",
+   "files": 0,
+   "bytes": 0,
+   "percent": 0.0
+  },
+  {
+   "component": "Indices estruturais",
+   "files": 2,
+   "bytes": 321088,
+   "percent": 45.43
+  },
+  {
+   "component": "References",
+   "files": 2,
+   "bytes": 72125,
+   "percent": 10.21
+  },
+  {
+   "component": "ENTENDA",
+   "files": 2,
+   "bytes": 309714,
+   "percent": 43.83
+  },
+  {
+   "component": "Metadata",
+   "files": 2,
+   "bytes": 3771,
+   "percent": 0.53
+  }
+ ],
+ "total_bytes": 706698,
+ "files": {
+  "99_LEX_V1/00_SYS/LEXV1.VER": 255,
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": 172555,
+  "99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX": 148533,
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": 6579,
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": 65546,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": 29551,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": 280163,
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": 3516
+ },
+ "legacy_sizes_reference": {
+  "cf_txt_estrutural": 928009,
+  "cf_operacional": 429832,
+  "updater_saida_bytes": 64985501,
+  "updater_saida_files": 935,
+  "relations_v2_2e5_bytes": 28586,
+  "juris_j4_6_bytes": 263895
+ },
+ "simulator_cases": [
+  {
+   "requested": "CF88.5",
+   "target_id": "CF88:ART.5",
+   "status": "OK",
+   "kind": "ARTIGO",
+   "legal_status": "CURRENT",
+   "flags": "E----X",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": true
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "DIRECT",
+   "anchor_target_id": "CF88:ART.5",
+   "explanation_id": "ENTENDA/CF88:ART.5/BASE/2",
+   "display_title": "Art. 5º",
+   "payload_offset": 148885,
+   "payload_length": 2755,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 200.5,
+   "seeks": 23,
+   "bytes_read": 4956
+  },
+  {
+   "requested": "CF88.5.V",
+   "target_id": "CF88:ART.5:INC.V",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "CURRENT",
+   "flags": "B-J-RX",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": true,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": true,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": true,
+    "EXTERNAL_NOTES_AVAILABLE": true
+   },
+   "references": 1,
+   "entenda_available": true,
+   "resolution_type": "COVERED_BY_BLOCK",
+   "anchor_target_id": "CF88:ART.5:INC.IV",
+   "explanation_id": "ENTENDA/CF88:ART.5:INC.IV/BASE/2",
+   "display_title": "Art. 5º, incisos IV, V, IX e XIV — Liberdade de expressão e informação",
+   "payload_offset": 156266,
+   "payload_length": 2570,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 147.8,
+   "seeks": 24,
+   "bytes_read": 5384
+  },
+  {
+   "requested": "CF88.7.XII",
+   "target_id": "CF88:ART.7:INC.XII",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "CURRENT",
+   "flags": "E----X",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": true
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "DIRECT",
+   "anchor_target_id": "CF88:ART.7:INC.XII",
+   "explanation_id": "ENTENDA/CF88:ART.7:INC.XII/BASE/1",
+   "display_title": "Art. 7º, inciso XII — Salário-família",
+   "payload_offset": 251917,
+   "payload_length": 1446,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 130.0,
+   "seeks": 24,
+   "bytes_read": 4650
+  },
+  {
+   "requested": "CF88.8.I",
+   "target_id": "CF88:ART.8:INC.I",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "CURRENT",
+   "flags": "E----X",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": true
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "DIRECT",
+   "anchor_target_id": "CF88:ART.8:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.8:INC.I/BASE/1",
+   "display_title": "Art. 8º, inciso I — Liberdade sindical: registro não é autorização",
+   "payload_offset": 270021,
+   "payload_length": 1653,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 202.6,
+   "seeks": 23,
+   "bytes_read": 4047
+  },
+  {
+   "requested": "CF88.12.5",
+   "target_id": "CF88:ART.12:PAR.5",
+   "status": "OK",
+   "kind": "PARAGRAFO",
+   "legal_status": "CURRENT",
+   "flags": "B-----",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": true,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": false
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "COVERED_BY_BLOCK",
+   "anchor_target_id": "CF88:ART.12:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.12:PAR.4/BASE/2",
+   "display_title": "Art. 12, §§ 4º e 5º — Perda e reaquisição da nacionalidade",
+   "payload_offset": 13556,
+   "payload_length": 1876,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 220.0,
+   "seeks": 24,
+   "bytes_read": 4475
+  },
+  {
+   "requested": "CF88.20.XI",
+   "target_id": "CF88:ART.20:INC.XI",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "CURRENT",
+   "flags": "E----X",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": true
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "DIRECT",
+   "anchor_target_id": "CF88:ART.20:INC.XI",
+   "explanation_id": "ENTENDA/CF88:ART.20:INC.XI/BASE/2",
+   "display_title": "Art. 20, inciso XI — Terras tradicionalmente ocupadas pelos povos indígenas",
+   "payload_offset": 69378,
+   "payload_length": 1669,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 189.8,
+   "seeks": 23,
+   "bytes_read": 4364
+  },
+  {
+   "requested": "CF88.21.XXIV",
+   "target_id": "CF88:ART.21:INC.XXIV",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "CURRENT",
+   "flags": "E-----",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": false
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "DIRECT",
+   "anchor_target_id": "CF88:ART.21:INC.XXIV",
+   "explanation_id": "ENTENDA/CF88:ART.21:INC.XXIV/BASE/1",
+   "display_title": "Art. 21, inciso XXIV — Inspeção do trabalho",
+   "payload_offset": 93378,
+   "payload_length": 1368,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 187.6,
+   "seeks": 23,
+   "bytes_read": 4011
+  },
+  {
+   "requested": "CF88.22.XXIX",
+   "target_id": "CF88:ART.22:INC.XXIX",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "CURRENT",
+   "flags": "E-----",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": false
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "DIRECT",
+   "anchor_target_id": "CF88:ART.22:INC.XXIX",
+   "explanation_id": "ENTENDA/CF88:ART.22:INC.XXIX/BASE/1",
+   "display_title": "Art. 22, inciso XXIX — Propaganda comercial",
+   "payload_offset": 117025,
+   "payload_length": 1365,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 132.1,
+   "seeks": 24,
+   "bytes_read": 3893
+  },
+  {
+   "requested": "CF88.24.4",
+   "target_id": "CF88:ART.24:PAR.4",
+   "status": "OK",
+   "kind": "PARAGRAFO",
+   "legal_status": "CURRENT",
+   "flags": "B----X",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": true,
+    "BLOCK_COVERED": true,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": true
+   },
+   "references": 0,
+   "entenda_available": true,
+   "resolution_type": "COVERED_BY_BLOCK",
+   "anchor_target_id": "CF88:ART.24:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.24:PAR.3/BASE/2",
+   "display_title": "Art. 24, §§ 3º e 4º — Competência plena dos Estados e suspensão da eficácia",
+   "payload_offset": 142849,
+   "payload_length": 2183,
+   "review": "HUMAN_APPROVED_T1",
+   "validity": "CURRENT",
+   "lookup_us": 112.4,
+   "seeks": 23,
+   "bytes_read": 4392
+  },
+  {
+   "requested": "CF88.25",
+   "target_id": "CF88:ART.25",
+   "status": "OK",
+   "kind": "ARTIGO",
+   "legal_status": "CURRENT",
+   "flags": "--J-R-",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": false,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": true,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": true,
+    "EXTERNAL_NOTES_AVAILABLE": false
+   },
+   "references": 1,
+   "entenda_available": false,
+   "resolution_type": "NONE",
+   "parent_context": null,
+   "lookup_us": 92.3,
+   "seeks": 23,
+   "bytes_read": 2477
+  },
+  {
+   "requested": "CF88.999",
+   "target_id": "CF88:ART.999",
+   "status": "INVALID_OR_UNKNOWN_TARGET",
+   "entenda_available": false,
+   "references": 0,
+   "resolution_type": "NONE",
+   "lookup_us": 42.0,
+   "seeks": 10,
+   "bytes_read": 790
+  },
+  {
+   "requested": "CF88.5.XCIX",
+   "target_id": "CF88:ART.5:INC.XCIX",
+   "status": "INVALID_OR_UNKNOWN_TARGET",
+   "entenda_available": false,
+   "references": 0,
+   "resolution_type": "NONE",
+   "lookup_us": 54.5,
+   "seeks": 10,
+   "bytes_read": 968
+  },
+  {
+   "requested": "CF88.37.6",
+   "target_id": "CF88:ART.37:PAR.6",
+   "status": "OK",
+   "kind": "PARAGRAFO",
+   "legal_status": "CURRENT",
+   "flags": "--J-R-",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": false,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": true,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": true,
+    "EXTERNAL_NOTES_AVAILABLE": false
+   },
+   "references": 5,
+   "entenda_available": false,
+   "resolution_type": "NONE",
+   "parent_context": null,
+   "lookup_us": 107.3,
+   "seeks": 30,
+   "bytes_read": 4945
+  },
+  {
+   "requested": "ADCT.10.II",
+   "target_id": "ADCT:ART.10:INC.II",
+   "status": "OK",
+   "kind": "INCISO",
+   "legal_status": "UNKNOWN",
+   "flags": "------",
+   "layers": {
+    "HAS_LEI": true,
+    "HAS_ENTENDA": false,
+    "BLOCK_COVERED": false,
+    "HAS_CORRELATAS": false,
+    "HAS_JURISPRUDENCIA": false,
+    "HAS_REFERENCIAS": false,
+    "HAS_ANY_REFERENCE_ROW": false,
+    "EXTERNAL_NOTES_AVAILABLE": false
+   },
+   "references": 0,
+   "entenda_available": false,
+   "resolution_type": "NONE",
+   "parent_context": null,
+   "lookup_us": 129.0,
+   "seeks": 31,
+   "bytes_read": 3755
+  }
+ ],
+ "benchmark_host": {
+  "targets": {
+   "queries": 19770,
+   "mean_us": 37.5,
+   "max_seeks": 10,
+   "mean_seeks": 10.0
+  },
+  "entenda_lookup": {
+   "queries": 19770,
+   "mean_us": 26.76,
+   "max_seeks": 8,
+   "mean_seeks": 7.48
+  },
+  "entenda_lookup+payload": {
+   "queries": 19770,
+   "mean_us": 27.31,
+   "max_seeks": 9,
+   "mean_seeks": 7.55
+  },
+  "references_lookup+payload": {
+   "queries": 19770,
+   "mean_us": 18.51,
+   "max_seeks": 6,
+   "mean_seeks": 5.06
+  },
+  "block_resolution": {
+   "queries": 600,
+   "mean_us": 29.14
+  },
+  "log2_bound": {
+   "targets": 11,
+   "entenda": 8,
+   "references": 6
+  }
+ },
+ "runtime_parser_vs_text_map": {
+  "mapped_lines": 4074,
+  "agree": 3986,
+  "differ": 88,
+  "agreement": 0.9784,
+  "categories": {
+   "ADCT": 8,
+   "INCISO_SEM_SEPARADOR (ex.: \"I portadores\")": 49,
+   "ORDINAL_COM_PONTO (ex.: § 2.º)": 10,
+   "OUTROS": 1,
+   "SUFIXO_LETRA_NAO_LIDO (ex.: § 4º-A, I-A)": 20
+  },
+  "examples": [
+   {
+    "line": 962,
+    "text_map": "CF88:ART.27:PAR.2",
+    "runtime_parser": "CF88:ART.27:PAR.2.Â",
+    "text": "§ 2.º A remuneração dos Deputados Estaduais se"
+   },
+   {
+    "line": 1344,
+    "text_map": "CF88:ART.37:INC.XVII",
+    "runtime_parser": "CF88:ART.37:INC.XVI:AL.c",
+    "text": "XVII a proibição de acumular estende-se a empreg"
+   },
+   {
+    "line": 1534,
+    "text_map": "CF88:ART.40:PAR.4:INC.I",
+    "runtime_parser": "CF88:ART.40:PAR.4",
+    "text": "I portadores de deficiência;         (Incluído p"
+   },
+   {
+    "line": 1536,
+    "text_map": "CF88:ART.40:PAR.4:INC.II",
+    "runtime_parser": "CF88:ART.40:PAR.4",
+    "text": "II que exerçam atividades de risco;         (Incl"
+   },
+   {
+    "line": 1538,
+    "text_map": "CF88:ART.40:PAR.4:INC.III",
+    "runtime_parser": "CF88:ART.40:PAR.4",
+    "text": "III cujas atividades sejam exercidas sob condiçõ"
+   },
+   {
+    "line": 1542,
+    "text_map": "CF88:ART.40:PAR.4-A",
+    "runtime_parser": "CF88:ART.40:PAR.4",
+    "text": "§ 4º-A. Poderão ser estabelecidos por lei compl"
+   },
+   {
+    "line": 1544,
+    "text_map": "CF88:ART.40:PAR.4-B",
+    "runtime_parser": "CF88:ART.40:PAR.4",
+    "text": "§ 4º-B. Poderão ser estabelecidos por lei compl"
+   },
+   {
+    "line": 1546,
+    "text_map": "CF88:ART.40:PAR.4-C",
+    "runtime_parser": "CF88:ART.40:PAR.4",
+    "text": "§ 4º-C. Poderão ser estabelecidos por lei compl"
+   },
+   {
+    "line": 1552,
+    "text_map": "CF88:ART.40:PAR.6",
+    "runtime_parser": "CF88:ART.40:PAR.6.Â",
+    "text": "§ 6.º As aposentadorias e pensões dos servidore"
+   },
+   {
+    "line": 2656,
+    "text_map": "CF88:ART.92:INC.I-A",
+    "runtime_parser": "CF88:ART.92:INC.I",
+    "text": "I-A o Conselho Nacional de Justiça;         (Incl"
+   },
+   {
+    "line": 2660,
+    "text_map": "CF88:ART.92:INC.II-A",
+    "runtime_parser": "CF88:ART.92:INC.II",
+    "text": "II-A - o Tribunal Superior do Trabalho;         (I"
+   },
+   {
+    "line": 2734,
+    "text_map": "CF88:ART.93:INC.VIII-A",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "VIII-A - a remoção a pedido de magistrados de co"
+   },
+   {
+    "line": 2736,
+    "text_map": "CF88:ART.93:INC.VIII-B",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "VIII-B - a permuta de magistrados de comarca de ig"
+   },
+   {
+    "line": 2738,
+    "text_map": "CF88:ART.93:INC.IX",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "IX todos os julgamentos dos órgãos do Poder Judi"
+   },
+   {
+    "line": 2740,
+    "text_map": "CF88:ART.93:INC.X",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "X as decisões administrativas dos tribunais serã"
+   },
+   {
+    "line": 2742,
+    "text_map": "CF88:ART.93:INC.XI",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "XI nos tribunais com número superior a vinte e ci"
+   },
+   {
+    "line": 2744,
+    "text_map": "CF88:ART.93:INC.XII",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "XII a atividade jurisdicional será ininterrupta,"
+   },
+   {
+    "line": 2746,
+    "text_map": "CF88:ART.93:INC.XIII",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "XIII o número de juízes na unidade jurisdicional"
+   },
+   {
+    "line": 2748,
+    "text_map": "CF88:ART.93:INC.XIV",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "XIV os servidores receberão delegação para a pr"
+   },
+   {
+    "line": 2750,
+    "text_map": "CF88:ART.93:INC.XV",
+    "runtime_parser": "CF88:ART.93:INC.VIII",
+    "text": "XV a distribuição de processos será imediata, e"
+   },
+   {
+    "line": 2848,
+    "text_map": "CF88:ART.100:PAR.1-A",
+    "runtime_parser": "CF88:ART.100:PAR.1",
+    "text": "§ 1º-A Os débitos de natureza alimentícia comp"
+   },
+   {
+    "line": 3108,
+    "text_map": "CF88:ART.103:PAR.4",
+    "runtime_parser": "CF88:ART.103:PAR.4.Â",
+    "text": "§ 4.º A ação declaratória de constitucionalid"
+   },
+   {
+    "line": 3144,
+    "text_map": "CF88:ART.103-B:INC.XI",
+    "runtime_parser": "CF88:ART.103-B:INC.X",
+    "text": "XI um membro do Ministério Público estadual, esc"
+   },
+   {
+    "line": 3180,
+    "text_map": "CF88:ART.103-B:PAR.5:INC.I",
+    "runtime_parser": "CF88:ART.103-B:PAR.5",
+    "text": "I receber as reclamações e denúncias, de qualqu"
+   },
+   {
+    "line": 3182,
+    "text_map": "CF88:ART.103-B:PAR.5:INC.II",
+    "runtime_parser": "CF88:ART.103-B:PAR.5",
+    "text": "II exercer funções executivas do Conselho, de in"
+   }
+  ]
+ },
+ "physical": {
+  "sd": "SD_NOT_UNIQUELY_IDENTIFIED / BACKUP_NOT_AVAILABLE",
+  "flash": "PHYSICAL_FLASH_BACKUP_NOT_PERFORMED (ESP32 nao conectado; esptool ausente)"
+ },
+ "firmware_candidates": {
+  "physical": {
+   "value": "v7.12.0 JURIS CF EXPANDIDA",
+   "confidence": "MEDIUM",
+   "note": "UNKNOWN_NEEDS_PHYSICAL_VERIFICATION (banner serial)"
+  },
+  "repo_base": {
+   "value": "v7.12.0 (copiar para pasta nova na A2)",
+   "confidence": "HIGH"
+  }
+ },
+ "excluded_from_package": {
+  "pilot_out_of_scope": [
+   "CF88:ART.37",
+   "CF88:ART.37:PAR.6",
+   "CF88:ART.37:PAR.10",
+   "CF88:ART.60",
+   "CF88:ART.60:PAR.4",
+   "CF88:ART.60:PAR.4:INC.IV",
+   "CF88:ART.150",
+   "CF88:ART.225",
+   "ADCT:ART.10:INC.II"
+  ],
+  "reason": "aprovadas no piloto, fora do escopo declarado CF88_ARTS_1_24; decisao humana pendente"
+ },
+ "tests": "DEVICE_INTEGRATION 12/12; ENTENDA 80/80; LEGAL_TARGET_ID 47/47"
+}

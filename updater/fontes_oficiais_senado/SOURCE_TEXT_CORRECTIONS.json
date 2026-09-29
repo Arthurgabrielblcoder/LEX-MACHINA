@@ -1,0 +1,32 @@
+{
+ "schema_version": 1,
+ "policy": "Correcoes documentais de transcricao da fonte oficial. Nunca alteram a resposta bruta (raw.html). Cada correcao e EXATA: so se aplica quando a publicacao, o sha256 bruto, o sha256 normalizado e a linha exata coincidem, com o numero exato de ocorrencias; qualquer divergencia faz o exportador falhar (fail closed) e exige nova revisao humana. Nao ha substituicao generica.",
+ "corrections": [
+  {
+   "correction_id": "SRC-CORR-CF88-579494-16434817-ART114-INC-VIII",
+   "correction_type": "SOURCE_TRANSCRIPTION_NORMALIZATION",
+   "not_a": "LEGAL_CONTENT_EDIT",
+   "norm_id": "CF88",
+   "norma_id_senado": "579494",
+   "publication_id": "16434817",
+   "raw_source_sha256": "5beff7a47d7723594a6c48b5a72a99bbe13b300c91f4befce2284ae7f3b86808",
+   "normalized_source_sha256": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2",
+   "target_hint": "CF88:ART.114:INC.VIII",
+   "scope": "linha inteira do texto normalizado (normalizado.txt), comparacao exata",
+   "expected_occurrences": 1,
+   "exact_raw_text": "VII I - a execução, de ofício, das contribuições sociais previstas no art. 195, I, a, e II, e seus acréscimos legais, decorrentes das sentenças que proferir;",
+   "normalized_text": "VIII - a execução, de ofício, das contribuições sociais previstas no art. 195, I, a, e II, e seus acréscimos legais, decorrentes das sentenças que proferir;",
+   "changed_span": {"before": "VII I", "after": "VIII", "note": "somente o rotulo estrutural: remove o espaco espurio dentro do numeral romano; o corpo do inciso permanece identico"},
+   "reason": "A Compilacao Monovigente do Senado grafa o rotulo do inciso como 'VII I' (espaco espurio dentro do numeral romano; a sequencia do art. 114 e VII, VIII, IX). Sem a normalizacao o inciso VIII nao e enderecavel e seu texto e anexado ao inciso VII.",
+   "verification_source": "Emenda Constitucional nº 45, de 30 de dezembro de 2004 (texto oficial no Planalto), que deu ao art. 114 os incisos I a IX; o inciso VIII e 'a execucao, de oficio, das contribuicoes sociais previstas no art. 195, I, a, e II, e seus acrescimos legais, decorrentes das sentencas que proferir'.",
+   "verification_reference": {
+    "url": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc45.htm",
+    "stored_copy": "updater/fontes_oficiais_verificacao/EC45_2004/planalto_raw.html",
+    "stored_copy_sha256": "76f9b562e1782262f21dad82433e39952223317ec25ebea602524590e762b42a"
+   },
+   "status": "APPROVED",
+   "reviewed": true,
+   "reviewed_by": "decisao humana (DEVICE INTEGRATION V1-A2C, 2026-09-29)"
+  }
+ ]
+}
