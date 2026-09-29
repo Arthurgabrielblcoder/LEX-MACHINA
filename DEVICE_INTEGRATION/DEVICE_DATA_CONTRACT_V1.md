@@ -127,7 +127,8 @@ O cartão legado continua com `/99_RELATIONS_V2`, `/99_JURISPRUDENCIA_V2` e as p
 ## 13–17. Formato, versionamento, endianness, offsets e integridade
 
 - **Codificação.** Todos os índices são texto UTF-8 com LF, campos separados por `|` e cabeçalhos iniciados por `#`. A primeira linha é sempre `#LEXMACHINA|<TIPO>|<versão>`.
-  - Versões atuais: `TARGETS` 2, `TEXT_MAP` 2, `REF_LOOKUP` 1, `REF_PAYLOAD` 1, `ENTENDA_LOOKUP` 2, `ENTENDA_PAYLOAD` 2, `DEVICE_VERSION` 2.
+  - Versões atuais: `TARGETS` 3, `TEXT_MAP` 2, `REF_LOOKUP` 1, `REF_PAYLOAD` 1, `ENTENDA_LOOKUP` 2, `ENTENDA_PAYLOAD` 2, `DEVICE_VERSION` 3.
+  - `DEVICE_VERSION` é verificada **exatamente** pelo firmware (`LEX_DEVICE_SCHEMA_VERSION` em `lex_device_v1.h`, igual a `SCHEMA` de `build_sd_staging.py`). Qualquer outro valor resulta em `FAIL_VERSION`, sem fallback. O teste cruzado fica em `tests/test_a3b_prep.py`.
 - **Ordenação.** A ordem é **bytewise** pelo primeiro campo, que é o contrato da busca binária (`CF88:ART.100` < `CF88:ART.12`). No `TEXT_MAP`, o offset tem 10 dígitos com zeros à esquerda, então a ordem de string é igual à numérica.
 - **Endianness.** Não se aplica: nenhum formato é binário. Os números são decimais ASCII.
 - **Offsets.** Absolutos, em bytes, contados a partir do início do próprio arquivo de payload (incluindo o cabeçalho). `BYTES`/`QUANTIDADE` delimitam a leitura.

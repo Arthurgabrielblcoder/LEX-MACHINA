@@ -1,26 +1,34 @@
-LEX MACHINA DEVICE V1 CANDIDATE (V1-A2C PREDEPLOY)
-======================================
+LEX MACHINA DEVICE V1 CANDIDATE (V1-A3B-PREP)
+=============================================
 
-CANDIDATO. NAO gravar no aparelho sem autorizacao explicita (fase A3+).
+CANDIDATO. Gravar no aparelho SOMENTE com autorizacao explicita (A3B), apenas a app em 0x10000, sem erase.
 
 Base: firmware/LEX_MACHINA_v7.12.0_JURIS_CF_EXPANDIDA (hashes verificados antes da copia; release original intacta).
 Firmware fisico confirmado em 2026-09-29 pelo banner serial "LEX MACHINA V7.12.0 JURIS CF EXPANDIDA" e pela string na flash.
 
 Unica mudanca em relacao a v7.12.0:
 - lex_device_v1.h: leitura do overlay /99_LEX_V1 (LEXV1.VER, busca binaria em CF88_TARGETS.IDX, TEXT_OFFSET->target_id com
-  fail closed, ENTENDA DIRECT / COVERED_BY_BLOCK / sem ENTENDA), buffers fixos, nenhuma escrita no SD;
+  fail closed, ENTENDA DIRECT / COVERED_BY_BLOCK / sem ENTENDA, Reference Engine), buffers fixos, nenhuma escrita no SD;
 - no .ino: include + adaptador fs::File -> LexV1Reader + lexV1DiagnosticoBoot() (Serial), tudo atras de LEX_DEVICE_V1_ENABLED.
 
-LEX_DEVICE_V1_ENABLED = 0 (padrao): binario funcionalmente identico a v7.12.0 (mesmo tamanho: 989.395 bytes; difere apenas no
-hash do ELF/imagem). LEX_DEVICE_V1_ENABLED = 1: 997.319 bytes (+7.924), +0 de RAM estatica; so diagnostico serial no boot:
-  runtime esperado (LEXV1.VER) x runtime lido (tamanho + sha256 por mbedtls, em blocos de 1 KB), status do TEXT_MAP,
-  lookup de target por offset (inicio do ADCT), ENTENDA (DIRECT/BLOCK/NONE), contagem ENTENDA e status do Reference Engine.
+Schema do overlay (A3B-PREP): LEXV1.VER deve comecar EXATAMENTE por "#LEXMACHINA|DEVICE_VERSION|3"
+(LEX_DEVICE_SCHEMA_VERSION = 3 = SCHEMA do build_sd_staging.py; teste cruzado DEVICE_INTEGRATION/tests/test_a3b_prep.py).
+Qualquer outra versao (2, 4, 30, "3|X") -> FAIL_VERSION -> camadas V1 desativadas. Sem fallback.
 
-Compilacao (PC, arduino-cli, core esp32 3.3.11):
+LEX_DEVICE_V1_ENABLED = 0 (padrao): mesmo tamanho de programa da v7.12.0 (989.395 bytes; RAM estatica 124.452 B).
+LEX_DEVICE_V1_ENABLED = 1: 1.003.787 bytes (+14.392), RAM estatica 124.460 B (+8); so diagnostico serial no boot, somente leitura:
+  autoteste do parser de versao (2/3/4/30/3|X em memoria), LEXV1.VER, runtime (tamanho + sha256 em streaming) x LEXV1.VER x
+  TEXT_MAP x pinado, sha256 do TEXT_MAP x pinado, guarda de sha errado, TEXT->TARGET (posicao do art. 114, VIII localizada
+  pelos rotulos estruturais -> CF88:ART.114:INC.VIII), 10 consultas (5.V, 21.XXIV, 22.XXIX, 24 par.4, 37 par.6, 60 par.4 IV,
+  ADCT 10 II, 114.VIII, 25, 999), BLOCK sem payload duplicado, referencias zero/uma/varias, tempos (micros) e heap/PSRAM.
+  Linhas "LEXV1: CHECK PASS|FAIL ..." e resumo "LEXV1: DIAG RESULT PASS|FAIL pass=N fail=M".
+
+Compilacao (PC, arduino-cli 1.5.1, core esp32 3.3.11):
   FQBN esp32:esp32:esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default
-  (mesma tabela de particoes do aparelho: app0/app1 0x140000, spiffs 0x160000)
+  (flash_args: --flash-mode dio --flash-freq 80m --flash-size 4MB; app em 0x10000; a tabela de particoes e o bootloader
+   gerados sao identicos byte a byte aos da flash fisica; o aparelho tem 16 MB e usa so os 4 MB da tabela default)
   diagnostico: --build-property "compiler.cpp.extra_flags=-DLEX_DEVICE_V1_ENABLED=1"
 
 Runtime canonico: /99_LEX_V1/05_TEXT/CF88_RUNTIME.txt (587.133 B, sha256 7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a;
 TEXT_MAP sha256 889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96). O TEXT_MAP (RUNTIME) so e usado se tamanho E
-sha256 do arquivo coincidirem; senao fail closed. Nada foi gravado no aparelho.
+sha256 do arquivo coincidirem; senao fail closed.

@@ -22,6 +22,19 @@ STAGING = DI / 'staging_sd_v1'
 SD = STAGING / 'SD' / '99_LEX_V1'
 
 
+def _without_build_commit(rel, data):
+    """Drop only the build-provenance fields (HEAD and its commit time) from LEXV1.VER and the manifest."""
+    if rel.endswith('00_SYS/LEXV1.VER'):
+        return re.sub(rb'(?m)^GIT_COMMIT\|[0-9a-f]{40}$', b'GIT_COMMIT|-', data)
+    if rel.endswith('00_SYS/LEX_DEVICE_MANIFEST.json'):
+        m = json.loads(data.decode('utf-8'))
+        for k in ('git_commit', 'git_tags_at_commit', 'build_date'):
+            m.pop(k)
+        m['files'].pop('99_LEX_V1/00_SYS/LEXV1.VER')
+        return m
+    return data
+
+
 def _rows(p):
     return [l.split('|') for l in Path(p).read_text(encoding='utf-8').splitlines() if l and not l.startswith('#')]
 
@@ -196,7 +209,9 @@ class DeviceIntegrationV1Test(unittest.TestCase):
             b = {p.relative_to(STAGING).as_posix(): p.read_bytes() for p in STAGING.rglob('*') if p.is_file()}
             self.assertEqual(sorted(a), sorted(b))
             for k in a:
-                self.assertEqual(a[k], b[k], k)
+                # LEXV1.VER / manifest record the HEAD they were built at; the staging deployed to the SD may predate a later
+                # commit that does not touch the package, so only those provenance fields are allowed to differ.
+                self.assertEqual(_without_build_commit(k, a[k]), _without_build_commit(k, b[k]), k)
         finally:
             shutil.rmtree(tmp)
 

@@ -10,8 +10,8 @@
 #include "assets/lex_boot_screen.h"
 #include "contexto_juridico.h"
 
-// DEVICE V1 (candidato A2): leitura do overlay /99_LEX_V1. Desligado por padrao: com 0 o comportamento
-// e identico ao v7.12.0. Com 1, apenas diagnostico serial no boot (sem UI nova, sem escrita no SD).
+// DEVICE V1 (candidato A3B): leitura do overlay /99_LEX_V1 (schema LEX_DEVICE_SCHEMA_VERSION). Desligado por padrao: com 0 o
+// comportamento e identico ao v7.12.0. Com 1, apenas diagnostico serial no boot (sem UI nova, somente leitura no SD).
 #ifndef LEX_DEVICE_V1_ENABLED
 #define LEX_DEVICE_V1_ENABLED 0
 #endif
@@ -24,7 +24,7 @@ bool lexV1Sha256Arquivo(const char *caminho, uint32_t &bytes, char hex[65]);
 
 // =====================================================
 // LEX MACHINA - CYBERDECK JURIDICO
-// DEVICE V1 CANDIDATE (A2C) - copia de integracao da v7.12.0; unica mudanca: modulo lex_device_v1.h atras de flag
+// DEVICE V1 CANDIDATE (A3B) - copia de integracao da v7.12.0; unica mudanca: modulo lex_device_v1.h atras de flag
 //               + runtime canonico /99_LEX_V1/05_TEXT/CF88_RUNTIME.txt com verificacao de tamanho e sha256 (fail closed)
 // v7.12.0 JURIS CF EXPANDIDA - cache jurisprudencial dinamico em PSRAM
 //               + preserva integralmente Relations V2, CDC V1 e fluidez 7.10.2
@@ -5163,65 +5163,220 @@ bool lexV1Sha256Arquivo(const char *caminho, uint32_t &bytes, char hex[65])
   return true;
 }
 
+// Leitor em memoria (autoteste do parser de LEXV1.VER no proprio ESP32; nenhum acesso ao SD).
+struct LexV1MemReader : LexV1Reader {
+  const char *s; uint32_t n, p;
+  explicit LexV1MemReader(const char *txt) : s(txt), n((uint32_t)strlen(txt)), p(0) {}
+  bool seek(uint32_t pos) override { if(pos>n) return false; p=pos; return true; }
+  int read(uint8_t *buf,int k) override { int m=0; while(m<k && p<n) buf[m++]=(uint8_t)s[p++]; return m; }
+  uint32_t size() override { return n; }
+  uint32_t position() override { return p; }
+};
+
+static void lexV1Mem(const char *etapa)
+{
+  Serial.printf("LEXV1: MEM %s heap_livre=%lu heap_min=%lu heap_maior_bloco=%lu psram_total=%lu psram_livre=%lu psram_min=%lu\n",etapa,
+                (unsigned long)ESP.getFreeHeap(),(unsigned long)ESP.getMinFreeHeap(),(unsigned long)ESP.getMaxAllocHeap(),
+                (unsigned long)ESP.getPsramSize(),(unsigned long)ESP.getFreePsram(),(unsigned long)ESP.getMinFreePsram());
+}
+
+static uint16_t lexV1Pass=0, lexV1Fail=0;
+static void lexV1Check(bool ok,const char *nome,const char *detalhe)
+{
+  if(ok) lexV1Pass++; else lexV1Fail++;
+  Serial.printf("LEXV1: CHECK %s %s %s\n",ok?"PASS":"FAIL",nome,detalhe?detalhe:"");
+}
+
+// Offset (inicio de linha) da 1a ocorrencia de "\n<b>" depois da 1a ocorrencia de "\n<a>" no texto exibido. So rotulos
+// estruturais ("Art. 114." / "VIII - "), nenhum conteudo editorial. Leitura sequencial em blocos de 512 B.
+static bool lexV1OffsetEstrutural(const char *caminho,const char *a,const char *b,uint32_t &offset)
+{
+  File f=SD.open(caminho,FILE_READ);
+  if(!f) return false;
+  const char *pad[2]={a,b};
+  int fase=0; size_t k=0; uint32_t pos=0; uint8_t buf[512]; int n;
+  bool achou=false;
+  while(!achou && (n=f.read(buf,sizeof(buf)))>0){
+    for(int i=0;i<n && !achou;i++,pos++){
+      const char *p=pad[fase];
+      char c=(char)buf[i];
+      if(k==0){ if(c=='\n') k=1; continue; }
+      if(c==p[k-1]){ k++; if(p[k-1]=='\0'){ if(fase==0){ fase=1; k=0; } else { offset=pos+1-(uint32_t)strlen(p); achou=true; } } }
+      else k=(c=='\n')?1:0;
+    }
+  }
+  f.close();
+  return achou;
+}
+
+struct LexV1Caso {
+  const char *tid;
+  bool existe;
+  LexV1Resolution res;
+  const char *ancora;          // "" = sem ENTENDA
+  uint16_t refs, visiveis;
+};
+
 void lexV1DiagnosticoBoot()
 {
-  Serial.println("LEXV1: diagnostico (somente leitura)");
-  if(!sdOK){ Serial.println("LEXV1: SD indisponivel -> camadas V1 desativadas"); return; }
-  LexV1FileReader ver, tgt, map, lk, pl, rl;
-  LexV1Version v;
-  if(!ver.abrir("/99_LEX_V1/00_SYS/LEXV1.VER") || lexv1ReadVersion(&ver,v)!=LEXV1_OK){
-    Serial.println("LEXV1: LEXV1.VER ausente/invalido -> camadas V1 desativadas (fail closed)");
-    return;
+  lexV1Pass=lexV1Fail=0;
+  Serial.printf("LEXV1: diagnostico A3B (somente leitura) schema_esperado=%d\n",LEX_DEVICE_SCHEMA_VERSION);
+  lexV1Mem("antes_device_v1");
+
+  // 0) autoteste do parser de versao (memoria)
+  {
+    const char *v2="#LEXMACHINA|DEVICE_VERSION|2\nBUILD_ID|x\nENTENDA_COUNT|1\n";
+    const char *v3="#LEXMACHINA|DEVICE_VERSION|3\nBUILD_ID|x\nENTENDA_COUNT|1\n";
+    const char *v4="#LEXMACHINA|DEVICE_VERSION|4\nBUILD_ID|x\nENTENDA_COUNT|1\n";
+    const char *v30="#LEXMACHINA|DEVICE_VERSION|30\nBUILD_ID|x\nENTENDA_COUNT|1\n";
+    const char *v3x="#LEXMACHINA|DEVICE_VERSION|3|X\nBUILD_ID|x\nENTENDA_COUNT|1\n";
+    LexV1Version t;
+    LexV1MemReader r2(v2), r3(v3), r4(v4), r30(v30), r3x(v3x);
+    lexV1Check(lexv1ReadVersion(&r2,t)==LEXV1_FAIL_VERSION,"schema_2_rejeitado",nullptr);
+    lexV1Check(lexv1ReadVersion(&r3,t)==LEXV1_OK && t.schemaVersion==3,"schema_3_aceito",nullptr);
+    lexV1Check(lexv1ReadVersion(&r4,t)==LEXV1_FAIL_VERSION,"schema_4_rejeitado",nullptr);
+    lexV1Check(lexv1ReadVersion(&r30,t)==LEXV1_FAIL_VERSION && lexv1ReadVersion(&r3x,t)==LEXV1_FAIL_VERSION,"schema_30_e_3X_rejeitados",nullptr);
   }
-  Serial.printf("LEXV1: build=%s entenda=%u pilotos=%u runtime_cf=%s map=%s ref=%s\n",v.buildId,v.entendaCount,v.entendaPilots,
-                v.runtimeCf,v.textMapRuntimeStatus,v.referenceEngine);
+
+  if(!sdOK){ Serial.println("LEXV1: SD indisponivel -> camadas V1 desativadas"); lexV1Check(false,"sd_montado",nullptr); return; }
+  LexV1FileReader ver, tgt, map, lk, pl, rl, rp;
+  LexV1Version v;
+  LexV1Status sv=ver.abrir("/99_LEX_V1/00_SYS/LEXV1.VER")?lexv1ReadVersion(&ver,v):LEXV1_FAIL_IO;
+  char det[160];
+  snprintf(det,sizeof(det),"status=%s lido=%d esperado=%d",lexv1StatusName(sv),v.schemaVersion,LEX_DEVICE_SCHEMA_VERSION);
+  lexV1Check(sv==LEXV1_OK,"lexv1_ver_device_version",det);
+  if(sv!=LEXV1_OK){ Serial.println("LEXV1: LEXV1.VER ausente/invalido -> camadas V1 desativadas (fail closed)"); return; }
+  Serial.printf("LEXV1: build=%s commit=%s entenda=%u pilotos=%u runtime_cf=%s map=%s ref=%s\n",v.buildId,v.gitCommit,v.entendaCount,
+                v.entendaPilots,v.runtimeCf,v.textMapRuntimeStatus,v.referenceEngine);
+
   LexV1Index targets, textMap, lookup, refLookup;
+  uint32_t t0=micros();
   LexV1Status s1=tgt.abrir("/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX")?lexv1OpenIndex(targets,&tgt,"TARGETS",LEXV1_TARGETS_VERSION):LEXV1_FAIL_IO;
   LexV1Status s2=map.abrir("/99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX")?lexv1OpenIndex(textMap,&map,"TEXT_MAP",LEXV1_TEXT_MAP_VERSION):LEXV1_FAIL_IO;
   LexV1Status s3=lk.abrir("/99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX")?lexv1OpenIndex(lookup,&lk,"ENTENDA_LOOKUP",2):LEXV1_FAIL_IO;
   LexV1Status s4=rl.abrir("/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX")?lexv1OpenIndex(refLookup,&rl,"REF_LOOKUP",1):LEXV1_FAIL_IO;
   bool payloadOk=pl.abrir("/99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT");
-  Serial.printf("LEXV1: targets=%s text_map=%s entenda=%s payload=%s references=%s\n",lexv1StatusName(s1),lexv1StatusName(s2),
-                lexv1StatusName(s3),payloadOk?"OK":"FAIL_IO",lexv1StatusName(s4));
+  bool refPayloadOk=rp.abrir("/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX");
+  Serial.printf("LEXV1: TIME open_indices_us=%lu\n",(unsigned long)(micros()-t0));
+  lexV1Check(s1==LEXV1_OK,"targets_idx",lexv1StatusName(s1));
+  lexV1Check(s2==LEXV1_OK,"text_map_idx",lexv1StatusName(s2));
+  lexV1Check(s3==LEXV1_OK && payloadOk,"entenda_idx_payload",lexv1StatusName(s3));
+  lexV1Check(s4==LEXV1_OK && refPayloadOk,"references_idx_payload",lexv1StatusName(s4));
 
-  // Runtime CF: tamanho + sha256 do arquivo exibido contra o esperado (LEXV1.VER e cabecalho do TEXT_MAP).
+  // 1) runtime exibido: tamanho + sha256 (streaming) contra LEXV1.VER, contra o cabecalho do TEXT_MAP e contra o pinado
   char sha[65]={0};
   uint32_t bytesTexto=0;
-  uint32_t t0=millis();
+  t0=micros();
   bool lido=lexV1Sha256Arquivo(v.runtimeCfPath[0]?v.runtimeCfPath:LEXV1_RUNTIME_CF_PATH,bytesTexto,sha);
+  Serial.printf("LEXV1: TIME runtime_sha256_us=%lu\n",(unsigned long)(micros()-t0));
   Serial.printf("LEXV1: runtime esperado bytes=%lu sha256=%s\n",(unsigned long)v.runtimeCfBytes,v.runtimeCfSha256);
-  Serial.printf("LEXV1: runtime lido     bytes=%lu sha256=%s (%s, %lu ms)\n",(unsigned long)bytesTexto,lido?sha:"-",
-                lido?"OK":"FAIL_IO",(unsigned long)(millis()-t0));
+  Serial.printf("LEXV1: runtime lido     bytes=%lu sha256=%s (%s)\n",(unsigned long)bytesTexto,lido?sha:"-",lido?"OK":"FAIL_IO");
   bool runtimeOk=lido && bytesTexto==v.runtimeCfBytes && strcmp(sha,v.runtimeCfSha256)==0;
   Serial.printf("LEXV1: runtime hash %s\n",runtimeOk?"CONFERE":"DIVERGE -> resolucao por posicao desativada (fail closed)");
+  lexV1Check(runtimeOk,"RUNTIME_HASH_MATCH",nullptr);
+  bool pinOk=v.runtimeCfBytes==LEXV1_PINNED_RUNTIME_BYTES && strcmp(v.runtimeCfSha256,LEXV1_PINNED_RUNTIME_SHA256)==0;
   Serial.printf("LEXV1: runtime do predeploy (compilado) bytes=%lu sha256=%s -> VER %s\n",LEXV1_PINNED_RUNTIME_BYTES,
-                LEXV1_PINNED_RUNTIME_SHA256,(v.runtimeCfBytes==LEXV1_PINNED_RUNTIME_BYTES && strcmp(v.runtimeCfSha256,LEXV1_PINNED_RUNTIME_SHA256)==0)?
-                "IGUAL":"DIFERENTE (overlay de outro build)");
+                LEXV1_PINNED_RUNTIME_SHA256,pinOk?"IGUAL":"DIFERENTE (overlay de outro build)");
+  lexV1Check(pinOk,"pinned_runtime_vs_ver",nullptr);
+
+  // 2) TEXT_MAP: schema/status/fonte + hash do arquivo contra o pinado
   if(s2==LEXV1_OK){
+    snprintf(det,sizeof(det),"status=%s source_bytes=%lu registros=%lu adct=%lu",textMap.runtimeStatus,(unsigned long)textMap.sourceBytes,
+             (unsigned long)textMap.recordCount,(unsigned long)textMap.adctStart);
+    lexV1Check(!strcmp(textMap.runtimeStatus,"RUNTIME") && textMap.sourceBytes==bytesTexto && !strcmp(textMap.sourceSha256,sha),
+               "text_map_runtime_guard",det);
+    char shaMap[65]={0}; uint32_t bytesMap=0;
+    bool mapLido=lexV1Sha256Arquivo("/99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX",bytesMap,shaMap);
+    lexV1Check(mapLido && !strcmp(shaMap,LEXV1_PINNED_TEXT_MAP_SHA256),"text_map_sha256_pinned",shaMap);
+    // guarda: sha errado -> FAIL_SOURCE_MISMATCH (nenhum target)
     char tid[LEXV1_KEY_MAX];
-    uint32_t adct=textMap.adctStart;
-    LexV1Status sm=lexv1TargetAtOffset(textMap,bytesTexto,lido?sha:nullptr,adct,tid,sizeof(tid));
-    Serial.printf("LEXV1: text_map offset=%lu -> %s target=%s (runtime=%s)\n",(unsigned long)adct,lexv1StatusName(sm),tid,
-                  textMap.runtimeStatus);
+    LexV1Status g=lexv1TargetAtOffset(textMap,bytesTexto,"0000000000000000000000000000000000000000000000000000000000000000",
+                                      textMap.adctStart,tid,sizeof(tid));
+    lexV1Check(g==LEXV1_FAIL_SOURCE_MISMATCH && !tid[0],"text_map_guard_sha_errado",lexv1StatusName(g));
+    // TEXT -> TARGET: posicao do art. 114, VIII localizada no proprio runtime
+    uint32_t off114=0;
+    bool achou=lexV1OffsetEstrutural(v.runtimeCfPath[0]?v.runtimeCfPath:LEXV1_RUNTIME_CF_PATH,"Art. 114.","VIII - ",off114);
+    t0=micros();
+    LexV1Status sm=achou?lexv1TargetAtOffset(textMap,bytesTexto,lido?sha:nullptr,off114,tid,sizeof(tid)):LEXV1_NOT_FOUND;
+    uint32_t us=micros()-t0;
+    snprintf(det,sizeof(det),"offset=%lu -> %s %s us=%lu",(unsigned long)off114,lexv1StatusName(sm),tid,(unsigned long)us);
+    Serial.printf("LEXV1: TIME text_map_lookup_us=%lu\n",(unsigned long)us);
+    lexV1Check(sm==LEXV1_OK && !strcmp(tid,"CF88:ART.114:INC.VIII"),"text_to_target_114_VIII",det);
+    sm=lexv1TargetAtOffset(textMap,bytesTexto,lido?sha:nullptr,textMap.adctStart,tid,sizeof(tid));
+    snprintf(det,sizeof(det),"offset=%lu -> %s %s",(unsigned long)textMap.adctStart,lexv1StatusName(sm),tid);
+    lexV1Check(sm==LEXV1_OK && !strcmp(tid,"ADCT"),"text_to_target_inicio_adct",det);
   }
-  if(s4==LEXV1_OK){
-    char linha[LEXV1_LINE_MAX], q[8];
-    LexV1Status sr=lexv1Find(refLookup,"CF88:ART.37:PAR.6",linha,sizeof(linha),false);
-    if(sr==LEXV1_OK) lexv1Field(linha,2,q,sizeof(q)); else q[0]='\0';
-    Serial.printf("LEXV1: references CF88:ART.37:PAR.6 -> %s quantidade=%s\n",lexv1StatusName(sr),q);
+
+  // 3) consultas: target table, ENTENDA (DIRECT/BLOCK/NONE), Reference Engine
+  if(s1==LEXV1_OK && s3==LEXV1_OK && s4==LEXV1_OK && payloadOk && refPayloadOk){
+    static const LexV1Caso casos[]={
+      {"CF88:ART.5:INC.V",true,LEXV1_RES_COVERED_BY_BLOCK,"CF88:ART.5:INC.IV",1,1},
+      {"CF88:ART.21:INC.XXIV",true,LEXV1_RES_DIRECT,"CF88:ART.21:INC.XXIV",0,0},
+      {"CF88:ART.22:INC.XXIX",true,LEXV1_RES_DIRECT,"CF88:ART.22:INC.XXIX",0,0},
+      {"CF88:ART.24:PAR.4",true,LEXV1_RES_COVERED_BY_BLOCK,"CF88:ART.24:PAR.3",0,0},
+      {"CF88:ART.37:PAR.6",true,LEXV1_RES_DIRECT,"CF88:ART.37:PAR.6",5,5},
+      {"CF88:ART.60:PAR.4:INC.IV",true,LEXV1_RES_DIRECT,"CF88:ART.60:PAR.4:INC.IV",0,0},
+      {"ADCT:ART.10:INC.II",true,LEXV1_RES_DIRECT,"ADCT:ART.10:INC.II",0,0},
+      {"CF88:ART.114:INC.VIII",true,LEXV1_RES_NONE,"",2,0},   // known issue: 2 referencias historicas ocultas
+      {"CF88:ART.25",true,LEXV1_RES_NONE,"",1,1},
+      {"CF88:ART.999",false,LEXV1_RES_NONE,"",0,0},
+    };
+    for(const LexV1Caso &c: casos){
+      LexV1Target t; LexV1Entenda e; LexV1Refs rf;
+      char linha[LEXV1_LINE_MAX];
+      uint32_t a=micros();
+      LexV1Status st=lexv1TargetInfo(targets,c.tid,t);
+      uint32_t usTarget=micros()-a;
+      a=micros();
+      LexV1Status sl=(st==LEXV1_OK)?lexv1Find(lookup,c.tid,linha,sizeof(linha),false):LEXV1_NOT_FOUND;
+      uint32_t usLookup=micros()-a;
+      a=micros();
+      LexV1Status se=(st==LEXV1_OK)?lexv1Entenda(lookup,&pl,c.tid,e):LEXV1_NOT_FOUND;
+      uint32_t usEntenda=micros()-a;
+      uint32_t usPayload=0, lidos=0;
+      if(se==LEXV1_OK){
+        uint8_t buf[512]; a=micros();
+        if(pl.seek(e.offset)) while(lidos<e.length){ int k=pl.read(buf,(int)min((uint32_t)sizeof(buf),e.length-lidos)); if(k<=0) break; lidos+=k; }
+        usPayload=micros()-a;
+      }
+      a=micros();
+      LexV1Status sr=(st==LEXV1_OK)?lexv1References(refLookup,&rp,c.tid,rf):LEXV1_NOT_FOUND;
+      uint32_t usRefs=micros()-a;
+      Serial.printf("LEXV1: Q %s target=%s status=%s flags=%s entenda=%s res=%s anchor=%s off=%lu len=%lu lidos=%lu refs=%u/%u visiveis=%u "
+                    "ref_bytes=%lu us_target=%lu us_lookup=%lu us_entenda=%lu us_payload=%lu us_refs=%lu\n",
+                    c.tid,lexv1StatusName(st),t.legalStatus,t.flags,lexv1StatusName(se),lexv1ResolutionName(e.resolution),e.anchor,
+                    (unsigned long)e.offset,(unsigned long)e.length,(unsigned long)lidos,rf.parsed,rf.count,rf.visible,(unsigned long)rf.bytes,
+                    (unsigned long)usTarget,(unsigned long)usLookup,(unsigned long)usEntenda,(unsigned long)usPayload,(unsigned long)usRefs);
+      bool ok;
+      if(!c.existe) ok=(st==LEXV1_NOT_FOUND && se==LEXV1_NOT_FOUND);
+      else if(c.res==LEXV1_RES_NONE) ok=(st==LEXV1_OK && se==LEXV1_NOT_FOUND && sl==LEXV1_NOT_FOUND);
+      else ok=(st==LEXV1_OK && se==LEXV1_OK && e.resolution==c.res && !strcmp(e.anchor,c.ancora) && lidos==e.length);
+      ok=ok && (c.existe ? (sr==LEXV1_OK && rf.count==c.refs && rf.parsed==c.refs && rf.visible==c.visiveis) : true);
+      lexV1Check(ok,c.tid,c.existe?(c.res==LEXV1_RES_COVERED_BY_BLOCK?"BLOCK":c.res==LEXV1_RES_DIRECT?"DIRECT":"NONE"):"INVALID_OR_UNKNOWN_TARGET");
+      if(c.res==LEXV1_RES_COVERED_BY_BLOCK && se==LEXV1_OK){
+        // BLOCK: o alvo usa o MESMO bloco do payload da ancora (sem duplicar payload)
+        LexV1Entenda ea;
+        a=micros();
+        LexV1Status sa=lexv1Entenda(lookup,&pl,c.ancora,ea);
+        Serial.printf("LEXV1: TIME block_resolution_us=%lu (%s)\n",(unsigned long)usEntenda,c.tid);
+        snprintf(det,sizeof(det),"%s -> %s off=%lu/%lu len=%lu/%lu anchor_us=%lu",c.tid,c.ancora,(unsigned long)e.offset,(unsigned long)ea.offset,
+                 (unsigned long)e.length,(unsigned long)ea.length,(unsigned long)(micros()-a));
+        lexV1Check(sa==LEXV1_OK && ea.resolution==LEXV1_RES_DIRECT && ea.offset==e.offset && ea.length==e.length,"block_sem_payload_duplicado",det);
+      }
+    }
+    // Reference Engine: zero / um / varios resultados (so contagem, offset e parse; nenhum conteudo editorial)
+    LexV1Refs z,u,m;
+    LexV1Status a1=lexv1References(refLookup,&rp,"CF88:ART.21:INC.XXIV",z);
+    LexV1Status a2=lexv1References(refLookup,&rp,"CF88:ART.25",u);
+    LexV1Status a3=lexv1References(refLookup,&rp,"CF88:ART.37:PAR.6",m);
+    snprintf(det,sizeof(det),"count=%u",z.count); lexV1Check(a1==LEXV1_OK && z.count==0 && z.parsed==0,"references_zero_result",det);
+    snprintf(det,sizeof(det),"count=%u offset=%lu parsed=%u",u.count,(unsigned long)u.offset,u.parsed);
+    lexV1Check(a2==LEXV1_OK && u.count==1 && u.parsed==1,"references_single_result",det);
+    snprintf(det,sizeof(det),"count=%u offset=%lu parsed=%u bytes=%lu",m.count,(unsigned long)m.offset,m.parsed,(unsigned long)m.bytes);
+    lexV1Check(a3==LEXV1_OK && m.count==5 && m.parsed==5,"references_multiple_result",det);
   }
-  if(s1!=LEXV1_OK || s3!=LEXV1_OK || !payloadOk) return;
-  const char *casos[]={"CF88:ART.5:INC.V","CF88:ART.21:INC.XXIV","CF88:ART.37:PAR.6","CF88:ART.60:PAR.4:INC.IV","ADCT:ART.10:INC.II",
-                       "CF88:ART.25","CF88:ART.999"};
-  for(const char *c: casos){
-    uint32_t t1=micros();
-    LexV1Target t; LexV1Entenda e;
-    LexV1Status st=lexv1TargetInfo(targets,c,t);
-    LexV1Status se=(st==LEXV1_OK)?lexv1Entenda(lookup,&pl,c,e):LEXV1_NOT_FOUND;
-    Serial.printf("LEXV1: %s target=%s status=%s flags=%s entenda=%s res=%s anchor=%s off=%lu len=%lu us=%lu\n",c,lexv1StatusName(st),
-                  t.legalStatus,t.flags,lexv1StatusName(se),lexv1ResolutionName(e.resolution),e.anchor,(unsigned long)e.offset,
-                  (unsigned long)e.length,(unsigned long)(micros()-t1));
-  }
+  lexV1Mem("depois_device_v1");
+  Serial.printf("LEXV1: DIAG RESULT %s pass=%u fail=%u\n",lexV1Fail==0?"PASS":"FAIL",lexV1Pass,lexV1Fail);
 }
 #endif
 

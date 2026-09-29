@@ -1,5 +1,5 @@
 #pragma once
-// LEX MACHINA DEVICE V1 (candidato A2B) - leitura do overlay /99_LEX_V1 conforme DEVICE_DATA_CONTRACT_V1.
+// LEX MACHINA DEVICE V1 (candidato A3B) - leitura do overlay /99_LEX_V1 conforme DEVICE_DATA_CONTRACT_V1.
 // Texto exibido pelo runtime V1: /99_LEX_V1/05_TEXT/CF88_RUNTIME.txt (exatamente os bytes indexados no CF88_TEXT_MAP.IDX).
 // Portavel (sem Arduino): o sketch fornece um LexV1Reader sobre fs::File; o PC fornece um sobre FILE* (teste host).
 // Buffers fixos, busca binaria direto no arquivo, nenhum indice/payload inteiro em RAM. Qualquer inconsistencia -> FAIL CLOSED.
@@ -24,6 +24,9 @@
 #define LEXV1_PINNED_RUNTIME_BYTES 587133UL
 #define LEXV1_PINNED_RUNTIME_SHA256 "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a"
 #define LEXV1_PINNED_TEXT_MAP_SHA256 "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96"
+// Contrato do overlay: versao EXATA do LEXV1.VER (#LEXMACHINA|DEVICE_VERSION|<n>). Deve ser igual a SCHEMA de
+// DEVICE_INTEGRATION/tools/build_sd_staging.py (teste cruzado em test_a3b_prep.py). Qualquer outra versao -> FAIL_VERSION.
+#define LEX_DEVICE_SCHEMA_VERSION 3
 #define LEXV1_TARGETS_VERSION 3
 #define LEXV1_TEXT_MAP_VERSION 2
 
@@ -188,6 +191,7 @@ static inline LexV1Status lexv1Find(LexV1Index &ix, const char *key, char *out, 
 // ---------- LEXV1.VER ----------
 
 struct LexV1Version {
+  int schemaVersion = -1;            // versao lida da 1a linha (mesmo quando rejeitada), para diagnostico
   char buildId[24] = {0};
   char gitCommit[48] = {0};
   uint16_t entendaCount = 0;
@@ -202,13 +206,31 @@ struct LexV1Version {
   char referenceEngine[48] = {0};
 };
 
+// 1a linha do LEXV1.VER: exatamente "#LEXMACHINA|DEVICE_VERSION|<n>" (n decimal, sem campos extras). Devolve n ou -1.
+static inline int lexv1ParseDeviceVersionLine(const char *line)
+{
+  static const char prefix[] = "#LEXMACHINA|DEVICE_VERSION|";
+  const size_t lp = sizeof(prefix) - 1;
+  if (strncmp(line, prefix, lp) != 0) return -1;
+  const char *d = line + lp;
+  if (!*d || strlen(d) > 4) return -1;
+  int n = 0;
+  for (const char *c = d; *c; c++) {
+    if (*c < '0' || *c > '9') return -1;
+    n = n * 10 + (*c - '0');
+  }
+  return n;
+}
+
 static inline LexV1Status lexv1ReadVersion(LexV1Reader *r, LexV1Version &v)
 {
   v = LexV1Version();
   if (!r || !r->seek(0)) return LEXV1_FAIL_IO;
   char line[LEXV1_LINE_MAX], k[40], val[96];
   int n = lexv1ReadLine(*r, line, sizeof(line));
-  if (n < 0 || strncmp(line, "#LEXMACHINA|DEVICE_VERSION|2", 28) != 0) return LEXV1_FAIL_VERSION;
+  if (n < 0) return LEXV1_FAIL_VERSION;
+  v.schemaVersion = lexv1ParseDeviceVersionLine(line);
+  if (v.schemaVersion != LEX_DEVICE_SCHEMA_VERSION) return LEXV1_FAIL_VERSION;   // exatamente a versao do contrato, sem fallback
   while ((n = lexv1ReadLine(*r, line, sizeof(line))) >= 0) {
     if (n == 0 || line[0] == '#') continue;
     lexv1Field(line, 0, k, sizeof(k)); lexv1Field(line, 1, val, sizeof(val));
@@ -316,6 +338,44 @@ static inline LexV1Status lexv1Entenda(LexV1Index &lookup, LexV1Reader *payload,
     else if (line[0] == 'D' && line[1] == '|') strncpy(e.title, line + 2, sizeof(e.title) - 1);
   }
   if (!e.anchor[0]) return LEXV1_FAIL_BAD_ROW;
+  return LEXV1_OK;
+}
+
+// ---------- Reference Engine ----------
+
+struct LexV1Refs {
+  uint32_t offset = 0;
+  uint16_t count = 0;                // QUANTIDADE do REF_LOOKUP (inclui historicas ocultas)
+  uint16_t parsed = 0;               // linhas do payload lidas e validadas (TARGET_ID igual, 7 campos)
+  uint16_t visible = 0;              // VISIBILIDADE == CURRENT_VISIBLE
+  uint32_t bytes = 0;
+};
+
+// Sem linha no REF_LOOKUP = zero referencias (LEXV1_OK, count 0). Payload lido so em leitura, linha a linha.
+static inline LexV1Status lexv1References(LexV1Index &refLookup, LexV1Reader *payload, const char *tid, LexV1Refs &out)
+{
+  out = LexV1Refs();
+  char line[LEXV1_LINE_MAX], f[40];
+  LexV1Status st = lexv1Find(refLookup, tid, line, sizeof(line), false);
+  if (st == LEXV1_NOT_FOUND) return LEXV1_OK;
+  if (st != LEXV1_OK) return st;
+  lexv1Field(line, 1, f, sizeof(f)); out.offset = (uint32_t)strtoul(f, nullptr, 10);
+  lexv1Field(line, 2, f, sizeof(f)); out.count = (uint16_t)atoi(f);
+  if (!payload || out.count == 0 || out.offset >= payload->size()) return LEXV1_FAIL_OUT_OF_RANGE;
+  if (!payload->seek(out.offset)) return LEXV1_FAIL_IO;
+  for (uint16_t i = 0; i < out.count; i++) {
+    uint32_t p0 = payload->position();
+    int n = lexv1ReadLine(*payload, line, sizeof(line));
+    if (n < 0) return n == -2 ? LEXV1_FAIL_LINE_TOO_LONG : LEXV1_FAIL_BAD_ROW;
+    out.bytes += payload->position() - p0;
+    if (lexv1KeyCmp(line, tid) != 0) return LEXV1_FAIL_BAD_ROW;
+    int bars = 0;
+    for (const char *c = line; *c; c++) bars += (*c == '|');
+    if (bars != 6) return LEXV1_FAIL_BAD_ROW;
+    lexv1Field(line, 2, f, sizeof(f));
+    if (!strcmp(f, "CURRENT_VISIBLE")) out.visible++;
+    out.parsed++;
+  }
   return LEXV1_OK;
 }
 

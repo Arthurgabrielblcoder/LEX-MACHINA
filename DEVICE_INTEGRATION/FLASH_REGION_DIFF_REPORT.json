@@ -1,0 +1,157 @@
+{
+ "policy": "FLASH_INTEGRITY_POLICY.md",
+ "reference_sha256": "061849a357d77f571d735a108fc5f4a032d7c12e4f7e3c8f3b34c0f3357d6727",
+ "current_sha256": "0240373663354a600240c15ca22384cdbea3bb3cc99166c717ae1963a884ef05",
+ "partition_table_md5": "972dae2ff872a0142d60bad124c0666b",
+ "partition_table_equal": true,
+ "partitions": [
+  {
+   "name": "nvs",
+   "type": 1,
+   "subtype": 2,
+   "offset": "0x9000",
+   "size": "0x5000"
+  },
+  {
+   "name": "otadata",
+   "type": 1,
+   "subtype": 0,
+   "offset": "0xe000",
+   "size": "0x2000"
+  },
+  {
+   "name": "app0",
+   "type": 0,
+   "subtype": 16,
+   "offset": "0x10000",
+   "size": "0x140000"
+  },
+  {
+   "name": "app1",
+   "type": 0,
+   "subtype": 17,
+   "offset": "0x150000",
+   "size": "0x140000"
+  },
+  {
+   "name": "spiffs",
+   "type": 1,
+   "subtype": 130,
+   "offset": "0x290000",
+   "size": "0x160000"
+  },
+  {
+   "name": "coredump",
+   "type": 1,
+   "subtype": 3,
+   "offset": "0x3f0000",
+   "size": "0x10000"
+  }
+ ],
+ "active_app": "app0",
+ "otadata_seq": 1,
+ "regions": [
+  {
+   "name": "bootloader",
+   "offset": "0x0",
+   "size": "0x8000",
+   "sha256_original": "110f4d29a2378310353e1d186300045db6d58b0103a5ec53bfab051f9a7942d0",
+   "sha256_current": "110f4d29a2378310353e1d186300045db6d58b0103a5ec53bfab051f9a7942d0",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "IMMUTABLE_CRITICAL"
+  },
+  {
+   "name": "partition_table",
+   "offset": "0x8000",
+   "size": "0x1000",
+   "sha256_original": "f3134b747fef242287f33aa0be8a5008958132e0c7611f5bc5bb917c02c9e397",
+   "sha256_current": "f3134b747fef242287f33aa0be8a5008958132e0c7611f5bc5bb917c02c9e397",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "IMMUTABLE_CRITICAL"
+  },
+  {
+   "name": "nvs",
+   "offset": "0x9000",
+   "size": "0x5000",
+   "sha256_original": "5477f615df95c4bca99d34cb85ab5f287f41df4d77e6c896d29a86f22c8d76b3",
+   "sha256_current": "3f53eb85502a85fb9e30e31ae1f55e25ca31768407ee6326e07f4873fe3592c0",
+   "equal": false,
+   "changed_bytes": 1966,
+   "classification": "MUTABLE_PERSISTENT",
+   "changed_nvs_keys": [
+    {
+     "namespace": "phy",
+     "key": "cal_data"
+    }
+   ],
+   "nvs_verdict": "ALLOWED_EXPLAINED",
+   "unexplained": []
+  },
+  {
+   "name": "otadata",
+   "offset": "0xe000",
+   "size": "0x2000",
+   "sha256_original": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+   "sha256_current": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "IMMUTABLE_CRITICAL"
+  },
+  {
+   "name": "app0",
+   "offset": "0x10000",
+   "size": "0x140000",
+   "sha256_original": "ab6d4ffc8c4063139d93fae330d860b70a1ec97380ce371b1d6f1ce1eb181c1f",
+   "sha256_current": "ab6d4ffc8c4063139d93fae330d860b70a1ec97380ce371b1d6f1ce1eb181c1f",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "IMMUTABLE_CRITICAL",
+   "role": "ACTIVE_APP"
+  },
+  {
+   "name": "app1",
+   "offset": "0x150000",
+   "size": "0x140000",
+   "sha256_original": "a47fe3a159127e20fa3a45a2b1040749614b357877a204172ac8d5c89fbf9fc5",
+   "sha256_current": "a47fe3a159127e20fa3a45a2b1040749614b357877a204172ac8d5c89fbf9fc5",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "IMMUTABLE_CRITICAL"
+  },
+  {
+   "name": "spiffs",
+   "offset": "0x290000",
+   "size": "0x160000",
+   "sha256_original": "3cf4e5a0597dd20f5a6f7b56607f7ba795de600e159f06a7189f7a990f376b46",
+   "sha256_current": "3cf4e5a0597dd20f5a6f7b56607f7ba795de600e159f06a7189f7a990f376b46",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "IMMUTABLE_CRITICAL"
+  },
+  {
+   "name": "coredump",
+   "offset": "0x3f0000",
+   "size": "0x10000",
+   "sha256_original": "1009c01be1a61236eafad4e58922cb4a210260f1b10b83838219022da150c2d8",
+   "sha256_current": "1009c01be1a61236eafad4e58922cb4a210260f1b10b83838219022da150c2d8",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "DIAGNOSTIC_CONDITIONAL"
+  },
+  {
+   "name": "unpartitioned_0x400000",
+   "offset": "0x400000",
+   "size": "0xc00000",
+   "sha256_original": "291113e2ec6cb39a909e74773ccb7d212160a44e1d552c561135b638bbf371bb",
+   "sha256_current": "291113e2ec6cb39a909e74773ccb7d212160a44e1d552c561135b638bbf371bb",
+   "equal": true,
+   "changed_bytes": 0,
+   "classification": "UNPARTITIONED"
+  }
+ ],
+ "verdict": "PASS",
+ "reference_dump": "raw_flash_16MB_read1.bin",
+ "current_dump": "prep_read2_full_flash_16MB.bin"
+}
