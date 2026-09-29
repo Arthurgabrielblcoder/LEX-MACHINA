@@ -1,0 +1,495 @@
+{
+ "schema_version": "lex-machina-entenda-cf-a1/1",
+ "mission": "ENTENDA-CF-A1",
+ "references_a3": {
+  "commit": "9fcab702a9b6467b71949071ba34741e940e366d",
+  "tag": "cf-reference-engine-final-2026-09-28",
+  "message": "feat: complete canonical CF88 reference engine",
+  "MOTOR_REFERENCIAS_CF_FECHADO": true
+ },
+ "editorial_model": {
+  "layers": [
+   "LEI SECA",
+   "ENTENDA",
+   "CORRELATAS",
+   "JURISPRUDENCIA",
+   "REFERENCIAS"
+  ],
+  "shared_key": "target_id",
+  "nature": "camada explicativa derivada; nao e Lei Seca, jurisprudencia nem referencias; nunca mistura texto oficial",
+  "sections": [
+   {
+    "key": "o_que_diz",
+    "title": "O QUE DIZ"
+   },
+   {
+    "key": "o_que_significa",
+    "title": "O QUE SIGNIFICA"
+   },
+   {
+    "key": "exemplo_pratico",
+    "title": "EXEMPLO PRÁTICO"
+   },
+   {
+    "key": "atencao",
+    "title": "ATENÇÃO"
+   },
+   {
+    "key": "palavras_dificeis",
+    "title": "PALAVRAS DIFÍCEIS"
+   }
+  ],
+  "required": [
+   "o_que_diz",
+   "o_que_significa",
+   "exemplo_pratico"
+  ],
+  "optional": {
+   "atencao": "null quando nao ha ponto de confusao relevante",
+   "palavras_dificeis": "0-5 termos; futura alimentacao do DICIONARIO (motor nao criado)"
+  },
+  "external_layer_notes": "conteudo que depende de jurisprudencia/doutrina e sinalizado como camada externa, sem afirmar o conteudo de decisoes",
+  "guards": [
+   "sem conteudo de tribunais nas secoes (regex ENTENDA_EXTERNAL_CASE_CONTENT)",
+   "nao copiar mais de 10 palavras seguidas do texto oficial",
+   "faixa de tamanho: visao geral 120-560 palavras, dispositivo 80-400",
+   "sem repeticao de frases nem similaridade > 0.35 entre pai e filho",
+   "payload <= 6144 bytes"
+  ],
+  "usage_policy": "EDITORIAL_OUTPUT_ONLY"
+ },
+ "record_fields": [
+  "contract_version",
+  "explanation_id",
+  "explanation_key",
+  "target_id",
+  "norma_id",
+  "namespace",
+  "variant",
+  "editorial_version",
+  "template_version",
+  "prompt_version",
+  "granularity",
+  "validity",
+  "source",
+  "content",
+  "external_layer_notes",
+  "status",
+  "review_status",
+  "authoring",
+  "usage_policy"
+ ],
+ "granularity_policy": {
+  "principle": "explicacao por unidade semantica escolhida editorialmente; nunca geracao automatica para todo target estrutural",
+  "roles": {
+   "OVERVIEW": "ARTIGO: sintetiza a estrutura; nao repete explicacoes de subdivisoes",
+   "DEVICE": "CAPUT/PARAGRAFO com comando completo",
+   "BLOCK": "enunciado + lista (paragrafo ou inciso com subdivisoes) explicado como bloco",
+   "ITEM": "inciso/alinea dependente; so quando o item tem alcance proprio"
+  },
+  "autonomy": {
+   "ARTIGO": "AUTONOMOUS",
+   "INCISO": "DEPENDENT_ON_PARENT",
+   "ALINEA": "DEPENDENT_ON_PARENT",
+   "CAPUT_PARAGRAFO": "declarado pelo editor"
+  },
+  "context_targets": "cadeia estrutural completa do artigo ate o pai direto (declarada e validada); sem heranca automatica de conteudo",
+  "caput_rule": "CAPUT so recebe explicacao propria quando o artigo tem paragrafos e o caput traz comando distinto da visao geral; caso contrario a unidade e o ARTIGO",
+  "not_eligible": [
+   "NORMA",
+   "NAMESPACE"
+  ]
+ },
+ "art60": {
+  "article": {
+   "target": "CF88:ART.60",
+   "role": "OVERVIEW",
+   "focus": "processo de emenda: iniciativa, votacao, promulgacao, limites circunstanciais e reapresentacao"
+  },
+  "par4": {
+   "target": "CF88:ART.60:PAR.4",
+   "role": "BLOCK",
+   "context": [
+    "CF88:ART.60"
+   ],
+   "focus": "clausulas petreas; limite antes da deliberacao; tendente a abolir"
+  },
+  "inc4": {
+   "target": "CF88:ART.60:PAR.4:INC.IV",
+   "role": "ITEM",
+   "context": [
+    "CF88:ART.60",
+    "CF88:ART.60:PAR.4"
+   ],
+   "focus": "direitos e garantias individuais"
+  },
+  "similarity": [
+   {
+    "child": "CF88:ART.60:PAR.4",
+    "parent": "CF88:ART.60",
+    "similarity": {
+     "o_que_diz": 0.068,
+     "o_que_significa": 0.018,
+     "exemplo_pratico": 0.016
+    }
+   },
+   {
+    "child": "CF88:ART.60:PAR.4:INC.IV",
+    "parent": "CF88:ART.60",
+    "similarity": {
+     "o_que_diz": 0.094,
+     "o_que_significa": 0.03,
+     "exemplo_pratico": 0.032
+    }
+   },
+   {
+    "child": "CF88:ART.60:PAR.4:INC.IV",
+    "parent": "CF88:ART.60:PAR.4",
+    "similarity": {
+     "o_que_diz": 0.2,
+     "o_que_significa": 0.042,
+     "exemplo_pratico": 0.071
+    }
+   }
+  ]
+ },
+ "validity": {
+  "CURRENT": "gerar (prioridade do produto)",
+  "HISTORICAL": "nao gerar (ENTENDA_HISTORICAL_NOT_ALLOWED; allow_historical=false)",
+  "UNKNOWN": "so com validity_note e revisao humana (ADCT no piloto)"
+ },
+ "stale": {
+  "snapshot": "texto oficial atual da subarvore do target (uma linha por dispositivo: target_id TAB texto), gravado no registro",
+  "hash": "source_text_sha256 do snapshot + context_text_sha256 do texto proprio de cada context_target",
+  "states": [
+   "FRESH",
+   "STALE_TEXT_CHANGED",
+   "STALE_CONTEXT_CHANGED",
+   "ORPHANED_TARGET",
+   "NO_EXPLANATION"
+  ],
+  "stamp_rule": "registro ja carimbado mantem o hash original; mudar conteudo exige novo editorial_version",
+  "build": "freshness vai para o lookup e o payload (F|...); o firmware pode avisar ou ocultar"
+ },
+ "explanation_id": {
+  "format": "ENTENDA/<target_id>/<VARIANT>/<editorial_version>",
+  "example": "ENTENDA/CF88:ART.37:PAR.6/BASE/1",
+  "key": "ENTENDA/<target_id>/<VARIANT> (estavel entre versoes)",
+  "path_independent": true
+ },
+ "storage": {
+  "options": {
+   "jsonl_por_norma": "fonte editorial canonica: 1 linha por explicacao; diff/merge por linha; atualizacao incremental; streaming",
+   "json_unico": "exige carregar e reescrever tudo; diffs ruins; inviavel na RAM do ESP32",
+   "arquivo_por_target": "dezenas de milhares de arquivos pequenos no FAT32 (clusters desperdicados, diretorios lentos, updater caro)"
+  },
+  "recommendation": "corpus JSONL por norma (fonte) + par ENTENDA_LOOKUP.IDX / ENTENDA_PAYLOAD.DAT por norma (SD), gerado deterministicamente",
+  "lookup_line": "TARGET_ID|OFFSET|BYTES|EXPLANATION_ID|VALIDITY|FRESHNESS|REVIEW (ordenado ASCII)",
+  "payload_block": "@ID / T|K|V|R|F|H|C|N|W / #O QUE DIZ ... #PALAVRAS DIFICEIS (termo|explicacao) / #CAMADAS EXTERNAS / @END"
+ },
+ "esp32": {
+  "buffer": "um bloco por vez; maximo de 6144 bytes validado; piloto <= 2858 bytes",
+  "lookup": "busca binaria por seek no arquivo (sem carregar tudo na RAM); CF recomendada ~[53, 81] KB",
+  "read": "seek(OFFSET) + read(BYTES): leitura unica e limitada",
+  "render": "texto UTF-8 com acentos; secoes marcadas por #; paginacao na tela",
+  "key": "mesmo target_id canonico das Referencias (namespace obrigatorio; ADCT separado)",
+  "future": "se o lookup de uma norma grande passar de ~100 KB, usar registros de largura fixa ou indice em dois niveis",
+  "implemented": false
+ },
+ "pilot": {
+  "explanations": 11,
+  "targets": [
+   "CF88:ART.1",
+   "CF88:ART.5",
+   "CF88:ART.37",
+   "CF88:ART.37:PAR.6",
+   "CF88:ART.37:PAR.10",
+   "CF88:ART.60",
+   "CF88:ART.60:PAR.4",
+   "CF88:ART.60:PAR.4:INC.IV",
+   "CF88:ART.150",
+   "CF88:ART.225",
+   "ADCT:ART.10:INC.II"
+  ],
+  "payload_total_bytes": 27261,
+  "mean_payload_bytes": 2478,
+  "max_payload": {
+   "bytes": 2858,
+   "target": "ADCT:ART.10:INC.II"
+  },
+  "min_payload": {
+   "bytes": 2105,
+   "target": "CF88:ART.60:PAR.4:INC.IV"
+  },
+  "words": {
+   "mean": 321,
+   "min": 261,
+   "max": 369
+  },
+  "files": {
+   "ENTENDA_LOOKUP.IDX": {
+    "sha256": "b511b69218100e83e97ca8e17de22be9655e9d771a5b15c5fb3ecde24ea5536d",
+    "bytes": 1101
+   },
+   "ENTENDA_PAYLOAD.DAT": {
+    "sha256": "e117ccf4e95a58e431976499299e2ffd6e7f4db7f166443b11220d01e7ba296f",
+    "bytes": 27340
+   }
+  },
+  "manifest_sha256": "d85392a9706a3a98808eaf2e906e75cb8932e649bc06708bbfe375246a120bd0",
+  "lookup_entry_mean_bytes": 91.5,
+  "per_explanation": [
+   {
+    "target_id": "ADCT:ART.10:INC.II",
+    "explanation_id": "ENTENDA/ADCT:ART.10:INC.II/BASE/1",
+    "role": "BLOCK",
+    "payload_bytes": 2858,
+    "words": 325,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.1",
+    "explanation_id": "ENTENDA/CF88:ART.1/BASE/1",
+    "role": "OVERVIEW",
+    "payload_bytes": 2290,
+    "words": 317,
+    "freshness": "FRESH",
+    "reference_count": 1
+   },
+   {
+    "target_id": "CF88:ART.150",
+    "explanation_id": "ENTENDA/CF88:ART.150/BASE/1",
+    "role": "OVERVIEW",
+    "payload_bytes": 2581,
+    "words": 369,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.225",
+    "explanation_id": "ENTENDA/CF88:ART.225/BASE/1",
+    "role": "OVERVIEW",
+    "payload_bytes": 2540,
+    "words": 351,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.37",
+    "explanation_id": "ENTENDA/CF88:ART.37/BASE/1",
+    "role": "OVERVIEW",
+    "payload_bytes": 2582,
+    "words": 325,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.37:PAR.10",
+    "explanation_id": "ENTENDA/CF88:ART.37:PAR.10/BASE/1",
+    "role": "DEVICE",
+    "payload_bytes": 2554,
+    "words": 299,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.37:PAR.6",
+    "explanation_id": "ENTENDA/CF88:ART.37:PAR.6/BASE/1",
+    "role": "DEVICE",
+    "payload_bytes": 2566,
+    "words": 335,
+    "freshness": "FRESH",
+    "reference_count": 5
+   },
+   {
+    "target_id": "CF88:ART.5",
+    "explanation_id": "ENTENDA/CF88:ART.5/BASE/1",
+    "role": "OVERVIEW",
+    "payload_bytes": 2624,
+    "words": 337,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.60",
+    "explanation_id": "ENTENDA/CF88:ART.60/BASE/1",
+    "role": "OVERVIEW",
+    "payload_bytes": 2342,
+    "words": 343,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.60:PAR.4",
+    "explanation_id": "ENTENDA/CF88:ART.60:PAR.4/BASE/1",
+    "role": "BLOCK",
+    "payload_bytes": 2219,
+    "words": 271,
+    "freshness": "FRESH",
+    "reference_count": 0
+   },
+   {
+    "target_id": "CF88:ART.60:PAR.4:INC.IV",
+    "explanation_id": "ENTENDA/CF88:ART.60:PAR.4:INC.IV/BASE/1",
+    "role": "ITEM",
+    "payload_bytes": 2105,
+    "words": 261,
+    "freshness": "FRESH",
+    "reference_count": 0
+   }
+  ],
+  "deterministic": "BYTE_IDENTICAL (2 builds + teste)",
+  "adct": {
+   "requested": "ADCT:ART.5",
+   "decision": "ADCT:ART.5 nao adequado: regras das eleicoes de 1988 (efeitos exauridos); nenhum alvo ADCT e CURRENT porque o texto operacional nao tem ADCT",
+   "used": "ADCT:ART.10:INC.II",
+   "status": "UNKNOWN (validity_note obrigatoria; fonte STRUCTURAL_CANONICAL_SOURCE_FALLBACK)"
+  }
+ },
+ "estimates": {
+  "methodology": "unidades = artigos vigentes + fracao de paragrafos + fracao de incisos/alineas (politica de granularidade); bytes por explicacao 1.800-3.200 (piloto: media 2478, min 2105, max 2858); lookup 92 bytes/entrada",
+  "cf_counts": {
+   "articles_current": 276,
+   "paragraphs_current": 790,
+   "incisos_alineas_current": 1578,
+   "adct_articles_unknown": 148
+  },
+  "scenarios": {
+   "A_so_artigos": "100% artigos; 0 subdivisoes",
+   "B_recomendado": "artigos + 25-45% paragrafos + 5-12% incisos/alineas (+30-60 artigos ADCT)",
+   "C_maximo_razoavel": "artigos + 60-80% paragrafos + 20-30% incisos/alineas (+ADCT)"
+  },
+  "cf": {
+   "A_so_artigos": {
+    "explanations": [
+     276,
+     424
+    ],
+    "payload_mb": [
+     0.5,
+     1.36
+    ],
+    "lookup_kb": [
+     25,
+     39
+    ]
+   },
+   "B_recomendado": {
+    "explanations": [
+     582,
+     881
+    ],
+    "payload_mb": [
+     1.05,
+     2.82
+    ],
+    "lookup_kb": [
+     53,
+     81
+    ]
+   },
+   "C_maximo_razoavel": {
+    "explanations": [
+     1126,
+     1529
+    ],
+    "payload_mb": [
+     2.03,
+     4.89
+    ],
+    "lookup_kb": [
+     103,
+     140
+    ]
+   }
+  },
+  "norms72": {
+   "assumptions": "9.136 artigos; razoes de subdivisao por artigo da CF (2.86 paragrafos, 5.72 incisos/alineas) multiplicadas por 0,4-1,0; cobertura de artigos 60-100% (A/B); 1.500-3.200 bytes",
+   "scenarios": {
+    "A_so_artigos": {
+     "explanations": [
+      5482,
+      9136
+     ],
+     "payload_mb": [
+      8.22,
+      29.24
+     ],
+     "lookup_kb": [
+      502,
+      836
+     ]
+    },
+    "B_recomendado": {
+     "explanations": [
+      9141,
+      27172
+     ],
+     "payload_mb": [
+      13.71,
+      86.95
+     ],
+     "lookup_kb": [
+      837,
+      2487
+     ]
+    },
+    "C_maximo_razoavel": {
+     "explanations": [
+      19591,
+      45726
+     ],
+     "payload_mb": [
+      29.39,
+      146.32
+     ],
+     "lookup_kb": [
+      1793,
+      4186
+     ]
+    }
+   }
+  },
+  "caveat": "ordens de grandeza; nao ha precisao alem do intervalo"
+ },
+ "generalization": {
+  "engine": "ENTENDA_ENGINE/entenda_engine.py sem norma codificada (teste)",
+  "config": "ENTENDA_ENGINE/entenda_config.json",
+  "fixture": "norma sintetica CDC1990: stamp -> build -> lookup -> stale",
+  "other_norms_generated": false
+ },
+ "tests": {
+  "entenda": "18/18 OK",
+  "legal_target_id": "47/47 OK"
+ },
+ "ENTENDA_CF_A1_CHECKLIST": {
+  "contrato_editorial_definido": true,
+  "target_id_reutilizado": true,
+  "granularidade_coerente": true,
+  "art60_composicao_hierarquica": true,
+  "stale_detectavel": true,
+  "lookup_funciona": true,
+  "armazenamento_deterministico": true,
+  "piloto_legivel": true,
+  "engine_generico": true,
+  "nenhuma_camada_oficial_alterada": true
+ },
+ "ENTENDA_CF_A1_PASS": true,
+ "changes": {
+  "lei_seca": false,
+  "jurisprudencia": false,
+  "referencias": false,
+  "firmware": false,
+  "sd": false,
+  "archives": false,
+  "protected545": false,
+  "d05": false
+ },
+ "git": {
+  "entenda_tracked": false,
+  "staged": false,
+  "committed": false,
+  "tagged": false
+ }
+}
