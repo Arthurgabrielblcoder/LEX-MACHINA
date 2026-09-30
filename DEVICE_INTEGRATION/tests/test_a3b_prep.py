@@ -139,7 +139,7 @@ class DiagnosticCoverageTest(unittest.TestCase):
         finally:
             dev.close()
         diag = device_v1_ino_sections()
-        self.assertIn('lexV1OffsetEstrutural(v.runtimeCfPath[0]?v.runtimeCfPath:LEXV1_RUNTIME_CF_PATH,"Art. 114.","VIII - ",off114)', diag)
+        self.assertIn('lexV1OffsetEstrutural(rtPath,"Art. 114.","VIII - ",off114,falhaRt)', diag)
         self.assertIn('"text_to_target_114_VIII"', diag)
         self.assertIn('"text_map_guard_sha_errado"', diag)
 
@@ -160,7 +160,7 @@ class DiagnosticCoverageTest(unittest.TestCase):
     def test_runtime_and_text_map_guards(self):
         diag = device_v1_ino_sections()
         for name in ('"RUNTIME_HASH_MATCH"', '"pinned_runtime_vs_ver"', '"text_map_runtime_guard"', '"text_map_sha256_pinned"',
-                     '"lexv1_ver_device_version"', '"targets_idx"', '"entenda_idx_payload"', '"references_idx_payload"', 'DIAG RESULT'):
+                     '"lexv1_ver_device_version"', '"targets_idx"', '"entenda_lookup_idx"', '"references_lookup_idx"', 'DIAG RESULT'):
             self.assertIn(name, diag)
         self.assertRegex(HDR, r'#define LEXV1_PINNED_RUNTIME_SHA256 "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a"')
         self.assertRegex(HDR, r'#define LEXV1_PINNED_TEXT_MAP_SHA256 "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96"')

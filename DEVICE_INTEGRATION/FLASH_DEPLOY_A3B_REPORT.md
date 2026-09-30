@@ -110,3 +110,106 @@ Both blockers were resolved without writing to the device; see `A3B_PREP_REPORT.
   - exact schema v3 (`LEX_DEVICE_SCHEMA_VERSION`);
   - complete read-only diagnostic;
   - `VERIFIED_APP_OFFSET = 0x10000`, proven by the physical table, the build partition scheme and the build `flash_args`.
+
+---
+
+# A3B-FLASH (2026-09-29): write done, diagnostic failed on hardware, app-only rollback done
+
+**Result:** `DEVICE_INTEGRATION_V1_A3B_ROLLBACK_CONCLUIDO — LEGACY_RESTAURADO`
+
+The device is back on v7.12.0. The whole flash is byte-identical to `PRE_A3B` (`02403736…`). The SD card was not accessed.
+
+## Preconditions (all approved)
+
+- **Git and tests:**
+  - HEAD `868c24ee05d5e10e9bb98d52bd53eecb7cc52ba5`, tag `lex-device-v1-a3b-ready-2026-09-29`;
+  - staging empty, no tracked file modified;
+  - suites DEVICE 53/53, ENTENDA 80/80, LEGAL_TARGET_ID 47/47.
+- **Identity:**
+  - port COM3, the only USB serial port (CH343 `VID_1A86&PID_55D3`);
+  - ESP32-S3 (QFN56) v0.2, PSRAM 8 MB, MAC `e0:72:a1:f4:fd:28`;
+  - flash 0x68/0x4018, 16 MB.
+- **Pre-write read:** full dump `backups/esp32_a3b_flash/prewrite_full_flash_16MB.bin`, sha256 `0240373663354a600240c15ca22384cdbea3bb3cc99166c717ae1963a884ef05`. It is identical to PRE_A3B; `flash_region_diff.py` gives `PASS` with 0 differing bytes.
+- **Snapshots right before the write** (direct reads):
+  - `nvs_prewrite.bin`: `3f53eb85…92c0`, equal to `NVS_PRE_A3B`;
+  - `app0_prewrite.bin`: `ab6d4ffc…1c1f`, equal to `LEGACY_APP0_PARTITION`.
+- **Candidate:** `backups/esp32_a3b/candidate_flag1/candidate_app.bin`, 1.003.936 B, sha256 `04cb218a3cacba29b78a65897547d19383c85564b6db8e62d2c2fc2f8a388b1c`.
+  - The `.ino`/`.h` sources are equal to the HEAD blobs (`00dc13da…`, `4594cbc7…`), so no rebuild was done.
+  - `image-info`: app image (6 segments, chip ID 9, checksum and hash valid).
+  - It is smaller than 0x140000.
+- **Offset:** `VERIFIED_APP_OFFSET = 0x10000`, reconfirmed by the physical table (app0, active by otadata) and by the build `flash_args`.
+
+## Write (only app0)
+
+```
+python -m esptool --chip esp32s3 --port COM3 --before default-reset --after no-reset write-flash \
+  --flash-mode keep --flash-freq keep --flash-size keep 0x10000 backups/esp32_a3b/candidate_flag1/candidate_app.bin
+```
+
+- The only segment written was `0x10000 candidate_app.bin`.
+- esptool erased only 0x10000–0x105FFF, all inside app0, and reported "Hash of data verified". The chip stayed in the bootloader.
+- **Readback** `read-flash 0x10000 1003936`: `cmp` byte-identical, so `APP_WRITE_VERIFIED = TRUE`.
+- **Pre-boot full dump** (the app did not run): `postwrite_preboot_full_flash_16MB.bin`, sha256 `7c660405261fcbd29c6a8c0764082107b94b8b359ff5e02b6e76fe6033503d85`.
+  - Compared with the pre-write dump, **only app0 changed** (895.766 B).
+  - bootloader, partition table, NVS, otadata, app1, spiffs, coredump and 4–16 MB: 0 bytes changed.
+  - Inside app0: the candidate occupies 0x10000–0x10F520, the remainder of the erased sector is 0xFF, and 0x106000–0x14FFFF is unchanged.
+  - Status: `PRE_BOOT_FLASH_WRITE_SCOPE_VERIFIED`.
+  - The tool's verdict was `BLOCK`, which is expected: app0 is IMMUTABLE_CRITICAL and its change was the authorised write.
+
+## First boot of DEVICE V1 (serial `first_boot_serial.bin`, 75 s from the reset via EN)
+
+**Stability and legacy boot:**
+- 1 reset (POWERON); no boot loop, panic, Guru Meditation, watchdog or abort.
+- The legacy boot matches the v7.12.0 capture: banner, "TESTE CONTEXTO JURIDICO: OK", BLE, PSRAM, and `JUR CACHE: lookups=178 registros=296 bytes=64888 … tempo=190 ms`. The Relations cache has no line at boot, the same as in legacy.
+- The SD mounted (`sdOK`).
+
+**Diagnostic: `LEXV1: DIAG RESULT FAIL pass=9 fail=7`.**
+
+Checks that passed:
+- C++ schema self-test on the device: 2 rejected, 3 accepted, 4 rejected, 30 and `3|X` rejected.
+- `LEXV1.VER`: `status=OK lido=3 esperado=3` (build e634aa1aa009ab25, commit c1fb3dfd, entenda=163, map=RUNTIME).
+- `targets_idx` OK and `text_map_idx` OK. The TEXT_MAP header was read: RUNTIME, source_bytes 587133, 3.387 records, adct 429242.
+- `pinned_runtime_vs_ver`: IGUAL.
+- `text_map_guard_sha_errado`: FAIL_SOURCE_MISMATCH, as expected.
+
+**Failures:** `entenda_idx_payload`, `references_idx_payload`, `RUNTIME_HASH_MATCH` (runtime read as `bytes=0 FAIL_IO`), `text_map_runtime_guard`, `text_map_sha256_pinned`, `text_to_target_114_VIII`, `text_to_target_inicio_adct`. The 10 queries did not run, because they depend on the payloads.
+
+**Root cause** (candidate firmware defect, not a data defect). The log shows `E (6675) vfs_fat: open: no free file descriptors`, repeated.
+- `SD.begin(SD_CS, spiBus, freq)` in the legacy code uses the default `max_files = 5`.
+- The diagnostic keeps 7 files open at the same time: VER, TARGETS, TEXT_MAP, ENTENDA_LOOKUP, ENTENDA_PAYLOAD, REF_LOOKUP and REF_PAYLOAD. It then opens an 8th for the runtime sha256 and a 9th for the TEXT_MAP sha256.
+- Five opens succeeded (VER, TARGETS, TEXT_MAP, ENTENDA_LOOKUP, REF_LOOKUP, all reported OK). The two `no free file descriptors` errors before the index checks are ENTENDA_PAYLOAD and REF_PAYLOAD; the next three are the runtime sha256, the TEXT_MAP sha256 and the text-position search. So the legacy code held **0** handles at that moment, and DEVICE V1 alone (7 persistent) exceeded the limit of 5. *(Corrected in A3B-PREP2: an earlier version of this report said 4 opens and "legacy probably keeps 1", which was a misreading of the log.)*
+- The fail closed then works as designed and refuses the valid runtime. No crash and no write.
+- The same limit would have affected the A2C diagnostic (6 + 1 files). The host simulator does not model the ESP-IDF FD limit, which is why the tests did not catch it.
+
+**Measurements that were obtained:**
+- `open_indices_us=97153` (includes the failed opens);
+- memory before DEVICE V1: heap 136.988 free, minimum 132.212, largest block 90.100; PSRAM 8.388.608 total, 8.218.772 free, minimum 8.218.772;
+- memory after: heap 112.172 free, minimum 111.788, largest block 69.620; PSRAM unchanged. The heap drop is about 24,8 KB with the files open.
+- Runtime sha256, lookups, ENTENDA, BLOCK, payload and references: **not measured**, because of the failure.
+
+## App-only rollback (authorised trigger: "valid runtime refused")
+
+- **Command:** `python -m esptool --chip esp32s3 --port COM3 --before default-reset --after no-reset write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x10000 backups/esp32_a3b/legacy_app0_partition.bin`.
+  - Erase 0x10000–0x14FFFF, which is exactly app0. "Hash of data verified".
+- **Readback** `read-flash 0x10000 0x140000`: sha256 `ab6d4ffc…1c1f`, `cmp` identical.
+- **Full dump after the rollback** (before boot): sha256 `0240373663354a600240c15ca22384cdbea3bb3cc99166c717ae1963a884ef05`, **identical to PRE_A3B**. `flash_region_diff` gives PASS with 0 bytes; the first DEVICE V1 boot did not change NVS.
+- NVS was not restored and no full image was used; neither was needed.
+- **Boot after the rollback** (`post_rollback_boot_serial.bin`, 30 s):
+  - 1 reset, no Guru Meditation, 0 `LEXV1` lines;
+  - banner `LEX MACHINA V7.12.0 JURIS CF EXPANDIDA`;
+  - `JUR CACHE: lookups=178 registros=296`.
+
+## State
+
+- Firmware running: **v7.12.0** (app0 `ab6d4ffc…`).
+- Written regions during the mission: app0 only (candidate, then legacy). Nothing else.
+- SD: not accessed by the PC. The DEVICE V1 firmware only opens files with `FILE_READ` (static audit), but the hashes on the card were not re-checked, so the status is `POST_BOOT_SD_HASH_HUMAN/PC_CHECK_PENDING`.
+- UI: `PHYSICAL_UI_HUMAN_VALIDATION_PENDING = TRUE` (the UI is legacy; not validated by a human).
+- Local artifacts are in `backups/esp32_a3b_flash/`, outside Git: dumps, snapshots, logs and serial captures.
+
+## Fix needed before a new A3B (not implemented in this mission)
+
+1. **File-descriptor budget.** Only with `LEX_DEVICE_V1_ENABLED`, raise `max_files` in `SD.begin(SD_CS, spiBus, freq, "/sd", N)`, keeping flag 0 identical. N should cover the legacy files plus the DEVICE V1 files that stay open (7) plus the temporary ones (runtime/TEXT_MAP sha256); 12 is suggested, measuring the heap cost per FD.
+2. **Diagnostic design.** Close `LEXV1.VER` after reading it, and hash the runtime/TEXT_MAP before opening the indices. This lowers the peak of simultaneous files.
+3. **Tests.** Add a host test that counts the maximum number of simultaneous `SD.open` calls in the V1 routine against the configured budget, plus explicit logging of the failed `open` (`FAIL_IO <path>`).
+4. **Then** a new PREP: build, a new candidate hash, commit and tag, followed by a new A3B-FLASH with authorisation.

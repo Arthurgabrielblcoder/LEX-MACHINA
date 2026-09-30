@@ -1,5 +1,5 @@
-LEX MACHINA DEVICE V1 CANDIDATE (V1-A3B-PREP)
-=============================================
+LEX MACHINA DEVICE V1 CANDIDATE (V1-A3B-PREP2)
+==============================================
 
 CANDIDATO. Gravar no aparelho SOMENTE com autorizacao explicita (A3B), apenas a app em 0x10000, sem erase.
 
@@ -15,8 +15,15 @@ Schema do overlay (A3B-PREP): LEXV1.VER deve comecar EXATAMENTE por "#LEXMACHINA
 (LEX_DEVICE_SCHEMA_VERSION = 3 = SCHEMA do build_sd_staging.py; teste cruzado DEVICE_INTEGRATION/tests/test_a3b_prep.py).
 Qualquer outra versao (2, 4, 30, "3|X") -> FAIL_VERSION -> camadas V1 desativadas. Sem fallback.
 
+SD / handles (A3B-PREP2, FILE_DESCRIPTOR_POLICY.md): a 1a gravacao (A3B-FLASH, candidato 04cb218a) falhou no aparelho com
+"vfs_fat: open: no free file descriptors" (SD montado com max_files=5 e diagnostico com 7 arquivos abertos) e foi revertida.
+Com LEX_DEVICE_V1_ENABLED=1: SD.begin(SD_CS,spiBus,12000000|4000000,"/sd",LEXV1_SD_MAX_FILES=12,false) (sem formatar nunca);
+com 0: chamada original da v7.12.0. DEVICE V1 abre->le->fecha LEXV1.VER, runtime e hashes; em regime so TARGETS, ENTENDA_LOOKUP e
+REF_LOOKUP (3); payloads abertos sob demanda e fechados ao fim da consulta (pico 4). Serial: OPEN/CLOSE com OPEN_COUNT/MAX_OPEN_COUNT
+e FAIL_IO|tipo|caminho|stage|open|max_open.
+
 LEX_DEVICE_V1_ENABLED = 0 (padrao): mesmo tamanho de programa da v7.12.0 (989.395 bytes; RAM estatica 124.452 B).
-LEX_DEVICE_V1_ENABLED = 1: 1.003.787 bytes (+14.392), RAM estatica 124.460 B (+8); so diagnostico serial no boot, somente leitura:
+LEX_DEVICE_V1_ENABLED = 1: 1.005.375 bytes (+15.980), RAM estatica 124.468 B (+16); so diagnostico serial no boot, somente leitura:
   autoteste do parser de versao (2/3/4/30/3|X em memoria), LEXV1.VER, runtime (tamanho + sha256 em streaming) x LEXV1.VER x
   TEXT_MAP x pinado, sha256 do TEXT_MAP x pinado, guarda de sha errado, TEXT->TARGET (posicao do art. 114, VIII localizada
   pelos rotulos estruturais -> CF88:ART.114:INC.VIII), 10 consultas (5.V, 21.XXIV, 22.XXIX, 24 par.4, 37 par.6, 60 par.4 IV,

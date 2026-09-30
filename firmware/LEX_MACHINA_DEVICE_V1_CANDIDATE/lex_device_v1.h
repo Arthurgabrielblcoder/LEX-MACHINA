@@ -28,6 +28,14 @@
 // DEVICE_INTEGRATION/tools/build_sd_staging.py (teste cruzado em test_a3b_prep.py). Qualquer outra versao -> FAIL_VERSION.
 #define LEX_DEVICE_SCHEMA_VERSION 3
 #define LEXV1_TARGETS_VERSION 3
+// Handles de arquivo (FILE_DESCRIPTOR_POLICY.md, A3B-PREP2). O core monta o SD com max_files=5 por padrao; na A3B-FLASH o
+// diagnostico antigo abriu 5 arquivos (legado com 0 no boot) e falhou no 6o. Reserva assumida para o legado/UI: 2.
+#define LEXV1_SD_MAX_FILES 12      // SD.begin(..., "/sd", LEXV1_SD_MAX_FILES, false) somente com LEX_DEVICE_V1_ENABLED=1
+#define LEXV1_FD_STEADY_MAX 3      // regime: TARGETS + ENTENDA_LOOKUP + REF_LOOKUP
+#define LEXV1_FD_PEAK_MAX 6        // teto do diagnostico (o fluxo atual atinge 4: regime + 1 payload)
+#define LEXV1_FD_HEADROOM_MIN 4    // folga minima: LEXV1_SD_MAX_FILES - handles do legado - pico DEVICE V1 >= 4
+// Custo: cada handle aberto consome heap (FatFS com setor de 4096 B e cache por arquivo; A3B-FLASH mediu ~6,2 KB de heap
+// interno por arquivo aberto). Por isso fechar cedo importa mais do que o limite max_files.
 #define LEXV1_TEXT_MAP_VERSION 2
 
 enum LexV1Status {
