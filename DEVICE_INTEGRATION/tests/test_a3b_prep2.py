@@ -183,7 +183,8 @@ class SourceLifecycleTest(unittest.TestCase):
         code = device_v1_ino_sections() + '\n' + HDR
         for pat in (r'FILE_WRITE', r'FILE_APPEND', r'SD\.(mkdir|remove|rename|rmdir|format)', r'\.write\(', r'\bfopen\b', r'\bappend\b'):
             self.assertFalse([l for l in code.split('\n') if re.search(pat, l) and 'Serial.' not in l], pat)
-        self.assertFalse([l for l in code.split('\n') if re.search(r'\.print\w*\(', l) and not re.search(r'Serial\.print', l)])
+        # only Serial and the TFT display are printed to; never a File
+        self.assertFalse([l for l in code.split('\n') if re.search(r'(?<!Serial)(?<!tft)\.print\w*\(', l)])
 
 
 if __name__ == '__main__':

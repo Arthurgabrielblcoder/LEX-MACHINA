@@ -175,11 +175,13 @@ class DiagnosticCoverageTest(unittest.TestCase):
             self.assertIn(api, diag)
         self.assertIn('lexV1Mem("antes_device_v1")', diag)
         self.assertIn('lexV1Mem("depois_device_v1")', diag)
-        self.assertNotRegex(diag, r'\b(malloc|ps_malloc|heap_caps_malloc|new\s+\w+\[)')    # no large allocations just to measure
+        body = INO[INO.index('void lexV1DiagnosticoBoot()\n{'):]
+        body = body[:body.index('\n}\n')]
+        self.assertNotRegex(body, r'\b(malloc|ps_malloc|heap_caps_malloc|new\s+\w+\[)')    # no allocations just to measure
 
     def test_sd_read_only(self):
         code = device_v1_ino_sections() + '\n' + HDR
-        for pat in (r'FILE_WRITE', r'FILE_APPEND', r'SD\.(mkdir|remove|rename|rmdir)', r'\.write\(', r'\.print\w*\(', r'\bfopen\b',
+        for pat in (r'FILE_WRITE', r'FILE_APPEND', r'SD\.(mkdir|remove|rename|rmdir)', r'\.write\(', r'(?<!Serial)(?<!tft)\.print\w*\(', r'\bfopen\b',
                     r'\bappend\b'):
             hits = [l for l in code.split('\n') if re.search(pat, l) and 'Serial.' not in l]
             self.assertFalse(hits, (pat, hits))

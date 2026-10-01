@@ -18,8 +18,62 @@
 #include "lex_device_v1.h"
 #if LEX_DEVICE_V1_ENABLED
 #include "mbedtls/sha256.h"
+#include <functional>
 void lexV1DiagnosticoBoot();
 bool lexV1Sha256Arquivo(const char *tipo, const char *caminho, const char *etapa, uint32_t &bytes, char hex[65]);
+// PHYSICAL TEST UI (fast track): camadas ENTENDA (tecla E) e REFERENCIAS (tecla R) sobre o dispositivo no topo do leitor.
+#define LEXV1_CAMADA_Y0 26
+#define LEXV1_CAMADA_LH 12
+#define LEXV1_CAMADA_VISIVEIS 14
+#define LEXV1_CAMADA_COLS 52
+bool lexV1Pronto=false;            // runtime + TEXT_MAP + indices verificados no diagnostico de boot
+uint32_t lexV1RuntimeBytes=0, lexV1AdctStart=0xFFFFFFFFu;
+char lexV1RuntimeSha[65]={0};
+volatile char pedirCamadaV1=0;     // '1'..'4' (pedido do callback HID, executado no loop)
+volatile int deltaCamadaV1=0;
+// Estados do leitor (teclado fisico numerico).
+enum LexV1EstadoLeitor { LEXV1_NORMAL_READING_MODE, LEXV1_ARTICLE_SEARCH_MODE, LEXV1_LAYER_VIEW_MODE, LEXV1_OTHER_SCREEN };
+bool lexV1ModoBusca=false;         // ARTICLE_SEARCH_MODE (so entra por ENTER no NORMAL_READING_MODE)
+volatile bool pedirEntrarBuscaV1=false, pedirCancelarBuscaV1=false;
+uint32_t lexV1BuscaOffsetOrigem=0;
+LexV1EstadoLeitor lexV1EstadoLeitor();
+void lexV1EntrarBusca();
+void lexV1CancelarBusca();
+void lexV1ExecutarBuscaArtigo();
+void lexV1AbrirCamadaNumero(char tecla);
+void lexV1DesenharBusca();
+// ACTIVE_TARGET: o dispositivo da MESMA linha que gera o CONTEXTO do rodape (offset -> CF88_TEXT_MAP.IDX -> target_id).
+// Fonte unica de verdade para CONTEXTO e para as camadas 1-4; sempre atual (resolvido na hora, sem debounce).
+struct LexV1AlvoAtivo { bool valido; uint32_t off, ini, fim; char tid[LEXV1_KEY_MAX]; };
+LexV1AlvoAtivo lexV1Alvo={false,0,0,0,{0}};
+uint32_t lexV1OffsetContexto=0;      // offset da linha escolhida para o CONTEXTO (nao a linha do topo)
+bool lexV1OffsetContextoOk=false;
+char lexV1TidRodape[LEXV1_KEY_MAX]={0};   // target cujo CONTEXTO esta desenhado no rodape
+void lexV1SincronizarAlvo(int indiceContexto);
+void lexV1SincronizarRelacoes();
+String lexV1RotuloContexto(const char *tid);
+static bool lexV1CamadaV1Aplicavel();
+// LAYER_AVAILABILITY_CACHE: flags das camadas 1-4 PARA lexV1Disp.tid (CF88_TARGETS.IDX, derivadas dos registros EXATOS
+// do target). Pode atrasar (debounce de I/O); so vale quando lexV1Disp.tid == ACTIVE_TARGET. Nunca e usado como target
+// para abrir camada, nem para buscar conteudo: as listas sempre saem dos registros exatos do LAYER_TARGET.
+struct LexV1Disponibilidade { bool valido; char tid[LEXV1_KEY_MAX]; bool entenda, refs, correlatas, juris; };
+LexV1Disponibilidade lexV1Disp={false,{0},false,false,false,false};
+volatile bool pedirAbrirItemV1=false;
+uint8_t lexV1MascaraCamadas();
+bool lexV1AtualizarDisponibilidade(bool forcar);
+void lexV1AbrirItemRef();
+void lexV1MarcarRolagem();
+// Metadados editoriais aprovados das referencias de obra (gerado de LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json).
+#include "lex_ref_detail_data.h"
+struct LexV1RefItem { char tipo[20]; char fonte[48]; char rotulo[120]; const LexV1RefDetalhe *d; int16_t nota10; };
+// Roteamento UNICO vinculo -> camada visual (o Reference Engine e generico; a camada 4 recebe so obras editoriais).
+enum LexV1DestinoCamada { LEXV1_LAYER_CORRELATA, LEXV1_LAYER_JURISPRUDENCIA, LEXV1_LAYER_REFERENCIA, LEXV1_LAYER_HIDDEN, LEXV1_LAYER_UNKNOWN };
+LexV1DestinoCamada lexV1ClassificarDestino(const char *tipo, const char *visibilidade);
+bool lexV1FlagCamada(const char *flags, LexV1DestinoCamada camada);
+void lexV1AbrirCamada(char tipo, const char *tid);
+void lexV1RolarCamada(int delta);
+void lexV1DesenharCamada();
+void lexV1FecharCamada();
 #endif
 
 // =====================================================
@@ -568,7 +622,11 @@ int avancoGlyphArimo(uint16_t cp)
 // =====================================================
 // ESTADO GERAL
 // =====================================================
-enum TelaAtual { TELA_PASTAS, TELA_LEITOR, TELA_BUSCA_TEXTO, TELA_SPLASH, TELA_RELACOES, TELA_JURIS_CATEGORIAS, TELA_REFERENCIAS };
+enum TelaAtual { TELA_PASTAS, TELA_LEITOR, TELA_BUSCA_TEXTO, TELA_SPLASH, TELA_RELACOES, TELA_JURIS_CATEGORIAS, TELA_REFERENCIAS
+#if LEX_DEVICE_V1_ENABLED
+  , TELA_LEXV1_CAMADA
+#endif
+};
 TelaAtual telaAtual = TELA_PASTAS;
 // O tipo de busca nao depende de o teclado virtual estar visivel.
 enum BuscaAtiva { BUSCA_NENHUMA, BUSCA_ARTIGO, BUSCA_TEXTO };
@@ -1594,6 +1652,14 @@ bool arquivoAtualPertenceAoCDC()
 
 bool arquivoAtualPertenceACF()
 {
+#if LEX_DEVICE_V1_ENABLED
+  if(caminhoArquivoAtual==LEXV1_RUNTIME_CF_PATH){
+    // mesma linha do CONTEXTO/ACTIVE_TARGET (nao o topo): CF x ADCT decidido pelo dispositivo ativo
+    uint32_t topo=(linhaTopo>=0 && linhaTopo<linhasIndexadas)?offsetsLinhas[linhaTopo]:0;
+    uint32_t ativo=lexV1OffsetContextoOk?lexV1OffsetContexto:topo;
+    return ativo<lexV1AdctStart;
+  }
+#endif
   return caminhoArquivoAtual.startsWith("/1- CONSTITUIÇÃO FEDERAL/") ||
          caminhoArquivoAtual.startsWith("/1-CONSTITUIÇÃO FEDERAL/");
 }
@@ -2971,6 +3037,14 @@ void diagnosticarContextoSeMudou()
   int indice=escolherContextoPredominante(
     contextoLinhasCache,LEITOR_LINHAS_VISIVEIS,contextoJuridicoAtivo
   );
+#if LEX_DEVICE_V1_ENABLED
+  // ACTIVE_TARGET da MESMA linha escolhida para o CONTEXTO, imediatamente (sem esperar a roda parar).
+  lexV1SincronizarAlvo(indice);
+  const bool v1=lexV1CamadaV1Aplicavel();
+  if(v1 && !visualizandoReferencia) lexV1SincronizarRelacoes();   // 1/2: descarta registros de outro target (sem I/O)
+#else
+  const bool v1=false;
+#endif
   if(indice<0) return;
   const ContextoJuridicoAtivo &novo=contextoLinhasCache[indice];
   if(contextoJuridicoIgual(novo,contextoJuridicoAtivo)) return;
@@ -2983,7 +3057,7 @@ void diagnosticarContextoSeMudou()
   // Os indices atuais usam artigo. A chamada ocorre somente na troca estavel
   // de contexto; quando surgirem chaves mais especificas, a mesma consulta
   // podera tentar alinea, inciso e paragrafo antes deste fallback.
-  if(!visualizandoReferencia && novo.artigo[0]){
+  if(!visualizandoReferencia && novo.artigo[0] && !v1){
     // Apenas atualiza o estado juridico. O rodape sera redesenhado uma unica
     // vez ao final do viewport, evitando duas escritas TFT por mudanca.
     carregarRelacoesDoArtigo(String(novo.artigo));
@@ -3003,6 +3077,10 @@ String rotuloContextoFixoRodape()
   // originou a abertura. No leitor da lei seca, mostra o dispositivo ativo.
   if(visualizandoReferencia && contextoDocumentoReferencia.length())
     return contextoDocumentoReferencia;
+#if LEX_DEVICE_V1_ENABLED
+  // CF runtime: o CONTEXTO e o proprio ACTIVE_TARGET (mesma fonte que abre 1-4; nunca um parser paralelo).
+  if(lexV1CamadaV1Aplicavel()) return lexV1RotuloContexto(lexV1Alvo.valido?lexV1Alvo.tid:"");
+#endif
 
   if(!contextoJuridicoAtivo.artigo[0]) return "";
 
@@ -3026,6 +3104,17 @@ void desenharIndicadorContextoRodape()
   tft.drawFastHLine(0,204,320,COR_VERDE_ESCURO);
   tft.drawFastHLine(0,219,320,COR_VERDE_ESCURO);
 
+#if LEX_DEVICE_V1_ENABLED
+  if(lexV1ModoBusca && telaAtual==TELA_LEITOR && !visualizandoReferencia){
+    String b="BUSCAR ARTIGO   Art.: "+artigoDigitado+"_";
+    imprimirUTF8(6,208,b,COR_VERDE,COR_FUNDO,50);
+    return;
+  }
+  // registra QUAL target esta desenhado no CONTEXTO: a tecla 1-4 so abre se for o mesmo ACTIVE_TARGET
+  if(lexV1CamadaV1Aplicavel() && !visualizandoReferencia && lexV1Alvo.valido)
+    strncpy(lexV1TidRodape,lexV1Alvo.tid,sizeof(lexV1TidRodape)-1);
+  else lexV1TidRodape[0]='\0';
+#endif
   String contexto=rotuloContextoFixoRodape();
   if(contexto.length()==0){
     imprimirUTF8(6,208,"CONTEXTO: --",COR_VERDE_SUAVE,COR_FUNDO,48);
@@ -3068,6 +3157,25 @@ void desenharBarraBusca()
     }
     return;
   }
+
+#if LEX_DEVICE_V1_ENABLED
+  // Rodape do teclado numerico: significado fixo das teclas em qualquer ponto da lei.
+  if(lexV1ModoBusca){ lexV1DesenharBusca(); return; }
+  {
+    // So as camadas com conteudo REAL para o dispositivo atual; numeros fixos (nunca renumerados).
+    uint8_t m=lexV1MascaraCamadas();
+    String s;
+    if(m&1) s+="1 CORR.  ";
+    if(m&2) s+="2 JURIS.  ";
+    if(m&4) s+="3 ENTENDA  ";
+    if(m&8) s+="4 REF.";
+    s.trim();
+    tft.print(s);
+    tft.setCursor(320-4-12*6,228);
+    tft.print("ENTER=BUSCAR");
+    return;
+  }
+#endif
 
   if(menuRelacoesAtivo && !modoDigitacaoArtigo){
     // Posicoes fixas preservam o significado de 1, 2 e 3 mesmo quando um
@@ -3780,6 +3888,13 @@ void abrirPastaSelecionada()
     desenharTelaPastas();
     return;
   }
+#if LEX_DEVICE_V1_ENABLED
+  if(lexV1Pronto && pastas[pastaSelecionada].equalsIgnoreCase("cf.txt") &&
+     (caminho.startsWith("/1- CONSTITUIÇÃO FEDERAL/") || caminho.startsWith("/1-CONSTITUIÇÃO FEDERAL/"))){
+    Serial.printf("LEXV1: CF aberta pelo runtime %s (em vez de %s)\n",LEXV1_RUNTIME_CF_PATH,caminho.c_str());
+    caminho=LEXV1_RUNTIME_CF_PATH;
+  }
+#endif
   File arquivo=SD.open(caminho.c_str(),FILE_READ);
   if(!arquivo || arquivo.isDirectory()){
     if(arquivo) arquivo.close();
@@ -3792,6 +3907,9 @@ void abrirPastaSelecionada()
   tamanhoArquivoAtual=arquivo.size();
   arquivo.close();
   reiniciarEstadoBusca(); // Inclusive ao reabrir o mesmo TXT.
+#if LEX_DEVICE_V1_ENABLED
+  lexV1ModoBusca=false;   // todo texto abre no NORMAL_READING_MODE
+#endif
   reiniciarBuscaTexto();
   limparRelacoesArtigo();
   visualizandoReferencia=false;
@@ -3807,6 +3925,10 @@ void abrirPastaSelecionada()
 
 void voltarPastas()
 {
+#if LEX_DEVICE_V1_ENABLED
+  if(telaAtual==TELA_LEXV1_CAMADA){ lexV1FecharCamada(); return; }
+  if(telaAtual==TELA_LEITOR && lexV1ModoBusca){ lexV1CancelarBusca(); return; }   // ESC na busca = cancelar
+#endif
   if(telaAtual==TELA_JURIS_CATEGORIAS || telaAtual==TELA_REFERENCIAS){
     telaAtual=TELA_LEITOR;
     modoDigitacaoArtigo=false;
@@ -4688,6 +4810,9 @@ void redesenharTelaAtual()
     case TELA_RELACOES: desenharTelaRelacoes(); break;
     case TELA_JURIS_CATEGORIAS: desenharTelaCategoriasJuris(); break;
     case TELA_REFERENCIAS: desenharTelaReferenciasProvisoria(); break;
+#if LEX_DEVICE_V1_ENABLED
+    case TELA_LEXV1_CAMADA: lexV1DesenharCamada(); break;
+#endif
   }
 }
 
@@ -4922,6 +5047,18 @@ void iniciarBluetooth()
       return;
     }
 
+#if LEX_DEVICE_V1_ENABLED
+    if(telaAtual==TELA_LEXV1_CAMADA){
+      if(event.usage==0x2A){pedirVoltar=true; return;}          // BACKSPACE (ESC ja e tratado acima)
+      if(event.usage==0x28){pedirAbrirItemV1=true; return;}     // ENTER: so abre item na LISTA de referencias
+      if(event.usage==0x52){deltaCamadaV1--; return;}
+      if(event.usage==0x51){deltaCamadaV1++; return;}
+      if(event.usage==0x4B){deltaCamadaV1-=LEXV1_CAMADA_VISIVEIS-1; return;}
+      if(event.usage==0x4E){deltaCamadaV1+=LEXV1_CAMADA_VISIVEIS-1; return;}
+      return;
+    }
+#endif
+
     if(telaAtual==TELA_LEITOR){
       if(visualizandoReferencia){
         if(event.usage==0x2A){pedirVoltar=true; return;}
@@ -4931,6 +5068,35 @@ void iniciarBluetooth()
         if(event.usage==0x4E){deltaLeitor+=LEITOR_LINHAS_VISIVEIS/2; return;}
         return;
       }
+#if LEX_DEVICE_V1_ENABLED
+      // Maquina de estados do leitor (DEVICE V1). A acao depende do ESTADO, nao so da tecla:
+      //   NORMAL_READING_MODE: 1 CORRELATAS, 2 JURISPRUDENCIA, 3 ENTENDA, 4 REFERENCIAS, ENTER entra na busca;
+      //                        5-9 e 0 nao fazem nada (a busca nunca comeca ao digitar).
+      //   ARTICLE_SEARCH_MODE: 0-9 so digitam; ENTER busca (buffer vazio: nada); BACKSPACE apaga 1 digito
+      //                        ou, com o buffer vazio, cancela e volta ao mesmo ponto do texto.
+      //   LAYER_VIEW_MODE: telas de camada (TELA_LEXV1_CAMADA / RELACOES / JURIS), tratadas acima.
+      if(buscaAtiva!=BUSCA_TEXTO){
+        LexV1EstadoLeitor estado=lexV1EstadoLeitor();
+        if(estado==LEXV1_ARTICLE_SEARCH_MODE){
+          if(event.ascii>='0' && event.ascii<='9'){
+            if(artigoDigitado.length()<8) artigoDigitado+=(char)event.ascii;
+            pedirRedesenharBusca=true;
+            return;
+          }
+          if(event.usage==0x2A){
+            if(artigoDigitado.length()>0){ artigoDigitado.remove(artigoDigitado.length()-1); pedirRedesenharBusca=true; }
+            else pedirCancelarBuscaV1=true;
+            return;
+          }
+          if(event.usage==0x28){ if(artigoDigitado.length()>0) pedirBuscar=true; else pedirRedesenharBusca=true; return; }
+          return;                                           // setas/roda nao movem o texto durante a busca
+        }
+        if(event.usage==0x28){ pedirEntrarBuscaV1=true; return; }
+        if(event.ascii>='1' && event.ascii<='4'){ pedirCamadaV1=(char)event.ascii; return; }
+        if(event.ascii>='0' && event.ascii<='9') return;   // 5-9 e 0: nenhuma acao no NORMAL_READING_MODE
+        if(event.usage==0x2A) return;                        // BACKSPACE sem buffer: nada (ESC volta as pastas)
+      }
+#endif
 
       if(event.ascii>='0' && event.ascii<='9'){
         // Depois de uma busca bem-sucedida, o rodape entra em modo de atalhos.
@@ -5032,6 +5198,9 @@ void iniciarBluetooth()
     else if(telaAtual==TELA_LEITOR) deltaLeitor += d;
     else if(telaAtual==TELA_RELACOES) deltaRelacoes += d;
     else if(telaAtual==TELA_JURIS_CATEGORIAS) deltaRelacoes += d;
+#if LEX_DEVICE_V1_ENABLED
+    else if(telaAtual==TELA_LEXV1_CAMADA) deltaCamadaV1 += d;
+#endif
   });
 
   EspBleConfig config;
@@ -5320,6 +5489,7 @@ void lexV1DiagnosticoBoot()
     lexV1Check(mapLido && !strcmp(shaMap,LEXV1_PINNED_TEXT_MAP_SHA256),mapLido?"FAIL_HASH":"FAIL_IO","text_map_sha256_pinned",shaMap);
   }
   uint32_t off114=0; bool falhaRt=false;
+  bool guardOk=false; uint32_t adctMapa=0xFFFFFFFFu;
   bool achou=lexV1OffsetEstrutural(rtPath,"Art. 114.","VIII - ",off114,falhaRt);
   {
     LexV1FileReader map;
@@ -5330,8 +5500,9 @@ void lexV1DiagnosticoBoot()
     if(s2==LEXV1_OK){
       snprintf(det,sizeof(det),"status=%s source_bytes=%lu registros=%lu adct=%lu",textMap.runtimeStatus,(unsigned long)textMap.sourceBytes,
                (unsigned long)textMap.recordCount,(unsigned long)textMap.adctStart);
-      lexV1Check(!strcmp(textMap.runtimeStatus,"RUNTIME") && textMap.sourceBytes==bytesTexto && !strcmp(textMap.sourceSha256,sha),
-                 lido?"FAIL_HASH":"FAIL_IO","text_map_runtime_guard",det);
+      guardOk=!strcmp(textMap.runtimeStatus,"RUNTIME") && textMap.sourceBytes==bytesTexto && !strcmp(textMap.sourceSha256,sha);
+      adctMapa=textMap.adctStart;
+      lexV1Check(guardOk,lido?"FAIL_HASH":"FAIL_IO","text_map_runtime_guard",det);
       char tid[LEXV1_KEY_MAX];
       LexV1Status g=lexv1TargetAtOffset(textMap,bytesTexto,"0000000000000000000000000000000000000000000000000000000000000000",
                                         textMap.adctStart,tid,sizeof(tid));
@@ -5455,6 +5626,1041 @@ void lexV1DiagnosticoBoot()
   lexV1Check(lexV1FdMax<=LEXV1_FD_PEAK_MAX && lexV1FdOpen==0,"FAIL_IO","fd_pico_e_fechamento",det);
   lexV1Mem("depois_device_v1");
   Serial.printf("LEXV1: DIAG RESULT %s pass=%u fail=%u MAX_OPEN_COUNT=%d\n",lexV1Fail==0?"PASS":"FAIL",lexV1Pass,lexV1Fail,lexV1FdMax);
+  // UI de teste so e habilitada com runtime, TEXT_MAP e indices verificados (fail closed: senao o leitor segue 100% legado).
+  lexV1Pronto=runtimeOk && guardOk && s1==LEXV1_OK && s3==LEXV1_OK && s4==LEXV1_OK;
+  if(lexV1Pronto){
+    lexV1RuntimeBytes=bytesTexto;
+    strncpy(lexV1RuntimeSha,sha,64); lexV1RuntimeSha[64]='\0';
+    lexV1AdctStart=adctMapa;
+  }
+  Serial.printf("LEXV1: UI TESTE %s (teclas E/R no leitor da CF)\n",lexV1Pronto?"ATIVA":"DESATIVADA (fail closed)");
+}
+
+// =====================================================
+// DEVICE V1 - PHYSICAL TEST UI (camadas ENTENDA / REFERENCIAS)
+// Dispositivo atual = TEXT_MAP no offset da 1a linha visivel do leitor (runtime verificado no boot; fail closed).
+// Tipografia e rolagem = as da Lei Seca: Arimo proporcional 12 px com antialias, linha de 15 px, largura 312,
+// 12 linhas a partir de TEXTO_Y0, cada linha rasterizada em bufferLinhaLeitor e enviada com drawRGBBitmap (sem limpar a tela).
+// Payload: abre -> seek -> le o bloco (limitado) -> fecha. Texto montado uma vez num buffer da camada (PSRAM), liberado no BACK.
+// =====================================================
+#define LEXV1_CAMADA_TXT_MAX 16384
+#define LEXV1_CAMADA_LINHAS_MAX 1200
+#define LEXV1_BLOCO_MAX 8192
+#define LEXV1_REF_ITENS_MAX 40
+// estilos: 0 corpo, 1 titulo de secao (barra), 2 destaque (titulo/dispositivo), 3 titulo de item de lista
+struct LexV1LinhaTela { uint16_t ini; uint16_t len; uint8_t estilo; int8_t item; };
+static char *lexV1Txt=nullptr;
+static uint32_t lexV1TxtLen=0;
+static LexV1LinhaTela *lexV1Linhas=nullptr;
+static int lexV1NLinhas=0, lexV1Topo=0;
+static const char *lexV1TituloCamada="";
+static int8_t lexV1ItemAtual=-1;              // item que esta sendo anexado (lista de referencias)
+
+// Referencias: lista (modo 1) e detalhe (modo 2)
+static LexV1RefItem *lexV1Itens=nullptr;
+static int lexV1NItens=0, lexV1Sel=0;
+static uint8_t lexV1RefModo=0;               // 0 nenhum, 1 lista, 2 detalhe
+static char lexV1RefTid[LEXV1_KEY_MAX]={0};
+static int lexV1ItemPrimeiraLinha[LEXV1_REF_ITENS_MAX], lexV1ItemUltimaLinha[LEXV1_REF_ITENS_MAX];
+
+static void *lexV1Aloca(size_t n){ void *p=ps_malloc(n); return p?p:malloc(n); }
+
+static void lexV1LiberarTexto()
+{
+  if(lexV1Txt){ free(lexV1Txt); lexV1Txt=nullptr; }
+  if(lexV1Linhas){ free(lexV1Linhas); lexV1Linhas=nullptr; }
+  lexV1TxtLen=0; lexV1NLinhas=0; lexV1Topo=0;
+}
+
+static void lexV1LiberarCamada()
+{
+  lexV1LiberarTexto();
+  if(lexV1Itens){ free(lexV1Itens); lexV1Itens=nullptr; }
+  lexV1NItens=0; lexV1Sel=0; lexV1RefModo=0;
+}
+
+static bool lexV1AlocarTexto()
+{
+  lexV1LiberarTexto();
+  lexV1Txt=(char*)lexV1Aloca(LEXV1_CAMADA_TXT_MAX+1);
+  lexV1Linhas=(LexV1LinhaTela*)lexV1Aloca(sizeof(LexV1LinhaTela)*LEXV1_CAMADA_LINHAS_MAX);
+  if(!lexV1Txt || !lexV1Linhas){ lexV1LiberarTexto(); return false; }
+  lexV1Txt[0]='\0';
+  return true;
+}
+
+// Linha logica = [estilo][item+1][texto]\n
+static void lexV1Anexar(const char *t, int n, uint8_t estilo)
+{
+  if(!lexV1Txt) return;
+  if(n<0) n=(int)strlen(t);
+  if(lexV1TxtLen+(uint32_t)n+3>=LEXV1_CAMADA_TXT_MAX) n=(int)(LEXV1_CAMADA_TXT_MAX-lexV1TxtLen)-4;
+  if(n<0) return;
+  lexV1Txt[lexV1TxtLen++]=(char)('0'+estilo);
+  lexV1Txt[lexV1TxtLen++]=(char)('0'+(lexV1ItemAtual+1));
+  memcpy(lexV1Txt+lexV1TxtLen,t,n); lexV1TxtLen+=n;
+  lexV1Txt[lexV1TxtLen++]='\n';
+  lexV1Txt[lexV1TxtLen]='\0';
+}
+
+// Paragrafos separados por '\n' viram linhas logicas distintas.
+static void lexV1AnexarParagrafos(const char *t, uint8_t estilo)
+{
+  const char *p=t;
+  while(*p){
+    const char *q=strchr(p,'\n'); int n=q?(int)(q-p):(int)strlen(p);
+    lexV1Anexar(p,n,estilo);
+    if(!q) break;
+    p=q+1;
+  }
+}
+
+static uint16_t lexV1Cp(const char *s, uint32_t &i, uint32_t fim)
+{
+  uint8_t b0=(uint8_t)s[i++];
+  if(b0<0x80) return b0;
+  if((b0&0xE0)==0xC0 && i<fim){ uint8_t b1=(uint8_t)s[i++]; return ((uint16_t)(b0&0x1F)<<6)|(b1&0x3F); }
+  if((b0&0xF0)==0xE0 && i+1<fim){ uint8_t b1=(uint8_t)s[i++]; uint8_t b2=(uint8_t)s[i++];
+    return ((uint16_t)(b0&0x0F)<<12)|((uint16_t)(b1&0x3F)<<6)|(b2&0x3F); }
+  while(i<fim && (((uint8_t)s[i])&0xC0)==0x80) i++;
+  return '?';
+}
+
+// Quebra por LARGURA REAL dos glyphs Arimo (mesma regra do leitor): LEITOR_TEXTO_W px, corte no ultimo espaco.
+static void lexV1Quebrar()
+{
+  lexV1NLinhas=0;
+  uint32_t i=0;
+  while(i<lexV1TxtLen && lexV1NLinhas<LEXV1_CAMADA_LINHAS_MAX){
+    uint8_t estilo=(uint8_t)(lexV1Txt[i]-'0');
+    int8_t item=(int8_t)(lexV1Txt[i+1]-'0')-1;
+    i+=2;
+    uint32_t fim=i; while(fim<lexV1TxtLen && lexV1Txt[fim]!='\n') fim++;
+    int largura=(estilo==1)?LEITOR_TEXTO_W-8:LEITOR_TEXTO_W;
+    if(fim==i){ lexV1Linhas[lexV1NLinhas++]={(uint16_t)i,0,estilo,item}; }
+    uint32_t ini=i;
+    while(ini<fim && lexV1NLinhas<LEXV1_CAMADA_LINHAS_MAX){
+      uint32_t p=ini, ultimoEspaco=0; int x=0;
+      while(p<fim){
+        uint32_t q=p;
+        uint16_t cp=lexV1Cp(lexV1Txt,q,fim);
+        if(cp=='\t' || cp==0x00A0) cp=' ';
+        int av=avancoGlyphArimo(cp);
+        if(x+av>largura) break;
+        if(cp==' ') ultimoEspaco=p;
+        x+=av; p=q;
+      }
+      uint32_t corte=p;
+      if(p<fim && ultimoEspaco>ini) corte=ultimoEspaco;
+      if(corte==ini) corte=p>ini?p:ini+1;          // palavra maior que a linha: corte duro
+      lexV1Linhas[lexV1NLinhas++]={(uint16_t)ini,(uint16_t)(corte-ini),estilo,item};
+      ini=corte; while(ini<fim && lexV1Txt[ini]==' ') ini++;
+    }
+    i=fim+1;
+  }
+}
+
+// Rasteriza uma linha da camada no MESMO buffer/fonte da Lei Seca. invertido = barra verde com texto escuro.
+static void lexV1MontarLinha(const char *s, int len, bool invertido, int xIni)
+{
+  uint16_t fundo=invertido?COR_VERDE:COR_FUNDO;
+  for(int i=0;i<LEITOR_BUFFER_W*LEITOR_LINHA_H;i++) bufferLinhaLeitor[i]=fundo;
+  uint32_t i=0, fim=(uint32_t)len; int x=xIni;
+  while(i<fim){
+    uint16_t cp=lexV1Cp(s,i,fim);
+    if(cp=='\r' || cp=='\n') break;
+    if(cp=='\t' || cp==0x00A0) cp=' ';
+    int av=avancoGlyphArimo(cp);
+    if(x+av>LEITOR_TEXTO_W) break;
+    desenharGlyphArimoNoBuffer(x,cp,invertido);
+    x+=av;
+  }
+}
+
+static void lexV1DesenharLinhaViewport(int i)
+{
+  int idx=lexV1Topo+i;
+  int y=TEXTO_Y0+i*TEXTO_H;
+  if(idx<lexV1NLinhas){
+    const LexV1LinhaTela &l=lexV1Linhas[idx];
+    bool sel=(lexV1RefModo==1 && l.item>=0 && l.item==lexV1Sel);
+    bool inv=sel || l.estilo==1;
+    lexV1MontarLinha(lexV1Txt+l.ini,l.len,inv,l.estilo==1?4:0);
+  } else {
+    for(int k=0;k<LEITOR_BUFFER_W*LEITOR_LINHA_H;k++) bufferLinhaLeitor[k]=COR_FUNDO;
+  }
+  tft.drawRGBBitmap(4,y,bufferLinhaLeitor,LEITOR_BUFFER_W,TEXTO_H);
+}
+
+// So o viewport (12 linhas): cada linha substitui a anterior de uma vez; nada de fillScreen durante a rolagem.
+static void lexV1DesenharViewportCamada()
+{
+  for(int i=0;i<LEITOR_LINHAS_VISIVEIS;i++) lexV1DesenharLinhaViewport(i);
+}
+
+static void lexV1DesenharContadorCamada()
+{
+  tft.fillRect(220,221,100,19,COR_FUNDO);
+  int ultima=min(lexV1Topo+LEITOR_LINHAS_VISIVEIS,lexV1NLinhas);
+  String c=String(lexV1NLinhas?lexV1Topo+1:0)+"-"+String(ultima)+"/"+String(lexV1NLinhas);
+  if(lexV1RefModo==1) c=String(lexV1Sel+1)+"/"+String(lexV1NItens);
+  imprimirUTF8(320-4-6*(int)c.length(),228,c,COR_VERDE_SUAVE,COR_FUNDO,16);
+}
+
+void lexV1DesenharCamada()
+{
+  // Chamado so ao abrir/trocar de tela (e ao acordar o display); a rolagem usa lexV1DesenharViewportCamada.
+  tft.fillScreen(COR_FUNDO);
+  tft.fillRect(0,0,320,21,COR_FUNDO);
+  tft.drawFastHLine(0,20,320,COR_VERDE_ESCURO);
+  tft.drawRoundRect(3,2,68,16,3,COR_VERDE);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(10,6); tft.print("< VOLTAR");
+  imprimirUTF8(80,6,lexV1TituloCamada,COR_VERDE,COR_FUNDO,38);
+  lexV1DesenharViewportCamada();
+  int fim=TEXTO_Y0+LEITOR_LINHAS_VISIVEIS*TEXTO_H;
+  if(fim<204) tft.fillRect(0,fim,320,204-fim,COR_FUNDO);
+  tft.drawFastHLine(0,204,320,COR_VERDE_ESCURO);
+  tft.drawFastHLine(0,220,320,COR_VERDE_ESCURO);
+  const char *ajuda=lexV1RefModo==1?"SETAS/RODA ESCOLHER  ENTER ABRIR  BKSP VOLTAR":"SETAS/RODA ROLAR  PGUP/PGDN PAGINA  BKSP VOLTAR";
+  imprimirUTF8(6,208,ajuda,COR_VERDE_SUAVE,COR_FUNDO,52);
+  lexV1DesenharContadorCamada();
+}
+
+static void lexV1ManterSelecaoVisivel()
+{
+  if(lexV1Sel<0 || lexV1Sel>=lexV1NItens || lexV1ItemPrimeiraLinha[lexV1Sel]<0) return;
+  int a=lexV1ItemPrimeiraLinha[lexV1Sel], b=lexV1ItemUltimaLinha[lexV1Sel];
+  if(a<lexV1Topo) lexV1Topo=max(0,a-1);
+  else if(b>=lexV1Topo+LEITOR_LINHAS_VISIVEIS) lexV1Topo=min(max(0,lexV1NLinhas-LEITOR_LINHAS_VISIVEIS),b-LEITOR_LINHAS_VISIVEIS+2);
+}
+
+void lexV1RolarCamada(int delta)
+{
+  if(lexV1RefModo==1){
+    // lista: a roda/setas movem a SELECAO; a janela acompanha
+    int novo=constrain(lexV1Sel+delta,0,max(0,lexV1NItens-1));
+    if(novo==lexV1Sel) return;
+    int antigoTopo=lexV1Topo, antigoSel=lexV1Sel;
+    lexV1Sel=novo;
+    lexV1ManterSelecaoVisivel();
+    if(lexV1Topo!=antigoTopo) lexV1DesenharViewportCamada();
+    else {
+      // so as linhas dos dois itens envolvidos mudam
+      const int envolvidos[2]={antigoSel,lexV1Sel};
+      for(int k=0;k<2;k++){
+        int it=envolvidos[k];
+        if(lexV1ItemPrimeiraLinha[it]<0) continue;
+        for(int l=lexV1ItemPrimeiraLinha[it]; l<=lexV1ItemUltimaLinha[it]; l++)
+          if(l>=lexV1Topo && l<lexV1Topo+LEITOR_LINHAS_VISIVEIS) lexV1DesenharLinhaViewport(l-lexV1Topo);
+      }
+    }
+    lexV1DesenharContadorCamada();
+    return;
+  }
+  int maxTopo=max(0,lexV1NLinhas-LEITOR_LINHAS_VISIVEIS);
+  int novo=constrain(lexV1Topo+delta,0,maxTopo);
+  if(novo==lexV1Topo) return;
+  lexV1Topo=novo;
+  lexV1DesenharViewportCamada();
+  lexV1DesenharContadorCamada();
+}
+
+// "CF88:ART.5:INC.V" -> "CF ART. 5, INC. V"
+static String lexV1Rotulo(const char *tid)
+{
+  String r, t(tid);
+  int ini=0;
+  while(ini<(int)t.length()){
+    int f=t.indexOf(':',ini); if(f<0) f=t.length();
+    String p=t.substring(ini,f);
+    String q;
+    if(p=="CF88") q="CF";
+    else if(p.startsWith("ART.")) q="ART. "+p.substring(4);
+    else if(p=="PAR.UNICO") q="PAR. ÚNICO";
+    else if(p.startsWith("PAR.")) q="§ "+p.substring(4)+"º";
+    else if(p.startsWith("INC.")) q="INC. "+p.substring(4);
+    else if(p.startsWith("AL.")) q="AL. "+p.substring(3)+")";
+    else q=p;
+    if(r.length()) r+=(p.startsWith("ART.")||r=="CF"||r=="ADCT")?" ":", ";
+    r+=q;
+    ini=f+1;
+  }
+  return r;
+}
+
+// ---------------- disponibilidade das camadas (rodape dinamico) ----------------
+// Calculada UMA vez por registro do TEXT_MAP: [ini, fim) de offsets com o mesmo target. Rolar dentro do intervalo nao faz I/O.
+// TEXT_MAP e TARGETS ficam abertos enquanto a UI e usada (2 handles em regime; os demais abrem e fecham sob demanda).
+static LexV1FileReader lexV1MapUi, lexV1TgtUi;
+static LexV1Index lexV1MapIdx, lexV1TgtIdx;
+static bool lexV1IdxUiOk=false, lexV1IdxUiTentou=false;
+static uint32_t lexV1UltimoScrollMs=0;
+void lexV1MarcarRolagem(){ lexV1UltimoScrollMs=millis(); }
+
+static bool lexV1AbrirIndicesUi()
+{
+  if(lexV1IdxUiOk) return true;
+  if(lexV1IdxUiTentou) return false;
+  lexV1IdxUiTentou=true;
+  bool a=lexV1MapUi.abrir("TEXT_MAP","/99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX","ui_disponibilidade") &&
+         lexv1OpenIndex(lexV1MapIdx,&lexV1MapUi,"TEXT_MAP",LEXV1_TEXT_MAP_VERSION)==LEXV1_OK;
+  bool b=a && lexV1TgtUi.abrir("TARGETS","/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX","ui_disponibilidade") &&
+         lexv1OpenIndex(lexV1TgtIdx,&lexV1TgtUi,"TARGETS",LEXV1_TARGETS_VERSION)==LEXV1_OK;
+  lexV1IdxUiOk=a && b;
+  if(!lexV1IdxUiOk){ lexV1MapUi.fechar(); lexV1TgtUi.fechar(); }
+  return lexV1IdxUiOk;
+}
+
+static bool lexV1CamadaV1Aplicavel()
+{
+  return lexV1Pronto && caminhoArquivoAtual==LEXV1_RUNTIME_CF_PATH && tamanhoArquivoAtual==lexV1RuntimeBytes;
+}
+
+// ---------------- ACTIVE_TARGET (imediato) ----------------
+// Resolve o ACTIVE_TARGET para a linha que gera o CONTEXTO. Sem debounce: consulta o TEXT_MAP sempre que o offset
+// sai do registro [ini,fim) atual (dentro do registro o target e o mesmo por definicao; nao e cache "atrasado").
+// Se o target muda, a disponibilidade antiga e invalidada NA HORA (3/4 somem ate a nova mascara ficar pronta).
+void lexV1SincronizarAlvo(int indiceContexto)
+{
+  int i=indiceContexto;
+  if(i<0 || i>=LEITOR_LINHAS_VISIVEIS || !linhaCacheValida[i]) i=LEITOR_LINHAS_VISIVEIS/2;
+  if(!linhaCacheValida[i]) i=0;
+  lexV1OffsetContextoOk=cacheLeitorValido && linhaCacheValida[i];
+  lexV1OffsetContexto=lexV1OffsetContextoOk?offsetLinhaCache[i]:0;
+  if(!lexV1CamadaV1Aplicavel() || !lexV1OffsetContextoOk){
+    lexV1Alvo.valido=false; lexV1Alvo.tid[0]='\0';
+    lexV1Disp.valido=false;
+    return;
+  }
+  uint32_t off=lexV1OffsetContexto;
+  lexV1Alvo.off=off;
+  if(lexV1Alvo.valido && off>=lexV1Alvo.ini && off<lexV1Alvo.fim) return;
+  char ant[LEXV1_KEY_MAX]; strncpy(ant,lexV1Alvo.valido?lexV1Alvo.tid:"",sizeof(ant)-1); ant[sizeof(ant)-1]='\0';
+  lexV1Alvo.valido=false; lexV1Alvo.tid[0]='\0';
+  if(!lexV1AbrirIndicesUi()){ lexV1Disp.valido=false; return; }
+  char tid[LEXV1_KEY_MAX]; uint32_t ini=0, fim=0;
+  LexV1Status st=lexv1TargetAtOffset(lexV1MapIdx,lexV1RuntimeBytes,lexV1RuntimeSha,off,tid,sizeof(tid),&ini,&fim);
+  lexV1Alvo.ini=(st==LEXV1_OK)?ini:off; lexV1Alvo.fim=(st==LEXV1_OK && fim>ini)?fim:off+1;
+  if(st==LEXV1_OK){ strncpy(lexV1Alvo.tid,tid,sizeof(lexV1Alvo.tid)-1); lexV1Alvo.tid[sizeof(lexV1Alvo.tid)-1]='\0'; }
+  lexV1Alvo.valido=true;
+  if(strcmp(lexV1Disp.tid,lexV1Alvo.tid)!=0) lexV1Disp.valido=false;       // cache de outro target: invalido ja
+  if(strcmp(ant,lexV1Alvo.tid)!=0)
+    Serial.printf("LEXV1: ACTIVE_TARGET=%s off=%lu [%lu,%lu)\n",lexV1Alvo.tid[0]?lexV1Alvo.tid:"-",(unsigned long)off,
+                  (unsigned long)lexV1Alvo.ini,(unsigned long)lexV1Alvo.fim);
+}
+
+// "CF88:ART.5:INC.XVI" -> "CF88:ART.5"; "ADCT:ART.2:PAR.1" -> "ADCT:ART.2"; sem artigo -> ""
+static void lexV1ChaveArtigo(const char *tid, char *out, size_t cap)
+{
+  out[0]='\0';
+  const char *a=strstr(tid,":ART.");
+  if(!a) return;
+  const char *f=strchr(a+5,':');
+  size_t n=f?(size_t)(f-tid):strlen(tid);
+  if(n>=cap) n=cap-1;
+  memcpy(out,tid,n); out[n]='\0';
+}
+
+// CANONICAL LAYERS: Correlatas (1) e Jurisprudencia (2) por TARGET EXATO, com a mesma fonte das camadas 3/4.
+// LAYER_TARGET -> REF_LOOKUP (chave exata) -> linhas do REF_PAYLOAD daquele target -> lexV1ClassificarDestino.
+// Nunca sobe para inciso/paragrafo/artigo e nunca usa o indice legado POR ARTIGO (JUR_LOOKUP / REL_LOOKUP).
+// Os indices legados (JURISPRUDENCIA.IDX / RELACOES.IDX, em PSRAM) so resolvem o ITEM ja escolhido pelo seu id
+// (arquivo da tese / norma externa), para abrir o conteudo como no v7.12.0.
+static char lexV1RelTid[LEXV1_KEY_MAX]={0};   // target cujos registros estao nas listas 1/2 (LAYER_TARGET)
+#define LEXV1_REL_REGS_MAX 32
+#define LEXV1_QUERY_KEYS_MAX 2
+
+// CAPUT EQUIVALENCE: a UNICA regra de equivalencia de resolucao das camadas 1/2/4 (nao vale para o ENTENDA).
+// O CF88_TEXT_MAP aprovado mapeia a linha textual do caput para "CF88:ART.n" (nunca ":CAPUT"); por isso
+// ACTIVE_TARGET == "CF88:ART.n" (sem mais componentes) E o caput visual -> chaves [ART.n, ART.n:CAPUT].
+// Qualquer outro target (inciso, paragrafo, alinea, ADCT, ...) -> so ele mesmo. Nunca sobe e nunca desce na hierarquia.
+static int lexV1QueryKeysForActiveTarget(const char *tid, char (*out)[LEXV1_KEY_MAX])
+{
+  if(!tid || !tid[0]) return 0;
+  strncpy(out[0],tid,LEXV1_KEY_MAX-1); out[0][LEXV1_KEY_MAX-1]='\0';
+  if(!strncmp(tid,"CF88:ART.",9) && tid[9] && !strchr(tid+9,':') && strlen(tid)+6<LEXV1_KEY_MAX){
+    snprintf(out[1],LEXV1_KEY_MAX,"%s:CAPUT",tid);
+    return 2;
+  }
+  return 1;
+}
+
+// Le as linhas do REF_PAYLOAD de UMA chave exata (lookup sem floor; para na 1a linha de outra chave).
+// cb(linha, tipo, visibilidade) por linha. false = falha de I/O. NOT_FOUND (chave sem vinculo) e sucesso.
+// rp: REF_PAYLOAD preparado sob demanda (so abre no 1o seek; chave sem linha -> nunca aberto).
+static bool lexV1LerRegistrosChave(LexV1Index &refLookup, LexV1Reader &rp, const char *chave, LexV1Status &st,
+                                   std::function<void(const char*,const char*,const char*)> cb)
+{
+  char linha[LEXV1_LINE_MAX], f[40], tipo[20];
+  st=lexv1Find(refLookup,chave,linha,sizeof(linha),false);
+  if(st==LEXV1_NOT_FOUND) return true;
+  if(st!=LEXV1_OK) return false;
+  lexv1Field(linha,1,f,sizeof(f)); uint32_t off=(uint32_t)strtoul(f,nullptr,10);
+  lexv1Field(linha,2,f,sizeof(f)); int total=atoi(f);
+  if(total<=0) return true;
+  if(!rp.seek(off)) return false;
+  for(int i=0;i<total && i<64;i++){
+    if(lexv1ReadLine(rp,linha,sizeof(linha))<0 || lexv1KeyCmp(linha,chave)!=0) break;   // so a chave exata
+    lexv1Field(linha,1,tipo,sizeof(tipo));
+    lexv1Field(linha,2,f,sizeof(f));
+    cb(linha,tipo,f);
+  }
+  return true;
+}
+
+// Linha do indice legado que contem `agulha` (inicioLinha: a linha COMECA com ela). PSRAM se houver; senao, SD.
+static bool lexV1LinhaLegadaPorId(const char *cache, size_t tam, const char *caminho, const String &agulha, bool inicioLinha, String &linha)
+{
+  linha="";
+  if(cache && tam){
+    const char *p=cache;
+    while((p=strstr(p,agulha.c_str()))!=nullptr){
+      const char *ini=p; while(ini>cache && ini[-1]!='\n') ini--;
+      if(!inicioLinha || ini==p){
+        const char *fim=p; while(fim<cache+tam && *fim!='\n') fim++;
+        for(const char *c=ini;c<fim;c++) if(*c!='\r') linha+=*c;
+        return true;
+      }
+      p+=agulha.length();
+    }
+    return false;
+  }
+  LexV1FileReader rd;                                  // sem cache PSRAM: le o SD pelo rastreador de handles
+  if(!rd.abrir("LEGADO_ITEM",caminho,"ui_relacoes")) return false;
+  bool achou=false;
+  while(rd.f.available()){
+    String l=rd.f.readStringUntil('\n');
+    int k=l.indexOf(agulha);
+    if(k>=0 && (!inicioLinha || k==0)){ l.trim(); linha=l; achou=true; break; }
+  }
+  rd.fechar();
+  return achou;
+}
+
+// Correlata pelo id da relacao aprovada (REL_xxx), mesmo formato do RELACOES.IDX que o v7.12.0 abre.
+static bool lexV1AdicionarCorrelataPorId(const String &relId, const String &origem)
+{
+  carregarCacheRelationsV2();
+  String linha;
+  if(!lexV1LinhaLegadaPorId(relacoesV2Cache,tamanhoRelacoesV2Cache,CAMINHO_RELACOES_V2,"|"+relId+"|",false,linha)) return false;
+  if(campoPipe(linha,5)!=relId) return false;
+  String normaId=campoPipe(linha,6), nome=campoPipe(linha,7), modo=campoPipe(linha,8), artigos=campoPipe(linha,9), caminho=campoPipe(linha,10);
+  String nomeCanonico="", caminhoCanonico="";
+  if(resolverNormaExternaV2(normaId,nomeCanonico,caminhoCanonico)){
+    if(nomeCanonico.length()) nome=nomeCanonico;
+    if(caminhoCanonico.length()) caminho=caminhoCanonico;
+  }
+  int antes=totalCorrelatasArtigo;
+  if(modo=="ABRIR_ARTIGO_INTERNO" && artigos.length()){
+    int inicio=0;
+    while(inicio<(int)artigos.length() && totalCorrelatasArtigo<MAX_RELACOES_ARTIGO){
+      int fim=artigos.indexOf(',',inicio); if(fim<0) fim=artigos.length();
+      String art=artigos.substring(inicio,fim); art.trim();
+      if(art.length()) adicionarCorrelataV2(origem,relId,normaId,nome,modo,art,caminho);
+      inicio=fim+1;
+    }
+  } else adicionarCorrelataV2(origem,relId,normaId,nome,modo,"",caminho);
+  return totalCorrelatasArtigo>antes;
+}
+
+// Jurisprudencia pela chave do vinculo aprovado (ex.: STF:RG:995:CF88:5:-:-:-): linha exata do JURISPRUDENCIA.IDX.
+static bool lexV1AdicionarJurisPorId(const String &chave, const String &rotulo)
+{
+  carregarCacheJurisCF();
+  String linha;
+  const char *cache=cacheJurisCFCarregado?jurisprudenciaCFCache:nullptr;
+  if(!lexV1LinhaLegadaPorId(cache,cache?tamanhoJurisprudenciaCFCache:0,CAMINHO_JURISPRUDENCIA_CF,chave+"|",true,linha)) return false;
+  return adicionarLinhaJurisCF(linha,rotulo);
+}
+
+// Carrega nas listas 1/2 SOMENTE os registros das query keys de `tid` (exato; no caput visual ART.n + ART.n:CAPUT).
+// Uma leitura de REF_LOOKUP + REF_PAYLOAD por target. false = falha de I/O (listas vazias: fail closed).
+static bool lexV1CarregarRelacoesTarget(const char *tid)
+{
+  if(tid && tid[0] && !strcmp(lexV1RelTid,tid)) return true;      // ja carregado para ESTE target
+  uint32_t t0=micros();
+  limparContextoRelationsV2Rapido();
+  menuRelacoesAtivo=false;
+  lexV1RelTid[0]='\0';
+  if(!tid || !tid[0]) return false;
+  char chave[LEXV1_KEY_MAX];
+  lexV1ChaveArtigo(tid,chave,sizeof(chave));
+  const char *dp=strchr(chave,':');
+  artigoRelacoes=(dp && !strncmp(dp,":ART.",5))?String(dp+5):String("");   // so para restaurar a busca ao voltar
+  contextoRelacoesRotulo=lexV1RotuloContexto(tid);
+  char chaves[LEXV1_QUERY_KEYS_MAX][LEXV1_KEY_MAX];
+  int nChaves=lexV1QueryKeysForActiveTarget(tid,chaves);
+  // 1) registros das query keys (REF_LOOKUP/REF_PAYLOAD fechados antes de tocar nos indices legados)
+  struct Reg { LexV1DestinoCamada dst; char id[96]; char fonte[48]; };
+  Reg *regs=(Reg*)lexV1Aloca(sizeof(Reg)*LEXV1_REL_REGS_MAX);
+  if(!regs) return false;
+  int nRegs=0, foraDe12=0, duplicados=0;
+  LexV1FileReader rl, rp; LexV1Index refLookup;
+  LexV1Status st=rl.abrir("REF_LOOKUP","/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX","ui_relacoes")?
+                 lexv1OpenIndex(refLookup,&rl,"REF_LOOKUP",1):LEXV1_FAIL_IO;
+  rp.preparar("REF_PAYLOAD","/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX","ui_relacoes");
+  bool ioOk=(st==LEXV1_OK);
+  for(int c=0;ioOk && c<nChaves;c++){
+    ioOk=lexV1LerRegistrosChave(refLookup,rp,chaves[c],st,[&](const char *linha,const char *tipo,const char *vis){
+      LexV1DestinoCamada dst=lexV1ClassificarDestino(tipo,vis);
+      if(dst==LEXV1_LAYER_UNKNOWN) Serial.printf("LEXV1: UNKNOWN_LAYER_TYPE %s tipo=%s (oculto)\n",chaves[c],tipo);
+      if(dst!=LEXV1_LAYER_CORRELATA && dst!=LEXV1_LAYER_JURISPRUDENCIA){ foraDe12++; return; }   // obra -> 4; historica oculta
+      char fonte[48]; lexv1Field(linha,5,fonte,sizeof(fonte));                                   // SOURCE_ID
+      for(int i=0;i<nRegs;i++) if(regs[i].dst==dst && !strcmp(regs[i].fonte,fonte)){ duplicados++; return; }  // mesmo vinculo: 1 vez
+      if(nRegs>=LEXV1_REL_REGS_MAX) return;
+      regs[nRegs].dst=dst;
+      strncpy(regs[nRegs].fonte,fonte,sizeof(regs[nRegs].fonte)-1); regs[nRegs].fonte[sizeof(regs[nRegs].fonte)-1]='\0';
+      lexv1Field(linha,4,regs[nRegs].id,sizeof(regs[nRegs].id));   // REFERENCE_ID
+      nRegs++;
+    });
+  }
+  rp.fechar(); rl.fechar();
+  // 2) cada registro vai para UMA lista; o item e resolvido pelo id do vinculo (nunca pelo artigo)
+  int nCor=0, nJur=0, naoResolvidos=0;
+  for(int i=0;i<nRegs;i++){
+    String id(regs[i].id);
+    int a=id.indexOf(':'), b=id.indexOf('@');
+    String chaveItem=(a>=0 && b>a)?id.substring(a+1,b):String("");
+    bool ok=false;
+    if(chaveItem.length()){
+      if(regs[i].dst==LEXV1_LAYER_CORRELATA) ok=lexV1AdicionarCorrelataPorId(chaveItem,contextoRelacoesRotulo);
+      else ok=lexV1AdicionarJurisPorId(chaveItem,contextoRelacoesRotulo);
+    }
+    if(ok){ if(regs[i].dst==LEXV1_LAYER_CORRELATA) nCor++; else nJur++; }
+    else { naoResolvidos++; Serial.printf("LEXV1: ITEM_NAO_RESOLVIDO %s %s (nao exibido)\n",tid,regs[i].id); }
+  }
+  free(regs);
+  if(totalRelacoesArtigo>0){ categoriasJurisDisponiveis[0]=REL_JURIS_TODAS; totalCategoriasJuris=1; }
+  menuRelacoesAtivo=(totalCorrelatasArtigo>0 || totalRelacoesArtigo>0);
+  if(ioOk){ strncpy(lexV1RelTid,tid,sizeof(lexV1RelTid)-1); lexV1RelTid[sizeof(lexV1RelTid)-1]='\0'; }
+  Serial.printf("LEXV1: LAYER_RECORDS target=%s query_keys=%s%s%s correlatas=%d jurisprudencia=%d duplicados=%d fora_de_1_2=%d "
+                "nao_resolvidos=%d (%s) us=%lu\n",tid,chaves[0],nChaves>1?",":"",nChaves>1?chaves[1]:"",nCor,nJur,duplicados,
+                foraDe12,naoResolvidos,lexv1StatusName(st),(unsigned long)(micros()-t0));
+  return ioOk;
+}
+
+// As listas 1/2 so podem conter registros do ACTIVE_TARGET: target mudou -> descarta (sem I/O; recarrega na tecla).
+void lexV1SincronizarRelacoes()
+{
+  const char *tid=lexV1Alvo.valido?lexV1Alvo.tid:"";
+  if(lexV1RelTid[0] && !strcmp(lexV1RelTid,tid)) return;
+  if(!lexV1RelTid[0] && !totalCorrelatasArtigo && !totalRelacoesArtigo && !menuRelacoesAtivo) return;
+  limparContextoRelationsV2Rapido();
+  menuRelacoesAtivo=false;
+  lexV1RelTid[0]='\0';
+}
+
+// "CF88:ART.5:INC.XVI" -> "ART. 5 | INC. XVI" (formato do rodape); ADCT recebe o prefixo "ADCT".
+String lexV1RotuloContexto(const char *tid)
+{
+  String r, t(tid);
+  int ini=0;
+  while(ini<(int)t.length()){
+    int f=t.indexOf(':',ini); if(f<0) f=t.length();
+    String p=t.substring(ini,f), q;
+    if(p=="CF88"){ ini=f+1; continue; }
+    if(p=="ADCT") q="ADCT";
+    else if(p.startsWith("ART.")) q="ART. "+p.substring(4);
+    else if(p=="PAR.UNICO") q="PAR. UNICO";
+    else if(p.startsWith("PAR.")) q="§ "+p.substring(4)+"º";
+    else if(p.startsWith("INC.")) q="INC. "+p.substring(4);
+    else if(p.startsWith("AL.")) q="AL. "+p.substring(3)+")";
+    else q=p;
+    if(r.length()) r+=(r=="ADCT")?" ":" | ";
+    r+=q;
+    ini=f+1;
+  }
+  return r;
+}
+
+// ---------------- LAYER_AVAILABILITY_CACHE (debounced) ----------------
+// Flags de 3/4 PARA o ACTIVE_TARGET. forcar=false: nao faz I/O enquanto a roda gira (espera 250 ms parado).
+// O debounce so atrasa ESTE I/O secundario; o target ja foi resolvido por lexV1SincronizarAlvo. true = redesenhar rodape.
+bool lexV1AtualizarDisponibilidade(bool forcar)
+{
+  if(!lexV1CamadaV1Aplicavel() || !lexV1Alvo.valido || !lexV1Alvo.tid[0]){
+    bool mudou=lexV1Disp.valido;
+    lexV1Disp.valido=false; lexV1Disp.entenda=lexV1Disp.refs=lexV1Disp.correlatas=lexV1Disp.juris=false; lexV1Disp.tid[0]='\0';
+    return mudou;
+  }
+  if(lexV1Disp.valido && !strcmp(lexV1Disp.tid,lexV1Alvo.tid)) return false;   // cache do MESMO target
+  if(!forcar && (uint32_t)(millis()-lexV1UltimoScrollMs)<250) return false;
+  lexV1Disp.valido=false; lexV1Disp.entenda=lexV1Disp.refs=lexV1Disp.correlatas=lexV1Disp.juris=false;
+  strncpy(lexV1Disp.tid,lexV1Alvo.tid,sizeof(lexV1Disp.tid)-1); lexV1Disp.tid[sizeof(lexV1Disp.tid)-1]='\0';
+  if(!lexV1AbrirIndicesUi()) return false;
+  uint32_t t0=micros();
+  // FLAGS do CF88_TARGETS.IDX (derivadas so das linhas CURRENT_VISIBLE DE CADA target, sem heranca; o ART.n NAO inclui o
+  // :CAPUT): C/J/W = UNIAO das query keys (mesma regra das listas); ENTENDA so do ACTIVE_TARGET (semantica propria).
+  char chaves[LEXV1_QUERY_KEYS_MAX][LEXV1_KEY_MAX];
+  int nChaves=lexV1QueryKeysForActiveTarget(lexV1Disp.tid,chaves);
+  char flagsLog[2][12]={"-","-"};
+  for(int c=0;c<nChaves;c++){
+    LexV1Target t;
+    if(lexv1TargetInfo(lexV1TgtIdx,chaves[c],t)!=LEXV1_OK) continue;
+    strncpy(flagsLog[c],t.flags,sizeof(flagsLog[c])-1); flagsLog[c][sizeof(flagsLog[c])-1]='\0';
+    if(c==0) lexV1Disp.entenda=(t.flags[0]=='E' || t.flags[0]=='B');
+    lexV1Disp.correlatas|=lexV1FlagCamada(t.flags,LEXV1_LAYER_CORRELATA);    // 1 CORR. = correlatas das query keys
+    lexV1Disp.juris|=lexV1FlagCamada(t.flags,LEXV1_LAYER_JURISPRUDENCIA);    // 2 JURIS. = jurisprudencia das query keys
+    lexV1Disp.refs|=lexV1FlagCamada(t.flags,LEXV1_LAYER_REFERENCIA);         // 4 REF. = obras editoriais visiveis (nunca C/J)
+  }
+  lexV1Disp.valido=true;
+  Serial.printf("LEXV1: DISPONIBILIDADE target=%s query_keys=%d flags=%s%s%s corr=%d juris=%d entenda=%d refs=%d us=%lu\n",
+                lexV1Disp.tid,nChaves,flagsLog[0],nChaves>1?"+":"",nChaves>1?flagsLog[1]:"",lexV1Disp.correlatas,
+                lexV1Disp.juris,lexV1Disp.entenda,lexV1Disp.refs,(unsigned long)(micros()-t0));
+  return true;
+}
+
+// Mascara do rodape: na CF V1, 1-4 pelo cache SO se for do ACTIVE_TARGET (registros exatos; nada do artigo-pai).
+// Fora do runtime V1 (outras leis), 1/2 continuam pelos contadores legados. Numeros nunca sao renumerados.
+uint8_t lexV1MascaraCamadas()
+{
+  uint8_t m=0;
+  if(!lexV1CamadaV1Aplicavel()){
+    if(totalCorrelatasArtigo>0) m|=1;
+    if(totalCategoriasJuris>0) m|=2;
+    return m;
+  }
+  if(lexV1Disp.valido && lexV1Alvo.valido && !strcmp(lexV1Disp.tid,lexV1Alvo.tid)){
+    if(lexV1Disp.correlatas) m|=1;
+    if(lexV1Disp.juris) m|=2;
+    if(lexV1Disp.entenda) m|=4;
+    if(lexV1Disp.refs) m|=8;
+  }
+  return m;
+}
+
+// ---------------- montagem do ENTENDA ----------------
+static void lexV1MontarEntenda(const char *tid)
+{
+  String cab="DISPOSITIVO: "+lexV1Rotulo(tid);
+  lexV1Anexar(cab.c_str(),cab.length(),2);
+  LexV1FileReader lk, pl; LexV1Index lookup; LexV1Entenda e;
+  LexV1Status st=lk.abrir("ENTENDA_LOOKUP","/99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX","ui_entenda")?
+                 lexv1OpenIndex(lookup,&lk,"ENTENDA_LOOKUP",2):LEXV1_FAIL_IO;
+  pl.preparar("ENTENDA_PAYLOAD","/99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT","ui_entenda");
+  if(st==LEXV1_OK) st=lexv1Entenda(lookup,&pl,tid,e);
+  char *bloco=nullptr; uint32_t n=0;
+  if(st==LEXV1_OK){
+    n=e.length<LEXV1_BLOCO_MAX?e.length:LEXV1_BLOCO_MAX;
+    bloco=(char*)lexV1Aloca(n+1);
+    if(bloco && pl.seek(e.offset)){ uint32_t lidos=0; while(lidos<n){ int k=pl.read((uint8_t*)bloco+lidos,(int)min((uint32_t)512,n-lidos)); if(k<=0) break; lidos+=k; } n=lidos; bloco[n]='\0'; }
+    else n=0;
+  }
+  pl.fechar(); lk.fechar();
+  if(st!=LEXV1_OK || !n){
+    lexV1Anexar("",0,0);
+    lexV1Anexar("Não foi possível abrir esta explicação agora.",-1,0);
+    Serial.printf("LEXV1: UI ENTENDA %s -> %s\n",tid,lexv1StatusName(st));
+    if(bloco) free(bloco);
+    return;
+  }
+  Serial.printf("LEXV1: UI ENTENDA %s -> %s anchor=%s off=%lu len=%lu\n",tid,lexv1ResolutionName(e.resolution),e.anchor,(unsigned long)e.offset,(unsigned long)n);
+  if(e.resolution==LEXV1_RES_COVERED_BY_BLOCK){
+    String r="EXPLICAÇÃO COMPARTILHADA COM: "+lexV1Rotulo(e.anchor);
+    lexV1Anexar(r.c_str(),r.length(),2);
+  }
+  // D| = titulo; "#SECAO" = barra; texto das secoes no corpo da Lei Seca; "termo|definicao" -> "termo: definicao"
+  bool emSecao=false, palavras=false;
+  char *p=bloco, *fimBloco=bloco+n;
+  while(p<fimBloco){
+    char *q=p; while(q<fimBloco && *q!='\n') q++;
+    int len=(int)(q-p); if(len>0 && p[len-1]=='\r') len--;
+    if(len>=4 && !strncmp(p,"@END",4)) break;
+    if(!emSecao && len>2 && p[0]=='D' && p[1]=='|'){ lexV1Anexar("",0,0); lexV1Anexar(p+2,len-2,2); }
+    else if(len>1 && p[0]=='#'){
+      emSecao=true;
+      palavras=(len>=16 && !strncmp(p+1,"PALAVRAS DIF",12));
+      lexV1Anexar("",0,0);
+      lexV1Anexar(p+1,len-1,1);
+    } else if(emSecao && len>0){
+      char *bar=palavras?(char*)memchr(p,'|',len):nullptr;
+      if(bar){
+        char l[LEXV1_LINE_MAX*2];
+        int a=(int)(bar-p), b=len-a-1;
+        if(a>LEXV1_LINE_MAX-1) a=LEXV1_LINE_MAX-1;
+        if(b>LEXV1_LINE_MAX-1) b=LEXV1_LINE_MAX-1;
+        memcpy(l,p,a); l[a]=':'; l[a+1]=' '; memcpy(l+a+2,bar+1,b);
+        lexV1Anexar(l,a+2+b,0);
+      } else lexV1Anexar(p,len,0);
+    }
+    p=q+1;
+  }
+  free(bloco);
+}
+
+// ---------------- REFERENCIAS: lista e detalhe ----------------
+static const LexV1RefDetalhe *lexV1BuscarDetalhe(const char *tid, const char *fonte)
+{
+  char chave[LEXV1_KEY_MAX+56];
+  snprintf(chave,sizeof(chave),"%s|%s",tid,fonte);
+  int lo=0, hi=LEXV1_REF_DETAIL_COUNT-1;
+  while(lo<=hi){
+    int mid=(lo+hi)/2;
+    int c=strcmp(LEXV1_REF_DETALHES[mid].chave,chave);
+    if(c==0) return &LEXV1_REF_DETALHES[mid];
+    if(c<0) lo=mid+1; else hi=mid-1;
+  }
+  return nullptr;
+}
+
+// ---------------- roteamento de camadas (fonte unica: rodape, contagem, lista, detalhe) ----------------
+// TIPO do REF_PAYLOAD -> camada. Tipo desconhecido NUNCA vai para REFERENCIAS (UNKNOWN: oculto e reportado).
+LexV1DestinoCamada lexV1ClassificarDestino(const char *tipo, const char *visibilidade)
+{
+  if(!visibilidade || strcmp(visibilidade,"CURRENT_VISIBLE")!=0) return LEXV1_LAYER_HIDDEN;   // historicas seguem ocultas
+  if(!strcmp(tipo,"CORRELATA")) return LEXV1_LAYER_CORRELATA;
+  if(!strcmp(tipo,"JURISPRUDENCE")) return LEXV1_LAYER_JURISPRUDENCIA;
+  if(!strcmp(tipo,"WORK_REFERENCE")) return LEXV1_LAYER_REFERENCIA;
+  return LEXV1_LAYER_UNKNOWN;
+}
+
+// FLAGS do CF88_TARGETS.IDX (geradas no host dos MESMOS tipos, so linhas CURRENT_VISIBLE):
+// [1]=C CORRELATA, [2]=J JURISPRUDENCE, [3]=W WORK_REFERENCE -> mesma taxonomia de lexV1ClassificarDestino.
+bool lexV1FlagCamada(const char *flags, LexV1DestinoCamada camada)
+{
+  if(!flags || strlen(flags)<4) return false;
+  switch(camada){
+    case LEXV1_LAYER_CORRELATA:      return flags[1]=='C';
+    case LEXV1_LAYER_JURISPRUDENCIA: return flags[2]=='J';
+    case LEXV1_LAYER_REFERENCIA:     return flags[3]=='W';
+    default:                         return false;
+  }
+}
+
+static const char *lexV1NomeDestino(LexV1DestinoCamada c)
+{
+  switch(c){
+    case LEXV1_LAYER_CORRELATA: return "CORRELATA";
+    case LEXV1_LAYER_JURISPRUDENCIA: return "JURISPRUDENCIA";
+    case LEXV1_LAYER_REFERENCIA: return "REFERENCIA";
+    case LEXV1_LAYER_HIDDEN: return "HIDDEN";
+    default: return "UNKNOWN_LAYER_TYPE";
+  }
+}
+
+static String lexV1Nota(int16_t nota10)
+{
+  return String(nota10/10)+","+String(nota10%10);
+}
+
+static const char *lexV1TipoRef(const LexV1RefItem &it)
+{
+  if(it.d && it.d->tipo[0]) return it.d->tipo;
+  if(!strcmp(it.tipo,"JURISPRUDENCE")) return "JURISPRUDÊNCIA";
+  if(!strcmp(it.tipo,"CORRELATA")) return "LEGISLAÇÃO CORRELATA";
+  if(!strcmp(it.tipo,"WORK_REFERENCE")) return "OBRA";
+  return it.tipo;
+}
+
+static int lexV1CarregarItensRef(const char *tid)
+{
+  LexV1FileReader rl, rp; LexV1Index refLookup;
+  lexV1NItens=0;
+  int outros=0, duplicados=0;
+  char chaves[LEXV1_QUERY_KEYS_MAX][LEXV1_KEY_MAX];
+  int nChaves=lexV1QueryKeysForActiveTarget(tid,chaves);
+  LexV1Status st=rl.abrir("REF_LOOKUP","/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX","ui_references")?
+                 lexv1OpenIndex(refLookup,&rl,"REF_LOOKUP",1):LEXV1_FAIL_IO;
+  rp.preparar("REF_PAYLOAD","/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX","ui_references");
+  for(int c=0;st==LEXV1_OK && c<nChaves;c++){
+    lexV1LerRegistrosChave(refLookup,rp,chaves[c],st,[&](const char *linha,const char *tipo,const char *vis){
+      LexV1DestinoCamada dst=lexV1ClassificarDestino(tipo,vis);
+      if(dst==LEXV1_LAYER_UNKNOWN) Serial.printf("LEXV1: UNKNOWN_LAYER_TYPE %s tipo=%s (oculto)\n",chaves[c],tipo);
+      if(dst!=LEXV1_LAYER_REFERENCIA){ outros++; return; }  // juris/correlata vao para 2/1; historicas ocultas
+      char fonte[48]; lexv1Field(linha,5,fonte,sizeof(fonte));
+      for(int i=0;i<lexV1NItens;i++) if(!strcmp(lexV1Itens[i].fonte,fonte)){ duplicados++; return; }   // mesmo vinculo: 1 vez
+      if(lexV1NItens>=LEXV1_REF_ITENS_MAX) return;
+      LexV1RefItem &it=lexV1Itens[lexV1NItens++];
+      strncpy(it.tipo,tipo,sizeof(it.tipo)-1); it.tipo[sizeof(it.tipo)-1]='\0';
+      strncpy(it.fonte,fonte,sizeof(it.fonte)-1); it.fonte[sizeof(it.fonte)-1]='\0';
+      lexv1Field(linha,6,it.rotulo,sizeof(it.rotulo));
+      it.d=lexV1BuscarDetalhe(chaves[c],it.fonte);       // ficha aprovada pela chave REAL do vinculo (TARGET|WORK)
+      it.nota10=it.d?it.d->nota10:-1;
+    });
+    if(st==LEXV1_NOT_FOUND) st=LEXV1_OK;
+  }
+  rp.fechar(); rl.fechar();
+  // maior nota de indicacao primeiro; sem nota depois, na ordem aprovada do payload (ordenacao estavel)
+  for(int i=1;i<lexV1NItens;i++){
+    LexV1RefItem x=lexV1Itens[i]; int j=i-1;
+    while(j>=0 && lexV1Itens[j].nota10<x.nota10){ lexV1Itens[j+1]=lexV1Itens[j]; j--; }
+    lexV1Itens[j+1]=x;
+  }
+  Serial.printf("LEXV1: UI REFERENCIAS %s query_keys=%d -> obras=%d duplicados=%d fora_da_camada_4=%d (%s)\n",tid,nChaves,
+                lexV1NItens,duplicados,outros,lexv1StatusName(st));
+  return lexV1NItens;
+}
+
+static void lexV1MontarListaRef()
+{
+  lexV1ItemAtual=-1;
+  String cab="DISPOSITIVO: "+lexV1Rotulo(lexV1RefTid);
+  lexV1Anexar(cab.c_str(),cab.length(),2);
+  for(int i=0;i<lexV1NItens;i++){
+    const LexV1RefItem &it=lexV1Itens[i];
+    if(lexV1ClassificarDestino(it.tipo,"CURRENT_VISIBLE")!=LEXV1_LAYER_REFERENCIA){
+      Serial.printf("LEXV1: LAYER_ROUTING_ERROR camada=4 item=%s destino=%s (nao exibido)\n",it.fonte,
+                    lexV1NomeDestino(lexV1ClassificarDestino(it.tipo,"CURRENT_VISIBLE")));
+      continue;
+    }
+    lexV1ItemAtual=-1; lexV1Anexar("",0,0);
+    lexV1ItemAtual=i;
+    String t=String(i+1)+". "+(it.d?String(it.d->titulo):String(it.rotulo));
+    lexV1Anexar(t.c_str(),t.length(),3);
+    String s=lexV1TipoRef(it);
+    if(it.d && it.d->ano) s+=" – "+String(it.d->ano);
+    if(it.nota10>=0) s+=" – Nota "+lexV1Nota(it.nota10);
+    lexV1Anexar(s.c_str(),s.length(),0);
+  }
+  lexV1ItemAtual=-1;
+  lexV1Quebrar();
+  for(int i=0;i<lexV1NItens;i++){ lexV1ItemPrimeiraLinha[i]=-1; lexV1ItemUltimaLinha[i]=-1; }
+  for(int l=0;l<lexV1NLinhas;l++){
+    int it=lexV1Linhas[l].item;
+    if(it<0 || it>=lexV1NItens) continue;
+    if(lexV1ItemPrimeiraLinha[it]<0) lexV1ItemPrimeiraLinha[it]=l;
+    lexV1ItemUltimaLinha[it]=l;
+  }
+}
+
+static void lexV1MontarDetalheRef(const LexV1RefItem &it)
+{
+  lexV1ItemAtual=-1;
+  const LexV1RefDetalhe *d=it.d;
+  lexV1Anexar(d?d->titulo:it.rotulo,-1,2);
+  String s=lexV1TipoRef(it);
+  if(d && d->ano) s+=" – "+String(d->ano);
+  lexV1Anexar(s.c_str(),s.length(),0);
+  if(it.nota10>=0){ String n="Nota de indicação: "+lexV1Nota(it.nota10); lexV1Anexar(n.c_str(),n.length(),2); }
+  String disp="DISPOSITIVO: "+lexV1Rotulo(lexV1RefTid);
+  lexV1Anexar(disp.c_str(),disp.length(),0);
+  if(d){
+    if(d->sobre[0]){ lexV1Anexar("",0,0); lexV1Anexar("SOBRE",-1,1); lexV1AnexarParagrafos(d->sobre,0); }
+    if(d->porQue[0]){ lexV1Anexar("",0,0); lexV1Anexar("POR QUE ESTÁ AQUI",-1,1); lexV1AnexarParagrafos(d->porQue,0); }
+    if(d->alcance[0] || d->relacao[0]){
+      lexV1Anexar("",0,0); lexV1Anexar("ALCANCE NESTE DISPOSITIVO",-1,1);
+      if(d->alcance[0]) lexV1AnexarParagrafos(d->alcance,0);
+      if(d->relacao[0]){ String r=String("Relação: ")+d->relacao; lexV1Anexar(r.c_str(),r.length(),0); }
+    }
+  } else {
+    lexV1Anexar("",0,0);
+    lexV1Anexar("Ficha editorial ainda não disponível para esta referência.",-1,0);
+  }
+  lexV1Anexar("",0,0);
+  String fo=String("Fonte: ")+(d?d->fonte:it.fonte);
+  lexV1Anexar(fo.c_str(),fo.length(),0);
+  lexV1Quebrar();
+}
+
+void lexV1AbrirItemRef()
+{
+  if(lexV1RefModo!=1 || lexV1Sel<0 || lexV1Sel>=lexV1NItens) return;
+  if(lexV1ClassificarDestino(lexV1Itens[lexV1Sel].tipo,"CURRENT_VISIBLE")!=LEXV1_LAYER_REFERENCIA){
+    Serial.printf("LEXV1: LAYER_ROUTING_ERROR detalhe camada=4 item=%s\n",lexV1Itens[lexV1Sel].fonte);
+    return;
+  }
+  if(!lexV1AlocarTexto()) return;
+  lexV1RefModo=2;
+  lexV1TituloCamada="REFERÊNCIA";
+  lexV1MontarDetalheRef(lexV1Itens[lexV1Sel]);
+  lexV1Topo=0;
+  lexV1DesenharCamada();
+  Serial.printf("LEXV1: UI REFERENCIA detalhe item=%d fonte=%s linhas=%d\n",lexV1Sel+1,lexV1Itens[lexV1Sel].fonte,lexV1NLinhas);
+}
+
+static void lexV1VoltarParaListaRef()
+{
+  if(!lexV1AlocarTexto()) { lexV1FecharCamada(); return; }
+  lexV1RefModo=1;
+  lexV1TituloCamada="REFERÊNCIAS";
+  lexV1MontarListaRef();
+  lexV1Topo=0;
+  lexV1ManterSelecaoVisivel();
+  lexV1DesenharCamada();
+}
+
+// tipo: 'E' ENTENDA, 'R' REFERENCIAS. tid = ACTIVE_TARGET resolvido NO keypress (nunca lexV1Disp.tid).
+void lexV1AbrirCamada(char tipo, const char *tid)
+{
+  uint32_t t0=millis();
+  if(!tid || !tid[0]) return;
+  // disponibilidade PARA ESTE target: cache de outro target e stale -> recalcula sincronamente
+  if(!lexV1Disp.valido || strcmp(lexV1Disp.tid,tid)!=0) lexV1AtualizarDisponibilidade(true);
+  if(!lexV1Disp.valido || strcmp(lexV1Disp.tid,tid)!=0) return;                       // nao confirmada: nao abre
+  if((tipo=='E' && !lexV1Disp.entenda) || (tipo=='R' && !lexV1Disp.refs)) return;     // indisponivel: tecla ignorada
+  lexV1LiberarCamada();
+  if(!lexV1AlocarTexto()){ Serial.println("LEXV1: UI sem memoria para a camada"); return; }
+  if(tipo=='E'){
+    lexV1RefModo=0;
+    lexV1TituloCamada="ENTENDA";
+    lexV1MontarEntenda(tid);
+    lexV1Quebrar();
+  } else {
+    lexV1Itens=(LexV1RefItem*)lexV1Aloca(sizeof(LexV1RefItem)*LEXV1_REF_ITENS_MAX);
+    if(!lexV1Itens){ lexV1LiberarCamada(); return; }
+    strncpy(lexV1RefTid,tid,sizeof(lexV1RefTid)-1);
+    if(lexV1CarregarItensRef(tid)==0){ lexV1LiberarCamada(); return; }
+    lexV1Sel=0;
+    lexV1RefModo=1;
+    lexV1TituloCamada="REFERÊNCIAS";
+    lexV1MontarListaRef();
+  }
+  lexV1Topo=0;
+  telaAtual=TELA_LEXV1_CAMADA;
+  lexV1DesenharCamada();
+  Serial.printf("LEXV1: OPEN_LAYER_TARGET=%s LAYER_TARGET=%s\n",tid,tipo=='R'?lexV1RefTid:tid);
+  Serial.printf("LEXV1: UI camada %c %s linhas=%d ms=%lu heap=%u psram=%u MAX_OPEN_COUNT=%d OPEN_COUNT=%d\n",tipo,tid,lexV1NLinhas,
+                (unsigned long)(millis()-t0),(unsigned)ESP.getFreeHeap(),(unsigned)ESP.getFreePsram(),lexV1FdMax,lexV1FdOpen);
+}
+
+// BACK: detalhe -> lista -> texto (mesma linhaTopo: volta exatamente ao ponto da Lei Seca)
+void lexV1FecharCamada()
+{
+  if(lexV1RefModo==2 && lexV1Itens){ lexV1VoltarParaListaRef(); return; }
+  lexV1LiberarCamada();
+  telaAtual=TELA_LEITOR;
+  desenharTelaLeitor();
+}
+
+// ---------------- teclado numerico: estados do leitor ----------------
+LexV1EstadoLeitor lexV1EstadoLeitor()
+{
+  if(telaAtual==TELA_LEXV1_CAMADA || telaAtual==TELA_RELACOES || telaAtual==TELA_JURIS_CATEGORIAS ||
+     telaAtual==TELA_REFERENCIAS || (telaAtual==TELA_LEITOR && visualizandoReferencia)) return LEXV1_LAYER_VIEW_MODE;
+  if(telaAtual!=TELA_LEITOR) return LEXV1_OTHER_SCREEN;
+  return lexV1ModoBusca?LEXV1_ARTICLE_SEARCH_MODE:LEXV1_NORMAL_READING_MODE;
+}
+
+static uint32_t lexV1OffsetTopo()
+{
+  return (linhaTopo>=0 && linhaTopo<linhasIndexadas)?offsetsLinhas[linhaTopo]:0;
+}
+
+void lexV1DesenharBusca()
+{
+  // faixa de contexto: "BUSCAR ARTIGO   Art.: 37_" (desenharIndicadorContextoRodape); barra: comandos
+  tft.fillRect(0,221,320,19,COR_FUNDO);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(4,228);
+  tft.print(artigoDigitado.length()?"ENTER=BUSCAR  BACKSPACE=APAGAR":"DIGITE O ARTIGO  BACKSPACE=VOLTAR AO TEXTO");
+}
+
+void lexV1EntrarBusca()
+{
+  lexV1ModoBusca=true;
+  lexV1BuscaOffsetOrigem=lexV1OffsetTopo();
+  artigoDigitado="";
+  buscaAtiva=BUSCA_ARTIGO;
+  numeroBuscaEditado=true;
+  Serial.printf("LEXV1: ESTADO ARTICLE_SEARCH_MODE (origem offset=%lu linha=%d)\n",(unsigned long)lexV1BuscaOffsetOrigem,linhaTopo);
+  desenharBarraBusca();
+}
+
+void lexV1CancelarBusca()
+{
+  lexV1ModoBusca=false;
+  artigoDigitado="";
+  buscaAtiva=BUSCA_NENHUMA;
+  uint32_t atual=lexV1OffsetTopo();
+  Serial.printf("LEXV1: ESTADO NORMAL_READING_MODE (busca cancelada; origem=%lu atual=%lu %s)\n",(unsigned long)lexV1BuscaOffsetOrigem,
+                (unsigned long)atual,atual==lexV1BuscaOffsetOrigem?"MESMO PONTO":"RESTAURANDO");
+  if(atual!=lexV1BuscaOffsetOrigem){ reiniciarIndice(lexV1BuscaOffsetOrigem); desenharViewportLeitor(); }
+  else desenharBarraBusca();
+}
+
+void lexV1ExecutarBuscaArtigo()
+{
+  if(artigoDigitado.length()==0){ desenharBarraBusca(); return; }
+  String n=artigoDigitado;
+  limparDestaqueTexto();
+  reiniciarEstadoBusca();
+  numeroUltimaBusca=n;
+  tft.fillRect(0,221,320,19,COR_FUNDO);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(4,228); tft.print("Buscando Art. "); tft.print(n); tft.print("...");
+  if(pesquisarArtigo(n,0)){
+    lexV1ModoBusca=false;                        // encontrado: fecha a busca, limpa o buffer, volta ao NORMAL_READING_MODE
+    artigoDigitado="";
+    buscaAtiva=BUSCA_NENHUMA;
+    Serial.printf("LEXV1: BUSCA Art. %s -> offset=%lu; ESTADO NORMAL_READING_MODE\n",n.c_str(),(unsigned long)lexV1OffsetTopo());
+    desenharViewportLeitor();                    // contexto, TEXT_MAP e rodape atualizados pelo fluxo normal do leitor
+  }else{
+    // nao encontrado: continua no ARTICLE_SEARCH_MODE com o numero para editar (BACKSPACE apaga / volta)
+    tft.fillRect(0,221,320,19,COR_FUNDO);
+    tft.setCursor(4,228); tft.print("ART. "); tft.print(n); tft.print(" NAO ENCONTRADO");
+    Serial.printf("LEXV1: BUSCA Art. %s -> NAO ENCONTRADO (continua na busca)\n",n.c_str());
+    delay(700);
+    desenharBarraBusca();
+  }
+}
+
+// Resolve SINCRONAMENTE o target do keypress: viewport atual -> linha do CONTEXTO -> TEXT_MAP -> target_id.
+// false = inconsistencia (rodape mostra outro target): a tecla e ignorada e o rodape redesenhado; nunca abre camada errada.
+static bool lexV1ResolverAlvoKeypress(char tecla, char *alvo, size_t cap)
+{
+  alvo[0]='\0';
+  if(!cacheLeitorValido || cacheLeitorTopo!=linhaTopo) return false;           // viewport ainda nao desenhado
+  int indice=escolherContextoPredominante(contextoLinhasCache,LEITOR_LINHAS_VISIVEIS,contextoJuridicoAtivo);
+  lexV1SincronizarAlvo(indice);
+  lexV1SincronizarRelacoes();
+  if(!lexV1Alvo.valido) return false;
+  strncpy(alvo,lexV1Alvo.tid,cap-1); alvo[cap-1]='\0';
+  Serial.printf("LEXV1: ACTIVE_TARGET=%s CACHE_TARGET=%s CONTEXTO_TARGET=%s KEY=%c\n",alvo[0]?alvo:"-",
+                lexV1Disp.valido?lexV1Disp.tid:"-",lexV1TidRodape[0]?lexV1TidRodape:"-",tecla);
+  if(lexV1Disp.valido && strcmp(lexV1Disp.tid,alvo)!=0)
+    Serial.printf("LEXV1: STALE_CACHE_DETECTED cache=%s active=%s (cache rejeitado)\n",lexV1Disp.tid,alvo);
+  if(strcmp(lexV1TidRodape,alvo)!=0){
+    Serial.printf("LEXV1: STALE_CONTEXT_DETECTED contexto=%s active=%s (tecla ignorada)\n",lexV1TidRodape,alvo);
+    desenharBarraBusca();
+    return false;
+  }
+  return alvo[0]!='\0';
+}
+
+// 1/2 no runtime V1: LAYER_TARGET = alvo (ACTIVE_TARGET do keypress); a lista e o item aberto usam esse target ate BACK.
+// Sem registro da camada NESTE target: tecla ignorada (sem fallback para o artigo-pai).
+static void lexV1AbrirRelacaoTarget(bool corr, const char *tid)
+{
+  if(!tid || !tid[0]) return;
+  if(!lexV1Disp.valido || strcmp(lexV1Disp.tid,tid)!=0) lexV1AtualizarDisponibilidade(true);
+  if(!lexV1Disp.valido || strcmp(lexV1Disp.tid,tid)!=0) return;                     // nao confirmada: nao abre
+  if(corr?!lexV1Disp.correlatas:!lexV1Disp.juris) return;                           // indisponivel: tecla ignorada
+  if(!lexV1CarregarRelacoesTarget(tid)) return;                                      // falha de I/O: fail closed
+  int n=corr?totalCorrelatasArtigo:totalRelacoesArtigo;
+  Serial.printf("LEXV1: OPEN_LAYER_TARGET=%s LAYER_TARGET=%s camada=%s itens=%d\n",tid,lexV1RelTid,corr?"CORRELATA":"JURISPRUDENCIA",n);
+  if(n<=0){ Serial.printf("LEXV1: LAYER_ROUTING_ERROR flag sem registro exato target=%s camada=%c\n",tid,corr?'1':'2'); return; }
+  abrirCategoriaRelacao(corr?REL_CORRELATAS:REL_JURIS_TODAS);
+}
+
+// Tecla de camada sem conteudo real para o dispositivo atual: IGNORADA (a opcao nem aparece no rodape).
+// Todas as camadas usam o MESMO target: o ACTIVE_TARGET resolvido neste keypress (== CONTEXTO desenhado).
+void lexV1AbrirCamadaNumero(char tecla)
+{
+  bool v1cf=lexV1CamadaV1Aplicavel();
+  Serial.printf("LEXV1: TECLA %c no NORMAL_READING_MODE\n",tecla);
+  char alvo[LEXV1_KEY_MAX]={0};
+  if(v1cf && !lexV1ResolverAlvoKeypress(tecla,alvo,sizeof(alvo))) return;
+  switch(tecla){
+    case '1':
+      if(v1cf) lexV1AbrirRelacaoTarget(true,alvo);        // so correlatas do target EXATO
+      else if(totalCorrelatasArtigo>0) abrirCategoriaRelacao(REL_CORRELATAS);
+      break;
+    case '2':
+      if(v1cf) lexV1AbrirRelacaoTarget(false,alvo);      // so jurisprudencia do target EXATO
+      else if(totalCategoriasJuris>0){
+        if(arquivoAtualPertenceACF() && totalCategoriasJuris==1 && categoriasJurisDisponiveis[0]==REL_JURIS_TODAS)
+          abrirCategoriaRelacao(REL_JURIS_TODAS);
+        else abrirTelaCategoriasJuris();
+      }
+      break;
+    case '3':
+      if(v1cf) lexV1AbrirCamada('E',alvo);      // abre so se a disponibilidade DESTE target disser DIRECT/COVERED_BY_BLOCK
+      break;
+    case '4':
+      if(v1cf) lexV1AbrirCamada('R',alvo);      // abre so se houver referencia VISIVEL para ESTE target
+      break;
+  }
 }
 #endif
 
@@ -5482,8 +6688,41 @@ void loop()
   int dl=deltaLeitor;
   if(dl!=0){
     deltaLeitor=0;
+#if LEX_DEVICE_V1_ENABLED
+    if(lexV1ModoBusca) dl=0;                       // durante a busca o texto nao se move (cancelar volta ao mesmo ponto)
+    lexV1MarcarRolagem();
+#endif
     if(telaAtual==TELA_LEITOR) rolarLeitor(dl);
   }
+
+#if LEX_DEVICE_V1_ENABLED
+  if(pedirEntrarBuscaV1){
+    pedirEntrarBuscaV1=false;
+    if(lexV1EstadoLeitor()==LEXV1_NORMAL_READING_MODE && !displayApagado) lexV1EntrarBusca();
+  }
+  if(pedirCancelarBuscaV1){
+    pedirCancelarBuscaV1=false;
+    if(lexV1EstadoLeitor()==LEXV1_ARTICLE_SEARCH_MODE) lexV1CancelarBusca();
+  }
+  if(pedirCamadaV1){
+    char tecla=pedirCamadaV1;
+    pedirCamadaV1=0;
+    if(lexV1EstadoLeitor()==LEXV1_NORMAL_READING_MODE && !displayApagado) lexV1AbrirCamadaNumero(tecla);
+  }
+  int dcv=deltaCamadaV1;
+  if(dcv!=0){
+    deltaCamadaV1=0;
+    if(telaAtual==TELA_LEXV1_CAMADA) lexV1RolarCamada(dcv);
+  }
+  if(pedirAbrirItemV1){
+    pedirAbrirItemV1=false;
+    if(telaAtual==TELA_LEXV1_CAMADA) lexV1AbrirItemRef();
+  }
+  // Rodape dinamico: recalcula a disponibilidade so quando o target muda e a roda parou (250 ms); redesenha so se mudou.
+  if(telaAtual==TELA_LEITOR && !visualizandoReferencia && !lexV1ModoBusca && !displayApagado && lexV1Pronto){
+    if(lexV1AtualizarDisponibilidade(false)) desenharBarraBusca();
+  }
+#endif
 
   int dr=deltaRelacoes;
   if(dr!=0){
@@ -5535,6 +6774,10 @@ void loop()
 
   if(pedirBuscar){
     pedirBuscar=false;
+#if LEX_DEVICE_V1_ENABLED
+    if(telaAtual==TELA_LEITOR && lexV1ModoBusca) lexV1ExecutarBuscaArtigo();
+    else
+#endif
     if(telaAtual==TELA_LEITOR) executarBusca();
   }
 

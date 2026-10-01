@@ -158,8 +158,11 @@ static inline LexV1Status lexv1OpenIndex(LexV1Index &ix, LexV1Reader *r, const c
 }
 
 // Busca binaria no arquivo: linha exata (floor=false) ou ultima linha com chave <= key (floor=true).
-static inline LexV1Status lexv1Find(LexV1Index &ix, const char *key, char *out, int cap, bool floor, uint16_t *seeks = nullptr)
+// `next` (opcional): recebe a 1a linha com chave > key quando ela e lida na varredura ("" se EOF ou nao determinada).
+static inline LexV1Status lexv1Find(LexV1Index &ix, const char *key, char *out, int cap, bool floor, uint16_t *seeks = nullptr,
+                                    char *next = nullptr, int nextCap = 0)
 {
+  if (next && nextCap > 0) next[0] = '\0';
   LexV1Reader &r = *ix.r;
   uint32_t lo = ix.dataStart, hi = ix.fileSize;
   char line[LEXV1_LINE_MAX];
@@ -186,8 +189,13 @@ static inline LexV1Status lexv1Find(LexV1Index &ix, const char *key, char *out, 
     if (n < 0) break;
     if (n == 0) continue;
     int c = lexv1KeyCmp(line, key);
-    if (c == 0) { strncpy(out, line, cap - 1); out[cap - 1] = '\0'; if (seeks) *seeks = s; return LEXV1_OK; }
-    if (c > 0) break;
+    if (c == 0) {
+      strncpy(out, line, cap - 1); out[cap - 1] = '\0';
+      if (seeks) *seeks = s;
+      if (next && nextCap > 0) { char nl[LEXV1_LINE_MAX]; if (lexv1ReadLine(r, nl, sizeof(nl)) > 0) { strncpy(next, nl, nextCap - 1); next[nextCap - 1] = '\0'; } }
+      return LEXV1_OK;
+    }
+    if (c > 0) { if (next && nextCap > 0) { strncpy(next, line, nextCap - 1); next[nextCap - 1] = '\0'; } break; }
     memcpy(prev, line, n + 1); havePrev = true;
     if (r.position() > hi + LEXV1_WINDOW) break;
   }
@@ -276,18 +284,23 @@ static inline bool lexv1TargetFromContext(const char *ns, const char *artigo, co
 // TEXT_OFFSET -> target_id. Fail closed se o mapa nao for de runtime ou se tamanho OU sha256 (hex minusculo, calculado uma vez
 // por boot sobre o arquivo exibido) nao corresponderem ao cabecalho do mapa.
 static inline LexV1Status lexv1TargetAtOffset(LexV1Index &textMap, uint32_t displayedFileBytes, const char *displayedSha256Hex,
-                                              uint32_t offset, char *tid, int cap)
+                                              uint32_t offset, char *tid, int cap, uint32_t *ini = nullptr, uint32_t *fim = nullptr)
 {
   tid[0] = '\0';
+  if (ini) *ini = 0;
+  if (fim) *fim = 0;
   if (strcmp(textMap.runtimeStatus, "RUNTIME") != 0) return LEXV1_FAIL_TEXT_MAP_NOT_RUNTIME;
   if (textMap.sourceBytes == 0 || displayedFileBytes != textMap.sourceBytes) return LEXV1_FAIL_SOURCE_MISMATCH;
   if (!displayedSha256Hex || strlen(textMap.sourceSha256) != 64 || strcmp(displayedSha256Hex, textMap.sourceSha256) != 0)
     return LEXV1_FAIL_SOURCE_MISMATCH;
-  char key[16], line[LEXV1_LINE_MAX];
+  char key[16], line[LEXV1_LINE_MAX], prox[LEXV1_LINE_MAX];
   snprintf(key, sizeof(key), "%010lu", (unsigned long)offset);
-  LexV1Status st = lexv1Find(textMap, key, line, sizeof(line), true);
+  LexV1Status st = lexv1Find(textMap, key, line, sizeof(line), true, nullptr, prox, sizeof(prox));
   if (st != LEXV1_OK) return st;
   if (!lexv1Field(line, 2, tid, cap) || !tid[0]) return LEXV1_FAIL_BAD_ROW;
+  // intervalo [ini, fim) de offsets em que este mesmo registro do TEXT_MAP vale (fim = ini+1 se a proxima linha e desconhecida)
+  if (ini) *ini = (uint32_t)strtoul(line, nullptr, 10);
+  if (fim) *fim = prox[0] ? (uint32_t)strtoul(prox, nullptr, 10) : (ini ? *ini + 1 : 0);
   return LEXV1_OK;
 }
 
