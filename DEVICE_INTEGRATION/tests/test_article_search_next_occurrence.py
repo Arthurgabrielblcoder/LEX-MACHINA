@@ -21,7 +21,7 @@ import reader_viewport as V  # noqa: E402
 from test_article_search_landing import func, strip_v1  # noqa: E402
 
 INO = (ROOT / 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino').read_text(encoding='utf-8')
-OLD = subprocess.run(['git', 'show', 'HEAD:firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino'], cwd=ROOT,
+OLD = subprocess.run(['git', 'show', 'lex-device-v1-physical-approved-2026-10-01:firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino'], cwd=ROOT,
                      capture_output=True, text=True, encoding='utf-8').stdout
 SD1 = DI / 'staging_sd_v1/SD/99_LEX_V1'
 SD3 = DI / 'staging_sd_v1_run3_candidate/SD/99_LEX_V1'

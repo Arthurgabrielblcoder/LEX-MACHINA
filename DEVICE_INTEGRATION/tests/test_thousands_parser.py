@@ -54,7 +54,7 @@ def parse(line, fixed=True):
 
 
 def head(path):
-    return subprocess.run(['git', 'show', f'HEAD:{path}'], cwd=ROOT, capture_output=True, text=True, encoding='utf-8').stdout
+    return subprocess.run(['git', 'show', f'lex-device-v1-physical-approved-2026-10-01:{path}'], cwd=ROOT, capture_output=True, text=True, encoding='utf-8').stdout
 
 
 def func(src, name):
