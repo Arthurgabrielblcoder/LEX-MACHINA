@@ -162,7 +162,7 @@ class FirmwareEncodesStateMachineTest(unittest.TestCase):
 
     def test_layers_and_loop(self):
         self.assertIn('if(telaAtual==TELA_LEXV1_CAMADA){\n      if(event.usage==0x2A){pedirVoltar=true; return;}', INO)
-        for s in ('if(lexV1EstadoLeitor()==LEXV1_NORMAL_READING_MODE && !displayApagado) lexV1EntrarBusca();',
+        for s in ('if(lexV1EstadoLeitor()==LEXV1_NORMAL_READING_MODE && !displayApagado) lexV1EntrarBusca();',   # ENTER always opens it
                   'if(lexV1EstadoLeitor()==LEXV1_NORMAL_READING_MODE && !displayApagado) lexV1AbrirCamadaNumero(tecla);',
                   'if(telaAtual==TELA_LEITOR && lexV1ModoBusca) lexV1ExecutarBuscaArtigo();',
                   'if(lexV1ModoBusca) dl=0;',                                           # text never moves during the search
@@ -174,7 +174,7 @@ class FirmwareEncodesStateMachineTest(unittest.TestCase):
             self.assertIn(s, INO, s)
         found = INO[INO.index('void lexV1ExecutarBuscaArtigo()\n{'):]
         found = found[:found.index('\n}\n')]
-        ok = found[found.index('if(pesquisarArtigo(n,0)){'):found.index('}else{')]
+        ok = found[found.index('if(lexV1PesquisarArtigoEstrutural(n,0)){'):found.index('}else{')]
         self.assertIn('lexV1ModoBusca=false;', ok)
         self.assertIn('artigoDigitado="";', ok)
 

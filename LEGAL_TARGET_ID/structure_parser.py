@@ -16,7 +16,11 @@ import target_id as T
 
 # A letter suffix ('103-A', '4º-A') must be glued to the number: '§ 4º - Será' is a dash, not suffix 'S'.
 SUFFIX = r'(?:-([A-Z])(?![A-Za-zÀ-ÿ]))?'
-ART_RE = re.compile(r'^Art\.?\s*(\d{1,4})(?:º|°|o)?' + SUFFIX + r'(?:\s*\.\s*|\s+|$)(.*)$', re.I)
+# THOUSANDS_PARSER_FIX: 'Art. 2.000.' is article 2000 (Codigo Civil, CPC, CLT...). A '.' belongs to the number only when a
+# 1-3 digit block is followed by '.' + EXACTLY 3 digits; 'Art. 2. Texto' is still article 2. Dots are removed before
+# normalize_number_label (whose grammar still fails closed above 4 digits).
+ART_NUM = r'(\d{1,3}(?:\.\d{3})+(?!\d)|\d{1,4})'
+ART_RE = re.compile(r'^Art\.?\s*' + ART_NUM + r'(?:º|°|o)?' + SUFFIX + r'(?:\s*\.\s*|\s+|$)(.*)$', re.I)
 ART_ALONE_RE = re.compile(r'^Art\.?$', re.I)
 # Opt-in (article_case_sensitive=True): only 'Art' with capital A opens an article and a namespace title must match
 # exactly. Needed for sources whose hyperlinked cross-references become their own lines ('art. 2º da Lei nº 12.858...',
@@ -92,7 +96,7 @@ def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, a
             continue
         m = art_re.match(line)
         if m:
-            art = T.normalize_number_label(m.group(1) + ('-' + m.group(2) if m.group(2) else ''))
+            art = T.normalize_number_label(m.group(1).replace('.', '') + ('-' + m.group(2) if m.group(2) else ''))
             par = inc = None
             after_marker = False
             add(ns, None, None, i, structural_only=True) if ns not in targets else None

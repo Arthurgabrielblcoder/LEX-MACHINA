@@ -5,6 +5,11 @@
 #include <ctype.h>
 
 // Parser independente de Arduino. Mantem somente identificadores; nunca altera o TXT.
+#if LEX_DEVICE_V1_ENABLED
+// THOUSANDS_PARSER_FIX ativo (o sketch exige esta macro no build DEVICE V1: compilar com -DLEX_DEVICE_V1_ENABLED=1).
+#define LEX_CONTEXTO_MILHAR 1
+#define LEX_NUMERO_DISPOSITIVO_MAX 999999999u
+#endif
 
 struct ContextoJuridicoAtivo {
   char arquivo[64];
@@ -83,6 +88,26 @@ static inline bool lerNumeroDispositivo(const char *&p, char *saida, size_t capa
 
   if(n==0) return false;
 
+#if LEX_DEVICE_V1_ENABLED
+  // THOUSANDS_PARSER_FIX: na numeracao juridica brasileira o '.' pode ser separador de MILHAR ("Art. 2.000." = 2000;
+  // Codigo Civil, CPC, CLT...). O ponto so pertence ao numero quando o bloco inicial tem 1-3 digitos e o ponto e seguido
+  // de EXATAMENTE 3 digitos (o 4o caractere nao e digito): "Art. 2." -> 2; "Art. 2.000." -> 2000; "1.000.000" -> 1000000.
+  // Nunca decimal. Valor inteiro acumulado com teto (LEX_NUMERO_DISPOSITIVO_MAX); excedeu -> false (contexto intacto).
+  // Malformados ("1.00", "1.0000", "1234.567") param no ponto, como antes. O sufixo ("-A") e o ordinal seguem abaixo.
+  if(n<=3){
+    uint32_t valor=0;
+    for(size_t i=0;i<n;i++) valor=valor*10u+(uint32_t)(saida[i]-'0');
+    while(p[0]=='.' && isdigit((unsigned char)p[1]) && isdigit((unsigned char)p[2]) &&
+          isdigit((unsigned char)p[3]) && !isdigit((unsigned char)p[4])){
+      uint32_t grupo=(uint32_t)(p[1]-'0')*100u+(uint32_t)(p[2]-'0')*10u+(uint32_t)(p[3]-'0');
+      if(valor>(LEX_NUMERO_DISPOSITIVO_MAX-grupo)/1000u) return false;
+      if(n+3>=capacidade) return false;
+      valor=valor*1000u+grupo;
+      saida[n++]=p[1]; saida[n++]=p[2]; saida[n++]=p[3];
+      p+=4;
+    }
+  }
+#endif
   if((*p=='-' || *p=='.') && isalpha((unsigned char)p[1])){
     if(n+2<capacidade){
       saida[n++]=*p;
@@ -242,13 +267,20 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
   (por exemplo, um inciso de uma unica linha) podiam ser pulados:
   INC. I -> INC. III, sem nunca ativar INC. II.
 */
+// Linha visual que representa o dispositivo juridico ativo (regra principal abaixo).
+// Definicao UNICA: o CONTEXTO, o ACTIVE_TARGET e o pouso da busca por artigo (DEVICE V1) usam esta mesma posicao.
+static inline int linhaContextoAtivo(int total)
+{
+  return total/2;
+}
+
 static inline int escolherContextoPredominante(const ContextoJuridicoAtivo *linhas,
                                                 int total,
                                                 const ContextoJuridicoAtivo &atual)
 {
   if(total<=0) return -1;
 
-  int centro=total/2;
+  int centro=linhaContextoAtivo(total);
 
   // 1) REGRA PRINCIPAL:
   // O contexto juridico exatamente no centro da tela tem prioridade.
@@ -397,6 +429,19 @@ static inline int validarRotinaContextoJuridico()
     ) ||
     strcmp(c.artigo,"13")!=0;
 
+#if LEX_DEVICE_V1_ENABLED
+  // THOUSANDS_PARSER_FIX: separador de milhar, sufixo e ordinal; malformados param no ponto; excesso falha sem alterar.
+  {
+    static const char *const entradas[]={"Art. 2. Texto","Art. 999. Texto","Art. 1.000. Texto","Art. 2.000. Texto",
+                                         "Art. 2.046. Texto","Art. 1.000-A. Texto","Art. 5\xC2\xBA Texto","Art. 29-A. Texto",
+                                         "Art. 1.00. Texto","Art. 1.0000 Texto","Art. 1234.567 Texto","Art. 1.000.000 Texto"};
+    static const char *const esperados[]={"2","999","1000","2000","2046","1000-A","5","29-A","1","1","1234","1000000"};
+    for(int i=0;i<12;i++){
+      falhas += !aplicarLinhaContextoJuridico(c,entradas[i],true,90+i) || strcmp(c.artigo,esperados[i])!=0;
+    }
+    falhas += aplicarLinhaContextoJuridico(c,"Art. 999.999.999.999 Texto",true,110) || strcmp(c.artigo,"1000000")!=0;
+  }
+#endif
   /*
     TESTE DA CORRECAO DE DISPOSITIVO CURTO
 

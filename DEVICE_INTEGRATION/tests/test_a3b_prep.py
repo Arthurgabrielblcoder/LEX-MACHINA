@@ -31,21 +31,25 @@ def fw_schema():
 
 def device_v1_ino_sections():
     """Every region of the sketch compiled only with LEX_DEVICE_V1_ENABLED (the DEVICE V1 code paths)."""
-    out, lines, depth, inside = [], INO.split('\n'), 0, False
+    out, lines, depth, inside, flag0_branch = [], INO.split('\n'), 0, False, False
     for l in lines:
         s = l.strip()
         if s.startswith('#if LEX_DEVICE_V1_ENABLED'):
-            inside, depth = True, 1
+            inside, depth, flag0_branch = True, 1, False
             continue
         if inside:
             if s.startswith('#if'):
                 depth += 1
+            elif s.startswith('#else') and depth == 1:
+                flag0_branch = True                       # '#else' of a V1 block = the flag0 code, not a DEVICE V1 path
+                continue
             elif s.startswith('#endif'):
                 depth -= 1
                 if depth == 0:
                     inside = False
                     continue
-            out.append(l)
+            if not flag0_branch:
+                out.append(l)
     return '\n'.join(out)
 
 

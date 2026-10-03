@@ -21,6 +21,24 @@
 #include <functional>
 void lexV1DiagnosticoBoot();
 bool lexV1Sha256Arquivo(const char *tipo, const char *caminho, const char *etapa, uint32_t &bytes, char hex[65]);
+bool lexV1ContextoEstruturalAntes(uint32_t limite, uint32_t checkpoint, uint32_t &inicio, ContextoJuridicoAtivo &saida);
+void lexV1ArtIdxAoAbrirTexto();
+// [ARTSEARCH]/[ARTIDX]: tempos da busca por artigo no serial (benchmark fisico). 0 = silencioso.
+#define LEXV1_CTX_SEMENTE_MIN 2048u    // bytes: abaixo disso reler e mais barato que consultar o TEXT_MAP no SD
+#define LEXV1_ARTSEARCH_LOG 0        // producao: 0. 1 = benchmark ([ARTSEARCH], [ARTIDX] LOADED/UNLOAD/TEXT_SHA/SEM_INDICE, FALLBACK_LINEAR)
+// BIDIRECTIONAL_SCROLL_PERFORMANCE_FIX: leitura bufferizada do TXT + cache bidirecional de linhas VISUAIS (offsetsLinhas) +
+// contexto juridico reconstruido a partir da ancora "Art." mais proxima (custo limitado; nunca O(offset no arquivo)).
+#include "lex_leitor_scroll.h"
+// THOUSANDS_PARSER_FIX: falha de compilacao se contexto_juridico.h foi incluido sem a flag (use -DLEX_DEVICE_V1_ENABLED=1).
+static_assert(LEX_CONTEXTO_MILHAR==1,"DEVICE V1: contexto_juridico.h sem THOUSANDS_PARSER_FIX");
+#define LEX_CACHE_ANTERIOR_ALVO 48     // linhas visuais por reabastecimento ANTERIOR (escolhido por benchmark: scroll_performance_benchmark.py)
+#define LEX_CACHE_ANTERIOR_MIN 12      // reabastece antes de restar menos de uma tela acima do topo
+#define LEX_CACHE_SEGUINTE_ALVO 48     // linhas visuais preparadas ABAIXO da viewport em um unico bloco
+#define LEX_CACHE_SEGUINTE_MIN 12      // reabastece antes de restar menos de uma tela abaixo da viewport
+#define LEX_REFILL_ORCAMENTO 8192u     // bytes de texto por reabastecimento ANTERIOR (apos o 1o paragrafo, que e sempre completo)
+#define LEX_PARAGRAFO_MAX 65536u       // fail-safe: inicio de linha fisica nao encontrado em 64 KiB -> quebra a partir de um espaco
+#define LEX_CTX_ANCORA_MAX 32768u      // fail-safe: ancora "Art." procurada no maximo 32 KiB antes do topo
+#define LEX_SCROLL_PERF_LOG 0          // producao: 0. 1 = benchmark ([SCROLL] por passo/PREPARO, PERF CONTEXTO_UP estendido)
 // PHYSICAL TEST UI (fast track): camadas ENTENDA (tecla E) e REFERENCIAS (tecla R) sobre o dispositivo no topo do leitor.
 #define LEXV1_CAMADA_Y0 26
 #define LEXV1_CAMADA_LH 12
@@ -36,10 +54,14 @@ enum LexV1EstadoLeitor { LEXV1_NORMAL_READING_MODE, LEXV1_ARTICLE_SEARCH_MODE, L
 bool lexV1ModoBusca=false;         // ARTICLE_SEARCH_MODE (so entra por ENTER no NORMAL_READING_MODE)
 volatile bool pedirEntrarBuscaV1=false, pedirCancelarBuscaV1=false;
 uint32_t lexV1BuscaOffsetOrigem=0;
+// REPEAT_READY: ARTICLE_SEARCH aberto com a consulta anterior pre-carregada e ainda intocada. ENTER = proxima ocorrencia;
+// o 1o digito substitui a consulta e o 1o BACKSPACE passa a editar (ambos desligam o REPEAT_READY -> nova consulta).
+volatile bool lexV1RepetirPronto=false;
 LexV1EstadoLeitor lexV1EstadoLeitor();
 void lexV1EntrarBusca();
 void lexV1CancelarBusca();
 void lexV1ExecutarBuscaArtigo();
+void lexV1ProximaOcorrenciaArtigo();
 void lexV1AbrirCamadaNumero(char tecla);
 void lexV1DesenharBusca();
 // ACTIVE_TARGET: o dispositivo da MESMA linha que gera o CONTEXTO do rodape (offset -> CF88_TEXT_MAP.IDX -> target_id).
@@ -2618,7 +2640,12 @@ void moverSelecaoPasta(int delta)
 // =====================================================
 // Processa UMA linha visual e devolve o byte onde comeca a proxima.
 // Conta caracteres UTF-8 corretamente: ã, ç, é etc. contam como 1 coluna.
+#if LEX_DEVICE_V1_ENABLED
+// Mesmo corpo; o arquivo e lido em blocos (LexArquivoBuffer) em vez de File::read() byte a byte.
+bool avancarUmaLinhaVisual(LexArquivoBuffer &f, uint32_t inicio, uint32_t &proximo)
+#else
 bool avancarUmaLinhaVisual(File &f, uint32_t inicio, uint32_t &proximo)
+#endif
 {
   if(!f.seek(inicio)) return false;
   if(!f.available()) return false;
@@ -2706,11 +2733,117 @@ void reiniciarIndice(uint32_t inicio=0)
   limparContextoJuridico(contextoJuridicoAtivo,nomeArquivoAtual.c_str());
 }
 
+#if LEX_DEVICE_V1_ENABLED
+// ---------------- BIDIRECTIONAL_SCROLL: cache de linhas VISUAIS ao redor da viewport ----------------
+// O cache e a propria janela offsetsLinhas[] (offsets de INICIO de linha visual, 4 B cada): ANTERIOR = [0, linhaTopo),
+// VIEWPORT = [linhaTopo, linhaTopo+12), SEGUINTE = [linhaTopo+12, linhasIndexadas). Um passo de uma linha so usa offsets
+// ja conhecidos; os reabastecimentos sao por BLOCO e limitados (bytes/linhas), nunca desde o inicio do arquivo.
+// Offsets visuais (quebra por largura da TFT) NAO sao offsets de target: o TEXT_MAP continua resolvendo so o ACTIVE_TARGET.
+struct LexPassoScroll {
+  uint32_t antUs, antBytes; int antLinhas, antParagrafos;   // reabastecimento ANTERIOR
+  uint32_t segUs, segBytes; int segLinhas;                  // reabastecimento SEGUINTE
+  uint32_t ctxUs, ctxBytes; int ctxLinhas; const char *ctxOrigem;
+  uint32_t cacheUs, alvoUs, tftUs;                          // atualizarCacheLeitor / ACTIVE_TARGET+CONTEXTO+camadas / TFT
+  bool failsafe;
+};
+static LexPassoScroll lexPasso;
+static void lexPassoZerar(){ memset(&lexPasso,0,sizeof(lexPasso)); lexPasso.ctxOrigem="-"; }
+
+// Inicio da linha FISICA que contem o byte fim-1 (o LF em fim-1 e ignorado, como no corpo legado). Leitura para tras no
+// bloco do LexArquivoBuffer (linhas curtas vizinhas saem do MESMO bloco, sem I/O), limitada a LEX_PARAGRAFO_MAX.
+// Fail-safe (paragrafo sem LF em 64 KiB): reinicia a quebra logo apos um espaco dentro da janela (nunca no meio de um
+// caractere UTF-8) e sinaliza `failsafe` (log); nenhum texto real chega perto disso.
+static bool lexInicioLinhaFisicaAntes(LexArquivoBuffer &f, uint32_t fim, uint32_t &inicio, bool &failsafe)
+{
+  const uint32_t piso=fim>LEX_PARAGRAFO_MAX?fim-LEX_PARAGRAFO_MAX:0;
+  uint32_t cursor=fim;                                    // bytes [cursor, fim) ja examinados
+  while(cursor>piso){
+    if(!f.contem(cursor-1) && !f.carregarAte(cursor)) return false;
+    const uint32_t base=max(f.baseBloco(),piso);
+    for(uint32_t pos=cursor;pos>base;){
+      pos--;
+      if(f.byteEm(pos)=='\n' && pos<fim-1){ inicio=pos+1; return true; }
+    }
+    cursor=base;
+    yield();
+  }
+  if(piso==0){ inicio=0; return true; }
+  failsafe=true;
+  if(!f.seek(piso)) return false;
+  while(f.available() && f.position()<fim){
+    if(f.read()==' '){ inicio=f.position(); return inicio<fim; }
+  }
+  return false;
+}
+
+// Reabastecimento ANTERIOR por bloco: percorre linhas fisicas para tras a partir de offsetsLinhas[0], quebra cada uma com
+// avancarUmaLinhaVisual (MESMA quebra da descida) e entrega ate LEX_CACHE_ANTERIOR_ALVO linhas visuais de uma vez.
+// Limites: o 1o paragrafo e sempre completo (exatidao do wrap); os seguintes so enquanto <= LEX_REFILL_ORCAMENTO bytes.
+static int lexIndexarAntesDaJanelaV1()
+{
+  if(linhasIndexadas<=0 || offsetsLinhas[0]==0) return 0;
+  const uint32_t t0=micros(), b0=lexScrollPerf.bytes;
+  LexArquivoBuffer f(caminhoArquivoAtual.c_str());
+  if(!f) return 0;
+  const uint32_t limiteJanela=offsetsLinhas[0];
+  const int CAP=LEX_CACHE_ANTERIOR_ALVO;
+  uint32_t novas[CAP];          // ordem crescente em novas[CAP-quantidade .. CAP-1]
+  uint32_t anel[CAP];
+  int quantidade=0, paragrafos=0;
+  uint32_t fim=limiteJanela;
+  bool failsafe=false;
+  while(quantidade<CAP && fim>0){
+    if(quantidade>0 && limiteJanela-fim>=LEX_REFILL_ORCAMENTO) break;
+    uint32_t inicio=0;
+    if(!lexInicioLinhaFisicaAntes(f,fim,inicio,failsafe)) break;
+    // Anel: guarda so as ultimas `vagas` linhas do paragrafo (as mais proximas de `fim`), como no corpo legado.
+    const int vagas=CAP-quantidade;
+    int n=0, prox=0;
+    bool erro=false;
+    uint32_t pos=inicio;
+    while(pos<fim){
+      anel[prox]=pos; prox=(prox+1)%vagas; if(n<vagas) n++;
+      uint32_t seguinte=pos;
+      avancarUmaLinhaVisual(f,pos,seguinte);
+      if(seguinte<=pos){ erro=true; break; }
+      pos=seguinte;
+    }
+    if(erro) break;
+    const int primeiro=(n==vagas)?prox:0;
+    for(int i=0;i<n;i++) novas[CAP-quantidade-n+i]=anel[(primeiro+i)%vagas];
+    quantidade+=n; paragrafos++;
+    fim=inicio;
+    yield();
+  }
+  f.close();
+  lexPasso.antUs+=micros()-t0; lexPasso.antBytes+=lexScrollPerf.bytes-b0;
+  lexPasso.antLinhas+=quantidade; lexPasso.antParagrafos+=paragrafos;
+  if(failsafe){ lexPasso.failsafe=true; Serial.printf("[SCROLL] REFILL_FAILSAFE limite=%lu (paragrafo > %u B sem LF)\n",
+                                                       (unsigned long)limiteJanela,(unsigned)LEX_PARAGRAFO_MAX); }
+  if(quantidade==0) return 0;
+
+  int manter=min(linhasIndexadas,MAX_LINHAS_INDEXADAS-quantidade);
+  if(manter<linhasIndexadas) fimDoArquivoIndexado=false;
+  memmove(offsetsLinhas+quantidade,offsetsLinhas,manter*sizeof(offsetsLinhas[0]));
+  memcpy(offsetsLinhas,novas+CAP-quantidade,quantidade*sizeof(offsetsLinhas[0]));
+  linhasIndexadas=manter+quantidade;
+  linhaTopo+=quantidade;                       // mesmo byte visivel, agora em outro indice da janela
+  // As linhas da viewport em RAM continuam validas: so os indices deslocam (antes o cache inteiro era descartado e o passo
+  // seguinte relia 12 linhas + o contexto). Se a cauda da janela foi cortada sobre a viewport, recarrega por seguranca.
+  if(cacheLeitorValido && cacheLeitorTopo>=0 && cacheLeitorTopo+quantidade+LEITOR_LINHAS_VISIVEIS<=linhasIndexadas)
+    cacheLeitorTopo+=quantidade;
+  else { cacheLeitorValido=false; cacheLeitorTopo=-1; }
+  return quantidade;
+}
+#endif
 // Reconstroi ate uma tela de linhas ANTES da janela atual, sem ler o TXT inteiro.
 // A busca reversa encontra o inicio da linha fisica; a quebra visual usa a
 // mesma rotina de pixels/UTF-8 do leitor, inclusive para paragrafos longos.
 int indexarAntesDaJanela()
 {
+#if LEX_DEVICE_V1_ENABLED
+  return lexIndexarAntesDaJanelaV1();
+#else
   if(linhasIndexadas<=0 || offsetsLinhas[0]==0) return 0;
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
   if(!f) return 0;
@@ -2775,6 +2908,7 @@ int indexarAntesDaJanela()
   cacheLeitorValido=false;
   cacheLeitorTopo=-1;
   return quantidade;
+#endif
 }
 
 // Garante que exista indice ate "linhaAlvo". So le o trecho necessario.
@@ -2784,7 +2918,13 @@ void indexarAte(int linhaAlvo)
   if(linhaAlvo < linhasIndexadas) return;
   if(linhasIndexadas >= MAX_LINHAS_INDEXADAS) return;
 
+#if LEX_DEVICE_V1_ENABLED
+  const uint32_t t0=micros(), b0=lexScrollPerf.bytes;
+  const int antes=linhasIndexadas;
+  LexArquivoBuffer f(caminhoArquivoAtual.c_str());   // reabastecimento SEGUINTE: um bloco de linhas por abertura
+#else
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
+#endif
   if(!f) return;
 
   while(linhasIndexadas<=linhaAlvo && !fimDoArquivoIndexado && linhasIndexadas<MAX_LINHAS_INDEXADAS){
@@ -2802,9 +2942,16 @@ void indexarAte(int linhaAlvo)
   }
 
   f.close();
+#if LEX_DEVICE_V1_ENABLED
+  lexPasso.segUs+=micros()-t0; lexPasso.segBytes+=lexScrollPerf.bytes-b0; lexPasso.segLinhas+=linhasIndexadas-antes;
+#endif
 }
 
+#if LEX_DEVICE_V1_ENABLED
+void lerLinhaVisualParaBuffer(LexArquivoBuffer &f, int indice, char *saida, int capacidade, int slotCache)
+#else
 void lerLinhaVisualParaBuffer(File &f, int indice, char *saida, int capacidade, int slotCache)
+#endif
 {
   destaqueInicioCache[slotCache]=0;
   destaqueFimCache[slotCache]=0;
@@ -2953,16 +3100,117 @@ void aplicarLinhaContextoCompatCF(ContextoJuridicoAtivo &contexto,
   aplicarLinhaContextoJuridico(contexto,linha,inicioFisico,offset);
 }
 
+#if LEX_DEVICE_V1_ENABLED
+// ANCORA de contexto (BIDIRECTIONAL_SCROLL): uma linha fisica que o PROPRIO parser (aplicarLinhaContextoCompatCF) reconhece
+// como artigo zera paragrafo/inciso/alinea e fixa o artigo; o estado depois dela nao depende de nada anterior. Logo, reler
+// a partir da ancora mais proxima da o MESMO contexto que reler desde o inicio do arquivo, com custo limitado ao artigo.
+// Nenhuma regra juridica nova: o filtro de 1 byte ('A'/'a' no inicio) so evita validar linhas que o parser recusaria.
+static bool lexLinhaEhAncoraArtigo(LexArquivoBuffer &f, uint32_t p, uint32_t limite)
+{
+  // 128 B bastam: o parser so decide pelo prefixo ("Art"/"Artigo" + numero). Pilha pequena: roda dentro da reconstrucao.
+  char linha[128], proxima[128];
+  int n=0, np=0;
+  if(!f.seek(p)) return false;
+  while(f.available()){
+    int b=f.read();
+    if(b=='\n') break;
+    if(b!='\r' && n<(int)sizeof(linha)-1) linha[n++]=(char)b;
+  }
+  linha[n]='\0';
+  bool comProxima=false;
+  if(arquivoAtualEhConstituicao() && linhaEhMarcadorArtigoIsolado(linha)){   // mesmo look-ahead do laco de reconstrucao
+    while(f.available() && f.position()<limite){
+      int b=f.read();
+      if(b=='\n') break;
+      if(b!='\r' && np<(int)sizeof(proxima)-1) proxima[np++]=(char)b;
+    }
+    proxima[np]='\0';
+    comProxima=linhaComecaNumeroArtigo(proxima);
+  }
+  ContextoJuridicoAtivo t;
+  limparContextoJuridico(t,nomeArquivoAtual.c_str());
+  aplicarLinhaContextoCompatCF(t,linha,true,p,comProxima?proxima:nullptr);
+  return t.artigo[0] && t.offsetArtigo==p;
+}
+
+// Procura para tras, de `limite` ate `piso` (checkpoint conhecido ou 0), a ancora mais proxima, lendo em blocos.
+// 1 = ancora em `ancora`; 0 = chegou ao piso sem ancora (o piso ja e exato: checkpoint ou inicio do arquivo);
+// -1 = LEX_CTX_ANCORA_MAX bytes sem ancora nem piso (fail-safe do chamador) ou falha de leitura.
+static int lexAncoraArtigoAntes(LexArquivoBuffer &f, uint32_t limite, uint32_t piso, uint32_t &ancora)
+{
+  uint32_t cursor=limite;                                 // bytes [cursor, limite) ja examinados
+  while(cursor>piso){
+    if(limite-cursor>=LEX_CTX_ANCORA_MAX) return -1;
+    if(!f.contem(cursor-1) && !f.carregarAte(cursor)) return -1;
+    const uint32_t base=max(f.baseBloco(),piso);
+    uint32_t pos=cursor;
+    while(pos>base){
+      pos--;
+      // Inicio de linha fisica p=pos+1 (< limite) logo apos um LF; o filtro olha so o 1o caractere apos a indentacao.
+      if(f.byteEm(pos)!='\n') continue;
+      const uint32_t p=pos+1;
+      if(p>=limite) continue;
+      uint32_t j=p;
+      while(f.contem(j) && (f.byteEm(j)==' ' || f.byteEm(j)=='\t' || f.byteEm(j)==0xC2 || f.byteEm(j)==0xA0)) j++;
+      if(f.contem(j) && f.byteEm(j)!='A' && f.byteEm(j)!='a') continue;
+      if(lexLinhaEhAncoraArtigo(f,p,limite)){ ancora=p; return 1; }
+      break;                                              // a validacao moveu o bloco: continua abaixo deste LF
+    }
+    cursor=(pos>base)?pos:base;
+    yield();
+  }
+  if(piso==0 && limite>0 && lexLinhaEhAncoraArtigo(f,0,limite)){ ancora=0; return 1; }
+  return 0;
+}
+#endif
 void reconstruirContextoAntesOffset(uint32_t limite, ContextoJuridicoAtivo &saida)
 {
   uint32_t t0=micros();
   limparContextoJuridico(saida,nomeArquivoAtual.c_str());
+#if LEX_DEVICE_V1_ENABLED
+  const uint32_t b0=lexScrollPerf.bytes, s0=lexScrollPerf.seeks;
+  const char *origem="-";
+  int linhasRelidas=0;
+  uint32_t inicio=0;
+  bool usouCheckpoint=obterCheckpointContexto(limite,inicio,saida);
+  if(usouCheckpoint && inicio>=limite){                 // checkpoint exato: nenhum byte e nenhuma abertura do TXT
+    lexPasso.ctxUs+=micros()-t0; lexPasso.ctxOrigem="checkpoint_exato";
+    if(LEX_SCROLL_PERF_LOG)
+      Serial.printf("PERF CONTEXTO_UP: %lu us (checkpoint=sim, bytes=0) origem=checkpoint_exato io=0 seeks=0 linhas=0\n",micros()-t0);
+    return;
+  }
+  LexArquivoBuffer f(caminhoArquivoAtual.c_str());
+  if(!f) return;
+  const uint32_t JANELA_RECONSTRUCAO=262144;
+  origem=usouCheckpoint?"checkpoint":"janela";
+  // DEVICE V1 runtime: parte do registro estrutural do TEXT_MAP mais proximo (contexto exato do target), em vez de reler
+  // byte a byte centenas de KB desde um checkpoint distante (era o custo dominante do pouso centralizado: ~17 us/B).
+  // So compensa quando o caminho original releria mais que LEXV1_CTX_SEMENTE_MIN bytes (a consulta ao TEXT_MAP custa ~50 ms).
+  // BIDIRECTIONAL_SCROLL: antes do TEXT_MAP, a ANCORA "Art." mais proxima (todo texto, nao so o runtime V1). Sem isso, o
+  // 1o SCROLL_UP acima de um pouso aleatorio relia desde o checkpoint da abertura: 647.150 B / 11,29 s medidos (art. 2000).
+  {
+    uint32_t base=usouCheckpoint?inicio:(limite>JANELA_RECONSTRUCAO?limite-JANELA_RECONSTRUCAO:0), inicioMapa=0, ancora=0;
+    if(limite-base>LEXV1_CTX_SEMENTE_MIN){
+      int r=lexAncoraArtigoAntes(f,limite,usouCheckpoint?inicio:0,ancora);
+      if(r==1){ limparContextoJuridico(saida,nomeArquivoAtual.c_str()); inicio=ancora; usouCheckpoint=true; origem="ancora"; }
+      else if(r==0){ if(!usouCheckpoint){ inicio=0; usouCheckpoint=true; origem="inicio"; } }
+      else if(limite-base>LEXV1_CTX_SEMENTE_MIN && lexV1ContextoEstruturalAntes(limite,base,inicioMapa,saida)){ inicio=inicioMapa; usouCheckpoint=true; origem="text_map"; }
+      else {
+        // Fail-safe (nenhum artigo em 32 KiB): janela limitada, contexto vazio no inicio dela. Nunca O(offset).
+        limparContextoJuridico(saida,nomeArquivoAtual.c_str());
+        usouCheckpoint=false; origem="janela_failsafe"; lexPasso.failsafe=true;
+      }
+    }
+  }
+  if(!usouCheckpoint) inicio=limite>LEX_CTX_ANCORA_MAX ? limite-LEX_CTX_ANCORA_MAX : 0;
+#else
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
   if(!f) return;
   const uint32_t JANELA_RECONSTRUCAO=262144;
   uint32_t inicio=0;
   bool usouCheckpoint=obterCheckpointContexto(limite,inicio,saida);
   if(!usouCheckpoint) inicio=limite>JANELA_RECONSTRUCAO ? limite-JANELA_RECONSTRUCAO : 0;
+#endif
   if(inicio>0 && !usouCheckpoint){
     f.seek(inicio);
     while(f.available() && f.position()<limite && f.read()!='\n') yield();
@@ -3005,11 +3253,21 @@ void reconstruirContextoAntesOffset(uint32_t limite, ContextoJuridicoAtivo &said
 
     aplicarLinhaContextoCompatCF(saida,linha,true,offset);
     guardarCheckpointContexto(f.position(),saida);
+#if LEX_DEVICE_V1_ENABLED
+    linhasRelidas++;
+#endif
     yield();
   }
   f.close();
+#if LEX_DEVICE_V1_ENABLED
+  lexPasso.ctxUs+=micros()-t0; lexPasso.ctxBytes+=lexScrollPerf.bytes-b0; lexPasso.ctxLinhas+=linhasRelidas; lexPasso.ctxOrigem=origem;
+  if(LEX_SCROLL_PERF_LOG) Serial.printf("PERF CONTEXTO_UP: %lu us (checkpoint=%s, bytes=%lu) origem=%s io=%lu seeks=%lu linhas=%d\n",
+    micros()-t0,usouCheckpoint?"sim":"nao",limite-inicio,origem,(unsigned long)(lexScrollPerf.bytes-b0),
+    (unsigned long)(lexScrollPerf.seeks-s0),linhasRelidas);
+#else
   Serial.printf("PERF CONTEXTO_UP: %lu us (checkpoint=%s, bytes=%lu)\n",
     micros()-t0,usouCheckpoint?"sim":"nao",limite-inicio);
+#endif
 }
 
 void recalcularContextosCache(const ContextoJuridicoAtivo &antes)
@@ -3278,6 +3536,31 @@ void montarLinhaRGB(const char *texto, int slotCache)
   }
 }
 
+#if LEX_DEVICE_V1_ENABLED
+// Pouso aleatorio (busca por artigo, proxima ocorrencia, busca textual, salto/abertura): no MESMO pouso, antes do 1o
+// desenho, prepara (1) o cache ANTERIOR de linhas visuais, (2) o cache SEGUINTE e (3) checkpoints de contexto na regiao
+// anterior. Assim o 1o SCROLL_UP encontra offsets e checkpoint proximos, exatamente como o 10o.
+static void lexPrepararCacheBidirecional()
+{
+  const uint32_t t0=micros(), b0=lexScrollPerf.bytes;
+  if(linhaTopo<LEX_CACHE_ANTERIOR_MIN && offsetsLinhas[0]>0) indexarAntesDaJanela();
+  indexarAte(linhaTopo+LEITOR_LINHAS_VISIVEIS+LEX_CACHE_SEGUINTE_ALVO);
+  const uint32_t tCtx=micros();
+  int iAquece=max(0,linhaTopo-LEX_CACHE_ANTERIOR_ALVO);
+  uint32_t offAquece=(iAquece<linhasIndexadas)?offsetsLinhas[iAquece]:0;
+  uint32_t offTopo=(linhaTopo>=0 && linhaTopo<linhasIndexadas)?offsetsLinhas[linhaTopo]:0;
+  if(offAquece>0 && offAquece<offTopo){
+    ContextoJuridicoAtivo descartado;
+    reconstruirContextoAntesOffset(offAquece,descartado);     // efeito util: checkpoints (anel) antes do topo
+  }
+  if(LEX_SCROLL_PERF_LOG)
+    Serial.printf("[SCROLL] PREPARO topo=%lu anterior=%d seguinte=%d ctx_aquecido=%lu ctx_us=%lu io=%luB total_us=%lu "
+                  "txt_abertos=%u txt_pico=%u\n",
+                  (unsigned long)offTopo,linhaTopo,linhasIndexadas-linhaTopo-LEITOR_LINHAS_VISIVEIS,(unsigned long)offAquece,
+                  (unsigned long)(micros()-tCtx),(unsigned long)(lexScrollPerf.bytes-b0),(unsigned long)(micros()-t0),
+                  (unsigned)lexScrollPerf.abertos,(unsigned)lexScrollPerf.maxAbertos);
+}
+#endif
 void carregarCacheLeitorCompleto()
 {
   memset(cacheLeitor,0,sizeof(cacheLeitor));
@@ -3286,9 +3569,16 @@ void carregarCacheLeitorCompleto()
   memset(offsetLinhaCache,0,sizeof(offsetLinhaCache));
   memset(destaqueInicioCache,0,sizeof(destaqueInicioCache));
   memset(destaqueFimCache,0,sizeof(destaqueFimCache));
+#if LEX_DEVICE_V1_ENABLED
+  lexPrepararCacheBidirecional();
+#endif
   indexarAte(linhaTopo+LEITOR_LINHAS_VISIVEIS+1);
 
+#if LEX_DEVICE_V1_ENABLED
+  LexArquivoBuffer f(caminhoArquivoAtual.c_str());
+#else
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
+#endif
   if(f){
     for(int i=0;i<LEITOR_LINHAS_VISIVEIS;i++){
       int idx=linhaTopo+i;
@@ -3323,6 +3613,17 @@ void atualizarCacheLeitor()
   indexarAte(linhaTopo+LEITOR_LINHAS_VISIVEIS+1);
   const size_t tamLinha=BYTES_CACHE_LINHA;
 
+#if LEX_DEVICE_V1_ENABLED
+  // Contexto antes de abrir o TXT (um handle a menos durante a releitura); SCROLL_UP usa checkpoint/ancora limitados.
+  ContextoJuridicoAtivo novoAntes;
+  if(delta>0) novoAntes=contextoLinhasCache[delta-1];
+  else reconstruirContextoAntesOffset(offsetsLinhas[linhaTopo],novoAntes);
+  LexArquivoBuffer f(caminhoArquivoAtual.c_str());
+  if(!f){
+    carregarCacheLeitorCompleto();
+    return;
+  }
+#else
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
   if(!f){
     carregarCacheLeitorCompleto();
@@ -3332,6 +3633,7 @@ void atualizarCacheLeitor()
   ContextoJuridicoAtivo novoAntes;
   if(delta>0) novoAntes=contextoLinhasCache[delta-1];
   else reconstruirContextoAntesOffset(offsetsLinhas[linhaTopo],novoAntes);
+#endif
 
   if(delta>0){
     int manter=LEITOR_LINHAS_VISIVEIS-delta;
@@ -3386,8 +3688,17 @@ void desenharViewportLeitor()
 {
   // Primeiro lemos/ajustamos o cache. So depois usamos o SPI para o TFT.
   // Assim SD e TFT nunca brigam pelo barramento durante a renderizacao.
+#if LEX_DEVICE_V1_ENABLED
+  const uint32_t tv0=micros();
+#endif
   atualizarCacheLeitor();
+#if LEX_DEVICE_V1_ENABLED
+  const uint32_t tv1=micros();
+#endif
   diagnosticarContextoSeMudou();
+#if LEX_DEVICE_V1_ENABLED
+  const uint32_t tv2=micros();
+#endif
 
   for(int i=0;i<LEITOR_LINHAS_VISIVEIS;i++){
     montarLinhaRGB(cacheLeitor[i],i);
@@ -3401,6 +3712,9 @@ void desenharViewportLeitor()
   // Indicador + atalhos em uma unica passagem. Antes o contexto podia
   // redesenhar esta area duas vezes durante o mesmo scroll.
   desenharBarraBusca();
+#if LEX_DEVICE_V1_ENABLED
+  lexPasso.cacheUs=tv1-tv0; lexPasso.alvoUs=tv2-tv1; lexPasso.tftUs=micros()-tv2;
+#endif
 }
 
 void desenharCabecalhoLeitor()
@@ -3658,6 +3972,12 @@ void rolarLeitor(int delta)
 {
   if(delta==0) return;
   uint32_t t0=micros();
+#if LEX_DEVICE_V1_ENABLED
+  // PENDING_SCROLL_EVENTS: o loop ja acumula roda/touch/setas em deltaLeitor e chama rolarLeitor UMA vez (um redesenho).
+  const int pendentes=delta;
+  const uint32_t ioB0=lexScrollPerf.bytes, ioS0=lexScrollPerf.seeks, ioA0=lexScrollPerf.aberturas;
+  lexPassoZerar();
+#endif
 
   // Limita saltos absurdos produzidos por varios eventos acumulados de touch,
   // mantendo resposta previsivel. Page Up/Down continuam funcionando.
@@ -3666,15 +3986,28 @@ void rolarLeitor(int delta)
 
   // Expandir a janela nao muda o byte do topo; apenas permite subir antes dele.
   if(delta<0){
+#if LEX_DEVICE_V1_ENABLED
+    // Cache ANTERIOR: um bloco e reabastecido antes de restar menos de uma tela acima do topo.
+    while(linhaTopo+delta<LEX_CACHE_ANTERIOR_MIN && offsetsLinhas[0]>0){
+      if(indexarAntesDaJanela()==0) break;
+    }
+#else
     while(linhaTopo+delta<0 && offsetsLinhas[0]>0){
       if(indexarAntesDaJanela()==0) break;
     }
+#endif
   }
   int antigo=linhaTopo;
 
   if(delta>0){
     int desejado=linhaTopo+delta;
+#if LEX_DEVICE_V1_ENABLED
+    // Cache SEGUINTE: um bloco de linhas por abertura, so quando resta menos de uma tela abaixo da viewport.
+    if(!fimDoArquivoIndexado && desejado+LEITOR_LINHAS_VISIVEIS+LEX_CACHE_SEGUINTE_MIN>=linhasIndexadas)
+      indexarAte(desejado+LEITOR_LINHAS_VISIVEIS+LEX_CACHE_SEGUINTE_ALVO);
+#else
     indexarAte(desejado+LEITOR_LINHAS_VISIVEIS+1);
+#endif
 
     int maxConhecido=linhasIndexadas-1;
     if(fimDoArquivoIndexado)
@@ -3694,6 +4027,21 @@ void rolarLeitor(int delta)
   desenharViewportLeitor();
 
   uint32_t duracao=micros()-t0;
+#if LEX_DEVICE_V1_ENABLED
+  if(LEX_SCROLL_PERF_LOG){
+    const bool hit=lexPasso.antLinhas==0 && lexPasso.segLinhas==0;
+    Serial.printf("[SCROLL] dir=%s passos=%d pend=%d topo=%lu prev=%d next=%d cache=%s ant=%d/%luB/%luus seg=%d/%luB/%luus "
+                  "ctx=%s/%luB/%dl/%luus io=%luB seeks=%lu opens=%lu cache_us=%lu alvo_us=%lu tft_us=%lu total_us=%lu%s\n",
+                  delta<0?"UP":"DOWN",linhaTopo-antigo,pendentes,(unsigned long)offsetsLinhas[linhaTopo],linhaTopo,
+                  linhasIndexadas-linhaTopo-LEITOR_LINHAS_VISIVEIS,hit?"HIT":"MISS",
+                  lexPasso.antLinhas,(unsigned long)lexPasso.antBytes,(unsigned long)lexPasso.antUs,
+                  lexPasso.segLinhas,(unsigned long)lexPasso.segBytes,(unsigned long)lexPasso.segUs,
+                  lexPasso.ctxOrigem,(unsigned long)lexPasso.ctxBytes,lexPasso.ctxLinhas,(unsigned long)lexPasso.ctxUs,
+                  (unsigned long)(lexScrollPerf.bytes-ioB0),(unsigned long)(lexScrollPerf.seeks-ioS0),
+                  (unsigned long)(lexScrollPerf.aberturas-ioA0),(unsigned long)lexPasso.cacheUs,(unsigned long)lexPasso.alvoUs,
+                  (unsigned long)lexPasso.tftUs,(unsigned long)duracao,lexPasso.failsafe?" FAILSAFE":"");
+  }
+#endif
   perfScrollTotalUs+=duracao;
   if(duracao>perfScrollMaxUs) perfScrollMaxUs=duracao;
   perfScrollAmostras++;
@@ -3909,6 +4257,7 @@ void abrirPastaSelecionada()
   reiniciarEstadoBusca(); // Inclusive ao reabrir o mesmo TXT.
 #if LEX_DEVICE_V1_ENABLED
   lexV1ModoBusca=false;   // todo texto abre no NORMAL_READING_MODE
+  lexV1ArtIdxAoAbrirTexto();   // indice do TEXTO ABERTO (descarrega o da norma anterior)
 #endif
   reiniciarBuscaTexto();
   limparRelacoesArtigo();
@@ -4564,7 +4913,11 @@ void mostrarStatusBuscaTexto()
 
 bool posicionarResultadoTexto(uint32_t ocorrencia)
 {
+#if LEX_DEVICE_V1_ENABLED
+  LexArquivoBuffer f(caminhoArquivoAtual.c_str());
+#else
   File f=SD.open(caminhoArquivoAtual.c_str(),FILE_READ);
+#endif
   if(!f) return false;
   uint32_t inicioParagrafo=0, cursor=ocorrencia;
   uint8_t bloco[256];
@@ -5079,12 +5432,16 @@ void iniciarBluetooth()
         LexV1EstadoLeitor estado=lexV1EstadoLeitor();
         if(estado==LEXV1_ARTICLE_SEARCH_MODE){
           if(event.ascii>='0' && event.ascii<='9'){
+            if(lexV1RepetirPronto){ artigoDigitado=""; lexV1RepetirPronto=false; numeroBuscaEditado=true; }   // 1o digito substitui
             if(artigoDigitado.length()<8) artigoDigitado+=(char)event.ascii;
             pedirRedesenharBusca=true;
             return;
           }
           if(event.usage==0x2A){
-            if(artigoDigitado.length()>0){ artigoDigitado.remove(artigoDigitado.length()-1); pedirRedesenharBusca=true; }
+            if(artigoDigitado.length()>0){
+              if(lexV1RepetirPronto){ lexV1RepetirPronto=false; numeroBuscaEditado=true; }                 // passa a editar
+              artigoDigitado.remove(artigoDigitado.length()-1); pedirRedesenharBusca=true;
+            }
             else pedirCancelarBuscaV1=true;
             return;
           }
@@ -5917,6 +6274,242 @@ static bool lexV1CamadaV1Aplicavel()
   return lexV1Pronto && caminhoArquivoAtual==LEXV1_RUNTIME_CF_PATH && tamanhoArquivoAtual==lexV1RuntimeBytes;
 }
 
+// ---------------- ARTICLE_SEARCH.IDX (indice estrutural de artigos; gerado no PC por build_article_search_index.py) ----------------
+// Formato LXARTIX1: header 96 B (magic, schema 1, record 12 B, ns, registros, bytes + sha256 do texto, sha256 do corpo),
+// tabela de namespaces (16 B cada) e registros (u16 numero, u8 sufixo, u8 ns, u32 offset, u16 ocorrencia, u16 reservado)
+// ordenados por (numero, sufixo, ocorrencia). Vinculado ao TEXTO ABERTO (bytes + sha256): nenhum offset vale para outro texto.
+// CONVENCAO POR NORMA (CC_INDEX): LEXV1_ARTIDX_DIR/<NORMA>_ARTICLE_SEARCH.IDX (<NORMA> = id do catalogo mestre). O loader NAO conhece normas:
+// lista os *_ARTICLE_SEARCH.IDX (so nomes, sem abrir entradas), le os headers de 96 B e escolhe aquele cujo texto-fonte tem o
+// MESMO tamanho e o MESMO sha256 do texto aberto. Um indice por vez em PSRAM; trocar de texto descarrega o anterior.
+// Estados (para o texto vinculado): 0 nao decidido, 1 OK (busca so pelo indice), 2 sem indice (FALLBACK_LINEAR),
+// 3 invalido (descartado, fail closed: nenhum offset dele e usado).
+#define LEXV1_ARTIDX_DIR "/99_LEX_V1/10_TARGETS"
+#define LEXV1_ARTIDX_SUFIXO "_ARTICLE_SEARCH.IDX"
+#define LEXV1_ARTIDX_MAX_CANDIDATOS 8
+#define LEXV1_ARTIDX_HEADER 96
+#define LEXV1_ARTIDX_RECORD 12
+#define LEXV1_ARTIDX_NS 16
+#define LEXV1_ARTIDX_MAX_BYTES (1024u*1024u)
+struct LexV1ArtIdx { uint8_t estado; bool psram; uint8_t *buf; uint32_t bytes, registros, cargaUs; uint16_t ns; const uint8_t *recs;
+                     String texto; uint32_t textoBytes; String arquivo; };
+static LexV1ArtIdx lexV1ArtIdx={0,false,nullptr,0,0,0,0,nullptr,String(),0,String()};
+struct LexV1ArtUltima { bool indice; uint16_t ocorrencia; uint8_t ns; uint32_t comparacoes, buscaUs; };
+static LexV1ArtUltima lexV1ArtUltima={false,0,0,0,0};
+// sha256 dos textos ja verificados nesta sessao (o texto do SD nao muda com o aparelho ligado; o runtime CF vem do boot).
+struct LexV1TextoSha { String caminho; uint32_t bytes; char sha[65]; };
+static LexV1TextoSha lexV1TextoShaCache[4];
+static uint8_t lexV1TextoShaProx=0;
+
+static uint16_t lexV1Le16(const uint8_t *p){ return (uint16_t)(p[0] | (p[1]<<8)); }
+static uint32_t lexV1Le32(const uint8_t *p){ return (uint32_t)p[0] | ((uint32_t)p[1]<<8) | ((uint32_t)p[2]<<16) | ((uint32_t)p[3]<<24); }
+
+static void lexV1ArtIdxLiberar()
+{
+  if(lexV1ArtIdx.buf) heap_caps_free(lexV1ArtIdx.buf);          // dono unico do buffer: nenhum outro ponteiro sobrevive
+  lexV1ArtIdx.buf=nullptr; lexV1ArtIdx.recs=nullptr; lexV1ArtIdx.bytes=0; lexV1ArtIdx.registros=0; lexV1ArtIdx.ns=0;
+}
+
+static bool lexV1ArtIdxInvalido(const char *motivo)
+{
+  lexV1ArtIdxLiberar();
+  lexV1ArtIdx.estado=3;
+  Serial.printf("[ARTIDX] INVALIDO %s %s -> INDEX_INVALID_FALLBACK_LINEAR (offsets do indice nao usados)\n",lexV1ArtIdx.arquivo.c_str(),motivo);
+  return false;
+}
+
+// sha256 do texto aberto: runtime CF ja verificado no boot; demais textos calculados uma vez por sessao (log com o custo).
+static bool lexV1ShaTextoAtual(char sha[65])
+{
+  if(lexV1Pronto && caminhoArquivoAtual==LEXV1_RUNTIME_CF_PATH && tamanhoArquivoAtual==lexV1RuntimeBytes){
+    memcpy(sha,lexV1RuntimeSha,65); return true;
+  }
+  for(int i=0;i<4;i++)
+    if(lexV1TextoShaCache[i].bytes==tamanhoArquivoAtual && lexV1TextoShaCache[i].caminho==caminhoArquivoAtual){
+      memcpy(sha,lexV1TextoShaCache[i].sha,65); return true;
+    }
+  uint32_t t0=micros(), bytes=0;
+  if(!lexV1Sha256Arquivo("ARTIDX_TEXT",caminhoArquivoAtual.c_str(),"article_index_bind",bytes,sha) || bytes!=tamanhoArquivoAtual) return false;
+  LexV1TextoSha &c=lexV1TextoShaCache[lexV1TextoShaProx]; lexV1TextoShaProx=(lexV1TextoShaProx+1)%4;
+  c.caminho=caminhoArquivoAtual; c.bytes=bytes; memcpy(c.sha,sha,65);
+  if(LEXV1_ARTSEARCH_LOG) Serial.printf("[ARTIDX] TEXT_SHA bytes=%lu ms=%lu sha=%.12s\n",(unsigned long)bytes,(unsigned long)((micros()-t0)/1000),sha);
+  return true;
+}
+
+// Carrega e valida um indice inteiro (schema, tamanhos, texto exato, sha256 do corpo). Falha -> estado 3 (fail closed).
+static bool lexV1ArtIdxCarregar(const char *caminho, const char *shaTexto, uint32_t t0)
+{
+  lexV1ArtIdx.arquivo=caminho;
+  LexV1FileReader f;                                            // rastreado (FILE_DESCRIPTOR_POLICY): abre -> le tudo -> fecha
+  if(!f.abrir("ARTIDX",caminho,"article_index")) return lexV1ArtIdxInvalido("abertura");
+  uint32_t n=f.size();
+  if(n<LEXV1_ARTIDX_HEADER || n>LEXV1_ARTIDX_MAX_BYTES){ f.fechar(); return lexV1ArtIdxInvalido("tamanho"); }
+  uint8_t *b=(uint8_t*)heap_caps_malloc(n,MALLOC_CAP_SPIRAM | MALLOC_CAP_8BIT);
+  lexV1ArtIdx.psram=(b!=nullptr);
+  if(!b) b=(uint8_t*)heap_caps_malloc(n,MALLOC_CAP_8BIT);
+  if(!b){ f.fechar(); return lexV1ArtIdxInvalido("sem_memoria"); }
+  uint32_t lidos=0;
+  int k;
+  while(lidos<n && (k=f.read(b+lidos,(int)(n-lidos)))>0) lidos+=(uint32_t)k;
+  f.fechar();
+  lexV1ArtIdx.buf=b; lexV1ArtIdx.bytes=n;
+  if(lidos!=n) return lexV1ArtIdxInvalido("leitura");
+  if(memcmp(b,"LXARTIX1",8)!=0 || lexV1Le16(b+8)!=1 || lexV1Le16(b+10)!=LEXV1_ARTIDX_HEADER || lexV1Le16(b+12)!=LEXV1_ARTIDX_RECORD)
+    return lexV1ArtIdxInvalido("schema");
+  uint16_t ns=lexV1Le16(b+14); uint32_t regs=lexV1Le32(b+16);
+  if(n!=LEXV1_ARTIDX_HEADER+(uint32_t)ns*LEXV1_ARTIDX_NS+regs*LEXV1_ARTIDX_RECORD) return lexV1ArtIdxInvalido("tamanho_registros");
+  if(lexV1Le32(b+20)!=tamanhoArquivoAtual) return lexV1ArtIdxInvalido("source_bytes");
+  char hex[65];
+  for(int i=0;i<32;i++) snprintf(hex+2*i,3,"%02x",b[24+i]);
+  if(strcmp(hex,shaTexto)!=0) return lexV1ArtIdxInvalido("source_sha256");
+  uint8_t dig[32];
+  mbedtls_sha256_context ctx; mbedtls_sha256_init(&ctx); mbedtls_sha256_starts(&ctx,0);
+  mbedtls_sha256_update(&ctx,b+LEXV1_ARTIDX_HEADER,n-LEXV1_ARTIDX_HEADER); mbedtls_sha256_finish(&ctx,dig); mbedtls_sha256_free(&ctx);
+  if(memcmp(dig,b+56,32)!=0) return lexV1ArtIdxInvalido("body_sha256");
+  lexV1ArtIdx.ns=ns; lexV1ArtIdx.registros=regs; lexV1ArtIdx.recs=b+LEXV1_ARTIDX_HEADER+(uint32_t)ns*LEXV1_ARTIDX_NS;
+  lexV1ArtIdx.estado=1; lexV1ArtIdx.cargaUs=micros()-t0;
+  if(LEXV1_ARTSEARCH_LOG){
+    char nome[LEXV1_ARTIDX_NS+1];
+    memcpy(nome,b+LEXV1_ARTIDX_HEADER,LEXV1_ARTIDX_NS); nome[LEXV1_ARTIDX_NS]='\0';
+    Serial.printf("[ARTIDX] LOADED %s ns0=%s records=%lu bytes=%lu ns=%u load_ms=%lu psram=%s texto=%s (%lu B)\n",caminho,ns?nome:"-",
+                  (unsigned long)regs,(unsigned long)n,(unsigned)ns,(unsigned long)(lexV1ArtIdx.cargaUs/1000),
+                  lexV1ArtIdx.psram?"PSRAM":"RAM_INTERNA",caminhoArquivoAtual.c_str(),(unsigned long)tamanhoArquivoAtual);
+  }
+  return true;
+}
+
+// Indice do TEXTO ABERTO. Texto diferente do vinculado -> descarrega o anterior (nenhum offset dele sobrevive) e decide de novo.
+static bool lexV1ArtIdxPronto()
+{
+  if(lexV1ArtIdx.estado!=0 && (lexV1ArtIdx.texto!=caminhoArquivoAtual || lexV1ArtIdx.textoBytes!=tamanhoArquivoAtual)){
+    if(LEXV1_ARTSEARCH_LOG && lexV1ArtIdx.estado==1)
+      Serial.printf("[ARTIDX] UNLOAD %s (texto mudou: %s)\n",lexV1ArtIdx.arquivo.c_str(),caminhoArquivoAtual.c_str());
+    lexV1ArtIdxLiberar();
+    lexV1ArtIdx.estado=0;
+  }
+  if(lexV1ArtIdx.estado==1) return true;
+  if(lexV1ArtIdx.estado!=0) return false;                       // sem indice/invalido: decidido uma vez para este texto
+  lexV1ArtIdx.texto=caminhoArquivoAtual; lexV1ArtIdx.textoBytes=tamanhoArquivoAtual; lexV1ArtIdx.arquivo="";
+  uint32_t t0=micros();
+  // 1) candidatos por nome (sem abrir as entradas) e 2) header de 96 B: so os do MESMO tamanho de texto seguem.
+  String nomes[LEXV1_ARTIDX_MAX_CANDIDATOS];
+  int total=0;
+  {
+    LexV1FileReader d;
+    if(d.abrir("ARTIDX_DIR",LEXV1_ARTIDX_DIR,"article_index_scan")){
+      while(total<LEXV1_ARTIDX_MAX_CANDIDATOS){
+        boolean ehDir=false;
+        String nome=d.f.getNextFileName(&ehDir);
+        if(nome.length()==0) break;
+        if(!ehDir && nome.endsWith(LEXV1_ARTIDX_SUFIXO)) nomes[total++]=nome;
+      }
+      d.fechar();
+    }
+  }
+  int candidatos[LEXV1_ARTIDX_MAX_CANDIDATOS], nc=0;
+  char shaHeader[LEXV1_ARTIDX_MAX_CANDIDATOS][65];
+  for(int i=0;i<total;i++){
+    uint8_t h[LEXV1_ARTIDX_HEADER];
+    LexV1FileReader f;
+    if(!f.abrir("ARTIDX_HDR",nomes[i].c_str(),"article_index_header")) continue;
+    int lidos=f.read(h,LEXV1_ARTIDX_HEADER);
+    f.fechar();
+    if(lidos!=LEXV1_ARTIDX_HEADER || memcmp(h,"LXARTIX1",8)!=0 || lexV1Le32(h+20)!=tamanhoArquivoAtual) continue;
+    for(int j=0;j<32;j++) snprintf(shaHeader[nc]+2*j,3,"%02x",h[24+j]);
+    candidatos[nc++]=i;
+  }
+  if(nc==0){
+    lexV1ArtIdx.estado=2;
+    if(LEXV1_ARTSEARCH_LOG) Serial.printf("[ARTIDX] SEM_INDICE texto=%s (%lu B; %d indices no SD) -> FALLBACK_LINEAR\n",caminhoArquivoAtual.c_str(),
+                  (unsigned long)tamanhoArquivoAtual,total);
+    return false;
+  }
+  char sha[65];
+  if(!lexV1ShaTextoAtual(sha)){ lexV1ArtIdx.estado=3; Serial.printf("[ARTIDX] TEXT_SHA falhou -> FALLBACK_LINEAR\n"); return false; }
+  for(int c=0;c<nc;c++){
+    if(strcmp(shaHeader[c],sha)!=0){
+      Serial.printf("[ARTIDX] IGNORADO %s (mesmo tamanho, sha256 do texto diferente)\n",nomes[candidatos[c]].c_str());
+      continue;
+    }
+    if(lexV1ArtIdxCarregar(nomes[candidatos[c]].c_str(),sha,t0)) return true;
+    lexV1ArtIdx.estado=0;                                        // invalido: tenta o proximo candidato
+    lexV1ArtIdx.texto=caminhoArquivoAtual; lexV1ArtIdx.textoBytes=tamanhoArquivoAtual;
+  }
+  lexV1ArtIdx.estado=3;
+  Serial.printf("[ARTIDX] NENHUM_INDICE_VALIDO texto=%s -> FALLBACK_LINEAR\n",caminhoArquivoAtual.c_str());
+  return false;
+}
+
+// Abertura de um texto no leitor: decide o indice ja (o serial mostra LOADED/SEM_INDICE antes da 1a busca).
+void lexV1ArtIdxAoAbrirTexto()
+{
+  lexV1ArtIdxPronto();
+}
+
+// numero do teclado -> chave (sem zeros a esquerda, 1..65535; o teclado numerico nao digita sufixo "-A")
+static bool lexV1ArtigoChave(const String &n, uint16_t &num)
+{
+  if(n.length()==0 || n.length()>5 || n[0]=='0') return false;
+  uint32_t v=0;
+  for(size_t i=0;i<n.length();i++){ if(n[i]<'0' || n[i]>'9') return false; v=v*10+(uint32_t)(n[i]-'0'); }
+  if(v==0 || v>0xFFFF) return false;
+  num=(uint16_t)v;
+  return true;
+}
+
+// lower_bound (numero, sufixo) + ocorrencias contiguas: primeira ocorrencia com offset >= inicio. O(log n), sem I/O.
+static bool lexV1ArtIdxBuscar(uint16_t num, uint8_t suf, uint32_t inicio, uint32_t &off, uint16_t &occ, uint8_t &ns, uint32_t &cmp)
+{
+  const uint8_t *r=lexV1ArtIdx.recs;
+  uint32_t lo=0, hi=lexV1ArtIdx.registros;
+  uint32_t chave=((uint32_t)num<<8) | suf;
+  while(lo<hi){
+    uint32_t mid=(lo+hi)/2; cmp++;
+    const uint8_t *e=r+mid*LEXV1_ARTIDX_RECORD;
+    if((((uint32_t)lexV1Le16(e)<<8) | e[2])<chave) lo=mid+1; else hi=mid;
+  }
+  for(uint32_t i=lo;i<lexV1ArtIdx.registros;i++){
+    const uint8_t *e=r+i*LEXV1_ARTIDX_RECORD; cmp++;
+    if((((uint32_t)lexV1Le16(e)<<8) | e[2])!=chave) break;
+    uint32_t o=lexV1Le32(e+4);
+    if(o>=inicio){ off=o; occ=lexV1Le16(e+8); ns=e[3]; return true; }
+  }
+  return false;
+}
+
+static const char *lexV1ArtIdxNs(uint8_t ns)
+{
+  static char nome[LEXV1_ARTIDX_NS+1];
+  if(lexV1ArtIdx.estado!=1 || ns>=lexV1ArtIdx.ns) return "-";
+  memcpy(nome,lexV1ArtIdx.buf+LEXV1_ARTIDX_HEADER+(uint32_t)ns*LEXV1_ARTIDX_NS,LEXV1_ARTIDX_NS); nome[LEXV1_ARTIDX_NS]='\0';
+  return nome;
+}
+
+// Contexto juridico EXATO antes de `limite` a partir do TEXT_MAP: registro estrutural que vale em limite-1 ("CF88:ART.192:PAR.3")
+// -> artigo/paragrafo/inciso/alinea na mesma representacao do parser; a releitura comeca no inicio desse registro (poucos bytes).
+// So no runtime V1 e so quando o checkpoint disponivel e mais distante que o registro.
+bool lexV1ContextoEstruturalAntes(uint32_t limite, uint32_t checkpoint, uint32_t &inicio, ContextoJuridicoAtivo &saida)
+{
+  if(limite==0 || !lexV1CamadaV1Aplicavel() || !lexV1AbrirIndicesUi()) return false;
+  char tid[LEXV1_KEY_MAX]; uint32_t ini=0, fim=0;
+  if(lexv1TargetAtOffset(lexV1MapIdx,lexV1RuntimeBytes,lexV1RuntimeSha,limite-1,tid,sizeof(tid),&ini,&fim)!=LEXV1_OK) return false;
+  if(checkpoint>=ini) return false;
+  limparContextoJuridico(saida,nomeArquivoAtual.c_str());
+  char *p=strchr(tid,':');
+  while(p){
+    char *q=strchr(p+1,':');
+    if(q) *q='\0';
+    const char *c=p+1;
+    if(!strncmp(c,"ART.",4)){ copiarContextoCampo(saida.artigo,sizeof(saida.artigo),c+4); saida.offsetArtigo=ini; }
+    else if(!strcmp(c,"PAR.UNICO")){ copiarContextoCampo(saida.paragrafo,sizeof(saida.paragrafo),"unico"); saida.offsetParagrafo=ini; }
+    else if(!strncmp(c,"PAR.",4)){ copiarContextoCampo(saida.paragrafo,sizeof(saida.paragrafo),c+4); saida.offsetParagrafo=ini; }
+    else if(!strncmp(c,"INC.",4)){ copiarContextoCampo(saida.inciso,sizeof(saida.inciso),c+4); saida.offsetInciso=ini; }
+    else if(!strncmp(c,"AL.",3)){ copiarContextoCampo(saida.alinea,sizeof(saida.alinea),c+3); saida.offsetAlinea=ini; }
+    p=q;
+  }
+  inicio=ini;
+  return true;
+}
+
 // ---------------- ACTIVE_TARGET (imediato) ----------------
 // Resolve o ACTIVE_TARGET para a linha que gera o CONTEXTO. Sem debounce: consulta o TEXT_MAP sempre que o offset
 // sai do registro [ini,fim) atual (dentro do registro o target e o mesmo por definicao; nao e cache "atrasado").
@@ -5924,7 +6517,7 @@ static bool lexV1CamadaV1Aplicavel()
 void lexV1SincronizarAlvo(int indiceContexto)
 {
   int i=indiceContexto;
-  if(i<0 || i>=LEITOR_LINHAS_VISIVEIS || !linhaCacheValida[i]) i=LEITOR_LINHAS_VISIVEIS/2;
+  if(i<0 || i>=LEITOR_LINHAS_VISIVEIS || !linhaCacheValida[i]) i=linhaContextoAtivo(LEITOR_LINHAS_VISIVEIS);
   if(!linhaCacheValida[i]) i=0;
   lexV1OffsetContextoOk=cacheLeitorValido && linhaCacheValida[i];
   lexV1OffsetContexto=lexV1OffsetContextoOk?offsetLinhaCache[i]:0;
@@ -6546,19 +7139,62 @@ void lexV1DesenharBusca()
   tft.print(artigoDigitado.length()?"ENTER=BUSCAR  BACKSPACE=APAGAR":"DIGITE O ARTIGO  BACKSPACE=VOLTAR AO TEXTO");
 }
 
+// ENTER repetido = proxima ocorrencia (mesma politica do executarBusca legado: numeroUltimaBusca / inicioProximaBusca /
+// temOcorrenciaDaBusca, preenchidos por pesquisarArtigo; sem wrap; no fim "SEM OUTRA OCORRENCIA" e a posicao fica).
+// O cursor so vale enquanto o leitor continua EXATAMENTE no pouso da ultima ocorrencia (mesmo arquivo, mesmo tamanho,
+// mesmo byte no topo) e a consulta nao foi editada nem cancelada. Rolar, editar, cancelar ou trocar de arquivo -> ENTER
+// volta a abrir a busca normalmente (nunca reaproveita cursor velho).
+static bool lexV1BuscaRepetivel=false;
+static uint32_t lexV1BuscaTopoPouso=0, lexV1BuscaTamanhoPouso=0;
+static String lexV1BuscaArquivoPouso;
+
+static void lexV1InvalidarRepeticaoBusca()
+{
+  lexV1BuscaRepetivel=false;
+}
+
+static void lexV1MarcarRepeticaoBusca()
+{
+  lexV1BuscaRepetivel=temOcorrenciaDaBusca && numeroUltimaBusca.length()>0;
+  lexV1BuscaTopoPouso=lexV1OffsetTopo();
+  lexV1BuscaArquivoPouso=caminhoArquivoAtual;
+  lexV1BuscaTamanhoPouso=tamanhoArquivoAtual;
+}
+
+static bool lexV1PodeRepetirBusca()
+{
+  return lexV1BuscaRepetivel && temOcorrenciaDaBusca && !numeroBuscaEditado && numeroUltimaBusca.length()>0 &&
+         lexV1BuscaArquivoPouso==caminhoArquivoAtual && lexV1BuscaTamanhoPouso==tamanhoArquivoAtual &&
+         cacheLeitorValido && lexV1OffsetTopo()==lexV1BuscaTopoPouso;
+}
+
+// ENTER no NORMAL_READING_MODE: SEMPRE abre o ARTICLE_SEARCH. Com busca anterior valida, a consulta vem pre-carregada
+// (REPEAT_READY); sem ela, a busca abre vazia e o cursor anterior e descartado.
 void lexV1EntrarBusca()
 {
+  bool repetir=lexV1PodeRepetirBusca();
   lexV1ModoBusca=true;
   lexV1BuscaOffsetOrigem=lexV1OffsetTopo();
-  artigoDigitado="";
   buscaAtiva=BUSCA_ARTIGO;
-  numeroBuscaEditado=true;
-  Serial.printf("LEXV1: ESTADO ARTICLE_SEARCH_MODE (origem offset=%lu linha=%d)\n",(unsigned long)lexV1BuscaOffsetOrigem,linhaTopo);
+  if(repetir){
+    artigoDigitado=numeroUltimaBusca;            // consulta anterior, intocada (numeroBuscaEditado continua false)
+    lexV1RepetirPronto=true;
+  }else{
+    lexV1InvalidarRepeticaoBusca();               // nova consulta: o cursor da anterior nunca e reaproveitado
+    lexV1RepetirPronto=false;
+    artigoDigitado="";
+    numeroBuscaEditado=true;
+  }
+  Serial.printf("LEXV1: ESTADO ARTICLE_SEARCH_MODE (origem offset=%lu linha=%d REPEAT_READY=%d)\n",(unsigned long)lexV1BuscaOffsetOrigem,
+                linhaTopo,(int)lexV1RepetirPronto);
   desenharBarraBusca();
 }
 
 void lexV1CancelarBusca()
 {
+  lexV1RepetirPronto=false;
+  lexV1InvalidarRepeticaoBusca();
+  reiniciarEstadoBusca();                         // cancelada: nenhuma ocorrencia anterior continua valida
   lexV1ModoBusca=false;
   artigoDigitado="";
   buscaAtiva=BUSCA_NENHUMA;
@@ -6569,9 +7205,99 @@ void lexV1CancelarBusca()
   else desenharBarraBusca();
 }
 
+// ARTICLE_SEARCH landing (somente visual): a linha da ocorrencia encontrada vai para a MESMA linha visual que resolve
+// CONTEXTO/ACTIVE_TARGET (linhaContextoAtivo). Nada e forcado: o ACTIVE_TARGET continua saindo do TEXT_MAP na linha ativa,
+// e qualquer rolagem segue o fluxo normal. O topo e montado com indexarAntesDaJanela() (mesma quebra visual da rolagem
+// para cima); perto do inicio do arquivo, clamp em linhaTopo=0 (a ocorrencia fica na linha mais proxima possivel do centro).
+// Somente no texto runtime do DEVICE V1 (os demais arquivos mantem o pouso no topo).
+static void lexV1PousarBuscaNaLinhaAtiva(uint32_t ocorrencia)
+{
+  // Runtime V1 ou ocorrencia vinda do indice estrutural do texto aberto (ex.: Codigo Civil): o offset e a linha do artigo.
+  if(!lexV1CamadaV1Aplicavel() && !lexV1ArtUltima.indice) return;
+  const int alvo=linhaContextoAtivo(LEITOR_LINHAS_VISIVEIS);
+  reiniciarIndice(ocorrencia);                                  // ocorrencia = linha 0 (inicio de linha fisica)
+  while(linhaTopo<alvo && offsetsLinhas[0]>0){
+    if(indexarAntesDaJanela()==0) break;                        // linhaTopo continua apontando para a ocorrencia
+  }
+  int linhaOcorrencia=linhaTopo;
+  linhaTopo=max(0,linhaOcorrencia-alvo);
+  Serial.printf("LEXV1: BUSCA_POUSO ocorrencia=%lu linha_ativa=%d linha_da_ocorrencia=%d topo=%lu\n",
+                (unsigned long)ocorrencia,alvo,linhaOcorrencia-linhaTopo,(unsigned long)lexV1OffsetTopo());
+}
+
+// Ocorrencia ESTRUTURAL: no runtime V1 so vale a linha que o CF88_TEXT_MAP.IDX registra como o proprio artigo
+// (NS:ART.n comecando exatamente no offset). Remissoes "art. n da Lei ..." no inicio de linha fisica nao sao o artigo.
+// O namespace (CF88/ADCT) vem do registro do mapa, nunca do numero. Outros arquivos: a ocorrencia textual vale (legado).
+static bool lexV1OcorrenciaEstrutural(const String &n, uint32_t off)
+{
+  if(!lexV1CamadaV1Aplicavel()) return true;
+  char tid[LEXV1_KEY_MAX]; uint32_t ini=0, fim=0;
+  if(!lexV1AbrirIndicesUi() ||
+     lexv1TargetAtOffset(lexV1MapIdx,lexV1RuntimeBytes,lexV1RuntimeSha,off,tid,sizeof(tid),&ini,&fim)!=LEXV1_OK || ini!=off) return false;
+  const char *a=strstr(tid,":ART.");
+  return a && !strchr(a+5,':') && n==String(a+5);
+}
+
+// pesquisarArtigo (mesmo casamento do legado) a partir de `inicio`, pulando ocorrencias nao estruturais.
+// Sem ocorrencia estrutural: o leitor volta ao topo de antes e o estado da busca nao aponta para a remissao pulada.
+static bool lexV1PesquisarArtigoEstrutural(const String &n, uint32_t inicio)
+{
+  lexV1ArtUltima.indice=false; lexV1ArtUltima.comparacoes=0; lexV1ArtUltima.ocorrencia=0; lexV1ArtUltima.ns=0;
+  if(lexV1ArtIdxPronto()){
+    // INDEXED_ARTICLE_SEARCH: chave -> offset exato (somente artigos estruturais) no indice do TEXTO ABERTO (qualquer norma com
+    // <NORMA>_ARTICLE_SEARCH.IDX vinculado por bytes + sha256). Nenhum scan do texto; sem achado, nada se move.
+    uint32_t t0=micros(), off=0; uint16_t num=0, occ=0; uint8_t ns=0;
+    lexV1ArtUltima.indice=true;
+    bool achou=lexV1ArtigoChave(n,num) && lexV1ArtIdxBuscar(num,0,inicio,off,occ,ns,lexV1ArtUltima.comparacoes);
+    lexV1ArtUltima.buscaUs=micros()-t0;
+    if(!achou) return false;
+    reiniciarIndice(off);                                         // mesmo efeito de pesquisarArtigo: ocorrencia = linha 0
+    offsetUltimaOcorrencia=off;
+    inicioProximaBusca=off+1;
+    temOcorrenciaDaBusca=true;
+    lexV1ArtUltima.ocorrencia=occ; lexV1ArtUltima.ns=ns;
+    return true;
+  }
+  if(LEXV1_ARTSEARCH_LOG){
+    Serial.printf("[ARTIDX] FALLBACK_LINEAR q=%s estado=%u\n",n.c_str(),(unsigned)lexV1ArtIdx.estado);
+  }
+  uint32_t topo=lexV1OffsetTopo(), ultima=offsetUltimaOcorrencia;
+  bool tinha=temOcorrenciaDaBusca, moveu=false;
+  while(pesquisarArtigo(n,inicio)){
+    moveu=true;
+    if(lexV1OcorrenciaEstrutural(n,offsetUltimaOcorrencia)) return true;
+    Serial.printf("LEXV1: BUSCA Art. %s ignora offset=%lu (nao e o artigo no TEXT_MAP)\n",n.c_str(),(unsigned long)offsetUltimaOcorrencia);
+    inicio=inicioProximaBusca;
+  }
+  if(moveu){
+    reiniciarIndice(topo);
+    offsetUltimaOcorrencia=ultima;
+    temOcorrenciaDaBusca=tinha;
+    desenharViewportLeitor();
+  }
+  return false;
+}
+
+// [ARTSEARCH] T0 ENTER confirmado, T1 inicio da procura, T2 offset localizado, T3 pouso calculado, T4 render concluido.
+static void lexV1LogBuscaArtigo(const String &n, uint32_t t0, uint32_t t1, uint32_t t2, uint32_t t3, uint32_t t4, bool achou)
+{
+  if(LEXV1_ARTSEARCH_LOG){
+    Serial.printf("[ARTSEARCH] q=%s modo=%s achou=%d occ=%u ns=%s offset=%lu cmp=%lu lookup_us=%lu landing_ms=%lu render_ms=%lu total_ms=%lu\n",
+                  n.c_str(),lexV1ArtUltima.indice?"INDEX":"LINEAR",(int)achou,(unsigned)lexV1ArtUltima.ocorrencia,
+                  lexV1ArtUltima.indice?lexV1ArtIdxNs(lexV1ArtUltima.ns):"-",(unsigned long)(achou?offsetUltimaOcorrencia:0),
+                  (unsigned long)lexV1ArtUltima.comparacoes,(unsigned long)(t2-t1),(unsigned long)((t3-t2)/1000),
+                  (unsigned long)((t4-t3)/1000),(unsigned long)((t4-t0)/1000));
+  }
+}
+
 void lexV1ExecutarBuscaArtigo()
 {
+  uint32_t t0=micros();
   if(artigoDigitado.length()==0){ desenharBarraBusca(); return; }
+  // REPEAT_READY e consulta intocada -> proxima ocorrencia; qualquer edicao -> NEW_QUERY do inicio (cursor zerado)
+  bool repetir=lexV1RepetirPronto && !numeroBuscaEditado && artigoDigitado==numeroUltimaBusca && lexV1PodeRepetirBusca();
+  lexV1RepetirPronto=false;
+  if(repetir){ lexV1ProximaOcorrenciaArtigo(); return; }
   String n=artigoDigitado;
   limparDestaqueTexto();
   reiniciarEstadoBusca();
@@ -6579,18 +7305,60 @@ void lexV1ExecutarBuscaArtigo()
   tft.fillRect(0,221,320,19,COR_FUNDO);
   tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
   tft.setCursor(4,228); tft.print("Buscando Art. "); tft.print(n); tft.print("...");
-  if(pesquisarArtigo(n,0)){
+  uint32_t t1=micros();
+  if(lexV1PesquisarArtigoEstrutural(n,0)){
+    uint32_t t2=micros();
     lexV1ModoBusca=false;                        // encontrado: fecha a busca, limpa o buffer, volta ao NORMAL_READING_MODE
     artigoDigitado="";
     buscaAtiva=BUSCA_NENHUMA;
+    lexV1PousarBuscaNaLinhaAtiva(offsetUltimaOcorrencia);   // a ocorrencia encontrada fica na linha do ACTIVE_TARGET
+    uint32_t t3=micros();
     Serial.printf("LEXV1: BUSCA Art. %s -> offset=%lu; ESTADO NORMAL_READING_MODE\n",n.c_str(),(unsigned long)lexV1OffsetTopo());
     desenharViewportLeitor();                    // contexto, TEXT_MAP e rodape atualizados pelo fluxo normal do leitor
+    lexV1LogBuscaArtigo(n,t0,t1,t2,t3,micros(),true);
+    lexV1MarcarRepeticaoBusca();                 // ENTER sem mexer no texto -> proxima ocorrencia
   }else{
+    lexV1LogBuscaArtigo(n,t0,t1,micros(),micros(),micros(),false);
     // nao encontrado: continua no ARTICLE_SEARCH_MODE com o numero para editar (BACKSPACE apaga / volta)
     tft.fillRect(0,221,320,19,COR_FUNDO);
     tft.setCursor(4,228); tft.print("ART. "); tft.print(n); tft.print(" NAO ENCONTRADO");
     Serial.printf("LEXV1: BUSCA Art. %s -> NAO ENCONTRADO (continua na busca)\n",n.c_str());
     delay(700);
+    desenharBarraBusca();
+  }
+}
+
+// ARTICLE_SEARCH em REPEAT_READY + ENTER sem edicao: mesma consulta a partir de inicioProximaBusca (offset posterior a
+// ultima ocorrencia). Fecha a busca (NORMAL_READING_MODE) nos dois desfechos. Cada ocorrencia passa por
+// lexV1PousarBuscaNaLinhaAtiva; o ACTIVE_TARGET sai do TEXT_MAP no redesenho (target anterior e cache descartados).
+void lexV1ProximaOcorrenciaArtigo()
+{
+  uint32_t t0=micros();
+  String n=numeroUltimaBusca;
+  lexV1ModoBusca=false;
+  artigoDigitado="";
+  buscaAtiva=BUSCA_NENHUMA;
+  limparDestaqueTexto();
+  tft.fillRect(0,221,320,19,COR_FUNDO);
+  tft.setTextSize(1); tft.setTextColor(COR_VERDE,COR_FUNDO);
+  tft.setCursor(4,228); tft.print("Buscando Art. "); tft.print(n); tft.print("...");
+  uint32_t anterior=offsetUltimaOcorrencia;
+  uint32_t t1=micros();
+  if(lexV1PesquisarArtigoEstrutural(n,inicioProximaBusca)){
+    uint32_t t2=micros();
+    lexV1PousarBuscaNaLinhaAtiva(offsetUltimaOcorrencia);
+    uint32_t t3=micros();
+    Serial.printf("LEXV1: BUSCA Art. %s PROXIMA %lu -> %lu\n",n.c_str(),(unsigned long)anterior,(unsigned long)offsetUltimaOcorrencia);
+    desenharViewportLeitor();
+    lexV1LogBuscaArtigo(n,t0,t1,t2,t3,micros(),true);
+    lexV1MarcarRepeticaoBusca();
+  }else{
+    lexV1LogBuscaArtigo(n,t0,t1,micros(),micros(),micros(),false);
+    // politica legada: sem wrap; a posicao e o cursor ficam (novo ENTER repete a mensagem)
+    tft.fillRect(0,221,320,19,COR_FUNDO);
+    tft.setCursor(4,228); tft.print("SEM OUTRA OCORRENCIA");
+    Serial.printf("LEXV1: BUSCA Art. %s -> SEM OUTRA OCORRENCIA (depois de %lu)\n",n.c_str(),(unsigned long)anterior);
+    delay(500);
     desenharBarraBusca();
   }
 }

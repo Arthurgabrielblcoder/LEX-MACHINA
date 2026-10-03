@@ -10,6 +10,8 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 ROMAN = set('IVXLCDM')
+THOUSANDS = True                                            # False = parser before the fix (bug reproduction)
+THOUSANDS_MAX = 999999999                                   # LEX_NUMERO_DISPOSITIVO_MAX (contexto_juridico.h)
 
 
 def _skip(b, i):
@@ -44,6 +46,17 @@ def _number(b, i):
         i += 1
     if not s:
         return None, i
+    # THOUSANDS_PARSER_FIX (DEVICE V1 build): '.' + exactly 3 digits after a 1-3 digit block is a thousands separator.
+    if THOUSANDS and len(s) <= 3:
+        value = int(s)
+        while (i + 3 < len(b) and b[i] == ord('.') and all(48 <= b[i + k] <= 57 for k in (1, 2, 3))
+               and not (i + 4 < len(b) and 48 <= b[i + 4] <= 57)):
+            group = int(b[i + 1:i + 4])
+            if value > (THOUSANDS_MAX - group) // 1000 or len(s) + 3 >= 16:
+                return None, i                                   # overflow / capacity: fail safe (context untouched)
+            value = value * 1000 + group
+            s += b[i + 1:i + 4].decode()
+            i += 4
     if i + 1 < len(b) and b[i] in (ord('-'), ord('.')) and chr(b[i + 1]).isalpha():
         s += chr(b[i]) + chr(b[i + 1]).upper()
         i += 2
