@@ -160,10 +160,12 @@ class CfExportTest(unittest.TestCase):
         self.assertEqual(sorted(l['target_id'] for l in src), ['CF88:ART.5:INC.II', 'CF88:ART.5:INC.XIII'])
 
     def test_deterministic_export(self):
+        """run1 = export of the physically approved DEVICE V1 baseline (frozen; the build without link_exclusions and without the
+        work_reference_additions overlay reproduces it)."""
         tmp = Path(tempfile.mkdtemp(prefix='cf_export_'))
         try:
             reg = E.TargetRegistry()
-            files = E.export('CF88', E.build_links('CF88', reg), tmp)
+            files = E.export('CF88', E.build_links('CF88', E._without(reg, 'CF88', 'link_exclusions', 'work_reference_additions', 'work_registry')), tmp)
             for name, meta in files.items():
                 self.assertEqual((tmp / name).read_bytes(), (self.ex / name).read_bytes(), name)
         finally:
@@ -172,6 +174,70 @@ class CfExportTest(unittest.TestCase):
     def test_invalid_lookup_id_fails_closed(self):
         with self.assertRaises(E.EngineError):
             E.get_references('CF88/ART.5', self.doc)
+
+
+@unittest.skipUnless((D / 'export_test/run2/REF_LOOKUP.IDX').is_file(), 'corrected export not built')
+class CfLinkExclusionsTest(unittest.TestCase):
+    """run2 = current export: run1 minus the two MATERIAL_MISMATCH_EXCLUDED links of CF88_LINK_EXCLUSIONS.json (nothing else)."""
+    EXCLUDED = {'JURISPRUDENCE:STF:RG:113:CF88:25:-:-:-@CF88:ART.25', 'JURISPRUDENCE:STF:RG:756:CF88:31:3:-:-@CF88:ART.31:PAR.3'}
+
+    @classmethod
+    def setUpClass(cls):
+        cls.r1 = json.loads((D / 'export_test/run1/CF88_REFERENCES_EXPORT.json').read_text(encoding='utf-8'))
+        cls.r2 = json.loads((D / 'export_test/run2/CF88_REFERENCES_EXPORT.json').read_text(encoding='utf-8'))
+        cls.l1 = {l['reference_id']: l for ls in cls.r1['references'].values() for l in ls}
+        cls.l2 = {l['reference_id']: l for ls in cls.r2['references'].values() for l in ls}
+
+    def test_deterministic_current_export(self):
+        """run2 (frozen) = the build without the work_reference_additions overlay of RUN3."""
+        tmp = Path(tempfile.mkdtemp(prefix='cf_export2_'))
+        try:
+            reg = E.without_additions(E.TargetRegistry(), 'CF88')
+            files = E.export('CF88', E.build_links('CF88', reg), tmp, E.link_exclusions('CF88', reg))
+            for name in files:
+                self.assertEqual((tmp / name).read_bytes(), (D / 'export_test/run2' / name).read_bytes(), name)
+        finally:
+            shutil.rmtree(tmp)
+
+    def test_only_the_two_edges_removed(self):
+        self.assertEqual(set(self.l1) - set(self.l2), self.EXCLUDED)
+        self.assertEqual(set(self.l2) - set(self.l1), set())
+        self.assertEqual([k for k in self.l2 if self.l1[k] != self.l2[k]], [])          # no other link, note, work or target changed
+        self.assertEqual((len(self.l1), len(self.l2), self.r2['total_links'], self.r2['total_excluded']), (432, 430, 430, 2))
+        self.assertEqual({x['reference_id'] for x in self.r2['excluded_links']}, self.EXCLUDED)
+        self.assertTrue(all(x['status'] == 'MATERIAL_MISMATCH_EXCLUDED' for x in self.r2['excluded_links']))
+        p1 = (D / 'export_test/run1/REF_PAYLOAD.IDX').read_text(encoding='utf-8').splitlines()
+        p2 = (D / 'export_test/run2/REF_PAYLOAD.IDX').read_text(encoding='utf-8').splitlines()
+        self.assertEqual(sorted(set(p1) - set(p2)), sorted(l for l in p1 if any(x in l for x in self.EXCLUDED)))
+        self.assertFalse(set(p2) - set(p1))
+
+    def test_tema113_and_756_keep_legitimate_targets(self):
+        t = lambda L, s: sorted(l['target_id'] for l in L.values() if l['source_id'] == s)  # noqa: E731
+        self.assertEqual(t(self.l1, 'STF:RG:113'), ['CF88:ART.1:INC.III', 'CF88:ART.25', 'CF88:ART.5:CAPUT'])
+        self.assertEqual(t(self.l2, 'STF:RG:113'), ['CF88:ART.1:INC.III', 'CF88:ART.5:CAPUT'])
+        self.assertEqual(t(self.l1, 'STF:RG:756'), ['CF88:ART.195:PAR.12', 'CF88:ART.31:PAR.3'])
+        self.assertEqual(t(self.l2, 'STF:RG:756'), ['CF88:ART.195:PAR.12'])
+        ex = D / 'export_test/run2'
+        self.assertEqual(E.lookup_idx('CF88:ART.25', ex / 'REF_LOOKUP.IDX', ex / 'REF_PAYLOAD.IDX'), [])
+        self.assertEqual(E.lookup_idx('CF88:ART.31:PAR.3', ex / 'REF_LOOKUP.IDX', ex / 'REF_PAYLOAD.IDX'), [])
+
+    def test_catalog_untouched_and_exclusion_fails_closed(self):
+        cat = json.loads((D / 'CF88_REFERENCES_CANONICAL.json').read_text(encoding='utf-8'))['records']
+        ids = {r['source_record_id'] for r in cat}
+        self.assertIn('STF:RG:113:CF88:25:-:-:-', ids)                                   # still in the source corpus
+        self.assertIn('STF:RG:756:CF88:31:3:-:-', ids)
+        tmp = Path(tempfile.mkdtemp(prefix='cf_excl_'))
+        try:
+            bad = json.loads((D / 'CF88_LINK_EXCLUSIONS.json').read_text(encoding='utf-8'))
+            bad['records'][0]['target_id'] = 'CF88:ART.26'
+            (tmp / 'x.json').write_text(json.dumps(bad), encoding='utf-8')
+            reg = E.TargetRegistry()
+            reg.cfg['norms']['CF88']['link_exclusions'] = str(tmp / 'x.json')
+            with self.assertRaises(E.EngineError) as cm:
+                E.build_links('CF88', reg)
+            self.assertEqual(cm.exception.code, 'EXCLUSION_LINK_NOT_FOUND')
+        finally:
+            shutil.rmtree(tmp)
 
 
 if __name__ == '__main__':

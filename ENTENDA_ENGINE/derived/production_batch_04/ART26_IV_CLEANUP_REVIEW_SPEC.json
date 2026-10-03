@@ -1,0 +1,39 @@
+{
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "review_scope": "CF88_ART26_IV_EDITORIAL_CLEANUP",
+ "decisions_schema": 2,
+ "partial_round": true,
+ "original_drafts": "BATCH_04_DRAFTS_PRE_ROUND2.json",
+ "reviewed_drafts_out": "BATCH_04_DRAFTS_ART26_IV_CLEANUP.json",
+ "decisions_out": [
+  "ART26_IV_CLEANUP_DECISIONS.json"
+ ],
+ "evidence_sha256": {
+  "BATCH_04_DRAFTS_PRE_ROUND2.json": "7c678c813f716386996e31de6c93b3022ca3eb4fef5a9a4958bba0a3e92334dd"
+ },
+ "human_review": {
+  "reviewed_on": "2026-10-01",
+  "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+  "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+  "reviewer": "auditoria editorial ChatGPT (texto vigente, fontes oficiais, STF), autorizada por Arthur (usuario do projeto)",
+  "standard": "ENTENDA-T1 (+ regra editorial de linguagem para iniciantes, §15)",
+  "decision": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE: verbete sem uso no texto removido de PALAVRAS DIFICEIS",
+  "review_scope": "CF88_ART26_IV_EDITORIAL_CLEANUP"
+ },
+ "reviews": [
+  {
+   "target_id": "CF88:ART.26:INC.IV",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE: o termo \"Acao discriminatoria\" deixou de aparecer no texto apos o ajuste aprovado no Round 1; somente o verbete foi removido de PALAVRAS DIFICEIS.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Ação discriminatória",
+     "remove": true,
+     "before": "procedimento destinado a identificar e separar terras públicas das propriedades particulares em determinada área.",
+     "kind": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE"
+    }
+   ]
+  }
+ ]
+}

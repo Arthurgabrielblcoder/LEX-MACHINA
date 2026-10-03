@@ -1,0 +1,290 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "policy": "ENTENDA nao incorpora jurisprudencia; READY_TO_LINK exige tribunal, tipo, numero e assunto comprovados localmente",
+ "local_sources": [
+  "LEGAL_TARGET_ID/derived/export_test/run2/CF88_REFERENCES_EXPORT.json",
+  "C:/LMA/p545e/20260928/LEX_MACHINA_JURIS_CF_J4/VINCULOS_EXPLICITOS.json"
+ ],
+ "total": 11,
+ "ready_to_link": 1,
+ "identity_found_pending_subject_verification": 0,
+ "pending_external_ingestion": 8,
+ "material_mismatch_excluded": 2,
+ "recommendations": [
+  {
+   "target_id": "CF88:ART.25",
+   "desired_reference": "Vinculo local existente (STF Tema 113) — verificar pertinencia ao art. 25 da CF",
+   "purpose": "verificar se o vinculo local trata da auto-organizacao dos Estados",
+   "local_identity_searched": "STF:RG:113",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:113:CF88:1:-:III:-@CF88:ART.1:INC.III",
+   "already_linked_to_target": false,
+   "subject_verification": {
+    "verified": false,
+    "keywords": [
+     "Estados"
+    ],
+    "missing_keywords": [
+     "Estados"
+    ],
+    "catalog_record_id": "STF:RG:113:CF88:1:-:III:-",
+    "thesis_excerpt": "O art. 25 da Lei de Contravenções Penais (Decreto-lei 3.688/1941) não foi recepcionado pela Constituição de 1988, por violar os princípios da dignidade da pessoa humana (CF, art. 1º, III) e da isonomia (CF, art. 5º, caput e I).",
+    "official_source_sha256": "e81a6ed4dfc2b417ca6c11ad4c021fd055d926fcfd699d56146d2bf738a9d127",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "excluded_local_links": [
+    {
+     "target_id": "CF88:ART.25",
+     "reference_id": "JURISPRUDENCE:STF:RG:113:CF88:25:-:-:-@CF88:ART.25",
+     "overlay": "LEGAL_TARGET_ID/derived/CF88_LINK_EXCLUSIONS.json",
+     "reason": "falso positivo de numeracao (art. 25 do Decreto-Lei 3.688/1941)",
+     "local_link_present": false,
+     "status": "MATERIAL_MISMATCH_EXCLUDED"
+    }
+   ],
+   "human_supplied": "Tema 113 conferido em fonte oficial do STF na revisao humana de 2026-10-01: revogacao do art. 25 da Lei de Contravencoes Penais pela CF. Vinculos legitimos do Tema 113 (art. 1º, III; art. 5º, caput) permanecem.",
+   "material_mismatch": {
+    "verified_subject": "nao recepcao do art. 25 da Lei de Contravencoes Penais (Decreto-lei 3.688/1941) por violacao a dignidade e a isonomia",
+    "expected_subject": "auto-organizacao e competencias dos Estados (art. 25 da CF)",
+    "reason": "A tese local cita o art. 25 da Lei de Contravencoes Penais, nao o art. 25 da Constituicao; o vinculo local e um falso positivo de numeracao."
+   },
+   "note": "Tese local conferida: trata de outro assunto. Vinculo local existente NAO deve ser usado como jurisprudencia pertinente a este target."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.3",
+   "desired_reference": "Vinculo local existente (STF Tema 756) — verificar pertinencia ao art. 31, § 3º, da CF",
+   "purpose": "verificar se o vinculo local trata das contas municipais a disposicao do contribuinte",
+   "local_identity_searched": "STF:RG:756",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:756:CF88:195:12:-:-@CF88:ART.195:PAR.12",
+   "already_linked_to_target": false,
+   "subject_verification": {
+    "verified": false,
+    "keywords": [
+     "contribuinte",
+     "Municípios"
+    ],
+    "missing_keywords": [
+     "contribuinte",
+     "Municípios"
+    ],
+    "catalog_record_id": "STF:RG:756:CF88:195:12:-:-",
+    "thesis_excerpt": "I. O legislador ordinário possui autonomia para disciplinar a não cumulatividade a que se refere o art. 195, § 12, da Constituição, respeitados os demais preceitos constitucionais, como a matriz constitucional das contribuições ao PIS e COFINS e os princípios da razoabilidade, da isonomia, da livre concorrência e da proteção à confiança; II. É infraconstitucional, a ela se aplicando os efeitos da ",
+    "official_source_sha256": "c66a83b13df798584b626f9c185338a6bd66dda5c829f1285a1a856979245e3d",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "excluded_local_links": [
+    {
+     "target_id": "CF88:ART.31:PAR.3",
+     "reference_id": "JURISPRUDENCE:STF:RG:756:CF88:31:3:-:-@CF88:ART.31:PAR.3",
+     "overlay": "LEGAL_TARGET_ID/derived/CF88_LINK_EXCLUSIONS.json",
+     "reason": "falso positivo de numeracao (art. 31, § 3º, da Lei 10.865/2004)",
+     "local_link_present": false,
+     "status": "MATERIAL_MISMATCH_EXCLUDED"
+    }
+   ],
+   "human_supplied": "Tema 756 conferido em fonte oficial do STF na revisao humana de 2026-10-01: nao cumulatividade do PIS/COFINS. O vinculo legitimo com o art. 195, § 12, da CF permanece.",
+   "material_mismatch": {
+    "verified_subject": "nao cumulatividade do PIS e da COFINS (art. 195, § 12, da CF) e constitucionalidade do § 3º do art. 31 da Lei 10.865/2004",
+    "expected_subject": "contas do Municipio a disposicao de qualquer contribuinte (art. 31, § 3º, da CF)",
+    "reason": "A tese local cita o § 3º do art. 31 da Lei 10.865/2004, nao o art. 31, § 3º, da Constituicao; o vinculo local e um falso positivo de numeracao."
+   },
+   "note": "Tese local conferida: trata de outro assunto. Vinculo local existente NAO deve ser usado como jurisprudencia pertinente a este target."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.I",
+   "desired_reference": "STF Tema 145 (Repercussao Geral) — Municipio e legislacao ambiental no limite do interesse local (art. 24, VI, c/c 30, I e II)",
+   "purpose": "medida do interesse local em materia compartilhada",
+   "local_identity_searched": "STF:RG:145",
+   "local_record_found": true,
+   "local_reference_id": "JURISPRUDENCE:STF:RG:145:CF88:24:-:VI:-@CF88:ART.24:INC.VI",
+   "already_linked_to_target": true,
+   "subject_verification": {
+    "verified": true,
+    "keywords": [
+     "interesse local",
+     "30, I"
+    ],
+    "missing_keywords": [],
+    "catalog_record_id": "STF:RG:145:CF88:24:-:VI:-",
+    "thesis_excerpt": "O município é competente para legislar sobre o meio ambiente com a União e o Estado, no limite do seu interesse local e desde que tal regramento seja harmônico com a disciplina estabelecida pelos demais entes federados (art. 24, VI, c/c 30, I e II, da Constituição Federal).",
+    "official_source_sha256": "a590c653cf53580a4d62481835b544bba67a68adf45081cdc5f2916ddd65c628",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp"
+   },
+   "status": "READY_TO_LINK",
+   "primary_target_id": "CF88:ART.24:INC.VI",
+   "correlated_target_id": "CF88:ART.30:INC.I",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF Tema 145, RE 586224",
+    "thesis_summary": "Municipio pode legislar sobre meio ambiente com a Uniao e o Estado, no limite do seu interesse local e em harmonia com a disciplina dos demais entes.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   }
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 157 (RE 729744) — natureza opinativa do parecer previo; julgamento das contas anuais do Prefeito pela Camara",
+   "purpose": "natureza do parecer previo e competencia da Camara",
+   "local_identity_searched": "STF:RG:157",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF Tema 157, RE 729744",
+    "thesis_summary": "O parecer do Tribunal de Contas tem natureza opinativa; compete a Camara Municipal o julgamento das contas anuais do Prefeito.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 835 (RE 848826) — contas de governo e de gestao do Prefeito apreciadas pela Camara (LC 64/1990)",
+   "purpose": "contas de governo x contas de gestao",
+   "local_identity_searched": "STF:RG:835",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF Tema 835, RE 848826",
+    "thesis_summary": "Para os fins da LC 64/1990, as contas de governo e de gestao do Prefeito sao apreciadas pela Camara Municipal com o auxilio do Tribunal de Contas, cujo parecer so deixa de prevalecer por decisao de 2/3 dos vereadores.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.X",
+   "desired_reference": "STF Sumula 702 — competencia do Tribunal de Justica para julgar prefeitos restrita aos crimes da Justica comum estadual",
+   "purpose": "delimitar o foro do Prefeito",
+   "local_identity_searched": "STF:SUMULA:702",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF Sumula 702",
+    "thesis_summary": "A competencia do Tribunal de Justica para julgar prefeitos restringe-se aos crimes de competencia da Justica comum estadual; nos demais casos, a competencia originaria cabera ao respectivo tribunal de segundo grau.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.X",
+   "desired_reference": "STF 2025 — HC 232627 e Inq 4787: prerrogativa de foro para crimes praticados no cargo e em razao das funcoes subsiste apos o afastamento",
+   "purpose": "permanencia do foro apos o termino do mandato (entendimento mutavel; somente CAMADA EXTERNA)",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF HC 232627; STF Inq 4787 (2025)",
+    "thesis_summary": "A prerrogativa de foro para crimes praticados no cargo e em razao das funcoes subsiste mesmo apos o afastamento do cargo.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2",
+   "desired_reference": "STF Sumula Vinculante 46 — competencia legislativa privativa da Uniao para definir crimes de responsabilidade e normas de processo e julgamento",
+   "purpose": "quem define os crimes de responsabilidade do art. 29-A",
+   "local_identity_searched": "STF:SV:46",
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF Sumula Vinculante 46",
+    "thesis_summary": "A definicao dos crimes de responsabilidade e o estabelecimento das respectivas normas de processo e julgamento sao da competencia legislativa privativa da Uniao.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.25:PAR.3",
+   "desired_reference": "STF — gestao compartilhada das funcoes publicas de interesse comum em regioes metropolitanas (saneamento) (candidato a confirmar em fonte oficial)",
+   "purpose": "limites da atuacao estadual na regiao metropolitana",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.35:INC.IV",
+   "desired_reference": "STF — taxatividade das hipoteses de intervencao estadual (art. 35) e natureza politico-administrativa do procedimento no Judiciario (ADI 336, ADI 7369, AI 343461 AgR)",
+   "purpose": "provenance da aprovacao do art. 35, IV (texto principal inalterado)",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF ADI 336; STF ADI 7369; STF AI 343461 AgR",
+    "thesis_summary": "As hipoteses de intervencao estadual em Municipio do art. 35 sao taxativas; os Estados nao podem amplia-las ou restringi-las; o procedimento perante o Judiciario tem natureza politico-administrativa.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  },
+  {
+   "target_id": "CF88:ART.36:INC.I",
+   "desired_reference": "STF ADI 2167 — intervencao com carater vinculado ou discricionario conforme a hipotese constitucional",
+   "purpose": "grau de vinculacao do chefe do Executivo (somente CAMADA EXTERNA)",
+   "local_identity_searched": null,
+   "local_record_found": false,
+   "local_reference_id": null,
+   "already_linked_to_target": false,
+   "subject_verification": null,
+   "status": "PENDING_EXTERNAL_INGESTION",
+   "official_verification": {
+    "status": "OFFICIALLY_VERIFIED",
+    "identity_officially_verified": true,
+    "official_reference": "STF ADI 2167",
+    "thesis_summary": "A intervencao, conforme a hipotese constitucional, pode apresentar carater vinculado ou discricionario.",
+    "verified_on": "2026-10-01",
+    "verified_by": "auditoria editorial ChatGPT em fonte oficial do STF, autorizada por Arthur",
+    "local_ingestion": "nao realizada nesta etapa (nada fabricado)"
+   },
+   "note": "Registro nao existe no acervo local curado; nada foi fabricado. Requer ingestao oficial."
+  }
+ ]
+}

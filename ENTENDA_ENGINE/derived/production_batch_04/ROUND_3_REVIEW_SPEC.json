@@ -1,0 +1,275 @@
+{
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "review_scope": "CF88_ARTS_32_36_ROUND_3",
+ "decisions_schema": 2,
+ "partial_round": true,
+ "original_drafts": "BATCH_04_DRAFTS_PRE_ROUND3.json",
+ "reviewed_drafts_out": "BATCH_04_DRAFTS.json",
+ "decisions_out": [
+  "ROUND_3_HUMAN_REVIEW_DECISIONS.json"
+ ],
+ "evidence_sha256": {
+  "BATCH_04_DRAFTS_PRE_ROUND3.json": "3626073b48b2f0ad8dbd6051d6b6f668f273e9bad1fc5c1a1e7f3193fe5c677c",
+  "REVIEW_BATCH_04_ROUND_3_ART32_36.md": "c55fc28a71fdb6dc97254276d0526647c4f19c1846d3ff56dbbc8d0767f56367",
+  "REVIEW_BATCH_04_ROUND_3_RISK_TRIAGE.md": "1ae93cb15dc25af175f3c1a3a07e2560d1be04a3dc1531c263f88d85f6bfd2ea",
+  "REVIEW_BATCH_04_ROUND_3_RISK_TRIAGE.json": "edc08de4204eb45a12b9909d49313d770d4d8c342b7564760f77c3f41954883e",
+  "CF88_BATCH_04.entenda.jsonl": "5f71ae4b2ff3394b72a6b561a7f3dfa058fbed7d7560d58724d0e02f27e47679"
+ },
+ "human_review": {
+  "reviewed_on": "2026-10-01",
+  "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+  "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+  "reviewer": "auditoria editorial ChatGPT (texto constitucional vigente e fontes oficiais), autorizada por Arthur (usuario do projeto)",
+  "standard": "ENTENDA-T1 (+ regra editorial de linguagem para iniciantes, §15)",
+  "decision": "ROUND 3 (arts. 32 a 36) AUDITADO: 11 aprovadas sem alteracao, 9 aprovadas apos ajustes pontuais; 0 decisoes do Arthur necessarias",
+  "review_scope": "CF88_ARTS_32_36_ROUND_3"
+ },
+ "reviews": [
+  {
+   "target_id": "CF88:ART.32:PAR.1",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A classificacao do primeiro exemplo como \"tema de perfil estadual\" era desnecessariamente discutivel.",
+   "edits": [
+    {
+     "section": "exemplo_pratico",
+     "before": "A Câmara Legislativa aprova uma lei sobre transporte entre regiões do Distrito Federal (tema de perfil estadual) e outra sobre o horário do comércio (tema de interesse local).",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "A Câmara Legislativa pode aprovar tanto uma lei sobre matéria que, nos Estados, pertence à competência legislativa estadual quanto uma lei sobre assunto de interesse local, que nos Municípios seria disciplinado pela legislação municipal. Isso ocorre porque o Distrito Federal reúne as duas competências."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.32:PAR.4",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A comparacao com os Estados simplificava demais o regime constitucional das forcas de seguranca estaduais.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Nos Estados, o Governador comanda as suas polícias com base na legislação estadual. No Distrito Federal é diferente: essas forças são organizadas e mantidas pela União, conforme o art. 21.\nPor isso, a forma como o Governo do Distrito Federal pode usá-las é definida por lei federal, e não por lei distrital.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "O Distrito Federal possui um regime constitucional especial para suas forças de segurança. A polícia civil, a polícia penal, a polícia militar e o corpo de bombeiros militar do Distrito Federal são organizados e mantidos pela União, conforme o art. 21 da Constituição.\nPor isso, a Constituição determina que uma lei federal discipline a forma de utilização dessas forças pelo Governo do Distrito Federal."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.33",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "DECISAO EDITORIAL: informacao factual sobre a existencia atual de Territorios sai do nucleo permanente e vai para nota factual temporal (FACTUAL_TEMPORAL_NOTE = TRUE; SOURCE = IBGE; REVIEW_ON_TERRITORIAL_CHANGE = TRUE).",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Hoje não existe Território Federal no Brasil. Mas a Constituição mantém a possibilidade de criá-los, por lei complementar, e o art. 33 já deixa preparadas as regras.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "A Constituição admite a existência de Territórios Federais e estabelece previamente como eles devem ser organizados. A criação de Territórios depende das regras constitucionais próprias, inclusive do art. 18, § 2º."
+    },
+    {
+     "section": "o_que_significa",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "before": "As contas do governo do Território não vão a uma Assembleia, porque não há: vão ao Congresso Nacional, com parecer do Tribunal de Contas da União.",
+     "after": "As contas do Governo do Território são submetidas ao Congresso Nacional, acompanhadas de parecer prévio do Tribunal de Contas da União, como determina expressamente a Constituição."
+    },
+    {
+     "section": "atencao",
+     "before": "Previsão constitucional não significa existência atual. O art. 33 descreve como funcionaria um Território, mas hoje nenhum está instalado.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "O art. 33 estabelece um regime constitucional para os Territórios Federais independentemente de existir ou não algum Território instalado em determinado momento."
+    },
+    {
+     "section": "temporal",
+     "before": null,
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": {
+      "time_sensitive": true,
+      "as_of": "2026-10-01",
+      "notes": [
+       {
+        "note_id": "ART33_SITUACAO_ATUAL_TERRITORIOS",
+        "source_type": "DADO_FACTUAL_OFICIAL",
+        "source_id": "IBGE",
+        "text": "SITUAÇÃO ATUAL — Na organização político-administrativa brasileira vigente em 2026, o Brasil possui 26 Estados e o Distrito Federal, sem Território Federal atualmente instalado. Esta informação é factual e temporal, não integra a regra permanente do art. 33.",
+        "review_after": "2027-10-01",
+        "verified_on": "2026-10-01",
+        "factual_temporal_note": true,
+        "review_on_territorial_change": true,
+        "provenance": "decisao editorial da revisao assistida do Round 3 (2026-10-01); fonte: IBGE"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.34",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "\"Intervir e suspender temporariamente essa autonomia\" era amplo demais.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A regra é a autonomia dos Estados e do Distrito Federal. Intervir é suspender temporariamente essa autonomia: a União passa a atuar dentro do ente, podendo até afastar autoridades locais.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "A regra é a autonomia dos Estados e do Distrito Federal. A intervenção é uma medida excepcional que restringe temporariamente essa autonomia na extensão necessária para enfrentar uma das situações previstas pela Constituição. Conforme o caso, pode atingir apenas determinada área ou função e pode envolver o afastamento de autoridades."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.34:INC.IV",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Definicao de requisicao sem afirmacao geral sobre o grau de vinculacao presidencial.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Requisição",
+     "before": "pedido de tribunal com força de ordem, previsto na Constituição.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "ato formal do tribunal competente previsto pela Constituição para provocar a intervenção na hipótese correspondente."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "\"A intervencao pode ser decretada\" podia ser lido como afirmacao sobre discricionariedade do Presidente.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Se o Supremo der provimento, a intervenção pode ser decretada (art. 36, III).",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Se o Supremo der provimento à representação, fica atendida a condição constitucional exigida pelo art. 36 para a decretação da intervenção."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.35:INC.I",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "O requisito temporal de dois anos e especifico da divida fundada; exemplo e ATENCAO ajustados.",
+   "edits": [
+    {
+     "section": "exemplo_pratico",
+     "before": "Um Município aplica em educação, por vários anos, menos que o mínimo constitucional da sua receita de impostos. O Estado pode intervir para assegurar a aplicação desse mínimo.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Um Município deixa de aplicar o mínimo constitucional exigido para a manutenção e o desenvolvimento do ensino. Configurada a hipótese constitucional, o Estado pode intervir para assegurar o cumprimento dessa obrigação."
+    },
+    {
+     "section": "atencao",
+     "before": "Falhas pontuais ou atrasos curtos não configuram essas hipóteses. O texto descreve situações graves: dívida não paga por dois anos, contas não prestadas, mínimo não aplicado.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Cada hipótese possui seus próprios requisitos. No inciso I, a dívida fundada deve permanecer sem pagamento por dois anos consecutivos e sem motivo de força maior. Já os incisos II e III tratam, respectivamente, da falta de prestação das contas devidas e da não aplicação dos mínimos constitucionais em ensino e saúde, sem criar esse mesmo prazo de dois anos."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.36:INC.I",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "RED principal do Round 3: O QUE SIGNIFICA, ATENCAO e definicoes reescritos sem generalizar o grau de vinculacao; ADI 2167 na CAMADA EXTERNA (EXTERNAL_VERIFICATION_RESOLVED = TRUE). O QUE DIZ mantido.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O bloco usa três palavras diferentes, que indicam graus diferentes de vinculação.\nSolicitação é o pedido feito pelo Poder estadual prejudicado. A requisição vem de um tribunal superior e tem força de ordem. O provimento é a decisão do Supremo Tribunal Federal que acolhe a representação do Procurador-Geral da República.\nNas hipóteses do art. 34 não mencionadas aqui, como a defesa da integridade nacional, o Presidente decreta a intervenção por iniciativa própria.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "A Constituição prevê caminhos diferentes para iniciar a intervenção conforme a hipótese.\nNa solicitação, o Poder Legislativo ou o Poder Executivo estadual que estiver coagido ou impedido pede a intervenção. Se a coação atingir o Poder Judiciário, a Constituição prevê requisição do Supremo Tribunal Federal.\nQuando houver desobediência a ordem ou decisão judicial, a intervenção depende de requisição do tribunal superior competente — Supremo Tribunal Federal, Superior Tribunal de Justiça ou Tribunal Superior Eleitoral, conforme a matéria.\nNos casos de violação dos princípios sensíveis do art. 34, VII, ou de recusa à execução de lei federal, o Procurador-Geral da República apresenta representação ao Supremo Tribunal Federal, e a intervenção depende do provimento dessa representação.\nEsses termos indicam procedimentos constitucionais diferentes. O grau de vinculação do chefe do Executivo em cada hipótese depende do regime constitucional e da interpretação aplicável, ficando essa discussão na camada externa."
+    },
+    {
+     "section": "atencao",
+     "before": "O grau de liberdade do Presidente varia conforme a forma de provocação. O alcance exato dessa liberdade em cada caso é tema de interpretação constitucional.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Não trate solicitação, requisição e provimento como sinônimos. Cada um corresponde a um caminho constitucional diferente para a intervenção. Também não se deve presumir uma única regra de discricionariedade presidencial para todas as hipóteses."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Solicitação",
+     "before": "pedido feito por um Poder estadual coagido ou impedido.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "pedido do Poder Legislativo ou Executivo estadual coagido ou impedido, na hipótese prevista no art. 36, I."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Requisição",
+     "before": "pedido de tribunal com força de ordem, previsto na Constituição.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "ato formal do tribunal competente que constitui a forma de provocação prevista pela Constituição em determinadas hipóteses de intervenção."
+    },
+    {
+     "section": "palavras_dificeis",
+     "termo": "Provimento",
+     "before": "decisão que acolhe o pedido apresentado ao tribunal.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "decisão judicial que acolhe a representação apresentada ao tribunal."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": null,
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "O STF registra que a intervenção, conforme a hipótese constitucional, pode apresentar caráter vinculado ou discricionário (ADI 2167). Essa distinção não é generalizada no texto principal do ENTENDA e deve ser analisada conforme a hipótese concreta."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.3",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A frase contrapunha de maneira absoluta atuacao judicial e atuacao do Executivo.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Nessas hipóteses, a intervenção nasce de uma decisão ou requisição judicial, e não da avaliação política do chefe do Executivo. Por isso a Constituição dispensa a apreciação pelo Legislativo.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Nessas hipóteses há atuação judicial prévia expressamente prevista pela Constituição. Em razão desse procedimento específico, o § 3º dispensa a apreciação posterior pelo Congresso Nacional ou pela Assembleia Legislativa."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.32",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.32:PAR.2",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.33:PAR.3",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.I",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.V",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VI",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.35",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.36",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.1",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.4",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.35:INC.IV",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao. Verificacao STF resolvida (provenance; texto principal inalterado): as hipoteses de intervencao estadual do art. 35 sao taxativas; os Estados nao podem amplia-las ou restringi-las; o procedimento perante o Judiciario tem natureza politico-administrativa (ADI 336, ADI 7369, AI 343461 AgR). Nenhum legitimado unico nacional foi atribuido a representacao."
+  }
+ ]
+}

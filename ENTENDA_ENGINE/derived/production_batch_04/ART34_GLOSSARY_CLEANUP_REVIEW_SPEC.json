@@ -1,0 +1,39 @@
+{
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "review_scope": "CF88_ART34_GLOSSARY_EDITORIAL_CLEANUP",
+ "decisions_schema": 2,
+ "partial_round": true,
+ "original_drafts": "BATCH_04_DRAFTS_PRE_ART34_CLEANUP.json",
+ "reviewed_drafts_out": "BATCH_04_DRAFTS_ART34_CLEANUP.json",
+ "decisions_out": [
+  "ART34_GLOSSARY_CLEANUP_DECISIONS.json"
+ ],
+ "evidence_sha256": {
+  "BATCH_04_DRAFTS_PRE_ART34_CLEANUP.json": "b5616cdce749b6b744ada91bb289c19277e29cd5ecbf11583e0e46c3e65658de"
+ },
+ "human_review": {
+  "reviewed_on": "2026-10-03",
+  "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+  "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+  "reviewer": "limpeza autorizada por Arthur na missao LEX_DEVICE_V1_BATCH04_RUN3_CONSOLIDATION_FINAL_PREDEPLOY (somente este verbete)",
+  "standard": "ENTENDA-T1 (+ regra editorial de linguagem para iniciantes, §15)",
+  "decision": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE: verbete de PALAVRAS DIFICEIS alinhado ao texto aprovado (\"restringe temporariamente\")",
+  "review_scope": "CF88_ART34_GLOSSARY_EDITORIAL_CLEANUP"
+ },
+ "reviews": [
+  {
+   "target_id": "CF88:ART.34",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE: o texto aprovado (O QUE SIGNIFICA) diz que a intervencao \"restringe temporariamente\" a autonomia, na extensao necessaria; o verbete antigo dizia \"suspende temporariamente\". Somente o verbete foi alinhado.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Intervenção federal",
+     "before": "medida excepcional em que a União suspende temporariamente a autonomia de um Estado ou do Distrito Federal.",
+     "after": "medida excepcional em que a União restringe temporariamente a autonomia de um Estado ou do Distrito Federal.",
+     "kind": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE"
+    }
+   ]
+  }
+ ]
+}

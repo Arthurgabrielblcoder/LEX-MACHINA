@@ -1,0 +1,311 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "round": "ROUND_2_ART29_31",
+ "as_of": "2026-10-01",
+ "method": "ASSISTED_RISK_BASED_HUMAN_REVIEW (triagem; nenhum texto alterado; status inalterado PENDING_HUMAN_REVIEW)",
+ "counts": {
+  "GREEN": 3,
+  "YELLOW": 19,
+  "RED": 2
+ },
+ "explanations": [
+  {
+   "target_id": "CF88:ART.29",
+   "title": "Art. 29 — Município e Lei Orgânica",
+   "explanation_id": "ENTENDA/CF88:ART.29/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "quórum e prazo (dois turnos, interstício de dez dias, dois terços)",
+    "inferência além do texto literal: promulgação pela Câmara \"sem sanção do Prefeito\""
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.I",
+   "title": "Art. 29, incisos I, II e III — Eleição, mandato e posse no Município",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.I/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "regra eleitoral (eleição simultânea, segundo turno só acima de 200 mil eleitores)",
+    "quantidade (200 mil eleitores; eleitores x habitantes)",
+    "CAMADA EXTERNA com nota histórica (EC 107/2020), já decidida"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV",
+   "title": "Art. 29, inciso IV — Número máximo de Vereadores",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.IV/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "quantidades (24 faixas populacionais, 9 a 55 Vereadores)",
+    "exemplo numérico (40 mil habitantes → até 13)",
+    "afirmação de que a composição considera a população apurada oficialmente (fora do texto do inciso)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.V",
+   "title": "Art. 29, incisos V, VI e VII — Remuneração dos agentes políticos municipais",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.V/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "percentuais e tetos (20% a 75% do subsídio estadual; 5% da receita)",
+    "regra temporal (fixação de uma legislatura para a seguinte)",
+    "remissão ao teto do art. 37, XI e interação com o art. 29-A"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VIII",
+   "title": "Art. 29, incisos VIII e IX — Garantias e proibições dos Vereadores",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.VIII/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "conceito técnico (inviolabilidade, circunscrição)",
+    "exceção: o Vereador não tem as demais imunidades parlamentares",
+    "CAMADA EXTERNA (alcance da inviolabilidade: nexo com o mandato e limite territorial)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.X",
+   "title": "Art. 29, inciso X — Julgamento do Prefeito no Tribunal de Justiça",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.X/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "competência (foro por prerrogativa de função)",
+    "interpretação além do texto: \"em regra, está ligado ao exercício da função\"",
+    "jurisprudência recomendada pendente de ingestão (alcance do foro do Prefeito; candidato: Súmula 702, a confirmar)"
+   ],
+   "external_verification_needed": "YES",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XII",
+   "title": "Art. 29, incisos XII e XIII — Participação popular no Município",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.XII/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "percentual (5% do eleitorado)",
+    "conceito técnico (iniciativa popular)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XIV",
+   "title": "Art. 29, inciso XIV — Perda do mandato do Prefeito",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.XIV/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "remissão constitucional desatualizada (art. 28, parágrafo único → § 1º), já decidida na sanitização",
+    "CAMADA EXTERNA"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29-A",
+   "title": "Art. 29-A — Limites de despesa da Câmara Municipal",
+   "explanation_id": "ENTENDA/CF88:ART.29-A/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "base de cálculo complexa (receita tributária + transferências dos arts. 153, § 5º, 158 e 159, realizada no exercício anterior)",
+    "conceito técnico (repasse/duodécimo)",
+    "inclui inativos e pensionistas no total da despesa"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.I",
+   "title": "Art. 29-A, incisos I, II, III, IV, V e VI — Percentuais por faixa de população",
+   "explanation_id": "ENTENDA/CF88:ART.29-A:INC.I/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "percentuais por faixa (7% a 3,5%)",
+    "faixas do texto oficial com fronteira sobreposta em 100 mil habitantes (incisos I e II)",
+    "exemplo numérico hipotético"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.1",
+   "title": "Art. 29-A, § 1º — Limite da folha de pagamento da Câmara",
+   "explanation_id": "ENTENDA/CF88:ART.29-A:PAR.1/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "percentual (70% com folha)",
+    "interpretação de \"receita da Câmara\" como o valor recebido para funcionar",
+    "exemplo numérico hipotético"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2",
+   "title": "Art. 29-A, §§ 2º e 3º — Crimes de responsabilidade no repasse",
+   "explanation_id": "ENTENDA/CF88:ART.29-A:PAR.2/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "prazo (repasse até o dia 20)",
+    "conceito técnico (crime de responsabilidade) e competência legislativa federal",
+    "jurisprudência recomendada pendente de ingestão (candidato: Súmula Vinculante 46, a confirmar)"
+   ],
+   "external_verification_needed": "YES",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30",
+   "title": "Art. 30 — Competências dos Municípios",
+   "explanation_id": "ENTENDA/CF88:ART.30/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "competência federativa (legislativa x administrativa/material; competência comum do art. 23)",
+    "definição de interesse local por predominância (interpretação além do texto)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.I",
+   "title": "Art. 30, inciso I — Interesse local",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.I/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "competência federativa e conceito indeterminado (interesse local)",
+    "critério da predominância é construção interpretativa",
+    "jurisprudência recomendada READY_TO_LINK (Tema 145) e CAMADA EXTERNA"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.II",
+   "title": "Art. 30, inciso II — Competência suplementar do Município",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.II/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "competência federativa (suplementar x concorrente)",
+    "interpretação além do texto sobre a atuação municipal nos temas do art. 24"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.III",
+   "title": "Art. 30, inciso III — Tributos municipais e prestação de contas",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.III/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "sistema tributário com vigência em transição (reforma tributária; regras de transição dos tributos municipais)",
+    "CAMADA EXTERNA sobre a reforma; o corpo cita apenas o IPTU e os arts. 145 e 156"
+   ],
+   "external_verification_needed": "YES",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.V",
+   "title": "Art. 30, inciso V — Serviços públicos de interesse local",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.V/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "conceitos técnicos (concessão, permissão, titularidade)",
+    "caracterização da permissão como \"em regra mais simples e precária\""
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VI",
+   "title": "Art. 30, incisos VI e VII — Educação básica e saúde com cooperação",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.VI/BASE/1",
+   "risk": "GREEN",
+   "risk_reasons": [
+    "texto estável e diretamente derivado da Constituição (educação infantil, ensino fundamental, saúde, cooperação)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VIII",
+   "title": "Art. 30, inciso VIII — Ordenamento do solo urbano",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.VIII/BASE/1",
+   "risk": "GREEN",
+   "risk_reasons": [
+    "texto estável e diretamente derivado da Constituição (uso, parcelamento e ocupação do solo; remissão simples ao art. 182)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.IX",
+   "title": "Art. 30, inciso IX — Patrimônio histórico-cultural local",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.IX/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "conceito técnico (tombamento)",
+    "exemplo descreve efeitos do tombamento que dependem da legislação aplicável"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.31",
+   "title": "Art. 31 — Fiscalização do Município",
+   "explanation_id": "ENTENDA/CF88:ART.31/BASE/1",
+   "risk": "GREEN",
+   "risk_reasons": [
+    "texto estável e diretamente derivado da Constituição (controle externo pela Câmara e controle interno do Executivo)"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.1",
+   "title": "Art. 31, §§ 1º e 4º — Órgãos de contas que auxiliam a Câmara",
+   "explanation_id": "ENTENDA/CF88:ART.31:PAR.1/BASE/1",
+   "risk": "RED",
+   "risk_reasons": [
+    "redação nova (EC 139/2026) com alcance ainda sem leitura consolidada: vedação de extinção, criação ou instalação",
+    "relação entre a cláusula final do § 1º e a vedação do § 4º; situação dos órgãos de contas municipais existentes",
+    "risco de erro relevante ao descrever quais órgãos são alcançados"
+   ],
+   "external_verification_needed": "YES",
+   "editorial_decision_needed": "YES"
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.2",
+   "title": "Art. 31, § 2º — Parecer prévio sobre as contas do Prefeito",
+   "explanation_id": "ENTENDA/CF88:ART.31:PAR.2/BASE/1",
+   "risk": "RED",
+   "risk_reasons": [
+    "jurisprudência essencial não confirmada localmente (natureza do parecer prévio; julgamento das contas do Prefeito pela Câmara; contas de governo x contas de gestão; candidatos Temas 157 e 835, a confirmar)",
+    "quórum de dois terços dos membros",
+    "decisão editorial: quanto dessa distinção entra no corpo e quanto fica na CAMADA EXTERNA"
+   ],
+   "external_verification_needed": "YES",
+   "editorial_decision_needed": "YES"
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.3",
+   "title": "Art. 31, § 3º — Contas à disposição do contribuinte",
+   "explanation_id": "ENTENDA/CF88:ART.31:PAR.3/BASE/1",
+   "risk": "YELLOW",
+   "risk_reasons": [
+    "prazo (sessenta dias por ano)",
+    "vínculo local falso (Tema 756) já excluído pelo overlay CF88_LINK_EXCLUSIONS"
+   ],
+   "external_verification_needed": "NO",
+   "editorial_decision_needed": "NO"
+  }
+ ]
+}

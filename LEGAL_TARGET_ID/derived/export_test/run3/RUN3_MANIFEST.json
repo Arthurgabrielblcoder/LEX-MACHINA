@@ -1,0 +1,560 @@
+{
+ "schema_version": 1,
+ "run": "run3",
+ "status": "CANDIDATE_UNCOMMITTED_PENDING_REVIEW",
+ "derived_from": "run2 + CF88_WORK_REFERENCE_ADDITIONS (REFERENCE_EXPANSION_01)",
+ "norma_id": "CF88",
+ "inputs": {
+  "LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json": "89bd39c48c45e71eeb4b14c4e323f67c2e945c14ded8c86089c37e6578e19319",
+  "LEGAL_TARGET_ID/derived/CF88_TARGET_INDEX.json": "63a93c4477ec9e440c6ee279427fd33d59cc1835279e2501c2d3bf7098e7a2c2",
+  "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json": "5b88efebe9b41dae2cb3439805110e1e576d1c2a7ee67f1bdf4017dfa603a53b",
+  "LEGAL_TARGET_ID/derived/CF88_QUARANTINE_RESOLUTION.json": "22927227bd2057616a837a3648642780f221d71d1186b40331494e90893fb026",
+  "LEGAL_TARGET_ID/derived/CF88_LINK_EXCLUSIONS.json": "f2c622a0be7d6db8b8a10e2503562950b439c22dadf5dbe3de706045a9140cae",
+  "LEGAL_TARGET_ID/derived/CF88_WORK_REFERENCE_ADDITIONS.json": "e6cb6b04994c2e224fb1bd838b840c481755a3b305f6355da36e038258f5dcae",
+  "REFERENCE_REGISTRY/WORK_REGISTRY_V2.json": "2d28eeabbe2680221c276e3dabfb1588f649f5f9503e2fbf737ba562b5427fd8",
+  "LEX_MACHINA_REFERENCIAS_ADAPTADOR_CATALOGO_69_V1/CATALOGO_69_CANONICO.json": "58d742a2592f54eb309c3900871d77fc6253a1fb20f7571f1913755fd9797a77",
+  "REFERENCE_COVERAGE_AUDIT/REFERENCE_EXPANSION_ROUND1_DECISIONS.json": "7acfceff34325268bc0f8acaef10b300f13055821612a5ebdaaeaa441e8999ab",
+  "LEGAL_TARGET_ID/engine_config.json": "bb25cc6285a6157aaa04f61b8e8b91d2143764fb49523bb838e3dbbbf11e5119",
+  "LEGAL_TARGET_ID/reference_engine.py": "e243621de00f68bd8091c25c4c2cafecbe84d8bfed12a8100039eb78b6432d91"
+ },
+ "outputs": {
+  "run3/CF88_REFERENCES_EXPORT.json": "cb10096e0d4fce187f4e8e279f32c213b69a61f6fabe4add4cc8d31ff65326ba",
+  "run3/device_candidate/lex_ref_detail_data.RUN3_CANDIDATE.h": "2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b",
+  "run3/REF_LOOKUP.IDX": "6d6c88d79bb63a74443de92a52768bb058b56f7b6da1e899746c58d513970ac8",
+  "run3/REF_PAYLOAD.IDX": "24b4f0d97ec004303a6e327a6abf76054eeb05c8cd2a44a424bd70c8341f58ea"
+ },
+ "device_staging_candidate": {
+  "path": "DEVICE_INTEGRATION/staging_sd_v1_run3_candidate",
+  "files": {
+   "99_LEX_V1/00_SYS/LEXV1.VER": {
+    "bytes": 598,
+    "sha256": "3d4910fe43a1147d26ccf95fe65beadf112d2e1f17c18be9ca8c57a8d463b27d"
+   },
+   "99_LEX_V1/05_TEXT/CF88_RUNTIME.txt": {
+    "bytes": 587133,
+    "sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a"
+   },
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+    "bytes": 165466,
+    "sha256": "967ac10ad762a141ba48775d54b3546661025e33a269fb322672069a7f0017a9"
+   },
+   "99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX": {
+    "bytes": 123578,
+    "sha256": "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96"
+   },
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+    "bytes": 6955,
+    "sha256": "6d6c88d79bb63a74443de92a52768bb058b56f7b6da1e899746c58d513970ac8"
+   },
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+    "bytes": 68075,
+    "sha256": "24b4f0d97ec004303a6e327a6abf76054eeb05c8cd2a44a424bd70c8341f58ea"
+   },
+   "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": {
+    "bytes": 30462,
+    "sha256": "93613275d4e0caf95ed58f1fe8e29cc90039d73ec9d302fc7ce0af2e5f816ddc"
+   },
+   "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": {
+    "bytes": 302915,
+    "sha256": "a7511b917f658fd411b0f46c241415e77148c9b1c8ed1780a797958fe640c029"
+   }
+  },
+  "build_id": "be157ffec81343da",
+  "targets_flag_changes_vs_baseline": [
+   {
+    "target_id": "ADCT:ART.68",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.134:CAPUT",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.144:PAR.5",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.144:PAR.7",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.145:PAR.1",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.182:CAPUT",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.182:PAR.1",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.184:CAPUT",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.192",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.201:INC.I",
+    "baseline_run1": "-C--R-",
+    "run3": "-C-WR-"
+   },
+   {
+    "target_id": "CF88:ART.215:PAR.1",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.231:CAPUT",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.25",
+    "baseline_run1": "--J-R-",
+    "run3": "------"
+   },
+   {
+    "target_id": "CF88:ART.31:PAR.3",
+    "baseline_run1": "--J-R-",
+    "run3": "------"
+   },
+   {
+    "target_id": "CF88:ART.37:CAPUT",
+    "baseline_run1": "--J-R-",
+    "run3": "--JWR-"
+   },
+   {
+    "target_id": "CF88:ART.43:CAPUT",
+    "baseline_run1": "--J-R-",
+    "run3": "--JWR-"
+   },
+   {
+    "target_id": "CF88:ART.43:PAR.2:INC.IV",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.52:INC.I",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.58:PAR.3",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   },
+   {
+    "target_id": "CF88:ART.62:CAPUT",
+    "baseline_run1": "--J-R-",
+    "run3": "--JWR-"
+   },
+   {
+    "target_id": "CF88:ART.7:INC.XXXIII",
+    "baseline_run1": "E-----",
+    "run3": "E--WR-"
+   },
+   {
+    "target_id": "CF88:ART.86:CAPUT",
+    "baseline_run1": "------",
+    "run3": "---WR-"
+   }
+  ],
+  "note": "Inclui o ENTENDA aprovado do baseline (Batches 01-03 + pilotos). NAO inclui Batch04. NAO copiado para /99_LEX_V1 fisico."
+ },
+ "previous_runs": {
+  "run1": {
+   "files": {
+    "CF88_REFERENCES_EXPORT.json": "004df87b0977b6f8624d7edf349d3d4b6ae60ad2016bbdba020aa8fe5ba67a89",
+    "REF_LOOKUP.IDX": "9665fb854fe5b91fc5a1aa640b6eb8270583e3c6414720e99f37f9608ccb3c12",
+    "REF_PAYLOAD.IDX": "1c772c83b6cfe381ddb1674b73126dbf2fb6cf354fe16d708194cdad0de94228"
+   },
+   "preserved": true
+  },
+  "run2": {
+   "files": {
+    "CF88_REFERENCES_EXPORT.json": "2c9da1317e2efc8f77ecdb0355caf6b0602c75795ce1b94578824e622b4d4973",
+    "REF_LOOKUP.IDX": "d6a912b711920db469d8623f76f733ca4fd68c82bed07b7b67719c38e6a5733e",
+    "REF_PAYLOAD.IDX": "5dcb9be60f3212f3cacc0a8b8a1fc7fbc07662b313b73b91c3f36921d67bbfd0"
+   },
+   "preserved": true
+  }
+ },
+ "counts": {
+  "run2": {
+   "total": 430,
+   "jurisprudence_visible": 277,
+   "correlata_visible": 44,
+   "work_reference": 101,
+   "hidden": 8,
+   "work_targets": 43,
+   "work_articles_cf": 18,
+   "work_articles_adct": 0,
+   "work_targets_adct": 0
+  },
+  "run3": {
+   "total": 451,
+   "jurisprudence_visible": 277,
+   "correlata_visible": 44,
+   "work_reference": 122,
+   "hidden": 8,
+   "work_targets": 63,
+   "work_articles_cf": 33,
+   "work_articles_adct": 1,
+   "work_targets_adct": 1
+  },
+  "added_links": 21,
+  "registry_before": 69,
+  "registry_after": 73,
+  "promoted_works": [
+   "EXP2-LIV-040",
+   "EXP2-FIL-039",
+   "EXP2-FIL-006",
+   "EXP2-FIL-038"
+  ]
+ },
+ "added_links": [
+  "WORK_REFERENCE:EXP-DOC-005@CF88:ART.52:INC.I",
+  "WORK_REFERENCE:EXP-DOC-006@CF88:ART.86:CAPUT",
+  "WORK_REFERENCE:EXP-DOC-007@CF88:ART.231:CAPUT",
+  "WORK_REFERENCE:EXP-DOC-008@CF88:ART.184:CAPUT",
+  "WORK_REFERENCE:EXP-DOC-010@CF88:ART.182:CAPUT",
+  "WORK_REFERENCE:EXP-FIL-006@CF88:ART.201:INC.I",
+  "WORK_REFERENCE:EXP-FIL-007@CF88:ART.192",
+  "WORK_REFERENCE:EXP-JOG-002@CF88:ART.62:CAPUT",
+  "WORK_REFERENCE:EXP-JOG-003@CF88:ART.7:INC.XXXIII",
+  "WORK_REFERENCE:EXP-JOG-004@CF88:ART.182:PAR.1",
+  "WORK_REFERENCE:EXP-JOG-006@CF88:ART.215:PAR.1",
+  "WORK_REFERENCE:EXP-LIV-001@CF88:ART.37:CAPUT",
+  "WORK_REFERENCE:EXP-LIV-002@CF88:ART.37:CAPUT",
+  "WORK_REFERENCE:EXP-LIV-003@CF88:ART.43:CAPUT",
+  "WORK_REFERENCE:EXP-LIV-005@ADCT:ART.68",
+  "WORK_REFERENCE:EXP-LIV-009@CF88:ART.145:PAR.1",
+  "WORK_REFERENCE:EXP-SER-002@CF88:ART.144:PAR.7",
+  "WORK_REFERENCE:EXP2-FIL-006@CF88:ART.134:CAPUT",
+  "WORK_REFERENCE:EXP2-FIL-038@CF88:ART.144:PAR.5",
+  "WORK_REFERENCE:EXP2-FIL-039@CF88:ART.58:PAR.3",
+  "WORK_REFERENCE:EXP2-LIV-040@CF88:ART.43:PAR.2:INC.IV"
+ ],
+ "target_validation": [
+  {
+   "target_id": "CF88:ART.37:CAPUT",
+   "work_id": "EXP-LIV-002",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.37",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.37:CAPUT",
+   "work_id": "EXP-LIV-001",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.37",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.43:CAPUT",
+   "work_id": "EXP-LIV-003",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.43",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.43:PAR.2:INC.IV",
+   "work_id": "EXP2-LIV-040",
+   "in_target_index": true,
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.43:PAR.2:INC.IV",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.62:CAPUT",
+   "work_id": "EXP-JOG-002",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.62",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.201:INC.I",
+   "work_id": "EXP-FIL-006",
+   "in_target_index": true,
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.201:INC.I",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.86:CAPUT",
+   "work_id": "EXP-DOC-006",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.86",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.52:INC.I",
+   "work_id": "EXP-DOC-005",
+   "in_target_index": true,
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.52:INC.I",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.58:PAR.3",
+   "work_id": "EXP2-FIL-039",
+   "in_target_index": true,
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.58:PAR.3",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.134:CAPUT",
+   "work_id": "EXP2-FIL-006",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.134",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.5",
+   "work_id": "EXP2-FIL-038",
+   "in_target_index": true,
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.144:PAR.5",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.7",
+   "work_id": "EXP-SER-002",
+   "in_target_index": true,
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.144:PAR.7",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "work_id": "EXP-LIV-009",
+   "in_target_index": true,
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.145:PAR.1",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.182:CAPUT",
+   "work_id": "EXP-DOC-010",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.182",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.182:PAR.1",
+   "work_id": "EXP-JOG-004",
+   "in_target_index": true,
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.182:PAR.1",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.184:CAPUT",
+   "work_id": "EXP-DOC-008",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.184",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.192",
+   "work_id": "EXP-FIL-007",
+   "in_target_index": true,
+   "kind": "ARTIGO",
+   "status": "STRUCTURAL",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.192",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.215:PAR.1",
+   "work_id": "EXP-JOG-006",
+   "in_target_index": true,
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.215:PAR.1",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.231:CAPUT",
+   "work_id": "EXP-DOC-007",
+   "in_target_index": true,
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.231",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "ADCT:ART.68",
+   "work_id": "EXP-LIV-005",
+   "in_target_index": true,
+   "kind": "ARTIGO",
+   "status": "STRUCTURAL",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "ADCT",
+   "display_target": "ADCT:ART.68",
+   "filtered": false,
+   "valid": true
+  },
+  {
+   "target_id": "CF88:ART.7:INC.XXXIII",
+   "work_id": "EXP-JOG-003",
+   "in_target_index": true,
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "in_runtime": true,
+   "device_legal_status": "CURRENT",
+   "namespace": "CF88",
+   "display_target": "CF88:ART.7:INC.XXXIII",
+   "filtered": false,
+   "valid": true
+  }
+ ],
+ "checks": {
+  "run1_preserved": true,
+  "run2_preserved": true,
+  "run1_run2_reproduced": true,
+  "byte_identical": {
+   "export": true,
+   "header": true,
+   "staging": true
+  },
+  "only_additions_added": true,
+  "nothing_removed": true,
+  "no_existing_link_changed": true,
+  "additions_valid_targets": "21/21",
+  "exclusions_absent": true,
+  "exclusions_listed": true,
+  "header_keeps_baseline_entries": true,
+  "header_entries": 122,
+  "header_new_entries": 21,
+  "staging_entenda_unchanged": true,
+  "staging_runtime_text_unchanged": true,
+  "staging_text_map_unchanged": true,
+  "staging_refs_equal_run3": {
+   "REF_LOOKUP.IDX": true,
+   "REF_PAYLOAD.IDX": true
+  }
+ },
+ "not_done": [
+  "firmware nao alterado",
+  "header do baseline nao substituido",
+  "nada copiado para SD fisico",
+  "sem flash",
+  "sem merge com Batch04",
+  "sem commit/tag/push"
+ ]
+}

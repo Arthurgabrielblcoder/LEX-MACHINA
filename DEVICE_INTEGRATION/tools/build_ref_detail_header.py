@@ -8,7 +8,13 @@ WORK_REFERENCE rows of the approved device REF_PAYLOAD are emitted (the REF_PAYL
 There is NO approved "temas" field in the catalog: it is reported as REFERENCE_DETAIL_INCOMPLETE, never invented.
 
 Deterministic: sorted by key "TARGET_ID|WORK_ID"; the header records the sha256 of both inputs.
-Usage: python build_ref_detail_header.py [--check]
+
+CANDIDATE mode (--payload/--additions/--out): a later Reference Engine run (e.g. RUN3) adds human-approved links from the
+CF88_WORK_REFERENCE_ADDITIONS.json overlay; their approved fields are transported the same way (sobre = factual description of the
+work in the official registry, por_que, alcance + limites as a second paragraph, nota = approved score x 10, fonte = work id +
+round). The candidate header is written OUTSIDE the firmware folder and never replaces the baseline header.
+Usage: python build_ref_detail_header.py [--check]            (sketch header = APPROVED_PAYLOAD + APPROVED_ADDITIONS)
+       python build_ref_detail_header.py --payload RUN3/REF_PAYLOAD.IDX --additions ADDITIONS.json --out CANDIDATE.h [--check]
 """
 import hashlib
 import json
@@ -20,6 +26,11 @@ ROOT = DI.parent
 CANON = ROOT / 'LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json'
 PAYLOAD = ROOT / 'LEGAL_TARGET_ID/derived/export_test/run1/REF_PAYLOAD.IDX'
 OUT = ROOT / 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/lex_ref_detail_data.h'
+# physically approved baseline (2026-10-03, BATCH04+RUN3 r2): the sketch header is the RUN3 header, byte-identical to
+# LEGAL_TARGET_ID/derived/export_test/run3/device_candidate/lex_ref_detail_data.RUN3_CANDIDATE.h (its CANDIDATO comment is kept
+# so the versioned source is exactly the one compiled and flashed).
+APPROVED_PAYLOAD = ROOT / 'LEGAL_TARGET_ID/derived/export_test/run3/REF_PAYLOAD.IDX'
+APPROVED_ADDITIONS = ROOT / 'LEGAL_TARGET_ID/derived/CF88_WORK_REFERENCE_ADDITIONS.json'
 SCHEMA = 1
 RELACAO = {                                   # display names of the approved relacao_pedagogica codes (formatting only)
     'ILUSTRACAO_DE_VIOLACAO': 'Ilustração de violação',
@@ -56,10 +67,10 @@ def c_str(s):
     return '"' + ''.join(res) + '"'
 
 
-def records():
+def records(payload=PAYLOAD, additions=None):
     canon = json.loads(CANON.read_text(encoding='utf-8'))
     visible = set()
-    for l in PAYLOAD.read_text(encoding='utf-8').splitlines():
+    for l in Path(payload).read_text(encoding='utf-8').splitlines():
         if l and not l.startswith('#'):
             p = l.split('|')
             if p[1] == 'WORK_REFERENCE' and p[2] == 'CURRENT_VISIBLE':
@@ -87,6 +98,19 @@ def records():
             prev['nota'] = max(prev['nota'], rec['nota'])
             continue
         out[rec['key']] = rec
+    for a in (json.loads(Path(additions).read_text(encoding='utf-8'))['records'] if additions else []):
+        key = (a['target_id'], a['work_id'])
+        if key not in visible:
+            continue
+        if f'{key[0]}|{key[1]}' in out:
+            raise SystemExit(f'ADDITION_ALREADY_IN_CATALOG {key}')
+        alcance = a['alcance_neste_dispositivo'] + (f"\nLimites: {a['limites']}" if a.get('limites') else '')
+        out[f'{key[0]}|{key[1]}'] = dict(key=f'{key[0]}|{key[1]}', titulo=a['obra'], tipo=a['tipo'], ano=int(a['ano'] or 0),
+                                         nota=int(round(float(a['score_editorial']) * 10)), sobre=a['sobre'], por_que=a['por_que_esta_aqui'],
+                                         alcance=alcance, relacao='', fonte=f"{a['work_id']} · {a['provenance']['round']}")
+    missing = visible - {tuple(k.split('|')) for k in out}
+    if additions and missing:
+        raise SystemExit(f'VISIBLE_WORK_LINK_WITHOUT_DETAIL {sorted(missing)}')
     for rec in out.values():
         incomplete['tipo'] += not rec['tipo']
         incomplete['ano'] += not rec['ano']
@@ -97,11 +121,13 @@ def records():
     return [out[k] for k in sorted(out, key=lambda k: k.encode('utf-8'))], incomplete, len(visible)
 
 
-def render():
-    recs, incomplete, n_visible = records()
+def render(payload=PAYLOAD, additions=None):
+    recs, incomplete, n_visible = records(payload, additions)
     src = hashlib.sha256(CANON.read_bytes()).hexdigest()
-    pay = hashlib.sha256(PAYLOAD.read_bytes()).hexdigest()
-    L = ['#pragma once',
+    pay = hashlib.sha256(Path(payload).read_bytes()).hexdigest()
+    extra = [f'// CANDIDATO (nao substitui o header do baseline): + overlay {Path(additions).name} sha256 '
+             f'{hashlib.sha256(Path(additions).read_bytes()).hexdigest()}'] if additions else []
+    L = ['#pragma once'] + extra + [
          '// GERADO por DEVICE_INTEGRATION/tools/build_ref_detail_header.py - NAO EDITAR.',
          '// Metadados editoriais APROVADOS (RC2 revisado) dos vinculos obra <-> dispositivo, transportados sem reescrita.',
          f'// Fonte: LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json sha256 {src}',
@@ -123,11 +149,22 @@ def render():
     return '\n'.join(L) + '\n', recs, incomplete
 
 
+def _arg(name, default=None):
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else default
+
+
 if __name__ == '__main__':
-    txt, recs, inc = render()
+    out = Path(_arg('--out', OUT))
+    explicit = _arg('--payload') is not None or _arg('--additions') is not None
+    if (out.resolve() == OUT.resolve()) == explicit:
+        sys.exit('CANDIDATE_MUST_NOT_REPLACE_BASELINE_HEADER')       # sketch header only from the approved inputs
+    payload = Path(_arg('--payload', APPROVED_PAYLOAD if not explicit else PAYLOAD))
+    additions = _arg('--additions', None if explicit else APPROVED_ADDITIONS)
+    txt, recs, inc = render(payload, additions)
     if '--check' in sys.argv:
-        ok = OUT.is_file() and OUT.read_text(encoding='utf-8') == txt
+        ok = out.is_file() and out.read_text(encoding='utf-8') == txt
         print('UP_TO_DATE' if ok else 'STALE')
         sys.exit(0 if ok else 1)
-    OUT.write_bytes(txt.encode('utf-8'))
-    print(len(recs), inc, OUT.stat().st_size)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_bytes(txt.encode('utf-8'))
+    print(len(recs), inc, out.stat().st_size)

@@ -104,7 +104,7 @@ class DiagnosticCoverageTest(unittest.TestCase):
         cases = self.CASE_RE.findall(device_v1_ino_sections())
         ids = [c[0] for c in cases]
         self.assertEqual(ids, ['CF88:ART.5:INC.V', 'CF88:ART.21:INC.XXIV', 'CF88:ART.22:INC.XXIX', 'CF88:ART.24:PAR.4', 'CF88:ART.37:PAR.6',
-                               'CF88:ART.60:PAR.4:INC.IV', 'ADCT:ART.10:INC.II', 'CF88:ART.114:INC.VIII', 'CF88:ART.25', 'CF88:ART.999'])
+                               'CF88:ART.60:PAR.4:INC.IV', 'ADCT:ART.10:INC.II', 'CF88:ART.114:INC.VIII', 'CF88:ART.127', 'CF88:ART.999'])
         dev = S.Device(SD)
         try:
             for tid, exists, res, anchor, refs, visible in cases:
@@ -154,7 +154,7 @@ class DiagnosticCoverageTest(unittest.TestCase):
         dev = S.Device(SD)
         try:
             self.assertEqual(len(dev.references('CF88:ART.21:INC.XXIV')), 0)
-            self.assertEqual(len(dev.references('CF88:ART.25')), 1)
+            self.assertEqual(len(dev.references('CF88:ART.127')), 1)
             self.assertEqual(len(dev.references('CF88:ART.37:PAR.6')), 5)
             for r in dev.references('CF88:ART.37:PAR.6'):
                 self.assertEqual((len(r), r[0]), (7, 'CF88:ART.37:PAR.6'))            # the firmware requires 6 '|' and same key

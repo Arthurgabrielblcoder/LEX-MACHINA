@@ -1,0 +1,2134 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "norma_id": "CF88",
+ "scope": [
+  "CF88:ART.25",
+  "CF88:ART.26",
+  "CF88:ART.27",
+  "CF88:ART.28",
+  "CF88:ART.29",
+  "CF88:ART.29-A",
+  "CF88:ART.30",
+  "CF88:ART.31",
+  "CF88:ART.32",
+  "CF88:ART.33",
+  "CF88:ART.34",
+  "CF88:ART.35",
+  "CF88:ART.36"
+ ],
+ "policy": "ENTENDA-T1 (semantica)",
+ "summary": {
+  "targets_evaluated": 142,
+  "targets_current": 140,
+  "selected": 57,
+  "by_classification": {
+   "BLOCK": 16,
+   "DEVICE": 15,
+   "EXCLUDED_HISTORICAL": 1,
+   "EXCLUDED_REVOKED": 1,
+   "ITEM": 13,
+   "NO_SEPARATE_EXPLANATION": 83,
+   "OVERVIEW": 13
+  },
+  "historical_excluded": 1,
+  "revoked_excluded": 1,
+  "reused_from_pilot": 0,
+  "new_explanations": 57,
+  "batch_total_explanations": 57,
+  "soft_target": [
+   35,
+   55
+  ],
+  "hard_cap": 60,
+  "soft_target_status": "OUTSIDE_JUSTIFIED",
+  "soft_target_justification": "57 explicacoes novas (duas acima da meta de 55, abaixo do teto de 60) para 13 artigos e 140 dispositivos vigentes. O lote cobre quatro entes (Estados, Municipios, Distrito Federal e Territorios) e os tres artigos de intervencao; os arts. 29, 29-A e 30 concentram 79 dispositivos. Mesmo com 16 blocos (13 de irmaos, cobrindo 22 dispositivos, e 3 enunciados com alineas), que alcancam ao todo 62 dispositivos sem explicacao propria, separar competencia legislativa de administrativa (art. 30), o parecer previo (art. 31, § 2º) e cada grupo de hipoteses de intervencao exige explicacoes proprias; fundir mais misturaria categorias que o lote deve distinguir.",
+  "new_words_mean": 217,
+  "new_payload_bytes_mean": 1782,
+  "largest": {
+   "target_id": "CF88:ART.36:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.36:INC.I/BASE/2",
+   "role": "BLOCK",
+   "payload_bytes": 3079,
+   "words": 330,
+   "freshness": "FRESH",
+   "reference_count": 0
+  },
+  "files": {
+   "ENTENDA_LOOKUP.IDX": {
+    "sha256": "9edeac2be2279211bfc426e83c5720791b70b6c65cd1112a8d493050c6f88ef0",
+    "bytes": 8257
+   },
+   "ENTENDA_PAYLOAD.DAT": {
+    "sha256": "c78d511844283dbe428f51ae05f50d04288151aca0ffee8f62282df77cb9bd99",
+    "bytes": 101670
+   },
+   "ENTENDA_BUILD_MANIFEST.json": {
+    "sha256": "d3749c82784f67e170fbca9831d55f26414f2691a581b4e6e66eda6c77ac1760",
+    "bytes": 26342
+   }
+  },
+  "lookup_rows": 79,
+  "targets_with_references": 0,
+  "warnings": 25,
+  "warning_counts": {
+   "ABSOLUTE_CLAIM": 1,
+   "JURISPRUDENCE_WORDING_IN_BODY": 1,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 21,
+   "PARENT_REPETITION": 2
+  },
+  "focus_article": {
+   "target": "CF88:ART.29",
+   "evaluated": 46,
+   "own_explanations": 8,
+   "new_explanations": 8,
+   "incisos_evaluated": 14,
+   "no_separate": 38,
+   "by_classification": {
+    "OVERVIEW": 1,
+    "DEVICE": 0,
+    "BLOCK": 5,
+    "ITEM": 2,
+    "NO_SEPARATE_EXPLANATION": 38
+   }
+  },
+  "retired_versions": 24,
+  "review_status_counts": {
+   "HUMAN_APPROVED_T1": 57
+  },
+  "jurisprudence_recommendations": {
+   "total": 11,
+   "ready_to_link": 1,
+   "pending_external_ingestion": 8,
+   "identity_found_pending_subject_verification": 0,
+   "material_mismatch_excluded": 2
+  },
+  "targets_structurally_present": 142,
+  "targets_legally_current": 140,
+  "targets_revoked": 1,
+  "temporal_notes": {
+   "as_of": "2026-10-01",
+   "total": 2,
+   "not_yet_effective": 0,
+   "review_due": 0
+  }
+ },
+ "selection": [
+  {
+   "target_id": "CF88:ART.25",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.25/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do capitulo dos Estados: auto-organizacao pelo caput, competencia remanescente, gas canalizado e regioes metropolitanas, cada paragrafo com explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.25:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.25",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.25:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.25:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra autonoma e conceito proprio (competencia remanescente), frequentemente confundido com competencia concorrente ou suplementar."
+  },
+  {
+   "target_id": "CF88:ART.25:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.25:PAR.2/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Competencia material expressa dos Estados com vedacao especifica de medida provisoria: comando autonomo."
+  },
+  {
+   "target_id": "CF88:ART.25:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.25:PAR.3/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Instituto proprio com conceitos que o leitor iniciante nao conhece (regiao metropolitana, funcao publica de interesse comum)."
+  },
+  {
+   "target_id": "CF88:ART.26",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.26/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral dos bens estaduais. Aguas (I) e terras devolutas (IV) tem explicacoes proprias; as ilhas (II e III) sao explicadas aqui."
+  },
+  {
+   "target_id": "CF88:ART.26:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.26",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.26:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.26:INC.I/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Conceito proprio (aguas superficiais e subterraneas) com ressalva sobre obras da Uniao; distincao frequente com os rios federais do art. 20."
+  },
+  {
+   "target_id": "CF88:ART.26:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.26",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Areas estaduais nas ilhas oceanicas e costeiras: explicadas na visao geral do art. 26 junto com as ilhas fluviais e lacustres.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.26:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.26",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Ilhas fluviais e lacustres nao pertencentes a Uniao: explicadas na visao geral do art. 26 (criterio residual em relacao ao art. 20).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.26:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.26:INC.IV/BASE/3",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Conceito juridico pouco intuitivo (terra devoluta) e divisao com a Uniao; merece explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.27",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.27/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do Legislativo estadual com o calculo do numero de deputados (caput). Mandato e regime (§ 1º) e subsidio (§ 2º) tem explicacoes proprias; regimento (§ 3º) e iniciativa popular (§ 4º) sao explicados aqui."
+  },
+  {
+   "target_id": "CF88:ART.27:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.27",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.27:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.27:PAR.1/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Comando autonomo que estende aos Deputados Estaduais o regime constitucional dos parlamentares federais (imunidades, perda de mandato e outros)."
+  },
+  {
+   "target_id": "CF88:ART.27:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.27:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Teto proprio (75% do subsidio federal) e exigencia de lei de iniciativa da Assembleia: regra autonoma."
+  },
+  {
+   "target_id": "CF88:ART.27:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.27",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Auto-organizacao da Assembleia (regimento, policia, servicos e cargos): enunciada na visao geral do art. 27.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.27:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.27",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Iniciativa popular estadual nos termos da lei: enunciada na visao geral do art. 27; o instituto e explicado no art. 29, XIII.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.28",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.28/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do Executivo estadual: eleicao, mandato e posse (caput). Perda do mandato (§ 1º) e subsidios (§ 2º) tem explicacoes proprias. O antigo paragrafo unico e historico."
+  },
+  {
+   "target_id": "CF88:ART.28:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.28",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.28:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.28:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.28:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Hipotese propria de perda de mandato, com ressalva de concurso publico; e o dispositivo ao qual o art. 29, XIV, remete."
+  },
+  {
+   "target_id": "CF88:ART.28:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.28:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Regra de fixacao por lei de iniciativa da Assembleia, com remissao ao teto remuneratorio: comando autonomo."
+  },
+  {
+   "target_id": "CF88:ART.29",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.29/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do art. 29: Lei Organica e catalogo de preceitos. Os incisos estao reunidos em blocos tematicos (eleicoes, vereadores, remuneracao, estatuto do vereador, participacao popular) e itens proprios (foro do Prefeito e perda do mandato)."
+  },
+  {
+   "target_id": "CF88:ART.29:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.I/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos I, II e III formam a unidade eleitoral municipal: eleicao simultanea, data e segundo turno, posse."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.IV/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Inciso-bloco com enunciado e 24 alineas de faixas populacionais; explicar a logica em vez de repetir a tabela."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.d",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.e",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.f",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.g",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.h",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.i",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.j",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.k",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.l",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.m",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.n",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.o",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.p",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.q",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.r",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.s",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.t",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.u",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.v",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.w",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV:AL.x",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.IV",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.V/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos V, VI e VII formam o regime de remuneracao do Prefeito, Vice, Secretarios e Vereadores, com limites em cascata."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SUBDIVISION",
+   "selection_reason": "subdivisao de dispositivo coberto por bloco",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SUBDIVISION",
+   "selection_reason": "subdivisao de dispositivo coberto por bloco",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SUBDIVISION",
+   "selection_reason": "subdivisao de dispositivo coberto por bloco",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI:AL.d",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SUBDIVISION",
+   "selection_reason": "subdivisao de dispositivo coberto por bloco",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI:AL.e",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SUBDIVISION",
+   "selection_reason": "subdivisao de dispositivo coberto por bloco",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VI:AL.f",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SUBDIVISION",
+   "selection_reason": "subdivisao de dispositivo coberto por bloco",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.V",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.VIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos VIII e IX formam o estatuto do Vereador: inviolabilidade limitada ao Municipio e proibicoes semelhantes as dos parlamentares."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.VIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.X",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.X/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra de competencia originaria (foro do Prefeito) com alcance que o iniciante costuma generalizar demais."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Organizacao das funcoes legislativas e fiscalizadoras da Camara: preceito geral enunciado na visao geral do art. 29; a fiscalizacao municipal e explicada no art. 31.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.XII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos XII e XIII formam a participacao popular municipal: associacoes no planejamento e iniciativa popular de leis."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29:INC.XII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XIV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.29:INC.XIV/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    6
+   ],
+   "selection_reason": "Remissao a dispositivo renumerado (art. 28, paragrafo unico, hoje § 1º): exige contexto proprio para evitar erro de leitura."
+  },
+  {
+   "target_id": "CF88:ART.29-A",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.29-A/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do sistema de limites do Legislativo municipal: percentuais (incisos), folha (§ 1º) e crimes de responsabilidade (§§ 2º e 3º), cada parte com explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.29-A:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29-A:INC.I/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos I a VI formam uma unica tabela de percentuais por faixa populacional; explicacao em bloco."
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.29-A:PAR.1/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Limite interno proprio (70% da receita da Camara com folha), distinto do teto da despesa total."
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.29-A:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Paragrafos 2º e 3º formam o regime sancionador do art. 29-A: crimes do Prefeito (repasse) e do Presidente da Camara (folha)."
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:PAR.2",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:PAR.2",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:PAR.2",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.29-A:PAR.2",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.30",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.30/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral que separa competencia legislativa (I e II) de competencia administrativa (III a IX). Itens com conceito proprio tem explicacao propria; a criacao de Distritos (IV) e explicada aqui."
+  },
+  {
+   "target_id": "CF88:ART.30:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.30",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.I/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Principal competencia legislativa municipal, com conceito indeterminado que o iniciante tende a ampliar demais."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.II/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Conceito proprio (suplementar) facilmente confundido com competencia concorrente; dependente de legislacao federal ou estadual previa."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.III/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Competencia material tributaria com dever de prestar contas; une arrecadacao e transparencia."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.30",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Criar, organizar e suprimir Distritos: atribuicao pontual explicada na visao geral do art. 30.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.V/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Competencia material central do Municipio, com conceitos de concessao e permissao e o transporte coletivo como servico essencial."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.VI/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos VI e VII tem a mesma estrutura (atuacao municipal com cooperacao tecnica e financeira da Uniao e do Estado) em educacao e saude."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.30:INC.VI",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.VIII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Competencia material com conceitos proprios (uso, parcelamento e ocupacao do solo) ligados a politica urbana do art. 182."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.IX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.30:INC.IX/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Competencia material com condicionante expressa (legislacao e fiscalizacao federal e estadual)."
+  },
+  {
+   "target_id": "CF88:ART.31",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.31/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral dos dois controles (externo e interno). Tribunais de Contas (§§ 1º e 4º), parecer previo (§ 2º) e contas a disposicao do contribuinte (§ 3º) tem explicacoes proprias."
+  },
+  {
+   "target_id": "CF88:ART.31:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.31",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.31:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "Paragrafos 1º e 4º tratam do mesmo tema: quais orgaos de contas auxiliam a Camara e a vedacao de criar novos orgaos municipais de contas."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.31:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "selection_reason": "Regra autonoma com quorum qualificado e conceito (parecer previo) que o iniciante costuma confundir com julgamento."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.31:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Instrumento proprio de controle social (exame das contas por qualquer contribuinte)."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.31:PAR.1",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.32",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.32/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do Distrito Federal: Lei Organica e vedacao de divisao em Municipios (caput). Competencias (§ 1º), eleicoes e Legislativo (§§ 2º e 3º) e forcas de seguranca (§ 4º) tem explicacoes proprias."
+  },
+  {
+   "target_id": "CF88:ART.32:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.32",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.32:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.32:PAR.1/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra autonoma que soma as competencias legislativas estaduais e municipais."
+  },
+  {
+   "target_id": "CF88:ART.32:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.32:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Paragrafos 2º e 3º formam o regime politico-eleitoral do Distrito Federal: eleicoes coincidentes e aplicacao do art. 27."
+  },
+  {
+   "target_id": "CF88:ART.32:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.32:PAR.2",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.32:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.32:PAR.4/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Regra propria e peculiar (lei federal disciplina o uso das forcas de seguranca pelo Governo do Distrito Federal)."
+  },
+  {
+   "target_id": "CF88:ART.33",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.33/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral dos Territorios, previsao constitucional sem Territorios instalados hoje. Municipios em Territorios (§ 1º) e contas (§ 2º) sao explicados aqui; a estrutura dos Territorios com mais de cem mil habitantes (§ 3º) tem explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.33:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.33",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.33:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.33",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Municipios em Territorios: explicados na visao geral do art. 33.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.33:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.33",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Contas do governo do Territorio ao Congresso com parecer previo do Tribunal de Contas da Uniao: explicadas na visao geral do art. 33.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.33:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.33:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Regra propria de organizacao para Territorios maiores (Governador nomeado, Justica, Ministerio Publico, Defensoria e Camara Territorial)."
+  },
+  {
+   "target_id": "CF88:ART.34",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.34/BASE/3",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do art. 34: autonomia como regra e intervencao como excecao taxativa. As hipoteses estao reunidas em blocos e itens; o procedimento esta no art. 36."
+  },
+  {
+   "target_id": "CF88:ART.34:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.34:INC.I/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos I, II e III reunem as hipoteses de defesa da unidade do pais e da ordem: integridade nacional, invasao e grave comprometimento da ordem publica."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.34:INC.IV/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5,
+    6
+   ],
+   "selection_reason": "Hipotese com procedimento proprio no art. 36, I (solicitacao do Poder coagido ou requisicao do Supremo Tribunal Federal)."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.34:INC.V/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Inciso-bloco com enunciado e duas alineas sobre desequilibrio financeiro grave."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.V:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.V",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.V:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.V",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.34:INC.VI/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5,
+    6
+   ],
+   "selection_reason": "Hipotese com procedimento proprio no art. 36, II e III, e com possibilidade de decreto limitado a suspensao do ato (art. 36, § 3º)."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.34:INC.VII/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "Inciso-bloco com enunciado e cinco alineas (os chamados principios sensiveis), com procedimento proprio (representacao interventiva)."
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.VII",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.VII",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.VII",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII:AL.d",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.VII",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.34:INC.VII:AL.e",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.34:INC.VII",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.35",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.35/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral da intervencao estadual (e da federal em Municipios de Territorio), distinta do art. 34. Hipoteses de gestao (I a III) em bloco e a hipotese judicial (IV) em item proprio."
+  },
+  {
+   "target_id": "CF88:ART.35:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.35",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.35:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.35:INC.I/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Incisos I, II e III reunem as hipoteses ligadas a gestao: divida fundada, contas e minimos de ensino e saude."
+  },
+  {
+   "target_id": "CF88:ART.35:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.35:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.35:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.35:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.35:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.35:INC.IV/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5,
+    6
+   ],
+   "selection_reason": "Hipotese judicial propria (provimento de representacao pelo Tribunal de Justica), com decreto possivelmente limitado (art. 36, § 3º)."
+  },
+  {
+   "target_id": "CF88:ART.36",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.36/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do procedimento comum as intervencoes dos arts. 34 e 35: provocacao (incisos), decreto e controle politico (§§ 1º e 2º), decreto limitado (§ 3º) e cessacao (§ 4º). O inciso IV esta revogado."
+  },
+  {
+   "target_id": "CF88:ART.36:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.36",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.36:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.36:INC.I/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5,
+    6
+   ],
+   "selection_reason": "Incisos I, II e III definem as formas de provocacao (solicitacao, requisicao e provimento de representacao); o inciso IV esta revogado e excluido."
+  },
+  {
+   "target_id": "CF88:ART.36:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.36:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.36:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.36:INC.I",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.36:INC.IV",
+   "kind": "INCISO",
+   "status": "REVOKED",
+   "structurally_present": true,
+   "legal_status": "REVOKED",
+   "legally_current": false,
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "estruturalmente presente no texto consolidado, mas legal_status REVOKED: nao recebe ENTENDA vigente"
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.36:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Paragrafos 1º e 2º formam o controle politico do decreto: conteudo, prazo de 24 horas e convocacao extraordinaria."
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.36:PAR.1",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.36:PAR.3/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra autonoma de intervencao minima (suspensao do ato) com dispensa de controle legislativo nas hipoteses judiciais."
+  },
+  {
+   "target_id": "CF88:ART.36:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.36:PAR.4/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Regra autonoma sobre a cessacao da intervencao e o retorno das autoridades afastadas."
+  }
+ ]
+}

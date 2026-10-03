@@ -1,0 +1,39 @@
+{
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "review_scope": "CF88_ART35_GLOSSARY_EDITORIAL_CLEANUP",
+ "decisions_schema": 2,
+ "partial_round": true,
+ "original_drafts": "BATCH_04_DRAFTS_PRE_ART35_CLEANUP.json",
+ "reviewed_drafts_out": "BATCH_04_DRAFTS_ART35_CLEANUP.json",
+ "decisions_out": [
+  "ART35_GLOSSARY_CLEANUP_DECISIONS.json"
+ ],
+ "evidence_sha256": {
+  "BATCH_04_DRAFTS_PRE_ART35_CLEANUP.json": "33fd9c7a00bcb9228cb88e96ea77eeb84e2556dbb4025b42aafd4b51d82d4b3b"
+ },
+ "human_review": {
+  "reviewed_on": "2026-10-03",
+  "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+  "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+  "reviewer": "limpeza adicional autorizada por Arthur na missao LEX_DEVICE_V1_BATCH04_RUN3_CONSOLIDATION_FINAL_PREDEPLOY (somente este verbete)",
+  "standard": "ENTENDA-T1 (+ regra editorial de linguagem para iniciantes, §15)",
+  "decision": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE: verbete de PALAVRAS DIFICEIS com formulacao juridicamente precisa (\"restringe temporariamente ... nos limites necessarios a intervencao\"), coerente com o art. 34",
+  "review_scope": "CF88_ART35_GLOSSARY_EDITORIAL_CLEANUP"
+ },
+ "reviews": [
+  {
+   "target_id": "CF88:ART.35",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE: o verbete dizia que o Estado \"suspende temporariamente\" a autonomia do Municipio; a intervencao restringe a autonomia na medida necessaria (como no verbete do art. 34). Texto principal aprovado nao alterado.",
+   "edits": [
+    {
+     "section": "palavras_dificeis",
+     "termo": "Intervenção estadual",
+     "before": "medida excepcional em que o Estado suspende temporariamente a autonomia de um Município.",
+     "after": "medida excepcional em que o Estado restringe temporariamente a autonomia do Município, nos limites necessários à intervenção.",
+     "kind": "EDITORIAL_CLEANUP_NO_SEMANTIC_CHANGE"
+    }
+   ]
+  }
+ ]
+}

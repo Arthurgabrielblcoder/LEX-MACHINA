@@ -1,0 +1,221 @@
+{
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_04",
+ "review_scope": "CF88_ARTS_29_31_ROUND_2",
+ "decisions_schema": 2,
+ "partial_round": true,
+ "original_drafts": "BATCH_04_DRAFTS_ART26_IV_CLEANUP.json",
+ "reviewed_drafts_out": "BATCH_04_DRAFTS.json",
+ "decisions_out": [
+  "ROUND_2_HUMAN_REVIEW_DECISIONS.json"
+ ],
+ "evidence_sha256": {
+  "BATCH_04_DRAFTS_PRE_ROUND2.json": "7c678c813f716386996e31de6c93b3022ca3eb4fef5a9a4958bba0a3e92334dd",
+  "REVIEW_BATCH_04_ROUND_2_ART29_31.md": "583c5147cd71f5810704900326a96e0c128eceaf45282257f23f0fb02de84c47",
+  "REVIEW_BATCH_04_ROUND_2_RISK_TRIAGE.md": "46ab1f883e7a02fceb59484a6f650f4e1896fb47735b18f9fc6d15948f4aaf93",
+  "REVIEW_BATCH_04_ROUND_2_RISK_TRIAGE.json": "b5c7c42b7f6c094a649a56d3064058393072513bf29373f946aa38fd3c7f42e4",
+  "CF88_BATCH_04.entenda.jsonl": "634376395b0fffd17723bbe0b3c93bb3d2778dbdceff150e62c288b63bd29349"
+ },
+ "human_review": {
+  "reviewed_on": "2026-10-01",
+  "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+  "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+  "reviewer": "auditoria editorial ChatGPT (texto vigente, fontes oficiais, STF), autorizada por Arthur (usuario do projeto)",
+  "standard": "ENTENDA-T1 (+ regra editorial de linguagem para iniciantes, §15)",
+  "decision": "ROUND 2 (arts. 29, 29-A, 30 e 31) AUDITADO: 18 aprovadas sem alteracao, 6 aprovadas apos ajustes pontuais; 0 decisoes do Arthur necessarias",
+  "review_scope": "CF88_ARTS_29_31_ROUND_2"
+ },
+ "reviews": [
+  {
+   "target_id": "CF88:ART.29:INC.X",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Exemplo trocado (verbas da merenda podem atrair competencia federal) e trecho sobre o foro ajustado; Sumula 702 e jurisprudencia de 2025 (HC 232627, Inq 4787) somente na CAMADA EXTERNA.",
+   "edits": [
+    {
+     "section": "exemplo_pratico",
+     "before": "Um Prefeito é acusado de desviar verbas da merenda escolar. A denúncia criminal não é apresentada a um juiz de primeira instância da comarca, mas ao Tribunal de Justiça do Estado.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Um Prefeito é acusado de desviar recursos exclusivamente municipais, em fato sujeito à Justiça comum estadual. Nessa hipótese, a ação penal originária é julgada pelo Tribunal de Justiça, e não por um juiz estadual de primeira instância."
+    },
+    {
+     "section": "o_que_significa",
+     "before": "O foro especial existe em razão do cargo, e não da pessoa. Em regra, está ligado ao exercício da função de Prefeito.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "O foro decorre da função exercida, e não de um privilégio pessoal. Os limites sobre quais crimes são abrangidos e sobre a permanência do foro após o término do mandato dependem da jurisprudência e ficam na camada externa."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": "A delimitação da competência do Tribunal de Justiça para julgar Prefeitos (crimes da Justiça comum estadual e situação dos crimes federais e eleitorais) é tratada na camada JURISPRUDÊNCIA.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Súmula 702 do STF (identidade confirmada em fonte oficial): a competência do Tribunal de Justiça para julgar prefeitos restringe-se aos crimes de competência da Justiça comum estadual; nos demais casos, a competência originária cabe ao respectivo tribunal de segundo grau."
+    },
+    {
+     "section": "external_layer_notes",
+     "before": null,
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Jurisprudência do STF firmada em 2025 (HC 232627 e Inq 4787): a prerrogativa de foro para crimes praticados no cargo e em razão das funções subsiste mesmo após o afastamento do cargo. Entendimento mutável, mantido fora do texto principal."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.29-A",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "\"A Camara Municipal nao arrecada dinheiro\" era absoluto demais; o restante (inclusive inativos e pensionistas no caput, redacao da EC 109/2021) foi mantido.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A Câmara Municipal não arrecada dinheiro. Os recursos para o seu funcionamento vêm do orçamento do Município e são transferidos pelo Prefeito. Essa transferência mensal é chamada de repasse ou duodécimo.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "A Câmara Municipal não possui poder tributário próprio nem arrecada os tributos municipais destinados a financiar o seu orçamento. Os recursos orçamentários necessários ao seu funcionamento são repassados pelo Poder Executivo. Esses repasses mensais são usualmente chamados de duodécimos."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.29-A:INC.I",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Faixas reproduzidas exatamente como na redacao oficial (sem suavizar fronteiras) e ATENCAO complementada sobre a redacao literal atipica.",
+   "edits": [
+    {
+     "section": "o_que_diz",
+     "before": "Os incisos I a VI fixam o percentual máximo da despesa da Câmara conforme a população do Município: 7% até 100 mil habitantes, 6% entre 100 mil e 300 mil, 5% entre 300 mil e um e 500 mil, 4,5% entre 500 mil e um e 3 milhões, 4% entre 3 milhões e um e 8 milhões, e 3,5% acima de 8 milhões.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Os incisos I a VI fixam o percentual máximo da despesa da Câmara conforme a população do Município: I — 7% até 100.000 habitantes; II — 6% entre 100.000 e 300.000; III — 5% entre 300.001 e 500.000; IV — 4,5% entre 500.001 e 3.000.000; V — 4% entre 3.000.001 e 8.000.000; VI — 3,5% acima de 8.000.001 habitantes."
+    },
+    {
+     "section": "atencao",
+     "before": "O percentual é um teto, e não um valor garantido à Câmara. O orçamento pode prever menos, e a Câmara não é obrigada a gastar todo o limite.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "O percentual é um teto, e não um valor garantido à Câmara. O orçamento pode prever menos, e a Câmara não é obrigada a gastar todo o limite. A redação oficial apresenta fronteiras numéricas atípicas: o número 100.000 aparece tanto no inciso I quanto no inciso II, e o inciso VI utiliza a expressão \"acima de 8.000.001 habitantes\". O ENTENDA reproduz a redação constitucional e não cria uma correção que o texto não contém."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.1",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A frase sobre os 30% podia sugerir obrigacao de gasta-los.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Os outros 30%, no mínimo, ficam para despesas como manutenção, equipamentos e serviços.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Isso não significa que os 30% restantes tenham de ser integralmente gastos. A regra apenas impede que a folha de pagamento consuma mais de 70% da receita da Câmara. O restante pode ser usado nas demais despesas autorizadas ou pode não ser integralmente gasto."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.30",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A divisao rigida (I-II legislativos, III-IX administrativos) foi mantida como recurso de estudo, com a ressalva de que nao e absoluta.",
+   "edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A competência legislativa é o poder de fazer leis. Aparece nos incisos I e II.\nA competência administrativa, também chamada material, é o poder de executar tarefas: cobrar tributos, prestar serviços, manter escolas e postos de saúde, organizar a cidade. Aparece nos incisos III a IX.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "Os incisos I e II tratam diretamente de competência legislativa: o poder municipal de criar normas sobre interesse local e de suplementar a legislação federal e estadual.\nOs incisos seguintes concentram principalmente competências administrativas ou materiais, como prestar serviços, cuidar da saúde, da educação e do ordenamento urbano. Alguns deles, porém, também dependem de atuação legislativa do Município. É o caso, por exemplo, da instituição de tributos e da disciplina de certas matérias locais. Por isso, essa divisão serve para facilitar o estudo, mas não é absoluta."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.30:INC.IX",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "O exemplo descrevia como automatico um efeito concreto do tombamento.",
+   "edits": [
+    {
+     "section": "exemplo_pratico",
+     "before": "O Município tomba o antigo mercado da cidade. A partir daí, o proprietário não pode demoli-lo nem alterar a fachada sem autorização do órgão de patrimônio.",
+     "kind": "ajuste pontual obrigatorio da auditoria editorial (ChatGPT), autorizado por Arthur",
+     "after": "O Município reconhece o antigo mercado da cidade como bem protegido pelo seu valor histórico. A partir daí, intervenções no imóvel ficam sujeitas às restrições e autorizações previstas na legislação de proteção do patrimônio, podendo ser impedidas demolições ou alterações incompatíveis com a preservação do bem."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.29",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.I",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.IV",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.V",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.VIII",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XII",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29:INC.XIV",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.29-A:PAR.2",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao. Sumula Vinculante 46 confirmada em fonte oficial (competencia legislativa privativa da Uniao para definir crimes de responsabilidade e normas de processo)."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.I",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao. Tema 145 (RE 586224) confirmado em fonte oficial."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.II",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.III",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao. Corpo deliberadamente generico (IPTU como exemplo, taxas e contribuicoes); reforma tributaria somente na CAMADA EXTERNA."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.V",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VI",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.30:INC.VIII",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.31",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.1",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao. EXTERNAL_VERIFICATION_RESOLVED = TRUE; SOURCE_CHANGE = EC_139_2026 (redacao vigente do § 1º com \"vedada sua extincao, criacao ou instalacao\"); CAMADA EXTERNA mantida."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.2",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao. Temas 157 (RE 729744) e 835 (RE 848826) confirmados em fonte oficial: parecer opinativo; julgamento das contas anuais do Prefeito pela Camara; parecer so deixa de prevalecer por 2/3 dos vereadores."
+  },
+  {
+   "target_id": "CF88:ART.31:PAR.3",
+   "decision": "APPROVED",
+   "review_reason": "Aprovada sem alteracao."
+  }
+ ]
+}

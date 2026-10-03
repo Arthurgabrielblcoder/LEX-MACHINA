@@ -8,7 +8,11 @@ Read-only inputs (approved artifacts, never modified):
 Output: DEVICE_INTEGRATION/staging_sd_v1/ (SD tree under SD/, host-only diagnostics under _host/).
 Deterministic: no wall clock; build_date comes from SOURCE_DATE_EPOCH or the HEAD commit time.
 
-Usage: python build_sd_staging.py [--out DIR]
+Usage: python build_sd_staging.py [--out DIR] [--profile BATCH04_RUN3]
+
+Profiles: default (no profile) = the physically approved staging_sd_v1 (163 ENTENDA, RUN1), reproduced byte for byte.
+BATCH04_RUN3 = consolidation candidate: + ENTENDA Batch04 (CF88 arts. 25-36, approved by rounds), REF pair from the approved RUN3
+export (byte copy), + the physically validated ARTICLE_SEARCH indexes (CF88 + CC2002, byte copy, hash-checked).
 """
 import argparse
 import hashlib
@@ -45,6 +49,27 @@ APPROVED_PILOTS = ('CF88:ART.37', 'CF88:ART.37:PAR.6', 'CF88:ART.37:PAR.10', 'CF
 KIND_RANK = {'ALINEA': 0, 'INCISO': 1, 'PARAGRAFO': 2, 'PARAGRAFO_UNICO': 2, 'ARTIGO': 3, 'CAPUT': 4, 'NAMESPACE': 5, 'NORMA': 6}
 
 
+# BATCH04 + RUN3 consolidation profile (explicit; the default build stays the approved baseline).
+ARTICLE_INDEXES = (
+    # (source in the repo, sha256 of the physically validated file, text it is bound to: 'RUNTIME' or (bytes, sha256))
+    ('DEVICE_INTEGRATION/staging_article_index/SD/99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX',
+     '56e437a0c9cebb113c47f6a7b100ee64363c63207a647eca0456e86d6db27fae', 'RUNTIME'),
+    ('DEVICE_INTEGRATION/staging_article_index_cc/SD/99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX',
+     '674c9971925c29aaca9685fb2d0b9515fe87e4072d644858ea27495c327d3a68',
+     (660268, 'ad5ba178613b6181e2d8a61919eda0c6223c68feb6e47bef4ea65bc45c13e6ae')),
+)
+PROFILES = {
+    'BATCH04_RUN3': dict(
+        batches=BATCHES + ('production_batch_04',), expected_entenda=None, max_article=36,
+        entenda_scope='CF88_ARTS_1_36_PLUS_APPROVED_PILOTS',
+        entenda_tags=['entenda-cf-batch01-approved-2026-09-28', 'entenda-cf-batch02-approved-2026-09-28',
+                      'entenda-cf-batch03-approved-2026-09-29', 'ENTENDA_CF_PRODUCTION_BATCH_04 (round approvals, uncommitted)'],
+        entenda_note='ENTENDA: CF88 arts. 1 a 36 (inclui 29-A) + 9 pilotos aprovados (arts. 37, 37 §6, 37 §10, 60, 60 §4, 60 §4 IV, 150, 225, '
+                     'ADCT 10 II); ausencia de linha no lookup = sem ENTENDA aprovado.',
+        article_indexes=ARTICLE_INDEXES),
+}
+
+
 class BuildError(RuntimeError):
     pass
 
@@ -65,10 +90,10 @@ def _guard_out(out):
     return out
 
 
-def approved_entenda(ctx):
+def approved_entenda(ctx, batches=BATCHES, expected=EXPECTED_ENTENDA, max_article=24):
     rows = []
     main = E.load_corpus(ROOT / ctx.ncfg['corpus'])
-    for b in BATCHES:
+    for b in batches:
         bd = ROOT / 'ENTENDA_ENGINE/derived' / b
         spec = json.loads((bd / 'BATCH_SPEC.json').read_text(encoding='utf-8'))
         rows += [r for r in main if r['status'] == 'ACTIVE' and r['target_id'] in spec.get('reused', {})]
@@ -83,9 +108,9 @@ def approved_entenda(ctx):
     tids = [r['target_id'] for r in rows]
     if len(tids) != len(set(tids)):
         raise BuildError('ENTENDA_DUPLICATE_TARGET')
-    if len(rows) != EXPECTED_ENTENDA:
-        raise BuildError(f'ENTENDA_COUNT {len(rows)} != {EXPECTED_ENTENDA}')
-    out_of_scope = [t for t in tids if t not in APPROVED_PILOTS and (not t.startswith('CF88:ART.') or not 1 <= int(t.split(':')[1][4:].split('-')[0]) <= 24)]
+    if expected is not None and len(rows) != expected:
+        raise BuildError(f'ENTENDA_COUNT {len(rows)} != {expected}')
+    out_of_scope = [t for t in tids if t not in APPROVED_PILOTS and (not t.startswith('CF88:ART.') or not 1 <= int(t.split(':')[1][4:].split('-')[0]) <= max_article)]
     if out_of_scope:
         raise BuildError(f'ENTENDA_OUT_OF_SCOPE {out_of_scope}')
     return rows
@@ -104,17 +129,22 @@ def build_entenda(ctx, rows, sd):
         shutil.rmtree(tmp)
 
 
-def build_references(sd):
+def build_references(sd, ref_dir=REF_DIR, require_committed=True):
+    """Byte copy of the REF pair. Default: the approved (committed) run1 blobs. A CANDIDATE build (require_committed=False, e.g. RUN3
+    for review) records the sha256 of the uncommitted files instead and is never an approved package."""
     d = sd / '20_REFERENCES'
     d.mkdir(parents=True)
     out = {}
     for n in ('REF_LOOKUP.IDX', 'REF_PAYLOAD.IDX'):
-        src = REF_DIR / n
-        committed = git('rev-parse', f'HEAD:{src.relative_to(ROOT).as_posix()}')
-        if git('hash-object', str(src)) != committed:
-            raise BuildError(f'REFERENCE_ARTIFACT_NOT_APPROVED_BLOB: {n}')
+        src = Path(ref_dir) / n
+        if require_committed:
+            committed = git('rev-parse', f'HEAD:{src.relative_to(ROOT).as_posix()}')
+            if git('hash-object', str(src)) != committed:
+                raise BuildError(f'REFERENCE_ARTIFACT_NOT_APPROVED_BLOB: {n}')
+            out[n] = committed
+        else:
+            out[n] = 'sha256:' + sha(src)
         shutil.copyfile(src, d / n)
-        out[n] = committed
     return out
 
 
@@ -245,7 +275,32 @@ def build_text_map(sd, idx, data, prov):
     return dict(rows=len(rows), line_checks=checks['checked'], adct_offset=adct_off)
 
 
-def build(out):
+def copy_article_indexes(sd, specs, prov):
+    """Byte copy of the physically validated ARTICLE_SEARCH indexes; each one must be the approved file AND bound to its text."""
+    out = []
+    d = sd / '10_TARGETS'
+    for rel, want, bound in specs:
+        src = ROOT / rel
+        if sha(src) != want:
+            raise BuildError(f'ARTICLE_INDEX_NOT_APPROVED {rel}')
+        blob = src.read_bytes()
+        if blob[:8] != b'LXARTIX1':
+            raise BuildError(f'ARTICLE_INDEX_SCHEMA {rel}')
+        src_bytes, src_sha = int.from_bytes(blob[20:24], 'little'), blob[24:56].hex()
+        if bound == 'RUNTIME':
+            bound = (prov['bytes'], prov['sha256'])
+        if (src_bytes, src_sha) != tuple(bound):
+            raise BuildError(f'ARTICLE_INDEX_TEXT_MISMATCH {rel}')
+        shutil.copyfile(src, d / src.name)
+        out.append(dict(file=f'/{SD_ROOT}/10_TARGETS/{src.name}', sha256=want, bytes=len(blob),
+                        records=int.from_bytes(blob[16:20], 'little'), text_bytes=src_bytes, text_sha256=src_sha))
+    return out
+
+
+def build(out, ref_dir=REF_DIR, require_committed_refs=True, reference_engine_version=None, profile=None, build_commit=None):
+    """build_commit pins GIT_COMMIT / build_date / git_tags_at_commit to the commit the package was built on (default HEAD), so an
+    approved package stays byte-reproducible after later commits."""
+    prof = PROFILES[profile] if profile else None
     out = _guard_out(out)
     if out.exists():
         shutil.rmtree(out)
@@ -254,22 +309,25 @@ def build(out):
     sd.mkdir(parents=True)
     host.mkdir(parents=True)
     ctx = E.NormContext('CF88')
-    rows = approved_entenda(ctx)
+    rows = (approved_entenda(ctx, prof['batches'], prof['expected_entenda'], prof['max_article']) if prof else approved_entenda(ctx))
+    entenda_scope = prof['entenda_scope'] if prof else ENTENDA_SCOPE
     ent_manifest, _ = build_entenda(ctx, rows, sd)
-    ref_blobs = build_references(sd)
+    ref_blobs = build_references(sd, ref_dir, require_committed_refs)
     data, prov, idx, diff = build_runtime(sd, host, ctx)
     layers = validate_layers_against_runtime(idx, sd)
     tgt = build_targets(sd, idx, RT.runtime_status(idx), sd / '30_ENTENDA/ENTENDA_LOOKUP.IDX', sd / '20_REFERENCES/REF_LOOKUP.IDX')
     tmap = build_text_map(sd, idx, data, prov)
-    head = git('rev-parse', 'HEAD')
-    epoch = int(os.environ.get('SOURCE_DATE_EPOCH') or git('log', '-1', '--format=%ct', 'HEAD'))
+    art_idx = copy_article_indexes(sd, prof['article_indexes'], prov) if prof else None
+    head = git('rev-parse', build_commit or 'HEAD')
+    epoch = int(os.environ.get('SOURCE_DATE_EPOCH') or git('log', '-1', '--format=%ct', head))
     files = {p.relative_to(out / 'SD').as_posix(): dict(bytes=p.stat().st_size, sha256=sha(p)) for p in sorted(sd.rglob('*')) if p.is_file()}
     build_id = hashlib.sha256(''.join(f'{k}:{v["sha256"]}\n' for k, v in files.items()).encode()).hexdigest()[:16]
     ver = (f'#LEXMACHINA|DEVICE_VERSION|{SCHEMA}\nBUILD_ID|{build_id}\nGIT_COMMIT|{head}\nENTENDA_COUNT|{len(rows)}\n'
-           f'ENTENDA_SCOPE|{ENTENDA_SCOPE}\nENTENDA_PILOTS|{len(APPROVED_PILOTS)}\nTARGETS|{tgt["rows"]}\n'
+           f'ENTENDA_SCOPE|{entenda_scope}\nENTENDA_PILOTS|{len(APPROVED_PILOTS)}\nTARGETS|{tgt["rows"]}\n'
            f'RUNTIME_CF_PATH|/{SD_ROOT}/05_TEXT/CF88_RUNTIME.txt\nRUNTIME_CF_BYTES|{prov["bytes"]}\nRUNTIME_CF_SHA256|{prov["sha256"]}\n'
            f'TEXT_MAP_SOURCE_SHA256|{prov["sha256"]}\nTEXT_MAP_SOURCE_BYTES|{prov["bytes"]}\n'
-           f'TEXT_MAP_RUNTIME_STATUS|{RUNTIME_STATUS}\nRUNTIME_CF|{RUNTIME_CF_RESOLUTION}\nREFERENCE_ENGINE|cf-reference-engine-final-2026-09-28\n')
+           f'TEXT_MAP_RUNTIME_STATUS|{RUNTIME_STATUS}\nRUNTIME_CF|{RUNTIME_CF_RESOLUTION}\n'
+           f"REFERENCE_ENGINE|{(reference_engine_version or {}).get('tag', 'cf-reference-engine-final-2026-09-28')}\n")
     (sd / '00_SYS').mkdir()
     (sd / '00_SYS' / 'LEXV1.VER').write_bytes(ver.encode('utf-8'))
     files['99_LEX_V1/00_SYS/LEXV1.VER'] = dict(bytes=(sd / '00_SYS/LEXV1.VER').stat().st_size, sha256=sha(sd / '00_SYS/LEXV1.VER'))
@@ -277,17 +335,18 @@ def build(out):
     manifest = dict(
         schema_version=SCHEMA, package_type='SD_OVERLAY_CANDIDATE', build_id=build_id,
         build_date=datetime.fromtimestamp(epoch, timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), build_date_source='SOURCE_DATE_EPOCH or HEAD commit time',
-        git_commit=head, git_tags_at_commit=git('tag', '--points-at', 'HEAD').split(),
+        git_commit=head, git_tags_at_commit=git('tag', '--points-at', head).split(),
         legal_corpus_version=dict(runtime_text=f'/{SD_ROOT}/05_TEXT/CF88_RUNTIME.txt', runtime_sha256=prov['sha256'], runtime_bytes=prov['bytes'],
                                   runtime_lines=prov['lines'], normalization_version=prov['normalization_version'], adct_offset=prov['adct_offset'],
                                   sources=prov['sources']),
         target_id_version=dict(grammar='LEGAL_TARGET_ID/target_id.py', parser='LEGAL_TARGET_ID/structure_parser.py (article_case_sensitive=True)',
                                target_index_sha256=idx['target_index_sha256'], targets=idx['total_targets'],
                                legacy_index_sha256=diff['legacy_index_sha256'], legacy_vs_runtime=diff['counts']),
-        reference_engine_version=dict(tag='cf-reference-engine-final-2026-09-28', commit='9fcab702a9b6467b71949071ba34741e940e366d', blobs=ref_blobs),
-        entenda_version=dict(contract=E.CONTRACT, tags=['entenda-cf-batch01-approved-2026-09-28', 'entenda-cf-batch02-approved-2026-09-28', 'entenda-cf-batch03-approved-2026-09-29'],
+        reference_engine_version=dict(reference_engine_version or dict(tag='cf-reference-engine-final-2026-09-28',
+                                                                         commit='9fcab702a9b6467b71949071ba34741e940e366d'), blobs=ref_blobs),
+        entenda_version=dict(contract=E.CONTRACT, tags=prof['entenda_tags'] if prof else ['entenda-cf-batch01-approved-2026-09-28', 'entenda-cf-batch02-approved-2026-09-28', 'entenda-cf-batch03-approved-2026-09-29'],
                              review_status='HUMAN_APPROVED_T1', lookup_rows=ent_manifest['lookup_rows']),
-        entenda_explanation_count=len(rows), entenda_scope=ENTENDA_SCOPE, entenda_pilots_included=list(APPROVED_PILOTS),
+        entenda_explanation_count=len(rows), entenda_scope=entenda_scope, entenda_pilots_included=list(APPROVED_PILOTS),
         runtime_cf=dict(status=RUNTIME_CF_RESOLUTION, text_map_runtime_status=RUNTIME_STATUS),
         layer_validation=layers, sd_root=f'/{SD_ROOT}', files=files,
         targets=tgt, text_map=dict(rows=tmap['rows'], line_checks=tmap['line_checks'], bound_to_source_sha256=prov['sha256'], adct_offset=tmap['adct_offset']),
@@ -297,7 +356,10 @@ def build(out):
             'Todos os indices: UTF-8, LF, linhas pipe-separadas, cabecalho #LEXMACHINA|<TIPO>|<versao>, ordenacao bytewise pelo campo-chave.',
             'CF88_TEXT_MAP.IDX so pode ser usado se RUNTIME_STATUS=RUNTIME e tamanho E sha256 do texto exibido coincidirem com o cabecalho; senao a resolucao de target falha fechada.',
             'O texto exibido pelo runtime V1 e /99_LEX_V1/05_TEXT/CF88_RUNTIME.txt, exatamente os bytes indexados.',
-            'ENTENDA: CF88 arts. 1 a 24 + 9 pilotos aprovados (arts. 37, 37 §6, 37 §10, 60, 60 §4, 60 §4 IV, 150, 225, ADCT 10 II); ausencia de linha no lookup = sem ENTENDA aprovado.'])
+            prof['entenda_note'] if prof else 'ENTENDA: CF88 arts. 1 a 24 + 9 pilotos aprovados (arts. 37, 37 §6, 37 §10, 60, 60 §4, 60 §4 IV, 150, 225, ADCT 10 II); ausencia de linha no lookup = sem ENTENDA aprovado.'])
+    if art_idx is not None:
+        manifest['profile'] = profile
+        manifest['article_search_indexes'] = art_idx
     (sd / '00_SYS' / 'LEX_DEVICE_MANIFEST.json').write_bytes((json.dumps(manifest, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     (host / 'ENTENDA_UNIFIED_BUILD_MANIFEST.json').write_bytes((json.dumps(ent_manifest, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     return manifest
@@ -306,6 +368,8 @@ def build(out):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--out', default=str(DI / 'staging_sd_v1'))
-    m = build(ap.parse_args().out)
+    ap.add_argument('--profile', choices=sorted(PROFILES))
+    a = ap.parse_args()
+    m = build(a.out, profile=a.profile)
     print(json.dumps(dict(build_id=m['build_id'], entenda=m['entenda_explanation_count'], targets=m['targets']['rows'],
                           text_map=m['text_map']['rows'], files={k: v['bytes'] for k, v in m['files'].items()}), indent=1))

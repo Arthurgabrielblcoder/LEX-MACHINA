@@ -1,0 +1,43 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "policy": "Overlay editorial de vinculos materialmente incorretos. O catalogo canonico (CF88_REFERENCES_CANONICAL.json) e a fonte original de jurisprudencia nao sao editados: o vinculo continua registrado no corpus-fonte, mas o reference_engine o retira do export visivel (references, REF_LOOKUP.IDX, REF_PAYLOAD.IDX) e o lista em excluded_links. Cada exclusao atinge exatamente um vinculo (reference_id); os demais vinculos do mesmo tema permanecem. Fail closed: exclusao que nao corresponda a exatamente um vinculo existente interrompe o build.",
+ "records": [
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:113:CF88:25:-:-:-@CF88:ART.25",
+   "target_id": "CF88:ART.25",
+   "source_id": "STF:RG:113",
+   "source_reference_id": "STF:RG:113:CF88:25:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "Tema 113 (RE 583523): revogacao/nao recepcao do art. 25 da Lei de Contravencoes Penais (Decreto-Lei 3.688/1941) pela Constituicao Federal.",
+   "expected_subject": "auto-organizacao e competencias dos Estados (art. 25 da CF)",
+   "reason": "O 'art. 25' citado no tema e o art. 25 do Decreto-Lei 3.688/1941, e nao o art. 25 da Constituicao: falso positivo de numeracao. Os demais vinculos do Tema 113 (fundamentos constitucionais efetivamente discutidos) permanecem.",
+   "evidence": {
+    "official_source": "STF, portal de teses de repercussao geral",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "e81a6ed4dfc2b417ca6c11ad4c021fd055d926fcfd699d56146d2bf738a9d127",
+    "verified_on": "2026-10-01",
+    "verified_by": "revisao humana (confirmado em fonte oficial do STF)"
+   },
+   "decided_in": "ENTENDA_CF_BATCH04_PRE_REVIEW_SANITIZATION (2026-10-01)"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:756:CF88:31:3:-:-@CF88:ART.31:PAR.3",
+   "target_id": "CF88:ART.31:PAR.3",
+   "source_id": "STF:RG:756",
+   "source_reference_id": "STF:RG:756:CF88:31:3:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "Tema 756 (RE 841979): nao cumulatividade do PIS e da COFINS (art. 195, § 12, da CF) e constitucionalidade do § 3º do art. 31 da Lei 10.865/2004.",
+   "expected_subject": "contas do Municipio a disposicao de qualquer contribuinte (art. 31, § 3º, da CF)",
+   "reason": "O 'art. 31, § 3º' citado no tema e o da Lei 10.865/2004, e nao o art. 31, § 3º, da Constituicao: falso positivo de numeracao. O vinculo do Tema 756 com o art. 195, § 12, da CF permanece.",
+   "evidence": {
+    "official_source": "STF, portal de teses de repercussao geral",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "c66a83b13df798584b626f9c185338a6bd66dda5c829f1285a1a856979245e3d",
+    "verified_on": "2026-10-01",
+    "verified_by": "revisao humana (confirmado em fonte oficial do STF)"
+   },
+   "decided_in": "ENTENDA_CF_BATCH04_PRE_REVIEW_SANITIZATION (2026-10-01)"
+  }
+ ]
+}

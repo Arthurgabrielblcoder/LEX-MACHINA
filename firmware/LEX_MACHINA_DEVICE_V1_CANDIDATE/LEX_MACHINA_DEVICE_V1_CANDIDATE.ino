@@ -5904,7 +5904,7 @@ void lexV1DiagnosticoBoot()
       {"CF88:ART.60:PAR.4:INC.IV",true,LEXV1_RES_DIRECT,"CF88:ART.60:PAR.4:INC.IV",0,0},
       {"ADCT:ART.10:INC.II",true,LEXV1_RES_DIRECT,"ADCT:ART.10:INC.II",0,0},
       {"CF88:ART.114:INC.VIII",true,LEXV1_RES_NONE,"",2,0},   // known issue: 2 referencias historicas ocultas
-      {"CF88:ART.25",true,LEXV1_RES_NONE,"",1,1},
+      {"CF88:ART.127",true,LEXV1_RES_NONE,"",1,1},   // estavel RUN1..RUN3: 1 referencia, sem ENTENDA
       {"CF88:ART.999",false,LEXV1_RES_NONE,"",0,0},
     };
     for(const LexV1Caso &c: casos){
@@ -5965,7 +5965,7 @@ void lexV1DiagnosticoBoot()
     rp.falhaIo=false;
     LexV1Status a1=lexv1References(refLookup,&rp,"CF88:ART.21:INC.XXIV",z);
     bool zAberto=(bool)rp.f; rp.fechar();
-    LexV1Status a2=lexv1References(refLookup,&rp,"CF88:ART.25",u);
+    LexV1Status a2=lexv1References(refLookup,&rp,"CF88:ART.127",u);
     bool uAberto=(bool)rp.f; rp.fechar();
     LexV1Status a3=lexv1References(refLookup,&rp,"CF88:ART.37:PAR.6",m);
     bool mAberto=(bool)rp.f; rp.fechar();

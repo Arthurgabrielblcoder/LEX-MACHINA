@@ -126,6 +126,20 @@ def build_links(norma_id, reg):
             for rel, dest in zip(prov.get('relacoes', []), prov.get('destinos', [])):
                 add(r['target_id'], rtype, dest, rel, dest, dict(system=prov['system'], relacao_id=rel, index_row=r['source_record_id']),
                     dict(destino=dest, relacao_id=rel), r['migration_status'])
+    catalog_work = {(l['target_id'], l['source_id']) for l in links if l['reference_type'] == 'WORK_REFERENCE'}
+    for a in work_reference_additions(norma_id, reg):
+        if (a['target_id'], a['work_id']) in catalog_work:
+            raise EngineError('ADDITION_DUPLICATES_EXISTING_LINK', a['addition_id'])
+        add(a['target_id'], 'WORK_REFERENCE', a['work_id'], a['work_id'], a['obra'],
+            dict(system='Reference expansion + revisao humana', work_id=a['work_id'], tipo=a['tipo'], review_status=a['review_status'],
+                 approval_method=a['approval_method'], reviewer_decision=a['reviewer_decision'], decision_id=a['decision_id'],
+                 work_registry_status=a['work_registry_status']),
+            dict(obra=a['obra'], tipo=a['tipo'], ano=a['ano'], relacao=None, score_editorial=a['score_editorial'],
+                 conexao_juridica=a['conexao_juridica'], sobre=a['sobre'], por_que_esta_aqui=a['por_que_esta_aqui'],
+                 alcance_neste_dispositivo=a['alcance_neste_dispositivo'], limites=a['limites']),
+            ADDITION_STATUS, route=dict(reference_id=a['addition_id'], nucleo_id=None, evidence_ids=[]))
+        if links[-1]['status'] not in ADDITION_TARGET_STATUS:
+            raise EngineError('ADDITION_TARGET_NOT_CURRENT', f"{a['addition_id']}: {links[-1]['status']}")
     res_path = reg.base / c['quarantine_resolution'] if c.get('quarantine_resolution') else None
     if res_path and res_path.is_file():
         for q in json.loads(res_path.read_text(encoding='utf-8'))['records']:
@@ -159,17 +173,101 @@ def build_links(norma_id, reg):
         l.setdefault('duplicate_class', 'DISTINCT')
         l['routes'].sort(key=lambda r: r['reference_id'])
     out.sort(key=lambda l: (reg.order(norma_id, l['target_id']), TYPE_ORDER.get(l['reference_type'], 9), l['label'], l['reference_id']))
-    return out
+    excl = {x['reference_id'] for x in link_exclusions(norma_id, reg)}
+    return [l for l in out if l['reference_id'] not in excl]
 
 
-def export(norma_id, links, out_dir):
+EXCLUSION_STATUS = 'MATERIAL_MISMATCH_EXCLUDED'
+
+
+def link_exclusions(norma_id, reg):
+    """Editorial overlay of materially wrong links (norm config `link_exclusions`). The catalog is never edited: each record removes
+    exactly one link (reference_id) from the visible export. Fail closed when a record does not match exactly one built link."""
+    c = reg.cfg['norms'][norma_id]
+    p = reg.base / c['link_exclusions'] if c.get('link_exclusions') else None
+    if not p:
+        return []
+    recs = json.loads(p.read_text(encoding='utf-8'))['records']
+    if len({r['reference_id'] for r in recs}) != len(recs):
+        raise EngineError('EXCLUSION_DUPLICATE', norma_id)
+    # validated against the unfiltered build (the clone has no link_exclusions, so it does not recurse)
+    full = {l['reference_id']: l for l in build_links(norma_id, _without_exclusions(reg, norma_id))}
+    for r in recs:
+        l = full.get(r['reference_id'])
+        if r.get('status') != EXCLUSION_STATUS:
+            raise EngineError('EXCLUSION_STATUS_INVALID', r['reference_id'])
+        if not l or l['target_id'] != r['target_id'] or l['source_id'] != r['source_id']:
+            raise EngineError('EXCLUSION_LINK_NOT_FOUND', r['reference_id'])
+    return recs
+
+
+ADDITION_STATUS = 'HUMAN_APPROVED_REFERENCE_V1'
+ADDITION_TARGET_STATUS = ('CURRENT', 'STRUCTURAL')        # never HISTORICAL_ONLY / revoked / unknown targets
+ADDITION_FIELDS = ('addition_id', 'target_id', 'work_id', 'obra', 'tipo', 'ano', 'score_editorial', 'conexao_juridica', 'sobre',
+                   'por_que_esta_aqui', 'alcance_neste_dispositivo', 'review_status', 'approval_method', 'reviewer_decision', 'decision_id',
+                   'work_registry_status')
+
+
+def work_reference_additions(norma_id, reg):
+    """Editorial overlay of human-approved WORK_REFERENCE links (norm config `work_reference_additions`, works from `work_registry`).
+    The catalog is never edited. Fail closed: missing field, status other than ADDITION_STATUS, work absent from the official registry
+    (or title/type mismatch) and duplicated (target, work) stop the build; target validity is checked by validate_link() + status."""
+    c = reg.cfg['norms'][norma_id]
+    if not c.get('work_reference_additions'):
+        return []
+    recs = json.loads((reg.base / c['work_reference_additions']).read_text(encoding='utf-8'))['records']
+    if not c.get('work_registry'):
+        raise EngineError('ADDITION_REGISTRY_NOT_CONFIGURED', norma_id)
+    works = {o['id']: o for o in json.loads((reg.base / c['work_registry']).read_text(encoding='utf-8'))['obras']}
+    seen = set()
+    for a in recs:
+        for f in ADDITION_FIELDS:
+            if a.get(f) in (None, ''):
+                raise EngineError('ADDITION_MISSING_FIELD', f'{a.get("addition_id")}: {f}')
+        if a['review_status'] != ADDITION_STATUS:
+            raise EngineError('ADDITION_NOT_APPROVED', a['addition_id'])
+        w = works.get(a['work_id'])
+        if not w or (w['titulo'], w['tipo']) != (a['obra'], a['tipo']):
+            raise EngineError('ADDITION_WORK_NOT_IN_REGISTRY', a['addition_id'])
+        if (a['target_id'], a['work_id']) in seen:
+            raise EngineError('ADDITION_DUPLICATE', a['addition_id'])
+        seen.add((a['target_id'], a['work_id']))
+    return recs
+
+
+def _without(reg, norma_id, *keys):
+    clone = TargetRegistry.__new__(TargetRegistry)
+    clone.__dict__.update(reg.__dict__)
+    clone.cfg = json.loads(json.dumps(reg.cfg))
+    for k in keys:
+        clone.cfg['norms'][norma_id].pop(k, None)
+    return clone
+
+
+def _without_exclusions(reg, norma_id):
+    return _without(reg, norma_id, 'link_exclusions')
+
+
+def without_additions(reg, norma_id):
+    """Build of the previous run (run2): same configuration without the WORK_REFERENCE additions overlay."""
+    return _without(reg, norma_id, 'work_reference_additions', 'work_registry')
+
+
+def export(norma_id, links, out_dir, excluded=(), added=()):
+    """`excluded`: link_exclusions records; listed in the JSON (audit) and never written to the visible lookup/payload pair.
+    `added`: work_reference_additions records (already in `links`); only their count/ids are listed in the JSON for audit."""
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     grouped = {}
     for l in links:
         grouped.setdefault(l['target_id'], []).append(l)
     doc = dict(schema_version=1, norma_id=norma_id, grouping='target_id', order='estrutural (indice) ; tipo ; label ; reference_id',
-               targets_with_references=len(grouped), total_links=len(links), references=grouped)
+               targets_with_references=len(grouped), total_links=len(links))
+    if excluded:
+        doc.update(total_excluded=len(excluded), excluded_links=list(excluded))
+    if added:
+        doc.update(total_added_by_overlay=len(added), added_links=[f"WORK_REFERENCE:{a['work_id']}@{a['target_id']}" for a in added])
+    doc['references'] = grouped
     j = out_dir / f'{norma_id}_REFERENCES_EXPORT.json'
     j.write_bytes((json.dumps(doc, ensure_ascii=False, indent=1, sort_keys=False) + '\n').encode('utf-8'))
     # ESP32-style pair (UTF-8, LF): payload lines grouped by target, lookup sorted by target_id (ASCII) for binary search
@@ -226,8 +324,10 @@ def main():
     reg = TargetRegistry(a.config)
     for norm in ([a.norm] if a.norm else sorted(reg.cfg['norms'])):
         links = build_links(norm, reg)
-        files = export(norm, links, a.out_dir)
-        print(json.dumps(dict(norm=norm, links=len(links), files=files), indent=1))
+        excluded = link_exclusions(norm, reg)
+        added = work_reference_additions(norm, reg)
+        files = export(norm, links, a.out_dir, excluded, added)
+        print(json.dumps(dict(norm=norm, links=len(links), excluded=len(excluded), added=len(added), files=files), indent=1))
 
 
 if __name__ == '__main__':

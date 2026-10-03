@@ -132,14 +132,17 @@ class TypographyAndScrollTest(unittest.TestCase):
 class ReferenceRichDetailTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.txt, cls.recs, cls.inc = RD.render()
+        cls.txt, cls.recs, cls.inc = RD.render(RD.APPROVED_PAYLOAD, RD.APPROVED_ADDITIONS)   # approved baseline = RUN3 (r2)
         cls.by = {r['key']: r for r in cls.recs}
 
     def test_header_up_to_date_and_counts(self):
         hdr = (ROOT / 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/lex_ref_detail_data.h').read_text(encoding='utf-8')
         self.assertEqual(hdr, self.txt)                                             # deterministic, regenerated from approved data
-        self.assertEqual(len(self.recs), 101)
-        self.assertEqual(self.inc, {'tipo': 0, 'ano': 0, 'nota': 18, 'sobre': 0, 'por_que': 0, 'temas': 101})
+        self.assertEqual(len(self.recs), 122)                                       # 101 RUN1 + 21 RUN3 additions
+        self.assertEqual(self.inc, {'tipo': 0, 'ano': 0, 'nota': 18, 'sobre': 0, 'por_que': 0, 'temas': 122})
+        base = RD.render()[1]                                                       # RUN1 records are all kept unchanged
+        self.assertEqual(len(base), 101)
+        self.assertTrue(all(self.by[r['key']] == r for r in base))
         self.assertEqual([r['key'] for r in self.recs], sorted((r['key'] for r in self.recs), key=lambda k: k.encode('utf-8')))
 
     def test_timbuktu(self):
@@ -151,7 +154,7 @@ class ReferenceRichDetailTest(unittest.TestCase):
         self.assertEqual(r['relacao'], 'Ilustração de violação')
 
     def test_every_payload_work_row_has_detail(self):
-        rows = [l.split('|') for l in (SD / '20_REFERENCES/REF_PAYLOAD.IDX').read_text(encoding='utf-8').splitlines() if l and l[0] != '#']
+        rows = [l.split('|') for l in RD.APPROVED_PAYLOAD.read_text(encoding='utf-8').splitlines() if l and l[0] != '#']   # RUN3 = approved SD
         work = [(r[0], r[5]) for r in rows if r[1] == 'WORK_REFERENCE' and r[2] == 'CURRENT_VISIBLE']
         self.assertEqual({f'{t}|{w}' for t, w in work}, set(self.by))
         for r in self.recs:

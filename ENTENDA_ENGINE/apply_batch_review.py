@@ -26,11 +26,17 @@ def apply(spec_path):
     out = copy.deepcopy(orig)
     by = {e['target_id']: e for e in out['explanations']}
     reviewed = {r['target_id']: r for r in spec['reviews']}
-    if sorted(reviewed) != sorted(by):
+    partial = bool(spec.get('partial_round'))
+    if partial:  # round review: only the round's targets are decided; every other explanation stays exactly as it was
+        if not reviewed or set(reviewed) - set(by) or spec.get('new_explanations'):
+            raise SystemExit(f'ROUND_REVIEW_INVALID: {sorted(set(reviewed) - set(by))}')
+    elif sorted(reviewed) != sorted(by):
         raise SystemExit(f'REVIEW_INCOMPLETE: {sorted(set(by) ^ set(reviewed))}')
     decisions = []
     for e in orig['explanations']:
         tid = e['target_id']
+        if tid not in reviewed:
+            continue
         r = reviewed[tid]
         cur = by[tid]
         changes = []
@@ -48,6 +54,10 @@ def apply(spec_path):
                     if hit:
                         raise SystemExit(f'TERM_EXISTS {tid} {ed["termo"]}')
                     terms.append(dict(termo=ed['termo'], explicacao=ed['after']))
+                elif ed.get('remove'):
+                    if len(hit) != 1 or hit[0]['explicacao'] != ed['before'] or ed.get('after') is not None:
+                        raise SystemExit(f'TERM_NOT_FOUND {tid} {ed["termo"]}')
+                    terms.remove(hit[0])
                 else:
                     if len(hit) != 1 or hit[0]['explicacao'] != ed['before']:
                         raise SystemExit(f'TERM_NOT_FOUND {tid} {ed["termo"]}')
@@ -66,7 +76,8 @@ def apply(spec_path):
                 cur['temporal'] = ed['after']
             else:
                 raise SystemExit(f'UNKNOWN_SECTION {sec}')
-            changes.append(dict(section=sec, termo=ed.get('termo'), before=ed.get('before'), after=ed['after'], kind=ed.get('kind', 'HUMAN_REQUESTED')))
+            changes.append(dict(section=sec, termo=ed.get('termo'), before=ed.get('before'), after=ed.get('after'), kind=ed.get('kind', 'HUMAN_REQUESTED'),
+                                **({'removed': True} if ed.get('remove') else {})))
         if r.get('display_topic'):
             cur['display_topic'] = r['display_topic']
         adjusted = bool(changes)
@@ -74,6 +85,11 @@ def apply(spec_path):
             cur['editorial_version'] = e.get('editorial_version', 1) + 1
         if r['decision'] != ('APPROVED_AFTER_ADJUSTMENT' if adjusted else 'APPROVED'):
             raise SystemExit(f'DECISION_INCONSISTENT {tid}: {r["decision"]} com {len(changes)} edicoes')
+        if partial:  # approval marked per explanation (the batch stays pending)
+            prior = cur.get('human_review')
+            cur['review_status'] = 'HUMAN_APPROVED_T1'
+            cur['human_review'] = dict(spec['human_review'], decision=r['decision'], review_scope=spec['review_scope'],
+                                       **({'previous_review': prior} if prior else {}))
         decisions.append(dict(target_id=tid, decision=r['decision'], review_reason=r['review_reason'],
                               changed_sections=sorted({c['section'] for c in changes}),
                               from_explanation_id=f"ENTENDA/{tid}/{e.get('variant', 'BASE')}/{e.get('editorial_version', 1)}",
@@ -88,13 +104,18 @@ def apply(spec_path):
         decisions.append(dict(target_id=n['target_id'], decision='APPROVED', review_reason=n['review_reason'], changed_sections=[],
                               from_explanation_id=None, to_explanation_id=f"ENTENDA/{n['target_id']}/BASE/1", origin='CREATED_BY_HUMAN_REVIEW',
                               changes=[], original_content=None, original_external_layer_notes=None))
-    out['review_status'] = 'HUMAN_APPROVED_T1'
-    out['human_review'] = dict(spec['human_review'])
-    out['supersedes_drafts'] = spec['original_drafts']
+    if partial:
+        out.setdefault('round_reviews', []).append(dict(review_scope=spec['review_scope'], decisions=spec['decisions_out'][0],
+                                                        approved_targets=sorted(reviewed), previous_drafts=spec['original_drafts']))
+    else:
+        out['review_status'] = 'HUMAN_APPROVED_T1'
+        out['human_review'] = dict(spec['human_review'])
+        out['supersedes_drafts'] = spec['original_drafts']
     counts = {}
     for d in decisions:
         counts[d['decision']] = counts.get(d['decision'], 0) + 1
-    doc = dict(schema_version=1, batch_id=spec['batch_id'], review_date=spec['human_review']['reviewed_on'], review_status='HUMAN_REVIEW_COMPLETED',
+    doc = dict(schema_version=1, batch_id=spec['batch_id'], review_date=spec['human_review']['reviewed_on'],
+               review_status='ROUND_REVIEW_COMPLETED' if partial else 'HUMAN_REVIEW_COMPLETED',
                original_drafts=spec['original_drafts'], original_drafts_preserved=True, decision_counts=dict(sorted(counts.items())),
                created_by_review=[n['target_id'] for n in spec.get('new_explanations', [])], decisions=decisions)
     if spec.get('decisions_schema', 1) >= 2:  # batch 03+: scope and hashes of the evidence handed to the reviewer

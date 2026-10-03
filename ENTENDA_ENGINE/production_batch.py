@@ -96,7 +96,10 @@ def review_sheet(spec, ctx, new, rows, manifest, decisions=None):
     lines = [f"# {'FINAL REVIEW SUMMARY' if final else 'REVIEW'} — {spec['batch_id']}", '']
     lines += (['Versão final aprovada pela revisão humana (`HUMAN_APPROVED_T1`). Decisões em `HUMAN_REVIEW_DECISIONS.json`;',
                'as versões anteriores permanecem no corpus como `RETIRED`.', ''] if final else
-              ['Explicações novas para revisão humana. Todas estão em `PENDING_HUMAN_REVIEW`.',
+              (['Explicações novas para revisão humana. Estão em `PENDING_HUMAN_REVIEW`, exceto as aprovadas em rodada de revisão registrada',
+                '(`HUMAN_APPROVED_T1`, com a DECISÃO HUMANA indicada abaixo de cada uma).'] if dec else
+               ['Explicações novas para revisão humana. Todas estão em `PENDING_HUMAN_REVIEW`.']) +
+              [
                'As explicações reutilizadas de lotes aprovados não são repetidas aqui.', '',
                'Para cada explicação, marque APROVAR, AJUSTAR (indique o trecho) ou REJEITAR.', ''])
     by_art = {}
@@ -208,6 +211,9 @@ def jurisprudence_recommendations_v2(spec, ctx, local):
                 raise BatchError('JURIS_EXCLUDED_LINK_USED', f"{r['target_id']} {ident}")
         if r.get('human_supplied'):
             item['human_supplied'] = r['human_supplied']  # informed by the human review; not a local record
+        if r.get('official_verification'):
+            # identity/thesis confirmed in an official source by the review: recorded, but it never replaces local ingestion
+            item['official_verification'] = r['official_verification']
         if status == 'MATERIAL_MISMATCH_EXCLUDED':
             item['material_mismatch'] = r['material_mismatch']
             item['note'] = 'Tese local conferida: trata de outro assunto. Vinculo local existente NAO deve ser usado como jurisprudencia pertinente a este target.'
@@ -260,13 +266,31 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
     if spec.get('superseded_by_final'):
         raise BatchError('BATCH_SUPERSEDED', f"{spec['batch_id']}: evidencia congelada; usar {spec['superseded_by_final']}")
     ctx = E.NormContext(spec['norma_id'], config)
+    if spec.get('reference_export'):  # batch-level export (e.g. corrected Reference Engine export); approved batches keep the config one
+        ctx.ncfg = dict(ctx.ncfg, reference_export=spec['reference_export'])
     main_corpus = E.load_corpus(ctx.base / ctx.ncfg['corpus'])
     drafts = json.loads((bd / spec['drafts']).read_text(encoding='utf-8'))
     spec['_drafts'] = drafts
     expected = spec.get('expected_review_status', 'PENDING_HUMAN_REVIEW')
-    if drafts['review_status'] != expected or any('review_status' in e for e in drafts['explanations']):
+    # round approvals: a pending batch may carry explanations approved in a recorded round review (marked per explanation)
+    round_approved, round_decisions = set(), []
+    for ra in spec.get('round_approvals', []):
+        doc = json.loads((bd / ra['decisions']).read_text(encoding='utf-8'))
+        if doc.get('review_status') != 'ROUND_REVIEW_COMPLETED' or doc.get('review_scope') != ra['review_scope']:
+            raise BatchError('BATCH_ROUND_DECISIONS_INVALID', ra['decisions'])
+        round_approved |= {d['target_id'] for d in doc['decisions']}
+        round_decisions += doc['decisions']
+    for e in drafts['explanations']:
+        st = e.get('review_status')
+        if st is not None and not (st == 'HUMAN_APPROVED_T1' and e['target_id'] in round_approved and e.get('human_review')):
+            raise BatchError('BATCH_REVIEW_STATUS_MISMATCH', f"{spec['batch_id']}: {e['target_id']} {st}")
+        if e['target_id'] in round_approved and st != 'HUMAN_APPROVED_T1':
+            raise BatchError('BATCH_ROUND_APPROVAL_NOT_MARKED', e['target_id'])
+    if drafts['review_status'] != expected:
         raise BatchError('BATCH_REVIEW_STATUS_MISMATCH', f"{spec['batch_id']}: esperado {expected}")
     decisions = json.loads((bd / spec['decisions']).read_text(encoding='utf-8')) if spec.get('decisions') else None
+    if round_decisions:
+        decisions = dict(decisions=(decisions or {}).get('decisions', []) + round_decisions)
     if expected != 'PENDING_HUMAN_REVIEW' and not decisions:
         raise BatchError('BATCH_APPROVAL_WITHOUT_DECISIONS', spec['batch_id'])
     in_scope = lambda t: any(t == a or t.startswith(a + ':') for a in spec['scope'])  # noqa: E731
@@ -294,7 +318,7 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
     existing = E.load_corpus(ctx.base / spec['supersedes_corpus']) if spec.get('supersedes_corpus') else E.load_corpus(corpus_path)
     stamped = E.stamp(drafts, ctx, existing)
     new = [r for r in stamped if r['status'] == 'ACTIVE']
-    if any(r['review_status'] != expected for r in new):
+    if any(r['review_status'] != ('HUMAN_APPROVED_T1' if r['target_id'] in round_approved else expected) for r in new):
         raise BatchError('BATCH_REVIEW_STATUS_MISMATCH', spec['batch_id'])
     combined = reused + new
     E.validate_corpus(reused + stamped, ctx)
