@@ -322,8 +322,15 @@ class ConsolidationStagingTest(unittest.TestCase):
 
     def test_firmware_source_candidate(self):
         fw = {p.relative_to(FW).as_posix(): sha(p) for p in FW.rglob('*') if p.is_file()}
-        self.assertEqual(fw, {p.relative_to(SRC).as_posix(): sha(p) for p in SRC.rglob('*') if p.is_file()})   # versioned sketch == r2 source
-        ino = (SRC / 'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino').read_text(encoding='utf-8')
+        current = {p.relative_to(SRC).as_posix(): sha(p) for p in SRC.rglob('*') if p.is_file()}
+        # The approved r2 source remains immutable.  Full-corpus ARTICLE_SEARCH legitimately changes only the gated .ino loader;
+        # generated reference headers must remain byte-identical to r2.
+        self.assertEqual(set(fw), set(current))
+        changed = {name for name in fw if fw[name] != current[name]}
+        self.assertEqual({'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino'}, changed)
+        ino = (FW / 'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino').read_text(encoding='utf-8')
+        self.assertIn('LEXV1_ARTCAT_CAMINHO', ino)
+        self.assertIn('LXARTCT1', ino)
         self.assertIn('#define LEXV1_ARTSEARCH_LOG 0 ', ino)
         self.assertIn('#define LEX_SCROLL_PERF_LOG 0 ', ino)
         self.assertEqual(sha(FW / 'lex_ref_detail_data.h'), '2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b')  # RUN3 (r2)

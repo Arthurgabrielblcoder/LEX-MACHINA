@@ -37,7 +37,11 @@ def sd_begin_block():
 class SdBeginTest(unittest.TestCase):
     def test_core_signature(self):
         sd_h = Path.home() / 'AppData/Local/Arduino15/packages/esp32/hardware/esp32/3.3.11/libraries/SD/src/SD.h'
-        if not sd_h.is_file():
+        try:
+            installed = sd_h.is_file()
+        except OSError:
+            self.skipTest('esp32 core header is not readable in this sandbox')
+        if not installed:
             self.skipTest('esp32 core 3.3.11 not installed here')
         sig = re.sub(r'\s+', ' ', sd_h.read_text(encoding='utf-8'))
         self.assertIn('bool begin( uint8_t ssPin = SS, SPIClass &spi = SPI, uint32_t frequency = 4000000, const char *mountpoint = "/sd", '

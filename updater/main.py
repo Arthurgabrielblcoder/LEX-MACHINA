@@ -18,6 +18,7 @@ from importar_sumulas_comuns import atualizar_sumulas_comuns
 from importar_stj_repetitivos import atualizar_repetitivos_stj
 from importar_precedentes_relevantes import atualizar_precedentes_relevantes
 from importar_acordaos import atualizar_acordaos
+from indices_artigos import executar_etapa_indices_artigos, linhas_relatorio
 
 
 # ============================================================
@@ -3117,6 +3118,25 @@ def argumentos_main():
     )
 
     parser.add_argument(
+        "--sem-indices-artigos",
+        action="store_true",
+        help=(
+            "Não gera/atualiza os índices de artigos (ARTICLE_SEARCH.IDX). "
+            "Por padrão a etapa roda depois dos textos do Catálogo Mestre."
+        ),
+    )
+
+    parser.add_argument(
+        "--indices-artigos-saida",
+        default=None,
+        help=(
+            "Staging dos índices de artigos. Padrão: "
+            "DEVICE_INTEGRATION/staging_article_indexes_full_corpus_candidate "
+            "(os índices nunca são gravados direto no cartão)."
+        ),
+    )
+
+    parser.add_argument(
         "--sem-stf-controle",
         action="store_true",
         help="Não atualiza ADI/ADC/ADPF/ADO; mantém a consulta de Repercussão Geral.",
@@ -5345,6 +5365,68 @@ def gerar_relatorio(
 # MAIN
 # ============================================================
 
+def etapa_indices_artigos(args, resultado_mestre):
+    """
+    ATUALIZAR LEGISLAÇÃO: textos -> validação -> ÍNDICES DE ARTIGOS -> manifesto.
+    Só depois desta etapa a atualização da legislação é considerada pronta.
+    """
+
+    if args.sem_mestre or args.sem_indices_artigos:
+        return None
+
+    print()
+    print(
+        "ÍNDICES DE ARTIGOS"
+    )
+    print(
+        "-" * 70
+    )
+
+    try:
+        manifesto = executar_etapa_indices_artigos(
+            RAIZ_VADEMECUM,
+            inventariar_vademecum,
+            localizar_item_mestre,
+            saida=args.indices_artigos_saida,
+            simular=args.simular_mestre,
+        )
+
+    except Exception as erro:
+        print(
+            "ERRO na etapa de índices de artigos: "
+            f"{erro}"
+        )
+        print(
+            "Atualização da legislação pronta: NÃO"
+        )
+        return None
+
+    for linha in linhas_relatorio(
+        manifesto,
+        simular=args.simular_mestre,
+    ):
+        print(linha)
+
+    pronta = resultado_mestre["erros"] == 0
+
+    print(
+        "Atualização da legislação pronta: "
+        + (
+            "SIM"
+            if pronta
+            else "NÃO"
+        )
+        + (
+            f" ({manifesto['summary']['BLOCKED']} norma(s) "
+            "sem índice: busca linear nelas)"
+            if manifesto["summary"]["BLOCKED"]
+            else ""
+        )
+    )
+
+    return manifesto
+
+
 def main():
     args = argumentos_main()
 
@@ -5496,6 +5578,11 @@ def main():
         print()
 
     if args.somente_mestre:
+        etapa_indices_artigos(
+            args,
+            resultado_mestre,
+        )
+
         relatorio_unificado = (
             gerar_relatorio_unificado(
                 catalogo_mestre.get(
@@ -6036,6 +6123,15 @@ def main():
             erros,
             alertas,
         )
+    )
+
+    # --------------------------------------------------------
+    # ÍNDICES DE ARTIGOS (ATUALIZAR LEGISLAÇÃO)
+    # --------------------------------------------------------
+
+    etapa_indices_artigos(
+        args,
+        resultado_mestre,
     )
 
     # --------------------------------------------------------

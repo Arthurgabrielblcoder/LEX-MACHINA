@@ -6290,6 +6290,15 @@ static bool lexV1CamadaV1Aplicavel()
 #define LEXV1_ARTIDX_RECORD 12
 #define LEXV1_ARTIDX_NS 16
 #define LEXV1_ARTIDX_MAX_BYTES (1024u*1024u)
+// FULL_CORPUS: ARTICLE_SEARCH_CATALOG.IDX (LXARTCT1, gerado no PC por article_index_corpus.py) lista bytes + sha256 do texto-fonte e a
+// NORMA de cada indice: o loader le SO o catalogo (64 B + 56 B por norma), sem listar o diretorio nem abrir dezenas de headers.
+// Catalogo valido = autoritativo (sem entrada do tamanho do texto -> SEM_INDICE). Ausente/invalido -> varredura generica anterior.
+// O catalogo so SELECIONA: o indice escolhido continua validado por inteiro contra o texto aberto (lexV1ArtIdxCarregar).
+#define LEXV1_ARTCAT_CAMINHO LEXV1_ARTIDX_DIR "/ARTICLE_SEARCH_CATALOG.IDX"
+#define LEXV1_ARTCAT_HEADER 64
+#define LEXV1_ARTCAT_ENTRADA 56
+#define LEXV1_ARTCAT_NORMA 16
+#define LEXV1_ARTCAT_MAX_ENTRADAS 4096
 struct LexV1ArtIdx { uint8_t estado; bool psram; uint8_t *buf; uint32_t bytes, registros, cargaUs; uint16_t ns; const uint8_t *recs;
                      String texto; uint32_t textoBytes; String arquivo; };
 static LexV1ArtIdx lexV1ArtIdx={0,false,nullptr,0,0,0,0,nullptr,String(),0,String()};
@@ -6377,6 +6386,46 @@ static bool lexV1ArtIdxCarregar(const char *caminho, const char *shaTexto, uint3
   return true;
 }
 
+// Catalogo: candidatos (caminho do indice + sha256 do texto-fonte) cujo texto-fonte tem o tamanho do texto aberto.
+// Retorno: -1 catalogo ausente/invalido (usar a varredura generica), 0..max candidatos. Le entrada a entrada (56 B, sem buffer em PSRAM);
+// o sha256 do corpo e conferido ANTES de qualquer candidato ser usado. Um descritor aberto por vez (FILE_DESCRIPTOR_POLICY).
+static int lexV1ArtCatCandidatos(String caminhos[], char shas[][65], int max)
+{
+  if(!SD.exists(LEXV1_ARTCAT_CAMINHO)) return -1;
+  LexV1FileReader f;
+  if(!f.abrir("ARTIDX_CAT",LEXV1_ARTCAT_CAMINHO,"article_index_catalog")) return -1;
+  uint8_t h[LEXV1_ARTCAT_HEADER];
+  uint32_t n=0;
+  bool ok=f.read(h,LEXV1_ARTCAT_HEADER)==LEXV1_ARTCAT_HEADER && memcmp(h,"LXARTCT1",8)==0 && lexV1Le16(h+8)==1 &&
+          lexV1Le16(h+10)==LEXV1_ARTCAT_HEADER && lexV1Le16(h+12)==LEXV1_ARTCAT_ENTRADA;
+  if(ok){ n=lexV1Le32(h+16); ok=n<=LEXV1_ARTCAT_MAX_ENTRADAS && f.size()==LEXV1_ARTCAT_HEADER+n*LEXV1_ARTCAT_ENTRADA; }
+  int nc=0;
+  mbedtls_sha256_context ctx; mbedtls_sha256_init(&ctx); mbedtls_sha256_starts(&ctx,0);
+  for(uint32_t i=0;ok && i<n;i++){
+    uint8_t e[LEXV1_ARTCAT_ENTRADA];
+    if(f.read(e,LEXV1_ARTCAT_ENTRADA)!=LEXV1_ARTCAT_ENTRADA){ ok=false; break; }
+    mbedtls_sha256_update(&ctx,e,LEXV1_ARTCAT_ENTRADA);
+    if(lexV1Le32(e)!=tamanhoArquivoAtual || nc>=max) continue;
+    char norma[LEXV1_ARTCAT_NORMA+1];
+    memcpy(norma,e+40,LEXV1_ARTCAT_NORMA); norma[LEXV1_ARTCAT_NORMA]='\0';
+    bool idOk=norma[0]!='\0';
+    for(int k=0;norma[k];k++) if(!((norma[k]>='A' && norma[k]<='Z') || (norma[k]>='0' && norma[k]<='9'))) idOk=false;
+    if(!idOk){ ok=false; break; }
+    caminhos[nc]=String(LEXV1_ARTIDX_DIR)+"/"+norma+LEXV1_ARTIDX_SUFIXO;
+    for(int j=0;j<32;j++) snprintf(shas[nc]+2*j,3,"%02x",e[8+j]);
+    nc++;
+  }
+  f.fechar();
+  uint8_t dig[32];
+  mbedtls_sha256_finish(&ctx,dig); mbedtls_sha256_free(&ctx);
+  if(ok && memcmp(dig,h+20,32)!=0) ok=false;
+  if(!ok){
+    Serial.printf("[ARTIDX] CATALOGO_INVALIDO %s -> varredura generica\n",LEXV1_ARTCAT_CAMINHO);
+    return -1;
+  }
+  return nc;
+}
+
 // Indice do TEXTO ABERTO. Texto diferente do vinculado -> descarrega o anterior (nenhum offset dele sobrevive) e decide de novo.
 static bool lexV1ArtIdxPronto()
 {
@@ -6390,9 +6439,18 @@ static bool lexV1ArtIdxPronto()
   if(lexV1ArtIdx.estado!=0) return false;                       // sem indice/invalido: decidido uma vez para este texto
   lexV1ArtIdx.texto=caminhoArquivoAtual; lexV1ArtIdx.textoBytes=tamanhoArquivoAtual; lexV1ArtIdx.arquivo="";
   uint32_t t0=micros();
-  // 1) candidatos por nome (sem abrir as entradas) e 2) header de 96 B: so os do MESMO tamanho de texto seguem.
   String nomes[LEXV1_ARTIDX_MAX_CANDIDATOS];
   int total=0;
+  int candidatos[LEXV1_ARTIDX_MAX_CANDIDATOS], nc=0;
+  char shaHeader[LEXV1_ARTIDX_MAX_CANDIDATOS][65];
+  // 0) FULL_CORPUS: catalogo -> so as entradas do MESMO tamanho de texto (sem listar o diretorio nem abrir headers).
+  int cat=lexV1ArtCatCandidatos(nomes,shaHeader,LEXV1_ARTIDX_MAX_CANDIDATOS);
+  if(cat>=0){
+    for(nc=0;nc<cat;nc++) candidatos[nc]=nc;
+    total=cat;
+    if(LEXV1_ARTSEARCH_LOG) Serial.printf("[ARTIDX] CATALOGO candidatos=%d ms=%lu\n",cat,(unsigned long)((micros()-t0)/1000));
+  } else {
+  // 1) candidatos por nome (sem abrir as entradas) e 2) header de 96 B: so os do MESMO tamanho de texto seguem.
   {
     LexV1FileReader d;
     if(d.abrir("ARTIDX_DIR",LEXV1_ARTIDX_DIR,"article_index_scan")){
@@ -6405,8 +6463,6 @@ static bool lexV1ArtIdxPronto()
       d.fechar();
     }
   }
-  int candidatos[LEXV1_ARTIDX_MAX_CANDIDATOS], nc=0;
-  char shaHeader[LEXV1_ARTIDX_MAX_CANDIDATOS][65];
   for(int i=0;i<total;i++){
     uint8_t h[LEXV1_ARTIDX_HEADER];
     LexV1FileReader f;
@@ -6416,6 +6472,7 @@ static bool lexV1ArtIdxPronto()
     if(lidos!=LEXV1_ARTIDX_HEADER || memcmp(h,"LXARTIX1",8)!=0 || lexV1Le32(h+20)!=tamanhoArquivoAtual) continue;
     for(int j=0;j<32;j++) snprintf(shaHeader[nc]+2*j,3,"%02x",h[24+j]);
     candidatos[nc++]=i;
+  }
   }
   if(nc==0){
     lexV1ArtIdx.estado=2;

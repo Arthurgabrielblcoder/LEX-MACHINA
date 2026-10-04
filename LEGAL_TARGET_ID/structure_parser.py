@@ -28,6 +28,76 @@ ART_ALONE_RE = re.compile(r'^Art\.?$', re.I)
 # before this option are unchanged.
 ART_RE_CS = re.compile(ART_RE.pattern)
 ART_ALONE_RE_CS = re.compile(ART_ALONE_RE.pattern)
+# Opt-in (remission_guard=True, full-corpus article indexes): a heading-shaped line whose text continues with a citation word is a
+# wrapped remission ('Art. 95 da Constituição', 'Art. 276 inclusive os que...', '(Renumerado do Art. 84 para' + 'Art. 83 pelo
+# Decreto-lei...'), never an article of this norm. Only these words, in lower case ('Art. 481. Pelo contrato...' and 'Art. 1.358-O.
+# condomínio edilício...' (CC) stay articles).
+REMISSION_WORDS = frozenset(('da', 'do', 'das', 'dos', 'desta', 'deste', 'destas', 'destes', 'inclusive', 'pelo', 'pela', 'pelos',
+                             'pelas', 'para', 'combinado', 'c/c'))
+# Opt-in (heading_variants=True, full-corpus article indexes): unambiguous source typos of an article HEADING are read as the heading
+# ('Art . 2º' and 'Art. . 154' -> 'Art. 2º' / 'Art. 154'; 'Art. 22A.' -> 'Art. 22-A.'). 'Art. 104.A companhia' (no space after the
+# dot) is NOT a suffix: it stays article 104. Double suffixes ('Art. 359-M-A') are not representable and stay unparsed.
+VARIANT_PREFIX_RE = re.compile(r'^Art(?:\s*\.)+\s*(?=\d)')
+VARIANT_GLUED_RE = re.compile(r'^(Art\. (?:\d{1,3}(?:\.\d{3})+(?!\d)|\d{1,4})(?:º|°)?)([A-Z])(?=[\s.]|$)')
+
+
+SPLIT_ORDINAL = ('o', 'º', '°')
+SPLIT_SUFFIX_RE = re.compile(r'^-([A-Z])\.(?:\s+(.*))?$')
+
+
+SPLIT_DIGITS_RE = re.compile(r'^(\d{1,3})\.?$')
+# Last word of the previous non-empty line that leaves a sentence open before a hyperlink split ('...disposto no' / 'Art. 167' / ';').
+CITATION_TAIL = frozenset(('no', 'do', 'da', 'nos', 'dos', 'das', 'na', 'nas', 'ao', 'aos', 'à', 'às', 'pelo', 'pela', 'pelos', 'pelas',
+                           'e', 'ou', 'com', 'em', 'de', 'o', 'a', 'os', 'as', 'conforme', 'segundo', 'consoante', 'nº', 'n.º'))
+
+
+def join_split_heading(line, following):
+    """Opt-in heading_variants: a heading the source split over the next lines -> (joined heading, NON-EMPTY lines consumed), else
+    (line, 0). `following` = the next non-empty lines (stripped).
+      'Art. 4' / 'o' / '-A. Considera-se...'  -> 'Art. 4-A. Considera-se...'  (ordinal and suffix on their own lines)
+      'Art. 21' / '7' / '. As disposições...' -> 'Art. 217.'                  (last digit(s) of the number on the next line)
+    '-' + a capital + '.' only: 'Art. 34' / '- O condenado...' is a dash before the text, not a suffix."""
+    m = ART_RE_CS.match(line)
+    rest = (m.group(3) or '').strip() if m else None
+    if not m or m.group(2) or rest not in ('',) + SPLIT_ORDINAL:
+        return line, 0
+    num, k = m.group(1), 0
+    d = SPLIT_DIGITS_RE.match(following[0]) if rest == '' and following else None
+    if d and '.' not in num and len(num) + len(d.group(1)) <= 4:
+        num, k = num + d.group(1), 1
+    if rest == '' and len(following) > k and following[k] in SPLIT_ORDINAL:
+        k += 1
+    sm = SPLIT_SUFFIX_RE.match(following[k]) if len(following) > k else None
+    if sm:
+        return f"Art. {num}-{sm.group(1)}. {sm.group(2) or ''}".rstrip(), k + 1
+    if num != m.group(1):
+        return f"Art. {num}.", 1
+    return line, 0
+
+
+def remission_heading(m, prev_line, next_line):
+    """Opt-in remission_guard: why a heading-shaped line is a remission (None = it is a heading).
+      REMISSION_WORD     'Art. 95 da Constituição', 'Art. 83 pelo Decreto-lei...';
+      WRAPPED_CITATION   hyperlink split: empty heading text and the previous line leaves the sentence open ('...disposto no' /
+                         'Art. 141.') or the next line continues it ('Art. 610' / ', com as seguintes modificações')."""
+    rest = (m.group(3) or '').strip()
+    if rest.split(' ', 1)[0] in REMISSION_WORDS:
+        return 'REMISSION_WORD'
+    if rest == '':
+        tail = re.sub(r'[\s,]+$', '', prev_line or '').rsplit(' ', 1)[-1]
+        if tail in CITATION_TAIL or (next_line or '')[:1] in (',', ';', ':', ')'):
+            return 'WRAPPED_CITATION'
+    return None
+
+
+def heading_variant(line):
+    """Normalized heading line (opt-in heading_variants); any other line is returned unchanged."""
+    if not line.startswith('Art'):
+        return line
+    line = VARIANT_PREFIX_RE.sub('Art. ', line, count=1)
+    return VARIANT_GLUED_RE.sub(lambda m: m.group(1) + '-' + m.group(2), line, count=1)
+
+
 PAR_RE = re.compile(r'^§\s*(\d{1,3})(?:º|°|o)?' + SUFFIX + r'\s*\.?\s*(.*)$')
 PAR_UNICO_RE = re.compile(r'^Par[aá]grafo\s+[uú]nico\s*[.:\-–—]?\s*(.*)$', re.I)
 # The separator dash must be followed by whitespace: 'I-A o Conselho' is inciso I-A, never inciso I with text 'A o...'.
@@ -42,7 +112,8 @@ def _clean(s):
     return re.sub(r'\s+', ' ', s).strip()
 
 
-def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, article_case_sensitive=False):
+def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, article_case_sensitive=False, remission_guard=False,
+                    heading_variants=False):
     reg = reg or T.registry()
     if not reg.known(norma_id) or reg.parent(norma_id):
         raise T.TargetIdError('UNKNOWN_NORM', norma_id)
@@ -72,10 +143,13 @@ def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, a
         return tid
 
     ended = False
+    skip_through = 0
+    prev_line, before_art = '', ''                     # previous non-empty line; the one before a pending 'Art.' alone line
     for i, raw in enumerate(lines, 1):
         line = raw.strip()
         if not line:
             continue
+        ctx_prev, prev_line = prev_line, line
         if any(line.startswith(m) for m in end_markers):
             # closing formula (signatures follow): close the open device; parsing resumes at the next namespace marker
             ended = True
@@ -90,11 +164,32 @@ def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, a
             continue
         if pending_art is not None:
             line = 'Art. ' + line
-            pending_art = None
+            pending_art, ctx_prev = None, before_art
+        if heading_variants:
+            if i <= skip_through:
+                continue                               # fragment of a split heading suffix, already joined
+            v = heading_variant(line)
+            if v != line and art_re.match(v):
+                anomalies.append(dict(line=i, code='HEADING_VARIANT_READ', text=line[:80]))
+            line = v
+            nxt, j = [], i
+            while j < len(lines) and len(nxt) < 2:
+                if lines[j].strip():
+                    nxt.append((j + 1, lines[j].strip()))
+                j += 1
+            joined, used = join_split_heading(line, [t for _, t in nxt])
+            if used:
+                anomalies.append(dict(line=i, code='HEADING_SPLIT_READ', text=(line + ' / ' + ' / '.join(t for _, t in nxt[:used]))[:80]))
+                line, skip_through = joined, nxt[used - 1][0]
         if art_alone_re.match(line):
-            pending_art = i
+            pending_art, before_art = i, ctx_prev
             continue
         m = art_re.match(line)
+        if m and remission_guard:
+            why = remission_heading(m, ctx_prev, next((x.strip() for x in lines[max(i, skip_through):] if x.strip()), ''))
+            if why:
+                anomalies.append(dict(line=i, code='REMISSION_HEADING_SKIPPED', reason=why, text=line[:80]))
+                m = None
         if m:
             art = T.normalize_number_label(m.group(1).replace('.', '') + ('-' + m.group(2) if m.group(2) else ''))
             par = inc = None

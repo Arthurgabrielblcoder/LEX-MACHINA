@@ -28,6 +28,10 @@ Binary format (little-endian), schema 1
     u16 reserved    0
 Lookup: lower_bound on (number, suffix) -> occurrences are contiguous -> occurrence k = record[lb + k]. O(log n).
 Usage: python build_article_search_index.py --text T --target-index J [--text-map M] --out OUT.IDX [--manifest OUT.json]
+       python build_article_search_index.py --all --corpus-root DIR --output-dir DIR [...]   (whole corpus: article_index_corpus.py)
+all_occurrences=True (corpus mode): one record per heading OCCURRENCE of the article (a repeated label, e.g. the preamble 'Art. 1º'
+of a decree-law followed by the code's own 'Art. 1º', or a quoted amending text, keeps every line in text order, as the linear search
+finds them); default False = one record per target at its line_start (approved CF88/CC2002 indexes, which have no repeated label).
 """
 import argparse
 import hashlib
@@ -53,9 +57,24 @@ def line_starts(data):
     return starts
 
 
-def build(text_path, target_index_path, text_map_path=None):
+def heading_offset(data, starts, lineno):
+    """Byte offset of the heading of the article whose parser line is `lineno` (1-based). A heading split by the source
+    ('Art.' alone, number on the next line) starts at the 'Art.' line: the parser joins them and records the number line."""
+    off = starts[lineno - 1]
+    if data[off:off + 12].decode('utf-8', 'replace').lstrip().lower().startswith('art'):
+        return off
+    j = lineno - 1
+    while j > 0:
+        j -= 1
+        prev = data[starts[j]:starts[j + 1]].decode('utf-8', 'replace').strip()
+        if prev:
+            return starts[j] if prev.rstrip('.') in ('Art', 'art') else off
+    return off
+
+
+def build(text_path, target_index_path, text_map_path=None, all_occurrences=False, target_index=None):
     data = Path(text_path).read_bytes()
-    idx = json.loads(Path(target_index_path).read_text(encoding='utf-8'))
+    idx = target_index if target_index is not None else json.loads(Path(target_index_path).read_text(encoding='utf-8'))
     src_sha = hashlib.sha256(data).hexdigest()
     if idx['source']['sha256'] != src_sha or idx['source']['bytes'] != len(data):
         raise IndexError_('TARGET_INDEX_NOT_BUILT_FROM_THIS_TEXT')
@@ -77,15 +96,16 @@ def build(text_path, target_index_path, text_map_path=None):
         num, suf = int(m['num']), (ord(m['suf']) - 64 if m['suf'] else 0)
         if not 1 <= num <= 0xFFFF:
             raise IndexError_(f"ARTICLE_NUMBER_OUT_OF_RANGE {t['target_id']}")
-        off = starts[t['line_start'] - 1]
-        head = data[off:off + 12].decode('utf-8', 'replace').lstrip()
-        if not head.lower().startswith('art'):
-            raise IndexError_(f"ARTICLE_LINE_MISMATCH {t['target_id']} {head!r}")
-        if mapped is not None and mapped.get(off) != t['target_id']:
-            raise IndexError_(f"TEXT_MAP_MISMATCH {t['target_id']} @ {off}: {mapped.get(off)}")
         if m['ns'] not in ns_order:
             ns_order.append(m['ns'])
-        recs.append([num, suf, ns_order.index(m['ns']), off, t['target_id']])
+        for line in (t['occurrences'] if all_occurrences else [t['line_start']]):
+            off = heading_offset(data, starts, line) if all_occurrences else starts[line - 1]
+            head = data[off:off + 12].decode('utf-8', 'replace').lstrip()
+            if not head.lower().startswith('art'):
+                raise IndexError_(f"ARTICLE_LINE_MISMATCH {t['target_id']} {head!r}")
+            if mapped is not None and mapped.get(off) != t['target_id']:
+                raise IndexError_(f"TEXT_MAP_MISMATCH {t['target_id']} @ {off}: {mapped.get(off)}")
+            recs.append([num, suf, ns_order.index(m['ns']), off, t['target_id']])
     if len(ns_order) > 255 or any(len(n) >= NS_SIZE for n in ns_order):
         raise IndexError_('NAMESPACE_TABLE')
     recs.sort(key=lambda r: (r[0], r[1], r[3]))                     # occurrence order = text order
@@ -103,7 +123,8 @@ def build(text_path, target_index_path, text_map_path=None):
     manifest = dict(schema='LXARTIX1', schema_version=SCHEMA, record_size=RECORD, header_size=HEADER, records=len(recs),
                     namespaces=ns_order, bytes=len(blob), sha256=hashlib.sha256(blob).hexdigest(),
                     source=dict(path=Path(text_path).name, bytes=len(data), sha256=src_sha),
-                    target_index=dict(path=Path(target_index_path).name, sha256=hashlib.sha256(Path(target_index_path).read_bytes()).hexdigest(),
+                    target_index=dict(path=Path(target_index_path).name if target_index_path else None,
+                                      sha256=hashlib.sha256(Path(target_index_path).read_bytes()).hexdigest() if target_index_path else None,
                                       target_index_sha256=idx.get('target_index_sha256')),
                     text_map=dict(path=Path(text_map_path).name, sha256=hashlib.sha256(Path(text_map_path).read_bytes()).hexdigest()) if text_map_path else None,
                     by_namespace={n: sum(1 for r in recs if ns_order[r[2]] == n) for n in ns_order},
@@ -154,12 +175,28 @@ class ArticleIndex:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--text', required=True)
-    ap.add_argument('--target-index', required=True)
+    ap.add_argument('--text')
+    ap.add_argument('--target-index')
     ap.add_argument('--text-map')
-    ap.add_argument('--out', required=True)
+    ap.add_argument('--out')
     ap.add_argument('--manifest')
+    ap.add_argument('--all', action='store_true', help='whole corpus (Catalogo Mestre + updater locator): one index per norm + catalog')
+    ap.add_argument('--corpus-root', help='vade mecum root (SD or a local copy of it)')
+    ap.add_argument('--output-dir', help='staging: SD/99_LEX_V1/10_TARGETS/*_ARTICLE_SEARCH.IDX + catalog, _host/ manifest + report')
+    ap.add_argument('--previous-dir', help='previous staging (incremental KEEP/REBUILD/ADD/REMOVE); default: the approved V1 package')
+    ap.add_argument('--physical-manifest', help='manifest of the last validated physical SD (PHYSICAL_HASH_CONFIRMED)')
+    ap.add_argument('--runtime', help='CF88 runtime text opened by the device (default: <corpus-root>/99_LEX_V1/... or the approved package)')
     a = ap.parse_args()
+    if a.all:
+        import article_index_corpus as C
+        if not (a.corpus_root and a.output_dir):
+            ap.error('--all needs --corpus-root and --output-dir')
+        man = C.build_corpus(a.corpus_root, a.output_dir, previous_dir=a.previous_dir or C.APPROVED_STAGING,
+                             physical_manifest=a.physical_manifest, runtime_path=a.runtime)
+        print(C.report_text(man), end='')
+        return 0 if not man['summary']['BLOCKED'] else 2
+    if not (a.text and a.target_index and a.out):
+        ap.error('--text, --target-index and --out (or --all)')
     blob, man = build(a.text, a.target_index, a.text_map)
     ArticleIndex(blob, Path(a.text).read_bytes())                 # self-check
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)

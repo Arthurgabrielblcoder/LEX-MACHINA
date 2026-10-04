@@ -14,10 +14,11 @@ import structure_parser as SP  # noqa: E402
 import target_id as T  # noqa: E402
 
 
-def build(norma, source, end_markers=(), article_case_sensitive=False):
+def build(norma, source, end_markers=(), article_case_sensitive=False, remission_guard=False, heading_variants=False):
     raw = Path(source).read_bytes()
     text = raw.decode('utf-8-sig')
-    targets, anomalies, _ = SP.parse_structure(text, norma, end_markers=end_markers, article_case_sensitive=article_case_sensitive)
+    targets, anomalies, _ = SP.parse_structure(text, norma, end_markers=end_markers, article_case_sensitive=article_case_sensitive,
+                                               remission_guard=remission_guard, heading_variants=heading_variants)
     ids = [t['target_id'] for t in targets]
     dup = len(ids) - len(set(ids))
     ordered = '\n'.join(sorted(ids)).encode('ascii')
