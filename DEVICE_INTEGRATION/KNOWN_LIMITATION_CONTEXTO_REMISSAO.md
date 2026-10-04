@@ -2,7 +2,13 @@
 
 **Registrada em:** 2026-10-04, durante a validação física de `MARIA2006_SOURCE_REPAIR`.
 
-**Estado:** ABERTA. Não será corrigida durante o freeze da MARIA2006.
+**Estado:** CORRIGIDA (remissões), aprovada fisicamente em 2026-10-04: `CONTEXT_CITATION_GUARD_PHYSICAL_REPORT.md`. Os 68 casos ambíguos
+continuam abertos. Texto transcrito por artigo alterador: `KNOWN_LIMITATION_CONTEXTO_EM_TRANSCRICAO_LEGISLATIVA.md`.
+
+**Atualização (2026-10-04, LEX_CONTEXT_CITATION_GUARD):** correção candidata em `contexto_juridico.h` (somente DEVICE V1), ainda
+**sem teste físico**. O caso do art. 1 da MARIA2006 deixa de produzir `PAR=8`. A auditoria das 72 normas eliminou 996 gatilhos falsos
+sem perder nenhum registro estrutural aprovado. Continuam abertos 68 casos ambíguos, em que o marcador fica sozinho na linha e a
+remissão segue na linha seguinte. Detalhes em `CONTEXT_CITATION_GUARD_REPORT.md`.
 
 ## Sintoma
 

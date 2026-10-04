@@ -225,7 +225,10 @@ class ConsolidationEndToEndTest(unittest.TestCase):
         c = dict(artigo='', paragrafo='', inciso='', alinea='')
         P.apply_line(c, data[off:data.index(b'\n', off)])
         self.assertEqual(c['artigo'], '2000')                                          # never ART.2
-        self.assertEqual(sha(SRC / 'contexto_juridico.h'), sha(FW / 'contexto_juridico.h'))  # same thousands rule in the candidate
+        # same thousands rule in the candidate (CONTEXT_CITATION_GUARD changed other parts of the header, never lerNumeroDispositivo)
+        num = 'static inline bool lerNumeroDispositivo('
+        fn = lambda s: s[s.index(num):s.index('\n}\n', s.index(num))]                # noqa: E731
+        self.assertEqual(fn((SRC / 'contexto_juridico.h').read_text(encoding='utf-8')), fn((FW / 'contexto_juridico.h').read_text(encoding='utf-8')))
 
     @unittest.skipUnless(CC_TXT.is_file(), 'Codigo Civil TXT (local SD backup) not present')
     def test_16_scroll_deep_cc(self):
@@ -327,7 +330,9 @@ class ConsolidationStagingTest(unittest.TestCase):
         # generated reference headers must remain byte-identical to r2.
         self.assertEqual(set(fw), set(current))
         changed = {name for name in fw if fw[name] != current[name]}
-        self.assertEqual({'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino'}, changed)
+        # CONTEXT_CITATION_GUARD: contexto_juridico.h changes only inside LEX_DEVICE_V1_ENABLED (test_context_citation_guard)
+        self.assertEqual({'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino', 'contexto_juridico.h'}, changed)
+        self.assertIn('#define LEX_CONTEXTO_CITACAO 1', (FW / 'contexto_juridico.h').read_text(encoding='utf-8'))
         ino = (FW / 'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino').read_text(encoding='utf-8')
         self.assertIn('LEXV1_ARTCAT_CAMINHO', ino)
         self.assertIn('LXARTCT1', ino)

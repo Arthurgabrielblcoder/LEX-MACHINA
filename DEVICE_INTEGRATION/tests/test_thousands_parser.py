@@ -132,8 +132,15 @@ class ParsingTableTest(unittest.TestCase):
         self.assertEqual(parse('Parágrafo único. Texto'), (True, ''))  # not an article line
 
     def test_remissions_keep_their_own_number(self):
-        # context parser: a line-start remission is parsed as before (art. 2), never as 12858 / 2858
-        self.assertEqual(parse('art. 2º da Lei nº 12.858, de 2013'), (True, '2'))
+        # context parser: a line-start remission never reads the cited law number (12858 / 2858). Without the guard it is read as
+        # art. 2; with CONTEXT_CITATION_GUARD (DEVICE V1) it is a remission and leaves the context intact.
+        P.CITATION_GUARD = False
+        try:
+            self.assertEqual(parse('art. 2º da Lei nº 12.858, de 2013'), (True, '2'))
+        finally:
+            P.CITATION_GUARD = True
+        self.assertEqual(parse('art. 2º da Lei nº 12.858, de 2013'), (False, ''))
+        self.assertEqual(parse('Art. 2º da Lei nº 12.858, de 2013'), (False, ''))
 
 
 class StructuralParserTest(unittest.TestCase):

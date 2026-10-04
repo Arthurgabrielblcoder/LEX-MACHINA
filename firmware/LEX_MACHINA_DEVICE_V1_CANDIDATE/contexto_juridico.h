@@ -127,6 +127,51 @@ static inline bool lerNumeroDispositivo(const char *&p, char *saida, size_t capa
   return true;
 }
 
+#if LEX_DEVICE_V1_ENABLED
+// CONTEXT_CITATION_GUARD: o TXT oficial quebra a linha fisica no hyperlink de uma remissao ("...nos termos do" / "§ 8º do art. 226
+// da Constituição Federal,"). A linha comeca com o marcador, mas e citacao de OUTRO dispositivo, nunca estrutura local. Decisao so
+// pelos bytes da propria linha (identica no scroll, no pouso, na reconstrucao e na ancora; sem I/O, sem estado), com os sinais do
+// parser estrutural aprovado (LEGAL_TARGET_ID/structure_parser.py, modo estrito dos indices do acervo):
+//   - apos o numero (ou "unico"): ',' / ';' (lista de citacao) ou uma palavra de remissao (REMISSION_WORDS), em minusculas;
+//   - artigo so com 'A' maiusculo (article_case_sensitive): "art. 701" no meio da frase e remissao;
+//   - inciso com formato de cabecalho; alinea seguida de ',' / ';' e citacao ("alínea" / "e), ou ...").
+#define LEX_CONTEXTO_CITACAO 1
+
+// p = logo apos o numero do dispositivo (ordinal ja consumido) ou apos "unico". true = remissao.
+static inline bool remissaoAposDispositivo(const char *p)
+{
+  if((uint8_t)p[0]==0xC2 && (uint8_t)p[1]==0xB0) p+=2;                 // grau usado como ordinal ("§ 6° deste artigo")
+  else if(p[0]=='o' && (p[1]=='\0' || p[1]==' ' || p[1]=='\t' || p[1]=='.' || p[1]==',' || p[1]==';')) p++;   // "1o"
+  p=pularEspacosContexto(p);
+  if(*p==',' || *p==';') return true;                                   // "§ 6º, todos da Constituição", "Art. 101, I,"
+  if(*p=='.') p=pularEspacosContexto(p+1);
+  char w[12];
+  size_t n=0;
+  while(((*p>='a' && *p<='z') || *p=='/') && n<11) w[n++]=*p++;
+  if(n==0 || (*p!='\0' && *p!=' ' && *p!='\t')) return false;
+  w[n]='\0';
+  static const char *const PALAVRAS_REMISSAO[]={"da","do","das","dos","desta","deste","destas","destes","inclusive",
+                                                "pelo","pela","pelos","pelas","para","combinado","c/c"};
+  for(size_t i=0;i<sizeof(PALAVRAS_REMISSAO)/sizeof(PALAVRAS_REMISSAO[0]);i++)
+    if(strcmp(w,PALAVRAS_REMISSAO[i])==0) return true;
+  return false;
+}
+
+// [inicio,fim) = sequencia romana lida. Cabecalho de inciso: maiuscula inicial ("II", OCR "Il"/"Vl") e sem '.' depois ("D.O.U.",
+// "inciso" + "III."); inicial minuscula (OCR "lI -") so com travessao seguido de espaco/fim ("civil.", "mil-réis", "dividi-los",
+// uma letra solta "c"/"x" sao palavras ou fragmentos).
+static inline bool incisoComFormatoEstrutural(const char *inicio, const char *fim)
+{
+  const char *k=pularEspacosContexto(fim);
+  if(*k=='.') return false;
+  if(*inicio>='A' && *inicio<='Z') return true;
+  const char *d;
+  if(*k=='-') d=k+1;
+  else if((uint8_t)k[0]==0xE2 && (uint8_t)k[1]==0x80 && ((uint8_t)k[2]==0x93 || (uint8_t)k[2]==0x94)) d=k+3;
+  else return false;
+  return *d=='\0' || *d==' ' || *d=='\t';
+}
+#endif
 static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
                                                  const char *linha,
                                                  bool inicioLinhaFisica,
@@ -139,6 +184,9 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
 
   // ARTIGO
   if(prefixoAsciiContexto(p,"Art")){
+#if LEX_DEVICE_V1_ENABLED
+    if(*p!='A') return false;                                           // CONTEXT_CITATION_GUARD: "art. 701" = remissao
+#endif
     if(prefixoAsciiContexto(p,"Artigo")) p+=6;
     else p+=3;
 
@@ -149,6 +197,9 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
     p=pularEspacosContexto(p);
 
     if(!lerNumeroDispositivo(p,valor,sizeof(valor))) return false;
+#if LEX_DEVICE_V1_ENABLED
+    if(remissaoAposDispositivo(p)) return false;                        // "Art. 95 da Constituição"
+#endif
 
     copiarContextoCampo(c.artigo,sizeof(c.artigo),valor);
 
@@ -170,6 +221,9 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
     p=pularEspacosContexto(p);
 
     if(!lerNumeroDispositivo(p,valor,sizeof(valor))) return false;
+#if LEX_DEVICE_V1_ENABLED
+    if(remissaoAposDispositivo(p)) return false;                        // "§ 8º do art. 226 da Constituição Federal,"
+#endif
 
     copiarContextoCampo(c.paragrafo,sizeof(c.paragrafo),valor);
 
@@ -198,6 +252,10 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
 
     if(prefixoAsciiContexto(aposParagrafo,"unico") ||
        prefixoAsciiContexto(aposParagrafo,"\xC3\xBAnico")){
+#if LEX_DEVICE_V1_ENABLED
+      if(remissaoAposDispositivo(aposParagrafo+((uint8_t)aposParagrafo[0]==0xC3?6:5)))
+        return false;                                                   // "parágrafo único do art. 274"
+#endif
       copiarContextoCampo(c.paragrafo,sizeof(c.paragrafo),"unico");
 
       c.inciso[0]='\0';
@@ -216,6 +274,12 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
   // pertencem ao alfabeto romano. Uma letra minuscula seguida de ')' e
   // inequivocamente uma alinea, inclusive quando ocupa uma unica linha visual.
   if(p[0]>='a' && p[0]<='z' && p[1]==')'){
+#if LEX_DEVICE_V1_ENABLED
+    {
+      const char *q=pularEspacosContexto(p+2);
+      if(*q==',' || *q==';') return false;                              // "(§ 1º, alínea" / "e), ou deixar de divulgá-la"
+    }
+#endif
     valor[0]=p[0];
     valor[1]='\0';
 
@@ -238,6 +302,9 @@ static inline bool aplicarLinhaContextoJuridico(ContextoJuridicoAtivo &c,
 
   valor[n]='\0';
 
+#if LEX_DEVICE_V1_ENABLED
+  if(n>0 && !incisoComFormatoEstrutural(inicio,p)) return false;
+#endif
   if(n>0 && p>inicio && delimitadorDispositivo(p)){
     copiarContextoCampo(c.inciso,sizeof(c.inciso),valor);
 
@@ -440,6 +507,26 @@ static inline int validarRotinaContextoJuridico()
       falhas += !aplicarLinhaContextoJuridico(c,entradas[i],true,90+i) || strcmp(c.artigo,esperados[i])!=0;
     }
     falhas += aplicarLinhaContextoJuridico(c,"Art. 999.999.999.999 Texto",true,110) || strcmp(c.artigo,"1000000")!=0;
+  }
+  // CONTEXT_CITATION_GUARD: remissoes em inicio de linha fisica nao mudam o contexto; cabecalhos reais continuam mudando.
+  {
+    limparContextoJuridico(c,"lei.txt");
+    falhas += !aplicarLinhaContextoJuridico(c,"Art. 1\xC2\xBA Esta Lei cria mecanismos",true,200) || strcmp(c.artigo,"1")!=0;
+    static const char *const citacoes[]={"\xC2\xA7 8\xC2\xBA do art. 226 da Constitui\xC3\xA7\xC3\xA3o Federal,","\xC2\xA7 3\xC2\xBA do",
+                                         "\xC2\xA7 6\xC2\xBA, todos da Constitui\xC3\xA7\xC3\xA3o Federal","\xC2\xA7 6\xC2\xB0 deste artigo",
+                                         "par\xC3\xA1grafo \xC3\xBAnico do art. 274","art. 226 da Constitui\xC3\xA7\xC3\xA3o","art. 701",
+                                         "Art. 95 da Constitui\xC3\xA7\xC3\xA3o","Art. 101, I,","III.","civil.","mil-r\xC3\xA9is a dois",
+                                         "D.O.U. de 2.9.1981","c","e), ou deixar de divulg\xC3\xA1-la"};
+    for(size_t i=0;i<sizeof(citacoes)/sizeof(citacoes[0]);i++)
+      falhas += aplicarLinhaContextoJuridico(c,citacoes[i],true,210+i) || strcmp(c.artigo,"1")!=0 || c.paragrafo[0] ||
+                c.inciso[0] || c.alinea[0];
+    falhas += !aplicarLinhaContextoJuridico(c,"\xC2\xA7 1\xC2\xBA o trabalho ter\xC3\xA1 a",true,230) || strcmp(c.paragrafo,"1")!=0;
+    falhas += !aplicarLinhaContextoJuridico(c,"III - hip\xC3\xB3tese",true,231) || strcmp(c.inciso,"III")!=0;
+    falhas += !aplicarLinhaContextoJuridico(c,"b) da empregada gestante",true,232) || strcmp(c.alinea,"b")!=0;
+    falhas += !aplicarLinhaContextoJuridico(c,"lI - OCR do inciso",true,233) || strcmp(c.inciso,"LI")!=0;
+    falhas += !aplicarLinhaContextoJuridico(c,"Par\xC3\xA1grafo \xC3\xBAnico. a exclus\xC3\xA3o",true,234) ||
+              strcmp(c.paragrafo,"unico")!=0 || c.inciso[0];
+    falhas += !aplicarLinhaContextoJuridico(c,"Art. 2\xC2\xBA Toda mulher",true,235) || strcmp(c.artigo,"2")!=0 || c.paragrafo[0];
   }
 #endif
   /*

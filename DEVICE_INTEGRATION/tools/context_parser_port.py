@@ -12,6 +12,11 @@ ROOT = HERE.parents[1]
 ROMAN = set('IVXLCDM')
 THOUSANDS = True                                            # False = parser before the fix (bug reproduction)
 THOUSANDS_MAX = 999999999                                   # LEX_NUMERO_DISPOSITIVO_MAX (contexto_juridico.h)
+CITATION_GUARD = True                                       # False = parser before CONTEXT_CITATION_GUARD (bug reproduction)
+# CONTEXT_CITATION_GUARD (DEVICE V1 build): the remission words of the approved structural parser (LEGAL_TARGET_ID/structure_parser.py
+# REMISSION_WORDS, strict full-corpus mode) and the citation-list comma/semicolon (article_index_corpus.CITATION_RE).
+REMISSION_WORDS = (b'da', b'do', b'das', b'dos', b'desta', b'deste', b'destas', b'destes', b'inclusive', b'pelo', b'pela', b'pelos',
+                   b'pelas', b'para', b'combinado', b'c/c')
 
 
 def _skip(b, i):
@@ -65,23 +70,62 @@ def _number(b, i):
     return s, i
 
 
+def _remission_after(b, i):
+    """Port of remissaoAposDispositivo: i = right after the device number (or 'unico'). True = the line is a wrapped citation."""
+    if i + 1 < len(b) and b[i] == 0xC2 and b[i + 1] == 0xB0:                 # degree sign used as ordinal
+        i += 2
+    elif i < len(b) and b[i] == ord('o') and (i + 1 >= len(b) or b[i + 1] in (0x20, 0x09, ord('.'), ord(','), ord(';'))):
+        i += 1                                                              # letter 'o' used as ordinal ('1o')
+    i = _skip(b, i)
+    if i < len(b) and b[i] in (ord(','), ord(';')):
+        return True
+    if i < len(b) and b[i] == ord('.'):
+        i = _skip(b, i + 1)
+    j = i
+    while j < len(b) and (97 <= b[j] <= 122 or b[j] == ord('/')) and j - i < 11:
+        j += 1
+    if j == i or (j < len(b) and b[j] not in (0x20, 0x09)):
+        return False
+    return b[i:j] in REMISSION_WORDS
+
+
+def _roman_heading_shape(b, i, j):
+    """Port of incisoComFormatoEstrutural: b[i:j] = the roman run. An inciso heading starts with a capital ('II', OCR 'Il'/'Vl') and
+    is not followed by '.' ('D.O.U.', 'L. F. Cirne', 'inciso' + 'III.'); a lower-case start ('lI -', OCR) needs a dash followed by a
+    blank or the end of the line ('civil.', 'mil-réis', 'dividi-los', a stray 'c' or 'x' are words/fragments, not incisos)."""
+    k = _skip(b, j)
+    if k < len(b) and b[k] == ord('.'):
+        return False
+    if 65 <= b[i] <= 90:
+        return True
+    if k < len(b) and b[k] == ord('-'):
+        d = k + 1
+    elif k + 2 < len(b) and b[k] == 0xE2 and b[k + 1] == 0x80 and b[k + 2] in (0x93, 0x94):
+        d = k + 3
+    else:
+        return False
+    return d >= len(b) or b[d] in (0x20, 0x09)
+
+
 def apply_line(c, line):
     """Mutates context dict c exactly like aplicarLinhaContextoJuridico (line = raw bytes of one physical line)."""
     i = _skip(line, 0)
     if _prefix(line, i, 'Art'):
+        if CITATION_GUARD and line[i] != ord('A'):
+            return False                                                    # 'art. 701' = hyperlinked remission (strict mode)
         i += 6 if _prefix(line, i, 'Artigo') else 3
         if i < len(line) and line[i] == ord('.'):
             i += 1
         if i >= len(line) or line[i] not in (0x20, 0x09):
             return False
         v, i = _number(line, _skip(line, i))
-        if v is None:
+        if v is None or (CITATION_GUARD and _remission_after(line, i)):
             return False
         c.update(artigo=v, paragrafo='', inciso='', alinea='')
         return True
     if i + 1 < len(line) and line[i] == 0xC2 and line[i + 1] == 0xA7:
         v, i = _number(line, _skip(line, i + 2))
-        if v is None:
+        if v is None or (CITATION_GUARD and _remission_after(line, i)):
             return False
         c.update(paragrafo=v, inciso='', alinea='')
         return True
@@ -92,16 +136,24 @@ def apply_line(c, line):
         after = i + 10
     if after is not None:
         a = _skip(line, after)
-        if _prefix(line, a, 'unico') or _prefix(line, a, b'\xc3\xbanico'):
+        u = 5 if _prefix(line, a, 'unico') else 6 if _prefix(line, a, b'\xc3\xbanico') else 0
+        if u:
+            if CITATION_GUARD and _remission_after(line, a + u):
+                return False                                                # 'parágrafo único do art. 274'
             c.update(paragrafo='unico', inciso='', alinea='')
             return True
     if i + 1 < len(line) and 97 <= line[i] <= 122 and line[i + 1] == ord(')'):
+        k = _skip(line, i + 2)
+        if CITATION_GUARD and k < len(line) and line[k] in (ord(','), ord(';')):
+            return False                                                    # '(§ 1º, alínea' / 'e), ou ...'
         c.update(alinea=chr(line[i]))
         return True
     j, v = i, ''
     while j < len(line) and chr(line[j]).upper() in ROMAN and len(v) + 1 < 16:
         v += chr(line[j]).upper()
         j += 1
+    if v and CITATION_GUARD and not _roman_heading_shape(line, i, j):
+        return False
     if v and _delim(line, j):
         c.update(inciso=v, alinea='')
         return True
