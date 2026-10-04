@@ -989,6 +989,26 @@ def _obter_fonte_especial_mestre(
     )
 
 
+def arquivo_local_corrompido(texto_local):
+    """Local reprovado pelos mesmos sinais de corrupção do texto extraído (byte nulo, letras espaçadas, HTML)."""
+
+    corpo = corpo_arquivo_lex(
+        texto_local
+    )
+
+    return any(
+        problema.startswith(
+            (
+                "ENCODING_CORRUPTION",
+                "HTML_EXTRACTION_FAILURE",
+            )
+        )
+        for problema in verificar_texto(
+            corpo
+        )
+    )
+
+
 def _validar_candidato_generico(
     texto_novo,
     texto_atual=None,
@@ -1027,6 +1047,18 @@ def _validar_candidato_generico(
             texto_novo
         )
     )
+
+    if (
+        texto_atual is not None
+        and arquivo_local_corrompido(
+            texto_atual
+        )
+    ):
+        # O local não é um last-known-good: é uma resposta corrompida gravada
+        # antes das travas (ex.: MARIA2006, UTF-16 lido como cp1252). Compará-lo
+        # bloquearia o reparo para sempre; vale a regra de arquivo ausente
+        # (cabeçalhos de artigo + identidade do ato, em candidato_mestre_de_bytes).
+        texto_atual = None
 
     if texto_atual is None:
         if not artigos_novos:
@@ -1144,6 +1176,109 @@ def _validar_candidato_generico(
     return problemas
 
 
+def numero_ato_catalogo(item):
+    """'Lei 11.340/2006 - Lei Maria da Penha' -> '11.340' (None se o nome não trouxer número/ano)."""
+
+    m = re.search(
+        r"(\d{1,3}(?:\.\d{3})*|\d+)\s*/\s*(\d{4})",
+        str(
+            item.get(
+                "nome",
+                "",
+            )
+        ),
+    )
+
+    return m.group(1) if m else None
+
+
+def validar_identidade_norma(item, texto):
+    """
+    O texto precisa ser DESTA norma: o número do ato do catálogo deve
+    aparecer no início do texto (ex.: 'LEI Nº 11.340, DE 7 DE AGOSTO DE 2006').
+    """
+
+    numero = numero_ato_catalogo(
+        item
+    )
+
+    if not numero:
+        return []
+
+    inicio = texto[:6000]
+
+    variantes = {
+        numero,
+        numero.replace(".", ""),
+    }
+
+    if not any(
+        v in inicio
+        for v in variantes
+    ):
+        return [
+            f"IDENTIDADE: número do ato {numero} ausente "
+            "no início do texto."
+        ]
+
+    return []
+
+
+def candidato_mestre_de_bytes(
+    item,
+    pagina,
+    origem,
+    texto_local=None,
+):
+    """
+    Bytes já baixados (e validados por validar_resposta_fonte) -> candidato.
+    Separado do download para ser reproduzível a partir dos bytes brutos
+    arquivados como prova de origem.
+    """
+
+    texto, codificacao = (
+        extrair_texto(
+            pagina
+        )
+    )
+
+    problemas = (
+        _validar_candidato_generico(
+            texto,
+            texto_atual=(
+                texto_local
+            ),
+        )
+        + validar_identidade_norma(
+            item,
+            texto,
+        )
+    )
+
+    if problemas:
+        raise AtualizacaoBloqueada(
+            "INTEGRIDADE",
+            " | ".join(
+                problemas
+            ),
+        )
+
+    return {
+        "texto": texto,
+        "codificacao": codificacao,
+        "fonte_nome": (
+            "Presidência da República - Planalto"
+        ),
+        "url_fonte": item[
+            "fonte_oficial"
+        ],
+        "metodo": (
+            "HTML_PLANALTO_COM_GUARDRAILS"
+        ),
+        "origem": origem,
+    }
+
+
 def _obter_candidato_mestre(
     item,
     texto_local=None,
@@ -1165,50 +1300,18 @@ def _obter_candidato_mestre(
             )
         )
 
-    pagina = baixar_pagina(
+    pagina, origem = baixar_fonte_oficial(
         item[
             "fonte_oficial"
         ]
     )
 
-    texto, codificacao = (
-        extrair_texto(
-            pagina
-        )
+    return candidato_mestre_de_bytes(
+        item,
+        pagina,
+        origem,
+        texto_local=texto_local,
     )
-
-    problemas = (
-        _validar_candidato_generico(
-            texto,
-            texto_atual=(
-                texto_local
-            ),
-        )
-    )
-
-    if problemas:
-        raise RuntimeError(
-            (
-                "ATUALIZAÇÃO BLOQUEADA POR INTEGRIDADE: "
-                + " | ".join(
-                    problemas
-                )
-            )
-        )
-
-    return {
-        "texto": texto,
-        "codificacao": codificacao,
-        "fonte_nome": (
-            "Presidência da República - Planalto"
-        ),
-        "url_fonte": item[
-            "fonte_oficial"
-        ],
-        "metodo": (
-            "HTML_PLANALTO_COM_GUARDRAILS"
-        ),
-    }
 
 
 def _ler_texto_local_seguro(
@@ -1233,6 +1336,7 @@ def _montar_conteudo_mestre(
     fonte_nome,
     url_fonte,
     metodo,
+    atualizado_em=None,
 ):
     return (
         criar_cabecalho_mestre(
@@ -1246,6 +1350,9 @@ def _montar_conteudo_mestre(
             ),
             metodo=(
                 metodo
+            ),
+            atualizado_em=(
+                atualizado_em
             ),
         )
         + texto
@@ -2060,8 +2167,11 @@ def criar_cabecalho_mestre(
     fonte_nome=None,
     url_fonte=None,
     metodo=None,
+    atualizado_em=None,
 ):
-    data = datetime.now().strftime(
+    # atualizado_em: data fixa (ex.: do download arquivado) para reconstruir o
+    # mesmo arquivo byte a byte a partir dos bytes brutos da fonte.
+    data = atualizado_em or datetime.now().strftime(
         "%d/%m/%Y %H:%M"
     )
 
@@ -3286,6 +3396,156 @@ def baixar_pagina(url):
 
 
 # ============================================================
+# FONTE OFICIAL FAIL-CLOSED (MARIA2006_SOURCE_REPAIR)
+# ============================================================
+#
+# Em 13/09/2026 a página oficial da Lei 11.340/2006 (Planalto, servida em
+# UTF-16LE com BOM FF FE e Content-Type sem charset) foi decodificada como
+# cp1252: cada byte nulo virou espaço ("< h t m l >") e o HTML inteiro foi
+# gravado como se fosse o TXT jurídico. Fluxo correto, todo fail-closed:
+#   fonte oficial -> download -> validação da resposta -> detecção de
+#   encoding -> extração/normalização -> TXT -> validação estrutural.
+# Qualquer resposta inesperada levanta AtualizacaoBloqueada (UPDATE_BLOCKED)
+# e o último TXT válido (last-known-good) NÃO é sobrescrito.
+
+class AtualizacaoBloqueada(RuntimeError):
+    """UPDATE_BLOCKED: a fonte não passou nas travas; o arquivo local fica intacto."""
+
+    def __init__(self, codigo, detalhe):
+        self.codigo = codigo
+        super().__init__(
+            f"UPDATE_BLOCKED {codigo}: {detalhe}"
+        )
+
+
+CONTENT_TYPES_ACEITOS = (
+    "text/html",
+    "application/xhtml+xml",
+    "text/plain",
+)
+
+# Páginas institucionais de erro, bloqueio de WAF ou desafio anti-robô.
+SINAIS_PAGINA_INVALIDA = (
+    "captcha",
+    "request rejected",
+    "the requested url was rejected",
+    "access denied",
+    "acesso negado",
+    "service unavailable",
+    "página não encontrada",
+    "pagina nao encontrada",
+    "404 not found",
+    "erro 404",
+    "erro 500",
+    "internal server error",
+    "bad gateway",
+    "gateway timeout",
+)
+
+MIN_BYTES_FONTE = 1024
+
+
+def _host(url):
+    from urllib.parse import urlparse
+
+    return (
+        urlparse(url).hostname
+        or ""
+    ).lower()
+
+
+def validar_resposta_fonte(
+    url,
+    url_final,
+    status,
+    content_type,
+    conteudo,
+):
+    """
+    Valida a resposta HTTP de uma fonte oficial antes de qualquer extração.
+    Levanta AtualizacaoBloqueada; não toca em arquivos.
+    """
+
+    if status != 200:
+        raise AtualizacaoBloqueada(
+            "HTTP_STATUS",
+            f"status {status} em {url}",
+        )
+
+    if _host(url_final) != _host(url):
+        raise AtualizacaoBloqueada(
+            "REDIRECT_INESPERADO",
+            f"{url} -> {url_final}",
+        )
+
+    tipo = (
+        content_type
+        or ""
+    ).split(";")[0].strip().lower()
+
+    if tipo and tipo not in CONTENT_TYPES_ACEITOS:
+        raise AtualizacaoBloqueada(
+            "CONTENT_TYPE_INESPERADO",
+            f"{content_type!r} em {url}",
+        )
+
+    if not conteudo or len(conteudo) < MIN_BYTES_FONTE:
+        raise AtualizacaoBloqueada(
+            "CONTEUDO_VAZIO",
+            f"{len(conteudo or b'')} B em {url}",
+        )
+
+
+def baixar_fonte_oficial(url):
+    """
+    Download fail-closed de uma fonte oficial. -> (bytes, metadados).
+    Metadados = prova de origem (URL pedida/final, status, content-type,
+    Last-Modified, ETag, tamanho e SHA-256 dos bytes brutos).
+    """
+
+    resposta = requests.get(
+        url,
+        headers=HEADERS,
+        timeout=40,
+    )
+
+    conteudo = resposta.content
+
+    validar_resposta_fonte(
+        url,
+        resposta.url,
+        resposta.status_code,
+        resposta.headers.get(
+            "Content-Type",
+            "",
+        ),
+        conteudo,
+    )
+
+    return conteudo, {
+        "url": url,
+        "url_final": resposta.url,
+        "status": resposta.status_code,
+        "content_type": resposta.headers.get(
+            "Content-Type",
+            "",
+        ),
+        "last_modified": resposta.headers.get(
+            "Last-Modified",
+            "",
+        ),
+        "etag": resposta.headers.get(
+            "ETag",
+            "",
+        ),
+        "bytes": len(conteudo),
+        "sha256": hashlib.sha256(
+            conteudo
+        ).hexdigest(),
+    }
+
+
+# ============================================================
 # DECODIFICAÇÃO
 # ============================================================
 
@@ -3335,7 +3595,92 @@ def pontuar_texto(texto):
     return pontos
 
 
+def detectar_codificacao_estrutural(conteudo):
+    """
+    Codificação que NÃO pode ser deduzida por pontuação de texto:
+    BOM UTF-8/UTF-16 ou UTF-16 sem BOM (metade dos bytes nulos).
+    -> nome da codificação ou None (usar a heurística cp1252/utf-8).
+    """
+
+    if conteudo.startswith(
+        b"\xef\xbb\xbf"
+    ):
+        return "utf-8-sig"
+
+    if conteudo.startswith(
+        b"\xff\xfe"
+    ):
+        return "utf-16-le"
+
+    if conteudo.startswith(
+        b"\xfe\xff"
+    ):
+        return "utf-16-be"
+
+    amostra = conteudo[:4096]
+
+    if (
+        len(amostra) >= 64
+        and amostra.count(b"\x00")
+        >= len(amostra) // 4
+    ):
+        pares = amostra[0::2].count(
+            b"\x00"
+        )
+
+        impares = amostra[1::2].count(
+            b"\x00"
+        )
+
+        return (
+            "utf-16-be"
+            if pares > impares
+            else "utf-16-le"
+        )
+
+    return None
+
+
 def decodificar_html(conteudo):
+    estrutural = detectar_codificacao_estrutural(
+        conteudo
+    )
+
+    if estrutural:
+        corpo = conteudo
+
+        if estrutural.startswith(
+            "utf-16"
+        ) and corpo[:2] in (
+            b"\xff\xfe",
+            b"\xfe\xff",
+        ):
+            corpo = corpo[2:]
+
+        if estrutural == "utf-16-le":
+            # O Planalto anexa ao documento UTF-16 um enchimento de espaços
+            # ASCII de 1 byte (0x20) depois de </html> (l11340.htm: 1.559 B,
+            # total ímpar). Em UTF-16LE todo caractere ASCII termina em 0x00,
+            # então remover só bytes 0x20/0x09/0x0D/0x0A do fim nunca consome
+            # texto UTF-16; qualquer outro resíduo continua bloqueando.
+            corpo = corpo.rstrip(
+                b" \t\r\n"
+            )
+
+        try:
+            texto = corpo.decode(
+                estrutural,
+                errors="strict",
+            )
+
+        except UnicodeDecodeError as erro:
+            raise AtualizacaoBloqueada(
+                "ENCODING_INVALIDO",
+                f"{estrutural}: {erro}",
+            )
+
+        return texto, estrutural
+
     candidatos = []
 
     for codificacao in (
@@ -3601,12 +3946,69 @@ CARACTERES_SUSPEITOS = (
 )
 
 
+# "< h t m l >", "L e i n º 1 1 . 3 4 0": bytes nulos de UTF-16 lidos como texto.
+LETRAS_ESPACADAS_RE = re.compile(
+    r"(?:(?<!\S)\S ){16}"
+)
+
+HTML_RESIDUAL_RE = re.compile(
+    r"<\s*/?\s*(?:html|head|body|meta|script|style|div|span|table|p|font)\b",
+    re.I,
+)
+
+
 def verificar_texto(texto):
     problemas = []
 
     if len(texto) < 100:
         problemas.append(
             "Texto extraído pequeno demais."
+        )
+
+    if "\x00" in texto:
+        problemas.append(
+            "ENCODING_CORRUPTION: byte nulo no texto extraído."
+        )
+
+    if LETRAS_ESPACADAS_RE.search(
+        texto[:50000]
+    ):
+        problemas.append(
+            "ENCODING_CORRUPTION: letras separadas por espaço "
+            "(UTF-16 lido como 8 bits)."
+        )
+
+    if texto.lstrip().startswith(
+        (
+            "ÿþ",
+            "þÿ",
+        )
+    ):
+        problemas.append(
+            "ENCODING_CORRUPTION: BOM UTF-16 lido como 8 bits."
+        )
+
+    if len(
+        HTML_RESIDUAL_RE.findall(
+            texto
+        )
+    ) >= 5:
+        problemas.append(
+            "HTML_EXTRACTION_FAILURE: marcação HTML no texto extraído."
+        )
+
+    inicio = texto[:3000].lower()
+
+    sinais = [
+        sinal
+        for sinal in SINAIS_PAGINA_INVALIDA
+        if sinal in inicio
+    ]
+
+    if sinais and len(texto) < 20000:
+        problemas.append(
+            "PAGINA_INVALIDA: "
+            + ", ".join(sinais)
         )
 
     ruins = [

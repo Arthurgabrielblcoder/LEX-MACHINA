@@ -345,7 +345,9 @@ def previous_state(prev_dir):
 
 # ---------------------------------------------------------------- corpus build
 def build_corpus(corpus_root, out_dir, previous_dir=None, physical_manifest=None, runtime_path=None, items=None, locator=None,
-                 approved_staging=APPROVED_STAGING):
+                 approved_staging=APPROVED_STAGING, source_overrides=None):
+    """source_overrides: {NORMA_ID: path} = candidate text that REPLACES the located file of that norm (same SD path), e.g. a
+    repaired source not yet on the card (its physical status is then NEEDS_PHYSICAL_HASH_CONFIRMATION until deployed)."""
     corpus_root, out_dir = Path(corpus_root), Path(out_dir)
     prev = previous_state(previous_dir)
     phys = json.loads(Path(physical_manifest).read_text(encoding='utf-8'))['entries'] if physical_manifest and Path(physical_manifest).is_file() else None
@@ -364,7 +366,9 @@ def build_corpus(corpus_root, out_dir, previous_dir=None, physical_manifest=None
             blocked.append(dict(norma=norma, file=None, **rec['blocked']))
             norms[norma] = rec
             continue
-        src = Path(d['path'])
+        src = Path((source_overrides or {}).get(norma, d['path']))
+        if norma in (source_overrides or {}):
+            rec['source_override'] = True
         if norma in RUNTIME_REDIRECT:                          # the device opens the V1 runtime, not the catalog text
             rt_rel = RUNTIME_REDIRECT[norma]
             rt = Path(runtime_path) if runtime_path else (corpus_root / rt_rel if (corpus_root / rt_rel).is_file() else approved_staging / 'SD' / rt_rel)
