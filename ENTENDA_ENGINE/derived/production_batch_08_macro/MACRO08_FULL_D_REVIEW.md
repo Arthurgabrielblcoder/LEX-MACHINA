@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO HUMANA COMPLETA (fila D)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 9 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 16 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
 
 ## Índice
 
@@ -13,6 +13,13 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 9 itens · nenhum aprovado. Só itens com LE
 7. [D] `ADCT:ART.17` — ADCT, art. 17 — Redução de remunerações e acumulações protegidas · TEMPORAL_STATUS_UNRESOLVED
 8. [D] `ADCT:ART.25` — ADCT, art. 25 — Revogação de delegações ao Executivo e decretos-leis pendentes · TEMPORAL_STATUS_UNRESOLVED
 9. [D] `ADCT:ART.27` — ADCT, art. 27 — Implantação do STJ e dos Tribunais Regionais Federais · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, CONSTITUTIONAL_AMBIGUITY, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS, TEMPORAL_STATUS_UNRESOLVED
+10. [E] `ADCT:ART.34` — ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988 · TEMPORAL_STATUS_UNRESOLVED
+11. [E] `ADCT:ART.35` — ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios · TEMPORAL_STATUS_UNRESOLVED
+12. [E] `ADCT:ART.35:PAR.2` — ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA · TEMPORAL_STATUS_UNRESOLVED
+13. [E] `ADCT:ART.38` — ADCT, art. 38 — Limite provisório de despesa com pessoal · TEMPORAL_STATUS_UNRESOLVED
+14. [E] `ADCT:ART.52` — ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras · TEMPORAL_STATUS_UNRESOLVED
+15. [E] `ADCT:ART.54-A` — ADCT, art. 54-A — Indenização aos seringueiros · TEMPORAL_STATUS_UNRESOLVED
+16. [E] `ADCT:ART.60-A` — ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb · TEMPORAL_STATUS_UNRESOLVED
 
 ## 1. Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços
 
@@ -487,6 +494,383 @@ Não se deve concluir apenas pela leitura do § 11 que os quatro tribunais nele 
 
 - REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 5017" — A anotação oficial do § 11 remete à ADI 5017;
 - EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "aproveitamento dos ministros do tribunal federal de recursos" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 10. ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988
+
+- `ADCT:ART.34` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.34/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante.
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante.
+
+**Lei Seca**
+
+- `ADCT:ART.34:CAPUT`: O sistema tributário nacional entrará em vigor a partir do primeiro dia do quinto mês seguinte ao da promulgação da Constituição, mantido, até então, o da Constituição de 1967, com a redação dada pela Emenda nº 1, de 1969, e pelas posteriores.
+- `ADCT:ART.34:PAR.1`: Entrarão em vigor com a promulgação da Constituição os arts. 148, 149, 150, 154, I, 156, III, e 159, I, c, revogadas as disposições em contrário da Constituição de 1967 e das emendas que a modificaram, especialmente de seu art. 25, III.
+- `ADCT:ART.34:PAR.2`: O Fundo de Participação dos Estados e do Distrito Federal e o Fundo de Participação dos Municípios obedecerão às seguintes determinações:
+- `ADCT:ART.34:PAR.2:INC.I`: a partir da promulgação da Constituição, os percentuais serão, respectivamente, de dezoito por cento e de vinte por cento, calculados sobre o produto da arrecadação dos impostos referidos no art. 153, III e IV, mantidos os atuais critérios de rateio até a entrada em vigor da lei complementar a que se refere o art. 161, II;
+- `ADCT:ART.34:PAR.2:INC.II`: o percentual relativo ao Fundo de Participação dos Estados e do Distrito Federal será acrescido de um ponto percentual no exercício financeiro de 1989 e, a partir de 1990, inclusive, à razão de meio ponto por exercício, até 1992, inclusive, atingindo em 1993 o percentual estabelecido no art. 159, I, a ;
+- `ADCT:ART.34:PAR.2:INC.III`: o percentual relativo ao Fundo de Participação dos Municípios, a partir de 1989, inclusive, será elevado à razão de meio ponto percentual por exercício financeiro, até atingir o estabelecido no art. 159, I, b.
+- `ADCT:ART.34:PAR.3`: Promulgada a Constituição, a União, os Estados, o Distrito Federal e os Municípios poderão editar as leis necessárias à aplicação do sistema tributário nacional nela previsto.
+- `ADCT:ART.34:PAR.4`: As leis editadas nos termos do parágrafo anterior produzirão efeitos a partir da entrada em vigor do sistema tributário nacional previsto na Constituição.
+- `ADCT:ART.34:PAR.5`: Vigente o novo sistema tributário nacional, fica assegurada a aplicação da legislação anterior, no que não seja incompatível com ele e com a legislação referida nos §§ 3º e 4º.
+- `ADCT:ART.34:PAR.6`: Até 31 de dezembro de 1989, o disposto no art. 150, III, b , não se aplica aos impostos de que tratam os arts. 155, I, a e b , e 156, II e III, que podem ser cobrados trinta dias após a publicação da lei que os tenha instituído ou aumentado.
+- `ADCT:ART.34:PAR.7`: Até que sejam fixadas em lei complementar, as alíquotas máximas do imposto municipal sobre vendas a varejo de combustíveis líquidos e gasosos não excederão a três por cento.
+- `ADCT:ART.34:PAR.8`: Se, no prazo de sessenta dias contados da promulgação da Constituição, não for editada a lei complementar necessária à instituição do imposto de que trata o art. 155, I, b , os Estados e o Distrito Federal, mediante convênio celebrado nos termos da Lei Complementar nº 24, de 7 de janeiro de 1975, fixarão normas para regular provisoriamente a matéria.
+- `ADCT:ART.34:PAR.9`: Até que lei complementar disponha sobre a matéria, as empresas distribuidoras de energia elétrica, na condição de contribuintes ou de substitutos tributários, serão as responsáveis, por ocasião da saída do produto de seus estabelecimentos, ainda que destinado a outra unidade da Federação, pelo pagamento do imposto sobre operações relativas à circulação de mercadorias incidente sobre energia elétrica, desde a produção ou importação até a última operação, calculado o imposto sobre o preço então praticado na operação final e assegurado seu recolhimento ao Estado ou ao Distrito Federal, conforme o local onde deva ocorrer essa operação.
+- `ADCT:ART.34:PAR.10`: Enquanto não entrar em vigor a lei prevista no art. 159, I, c , cuja promulgação se fará até 31 de dezembro de 1989, é assegurada a aplicação dos recursos previstos naquele dispositivo da seguinte maneira:
+- `ADCT:ART.34:PAR.10:INC.I`: seis décimos por cento na Região Norte, através do Banco da Amazônia S.A.;
+- `ADCT:ART.34:PAR.10:INC.II`: um inteiro e oito décimos por cento na Região Nordeste, através do Banco do Nordeste do Brasil S.A.;
+- `ADCT:ART.34:PAR.10:INC.III`: seis décimos por cento na Região Centro-Oeste, através do Banco do Brasil S.A.
+- `ADCT:ART.34:PAR.11`: Fica criado, nos termos da lei, o Banco de Desenvolvimento do Centro-Oeste, para dar cumprimento, na referida região, ao que determinam os arts. 159, I, c , e 192, § 2º, da Constituição.
+- `ADCT:ART.34:PAR.12`: A urgência prevista no art. 148, II, não prejudica a cobrança do empréstimo compulsório instituído, em benefício das Centrais Elétricas Brasileiras S.A. , pela Lei nº 4.156, de 28 de novembro de 1962, com as alterações posteriores.
+
+**O QUE DIZ**
+
+O art. 34 do ADCT fixou que o sistema tributário nacional da Constituição entraria em vigor no primeiro dia do quinto mês após a promulgação, mantido até lá o sistema anterior, mas pôs alguns artigos em vigor desde a promulgação. Previu o aumento gradual dos fundos de participação de Estados e Municípios até 1993. Permitiu que os entes editassem desde logo as leis do novo sistema, com efeitos a partir de sua vigência, e assegurou a aplicação da legislação anterior no que não fosse incompatível com o novo sistema. Os demais parágrafos trazem regras provisórias sobre impostos, energia elétrica, fundos regionais, um banco de desenvolvimento e um empréstimo compulsório.
+
+**O QUE SIGNIFICA**
+
+O artigo organizou a passagem do sistema tributário antigo para o novo, com datas que já se encerraram.
+
+O ponto de maior alcance é o § 5º: a legislação tributária anterior continuou válida no que fosse compatível com o novo sistema. Assim, leis e códigos editados antes de 1988 puderam continuar a ser aplicados, desde que não contrariassem a Constituição.
+
+Algumas regras dependiam de lei complementar posterior, como a do § 9º, sobre o imposto incidente na energia elétrica, e sua situação atual depende dessas leis, externas ao texto.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei tributária editada antes da promulgação regulava um imposto que continuou existindo no novo sistema. Pelo § 5º, ela continuou aplicável no que fosse compatível com as novas regras.
+
+**ATENÇÃO**
+
+As datas e percentuais de implantação do artigo já produziram seus efeitos. O que continua aplicável hoje, em cada parágrafo, depende das leis posteriores e da interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Sistema tributário nacional*: conjunto de regras constitucionais sobre os tributos e sua repartição.
+- *Fundo de participação*: parte da arrecadação federal repassada a Estados e Municípios.
+- *Empréstimo compulsório*: tributo cobrado como empréstimo obrigatório, a ser devolvido nas condições da lei.
+
+**CAMADA EXTERNA**
+
+- A situação atual dos §§ 9º e 11 depende de leis complementares e ordinárias posteriores (legislação correlata, EXTERNAL_VERIFICATION_REQUIRED).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "a aplicação da legislação anterior no que não" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 11. ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios
+
+- `ADCT:ART.35` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.35/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).
+- Dispositivos citados (runtime): `ART.165:PAR.7` Os orçamentos previstos no § 5º, I e II, deste artigo, compatibilizados com o plano plurianual, terão entre suas funções a de reduzir desigualdades… · `ART.165:PAR.9` Cabe à lei complementar:
+
+**Lei Seca**
+
+- `ADCT:ART.35:CAPUT`: O disposto no art. 165, § 7º, será cumprido de forma progressiva, no prazo de até dez anos, distribuindo-se os recursos entre as regiões macroeconômicas em razão proporcional à população, a partir da situação verificada no biênio 1986-87.
+- `ADCT:ART.35:PAR.1`: Para aplicação dos critérios de que trata este artigo, excluem-se das despesas totais as relativas:
+- `ADCT:ART.35:PAR.1:INC.I`: aos projetos considerados prioritários no plano plurianual;
+- `ADCT:ART.35:PAR.1:INC.II`: à segurança e defesa nacional;
+- `ADCT:ART.35:PAR.1:INC.III`: à manutenção dos órgãos federais no Distrito Federal;
+- `ADCT:ART.35:PAR.1:INC.IV`: ao Congresso Nacional, ao Tribunal de Contas da União e ao Poder Judiciário;
+- `ADCT:ART.35:PAR.1:INC.V`: ao serviço da dívida da administração direta e indireta da União, inclusive fundações instituídas e mantidas pelo poder público federal.
+- `ADCT:ART.35:PAR.2`: Até a entrada em vigor da lei complementar a que se refere o art. 165, § 9º, I e II, serão obedecidas as seguintes normas:
+- `ADCT:ART.35:PAR.2:INC.I`: o projeto do plano plurianual, para vigência até o final do primeiro exercício financeiro do mandato presidencial subseqüente, será encaminhado até quatro meses antes do encerramento do primeiro exercício financeiro e devolvido para sanção até o encerramento da sessão legislativa;
+- `ADCT:ART.35:PAR.2:INC.II`: o projeto de lei de diretrizes orçamentárias será encaminhado até oito meses e meio antes do encerramento do exercício financeiro e devolvido para sanção até o encerramento do primeiro período da sessão legislativa;
+- `ADCT:ART.35:PAR.2:INC.III`: o projeto de lei orçamentária da União será encaminhado até quatro meses antes do encerramento do exercício financeiro e devolvido para sanção até o encerramento da sessão legislativa.
+
+**O QUE DIZ**
+
+O art. 35 do ADCT mandou cumprir de forma progressiva, em até dez anos, a regra do art. 165, § 7º, distribuindo recursos entre as regiões em proporção à população, a partir da situação do biênio 1986-87, e excluiu desse cálculo algumas despesas, como projetos prioritários, segurança e defesa nacional e serviço da dívida. O § 2º fixa prazos de envio e de devolução dos projetos do plano plurianual, da lei de diretrizes orçamentárias e da lei orçamentária, até que entre em vigor a lei complementar do art. 165, § 9º, I e II.
+
+**O QUE SIGNIFICA**
+
+A primeira parte do artigo tratava da implantação gradual da regionalização dos gastos federais e tinha prazo de dez anos, já encerrado.
+
+O § 2º é a parte de maior uso prático: enquanto a lei complementar prevista no art. 165, § 9º, não disciplinar a matéria, valem os prazos que ele fixa para o ciclo orçamentário da União.
+
+A aplicação do § 2º depende de um dado que o texto não fornece: a disciplina da matéria pela lei complementar do art. 165, § 9º.
+
+**EXEMPLO PRÁTICO**
+
+Ao preparar o orçamento do ano seguinte, o Executivo da União observa o prazo do § 2º para enviar ao Congresso o projeto de lei orçamentária.
+
+**ATENÇÃO**
+
+A aplicação do § 2º está condicionada à ausência da lei complementar do art. 165, § 9º. A situação dessa lei complementar pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Plano plurianual*: lei que fixa os programas e metas de governo para quatro anos.
+- *Lei de diretrizes orçamentárias*: lei anual que orienta a elaboração do orçamento.
+- *Regionalização*: distribuição dos recursos entre as regiões do país.
+
+**CAMADA EXTERNA**
+
+- A edição ou não da lei complementar do art. 165, § 9º, I e II, pertence à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 12. ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA
+
+- `ADCT:ART.35:PAR.2` · BLOCK · risco HIGH · ENTENDA/ADCT:ART.35:PAR.2/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade STRUCTURED · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).
+- Dispositivos citados (runtime): `ART.165:PAR.9` Cabe à lei complementar:
+
+**Lei Seca**
+
+- `ADCT:ART.35:PAR.2`: Até a entrada em vigor da lei complementar a que se refere o art. 165, § 9º, I e II, serão obedecidas as seguintes normas:
+- `ADCT:ART.35:PAR.2:INC.I`: o projeto do plano plurianual, para vigência até o final do primeiro exercício financeiro do mandato presidencial subseqüente, será encaminhado até quatro meses antes do encerramento do primeiro exercício financeiro e devolvido para sanção até o encerramento da sessão legislativa;
+- `ADCT:ART.35:PAR.2:INC.II`: o projeto de lei de diretrizes orçamentárias será encaminhado até oito meses e meio antes do encerramento do exercício financeiro e devolvido para sanção até o encerramento do primeiro período da sessão legislativa;
+- `ADCT:ART.35:PAR.2:INC.III`: o projeto de lei orçamentária da União será encaminhado até quatro meses antes do encerramento do exercício financeiro e devolvido para sanção até o encerramento da sessão legislativa.
+
+**O QUE DIZ**
+
+O § 2º fixa, até a lei complementar do art. 165, § 9º, I e II, os prazos dos projetos orçamentários. O plano plurianual vale até o fim do primeiro exercício do mandato presidencial seguinte, é enviado até quatro meses antes do fim do primeiro exercício financeiro e devolvido para sanção até o fim da sessão legislativa. A lei de diretrizes orçamentárias é enviada até oito meses e meio antes do fim do exercício e devolvida até o fim do primeiro período da sessão legislativa. A lei orçamentária da União é enviada até quatro meses antes do fim do exercício e devolvida até o fim da sessão legislativa.
+
+**O QUE SIGNIFICA**
+
+O parágrafo define o calendário do ciclo orçamentário federal.
+
+O Executivo envia os projetos ao Congresso em datas contadas para trás a partir do fim do exercício financeiro, e o Congresso os devolve para sanção até o fim da sessão legislativa ou do seu primeiro período.
+
+O plano plurianual atravessa mandatos: vai até o fim do primeiro exercício do mandato presidencial seguinte.
+
+**EXEMPLO PRÁTICO**
+
+Para um exercício financeiro que termina em 31 de dezembro (data ilustrativa do calendário anual), o projeto da lei orçamentária da União deve ser enviado até quatro meses antes dessa data.
+
+**ATENÇÃO**
+
+Os prazos valem enquanto a lei complementar do art. 165, § 9º, não dispuser sobre a matéria. Os períodos da sessão legislativa estão no art. 57 da Constituição.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Sessão legislativa*: período anual de funcionamento do Congresso Nacional.
+- *Sanção*: concordância do Presidente da República com o projeto aprovado.
+
+**CAMADA EXTERNA**
+
+—
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "do primeiro exercício financeiro e devolvido para sanção" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 13. ADCT, art. 38 — Limite provisório de despesa com pessoal
+
+- `ADCT:ART.38` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.38/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dados externos.
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dados externos.
+
+**Lei Seca**
+
+- `ADCT:ART.38:CAPUT`: Até a promulgação da lei complementar referida no art. 169, a União, os Estados, o Distrito Federal e os Municípios não poderão despender com pessoal mais do que sessenta e cinco por cento do valor das respectivas receitas correntes.
+- `ADCT:ART.38:PAR.1`: A União, os Estados, o Distrito Federal e os Municípios, quando a respectiva despesa de pessoal exceder o limite previsto neste artigo, deverão retornar àquele limite, reduzindo o percentual excedente à razão de um quinto por ano.
+- `ADCT:ART.38:PAR.2`: As despesas com pessoal resultantes do cumprimento do disposto nos §§ 12, 13, 14 e 15 do art. 198 da Constituição Federal serão contabilizadas, para fins dos limites de que trata o art. 169 da Constituição Federal, da seguinte forma:
+- `ADCT:ART.38:PAR.2:INC.I`: até o fim do exercício financeiro subsequente ao da publicação deste dispositivo, não serão contabilizadas para esses limites;
+- `ADCT:ART.38:PAR.2:INC.II`: no segundo exercício financeiro subsequente ao da publicação deste dispositivo, serão deduzidas em 90% (noventa por cento) do seu valor;
+- `ADCT:ART.38:PAR.2:INC.III`: entre o terceiro e o décimo segundo exercício financeiro subsequente ao da publicação deste dispositivo, a dedução de que trata o inciso II deste parágrafo será reduzida anualmente na proporção de 10% (dez por cento) de seu valor.
+
+**O QUE DIZ**
+
+O art. 38 do ADCT proíbe a União, os Estados, o Distrito Federal e os Municípios de gastar com pessoal mais de sessenta e cinco por cento de suas receitas correntes, até a promulgação da lei complementar do art. 169. O § 1º manda quem estiver acima do limite voltar a ele, reduzindo o excesso à razão de um quinto por ano. O § 2º define como as despesas com os pisos da enfermagem (art. 198, §§ 12 a 15) entram nos limites do art. 169: não são contadas até o fim do exercício seguinte ao da publicação do dispositivo; no segundo exercício seguinte, são deduzidas em 90%; e, do terceiro ao décimo segundo exercício seguinte, essa dedução cai 10% ao ano.
+
+**O QUE SIGNIFICA**
+
+O caput era um teto provisório para a folha de pagamento, válido até a lei complementar sobre o tema.
+
+O § 2º, acrescentado em 2022 segundo as anotações da fonte oficial, escalona a contagem do custo dos pisos da enfermagem nos limites com pessoal.
+
+A contagem desse escalonamento parte da publicação do dispositivo: primeiro, nenhuma contagem; depois, dedução de 90%; em seguida, reduções anuais dessa dedução.
+
+**EXEMPLO PRÁTICO**
+
+Um Município passa a pagar o piso da enfermagem. Nos exercícios indicados no § 2º, parte dessa despesa é deduzida ao calcular se ele respeita o limite de gastos com pessoal.
+
+**ATENÇÃO**
+
+Se o caput ainda se aplica depende da existência da lei complementar do art. 169, dado externo ao texto. A posição de cada exercício no escalonamento do § 2º depende da data de publicação do dispositivo, que o texto não informa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Receita corrente*: receita do dia a dia do ente, como tributos e transferências.
+- *Despesa com pessoal*: gastos com salários, encargos e benefícios de servidores e empregados.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do art. 169 e a data de publicação do § 2º (emenda de 2022, segundo as anotações da fonte oficial) pertencem à camada externa (EXTERNAL_VERIFICATION_REQUIRED).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "a união os estados o distrito federal e" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 14. ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras
+
+- `ADCT:ART.52` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.52/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
+
+**Lei Seca**
+
+- `ADCT:ART.52:CAPUT`: Até que sejam fixadas as condições do art. 192, são vedados:
+- `ADCT:ART.52:INC.I`: a instalação, no País, de novas agências de instituições financeiras domiciliadas no exterior;
+- `ADCT:ART.52:INC.II`: o aumento do percentual de participação, no capital de instituições financeiras com sede no País, de pessoas físicas ou jurídicas residentes ou domiciliadas no exterior.
+- `ADCT:ART.52:PAR.UNICO`: A vedação a que se refere este artigo não se aplica às autorizações resultantes de acordos internacionais, de reciprocidade, ou de interesse do Governo brasileiro.
+
+**O QUE DIZ**
+
+O art. 52 do ADCT proíbe, até que sejam fixadas as condições do art. 192, a abertura no Brasil de novas agências de instituições financeiras com domicílio no exterior e o aumento da participação de residentes ou domiciliados no exterior no capital de instituições financeiras sediadas no País. A proibição não alcança as autorizações que resultem de acordos internacionais, de reciprocidade ou do interesse do Governo brasileiro.
+
+**O QUE SIGNIFICA**
+
+Enquanto as leis complementares do sistema financeiro não tratarem do tema, a entrada de capital estrangeiro em bancos fica, em regra, vedada.
+
+A vedação tem saídas expressas: acordos internacionais, reciprocidade com o país de origem e interesse do Governo brasileiro.
+
+Na prática, a entrada depende de autorização fundada em uma dessas hipóteses.
+
+**EXEMPLO PRÁTICO**
+
+Um banco estrangeiro quer aumentar sua participação no capital de um banco brasileiro. A operação só é possível se for autorizada com base em uma das exceções do parágrafo único.
+
+**ATENÇÃO**
+
+A regra vale até que sejam fixadas as condições do art. 192. Se e como isso ocorreu é dado externo ao texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Instituição financeira*: empresa que capta, guarda ou empresta dinheiro, como bancos.
+- *Reciprocidade*: tratamento igual ao que o outro país dá ao Brasil.
+
+**CAMADA EXTERNA**
+
+- A fixação das condições do art. 192 e a prática de autorizações pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "até que sejam fixadas as condições do art" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 15. ADCT, art. 54-A — Indenização aos seringueiros
+
+- `ADCT:ART.54-A` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.54-A/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Regra vigente; execucao externa.
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Regra vigente; execucao externa.
+
+**Lei Seca**
+
+- `ADCT:ART.54-A:CAPUT`: Os seringueiros de que trata o art. 54 deste Ato das Disposições Constitucionais Transitórias receberão indenização, em parcela única, no valor de R$ 25.000,00 (vinte e cinco mil reais).
+
+**O QUE DIZ**
+
+O art. 54-A do ADCT garante aos seringueiros de que trata o art. 54 uma indenização paga de uma só vez, de R$ 25.000,00.
+
+**O QUE SIGNIFICA**
+
+Além da pensão mensal prevista no art. 54, os seringueiros que trabalharam no esforço de guerra recebem uma indenização paga de uma só vez.
+
+O valor está fixado no próprio texto constitucional.
+
+O público é o mesmo do art. 54, definido por remissão a esse artigo.
+
+**EXEMPLO PRÁTICO**
+
+Um seringueiro que se enquadra no art. 54 do ADCT recebe, além da pensão mensal, a indenização única no valor fixado pelo art. 54-A.
+
+**ATENÇÃO**
+
+O artigo foi incluído depois do texto original, segundo as anotações da fonte oficial. A forma de pagamento e a situação dos pagamentos são dados externos ao texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Indenização*: valor pago para compensar um dano ou um sacrifício.
+- *Parcela única*: pagamento feito de uma só vez.
+
+**CAMADA EXTERNA**
+
+- A regulamentação e o pagamento da indenização pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 16. ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb
+
+- `ADCT:ART.60-A` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.60-A/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo.
+- Sub-bloco E · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo.
+- Dispositivos citados (runtime): `ART.212-A:INC.I` a distribuição dos recursos e de responsabilidades entre o Distrito Federal, os Estados e seus Municípios é assegurada mediante a instituição, no âmbito de…
+
+**Lei Seca**
+
+- `ADCT:ART.60-A:CAPUT`: Os critérios de distribuição da complementação da União e dos fundos a que se refere o inciso I do caput do art. 212-A da Constituição Federal serão revistos em seu sexto ano de vigência e, a partir dessa primeira revisão, periodicamente, a cada 10 (dez) anos.
+
+**O QUE DIZ**
+
+O art. 60-A do ADCT manda rever as regras de distribuição dos fundos do art. 212-A, I, e da complementação da União. A primeira revisão ocorre no sexto ano de vigência; depois dela, as revisões se repetem a cada 10 anos.
+
+**O QUE SIGNIFICA**
+
+As regras de divisão do Fundeb não são permanentes: a própria Constituição manda revê-las.
+
+A primeira revisão ocorre no sexto ano de vigência dos fundos. Depois dela, novas revisões devem ocorrer a cada dez anos.
+
+A revisão alcança os critérios de distribuição, tanto da complementação federal quanto dos próprios fundos.
+
+**EXEMPLO PRÁTICO**
+
+No sexto ano de vigência dos fundos, o Congresso examina se os critérios de distribuição estão adequados e aprova os ajustes necessários por meio da legislação.
+
+**ATENÇÃO**
+
+O artigo não informa a data de início da vigência dos fundos; por isso, o ano exato da primeira revisão depende de dado externo ao texto deste artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Critérios de distribuição*: regras que definem quanto cada ente recebe dos fundos.
+- *Revisão periódica*: reavaliação feita em intervalos regulares.
+
+**CAMADA EXTERNA**
+
+- O termo inicial da vigência dos fundos e a forma da revisão pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**Alertas do validator v2**
+
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 

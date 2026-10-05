@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (79)
+## A — CLEAN_LOW (84)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -488,6 +488,17 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
+### `CF88:ART.212` — Art. 212 — Aplicação mínima em educação
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 212 fixa mínimos anuais de aplicação da receita de impostos, incluída a que vem de transferências, na manutenção e no desenvolvimento do ensino.
+- Interpretação principal: A educação tem um piso de gastos fixado pela própria Constituição: dezoito por cento para a União e vinte e cinco por cento para os demais entes.
+- ATENÇÃO: Os percentuais são mínimos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: os estados o distrito federal e os municípios), NUMBER_FROM_OTHER_DEVICE(18% ), NUMBER_FROM_OTHER_DEVICE(18% ), ABSOLUTE_CLAIM(resolvido), lint ABSOLUTE_CLAIM, lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
 ### `CF88:ART.212:PAR.5` — Art. 212, §§ 5º e 6º — Salário-educação
 
 - Risco: LOW · complexidade: EXTERNAL
@@ -873,7 +884,51 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (22)
+### `ADCT:ART.40` — ADCT, art. 40 — Zona Franca de Manaus
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 40 do ADCT manteve a Zona Franca de Manaus, com suas características de área de livre comércio, de exportação, de importação e de incentivos fiscais, por vinte e cinco anos a partir da…
+- Interpretação principal: O artigo garantiu na Constituição a continuidade do regime especial da Zona Franca de Manaus.
+- ATENÇÃO: O prazo atual da Zona Franca resulta da soma dos arts. 40, 92 e 92-A do ADCT.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a zona franca de manaus com suas características), NUMBER_FROM_OTHER_DEVICE(10 anos)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.42` — ADCT, art. 42 — Aplicação regional dos recursos de irrigação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 42 do ADCT determina que, durante 40 anos, a União aplique dos recursos destinados à irrigação 20% na Região Centro-Oeste e 50% na Região Nordeste, de preferência no Semiárido.
+- Interpretação principal: O artigo direciona o dinheiro federal da irrigação para duas regiões: Centro-Oeste e Nordeste, com prioridade para o Semiárido.
+- ATENÇÃO: O texto não indica o termo inicial do prazo de 40 anos.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(fracao 1/2)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.46` — ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 46 do ADCT sujeita à correção monetária, desde o vencimento até o efetivo pagamento, sem interrupção ou suspensão, os créditos contra entidades submetidas a intervenção ou liquidação…
+- Interpretação principal: Quando uma instituição sofre intervenção ou liquidação extrajudicial, os créditos contra ela não perdem valor com o tempo: continuam corrigidos monetariamente até o…
+- ATENÇÃO: O artigo trata de correção monetária; juros e a ordem de pagamento dos credores seguem a legislação aplicável.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: efetivo pagamento sem interrupção ou suspensão os…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.54` — ADCT, art. 54 — Pensão dos seringueiros
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 54 do ADCT garante pensão mensal vitalícia de dois salários mínimos, quando carentes, aos seringueiros recrutados e amparados pelos decretos-leis citados no texto.
+- Interpretação principal: Durante a Segunda Guerra Mundial, trabalhadores foram levados para a Amazônia para produzir borracha.
+- ATENÇÃO: O art. 54-A prevê, para esses mesmos seringueiros, uma indenização em parcela única.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos seringueiros que atendendo a apelo do governo)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (23)
 
 ### `CF88:ART.182:PAR.4` — Art. 182, § 4º — Sanções ao imóvel urbano subutilizado
 
@@ -1115,5 +1170,16 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos professores de nível superior nos termos da), EXTRAPOLATION_NUMBER(resolvido)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.49` — ADCT, art. 49 — Enfiteuse
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: SENSITIVE_THEME: sob pena
+- Ponto jurídico: O art. 49 do ADCT manda a lei dispor sobre a enfiteuse em imóveis urbanos e faculta aos foreiros, se ela for extinta, remir o aforamento adquirindo o domínio direto, conforme os contratos.
+- Interpretação principal: Na enfiteuse, o domínio do imóvel se divide: um titular tem o domínio direto e outro, o foreiro, usa o imóvel pagando uma prestação anual, o foro.
+- ATENÇÃO: A disciplina concreta da enfiteuse e de sua extinção está na lei civil e na legislação dos imóveis da União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: acrescidos situados na faixa de segurança a partir)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

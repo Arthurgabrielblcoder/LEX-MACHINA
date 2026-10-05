@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO RÁPIDA (fila C)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 12 itens · só o trecho com problema; nenhuma correção foi aplicada.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 13 itens · só o trecho com problema; nenhuma correção foi aplicada.
 
 ## `CF88:ART.177` — Art. 177 — Monopólio da União sobre petróleo, gás e minérios nucleares · risco LOW · EXTERNAL
 
@@ -53,22 +53,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 12 itens · só o trecho com problema; nenhu
 
 - [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
 
-## `CF88:ART.212` — Art. 212 — Aplicação mínima em educação · risco LOW · EXTERNAL
-
-- **Trecho:** "A União aplica nunca menos de dezoito por cento;"
-- **Contexto mínimo:** o_que_diz: … O art. 212 fixa mínimos anuais de aplicação da receita de impostos, incluída a que vem de transferências, na manutenção… ⟦trecho⟧ Os parágrafos esclarecem que a parcela transferida a outro ente não conta como receita de quem transfere e indicam o…
-- **Detector:** NUMBER_NOT_IN_TEXT
-- **Motivo:** quantidade ausente da Lei Seca do registro, do artigo, dos dispositivos citados e do escopo do lote
-- **Proposta de correção segura:** retirar a quantidade ou substituir pela que esta na Lei Seca (nao calcular totais que o texto nao traz)
-
-- **Trecho:** "dezoito por cento para a União e vinte e cinco por cento para os demais entes."
-- **Contexto mínimo:** o_que_significa ⟦trecho⟧ A base é a receita de impostos, e não a de todos os tributos.
-- **Detector:** NUMBER_NOT_IN_TEXT
-- **Motivo:** quantidade ausente da Lei Seca do registro, do artigo, dos dispositivos citados e do escopo do lote
-- **Proposta de correção segura:** retirar a quantidade ou substituir pela que esta na Lei Seca (nao calcular totais que o texto nao traz)
-
-- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
-
 ## `CF88:ART.212-A` — Art. 212-A — Fundeb · risco MEDIUM · EXTERNAL
 
 - **Lei Seca sem traço na explicação (o_que_diz):** ART.212-A:PAR.1:INC.I: 3/4 elementos reconhecidos; sem traco: "ao desenvolvimento do ensino não integrantes dos fundos referidos no inciso I do caput deste artigo"
@@ -117,6 +101,24 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 12 itens · só o trecho com problema; nenhu
 ## `CF88:ART.235` — Art. 235 — Normas para os dez primeiros anos de novo Estado · risco LOW · STRUCTURED
 
 - **Lei Seca sem traço na explicação (o_que_diz):** ART.235:INC.I: 4/5 elementos reconhecidos; sem traco: "superior a esse número"
+- **Detector:** LIST_ITEM_POSSIBLY_DROPPED
+- **Motivo:** enumeração parafraseada sem o item/elemento indicado
+- **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")
+
+- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
+
+## `ADCT:ART.53` — ADCT, art. 53 — Direitos dos ex-combatentes · risco LOW · STRUCTURED
+
+- **Lei Seca sem traço na explicação (o_que_diz):** ART.53:INC.III: 4/5 elementos reconhecidos; sem traco: "de valor igual à do inciso anterior"
+- **Detector:** LIST_ITEM_POSSIBLY_DROPPED
+- **Motivo:** enumeração parafraseada sem o item/elemento indicado
+- **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")
+
+- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
+
+## `ADCT:ART.60` — ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb · risco LOW · STRUCTURED
+
+- **Lei Seca sem traço na explicação (o_que_diz):** 5/6 itens de ART.60:PAR.1 reconhecidos; sem traco: ART.60:PAR.1:INC.VI "10,5 (dez inteiros e cinco décimos) pontos percent"
 - **Detector:** LIST_ITEM_POSSIBLY_DROPPED
 - **Motivo:** enumeração parafraseada sem o item/elemento indicado
 - **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")

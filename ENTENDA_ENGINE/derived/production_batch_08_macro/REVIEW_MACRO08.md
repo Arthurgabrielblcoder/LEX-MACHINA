@@ -5953,3 +5953,690 @@ Não se deve concluir apenas pela leitura do § 11 que os quatro tribunais nele 
 
 ---
 
+## ADCT:ART.34
+
+Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988
+
+- **TARGET:** `ADCT:ART.34` · `ENTENDA/ADCT:ART.34/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 292 palavras · 2407 bytes · referências 0
+- **Motivo da seleção:** Visao geral: regras de passagem para o sistema tributario da Constituicao (prazos ja exauridos) e clausulas com efeito duradouro, como a aplicacao da legislacao anterior compativel (§ 5º).
+
+**O QUE DIZ**
+
+O art. 34 do ADCT fixou que o sistema tributário nacional da Constituição entraria em vigor no primeiro dia do quinto mês após a promulgação, mantido até lá o sistema anterior, mas pôs alguns artigos em vigor desde a promulgação. Previu o aumento gradual dos fundos de participação de Estados e Municípios até 1993. Permitiu que os entes editassem desde logo as leis do novo sistema, com efeitos a partir de sua vigência, e assegurou a aplicação da legislação anterior no que não fosse incompatível com o novo sistema. Os demais parágrafos trazem regras provisórias sobre impostos, energia elétrica, fundos regionais, um banco de desenvolvimento e um empréstimo compulsório.
+
+**O QUE SIGNIFICA**
+
+O artigo organizou a passagem do sistema tributário antigo para o novo, com datas que já se encerraram.
+
+O ponto de maior alcance é o § 5º: a legislação tributária anterior continuou válida no que fosse compatível com o novo sistema. Assim, leis e códigos editados antes de 1988 puderam continuar a ser aplicados, desde que não contrariassem a Constituição.
+
+Algumas regras dependiam de lei complementar posterior, como a do § 9º, sobre o imposto incidente na energia elétrica, e sua situação atual depende dessas leis, externas ao texto.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei tributária editada antes da promulgação regulava um imposto que continuou existindo no novo sistema. Pelo § 5º, ela continuou aplicável no que fosse compatível com as novas regras.
+
+**ATENÇÃO**
+
+As datas e percentuais de implantação do artigo já produziram seus efeitos. O que continua aplicável hoje, em cada parágrafo, depende das leis posteriores e da interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Sistema tributário nacional*: conjunto de regras constitucionais sobre os tributos e sua repartição.
+- *Fundo de participação*: parte da arrecadação federal repassada a Estados e Municípios.
+- *Empréstimo compulsório*: tributo cobrado como empréstimo obrigatório, a ser devolvido nas condições da lei.
+
+**CAMADA EXTERNA**
+
+- A situação atual dos §§ 9º e 11 depende de leis complementares e ordinárias posteriores (legislação correlata, EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a aplicação da legislação anterior no que não)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.35
+
+Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios
+
+- **TARGET:** `ADCT:ART.35` · `ENTENDA/ADCT:ART.35/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 256 palavras · 2037 bytes · referências 0
+- **Motivo da seleção:** Visao geral: implantacao progressiva da regionalizacao do orcamento (prazo exaurido) e regras provisorias de prazos do PPA, da LDO e da LOA ate a lei complementar do art. 165, § 9º.
+
+**O QUE DIZ**
+
+O art. 35 do ADCT mandou cumprir de forma progressiva, em até dez anos, a regra do art. 165, § 7º, distribuindo recursos entre as regiões em proporção à população, a partir da situação do biênio 1986-87, e excluiu desse cálculo algumas despesas, como projetos prioritários, segurança e defesa nacional e serviço da dívida. O § 2º fixa prazos de envio e de devolução dos projetos do plano plurianual, da lei de diretrizes orçamentárias e da lei orçamentária, até que entre em vigor a lei complementar do art. 165, § 9º, I e II.
+
+**O QUE SIGNIFICA**
+
+A primeira parte do artigo tratava da implantação gradual da regionalização dos gastos federais e tinha prazo de dez anos, já encerrado.
+
+O § 2º é a parte de maior uso prático: enquanto a lei complementar prevista no art. 165, § 9º, não disciplinar a matéria, valem os prazos que ele fixa para o ciclo orçamentário da União.
+
+A aplicação do § 2º depende de um dado que o texto não fornece: a disciplina da matéria pela lei complementar do art. 165, § 9º.
+
+**EXEMPLO PRÁTICO**
+
+Ao preparar o orçamento do ano seguinte, o Executivo da União observa o prazo do § 2º para enviar ao Congresso o projeto de lei orçamentária.
+
+**ATENÇÃO**
+
+A aplicação do § 2º está condicionada à ausência da lei complementar do art. 165, § 9º. A situação dessa lei complementar pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Plano plurianual*: lei que fixa os programas e metas de governo para quatro anos.
+- *Lei de diretrizes orçamentárias*: lei anual que orienta a elaboração do orçamento.
+- *Regionalização*: distribuição dos recursos entre as regiões do país.
+
+**CAMADA EXTERNA**
+
+- A edição ou não da lei complementar do art. 165, § 9º, I e II, pertence à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA
+
+- **TARGET:** `ADCT:ART.35:PAR.2` · `ENTENDA/ADCT:ART.35:PAR.2/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `ADCT:ART.35`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 245 palavras · 1844 bytes · referências 0
+- **Motivo da seleção:** Bloco: prazos de envio e de devolucao para sancao dos tres projetos orcamentarios da Uniao, aplicaveis ate a lei complementar do art. 165, § 9º.
+
+**O QUE DIZ**
+
+O § 2º fixa, até a lei complementar do art. 165, § 9º, I e II, os prazos dos projetos orçamentários. O plano plurianual vale até o fim do primeiro exercício do mandato presidencial seguinte, é enviado até quatro meses antes do fim do primeiro exercício financeiro e devolvido para sanção até o fim da sessão legislativa. A lei de diretrizes orçamentárias é enviada até oito meses e meio antes do fim do exercício e devolvida até o fim do primeiro período da sessão legislativa. A lei orçamentária da União é enviada até quatro meses antes do fim do exercício e devolvida até o fim da sessão legislativa.
+
+**O QUE SIGNIFICA**
+
+O parágrafo define o calendário do ciclo orçamentário federal.
+
+O Executivo envia os projetos ao Congresso em datas contadas para trás a partir do fim do exercício financeiro, e o Congresso os devolve para sanção até o fim da sessão legislativa ou do seu primeiro período.
+
+O plano plurianual atravessa mandatos: vai até o fim do primeiro exercício do mandato presidencial seguinte.
+
+**EXEMPLO PRÁTICO**
+
+Para um exercício financeiro que termina em 31 de dezembro (data ilustrativa do calendário anual), o projeto da lei orçamentária da União deve ser enviado até quatro meses antes dessa data.
+
+**ATENÇÃO**
+
+Os prazos valem enquanto a lei complementar do art. 165, § 9º, não dispuser sobre a matéria. Os períodos da sessão legislativa estão no art. 57 da Constituição.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Sessão legislativa*: período anual de funcionamento do Congresso Nacional.
+- *Sanção*: concordância do Presidente da República com o projeto aprovado.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do primeiro exercício financeiro e devolvido para sanção); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para um exercício financeiro que termina em 31 de dezembro ()
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.38
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 38 — Limite provisório de despesa com pessoal
+
+- **TARGET:** `ADCT:ART.38` · `ENTENDA/ADCT:ART.38/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 38 — Limite provisório de despesa com pessoal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 280 palavras · 2173 bytes · referências 0
+- **Motivo da seleção:** Visao geral: limite de sessenta e cinco por cento ate a lei complementar do art. 169, retorno gradual ao limite e contabilizacao escalonada das despesas com os pisos da enfermagem.
+
+**O QUE DIZ**
+
+O art. 38 do ADCT proíbe a União, os Estados, o Distrito Federal e os Municípios de gastar com pessoal mais de sessenta e cinco por cento de suas receitas correntes, até a promulgação da lei complementar do art. 169. O § 1º manda quem estiver acima do limite voltar a ele, reduzindo o excesso à razão de um quinto por ano. O § 2º define como as despesas com os pisos da enfermagem (art. 198, §§ 12 a 15) entram nos limites do art. 169: não são contadas até o fim do exercício seguinte ao da publicação do dispositivo; no segundo exercício seguinte, são deduzidas em 90%; e, do terceiro ao décimo segundo exercício seguinte, essa dedução cai 10% ao ano.
+
+**O QUE SIGNIFICA**
+
+O caput era um teto provisório para a folha de pagamento, válido até a lei complementar sobre o tema.
+
+O § 2º, acrescentado em 2022 segundo as anotações da fonte oficial, escalona a contagem do custo dos pisos da enfermagem nos limites com pessoal.
+
+A contagem desse escalonamento parte da publicação do dispositivo: primeiro, nenhuma contagem; depois, dedução de 90%; em seguida, reduções anuais dessa dedução.
+
+**EXEMPLO PRÁTICO**
+
+Um Município passa a pagar o piso da enfermagem. Nos exercícios indicados no § 2º, parte dessa despesa é deduzida ao calcular se ele respeita o limite de gastos com pessoal.
+
+**ATENÇÃO**
+
+Se o caput ainda se aplica depende da existência da lei complementar do art. 169, dado externo ao texto. A posição de cada exercício no escalonamento do § 2º depende da data de publicação do dispositivo, que o texto não informa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Receita corrente*: receita do dia a dia do ente, como tributos e transferências.
+- *Despesa com pessoal*: gastos com salários, encargos e benefícios de servidores e empregados.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do art. 169 e a data de publicação do § 2º (emenda de 2022, segundo as anotações da fonte oficial) pertencem à camada externa (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.40
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 40 — Zona Franca de Manaus
+
+- **TARGET:** `ADCT:ART.40` · `ENTENDA/ADCT:ART.40/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 40 — Zona Franca de Manaus
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 1926 bytes · referências 0
+- **Motivo da seleção:** Visao geral: manutencao da Zona Franca de Manaus por vinte e cinco anos a partir da promulgacao, prazo acrescido pelos arts. 92 e 92-A do ADCT, e reserva de lei federal para os criterios de aprovacao de projetos.
+
+**O QUE DIZ**
+
+O art. 40 do ADCT manteve a Zona Franca de Manaus, com suas características de área de livre comércio, de exportação, de importação e de incentivos fiscais, por vinte e cinco anos a partir da promulgação da Constituição. O parágrafo único determina que só lei federal pode modificar os critérios de aprovação dos projetos na Zona Franca.
+
+**O QUE SIGNIFICA**
+
+O artigo garantiu na Constituição a continuidade do regime especial da Zona Franca de Manaus.
+
+O prazo original, de vinte e cinco anos contados da promulgação, foi depois acrescido por outros artigos do ADCT: o art. 92 somou dez anos e o art. 92-A somou mais cinquenta anos ao prazo do art. 92.
+
+O parágrafo único protege as regras de aprovação de projetos: elas só mudam por lei federal, e não por ato do Executivo.
+
+**EXEMPLO PRÁTICO**
+
+Uma indústria quer se instalar na Zona Franca. Os critérios para aprovar seu projeto só podem ser alterados por lei federal.
+
+**ATENÇÃO**
+
+O prazo atual da Zona Franca resulta da soma dos arts. 40, 92 e 92-A do ADCT. O conteúdo dos incentivos fiscais está na legislação. Na transição tributária, o art. 126, III, a, do ADCT excetua da redução a zero das alíquotas do imposto sobre produtos industrializados os produtos com industrialização incentivada na Zona Franca, segundo lei complementar, e o art. 92-B trata da manutenção do seu diferencial competitivo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Zona Franca*: área com regime especial de comércio e de incentivos fiscais.
+- *Incentivo fiscal*: redução ou dispensa de tributo para estimular uma atividade ou região.
+
+**CAMADA EXTERNA**
+
+- O regime de incentivos da Zona Franca de Manaus pertence à legislação correlata (o texto oficial traz nota de remissão a decreto de 2010).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a zona franca de manaus com suas características)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.42
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 42 — Aplicação regional dos recursos de irrigação
+
+- **TARGET:** `ADCT:ART.42` · `ENTENDA/ADCT:ART.42/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 42 — Aplicação regional dos recursos de irrigação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1452 bytes · referências 0
+- **Motivo da seleção:** Visao geral: percentuais minimos de aplicacao regional dos recursos federais de irrigacao durante quarenta anos e reserva para agricultura familiar.
+
+**O QUE DIZ**
+
+O art. 42 do ADCT determina que, durante 40 anos, a União aplique dos recursos destinados à irrigação 20% na Região Centro-Oeste e 50% na Região Nordeste, de preferência no Semiárido. Desses percentuais, no mínimo 50% devem ir para projetos de irrigação em favor de agricultores familiares que cumpram os requisitos da legislação específica.
+
+**O QUE SIGNIFICA**
+
+O artigo direciona o dinheiro federal da irrigação para duas regiões: Centro-Oeste e Nordeste, com prioridade para o Semiárido.
+
+Dentro desses percentuais, no mínimo 50% devem atender a agricultores familiares, conforme os requisitos da lei.
+
+O prazo é de 40 anos.
+
+**EXEMPLO PRÁTICO**
+
+Ao distribuir o orçamento de irrigação de um ano, a União reserva ao menos metade dele para projetos no Nordeste, preferindo o Semiárido, e destina parte relevante desses recursos a agricultores familiares.
+
+**ATENÇÃO**
+
+O texto não indica o termo inicial do prazo de 40 anos. Em 5 de outubro de 2026, a regra está em vigor qualquer que seja esse termo, e o fim do prazo depende dele.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Semiárido*: região de clima seco e chuvas irregulares, sobretudo no Nordeste.
+- *Agricultor familiar*: produtor que trabalha a terra com a família, nos requisitos da lei.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.46
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação
+
+- **TARGET:** `ADCT:ART.46` · `ENTENDA/ADCT:ART.46/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1885 bytes · referências 0
+- **Motivo da seleção:** Visao geral: correcao monetaria ininterrupta de creditos contra entidades em intervencao ou liquidacao extrajudicial, mesmo convertidas em falencia, e operacoes alcancadas.
+
+**O QUE DIZ**
+
+O art. 46 do ADCT sujeita à correção monetária, desde o vencimento até o efetivo pagamento, sem interrupção ou suspensão, os créditos contra entidades submetidas a intervenção ou liquidação extrajudicial, mesmo que esses regimes sejam convertidos em falência. A regra se aplica também às operações posteriores à decretação desses regimes e a várias operações financeiras de apoio, como empréstimos, assistência de liquidez e garantia de depósitos. Alcança ainda os créditos anteriores à promulgação e os créditos de entidades públicas anteriores a ela, não liquidados até 1º de janeiro de 1988.
+
+**O QUE SIGNIFICA**
+
+Quando uma instituição sofre intervenção ou liquidação extrajudicial, os créditos contra ela não perdem valor com o tempo: continuam corrigidos monetariamente até o pagamento.
+
+A correção não para nem se suspende, ainda que o regime vire falência.
+
+O parágrafo único estende a regra a diversas operações e a créditos antigos.
+
+**EXEMPLO PRÁTICO**
+
+Um poupador tinha crédito contra uma instituição financeira que entrou em liquidação extrajudicial e depois faliu. O crédito é corrigido monetariamente desde o vencimento até o pagamento.
+
+**ATENÇÃO**
+
+O artigo trata de correção monetária; juros e a ordem de pagamento dos credores seguem a legislação aplicável.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Liquidação extrajudicial*: encerramento de uma instituição financeira conduzido pela autoridade administrativa.
+- *Correção monetária*: atualização do valor de uma dívida pela inflação.
+- *Intervenção*: afastamento temporário da administração de uma instituição pela autoridade competente.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: efetivo pagamento sem interrupção ou suspensão os créditos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.49
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 49 — Enfiteuse
+
+- **TARGET:** `ADCT:ART.49` · `ENTENDA/ADCT:ART.49/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 49 — Enfiteuse
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 1894 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lei sobre enfiteuse em imoveis urbanos, remicao pelos foreiros, protecao dos ocupantes e manutencao da enfiteuse nos terrenos de marinha.
+
+**O QUE DIZ**
+
+O art. 49 do ADCT manda a lei dispor sobre a enfiteuse em imóveis urbanos e faculta aos foreiros, se ela for extinta, remir o aforamento adquirindo o domínio direto, conforme os contratos. Sem cláusula contratual, valem os critérios da legislação especial dos imóveis da União. Os direitos dos atuais ocupantes inscritos ficam assegurados por outra modalidade de contrato. A enfiteuse continua a ser aplicada aos terrenos de marinha e acrescidos, situados na faixa de segurança a partir da orla. Remido o foro, o antigo titular deve entregar a documentação ao registro de imóveis em noventa dias.
+
+**O QUE SIGNIFICA**
+
+Na enfiteuse, o domínio do imóvel se divide: um titular tem o domínio direto e outro, o foreiro, usa o imóvel pagando uma prestação anual, o foro.
+
+O artigo prepara a extinção dessa figura nos imóveis urbanos, permitindo que o foreiro se torne proprietário pleno ao resgatar o aforamento.
+
+Nos terrenos de marinha, porém, a enfiteuse continua aplicável.
+
+**EXEMPLO PRÁTICO**
+
+Uma família ocupa, como foreira, um terreno urbano aforado. Se a enfiteuse for extinta por lei, ela pode resgatar o aforamento e passar a ser dona plena, conforme o contrato.
+
+**ATENÇÃO**
+
+A disciplina concreta da enfiteuse e de sua extinção está na lei civil e na legislação dos imóveis da União.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Enfiteuse*: direito de usar imóvel alheio pagando foro anual ao titular do domínio direto.
+- *Remição do aforamento*: resgate que extingue a enfiteuse e dá ao foreiro a propriedade plena.
+- *Terreno de marinha*: faixa de terra da União junto ao mar, definida em lei.
+
+**CAMADA EXTERNA**
+
+- O regime legal da enfiteuse e dos terrenos de marinha pertence à legislação correlata (camada externa).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: acrescidos situados na faixa de segurança a partir)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.52
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras
+
+- **TARGET:** `ADCT:ART.52` · `ENTENDA/ADCT:ART.52/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 193 palavras · 1719 bytes · referências 0
+- **Motivo da seleção:** Visao geral: vedacoes a novas agencias de instituicoes estrangeiras e ao aumento de participacao estrangeira ate as condicoes do art. 192, e excecoes por acordos, reciprocidade ou interesse do Governo.
+
+**O QUE DIZ**
+
+O art. 52 do ADCT proíbe, até que sejam fixadas as condições do art. 192, a abertura no Brasil de novas agências de instituições financeiras com domicílio no exterior e o aumento da participação de residentes ou domiciliados no exterior no capital de instituições financeiras sediadas no País. A proibição não alcança as autorizações que resultem de acordos internacionais, de reciprocidade ou do interesse do Governo brasileiro.
+
+**O QUE SIGNIFICA**
+
+Enquanto as leis complementares do sistema financeiro não tratarem do tema, a entrada de capital estrangeiro em bancos fica, em regra, vedada.
+
+A vedação tem saídas expressas: acordos internacionais, reciprocidade com o país de origem e interesse do Governo brasileiro.
+
+Na prática, a entrada depende de autorização fundada em uma dessas hipóteses.
+
+**EXEMPLO PRÁTICO**
+
+Um banco estrangeiro quer aumentar sua participação no capital de um banco brasileiro. A operação só é possível se for autorizada com base em uma das exceções do parágrafo único.
+
+**ATENÇÃO**
+
+A regra vale até que sejam fixadas as condições do art. 192. Se e como isso ocorreu é dado externo ao texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Instituição financeira*: empresa que capta, guarda ou empresta dinheiro, como bancos.
+- *Reciprocidade*: tratamento igual ao que o outro país dá ao Brasil.
+
+**CAMADA EXTERNA**
+
+- A fixação das condições do art. 192 e a prática de autorizações pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até que sejam fixadas as condições do art)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.53
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 53 — Direitos dos ex-combatentes
+
+- **TARGET:** `ADCT:ART.53` · `ENTENDA/ADCT:ART.53/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 53 — Direitos dos ex-combatentes
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2110 bytes · referências 0
+- **Motivo da seleção:** Visao geral: direitos assegurados ao ex-combatente que participou de operacoes belicas na Segunda Guerra Mundial e a seus dependentes; direitos de efeito continuado.
+
+**O QUE DIZ**
+
+O art. 53 do ADCT assegura ao ex-combatente que efetivamente participou de operações bélicas na Segunda Guerra Mundial, nos termos da lei indicada no texto, seis direitos: aproveitamento no serviço público sem concurso, com estabilidade; pensão especial igual à deixada por segundo-tenente das Forças Armadas, que pode ser pedida a qualquer tempo e não se acumula com outros rendimentos públicos, salvo benefícios previdenciários, ressalvada a opção; em caso de morte, pensão à viúva, à companheira ou a dependente, de forma proporcional e de valor igual ao da pensão especial; assistência médica, hospitalar e educacional gratuita, extensiva aos dependentes; aposentadoria integral aos vinte e cinco anos de serviço efetivo; e prioridade na aquisição da casa própria. A pensão especial substitui qualquer outra pensão já concedida ao ex-combatente.
+
+**O QUE SIGNIFICA**
+
+O artigo reconhece um grupo específico: quem participou de fato de combates na Segunda Guerra Mundial.
+
+Não há prazo para requerer a pensão especial, o que mantém a regra aplicável enquanto houver beneficiários.
+
+A pensão especial não se soma a outros rendimentos dos cofres públicos, exceto benefícios previdenciários, e o interessado pode optar pelo mais vantajoso.
+
+**EXEMPLO PRÁTICO**
+
+A viúva de um ex-combatente que participou de operações na guerra requer a pensão prevista no inciso III, de valor igual ao da pensão especial.
+
+**ATENÇÃO**
+
+A qualificação de ex-combatente segue a lei indicada no próprio texto. A pensão especial é inacumulável com outros rendimentos públicos, salvo os previdenciários.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ex-combatente*: quem participou efetivamente de operações de guerra, nos termos da lei.
+- *Pensão especial*: benefício pago em razão de uma condição especial, aqui a participação na guerra.
+- *Proventos integrais*: aposentadoria com valor igual à remuneração da atividade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos vinte e cinco anos de serviço efetivo)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.54
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 54 — Pensão dos seringueiros
+
+- **TARGET:** `ADCT:ART.54` · `ENTENDA/ADCT:ART.54/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 54 — Pensão dos seringueiros
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1479 bytes · referências 0
+- **Motivo da seleção:** Visao geral: pensao mensal vitalicia de dois salarios minimos aos seringueiros carentes recrutados ou que contribuiram para o esforco de guerra, transferivel aos dependentes carentes.
+
+**O QUE DIZ**
+
+O art. 54 do ADCT garante pensão mensal vitalícia de dois salários mínimos, quando carentes, aos seringueiros recrutados e amparados pelos decretos-leis citados no texto. O benefício se estende aos seringueiros que, atendendo a apelo do Governo, trabalharam na Amazônia produzindo borracha durante a Segunda Guerra Mundial, e pode ser transferido aos dependentes reconhecidamente carentes. A concessão segue a lei.
+
+**O QUE SIGNIFICA**
+
+Durante a Segunda Guerra Mundial, trabalhadores foram levados para a Amazônia para produzir borracha. O artigo reconhece esse esforço com uma pensão.
+
+O requisito central é a carência: o seringueiro, ou o dependente, precisa estar em situação de necessidade.
+
+O valor é fixo no texto: dois salários mínimos por mês, por toda a vida.
+
+**EXEMPLO PRÁTICO**
+
+Um antigo seringueiro que trabalhou na produção de borracha durante a guerra e hoje não tem meios de se sustentar pode requerer a pensão mensal de dois salários mínimos, nos termos da lei.
+
+**ATENÇÃO**
+
+O art. 54-A prevê, para esses mesmos seringueiros, uma indenização em parcela única. A forma de concessão está na lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Seringueiro*: trabalhador que extrai o látex da seringueira para produzir borracha.
+- *Vitalícia*: que dura por toda a vida do beneficiário.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos seringueiros que atendendo a apelo do governo)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.54-A
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 54-A — Indenização aos seringueiros
+
+- **TARGET:** `ADCT:ART.54-A` · `ENTENDA/ADCT:ART.54-A/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 54-A — Indenização aos seringueiros
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 144 palavras · 1228 bytes · referências 0
+- **Motivo da seleção:** Visao geral: indenizacao em parcela unica aos seringueiros do art. 54 do ADCT, no valor fixado no texto.
+
+**O QUE DIZ**
+
+O art. 54-A do ADCT garante aos seringueiros de que trata o art. 54 uma indenização paga de uma só vez, de R$ 25.000,00.
+
+**O QUE SIGNIFICA**
+
+Além da pensão mensal prevista no art. 54, os seringueiros que trabalharam no esforço de guerra recebem uma indenização paga de uma só vez.
+
+O valor está fixado no próprio texto constitucional.
+
+O público é o mesmo do art. 54, definido por remissão a esse artigo.
+
+**EXEMPLO PRÁTICO**
+
+Um seringueiro que se enquadra no art. 54 do ADCT recebe, além da pensão mensal, a indenização única no valor fixado pelo art. 54-A.
+
+**ATENÇÃO**
+
+O artigo foi incluído depois do texto original, segundo as anotações da fonte oficial. A forma de pagamento e a situação dos pagamentos são dados externos ao texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Indenização*: valor pago para compensar um dano ou um sacrifício.
+- *Parcela única*: pagamento feito de uma só vez.
+
+**CAMADA EXTERNA**
+
+- A regulamentação e o pagamento da indenização pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.60
+
+Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb
+
+- **TARGET:** `ADCT:ART.60` · `ENTENDA/ADCT:ART.60/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 1813 bytes · referências 0
+- **Motivo da seleção:** Visao geral: cronograma anual de percentuais minimos da complementacao da Uniao ao Fundeb a partir de 1º de janeiro de 2021, com minimos das parcelas VAAT e de resultados; em 2026 corre o sexto ano.
+
+**O QUE DIZ**
+
+O art. 60 do ADCT determina que a complementação da União ao Fundeb, prevista no art. 212-A, IV, cresça de forma progressiva a partir de 1º de janeiro de 2021, com mínimos de 12% no primeiro ano, 15% no segundo, 17% no terceiro, 19% no quarto, 21% no quinto e 23% no sexto ano. O § 1º fixa mínimos anuais para a parcela ligada ao valor anual total por aluno, de 2 a 10,5 pontos percentuais. O § 2º fixa valores para a parcela ligada a resultados, de 0,75 a 2,5 pontos percentuais, do terceiro ao sexto ano.
+
+**O QUE SIGNIFICA**
+
+O art. 212-A da Constituição fixa a complementação da União em, no mínimo, 23% dos recursos dos fundos. Este artigo define o caminho até esse patamar.
+
+Como o primeiro ano começou em 1º de janeiro de 2021, o sexto ano corresponde a 2026: em 5 de outubro de 2026 vale o mínimo de 23%, com 10,5 pontos na parcela do valor anual total por aluno e 2,5 pontos na parcela de resultados.
+
+Os incisos e parágrafos que aparecem como suprimidos não estão mais em vigor.
+
+**EXEMPLO PRÁTICO**
+
+Em 2026, sexto ano do cronograma, o orçamento da União deve prever complementação ao Fundeb de pelo menos 23% do total dos recursos dos fundos, distribuída conforme as parcelas do art. 212-A.
+
+**ATENÇÃO**
+
+Com o sexto ano em 2026, o cronograma chega ao patamar final previsto na Constituição. A partir daí vale diretamente o art. 212-A, V.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Complementação da União*: recursos federais acrescentados aos fundos estaduais da educação básica.
+- *Implementação progressiva*: aplicação em etapas, com valores que aumentam a cada ano.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a partir de 1 de janeiro de 2021); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Em 2026, sexto ano do cronograma, o orçamento da União deve )
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.60-A
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb
+
+- **TARGET:** `ADCT:ART.60-A` · `ENTENDA/ADCT:ART.60-A/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 167 palavras · 1475 bytes · referências 0
+- **Motivo da seleção:** Visao geral: revisao dos criterios de distribuicao da complementacao e dos fundos no sexto ano de vigencia e, depois, a cada dez anos.
+
+**O QUE DIZ**
+
+O art. 60-A do ADCT manda rever as regras de distribuição dos fundos do art. 212-A, I, e da complementação da União. A primeira revisão ocorre no sexto ano de vigência; depois dela, as revisões se repetem a cada 10 anos.
+
+**O QUE SIGNIFICA**
+
+As regras de divisão do Fundeb não são permanentes: a própria Constituição manda revê-las.
+
+A primeira revisão ocorre no sexto ano de vigência dos fundos. Depois dela, novas revisões devem ocorrer a cada dez anos.
+
+A revisão alcança os critérios de distribuição, tanto da complementação federal quanto dos próprios fundos.
+
+**EXEMPLO PRÁTICO**
+
+No sexto ano de vigência dos fundos, o Congresso examina se os critérios de distribuição estão adequados e aprova os ajustes necessários por meio da legislação.
+
+**ATENÇÃO**
+
+O artigo não informa a data de início da vigência dos fundos; por isso, o ano exato da primeira revisão depende de dado externo ao texto deste artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Critérios de distribuição*: regras que definem quanto cada ente recebe dos fundos.
+- *Revisão periódica*: reavaliação feita em intervalos regulares.
+
+**CAMADA EXTERNA**
+
+- O termo inicial da vigência dos fundos e a forma da revisão pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Revisão periódica)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

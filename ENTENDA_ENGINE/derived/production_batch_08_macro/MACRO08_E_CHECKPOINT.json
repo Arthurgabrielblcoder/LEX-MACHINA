@@ -1,0 +1,93 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_E",
+ "namespace": "ADCT",
+ "articles_range": "ADCT 31-60",
+ "stats": {
+  "articles": 13,
+  "targets_evaluated": 133,
+  "targets_current": 103,
+  "select": 14,
+  "skip": 89,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 3,
+   "EXCLUDED_REVOKED": 27
+  },
+  "new_explanations": 14,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 1,
+   "OVERVIEW": 13
+  },
+  "legal_risk": {
+   "LOW": 6,
+   "MEDIUM": 1,
+   "HIGH": 7
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 6,
+   "EXTERNAL": 8
+  },
+  "queues": {
+   "A_CLEAN_LOW": 4,
+   "B_CLEAN_MEDIUM": 1,
+   "C_QUICK_REVIEW": 2,
+   "D_FULL_HUMAN_REVIEW": 7,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {
+   "NONE": 14
+  },
+  "skipped_articles": [
+   "ADCT:ART.31",
+   "ADCT:ART.32",
+   "ADCT:ART.33",
+   "ADCT:ART.36",
+   "ADCT:ART.37",
+   "ADCT:ART.39",
+   "ADCT:ART.41",
+   "ADCT:ART.43",
+   "ADCT:ART.44",
+   "ADCT:ART.45",
+   "ADCT:ART.47",
+   "ADCT:ART.48",
+   "ADCT:ART.50",
+   "ADCT:ART.51",
+   "ADCT:ART.55",
+   "ADCT:ART.56",
+   "ADCT:ART.57",
+   "ADCT:ART.58",
+   "ADCT:ART.59"
+  ]
+ },
+ "critic": {
+  "corrections": 20,
+  "by_category": {
+   "AFIRMACAO_SOBRE_ESTADO_DE_LEI": 2,
+   "COPIA_DA_LEI_SECA": 7,
+   "EXCECAO_OMITIDA": 1,
+   "FRASE_LONGA": 3,
+   "GLOSSARIO": 1,
+   "LISTA_INCOMPLETA": 1,
+   "MODALIDADE": 1,
+   "NUMERO": 1,
+   "REMISSAO": 1,
+   "REPETICAO": 1,
+   "TELEOLOGIA": 1
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "status": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 0,
+ "status": "PASS"
+}

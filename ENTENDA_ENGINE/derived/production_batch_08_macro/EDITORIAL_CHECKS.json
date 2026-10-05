@@ -3,21 +3,21 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
- "explanations": 122,
+ "explanations": 136,
  "risk_counts": {
-  "LOW": 89,
-  "MEDIUM": 24,
-  "HIGH": 9
+  "LOW": 95,
+  "MEDIUM": 25,
+  "HIGH": 16
  },
  "finding_counts": {
   "ABSOLUTE_CLAIM": 3,
-  "EXAMPLE_NUMBER": 4,
+  "EXAMPLE_NUMBER": 6,
   "EXCEPTION_NOT_IN_TEXT": 4,
-  "EXTRAPOLATION_NUMBER": 7,
+  "EXTRAPOLATION_NUMBER": 9,
   "TRANSITION_IN_CORE": 1
  },
  "unresolved_findings": 0,
- "ready_for_editorial_review": 122,
+ "ready_for_editorial_review": 136,
  "human_approved_t1": 0,
  "duplication_pairs": [],
  "rows": [
@@ -1682,6 +1682,217 @@
     "CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: \"exige verificação\"",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).",
     "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.34",
+   "explanation_id": "ENTENDA/ADCT:ART.34/BASE/1",
+   "title": "ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.35",
+   "explanation_id": "ENTENDA/ADCT:ART.35/BASE/1",
+   "title": "ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.35:PAR.2",
+   "explanation_id": "ENTENDA/ADCT:ART.35:PAR.2/BASE/1",
+   "title": "ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "31",
+     "resolution": "Data marcada como ilustrativa na propria frase (\"data ilustrativa do calendario anual\"). Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.38",
+   "explanation_id": "ENTENDA/ADCT:ART.38/BASE/1",
+   "title": "ADCT, art. 38 — Limite provisório de despesa com pessoal",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dados externos."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "2022",
+     "resolution": "Ano da emenda segundo as anotacoes da fonte canonica (\"Incluido pela Emenda Constitucional n. 127, de 2022\"), citado como tal. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.40",
+   "explanation_id": "ENTENDA/ADCT:ART.40/BASE/1",
+   "title": "ADCT, art. 40 — Zona Franca de Manaus",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.42",
+   "explanation_id": "ENTENDA/ADCT:ART.42/BASE/1",
+   "title": "ADCT, art. 42 — Aplicação regional dos recursos de irrigação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.46",
+   "explanation_id": "ENTENDA/ADCT:ART.46/BASE/1",
+   "title": "ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.49",
+   "explanation_id": "ENTENDA/ADCT:ART.49/BASE/1",
+   "title": "ADCT, art. 49 — Enfiteuse",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: sob pena"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.52",
+   "explanation_id": "ENTENDA/ADCT:ART.52/BASE/1",
+   "title": "ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.53",
+   "explanation_id": "ENTENDA/ADCT:ART.53/BASE/1",
+   "title": "ADCT, art. 53 — Direitos dos ex-combatentes",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.54",
+   "explanation_id": "ENTENDA/ADCT:ART.54/BASE/1",
+   "title": "ADCT, art. 54 — Pensão dos seringueiros",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.54-A",
+   "explanation_id": "ENTENDA/ADCT:ART.54-A/BASE/1",
+   "title": "ADCT, art. 54-A — Indenização aos seringueiros",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Regra vigente; execucao externa."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.60",
+   "explanation_id": "ENTENDA/ADCT:ART.60/BASE/1",
+   "title": "ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2026",
+     "resolution": "2026 e o sexto ano contado de 1º de janeiro de 2021 (texto do caput) e coincide com o ano da data de referencia do lote. Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "2026",
+     "resolution": "Idem (sexto ano = 2026, derivado do texto)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.60-A",
+   "explanation_id": "ENTENDA/ADCT:ART.60-A/BASE/1",
+   "title": "ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo."
    ],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",

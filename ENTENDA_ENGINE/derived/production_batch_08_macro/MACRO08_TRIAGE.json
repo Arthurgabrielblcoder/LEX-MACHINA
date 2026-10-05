@@ -23,38 +23,38 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 79,
-  "B_CLEAN_MEDIUM": 22,
-  "C_QUICK_REVIEW": 12,
-  "D_FULL_HUMAN_REVIEW": 9,
+  "A_CLEAN_LOW": 84,
+  "B_CLEAN_MEDIUM": 23,
+  "C_QUICK_REVIEW": 13,
+  "D_FULL_HUMAN_REVIEW": 16,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 89,
-  "MEDIUM": 24,
-  "HIGH": 9
+  "LOW": 95,
+  "MEDIUM": 25,
+  "HIGH": 16
  },
  "complexity_counts": {
-  "STRUCTURED": 67,
-  "EXTERNAL": 53,
+  "STRUCTURED": 73,
+  "EXTERNAL": 61,
   "SIMPLE": 2
  },
  "jurisprudence_counts": {
-  "NONE": 97,
+  "NONE": 111,
   "CONTEXT_ONLY": 23,
   "REQUIRED_FOR_CORRECTNESS": 2
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 79,
+   "A_CLEAN_LOW": 84,
    "B_CLEAN_MEDIUM": 0,
-   "C_QUICK_REVIEW": 10,
+   "C_QUICK_REVIEW": 11,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 22,
+   "B_CLEAN_MEDIUM": 23,
    "C_QUICK_REVIEW": 2,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 9,
+   "D_FULL_HUMAN_REVIEW": 16,
    "E_HARD_FAIL": 0
   }
  },
@@ -76,17 +76,17 @@
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 57,
+   "A_CLEAN_LOW": 60,
    "B_CLEAN_MEDIUM": 3,
-   "C_QUICK_REVIEW": 7,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "C_QUICK_REVIEW": 9,
+   "D_FULL_HUMAN_REVIEW": 1,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 20,
-   "B_CLEAN_MEDIUM": 19,
-   "C_QUICK_REVIEW": 5,
-   "D_FULL_HUMAN_REVIEW": 9,
+   "A_CLEAN_LOW": 22,
+   "B_CLEAN_MEDIUM": 20,
+   "C_QUICK_REVIEW": 4,
+   "D_FULL_HUMAN_REVIEW": 15,
    "E_HARD_FAIL": 0
   }
  },
@@ -1737,6 +1737,66 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.212",
+   "title": "Art. 212 — Aplicação mínima em educação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.212:PAR.5: Vide Decreto n. 6.003, de 2006)",
+    "number_or_percentage: vinte",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 208, 212, 213",
+    "overview com 11 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os estados o distrito federal e os municípios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "18% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_significa",
+     "match": "18% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.212:PAR.5",
    "title": "Art. 212, §§ 5º e 6º — Salário-educação",
    "role": "BLOCK",
@@ -3125,6 +3185,179 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.40",
+   "title": "ADCT, art. 40 — Zona Franca de Manaus",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.40:CAPUT: Vide Decreto n. 7.212, de 2010)",
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: vinte",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a zona franca de manaus com suas características",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "atencao",
+     "match": "incentivos",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    },
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "atencao",
+     "match": "incentivada",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_significa",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.42",
+   "title": "ADCT, art. 42 — Aplicação regional dos recursos de irrigação",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "fracao 1/2",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.46",
+   "title": "ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "efetivo pagamento sem interrupção ou suspensão os créditos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.54",
+   "title": "ADCT, art. 54 — Pensão dos seringueiros",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: dois",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aos seringueiros que atendendo a apelo do governo",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -4121,6 +4354,52 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.49",
+   "title": "ADCT, art. 49 — Enfiteuse",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: noventa",
+    "law_dependency: lei disporá",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "acrescidos situados na faixa de segurança a partir",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.177",
    "title": "Art. 177 — Monopólio da União sobre petróleo, gás e minérios nucleares",
    "role": "OVERVIEW",
@@ -4370,71 +4649,6 @@
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "LIST_ITEM_POSSIBLY_DROPPED (a qualquer título)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.212",
-   "title": "Art. 212 — Aplicação mínima em educação",
-   "role": "OVERVIEW",
-   "sub_block": "B",
-   "legal_risk": "LOW",
-   "legal_rules": [],
-   "legal_reasons": [],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.212:PAR.5: Vide Decreto n. 6.003, de 2006)",
-    "number_or_percentage: vinte",
-    "law_dependency: na forma da lei",
-    "redacao de emenda constitucional (4 anotacao(oes))",
-    "remissao: arts. 208, 212, 213",
-    "overview com 11 dispositivos"
-   ],
-   "queue": "C_QUICK_REVIEW",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "os estados o distrito federal e os municípios",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    },
-    {
-     "code": "NUMBER_NOT_IN_TEXT",
-     "severity": "REVIEW_REQUIRED",
-     "route": "QUICK",
-     "section": "o_que_diz",
-     "match": "18%",
-     "sentence": "A União aplica nunca menos de dezoito por cento;",
-     "detail": "quantidade ausente da Lei Seca do registro, do artigo, dos dispositivos citados e do escopo do lote"
-    },
-    {
-     "code": "NUMBER_NOT_IN_TEXT",
-     "severity": "REVIEW_REQUIRED",
-     "route": "QUICK",
-     "section": "o_que_significa",
-     "match": "18%",
-     "sentence": "dezoito por cento para a União e vinte e cinco por cento para os demais entes.",
-     "detail": "quantidade ausente da Lei Seca do registro, do artigo, dos dispositivos citados e do escopo do lote"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "ABSOLUTE_CLAIM",
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "EXAMPLE_REQUIREMENT_LANGUAGE"
-   ],
-   "editorial_checks": [
-    "ABSOLUTE_CLAIM:RESOLVED"
-   ],
-   "external_dependency": null,
-   "reason": "NUMBER_NOT_IN_TEXT (18%)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -4769,6 +4983,111 @@
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "LIST_ITEM_POSSIBLY_DROPPED (superior a esse número)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.53",
+   "title": "ADCT, art. 53 — Direitos dos ex-combatentes",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco anos",
+    "number_or_percentage: vinte",
+    "exception: exceto",
+    "law_dependency: nos termos da Lei",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aos vinte e cinco anos de serviço efetivo",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "de valor igual à do inciso anterior",
+     "sentence": "",
+     "detail": "ART.53:INC.III: 4/5 elementos reconhecidos; sem traco: \"de valor igual à do inciso anterior\""
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (de valor igual à do inciso anterior)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.60",
+   "title": "ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 212",
+    "overview com 20 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a partir de 1 de janeiro de 2021",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ART.60:PAR.1:INC.VI",
+     "sentence": "",
+     "detail": "5/6 itens de ART.60:PAR.1 reconhecidos; sem traco: ART.60:PAR.1:INC.VI \"10,5 (dez inteiros e cinco décimos) pontos percent\""
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED",
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (ART.60:PAR.1:INC.VI)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -5210,6 +5529,308 @@
     "via": null,
     "evidence": []
    }
+  },
+  {
+   "target_id": "ADCT:ART.34",
+   "title": "ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante."
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: incompatív"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: trinta dias",
+    "number_or_percentage: quinto",
+    "law_dependency: lei complementar",
+    "remissao: arts. 25, 148, 150, 153, 155",
+    "overview com 20 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a aplicação da legislação anterior no que não",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.35",
+   "title": "ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo)."
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: dez",
+    "law_dependency: lei complementar",
+    "remissao: arts. 165",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.35:PAR.2",
+   "title": "ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA",
+   "role": "BLOCK",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo)."
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: quatro meses",
+    "number_or_percentage: quatro",
+    "law_dependency: lei complementar",
+    "remissao: arts. 165",
+    "block com 4 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do primeiro exercício financeiro e devolvido para sanção",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.38",
+   "title": "ADCT, art. 38 — Limite provisório de despesa com pessoal",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dados externos."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: sessenta",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 169, 198",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dados externos.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.52",
+   "title": "ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 192",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "até que sejam fixadas as condições do art",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.54-A",
+   "title": "ADCT, art. 54-A — Indenização aos seringueiros",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Regra vigente; execucao externa."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.54-A:CAPUT: Vide Emenda Constitucional n. 78, de 2014)",
+    "camada externa: nota externa",
+    "number_or_percentage: vinte",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 54",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Regra vigente; execucao externa.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.60-A",
+   "title": "ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb",
+   "role": "OVERVIEW",
+   "sub_block": "E",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: dez",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 212",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   }
  ],
  "d_reasons": {
@@ -5218,37 +5839,36 @@
   "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 1,
   "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 2,
   "SANCTION_WITH_INTERPRETATION": 1,
-  "TEMPORAL_STATUS_UNRESOLVED": 6
+  "TEMPORAL_STATUS_UNRESOLVED": 13
  },
  "finding_counts": {
   "EXTERNAL_FACT_NEEDS_PROVENANCE": 2,
-  "LIST_ITEM_POSSIBLY_DROPPED": 14,
-  "NUMBER_NOT_IN_TEXT": 2,
+  "LIST_ITEM_POSSIBLY_DROPPED": 16,
   "PERMISSION_NOT_IN_TEXT": 1
  },
  "refined_false_positive_counts": {
-  "TELEOLOGY_SPECULATIVE": 5,
+  "TELEOLOGY_SPECULATIVE": 7,
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 170459,
-  "old_model_full_package_chars": 372966,
-  "presented_chars": 141740,
+  "total_draft_chars": 189862,
+  "old_model_full_package_chars": 419273,
+  "presented_chars": 175427,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 78572,
-   "MACRO08_FULL_D_REVIEW.md": 37470,
+   "MACRO08_COMPACT_AB_REVIEW.md": 83360,
+   "MACRO08_FULL_D_REVIEW.md": 64559,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 17010,
-   "MACRO08_QUICK_C_REVIEW.md": 8569
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 18958,
+   "MACRO08_QUICK_C_REVIEW.md": 8431
   },
-  "reduction_abs": 231226,
-  "reduction_pct": 62.0
+  "reduction_abs": 243846,
+  "reduction_pct": 58.2
  },
- "d_ratio": 0.074,
+ "d_ratio": 0.118,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 85,
+  "eligible": 95,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -5340,6 +5960,22 @@
     "SIGLA": 1,
     "TRANSICAO_NO_NUCLEO": 1
    }
+  },
+  "E": {
+   "corrections": 20,
+   "by_category": {
+    "AFIRMACAO_SOBRE_ESTADO_DE_LEI": 2,
+    "COPIA_DA_LEI_SECA": 7,
+    "EXCECAO_OMITIDA": 1,
+    "FRASE_LONGA": 3,
+    "GLOSSARIO": 1,
+    "LISTA_INCOMPLETA": 1,
+    "MODALIDADE": 1,
+    "NUMERO": 1,
+    "REMISSAO": 1,
+    "REPETICAO": 1,
+    "TELEOLOGIA": 1
+   }
   }
  },
  "checks": {
@@ -5360,9 +5996,9 @@
     "OVERVIEW": 77
    },
    "queues": {
-    "A_CLEAN_LOW": 78,
+    "A_CLEAN_LOW": 79,
     "B_CLEAN_MEDIUM": 19,
-    "C_QUICK_REVIEW": 12,
+    "C_QUICK_REVIEW": 11,
     "D_FULL_HUMAN_REVIEW": 4,
     "E_HARD_FAIL": 0
    },
@@ -5383,30 +6019,31 @@
    }
   },
   "ADCT": {
-   "new_explanations": 9,
+   "new_explanations": 23,
    "roles": {
-    "OVERVIEW": 9
+    "BLOCK": 1,
+    "OVERVIEW": 22
    },
    "queues": {
-    "A_CLEAN_LOW": 1,
-    "B_CLEAN_MEDIUM": 3,
-    "C_QUICK_REVIEW": 0,
-    "D_FULL_HUMAN_REVIEW": 5,
+    "A_CLEAN_LOW": 5,
+    "B_CLEAN_MEDIUM": 4,
+    "C_QUICK_REVIEW": 2,
+    "D_FULL_HUMAN_REVIEW": 12,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 1,
-    "MEDIUM": 3,
-    "HIGH": 5
+    "LOW": 7,
+    "MEDIUM": 4,
+    "HIGH": 12
    },
    "verification_complexity": {
     "SIMPLE": 0,
-    "STRUCTURED": 1,
-    "EXTERNAL": 8
+    "STRUCTURED": 7,
+    "EXTERNAL": 16
    },
    "jurisprudence": {
     "CONTEXT_ONLY": 6,
-    "NONE": 2,
+    "NONE": 16,
     "REQUIRED_FOR_CORRECTNESS": 1
    }
   }

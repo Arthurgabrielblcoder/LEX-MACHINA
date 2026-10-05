@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 122 · risco LOW 89 · MEDIUM 24 · HIGH 9
-- Prontas para revisão editorial: 122 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 3, EXAMPLE_NUMBER 4, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 7, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Explicações: 136 · risco LOW 95 · MEDIUM 25 · HIGH 16
+- Prontas para revisão editorial: 136 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 3, EXAMPLE_NUMBER 6, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 9, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -55,6 +55,43 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `ADCT:ART.27` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "Não se deve concluir apenas"; CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: "exige verificação"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).; TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada.
+
+### ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988
+
+- `ADCT:ART.34` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante.
+
+### ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios
+
+- `ADCT:ART.35` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).
+
+### ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA
+
+- `ADCT:ART.35:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: § 2º aplicavel enquanto ausente a lei complementar (dado externo).
+- EXAMPLE_NUMBER (exemplo_pratico: 31) → Data marcada como ilustrativa na propria frase ("data ilustrativa do calendario anual"). Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 38 — Limite provisório de despesa com pessoal
+
+- `ADCT:ART.38` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dados externos.
+- EXTRAPOLATION_NUMBER (o_que_significa: 2022) → Ano da emenda segundo as anotacoes da fonte canonica ("Incluido pela Emenda Constitucional n. 127, de 2022"), citado como tal. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras
+
+- `ADCT:ART.52` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
+
+### ADCT, art. 54-A — Indenização aos seringueiros
+
+- `ADCT:ART.54-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Regra vigente; execucao externa.
+
+### ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb
+
+- `ADCT:ART.60-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo.
 
 ## Risco MEDIUM
 
@@ -182,6 +219,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `ADCT:ART.19` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A diferença entre estabilidade e efetividade e seus efeitos práticos são temas da camada JURISPRUDÊNCIA.
 - EXTRAPOLATION_NUMBER (o_que_significa: 5) → Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 49 — Enfiteuse
+
+- `ADCT:ART.49` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: sob pena
 
 ## Risco LOW
 
@@ -640,4 +682,36 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `ADCT:ART.18-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 - EXAMPLE_NUMBER (exemplo_pratico: 1990) → Ano do exemplo marcado como ilustrativo, dentro do periodo de 1989 a 1994 do texto. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 40 — Zona Franca de Manaus
+
+- `ADCT:ART.40` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 42 — Aplicação regional dos recursos de irrigação
+
+- `ADCT:ART.42` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação
+
+- `ADCT:ART.46` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 53 — Direitos dos ex-combatentes
+
+- `ADCT:ART.53` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 54 — Pensão dos seringueiros
+
+- `ADCT:ART.54` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb
+
+- `ADCT:ART.60` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXTRAPOLATION_NUMBER (atencao: 2026) → 2026 e o sexto ano contado de 1º de janeiro de 2021 (texto do caput) e coincide com o ano da data de referencia do lote. Resolucao do drafter, sujeita a revisao humana.
+- EXAMPLE_NUMBER (exemplo_pratico: 2026) → Idem (sexto ano = 2026, derivado do texto).
 

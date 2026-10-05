@@ -3,14 +3,14 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "artigos avaliados e nao explicados (SKIP de artigo inteiro), sempre com motivo; seus targets constam aqui, nao no SELECTION_REPORT",
- "articles": 22,
- "targets": 94,
+ "articles": 41,
+ "targets": 164,
  "by_decision": {
   "SKIP_APPROVED_PILOT_LEGACY_MODEL": 1,
   "SKIP_CONSUMED_CONSTITUTIVE_ACT": 4,
-  "SKIP_EXHAUSTED_TRANSITION": 9,
-  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 5,
-  "SKIP_TRANSITION_EVENT_DEPENDENT": 3
+  "SKIP_EXHAUSTED_TRANSITION": 21,
+  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 8,
+  "SKIP_TRANSITION_EVENT_DEPENDENT": 7
  },
  "rows": [
   {
@@ -774,6 +774,613 @@
     {
      "target_id": "ADCT:ART.30:CAPUT",
      "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.31",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Estatizacao das serventias do foro judicial, definidas em lei, respeitados os direitos dos titulares da epoca; execucao depende de leis e fatos nao versionados.",
+   "situation_as_of": "Dependente de lei e de fatos externos.",
+   "provenance": [
+    "runtime: ADCT art. 31"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.31",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.31:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.32",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Afasta o art. 236 para serventias ja oficializadas na promulgacao, respeitado o direito dos servidores; alcanca situacoes existentes em 1988.",
+   "situation_as_of": "Residual.",
+   "provenance": [
+    "runtime: ADCT art. 32"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.32",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.32:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.33",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Pagamento parcelado dos precatorios pendentes na promulgacao em ate oito anos a partir de 1º de julho de 1989.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 33"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.33",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.33:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.33:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.36",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Extincao dos fundos nao ratificados pelo Congresso em dois anos da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 36",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.36",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.36:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.37",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Adaptacao ao art. 167, III, em cinco anos.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 37",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.37",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.37:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.39",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Revisao da lei orcamentaria de 1989 e lei complementar do art. 161, II, em doze meses.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 39"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.39",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.39:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.39:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.41",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Reavaliacao de incentivos setoriais e revogacao dos nao confirmados em dois anos; ressalva de direitos adquiridos ate aquela data.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 41",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.41",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.41:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.41:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.41:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.41:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.43",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Titulos minerarios sem efeito na data da lei de mineracao ou em um ano da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 43",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.43",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.43:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.44",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Prazo de quatro anos para empresas mineradoras da epoca e dispensas para empresas entao existentes.",
+   "situation_as_of": "Prazos exauridos; efeitos residuais para empresas da epoca.",
+   "provenance": [
+    "runtime: ADCT art. 44",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.44",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.44:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.44:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.44:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.44:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.45",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Refinarias em funcionamento na promulgacao fora do monopolio e contratos de risco entao vigentes ressalvados.",
+   "situation_as_of": "Residual.",
+   "provenance": [
+    "runtime: ADCT art. 45"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.45",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.45:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.45:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.47",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Dispensa de correcao monetaria de emprestimos de 1986 e 1987 liquidados em noventa dias da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 47",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.47",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.3:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.3:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.3:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.3:INC.IV",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.3:INC.V",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.5",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.6",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.47:PAR.7",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.48",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Prazo de cento e vinte dias da promulgacao para o Congresso elaborar o codigo de defesa do consumidor (o cumprimento do prazo nao e afirmado).",
+   "situation_as_of": "Exaurido por decurso do prazo.",
+   "provenance": [
+    "runtime: ADCT art. 48",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.48",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.48:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.50",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Lei agricola no prazo de um ano.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 50"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.50",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.50:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.51",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Revisao, em tres anos da promulgacao, de doacoes, vendas e concessoes de terras publicas de 1962 a 1987.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 51",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.51",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.51:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.51:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.51:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.51:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.55",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Destinacao de trinta por cento da seguridade a saude ate a aprovacao da lei de diretrizes orcamentarias; estado do evento nao versionado.",
+   "situation_as_of": "Dependente de evento externo.",
+   "provenance": [
+    "runtime: ADCT art. 55"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.55",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.55:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.56",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Destinacao de contribuicao a seguridade ate a lei sobre o art. 195, I; ressalva do exercicio de 1988.",
+   "situation_as_of": "Dependente de lei externa.",
+   "provenance": [
+    "runtime: ADCT art. 56"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.56",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.56:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.57",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Parcelamento de debitos previdenciarios de Estados e Municipios ate 1988, requerido em cento e oitenta dias da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 57",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.57",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.57:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.57:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.57:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.57:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.57:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.58",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Revisao dos beneficios mantidos na promulgacao ate a implantacao do plano de custeio e beneficios; estado da implantacao nao versionado.",
+   "situation_as_of": "Dependente de evento externo.",
+   "provenance": [
+    "runtime: ADCT art. 58"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.58",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.58:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.58:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.59",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Projetos de lei da seguridade em seis meses da promulgacao e implantacao em dezoito meses.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 59",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.59",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.59:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.59:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
      "status": "CURRENT"
     }
    ]
