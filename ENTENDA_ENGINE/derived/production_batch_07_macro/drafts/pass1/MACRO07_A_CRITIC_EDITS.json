@@ -1,0 +1,656 @@
+[
+ {
+  "target": "CF88:ART.77:PAR.2",
+  "section": "o_que_significa",
+  "category": "JURISPRUDENCIA_VELADA",
+  "reason": "Candidatura avulsa e tema controvertido e nao decorre deste paragrafo; retirada a afirmacao.",
+  "before": "\nO texto exige registro por partido político: não há candidatura avulsa à Presidência.",
+  "after": "\nO texto exige que o candidato seja registrado por partido político."
+ },
+ {
+  "target": "CF88:ART.78",
+  "section": "o_que_significa",
+  "category": "TELEOLOGIA",
+  "detector": "TELEOLOGY_SPECULATIVE",
+  "reason": "Finalidade nao declarada (\"evita\"); substituida pela consequencia expressa.",
+  "before": "O prazo de dez dias evita que o cargo fique indefinidamente sem titular. Passado esse prazo sem posse, o cargo é declarado vago,",
+  "after": "O prazo de dez dias tem consequência expressa: passado esse prazo sem posse, o cargo é declarado vago,"
+ },
+ {
+  "target": "CF88:ART.80",
+  "section": "o_que_significa",
+  "category": "TELEOLOGIA",
+  "detector": "UNIVERSAL_CLAIM",
+  "reason": "Finalidade e absoluto (\"para que o pais nunca fique\") nao declarados no texto.",
+  "before": "O artigo cria uma linha de substituição para que o país nunca fique sem chefe do Executivo.",
+  "after": "O artigo cria uma linha de substituição para os casos em que nem o Presidente nem o Vice podem exercer o cargo."
+ },
+ {
+  "target": "CF88:ART.81",
+  "section": "o_que_significa",
+  "category": "NUMERO",
+  "detector": "NUMBER_NOT_IN_TEXT",
+  "reason": "\"metade\" e \"quatro anos\" nao estao no art. 81; formulacao pelos dois ultimos anos, como no texto.",
+  "before": "A Constituição distingue o momento da vacância. Na primeira metade do mandato, a eleição é direta, pelo povo. Na segunda metade, a eleição é indireta, feita pelo Congresso (§ 1º, com explicação própria).\nO mandato de quem é eleito assim não é um mandato novo de quatro anos:",
+  "after": "A Constituição distingue o momento da vacância. Se ela ocorre antes dos dois últimos anos do período, a eleição é direta, pelo povo. Nos dois últimos anos, a eleição é indireta, feita pelo Congresso, na forma da lei (§ 1º, com explicação própria).\nO mandato de quem é eleito assim não é um mandato novo e completo:"
+ },
+ {
+  "target": "CF88:ART.81",
+  "section": "o_que_diz",
+  "category": "GENERALIZACAO",
+  "detector": "ABSOLUTE_CLAIM",
+  "reason": "Ajuste de redacao fiel ao texto (\"em qualquer dos casos\").",
+  "before": "Em qualquer caso, os eleitos apenas completam o período dos antecessores.",
+  "after": "Nas duas hipóteses, os eleitos apenas completam o período dos antecessores."
+ },
+ {
+  "target": "CF88:ART.81",
+  "section": "exemplo_pratico",
+  "category": "NUMERO",
+  "reason": "\"quarto ano\" pressupunha duracao do mandato fora do art. 81.",
+  "before": "Quem vencer governará apenas até o fim do quarto ano, quando termina o período original.",
+  "after": "Quem vencer governará apenas até o fim do período original."
+ },
+ {
+  "target": "CF88:ART.82",
+  "section": "o_que_significa",
+  "category": "TRANSICAO_NO_NUCLEO",
+  "detector": "TRANSITION_IN_CORE",
+  "reason": "\"transicao\" no nucleo; a palavra designava a passagem entre governos.",
+  "before": "O intervalo entre a eleição e o início do mandato permite a transição entre o governo que sai e o que entra.",
+  "after": "Entre a eleição e o início do mandato há um intervalo de alguns meses."
+ },
+ {
+  "target": "CF88:ART.83",
+  "section": "atencao",
+  "category": "CONDICAO_FORA_DO_TEXTO",
+  "reason": "\"ausencia continua\" nao esta no texto.",
+  "before": "O limite é de quinze dias de ausência contínua no período da viagem; ausências até esse limite não exigem licença.",
+  "after": "Ausências de até quinze dias não exigem licença; a exigência começa quando o período fora do País supera esse limite."
+ },
+ {
+  "target": "CF88:ART.84",
+  "section": "o_que_significa",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Mais de 10 palavras seguidas iguais ao texto oficial.",
+  "before": "Algumas atribuições podem ser delegadas a Ministros, ao Procurador-Geral da República ou ao Advogado-Geral da União (parágrafo único, com explicação própria).",
+  "after": "Algumas atribuições podem ser delegadas a outras autoridades, como os Ministros de Estado (parágrafo único, com explicação própria)."
+ },
+ {
+  "target": "CF88:ART.84:INC.VI",
+  "section": "o_que_diz",
+  "category": "CONDICAO_FORA_DO_TEXTO",
+  "detector": "CONDITION_NOT_IN_TEXT",
+  "reason": "\"desde que\" com termos fora do texto; frase longa dividida.",
+  "before": "O inciso VI permite ao Presidente dispor por decreto sobre a organização e o funcionamento da administração federal, desde que isso não aumente despesas nem crie ou extinga órgãos públicos (alínea a), e sobre a extinção de funções ou cargos públicos quando estiverem vagos (alínea b).",
+  "after": "O inciso VI permite ao Presidente dispor por decreto sobre a organização e o funcionamento da administração federal, sem aumento de despesa e sem criação ou extinção de órgãos públicos (alínea a). Permite também, por decreto, a extinção de funções ou cargos públicos vagos (alínea b)."
+ },
+ {
+  "target": "CF88:ART.84:INC.VI",
+  "section": "o_que_significa",
+  "category": "GENERALIZACAO",
+  "detector": "UNIVERSAL_CLAIM",
+  "reason": "\"so pode\" reformulado segundo o texto (\"quando vagos\").",
+  "before": "Na alínea b, só pode extinguir cargos e funções que estejam vagos; cargo ocupado não pode ser extinto por essa via.",
+  "after": "Na alínea b, a extinção alcança cargos e funções vagos; a alínea não trata da extinção de cargo ocupado."
+ },
+ {
+  "target": "CF88:ART.84:PAR.UNICO",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras; e \"devem\" lido como mudanca de modalidade.",
+  "before": "O parágrafo único permite que o Presidente delegue as atribuições dos incisos VI, XII e XXV (este, na primeira parte) aos Ministros de Estado, ao Procurador-Geral da República ou ao Advogado-Geral da União, que devem respeitar os limites da delegação.",
+  "after": "O parágrafo único permite ao Presidente delegar as atribuições dos incisos VI e XII e a primeira parte do inciso XXV. Podem recebê-las os Ministros de Estado, o chefe do Ministério Público da União e o Advogado-Geral da União, que atuam dentro dos limites fixados em cada delegação."
+ },
+ {
+  "target": "CF88:ART.85",
+  "section": "external_layer_notes",
+  "category": "DEPENDENCIA_EXTERNA_SEM_PROVENIENCIA",
+  "detector": "LAW_STATUS_CLAIM",
+  "reason": "Afirmacao sobre estado de lei externa (\"esta na camada\") sem proveniencia.",
+  "before": "A lei especial que define os crimes de responsabilidade e regula o processo está na camada de legislação correlata.",
+  "after": "A identificação da lei especial prevista no parágrafo único fica para a camada de legislação correlata."
+ },
+ {
+  "target": "CF88:ART.86:PAR.3",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras do § 4º.",
+  "before": "O § 4º determina que, durante o mandato, o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções.",
+  "after": "O § 4º determina que, durante o mandato, o Presidente não responde por atos alheios ao exercício das suas funções."
+ },
+ {
+  "target": "CF88:ART.86:PAR.3",
+  "section": "o_que_significa",
+  "category": "GENERALIZACAO",
+  "detector": "ABSOLUTE_CLAIM",
+  "reason": "\"para sempre\" retirado; mantida apenas a delimitacao temporal do texto.",
+  "before": "O texto não diz que esses atos ficam sem consequência para sempre: diz que a responsabilização não ocorre na vigência do mandato.",
+  "after": "O texto não diz que esses atos ficam sem consequência: diz que a responsabilização não ocorre na vigência do mandato."
+ },
+ {
+  "target": "CF88:ART.87",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "O art. 87 exige que os Ministros de Estado sejam brasileiros com mais de vinte e um anos e no exercício dos direitos políticos.",
+  "after": "O art. 87 exige que os Ministros de Estado sejam brasileiros maiores de vinte e um anos, em pleno gozo dos direitos políticos."
+ },
+ {
+  "target": "CF88:ART.87",
+  "section": "o_que_significa",
+  "category": "GENERALIZACAO",
+  "detector": "UNIVERSAL_CLAIM",
+  "reason": "\"sempre\" sem base no texto.",
+  "before": "O Ministro dirige a sua pasta, mas sempre como auxiliar do Presidente.",
+  "after": "O Ministro dirige a sua pasta como auxiliar do Presidente."
+ },
+ {
+  "target": "CF88:ART.89",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "o Ministro da Justiça e seis cidadãos brasileiros natos com mais de trinta e cinco anos.",
+  "after": "o Ministro da Justiça e seis brasileiros natos maiores de trinta e cinco anos."
+ },
+ {
+  "target": "CF88:ART.93",
+  "section": "o_que_diz",
+  "category": "LISTA_INCOMPLETA",
+  "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+  "reason": "Lista parafraseada sem marcar que e parcial; frase longa dividida.",
+  "before": "O art. 93 determina que lei complementar, de iniciativa do Supremo Tribunal Federal, disponha sobre o Estatuto da Magistratura, observados princípios que tratam do ingresso",
+  "after": "O art. 93 determina que lei complementar, de iniciativa do Supremo Tribunal Federal, disponha sobre o Estatuto da Magistratura, observando uma série de princípios. Entre eles estão os que tratam do ingresso"
+ },
+ {
+  "target": "CF88:ART.93",
+  "section": "external_layer_notes",
+  "category": "DEPENDENCIA_EXTERNA_SEM_PROVENIENCIA",
+  "detector": "LAW_STATUS_CLAIM",
+  "reason": "Afirmacao sobre estado de lei externa sem proveniencia.",
+  "before": "A lei complementar que contém o Estatuto da Magistratura está na camada de legislação correlata.",
+  "after": "A identificação da lei complementar que disciplina a magistratura fica para a camada de legislação correlata."
+ },
+ {
+  "target": "CF88:ART.93:INC.I",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "por concurso público de provas e títulos com participação da Ordem dos Advogados do Brasil em todas as fases.",
+  "after": "por concurso público de provas e títulos, acompanhado pela Ordem dos Advogados do Brasil em cada uma das suas etapas."
+ },
+ {
+  "target": "CF88:ART.93:INC.I",
+  "section": "o_que_significa",
+  "category": "CONDICAO_FORA_DO_TEXTO",
+  "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+  "reason": "Reformulacao para atribuir a exigencia ao texto.",
+  "before": "O candidato precisa ser bacharel em Direito e comprovar no mínimo três anos de atividade jurídica.",
+  "after": "O texto exige do bacharel em Direito no mínimo três anos de atividade jurídica."
+ },
+ {
+  "target": "CF88:ART.93:INC.I",
+  "section": "exemplo_pratico",
+  "category": "GENERALIZACAO",
+  "detector": "UNIVERSAL_CLAIM",
+  "reason": "\"so pode\" reformulado.",
+  "before": "Aprovada em quinto lugar, ela só pode ser nomeada depois dos quatro primeiros colocados.",
+  "after": "Aprovada em quinto lugar, sua nomeação vem depois da dos quatro primeiros colocados."
+ },
+ {
+  "target": "CF88:ART.93:INC.V",
+  "section": "o_que_significa",
+  "category": "NUMERO",
+  "detector": "NUMBER_NOT_IN_TEXT",
+  "reason": "\"entre cinco e dez\" lido como quinze; e \"todos os\" retirado.",
+  "before": "Os demais degraus são definidos por lei, e cada degrau fica entre cinco e dez por cento abaixo do anterior. O teto de noventa e cinco por cento sobre o subsídio dos Tribunais Superiores vale para todos os demais magistrados.",
+  "after": "Os demais degraus são definidos por lei, e cada degrau fica de cinco por cento a dez por cento abaixo do anterior. O limite de noventa e cinco por cento do subsídio dos Tribunais Superiores vale para os demais magistrados."
+ },
+ {
+  "target": "CF88:ART.93:INC.VIII",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "O inciso VIII exige que o ato de remoção ou de disponibilidade do magistrado por interesse público se baseie em decisão tomada pela maioria absoluta do tribunal ou do Conselho Nacional de Justiça, assegurada ampla defesa.",
+  "after": "O inciso VIII exige que a remoção ou a disponibilidade de um juiz, quando motivada por interesse público, dependa de decisão da maioria absoluta do tribunal ou do Conselho Nacional de Justiça, com direito a ampla defesa."
+ },
+ {
+  "target": "CF88:ART.93:INC.VIII",
+  "section": "o_que_significa",
+  "category": "EXCECAO_FORA_DO_TEXTO",
+  "detector": "EXCEPTION_NOT_IN_TEXT",
+  "reason": "\"excecao\" sem marcador no texto do inciso.",
+  "before": "O inciso VIII disciplina a exceção, quando há interesse público.",
+  "after": "O inciso VIII disciplina a transferência ou o afastamento motivados por interesse público."
+ },
+ {
+  "target": "CF88:ART.93:INC.VIII",
+  "section": "palavras_dificeis",
+  "category": "GLOSSARIO",
+  "detector": "TECHNICAL_TERM_UNDEFINED",
+  "reason": "Termo tecnico usado sem definicao no glossario.",
+  "before": "{\"termo\": \"Ampla defesa\", \"explicacao\": \"direito de apresentar argumentos e provas antes da decisão.\"}",
+  "after": "{\"termo\": \"Ampla defesa\", \"explicacao\": \"direito de apresentar argumentos e provas antes da decisão.\"}, {\"termo\": \"Inamovibilidade\", \"explicacao\": \"garantia de que o juiz não será transferido contra a vontade, salvo por interesse público.\"}"
+ },
+ {
+  "target": "CF88:ART.93:INC.IX",
+  "section": "exemplo_pratico",
+  "category": "CONTRATO_DO_MOTOR",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "\"decidiu\" e termo reservado a camada de jurisprudencia.",
+  "before": "Mesmo assim, a sentença precisa explicar por que o juiz decidiu daquela forma.",
+  "after": "Mesmo assim, a sentença precisa expor as razões da decisão."
+ },
+ {
+  "target": "CF88:ART.93:INC.XII",
+  "section": "o_que_significa",
+  "category": "GENERALIZACAO",
+  "detector": "ABSOLUTE_CLAIM",
+  "reason": "\"sempre\" retirado.",
+  "before": "há sempre um juiz de plantão para casos urgentes.",
+  "after": "há juiz de plantão para casos urgentes."
+ },
+ {
+  "target": "CF88:ART.93:INC.XII",
+  "section": "palavras_dificeis",
+  "category": "GLOSSARIO",
+  "detector": "TERM_NOT_USED",
+  "reason": "Termo do glossario ajustado a palavra usada no texto.",
+  "before": "\"termo\": \"Plantão judiciário\"",
+  "after": "\"termo\": \"Plantão\""
+ },
+ {
+  "target": "CF88:ART.94",
+  "section": "atencao",
+  "category": "REGRA_INVENTADA",
+  "reason": "A alternancia das vagas entre Ministerio Publico e advocacia nao esta no art. 94.",
+  "before": "As vagas do quinto se alternam entre o Ministério Público e a advocacia. O quinto também aparece, com regras próprias, em outros tribunais, como os do Trabalho (art. 115).",
+  "after": "O quinto também aparece, com regras próprias, em outros tribunais, como os do Trabalho (art. 115). A forma de distribuir as vagas entre Ministério Público e advocacia não está detalhada neste artigo."
+ },
+ {
+  "target": "CF88:ART.95",
+  "section": "o_que_significa",
+  "category": "RESSALVA_OMITIDA",
+  "detector": "LAW_DEPENDENCY_OMITTED",
+  "reason": "Vedacoes com excecoes previstas em lei (inciso IV) sem mencao.",
+  "before": "limitam atividades paralelas, recebimentos e a atuação política do juiz.",
+  "after": "limitam atividades paralelas, recebimentos, ressalvadas as exceções previstas em lei, e a atuação política do juiz."
+ },
+ {
+  "target": "CF88:ART.95:INC.I",
+  "section": "o_que_significa",
+  "category": "INTERPRETACAO_COMO_REGRA",
+  "reason": "A regra para quem chega aos tribunais por outras vias e interpretacao, nao texto.",
+  "before": "\nA regra dos dois anos vale para o primeiro grau. Quem chega aos tribunais por outras vias, como o quinto constitucional, segue a regra geral do inciso.",
+  "after": "\nO texto fixa os dois anos para o primeiro grau; a situação de quem ingressa diretamente nos tribunais é tema da camada JURISPRUDÊNCIA."
+ },
+ {
+  "target": "CF88:ART.95:INC.I",
+  "section": "palavras_dificeis",
+  "category": "GLOSSARIO",
+  "detector": "TERM_NOT_USED",
+  "reason": "Termos do glossario alinhados ao texto da explicacao.",
+  "before": "{\"termo\": \"Trânsito em julgado\", \"explicacao\": \"momento em que a decisão não admite mais recurso.\"}, {\"termo\": \"Vitaliciamento\", \"explicacao\": \"período de dois anos de exercício até o juiz de primeiro grau adquirir a vitaliciedade.\"}",
+  "after": "{\"termo\": \"Sentença transitada em julgado\", \"explicacao\": \"decisão judicial contra a qual não cabe mais recurso.\"}, {\"termo\": \"Vitaliciedade\", \"explicacao\": \"garantia de que o juiz só perde o cargo nas formas previstas na Constituição.\"}"
+ },
+ {
+  "target": "CF88:ART.95:PAR.UNICO",
+  "section": "o_que_diz",
+  "category": "LISTA_INCOMPLETA",
+  "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+  "reason": "Elemento do inciso V reconhecido pela palavra do texto.",
+  "before": "e advogar no juízo ou tribunal de que se afastou antes de três anos da aposentadoria ou exoneração.",
+  "after": "e exercer a advocacia no juízo ou tribunal de que se afastou antes de três anos da aposentadoria ou exoneração."
+ },
+ {
+  "target": "CF88:ART.96",
+  "section": "o_que_diz",
+  "category": "RESSALVA_OMITIDA",
+  "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+  "reason": "Ressalva da alinea e (cargos de confianca) omitida no resumo.",
+  "before": "prover os cargos de juiz e de servidores,",
+  "after": "prover os cargos de juiz e de servidores, salvo os de confiança definidos em lei,"
+ },
+ {
+  "target": "CF88:ART.96:INC.III",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "O inciso III atribui aos Tribunais de Justiça o julgamento dos juízes estaduais e do Distrito Federal e Territórios, bem como dos membros do Ministério Público, nos crimes comuns e de responsabilidade, ressalvada a competência da Justiça Eleitoral.",
+  "after": "O inciso III atribui aos Tribunais de Justiça o julgamento, por crimes comuns e de responsabilidade, dos juízes estaduais, do Distrito Federal e dos Territórios e dos membros do Ministério Público, com ressalva para a competência da Justiça Eleitoral."
+ },
+ {
+  "target": "CF88:ART.97",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "O art. 97 estabelece que os tribunais só podem declarar a inconstitucionalidade de lei ou ato normativo do poder público pelo voto da maioria absoluta de seus membros ou dos membros do órgão especial.",
+  "after": "O art. 97 estabelece que um tribunal só pode reconhecer que uma lei ou um ato normativo do poder público é inconstitucional pelo voto da maioria absoluta dos seus membros ou dos membros do seu órgão especial."
+ },
+ {
+  "target": "CF88:ART.97",
+  "section": "o_que_significa",
+  "category": "TELEOLOGIA",
+  "detector": "TELEOLOGY_SPECULATIVE",
+  "reason": "Finalidade nao declarada (\"a regra da peso e estabilidade\").",
+  "before": "\nA regra dá peso e estabilidade à decisão que retira uma lei do caso concreto.",
+  "after": ""
+ },
+ {
+  "target": "CF88:ART.97",
+  "section": "atencao",
+  "category": "INTERPRETACAO_COMO_REGRA",
+  "reason": "Afirmacao sobre o juiz de primeiro grau nao esta no artigo.",
+  "before": "A regra se aplica aos tribunais; juízes de primeiro grau podem deixar de aplicar uma lei inconstitucional no caso concreto.",
+  "after": "O artigo se dirige aos tribunais e não trata da decisão do juiz de primeiro grau."
+ },
+ {
+  "target": "CF88:ART.98",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "O art. 98 obriga a União, no Distrito Federal e nos Territórios, e os Estados a criar juizados especiais",
+  "after": "O art. 98 obriga os Estados e a União (esta, no Distrito Federal e nos Territórios) a criar juizados especiais"
+ },
+ {
+  "target": "CF88:ART.98:INC.I",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras.",
+  "before": "competentes para conciliar, julgar e executar causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo, por procedimentos oral e sumaríssimo.",
+  "after": "competentes para conciliar, julgar e executar, por procedimentos oral e sumaríssimo, causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo."
+ },
+ {
+  "target": "CF88:ART.98:INC.I",
+  "section": "palavras_dificeis",
+  "category": "REGRA_INVENTADA",
+  "reason": "\"escolhido entre advogados\" vem da lei, nao da Constituicao.",
+  "before": "auxiliar do juizado, escolhido entre advogados, que atua sob supervisão do juiz togado.",
+  "after": "auxiliar do juizado que atua sob supervisão do juiz togado, conforme a lei."
+ },
+ {
+  "target": "CF88:ART.100",
+  "section": "o_que_diz",
+  "category": "LISTA_INCOMPLETA",
+  "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+  "reason": "Resumo de lista sem marcar que e parcial.",
+  "before": "Os parágrafos tratam das preferências,",
+  "after": "Os parágrafos tratam, entre outros temas, das preferências,"
+ },
+ {
+  "target": "CF88:ART.100",
+  "section": "o_que_significa",
+  "category": "RESSALVA_OMITIDA",
+  "detector": "LAW_DEPENDENCY_OMITTED",
+  "reason": "Pequeno valor e definido em lei; mencao acrescentada.",
+  "before": "Dívidas de pequeno valor são pagas sem precatório.",
+  "after": "Dívidas definidas em lei como de pequeno valor são pagas sem precatório."
+ },
+ {
+  "target": "CF88:ART.100:PAR.1",
+  "section": "exemplo_pratico",
+  "category": "GENERALIZACAO",
+  "detector": "EXCEPTION_OR_RESSALVA_DROPPED",
+  "reason": "\"todos os outros\" reformulado.",
+  "before": "é paga antes de todos os outros.",
+  "after": "é paga antes dos demais créditos."
+ },
+ {
+  "target": "CF88:ART.100:PAR.5",
+  "section": "o_que_significa",
+  "category": "REGRA_INVENTADA",
+  "reason": "Efeito para precatorio apresentado depois da data nao esta escrito no paragrafo.",
+  "before": "\nPrecatórios apresentados depois da data de corte entram no orçamento do ano posterior.",
+  "after": ""
+ },
+ {
+  "target": "CF88:ART.100:PAR.5",
+  "section": "exemplo_pratico",
+  "category": "REGRA_INVENTADA",
+  "detector": "EXAMPLE_NUMBER",
+  "reason": "Data e consequencia nao escritas no paragrafo retiradas do exemplo.",
+  "before": "Um precatório apresentado em janeiro deve ser incluído no orçamento do ano seguinte e pago até 31 de dezembro desse ano seguinte. Se fosse apresentado em março, entraria no orçamento de um ano depois.",
+  "after": "Um precatório apresentado em janeiro deve ser incluído no orçamento do ano seguinte e pago até o fim desse exercício, com o valor atualizado."
+ },
+ {
+  "target": "CF88:ART.100:PAR.12",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+  "before": "O § 12 estabelece que, a partir da promulgação da emenda que o incluiu, a atualização dos valores dos requisitórios, depois de expedidos e até o pagamento, seja feita pelo índice oficial de remuneração básica da caderneta de poupança, com juros simples no mesmo percentual dos juros da poupança para compensar a mora, excluídos os juros compensatórios.",
+  "after": "O § 12 trata da atualização dos requisitórios entre a expedição e o pagamento, a partir da promulgação da emenda que o incluiu. O texto adota o índice da remuneração básica da poupança e juros simples no mesmo percentual dos juros da poupança para compensar a mora, sem juros compensatórios."
+ },
+ {
+  "target": "CF88:ART.100:PAR.13",
+  "section": "o_que_significa",
+  "category": "FATO_EXTERNO",
+  "reason": "\"normalmente com desconto\" e pratica de mercado, nao texto.",
+  "before": "O credor pode vender seu precatório, por exemplo a um investidor, para receber antes, normalmente com desconto.",
+  "after": "O credor pode transferir seu precatório, por exemplo a um investidor."
+ },
+ {
+  "target": "CF88:ART.100:PAR.20",
+  "section": "o_que_diz",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+  "before": "quinze por cento do seu valor seja pago até o fim do exercício seguinte e o restante em parcelas iguais nos cinco exercícios seguintes, com juros de mora e correção monetária. Alternativamente,",
+  "after": "quinze por cento do seu valor seja pago até o fim do exercício seguinte. O saldo é dividido em cinco parcelas anuais iguais, com juros de mora e correção monetária. Alternativamente,"
+ },
+ {
+  "target": "CF88:ART.100:PAR.20",
+  "section": "exemplo_pratico",
+  "category": "GENERALIZACAO",
+  "detector": "UNIVERSAL_CLAIM",
+  "reason": "\"todos os\" reformulado.",
+  "before": "que representa vinte por cento de todos os precatórios do ano.",
+  "after": "que representa vinte por cento do total de precatórios apresentados para o ano."
+ },
+ {
+  "target": "CF88:ART.100:PAR.23",
+  "section": "o_que_diz",
+  "category": "LISTA_INCOMPLETA",
+  "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+  "reason": "Lista das nove faixas resumida sem marcar que e parcial; frase longa dividida.",
+  "before": "O § 23 limita os pagamentos anuais de precatórios dos Estados, do Distrito Federal e dos Municípios a um percentual da receita corrente líquida do exercício anterior, que vai de um por cento,",
+  "after": "O § 23 limita os pagamentos anuais de precatórios dos Estados, do Distrito Federal e dos Municípios a um percentual da receita corrente líquida do exercício anterior. Há nove faixas; por exemplo, o percentual vai de um por cento,"
+ },
+ {
+  "target": "CF88:ART.100:PAR.23",
+  "section": "o_que_significa",
+  "category": "GENERALIZACAO",
+  "detector": "UNIVERSAL_CLAIM",
+  "reason": "\"todos os\" reformulado.",
+  "before": "Em vez de pagar todos os precatórios de uma vez,",
+  "after": "Em vez de quitar o estoque de uma só vez,"
+ },
+ {
+  "target": "CF88:ART.100:PAR.23",
+  "section": "atencao",
+  "category": "INTERPRETACAO_COMO_REGRA",
+  "reason": "Exclusao da Uniao reformulada como alcance do texto.",
+  "before": "Os limites não se aplicam à União.",
+  "after": "O § 23 trata apenas de Estados, Distrito Federal e Municípios."
+ },
+ {
+  "target": "CF88:ART.100:PAR.23",
+  "section": "external_layer_notes",
+  "category": "HISTORICO_NAO_VERIFICADO",
+  "detector": "HISTORICAL_CLAIM_UNVERIFIED",
+  "reason": "\"regime anterior\" sem evidencia; mantida so a remissao a transicao.",
+  "before": "a transição entre o regime anterior e o novo e eventuais regras do ADCT ficam na camada externa",
+  "after": "eventuais regras de transição e do ADCT ficam na camada externa"
+ },
+ {
+  "target": "CF88:ART.100:PAR.23",
+  "section": "palavras_dificeis",
+  "category": "GLOSSARIO",
+  "detector": "TERM_LOW_UTILITY",
+  "reason": "Definicao curta demais.",
+  "before": "\"explicacao\": \"período de dez anos.\"",
+  "after": "\"explicacao\": \"período de dez anos; aqui, o intervalo entre cada aumento dos limites.\""
+ },
+ {
+  "target": "CF88:ART.100:PAR.27",
+  "section": "o_que_diz",
+  "category": "LISTA_INCOMPLETA",
+  "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+  "reason": "Elemento do inciso III sem traco.",
+  "before": "responde nos termos da legislação de responsabilidade fiscal e de improbidade;",
+  "after": "responde nos termos da legislação de responsabilidade fiscal e de improbidade administrativa;"
+ },
+ {
+  "target": "CF88:ART.93:INC.I",
+  "section": "o_que_significa",
+  "before": "A Ordem dos Advogados do Brasil acompanha todas as etapas, o que dá transparência ao processo.\nO texto exige do bacharel em Direito no mínimo três anos de atividade jurídica. A ordem de classificação no concurso define quem é nomeado primeiro.",
+  "after": "A Ordem dos Advogados do Brasil acompanha cada etapa.\nA experiência mínima de três anos em atividade jurídica é requisito do candidato. Na nomeação, a classificação obtida no concurso define quem entra primeiro.",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras; finalidade (\"transparencia\") nao declarada no texto.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "CF88:ART.93:INC.II",
+  "section": "exemplo_pratico",
+  "before": "o tribunal só pode deixar de promover o juiz mais antigo com o voto fundamentado de dois terços dos seus membros.",
+  "after": "para deixar de promover o juiz mais antigo, o tribunal precisa do voto fundamentado de dois terços dos seus membros.",
+  "category": "GENERALIZACAO",
+  "reason": "\"so pode\" reformulado como exigencia de quorum.",
+  "detector": "UNIVERSAL_CLAIM"
+ },
+ {
+  "target": "CF88:ART.93:INC.V",
+  "section": "o_que_significa",
+  "before": "e todos os valores respeitam o teto do art. 37, XI.",
+  "after": "e os valores respeitam o teto do art. 37, XI.",
+  "category": "GENERALIZACAO",
+  "reason": "\"todos os\" retirado.",
+  "detector": "UNIVERSAL_CLAIM"
+ },
+ {
+  "target": "CF88:ART.96",
+  "section": "o_que_diz",
+  "before": "cabe julgar juízes e membros do Ministério Público estaduais nos crimes comuns e de responsabilidade.",
+  "after": "cabe julgar juízes e membros do Ministério Público estaduais por crimes comuns e de responsabilidade, com ressalva para a competência da Justiça Eleitoral.",
+  "category": "RESSALVA_OMITIDA",
+  "reason": "Ressalva do inciso III omitida no resumo.",
+  "detector": "RESSALVA_OMITTED_IN_SUMMARY"
+ },
+ {
+  "target": "CF88:ART.97",
+  "section": "o_que_diz",
+  "before": "O art. 97 estabelece que um tribunal só pode reconhecer que uma lei ou um ato normativo do poder público é inconstitucional pelo voto da maioria absoluta dos seus membros ou dos membros do seu órgão especial.",
+  "after": "O art. 97 exige o voto da maioria absoluta dos membros do tribunal, ou dos membros do seu órgão especial, para que o tribunal reconheça que uma lei ou um ato normativo do poder público é inconstitucional.",
+  "category": "GENERALIZACAO",
+  "reason": "\"so pode\" reformulado como exigencia de quorum.",
+  "detector": "UNIVERSAL_CLAIM"
+ },
+ {
+  "target": "CF88:ART.98",
+  "section": "o_que_diz",
+  "before": "a criar juizados especiais para causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo, e a justiça de paz",
+  "after": "a criar juizados especiais, voltados a causas cíveis simples e a infrações penais leves (inciso I), e a justiça de paz",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras; o detalhe fica no inciso I.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "CF88:ART.98:INC.I",
+  "section": "o_que_diz",
+  "before": "competentes para conciliar, julgar e executar, por procedimentos oral e sumaríssimo, causas cíveis de menor complexidade e infrações penais de menor potencial ofensivo.",
+  "after": "com competência para conciliar, julgar e executar, por procedimentos oral e sumaríssimo, as causas cíveis menos complexas e as infrações penais de potencial ofensivo menor.",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "CF88:ART.99",
+  "section": "o_que_diz",
+  "before": "Os §§ 3º a 5º tratam de propostas não enviadas no prazo ou fora dos limites e da execução do orçamento.",
+  "after": "Os §§ 3º a 5º tratam de propostas não enviadas no prazo ou fora dos limites e da execução do orçamento, que não pode criar despesas acima dos limites salvo autorização prévia por créditos suplementares ou especiais.",
+  "category": "RESSALVA_OMITIDA",
+  "reason": "Ressalva do § 5º omitida no resumo.",
+  "detector": "RESSALVA_OMITTED_IN_SUMMARY"
+ },
+ {
+  "target": "CF88:ART.100",
+  "section": "o_que_significa",
+  "before": "Créditos alimentares e de idosos, doentes graves e pessoas com deficiência têm preferência.",
+  "after": "Créditos alimentares têm preferência sobre os demais, salvo sobre os créditos alimentares de idosos, doentes graves e pessoas com deficiência, que vêm antes.",
+  "category": "RESSALVA_OMITIDA",
+  "reason": "Ressalva do § 1º (\"exceto sobre aqueles referidos no § 2º\") omitida.",
+  "detector": "RESSALVA_OMITTED_IN_SUMMARY"
+ },
+ {
+  "target": "CF88:ART.100:PAR.1",
+  "section": "o_que_diz",
+  "before": "Eles são pagos com preferência sobre os demais, exceto sobre os do § 2º.",
+  "after": "Os débitos alimentícios são pagos com preferência sobre os demais débitos, exceto sobre os do § 2º.",
+  "category": "RESSALVA_OMITIDA",
+  "reason": "Frase da ressalva sem ancora reconhecivel no dispositivo.",
+  "detector": "RESSALVA_OMITTED_IN_SUMMARY"
+ },
+ {
+  "target": "CF88:ART.100:PAR.1",
+  "section": "o_que_significa",
+  "before": "O § 2º alcança também quem se torna titular por herança, desde que preencha a condição pessoal.",
+  "after": "O § 2º alcança os titulares originários e também os que receberam o crédito por sucessão hereditária.",
+  "category": "CONDICAO_FORA_DO_TEXTO",
+  "reason": "\"desde que preencha a condicao pessoal\" e interpretacao nao escrita no texto."
+ },
+ {
+  "target": "CF88:ART.100:PAR.20",
+  "section": "o_que_diz",
+  "before": "admite acordo direto perante Juízos Auxiliares de Conciliação de Precatórios, com redução máxima de quarenta por cento",
+  "after": "admite acordo direto nos Juízos Auxiliares de Conciliação de Precatórios, com desconto de até quarenta por cento",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "CF88:ART.98:INC.I",
+  "section": "o_que_diz",
+  "before": "Permite, nas hipóteses da lei, a transação e o julgamento de recursos por turmas de juízes de primeiro grau.",
+  "after": "Nos casos previstos em lei, admite a transação e prevê que os recursos sejam julgados por turmas compostas por juízes de primeiro grau.",
+  "category": "COPIA_DA_LEI_SECA",
+  "detector": "ENGINE_CONTRACT",
+  "reason": "Copia de mais de 10 palavras."
+ },
+ {
+  "target": "CF88:ART.81",
+  "section": "o_que_diz",
+  "before": "Se a dupla vacância ocorrer nos dois últimos anos do mandato, a eleição é feita pelo Congresso Nacional, trinta dias depois da última vaga.",
+  "after": "Nos dois últimos anos do período, a escolha passa ao Congresso Nacional (§ 1º).",
+  "category": "CONTRATO_DO_MOTOR",
+  "detector": "ENTENDA_REPEATED_ACROSS_HIERARCHY",
+  "reason": "Resumo do pai repetia o paragrafo com explicacao propria."
+ },
+ {
+  "target": "CF88:ART.81:PAR.1",
+  "section": "exemplo_pratico",
+  "before": "o Congresso Nacional se reúne e escolhe, em até trinta dias, quem governará até o fim daquele período.",
+  "after": "o Congresso Nacional faz a eleição trinta dias depois da última vaga, e o escolhido governa até o fim daquele período.",
+  "category": "NUMERO",
+  "reason": "\"em ate trinta dias\" alterava o prazo (o texto fixa trinta dias depois da ultima vaga)."
+ },
+ {
+  "target": "CF88:ART.93",
+  "section": "o_que_diz",
+  "before": "do subsídio, da aposentadoria, da residência na comarca,",
+  "after": "do subsídio e da aposentadoria. Outros tratam da residência na comarca,",
+  "category": "FRASE_LONGA",
+  "detector": "LONG_SENTENCE",
+  "reason": "Frase com mais de 45 palavras dividida."
+ }
+]

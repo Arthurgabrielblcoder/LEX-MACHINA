@@ -1,0 +1,93 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "as_of": "2026-10-05",
+ "status": "CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado",
+ "builder": "ENTENDA_ENGINE/build_entenda_macro_batch.py",
+ "validator": "T1_VALIDATOR_V3 (A6 + recalibracao Batch06 + licoes da fila D, 2026-10-05)",
+ "sub_blocks_built": [
+  "A"
+ ],
+ "selection": {
+  "targets_evaluated": 263,
+  "current": 260,
+  "selected": 55,
+  "new": 55,
+  "reused": 0,
+  "skip": 205
+ },
+ "queues": {
+  "A_CLEAN_LOW": 31,
+  "B_CLEAN_MEDIUM": 16,
+  "C_QUICK_REVIEW": 0,
+  "D_FULL_HUMAN_REVIEW": 8,
+  "E_HARD_FAIL": 0
+ },
+ "legal_risk": {
+  "LOW": 31,
+  "MEDIUM": 16,
+  "HIGH": 8
+ },
+ "verification_complexity": {
+  "STRUCTURED": 34,
+  "SIMPLE": 2,
+  "EXTERNAL": 19
+ },
+ "metrics": {
+  "total_draft_chars": 75490,
+  "old_model_full_package_chars": 169554,
+  "presented_chars": 85765,
+  "presented_by_file": {
+   "MACRO07_COMPACT_AB_REVIEW.md": 35051,
+   "MACRO07_FULL_D_REVIEW.md": 42824,
+   "MACRO07_HARD_FAIL_REPORT.md": 119,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 7606,
+   "MACRO07_QUICK_C_REVIEW.md": 165
+  },
+  "reduction_abs": 83789,
+  "reduction_pct": 49.4
+ },
+ "code_sha256_lf": {
+  "build_entenda_macro_batch.py": "b3be5f40d8bd1ec8e53a64efa7459f4474bd4badc04b699223120088275564a2",
+  "entenda_vigency_plan.py": "46e37cd3ccc7b5b99fbc506e9c8e7bd1214a907319c54a8d85017228c6dc6c6c",
+  "t1_batch_packets.py": "9102b7f8177fc4b6ffa5faea931be0f8087d5312e47d7c7de0da1d5ebb21eabb",
+  "t1_risk.py": "a6fc3e3cba9be88f81d1dc31a3c6f57c2ad94bda508416bb56825ee693d0584a",
+  "t1_validator_v3.py": "3c502b07258883fa708bed6fcc8388cd19dc8436c513593d6874a517e7ae3d63",
+  "t1_validator_v2.py": "c4f3f01707672f4850d4522724bd4aea00acbd91eeadb7f93a9e10914f4fa71a",
+  "t1_triage.py": "e049f7becba19c0d3455c22f353a7fab7d251edbbf7e2c2f4627e9b8e987eda0",
+  "editorial_checks.py": "da9b5d1d75f52cae93b49cd65ee5c0e1ca525d4ba0e4c7eb8a46b6b050229bfc",
+  "production_batch.py": "a745879d372ded3506de7862c2df4a64c38dea36afa34837d0674336f5bd8d41",
+  "entenda_engine.py": "5e3a16e8fc7737bab061edcb32dbef51447ca81932d21dd20ab0f6b28cb028c4"
+ },
+ "inputs": {
+  "MACRO_SPEC.json": "33430d53314b823e21379924038fa644538cfe993fe2fbf96f25bf8273b6b9b5",
+  "EDITORIAL_INPUT.json": "55b17226354f4215e568e56c5c04683382a10ab274d47f525321fc1e6cea40f1",
+  "RELATIONS_PIN.json": "672bfe9b5d2e2174d5019c319d168b81a2b0d5e3909839c56ef5c141a3053384",
+  "drafts/MACRO07_A_CRITIC_LOG.json": "a2fb6cb0955b4d96560d44c120ad9f3e052841fc4a217ef1015f664cc7224b7e",
+  "drafts/MACRO07_A_DRAFTS.json": "1b28046491fbdffb86cc60f1ccd134240a0238f4413cf2ed021376e0c7be6812"
+ },
+ "files": {
+  "BATCH07_TARGET_PLAN.json": "17267039d29b96aa4ec745c41860793339d7e2b9304b998717d61f37c2e14991",
+  "BATCH_07_DRAFTS.json": "f1a3b9f346b5d08b40ce61a0cf8eb3ce736b82d91bdb8b25be3aa0cdb93dc8ae",
+  "BATCH_SPEC.json": "03943ca52e0edaed38a91ec239dae599e435d0e22788c9bc43414ed6c315e917",
+  "CF88_MACRO_07.entenda.jsonl": "e57679a1033aa5dddd655afb619057e02048ccf1d3e64f0e6697632e08d65480",
+  "EDITORIAL_CHECKS.json": "f3a127eed85706411f64faa0c28f6f9f43f0c1e85610f8d9deb6fb9b4ef35102",
+  "EDITORIAL_REVIEW_INPUT.json": "f61d6cb3c192fe4c8af0729967866684e85ef8398b0b69114335d6469d1db4e6",
+  "JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "80186c0560db12a378e463b932fdc44942dc2df9b09b8335281e77b5f0725368",
+  "MACRO07_A_CHECKPOINT.json": "8618622ae9769e609242aef8db038d33c4ef3b89b16aa1df58ac021633b37410",
+  "MACRO07_COMPACT_AB_REVIEW.md": "0a841ef5acded8db45d0db746607dca1a40d8df2a8bf8379c4485902f1692128",
+  "MACRO07_FULL_D_REVIEW.md": "02aa1c91d8b2eeb198c024cbf21f49a61abbdd3a15dd44d8d4592efbb14135d1",
+  "MACRO07_HARD_FAIL_REPORT.md": "4a21dacd0e32fb47abeba4249aa19e2538666363705a1d383c801fc6b2224de7",
+  "MACRO07_HUMAN_REVIEW_PRIORITY.md": "5f8c5274ae5fa275f7e7c41bf22a5e86a4a12674f409b532b107c4e666c2514c",
+  "MACRO07_QUICK_C_REVIEW.md": "7d9cd921ba433bb80af942bc2bb76993429804c436316468e8d7cc5a06e85194",
+  "MACRO07_SCALE_REPORT.md": "b2f095e2862a41e3741be23987cf05f9f9c71648a46822ebd611206c0b58f7ea",
+  "MACRO07_TRIAGE.json": "2dee43ad8b7b9d404755c142f8e75d8f131d4f566642847a4495366634e07abb",
+  "MICRO_ADJUSTMENTS_LOG.json": "01e56b7bbc75485d6b22826fe0a45e86a990337501dc12e621e562de1c15f88a",
+  "REVIEW_MACRO07.md": "171832d1724fac2e1b068fa5f458ad37965b68736c9c8dde80eb0eb9efbd4178",
+  "REVIEW_MACRO07_RISK_TRIAGE.md": "77c95877412f996ce58ba9bfbd0e4b1394ba0dab14384b209f8858ae9b4afa8d",
+  "SELECTION_REPORT.json": "4d81c6f738272ef288d30df33b56cc19f245e19ffca0e95d7444c6cb3d1938fc",
+  "index/ENTENDA_BUILD_MANIFEST.json": "1f1542480e4e3cefd954ad85a49732990d04beca72908cdc4036781c5f71dc98",
+  "index/ENTENDA_LOOKUP.IDX": "3a9814bd422bf608f7c6ba0078b8692405fbc07bfba4b2ff6657b2dfbfc8fe57",
+  "index/ENTENDA_PAYLOAD.DAT": "b3096bf178362c59d73f7a66e7ca5ee0538098e52a2cf246ae50bdfff685a00f"
+ }
+}

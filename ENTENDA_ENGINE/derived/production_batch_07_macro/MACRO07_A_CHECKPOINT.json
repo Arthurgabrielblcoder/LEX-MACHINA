@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "MACRO_07_A",
+ "articles_range": "76-100",
+ "stats": {
+  "articles": 25,
+  "targets_evaluated": 263,
+  "targets_current": 260,
+  "select": 55,
+  "skip": 205,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 3
+  },
+  "new_explanations": 55,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 15,
+   "DEVICE": 5,
+   "ITEM": 10,
+   "OVERVIEW": 25
+  },
+  "legal_risk": {
+   "LOW": 31,
+   "MEDIUM": 16,
+   "HIGH": 8
+  },
+  "verification_complexity": {
+   "SIMPLE": 2,
+   "STRUCTURED": 34,
+   "EXTERNAL": 19
+  },
+  "queues": {
+   "A_CLEAN_LOW": 31,
+   "B_CLEAN_MEDIUM": 16,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 8,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {
+   "CONTEXT_ONLY": 7,
+   "NONE": 46,
+   "REQUIRED_FOR_CORRECTNESS": 2
+  }
+ },
+ "critic": {
+  "corrections": 74,
+  "by_category": {
+   "CONDICAO_FORA_DO_TEXTO": 4,
+   "CONTRATO_DO_MOTOR": 2,
+   "COPIA_DA_LEI_SECA": 18,
+   "DEPENDENCIA_EXTERNA_SEM_PROVENIENCIA": 2,
+   "EXCECAO_FORA_DO_TEXTO": 1,
+   "FATO_EXTERNO": 1,
+   "FRASE_LONGA": 1,
+   "GENERALIZACAO": 12,
+   "GLOSSARIO": 4,
+   "HISTORICO_NAO_VERIFICADO": 1,
+   "INTERPRETACAO_COMO_REGRA": 3,
+   "JURISPRUDENCIA_VELADA": 1,
+   "LISTA_INCOMPLETA": 5,
+   "NUMERO": 4,
+   "REGRA_INVENTADA": 4,
+   "RESSALVA_OMITIDA": 7,
+   "TELEOLOGIA": 3,
+   "TRANSICAO_NO_NUCLEO": 1
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "status": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 0,
+ "status": "PASS"
+}
