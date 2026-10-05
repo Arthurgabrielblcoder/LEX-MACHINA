@@ -8110,3 +8110,3808 @@ O texto garante restituição quando o fato gerador não se realiza. Se há dire
 
 ---
 
+## CF88:ART.151
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 151 — Limitações ao poder de tributar da União
+
+- **TARGET:** `CF88:ART.151` · `ENTENDA/CF88:ART.151/BASE/1`
+- **DISPLAY TITLE:** Art. 151 — Limitações ao poder de tributar da União
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 2086 bytes · referências 0
+- **Motivo da seleção:** Visao geral: uniformidade geografica, limite a tributacao da renda de titulos e agentes locais e vedacao de isencoes heteronomas.
+
+**O QUE DIZ**
+
+O art. 151 proíbe a União de três condutas. Ela não pode criar tributo sem uniformidade em todo o país, ou que favoreça ou prejudique um Estado, o Distrito Federal ou um Município em relação a outro, admitidos incentivos fiscais para promover o equilíbrio do desenvolvimento entre as regiões. Não pode tributar a renda dos títulos da dívida pública e a remuneração dos agentes públicos estaduais, distritais e municipais em níveis superiores aos que fixar para os seus. E não pode instituir isenções de tributos que pertencem aos Estados, ao Distrito Federal ou aos Municípios.
+
+**O QUE SIGNIFICA**
+
+As três vedações limitam o poder tributário da União em relação aos demais entes.
+
+A uniformidade impede que a União cobre um tributo mais pesado em uma região do que em outra. A exceção expressa são os incentivos para reduzir desigualdades regionais.
+
+O inciso II impede que a União trate os títulos e os servidores dos outros entes de forma mais dura do que trata os seus.
+
+O inciso III impede que a União conceda isenção de tributo que não é seu: só o ente que tem a competência pode isentar.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei federal tenta isentar do imposto municipal sobre serviços certas empresas de tecnologia. A medida contraria o inciso III, porque o imposto pertence aos Municípios.
+
+**ATENÇÃO**
+
+A vedação do inciso III trata de isenção concedida pela União em lei própria. Tratados internacionais e outras situações especiais são temas da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Uniformidade tributária*: exigência de que o tributo federal seja igual em todo o país.
+- *Isenção*: dispensa legal do pagamento de um tributo.
+- *Incentivo fiscal*: redução de tributo para estimular uma atividade ou região.
+
+**CAMADA EXTERNA**
+
+- A concessão de isenções de tributos locais por tratado internacional é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.152
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 152 — Vedação de diferença pela origem ou pelo destino
+
+- **TARGET:** `CF88:ART.152` · `ENTENDA/CF88:ART.152/BASE/1`
+- **DISPLAY TITLE:** Art. 152 — Vedação de diferença pela origem ou pelo destino
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1455 bytes · referências 0
+- **Motivo da seleção:** Visao geral: proibicao de tratamento tributario diferente conforme a procedencia ou o destino de bens e servicos.
+
+**O QUE DIZ**
+
+O art. 152 proíbe os Estados, o Distrito Federal e os Municípios de estabelecer diferença tributária entre bens e serviços, de qualquer natureza, por causa da sua procedência ou do seu destino.
+
+**O QUE SIGNIFICA**
+
+Um Estado não pode cobrar mais imposto sobre um produto só porque ele veio de outro Estado, nem cobrar menos para favorecer o que é produzido dentro do seu território. Da mesma forma, um Município não pode tratar de modo diferente um serviço conforme o lugar para onde ele se destina.
+
+O critério proibido é a origem ou o destino. Diferenças baseadas em outros critérios, previstos na Constituição, não são alcançadas por este artigo.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado aprova lei que cobra alíquota maior sobre vinhos produzidos em outros Estados do que sobre os vinhos locais. A diferença se baseia na procedência e contraria o artigo.
+
+**ATENÇÃO**
+
+As alíquotas interestaduais do imposto estadual sobre circulação de mercadorias seguem regras próprias da Constituição (art. 155, § 2º), que não se confundem com a diferença proibida por este artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Procedência*: lugar de onde o bem ou serviço vem.
+- *Diferença tributária*: tratamento fiscal desigual, como alíquota maior ou menor.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diferença tributária entre bens e serviços de qualquer)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.153
+
+Sem explicação própria: 27 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 153 — Impostos da União
+
+- **TARGET:** `CF88:ART.153` · `ENTENDA/CF88:ART.153/BASE/1`
+- **DISPLAY TITLE:** Art. 153 — Impostos da União
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 280 palavras · 2355 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lista dos impostos federais e mapa dos regimes dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 153 lista os impostos da União: sobre importação; sobre exportação; sobre renda e proventos de qualquer natureza; sobre produtos industrializados; sobre operações de crédito, câmbio, seguro ou com títulos e valores mobiliários; sobre a propriedade territorial rural; sobre grandes fortunas, nos termos de lei complementar; e sobre bens e serviços prejudiciais à saúde ou ao meio ambiente, em sua produção, extração, comercialização ou importação, também nos termos de lei complementar. Os parágrafos trazem, entre outras, regras próprias para vários desses impostos.
+
+**O QUE SIGNIFICA**
+
+O artigo é a lista dos impostos que pertencem à União. Cada um tem um campo próprio, que os outros entes não podem invadir.
+
+Alguns impostos, como os de importação, exportação e operações financeiras, podem ter as alíquotas alteradas pelo Executivo (§ 1º).
+
+O imposto de renda observa, na forma da lei, três critérios: generalidade, universalidade e progressividade (§ 2º).
+
+O imposto sobre grandes fortunas depende de lei complementar para ser instituído. O imposto do inciso VIII, sobre bens e serviços prejudiciais à saúde ou ao meio ambiente, também depende de lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa que importa máquinas paga imposto de importação, federal. Se depois vender produtos que fabricou com essas máquinas, pode pagar também o imposto sobre produtos industrializados, igualmente federal.
+
+**ATENÇÃO**
+
+O inciso VIII foi incluído por emenda recente, e a aplicação no tempo do novo imposto depende de regra de transição do ADCT, na camada externa. O texto prevê o imposto sobre grandes fortunas, mas sua cobrança depende de lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Proventos de qualquer natureza*: acréscimos patrimoniais que não se enquadram como renda do trabalho ou do capital.
+- *Valores mobiliários*: títulos negociados no mercado financeiro, como ações.
+- *Progressividade*: aumento da alíquota conforme cresce a base de cálculo.
+
+**CAMADA EXTERNA**
+
+- Regras de transição da reforma tributária para o imposto do inciso VIII e para o imposto sobre produtos industrializados ficam no ADCT, na camada externa.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bens e serviços prejudiciais à saúde ou ao); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: bens e serviços prejudiciais à saúde ou ao)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 153, § 1º — Alteração de alíquotas pelo Executivo
+
+- **TARGET:** `CF88:ART.153:PAR.1` · `ENTENDA/CF88:ART.153:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 153, § 1º — Alteração de alíquotas pelo Executivo
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1321 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: faculdade do Executivo de alterar aliquotas de quatro impostos federais nos limites da lei.
+
+**O QUE DIZ**
+
+O § 1º faculta ao Poder Executivo alterar as alíquotas dos impostos dos incisos I, II, IV e V, atendidas as condições e os limites estabelecidos em lei.
+
+**O QUE SIGNIFICA**
+
+Em regra, alterar a alíquota de um tributo exige lei (art. 150, I). O parágrafo trata de forma diferente quatro impostos: importação, exportação, produtos industrializados e operações financeiras.
+
+O Executivo pode mudar essas alíquotas por ato próprio, como um decreto, mas apenas dentro das condições e dos limites que a lei fixar.
+
+A lei continua necessária: ela define até onde o Executivo pode ir.
+
+**EXEMPLO PRÁTICO**
+
+O governo federal reduz por decreto a alíquota do imposto de importação de equipamentos médicos, dentro dos limites da lei. Não precisa de nova lei para fazer essa mudança.
+
+**ATENÇÃO**
+
+A faculdade alcança apenas os quatro impostos indicados. Para eles, o art. 150, § 1º, também afasta total ou parcialmente as regras de anterioridade.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Alíquota*: percentual aplicado para calcular o tributo.
+- *Faculdade*: possibilidade de agir, e não obrigação.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as condições e os limites estabelecidos em lei); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Não precisa de nova lei para fazer essa mudança.)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 153, § 3º — Regras do imposto sobre produtos industrializados
+
+- **TARGET:** `CF88:ART.153:PAR.3` · `ENTENDA/CF88:ART.153:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 153, § 3º — Regras do imposto sobre produtos industrializados
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 220 palavras · 1859 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: seletividade, nao cumulatividade, nao incidencia na exportacao e reducao sobre bens de capital.
+
+**O QUE DIZ**
+
+O § 3º dá quatro características ao imposto sobre produtos industrializados: é seletivo, conforme a essencialidade do produto; é não cumulativo, compensando-se o que é devido em cada operação com o que foi cobrado nas anteriores; não incide sobre produtos industrializados destinados ao exterior; e, na forma da lei, tem impacto reduzido quando o contribuinte adquire bens de capital.
+
+**O QUE SIGNIFICA**
+
+O parágrafo dá quatro características ao imposto.
+
+A seletividade faz com que produtos essenciais paguem menos e produtos supérfluos paguem mais. No caso deste imposto, o texto torna a seletividade obrigatória.
+
+A não cumulatividade permite abater o imposto pago nas etapas anteriores da cadeia.
+
+As exportações ficam livres do imposto, e a compra de bens de capital, como máquinas, tem o impacto reduzido.
+
+**EXEMPLO PRÁTICO**
+
+Uma fábrica de móveis compra madeira já tributada pelo imposto. Ao vender os móveis, abate o valor que já foi cobrado na compra da madeira e paga apenas a diferença.
+
+**ATENÇÃO**
+
+A redução do impacto sobre bens de capital depende da lei. A reforma tributária alterou o papel deste imposto, e a aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Seletividade*: variação da alíquota conforme a essencialidade do produto.
+- *Não cumulatividade*: técnica que permite abater o tributo pago nas etapas anteriores.
+- *Bem de capital*: bem usado para produzir outros bens, como máquinas e equipamentos.
+
+**CAMADA EXTERNA**
+
+- As regras de transição da reforma tributária sobre este imposto ficam no ADCT, na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 153, § 4º — Imposto territorial rural
+
+- **TARGET:** `CF88:ART.153:PAR.4` · `ENTENDA/CF88:ART.153:PAR.4/BASE/1`
+- **DISPLAY TITLE:** Art. 153, § 4º — Imposto territorial rural
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1607 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: progressividade contra propriedades improdutivas, imunidade de pequenas glebas e opcao municipal de fiscalizacao e cobranca.
+
+**O QUE DIZ**
+
+O § 4º estabelece que o imposto sobre a propriedade territorial rural será progressivo, com alíquotas fixadas para desestimular a manutenção de propriedades improdutivas. Ele não incidirá sobre pequenas glebas rurais, definidas em lei, quando o proprietário que as explore não tiver outro imóvel. E poderá ser fiscalizado e cobrado pelos Municípios que optarem, na forma da lei, desde que isso não reduza o imposto nem implique renúncia fiscal.
+
+**O QUE SIGNIFICA**
+
+O imposto rural tem uma função ligada ao uso da terra. Quem mantém terra improdutiva paga alíquota maior.
+
+O pequeno proprietário que explora sua pequena gleba e não tem outro imóvel fica livre do imposto.
+
+O imposto é federal, mas os Municípios podem optar por fiscalizá-lo e cobrá-lo. A condição é que não reduzam o imposto nem concedam qualquer forma de renúncia.
+
+**EXEMPLO PRÁTICO**
+
+Uma família de agricultores tem um pequeno sítio, definido em lei como pequena gleba, onde planta e vive, e não possui outro imóvel. Ela não paga o imposto territorial rural.
+
+**ATENÇÃO**
+
+O tamanho da pequena gleba é definido em lei. A opção dos Municípios segue a forma da lei e não pode resultar em redução do imposto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Gleba*: porção de terra rural.
+- *Propriedade improdutiva*: terra que não é explorada de forma adequada.
+- *Renúncia fiscal*: abrir mão de receita tributária.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: incidirá sobre pequenas glebas rurais definidas em lei); TERM_LOW_UTILITY (palavras_dificeis: Gleba)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 153, § 5º — Ouro como ativo financeiro
+
+- **TARGET:** `CF88:ART.153:PAR.5` · `ENTENDA/CF88:ART.153:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 153, § 5º — Ouro como ativo financeiro
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1637 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: incidencia exclusiva do imposto sobre operacoes financeiras, aliquota minima e reparticao da arrecadacao.
+
+**O QUE DIZ**
+
+O § 5º determina que o ouro, quando a lei o definir como ativo financeiro ou instrumento cambial, sofra apenas o imposto do inciso V, devido na operação de origem, com alíquota mínima de um por cento. O montante arrecadado é transferido conforme a origem: trinta por cento ao Estado, ao Distrito Federal ou ao Território, e setenta por cento ao Município.
+
+**O QUE SIGNIFICA**
+
+O ouro pode ser mercadoria ou ativo financeiro. Quando a lei o trata como ativo financeiro, ele sai do campo dos impostos sobre mercadorias e passa a sofrer apenas o imposto sobre operações financeiras.
+
+A cobrança ocorre na operação de origem, isto é, na primeira venda do ouro extraído.
+
+Embora o imposto seja federal, a arrecadação vai quase toda para os entes de onde o ouro saiu: trinta por cento para o Estado e setenta por cento para o Município.
+
+**EXEMPLO PRÁTICO**
+
+Um garimpo regular vende ouro a uma instituição financeira como ativo financeiro. Incide apenas o imposto sobre operações financeiras, e o valor arrecadado é repassado ao Estado e ao Município de onde o ouro foi extraído.
+
+**ATENÇÃO**
+
+A regra só vale quando a lei define o ouro como ativo financeiro ou instrumento cambial. Fora disso, o ouro segue o regime das mercadorias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ativo financeiro*: bem tratado como aplicação ou reserva de valor no mercado financeiro.
+- *Instrumento cambial*: bem usado nas operações de câmbio.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais
+
+- **TARGET:** `CF88:ART.153:PAR.6` · `ENTENDA/CF88:ART.153:PAR.6/BASE/1`
+- **DISPLAY TITLE:** Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 281 palavras · 2144 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: regras do imposto do inciso VIII, criado por emenda recente, com aplicacao no tempo dependente de transicao.
+
+**O QUE DIZ**
+
+O § 6º fixa regras para o imposto do inciso VIII. Ele não incide sobre exportações nem sobre operações com energia elétrica e telecomunicações, incide uma única vez sobre o bem ou serviço e não integra sua própria base de cálculo, embora integre a base dos tributos dos arts. 155, II, 156, III, 156-A e 195, V. Pode ter fato gerador e base de cálculo coincidentes com os de outros tributos e terá alíquotas fixadas em lei ordinária, específicas ou ad valorem. Na extração, é cobrado independentemente da destinação, com alíquota máxima de um por cento do valor de mercado do produto.
+
+**O QUE SIGNIFICA**
+
+O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.
+
+As regras do parágrafo definem como ele funciona: incide uma só vez na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos impostos sobre consumo indicados.
+
+Na extração de recursos naturais, ele é cobrado mesmo que o produto vá para fora do país, mas com teto de um por cento do valor de mercado.
+
+Quais bens e serviços são alcançados é definido em lei complementar (inciso VIII).
+
+**EXEMPLO PRÁTICO**
+
+Se a lei complementar incluir determinado produto prejudicial à saúde entre os bens tributados, o imposto incide uma única vez na cadeia daquele produto, e não a cada revenda.
+
+**ATENÇÃO**
+
+O imposto foi criado por emenda recente. A partir de quando ele é cobrado depende de regra de transição do ADCT e da lei complementar, consultadas na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Incidência única*: cobrança feita uma só vez na cadeia de produção e venda.
+- *Valor de mercado*: preço que o produto alcançaria em uma venda normal.
+- *Ad valorem*: calculado como percentual sobre um valor.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do imposto do inciso VIII e as regras de transição da reforma tributária ficam na camada externa.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 155 ii 156 iii 156 a e 195); TERM_NOT_USED (palavras_dificeis: Incidência única)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.154
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 154 — Competência residual e impostos de guerra
+
+- **TARGET:** `CF88:ART.154` · `ENTENDA/CF88:ART.154/BASE/1`
+- **DISPLAY TITLE:** Art. 154 — Competência residual e impostos de guerra
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1858 bytes · referências 0
+- **Motivo da seleção:** Visao geral: impostos novos por lei complementar e impostos extraordinarios de guerra.
+
+**O QUE DIZ**
+
+O art. 154 permite à União criar, por lei complementar, impostos além dos previstos no art. 153. Esses impostos precisam ser não cumulativos e não podem ter fato gerador ou base de cálculo próprios dos impostos já discriminados na Constituição. Na iminência ou no caso de guerra externa, a União também pode instituir impostos extraordinários, compreendidos ou não em sua competência tributária. Eles serão suprimidos gradativamente quando cessarem as causas da criação.
+
+**O QUE SIGNIFICA**
+
+A lista de impostos federais do art. 153 não é totalmente fechada. A União tem uma competência residual: pode criar impostos novos, mas com três condições: lei complementar, não cumulatividade e campo próprio, sem repetir o fato gerador ou a base de impostos já previstos.
+
+O inciso II trata de situação excepcional. Em caso de guerra externa ou de sua iminência, a União pode criar impostos extraordinários, até sobre fatos que seriam da competência de outros entes. Esses impostos são temporários e devem ser retirados aos poucos quando a causa terminar.
+
+**EXEMPLO PRÁTICO**
+
+Diante de ameaça concreta de guerra externa, a União cria um imposto extraordinário sobre determinada operação. Terminado o conflito, o imposto é reduzido gradualmente até ser extinto.
+
+**ATENÇÃO**
+
+Os impostos extraordinários de guerra não seguem as regras de anterioridade (art. 150, § 1º). A competência residual exige lei complementar e as condições do inciso I.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Competência residual*: poder de criar impostos além dos expressamente listados.
+- *Imposto extraordinário*: imposto temporário criado por causa de guerra.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: extraordinários compreendidos ou não em sua competência trib)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.155
+
+Sem explicação própria: 61 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 155 — Impostos dos Estados e do Distrito Federal
+
+- **TARGET:** `CF88:ART.155` · `ENTENDA/CF88:ART.155/BASE/1`
+- **DISPLAY TITLE:** Art. 155 — Impostos dos Estados e do Distrito Federal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 246 palavras · 2012 bytes · referências 0
+- **Motivo da seleção:** Visao geral: os tres impostos estaduais e mapa dos regimes dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 155 reserva aos Estados e ao Distrito Federal três impostos: sobre a transmissão de bens ou direitos por morte ou por doação; sobre a circulação de mercadorias e as prestações de serviços de transporte entre Estados e entre Municípios e de comunicação, mesmo quando iniciadas no exterior; e sobre a propriedade de veículos automotores, exceto os veículos indicados no § 6º. Os parágrafos trazem, entre outras, as regras de cada imposto, com exceções como as do imposto sobre veículos e matérias reservadas à lei complementar.
+
+**O QUE SIGNIFICA**
+
+Os Estados e o Distrito Federal têm três impostos.
+
+O primeiro alcança heranças e doações. O segundo alcança a circulação de mercadorias e certos serviços de transporte e de comunicação. O terceiro alcança a propriedade de veículos.
+
+Cada imposto tem regras detalhadas nos parágrafos: o § 1º trata do imposto sobre heranças e doações; os §§ 2º a 5º, do imposto sobre circulação de mercadorias e serviços; e o § 6º, do imposto sobre veículos.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa herda um apartamento e um carro. Paga ao Estado o imposto sobre a herança. Depois, como dona do carro, paga anualmente o imposto sobre a propriedade do veículo.
+
+**ATENÇÃO**
+
+A reforma tributária prevê a substituição gradual do imposto sobre circulação de mercadorias pelo imposto do art. 156-A. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Causa mortis*: em razão da morte, como na herança.
+- *Circulação de mercadorias*: transferência de mercadorias nas operações de venda.
+- *Veículo automotor*: veículo com motor próprio.
+
+**CAMADA EXTERNA**
+
+- As regras de transição da reforma tributária sobre o imposto de circulação de mercadorias ficam no ADCT, na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, § 1º — Imposto sobre heranças e doações
+
+- **TARGET:** `CF88:ART.155:PAR.1` · `ENTENDA/CF88:ART.155:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 155, § 1º — Imposto sobre heranças e doações
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 291 palavras · 2120 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: Estado competente, casos no exterior, aliquotas maximas, progressividade e nao incidencias.
+
+**O QUE DIZ**
+
+O § 1º estabelece regras para o imposto sobre transmissão causa mortis e doação. Sobre imóveis, cabe ao Estado onde o bem está; sobre bens móveis, títulos e créditos, cabe ao Estado do domicílio do falecido ou do doador. Quando o doador ou o falecido tiver ligação com o exterior, a competência é regulada por lei complementar. As alíquotas máximas são fixadas pelo Senado, e o imposto é progressivo conforme o valor do quinhão, do legado ou da doação. O imposto não incide sobre certas doações à União para projetos socioambientais e a instituições federais de ensino, nem sobre transmissões a instituições sem fins lucrativos de relevância pública e social, nas condições de lei complementar.
+
+**O QUE SIGNIFICA**
+
+O parágrafo resolve qual Estado cobra o imposto. Para imóveis, vale o lugar do bem. Para os demais bens, vale o domicílio de quem morreu ou de quem doou.
+
+Quando há elemento estrangeiro, como bens no exterior, a definição depende de lei complementar.
+
+O Senado fixa o teto das alíquotas, e o imposto precisa ser progressivo: quanto maior o valor recebido, maior a alíquota.
+
+As não incidências dos incisos V e VII protegem certas doações e transmissões a entidades de interesse público.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa domiciliada em São Paulo morre e deixa um imóvel em Minas Gerais e aplicações financeiras. O imposto sobre o imóvel é de Minas Gerais; o imposto sobre as aplicações é de São Paulo.
+
+**ATENÇÃO**
+
+A progressividade e as novas não incidências foram incluídas por emenda recente; a aplicação no tempo segue as regras da camada externa. As condições das não incidências do inciso VII estão em lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *De cujus*: a pessoa falecida cujos bens são transmitidos.
+- *Quinhão*: parte da herança que cabe a cada herdeiro.
+- *Legado*: bem determinado deixado em testamento a alguém.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: valor do quinhão do legado ou da doação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias
+
+- **TARGET:** `CF88:ART.155:PAR.2` · `ENTENDA/CF88:ART.155:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 278 palavras · 2324 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: mapa das regras do imposto estadual sobre circulacao de mercadorias e servicos.
+
+**O QUE DIZ**
+
+O § 2º reúne as regras do imposto sobre circulação de mercadorias e serviços. Entre elas: o imposto é não cumulativo; isenção ou não incidência, salvo disposição em contrário, não gera crédito e anula o crédito anterior; pode ser seletivo; o Senado fixa por resolução as alíquotas interestaduais e de exportação e pode fixar mínimas e máximas internas; as alíquotas internas não podem ser inferiores às interestaduais, salvo deliberação dos Estados. O parágrafo também trata da diferença de alíquotas nas vendas a consumidor final de outro Estado, da incidência na importação, das não incidências, da base de cálculo e das matérias reservadas à lei complementar.
+
+**O QUE SIGNIFICA**
+
+O parágrafo é o estatuto constitucional do principal imposto estadual.
+
+A não cumulatividade permite abater o imposto pago nas etapas anteriores. Mas a isenção quebra essa cadeia: em regra, quem recebe mercadoria isenta não tem crédito a abater.
+
+O Senado tem papel central na fixação das alíquotas interestaduais.
+
+A lei complementar define elementos essenciais, como contribuintes, substituição tributária, local da operação e a forma de os Estados concederem benefícios fiscais por deliberação conjunta.
+
+**EXEMPLO PRÁTICO**
+
+Uma loja compra mercadorias pagando o imposto destacado na nota. Ao revender, calcula o imposto sobre a venda e abate o valor que pagou na compra.
+
+**ATENÇÃO**
+
+A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X) têm explicação própria. A substituição deste imposto pelo do art. 156-A depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Alíquota interestadual*: percentual aplicado quando a mercadoria vai de um Estado para outro.
+- *Resolução do Senado*: ato do Senado com força normativa em matérias de sua competência.
+- *Crédito do imposto*: valor pago nas etapas anteriores que pode ser abatido.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do imposto e as deliberações dos Estados sobre benefícios fiscais ficam na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado
+
+- **TARGET:** `CF88:ART.155:PAR.2:INC.VII` · `ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/1`
+- **DISPLAY TITLE:** Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** `CF88:ART.155:PAR.2:INC.VIII`
+- **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.155`, `CF88:ART.155:PAR.2`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 226 palavras · 2022 bytes · referências 0
+- **Motivo da seleção:** Bloco: reparticao do imposto entre origem e destino nas vendas a consumidor final e responsavel pelo recolhimento da diferenca.
+
+**O QUE DIZ**
+
+O inciso VII determina que, nas vendas de bens e serviços a consumidor final localizado em outro Estado, contribuinte ou não do imposto, se aplique a alíquota interestadual, cabendo ao Estado do destinatário a diferença entre a sua alíquota interna e a interestadual. O inciso VIII atribui o recolhimento dessa diferença ao destinatário, quando ele for contribuinte, e ao remetente, quando não for.
+
+**O QUE SIGNIFICA**
+
+A regra divide o imposto entre o Estado de origem e o Estado de destino.
+
+O Estado de onde sai a mercadoria fica com o imposto calculado pela alíquota interestadual. O Estado onde está o consumidor fica com a diferença até a sua alíquota interna.
+
+Quem paga essa diferença depende do comprador. Se ele é contribuinte do imposto, como uma empresa, paga ele. Se não é, como uma pessoa física, quem paga é o vendedor.
+
+**EXEMPLO PRÁTICO**
+
+Uma loja virtual de um Estado vende uma geladeira a um consumidor de outro Estado. A loja recolhe o imposto ao seu Estado pela alíquota interestadual e também recolhe ao Estado do consumidor a diferença até a alíquota interna dele.
+
+**ATENÇÃO**
+
+A cobrança dessa diferença depende de lei complementar sobre o imposto. A forma e o momento dessa exigência são temas da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Consumidor final*: quem compra para uso próprio, e não para revenda.
+- *Remetente*: quem envia a mercadoria.
+- *Alíquota interna*: percentual aplicado nas operações dentro do Estado.
+
+**CAMADA EXTERNA**
+
+- A exigência de lei complementar para a cobrança do diferencial de alíquotas e seus efeitos no tempo são temas da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); TERM_LOW_UTILITY (palavras_dificeis: Remetente)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, § 2º, inciso X — Não incidências do imposto sobre circulação de mercadorias
+
+- **TARGET:** `CF88:ART.155:PAR.2:INC.X` · `ENTENDA/CF88:ART.155:PAR.2:INC.X/BASE/1`
+- **DISPLAY TITLE:** Art. 155, § 2º, inciso X — Não incidências do imposto sobre circulação de mercadorias
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.155`, `CF88:ART.155:PAR.2`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1764 bytes · referências 3
+- **Motivo da seleção:** Item: exportacoes, petroleo e energia para outros Estados, ouro ativo financeiro e radiodifusao gratuita.
+
+**O QUE DIZ**
+
+O inciso X afasta o imposto em quatro casos: nas operações que destinem mercadorias ao exterior e nos serviços a destinatários no exterior, mantido e aproveitado o imposto cobrado nas operações e prestações anteriores; nas operações que destinem a outros Estados petróleo, lubrificantes, combustíveis dele derivados e energia elétrica; no ouro, nas hipóteses do art. 153, § 5º; e na radiodifusão sonora ou de sons e imagens, quando a recepção for livre e gratuita.
+
+**O QUE SIGNIFICA**
+
+O inciso afasta o imposto em quatro situações.
+
+Na exportação, o imposto não incide, e o exportador ainda mantém os créditos das etapas anteriores.
+
+Nas operações interestaduais com petróleo, combustíveis e energia, o imposto não incide na saída; esse ponto se relaciona com as regras especiais do § 2º, XII, h, e do § 4º.
+
+O ouro como ativo financeiro e a rádio e televisão abertas e gratuitas também ficam fora do imposto.
+
+**EXEMPLO PRÁTICO**
+
+Uma fábrica vende tecidos para um comprador no exterior. Não paga o imposto na venda e mantém o crédito do imposto pago na compra dos fios.
+
+**ATENÇÃO**
+
+A alínea b se refere à saída para outros Estados. A incidência única sobre combustíveis definida em lei complementar afasta a alínea b nos casos do § 2º, XII, h.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Manutenção de crédito*: direito de conservar e usar o imposto pago nas etapas anteriores.
+- *Radiodifusão*: transmissão de rádio ou televisão.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, § 3º — Impostos sobre energia, telecomunicações e combustíveis
+
+- **TARGET:** `CF88:ART.155:PAR.3` · `ENTENDA/CF88:ART.155:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 155, § 3º — Impostos sobre energia, telecomunicações e combustíveis
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1711 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: limitacao dos impostos que podem incidir sobre energia, telecomunicacoes, derivados de petroleo, combustiveis e minerais.
+
+**O QUE DIZ**
+
+O § 3º limita os impostos sobre certos setores. Sobre operações com energia elétrica e serviços de telecomunicações, só podem incidir o imposto estadual sobre circulação de mercadorias, os impostos federais de importação e de exportação (art. 153, I e II) e o imposto do art. 156-A. Sobre derivados de petróleo, combustíveis e minerais do País, além desses, admite-se apenas o imposto do art. 153, VIII.
+
+**O QUE SIGNIFICA**
+
+O parágrafo limita os impostos que podem recair sobre esses setores.
+
+Para energia elétrica e telecomunicações, só podem incidir o imposto estadual sobre circulação de mercadorias, os impostos de importação e exportação e o imposto do art. 156-A.
+
+Para derivados de petróleo, combustíveis e minerais, a lista é a mesma, acrescida do imposto do art. 153, VIII.
+
+A limitação vale para impostos. Contribuições não estão abrangidas pela palavra imposto usada no texto.
+
+**EXEMPLO PRÁTICO**
+
+O Município não pode cobrar imposto municipal sobre serviços nas operações de telecomunicações, porque o parágrafo só admite os impostos que lista.
+
+**ATENÇÃO**
+
+A limitação fala em impostos. A incidência de contribuições sobre essas operações e o alcance da expressão operações relativas são temas da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Derivados de petróleo*: produtos obtidos do petróleo, como gasolina e diesel.
+- *Operações relativas*: negócios ligados a determinado bem ou serviço.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: derivados de petróleo combustíveis e minerais do país)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, §§ 4º e 5º — Incidência única sobre combustíveis
+
+- **TARGET:** `CF88:ART.155:PAR.4` · `ENTENDA/CF88:ART.155:PAR.4/BASE/1`
+- **DISPLAY TITLE:** Art. 155, §§ 4º e 5º — Incidência única sobre combustíveis
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.155:PAR.5`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.155`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2114 bytes · referências 0
+- **Motivo da seleção:** Bloco: destino do imposto nas operacoes com combustiveis de incidencia unica e aliquotas definidas pelos Estados.
+
+**O QUE DIZ**
+
+O § 4º regula a incidência única sobre combustíveis e lubrificantes definida em lei complementar (§ 2º, XII, h). Nos derivados de petróleo, o imposto cabe ao Estado do consumo. Nas operações interestaduais com gás natural e outros combustíveis, entre contribuintes, o imposto é repartido entre origem e destino na mesma proporção das demais mercadorias; quando destinadas a não contribuinte, cabe ao Estado de origem. As alíquotas são definidas por deliberação dos Estados e do Distrito Federal, uniformes no país, podendo variar por produto, ser específicas ou ad valorem e ser reduzidas e restabelecidas sem a anterioridade do exercício. O § 5º atribui à mesma deliberação as regras de aplicação.
+
+**O QUE SIGNIFICA**
+
+Os combustíveis têm um regime especial: o imposto é cobrado uma única vez na cadeia.
+
+O parágrafo define qual Estado fica com o imposto em cada caso. Para combustíveis derivados de petróleo, prevalece o Estado onde ocorre o consumo.
+
+As alíquotas não são fixadas por cada Estado isoladamente. Elas resultam de deliberação conjunta dos Estados e do Distrito Federal e são iguais em todo o país.
+
+A redução e o restabelecimento das alíquotas não precisam esperar o exercício seguinte.
+
+**EXEMPLO PRÁTICO**
+
+O óleo diesel é tributado uma única vez, com alíquota igual em todo o país, definida em deliberação conjunta dos Estados. O imposto fica com o Estado onde o diesel é consumido.
+
+**ATENÇÃO**
+
+O regime depende da lei complementar que define os combustíveis de incidência única. A aplicação das deliberações dos Estados é tema da camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Incidência única*: cobrança do imposto uma única vez em toda a cadeia.
+- *Deliberação dos Estados*: decisão conjunta dos Estados e do Distrito Federal sobre o imposto.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 155, § 6º — Imposto sobre a propriedade de veículos
+
+- **TARGET:** `CF88:ART.155:PAR.6` · `ENTENDA/CF88:ART.155:PAR.6/BASE/1`
+- **DISPLAY TITLE:** Art. 155, § 6º — Imposto sobre a propriedade de veículos
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 260 palavras · 2223 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: aliquotas minimas, aliquotas diferenciadas, veiculos alcancados e excecoes.
+
+**O QUE DIZ**
+
+O § 6º estabelece que o imposto sobre a propriedade de veículos automotores terá alíquotas mínimas fixadas pelo Senado e poderá ter alíquotas diferenciadas conforme o tipo, o valor, a utilização e o impacto ambiental. Ele incide sobre veículos terrestres, aquáticos e aéreos. Ficam excetuados aeronaves agrícolas e de serviços aéreos a terceiros, embarcações de transporte aquaviário e de pesca, plataformas móveis e embarcações de exploração econômica em águas brasileiras e tratores e máquinas agrícolas. Também ficam excetuados os veículos terrestres de passageiros, caminhonetes e mistos com vinte anos ou mais de fabricação, mas não os micro-ônibus, ônibus, reboques e semirreboques.
+
+**O QUE SIGNIFICA**
+
+O imposto sobre veículos alcança, além dos carros, também embarcações e aeronaves.
+
+O Senado fixa as alíquotas mínimas, e os Estados podem diferenciar as alíquotas pelo tipo, valor, uso e impacto ambiental do veículo.
+
+Vários veículos ficam excetuados por estarem ligados a atividades econômicas específicas, como a agricultura, a pesca e o transporte aquaviário. Também ficam fora os veículos de passageiros antigos, com vinte anos ou mais; ônibus, micro-ônibus e reboques continuam alcançados mesmo quando antigos.
+
+**EXEMPLO PRÁTICO**
+
+Um proprietário de lancha de passeio passa a pagar o imposto sobre ela. Já um pescador artesanal com embarcação de pesca fica fora da incidência.
+
+**ATENÇÃO**
+
+A inclusão de veículos aquáticos e aéreos e as exceções foram trazidas por emenda recente. A aplicação no tempo depende de regra de transição e da legislação de cada Estado, consultadas na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Veículo automotor*: veículo com motor próprio.
+- *Embarcação*: veículo que navega na água.
+- *Veículo misto*: veículo que transporta ao mesmo tempo passageiros e carga.
+
+**CAMADA EXTERNA**
+
+- Regras de transição da emenda que ampliou o imposto e a legislação estadual ficam na camada externa.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: veículos terrestres de passageiros caminhonetes e mistos com)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.156
+
+Sem explicação própria: 13 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 156 — Impostos dos Municípios
+
+- **TARGET:** `CF88:ART.156` · `ENTENDA/CF88:ART.156/BASE/1`
+- **DISPLAY TITLE:** Art. 156 — Impostos dos Municípios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 239 palavras · 1871 bytes · referências 0
+- **Motivo da seleção:** Visao geral: os tres impostos municipais e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 156 dá aos Municípios três impostos: sobre a propriedade predial e territorial urbana; sobre a transmissão onerosa de imóveis entre vivos e de direitos reais sobre eles, exceto os de garantia, incluída a cessão de direitos à aquisição; e sobre serviços de qualquer natureza que a lei complementar definir, desde que fora do campo do imposto estadual do art. 155, II. Os parágrafos trazem as regras de cada um desses impostos.
+
+**O QUE SIGNIFICA**
+
+Os Municípios têm três impostos próprios.
+
+O primeiro alcança a propriedade de imóveis urbanos. O segundo alcança a compra e venda e outras transmissões onerosas de imóveis, mas não as doações nem as heranças, que são do Estado. O terceiro alcança os serviços, salvo os de transporte interestadual e intermunicipal e de comunicação, que ficam com o Estado.
+
+A lista dos serviços tributáveis é definida em lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa compra um apartamento na cidade. Paga ao Município o imposto sobre a transmissão do imóvel e, a partir daí, o imposto anual sobre a propriedade urbana.
+
+**ATENÇÃO**
+
+A reforma tributária prevê a substituição gradual do imposto sobre serviços pelo imposto do art. 156-A. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Inter vivos*: entre pessoas vivas, em oposição à herança.
+- *Ato oneroso*: negócio em que há contraprestação, como a compra e venda.
+- *Direito real de garantia*: direito sobre um bem que assegura o pagamento de uma dívida, como a hipoteca.
+
+**CAMADA EXTERNA**
+
+- As regras de transição da reforma tributária sobre o imposto sobre serviços ficam no ADCT, na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana
+
+- **TARGET:** `CF88:ART.156:PAR.1` · `ENTENDA/CF88:ART.156:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.156:PAR.1-A`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.156`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 249 palavras · 1922 bytes · referências 0
+- **Motivo da seleção:** Bloco: progressividade, aliquotas por localizacao e uso, atualizacao da base pelo Executivo e nao incidencia sobre templos.
+
+**O QUE DIZ**
+
+O § 1º permite que o imposto sobre a propriedade predial e territorial urbana seja progressivo conforme o valor do imóvel, tenha alíquotas diferentes conforme a localização e o uso e tenha a base de cálculo atualizada pelo Executivo, segundo critérios de lei municipal. Isso não prejudica a progressividade no tempo do art. 182, § 4º, II. O § 1º-A afasta o imposto sobre templos de qualquer culto, ainda que a entidade religiosa seja apenas locatária do imóvel.
+
+**O QUE SIGNIFICA**
+
+O imposto sobre imóveis urbanos pode variar de três formas.
+
+Pelo valor: imóveis mais caros podem pagar alíquota maior. Pela localização e pelo uso: um imóvel comercial pode ter alíquota diferente de um residencial. E a base de cálculo pode ser atualizada pelo Executivo, desde que siga critérios fixados em lei municipal.
+
+Há ainda a progressividade no tempo do art. 182, que pune o imóvel urbano não aproveitado.
+
+O § 1º-A deixa claro que o templo não paga o imposto mesmo quando funciona em imóvel alugado.
+
+**EXEMPLO PRÁTICO**
+
+Uma igreja aluga uma sala comercial para realizar seus cultos. O imposto sobre a propriedade urbana não incide sobre esse imóvel, embora a igreja não seja a dona.
+
+**ATENÇÃO**
+
+A atualização da base de cálculo pelo Executivo depende de critérios definidos em lei municipal. O texto usa poderá: as variações são possibilidades dadas ao Município.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Progressividade no tempo*: aumento da alíquota ano a ano para imóvel urbano não aproveitado.
+- *Base de cálculo*: valor sobre o qual se aplica a alíquota.
+- *Locatário*: quem aluga o imóvel de outra pessoa.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156, § 2º — Imposto sobre a transmissão de imóveis
+
+- **TARGET:** `CF88:ART.156:PAR.2` · `ENTENDA/CF88:ART.156:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 156, § 2º — Imposto sobre a transmissão de imóveis
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 2000 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: nao incidencia na integralizacao de capital e reorganizacoes societarias, com ressalva, e Municipio competente.
+
+**O QUE DIZ**
+
+O § 2º estabelece que o imposto sobre a transmissão onerosa de imóveis não incide quando bens ou direitos são incorporados ao patrimônio de pessoa jurídica para formar o capital, nem nas transmissões decorrentes de fusão, incorporação, cisão ou extinção de pessoa jurídica. A ressalva vale quando o adquirente tem como atividade preponderante a compra e venda desses bens ou direitos, fazer locação de bens imóveis ou arrendamento mercantil. O imposto cabe ao Município onde o bem está situado.
+
+**O QUE SIGNIFICA**
+
+Quando alguém transfere um imóvel para uma empresa como forma de formar o capital dela, ou quando empresas se reorganizam, em regra não há o imposto municipal sobre a transmissão.
+
+A exceção atinge as empresas cuja atividade principal é negociar imóveis: compra e venda, aluguel ou arrendamento mercantil. Nesses casos, o imposto incide.
+
+O imposto pertence ao Município onde o imóvel está.
+
+**EXEMPLO PRÁTICO**
+
+Dois sócios criam uma empresa de engenharia e entregam um terreno como parte do capital. Não há o imposto sobre a transmissão. Se a empresa tivesse como atividade principal a venda de imóveis, o imposto seria devido.
+
+**ATENÇÃO**
+
+O alcance da não incidência quando o valor do imóvel supera o capital integralizado não deve ser deduzido apenas do texto; é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Realização de capital*: entrega de bens ou dinheiro pelos sócios para formar o capital da empresa.
+- *Cisão*: divisão de uma empresa em outras.
+- *Arrendamento mercantil*: contrato de uso de bem com opção de compra, conhecido como leasing.
+
+**CAMADA EXTERNA**
+
+- A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a compra e venda desses bens ou direitos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156, § 3º — Lei complementar do imposto sobre serviços
+
+- **TARGET:** `CF88:ART.156:PAR.3` · `ENTENDA/CF88:ART.156:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 156, § 3º — Lei complementar do imposto sobre serviços
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1402 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: aliquotas maxima e minima, exportacao e beneficios fiscais do ISS por lei complementar.
+
+**O QUE DIZ**
+
+O § 3º atribui à lei complementar, quanto ao imposto sobre serviços, fixar as alíquotas máximas e mínimas, excluir da incidência as exportações de serviços para o exterior e regular a forma e as condições de concessão e revogação de isenções, incentivos e benefícios fiscais.
+
+**O QUE SIGNIFICA**
+
+Cada Município cria seu imposto sobre serviços, mas a lei complementar nacional define limites comuns.
+
+A lei complementar fixa alíquotas mínima e máxima que valem para os Municípios em geral e pode afastar o imposto das exportações de serviços.
+
+A concessão de benefícios fiscais segue regras gerais definidas na lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer atrair empresas cobrando alíquota abaixo do mínimo nacional. Não pode, porque a lei complementar fixa a alíquota mínima.
+
+**ATENÇÃO**
+
+O imposto sobre serviços será gradualmente substituído pelo do art. 156-A, e a aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Alíquota mínima*: menor percentual que pode ser cobrado.
+- *Benefício fiscal*: vantagem concedida no pagamento de tributo, como isenção ou redução.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.156-A
+
+Sem explicação própria: 58 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 156-A — Imposto sobre bens e serviços
+
+- **TARGET:** `CF88:ART.156-A` · `ENTENDA/CF88:ART.156-A/BASE/1`
+- **DISPLAY TITLE:** Art. 156-A — Imposto sobre bens e serviços
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 300 palavras · 2323 bytes · referências 0
+- **Motivo da seleção:** Visao geral: imposto de competencia compartilhada criado pela reforma tributaria e mapa dos paragrafos; aplicacao no tempo depende de transicao.
+
+**O QUE DIZ**
+
+O art. 156-A determina que lei complementar crie um imposto sobre bens e serviços, com as exceções e os regimes previstos na própria Constituição, cuja competência é dividida entre Estados, Distrito Federal e Municípios. Os parágrafos tratam, entre outros temas, dos princípios e características do imposto, inclusive suas exceções, do sujeito passivo, da distribuição da arrecadação pelo Comitê Gestor, das matérias da lei complementar. Também tratam dos regimes específicos, dos efeitos da isenção e da imunidade, da alíquota de referência e da devolução do imposto a pessoas físicas.
+
+**O QUE SIGNIFICA**
+
+O imposto sobre bens e serviços é um tributo novo criado pela reforma tributária. Ele não pertence a um único ente: Estados, Distrito Federal e Municípios dividem a competência.
+
+O texto desenha um imposto amplo sobre o consumo, com a mesma legislação em todo o país e cobrança no destino, isto é, no lugar onde o bem ou o serviço é consumido.
+
+Cada ente fixa sua própria alíquota por lei específica, e o imposto devido é a soma das alíquotas do Estado e do Município de destino.
+
+A arrecadação é administrada de forma integrada pelo Comitê Gestor (art. 156-B).
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa em um Município compra um eletrodoméstico de uma loja de outro Estado. O imposto é calculado pelas alíquotas do Estado e do Município onde mora o comprador.
+
+**ATENÇÃO**
+
+O imposto foi criado por emenda recente. A partir de quando ele é cobrado e como convive com os impostos que substitui dependem de regra de transição do ADCT e da lei complementar, consultadas na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Competência compartilhada*: poder de tributar exercido em conjunto por mais de um ente.
+- *Princípio do destino*: regra pela qual o imposto vai para o lugar onde o bem ou serviço é consumido.
+- *Comitê Gestor*: órgão que administra o imposto em nome dos Estados e Municípios.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do imposto e as regras de transição da reforma tributária (ADCT) ficam na camada externa: EXTERNAL_VERIFICATION_REQUIRED para a fase de aplicação vigente.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: alíquotas do estado e do município de destino)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços
+
+- **TARGET:** `CF88:ART.156-A:PAR.1` · `ENTENDA/CF88:ART.156-A:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 324 palavras · 2431 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: neutralidade, incidencia ampla, exportacao, legislacao unica, aliquota propria, destino, nao cumulatividade e vedacao de beneficios.
+
+**O QUE DIZ**
+
+O § 1º orienta o imposto pelo princípio da neutralidade e fixa suas características. Entre elas: incide sobre operações com bens materiais ou imateriais, inclusive direitos, e com serviços, também na importação; não incide sobre exportações, e o exportador mantém e aproveita os créditos; tem legislação única e uniforme no país, ressalvada a alíquota própria que cada ente fixa por lei específica; a alíquota de cada ente é a mesma para todas as operações, salvo hipóteses da Constituição; é cobrado pela soma das alíquotas do Estado e do Município de destino; é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar; e não admite incentivos ou regimes favorecidos, salvo nos casos previstos na Constituição.
+
+**O QUE SIGNIFICA**
+
+Em termos gerais, a neutralidade indica que o imposto não deve distorcer as decisões econômicas de pessoas e empresas.
+
+O imposto incide de forma ampla, sobre quase tudo o que é consumido, com regras iguais em todo o país.
+
+A alíquota de cada ente é única para todas as operações, salvo exceções previstas na própria Constituição. E os entes não podem conceder benefícios fiscais por conta própria.
+
+A não cumulatividade é ampla: a empresa abate o imposto cobrado em todas as suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar.
+
+O Senado fixa alíquota de referência, usada quando o ente não fixar a sua.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa compra matéria-prima, energia e serviços de contabilidade. Ela pode abater o imposto cobrado em todas essas compras do imposto devido nas suas vendas.
+
+**ATENÇÃO**
+
+As regras dependem de lei complementar e se aplicam conforme regra de transição do ADCT, consultada na camada externa. As exceções à alíquota única estão previstas em outros dispositivos da Constituição.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Neutralidade*: princípio pelo qual o tributo não deve distorcer as decisões econômicas.
+- *Bem imaterial*: bem sem existência física, como um software ou um direito.
+- *Alíquota de referência*: alíquota fixada pelo Senado e aplicada quando o ente não fixa a sua.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: alíquotas do estado e do município de destino)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços
+
+- **TARGET:** `CF88:ART.156-A:PAR.5` · `ENTENDA/CF88:ART.156-A:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 2158 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: distribuicao da arrecadacao, compensacao, ressarcimento, destino, bens de capital, regimes aduaneiros, processo, devolucao e obrigacoes acessorias.
+
+**O QUE DIZ**
+
+O § 5º lista matérias de que a lei complementar disporá. Entre elas: regras de distribuição da arrecadação; o regime de compensação, que pode condicionar o crédito ao efetivo recolhimento do imposto em certas condições; a forma e o prazo de ressarcimento de créditos acumulados; os critérios de definição do destino da operação; a desoneração da compra de bens de capital; os regimes aduaneiros especiais e zonas de processamento de exportação; o processo administrativo fiscal; a devolução do imposto a pessoas físicas, para reduzir desigualdades de renda; e a simplificação das obrigações acessórias.
+
+**O QUE SIGNIFICA**
+
+Grande parte do funcionamento do novo imposto não está na Constituição, e sim na lei complementar. O parágrafo indica os temas que ela deve tratar.
+
+Dois pontos se destacam. O crédito pode depender de o imposto ter sido efetivamente recolhido na etapa anterior, desde que o adquirente possa recolhê-lo ou que o recolhimento ocorra na liquidação financeira da operação. E a devolução do imposto a pessoas físicas, com o objetivo declarado de reduzir desigualdades de renda, também é definida por lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Uma família de baixa renda recebe de volta parte do imposto pago em suas compras, nos limites e para os beneficiários definidos na lei complementar.
+
+**ATENÇÃO**
+
+O parágrafo indica matérias, mas o conteúdo concreto está na lei complementar, aplicada conforme regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ressarcimento de créditos*: devolução em dinheiro de créditos que o contribuinte não conseguiu usar.
+- *Obrigação acessória*: dever formal, como emitir nota e entregar declarações.
+- *Liquidação financeira*: momento do pagamento da operação.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do imposto sobre bens e serviços fica na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços
+
+- **TARGET:** `CF88:ART.156-A:PAR.6` · `ENTENDA/CF88:ART.156-A:PAR.6/BASE/1`
+- **DISPLAY TITLE:** Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2221 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: setores com regime especifico por lei complementar.
+
+**O QUE DIZ**
+
+O § 6º determina que a lei complementar crie regimes específicos de tributação para combustíveis e lubrificantes com incidência única, com concessão de crédito nas aquisições feitas por sujeito passivo; serviços financeiros, operações com imóveis, planos de saúde e concursos de prognósticos; sociedades cooperativas, em regime optativo; hotelaria, parques de diversão e temáticos, agências de viagem e turismo, bares e restaurantes, aviação regional e atividade esportiva desenvolvida por Sociedade Anônima do Futebol; operações alcançadas por tratados internacionais; e transporte coletivo intermunicipal e interestadual rodoviário, ferroviário e hidroviário de passageiros.
+
+**O QUE SIGNIFICA**
+
+Alguns setores não se encaixam bem nas regras gerais do imposto. Para eles, a lei complementar cria regimes específicos.
+
+Nesses regimes, a lei pode alterar alíquotas, bases de cálculo e regras de crédito e, em certos casos, deixar de aplicar regras gerais do § 1º, como a alíquota única de cada ente ou, em relação aos adquirentes dos bens e serviços, a regra do crédito.
+
+Nos combustíveis, o imposto incide uma única vez, com alíquotas uniformes no país e específicas por unidade de medida.
+
+Para as cooperativas, o regime é opcional e pode afastar o imposto nas operações entre a cooperativa e seus associados.
+
+**EXEMPLO PRÁTICO**
+
+Um banco não segue exatamente a mesma regra de cálculo do comércio: a lei complementar pode prever, para serviços financeiros, que o imposto incida sobre a receita, com alíquota uniforme no país.
+
+**ATENÇÃO**
+
+A lista de setores é a da Constituição; a lei complementar define o regime de cada um. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Regime específico*: conjunto de regras próprias para um setor.
+- *Concurso de prognósticos*: loterias e apostas.
+- *Creditamento*: direito de abater o imposto pago nas etapas anteriores.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: atividade esportiva desenvolvida por sociedade anônima do fu); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: em relação aos adquirentes dos bens e serviços); TERM_LOW_UTILITY (palavras_dificeis: Concurso de prognósticos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação
+
+- **TARGET:** `CF88:ART.156-A:PAR.9` · `ENTENDA/CF88:ART.156-A:PAR.9/BASE/1`
+- **DISPLAY TITLE:** Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.156-A:PAR.10`, `CF88:ART.156-A:PAR.11`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.156-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2155 bytes · referências 0
+- **Motivo da seleção:** Bloco: compensacao de alteracoes federais pela aliquota de referencia, vinculacao opcional dos entes e estimativa de impacto nos projetos.
+
+**O QUE DIZ**
+
+O § 9º trata das mudanças na legislação federal que aumentem ou diminuam a arrecadação do imposto. Elas devem ser compensadas pelo Senado, que eleva ou reduz as alíquotas de referência para preservar a arrecadação dos entes, nos termos de lei complementar, e só entram em vigor quando esse ajuste começar a produzir efeitos. O § 10 permite que Estados, Distrito Federal e Municípios vinculem suas alíquotas à de referência. O § 11 exige estimativa de impacto nas alíquotas de referência para que projeto de lei complementar que altere a arrecadação seja apreciado.
+
+**O QUE SIGNIFICA**
+
+O imposto pertence a Estados e Municípios, mas suas regras gerais estão em lei complementar federal. Pelo bloco, mudanças federais que alterem a receita dos entes vêm acompanhadas de compensação.
+
+Se uma lei federal diminui a arrecadação, por exemplo com nova redução para um setor, o Senado eleva a alíquota de referência para compensar. A mudança só vale quando o ajuste também valer.
+
+Os entes podem optar por vincular a sua alíquota à de referência.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei complementar amplia a redução do imposto para certo produto. Antes de ser apreciado, o projeto precisa vir com estimativa do impacto. Aprovado, o Senado ajusta a alíquota de referência, e a redução só começa a valer junto com esse ajuste.
+
+**ATENÇÃO**
+
+O texto declara a finalidade de preservar a arrecadação das esferas federativas. Os detalhes do ajuste estão na lei complementar e se aplicam conforme regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Alíquota de referência*: alíquota fixada pelo Senado e aplicada quando o ente não fixa a sua.
+- *Estimativa de impacto*: cálculo prévio do efeito de uma medida sobre a arrecadação.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Antes de ser apreciado, o projeto precisa vir com estimativa)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha
+
+- **TARGET:** `CF88:ART.156-A:PAR.13` · `ENTENDA/CF88:ART.156-A:PAR.13/BASE/1`
+- **DISPLAY TITLE:** Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1437 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: devolucao obrigatoria do imposto ao consumidor de baixa renda na energia eletrica e no GLP.
+
+**O QUE DIZ**
+
+O § 13 torna obrigatória a devolução do imposto prevista no § 5º, VIII, quando energia elétrica ou gás liquefeito de petróleo forem fornecidos ao consumidor de baixa renda. A lei complementar pode determinar que a devolução seja calculada e concedida no momento da cobrança.
+
+**O QUE SIGNIFICA**
+
+A devolução do imposto a pessoas físicas é, em geral, regulada por lei complementar. Para dois itens essenciais, o texto vai além e a torna obrigatória: energia elétrica e gás de cozinha fornecidos a consumidores de baixa renda.
+
+A lei complementar pode prever que a devolução ocorra já na conta, no momento da cobrança, em vez de depois.
+
+**EXEMPLO PRÁTICO**
+
+Uma família de baixa renda recebe a conta de luz já com o valor da devolução do imposto descontado, se a lei complementar adotar essa forma.
+
+**ATENÇÃO**
+
+Quem é consumidor de baixa renda e o valor da devolução são definidos na lei complementar. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Gás liquefeito de petróleo*: o gás de cozinha vendido em botijões.
+- *Baixa renda*: condição econômica definida em lei para fins de benefícios.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: seja calculada e concedida no momento da cobrança)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.156-B
+
+Sem explicação própria: 26 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços
+
+- **TARGET:** `CF88:ART.156-B` · `ENTENDA/CF88:ART.156-B/BASE/1`
+- **DISPLAY TITLE:** Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2221 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencias integradas dos entes pelo Comite Gestor, natureza, regras de lei complementar e cooperacao com a Uniao.
+
+**O QUE DIZ**
+
+O art. 156-B determina que Estados, Distrito Federal e Municípios exerçam certas competências sobre o imposto do art. 156-A somente pelo Comitê Gestor do Imposto sobre Bens e Serviços, de forma integrada. São elas: editar regulamento único e uniformizar a interpretação do imposto; arrecadar, compensar e distribuir o produto da arrecadação; e decidir o contencioso administrativo. Os parágrafos tratam, entre outros temas, da natureza do Comitê, da representação paritária dos entes e da alternância na presidência, do financiamento e do controle. Também tratam da atuação das administrações tributárias e procuradorias dos Estados e Municípios, da composição e das deliberações e da cooperação com a administração tributária da União.
+
+**O QUE SIGNIFICA**
+
+Como o imposto é compartilhado, alguém precisa administrá-lo de forma única. Esse papel é do Comitê Gestor.
+
+O Comitê é entidade pública sob regime especial, com independência técnica, administrativa, orçamentária e financeira.
+
+Ele não substitui as administrações tributárias: a fiscalização, o lançamento e a cobrança continuam com cada ente, na forma da lei complementar, sob coordenação do Comitê.
+
+O Comitê também compartilha informações com a administração tributária da União, para harmonizar o imposto e a contribuição federal equivalente.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa tem dúvida sobre como aplicar o imposto. A interpretação é dada pelo regulamento único editado pelo Comitê Gestor, válido em todo o país, e não por cada Estado ou Município separadamente.
+
+**ATENÇÃO**
+
+A composição e as regras de deliberação (§§ 3º e 4º) têm explicação própria. A instalação e o funcionamento do Comitê dependem de lei complementar e de regra de transição do ADCT, consultadas na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Contencioso administrativo*: julgamento de disputas tributárias fora do Judiciário.
+- *Regulamento único*: norma de execução comum a todos os entes.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: comitê gestor do imposto sobre bens e serviços)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 156-B, §§ 3º e 4º — Composição e deliberação do Comitê Gestor
+
+- **TARGET:** `CF88:ART.156-B:PAR.3` · `ENTENDA/CF88:ART.156-B:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 156-B, §§ 3º e 4º — Composição e deliberação do Comitê Gestor
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.156-B:PAR.4`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.156-B`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 2009 bytes · referências 0
+- **Motivo da seleção:** Bloco: composicao paritaria da instancia maxima e quorum de deliberacao.
+
+**O QUE DIZ**
+
+O § 3º compõe a instância máxima de deliberação do Comitê Gestor com vinte e sete membros, um por Estado e um pelo Distrito Federal, e outros vinte e sete que representam o conjunto dos Municípios e do Distrito Federal. Destes, quatorze são eleitos com voto de igual valor para cada Município e treze com votos ponderados pela população. O § 4º considera aprovada a deliberação que obtiver, ao mesmo tempo, a maioria absoluta dos representantes dos Estados e do Distrito Federal, correspondentes a mais de 50% da população do País, e a maioria absoluta dos representantes dos Municípios e do Distrito Federal.
+
+**O QUE SIGNIFICA**
+
+A composição é paritária: metade dos membros representa os Estados, metade os Municípios.
+
+A escolha dos representantes municipais mistura dois critérios: uma parte dá peso igual a cada Município, e outra leva em conta a população.
+
+Para aprovar uma decisão, é preciso maioria nos dois lados ao mesmo tempo. No lado dos Estados, a maioria precisa representar também mais da metade da população do país.
+
+**EXEMPLO PRÁTICO**
+
+Uma proposta de regulamento é aprovada pela maioria absoluta dos representantes dos Municípios. Mesmo assim, só passa se também tiver a maioria absoluta dos representantes dos Estados, e se esses Estados somarem mais de 50% da população do País.
+
+**ATENÇÃO**
+
+As duas maiorias são cumulativas. O Distrito Federal aparece nos dois conjuntos porque acumula competências estaduais e municipais.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Paritário*: dividido em partes iguais entre os grupos.
+- *Voto ponderado*: voto com peso proporcional a um critério, como a população.
+- *Cumulativo*: exigido ao mesmo tempo, somando-se.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o conjunto dos municípios e do distrito federal)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.157
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 157 — Receitas tributárias dos Estados vindas da União
+
+- **TARGET:** `CF88:ART.157` · `ENTENDA/CF88:ART.157/BASE/1`
+- **DISPLAY TITLE:** Art. 157 — Receitas tributárias dos Estados vindas da União
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1536 bytes · referências 0
+- **Motivo da seleção:** Visao geral: imposto de renda retido pelos Estados e parcela do imposto residual.
+
+**O QUE DIZ**
+
+O art. 157 atribui aos Estados e ao Distrito Federal o produto da arrecadação do imposto da União sobre a renda e proventos de qualquer natureza retido na fonte sobre rendimentos que eles, suas autarquias e suas fundações pagarem. Atribui também vinte por cento da arrecadação de imposto que a União criar com base na competência residual do art. 154, I.
+
+**O QUE SIGNIFICA**
+
+O artigo inicia a repartição das receitas tributárias, em que parte do que um ente arrecada pertence a outro.
+
+Quando o Estado paga salários e retém o imposto de renda na fonte, esse valor fica com o próprio Estado, embora o imposto seja federal.
+
+Se a União criar um imposto novo pela competência residual, vinte por cento da arrecadação pertence aos Estados e ao Distrito Federal.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado paga o salário de um professor e retém na fonte o imposto de renda. O valor retido não é repassado à União: pertence ao Estado.
+
+**ATENÇÃO**
+
+O texto fala em rendimentos pagos pelo Estado, por suas autarquias e pelas fundações que instituir e mantiver. O alcance da expressão a qualquer título é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Retenção na fonte*: desconto do imposto feito por quem paga o rendimento.
+- *Competência residual*: poder da União de criar impostos além dos listados (art. 154, I).
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o produto da arrecadação do imposto da união); TERM_NOT_USED (palavras_dificeis: Retenção na fonte)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.158
+
+Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 158 — Receitas tributárias dos Municípios
+
+- **TARGET:** `CF88:ART.158` · `ENTENDA/CF88:ART.158/BASE/1`
+- **DISPLAY TITLE:** Art. 158 — Receitas tributárias dos Municípios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 1964 bytes · referências 0
+- **Motivo da seleção:** Visao geral: receitas de impostos federais e estaduais que pertencem aos Municipios.
+
+**O QUE DIZ**
+
+O art. 158 atribui aos Municípios o imposto de renda retido na fonte sobre rendimentos que eles, suas autarquias e fundações pagarem; cinquenta por cento do imposto territorial rural sobre imóveis neles situados, ou a totalidade se optarem por fiscalizá-lo e cobrá-lo; cinquenta por cento do produto da arrecadação do imposto estadual sobre veículos licenciados em seu território e, quanto a veículos aquáticos e aéreos, de proprietários neles domiciliados; e vinte e cinco por cento do imposto estadual sobre circulação de mercadorias e do imposto do art. 156-A distribuído aos Estados. Os parágrafos fixam critérios para creditar essas parcelas estaduais.
+
+**O QUE SIGNIFICA**
+
+O Município recebe parte de impostos que não são seus.
+
+Da União, fica com o imposto de renda que retém sobre os salários que paga e com parte do imposto territorial rural.
+
+Do Estado, recebe cinquenta por cento do imposto sobre veículos e vinte e cinco por cento do imposto sobre circulação de mercadorias e do novo imposto sobre bens e serviços destinado ao Estado.
+
+Os §§ 1º e 2º definem como essas parcelas estaduais são divididas entre os Municípios.
+
+**EXEMPLO PRÁTICO**
+
+Um morador licencia seu carro em determinado Município e paga o imposto estadual sobre veículos. Metade desse valor pertence ao Município onde o carro foi licenciado.
+
+**ATENÇÃO**
+
+A parcela do imposto territorial rural chega à totalidade quando o Município opta por fiscalizar e cobrar o imposto (art. 153, § 4º, III). As referências ao imposto do art. 156-A seguem regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Licenciamento*: registro anual do veículo no órgão de trânsito.
+- *Retenção na fonte*: desconto do imposto feito por quem paga o rendimento.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cinquenta por cento do produto da arrecadação do); TERM_NOT_USED (palavras_dificeis: Licenciamento); TERM_NOT_USED (palavras_dificeis: Retenção na fonte)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios
+
+- **TARGET:** `CF88:ART.158:PAR.1` · `ENTENDA/CF88:ART.158:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.158:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.158`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2168 bytes · referências 0
+- **Motivo da seleção:** Bloco: criterios de credito das parcelas do imposto de circulacao (§ 1º) e do imposto do art. 156-A (§ 2º).
+
+**O QUE DIZ**
+
+O § 1º determina que a parcela municipal do imposto estadual sobre circulação de mercadorias seja creditada em no mínimo sessenta e cinco por cento conforme o valor adicionado nas operações realizadas em cada território, e em até trinta e cinco por cento conforme lei estadual. Dentro dessa parte, no mínimo dez pontos percentuais seguem indicadores de melhoria da aprendizagem e de equidade. O § 2º determina que a parcela municipal do imposto do art. 156-A seja creditada em oitenta por cento pela população, dez por cento por indicadores de aprendizagem e equidade, cinco por cento por indicadores de preservação ambiental, segundo lei estadual, e cinco por cento em partes iguais entre todos os Municípios do Estado.
+
+**O QUE SIGNIFICA**
+
+Os dois parágrafos dividem entre os Municípios a parte que lhes cabe de dois impostos estaduais.
+
+No imposto sobre circulação de mercadorias, o principal critério é a atividade econômica de cada Município, medida pelo valor adicionado. Uma parte depende de lei estadual e precisa premiar resultados na educação.
+
+No imposto do art. 156-A, o principal critério é a população. Há ainda parcelas ligadas à educação, ao meio ambiente e uma parcela igual para todos.
+
+**EXEMPLO PRÁTICO**
+
+Dois Municípios de mesmo tamanho recebem valores diferentes da parcela do imposto sobre circulação de mercadorias porque um deles tem mais indústrias e comércio, e por isso maior valor adicionado.
+
+**ATENÇÃO**
+
+Os critérios de educação e de meio ambiente são detalhados em lei estadual. A aplicação do § 2º acompanha regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Valor adicionado*: valor gerado pela atividade econômica realizada no território do Município.
+- *Equidade*: redução de desigualdades entre os alunos.
+- *Ponto percentual*: unidade usada para medir parte de um percentual.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.159
+
+Sem explicação própria: 13 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 159 — Entregas da União aos Estados e Municípios
+
+- **TARGET:** `CF88:ART.159` · `ENTENDA/CF88:ART.159/BASE/1`
+- **DISPLAY TITLE:** Art. 159 — Entregas da União aos Estados e Municípios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2127 bytes · referências 0
+- **Motivo da seleção:** Visao geral: fundos de participacao, entregas proporcionais as exportacoes e da contribuicao de intervencao sobre combustiveis.
+
+**O QUE DIZ**
+
+O art. 159 determina que a União entregue parte da arrecadação de impostos e contribuições. Do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII, entrega cinquenta por cento a fundos de participação e a programas regionais (inciso I). Do imposto sobre produtos industrializados e do imposto do art. 153, VIII, entrega dez por cento aos Estados, proporcionalmente às suas exportações de produtos industrializados (inciso II). Da contribuição de intervenção do art. 177, § 4º, entrega vinte e nove por cento aos Estados, distribuídos na forma da lei e observadas as destinações daquele parágrafo (inciso III). Os parágrafos tratam, entre outros temas, de exclusões no cálculo, do limite por Estado e dos repasses aos Municípios.
+
+**O QUE SIGNIFICA**
+
+Além das receitas que pertencem diretamente aos Estados e Municípios, a União divide com eles parte do que arrecada.
+
+A principal entrega são os fundos de participação, que distribuem recursos de impostos federais entre Estados e Municípios.
+
+O inciso II distribui recursos conforme as exportações de produtos industrializados de cada Estado. Nenhum Estado pode receber mais de vinte por cento desse montante.
+
+Os Estados repassam aos seus Municípios vinte e cinco por cento do que recebem pelos incisos II e III.
+
+**EXEMPLO PRÁTICO**
+
+Um Município pequeno, com pouca arrecadação própria, recebe a maior parte de seus recursos do Fundo de Participação dos Municípios, formado com parte do imposto de renda e de outros impostos federais.
+
+**ATENÇÃO**
+
+O inciso I tem explicação própria. O imposto de renda que pertence aos Estados e Municípios pelos arts. 157, I, e 158, I, fica fora do cálculo (§ 1º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Fundo de participação*: fundo que distribui recursos de impostos federais entre Estados ou Municípios.
+- *Entrega*: transferência obrigatória de recursos de um ente a outro.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do imposto sobre produtos industrializados e do imposto)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 159, inciso I — Fundos de participação
+
+- **TARGET:** `CF88:ART.159:INC.I` · `ENTENDA/CF88:ART.159:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 159, inciso I — Fundos de participação
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.159`, `CF88:ART.159:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 2073 bytes · referências 0
+- **Motivo da seleção:** Item: distribuicao da metade do IR, do IPI e do imposto seletivo entre fundos e programas regionais.
+
+**O QUE DIZ**
+
+O inciso I determina que a União entregue cinquenta por cento da arrecadação do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII. Entre outras destinações, a maior parte vai, pelas alíneas a e b, ao Fundo de Participação dos Estados e do Distrito Federal e ao Fundo de Participação dos Municípios. Três por cento financiam o setor produtivo das Regiões Norte, Nordeste e Centro-Oeste, por instituições financeiras regionais, ficando assegurada ao semiárido do Nordeste a metade dos recursos da região, na forma da lei. Há ainda parcelas adicionais de um por cento ao Fundo dos Municípios, entregues em julho, setembro e dezembro.
+
+**O QUE SIGNIFICA**
+
+O inciso divide metade da arrecadação de três impostos federais.
+
+Os dois fundos de participação recebem a maior parte e distribuem os recursos entre Estados e Municípios segundo critérios definidos em lei complementar (art. 161, II).
+
+Uma parcela vai para o desenvolvimento das regiões menos favorecidas, por meio de instituições financeiras regionais.
+
+Os Municípios recebem ainda parcelas extras em meses fixos do ano.
+
+**EXEMPLO PRÁTICO**
+
+Em dezembro, além da cota mensal, os Municípios recebem a parcela adicional de um por cento do Fundo de Participação dos Municípios prevista na alínea d.
+
+**ATENÇÃO**
+
+Os percentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar. A inclusão do imposto do art. 153, VIII, segue regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Decêndio*: período de dez dias.
+- *Rateio*: divisão proporcional de um valor.
+- *Semiárido*: região de clima seco, com poucas chuvas.
+
+**CAMADA EXTERNA**
+
+- A lei complementar com os critérios de rateio dos fundos de participação fica na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao fundo de participação dos estados e do); PARENT_REPETITION (*: CF88:ART.159: 0.273); TERM_LOW_UTILITY (palavras_dificeis: Decêndio)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.159-A
+
+Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 159-A — Fundo Nacional de Desenvolvimento Regional
+
+- **TARGET:** `CF88:ART.159-A` · `ENTENDA/CF88:ART.159-A/BASE/1`
+- **DISPLAY TITLE:** Art. 159-A — Fundo Nacional de Desenvolvimento Regional
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 267 palavras · 2092 bytes · referências 0
+- **Motivo da seleção:** Visao geral: finalidade, usos, garantias, prioridade ambiental e criterios de partilha do fundo.
+
+**O QUE DIZ**
+
+O art. 159-A cria o Fundo Nacional de Desenvolvimento Regional, que tem o objetivo declarado de reduzir desigualdades regionais e sociais (art. 3º, III). A União entrega recursos aos Estados e ao Distrito Federal para estudos, projetos e obras de infraestrutura, fomento a atividades produtivas com potencial de gerar emprego e renda e ações de desenvolvimento científico, tecnológico e de inovação. É vedada a retenção dos recursos; os entes priorizam projetos de sustentabilidade ambiental e redução de emissões de carbono e decidem sobre a aplicação. A partilha usa a população, com peso de trinta por cento, e o coeficiente do fundo de participação dos Estados, com peso de setenta por cento, calculados pelo Tribunal de Contas da União.
+
+**O QUE SIGNIFICA**
+
+O fundo foi criado pela reforma tributária para financiar o desenvolvimento dos Estados.
+
+A União entrega os recursos, mas quem decide como aplicá-los são os próprios Estados e o Distrito Federal, dentro das finalidades previstas e com prioridade para projetos ambientais.
+
+A União não pode reter nem restringir o recebimento.
+
+A divisão combina a população de cada Estado e o coeficiente do fundo de participação dos Estados.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado recebe recursos do fundo e decide aplicá-los em uma rodovia e em um centro de pesquisa, dando preferência a projetos com menor emissão de carbono.
+
+**ATENÇÃO**
+
+Os valores do fundo e o cronograma de entrega estão no ADCT e dependem de regra de transição, consultada na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Coeficiente de participação*: índice que define a parte de cada ente na divisão de um fundo.
+- *Subvenção*: auxílio financeiro concedido pelo poder público.
+- *Fomento*: estímulo ou apoio a uma atividade.
+
+**CAMADA EXTERNA**
+
+- Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional estão no ADCT, na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.160
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 160 — Vedação de retenção das receitas repartidas
+
+- **TARGET:** `CF88:ART.160` · `ENTENDA/CF88:ART.160/BASE/1`
+- **DISPLAY TITLE:** Art. 160 — Vedação de retenção das receitas repartidas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1437 bytes · referências 0
+- **Motivo da seleção:** Visao geral: proibicao de reter ou restringir os recursos repartidos e mapa das excecoes.
+
+**O QUE DIZ**
+
+O art. 160 proíbe a retenção ou qualquer restrição à entrega e ao uso dos recursos que a Seção atribui aos Estados, ao Distrito Federal e aos Municípios, incluídos adicionais e acréscimos relativos a impostos. Os parágrafos indicam situações em que a entrega pode ser condicionada e prevêem cláusulas de dedução em contratos e renegociações com a União.
+
+**O QUE SIGNIFICA**
+
+As receitas repartidas pertencem aos Estados e aos Municípios. Por isso, quem arrecada não pode segurar o repasse nem dizer como o dinheiro deve ser gasto.
+
+Os parágrafos trazem situações em que a União e os Estados podem condicionar a entrega, ligadas a créditos que tenham contra o ente e ao cumprimento dos mínimos de saúde.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado discorda da forma como um Município usa os recursos recebidos e decide reter o repasse da parcela do imposto sobre circulação de mercadorias. A retenção é proibida pelo artigo.
+
+**ATENÇÃO**
+
+As hipóteses de condicionamento estão nos §§ 1º e 2º, com explicação própria. Fora delas, vale a proibição.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Retenção*: ato de segurar um valor que deveria ser repassado.
+- *Receita repartida*: parte da arrecadação de um ente que pertence a outro.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a retenção ou qualquer restrição à entrega e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 160, §§ 1º e 2º — Condicionamento e dedução dos repasses
+
+- **TARGET:** `CF88:ART.160:PAR.1` · `ENTENDA/CF88:ART.160:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 160, §§ 1º e 2º — Condicionamento e dedução dos repasses
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.160:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.160`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1767 bytes · referências 0
+- **Motivo da seleção:** Bloco: condicoes que a Uniao e os Estados podem impor e clausulas de deducao nos contratos com a Uniao.
+
+**O QUE DIZ**
+
+O § 1º permite que a União e os Estados condicionem a entrega de recursos ao pagamento de seus créditos, inclusive de suas autarquias, e ao cumprimento dos mínimos de aplicação em saúde do art. 198, § 2º, II e III. O § 2º determina que contratos, acordos, convênios, parcelamentos e renegociações de débitos firmados pela União com os entes contenham cláusulas que autorizem deduzir os valores devidos das cotas dos fundos de participação ou dos precatórios federais.
+
+**O QUE SIGNIFICA**
+
+A proibição de retenção do caput tem dois limites.
+
+O primeiro: se o ente tem dívida com a União ou com o Estado, o repasse pode ficar condicionado ao pagamento. Também pode ficar condicionado ao cumprimento dos percentuais mínimos de gastos com saúde.
+
+O segundo: os contratos e parcelamentos com a União já trazem cláusula que permite descontar o valor devido diretamente dos repasses dos fundos de participação ou dos precatórios federais.
+
+**EXEMPLO PRÁTICO**
+
+Um Município parcela uma dívida com a União. O contrato prevê que, se a parcela não for paga, o valor será descontado da cota do Fundo de Participação dos Municípios.
+
+**ATENÇÃO**
+
+As hipóteses são as do texto: créditos do ente que repassa, mínimos de saúde e cláusulas de dedução em ajustes com a União.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Condicionar*: fazer depender do cumprimento de uma exigência.
+- *Dedução*: desconto de um valor.
+- *Cota*: parte que cabe a cada ente em um fundo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao pagamento de seus créditos inclusive de suas); TERM_LOW_UTILITY (palavras_dificeis: Dedução)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.161
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 161 — Lei complementar da repartição de receitas
+
+- **TARGET:** `CF88:ART.161` · `ENTENDA/CF88:ART.161/BASE/1`
+- **DISPLAY TITLE:** Art. 161 — Lei complementar da repartição de receitas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1759 bytes · referências 0
+- **Motivo da seleção:** Visao geral: materias da lei complementar sobre repartição e calculo das quotas pelo Tribunal de Contas da Uniao.
+
+**O QUE DIZ**
+
+O art. 161 atribui à lei complementar definir valor adicionado para fins do art. 158, § 1º, I; estabelecer normas sobre a entrega dos recursos do art. 159, especialmente os critérios de rateio dos fundos de participação, com o objetivo de promover o equilíbrio socioeconômico entre Estados e entre Municípios; e regular a forma como os beneficiários acompanham o cálculo das quotas e a liberação das participações dos arts. 157, 158 e 159. O parágrafo único atribui ao Tribunal de Contas da União o cálculo das quotas dos fundos de participação.
+
+**O QUE SIGNIFICA**
+
+A Constituição fixa quanto é repartido, mas deixa para a lei complementar os detalhes de como dividir.
+
+Os critérios de rateio dos fundos de participação têm um objetivo declarado no texto: promover o equilíbrio socioeconômico entre os entes.
+
+Os Estados e Municípios beneficiários podem acompanhar o cálculo e a liberação dos valores.
+
+O cálculo das quotas dos fundos é feito por um órgão técnico, o Tribunal de Contas da União.
+
+**EXEMPLO PRÁTICO**
+
+Todo ano, o Tribunal de Contas da União calcula a quota de cada Município no Fundo de Participação dos Municípios, segundo os critérios da lei complementar.
+
+**ATENÇÃO**
+
+Os critérios concretos de rateio estão na lei complementar, e não neste artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Rateio*: divisão proporcional de um valor.
+- *Quota*: parte que cabe a cada ente na divisão.
+
+**CAMADA EXTERNA**
+
+- A lei complementar com os critérios de rateio dos fundos de participação fica na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.162
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 162 — Divulgação da arrecadação e dos repasses
+
+- **TARGET:** `CF88:ART.162` · `ENTENDA/CF88:ART.162/BASE/1`
+- **DISPLAY TITLE:** Art. 162 — Divulgação da arrecadação e dos repasses
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1606 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de publicar mensalmente arrecadacao, recebimentos, repasses e criterios de rateio.
+
+**O QUE DIZ**
+
+O art. 162 obriga a União, os Estados, o Distrito Federal e os Municípios a divulgar dados sobre os tributos até o último dia do mês seguinte ao da arrecadação. Devem ser divulgados o montante de cada tributo arrecadado, os recursos que o ente recebeu, os valores de origem tributária que já entregou ou ainda vai entregar e a expressão numérica dos critérios de rateio. O parágrafo único exige que a União divulgue os dados por Estado e por Município, e os Estados, por Município.
+
+**O QUE SIGNIFICA**
+
+O artigo impõe transparência sobre o dinheiro dos tributos e sua divisão entre os entes.
+
+Cada ente precisa publicar quanto arrecadou, quanto recebeu de outros, quanto entregou e quanto ainda deve entregar, além dos números usados nos critérios de rateio.
+
+O prazo é curto: até o fim do mês seguinte ao da arrecadação.
+
+A divulgação por Estado e por Município permite que cada ente confira o que lhe cabe.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer conferir quanto deveria ter recebido da parcela estadual do imposto sobre veículos. Ele pode consultar os dados divulgados pelo Estado, discriminados por Município.
+
+**ATENÇÃO**
+
+O dever alcança os quatro níveis da Federação. O prazo é o último dia do mês seguinte ao da arrecadação.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Origem tributária*: valores que vêm da arrecadação de tributos.
+- *Discriminado*: separado e detalhado por categoria.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.163
+
+Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 163 — Lei complementar de finanças públicas
+
+- **TARGET:** `CF88:ART.163` · `ENTENDA/CF88:ART.163/BASE/1`
+- **DISPLAY TITLE:** Art. 163 — Lei complementar de finanças públicas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 266 palavras · 2248 bytes · referências 0
+- **Motivo da seleção:** Visao geral: materias reservadas a lei complementar de financas publicas, divida e beneficios tributarios.
+
+**O QUE DIZ**
+
+O art. 163 reserva à lei complementar, entre outras, as seguintes matérias: finanças públicas; dívida pública externa e interna, inclusive das entidades controladas pelo poder público; garantias dadas por entidades públicas; emissão e resgate de títulos da dívida; fiscalização financeira da administração; operações de câmbio de órgãos públicos; compatibilização das funções das instituições oficiais de crédito da União; sustentabilidade da dívida, com indicadores, trajetória, medidas de ajuste e alienação de ativos; e condições e limites para conceder, ampliar ou prorrogar benefícios tributários. O parágrafo único permite que a lei da sustentabilidade da dívida autorize as vedações do art. 167-A.
+
+**O QUE SIGNIFICA**
+
+O artigo abre o capítulo das finanças públicas indicando os temas que exigem lei complementar, aprovada por maioria absoluta.
+
+A lei complementar dá regras gerais à União, aos Estados, ao Distrito Federal e aos Municípios sobre como gastar, como se endividar e como controlar as contas.
+
+Os incisos VIII e IX tratam da sustentabilidade da dívida e dos benefícios tributários: a lei deve definir indicadores, metas de trajetória e medidas de ajuste. E também de limites para conceder benefícios tributários.
+
+**EXEMPLO PRÁTICO**
+
+As regras gerais sobre limites de endividamento e sobre gestão fiscal, válidas para os quatro níveis da Federação, são matéria da lei complementar prevista neste artigo, e não de leis de cada ente.
+
+**ATENÇÃO**
+
+O artigo indica matérias; o conteúdo concreto está nas leis complementares, na camada de legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Finanças públicas*: conjunto de receitas, despesas, dívidas e orçamento do Estado.
+- *Sustentabilidade da dívida*: capacidade de o ente manter a dívida em nível que consiga pagar.
+- *Alienação de ativos*: venda de bens ou participações do poder público.
+
+**CAMADA EXTERNA**
+
+- As leis complementares de finanças públicas e de responsabilidade fiscal ficam na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: compatibilização das funções das instituições oficiais de cr)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.163-A
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 163-A — Dados contábeis e fiscais padronizados
+
+- **TARGET:** `CF88:ART.163-A` · `ENTENDA/CF88:ART.163-A/BASE/1`
+- **DISPLAY TITLE:** Art. 163-A — Dados contábeis e fiscais padronizados
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1560 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de disponibilizar dados contabeis, orcamentarios e fiscais no padrao do orgao central.
+
+**O QUE DIZ**
+
+O art. 163-A determina que a União, os Estados, o Distrito Federal e os Municípios disponibilizem suas informações contábeis, orçamentárias e fiscais conforme periodicidade, formato e sistema definidos pelo órgão central de contabilidade da União. O objetivo declarado é garantir a rastreabilidade, a comparabilidade e a publicidade desses dados, que devem ser divulgados em meio eletrônico de amplo acesso público.
+
+**O QUE SIGNIFICA**
+
+Cada ente produz suas próprias contas, e sem um padrão comum seria difícil compará-las.
+
+O artigo cria esse padrão: o órgão central de contabilidade da União define como, quando e em que sistema os dados devem ser enviados.
+
+O texto declara três objetivos. Rastreabilidade é poder seguir o caminho dos recursos. Comparabilidade é poder comparar entes diferentes. Publicidade é permitir que qualquer pessoa acesse os dados pela internet.
+
+**EXEMPLO PRÁTICO**
+
+Um pesquisador compara os gastos com educação de dois Municípios de Estados diferentes usando os dados que ambos enviaram no mesmo formato ao sistema federal.
+
+**ATENÇÃO**
+
+O padrão é definido por órgão da União, mas o dever de disponibilizar os dados é de cada ente.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Rastreabilidade*: possibilidade de seguir a origem e o destino de um recurso.
+- *Comparabilidade*: possibilidade de comparar dados de diferentes entes.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.164
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 164 — Banco Central e emissão de moeda
+
+- **TARGET:** `CF88:ART.164` · `ENTENDA/CF88:ART.164/BASE/1`
+- **DISPLAY TITLE:** Art. 164 — Banco Central e emissão de moeda
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 1797 bytes · referências 0
+- **Motivo da seleção:** Visao geral: emissao de moeda pelo Banco Central, vedacao de emprestimos ao Tesouro, operacoes com titulos e deposito das disponibilidades.
+
+**O QUE DIZ**
+
+O art. 164 atribui exclusivamente ao Banco Central a competência da União para emitir moeda. O § 1º proíbe o Banco Central de emprestar, direta ou indiretamente, ao Tesouro Nacional ou a qualquer órgão ou entidade que não seja instituição financeira. O § 2º permite que ele compre e venda títulos do Tesouro para regular a oferta de moeda ou a taxa de juros. O § 3º manda depositar as disponibilidades de caixa da União no Banco Central e as dos demais entes e de suas empresas em instituições financeiras oficiais, ressalvados os casos previstos em lei.
+
+**O QUE SIGNIFICA**
+
+Só o Banco Central emite moeda em nome da União.
+
+O § 1º impede que o governo financie seus gastos pedindo dinheiro emprestado ao Banco Central.
+
+O Banco Central pode, porém, negociar títulos do Tesouro no mercado, como forma de controlar a quantidade de moeda e os juros.
+
+O dinheiro em caixa da União fica no Banco Central; o dos Estados, Municípios e de suas empresas, em bancos oficiais, salvo exceções da lei.
+
+**EXEMPLO PRÁTICO**
+
+O Tesouro Nacional precisa de recursos para pagar despesas. Não pode pedir empréstimo ao Banco Central; precisa, por exemplo, vender títulos ao mercado.
+
+**ATENÇÃO**
+
+A proibição do § 1º alcança empréstimos diretos e indiretos. A compra de títulos do Tesouro pelo Banco Central é permitida com o objetivo declarado no § 2º.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Tesouro Nacional*: órgão que administra o caixa e a dívida da União.
+- *Oferta de moeda*: quantidade de dinheiro em circulação na economia.
+- *Disponibilidade de caixa*: dinheiro disponível que o ente ainda não gastou.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a oferta de moeda ou a taxa de); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O Tesouro Nacional precisa de recursos para pagar despesas.); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: precisa, por exemplo, vender títulos ao mercado.)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.164-A
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 164-A — Sustentabilidade da dívida pública
+
+- **TARGET:** `CF88:ART.164-A` · `ENTENDA/CF88:ART.164-A/BASE/1`
+- **DISPLAY TITLE:** Art. 164-A — Sustentabilidade da dívida pública
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1628 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de conduzir a politica fiscal para manter a divida sustentavel.
+
+**O QUE DIZ**
+
+O art. 164-A determina que a União, os Estados, o Distrito Federal e os Municípios conduzam suas políticas fiscais de modo que a dívida pública permaneça em níveis sustentáveis, conforme a lei complementar do art. 163, VIII. O parágrafo único exige que a elaboração e a execução de planos e orçamentos reflitam a compatibilidade dos indicadores fiscais com a sustentabilidade da dívida.
+
+**O QUE SIGNIFICA**
+
+O artigo transforma a sustentabilidade da dívida em dever da União, dos Estados, do Distrito Federal e dos Municípios.
+
+Não basta respeitar limites pontuais: a política fiscal como um todo, isto é, as decisões sobre receitas e despesas, precisa apontar para uma dívida que o ente consiga pagar ao longo do tempo.
+
+Os planos e orçamentos precisam mostrar que os indicadores fiscais são compatíveis com essa meta.
+
+Os critérios concretos estão na lei complementar prevista no art. 163, VIII.
+
+**EXEMPLO PRÁTICO**
+
+Ao elaborar o orçamento anual, um Estado precisa demonstrar que as metas de receita e despesa são compatíveis com a trajetória de dívida definida segundo a lei complementar.
+
+**ATENÇÃO**
+
+O artigo depende da lei complementar para ter critérios concretos. Os indicadores e as medidas de ajuste estão nessa lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Política fiscal*: decisões do governo sobre receitas, despesas e endividamento.
+- *Indicador fiscal*: número que mede a situação das contas públicas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a compatibilidade dos indicadores fiscais com a sustentabili); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao elaborar o orçamento anual, um Estado precisa demonstrar )
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.165
+
+Sem explicação própria: 30 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 165 — Leis orçamentárias
+
+- **TARGET:** `CF88:ART.165` · `ENTENDA/CF88:ART.165/BASE/1`
+- **DISPLAY TITLE:** Art. 165 — Leis orçamentárias
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 283 palavras · 2061 bytes · referências 0
+- **Motivo da seleção:** Visao geral: as tres leis orcamentarias de iniciativa do Executivo e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 165 determina que leis de iniciativa do Poder Executivo estabeleçam o plano plurianual, as diretrizes orçamentárias e os orçamentos anuais. Os parágrafos definem o conteúdo de cada lei, entre outros temas: o plano plurianual com diretrizes, objetivos e metas regionalizados; a lei de diretrizes orçamentárias com metas, prioridades e diretrizes de política fiscal; a lei orçamentária anual com três orçamentos; o relatório bimestral de execução; a proibição de matéria estranha ao orçamento; o dever de executar as programações; e regras sobre limites de despesa e precatórios a partir de 2026.
+
+**O QUE SIGNIFICA**
+
+O orçamento público é organizado em três leis que se encaixam.
+
+O plano plurianual fixa o planejamento de médio prazo. A lei de diretrizes orçamentárias define, a cada ano, as metas e as regras para elaborar o orçamento. A lei orçamentária anual prevê as receitas e fixa as despesas do ano.
+
+As três leis só podem ser propostas pelo Poder Executivo, mas são aprovadas pelo Legislativo.
+
+Os parágrafos detalham o conteúdo de cada uma e criam deveres como a transparência da execução e a obrigação de executar o que foi aprovado.
+
+**EXEMPLO PRÁTICO**
+
+Uma obra de rodovia que dura vários anos aparece no plano plurianual, tem suas prioridades definidas na lei de diretrizes orçamentárias e recebe recursos, ano a ano, na lei orçamentária anual.
+
+**ATENÇÃO**
+
+Os §§ 18 a 22 trazem regras ligadas a exercícios específicos e a emendas recentes, com explicação própria. Várias regras se referem expressamente à União, como indica o § 13.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Plano plurianual*: lei de planejamento das ações do governo para quatro anos.
+- *Lei de diretrizes orçamentárias*: lei anual que define metas e regras para elaborar o orçamento.
+- *Lei orçamentária anual*: lei que prevê as receitas e fixa as despesas do ano.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 165, § 2º — Lei de diretrizes orçamentárias
+
+- **TARGET:** `CF88:ART.165:PAR.2` · `ENTENDA/CF88:ART.165:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 165, § 2º — Lei de diretrizes orçamentárias
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.165`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1573 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: conteudo da lei de diretrizes orcamentarias.
+
+**O QUE DIZ**
+
+O § 2º estabelece que a lei de diretrizes orçamentárias reúne as metas e prioridades da administração pública federal e define as diretrizes de política fiscal e suas metas, de acordo com uma trajetória sustentável da dívida pública. Ela orienta a elaboração da lei orçamentária anual, trata das alterações na legislação tributária e estabelece a política de aplicação das agências financeiras oficiais de fomento.
+
+**O QUE SIGNIFICA**
+
+A lei de diretrizes orçamentárias funciona como uma ponte entre o planejamento de médio prazo e o orçamento de cada ano.
+
+Ela escolhe quais metas e prioridades serão atendidas no ano seguinte e fixa as metas fiscais, que o texto liga a uma trajetória sustentável da dívida.
+
+Também indica as mudanças tributárias que podem afetar a receita e orienta a atuação dos bancos públicos de fomento.
+
+**EXEMPLO PRÁTICO**
+
+A lei de diretrizes orçamentárias fixa a meta de resultado primário do ano seguinte. Com base nela, o Executivo prepara a proposta de orçamento anual.
+
+**ATENÇÃO**
+
+A menção à trajetória sustentável da dívida liga este parágrafo ao art. 163, VIII, e ao art. 164-A.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Política fiscal*: decisões do governo sobre receitas, despesas e endividamento.
+- *Agência financeira oficial de fomento*: banco público que financia o desenvolvimento.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a política de aplicação das agências financeiras oficiais)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 165, § 5º — Os três orçamentos da lei anual
+
+- **TARGET:** `CF88:ART.165:PAR.5` · `ENTENDA/CF88:ART.165:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 165, § 5º — Os três orçamentos da lei anual
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.165`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1750 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: orcamento fiscal, de investimento das estatais e da seguridade social.
+
+**O QUE DIZ**
+
+O § 5º determina que a lei orçamentária anual compreenda três orçamentos. O fiscal abrange os Poderes da União e seus fundos, órgãos e entidades, tanto da administração direta quanto da indireta, inclusive as fundações instituídas e mantidas pelo poder público. O de investimento abrange as empresas em que a União detenha, direta ou indiretamente, a maioria do capital com direito a voto. O da seguridade social abrange as entidades e órgãos a ela vinculados, além dos fundos e fundações instituídos e mantidos pelo poder público.
+
+**O QUE SIGNIFICA**
+
+A lei orçamentária anual não é um orçamento único, mas reúne três peças.
+
+O orçamento fiscal abrange a máquina pública federal em geral.
+
+O orçamento de investimento abrange apenas os investimentos das estatais controladas pela União, e não todas as suas despesas.
+
+O orçamento da seguridade social reúne saúde, previdência e assistência social, separando esses recursos dos demais.
+
+**EXEMPLO PRÁTICO**
+
+A compra de novos equipamentos por uma empresa estatal controlada pela União aparece no orçamento de investimento. O pagamento de aposentadorias do regime geral aparece no orçamento da seguridade social.
+
+**ATENÇÃO**
+
+O orçamento de investimento trata das empresas em que a União tem maioria do capital votante, direta ou indiretamente.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Seguridade social*: conjunto de ações de saúde, previdência e assistência social.
+- *Capital com direito a voto*: parte do capital da empresa que dá poder de decisão.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: e fundações instituídos e mantidos pelo poder público)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 165, § 8º — Exclusividade da lei orçamentária
+
+- **TARGET:** `CF88:ART.165:PAR.8` · `ENTENDA/CF88:ART.165:PAR.8/BASE/1`
+- **DISPLAY TITLE:** Art. 165, § 8º — Exclusividade da lei orçamentária
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.165`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 168 palavras · 1438 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: proibicao de materia estranha ao orcamento e suas excecoes.
+
+**O QUE DIZ**
+
+O § 8º proíbe que a lei orçamentária anual traga dispositivo que não trate de prever a receita e fixar a despesa. A proibição não alcança a autorização para abrir créditos suplementares e para contratar operações de crédito, inclusive por antecipação de receita, conforme a lei.
+
+**O QUE SIGNIFICA**
+
+A lei do orçamento tem conteúdo próprio: prever receitas e fixar despesas. Ela não pode ser usada para aprovar regras sobre outros assuntos, como mudanças em leis de servidores ou em tributos.
+
+O parágrafo admite duas autorizações dentro da própria lei orçamentária: abrir créditos suplementares e contratar operações de crédito, inclusive por antecipação de receita.
+
+**EXEMPLO PRÁTICO**
+
+Durante a votação do orçamento, um parlamentar propõe incluir um artigo que muda as regras de aposentadoria dos servidores. A inclusão é proibida, porque o tema é estranho ao orçamento.
+
+**ATENÇÃO**
+
+As autorizações admitidas são apenas as do texto e seguem os termos da lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crédito suplementar*: autorização para reforçar uma despesa já prevista no orçamento.
+- *Antecipação de receita*: empréstimo de curto prazo para cobrir falta momentânea de caixa.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 165, §§ 10 e 11 — Dever de executar o orçamento
+
+- **TARGET:** `CF88:ART.165:PAR.10` · `ENTENDA/CF88:ART.165:PAR.10/BASE/1`
+- **DISPLAY TITLE:** Art. 165, §§ 10 e 11 — Dever de executar o orçamento
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.165:PAR.11`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.165`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 2148 bytes · referências 0
+- **Motivo da seleção:** Bloco: dever de execucao das programacoes (§ 10) e seus limites (§ 11).
+
+**O QUE DIZ**
+
+O § 10 impõe à administração o dever de executar as programações do orçamento, com os meios e medidas necessários, tendo como propósito declarado a efetiva entrega de bens e serviços à sociedade. O § 11 limita esse dever, nos termos da lei de diretrizes orçamentárias. Ele se subordina ao cumprimento de normas constitucionais e legais que estabeleçam metas fiscais ou limites de despesa e não impede cancelamentos necessários à abertura de créditos adicionais. Também não se aplica a impedimentos técnicos justificados e alcança apenas as despesas primárias discricionárias.
+
+**O QUE SIGNIFICA**
+
+O orçamento não é apenas uma autorização para gastar: a administração tem o dever de executá-lo.
+
+Esse dever, porém, tem limites. Cede diante das metas fiscais e dos tetos de despesa, admite cancelamentos para abrir outros créditos e não se aplica quando há impedimento técnico justificado.
+
+O dever alcança só as despesas primárias discricionárias, isto é, as que dependem de decisão do gestor, e não as obrigatórias, como salários e aposentadorias.
+
+**EXEMPLO PRÁTICO**
+
+O orçamento prevê a construção de uma escola. A administração deve executá-la, salvo se surgir impedimento técnico justificado, como a falta de licença ambiental, ou se a execução contrariar a meta fiscal.
+
+**ATENÇÃO**
+
+Pelo § 13, o dever do § 10 se aplica exclusivamente aos orçamentos fiscal e da seguridade social da União.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Programação orçamentária*: ação prevista no orçamento, com valor e finalidade.
+- *Despesa discricionária*: despesa cuja realização depende de decisão do gestor.
+- *Impedimento técnico*: obstáculo concreto que impede a execução, como falta de projeto ou licença.
+
+**CAMADA EXTERNA**
+
+- A fonte oficial remete o § 11 à Lei n. 14.436, de 2022, na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a efetiva entrega de bens e serviços à); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A administração deve executá-la, salvo se surgir impedimento)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026
+
+- **TARGET:** `CF88:ART.165:PAR.18` · `ENTENDA/CF88:ART.165:PAR.18/BASE/1`
+- **DISPLAY TITLE:** Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.165:PAR.19`, `CF88:ART.165:PAR.20`, `CF88:ART.165:PAR.21`, `CF88:ART.165:PAR.22`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.165`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 312 palavras · 2626 bytes · referências 0
+- **Motivo da seleção:** Bloco: regras com efeito temporal sobre precatorios, limite individualizado do Executivo e meta de resultado primario.
+
+**O QUE DIZ**
+
+Os §§ 18 a 22 tratam das despesas da União com precatórios e requisições de pequeno valor. A partir de 2026, essas despesas ficam fora do limite individualizado do Poder Executivo previsto na lei complementar do art. 6º da Emenda Constitucional nº 126, e o § 19 define como esse limite é calculado. O § 20 afasta a revisão da base de cálculo dos limites. O § 21 determina que, a partir de 2027, essas despesas sejam incorporadas gradualmente à meta de resultado primário, em pelo menos dez por cento por exercício, de forma cumulativa. O § 22 exclui da meta de 2026 o valor que exceder o limite do art. 107-A do Ato das Disposições Constitucionais Transitórias.
+
+**O QUE SIGNIFICA**
+
+O bloco muda temporariamente a forma de contar os precatórios da União nas regras fiscais.
+
+Em vez de disputarem espaço com as demais despesas dentro do limite do Executivo, os precatórios passam a ser tratados à parte a partir de 2026.
+
+Na meta de resultado primário, eles voltam a ser contados aos poucos, a partir de 2027, em parcelas cumulativas de pelo menos dez por cento ao ano.
+
+São regras ligadas a exercícios específicos, que dependem de normas do ADCT e de lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+No orçamento da União de 2027, uma parte das despesas com precatórios entra no cálculo da meta de resultado primário; no ano seguinte, a parte computada aumenta, conforme a incorporação gradual.
+
+**ATENÇÃO**
+
+As regras têm efeito no tempo e dependem de regra de transição do ADCT (art. 107-A) e da lei complementar do art. 6º da Emenda Constitucional nº 126, consultadas na camada externa. A aplicação a cada exercício deve ser conferida com as fontes oficiais.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Resultado primário*: diferença entre receitas e despesas, sem contar os juros da dívida.
+- *Requisição de pequeno valor*: forma de pagamento rápido de condenações judiciais de menor valor.
+- *Limite individualizado*: teto de despesa fixado para cada Poder ou órgão.
+
+**CAMADA EXTERNA**
+
+- Regra de transição e efeitos temporais: art. 107-A do ADCT e lei complementar do art. 6º da Emenda Constitucional nº 126, de 2022: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 107 a do ato das disposições constitucionais transitórias)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.166
+
+Sem explicação própria: 28 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares
+
+- **TARGET:** `CF88:ART.166` · `ENTENDA/CF88:ART.166/BASE/1`
+- **DISPLAY TITLE:** Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 259 palavras · 2196 bytes · referências 0
+- **Motivo da seleção:** Visao geral: apreciacao pelo Congresso, comissao mista, emendas e execucao obrigatoria de emendas.
+
+**O QUE DIZ**
+
+O art. 166 determina que os projetos de lei do plano plurianual, das diretrizes orçamentárias, do orçamento anual e dos créditos adicionais sejam apreciados pelas duas Casas do Congresso, na forma do regimento comum. Os parágrafos tratam, entre outros temas, da comissão mista permanente que dá parecer sobre os projetos e as contas do Presidente, das condições para aprovar emendas. Também tratam da mensagem do Presidente para alterar os projetos, dos recursos que ficam sem despesa e das emendas individuais e de bancada de execução obrigatória.
+
+**O QUE SIGNIFICA**
+
+As leis orçamentárias seguem um caminho próprio no Congresso. Elas passam por uma comissão mista de deputados e senadores, que analisa os projetos e as emendas, e depois são votadas em sessão conjunta.
+
+Os parlamentares podem apresentar emendas, mas com limites: o texto exige compatibilidade com o planejamento e a indicação de onde vem o dinheiro.
+
+Os §§ 9º a 20 criam as emendas individuais e de bancada de execução obrigatória, dentro de limites ligados à receita corrente líquida.
+
+**EXEMPLO PRÁTICO**
+
+Um deputado apresenta emenda ao orçamento para construir um posto de saúde em sua região. A emenda passa pela comissão mista e, se aprovada dentro do limite das emendas individuais, tem execução obrigatória.
+
+**ATENÇÃO**
+
+Vários parágrafos sobre emendas parlamentares têm anotações de controle de constitucionalidade na fonte canônica. O alcance dessas regras não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Comissão mista*: comissão formada por deputados e senadores.
+- *Emenda parlamentar*: proposta de alteração apresentada por parlamentar ao projeto de lei.
+- *Receita corrente líquida*: medida da receita usada como base para limites fiscais.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota parágrafos do art. 166 com controle de constitucionalidade (Vide ADI 7697): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de lei do plano plurianual das diretrizes orçamentárias)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 166, § 3º — Condições para emendar o orçamento
+
+- **TARGET:** `CF88:ART.166:PAR.3` · `ENTENDA/CF88:ART.166:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 166, § 3º — Condições para emendar o orçamento
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.166`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 1841 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: compatibilidade, indicacao de recursos com despesas protegidas e emendas de correcao.
+
+**O QUE DIZ**
+
+O § 3º permite aprovar emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, apenas em três situações. Na primeira, a emenda respeita o plano plurianual e a lei de diretrizes orçamentárias e indica os recursos necessários. Esses recursos só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. Nas outras duas, a emenda corrige erros ou omissões ou se refere aos dispositivos do texto do projeto.
+
+**O QUE SIGNIFICA**
+
+O parlamentar pode mudar o orçamento, mas não pode criar despesa do nada.
+
+Para incluir um gasto, precisa cortar outro. E há despesas que não podem ser cortadas por emenda: pessoal, dívida e repasses constitucionais a Estados e Municípios.
+
+Além disso, a emenda precisa respeitar o plano plurianual e a lei de diretrizes orçamentárias.
+
+Emendas para corrigir erros ou ajustar o texto do projeto também são admitidas.
+
+**EXEMPLO PRÁTICO**
+
+Uma senadora quer incluir verba para uma ponte. Propõe cortar o mesmo valor de uma despesa com publicidade. Ela não poderia cortar, para isso, verba de salários de servidores.
+
+**ATENÇÃO**
+
+Os incisos do texto estão ligados pela conjunção ou; a leitura de quais requisitos são cumulativos deve considerar a redação dos incisos I e II e a camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Dotação*: valor reservado no orçamento para uma despesa.
+- *Serviço da dívida*: pagamento de juros e amortizações da dívida.
+- *Anulação de despesa*: cancelamento de uma despesa prevista para liberar recursos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao projeto de lei do orçamento anual ou)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais
+
+- **TARGET:** `CF88:ART.166:PAR.9` · `ENTENDA/CF88:ART.166:PAR.9/BASE/1`
+- **DISPLAY TITLE:** Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.166:PAR.9-A`, `CF88:ART.166:PAR.10`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.166`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1989 bytes · referências 0
+- **Motivo da seleção:** Bloco: limite das emendas individuais, divisao entre Camara e Senado e destinacao a saude.
+
+**O QUE DIZ**
+
+O § 9º limita a aprovação das emendas individuais ao projeto de lei orçamentária a 2% da receita corrente líquida do exercício anterior ao do envio do projeto, e destina a metade desse percentual a ações e serviços públicos de saúde. O § 9º-A divide esse limite entre as emendas de Deputados e as de Senadores, nos percentuais que indica, com a maior parte para os Deputados. O § 10 determina que o montante destinado à saúde, inclusive custeio, conte para o mínimo de aplicação em saúde do art. 198, § 2º, I, vedado o uso para pagamento de pessoal ou encargos sociais.
+
+**O QUE SIGNIFICA**
+
+As emendas individuais têm um teto ligado à receita da União.
+
+Dentro desse teto, metade vai obrigatoriamente para a saúde. Esse valor conta para o mínimo que a União deve aplicar em saúde, mas não pode ser usado para pagar salários.
+
+O limite é repartido entre deputados e senadores conforme o § 9º-A.
+
+**EXEMPLO PRÁTICO**
+
+Um deputado distribui o valor de suas emendas individuais. Metade precisa ir para ações de saúde, como equipar um hospital; o restante pode ir para outras áreas, dentro do limite.
+
+**ATENÇÃO**
+
+Os parágrafos têm anotação de controle de constitucionalidade na fonte canônica. O alcance atual das regras deve ser conferido na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Emenda individual*: emenda apresentada por um parlamentar ao orçamento.
+- *Custeio*: despesas de manutenção dos serviços.
+- *Receita corrente líquida*: medida da receita usada como base para limites fiscais.
+
+**CAMADA EXTERNA**
+
+- Vide ADI 7697 anotada na fonte canônica para os §§ 9º, 9º-A e 10: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da receita corrente líquida do exercício anterior ao); PARENT_REPETITION (*: CF88:ART.166: 0.212); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Metade precisa ir para ações de saúde, como equipar um hospi)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas
+
+- **TARGET:** `CF88:ART.166:PAR.11` · `ENTENDA/CF88:ART.166:PAR.11/BASE/1`
+- **DISPLAY TITLE:** Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.166:PAR.12`, `CF88:ART.166:PAR.13`, `CF88:ART.166:PAR.18`, `CF88:ART.166:PAR.19`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.166`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2654 bytes · referências 0
+- **Motivo da seleção:** Bloco: execucao obrigatoria de emendas individuais e de bancada, impedimentos tecnicos, reducao proporcional e execucao equitativa.
+
+**O QUE DIZ**
+
+O § 11 torna obrigatória a execução orçamentária e financeira das emendas individuais, até o limite do § 9º, conforme critérios de execução equitativa da lei complementar do art. 165, § 9º. O § 12 estende essa garantia às emendas de bancada estadual ou do Distrito Federal, até 1% da receita corrente líquida do exercício anterior. O § 13 afasta a obrigação nos impedimentos de ordem técnica. O § 18 permite reduzir esses montantes na mesma proporção da limitação das demais despesas discricionárias, quando a meta fiscal estiver ameaçada. O § 19 define como equitativa a execução que segue critérios objetivos e imparciais e atende às emendas de forma igualitária e impessoal, independentemente da autoria.
+
+**O QUE SIGNIFICA**
+
+Para as emendas individuais e de bancada, o texto torna a execução obrigatória, dentro dos limites.
+
+A obrigação tem três limites expressos. Impedimentos técnicos afastam a execução. Se a meta fiscal estiver em risco, os valores podem ser reduzidos na mesma proporção das demais despesas discricionárias. E o texto exige execução equitativa, que atenda às emendas independentemente da autoria.
+
+**EXEMPLO PRÁTICO**
+
+Uma bancada estadual aprova emenda para construir um hospital regional. A execução é obrigatória, salvo impedimento técnico, como a falta de terreno adequado, ou redução proporcional exigida pelo cumprimento da meta fiscal.
+
+**ATENÇÃO**
+
+O regime das emendas impositivas tem anotação de controle de constitucionalidade na fonte canônica. O alcance atual dessas regras depende do resultado desse controle e não deve ser deduzido apenas do texto; a conferência fica na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Emenda de bancada*: emenda apresentada em conjunto pelos parlamentares de um Estado.
+- *Execução equitativa*: execução com critérios iguais para todas as emendas.
+- *Impedimento de ordem técnica*: obstáculo concreto que impede a execução da obra ou serviço.
+
+**CAMADA EXTERNA**
+
+- Vide ADI 7697 anotada na fonte canônica para os §§ 11 a 20 do art. 166: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- A fonte oficial remete o § 13 à Lei n. 14.436, de 2022, na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A execução é obrigatória, salvo impedimento técnico, como a )
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.166-A
+
+Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 166-A — Transferências por emendas individuais
+
+- **TARGET:** `CF88:ART.166-A` · `ENTENDA/CF88:ART.166-A/BASE/1`
+- **DISPLAY TITLE:** Art. 166-A — Transferências por emendas individuais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 299 palavras · 2386 bytes · referências 0
+- **Motivo da seleção:** Visao geral: transferencia especial e transferencia com finalidade definida para entes federativos.
+
+**O QUE DIZ**
+
+O art. 166-A permite que as emendas individuais impositivas ao projeto de lei orçamentária anual destinem recursos a Estados, ao Distrito Federal e a Municípios por transferência especial ou por transferência com finalidade definida. Esses recursos não entram na receita do ente para fins de repartição e dos limites de pessoal e endividamento, e não podem pagar pessoal, encargos sociais, pensionistas ou serviço da dívida. Na transferência especial, o dinheiro é repassado diretamente, sem convênio, pertence ao ente desde o repasse e é aplicado em programações finalísticas do Executivo local, com pelo menos setenta por cento em despesas de capital. Na transferência com finalidade definida, fica vinculado à programação da emenda e às áreas de competência da União.
+
+**O QUE SIGNIFICA**
+
+O artigo cria duas formas de o parlamentar levar recursos de suas emendas a Estados e Municípios.
+
+Na transferência especial, o dinheiro chega direto ao ente, sem convênio, e passa a ser dele. O ente decide a aplicação dentro das áreas de competência do seu Executivo, mas a maior parte deve ir para investimentos.
+
+Na transferência com finalidade definida, o recurso segue vinculado à programação da emenda.
+
+Em ambos os casos, os recursos não podem pagar salários nem a dívida do ente.
+
+**EXEMPLO PRÁTICO**
+
+Um deputado destina, por transferência especial, recursos a um Município. O dinheiro entra no caixa municipal sem convênio, e a prefeitura o aplica, por exemplo, na pavimentação de ruas.
+
+**ATENÇÃO**
+
+O artigo tem anotação de controle de constitucionalidade na fonte canônica. O alcance atual dessas transferências depende do resultado desse controle e não deve ser deduzido apenas do texto; a conferência fica na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Transferência especial*: repasse direto ao ente, sem convênio, que passa a pertencer a ele.
+- *Programação finalística*: ação que entrega bens ou serviços à população.
+- *Despesa de capital*: gasto com investimentos, como obras e equipamentos.
+
+**CAMADA EXTERNA**
+
+- Vide ADI 7697 anotada na fonte canônica para o art. 166-A: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a estados ao distrito federal e a municípios)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167
+
+Sem explicação própria: 18 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167 — Vedações orçamentárias
+
+- **TARGET:** `CF88:ART.167` · `ENTENDA/CF88:ART.167/BASE/1`
+- **DISPLAY TITLE:** Art. 167 — Vedações orçamentárias
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 294 palavras · 2492 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lista de vedacoes que protegem o orcamento e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 167 lista vedações em matéria orçamentária. Entre elas: iniciar programas ou projetos fora da lei orçamentária; realizar despesas acima dos créditos; fazer operações de crédito acima das despesas de capital, ressalvadas as autorizadas por créditos com finalidade precisa aprovados por maioria absoluta; vincular receita de impostos, ressalvadas as exceções do inciso IV; abrir créditos suplementares ou especiais sem autorização e sem indicar recursos; remanejar recursos sem autorização; conceder créditos ilimitados; criar fundos sem autorização; e usar contribuições previdenciárias e recursos de regimes próprios para outras despesas. Os parágrafos tratam de investimentos plurianuais, vigência de créditos, créditos extraordinários, vinculações para garantia, remanejamento em ciência e tecnologia e encargos impostos por lei sem fonte.
+
+**O QUE SIGNIFICA**
+
+O artigo funciona como um conjunto de regras de disciplina do orçamento.
+
+Várias vedações protegem o papel do Legislativo: o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa.
+
+O inciso III traz a chamada regra de ouro: o ente não pode se endividar além do que investe, salvo autorização por maioria absoluta.
+
+O inciso IV impede amarrar a receita de impostos a destinações específicas, com exceções como saúde e educação.
+
+Outros incisos protegem os recursos da previdência, que só podem pagar benefícios.
+
+**EXEMPLO PRÁTICO**
+
+Um governador quer transferir recursos da área de transporte para a de cultura no meio do ano. Sem autorização legislativa prévia, o remanejamento é proibido pelo inciso VI.
+
+**ATENÇÃO**
+
+Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria. A fonte oficial anota o inciso III e o § 3º com remissões a emendas constitucionais sobre períodos de calamidade, a conferir na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crédito orçamentário*: autorização de despesa prevista no orçamento.
+- *Remanejamento*: mudança de recursos de uma programação ou órgão para outro.
+- *Despesa de capital*: gasto com investimentos, como obras e equipamentos.
+
+**CAMADA EXTERNA**
+
+- A fonte oficial remete o inciso III à Emenda Constitucional nº 106, de 2020, e o § 3º à Emenda Constitucional nº 109, de 2021, na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 167, inciso IV — Não vinculação da receita de impostos
+
+- **TARGET:** `CF88:ART.167:INC.IV` · `ENTENDA/CF88:ART.167:INC.IV/BASE/1`
+- **DISPLAY TITLE:** Art. 167, inciso IV — Não vinculação da receita de impostos
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.167`, `CF88:ART.167:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 1957 bytes · referências 1
+- **Motivo da seleção:** Item: proibicao de vincular receita de impostos e suas ressalvas.
+
+**O QUE DIZ**
+
+O inciso IV proíbe vincular a receita de impostos a órgão, fundo ou despesa. Ficam ressalvadas a repartição de impostos prevista nos arts. 158 e 159; a destinação de recursos para a saúde, para a manutenção e o desenvolvimento do ensino e para as atividades da administração tributária, conforme, respectivamente, os arts. 198, § 2º, 212 e 37, XXII; a garantia às operações de crédito por antecipação de receita do art. 165, § 8º; e o § 4º deste artigo.
+
+**O QUE SIGNIFICA**
+
+A receita dos impostos deve ficar livre para que o orçamento decida, a cada ano, onde aplicá-la. Por isso, em regra, uma lei não pode reservar a arrecadação de um imposto para um órgão ou um gasto específico.
+
+As exceções são as que o próprio texto indica: repartição com Estados e Municípios, mínimos de saúde e educação, administração tributária, garantias de antecipação de receita e as vinculações do § 4º para débitos e garantias com a União.
+
+A vedação alcança impostos. Taxas e contribuições não estão abrangidas pela palavra imposto usada no texto.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei estadual determina que dez por cento do imposto sobre veículos vá obrigatoriamente para um fundo de esporte. A vinculação contraria o inciso IV, porque não está entre as exceções.
+
+**ATENÇÃO**
+
+As exceções são as do texto. Outras vinculações constitucionais específicas, previstas em outros dispositivos, devem ser lidas junto com este inciso.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vinculação de receita*: reserva obrigatória de uma receita para determinado destino.
+- *Manutenção e desenvolvimento do ensino*: despesas com educação que contam para o mínimo constitucional.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 158 e 159 a destinação de recursos para)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 167, § 1º — Investimento plurianual sem previsão
+
+- **TARGET:** `CF88:ART.167:PAR.1` · `ENTENDA/CF88:ART.167:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 167, § 1º — Investimento plurianual sem previsão
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1359 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: exigencia de inclusao previa no plano plurianual sob pena de crime de responsabilidade.
+
+**O QUE DIZ**
+
+O § 1º proíbe começar investimento que dure mais de um exercício financeiro se ele não tiver sido incluído antes no plano plurianual ou se não houver lei autorizando essa inclusão. A conduta contrária é crime de responsabilidade.
+
+**O QUE SIGNIFICA**
+
+Obras e investimentos que duram mais de um ano precisam estar no planejamento de médio prazo antes de começar.
+
+Se não estiverem no plano plurianual, só podem ser iniciados se uma lei autorizar a inclusão.
+
+A consequência do descumprimento é grave: o texto qualifica a conduta como crime de responsabilidade.
+
+**EXEMPLO PRÁTICO**
+
+Um prefeito inicia a construção de um hospital que levará três anos, sem que a obra conste do plano plurianual e sem lei autorizando a inclusão. A conduta configura crime de responsabilidade, nos termos da lei.
+
+**ATENÇÃO**
+
+O processo e as penas do crime de responsabilidade são definidos em lei especial, na camada de legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crime de responsabilidade*: infração político-administrativa de autoridades, que pode levar à perda do cargo.
+- *Exercício financeiro*: período anual do orçamento.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 167, § 3º — Crédito extraordinário
+
+- **TARGET:** `CF88:ART.167:PAR.3` · `ENTENDA/CF88:ART.167:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 167, § 3º — Crédito extraordinário
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1570 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: requisitos de imprevisibilidade e urgencia do credito extraordinario.
+
+**O QUE DIZ**
+
+O § 3º só admite crédito extraordinário para despesas que sejam ao mesmo tempo imprevisíveis e urgentes, a exemplo das causadas por guerra, comoção interna ou calamidade pública, observado o art. 62.
+
+**O QUE SIGNIFICA**
+
+O crédito extraordinário é a forma mais rápida de abrir uma despesa nova, porque pode ser feito por medida provisória, conforme o art. 62.
+
+Por isso, o texto o limita a situações excepcionais. A despesa precisa ser ao mesmo tempo imprevisível e urgente. Guerra, comoção interna e calamidade pública são os exemplos dados pelo próprio texto.
+
+Despesas que podiam ser previstas, ou que não são urgentes, devem seguir o caminho dos créditos suplementares ou especiais, com autorização legislativa prévia.
+
+**EXEMPLO PRÁTICO**
+
+Após um grande deslizamento de terra, o governo federal abre crédito extraordinário por medida provisória para socorro às vítimas. A despesa é imprevisível e urgente.
+
+**ATENÇÃO**
+
+A verificação concreta dos requisitos de imprevisibilidade e urgência é tema da camada JURISPRUDÊNCIA. A fonte oficial anota o parágrafo com remissão a emenda constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crédito extraordinário*: autorização de despesa para situações imprevisíveis e urgentes.
+- *Medida provisória*: ato do Presidente com força de lei, editado em caso de relevância e urgência.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: guerra comoção interna ou calamidade pública observado o)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 167, § 7º — Encargo sem fonte de custeio
+
+- **TARGET:** `CF88:ART.167:PAR.7` · `ENTENDA/CF88:ART.167:PAR.7/BASE/1`
+- **DISPLAY TITLE:** Art. 167, § 7º — Encargo sem fonte de custeio
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 195 palavras · 1522 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: proibicao de lei impor encargo de servico publico sem fonte ou transferencia, com ressalvas.
+
+**O QUE DIZ**
+
+O § 7º proíbe que a lei imponha ou transfira encargo financeiro gerado pela prestação de serviço público, inclusive despesas de pessoal, à União, aos Estados, ao Distrito Federal ou aos Municípios sem prever a fonte orçamentária e financeira ou a transferência dos recursos necessários. Ficam ressalvadas as obrigações assumidas espontaneamente pelos entes e as decorrentes da fixação do salário mínimo.
+
+**O QUE SIGNIFICA**
+
+Uma lei não pode criar despesa para outro ente sem dizer de onde virá o dinheiro.
+
+O caso típico é uma lei federal que cria obrigação para Estados ou Municípios, como um piso salarial ou um novo serviço, sem prever a fonte de custeio ou o repasse necessário.
+
+Há duas ressalvas: o que o ente assumir por vontade própria e os efeitos da fixação do salário mínimo.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei federal obriga os Municípios a manter um novo serviço de atendimento, com contratação de pessoal, sem prever repasse ou fonte de recursos. O § 7º proíbe esse tipo de imposição.
+
+**ATENÇÃO**
+
+O alcance da regra sobre pisos salariais nacionais e seus efeitos para os entes é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Encargo financeiro*: obrigação de arcar com uma despesa.
+- *Fonte de custeio*: origem dos recursos que pagarão a despesa.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: prestação de serviço público inclusive despesas de pessoal)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-A
+
+Sem explicação própria: 26 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-A — Mecanismo de ajuste fiscal
+
+- **TARGET:** `CF88:ART.167-A` · `ENTENDA/CF88:ART.167-A/BASE/1`
+- **DISPLAY TITLE:** Art. 167-A — Mecanismo de ajuste fiscal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2183 bytes · referências 0
+- **Motivo da seleção:** Visao geral: gatilho de 95% da relacao despesa corrente e receita corrente, vedacoes e efeitos.
+
+**O QUE DIZ**
+
+O art. 167-A trata da situação em que, a relação entre despesas correntes e receitas correntes, medida em doze meses, passa de 95% nos Estados, no Distrito Federal e nos Municípios. Nesse caso, os Poderes Executivo, Legislativo e Judiciário, o Ministério Público, o Tribunal de Contas e a Defensoria Pública do ente podem aplicar um mecanismo de ajuste fiscal, enquanto durar a situação. O mecanismo veda, entre outras medidas, aumentos e vantagens para servidores e membros de Poder, criação de cargos, admissões, concursos, criação de despesa obrigatória e concessão de benefícios tributários, com as exceções indicadas. Os parágrafos tratam do acionamento pelo Executivo a partir de 85%, da apuração bimestral, dos efeitos e das restrições para quem não adota as medidas.
+
+**O QUE SIGNIFICA**
+
+O artigo cria um freio para os entes cujas despesas correntes se aproximam do total das receitas correntes.
+
+Acima de 95%, os Poderes e órgãos podem aplicar um conjunto de vedações, que congelam aumentos de gastos com pessoal e benefícios e limitam novas despesas obrigatórias e renúncias de receita.
+
+As vedações têm exceções, como as vantagens que decorram de decisão judicial definitiva ou de lei anterior e certas reposições de pessoal.
+
+A verificação é feita a cada dois meses.
+
+**EXEMPLO PRÁTICO**
+
+Um Município verifica que as despesas correntes passaram de 95% das receitas correntes. Os Poderes municipais podem suspender reajustes e concursos, salvo as exceções do texto, até a situação melhorar.
+
+**ATENÇÃO**
+
+No caput, a aplicação é facultativa. O § 6º prevê restrições para o ente cujos Poderes e órgãos não tenham adotado todas as medidas, com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Despesa corrente*: gasto com a manutenção da máquina pública, como salários e custeio.
+- *Receita corrente*: receita regular, como tributos e transferências.
+- *Despesa obrigatória*: gasto que o ente não pode deixar de fazer por força de lei.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a relação entre despesas correntes e receitas correntes)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 167-A, §§ 1º, 2º e 3º — Acionamento antecipado pelo Executivo
+
+- **TARGET:** `CF88:ART.167-A:PAR.1` · `ENTENDA/CF88:ART.167-A:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 167-A, §§ 1º, 2º e 3º — Acionamento antecipado pelo Executivo
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.167-A:PAR.2`, `CF88:ART.167-A:PAR.3`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.167-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 2078 bytes · referências 0
+- **Motivo da seleção:** Bloco: medidas por ato do Executivo entre 85% e 95%, submissao ao Legislativo e perda de eficacia.
+
+**O QUE DIZ**
+
+O § 1º permite que, quando a despesa corrente superar 85% da receita corrente sem passar do percentual do caput, o Chefe do Poder Executivo implemente as medidas, no todo ou em parte, por atos com vigência imediata; os demais Poderes e órgãos autônomos podem fazer o mesmo em seus âmbitos. O § 2º exige que o ato seja submetido ao Legislativo em regime de urgência. O § 3º determina que ele perde a eficácia, preservados os atos praticados, quando for rejeitado, quando passarem cento e oitenta dias sem conclusão da apreciação ou quando deixar de existir a situação do § 1º.
+
+**O QUE SIGNIFICA**
+
+O bloco permite agir antes de atingir o percentual do caput.
+
+Acima de 85%, sem chegar ao percentual do caput, o próprio chefe do Executivo pode adotar as vedações por ato próprio, com efeito imediato. Os outros Poderes e órgãos também podem adotá-las.
+
+O ato vai ao Legislativo com urgência. Se for rejeitado, se não for apreciado em cento e oitenta dias ou se a relação cair abaixo de 85%, ele deixa de valer, mas o que foi feito enquanto vigorou continua válido.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado atinge 88% de despesa corrente sobre receita corrente. O Governador edita ato suspendendo novos concursos, com efeito imediato, e o envia à Assembleia em regime de urgência.
+
+**ATENÇÃO**
+
+O prazo de cento e oitenta dias conta para a apreciação pelo Legislativo. Mesmo aprovado, o ato perde a eficácia se a situação do § 1º deixar de existir.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vigência imediata*: produção de efeitos a partir da publicação.
+- *Regime de urgência*: tramitação mais rápida no Legislativo.
+- *Órgão autônomo*: órgão com autonomia própria, como o Ministério Público e a Defensoria.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 167-A, § 6º — Restrições ao ente que não adota o ajuste
+
+- **TARGET:** `CF88:ART.167-A:PAR.6` · `ENTENDA/CF88:ART.167-A:PAR.6/BASE/1`
+- **DISPLAY TITLE:** Art. 167-A, § 6º — Restrições ao ente que não adota o ajuste
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 237 palavras · 1867 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: vedacao de garantias e de operacoes de credito entre entes ate a adocao das medidas.
+
+**O QUE DIZ**
+
+O § 6º estabelece que, ocorrida a hipótese do caput, até que todos os Poderes e órgãos tenham adotado todas as medidas, conforme declaração do Tribunal de Contas, é vedada a concessão de garantias ao ente por qualquer outro ente da Federação. Também é vedada a contratação de operação de crédito do ente com outro ente, direta ou indiretamente, inclusive por novação, refinanciamento ou postergação de dívida anterior, ressalvados os financiamentos de projetos específicos em operações típicas das agências oficiais de fomento.
+
+**O QUE SIGNIFICA**
+
+A adoção das medidas é facultativa, mas quem não as adota sofre consequências.
+
+Enquanto houver Poder ou órgão sem aplicar todas as vedações, o ente não pode receber garantias de outros entes, como da União, nem contratar crédito com eles. Isso inclui renegociar ou adiar dívidas antigas.
+
+A exceção são os financiamentos de projetos específicos feitos por bancos oficiais de fomento, em suas operações típicas.
+
+Quem atesta a adoção completa das medidas é o Tribunal de Contas.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado com despesa corrente acima de 95% da receita não aplica o ajuste no Poder Legislativo. Enquanto isso, a União não pode lhe dar garantia em um empréstimo internacional.
+
+**ATENÇÃO**
+
+A vedação dura até que todos os Poderes e órgãos tenham adotado todas as medidas, segundo declaração do Tribunal de Contas.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Garantia*: compromisso de um ente de pagar a dívida de outro se este não pagar.
+- *Novação*: substituição de uma dívida antiga por uma nova.
+- *Postergação*: adiamento do pagamento.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Postergação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-B
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-B — Regime extraordinário na calamidade nacional
+
+- **TARGET:** `CF88:ART.167-B` · `ENTENDA/CF88:ART.167-B/BASE/1`
+- **DISPLAY TITLE:** Art. 167-B — Regime extraordinário na calamidade nacional
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1672 bytes · referências 0
+- **Motivo da seleção:** Visao geral: requisitos do regime extraordinario fiscal, financeiro e de contratacoes da Uniao.
+
+**O QUE DIZ**
+
+O art. 167-B trata da calamidade pública que alcança todo o país, decretada pelo Congresso por iniciativa privativa do Presidente da República. Enquanto ela vigorar, a União deve adotar um regime extraordinário, nas áreas fiscal, financeira e de contratações, para atender às necessidades que ela gera. Esse regime vale apenas no que a urgência tornar incompatível com o regime comum, nos termos dos arts. 167-C a 167-G.
+
+**O QUE SIGNIFICA**
+
+Em uma calamidade de alcance nacional, as regras fiscais e de contratação comuns podem ser lentas demais. O artigo cria um regime especial para a União.
+
+O texto fixa requisitos: calamidade nacional, decretada pelo Congresso por iniciativa exclusiva do Presidente. E o regime extraordinário se limita ao que a urgência tornar incompatível com o regime regular.
+
+Os arts. 167-C a 167-G detalham as flexibilizações.
+
+**EXEMPLO PRÁTICO**
+
+Diante de uma pandemia que atinge todo o país, o Presidente propõe e o Congresso decreta calamidade pública nacional. A União passa a usar regras simplificadas apenas no que for necessário para enfrentar a situação.
+
+**ATENÇÃO**
+
+O regime é da União e depende de decreto do Congresso. A flexibilização é limitada ao que a urgência exigir.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Calamidade pública*: situação grave que afeta a vida da população e exige resposta excepcional.
+- *Regime extraordinário*: conjunto de regras especiais que valem só durante a situação excepcional.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-C
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-C — Contratações simplificadas na calamidade
+
+- **TARGET:** `CF88:ART.167-C` · `ENTENDA/CF88:ART.167-C/BASE/1`
+- **DISPLAY TITLE:** Art. 167-C — Contratações simplificadas na calamidade
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 188 palavras · 1644 bytes · referências 0
+- **Motivo da seleção:** Visao geral: processos simplificados de contratacao de pessoal temporario e de obras, servicos e compras.
+
+**O QUE DIZ**
+
+O art. 167-C trata do Poder Executivo federal durante a calamidade. Com o propósito exclusivo de enfrentá-la e a seus efeitos, e enquanto ela durar, ele pode adotar processos simplificados para contratar pessoal temporário e emergencial e para contratar obras, serviços e compras, assegurando, quando possível, competição e igualdade de condições. Na contratação temporária do art. 37, IX, fica dispensado o § 1º do art. 169, sem prejuízo do controle dos órgãos competentes.
+
+**O QUE SIGNIFICA**
+
+Na calamidade, o governo federal pode contratar com mais rapidez.
+
+A simplificação vale para pessoal temporário e para obras, serviços e compras. Mesmo assim, o texto pede competição entre os interessados quando possível.
+
+Na contratação temporária, dispensa-se a exigência de prévia dotação e autorização orçamentária específicas do art. 169, § 1º.
+
+O controle pelos órgãos competentes, como os Tribunais de Contas, continua.
+
+**EXEMPLO PRÁTICO**
+
+Durante uma calamidade nacional, o Ministério da Saúde contrata temporariamente profissionais para hospitais de campanha por processo simplificado.
+
+**ATENÇÃO**
+
+A flexibilização tem finalidade exclusiva e prazo: enfrentar a calamidade, durante a sua duração.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Processo simplificado*: procedimento de contratação com menos etapas que o comum.
+- *Contratação temporária*: contratação por tempo determinado para necessidade excepcional.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-D
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-D — Dispensa de limitações legais na calamidade
+
+- **TARGET:** `CF88:ART.167-D` · `ENTENDA/CF88:ART.167-D/BASE/1`
+- **DISPLAY TITLE:** Art. 167-D — Dispensa de limitações legais na calamidade
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 227 palavras · 1865 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dispensa das limitacoes legais para despesas e renuncias temporarias e afastamento do art. 195, § 3º.
+
+**O QUE DIZ**
+
+O art. 167-D trata das proposições legislativas e dos atos do Executivo feitos com o único propósito de enfrentar a calamidade e suas consequências, com vigência e efeitos limitados à sua duração. Se não implicarem despesa obrigatória de caráter continuado, eles ficam dispensados das limitações legais sobre ações governamentais que aumentem a despesa e sobre benefícios tributários que gerem renúncia de receita. O parágrafo único afasta, durante a calamidade nacional, o art. 195, § 3º.
+
+**O QUE SIGNIFICA**
+
+As limitações legais mencionadas no texto tratam do aumento de despesa e da renúncia de receita. Na calamidade, elas ficam dispensadas para medidas temporárias de enfrentamento.
+
+O texto fixa limites: finalidade exclusiva de enfrentar a calamidade, duração restrita à calamidade e ausência de despesa obrigatória de caráter continuado.
+
+O parágrafo único afasta a proibição de contratar com o poder público ou receber benefícios para quem está em débito com a seguridade social.
+
+**EXEMPLO PRÁTICO**
+
+Durante a calamidade, o governo concede, por prazo limitado à calamidade, redução de tributo para equipamentos médicos, sem a compensação que a lei exigiria em tempos normais.
+
+**ATENÇÃO**
+
+A dispensa não alcança despesa obrigatória de caráter continuado. As exigências legais dispensadas estão em leis de finanças públicas, na camada de legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Renúncia de receita*: redução de arrecadação causada por benefício tributário.
+- *Despesa obrigatória de caráter continuado*: despesa permanente, criada por lei ou ato, que continua depois do fim da calamidade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-E
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-E — Dispensa da regra de ouro na calamidade
+
+- **TARGET:** `CF88:ART.167-E` · `ENTENDA/CF88:ART.167-E/BASE/1`
+- **DISPLAY TITLE:** Art. 167-E — Dispensa da regra de ouro na calamidade
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 174 palavras · 1399 bytes · referências 0
+- **Motivo da seleção:** Visao geral: afastamento do art. 167, III, durante o exercicio da calamidade nacional.
+
+**O QUE DIZ**
+
+O art. 167-E dispensa a observância do art. 167, III, durante todo o exercício financeiro em que vigorar a calamidade pública de âmbito nacional.
+
+**O QUE SIGNIFICA**
+
+O art. 167, III, proíbe operações de crédito em montante superior às despesas de capital, a chamada regra de ouro. Em tempos normais, o ente não pode tomar empréstimos para pagar despesas correntes sem autorização especial.
+
+Na calamidade nacional, essa regra fica suspensa durante todo o ano em que a calamidade vigorar. Assim, a União pode se endividar para cobrir despesas correntes extraordinárias sem precisar da autorização por maioria absoluta exigida pelo art. 167, III.
+
+**EXEMPLO PRÁTICO**
+
+Durante a calamidade, a União emite títulos da dívida para pagar um auxílio emergencial à população, que é despesa corrente, sem precisar da autorização especial exigida em tempos normais.
+
+**ATENÇÃO**
+
+A dispensa vale para todo o exercício financeiro em que vigorar a calamidade, e não apenas para o período da calamidade dentro do ano.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Regra de ouro*: proibição de endividamento acima das despesas de capital.
+- *Operação de crédito*: empréstimo ou emissão de títulos da dívida.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-F
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-F — Operações de crédito e superávit na calamidade
+
+- **TARGET:** `CF88:ART.167-F` · `ENTENDA/CF88:ART.167-F/BASE/1`
+- **DISPLAY TITLE:** Art. 167-F — Operações de crédito e superávit na calamidade
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1848 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dispensa de limites de credito da Uniao, uso do superavit financeiro e fontes excluidas.
+
+**O QUE DIZ**
+
+O art. 167-F estabelece que, durante a calamidade pública nacional, ficam dispensados, durante a integralidade do exercício financeiro, os limites, condições e restrições aplicáveis à União para contratar operações de crédito, inclusive sua verificação. O superávit financeiro apurado em 31 de dezembro do ano anterior ao reconhecimento pode ser destinado às despesas de combate à calamidade e ao pagamento da dívida pública. Os parágrafos permitem que lei complementar defina outras dispensas e excluem desse uso do superávit as fontes de repartição de receitas, as vinculações constitucionais indicadas e as receitas com finalidade determinada.
+
+**O QUE SIGNIFICA**
+
+Na calamidade, a União pode contratar empréstimos sem os limites e condições comuns.
+
+O dinheiro que sobrou do ano anterior, o superávit financeiro, pode ser usado no combate à calamidade e no pagamento da dívida.
+
+Esse uso, porém, não alcança recursos que pertencem a outros entes ou que têm destino obrigatório, como os da seguridade social, da saúde, da educação e os vindos de doações e empréstimos com finalidade definida.
+
+**EXEMPLO PRÁTICO**
+
+A União usa o superávit do ano anterior de uma fonte livre para comprar vacinas durante a calamidade. Não pode usar, para isso, recursos de fontes vinculadas à educação.
+
+**ATENÇÃO**
+
+A dispensa de limites de crédito é da União. As fontes excluídas do uso do superávit estão listadas no § 2º.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Superávit financeiro*: sobra de recursos ao fim do exercício.
+- *Fonte de recursos*: origem de um dinheiro no orçamento, que pode ter destino obrigatório.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: financeiro apurado em 31 de dezembro do ano)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.167-G
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 167-G — Vedações de ajuste na calamidade
+
+- **TARGET:** `CF88:ART.167-G` · `ENTENDA/CF88:ART.167-G/BASE/1`
+- **DISPLAY TITLE:** Art. 167-G — Vedações de ajuste na calamidade
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1778 bytes · referências 0
+- **Motivo da seleção:** Visao geral: aplicacao a Uniao das vedacoes do art. 167-A, excecoes, transferencia regional e adesao dos demais entes.
+
+**O QUE DIZ**
+
+O art. 167-G aplica à União, até o fim da calamidade nacional, as vedações do art. 167-A. O § 1º afasta as vedações dos incisos II, IV, VII, IX e X do art. 167-A para medidas de combate à calamidade cuja vigência e efeitos não ultrapassem sua duração. O § 2º afasta, na calamidade, a alínea c do inciso I do art. 159, mantendo a transferência nos mesmos montantes do exercício anterior. O § 3º faculta aos Estados, ao Distrito Federal e aos Municípios aplicar as vedações, ficando sujeitos às restrições do art. 167-A, § 6º, até adotá-las integralmente, enquanto durarem seus efeitos para a União.
+
+**O QUE SIGNIFICA**
+
+Em contrapartida às flexibilizações, a União fica sujeita, durante a calamidade, às mesmas vedações de gastos com pessoal e benefícios do mecanismo de ajuste fiscal.
+
+As medidas temporárias de combate à calamidade podem, porém, criar cargos, contratar pessoal, criar despesa obrigatória e conceder benefícios, nos casos do § 1º.
+
+Os demais entes podem aderir às vedações. Se não aderirem integralmente, sofrem as restrições de garantias e crédito do art. 167-A, § 6º.
+
+**EXEMPLO PRÁTICO**
+
+Durante a calamidade, a União não concede reajuste geral aos servidores, por força das vedações aplicadas. Mas pode contratar profissionais temporários para o combate à calamidade, conforme o § 1º.
+
+**ATENÇÃO**
+
+As exceções do § 1º valem só para medidas cuja vigência e efeitos não ultrapassem a calamidade.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vedação*: proibição.
+- *Contrapartida*: exigência que acompanha um benefício.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos estados ao distrito federal e aos municípios); TERM_LOW_UTILITY (palavras_dificeis: Vedação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.168
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 168 — Repasse em duodécimos
+
+- **TARGET:** `CF88:ART.168` · `ENTENDA/CF88:ART.168/BASE/1`
+- **DISPLAY TITLE:** Art. 168 — Repasse em duodécimos
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1531 bytes · referências 0
+- **Motivo da seleção:** Visao geral: entrega mensal dos recursos aos Poderes e orgaos autonomos, vedacao e restituicao do saldo.
+
+**O QUE DIZ**
+
+O art. 168 garante aos órgãos do Legislativo e do Judiciário, ao Ministério Público e à Defensoria Pública a entrega dos recursos de suas dotações orçamentárias, incluídos os créditos suplementares e especiais. A entrega é feita em duodécimos, até o dia 20 de cada mês, na forma da lei complementar do art. 165, § 9º. O § 1º proíbe transferir a fundos os recursos desses repasses. O § 2º manda restituir o saldo ao caixa único do Tesouro do ente ou deduzi-lo das primeiras parcelas do exercício seguinte.
+
+**O QUE SIGNIFICA**
+
+O Executivo arrecada e administra o caixa. O artigo garante aos outros Poderes e órgãos autônomos o repasse mensal, em parcelas de um doze avos do orçamento anual, até o dia 20 de cada mês.
+
+O dinheiro recebido não pode ser desviado para fundos. E o que sobrar no fim do ano volta ao Tesouro ou é descontado das primeiras parcelas do ano seguinte.
+
+**EXEMPLO PRÁTICO**
+
+A Assembleia Legislativa de um Estado recebe, até o dia 20 de cada mês, um doze avos do valor previsto para ela no orçamento anual.
+
+**ATENÇÃO**
+
+O repasse é garantido aos órgãos indicados no texto. A forma de cálculo segue a lei complementar do art. 165, § 9º.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Duodécimo*: cada uma das doze parcelas mensais de um valor anual.
+- *Caixa único do Tesouro*: conta central onde ficam os recursos do ente.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.169
+
+Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 169 — Limites de despesa com pessoal
+
+- **TARGET:** `CF88:ART.169` · `ENTENDA/CF88:ART.169/BASE/1`
+- **DISPLAY TITLE:** Art. 169 — Limites de despesa com pessoal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2197 bytes · referências 1
+- **Motivo da seleção:** Visao geral: limites de lei complementar, requisitos para aumentos e medidas para ajustar a despesa com pessoal.
+
+**O QUE DIZ**
+
+O art. 169 proíbe que a União, os Estados, o Distrito Federal e os Municípios gastem com pessoal ativo, inativo e pensionistas acima dos limites fixados em lei complementar. Os parágrafos exigem dotação prévia e autorização na lei de diretrizes orçamentárias para aumentos e admissões, ressalvadas as estatais quanto à autorização, preveem a suspensão de repasses federais ou estaduais a quem não se adaptar no prazo e estabelecem medidas sucessivas para reduzir a despesa: corte de cargos em comissão e funções de confiança, exoneração de não estáveis e, se preciso, perda do cargo de servidor estável.
+
+**O QUE SIGNIFICA**
+
+O artigo coloca um teto nos gastos com servidores, aposentados e pensionistas. O valor do teto não está na Constituição, e sim na lei complementar.
+
+Para conceder aumentos, criar cargos ou contratar, é preciso ter dinheiro previsto no orçamento e autorização na lei de diretrizes orçamentárias.
+
+Se o ente ultrapassar o limite, a Constituição define uma ordem de medidas para voltar ao teto, que começa pelos cargos de livre nomeação e só chega aos servidores estáveis em último caso.
+
+**EXEMPLO PRÁTICO**
+
+Um Município gasta com pessoal acima do limite da lei complementar. Primeiro, reduz em no mínimo vinte por cento o gasto com cargos em comissão e funções de confiança; depois, exonera servidores não estáveis.
+
+**ATENÇÃO**
+
+Os §§ 1º e 3º a 7º têm explicação própria. A fonte oficial anota o § 1º com remissão a emenda constitucional sobre período de calamidade, a conferir na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Pessoal inativo*: servidores aposentados.
+- *Cargo em comissão*: cargo de livre nomeação e exoneração, para direção, chefia e assessoramento.
+- *Servidor estável*: servidor efetivo que adquiriu a estabilidade.
+
+**CAMADA EXTERNA**
+
+- A lei complementar que fixa os limites de despesa com pessoal fica na camada de legislação correlata. A fonte oficial remete o § 1º à Emenda Constitucional nº 106, de 2020.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: com cargos em comissão e funções de confiança); TERM_LOW_UTILITY (palavras_dificeis: Pessoal inativo)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 169, § 1º — Requisitos para aumentar a despesa com pessoal
+
+- **TARGET:** `CF88:ART.169:PAR.1` · `ENTENDA/CF88:ART.169:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 169, § 1º — Requisitos para aumentar a despesa com pessoal
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.169`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 228 palavras · 1898 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: previa dotacao e autorizacao especifica na LDO, com ressalva das estatais.
+
+**O QUE DIZ**
+
+O § 1º estabelece que vantagens e aumentos de remuneração, criação de cargos, empregos e funções, alteração de carreiras e admissão ou contratação de pessoal, a qualquer título, por órgãos e entidades da administração direta ou indireta, dependem de duas condições. A primeira é a prévia dotação orçamentária suficiente para as projeções de despesa e seus acréscimos. A segunda é a autorização específica na lei de diretrizes orçamentárias. A segunda exigência não se aplica às empresas públicas e às sociedades de economia mista.
+
+**O QUE SIGNIFICA**
+
+Antes de aumentar gastos com pessoal, o ente precisa cumprir duas condições.
+
+A primeira é ter dinheiro previsto no orçamento, suficiente para a nova despesa e para seus efeitos futuros.
+
+A segunda é ter autorização específica na lei de diretrizes orçamentárias.
+
+As empresas públicas e as sociedades de economia mista não precisam da autorização da lei de diretrizes orçamentárias, mas continuam sujeitas à exigência de dotação.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado quer abrir concurso para professores. Precisa que o orçamento preveja recursos suficientes para os novos salários e que a lei de diretrizes orçamentárias autorize especificamente as contratações.
+
+**ATENÇÃO**
+
+A ressalva das empresas estatais vale apenas para a autorização na lei de diretrizes orçamentárias. A aplicação do inciso I a essas empresas é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Dotação orçamentária*: valor reservado no orçamento para uma despesa.
+- *Sociedade de economia mista*: empresa com capital público e privado, controlada pelo poder público.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: admissão ou contratação de pessoal a qualquer título); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as empresas públicas e as sociedades de economia); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa que o orçamento preveja recursos suficientes para os)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 169, §§ 3º, 4º, 5º, 6º e 7º — Redução da despesa com pessoal
+
+- **TARGET:** `CF88:ART.169:PAR.3` · `ENTENDA/CF88:ART.169:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 169, §§ 3º, 4º, 5º, 6º e 7º — Redução da despesa com pessoal
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.169:PAR.4`, `CF88:ART.169:PAR.5`, `CF88:ART.169:PAR.6`, `CF88:ART.169:PAR.7`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.169`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2419 bytes · referências 0
+- **Motivo da seleção:** Bloco: ordem das medidas de reducao, perda do cargo de estavel, indenizacao, extincao do cargo e lei federal.
+
+**O QUE DIZ**
+
+O § 3º determina que, para cumprir os limites no prazo da lei complementar, os entes reduzam em pelo menos vinte por cento as despesas com cargos em comissão e funções de confiança e exonerem os servidores não estáveis. O § 4º permite, se essas medidas forem insuficientes, a perda do cargo pelo servidor estável, desde que ato normativo motivado de cada Poder especifique a atividade, o órgão ou a unidade atingidos. O § 5º garante indenização de um mês de remuneração por ano de serviço. O § 6º considera extinto o cargo e proíbe criar cargo, emprego ou função com atribuições iguais ou assemelhadas por quatro anos. O § 7º remete à lei federal as normas gerais do § 4º.
+
+**O QUE SIGNIFICA**
+
+O bloco define uma ordem para reduzir gastos com pessoal.
+
+Primeiro vêm os cortes em cargos de livre nomeação e a saída dos servidores não estáveis.
+
+Só se isso não bastar, o servidor estável pode perder o cargo. Mesmo nesse caso, há garantias: ato motivado que indique a área atingida, indenização e extinção do cargo, sem possibilidade de recriá-lo por quatro anos.
+
+A lei federal fixa as normas gerais para essa medida extrema.
+
+**EXEMPLO PRÁTICO**
+
+Depois de cortar cargos em comissão e exonerar não estáveis, um Estado ainda está acima do limite. O Executivo edita ato motivado indicando o órgão atingido; os servidores estáveis exonerados recebem indenização, e os cargos são extintos.
+
+**ATENÇÃO**
+
+A perda do cargo de servidor estável é a última medida e depende de ato motivado. A proibição de recriar o cargo dura quatro anos.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Exoneração*: desligamento do servidor do cargo, sem caráter de punição.
+- *Função de confiança*: função de direção, chefia ou assessoramento exercida por servidor efetivo.
+- *Ato normativo motivado*: ato geral que expõe as razões da decisão.
+
+**CAMADA EXTERNA**
+
+- A lei federal de normas gerais sobre a perda de cargo por excesso de despesa fica na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cargo emprego ou função com atribuições iguais ou)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.170
+
+Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 170 — Princípios da ordem econômica
+
+- **TARGET:** `CF88:ART.170` · `ENTENDA/CF88:ART.170/BASE/1`
+- **DISPLAY TITLE:** Art. 170 — Princípios da ordem econômica
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2073 bytes · referências 0
+- **Motivo da seleção:** Visao geral: fundamentos, finalidade e principios da ordem economica.
+
+**O QUE DIZ**
+
+O art. 170 apoia a ordem econômica em dois fundamentos, a valorização do trabalho humano e a livre iniciativa, com a finalidade de garantir existência digna a todos, segundo a justiça social. Seus princípios são a soberania nacional, a propriedade privada e sua função social, a livre concorrência e a defesa do consumidor. Também são princípios a defesa do meio ambiente, inclusive com tratamento diferenciado conforme o impacto ambiental, e a redução das desigualdades regionais e sociais. Completam a lista a busca do pleno emprego e o tratamento favorecido para empresas de pequeno porte constituídas sob as leis brasileiras e com sede e administração no País.
+
+**O QUE SIGNIFICA**
+
+O artigo abre a parte da Constituição sobre a economia e mostra que ela combina valores diferentes.
+
+De um lado estão a livre iniciativa, a propriedade privada e a livre concorrência. De outro, a função social da propriedade, a defesa do consumidor, do meio ambiente e a redução das desigualdades.
+
+O texto não escolhe um valor e descarta o outro: a atividade econômica é livre, mas deve servir à existência digna, conforme a justiça social, conforme a justiça social.
+
+O parágrafo único, com explicação própria, garante o livre exercício de atividade econômica.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei que obriga fabricantes a informar os riscos de seus produtos limita a livre iniciativa, mas se apoia no princípio da defesa do consumidor, previsto no mesmo artigo.
+
+**ATENÇÃO**
+
+Os princípios convivem e, em casos concretos, precisam ser harmonizados. Como isso é feito em cada caso é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Livre iniciativa*: liberdade de criar e exercer atividade econômica.
+- *Função social da propriedade*: dever de usar a propriedade de forma útil à coletividade.
+- *Pleno emprego*: situação em que quem quer trabalhar encontra trabalho.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de pequeno porte constituídas sob as leis brasileiras)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 170, parágrafo único — Livre exercício de atividade econômica
+
+- **TARGET:** `CF88:ART.170:PAR.UNICO` · `ENTENDA/CF88:ART.170:PAR.UNICO/BASE/1`
+- **DISPLAY TITLE:** Art. 170, parágrafo único — Livre exercício de atividade econômica
+- **DISPOSITIVO:** PARAGRAFO_UNICO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.170`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1545 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: liberdade de atividade economica sem autorizacao publica, salvo casos da lei.
+
+**O QUE DIZ**
+
+O parágrafo único assegura a todos o livre exercício de qualquer atividade econômica, sem necessidade de autorização de órgãos públicos, exceto nos casos que a lei indicar.
+
+**O QUE SIGNIFICA**
+
+A regra é a liberdade: para abrir um negócio ou exercer uma atividade econômica, a pessoa não precisa pedir licença ao Estado.
+
+A exceção depende de lei. Só a lei pode exigir autorização prévia para certas atividades, como as que envolvem riscos à saúde, à segurança ou ao meio ambiente.
+
+Assim, um ato administrativo sem base em lei não pode criar exigência de autorização.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa quer abrir uma pequena loja de roupas. Pelo parágrafo, não precisa de autorização prévia de órgão público para exercer essa atividade, salvo exigência prevista em lei.
+
+**ATENÇÃO**
+
+A fonte canônica remete a lei sobre liberdade econômica, que detalha o tema. As atividades que exigem autorização dependem de previsão legal.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Autorização*: permissão prévia do poder público para exercer uma atividade.
+- *Atividade econômica*: produção ou circulação de bens e serviços com finalidade econômica.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica remete à Lei n. 13.874, de 2019 (liberdade econômica), na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a todos o livre exercício de qualquer atividade); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo parágrafo, não precisa de autorização prévia de órgão p)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.171
+
+Sem explicação própria: 0 dispositivos (ver `SELECTION_REPORT.json`).
+
+## CF88:ART.172
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 172 — Capital estrangeiro
+
+- **TARGET:** `CF88:ART.172` · `ENTENDA/CF88:ART.172/BASE/1`
+- **DISPLAY TITLE:** Art. 172 — Capital estrangeiro
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1497 bytes · referências 0
+- **Motivo da seleção:** Visao geral: disciplina legal do capital estrangeiro, reinvestimentos e remessa de lucros.
+
+**O QUE DIZ**
+
+O art. 172 determina que a lei discipline, com base no interesse nacional, os investimentos de capital estrangeiro, incentive os reinvestimentos e regule a remessa de lucros.
+
+**O QUE SIGNIFICA**
+
+O artigo não proíbe nem libera de forma ampla o capital estrangeiro. Ele remete o tema à lei, com um critério: o interesse nacional.
+
+A lei deve tratar de três pontos. Primeiro, como o capital estrangeiro entra e atua no país. Segundo, estímulos para que os lucros obtidos aqui sejam reinvestidos no Brasil. Terceiro, regras para o envio de lucros ao exterior.
+
+Outros dispositivos da Constituição trazem restrições específicas ao capital estrangeiro em certos setores.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa estrangeira que lucra com uma fábrica no Brasil decide se reinveste o lucro aqui ou o remete à matriz. As regras sobre essa remessa e os incentivos ao reinvestimento estão na lei a que o artigo se refere.
+
+**ATENÇÃO**
+
+O artigo é uma remissão à lei. As restrições setoriais ao capital estrangeiro estão em outros artigos da Constituição.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Capital estrangeiro*: recursos de origem externa investidos no país.
+- *Remessa de lucros*: envio ao exterior dos lucros obtidos no país.
+
+**CAMADA EXTERNA**
+
+- A lei sobre capital estrangeiro e remessa de lucros fica na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: base no interesse nacional os investimentos de capital)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.173
+
+Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 173 — Exploração de atividade econômica pelo Estado
+
+- **TARGET:** `CF88:ART.173` · `ENTENDA/CF88:ART.173/BASE/1`
+- **DISPLAY TITLE:** Art. 173 — Exploração de atividade econômica pelo Estado
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 257 palavras · 2022 bytes · referências 0
+- **Motivo da seleção:** Visao geral: excepcionalidade da atuacao empresarial do Estado, estatuto das estatais e repressao ao abuso economico.
+
+**O QUE DIZ**
+
+O art. 173 só permite que o Estado explore diretamente atividade econômica quando isso for necessário à segurança nacional ou a relevante interesse coletivo, nos termos definidos em lei, ressalvados os casos previstos na Constituição. Os parágrafos tratam, entre outros temas, do estatuto jurídico das empresas estatais e da proibição de privilégios fiscais não extensivos ao setor privado. Também tratam das relações da empresa pública com o Estado e a sociedade, da repressão ao abuso do poder econômico e da responsabilidade da pessoa jurídica por atos contra a ordem econômica e a economia popular.
+
+**O QUE SIGNIFICA**
+
+Na ordem econômica brasileira, a atividade econômica cabe em regra aos particulares. O Estado só atua como empresário em situações excepcionais, ligadas à segurança nacional ou a relevante interesse coletivo definido em lei.
+
+Quando atua, por meio de empresas públicas e sociedades de economia mista, essas empresas seguem em grande parte o regime das empresas privadas e não podem ter vantagens fiscais que as concorrentes privadas não tenham.
+
+O artigo também manda a lei reprimir o abuso do poder econômico e responsabilizar as empresas por atos contra a ordem econômica.
+
+**EXEMPLO PRÁTICO**
+
+Uma estatal que vende combustíveis em concorrência com empresas privadas não pode receber isenção de tributo que não seja dada também às concorrentes privadas.
+
+**ATENÇÃO**
+
+O estatuto das estatais (§ 1º) tem explicação própria. Os casos ressalvados pela Constituição incluem os monopólios do art. 177.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Empresa pública*: empresa com capital inteiramente público.
+- *Abuso do poder econômico*: uso da força econômica para dominar mercados ou eliminar a concorrência.
+- *Economia popular*: interesses econômicos da população em geral.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da empresa pública com o estado e a)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 173, § 1º — Estatuto jurídico das empresas estatais
+
+- **TARGET:** `CF88:ART.173:PAR.1` · `ENTENDA/CF88:ART.173:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 173, § 1º — Estatuto jurídico das empresas estatais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.173`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 258 palavras · 2281 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: materias da lei do estatuto das estatais que exploram atividade economica.
+
+**O QUE DIZ**
+
+O § 1º determina que a lei crie o estatuto jurídico das empresas públicas, das sociedades de economia mista e de suas subsidiárias que exploram atividade econômica, seja produzindo ou comercializando bens, seja prestando serviços. O estatuto deve tratar da função social e das formas de fiscalização pelo Estado e pela sociedade; da sujeição ao regime das empresas privadas, inclusive quanto a direitos e obrigações civis, comerciais, trabalhistas e tributários; das licitações e contratações de obras, serviços, compras e alienações, com respeito aos princípios da administração pública; dos conselhos de administração e fiscal, com participação de minoritários; e dos mandatos, avaliação e responsabilidade dos administradores.
+
+**O QUE SIGNIFICA**
+
+As empresas estatais vivem entre dois mundos: são do Estado, mas atuam no mercado.
+
+O estatuto combina regras dos dois. Elas seguem o regime das empresas privadas em suas obrigações civis, comerciais, trabalhistas e tributárias. Mas também se submetem a controles públicos: fiscalização, licitação com os princípios da administração pública e regras de governança.
+
+A participação de acionistas minoritários nos conselhos e a responsabilidade dos administradores fazem parte do que a lei deve regular.
+
+**EXEMPLO PRÁTICO**
+
+Uma sociedade de economia mista que atua no setor bancário contrata empregados pelo regime trabalhista das empresas privadas, mas faz suas compras por licitação, observando os princípios da administração pública.
+
+**ATENÇÃO**
+
+O parágrafo trata das estatais que exploram atividade econômica. A aplicação de regras próprias às estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Subsidiária*: empresa controlada por outra empresa.
+- *Acionista minoritário*: sócio que não detém o controle da empresa.
+- *Conselho fiscal*: órgão que fiscaliza as contas da empresa.
+
+**CAMADA EXTERNA**
+
+- A lei do estatuto jurídico das empresas estatais fica na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de economia mista e de suas subsidiárias que)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.174
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 174 — Estado como agente normativo e regulador
+
+- **TARGET:** `CF88:ART.174` · `ENTENDA/CF88:ART.174/BASE/1`
+- **DISPLAY TITLE:** Art. 174 — Estado como agente normativo e regulador
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1868 bytes · referências 0
+- **Motivo da seleção:** Visao geral: funcoes de fiscalizacao, incentivo e planejamento, cooperativismo e garimpo.
+
+**O QUE DIZ**
+
+O art. 174 estabelece que o Estado, como agente normativo e regulador da atividade econômica, fiscaliza, incentiva e planeja, na forma da lei, e o planejamento é obrigatório para o setor público e apenas indicativo para o privado. Os parágrafos tratam das diretrizes do planejamento do desenvolvimento nacional, do apoio ao cooperativismo e ao associativismo, do favorecimento às cooperativas de garimpeiros e da prioridade dessas cooperativas na pesquisa e lavra de minerais garimpáveis.
+
+**O QUE SIGNIFICA**
+
+Além de atuar como empresário em casos excepcionais (art. 173), o Estado regula a economia.
+
+Ele fiscaliza, incentiva atividades e planeja. A diferença está no efeito do planejamento: ele obriga o setor público, mas só orienta o setor privado. As empresas privadas não são obrigadas a seguir o plano.
+
+O artigo também estimula as cooperativas, com atenção especial aos garimpeiros, que têm prioridade nas áreas onde atuam, na forma da lei.
+
+**EXEMPLO PRÁTICO**
+
+O governo lança um plano nacional de energia. Os órgãos públicos devem segui-lo; as empresas privadas podem usá-lo como referência, mas não são obrigadas a aderir.
+
+**ATENÇÃO**
+
+A fonte canônica remete o caput a lei sobre liberdade econômica, na camada de legislação correlata. A prioridade das cooperativas de garimpeiros segue a forma da lei e o art. 21, XXV.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Agente regulador*: quem estabelece e fiscaliza regras para uma atividade.
+- *Planejamento indicativo*: planejamento que orienta, mas não obriga.
+- *Lavra*: extração de minerais de uma jazida.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica remete à Lei n. 13.874, de 2019, na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: como agente normativo e regulador da atividade econômica); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Os órgãos públicos devem segui-lo;)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.175
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 175 — Prestação de serviços públicos
+
+- **TARGET:** `CF88:ART.175` · `ENTENDA/CF88:ART.175/BASE/1`
+- **DISPLAY TITLE:** Art. 175 — Prestação de serviços públicos
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2063 bytes · referências 0
+- **Motivo da seleção:** Visao geral: prestacao direta ou por concessao e permissao, licitacao e materias da lei.
+
+**O QUE DIZ**
+
+O art. 175 atribui ao poder público, na forma da lei, a prestação de serviços públicos, diretamente ou sob regime de concessão ou permissão; para a concessão e para a permissão, o texto exige licitação. O parágrafo único determina que a lei disponha sobre o regime das empresas concessionárias e permissionárias, o caráter especial de seus contratos e da prorrogação e as condições de caducidade, fiscalização e rescisão. A lei também trata dos direitos dos usuários, da política tarifária e da obrigação de manter serviço adequado.
+
+**O QUE SIGNIFICA**
+
+O serviço público é responsabilidade do Estado, que pode prestá-lo por conta própria ou transferir a execução a empresas privadas, por concessão ou permissão.
+
+Quando transfere, a escolha da empresa deve ser feita por licitação, como determina o próprio texto.
+
+A lei protege o usuário: garante direitos, regula as tarifas e obriga a manter o serviço adequado. O contrato de concessão é especial e pode ser extinto se a empresa não cumprir suas obrigações.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer transferir o transporte coletivo a uma empresa privada. Faz licitação e assina contrato de concessão; a empresa passa a cobrar tarifa e deve manter o serviço adequado aos usuários.
+
+**ATENÇÃO**
+
+O texto exige licitação para a concessão e a permissão. A titularidade do serviço continua sendo do poder público, mesmo quando a execução é transferida.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Concessão*: transferência da execução de serviço público a empresa, por contrato e prazo determinado.
+- *Permissão*: delegação da prestação de serviço público, com regime próprio definido em lei.
+- *Caducidade*: extinção da concessão por falha grave da concessionária.
+
+**CAMADA EXTERNA**
+
+- A lei de concessões e permissões de serviços públicos fica na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diretamente ou sob regime de concessão ou permissão); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: a empresa passa a cobrar tarifa e deve manter o serviço adeq)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

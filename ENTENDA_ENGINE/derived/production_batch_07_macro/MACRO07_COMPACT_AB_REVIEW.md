@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (97)
+## A — CLEAN_LOW (143)
 
 ### `CF88:ART.76` — Art. 76 — Exercício do Poder Executivo
 
@@ -319,7 +319,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: Um único precatório muito grande poderia consumir quase todo o orçamento destinado a precatórios.
 - ATENÇÃO: O acordo depende da regulamentação do ente devedor e de não haver recurso ou defesa pendente sobre o crédito.
 - Dependência externa: nenhuma
-- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(20%)
+- Warnings: NUMBER_FROM_OTHER_DEVICE(20% )
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -330,7 +330,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: Em vez de quitar o estoque de uma só vez, esses entes pagam até um teto anual ligado à sua receita.
 - ATENÇÃO: As faixas, os percentuais e a data de 2036 constam do texto atual, mas a sistemática foi introduzida recentemente por emenda; a transição entre regimes deve ser consultada na camada externa.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a partir de 1 de janeiro de 2036), EXAMPLE_NUMBER_NOT_IN_TEXT(30%), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a partir de 1 de janeiro de 2036), NUMBER_FROM_OTHER_DEVICE(30% ), lint EXAMPLE_REQUIREMENT_LANGUAGE
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -1071,7 +1071,513 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (45)
+### `CF88:ART.152` — Art. 152 — Vedação de diferença pela origem ou pelo destino
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 152 proíbe os Estados, o Distrito Federal e os Municípios de estabelecer diferença tributária entre bens e serviços, de qualquer natureza, por causa da sua procedência ou do seu destino.
+- Interpretação principal: Um Estado não pode cobrar mais imposto sobre um produto só porque ele veio de outro Estado, nem cobrar menos para favorecer o que é produzido dentro do seu território.
+- ATENÇÃO: As alíquotas interestaduais do imposto estadual sobre circulação de mercadorias seguem regras próprias da Constituição (art. 155, § 2º), que não se confundem com a diferença proibida por este artigo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: diferença tributária entre bens e serviços de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.153:PAR.1` — Art. 153, § 1º — Alteração de alíquotas pelo Executivo
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O § 1º faculta ao Poder Executivo alterar as alíquotas dos impostos dos incisos I, II, IV e V, atendidas as condições e os limites estabelecidos em lei.
+- Interpretação principal: Em regra, alterar a alíquota de um tributo exige lei (art. 150, I).
+- ATENÇÃO: A faculdade alcança apenas os quatro impostos indicados.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: as condições e os limites estabelecidos em lei), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.153:PAR.4` — Art. 153, § 4º — Imposto territorial rural
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 4º estabelece que o imposto sobre a propriedade territorial rural será progressivo, com alíquotas fixadas para desestimular a manutenção de propriedades improdutivas.
+- Interpretação principal: O imposto rural tem uma função ligada ao uso da terra.
+- ATENÇÃO: O tamanho da pequena gleba é definido em lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: incidirá sobre pequenas glebas rurais definidas…), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.153:PAR.5` — Art. 153, § 5º — Ouro como ativo financeiro
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 5º determina que o ouro, quando a lei o definir como ativo financeiro ou instrumento cambial, sofra apenas o imposto do inciso V, devido na operação de origem, com alíquota mínima de um por cento.
+- Interpretação principal: O ouro pode ser mercadoria ou ativo financeiro.
+- ATENÇÃO: A regra só vale quando a lei define o ouro como ativo financeiro ou instrumento cambial.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.154` — Art. 154 — Competência residual e impostos de guerra
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 154 permite à União criar, por lei complementar, impostos além dos previstos no art. 153.
+- Interpretação principal: A lista de impostos federais do art. 153 não é totalmente fechada.
+- ATENÇÃO: Os impostos extraordinários de guerra não seguem as regras de anterioridade (art. 150, § 1º).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: extraordinários compreendidos ou não em sua…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.155:PAR.1` — Art. 155, § 1º — Imposto sobre heranças e doações
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º estabelece regras para o imposto sobre transmissão causa mortis e doação.
+- Interpretação principal: O parágrafo resolve qual Estado cobra o imposto.
+- ATENÇÃO: A progressividade e as novas não incidências foram incluídas por emenda recente; a aplicação no tempo segue as regras da camada externa.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: valor do quinhão do legado ou da doação)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.155:PAR.2:INC.X` — Art. 155, § 2º, inciso X — Não incidências do imposto sobre circulação de mercadorias
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso X afasta o imposto em quatro casos: nas operações que destinem mercadorias ao exterior e nos serviços a destinatários no exterior, mantido e aproveitado o imposto cobrado nas operações e…
+- Interpretação principal: O inciso afasta o imposto em quatro situações.
+- ATENÇÃO: A alínea b se refere à saída para outros Estados.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.155:PAR.3` — Art. 155, § 3º — Impostos sobre energia, telecomunicações e combustíveis
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º limita os impostos sobre certos setores.
+- Interpretação principal: O parágrafo limita os impostos que podem recair sobre esses setores.
+- ATENÇÃO: A limitação fala em impostos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: derivados de petróleo combustíveis e minerais do…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.155:PAR.4` — Art. 155, §§ 4º e 5º — Incidência única sobre combustíveis
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 4º regula a incidência única sobre combustíveis e lubrificantes definida em lei complementar (§ 2º, XII, h).
+- Interpretação principal: Os combustíveis têm um regime especial: o imposto é cobrado uma única vez na cadeia.
+- ATENÇÃO: O regime depende da lei complementar que define os combustíveis de incidência única.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.156-B:PAR.3` — Art. 156-B, §§ 3º e 4º — Composição e deliberação do Comitê Gestor
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º compõe a instância máxima de deliberação do Comitê Gestor com vinte e sete membros, um por Estado e um pelo Distrito Federal, e outros vinte e sete que representam o conjunto dos Municípios e…
+- Interpretação principal: A composição é paritária: metade dos membros representa os Estados, metade os Municípios.
+- ATENÇÃO: As duas maiorias são cumulativas.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o conjunto dos municípios e do distrito federal)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.157` — Art. 157 — Receitas tributárias dos Estados vindas da União
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 157 atribui aos Estados e ao Distrito Federal o produto da arrecadação do imposto da União sobre a renda e proventos de qualquer natureza retido na fonte sobre rendimentos que eles, suas…
+- Interpretação principal: O artigo inicia a repartição das receitas tributárias, em que parte do que um ente arrecada pertence a outro.
+- ATENÇÃO: O texto fala em rendimentos pagos pelo Estado, por suas autarquias e pelas fundações que instituir e mantiver.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o produto da arrecadação do imposto da união), lint JURISPRUDENCE_WORDING_IN_BODY, lint TERM_NOT_USED
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.159` — Art. 159 — Entregas da União aos Estados e Municípios
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 159 determina que a União entregue parte da arrecadação de impostos e contribuições.
+- Interpretação principal: Além das receitas que pertencem diretamente aos Estados e Municípios, a União divide com eles parte do que arrecada.
+- ATENÇÃO: O inciso I tem explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: do imposto sobre produtos industrializados e do…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.160` — Art. 160 — Vedação de retenção das receitas repartidas
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 160 proíbe a retenção ou qualquer restrição à entrega e ao uso dos recursos que a Seção atribui aos Estados, ao Distrito Federal e aos Municípios, incluídos adicionais e acréscimos relativos a…
+- Interpretação principal: As receitas repartidas pertencem aos Estados e aos Municípios.
+- ATENÇÃO: As hipóteses de condicionamento estão nos §§ 1º e 2º, com explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a retenção ou qualquer restrição à entrega e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.160:PAR.1` — Art. 160, §§ 1º e 2º — Condicionamento e dedução dos repasses
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º permite que a União e os Estados condicionem a entrega de recursos ao pagamento de seus créditos, inclusive de suas autarquias, e ao cumprimento dos mínimos de aplicação em saúde do art. 198,…
+- Interpretação principal: A proibição de retenção do caput tem dois limites.
+- ATENÇÃO: As hipóteses são as do texto: créditos do ente que repassa, mínimos de saúde e cláusulas de dedução em ajustes com a União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ao pagamento de seus créditos inclusive de suas), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.161` — Art. 161 — Lei complementar da repartição de receitas
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 161 atribui à lei complementar definir valor adicionado para fins do art. 158, § 1º, I; estabelecer normas sobre a entrega dos recursos do art. 159, especialmente os critérios de rateio dos…
+- Interpretação principal: A Constituição fixa quanto é repartido, mas deixa para a lei complementar os detalhes de como dividir.
+- ATENÇÃO: Os critérios concretos de rateio estão na lei complementar, e não neste artigo.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.162` — Art. 162 — Divulgação da arrecadação e dos repasses
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 162 obriga a União, os Estados, o Distrito Federal e os Municípios a divulgar dados sobre os tributos até o último dia do mês seguinte ao da arrecadação.
+- Interpretação principal: O artigo impõe transparência sobre o dinheiro dos tributos e sua divisão entre os entes.
+- ATENÇÃO: O dever alcança os quatro níveis da Federação.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.163` — Art. 163 — Lei complementar de finanças públicas
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 163 reserva à lei complementar, entre outras, as seguintes matérias: finanças públicas; dívida pública externa e interna, inclusive das entidades controladas pelo poder público; garantias…
+- Interpretação principal: O artigo abre o capítulo das finanças públicas indicando os temas que exigem lei complementar, aprovada por maioria absoluta.
+- ATENÇÃO: O artigo indica matérias; o conteúdo concreto está nas leis complementares, na camada de legislação correlata.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: compatibilização das funções das instituições…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.163-A` — Art. 163-A — Dados contábeis e fiscais padronizados
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 163-A determina que a União, os Estados, o Distrito Federal e os Municípios disponibilizem suas informações contábeis, orçamentárias e fiscais conforme periodicidade, formato e sistema…
+- Interpretação principal: Cada ente produz suas próprias contas, e sem um padrão comum seria difícil compará-las.
+- ATENÇÃO: O padrão é definido por órgão da União, mas o dever de disponibilizar os dados é de cada ente.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e), EXAMPLE_NUMBER_NOT_IN_TEXT(2)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.164` — Art. 164 — Banco Central e emissão de moeda
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 164 atribui exclusivamente ao Banco Central a competência da União para emitir moeda.
+- Interpretação principal: Só o Banco Central emite moeda em nome da União.
+- ATENÇÃO: A proibição do § 1º alcança empréstimos diretos e indiretos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a oferta de moeda ou a taxa de), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.164-A` — Art. 164-A — Sustentabilidade da dívida pública
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 164-A determina que a União, os Estados, o Distrito Federal e os Municípios conduzam suas políticas fiscais de modo que a dívida pública permaneça em níveis sustentáveis, conforme a lei…
+- Interpretação principal: O artigo transforma a sustentabilidade da dívida em dever da União, dos Estados, do Distrito Federal e dos Municípios.
+- ATENÇÃO: O artigo depende da lei complementar para ter critérios concretos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a compatibilidade dos indicadores fiscais com a…), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.165` — Art. 165 — Leis orçamentárias
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 165 determina que leis de iniciativa do Poder Executivo estabeleçam o plano plurianual, as diretrizes orçamentárias e os orçamentos anuais.
+- Interpretação principal: O orçamento público é organizado em três leis que se encaixam.
+- ATENÇÃO: Os §§ 18 a 22 trazem regras ligadas a exercícios específicos e a emendas recentes, com explicação própria.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.165:PAR.2` — Art. 165, § 2º — Lei de diretrizes orçamentárias
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º estabelece que a lei de diretrizes orçamentárias reúne as metas e prioridades da administração pública federal e define as diretrizes de política fiscal e suas metas, de acordo com uma…
+- Interpretação principal: A lei de diretrizes orçamentárias funciona como uma ponte entre o planejamento de médio prazo e o orçamento de cada ano.
+- ATENÇÃO: A menção à trajetória sustentável da dívida liga este parágrafo ao art. 163, VIII, e ao art. 164-A.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a política de aplicação das agências financeiras…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.165:PAR.5` — Art. 165, § 5º — Os três orçamentos da lei anual
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 5º determina que a lei orçamentária anual compreenda três orçamentos.
+- Interpretação principal: A lei orçamentária anual não é um orçamento único, mas reúne três peças.
+- ATENÇÃO: O orçamento de investimento trata das empresas em que a União tem maioria do capital votante, direta ou indiretamente.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: e fundações instituídos e mantidos pelo poder…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.165:PAR.8` — Art. 165, § 8º — Exclusividade da lei orçamentária
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 8º proíbe que a lei orçamentária anual traga dispositivo que não trate de prever a receita e fixar a despesa.
+- Interpretação principal: A lei do orçamento tem conteúdo próprio: prever receitas e fixar despesas.
+- ATENÇÃO: As autorizações admitidas são apenas as do texto e seguem os termos da lei.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.165:PAR.10` — Art. 165, §§ 10 e 11 — Dever de executar o orçamento
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 10 impõe à administração o dever de executar as programações do orçamento, com os meios e medidas necessários, tendo como propósito declarado a efetiva entrega de bens e serviços à sociedade.
+- Interpretação principal: O orçamento não é apenas uma autorização para gastar: a administração tem o dever de executá-lo.
+- ATENÇÃO: Pelo § 13, o dever do § 10 se aplica exclusivamente aos orçamentos fiscal e da seguridade social da União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a efetiva entrega de bens e serviços à), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.166:PAR.3` — Art. 166, § 3º — Condições para emendar o orçamento
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O § 3º permite aprovar emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, apenas em três situações.
+- Interpretação principal: O parlamentar pode mudar o orçamento, mas não pode criar despesa do nada.
+- ATENÇÃO: Os incisos do texto estão ligados pela conjunção ou; a leitura de quais requisitos são cumulativos deve considerar a redação dos incisos I e II e a camada JURISPRUDÊNCIA.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ao projeto de lei do orçamento anual ou), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167:INC.IV` — Art. 167, inciso IV — Não vinculação da receita de impostos
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso IV proíbe vincular a receita de impostos a órgão, fundo ou despesa.
+- Interpretação principal: A receita dos impostos deve ficar livre para que o orçamento decida, a cada ano, onde aplicá-la.
+- ATENÇÃO: As exceções são as do texto.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: 158 e 159 a destinação de recursos para), NUMBER_FROM_OTHER_DEVICE(10% )
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167:PAR.3` — Art. 167, § 3º — Crédito extraordinário
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º só admite crédito extraordinário para despesas que sejam ao mesmo tempo imprevisíveis e urgentes, a exemplo das causadas por guerra, comoção interna ou calamidade pública, observado o art. 62.
+- Interpretação principal: O crédito extraordinário é a forma mais rápida de abrir uma despesa nova, porque pode ser feito por medida provisória, conforme o art. 62.
+- ATENÇÃO: A verificação concreta dos requisitos de imprevisibilidade e urgência é tema da camada JURISPRUDÊNCIA.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: guerra comoção interna ou calamidade pública…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167:PAR.7` — Art. 167, § 7º — Encargo sem fonte de custeio
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 7º proíbe que a lei imponha ou transfira encargo financeiro gerado pela prestação de serviço público, inclusive despesas de pessoal, à União, aos Estados, ao Distrito Federal ou aos Municípios…
+- Interpretação principal: Uma lei não pode criar despesa para outro ente sem dizer de onde virá o dinheiro.
+- ATENÇÃO: O alcance da regra sobre pisos salariais nacionais e seus efeitos para os entes é tema da camada JURISPRUDÊNCIA.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: prestação de serviço público inclusive despesas…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-A` — Art. 167-A — Mecanismo de ajuste fiscal
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 167-A trata da situação em que, a relação entre despesas correntes e receitas correntes, medida em doze meses, passa de 95% nos Estados, no Distrito Federal e nos Municípios.
+- Interpretação principal: O artigo cria um freio para os entes cujas despesas correntes se aproximam do total das receitas correntes.
+- ATENÇÃO: No caput, a aplicação é facultativa.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a relação entre despesas correntes e receitas…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-A:PAR.1` — Art. 167-A, §§ 1º, 2º e 3º — Acionamento antecipado pelo Executivo
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º permite que, quando a despesa corrente superar 85% da receita corrente sem passar do percentual do caput, o Chefe do Poder Executivo implemente as medidas, no todo ou em parte, por atos com…
+- Interpretação principal: O bloco permite agir antes de atingir o percentual do caput.
+- ATENÇÃO: O prazo de cento e oitenta dias conta para a apreciação pelo Legislativo.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(88%)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-A:PAR.6` — Art. 167-A, § 6º — Restrições ao ente que não adota o ajuste
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 6º estabelece que, ocorrida a hipótese do caput, até que todos os Poderes e órgãos tenham adotado todas as medidas, conforme declaração do Tribunal de Contas, é vedada a concessão de garantias ao…
+- Interpretação principal: A adoção das medidas é facultativa, mas quem não as adota sofre consequências.
+- ATENÇÃO: A vedação dura até que todos os Poderes e órgãos tenham adotado todas as medidas, segundo declaração do Tribunal de Contas.
+- Dependência externa: nenhuma
+- Warnings: lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-C` — Art. 167-C — Contratações simplificadas na calamidade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 167-C trata do Poder Executivo federal durante a calamidade.
+- Interpretação principal: Na calamidade, o governo federal pode contratar com mais rapidez.
+- ATENÇÃO: A flexibilização tem finalidade exclusiva e prazo: enfrentar a calamidade, durante a sua duração.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-D` — Art. 167-D — Dispensa de limitações legais na calamidade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 167-D trata das proposições legislativas e dos atos do Executivo feitos com o único propósito de enfrentar a calamidade e suas consequências, com vigência e efeitos limitados à sua duração.
+- Interpretação principal: As limitações legais mencionadas no texto tratam do aumento de despesa e da renúncia de receita.
+- ATENÇÃO: A dispensa não alcança despesa obrigatória de caráter continuado.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-E` — Art. 167-E — Dispensa da regra de ouro na calamidade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 167-E dispensa a observância do art. 167, III, durante todo o exercício financeiro em que vigorar a calamidade pública de âmbito nacional.
+- Interpretação principal: O art. 167, III, proíbe operações de crédito em montante superior às despesas de capital, a chamada regra de ouro.
+- ATENÇÃO: A dispensa vale para todo o exercício financeiro em que vigorar a calamidade, e não apenas para o período da calamidade dentro do ano.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-F` — Art. 167-F — Operações de crédito e superávit na calamidade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 167-F estabelece que, durante a calamidade pública nacional, ficam dispensados, durante a integralidade do exercício financeiro, os limites, condições e restrições aplicáveis à União para…
+- Interpretação principal: Na calamidade, a União pode contratar empréstimos sem os limites e condições comuns.
+- ATENÇÃO: A dispensa de limites de crédito é da União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: financeiro apurado em 31 de dezembro do ano)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-G` — Art. 167-G — Vedações de ajuste na calamidade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 167-G aplica à União, até o fim da calamidade nacional, as vedações do art. 167-A.
+- Interpretação principal: Em contrapartida às flexibilizações, a União fica sujeita, durante a calamidade, às mesmas vedações de gastos com pessoal e benefícios do mecanismo de ajuste fiscal.
+- ATENÇÃO: As exceções do § 1º valem só para medidas cuja vigência e efeitos não ultrapassem a calamidade.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos estados ao distrito federal e aos municípios), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.168` — Art. 168 — Repasse em duodécimos
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 168 garante aos órgãos do Legislativo e do Judiciário, ao Ministério Público e à Defensoria Pública a entrega dos recursos de suas dotações orçamentárias, incluídos os créditos suplementares e…
+- Interpretação principal: O Executivo arrecada e administra o caixa.
+- ATENÇÃO: O repasse é garantido aos órgãos indicados no texto.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.169:PAR.1` — Art. 169, § 1º — Requisitos para aumentar a despesa com pessoal
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º estabelece que vantagens e aumentos de remuneração, criação de cargos, empregos e funções, alteração de carreiras e admissão ou contratação de pessoal, a qualquer título, por órgãos e…
+- Interpretação principal: Antes de aumentar gastos com pessoal, o ente precisa cumprir duas condições.
+- ATENÇÃO: A ressalva das empresas estatais vale apenas para a autorização na lei de diretrizes orçamentárias.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: admissão ou contratação de pessoal a qualquer…), NEAR_COPY_MICROFIX(o_que_significa: as empresas públicas e as sociedades de economia), lint EXAMPLE_REQUIREMENT_LANGUAGE, lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.170` — Art. 170 — Princípios da ordem econômica
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 170 apoia a ordem econômica em dois fundamentos, a valorização do trabalho humano e a livre iniciativa, com a finalidade de garantir existência digna a todos, segundo a justiça social.
+- Interpretação principal: O artigo abre a parte da Constituição sobre a economia e mostra que ela combina valores diferentes.
+- ATENÇÃO: Os princípios convivem e, em casos concretos, precisam ser harmonizados.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de pequeno porte constituídas sob as leis…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.170:PAR.UNICO` — Art. 170, parágrafo único — Livre exercício de atividade econômica
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O parágrafo único assegura a todos o livre exercício de qualquer atividade econômica, sem necessidade de autorização de órgãos públicos, exceto nos casos que a lei indicar.
+- Interpretação principal: A regra é a liberdade: para abrir um negócio ou exercer uma atividade econômica, a pessoa não precisa pedir licença ao Estado.
+- ATENÇÃO: A fonte canônica remete a lei sobre liberdade econômica, que detalha o tema.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a todos o livre exercício de qualquer atividade), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.172` — Art. 172 — Capital estrangeiro
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 172 determina que a lei discipline, com base no interesse nacional, os investimentos de capital estrangeiro, incentive os reinvestimentos e regule a remessa de lucros.
+- Interpretação principal: O artigo não proíbe nem libera de forma ampla o capital estrangeiro.
+- ATENÇÃO: O artigo é uma remissão à lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: base no interesse nacional os investimentos de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.173` — Art. 173 — Exploração de atividade econômica pelo Estado
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 173 só permite que o Estado explore diretamente atividade econômica quando isso for necessário à segurança nacional ou a relevante interesse coletivo, nos termos definidos em lei, ressalvados…
+- Interpretação principal: Na ordem econômica brasileira, a atividade econômica cabe em regra aos particulares.
+- ATENÇÃO: O estatuto das estatais (§ 1º) tem explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: da empresa pública com o estado e a)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.173:PAR.1` — Art. 173, § 1º — Estatuto jurídico das empresas estatais
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 1º determina que a lei crie o estatuto jurídico das empresas públicas, das sociedades de economia mista e de suas subsidiárias que exploram atividade econômica, seja produzindo ou comercializando…
+- Interpretação principal: As empresas estatais vivem entre dois mundos: são do Estado, mas atuam no mercado.
+- ATENÇÃO: O parágrafo trata das estatais que exploram atividade econômica.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de economia mista e de suas subsidiárias que), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.174` — Art. 174 — Estado como agente normativo e regulador
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 174 estabelece que o Estado, como agente normativo e regulador da atividade econômica, fiscaliza, incentiva e planeja, na forma da lei, e o planejamento é obrigatório para o setor público e…
+- Interpretação principal: Além de atuar como empresário em casos excepcionais (art. 173), o Estado regula a economia.
+- ATENÇÃO: A fonte canônica remete o caput a lei sobre liberdade econômica, na camada de legislação correlata.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: como agente normativo e regulador da atividade…), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.175` — Art. 175 — Prestação de serviços públicos
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 175 atribui ao poder público, na forma da lei, a prestação de serviços públicos, diretamente ou sob regime de concessão ou permissão; para a concessão e para a permissão, o texto exige…
+- Interpretação principal: O serviço público é responsabilidade do Estado, que pode prestá-lo por conta própria ou transferir a execução a empresas privadas, por concessão ou permissão.
+- ATENÇÃO: O texto exige licitação para a concessão e a permissão.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: diretamente ou sob regime de concessão ou…), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (53)
 
 ### `CF88:ART.83` — Art. 83 — Ausência do País e perda do cargo
 
@@ -1566,5 +2072,93 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: e mantidas pelo poder público e à empresa), lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.151` — Art. 151 — Limitações ao poder de tributar da União
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A concessão de isenções de tributos locais por tratado…
+- Ponto jurídico: O art. 151 proíbe a União de três condutas.
+- Interpretação principal: As três vedações limitam o poder tributário da União em relação aos demais entes.
+- ATENÇÃO: A vedação do inciso III trata de isenção concedida pela União em lei própria.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.155:PAR.2:INC.VII` — Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A exigência de lei complementar para a cobrança do…
+- Ponto jurídico: O inciso VII determina que, nas vendas de bens e serviços a consumidor final localizado em outro Estado, contribuinte ou não do imposto, se aplique a alíquota interestadual, cabendo ao Estado do…
+- Interpretação principal: A regra divide o imposto entre o Estado de origem e o Estado de destino.
+- ATENÇÃO: A cobrança dessa diferença depende de lei complementar sobre o imposto.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY, lint TERM_LOW_UTILITY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.156:PAR.1` — Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: imunidade
+- Ponto jurídico: O § 1º permite que o imposto sobre a propriedade predial e territorial urbana seja progressivo conforme o valor do imóvel, tenha alíquotas diferentes conforme a localização e o uso e tenha a base de…
+- Interpretação principal: O imposto sobre imóveis urbanos pode variar de três formas.
+- ATENÇÃO: A atualização da base de cálculo pelo Executivo depende de critérios definidos em lei municipal.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167` — Art. 167 — Vedações orçamentárias
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O art. 167 lista vedações em matéria orçamentária.
+- Interpretação principal: O artigo funciona como um conjunto de regras de disciplina do orçamento.
+- ATENÇÃO: Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167:PAR.1` — Art. 167, § 1º — Investimento plurianual sem previsão
+
+- Risco: MEDIUM · complexidade: SIMPLE · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O § 1º proíbe começar investimento que dure mais de um exercício financeiro se ele não tiver sido incluído antes no plano plurianual ou se não houver lei autorizando essa inclusão.
+- Interpretação principal: Obras e investimentos que duram mais de um ano precisam estar no planejamento de médio prazo antes de começar.
+- ATENÇÃO: O processo e as penas do crime de responsabilidade são definidos em lei especial, na camada de legislação correlata.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(3 anos)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.167-B` — Art. 167-B — Regime extraordinário na calamidade nacional
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: incompatív
+- Ponto jurídico: O art. 167-B trata da calamidade pública que alcança todo o país, decretada pelo Congresso por iniciativa privativa do Presidente da República.
+- Interpretação principal: Em uma calamidade de alcance nacional, as regras fiscais e de contratação comuns podem ser lentas demais.
+- ATENÇÃO: O regime é da União e depende de decreto do Congresso.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.169` — Art. 169 — Limites de despesa com pessoal
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: perder o cargo
+- Ponto jurídico: O art. 169 proíbe que a União, os Estados, o Distrito Federal e os Municípios gastem com pessoal ativo, inativo e pensionistas acima dos limites fixados em lei complementar.
+- Interpretação principal: O artigo coloca um teto nos gastos com servidores, aposentados e pensionistas.
+- ATENÇÃO: Os §§ 1º e 3º a 7º têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e), NEAR_COPY_MICROFIX(exemplo_pratico: com cargos em comissão e funções de confiança), lint TERM_LOW_UTILITY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.169:PAR.3` — Art. 169, §§ 3º, 4º, 5º, 6º e 7º — Redução da despesa com pessoal
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: perder o cargo
+- Ponto jurídico: O § 3º determina que, para cumprir os limites no prazo da lei complementar, os entes reduzam em pelo menos vinte por cento as despesas com cargos em comissão e funções de confiança e exonerem os…
+- Interpretação principal: O bloco define uma ordem para reduzir gastos com pessoal.
+- ATENÇÃO: A perda do cargo de servidor estável é a última medida e depende de ato motivado.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cargo emprego ou função com atribuições iguais ou)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

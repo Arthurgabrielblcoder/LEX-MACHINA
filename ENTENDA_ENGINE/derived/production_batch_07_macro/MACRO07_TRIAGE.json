@@ -23,30 +23,30 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 97,
-  "B_CLEAN_MEDIUM": 45,
+  "A_CLEAN_LOW": 143,
+  "B_CLEAN_MEDIUM": 53,
   "C_QUICK_REVIEW": 0,
-  "D_FULL_HUMAN_REVIEW": 28,
+  "D_FULL_HUMAN_REVIEW": 53,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 97,
-  "MEDIUM": 45,
-  "HIGH": 28
+  "LOW": 143,
+  "MEDIUM": 53,
+  "HIGH": 53
  },
  "complexity_counts": {
-  "STRUCTURED": 93,
-  "SIMPLE": 8,
-  "EXTERNAL": 69
+  "STRUCTURED": 135,
+  "SIMPLE": 11,
+  "EXTERNAL": 103
  },
  "jurisprudence_counts": {
-  "NONE": 134,
-  "CONTEXT_ONLY": 22,
-  "REQUIRED_FOR_CORRECTNESS": 14
+  "NONE": 207,
+  "CONTEXT_ONLY": 24,
+  "REQUIRED_FOR_CORRECTNESS": 18
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 97,
+   "A_CLEAN_LOW": 143,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -54,7 +54,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 45,
+   "B_CLEAN_MEDIUM": 53,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -63,30 +63,30 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 28,
+   "D_FULL_HUMAN_REVIEW": 53,
    "E_HARD_FAIL": 0
   }
  },
  "by_complexity": {
   "SIMPLE": {
-   "A_CLEAN_LOW": 7,
-   "B_CLEAN_MEDIUM": 1,
+   "A_CLEAN_LOW": 9,
+   "B_CLEAN_MEDIUM": 2,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 71,
-   "B_CLEAN_MEDIUM": 22,
+   "A_CLEAN_LOW": 103,
+   "B_CLEAN_MEDIUM": 24,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 8,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 19,
-   "B_CLEAN_MEDIUM": 22,
+   "A_CLEAN_LOW": 31,
+   "B_CLEAN_MEDIUM": 27,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 28,
+   "D_FULL_HUMAN_REVIEW": 45,
    "E_HARD_FAIL": 0
   }
  },
@@ -1017,10 +1017,10 @@
    "detectors": [],
    "info": [
     {
-     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "code": "NUMBER_FROM_OTHER_DEVICE",
      "section": "exemplo_pratico",
-     "match": "20%",
-     "detail": "numero do exemplo nao esta no texto"
+     "match": "20% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
     }
    ],
    "lint": [],
@@ -1063,10 +1063,10 @@
    ],
    "info": [
     {
-     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "code": "NUMBER_FROM_OTHER_DEVICE",
      "section": "exemplo_pratico",
-     "match": "30%",
-     "detail": "numero do exemplo nao esta no texto"
+     "match": "30% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
     }
    ],
    "lint": [
@@ -3567,6 +3567,1767 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.152",
+   "title": "Art. 152 — Vedação de diferença pela origem ou pelo destino",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "diferença tributária entre bens e serviços de qualquer",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.1",
+   "title": "Art. 153, § 1º — Alteração de alíquotas pelo Executivo",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as condições e os limites estabelecidos em lei",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.4",
+   "title": "Art. 153, § 4º — Imposto territorial rural",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "incidirá sobre pequenas glebas rurais definidas em lei",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.5",
+   "title": "Art. 153, § 5º — Ouro como ativo financeiro",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.153:PAR.5: Vide Emenda Constitucional n. 3, de 1993)",
+    "number_or_percentage: por cento",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.154",
+   "title": "Art. 154 — Competência residual e impostos de guerra",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "extraordinários compreendidos ou não em sua competência tributária",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.1",
+   "title": "Art. 155, § 1º — Imposto sobre heranças e doações",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "valor do quinhão do legado ou da doação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.X",
+   "title": "Art. 155, § 2º, inciso X — Não incidências do imposto sobre circulação de mercadorias",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "remissao: arts. 153"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.3",
+   "title": "Art. 155, § 3º — Impostos sobre energia, telecomunicações e combustíveis",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "derivados de petróleo combustíveis e minerais do país",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.4",
+   "title": "Art. 155, §§ 4º e 5º — Incidência única sobre combustíveis",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 150",
+    "block com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-B:PAR.3",
+   "title": "Art. 156-B, §§ 3º e 4º — Composição e deliberação do Comitê Gestor",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "number_or_percentage: vinte",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 10 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o conjunto dos municípios e do distrito federal",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.157",
+   "title": "Art. 157 — Receitas tributárias dos Estados vindas da União",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: vinte",
+    "remissao: arts. 154",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o produto da arrecadação do imposto da união",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.159",
+   "title": "Art. 159 — Entregas da União aos Estados e Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.159:CAPUT: Vide Emenda Constitucional n. 55, de 2007)",
+    "number_or_percentage: %",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 153, 157, 158, 177",
+    "overview com 15 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do imposto sobre produtos industrializados e do imposto",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.160",
+   "title": "Art. 160 — Vedação de retenção das receitas repartidas",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 198",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a retenção ou qualquer restrição à entrega e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.160:PAR.1",
+   "title": "Art. 160, §§ 1º e 2º — Condicionamento e dedução dos repasses",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 198",
+    "block com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao pagamento de seus créditos inclusive de suas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.161",
+   "title": "Art. 161 — Lei complementar da repartição de receitas",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "remissao: arts. 157, 158, 159",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.162",
+   "title": "Art. 162 — Divulgação da arrecadação e dos repasses",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.163",
+   "title": "Art. 163 — Lei complementar de finanças públicas",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 167",
+    "overview com 17 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "compatibilização das funções das instituições oficiais de crédito",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.163-A",
+   "title": "Art. 163-A — Dados contábeis e fiscais padronizados",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "2",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.164",
+   "title": "Art. 164 — Banco Central e emissão de moeda",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvados",
+    "law_dependency: previstos em lei",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a oferta de moeda ou a taxa de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.164-A",
+   "title": "Art. 164-A — Sustentabilidade da dívida pública",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 163",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a compatibilidade dos indicadores fiscais com a sustentabilidade",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165",
+   "title": "Art. 165 — Leis orçamentárias",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.165:PAR.3: Vide Emenda constitucional n. 106, de 2020)",
+    "quorum: maioria",
+    "deadline: trinta dias",
+    "number_or_percentage: trinta",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 6, 37, 100, 107, 166",
+    "overview com 36 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.2",
+   "title": "Art. 165, § 2º — Lei de diretrizes orçamentárias",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a política de aplicação das agências financeiras oficiais",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.5",
+   "title": "Art. 165, § 5º — Os três orçamentos da lei anual",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "e fundações instituídos e mantidos pelo poder público",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.8",
+   "title": "Art. 165, § 8º — Exclusividade da lei orçamentária",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: nos termos da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.10",
+   "title": "Art. 165, §§ 10 e 11 — Dever de executar o orçamento",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: nos termos da lei",
+    "block com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a efetiva entrega de bens e serviços à",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.3",
+   "title": "Art. 166, § 3º — Condições para emendar o orçamento",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao projeto de lei do orçamento anual ou",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167:INC.IV",
+   "title": "Art. 167, inciso IV — Não vinculação da receita de impostos",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvadas",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 158, 165, 198"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "158 e 159 a destinação de recursos para",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "10% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.3",
+   "title": "Art. 167, § 3º — Crédito extraordinário",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "remissao: arts. 62"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "guerra comoção interna ou calamidade pública observado o",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.7",
+   "title": "Art. 167, § 7º — Encargo sem fonte de custeio",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvadas",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 7"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "prestação de serviço público inclusive despesas de pessoal",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-A",
+   "title": "Art. 167-A — Mecanismo de ajuste fiscal",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: doze",
+    "exception: exceto",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 7, 37",
+    "overview com 29 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a relação entre despesas correntes e receitas correntes",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-A:PAR.1",
+   "title": "Art. 167-A, §§ 1º, 2º e 3º — Acionamento antecipado pelo Executivo",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "88%",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-A:PAR.6",
+   "title": "Art. 167-A, § 6º — Restrições ao ente que não adota o ajuste",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvados",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-C",
+   "title": "Art. 167-C — Contratações simplificadas na calamidade",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 37, 169",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-D",
+   "title": "Art. 167-D — Dispensa de limitações legais na calamidade",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 167, 195",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-E",
+   "title": "Art. 167-E — Dispensa da regra de ouro na calamidade",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 167",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-F",
+   "title": "Art. 167-F — Operações de crédito e superávit na calamidade",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 167, 195",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "financeiro apurado em 31 de dezembro do ano",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-G",
+   "title": "Art. 167-G — Vedações de ajuste na calamidade",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 159, 167",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aos estados ao distrito federal e aos municípios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.168",
+   "title": "Art. 168 — Repasse em duodécimos",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 165",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.169:PAR.1",
+   "title": "Art. 169, § 1º — Requisitos para aumentar a despesa com pessoal",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvadas"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "admissão ou contratação de pessoal a qualquer título",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "as empresas públicas e as sociedades de economia",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.170",
+   "title": "Art. 170 — Princípios da ordem econômica",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.170:PAR.UNICO: Vide Lei n. 13.874, de 2019)",
+    "exception: salvo",
+    "law_dependency: previstos em lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de pequeno porte constituídas sob as leis brasileiras",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.170:PAR.UNICO",
+   "title": "Art. 170, parágrafo único — Livre exercício de atividade econômica",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.170:PAR.UNICO: Vide Lei n. 13.874, de 2019)",
+    "camada externa: nota externa",
+    "exception: salvo",
+    "law_dependency: previstos em lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a todos o livre exercício de qualquer atividade",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.172",
+   "title": "Art. 172 — Capital estrangeiro",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "base no interesse nacional os investimentos de capital",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "exemplo_pratico",
+     "match": "incentivos",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.173",
+   "title": "Art. 173 — Exploração de atividade econômica pelo Estado",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: Ressalvados",
+    "law_dependency: lei estabelecerá",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da empresa pública com o estado e a",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.173:PAR.1",
+   "title": "Art. 173, § 1º — Estatuto jurídico das empresas estatais",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei estabelecerá",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de economia mista e de suas subsidiárias que",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.174",
+   "title": "Art. 174 — Estado como agente normativo e regulador",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.174:CAPUT: Vide Lei n. 13.874, de 2019)",
+    "camada externa: nota externa",
+    "law_dependency: na forma da lei",
+    "remissao: arts. 21",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "como agente normativo e regulador da atividade econômica",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentiva",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.175",
+   "title": "Art. 175 — Prestação de serviços públicos",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: na forma da lei",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "diretamente ou sob regime de concessão ou permissão",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.83",
    "title": "Art. 83 — Ausência do País e perda do cargo",
    "role": "OVERVIEW",
@@ -5476,6 +7237,332 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.151",
+   "title": "Art. 151 — Limitações ao poder de tributar da União",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A concessão de isenções de tributos locais por tratado internacional é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    }
+   ],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "title": "Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A exigência de lei complementar para a cobrança do diferencial de alíquotas e seus efeitos no tempo são temas da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 4 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.1",
+   "title": "Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 150, 182",
+    "block com 5 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167",
+   "title": "Art. 167 — Vedações orçamentárias",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: maioria",
+    "deadline: quatro meses",
+    "number_or_percentage: quatro",
+    "exception: ressalvadas",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (8 anotacao(oes))",
+    "remissao: arts. 7, 40, 62, 155, 158",
+    "overview com 23 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.1",
+   "title": "Art. 167, § 1º — Investimento plurianual sem previsão",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "3 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "title": "Art. 167-B — Regime extraordinário na calamidade nacional",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: incompatív"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 167",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.169",
+   "title": "Art. 169 — Limites de despesa com pessoal",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.169:PAR.3:INC.II: Vide Emenda Constitucional n. 19, de 1998)",
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: vinte",
+    "exception: ressalvadas",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "overview com 13 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "exemplo_pratico",
+     "match": "com cargos em comissão e funções de confiança",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.169:PAR.3",
+   "title": "Art. 169, §§ 3º, 4º, 5º, 6º e 7º — Redução da despesa com pessoal",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.169:PAR.3:INC.II: Vide Emenda Constitucional n. 19, de 1998)",
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: vinte",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 7 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cargo emprego ou função com atribuições iguais ou",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.82",
    "title": "Art. 82 — Duração e início do mandato presidencial",
    "role": "OVERVIEW",
@@ -6882,39 +8969,1204 @@
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "title": "Art. 153 — Impostos da União",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.153:PAR.5: Vide Emenda Constitucional n. 3, de 1993)",
+    "camada externa: nota externa",
+    "number_or_percentage: por cento",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 155",
+    "overview com 33 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bens e serviços prejudiciais à saúde ou ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "bens e serviços prejudiciais à saúde ou ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.3",
+   "title": "Art. 153, § 3º — Regras do imposto sobre produtos industrializados",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "title": "Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "155 ii 156 iii 156 a e 195",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "title": "Art. 155 — Impostos dos Estados e do Distrito Federal",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.155:PAR.2:INC.XII:AL.h: Vide Emenda Constitucional n. 33, de 2001)",
+    "camada externa: nota externa",
+    "quorum: um terço",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (11 anotacao(oes))",
+    "remissao: arts. 150, 153",
+    "overview com 69 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2",
+   "title": "Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: um terço",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: lei complementar",
+    "remissao: arts. 153"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "title": "Art. 155, § 6º — Imposto sobre a propriedade de veículos",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: vinte",
+    "exception: excetuad",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "veículos terrestres de passageiros caminhonetes e mistos com",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156",
+   "title": "Art. 156 — Impostos dos Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "exception: exceto",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (6 anotacao(oes))",
+    "remissao: arts. 150, 155, 182",
+    "overview com 17 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "title": "Art. 156, § 2º — Imposto sobre a transmissão de imóveis",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: salvo"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a compra e venda desses bens ou direitos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.3",
+   "title": "Art. 156, § 3º — Lei complementar do imposto sobre serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "title": "Art. 156-A — Imposto sobre bens e serviços",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: %",
+    "exception: ressalvado",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 29, 153, 158, 239",
+    "overview com 64 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "alíquotas do estado e do município de destino",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "title": "Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvado",
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153, 239"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "alíquotas do estado e do município de destino",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "title": "Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: %",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "title": "Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "atividade esportiva desenvolvida por sociedade anônima do futebol",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "em relação aos adquirentes dos bens e serviços",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "title": "Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "title": "Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "seja calculada e concedida no momento da cobrança",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "title": "Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "number_or_percentage: vinte",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 156",
+    "overview com 28 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "comitê gestor do imposto sobre bens e serviços",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "title": "Art. 158 — Receitas tributárias dos Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: por cento",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 153, 156",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cinquenta por cento do produto da arrecadação do",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "fracao 1/2 ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.158:PAR.1",
+   "title": "Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 8 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "title": "Art. 159, inciso I — Fundos de participação",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao fundo de participação dos estados e do",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "title": "Art. 159-A — Fundo Nacional de Desenvolvimento Regional",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 3, 159",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.18",
+   "title": "Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 6, 100, 107",
+    "block com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "107 a do ato das disposições constitucionais transitórias",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "TRANSITION_IN_CORE:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.166",
+   "title": "Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3)"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: incompatív",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166:PAR.9: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: duas",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 58, 165, 169, 198",
+    "overview com 32 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "166 com controle de constitucionalidade (Vide ADI 7697):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de lei do plano plurianual das diretrizes orçamentárias",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.9",
+   "title": "Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166:PAR.9: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697)",
+    "camada externa: nota externa",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 198",
+    "block com 3 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "Vide ADI 7697 anotada na fonte canônica para os §§ 9º, 9º-A e 10:",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da receita corrente líquida do exercício anterior ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "title": "Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697)",
+    "camada externa: jurisprudencia, nota externa",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: %",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 165",
+    "block com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "Vide ADI 7697 anotada na fonte canônica para os §§ 11 a 20 do art.",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.166-A",
+   "title": "Art. 166-A — Transferências por emendas individuais",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166-A:CAPUT: Vide ADI 7697"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166-A:CAPUT: Vide ADI 7697)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 166",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "Vide ADI 7697 anotada na fonte canônica para o art.",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a estados ao distrito federal e a municípios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.166-A:CAPUT: Vide ADI 7697",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
   }
  ],
  "d_reasons": {
   "INTERPRETIVE_CONTROVERSY": 3,
-  "JUDICIAL_REVIEW_ANNOTATED": 10,
-  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 14,
-  "TRANSITION_OR_TEMPORAL": 6
+  "JUDICIAL_REVIEW_ANNOTATED": 14,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 18,
+  "TRANSITION_OR_TEMPORAL": 26
  },
  "finding_counts": {
-  "EXTERNAL_FACT_NEEDS_PROVENANCE": 18
+  "EXTERNAL_FACT_NEEDS_PROVENANCE": 22
  },
  "refined_false_positive_counts": {
+  "TELEOLOGY_SPECULATIVE": 3,
   "UNIVERSAL_CLAIM": 3
  },
  "metrics": {
-  "total_draft_chars": 238394,
-  "old_model_full_package_chars": 516818,
-  "presented_chars": 248062,
+  "total_draft_chars": 355790,
+  "old_model_full_package_chars": 818019,
+  "presented_chars": 441681,
   "presented_by_file": {
-   "MACRO07_COMPACT_AB_REVIEW.md": 105086,
-   "MACRO07_FULL_D_REVIEW.md": 119801,
+   "MACRO07_COMPACT_AB_REVIEW.md": 143952,
+   "MACRO07_FULL_D_REVIEW.md": 263630,
    "MACRO07_HARD_FAIL_REPORT.md": 119,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 22891,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 33815,
    "MACRO07_QUICK_C_REVIEW.md": 165
   },
-  "reduction_abs": 268756,
-  "reduction_pct": 52.0
+  "reduction_abs": 376338,
+  "reduction_pct": 46.0
  },
- "d_ratio": 0.165,
+ "d_ratio": 0.213,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 91,
+  "eligible": 146,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -6991,6 +10243,27 @@
     "REUSO_DE_APROVADO": 1,
     "TELEOLOGIA": 20,
     "TRANSICAO_E_EFEITO_TEMPORAL": 3
+   }
+  },
+  "D": {
+   "corrections": 156,
+   "by_category": {
+    "CONTRATO_DO_MOTOR": 2,
+    "COPIA_DA_LEI_SECA": 56,
+    "EXCECAO_FORA_DO_TEXTO": 5,
+    "FATO_EXTERNO": 11,
+    "FRASE_LONGA": 17,
+    "GENERALIZACAO": 9,
+    "GLOSSARIO": 5,
+    "HISTORICO_NAO_VERIFICADO": 2,
+    "INTERPRETACAO_COMO_REGRA": 2,
+    "JURISPRUDENCIA_VELADA": 2,
+    "LISTA_INCOMPLETA": 12,
+    "MODALIDADE": 2,
+    "NUMERO": 7,
+    "REMISSAO": 1,
+    "RESSALVA_OMITIDA": 7,
+    "TELEOLOGIA": 16
    }
   }
  },

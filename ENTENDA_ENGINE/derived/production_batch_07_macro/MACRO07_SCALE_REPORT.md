@@ -2,17 +2,17 @@
 
 Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · **0 HUMAN_APPROVED_T1 novos**: todas as explicações novas estão `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.
 
-Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–125), MACRO_07_C (arts. 126–150).
+Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–125), MACRO_07_C (arts. 126–150), MACRO_07_D (arts. 151–175).
 
 ## Seleção
 
 | | |
 |---|---|
-| Artigos | 83 |
-| Targets analisados | 814 (783 vigentes; excluídos: EXCLUDED_HISTORICAL 23, EXCLUDED_REVOKED 8) |
-| SELECT | 171 = 170 novas + 1 reutilizada(s) já aprovada(s) |
-| SKIP | 612 (todos com motivo e explicação que os cobre) |
-| Papéis das novas | BLOCK 31, DEVICE 32, ITEM 26, OVERVIEW 81 |
+| Artigos | 121 |
+| Targets analisados | 1367 (1309 vigentes; excluídos: EXCLUDED_HISTORICAL 39, EXCLUDED_REVOKED 19) |
+| SELECT | 250 = 249 novas + 1 reutilizada(s) já aprovada(s) |
+| SKIP | 1059 (todos com motivo e explicação que os cobre) |
+| Papéis das novas | BLOCK 44, DEVICE 58, ITEM 29, OVERVIEW 118 |
 
 ## Por sub-bloco
 
@@ -21,36 +21,37 @@ Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–12
 | MACRO_07_A | 25 | 260 | 55 | 205 | 55 | 31/16/8 | 31/16/0/8/0 | 75 |
 | MACRO_07_B | 28 | 256 | 49 | 207 | 49 | 23/16/10 | 23/16/0/10/0 | 77 |
 | MACRO_07_C | 30 | 267 | 67 | 200 | 66 | 43/13/10 | 43/13/0/10/0 | 133 |
+| MACRO_07_D | 38 | 526 | 79 | 447 | 79 | 46/8/25 | 46/8/0/25/0 | 156 |
 
 ## Dois eixos e filas
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
-| LOW | 97 | | SIMPLE | 8 |
-| MEDIUM | 45 | | STRUCTURED | 93 |
-| HIGH | 28 | | EXTERNAL | 69 |
+| LOW | 143 | | SIMPLE | 11 |
+| MEDIUM | 53 | | STRUCTURED | 135 |
+| HIGH | 53 | | EXTERNAL | 103 |
 
 | Fila | Itens |
 |---|---|
-| A_CLEAN_LOW | 97 |
-| B_CLEAN_MEDIUM | 45 |
+| A_CLEAN_LOW | 143 |
+| B_CLEAN_MEDIUM | 53 |
 | C_QUICK_REVIEW | 0 |
-| D_FULL_HUMAN_REVIEW | 28 |
+| D_FULL_HUMAN_REVIEW | 53 |
 | E_HARD_FAIL | 0 |
 
-D = 16.5% das novas.
-Jurisprudência: CONTEXT_ONLY 22, NONE 134, REQUIRED_FOR_CORRECTNESS 14.
+D = 21.3% das novas.
+Jurisprudência: CONTEXT_ONLY 24, NONE 207, REQUIRED_FOR_CORRECTNESS 18.
 
 ## Motivos dos D
 
 - INTERPRETIVE_CONTROVERSY: 3
-- JUDICIAL_REVIEW_ANNOTATED: 10
-- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 14
-- TRANSITION_OR_TEMPORAL: 6
+- JUDICIAL_REVIEW_ANNOTATED: 14
+- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 18
+- TRANSITION_OR_TEMPORAL: 26
 
 ## Achados REVIEW_REQUIRED
 
-- EXTERNAL_FACT_NEEDS_PROVENANCE: 18
+- EXTERNAL_FACT_NEEDS_PROVENANCE: 22
 
 ## Dependências externas
 
@@ -60,20 +61,24 @@ Jurisprudência: CONTEXT_ONLY 22, NONE 134, REQUIRED_FOR_CORRECTNESS 14.
 - `CF88:ART.114`: ADI 3423, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
 - `CF88:ART.114:PAR.1`: ADI 3423, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
 - `CF88:ART.114:PAR.3`: ADI 3423 · resolver EXTERNAL_VERIFICATION_REQUIRED
+- `CF88:ART.166`: ADI 7697, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
+- `CF88:ART.166:PAR.9`: ADI 7697 · resolver EXTERNAL_VERIFICATION_REQUIRED
+- `CF88:ART.166:PAR.11`: ADI 7697, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
+- `CF88:ART.166-A`: ADI 7697, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
 
 ## Volume para o humano
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 238.394 |
-| Modelo antigo (pacote completo de todos os itens) | 516.818 |
-| **Apresentado ao humano (pacotes + prioridade)** | **248.062** |
-| — MACRO07_COMPACT_AB_REVIEW.md | 105.086 |
-| — MACRO07_FULL_D_REVIEW.md | 119.801 |
+| Rascunhos (5 seções + glossário) | 355.790 |
+| Modelo antigo (pacote completo de todos os itens) | 818.019 |
+| **Apresentado ao humano (pacotes + prioridade)** | **441.681** |
+| — MACRO07_COMPACT_AB_REVIEW.md | 143.952 |
+| — MACRO07_FULL_D_REVIEW.md | 263.630 |
 | — MACRO07_HARD_FAIL_REPORT.md | 119 |
-| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 22.891 |
+| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 33.815 |
 | — MACRO07_QUICK_C_REVIEW.md | 165 |
-| Redução vs. modelo antigo | 268.756 (52.0%) |
+| Redução vs. modelo antigo | 376.338 (46.0%) |
 
 ## Checks estruturais
 
