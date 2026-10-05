@@ -127,7 +127,8 @@ SANCTION_RE = re.compile(r'perd(?:a|er[áa]?) (?:d[oa] |o |a )?(?:mandato|cargo)
 SENSITIVE_RE = re.compile(r'perd(?:a|er[áa]?) (?:d[oa] |o |a )?(?:mandato|cargo)|\bimunidade|\binviol[áa]v|\bincompat[íi]v|\bsan[çc][ãa]o|'
                           r'\bsan[çc][õo]es|\bmulta\b|\bcrimes?\b|\bprerrogativ|\bcassa|\bsob pena\b|\bpris[ãa]o\b', re.I)
 LEGAL_FULL_CODES = {'CATALOG_CONTRADICTION', 'INTERPRETATION_AS_RULE', 'LAW_STATUS_CLAIM', 'OUTDATED_CONTROVERSY', 'RESOLVED_TREATED_AS_OPEN',
-                    'SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', 'CATALOG_LINK_MISSING'}
+                    'SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', 'CATALOG_LINK_MISSING', 'JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE',
+                    'PRISON_SCOPE_UNQUALIFIED'}
 UNGROUNDED_CODES = {'CONDITION_NOT_IN_TEXT', 'EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE', 'EXTERNAL_NORMATIVE_CONTENT_CLAIM'}
 
 

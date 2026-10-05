@@ -29,6 +29,11 @@ New detectors (REVIEW_REQUIRED unless stated):
   CONDITION_NOT_IN_TEXT            "desde que / contanto que / so se" introduces a condition whose terms are not in the Lei Seca
   SEMANTIC_AMBIGUITY_REVIEW_REQUIRED a registered ambiguous phrase (editorial/T1_SEMANTIC_AMBIGUITY_REGISTRY.json) is paraphrased instead
                                    of being quoted, i.e. the draft resolves the ambiguity by itself (FULL)
+  JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE  the body states current case law ("o Supremo decidiu/exige/admite...") without content_provenance (FULL);
+                                   with provenance -> INFO (Round D: current precedent limiting the literal reading needs provenance)
+  PRISON_SCOPE_UNQUALIFIED         an arrest immunity taught as an absolute ban on any prison, with no distinction between precautionary
+                                   arrest and serving a final sentence (FULL; Round D, art. 53, par. 2)
+  A registered ambiguity closed by official source + human decision (resolution RESOLVED_BY_OFFICIAL_SOURCE) only yields INFO.
 Interpretive signals (input of t1_risk.assess, not findings): jurisprudence REQUIRED_FOR_CORRECTNESS vs CONTEXT_ONLY, controversy, ambiguity.
 Known limits: listed in LIMITS (copied into the batch reports).
 """
@@ -39,7 +44,7 @@ from pathlib import Path
 import entenda_engine as E
 import t1_validator_v2 as V
 
-VERSION = 'T1_VALIDATOR_V3 (A6 + recalibracao Batch06, 2026-10-05)'
+VERSION = 'T1_VALIDATOR_V3 (A6 + recalibracao Batch06 + licoes da fila D, 2026-10-05)'
 HERE = Path(__file__).resolve().parent
 AMBIGUITY_REGISTRY = HERE / 'editorial/T1_SEMANTIC_AMBIGUITY_REGISTRY.json'
 QUICK_V3 = {'NUMBER_NOT_IN_TEXT', 'RESSALVA_OMITTED_IN_SUMMARY', 'LIST_ITEM_POSSIBLY_DROPPED', 'HISTORICAL_CLAIM_UNVERIFIED', 'CONDITION_NOT_IN_TEXT'}
@@ -54,6 +59,10 @@ LIMITS = [
     'sem esse verbo nao e detectada. Remissao a artigo da propria CF presente no runtime e tratada como ancorada (o pacote D lista o texto).',
     'A distincao JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS x CONTEXT_ONLY le os marcadores de dependencia interpretativa que o proprio draft '
     'escreve; jurisprudencia necessaria e nao sinalizada pelo draft so e pega quando ha nota da camada e condicao sem base no texto.',
+    'JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE so reconhece afirmacoes explicitas ("o Supremo decidiu/exige/admite", "a jurisprudencia '
+    'delimita/reconhece"); jurisprudencia implicita (regra afirmada sem atribuicao) nao e detectada.',
+    'PRISON_SCOPE_UNQUALIFIED cobre so a vedacao de prisao formulada como absoluta; outras garantias processuais ensinadas como absolutas '
+    'dependem de UNIVERSAL_CLAIM/EXCEPTION_OR_RESSALVA_DROPPED.',
     'Nenhum check interpreta juridicamente o dispositivo: eles roteiam risco para revisao humana.',
 ]
 
@@ -367,6 +376,10 @@ def ambiguity_findings(rec, registry):
     for e in registry.get('entries', []):
         if e['phrase'] not in snap:
             continue
+        res = e.get('resolution') or {}
+        if res.get('status') == 'RESOLVED_BY_OFFICIAL_SOURCE':   # human decision + official source closed the ambiguity: paraphrase accepted
+            out.append(_f('SEMANTIC_AMBIGUITY_RESOLVED', 'INFO', None, '*', e['phrase'], '', f"{e['id']}: {res.get('reading', '')[:160]}"))
+            continue
         keys = e['paraphrase_stems']
         for sec, text in V._texts(rec, V.BODY):
             for s in _sentences(text):
@@ -375,6 +388,51 @@ def ambiguity_findings(rec, registry):
                     out.append(_f('SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', 'REVIEW_REQUIRED', 'FULL', sec, e['phrase'], s,
                                   f"{e['id']}: a explicacao parafraseia a expressao ambigua em vez de cita-la ({e['ambiguity']})"))
         out.append(_f('SEMANTIC_AMBIGUITY_REGISTERED', 'INFO', None, '*', e['phrase'], '', f"{e['id']}: {e['ambiguity']}"))
+    return out
+
+
+JURIS_CLAIM = re.compile(r'(\b(?:o )?Supremo(?: Tribunal Federal)? (?:decidiu|interpretou|exige|admite|reconhece|entende|entendeu|fixou|firmou)\b|'
+                         r'\ba jurisprud[êe]ncia(?: atual| do Supremo(?: Tribunal Federal)?)? (?:também )?(?:delimita|reconhece|admite|exige|restringe|limita)\b|'
+                         r'\b[Ss]egundo a jurisprud[êe]ncia\b|objeto de aprecia[çc][ãa]o pelo Supremo)', re.I)
+PRISON_ABSOLUTE = re.compile(r'\bn[ãa]o (?:pode|podem|poder[áa]|poder[ãa]o) ser pres[oa]s?\b|\bnenhuma pris[ãa]o\b|\bpro[íi]be a pris[ãa]o\b', re.I)
+PRISON_IMMUNITY_TEXT = re.compile(r'n[ãa]o poder[ãa]?o? ser pres[oa]s?|n[ãa]o estar[áa] sujeit[oa] a pris[ãa]o', re.I)
+PRISON_QUALIFIED = re.compile(r'pris(?:[ãa]o|[õo]es) cautelar(?:es)?|pris[ãa]o-pena|condena[çc][ãa]o (?:criminal )?(?:definitiva|transitada)|'
+                              r'tr[âa]nsito em julgado', re.I)
+
+
+def jurisprudence_claim_findings(rec):
+    """Round D lesson: a statement of current case law in the T1 body (the Supreme Court decided/requires/admits...) is external
+    content: it needs registered provenance (A6). Without it -> REVIEW (FULL); with it -> INFO."""
+    out = []
+    has_prov = bool(V._provenance(rec))
+    for sec in V.BODY:
+        for s in _sentences(rec['content'].get(sec) or ''):
+            m = JURIS_CLAIM.search(s)
+            if not m:
+                continue
+            if has_prov:
+                out.append(_f('JURISPRUDENCE_CLAIM_WITH_PROVENANCE', 'INFO', None, sec, m.group(0), s, 'content_provenance registrada'))
+            else:
+                out.append(_f('JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE', 'REVIEW_REQUIRED', 'FULL', sec, m.group(0), s,
+                              'afirmacao sobre jurisprudencia no corpo T1 sem content_provenance (padrao A6)'))
+    return out
+
+
+def prison_scope_findings(rec):
+    """Round D lesson (art. 53, par. 2): an immunity against arrest must not be taught as an absolute ban on any prison; the draft has
+    to distinguish precautionary arrest from serving a final sentence. Flags an absolute prison ban when the body never qualifies it."""
+    if not PRISON_IMMUNITY_TEXT.search(rec['source']['source_text_snapshot']):
+        return []   # only personal immunity against arrest in the Lei Seca (not, e.g., the ban on civil imprisonment for debt)
+    body = ' '.join(rec['content'].get(k) or '' for k in V.BODY)
+    if PRISON_QUALIFIED.search(body):
+        return []
+    out = []
+    for sec in V.BODY:
+        for s in _sentences(rec['content'].get(sec) or ''):
+            m = PRISON_ABSOLUTE.search(s)
+            if m:
+                out.append(_f('PRISON_SCOPE_UNQUALIFIED', 'REVIEW_REQUIRED', 'FULL', sec, m.group(0), s,
+                              'vedacao de prisao apresentada como absoluta: distinguir prisao cautelar de prisao-pena apos condenacao definitiva'))
     return out
 
 
@@ -466,6 +524,7 @@ def validate(rec, ctx, catalog, known=None, lint_rows=(), editorial_rows=(), own
     findings += number_findings(rec, ground, scope_text) + ressalva_findings(rec, ctx, set(owned_elsewhere)) + list_findings(rec, ctx)
     findings += external_claim_findings(rec, catalog, set(pinned_targets)) + historical_findings(rec, set(vigency_ecs))
     findings += condition_findings(rec, ground) + ambiguity_findings(rec, registry or load_registry())
+    findings += jurisprudence_claim_findings(rec) + prison_scope_findings(rec)
     return V.apply_known(rec, findings, known or {})
 
 

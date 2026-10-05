@@ -1,14 +1,31 @@
 {
  "schema_version": 1,
- "policy": "Expressoes da Lei Seca com ambiguidade semantica registrada (dado, nao codigo). Se a explicacao parafrasear a expressao em vez de cita-la, ela resolve sozinha a ambiguidade: SEMANTIC_AMBIGUITY_REVIEW_REQUIRED (FULL). A citacao literal entre aspas e aceita. Nenhuma interpretacao e fornecida aqui. Entrada nova so com revisao humana.",
+ "policy": "Expressoes da Lei Seca com ambiguidade semantica registrada (dado, nao codigo). Se a explicacao parafrasear a expressao em vez de cita-la, ela resolve sozinha a ambiguidade: SEMANTIC_AMBIGUITY_REVIEW_REQUIRED (FULL). A citacao literal entre aspas e aceita. Nenhuma interpretacao e fornecida aqui. Entrada nova so com revisao humana. Uma entrada pode ser encerrada (resolution.status RESOLVED_BY_OFFICIAL_SOURCE) quando fonte oficial e historico normativo esclarecem o alcance com suficiencia, por decisao humana registrada: a parafrase passa a ser aceita e a entrada deixa de gerar risco juridico.",
  "entries": [
   {
    "id": "CF88_ART75_VEDADA_SUA_EXTINCAO",
    "phrase": "vedada sua extinção, criação ou instalação",
-   "paraphrase_stems": ["extin", "cria", "instala"],
-   "accepted_quotes": ["\"vedada sua extinção, criação ou instalação\"", "\"sua extinção, criação ou instalação\""],
+   "paraphrase_stems": [
+    "extin",
+    "cria",
+    "instala"
+   ],
+   "accepted_quotes": [
+    "\"vedada sua extinção, criação ou instalação\"",
+    "\"sua extinção, criação ou instalação\""
+   ],
    "ambiguity": "referente do pronome \"sua\" (Tribunais de Contas em geral, os dos Estados/DF ou os Tribunais e Conselhos de Contas dos Municipios) e relacao com o art. 31, § 4º",
-   "registered_from": "checkpoint Batch06 7c59f2e (BATCH06_SCALE_REPORT, padrao 1); fonte oficial versionada contem a expressao (updater/fontes_oficiais_senado/CF88)"
+   "registered_from": "checkpoint Batch06 7c59f2e (BATCH06_SCALE_REPORT, padrao 1); fonte oficial versionada contem a expressao (updater/fontes_oficiais_senado/CF88)",
+   "resolution": {
+    "status": "RESOLVED_BY_OFFICIAL_SOURCE",
+    "decided_by": "revisao juridica humana da fila D do Batch06 (ROUND_D_HUMAN_REVIEW_DECISIONS.json, 2026-10-05)",
+    "reading": "a vedacao alcanca a extincao dos Tribunais/Conselhos de Contas existentes e a criacao ou instalacao de novos abrangidos pela regra (EC 139/2026; mesma vedacao no art. 31, par. 1o); o art. 31, par. 4o, continua vedando a criacao de orgaos de contas municipais, sem contradicao",
+    "evidence": [
+     "updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt (arts. 31, par. 1o, e 75)",
+     "fonte canonica estrutural: Redacao dada pela Emenda Constitucional no 139, de 2026",
+     "fontes oficiais indicadas pela revisao humana (Camara, Senado, Presidencia; sessao de promulgacao)"
+    ]
+   }
   }
  ]
 }
