@@ -7911,3 +7911,886 @@ O prazo de quinze meses é contado da promulgação da emenda de 2025, cuja data
 
 ---
 
+## ADCT:ART.116
+
+Sem explicação própria: 33 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 116 — Parcelamento das dívidas dos Municípios com o INSS
+
+- **TARGET:** `ADCT:ART.116` · `ENTENDA/ADCT:ART.116/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 116 — Parcelamento das dívidas dos Municípios com o INSS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 422 palavras · 2985 bytes · referências 0
+- **Motivo da seleção:** Visao geral: parcelamento excepcional, em ate 300 prestacoes, de debitos previdenciarios dos Municipios com o Regime Geral, com reducoes, juros por faixa, sancoes e formas de quitacao antecipada.
+
+**O QUE DIZ**
+
+O art. 116 do ADCT autoriza, em caráter excepcional, o parcelamento em até 300 prestações mensais dos débitos de contribuições previdenciárias devidas ao Regime Geral de Previdência Social pelos Municípios e por suas autarquias e fundações, vencidos até 31 de agosto de 2025. Entram também débitos em execução fiscal, os ligados a obrigações acessórias e os de parcelamentos anteriores não quitados. Os Municípios com regime próprio precisam comprovar até 1º de março de 2027 as condições do art. 115, I a IV, sob pena de suspensão (§ 1º). O § 2º reduz multas em 40%, juros de mora em 80%, encargos legais em 40% e honorários em 25%. Pelo § 3º, as parcelas são corrigidas pelo IPCA, com juros reais de 0%, 1%, 2% ou 4% ao ano, conforme o percentual da dívida quitado em até 18 meses da promulgação do inciso. Débitos prescritos ou atingidos pela decadência não contam (§ 4º). A inadimplência de três meses seguidos ou seis alternados exclui o parcelamento (§ 6º) e bloqueia transferências voluntárias da União (§ 7º), salvo nas situações do § 9º. A parcela é a menor entre o saldo dividido em até 300 vezes e 1% da média mensal da receita corrente líquida (§ 10). O § 12 lista formas de quitação antecipada: pagamento em dinheiro; transferência à União de participações societárias, com leis específicas da União e do Município; transferência de bens, com aceite das partes e lei específica municipal; e cessões de créditos e outros ativos. Entre estas estão a transferência de créditos do Município com a União, os recebíveis da dívida ativa e da compensação financeira por exploração de recursos naturais, e outros ativos aceitos em comum acordo.
+
+**O QUE SIGNIFICA**
+
+O artigo oferece aos Municípios uma saída longa e com descontos para dívidas antigas com o INSS.
+
+Quanto mais o Município paga no início, menores ficam os juros reais.
+
+O benefício tem contrapartidas: pagar em dia as contribuições correntes e, para quem tem regime próprio, ajustar suas regras previdenciárias.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quita 20% da dívida consolidada dentro do prazo de 18 meses do § 3º. Nesse caso, o restante do parcelamento corre sem juros reais, apenas com correção pelo IPCA.
+
+**ATENÇÃO**
+
+A formalização do parcelamento tinha prazo até 31 de agosto de 2026, conforme o art. 117 do ADCT. O prazo de 18 meses do § 3º é contado da promulgação do inciso, cuja data exata não consta do texto versionado.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Execução fiscal*: ação judicial para cobrar dívida com o poder público.
+- *Obrigação acessória*: dever formal ligado ao tributo, como entregar declarações.
+- *Decadência*: perda do direito de constituir o crédito pelo decurso do prazo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até 1 de março de 2027 as condições)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.116-A
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 116-A — Parcelamento das dívidas de consórcios públicos
+
+- **TARGET:** `ADCT:ART.116-A` · `ENTENDA/ADCT:ART.116-A/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 116-A — Parcelamento das dívidas de consórcios públicos
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1783 bytes · referências 0
+- **Motivo da seleção:** Visao geral: parcelamento excepcional dos debitos previdenciarios dos consorcios publicos intermunicipais com o Regime Geral, nas regras do art. 116.
+
+**O QUE DIZ**
+
+O art. 116-A do ADCT estende aos consórcios públicos intermunicipais a autorização excepcional de parcelamento dos débitos de contribuições previdenciárias devidas ao Regime Geral de Previdência Social, alcançando os débitos até 31 de agosto de 2025. O parcelamento pode ter até 300 prestações mensais e abrange débitos em execução fiscal, os ligados a obrigações acessórias e os de parcelamentos anteriores não quitados. Pelo parágrafo único, aplicam-se as reduções de multas e juros, a correção e os juros por faixa, a exclusão de débitos prescritos, os critérios da Receita Federal e da Procuradoria da Fazenda e a exclusão por inadimplência previstos nos §§ 2º a 6º do art. 116.
+
+**O QUE SIGNIFICA**
+
+O artigo trata os consórcios formados por Municípios da mesma forma que os próprios Municípios no parcelamento com o INSS.
+
+As regras de desconto, juros e exclusão são as do art. 116, por remissão expressa.
+
+**EXEMPLO PRÁTICO**
+
+Um consórcio intermunicipal de saúde tem contribuições previdenciárias atrasadas, vencidas antes de 31 de agosto de 2025. Ele pode parcelar a dívida em até 300 meses, com os descontos do art. 116.
+
+**ATENÇÃO**
+
+A remissão alcança só os §§ 2º a 6º do art. 116; as sanções dos §§ 7º a 9º não são mencionadas. A formalização tinha prazo até 31 de agosto de 2026 (art. 117).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Consórcio público*: associação entre entes da Federação para gerir serviços em comum.
+- *Regime Geral de Previdência Social*: sistema de previdência administrado pelo INSS.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.117
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM
+
+- **TARGET:** `ADCT:ART.117` · `ENTENDA/ADCT:ART.117/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1784 bytes · referências 0
+- **Motivo da seleção:** Visao geral: prazo de formalizacao dos parcelamentos dos arts. 115, 116 e 116-A e vinculacao do FPM com ordem de preferencia.
+
+**O QUE DIZ**
+
+O art. 117 do ADCT fixa até 31 de agosto de 2026 o prazo para formalizar os parcelamentos dos arts. 115, 116 e 116-A do ADCT. A formalização depende de o Município autorizar a vinculação do Fundo de Participação dos Municípios ao pagamento das prestações. A ordem de preferência no uso desses recursos é: primeiro, garantias, contragarantias ou pagamentos de débitos com a União, na forma do art. 167, § 4º; depois, as contribuições parceladas devidas ao Regime Geral; por fim, as contribuições parceladas devidas ao regime próprio.
+
+**O QUE SIGNIFICA**
+
+O artigo dá segurança ao credor: as prestações são pagas com recursos que o Município receberia da União.
+
+A ordem de preferência resolve conflitos quando o fundo não basta para tudo.
+
+Em 5 de outubro de 2026, data de referência deste lote, o prazo de formalização já terminou; a vinculação e a ordem de preferência continuam valendo para os parcelamentos formalizados.
+
+**EXEMPLO PRÁTICO**
+
+Um Município formalizou seu parcelamento em julho de 2026 (data ilustrativa). As prestações passam a ser pagas com recursos do seu fundo de participação, respeitada a ordem do artigo.
+
+**ATENÇÃO**
+
+Parcelamentos não formalizados até 31 de agosto de 2026 ficam fora deste regime. A ordem de preferência põe os débitos com a União antes das contribuições previdenciárias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Fundo de Participação dos Municípios*: repasse obrigatório de parte de impostos federais aos Municípios.
+- *Contragarantia*: garantia dada a quem prestou uma garantia em favor do devedor.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.121
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 121 — Contas antigas do PIS-PASEP
+
+- **TARGET:** `ADCT:ART.121` · `ENTENDA/ADCT:ART.121/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 121 — Contas antigas do PIS-PASEP
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1835 bytes · referências 0
+- **Motivo da seleção:** Visao geral: encerramento de contas do fundo PIS-PASEP nao reclamadas ha mais de 20 anos e prazo de 5 anos para pedido de ressarcimento.
+
+**O QUE DIZ**
+
+O art. 121 do ADCT determina o encerramento das contas dos patrimônios acumulados do art. 239, § 2º, cujos recursos não sejam reclamados há mais de 20 anos. O encerramento ocorre 60 dias depois da publicação de aviso no Diário Oficial da União, salvo reivindicação de interessado legítimo nesse prazo. Pelo parágrafo único, os valores são considerados abandonados, na forma da lei civil indicada no texto, e passam ao Tesouro Nacional como receita primária para investimentos do art. 107, § 6º-B, fora dos limites do art. 107. O interessado pode pedir ressarcimento à União em até 5 anos do encerramento.
+
+**O QUE SIGNIFICA**
+
+O artigo trata de saldos antigos e esquecidos de trabalhadores nas contas do PIS-PASEP.
+
+Antes do encerramento há um aviso público, que dá chance ao titular de reclamar.
+
+Mesmo depois do encerramento, o titular ou herdeiro ainda pode pedir o dinheiro de volta à União por cinco anos.
+
+**EXEMPLO PRÁTICO**
+
+Um herdeiro descobre que o pai tinha saldo no PIS-PASEP encerrado após o aviso. Se estiver dentro de 5 anos do encerramento, ele pode pedir o ressarcimento à União.
+
+**ATENÇÃO**
+
+O prazo de 20 anos se refere a recursos não reclamados. O pedido de ressarcimento tem limite de 5 anos contados do encerramento das contas.
+
+**PALAVRAS DIFÍCEIS**
+
+- *PIS-PASEP*: fundo formado por contribuições antigas em nome de trabalhadores privados e servidores.
+- *Ressarcimento*: devolução de um valor a quem tem direito a ele.
+- *Receita primária*: receita do governo que não vem de empréstimos ou de juros.
+
+**CAMADA EXTERNA**
+
+- Código Civil, art. 1.275, III (abandono): legislação correlata, ainda não ingerida.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da publicação de aviso no diário oficial da)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.124
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 124 — Regras da passagem para o IBS e a CBS
+
+- **TARGET:** `ADCT:ART.124` · `ENTENDA/ADCT:ART.124/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 124 — Regras da passagem para o IBS e a CBS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1640 bytes · referências 0
+- **Motivo da seleção:** Visao geral: remissao aos arts. 125 a 133 como criterios da passagem para o IBS e a CBS e instituicao da CBS pela mesma lei complementar do IBS.
+
+**O QUE DIZ**
+
+O art. 124 do ADCT estabelece que a substituição dos tributos atuais pelo imposto sobre bens e serviços (art. 156-A) e pela contribuição sobre bens e serviços (art. 195, V) segue os critérios dos arts. 125 a 133 do ADCT. O parágrafo único determina que a contribuição do art. 195, V, seja instituída pela mesma lei complementar que institui o imposto do art. 156-A.
+
+**O QUE SIGNIFICA**
+
+O artigo funciona como índice da reforma tributária no ADCT.
+
+Os artigos seguintes trazem o cronograma: ano de teste em 2026, início da contribuição federal em 2027, redução gradual de ICMS e ISS de 2029 a 2032 e extinção desses impostos em 2033.
+
+A exigência de uma única lei complementar para os dois tributos busca regras comuns para o imposto e para a contribuição.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa quer saber quando deixa de pagar ICMS. A resposta está no cronograma dos arts. 125 a 133 do ADCT, ao qual este artigo remete.
+
+**ATENÇÃO**
+
+O artigo não traz alíquotas nem datas próprias. A lei complementar que institui os dois tributos pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *IBS*: imposto sobre bens e serviços, de Estados, Distrito Federal e Municípios.
+- *CBS*: contribuição sobre bens e serviços, da União.
+- *Lei complementar*: lei que exige maioria absoluta para ser aprovada.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** TERM_NOT_USED (palavras_dificeis: IBS); TERM_NOT_USED (palavras_dificeis: CBS)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.125
+
+Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 125 — Ano de teste de 2026
+
+- **TARGET:** `ADCT:ART.125` · `ENTENDA/ADCT:ART.125/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 125 — Ano de teste de 2026
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 1822 bytes · referências 0
+- **Motivo da seleção:** Visao geral: cobranca do IBS a 0,1% e da CBS a 0,9% em 2026, compensacao com PIS e Cofins, destinacao da arrecadacao e dispensa de recolhimento.
+
+**O QUE DIZ**
+
+O art. 125 do ADCT trata do ano de 2026. Nesse ano, o imposto do art. 156-A é cobrado com alíquota estadual de 0,1%, e a contribuição do art. 195, V, com alíquota de 0,9%. O valor recolhido é compensado com o devido de PIS e Cofins (§ 1º). Se esses débitos não bastarem, o contribuinte pode compensar com outro tributo federal ou pedir ressarcimento em até 60 dias (§ 2º). A arrecadação do imposto nesse ano não segue as vinculações e repartições constitucionais e vai, nessa ordem, para o financiamento do Comitê Gestor e para o fundo de compensação de benefícios do ICMS (§ 3º). O § 4º permite, nos termos de lei complementar, dispensar do recolhimento quem cumprir as obrigações acessórias.
+
+**O QUE SIGNIFICA**
+
+O ano de 2026 é um teste dos novos tributos, com alíquotas baixas.
+
+Na prática, o valor pago não aumenta a carga, porque é abatido de tributos antigos.
+
+Em 5 de outubro de 2026, data de referência deste lote, este é o ano em curso previsto no caput.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa recolhe em 2026 o valor do novo imposto e da nova contribuição. Esse valor é abatido do PIS e da Cofins que ela deve no período.
+
+**ATENÇÃO**
+
+A dispensa de recolhimento do § 4º depende de lei complementar. As alíquotas valem apenas para 2026; o art. 127 traz as de 2027 e 2028.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Compensação*: abatimento de um valor pago de outro valor devido.
+- *Comitê Gestor*: órgão que administra o imposto sobre bens e serviços de Estados e Municípios.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Esse valor é abatido do PIS e da Cofins que ela deve no perí)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.126
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 126 — O que muda a partir de 2027
+
+- **TARGET:** `ADCT:ART.126` · `ENTENDA/ADCT:ART.126/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 126 — O que muda a partir de 2027
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1693 bytes · referências 0
+- **Motivo da seleção:** Visao geral: a partir de 2027, cobranca da CBS e do imposto seletivo, extincao de PIS e Cofins condicionada a instituicao da CBS e IPI com aliquota zero, ressalvada a Zona Franca.
+
+**O QUE DIZ**
+
+O art. 126 do ADCT determina que, a partir de 2027, sejam cobrados a contribuição do art. 195, V, e o imposto do art. 153, VIII (inciso I). No mesmo ano, ficam extintos o PIS e a Cofins, desde que instituída a contribuição do art. 195, V (inciso II). O imposto sobre produtos industrializados terá alíquotas reduzidas a zero, exceto para os produtos com industrialização incentivada na Zona Franca de Manaus, conforme lei complementar, e não incidirá de forma cumulativa com o imposto do art. 153, VIII (inciso III).
+
+**O QUE SIGNIFICA**
+
+O ano de 2027 marca a entrada plena dos novos tributos federais.
+
+A extinção de PIS e Cofins tem uma condição expressa: a contribuição nova precisa estar instituída.
+
+O IPI não desaparece por completo: continua para proteger a vantagem dos produtos da Zona Franca de Manaus.
+
+**EXEMPLO PRÁTICO**
+
+Uma indústria fora da Zona Franca fabrica um produto que pagava IPI. A partir de 2027, a alíquota desse imposto para o seu produto passa a zero.
+
+**ATENÇÃO**
+
+Em 5 de outubro de 2026, data de referência deste lote, o artigo ainda não produz efeitos. Se a contribuição nova foi instituída é um dado externo ao texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Imposto seletivo*: imposto federal sobre bens e serviços prejudiciais à saúde ou ao meio ambiente.
+- *Alíquota zero*: percentual nulo: o tributo existe, mas nada é cobrado.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: industrialização incentivada na zona franca de manaus confor); TERM_NOT_USED (palavras_dificeis: Imposto seletivo)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.127
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 127 — Alíquotas de 2027 e 2028
+
+- **TARGET:** `ADCT:ART.127` · `ENTENDA/ADCT:ART.127/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 127 — Alíquotas de 2027 e 2028
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1212 bytes · referências 0
+- **Motivo da seleção:** Visao geral: aliquotas do IBS de 0,05% estadual e 0,05% municipal em 2027 e 2028 e reducao correspondente da CBS.
+
+**O QUE DIZ**
+
+O art. 127 do ADCT determina que, em 2027 e 2028, o imposto do art. 156-A seja cobrado à alíquota estadual de 0,05% e à alíquota municipal de 0,05%. Pelo parágrafo único, nesse mesmo período, a alíquota da contribuição do art. 195, V, é reduzida em 0,1 ponto percentual.
+
+**O QUE SIGNIFICA**
+
+O artigo mantém o imposto estadual e municipal em nível simbólico por dois anos.
+
+A redução da contribuição federal compensa o valor do novo imposto, para que a soma não aumente.
+
+Depois desse período vem a redução gradual do ICMS e do ISS, tratada no art. 128.
+
+**EXEMPLO PRÁTICO**
+
+Em 2027, uma venda sujeita ao novo imposto tem 0,05% para o Estado e 0,05% para o Município, e a contribuição federal fica 0,1 ponto percentual menor.
+
+**ATENÇÃO**
+
+O artigo produz efeitos a partir de 2027, ano fixado no próprio texto. Em 5 de outubro de 2026 ainda vale o art. 125.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ponto percentual*: diferença absoluta entre dois percentuais.
+- *Alíquota municipal*: parcela do imposto que cabe ao Município.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.128
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 128 — Redução gradual de ICMS e ISS
+
+- **TARGET:** `ADCT:ART.128` · `ENTENDA/ADCT:ART.128/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 128 — Redução gradual de ICMS e ISS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1617 bytes · referências 0
+- **Motivo da seleção:** Visao geral: reducao proporcional das aliquotas do ICMS e do ISS de 2029 a 2032 e dos beneficios fiscais correspondentes.
+
+**O QUE DIZ**
+
+O art. 128 do ADCT determina que, de 2029 a 2032, as alíquotas do ICMS e do ISS sejam fixadas em proporção das alíquotas das respectivas leis: 9/10 em 2029, 8/10 em 2030, 7/10 em 2031 e 6/10 em 2032. Os benefícios e incentivos desses impostos não alcançados por essa redução diminuem na mesma proporção (§ 1º). O § 2º aplica essa redução aos benefícios do art. 3º da Lei Complementar nº 160, de 2017, sem a redução do § 2º-A desse artigo. O § 3º mantém, até 31 de dezembro de 2032, os percentuais usados para calcular os benefícios já reduzidos pela queda das alíquotas.
+
+**O QUE SIGNIFICA**
+
+O artigo reduz o ICMS e o ISS aos poucos, enquanto o novo imposto cresce.
+
+Os benefícios fiscais encolhem no mesmo ritmo, para que não sobrevivam integralmente a um imposto em extinção.
+
+O § 3º evita reduzir duas vezes o mesmo benefício.
+
+**EXEMPLO PRÁTICO**
+
+Se a lei estadual fixa o ICMS de um produto em 20%, em 2029 a alíquota cobrada passa a ser 9/10 disso, isto é, 18% (valores ilustrativos).
+
+**ATENÇÃO**
+
+O artigo produz efeitos a partir de 2029, data fixada no próprio texto. A Lei Complementar nº 160, de 2017, pertence à legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Benefício fiscal*: vantagem tributária concedida pelo poder público.
+- *Proporção*: fração de um valor de referência.
+
+**CAMADA EXTERNA**
+
+- Lei Complementar nº 160, de 2017: legislação correlata, ainda não ingerida.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: art 3 da lei complementar n 160 de)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.129
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 129 — Extinção do ICMS e do ISS
+
+- **TARGET:** `ADCT:ART.129` · `ENTENDA/ADCT:ART.129/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 129 — Extinção do ICMS e do ISS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 161 palavras · 1221 bytes · referências 0
+- **Motivo da seleção:** Visao geral: extincao do ICMS e do ISS a partir de 2033.
+
+**O QUE DIZ**
+
+O art. 129 do ADCT declara extintos, a partir de 2033, o imposto estadual sobre circulação de mercadorias e serviços (art. 155, II) e o imposto municipal sobre serviços (art. 156, III). Com isso, encerra-se a convivência desses impostos com o novo imposto sobre bens e serviços, que passa a ocupar seu espaço.
+
+**O QUE SIGNIFICA**
+
+O artigo fixa o ponto final do ICMS e do ISS.
+
+Até lá, os dois impostos convivem com o novo imposto, com alíquotas cada vez menores, conforme o art. 128.
+
+Os créditos acumulados de ICMS recebem tratamento próprio no art. 134 do ADCT.
+
+**EXEMPLO PRÁTICO**
+
+Uma loja que hoje recolhe ICMS deixará de recolhê-lo a partir de 2033, passando a se sujeitar ao imposto sobre bens e serviços.
+
+**ATENÇÃO**
+
+O artigo produz efeitos a partir de 2033, data fixada no próprio texto. Débitos e créditos anteriores seguem as regras de transição dos demais artigos.
+
+**PALAVRAS DIFÍCEIS**
+
+- *ICMS*: imposto estadual sobre circulação de mercadorias e certos serviços.
+- *ISS*: imposto municipal sobre serviços.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.130
+
+Sem explicação própria: 31 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 130 — Alíquotas de referência do IBS e da CBS
+
+- **TARGET:** `ADCT:ART.130` · `ENTENDA/ADCT:ART.130/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 130 — Alíquotas de referência do IBS e da CBS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 330 palavras · 2304 bytes · referências 0
+- **Motivo da seleção:** Visao geral: fixacao das aliquotas de referencia por resolucao do Senado, calculadas pelo TCU, para equivalencia de receitas entre 2027 e 2033, e mecanismo de reducao em 2030 e 2035.
+
+**O QUE DIZ**
+
+O art. 130 do ADCT atribui a resolução do Senado Federal a fixação das alíquotas de referência do imposto do art. 156-A e da contribuição do art. 195, V, para todas as esferas, conforme cálculo e limites de lei complementar. O objetivo é que a receita nova equivalha à receita perdida: da União, de 2027 a 2033, com IPI, PIS, Cofins e o imposto federal sobre operações de seguro; dos Estados e do Distrito Federal, de 2029 a 2033, com o ICMS e certos fundos estaduais, excetuadas as receitas dos fundos mantidos pelo art. 136; dos Municípios e do Distrito Federal, de 2029 a 2033, com o ISS. As alíquotas são fixadas no ano anterior à vigência, com base em cálculo do Tribunal de Contas da União (§ 1º), considerando os regimes favorecidos (§ 2º). Os §§ 3º a 7º criam tetos de referência e preveem a redução das alíquotas em 2030 e em 2035 se a receita superar esses tetos, sem cobrança ou restituição retroativa. Os §§ 8º a 10 tratam das informações ao Tribunal de Contas da União.
+
+**O QUE SIGNIFICA**
+
+O artigo procura manter a arrecadação estável durante a mudança: nem perda, nem aumento.
+
+O Senado fixa a alíquota de referência, e cada ente pode depois fixar a sua.
+
+As travas de 2030 e 2035 reduzem a alíquota se a receita passar dos tetos calculados sobre a média de 2012 a 2021.
+
+**EXEMPLO PRÁTICO**
+
+Em 2026, o Tribunal de Contas da União faz os cálculos e o Senado fixa as alíquotas de referência que valerão em 2027 (exemplo baseado no § 1º).
+
+**ATENÇÃO**
+
+As alíquotas são fixadas no ano anterior ao de sua vigência, sem a espera de noventa dias do art. 150, III, c. A forma de cálculo e os limites dependem de lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Alíquota de referência*: percentual que serve de base para que cada ente fixe a sua alíquota.
+- *Teto de referência*: limite de receita calculado sobre a média de anos anteriores.
+- *PIB*: soma dos bens e serviços produzidos no país em um período.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.131
+
+Sem explicação própria: 25 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 131 — Distribuição do IBS de 2029 a 2077
+
+- **TARGET:** `ADCT:ART.131` · `ENTENDA/ADCT:ART.131/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 131 — Distribuição do IBS de 2029 a 2077
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 1907 bytes · referências 0
+- **Motivo da seleção:** Visao geral: retencao e distribuicao do IBS de Estados, DF e Municipios de 2029 a 2077 conforme receita media, com reducao gradual da retencao.
+
+**O QUE DIZ**
+
+O art. 131 do ADCT regula, de 2029 a 2077, a distribuição do imposto do art. 156-A arrecadado por Estados, Distrito Federal e Municípios. Do valor apurado com as alíquotas de referência, retêm-se 80% de 2029 a 2032, 90% em 2033 e, de 2034 a 2077, o percentual de 2033 reduzido à razão de 1/45 por ano (§ 1º). O montante retido é distribuído, nos termos de lei complementar, proporcionalmente à receita média de cada ente com os tributos antigos (§ 2º). A parte não retida segue os critérios da lei complementar do art. 156-A, § 5º, I, computada a variação da alíquota fixada pelo ente (§ 4º). O § 5º manda os recursos compor as bases dos fundos da educação básica e dos mínimos constitucionais, e permite vinculá-los a garantias. O § 6º impede alíquotas próprias abaixo do necessário para as retenções.
+
+**O QUE SIGNIFICA**
+
+O artigo protege a receita dos entes durante a mudança: no início, quase tudo é repartido pela receita que cada um tinha antes.
+
+Aos poucos, ao longo de décadas, o critério passa a ser o do novo imposto, que privilegia o local de consumo.
+
+**EXEMPLO PRÁTICO**
+
+Em 2029, 80% do novo imposto apurado de um Município é retido e redistribuído conforme sua receita média anterior com o ISS.
+
+**ATENÇÃO**
+
+O artigo produz efeitos a partir de 2029, data fixada no próprio texto. Os critérios detalhados dependem de lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Retenção*: separação de parte da arrecadação antes da entrega ao ente.
+- *Receita média*: média da arrecadação de um período usado como referência.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.132
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 132 — Retenção de 5% para entes com menor receita relativa
+
+- **TARGET:** `ADCT:ART.132` · `ENTENDA/ADCT:ART.132/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 132 — Retenção de 5% para entes com menor receita relativa
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 227 palavras · 1640 bytes · referências 0
+- **Motivo da seleção:** Visao geral: retencao de 5% do IBS para distribuicao aos entes com menores razoes entre receita apurada e receita media, e reducao gradual entre 2078 e 2097.
+
+**O QUE DIZ**
+
+O art. 132 do ADCT manda reter 5% do imposto de Estados, Distrito Federal e Municípios apurado com as alíquotas de referência, depois da retenção do art. 131, § 1º. Esse valor é distribuído aos entes com as menores razões entre a receita apurada pelo novo imposto e a respectiva receita média, limitada a três vezes a média nacional por habitante da esfera. A distribuição segue, em sequência, dos entes com menores razões para os de razões maiores, até igualar a razão entre todos os que recebem (§ 1º). O § 2º aplica a esses recursos o art. 131, § 5º. O § 3º remete a lei complementar a redução gradual do percentual entre 2078 e 2097, até a extinção.
+
+**O QUE SIGNIFICA**
+
+O artigo cria uma rede de proteção para os entes que mais perdem com o novo critério de repartição.
+
+O dinheiro vai primeiro para quem está pior em relação à própria receita histórica.
+
+A medida é longa e só termina entre 2078 e 2097.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cuja receita com o novo imposto fica muito abaixo de sua receita média anterior recebe parte dos 5% retidos.
+
+**ATENÇÃO**
+
+A retenção opera junto com a distribuição do art. 131. A receita média considerada tem como teto três vezes a média nacional por habitante.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Razão*: resultado da divisão de um valor por outro.
+- *Média nacional por habitante*: total da receita da esfera dividido pela população do país.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: três vezes a média nacional por habitante da)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.133
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 133 — Tributos antigos fora da base do IBS e da CBS
+
+- **TARGET:** `ADCT:ART.133` · `ENTENDA/ADCT:ART.133/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 133 — Tributos antigos fora da base do IBS e da CBS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1317 bytes · referências 0
+- **Motivo da seleção:** Visao geral: exclusao de IPI, ICMS, ISS, PIS e Cofins da base de calculo do IBS e da CBS.
+
+**O QUE DIZ**
+
+O art. 133 do ADCT determina que o IPI, o ICMS, o ISS, a Cofins e o PIS (arts. 153, IV, 155, II, 156, III, 195, I, b, e IV, e 239) não integrem a base de cálculo do imposto do art. 156-A nem da contribuição do art. 195, V. Assim, o valor desses tributos antigos não é somado ao preço sobre o qual se calcula o novo imposto ou a nova contribuição.
+
+**O QUE SIGNIFICA**
+
+Pela regra, o valor dos tributos antigos fica fora do cálculo dos novos enquanto os dois sistemas convivem.
+
+Sem a regra, o novo imposto incidiria também sobre o ICMS ou o ISS embutido no preço.
+
+A regra vale desde a primeira cobrança dos novos tributos, no ano de teste de 2026.
+
+**EXEMPLO PRÁTICO**
+
+Uma mercadoria custa 100 reais, dos quais uma parte corresponde ao ICMS. O novo imposto é calculado sem incluir esse valor de ICMS (valores ilustrativos).
+
+**ATENÇÃO**
+
+A regra trata da base de cálculo dos novos tributos; ela não altera a base dos tributos antigos.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Base de cálculo*: valor sobre o qual se aplica a alíquota para chegar ao tributo.
+- *Cofins*: contribuição federal sobre a receita das empresas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.134
+
+Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 134 — Créditos acumulados de ICMS
+
+- **TARGET:** `ADCT:ART.134` · `ENTENDA/ADCT:ART.134/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 134 — Créditos acumulados de ICMS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2148 bytes · referências 0
+- **Motivo da seleção:** Visao geral: aproveitamento dos saldos credores de ICMS existentes ao final de 2032, por compensacao com o IBS; registro de truncamento do § 4º na fonte.
+
+**O QUE DIZ**
+
+O art. 134 do ADCT garante o aproveitamento, nos termos de lei complementar, dos saldos credores de ICMS existentes ao final de 2032. Alcança os saldos cujo aproveitamento ou ressarcimento a legislação vigente no último dia de 2032 admita e que o ente tenha homologado; sem resposta no prazo da lei complementar, o saldo é considerado homologado (§ 1º). O § 2º aplica a regra a créditos reconhecidos depois. Os Estados e o Distrito Federal informam o saldo ao Comitê Gestor, que o compensa com o novo imposto: pelo prazo remanescente, no caso de bens do ativo permanente, ou em 240 parcelas mensais nos demais casos (§ 3º). O Comitê Gestor deduz o valor compensado da parcela do ente (§ 4º). A partir de 2033, os saldos são corrigidos pelo IPCA (§ 5º). O § 6º remete a lei complementar as regras do parcelamento, a transferência a terceiros e o ressarcimento.
+
+**O QUE SIGNIFICA**
+
+O artigo impede que o contribuinte perca os créditos de ICMS acumulados quando o imposto acabar.
+
+O crédito vira direito de abater o novo imposto, de forma parcelada.
+
+O silêncio do ente diante do pedido de homologação conta a favor do contribuinte.
+
+**EXEMPLO PRÁTICO**
+
+Uma exportadora termina 2032 com crédito de ICMS acumulado e homologado. A partir de 2033, abate esse valor do novo imposto em 240 parcelas mensais, corrigidas pelo IPCA.
+
+**ATENÇÃO**
+
+O texto do § 4º aparece incompleto na fonte versionada (anomalia de fonte registrada neste lote); a lista de bases de cálculo citadas nesse parágrafo deve ser conferida na fonte oficial. O artigo produz efeitos a partir de 2033.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Saldo credor*: crédito de imposto que sobra depois de abatido o imposto devido.
+- *Homologação*: confirmação oficial de um valor ou ato.
+- *Ativo permanente*: bens duráveis usados na atividade da empresa, como máquinas.
+
+**CAMADA EXTERNA**
+
+- Anomalia de fonte MB08-SRC-03 (§ 4º truncado e fragmento de hiperlink no § 6º): MACRO08_SOURCE_ANOMALIES.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.135
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados
+
+- **TARGET:** `ADCT:ART.135` · `ENTENDA/ADCT:ART.135/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1733 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lei complementar sobre o uso dos creditos de IPI, PIS e Cofins nao apropriados ate a extincao desses tributos, com compensacao ou ressarcimento.
+
+**O QUE DIZ**
+
+O art. 135 do ADCT remete a lei complementar a disciplina do uso dos créditos, inclusive presumidos, do IPI, da Cofins e do PIS que não tenham sido apropriados ou utilizados até a extinção desses tributos. Para os créditos que cumpram os requisitos da legislação vigente na data da extinção, o artigo mantém a permissão de compensar com outros tributos federais, inclusive com a contribuição do art. 195, V, ou de pedir ressarcimento em dinheiro.
+
+**O QUE SIGNIFICA**
+
+O artigo protege o contribuinte que acumulou créditos federais quando os tributos antigos deixarem de existir.
+
+O direito à compensação ou ao ressarcimento fica garantido, mas só para créditos válidos pela regra vigente na data da extinção.
+
+Os detalhes do procedimento ficam com a lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa tem crédito de PIS e Cofins não usado quando essas contribuições forem extintas. Se o crédito cumprir os requisitos da época, ela pode compensá-lo com outro tributo federal.
+
+**ATENÇÃO**
+
+A extinção do PIS e da Cofins depende da instituição da nova contribuição federal, conforme o art. 126 do ADCT. A lei complementar pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crédito presumido*: crédito fixado pela lei por estimativa, sem relação direta com o tributo pago antes.
+- *Apropriação de crédito*: registro do crédito na escrita fiscal para uso futuro.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com outros tributos federais inclusive com a contribuição)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.136
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 136 — Contribuições estaduais para infraestrutura e habitação
+
+- **TARGET:** `ADCT:ART.136` · `ENTENDA/ADCT:ART.136/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 136 — Contribuições estaduais para infraestrutura e habitação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1716 bytes · referências 0
+- **Motivo da seleção:** Visao geral: possibilidade de os Estados com fundos de infraestrutura e habitacao em 30 de abril de 2023 instituirem contribuicoes semelhantes desvinculadas do ICMS, ate 31 de dezembro de 2043.
+
+**O QUE DIZ**
+
+O art. 136 do ADCT permite aos Estados que, em 30 de abril de 2023, tinham fundos de investimento em infraestrutura e habitação financiados por contribuições sobre produtos primários e semielaborados, cobradas como condição para tratamentos diferenciados do ICMS, instituir contribuições semelhantes desvinculadas desse imposto. A alíquota e a base não podem superar as das contribuições vigentes naquela data (inciso I). A instituição da nova contribuição implica a extinção da anterior, vinculada ao ICMS (inciso II), mantém a mesma destinação (inciso III) e se extingue em 31 de dezembro de 2043 (inciso IV). O parágrafo único exclui essas receitas do cálculo dos arts. 130, II, b, e 131, § 2º, I, b.
+
+**O QUE SIGNIFICA**
+
+O artigo preserva, por um período definido, fontes estaduais de investimento que dependiam do ICMS.
+
+A nova contribuição não pode ser maior nem mais ampla que a antiga.
+
+A data final de 2043 limita a sobrevida dessas contribuições.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado que cobrava contribuição sobre produtos agrícolas para um fundo de estradas cria contribuição semelhante, desligada do ICMS, com a mesma alíquota e a mesma destinação.
+
+**ATENÇÃO**
+
+A permissão só vale para Estados que tinham esses fundos em 30 de abril de 2023. A contribuição se extingue em 31 de dezembro de 2043.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Produto primário*: produto agropecuário ou mineral sem industrialização.
+- *Diferimento*: adiamento do momento de pagar o imposto.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 130 ii b e 131 2 i b)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.138
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 138 — Limite para novas vinculações de receita
+
+- **TARGET:** `ADCT:ART.138` · `ENTENDA/ADCT:ART.138/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 138 — Limite para novas vinculações de receita
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 188 palavras · 1566 bytes · referências 0
+- **Motivo da seleção:** Visao geral: ate 2032, criacao, alteracao ou prorrogacao de vinculacao de receitas nao pode elevar a despesa primaria acima da variacao do limite de despesas primarias.
+
+**O QUE DIZ**
+
+O art. 138 do ADCT vale até 2032 e trata da criação, da alteração ou da prorrogação de vinculações de receitas a despesas, sejam legais ou constitucionais, inclusive as de aplicação mínima. Essas medidas não podem fazer a despesa primária correspondente crescer, a cada ano, acima da variação do limite de despesas primárias. Esse limite é o da lei complementar prevista no art. 6º da norma constitucional de 21 de dezembro de 2022 citada no texto.
+
+**O QUE SIGNIFICA**
+
+O artigo impede que novas vinculações furem o controle de gastos.
+
+Uma despesa vinculada não pode crescer mais rápido que o limite geral de despesas primárias.
+
+A regra alcança tanto vinculações criadas por lei quanto as criadas na própria Constituição.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei nova destina parte de uma receita a um programa social. Até 2032, o gasto com esse programa não pode crescer, a cada ano, mais que o limite de despesas primárias.
+
+**ATENÇÃO**
+
+O artigo vale até 2032. O limite de despesas primárias está em lei complementar, que pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vinculação de receita*: destinação obrigatória de uma receita a uma despesa.
+- *Despesa primária*: gasto do governo sem contar juros da dívida.
+
+**CAMADA EXTERNA**
+
+- Lei complementar do limite de despesas primárias: legislação correlata (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

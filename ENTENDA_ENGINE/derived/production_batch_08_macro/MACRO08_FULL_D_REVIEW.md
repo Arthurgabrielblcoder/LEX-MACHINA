@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO HUMANA COMPLETA (fila D)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 20 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 22 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
 
 ## Índice
 
@@ -24,6 +24,8 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 20 itens · nenhum aprovado. Só itens com L
 18. [F] `ADCT:ART.88` — ADCT, art. 88 — Alíquota mínima do ISS · TEMPORAL_STATUS_UNRESOLVED
 19. [G] `ADCT:ART.97` — ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização · TEMPORAL_STATUS_UNRESOLVED
 20. [G] `ADCT:ART.107-A` — ADCT, art. 107-A — Limite para pagamento de precatórios até 2026 · JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS
+21. [H] `ADCT:ART.126` — ADCT, art. 126 — O que muda a partir de 2027 · TEMPORAL_STATUS_UNRESOLVED
+22. [H] `ADCT:ART.135` — ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados · TEMPORAL_STATUS_UNRESOLVED
 
 ## 1. Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços
 
@@ -1143,6 +1145,111 @@ O texto oficial traz notas de remissão a ações de controle de constitucionali
 
 - REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 7064" — As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300;
 - EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "2016 incluídos os restos a pagar pagos corrigido" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 21. ADCT, art. 126 — O que muda a partir de 2027
+
+- `ADCT:ART.126` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.126/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Ainda nao produz efeitos em 5 de outubro de 2026; o inciso II depende da instituicao da CBS, dado externo.
+- Sub-bloco H · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Ainda nao produz efeitos em 5 de outubro de 2026; o inciso II depende da instituicao da CBS, dado externo.
+- Dispositivos citados (runtime): `ART.195:INC.V` sobre bens e serviços, nos termos de lei complementar. · `ART.153:INC.VIII` produção, extração, comercialização ou importação de bens e serviços prejudiciais à saúde ou ao meio ambiente, nos termos de lei complementar.
+
+**Lei Seca**
+
+- `ADCT:ART.126:CAPUT`: A partir de 2027:
+- `ADCT:ART.126:INC.I`: serão cobrados:
+- `ADCT:ART.126:INC.I:AL.a`: a contribuição prevista no art. 195, V, da Constituição Federal ;
+- `ADCT:ART.126:INC.I:AL.b`: o imposto previsto no art. 153, VIII, da Constituição Federal ;
+- `ADCT:ART.126:INC.II`: serão extintas as contribuições previstas no art. 195, I, "b", e IV, e a contribuição para o Programa de Integração Social de que trata o art. 239, todos da Constituição Federal , desde que instituída a contribuição referida na alínea "a" do inciso I;
+- `ADCT:ART.126:INC.III`: o imposto previsto no art. 153, IV, da Constituição Federal :
+- `ADCT:ART.126:INC.III:AL.a`: terá suas alíquotas reduzidas a zero, exceto em relação aos produtos que tenham industrialização incentivada na Zona Franca de Manaus, conforme critérios estabelecidos em lei complementar; e
+- `ADCT:ART.126:INC.III:AL.b`: não incidirá de forma cumulativa com o imposto previsto no art. 153, VIII, da Constituição Federal .
+
+**O QUE DIZ**
+
+O art. 126 do ADCT determina que, a partir de 2027, sejam cobrados a contribuição do art. 195, V, e o imposto do art. 153, VIII (inciso I). No mesmo ano, ficam extintos o PIS e a Cofins, desde que instituída a contribuição do art. 195, V (inciso II). O imposto sobre produtos industrializados terá alíquotas reduzidas a zero, exceto para os produtos com industrialização incentivada na Zona Franca de Manaus, conforme lei complementar, e não incidirá de forma cumulativa com o imposto do art. 153, VIII (inciso III).
+
+**O QUE SIGNIFICA**
+
+O ano de 2027 marca a entrada plena dos novos tributos federais.
+
+A extinção de PIS e Cofins tem uma condição expressa: a contribuição nova precisa estar instituída.
+
+O IPI não desaparece por completo: continua para proteger a vantagem dos produtos da Zona Franca de Manaus.
+
+**EXEMPLO PRÁTICO**
+
+Uma indústria fora da Zona Franca fabrica um produto que pagava IPI. A partir de 2027, a alíquota desse imposto para o seu produto passa a zero.
+
+**ATENÇÃO**
+
+Em 5 de outubro de 2026, data de referência deste lote, o artigo ainda não produz efeitos. Se a contribuição nova foi instituída é um dado externo ao texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Imposto seletivo*: imposto federal sobre bens e serviços prejudiciais à saúde ou ao meio ambiente.
+- *Alíquota zero*: percentual nulo: o tributo existe, mas nada é cobrado.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "industrialização incentivada na zona franca de manaus conforme" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 22. ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados
+
+- `ADCT:ART.135` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.135/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Depende da extincao dos tributos (ADCT art. 126) e de lei complementar; dados externos.
+- Sub-bloco H · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Depende da extincao dos tributos (ADCT art. 126) e de lei complementar; dados externos.
+- Dispositivos citados (runtime): `ART.195:INC.V` sobre bens e serviços, nos termos de lei complementar.
+
+**Lei Seca**
+
+- `ADCT:ART.135:CAPUT`: Lei complementar disciplinará a forma de utilização dos créditos, inclusive presumidos, do imposto de que trata o art. 153, IV, e das contribuições de que tratam o art. 195, I, "b", e IV, e da contribuição para o Programa de Integração Social a que se refere o art. 239, todos da Constituição Federal , não apropriados ou não utilizados até a extinção, mantendo-se, apenas para os créditos que cumpram os requisitos estabelecidos na legislação vigente na data da extinção de tais tributos, a permissão para compensação com outros tributos federais, inclusive com a contribuição prevista no inciso V do caput do art. 195 da Constituição Federal , ou ressarcimento em dinheiro.
+
+**O QUE DIZ**
+
+O art. 135 do ADCT remete a lei complementar a disciplina do uso dos créditos, inclusive presumidos, do IPI, da Cofins e do PIS que não tenham sido apropriados ou utilizados até a extinção desses tributos. Para os créditos que cumpram os requisitos da legislação vigente na data da extinção, o artigo mantém a permissão de compensar com outros tributos federais, inclusive com a contribuição do art. 195, V, ou de pedir ressarcimento em dinheiro.
+
+**O QUE SIGNIFICA**
+
+O artigo protege o contribuinte que acumulou créditos federais quando os tributos antigos deixarem de existir.
+
+O direito à compensação ou ao ressarcimento fica garantido, mas só para créditos válidos pela regra vigente na data da extinção.
+
+Os detalhes do procedimento ficam com a lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa tem crédito de PIS e Cofins não usado quando essas contribuições forem extintas. Se o crédito cumprir os requisitos da época, ela pode compensá-lo com outro tributo federal.
+
+**ATENÇÃO**
+
+A extinção do PIS e da Cofins depende da instituição da nova contribuição federal, conforme o art. 126 do ADCT. A lei complementar pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crédito presumido*: crédito fixado pela lei por estimativa, sem relação direta com o tributo pago antes.
+- *Apropriação de crédito*: registro do crédito na escrita fiscal para uso futuro.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do IBS e da CBS pertence à legislação correlata, ainda não ingerida (PENDING_EXTERNAL_INGESTION).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "com outros tributos federais inclusive com a contribuição" — 
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 

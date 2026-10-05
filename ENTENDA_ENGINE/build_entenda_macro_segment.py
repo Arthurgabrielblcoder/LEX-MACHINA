@@ -16,6 +16,8 @@ are hash-pinned by the Macro07/Batch06 manifests, so this module imports and reu
       - TRANSITION_OR_TEMPORAL alone does not make HIGH when the temporal situation is resolved by versioned evidence (classes
         OPERATIVE_CURRENT, OPERATIVE_TRANSITION, EFFECT_EXHAUSTED, HISTORICAL_ONLY): the record is classified by the remaining risk;
       - TEMPORAL_STATUS_UNRESOLVED (HIGH): the explanation covers a FUTURE_TRIGGER, PARTIALLY_OPERATIVE or EXTERNAL_STATUS_REQUIRED rule;
+        a FUTURE_TRIGGER whose start is a date fixed by the versioned text itself (TEMPORAL_INPUT "trigger_date", e.g. "A partir de
+        2027") is resolved by versioned evidence like the classes above (DATED_FUTURE_TRIGGER), not unresolved;
   * DATES_AND_YEARS_PARITY (QUICK): a year or calendar date in the body (or in the example, unless marked illustrative) that is not in
     the Lei Seca grounding of the record nor in the batch reference date;
   * source sanity before generation (<P>_SOURCE_ANOMALIES.md/.json): CURRENT target without text, glued sibling label, repeated label,
@@ -174,6 +176,16 @@ def assemble(bd, ms, ctx, nm, tin):
 
 # ---------------------------------------------------------------- temporal layer
 
+def dated_trigger(tin, tid):
+    """trigger_date of a FUTURE_TRIGGER article whose start date is fixed by the versioned text (None otherwise)."""
+    return tin['articles'].get(article_of(tid), {}).get('trigger_date')
+
+
+def is_resolved(tin, tid, ctx):
+    cls = temporal_class_of(tin, tid, ctx)
+    return cls in RESOLVED_CLASSES or (cls == 'FUTURE_TRIGGER' and bool(dated_trigger(tin, tid)))
+
+
 def temporal_class_of(tin, tid, ctx):
     e = tin['explanations'].get(tid, {})
     if e.get('temporal_class'):
@@ -234,7 +246,8 @@ def transition_evidence(ms, ctx, c, tin, vig, runtime_sha):
         ann = sorted({x for s in scope for x in vig.get(s, [])})
         ecs = sorted({n for x in ann for n in V3.EC_NUM.findall(x)}, key=int)
         e = e or {}
-        out.append(dict(target_id=t, namespace=t.split(':')[0], temporal_class=cls, resolved_deterministically=cls in RESOLVED_CLASSES,
+        out.append(dict(target_id=t, namespace=t.split(':')[0], temporal_class=cls, resolved_deterministically=is_resolved(tin, t, ctx),
+                        trigger_date=dated_trigger(tin, t),
                         norma=e.get('norma', 'Constituicao Federal (ADCT)' if t.startswith('ADCT:') else 'Constituicao Federal'),
                         ec=e.get('ec') or a.get('ec') or ([f'EC {n}' for n in ecs] or None), article=e.get('artigo') or t,
                         marker=e.get('marco') or a.get('markers'), situation_as_of=e.get('situacao_2026') or a.get('situation_2026'),
@@ -402,12 +415,14 @@ class SegmentContext(M.MacroContext):
                 medium.append(('JUDICIAL_REVIEW_CONTEXT_ONLY', f"{short} -- {jr.get('reason', '')}"[:300]))
             else:
                 high.append(('JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS', short + (f" -- {jr['reason']}" if jr.get('reason') else ' -- nao classificado pelo editor (conservador)')))
-        if cls in UNRESOLVED_CLASSES:
+        dated = cls == 'FUTURE_TRIGGER' and dated_trigger(self.tin, tid)
+        if cls in UNRESOLVED_CLASSES and not dated:
             high.append(('TEMPORAL_STATUS_UNRESOLVED', f'{cls}: ' + (self.tin['articles'].get(article_of(tid), {}).get('situation_2026') or '')[:200]))
         trans = [h for h in high if h[0] == 'TRANSITION_OR_TEMPORAL']
-        if trans and cls in RESOLVED_CLASSES:
+        if trans and (cls in RESOLVED_CLASSES or dated):
             high = [h for h in high if h[0] != 'TRANSITION_OR_TEMPORAL']
-            medium.append(('TRANSITION_RESOLVED_BY_VERSIONED_EVIDENCE', f'{cls} (MACRO08_TRANSITION_EVIDENCE)'))
+            medium.append(('TRANSITION_RESOLVED_BY_VERSIONED_EVIDENCE', f'{cls} (MACRO08_TRANSITION_EVIDENCE)' +
+                           (f' DATED_FUTURE_TRIGGER: {dated}' if dated else '')))
         if high:
             sec = [f'{x}: {y}' for x, y in medium] + [s for s in sec_medium if s.split(':', 1)[0] not in {m[0] for m in medium}]
             return dict(a, level='HIGH', rules=[x for x, _ in high], reasons=[f'{x}: {y}' for x, y in high], secondary=sec), cx

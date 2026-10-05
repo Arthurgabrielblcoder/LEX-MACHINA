@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (104)
+## A — CLEAN_LOW (119)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -187,7 +187,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: A seguridade é paga de duas formas: indiretamente, pelos orçamentos públicos, que vêm dos impostos; e diretamente, pelas contribuições sociais.
 - ATENÇÃO: A contribuição sobre bens e serviços do inciso V tem cronograma de cobrança fixado no ADCT, arts. 124 a 127.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: bens e serviços nos termos de lei complementar), EXTRAPOLATION_NUMBER(resolvido), lint TERM_NOT_USED
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: bens e serviços nos termos de lei complementar), NUMBER_FROM_OTHER_DEVICE(0.9% ), EXTRAPOLATION_NUMBER(resolvido), lint TERM_NOT_USED
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -1145,6 +1145,171 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - ATENÇÃO: O prazo de quinze meses é contado da promulgação da emenda de 2025, cuja data exata não consta do texto versionado.
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: até 31 de agosto de 2025 inclusive os), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.116-A` — ADCT, art. 116-A — Parcelamento das dívidas de consórcios públicos
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 116-A do ADCT estende aos consórcios públicos intermunicipais a autorização excepcional de parcelamento dos débitos de contribuições previdenciárias devidas ao Regime Geral de Previdência…
+- Interpretação principal: O artigo trata os consórcios formados por Municípios da mesma forma que os próprios Municípios no parcelamento com o INSS.
+- ATENÇÃO: A remissão alcança só os §§ 2º a 6º do art. 116; as sanções dos §§ 7º a 9º não são mencionadas.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.117` — ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 117 do ADCT fixa até 31 de agosto de 2026 o prazo para formalizar os parcelamentos dos arts. 115, 116 e 116-A do ADCT.
+- Interpretação principal: O artigo dá segurança ao credor: as prestações são pagas com recursos que o Município receberia da União.
+- ATENÇÃO: Parcelamentos não formalizados até 31 de agosto de 2026 ficam fora deste regime.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.121` — ADCT, art. 121 — Contas antigas do PIS-PASEP
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 121 do ADCT determina o encerramento das contas dos patrimônios acumulados do art. 239, § 2º, cujos recursos não sejam reclamados há mais de 20 anos.
+- Interpretação principal: O artigo trata de saldos antigos e esquecidos de trabalhadores nas contas do PIS-PASEP.
+- ATENÇÃO: O prazo de 20 anos se refere a recursos não reclamados.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: da publicação de aviso no diário oficial da)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.124` — ADCT, art. 124 — Regras da passagem para o IBS e a CBS
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 124 do ADCT estabelece que a substituição dos tributos atuais pelo imposto sobre bens e serviços (art. 156-A) e pela contribuição sobre bens e serviços (art. 195, V) segue os critérios dos…
+- Interpretação principal: O artigo funciona como índice da reforma tributária no ADCT.
+- ATENÇÃO: O artigo não traz alíquotas nem datas próprias.
+- Dependência externa: nenhuma
+- Warnings: EXTRAPOLATION_NUMBER(resolvido), lint TERM_NOT_USED
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.125` — ADCT, art. 125 — Ano de teste de 2026
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 125 do ADCT trata do ano de 2026.
+- Interpretação principal: O ano de 2026 é um teste dos novos tributos, com alíquotas baixas.
+- ATENÇÃO: A dispensa de recolhimento do § 4º depende de lei complementar.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.127` — ADCT, art. 127 — Alíquotas de 2027 e 2028
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 127 do ADCT determina que, em 2027 e 2028, o imposto do art. 156-A seja cobrado à alíquota estadual de 0,05% e à alíquota municipal de 0,05%.
+- Interpretação principal: O artigo mantém o imposto estadual e municipal em nível simbólico por dois anos.
+- ATENÇÃO: O artigo produz efeitos a partir de 2027, ano fixado no próprio texto.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(2 anos)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.128` — ADCT, art. 128 — Redução gradual de ICMS e ISS
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 128 do ADCT determina que, de 2029 a 2032, as alíquotas do ICMS e do ISS sejam fixadas em proporção das alíquotas das respectivas leis: 9/10 em 2029, 8/10 em 2030, 7/10 em 2031 e 6/10 em 2032.
+- Interpretação principal: O artigo reduz o ICMS e o ISS aos poucos, enquanto o novo imposto cresce.
+- ATENÇÃO: O artigo produz efeitos a partir de 2029, data fixada no próprio texto.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: art 3 da lei complementar n 160 de), NUMBER_FROM_OTHER_DEVICE(18% , 20% ), EXAMPLE_NUMBER(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.129` — ADCT, art. 129 — Extinção do ICMS e do ISS
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 129 do ADCT declara extintos, a partir de 2033, o imposto estadual sobre circulação de mercadorias e serviços (art. 155, II) e o imposto municipal sobre serviços (art. 156, III).
+- Interpretação principal: O artigo fixa o ponto final do ICMS e do ISS.
+- ATENÇÃO: O artigo produz efeitos a partir de 2033, data fixada no próprio texto.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.130` — ADCT, art. 130 — Alíquotas de referência do IBS e da CBS
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 130 do ADCT atribui a resolução do Senado Federal a fixação das alíquotas de referência do imposto do art. 156-A e da contribuição do art. 195, V, para todas as esferas, conforme cálculo e…
+- Interpretação principal: O artigo procura manter a arrecadação estável durante a mudança: nem perda, nem aumento.
+- ATENÇÃO: As alíquotas são fixadas no ano anterior ao de sua vigência, sem a espera de noventa dias do art. 150, III, c.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(90 dias), EXAMPLE_NUMBER(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.131` — ADCT, art. 131 — Distribuição do IBS de 2029 a 2077
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 131 do ADCT regula, de 2029 a 2077, a distribuição do imposto do art. 156-A arrecadado por Estados, Distrito Federal e Municípios.
+- Interpretação principal: O artigo protege a receita dos entes durante a mudança: no início, quase tudo é repartido pela receita que cada um tinha antes.
+- ATENÇÃO: O artigo produz efeitos a partir de 2029, data fixada no próprio texto.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.132` — ADCT, art. 132 — Retenção de 5% para entes com menor receita relativa
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 132 do ADCT manda reter 5% do imposto de Estados, Distrito Federal e Municípios apurado com as alíquotas de referência, depois da retenção do art. 131, § 1º.
+- Interpretação principal: O artigo cria uma rede de proteção para os entes que mais perdem com o novo critério de repartição.
+- ATENÇÃO: A retenção opera junto com a distribuição do art. 131.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: três vezes a média nacional por habitante da)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.133` — ADCT, art. 133 — Tributos antigos fora da base do IBS e da CBS
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 133 do ADCT determina que o IPI, o ICMS, o ISS, a Cofins e o PIS (arts. 153, IV, 155, II, 156, III, 195, I, b, e IV, e 239) não integrem a base de cálculo do imposto do art. 156-A nem da…
+- Interpretação principal: Pela regra, o valor dos tributos antigos fica fora do cálculo dos novos enquanto os dois sistemas convivem.
+- ATENÇÃO: A regra trata da base de cálculo dos novos tributos; ela não altera a base dos tributos antigos.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(100), EXAMPLE_NUMBER(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.134` — ADCT, art. 134 — Créditos acumulados de ICMS
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 134 do ADCT garante o aproveitamento, nos termos de lei complementar, dos saldos credores de ICMS existentes ao final de 2032.
+- Interpretação principal: O artigo impede que o contribuinte perca os créditos de ICMS acumulados quando o imposto acabar.
+- ATENÇÃO: O texto do § 4º aparece incompleto na fonte versionada (anomalia de fonte registrada neste lote); a lista de bases de cálculo citadas nesse parágrafo deve ser conferida na fonte oficial.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.136` — ADCT, art. 136 — Contribuições estaduais para infraestrutura e habitação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 136 do ADCT permite aos Estados que, em 30 de abril de 2023, tinham fundos de investimento em infraestrutura e habitação financiados por contribuições sobre produtos primários e…
+- Interpretação principal: O artigo preserva, por um período definido, fontes estaduais de investimento que dependiam do ICMS.
+- ATENÇÃO: A permissão só vale para Estados que tinham esses fundos em 30 de abril de 2023.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: 130 ii b e 131 2 i b)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.138` — ADCT, art. 138 — Limite para novas vinculações de receita
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 138 do ADCT vale até 2032 e trata da criação, da alteração ou da prorrogação de vinculações de receitas a despesas, sejam legais ou constitucionais, inclusive as de aplicação mínima.
+- Interpretação principal: O artigo impede que novas vinculações furem o controle de gastos.
+- ATENÇÃO: O artigo vale até 2032.
+- Dependência externa: nenhuma
+- Warnings: nenhum
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

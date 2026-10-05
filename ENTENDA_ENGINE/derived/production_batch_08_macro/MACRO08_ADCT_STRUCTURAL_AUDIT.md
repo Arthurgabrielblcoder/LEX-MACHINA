@@ -28,7 +28,7 @@ Dentro de CF88: namespace proprio (ADCT:ART.5 nao colide com CF88:ART.5), mesma 
 
 **6. Quantos estao vigentes/operativos?**
 
-Status do texto: 138 artigos com texto vigente na compilacao monovigente. Camada temporal editorial: {'EFFECT_EXHAUSTED': 39, 'EXTERNAL_STATUS_REQUIRED': 37, 'NAO_CLASSIFICADO': 24, 'OPERATIVE_CURRENT': 19, 'OPERATIVE_TRANSITION': 13, 'PARTIALLY_OPERATIVE': 6, 'REVOKED': 10}.
+Status do texto: 138 artigos com texto vigente na compilacao monovigente. Camada temporal editorial: {'EFFECT_EXHAUSTED': 44, 'EXTERNAL_STATUS_REQUIRED': 38, 'FUTURE_TRIGGER': 8, 'OPERATIVE_CURRENT': 20, 'OPERATIVE_TRANSITION': 22, 'PARTIALLY_OPERATIVE': 6, 'REVOKED': 10}.
 
 **7. Quantos estao revogados?**
 
@@ -36,7 +36,7 @@ Status do texto: 138 artigos com texto vigente na compilacao monovigente. Camada
 
 **8. Quantos possuem efeitos temporais ja exauridos?**
 
-39 artigos classificados EFFECT_EXHAUSTED (prova pelo texto e pela data de promulgacao versionada); 6 parcialmente operantes; 0 com marco futuro.
+44 artigos classificados EFFECT_EXHAUSTED (prova pelo texto e pela data de promulgacao versionada); 6 parcialmente operantes; 8 com marco futuro.
 
 **9. Existem lacunas ou erros de segmentacao?**
 
@@ -59,8 +59,8 @@ Sim. Fonte oficial travada (SOURCES_LOCK: Senado 604119, raw 2e7bf19d5951..., no
 | Artigos / com letra | 148 / 10 |
 | Targets / tipos | 963 / {'ALINEA': 71, 'ARTIGO': 148, 'CAPUT': 148, 'INCISO': 272, 'NAMESPACE': 1, 'PARAGRAFO': 286, 'PARAGRAFO_UNICO': 37} |
 | Status dos artigos | {'CURRENT': 138, 'REVOKED': 10} |
-| Camada temporal | {'EFFECT_EXHAUSTED': 39, 'EXTERNAL_STATUS_REQUIRED': 37, 'NAO_CLASSIFICADO': 24, 'OPERATIVE_CURRENT': 19, 'OPERATIVE_TRANSITION': 13, 'PARTIALLY_OPERATIVE': 6, 'REVOKED': 10} |
-| Decisões | {'EXCLUDED_HISTORICAL': 3, 'EXCLUDED_REVOKED': 7, 'NAO_DECIDIDO': 24, 'SELECT': 47, 'SKIP_APPROVED_PILOT_LEGACY_MODEL': 1, 'SKIP_CONSUMED_CONSTITUTIVE_ACT': 5, 'SKIP_EXHAUSTED_TRANSITION': 33, 'SKIP_RESIDUAL_PERSONAL_TRANSITION': 13, 'SKIP_TRANSITION_EVENT_DEPENDENT': 15} |
+| Camada temporal | {'EFFECT_EXHAUSTED': 44, 'EXTERNAL_STATUS_REQUIRED': 38, 'FUTURE_TRIGGER': 8, 'OPERATIVE_CURRENT': 20, 'OPERATIVE_TRANSITION': 22, 'PARTIALLY_OPERATIVE': 6, 'REVOKED': 10} |
+| Decisões | {'EXCLUDED_HISTORICAL': 3, 'EXCLUDED_REVOKED': 7, 'SELECT': 65, 'SKIP_APPROVED_PILOT_LEGACY_MODEL': 1, 'SKIP_CONSUMED_CONSTITUTIVE_ACT': 5, 'SKIP_EXHAUSTED_TRANSITION': 38, 'SKIP_RESIDUAL_PERSONAL_TRANSITION': 14, 'SKIP_TRANSITION_EVENT_DEPENDENT': 15} |
 
 ## Blocos do ADCT
 

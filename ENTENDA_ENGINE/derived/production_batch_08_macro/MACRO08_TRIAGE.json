@@ -23,30 +23,30 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 104,
+  "A_CLEAN_LOW": 119,
   "B_CLEAN_MEDIUM": 23,
-  "C_QUICK_REVIEW": 14,
-  "D_FULL_HUMAN_REVIEW": 20,
+  "C_QUICK_REVIEW": 15,
+  "D_FULL_HUMAN_REVIEW": 22,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 115,
-  "MEDIUM": 26,
-  "HIGH": 20
+  "LOW": 130,
+  "MEDIUM": 27,
+  "HIGH": 22
  },
  "complexity_counts": {
-  "STRUCTURED": 87,
-  "EXTERNAL": 72,
+  "STRUCTURED": 95,
+  "EXTERNAL": 82,
   "SIMPLE": 2
  },
  "jurisprudence_counts": {
-  "NONE": 134,
+  "NONE": 152,
   "CONTEXT_ONLY": 25,
   "REQUIRED_FOR_CORRECTNESS": 2
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 104,
+   "A_CLEAN_LOW": 119,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 11,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -55,7 +55,7 @@
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 23,
-   "C_QUICK_REVIEW": 3,
+   "C_QUICK_REVIEW": 4,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 20,
+   "D_FULL_HUMAN_REVIEW": 22,
    "E_HARD_FAIL": 0
   }
  },
@@ -76,17 +76,17 @@
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 74,
+   "A_CLEAN_LOW": 81,
    "B_CLEAN_MEDIUM": 3,
-   "C_QUICK_REVIEW": 9,
+   "C_QUICK_REVIEW": 10,
    "D_FULL_HUMAN_REVIEW": 1,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 28,
+   "A_CLEAN_LOW": 36,
    "B_CLEAN_MEDIUM": 20,
    "C_QUICK_REVIEW": 5,
-   "D_FULL_HUMAN_REVIEW": 19,
+   "D_FULL_HUMAN_REVIEW": 21,
    "E_HARD_FAIL": 0
   }
  },
@@ -749,7 +749,14 @@
      "detail": "politica A6 item 2"
     }
    ],
-   "info": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "atencao",
+     "match": "0.9% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
    "lint": [
     "NEAR_COPY_OF_OFFICIAL_TEXT",
     "TERM_NOT_USED"
@@ -4144,6 +4151,550 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.116-A",
+   "title": "ADCT, art. 116-A — Parcelamento das dívidas de consórcios públicos",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 116",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.117",
+   "title": "ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 115, 167",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.121",
+   "title": "ADCT, art. 121 — Contas antigas do PIS-PASEP",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: vinte",
+    "exception: ressalvada",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 1, 107, 239",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da publicação de aviso no diário oficial da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.124",
+   "title": "ADCT, art. 124 — Regras da passagem para o IBS e a CBS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [
+    "risco restante baixo apos resolucao temporal por evidencia versionada"
+   ],
+   "legal_secondary": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_EVIDENCE: OPERATIVE_TRANSITION (MACRO08_TRANSITION_EVIDENCE)"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "transition_rule: transição",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 125, 156, 195",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_NOT_USED",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.125",
+   "title": "ADCT, art. 125 — Ano de teste de 2026",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155, 156, 195, 239",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.127",
+   "title": "ADCT, art. 127 — Alíquotas de 2027 e 2028",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 156, 195",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_significa",
+     "match": "2 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.128",
+   "title": "ADCT, art. 128 — Redução gradual de ICMS e ISS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: nove",
+    "law_dependency: Lei Complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 3, 155",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "art 3 da lei complementar n 160 de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "18% , 20% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.129",
+   "title": "ADCT, art. 129 — Extinção do ICMS e do ISS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.130",
+   "title": "ADCT, art. 130 — Alíquotas de referência do IBS e da CBS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: dez",
+    "exception: excetuad",
+    "law_dependency: previstos em lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 136, 150, 153, 155, 156",
+    "overview com 32 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "atencao",
+     "match": "90 dias",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.131",
+   "title": "ADCT, art. 131 — Distribuição do IBS de 2029 a 2077",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "exception: excetuad",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 29, 130, 132, 149, 155",
+    "overview com 26 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.132",
+   "title": "ADCT, art. 132 — Retenção de 5% para entes com menor receita relativa",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 130, 131, 149, 158",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "três vezes a média nacional por habitante da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.133",
+   "title": "ADCT, art. 133 — Tributos antigos fora da base do IBS e da CBS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153, 156, 195, 239",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "100",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.134",
+   "title": "ADCT, art. 134 — Créditos acumulados de ICMS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: duzentos",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 20, 155, 156, 158",
+    "overview com 15 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.136",
+   "title": "ADCT, art. 136 — Contribuições estaduais para infraestrutura e habitação",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 130, 155",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "130 ii b e 131 2 i b",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.138",
+   "title": "ADCT, art. 138 — Limite para novas vinculações de receita",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 6",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -5965,6 +6516,71 @@
    }
   },
   {
+   "target_id": "ADCT:ART.116",
+   "title": "ADCT, art. 116 — Parcelamento das dívidas dos Municípios com o INSS",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: %",
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 115",
+    "overview com 34 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "até 1 de março de 2027 as condições",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "desde que haja manifestação de aceite por ambas as partes",
+     "sentence": "",
+     "detail": "ART.116:PAR.12:INC.III: 3/4 elementos reconhecidos; sem traco: \"desde que haja manifestação de aceite por ambas as partes\""
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ART.116:PAR.12:INC.VI:AL.f",
+     "sentence": "",
+     "detail": "6/7 itens de ART.116:PAR.12:INC.VI reconhecidos; sem traco: ART.116:PAR.12:INC.VI:AL.f \"as Fazendas Públicas municipais e a Procuradoria-G\""
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (ART.116:PAR.12:INC.VI:AL.f); LIST_ITEM_POSSIBLY_DROPPED (desde que haja manifestação de aceite por ambas as partes)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.195:PAR.15",
    "title": "Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços",
    "role": "BLOCK",
@@ -5999,7 +6615,14 @@
      "detail": "politica A6 item 2"
     }
    ],
-   "info": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "atencao",
+     "match": "0.9% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
    "lint": [
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
@@ -6937,6 +7560,100 @@
     "via": null,
     "evidence": []
    }
+  },
+  {
+   "target_id": "ADCT:ART.126",
+   "title": "ADCT, art. 126 — O que muda a partir de 2027",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Ainda nao produz efeitos em 5 de outubro de 2026; o inciso II depende da instituicao da CBS, dado externo."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "exception: exceto",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153, 195, 239",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "industrialização incentivada na zona franca de manaus conforme",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Ainda nao produz efeitos em 5 de outubro de 2026; o inciso II depende da instituicao da CBS, dado externo.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.135",
+   "title": "ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados",
+   "role": "OVERVIEW",
+   "sub_block": "H",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Depende da extincao dos tributos (ADCT art. 126) e de lei complementar; dados externos."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153, 195, 239",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "com outros tributos federais inclusive com a contribuição",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Depende da extincao dos tributos (ADCT art. 126) e de lei complementar; dados externos.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   }
  ],
  "d_reasons": {
@@ -6945,11 +7662,11 @@
   "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 2,
   "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 2,
   "SANCTION_WITH_INTERPRETATION": 1,
-  "TEMPORAL_STATUS_UNRESOLVED": 16
+  "TEMPORAL_STATUS_UNRESOLVED": 18
  },
  "finding_counts": {
   "EXTERNAL_FACT_NEEDS_PROVENANCE": 5,
-  "LIST_ITEM_POSSIBLY_DROPPED": 16,
+  "LIST_ITEM_POSSIBLY_DROPPED": 18,
   "PERMISSION_NOT_IN_TEXT": 1,
   "RESSALVA_OMITTED_IN_SUMMARY": 1
  },
@@ -6958,24 +7675,24 @@
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 225414,
-  "old_model_full_package_chars": 515708,
-  "presented_chars": 225158,
+  "total_draft_chars": 250012,
+  "old_model_full_package_chars": 584584,
+  "presented_chars": 245190,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 97777,
-   "MACRO08_FULL_D_REVIEW.md": 95822,
+   "MACRO08_COMPACT_AB_REVIEW.md": 107917,
+   "MACRO08_FULL_D_REVIEW.md": 102718,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 22451,
-   "MACRO08_QUICK_C_REVIEW.md": 8989
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 24843,
+   "MACRO08_QUICK_C_REVIEW.md": 9593
   },
-  "reduction_abs": 290550,
-  "reduction_pct": 56.3
+  "reduction_abs": 339394,
+  "reduction_pct": 58.1
  },
- "d_ratio": 0.124,
+ "d_ratio": 0.123,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 111,
+  "eligible": 118,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -7110,6 +7827,20 @@
     "NUMERO": 5,
     "RESSALVA_OMITIDA": 3
    }
+  },
+  "H": {
+   "corrections": 18,
+   "by_category": {
+    "COPIA_DA_LEI_SECA": 4,
+    "DATA": 3,
+    "FRASE_LONGA": 1,
+    "LISTA_INCOMPLETA": 3,
+    "NUMERO": 1,
+    "REMISSAO_EXTERNA": 2,
+    "RESSALVA_OMITIDA": 1,
+    "TELEOLOGIA": 2,
+    "TERMO_TECNICO": 1
+   }
   }
  },
  "checks": {
@@ -7153,31 +7884,31 @@
    }
   },
   "ADCT": {
-   "new_explanations": 48,
+   "new_explanations": 66,
    "roles": {
     "BLOCK": 1,
-    "OVERVIEW": 47
+    "OVERVIEW": 65
    },
    "queues": {
-    "A_CLEAN_LOW": 25,
+    "A_CLEAN_LOW": 40,
     "B_CLEAN_MEDIUM": 4,
-    "C_QUICK_REVIEW": 3,
-    "D_FULL_HUMAN_REVIEW": 16,
+    "C_QUICK_REVIEW": 4,
+    "D_FULL_HUMAN_REVIEW": 18,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 27,
-    "MEDIUM": 5,
-    "HIGH": 16
+    "LOW": 42,
+    "MEDIUM": 6,
+    "HIGH": 18
    },
    "verification_complexity": {
     "SIMPLE": 0,
-    "STRUCTURED": 21,
-    "EXTERNAL": 27
+    "STRUCTURED": 29,
+    "EXTERNAL": 37
    },
    "jurisprudence": {
     "CONTEXT_ONLY": 8,
-    "NONE": 39,
+    "NONE": 57,
     "REQUIRED_FOR_CORRECTNESS": 1
    }
   }

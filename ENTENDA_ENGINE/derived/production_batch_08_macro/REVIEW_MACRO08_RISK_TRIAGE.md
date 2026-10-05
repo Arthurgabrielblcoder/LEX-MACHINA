@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 161 · risco LOW 115 · MEDIUM 26 · HIGH 20
-- Prontas para revisão editorial: 161 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 3, DUPLICATION 2, EXAMPLE_NUMBER 7, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 11, LAW_DEPENDENCY_OMITTED 3, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Explicações: 179 · risco LOW 130 · MEDIUM 27 · HIGH 22
+- Prontas para revisão editorial: 179 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 3, DUPLICATION 2, EXAMPLE_NUMBER 10, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 12, LAW_DEPENDENCY_OMITTED 3, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -115,6 +115,16 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `ADCT:ART.107-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem "Vide ADI 7064" (e "Vide MI 7300"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION).
 - LAW_DEPENDENCY_OMITTED (body: a lei) → As remissoes a lei do texto (pequeno valor definido em lei; doenca grave e deficiencia na forma da lei) sao descritas como "valor de pequeno valor"; dependencia indicada na ordem do § 8º. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 126 — O que muda a partir de 2027
+
+- `ADCT:ART.126` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Ainda nao produz efeitos em 5 de outubro de 2026; o inciso II depende da instituicao da CBS, dado externo.
+
+### ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados
+
+- `ADCT:ART.135` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: FUTURE_TRIGGER: Depende da extincao dos tributos (ADCT art. 126) e de lei complementar; dados externos.
 
 ## Risco MEDIUM
 
@@ -253,6 +263,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `ADCT:ART.101` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_E; SENSITIVE_THEME: SENSITIVE_THEME: sob pena; EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes ("ADI 7047"); JUDICIAL_REVIEW_CONTEXT_ONLY: ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064 -- A anotacao "Vide ADI 7047; Vide ADI 7064" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION).
 - LAW_DEPENDENCY_OMITTED (body: previstos em lei) → A remissao a lei ("previstos em lei") e do proprio texto (limites de endividamento previstos em lei, § 2º, III) e a explicacao a menciona como "limites de endividamento". Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 116 — Parcelamento das dívidas dos Municípios com o INSS
+
+- `ADCT:ART.116` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: sob pena
 
 ## Risco LOW
 
@@ -846,5 +861,84 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### ADCT, art. 115 — Parcelamento de dívidas com regimes próprios
 
 - `ADCT:ART.115` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 116-A — Parcelamento das dívidas de consórcios públicos
+
+- `ADCT:ART.116-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM
+
+- `ADCT:ART.117` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 121 — Contas antigas do PIS-PASEP
+
+- `ADCT:ART.121` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 124 — Regras da passagem para o IBS e a CBS
+
+- `ADCT:ART.124` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: risco restante baixo apos resolucao temporal por evidencia versionada
+- EXTRAPOLATION_NUMBER (o_que_significa: 2033) → 2033 vem do art. 129 do ADCT, citado como parte do cronograma ao qual o art. 124 remete (arts. 125 a 133). Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 125 — Ano de teste de 2026
+
+- `ADCT:ART.125` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 127 — Alíquotas de 2027 e 2028
+
+- `ADCT:ART.127` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 128 — Redução gradual de ICMS e ISS
+
+- `ADCT:ART.128` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXAMPLE_NUMBER (exemplo_pratico: 18%) → Valores marcados como ilustrativos na propria frase; 18% = 9/10 de 20% (inciso I). Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 129 — Extinção do ICMS e do ISS
+
+- `ADCT:ART.129` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 130 — Alíquotas de referência do IBS e da CBS
+
+- `ADCT:ART.130` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXAMPLE_NUMBER (exemplo_pratico: 2026) → 2026 e o ano anterior a 2027 (§ 1º: fixacao no ano anterior a vigencia) e o ano da data de referencia do lote; exemplo declarado como baseado no § 1º. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 131 — Distribuição do IBS de 2029 a 2077
+
+- `ADCT:ART.131` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 132 — Retenção de 5% para entes com menor receita relativa
+
+- `ADCT:ART.132` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 133 — Tributos antigos fora da base do IBS e da CBS
+
+- `ADCT:ART.133` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXAMPLE_NUMBER (exemplo_pratico: 100) → Valor marcado como ilustrativo na propria frase. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 134 — Créditos acumulados de ICMS
+
+- `ADCT:ART.134` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 136 — Contribuições estaduais para infraestrutura e habitação
+
+- `ADCT:ART.136` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 138 — Limite para novas vinculações de receita
+
+- `ADCT:ART.138` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 
