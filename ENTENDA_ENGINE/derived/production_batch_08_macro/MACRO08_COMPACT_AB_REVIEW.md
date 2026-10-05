@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (26)
+## A — CLEAN_LOW (60)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -290,7 +290,381 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (9)
+### `CF88:ART.201` — Art. 201 — Regime Geral de Previdência Social
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 201 organiza a previdência social no Regime Geral de Previdência Social, de caráter contributivo e filiação obrigatória, com critérios que preservem o equilíbrio financeiro e atuarial.
+- Interpretação principal: Contributivo quer dizer que, em regra, quem quer a proteção precisa contribuir.
+- ATENÇÃO: Segundo as anotações da fonte oficial, a redação atual de vários dispositivos do artigo foi dada pela Emenda Constitucional nº 103, de 2019.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: critérios que preservem o equilíbrio financeiro e…), lint ABSOLUTE_CLAIM
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.201:PAR.1` — Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º proíbe adotar requisitos ou critérios diferentes para conceder benefícios, ressalvada a possibilidade de lei complementar prever idade e tempo de contribuição diferentes da regra geral para a…
+- Interpretação principal: A regra é a igualdade de requisitos entre os segurados do regime geral.
+- ATENÇÃO: A vedação de caracterizar a atividade especial por categoria profissional está no próprio inciso II.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.201:PAR.2` — Art. 201, § 2º — Piso dos benefícios previdenciários
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º impede que o benefício que faz as vezes do salário de contribuição ou da renda do trabalho do segurado tenha valor mensal abaixo do salário mínimo.
+- Interpretação principal: Quando o benefício previdenciário faz as vezes da renda do trabalho, como a aposentadoria ou a pensão, ele não pode ser menor que o salário mínimo.
+- ATENÇÃO: O piso é o salário mínimo vigente no país.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.201:PAR.7` — Art. 201, § 7º — Idades para aposentadoria no regime geral
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 7º assegura aposentadoria no regime geral, nos termos da lei, com as seguintes idades: 65 anos para o homem e 62 anos para a mulher, observado tempo mínimo de contribuição; e 60 anos para o homem…
+- Interpretação principal: O parágrafo fixa as idades de referência da aposentadoria do regime geral.
+- ATENÇÃO: O tempo mínimo de contribuição não está no § 7º.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: incluídos o produtor rural o garimpeiro e o)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.201:PAR.9` — Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 9º garante, para fins de aposentadoria, que o tempo de contribuição seja contado reciprocamente entre o regime geral e os regimes próprios, e entre os próprios regimes próprios, com compensação…
+- Interpretação principal: Quem trabalhou parte da vida na iniciativa privada e parte no serviço público não perde nenhum desses períodos: o tempo de um regime conta no outro.
+- ATENÇÃO: A contagem é do tempo de contribuição.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(10 anos), NUMBER_FROM_OTHER_DEVICE(10 anos)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.201:PAR.12` — Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 12 manda a lei criar um sistema especial de inclusão previdenciária, com alíquotas diferenciadas, para trabalhadores de baixa renda, inclusive os informais.
+- Interpretação principal: O objetivo declarado no texto é atender a quem tem pouca ou nenhuma renda e normalmente ficaria fora da previdência.
+- ATENÇÃO: As alíquotas e as condições concretas estão na lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: especial de inclusão previdenciária com alíquotas…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.202` — Art. 202 — Previdência privada complementar
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 202 estabelece que a previdência privada é complementar e autônoma em relação ao regime geral, facultativa, baseada na formação de reservas que garantam o benefício contratado, e regulada por…
+- Interpretação principal: A previdência privada é uma proteção extra, que se soma à pública e não a substitui.
+- ATENÇÃO: O § 2º ressalva os benefícios concedidos da regra de não integração à remuneração; o alcance dessa ressalva depende da lei e da interpretação.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de reservas que garantam o benefício contratado e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.202:PAR.3` — Art. 202, § 3º — Aporte público em previdência privada
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 3º proíbe a União, os Estados, o Distrito Federal, os Municípios e suas entidades da administração indireta de aportarem recursos a entidade de previdência privada, salvo como patrocinadores.
+- Interpretação principal: Dinheiro público vai para um fundo de previdência privada apenas na hipótese ressalvada: quando o ente atua como patrocinador do plano, isto é, como empregador que…
+- ATENÇÃO: O limite recai sobre a contribuição normal do patrocinador público.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(7%), EXAMPLE_NUMBER(resolvido), lint PARENT_REPETITION
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.203` — Art. 203 — Assistência social
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 203 determina que a assistência social seja prestada a quem dela necessitar, sem exigir contribuição à seguridade social.
+- Interpretação principal: A diferença central entre assistência e previdência está no acesso: a previdência exige contribuição; a assistência atende pela necessidade.
+- ATENÇÃO: O critério de acesso é a necessidade, e não a contribuição.
+- Dependência externa: nenhuma
+- Warnings: lint ABSOLUTE_CLAIM
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.204` — Art. 204 — Financiamento e diretrizes da assistência social
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 204 determina que as ações governamentais de assistência social sejam custeadas pelo orçamento da seguridade social do art. 195 e por outras fontes.
+- Interpretação principal: A assistência social é organizada em rede: a União coordena e fixa regras gerais; Estados e Municípios executam os programas, ao lado das entidades beneficentes.
+- ATENÇÃO: A vinculação do parágrafo único é uma faculdade, com teto de cinco décimos por cento da receita tributária líquida.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.205` — Art. 205 — Direito à educação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 205 afirma que a educação é direito de todos e dever do Estado e da família.
+- Interpretação principal: A educação é direito de todos e tem responsáveis compartilhados: o Estado e a família, com ajuda da sociedade.
+- ATENÇÃO: As garantias concretas do dever do Estado estão no art. 208.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de todos e dever do estado e da)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.206` — Art. 206 — Princípios do ensino
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 206 lista os princípios do ensino: igualdade de condições de acesso e permanência na escola; liberdade de aprender, de ensinar, de pesquisar e de divulgar pensamento, arte e saber; pluralismo…
+- Interpretação principal: Os princípios orientam o ensino; alguns valem especificamente para a rede pública, como a gratuidade, a gestão democrática e o piso salarial.
+- ATENÇÃO: O piso salarial do inciso VIII é fixado por lei federal.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: direito à educação e à aprendizagem ao longo), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.207` — Art. 207 — Autonomia universitária
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 207 garante às universidades autonomia didático-científica, autonomia administrativa e autonomia de gestão financeira e patrimonial, e determina que elas obedeçam à indissociabilidade entre…
+- Interpretação principal: Autonomia permite à universidade decidir sobre seus cursos, currículos e pesquisas, organizar sua administração e gerir seus recursos e bens, dentro da lei.
+- ATENÇÃO: A autonomia é exercida nos limites da Constituição e da lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: admitir professores técnicos e cientistas…), lint TERM_NOT_USED
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.208` — Art. 208 — Dever do Estado com a educação
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 208 lista as garantias pelas quais o Estado cumpre seu dever com a educação: educação básica obrigatória e gratuita dos 4 aos 17 anos, inclusive para quem não a teve na idade própria;…
+- Interpretação principal: O artigo transforma o direito à educação em prestações concretas que podem ser cobradas do Estado.
+- ATENÇÃO: No inciso III, o atendimento especializado é oferecido preferencialmente na rede regular de ensino.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.208:INC.I` — Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O inciso I garante educação básica obrigatória e gratuita dos 4 aos 17 anos de idade e assegura a oferta gratuita a todos que não tiveram acesso a ela na idade própria.
+- Interpretação principal: Entre 4 e 17 anos, frequentar a educação básica é obrigatório e o ensino público é gratuito.
+- ATENÇÃO: O inciso depende do caput: é uma das garantias do dever do Estado com a educação.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(30), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.208:PAR.1` — Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º qualifica como direito público subjetivo o acesso ao ensino obrigatório e gratuito.
+- Interpretação principal: Direito público subjetivo é um direito que a pessoa pode exigir diretamente do Estado, inclusive na Justiça, sem depender da boa vontade do governante.
+- ATENÇÃO: O tipo de responsabilidade da autoridade e o procedimento são definidos na legislação aplicável.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(8), lint PARENT_REPETITION
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.209` — Art. 209 — Ensino privado
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 209 declara o ensino livre à iniciativa privada, com duas condições: cumprir as normas gerais da educação nacional; e ter autorização e avaliação de qualidade pelo poder público.
+- Interpretação principal: A iniciativa privada pode oferecer ensino, desde que cumpra as duas condições do artigo.
+- ATENÇÃO: —
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: autorização e avaliação de qualidade pelo poder…), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.211` — Art. 211 — Sistemas de ensino em regime de colaboração
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 211 manda a União, os Estados, o Distrito Federal e os Municípios organizarem seus sistemas de ensino em regime de colaboração.
+- Interpretação principal: Cada nível da Federação tem sua área principal, mas todos devem cooperar.
+- ATENÇÃO: As áreas indicadas são de atuação prioritária, e não exclusiva.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.212:PAR.5` — Art. 212, §§ 5º e 6º — Salário-educação
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 5º dá à educação básica pública uma fonte extra de recursos: o salário-educação, contribuição social paga pelas empresas na forma da lei.
+- Interpretação principal: Além dos impostos vinculados à educação, a educação básica pública conta com uma contribuição paga pelas empresas, o salário-educação.
+- ATENÇÃO: O salário-educação é fonte adicional: não substitui os percentuais mínimos do caput.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ao número de alunos matriculados na educação…), EXAMPLE_NUMBER_NOT_IN_TEXT(2)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.213` — Art. 213 — Destinação de recursos públicos à educação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 213 destina os recursos públicos às escolas públicas e permite dirigi-los também a escolas comunitárias, confessionais ou filantrópicas, definidas em lei.
+- Interpretação principal: A regra é dinheiro público para escola pública.
+- ATENÇÃO: A abertura para escolas privadas alcança apenas as comunitárias, confessionais ou filantrópicas definidas em lei que cumpram os requisitos dos incisos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a escolas comunitárias confessionais ou…), EXCEPTION_NOT_IN_TEXT(resolvido), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.214` — Art. 214 — Plano nacional de educação
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 214 manda a lei estabelecer o plano nacional de educação, com duração de dez anos.
+- Interpretação principal: O plano nacional de educação é uma lei com horizonte de uma década, que organiza os esforços dos poderes públicos das diferentes esferas em torno de metas comuns.
+- ATENÇÃO: Os números e as metas concretas estão na lei do plano, e não no artigo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: nacional de educação em regime de colaboração e), NUMBER_FROM_OTHER_DEVICE(10 anos), NUMBER_FROM_OTHER_DEVICE(10 anos), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.215` — Art. 215 — Direitos culturais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 215 obriga o Estado a garantir a todos o pleno exercício dos direitos culturais e o acesso às fontes da cultura nacional, e a apoiar e incentivar a valorização e a difusão das manifestações…
+- Interpretação principal: A cultura é tratada como direito de todos, e não só como atividade de artistas.
+- ATENÇÃO: —
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a todos o pleno exercício dos direitos culturais), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.216` — Art. 216 — Patrimônio cultural brasileiro
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 216 define o patrimônio cultural brasileiro como os bens materiais e imateriais, isolados ou em conjunto, que fazem referência à identidade, à ação e à memória dos grupos formadores da…
+- Interpretação principal: O patrimônio cultural não é feito só de prédios antigos: inclui também o imaterial, como danças, saberes e modos de vida.
+- ATENÇÃO: O tombamento do § 5º decorre diretamente do texto constitucional.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: obras objetos documentos edificações e demais…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.216-A` — Art. 216-A — Sistema Nacional de Cultura
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 216-A cria o Sistema Nacional de Cultura, um processo de gestão e de promoção compartilhada das políticas culturais, em regime de colaboração, descentralizado e participativo, com políticas…
+- Interpretação principal: O sistema faz para a cultura algo parecido com o que outros sistemas fazem em outras áreas: integra União, Estados, Distrito Federal e Municípios em políticas pactuadas,…
+- ATENÇÃO: A regulamentação nacional depende de lei federal, e cada ente organiza seu sistema por lei própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: entre os entes da federação e a sociedade)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.217` — Art. 217 — Desporto
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 217 impõe ao Estado o dever de estimular as práticas esportivas, formais e não formais, que são direito de cada pessoa, observados quatro critérios: autonomia das entidades desportivas…
+- Interpretação principal: O esporte é um direito de cada pessoa, e o Estado deve estimulá-lo.
+- ATENÇÃO: A autonomia das entidades desportivas alcança sua organização e funcionamento, dentro da lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: diferenciado para o desporto profissional e o não)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.218` — Art. 218 — Ciência, tecnologia e inovação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 218 manda o Estado promover e incentivar a ciência, a pesquisa, a formação científica e tecnológica e a inovação.
+- Interpretação principal: Ciência e inovação são tarefas do Estado, que deve promovê-las e incentivá-las.
+- ATENÇÃO: A vinculação de receita do § 5º é uma faculdade dos Estados e do Distrito Federal.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a atuação no exterior das instituições públicas de), NEAR_COPY_MICROFIX(o_que_significa: entidades públicas de fomento ao ensino e à)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.219` — Art. 219 — Mercado interno e inovação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 219 declara que o mercado interno integra o patrimônio nacional e será incentivado, nos termos de lei federal, para tornar possíveis o desenvolvimento cultural e socioeconômico, o bem-estar da…
+- Interpretação principal: O mercado interno, isto é, o conjunto de consumidores e produtores do próprio país, é tratado como bem de todos.
+- ATENÇÃO: O incentivo ao mercado interno se faz nos termos de lei federal.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: bem estar da população e a autonomia tecnológica)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.219-A` — Art. 219-A — Cooperação para pesquisa e inovação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 219-A permite que a União, os Estados, o Distrito Federal e os Municípios firmem instrumentos de cooperação com órgãos e entidades públicas e com entidades privadas para executar projetos de…
+- Interpretação principal: O artigo autoriza parcerias entre o poder público e outras instituições, inclusive privadas, em projetos de ciência e inovação.
+- ATENÇÃO: As condições dos instrumentos de cooperação são definidas em lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.219-B` — Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 219-B organiza o Sistema Nacional de Ciência, Tecnologia e Inovação em regime de colaboração entre entes públicos e privados, para promover o desenvolvimento científico e tecnológico e a…
+- Interpretação principal: O sistema reúne poder público e iniciativa privada em torno da ciência e da inovação.
+- ATENÇÃO: O § 2º inclui os Municípios entre os entes que legislam sobre suas peculiaridades nessa matéria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o desenvolvimento científico e tecnológico e a…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.220:PAR.3` — Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º atribui à lei federal duas tarefas: regular as diversões e os espetáculos públicos, cabendo ao poder público informar sua natureza, as faixas etárias a que não se recomendam e os locais e…
+- Interpretação principal: O poder público não proíbe espetáculos: informa a sociedade, indicando para quais idades não são recomendados e em que horários ou locais são inadequados.
+- ATENÇÃO: No § 3º, I, o papel do poder público é informar, e não vetar a exibição.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(16)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.221` — Art. 221 — Princípios da programação de rádio e televisão
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 221 fixa quatro princípios para o que as emissoras de rádio e televisão produzem e exibem: preferência por finalidades educativas, artísticas, culturais e informativas; promoção da cultura…
+- Interpretação principal: Rádio e televisão usam um serviço público concedido pelo Estado.
+- ATENÇÃO: O § 3º do art. 222 estende esses princípios aos meios de comunicação social eletrônica, na forma de lei específica.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.222` — Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 222 reserva a propriedade de empresa jornalística e de radiodifusão de som e de som e imagem a brasileiros natos, a naturalizados há mais de dez anos ou a pessoas jurídicas constituídas sob as…
+- Interpretação principal: O artigo protege o controle nacional sobre os meios de comunicação.
+- ATENÇÃO: As mudanças de controle societário dessas empresas devem ser comunicadas ao Congresso Nacional (§ 5º).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a propriedade de empresa jornalística e de…), NEAR_COPY_MICROFIX(o_que_significa: brasileiros natos ou naturalizados há mais de dez), NEAR_COPY_MICROFIX(exemplo_pratico: brasileiros natos ou naturalizados há mais de dez)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.223` — Art. 223 — Concessões de rádio e televisão
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 223 atribui ao Poder Executivo a outorga e a renovação de concessão, permissão e autorização para radiodifusão de som e de som e imagem, observada a complementaridade dos sistemas privado,…
+- Interpretação principal: A concessão de rádio e televisão envolve dois Poderes: o Executivo outorga, e o Congresso delibera.
+- ATENÇÃO: O quórum de dois quintos é exigido para não renovar, e não para renovar.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aprovação de no mínimo dois quintos do congresso), EXAMPLE_NUMBER_NOT_IN_TEXT(15)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.224` — Art. 224 — Conselho de Comunicação Social
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 224 manda o Congresso Nacional instituir, como órgão auxiliar e na forma da lei, o Conselho de Comunicação Social, para os efeitos do capítulo da comunicação social.
+- Interpretação principal: O Conselho de Comunicação Social é um órgão de apoio ao Congresso Nacional nos temas do capítulo da comunicação social, que vão da liberdade de expressão à propriedade…
+- ATENÇÃO: —
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (13)
 
 ### `CF88:ART.182:PAR.4` — Art. 182, § 4º — Sanções ao imóvel urbano subutilizado
 
@@ -387,7 +761,51 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: Os pisos não são fixados pela Constituição: ela exige uma lei federal que os crie para quatro categorias.
 - ATENÇÃO: O valor dos pisos está na lei federal, não na Constituição.
 - Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(70%), lint JURISPRUDENCE_WORDING_IN_BODY
+- Warnings: NUMBER_FROM_OTHER_DEVICE(70% ), lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.203:INC.V` — Art. 203, inciso V — Benefício de um salário mínimo da assistência social
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os critérios legais de renda e de…
+- Ponto jurídico: O inciso V inclui entre os objetivos da assistência social um benefício mensal de um salário mínimo para a pessoa com deficiência e para o idoso que comprovem não ter meios de se manter nem de ser…
+- Interpretação principal: O inciso cria um benefício assistencial, que não depende de contribuição prévia.
+- ATENÇÃO: O inciso depende do caput: a assistência social é prestada a quem dela necessitar.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint PARENT_REPETITION
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.210` — Art. 210 — Conteúdos mínimos, ensino religioso e língua
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O modelo de ensino religioso nas…
+- Ponto jurídico: O art. 210 manda fixar conteúdos mínimos para o ensino fundamental, para garantir uma formação básica comum e o respeito aos valores culturais e artísticos do país e das regiões.
+- Interpretação principal: Os conteúdos mínimos buscam uma formação básica comum no ensino fundamental, sem apagar os valores regionais.
+- ATENÇÃO: A matrícula no ensino religioso é facultativa.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: disciplina dos horários normais das escolas…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.217:PAR.1` — Art. 217, §§ 1º e 2º — Justiça desportiva
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O que ocorre se o prazo de…
+- Ponto jurídico: O § 1º determina que o Poder Judiciário só admita ações sobre disciplina e competições desportivas depois de esgotadas as instâncias da justiça desportiva, regulada em lei.
+- Interpretação principal: Em matéria de disciplina e de competições esportivas, o caminho começa na justiça desportiva, que não faz parte do Poder Judiciário.
+- ATENÇÃO: A exigência alcança apenas ações sobre disciplina e competições desportivas.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: as instâncias da justiça desportiva regulada em…), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.220` — Art. 220 — Comunicação social e liberdade de expressão
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os limites da liberdade de…; INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação…
+- Ponto jurídico: O art. 220 proíbe qualquer restrição à manifestação do pensamento, à criação, à expressão e à informação, em qualquer forma, processo ou veículo, observado o que a Constituição dispõe.
+- Interpretação principal: O artigo garante a liberdade de comunicação.
+- ATENÇÃO: A liberdade convive com os limites expressos no próprio texto constitucional.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

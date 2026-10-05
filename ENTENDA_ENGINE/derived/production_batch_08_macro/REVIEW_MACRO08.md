@@ -1979,3 +1979,2042 @@ Em várias tarefas o verbo é participar ou colaborar, e não executar sozinho: 
 
 ---
 
+## CF88:ART.201
+
+Sem explicação própria: 22 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 201 — Regime Geral de Previdência Social
+
+- **TARGET:** `CF88:ART.201` · `ENTENDA/CF88:ART.201/BASE/1`
+- **DISPLAY TITLE:** Art. 201 — Regime Geral de Previdência Social
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 331 palavras · 2705 bytes · referências 0
+- **Motivo da seleção:** Visao geral: caracteristicas do regime geral, eventos cobertos e mapa dos paragrafos (beneficios, aposentadoria, contagem reciproca, inclusao previdenciaria).
+
+**O QUE DIZ**
+
+O art. 201 organiza a previdência social no Regime Geral de Previdência Social, de caráter contributivo e filiação obrigatória, com critérios que preservem o equilíbrio financeiro e atuarial. Na forma da lei, o regime cobre a incapacidade temporária ou permanente para o trabalho e a idade avançada, protege a maternidade, especialmente a gestante, e protege o trabalhador em desemprego involuntário. Também paga salário-família e auxílio-reclusão aos dependentes de segurados de baixa renda e pensão por morte do segurado, homem ou mulher, ao cônjuge, ao companheiro e aos dependentes. Os parágrafos tratam de requisitos de benefícios, valores, aposentadoria, contagem de tempo e outras regras do regime.
+
+**O QUE SIGNIFICA**
+
+Contributivo quer dizer que, em regra, quem quer a proteção precisa contribuir. Filiação obrigatória quer dizer que quem exerce atividade remunerada abrangida pelo regime geral entra nele por força da lei, sem escolha.
+
+O equilíbrio financeiro e atuarial exige que as regras considerem o que entra e o que sai, inclusive no longo prazo.
+
+Os parágrafos detalham o sistema: benefícios com reajuste para manter o valor real (§ 4º) e salários de contribuição atualizados (§ 3º); gratificação natalina com base nos proventos de dezembro (§ 6º); idade reduzida para o professor da educação básica (§ 8º); proibição de tempo de contribuição fictício (§ 14); acumulação de benefícios disciplinada por lei complementar (§ 15).
+
+**EXEMPLO PRÁTICO**
+
+Uma trabalhadora com carteira assinada contribui todos os meses. Quando engravida, tem proteção à maternidade; se ficar temporariamente incapaz para o trabalho, tem cobertura por incapacidade; e seus dependentes terão pensão se ela morrer, sempre nos termos da lei.
+
+**ATENÇÃO**
+
+Segundo as anotações da fonte oficial, a redação atual de vários dispositivos do artigo foi dada pela Emenda Constitucional nº 103, de 2019. As regras de transição dessa emenda não estão no art. 201 e pertencem à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Caráter contributivo*: exigência de contribuição para ter direito à proteção previdenciária.
+- *Equilíbrio atuarial*: compatibilidade, no longo prazo, entre as contribuições e os benefícios a pagar.
+- *Auxílio-reclusão*: benefício pago aos dependentes de segurado de baixa renda que está preso.
+
+**CAMADA EXTERNA**
+
+- As regras de transição da reforma da previdência de 2019 (emenda que deu a redação atual ao artigo) pertencem à camada externa.
+
+**WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: critérios que preservem o equilíbrio financeiro e atuarial)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções
+
+- **TARGET:** `CF88:ART.201:PAR.1` · `ENTENDA/CF88:ART.201:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2123 bytes · referências 1
+- **Motivo da seleção:** Bloco: vedacao de requisitos diferenciados e as duas excecoes por lei complementar (segurados com deficiencia e expostos a agentes nocivos).
+
+**O QUE DIZ**
+
+O § 1º proíbe adotar requisitos ou critérios diferentes para conceder benefícios, ressalvada a possibilidade de lei complementar prever idade e tempo de contribuição diferentes da regra geral para a aposentadoria, exclusivamente em favor de dois grupos de segurados: pessoas com deficiência, avaliadas antes por equipe multiprofissional e interdisciplinar em avaliação biopsicossocial; e trabalhadores efetivamente expostos a agentes químicos, físicos e biológicos nocivos à saúde, ou à combinação deles, sem que a caracterização possa ser feita por categoria profissional ou ocupação.
+
+**O QUE SIGNIFICA**
+
+A regra é a igualdade de requisitos entre os segurados do regime geral.
+
+As exceções são fechadas, só para aposentadoria e só por lei complementar.
+
+No inciso I, a deficiência precisa ser constatada por avaliação biopsicossocial feita por equipe de várias áreas.
+
+No inciso II, o que importa é a exposição efetiva do trabalhador a agentes nocivos. Pertencer a uma profissão considerada perigosa não basta.
+
+**EXEMPLO PRÁTICO**
+
+Um técnico trabalha diariamente exposto a ruído e a produtos químicos acima dos limites de tolerância. Ele pode ter regras de aposentadoria diferentes, nos termos da lei complementar, por causa da exposição efetiva, e não pelo nome do cargo que ocupa.
+
+**ATENÇÃO**
+
+A vedação de caracterizar a atividade especial por categoria profissional está no próprio inciso II. As regras de transição da reforma de 2019 sobre aposentadoria especial ficam na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Avaliação biopsicossocial*: avaliação que considera aspectos de saúde, psicológicos e sociais da pessoa.
+- *Agentes nocivos*: fatores químicos, físicos ou biológicos que podem prejudicar a saúde.
+- *Aposentadoria especial*: aposentadoria com requisitos próprios para quem trabalha exposto a agentes nocivos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 201, § 2º — Piso dos benefícios previdenciários
+
+- **TARGET:** `CF88:ART.201:PAR.2` · `ENTENDA/CF88:ART.201:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 201, § 2º — Piso dos benefícios previdenciários
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.201`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1326 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: beneficio substitutivo do salario de contribuicao ou do rendimento do trabalho nao pode ser inferior ao salario minimo.
+
+**O QUE DIZ**
+
+O § 2º impede que o benefício que faz as vezes do salário de contribuição ou da renda do trabalho do segurado tenha valor mensal abaixo do salário mínimo.
+
+**O QUE SIGNIFICA**
+
+Quando o benefício previdenciário faz as vezes da renda do trabalho, como a aposentadoria ou a pensão, ele não pode ser menor que o salário mínimo.
+
+O piso se refere aos benefícios que substituem a renda; o texto não o estende expressamente a benefícios de outra natureza.
+
+**EXEMPLO PRÁTICO**
+
+Um segurado contribuiu durante anos sobre valores baixos. Ao se aposentar, o cálculo resulta em valor menor que o salário mínimo. Como a aposentadoria substitui a renda do trabalho, o valor pago não pode ficar abaixo do salário mínimo.
+
+**ATENÇÃO**
+
+O piso é o salário mínimo vigente no país. Quais benefícios têm natureza substitutiva é questão definida pela lei e pela interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Salário de contribuição*: valor sobre o qual o segurado contribui para a previdência.
+- *Benefício substitutivo*: benefício que ocupa o lugar da renda do trabalho do segurado.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 201, § 7º — Idades para aposentadoria no regime geral
+
+- **TARGET:** `CF88:ART.201:PAR.7` · `ENTENDA/CF88:ART.201:PAR.7/BASE/1`
+- **DISPLAY TITLE:** Art. 201, § 7º — Idades para aposentadoria no regime geral
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1915 bytes · referências 0
+- **Motivo da seleção:** Bloco: idades minimas para homens e mulheres na regra geral e para trabalhadores rurais e de economia familiar.
+
+**O QUE DIZ**
+
+O § 7º assegura aposentadoria no regime geral, nos termos da lei, com as seguintes idades: 65 anos para o homem e 62 anos para a mulher, observado tempo mínimo de contribuição; e 60 anos para o homem e 55 anos para a mulher no caso dos trabalhadores rurais e dos que atuam em regime de economia familiar, incluídos o produtor rural, o garimpeiro e o pescador artesanal.
+
+**O QUE SIGNIFICA**
+
+O parágrafo fixa as idades de referência da aposentadoria do regime geral.
+
+Na regra do inciso I, além da idade, é preciso cumprir um tempo mínimo de contribuição, cuja duração é definida fora deste inciso.
+
+O inciso II reduz as idades para quem trabalha no campo e em economia familiar, inclusive o garimpeiro e o pescador artesanal.
+
+O § 8º reduz em cinco anos a idade do inciso I para o professor com tempo de magistério na educação infantil e no ensino fundamental e médio.
+
+**EXEMPLO PRÁTICO**
+
+Um pescador artesanal que trabalha com a família, sem empregados, pode se aposentar aos 60 anos, nos termos da lei. Uma trabalhadora urbana, na regra geral, aos 62 anos, se tiver o tempo mínimo de contribuição.
+
+**ATENÇÃO**
+
+O tempo mínimo de contribuição não está no § 7º. Quem já era segurado antes da reforma de 2019 pode estar sujeito a regras de transição, que ficam na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Regime de economia familiar*: trabalho dos membros da família, indispensável ao sustento, sem empregados permanentes.
+- *Garimpeiro*: quem extrai minerais de forma artesanal ou em pequena escala.
+
+**CAMADA EXTERNA**
+
+- O tempo mínimo de contribuição e as regras de transição para quem já era segurado constam da emenda de 2019 e da lei (camada externa).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: incluídos o produtor rural o garimpeiro e o)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição
+
+- **TARGET:** `CF88:ART.201:PAR.9` · `ENTENDA/CF88:ART.201:PAR.9/BASE/1`
+- **DISPLAY TITLE:** Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.201:PAR.9-A`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 1977 bytes · referências 0
+- **Motivo da seleção:** Bloco: contagem reciproca entre regime geral e regimes proprios (§ 9º) e com o tempo de servico militar (§ 9º-A), com compensacao financeira.
+
+**O QUE DIZ**
+
+O § 9º garante, para fins de aposentadoria, que o tempo de contribuição seja contado reciprocamente entre o regime geral e os regimes próprios, e entre os próprios regimes próprios, com compensação financeira segundo critérios da lei. O § 9º-A estende a contagem recíproca ao tempo de serviço militar das atividades dos arts. 42, 142 e 143, para inativação militar ou aposentadoria, com compensação financeira entre as receitas de contribuição dos militares e as dos demais regimes.
+
+**O QUE SIGNIFICA**
+
+Quem trabalhou parte da vida na iniciativa privada e parte no serviço público não perde nenhum desses períodos: o tempo de um regime conta no outro.
+
+O regime que paga o benefício recebe uma compensação financeira do regime em que a pessoa contribuiu antes.
+
+O § 9º-A aplica a mesma lógica ao tempo militar, seja para o militar que vai para a inatividade, seja para quem se aposenta em outro regime.
+
+**EXEMPLO PRÁTICO**
+
+Uma professora contribuiu dez anos como empregada de escola particular e depois passou em concurso público estadual. Ao se aposentar pelo regime próprio do Estado, ela pode contar os dez anos do regime geral, e o Estado recebe compensação financeira.
+
+**ATENÇÃO**
+
+A contagem é do tempo de contribuição. O § 14 proíbe contar tempo de contribuição fictício para a contagem recíproca.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Contagem recíproca*: aproveitamento, em um regime previdenciário, do tempo de contribuição feito em outro.
+- *Compensação financeira*: acerto de valores entre o regime que recebeu as contribuições e o que paga o benefício.
+- *Inativação militar*: passagem do militar para a inatividade remunerada.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária
+
+- **TARGET:** `CF88:ART.201:PAR.12` · `ENTENDA/CF88:ART.201:PAR.12/BASE/1`
+- **DISPLAY TITLE:** Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.201:PAR.13`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1737 bytes · referências 0
+- **Motivo da seleção:** Bloco: sistema de inclusao com aliquotas diferenciadas para baixa renda e trabalho domestico nao remunerado em familia de baixa renda (§ 12) e valor da aposentadoria (§ 13).
+
+**O QUE DIZ**
+
+O § 12 manda a lei criar um sistema especial de inclusão previdenciária, com alíquotas diferenciadas, para trabalhadores de baixa renda, inclusive os informais. O sistema também alcança pessoas sem renda própria que se dedicam só ao trabalho doméstico na própria casa, desde que pertençam a famílias de baixa renda. O § 13 fixa em um salário mínimo o valor da aposentadoria desses segurados.
+
+**O QUE SIGNIFICA**
+
+O objetivo declarado no texto é atender a quem tem pouca ou nenhuma renda e normalmente ficaria fora da previdência.
+
+A lei pode cobrar alíquotas menores desses segurados.
+
+O grupo inclui a pessoa que cuida da casa sem remuneração, como dona ou dono de casa, desde que a família seja de baixa renda.
+
+Em contrapartida, a aposentadoria nesse sistema tem valor de um salário mínimo.
+
+**EXEMPLO PRÁTICO**
+
+Uma mulher de família de baixa renda cuida da casa e dos filhos sem receber salário. Pelo sistema especial previsto em lei, ela pode contribuir com alíquota reduzida e, cumpridos os requisitos, aposentar-se com um salário mínimo.
+
+**ATENÇÃO**
+
+As alíquotas e as condições concretas estão na lei. O valor de um salário mínimo vale para a aposentadoria concedida nesse sistema.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Inclusão previdenciária*: medidas para trazer à previdência quem costuma ficar fora dela.
+- *Informalidade*: trabalho sem registro formal, como carteira assinada ou inscrição como empresa.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: especial de inclusão previdenciária com alíquotas diferencia)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.202
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 202 — Previdência privada complementar
+
+- **TARGET:** `CF88:ART.202` · `ENTENDA/CF88:ART.202/BASE/1`
+- **DISPLAY TITLE:** Art. 202 — Previdência privada complementar
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2062 bytes · referências 0
+- **Motivo da seleção:** Visao geral: carater complementar, autonomo e facultativo, reservas, lei complementar e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 202 estabelece que a previdência privada é complementar e autônoma em relação ao regime geral, facultativa, baseada na formação de reservas que garantam o benefício contratado, e regulada por lei complementar. Os parágrafos asseguram ao participante acesso pleno às informações da gestão de seus planos. Afirmam que contribuições do empregador, benefícios e condições dos planos não integram o contrato de trabalho nem, salvo os benefícios concedidos, a remuneração. Também limitam o aporte de recursos públicos e mandam lei complementar disciplinar o patrocínio por entes públicos e por concessionárias e permissionárias.
+
+**O QUE SIGNIFICA**
+
+A previdência privada é uma proteção extra, que se soma à pública e não a substitui. Ninguém é obrigado a aderir.
+
+Ela funciona por acumulação de reservas, que o texto liga à garantia do benefício contratado.
+
+O participante tem direito de saber como seu plano é administrado.
+
+O § 2º separa o plano do contrato de trabalho: a contribuição do empregador ao plano, em regra, não vira salário.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa oferece aos empregados um plano de previdência complementar e paga parte das contribuições. Esse aporte não se incorpora ao salário dos empregados, e cada participante pode consultar os relatórios de gestão do plano.
+
+**ATENÇÃO**
+
+O § 2º ressalva os benefícios concedidos da regra de não integração à remuneração; o alcance dessa ressalva depende da lei e da interpretação. As entidades patrocinadas por entes públicos seguem regras próprias de lei complementar (§§ 4º a 6º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Previdência complementar*: previdência privada que se soma à previdência pública.
+- *Reservas*: recursos acumulados para garantir o pagamento futuro dos benefícios.
+- *Participante*: pessoa que adere ao plano de previdência complementar.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de reservas que garantam o benefício contratado e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 202, § 3º — Aporte público em previdência privada
+
+- **TARGET:** `CF88:ART.202:PAR.3` · `ENTENDA/CF88:ART.202:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 202, § 3º — Aporte público em previdência privada
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.202`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1536 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: vedacao de aporte de recursos publicos, salvo como patrocinador, com contribuicao normal limitada a do segurado.
+
+**O QUE DIZ**
+
+O § 3º proíbe a União, os Estados, o Distrito Federal, os Municípios e suas entidades da administração indireta de aportarem recursos a entidade de previdência privada, salvo como patrocinadores. Nesse caso, a contribuição normal do ente público não pode, em hipótese alguma, ser maior que a do segurado.
+
+**O QUE SIGNIFICA**
+
+Dinheiro público vai para um fundo de previdência privada apenas na hipótese ressalvada: quando o ente atua como patrocinador do plano, isto é, como empregador que contribui para o plano de seus servidores ou empregados.
+
+Mesmo assim há um limite: a contribuição normal do patrocinador público fica no máximo igual à do participante.
+
+A regra alcança também as entidades da administração indireta e outras entidades públicas.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa estatal patrocina o plano de previdência complementar de seus empregados. Se o empregado contribui com 7% do salário (percentual ilustrativo), a contribuição normal da estatal pode chegar no máximo a esse mesmo percentual.
+
+**ATENÇÃO**
+
+O limite recai sobre a contribuição normal do patrocinador público.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Patrocinador*: empregador que institui o plano e contribui para ele em favor de seus trabalhadores.
+- *Aporte*: entrega de recursos financeiros a uma entidade ou fundo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** PARENT_REPETITION (*: CF88:ART.202: 0.258)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.203
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 203 — Assistência social
+
+- **TARGET:** `CF88:ART.203` · `ENTENDA/CF88:ART.203/BASE/1`
+- **DISPLAY TITLE:** Art. 203 — Assistência social
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 242 palavras · 1934 bytes · referências 0
+- **Motivo da seleção:** Visao geral: assistencia a quem dela necessitar, sem contribuicao, e seus seis objetivos.
+
+**O QUE DIZ**
+
+O art. 203 determina que a assistência social seja prestada a quem dela necessitar, sem exigir contribuição à seguridade social. Seus objetivos são: proteger a família, a maternidade, a infância, a adolescência e a velhice; amparar crianças e adolescentes carentes; promover a integração ao mercado de trabalho; habilitar e reabilitar pessoas com deficiência e promover sua integração à vida comunitária; garantir um salário mínimo mensal à pessoa com deficiência e ao idoso sem meios de se manter; e reduzir a vulnerabilidade socioeconômica de famílias em pobreza ou extrema pobreza.
+
+**O QUE SIGNIFICA**
+
+A diferença central entre assistência e previdência está no acesso: a previdência exige contribuição; a assistência atende pela necessidade.
+
+Os objetivos mostram o público principal: famílias, crianças, idosos, pessoas com deficiência e famílias pobres.
+
+O inciso V traz o benefício de prestação continuada, explicado à parte. O inciso VI trata da redução da vulnerabilidade de famílias pobres ou extremamente pobres.
+
+**EXEMPLO PRÁTICO**
+
+Uma família em situação de extrema pobreza é atendida por programa de transferência de renda e por serviços de proteção social, sem nunca ter contribuído para a previdência. O atendimento decorre da necessidade.
+
+**ATENÇÃO**
+
+O critério de acesso é a necessidade, e não a contribuição. Os requisitos concretos de cada programa são definidos em lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Assistência social*: proteção social prestada a quem precisa, sem exigência de contribuição.
+- *Vulnerabilidade socioeconômica*: situação de fragilidade social e de renda que expõe a família a riscos.
+- *Reabilitação*: recuperação de capacidades para a vida diária ou para o trabalho.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: nunca)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 203, inciso V — Benefício de um salário mínimo da assistência social
+
+- **TARGET:** `CF88:ART.203:INC.V` · `ENTENDA/CF88:ART.203:INC.V/BASE/1`
+- **DISPLAY TITLE:** Art. 203, inciso V — Benefício de um salário mínimo da assistência social
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.203`, `CF88:ART.203:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 193 palavras · 1692 bytes · referências 2
+- **Motivo da seleção:** Item: garantia de um salario minimo mensal a pessoa com deficiencia e ao idoso sem meios de manutencao propria ou familiar.
+
+**O QUE DIZ**
+
+O inciso V inclui entre os objetivos da assistência social um benefício mensal de um salário mínimo para a pessoa com deficiência e para o idoso que comprovem não ter meios de se manter nem de ser mantidos pela família, conforme dispuser a lei.
+
+**O QUE SIGNIFICA**
+
+O inciso cria um benefício assistencial, que não depende de contribuição prévia.
+
+Dois grupos podem recebê-lo: pessoas com deficiência e idosos.
+
+O requisito é a comprovação de que nem a própria pessoa nem a família têm meios de garantir seu sustento. A lei define como essa situação é verificada e qual é a idade considerada.
+
+O valor é fixo: um salário mínimo por mês.
+
+**EXEMPLO PRÁTICO**
+
+Um idoso que não contribuiu para a previdência mora sozinho, não tem renda e não tem familiares que possam sustentá-lo. Comprovada essa situação nos termos da lei, ele pode receber o benefício de um salário mínimo mensal.
+
+**ATENÇÃO**
+
+O inciso depende do caput: a assistência social é prestada a quem dela necessitar. Os critérios de renda e a idade são definidos em lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Benefício assistencial*: pagamento da assistência social, sem exigência de contribuição.
+- *Prover à própria manutenção*: ter meios de garantir o próprio sustento.
+
+**CAMADA EXTERNA**
+
+- Os critérios legais de renda e de idade do benefício e sua aplicação são temas da legislação correlata e da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** PARENT_REPETITION (*: CF88:ART.203: 0.211)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.204
+
+Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 204 — Financiamento e diretrizes da assistência social
+
+- **TARGET:** `CF88:ART.204` · `ENTENDA/CF88:ART.204/BASE/1`
+- **DISPLAY TITLE:** Art. 204 — Financiamento e diretrizes da assistência social
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 294 palavras · 2308 bytes · referências 0
+- **Motivo da seleção:** Visao geral: fontes de recursos, descentralizacao, participacao popular e vinculacao facultativa estadual.
+
+**O QUE DIZ**
+
+O art. 204 determina que as ações governamentais de assistência social sejam custeadas pelo orçamento da seguridade social do art. 195 e por outras fontes. Elas seguem duas diretrizes: descentralização político-administrativa, com coordenação e normas gerais na esfera federal e coordenação e execução dos programas nas esferas estadual e municipal e por entidades beneficentes e de assistência social; e participação da população, por meio de suas organizações representativas, ao formular as políticas e ao controlar as ações. O parágrafo único faculta aos Estados e ao Distrito Federal vincular até cinco décimos por cento da receita tributária líquida a programa de inclusão e promoção social, vedado o uso em pessoal, dívida e outras despesas correntes não ligadas diretamente aos investimentos ou ações apoiados.
+
+**O QUE SIGNIFICA**
+
+A assistência social é organizada em rede: a União coordena e fixa regras gerais; Estados e Municípios executam os programas, ao lado das entidades beneficentes.
+
+A população participa por meio de suas organizações, tanto ao formular as políticas quanto ao controlar as ações.
+
+O parágrafo único permite que Estados e Distrito Federal reservem uma pequena parte da receita para programas sociais, mas o dinheiro não pode pagar folha, juros da dívida ou despesas correntes sem relação direta com o programa.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado aprova a vinculação de parte de sua receita tributária líquida a um programa de inclusão social. Os recursos podem financiar ações do programa, mas não o salário dos servidores que o administram.
+
+**ATENÇÃO**
+
+A vinculação do parágrafo único é uma faculdade, com teto de cinco décimos por cento da receita tributária líquida.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Receita tributária líquida*: arrecadação de tributos depois das deduções previstas, como transferências a outros entes.
+- *Serviço da dívida*: pagamento de juros e amortizações de empréstimos.
+- *Descentralização político-administrativa*: repartição das tarefas e decisões entre os níveis da Federação.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.205
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 205 — Direito à educação
+
+- **TARGET:** `CF88:ART.205` · `ENTENDA/CF88:ART.205/BASE/1`
+- **DISPLAY TITLE:** Art. 205 — Direito à educação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 151 palavras · 1159 bytes · referências 0
+- **Motivo da seleção:** Visao geral: educacao como direito de todos e dever do Estado e da familia, com colaboracao da sociedade e tres finalidades.
+
+**O QUE DIZ**
+
+O art. 205 afirma que a educação é direito de todos e dever do Estado e da família. Ela será promovida e incentivada com a colaboração da sociedade e tem três finalidades: o pleno desenvolvimento da pessoa, o preparo para o exercício da cidadania e a qualificação para o trabalho.
+
+**O QUE SIGNIFICA**
+
+A educação é direito de todos e tem responsáveis compartilhados: o Estado e a família, com ajuda da sociedade.
+
+As finalidades estão no próprio texto e orientam as políticas educacionais: formar a pessoa, prepará-la para participar da vida pública e qualificá-la para o trabalho.
+
+**EXEMPLO PRÁTICO**
+
+Os pais matriculam o filho na escola e acompanham sua frequência, enquanto o poder público oferece a vaga e o ensino. Os dois cumprem, cada um, sua parte no dever de educação.
+
+**ATENÇÃO**
+
+As garantias concretas do dever do Estado estão no art. 208.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Cidadania*: participação ativa na vida política e social, com direitos e deveres.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de todos e dever do estado e da)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.206
+
+Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 206 — Princípios do ensino
+
+- **TARGET:** `CF88:ART.206` · `ENTENDA/CF88:ART.206/BASE/1`
+- **DISPLAY TITLE:** Art. 206 — Princípios do ensino
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 302 palavras · 2390 bytes · referências 0
+- **Motivo da seleção:** Visao geral: os nove principios do ensino e a lei sobre profissionais da educacao basica.
+
+**O QUE DIZ**
+
+O art. 206 lista os princípios do ensino: igualdade de condições de acesso e permanência na escola; liberdade de aprender, de ensinar, de pesquisar e de divulgar pensamento, arte e saber; pluralismo de ideias e de concepções pedagógicas e convivência de escolas públicas e privadas; gratuidade do ensino público em estabelecimentos oficiais; valorização dos profissionais da educação escolar, com planos de carreira, na forma da lei, e ingresso nas redes públicas exclusivamente por concurso público de provas e títulos; gestão democrática do ensino público; padrão de qualidade; piso salarial nacional, fixado em lei federal, para os profissionais da educação escolar pública; e direito à educação e à aprendizagem ao longo da vida. O parágrafo único manda a lei definir quem são os profissionais da educação básica e o prazo para seus planos de carreira.
+
+**O QUE SIGNIFICA**
+
+Os princípios orientam o ensino; alguns valem especificamente para a rede pública, como a gratuidade, a gestão democrática e o piso salarial.
+
+Alguns tratam do aluno, como a igualdade de acesso e a aprendizagem ao longo da vida. Outros tratam da liberdade e da diversidade, como o pluralismo de ideias. Outros cuidam do professor, como a carreira, o concurso e o piso salarial.
+
+A gratuidade alcança o ensino público em estabelecimentos oficiais.
+
+**EXEMPLO PRÁTICO**
+
+Uma rede municipal quer contratar professores efetivos. Pelo inciso V, o ingresso deve ocorrer por concurso público de provas e títulos, e os professores devem ter plano de carreira, na forma da lei.
+
+**ATENÇÃO**
+
+O piso salarial do inciso VIII é fixado por lei federal. O alcance concreto de alguns princípios, como a gratuidade e a gestão democrática, depende da lei e da interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Pluralismo pedagógico*: convivência de diferentes métodos e concepções de ensino.
+- *Gestão democrática*: administração da escola com participação da comunidade escolar.
+- *Piso salarial*: menor valor que pode ser pago a uma categoria profissional.
+
+**CAMADA EXTERNA**
+
+- O texto oficial traz nota de remissão a lei federal de 2024 no inciso V; o conteúdo dessa lei pertence à legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: direito à educação e à aprendizagem ao longo); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo inciso V, o ingresso deve ocorrer por concurso público )
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.207
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 207 — Autonomia universitária
+
+- **TARGET:** `CF88:ART.207` · `ENTENDA/CF88:ART.207/BASE/1`
+- **DISPLAY TITLE:** Art. 207 — Autonomia universitária
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1636 bytes · referências 0
+- **Motivo da seleção:** Visao geral: autonomia didatico-cientifica, administrativa e de gestao financeira e patrimonial, indissociabilidade e paragrafos.
+
+**O QUE DIZ**
+
+O art. 207 garante às universidades autonomia didático-científica, autonomia administrativa e autonomia de gestão financeira e patrimonial, e determina que elas obedeçam à indissociabilidade entre ensino, pesquisa e extensão. As universidades podem admitir professores, técnicos e cientistas estrangeiros, na forma da lei, e o artigo se aplica também às instituições de pesquisa científica e tecnológica.
+
+**O QUE SIGNIFICA**
+
+Autonomia permite à universidade decidir sobre seus cursos, currículos e pesquisas, organizar sua administração e gerir seus recursos e bens, dentro da lei.
+
+A indissociabilidade significa que ensino, pesquisa e extensão devem caminhar juntos, sem que a universidade se limite a dar aulas.
+
+O § 1º abre a possibilidade de contratar estrangeiros, e o § 2º estende o regime às instituições de pesquisa.
+
+**EXEMPLO PRÁTICO**
+
+Uma universidade pública decide criar um novo curso e montar um programa de extensão que leva atendimento jurídico gratuito à comunidade. As duas escolhas se apoiam na autonomia didático-científica e na indissociabilidade.
+
+**ATENÇÃO**
+
+A autonomia é exercida nos limites da Constituição e da lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Autonomia didático-científica*: liberdade para definir cursos, currículos e pesquisas.
+- *Extensão universitária*: atividades que levam o conhecimento da universidade à comunidade.
+- *Indissociabilidade*: obrigação de manter unidos ensino, pesquisa e extensão.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: admitir professores técnicos e cientistas estrangeiros na fo); TERM_NOT_USED (palavras_dificeis: Extensão universitária)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.208
+
+Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 208 — Dever do Estado com a educação
+
+- **TARGET:** `CF88:ART.208` · `ENTENDA/CF88:ART.208/BASE/1`
+- **DISPLAY TITLE:** Art. 208 — Dever do Estado com a educação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 265 palavras · 2001 bytes · referências 0
+- **Motivo da seleção:** Visao geral: as garantias que efetivam o dever do Estado com a educacao e o mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 208 lista as garantias pelas quais o Estado cumpre seu dever com a educação: educação básica obrigatória e gratuita dos 4 aos 17 anos, inclusive para quem não a teve na idade própria; progressiva universalização do ensino médio gratuito; atendimento especializado às pessoas com deficiência, de preferência na rede regular; educação infantil em creche e pré-escola até 5 anos; acesso, segundo a capacidade de cada um, aos níveis mais elevados de ensino, de pesquisa e de criação artística; ensino noturno regular adequado ao aluno; e, em todas as etapas da educação básica, programas suplementares de transporte, alimentação, assistência à saúde e material didático-escolar. Os parágrafos tratam do direito público subjetivo, da responsabilidade da autoridade e do recenseamento escolar.
+
+**O QUE SIGNIFICA**
+
+O artigo transforma o direito à educação em prestações concretas que podem ser cobradas do Estado.
+
+A faixa obrigatória e gratuita vai dos 4 aos 17 anos. A educação infantil cobre creche e pré-escola até os 5 anos. O ensino médio deve ser universalizado de forma progressiva.
+
+O § 3º manda o poder público recensear os alunos do ensino fundamental, chamá-los à matrícula e zelar pela frequência junto aos pais ou responsáveis.
+
+**EXEMPLO PRÁTICO**
+
+Uma criança de 4 anos não encontra vaga na pré-escola pública do bairro. Como a educação básica é obrigatória e gratuita a partir dessa idade, a família pode exigir a vaga do poder público.
+
+**ATENÇÃO**
+
+No inciso III, o atendimento especializado é oferecido preferencialmente na rede regular de ensino.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Educação básica*: educação infantil, ensino fundamental e ensino médio.
+- *Programa suplementar*: apoio que complementa o ensino, como merenda e transporte escolar.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Como a educação básica é obrigatória e gratuita a partir des)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos
+
+- **TARGET:** `CF88:ART.208:INC.I` · `ENTENDA/CF88:ART.208:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.208`, `CF88:ART.208:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 169 palavras · 1341 bytes · referências 0
+- **Motivo da seleção:** Item: faixa etaria obrigatoria e gratuita e oferta gratuita a quem nao estudou na idade propria.
+
+**O QUE DIZ**
+
+O inciso I garante educação básica obrigatória e gratuita dos 4 aos 17 anos de idade e assegura a oferta gratuita a todos que não tiveram acesso a ela na idade própria.
+
+**O QUE SIGNIFICA**
+
+Entre 4 e 17 anos, frequentar a educação básica é obrigatório e o ensino público é gratuito.
+
+A obrigatoriedade pesa sobre o Estado, que deve oferecer a vaga, e sobre a família, que deve matricular.
+
+Quem passou dessa idade sem estudar não perde o direito: o inciso assegura a oferta gratuita também para jovens e adultos.
+
+**EXEMPLO PRÁTICO**
+
+Um homem de 30 anos que abandonou a escola na infância quer concluir o ensino fundamental. Pelo inciso I, o poder público deve oferecer esse ensino gratuitamente.
+
+**ATENÇÃO**
+
+O inciso depende do caput: é uma das garantias do dever do Estado com a educação. O § 1º qualifica o acesso ao ensino obrigatório como direito público subjetivo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Idade própria*: idade em que normalmente se cursa cada etapa do ensino.
+- *Educação de jovens e adultos*: ensino oferecido a quem não estudou na idade própria.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo inciso I, o poder público deve oferecer esse ensino gra)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade
+
+- **TARGET:** `CF88:ART.208:PAR.1` · `ENTENDA/CF88:ART.208:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.208:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.208`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 167 palavras · 1459 bytes · referências 0
+- **Motivo da seleção:** Bloco: acesso ao ensino obrigatorio como direito publico subjetivo (§ 1º) e responsabilidade da autoridade pela nao oferta ou oferta irregular (§ 2º).
+
+**O QUE DIZ**
+
+O § 1º qualifica como direito público subjetivo o acesso ao ensino obrigatório e gratuito. O § 2º estabelece que o poder público, ao não oferecer o ensino obrigatório ou ao oferecê-lo de forma irregular, gera responsabilidade da autoridade competente.
+
+**O QUE SIGNIFICA**
+
+Direito público subjetivo é um direito que a pessoa pode exigir diretamente do Estado, inclusive na Justiça, sem depender da boa vontade do governante.
+
+O § 2º completa a proteção: se o ensino obrigatório não for oferecido, ou for oferecido de forma irregular, a autoridade competente responde por isso.
+
+**EXEMPLO PRÁTICO**
+
+Uma família não consegue vaga para o filho de 8 anos em nenhuma escola pública da cidade. Ela pode exigir a vaga do Município, inclusive por via judicial, e a autoridade responsável pode ser responsabilizada pela falta de oferta.
+
+**ATENÇÃO**
+
+O tipo de responsabilidade da autoridade e o procedimento são definidos na legislação aplicável.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Direito público subjetivo*: direito que a pessoa pode exigir diretamente do Estado.
+- *Oferta irregular*: oferta do ensino em condições que não atendem ao que a lei exige.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** PARENT_REPETITION (*: CF88:ART.208: 0.206)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.209
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 209 — Ensino privado
+
+- **TARGET:** `CF88:ART.209` · `ENTENDA/CF88:ART.209/BASE/1`
+- **DISPLAY TITLE:** Art. 209 — Ensino privado
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 122 palavras · 1038 bytes · referências 0
+- **Motivo da seleção:** Visao geral: liberdade de ensino a iniciativa privada e as duas condicoes.
+
+**O QUE DIZ**
+
+O art. 209 declara o ensino livre à iniciativa privada, com duas condições: cumprir as normas gerais da educação nacional; e ter autorização e avaliação de qualidade pelo poder público.
+
+**O QUE SIGNIFICA**
+
+A iniciativa privada pode oferecer ensino, desde que cumpra as duas condições do artigo.
+
+A primeira condição, prevista no inciso I, é cumprir as normas gerais da educação nacional.
+
+A segunda envolve o poder público em dois momentos: ele autoriza o funcionamento da instituição e, depois, avalia a qualidade do ensino oferecido.
+
+**EXEMPLO PRÁTICO**
+
+Um grupo de professores quer abrir uma faculdade particular. Antes de funcionar, precisa da autorização do órgão competente e, depois, se submete às avaliações de qualidade.
+
+**ATENÇÃO**
+
+—
+
+**PALAVRAS DIFÍCEIS**
+
+- *Normas gerais da educação*: regras nacionais que valem para todos os sistemas de ensino.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: autorização e avaliação de qualidade pelo poder público); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Antes de funcionar, precisa da autorização do órgão competen)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.210
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 210 — Conteúdos mínimos, ensino religioso e língua
+
+- **TARGET:** `CF88:ART.210` · `ENTENDA/CF88:ART.210/BASE/1`
+- **DISPLAY TITLE:** Art. 210 — Conteúdos mínimos, ensino religioso e língua
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1719 bytes · referências 0
+- **Motivo da seleção:** Visao geral: conteudos minimos do ensino fundamental, ensino religioso facultativo e lingua portuguesa com linguas indigenas.
+
+**O QUE DIZ**
+
+O art. 210 manda fixar conteúdos mínimos para o ensino fundamental, para garantir uma formação básica comum e o respeito aos valores culturais e artísticos do país e das regiões. O ensino religioso, com matrícula facultativa, é disciplina dos horários normais das escolas públicas de ensino fundamental. O ensino fundamental regular é dado em língua portuguesa, e as comunidades indígenas podem usar também suas línguas maternas e seus processos próprios de aprendizagem.
+
+**O QUE SIGNIFICA**
+
+Os conteúdos mínimos buscam uma formação básica comum no ensino fundamental, sem apagar os valores regionais.
+
+O ensino religioso é oferecido no horário normal das escolas públicas, mas ninguém é obrigado a cursá-lo.
+
+A língua de ensino é o português, com uma garantia para os povos indígenas: eles podem aprender também em suas línguas e com seus métodos próprios.
+
+**EXEMPLO PRÁTICO**
+
+Em uma escola indígena, as aulas do ensino fundamental são dadas em português e também na língua da comunidade, com métodos tradicionais de aprendizagem.
+
+**ATENÇÃO**
+
+A matrícula no ensino religioso é facultativa. O modelo de ensino religioso nas escolas públicas é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Conteúdos mínimos*: base de conhecimentos que todas as escolas devem ensinar.
+- *Língua materna*: primeira língua aprendida na comunidade de origem.
+
+**CAMADA EXTERNA**
+
+- O modelo de ensino religioso nas escolas públicas (confessional ou não) é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: disciplina dos horários normais das escolas públicas de)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.211
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 211 — Sistemas de ensino em regime de colaboração
+
+- **TARGET:** `CF88:ART.211` · `ENTENDA/CF88:ART.211/BASE/1`
+- **DISPLAY TITLE:** Art. 211 — Sistemas de ensino em regime de colaboração
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1969 bytes · referências 0
+- **Motivo da seleção:** Visao geral: regime de colaboracao, atuacao prioritaria de cada ente, funcao redistributiva e supletiva da Uniao e padrao minimo de qualidade.
+
+**O QUE DIZ**
+
+O art. 211 manda a União, os Estados, o Distrito Federal e os Municípios organizarem seus sistemas de ensino em regime de colaboração. A União organiza o sistema federal e o dos Territórios, financia as instituições públicas federais e exerce função redistributiva e supletiva, com assistência técnica e financeira aos demais entes. Os Municípios atuam prioritariamente no ensino fundamental e na educação infantil; os Estados e o Distrito Federal, no ensino fundamental e médio. Os parágrafos tratam ainda de formas de colaboração, prioridade do ensino regular, ação redistributiva e do padrão mínimo de qualidade, com referência no Custo Aluno Qualidade.
+
+**O QUE SIGNIFICA**
+
+Cada nível da Federação tem sua área principal, mas todos devem cooperar.
+
+A União tem papel de equilíbrio: ajuda técnica e financeiramente os entes com menos recursos, para reduzir diferenças de oportunidade e garantir um mínimo de qualidade.
+
+O ensino fundamental é compartilhado por Estados e Municípios.
+
+O § 7º liga o padrão mínimo de qualidade ao Custo Aluno Qualidade, pactuado entre os entes na forma de lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Um Município pequeno mantém creches e escolas de ensino fundamental, enquanto o Estado mantém as escolas de ensino médio na mesma cidade. A União repassa recursos para ajudar o Município a alcançar o padrão mínimo de qualidade.
+
+**ATENÇÃO**
+
+As áreas indicadas são de atuação prioritária, e não exclusiva.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Função supletiva*: atuação que completa o que o outro ente não consegue fazer sozinho.
+- *Regime de colaboração*: cooperação entre os entes da Federação na mesma tarefa.
+- *Custo Aluno Qualidade*: referência de custo por aluno para garantir ensino de qualidade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.212
+
+Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 212 — Aplicação mínima em educação
+
+- **TARGET:** `CF88:ART.212` · `ENTENDA/CF88:ART.212/BASE/1`
+- **DISPLAY TITLE:** Art. 212 — Aplicação mínima em educação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 280 palavras · 2046 bytes · referências 0
+- **Motivo da seleção:** Visao geral: percentuais minimos de aplicacao em manutencao e desenvolvimento do ensino e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 212 fixa mínimos anuais de aplicação da receita de impostos, incluída a que vem de transferências, na manutenção e no desenvolvimento do ensino. A União aplica nunca menos de dezoito por cento; os Estados, o Distrito Federal e os Municípios, no mínimo vinte e cinco por cento. Os parágrafos esclarecem que a parcela transferida a outro ente não conta como receita de quem transfere e indicam o que entra no cálculo. Também dão prioridade ao ensino obrigatório e tratam dos programas suplementares, do salário-educação, da proibição de pagar aposentadorias com esses recursos, da redefinição dos percentuais se impostos forem extintos ou substituídos e da fiscalização das despesas, que a lei disciplinará.
+
+**O QUE SIGNIFICA**
+
+A educação tem um piso de gastos fixado pela própria Constituição: dezoito por cento para a União e vinte e cinco por cento para os demais entes.
+
+A base é a receita de impostos, e não a de todos os tributos.
+
+O dinheiro transferido conta para quem recebe, e não para quem envia (§ 1º).
+
+O § 7º impede usar esses recursos para pagar aposentadorias e pensões. O § 8º manda redefinir os percentuais se impostos forem extintos ou substituídos.
+
+**EXEMPLO PRÁTICO**
+
+Um Município arrecada impostos próprios e recebe transferências de impostos da União e do Estado. Sobre o total, deve aplicar pelo menos vinte e cinco por cento em manutenção e desenvolvimento do ensino, sem incluir nessa conta o pagamento de professores aposentados.
+
+**ATENÇÃO**
+
+Os percentuais são mínimos. A divisão de parte desses recursos com o fundo da educação básica segue o art. 212-A.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Manutenção e desenvolvimento do ensino*: gastos ligados diretamente ao funcionamento e à melhoria do ensino.
+- *Receita de impostos*: arrecadação de impostos, sem contar taxas e contribuições.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** ABSOLUTE_CLAIM (o_que_diz: nunca); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os estados o distrito federal e os municípios); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Sobre o total, deve aplicar pelo menos vinte e cinco por cen)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 212, §§ 5º e 6º — Salário-educação
+
+- **TARGET:** `CF88:ART.212:PAR.5` · `ENTENDA/CF88:ART.212:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 212, §§ 5º e 6º — Salário-educação
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.212:PAR.6`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.212`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1606 bytes · referências 0
+- **Motivo da seleção:** Bloco: salario-educacao como fonte adicional da educacao basica publica (§ 5º) e distribuicao das cotas estaduais e municipais por matriculas (§ 6º).
+
+**O QUE DIZ**
+
+O § 5º dá à educação básica pública uma fonte extra de recursos: o salário-educação, contribuição social paga pelas empresas na forma da lei. O § 6º manda distribuir as cotas estaduais e municipais dessa arrecadação em proporção ao número de alunos matriculados na educação básica das redes públicas de cada ente.
+
+**O QUE SIGNIFICA**
+
+Além dos impostos vinculados à educação, a educação básica pública conta com uma contribuição paga pelas empresas, o salário-educação.
+
+A parte que cabe a Estados e Municípios é dividida conforme o número de matrículas: quem atende mais alunos recebe mais.
+
+O § 7º do mesmo artigo proíbe usar esses recursos para pagar aposentadorias e pensões.
+
+**EXEMPLO PRÁTICO**
+
+Dois Municípios do mesmo Estado têm redes públicas de tamanhos diferentes. O que tem o dobro de alunos matriculados na educação básica recebe uma cota maior do salário-educação.
+
+**ATENÇÃO**
+
+O salário-educação é fonte adicional: não substitui os percentuais mínimos do caput. O art. 212-A, XIII, proíbe usar esses recursos na complementação da União ao fundo da educação básica.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Salário-educação*: contribuição social paga pelas empresas para financiar a educação básica pública.
+- *Cota*: parte de uma arrecadação que cabe a cada ente.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao número de alunos matriculados na educação básica)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.212-A
+
+Sem explicação própria: 32 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 212-A — Fundeb
+
+- **TARGET:** `CF88:ART.212-A` · `ENTENDA/CF88:ART.212-A/BASE/1`
+- **DISPLAY TITLE:** Art. 212-A — Fundeb
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 347 palavras · 2467 bytes · referências 0
+- **Motivo da seleção:** Visao geral: fundo de manutencao e desenvolvimento da educacao basica e valorizacao dos profissionais, composicao, distribuicao, complementacao, aplicacao e regras temporais dos incisos XIV e XV.
+
+**O QUE DIZ**
+
+O art. 212-A manda os Estados, o Distrito Federal e os Municípios destinarem parte dos recursos do art. 212 à educação básica e à remuneração digna de seus profissionais, por meio de um fundo contábil em cada Estado e no Distrito Federal, o Fundeb. Cada fundo é formado por 20% de receitas listadas no inciso II e distribuído entre o Estado e seus Municípios conforme as matrículas da educação básica presencial. A União complementa os fundos. Pelo menos 70% de cada fundo, excluída a parcela da alínea c do inciso V, paga os profissionais da educação básica em efetivo exercício. O inciso XIV trata de repasse no exercício de 2025, e o inciso XV, a partir do exercício de 2026, reserva no mínimo 4% dos fundos para matrículas em tempo integral.
+
+**O QUE SIGNIFICA**
+
+O Fundeb redistribui dinheiro dentro de cada Estado: Estado e Municípios põem recursos no mesmo fundo, e o fundo os divide conforme o número de alunos de cada rede.
+
+A União entra com recursos adicionais, explicados no bloco do inciso V. A organização dos fundos, o cálculo dos valores por aluno e o piso do magistério ficam a cargo da lei (incisos X e XII).
+
+A maior parte do fundo vai para a remuneração dos profissionais da educação básica.
+
+O descumprimento das regras de entrega dos recursos pela autoridade competente configura crime de responsabilidade (inciso IX).
+
+**EXEMPLO PRÁTICO**
+
+Em um Estado, uma cidade com muitos alunos e pouca arrecadação recebe do fundo mais do que depositou, porque a divisão segue as matrículas. Com esses recursos, paga o salário dos professores da sua rede.
+
+**ATENÇÃO**
+
+O inciso XIV vale só para o exercício de 2025, já encerrado em 5 de outubro de 2026. O inciso XV produz efeitos a partir do exercício de 2026 e vale até que se atinjam as metas de tempo integral do Plano Nacional de Educação.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Fundo contábil*: fundo que reúne e distribui recursos, sem ser um órgão com personalidade própria.
+- *Efetivo exercício*: atuação real na função, e não apenas a ocupação do cargo.
+- *Crime de responsabilidade*: infração político-administrativa de autoridades, com sanções próprias.
+
+**CAMADA EXTERNA**
+
+- A lei que regulamenta o Fundeb e fixa os valores anuais por aluno pertence à legislação correlata (camada externa).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os estados o distrito federal e os municípios)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 212-A, inciso V — Complementação da União ao Fundeb
+
+- **TARGET:** `CF88:ART.212-A:INC.V` · `ENTENDA/CF88:ART.212-A:INC.V/BASE/1`
+- **DISPLAY TITLE:** Art. 212-A, inciso V — Complementação da União ao Fundeb
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.212-A`, `CF88:ART.212-A:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 287 palavras · 2062 bytes · referências 0
+- **Motivo da seleção:** Bloco: complementacao minima de 23% e as tres modalidades de distribuicao (VAAF, VAAT e resultados).
+
+**O QUE DIZ**
+
+O inciso V fixa a complementação da União aos fundos em, no mínimo, 23% do total de recursos do inciso II, distribuídos assim: 10 pontos percentuais em cada Estado e no Distrito Federal quando o valor anual por aluno do fundo (VAAF) ficar abaixo do mínimo nacional; no mínimo 10,5 pontos percentuais em cada rede pública municipal, estadual ou distrital quando o valor anual total por aluno da rede (VAAT) ficar abaixo do mínimo nacional; e 2,5 pontos percentuais nas redes que, cumpridas as condições legais de melhoria de gestão, mostrarem evolução de indicadores de atendimento e de aprendizagem com redução das desigualdades.
+
+**O QUE SIGNIFICA**
+
+A complementação federal tem três partes, e o total é de, no mínimo, 23% dos recursos do inciso II.
+
+A primeira olha para o Estado como um todo: se o valor por aluno do fundo estadual ficar abaixo do mínimo nacional, a União completa.
+
+A segunda olha para cada rede: o VAAT considera, além do fundo, outras receitas e transferências vinculadas à educação (inciso VI).
+
+A terceira premia redes que melhoram a gestão e os resultados de aprendizagem.
+
+**EXEMPLO PRÁTICO**
+
+Uma rede municipal tem valor anual total por aluno abaixo do mínimo nacional, mesmo estando em um Estado que não recebe a primeira parcela. Ela pode receber recursos da segunda parcela, ligada ao VAAT.
+
+**ATENÇÃO**
+
+O inciso depende do caput: a complementação incide sobre os fundos do art. 212-A. Os critérios de cálculo do VAAF e do VAAT e as condições da terceira parcela estão na lei (inciso X).
+
+**PALAVRAS DIFÍCEIS**
+
+- *VAAF*: valor anual por aluno calculado com os recursos do fundo.
+- *VAAT*: valor anual total por aluno, com todas as receitas vinculadas à educação da rede.
+- *Complementação*: recursos extras que a União acrescenta aos fundos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.213
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 213 — Destinação de recursos públicos à educação
+
+- **TARGET:** `CF88:ART.213` · `ENTENDA/CF88:ART.213/BASE/1`
+- **DISPLAY TITLE:** Art. 213 — Destinação de recursos públicos à educação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2038 bytes · referências 0
+- **Motivo da seleção:** Visao geral: recursos para escolas publicas, excecao das comunitarias, confessionais e filantropicas, bolsas e apoio a pesquisa e extensao.
+
+**O QUE DIZ**
+
+O art. 213 destina os recursos públicos às escolas públicas e permite dirigi-los também a escolas comunitárias, confessionais ou filantrópicas, definidas em lei. Essas escolas precisam comprovar finalidade não lucrativa, aplicar seus excedentes em educação e garantir que, se encerrarem as atividades, seu patrimônio irá para outra escola desse tipo ou para o poder público. Esses recursos podem custear bolsas de estudo no ensino fundamental e médio, na forma da lei, para quem comprovar falta de recursos, quando faltarem vagas na rede pública da localidade; nesse caso, o poder público fica obrigado a investir prioritariamente na expansão de sua rede ali. As atividades de pesquisa, extensão e inovação de universidades e de instituições de educação profissional e tecnológica podem receber apoio financeiro público.
+
+**O QUE SIGNIFICA**
+
+A regra é dinheiro público para escola pública.
+
+A exceção vale para escolas sem fins lucrativos que cumpram as duas condições do texto: aplicar as sobras em educação e não deixar o patrimônio virar lucro privado no fim das atividades.
+
+As bolsas são uma solução provisória para a falta de vaga pública, e o poder público fica obrigado a expandir sua própria rede na localidade.
+
+**EXEMPLO PRÁTICO**
+
+Em um bairro sem vagas suficientes no ensino médio público, um estudante de família sem recursos recebe bolsa em escola comunitária. Ao mesmo tempo, o poder público deve priorizar a ampliação da escola pública naquele local.
+
+**ATENÇÃO**
+
+A abertura para escolas privadas alcança apenas as comunitárias, confessionais ou filantrópicas definidas em lei que cumpram os requisitos dos incisos.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Escola confessional*: escola ligada a uma confissão religiosa.
+- *Excedente financeiro*: sobra de recursos depois de pagas as despesas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a escolas comunitárias confessionais ou filantrópicas defini); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao mesmo tempo, o poder público deve priorizar a ampliação d)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.214
+
+Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 214 — Plano nacional de educação
+
+- **TARGET:** `CF88:ART.214` · `ENTENDA/CF88:ART.214/BASE/1`
+- **DISPLAY TITLE:** Art. 214 — Plano nacional de educação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 252 palavras · 1945 bytes · referências 0
+- **Motivo da seleção:** Visao geral: plano decenal estabelecido em lei, sistema nacional de educacao e os resultados a que deve conduzir.
+
+**O QUE DIZ**
+
+O art. 214 manda a lei estabelecer o plano nacional de educação, com duração de dez anos. O plano articula o sistema nacional de educação em regime de colaboração e define diretrizes, objetivos, metas e estratégias para manter e desenvolver o ensino em todos os níveis, etapas e modalidades, com ações integradas dos poderes públicos. Essas ações devem conduzir à erradicação do analfabetismo, à universalização do atendimento escolar, à melhoria da qualidade do ensino e à formação para o trabalho. Também devem levar à promoção humanística, científica e tecnológica do País e à fixação de uma meta de investimento público em educação, medida como proporção do produto interno bruto.
+
+**O QUE SIGNIFICA**
+
+O plano nacional de educação é uma lei com horizonte de uma década, que organiza os esforços dos poderes públicos das diferentes esferas em torno de metas comuns.
+
+O inciso VI exige uma meta de investimento público em educação calculada sobre o produto interno bruto, o que permite acompanhar se o país gasta mais ou menos com o passar do tempo.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei aprova o plano nacional de educação com metas para os dez anos seguintes, como metas de alfabetização e de ampliação do atendimento escolar e de ampliar o investimento público em educação para certa proporção do produto interno bruto.
+
+**ATENÇÃO**
+
+Os números e as metas concretas estão na lei do plano, e não no artigo. O exemplo é ilustrativo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Decenal*: que dura dez anos.
+- *Produto interno bruto*: soma de tudo o que o país produz em bens e serviços em um período.
+
+**CAMADA EXTERNA**
+
+- A lei do plano nacional de educação vigente e suas metas pertencem à legislação correlata (camada externa).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nacional de educação em regime de colaboração e); TERM_LOW_UTILITY (palavras_dificeis: Decenal)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.215
+
+Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 215 — Direitos culturais
+
+- **TARGET:** `CF88:ART.215` · `ENTENDA/CF88:ART.215/BASE/1`
+- **DISPLAY TITLE:** Art. 215 — Direitos culturais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1704 bytes · referências 0
+- **Motivo da seleção:** Visao geral: garantia dos direitos culturais, protecao das culturas populares, datas comemorativas e Plano Nacional de Cultura.
+
+**O QUE DIZ**
+
+O art. 215 obriga o Estado a garantir a todos o pleno exercício dos direitos culturais e o acesso às fontes da cultura nacional, e a apoiar e incentivar a valorização e a difusão das manifestações culturais. O Estado protege as manifestações das culturas populares, indígenas e afro-brasileiras e de outros grupos que participam do processo civilizatório nacional. A lei fixa datas comemorativas importantes para os diferentes segmentos étnicos. A lei também estabelece o Plano Nacional de Cultura, plurianual, voltado à defesa do patrimônio cultural, à produção e difusão de bens culturais, à formação de gestores da cultura, à democratização do acesso e à valorização da diversidade étnica e regional.
+
+**O QUE SIGNIFICA**
+
+A cultura é tratada como direito de todos, e não só como atividade de artistas.
+
+O Estado deve proteger especialmente as culturas que formaram o país, como as populares, indígenas e afro-brasileiras.
+
+O Plano Nacional de Cultura organiza as ações públicas por vários anos, com metas ligadas ao patrimônio, à produção, à formação, ao acesso e à diversidade.
+
+**EXEMPLO PRÁTICO**
+
+Um governo estadual apoia financeiramente festas tradicionais de comunidades afro-brasileiras e indígenas e promove a circulação de grupos culturais pelo interior. As medidas aplicam o dever de proteção e de difusão do artigo.
+
+**ATENÇÃO**
+
+—
+
+**PALAVRAS DIFÍCEIS**
+
+- *Direitos culturais*: direitos de participar da vida cultural, criar e ter acesso à cultura.
+- *Plurianual*: que abrange vários anos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a todos o pleno exercício dos direitos culturais); TERM_LOW_UTILITY (palavras_dificeis: Plurianual)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.216
+
+Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 216 — Patrimônio cultural brasileiro
+
+- **TARGET:** `CF88:ART.216` · `ENTENDA/CF88:ART.216/BASE/1`
+- **DISPLAY TITLE:** Art. 216 — Patrimônio cultural brasileiro
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 288 palavras · 2267 bytes · referências 0
+- **Motivo da seleção:** Visao geral: conceito de patrimonio cultural material e imaterial, bens incluidos, instrumentos de protecao e regras dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 216 define o patrimônio cultural brasileiro como os bens materiais e imateriais, isolados ou em conjunto, que fazem referência à identidade, à ação e à memória dos grupos formadores da sociedade brasileira. Nele se incluem formas de expressão; modos de criar, fazer e viver; criações científicas, artísticas e tecnológicas; obras, objetos, documentos, edificações e demais espaços destinados a manifestações artístico-culturais; e conjuntos urbanos e sítios com valor histórico, paisagístico, artístico, arqueológico, paleontológico, ecológico ou científico. Os parágrafos tratam dos instrumentos de proteção, da documentação governamental, de incentivos, da punição de danos, do tombamento dos sítios e documentos dos antigos quilombos e de um fundo estadual de fomento à cultura.
+
+**O QUE SIGNIFICA**
+
+O patrimônio cultural não é feito só de prédios antigos: inclui também o imaterial, como danças, saberes e modos de vida.
+
+A proteção é tarefa do poder público com a colaboração da comunidade, por instrumentos como inventário, registro, vigilância, tombamento e desapropriação.
+
+O § 5º declara tombados, pela própria Constituição, os documentos e sítios com reminiscências históricas dos antigos quilombos.
+
+O § 6º faculta aos Estados e ao Distrito Federal vincular até cinco décimos por cento da receita tributária líquida a um fundo de cultura, com as mesmas vedações de despesa do art. 204.
+
+**EXEMPLO PRÁTICO**
+
+Uma comunidade mantém uma forma tradicional de produzir renda de bilro. O poder público pode registrá-la como patrimônio imaterial, o que reconhece e ajuda a preservar esse saber.
+
+**ATENÇÃO**
+
+O tombamento do § 5º decorre diretamente do texto constitucional. Os danos ao patrimônio cultural são punidos na forma da lei (§ 4º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Patrimônio imaterial*: saberes, celebrações e formas de expressão que formam a cultura de um grupo.
+- *Tombamento*: ato que submete um bem a regime especial de preservação.
+- *Reminiscência*: vestígio ou lembrança de algo do passado.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: obras objetos documentos edificações e demais espaços destin)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.216-A
+
+Sem explicação própria: 26 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 216-A — Sistema Nacional de Cultura
+
+- **TARGET:** `CF88:ART.216-A` · `ENTENDA/CF88:ART.216-A/BASE/1`
+- **DISPLAY TITLE:** Art. 216-A — Sistema Nacional de Cultura
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1926 bytes · referências 0
+- **Motivo da seleção:** Visao geral: sistema de gestao compartilhada de politicas culturais, principios, estrutura e leis.
+
+**O QUE DIZ**
+
+O art. 216-A cria o Sistema Nacional de Cultura, um processo de gestão e de promoção compartilhada das políticas culturais, em regime de colaboração, descentralizado e participativo, com políticas pactuadas entre os entes da Federação e a sociedade. O sistema se fundamenta na política nacional de cultura e no Plano Nacional de Cultura. Segue doze princípios, entre eles a diversidade das expressões culturais, a universalização do acesso, a cooperação entre os entes, a transparência e a ampliação progressiva dos recursos públicos para a cultura. Sua estrutura inclui órgãos gestores, conselhos, conferências, comissões intergestores, planos, sistemas de financiamento e de informações, programas de formação e sistemas setoriais. Lei federal o regulamenta, e os demais entes organizam seus sistemas em leis próprias.
+
+**O QUE SIGNIFICA**
+
+O sistema faz para a cultura algo parecido com o que outros sistemas fazem em outras áreas: integra União, Estados, Distrito Federal e Municípios em políticas pactuadas, com participação social.
+
+Os princípios orientam a atuação, e a estrutura indica os instrumentos de cada esfera, como conselhos, conferências e planos de cultura.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cria por lei seu conselho de política cultural e seu plano municipal de cultura, e participa de conferências de cultura. Assim, integra-se ao Sistema Nacional de Cultura.
+
+**ATENÇÃO**
+
+A regulamentação nacional depende de lei federal, e cada ente organiza seu sistema por lei própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Comissão intergestores*: instância em que gestores de diferentes entes negociam e pactuam ações.
+- *Transversalidade*: presença de um tema em várias políticas e áreas de governo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: entre os entes da federação e a sociedade)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.217
+
+Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 217 — Desporto
+
+- **TARGET:** `CF88:ART.217` · `ENTENDA/CF88:ART.217/BASE/1`
+- **DISPLAY TITLE:** Art. 217 — Desporto
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1707 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de fomento ao desporto, criterios, justica desportiva e lazer.
+
+**O QUE DIZ**
+
+O art. 217 impõe ao Estado o dever de estimular as práticas esportivas, formais e não formais, que são direito de cada pessoa, observados quatro critérios: autonomia das entidades desportivas dirigentes e das associações em sua organização e funcionamento; destinação de recursos públicos prioritariamente ao desporto educacional e, em casos específicos, ao de alto rendimento; tratamento diferenciado para o desporto profissional e o não profissional; e proteção e incentivo às manifestações desportivas de criação nacional. Os parágrafos tratam da justiça desportiva e do incentivo ao lazer como forma de promoção social.
+
+**O QUE SIGNIFICA**
+
+O esporte é um direito de cada pessoa, e o Estado deve estimulá-lo.
+
+O dinheiro público vai prioritariamente para o esporte educacional, como o esporte nas escolas; o de alto rendimento recebe apoio em casos específicos.
+
+As federações e os clubes têm autonomia para se organizar.
+
+O lazer também deve ser incentivado pelo poder público.
+
+**EXEMPLO PRÁTICO**
+
+Uma prefeitura usa recursos públicos para manter quadras e programas esportivos nas escolas municipais, e só em casos específicos apoia um atleta de alto rendimento. A escolha segue a prioridade do inciso II.
+
+**ATENÇÃO**
+
+A autonomia das entidades desportivas alcança sua organização e funcionamento, dentro da lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Desporto educacional*: esporte praticado nos sistemas de ensino, com finalidade formativa.
+- *Alto rendimento*: esporte de competição voltado a resultados de excelência.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diferenciado para o desporto profissional e o não)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 217, §§ 1º e 2º — Justiça desportiva
+
+- **TARGET:** `CF88:ART.217:PAR.1` · `ENTENDA/CF88:ART.217:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 217, §§ 1º e 2º — Justiça desportiva
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.217:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.217`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1731 bytes · referências 0
+- **Motivo da seleção:** Bloco: esgotamento previo da justica desportiva para acoes sobre disciplina e competicoes (§ 1º) e prazo maximo de sessenta dias para decisao final (§ 2º).
+
+**O QUE DIZ**
+
+O § 1º determina que o Poder Judiciário só admita ações sobre disciplina e competições desportivas depois de esgotadas as instâncias da justiça desportiva, regulada em lei. O § 2º fixa para a justiça desportiva o limite de sessenta dias, a partir da instauração do processo, para a decisão final.
+
+**O QUE SIGNIFICA**
+
+Em matéria de disciplina e de competições esportivas, o caminho começa na justiça desportiva, que não faz parte do Poder Judiciário.
+
+Só depois de esgotadas essas instâncias a questão pode ir ao Judiciário.
+
+Para que a exigência não se transforme em demora indefinida, a justiça desportiva tem até sessenta dias para decidir.
+
+**EXEMPLO PRÁTICO**
+
+Um clube é punido com perda de pontos por escalar jogador irregular. Antes de ir ao Judiciário, deve recorrer às instâncias da justiça desportiva, que têm até sessenta dias desde a instauração do processo para dar a decisão final.
+
+**ATENÇÃO**
+
+A exigência alcança apenas ações sobre disciplina e competições desportivas. Questões trabalhistas ou comerciais de atletas e clubes não estão nesse parágrafo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Justiça desportiva*: órgãos previstos em lei para julgar questões de disciplina e competições esportivas.
+- *Instância*: cada grau de julgamento em um sistema de decisões.
+
+**CAMADA EXTERNA**
+
+- O que ocorre se o prazo de sessenta dias não for cumprido é tema da legislação desportiva e da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as instâncias da justiça desportiva regulada em lei); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Antes de ir ao Judiciário, deve recorrer às instâncias da ju)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.218
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 218 — Ciência, tecnologia e inovação
+
+- **TARGET:** `CF88:ART.218` · `ENTENDA/CF88:ART.218/BASE/1`
+- **DISPLAY TITLE:** Art. 218 — Ciência, tecnologia e inovação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2075 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever do Estado de promover ciencia, pesquisa e inovacao e os instrumentos dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 218 manda o Estado promover e incentivar a ciência, a pesquisa, a formação científica e tecnológica e a inovação. A pesquisa científica básica e tecnológica recebe tratamento prioritário, e a pesquisa tecnológica se volta preponderantemente aos problemas brasileiros e ao sistema produtivo nacional e regional. O Estado apoia a formação de recursos humanos nessas áreas e a extensão tecnológica, e a lei estimula empresas que invistam em pesquisa e que dividam com os empregados ganhos de produtividade, sem vinculação ao salário. Os Estados e o Distrito Federal podem vincular parte da receita orçamentária a entidades públicas de fomento à pesquisa. O Estado também estimula a articulação entre entes públicos e privados e a atuação no exterior das instituições públicas de ciência.
+
+**O QUE SIGNIFICA**
+
+Ciência e inovação são tarefas do Estado, que deve promovê-las e incentivá-las.
+
+O artigo dá prioridade à pesquisa e orienta a pesquisa tecnológica para as necessidades do país.
+
+O § 4º liga o apoio às empresas a duas condutas: investir em pesquisa e formação e dividir com os empregados os ganhos de produtividade, separados do salário.
+
+O § 5º permite que Estados e o Distrito Federal reservem parte de suas receitas para entidades públicas de fomento ao ensino e à pesquisa.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado vincula parte de sua receita orçamentária a uma fundação pública que financia projetos de pesquisa em universidades locais, como permite o § 5º.
+
+**ATENÇÃO**
+
+A vinculação de receita do § 5º é uma faculdade dos Estados e do Distrito Federal.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Inovação*: introdução de novidade ou melhoria em produtos, processos ou serviços.
+- *Extensão tecnológica*: transferência de conhecimento técnico para empresas e para a sociedade.
+- *Fomento*: estímulo, inclusive financeiro, a uma atividade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a atuação no exterior das instituições públicas de); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: entidades públicas de fomento ao ensino e à)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.219
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 219 — Mercado interno e inovação
+
+- **TARGET:** `CF88:ART.219` · `ENTENDA/CF88:ART.219/BASE/1`
+- **DISPLAY TITLE:** Art. 219 — Mercado interno e inovação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1609 bytes · referências 0
+- **Motivo da seleção:** Visao geral: mercado interno como patrimonio nacional e estimulo a inovacao nas empresas e entes.
+
+**O QUE DIZ**
+
+O art. 219 declara que o mercado interno integra o patrimônio nacional e será incentivado, nos termos de lei federal, para tornar possíveis o desenvolvimento cultural e socioeconômico, o bem-estar da população e a autonomia tecnológica brasileira. O parágrafo único manda o Estado estimular a inovação nas empresas e em outros entes públicos ou privados. Também deve estimular parques e polos tecnológicos e outros ambientes de inovação, a atuação de inventores independentes e a criação, a absorção, a difusão e a transferência de tecnologia.
+
+**O QUE SIGNIFICA**
+
+O mercado interno, isto é, o conjunto de consumidores e produtores do próprio país, é tratado como bem de todos.
+
+O incentivo a esse mercado tem finalidades declaradas no texto: desenvolvimento, bem-estar e autonomia tecnológica.
+
+O parágrafo único lista instrumentos de estímulo à inovação, como parques tecnológicos e apoio a inventores independentes.
+
+**EXEMPLO PRÁTICO**
+
+Um governo estadual cria um parque tecnológico perto de uma universidade para abrigar empresas iniciantes de base tecnológica. A medida aplica o estímulo previsto no parágrafo único.
+
+**ATENÇÃO**
+
+O incentivo ao mercado interno se faz nos termos de lei federal.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Mercado interno*: conjunto das relações de compra e venda dentro do próprio país.
+- *Polo tecnológico*: região que concentra empresas e instituições de tecnologia.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bem estar da população e a autonomia tecnológica)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.219-A
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 219-A — Cooperação para pesquisa e inovação
+
+- **TARGET:** `CF88:ART.219-A` · `ENTENDA/CF88:ART.219-A/BASE/1`
+- **DISPLAY TITLE:** Art. 219-A — Cooperação para pesquisa e inovação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1504 bytes · referências 0
+- **Motivo da seleção:** Visao geral: instrumentos de cooperacao dos entes com entidades publicas e privadas para projetos de pesquisa e inovacao.
+
+**O QUE DIZ**
+
+O art. 219-A permite que a União, os Estados, o Distrito Federal e os Municípios firmem instrumentos de cooperação com órgãos e entidades públicas e com entidades privadas para executar projetos de pesquisa, de desenvolvimento da ciência e da tecnologia e de inovação. A cooperação pode incluir o compartilhamento de pessoal especializado e de capacidade instalada, com contrapartida financeira ou não financeira do ente beneficiário, na forma da lei.
+
+**O QUE SIGNIFICA**
+
+O artigo autoriza parcerias entre o poder público e outras instituições, inclusive privadas, em projetos de ciência e inovação.
+
+As parcerias podem envolver o uso compartilhado de laboratórios, equipamentos e pesquisadores.
+
+Quem se beneficia oferece uma contrapartida, que pode ser em dinheiro ou de outra natureza.
+
+**EXEMPLO PRÁTICO**
+
+Uma universidade estadual firma acordo com uma empresa para desenvolver um novo material. A empresa usa os laboratórios da universidade e, como contrapartida, financia bolsas de pesquisa, na forma da lei.
+
+**ATENÇÃO**
+
+As condições dos instrumentos de cooperação são definidas em lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Capacidade instalada*: estrutura física e de equipamentos disponível em uma instituição.
+- *Contrapartida*: o que o beneficiário oferece em troca do apoio recebido.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.219-B
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação
+
+- **TARGET:** `CF88:ART.219-B` · `ENTENDA/CF88:ART.219-B/BASE/1`
+- **DISPLAY TITLE:** Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 159 palavras · 1346 bytes · referências 0
+- **Motivo da seleção:** Visao geral: sistema em regime de colaboracao, lei federal de normas gerais e legislacao concorrente sobre peculiaridades.
+
+**O QUE DIZ**
+
+O art. 219-B organiza o Sistema Nacional de Ciência, Tecnologia e Inovação em regime de colaboração entre entes públicos e privados, para promover o desenvolvimento científico e tecnológico e a inovação. Lei federal fixa as normas gerais do sistema, e os Estados, o Distrito Federal e os Municípios legislam concorrentemente sobre suas peculiaridades.
+
+**O QUE SIGNIFICA**
+
+O sistema reúne poder público e iniciativa privada em torno da ciência e da inovação.
+
+A União define as regras gerais por lei federal. Os demais entes legislam concorrentemente sobre suas particularidades, ao lado das regras gerais da lei federal.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado edita lei própria para organizar seu sistema estadual de inovação, adaptando-o às suas necessidades, sem contrariar as normas gerais da lei federal.
+
+**ATENÇÃO**
+
+O § 2º inclui os Municípios entre os entes que legislam sobre suas peculiaridades nessa matéria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Normas gerais*: regras básicas nacionais que os demais entes devem respeitar.
+- *Legislar concorrentemente*: editar leis sobre o mesmo tema, respeitadas as normas gerais da União.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o desenvolvimento científico e tecnológico e a inovação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.220
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 220 — Comunicação social e liberdade de expressão
+
+- **TARGET:** `CF88:ART.220` · `ENTENDA/CF88:ART.220/BASE/1`
+- **DISPLAY TITLE:** Art. 220 — Comunicação social e liberdade de expressão
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 278 palavras · 2227 bytes · referências 0
+- **Motivo da seleção:** Visao geral: liberdade de manifestacao, criacao, expressao e informacao, vedacao de censura e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 220 proíbe qualquer restrição à manifestação do pensamento, à criação, à expressão e à informação, em qualquer forma, processo ou veículo, observado o que a Constituição dispõe. Nenhuma lei pode embaraçar a plena liberdade de informação jornalística, observados os incisos IV, V, X, XIII e XIV do art. 5º. Fica vedada toda censura política, ideológica e artística. Os parágrafos tratam ainda da lei federal sobre diversões e defesa contra certa programação, das restrições à propaganda de alguns produtos, da proibição de monopólio ou oligopólio nos meios de comunicação e da dispensa de licença para publicar veículo impresso.
+
+**O QUE SIGNIFICA**
+
+O artigo garante a liberdade de comunicação.
+
+A liberdade não é ilimitada: a ressalva final do caput e o § 1º remetem a outros direitos, como a vedação do anonimato, o direito de resposta, a proteção da intimidade e da imagem, a liberdade de profissão e o acesso à informação, previstos no art. 5º.
+
+A censura de natureza política, ideológica e artística é proibida.
+
+O § 5º impede que poucos grupos controlem os meios de comunicação, e o § 6º dispensa jornais e revistas impressos de licença.
+
+**EXEMPLO PRÁTICO**
+
+Um jornal impresso publica reportagem crítica ao governo. Não precisa de licença para circular e não pode sofrer censura prévia; se a reportagem ofender a honra de alguém, a pessoa pode buscar direito de resposta e indenização com base no art. 5º.
+
+**ATENÇÃO**
+
+A liberdade convive com os limites expressos no próprio texto constitucional. Como compatibilizá-la com outros direitos em cada caso é questão de interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Censura*: controle ou proibição prévia de conteúdo por autoridade.
+- *Oligopólio*: controle de um mercado por poucas empresas.
+- *Monopólio*: controle de um mercado por uma única empresa ou grupo.
+
+**CAMADA EXTERNA**
+
+- Os limites da liberdade de expressão e de imprensa em casos concretos são tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Não precisa de licença para circular e não pode sofrer censu)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda
+
+- **TARGET:** `CF88:ART.220:PAR.3` · `ENTENDA/CF88:ART.220:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.220:PAR.4`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.220`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2055 bytes · referências 0
+- **Motivo da seleção:** Bloco: competencia da lei federal para regular diversoes e dar meios de defesa contra programacao e propaganda nocivas (§ 3º) e restricoes a propaganda de tabaco, bebidas alcoolicas, agrotoxicos, medicamentos e terapias (§ 4º).
+
+**O QUE DIZ**
+
+O § 3º atribui à lei federal duas tarefas: regular as diversões e os espetáculos públicos, cabendo ao poder público informar sua natureza, as faixas etárias a que não se recomendam e os locais e horários em que a apresentação se mostre inadequada; e criar meios legais para que pessoas e famílias se defendam de programas de rádio e televisão contrários ao art. 221 e da propaganda de produtos, práticas e serviços potencialmente nocivos à saúde e ao meio ambiente. O § 4º submete a restrições legais a propaganda comercial de cinco grupos: tabaco, bebidas alcoólicas, agrotóxicos, medicamentos e terapias, e exige, quando necessário, advertência sobre os malefícios do uso.
+
+**O QUE SIGNIFICA**
+
+O poder público não proíbe espetáculos: informa a sociedade, indicando para quais idades não são recomendados e em que horários ou locais são inadequados. É a lógica da classificação indicativa.
+
+A lei deve dar às famílias instrumentos para se proteger de programação e de propaganda nocivas.
+
+Para cinco tipos de produto, a propaganda comercial pode ser restringida por lei e deve trazer advertência quando necessário.
+
+**EXEMPLO PRÁTICO**
+
+Um filme é classificado como não recomendado para menores de 16 anos, e uma propaganda de cerveja na televisão traz advertência sobre o consumo. As duas situações aplicam este bloco, na forma da lei.
+
+**ATENÇÃO**
+
+No § 3º, I, o papel do poder público é informar, e não vetar a exibição. As restrições concretas à propaganda estão na lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Classificação indicativa*: informação oficial sobre as idades para as quais um conteúdo não é recomendado.
+- *Agrotóxico*: produto químico usado para combater pragas na agricultura.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.221
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 221 — Princípios da programação de rádio e televisão
+
+- **TARGET:** `CF88:ART.221` · `ENTENDA/CF88:ART.221/BASE/1`
+- **DISPLAY TITLE:** Art. 221 — Princípios da programação de rádio e televisão
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1648 bytes · referências 1
+- **Motivo da seleção:** Visao geral: os quatro principios da producao e da programacao das emissoras de radio e televisao.
+
+**O QUE DIZ**
+
+O art. 221 fixa quatro princípios para o que as emissoras de rádio e televisão produzem e exibem: preferência por finalidades educativas, artísticas, culturais e informativas; promoção da cultura nacional e regional, com estímulo à produção independente voltada à sua divulgação; regionalização da produção cultural, artística e jornalística, segundo os percentuais estabelecidos em lei; e respeito aos valores éticos e sociais das pessoas e das famílias.
+
+**O QUE SIGNIFICA**
+
+Rádio e televisão usam um serviço público concedido pelo Estado. Por isso a programação segue princípios.
+
+As emissoras devem dar preferência a conteúdos educativos, culturais, artísticos e informativos, valorizar a cultura do país e de cada região e abrir espaço para produções regionais e independentes.
+
+Os percentuais de produção regional dependem de lei.
+
+**EXEMPLO PRÁTICO**
+
+Uma emissora de televisão de alcance nacional reserva parte de sua programação para conteúdos produzidos em diferentes regiões e por produtoras independentes, conforme os percentuais que a lei fixar.
+
+**ATENÇÃO**
+
+O § 3º do art. 222 estende esses princípios aos meios de comunicação social eletrônica, na forma de lei específica.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Produção independente*: conteúdo feito por produtora sem vínculo com a emissora que o exibe.
+- *Regionalização*: espaço para conteúdos produzidos nas diferentes regiões do país.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.222
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão
+
+- **TARGET:** `CF88:ART.222` · `ENTENDA/CF88:ART.222/BASE/1`
+- **DISPLAY TITLE:** Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 301 palavras · 2216 bytes · referências 0
+- **Motivo da seleção:** Visao geral: titularidade, capital minimo nacional, responsabilidade editorial, comunicacao eletronica, capital estrangeiro e alteracoes de controle.
+
+**O QUE DIZ**
+
+O art. 222 reserva a propriedade de empresa jornalística e de radiodifusão de som e de som e imagem a brasileiros natos, a naturalizados há mais de dez anos ou a pessoas jurídicas constituídas sob as leis brasileiras e sediadas no País. No mínimo setenta por cento do capital total e também do votante dessas empresas deve estar, direta ou indiretamente, nas mãos desses brasileiros, que farão a gestão e definirão a programação. A responsabilidade editorial e a seleção e direção da programação são privativas desses brasileiros em qualquer meio de comunicação social. Os parágrafos tratam ainda da comunicação eletrônica, da participação de capital estrangeiro, disciplinada em lei, e da comunicação ao Congresso Nacional das mudanças de controle.
+
+**O QUE SIGNIFICA**
+
+O artigo protege o controle nacional sobre os meios de comunicação.
+
+Uma empresa constituída sob as leis brasileiras e sediada no País pode ser dona de jornal ou emissora. Mas ao menos setenta por cento do capital, inclusive o que dá direito a voto, deve estar com brasileiros natos ou naturalizados há mais de dez anos, que também dirigem a empresa e a programação.
+
+O estrangeiro pode participar até o restante do capital, nos termos da lei, sem controlar a linha editorial.
+
+**EXEMPLO PRÁTICO**
+
+Um grupo estrangeiro quer comprar parte de uma emissora de televisão brasileira. Só pode adquirir participação que mantenha ao menos setenta por cento do capital total e do votante com brasileiros natos ou naturalizados há mais de dez anos, na forma da lei, e não pode assumir a direção da programação.
+
+**ATENÇÃO**
+
+As mudanças de controle societário dessas empresas devem ser comunicadas ao Congresso Nacional (§ 5º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Radiodifusão*: transmissão de rádio e televisão aberta por ondas.
+- *Capital votante*: parte do capital que dá direito de voto nas decisões da empresa.
+- *Responsabilidade editorial*: poder e dever de decidir o que será publicado ou transmitido.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a propriedade de empresa jornalística e de radiodifusão); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: brasileiros natos ou naturalizados há mais de dez); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: brasileiros natos ou naturalizados há mais de dez)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.223
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 223 — Concessões de rádio e televisão
+
+- **TARGET:** `CF88:ART.223` · `ENTENDA/CF88:ART.223/BASE/1`
+- **DISPLAY TITLE:** Art. 223 — Concessões de rádio e televisão
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 1911 bytes · referências 0
+- **Motivo da seleção:** Visao geral: outorga e renovacao pelo Executivo, apreciacao do Congresso, quorum para nao renovacao, eficacia, cancelamento judicial e prazos.
+
+**O QUE DIZ**
+
+O art. 223 atribui ao Poder Executivo a outorga e a renovação de concessão, permissão e autorização para radiodifusão de som e de som e imagem, observada a complementaridade dos sistemas privado, público e estatal. O Congresso Nacional examina o ato dentro do prazo previsto no art. 64, §§ 2º e 4º. A não renovação da concessão ou permissão depende de aprovação de, no mínimo, dois quintos do Congresso, em votação nominal. O ato de outorga ou renovação só produz efeitos legais após a deliberação do Congresso. O cancelamento antes do fim do prazo depende de decisão judicial. Os prazos são de dez anos para rádio e de quinze para televisão.
+
+**O QUE SIGNIFICA**
+
+A concessão de rádio e televisão envolve dois Poderes: o Executivo outorga, e o Congresso delibera.
+
+O texto torna mais exigentes a não renovação e o cancelamento: para não renovar, exige dois quintos do Congresso em votação nominal; para cancelar antes do prazo, exige decisão judicial.
+
+Os prazos são fixos: dez anos para rádio e quinze para televisão.
+
+**EXEMPLO PRÁTICO**
+
+Uma emissora de televisão chega ao fim de seus quinze anos de concessão. O Executivo renova, e o ato só produz efeitos depois da deliberação do Congresso Nacional.
+
+**ATENÇÃO**
+
+O quórum de dois quintos é exigido para não renovar, e não para renovar. O cancelamento antes do vencimento não pode ser feito por ato administrativo: depende de decisão judicial.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Outorga*: ato pelo qual o poder público concede um direito ou serviço.
+- *Votação nominal*: votação em que se registra o voto de cada parlamentar.
+- *Complementaridade dos sistemas*: convivência equilibrada entre emissoras privadas, públicas e estatais.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aprovação de no mínimo dois quintos do congresso)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.224
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 224 — Conselho de Comunicação Social
+
+- **TARGET:** `CF88:ART.224` · `ENTENDA/CF88:ART.224/BASE/1`
+- **DISPLAY TITLE:** Art. 224 — Conselho de Comunicação Social
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 131 palavras · 1060 bytes · referências 0
+- **Motivo da seleção:** Visao geral: orgao auxiliar instituido pelo Congresso Nacional para os temas do capitulo.
+
+**O QUE DIZ**
+
+O art. 224 manda o Congresso Nacional instituir, como órgão auxiliar e na forma da lei, o Conselho de Comunicação Social, para os efeitos do capítulo da comunicação social.
+
+**O QUE SIGNIFICA**
+
+O Conselho de Comunicação Social é um órgão de apoio ao Congresso Nacional nos temas do capítulo da comunicação social, que vão da liberdade de expressão à propriedade dos meios e às concessões de rádio e televisão.
+
+Ele é auxiliar: oferece estudos e opiniões, mas não decide no lugar do Congresso.
+
+O artigo não fixa sua composição nem suas atribuições, que ficam a cargo da lei.
+
+**EXEMPLO PRÁTICO**
+
+Antes de votar um projeto sobre propaganda infantil na televisão, o Congresso pode ouvir o Conselho de Comunicação Social sobre o tema.
+
+**ATENÇÃO**
+
+—
+
+**PALAVRAS DIFÍCEIS**
+
+- *Órgão auxiliar*: órgão que apoia outro com estudos e pareceres, sem decidir por ele.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.225
+
+Reutilizada do piloto (aprovada): `ENTENDA/CF88:ART.225/BASE/2`.
+
+Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 225, § 1º — Deveres ambientais do poder público
+
+- **TARGET:** `CF88:ART.225:PAR.1` · `ENTENDA/CF88:ART.225:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 225, § 1º — Deveres ambientais do poder público
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.225`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 327 palavras · 2609 bytes · referências 0
+- **Motivo da seleção:** Bloco: as oito incumbencias do poder publico para tornar efetivo o direito ao meio ambiente equilibrado; complementa a visao geral aprovada do art. 225 sem repeti-la.
+
+**O QUE DIZ**
+
+O § 1º lista oito tarefas do poder público para dar efetividade ao direito ao meio ambiente equilibrado: preservar e restaurar processos ecológicos essenciais e manejar espécies e ecossistemas; preservar a diversidade e a integridade do patrimônio genético e fiscalizar quem pesquisa e manipula material genético; definir espaços territoriais especialmente protegidos, cuja alteração ou supressão depende de lei; exigir estudo prévio de impacto ambiental, público, para obra ou atividade potencialmente causadora de significativa degradação; controlar técnicas, métodos e substâncias de risco; promover educação ambiental e conscientização; proteger a fauna e a flora, vedadas práticas que ponham em risco sua função ecológica, extingam espécies ou submetam animais a crueldade; e manter, por lei complementar, regime fiscal favorecido para biocombustíveis e hidrogênio de baixa emissão de carbono.
+
+**O QUE SIGNIFICA**
+
+As oito tarefas vão da prevenção à proteção direta.
+
+Algumas são de planejamento, como criar áreas protegidas. No inciso III, a alteração ou a supressão de uma área protegida depende de lei, e nenhum uso pode comprometer os atributos que justificaram a proteção.
+
+Outras são de controle, como o estudo prévio de impacto ambiental e o controle de substâncias perigosas.
+
+O inciso VIII trata de tributação: biocombustíveis e hidrogênio de baixa emissão devem pagar menos tributos que os combustíveis fósseis, com diferencial competitivo, especialmente nos tributos que o inciso indica.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado cria por decreto um parque estadual. Anos depois, quer reduzir sua área para construir uma rodovia. Pelo inciso III, a redução depende de lei.
+
+**ATENÇÃO**
+
+A proibição de crueldade com animais do inciso VII deve ser lida junto com o § 7º, que trata das práticas desportivas com animais. O regime fiscal do inciso VIII depende de lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Processos ecológicos essenciais*: funções da natureza indispensáveis à vida, como ciclos da água e do solo.
+- *Patrimônio genético*: conjunto da informação genética das espécies existentes no país.
+- *Espaço territorial especialmente protegido*: área com regime especial de proteção ambiental, como parques e reservas.
+- *Biocombustível*: combustível produzido a partir de matéria orgânica, como etanol e biodiesel.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a diversidade e a integridade do patrimônio genético)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

@@ -3,18 +3,20 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
- "explanations": 41,
+ "explanations": 83,
  "risk_counts": {
-  "LOW": 30,
-  "MEDIUM": 10,
+  "LOW": 67,
+  "MEDIUM": 15,
   "HIGH": 1
  },
  "finding_counts": {
-  "EXCEPTION_NOT_IN_TEXT": 2,
+  "ABSOLUTE_CLAIM": 1,
+  "EXAMPLE_NUMBER": 1,
+  "EXCEPTION_NOT_IN_TEXT": 3,
   "EXTRAPOLATION_NUMBER": 4
  },
  "unresolved_findings": 0,
- "ready_for_editorial_review": 41,
+ "ready_for_editorial_review": 83,
  "human_approved_t1": 0,
  "duplication_pairs": [],
  "rows": [
@@ -569,6 +571,542 @@
    "explanation_id": "ENTENDA/CF88:ART.200/BASE/1",
    "title": "Art. 200 — Atribuições do sistema único de saúde",
    "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.201",
+   "explanation_id": "ENTENDA/CF88:ART.201/BASE/1",
+   "title": "Art. 201 — Regime Geral de Previdência Social",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.201:PAR.1/BASE/1",
+   "title": "Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.201:PAR.2/BASE/1",
+   "title": "Art. 201, § 2º — Piso dos benefícios previdenciários",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.7",
+   "explanation_id": "ENTENDA/CF88:ART.201:PAR.7/BASE/1",
+   "title": "Art. 201, § 7º — Idades para aposentadoria no regime geral",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.9",
+   "explanation_id": "ENTENDA/CF88:ART.201:PAR.9/BASE/1",
+   "title": "Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.12",
+   "explanation_id": "ENTENDA/CF88:ART.201:PAR.12/BASE/1",
+   "title": "Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.202",
+   "explanation_id": "ENTENDA/CF88:ART.202/BASE/1",
+   "title": "Art. 202 — Previdência privada complementar",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.202:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.202:PAR.3/BASE/1",
+   "title": "Art. 202, § 3º — Aporte público em previdência privada",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "7%",
+     "resolution": "Percentual do exemplo marcado como ilustrativo na propria frase (\"percentual ilustrativo\"); nao cria regra. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.203",
+   "explanation_id": "ENTENDA/CF88:ART.203/BASE/1",
+   "title": "Art. 203 — Assistência social",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.203:INC.V",
+   "explanation_id": "ENTENDA/CF88:ART.203:INC.V/BASE/1",
+   "title": "Art. 203, inciso V — Benefício de um salário mínimo da assistência social",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os critérios legais de renda e de idade do benefício e sua aplicação são temas da legislação correlata e da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.204",
+   "explanation_id": "ENTENDA/CF88:ART.204/BASE/1",
+   "title": "Art. 204 — Financiamento e diretrizes da assistência social",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.205",
+   "explanation_id": "ENTENDA/CF88:ART.205/BASE/1",
+   "title": "Art. 205 — Direito à educação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.206",
+   "explanation_id": "ENTENDA/CF88:ART.206/BASE/1",
+   "title": "Art. 206 — Princípios do ensino",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.207",
+   "explanation_id": "ENTENDA/CF88:ART.207/BASE/1",
+   "title": "Art. 207 — Autonomia universitária",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.208",
+   "explanation_id": "ENTENDA/CF88:ART.208/BASE/1",
+   "title": "Art. 208 — Dever do Estado com a educação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.208:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.208:INC.I/BASE/1",
+   "title": "Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.208:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.208:PAR.1/BASE/1",
+   "title": "Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.209",
+   "explanation_id": "ENTENDA/CF88:ART.209/BASE/1",
+   "title": "Art. 209 — Ensino privado",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.210",
+   "explanation_id": "ENTENDA/CF88:ART.210/BASE/1",
+   "title": "Art. 210 — Conteúdos mínimos, ensino religioso e língua",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O modelo de ensino religioso nas escolas públicas (confessional ou não) é tema da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.211",
+   "explanation_id": "ENTENDA/CF88:ART.211/BASE/1",
+   "title": "Art. 211 — Sistemas de ensino em regime de colaboração",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.212",
+   "explanation_id": "ENTENDA/CF88:ART.212/BASE/1",
+   "title": "Art. 212 — Aplicação mínima em educação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "o_que_diz",
+     "detail": "nunca",
+     "resolution": "\"nunca menos de dezoito\" e a expressao literal do caput do art. 212. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.212:PAR.5",
+   "explanation_id": "ENTENDA/CF88:ART.212:PAR.5/BASE/1",
+   "title": "Art. 212, §§ 5º e 6º — Salário-educação",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.212-A",
+   "explanation_id": "ENTENDA/CF88:ART.212-A/BASE/1",
+   "title": "Art. 212-A — Fundeb",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: crime"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "explanation_id": "ENTENDA/CF88:ART.212-A:INC.V/BASE/1",
+   "title": "Art. 212-A, inciso V — Complementação da União ao Fundeb",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.213",
+   "explanation_id": "ENTENDA/CF88:ART.213/BASE/1",
+   "title": "Art. 213 — Destinação de recursos públicos à educação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXCEPTION_NOT_IN_TEXT",
+     "section": "o_que_diz/o_que_significa",
+     "detail": "exceção",
+     "resolution": "A \"excecao\" descrita e a permissao do caput (\"podendo ser dirigidos a escolas comunitarias, confessionais ou filantropicas\"), contraposta a regra de destinacao as escolas publicas; o detector nao reconhece \"podendo\". Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.214",
+   "explanation_id": "ENTENDA/CF88:ART.214/BASE/1",
+   "title": "Art. 214 — Plano nacional de educação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.215",
+   "explanation_id": "ENTENDA/CF88:ART.215/BASE/1",
+   "title": "Art. 215 — Direitos culturais",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.216",
+   "explanation_id": "ENTENDA/CF88:ART.216/BASE/1",
+   "title": "Art. 216 — Patrimônio cultural brasileiro",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.216-A",
+   "explanation_id": "ENTENDA/CF88:ART.216-A/BASE/1",
+   "title": "Art. 216-A — Sistema Nacional de Cultura",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.217",
+   "explanation_id": "ENTENDA/CF88:ART.217/BASE/1",
+   "title": "Art. 217 — Desporto",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.217:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.217:PAR.1/BASE/1",
+   "title": "Art. 217, §§ 1º e 2º — Justiça desportiva",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O que ocorre se o prazo de sessenta dias não for cumprido é tema da legislação desportiva e da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.218",
+   "explanation_id": "ENTENDA/CF88:ART.218/BASE/1",
+   "title": "Art. 218 — Ciência, tecnologia e inovação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.219",
+   "explanation_id": "ENTENDA/CF88:ART.219/BASE/1",
+   "title": "Art. 219 — Mercado interno e inovação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.219-A",
+   "explanation_id": "ENTENDA/CF88:ART.219-A/BASE/1",
+   "title": "Art. 219-A — Cooperação para pesquisa e inovação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.219-B",
+   "explanation_id": "ENTENDA/CF88:ART.219-B/BASE/1",
+   "title": "Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.220",
+   "explanation_id": "ENTENDA/CF88:ART.220/BASE/1",
+   "title": "Art. 220 — Comunicação social e liberdade de expressão",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os limites da liberdade de expressão e de imprensa em casos concretos são tema da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.220:PAR.3/BASE/1",
+   "title": "Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.221",
+   "explanation_id": "ENTENDA/CF88:ART.221/BASE/1",
+   "title": "Art. 221 — Princípios da programação de rádio e televisão",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.222",
+   "explanation_id": "ENTENDA/CF88:ART.222/BASE/1",
+   "title": "Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.223",
+   "explanation_id": "ENTENDA/CF88:ART.223/BASE/1",
+   "title": "Art. 223 — Concessões de rádio e televisão",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.224",
+   "explanation_id": "ENTENDA/CF88:ART.224/BASE/1",
+   "title": "Art. 224 — Conselho de Comunicação Social",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.225:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.225:PAR.1/BASE/1",
+   "title": "Art. 225, § 1º — Deveres ambientais do poder público",
+   "role": "BLOCK",
    "risk": "LOW",
    "risk_reasons": [],
    "review_status": "PENDING_HUMAN_REVIEW",

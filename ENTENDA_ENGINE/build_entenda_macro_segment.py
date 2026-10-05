@@ -365,7 +365,7 @@ class SegmentContext(M.MacroContext):
             self.as_of_year, self.as_of_dates = y, ((int(d), MONTHS[int(mth) - 1]),)
 
     def validate(self, r, lint_rows=(), editorial_rows=()):
-        ground = extended_grounding(r, self.ctx)
+        ground = extended_grounding(r, self.ctx) + '\n' + '\n'.join(a for t in R.scope_targets(r, self.ctx) for a in self.vigency.get(t, []))
         fs = refine_numbers(super().validate(r, lint_rows, editorial_rows), r, ground, self.ctx)
         return fs + dates_findings(r, ground, extra_years=(self.as_of_year,) if self.as_of_year else (), extra_dates=self.as_of_dates)
 

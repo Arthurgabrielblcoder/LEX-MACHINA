@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 41 · risco LOW 30 · MEDIUM 10 · HIGH 1
-- Prontas para revisão editorial: 41 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: EXCEPTION_NOT_IN_TEXT 2, EXTRAPOLATION_NUMBER 4 · não resolvidos: 0
+- Explicações: 83 · risco LOW 67 · MEDIUM 15 · HIGH 1
+- Prontas para revisão editorial: 83 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 1, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 3, EXTRAPOLATION_NUMBER 4 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -68,6 +68,31 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.198:PAR.12` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A lei federal dos pisos da enfermagem e as condições de sua aplicação pertencem à legislação correlata e à camada JURISPRUDÊNCIA.
+
+### Art. 203, inciso V — Benefício de um salário mínimo da assistência social
+
+- `CF88:ART.203:INC.V` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os critérios legais de renda e de idade do benefício e sua aplicação são temas da legislação correlata e da camada JURISPRUDÊNCIA.
+
+### Art. 210 — Conteúdos mínimos, ensino religioso e língua
+
+- `CF88:ART.210` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O modelo de ensino religioso nas escolas públicas (confessional ou não) é tema da camada JURISPRUDÊNCIA.
+
+### Art. 212-A — Fundeb
+
+- `CF88:ART.212-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: crime
+
+### Art. 217, §§ 1º e 2º — Justiça desportiva
+
+- `CF88:ART.217:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O que ocorre se o prazo de sessenta dias não for cumprido é tema da legislação desportiva e da camada JURISPRUDÊNCIA.
+
+### Art. 220 — Comunicação social e liberdade de expressão
+
+- `CF88:ART.220` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os limites da liberdade de expressão e de imprensa em casos concretos são tema da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao responde; remete)
 
 ## Risco LOW
 
@@ -221,5 +246,193 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 200 — Atribuições do sistema único de saúde
 
 - `CF88:ART.200` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 201 — Regime Geral de Previdência Social
+
+- `CF88:ART.201` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções
+
+- `CF88:ART.201:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 201, § 2º — Piso dos benefícios previdenciários
+
+- `CF88:ART.201:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 201, § 7º — Idades para aposentadoria no regime geral
+
+- `CF88:ART.201:PAR.7` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição
+
+- `CF88:ART.201:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária
+
+- `CF88:ART.201:PAR.12` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 202 — Previdência privada complementar
+
+- `CF88:ART.202` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 202, § 3º — Aporte público em previdência privada
+
+- `CF88:ART.202:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXAMPLE_NUMBER (exemplo_pratico: 7%) → Percentual do exemplo marcado como ilustrativo na propria frase ("percentual ilustrativo"); nao cria regra. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 203 — Assistência social
+
+- `CF88:ART.203` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 204 — Financiamento e diretrizes da assistência social
+
+- `CF88:ART.204` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 205 — Direito à educação
+
+- `CF88:ART.205` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 206 — Princípios do ensino
+
+- `CF88:ART.206` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 207 — Autonomia universitária
+
+- `CF88:ART.207` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 208 — Dever do Estado com a educação
+
+- `CF88:ART.208` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos
+
+- `CF88:ART.208:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade
+
+- `CF88:ART.208:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 209 — Ensino privado
+
+- `CF88:ART.209` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 211 — Sistemas de ensino em regime de colaboração
+
+- `CF88:ART.211` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 212 — Aplicação mínima em educação
+
+- `CF88:ART.212` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- ABSOLUTE_CLAIM (o_que_diz: nunca) → "nunca menos de dezoito" e a expressao literal do caput do art. 212. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 212, §§ 5º e 6º — Salário-educação
+
+- `CF88:ART.212:PAR.5` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 212-A, inciso V — Complementação da União ao Fundeb
+
+- `CF88:ART.212-A:INC.V` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 213 — Destinação de recursos públicos à educação
+
+- `CF88:ART.213` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXCEPTION_NOT_IN_TEXT (o_que_diz/o_que_significa: exceção) → A "excecao" descrita e a permissao do caput ("podendo ser dirigidos a escolas comunitarias, confessionais ou filantropicas"), contraposta a regra de destinacao as escolas publicas; o detector nao reconhece "podendo". Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 214 — Plano nacional de educação
+
+- `CF88:ART.214` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 215 — Direitos culturais
+
+- `CF88:ART.215` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 216 — Patrimônio cultural brasileiro
+
+- `CF88:ART.216` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 216-A — Sistema Nacional de Cultura
+
+- `CF88:ART.216-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 217 — Desporto
+
+- `CF88:ART.217` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 218 — Ciência, tecnologia e inovação
+
+- `CF88:ART.218` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 219 — Mercado interno e inovação
+
+- `CF88:ART.219` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 219-A — Cooperação para pesquisa e inovação
+
+- `CF88:ART.219-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação
+
+- `CF88:ART.219-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda
+
+- `CF88:ART.220:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 221 — Princípios da programação de rádio e televisão
+
+- `CF88:ART.221` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão
+
+- `CF88:ART.222` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 223 — Concessões de rádio e televisão
+
+- `CF88:ART.223` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 224 — Conselho de Comunicação Social
+
+- `CF88:ART.224` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 225, § 1º — Deveres ambientais do poder público
+
+- `CF88:ART.225:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 

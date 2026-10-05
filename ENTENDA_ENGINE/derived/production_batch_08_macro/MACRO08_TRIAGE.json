@@ -23,38 +23,38 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 26,
-  "B_CLEAN_MEDIUM": 9,
-  "C_QUICK_REVIEW": 5,
+  "A_CLEAN_LOW": 60,
+  "B_CLEAN_MEDIUM": 13,
+  "C_QUICK_REVIEW": 9,
   "D_FULL_HUMAN_REVIEW": 1,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 30,
-  "MEDIUM": 10,
+  "LOW": 67,
+  "MEDIUM": 15,
   "HIGH": 1
  },
  "complexity_counts": {
-  "STRUCTURED": 23,
-  "EXTERNAL": 17,
+  "STRUCTURED": 49,
+  "EXTERNAL": 33,
   "SIMPLE": 1
  },
  "jurisprudence_counts": {
-  "NONE": 34,
-  "CONTEXT_ONLY": 7
+  "NONE": 72,
+  "CONTEXT_ONLY": 11
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 26,
+   "A_CLEAN_LOW": 60,
    "B_CLEAN_MEDIUM": 0,
-   "C_QUICK_REVIEW": 4,
+   "C_QUICK_REVIEW": 7,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 9,
-   "C_QUICK_REVIEW": 1,
+   "B_CLEAN_MEDIUM": 13,
+   "C_QUICK_REVIEW": 2,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
@@ -75,16 +75,16 @@
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 19,
+   "A_CLEAN_LOW": 43,
    "B_CLEAN_MEDIUM": 2,
-   "C_QUICK_REVIEW": 2,
+   "C_QUICK_REVIEW": 4,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 6,
-   "B_CLEAN_MEDIUM": 7,
-   "C_QUICK_REVIEW": 3,
+   "A_CLEAN_LOW": 16,
+   "B_CLEAN_MEDIUM": 11,
+   "C_QUICK_REVIEW": 5,
    "D_FULL_HUMAN_REVIEW": 1,
    "E_HARD_FAIL": 0
   }
@@ -1070,6 +1070,1379 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.201",
+   "title": "Art. 201 — Regime Geral de Previdência Social",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: cinco",
+    "exception: ressalvada",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 40, 42",
+    "overview com 28 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "critérios que preservem o equilíbrio financeiro e atuarial",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.1",
+   "title": "Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.2",
+   "title": "Art. 201, § 2º — Piso dos benefícios previdenciários",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.7",
+   "title": "Art. 201, § 7º — Idades para aposentadoria no regime geral",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: sessenta",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "incluídos o produtor rural o garimpeiro e o",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.9",
+   "title": "Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 42",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.12",
+   "title": "Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "especial de inclusão previdenciária com alíquotas diferenciadas para",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.202",
+   "title": "Art. 202 — Previdência privada complementar",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.202:CAPUT: Vide Emenda Constitucional n. 20, de 1998; ART.202:PAR.3: Vide Emenda Constitucional n. 20, de 1998)",
+    "exception: salvo",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de reservas que garantam o benefício contratado e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.202:PAR.3",
+   "title": "Art. 202, § 3º — Aporte público em previdência privada",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.202:PAR.3: Vide Emenda Constitucional n. 20, de 1998)",
+    "exception: salvo",
+    "redacao de emenda constitucional (2 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "7%",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.203",
+   "title": "Art. 203 — Assistência social",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "ABSOLUTE_CLAIM"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.204",
+   "title": "Art. 204 — Financiamento e diretrizes da assistência social",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: cinco",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 195",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.205",
+   "title": "Art. 205 — Direito à educação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de todos e dever do estado e da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.206",
+   "title": "Art. 206 — Princípios do ensino",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "direito à educação e à aprendizagem ao longo",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.207",
+   "title": "Art. 207 — Autonomia universitária",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "admitir professores técnicos e cientistas estrangeiros na forma",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.208",
+   "title": "Art. 208 — Dever do Estado com a educação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.208:INC.I: Vide Emenda Constitucional n. 59, de 2009)",
+    "number_or_percentage: quatro",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.208:INC.I",
+   "title": "Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.208:INC.I: Vide Emenda Constitucional n. 59, de 2009)",
+    "number_or_percentage: quatro",
+    "redacao de emenda constitucional (2 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "30",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.208:PAR.1",
+   "title": "Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "8",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.209",
+   "title": "Art. 209 — Ensino privado",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "autorização e avaliação de qualidade pelo poder público",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.211",
+   "title": "Art. 211 — Sistemas de ensino em regime de colaboração",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 23",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.212:PAR.5",
+   "title": "Art. 212, §§ 5º e 6º — Salário-educação",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.212:PAR.5: Vide Decreto n. 6.003, de 2006)",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao número de alunos matriculados na educação básica",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "2",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.213",
+   "title": "Art. 213 — Destinação de recursos públicos à educação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a escolas comunitárias confessionais ou filantrópicas definidas em",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "EXCEPTION_NOT_IN_TEXT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.214",
+   "title": "Art. 214 — Plano nacional de educação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei estabelecerá",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "nacional de educação em regime de colaboração e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "o_que_diz",
+     "match": "todos os",
+     "detail": "o predicado quantificado reproduz trecho literal do texto"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.215",
+   "title": "Art. 215 — Direitos culturais",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei disporá",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a todos o pleno exercício dos direitos culturais",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.216",
+   "title": "Art. 216 — Patrimônio cultural brasileiro",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.216:PAR.2: Vide Lei n. 12.527, de 2011)",
+    "number_or_percentage: cinco",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "obras objetos documentos edificações e demais espaços destinados",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.216-A",
+   "title": "Art. 216-A — Sistema Nacional de Cultura",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 27 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "entre os entes da federação e a sociedade",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.217",
+   "title": "Art. 217 — Desporto",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: sessenta",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "diferenciado para o desporto profissional e o não",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.218",
+   "title": "Art. 218 — Ciência, tecnologia e inovação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a atuação no exterior das instituições públicas de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "entidades públicas de fomento ao ensino e à",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentivá",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.219",
+   "title": "Art. 219 — Mercado interno e inovação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bem estar da população e a autonomia tecnológica",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentivo",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    },
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "atencao",
+     "match": "incentivo",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.219-A",
+   "title": "Art. 219-A — Cooperação para pesquisa e inovação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.219-B",
+   "title": "Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o desenvolvimento científico e tecnológico e a inovação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "title": "Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "remissao: arts. 221",
+    "block com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "16",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.221",
+   "title": "Art. 221 — Princípios da programação de rádio e televisão",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.222",
+   "title": "Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: dez anos",
+    "number_or_percentage: dez",
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 221",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a propriedade de empresa jornalística e de radiodifusão",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "brasileiros natos ou naturalizados há mais de dez",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "exemplo_pratico",
+     "match": "brasileiros natos ou naturalizados há mais de dez",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "exemplo_pratico",
+     "match": "Só pode",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.223",
+   "title": "Art. 223 — Concessões de rádio e televisão",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: dois",
+    "remissao: arts. 64",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aprovação de no mínimo dois quintos do congresso",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "15",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.224",
+   "title": "Art. 224 — Conselho de Comunicação Social",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -1449,10 +2822,10 @@
    "detectors": [],
    "info": [
     {
-     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "code": "NUMBER_FROM_OTHER_DEVICE",
      "section": "exemplo_pratico",
-     "match": "70%",
-     "detail": "numero do exemplo nao esta no texto"
+     "match": "70% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
     }
    ],
    "lint": [
@@ -1463,6 +2836,172 @@
     "JURISPRUDENCIA (contexto)"
    ],
    "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.203:INC.V",
+   "title": "Art. 203, inciso V — Benefício de um salário mínimo da assistência social",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os critérios legais de renda e de idade do benefício e sua aplicação são temas da legislação correlata e da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.210",
+   "title": "Art. 210 — Conteúdos mínimos, ensino religioso e língua",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O modelo de ensino religioso nas escolas públicas (confessional ou não) é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "disciplina dos horários normais das escolas públicas de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.217:PAR.1",
+   "title": "Art. 217, §§ 1º e 2º — Justiça desportiva",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O que ocorre se o prazo de sessenta dias não for cumprido é tema da legislação desportiva e da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "number_or_percentage: sessenta",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as instâncias da justiça desportiva regulada em lei",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.220",
+   "title": "Art. 220 — Comunicação social e liberdade de expressão",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os limites da liberdade de expressão e de imprensa em casos concretos são tema da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "remissao: arts. 5, 221",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -1722,6 +3261,234 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.212",
+   "title": "Art. 212 — Aplicação mínima em educação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.212:PAR.5: Vide Decreto n. 6.003, de 2006)",
+    "number_or_percentage: vinte",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 208, 212, 213",
+    "overview com 11 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os estados o distrito federal e os municípios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NUMBER_NOT_IN_TEXT",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "18%",
+     "sentence": "A União aplica nunca menos de dezoito por cento;",
+     "detail": "quantidade ausente da Lei Seca do registro, do artigo, dos dispositivos citados e do escopo do lote"
+    },
+    {
+     "code": "NUMBER_NOT_IN_TEXT",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "18%",
+     "sentence": "dezoito por cento para a União e vinte e cinco por cento para os demais entes.",
+     "detail": "quantidade ausente da Lei Seca do registro, do artigo, dos dispositivos citados e do escopo do lote"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "NUMBER_NOT_IN_TEXT (18%)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.212-A",
+   "title": "Art. 212-A — Fundeb",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: crime"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: previstas em lei",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 155, 156, 157, 158, 159",
+    "overview com 34 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os estados o distrito federal e os municípios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ao desenvolvimento do ensino não integrantes dos fundos refe",
+     "sentence": "",
+     "detail": "ART.212-A:PAR.1:INC.I: 3/4 elementos reconhecidos; sem traco: \"ao desenvolvimento do ensino não integrantes dos fundos referidos no inciso I do caput deste artigo\""
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (ao desenvolvimento do ensino não integrantes dos fundos refe)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "title": "Art. 212-A, inciso V — Complementação da União ao Fundeb",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "law_dependency: previstas em lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 4 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ART.212-A:INC.V:AL.a",
+     "sentence": "",
+     "detail": "2/3 itens de ART.212-A:INC.V reconhecidos; sem traco: ART.212-A:INC.V:AL.a \"10 (dez) pontos percentuais no âmbito de cada Esta\""
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "5 (dois inteiros",
+     "sentence": "",
+     "detail": "ART.212-A:INC.V:AL.c: 4/5 elementos reconhecidos; sem traco: \"5 (dois inteiros\""
+    }
+   ],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (5 (dois inteiros); LIST_ITEM_POSSIBLY_DROPPED (ART.212-A:INC.V:AL.a)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.225:PAR.1",
+   "title": "Art. 225, § 1º — Deveres ambientais do poder público",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155, 195, 239",
+    "block com 9 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a diversidade e a integridade do patrimônio genético",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "provoquem a extinção de espécies",
+     "sentence": "",
+     "detail": "ART.225:PAR.1:INC.VII: 3/4 elementos reconhecidos; sem traco: \"provoquem a extinção de espécies\""
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "aos impostos a que se referem os arts. 155",
+     "sentence": "",
+     "detail": "ART.225:PAR.1:INC.VIII: 5/6 elementos reconhecidos; sem traco: \"aos impostos a que se referem os arts. 155\""
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (aos impostos a que se referem os arts. 155); LIST_ITEM_POSSIBLY_DROPPED (provoquem a extinção de espécies)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.195:PAR.15",
    "title": "Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços",
    "role": "BLOCK",
@@ -1776,31 +3543,33 @@
   "TEMPORAL_STATUS_UNRESOLVED": 1
  },
  "finding_counts": {
-  "LIST_ITEM_POSSIBLY_DROPPED": 6,
+  "LIST_ITEM_POSSIBLY_DROPPED": 11,
+  "NUMBER_NOT_IN_TEXT": 2,
   "PERMISSION_NOT_IN_TEXT": 1
  },
  "refined_false_positive_counts": {
-  "TELEOLOGY_SPECULATIVE": 2
+  "TELEOLOGY_SPECULATIVE": 5,
+  "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 57167,
-  "old_model_full_package_chars": 122062,
-  "presented_chars": 41359,
+  "total_draft_chars": 118705,
+  "old_model_full_package_chars": 260523,
+  "presented_chars": 78708,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 27189,
+   "MACRO08_COMPACT_AB_REVIEW.md": 55963,
    "MACRO08_FULL_D_REVIEW.md": 4152,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 6120,
-   "MACRO08_QUICK_C_REVIEW.md": 3779
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 11635,
+   "MACRO08_QUICK_C_REVIEW.md": 6839
   },
-  "reduction_abs": 80703,
-  "reduction_pct": 66.1
+  "reduction_abs": 181815,
+  "reduction_pct": 69.8
  },
- "d_ratio": 0.024,
+ "d_ratio": 0.012,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 27,
+  "eligible": 57,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -1841,6 +3610,27 @@
     "TELEOLOGIA": 7,
     "TEMPORAL": 2
    }
+  },
+  "B": {
+   "corrections": 89,
+   "by_category": {
+    "CONDICAO_FORA_DO_TEXTO": 2,
+    "COPIA_DA_LEI_SECA": 32,
+    "DEPENDENCIA_DE_LEI_OMITIDA": 1,
+    "EXTENSAO_MINIMA": 2,
+    "FRASE_LONGA": 11,
+    "GENERALIZACAO_ABSOLUTA": 16,
+    "GLOSSARIO": 1,
+    "INTERPRETACAO_COMO_REGRA": 3,
+    "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA": 3,
+    "LISTA_INCOMPLETA": 6,
+    "MODALIDADE": 3,
+    "NUMERO": 1,
+    "NUMERO_CALCULADO": 1,
+    "NUMERO_ILUSTRATIVO": 2,
+    "RESSALVA": 1,
+    "TELEOLOGIA": 4
+   }
   }
  },
  "checks": {
@@ -1853,32 +3643,33 @@
  },
  "segments": {
   "CORPO": {
-   "new_explanations": 41,
+   "new_explanations": 83,
    "roles": {
-    "BLOCK": 9,
-    "DEVICE": 7,
-    "OVERVIEW": 25
+    "BLOCK": 19,
+    "DEVICE": 9,
+    "ITEM": 2,
+    "OVERVIEW": 53
    },
    "queues": {
-    "A_CLEAN_LOW": 26,
-    "B_CLEAN_MEDIUM": 9,
-    "C_QUICK_REVIEW": 5,
+    "A_CLEAN_LOW": 60,
+    "B_CLEAN_MEDIUM": 13,
+    "C_QUICK_REVIEW": 9,
     "D_FULL_HUMAN_REVIEW": 1,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 30,
-    "MEDIUM": 10,
+    "LOW": 67,
+    "MEDIUM": 15,
     "HIGH": 1
    },
    "verification_complexity": {
     "SIMPLE": 1,
-    "STRUCTURED": 23,
-    "EXTERNAL": 17
+    "STRUCTURED": 49,
+    "EXTERNAL": 33
    },
    "jurisprudence": {
-    "CONTEXT_ONLY": 7,
-    "NONE": 34
+    "CONTEXT_ONLY": 11,
+    "NONE": 72
    }
   },
   "ADCT": {

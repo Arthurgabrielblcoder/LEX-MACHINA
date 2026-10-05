@@ -3,8 +3,8 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "prova temporal de cada explicacao com componente temporal: norma, EC, artigo, marco, situacao na data de referencia, se produz efeitos, hash da fonte e proveniencia. Nada vem de memoria: so texto versionado e anotacoes da fonte canonica.",
- "total": 3,
- "resolved": 2,
+ "total": 5,
+ "resolved": 4,
  "unresolved": 1,
  "entries": [
   {
@@ -83,6 +83,59 @@
    ],
    "provenance": [
     "runtime: ADCT arts. 125, 126 e 127"
+   ],
+   "temporal_notes": []
+  },
+  {
+   "target_id": "CF88:ART.201",
+   "namespace": "CF88",
+   "temporal_class": "OPERATIVE_CURRENT",
+   "resolved_deterministically": true,
+   "norma": "Constituicao Federal",
+   "ec": "EC 103/2019 (anotacoes da fonte canonica)",
+   "article": "CF art. 201",
+   "marker": "regras de transicao da EC 103/2019 fora do runtime",
+   "situation_as_of": "Texto permanente vigente; regras de transicao para segurados anteriores ficam na camada externa (nao versionadas no runtime).",
+   "produces_effects": "SIM",
+   "as_of": "2026-10-05",
+   "source_text_sha256": "a8f7cf33d5715d639fcd8a233e5e0cfe34ac4be40eb58bbcb4e811e6d37138f1",
+   "text_source_path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "text_source_file_sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "source_annotations": [
+    "Incluido dada pela Emenda Constitucional n. 20, de 1998",
+    "Incluido pela Emenda Constitucional n. 103, de 2019",
+    "Redacao dada pela Emenda Constitucional n. 103, de 2019",
+    "Redacao dada pela Emenda Constitucional n. 20, de 1998"
+   ],
+   "provenance": [
+    "anotacoes: 'Redacao dada pela Emenda Constitucional n. 103, de 2019'"
+   ],
+   "temporal_notes": []
+  },
+  {
+   "target_id": "CF88:ART.212-A",
+   "namespace": "CF88",
+   "temporal_class": "OPERATIVE_CURRENT",
+   "resolved_deterministically": true,
+   "norma": "Constituicao Federal",
+   "ec": "anotacoes da fonte canonica: EC 108/2020 e EC 132/2023 (incisos II a XIII); incisos XIV e XV sem anotacao identica",
+   "article": "CF art. 212-A, XIV e XV",
+   "marker": "exercicio de 2025 (inciso XIV); a partir do exercicio de 2026 (inciso XV)",
+   "situation_as_of": "Inciso XIV com efeito restrito ao exercicio de 2025 (encerrado); inciso XV produzindo efeitos no exercicio de 2026; demais incisos vigentes.",
+   "produces_effects": "SIM (inciso XIV exaurido)",
+   "as_of": "2026-10-05",
+   "source_text_sha256": "6ab66dc61bd6879c10c187197e94d56371f827bdc86e99dd51aad2a64dbd91a9",
+   "text_source_path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "text_source_file_sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "source_annotations": [
+    "Incluido pela Emenda Constitucional n. 108, de 2020",
+    "Incluido pela Emenda Constitucional n. 132, de 2023",
+    "Redacao dada pela Emenda Constitucional n. 132, de 2023"
+   ],
+   "provenance": [
+    "runtime: CF art. 212-A, XIV ('no exercicio de 2025') e XV ('a partir do exercicio de 2026')"
    ],
    "temporal_notes": []
   }
