@@ -48,3 +48,65 @@ Não contam como PASS.
 - `python ENTENDA_ENGINE/build_entenda_batch06_candidate.py --determinism 3` reconstrói o Batch06 inteiro sem os scripts temporários `b06_*`.
 - O Relations Engine entra pelo pin versionado, em qualquer ambiente; o build não depende das pastas locais.
 - Os scripts e o código exigem Python ≥ 3.12 (f-strings com barra invertida, já presentes em `t1_triage.py` antes desta missão). O Python 3.11 padrão da VM não importa `t1_triage.py`.
+
+---
+
+# Atualização — Rodada D (revisão jurídica humana dos 11 itens D, 2026-10-05)
+
+Missão `BATCH06_FULL_HUMAN_REVIEW_D_RESOLUTION`, branch `batch06-scale-cloud`, a partir de `5ce9f21` (descendente direto, sem rebase, merge ou force push).
+
+## Decisões
+
+- **Aprovados sem alteração jurídica (v1 mantida):** art. 51, I e art. 52, X.
+- **Ajustados e aprovados (v2; v1 preservada como RETIRED/CHANGES_REQUESTED):** art. 52, p. único; art. 53, caput, § 1º e § 2º; art. 55, VI; art. 58, § 3º; art. 62, § 6º; art. 63; art. 75.
+- **Rejeitados:** 0.
+- Os 11 passaram pelo portão de aprovação do builder: contrato do motor, validator v3 sem HARD_FAIL e sem REVIEW_REQUIRED aberto, editorial_checks sem achado aberto.
+- **Acervo HUMAN_APPROVED_T1:** 289 → **300**. Batch06 novos pendentes: **82** (A 42, B 27, C 13, não decididos).
+
+## Fontes externas
+
+- Registradas como `HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE` (indicadas pela revisão humana) e como recomendações `PENDING_EXTERNAL_INGESTION` em `JURISPRUDENCE_LINK_RECOMMENDATIONS.json`.
+- **Conferência direta nos portais oficiais: NÃO EXECUTADA.** O egress da VM bloqueia STF, Planalto e Câmara (curl e WebFetch: `connect_rejected`). Nenhum conteúdo externo foi acrescentado por memória.
+- A EC 139/2026 tem evidência versionada no repositório:
+  - a compilação oficial do Senado (`updater/fontes_oficiais_senado/CF88`) contém a vedação no art. 31, § 1º, e no art. 75;
+  - a fonte canônica estrutural anota "Redação dada pela Emenda Constitucional nº 139, de 2026" nos dois dispositivos.
+- Data de promulgação (5/5/2026) e finalidade vêm da revisão humana.
+
+## Suítes (Python 3.12)
+
+| Suíte | Resultado |
+|---|---|
+| ENTENDA completa | **PASS**: 180 testes (2 skips: candidato host do Batch05; integração opcional com o Relations Engine local) |
+| Batch06 | **PASS**: 28 |
+| validator v2 | **PASS**: 18 (1 skip) |
+| Batch05 | **PASS**: 26 (1 skip) |
+| ENTENDA engine | **PASS**: 19 |
+| resolver hermético | **PASS**: 9 |
+| materialização Git | **PASS**: 2 testes; 217/217 arquivos byte-idênticos; com `core.autocrlf=true`, ENTENDA sem falha fora dos 4 testes `requires_git_checkout` |
+| editorial_checks | **PASS**: 0 abertos |
+| validator v3 | regras novas com 0 alertas nos 289 aprovados anteriores e nos 82 pendentes; regressão do Batch05 sem perda (41/43 verdadeiros positivos) |
+| determinismo do builder | **PASS**: 3 builds + build no lugar byte-idênticos |
+
+## Contabilidade explícita (`ENTENDA_ENGINE/cloud_test_accounting.py`)
+
+Cada método de teste cai em exatamente uma categoria; a soma bate com o total.
+
+| Suíte | Total | PASS | FAIL | SKIPPED | NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY | NOT_COLLECTED |
+|---|---|---|---|---|---|---|
+| DEVICE_INTEGRATION | **353** | 120 | 2 | 136 | 68 | 27 |
+| LEGAL_TARGET_ID | **65** | 63 | 1 | 0 | 1 | 0 |
+
+**DEVICE_INTEGRATION** (detalhe por teste em `DEVICE_INTEGRATION_CLOUD_ACCOUNTING.json`):
+
+- **NOT_RUN 68:**
+  - 59 dependem do staging local do SD (`staging_sd_v1/…`, `staging_article_indexes…`): falhas e setUpClass.
+  - 9 comparam o firmware com tags só locais, ausentes no remoto: `lex-device-v1-physical-approved-2026-10-01` e `lex-device-v1-72-indexes-approved-2026-10-04`.
+- **NOT_COLLECTED 27:** `test_fast_track_ui`, `test_reader_state_machine` e `test_target_sync` não importam sem `staging_sd_v1/.../CF88_RUNTIME.txt`. Os métodos foram contados estaticamente.
+- **SKIPPED 136:** os próprios testes pulam por staging, dump de flash, backup do SD ou core do ESP32 ausentes. Não estão contados como PASS.
+- **FAIL 2:** `test_predeploy_a2c` `test_ec45_cross_source` e `test_fail_closed`. A cópia versionada `updater/fontes_oficiais_verificacao/EC45_2004/planalto_raw.html` tem sha `0c46fc85…` e o registrado é `76f9b562…`; nem a variante CRLF bate. É inconsistência preexistente do repositório (mesma falha no checkpoint `7c59f2e`), fora do escopo do Batch06.
+- **Ambiente:** `requests` e `beautifulsoup4` foram instalados no Python do usuário da VM (não no repositório), para que `test_runtime_a2b` rodasse (PASS).
+- **Correção do relatório anterior:** "111/282" contava só o que o unittest executou. O total real é 353 (282 executados + 27 não coletados + 44 testes que nunca rodaram porque o setUpClass falhou).
+
+**LEGAL_TARGET_ID:**
+- **NOT_RUN 1:** `CF_SEGMENTADA_V2/` local.
+- **FAIL 1:** `test_source_hash` espera o `cf.txt` legado materializado em CRLF (checkout Windows). O blob do Git é LF; LF→CRLF reproduz o hash esperado. É dependência de ambiente de checkout, não do Batch06.
