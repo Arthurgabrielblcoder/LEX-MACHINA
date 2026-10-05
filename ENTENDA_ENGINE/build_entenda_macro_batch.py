@@ -16,6 +16,7 @@ Nothing is approved: every new explanation is PENDING_HUMAN_REVIEW; AUTO_APPROVE
 Usage:
   python build_entenda_macro_batch.py derived/production_batch_07_macro [--determinism 3]
 """
+import contextlib
 import hashlib
 import json
 import re
@@ -34,13 +35,52 @@ import entenda_vigency_plan as VP  # noqa: E402
 import production_batch as PB  # noqa: E402
 import t1_batch_packets as BP  # noqa: E402
 import t1_risk as R  # noqa: E402
+import t1_second_pass as SP  # noqa: E402
 import t1_validator_v2 as V  # noqa: E402
 import t1_validator_v3 as V3  # noqa: E402
+
+sys.path.insert(0, str(ROOT / 'LEGAL_TARGET_ID'))
+import status_errata as SE  # noqa: E402
 
 KIND_PT = {'PARAGRAFO': 'paragrafo', 'PARAGRAFO_UNICO': 'paragrafo unico', 'INCISO': 'inciso', 'ALINEA': 'alinea', 'ITEM': 'item', 'CAPUT': 'caput'}
 QUEUE_ORDER = ('E_HARD_FAIL', 'D_FULL_HUMAN_REVIEW', 'C_QUICK_REVIEW', 'B_CLEAN_MEDIUM', 'A_CLEAN_LOW')
 RISK_ORDER = {'HIGH': 0, 'MEDIUM': 1, 'LOW': 2}
 CX_ORDER = {'EXTERNAL': 0, 'STRUCTURED': 1, 'SIMPLE': 2}
+
+
+HISTORY = 'history'   # preserved snapshots of earlier passes (e.g. history/pre_second_pass): versioned, never generated nor compared
+
+
+class ErrataNormContext(E.NormContext):
+    """NormContext with the target status errata of LEGAL_TARGET_ID applied (status_errata.py). The frozen status file, pinned by older
+    artifacts (Batch06 manifest, DEVICE exports), is not rewritten; the errata sits next to it as <status>_ERRATA.json and is checked against
+    its sha256 (fail closed)."""
+
+    def __init__(self, norma_id, *a, **k):
+        super().__init__(norma_id, *a, **k)
+        self.status_errata, self.status_errata_file = {}, None
+        st = self.ncfg.get('target_status')
+        if st:
+            base = self.base / st
+            errata = base.with_name(base.stem + '_ERRATA.json')
+            self.status, self.status_errata = SE.overlay(self.status, base.read_bytes(), errata)
+            self.status_errata_file = errata.relative_to(self.base).as_posix() if errata.is_file() else None
+
+
+def norm_context(norma_id):
+    return ErrataNormContext(norma_id)
+
+
+@contextlib.contextmanager
+def errata_contexts():
+    """During a macro build every NormContext (also the ones the shared selection and editorial modules create, whose code is pinned by the
+    Batch06 manifest and is not edited) carries the status errata."""
+    orig = E.NormContext
+    E.NormContext = ErrataNormContext
+    try:
+        yield
+    finally:
+        E.NormContext = orig
 
 
 JUDICIAL_REVIEW_RE = re.compile(r'\bVide\s+(ADIN|ADI|ADC|ADPF|ADO)\b[^;)]*', re.I)
@@ -51,26 +91,37 @@ class MacroBuildError(RuntimeError):
 
 
 class MacroContext(BP.Context):
-    """Macro-layer risk rule on top of t1_risk.assess (shared module untouched, Batch06 hashes preserved):
-    JUDICIAL_REVIEW_ANNOTATED -- a target in the scope of the explanation carries a "Vide ADI/ADIN/ADC/ADPF/ADO" vigency annotation, i.e.
-    the official text itself points to constitutional review of that wording; the literal reading may not be the current one, so the
-    explanation is LEGAL_RISK HIGH and goes to full human review with the external evidence status of the decision."""
+    """Macro-layer risk rules on top of t1_risk.assess (shared module untouched, Batch06 hashes preserved):
+    JUDICIAL_REVIEW_* -- a target in the scope of the explanation carries a "Vide ADI/ADIN/ADC/ADPF/ADO" vigency annotation, i.e. the
+    official text itself points to constitutional review of that wording. Second pass (t1_second_pass.py): the explanation is classified
+    CONTEXT_ONLY (MEDIUM) or REQUIRED_FOR_CORRECTNESS (HIGH, full human review); without classification it is REQUIRED (fail closed).
+    The second pass also applies the versioned transition evidence, the Lei Seca controversy-term rule, the parent/child consistency
+    check and the quick-review routing of SECOND_PASS_INPUT.json."""
+
+    def __init__(self, *a, **k):
+        super().__init__(*a, **k)
+        p = _load(self.bd / 'MACRO_SPEC.json')['packet_prefix']
+        self.transition = SP.load_transition_evidence(self.bd / f'{p}_TRANSITION_EVIDENCE.json', ROOT)
+        self.second = SP.load_input(self.bd / 'SECOND_PASS_INPUT.json')
+        self.owned = set().union(*self.owners.values()) if self.owners else set()
+        self.transition_seen, self.judicial_seen = set(), set()
+
+    def validate(self, r, lint_rows=(), editorial_rows=()):
+        fs = super().validate(r, lint_rows, editorial_rows)
+        return fs + SP.quick_findings(r, self.second) + SP.parent_child_findings(r, self.ctx, self.owned)
+
+    def judicial_hits(self, r):
+        return sorted({f"{t.split(':', 1)[1]}: {m.group(0).strip()}" for t in R.scope_targets(r, self.ctx)
+                       for ann in self.vigency.get(t, []) for m in [JUDICIAL_REVIEW_RE.search(ann)] if m})
 
     def assess(self, r, findings):
         a, cx = super().assess(r, findings)
-        hits = sorted({f"{t.split(':', 1)[1]}: {m.group(0).strip()}" for t in R.scope_targets(r, self.ctx)
-                       for ann in self.vigency.get(t, []) for m in [JUDICIAL_REVIEW_RE.search(ann)] if m})
-        if not hits:
-            return a, cx
-        reason = 'JUDICIAL_REVIEW_ANNOTATED: ' + '; '.join(hits[:3]) + (f' (+{len(hits) - 3})' if len(hits) > 3 else '')
-        a = dict(a)
-        if a['level'] != 'HIGH':
-            a['secondary'] = list(a['reasons']) if a['level'] == 'MEDIUM' else []
-            a['rules'], a['reasons'] = [], []
-        a['level'] = 'HIGH'
-        a['rules'] = list(a['rules']) + ['JUDICIAL_REVIEW_ANNOTATED']
-        a['reasons'] = list(a['reasons']) + [reason]
-        return a, cx
+        hits = self.judicial_hits(r)
+        if 'TRANSITION_OR_TEMPORAL' in a['rules']:
+            self.transition_seen.add(r['target_id'])
+        if hits:
+            self.judicial_seen.add(r['target_id'])
+        return SP.refine(a, r, hits, self.transition, self.second), cx
 
 
 def sha(p):
@@ -254,9 +305,14 @@ def checks(c, doc):
     hard = [x['target_id'] for x in doc['rows'] if x['queue'] == 'E_HARD_FAIL']
     approved_new = [r['target_id'] for r in rec if r['review_status'] != 'PENDING_HUMAN_REVIEW']
     stale = [s for s in E.stale_report(rec, c.ctx) if s['state'] != 'FRESH']
-    ok = not (div or hard or approved_new or stale)
+    # second pass: every transition signal has versioned evidence, every evidence row is used, every "Vide ADI" scope is classified
+    no_evidence = sorted(set(c.transition_seen) - set(c.transition)) if c.transition or c.second['judicial_review'] else []
+    unused_evidence = sorted(set(c.transition) - set(c.records))
+    unclassified = sorted(t for t in c.judicial_seen if t not in c.second['judicial_review']) if c.second['judicial_review'] else []
+    ok = not (div or hard or approved_new or stale or no_evidence or unused_evidence or unclassified)
     return dict(engine_contract='PASS (production_batch.validate_corpus)', lei_seca_divergence=div, hard_fail=hard, new_not_pending=approved_new,
-                stale=[s['target_id'] for s in stale], status='PASS' if ok else 'FAIL')
+                stale=[s['target_id'] for s in stale], transition_without_evidence=no_evidence, transition_evidence_unused=unused_evidence,
+                judicial_review_unclassified=unclassified, status='PASS' if ok else 'FAIL')
 
 
 def old_content_scan(ctx, ms):
@@ -286,8 +342,9 @@ def backlog(bd, ms, ctx, nm):
     L = [f"# {nm.p} — BACKLOG (não corrigido nesta missão)", '', inp.get('policy', ''), '',
          '## Regra nova aplicada ao conteúdo antigo', '',
          f"`JUDICIAL_REVIEW_ANNOTATED` (anotação Vide ADI/ADIN/ADC/ADPF/ADO no escopo) aplicada a {scan['records_checked']} registros ACTIVE dos corpora anteriores "
-         f"({', '.join(f'{k} {v}' for k, v in scan['by_review_status'].items())}). {len(scan['hits'])} registro(s) seriam LEGAL_RISK HIGH pela regra nova. "
-         'Nenhum foi alterado; a revisão fica para missão própria.', '',
+         f"({', '.join(f'{k} {v}' for k, v in scan['by_review_status'].items())}). {len(scan['hits'])} registro(s) caem na regra; pela recalibração do segundo passe cada um precisa ser classificado "
+         '`JUDICIAL_REVIEW_CONTEXT_ONLY` (MEDIUM) ou `JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS` (HIGH); sem classificação, a regra é REQUIRED (fail closed). '
+         'Nenhum foi alterado nem reclassificado; a revisão fica para missão própria.', '',
          '| Target | Status | Corpus | Anotações |', '|---|---|---|---|']
     L += [f"| `{h['target_id']}` | {h['review_status']} | {h['corpus']} | {', '.join(h['annotations'])} |" for h in scan['hits']] or ['| — | — | — | — |']
     L += ['', '## Itens registrados durante a missão', '', '| ID | Tipo | Alvo | Detalhe | Ação sugerida |', '|---|---|---|---|---|']
@@ -298,10 +355,15 @@ def backlog(bd, ms, ctx, nm):
 
 
 def build(bd):
+    with errata_contexts():
+        return _build(bd)
+
+
+def _build(bd):
     bd = Path(bd).resolve()
     ms = _load(bd / 'MACRO_SPEC.json')
     nm = Names(ms)
-    ctx = E.NormContext(ms['norma_id'])
+    ctx = norm_context(ms['norma_id'])
     assemble(bd, ms, ctx, nm)
     for n in (nm.corpus, 'index/ENTENDA_BUILD_MANIFEST.json', 'index/ENTENDA_LOOKUP.IDX', 'index/ENTENDA_PAYLOAD.DAT'):
         (bd / n).unlink(missing_ok=True)   # none of the macro explanations was human-reviewed: the corpus is regenerated from the drafts
@@ -311,7 +373,7 @@ def build(bd):
     inp = _load(bd / 'EDITORIAL_INPUT.json')
     inp.update(schema_version=1, batch_id=ms['batch_id'], triage_sheet=nm.triage_sheet,
                risk_criteria=dict(classifier='ENTENDA_ENGINE/t1_risk.py::assess + complexity (validator v3)',
-                                  LEGAL_RISK='HIGH: ' + '; '.join(R.LEGAL_HIGH) + '; JUDICIAL_REVIEW_ANNOTATED (camada macro: anotacao Vide ADI/ADIN/ADC/ADPF/ADO no escopo)', level='o campo level e o LEGAL_RISK'),
+                                  LEGAL_RISK='HIGH: ' + '; '.join(R.LEGAL_HIGH) + '; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS (camada macro: anotacao Vide ADI/ADIN/ADC/ADPF/ADO no escopo, classificada no segundo passe; CONTEXT_ONLY = MEDIUM)', level='o campo level e o LEGAL_RISK'),
                risk=BP.risk_input(c))
     _json(bd / 'EDITORIAL_REVIEW_INPUT.json', dict(sorted(inp.items())))
     EC.run(bd)
@@ -327,6 +389,11 @@ def build(bd):
     for n in nm.packets.values():
         if n not in out:
             (bd / n).unlink(missing_ok=True)
+    second = (bd / 'SECOND_PASS_INPUT.json').is_file()
+    if second:
+        jr = _load(bd / 'JURISPRUDENCE_LINK_RECOMMENDATIONS.json')['recommendations'] if (bd / 'JURISPRUDENCE_LINK_RECOMMENDATIONS.json').is_file() else []
+        out[nm.packets['full']] = SP.full_d(doc, c, nm.p, jr)
+        out[nm.packets['quick']] = SP.quick_c(doc, c, nm.p, BP.SAFE_FIX)
     out[nm.priority] = priority(doc, c, nm)
     doc['metrics'] = BP.metrics(doc, c, out)
     doc['d_ratio'] = round(doc['counts']['D_FULL_HUMAN_REVIEW'] / len(doc['rows']), 3) if doc['rows'] else 0
@@ -356,13 +423,37 @@ def build(bd):
                        determinism='ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)',
                        human_approved_t1_granted=0, status=doc['checks']['status']))
     _json(bd / nm.triage, doc)
-    (bd / nm.report).write_bytes(report(doc, sel, c, ms, nm).encode('utf-8'))
+    rep = report(doc, sel, c, ms, nm)
+    pre_f = bd / HISTORY / 'pre_second_pass' / f'{nm.p}_TRIAGE_PRE_SECOND_PASS.json'
+    diag = bd / f'{nm.p}_D_SECOND_PASS_DIAGNOSTIC.md'
+    if second:
+        pre = _load(pre_f) if pre_f.is_file() else None
+        log = SP.editorial_log(bd, nm.p, doc, c, pre)
+        _json(bd / f'{nm.p}_SECOND_PASS_EDITORIAL_LOG.json', log)
+        rep += '\n'.join(SP.report_section(doc, pre, log, (pre or {}).get('metrics', {}).get('presented_chars'))) + '\n'
+        if doc['d_ratio'] > SECOND_PASS_D_LIMIT:
+            diag.write_bytes(d_second_pass_diagnostic(doc, nm).encode('utf-8'))
+        else:
+            diag.unlink(missing_ok=True)
+    (bd / nm.report).write_bytes(rep.encode('utf-8'))
     doc['backlog'] = backlog(bd, ms, ctx, nm)
     _json(bd / nm.triage, doc)
     manifest(bd, ms, nm, doc, sel)
     if doc['checks']['status'] != 'PASS':
         raise MacroBuildError(json.dumps(doc['checks'], ensure_ascii=False))
     return doc
+
+
+SECOND_PASS_D_LIMIT = 0.2
+
+
+def d_second_pass_diagnostic(doc, nm):
+    xs = [x for x in doc['rows'] if x['queue'] == 'D_FULL_HUMAN_REVIEW']
+    L = [f'# {nm.p} — DIAGNÓSTICO DE D APÓS O SEGUNDO PASSE', '',
+         f"{len(xs)} de {len(doc['rows'])} itens em D ({100 * doc['d_ratio']:.1f}%), acima de {int(SECOND_PASS_D_LIMIT * 100)}%.", '', '## D por motivo', '']
+    L += [f'- {k}: {v}' for k, v in doc['d_reasons'].items()]
+    L += ['', '## Itens', ''] + [f"- `{x['target_id']}` — {'; '.join(x['legal_reasons'])}" for x in xs]
+    return '\n'.join(L) + '\n'
 
 
 def report(doc, sel, c, ms, nm):
@@ -418,9 +509,11 @@ def doc_spec(c):
 
 
 def manifest(bd, ms, nm, doc, sel):
-    inputs = [p for p in ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json') if (bd / p).is_file()] + sorted(str(p.relative_to(bd)) for p in (bd / 'drafts').glob('*.json'))
+    inputs = root_inputs(bd, ms) + sorted(str(p.relative_to(bd)) for p in (bd / 'drafts').glob('*.json'))
     generated = sorted(str(p.relative_to(bd)) for p in bd.rglob('*') if p.is_file() and str(p.relative_to(bd)) not in inputs
-                       and p.name not in (nm.manifest, 'DETERMINISM_EVIDENCE.json'))
+                       and p.name not in (nm.manifest, 'DETERMINISM_EVIDENCE.json') and p.relative_to(bd).parts[0] != HISTORY)
+    history = sorted(str(p.relative_to(bd)) for p in (bd / HISTORY).rglob('*') if p.is_file()) if (bd / HISTORY).is_dir() else []
+    ctx_errata = _status_errata_input(ms['norma_id'])
     _json(bd / nm.manifest, dict(
         schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'], status='CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado',
         builder='ENTENDA_ENGINE/build_entenda_macro_batch.py', validator=doc['validator'], sub_blocks_built=ms['sub_blocks_built'],
@@ -431,14 +524,31 @@ def manifest(bd, ms, nm, doc, sel):
         code_sha256_lf={p: sha_lf(HERE / p) for p in ('build_entenda_macro_batch.py', 'entenda_vigency_plan.py', 't1_batch_packets.py', 't1_risk.py',
                                                       't1_validator_v3.py', 't1_validator_v2.py', 't1_triage.py', 'editorial_checks.py',
                                                       'production_batch.py', 'entenda_engine.py')},
-        inputs={p: sha(bd / p) for p in inputs}, files={p: sha(bd / p) for p in generated}))
+        inputs={p: sha(bd / p) for p in inputs}, files={p: sha(bd / p) for p in generated},
+        **(dict(status_errata=ctx_errata) if ctx_errata else {}), **(dict(history={p: sha(bd / p) for p in history}) if history else {})))
+
+
+def _status_errata_input(norma_id):
+    ctx_cfg = json.loads((HERE / 'entenda_config.json').read_text(encoding='utf-8'))['norms'][norma_id]
+    if not ctx_cfg.get('target_status'):
+        return {}
+    base = ROOT / ctx_cfg['target_status']
+    p = base.with_name(base.stem + '_ERRATA.json')
+    return {p.relative_to(ROOT).as_posix(): sha(p)} if p.is_file() else {}
+
+
+def root_inputs(bd, ms):
+    """Versioned editorial inputs at the batch root (besides drafts/ and history/)."""
+    names = ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json', 'SECOND_PASS_INPUT.json',
+             f"{ms['packet_prefix']}_TRANSITION_EVIDENCE.json")
+    return [p for p in names if (Path(bd) / p).is_file()]
 
 
 def determinism(bd, n=3):
     bd = Path(bd).resolve()
     ms = _load(bd / 'MACRO_SPEC.json')
     nm = Names(ms)
-    inputs = [p for p in ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json') if (bd / p).is_file()]
+    inputs = root_inputs(bd, ms)
     runs = []
     with tempfile.TemporaryDirectory(prefix='macro_det_') as tmp:
         for i in range(n):
@@ -446,9 +556,12 @@ def determinism(bd, n=3):
             shutil.copytree(bd / 'drafts', td / 'drafts')   # versioned drafts, critic logs and pass-1 inputs (drafts/pass1)
             for f in inputs:
                 shutil.copy(bd / f, td / f)
+            if (bd / HISTORY).is_dir():
+                shutil.copytree(bd / HISTORY, td / HISTORY)   # versioned snapshots of earlier passes (read, never generated)
             build(td)
-            runs.append({str(p.relative_to(td)): sha(p) for p in td.rglob('*') if p.is_file()})
-    inplace = {str(p.relative_to(bd)): sha(p) for p in bd.rglob('*') if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json'}
+            runs.append({str(p.relative_to(td)): sha(p) for p in td.rglob('*') if p.is_file() and p.relative_to(td).parts[0] != HISTORY})
+    inplace = {str(p.relative_to(bd)): sha(p) for p in bd.rglob('*') if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json'
+               and p.relative_to(bd).parts[0] != HISTORY}
     differing = sorted({f for r in runs for f in set(r) | set(inplace) if r.get(f) != inplace.get(f)})
     ev = dict(schema_version=1, batch_id=ms['batch_id'], runs=n, byte_identical=not differing, differing_files=differing, files=len(inplace),
               sha256=dict(sorted(inplace.items())), sub_blocks_built=ms['sub_blocks_built'],
