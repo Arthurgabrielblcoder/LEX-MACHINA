@@ -4,16 +4,16 @@ Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macr
 
 Config de texto: `ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json`.
 
-Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C, MACRO_08_D, MACRO_08_E, MACRO_08_F.
+Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C, MACRO_08_D, MACRO_08_E, MACRO_08_F, MACRO_08_G.
 
 ## Seleção (lote inteiro)
 
 | | |
 |---|---|
-| Artigos no escopo | 112 explicados/avaliados no SELECTION_REPORT + 62 SKIP de artigo inteiro (SKIP_REGISTER) |
-| Targets analisados | 848 (785 vigentes; excluídos: EXCLUDED_HISTORICAL 18, EXCLUDED_REVOKED 45) |
-| SELECT | 148 = 147 novas + 1 reutilizada(s) já aprovada(s) |
-| SKIP | 637 dispositivos (com motivo) + 62 artigos inteiros |
+| Artigos no escopo | 136 explicados/avaliados no SELECTION_REPORT + 67 SKIP de artigo inteiro (SKIP_REGISTER) |
+| Targets analisados | 1082 (926 vigentes; excluídos: EXCLUDED_HISTORICAL 85, EXCLUDED_REVOKED 71) |
+| SELECT | 162 = 161 novas + 1 reutilizada(s) já aprovada(s) |
+| SKIP | 764 dispositivos (com motivo) + 67 artigos inteiros |
 
 ## Por sub-bloco
 
@@ -25,73 +25,75 @@ Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C, MACRO_08_D, MACRO_0
 | MACRO_08_D | ADCT | 9 | 22 | 53 | 9 | 44 | 9 | 1/3/5 | 1/3/0/5/0 | 13 |
 | MACRO_08_E | ADCT | 13 | 19 | 103 | 14 | 89 | 14 | 6/1/7 | 4/1/2/7/0 | 20 |
 | MACRO_08_F | ADCT | 11 | 21 | 48 | 11 | 37 | 11 | 9/0/2 | 9/0/0/2/0 | 21 |
+| MACRO_08_G | ADCT | 24 | 5 | 141 | 14 | 127 | 14 | 11/1/2 | 11/0/1/2/0 | 23 |
 
 ## Por segmento
 
 | Segmento | Novas | LOW/MED/HIGH | SIMPLE/STRUCT/EXT | A/B/C/D/E |
 |---|---|---|---|---|
 | CORPO | 113 | 88/21/4 | 2/66/45 | 79/19/11/4/0 |
-| ADCT | 34 | 16/4/14 | 0/12/22 | 14/4/2/14/0 |
+| ADCT | 48 | 27/5/16 | 0/21/27 | 25/4/3/16/0 |
 
 ## Mapa temporal (ADCT)
 
 | Classe | Artigos |
 |---|---|
-| EFFECT_EXHAUSTED | 38 |
-| EXTERNAL_STATUS_REQUIRED | 33 |
-| NAO_CLASSIFICADO | 43 |
-| OPERATIVE_CURRENT | 13 |
-| OPERATIVE_TRANSITION | 6 |
-| PARTIALLY_OPERATIVE | 5 |
+| EFFECT_EXHAUSTED | 39 |
+| EXTERNAL_STATUS_REQUIRED | 37 |
+| NAO_CLASSIFICADO | 24 |
+| OPERATIVE_CURRENT | 19 |
+| OPERATIVE_TRANSITION | 13 |
+| PARTIALLY_OPERATIVE | 6 |
 | REVOKED | 10 |
 
 ## Dois eixos e filas (lote)
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
-| LOW | 104 | | SIMPLE | 2 |
-| MEDIUM | 25 | | STRUCTURED | 78 |
-| HIGH | 18 | | EXTERNAL | 67 |
+| LOW | 115 | | SIMPLE | 2 |
+| MEDIUM | 26 | | STRUCTURED | 87 |
+| HIGH | 20 | | EXTERNAL | 72 |
 
 | Fila | Itens |
 |---|---|
-| A_CLEAN_LOW | 93 |
+| A_CLEAN_LOW | 104 |
 | B_CLEAN_MEDIUM | 23 |
-| C_QUICK_REVIEW | 13 |
-| D_FULL_HUMAN_REVIEW | 18 |
+| C_QUICK_REVIEW | 14 |
+| D_FULL_HUMAN_REVIEW | 20 |
 | E_HARD_FAIL | 0 |
 
-D = 12.2% das novas.
-Jurisprudência: CONTEXT_ONLY 23, NONE 122, REQUIRED_FOR_CORRECTNESS 2.
+D = 12.4% das novas.
+Jurisprudência: CONTEXT_ONLY 25, NONE 134, REQUIRED_FOR_CORRECTNESS 2.
 
 ## Motivos dos D
 
 - CONSTITUTIONAL_AMBIGUITY: 1
 - INTERPRETIVE_CONTROVERSY: 1
-- JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: 1
+- JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: 2
 - JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 2
 - SANCTION_WITH_INTERPRETATION: 1
-- TEMPORAL_STATUS_UNRESOLVED: 15
+- TEMPORAL_STATUS_UNRESOLVED: 16
 
 ## Achados REVIEW_REQUIRED
 
-- EXTERNAL_FACT_NEEDS_PROVENANCE: 2
+- EXTERNAL_FACT_NEEDS_PROVENANCE: 5
 - LIST_ITEM_POSSIBLY_DROPPED: 16
 - PERMISSION_NOT_IN_TEXT: 1
+- RESSALVA_OMITTED_IN_SUMMARY: 1
 
 ## Volume para o humano
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 204.274 |
-| Modelo antigo (pacote completo de todos os itens) | 448.851 |
-| **Apresentado ao humano (pacotes + prioridade)** | **189.428** |
-| — MACRO08_COMPACT_AB_REVIEW.md | 89.779 |
-| — MACRO08_FULL_D_REVIEW.md | 70.689 |
+| Rascunhos (5 seções + glossário) | 225.414 |
+| Modelo antigo (pacote completo de todos os itens) | 515.708 |
+| **Apresentado ao humano (pacotes + prioridade)** | **225.158** |
+| — MACRO08_COMPACT_AB_REVIEW.md | 97.777 |
+| — MACRO08_FULL_D_REVIEW.md | 95.822 |
 | — MACRO08_HARD_FAIL_REPORT.md | 119 |
-| — MACRO08_HUMAN_REVIEW_PRIORITY.md | 20.410 |
-| — MACRO08_QUICK_C_REVIEW.md | 8.431 |
-| Redução vs. modelo antigo | 259.423 (57.8%) |
+| — MACRO08_HUMAN_REVIEW_PRIORITY.md | 22.451 |
+| — MACRO08_QUICK_C_REVIEW.md | 8.989 |
+| Redução vs. modelo antigo | 290.550 (56.3%) |
 
 ## Checks estruturais
 

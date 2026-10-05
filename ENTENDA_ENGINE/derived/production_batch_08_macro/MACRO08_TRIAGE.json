@@ -23,30 +23,30 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 93,
+  "A_CLEAN_LOW": 104,
   "B_CLEAN_MEDIUM": 23,
-  "C_QUICK_REVIEW": 13,
-  "D_FULL_HUMAN_REVIEW": 18,
+  "C_QUICK_REVIEW": 14,
+  "D_FULL_HUMAN_REVIEW": 20,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 104,
-  "MEDIUM": 25,
-  "HIGH": 18
+  "LOW": 115,
+  "MEDIUM": 26,
+  "HIGH": 20
  },
  "complexity_counts": {
-  "STRUCTURED": 78,
-  "EXTERNAL": 67,
+  "STRUCTURED": 87,
+  "EXTERNAL": 72,
   "SIMPLE": 2
  },
  "jurisprudence_counts": {
-  "NONE": 122,
-  "CONTEXT_ONLY": 23,
+  "NONE": 134,
+  "CONTEXT_ONLY": 25,
   "REQUIRED_FOR_CORRECTNESS": 2
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 93,
+   "A_CLEAN_LOW": 104,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 11,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -55,7 +55,7 @@
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 23,
-   "C_QUICK_REVIEW": 2,
+   "C_QUICK_REVIEW": 3,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 18,
+   "D_FULL_HUMAN_REVIEW": 20,
    "E_HARD_FAIL": 0
   }
  },
@@ -76,17 +76,17 @@
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 65,
+   "A_CLEAN_LOW": 74,
    "B_CLEAN_MEDIUM": 3,
    "C_QUICK_REVIEW": 9,
    "D_FULL_HUMAN_REVIEW": 1,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 26,
+   "A_CLEAN_LOW": 28,
    "B_CLEAN_MEDIUM": 20,
-   "C_QUICK_REVIEW": 4,
-   "D_FULL_HUMAN_REVIEW": 17,
+   "C_QUICK_REVIEW": 5,
+   "D_FULL_HUMAN_REVIEW": 19,
    "E_HARD_FAIL": 0
   }
  },
@@ -3707,6 +3707,443 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.92",
+   "title": "ADCT, art. 92 — Mais dez anos para a Zona Franca",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.92:CAPUT: Vide Decreto n. 7.212, de 2010)",
+    "camada externa: nota externa",
+    "deadline: dez anos",
+    "number_or_percentage: dez",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "detail": "designa a materia (objeto da lei/medida), nao finalidade"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "25 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "35 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "25 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "50",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.92-A",
+   "title": "ADCT, art. 92-A — Mais cinquenta anos para a Zona Franca",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: cinquenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 92",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_significa",
+     "match": "10 anos, 25 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.92-B",
+   "title": "ADCT, art. 92-B — Zona Franca na reforma tributária",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: três",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40, 126, 149, 156",
+    "overview com 11 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.98",
+   "title": "ADCT, art. 98 — Defensores públicos proporcionais à demanda",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: oito",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.99",
+   "title": "ADCT, art. 99 — Partilha do ICMS nas vendas a consumidor de outro Estado",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "diferença entre a alíquota interna e a interestadual",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "exemplo_pratico",
+     "match": "diferença entre a alíquota interna e a interestadual",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.102",
+   "title": "ADCT, art. 102 — Ordem de pagamento no regime especial",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 100, 101",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "5",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.103",
+   "title": "ADCT, art. 103 — Proteções e limites durante o regime especial",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "exception: exceto",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 101",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.104",
+   "title": "ADCT, art. 104 — Sanções pela falta de repasse no regime especial",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: exceto",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 101, 158",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da legislação de responsabilidade fiscal e de improbidade",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.105",
+   "title": "ADCT, art. 105 — Compensação de precatórios com dívida ativa",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: vinte dias",
+    "number_or_percentage: cento",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 101",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.113",
+   "title": "ADCT, art. 113 — Impacto orçamentário de novas despesas",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.115",
+   "title": "ADCT, art. 115 — Parcelamento de dívidas com regimes próprios",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 9, 40",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "até 31 de agosto de 2025 inclusive os",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -5442,6 +5879,92 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.101",
+   "title": "ADCT, art. 101 — Regime especial de precatórios até 2029",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_E",
+    "SENSITIVE_THEME: SENSITIVE_THEME: sob pena",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7047\")",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064 -- A anotacao \"Vide ADI 7047; Vide ADI 7064\" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION)."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "quorum: um terço",
+    "deadline: sessenta dias",
+    "number_or_percentage: doze",
+    "exception: excetuad",
+    "law_dependency: previstos em lei",
+    "redacao de emenda constitucional (6 anotacao(oes))",
+    "remissao: arts. 20, 52, 97, 100, 167",
+    "overview com 15 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7047",
+     "sentence": "A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064;",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7047",
+     "sentence": "A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064;",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "em conta especial do tribunal de justiça local",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": [
+    "ADI 7047",
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "EXTERNAL_FACT_NEEDS_PROVENANCE (ADI 7047)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
    "target_id": "CF88:ART.195:PAR.15",
    "title": "Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços",
    "role": "BLOCK",
@@ -6265,10 +6788,10 @@
    ],
    "info": [
     {
-     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "code": "NUMBER_FROM_OTHER_DEVICE",
      "section": "exemplo_pratico",
-     "match": "1%",
-     "detail": "numero do exemplo nao esta no texto"
+     "match": "1% ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
     }
    ],
    "lint": [
@@ -6280,44 +6803,179 @@
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.97",
+   "title": "ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.97:CAPUT: Vide Emenda Constitucional n. 62, de 2009)",
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "exception: exceto",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 20, 33, 78, 100, 201",
+    "overview com 52 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a partir de 1 de agosto de 2025",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "RESSALVA_OMITTED_IN_SUMMARY",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ressalvados",
+     "sentence": "O § 16, em redação de 2025, determina que, a partir de 1º de agosto de 2025, os requisitórios contra Estados, Distrito Federal e Municípios sejam atualizados pe",
+     "detail": "ART.97:PAR.9:INC.II: \"ressalvados aqueles cuja exigibilidade esteja suspensa nos termos da l\" nao aparece na explicacao que resume o dispositivo"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED",
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.107-A",
+   "title": "ADCT, art. 107-A — Limite para pagamento de precatórios até 2026",
+   "role": "OVERVIEW",
+   "sub_block": "G",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem \"Vide ADI 7064\" (e \"Vide MI 7300\"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION)."
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300; o resultado e o alcance das decisões pertencem à camada JURIS",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7064\")"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.107-A:INC.II: Vide MI 7300; ART.107-A:INC.II: Vide ADI 7064)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "deadline: dois anos",
+    "number_or_percentage: %",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 6, 100, 107, 194",
+    "overview com 18 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7064",
+     "sentence": "As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300;",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "2016 incluídos os restos a pagar pagos corrigido",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": [
+    "ADI 7064",
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem \"Vide ADI 7064\" (e \"Vide MI 7300\"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION).",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
   }
  ],
  "d_reasons": {
   "CONSTITUTIONAL_AMBIGUITY": 1,
   "INTERPRETIVE_CONTROVERSY": 1,
-  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 1,
+  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 2,
   "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 2,
   "SANCTION_WITH_INTERPRETATION": 1,
-  "TEMPORAL_STATUS_UNRESOLVED": 15
+  "TEMPORAL_STATUS_UNRESOLVED": 16
  },
  "finding_counts": {
-  "EXTERNAL_FACT_NEEDS_PROVENANCE": 2,
+  "EXTERNAL_FACT_NEEDS_PROVENANCE": 5,
   "LIST_ITEM_POSSIBLY_DROPPED": 16,
-  "PERMISSION_NOT_IN_TEXT": 1
+  "PERMISSION_NOT_IN_TEXT": 1,
+  "RESSALVA_OMITTED_IN_SUMMARY": 1
  },
  "refined_false_positive_counts": {
-  "TELEOLOGY_SPECULATIVE": 7,
+  "TELEOLOGY_SPECULATIVE": 8,
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 204274,
-  "old_model_full_package_chars": 448851,
-  "presented_chars": 189428,
+  "total_draft_chars": 225414,
+  "old_model_full_package_chars": 515708,
+  "presented_chars": 225158,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 89779,
-   "MACRO08_FULL_D_REVIEW.md": 70689,
+   "MACRO08_COMPACT_AB_REVIEW.md": 97777,
+   "MACRO08_FULL_D_REVIEW.md": 95822,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 20410,
-   "MACRO08_QUICK_C_REVIEW.md": 8431
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 22451,
+   "MACRO08_QUICK_C_REVIEW.md": 8989
   },
-  "reduction_abs": 259423,
-  "reduction_pct": 57.8
+  "reduction_abs": 290550,
+  "reduction_pct": 56.3
  },
- "d_ratio": 0.122,
+ "d_ratio": 0.124,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 104,
+  "eligible": 111,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -6439,6 +7097,19 @@
     "NUMERO": 3,
     "TELEOLOGIA": 1
    }
+  },
+  "G": {
+   "corrections": 23,
+   "by_category": {
+    "AFIRMACAO_UNIVERSAL": 1,
+    "COPIA_DA_LEI_SECA": 7,
+    "FRASE_LONGA": 2,
+    "LISTA_INCOMPLETA": 1,
+    "MODALIDADE": 2,
+    "NOTA_JURISPRUDENCIA": 2,
+    "NUMERO": 5,
+    "RESSALVA_OMITIDA": 3
+   }
   }
  },
  "checks": {
@@ -6482,31 +7153,31 @@
    }
   },
   "ADCT": {
-   "new_explanations": 34,
+   "new_explanations": 48,
    "roles": {
     "BLOCK": 1,
-    "OVERVIEW": 33
+    "OVERVIEW": 47
    },
    "queues": {
-    "A_CLEAN_LOW": 14,
+    "A_CLEAN_LOW": 25,
     "B_CLEAN_MEDIUM": 4,
-    "C_QUICK_REVIEW": 2,
-    "D_FULL_HUMAN_REVIEW": 14,
+    "C_QUICK_REVIEW": 3,
+    "D_FULL_HUMAN_REVIEW": 16,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 16,
-    "MEDIUM": 4,
-    "HIGH": 14
+    "LOW": 27,
+    "MEDIUM": 5,
+    "HIGH": 16
    },
    "verification_complexity": {
     "SIMPLE": 0,
-    "STRUCTURED": 12,
-    "EXTERNAL": 22
+    "STRUCTURED": 21,
+    "EXTERNAL": 27
    },
    "jurisprudence": {
-    "CONTEXT_ONLY": 6,
-    "NONE": 27,
+    "CONTEXT_ONLY": 8,
+    "NONE": 39,
     "REQUIRED_FOR_CORRECTNESS": 1
    }
   }

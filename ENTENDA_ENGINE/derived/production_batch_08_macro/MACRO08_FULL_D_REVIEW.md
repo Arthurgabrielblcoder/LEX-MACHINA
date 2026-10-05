@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO HUMANA COMPLETA (fila D)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 18 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 20 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
 
 ## Índice
 
@@ -22,6 +22,8 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 18 itens · nenhum aprovado. Só itens com L
 16. [E] `ADCT:ART.60-A` — ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb · TEMPORAL_STATUS_UNRESOLVED
 17. [F] `ADCT:ART.79` — ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza · TEMPORAL_STATUS_UNRESOLVED
 18. [F] `ADCT:ART.88` — ADCT, art. 88 — Alíquota mínima do ISS · TEMPORAL_STATUS_UNRESOLVED
+19. [G] `ADCT:ART.97` — ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização · TEMPORAL_STATUS_UNRESOLVED
+20. [G] `ADCT:ART.107-A` — ADCT, art. 107-A — Limite para pagamento de precatórios até 2026 · JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS
 
 ## 1. Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços
 
@@ -973,6 +975,174 @@ A aplicação do artigo depende de um dado que o texto não fornece: a disciplin
 **Alertas do validator v2**
 
 - EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "i e iii do 3 do art 156" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 19. ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização
+
+- `ADCT:ART.97` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.97/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos.
+- Sub-bloco G · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos.
+- Dispositivos citados (runtime): `ART.100:PAR.15` Sem prejuízo do disposto neste artigo, lei complementar a esta Constituição Federal poderá estabelecer regime especial para pagamento de crédito de precatórios…
+
+**Lei Seca**
+
+- `ADCT:ART.97:CAPUT`: Até que seja editada a lei complementar de que trata o § 15 do art. 100 da Constituição Federal, os Estados, o Distrito Federal e os Municípios que, na data de publicação desta Emenda Constitucional, estejam em mora na quitação de precatórios vencidos, relativos às suas administrações direta e indireta, inclusive os emitidos durante o período de vigência do regime especial instituído por este artigo, farão esses pagamentos de acordo com as normas a seguir estabelecidas, sendo inaplicável o disposto no art. 100 desta Constituição Federal, exceto em seus §§ 2º, 3º, 9º, 10, 11, 12, 13 e 14, e sem prejuízo dos acordos de juízos conciliatórios já formalizados na data de promulgação desta Emenda Constitucional.
+- `ADCT:ART.97:PAR.1`: Os Estados, o Distrito Federal e os Municípios sujeitos ao regime especial de que trata este artigo optarão, por meio de ato do Poder Executivo:
+- `ADCT:ART.97:PAR.1:INC.I`: pelo depósito em conta especial do valor referido pelo § 2º deste artigo; ou
+- `ADCT:ART.97:PAR.1:INC.II`: pela adoção do regime especial pelo prazo de até 15 (quinze) anos, caso em que o percentual a ser depositado na conta especial a que se refere o § 2º deste artigo corresponderá, anualmente, ao saldo total dos precatórios devidos, acrescido do índice oficial de remuneração básica da caderneta de poupança e de juros simples no mesmo percentual de juros incidentes sobre a caderneta de poupança para fins de compensação da mora, excluída a incidência de juros compensatórios, diminuído das amortizações e dividido pelo número de anos restantes no regime especial de pagamento.
+- `ADCT:ART.97:PAR.2`: Para saldar os precatórios, vencidos e a vencer, pelo regime especial, os Estados, o Distrito Federal e os Municípios devedores depositarão mensalmente, em conta especial criada para tal fim, 1/12 (um doze avos) do valor calculado percentualmente sobre as respectivas receitas correntes líquidas, apuradas no segundo mês anterior ao mês de pagamento, sendo que esse percentual, calculado no momento de opção pelo regime e mantido fixo até o final do prazo a que se refere o § 14 deste artigo, será:
+- `ADCT:ART.97:PAR.2:INC.I`: para os Estados e para o Distrito Federal:
+- `ADCT:ART.97:PAR.2:INC.I:AL.a`: de, no mínimo, 1,5% (um inteiro e cinco décimos por cento), para os Estados das regiões Norte, Nordeste e Centro-Oeste, além do Distrito Federal, ou cujo estoque de precatórios pendentes das suas administrações direta e indireta corresponder a até 35% (trinta e cinco por cento) do total da receita corrente líquida;
+- `ADCT:ART.97:PAR.2:INC.I:AL.b`: de, no mínimo, 2% (dois por cento), para os Estados das regiões Sul e Sudeste, cujo estoque de precatórios pendentes das suas administrações direta e indireta corresponder a mais de 35% (trinta e cinco por cento) da receita corrente líquida;
+- `ADCT:ART.97:PAR.2:INC.II`: para Municípios:
+- `ADCT:ART.97:PAR.2:INC.II:AL.a`: de, no mínimo, 1% (um por cento), para Municípios das regiões Norte, Nordeste e Centro-Oeste, ou cujo estoque de precatórios pendentes das suas administrações direta e indireta corresponder a até 35% (trinta e cinco por cento) da receita corrente líquida;
+- `ADCT:ART.97:PAR.2:INC.II:AL.b`: de, no mínimo, 1,5% (um inteiro e cinco décimos por cento), para Municípios das regiões Sul e Sudeste, cujo estoque de precatórios pendentes das suas administrações direta e indireta corresponder a mais de 35 % (trinta e cinco por cento) da receita corrente líquida.
+- `ADCT:ART.97:PAR.3`: Entende-se como receita corrente líquida, para os fins de que trata este artigo, o somatório das receitas tributárias, patrimoniais, industriais, agropecuárias, de contribuições e de serviços, transferências correntes e outras receitas correntes, incluindo as oriundas do § 1º do art. 20 da Constituição Federal, verificado no período compreendido pelo mês de referência e os 11 (onze) meses anteriores, excluídas as duplicidades, e deduzidas:
+- `ADCT:ART.97:PAR.3:INC.I`: nos Estados, as parcelas entregues aos Municípios por determinação constitucional;
+- `ADCT:ART.97:PAR.3:INC.II`: nos Estados, no Distrito Federal e nos Municípios, a contribuição dos servidores para custeio do seu sistema de previdência e assistência social e as receitas provenientes da compensação financeira referida no § 9º do art. 201 da Constituição Federal.
+- `ADCT:ART.97:PAR.4`: As contas especiais de que tratam os §§ 1º e 2º serão administradas pelo Tribunal de Justiça local, para pagamento de precatórios expedidos pelos tribunais.
+- `ADCT:ART.97:PAR.5`: Os recursos depositados nas contas especiais de que tratam os §§ 1º e 2º deste artigo não poderão retornar para Estados, Distrito Federal e Municípios devedores.
+- `ADCT:ART.97:PAR.6`: Pelo menos 50% (cinquenta por cento) dos recursos de que tratam os §§ 1º e 2º deste artigo serão utilizados para pagamento de precatórios em ordem cronológica de apresentação, respeitadas as preferências definidas no § 1º, para os requisitórios do mesmo ano e no § 2º do art. 100, para requisitórios de todos os anos.
+- `ADCT:ART.97:PAR.7`: Nos casos em que não se possa estabelecer a precedência cronológica entre 2 (dois) precatórios, pagar-se-á primeiramente o precatório de menor valor.
+- `ADCT:ART.97:PAR.8`: A aplicação dos recursos restantes dependerá de opção a ser exercida por Estados, Distrito Federal e Municípios devedores, por ato do Poder Executivo, obedecendo à seguinte forma, que poderá ser aplicada isoladamente ou simultaneamente:
+- `ADCT:ART.97:PAR.8:INC.I`: destinados ao pagamento dos precatórios por meio do leilão;
+- `ADCT:ART.97:PAR.8:INC.II`: destinados a pagamento a vista de precatórios não quitados na forma do § 6º e do inciso I, em ordem única e crescente de valor por precatório;
+- `ADCT:ART.97:PAR.8:INC.III`: destinados a pagamento por acordo direto com os credores, na forma estabelecida por lei própria da entidade devedora, que poderá prever criação e forma de funcionamento de câmara de conciliação.
+- `ADCT:ART.97:PAR.9`: Os leilões de que trata o inciso I do § 8º deste artigo:
+- `ADCT:ART.97:PAR.9:INC.I`: serão realizados por meio de sistema eletrônico administrado por entidade autorizada pela Comissão de Valores Mobiliários ou pelo Banco Central do Brasil;
+- `ADCT:ART.97:PAR.9:INC.II`: admitirão a habilitação de precatórios, ou parcela de cada precatório indicada pelo seu detentor, em relação aos quais não esteja pendente, no âmbito do Poder Judiciário, recurso ou impugnação de qualquer natureza, permitida por iniciativa do Poder Executivo a compensação com débitos líquidos e certos, inscritos ou não em dívida ativa e constituídos contra devedor originário pela Fazenda Pública devedora até a data da expedição do precatório, ressalvados aqueles cuja exigibilidade esteja suspensa nos termos da legislação, ou que já tenham sido objeto de abatimento nos termos do § 9º do art. 100 da Constituição Federal;
+- `ADCT:ART.97:PAR.9:INC.III`: ocorrerão por meio de oferta pública a todos os credores habilitados pelo respectivo ente federativo devedor;
+- `ADCT:ART.97:PAR.9:INC.IV`: considerarão automaticamente habilitado o credor que satisfaça o que consta no inciso II;
+- `ADCT:ART.97:PAR.9:INC.V`: serão realizados tantas vezes quanto necessário em função do valor disponível;
+- `ADCT:ART.97:PAR.9:INC.VI`: a competição por parcela do valor total ocorrerá a critério do credor, com deságio sobre o valor desta;
+- `ADCT:ART.97:PAR.9:INC.VII`: ocorrerão na modalidade deságio, associado ao maior volume ofertado cumulado ou não com o maior percentual de deságio, pelo maior percentual de deságio, podendo ser fixado valor máximo por credor, ou por outro critério a ser definido em edital;
+- `ADCT:ART.97:PAR.9:INC.VIII`: o mecanismo de formação de preço constará nos editais publicados para cada leilão;
+- `ADCT:ART.97:PAR.9:INC.IX`: a quitação parcial dos precatórios será homologada pelo respectivo Tribunal que o expediu.
+- `ADCT:ART.97:PAR.10`: No caso de não liberação tempestiva dos recursos de que tratam o inciso II do § 1º e os §§ 2º e 6º deste artigo:
+- `ADCT:ART.97:PAR.10:INC.I`: haverá o sequestro de quantia nas contas de Estados, Distrito Federal e Municípios devedores, por ordem do Presidente do Tribunal referido no § 4º, até o limite do valor não liberado;
+- `ADCT:ART.97:PAR.10:INC.II`: constituir-se-á, alternativamente, por ordem do Presidente do Tribunal requerido, em favor dos credores de precatórios, contra Estados, Distrito Federal e Municípios devedores, direito líquido e certo, autoaplicável e independentemente de regulamentação, à compensação automática com débitos líquidos lançados por esta contra aqueles, e, havendo saldo em favor do credor, o valor terá automaticamente poder liberatório do pagamento de tributos de Estados, Distrito Federal e Municípios devedores, até onde se compensarem;
+- `ADCT:ART.97:PAR.10:INC.III`: o chefe do Poder Executivo responderá na forma da legislação de responsabilidade fiscal e de improbidade administrativa;
+- `ADCT:ART.97:PAR.10:INC.IV`: enquanto perdurar a omissão, a entidade devedora:
+- `ADCT:ART.97:PAR.10:INC.IV:AL.a`: não poderá contrair empréstimo externo ou interno;
+- `ADCT:ART.97:PAR.10:INC.IV:AL.b`: ficará impedida de receber transferências voluntárias;
+- `ADCT:ART.97:PAR.10:INC.V`: a União reterá os repasses relativos ao Fundo de Participação dos Estados e do Distrito Federal e ao Fundo de Participação dos Municípios, e os depositará nas contas especiais referidas no § 1º, devendo sua utilização obedecer ao que prescreve o § 5º, ambos deste artigo.
+- `ADCT:ART.97:PAR.11`: No caso de precatórios relativos a diversos credores, em litisconsórcio, admite-se o desmembramento do valor, realizado pelo Tribunal de origem do precatório, por credor, e, por este, a habilitação do valor total a que tem direito, não se aplicando, neste caso, a regra do § 3º do art. 100 da Constituição Federal.
+- `ADCT:ART.97:PAR.12`: Se a lei a que se refere o § 4º do art. 100 não estiver publicada em até 180 (cento e oitenta) dias, contados da data de publicação desta Emenda Constitucional, será considerado, para os fins referidos, em relação a Estados, Distrito Federal e Municípios devedores, omissos na regulamentação, o valor de:
+- `ADCT:ART.97:PAR.12:INC.I`: 40 (quarenta) salários mínimos para Estados e para o Distrito Federal;
+- `ADCT:ART.97:PAR.12:INC.II`: 30 (trinta) salários mínimos para Municípios.
+- `ADCT:ART.97:PAR.13`: Enquanto Estados, Distrito Federal e Municípios devedores estiverem realizando pagamentos de precatórios pelo regime especial, não poderão sofrer sequestro de valores, exceto no caso de não liberação tempestiva dos recursos de que tratam o inciso II do § 1º e o § 2º deste artigo.
+- `ADCT:ART.97:PAR.14`: O regime especial de pagamento de precatório previsto no inciso I do § 1º vigorará enquanto o valor dos precatórios devidos for superior ao valor dos recursos vinculados, nos termos do § 2º, ambos deste artigo, ou pelo prazo fixo de até 15 (quinze) anos, no caso da opção prevista no inciso II do § 1º.
+- `ADCT:ART.97:PAR.15`: Os precatórios parcelados na forma do art. 33 ou do art. 78 deste Ato das Disposições Constitucionais Transitórias e ainda pendentes de pagamento ingressarão no regime especial com o valor atualizado das parcelas não pagas relativas a cada precatório, bem como o saldo dos acordos judiciais e extrajudiciais.
+- `ADCT:ART.97:PAR.16`: A partir de 1º de agosto de 2025, a atualização de valores de requisitórios expedidos contra os Estados, o Distrito Federal e os Municípios, a partir da sua expedição até o efetivo pagamento, será feita pela variação do Índice Nacional de Preços ao Consumidor Amplo (IPCA), e, para fins de compensação da mora, desde a expedição, incidirão juros simples de 2% a.a. (dois por cento ao ano), ficando excluída a incidência de juros compensatórios.
+- `ADCT:ART.97:PAR.16-A`: Caso o índice de atualização e juros calculado nos termos do § 16 deste artigo represente valor superior à taxa referencial do Sistema Especial de Liquidação e de Custódia (Selic), esta deve ser aplicada em substituição àquele.
+- `ADCT:ART.97:PAR.17`: O valor que exceder o limite previsto no § 2º do art. 100 da Constituição Federal será pago, durante a vigência do regime especial, na forma prevista nos §§ 6º e 7º ou nos incisos I, II e III do § 8º deste artigo, devendo os valores dispendidos para o atendimento do disposto no § 2º do art. 100 da Constituição Federal serem computados para efeito do § 6º deste artigo.
+- `ADCT:ART.97:PAR.18`: Durante a vigência do regime especial a que se refere este artigo, gozarão também da preferência a que se refere o § 6º os titulares originais de precatórios que tenham completado 60 (sessenta) anos de idade até a data da promulgação desta Emenda Constitucional.
+
+**O QUE DIZ**
+
+O art. 97 do ADCT criou um regime especial de pagamento de precatórios para Estados, Distrito Federal e Municípios que estavam em mora na data da emenda de 2009, até a edição da lei complementar do art. 100, § 15, afastando o art. 100, exceto alguns de seus parágrafos. O ente escolhia entre depositar mensalmente um percentual da receita corrente líquida, fixado nos §§ 2º e 3º, ou pagar o saldo em até quinze anos (§ 1º). As contas especiais ficam sob administração do Tribunal de Justiça (§ 4º), e ao menos 50% dos recursos segue a ordem cronológica (§ 6º); o restante pode ir para leilões, pagamento à vista em ordem crescente de valor ou acordos diretos (§§ 8º e 9º). O § 10 prevê sanções se os recursos não forem liberados no tempo certo. O § 16, em redação de 2025, determina que, a partir de 1º de agosto de 2025, os requisitórios contra Estados, Distrito Federal e Municípios sejam atualizados pelo IPCA, com juros simples de 2% ao ano, sem juros compensatórios. O § 16-A manda aplicar a Selic quando ela for menor que esse cálculo.
+
+**O QUE SIGNIFICA**
+
+O artigo tem duas camadas.
+
+A primeira é o regime especial criado em 2009 para quem acumulava dívidas judiciais em atraso. Ele convive com o regime posterior do art. 101 do ADCT, e sua aplicação atual depende de dados que o texto não fornece.
+
+A segunda é a regra de correção dos §§ 16 e 16-A, reescrita em 2025: desde agosto de 2025, a dívida judicial de Estados, Distrito Federal e Municípios é corrigida pelo IPCA mais 2% ao ano, com teto na Selic.
+
+**EXEMPLO PRÁTICO**
+
+Um credor tem requisitório contra um Município expedido em 2026 (data ilustrativa). O valor é corrigido pelo IPCA, com juros simples de 2% ao ano; se essa conta superar a Selic, aplica-se a Selic.
+
+**ATENÇÃO**
+
+A vigência atual do regime especial dos §§ 1º a 15 depende da lei complementar do art. 100, § 15, e da relação com o art. 101 do ADCT, dados externos ao texto. O § 16 alcança requisitórios contra Estados, Distrito Federal e Municípios, não contra a União.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Precatório*: ordem de pagamento de dívida do poder público reconhecida por decisão judicial definitiva.
+- *Receita corrente líquida*: receita regular do ente, descontadas transferências obrigatórias e contribuições previdenciárias dos servidores.
+- *Selic*: taxa básica de juros da economia, usada como referência pelo governo.
+
+**CAMADA EXTERNA**
+
+- Estado da lei complementar do art. 100, § 15, e controle de constitucionalidade do regime: camada externa (PENDING_EXTERNAL_INGESTION).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "a partir de 1 de agosto de 2025" — 
+- REVIEW_REQUIRED · RESSALVA_OMITTED_IN_SUMMARY · o_que_diz: "ressalvados" — O § 16, em redação de 2025, determina que, a partir de 1º de agosto de 2025, os requisitórios contra Estados, Distrito Federal e Municípios sejam atualizados pe
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 20. ADCT, art. 107-A — Limite para pagamento de precatórios até 2026
+
+- `ADCT:ART.107-A` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.107-A/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem "Vide ADI 7064" (e "Vide MI 7300"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION).
+- Sub-bloco G · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: CONTEXT_ONLY
+- Por que exige raciocínio humano: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem "Vide ADI 7064" (e "Vide MI 7300"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION).
+- Resolver externo: EXTERNAL_VERIFICATION_REQUIRED via None
+
+**Lei Seca**
+
+- `ADCT:ART.107-A:CAPUT`: Até o fim de 2026, fica estabelecido, para cada exercício financeiro, limite para alocação na proposta orçamentária das despesas com pagamentos em virtude de sentença judiciária de que trata o art. 100 da Constituição Federal, equivalente ao valor da despesa paga no exercício de 2016, incluídos os restos a pagar pagos, corrigido, para o exercício de 2017, em 7,2% (sete inteiros e dois décimos por cento) e, para os exercícios posteriores, pela variação do Índice Nacional de Preços ao Consumidor Amplo (IPCA), publicado pela Fundação Instituto Brasileiro de Geografia e Estatística, ou de outro índice que vier a substituí-lo, apurado no exercício anterior a que se refere a lei orçamentária, devendo o espaço fiscal decorrente da diferença entre o valor dos precatórios expedidos e o respectivo limite ser destinado ao programa previsto no parágrafo único do art. 6º e à seguridade social, nos termos do art. 194, ambos da Constituição Federal, a ser calculado da seguinte forma:
+- `ADCT:ART.107-A:INC.I`: no exercício de 2022, o espaço fiscal decorrente da diferença entre o valor dos precatórios expedidos e o limite estabelecido no caput deste artigo deverá ser destinado ao programa previsto no parágrafo único do art. 6º e à seguridade social, nos termos do art. 194, ambos da Constituição Federal;
+- `ADCT:ART.107-A:INC.II`: no exercício de 2023, pela diferença entre o total de precatórios expedidos entre 2 de julho de 2021 e 2 de abril de 2022 e o limite de que trata o caput deste artigo válido para o exercício de 2023; e
+- `ADCT:ART.107-A:INC.III`: nos exercícios de 2024 a 2026, pela diferença entre o total de precatórios expedidos entre 3 de abril de dois anos anteriores e 2 de abril do ano anterior ao exercício e o limite de que trata o caput deste artigo válido para o mesmo exercício.
+- `ADCT:ART.107-A:PAR.1`: O limite para o pagamento de precatórios corresponderá, em cada exercício, ao limite previsto no caput deste artigo, reduzido da projeção para a despesa com o pagamento de requisições de pequeno valor para o mesmo exercício, que terão prioridade no pagamento.
+- `ADCT:ART.107-A:PAR.2`: Os precatórios que não forem pagos em razão do previsto neste artigo terão prioridade para pagamento em exercícios seguintes, observada a ordem cronológica e o disposto no § 8º deste artigo.
+- `ADCT:ART.107-A:PAR.3`: É facultado ao credor de precatório que não tenha sido pago em razão do disposto neste artigo, além das hipóteses previstas no § 11 do art. 100 da Constituição Federal e sem prejuízo dos procedimentos previstos nos §§ 9º e 21 do referido artigo, optar pelo recebimento, mediante acordos diretos perante Juízos Auxiliares de Conciliação de Pagamento de Condenações Judiciais contra a Fazenda Pública Federal, em parcela única, até o final do exercício seguinte, com renúncia de 40% (quarenta por cento) do valor desse crédito.
+- `ADCT:ART.107-A:PAR.4`: O Conselho Nacional de Justiça regulamentará a atuação dos Presidentes dos Tribunais competentes para o cumprimento deste artigo.
+- `ADCT:ART.107-A:PAR.5`: Não se incluem no limite estabelecido neste artigo as despesas para fins de cumprimento do disposto nos §§ 11, 20 e 21 do art. 100 da Constituição Federal e no § 3º deste artigo, bem como a atualização monetária dos precatórios inscritos no exercício.
+- `ADCT:ART.107-A:PAR.6`: Não se incluem nos limites estabelecidos no art. 107 deste Ato das Disposições Constitucionais Transitórias o previsto nos §§ 11, 20 e 21 do art. 100 da Constituição Federal e no § 3º deste artigo.
+- `ADCT:ART.107-A:PAR.7`: Na situação prevista no § 3º deste artigo, para os precatórios não incluídos na proposta orçamentária de 2022, os valores necessários à sua quitação serão providenciados pela abertura de créditos adicionais durante o exercício de 2022.
+- `ADCT:ART.107-A:PAR.8`: Os pagamentos em virtude de sentença judiciária de que trata o art. 100 da Constituição Federal serão realizados na seguinte ordem:
+- `ADCT:ART.107-A:PAR.8:INC.I`: obrigações definidas em lei como de pequeno valor, previstas no § 3º do art. 100 da Constituição Federal;
+- `ADCT:ART.107-A:PAR.8:INC.II`: precatórios de natureza alimentícia cujos titulares, originários ou por sucessão hereditária, tenham no mínimo 60 (sessenta) anos de idade, ou sejam portadores de doença grave ou pessoas com deficiência, assim definidos na forma da lei, até o valor equivalente ao triplo do montante fixado em lei como obrigação de pequeno valor;
+- `ADCT:ART.107-A:PAR.8:INC.III`: demais precatórios de natureza alimentícia até o valor equivalente ao triplo do montante fixado em lei como obrigação de pequeno valor;
+- `ADCT:ART.107-A:PAR.8:INC.IV`: demais precatórios de natureza alimentícia além do valor previsto no inciso III deste parágrafo;
+- `ADCT:ART.107-A:PAR.8:INC.V`: demais precatórios.
+
+**O QUE DIZ**
+
+O art. 107-A do ADCT fixa, até o fim de 2026, um limite anual para a inclusão na proposta orçamentária das despesas com precatórios do art. 100. O limite é o valor pago em 2016, incluídos os restos a pagar pagos, corrigido em 7,2% para 2017 e, depois, pelo IPCA do exercício anterior. A diferença entre os precatórios expedidos e o limite forma um espaço fiscal destinado ao programa do art. 6º, parágrafo único, e à seguridade social, calculado como dizem os incisos para 2022, 2023 e 2024 a 2026. O § 1º desconta do limite a projeção das requisições de pequeno valor, que têm prioridade. Os precatórios não pagos têm prioridade nos exercícios seguintes (§ 2º), e o credor pode optar por acordo com renúncia de 40% para receber em parcela única (§ 3º). O § 8º fixa a ordem de pagamento: pequeno valor; alimentares de idosos, doentes graves e pessoas com deficiência até o triplo do pequeno valor; demais alimentares até esse triplo; o restante dos alimentares; e os demais precatórios.
+
+**O QUE SIGNIFICA**
+
+O artigo limitou quanto da dívida judicial federal entra no orçamento de cada ano até 2026.
+
+O que passa do limite é empurrado para os anos seguintes, com prioridade.
+
+O credor que não quiser esperar pode aceitar um desconto de 40% em acordo.
+
+**EXEMPLO PRÁTICO**
+
+Um credor de precatório federal não pago no ano por causa do limite pode esperar a prioridade no ano seguinte ou fazer acordo e receber em parcela única com renúncia de 40%.
+
+**ATENÇÃO**
+
+O texto oficial traz notas de remissão a ações de controle de constitucionalidade em vários dispositivos deste artigo. A eficácia do limite em 2026 depende do resultado dessas ações, que não está na base versionada.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Proposta orçamentária*: projeto de orçamento enviado pelo Executivo ao Legislativo.
+- *Espaço fiscal*: margem de recursos que pode ser usada em outras despesas.
+- *Restos a pagar*: despesas de um ano pagas no ano seguinte.
+
+**CAMADA EXTERNA**
+
+- As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION).
+
+**Alertas do validator v2**
+
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 7064" — As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300;
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "2016 incluídos os restos a pagar pagos corrigido" — 
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 

@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 147 · risco LOW 104 · MEDIUM 25 · HIGH 18
-- Prontas para revisão editorial: 147 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 3, DUPLICATION 2, EXAMPLE_NUMBER 6, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 9, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Explicações: 161 · risco LOW 115 · MEDIUM 26 · HIGH 20
+- Prontas para revisão editorial: 161 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 3, DUPLICATION 2, EXAMPLE_NUMBER 7, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 11, LAW_DEPENDENCY_OMITTED 3, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -102,6 +102,19 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `ADCT:ART.88` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
+
+### ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização
+
+- `ADCT:ART.97` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos.
+- EXTRAPOLATION_NUMBER (o_que_significa: 2009) → Ano da emenda segundo as anotacoes da fonte canonica ("Incluido pela Emenda Constitucional n. 62, de 2009"). Resolucao do drafter, sujeita a revisao humana.
+- EXAMPLE_NUMBER (exemplo_pratico: 2026) → Ano do exemplo marcado como ilustrativo e posterior a 1º de agosto de 2025 (termo do § 16). Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 107-A — Limite para pagamento de precatórios até 2026
+
+- `ADCT:ART.107-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem "Vide ADI 7064" (e "Vide MI 7300"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION).
+- LAW_DEPENDENCY_OMITTED (body: a lei) → As remissoes a lei do texto (pequeno valor definido em lei; doenca grave e deficiencia na forma da lei) sao descritas como "valor de pequeno valor"; dependencia indicada na ordem do § 8º. Resolucao do drafter, sujeita a revisao humana.
 
 ## Risco MEDIUM
 
@@ -234,6 +247,12 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `ADCT:ART.49` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: sob pena
+
+### ADCT, art. 101 — Regime especial de precatórios até 2029
+
+- `ADCT:ART.101` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_E; SENSITIVE_THEME: SENSITIVE_THEME: sob pena; EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes ("ADI 7047"); JUDICIAL_REVIEW_CONTEXT_ONLY: ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064 -- A anotacao "Vide ADI 7047; Vide ADI 7064" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION).
+- LAW_DEPENDENCY_OMITTED (body: previstos em lei) → A remissao a lei ("previstos em lei") e do proprio texto (limites de endividamento previstos em lei, § 2º, III) e a explicacao a menciona como "limites de endividamento". Resolucao do drafter, sujeita a revisao humana.
 
 ## Risco LOW
 
@@ -770,5 +789,62 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### ADCT, art. 87 — Pequeno valor até a lei de cada ente
 
 - `ADCT:ART.87` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 92 — Mais dez anos para a Zona Franca
+
+- `ADCT:ART.92` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 92-A — Mais cinquenta anos para a Zona Franca
+
+- `ADCT:ART.92-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 92-B — Zona Franca na reforma tributária
+
+- `ADCT:ART.92-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 98 — Defensores públicos proporcionais à demanda
+
+- `ADCT:ART.98` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 99 — Partilha do ICMS nas vendas a consumidor de outro Estado
+
+- `ADCT:ART.99` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXTRAPOLATION_NUMBER (o_que_significa: 2026) → 2026 e o ano da data de referencia do lote (05/10/2026); a regra aplicavel nesse ano (inciso V, a partir de 2019) vem do texto. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 102 — Ordem de pagamento no regime especial
+
+- `ADCT:ART.102` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- LAW_DEPENDENCY_OMITTED (body: em lei) → A explicacao ja indica a dependencia: "valor de pequeno valor fixado em lei" e "regulamentacao de cada ente". Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 103 — Proteções e limites durante o regime especial
+
+- `ADCT:ART.103` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 104 — Sanções pela falta de repasse no regime especial
+
+- `ADCT:ART.104` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 105 — Compensação de precatórios com dívida ativa
+
+- `ADCT:ART.105` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 113 — Impacto orçamentário de novas despesas
+
+- `ADCT:ART.113` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 115 — Parcelamento de dívidas com regimes próprios
+
+- `ADCT:ART.115` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 

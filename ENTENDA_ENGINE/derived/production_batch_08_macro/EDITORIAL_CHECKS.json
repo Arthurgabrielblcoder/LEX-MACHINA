@@ -3,22 +3,23 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
- "explanations": 147,
+ "explanations": 161,
  "risk_counts": {
-  "LOW": 104,
-  "MEDIUM": 25,
-  "HIGH": 18
+  "LOW": 115,
+  "MEDIUM": 26,
+  "HIGH": 20
  },
  "finding_counts": {
   "ABSOLUTE_CLAIM": 3,
   "DUPLICATION": 2,
-  "EXAMPLE_NUMBER": 6,
+  "EXAMPLE_NUMBER": 7,
   "EXCEPTION_NOT_IN_TEXT": 4,
-  "EXTRAPOLATION_NUMBER": 9,
+  "EXTRAPOLATION_NUMBER": 11,
+  "LAW_DEPENDENCY_OMITTED": 3,
   "TRANSITION_IN_CORE": 1
  },
  "unresolved_findings": 0,
- "ready_for_editorial_review": 147,
+ "ready_for_editorial_review": 161,
  "human_approved_t1": 0,
  "duplication_pairs": [
   {
@@ -2053,6 +2054,224 @@
    "risk_reasons": [
     "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo."
    ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.92",
+   "explanation_id": "ENTENDA/ADCT:ART.92/BASE/1",
+   "title": "ADCT, art. 92 — Mais dez anos para a Zona Franca",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.92-A",
+   "explanation_id": "ENTENDA/ADCT:ART.92-A/BASE/1",
+   "title": "ADCT, art. 92-A — Mais cinquenta anos para a Zona Franca",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.92-B",
+   "explanation_id": "ENTENDA/ADCT:ART.92-B/BASE/1",
+   "title": "ADCT, art. 92-B — Zona Franca na reforma tributária",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.97",
+   "explanation_id": "ENTENDA/ADCT:ART.97/BASE/1",
+   "title": "ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "2009",
+     "resolution": "Ano da emenda segundo as anotacoes da fonte canonica (\"Incluido pela Emenda Constitucional n. 62, de 2009\"). Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "2026",
+     "resolution": "Ano do exemplo marcado como ilustrativo e posterior a 1º de agosto de 2025 (termo do § 16). Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.98",
+   "explanation_id": "ENTENDA/ADCT:ART.98/BASE/1",
+   "title": "ADCT, art. 98 — Defensores públicos proporcionais à demanda",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.99",
+   "explanation_id": "ENTENDA/ADCT:ART.99/BASE/1",
+   "title": "ADCT, art. 99 — Partilha do ICMS nas vendas a consumidor de outro Estado",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "2026",
+     "resolution": "2026 e o ano da data de referencia do lote (05/10/2026); a regra aplicavel nesse ano (inciso V, a partir de 2019) vem do texto. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.101",
+   "explanation_id": "ENTENDA/ADCT:ART.101/BASE/1",
+   "title": "ADCT, art. 101 — Regime especial de precatórios até 2029",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_E",
+    "SENSITIVE_THEME: SENSITIVE_THEME: sob pena",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7047\")",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064 -- A anotacao \"Vide ADI 7047; Vide ADI 7064\" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "previstos em lei",
+     "resolution": "A remissao a lei (\"previstos em lei\") e do proprio texto (limites de endividamento previstos em lei, § 2º, III) e a explicacao a menciona como \"limites de endividamento\". Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.102",
+   "explanation_id": "ENTENDA/ADCT:ART.102/BASE/1",
+   "title": "ADCT, art. 102 — Ordem de pagamento no regime especial",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "em lei",
+     "resolution": "A explicacao ja indica a dependencia: \"valor de pequeno valor fixado em lei\" e \"regulamentacao de cada ente\". Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.103",
+   "explanation_id": "ENTENDA/ADCT:ART.103/BASE/1",
+   "title": "ADCT, art. 103 — Proteções e limites durante o regime especial",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.104",
+   "explanation_id": "ENTENDA/ADCT:ART.104/BASE/1",
+   "title": "ADCT, art. 104 — Sanções pela falta de repasse no regime especial",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.105",
+   "explanation_id": "ENTENDA/ADCT:ART.105/BASE/1",
+   "title": "ADCT, art. 105 — Compensação de precatórios com dívida ativa",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.107-A",
+   "explanation_id": "ENTENDA/ADCT:ART.107-A/BASE/1",
+   "title": "ADCT, art. 107-A — Limite para pagamento de precatórios até 2026",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem \"Vide ADI 7064\" (e \"Vide MI 7300\"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "a lei",
+     "resolution": "As remissoes a lei do texto (pequeno valor definido em lei; doenca grave e deficiencia na forma da lei) sao descritas como \"valor de pequeno valor\"; dependencia indicada na ordem do § 8º. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.113",
+   "explanation_id": "ENTENDA/ADCT:ART.113/BASE/1",
+   "title": "ADCT, art. 113 — Impacto orçamentário de novas despesas",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.115",
+   "explanation_id": "ENTENDA/ADCT:ART.115/BASE/1",
+   "title": "ADCT, art. 115 — Parcelamento de dívidas com regimes próprios",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],

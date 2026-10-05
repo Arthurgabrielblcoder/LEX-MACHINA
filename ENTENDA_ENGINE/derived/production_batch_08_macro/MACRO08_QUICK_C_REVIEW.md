@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO RÁPIDA (fila C)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 13 itens · só o trecho com problema; nenhuma correção foi aplicada.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 14 itens · só o trecho com problema; nenhuma correção foi aplicada.
 
 ## `CF88:ART.177` — Art. 177 — Monopólio da União sobre petróleo, gás e minérios nucleares · risco LOW · EXTERNAL
 
@@ -122,6 +122,16 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 13 itens · só o trecho com problema; nenhu
 - **Detector:** LIST_ITEM_POSSIBLY_DROPPED
 - **Motivo:** enumeração parafraseada sem o item/elemento indicado
 - **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")
+
+- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
+
+## `ADCT:ART.101` — ADCT, art. 101 — Regime especial de precatórios até 2029 · risco MEDIUM · EXTERNAL
+
+- **Trecho:** "A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064;"
+- **Contexto mínimo:** external_layer_notes
+- **Detector:** EXTERNAL_FACT_NEEDS_PROVENANCE
+- **Motivo:** so na camada externa: o nucleo T1 nao depende do fato
+- **Proposta de correção segura:** manter so a remissao registrada pela fonte; nao afirmar conteudo/estado da norma externa sem proveniencia
 
 - [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
 

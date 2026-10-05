@@ -59,9 +59,159 @@
   },
   "ADCT:ART.76-B": {
    "DUPLICATION": "Idem ADCT:ART.76-A (estrutura paralela; conteudo distinto)."
+  },
+  "ADCT:ART.99": {
+   "EXTRAPOLATION_NUMBER": "2026 e o ano da data de referencia do lote (05/10/2026); a regra aplicavel nesse ano (inciso V, a partir de 2019) vem do texto. Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.97": {
+   "EXTRAPOLATION_NUMBER": "Ano da emenda segundo as anotacoes da fonte canonica (\"Incluido pela Emenda Constitucional n. 62, de 2009\"). Resolucao do drafter, sujeita a revisao humana.",
+   "EXAMPLE_NUMBER": "Ano do exemplo marcado como ilustrativo e posterior a 1º de agosto de 2025 (termo do § 16). Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.101": {
+   "LAW_DEPENDENCY_OMITTED": "A remissao a lei (\"previstos em lei\") e do proprio texto (limites de endividamento previstos em lei, § 2º, III) e a explicacao a menciona como \"limites de endividamento\". Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.102": {
+   "LAW_DEPENDENCY_OMITTED": "A explicacao ja indica a dependencia: \"valor de pequeno valor fixado em lei\" e \"regulamentacao de cada ente\". Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.107-A": {
+   "LAW_DEPENDENCY_OMITTED": "As remissoes a lei do texto (pequeno valor definido em lei; doenca grave e deficiencia na forma da lei) sao descritas como \"valor de pequeno valor\"; dependencia indicada na ordem do § 8º. Resolucao do drafter, sujeita a revisao humana."
   }
  },
  "risk": {
+  "ADCT:ART.101": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_E",
+    "SENSITIVE_THEME: SENSITIVE_THEME: sob pena",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7047\")",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064 -- A anotacao \"Vide ADI 7047; Vide ADI 7064\" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION)."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "quorum: um terço",
+    "deadline: sessenta dias",
+    "number_or_percentage: doze",
+    "exception: excetuad",
+    "law_dependency: previstos em lei",
+    "redacao de emenda constitucional (6 anotacao(oes))",
+    "remissao: arts. 20, 52, 97, 100, 167",
+    "overview com 15 dispositivos"
+   ]
+  },
+  "ADCT:ART.102": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 100, 101",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "ADCT:ART.103": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "exception: exceto",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 101",
+    "overview com 3 dispositivos"
+   ]
+  },
+  "ADCT:ART.104": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: exceto",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 101, 158",
+    "overview com 7 dispositivos"
+   ]
+  },
+  "ADCT:ART.105": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: vinte dias",
+    "number_or_percentage: cento",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 101",
+    "overview com 5 dispositivos"
+   ]
+  },
+  "ADCT:ART.107-A": {
+   "level": "HIGH",
+   "rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.107-A:INC.II: Vide ADI 7064; ART.107-A:INC.III: Vide ADI 7064; ART.107-A:PAR.3: Vide ADI 7064 (+2) -- Incisos II e III e §§ 3º, 5º e 6º trazem \"Vide ADI 7064\" (e \"Vide MI 7300\"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION)."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.107-A:INC.II: Vide MI 7300; ART.107-A:INC.II: Vide ADI 7064)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "deadline: dois anos",
+    "number_or_percentage: %",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 6, 100, 107, 194",
+    "overview com 18 dispositivos"
+   ]
+  },
+  "ADCT:ART.113": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "ADCT:ART.115": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 9, 40",
+    "overview com 9 dispositivos"
+   ]
+  },
   "ADCT:ART.12": {
    "level": "HIGH",
    "rules": [
@@ -596,6 +746,99 @@
     "redacao de emenda constitucional (1 anotacao(oes))",
     "remissao: arts. 156",
     "overview com 4 dispositivos"
+   ]
+  },
+  "ADCT:ART.92": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.92:CAPUT: Vide Decreto n. 7.212, de 2010)",
+    "camada externa: nota externa",
+    "deadline: dez anos",
+    "number_or_percentage: dez",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "ADCT:ART.92-A": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: cinquenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 92",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "ADCT:ART.92-B": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: três",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40, 126, 149, 156",
+    "overview com 11 dispositivos"
+   ]
+  },
+  "ADCT:ART.97": {
+   "level": "HIGH",
+   "rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: §§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos."
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.97:CAPUT: Vide Emenda Constitucional n. 62, de 2009)",
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "exception: exceto",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 20, 33, 78, 100, 201",
+    "overview com 52 dispositivos"
+   ]
+  },
+  "ADCT:ART.98": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: oito",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "ADCT:ART.99": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155",
+    "overview com 7 dispositivos"
    ]
   },
   "CF88:ART.176": {

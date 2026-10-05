@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (93)
+## A — CLEAN_LOW (104)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -1024,6 +1024,127 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - ATENÇÃO: A situação de cada ente, isto é, se já publicou sua lei, é dado externo.
 - Dependência externa: nenhuma
 - Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.92` — ADCT, art. 92 — Mais dez anos para a Zona Franca
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 92 do ADCT soma dez anos ao prazo de manutenção da Zona Franca de Manaus previsto no art. 40 do ADCT.
+- Interpretação principal: O artigo não cria regra nova para a Zona Franca: apenas prolonga o prazo já existente.
+- ATENÇÃO: O artigo deve ser lido em conjunto com os arts. 40 e 92-A do ADCT.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(25 anos), NUMBER_FROM_OTHER_DEVICE(35 anos), NUMBER_FROM_OTHER_DEVICE(25 anos), EXAMPLE_NUMBER_NOT_IN_TEXT(50)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.92-A` — ADCT, art. 92-A — Mais cinquenta anos para a Zona Franca
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 92-A do ADCT soma cinquenta anos ao prazo fixado no art. 92 do ADCT.
+- Interpretação principal: O artigo é a extensão mais longa do prazo da Zona Franca de Manaus.
+- ATENÇÃO: O cálculo da data final exige a data da promulgação da Constituição, que é 5 de outubro de 1988.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(10 anos), NUMBER_FROM_OTHER_DEVICE(10 anos, 25 anos), lint TERM_NOT_USED
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.92-B` — ADCT, art. 92-B — Zona Franca na reforma tributária
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 92-B do ADCT manda que as leis que instituírem o imposto sobre bens e serviços (art. 156-A) e a contribuição do art. 195, V, criem mecanismos, que podem ou não exigir contrapartidas, para…
+- Interpretação principal: A reforma tributária extingue tributos que davam vantagens à Zona Franca.
+- ATENÇÃO: Os mecanismos concretos ficam nas leis dos novos tributos e nas leis complementares dos fundos, que pertencem à camada externa.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.98` — ADCT, art. 98 — Defensores públicos proporcionais à demanda
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 98 do ADCT determina que o número de defensores públicos em cada unidade jurisdicional seja proporcional à demanda efetiva pelo serviço da Defensoria Pública e à população local.
+- Interpretação principal: O caput traz um critério permanente para distribuir defensores: onde há mais procura e mais gente, deve haver mais defensores.
+- ATENÇÃO: O texto não informa se a meta do § 1º foi cumprida; isso é dado externo.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.99` — ADCT, art. 99 — Partilha do ICMS nas vendas a consumidor de outro Estado
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 99 do ADCT disciplina a divisão do ICMS relativo à diferença entre a alíquota interna e a interestadual nas vendas de bens e serviços a consumidor final de outro Estado que não seja…
+- Interpretação principal: O artigo fez a passagem gradual do imposto para o Estado onde está o consumidor.
+- ATENÇÃO: O artigo trata só do diferencial de alíquotas em vendas a consumidor final não contribuinte.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: diferença entre a alíquota interna e a…), NEAR_COPY_MICROFIX(exemplo_pratico: diferença entre a alíquota interna e a…), EXTRAPOLATION_NUMBER(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.102` — ADCT, art. 102 — Ordem de pagamento no regime especial
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 102 do ADCT determina que, enquanto vigorar o regime especial do art. 101, pelo menos 50% dos recursos destinados aos precatórios em mora sejam pagos pela ordem cronológica de apresentação.
+- Interpretação principal: O artigo equilibra dois caminhos de pagamento.
+- ATENÇÃO: O desconto de 40% é o máximo admitido nos acordos, não um valor fixo.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(5), LAW_DEPENDENCY_OMITTED(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.103` — ADCT, art. 103 — Proteções e limites durante o regime especial
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 103 do ADCT impede o sequestro de valores do Estado, Distrito Federal ou Município, e de suas autarquias, fundações e empresas estatais dependentes, enquanto estiverem pagando a parcela mensal…
+- Interpretação principal: O artigo protege o ente que está cumprindo o regime: se ele paga em dia, suas contas não podem ser bloqueadas.
+- ATENÇÃO: A proteção contra sequestro cai se os recursos não forem liberados no tempo devido.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.104` — ADCT, art. 104 — Sanções pela falta de repasse no regime especial
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 104 do ADCT estabelece o que acontece se os recursos do art. 101 para pagar precatórios não forem liberados no tempo devido, no todo ou em parte.
+- Interpretação principal: O artigo dá força ao regime especial: o ente que não deposita perde o controle de parte de sua receita.
+- ATENÇÃO: O inciso IV, em redação de 2023, já menciona o Comitê Gestor do Imposto sobre Bens e Serviços.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: da legislação de responsabilidade fiscal e de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.105` — ADCT, art. 105 — Compensação de precatórios com dívida ativa
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 105 do ADCT permite, enquanto vigorar o regime do art. 101, que credores de precatórios, próprios ou adquiridos de terceiros, compensem esses créditos com débitos tributários ou de outra…
+- Interpretação principal: O artigo permite ao credor do poder público usar o precatório para quitar uma dívida que ele tem com o mesmo ente.
+- ATENÇÃO: Débitos inscritos em dívida ativa depois de 25 de março de 2015 não entram na compensação deste artigo.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.113` — ADCT, art. 113 — Impacto orçamentário de novas despesas
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 113 do ADCT exige que a proposta legislativa que crie ou modifique despesa obrigatória ou renúncia de receita venha acompanhada da estimativa de seu impacto orçamentário e financeiro.
+- Interpretação principal: O artigo obriga o legislador a conhecer o custo de uma medida antes de aprová-la.
+- ATENÇÃO: O artigo exige a estimativa; ele não proíbe a aprovação da medida.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.115` — ADCT, art. 115 — Parcelamento de dívidas com regimes próprios
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 115 do ADCT autoriza, em caráter excepcional, o parcelamento das contribuições previdenciárias e demais débitos de Estados, Distrito Federal e Municípios, e de suas autarquias e fundações, com…
+- Interpretação principal: O artigo oferece um longo parcelamento em troca de reformas no regime previdenciário do ente.
+- ATENÇÃO: O prazo de quinze meses é contado da promulgação da emenda de 2025, cuja data exata não consta do texto versionado.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: até 31 de agosto de 2025 inclusive os), lint EXAMPLE_REQUIREMENT_LANGUAGE
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

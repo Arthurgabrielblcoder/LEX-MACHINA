@@ -3,14 +3,14 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "artigos avaliados e nao explicados (SKIP de artigo inteiro), sempre com motivo; seus targets constam aqui, nao no SELECTION_REPORT",
- "articles": 62,
- "targets": 285,
+ "articles": 67,
+ "targets": 295,
  "by_decision": {
   "SKIP_APPROVED_PILOT_LEGACY_MODEL": 1,
-  "SKIP_CONSUMED_CONSTITUTIVE_ACT": 4,
+  "SKIP_CONSUMED_CONSTITUTIVE_ACT": 5,
   "SKIP_EXHAUSTED_TRANSITION": 33,
-  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 12,
-  "SKIP_TRANSITION_EVENT_DEPENDENT": 12
+  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 13,
+  "SKIP_TRANSITION_EVENT_DEPENDENT": 15
  },
  "rows": [
   {
@@ -2264,6 +2264,122 @@
     {
      "target_id": "ADCT:ART.90:PAR.2",
      "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.93",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Vigencia do art. 159, III, e § 4º condicionada a edicao de lei; estado da lei nao versionado.",
+   "situation_as_of": "Dependente de lei externa.",
+   "provenance": [
+    "runtime: ADCT art. 93"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.93",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.93:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.94",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Cessacao dos regimes especiais de microempresas com a entrada em vigor do regime do art. 146, III, d; evento externo nao versionado.",
+   "situation_as_of": "Dependente de evento externo.",
+   "provenance": [
+    "runtime: ADCT art. 94"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.94",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.94:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.95",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Registro de nascidos no estrangeiro entre 7 de junho de 1994 e a promulgacao da emenda de 2007; grupo fechado de pessoas.",
+   "situation_as_of": "Residual (grupo fechado).",
+   "provenance": [
+    "runtime: ADCT art. 95",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 54, de 2007\""
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.95",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.95:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.96",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "decision_definition": "ato constitutivo de efeito instantaneo na promulgacao (criacao, extincao, reconhecimento); o resultado persiste sem comando operativo novo",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Convalidacao de atos de criacao, fusao, incorporacao e desmembramento de Municipios com lei publicada ate 31 de dezembro de 2006; ato constitutivo consumado com a propria emenda.",
+   "situation_as_of": "Efeito consumado.",
+   "provenance": [
+    "runtime: ADCT art. 96"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.96",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.96:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.100",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Aposentadoria compulsoria aos 75 anos de ministros ate a lei complementar do art. 40, § 1º, II; estado da lei nao versionado.",
+   "situation_as_of": "Dependente de lei externa.",
+   "provenance": [
+    "runtime: ADCT art. 100"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.100",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.100:CAPUT",
+     "kind": "CAPUT",
      "status": "CURRENT"
     }
    ]
