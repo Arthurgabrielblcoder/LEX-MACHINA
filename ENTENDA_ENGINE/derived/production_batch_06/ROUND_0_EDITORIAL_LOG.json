@@ -1,0 +1,211 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "stage": "ROUND_0 (redacao, antes da triagem; nenhum item aprovado)",
+ "policy": "correcoes do proprio redator para achados reais do editorial_checks e glossario uniforme (A5); nao sao micro-ajustes automaticos",
+ "editorial_fixes": [
+  {
+   "target_id": "CF88:ART.42:PAR.3",
+   "finding": "EXCEPTION_NOT_IN_TEXT",
+   "before": "'acumulação remunerada de cargos públicos, com a ressalva de que a atividade militar prevalece.',",
+   "after": "'acumulação remunerada de cargos públicos, com prioridade para a atividade militar.',"
+  },
+  {
+   "target_id": "CF88:ART.42:PAR.3",
+   "finding": "ABSOLUTE_CLAIM",
+   "before": "sempre com compatibilidade de horários.",
+   "after": "desde que haja compatibilidade de horários."
+  },
+  {
+   "target_id": "CF88:ART.43",
+   "finding": "EXTRAPOLATION_NUMBER/core EC mention",
+   "before": "e o § 4º, incluído em 2023, manda considerar,",
+   "after": "e o § 4º manda considerar,"
+  },
+  {
+   "target_id": "CF88:ART.43",
+   "finding": "EC mention moved to ATENCAO",
+   "before": "'que possível\": não proíbe incentivo que não atenda aos critérios ambientais.',",
+   "after": "'que possível\": não proíbe incentivo que não atenda aos critérios ambientais. Esse parágrafo foi incluído pela Emenda '\n      'Constitucional nº 132, de 2023.',"
+  },
+  {
+   "target_id": "CF88:ART.45",
+   "finding": "LAW_DEPENDENCY_OMITTED",
+   "before": "'com limites, o tamanho da sua população.\\n'",
+   "after": "'com limites, o tamanho da sua população, conforme lei complementar (§ 1º).\\n'"
+  },
+  {
+   "target_id": "CF88:ART.46",
+   "finding": "ABSOLUTE_CLAIM",
+   "before": "'nunca se renova por inteiro de uma só vez.',",
+   "after": "'não se renova por inteiro de uma só vez.',"
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "finding": "EXTRAPOLATION_NUMBER/core EC mention",
+   "before": "'O inciso XVIII remete ao regime de calamidade pública dos arts. 167-B a 167-G, incluído em 2021.',",
+   "after": "'O inciso XVIII remete ao regime de calamidade pública dos arts. 167-B a 167-G.',"
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "finding": "EXTRAPOLATION_NUMBER (remissao mal reconhecida) + EC mention moved to ATENCAO",
+   "before": "'O art. 49 trata da competência do Congresso como um todo. As competências privativas de cada Casa estão nos arts. 51 '\n      '(Câmara) e 52 (Senado).',",
+   "after": "'O art. 49 trata da competência do Congresso como um todo. As competências privativas de cada Casa estão no art. 51, '\n      'para a Câmara, e no art. 52, para o Senado. O inciso XVIII foi incluído pela Emenda Constitucional nº 109, de 2021.',"
+  },
+  {
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "finding": "EXTRAPOLATION_NUMBER (total de senadores nao esta no texto)",
+   "before": "'O quórum é qualificado: dois terços dos votos do Senado, ou seja, 54 dos 81 senadores.\\n'",
+   "after": "'O quórum é qualificado: dois terços dos votos do Senado.\\n'"
+  },
+  {
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "finding": "EXTRAPOLATION_NUMBER (total de senadores nao esta no texto)",
+   "before": "'Condenada pelo voto de 54 senadores,",
+   "after": "'Condenada pelo voto de dois terços dos senadores,"
+  },
+  {
+   "target_id": "CF88:ART.53",
+   "finding": "TRANSITION_IN_CORE (EC mention moved to ATENCAO)",
+   "before": "'O foro do § 1º e as garantias dos §§ 6º a 8º completam esse conjunto. A redação atual do artigo vem, em grande parte, da '\n      'Emenda Constitucional nº 35, de 2001.',",
+   "after": "'O foro do § 1º e as garantias dos §§ 6º a 8º completam esse conjunto.',"
+  },
+  {
+   "target_id": "CF88:ART.53",
+   "finding": "TRANSITION_IN_CORE (EC mention moved to ATENCAO)",
+   "before": "'quem deixa o cargo deixa de tê-las.',",
+   "after": "'quem deixa o cargo deixa de tê-las. A redação atual do artigo vem, em grande parte, da Emenda Constitucional nº 35, de 2001.',"
+  },
+  {
+   "target_id": "CF88:ART.61:PAR.2",
+   "finding": "ABSOLUTE_CLAIM",
+   "before": "'O projeto popular começa sempre na Câmara",
+   "after": "'O projeto popular começa na Câmara"
+  },
+  {
+   "target_id": "CF88:ART.62",
+   "finding": "TRANSITION_IN_CORE (EC mention moved to ATENCAO)",
+   "before": "'mérito (§ 5º).\\n'\n      'O regime atual foi definido pela Emenda Constitucional nº 32, de 2001, que fixou limites materiais, prazos e a vedação de '\n      'reedições sucessivas.',",
+   "after": "'mérito (§ 5º).',"
+  },
+  {
+   "target_id": "CF88:ART.62",
+   "finding": "TRANSITION_IN_CORE (EC mention moved to ATENCAO)",
+   "before": "'Medida provisória não é lei: é ato com força de lei, sujeito à conversão. Materiais anteriores a 2001 descrevem um regime '\n      'diferente, com reedições sucessivas.',",
+   "after": "'Medida provisória não é lei: é ato com força de lei, sujeito à conversão. O regime atual foi definido pela Emenda '\n      'Constitucional nº 32, de 2001; materiais anteriores descrevem um regime diferente, com reedições sucessivas.',"
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.2",
+   "finding": "ABSOLUTE_CLAIM",
+   "before": "'A terceira vaga presidencial é de livre escolha, sempre sujeita à aprovação do Senado.',",
+   "after": "'A terceira vaga presidencial é de livre escolha, também sujeita à aprovação do Senado.',"
+  },
+  {
+   "target_id": "CF88:ART.75",
+   "finding": "REVISAO DO REDATOR (interpretacao nao sustentada: alcance de \"sua\")",
+   "before": "'A parte final do caput, no texto utilizado neste aplicativo, proíbe extinguir, criar ou instalar esses tribunais. O '",
+   "after": "'A parte final do caput, no texto utilizado neste aplicativo, veda \"sua extinção, criação ou instalação\"; a quais tribunais o '\n      'pronome \"sua\" se refere não é definido nesta explicação e depende de verificação. O '"
+  }
+ ],
+ "glossary_additions": [
+  {
+   "target_id": "CF88:ART.48",
+   "term": "Subsídio",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "term": "Subsídio",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.49:INC.I",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.49:INC.V",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.51:INC.I",
+   "term": "Quórum",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.53:CAPUT",
+   "term": "Decoro parlamentar",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.1",
+   "term": "Decoro parlamentar",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.1",
+   "term": "Imunidade parlamentar",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.2",
+   "term": "Decoro parlamentar",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.59",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.59",
+   "term": "Quórum",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.3",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.11",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.4",
+   "term": "Sobrestamento",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.1",
+   "term": "Decreto legislativo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.69",
+   "term": "Quórum",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.71:INC.II",
+   "term": "Título executivo",
+   "action": "ADDED"
+  },
+  {
+   "target_id": "CF88:ART.71:INC.VIII",
+   "term": "Título executivo",
+   "action": "ADDED"
+  }
+ ],
+ "counts": {
+  "editorial_fixes": 17,
+  "glossary_additions": 19
+ }
+}

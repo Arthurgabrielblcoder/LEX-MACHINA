@@ -1,0 +1,2344 @@
+{
+ "schema_version": 1,
+ "triage": "T1_PENDING_TRIAGE",
+ "validator": "T1_VALIDATOR_V2 (A6, 2026-10-04)",
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "as_of": "2026-10-04",
+ "auto_approve": {
+  "LOW": false,
+  "MEDIUM": false
+ },
+ "policy": "somente classificacao; nenhum texto, status ou versao alterado; o detector nao substitui revisao juridica (roteamento de risco)",
+ "counts": {
+  "A_CLEAN_LOW": 1,
+  "B_CLEAN_MEDIUM": 0,
+  "C_QUICK_REVIEW": 3,
+  "D_FULL_HUMAN_REVIEW": 89,
+  "E_HARD_FAIL": 0
+ },
+ "by_risk": {
+  "LOW": {
+   "A_CLEAN_LOW": 1,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 2,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "MEDIUM": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 1,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  }
+ },
+ "rows": [
+  {
+   "target_id": "CF88:ART.49:INC.IX",
+   "title": "Art. 49, inciso IX — Julgamento das contas do Presidente",
+   "role": "ITEM",
+   "risk": "LOW",
+   "queue": "A_CLEAN_LOW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "os relatórios sobre a execução dos planos de",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta juridico/editorial relevante (validator v2, editorial_checks resolvidos, lint informativo)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.2",
+   "title": "Art. 57, § 2º — Recesso condicionado à aprovação da LDO",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "queue": "C_QUICK_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "incentivo",
+     "sentence": "É um incentivo institucional ligado ao calendário, sem sanção pessoal aos parlamentares."
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (incentivo)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.2",
+   "title": "Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "queue": "C_QUICK_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "incentivos",
+     "sentence": "A resolução autoriza o Presidente a elaborar lei sobre um programa de incentivos e exige que o projeto volte ao Congresso."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a resolução determinar a apreciação do projeto pelo",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (incentivos)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.II",
+   "title": "Art. 71, inciso II — Julgamento das contas de administradores",
+   "role": "ITEM",
+   "risk": "LOW",
+   "queue": "C_QUICK_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bens e valores públicos da administração direta e",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.42",
+   "title": "Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.42:PAR.1",
+   "title": "Art. 42, § 1º — Regras aplicáveis aos militares estaduais",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.42:PAR.3",
+   "title": "Art. 42, § 3º — Acumulação de cargos pelo militar estadual",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aos militares dos estados do distrito federal e",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXCEPTION_NOT_IN_TEXT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.43",
+   "title": "Art. 43 — Regiões de desenvolvimento",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "sentence": "Os incentivos regionais (§ 2º) são os instrumentos dessa política."
+    },
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "incentivos",
+     "sentence": "Uma política federal para a região semiárida pode reunir áreas de vários Estados em um mesmo planejamento, com organismos regionais executando os planos e com i"
+    },
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "atencao",
+     "match": "incentivo",
+     "sentence": "não proíbe incentivo que não atenda aos critérios ambientais."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ação em um mesmo complexo geoeconômico e social",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED",
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (incentivo); TELEOLOGY_SPECULATIVE (incentivos)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.43:PAR.2",
+   "title": "Art. 43, § 2º — Incentivos regionais",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "sentence": "Os incentivos são ferramentas para reduzir desvantagens de regiões menos desenvolvidas."
+    },
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "sentence": "a lei pode criar outros incentivos."
+    },
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "sempre",
+     "sentence": "Esse benefício se enquadra no inciso III e, pelo § 4º, deve considerar, sempre que possível, critérios ambientais."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "nas regiões de baixa renda sujeitas a secas",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (incentivos); UNIVERSAL_CLAIM (sempre)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.44",
+   "title": "Art. 44 — Congresso Nacional e legislatura",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.45",
+   "title": "Art. 45 — Câmara dos Deputados",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do povo eleitos pelo sistema proporcional em cada",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.45:PAR.1",
+   "title": "Art. 45, § 1º — Número de deputados por Estado",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "FULL",
+     "section": "external_layer_notes",
+     "match": "Lei Complementar nº 7",
+     "sentence": "a fonte estrutural do projeto registra a remissão \"Vide Lei Complementar nº 78, de 1993\"."
+    }
+   ],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "Lei Complementar nº 7"
+   ],
+   "reason": "EXTERNAL_FACT_NEEDS_PROVENANCE (Lei Complementar nº 7)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_EVIDENCE_LOCAL_PENDING",
+    "via": "RELATIONS_ENGINE_PENDING",
+    "evidence": [
+     {
+      "norma": "EXT_LC78_1993",
+      "tipo": "REGULAMENTACAO",
+      "fonte": "CAMARA_REGULAMENTACAO_CF",
+      "status": "PENDING",
+      "decisao": "OCULTAR_ATE_VALIDAR_VIGENCIA",
+      "url": "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0980.htm",
+      "source": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/CANDIDATAS_P1_RELACAO_EXPRESSA.json"
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.46",
+   "title": "Art. 46 — Senado Federal",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "todos os",
+     "sentence": "No Senado, todos os Estados têm o mesmo peso, independentemente da população."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "representantes dos estados e do distrito federal eleitos",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "UNIVERSAL_CLAIM (todos os)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.47",
+   "title": "Art. 47 — Quórum das deliberações",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "só pode",
+     "sentence": "Em uma comissão com quarenta membros, a votação só pode ocorrer com pelo menos vinte e um presentes."
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "TRANSITION_IN_CORE:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "UNIVERSAL_CLAIM (só pode)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.48",
+   "title": "Art. 48 — Competência legislativa do Congresso com sanção",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "sobre todas as matérias de competência da união",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "title": "Art. 49 — Competência exclusiva do Congresso",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "body",
+     "match": "LAW_DEPENDENCY_OMITTED",
+     "sentence": ""
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN",
+    "LAW_DEPENDENCY_OMITTED:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LAW_DEPENDENCY_OMITTED); EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49:INC.I",
+   "title": "Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49:INC.V",
+   "title": "Art. 49, inciso V — Sustação de atos normativos do Executivo",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "serve para",
+     "sentence": "não serve para rever atos regulares apenas por discordância política."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "sustar os atos normativos do poder executivo que",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (serve para)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.50",
+   "title": "Art. 50 — Convocação de ministros e pedidos de informação",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "comitê gestor do imposto sobre bens e serviços",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.50:PAR.2",
+   "title": "Art. 50, § 2º — Pedidos escritos de informação",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pedidos escritos de informação a ministros de estado",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.51",
+   "title": "Art. 51 — Competências privativas da Câmara",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.51:INC.I",
+   "title": "Art. 51, inciso I — Autorização para processo contra o Presidente",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "todos os",
+     "sentence": "dois terços de todos os membros da Casa, e não dois terços dos presentes."
+    }
+   ],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "UNIVERSAL_CLAIM (todos os)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52",
+   "title": "Art. 52 — Competências privativas do Senado",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "da união dos estados do distrito federal e",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:INC.I",
+   "title": "Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o presidente e o vice presidente da república",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:INC.III",
+   "title": "Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do tribunal de contas da união indicados pelo",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:INC.X",
+   "title": "Art. 52, inciso X — Suspensão de lei declarada inconstitucional",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "title": "Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53",
+   "title": "Art. 53 — Imunidades e prerrogativas dos parlamentares",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:CAPUT",
+   "title": "Art. 53, caput — Inviolabilidade por opiniões, palavras e votos",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.1",
+   "title": "Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.2",
+   "title": "Art. 53, § 2º — Limites à prisão do parlamentar",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "flagrante de crime inafiançável nesse caso os autos",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.3",
+   "title": "Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "para evitar",
+     "sentence": "Como o processo fica parado, a prescrição também fica suspensa enquanto durar o mandato, para evitar que o tempo extinga a punição."
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (para evitar)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.6",
+   "title": "Art. 53, § 6º — Dispensa de testemunhar sobre informações do mandato",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.8",
+   "title": "Art. 53, § 8º — Imunidades durante o estado de sítio",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "que sejam incompatíveis com a execução da medida",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.54",
+   "title": "Art. 54 — Incompatibilidades dos parlamentares",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.54:INC.I",
+   "title": "Art. 54, inciso I — Vedações desde a expedição do diploma",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "AUTOMATIC_CONSEQUENCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "pode ser exonerada",
+     "sentence": "A alínea b alcança também os cargos de confiança, de que a pessoa pode ser exonerada a qualquer tempo."
+    },
+    {
+     "code": "EXCEPTION_OR_RESSALVA_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "qualquer",
+     "sentence": "Um senador pode ter conta em um banco público com contrato padrão, igual ao de qualquer cliente. Não pode, porém, assinar com esse banco um contrato de consulto"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aceitar ou exercer cargo função ou emprego remunerado",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "AUTOMATIC_CONSEQUENCE (pode ser exonerada); EXCEPTION_OR_RESSALVA_DROPPED (qualquer)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.54:INC.II",
+   "title": "Art. 54, inciso II — Vedações desde a posse",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de mais de um cargo ou mandato público",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55",
+   "title": "Art. 55 — Perda do mandato de deputado ou senador",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "todos os",
+     "sentence": "Em todos os casos, é assegurada ampla defesa."
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "UNIVERSAL_CLAIM (todos os)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55:INC.VI",
+   "title": "Art. 55, inciso VI — Condenação criminal definitiva e perda do mandato",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "que sofrer condenação criminal em sentença transitada em",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.1",
+   "title": "Art. 55, § 1º — O que é incompatível com o decoro parlamentar",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.2",
+   "title": "Art. 55, §§ 2º e 3º — Quem decide a perda do mandato",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.4",
+   "title": "Art. 55, § 4º — Renúncia durante processo de perda do mandato",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.56",
+   "title": "Art. 56 — Situações que não geram perda do mandato",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.56:PAR.1",
+   "title": "Art. 56, §§ 1º e 2º — Suplente e eleição para preencher a vaga",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de licença superior a cento e vinte dias",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57",
+   "title": "Art. 57 — Funcionamento do Congresso: sessões e reuniões",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "receber o compromisso do presidente e do vice",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.4",
+   "title": "Art. 57, § 4º — Sessões preparatórias e eleição das Mesas",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a recondução para o mesmo cargo na eleição",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.6",
+   "title": "Art. 57, § 6º — Convocação extraordinária do Congresso",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "casas em caso de urgência ou interesse público",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.7",
+   "title": "Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "AUTOMATIC_CONSEQUENCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "automaticamente",
+     "sentence": "A exceção são as medidas provisórias em vigor, que entram na pauta automaticamente, porque têm prazo para ser votadas."
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "AUTOMATIC_CONSEQUENCE (automaticamente)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.58",
+   "title": "Art. 58 — Comissões do Congresso e de suas Casas",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "tanto quanto possível a representação proporcional dos partidos",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.58:PAR.2",
+   "title": "Art. 58, § 2º — O que as comissões podem fazer",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "recurso de um décimo dos membros da casa",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.58:PAR.3",
+   "title": "Art. 58, § 3º — Comissões parlamentares de inquérito",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.59",
+   "title": "Art. 59 — Espécies do processo legislativo",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.61",
+   "title": "Art. 61 — Iniciativa das leis",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.61:PAR.1",
+   "title": "Art. 61, § 1º — Iniciativa privativa do Presidente da República",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do ministério público e da defensoria pública da",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.61:PAR.2",
+   "title": "Art. 61, § 2º — Iniciativa popular de lei",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "décimos por cento dos eleitores de cada um",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62",
+   "title": "Art. 62 — Medidas provisórias",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [
+    "MODALITY_SHIFT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.1",
+   "title": "Art. 62, § 1º — Matérias vedadas às medidas provisórias",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "evita",
+     "sentence": "O inciso II evita medidas de bloqueio de poupança, e o inciso IV impede que o Presidente use a medida para contornar um projeto já aprovado pelo Congresso."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "diretrizes orçamentárias orçamento e créditos adicionais e suplementares",
+     "sentence": ""
+    },
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "DUPLICATION",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (DUPLICATION); TELEOLOGY_SPECULATIVE (evita)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.10",
+   "title": "Art. 62, § 10 — Proibição de reeditar medida provisória",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.11",
+   "title": "Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.2",
+   "title": "Art. 62, § 2º — Medida provisória sobre impostos",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.3",
+   "title": "Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.5",
+   "title": "Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.6",
+   "title": "Art. 62, § 6º — Regime de urgência e trancamento de pauta",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "objetivo do",
+     "sentence": "O objetivo do texto é pressionar o Congresso a decidir dentro do prazo."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as demais deliberações legislativas da casa em que",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (objetivo do)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.63",
+   "title": "Art. 63 — Proibição de aumentar despesa por emenda",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de iniciativa exclusiva do presidente da república ressalvado",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.64",
+   "title": "Art. 64 — Início na Câmara e urgência constitucional",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.64:PAR.2",
+   "title": "Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "atencao",
+     "match": "evita",
+     "sentence": "A exceção para matérias com prazo constitucional determinado evita conflito com outras regras de prazo, como as das medidas provisórias."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cada qual sucessivamente em até quarenta e cinco",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [
+    "EXCEPTION_NOT_IN_TEXT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (evita)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.65",
+   "title": "Art. 65 — Revisão do projeto pela outra Casa",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66",
+   "title": "Art. 66 — Sanção, veto e promulgação",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.1",
+   "title": "Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.4",
+   "title": "Art. 66, §§ 4º, 5º e 6º — Apreciação do veto pelo Congresso",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.7",
+   "title": "Art. 66, § 7º — Quem promulga a lei",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.67",
+   "title": "Art. 67 — Reapresentação de projeto rejeitado",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_significa",
+     "match": "evita",
+     "sentence": "A regra evita que o Congresso seja obrigado a decidir repetidamente a mesma questão em curto período."
+    },
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "só pode",
+     "sentence": "Em setembro do mesmo ano, outro projeto sobre a mesma matéria só pode ser apresentado se for subscrito pela maioria absoluta dos deputados ou dos senadores."
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "objeto de novo projeto na mesma sessão legislativa",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (evita); UNIVERSAL_CLAIM (só pode)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.68",
+   "title": "Art. 68 — Leis delegadas",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "incentivos",
+     "sentence": "O Presidente pede ao Congresso autorização para editar lei sobre a reorganização de incentivos a um setor econômico."
+    }
+   ],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "TELEOLOGY_SPECULATIVE (incentivos)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.1",
+   "title": "Art. 68, § 1º — Matérias que não podem ser delegadas",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "DUPLICATION",
+     "sentence": ""
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "DUPLICATION:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (DUPLICATION)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.69",
+   "title": "Art. 69 — Quórum da lei complementar",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "exemplo_pratico",
+     "match": "todos os",
+     "sentence": "Um projeto de lei complementar precisa de votos favoráveis de mais da metade de todos os deputados, ainda que nem todos estejam presentes, e depois de mais da m"
+    }
+   ],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "UNIVERSAL_CLAIM (todos os)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.70",
+   "title": "Art. 70 — Fiscalização da União: controle externo e interno",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.70:PAR.UNICO",
+   "title": "Art. 70, parágrafo único — Quem deve prestar contas",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pessoa física ou jurídica pública ou privada que",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71",
+   "title": "Art. 71 — Competências do Tribunal de Contas da União",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "com o auxílio do tribunal de contas da",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.I",
+   "title": "Art. 71, inciso I — Parecer prévio sobre as contas do Presidente",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.III",
+   "title": "Art. 71, inciso III — Registro de admissões e aposentadorias",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.IX",
+   "title": "Art. 71, incisos IX e X — Prazo para correção e sustação de atos",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "EDITORIAL_CHECK_UNRESOLVED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "LONG_SENTENCE",
+     "sentence": ""
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "LONG_SENTENCE:OPEN"
+   ],
+   "external_dependency": null,
+   "reason": "EDITORIAL_CHECK_UNRESOLVED (LONG_SENTENCE)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.VIII",
+   "title": "Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:PAR.1",
+   "title": "Art. 71, §§ 1º e 2º — Sustação de contratos",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:PAR.3",
+   "title": "Art. 71, § 3º — Força das decisões que impõem débito ou multa",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.72",
+   "title": "Art. 72 — Despesas não autorizadas: atuação da comissão mista",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "1 diante de indícios de despesas não autorizadas",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73",
+   "title": "Art. 73 — Composição e organização do Tribunal de Contas da União",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.1",
+   "title": "Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de dez anos de exercício de função ou",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.2",
+   "title": "Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pelo presidente da república com aprovação do senado",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.3",
+   "title": "Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os ministros do tribunal de contas da união",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74",
+   "title": "Art. 74 — Sistema de controle interno",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74:PAR.1",
+   "title": "Art. 74, § 1º — Dever de comunicar irregularidades",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao tribunal de contas da união sob pena",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74:PAR.2",
+   "title": "Art. 74, § 2º — Denúncia de irregularidades ao Tribunal",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.75",
+   "title": "Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de contas dos estados e do distrito federal",
+     "sentence": ""
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "risco HIGH (escalonamento automatico t1_risk); sem alerta juridico/editorial do validator v2",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  }
+ ],
+ "metrics": {
+  "total_draft_chars": 124028,
+  "old_model_full_package_chars": 249608,
+  "presented_chars": 265430,
+  "presented_by_file": {
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 1151,
+   "BATCH06_QUICK_REVIEW.md": 2281,
+   "BATCH06_FULL_HUMAN_REVIEW.md": 261879,
+   "BATCH06_HARD_FAIL_REPORT.md": 119
+  },
+  "reduction_pct": -6.3
+ },
+ "micro_adjustments": {
+  "applied": 0,
+  "eligible": 41,
+  "microauto_apply": false
+ },
+ "by_risk_all": {
+  "LOW": {
+   "A_CLEAN_LOW": 1,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 2,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "MEDIUM": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 1,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "HIGH": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 89,
+   "E_HARD_FAIL": 0
+  }
+ },
+ "human_approved_t1_granted": 0
+}
