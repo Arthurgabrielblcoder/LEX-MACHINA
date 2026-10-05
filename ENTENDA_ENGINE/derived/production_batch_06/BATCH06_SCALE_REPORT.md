@@ -1,110 +1,121 @@
-# ENTENDA_CF_PRODUCTION_BATCH_06 — relatório de escala (rascunho + triagem)
+# ENTENDA_CF_PRODUCTION_BATCH_06 — relatório de escala (recalibração de risco)
 
-Data de referência: 2026-10-04 · base `f1a6966` · tag `entenda-batch05-t1-frozen-2026-10-04` intacta (aponta para `342ab9a`).
-Escopo: CF88 arts. 42–75. A missão termina na triagem: **0 HUMAN_APPROVED_T1 concedidos**. AUTO_APPROVE_LOW e AUTO_APPROVE_MEDIUM estão OFF; MICROAUTO_APPLY está OFF.
-Nada foi commitado, tagueado, enviado (push) ou colocado em staging físico. Batch05, Lei Seca, firmware, Relations Engine e SD não foram alterados: nenhum arquivo rastreado foi modificado.
+Data de referência: 2026-10-04 · gerado por `ENTENDA_ENGINE/build_entenda_batch06_candidate.py` (determinístico, só conteúdo versionado) · **WIP: nenhum ENTENDA do Batch06 aprovado** (0 HUMAN_APPROVED_T1 novos; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF).
 
-## Totais
+## Seleção
 
 | | |
 |---|---|
-| Targets analisados | 318 (309 CURRENT + 9 HISTORICAL excluídos: art. 42 §§ 4º–11 e art. 62, parágrafo único) |
-| SELECT | 96 = 93 explicações novas + 3 pilotos aprovados reutilizados (art. 60, art. 60 § 4º, art. 60 § 4º IV) |
-| SKIP | 213, todos com motivo: 141 pela visão geral do artigo, 52 subdivisões de bloco, 20 irmãos cobertos por bloco |
-| Por sub-bloco (CURRENT / novos / SKIP) | A 17/5/12 · B 153/44/109 · C 92/25/64 · D 47/19/28 |
-| Papéis das novas | 33 OVERVIEW · 25 BLOCK · 25 DEVICE · 10 ITEM |
-| Risco | LOW 3 · MEDIUM 1 · HIGH 89 |
-| Filas | A 1 · B 0 · C 3 · D 89 · E 0 |
-| BLOCKs | 25 novos (+1 reutilizado) |
-| Dependências externas | 2: art. 45 § 1º (LC 78/1993: resolver → `EXTERNAL_EVIDENCE_LOCAL_PENDING`, relação PENDING, **não promovida**) e art. 75 (EC 139/2026: `EXTERNAL_VERIFICATION_REQUIRED` na nota) |
-| Itens com jurisprudência | 21 com nota genérica "camada JURISPRUDÊNCIA" (nenhum tribunal, número ou tema no corpo) · 0 recomendações de vínculo |
-| Micro-ajustes automáticos | 0 aplicados · 41 elegíveis (NEAR_COPY_MICROFIX) registrados sem aplicação em `MICRO_ADJUSTMENTS_LOG.json` |
-| Edições da redação (round 0, antes da triagem) | 17 correções + 19 adições de glossário, registradas em `ROUND_0_EDITORIAL_LOG.json` |
-| editorial_checks | Achados reais corrigidos no texto na rodada 0. Depois dela, 25 achados: 13 falsos positivos resolvidos com justificativa (12 itens) e 12 abertos (9 LONG_SENTENCE, 1 par DUPLICATION 62 § 1º × 68 § 1º, 1 LAW_DEPENDENCY_OMITTED no art. 49) |
+| Targets analisados | 318 (309 vigentes + 9 históricos excluídos) |
+| SELECT | 96 = 93 explicações novas + 3 pilotos reutilizados |
+| SKIP | 213 (todos com motivo e explicação que os cobre) |
+| Sub-blocos (vigentes / novas / reutilizadas / SKIP) | A 17/5/0/12 · B 153/44/0/109 · C 92/25/3/64 · D 47/19/0/28 |
+| Papéis das novas | BLOCK 25, DEVICE 25, ITEM 10, OVERVIEW 33 |
 
-## Volume de apresentação
+## Dois eixos
+
+- **LEGAL_RISK** — há risco real de interpretação jurídica incorreta?
+- **VERIFICATION_COMPLEXITY** — quão difícil é verificar o draft deterministicamente?
+Número, percentual, prazo, idade, votos, quórum, BLOCK, lista, artigo longo, remissão simples, dependência de lei e emenda constitucional elevam só a complexidade.
+
+| LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
+|---|---|---|---|---|
+| LOW | 46 | | SIMPLE | 5 |
+| MEDIUM | 36 | | STRUCTURED | 59 |
+| HIGH | 11 | | EXTERNAL | 29 |
+
+Jurisprudência: CONTEXT_ONLY 15, NONE 72, REQUIRED_FOR_CORRECTNESS 6 (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
+
+## Filas
+
+| Fila | Agora | Checkpoint |
+|---|---|---|
+| A_CLEAN_LOW | 42 | 1 |
+| B_CLEAN_MEDIUM | 27 | 0 |
+| C_QUICK_REVIEW | 13 | 3 |
+| D_FULL_HUMAN_REVIEW | 11 | 89 |
+| E_HARD_FAIL | 0 | 0 |
+
+Risco no checkpoint: HIGH 89, LOW 3, MEDIUM 1.
+
+**Migração dos 89 D antigos:** 78 saíram de D → A_CLEAN_LOW 38, B_CLEAN_MEDIUM 27, C_QUICK_REVIEW 13, D_FULL_HUMAN_REVIEW 11.
+
+## Motivos dos D restantes
+
+- CONSTITUTIONAL_AMBIGUITY: 1
+- INTERPRETIVE_CONTROVERSY: 2
+- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 6
+- SANCTION_WITH_INTERPRETATION: 4
+
+- `CF88:ART.51:INC.I` — SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + "tema de interpretação constitucional"
+- `CF88:ART.52:INC.X` — INTERPRETIVE_CONTROVERSY: "objeto de debate"
+- `CF88:ART.52:PAR.UNICO` — SANCTION_WITH_INTERPRETATION: perda do cargo + "questão de interpretação constitucional"
+- `CF88:ART.53:CAPUT` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "é definida pela interpretação"
+- `CF88:ART.53:PAR.1` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "delimitados pela interpretação"
+- `CF88:ART.53:PAR.2` — SANCTION_WITH_INTERPRETATION: presos + "questão de interpretação constitucional"
+- `CF88:ART.55:INC.VI` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "Não se deve concluir apenas"; INTERPRETIVE_CONTROVERSY: "gera dúvidas"; SANCTION_WITH_INTERPRETATION: condenação criminal + "questão tratada pela interpretação constitucional"
+- `CF88:ART.58:PAR.3` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "são definidos pela interpretação"
+- `CF88:ART.62:PAR.6` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "delimitado pela interpretação"
+- `CF88:ART.63` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: nota JURISPRUDENCIA + CONDITION_NOT_IN_TEXT ("desde que guardem relação com o tema do projeto")
+- `CF88:ART.75` — CONSTITUTIONAL_AMBIGUITY: "não é definido nesta explicação"
+
+## Achados que ainda pedem revisão (REVIEW_REQUIRED)
+
+- CONDITION_NOT_IN_TEXT: 1
+- EXCEPTION_OR_RESSALVA_DROPPED: 1
+- EXTERNAL_FACT_NEEDS_PROVENANCE: 1
+- HISTORICAL_CLAIM_UNVERIFIED: 7
+- LIST_ITEM_POSSIBLY_DROPPED: 6
+
+## Falsos positivos corrigidos por regra geral (validator v3)
+
+- AUTOMATIC_CONSEQUENCE: 2 alerta(s) rebaixado(s) para INFO
+- TELEOLOGY_SPECULATIVE: 7 alerta(s) rebaixado(s) para INFO
+- UNIVERSAL_CLAIM: 7 alerta(s) rebaixado(s) para INFO
+- "incentivo(s)" como substantivo do próprio texto ou como matéria da lei não é teleologia; "todos os"/"só pode" que reproduzem quórum/condição explícitos não são universalização; "automaticamente" expresso no artigo não é consequência inventada.
+- Rótulo truncado do fato externo ("Lei Complementar nº 7") passa a mostrar a identificação inteira; fato só na camada externa vai para C (o núcleo T1 não depende dele).
+
+## Correções editoriais desta rodada (ROUND_0B)
+
+21 edições em 19 explicações: DUPLICATION 1, EC_EVIDENCE 1, EXTERNAL 1, LONG_SENTENCE 8, RESSALVA 1, SEMANTIC 2, TELEOLOGY 7 (antes/depois em `RECALIBRATION_EDITORIAL_LOG.json`).
+
+## Volume para o humano
 
 | Métrica | Caracteres |
 |---|---|
-| Total dos rascunhos (5 seções + glossário) | 124.028 |
-| Modelo antigo (pacote completo de todos os itens) | 249.608 |
-| Apresentado (4 pacotes) | 265.430 (A/B 1.151 · C 2.281 · D 261.879 · E 119) |
-| **Redução** | **−6,3 % (aumento)** |
+| Rascunhos (5 seções + glossário) | 124.343 |
+| Modelo antigo (pacote completo de todos os itens) | 245.266 |
+| Checkpoint (pacotes apresentados, D=89) | 265.430 |
+| **Agora (pacotes apresentados)** | **96.146** |
+| — BATCH06_COMPACT_CLEAN_REVIEW.md | 54.547 |
+| — BATCH06_FULL_HUMAN_REVIEW.md | 31.787 |
+| — BATCH06_HARD_FAIL_REPORT.md | 119 |
+| — BATCH06_QUICK_REVIEW.md | 9.693 |
+| Redução vs. modelo antigo | 149.120 (60.8%) |
+| Redução vs. checkpoint | 169.284 (63.8%) |
 
-Não houve redução porque 89 dos 93 itens são HIGH, e a regra de escalonamento manda todo item HIGH para o pacote completo D. O pacote D também acrescenta, por item, gatilhos, vigência e checks.
+Pacote D: GERADO (limite do diagnóstico: 40% em D).
 
-O conteúdo dos arts. 42–75 é denso. Com os gatilhos da missão aplicados literalmente, alguma regra dispara em quase todo artigo: emenda, quórum, prazo, número, imunidade/sanção, ressalva ou lei complementar.
+## Dependências externas
 
-Simulações de calibração (não aplicadas):
+- `CF88:ART.45:PAR.1`: Lei Complementar nº 78, de 1993 · resolver EXTERNAL_EVIDENCE_LOCAL_PENDING via RELATIONS_ENGINE_PENDING
 
-| Ajuste simulado | Itens HIGH |
-|---|---|
-| EC_WORDING só para emendas de 2019 em diante | 86 |
-| + sem NUMBER_OR_PERCENTAGE | 84 |
-| + sem DEADLINE | 76 |
-| + sem BLOCK_MULTI_DEPENDENCY | 74 |
+## Reprodutibilidade
 
-Afrouxar gatilhos não resolve o volume. Se a meta é reduzir o volume, a alavanca é o formato: um "D enxuto", mostrando a Lei Seca e só as frases que acionaram cada gatilho. A decisão é humana.
+- Texto CF/ADCT (sha256 dos bytes lidos, idêntico com arquivo local ou reconstrução do Git): `constituicao_federal_1988.txt` 3100e09700b1c0ce… (reconstruível do Git).
+- Relations Engine: `BATCH06_RELATIONS_PIN.json` (cobertura parcial: só a relação consultada no checkpoint; atualização do pin para todo o escopo = NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY).
+- Determinismo: `python ENTENDA_ENGINE/build_entenda_batch06_candidate.py --determinism 3` (evidência em `DETERMINISM_EVIDENCE.json`).
 
-## Falsos positivos (validator v2, 25 alertas REVIEW_REQUIRED fora do editorial_checks: 17 falsos positivos, 8 verdadeiros)
+## Regressão do validator v3 contra as decisões humanas do Batch05 (só leitura)
 
-- **TELEOLOGY_SPECULATIVE: 14 alertas, 7 falsos positivos.**
-  - Falsos positivos: o substantivo "incentivo(s)", que é termo da própria Lei Seca (arts. 43 e 43 § 2º; arts. 68 e 68 § 2º nos exemplos).
-  - Verdadeiros (7): teleologia que o texto não declara, nos arts. 49 V, 53 § 3º, 57 § 2º, 62 § 1º, 62 § 6º, 64 § 2º e 67. Nesses casos a fila está correta.
-- **UNIVERSAL_CLAIM: 7 de 7 falsos positivos.** "todos os membros" e "só pode" reproduzem quóruns e condições do próprio texto (arts. 43 § 2º, 46, 47, 51 I, 55, 67, 69).
-- **AUTOMATIC_CONSEQUENCE: 2 de 2 falsos positivos.**
-  - 54 I: definição de cargo ad nutum.
-  - 57 § 7º: o § 8º diz "automaticamente incluídas".
-- **EXCEPTION_OR_RESSALVA_DROPPED: 1 falso positivo.** No art. 54 I o exemplo descreve justamente a exceção das cláusulas uniformes.
-- **EXTERNAL_FACT_NEEDS_PROVENANCE: 1 verdadeiro.** Art. 45 § 1º, LC 78/1993: o rótulo do match sai truncado ("nº 7"), o que é só cosmético.
-- **editorial_checks:** 13 falsos positivos resolvidos, entre eles:
-  - "sempre que possível" do texto;
-  - "projeto de lei" lido como dependência de lei;
-  - "com exceção" fora da lista de marcadores;
-  - "devendo submetê-las" tratado como mudança de modalidade.
+- v1 devolvidas pelo humano: 43 · detectadas v2 40 · v3 41 (perdidas pelo v3: nenhuma; ganhas: CF88:ART.37:PAR.9).
+- v1 aprovadas sem mudança: 26 · com alerta v2 8 · v3 14 (custo em ruído dos detectores novos: CONDITION_NOT_IN_TEXT 1, HISTORICAL_CLAIM_UNVERIFIED 3, LIST_ITEM_POSSIBLY_DROPPED 2, NUMBER_NOT_IN_TEXT 1, RESSALVA_OMITTED_IN_SUMMARY 3).
 
-## Padrões jurídicos novos que o validator não detecta
+## Limites do validador
 
-1. **Referente ambíguo em redação recente.** No art. 75, "vedada sua extinção, criação ou instalação": nada impede que a explicação escolha um referente para "sua". Isso foi corrigido à mão na redação (round 0) e o item foi sinalizado.
-2. **Quantidade derivada escrita por extenso.** EXTRAPOLATION_NUMBER só lê algarismos. Exemplos:
-   - "54 dos 81 senadores": foi pego e removido;
-   - "até cento e vinte dias" (art. 62 § 3º): passaria por extenso.
-   - Falta checar números por extenso contra o snapshot.
-3. **Ressalva omitida de um dispositivo SKIP coberto pela visão geral.** O art. 49 II diz "ressalvados os casos previstos em lei complementar". As regras semânticas olham só o snapshot do próprio registro, e não cobram que a visão geral carregue as ressalvas dos itens que ela cobre.
-4. **Jurisprudência velada.** Frases como "foi delimitado pela interpretação constitucional" (art. 62 § 6º) afirmam a existência de precedente sem citar tribunal e escapam de EXTERNAL_CASE_RE.
-5. **Completude de enumeração parafraseada.** O validator não verifica se a paráfrase de uma lista (art. 61 § 1º, art. 62 § 1º, art. 68 § 1º) manteve todos os itens. EXHAUSTIVE_ENUMERATION_RISK cobre só a linguagem de exaustividade.
-6. **Afirmação histórica não verificada.** "Materiais anteriores trazem outra regra" (arts. 66 § 4º, 73 § 1º, 62) depende do histórico da redação, que não é conferido.
-7. **Remissão a artigo fora do snapshot afirmada como texto.** Exemplo: "nos crimes comuns, julgamento pelo Supremo (art. 102, I, b)". O pacote D lista os dispositivos citados, mas não há checagem automática do conteúdo.
-
-## Execuções
-
-| Suíte | Resultado |
-|---|---|
-| ENTENDA (inclui validator v2, Batch05, Batch06, resolver hermético e materialização git) | 164 OK |
-| Batch06 | 12 OK |
-| validator v2 | 18 OK |
-| resolver hermético | 9 OK |
-| materialização git | 2 OK |
-| LEGAL_TARGET_ID | 65 OK |
-| DEVICE_INTEGRATION | 353 OK |
-| editorial_checks, validator v2 (triagem) e validação de targets (engine) | sem HARD_FAIL |
-
-- **Determinismo:** 3 execuções completas do pipeline saíram byte-idênticas (20 arquivos). Um rebuild limpo (corpus e índice apagados) também reproduziu os mesmos hashes (`DETERMINISM_EVIDENCE.json`).
-
-## Arquivos (`ENTENDA_ENGINE/derived/production_batch_06/`)
-
-| Grupo | Arquivos |
-|---|---|
-| Entrada | `BATCH_SPEC.json` (inclui `no_separate_reasons` com os 108 SKIPs explícitos), `BATCH_06_DRAFTS.json`, `BATCH06_TARGET_PLAN.json` (vigência por target), `EDITORIAL_REVIEW_INPUT.json` (risco, regras de fato, termos, resoluções) |
-| Build | `CF88_BATCH_06.entenda.jsonl`, `index/`, `SELECTION_REPORT.json` (SELECT/SKIP por target), `REVIEW_BATCH_06.md`, `JURISPRUDENCE_LINK_RECOMMENDATIONS.json` |
-| Triagem | `EDITORIAL_CHECKS.json`, `REVIEW_BATCH_06_RISK_TRIAGE.md`, `BATCH06_TRIAGE.json`, `MICRO_ADJUSTMENTS_LOG.json`, `ROUND_0_EDITORIAL_LOG.json` |
-| Pacotes | `BATCH06_COMPACT_CLEAN_REVIEW.md` (A/B), `BATCH06_QUICK_REVIEW.md` (C), `BATCH06_FULL_HUMAN_REVIEW.md` (D), `BATCH06_HARD_FAIL_REPORT.md` (E = 0) |
-| Evidência | `BATCH06_MANIFEST.json`, `DETERMINISM_EVIDENCE.json` |
-
-Módulos novos e permanentes (não commitados):
-
-- `ENTENDA_ENGINE/t1_risk.py` (classificador LOW/MEDIUM/HIGH);
-- `ENTENDA_ENGINE/t1_batch_packets.py` (filas A–E, 4 pacotes, métricas, micro-auto);
-- `ENTENDA_ENGINE/tests/test_entenda_batch06.py`.
-
-`BATCH06_SCALE_DRAFT_AND_TRIAGE_READY` — 0 novos HUMAN_APPROVED_T1.
+- NUMBER_NOT_IN_TEXT compara quantidades, nao o sentido: um numero correto do texto usado no lugar errado passa; numeros por extenso so sao lidos em formas cardinais (um..mil) e fracoes (terco, quinto, quarto, metade, decimo); ordinais e datas ficam fora.
+- RESSALVA_OMITTED_IN_SUMMARY reconhece que a explicacao "fala" de um dispositivo por radicais compartilhados (>= 2); parafrase com vocabulario totalmente diferente nao e reconhecida (falso negativo), e dispositivo com explicacao propria no lote nao e cobrado.
+- LIST_ITEM_POSSIBLY_DROPPED usa radicais distintivos de cada item; sinonimos escapam (falso positivo) e omissao em lista curta (< 3 itens) nao e verificada. Listas declaradas seletivas ("entre elas", "por exemplo") nao sao cobradas.
+- EXTERNAL_NORMATIVE_CONTENT_CLAIM depende de verbo de afirmacao normativa perto da referencia; afirmacao implicita sobre lei externa sem esse verbo nao e detectada. Remissao a artigo da propria CF presente no runtime e tratada como ancorada (o pacote D lista o texto).
+- A distincao JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS x CONTEXT_ONLY le os marcadores de dependencia interpretativa que o proprio draft escreve; jurisprudencia necessaria e nao sinalizada pelo draft so e pega quando ha nota da camada e condicao sem base no texto.
+- Nenhum check interpreta juridicamente o dispositivo: eles roteiam risco para revisao humana.

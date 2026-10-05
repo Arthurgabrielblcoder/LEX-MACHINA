@@ -2,4 +2,4 @@
 
 Total: **0**
 
-- 0 itens com HARD_FAIL (validator v2 e contrato de bloqueio do engine).
+- 0 itens com HARD_FAIL (validator v3 e contrato de bloqueio do engine).

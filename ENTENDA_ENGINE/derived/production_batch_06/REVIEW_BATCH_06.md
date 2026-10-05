@@ -347,7 +347,7 @@ O sistema proporcional da Câmara é diferente do sistema majoritário do Senado
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.45`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1942 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1984 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com limites numericos e remissao a lei complementar.
 
 **O QUE DIZ**
@@ -377,7 +377,7 @@ O parágrafo não fixa o número total de deputados: remete à lei complementar.
 
 **CAMADA EXTERNA**
 
-- A lei complementar que fixa o número de deputados e a sua atualização estão na camada de legislação correlata; a fonte estrutural do projeto registra a remissão "Vide Lei Complementar nº 78, de 1993".
+- A fonte estrutural do projeto registra a remissão "Vide Lei Complementar nº 78, de 1993". A relação com essa lei está pendente de validação no Relations Engine (evidência local pendente) e o conteúdo dela não é afirmado nesta explicação.
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.45: 0.229)
 
@@ -544,12 +544,12 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 302 palavras · 2346 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 321 palavras · 2482 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: competencias exclusivas sem sancao; incisos I, V e IX tem explicacao propria, os demais itens curtos sao situados aqui.
 
 **O QUE DIZ**
 
-O art. 49 enumera as competências exclusivas do Congresso Nacional, entre elas: decidir definitivamente sobre tratados que gerem encargos gravosos, autorizar declaração de guerra e celebração de paz, autorizar ausência prolongada do Presidente e do Vice, aprovar estado de defesa e intervenção federal, sustar atos normativos do Executivo, fixar subsídios, julgar as contas do Presidente, fiscalizar o Executivo, autorizar referendo e convocar plebiscito e decretar estado de calamidade pública nacional.
+O art. 49 enumera as competências exclusivas do Congresso Nacional. Entre elas estão: decidir definitivamente sobre tratados que gerem encargos gravosos; autorizar declaração de guerra, celebração de paz e trânsito ou permanência temporária de forças estrangeiras, ressalvados os casos previstos em lei complementar; autorizar ausência do Presidente e do Vice por mais de quinze dias; aprovar estado de defesa e intervenção federal; sustar atos normativos do Executivo; fixar subsídios; julgar as contas do Presidente; fiscalizar o Executivo; autorizar referendo e convocar plebiscito; e decretar estado de calamidade pública nacional.
 
 **O QUE SIGNIFICA**
 
@@ -638,7 +638,7 @@ O inciso fala em encargos ou compromissos gravosos. Quais tratados exigem essa a
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 208 palavras · 1695 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1678 bytes · referências 0
 - **Motivo da seleção:** Item com instituto proprio de controle (veto legislativo), frequente em estudo.
 
 **O QUE DIZ**
@@ -651,7 +651,7 @@ O Executivo pode editar regulamentos para executar as leis (art. 84, IV) e leis 
 
 O inciso dá ao Congresso um meio de reagir diretamente: um decreto legislativo que suspende os efeitos do ato. Não é preciso esperar o Judiciário.
 
-A sustação atinge o ato que exorbita, isto é, que vai além do permitido; não serve para rever atos regulares apenas por discordância política.
+A sustação recai sobre o ato que exorbita, isto é, que vai além do poder regulamentar ou dos limites da delegação legislativa.
 
 **EXEMPLO PRÁTICO**
 
@@ -924,12 +924,12 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 212 palavras · 1756 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1792 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: processo por crime de responsabilidade, aprovacao de autoridades e suspensao de lei tem explicacao propria; competencias financeiras e de organizacao sao situadas aqui.
 
 **O QUE DIZ**
 
-O art. 52 lista as competências privativas do Senado Federal: julgar autoridades por crime de responsabilidade, aprovar a escolha de autoridades, autorizar operações financeiras externas, fixar limites de dívida e de crédito dos entes, suspender lei declarada inconstitucional, aprovar a exoneração antecipada do Procurador-Geral da República, cuidar da sua própria organização e avaliar o Sistema Tributário Nacional.
+O art. 52 lista as competências privativas do Senado Federal. Entre elas estão julgar autoridades por crime de responsabilidade, aprovar a escolha de autoridades, autorizar operações financeiras externas e fixar limites de dívida e de crédito dos entes. Cabe-lhe também suspender lei declarada inconstitucional, aprovar a exoneração antecipada do Procurador-Geral da República, cuidar da sua própria organização e avaliar o Sistema Tributário Nacional.
 
 **O QUE SIGNIFICA**
 
@@ -1059,12 +1059,12 @@ Se a perda do cargo e a inabilitação podem ser votadas separadamente é quest�
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.52`, `CF88:ART.52:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1589 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1622 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com enunciado e alineas que listam as autoridades sujeitas a sabatina.
 
 **O QUE DIZ**
 
-O inciso III exige aprovação prévia do Senado, por voto secreto e após arguição pública, para a escolha de magistrados nos casos previstos na Constituição, Ministros do Tribunal de Contas da União indicados pelo Presidente, Governador de Território, presidente e diretores do Banco Central, Procurador-Geral da República e titulares de outros cargos que a lei determinar.
+O inciso III exige aprovação prévia do Senado, por voto secreto e após arguição pública, para a escolha de certas autoridades. São elas: magistrados, nos casos previstos na Constituição; Ministros do Tribunal de Contas da União indicados pelo Presidente; Governador de Território; presidente e diretores do Banco Central; Procurador-Geral da República; e titulares de outros cargos que a lei determinar.
 
 **O QUE SIGNIFICA**
 
@@ -1336,7 +1336,7 @@ O texto fala em maioria dos membros, isto é, maioria absoluta da Casa, e não d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.53:PAR.4`, `CF88:ART.53:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 2118 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 2086 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 3º, 4º e 5º formam o procedimento de sustacao da acao penal (iniciativa, prazo e efeito sobre a prescricao).
 
 **O QUE DIZ**
@@ -1349,7 +1349,7 @@ O processo penal contra o parlamentar não depende de autorização prévia da C
 
 A Casa pode, depois, sustar o andamento da ação. Para isso, um partido com representação na Casa precisa pedir, e a maioria absoluta dos membros precisa aprovar.
 
-A regra vale só para crime cometido depois da diplomação. O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Como o processo fica parado, a prescrição também fica suspensa enquanto durar o mandato, para evitar que o tempo extinga a punição.
+A regra vale só para crime cometido depois da diplomação. O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Enquanto a ação estiver sustada, a prescrição também fica suspensa, até o fim do mandato (§ 5º).
 
 **EXEMPLO PRÁTICO**
 
@@ -1945,12 +1945,12 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1761 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 238 palavras · 1790 bytes · referências 0
 - **Motivo da seleção:** Visao geral do calendario e das reunioes do Congresso; LDO, Mesas, convocacao extraordinaria e pauta extraordinaria tem explicacoes proprias; os demais itens sao situados aqui.
 
 **O QUE DIZ**
 
-O art. 57 organiza o funcionamento do Congresso Nacional: o calendário anual de reuniões, com dois períodos, um de fevereiro a julho e outro de agosto a dezembro, a transferência de datas que caiam em fim de semana ou feriado, a vinculação do recesso à aprovação da lei de diretrizes orçamentárias, as sessões conjuntas, as sessões preparatórias e a eleição das Mesas, a Mesa do Congresso, a convocação extraordinária e a pauta dessa convocação.
+O art. 57 organiza o funcionamento do Congresso Nacional. Trata do calendário anual de reuniões, com dois períodos, um de fevereiro a julho e outro de agosto a dezembro, e da transferência de datas que caiam em fim de semana ou feriado. Trata ainda da vinculação do recesso à aprovação da lei de diretrizes orçamentárias, das sessões conjuntas, das sessões preparatórias e da eleição das Mesas, da Mesa do Congresso, da convocação extraordinária e da pauta dessa convocação.
 
 **O QUE SIGNIFICA**
 
@@ -1991,7 +1991,7 @@ As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; mate
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 154 palavras · 1294 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1311 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma que vincula a interrupcao da sessao legislativa a votacao da lei de diretrizes orcamentarias.
 
 **O QUE DIZ**
@@ -2002,9 +2002,9 @@ O § 2º impede que a sessão legislativa seja interrompida sem que o projeto da
 
 A lei de diretrizes orçamentárias orienta a elaboração do orçamento do ano seguinte. Sem ela, o processo orçamentário fica comprometido.
 
-Para garantir a votação, a Constituição condiciona o recesso de meio de ano à aprovação desse projeto: enquanto não for aprovado, o Congresso continua em sessão.
+A Constituição condiciona o recesso de meio de ano à aprovação desse projeto: enquanto não for aprovado, o Congresso continua em sessão.
 
-É um incentivo institucional ligado ao calendário, sem sanção pessoal aos parlamentares.
+O parágrafo não prevê sanção pessoal aos parlamentares: a consequência descrita no texto é a continuidade da sessão legislativa.
 
 **EXEMPLO PRÁTICO**
 
@@ -2035,12 +2035,12 @@ O parágrafo fala em aprovação do projeto, e não em sanção da lei. A elabor
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1668 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1690 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo de mandato e vedacao de reconducao, frequente em estudo e com controversia interpretativa.
 
 **O QUE DIZ**
 
-O § 4º prevê sessões preparatórias de cada Casa, a partir de 1º de fevereiro do primeiro ano da legislatura, para a posse dos membros e a eleição das Mesas, com mandato de dois anos e vedada a recondução para o mesmo cargo na eleição imediatamente seguinte.
+O § 4º prevê sessões preparatórias de cada Casa, a partir de 1º de fevereiro do primeiro ano da legislatura, para a posse dos membros e a eleição das Mesas. Os membros da Mesa têm mandato de dois anos e não podem ser reconduzidos ao mesmo cargo na eleição imediatamente seguinte.
 
 **O QUE SIGNIFICA**
 
@@ -2067,7 +2067,7 @@ Como a vedação se aplica quando a eleição ocorre em legislaturas diferentes 
 
 - O alcance da vedação de recondução entre legislaturas e a sua aplicação a Estados e Municípios são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a recondução para o mesmo cargo na eleição)
+**WARNINGS:** —
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -2557,7 +2557,7 @@ Medida provisória não é lei: é ato com força de lei, sujeito à conversão.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 2350 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2485 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos e alineas que listam os limites materiais das medidas provisorias, com ressalva expressa.
 
 **O QUE DIZ**
@@ -2566,9 +2566,9 @@ O § 1º proíbe medida provisória sobre: nacionalidade, cidadania, direitos po
 
 **O QUE SIGNIFICA**
 
-Os limites protegem temas em que a decisão não deve ser tomada por ato unilateral e imediato do Presidente.
+Os limites retiram um conjunto de temas do alcance da medida provisória, que é ato editado pelo Presidente.
 
-Alguns protegem direitos fundamentais, como o direito penal e o eleitoral. Outros protegem a organização de instituições, como o Judiciário e o Ministério Público. O inciso II evita medidas de bloqueio de poupança, e o inciso IV impede que o Presidente use a medida para contornar um projeto já aprovado pelo Congresso.
+Alguns temas envolvem direitos, como o direito penal e o eleitoral. Outros envolvem a organização de instituições, como o Judiciário e o Ministério Público, incluídas a carreira e a garantia de seus membros. O inciso II veda medida que vise à detenção ou ao sequestro de bens, de poupança popular ou de outro ativo financeiro, e o inciso IV veda medida sobre matéria já disciplinada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
 
 A ressalva do art. 167, § 3º, permite medida provisória para abrir créditos extraordinários em despesas imprevisíveis e urgentes.
 
@@ -2590,7 +2590,7 @@ A vedação de direito penal se refere ao texto da alínea b; se medidas provis�
 
 - A admissão de medidas provisórias em matéria penal benéfica e o controle dos créditos extraordinários são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diretrizes orçamentárias orçamento e créditos adicionais e s); TERM_NOT_USED (palavras_dificeis: Limite material)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diretrizes orçamentárias orçamento e créditos adicionais e s); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a carreira e a garantia de seus membros); TERM_NOT_USED (palavras_dificeis: Limite material)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -2744,7 +2744,7 @@ O parecer da comissão mista é etapa constitucional, e não mera formalidade re
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 195 palavras · 1729 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1656 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo de quarenta e cinco dias e efeito sobre as demais deliberacoes da Casa.
 
 **O QUE DIZ**
@@ -2756,8 +2756,6 @@ O § 6º determina que a medida provisória não apreciada em até quarenta e ci
 Passados quarenta e cinco dias sem votação, a medida passa a ter prioridade: as outras deliberações legislativas da Casa ficam paradas até que ela seja votada. É o chamado trancamento de pauta.
 
 O efeito é sucessivo: atinge primeiro a Câmara, onde a votação começa, e depois o Senado.
-
-O objetivo do texto é pressionar o Congresso a decidir dentro do prazo.
 
 **EXEMPLO PRÁTICO**
 
@@ -2978,7 +2976,7 @@ A urgência do § 1º só pode ser pedida para projetos de iniciativa do própri
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.64:PAR.3`, `CF88:ART.64:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.64`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1811 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1797 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º, 3º e 4º formam a regra de prazos (quarenta e cinco dias em cada Casa, dez dias para emendas do Senado, recesso e codigos).
 
 **O QUE DIZ**
@@ -2999,7 +2997,7 @@ O Presidente pede urgência para um projeto sobre segurança pública. A Câmara
 
 **ATENÇÃO**
 
-A exceção para matérias com prazo constitucional determinado evita conflito com outras regras de prazo, como as das medidas provisórias.
+O sobrestamento não alcança as deliberações que tenham prazo constitucional determinado: o § 2º as exclui expressamente.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3010,7 +3008,7 @@ A exceção para matérias com prazo constitucional determinado evita conflito c
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cada qual sucessivamente em até quarenta e cinco); TERM_NOT_USED (palavras_dificeis: Sobrestamento)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cada qual sucessivamente em até quarenta e cinco)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -3218,12 +3216,12 @@ A redação atual do § 4º foi dada pela Emenda Constitucional nº 76, de 2013;
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1322 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1325 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazos e sequencia de autoridades responsaveis pela promulgacao.
 
 **O QUE DIZ**
 
-O § 7º determina que, se o Presidente da República não promulgar a lei em quarenta e oito horas, nos casos de sanção tácita e de veto derrubado, o Presidente do Senado a promulgue, e, se este não o fizer no mesmo prazo, a tarefa caiba ao Vice-Presidente do Senado.
+O § 7º trata da promulgação nos casos de sanção tácita e de veto derrubado. Se o Presidente da República não promulgar a lei em quarenta e oito horas, o Presidente do Senado a promulga; se este não o fizer no mesmo prazo, a tarefa cabe ao Vice-Presidente do Senado.
 
 **O QUE SIGNIFICA**
 
@@ -3266,7 +3264,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1420 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 168 palavras · 1316 bytes · referências 0
 - **Motivo da seleção:** Artigo de caput unico com regra autonoma e quorum para excecao.
 
 **O QUE DIZ**
@@ -3278,8 +3276,6 @@ O art. 67 determina que a matéria de projeto de lei rejeitado só possa ser obj
 É o chamado princípio da irrepetibilidade. Rejeitado um projeto, o mesmo tema não volta, em regra, a ser apresentado no mesmo ano legislativo.
 
 A exceção exige apoio amplo: a nova proposta precisa ser assinada pela maioria absoluta dos membros da Câmara ou do Senado.
-
-A regra evita que o Congresso seja obrigado a decidir repetidamente a mesma questão em curto período.
 
 **EXEMPLO PRÁTICO**
 
@@ -3360,12 +3356,12 @@ Lei delegada não se confunde com medida provisória: depende de autorização p
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.68`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1823 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 1912 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos que listam os limites materiais da delegacao.
 
 **O QUE DIZ**
 
-O § 1º proíbe delegar os atos de competência exclusiva do Congresso, os de competência privativa da Câmara ou do Senado, a matéria reservada a lei complementar e a legislação sobre organização do Judiciário e do Ministério Público e garantias de seus membros; sobre nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e sobre planos plurianuais, diretrizes orçamentárias e orçamentos.
+Pelo § 1º, ficam fora da delegação três grupos. O primeiro reúne os atos de competência exclusiva do Congresso e os de competência privativa da Câmara ou do Senado. O segundo é a matéria reservada a lei complementar. O terceiro é a legislação sobre: organização do Judiciário e do Ministério Público, incluídas a carreira e as garantias dos seus membros; nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e planos plurianuais, diretrizes orçamentárias e orçamentos.
 
 **O QUE SIGNIFICA**
 
@@ -3691,12 +3687,12 @@ Não confundir com o inciso II: as contas dos demais administradores são julgad
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1638 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 199 palavras · 1660 bytes · referências 0
 - **Motivo da seleção:** Inciso de competencia decisoria propria do TCU, com sancao potencial; distingue-se do parecer do inciso I.
 
 **O QUE DIZ**
 
-O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal, e também as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos.
+O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal. Também cabe ao Tribunal julgar as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos.
 
 **O QUE SIGNIFICA**
 
@@ -3737,12 +3733,12 @@ Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efei
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 212 palavras · 1832 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1859 bytes · referências 0
 - **Motivo da seleção:** Inciso com excecao (cargos em comissao) e ressalva (melhorias posteriores); tema de alto impacto previdenciario.
 
 **O QUE DIZ**
 
-O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em comissão, e das concessões de aposentadorias, reformas e pensões, ficando de fora as melhorias posteriores que não mudem o fundamento legal da concessão.
+O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em comissão. Também examina a legalidade das concessões de aposentadorias, reformas e pensões, ficando de fora as melhorias posteriores que não mudem o fundamento legal da concessão.
 
 **O QUE SIGNIFICA**
 
@@ -3829,12 +3825,12 @@ As sanções concretas e seus limites estão na lei orgânica do Tribunal, cuja 
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** `CF88:ART.71:INC.X`
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1475 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1488 bytes · referências 0
 - **Motivo da seleção:** Bloco: incisos IX e X formam uma sequencia (prazo para correcao e sustacao se nao atendido).
 
 **O QUE DIZ**
 
-Os incisos IX e X permitem ao Tribunal, diante de ilegalidade, fixar prazo para que o órgão ou entidade tome as medidas necessárias ao cumprimento da lei e, se não for atendido, suspender a execução do ato questionado, comunicando a decisão à Câmara e ao Senado.
+Os incisos IX e X tratam da reação do Tribunal diante de ilegalidade. Ele pode fixar prazo para que o órgão ou entidade tome as medidas necessárias ao cumprimento da lei e, se não for atendido, sustar a execução do ato impugnado, comunicando a decisão à Câmara e ao Senado.
 
 **O QUE SIGNIFICA**
 
@@ -3861,7 +3857,7 @@ A sustação direta pelo Tribunal vale para atos, e não para contratos. A disti
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a execução do ato impugnado comunicando a decisão)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -4344,12 +4340,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2465 bytes · referências 2
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2636 bytes · referências 2
 - **Motivo da seleção:** Artigo com redacao recente atribuida a EC (139/2026 na fonte canonica), com vedacao de extincao, criacao ou instalacao; explicar apenas o texto do runtime e sinalizar verificacao externa.
 
 **O QUE DIZ**
 
-O art. 75 afirma que os Tribunais de Contas são instituições permanentes e essenciais ao controle externo. Manda aplicar, no que couber, as regras desta Seção aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios, quanto a sua organização, composição e fiscalização, e proíbe a sua extinção, criação ou instalação. O parágrafo único remete às Constituições estaduais e fixa em sete o número de conselheiros.
+O art. 75 afirma que os Tribunais de Contas são instituições permanentes e essenciais ao controle externo. Manda aplicar, no que couber, as regras desta Seção aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios, quanto à organização, à composição e à fiscalização. A parte final do caput diz "vedada sua extinção, criação ou instalação". O parágrafo único remete às Constituições estaduais e fixa em sete o número de conselheiros.
 
 **O QUE SIGNIFICA**
 
@@ -4365,7 +4361,7 @@ Um Estado organiza o seu Tribunal de Contas na Constituição estadual, com sete
 
 **ATENÇÃO**
 
-A redação atual do caput é atribuída pela fonte a emenda constitucional recente, e o alcance exato da vedação de extinção, criação ou instalação deve ser conferido na redação oficial vigente. A relação com a regra do art. 31, § 4º, sobre tribunais municipais, também exige verificação.
+A redação atual do caput é atribuída pela fonte a emenda constitucional recente. O texto não explicita a quais tribunais se refere o pronome "sua" na vedação de extinção, criação ou instalação, e a relação com a regra do art. 31, § 4º, sobre tribunais municipais, exige verificação.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4375,7 +4371,7 @@ A redação atual do caput é atribuída pela fonte a emenda constitucional rece
 
 **CAMADA EXTERNA**
 
-- Redação do caput atribuída na fonte canônica à Emenda Constitucional nº 139, de 2026: EXTERNAL_VERIFICATION_REQUIRED sobre redação oficial vigente e alcance da vedação.
+- A redação do caput consta da compilação oficial monovigente do Senado Federal versionada no projeto (norma 579494); a fonte canônica estrutural a atribui à Emenda Constitucional nº 139, de 2026. O referente de "sua" na vedação final e a relação com o art. 31, § 4º, exigem revisão humana (ambiguidade semântica).
 - A aplicação do modelo federal aos Tribunais de Contas estaduais por simetria é tema da camada JURISPRUDÊNCIA.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de contas dos estados e do distrito federal); TERM_NOT_USED (palavras_dificeis: Simetria)

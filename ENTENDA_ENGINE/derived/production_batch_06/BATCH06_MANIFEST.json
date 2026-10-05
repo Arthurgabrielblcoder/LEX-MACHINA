@@ -1,16 +1,17 @@
 {
- "schema_version": 1,
+ "schema_version": 2,
  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
  "as_of": "2026-10-04",
- "base_commit": "f1a6966ad35e5786a88e1f4806cef6bf1a65d3ba",
- "frozen_tag": "entenda-batch05-t1-frozen-2026-10-04 (inalterada)",
- "status": "DRAFT_AND_TRIAGE; 0 HUMAN_APPROVED_T1 concedidos; sem commit/tag/push/staging",
+ "status": "WIP_CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado; triagem recalibrada",
+ "builder": "ENTENDA_ENGINE/build_entenda_batch06_candidate.py",
+ "validator": "T1_VALIDATOR_V3 (A6 + recalibracao Batch06, 2026-10-05)",
  "selection": {
   "targets_evaluated": 318,
   "current": 309,
   "selected": 96,
   "new": 93,
   "reused": 3,
+  "skip": 213,
   "by_classification": {
    "BLOCK": 26,
    "DEVICE": 25,
@@ -21,58 +22,90 @@
   }
  },
  "queues": {
-  "A_CLEAN_LOW": 1,
-  "B_CLEAN_MEDIUM": 0,
-  "C_QUICK_REVIEW": 3,
-  "D_FULL_HUMAN_REVIEW": 89,
+  "A_CLEAN_LOW": 42,
+  "B_CLEAN_MEDIUM": 27,
+  "C_QUICK_REVIEW": 13,
+  "D_FULL_HUMAN_REVIEW": 11,
   "E_HARD_FAIL": 0
  },
- "risk": {
-  "LOW": 3,
-  "MEDIUM": 1,
-  "HIGH": 89
+ "legal_risk": {
+  "LOW": 46,
+  "MEDIUM": 36,
+  "HIGH": 11
+ },
+ "verification_complexity": {
+  "STRUCTURED": 59,
+  "EXTERNAL": 29,
+  "SIMPLE": 5
  },
  "metrics": {
-  "total_draft_chars": 124028,
-  "old_model_full_package_chars": 249608,
-  "presented_chars": 265430,
+  "total_draft_chars": 124343,
+  "old_model_full_package_chars": 245266,
+  "presented_chars": 96146,
   "presented_by_file": {
-   "BATCH06_COMPACT_CLEAN_REVIEW.md": 1151,
-   "BATCH06_QUICK_REVIEW.md": 2281,
-   "BATCH06_FULL_HUMAN_REVIEW.md": 261879,
-   "BATCH06_HARD_FAIL_REPORT.md": 119
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 54547,
+   "BATCH06_FULL_HUMAN_REVIEW.md": 31787,
+   "BATCH06_HARD_FAIL_REPORT.md": 119,
+   "BATCH06_QUICK_REVIEW.md": 9693
   },
-  "reduction_pct": -6.3
+  "reduction_abs": 149120,
+  "reduction_pct": 60.8,
+  "checkpoint_presented_chars": 265430
  },
- "micro_adjustments": {
-  "applied": 0,
-  "eligible": 41,
-  "microauto_apply": false
+ "text_source": {
+  "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt": {
+   "sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "reconstructible_from_git": true
+  }
  },
- "determinism": {
-  "runs": 3,
-  "byte_identical": true
+ "inputs_global_sha256_lf": {
+  "ENTENDA_ENGINE/editorial/T1_EXTERNAL_CATALOG.json": "9bbaaa90ec7bf073d4c39d8ee814f3292bd2e52c52daea10188b8613e2087037",
+  "ENTENDA_ENGINE/editorial/T1_KNOWN_RESOLUTIONS.json": "79b006c7c633dc616e11615cdd5497b61467fd9bb272ab15a7ec369722e9434f",
+  "ENTENDA_ENGINE/editorial/T1_PIPELINE_CONFIG.json": "825836ef68017cceedeb76532ebf99ac2432c9884abaac28be26e85f8f398962",
+  "ENTENDA_ENGINE/editorial/T1_SEMANTIC_AMBIGUITY_REGISTRY.json": "39cae43dc89bb56e55e5d02719fb024164c2ccf510f6633c4fbc462a4da19c82",
+  "ENTENDA_ENGINE/editorial/TEXT_SOURCE_RECONSTRUCTION.json": "ec7c1556b57d82cc736d19fbfa0ffb887df9e54f02a546045c573d305353113f",
+  "ENTENDA_ENGINE/entenda_config.json": "d55bc1510c4603ae1e34fb0cdf4a0b54d7ff9d1c2b5865f4e77ec667b308b0e7",
+  "LEGAL_TARGET_ID/derived/CF88_TARGET_INDEX.json": "63a93c4477ec9e440c6ee279427fd33d59cc1835279e2501c2d3bf7098e7a2c2",
+  "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json": "5b88efebe9b41dae2cb3439805110e1e576d1c2a7ee67f1bdf4017dfa603a53b",
+  "updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2"
+ },
+ "code_sha256_lf": {
+  "build_entenda_batch06_candidate.py": "638ab8fbf5381a112e647ee30cacf7a1f1e1a107a7714d18df5d2c20406a6c79",
+  "t1_batch_packets.py": "9102b7f8177fc4b6ffa5faea931be0f8087d5312e47d7c7de0da1d5ebb21eabb",
+  "t1_risk.py": "ac6980af49138b15368d3eff347639311cda0a25b8f90ff556f0565414c55c40",
+  "t1_validator_v3.py": "bbbe2cc3f68ca635c7e3ea70245c4669128ebef7ecd1f22c1d21f4aca394e824",
+  "t1_validator_v2.py": "c4f3f01707672f4850d4522724bd4aea00acbd91eeadb7f93a9e10914f4fa71a",
+  "t1_triage.py": "e049f7becba19c0d3455c22f353a7fab7d251edbbf7e2c2f4627e9b8e987eda0",
+  "t1_external_resolver.py": "0ee813ad95c1726351c147125882b83e56bb211f9f7e43ad7731c9d41101ae4a",
+  "editorial_checks.py": "da9b5d1d75f52cae93b49cd65ee5c0e1ca525d4ba0e4c7eb8a46b6b050229bfc",
+  "production_batch.py": "136bfac9153fbd6f1a1a109b3d632521a594a3a858a62b4121534c6a9e261696",
+  "entenda_engine.py": "5e3a16e8fc7737bab061edcb32dbef51447ca81932d21dd20ab0f6b28cb028c4",
+  "text_source_reconstruction.py": "6d57e18f438c6811ddc28f684a11541eff0d2e7ec353523f69ff0c3e3c2ceb93"
  },
  "files": {
-  "BATCH06_COMPACT_CLEAN_REVIEW.md": "c103b8a967c5b83900238b6db3e96fe15820f3180c1c0d8341ac2eca4fa76d65",
-  "BATCH06_FULL_HUMAN_REVIEW.md": "9cb4e2328b76ccd3f8d0ea15bdb71e52d337accea55abecebb9f53b4d7dd77a5",
-  "BATCH06_HARD_FAIL_REPORT.md": "08a6fca5fb85ebc6660310930c6918e0b61bfdb14551f33f3dc67c765092a87d",
-  "BATCH06_QUICK_REVIEW.md": "f3d4ebaf528c0f99b5342c981cf1aae2dfbf0e4ce4fca3708e91f26da81fa753",
-  "BATCH06_TARGET_PLAN.json": "8630b9611300eda83a7ccb8f3d8a91165eb7fa67c7910c9c38ede8701bc7ebc6",
-  "BATCH06_TRIAGE.json": "fb14b09e61104bb404d1ffd634a8feadaf0d28feb5c9567734cf07a8206dbd87",
-  "BATCH_06_DRAFTS.json": "dbd16c6002cd068faec5ff2164c3632308a604b7602e91201fea81ef9cc32390",
   "BATCH_SPEC.json": "214b8bfd39a1a89ffdebc1cfadc4344ae7ffcf1698d6c897e2d279ba05d4d0ad",
-  "CF88_BATCH_06.entenda.jsonl": "d03e56dc01fb62d14e2d6de1b190adb36d812f4e2cddffc3c8ebb23b5a8da3d7",
-  "EDITORIAL_CHECKS.json": "90b880143a8e11b33e2a7a176ed612fa44844e2638d07e882764fe53709917a6",
-  "EDITORIAL_REVIEW_INPUT.json": "e0755079064955702c2322962fcea822f16b8eabd4b318051dfa1b0b512b0716",
-  "index/ENTENDA_BUILD_MANIFEST.json": "c3cd944f76e4251f72c3258854b27328dccc95da7958c564ed2c4da1139ebe95",
-  "index/ENTENDA_LOOKUP.IDX": "7d26a63750c4dc658e9366e5eb2bc8eb0c20a0910183aef3416cb51f1c680b96",
-  "index/ENTENDA_PAYLOAD.DAT": "28bd9b37309ee4e815f05016baa4e739b0619b131a94e1acd41e47dabba1e053",
-  "JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "46692911261697259bc963f73ad024be81ffe0e97e9d315a3419c32a24327019",
-  "MICRO_ADJUSTMENTS_LOG.json": "64513ac3eb1821e880b56fd1e40babac4cf332eb88924cf1df87cd41bccbb8aa",
-  "REVIEW_BATCH_06.md": "1e3dae4024e257329347e82f3ca1d004d69b8dd5a284955c69c4c48ca9d896d2",
-  "REVIEW_BATCH_06_RISK_TRIAGE.md": "005f3856ec74b9f23f5e9c090b6e06b1c7ef42000b7bd197e27ec4cb410a4c10",
+  "BATCH_06_DRAFTS.json": "978688ce1df8ffe101672e5e3a623cf655ba2d1700927e93e6ca039cdf3f5f25",
+  "BATCH06_TARGET_PLAN.json": "8630b9611300eda83a7ccb8f3d8a91165eb7fa67c7910c9c38ede8701bc7ebc6",
+  "EDITORIAL_REVIEW_INPUT.json": "f7e47f6c43eea4428a45d04f1eef8f3f01745d1c25be9e1cf6d1bd1f712ec513",
+  "BATCH06_RELATIONS_PIN.json": "3df9b1153d6b03438f67207a68e84fe6864b656afd3dc072ea5c41200761bc86",
+  "PRE_RECALIBRATION_MANIFEST.json": "ce4ad807258712e61a57a4946dd957cd879418eb255113da2d0fe9632cc20815",
+  "RECALIBRATION_EDITORIAL_LOG.json": "1aa29599bacedd581f2a25990afa3ba678190737948be85002fee15a10c4c686",
   "ROUND_0_EDITORIAL_LOG.json": "6b487cd6d2f2f158b6ae97e08d28f249dabc06b0ffaad10c9170e707670efdb5",
-  "SELECTION_REPORT.json": "62c520c15d85a24f21683b51a5712d730e56ce4c7cead687793faf53535d0c67"
+  "CF88_BATCH_06.entenda.jsonl": "f3f9988a58958074ba5b5a6a3dd3df4d627f204390c0f6cf58079cbd5603b441",
+  "index/ENTENDA_BUILD_MANIFEST.json": "5e035f573603cb86ad554cd466c8cf76737ef0688d528901a06fff3874bad48e",
+  "index/ENTENDA_LOOKUP.IDX": "532b8eb6a56baa07b4de2e988e932bbc4674e567c14f891eea5d25ae62522b22",
+  "index/ENTENDA_PAYLOAD.DAT": "47c614f4b62c234dbae5bd007f5d5242d6387af188619238056b0fd2ee782d99",
+  "SELECTION_REPORT.json": "10d9a86753dc297fb3ffb85a21e70890401d71d1c1f9a0c222f590fcc45c4246",
+  "JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "46692911261697259bc963f73ad024be81ffe0e97e9d315a3419c32a24327019",
+  "REVIEW_BATCH_06.md": "1c5ec69e2d6394178e7ebda20f3912dd5ceb84e9c4a93b6e27d18e62c2e69a2b",
+  "EDITORIAL_CHECKS.json": "532123f3a537a0793b38fb17570f4a79a412fe3c9e66e42af435bfa3c933247b",
+  "REVIEW_BATCH_06_RISK_TRIAGE.md": "fc4f2f5f2220e45899293a78c644e6ad1488296779f3d7b5d366447665be3b6c",
+  "BATCH06_TRIAGE.json": "3b0a9ef3ab81a3cf8a1334f6cb583a740689450f978deda3d69fa39a520ca10c",
+  "BATCH06_COMPACT_CLEAN_REVIEW.md": "c5c4f43b314658dc7939957e541a0fad8ff2ed86521edb1e052ff40ce811fc43",
+  "BATCH06_QUICK_REVIEW.md": "64a27d66d7e68a32507065487a6e0596c4b7f9af58375e6b6b026363e1d1c78b",
+  "BATCH06_FULL_HUMAN_REVIEW.md": "df03fb642904f23489c1b5b147742ab014c63bf068a8fefa9e5be2db2c3a910e",
+  "BATCH06_HARD_FAIL_REPORT.md": "563b2142300168b4a7fd0a2b57a8ab271962989821b1c08f97766c0ea3185525",
+  "MICRO_ADJUSTMENTS_LOG.json": "e021f44c7ff6c052881aaf632f73a7ac34ef6a93422da3c02bc5e9727ec1d459",
+  "BATCH06_SCALE_REPORT.md": "6aa41a28407f8daa1adfb0b8c7c07c5575c72209408f72c555b3a80c1dfd9b4a"
  }
 }
