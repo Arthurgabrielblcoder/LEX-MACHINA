@@ -5,108 +5,108 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 249 explicações novas, todas `PENDING_HUMA
 | # | Fila | Risco | Complexidade | Target | Título | Motivo principal |
 |---|---|---|---|---|---|---|
 | 1 | D | HIGH | EXTERNAL | `CF88:ART.82` | Art. 82 — Duração e início do mandato presidencial | TRANSITION_OR_TEMPORAL |
-| 2 | D | HIGH | EXTERNAL | `CF88:ART.100` | Art. 100 — Precatórios | JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 3 | D | HIGH | EXTERNAL | `CF88:ART.100:PAR.5` | Art. 100, § 5º — Inclusão dos precatórios no orçamento | TRANSITION_OR_TEMPORAL |
-| 4 | D | HIGH | EXTERNAL | `CF88:ART.100:PAR.9` | Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa | JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 5 | D | HIGH | EXTERNAL | `CF88:ART.100:PAR.12` | Art. 100, § 12 — Atualização e juros dos precatórios | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 6 | D | HIGH | EXTERNAL | `CF88:ART.102:PAR.2` | Art. 102, § 2º — Efeito vinculante nas ações de controle | JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 7 | D | HIGH | EXTERNAL | `CF88:ART.105:PAR.2` | Art. 105, §§ 2º e 3º — Relevância no recurso especial | TRANSITION_OR_TEMPORAL |
-| 8 | D | HIGH | EXTERNAL | `CF88:ART.114` | Art. 114 — Competência da Justiça do Trabalho | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 9 | D | HIGH | EXTERNAL | `CF88:ART.114:INC.I` | Art. 114, inciso I — Ações oriundas da relação de trabalho | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
-| 10 | D | HIGH | EXTERNAL | `CF88:ART.114:PAR.1` | Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 11 | D | HIGH | EXTERNAL | `CF88:ART.114:PAR.3` | Art. 114, § 3º — Greve em atividade essencial | JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 12 | D | HIGH | EXTERNAL | `CF88:ART.142` | Art. 142 — Forças Armadas | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, INTERPRETIVE_CONTROVERSY |
-| 13 | D | HIGH | EXTERNAL | `CF88:ART.142:PAR.2` | Art. 142, § 2º — Habeas corpus e punições disciplinares militares | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
-| 14 | D | HIGH | EXTERNAL | `CF88:ART.153:PAR.3` | Art. 153, § 3º — Regras do imposto sobre produtos industrializados | TRANSITION_OR_TEMPORAL |
-| 15 | D | HIGH | EXTERNAL | `CF88:ART.155:PAR.6` | Art. 155, § 6º — Imposto sobre a propriedade de veículos | TRANSITION_OR_TEMPORAL |
-| 16 | D | HIGH | EXTERNAL | `CF88:ART.156-A` | Art. 156-A — Imposto sobre bens e serviços | TRANSITION_OR_TEMPORAL |
-| 17 | D | HIGH | EXTERNAL | `CF88:ART.159-A` | Art. 159-A — Fundo Nacional de Desenvolvimento Regional | TRANSITION_OR_TEMPORAL |
-| 18 | D | HIGH | EXTERNAL | `CF88:ART.165:PAR.18` | Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026 | TRANSITION_OR_TEMPORAL |
-| 19 | D | HIGH | EXTERNAL | `CF88:ART.166` | Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 20 | D | HIGH | EXTERNAL | `CF88:ART.166:PAR.9` | Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais | JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 21 | D | HIGH | EXTERNAL | `CF88:ART.166:PAR.11` | Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 22 | D | HIGH | EXTERNAL | `CF88:ART.166-A` | Art. 166-A — Transferências por emendas individuais | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
-| 23 | D | HIGH | STRUCTURED | `CF88:ART.158` | Art. 158 — Receitas tributárias dos Municípios | TRANSITION_OR_TEMPORAL |
-| 24 | D | HIGH | STRUCTURED | `CF88:ART.158:PAR.1` | Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios | TRANSITION_OR_TEMPORAL |
-| 25 | B | MEDIUM | EXTERNAL | `CF88:ART.84:INC.XII` | Art. 84, inciso XII — Indulto e comutação de penas | JURISPRUDENCE_CONTEXT_ONLY |
-| 26 | B | MEDIUM | EXTERNAL | `CF88:ART.85` | Art. 85 — Crimes de responsabilidade do Presidente | SENSITIVE_THEME |
-| 27 | B | MEDIUM | EXTERNAL | `CF88:ART.86:PAR.3` | Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
-| 28 | B | MEDIUM | EXTERNAL | `CF88:ART.92` | Art. 92 — Órgãos do Poder Judiciário | JUDICIAL_REVIEW_CONTEXT_ONLY |
-| 29 | B | MEDIUM | EXTERNAL | `CF88:ART.93` | Art. 93 — Estatuto da Magistratura | SENSITIVE_THEME |
-| 30 | B | MEDIUM | EXTERNAL | `CF88:ART.93:INC.I` | Art. 93, inciso I — Ingresso na magistratura | JURISPRUDENCE_CONTEXT_ONLY |
-| 31 | B | MEDIUM | EXTERNAL | `CF88:ART.93:INC.XII` | Art. 93, inciso XII — Atividade jurisdicional ininterrupta | JURISPRUDENCE_CONTEXT_ONLY |
-| 32 | B | MEDIUM | EXTERNAL | `CF88:ART.97` | Art. 97 — Cláusula de reserva de plenário | JURISPRUDENCE_CONTEXT_ONLY |
-| 33 | B | MEDIUM | EXTERNAL | `CF88:ART.98` | Art. 98 — Juizados especiais e justiça de paz | JUDICIAL_REVIEW_CONTEXT_ONLY |
-| 34 | B | MEDIUM | EXTERNAL | `CF88:ART.100:PAR.1` | Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência | JURISPRUDENCE_CONTEXT_ONLY |
-| 35 | B | MEDIUM | EXTERNAL | `CF88:ART.102` | Art. 102 — Competências do Supremo Tribunal Federal | SENSITIVE_THEME, JUDICIAL_REVIEW_CONTEXT_ONLY |
-| 36 | B | MEDIUM | EXTERNAL | `CF88:ART.102:INC.I` | Art. 102, inciso I — Competência originária do Supremo | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
-| 37 | B | MEDIUM | EXTERNAL | `CF88:ART.103` | Art. 103 — Quem pode propor as ações de controle | JURISPRUDENCE_CONTEXT_ONLY |
-| 38 | B | MEDIUM | EXTERNAL | `CF88:ART.103:PAR.1` | Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle | JURISPRUDENCE_CONTEXT_ONLY |
-| 39 | B | MEDIUM | EXTERNAL | `CF88:ART.103-A` | Art. 103-A — Enunciado com efeito vinculante do Supremo | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, CONTROVERSY_TERM_FROM_LEI_SECA |
-| 40 | B | MEDIUM | EXTERNAL | `CF88:ART.103-A:PAR.3` | Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante | SENSITIVE_THEME |
-| 41 | B | MEDIUM | EXTERNAL | `CF88:ART.103-B:PAR.4` | Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
-| 42 | B | MEDIUM | EXTERNAL | `CF88:ART.105:INC.III` | Art. 105, inciso III — Recurso especial | JURISPRUDENCE_CONTEXT_ONLY |
-| 43 | B | MEDIUM | EXTERNAL | `CF88:ART.109:INC.I` | Art. 109, inciso I — Causas cíveis de interesse da União | JURISPRUDENCE_CONTEXT_ONLY |
-| 44 | B | MEDIUM | EXTERNAL | `CF88:ART.109:PAR.1` | Art. 109, §§ 1º e 2º — Onde propor as ações da União | JURISPRUDENCE_CONTEXT_ONLY |
-| 45 | B | MEDIUM | EXTERNAL | `CF88:ART.109:PAR.5` | Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos | JURISPRUDENCE_CONTEXT_ONLY |
-| 46 | B | MEDIUM | EXTERNAL | `CF88:ART.124` | Art. 124 — Competência da Justiça Militar | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
-| 47 | B | MEDIUM | EXTERNAL | `CF88:ART.125:PAR.2` | Art. 125, § 2º — Controle de constitucionalidade estadual | JURISPRUDENCE_CONTEXT_ONLY |
-| 48 | B | MEDIUM | EXTERNAL | `CF88:ART.125:PAR.3` | Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
-| 49 | B | MEDIUM | EXTERNAL | `CF88:ART.128:PAR.3` | Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal | JURISPRUDENCE_CONTEXT_ONLY |
-| 50 | B | MEDIUM | EXTERNAL | `CF88:ART.129` | Art. 129 — Funções institucionais do Ministério Público | JURISPRUDENCE_CONTEXT_ONLY |
-| 51 | B | MEDIUM | EXTERNAL | `CF88:ART.130` | Art. 130 — Ministério Público junto aos Tribunais de Contas | JURISPRUDENCE_CONTEXT_ONLY |
-| 52 | B | MEDIUM | EXTERNAL | `CF88:ART.133` | Art. 133 — Advocacia | SENSITIVE_THEME |
-| 53 | B | MEDIUM | EXTERNAL | `CF88:ART.144:PAR.8` | Art. 144, § 8º — Guardas municipais | JURISPRUDENCE_CONTEXT_ONLY |
-| 54 | B | MEDIUM | EXTERNAL | `CF88:ART.145:INC.II` | Art. 145, inciso II — Taxas | JURISPRUDENCE_CONTEXT_ONLY |
-| 55 | B | MEDIUM | EXTERNAL | `CF88:ART.146:PAR.1` | Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 56 | B | MEDIUM | EXTERNAL | `CF88:ART.149-B` | Art. 149-B — Regras comuns ao IBS e à CBS | SENSITIVE_THEME, TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 57 | B | MEDIUM | EXTERNAL | `CF88:ART.149-C` | Art. 149-C — Tributação das compras públicas | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 58 | B | MEDIUM | EXTERNAL | `CF88:ART.150:INC.IV` | Art. 150, inciso IV — Vedação ao confisco | JURISPRUDENCE_CONTEXT_ONLY |
-| 59 | B | MEDIUM | EXTERNAL | `CF88:ART.150:INC.VI` | Art. 150, inciso VI — Imunidades tributárias | JURISPRUDENCE_CONTEXT_ONLY |
-| 60 | B | MEDIUM | EXTERNAL | `CF88:ART.150:PAR.2` | Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca | JURISPRUDENCE_CONTEXT_ONLY |
-| 61 | B | MEDIUM | EXTERNAL | `CF88:ART.150:PAR.7` | Art. 150, § 7º — Substituição tributária para frente | JURISPRUDENCE_CONTEXT_ONLY |
-| 62 | B | MEDIUM | EXTERNAL | `CF88:ART.151` | Art. 151 — Limitações ao poder de tributar da União | JURISPRUDENCE_CONTEXT_ONLY |
-| 63 | B | MEDIUM | EXTERNAL | `CF88:ART.153` | Art. 153 — Impostos da União | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 64 | B | MEDIUM | EXTERNAL | `CF88:ART.153:PAR.6` | Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 65 | B | MEDIUM | EXTERNAL | `CF88:ART.155` | Art. 155 — Impostos dos Estados e do Distrito Federal | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 66 | B | MEDIUM | EXTERNAL | `CF88:ART.155:PAR.2` | Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 67 | B | MEDIUM | EXTERNAL | `CF88:ART.155:PAR.2:INC.VII` | Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado | JURISPRUDENCE_CONTEXT_ONLY |
-| 68 | B | MEDIUM | EXTERNAL | `CF88:ART.156` | Art. 156 — Impostos dos Municípios | SENSITIVE_THEME, TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 69 | B | MEDIUM | EXTERNAL | `CF88:ART.156:PAR.2` | Art. 156, § 2º — Imposto sobre a transmissão de imóveis | JURISPRUDENCE_CONTEXT_ONLY |
-| 70 | B | MEDIUM | EXTERNAL | `CF88:ART.156-A:PAR.5` | Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 71 | B | MEDIUM | EXTERNAL | `CF88:ART.159:INC.I` | Art. 159, inciso I — Fundos de participação | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 72 | B | MEDIUM | EXTERNAL | `CF88:ART.167` | Art. 167 — Vedações orçamentárias | SENSITIVE_THEME |
-| 73 | B | MEDIUM | EXTERNAL | `CF88:ART.169` | Art. 169 — Limites de despesa com pessoal | SENSITIVE_THEME |
-| 74 | B | MEDIUM | EXTERNAL | `CF88:ART.169:PAR.3` | Art. 169, §§ 3º, 4º, 5º, 6º e 7º — Redução da despesa com pessoal | SENSITIVE_THEME |
-| 75 | B | MEDIUM | STRUCTURED | `CF88:ART.83` | Art. 83 — Ausência do País e perda do cargo | SENSITIVE_THEME |
-| 76 | B | MEDIUM | STRUCTURED | `CF88:ART.86` | Art. 86 — Processo e julgamento do Presidente | SENSITIVE_THEME |
-| 77 | B | MEDIUM | STRUCTURED | `CF88:ART.86:PAR.1` | Art. 86, §§ 1º e 2º — Afastamento do Presidente durante o processo | SENSITIVE_THEME |
-| 78 | B | MEDIUM | STRUCTURED | `CF88:ART.95` | Art. 95 — Garantias e vedações dos juízes | SENSITIVE_THEME |
-| 79 | B | MEDIUM | STRUCTURED | `CF88:ART.95:INC.I` | Art. 95, inciso I — Vitaliciedade dos juízes | SENSITIVE_THEME |
-| 80 | B | MEDIUM | STRUCTURED | `CF88:ART.96` | Art. 96 — Autogoverno dos tribunais | SENSITIVE_THEME |
-| 81 | B | MEDIUM | STRUCTURED | `CF88:ART.96:INC.III` | Art. 96, inciso III — Julgamento de juízes e promotores estaduais | SENSITIVE_THEME |
-| 82 | B | MEDIUM | STRUCTURED | `CF88:ART.100:PAR.6` | Art. 100, §§ 6º e 7º — Sequestro de verbas e responsabilidade do Presidente do Tribunal | SENSITIVE_THEME |
-| 83 | B | MEDIUM | STRUCTURED | `CF88:ART.103-B` | Art. 103-B — Conselho Nacional de Justiça | SENSITIVE_THEME |
-| 84 | B | MEDIUM | STRUCTURED | `CF88:ART.105` | Art. 105 — Competências do Superior Tribunal de Justiça | SENSITIVE_THEME |
-| 85 | B | MEDIUM | STRUCTURED | `CF88:ART.108` | Art. 108 — Competências dos Tribunais Regionais Federais | SENSITIVE_THEME |
-| 86 | B | MEDIUM | STRUCTURED | `CF88:ART.109` | Art. 109 — Competências dos juízes federais | SENSITIVE_THEME |
-| 87 | B | MEDIUM | STRUCTURED | `CF88:ART.109:INC.IV` | Art. 109, inciso IV — Crimes de competência federal | SENSITIVE_THEME |
-| 88 | B | MEDIUM | STRUCTURED | `CF88:ART.125` | Art. 125 — Justiça dos Estados | SENSITIVE_THEME |
-| 89 | B | MEDIUM | STRUCTURED | `CF88:ART.128` | Art. 128 — Estrutura do Ministério Público | SENSITIVE_THEME |
-| 90 | B | MEDIUM | STRUCTURED | `CF88:ART.128:PAR.5` | Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público | SENSITIVE_THEME |
-| 91 | B | MEDIUM | STRUCTURED | `CF88:ART.130-A` | Art. 130-A — Conselho Nacional do Ministério Público | SENSITIVE_THEME |
-| 92 | B | MEDIUM | STRUCTURED | `CF88:ART.130-A:PAR.2` | Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público | SENSITIVE_THEME |
-| 93 | B | MEDIUM | STRUCTURED | `CF88:ART.136` | Art. 136 — Estado de defesa | SENSITIVE_THEME |
-| 94 | B | MEDIUM | STRUCTURED | `CF88:ART.136:PAR.3` | Art. 136, § 3º — Garantias do preso no estado de defesa | SENSITIVE_THEME |
-| 95 | B | MEDIUM | STRUCTURED | `CF88:ART.139` | Art. 139 — Medidas no estado de sítio por comoção grave | SENSITIVE_THEME |
-| 96 | B | MEDIUM | STRUCTURED | `CF88:ART.142:PAR.3` | Art. 142, § 3º — Regime jurídico dos militares | SENSITIVE_THEME |
-| 97 | B | MEDIUM | STRUCTURED | `CF88:ART.156:PAR.1` | Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana | SENSITIVE_THEME |
-| 98 | B | MEDIUM | STRUCTURED | `CF88:ART.156:PAR.3` | Art. 156, § 3º — Lei complementar do imposto sobre serviços | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 99 | B | MEDIUM | STRUCTURED | `CF88:ART.156-A:PAR.1` | Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 100 | B | MEDIUM | STRUCTURED | `CF88:ART.156-A:PAR.6` | Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 101 | B | MEDIUM | STRUCTURED | `CF88:ART.156-A:PAR.9` | Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 102 | B | MEDIUM | STRUCTURED | `CF88:ART.156-A:PAR.13` | Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
-| 103 | B | MEDIUM | STRUCTURED | `CF88:ART.156-B` | Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços | TRANSITION_RESOLVED_BY_VERSIONED_SOURCE |
+| 2 | D | HIGH | EXTERNAL | `CF88:ART.86:PAR.3` | Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 3 | D | HIGH | EXTERNAL | `CF88:ART.92` | Art. 92 — Órgãos do Poder Judiciário | JUDICIAL_REVIEW_ANNOTATED |
+| 4 | D | HIGH | EXTERNAL | `CF88:ART.98` | Art. 98 — Juizados especiais e justiça de paz | JUDICIAL_REVIEW_ANNOTATED |
+| 5 | D | HIGH | EXTERNAL | `CF88:ART.100` | Art. 100 — Precatórios | JUDICIAL_REVIEW_ANNOTATED |
+| 6 | D | HIGH | EXTERNAL | `CF88:ART.100:PAR.5` | Art. 100, § 5º — Inclusão dos precatórios no orçamento | TRANSITION_OR_TEMPORAL |
+| 7 | D | HIGH | EXTERNAL | `CF88:ART.100:PAR.9` | Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa | JUDICIAL_REVIEW_ANNOTATED |
+| 8 | D | HIGH | EXTERNAL | `CF88:ART.100:PAR.12` | Art. 100, § 12 — Atualização e juros dos precatórios | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED |
+| 9 | D | HIGH | EXTERNAL | `CF88:ART.102` | Art. 102 — Competências do Supremo Tribunal Federal | JUDICIAL_REVIEW_ANNOTATED |
+| 10 | D | HIGH | EXTERNAL | `CF88:ART.102:PAR.2` | Art. 102, § 2º — Efeito vinculante nas ações de controle | JUDICIAL_REVIEW_ANNOTATED |
+| 11 | D | HIGH | EXTERNAL | `CF88:ART.103-A` | Art. 103-A — Enunciado com efeito vinculante do Supremo | INTERPRETIVE_CONTROVERSY |
+| 12 | D | HIGH | EXTERNAL | `CF88:ART.105:PAR.2` | Art. 105, §§ 2º e 3º — Relevância no recurso especial | TRANSITION_OR_TEMPORAL |
+| 13 | D | HIGH | EXTERNAL | `CF88:ART.114` | Art. 114 — Competência da Justiça do Trabalho | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, INTERPRETIVE_CONTROVERSY, JUDICIAL_REVIEW_ANNOTATED |
+| 14 | D | HIGH | EXTERNAL | `CF88:ART.114:INC.I` | Art. 114, inciso I — Ações oriundas da relação de trabalho | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 15 | D | HIGH | EXTERNAL | `CF88:ART.114:PAR.1` | Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED |
+| 16 | D | HIGH | EXTERNAL | `CF88:ART.114:PAR.3` | Art. 114, § 3º — Greve em atividade essencial | JUDICIAL_REVIEW_ANNOTATED |
+| 17 | D | HIGH | EXTERNAL | `CF88:ART.124` | Art. 124 — Competência da Justiça Militar | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 18 | D | HIGH | EXTERNAL | `CF88:ART.125:PAR.2` | Art. 125, § 2º — Controle de constitucionalidade estadual | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 19 | D | HIGH | EXTERNAL | `CF88:ART.129` | Art. 129 — Funções institucionais do Ministério Público | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 20 | D | HIGH | EXTERNAL | `CF88:ART.142` | Art. 142 — Forças Armadas | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, INTERPRETIVE_CONTROVERSY |
+| 21 | D | HIGH | EXTERNAL | `CF88:ART.142:PAR.2` | Art. 142, § 2º — Habeas corpus e punições disciplinares militares | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 22 | D | HIGH | EXTERNAL | `CF88:ART.144:PAR.8` | Art. 144, § 8º — Guardas municipais | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 23 | D | HIGH | EXTERNAL | `CF88:ART.145:INC.II` | Art. 145, inciso II — Taxas | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 24 | D | HIGH | EXTERNAL | `CF88:ART.146:PAR.1` | Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação | TRANSITION_OR_TEMPORAL |
+| 25 | D | HIGH | EXTERNAL | `CF88:ART.149-B` | Art. 149-B — Regras comuns ao IBS e à CBS | TRANSITION_OR_TEMPORAL |
+| 26 | D | HIGH | EXTERNAL | `CF88:ART.149-C` | Art. 149-C — Tributação das compras públicas | TRANSITION_OR_TEMPORAL |
+| 27 | D | HIGH | EXTERNAL | `CF88:ART.150:INC.IV` | Art. 150, inciso IV — Vedação ao confisco | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 28 | D | HIGH | EXTERNAL | `CF88:ART.150:PAR.7` | Art. 150, § 7º — Substituição tributária para frente | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 29 | D | HIGH | EXTERNAL | `CF88:ART.153` | Art. 153 — Impostos da União | TRANSITION_OR_TEMPORAL |
+| 30 | D | HIGH | EXTERNAL | `CF88:ART.153:PAR.3` | Art. 153, § 3º — Regras do imposto sobre produtos industrializados | TRANSITION_OR_TEMPORAL |
+| 31 | D | HIGH | EXTERNAL | `CF88:ART.153:PAR.6` | Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais | TRANSITION_OR_TEMPORAL |
+| 32 | D | HIGH | EXTERNAL | `CF88:ART.155` | Art. 155 — Impostos dos Estados e do Distrito Federal | TRANSITION_OR_TEMPORAL |
+| 33 | D | HIGH | EXTERNAL | `CF88:ART.155:PAR.2` | Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias | TRANSITION_OR_TEMPORAL |
+| 34 | D | HIGH | EXTERNAL | `CF88:ART.155:PAR.6` | Art. 155, § 6º — Imposto sobre a propriedade de veículos | TRANSITION_OR_TEMPORAL |
+| 35 | D | HIGH | EXTERNAL | `CF88:ART.156` | Art. 156 — Impostos dos Municípios | TRANSITION_OR_TEMPORAL |
+| 36 | D | HIGH | EXTERNAL | `CF88:ART.156:PAR.2` | Art. 156, § 2º — Imposto sobre a transmissão de imóveis | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 37 | D | HIGH | EXTERNAL | `CF88:ART.156-A` | Art. 156-A — Imposto sobre bens e serviços | TRANSITION_OR_TEMPORAL |
+| 38 | D | HIGH | EXTERNAL | `CF88:ART.156-A:PAR.5` | Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços | TRANSITION_OR_TEMPORAL |
+| 39 | D | HIGH | EXTERNAL | `CF88:ART.159:INC.I` | Art. 159, inciso I — Fundos de participação | TRANSITION_OR_TEMPORAL |
+| 40 | D | HIGH | EXTERNAL | `CF88:ART.159-A` | Art. 159-A — Fundo Nacional de Desenvolvimento Regional | TRANSITION_OR_TEMPORAL |
+| 41 | D | HIGH | EXTERNAL | `CF88:ART.165:PAR.18` | Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026 | TRANSITION_OR_TEMPORAL |
+| 42 | D | HIGH | EXTERNAL | `CF88:ART.166` | Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED |
+| 43 | D | HIGH | EXTERNAL | `CF88:ART.166:PAR.9` | Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais | JUDICIAL_REVIEW_ANNOTATED |
+| 44 | D | HIGH | EXTERNAL | `CF88:ART.166:PAR.11` | Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED |
+| 45 | D | HIGH | EXTERNAL | `CF88:ART.166-A` | Art. 166-A — Transferências por emendas individuais | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED |
+| 46 | D | HIGH | STRUCTURED | `CF88:ART.156:PAR.3` | Art. 156, § 3º — Lei complementar do imposto sobre serviços | TRANSITION_OR_TEMPORAL |
+| 47 | D | HIGH | STRUCTURED | `CF88:ART.156-A:PAR.1` | Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços | TRANSITION_OR_TEMPORAL |
+| 48 | D | HIGH | STRUCTURED | `CF88:ART.156-A:PAR.6` | Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços | TRANSITION_OR_TEMPORAL |
+| 49 | D | HIGH | STRUCTURED | `CF88:ART.156-A:PAR.9` | Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação | TRANSITION_OR_TEMPORAL |
+| 50 | D | HIGH | STRUCTURED | `CF88:ART.156-A:PAR.13` | Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha | TRANSITION_OR_TEMPORAL |
+| 51 | D | HIGH | STRUCTURED | `CF88:ART.156-B` | Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços | TRANSITION_OR_TEMPORAL |
+| 52 | D | HIGH | STRUCTURED | `CF88:ART.158` | Art. 158 — Receitas tributárias dos Municípios | TRANSITION_OR_TEMPORAL |
+| 53 | D | HIGH | STRUCTURED | `CF88:ART.158:PAR.1` | Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios | TRANSITION_OR_TEMPORAL |
+| 54 | B | MEDIUM | EXTERNAL | `CF88:ART.84:INC.XII` | Art. 84, inciso XII — Indulto e comutação de penas | JURISPRUDENCE_CONTEXT_ONLY |
+| 55 | B | MEDIUM | EXTERNAL | `CF88:ART.85` | Art. 85 — Crimes de responsabilidade do Presidente | SENSITIVE_THEME |
+| 56 | B | MEDIUM | EXTERNAL | `CF88:ART.93` | Art. 93 — Estatuto da Magistratura | SENSITIVE_THEME |
+| 57 | B | MEDIUM | EXTERNAL | `CF88:ART.93:INC.I` | Art. 93, inciso I — Ingresso na magistratura | JURISPRUDENCE_CONTEXT_ONLY |
+| 58 | B | MEDIUM | EXTERNAL | `CF88:ART.93:INC.XII` | Art. 93, inciso XII — Atividade jurisdicional ininterrupta | JURISPRUDENCE_CONTEXT_ONLY |
+| 59 | B | MEDIUM | EXTERNAL | `CF88:ART.97` | Art. 97 — Cláusula de reserva de plenário | JURISPRUDENCE_CONTEXT_ONLY |
+| 60 | B | MEDIUM | EXTERNAL | `CF88:ART.100:PAR.1` | Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência | JURISPRUDENCE_CONTEXT_ONLY |
+| 61 | B | MEDIUM | EXTERNAL | `CF88:ART.102:INC.I` | Art. 102, inciso I — Competência originária do Supremo | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
+| 62 | B | MEDIUM | EXTERNAL | `CF88:ART.103` | Art. 103 — Quem pode propor as ações de controle | JURISPRUDENCE_CONTEXT_ONLY |
+| 63 | B | MEDIUM | EXTERNAL | `CF88:ART.103:PAR.1` | Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle | JURISPRUDENCE_CONTEXT_ONLY |
+| 64 | B | MEDIUM | EXTERNAL | `CF88:ART.103-A:PAR.3` | Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante | SENSITIVE_THEME |
+| 65 | B | MEDIUM | EXTERNAL | `CF88:ART.103-B:PAR.4` | Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
+| 66 | B | MEDIUM | EXTERNAL | `CF88:ART.105:INC.III` | Art. 105, inciso III — Recurso especial | JURISPRUDENCE_CONTEXT_ONLY |
+| 67 | B | MEDIUM | EXTERNAL | `CF88:ART.109:INC.I` | Art. 109, inciso I — Causas cíveis de interesse da União | JURISPRUDENCE_CONTEXT_ONLY |
+| 68 | B | MEDIUM | EXTERNAL | `CF88:ART.109:PAR.1` | Art. 109, §§ 1º e 2º — Onde propor as ações da União | JURISPRUDENCE_CONTEXT_ONLY |
+| 69 | B | MEDIUM | EXTERNAL | `CF88:ART.109:PAR.5` | Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos | JURISPRUDENCE_CONTEXT_ONLY |
+| 70 | B | MEDIUM | EXTERNAL | `CF88:ART.125:PAR.3` | Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
+| 71 | B | MEDIUM | EXTERNAL | `CF88:ART.128:PAR.3` | Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal | JURISPRUDENCE_CONTEXT_ONLY |
+| 72 | B | MEDIUM | EXTERNAL | `CF88:ART.130` | Art. 130 — Ministério Público junto aos Tribunais de Contas | JURISPRUDENCE_CONTEXT_ONLY |
+| 73 | B | MEDIUM | EXTERNAL | `CF88:ART.133` | Art. 133 — Advocacia | SENSITIVE_THEME |
+| 74 | B | MEDIUM | EXTERNAL | `CF88:ART.150:INC.VI` | Art. 150, inciso VI — Imunidades tributárias | JURISPRUDENCE_CONTEXT_ONLY |
+| 75 | B | MEDIUM | EXTERNAL | `CF88:ART.150:PAR.2` | Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca | JURISPRUDENCE_CONTEXT_ONLY |
+| 76 | B | MEDIUM | EXTERNAL | `CF88:ART.151` | Art. 151 — Limitações ao poder de tributar da União | JURISPRUDENCE_CONTEXT_ONLY |
+| 77 | B | MEDIUM | EXTERNAL | `CF88:ART.155:PAR.2:INC.VII` | Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado | JURISPRUDENCE_CONTEXT_ONLY |
+| 78 | B | MEDIUM | EXTERNAL | `CF88:ART.167` | Art. 167 — Vedações orçamentárias | SENSITIVE_THEME |
+| 79 | B | MEDIUM | EXTERNAL | `CF88:ART.169` | Art. 169 — Limites de despesa com pessoal | SENSITIVE_THEME |
+| 80 | B | MEDIUM | EXTERNAL | `CF88:ART.169:PAR.3` | Art. 169, §§ 3º, 4º, 5º, 6º e 7º — Redução da despesa com pessoal | SENSITIVE_THEME |
+| 81 | B | MEDIUM | STRUCTURED | `CF88:ART.83` | Art. 83 — Ausência do País e perda do cargo | SENSITIVE_THEME |
+| 82 | B | MEDIUM | STRUCTURED | `CF88:ART.86` | Art. 86 — Processo e julgamento do Presidente | SENSITIVE_THEME |
+| 83 | B | MEDIUM | STRUCTURED | `CF88:ART.86:PAR.1` | Art. 86, §§ 1º e 2º — Afastamento do Presidente durante o processo | SENSITIVE_THEME |
+| 84 | B | MEDIUM | STRUCTURED | `CF88:ART.95` | Art. 95 — Garantias e vedações dos juízes | SENSITIVE_THEME |
+| 85 | B | MEDIUM | STRUCTURED | `CF88:ART.95:INC.I` | Art. 95, inciso I — Vitaliciedade dos juízes | SENSITIVE_THEME |
+| 86 | B | MEDIUM | STRUCTURED | `CF88:ART.96` | Art. 96 — Autogoverno dos tribunais | SENSITIVE_THEME |
+| 87 | B | MEDIUM | STRUCTURED | `CF88:ART.96:INC.III` | Art. 96, inciso III — Julgamento de juízes e promotores estaduais | SENSITIVE_THEME |
+| 88 | B | MEDIUM | STRUCTURED | `CF88:ART.100:PAR.6` | Art. 100, §§ 6º e 7º — Sequestro de verbas e responsabilidade do Presidente do Tribunal | SENSITIVE_THEME |
+| 89 | B | MEDIUM | STRUCTURED | `CF88:ART.103-B` | Art. 103-B — Conselho Nacional de Justiça | SENSITIVE_THEME |
+| 90 | B | MEDIUM | STRUCTURED | `CF88:ART.105` | Art. 105 — Competências do Superior Tribunal de Justiça | SENSITIVE_THEME |
+| 91 | B | MEDIUM | STRUCTURED | `CF88:ART.108` | Art. 108 — Competências dos Tribunais Regionais Federais | SENSITIVE_THEME |
+| 92 | B | MEDIUM | STRUCTURED | `CF88:ART.109` | Art. 109 — Competências dos juízes federais | SENSITIVE_THEME |
+| 93 | B | MEDIUM | STRUCTURED | `CF88:ART.109:INC.IV` | Art. 109, inciso IV — Crimes de competência federal | SENSITIVE_THEME |
+| 94 | B | MEDIUM | STRUCTURED | `CF88:ART.125` | Art. 125 — Justiça dos Estados | SENSITIVE_THEME |
+| 95 | B | MEDIUM | STRUCTURED | `CF88:ART.128` | Art. 128 — Estrutura do Ministério Público | SENSITIVE_THEME |
+| 96 | B | MEDIUM | STRUCTURED | `CF88:ART.128:PAR.5` | Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público | SENSITIVE_THEME |
+| 97 | B | MEDIUM | STRUCTURED | `CF88:ART.130-A` | Art. 130-A — Conselho Nacional do Ministério Público | SENSITIVE_THEME |
+| 98 | B | MEDIUM | STRUCTURED | `CF88:ART.130-A:PAR.2` | Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público | SENSITIVE_THEME |
+| 99 | B | MEDIUM | STRUCTURED | `CF88:ART.136` | Art. 136 — Estado de defesa | SENSITIVE_THEME |
+| 100 | B | MEDIUM | STRUCTURED | `CF88:ART.136:PAR.3` | Art. 136, § 3º — Garantias do preso no estado de defesa | SENSITIVE_THEME |
+| 101 | B | MEDIUM | STRUCTURED | `CF88:ART.139` | Art. 139 — Medidas no estado de sítio por comoção grave | SENSITIVE_THEME |
+| 102 | B | MEDIUM | STRUCTURED | `CF88:ART.142:PAR.3` | Art. 142, § 3º — Regime jurídico dos militares | SENSITIVE_THEME |
+| 103 | B | MEDIUM | STRUCTURED | `CF88:ART.156:PAR.1` | Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana | SENSITIVE_THEME |
 | 104 | B | MEDIUM | STRUCTURED | `CF88:ART.167-B` | Art. 167-B — Regime extraordinário na calamidade nacional | SENSITIVE_THEME |
 | 105 | B | MEDIUM | SIMPLE | `CF88:ART.93:INC.IX` | Art. 93, inciso IX — Publicidade dos julgamentos e fundamentação das decisões | SENSITIVE_THEME |
 | 106 | B | MEDIUM | SIMPLE | `CF88:ART.167:PAR.1` | Art. 167, § 1º — Investimento plurianual sem previsão | SENSITIVE_THEME |

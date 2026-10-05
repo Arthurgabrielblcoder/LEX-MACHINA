@@ -151,39 +151,39 @@
   "hard_cap": 450,
   "soft_target_status": "WITHIN",
   "soft_target_justification": "sem cota: toda visao geral de artigo + dispositivos com ganho pedagogico proprio; listas e regras formais ficam na visao geral (SKIP com motivo)",
-  "new_words_mean": 231,
-  "new_payload_bytes_mean": 1861,
+  "new_words_mean": 232,
+  "new_payload_bytes_mean": 1868,
   "largest": {
    "target_id": "CF88:ART.102:INC.I",
    "explanation_id": "ENTENDA/CF88:ART.102:INC.I/BASE/1",
    "role": "ITEM",
-   "payload_bytes": 2752,
-   "words": 354,
+   "payload_bytes": 2722,
+   "words": 348,
    "freshness": "FRESH",
    "reference_count": 2
   },
   "files": {
    "ENTENDA_LOOKUP.IDX": {
-    "sha256": "42d437266034be5259276140207bc5a867844df7ae51a15233f04ac276a943e7",
+    "sha256": "010a614074aacde770da80028a5b871aa94d352e414a168d0c389f8d835850e4",
     "bytes": 32613
    },
    "ENTENDA_PAYLOAD.DAT": {
-    "sha256": "d3781b9fbff40ef00622f8cf6f4eb7483e744ff6208493be1a6f62f8d8af0ea4",
-    "bytes": 466029
+    "sha256": "58b498310ab75e2fda0a5cde1800bd1907ce7c518854b986aa9086c044ed3049",
+    "bytes": 467722
    },
    "ENTENDA_BUILD_MANIFEST.json": {
-    "sha256": "6c27645a87d6221d52383fa9ac4c1f1d5c1d7501fed6a90589276ae88453bb73",
-    "bytes": 140863
+    "sha256": "f6b21430aeac49412ac9a2663af9fd7d5462c7c32ccf657dea9939ee7a04d2ba",
+    "bytes": 143769
    }
   },
   "lookup_rows": 310,
   "targets_with_references": 36,
-  "warnings": 277,
+  "warnings": 289,
   "warning_counts": {
-   "EXAMPLE_REQUIREMENT_LANGUAGE": 27,
-   "JURISPRUDENCE_WORDING_IN_BODY": 75,
-   "LONG_EXPLANATION": 1,
-   "NEAR_COPY_OF_OFFICIAL_TEXT": 146,
+   "EXAMPLE_REQUIREMENT_LANGUAGE": 29,
+   "JURISPRUDENCE_WORDING_IN_BODY": 79,
+   "LONG_EXPLANATION": 2,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 151,
    "PARENT_REPETITION": 10,
    "TERM_LOW_UTILITY": 11,
    "TERM_NOT_USED": 7
@@ -6262,12 +6262,14 @@
   {
    "target_id": "CF88:ART.114:INC.VIII",
    "kind": "INCISO",
-   "status": "HISTORICAL",
+   "status": "CURRENT",
    "structurally_present": true,
-   "legal_status": "HISTORICAL_ONLY",
-   "legally_current": false,
-   "classification": "EXCLUDED_HISTORICAL",
-   "selection_reason": "redacao historica: producao CURRENT-only"
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.114",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos de competencia de alcance mais especifico (II a IX) situados na visao geral do art. 114; o inciso I e os paragrafos sobre negociacao, arbitragem e dissidio coletivo tem explicacao propria.",
+   "classification": "NO_SEPARATE_EXPLANATION"
   },
   {
    "target_id": "CF88:ART.114:INC.IX",
@@ -11530,7 +11532,7 @@
    "legally_current": true,
    "covered_by": "CF88:ART.155",
    "coverage": "ARTICLE_OVERVIEW",
-   "selection_reason": "inciso sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas e a alinea c do inciso I (sem texto no runtime) situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
+   "selection_reason": "inciso sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
    "classification": "NO_SEPARATE_EXPLANATION"
   },
   {
@@ -11556,14 +11558,12 @@
   {
    "target_id": "CF88:ART.155:INC.I:AL.c",
    "kind": "ALINEA",
-   "status": "CURRENT",
+   "status": "HISTORICAL",
    "structurally_present": true,
-   "legal_status": "CURRENT",
-   "legally_current": true,
-   "covered_by": "CF88:ART.155",
-   "coverage": "ARTICLE_OVERVIEW",
-   "selection_reason": "alinea sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas e a alinea c do inciso I (sem texto no runtime) situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
-   "classification": "NO_SEPARATE_EXPLANATION"
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
   },
   {
    "target_id": "CF88:ART.155:INC.II",
@@ -11574,7 +11574,7 @@
    "legally_current": true,
    "covered_by": "CF88:ART.155",
    "coverage": "ARTICLE_OVERVIEW",
-   "selection_reason": "inciso sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas e a alinea c do inciso I (sem texto no runtime) situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
+   "selection_reason": "inciso sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
    "classification": "NO_SEPARATE_EXPLANATION"
   },
   {
@@ -11586,7 +11586,7 @@
    "legally_current": true,
    "covered_by": "CF88:ART.155",
    "coverage": "ARTICLE_OVERVIEW",
-   "selection_reason": "inciso sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas e a alinea c do inciso I (sem texto no runtime) situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
+   "selection_reason": "inciso sem explicacao propria: competencia por lei complementar no exterior, aliquotas e nao incidencias do imposto de transmissao, aliquotas e regras de cobranca do imposto de circulacao nao destacadas situadas na visao geral ou no paragrafo correspondente; tem explicacao propria o que traz regra com alcance proprio relevante para estudo.",
    "classification": "NO_SEPARATE_EXPLANATION"
   },
   {

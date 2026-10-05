@@ -1,21 +1,21 @@
 {
  "schema_version": 1,
  "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
- "policy": "Registro de problemas encontrados durante a missao em modulos compartilhados, runtime ou conteudo antigo. Nada aqui foi corrigido nesta missao.",
+ "policy": "Registro de problemas encontrados durante a missao em modulos compartilhados, runtime ou conteudo antigo. Itens marcados RESOLVIDO foram tratados no segundo passe (MACRO07_SECOND_PASS); os demais seguem sem correcao.",
  "items": [
   {
    "id": "MB07-01",
    "kind": "RUNTIME_TEXT_ANOMALY",
    "target": "CF88:ART.114:INC.VII",
-   "detail": "O texto do runtime traz o inciso VIII anexado ao VII (\"VII I - a execucao...\"), e INC.VIII esta marcado HISTORICAL. Nao corrigido: runtime e fonte estrutural fora do escopo da missao. A visao geral do art. 114 sinaliza a anomalia na camada externa.",
-   "action": "Conferir a segmentacao do art. 114 na fonte oficial e no runtime (missao propria)."
+   "detail": "RESOLVIDO no segundo passe. Causa: a fonte do Senado (raw.html e normalizado.txt) traz \"VII I - a execucao...\"; a segmentacao anexava o texto ao VII e o status marcava VIII HISTORICAL. Correcao aprovada SRC-CORR-CF88-579494-16434817-ART114-INC-VIII aplicada pelo parser compartilhado (fail closed, verificada contra o cf.txt canonico) e errata de status (VIII CURRENT). Ver MACRO07_SOURCE_ANOMALY_ART114_REPORT.md.",
+   "action": "Nenhuma nesta camada. Consolidar a errata no status congelado numa missao que regenere os exports do DEVICE (MB07-09)."
   },
   {
    "id": "MB07-02",
    "kind": "RUNTIME_TEXT_ANOMALY",
    "target": "CF88:ART.155:INC.I:AL.c",
-   "detail": "Alinea marcada CURRENT com texto vazio no runtime (alineas a e b HISTORICAL). Coberta pela visao geral do art. 155; nao corrigida.",
-   "action": "Conferir a situacao da alinea c na fonte oficial e no runtime."
+   "detail": "RESOLVIDO no segundo passe. A alinea c do inciso I e a redacao original de 1988, renumerada para o inciso III pela EC 3/1993; a comparacao do status falhava so pelo ponto final. Errata de status: HISTORICAL_ONLY (rotulo renumerado). Ver MACRO07_SOURCE_ANOMALY_ART155_REPORT.md.",
+   "action": "Nenhuma nesta camada (ver MB07-09)."
   },
   {
    "id": "MB07-03",
@@ -28,7 +28,7 @@
    "id": "MB07-04",
    "kind": "RISK_DETECTOR_GAP",
    "target": "t1_risk.assess",
-   "detail": "Somente \"regra de transicao\" (singular) no corpo eleva para TRANSITION_OR_TEMPORAL; o plural nao. Contornado na redacao dos drafts em que a aplicacao no tempo e material (146 § 1º, 149-B, 149-C e reforma tributaria em 151-159-A).",
+   "detail": "Somente \"regra de transicao\" (singular) no corpo eleva para TRANSITION_OR_TEMPORAL; o plural nao. Contornado na redacao dos drafts em que a aplicacao no tempo e material (146 § 1º, 149-B, 149-C e reforma tributaria em 151-159-A). No segundo passe a decisao passou a ser da evidencia versionada (MACRO07_TRANSITION_EVIDENCE.json), nao da redacao do draft.",
    "action": "Aceitar singular e plural no detector (modulo compartilhado)."
   },
   {
@@ -51,6 +51,34 @@
    "target": "CF88:ART.150",
    "detail": "A visao geral do art. 150 ja e HUMAN_APPROVED_T1 no corpus principal: reutilizada sem alteracao; o rascunho novo foi removido pelo critic (DROP_EXPLANATION, registrado no log).",
    "action": "Nenhuma."
+  },
+  {
+   "id": "MB07-08",
+   "kind": "STATUS_FORMAT_DIVERGENCE",
+   "target": "CF88:ART.239:PAR.4",
+   "detail": "Unica outra entrada do status com motivo \"rotulo com formatacao divergente\"; fora do escopo dos arts. 76-175. A errata recalculada nao a altera (continua CURRENT).",
+   "action": "Conferir na missao do art. 239."
+  },
+  {
+   "id": "MB07-09",
+   "kind": "FROZEN_STATUS_ERRATA",
+   "target": "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json",
+   "detail": "O status e entrada fixada do manifesto do Batch06 e dos exports run1/run2/run3 do DEVICE; nao foi reescrito. As correcoes (114, VIII; 155, I, c) estao em CF88_TARGET_STATUS_ERRATA.json, aplicada pelo builder macro.",
+   "action": "Missao propria para consolidar a errata e regenerar os exports do DEVICE com aprovacao."
+  },
+  {
+   "id": "MB07-10",
+   "kind": "EXTERNAL_SOURCE_NOT_VERSIONED",
+   "target": "EC 111/2021, EC 125/2022, EC 132/2023, EC 136/2025",
+   "detail": "As regras de transicao proprias dessas emendas (fora do ADCT) nao estao versionadas: 82, 100 § 5º, 105 § 2º, 155 § 6º, 159-A e 165 § 18 seguem HIGH com PENDING_EXTERNAL_INGESTION.",
+   "action": "Ingerir o texto oficial das emendas (Planalto/Senado) com sha256 e reavaliar."
+  },
+  {
+   "id": "MB07-11",
+   "kind": "JUDICIAL_REVIEW_DECISION_NOT_VERSIONED",
+   "target": "ADI 3392, 3423, 3431, 3432, 3520, 4425, 7047, 7064, 7697",
+   "detail": "As decisoes dos controles anotados (Vide ADI) nao estao versionadas; 11 explicacoes ficam JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS (D).",
+   "action": "Ingestao oficial das decisoes (STF) e reavaliacao."
   }
  ]
 }

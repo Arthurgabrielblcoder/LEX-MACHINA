@@ -17,6 +17,7 @@ sys.path.insert(0, str(HERE))
 import build_entenda_macro_batch as M  # noqa: E402
 import entenda_engine as E  # noqa: E402
 import production_batch as PB  # noqa: E402
+import t1_second_pass as SP  # noqa: E402
 
 BD = HERE / 'derived/production_batch_07_macro'
 BODY = ('o_que_diz', 'o_que_significa', 'exemplo_pratico', 'atencao')
@@ -33,7 +34,7 @@ def sha(p):
 class MacroBatch07(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.ctx = E.NormContext('CF88')
+        cls.ctx = M.norm_context('CF88')   # NormContext + target status errata (LEGAL_TARGET_ID/status_errata.py)
         cls.ms = load('MACRO_SPEC.json')
         cls.spec = load('BATCH_SPEC.json')
         cls.corpus = E.load_corpus(BD / 'CF88_MACRO_07.entenda.jsonl')
@@ -99,9 +100,10 @@ class MacroBatch07(unittest.TestCase):
             shutil.copy(BD / 'MACRO_SPEC.json', t / 'MACRO_SPEC.json')
             for x in 'ABCD':
                 parts = sorted(str(p) for p in (t / 'drafts/pass1').glob(f'MACRO07_{x}_PASS1_*.json'))
-                subprocess.run([sys.executable, str(HERE / 'macro_critic_pass.py'), str(t), x, str(t / f'drafts/pass1/MACRO07_{x}_CRITIC_EDITS.json'), *parts],
+                subprocess.run([sys.executable, str(HERE / 'macro_critic_pass.py'), str(t), x, str(t / f'drafts/pass1/MACRO07_{x}_CRITIC_EDITS.json'),
+                                '--second-pass', str(t / f'drafts/pass1/MACRO07_{x}_SECOND_PASS_EDITS.json'), *parts],
                                check=True, capture_output=True)
-                for n in (f'MACRO07_{x}_DRAFTS.json', f'MACRO07_{x}_CRITIC_LOG.json'):
+                for n in (f'MACRO07_{x}_DRAFTS.json', f'MACRO07_{x}_CRITIC_LOG.json', f'MACRO07_{x}_SECOND_PASS_LOG.json'):
                     self.assertEqual(sha(t / 'drafts' / n), sha(BD / 'drafts' / n), n)
 
     def test_critic_log_is_complete(self):
@@ -114,18 +116,27 @@ class MacroBatch07(unittest.TestCase):
             total += len(log['corrections'])
         self.assertEqual(total, sum(v['corrections'] for v in self.triage['critic'].values()))
 
-    def test_judicial_review_annotation_routes_to_high(self):
+    def test_judicial_review_annotation_classified(self):
+        """Vide ADI in scope: REQUIRED_FOR_CORRECTNESS -> HIGH/D; CONTEXT_ONLY -> MEDIUM (never D by itself); none left unclassified."""
         vig = self.plan['vigency_by_target']
         rows = {x['target_id']: x for x in self.triage['rows']}
+        cls_ = load('SECOND_PASS_INPUT.json')['judicial_review']
         n = 0
         for r in self.corpus:
             scope = [r['target_id']] + r['granularity'].get('covered_targets', [])
             scope += [t for s in list(scope) for t in self.ctx.subtree(s) if t != s]
             if any(M.JUDICIAL_REVIEW_RE.search(a) for t in scope for a in vig.get(t, [])):
                 n += 1
-                self.assertEqual(rows[r['target_id']]['legal_risk'], 'HIGH', r['target_id'])
-                self.assertEqual(rows[r['target_id']]['queue'], 'D_FULL_HUMAN_REVIEW', r['target_id'])
-        self.assertGreater(n, 0)
+                x = rows[r['target_id']]
+                self.assertIn(r['target_id'], cls_)
+                if cls_[r['target_id']]['classification'] == 'REQUIRED_FOR_CORRECTNESS':
+                    self.assertIn('JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS', x['legal_rules'])
+                    self.assertEqual(x['queue'], 'D_FULL_HUMAN_REVIEW', r['target_id'])
+                else:
+                    self.assertNotIn('JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS', x['legal_rules'] + x['legal_secondary'])
+                    self.assertTrue(any(s.startswith('JUDICIAL_REVIEW_CONTEXT_ONLY') for s in x['legal_reasons'] + x['legal_secondary']))
+        self.assertEqual(n, len(cls_))
+        self.assertEqual(self.triage['checks']['judicial_review_unclassified'], [])
 
     def test_queues_close_and_packets_exist(self):
         rows = self.triage['rows']
@@ -141,6 +152,7 @@ class MacroBatch07(unittest.TestCase):
                 self.assertIn(f"`{x['target_id']}`", full)
         diag = (BD / 'MACRO07_D_ESCALATION_DIAGNOSTIC.md').is_file()
         self.assertEqual(diag, self.triage['d_ratio'] > 0.4)
+        self.assertEqual((BD / 'MACRO07_D_SECOND_PASS_DIAGNOSTIC.md').is_file(), self.triage['d_ratio'] > M.SECOND_PASS_D_LIMIT)
 
     def test_checkpoints_per_sub_block(self):
         for x in 'ABCD':
@@ -169,12 +181,13 @@ class MacroBatch07(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             t = Path(tmp) / BD.name
             shutil.copytree(BD / 'drafts', t / 'drafts')
-            for f in ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json'):
+            shutil.copytree(BD / M.HISTORY, t / M.HISTORY)
+            for f in M.root_inputs(BD, self.ms):
                 shutil.copy(BD / f, t / f)
             M.build(t)
             for p in sorted(BD.rglob('*')):
                 rel = p.relative_to(BD)
-                if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json':
+                if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json' and rel.parts[0] != M.HISTORY:
                     self.assertEqual(sha(t / rel), sha(p), str(rel))
 
     def test_shared_modules_untouched(self):
@@ -200,6 +213,108 @@ class MacroBatch07(unittest.TestCase):
         self.assertEqual(tot['new'], len(self.corpus))
         for q, n in self.triage['counts'].items():
             self.assertEqual(tot[q], n, q)
+
+
+class MacroBatch07SecondPass(unittest.TestCase):
+    """MACRO07_SECOND_PASS_RISK_COMPRESSION_AND_SOURCE_SANITY."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.ctx = M.norm_context('CF88')
+        cls.triage = load('MACRO07_TRIAGE.json')
+        cls.rows = {x['target_id']: x for x in cls.triage['rows']}
+        cls.corpus = {r['target_id']: r for r in E.load_corpus(BD / 'CF88_MACRO_07.entenda.jsonl')}
+        cls.log = load('MACRO07_SECOND_PASS_EDITORIAL_LOG.json')
+        cls.ev = SP.load_transition_evidence(BD / 'MACRO07_TRANSITION_EVIDENCE.json', ROOT)
+
+    def test_art114_viii_separated_in_runtime(self):
+        snap = self.corpus['CF88:ART.114']['source']['source_text_snapshot'].split('\n')
+        lines = dict(ln.split('\t', 1) for ln in snap)
+        self.assertTrue(lines['CF88:ART.114:INC.VIII'].startswith('a execução, de ofício'))
+        self.assertNotIn('a execução, de ofício', lines['CF88:ART.114:INC.VII'])
+        self.assertEqual(self.ctx.effective_status('CF88:ART.114:INC.VIII'), 'CURRENT')
+        self.assertNotIn('Observação estrutural', ' '.join(self.corpus['CF88:ART.114']['external_layer_notes']))
+
+    def test_art155_i_c_is_historical_renumbered(self):
+        self.assertEqual(self.ctx.effective_status('CF88:ART.155:INC.I:AL.c'), 'HISTORICAL')
+        sel = {r['target_id']: r for r in load('SELECTION_REPORT.json')['selection']}
+        self.assertEqual(sel['CF88:ART.155:INC.I:AL.c']['classification'], 'EXCLUDED_HISTORICAL')
+        self.assertNotIn('alinea c do inciso I', load('drafts/MACRO07_D_DRAFTS.json')['article_notes']['CF88:ART.155'])
+
+    def test_source_files_and_frozen_status_unchanged(self):
+        lock = json.loads((ROOT / 'updater/fontes_oficiais_senado/SOURCES_LOCK.json').read_text(encoding='utf-8'))['sources']['CF88']
+        self.assertEqual(sha(ROOT / 'updater/fontes_oficiais_senado' / lock['dir'] / 'normalizado.txt'), lock['normalizado_sha256'])
+        man = json.loads((HERE / 'derived/production_batch_06/BATCH06_MANIFEST.json').read_text(encoding='utf-8'))
+        self.assertEqual(M.sha_lf(ROOT / 'LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json'),
+                         man['inputs_global_sha256_lf']['LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json'])
+
+    def test_transition_evidence_verified_and_decisive(self):
+        self.assertEqual(len(self.ev), 26)
+        for t, e in self.ev.items():
+            x = self.rows[t]
+            if e['resolution'] == SP.RESOLVED:
+                self.assertNotIn('TRANSITION_OR_TEMPORAL', x['legal_rules'], t)
+                self.assertTrue(any(s.startswith('TRANSITION_RESOLVED_BY_VERSIONED_SOURCE') for s in x['legal_reasons'] + x['legal_secondary']), t)
+            else:
+                self.assertIn('TRANSITION_OR_TEMPORAL', x['legal_rules'], t)
+                self.assertEqual(x['queue'], 'D_FULL_HUMAN_REVIEW', t)
+        self.assertEqual(self.triage['checks']['transition_without_evidence'], [])
+
+    def test_transition_evidence_fails_closed(self):
+        doc = json.loads((BD / 'MACRO07_TRANSITION_EVIDENCE.json').read_text(encoding='utf-8'))
+        bad = [dict(doc, targets=[dict(doc['targets'][0], quotes=[dict(source='ADCT_SENADO', quote='Em 2026, o imposto sera extinto.')])]),
+               dict(doc, targets=[dict(doc['targets'][0], resolution=SP.ACTIVE, high_criteria=[])]),
+               dict(doc, sources=dict(doc['sources'], ADCT_SENADO=dict(doc['sources']['ADCT_SENADO'], sha256='0' * 64)))]
+        with tempfile.TemporaryDirectory() as tmp:
+            for i, d in enumerate(bad):
+                p = Path(tmp) / f'{i}.json'
+                p.write_text(json.dumps(d, ensure_ascii=False), encoding='utf-8')
+                with self.assertRaises(SP.SecondPassError):
+                    SP.load_transition_evidence(p, ROOT)
+
+    def test_controversy_term_from_lei_seca_is_not_high(self):
+        for t in ('CF88:ART.103-A', 'CF88:ART.114'):
+            self.assertNotIn('INTERPRETIVE_CONTROVERSY', self.rows[t]['legal_rules'], t)
+        self.assertIn('INTERPRETIVE_CONTROVERSY', self.rows['CF88:ART.142']['legal_rules'])
+
+    def test_parent_child_consistency(self):
+        self.assertEqual(self.log['parent_child']['open_findings'], [])
+        r = dict(self.corpus['CF88:ART.167'])
+        r['content'] = dict(r['content'], atencao='Os incisos III e IV têm explicação própria.')
+        fs = SP.parent_child_findings(r, self.ctx, {'CF88:ART.167:INC.IV'})
+        self.assertEqual([f['code'] for f in fs], ['PARENT_CHILD_LEGAL_CONSISTENCY'])
+        self.assertIn('INC.III', fs[0]['detail'])
+
+    def test_d_only_deep_legal_reasoning(self):
+        d = [x for x in self.triage['rows'] if x['queue'] == 'D_FULL_HUMAN_REVIEW']
+        self.assertLessEqual(len(d) / len(self.triage['rows']), M.SECOND_PASS_D_LIMIT)
+        allowed = {'TRANSITION_OR_TEMPORAL', 'JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS', 'JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS', 'INTERPRETIVE_CONTROVERSY'}
+        for x in d:
+            self.assertTrue(set(x['legal_rules']) <= allowed, x['target_id'])
+        full = (BD / 'MACRO07_FULL_D_REVIEW.md').read_text(encoding='utf-8')
+        for k in ('**Motivo HIGH exato:**', '**Afirmação que depende da revisão humana**', '**Lei Seca relevante**', '**Evidência local (versionada)**',
+                  '**Evidência externa faltante**', '**Decisão sugerida:'):
+            self.assertEqual(full.count(k), len(d), k)
+
+    def test_second_pass_log_complete(self):
+        ec = self.log['editorial_corrections']
+        self.assertEqual(ec['total'], sum(len(load(f'drafts/MACRO07_{x}_SECOND_PASS_LOG.json')['corrections']) for x in 'ABCD'))
+        for c in ec['entries']:
+            self.assertTrue(c['reason'] and c['category'] and 'before' in c and 'after' in c)
+        pre = {x['target_id']: x for x in load('history/pre_second_pass/MACRO07_TRIAGE_PRE_SECOND_PASS.json')['rows']}
+        moved = {m['target_id'] for m in self.log['risk_reclassification']['entries']}
+        for t, x in self.rows.items():
+            self.assertEqual(t in moved, (pre[t]['queue'], pre[t]['legal_risk'], pre[t]['jurisprudence']) != (x['queue'], x['legal_risk'], x['jurisprudence']), t)
+        self.assertEqual(self.log['human_approved_t1_granted'], 0)
+
+    def test_pre_second_pass_history_preserved(self):
+        hist = BD / 'history/pre_second_pass'
+        for n in ('MACRO07_COMPACT_AB_REVIEW', 'MACRO07_QUICK_C_REVIEW', 'MACRO07_FULL_D_REVIEW', 'MACRO07_HARD_FAIL_REPORT', 'MACRO07_HUMAN_REVIEW_PRIORITY'):
+            self.assertTrue((hist / f'{n}_PRE_SECOND_PASS.md').is_file(), n)
+        man = load('MACRO07_MANIFEST.json')
+        self.assertEqual(sorted(man['history']), sorted(str(p.relative_to(BD)) for p in hist.rglob('*') if p.is_file()))
+        for p, h in man['history'].items():
+            self.assertEqual(sha(BD / p), h, p)
 
 
 if __name__ == '__main__':

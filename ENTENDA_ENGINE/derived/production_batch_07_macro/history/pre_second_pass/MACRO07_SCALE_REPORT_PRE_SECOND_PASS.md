@@ -18,36 +18,36 @@ Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–12
 
 | Sub-bloco | Artigos | Vigentes | SELECT | SKIP | Novas | LOW/MED/HIGH | A/B/C/D/E | Correções do critic |
 |---|---|---|---|---|---|---|---|---|
-| MACRO_07_A | 25 | 260 | 55 | 205 | 55 | 31/19/5 | 31/19/0/5/0 | 75 |
-| MACRO_07_B | 28 | 257 | 49 | 208 | 49 | 23/20/6 | 23/20/0/6/0 | 77 |
-| MACRO_07_C | 30 | 267 | 67 | 200 | 66 | 43/21/2 | 43/21/0/2/0 | 133 |
-| MACRO_07_D | 38 | 525 | 79 | 446 | 79 | 46/22/11 | 46/22/0/11/0 | 156 |
+| MACRO_07_A | 25 | 260 | 55 | 205 | 55 | 31/16/8 | 31/16/0/8/0 | 75 |
+| MACRO_07_B | 28 | 256 | 49 | 207 | 49 | 23/16/10 | 23/16/0/10/0 | 77 |
+| MACRO_07_C | 30 | 267 | 67 | 200 | 66 | 43/13/10 | 43/13/0/10/0 | 133 |
+| MACRO_07_D | 38 | 526 | 79 | 447 | 79 | 46/8/25 | 46/8/0/25/0 | 156 |
 
 ## Dois eixos e filas
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
 | LOW | 143 | | SIMPLE | 11 |
-| MEDIUM | 82 | | STRUCTURED | 135 |
-| HIGH | 24 | | EXTERNAL | 103 |
+| MEDIUM | 53 | | STRUCTURED | 135 |
+| HIGH | 53 | | EXTERNAL | 103 |
 
 | Fila | Itens |
 |---|---|
 | A_CLEAN_LOW | 143 |
-| B_CLEAN_MEDIUM | 82 |
+| B_CLEAN_MEDIUM | 53 |
 | C_QUICK_REVIEW | 0 |
-| D_FULL_HUMAN_REVIEW | 24 |
+| D_FULL_HUMAN_REVIEW | 53 |
 | E_HARD_FAIL | 0 |
 
-D = 9.6% das novas.
-Jurisprudência: CONTEXT_ONLY 33, NONE 207, REQUIRED_FOR_CORRECTNESS 9.
+D = 21.3% das novas.
+Jurisprudência: CONTEXT_ONLY 24, NONE 207, REQUIRED_FOR_CORRECTNESS 18.
 
 ## Motivos dos D
 
-- INTERPRETIVE_CONTROVERSY: 1
-- JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: 11
-- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 9
-- TRANSITION_OR_TEMPORAL: 10
+- INTERPRETIVE_CONTROVERSY: 3
+- JUDICIAL_REVIEW_ANNOTATED: 14
+- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 18
+- TRANSITION_OR_TEMPORAL: 26
 
 ## Achados REVIEW_REQUIRED
 
@@ -70,15 +70,15 @@ Jurisprudência: CONTEXT_ONLY 33, NONE 207, REQUIRED_FOR_CORRECTNESS 9.
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 357.481 |
-| Modelo antigo (pacote completo de todos os itens) | 823.155 |
-| **Apresentado ao humano (pacotes + prioridade)** | **316.685** |
-| — MACRO07_COMPACT_AB_REVIEW.md | 169.842 |
-| — MACRO07_FULL_D_REVIEW.md | 112.033 |
+| Rascunhos (5 seções + glossário) | 355.790 |
+| Modelo antigo (pacote completo de todos os itens) | 818.019 |
+| **Apresentado ao humano (pacotes + prioridade)** | **441.681** |
+| — MACRO07_COMPACT_AB_REVIEW.md | 143.952 |
+| — MACRO07_FULL_D_REVIEW.md | 263.630 |
 | — MACRO07_HARD_FAIL_REPORT.md | 119 |
-| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 34.321 |
-| — MACRO07_QUICK_C_REVIEW.md | 370 |
-| Redução vs. modelo antigo | 506.470 (61.5%) |
+| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 33.815 |
+| — MACRO07_QUICK_C_REVIEW.md | 165 |
+| Redução vs. modelo antigo | 376.338 (46.0%) |
 
 ## Checks estruturais
 
@@ -94,24 +94,3 @@ Jurisprudência: CONTEXT_ONLY 33, NONE 207, REQUIRED_FOR_CORRECTNESS 9.
 - JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE so reconhece afirmacoes explicitas ("o Supremo decidiu/exige/admite", "a jurisprudencia delimita/reconhece"); jurisprudencia implicita (regra afirmada sem atribuicao) nao e detectada.
 - PRISON_SCOPE_UNQUALIFIED cobre so a vedacao de prisao formulada como absoluta; outras garantias processuais ensinadas como absolutas dependem de UNIVERSAL_CLAIM/EXCEPTION_OR_RESSALVA_DROPPED.
 - Nenhum check interpreta juridicamente o dispositivo: eles roteiam risco para revisao humana.
-
-## Segundo passe (compressão de risco e saneamento de fonte)
-
-| | Antes | Depois |
-|---|---|---|
-| A_CLEAN_LOW | 143 | 143 |
-| B_CLEAN_MEDIUM | 53 | 82 |
-| C_QUICK_REVIEW | 0 | 0 |
-| D_FULL_HUMAN_REVIEW | 53 | 24 |
-| E_HARD_FAIL | 0 | 0 |
-| LEGAL_RISK LOW | 143 | 143 |
-| LEGAL_RISK MEDIUM | 53 | 82 |
-| LEGAL_RISK HIGH | 53 | 24 |
-| D (%) | 21.3% | 9.6% |
-| Caracteres apresentados ao humano | 441.681 | 316.685 |
-
-- Correções editoriais do segundo passe: 94 (ABSOLUTO 12, AFIRMACAO_NAO_VERIFICAVEL 2, DUPLICACAO_COM_DIFERENCA_JURIDICA 1, ENUMERACAO_INCOMPLETA 4, EXEMPLO_CRIA_REQUISITO 3, FONTE_SANEADA 2, GLOSSARIO_ERRADO 1, JURISPRUDENCIA_RECLASSIFICADA 9, JURISPRUDENCIA_VELADA 7, LEI_COMO_CONSTITUICAO 4, NUMERO 4, PAI_CONTRADIZ_FILHO 8, REGRA_INVENTADA 12, REMISSAO_ERRADA 7, TELEOLOGIA 18).
-- Reclassificações de risco/fila: 29.
-- Transições: 26 com evidência versionada; 16 resolvidas pelo Git (MEDIUM); 10 mantidas HIGH com critério explícito.
-- Vide ADI: 14 classificados (CONTEXT_ONLY 3, REQUIRED_FOR_CORRECTNESS 11).
-- PARENT_CHILD_LEGAL_CONSISTENCY: 118 visões gerais verificadas; 0 achado(s) em aberto; 6 corrigido(s) no segundo passe.

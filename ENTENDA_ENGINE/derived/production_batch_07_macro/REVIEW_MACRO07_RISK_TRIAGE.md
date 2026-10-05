@@ -2,76 +2,51 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 249 · risco LOW 143 · MEDIUM 53 · HIGH 53
+- Explicações: 249 · risco LOW 143 · MEDIUM 82 · HIGH 24
 - Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: DUPLICATION 34, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Achados: DUPLICATION 30, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
 ### Art. 82 — Duração e início do mandato presidencial
 
 - `CF88:ART.82` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
-
-- `CF88:ART.86:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzida"
-
-### Art. 92 — Órgãos do Poder Judiciário
-
-- `CF88:ART.92` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.92:PAR.1: Vide ADIN 3392
-
-### Art. 98 — Juizados especiais e justiça de paz
-
-- `CF88:ART.98` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.98:PAR.1: Vide ADIN 3392
+- Motivos do risco: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda
 
 ### Art. 100 — Precatórios
 
 - `CF88:ART.100` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2)
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade
 
 ### Art. 100, § 5º — Inclusão dos precatórios no orçamento
 
 - `CF88:ART.100:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)
 
 ### Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa
 
 - `CF88:ART.100:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade
 
 ### Art. 100, § 12 — Atualização e juros dos precatórios
 
 - `CF88:ART.100:PAR.12` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.12: Vide ADI 4425
-
-### Art. 102 — Competências do Supremo Tribunal Federal
-
-- `CF88:ART.102` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade
 
 ### Art. 102, § 2º — Efeito vinculante nas ações de controle
 
 - `CF88:ART.102:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392
-
-### Art. 103-A — Enunciado com efeito vinculante do Supremo
-
-- `CF88:ART.103-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: INTERPRETIVE_CONTROVERSY: "controvérsia"
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade
 
 ### Art. 105, §§ 2º e 3º — Relevância no recurso especial
 
 - `CF88:ART.105:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial "nos termos da lei"
 
 ### Art. 114 — Competência da Justiça do Trabalho
 
 - `CF88:ART.114` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "controvérsias"; JUDICIAL_REVIEW_ANNOTATED: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10)
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade
 
 ### Art. 114, inciso I — Ações oriundas da relação de trabalho
 
@@ -81,27 +56,12 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
 
 - `CF88:ART.114:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não devem ser deduzidos"; JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3)
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não devem ser deduzidos"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade
 
 ### Art. 114, § 3º — Greve em atividade essencial
 
 - `CF88:ART.114:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2)
-
-### Art. 124 — Competência da Justiça Militar
-
-- `CF88:ART.124` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 125, § 2º — Controle de constitucionalidade estadual
-
-- `CF88:ART.125:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 129 — Funções institucionais do Ministério Público
-
-- `CF88:ART.129` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade
 
 ### Art. 142 — Forças Armadas
 
@@ -113,166 +73,61 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.142:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
 
-### Art. 144, § 8º — Guardas municipais
-
-- `CF88:ART.144:PAR.8` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 145, inciso II — Taxas
-
-- `CF88:ART.145:INC.II` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
-
-- `CF88:ART.146:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 149-B — Regras comuns ao IBS e à CBS
-
-- `CF88:ART.149-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 149-C — Tributação das compras públicas
-
-- `CF88:ART.149-C` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 150, inciso IV — Vedação ao confisco
-
-- `CF88:ART.150:INC.IV` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 150, § 7º — Substituição tributária para frente
-
-- `CF88:ART.150:PAR.7` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 153 — Impostos da União
-
-- `CF88:ART.153` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
 ### Art. 153, § 3º — Regras do imposto sobre produtos industrializados
 
 - `CF88:ART.153:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais
-
-- `CF88:ART.153:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 155 — Impostos dos Estados e do Distrito Federal
-
-- `CF88:ART.155` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias
-
-- `CF88:ART.155:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + REGIMES_COEXISTENTES + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)
 
 ### Art. 155, § 6º — Imposto sobre a propriedade de veículos
 
 - `CF88:ART.155:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156 — Impostos dos Municípios
-
-- `CF88:ART.156` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156, § 2º — Imposto sobre a transmissão de imóveis
-
-- `CF88:ART.156:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
-
-### Art. 156, § 3º — Lei complementar do imposto sobre serviços
-
-- `CF88:ART.156:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA + TEXTO_VIGENTE_INSUFICIENTE — ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023
 
 ### Art. 156-A — Imposto sobre bens e serviços
 
 - `CF88:ART.156-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços
-
-- `CF88:ART.156-A:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços
-
-- `CF88:ART.156-A:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços
-
-- `CF88:ART.156-A:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação
-
-- `CF88:ART.156-A:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha
-
-- `CF88:ART.156-A:PAR.13` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços
-
-- `CF88:ART.156-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — 2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)
 
 ### Art. 158 — Receitas tributárias dos Municípios
 
 - `CF88:ART.158` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)
 
 ### Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios
 
 - `CF88:ART.158:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
-
-### Art. 159, inciso I — Fundos de participação
-
-- `CF88:ART.159:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077
 
 ### Art. 159-A — Fundo Nacional de Desenvolvimento Regional
 
 - `CF88:ART.159-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: TEXTO_VIGENTE_INSUFICIENTE — valores e cronograma de entrega do fundo
 
 ### Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026
 
 - `CF88:ART.165:PAR.18` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Motivos do risco: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026
 - TRANSITION_IN_CORE (o_que_diz: Emenda Constitucional) → Falso positivo: o proprio texto dos §§ 18 a 20 remete a Emenda Constitucional nº 126, de 2022 (lei complementar do seu art. 6º); a mencao no O QUE DIZ reproduz a remissao normativa vigente, nao historico de redacao. A natureza temporal do bloco esta sinalizada na ATENCAO.
 
 ### Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares
 
 - `CF88:ART.166` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3)
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade
 
 ### Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais
 
 - `CF88:ART.166:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade
 
 ### Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas
 
 - `CF88:ART.166:PAR.11` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade
 
 ### Art. 166-A — Transferências por emendas individuais
 
 - `CF88:ART.166-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_ANNOTATED: ART.166-A:CAPUT: Vide ADI 7697
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade
 
 ## Risco MEDIUM
 
@@ -300,6 +155,16 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.86:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: crime
+
+### Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
+
+- `CF88:ART.86:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da ; SENSITIVE_THEME: prisão
+
+### Art. 92 — Órgãos do Poder Judiciário
+
+- `CF88:ART.92` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada
 
 ### Art. 93 — Estatuto da Magistratura
 
@@ -346,6 +211,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.97` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: As hipóteses em que o órgão fracionário pode deixar de submeter a questão ao plenário ou ao órgão especial são tema da camada JURISPRUDÊNCIA
 
+### Art. 98 — Juizados especiais e justiça de paz
+
+- `CF88:ART.98` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada
+
 ### Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência
 
 - `CF88:ART.100:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -355,6 +225,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.100:PAR.6` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: crime
+
+### Art. 102 — Competências do Supremo Tribunal Federal
+
+- `CF88:ART.102` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: crimes; JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele
 
 ### Art. 102, inciso I — Competência originária do Supremo
 
@@ -371,6 +246,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.103:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA.
 
+### Art. 103-A — Enunciado com efeito vinculante do Supremo
+
+- `CF88:ART.103-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ; SENSITIVE_THEME: cassa; CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate
+
 ### Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
 
 - `CF88:ART.103-A:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -386,7 +266,6 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.103-B:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: sanções
-- DUPLICATION (o_que_diz: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.636) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 - DUPLICATION (o_que_significa: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 105 — Competências do Superior Tribunal de Justiça
@@ -432,10 +311,20 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.109:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os requisitos aplicados para deferir o deslocamento de competência são tema da camada JURISPRUDÊNCIA.
 
+### Art. 124 — Competência da Justiça Militar
+
+- `CF88:ART.124` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: crimes
+
 ### Art. 125 — Justiça dos Estados
 
 - `CF88:ART.125` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: crimes
+
+### Art. 125, § 2º — Controle de constitucionalidade estadual
+
+- `CF88:ART.125:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
 
@@ -457,6 +346,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.128:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: perder o cargo
 
+### Art. 129 — Funções institucionais do Ministério Público
+
+- `CF88:ART.129` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
 ### Art. 130 — Ministério Público junto aos Tribunais de Contas
 
 - `CF88:ART.130` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -472,7 +366,6 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.130-A:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: sanções
-- DUPLICATION (o_que_diz: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.636) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 - DUPLICATION (o_que_significa: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 133 — Advocacia
@@ -500,6 +393,36 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.142:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: prerrogativ
 
+### Art. 144, § 8º — Guardas municipais
+
+- `CF88:ART.144:PAR.8` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+### Art. 145, inciso II — Taxas
+
+- `CF88:ART.145:INC.II` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA.
+
+### Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
+
+- `CF88:ART.146:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS (art. 156-A) e da CBS (art. 195, V): 2026 em teste (ADCT 125); CBS integral a partir de 2027 (ADCT 126); IBS 0,05% + 0,05% em 2027-2028 (ADCT 127)
+
+### Art. 149-B — Regras comuns ao IBS e à CBS
+
+- `CF88:ART.149-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: imunidade; TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS e da CBS conforme ADCT 125 a 127
+
+### Art. 149-C — Tributação das compras públicas
+
+- `CF88:ART.149-C` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 127, ADCT 131 — cobranca do IBS e da CBS conforme ADCT 125 a 127; retencao do IBS de 2029 a 2077 (ADCT 131) aplicada nos termos do art. 149-C
+
+### Art. 150, inciso IV — Vedação ao confisco
+
+- `CF88:ART.150:INC.IV` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA.
+
 ### Art. 150, inciso VI — Imunidades tributárias
 
 - `CF88:ART.150:INC.VI` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -510,20 +433,95 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.150:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A extensão da imunidade recíproca a outras empresas estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA.
 
+### Art. 150, § 7º — Substituição tributária para frente
+
+- `CF88:ART.150:PAR.7` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUI
+
 ### Art. 151 — Limitações ao poder de tributar da União
 
 - `CF88:ART.151` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A concessão de isenções de tributos locais por tratado internacional é tema da camada JURISPRUDÊNCIA.
+
+### Art. 153 — Impostos da União
+
+- `CF88:ART.153` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b); IPI com aliquota zero a partir de 2027, salvo Zona Franca (ADCT 126, III)
+
+### Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais
+
+- `CF88:ART.153:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b)
+
+### Art. 155 — Impostos dos Estados e do Distrito Federal
+
+- `CF88:ART.155` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)
+
+### Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias
+
+- `CF88:ART.155:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)
 
 ### Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado
 
 - `CF88:ART.155:PAR.2:INC.VII` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A exigência de lei complementar para a cobrança do diferencial de alíquotas e seus efeitos no tempo são temas da camada JURISPRUDÊNCIA.
 
+### Art. 156 — Impostos dos Municípios
+
+- `CF88:ART.156` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: imunidade; TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)
+
 ### Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana
 
 - `CF88:ART.156:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: imunidade
+
+### Art. 156, § 2º — Imposto sobre a transmissão de imóveis
+
+- `CF88:ART.156:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+### Art. 156, § 3º — Lei complementar do imposto sobre serviços
+
+- `CF88:ART.156:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)
+
+### Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços
+
+- `CF88:ART.156-A:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)
+
+### Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços
+
+- `CF88:ART.156-A:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)
+
+### Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços
+
+- `CF88:ART.156-A:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)
+
+### Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação
+
+- `CF88:ART.156-A:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)
+
+### Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha
+
+- `CF88:ART.156-A:PAR.13` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)
+
+### Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços
+
+- `CF88:ART.156-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125 — em 2026 a arrecadacao de teste do imposto financia o Comite Gestor (ADCT 125, § 3º, I)
+
+### Art. 159, inciso I — Fundos de participação
+
+- `CF88:ART.159:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do art. 153, VIII, cobrado a partir de 2027 (ADCT 126, I, b), quando passa a compor a base do inciso I
 
 ### Art. 167 — Vedações orçamentárias
 
@@ -677,7 +675,6 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.99:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 - DUPLICATION (o_que_diz: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.362) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
-- DUPLICATION (exemplo_pratico: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.375) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 100, §§ 3º e 4º — Obrigações de pequeno valor
 
@@ -870,7 +867,6 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.127:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 - DUPLICATION (o_que_diz: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.362) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
-- DUPLICATION (exemplo_pratico: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.375) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 128, §§ 1º e 2º — Procurador-Geral da República
 

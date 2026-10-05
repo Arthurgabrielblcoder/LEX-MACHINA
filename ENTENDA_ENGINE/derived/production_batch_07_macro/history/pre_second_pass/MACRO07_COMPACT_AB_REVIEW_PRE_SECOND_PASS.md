@@ -20,7 +20,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O art. 77 marca a eleição presidencial para outubro do ano anterior ao fim do mandato: primeiro turno no primeiro domingo do mês e, se houver, segundo turno no último domingo.
 - Interpretação principal: Presidente e Vice são eleitos na mesma votação.
-- ATENÇÃO: A regra do segundo turno vale para Presidente; Governadores e Prefeitos de Municípios acima do número de eleitores fixado no art. 29, II, seguem as mesmas regras do art. 77, por remissão (arts. 28 e…
+- ATENÇÃO: A regra do segundo turno vale para Presidente; Governadores e Prefeitos de grandes Municípios seguem regras próprias, por remissão (arts. 28 e 29, II).
 - Dependência externa: nenhuma
 - Warnings: nenhum
 - Motivo da fila: LOW sem alerta
@@ -141,7 +141,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O art. 87 exige que os Ministros de Estado sejam brasileiros maiores de vinte e um anos, em pleno gozo dos direitos políticos.
 - Interpretação principal: Os requisitos são poucos: nacionalidade brasileira, idade mínima e gozo dos direitos políticos.
-- ATENÇÃO: Só para um Ministério a Constituição exige brasileiro nato: o cargo de Ministro de Estado da Defesa (art. 12, § 3º, VII).
+- ATENÇÃO: Para alguns Ministérios a Constituição exige brasileiro nato: é o caso do Ministro de Estado da Defesa (art. 12, § 3º, VII).
 - Dependência externa: nenhuma
 - Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(30)
 - Motivo da fila: LOW sem alerta
@@ -176,7 +176,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: As matérias do Conselho são as mais sensíveis para a democracia: as medidas excepcionais de defesa do Estado e as crises institucionais.
 - ATENÇÃO: Ouvir o Conselho é etapa prevista para a intervenção federal, o estado de defesa e o estado de sítio (arts. 136 e 137), mas a opinião do Conselho não vincula o Presidente.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: federal estado de defesa e estado de sítio), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: federal estado de defesa e estado de sítio)
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -239,7 +239,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O parágrafo único proíbe ao juiz: exercer outro cargo ou função, ainda que em disponibilidade, salvo uma de magistério; receber custas ou participação em processo; dedicar-se a atividade…
-- Interpretação principal: O parágrafo lista cinco proibições ligadas a outras atividades, a recebimentos, à política partidária e à advocacia depois de deixar o cargo.
+- Interpretação principal: As vedações procuram manter o juiz dedicado à função e afastado de interesses que possam influenciar suas decisões.
 - ATENÇÃO: As exceções do inciso IV dependem de previsão em lei; não basta a vontade do doador ou do juiz.
 - Dependência externa: nenhuma
 - Warnings: nenhum
@@ -275,7 +275,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: Os três parágrafos completam o regime da autonomia financeira.
 - ATENÇÃO: A ressalva do § 5º exige autorização prévia: créditos suplementares ou especiais não podem ser abertos depois que a despesa já foi feita.
 - Dependência externa: nenhuma
-- Warnings: DUPLICATION(resolvido), lint PARENT_REPETITION
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido), lint PARENT_REPETITION
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -316,7 +316,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O § 20 prevê que, se um precatório tiver valor superior a quinze por cento do total dos precatórios apresentados nos termos do § 5º, quinze por cento do seu valor seja pago até o fim do exercício…
-- Interpretação principal: Quando um precatório passa desse percentual, o parágrafo determina que ele seja pago em partes: uma parcela inicial de quinze por cento e o restante em cinco parcelas…
+- Interpretação principal: Um único precatório muito grande poderia consumir quase todo o orçamento destinado a precatórios.
 - ATENÇÃO: O acordo depende da regulamentação do ente devedor e de não haver recurso ou defesa pendente sobre o crédito.
 - Dependência externa: nenhuma
 - Warnings: NUMBER_FROM_OTHER_DEVICE(20% )
@@ -426,7 +426,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: EXTERNAL
 - Ponto jurídico: O § 3º permite que a lei leve à Justiça estadual causas federais entre instituição de previdência social e segurado, quando não houver vara federal sediada na comarca onde o segurado mora.
-- Interpretação principal: Os parágrafos tratam de uma delegação de competência à Justiça estadual, que depende de lei.
+- Interpretação principal: Os parágrafos tratam de uma delegação de competência para facilitar o acesso do segurado.
 - ATENÇÃO: O § 3º é permissivo: a lei pode autorizar a delegação e definir suas condições.
 - Dependência externa: nenhuma
 - Warnings: nenhum
@@ -627,7 +627,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: A unidade significa que os membros de um mesmo Ministério Público atuam como uma só instituição, sob a mesma chefia.
 - ATENÇÃO: A independência funcional protege a convicção do membro, mas não afasta a organização administrativa da instituição.
 - Dependência externa: nenhuma
-- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Warnings: nenhum
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -649,7 +649,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: Os parágrafos combinam autonomia e controle.
 - ATENÇÃO: As regras são semelhantes às do Judiciário (art. 99, §§ 3º a 5º).
 - Dependência externa: nenhuma
-- Warnings: DUPLICATION(resolvido)
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido)
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -726,7 +726,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: A Advocacia-Geral da União é o escritório de advocacia do Estado federal.
 - ATENÇÃO: O § 2º tem nota de remissão a lei na fonte oficial.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_significa: ingresso nas classes iniciais das carreiras da…)
+- Warnings: nenhum
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -1020,7 +1020,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O art. 149-A permite que os Municípios e o Distrito Federal instituam, por suas leis, contribuição para custear, expandir e melhorar o serviço de iluminação pública e sistemas de monitoramento para a…
-- Interpretação principal: O artigo prevê uma contribuição própria para custear, expandir e melhorar o serviço de iluminação pública.
+- Interpretação principal: A iluminação pública beneficia todos ao mesmo tempo, e não é possível medir quanto cada pessoa usa.
 - ATENÇÃO: A contribuição é municipal e distrital.
 - Dependência externa: nenhuma
 - Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
@@ -1043,7 +1043,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O inciso III impede a cobrança de tributos em três situações: sobre fatos geradores anteriores à entrada em vigor da lei que os criou ou aumentou (alínea a); no mesmo exercício financeiro em que essa…
 - Interpretação principal: O inciso protege o contribuinte contra surpresas.
-- ATENÇÃO: Há tributos que não seguem a alínea b, a alínea c ou ambas: parte das exceções está no § 1º, com explicação própria, e outras aparecem em dispositivos como os arts. 195, § 6º, 177, § 4º, I, b, e 155,…
+- ATENÇÃO: Há tributos que não seguem a alínea b, a alínea c ou ambas: as exceções estão no § 1º, com explicação própria.
 - Dependência externa: nenhuma
 - Warnings: lint PARENT_REPETITION
 - Motivo da fila: LOW sem alerta
@@ -1163,7 +1163,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O § 4º regula a incidência única sobre combustíveis e lubrificantes definida em lei complementar (§ 2º, XII, h).
-- Interpretação principal: Os combustíveis e lubrificantes definidos em lei complementar têm um regime especial: o imposto é cobrado uma única vez na cadeia.
+- Interpretação principal: Os combustíveis têm um regime especial: o imposto é cobrado uma única vez na cadeia.
 - ATENÇÃO: O regime depende da lei complementar que define os combustíveis de incidência única.
 - Dependência externa: nenhuma
 - Warnings: nenhum
@@ -1298,7 +1298,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: O orçamento público é organizado em três leis que se encaixam.
 - ATENÇÃO: Os §§ 18 a 22 trazem regras ligadas a exercícios específicos e a emendas recentes, com explicação própria.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_significa: orçamentos fiscal e da seguridade social da união)
+- Warnings: nenhum
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -1349,7 +1349,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 ### `CF88:ART.166:PAR.3` — Art. 166, § 3º — Condições para emendar o orçamento
 
 - Risco: LOW · complexidade: SIMPLE
-- Ponto jurídico: O § 3º limita a aprovação de emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, às hipóteses dos incisos I a III.
+- Ponto jurídico: O § 3º permite aprovar emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, apenas em três situações.
 - Interpretação principal: O parlamentar pode mudar o orçamento, mas não pode criar despesa do nada.
 - ATENÇÃO: Os incisos do texto estão ligados pela conjunção ou; a leitura de quais requisitos são cumulativos deve considerar a redação dos incisos I e II e a camada JURISPRUDÊNCIA.
 - Dependência externa: nenhuma
@@ -1361,7 +1361,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O inciso IV proíbe vincular a receita de impostos a órgão, fundo ou despesa.
-- Interpretação principal: A regra é a não vinculação da receita de impostos.
+- Interpretação principal: A receita dos impostos deve ficar livre para que o orçamento decida, a cada ano, onde aplicá-la.
 - ATENÇÃO: As exceções são as do texto.
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: 158 e 159 a destinação de recursos para), NUMBER_FROM_OTHER_DEVICE(10% )
@@ -1577,7 +1577,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (82)
+## B — CLEAN_MEDIUM (53)
 
 ### `CF88:ART.83` — Art. 83 — Ausência do País e perda do cargo
 
@@ -1604,7 +1604,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 ### `CF88:ART.85` — Art. 85 — Crimes de responsabilidade do Presidente
 
 - Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: crimes
-- Ponto jurídico: O art. 85 define como crimes de responsabilidade os atos do Presidente que atentem contra a Constituição e, em especial, contra: a existência da União; o livre exercício do Legislativo, do…
+- Ponto jurídico: O art. 85 define como crimes de responsabilidade os atos do Presidente que atentem contra a Constituição e, em especial, contra: a existência da União; o livre exercício dos Poderes, do Ministério…
 - Interpretação principal: Crime de responsabilidade não é crime comum.
 - ATENÇÃO: A definição concreta dos crimes depende da lei especial; o artigo não basta para tipificar uma conduta.
 - Dependência externa: nenhuma
@@ -1634,34 +1634,12 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.86:PAR.3` — Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e…; SENSITIVE_THEME: prisão
-- Ponto jurídico: O § 3º estabelece que, nas infrações comuns, o Presidente não está sujeito a prisão enquanto não houver sentença condenatória.
-- Interpretação principal: O § 3º afasta a prisão cautelar do Presidente nas infrações penais comuns: antes de uma sentença condenatória, ele não pode ser preso preventivamente nem em flagrante…
-- ATENÇÃO: A extensão dessas garantias, como o que acontece com investigações e prazos de prescrição durante o mandato, é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.92` — Art. 92 — Órgãos do Poder Judiciário
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º…
-- Ponto jurídico: O art. 92 lista os órgãos do Poder Judiciário: Supremo Tribunal Federal, Conselho Nacional de Justiça, Superior Tribunal de Justiça, Tribunal Superior do Trabalho, Tribunais Regionais Federais e…
-- Interpretação principal: O Judiciário brasileiro é organizado em ramos.
-- ATENÇÃO: O Conselho Nacional de Justiça é órgão do Judiciário, mas não exerce função jurisdicional.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.93` — Art. 93 — Estatuto da Magistratura
 
 - Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: sob pena
 - Ponto jurídico: O art. 93 determina que lei complementar, de iniciativa do Supremo Tribunal Federal, disponha sobre o Estatuto da Magistratura, observando uma série de princípios.
 - Interpretação principal: O Estatuto da Magistratura é a lei que organiza a carreira dos juízes em todo o país.
-- ATENÇÃO: Os princípios do art. 93 valem para toda a magistratura, federal e estadual.
+- ATENÇÃO: Os princípios do art. 93 valem para toda a magistratura, federal e estadual, inclusive antes de qualquer alteração do Estatuto.
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: lei complementar de iniciativa do supremo…)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
@@ -1704,7 +1682,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perda do cargo
 - Ponto jurídico: O art. 95 assegura aos juízes três garantias: vitaliciedade, inamovibilidade, salvo interesse público na forma do art. 93, VIII, e irredutibilidade de subsídio, com as ressalvas que indica.
-- Interpretação principal: O artigo dá ao juiz três garantias, ligadas ao cargo, ao local de exercício e ao subsídio.
+- Interpretação principal: As garantias protegem a independência do juiz para decidir sem pressões.
 - ATENÇÃO: A irredutibilidade não impede o desconto do imposto de renda nem a aplicação do teto remuneratório: essas ressalvas estão no próprio inciso III.
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: interesse público na forma do art 93 viii)
@@ -1738,7 +1716,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
 - Ponto jurídico: O inciso III atribui aos Tribunais de Justiça o julgamento, por crimes comuns e de responsabilidade, dos juízes estaduais, do Distrito Federal e dos Territórios e dos membros do Ministério Público,…
 - Interpretação principal: Juízes e membros do Ministério Público que atuam nos Estados não são julgados por um juiz de primeiro grau quando acusados de crime: o processo corre no Tribunal de…
-- ATENÇÃO: O inciso trata dos juízes estaduais e do Distrito Federal e Territórios e dos membros do Ministério Público dos Estados.
+- ATENÇÃO: O inciso trata dos juízes e do Ministério Público ligados aos Estados e ao Distrito Federal; juízes federais e membros do Ministério Público da União seguem outra regra (art. 108, I, a).
 - Dependência externa: nenhuma
 - Warnings: lint PARENT_REPETITION, lint TERM_NOT_USED
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
@@ -1753,17 +1731,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.98` — Art. 98 — Juizados especiais e justiça de paz
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º,…
-- Ponto jurídico: O art. 98 obriga os Estados e a União (esta, no Distrito Federal e nos Territórios) a criar juizados especiais, voltados a causas cíveis simples e a infrações penais leves (inciso I), e a justiça de…
-- Interpretação principal: O artigo cria dois instrumentos de Justiça mais próxima do cidadão.
-- ATENÇÃO: O juiz de paz exerce atribuições conciliatórias sem caráter jurisdicional: não profere sentenças.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.100:PAR.1` — Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência
@@ -1786,17 +1753,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: ou tentar frustrar a liquidação regular de…)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.102` — Art. 102 — Competências do Supremo Tribunal Federal
-
-- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: crimes; JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º,…
-- Ponto jurídico: O art. 102 atribui ao Supremo Tribunal Federal, como função principal, a guarda da Constituição.
-- Interpretação principal: O artigo mostra as três portas de entrada de um processo no Supremo.
-- ATENÇÃO: O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria.
-- Dependência externa: nenhuma
-- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, JUDICIAL_REVIEW_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.102:INC.I` — Art. 102, inciso I — Competência originária do Supremo
@@ -1832,17 +1788,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.103-A` — Art. 103-A — Enunciado com efeito vinculante do Supremo
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA…; SENSITIVE_THEME: cassa; CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate
-- Ponto jurídico: O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros um enunciado com efeito vinculante, depois de reiteradas decisões sobre matéria…
-- Interpretação principal: O artigo cria um instrumento para fixar, de forma obrigatória, a interpretação do Supremo sobre um tema constitucional já decidido muitas vezes.
-- ATENÇÃO: Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca ele aparece com o nome próprio que a Constituição lhe dá.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_significa: a interpretação e a eficácia de normas…)
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, CONTROVERSY_TERM_FROM_LEI_SECA)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.103-A:PAR.3` — Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
 
 - Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: cassa
@@ -1872,7 +1817,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: O parágrafo mostra que o Conselho atua em duas frentes.
 - ATENÇÃO: As competências são administrativas e disciplinares.
 - Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da competência do tribunal de contas da união), DUPLICATION(resolvido)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da competência do tribunal de contas da união), DUPLICATION(resolvido), DUPLICATION(resolvido)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -1946,7 +1891,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A aplicação do § 2º a autarquias federais é tema da camada…
 - Ponto jurídico: O § 1º determina que as causas em que a União for autora sejam propostas na seção judiciária do domicílio da outra parte.
-- Interpretação principal: Os dois parágrafos definem onde são propostas as causas de que a União participa.
+- Interpretação principal: Os dois parágrafos protegem a parte que litiga contra a União.
 - ATENÇÃO: No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: as causas em que a união for autora)
@@ -1964,17 +1909,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.124` — Art. 124 — Competência da Justiça Militar
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da…; SENSITIVE_THEME: crimes
-- Ponto jurídico: O art. 124 atribui à Justiça Militar o processo e o julgamento dos crimes militares definidos em lei.
-- Interpretação principal: A competência da Justiça Militar da União é definida pela natureza do crime: ela julga crimes militares.
-- ATENÇÃO: Quando um civil pode ser julgado pela Justiça Militar da União depende da lei e é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a organização o funcionamento e a competência da), lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.125` — Art. 125 — Justiça dos Estados
 
 - Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
@@ -1984,17 +1918,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: nenhuma
 - Warnings: nenhum
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.125:PAR.2` — Art. 125, § 2º — Controle de constitucionalidade estadual
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução…
-- Ponto jurídico: O § 2º atribui aos Estados a criação da representação de inconstitucionalidade contra leis ou atos normativos estaduais e municipais que contrariem a Constituição do Estado.
-- Interpretação principal: Assim como existe controle de constitucionalidade em relação à Constituição Federal, os Estados podem ter um controle próprio, tendo como parâmetro a Constituição…
-- ATENÇÃO: O parágrafo trata do parâmetro estadual.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.125:PAR.3` — Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
@@ -2034,22 +1957,11 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perder o cargo
 - Ponto jurídico: O § 5º determina que leis complementares da União e dos Estados, de iniciativa facultada aos Procuradores-Gerais, definam como cada Ministério Público se organiza, suas atribuições e o estatuto dos…
-- Interpretação principal: O texto dá garantias ao membro do Ministério Público.
+- Interpretação principal: As garantias protegem o membro do Ministério Público para que possa atuar sem medo de retaliação.
 - ATENÇÃO: A irredutibilidade tem ressalvas expressas, como o teto remuneratório e as regras tributárias indicadas no texto.
 - Dependência externa: nenhuma
 - Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.129` — Art. 129 — Funções institucionais do Ministério Público
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público…
-- Ponto jurídico: O art. 129 lista as funções institucionais do Ministério Público.
-- Interpretação principal: O artigo mostra que o Ministério Público atua em várias frentes.
-- ATENÇÃO: O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o inquérito civil e a ação civil pública), NEAR_COPY_MICROFIX(o_que_significa: a legitimação do ministério público para as ações), lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.130` — Art. 130 — Ministério Público junto aos Tribunais de Contas
@@ -2077,11 +1989,11 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 ### `CF88:ART.130-A:PAR.2` — Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público
 
 - Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
-- Ponto jurídico: O § 2º aplica ao Ministério Público o modelo de controle do Conselho Nacional de Justiça (art. 103-B, § 4º): gestão administrativa e financeira da instituição e deveres funcionais dos membros.
+- Ponto jurídico: O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais.
 - Interpretação principal: O parágrafo repete, para o Ministério Público, o modelo de controle do art. 103-B, § 4º.
 - ATENÇÃO: As competências são administrativas e disciplinares.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: do ministério público da união e dos estados), NEAR_COPY_MICROFIX(o_que_significa: do ministério público da união e dos estados), DUPLICATION(resolvido)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: do ministério público da união e dos estados), DUPLICATION(resolvido), DUPLICATION(resolvido)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -2122,7 +2034,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
 - Ponto jurídico: O art. 139 determina que, no estado de sítio decretado com base no art. 137, I, só podem ser tomadas contra as pessoas as medidas da lista.
-- Interpretação principal: No estado de sítio do art. 137, I (comoção grave ou ineficácia do estado de defesa), a lista de medidas é fechada.
+- Interpretação principal: Na comoção grave, a lista de medidas é fechada.
 - ATENÇÃO: A lista vale para o estado de sítio do art. 137, I.
 - Dependência externa: nenhuma
 - Warnings: nenhum
@@ -2140,78 +2052,12 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.144:PAR.8` — Art. 144, § 8º — Guardas municipais
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A atuação das guardas municipais na segurança pública é tema…
-- Ponto jurídico: O § 8º permite que os Municípios criem guardas municipais para proteger os próprios bens, serviços e instalações, conforme dispuser a lei.
-- Interpretação principal: A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.
-- ATENÇÃO: O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações depende da lei e é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: bens serviços e instalações conforme dispuser a…), lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.145:INC.II` — Art. 145, inciso II — Taxas
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A classificação de serviços como específicos e divisíveis…
-- Ponto jurídico: O inciso II autoriza a cobrança de taxas em duas situações: pelo exercício do poder de polícia, ou pelo uso, efetivo ou potencial, de serviço público específico e divisível prestado ao contribuinte…
-- Interpretação principal: A taxa depende de uma atuação do Estado ligada ao contribuinte.
-- ATENÇÃO: A classificação de cada serviço como específico e divisível é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.146:PAR.1` — Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 —…
-- Ponto jurídico: O § 1º permite que a lei complementar do inciso III, d, institua um regime único para arrecadar impostos e contribuições federais, estaduais, distritais e municipais.
-- Interpretação principal: O regime único permite que micro e pequenas empresas recolham vários tributos em um só recolhimento.
-- ATENÇÃO: Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.149-B` — Art. 149-B — Regras comuns ao IBS e à CBS
-
-- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: imunidade; TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 —…
-- Ponto jurídico: O art. 149-B determina que o imposto do art. 156-A e a contribuição do art. 195, V, observem as mesmas regras sobre fato gerador, base de cálculo, casos de não incidência e sujeitos passivos;…
-- Interpretação principal: O artigo trata dos dois tributos sobre bens e serviços criados pela reforma tributária: o imposto do art. 156-A, dos Estados, do Distrito Federal e dos Municípios, e a…
-- ATENÇÃO: Os tributos dos arts. 156-A e 195, V, foram criados por emenda recente.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.149-C` — Art. 149-C — Tributação das compras públicas
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 127, ADCT 131 —…
-- Ponto jurídico: O art. 149-C determina que a arrecadação do imposto do art. 156-A e da contribuição do art. 195, V, sobre operações contratadas pela administração pública direta, autarquias e fundações públicas,…
-- Interpretação principal: Quando o poder público compra bens ou serviços, parte do preço é tributo.
-- ATENÇÃO: A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.150:INC.IV` — Art. 150, inciso IV — Vedação ao confisco
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A aplicação da vedação ao confisco às multas tributárias e os…
-- Ponto jurídico: O inciso IV proíbe utilizar tributo com efeito de confisco.
-- Interpretação principal: O tributo não pode ser tão pesado que, na prática, retire do contribuinte o patrimônio ou a renda.
-- ATENÇÃO: O momento em que um tributo ou uma multa passa a ter efeito confiscatório é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.150:INC.VI` — Art. 150, inciso VI — Imunidades tributárias
 
 - Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades (por exemplo, livros digitais e…
 - Ponto jurídico: O inciso VI proíbe instituir impostos sobre: patrimônio, renda ou serviços de um ente federativo cobrados por outro (alínea a); templos de qualquer culto e entidades religiosas, com suas organizações…
 - Interpretação principal: As imunidades impedem a cobrança de impostos sobre as pessoas e os bens indicados.
-- ATENÇÃO: O § 2º estende a imunidade da alínea a a autarquias, fundações públicas e à empresa pública postal, quanto ao que se liga às suas finalidades essenciais; o § 3º afasta essa imunidade na exploração de…
+- ATENÇÃO: Os §§ 2º a 4º limitam o alcance das imunidades das alíneas a, b e c às finalidades essenciais das entidades.
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: e fonogramas e videofonogramas musicais…), lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
@@ -2228,17 +2074,6 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.150:PAR.7` — Art. 150, § 7º — Substituição tributária para frente
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A restituição da diferença quando a base de cálculo real é…
-- Ponto jurídico: O § 7º permite que a lei torne um sujeito passivo responsável por pagar imposto ou contribuição de fato gerador que ainda vai acontecer.
-- Interpretação principal: O parágrafo autoriza a chamada substituição tributária para frente.
-- ATENÇÃO: O texto garante restituição quando o fato gerador não se realiza.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE, lint JURISPRUDENCE_WORDING_IN_BODY, lint TERM_LOW_UTILITY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.151` — Art. 151 — Limitações ao poder de tributar da União
 
 - Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A concessão de isenções de tributos locais por tratado…
@@ -2250,70 +2085,15 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.153` — Art. 153 — Impostos da União
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a…
-- Ponto jurídico: O art. 153 lista os impostos da União: sobre importação; sobre exportação; sobre renda e proventos de qualquer natureza; sobre produtos industrializados; sobre operações de crédito, câmbio, seguro ou…
-- Interpretação principal: O artigo é a lista dos impostos que pertencem à União.
-- ATENÇÃO: O inciso VIII foi incluído por emenda recente, e a aplicação no tempo do novo imposto depende de regra de transição do ADCT, na camada externa.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: bens e serviços prejudiciais à saúde ou ao), NEAR_COPY_MICROFIX(o_que_significa: bens e serviços prejudiciais à saúde ou ao)
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.153:PAR.6` — Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a…
-- Ponto jurídico: O § 6º fixa regras para o imposto do inciso VIII.
-- Interpretação principal: O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.
-- ATENÇÃO: O imposto foi criado por emenda recente.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: 155 ii 156 iii 156 a e 195), lint TERM_NOT_USED
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.155` — Art. 155 — Impostos dos Estados e do Distrito Federal
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032…
-- Ponto jurídico: O art. 155 reserva aos Estados e ao Distrito Federal três impostos: sobre a transmissão de bens ou direitos por morte ou por doação; sobre a circulação de mercadorias e as prestações de serviços de…
-- Interpretação principal: Os Estados e o Distrito Federal têm três impostos.
-- ATENÇÃO: A reforma tributária prevê a substituição gradual do imposto sobre circulação de mercadorias pelo imposto do art. 156-A.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.155:PAR.2` — Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032…
-- Ponto jurídico: O § 2º reúne as regras do imposto sobre circulação de mercadorias e serviços.
-- Interpretação principal: O parágrafo é o estatuto constitucional do principal imposto estadual.
-- ATENÇÃO: A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X) têm explicação própria.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.155:PAR.2:INC.VII` — Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado
 
 - Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A exigência de lei complementar para a cobrança do…
 - Ponto jurídico: O inciso VII determina que, nas vendas de bens e serviços a consumidor final localizado em outro Estado, contribuinte ou não do imposto, se aplique a alíquota interestadual, cabendo ao Estado do…
 - Interpretação principal: A regra divide o imposto entre o Estado de origem e o Estado de destino.
-- ATENÇÃO: Se a cobrança dessa diferença depende de lei complementar específica é tema da camada JURISPRUDÊNCIA.
+- ATENÇÃO: A cobrança dessa diferença depende de lei complementar sobre o imposto.
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: lint JURISPRUDENCE_WORDING_IN_BODY, lint TERM_LOW_UTILITY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156` — Art. 156 — Impostos dos Municípios
-
-- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: imunidade; TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032…
-- Ponto jurídico: O art. 156 dá aos Municípios três impostos: sobre a propriedade predial e territorial urbana; sobre a transmissão onerosa de imóveis entre vivos e de direitos reais sobre eles, exceto os de garantia,…
-- Interpretação principal: Os Municípios têm três impostos próprios.
-- ATENÇÃO: A reforma tributária prevê a substituição gradual do imposto sobre serviços pelo imposto do art. 156-A.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.156:PAR.1` — Art. 156, §§ 1º e 1º-A — Imposto sobre a propriedade urbana
@@ -2327,111 +2107,12 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-### `CF88:ART.156:PAR.2` — Art. 156, § 2º — Imposto sobre a transmissão de imóveis
-
-- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A não incidência sobre o valor que excede o capital…
-- Ponto jurídico: O § 2º estabelece que o imposto sobre a transmissão onerosa de imóveis não incide quando bens ou direitos são incorporados ao patrimônio de pessoa jurídica para formar o capital, nem nas transmissões…
-- Interpretação principal: Quando alguém transfere um imóvel para uma empresa como forma de formar o capital dela, ou quando empresas se reorganizam, em regra não há o imposto municipal sobre a…
-- ATENÇÃO: O alcance da não incidência quando o valor do imóvel supera o capital integralizado é tema da camada JURISPRUDÊNCIA.
-- Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a compra e venda desses bens ou direitos), lint JURISPRUDENCE_WORDING_IN_BODY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156:PAR.3` — Art. 156, § 3º — Lei complementar do imposto sobre serviços
-
-- Risco: MEDIUM · complexidade: STRUCTURED · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032…
-- Ponto jurídico: O § 3º atribui à lei complementar, quanto ao imposto sobre serviços, fixar as alíquotas máximas e mínimas, excluir da incidência as exportações de serviços para o exterior e regular a forma e as…
-- Interpretação principal: Cada Município cria seu imposto sobre serviços, mas a lei complementar nacional define limites comuns.
-- ATENÇÃO: O imposto sobre serviços será gradualmente substituído pelo do art. 156-A, e a aplicação no tempo depende de regra de transição do ADCT, na camada externa.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156-A:PAR.1` — Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços
-
-- Risco: MEDIUM · complexidade: STRUCTURED · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do…
-- Ponto jurídico: O § 1º orienta o imposto pelo princípio da neutralidade e fixa suas características.
-- Interpretação principal: Em termos gerais, a neutralidade indica que o imposto não deve distorcer as decisões econômicas de pessoas e empresas.
-- ATENÇÃO: As regras dependem de lei complementar e se aplicam conforme regra de transição do ADCT, consultada na camada externa.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: alíquotas do estado e do município de destino), lint LONG_EXPLANATION
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156-A:PAR.5` — Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do…
-- Ponto jurídico: O § 5º lista matérias de que a lei complementar disporá.
-- Interpretação principal: Grande parte do funcionamento do novo imposto não está na Constituição, e sim na lei complementar.
-- ATENÇÃO: O parágrafo indica matérias, mas o conteúdo concreto está na lei complementar, aplicada conforme regra de transição do ADCT, na camada externa.
-- Dependência externa: nenhuma
-- Warnings: nenhum
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156-A:PAR.6` — Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços
-
-- Risco: MEDIUM · complexidade: STRUCTURED · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do…
-- Ponto jurídico: O § 6º determina que a lei complementar crie regimes específicos de tributação para combustíveis e lubrificantes com incidência única, com concessão de crédito nas aquisições feitas por sujeito…
-- Interpretação principal: Para os setores listados no parágrafo, a lei complementar cria regimes específicos.
-- ATENÇÃO: A lista de setores é a da Constituição; a lei complementar define o regime de cada um.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: atividade esportiva desenvolvida por sociedade…), NEAR_COPY_MICROFIX(o_que_significa: em relação aos adquirentes dos bens e serviços), lint TERM_LOW_UTILITY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156-A:PAR.9` — Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação
-
-- Risco: MEDIUM · complexidade: STRUCTURED · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do…
-- Ponto jurídico: O § 9º trata das mudanças na legislação federal que aumentem ou diminuam a arrecadação do imposto.
-- Interpretação principal: O imposto pertence a Estados e Municípios, mas suas regras gerais estão em lei complementar federal.
-- ATENÇÃO: O texto declara a finalidade de preservar a arrecadação das esferas federativas.
-- Dependência externa: nenhuma
-- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156-A:PAR.13` — Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha
-
-- Risco: MEDIUM · complexidade: STRUCTURED · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do…
-- Ponto jurídico: O § 13 torna obrigatória a devolução do imposto prevista no § 5º, VIII, quando energia elétrica ou gás liquefeito de petróleo forem fornecidos ao consumidor de baixa renda.
-- Interpretação principal: A devolução do imposto a pessoas físicas é, em geral, regulada por lei complementar.
-- ATENÇÃO: Quem é consumidor de baixa renda e o valor da devolução são definidos na lei complementar.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: seja calculada e concedida no momento da cobrança)
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.156-B` — Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços
-
-- Risco: MEDIUM · complexidade: STRUCTURED · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125 — em 2026 a arrecadacao de teste do…
-- Ponto jurídico: O art. 156-B determina que Estados, Distrito Federal e Municípios exerçam certas competências sobre o imposto do art. 156-A somente pelo Comitê Gestor do Imposto sobre Bens e Serviços, de forma…
-- Interpretação principal: Como o imposto é compartilhado, alguém precisa administrá-lo de forma única.
-- ATENÇÃO: A composição e as regras de deliberação (§§ 3º e 4º) têm explicação própria.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: comitê gestor do imposto sobre bens e serviços)
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
-### `CF88:ART.159:INC.I` — Art. 159, inciso I — Fundos de participação
-
-- Risco: MEDIUM · complexidade: EXTERNAL · TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do art. 153, VIII, cobrado a…
-- Ponto jurídico: O inciso I determina que a União entregue cinquenta por cento da arrecadação do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII.
-- Interpretação principal: O inciso divide metade da arrecadação de três impostos federais.
-- ATENÇÃO: Os percentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar.
-- Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ao fundo de participação dos estados e do), lint PARENT_REPETITION, lint TERM_LOW_UTILITY
-- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
-
 ### `CF88:ART.167` — Art. 167 — Vedações orçamentárias
 
 - Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: sob pena
 - Ponto jurídico: O art. 167 lista vedações em matéria orçamentária.
 - Interpretação principal: O artigo funciona como um conjunto de regras de disciplina do orçamento.
-- ATENÇÃO: O inciso IV e os §§ 1º, 3º e 7º têm explicação própria.
+- ATENÇÃO: Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria.
 - Dependência externa: nenhuma
 - Warnings: nenhum
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
@@ -2466,7 +2147,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: O artigo coloca um teto nos gastos com servidores, aposentados e pensionistas.
 - ATENÇÃO: Os §§ 1º e 3º a 7º têm explicação própria.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e), NEAR_COPY_MICROFIX(exemplo_pratico: com cargos em comissão e funções de confiança), lint EXAMPLE_REQUIREMENT_LANGUAGE, lint TERM_LOW_UTILITY
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e), NEAR_COPY_MICROFIX(exemplo_pratico: com cargos em comissão e funções de confiança), lint TERM_LOW_UTILITY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

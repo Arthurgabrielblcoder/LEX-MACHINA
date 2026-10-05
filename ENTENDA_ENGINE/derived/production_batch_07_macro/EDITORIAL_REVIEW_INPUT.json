@@ -70,10 +70,10 @@
   "CF88:ART.100": {
    "level": "HIGH",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2)"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
@@ -124,11 +124,11 @@
    "level": "HIGH",
    "rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.12: Vide ADI 4425"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
@@ -203,7 +203,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -230,10 +230,10 @@
   "CF88:ART.100:PAR.9": {
    "level": "HIGH",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
@@ -262,12 +262,14 @@
    ]
   },
   "CF88:ART.102": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "SENSITIVE_THEME",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392"
+    "SENSITIVE_THEME: crimes",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -315,10 +317,10 @@
   "CF88:ART.102:PAR.2": {
    "level": "HIGH",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
@@ -361,12 +363,16 @@
    ]
   },
   "CF88:ART.103-A": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "INTERPRETIVE_CONTROVERSY"
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME",
+    "CONTROVERSY_TERM_FROM_LEI_SECA"
    ],
    "reasons": [
-    "INTERPRETIVE_CONTROVERSY: \"controvérsia\""
+    "JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ",
+    "SENSITIVE_THEME: cassa",
+    "CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate"
    ],
    "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
@@ -515,7 +521,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial \"nos termos da lei\""
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -719,25 +725,23 @@
    "level": "HIGH",
    "rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "INTERPRETIVE_CONTROVERSY",
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "INTERPRETIVE_CONTROVERSY: \"controvérsias\"",
-    "JUDICIAL_REVIEW_ANNOTATED: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10)"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432)",
-    "camada externa: jurisprudencia, nota externa",
+    "camada externa: jurisprudencia",
     "EXTERNAL_FACT_NEEDS_PROVENANCE",
     "exception: ressalvado",
     "law_dependency: na forma da lei",
     "redacao de emenda constitucional (1 anotacao(oes))",
     "remissao: arts. 102, 195",
-    "overview com 13 dispositivos"
+    "overview com 14 dispositivos"
    ]
   },
   "CF88:ART.114:INC.I": {
@@ -758,11 +762,11 @@
    "level": "HIGH",
    "rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não devem ser deduzidos\"",
-    "JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3)"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
@@ -777,10 +781,10 @@
   "CF88:ART.114:PAR.3": {
    "level": "HIGH",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2)"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -912,14 +916,16 @@
    ]
   },
   "CF88:ART.124": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: crimes"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia",
@@ -945,14 +951,14 @@
    ]
   },
   "CF88:ART.125:PAR.2": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA."
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia"
@@ -1112,14 +1118,14 @@
    ]
   },
   "CF88:ART.129": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia",
@@ -1562,14 +1568,14 @@
    ]
   },
   "CF88:ART.144:PAR.8": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.144:PAR.8: Vide Lei n. 13.022, de 2014)",
@@ -1590,14 +1596,14 @@
    ]
   },
   "CF88:ART.145:INC.II": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA."
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia"
@@ -1650,12 +1656,12 @@
    ]
   },
   "CF88:ART.146:PAR.1": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS (art. 156-A) e da CBS (art. 195, V): 2026 em teste (ADCT 125); CBS integral a partir de 2027 (ADCT 126); IBS 0,05% + 0,05% em 2027-2028 (ADCT 127)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -1715,12 +1721,14 @@
    ]
   },
   "CF88:ART.149-B": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "SENSITIVE_THEME",
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "SENSITIVE_THEME: imunidade",
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS e da CBS conforme ADCT 125 a 127"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -1732,12 +1740,12 @@
    ]
   },
   "CF88:ART.149-C": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 127, ADCT 131 — cobranca do IBS e da CBS conforme ADCT 125 a 127; retencao do IBS de 2029 a 2077 (ADCT 131) aplicada nos termos do art. 149-C"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -1792,14 +1800,14 @@
    ]
   },
   "CF88:ART.150:INC.IV": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA."
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia"
@@ -1861,14 +1869,14 @@
    ]
   },
   "CF88:ART.150:PAR.7": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUI"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia",
@@ -1901,12 +1909,12 @@
    ]
   },
   "CF88:ART.153": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b); IPI com aliquota zero a partir de 2027, salvo Zona Franca (ADCT 126, III)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -1936,7 +1944,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + REGIMES_COEXISTENTES + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -1968,12 +1976,12 @@
    ]
   },
   "CF88:ART.153:PAR.6": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -1996,12 +2004,12 @@
    ]
   },
   "CF88:ART.155": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2014,7 +2022,7 @@
     "law_dependency: lei complementar",
     "redacao de emenda constitucional (11 anotacao(oes))",
     "remissao: arts. 150, 153",
-    "overview com 69 dispositivos"
+    "overview com 68 dispositivos"
    ]
   },
   "CF88:ART.155:PAR.1": {
@@ -2029,12 +2037,12 @@
    ]
   },
   "CF88:ART.155:PAR.2": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2102,7 +2110,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA + TEXTO_VIGENTE_INSUFICIENTE — ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2114,12 +2122,14 @@
    ]
   },
   "CF88:ART.156": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "SENSITIVE_THEME",
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "SENSITIVE_THEME: imunidade",
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2138,7 +2148,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — 2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2154,12 +2164,12 @@
    ]
   },
   "CF88:ART.156-A:PAR.1": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2171,12 +2181,12 @@
    ]
   },
   "CF88:ART.156-A:PAR.13": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2186,12 +2196,12 @@
    ]
   },
   "CF88:ART.156-A:PAR.5": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2204,12 +2214,12 @@
    ]
   },
   "CF88:ART.156-A:PAR.6": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2219,12 +2229,12 @@
    ]
   },
   "CF88:ART.156-A:PAR.9": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2235,12 +2245,12 @@
    ]
   },
   "CF88:ART.156-B": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125 — em 2026 a arrecadacao de teste do imposto financia o Comite Gestor (ADCT 125, § 3º, I)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2283,14 +2293,14 @@
    ]
   },
   "CF88:ART.156:PAR.2": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia",
@@ -2298,12 +2308,12 @@
    ]
   },
   "CF88:ART.156:PAR.3": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2329,7 +2339,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2346,7 +2356,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "STRUCTURED",
@@ -2377,7 +2387,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: TEXTO_VIGENTE_INSUFICIENTE — valores e cronograma de entrega do fundo"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2391,12 +2401,12 @@
    ]
   },
   "CF88:ART.159:INC.I": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "TRANSITION_OR_TEMPORAL"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do art. 153, VIII, cobrado a partir de 2027 (ADCT 126, I, b), quando passa a compor a base do inciso I"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2539,7 +2549,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -2586,11 +2596,11 @@
    "level": "HIGH",
    "rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3)"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
@@ -2609,11 +2619,11 @@
    "level": "HIGH",
    "rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_ANNOTATED: ART.166-A:CAPUT: Vide ADI 7697"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
@@ -2631,11 +2641,11 @@
    "level": "HIGH",
    "rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
@@ -2663,10 +2673,10 @@
   "CF88:ART.166:PAR.9": {
    "level": "HIGH",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697"
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -3121,7 +3131,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+    "TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -3257,14 +3267,16 @@
    ]
   },
   "CF88:ART.86:PAR.3": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzida\""
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da ",
+    "SENSITIVE_THEME: prisão"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia",
@@ -3332,12 +3344,12 @@
    ]
   },
   "CF88:ART.92": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.92:PAR.1: Vide ADIN 3392"
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -3564,12 +3576,12 @@
    ]
   },
   "CF88:ART.98": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JUDICIAL_REVIEW_ANNOTATED"
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JUDICIAL_REVIEW_ANNOTATED: ART.98:PAR.1: Vide ADIN 3392"
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada"
    ],
    "jurisprudence": "NONE",
    "verification_complexity": "EXTERNAL",
@@ -3622,7 +3634,7 @@
  },
  "risk_criteria": {
   "classifier": "ENTENDA_ENGINE/t1_risk.py::assess + complexity (validator v3)",
-  "LEGAL_RISK": "HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS; INTERPRETIVE_CONTROVERSY; CONSTITUTIONAL_AMBIGUITY; SANCTION_WITH_INTERPRETATION; EXTERNAL_DEPENDENCY_MATERIAL; TRANSITION_OR_TEMPORAL; LEGAL_CONTENT_FINDING; JUDICIAL_REVIEW_ANNOTATED (camada macro: anotacao Vide ADI/ADIN/ADC/ADPF/ADO no escopo)",
+  "LEGAL_RISK": "HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS; INTERPRETIVE_CONTROVERSY; CONSTITUTIONAL_AMBIGUITY; SANCTION_WITH_INTERPRETATION; EXTERNAL_DEPENDENCY_MATERIAL; TRANSITION_OR_TEMPORAL; LEGAL_CONTENT_FINDING; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS (camada macro: anotacao Vide ADI/ADIN/ADC/ADPF/ADO no escopo, classificada no segundo passe; CONTEXT_ONLY = MEDIUM)",
   "level": "o campo level e o LEGAL_RISK"
  },
  "schema_version": 1,

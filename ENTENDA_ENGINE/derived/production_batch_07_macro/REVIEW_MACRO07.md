@@ -65,7 +65,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 252 palavras · 1816 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 265 palavras · 1872 bytes · referências 0
 - **Motivo da seleção:** Visao geral: datas da eleicao presidencial, eleicao conjunta do Vice e regras de substituicao e desempate entre candidatos.
 
 **O QUE DIZ**
@@ -86,7 +86,7 @@ Em um ano de eleição presidencial, o primeiro turno acontece no primeiro domin
 
 **ATENÇÃO**
 
-A regra do segundo turno vale para Presidente; Governadores e Prefeitos de grandes Municípios seguem regras próprias, por remissão (arts. 28 e 29, II).
+A regra do segundo turno vale para Presidente; Governadores e Prefeitos de Municípios acima do número de eleitores fixado no art. 29, II, seguem as mesmas regras do art. 77, por remissão (arts. 28 e 29, II).
 
 **PALAVRAS DIFÍCEIS**
 
@@ -724,12 +724,12 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 255 palavras · 2077 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 259 palavras · 2112 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conceito de crime de responsabilidade, bens protegidos e remissao a lei especial.
 
 **O QUE DIZ**
 
-O art. 85 define como crimes de responsabilidade os atos do Presidente que atentem contra a Constituição e, em especial, contra: a existência da União; o livre exercício dos Poderes, do Ministério Público e dos Poderes dos Estados; os direitos políticos, individuais e sociais; a segurança interna; a probidade na administração; a lei orçamentária; e o cumprimento das leis e das decisões judiciais. O parágrafo único remete à lei especial a definição desses crimes e do processo.
+O art. 85 define como crimes de responsabilidade os atos do Presidente que atentem contra a Constituição e, em especial, contra: a existência da União; o livre exercício do Legislativo, do Judiciário, do Ministério Público e dos Poderes das unidades da Federação; os direitos políticos, individuais e sociais; a segurança interna; a probidade na administração; a lei orçamentária; e o cumprimento das leis e das decisões judiciais. O parágrafo único remete à lei especial a definição desses crimes e do processo.
 
 **O QUE SIGNIFICA**
 
@@ -864,7 +864,7 @@ O fim do afastamento pelo decurso do prazo não encerra o processo nem equivale 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.86:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.86`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1895 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1854 bytes · referências 0
 - **Motivo da seleção:** Bloco: garantia contra prisao antes de sentenca condenatoria nas infracoes comuns e nao responsabilizacao por atos estranhos as funcoes.
 
 **O QUE DIZ**
@@ -883,7 +883,7 @@ Se surgir uma acusação sobre um suposto crime praticado pelo Presidente antes 
 
 **ATENÇÃO**
 
-A extensão dessas garantias, como o que acontece com investigações e prazos de prescrição durante o mandato, é tema da camada JURISPRUDÊNCIA e não deve ser deduzida apenas do texto.
+A extensão dessas garantias, como o que acontece com investigações e prazos de prescrição durante o mandato, é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -911,7 +911,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1821 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1818 bytes · referências 0
 - **Motivo da seleção:** Visao geral: requisitos para ser Ministro de Estado e suas atribuicoes, incluindo a referenda de atos do Presidente.
 
 **O QUE DIZ**
@@ -932,7 +932,7 @@ Uma pessoa brasileira de trinta anos, com direitos políticos em dia, pode ser n
 
 **ATENÇÃO**
 
-Para alguns Ministérios a Constituição exige brasileiro nato: é o caso do Ministro de Estado da Defesa (art. 12, § 3º, VII).
+Só para um Ministério a Constituição exige brasileiro nato: o cargo de Ministro de Estado da Defesa (art. 12, § 3º, VII).
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1008,7 +1008,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 178 palavras · 1374 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1371 bytes · referências 0
 - **Motivo da seleção:** Visao geral: natureza consultiva do Conselho da Republica e quem o integra.
 
 **O QUE DIZ**
@@ -1021,7 +1021,7 @@ O Conselho reúne representantes do governo, do Congresso e da sociedade para ac
 
 Os seis cidadãos são escolhidos em partes iguais: dois pelo Presidente, dois pelo Senado e dois pela Câmara. Têm mandato de três anos e não podem ser reconduzidos.
 
-A presença dos líderes da minoria garante que a oposição também seja ouvida.
+Entre os membros estão também os líderes da minoria na Câmara e no Senado.
 
 **EXEMPLO PRÁTICO**
 
@@ -1057,7 +1057,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1486 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1572 bytes · referências 0
 - **Motivo da seleção:** Visao geral: materias sobre as quais o Conselho da Republica se pronuncia e regras de funcionamento.
 
 **O QUE DIZ**
@@ -1074,7 +1074,7 @@ O § 1º permite levar à reunião o Ministro responsável pelo tema em discuss�
 
 **EXEMPLO PRÁTICO**
 
-Diante de uma grave crise entre Poderes, o Presidente convoca o Conselho da República e chama o Ministro da Justiça para a reunião, porque a pauta envolve sua área.
+Diante de uma grave crise entre Poderes, o Presidente convoca o Conselho da República e chama para a reunião o Ministro de Estado cuja pasta está ligada ao tema em pauta (o Ministro da Justiça não precisa ser chamado, porque já integra o Conselho).
 
 **ATENÇÃO**
 
@@ -1088,7 +1088,7 @@ Ouvir o Conselho é etapa prevista para a intervenção federal, o estado de def
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: federal estado de defesa e estado de sítio)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: federal estado de defesa e estado de sítio); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Diante de uma grave crise entre Poderes, o Presidente convoc)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -1154,7 +1154,7 @@ Sem explicação própria: 12 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 239 palavras · 1825 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 1840 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estrutura do Poder Judiciario e sede e jurisdicao dos tribunais de cupula.
 
 **O QUE DIZ**
@@ -1171,7 +1171,7 @@ O Conselho Nacional de Justiça está na lista, mas não julga processos: faz o 
 
 **EXEMPLO PRÁTICO**
 
-Uma ação trabalhista começa em uma Vara do Trabalho, pode subir ao Tribunal Regional do Trabalho e, em certos casos, chegar ao Tribunal Superior do Trabalho, em Brasília, cuja decisão vale para todo o país.
+Uma ação trabalhista começa em uma Vara do Trabalho, pode subir ao Tribunal Regional do Trabalho e, em certos casos, chegar ao Tribunal Superior do Trabalho, em Brasília, que tem jurisdição em todo o território nacional.
 
 **ATENÇÃO**
 
@@ -1203,7 +1203,7 @@ Sem explicação própria: 17 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 284 palavras · 2293 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 277 palavras · 2240 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei complementar de iniciativa do Supremo e os principios da carreira e do funcionamento do Judiciario.
 
 **O QUE DIZ**
@@ -1224,7 +1224,7 @@ Um tribunal estadual não pode criar, por conta própria, uma regra de promoçã
 
 **ATENÇÃO**
 
-Os princípios do art. 93 valem para toda a magistratura, federal e estadual, inclusive antes de qualquer alteração do Estatuto.
+Os princípios do art. 93 valem para toda a magistratura, federal e estadual.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1576,7 +1576,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1733 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1753 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as tres garantias da magistratura e as vedacoes do paragrafo unico.
 
 **O QUE DIZ**
@@ -1585,7 +1585,7 @@ O art. 95 assegura aos juízes três garantias: vitaliciedade, inamovibilidade, 
 
 **O QUE SIGNIFICA**
 
-As garantias protegem a independência do juiz para decidir sem pressões. A vitaliciedade impede a perda do cargo sem as formas previstas (inciso I, com explicação própria). A inamovibilidade impede transferências contra a vontade do juiz, salvo interesse público reconhecido pelo procedimento do art. 93, VIII. A irredutibilidade impede a redução do subsídio, ressalvadas as regras de teto, de revisão e de tributos indicadas no inciso III.
+O artigo dá ao juiz três garantias, ligadas ao cargo, ao local de exercício e ao subsídio. A vitaliciedade impede a perda do cargo sem as formas previstas (inciso I, com explicação própria). A inamovibilidade impede transferências contra a vontade do juiz, salvo interesse público reconhecido pelo procedimento do art. 93, VIII. A irredutibilidade impede a redução do subsídio, ressalvadas as regras de teto, de revisão e de tributos indicadas no inciso III.
 
 As vedações do parágrafo único completam o desenho: limitam atividades paralelas, recebimentos, ressalvadas as exceções previstas em lei, e a atuação política do juiz.
 
@@ -1665,7 +1665,7 @@ Vitaliciedade não é o mesmo que estabilidade dos servidores (art. 41): o vital
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.95`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 221 palavras · 1680 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1697 bytes · referências 0
 - **Motivo da seleção:** Paragrafo-bloco com cinco vedacoes da magistratura, cada uma com ressalva ou prazo proprio.
 
 **O QUE DIZ**
@@ -1674,9 +1674,9 @@ O parágrafo único proíbe ao juiz: exercer outro cargo ou função, ainda que 
 
 **O QUE SIGNIFICA**
 
-As vedações procuram manter o juiz dedicado à função e afastado de interesses que possam influenciar suas decisões.
+O parágrafo lista cinco proibições ligadas a outras atividades, a recebimentos, à política partidária e à advocacia depois de deixar o cargo.
 
-A única atividade paralela admitida é uma de magistério, ou seja, dar aulas. O juiz não pode filiar-se a partido nem atuar em política partidária.
+A única atividade paralela admitida é uma de magistério, ou seja, dar aulas. O juiz não pode se dedicar a atividade político-partidária.
 
 O inciso V cria uma quarentena: depois de deixar a magistratura, o ex-juiz precisa esperar três anos para advogar no juízo ou tribunal de onde saiu.
 
@@ -1759,7 +1759,7 @@ A iniciativa reservada aos tribunais impede que outro Poder apresente projeto so
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.96`, `CF88:ART.96:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 195 palavras · 1574 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1677 bytes · referências 0
 - **Motivo da seleção:** Item com regra de competencia propria: foro dos juizes e membros do Ministerio Publico estaduais no Tribunal de Justica.
 
 **O QUE DIZ**
@@ -1778,7 +1778,7 @@ Um promotor de justiça estadual é acusado de corrupção. A ação penal é pr
 
 **ATENÇÃO**
 
-O inciso trata dos juízes e do Ministério Público ligados aos Estados e ao Distrito Federal; juízes federais e membros do Ministério Público da União seguem outra regra (art. 108, I, a).
+O inciso trata dos juízes estaduais e do Distrito Federal e Territórios e dos membros do Ministério Público dos Estados. Juízes federais e membros do Ministério Público da União, do qual faz parte o do Distrito Federal e Territórios (art. 128, I, d), seguem outra regra (art. 108, I, a).
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1898,7 +1898,7 @@ O juiz de paz exerce atribuições conciliatórias sem caráter jurisdicional: n
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.98`, `CF88:ART.98:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 2003 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 249 palavras · 2040 bytes · referências 0
 - **Motivo da seleção:** Item com conceitos proprios muito cobrados: causas de menor complexidade, infracoes de menor potencial ofensivo, procedimento oral e sumarissimo, transacao e turmas recursais.
 
 **O QUE DIZ**
@@ -1911,7 +1911,7 @@ Os juizados foram pensados para causas simples. No cível, tratam de causas de m
 
 O procedimento é oral e sumaríssimo, com menos formalidades e mais rapidez.
 
-A transação permite acordo, inclusive na área penal, nos casos da lei. Os recursos não sobem ao tribunal: são julgados por turmas formadas por juízes de primeiro grau.
+A transação permite acordo, inclusive na área penal, nos casos da lei. Nas hipóteses previstas em lei, os recursos podem ser julgados por turmas formadas por juízes de primeiro grau, sem subir ao tribunal.
 
 **EXEMPLO PRÁTICO**
 
@@ -1994,7 +1994,7 @@ A proposta do Judiciário integra o projeto de lei orçamentária, que depende d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.99:PAR.4`, `CF88:ART.99:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.99`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1905 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1936 bytes · referências 0
 - **Motivo da seleção:** Bloco: consequencias do atraso e do excesso da proposta orcamentaria do Judiciario e limite na execucao.
 
 **O QUE DIZ**
@@ -2011,7 +2011,7 @@ Durante o ano, o tribunal não pode gastar acima dos limites, a não ser que cr�
 
 **EXEMPLO PRÁTICO**
 
-Um Tribunal Regional envia proposta acima do limite combinado. Ao consolidar o projeto de orçamento da União, o Executivo reduz os valores até o limite, sem precisar devolver a proposta ao tribunal.
+A proposta encaminhada pelo Presidente de um Tribunal Superior vem acima do limite combinado. Ao consolidar o projeto de orçamento da União, o Executivo reduz os valores até o limite, sem precisar devolver a proposta ao tribunal.
 
 **ATENÇÃO**
 
@@ -2418,7 +2418,7 @@ A cessão só produz efeitos depois de comunicada formalmente ao Tribunal e ao d
 
 **EXEMPLO PRÁTICO**
 
-Um aposentado com direito à superpreferência vende seu precatório a uma empresa. A empresa passa a ser a credora, mas recebe pela ordem comum, sem a preferência que o aposentado teria.
+Um aposentado com direito à superpreferência vende seu precatório a uma empresa. A empresa passa a ser a credora, mas não fica com a superpreferência do § 2º que o aposentado teria.
 
 **ATENÇÃO**
 
@@ -2446,7 +2446,7 @@ Enquanto não houver a comunicação por petição ao Tribunal e ao ente devedor
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 1855 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1791 bytes · referências 0
 - **Motivo da seleção:** Dispositivo com regra autonoma e numerica: parcelamento do precatorio superior a quinze por cento do total e acordo com desconto maximo.
 
 **O QUE DIZ**
@@ -2455,7 +2455,7 @@ O § 20 prevê que, se um precatório tiver valor superior a quinze por cento do
 
 **O QUE SIGNIFICA**
 
-Um único precatório muito grande poderia consumir quase todo o orçamento destinado a precatórios. O parágrafo permite que esse crédito seja pago em partes: uma parcela inicial de quinze por cento e o restante em cinco parcelas anuais iguais, corrigidas.
+Quando um precatório passa desse percentual, o parágrafo determina que ele seja pago em partes: uma parcela inicial de quinze por cento e o restante em cinco parcelas anuais iguais, corrigidas.
 
 A outra opção é o acordo. O credor pode aceitar receber menos para receber antes, mas o desconto não pode passar de quarenta por cento, e o crédito não pode estar em discussão judicial.
 
@@ -2681,12 +2681,12 @@ O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria. O alcan
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.102`, `CF88:ART.102:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 354 palavras · 2752 bytes · referências 2
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 348 palavras · 2722 bytes · referências 2
 - **Motivo da seleção:** Item: mapa das causas que comecam no Supremo, agrupadas por tipo.
 
 **O QUE DIZ**
 
-O inciso I lista as causas que o Supremo Tribunal Federal processa e julga originariamente. Entre elas estão as ações de controle de constitucionalidade e o pedido de medida cautelar nessas ações. Há também os processos penais contra as mais altas autoridades, com a ressalva do art. 52, I. Completam a lista habeas corpus, mandado de segurança e habeas data contra certos atos e litígios com Estados estrangeiros. Há ainda conflitos entre a União e os Estados, extradição, reclamação, mandado de injunção em casos indicados e ações contra o Conselho Nacional de Justiça e o Conselho Nacional do Ministério Público.
+O inciso I lista as causas que o Supremo Tribunal Federal processa e julga originariamente. Entre elas estão as ações de controle de constitucionalidade e o pedido de medida cautelar nessas ações. Há também os processos penais contra as mais altas autoridades, com a ressalva do art. 52, I. Aparecem também, entre outros, habeas corpus, mandado de segurança e habeas data contra certos atos e litígios com Estados estrangeiros. Há ainda conflitos entre a União e os Estados, extradição, reclamação, mandado de injunção em casos indicados e ações contra o Conselho Nacional de Justiça e o Conselho Nacional do Ministério Público.
 
 **O QUE SIGNIFICA**
 
@@ -2702,7 +2702,7 @@ Há ainda instrumentos para proteger a autoridade do próprio tribunal, como a r
 
 **EXEMPLO PRÁTICO**
 
-Um Estado e a União discordam sobre a divisão de receitas e o conflito ameaça a relação federativa. A ação é proposta diretamente no Supremo, que a julga em instância única.
+Um Estado e a União discordam sobre a divisão de receitas. A ação é proposta diretamente no Supremo, que a julga em instância única.
 
 **ATENÇÃO**
 
@@ -2718,7 +2718,7 @@ A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade
 
 - O alcance do foro por prerrogativa de função e o momento em que ele se aplica são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ações contra o conselho nacional de justiça e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a revisão criminal e a ação rescisória de); LONG_EXPLANATION (*: 354 palavras (limite 400))
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ações contra o conselho nacional de justiça e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a revisão criminal e a ação rescisória de); LONG_EXPLANATION (*: 348 palavras (limite 400))
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -3061,7 +3061,7 @@ Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca e
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1781 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1804 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: cabimento e efeitos da reclamacao ao Supremo contra ato ou decisao que contraria o enunciado.
 
 **O QUE DIZ**
@@ -3074,7 +3074,7 @@ A reclamação é o instrumento que dá força prática ao efeito vinculante.
 
 Ela cabe em duas situações: quando o ato ou a decisão ignora um enunciado que deveria ser aplicado e quando aplica um enunciado a um caso a que ele não se refere.
 
-O Supremo não decide o caso no lugar da autoridade. Ele anula ou cassa o ato e manda que outro seja feito, agora de acordo com o enunciado.
+O Supremo não decide o caso no lugar da autoridade. Ele anula ou cassa o ato e manda que outro seja feito, com ou sem a aplicação do enunciado, conforme o caso.
 
 **EXEMPLO PRÁTICO**
 
@@ -3692,7 +3692,7 @@ O texto menciona empresas públicas, e não sociedades de economia mista. O que 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.109:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.109`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 187 palavras · 1584 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1626 bytes · referências 0
 - **Motivo da seleção:** Bloco: foro das acoes em que a Uniao e autora (§ 1º) e das acoes contra a Uniao (§ 2º).
 
 **O QUE DIZ**
@@ -3701,11 +3701,11 @@ O § 1º determina que as causas em que a União for autora sejam propostas na s
 
 **O QUE SIGNIFICA**
 
-Os dois parágrafos protegem a parte que litiga contra a União.
+Os dois parágrafos definem onde são propostas as causas de que a União participa.
 
 Quando a União processa alguém, ela vai até o domicílio da pessoa. Quando alguém processa a União, pode escolher entre várias opções, incluindo o próprio domicílio.
 
-Com isso, o cidadão pode se defender ou reclamar um direito sem ir obrigatoriamente à capital federal.
+Assim, a causa pode tramitar na seção judiciária ligada ao domicílio da pessoa, e não necessariamente na capital federal.
 
 **EXEMPLO PRÁTICO**
 
@@ -3737,7 +3737,7 @@ No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.109:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.109`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1729 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1734 bytes · referências 1
 - **Motivo da seleção:** Bloco: delegacao por lei de causas previdenciarias a Justica estadual e o recurso ao tribunal federal.
 
 **O QUE DIZ**
@@ -3746,7 +3746,7 @@ O § 3º permite que a lei leve à Justiça estadual causas federais entre insti
 
 **O QUE SIGNIFICA**
 
-Os parágrafos tratam de uma delegação de competência para facilitar o acesso do segurado.
+Os parágrafos tratam de uma delegação de competência à Justiça estadual, que depende de lei.
 
 Onde não há vara federal, a lei pode permitir que o juiz estadual julgue a causa previdenciária. A causa continua sendo federal: por isso o recurso não vai ao Tribunal de Justiça, mas ao Tribunal Regional Federal.
 
@@ -3782,7 +3782,7 @@ O § 3º é permissivo: a lei pode autorizar a delegação e definir suas condi�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.109`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1877 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1897 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: incidente de deslocamento de competencia para a Justica Federal (com o inciso V-A, que a ele remete).
 
 **O QUE DIZ**
@@ -3795,7 +3795,7 @@ O parágrafo cria uma via excepcional para levar à Justiça Federal casos que, 
 
 Só o Procurador-Geral da República pode pedir, e só o Superior Tribunal de Justiça decide. O pedido pode ser feito durante a investigação ou já no processo.
 
-A razão indicada no próprio texto é internacional: o Brasil responde perante outros países e organismos se não cumprir tratados de direitos humanos.
+A razão indicada no próprio texto é internacional: assegurar que o Brasil cumpra as obrigações assumidas em tratados internacionais de direitos humanos de que é parte.
 
 **EXEMPLO PRÁTICO**
 
@@ -3929,12 +3929,12 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 290 palavras · 2114 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2135 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao, requisitos, nomeacao, orgaos junto ao tribunal e reclamacao.
 
 **O QUE DIZ**
 
-O art. 111-A estabelece que o Tribunal Superior do Trabalho tem vinte e sete Ministros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado. Eles são escolhidos entre brasileiros que tenham mais de trinta e cinco e menos de setenta anos, notável saber jurídico e reputação ilibada. Um quinto vem da advocacia e do Ministério Público do Trabalho, exigidos mais de dez anos de atividade ou de exercício, e os demais vêm dos Tribunais Regionais do Trabalho, entre juízes de carreira indicados pelo próprio tribunal. Os parágrafos remetem à lei a competência do tribunal, indicam os órgãos que funcionam junto a ele e preveem a reclamação.
+O art. 111-A estabelece que o Tribunal Superior do Trabalho tem vinte e sete Ministros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado. Eles são escolhidos entre brasileiros que tenham mais de trinta e cinco e menos de setenta anos, notável saber jurídico e reputação ilibada. Um quinto vem da advocacia e do Ministério Público do Trabalho, exigidos mais de dez anos de atividade ou de exercício, e os demais vêm dos Tribunais Regionais do Trabalho, entre juízes de carreira indicados pelo próprio Tribunal Superior do Trabalho. Os parágrafos remetem à lei a competência do tribunal, indicam os órgãos que funcionam junto a ele e preveem a reclamação.
 
 **O QUE SIGNIFICA**
 
@@ -3980,7 +3980,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1448 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 195 palavras · 1405 bytes · referências 0
 - **Motivo da seleção:** Visao geral: criacao das varas por lei e atribuicao da jurisdicao trabalhista a juizes de direito.
 
 **O QUE DIZ**
@@ -3991,7 +3991,7 @@ O art. 112 determina que a lei crie as varas da Justiça do Trabalho. Nas comarc
 
 As varas do trabalho são a porta de entrada da Justiça do Trabalho, mas não existem em todas as cidades.
 
-Para não deixar o trabalhador sem acesso, o artigo permite que, onde não houver vara do trabalho, o juiz de direito, que é juiz estadual, julgue causas trabalhistas.
+O artigo permite que, onde não houver vara do trabalho, o juiz de direito, que é juiz estadual, julgue causas trabalhistas.
 
 Mesmo nesse caso, a causa continua trabalhista: o recurso vai ao Tribunal Regional do Trabalho, e não ao Tribunal de Justiça.
 
@@ -4069,7 +4069,7 @@ As garantias da magistratura do trabalho incluem as que a própria Constituiçã
 
 ## CF88:ART.114
 
-Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 114 — Competência da Justiça do Trabalho
 
@@ -4078,7 +4078,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 314 palavras · 2734 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 314 palavras · 2567 bytes · referências 0
 - **Motivo da seleção:** Visao geral: mapa da competencia trabalhista e das regras sobre negociacao, arbitragem e dissidio coletivo.
 
 **O QUE DIZ**
@@ -4110,7 +4110,6 @@ O caput e os §§ 2º e 3º têm anotações de controle de constitucionalidade 
 **CAMADA EXTERNA**
 
 - A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
-- Observação estrutural: no texto consolidado do runtime, o conteúdo do inciso VIII aparece anexado ao inciso VII; a separação deve ser conferida na fonte oficial.
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da relação de trabalho na forma da lei)
 
@@ -4521,7 +4520,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 208 palavras · 1804 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1829 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei complementar, garantias, mandato dos juizes e recorribilidade das decisoes.
 
 **O QUE DIZ**
@@ -4534,7 +4533,7 @@ A Justiça Eleitoral depende muito da lei complementar, que define o que cada ó
 
 Os membros da Justiça Eleitoral recebem as garantias necessárias ao exercício da função enquanto nela atuam.
 
-O artigo também cria duas características próprias do ramo eleitoral: os juízes atuam por períodos limitados, e as decisões dos tribunais eleitorais têm recursos restritos.
+O artigo também cria duas características próprias do ramo eleitoral: os juízes dos tribunais eleitorais atuam por períodos limitados, e as decisões dos tribunais eleitorais têm recursos restritos.
 
 **EXEMPLO PRÁTICO**
 
@@ -4762,7 +4761,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1456 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 167 palavras · 1393 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia para crimes militares definidos em lei e remissao a lei de organizacao.
 
 **O QUE DIZ**
@@ -4783,7 +4782,7 @@ Um soldado das Forças Armadas desvia armamento do quartel. Se a lei penal milit
 
 **ATENÇÃO**
 
-Quando um civil pode ser julgado pela Justiça Militar da União não deve ser deduzido apenas do texto: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.
+Quando um civil pode ser julgado pela Justiça Militar da União depende da lei e é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4855,7 +4854,7 @@ O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadua
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.125`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 190 palavras · 1820 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1780 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: representacao de inconstitucionalidade diante da Constituicao estadual e vedacao de legitimado unico.
 
 **O QUE DIZ**
@@ -4876,7 +4875,7 @@ Uma lei municipal contraria regra da Constituição do Estado sobre servidores. 
 
 **ATENÇÃO**
 
-O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Federal como parâmetro nesse controle estadual não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.
+O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Federal como parâmetro nesse controle estadual é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -5003,7 +5002,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1800 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1781 bytes · referências 1
 - **Motivo da seleção:** Visao geral: natureza, funcoes e mapa dos paragrafos do Ministerio Publico.
 
 **O QUE DIZ**
@@ -5014,7 +5013,7 @@ O art. 127 define o Ministério Público como instituição permanente e essenci
 
 O texto qualifica o Ministério Público como instituição permanente e essencial à função jurisdicional, regulada em capítulo próprio, fora dos três Poderes.
 
-Sua missão é defender a sociedade, e não um governo. O texto indica três frentes: a ordem jurídica, o regime democrático e os interesses sociais e individuais indisponíveis, que são aqueles de que a própria pessoa não pode abrir mão.
+O texto diz quais são suas tarefas. O texto indica três frentes: a ordem jurídica, o regime democrático e os interesses sociais e individuais indisponíveis, que são aqueles de que a própria pessoa não pode abrir mão.
 
 Os parágrafos dão à instituição princípios próprios, autonomia para organizar seus serviços, com lei sobre organização e funcionamento, e proposta orçamentária própria.
 
@@ -5049,7 +5048,7 @@ O texto não inclui o Ministério Público em nenhum dos Poderes, mas a sua orga
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.127`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1536 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1607 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: unidade, indivisibilidade e independencia funcional.
 
 **O QUE DIZ**
@@ -5070,7 +5069,7 @@ Um promotor apresenta a denúncia e depois é removido para outra comarca. O pro
 
 **ATENÇÃO**
 
-A independência funcional protege a convicção do membro, mas não afasta a organização administrativa da instituição. A unidade se refere a cada Ministério Público, e não ao conjunto de todos eles.
+A independência funcional protege a convicção do membro, mas não afasta a organização administrativa da instituição. O texto não diz se a unidade vale para cada Ministério Público separadamente ou para o conjunto deles; esse alcance é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -5081,7 +5080,7 @@ A independência funcional protege a convicção do membro, mas não afasta a or
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -5189,7 +5188,7 @@ Sem explicação própria: 21 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 242 palavras · 1842 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1843 bytes · referências 0
 - **Motivo da seleção:** Visao geral: ramos do Ministerio Publico, chefias, leis organicas, garantias e vedacoes.
 
 **O QUE DIZ**
@@ -5206,7 +5205,7 @@ As leis complementares definem a organização, as atribuições e o estatuto de
 
 **EXEMPLO PRÁTICO**
 
-Um crime contra uma autarquia federal é investigado pelo Ministério Público Federal. Um homicídio comum, sem interesse federal, fica com o Ministério Público do Estado.
+Um crime contra uma autarquia federal leva à atuação do Ministério Público Federal. Um homicídio comum, sem interesse federal, fica com o Ministério Público do Estado.
 
 **ATENÇÃO**
 
@@ -5325,7 +5324,7 @@ No caso do Ministério Público do Distrito Federal e Territórios, que integra 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.128`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 310 palavras · 2450 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 305 palavras · 2411 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: leis complementares de organizacao, garantias (vitaliciedade, inamovibilidade, irredutibilidade) e vedacoes dos membros.
 
 **O QUE DIZ**
@@ -5334,9 +5333,9 @@ O § 5º determina que leis complementares da União e dos Estados, de iniciativ
 
 **O QUE SIGNIFICA**
 
-As garantias protegem o membro do Ministério Público para que possa atuar sem medo de retaliação. Depois de dois anos, ele só perde o cargo por sentença judicial definitiva. Não pode ser removido contra a vontade, salvo por interesse público, com decisão colegiada e ampla defesa. E seu subsídio não pode ser reduzido, observadas as ressalvas do texto.
+O texto dá garantias ao membro do Ministério Público. Depois de dois anos, ele só perde o cargo por sentença judicial definitiva. Não pode ser removido contra a vontade, salvo por interesse público, com decisão colegiada e ampla defesa. E seu subsídio não pode ser reduzido, observadas as ressalvas do texto.
 
-As vedações protegem a imparcialidade. O membro não recebe honorários nem custas, não advoga, não exerce política partidária e não acumula outra função pública, salvo uma de magistério.
+O texto também impõe vedações aos membros. O membro não recebe honorários nem custas, não advoga, não exerce política partidária e não acumula outra função pública, salvo uma de magistério.
 
 O modelo é semelhante ao dos juízes (art. 95).
 
@@ -5376,7 +5375,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 310 palavras · 2599 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 303 palavras · 2561 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista das funcoes institucionais e regras sobre carreira, residencia e distribuicao.
 
 **O QUE DIZ**
@@ -5401,7 +5400,7 @@ Um hospital público deixa de atender pacientes por falta de medicamentos. O Min
 
 **ATENÇÃO**
 
-O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.
+O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto é tema da camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -5559,7 +5558,7 @@ O inciso fala em controle externo da atividade policial, e não em comando da po
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1520 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1539 bytes · referências 0
 - **Motivo da seleção:** Item: clausula aberta de funcoes compativeis e vedacao de representacao e consultoria de entidades publicas.
 
 **O QUE DIZ**
@@ -5570,7 +5569,7 @@ O inciso IX admite que o Ministério Público receba outras funções, contanto 
 
 A lista de funções não é fechada: a lei pode atribuir novas tarefas ao Ministério Público. O limite é a compatibilidade com a finalidade da instituição, descrita no art. 127.
 
-A vedação final separa o Ministério Público da advocacia pública. Quem defende a União, os Estados e os Municípios em juízo e lhes dá pareceres são as procuradorias (arts. 131 e 132), e não o Ministério Público.
+A vedação final separa o Ministério Público da advocacia pública. Quem defende a União, os Estados e o Distrito Federal em juízo e lhes dá orientação jurídica é a advocacia pública (arts. 131 e 132), e não o Ministério Público.
 
 **EXEMPLO PRÁTICO**
 
@@ -5748,12 +5747,12 @@ As competências do Conselho (§ 2º) têm explicação própria. O texto atribu
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.130-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 2029 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 286 palavras · 2298 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: controle administrativo, financeiro e disciplinar e atribuicoes listadas nos incisos.
 
 **O QUE DIZ**
 
-O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais. Entre as atribuições listadas nos incisos estão zelar pela autonomia da instituição, expedir atos regulamentares ou recomendar providências e apreciar a legalidade de atos administrativos. Também recebe reclamações, pode determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, revê processos disciplinares julgados há menos de um ano e elabora relatório anual sobre a situação do Ministério Público e as atividades do Conselho.
+O § 2º aplica ao Ministério Público o modelo de controle do Conselho Nacional de Justiça (art. 103-B, § 4º): gestão administrativa e financeira da instituição e deveres funcionais dos membros. As diferenças estão nos detalhes. O Conselho zela pela autonomia funcional e administrativa do Ministério Público. O controle de legalidade alcança atos de membros e órgãos do Ministério Público da União e dos Estados, sem afastar os Tribunais de Contas. Como o Conselho Nacional de Justiça, recebe reclamações, pode avocar processos disciplinares, determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, e revê processos disciplinares julgados há menos de um ano. A lista não traz a representação ao Ministério Público nem o relatório estatístico semestral previstos para o Conselho Nacional de Justiça, e o relatório anual integra a mensagem do art. 84, XI.
 
 **O QUE SIGNIFICA**
 
@@ -5782,7 +5781,7 @@ As competências são administrativas e disciplinares. O texto não autoriza o C
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: do ministério público da união e dos estados)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do ministério público da união e dos estados); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: do ministério público da união e dos estados)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -5799,7 +5798,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2167 bytes · referências 2
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2228 bytes · referências 2
 - **Motivo da seleção:** Visao geral: funcoes, chefia, ingresso e representacao na execucao da divida ativa tributaria.
 
 **O QUE DIZ**
@@ -5812,7 +5811,7 @@ A Advocacia-Geral da União é o escritório de advocacia do Estado federal. Ela
 
 Seu chefe é escolhido livremente pelo Presidente, sem aprovação do Senado e sem exigência de pertencer à carreira.
 
-Os demais integrantes ingressam por concurso público.
+O ingresso nas classes iniciais das carreiras da instituição é feito por concurso público de provas e títulos.
 
 Na cobrança judicial de tributos federais inscritos em dívida ativa, a União é representada por um órgão específico, a Procuradoria-Geral da Fazenda Nacional.
 
@@ -5834,7 +5833,7 @@ O § 2º tem nota de remissão a lei na fonte oficial. A organização da instit
 
 - A Lei nº 14.965, de 2024, indicada em nota no § 2º do texto oficial, fica na camada de legislação correlata.
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: ingresso nas classes iniciais das carreiras da instituição)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -5950,7 +5949,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 2002 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 2025 bytes · referências 0
 - **Motivo da seleção:** Visao geral: natureza, funcoes, organizacao e principios da Defensoria Publica.
 
 **O QUE DIZ**
@@ -5961,7 +5960,7 @@ O art. 134 define a Defensoria Pública como instituição permanente, essencial
 
 O texto apresenta a Defensoria como expressão e instrumento do regime democrático, ligada ao direito à assistência jurídica gratuita do art. 5º, LXXIV.
 
-Sua atuação vai além do processo: inclui orientação jurídica, solução extrajudicial de conflitos e defesa de direitos coletivos.
+Sua atuação vai além do processo: inclui orientação jurídica, promoção dos direitos humanos e defesa extrajudicial de direitos individuais e coletivos.
 
 Os membros ingressam por concurso, têm a garantia da inamovibilidade e não podem advogar fora das atribuições institucionais.
 
@@ -5998,7 +5997,7 @@ O texto fala em necessitados, na forma do art. 5º, LXXIV, que exige comprovaç�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.134:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.134`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 180 palavras · 1600 bytes · referências 2
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1592 bytes · referências 2
 - **Motivo da seleção:** Bloco: autonomia funcional e administrativa e iniciativa orcamentaria das Defensorias estaduais (§ 2º), estendidas a Uniao e Distrito Federal (§ 3º).
 
 **O QUE DIZ**
@@ -6015,7 +6014,7 @@ O § 3º estende essas garantias à Defensoria da União e à do Distrito Federa
 
 **EXEMPLO PRÁTICO**
 
-A Defensoria Pública de um Estado elabora sua proposta orçamentária e a encaminha dentro dos limites da lei de diretrizes orçamentárias, sem que a Secretaria de Governo possa cortá-la livremente.
+A Defensoria Pública de um Estado elabora sua proposta orçamentária dentro dos limites da lei de diretrizes orçamentárias e a envia observando a remissão do parágrafo ao art. 99, § 2º.
 
 **ATENÇÃO**
 
@@ -6094,7 +6093,7 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 292 palavras · 2140 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 306 palavras · 2224 bytes · referências 0
 - **Motivo da seleção:** Visao geral: requisitos, finalidade, duracao e mapa do regime do estado de defesa.
 
 **O QUE DIZ**
@@ -6117,7 +6116,7 @@ Uma enchente de grandes proporções destrói parte de uma região e provoca saq
 
 **ATENÇÃO**
 
-O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presidente. As medidas permitidas são apenas as do § 1º, com explicação própria.
+O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presidente. As medidas coercitivas do decreto são escolhidas entre as do § 1º, e o § 3º trata das prisões feitas durante a medida; ambos têm explicação própria.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -6142,7 +6141,7 @@ O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presi
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.136`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 1851 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1902 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: conteudo obrigatorio do decreto e lista fechada de medidas coercitivas.
 
 **O QUE DIZ**
@@ -6153,7 +6152,7 @@ O § 1º exige que o decreto do estado de defesa fixe o tempo de duração, espe
 
 O decreto não é um cheque em branco. Ele precisa dizer por quanto tempo vale, onde vale e quais medidas serão aplicadas.
 
-As medidas possíveis estão listadas no próprio parágrafo, e o decreto escolhe entre elas. Fora delas, nenhuma outra restrição de direitos é autorizada pelo estado de defesa.
+As medidas possíveis estão listadas no próprio parágrafo, e o decreto escolhe entre elas. As medidas coercitivas do decreto ficam limitadas a essa lista; a prisão durante o estado de defesa segue as regras próprias do § 3º.
 
 A ocupação de bens e serviços públicos só é admitida em caso de calamidade pública, e a União arca com os prejuízos.
 
@@ -6187,7 +6186,7 @@ As medidas são aplicadas nos termos e limites da lei. A restrição ao sigilo d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.136`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 272 palavras · 1907 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 274 palavras · 1917 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: comunicacao da prisao ao juiz, declaracao do estado fisico e mental, limite de dez dias e vedacao de incomunicabilidade.
 
 **O QUE DIZ**
@@ -6198,7 +6197,7 @@ O § 3º fixa regras para a prisão durante o estado de defesa. Quando o executo
 
 Mesmo em situação excepcional, o preso não fica sem proteção. O parágrafo mantém o controle judicial sobre as prisões.
 
-O juiz é avisado imediatamente e pode soltar o preso se a prisão for ilegal. A declaração sobre o estado físico e mental do detido no momento da prisão permite verificar depois se houve maus-tratos.
+O juiz é avisado imediatamente e pode soltar o preso se a prisão for ilegal. A declaração sobre o estado físico e mental do detido no momento da prisão registra a condição do preso no momento da autuação.
 
 O limite de dez dias só pode ser ultrapassado com autorização judicial. E o preso não pode ser mantido isolado, sem contato com o mundo exterior.
 
@@ -6333,7 +6332,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 221 palavras · 1680 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 226 palavras · 1714 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conteudo do decreto, executor, convocacao no recesso e funcionamento do Congresso.
 
 **O QUE DIZ**
@@ -6344,7 +6343,7 @@ O art. 138 exige que o decreto do estado de sítio indique sua duração, as nor
 
 Assim como no estado de defesa, o decreto precisa ser claro sobre o que muda. Ele deve dizer quanto tempo dura, como será executado e quais garantias ficam suspensas.
 
-O Presidente escolhe quem executa as medidas e em que áreas, o que mostra que o estado de sítio pode alcançar áreas mais amplas.
+O Presidente escolhe quem executa as medidas e em que áreas, e, diferentemente do art. 136, o texto não limita o estado de sítio a locais restritos e determinados.
 
 Se o pedido de autorização chegar durante o recesso, o Presidente do Senado convoca o Congresso de imediato, para se reunir em até cinco dias. E o Congresso continua funcionando enquanto houver medidas coercitivas.
 
@@ -6426,7 +6425,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 290 palavras · 2043 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 303 palavras · 2112 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista fechada de medidas contra as pessoas e ressalva dos pronunciamentos parlamentares.
 
 **O QUE DIZ**
@@ -6435,7 +6434,7 @@ O art. 139 determina que, no estado de sítio decretado com base no art. 137, I,
 
 **O QUE SIGNIFICA**
 
-Na comoção grave, a lista de medidas é fechada. A palavra só indica que nada além do que está nos incisos pode ser imposto às pessoas.
+No estado de sítio do art. 137, I (comoção grave ou ineficácia do estado de defesa), a lista de medidas é fechada. A palavra só indica que nada além do que está nos incisos pode ser imposto às pessoas.
 
 As medidas são mais fortes que as do estado de defesa: incluem busca e apreensão em domicílio e restrições à imprensa.
 
@@ -6475,7 +6474,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 171 palavras · 1348 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1350 bytes · referências 0
 - **Motivo da seleção:** Visao geral: comissao parlamentar para fiscalizar as medidas dos estados de defesa e de sitio.
 
 **O QUE DIZ**
@@ -6492,7 +6491,7 @@ A comissão funciona durante toda a medida, verificando se as restrições aplic
 
 **EXEMPLO PRÁTICO**
 
-Durante um estado de defesa, a comissão recebe denúncias de que pessoas foram detidas sem comunicação ao juiz. Ela pode pedir explicações ao executor das medidas e levar o caso ao Congresso.
+Durante um estado de defesa, a comissão recebe denúncias de que pessoas foram detidas sem comunicação ao juiz. Ela registra o fato no seu trabalho de acompanhamento e fiscalização das medidas.
 
 **ATENÇÃO**
 
@@ -6622,7 +6621,7 @@ O alcance da expressão garantia dos poderes constitucionais é objeto de debate
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.142`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1686 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1661 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: vedacao de habeas corpus contra punicoes disciplinares militares, cuja leitura literal nao basta.
 
 **O QUE DIZ**
@@ -6635,7 +6634,7 @@ A disciplina é a base da organização militar. O parágrafo afasta o habeas co
 
 A regra limita, para esse caso, o direito previsto no art. 5º, LXVIII. Ela se dirige às punições disciplinares, e não a prisões por crime.
 
-A forma de questionar uma punição disciplinar ilegal fica, então, fora do habeas corpus, nos termos da lei e da camada JURISPRUDÊNCIA.
+O que pode ser examinado em habeas corpus quanto à legalidade dessa punição é tema da camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -6772,7 +6771,7 @@ Sem explicação própria: 20 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 306 palavras · 2250 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 315 palavras · 2320 bytes · referências 1
 - **Motivo da seleção:** Visao geral: natureza da seguranca publica, lista de orgaos e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -6783,7 +6782,7 @@ O art. 144 define a segurança pública como dever do Estado, direito e responsa
 
 A segurança pública é tarefa do Estado, mas o texto também fala em responsabilidade de todos.
 
-A lista de órgãos divide as funções entre União e Estados. A União mantém as polícias federal, rodoviária federal, ferroviária federal e a penal federal. Os Estados e o Distrito Federal mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais e distrital.
+A lista de órgãos divide as funções entre União e Estados. A União mantém as polícias federal, rodoviária federal, ferroviária federal e a penal federal. Os Estados mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais; as forças correspondentes do Distrito Federal são organizadas e mantidas pela União (art. 21, XIV).
 
 As polícias militares, os bombeiros, as polícias civis e as penais estaduais e distrital subordinam-se aos Governadores.
 
@@ -6961,7 +6960,7 @@ O § 6º, explicado na visão geral, subordina essas forças aos Governadores e 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.144`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 128 palavras · 1422 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 117 palavras · 1345 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: faculdade municipal de criar guardas e finalidade declarada no texto; alcance definido em lei e interpretacao.
 
 **O QUE DIZ**
@@ -6982,7 +6981,7 @@ Um Município cria guarda municipal para proteger escolas, postos de saúde e pr
 
 **ATENÇÃO**
 
-O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações não deve ser deduzido apenas do texto do parágrafo: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.
+O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações depende da lei e é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7010,7 +7009,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 284 palavras · 2347 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2317 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia comum para impostos, taxas e contribuicao de melhoria e principios do sistema tributario.
 
 **O QUE DIZ**
@@ -7036,7 +7035,7 @@ O artigo não esgota as espécies tributárias da Constituição: há também em
 **PALAVRAS DIFÍCEIS**
 
 - *Tributo*: valor em dinheiro que o Estado exige por lei, sem caráter de punição.
-- *Contribuição de melhoria*: tributo cobrado de quem teve imóvel valorizado por obra pública.
+- *Contribuição de melhoria*: tributo decorrente de obra pública.
 - *Efeito regressivo*: quando o tributo pesa proporcionalmente mais sobre quem ganha menos.
 
 **CAMADA EXTERNA**
@@ -7056,7 +7055,7 @@ O artigo não esgota as espécies tributárias da Constituição: há também em
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.145`, `CF88:ART.145:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1901 bytes · referências 2
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1843 bytes · referências 2
 - **Motivo da seleção:** Item: fatos que justificam a taxa (poder de policia e servico publico especifico e divisivel).
 
 **O QUE DIZ**
@@ -7079,7 +7078,7 @@ Um Município cobra taxa pela coleta de lixo das residências. O serviço está 
 
 **ATENÇÃO**
 
-Quais serviços são específicos e divisíveis não deve ser deduzido apenas do texto; a classificação de cada serviço é tema da camada JURISPRUDÊNCIA.
+A classificação de cada serviço como específico e divisível é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7254,7 +7253,7 @@ As alíneas c e d mencionam também os tributos dos arts. 156-A e 195, V, inclu�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.146:PAR.2`, `CF88:ART.146:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.146`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 274 palavras · 2354 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 287 palavras · 2419 bytes · referências 0
 - **Motivo da seleção:** Bloco: regime unico das micro e pequenas empresas e opcao quanto aos tributos dos arts. 156-A e 195, V.
 
 **O QUE DIZ**
@@ -7271,7 +7270,7 @@ Os §§ 2º e 3º tratam da relação com os novos tributos sobre bens e serviç
 
 **EXEMPLO PRÁTICO**
 
-Uma pequena padaria opta pelo regime único e paga mensalmente uma guia que reúne vários tributos. Se vende para uma empresa que não está no regime, essa empresa pode aproveitar crédito equivalente ao valor recolhido pela padaria.
+Uma pequena padaria opta pelo regime único e paga mensalmente uma guia que reúne vários tributos. Se vende para uma empresa que não está no regime, essa empresa pode aproveitar crédito dos tributos dos arts. 156-A e 195, V, no montante equivalente ao cobrado desses tributos pelo regime único.
 
 **ATENÇÃO**
 
@@ -7454,7 +7453,7 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 292 palavras · 2230 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 298 palavras · 2263 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia exclusiva da Uniao para contribuicoes sociais, de intervencao e corporativas e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -7465,7 +7464,7 @@ O art. 149 reserva somente à União a criação de três tipos de contribuiçã
 
 As contribuições são tributos ligados a uma finalidade. O artigo indica três tipos.
 
-As contribuições sociais financiam áreas como a seguridade social. As de intervenção no domínio econômico servem para a União atuar em setores da economia. As de interesse de categorias financiam entidades profissionais ou econômicas.
+As contribuições sociais financiam áreas como a seguridade social. As de intervenção no domínio econômico servem para a União atuar em setores da economia. As de interesse das categorias profissionais ou econômicas são instrumento de atuação da União nessa área.
 
 A competência do caput é exclusiva da União. O § 1º, porém, determina que a União, os Estados, o Distrito Federal e os Municípios instituam contribuição dos seus servidores para o regime próprio de previdência.
 
@@ -7600,7 +7599,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1492 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1428 bytes · referências 0
 - **Motivo da seleção:** Visao geral: contribuicao municipal e distrital para iluminacao publica e monitoramento de logradouros.
 
 **O QUE DIZ**
@@ -7609,7 +7608,7 @@ O art. 149-A permite que os Municípios e o Distrito Federal instituam, por suas
 
 **O QUE SIGNIFICA**
 
-A iluminação pública beneficia todos ao mesmo tempo, e não é possível medir quanto cada pessoa usa. Por isso, o artigo prevê uma contribuição própria para financiá-la.
+O artigo prevê uma contribuição própria para custear, expandir e melhorar o serviço de iluminação pública.
 
 A contribuição também pode financiar sistemas de monitoramento de ruas e praças, voltados à segurança e à preservação desses espaços.
 
@@ -7750,7 +7749,7 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 120 palavras · 1088 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 132 palavras · 1161 bytes · referências 1
 - **Motivo da seleção:** Item: exigencia de lei para criar ou aumentar tributo.
 
 **O QUE DIZ**
@@ -7759,7 +7758,7 @@ O inciso I proíbe exigir ou aumentar tributo sem lei que o estabeleça.
 
 **O QUE SIGNIFICA**
 
-É o princípio da legalidade tributária. Nenhum ente pode criar um tributo novo ou aumentar um tributo existente sem que uma lei, aprovada pelo Legislativo, preveja isso.
+É o princípio da legalidade tributária. Nenhum ente pode criar um tributo novo ou aumentar um tributo existente sem que uma lei preveja isso. A Constituição também trata da medida provisória que cria ou aumenta impostos (art. 62, § 2º).
 
 O texto fala em lei que estabeleça o tributo.
 
@@ -7793,7 +7792,7 @@ A própria Constituição admite que o Executivo altere alíquotas de alguns tri
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 1816 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 1924 bytes · referências 0
 - **Motivo da seleção:** Item: vedacoes temporais na cobranca de tributos (fatos anteriores, exercicio e noventa dias).
 
 **O QUE DIZ**
@@ -7816,7 +7815,7 @@ Uma lei publicada em maio cria um novo tributo sobre certa atividade. Ele não a
 
 **ATENÇÃO**
 
-Há tributos que não seguem a alínea b, a alínea c ou ambas: as exceções estão no § 1º, com explicação própria.
+Há tributos que não seguem a alínea b, a alínea c ou ambas: parte das exceções está no § 1º, com explicação própria, e outras aparecem em dispositivos como os arts. 195, § 6º, 177, § 4º, I, b, e 155, § 4º, IV, c.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7841,7 +7840,7 @@ Há tributos que não seguem a alínea b, a alínea c ou ambas: as exceções es
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1460 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 152 palavras · 1383 bytes · referências 0
 - **Motivo da seleção:** Item: proibicao de tributo com efeito de confisco, conceito aberto.
 
 **O QUE DIZ**
@@ -7862,7 +7861,7 @@ Uma lei municipal fixa imposto anual sobre imóveis em valor próximo ao do pró
 
 **ATENÇÃO**
 
-O momento em que um tributo ou uma multa passa a ter efeito confiscatório não deve ser deduzido apenas do texto: é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+O momento em que um tributo ou uma multa passa a ter efeito confiscatório é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7886,7 +7885,7 @@ O momento em que um tributo ou uma multa passa a ter efeito confiscatório não 
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 275 palavras · 2282 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 311 palavras · 2511 bytes · referências 1
 - **Motivo da seleção:** Item: lista de imunidades de impostos.
 
 **O QUE DIZ**
@@ -7907,7 +7906,7 @@ Uma igreja não paga imposto sobre a propriedade do imóvel onde está o templo.
 
 **ATENÇÃO**
 
-Os §§ 2º a 4º limitam o alcance das imunidades das alíneas a, b e c às finalidades essenciais das entidades. A alínea c exige que sejam atendidos os requisitos da lei, e o alcance de cada imunidade é tema da camada JURISPRUDÊNCIA.
+O § 2º estende a imunidade da alínea a a autarquias, fundações públicas e à empresa pública postal, quanto ao que se liga às suas finalidades essenciais; o § 3º afasta essa imunidade na exploração de atividade econômica ou quando há preço ou tarifa; e o § 4º limita as alíneas b e c às finalidades essenciais das entidades. A alínea c exige que sejam atendidos os requisitos da lei, e o alcance de cada imunidade é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8073,7 +8072,7 @@ A exigência alcança impostos, taxas e contribuições. A forma de concessão d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.150`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1691 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1651 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: responsabilidade por fato gerador futuro e restituicao se o fato nao ocorrer.
 
 **O QUE DIZ**
@@ -8092,7 +8091,7 @@ Uma fábrica de cerveja recolhe, na saída do produto, o imposto que seria devid
 
 **ATENÇÃO**
 
-O texto garante restituição quando o fato gerador não se realiza. Se há direito à diferença quando a venda ocorre por valor menor que o presumido não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.
+O texto garante restituição quando o fato gerador não se realiza. Se há direito à diferença quando a venda ocorre por valor menor que o presumido é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8121,7 +8120,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 2086 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2172 bytes · referências 0
 - **Motivo da seleção:** Visao geral: uniformidade geografica, limite a tributacao da renda de titulos e agentes locais e vedacao de isencoes heteronomas.
 
 **O QUE DIZ**
@@ -8136,7 +8135,7 @@ A uniformidade impede que a União cobre um tributo mais pesado em uma região d
 
 O inciso II impede que a União trate os títulos e os servidores dos outros entes de forma mais dura do que trata os seus.
 
-O inciso III impede que a União conceda isenção de tributo que não é seu: só o ente que tem a competência pode isentar.
+O inciso III impede que a União conceda isenção de tributo que não é seu: em regra, a isenção cabe ao ente que tem a competência sobre o tributo, ressalvados os casos previstos na própria Constituição.
 
 **EXEMPLO PRÁTICO**
 
@@ -8407,7 +8406,7 @@ O tamanho da pequena gleba é definido em lei. A opção dos Municípios segue a
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1637 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1588 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: incidencia exclusiva do imposto sobre operacoes financeiras, aliquota minima e reparticao da arrecadacao.
 
 **O QUE DIZ**
@@ -8418,9 +8417,9 @@ O § 5º determina que o ouro, quando a lei o definir como ativo financeiro ou i
 
 O ouro pode ser mercadoria ou ativo financeiro. Quando a lei o trata como ativo financeiro, ele sai do campo dos impostos sobre mercadorias e passa a sofrer apenas o imposto sobre operações financeiras.
 
-A cobrança ocorre na operação de origem, isto é, na primeira venda do ouro extraído.
+A cobrança ocorre na operação de origem.
 
-Embora o imposto seja federal, a arrecadação vai quase toda para os entes de onde o ouro saiu: trinta por cento para o Estado e setenta por cento para o Município.
+Embora o imposto seja federal, a arrecadação vai inteira para os entes de onde o ouro saiu: trinta por cento para o Estado e setenta por cento para o Município.
 
 **EXEMPLO PRÁTICO**
 
@@ -8452,7 +8451,7 @@ A regra só vale quando a lei define o ouro como ativo financeiro ou instrumento
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 281 palavras · 2144 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 284 palavras · 2157 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: regras do imposto do inciso VIII, criado por emenda recente, com aplicacao no tempo dependente de transicao.
 
 **O QUE DIZ**
@@ -8463,7 +8462,7 @@ O § 6º fixa regras para o imposto do inciso VIII. Ele não incide sobre export
 
 O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.
 
-As regras do parágrafo definem como ele funciona: incide uma só vez na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos impostos sobre consumo indicados.
+As regras do parágrafo definem como ele funciona: incide uma só vez na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos tributos sobre consumo indicados no inciso IV.
 
 Na extração de recursos naturais, ele é cobrado mesmo que o produto vá para fora do país, mas com teto de um por cento do valor de mercado.
 
@@ -8542,7 +8541,7 @@ Os impostos extraordinários de guerra não seguem as regras de anterioridade (a
 
 ## CF88:ART.155
 
-Sem explicação própria: 61 dispositivos (ver `SELECTION_REPORT.json`).
+Sem explicação própria: 60 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 155 — Impostos dos Estados e do Distrito Federal
 
@@ -8693,7 +8692,7 @@ A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** `CF88:ART.155:PAR.2:INC.VIII`
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.155`, `CF88:ART.155:PAR.2`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 226 palavras · 2022 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 2055 bytes · referências 0
 - **Motivo da seleção:** Bloco: reparticao do imposto entre origem e destino nas vendas a consumidor final e responsavel pelo recolhimento da diferenca.
 
 **O QUE DIZ**
@@ -8714,7 +8713,7 @@ Uma loja virtual de um Estado vende uma geladeira a um consumidor de outro Estad
 
 **ATENÇÃO**
 
-A cobrança dessa diferença depende de lei complementar sobre o imposto. A forma e o momento dessa exigência são temas da camada JURISPRUDÊNCIA.
+Se a cobrança dessa diferença depende de lei complementar específica é tema da camada JURISPRUDÊNCIA. A forma e o momento dessa exigência são temas da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8726,7 +8725,7 @@ A cobrança dessa diferença depende de lei complementar sobre o imposto. A form
 
 - A exigência de lei complementar para a cobrança do diferencial de alíquotas e seus efeitos no tempo são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); TERM_LOW_UTILITY (palavras_dificeis: Remetente)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); TERM_LOW_UTILITY (palavras_dificeis: Remetente)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -8786,7 +8785,7 @@ A alínea b se refere à saída para outros Estados. A incidência única sobre 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1711 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1739 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: limitacao dos impostos que podem incidir sobre energia, telecomunicacoes, derivados de petroleo, combustiveis e minerais.
 
 **O QUE DIZ**
@@ -8801,7 +8800,7 @@ Para energia elétrica e telecomunicações, só podem incidir o imposto estadua
 
 Para derivados de petróleo, combustíveis e minerais, a lista é a mesma, acrescida do imposto do art. 153, VIII.
 
-A limitação vale para impostos. Contribuições não estão abrangidas pela palavra imposto usada no texto.
+A limitação vale para impostos. O texto fala apenas em impostos; a situação das contribuições é tratada na camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -8820,7 +8819,7 @@ A limitação fala em impostos. A incidência de contribuições sobre essas ope
 
 —
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: derivados de petróleo combustíveis e minerais do país)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: derivados de petróleo combustíveis e minerais do país)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -8833,7 +8832,7 @@ A limitação fala em impostos. A incidência de contribuições sobre essas ope
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.155:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.155`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2114 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 274 palavras · 2160 bytes · referências 0
 - **Motivo da seleção:** Bloco: destino do imposto nas operacoes com combustiveis de incidencia unica e aliquotas definidas pelos Estados.
 
 **O QUE DIZ**
@@ -8842,7 +8841,7 @@ O § 4º regula a incidência única sobre combustíveis e lubrificantes definid
 
 **O QUE SIGNIFICA**
 
-Os combustíveis têm um regime especial: o imposto é cobrado uma única vez na cadeia.
+Os combustíveis e lubrificantes definidos em lei complementar têm um regime especial: o imposto é cobrado uma única vez na cadeia.
 
 O parágrafo define qual Estado fica com o imposto em cada caso. Para combustíveis derivados de petróleo, prevalece o Estado onde ocorre o consumo.
 
@@ -9024,7 +9023,7 @@ A atualização da base de cálculo pelo Executivo depende de critérios definid
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 2000 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1960 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: nao incidencia na integralizacao de capital e reorganizacoes societarias, com ressalva, e Municipio competente.
 
 **O QUE DIZ**
@@ -9045,7 +9044,7 @@ Dois sócios criam uma empresa de engenharia e entregam um terreno como parte do
 
 **ATENÇÃO**
 
-O alcance da não incidência quando o valor do imóvel supera o capital integralizado não deve ser deduzido apenas do texto; é tema da camada JURISPRUDÊNCIA.
+O alcance da não incidência quando o valor do imóvel supera o capital integralizado é tema da camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -9119,7 +9118,7 @@ Sem explicação própria: 58 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 300 palavras · 2323 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 307 palavras · 2379 bytes · referências 0
 - **Motivo da seleção:** Visao geral: imposto de competencia compartilhada criado pela reforma tributaria e mapa dos paragrafos; aplicacao no tempo depende de transicao.
 
 **O QUE DIZ**
@@ -9138,7 +9137,7 @@ A arrecadação é administrada de forma integrada pelo Comitê Gestor (art. 156
 
 **EXEMPLO PRÁTICO**
 
-Uma pessoa em um Município compra um eletrodoméstico de uma loja de outro Estado. O imposto é calculado pelas alíquotas do Estado e do Município onde mora o comprador.
+Uma pessoa em um Município compra um eletrodoméstico de uma loja de outro Estado. O imposto é calculado pelas alíquotas do Estado e do Município de destino da operação, definido conforme os critérios da lei complementar.
 
 **ATENÇÃO**
 
@@ -9154,7 +9153,7 @@ O imposto foi criado por emenda recente. A partir de quando ele é cobrado e com
 
 - A lei complementar do imposto e as regras de transição da reforma tributária (ADCT) ficam na camada externa: EXTERNAL_VERIFICATION_REQUIRED para a fase de aplicação vigente.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: alíquotas do estado e do município de destino)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: alíquotas do estado e do município de destino); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: alíquotas do estado e do município de destino)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -9167,12 +9166,12 @@ O imposto foi criado por emenda recente. A partir de quando ele é cobrado e com
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 324 palavras · 2431 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 344 palavras · 2587 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: neutralidade, incidencia ampla, exportacao, legislacao unica, aliquota propria, destino, nao cumulatividade e vedacao de beneficios.
 
 **O QUE DIZ**
 
-O § 1º orienta o imposto pelo princípio da neutralidade e fixa suas características. Entre elas: incide sobre operações com bens materiais ou imateriais, inclusive direitos, e com serviços, também na importação; não incide sobre exportações, e o exportador mantém e aproveita os créditos; tem legislação única e uniforme no país, ressalvada a alíquota própria que cada ente fixa por lei específica; a alíquota de cada ente é a mesma para todas as operações, salvo hipóteses da Constituição; é cobrado pela soma das alíquotas do Estado e do Município de destino; é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar; e não admite incentivos ou regimes favorecidos, salvo nos casos previstos na Constituição.
+O § 1º orienta o imposto pelo princípio da neutralidade e fixa suas características. Entre elas: incide sobre operações com bens materiais ou imateriais, inclusive direitos, e com serviços, também na importação; não incide sobre exportações, e o exportador mantém e aproveita os créditos; tem legislação única e uniforme no país, ressalvada a alíquota própria que cada ente fixa por lei específica; a alíquota de cada ente é a mesma para todas as operações, salvo hipóteses da Constituição; é cobrado pela soma das alíquotas do Estado e do Município de destino; é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar e às hipóteses previstas na Constituição; e não admite incentivos ou regimes favorecidos, salvo nos casos previstos na Constituição.
 
 **O QUE SIGNIFICA**
 
@@ -9180,9 +9179,9 @@ Em termos gerais, a neutralidade indica que o imposto não deve distorcer as dec
 
 O imposto incide de forma ampla, sobre quase tudo o que é consumido, com regras iguais em todo o país.
 
-A alíquota de cada ente é única para todas as operações, salvo exceções previstas na própria Constituição. E os entes não podem conceder benefícios fiscais por conta própria.
+A alíquota de cada ente é única para todas as operações, salvo exceções previstas na própria Constituição. E o imposto não pode ser objeto de incentivos, benefícios ou regimes favorecidos, salvo nos casos previstos na própria Constituição.
 
-A não cumulatividade é ampla: a empresa abate o imposto cobrado em todas as suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar.
+A não cumulatividade é ampla: a empresa abate o imposto cobrado em suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar e as hipóteses previstas na própria Constituição.
 
 O Senado fixa alíquota de referência, usada quando o ente não fixar a sua.
 
@@ -9204,7 +9203,7 @@ As regras dependem de lei complementar e se aplicam conforme regra de transiçã
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: alíquotas do estado e do município de destino)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: alíquotas do estado e do município de destino); LONG_EXPLANATION (*: 344 palavras (limite 400))
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -9261,7 +9260,7 @@ O parágrafo indica matérias, mas o conteúdo concreto está na lei complementa
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.156-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2221 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 272 palavras · 2184 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: setores com regime especifico por lei complementar.
 
 **O QUE DIZ**
@@ -9270,7 +9269,7 @@ O § 6º determina que a lei complementar crie regimes específicos de tributaç
 
 **O QUE SIGNIFICA**
 
-Alguns setores não se encaixam bem nas regras gerais do imposto. Para eles, a lei complementar cria regimes específicos.
+Para os setores listados no parágrafo, a lei complementar cria regimes específicos.
 
 Nesses regimes, a lei pode alterar alíquotas, bases de cálculo e regras de crédito e, em certos casos, deixar de aplicar regras gerais do § 1º, como a alíquota única de cada ente ou, em relação aos adquirentes dos bens e serviços, a regra do crédito.
 
@@ -9547,12 +9546,12 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 1964 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 283 palavras · 2023 bytes · referências 0
 - **Motivo da seleção:** Visao geral: receitas de impostos federais e estaduais que pertencem aos Municipios.
 
 **O QUE DIZ**
 
-O art. 158 atribui aos Municípios o imposto de renda retido na fonte sobre rendimentos que eles, suas autarquias e fundações pagarem; cinquenta por cento do imposto territorial rural sobre imóveis neles situados, ou a totalidade se optarem por fiscalizá-lo e cobrá-lo; cinquenta por cento do produto da arrecadação do imposto estadual sobre veículos licenciados em seu território e, quanto a veículos aquáticos e aéreos, de proprietários neles domiciliados; e vinte e cinco por cento do imposto estadual sobre circulação de mercadorias e do imposto do art. 156-A distribuído aos Estados. Os parágrafos fixam critérios para creditar essas parcelas estaduais.
+O art. 158 atribui aos Municípios o imposto de renda retido na fonte sobre rendimentos que eles, suas autarquias e fundações pagarem; cinquenta por cento do imposto territorial rural sobre imóveis neles situados, ou a totalidade se optarem por fiscalizá-lo e cobrá-lo; cinquenta por cento do produto da arrecadação do imposto estadual sobre veículos licenciados em seu território e, quanto a veículos aquáticos e aéreos, de proprietários neles domiciliados; e vinte e cinco por cento do imposto estadual sobre circulação de mercadorias e do imposto do art. 156-A distribuído aos Estados. Os parágrafos fixam critérios para creditar as parcelas do inciso IV.
 
 **O QUE SIGNIFICA**
 
@@ -9562,7 +9561,7 @@ Da União, fica com o imposto de renda que retém sobre os salários que paga e 
 
 Do Estado, recebe cinquenta por cento do imposto sobre veículos e vinte e cinco por cento do imposto sobre circulação de mercadorias e do novo imposto sobre bens e serviços destinado ao Estado.
 
-Os §§ 1º e 2º definem como essas parcelas estaduais são divididas entre os Municípios.
+Os §§ 1º e 2º definem como as parcelas do imposto sobre circulação de mercadorias e do imposto do art. 156-A são divididas entre os Municípios.
 
 **EXEMPLO PRÁTICO**
 
@@ -9743,7 +9742,7 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 267 palavras · 2092 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2116 bytes · referências 0
 - **Motivo da seleção:** Visao geral: finalidade, usos, garantias, prioridade ambiental e criterios de partilha do fundo.
 
 **O QUE DIZ**
@@ -9766,7 +9765,7 @@ Um Estado recebe recursos do fundo e decide aplicá-los em uma rodovia e em um c
 
 **ATENÇÃO**
 
-Os valores do fundo e o cronograma de entrega estão no ADCT e dependem de regra de transição, consultada na camada externa.
+Os valores do fundo e o cronograma de entrega não estão no texto do artigo; ficam na camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -9776,7 +9775,7 @@ Os valores do fundo e o cronograma de entrega estão no ADCT e dependem de regra
 
 **CAMADA EXTERNA**
 
-- Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional estão no ADCT, na camada externa.
+- Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional não constam do art. 159-A nem do ADCT versionado: EXTERNAL_VERIFICATION_REQUIRED.
 
 **WARNINGS:** —
 
@@ -10192,7 +10191,7 @@ Sem explicação própria: 30 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 283 palavras · 2061 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 297 palavras · 2150 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as tres leis orcamentarias de iniciativa do Executivo e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -10207,7 +10206,7 @@ O plano plurianual fixa o planejamento de médio prazo. A lei de diretrizes orç
 
 As três leis só podem ser propostas pelo Poder Executivo, mas são aprovadas pelo Legislativo.
 
-Os parágrafos detalham o conteúdo de cada uma e criam deveres como a transparência da execução e a obrigação de executar o que foi aprovado.
+Os parágrafos detalham o conteúdo de cada uma e criam deveres como a transparência da execução e o dever de executar as programações, que tem limites e, pelo § 13, alcança os orçamentos fiscal e da seguridade social da União.
 
 **EXEMPLO PRÁTICO**
 
@@ -10227,7 +10226,7 @@ Os §§ 18 a 22 trazem regras ligadas a exercícios específicos e a emendas rec
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: orçamentos fiscal e da seguridade social da união)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -10421,7 +10420,7 @@ Pelo § 13, o dever do § 10 se aplica exclusivamente aos orçamentos fiscal e d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.165:PAR.19`, `CF88:ART.165:PAR.20`, `CF88:ART.165:PAR.21`, `CF88:ART.165:PAR.22`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.165`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 312 palavras · 2626 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 315 palavras · 2629 bytes · referências 0
 - **Motivo da seleção:** Bloco: regras com efeito temporal sobre precatorios, limite individualizado do Executivo e meta de resultado primario.
 
 **O QUE DIZ**
@@ -10430,7 +10429,7 @@ Os §§ 18 a 22 tratam das despesas da União com precatórios e requisições d
 
 **O QUE SIGNIFICA**
 
-O bloco muda temporariamente a forma de contar os precatórios da União nas regras fiscais.
+O bloco muda, a partir de 2026, a forma de contar os precatórios da União nas regras fiscais.
 
 Em vez de disputarem espaço com as demais despesas dentro do limite do Executivo, os precatórios passam a ser tratados à parte a partir de 2026.
 
@@ -10473,7 +10472,7 @@ Sem explicação própria: 28 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 259 palavras · 2196 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2322 bytes · referências 0
 - **Motivo da seleção:** Visao geral: apreciacao pelo Congresso, comissao mista, emendas e execucao obrigatoria de emendas.
 
 **O QUE DIZ**
@@ -10482,7 +10481,7 @@ O art. 166 determina que os projetos de lei do plano plurianual, das diretrizes 
 
 **O QUE SIGNIFICA**
 
-As leis orçamentárias seguem um caminho próprio no Congresso. Elas passam por uma comissão mista de deputados e senadores, que analisa os projetos e as emendas, e depois são votadas em sessão conjunta.
+As leis orçamentárias seguem um caminho próprio no Congresso. Elas passam por uma comissão mista de deputados e senadores, que analisa os projetos e as emendas, e depois são apreciadas pelas duas Casas, na forma do regimento comum.
 
 Os parlamentares podem apresentar emendas, mas com limites: o texto exige compatibilidade com o planejamento e a indicação de onde vem o dinheiro.
 
@@ -10490,7 +10489,7 @@ Os §§ 9º a 20 criam as emendas individuais e de bancada de execução obrigat
 
 **EXEMPLO PRÁTICO**
 
-Um deputado apresenta emenda ao orçamento para construir um posto de saúde em sua região. A emenda passa pela comissão mista e, se aprovada dentro do limite das emendas individuais, tem execução obrigatória.
+Um deputado apresenta emenda ao orçamento para construir um posto de saúde em sua região. A emenda passa pela comissão mista e, se aprovada dentro do limite das emendas individuais, tem execução obrigatória, salvo impedimento de ordem técnica ou redução admitida pelo texto para cumprir a meta fiscal.
 
 **ATENÇÃO**
 
@@ -10519,12 +10518,12 @@ Vários parágrafos sobre emendas parlamentares têm anotações de controle de 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.166`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 1841 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1894 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: compatibilidade, indicacao de recursos com despesas protegidas e emendas de correcao.
 
 **O QUE DIZ**
 
-O § 3º permite aprovar emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, apenas em três situações. Na primeira, a emenda respeita o plano plurianual e a lei de diretrizes orçamentárias e indica os recursos necessários. Esses recursos só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. Nas outras duas, a emenda corrige erros ou omissões ou se refere aos dispositivos do texto do projeto.
+O § 3º limita a aprovação de emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, às hipóteses dos incisos I a III. O inciso I pede compatibilidade com o plano plurianual e a lei de diretrizes orçamentárias. O inciso II exige a indicação dos recursos, que só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. O inciso III trata de emendas que corrigem erros ou omissões ou que se referem aos dispositivos do texto do projeto.
 
 **O QUE SIGNIFICA**
 
@@ -10532,7 +10531,7 @@ O parlamentar pode mudar o orçamento, mas não pode criar despesa do nada.
 
 Para incluir um gasto, precisa cortar outro. E há despesas que não podem ser cortadas por emenda: pessoal, dívida e repasses constitucionais a Estados e Municípios.
 
-Além disso, a emenda precisa respeitar o plano plurianual e a lei de diretrizes orçamentárias.
+O texto também menciona a compatibilidade com o plano plurianual e a lei de diretrizes orçamentárias (inciso I).
 
 Emendas para corrigir erros ou ajustar o texto do projeto também são admitidas.
 
@@ -10600,7 +10599,7 @@ Os parágrafos têm anotação de controle de constitucionalidade na fonte canô
 
 - Vide ADI 7697 anotada na fonte canônica para os §§ 9º, 9º-A e 10: EXTERNAL_VERIFICATION_REQUIRED.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da receita corrente líquida do exercício anterior ao); PARENT_REPETITION (*: CF88:ART.166: 0.212); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Metade precisa ir para ações de saúde, como equipar um hospi)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da receita corrente líquida do exercício anterior ao); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Metade precisa ir para ações de saúde, como equipar um hospi)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -10613,18 +10612,18 @@ Os parágrafos têm anotação de controle de constitucionalidade na fonte canô
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.166:PAR.12`, `CF88:ART.166:PAR.13`, `CF88:ART.166:PAR.18`, `CF88:ART.166:PAR.19`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.166`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2654 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2683 bytes · referências 0
 - **Motivo da seleção:** Bloco: execucao obrigatoria de emendas individuais e de bancada, impedimentos tecnicos, reducao proporcional e execucao equitativa.
 
 **O QUE DIZ**
 
-O § 11 torna obrigatória a execução orçamentária e financeira das emendas individuais, até o limite do § 9º, conforme critérios de execução equitativa da lei complementar do art. 165, § 9º. O § 12 estende essa garantia às emendas de bancada estadual ou do Distrito Federal, até 1% da receita corrente líquida do exercício anterior. O § 13 afasta a obrigação nos impedimentos de ordem técnica. O § 18 permite reduzir esses montantes na mesma proporção da limitação das demais despesas discricionárias, quando a meta fiscal estiver ameaçada. O § 19 define como equitativa a execução que segue critérios objetivos e imparciais e atende às emendas de forma igualitária e impessoal, independentemente da autoria.
+O § 11 torna obrigatória a execução orçamentária e financeira das emendas individuais, até o limite do § 9º, conforme critérios de execução equitativa da lei complementar do art. 165, § 9º. O § 12 estende essa garantia às emendas de bancada estadual ou do Distrito Federal, até 1% da receita corrente líquida do exercício anterior. O § 13 afasta a obrigação nos impedimentos de ordem técnica. O § 18 permite reduzir esses montantes em até a mesma proporção da limitação das demais despesas discricionárias, quando a meta fiscal estiver ameaçada. O § 19 define como equitativa a execução que segue critérios objetivos e imparciais e atende às emendas de forma igualitária e impessoal, independentemente da autoria.
 
 **O QUE SIGNIFICA**
 
 Para as emendas individuais e de bancada, o texto torna a execução obrigatória, dentro dos limites.
 
-A obrigação tem três limites expressos. Impedimentos técnicos afastam a execução. Se a meta fiscal estiver em risco, os valores podem ser reduzidos na mesma proporção das demais despesas discricionárias. E o texto exige execução equitativa, que atenda às emendas independentemente da autoria.
+A obrigação tem três limites expressos. Impedimentos técnicos afastam a execução. Se a meta fiscal estiver em risco, os valores podem ser reduzidos em até a mesma proporção da limitação das demais despesas discricionárias. E o texto exige execução equitativa, que atenda às emendas independentemente da autoria.
 
 **EXEMPLO PRÁTICO**
 
@@ -10645,7 +10644,7 @@ O regime das emendas impositivas tem anotação de controle de constitucionalida
 - Vide ADI 7697 anotada na fonte canônica para os §§ 11 a 20 do art. 166: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
 - A fonte oficial remete o § 13 à Lei n. 14.436, de 2022, na camada de legislação correlata.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A execução é obrigatória, salvo impedimento técnico, como a )
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: reduzidos em até a mesma proporção da limitação); PARENT_REPETITION (*: CF88:ART.166: 0.25); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A execução é obrigatória, salvo impedimento técnico, como a )
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -10714,7 +10713,7 @@ Sem explicação própria: 18 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 294 palavras · 2492 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 315 palavras · 2639 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista de vedacoes que protegem o orcamento e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -10725,13 +10724,13 @@ O art. 167 lista vedações em matéria orçamentária. Entre elas: iniciar prog
 
 O artigo funciona como um conjunto de regras de disciplina do orçamento.
 
-Várias vedações protegem o papel do Legislativo: o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa.
+Várias vedações protegem o papel do Legislativo: em regra, o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa; o § 5º abre exceção para ciência, tecnologia e inovação.
 
 O inciso III traz a chamada regra de ouro: o ente não pode se endividar além do que investe, salvo autorização por maioria absoluta.
 
 O inciso IV impede amarrar a receita de impostos a destinações específicas, com exceções como saúde e educação.
 
-Outros incisos protegem os recursos da previdência, que só podem pagar benefícios.
+Outros incisos restringem o uso dos recursos da previdência ao pagamento de benefícios e, no regime próprio, também às despesas de organização e funcionamento.
 
 **EXEMPLO PRÁTICO**
 
@@ -10739,7 +10738,7 @@ Um governador quer transferir recursos da área de transporte para a de cultura 
 
 **ATENÇÃO**
 
-Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria. A fonte oficial anota o inciso III e o § 3º com remissões a emendas constitucionais sobre períodos de calamidade, a conferir na camada externa.
+O inciso IV e os §§ 1º, 3º e 7º têm explicação própria. A fonte oficial anota o inciso III e o § 3º com remissões a emendas constitucionais sobre períodos de calamidade, a conferir na camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -10764,7 +10763,7 @@ Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria. A fonte
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.167`, `CF88:ART.167:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 1957 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 239 palavras · 1913 bytes · referências 1
 - **Motivo da seleção:** Item: proibicao de vincular receita de impostos e suas ressalvas.
 
 **O QUE DIZ**
@@ -10773,7 +10772,7 @@ O inciso IV proíbe vincular a receita de impostos a órgão, fundo ou despesa. 
 
 **O QUE SIGNIFICA**
 
-A receita dos impostos deve ficar livre para que o orçamento decida, a cada ano, onde aplicá-la. Por isso, em regra, uma lei não pode reservar a arrecadação de um imposto para um órgão ou um gasto específico.
+A regra é a não vinculação da receita de impostos. Por isso, em regra, uma lei não pode reservar a arrecadação de um imposto para um órgão ou um gasto específico.
 
 As exceções são as que o próprio texto indica: repartição com Estados e Municípios, mínimos de saúde e educação, administração tributária, garantias de antecipação de receita e as vinculações do § 4º para débitos e garantias com a União.
 
@@ -10854,7 +10853,7 @@ O processo e as penas do crime de responsabilidade são definidos em lei especia
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1570 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1572 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: requisitos de imprevisibilidade e urgencia do credito extraordinario.
 
 **O QUE DIZ**
@@ -10865,7 +10864,7 @@ O § 3º só admite crédito extraordinário para despesas que sejam ao mesmo te
 
 O crédito extraordinário é a forma mais rápida de abrir uma despesa nova, porque pode ser feito por medida provisória, conforme o art. 62.
 
-Por isso, o texto o limita a situações excepcionais. A despesa precisa ser ao mesmo tempo imprevisível e urgente. Guerra, comoção interna e calamidade pública são os exemplos dados pelo próprio texto.
+O texto limita esse crédito a situações excepcionais. A despesa precisa ser ao mesmo tempo imprevisível e urgente. Guerra, comoção interna e calamidade pública são os exemplos dados pelo próprio texto.
 
 Despesas que podiam ser previstas, ou que não são urgentes, devem seguir o caminho dos créditos suplementares ou especiais, com autorização legislativa prévia.
 
@@ -10996,7 +10995,7 @@ No caput, a aplicação é facultativa. O § 6º prevê restrições para o ente
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.167-A:PAR.2`, `CF88:ART.167-A:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.167-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 2078 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 2088 bytes · referências 0
 - **Motivo da seleção:** Bloco: medidas por ato do Executivo entre 85% e 95%, submissao ao Legislativo e perda de eficacia.
 
 **O QUE DIZ**
@@ -11009,7 +11008,7 @@ O bloco permite agir antes de atingir o percentual do caput.
 
 Acima de 85%, sem chegar ao percentual do caput, o próprio chefe do Executivo pode adotar as vedações por ato próprio, com efeito imediato. Os outros Poderes e órgãos também podem adotá-las.
 
-O ato vai ao Legislativo com urgência. Se for rejeitado, se não for apreciado em cento e oitenta dias ou se a relação cair abaixo de 85%, ele deixa de valer, mas o que foi feito enquanto vigorou continua válido.
+O ato vai ao Legislativo com urgência. Se for rejeitado, se não for apreciado em cento e oitenta dias ou se deixar de existir a situação do § 1º, ele deixa de valer, mas o que foi feito enquanto vigorou continua válido.
 
 **EXEMPLO PRÁTICO**
 
@@ -11194,7 +11193,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 227 palavras · 1865 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1917 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dispensa das limitacoes legais para despesas e renuncias temporarias e afastamento do art. 195, § 3º.
 
 **O QUE DIZ**
@@ -11220,7 +11219,7 @@ A dispensa não alcança despesa obrigatória de caráter continuado. As exigên
 **PALAVRAS DIFÍCEIS**
 
 - *Renúncia de receita*: redução de arrecadação causada por benefício tributário.
-- *Despesa obrigatória de caráter continuado*: despesa permanente, criada por lei ou ato, que continua depois do fim da calamidade.
+- *Despesa obrigatória de caráter continuado*: despesa criada por lei ou ato que obriga o ente por período prolongado; o conceito técnico vem da legislação de finanças públicas.
 
 **CAMADA EXTERNA**
 
@@ -11435,7 +11434,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2197 bytes · referências 1
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2188 bytes · referências 1
 - **Motivo da seleção:** Visao geral: limites de lei complementar, requisitos para aumentos e medidas para ajustar a despesa com pessoal.
 
 **O QUE DIZ**
@@ -11452,7 +11451,7 @@ Se o ente ultrapassar o limite, a Constituição define uma ordem de medidas par
 
 **EXEMPLO PRÁTICO**
 
-Um Município gasta com pessoal acima do limite da lei complementar. Primeiro, reduz em no mínimo vinte por cento o gasto com cargos em comissão e funções de confiança; depois, exonera servidores não estáveis.
+Um Município gasta com pessoal acima do limite da lei complementar. Deve reduzir em pelo menos vinte por cento o gasto com cargos em comissão e funções de confiança e exonerar servidores não estáveis.
 
 **ATENÇÃO**
 
@@ -11468,7 +11467,7 @@ Os §§ 1º e 3º a 7º têm explicação própria. A fonte oficial anota o § 1
 
 - A lei complementar que fixa os limites de despesa com pessoal fica na camada de legislação correlata. A fonte oficial remete o § 1º à Emenda Constitucional nº 106, de 2020.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: com cargos em comissão e funções de confiança); TERM_LOW_UTILITY (palavras_dificeis: Pessoal inativo)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: com cargos em comissão e funções de confiança); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Deve reduzir em pelo menos vinte por cento o gasto com cargo); TERM_LOW_UTILITY (palavras_dificeis: Pessoal inativo)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
@@ -11481,7 +11480,7 @@ Os §§ 1º e 3º a 7º têm explicação própria. A fonte oficial anota o § 1
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.169`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 228 palavras · 1898 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1932 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: previa dotacao e autorizacao especifica na LDO, com ressalva das estatais.
 
 **O QUE DIZ**
@@ -11496,7 +11495,7 @@ A primeira é ter dinheiro previsto no orçamento, suficiente para a nova despes
 
 A segunda é ter autorização específica na lei de diretrizes orçamentárias.
 
-As empresas públicas e as sociedades de economia mista não precisam da autorização da lei de diretrizes orçamentárias, mas continuam sujeitas à exigência de dotação.
+As empresas públicas e as sociedades de economia mista não precisam da autorização da lei de diretrizes orçamentárias, e a aplicação a elas da exigência de dotação é tema da camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -11515,7 +11514,7 @@ A ressalva das empresas estatais vale apenas para a autorização na lei de dire
 
 —
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: admissão ou contratação de pessoal a qualquer título); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as empresas públicas e as sociedades de economia); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa que o orçamento preveja recursos suficientes para os)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: admissão ou contratação de pessoal a qualquer título); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as empresas públicas e as sociedades de economia); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa que o orçamento preveja recursos suficientes para os)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 

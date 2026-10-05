@@ -24,15 +24,15 @@
  },
  "counts": {
   "A_CLEAN_LOW": 143,
-  "B_CLEAN_MEDIUM": 82,
+  "B_CLEAN_MEDIUM": 53,
   "C_QUICK_REVIEW": 0,
-  "D_FULL_HUMAN_REVIEW": 24,
+  "D_FULL_HUMAN_REVIEW": 53,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 143,
-  "MEDIUM": 82,
-  "HIGH": 24
+  "MEDIUM": 53,
+  "HIGH": 53
  },
  "complexity_counts": {
   "STRUCTURED": 135,
@@ -41,8 +41,8 @@
  },
  "jurisprudence_counts": {
   "NONE": 207,
-  "CONTEXT_ONLY": 33,
-  "REQUIRED_FOR_CORRECTNESS": 9
+  "CONTEXT_ONLY": 24,
+  "REQUIRED_FOR_CORRECTNESS": 18
  },
  "by_legal_risk": {
   "LOW": {
@@ -54,7 +54,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 82,
+   "B_CLEAN_MEDIUM": 53,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 24,
+   "D_FULL_HUMAN_REVIEW": 53,
    "E_HARD_FAIL": 0
   }
  },
@@ -77,16 +77,16 @@
   },
   "STRUCTURED": {
    "A_CLEAN_LOW": 103,
-   "B_CLEAN_MEDIUM": 30,
+   "B_CLEAN_MEDIUM": 24,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 2,
+   "D_FULL_HUMAN_REVIEW": 8,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 31,
-   "B_CLEAN_MEDIUM": 50,
+   "B_CLEAN_MEDIUM": 27,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 22,
+   "D_FULL_HUMAN_REVIEW": 45,
    "E_HARD_FAIL": 0
   }
  },
@@ -571,8 +571,7 @@
    ],
    "info": [],
    "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "EXAMPLE_REQUIREMENT_LANGUAGE"
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
    "editorial_checks": [],
    "external_dependency": null,
@@ -871,6 +870,7 @@
     "PARENT_REPETITION"
    ],
    "editorial_checks": [
+    "DUPLICATION:RESOLVED",
     "DUPLICATION:RESOLVED"
    ],
    "external_dependency": null,
@@ -2071,9 +2071,7 @@
    "previous": null,
    "detectors": [],
    "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY"
-   ],
+   "lint": [],
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK LOW",
@@ -2134,6 +2132,7 @@
    "info": [],
    "lint": [],
    "editorial_checks": [
+    "DUPLICATION:RESOLVED",
     "DUPLICATION:RESOLVED"
    ],
    "external_dependency": null,
@@ -2360,21 +2359,9 @@
    ],
    "queue": "A_CLEAN_LOW",
    "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "ingresso nas classes iniciais das carreiras da instituição",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
+   "detectors": [],
    "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
+   "lint": [],
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK LOW",
@@ -3858,7 +3845,6 @@
    "info": [],
    "lint": [
     "JURISPRUDENCE_WORDING_IN_BODY",
-    "JURISPRUDENCE_WORDING_IN_BODY",
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
    "editorial_checks": [],
@@ -4365,21 +4351,9 @@
    ],
    "queue": "A_CLEAN_LOW",
    "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "orçamentos fiscal e da seguridade social da união",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
+   "detectors": [],
    "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
+   "lint": [],
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK LOW",
@@ -5038,7 +5012,6 @@
    "info": [],
    "lint": [
     "JURISPRUDENCE_WORDING_IN_BODY",
-    "JURISPRUDENCE_WORDING_IN_BODY",
     "NEAR_COPY_OF_OFFICIAL_TEXT",
     "NEAR_COPY_OF_OFFICIAL_TEXT",
     "EXAMPLE_REQUIREMENT_LANGUAGE"
@@ -5552,75 +5525,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.86:PAR.3",
-   "title": "Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato",
-   "role": "BLOCK",
-   "sub_block": "A",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY",
-    "SENSITIVE_THEME"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da ",
-    "SENSITIVE_THEME: prisão"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia",
-    "block com 2 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.92",
-   "title": "Art. 92 — Órgãos do Poder Judiciário",
-   "role": "OVERVIEW",
-   "sub_block": "A",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JUDICIAL_REVIEW_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.92:PAR.1: Vide ADIN 3392)",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "overview com 13 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.93",
    "title": "Art. 93 — Estatuto da Magistratura",
    "role": "OVERVIEW",
@@ -5969,41 +5873,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.98",
-   "title": "Art. 98 — Juizados especiais e justiça de paz",
-   "role": "OVERVIEW",
-   "sub_block": "A",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JUDICIAL_REVIEW_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.98:PAR.1: Vide ADIN 3392)",
-    "deadline: quatro anos",
-    "number_or_percentage: quatro",
-    "law_dependency: previstas em lei",
-    "redacao de emenda constitucional (3 anotacao(oes))",
-    "overview com 6 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.100:PAR.1",
    "title": "Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência",
    "role": "BLOCK",
@@ -6099,49 +5968,6 @@
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.102",
-   "title": "Art. 102 — Competências do Supremo Tribunal Federal",
-   "role": "OVERVIEW",
-   "sub_block": "B",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "SENSITIVE_THEME",
-    "JUDICIAL_REVIEW_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "SENSITIVE_THEME: crimes",
-    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.102:PAR.2: Vide ADIN 3392)",
-    "camada externa: nota externa",
-    "quorum: dois terços",
-    "number_or_percentage: dois",
-    "exception: ressalvado",
-    "law_dependency: regulament",
-    "redacao de emenda constitucional (5 anotacao(oes))",
-    "remissao: arts. 52",
-    "overview com 30 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY",
-    "JURISPRUDENCE_WORDING_IN_BODY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, JUDICIAL_REVIEW_CONTEXT_ONLY)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -6292,59 +6118,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.103-A",
-   "title": "Art. 103-A — Enunciado com efeito vinculante do Supremo",
-   "role": "OVERVIEW",
-   "sub_block": "B",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY",
-    "SENSITIVE_THEME",
-    "CONTROVERSY_TERM_FROM_LEI_SECA"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ",
-    "SENSITIVE_THEME: cassa",
-    "CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.103-A:CAPUT: Vide Lei n. 11.417, de 2006)",
-    "camada externa: jurisprudencia",
-    "quorum: dois terços",
-    "number_or_percentage: dois",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "overview com 5 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "a interpretação e a eficácia de normas determinadas",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, CONTROVERSY_TERM_FROM_LEI_SECA)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.103-A:PAR.3",
    "title": "Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante",
    "role": "DEVICE",
@@ -6479,6 +6252,7 @@
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
    "editorial_checks": [
+    "DUPLICATION:RESOLVED",
     "DUPLICATION:RESOLVED"
    ],
    "external_dependency": [
@@ -6809,55 +6583,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.124",
-   "title": "Art. 124 — Competência da Justiça Militar",
-   "role": "OVERVIEW",
-   "sub_block": "B",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY",
-    "SENSITIVE_THEME"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.",
-    "SENSITIVE_THEME: crimes"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia",
-    "law_dependency: lei disporá",
-    "overview com 3 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "a organização o funcionamento e a competência da",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY",
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.125",
    "title": "Art. 125 — Justiça dos Estados",
    "role": "OVERVIEW",
@@ -6886,40 +6611,6 @@
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.125:PAR.2",
-   "title": "Art. 125, § 2º — Controle de constitucionalidade estadual",
-   "role": "DEVICE",
-   "sub_block": "B",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA."
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -7101,68 +6792,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.129",
-   "title": "Art. 129 — Funções institucionais do Ministério Público",
-   "role": "OVERVIEW",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia",
-    "deadline: três anos",
-    "number_or_percentage: três",
-    "exception: salvo",
-    "law_dependency: na forma da lei",
-    "redacao de emenda constitucional (2 anotacao(oes))",
-    "remissao: arts. 93",
-    "overview com 16 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "o inquérito civil e a ação civil pública",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    },
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "a legitimação do ministério público para as ações",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY",
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.130",
    "title": "Art. 130 — Ministério Público junto aos Tribunais de Contas",
    "role": "OVERVIEW",
@@ -7285,15 +6914,6 @@
      "code": "NEAR_COPY_MICROFIX",
      "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
      "route": null,
-     "section": "o_que_diz",
-     "match": "do ministério público da união e dos estados",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    },
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
      "section": "o_que_significa",
      "match": "do ministério público da união e dos estados",
      "sentence": "",
@@ -7302,10 +6922,10 @@
    ],
    "info": [],
    "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
    "editorial_checks": [
+    "DUPLICATION:RESOLVED",
     "DUPLICATION:RESOLVED"
    ],
    "external_dependency": null,
@@ -7522,223 +7142,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.144:PAR.8",
-   "title": "Art. 144, § 8º — Guardas municipais",
-   "role": "DEVICE",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.144:PAR.8: Vide Lei n. 13.022, de 2014)",
-    "camada externa: jurisprudencia, nota externa"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "bens serviços e instalações conforme dispuser a lei",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY",
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.145:INC.II",
-   "title": "Art. 145, inciso II — Taxas",
-   "role": "ITEM",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA."
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.146:PAR.1",
-   "title": "Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação",
-   "role": "BLOCK",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS (art. 156-A) e da CBS (art. 195, V): 2026 em teste (ADCT 125); CBS integral a partir de 2027 (ADCT 126); IBS 0,05% + 0,05% em 2027-2028 (ADCT 127)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (2 anotacao(oes))",
-    "remissao: arts. 156",
-    "block com 9 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.149-B",
-   "title": "Art. 149-B — Regras comuns ao IBS e à CBS",
-   "role": "OVERVIEW",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "SENSITIVE_THEME",
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "SENSITIVE_THEME: imunidade",
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS e da CBS conforme ADCT 125 a 127"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "remissao: arts. 150, 156, 195",
-    "overview com 7 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.149-C",
-   "title": "Art. 149-C — Tributação das compras públicas",
-   "role": "OVERVIEW",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 127, ADCT 131 — cobranca do IBS e da CBS conforme ADCT 125 a 127; retencao do IBS de 2029 a 2077 (ADCT 131) aplicada nos termos do art. 149-C"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "remissao: arts. 150, 156, 195",
-    "overview com 5 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.150:INC.IV",
-   "title": "Art. 150, inciso IV — Vedação ao confisco",
-   "role": "ITEM",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA."
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.150:INC.VI",
    "title": "Art. 150, inciso VI — Imunidades tributárias",
    "role": "ITEM",
@@ -7834,43 +7237,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.150:PAR.7",
-   "title": "Art. 150, § 7º — Substituição tributária para frente",
-   "role": "DEVICE",
-   "sub_block": "C",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUI"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia",
-    "redacao de emenda constitucional (1 anotacao(oes))"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY",
-    "EXAMPLE_REQUIREMENT_LANGUAGE",
-    "TERM_LOW_UTILITY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.151",
    "title": "Art. 151 — Limitações ao poder de tributar da União",
    "role": "OVERVIEW",
@@ -7913,183 +7279,6 @@
    "editorial_version": 1
   },
   {
-   "target_id": "CF88:ART.153",
-   "title": "Art. 153 — Impostos da União",
-   "role": "OVERVIEW",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b); IPI com aliquota zero a partir de 2027, salvo Zona Franca (ADCT 126, III)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.153:PAR.5: Vide Emenda Constitucional n. 3, de 1993)",
-    "camada externa: nota externa",
-    "number_or_percentage: por cento",
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (3 anotacao(oes))",
-    "remissao: arts. 155",
-    "overview com 33 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "bens e serviços prejudiciais à saúde ou ao",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    },
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "bens e serviços prejudiciais à saúde ou ao",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.153:PAR.6",
-   "title": "Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "number_or_percentage: %",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "remissao: arts. 155"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "155 ii 156 iii 156 a e 195",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "TERM_NOT_USED"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.155",
-   "title": "Art. 155 — Impostos dos Estados e do Distrito Federal",
-   "role": "OVERVIEW",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "remissao externa anotada na fonte (ART.155:PAR.2:INC.XII:AL.h: Vide Emenda Constitucional n. 33, de 2001)",
-    "camada externa: nota externa",
-    "quorum: um terço",
-    "number_or_percentage: dois",
-    "exception: salvo",
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (11 anotacao(oes))",
-    "remissao: arts. 150, 153",
-    "overview com 68 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.155:PAR.2",
-   "title": "Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "quorum: um terço",
-    "number_or_percentage: dois",
-    "exception: salvo",
-    "law_dependency: lei complementar",
-    "remissao: arts. 153"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
    "target_id": "CF88:ART.155:PAR.2:INC.VII",
    "title": "Art. 155, § 2º, incisos VII e VIII — Diferença de alíquotas nas vendas para outro Estado",
    "role": "BLOCK",
@@ -8115,7 +7304,6 @@
    "info": [],
    "lint": [
     "JURISPRUDENCE_WORDING_IN_BODY",
-    "JURISPRUDENCE_WORDING_IN_BODY",
     "TERM_LOW_UTILITY"
    ],
    "editorial_checks": [],
@@ -8123,43 +7311,6 @@
     "JURISPRUDENCIA (contexto)"
    ],
    "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156",
-   "title": "Art. 156 — Impostos dos Municípios",
-   "role": "OVERVIEW",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "SENSITIVE_THEME",
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "SENSITIVE_THEME: imunidade",
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "exception: exceto",
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (6 anotacao(oes))",
-    "remissao: arts. 150, 155, 182",
-    "overview com 17 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -8192,394 +7343,6 @@
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156:PAR.2",
-   "title": "Art. 156, § 2º — Imposto sobre a transmissão de imóveis",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "JURISPRUDENCE_CONTEXT_ONLY"
-   ],
-   "legal_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "CONTEXT_ONLY",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: jurisprudencia",
-    "exception: salvo"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "a compra e venda desses bens ou direitos",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "JURISPRUDENCE_WORDING_IN_BODY",
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": [
-    "JURISPRUDENCIA (contexto)"
-   ],
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156:PAR.3",
-   "title": "Art. 156, § 3º — Lei complementar do imposto sobre serviços",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
-   "complexity_reasons": [
-    "law_dependency: lei complementar"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156-A:PAR.1",
-   "title": "Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
-   "complexity_reasons": [
-    "exception: ressalvado",
-    "law_dependency: lei específica",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "remissao: arts. 153, 239"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "alíquotas do estado e do município de destino",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [
-    {
-     "code": "TELEOLOGY_SPECULATIVE",
-     "section": "o_que_significa",
-     "match": "incentivos",
-     "detail": "substantivo da propria Lei Seca do artigo"
-    }
-   ],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "LONG_EXPLANATION"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156-A:PAR.5",
-   "title": "Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "deadline: prazo",
-    "number_or_percentage: %",
-    "law_dependency: Lei complementar",
-    "redacao de emenda constitucional (1 anotacao(oes))"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156-A:PAR.6",
-   "title": "Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
-   "complexity_reasons": [
-    "law_dependency: Lei complementar",
-    "redacao de emenda constitucional (1 anotacao(oes))"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "atividade esportiva desenvolvida por sociedade anônima do futebol",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    },
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "em relação aos adquirentes dos bens e serviços",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "TERM_LOW_UTILITY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156-A:PAR.9",
-   "title": "Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação",
-   "role": "BLOCK",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
-   "complexity_reasons": [
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "block com 5 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [],
-   "info": [],
-   "lint": [
-    "EXAMPLE_REQUIREMENT_LANGUAGE"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156-A:PAR.13",
-   "title": "Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha",
-   "role": "DEVICE",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
-   "complexity_reasons": [
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (1 anotacao(oes))"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "seja calculada e concedida no momento da cobrança",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.156-B",
-   "title": "Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços",
-   "role": "OVERVIEW",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125 — em 2026 a arrecadacao de teste do imposto financia o Comite Gestor (ADCT 125, § 3º, I)"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
-   "complexity_reasons": [
-    "quorum: maioria",
-    "number_or_percentage: vinte",
-    "law_dependency: lei complementar",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "remissao: arts. 156",
-    "overview com 28 dispositivos"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "comitê gestor do imposto sobre bens e serviços",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
-   "show_full_t1": false,
-   "review_status": "PENDING_HUMAN_REVIEW",
-   "editorial_version": 1
-  },
-  {
-   "target_id": "CF88:ART.159:INC.I",
-   "title": "Art. 159, inciso I — Fundos de participação",
-   "role": "ITEM",
-   "sub_block": "D",
-   "legal_risk": "MEDIUM",
-   "legal_rules": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
-   ],
-   "legal_reasons": [
-    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do art. 153, VIII, cobrado a partir de 2027 (ADCT 126, I, b), quando passa a compor a base do inciso I"
-   ],
-   "legal_secondary": [],
-   "jurisprudence": "NONE",
-   "verification_complexity": "EXTERNAL",
-   "complexity_reasons": [
-    "camada externa: nota externa",
-    "number_or_percentage: %",
-    "redacao de emenda constitucional (1 anotacao(oes))",
-    "remissao: arts. 153"
-   ],
-   "queue": "B_CLEAN_MEDIUM",
-   "previous": null,
-   "detectors": [
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_diz",
-     "match": "ao fundo de participação dos estados e do",
-     "sentence": "",
-     "detail": "politica A6 item 2"
-    }
-   ],
-   "info": [],
-   "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "PARENT_REPETITION",
-    "TERM_LOW_UTILITY"
-   ],
-   "editorial_checks": [],
-   "external_dependency": null,
-   "reason": "sem alerta; LEGAL_RISK MEDIUM (TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -8742,7 +7505,6 @@
    "lint": [
     "NEAR_COPY_OF_OFFICIAL_TEXT",
     "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "EXAMPLE_REQUIREMENT_LANGUAGE",
     "TERM_LOW_UTILITY"
    ],
    "editorial_checks": [],
@@ -8810,7 +7572,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -8840,7 +7602,111 @@
    ],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.86:PAR.3",
+   "title": "Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzida\""
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: prisão"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "block com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzida\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.92",
+   "title": "Art. 92 — Órgãos do Poder Judiciário",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_ANNOTATED: ART.92:PAR.1: Vide ADIN 3392"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.92:PAR.1: Vide ADIN 3392)",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 13 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.92:PAR.1: Vide ADIN 3392",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.98",
+   "title": "Art. 98 — Juizados especiais e justiça de paz",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_ANNOTATED: ART.98:PAR.1: Vide ADIN 3392"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.98:PAR.1: Vide ADIN 3392)",
+    "deadline: quatro anos",
+    "number_or_percentage: quatro",
+    "law_dependency: previstas em lei",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.98:PAR.1: Vide ADIN 3392",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -8852,10 +7718,10 @@
    "sub_block": "A",
    "legal_risk": "HIGH",
    "legal_rules": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2)"
    ],
    "legal_secondary": [
     "JURISPRUDENCE_CONTEXT_ONLY: Dispositivos do art. 100 têm anotações de controle de constitucionalidade na fonte canônica (ex.: ADI 4425, ADI 7047, ADI 7064): a redação l",
@@ -8927,7 +7793,7 @@
     "ADI 7047",
     "JURISPRUDENCIA (contexto)"
    ],
-   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2)",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -8947,7 +7813,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -8965,7 +7831,7 @@
    ],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -8977,10 +7843,10 @@
    "sub_block": "A",
    "legal_risk": "HIGH",
    "legal_rules": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064"
    ],
    "legal_secondary": [
     "JURISPRUDENCE_CONTEXT_ONLY: Os §§ 9º e 10 têm anotações de controle de constitucionalidade na fonte canônica (Vide ADI 7047, ADI 7064; § 10: Vide ADI 4425): tema da cam",
@@ -9049,7 +7915,7 @@
     "ADI 7047",
     "JURISPRUDENCIA (contexto)"
    ],
-   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -9067,11 +7933,11 @@
    "legal_risk": "HIGH",
    "legal_rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.12: Vide ADI 4425"
    ],
    "legal_secondary": [
     "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 4425\")"
@@ -9114,7 +7980,7 @@
     "ADI 4425",
     "JURISPRUDENCIA (necessaria)"
    ],
-   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.100:PAR.12: Vide ADI 4425",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -9125,16 +7991,59 @@
    }
   },
   {
+   "target_id": "CF88:ART.102",
+   "title": "Art. 102 — Competências do Supremo Tribunal Federal",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_ANNOTATED"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.102:PAR.2: Vide ADIN 3392)",
+    "camada externa: nota externa",
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "exception: ressalvado",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 52",
+    "overview com 30 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.102:PAR.2",
    "title": "Art. 102, § 2º — Efeito vinculante nas ações de controle",
    "role": "DEVICE",
    "sub_block": "B",
    "legal_risk": "HIGH",
    "legal_rules": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392"
    ],
    "legal_secondary": [
     "JURISPRUDENCE_CONTEXT_ONLY: A fonte canônica anota este parágrafo com controle de constitucionalidade (Vide ADIN 3392): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPR"
@@ -9157,7 +8066,59 @@
    "external_dependency": [
     "JURISPRUDENCIA (contexto)"
    ],
-   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103-A",
+   "title": "Art. 103-A — Enunciado com efeito vinculante do Supremo",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "INTERPRETIVE_CONTROVERSY"
+   ],
+   "legal_reasons": [
+    "INTERPRETIVE_CONTROVERSY: \"controvérsia\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ",
+    "SENSITIVE_THEME: cassa"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.103-A:CAPUT: Vide Lei n. 11.417, de 2006)",
+    "camada externa: jurisprudencia",
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a interpretação e a eficácia de normas determinadas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: INTERPRETIVE_CONTROVERSY: \"controvérsia\"",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9172,7 +8133,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial \"nos termos da lei\""
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9213,7 +8174,7 @@
    ],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial \"nos termos da lei\"",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9226,27 +8187,28 @@
    "legal_risk": "HIGH",
    "legal_rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "INTERPRETIVE_CONTROVERSY",
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade"
+    "INTERPRETIVE_CONTROVERSY: \"controvérsias\"",
+    "JUDICIAL_REVIEW_ANNOTATED: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10)"
    ],
    "legal_secondary": [
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")",
-    "CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate"
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")"
    ],
    "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432)",
-    "camada externa: jurisprudencia",
+    "camada externa: jurisprudencia, nota externa",
     "EXTERNAL_FACT_NEEDS_PROVENANCE",
     "exception: ressalvado",
     "law_dependency: na forma da lei",
     "redacao de emenda constitucional (1 anotacao(oes))",
     "remissao: arts. 102, 195",
-    "overview com 14 dispositivos"
+    "overview com 13 dispositivos"
    ],
    "queue": "D_FULL_HUMAN_REVIEW",
    "previous": null,
@@ -9298,7 +8260,7 @@
     "ADI 3423",
     "JURISPRUDENCIA (necessaria)"
    ],
-   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; INTERPRETIVE_CONTROVERSY: \"controvérsias\"; JUDICIAL_REVIEW_ANNOTATED: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10)",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -9350,11 +8312,11 @@
    "legal_risk": "HIGH",
    "legal_rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não devem ser deduzidos\"",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3)"
    ],
    "legal_secondary": [
     "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")"
@@ -9436,7 +8398,7 @@
     "ADI 3423",
     "JURISPRUDENCIA (necessaria)"
    ],
-   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não devem ser deduzidos\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não devem ser deduzidos\"; JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3)",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -9453,10 +8415,10 @@
    "sub_block": "B",
    "legal_risk": "HIGH",
    "legal_rules": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2)"
    ],
    "legal_secondary": [
     "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")"
@@ -9508,7 +8470,7 @@
    "external_dependency": [
     "ADI 3423"
    ],
-   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2)",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -9517,6 +8479,151 @@
     "via": null,
     "evidence": []
    }
+  },
+  {
+   "target_id": "CF88:ART.124",
+   "title": "Art. 124 — Competência da Justiça Militar",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "law_dependency: lei disporá",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a organização o funcionamento e a competência da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.2",
+   "title": "Art. 125, § 2º — Controle de constitucionalidade estadual",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "title": "Art. 129 — Funções institucionais do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: três anos",
+    "number_or_percentage: três",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 93",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o inquérito civil e a ação civil pública",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a legitimação do ministério público para as ações",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   },
   {
    "target_id": "CF88:ART.142",
@@ -9610,6 +8717,318 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.144:PAR.8",
+   "title": "Art. 144, § 8º — Guardas municipais",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.144:PAR.8: Vide Lei n. 13.022, de 2014)",
+    "camada externa: jurisprudencia, nota externa"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bens serviços e instalações conforme dispuser a lei",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "title": "Art. 145, inciso II — Taxas",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "title": "Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 156",
+    "block com 9 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "title": "Art. 149-B — Regras comuns ao IBS e à CBS",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 150, 156, 195",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "title": "Art. 149-C — Tributação das compras públicas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 150, 156, 195",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:INC.IV",
+   "title": "Art. 150, inciso IV — Vedação ao confisco",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "title": "Art. 150, § 7º — Substituição tributária para frente",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "title": "Art. 153 — Impostos da União",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.153:PAR.5: Vide Emenda Constitucional n. 3, de 1993)",
+    "camada externa: nota externa",
+    "number_or_percentage: por cento",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 155",
+    "overview com 33 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bens e serviços prejudiciais à saúde ou ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "bens e serviços prejudiciais à saúde ou ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.153:PAR.3",
    "title": "Art. 153, § 3º — Regras do imposto sobre produtos industrializados",
    "role": "DEVICE",
@@ -9619,7 +9038,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + REGIMES_COEXISTENTES + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9635,7 +9054,126 @@
    "lint": [],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + REGIMES_COEXISTENTES + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "title": "Art. 153, § 6º — Imposto sobre bens e serviços prejudiciais",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 155"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "155 ii 156 iii 156 a e 195",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "title": "Art. 155 — Impostos dos Estados e do Distrito Federal",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.155:PAR.2:INC.XII:AL.h: Vide Emenda Constitucional n. 33, de 2001)",
+    "camada externa: nota externa",
+    "quorum: um terço",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (11 anotacao(oes))",
+    "remissao: arts. 150, 153",
+    "overview com 69 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2",
+   "title": "Art. 155, § 2º — Regime do imposto sobre circulação de mercadorias",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: um terço",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: lei complementar",
+    "remissao: arts. 153"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9650,7 +9188,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA + TEXTO_VIGENTE_INSUFICIENTE — ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9680,7 +9218,120 @@
    ],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA + TEXTO_VIGENTE_INSUFICIENTE — ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156",
+   "title": "Art. 156 — Impostos dos Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "exception: exceto",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (6 anotacao(oes))",
+    "remissao: arts. 150, 155, 182",
+    "overview com 17 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "title": "Art. 156, § 2º — Imposto sobre a transmissão de imóveis",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: salvo"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a compra e venda desses bens ou direitos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.3",
+   "title": "Art. 156, § 3º — Lei complementar do imposto sobre serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9695,7 +9346,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — 2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [
     "SENSITIVE_THEME: imunidade"
@@ -9723,12 +9374,48 @@
      "match": "alíquotas do estado e do município de destino",
      "sentence": "",
      "detail": "politica A6 item 2"
-    },
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "title": "Art. 156-A, § 1º — Princípios e características do imposto sobre bens e serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvado",
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153, 239"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
     {
      "code": "NEAR_COPY_MICROFIX",
      "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
      "route": null,
-     "section": "exemplo_pratico",
+     "section": "o_que_diz",
      "match": "alíquotas do estado e do município de destino",
      "sentence": "",
      "detail": "politica A6 item 2"
@@ -9736,12 +9423,223 @@
    ],
    "info": [],
    "lint": [
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — 2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "title": "Art. 156-A, § 5º — Matérias da lei complementar do imposto sobre bens e serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: %",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "title": "Art. 156-A, § 6º — Regimes específicos do imposto sobre bens e serviços",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "atividade esportiva desenvolvida por sociedade anônima do futebol",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "em relação aos adquirentes dos bens e serviços",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "title": "Art. 156-A, §§ 9º, 10 e 11 — Alíquota de referência e preservação da arrecadação",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "title": "Art. 156-A, § 13 — Devolução obrigatória na energia e no gás de cozinha",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "seja calculada e concedida no momento da cobrança",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "title": "Art. 156-B — Comitê Gestor do Imposto sobre Bens e Serviços",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "number_or_percentage: vinte",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 156",
+    "overview com 28 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "comitê gestor do imposto sobre bens e serviços",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9756,7 +9654,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9795,7 +9693,7 @@
    ],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9810,7 +9708,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9827,7 +9725,54 @@
    "lint": [],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "title": "Art. 159, inciso I — Fundos de participação",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao fundo de participação dos estados e do",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9842,7 +9787,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: TEXTO_VIGENTE_INSUFICIENTE — valores e cronograma de entrega do fundo"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9862,7 +9807,7 @@
    "lint": [],
    "editorial_checks": [],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: TEXTO_VIGENTE_INSUFICIENTE — valores e cronograma de entrega do fundo",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9877,7 +9822,7 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "legal_reasons": [
-    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026"
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
    ],
    "legal_secondary": [],
    "jurisprudence": "NONE",
@@ -9911,7 +9856,7 @@
     "TRANSITION_IN_CORE:RESOLVED"
    ],
    "external_dependency": null,
-   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026",
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -9924,11 +9869,11 @@
    "legal_risk": "HIGH",
    "legal_rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3)"
    ],
    "legal_secondary": [
     "SENSITIVE_THEME: incompatív",
@@ -9978,7 +9923,7 @@
     "ADI 7697",
     "JURISPRUDENCIA (necessaria)"
    ],
-   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3)",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -9995,10 +9940,10 @@
    "sub_block": "D",
    "legal_risk": "HIGH",
    "legal_rules": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697"
    ],
    "legal_secondary": [
     "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
@@ -10040,13 +9985,14 @@
    "lint": [
     "JURISPRUDENCE_WORDING_IN_BODY",
     "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION",
     "EXAMPLE_REQUIREMENT_LANGUAGE"
    ],
    "editorial_checks": [],
    "external_dependency": [
     "ADI 7697"
    ],
-   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -10064,11 +10010,11 @@
    "legal_risk": "HIGH",
    "legal_rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697"
    ],
    "legal_secondary": [
     "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
@@ -10096,22 +10042,11 @@
      "match": "ADI 7697",
      "sentence": "Vide ADI 7697 anotada na fonte canônica para os §§ 11 a 20 do art.",
      "detail": "so na camada externa: o nucleo T1 nao depende do fato"
-    },
-    {
-     "code": "NEAR_COPY_MICROFIX",
-     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
-     "route": null,
-     "section": "o_que_significa",
-     "match": "reduzidos em até a mesma proporção da limitação",
-     "sentence": "",
-     "detail": "politica A6 item 2"
     }
    ],
    "info": [],
    "lint": [
     "JURISPRUDENCE_WORDING_IN_BODY",
-    "NEAR_COPY_OF_OFFICIAL_TEXT",
-    "PARENT_REPETITION",
     "EXAMPLE_REQUIREMENT_LANGUAGE"
    ],
    "editorial_checks": [],
@@ -10119,7 +10054,7 @@
     "ADI 7697",
     "JURISPRUDENCIA (necessaria)"
    ],
-   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -10137,11 +10072,11 @@
    "legal_risk": "HIGH",
    "legal_rules": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+    "JUDICIAL_REVIEW_ANNOTATED"
    ],
    "legal_reasons": [
     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
-    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade"
+    "JUDICIAL_REVIEW_ANNOTATED: ART.166-A:CAPUT: Vide ADI 7697"
    ],
    "legal_secondary": [
     "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
@@ -10189,7 +10124,7 @@
     "ADI 7697",
     "JURISPRUDENCIA (necessaria)"
    ],
-   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade",
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_ANNOTATED: ART.166-A:CAPUT: Vide ADI 7697",
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1,
@@ -10201,37 +10136,37 @@
   }
  ],
  "d_reasons": {
-  "INTERPRETIVE_CONTROVERSY": 1,
-  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 11,
-  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 9,
-  "TRANSITION_OR_TEMPORAL": 10
+  "INTERPRETIVE_CONTROVERSY": 3,
+  "JUDICIAL_REVIEW_ANNOTATED": 14,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 18,
+  "TRANSITION_OR_TEMPORAL": 26
  },
  "finding_counts": {
   "EXTERNAL_FACT_NEEDS_PROVENANCE": 22
  },
  "refined_false_positive_counts": {
-  "TELEOLOGY_SPECULATIVE": 4,
+  "TELEOLOGY_SPECULATIVE": 3,
   "UNIVERSAL_CLAIM": 3
  },
  "metrics": {
-  "total_draft_chars": 357481,
-  "old_model_full_package_chars": 823155,
-  "presented_chars": 316685,
+  "total_draft_chars": 355790,
+  "old_model_full_package_chars": 818019,
+  "presented_chars": 441681,
   "presented_by_file": {
-   "MACRO07_COMPACT_AB_REVIEW.md": 169842,
-   "MACRO07_FULL_D_REVIEW.md": 112033,
+   "MACRO07_COMPACT_AB_REVIEW.md": 143952,
+   "MACRO07_FULL_D_REVIEW.md": 263630,
    "MACRO07_HARD_FAIL_REPORT.md": 119,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 34321,
-   "MACRO07_QUICK_C_REVIEW.md": 370
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 33815,
+   "MACRO07_QUICK_C_REVIEW.md": 165
   },
-  "reduction_abs": 506470,
-  "reduction_pct": 61.5
+  "reduction_abs": 376338,
+  "reduction_pct": 46.0
  },
- "d_ratio": 0.096,
+ "d_ratio": 0.213,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 151,
+  "eligible": 146,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -10338,9 +10273,6 @@
   "hard_fail": [],
   "new_not_pending": [],
   "stale": [],
-  "transition_without_evidence": [],
-  "transition_evidence_unused": [],
-  "judicial_review_unclassified": [],
   "status": "PASS"
  },
  "backlog": {
@@ -10352,6 +10284,6 @@
    },
    "hits": 12
   },
-  "items": 11
+  "items": 7
  }
 }
