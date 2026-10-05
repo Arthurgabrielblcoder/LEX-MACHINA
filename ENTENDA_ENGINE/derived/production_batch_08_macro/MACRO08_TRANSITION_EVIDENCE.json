@@ -1,0 +1,90 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "as_of": "2026-10-05",
+ "policy": "prova temporal de cada explicacao com componente temporal: norma, EC, artigo, marco, situacao na data de referencia, se produz efeitos, hash da fonte e proveniencia. Nada vem de memoria: so texto versionado e anotacoes da fonte canonica.",
+ "total": 3,
+ "resolved": 2,
+ "unresolved": 1,
+ "entries": [
+  {
+   "target_id": "CF88:ART.195",
+   "namespace": "CF88",
+   "temporal_class": "OPERATIVE_CURRENT",
+   "resolved_deterministically": true,
+   "norma": "Constituicao Federal",
+   "ec": "EC 132/2023 (inciso V e §§ 15 a 19, anotacao da fonte canonica)",
+   "article": "CF art. 195, V; ADCT arts. 124 a 127",
+   "marker": "2026 (aliquota de teste, ADCT art. 125); 2027 (cobranca, ADCT art. 126, I, a)",
+   "situation_as_of": "Financiamento da seguridade vigente; contribuicao do inciso V cobrada em 2026 apenas a aliquota de teste do ADCT art. 125 (0,9%), compensavel (art. 125, § 1º).",
+   "produces_effects": "SIM (regra permanente); inciso V em regime de transicao",
+   "as_of": "2026-10-05",
+   "source_text_sha256": "9aa321b398313e4d2297858b4eed3a269a8905080f51c1e1122b086533bf5a18",
+   "text_source_path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "text_source_file_sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "source_annotations": [
+    "Incluido pela Emenda Constitucional n. 103, de 2019",
+    "Incluido pela Emenda Constitucional n. 132, de 2023",
+    "Incluido pela Emenda Constitucional n. 20, de 1998",
+    "Redacao dada pela Emenda Constitucional n. 103, de 2019",
+    "Redacao dada pela Emenda Constitucional n. 20, de 1998",
+    "Vide Emenda Constitucional n. 20, de 1998",
+    "Vide Lei Complementar n. 214, de 2026"
+   ],
+   "provenance": [
+    "runtime: ADCT art. 125, caput e § 1º; ADCT art. 126, caput e I, a"
+   ],
+   "temporal_notes": []
+  },
+  {
+   "target_id": "CF88:ART.195:INC.I",
+   "namespace": "CF88",
+   "temporal_class": "OPERATIVE_CURRENT",
+   "resolved_deterministically": true,
+   "norma": "Constituicao Federal",
+   "ec": "EC 20/1998 (redacao); extincao futura da alinea b pela EC 132/2023 (ADCT art. 126, II)",
+   "article": "CF art. 195, I; ADCT art. 126, II",
+   "marker": "a partir de 2027, condicionada a instituicao da contribuicao do art. 195, V",
+   "situation_as_of": "As tres bases (folha, receita ou faturamento, lucro) vigentes em 2026.",
+   "produces_effects": "SIM",
+   "as_of": "2026-10-05",
+   "source_text_sha256": "9ef6210f694e5684637e48595979df3a3766ec7a9c42231200bce1177c66ec08",
+   "text_source_path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "text_source_file_sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "source_annotations": [
+    "Incluido pela Emenda Constitucional n. 20, de 1998",
+    "Redacao dada pela Emenda Constitucional n. 20, de 1998"
+   ],
+   "provenance": [
+    "runtime: ADCT art. 126, caput e II"
+   ],
+   "temporal_notes": []
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.15",
+   "namespace": "CF88",
+   "temporal_class": "FUTURE_TRIGGER",
+   "resolved_deterministically": false,
+   "norma": "Constituicao Federal",
+   "ec": "EC 132/2023",
+   "article": "CF art. 195, §§ 15 a 19; ADCT arts. 125 a 127",
+   "marker": "2026 aliquota de teste (ADCT art. 125); cobranca a partir de 2027 (ADCT art. 126, I, a); reducao de 0,1 ponto em 2027 e 2028 (ADCT art. 127, paragrafo unico)",
+   "situation_as_of": "Regras constitucionais vigentes; cobranca plena da contribuicao so a partir de 2027.",
+   "produces_effects": "PARCIAL (teste em 2026; cobranca plena futura)",
+   "as_of": "2026-10-05",
+   "source_text_sha256": "3a6f66b02ef85f6144ba811e15ce168d79522092b9078c4d25ffeae63e4a61ab",
+   "text_source_path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+   "text_source_file_sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "source_annotations": [
+    "Incluido pela Emenda Constitucional n. 132, de 2023"
+   ],
+   "provenance": [
+    "runtime: ADCT arts. 125, 126 e 127"
+   ],
+   "temporal_notes": []
+  }
+ ]
+}

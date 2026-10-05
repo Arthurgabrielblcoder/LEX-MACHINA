@@ -1,0 +1,96 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "packet_prefix": "MACRO08",
+ "as_of_date": "2026-10-05",
+ "scope_articles": "CF88 arts. 176 a 250 (corpo permanente, com artigos com letra) + ADCT inteiro (arts. 1 a 138, com artigos com letra), segundo a compilacao monovigente oficial do Senado (runtime da Lei Seca)",
+ "entenda_config": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json",
+ "sub_blocks": {
+  "A": {
+   "name": "MACRO_08_A",
+   "namespace": "CF88",
+   "segment": "CORPO",
+   "start": 176,
+   "end": 200
+  },
+  "B": {
+   "name": "MACRO_08_B",
+   "namespace": "CF88",
+   "segment": "CORPO",
+   "start": 201,
+   "end": 225
+  },
+  "C": {
+   "name": "MACRO_08_C",
+   "namespace": "CF88",
+   "segment": "CORPO",
+   "start": 226,
+   "end": 250
+  },
+  "D": {
+   "name": "MACRO_08_D",
+   "namespace": "ADCT",
+   "segment": "ADCT",
+   "start": 1,
+   "end": 30
+  },
+  "E": {
+   "name": "MACRO_08_E",
+   "namespace": "ADCT",
+   "segment": "ADCT",
+   "start": 31,
+   "end": 60
+  },
+  "F": {
+   "name": "MACRO_08_F",
+   "namespace": "ADCT",
+   "segment": "ADCT",
+   "start": 61,
+   "end": 90
+  },
+  "G": {
+   "name": "MACRO_08_G",
+   "namespace": "ADCT",
+   "segment": "ADCT",
+   "start": 91,
+   "end": 115
+  },
+  "H": {
+   "name": "MACRO_08_H",
+   "namespace": "ADCT",
+   "segment": "ADCT",
+   "start": 116,
+   "end": 138
+  }
+ },
+ "sub_blocks_built": [
+  "A"
+ ],
+ "adct_block_rule": "blocos de ~25-35 artigos estruturais, determinados pela estrutura real (148 artigos; 831 targets CURRENT): fronteiras por numero de artigo, equilibrando targets (147/171/164/151/196)",
+ "canonical_structural_source": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+ "reference_export": "LEGAL_TARGET_ID/derived/export_test/run3/CF88_REFERENCES_EXPORT.json",
+ "prior_corpora": [
+  "ENTENDA_ENGINE/derived/production_batch_01_final/CF88_BATCH_01_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_02_final/CF88_BATCH_02_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_03_final/CF88_BATCH_03_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_04/CF88_BATCH_04.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_05/CF88_BATCH_05.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_06/CF88_BATCH_06.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_07_macro/CF88_MACRO_07.entenda.jsonl"
+ ],
+ "soft_target": [
+  200,
+  500
+ ],
+ "hard_cap": 600,
+ "soft_target_justification": "sem cota: visao geral de todo artigo vigente com valor atual + dispositivos com ganho pedagogico proprio; listas e regras formais na visao geral; ADCT exaurido sem valor atual vira SKIP_EXHAUSTED_TRANSITION (registro com motivo)",
+ "template_version": "ENTENDA-T1 (O QUE DIZ / O QUE SIGNIFICA / EXEMPLO PRATICO / ATENCAO / PALAVRAS DIFICEIS)",
+ "prompt_version": "ENTENDA-T1-EDITORIAL-STANDARD congelado (tag entenda-batch05-t1-frozen-2026-10-04) + adendo A6 + calibracoes do Batch06 (validator v3, filas recalibradas, licoes da fila D) + licoes da segunda passada do Macro07 (TRANSITION_OR_TEMPORAL nao gera HIGH sozinho; JUDICIAL_REVIEW contexto x necessario) + camada temporal do ADCT",
+ "authoring": {
+  "mode": "EDITORIAL_EXPLICITO (redigido e revisavel; nao gerado por transformacao mecanica da lei); dois passes: DRAFTER e CRITIC",
+  "author": "rascunho editorial Claude para revisao humana",
+  "generated_at": "2026-10-05"
+ },
+ "base_checkpoint": "cf-macro-76-175-cloud @ 03e6f2592f099b6279d10ec91a307e737faffa88 (checkpoint fixo; branch paralela em revisao: PARALLEL_BRANCH_RECONCILIATION_REQUIRED_LATER)"
+}

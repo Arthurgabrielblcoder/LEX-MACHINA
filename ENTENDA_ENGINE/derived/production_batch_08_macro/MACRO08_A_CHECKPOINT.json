@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_A",
+ "namespace": "CF88",
+ "articles_range": "CF88 176-200",
+ "stats": {
+  "articles": 25,
+  "targets_evaluated": 204,
+  "targets_current": 182,
+  "select": 41,
+  "skip": 141,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 7,
+   "EXCLUDED_REVOKED": 15
+  },
+  "new_explanations": 41,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 9,
+   "DEVICE": 7,
+   "OVERVIEW": 25
+  },
+  "legal_risk": {
+   "LOW": 30,
+   "MEDIUM": 10,
+   "HIGH": 1
+  },
+  "verification_complexity": {
+   "SIMPLE": 1,
+   "STRUCTURED": 23,
+   "EXTERNAL": 17
+  },
+  "queues": {
+   "A_CLEAN_LOW": 26,
+   "B_CLEAN_MEDIUM": 9,
+   "C_QUICK_REVIEW": 5,
+   "D_FULL_HUMAN_REVIEW": 1,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {
+   "CONTEXT_ONLY": 7,
+   "NONE": 34
+  },
+  "skipped_articles": []
+ },
+ "critic": {
+  "corrections": 66,
+  "by_category": {
+   "CAMADA_EXTERNA": 1,
+   "CONDICAO_FORA_DO_TEXTO": 1,
+   "CONSEQUENCIA_INVENTADA": 1,
+   "COPIA_DA_LEI_SECA": 21,
+   "DEPENDENCIA_DE_LEI_OMITIDA": 1,
+   "DUPLICACAO": 1,
+   "EXCECAO_OMITIDA": 1,
+   "EXEMPLO_CRIA_REQUISITO": 3,
+   "FRASE_LONGA": 4,
+   "GENERALIZACAO_ABSOLUTA": 7,
+   "GLOSSARIO": 3,
+   "HISTORICO_SEM_PROVENIENCIA": 1,
+   "INTERPRETACAO_COMO_REGRA": 2,
+   "JURISPRUDENCIA_VELADA": 3,
+   "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA": 2,
+   "LISTA_INCOMPLETA": 2,
+   "NUMERO_ERRADO": 1,
+   "PAI_FILHO_REPETICAO": 1,
+   "RESSALVA": 1,
+   "TELEOLOGIA": 7,
+   "TEMPORAL": 2
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "status": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 0,
+ "status": "PASS"
+}
