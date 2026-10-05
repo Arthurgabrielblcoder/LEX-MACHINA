@@ -1,0 +1,56 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "policy": "Registro de problemas encontrados durante a missao em modulos compartilhados, runtime ou conteudo antigo. Nada aqui foi corrigido nesta missao.",
+ "items": [
+  {
+   "id": "MB07-01",
+   "kind": "RUNTIME_TEXT_ANOMALY",
+   "target": "CF88:ART.114:INC.VII",
+   "detail": "O texto do runtime traz o inciso VIII anexado ao VII (\"VII I - a execucao...\"), e INC.VIII esta marcado HISTORICAL. Nao corrigido: runtime e fonte estrutural fora do escopo da missao. A visao geral do art. 114 sinaliza a anomalia na camada externa.",
+   "action": "Conferir a segmentacao do art. 114 na fonte oficial e no runtime (missao propria)."
+  },
+  {
+   "id": "MB07-02",
+   "kind": "RUNTIME_TEXT_ANOMALY",
+   "target": "CF88:ART.155:INC.I:AL.c",
+   "detail": "Alinea marcada CURRENT com texto vazio no runtime (alineas a e b HISTORICAL). Coberta pela visao geral do art. 155; nao corrigida.",
+   "action": "Conferir a situacao da alinea c na fonte oficial e no runtime."
+  },
+  {
+   "id": "MB07-03",
+   "kind": "ENGINE_TERM_COLLISION",
+   "target": "entenda_engine.EXTERNAL_CASE_RE",
+   "detail": "O contrato bloqueia \"sumula\" no corpo, inclusive quando a palavra designa o proprio instituto constitucional (art. 103-A). O corpo usa \"enunciado vinculante\" e a ATENCAO avisa o leitor; o termo constitucional fica na camada externa.",
+   "action": "Avaliar excecao no contrato para o termo constitucional (alteraria modulo compartilhado com hash do Batch06)."
+  },
+  {
+   "id": "MB07-04",
+   "kind": "RISK_DETECTOR_GAP",
+   "target": "t1_risk.assess",
+   "detail": "Somente \"regra de transicao\" (singular) no corpo eleva para TRANSITION_OR_TEMPORAL; o plural nao. Contornado na redacao dos drafts em que a aplicacao no tempo e material (146 § 1º, 149-B, 149-C e reforma tributaria em 151-159-A).",
+   "action": "Aceitar singular e plural no detector (modulo compartilhado)."
+  },
+  {
+   "id": "MB07-05",
+   "kind": "VALIDATOR_GAP",
+   "target": "t1_validator_v3.EXCEPTION_IN_DRAFT",
+   "detail": "\"excetuado(s)\" nao e reconhecido como marcador de excecao no draft (so \"exceto\"). Contornado na redacao (art. 155).",
+   "action": "Incluir excetuad* no marcador (modulo compartilhado)."
+  },
+  {
+   "id": "MB07-06",
+   "kind": "VIGENCY_MATCH_COVERAGE",
+   "target": "entenda_vigency_plan.vigency_map",
+   "detail": "A anotacao de vigencia so e casada quando o texto do dispositivo no runtime e identico (apos normalizacao) a linha anotada do cf.txt canonico; dispositivos sem casamento ficam sem anotacao (falso negativo possivel para JUDICIAL_REVIEW_ANNOTATED e para historico).",
+   "action": "Casamento aproximado com revisao humana das divergencias."
+  },
+  {
+   "id": "MB07-07",
+   "kind": "DUPLICATE_DRAFT_DROPPED",
+   "target": "CF88:ART.150",
+   "detail": "A visao geral do art. 150 ja e HUMAN_APPROVED_T1 no corpus principal: reutilizada sem alteracao; o rascunho novo foi removido pelo critic (DROP_EXPLANATION, registrado no log).",
+   "action": "Nenhuma."
+  }
+ ]
+}

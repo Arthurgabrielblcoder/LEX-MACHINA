@@ -109,6 +109,7 @@ class Names:
         self.priority = f'{self.p}_HUMAN_REVIEW_PRIORITY.md'
         self.report = f'{self.p}_SCALE_REPORT.md'
         self.manifest = f'{self.p}_MANIFEST.json'
+        self.backlog = f'{self.p}_BACKLOG.md'
 
 
 def article_targets(ctx, norma, start, end):
@@ -125,6 +126,38 @@ def article_targets(ctx, norma, start, end):
 def sub_block_of(ms, ctx, art):
     n = int(re.match(r'.*:ART\.(\d+)', art).group(1))
     return next(k for k, v in ms['sub_blocks'].items() if v['start'] <= n <= v['end'])
+
+
+JURIS_NOTE_RE = re.compile(r'JURISPRUD[EÊ]NCIA', re.I)
+
+
+def derived_jurisprudence_recommendations(ctx, expl, vig, seen):
+    """Link recommendations derived from versioned evidence only (nothing filled from memory):
+    - CANONICAL_VIGENCY_ANNOTATION: a "Vide ADI/ADIN/ADC/ADPF/ADO n" annotation of the canonical structural source on a target in the scope
+      of the explanation -> desired_reference is the annotated identity;
+    - DRAFT_EXTERNAL_LAYER_NOTE: the draft says, in its external layer, that the reading depends on case law that the Cloud cannot verify
+      (EXTERNAL_VERIFICATION_REQUIRED or "tema da camada JURISPRUDENCIA") -> desired_reference stays IDENTIFICACAO_PENDENTE.
+    local_identity is never guessed: the local curated sources decide READY_TO_LINK in production_batch.jurisprudence_recommendations_v2."""
+    out = []
+    for e in expl:
+        tid = e['target_id']
+        scope = [tid] + list(e.get('covered_targets', []))
+        scope += [t for s0 in list(scope) for t in ctx.subtree(s0) if t != s0]
+        idents = sorted({m.group(0).strip() for t in scope for a in vig.get(t, []) for m in [JUDICIAL_REVIEW_RE.search(a)] if m},
+                        key=lambda x: (x.split()[1], x))
+        for ident in idents:
+            ref = ident.replace('Vide ', '', 1)
+            if (tid, ref) not in seen:
+                seen.add((tid, ref))
+                out.append(dict(target_id=tid, desired_reference=ref, local_identity=None, subject_keywords=[],
+                                purpose='controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao '
+                                        '(CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED'))
+        notes = [n for n in e.get('external_layer_notes') or [] if JURIS_NOTE_RE.search(n) and not JUDICIAL_REVIEW_RE.search(n)]
+        if notes and (tid, 'IDENTIFICACAO_PENDENTE') not in seen:
+            seen.add((tid, 'IDENTIFICACAO_PENDENTE'))
+            out.append(dict(target_id=tid, desired_reference='IDENTIFICACAO_PENDENTE', local_identity=None, subject_keywords=[],
+                            purpose='DRAFT_EXTERNAL_LAYER_NOTE: ' + notes[0][:240]))
+    return out
 
 
 def assemble(bd, ms, ctx, nm):
@@ -158,19 +191,21 @@ def assemble(bd, ms, ctx, nm):
     drafts = dict(norma_id=ms['norma_id'], batch_id=ms['batch_id'], template_version=ms['template_version'], prompt_version=ms['prompt_version'],
                   review_status='PENDING_HUMAN_REVIEW', authoring=ms['authoring'], explanations=expl)
     _json(bd / nm.drafts, drafts)
+    targets = [t for a in arts for t in ctx.subtree(a) if ctx.effective_status(t) == 'CURRENT']
+    vig, stats = VP.vigency_map(ctx, targets, ROOT / ms['canonical_structural_source'])
+    juris = [r for x in built for r in _load(bd / 'drafts' / f"{nm.p}_{x}_DRAFTS.json").get('jurisprudence_recommendations', [])]
+    juris += derived_jurisprudence_recommendations(ctx, expl, vig, {(r['target_id'], r['desired_reference']) for r in juris})
     sub_blocks = {k: [a for a in arts if sub_block_of(ms, ctx, a) == k] for k in built}
     spec = dict(norma_id=ms['norma_id'], batch_id=ms['batch_id'], report_schema=2, as_of_date=ms['as_of_date'], scope=arts,
                 sub_blocks=sub_blocks, drafts=nm.drafts, reference_export=ms.get('reference_export'), batch_corpus=nm.corpus, index_dir='index',
                 review_sheet=nm.sheet, prior_corpora=ms['prior_corpora'], soft_target=ms['soft_target'], hard_cap=ms['hard_cap'],
                 soft_target_justification=ms.get('soft_target_justification'), reused=dict(sorted(reused.items())),
                 no_separate_reasons=dict(sorted(no_sep.items(), key=lambda kv: ctx.order[kv[0]])),
-                jurisprudence_recommendations=[r for x in built for r in _load(bd / 'drafts' / f"{nm.p}_{x}_DRAFTS.json").get('jurisprudence_recommendations', [])],
+                jurisprudence_recommendations=juris,
                 packet_prefix=nm.p)
     if not spec['reference_export']:
         spec.pop('reference_export')
     _json(bd / 'BATCH_SPEC.json', spec)
-    targets = [t for a in arts for t in ctx.subtree(a) if ctx.effective_status(t) == 'CURRENT']
-    vig, stats = VP.vigency_map(ctx, targets, ROOT / ms['canonical_structural_source'])
     _json(bd / nm.plan, dict(schema_version=1, batch_id=ms['batch_id'], norma_id=ms['norma_id'], as_of=ms['as_of_date'], scope=arts,
                              canonical_structural_source=ms['canonical_structural_source'], method='entenda_vigency_plan.vigency_map',
                              stats=stats, sub_blocks=sub_blocks, vigency_by_target=vig, reused_pilots=sorted(reused),
@@ -222,6 +257,44 @@ def checks(c, doc):
     ok = not (div or hard or approved_new or stale)
     return dict(engine_contract='PASS (production_batch.validate_corpus)', lei_seca_divergence=div, hard_fail=hard, new_not_pending=approved_new,
                 stale=[s['target_id'] for s in stale], status='PASS' if ok else 'FAIL')
+
+
+def old_content_scan(ctx, ms):
+    """JUDICIAL_REVIEW_ANNOTATED applied to the ACTIVE records of the main and prior corpora (approved and pending): only registered."""
+    recs = []
+    for f in [f"ENTENDA_ENGINE/corpus/{ms['norma_id']}.entenda.jsonl"] + ms['prior_corpora']:
+        recs += [(f, r) for r in E.load_corpus(ROOT / f) if r['status'] == 'ACTIVE']
+    scope = {}
+    for _, r in recs:
+        s0 = [r['target_id']] + list(r['granularity'].get('covered_targets', []))
+        scope[r['explanation_id']] = s0 + [t for x in s0 for t in ctx.subtree(x) if t != x]
+    targets = sorted({t for v in scope.values() for t in v if ctx.exists(t)}, key=lambda t: ctx.order[t])
+    vig, _ = VP.vigency_map(ctx, targets, ROOT / ms['canonical_structural_source'])
+    hits = []
+    for f, r in recs:
+        ids = sorted({m.group(0) for t in scope[r['explanation_id']] for a in vig.get(t, []) for m in [JUDICIAL_REVIEW_RE.search(a)] if m})
+        if ids:
+            hits.append(dict(target_id=r['target_id'], explanation_id=r['explanation_id'], review_status=r['review_status'],
+                             corpus=f.split('/')[-1], annotations=ids))
+    hits.sort(key=lambda h: ctx.order[h['target_id']])
+    return dict(records_checked=len(recs), by_review_status=dict(sorted(Counter(r['review_status'] for _, r in recs).items())), hits=hits)
+
+
+def backlog(bd, ms, ctx, nm):
+    inp = _load(bd / 'BACKLOG_INPUT.json') if (bd / 'BACKLOG_INPUT.json').is_file() else dict(items=[])
+    scan = old_content_scan(ctx, ms)
+    L = [f"# {nm.p} — BACKLOG (não corrigido nesta missão)", '', inp.get('policy', ''), '',
+         '## Regra nova aplicada ao conteúdo antigo', '',
+         f"`JUDICIAL_REVIEW_ANNOTATED` (anotação Vide ADI/ADIN/ADC/ADPF/ADO no escopo) aplicada a {scan['records_checked']} registros ACTIVE dos corpora anteriores "
+         f"({', '.join(f'{k} {v}' for k, v in scan['by_review_status'].items())}). {len(scan['hits'])} registro(s) seriam LEGAL_RISK HIGH pela regra nova. "
+         'Nenhum foi alterado; a revisão fica para missão própria.', '',
+         '| Target | Status | Corpus | Anotações |', '|---|---|---|---|']
+    L += [f"| `{h['target_id']}` | {h['review_status']} | {h['corpus']} | {', '.join(h['annotations'])} |" for h in scan['hits']] or ['| — | — | — | — |']
+    L += ['', '## Itens registrados durante a missão', '', '| ID | Tipo | Alvo | Detalhe | Ação sugerida |', '|---|---|---|---|---|']
+    L += [f"| {i['id']} | {i['kind']} | `{i['target']}` | {i['detail']} | {i['action']} |" for i in inp['items']]
+    (bd / nm.backlog).write_bytes(('\n'.join(L) + '\n').encode('utf-8'))
+    return dict(old_content=dict(records_checked=scan['records_checked'], by_review_status=scan['by_review_status'], hits=len(scan['hits'])),
+                items=len(inp['items']))
 
 
 def build(bd):
@@ -284,6 +357,8 @@ def build(bd):
                        human_approved_t1_granted=0, status=doc['checks']['status']))
     _json(bd / nm.triage, doc)
     (bd / nm.report).write_bytes(report(doc, sel, c, ms, nm).encode('utf-8'))
+    doc['backlog'] = backlog(bd, ms, ctx, nm)
+    _json(bd / nm.triage, doc)
     manifest(bd, ms, nm, doc, sel)
     if doc['checks']['status'] != 'PASS':
         raise MacroBuildError(json.dumps(doc['checks'], ensure_ascii=False))
@@ -343,7 +418,7 @@ def doc_spec(c):
 
 
 def manifest(bd, ms, nm, doc, sel):
-    inputs = ['MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json'] + sorted(str(p.relative_to(bd)) for p in (bd / 'drafts').glob('*.json'))
+    inputs = [p for p in ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json') if (bd / p).is_file()] + sorted(str(p.relative_to(bd)) for p in (bd / 'drafts').glob('*.json'))
     generated = sorted(str(p.relative_to(bd)) for p in bd.rglob('*') if p.is_file() and str(p.relative_to(bd)) not in inputs
                        and p.name not in (nm.manifest, 'DETERMINISM_EVIDENCE.json'))
     _json(bd / nm.manifest, dict(
@@ -363,7 +438,7 @@ def determinism(bd, n=3):
     bd = Path(bd).resolve()
     ms = _load(bd / 'MACRO_SPEC.json')
     nm = Names(ms)
-    inputs = ['MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json']
+    inputs = [p for p in ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json') if (bd / p).is_file()]
     runs = []
     with tempfile.TemporaryDirectory(prefix='macro_det_') as tmp:
         for i in range(n):
