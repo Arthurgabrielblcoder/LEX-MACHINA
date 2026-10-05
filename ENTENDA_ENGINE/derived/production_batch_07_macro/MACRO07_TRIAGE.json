@@ -23,30 +23,30 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 54,
-  "B_CLEAN_MEDIUM": 32,
+  "A_CLEAN_LOW": 97,
+  "B_CLEAN_MEDIUM": 45,
   "C_QUICK_REVIEW": 0,
-  "D_FULL_HUMAN_REVIEW": 18,
+  "D_FULL_HUMAN_REVIEW": 28,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 54,
-  "MEDIUM": 32,
-  "HIGH": 18
+  "LOW": 97,
+  "MEDIUM": 45,
+  "HIGH": 28
  },
  "complexity_counts": {
-  "STRUCTURED": 56,
-  "SIMPLE": 3,
-  "EXTERNAL": 45
+  "STRUCTURED": 93,
+  "SIMPLE": 8,
+  "EXTERNAL": 69
  },
  "jurisprudence_counts": {
-  "NONE": 79,
-  "CONTEXT_ONLY": 18,
-  "REQUIRED_FOR_CORRECTNESS": 7
+  "NONE": 134,
+  "CONTEXT_ONLY": 22,
+  "REQUIRED_FOR_CORRECTNESS": 14
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 54,
+   "A_CLEAN_LOW": 97,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -54,7 +54,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 32,
+   "B_CLEAN_MEDIUM": 45,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -63,30 +63,30 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 18,
+   "D_FULL_HUMAN_REVIEW": 28,
    "E_HARD_FAIL": 0
   }
  },
  "by_complexity": {
   "SIMPLE": {
-   "A_CLEAN_LOW": 2,
+   "A_CLEAN_LOW": 7,
    "B_CLEAN_MEDIUM": 1,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 42,
-   "B_CLEAN_MEDIUM": 14,
+   "A_CLEAN_LOW": 71,
+   "B_CLEAN_MEDIUM": 22,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 10,
-   "B_CLEAN_MEDIUM": 17,
+   "A_CLEAN_LOW": 19,
+   "B_CLEAN_MEDIUM": 22,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 18,
+   "D_FULL_HUMAN_REVIEW": 28,
    "E_HARD_FAIL": 0
   }
  },
@@ -869,7 +869,10 @@
    "lint": [
     "PARENT_REPETITION"
    ],
-   "editorial_checks": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED",
+    "DUPLICATION:RESOLVED"
+   ],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK LOW",
    "show_full_t1": false,
@@ -1993,6 +1996,1577 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.126",
+   "title": "Art. 126 — Varas agrárias",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.127",
+   "title": "Art. 127 — Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "exception: exceto",
+    "law_dependency: lei disporá",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 169",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.1",
+   "title": "Art. 127, § 1º — Princípios institucionais do Ministério Público",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.2",
+   "title": "Art. 127, § 2º — Autonomia do Ministério Público",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei disporá",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 169"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.3",
+   "title": "Art. 127, §§ 3º, 4º, 5º e 6º — Orçamento do Ministério Público",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "exception: exceto",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED",
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.1",
+   "title": "Art. 128, §§ 1º e 2º — Procurador-Geral da República",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: cinco anos",
+    "number_or_percentage: trinta",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da carreira maiores de trinta e cinco anos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "50",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129:INC.I",
+   "title": "Art. 129, inciso I — Ação penal pública",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129:INC.III",
+   "title": "Art. 129, inciso III — Inquérito civil e ação civil pública",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129:INC.VII",
+   "title": "Art. 129, inciso VII — Controle externo da atividade policial",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129:INC.IX",
+   "title": "Art. 129, inciso IX — Outras funções e vedação de representação judicial",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a representação judicial e a consultoria jurídica de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129:PAR.2",
+   "title": "Art. 129, § 2º — Exercício por integrantes da carreira e residência",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: salvo",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.131",
+   "title": "Art. 131 — Advocacia-Geral da União",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: cinco anos",
+    "number_or_percentage: trinta",
+    "law_dependency: nos termos da lei",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.132",
+   "title": "Art. 132 — Procuradores dos Estados e do Distrito Federal",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: três anos",
+    "number_or_percentage: três",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "participação da ordem dos advogados do brasil em",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "da ordem dos advogados do brasil em todas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.134",
+   "title": "Art. 134 — Defensoria Pública",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 5, 93, 96, 99",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "instituição permanente essencial à função jurisdicional do estado",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.134:PAR.2",
+   "title": "Art. 134, §§ 2º e 3º — Autonomia das Defensorias Públicas",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 99",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "defensorias públicas da união e do distrito federal",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.135",
+   "title": "Art. 135 — Remuneração das carreiras jurídicas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 39",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "das carreiras disciplinadas nas seções ii e iii",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.1",
+   "title": "Art. 136, § 1º — Medidas do estado de defesa",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "nos termos e limites da lei as medidas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "15 dias",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.4",
+   "title": "Art. 136, §§ 4º, 5º, 6º e 7º — Controle do estado de defesa pelo Congresso",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: quatro horas",
+    "number_or_percentage: vinte",
+    "block com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.137",
+   "title": "Art. 137 — Estado de sítio",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao congresso nacional autorização para decretar o estado",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.138",
+   "title": "Art. 138 — Decreto e funcionamento no estado de sítio",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: trinta dias",
+    "number_or_percentage: trinta",
+    "remissao: arts. 137",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "executor das medidas específicas e as áreas abrangidas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.138:PAR.1",
+   "title": "Art. 138, § 1º — Duração do estado de sítio",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: trinta dias",
+    "number_or_percentage: trinta",
+    "remissao: arts. 137"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "decretado por mais de trinta dias nem prorrogado",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.140",
+   "title": "Art. 140 — Comissão de acompanhamento",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: cinco",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.141",
+   "title": "Art. 141 — Fim dos estados de defesa e de sítio",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "com relação nominal dos atingidos e indicação das",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.143",
+   "title": "Art. 143 — Serviço militar",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: nos termos da lei",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a outros encargos que a lei lhes atribuir",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.144",
+   "title": "Art. 144 — Segurança pública",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.144:PAR.8: Vide Lei n. 13.022, de 2014)",
+    "exception: ressalvada",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 39",
+    "overview com 25 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "dever do estado direito e responsabilidade de todos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "title": "Art. 144, § 1º — Polícia federal",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as funções de polícia marítima aeroportuária e de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "com exclusividade as funções de polícia judiciária da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.4",
+   "title": "Art. 144, § 4º — Polícias civis",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "civis dirigidas por delegados de polícia de carreira",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.5",
+   "title": "Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a polícia ostensiva e a preservação da ordem",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.145",
+   "title": "Art. 145 — Espécies de tributos e princípios do sistema",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "title": "Art. 145, § 1º — Capacidade contributiva",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: nos termos da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o patrimônio os rendimentos e as atividades econômicas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.146",
+   "title": "Art. 146 — Papel da lei complementar tributária",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 155, 156, 195, 239",
+    "overview com 18 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "regular as limitações constitucionais ao poder de tributar",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.146:INC.III",
+   "title": "Art. 146, inciso III — Normas gerais de legislação tributária",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "remissao: arts. 155, 156, 195, 239"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "title": "Art. 146-A — Tributação e concorrência",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.147",
+   "title": "Art. 147 — Impostos nos Territórios e no Distrito Federal",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "impostos municipais ao distrito federal cabem os impostos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.148",
+   "title": "Art. 148 — Empréstimos compulsórios",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "remissao: arts. 150",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "urgente e de relevante interesse nacional observado o",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149",
+   "title": "Art. 149 — Contribuições especiais",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 146, 195",
+    "overview com 14 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "arts 146 iii e 150 i e iii",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.1",
+   "title": "Art. 149, §§ 1º, 1º-A, 1º-B e 1º-C — Contribuição previdenciária dos servidores",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "block com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.2",
+   "title": "Art. 149, § 2º — Incidência das contribuições sociais e de intervenção",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as contribuições sociais e de intervenção no domínio",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149-A",
+   "title": "Art. 149-A — Contribuição de iluminação pública",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 150",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:INC.I",
+   "title": "Art. 150, inciso I — Legalidade tributária",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "exigir ou aumentar tributo sem lei que o",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:INC.III",
+   "title": "Art. 150, inciso III — Irretroatividade e anterioridade",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: noventa dias",
+    "number_or_percentage: noventa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "title": "Art. 150, § 1º — Exceções à anterioridade",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 148, 155"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.6",
+   "title": "Art. 150, § 6º — Lei específica para benefícios fiscais",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei específica",
+    "remissao: arts. 155"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.83",
    "title": "Art. 83 — Ausência do País e perda do cargo",
    "role": "OVERVIEW",
@@ -2866,7 +4440,9 @@
    "lint": [
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
-   "editorial_checks": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
    "show_full_t1": false,
@@ -2914,7 +4490,10 @@
    "lint": [
     "NEAR_COPY_OF_OFFICIAL_TEXT"
    ],
-   "editorial_checks": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED",
+    "DUPLICATION:RESOLVED"
+   ],
    "external_dependency": [
     "JURISPRUDENCIA (contexto)"
    ],
@@ -3322,6 +4901,576 @@
     "JURISPRUDENCIA (contexto)"
    ],
    "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128",
+   "title": "Art. 128 — Estrutura do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: cinco anos",
+    "number_or_percentage: trinta",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 37, 39, 95",
+    "overview com 25 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a organização as atribuições e o estatuto de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "title": "Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são de"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "law_dependency: na forma da lei",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "title": "Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "remissao: arts. 37, 39"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.130",
+   "title": "Art. 130 — Ministério Público junto aos Tribunais de Contas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "title": "Art. 130-A — Conselho Nacional do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 37, 84",
+    "overview com 21 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cidadãos de notável saber jurídico e reputação ilibada",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "sem prejuízo da competência dos tribunais de contas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "title": "Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 37, 84"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "do ministério público da união e dos estados",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED",
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.133",
+   "title": "Art. 133 — Advocacia",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: invioláv"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.136",
+   "title": "Art. 136 — Estado de defesa",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prisão"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: trinta dias",
+    "number_or_percentage: trinta",
+    "exception: salvo",
+    "overview com 18 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "conselho da república e o conselho de defesa",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.3",
+   "title": "Art. 136, § 3º — Garantias do preso no estado de defesa",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prisão"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: dez dias",
+    "number_or_percentage: dez",
+    "exception: salvo"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "estado físico e mental do detido no momento",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "estado físico e mental do detido no momento",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "o_que_significa",
+     "match": "só pode",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.139",
+   "title": "Art. 139 — Medidas no estado de sítio por comoção grave",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "remissao: arts. 137",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.3",
+   "title": "Art. 142, § 3º — Regime jurídico dos militares",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "exception: ressalvada",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 7, 37"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "title": "Art. 150, inciso VI — Imunidades tributárias",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades (por exemplo, livros digitais e imóveis alugados de entidades imunes) é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.150:INC.VI: Vide Emenda Constitucional n. 3, de 1993)",
+    "camada externa: jurisprudencia",
+    "exception: salvo",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "e fonogramas e videofonogramas musicais produzidos no brasil",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.2",
+   "title": "Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A extensão da imunidade recíproca a outras empresas estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "e mantidas pelo poder público e à empresa",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -4326,39 +6475,446 @@
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "title": "Art. 129 — Funções institucionais do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: três anos",
+    "number_or_percentage: três",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 93",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o inquérito civil e a ação civil pública",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a legitimação do ministério público para as ações",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.142",
+   "title": "Art. 142 — Forças Armadas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "INTERPRETIVE_CONTROVERSY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "INTERPRETIVE_CONTROVERSY: \"objeto de debate\""
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia, nota externa",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "exception: ressalvada",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 7, 37",
+    "overview com 14 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; INTERPRETIVE_CONTROVERSY: \"objeto de debate\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.2",
+   "title": "Art. 142, § 2º — Habeas corpus e punições disciplinares militares",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "habeas corpus em relação a punições disciplinares militares",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.8",
+   "title": "Art. 144, § 8º — Guardas municipais",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.144:PAR.8: Vide Lei n. 13.022, de 2014)",
+    "camada externa: jurisprudencia, nota externa"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bens serviços e instalações conforme dispuser a lei",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "title": "Art. 145, inciso II — Taxas",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "title": "Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 156",
+    "block com 9 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "title": "Art. 149-B — Regras comuns ao IBS e à CBS",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 150, 156, 195",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "title": "Art. 149-C — Tributação das compras públicas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 150, 156, 195",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:INC.IV",
+   "title": "Art. 150, inciso IV — Vedação ao confisco",
+   "role": "ITEM",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "title": "Art. 150, § 7º — Substituição tributária para frente",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   }
  ],
  "d_reasons": {
-  "INTERPRETIVE_CONTROVERSY": 2,
+  "INTERPRETIVE_CONTROVERSY": 3,
   "JUDICIAL_REVIEW_ANNOTATED": 10,
-  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 7,
-  "TRANSITION_OR_TEMPORAL": 3
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 14,
+  "TRANSITION_OR_TEMPORAL": 6
  },
  "finding_counts": {
   "EXTERNAL_FACT_NEEDS_PROVENANCE": 18
  },
  "refined_false_positive_counts": {
-  "UNIVERSAL_CLAIM": 2
+  "UNIVERSAL_CLAIM": 3
  },
  "metrics": {
-  "total_draft_chars": 146024,
-  "old_model_full_package_chars": 325392,
-  "presented_chars": 163505,
+  "total_draft_chars": 238394,
+  "old_model_full_package_chars": 516818,
+  "presented_chars": 248062,
   "presented_by_file": {
-   "MACRO07_COMPACT_AB_REVIEW.md": 64385,
-   "MACRO07_FULL_D_REVIEW.md": 84635,
+   "MACRO07_COMPACT_AB_REVIEW.md": 105086,
+   "MACRO07_FULL_D_REVIEW.md": 119801,
    "MACRO07_HARD_FAIL_REPORT.md": 119,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 14201,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 22891,
    "MACRO07_QUICK_C_REVIEW.md": 165
   },
-  "reduction_abs": 161887,
-  "reduction_pct": 49.8
+  "reduction_abs": 268756,
+  "reduction_pct": 52.0
  },
- "d_ratio": 0.173,
+ "d_ratio": 0.165,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 49,
+  "eligible": 91,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -4374,7 +6930,7 @@
  ],
  "critic": {
   "A": {
-   "corrections": 74,
+   "corrections": 75,
    "by_category": {
     "CONDICAO_FORA_DO_TEXTO": 4,
     "CONTRATO_DO_MOTOR": 2,
@@ -4392,12 +6948,12 @@
     "NUMERO": 4,
     "REGRA_INVENTADA": 4,
     "RESSALVA_OMITIDA": 7,
-    "TELEOLOGIA": 3,
+    "TELEOLOGIA": 4,
     "TRANSICAO_NO_NUCLEO": 1
    }
   },
   "B": {
-   "corrections": 76,
+   "corrections": 77,
    "by_category": {
     "CONTRATO_DO_MOTOR": 1,
     "COPIA_DA_LEI_SECA": 33,
@@ -4411,7 +6967,30 @@
     "QUALIFICADOR_FORA_DO_TEXTO": 2,
     "REMISSAO": 1,
     "RESSALVA_OMITIDA": 9,
-    "TELEOLOGIA": 5
+    "TELEOLOGIA": 6
+   }
+  },
+  "C": {
+   "corrections": 133,
+   "by_category": {
+    "CONTRATO_DO_MOTOR": 2,
+    "COPIA_DA_LEI_SECA": 47,
+    "DUPLICACAO": 1,
+    "EXCECAO_FORA_DO_TEXTO": 4,
+    "FATO_EXTERNO": 6,
+    "FRASE_LONGA": 6,
+    "GENERALIZACAO": 9,
+    "GLOSSARIO": 8,
+    "INTERPRETACAO_COMO_REGRA": 8,
+    "LISTA_INCOMPLETA": 4,
+    "MODALIDADE": 3,
+    "NUMERO": 1,
+    "QUALIFICADOR_FORA_DO_TEXTO": 1,
+    "REMISSAO": 2,
+    "RESSALVA_OMITIDA": 7,
+    "REUSO_DE_APROVADO": 1,
+    "TELEOLOGIA": 20,
+    "TRANSICAO_E_EFEITO_TEMPORAL": 3
    }
   }
  },

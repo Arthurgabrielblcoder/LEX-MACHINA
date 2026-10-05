@@ -16,6 +16,10 @@ assert len(by)==len(exps),'duplicate target'
 edits=json.load(open(editsf))
 log=[]
 for ed in edits:
+    if ed.get('action')=='DROP_EXPLANATION':   # critic removes a draft (e.g. the target already has an approved explanation to reuse)
+        exps.remove(by.pop(ed['target']))
+        log.append(dict(target_id=ed['target'],section='*',category=ed['category'],detector=ed.get('detector','CRITIC_REVIEW'),reason=ed['reason'],before='(rascunho removido)',after=''))
+        continue
     e=by[ed['target']]; sec=ed['section']
     if sec=='external_layer_notes':
         txt='\n'.join(e['external_layer_notes'])

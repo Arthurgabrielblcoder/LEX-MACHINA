@@ -3,19 +3,33 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
  "as_of": "2026-10-05",
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
- "explanations": 104,
+ "explanations": 170,
  "risk_counts": {
-  "LOW": 54,
-  "MEDIUM": 32,
-  "HIGH": 18
+  "LOW": 97,
+  "MEDIUM": 45,
+  "HIGH": 28
  },
  "finding_counts": {
-  "DUPLICATION": 24
+  "DUPLICATION": 34
  },
  "unresolved_findings": 0,
- "ready_for_editorial_review": 104,
+ "ready_for_editorial_review": 170,
  "human_approved_t1": 0,
  "duplication_pairs": [
+  {
+   "a": "CF88:ART.99:PAR.3",
+   "b": "CF88:ART.127:PAR.3",
+   "section": "o_que_diz",
+   "similarity": 0.362,
+   "shared_sentences": []
+  },
+  {
+   "a": "CF88:ART.99:PAR.3",
+   "b": "CF88:ART.127:PAR.3",
+   "section": "exemplo_pratico",
+   "similarity": 0.375,
+   "shared_sentences": []
+  },
   {
    "a": "CF88:ART.101",
    "b": "CF88:ART.104",
@@ -28,6 +42,27 @@
    "b": "CF88:ART.105:INC.III",
    "section": "o_que_diz",
    "similarity": 0.435,
+   "shared_sentences": []
+  },
+  {
+   "a": "CF88:ART.103-B",
+   "b": "CF88:ART.130-A",
+   "section": "o_que_diz",
+   "similarity": 0.38,
+   "shared_sentences": []
+  },
+  {
+   "a": "CF88:ART.103-B:PAR.4",
+   "b": "CF88:ART.130-A:PAR.2",
+   "section": "o_que_diz",
+   "similarity": 0.636,
+   "shared_sentences": []
+  },
+  {
+   "a": "CF88:ART.103-B:PAR.4",
+   "b": "CF88:ART.130-A:PAR.2",
+   "section": "o_que_significa",
+   "similarity": 0.413,
    "shared_sentences": []
   },
   {
@@ -651,7 +686,20 @@
    "risk_reasons": [],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
-   "findings": [],
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.362",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "DUPLICATION",
+     "section": "exemplo_pratico",
+     "detail": "CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.375",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
    "unresolved": 0
   },
   {
@@ -983,7 +1031,14 @@
    ],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
-   "findings": [],
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "CF88:ART.103-B x CF88:ART.130-A sim=0.38",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
    "unresolved": 0
   },
   {
@@ -998,7 +1053,20 @@
    ],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
-   "findings": [],
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.636",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_significa",
+     "detail": "CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
    "unresolved": 0
   },
   {
@@ -1609,6 +1677,878 @@
    "risk_reasons": [
     "JURISPRUDENCE_CONTEXT_ONLY: Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUD",
     "SENSITIVE_THEME: crimes"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.126",
+   "explanation_id": "ENTENDA/CF88:ART.126/BASE/1",
+   "title": "Art. 126 — Varas agrárias",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.127",
+   "explanation_id": "ENTENDA/CF88:ART.127/BASE/1",
+   "title": "Art. 127 — Ministério Público",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.127:PAR.1/BASE/1",
+   "title": "Art. 127, § 1º — Princípios institucionais do Ministério Público",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.127:PAR.2/BASE/1",
+   "title": "Art. 127, § 2º — Autonomia do Ministério Público",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.127:PAR.3/BASE/1",
+   "title": "Art. 127, §§ 3º, 4º, 5º e 6º — Orçamento do Ministério Público",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.362",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "DUPLICATION",
+     "section": "exemplo_pratico",
+     "detail": "CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.375",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.128",
+   "explanation_id": "ENTENDA/CF88:ART.128/BASE/1",
+   "title": "Art. 128 — Estrutura do Ministério Público",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.128:PAR.1/BASE/1",
+   "title": "Art. 128, §§ 1º e 2º — Procurador-Geral da República",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.128:PAR.3/BASE/1",
+   "title": "Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são de"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "explanation_id": "ENTENDA/CF88:ART.128:PAR.5/BASE/1",
+   "title": "Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "explanation_id": "ENTENDA/CF88:ART.129/BASE/1",
+   "title": "Art. 129 — Funções institucionais do Ministério Público",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.129:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.129:INC.I/BASE/1",
+   "title": "Art. 129, inciso I — Ação penal pública",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.129:INC.III",
+   "explanation_id": "ENTENDA/CF88:ART.129:INC.III/BASE/1",
+   "title": "Art. 129, inciso III — Inquérito civil e ação civil pública",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.129:INC.VII",
+   "explanation_id": "ENTENDA/CF88:ART.129:INC.VII/BASE/1",
+   "title": "Art. 129, inciso VII — Controle externo da atividade policial",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.129:INC.IX",
+   "explanation_id": "ENTENDA/CF88:ART.129:INC.IX/BASE/1",
+   "title": "Art. 129, inciso IX — Outras funções e vedação de representação judicial",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.129:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.129:PAR.2/BASE/1",
+   "title": "Art. 129, § 2º — Exercício por integrantes da carreira e residência",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.130",
+   "explanation_id": "ENTENDA/CF88:ART.130/BASE/1",
+   "title": "Art. 130 — Ministério Público junto aos Tribunais de Contas",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "explanation_id": "ENTENDA/CF88:ART.130-A/BASE/1",
+   "title": "Art. 130-A — Conselho Nacional do Ministério Público",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "CF88:ART.103-B x CF88:ART.130-A sim=0.38",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.130-A:PAR.2/BASE/1",
+   "title": "Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.636",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_significa",
+     "detail": "CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413",
+     "resolution": "Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.131",
+   "explanation_id": "ENTENDA/CF88:ART.131/BASE/1",
+   "title": "Art. 131 — Advocacia-Geral da União",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.132",
+   "explanation_id": "ENTENDA/CF88:ART.132/BASE/1",
+   "title": "Art. 132 — Procuradores dos Estados e do Distrito Federal",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.133",
+   "explanation_id": "ENTENDA/CF88:ART.133/BASE/1",
+   "title": "Art. 133 — Advocacia",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: invioláv"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.134",
+   "explanation_id": "ENTENDA/CF88:ART.134/BASE/1",
+   "title": "Art. 134 — Defensoria Pública",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.134:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.134:PAR.2/BASE/1",
+   "title": "Art. 134, §§ 2º e 3º — Autonomia das Defensorias Públicas",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.135",
+   "explanation_id": "ENTENDA/CF88:ART.135/BASE/1",
+   "title": "Art. 135 — Remuneração das carreiras jurídicas",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.136",
+   "explanation_id": "ENTENDA/CF88:ART.136/BASE/1",
+   "title": "Art. 136 — Estado de defesa",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: prisão"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.136:PAR.1/BASE/1",
+   "title": "Art. 136, § 1º — Medidas do estado de defesa",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.136:PAR.3/BASE/1",
+   "title": "Art. 136, § 3º — Garantias do preso no estado de defesa",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: prisão"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.136:PAR.4/BASE/1",
+   "title": "Art. 136, §§ 4º, 5º, 6º e 7º — Controle do estado de defesa pelo Congresso",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.137",
+   "explanation_id": "ENTENDA/CF88:ART.137/BASE/1",
+   "title": "Art. 137 — Estado de sítio",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.138",
+   "explanation_id": "ENTENDA/CF88:ART.138/BASE/1",
+   "title": "Art. 138 — Decreto e funcionamento no estado de sítio",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.138:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.138:PAR.1/BASE/1",
+   "title": "Art. 138, § 1º — Duração do estado de sítio",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.139",
+   "explanation_id": "ENTENDA/CF88:ART.139/BASE/1",
+   "title": "Art. 139 — Medidas no estado de sítio por comoção grave",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.140",
+   "explanation_id": "ENTENDA/CF88:ART.140/BASE/1",
+   "title": "Art. 140 — Comissão de acompanhamento",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.141",
+   "explanation_id": "ENTENDA/CF88:ART.141/BASE/1",
+   "title": "Art. 141 — Fim dos estados de defesa e de sítio",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.142",
+   "explanation_id": "ENTENDA/CF88:ART.142/BASE/1",
+   "title": "Art. 142 — Forças Armadas",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "INTERPRETIVE_CONTROVERSY: \"objeto de debate\""
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.142:PAR.2/BASE/1",
+   "title": "Art. 142, § 2º — Habeas corpus e punições disciplinares militares",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.142:PAR.3/BASE/1",
+   "title": "Art. 142, § 3º — Regime jurídico dos militares",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.143",
+   "explanation_id": "ENTENDA/CF88:ART.143/BASE/1",
+   "title": "Art. 143 — Serviço militar",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.144",
+   "explanation_id": "ENTENDA/CF88:ART.144/BASE/1",
+   "title": "Art. 144 — Segurança pública",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.144:PAR.1/BASE/1",
+   "title": "Art. 144, § 1º — Polícia federal",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.144:PAR.4/BASE/1",
+   "title": "Art. 144, § 4º — Polícias civis",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.5",
+   "explanation_id": "ENTENDA/CF88:ART.144:PAR.5/BASE/1",
+   "title": "Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.8",
+   "explanation_id": "ENTENDA/CF88:ART.144:PAR.8/BASE/1",
+   "title": "Art. 144, § 8º — Guardas municipais",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.145",
+   "explanation_id": "ENTENDA/CF88:ART.145/BASE/1",
+   "title": "Art. 145 — Espécies de tributos e princípios do sistema",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "explanation_id": "ENTENDA/CF88:ART.145:INC.II/BASE/1",
+   "title": "Art. 145, inciso II — Taxas",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.145:PAR.1/BASE/1",
+   "title": "Art. 145, § 1º — Capacidade contributiva",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.146",
+   "explanation_id": "ENTENDA/CF88:ART.146/BASE/1",
+   "title": "Art. 146 — Papel da lei complementar tributária",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.146:INC.III",
+   "explanation_id": "ENTENDA/CF88:ART.146:INC.III/BASE/1",
+   "title": "Art. 146, inciso III — Normas gerais de legislação tributária",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.146:PAR.1/BASE/1",
+   "title": "Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "explanation_id": "ENTENDA/CF88:ART.146-A/BASE/1",
+   "title": "Art. 146-A — Tributação e concorrência",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.147",
+   "explanation_id": "ENTENDA/CF88:ART.147/BASE/1",
+   "title": "Art. 147 — Impostos nos Territórios e no Distrito Federal",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.148",
+   "explanation_id": "ENTENDA/CF88:ART.148/BASE/1",
+   "title": "Art. 148 — Empréstimos compulsórios",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.149",
+   "explanation_id": "ENTENDA/CF88:ART.149/BASE/1",
+   "title": "Art. 149 — Contribuições especiais",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.149:PAR.1/BASE/1",
+   "title": "Art. 149, §§ 1º, 1º-A, 1º-B e 1º-C — Contribuição previdenciária dos servidores",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.149:PAR.2/BASE/1",
+   "title": "Art. 149, § 2º — Incidência das contribuições sociais e de intervenção",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.149-A",
+   "explanation_id": "ENTENDA/CF88:ART.149-A/BASE/1",
+   "title": "Art. 149-A — Contribuição de iluminação pública",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "explanation_id": "ENTENDA/CF88:ART.149-B/BASE/1",
+   "title": "Art. 149-B — Regras comuns ao IBS e à CBS",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "explanation_id": "ENTENDA/CF88:ART.149-C/BASE/1",
+   "title": "Art. 149-C — Tributação das compras públicas",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TRANSITION_OR_TEMPORAL: transicao/nota temporal"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.150:INC.I/BASE/1",
+   "title": "Art. 150, inciso I — Legalidade tributária",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:INC.III",
+   "explanation_id": "ENTENDA/CF88:ART.150:INC.III/BASE/1",
+   "title": "Art. 150, inciso III — Irretroatividade e anterioridade",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:INC.IV",
+   "explanation_id": "ENTENDA/CF88:ART.150:INC.IV/BASE/1",
+   "title": "Art. 150, inciso IV — Vedação ao confisco",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "explanation_id": "ENTENDA/CF88:ART.150:INC.VI/BASE/1",
+   "title": "Art. 150, inciso VI — Imunidades tributárias",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades (por exemplo, livros digitais e imóveis alugados de entidades imunes) é tema da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.150:PAR.1/BASE/1",
+   "title": "Art. 150, § 1º — Exceções à anterioridade",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.150:PAR.2/BASE/1",
+   "title": "Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A extensão da imunidade recíproca a outras empresas estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.6",
+   "explanation_id": "ENTENDA/CF88:ART.150:PAR.6/BASE/1",
+   "title": "Art. 150, § 6º — Lei específica para benefícios fiscais",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "explanation_id": "ENTENDA/CF88:ART.150:PAR.7/BASE/1",
+   "title": "Art. 150, § 7º — Substituição tributária para frente",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
    ],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",

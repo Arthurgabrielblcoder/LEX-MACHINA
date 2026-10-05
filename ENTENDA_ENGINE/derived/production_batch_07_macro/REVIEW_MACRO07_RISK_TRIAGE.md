@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 104 · risco LOW 54 · MEDIUM 32 · HIGH 18
-- Prontas para revisão editorial: 104 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: DUPLICATION 24 · não resolvidos: 0
+- Explicações: 170 · risco LOW 97 · MEDIUM 45 · HIGH 28
+- Prontas para revisão editorial: 170 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: DUPLICATION 34 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -96,6 +96,56 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 125, § 2º — Controle de constitucionalidade estadual
 
 - `CF88:ART.125:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+### Art. 129 — Funções institucionais do Ministério Público
+
+- `CF88:ART.129` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+### Art. 142 — Forças Armadas
+
+- `CF88:ART.142` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "objeto de debate"
+
+### Art. 142, § 2º — Habeas corpus e punições disciplinares militares
+
+- `CF88:ART.142:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+### Art. 144, § 8º — Guardas municipais
+
+- `CF88:ART.144:PAR.8` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+### Art. 145, inciso II — Taxas
+
+- `CF88:ART.145:INC.II` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+### Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
+
+- `CF88:ART.146:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+
+### Art. 149-B — Regras comuns ao IBS e à CBS
+
+- `CF88:ART.149-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+
+### Art. 149-C — Tributação das compras públicas
+
+- `CF88:ART.149-C` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+
+### Art. 150, inciso IV — Vedação ao confisco
+
+- `CF88:ART.150:INC.IV` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+### Art. 150, § 7º — Substituição tributária para frente
+
+- `CF88:ART.150:PAR.7` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
 
 ## Risco MEDIUM
@@ -204,11 +254,14 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.103-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: sanções
+- DUPLICATION (o_que_diz: CF88:ART.103-B x CF88:ART.130-A sim=0.38) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça
 
 - `CF88:ART.103-B:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: sanções
+- DUPLICATION (o_que_diz: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.636) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+- DUPLICATION (o_que_significa: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 105 — Competências do Superior Tribunal de Justiça
 
@@ -262,6 +315,74 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.125:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUD; SENSITIVE_THEME: crimes
+
+### Art. 128 — Estrutura do Ministério Público
+
+- `CF88:ART.128` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: perder o cargo
+
+### Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
+
+- `CF88:ART.128:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são de
+
+### Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público
+
+- `CF88:ART.128:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: perder o cargo
+
+### Art. 130 — Ministério Público junto aos Tribunais de Contas
+
+- `CF88:ART.130` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA.
+
+### Art. 130-A — Conselho Nacional do Ministério Público
+
+- `CF88:ART.130-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: sanções
+- DUPLICATION (o_que_diz: CF88:ART.103-B x CF88:ART.130-A sim=0.38) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público
+
+- `CF88:ART.130-A:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: sanções
+- DUPLICATION (o_que_diz: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.636) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+- DUPLICATION (o_que_significa: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 133 — Advocacia
+
+- `CF88:ART.133` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: invioláv
+
+### Art. 136 — Estado de defesa
+
+- `CF88:ART.136` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: prisão
+
+### Art. 136, § 3º — Garantias do preso no estado de defesa
+
+- `CF88:ART.136:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: prisão
+
+### Art. 139 — Medidas no estado de sítio por comoção grave
+
+- `CF88:ART.139` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: crimes
+
+### Art. 142, § 3º — Regime jurídico dos militares
+
+- `CF88:ART.142:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: prerrogativ
+
+### Art. 150, inciso VI — Imunidades tributárias
+
+- `CF88:ART.150:INC.VI` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades (por exemplo, livros digitais e imóveis alugados de entidades imunes) é tema da camada JURISPRUDÊNCIA.
+
+### Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca
+
+- `CF88:ART.150:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A extensão da imunidade recíproca a outras empresas estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA.
 
 ## Risco LOW
 
@@ -389,6 +510,8 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.99:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
+- DUPLICATION (o_que_diz: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.362) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+- DUPLICATION (exemplo_pratico: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.375) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 100, §§ 3º e 4º — Obrigações de pequeno valor
 
@@ -555,4 +678,221 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.123` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 - DUPLICATION (o_que_diz: CF88:ART.104 x CF88:ART.123 sim=0.373) → Paralelismo estrutural (macro 07): os artigos comparados usam a mesma formula constitucional (lista de orgaos, composicao de tribunal ou cabimento de recurso) e o resumo acompanha essa formula; conteudo proprio conferido, sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 126 — Varas agrárias
+
+- `CF88:ART.126` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 127 — Ministério Público
+
+- `CF88:ART.127` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 127, § 1º — Princípios institucionais do Ministério Público
+
+- `CF88:ART.127:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 127, § 2º — Autonomia do Ministério Público
+
+- `CF88:ART.127:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 127, §§ 3º, 4º, 5º e 6º — Orçamento do Ministério Público
+
+- `CF88:ART.127:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- DUPLICATION (o_que_diz: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.362) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+- DUPLICATION (exemplo_pratico: CF88:ART.99:PAR.3 x CF88:ART.127:PAR.3 sim=0.375) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 128, §§ 1º e 2º — Procurador-Geral da República
+
+- `CF88:ART.128:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 129, inciso I — Ação penal pública
+
+- `CF88:ART.129:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 129, inciso III — Inquérito civil e ação civil pública
+
+- `CF88:ART.129:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 129, inciso VII — Controle externo da atividade policial
+
+- `CF88:ART.129:INC.VII` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 129, inciso IX — Outras funções e vedação de representação judicial
+
+- `CF88:ART.129:INC.IX` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 129, § 2º — Exercício por integrantes da carreira e residência
+
+- `CF88:ART.129:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 131 — Advocacia-Geral da União
+
+- `CF88:ART.131` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 132 — Procuradores dos Estados e do Distrito Federal
+
+- `CF88:ART.132` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 134 — Defensoria Pública
+
+- `CF88:ART.134` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 134, §§ 2º e 3º — Autonomia das Defensorias Públicas
+
+- `CF88:ART.134:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 135 — Remuneração das carreiras jurídicas
+
+- `CF88:ART.135` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 136, § 1º — Medidas do estado de defesa
+
+- `CF88:ART.136:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 136, §§ 4º, 5º, 6º e 7º — Controle do estado de defesa pelo Congresso
+
+- `CF88:ART.136:PAR.4` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 137 — Estado de sítio
+
+- `CF88:ART.137` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 138 — Decreto e funcionamento no estado de sítio
+
+- `CF88:ART.138` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 138, § 1º — Duração do estado de sítio
+
+- `CF88:ART.138:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 140 — Comissão de acompanhamento
+
+- `CF88:ART.140` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 141 — Fim dos estados de defesa e de sítio
+
+- `CF88:ART.141` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 143 — Serviço militar
+
+- `CF88:ART.143` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 144 — Segurança pública
+
+- `CF88:ART.144` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 144, § 1º — Polícia federal
+
+- `CF88:ART.144:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 144, § 4º — Polícias civis
+
+- `CF88:ART.144:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais
+
+- `CF88:ART.144:PAR.5` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 145 — Espécies de tributos e princípios do sistema
+
+- `CF88:ART.145` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 145, § 1º — Capacidade contributiva
+
+- `CF88:ART.145:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 146 — Papel da lei complementar tributária
+
+- `CF88:ART.146` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 146, inciso III — Normas gerais de legislação tributária
+
+- `CF88:ART.146:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 146-A — Tributação e concorrência
+
+- `CF88:ART.146-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 147 — Impostos nos Territórios e no Distrito Federal
+
+- `CF88:ART.147` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 148 — Empréstimos compulsórios
+
+- `CF88:ART.148` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 149 — Contribuições especiais
+
+- `CF88:ART.149` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 149, §§ 1º, 1º-A, 1º-B e 1º-C — Contribuição previdenciária dos servidores
+
+- `CF88:ART.149:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 149, § 2º — Incidência das contribuições sociais e de intervenção
+
+- `CF88:ART.149:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 149-A — Contribuição de iluminação pública
+
+- `CF88:ART.149-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 150, inciso I — Legalidade tributária
+
+- `CF88:ART.150:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 150, inciso III — Irretroatividade e anterioridade
+
+- `CF88:ART.150:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 150, § 1º — Exceções à anterioridade
+
+- `CF88:ART.150:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 150, § 6º — Lei específica para benefícios fiscais
+
+- `CF88:ART.150:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
 

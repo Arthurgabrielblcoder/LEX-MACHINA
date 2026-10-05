@@ -1,6 +1,6 @@
 # MACRO07 — REVISÃO HUMANA COMPLETA (fila D)
 
-Lote `ENTENDA_CF_MACRO_BATCH_07` · 18 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
+Lote `ENTENDA_CF_MACRO_BATCH_07` · 28 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
 
 ## Índice
 
@@ -22,6 +22,16 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 18 itens · nenhum aprovado. Só itens com L
 16. [B] `CF88:ART.114:PAR.3` — Art. 114, § 3º — Greve em atividade essencial · JUDICIAL_REVIEW_ANNOTATED
 17. [B] `CF88:ART.124` — Art. 124 — Competência da Justiça Militar · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
 18. [B] `CF88:ART.125:PAR.2` — Art. 125, § 2º — Controle de constitucionalidade estadual · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+19. [C] `CF88:ART.129` — Art. 129 — Funções institucionais do Ministério Público · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+20. [C] `CF88:ART.142` — Art. 142 — Forças Armadas · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, INTERPRETIVE_CONTROVERSY
+21. [C] `CF88:ART.142:PAR.2` — Art. 142, § 2º — Habeas corpus e punições disciplinares militares · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+22. [C] `CF88:ART.144:PAR.8` — Art. 144, § 8º — Guardas municipais · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+23. [C] `CF88:ART.145:INC.II` — Art. 145, inciso II — Taxas · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+24. [C] `CF88:ART.146:PAR.1` — Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação · TRANSITION_OR_TEMPORAL
+25. [C] `CF88:ART.149-B` — Art. 149-B — Regras comuns ao IBS e à CBS · TRANSITION_OR_TEMPORAL
+26. [C] `CF88:ART.149-C` — Art. 149-C — Tributação das compras públicas · TRANSITION_OR_TEMPORAL
+27. [C] `CF88:ART.150:INC.IV` — Art. 150, inciso IV — Vedação ao confisco · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+28. [C] `CF88:ART.150:PAR.7` — Art. 150, § 7º — Substituição tributária para frente · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
 
 ## 1. Art. 82 — Duração e início do mandato presidencial
 
@@ -1040,6 +1050,543 @@ O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Fed
 **CAMADA EXTERNA**
 
 - O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 19. Art. 129 — Funções institucionais do Ministério Público
+
+- `CF88:ART.129` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.129/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Dispositivos citados (runtime): `ART.129:INC.IX` exercer outras funções que lhe forem conferidas, desde que compatíveis com sua finalidade, sendo-lhe vedada a representação judicial e a consultoria jurídica…
+
+**Lei Seca**
+
+- `CF88:ART.129:CAPUT`: São funções institucionais do Ministério Público:
+- `CF88:ART.129:INC.I`: promover, privativamente, a ação penal pública, na forma da lei;
+- `CF88:ART.129:INC.II`: zelar pelo efetivo respeito dos poderes públicos e dos serviços de relevância pública aos direitos assegurados nesta Constituição, promovendo as medidas necessárias a sua garantia;
+- `CF88:ART.129:INC.III`: promover o inquérito civil e a ação civil pública, para a proteção do patrimônio público e social, do meio ambiente e de outros interesses difusos e coletivos;
+- `CF88:ART.129:INC.IV`: promover a ação de inconstitucionalidade ou representação para fins de intervenção da União e dos Estados, nos casos previstos nesta Constituição;
+- `CF88:ART.129:INC.V`: defender judicialmente os direitos e interesses das populações indígenas;
+- `CF88:ART.129:INC.VI`: expedir notificações nos procedimentos administrativos de sua competência, requisitando informações e documentos para instruí-los, na forma da lei complementar respectiva;
+- `CF88:ART.129:INC.VII`: exercer o controle externo da atividade policial, na forma da lei complementar mencionada no artigo anterior;
+- `CF88:ART.129:INC.VIII`: requisitar diligências investigatórias e a instauração de inquérito policial, indicados os fundamentos jurídicos de suas manifestações processuais;
+- `CF88:ART.129:INC.IX`: exercer outras funções que lhe forem conferidas, desde que compatíveis com sua finalidade, sendo-lhe vedada a representação judicial e a consultoria jurídica de entidades públicas.
+- `CF88:ART.129:PAR.1`: A legitimação do Ministério Público para as ações civis previstas neste artigo não impede a de terceiros, nas mesmas hipóteses, segundo o disposto nesta Constituição e na lei.
+- `CF88:ART.129:PAR.2`: As funções do Ministério Público só podem ser exercidas por integrantes da carreira, que deverão residir na comarca da respectiva lotação, salvo autorização do chefe da instituição.
+- `CF88:ART.129:PAR.3`: O ingresso na carreira do Ministério Público far-se-á mediante concurso público de provas e títulos, assegurada a participação da Ordem dos Advogados do Brasil em sua realização, exigindo-se do bacharel em direito, no mínimo, três anos de atividade jurídica e observando-se, nas nomeações, a ordem de classificação.
+- `CF88:ART.129:PAR.4`: Aplica-se ao Ministério Público, no que couber, o disposto no art. 93.
+- `CF88:ART.129:PAR.5`: A distribuição de processos no Ministério Público será imediata.
+
+**O QUE DIZ**
+
+O art. 129 lista as funções institucionais do Ministério Público. Entre elas estão promover privativamente a ação penal pública, zelar pelo respeito dos poderes públicos aos direitos constitucionais, promover o inquérito civil e a ação civil pública. Também estão propor ação de inconstitucionalidade e representação para intervenção, defender os direitos das populações indígenas, expedir notificações e requisitar informações, exercer o controle externo da atividade policial e requisitar diligências e inquérito policial. Os parágrafos tratam da legitimação de terceiros, da exigência de carreira e residência, do concurso, da aplicação do art. 93 e da distribuição imediata de processos.
+
+**O QUE SIGNIFICA**
+
+O artigo mostra que o Ministério Público atua em várias frentes.
+
+Na área penal, é o titular da ação penal pública e pode requisitar diligências e a instauração de inquérito policial.
+
+Na área civil, defende interesses coletivos, como o meio ambiente e o patrimônio público, por meio do inquérito civil e da ação civil pública.
+
+Há ainda funções de fiscalização: controle externo da polícia e zelo pelo respeito dos poderes públicos aos direitos da Constituição.
+
+O § 1º esclarece que a legitimação do Ministério Público para as ações civis não exclui a de outros legitimados, segundo a Constituição e a lei.
+
+**EXEMPLO PRÁTICO**
+
+Um hospital público deixa de atender pacientes por falta de medicamentos. O Ministério Público instaura inquérito civil, requisita documentos e pode propor ação civil pública para obrigar o poder público a regularizar o atendimento.
+
+**ATENÇÃO**
+
+O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ação penal pública*: ação penal proposta pelo Estado, por meio do Ministério Público.
+- *Inquérito civil*: investigação do Ministério Público para apurar lesão a interesses coletivos.
+- *Interesses difusos*: interesses que pertencem a um número indeterminado de pessoas, como o meio ambiente.
+
+**CAMADA EXTERNA**
+
+- O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "o inquérito civil e a ação civil pública" — 
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_significa: "a legitimação do ministério público para as ações" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 20. Art. 142 — Forças Armadas
+
+- `CF88:ART.142` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.142/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "objeto de debate"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "objeto de debate"
+
+**Lei Seca**
+
+- `CF88:ART.142:CAPUT`: As Forças Armadas, constituídas pela Marinha, pelo Exército e pela Aeronáutica, são instituições nacionais permanentes e regulares, organizadas com base na hierarquia e na disciplina, sob a autoridade suprema do Presidente da República, e destinam-se à defesa da Pátria, à garantia dos poderes constitucionais e, por iniciativa de qualquer destes, da lei e da ordem.
+- `CF88:ART.142:PAR.1`: Lei complementar estabelecerá as normas gerais a serem adotadas na organização, no preparo e no emprego das Forças Armadas.
+- `CF88:ART.142:PAR.2`: Não caberá habeas corpus em relação a punições disciplinares militares.
+- `CF88:ART.142:PAR.3`: Os membros das Forças Armadas são denominados militares, aplicando-se-lhes, além das que vierem a ser fixadas em lei, as seguintes disposições:
+- `CF88:ART.142:PAR.3:INC.I`: as patentes, com prerrogativas, direitos e deveres a elas inerentes, são conferidas pelo Presidente da República e asseguradas em plenitude aos oficiais da ativa, da reserva ou reformados, sendo-lhes privativos os títulos e postos militares e, juntamente com os demais membros, o uso dos uniformes das Forças Armadas;
+- `CF88:ART.142:PAR.3:INC.II`: o militar em atividade que tomar posse em cargo ou emprego público civil permanente, ressalvada a hipótese prevista no art. 37, inciso XVI, alínea c, será transferido para a reserva, nos termos da lei;
+- `CF88:ART.142:PAR.3:INC.III`: o militar da ativa que, de acordo com a lei, tomar posse em cargo, emprego ou função pública civil temporária, não eletiva, ainda que da administração indireta, ressalvada a hipótese prevista no art. 37, inciso XVI, alínea c, ficará agregado ao respectivo quadro e somente poderá, enquanto permanecer nessa situação, ser promovido por antiguidade, contando-se-lhe o tempo de serviço apenas para aquela promoção e transferência para a reserva, sendo depois de dois anos de afastamento, contínuos ou não, transferido para a reserva, nos termos da lei;
+- `CF88:ART.142:PAR.3:INC.IV`: ao militar são proibidas a sindicalização e a greve;
+- `CF88:ART.142:PAR.3:INC.V`: o militar, enquanto em serviço ativo, não pode estar filiado a partidos políticos;
+- `CF88:ART.142:PAR.3:INC.VI`: o oficial só perderá o posto e a patente se for julgado indigno do oficialato ou com ele incompatível, por decisão de tribunal militar de caráter permanente, em tempo de paz, ou de tribunal especial, em tempo de guerra;
+- `CF88:ART.142:PAR.3:INC.VII`: o oficial condenado na justiça comum ou militar à pena privativa de liberdade superior a dois anos, por sentença transitada em julgado, será submetido ao julgamento previsto no inciso anterior;
+- `CF88:ART.142:PAR.3:INC.VIII`: aplica-se aos militares o disposto no art. 7º, incisos VIII, XII, XVII, XVIII, XIX e XXV, e no art. 37, incisos XI,XIII, XIV e XV, bem como, na forma da lei e com prevalência da atividade militar, no art. 37, inciso XVI, alínea c;
+- `CF88:ART.142:PAR.3:INC.IX`: (Revogado).
+- `CF88:ART.142:PAR.3:INC.X`: a lei disporá sobre o ingresso nas Forças Armadas, os limites de idade, a estabilidade e outras condições de transferência do militar para a inatividade, os direitos, os deveres, a remuneração, as prerrogativas e outras situações especiais dos militares, consideradas as peculiaridades de suas atividades, inclusive aquelas cumpridas por força de compromissos internacionais e de guerra.
+
+**O QUE DIZ**
+
+O art. 142 define as Forças Armadas, que reúnem Marinha, Exército e Aeronáutica. O texto as qualifica como instituições nacionais, permanentes e regulares, organizadas sobre hierarquia e disciplina e submetidas à autoridade suprema do Presidente da República. Destinam-se a defender a Pátria, a garantir os poderes constitucionais e, quando um desses poderes tomar a iniciativa, a garantir a lei e a ordem. Os parágrafos tratam da lei complementar de organização, do habeas corpus nas punições disciplinares e do regime jurídico dos militares.
+
+**O QUE SIGNIFICA**
+
+O texto qualifica as Forças Armadas como permanentes e regulares e as coloca sob a autoridade suprema do Presidente.
+
+A hierarquia e a disciplina são a base da organização.
+
+O texto indica três destinações: defender o país, garantir os poderes constitucionais e, quando um desses poderes tomar a iniciativa, garantir a lei e a ordem.
+
+A lei complementar define normas gerais de organização, preparo e emprego.
+
+**EXEMPLO PRÁTICO**
+
+Diante de grave perturbação da ordem em uma cidade, um dos poderes constitucionais pede o emprego das Forças Armadas para garantia da lei e da ordem, nos termos da lei complementar.
+
+**ATENÇÃO**
+
+O alcance da expressão garantia dos poderes constitucionais é objeto de debate e não deve ser deduzido de leitura isolada do caput. A relação das Forças Armadas com os Poderes é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Hierarquia*: ordenação de autoridade por graus.
+- *Garantia da lei e da ordem*: emprego excepcional das Forças Armadas na segurança interna, por iniciativa de um dos poderes.
+- *Autoridade suprema*: posição mais alta de comando.
+
+**CAMADA EXTERNA**
+
+- A interpretação do caput sobre o papel das Forças Armadas em relação aos Poderes é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+- A lei complementar sobre organização, preparo e emprego das Forças Armadas fica na camada de legislação correlata.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 21. Art. 142, § 2º — Habeas corpus e punições disciplinares militares
+
+- `CF88:ART.142:PAR.2` · DEVICE · risco HIGH · ENTENDA/CF88:ART.142:PAR.2/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+**Lei Seca**
+
+- `CF88:ART.142:PAR.2`: Não caberá habeas corpus em relação a punições disciplinares militares.
+
+**O QUE DIZ**
+
+O § 2º estabelece que não cabe habeas corpus em relação a punições disciplinares militares.
+
+**O QUE SIGNIFICA**
+
+A disciplina é a base da organização militar. O parágrafo afasta o habeas corpus, a ação que protege a liberdade de locomoção, quando a restrição decorre de punição disciplinar.
+
+A regra limita, para esse caso, o direito previsto no art. 5º, LXVIII. Ela se dirige às punições disciplinares, e não a prisões por crime.
+
+A forma de questionar uma punição disciplinar ilegal fica, então, fora do habeas corpus, nos termos da lei e da camada JURISPRUDÊNCIA.
+
+**EXEMPLO PRÁTICO**
+
+Um soldado recebe punição de detenção disciplinar por chegar atrasado ao quartel. Pelo texto, ele não pode usar o habeas corpus para discutir se mereceu a punição.
+
+**ATENÇÃO**
+
+O alcance da vedação não deve ser deduzido apenas do texto: a possibilidade de discutir pelo habeas corpus a legalidade da punição, como a competência de quem a aplicou, é definida pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Habeas corpus*: ação que protege a liberdade de locomoção contra ilegalidade ou abuso.
+- *Punição disciplinar*: sanção administrativa por falta no serviço, diferente da pena por crime.
+
+**CAMADA EXTERNA**
+
+- A distinção entre o mérito da punição e os pressupostos de legalidade examináveis em habeas corpus é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "habeas corpus em relação a punições disciplinares militares" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 22. Art. 144, § 8º — Guardas municipais
+
+- `CF88:ART.144:PAR.8` · DEVICE · risco HIGH · ENTENDA/CF88:ART.144:PAR.8/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Vigência (fonte canônica): Vide Lei n. 13.022, de 2014
+
+**Lei Seca**
+
+- `CF88:ART.144:PAR.8`: Os Municípios poderão constituir guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme dispuser a lei.
+
+**O QUE DIZ**
+
+O § 8º permite que os Municípios criem guardas municipais para proteger os próprios bens, serviços e instalações, conforme dispuser a lei.
+
+**O QUE SIGNIFICA**
+
+A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.
+
+A finalidade descrita no texto é a proteção dos bens, serviços e instalações do próprio Município.
+
+Os detalhes de organização e as atribuições da guarda dependem da lei.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cria guarda municipal para proteger escolas, postos de saúde e praças públicas.
+
+**ATENÇÃO**
+
+O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações não deve ser deduzido apenas do texto do parágrafo: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Guarda municipal*: corporação criada pelo Município para proteger seus bens, serviços e instalações.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica remete à Lei n. 13.022, de 2014 (estatuto das guardas municipais), na camada de legislação correlata.
+- A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "bens serviços e instalações conforme dispuser a lei" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 23. Art. 145, inciso II — Taxas
+
+- `CF88:ART.145:INC.II` · ITEM · risco HIGH · ENTENDA/CF88:ART.145:INC.II/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+**Lei Seca**
+
+- `CF88:ART.145:INC.II`: taxas, em razão do exercício do poder de polícia ou pela utilização, efetiva ou potencial, de serviços públicos específicos e divisíveis, prestados ao contribuinte ou postos a sua disposição;
+
+**O QUE DIZ**
+
+O inciso II autoriza a cobrança de taxas em duas situações: pelo exercício do poder de polícia, ou pelo uso, efetivo ou potencial, de serviço público específico e divisível prestado ao contribuinte ou colocado à sua disposição.
+
+**O QUE SIGNIFICA**
+
+A taxa depende de uma atuação do Estado ligada ao contribuinte. O texto indica duas situações.
+
+A primeira é o poder de polícia: a fiscalização que o Estado exerce sobre atividades particulares, como o licenciamento de um estabelecimento.
+
+A segunda é o serviço público específico e divisível, que pode ser medido por usuário. Basta que o serviço esteja à disposição: a utilização pode ser efetiva ou potencial.
+
+Serviços prestados a toda a coletividade, sem possibilidade de individualizar o usuário, não se encaixam nessa descrição.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cobra taxa pela coleta de lixo das residências. O serviço está à disposição de cada imóvel, mesmo que o morador fique alguns dias sem colocar o lixo para fora.
+
+**ATENÇÃO**
+
+Quais serviços são específicos e divisíveis não deve ser deduzido apenas do texto; a classificação de cada serviço é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Poder de polícia*: atividade do Estado de fiscalizar e limitar atividades particulares em favor do interesse público.
+- *Serviço divisível*: serviço cuja utilização pode ser medida para cada usuário.
+- *Utilização potencial*: serviço posto à disposição, ainda que o contribuinte não o use.
+
+**CAMADA EXTERNA**
+
+- A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 24. Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
+
+- `CF88:ART.146:PAR.1` · BLOCK · risco HIGH · ENTENDA/CF88:ART.146:PAR.1/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Vigência (fonte canônica): Incluido pela Emenda Constitucional n. 42, de 19.12.2003; Incluido pela Emenda Constitucional n. 132, de 2023
+- Dispositivos citados (runtime): `ART.146:INC.III` estabelecer normas gerais em matéria de legislação tributária, especialmente sobre: · `ART.146:PAR.2` É facultado ao optante pelo regime único de que trata o § 1º apurar e recolher os tributos previstos nos arts. 156-A e 195, V, nos termos estabelecidos nesses…
+
+**Lei Seca**
+
+- `CF88:ART.146:PAR.1`: A lei complementar de que trata o inciso III, d, também poderá instituir um regime único de arrecadação dos impostos e contribuições da União, dos Estados, do Distrito Federal e dos Municípios, observado que:
+- `CF88:ART.146:PAR.1:INC.I`: será opcional para o contribuinte;
+- `CF88:ART.146:PAR.1:INC.II`: poderão ser estabelecidas condições de enquadramento diferenciadas por Estado;
+- `CF88:ART.146:PAR.1:INC.III`: o recolhimento será unificado e centralizado e a distribuição da parcela de recursos pertencentes aos respectivos entes federados será imediata, vedada qualquer retenção ou condicionamento;
+- `CF88:ART.146:PAR.1:INC.IV`: a arrecadação, a fiscalização e a cobrança poderão ser compartilhadas pelos entes federados, adotado cadastro nacional único de contribuintes.
+- `CF88:ART.146:PAR.2`: É facultado ao optante pelo regime único de que trata o § 1º apurar e recolher os tributos previstos nos arts. 156-A e 195, V, nos termos estabelecidos nesses artigos, hipótese em que as parcelas a eles relativas não serão cobradas pelo regime único.
+- `CF88:ART.146:PAR.3`: Na hipótese de o recolhimento dos tributos previstos nos arts. 156-A e 195, V, ser realizado por meio do regime único de que trata o § 1º, enquanto perdurar a opção:
+- `CF88:ART.146:PAR.3:INC.I`: não será permitida a apropriação de créditos dos tributos previstos nos arts. 156-A e 195, V, pelo contribuinte optante pelo regime único; e
+- `CF88:ART.146:PAR.3:INC.II`: será permitida a apropriação de créditos dos tributos previstos nos arts. 156-A e 195, V, pelo adquirente não optante pelo regime único de que trata o § 1º de bens materiais ou imateriais, inclusive direitos, e de serviços do optante, em montante equivalente ao cobrado por meio do regime único.
+
+**O QUE DIZ**
+
+O § 1º permite que a lei complementar do inciso III, d, institua um regime único para arrecadar impostos e contribuições federais, estaduais, distritais e municipais. Esse regime é opcional para o contribuinte, admite condições de enquadramento diferentes por Estado, tem recolhimento unificado e centralizado com repasse imediato aos entes e permite fiscalização e cobrança compartilhadas, com cadastro nacional único. O § 2º permite que o optante recolha fora do regime os tributos dos arts. 156-A e 195, V, e o § 3º regula os créditos desses tributos quando recolhidos pelo regime único.
+
+**O QUE SIGNIFICA**
+
+O regime único permite que micro e pequenas empresas recolham vários tributos em um só recolhimento.
+
+O regime é uma opção, e não uma obrigação. O dinheiro arrecadado é repassado imediatamente a cada ente, sem retenção.
+
+Os §§ 2º e 3º tratam da relação com os novos tributos sobre bens e serviços. A empresa pode recolhê-los fora do regime único. Se recolher dentro dele, não aproveita créditos desses tributos, mas quem compra dela pode aproveitar crédito no valor cobrado pelo regime único.
+
+**EXEMPLO PRÁTICO**
+
+Uma pequena padaria opta pelo regime único e paga mensalmente uma guia que reúne vários tributos. Se vende para uma empresa que não está no regime, essa empresa pode aproveitar crédito equivalente ao valor recolhido pela padaria.
+
+**ATENÇÃO**
+
+Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária. A aplicação no tempo dessas regras depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Regime único de arrecadação*: sistema que reúne vários tributos em um só recolhimento.
+- *Crédito tributário*: neste contexto, valor de tributo pago antes que pode ser abatido do tributo devido depois.
+- *Optante*: contribuinte que escolheu aderir ao regime.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do regime único e as regras de transição da reforma tributária ficam na camada de legislação correlata e no ADCT.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 25. Art. 149-B — Regras comuns ao IBS e à CBS
+
+- `CF88:ART.149-B` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.149-B/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Dispositivos citados (runtime): `ART.195:INC.V` sobre bens e serviços, nos termos de lei complementar. · `ART.150:INC.VI` instituir impostos sobre: · `ART.195:PAR.7` São isentas de contribuição para a seguridade social as entidades beneficentes de assistência social que atendam às exigências estabelecidas em lei. ( Vide a…
+
+**Lei Seca**
+
+- `CF88:ART.149-B:CAPUT`: Os tributos previstos nos arts. 156-A e 195, V, observarão as mesmas regras em relação a:
+- `CF88:ART.149-B:INC.I`: fatos geradores, bases de cálculo, hipóteses de não incidência e sujeitos passivos;
+- `CF88:ART.149-B:INC.II`: imunidades;
+- `CF88:ART.149-B:INC.III`: regimes específicos, diferenciados ou favorecidos de tributação;
+- `CF88:ART.149-B:INC.IV`: regras de não cumulatividade e de creditamento.
+- `CF88:ART.149-B:PAR.UNICO`: Os tributos de que trata o caput observarão as imunidades previstas no art. 150, VI, não se aplicando a ambos os tributos o disposto no art. 195, § 7º.
+
+**O QUE DIZ**
+
+O art. 149-B determina que o imposto do art. 156-A e a contribuição do art. 195, V, observem as mesmas regras sobre fato gerador, base de cálculo, casos de não incidência e sujeitos passivos; imunidades; regimes específicos, diferenciados ou favorecidos; e não cumulatividade e creditamento. O parágrafo único manda aplicar a esses tributos as imunidades do art. 150, VI, e afasta deles o art. 195, § 7º.
+
+**O QUE SIGNIFICA**
+
+O artigo trata dos dois tributos sobre bens e serviços criados pela reforma tributária: o imposto do art. 156-A, dos Estados, do Distrito Federal e dos Municípios, e a contribuição do art. 195, V, da União.
+
+Embora pertençam a entes diferentes, os dois seguem as mesmas regras básicas. Isso significa que um mesmo fato é tratado da mesma forma pelos dois tributos.
+
+O parágrafo único aplica a ambos as imunidades gerais de impostos, mesmo à contribuição, e afasta a imunidade das entidades beneficentes prevista para as contribuições de seguridade.
+
+**EXEMPLO PRÁTICO**
+
+Uma operação que não sofre incidência do imposto do art. 156-A também não sofre incidência da contribuição do art. 195, V, porque as hipóteses de não incidência são as mesmas.
+
+**ATENÇÃO**
+
+Os tributos dos arts. 156-A e 195, V, foram criados por emenda recente. A partir de quando cada regra se aplica depende de regra de transição do ADCT, consultada na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Não cumulatividade*: técnica que permite abater o tributo pago nas etapas anteriores.
+- *Sujeito passivo*: pessoa obrigada a pagar o tributo.
+- *Imunidade*: proibição constitucional de cobrar tributo em certos casos.
+
+**CAMADA EXTERNA**
+
+- Regras de transição da reforma tributária (ADCT) e leis complementares do imposto e da contribuição sobre bens e serviços ficam na camada externa.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 26. Art. 149-C — Tributação das compras públicas
+
+- `CF88:ART.149-C` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.149-C/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Dispositivos citados (runtime): `ART.195:INC.V` sobre bens e serviços, nos termos de lei complementar.
+
+**Lei Seca**
+
+- `CF88:ART.149-C:CAPUT`: O produto da arrecadação do imposto previsto no art. 156-A e da contribuição prevista no art. 195, V, incidentes sobre operações contratadas pela administração pública direta, por autarquias e por fundações públicas, inclusive suas importações, será integralmente destinado ao ente federativo contratante, mediante redução a zero das alíquotas do imposto e da contribuição devidos aos demais entes e equivalente elevação da alíquota do tributo devido ao ente contratante.
+- `CF88:ART.149-C:PAR.1`: As operações de que trata o caput poderão ter alíquotas reduzidas de modo uniforme, nos termos de lei complementar.
+- `CF88:ART.149-C:PAR.2`: Lei complementar poderá prever hipóteses em que não se aplicará o disposto no caput e no § 1º.
+- `CF88:ART.149-C:PAR.3`: Nas importações efetuadas pela administração pública direta, por autarquias e por fundações públicas, o disposto no art. 150, VI, "a", será implementado na forma do disposto no caput e no § 1º, assegurada a igualdade de tratamento em relação às aquisições internas.
+
+**O QUE DIZ**
+
+O art. 149-C determina que a arrecadação do imposto do art. 156-A e da contribuição do art. 195, V, sobre operações contratadas pela administração pública direta, autarquias e fundações públicas, inclusive importações, seja destinada integralmente ao ente contratante. Isso ocorre pela redução a zero das alíquotas devidas aos demais entes e pela elevação equivalente da alíquota do ente contratante. Os parágrafos permitem alíquotas reduzidas de modo uniforme e hipóteses, previstas em lei complementar, em que a regra não se aplica, e tratam das importações feitas pela administração.
+
+**O QUE SIGNIFICA**
+
+Quando o poder público compra bens ou serviços, parte do preço é tributo. O artigo faz com que esse tributo fique com o próprio ente que compra.
+
+Na prática, as alíquotas dos outros entes caem a zero, e a do ente comprador sobe na mesma medida. O valor total não muda, mas o destino da arrecadação sim.
+
+A lei complementar pode prever alíquotas reduzidas para essas operações e casos em que a regra não se aplica.
+
+**EXEMPLO PRÁTICO**
+
+Um Município compra computadores para suas escolas. O tributo sobre essa compra, em vez de ser dividido entre União, Estado e Município, fica integralmente com o Município.
+
+**ATENÇÃO**
+
+A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ente contratante*: ente público que faz a compra ou contrata o serviço.
+- *Alíquota*: percentual aplicado para calcular o tributo.
+
+**CAMADA EXTERNA**
+
+- Regras de transição da reforma tributária ficam no ADCT, na camada externa.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 27. Art. 150, inciso IV — Vedação ao confisco
+
+- `CF88:ART.150:INC.IV` · ITEM · risco HIGH · ENTENDA/CF88:ART.150:INC.IV/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+**Lei Seca**
+
+- `CF88:ART.150:INC.IV`: utilizar tributo com efeito de confisco;
+
+**O QUE DIZ**
+
+O inciso IV proíbe utilizar tributo com efeito de confisco.
+
+**O QUE SIGNIFICA**
+
+O tributo não pode ser tão pesado que, na prática, retire do contribuinte o patrimônio ou a renda.
+
+A tributação é legítima, mas tem um limite. Quando a carga é tão alta que inviabiliza a atividade ou absorve a propriedade, ela passa a ter efeito de confisco, o que o texto proíbe.
+
+O texto não diz qual percentual configura confisco. É um conceito aberto, aplicado caso a caso.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei municipal fixa imposto anual sobre imóveis em valor próximo ao do próprio imóvel. Em pouco tempo o proprietário teria pago o bem inteiro em tributo, o que caracteriza efeito de confisco.
+
+**ATENÇÃO**
+
+O momento em que um tributo ou uma multa passa a ter efeito confiscatório não deve ser deduzido apenas do texto: é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Confisco*: tomada de bens sem justa compensação; aqui, tributação excessiva.
+- *Conceito aberto*: expressão cujo conteúdo é definido na aplicação a cada caso.
+
+**CAMADA EXTERNA**
+
+- A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 28. Art. 150, § 7º — Substituição tributária para frente
+
+- `CF88:ART.150:PAR.7` · DEVICE · risco HIGH · ENTENDA/CF88:ART.150:PAR.7/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco C · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Vigência (fonte canônica): Incluido pela Emenda Constitucional n. 3, de 1993
+
+**Lei Seca**
+
+- `CF88:ART.150:PAR.7`: A lei poderá atribuir a sujeito passivo de obrigação tributária a condição de responsável pelo pagamento de imposto ou contribuição, cujo fato gerador deva ocorrer posteriormente, assegurada a imediata e preferencial restituição da quantia paga, caso não se realize o fato gerador presumido.
+
+**O QUE DIZ**
+
+O § 7º permite que a lei torne um sujeito passivo responsável por pagar imposto ou contribuição de fato gerador que ainda vai acontecer. Se o fato gerador presumido não se realizar, fica assegurada a restituição imediata e preferencial da quantia paga.
+
+**O QUE SIGNIFICA**
+
+O parágrafo autoriza a chamada substituição tributária para frente. O tributo é cobrado antecipadamente de alguém da cadeia, antes que a operação final aconteça.
+
+Como o pagamento é feito sobre um fato que ainda não aconteceu, o texto garante a devolução imediata e preferencial se ele não ocorrer.
+
+**EXEMPLO PRÁTICO**
+
+Uma fábrica de cerveja recolhe, na saída do produto, o imposto que seria devido pelos bares na venda ao consumidor. Se o lote for destruído antes da venda, a quantia paga deve ser restituída.
+
+**ATENÇÃO**
+
+O texto garante restituição quando o fato gerador não se realiza. Se há direito à diferença quando a venda ocorre por valor menor que o presumido não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Substituição tributária*: regime em que um contribuinte paga o tributo devido por outro da cadeia.
+- *Fato gerador presumido*: operação futura que se supõe que vai acontecer.
+- *Restituição*: devolução do valor pago.
+
+**CAMADA EXTERNA**
+
+- A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
 
 **Alertas do validator v2**
 

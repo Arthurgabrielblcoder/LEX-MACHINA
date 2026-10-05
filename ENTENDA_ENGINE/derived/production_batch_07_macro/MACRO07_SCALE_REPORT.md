@@ -2,50 +2,51 @@
 
 Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · **0 HUMAN_APPROVED_T1 novos**: todas as explicações novas estão `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.
 
-Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–125).
+Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–125), MACRO_07_C (arts. 126–150).
 
 ## Seleção
 
 | | |
 |---|---|
-| Artigos | 53 |
-| Targets analisados | 540 (516 vigentes; excluídos: EXCLUDED_HISTORICAL 17, EXCLUDED_REVOKED 7) |
-| SELECT | 104 = 104 novas + 0 reutilizada(s) já aprovada(s) |
-| SKIP | 412 (todos com motivo e explicação que os cobre) |
-| Papéis das novas | BLOCK 22, DEVICE 14, ITEM 16, OVERVIEW 52 |
+| Artigos | 83 |
+| Targets analisados | 814 (783 vigentes; excluídos: EXCLUDED_HISTORICAL 23, EXCLUDED_REVOKED 8) |
+| SELECT | 171 = 170 novas + 1 reutilizada(s) já aprovada(s) |
+| SKIP | 612 (todos com motivo e explicação que os cobre) |
+| Papéis das novas | BLOCK 31, DEVICE 32, ITEM 26, OVERVIEW 81 |
 
 ## Por sub-bloco
 
 | Sub-bloco | Artigos | Vigentes | SELECT | SKIP | Novas | LOW/MED/HIGH | A/B/C/D/E | Correções do critic |
 |---|---|---|---|---|---|---|---|---|
-| MACRO_07_A | 25 | 260 | 55 | 205 | 55 | 31/16/8 | 31/16/0/8/0 | 74 |
-| MACRO_07_B | 28 | 256 | 49 | 207 | 49 | 23/16/10 | 23/16/0/10/0 | 76 |
+| MACRO_07_A | 25 | 260 | 55 | 205 | 55 | 31/16/8 | 31/16/0/8/0 | 75 |
+| MACRO_07_B | 28 | 256 | 49 | 207 | 49 | 23/16/10 | 23/16/0/10/0 | 77 |
+| MACRO_07_C | 30 | 267 | 67 | 200 | 66 | 43/13/10 | 43/13/0/10/0 | 133 |
 
 ## Dois eixos e filas
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
-| LOW | 54 | | SIMPLE | 3 |
-| MEDIUM | 32 | | STRUCTURED | 56 |
-| HIGH | 18 | | EXTERNAL | 45 |
+| LOW | 97 | | SIMPLE | 8 |
+| MEDIUM | 45 | | STRUCTURED | 93 |
+| HIGH | 28 | | EXTERNAL | 69 |
 
 | Fila | Itens |
 |---|---|
-| A_CLEAN_LOW | 54 |
-| B_CLEAN_MEDIUM | 32 |
+| A_CLEAN_LOW | 97 |
+| B_CLEAN_MEDIUM | 45 |
 | C_QUICK_REVIEW | 0 |
-| D_FULL_HUMAN_REVIEW | 18 |
+| D_FULL_HUMAN_REVIEW | 28 |
 | E_HARD_FAIL | 0 |
 
-D = 17.3% das novas.
-Jurisprudência: CONTEXT_ONLY 18, NONE 79, REQUIRED_FOR_CORRECTNESS 7.
+D = 16.5% das novas.
+Jurisprudência: CONTEXT_ONLY 22, NONE 134, REQUIRED_FOR_CORRECTNESS 14.
 
 ## Motivos dos D
 
-- INTERPRETIVE_CONTROVERSY: 2
+- INTERPRETIVE_CONTROVERSY: 3
 - JUDICIAL_REVIEW_ANNOTATED: 10
-- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 7
-- TRANSITION_OR_TEMPORAL: 3
+- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 14
+- TRANSITION_OR_TEMPORAL: 6
 
 ## Achados REVIEW_REQUIRED
 
@@ -64,15 +65,15 @@ Jurisprudência: CONTEXT_ONLY 18, NONE 79, REQUIRED_FOR_CORRECTNESS 7.
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 146.024 |
-| Modelo antigo (pacote completo de todos os itens) | 325.392 |
-| **Apresentado ao humano (pacotes + prioridade)** | **163.505** |
-| — MACRO07_COMPACT_AB_REVIEW.md | 64.385 |
-| — MACRO07_FULL_D_REVIEW.md | 84.635 |
+| Rascunhos (5 seções + glossário) | 238.394 |
+| Modelo antigo (pacote completo de todos os itens) | 516.818 |
+| **Apresentado ao humano (pacotes + prioridade)** | **248.062** |
+| — MACRO07_COMPACT_AB_REVIEW.md | 105.086 |
+| — MACRO07_FULL_D_REVIEW.md | 119.801 |
 | — MACRO07_HARD_FAIL_REPORT.md | 119 |
-| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 14.201 |
+| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 22.891 |
 | — MACRO07_QUICK_C_REVIEW.md | 165 |
-| Redução vs. modelo antigo | 161.887 (49.8%) |
+| Redução vs. modelo antigo | 268.756 (52.0%) |
 
 ## Checks estruturais
 

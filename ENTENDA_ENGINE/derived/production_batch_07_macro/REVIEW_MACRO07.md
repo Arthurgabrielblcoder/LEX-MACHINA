@@ -1994,7 +1994,7 @@ A proposta do Judiciário integra o projeto de lei orçamentária, que depende d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.99:PAR.4`, `CF88:ART.99:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.99`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1904 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1905 bytes · referências 0
 - **Motivo da seleção:** Bloco: consequencias do atraso e do excesso da proposta orcamentaria do Judiciario e limite na execucao.
 
 **O QUE DIZ**
@@ -2003,7 +2003,7 @@ O § 3º determina que, se a proposta do Judiciário não for enviada no prazo d
 
 **O QUE SIGNIFICA**
 
-Os três parágrafos fecham as brechas da autonomia financeira. Se o tribunal atrasa, o orçamento não fica parado: o Executivo usa como base os valores do ano em curso, ajustados aos limites.
+Os três parágrafos completam o regime da autonomia financeira. Se o tribunal atrasa, o orçamento não fica parado: o Executivo usa como base os valores do ano em curso, ajustados aos limites.
 
 Se o tribunal pede mais do que o permitido, o Executivo corta o excesso ao consolidar a proposta geral.
 
@@ -3158,7 +3158,7 @@ As competências do Conselho (§ 4º) têm explicação própria. O texto não d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103-B`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 2182 bytes · referências 0
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 2197 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: controle administrativo, financeiro e disciplinar e as atribuicoes listadas nos incisos.
 
 **O QUE DIZ**
@@ -3173,7 +3173,7 @@ Na frente administrativa, ele controla a gestão e as finanças do Judiciário, 
 
 Na frente disciplinar, recebe reclamações, pode avocar processos disciplinares, aplicar sanções e rever punições recentes, sem prejuízo da competência disciplinar dos próprios tribunais.
 
-Os relatórios semestral e anual dão transparência ao funcionamento do Judiciário.
+O Conselho também elabora relatório estatístico semestral e relatório anual sobre o Judiciário.
 
 **EXEMPLO PRÁTICO**
 
@@ -4937,6 +4937,3174 @@ A ressalva do júri vale quando a vítima é civil; a delimitação dos crimes a
 - Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUDÊNCIA.
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: crimes militares definidos em lei e as ações)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.126
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 126 — Varas agrárias
+
+- **TARGET:** `CF88:ART.126` · `ENTENDA/CF88:ART.126/BASE/1`
+- **DISPLAY TITLE:** Art. 126 — Varas agrárias
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1599 bytes · referências 0
+- **Motivo da seleção:** Visao geral: proposta de varas especializadas em questoes agrarias e presenca do juiz no local do litigio.
+
+**O QUE DIZ**
+
+O art. 126 determina que, para resolver conflitos fundiários, o Tribunal de Justiça proponha a criação de varas especializadas que cuidem só de questões agrárias. O parágrafo único prevê que o juiz compareça ao local do litígio quando isso for necessário para a eficiente prestação jurisdicional.
+
+**O QUE SIGNIFICA**
+
+O artigo prevê juízes dedicados aos conflitos pela posse e pela propriedade da terra no campo.
+
+O Tribunal de Justiça não cria a vara sozinho: ele propõe a criação, que depende de lei de organização judiciária. A vara terá competência exclusiva para questões agrárias.
+
+O parágrafo único aproxima o juiz do conflito. Quando for necessário para decidir bem, o juiz deve ir pessoalmente ao local da disputa.
+
+**EXEMPLO PRÁTICO**
+
+Um grupo de famílias ocupa parte de uma fazenda e o proprietário pede a reintegração de posse. Em um Estado com vara agrária, o caso vai a essa vara, e o juiz pode visitar a área antes de decidir.
+
+**ATENÇÃO**
+
+O artigo fala em proposta do Tribunal de Justiça. A instalação efetiva da vara depende de lei estadual, e a ida do juiz ao local está ligada à necessidade de uma prestação jurisdicional eficiente.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Conflito fundiário*: disputa sobre posse ou propriedade de terras.
+- *Questão agrária*: tema ligado ao uso e à propriedade da terra rural.
+- *Prestação jurisdicional*: a atividade do Judiciário de resolver o conflito.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.127
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 127 — Ministério Público
+
+- **TARGET:** `CF88:ART.127` · `ENTENDA/CF88:ART.127/BASE/1`
+- **DISPLAY TITLE:** Art. 127 — Ministério Público
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1800 bytes · referências 1
+- **Motivo da seleção:** Visao geral: natureza, funcoes e mapa dos paragrafos do Ministerio Publico.
+
+**O QUE DIZ**
+
+O art. 127 define o Ministério Público como instituição permanente e essencial à função jurisdicional do Estado. Cabe a ele defender a ordem jurídica, o regime democrático e os interesses sociais e individuais indisponíveis. Os parágrafos tratam dos princípios institucionais, da autonomia funcional e administrativa e da proposta orçamentária da instituição.
+
+**O QUE SIGNIFICA**
+
+O texto qualifica o Ministério Público como instituição permanente e essencial à função jurisdicional, regulada em capítulo próprio, fora dos três Poderes.
+
+Sua missão é defender a sociedade, e não um governo. O texto indica três frentes: a ordem jurídica, o regime democrático e os interesses sociais e individuais indisponíveis, que são aqueles de que a própria pessoa não pode abrir mão.
+
+Os parágrafos dão à instituição princípios próprios, autonomia para organizar seus serviços, com lei sobre organização e funcionamento, e proposta orçamentária própria.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa polui um rio que abastece uma cidade. O Ministério Público pode agir para proteger o meio ambiente e a saúde da população, mesmo sem pedido de nenhum morador.
+
+**ATENÇÃO**
+
+O texto não inclui o Ministério Público em nenhum dos Poderes, mas a sua organização, a lista de funções e as garantias dos membros estão nos arts. 128 e 129.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Interesse indisponível*: interesse de que a pessoa não pode abrir mão, como a vida e a saúde.
+- *Função jurisdicional*: atividade do Estado de resolver conflitos por meio do Judiciário.
+- *Ordem jurídica*: o conjunto de normas em vigor.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 127, § 1º — Princípios institucionais do Ministério Público
+
+- **TARGET:** `CF88:ART.127:PAR.1` · `ENTENDA/CF88:ART.127:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 127, § 1º — Princípios institucionais do Ministério Público
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.127`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1536 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: unidade, indivisibilidade e independencia funcional.
+
+**O QUE DIZ**
+
+O § 1º indica três princípios que regem a instituição: unidade, indivisibilidade e independência funcional.
+
+**O QUE SIGNIFICA**
+
+A unidade significa que os membros de um mesmo Ministério Público atuam como uma só instituição, sob a mesma chefia.
+
+A indivisibilidade significa que um membro pode substituir outro no mesmo processo sem que o ato perca valor: quem atua é a instituição, e não a pessoa.
+
+A independência funcional significa que cada membro forma sua convicção e atua segundo sua consciência e a lei, sem receber ordens sobre o conteúdo do que deve pedir.
+
+**EXEMPLO PRÁTICO**
+
+Um promotor apresenta a denúncia e depois é removido para outra comarca. O promotor que o substitui continua o processo, e os atos anteriores continuam válidos. Esse novo promotor pode discordar da tese do anterior, sem precisar de autorização da chefia.
+
+**ATENÇÃO**
+
+A independência funcional protege a convicção do membro, mas não afasta a organização administrativa da instituição. A unidade se refere a cada Ministério Público, e não ao conjunto de todos eles.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Independência funcional*: liberdade do membro para atuar segundo sua convicção e a lei.
+- *Indivisibilidade*: possibilidade de um membro substituir outro sem prejuízo dos atos praticados.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 127, § 2º — Autonomia do Ministério Público
+
+- **TARGET:** `CF88:ART.127:PAR.2` · `ENTENDA/CF88:ART.127:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 127, § 2º — Autonomia do Ministério Público
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.127`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 208 palavras · 1686 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: autonomia funcional e administrativa, iniciativa sobre cargos e lei de organizacao.
+
+**O QUE DIZ**
+
+O § 2º assegura ao Ministério Público autonomia funcional e administrativa. Respeitado o art. 169, ele pode propor ao Poder Legislativo a criação e a extinção de seus cargos e serviços auxiliares, que são providos por concurso público, além da política remuneratória e dos planos de carreira. A organização e o funcionamento da instituição ficam a cargo da lei.
+
+**O QUE SIGNIFICA**
+
+A autonomia funcional garante que o Ministério Público exerça suas funções sem subordinação a outro Poder.
+
+A autonomia administrativa permite que a instituição cuide da própria estrutura. Ela tem a iniciativa de propor leis sobre seus cargos, salários e carreiras, mas a aprovação é do Legislativo.
+
+Os limites de despesa com pessoal do art. 169 também valem para essas propostas, e os cargos são preenchidos por concurso de provas ou de provas e títulos.
+
+**EXEMPLO PRÁTICO**
+
+Um Ministério Público estadual precisa de mais servidores. O Procurador-Geral de Justiça envia à Assembleia Legislativa um projeto de lei criando os cargos, respeitando os limites de despesa com pessoal.
+
+**ATENÇÃO**
+
+O texto fala em autonomia funcional e administrativa. A proposta orçamentária é tratada nos §§ 3º a 6º, com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Autonomia administrativa*: capacidade de organizar a própria estrutura e o próprio pessoal.
+- *Serviços auxiliares*: estrutura de apoio, com servidores que não são membros da instituição.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Ministério Público estadual precisa de mais servidores.)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 127, §§ 3º, 4º, 5º e 6º — Orçamento do Ministério Público
+
+- **TARGET:** `CF88:ART.127:PAR.3` · `ENTENDA/CF88:ART.127:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 127, §§ 3º, 4º, 5º e 6º — Orçamento do Ministério Público
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.127:PAR.4`, `CF88:ART.127:PAR.5`, `CF88:ART.127:PAR.6`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.127`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 2039 bytes · referências 0
+- **Motivo da seleção:** Bloco: proposta orcamentaria nos limites da LDO e consequencias de atraso, excesso e despesa fora dos limites.
+
+**O QUE DIZ**
+
+O § 3º manda o Ministério Público elaborar a sua proposta orçamentária nos limites da lei de diretrizes orçamentárias. Os §§ 4º a 6º aplicam à instituição o mesmo esquema do Judiciário (art. 99, §§ 3º a 5º) para três situações: proposta não enviada no prazo, proposta acima dos limites e despesas durante a execução, que não podem extrapolar os limites salvo créditos suplementares ou especiais autorizados antes.
+
+**O QUE SIGNIFICA**
+
+Os parágrafos combinam autonomia e controle. O Ministério Público elabora a própria proposta, mas dentro dos limites fixados na lei de diretrizes orçamentárias.
+
+Se atrasar, não fica sem orçamento: o Executivo repete os valores do ano em curso, ajustados. Se exceder os limites, o Executivo corrige a proposta para consolidar o orçamento anual.
+
+Durante o ano, despesas além dos limites dependem de autorização prévia, por créditos suplementares ou especiais.
+
+**EXEMPLO PRÁTICO**
+
+O Ministério Público envia proposta acima do limite combinado na lei de diretrizes orçamentárias. O Executivo ajusta os valores ao limite antes de enviar o projeto de orçamento ao Legislativo.
+
+**ATENÇÃO**
+
+As regras são semelhantes às do Judiciário (art. 99, §§ 3º a 5º). O Executivo ajusta a proposta, mas apenas para adequá-la aos limites, e não para mudar livremente as prioridades da instituição.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lei de diretrizes orçamentárias*: lei anual que orienta a elaboração do orçamento.
+- *Crédito suplementar*: autorização para reforçar uma despesa já prevista no orçamento.
+- *Crédito especial*: autorização para despesa sem dotação específica no orçamento.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.128
+
+Sem explicação própria: 21 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 128 — Estrutura do Ministério Público
+
+- **TARGET:** `CF88:ART.128` · `ENTENDA/CF88:ART.128/BASE/1`
+- **DISPLAY TITLE:** Art. 128 — Estrutura do Ministério Público
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 242 palavras · 1842 bytes · referências 0
+- **Motivo da seleção:** Visao geral: ramos do Ministerio Publico, chefias, leis organicas, garantias e vedacoes.
+
+**O QUE DIZ**
+
+O art. 128 divide o Ministério Público em Ministério Público da União, que compreende o Federal, o do Trabalho, o Militar e o do Distrito Federal e Territórios, e Ministérios Públicos dos Estados. Os parágrafos tratam da escolha e da destituição dos Procuradores-Gerais, das leis complementares que organizam cada Ministério Público, das garantias e vedações dos membros e da quarentena do art. 95, parágrafo único, V.
+
+**O QUE SIGNIFICA**
+
+Não existe um único Ministério Público, mas vários, cada um com sua chefia. O da União reúne quatro ramos sob o comando do Procurador-Geral da República; cada Estado tem o seu, chefiado pelo Procurador-Geral de Justiça.
+
+A forma de escolha das chefias é diferente: na União, o Presidente escolhe entre membros da carreira; nos Estados, o Governador escolhe a partir de lista tríplice formada pela própria carreira.
+
+As leis complementares definem a organização, as atribuições e o estatuto de cada ramo, respeitando as garantias e vedações do § 5º.
+
+**EXEMPLO PRÁTICO**
+
+Um crime contra uma autarquia federal é investigado pelo Ministério Público Federal. Um homicídio comum, sem interesse federal, fica com o Ministério Público do Estado.
+
+**ATENÇÃO**
+
+O Ministério Público do Distrito Federal e Territórios faz parte do Ministério Público da União. Os Ministérios Públicos junto aos Tribunais de Contas seguem regra própria (art. 130).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Procurador-Geral*: chefe de um Ministério Público.
+- *Lista tríplice*: lista com três nomes, da qual a autoridade escolhe um.
+- *Quarentena*: período em que quem deixa o cargo não pode exercer certas atividades.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a organização as atribuições e o estatuto de)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 128, §§ 1º e 2º — Procurador-Geral da República
+
+- **TARGET:** `CF88:ART.128:PAR.1` · `ENTENDA/CF88:ART.128:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 128, §§ 1º e 2º — Procurador-Geral da República
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.128:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.128`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1737 bytes · referências 0
+- **Motivo da seleção:** Bloco: nomeacao, requisitos, mandato e destituicao do Procurador-Geral da Republica.
+
+**O QUE DIZ**
+
+O § 1º estabelece que o Procurador-Geral da República chefia o Ministério Público da União. Ele é nomeado pelo Presidente da República entre integrantes da carreira maiores de trinta e cinco anos, depois que a maioria absoluta do Senado aprova seu nome, para mandato de dois anos, permitida a recondução. O § 2º exige autorização da maioria absoluta do Senado para que o Presidente destitua o Procurador-Geral.
+
+**O QUE SIGNIFICA**
+
+A escolha do Procurador-Geral da República combina três elementos: indicação do Presidente, limitada a membros da carreira, aprovação do Senado e mandato fixo.
+
+O texto não exige lista tríplice para o cargo federal, diferentemente do que ocorre nos Estados.
+
+O mandato é de dois anos, e a recondução é permitida. A destituição por iniciativa do Presidente, antes do fim do mandato, exige autorização do Senado por maioria absoluta.
+
+**EXEMPLO PRÁTICO**
+
+O Presidente escolhe uma subprocuradora-geral da República, com cinquenta anos, para chefiar o Ministério Público da União. O Senado aprova o nome, e ela é nomeada para mandato de dois anos.
+
+**ATENÇÃO**
+
+O § 1º permite a recondução sem dizer quantas vezes; o § 3º, para os Estados, permite uma recondução. O alcance dessa diferença é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Recondução*: nova nomeação da mesma pessoa para outro mandato seguido.
+- *Destituição*: afastamento do cargo antes do fim do mandato.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da carreira maiores de trinta e cinco anos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
+
+- **TARGET:** `CF88:ART.128:PAR.3` · `ENTENDA/CF88:ART.128:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.128:PAR.4`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.128`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 2065 bytes · referências 0
+- **Motivo da seleção:** Bloco: lista triplice, nomeacao, mandato e destituicao dos Procuradores-Gerais estaduais e do Distrito Federal.
+
+**O QUE DIZ**
+
+O § 3º prevê que, nos Estados e no Ministério Público do Distrito Federal e Territórios, a própria carreira forme lista tríplice, na forma da lei respectiva. Dessa lista, o Chefe do Poder Executivo escolhe o Procurador-Geral, com mandato de dois anos e uma recondução permitida. O § 4º admite a destituição desses Procuradores-Gerais por deliberação do Legislativo, tomada por maioria absoluta, conforme a lei complementar de cada Ministério Público.
+
+**O QUE SIGNIFICA**
+
+Nos Estados, a escolha do chefe do Ministério Público começa dentro da própria instituição: a carreira forma uma lista de três nomes, e o chefe do Executivo escolhe um deles.
+
+O mandato é de dois anos, com apenas uma recondução.
+
+A destituição depende do Legislativo, por maioria absoluta, conforme a lei complementar.
+
+**EXEMPLO PRÁTICO**
+
+Os promotores e procuradores de um Estado votam e formam lista com três nomes. O Governador escolhe um deles para Procurador-Geral de Justiça, com mandato de dois anos.
+
+**ATENÇÃO**
+
+No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a destituição. Essa identificação depende da lei complementar e da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lista tríplice*: lista com três nomes, da qual a autoridade escolhe um.
+- *Procurador-Geral de Justiça*: nome usual do chefe do Ministério Público de um Estado.
+
+**CAMADA EXTERNA**
+
+- A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são definidos na lei complementar do Ministério Público da União e na camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público
+
+- **TARGET:** `CF88:ART.128:PAR.5` · `ENTENDA/CF88:ART.128:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.128`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 310 palavras · 2450 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: leis complementares de organizacao, garantias (vitaliciedade, inamovibilidade, irredutibilidade) e vedacoes dos membros.
+
+**O QUE DIZ**
+
+O § 5º determina que leis complementares da União e dos Estados, de iniciativa facultada aos Procuradores-Gerais, definam como cada Ministério Público se organiza, suas atribuições e o estatuto dos membros. Essas leis observam as garantias dos membros, que são a vitaliciedade após dois anos de exercício, a inamovibilidade, salvo por interesse público em decisão do órgão colegiado por maioria absoluta, e a irredutibilidade de subsídio, com as ressalvas indicadas. E observam as vedações: honorários, advocacia, participação em sociedade comercial na forma da lei, outra função pública, mesmo em disponibilidade, salvo uma de magistério, atividade político-partidária e auxílios ou contribuições, ressalvadas as exceções da lei.
+
+**O QUE SIGNIFICA**
+
+As garantias protegem o membro do Ministério Público para que possa atuar sem medo de retaliação. Depois de dois anos, ele só perde o cargo por sentença judicial definitiva. Não pode ser removido contra a vontade, salvo por interesse público, com decisão colegiada e ampla defesa. E seu subsídio não pode ser reduzido, observadas as ressalvas do texto.
+
+As vedações protegem a imparcialidade. O membro não recebe honorários nem custas, não advoga, não exerce política partidária e não acumula outra função pública, salvo uma de magistério.
+
+O modelo é semelhante ao dos juízes (art. 95).
+
+**EXEMPLO PRÁTICO**
+
+Uma promotora quer dar aulas em uma universidade pública. Pode fazê-lo, porque o texto ressalva uma função de magistério. Já não pode atuar como advogada em causas particulares.
+
+**ATENÇÃO**
+
+A irredutibilidade tem ressalvas expressas, como o teto remuneratório e as regras tributárias indicadas no texto. O alcance de cada vedação é definido também pela lei e pela camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vitaliciedade*: garantia de só perder o cargo por sentença judicial definitiva.
+- *Inamovibilidade*: garantia de não ser transferido contra a vontade, salvo por interesse público.
+- *Irredutibilidade de subsídio*: proibição de reduzir a remuneração, com as ressalvas do texto.
+- *Sentença transitada em julgado*: decisão judicial contra a qual não cabe mais recurso.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.129
+
+Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 129 — Funções institucionais do Ministério Público
+
+- **TARGET:** `CF88:ART.129` · `ENTENDA/CF88:ART.129/BASE/1`
+- **DISPLAY TITLE:** Art. 129 — Funções institucionais do Ministério Público
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 310 palavras · 2599 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lista das funcoes institucionais e regras sobre carreira, residencia e distribuicao.
+
+**O QUE DIZ**
+
+O art. 129 lista as funções institucionais do Ministério Público. Entre elas estão promover privativamente a ação penal pública, zelar pelo respeito dos poderes públicos aos direitos constitucionais, promover o inquérito civil e a ação civil pública. Também estão propor ação de inconstitucionalidade e representação para intervenção, defender os direitos das populações indígenas, expedir notificações e requisitar informações, exercer o controle externo da atividade policial e requisitar diligências e inquérito policial. Os parágrafos tratam da legitimação de terceiros, da exigência de carreira e residência, do concurso, da aplicação do art. 93 e da distribuição imediata de processos.
+
+**O QUE SIGNIFICA**
+
+O artigo mostra que o Ministério Público atua em várias frentes.
+
+Na área penal, é o titular da ação penal pública e pode requisitar diligências e a instauração de inquérito policial.
+
+Na área civil, defende interesses coletivos, como o meio ambiente e o patrimônio público, por meio do inquérito civil e da ação civil pública.
+
+Há ainda funções de fiscalização: controle externo da polícia e zelo pelo respeito dos poderes públicos aos direitos da Constituição.
+
+O § 1º esclarece que a legitimação do Ministério Público para as ações civis não exclui a de outros legitimados, segundo a Constituição e a lei.
+
+**EXEMPLO PRÁTICO**
+
+Um hospital público deixa de atender pacientes por falta de medicamentos. O Ministério Público instaura inquérito civil, requisita documentos e pode propor ação civil pública para obrigar o poder público a regularizar o atendimento.
+
+**ATENÇÃO**
+
+O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ação penal pública*: ação penal proposta pelo Estado, por meio do Ministério Público.
+- *Inquérito civil*: investigação do Ministério Público para apurar lesão a interesses coletivos.
+- *Interesses difusos*: interesses que pertencem a um número indeterminado de pessoas, como o meio ambiente.
+
+**CAMADA EXTERNA**
+
+- O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o inquérito civil e a ação civil pública); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a legitimação do ministério público para as ações)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 129, inciso I — Ação penal pública
+
+- **TARGET:** `CF88:ART.129:INC.I` · `ENTENDA/CF88:ART.129:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 129, inciso I — Ação penal pública
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1516 bytes · referências 1
+- **Motivo da seleção:** Item: titularidade privativa da acao penal publica.
+
+**O QUE DIZ**
+
+O inciso I atribui ao Ministério Público, de forma privativa, a promoção da ação penal pública, na forma da lei.
+
+**O QUE SIGNIFICA**
+
+Nos crimes de ação penal pública, quem acusa o réu perante o juiz é o Ministério Público. A palavra privativamente indica que essa tarefa não cabe a outro órgão, como a polícia ou o próprio juiz.
+
+O texto diz que a ação é promovida na forma da lei. É a lei que define quais crimes são de ação pública e quais dependem de iniciativa da vítima.
+
+A polícia investiga; o Ministério Público decide se há elementos para oferecer a denúncia.
+
+**EXEMPLO PRÁTICO**
+
+A polícia conclui um inquérito sobre um roubo e o envia ao Ministério Público. O promotor analisa as provas e oferece a denúncia ao juiz, iniciando a ação penal.
+
+**ATENÇÃO**
+
+A Constituição admite ação privada nos crimes de ação pública quando o Ministério Público não age no prazo legal (art. 5º, LIX). Por isso a titularidade privativa convive com essa exceção prevista no próprio texto constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Denúncia*: peça do Ministério Público que dá início à ação penal pública.
+- *Ação privada nos crimes de ação pública*: ação proposta pela vítima quando o Ministério Público não age no prazo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 129, inciso III — Inquérito civil e ação civil pública
+
+- **TARGET:** `CF88:ART.129:INC.III` · `ENTENDA/CF88:ART.129:INC.III/BASE/1`
+- **DISPLAY TITLE:** Art. 129, inciso III — Inquérito civil e ação civil pública
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1537 bytes · referências 0
+- **Motivo da seleção:** Item: instrumentos de tutela coletiva do Ministerio Publico.
+
+**O QUE DIZ**
+
+O inciso III atribui ao Ministério Público a promoção do inquérito civil e da ação civil pública para proteger o patrimônio público e social, o meio ambiente e outros interesses difusos e coletivos.
+
+**O QUE SIGNIFICA**
+
+O inciso dá ao Ministério Público dois instrumentos para defender interesses que pertencem a muitas pessoas.
+
+O inquérito civil é a investigação, em que se reúnem provas e se esclarecem os fatos. A ação civil pública é o processo judicial que pede a reparação ou a prevenção do dano.
+
+A lista de bens protegidos é exemplificativa: o texto menciona o patrimônio público e social e o meio ambiente e acrescenta outros interesses difusos e coletivos.
+
+**EXEMPLO PRÁTICO**
+
+Uma prefeitura contrata uma obra superfaturada. O Ministério Público instaura inquérito civil para apurar o prejuízo e depois propõe ação civil pública para recuperar os valores.
+
+**ATENÇÃO**
+
+O Ministério Público não é o único legitimado para a ação civil pública: o § 1º preserva a legitimação de terceiros, nos termos da Constituição e da lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ação civil pública*: ação judicial para proteger interesses coletivos ou difusos.
+- *Interesses coletivos*: interesses de um grupo ou categoria determinável de pessoas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** PARENT_REPETITION (*: CF88:ART.129: 0.25)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 129, inciso VII — Controle externo da atividade policial
+
+- **TARGET:** `CF88:ART.129:INC.VII` · `ENTENDA/CF88:ART.129:INC.VII/BASE/1`
+- **DISPLAY TITLE:** Art. 129, inciso VII — Controle externo da atividade policial
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 139 palavras · 1300 bytes · referências 1
+- **Motivo da seleção:** Item: controle externo da policia na forma da lei complementar.
+
+**O QUE DIZ**
+
+O inciso VII atribui ao Ministério Público o controle externo da atividade policial, nos termos da lei complementar prevista no art. 128, § 5º.
+
+**O QUE SIGNIFICA**
+
+A polícia tem seus próprios órgãos internos de controle, como as corregedorias. O inciso acrescenta um controle de fora da instituição, feito pelo Ministério Público.
+
+A forma e os limites desse controle são definidos na lei complementar de cada Ministério Público.
+
+**EXEMPLO PRÁTICO**
+
+O Ministério Público visita uma delegacia, verifica o registro de presos e o andamento dos inquéritos e requisita providências quando encontra irregularidades.
+
+**ATENÇÃO**
+
+O inciso fala em controle externo da atividade policial, e não em comando da polícia. O alcance concreto dos poderes de fiscalização está na lei complementar e na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Controle externo*: fiscalização feita por órgão de fora da instituição controlada.
+- *Corregedoria*: órgão interno que fiscaliza a conduta dos integrantes de uma instituição.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 129, inciso IX — Outras funções e vedação de representação judicial
+
+- **TARGET:** `CF88:ART.129:INC.IX` · `ENTENDA/CF88:ART.129:INC.IX/BASE/1`
+- **DISPLAY TITLE:** Art. 129, inciso IX — Outras funções e vedação de representação judicial
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1520 bytes · referências 0
+- **Motivo da seleção:** Item: clausula aberta de funcoes compativeis e vedacao de representacao e consultoria de entidades publicas.
+
+**O QUE DIZ**
+
+O inciso IX admite que o Ministério Público receba outras funções, contanto que sejam compatíveis com a sua finalidade. O mesmo inciso proíbe que ele faça a representação judicial e a consultoria jurídica de entidades públicas.
+
+**O QUE SIGNIFICA**
+
+A lista de funções não é fechada: a lei pode atribuir novas tarefas ao Ministério Público. O limite é a compatibilidade com a finalidade da instituição, descrita no art. 127.
+
+A vedação final separa o Ministério Público da advocacia pública. Quem defende a União, os Estados e os Municípios em juízo e lhes dá pareceres são as procuradorias (arts. 131 e 132), e não o Ministério Público.
+
+**EXEMPLO PRÁTICO**
+
+Um Município é processado e pede ao promotor da cidade que faça sua defesa. O promotor não pode aceitar: a defesa cabe à procuradoria do Município ou a advogado contratado na forma da lei.
+
+**ATENÇÃO**
+
+O inciso condiciona as novas funções à compatibilidade com a finalidade da instituição; quem decide sobre essa compatibilidade não está dito no texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Representação judicial*: atuação em juízo em nome de outra pessoa ou entidade.
+- *Consultoria jurídica*: orientação e pareceres jurídicos dados a quem os solicita.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a representação judicial e a consultoria jurídica de)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 129, § 2º — Exercício por integrantes da carreira e residência
+
+- **TARGET:** `CF88:ART.129:PAR.2` · `ENTENDA/CF88:ART.129:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 129, § 2º — Exercício por integrantes da carreira e residência
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.129`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 155 palavras · 1291 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: exclusividade da carreira e dever de residir na comarca, salvo autorizacao.
+
+**O QUE DIZ**
+
+O § 2º reserva as funções do Ministério Público aos integrantes da carreira. Eles devem residir na comarca onde estão lotados, salvo autorização do chefe da instituição.
+
+**O QUE SIGNIFICA**
+
+O parágrafo tem duas regras.
+
+A primeira impede que pessoas de fora da carreira exerçam funções do Ministério Público. Não há, por exemplo, promotor nomeado sem concurso para um caso específico.
+
+A segunda exige que o membro more na comarca em que atua. A exceção é a autorização do chefe da instituição.
+
+**EXEMPLO PRÁTICO**
+
+Um promotor é lotado em uma cidade do interior, mas quer morar na capital, a cem quilômetros. Para isso, precisa de autorização do Procurador-Geral de Justiça.
+
+**ATENÇÃO**
+
+A residência na comarca é a regra, e a autorização do chefe é a exceção prevista no próprio texto. Os critérios para essa autorização ficam na lei e em normas internas.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lotação*: local ou unidade em que o membro exerce suas funções.
+- *Comarca*: área territorial de atuação da Justiça estadual.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para isso, precisa de autorização do Procurador-Geral de Jus)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.130
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 130 — Ministério Público junto aos Tribunais de Contas
+
+- **TARGET:** `CF88:ART.130` · `ENTENDA/CF88:ART.130/BASE/1`
+- **DISPLAY TITLE:** Art. 130 — Ministério Público junto aos Tribunais de Contas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1879 bytes · referências 0
+- **Motivo da seleção:** Visao geral: aplicacao das regras da Secao sobre direitos, vedacoes e investidura.
+
+**O QUE DIZ**
+
+O art. 130 estende aos membros do Ministério Público que atuam junto aos Tribunais de Contas as disposições desta Seção sobre direitos, vedações e forma de investidura.
+
+**O QUE SIGNIFICA**
+
+Junto aos Tribunais de Contas atua um Ministério Público especial, que fiscaliza a aplicação da lei nos processos de controle das contas públicas.
+
+O artigo não o inclui no art. 128, que lista os ramos do Ministério Público comum. Mas manda aplicar aos seus membros três grupos de regras da Seção: os direitos, como as garantias de vitaliciedade e inamovibilidade; as vedações, como a proibição de advogar; e a forma de investidura, que inclui o concurso público.
+
+Assim, quem atua nesse Ministério Público especial tem estatuto pessoal semelhante ao dos demais membros.
+
+**EXEMPLO PRÁTICO**
+
+Um procurador do Ministério Público junto ao Tribunal de Contas de um Estado quer exercer a advocacia privada. Não pode, porque a vedação do art. 128, § 5º, também se aplica a ele.
+
+**ATENÇÃO**
+
+O artigo estende direitos, vedações e investidura. Outras questões, como autonomia administrativa e financeira, não estão mencionadas, e sua aplicação é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Tribunal de Contas*: órgão que auxilia o Legislativo na fiscalização das contas públicas.
+- *Vitaliciedade*: garantia de só perder o cargo por sentença judicial definitiva.
+- *Inamovibilidade*: garantia de não ser transferido contra a vontade, salvo por interesse público.
+- *Investidura*: ato pelo qual alguém assume formalmente um cargo.
+
+**CAMADA EXTERNA**
+
+- A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.130-A
+
+Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 130-A — Conselho Nacional do Ministério Público
+
+- **TARGET:** `CF88:ART.130-A` · `ENTENDA/CF88:ART.130-A/BASE/1`
+- **DISPLAY TITLE:** Art. 130-A — Conselho Nacional do Ministério Público
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 308 palavras · 2435 bytes · referências 0
+- **Motivo da seleção:** Visao geral: composicao, mandato, nomeacao, corregedoria e ouvidorias do Conselho Nacional do Ministerio Publico.
+
+**O QUE DIZ**
+
+O art. 130-A estabelece que o Conselho Nacional do Ministério Público tem quatorze membros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado, para mandato de dois anos com uma recondução. A composição reúne o Procurador-Geral da República, que o preside, quatro membros do Ministério Público da União, três dos Ministérios Públicos estaduais, dois juízes, dois advogados e dois cidadãos de notável saber jurídico e reputação ilibada. Os parágrafos tratam, entre outros temas, da indicação dos membros, das competências (sem prejuízo da competência disciplinar e correicional do Ministério Público da União e dos Estados e da competência dos Tribunais de Contas). Também tratam do Corregedor nacional, da atuação do Presidente do Conselho Federal da Ordem dos Advogados do Brasil e das ouvidorias.
+
+**O QUE SIGNIFICA**
+
+O Conselho tem para o Ministério Público papel semelhante ao do Conselho Nacional de Justiça para o Judiciário: controla a atuação administrativa e financeira e o cumprimento dos deveres funcionais dos membros, sem prejuízo da competência dos Tribunais de Contas e da competência disciplinar da própria instituição.
+
+A composição mistura membros da instituição com juízes, advogados e cidadãos indicados pela Câmara e pelo Senado.
+
+Os membros vindos do Ministério Público são indicados pelos próprios Ministérios Públicos, na forma da lei. O Corregedor nacional é escolhido em votação secreta entre esses membros, sem possibilidade de recondução.
+
+**EXEMPLO PRÁTICO**
+
+Um cidadão se queixa de que um promotor não dá andamento a um procedimento há anos. Ele pode apresentar reclamação à ouvidoria ou ao Conselho Nacional do Ministério Público.
+
+**ATENÇÃO**
+
+As competências do Conselho (§ 2º) têm explicação própria. O texto atribui ao Conselho controle administrativo, financeiro e disciplinar; ele não menciona revisão do conteúdo das manifestações dos membros.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Recondução*: nova nomeação da mesma pessoa para outro mandato seguido.
+- *Corregedor*: autoridade que fiscaliza a conduta dos membros e serviços.
+- *Ouvidoria*: canal para receber reclamações e denúncias do público.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cidadãos de notável saber jurídico e reputação ilibada); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sem prejuízo da competência dos tribunais de contas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público
+
+- **TARGET:** `CF88:ART.130-A:PAR.2` · `ENTENDA/CF88:ART.130-A:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.130-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 2029 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: controle administrativo, financeiro e disciplinar e atribuicoes listadas nos incisos.
+
+**O QUE DIZ**
+
+O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais. Entre as atribuições listadas nos incisos estão zelar pela autonomia da instituição, expedir atos regulamentares ou recomendar providências e apreciar a legalidade de atos administrativos. Também recebe reclamações, pode determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, revê processos disciplinares julgados há menos de um ano e elabora relatório anual sobre a situação do Ministério Público e as atividades do Conselho.
+
+**O QUE SIGNIFICA**
+
+O parágrafo repete, para o Ministério Público, o modelo de controle do art. 103-B, § 4º.
+
+Na frente administrativa, o Conselho pode rever atos administrativos dos órgãos do Ministério Público da União e dos Estados, para garantir o cumprimento da lei, preservada a competência dos Tribunais de Contas.
+
+Na frente disciplinar, recebe reclamações, pode avocar processos disciplinares e aplicar sanções, sem prejuízo da competência disciplinar e correicional da própria instituição.
+
+O relatório anual integra a mensagem presidencial de abertura da sessão legislativa (art. 84, XI).
+
+**EXEMPLO PRÁTICO**
+
+Um Ministério Público estadual paga gratificação sem base legal aos seus membros. O Conselho pode examinar a legalidade do ato e desconstituí-lo.
+
+**ATENÇÃO**
+
+As competências são administrativas e disciplinares. O texto não autoriza o Conselho a interferir no conteúdo das manifestações processuais dos membros.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Avocar*: trazer para si um processo que estava com outro órgão.
+- *Ato regulamentar*: norma administrativa que detalha como algo deve ser feito.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: do ministério público da união e dos estados)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.131
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 131 — Advocacia-Geral da União
+
+- **TARGET:** `CF88:ART.131` · `ENTENDA/CF88:ART.131/BASE/1`
+- **DISPLAY TITLE:** Art. 131 — Advocacia-Geral da União
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2167 bytes · referências 2
+- **Motivo da seleção:** Visao geral: funcoes, chefia, ingresso e representacao na execucao da divida ativa tributaria.
+
+**O QUE DIZ**
+
+O art. 131 define a Advocacia-Geral da União como a instituição que representa a União judicial e extrajudicialmente, diretamente ou por órgão vinculado. Cabem a ela, nos termos de lei complementar, a consultoria e o assessoramento jurídico do Poder Executivo. O § 1º prevê que o Presidente nomeia livremente o Advogado-Geral da União, escolhido entre cidadãos com mais de trinta e cinco anos, notável saber jurídico e reputação ilibada. O § 2º exige concurso de provas e títulos para as classes iniciais, e o § 3º atribui à Procuradoria-Geral da Fazenda Nacional a representação da União na execução da dívida ativa tributária.
+
+**O QUE SIGNIFICA**
+
+A Advocacia-Geral da União é o escritório de advocacia do Estado federal. Ela defende a União nos processos e orienta juridicamente o Executivo.
+
+Seu chefe é escolhido livremente pelo Presidente, sem aprovação do Senado e sem exigência de pertencer à carreira.
+
+Os demais integrantes ingressam por concurso público.
+
+Na cobrança judicial de tributos federais inscritos em dívida ativa, a União é representada por um órgão específico, a Procuradoria-Geral da Fazenda Nacional.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa processa a União pedindo indenização. A defesa da União é feita por advogados públicos da Advocacia-Geral da União. Se a União cobra um imposto inscrito em dívida ativa, quem atua é a Procuradoria-Geral da Fazenda Nacional.
+
+**ATENÇÃO**
+
+O § 2º tem nota de remissão a lei na fonte oficial. A organização da instituição depende de lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Extrajudicial*: fora do processo judicial, como em negociações e procedimentos administrativos.
+- *Dívida ativa*: créditos do poder público inscritos para cobrança.
+- *Livre nomeação*: escolha da autoridade sem necessidade de concurso ou aprovação de outro órgão.
+
+**CAMADA EXTERNA**
+
+- A Lei nº 14.965, de 2024, indicada em nota no § 2º do texto oficial, fica na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.132
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 132 — Procuradores dos Estados e do Distrito Federal
+
+- **TARGET:** `CF88:ART.132` · `ENTENDA/CF88:ART.132/BASE/1`
+- **DISPLAY TITLE:** Art. 132 — Procuradores dos Estados e do Distrito Federal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1841 bytes · referências 0
+- **Motivo da seleção:** Visao geral: carreira, concurso com participacao da OAB, funcoes e estabilidade dos procuradores estaduais.
+
+**O QUE DIZ**
+
+O art. 132 atribui a representação judicial e a consultoria jurídica dos Estados e do Distrito Federal aos seus Procuradores. Eles formam uma carreira, com ingresso por concurso de provas e títulos e participação da Ordem dos Advogados do Brasil em cada fase. O parágrafo único assegura a eles estabilidade depois de três anos de efetivo exercício, com avaliação de desempenho e relatório das corregedorias.
+
+**O QUE SIGNIFICA**
+
+Os procuradores estaduais têm, nos Estados e no Distrito Federal, o papel que a Advocacia-Geral da União tem na esfera federal: defendem o ente em juízo e lhe dão orientação jurídica.
+
+O texto exige carreira e concurso, com participação da Ordem dos Advogados do Brasil em todas as fases.
+
+A estabilidade depende de três anos de exercício e de avaliação de desempenho, com relatório das corregedorias.
+
+**EXEMPLO PRÁTICO**
+
+Um servidor estadual processa o Estado pedindo diferenças salariais. A defesa do Estado é feita por um procurador do Estado, aprovado em concurso.
+
+**ATENÇÃO**
+
+O artigo fala em Estados e Distrito Federal. A nota do texto oficial remete a uma lei sobre o tema, indicada na camada externa. A situação das procuradorias municipais não está prevista neste artigo e é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Unidade federada*: Estado ou Distrito Federal.
+- *Estabilidade*: garantia de permanecer no cargo, salvo nos casos previstos.
+- *Relatório circunstanciado*: relatório detalhado, com os fatos e as razões da avaliação.
+
+**CAMADA EXTERNA**
+
+- A Lei nº 14.965, de 2024, indicada em nota no texto oficial do caput, fica na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: participação da ordem dos advogados do brasil em); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da ordem dos advogados do brasil em todas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.133
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 133 — Advocacia
+
+- **TARGET:** `CF88:ART.133` · `ENTENDA/CF88:ART.133/BASE/1`
+- **DISPLAY TITLE:** Art. 133 — Advocacia
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 161 palavras · 1449 bytes · referências 1
+- **Motivo da seleção:** Visao geral: indispensabilidade do advogado e inviolabilidade nos limites da lei.
+
+**O QUE DIZ**
+
+O art. 133 declara o advogado indispensável à administração da justiça. No exercício da profissão, seus atos e manifestações são invioláveis, nos limites da lei.
+
+**O QUE SIGNIFICA**
+
+O artigo reconhece a advocacia como parte do funcionamento da Justiça, ao lado do Judiciário, do Ministério Público e da Defensoria.
+
+A inviolabilidade protege o advogado quando ele atua na defesa do cliente: suas falas e escritos no exercício da profissão não podem, em regra, gerar punição.
+
+O próprio texto limita essa proteção à atuação profissional e aos limites da lei.
+
+**EXEMPLO PRÁTICO**
+
+Em uma audiência, o advogado critica com firmeza a prova apresentada pela parte contrária. Essa manifestação, feita na defesa do cliente, está protegida pela inviolabilidade, nos limites da lei.
+
+**ATENÇÃO**
+
+O texto não diz que todo processo exige advogado. As situações em que a parte pode atuar sem advogado são definidas em lei e na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Indispensável*: necessário, que não pode faltar.
+- *Inviolabilidade*: proteção contra punição pelos atos praticados na profissão, nos limites da lei.
+
+**CAMADA EXTERNA**
+
+- Os limites legais da inviolabilidade do advogado ficam no estatuto da advocacia, na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.134
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 134 — Defensoria Pública
+
+- **TARGET:** `CF88:ART.134` · `ENTENDA/CF88:ART.134/BASE/1`
+- **DISPLAY TITLE:** Art. 134 — Defensoria Pública
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 2002 bytes · referências 0
+- **Motivo da seleção:** Visao geral: natureza, funcoes, organizacao e principios da Defensoria Publica.
+
+**O QUE DIZ**
+
+O art. 134 define a Defensoria Pública como instituição permanente, essencial à função jurisdicional do Estado. Cabem a ela, entre outras tarefas, orientar juridicamente, promover os direitos humanos e defender os direitos individuais e coletivos dos necessitados, de forma integral e gratuita, em todos os graus, judicial e extrajudicialmente, na forma do art. 5º, LXXIV. Os parágrafos tratam da lei complementar de organização, da autonomia das Defensorias e dos princípios institucionais.
+
+**O QUE SIGNIFICA**
+
+O texto apresenta a Defensoria como expressão e instrumento do regime democrático, ligada ao direito à assistência jurídica gratuita do art. 5º, LXXIV.
+
+Sua atuação vai além do processo: inclui orientação jurídica, solução extrajudicial de conflitos e defesa de direitos coletivos.
+
+Os membros ingressam por concurso, têm a garantia da inamovibilidade e não podem advogar fora das atribuições institucionais.
+
+Os princípios institucionais são os mesmos do Ministério Público: unidade, indivisibilidade e independência funcional.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa sem recursos é despejada e não tem como contratar advogado. Ela procura a Defensoria Pública, que a orienta e, se for o caso, ajuíza a ação sem cobrar nada.
+
+**ATENÇÃO**
+
+O texto fala em necessitados, na forma do art. 5º, LXXIV, que exige comprovação de insuficiência de recursos. A autonomia das Defensorias (§§ 2º e 3º) tem explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Necessitado*: pessoa que comprova não ter recursos para pagar a defesa.
+- *Assistência jurídica integral*: atendimento completo, da orientação ao processo.
+- *Inamovibilidade*: garantia de não ser transferido contra a vontade.
+
+**CAMADA EXTERNA**
+
+- A lei complementar de organização da Defensoria Pública fica na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: instituição permanente essencial à função jurisdicional do e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 134, §§ 2º e 3º — Autonomia das Defensorias Públicas
+
+- **TARGET:** `CF88:ART.134:PAR.2` · `ENTENDA/CF88:ART.134:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 134, §§ 2º e 3º — Autonomia das Defensorias Públicas
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.134:PAR.3`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.134`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 180 palavras · 1600 bytes · referências 2
+- **Motivo da seleção:** Bloco: autonomia funcional e administrativa e iniciativa orcamentaria das Defensorias estaduais (§ 2º), estendidas a Uniao e Distrito Federal (§ 3º).
+
+**O QUE DIZ**
+
+O § 2º garante às Defensorias Públicas dos Estados autonomia funcional e administrativa. Elas têm a iniciativa da sua proposta orçamentária, que respeita os limites da lei de diretrizes orçamentárias e se subordina ao art. 99, § 2º. O § 3º estende essa regra às Defensorias Públicas da União e do Distrito Federal.
+
+**O QUE SIGNIFICA**
+
+A autonomia funcional significa que a Defensoria exerce suas funções sem subordinação ao Executivo.
+
+A instituição organiza a própria estrutura e elabora a própria proposta de orçamento, dentro dos limites da lei de diretrizes orçamentárias.
+
+O § 3º estende essas garantias à Defensoria da União e à do Distrito Federal.
+
+**EXEMPLO PRÁTICO**
+
+A Defensoria Pública de um Estado elabora sua proposta orçamentária e a encaminha dentro dos limites da lei de diretrizes orçamentárias, sem que a Secretaria de Governo possa cortá-la livremente.
+
+**ATENÇÃO**
+
+A remissão ao art. 99, § 2º, trata do encaminhamento da proposta orçamentária. A autonomia não dispensa os limites da lei de diretrizes orçamentárias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Autonomia funcional*: liberdade para exercer as funções sem subordinação a outro Poder.
+- *Proposta orçamentária*: previsão de receitas e despesas que a instituição envia para compor o orçamento.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: defensorias públicas da união e do distrito federal)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.135
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 135 — Remuneração das carreiras jurídicas
+
+- **TARGET:** `CF88:ART.135` · `ENTENDA/CF88:ART.135/BASE/1`
+- **DISPLAY TITLE:** Art. 135 — Remuneração das carreiras jurídicas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 149 palavras · 1265 bytes · referências 0
+- **Motivo da seleção:** Visao geral: remuneracao por subsidio para as carreiras das Secoes II e III.
+
+**O QUE DIZ**
+
+O art. 135 determina que os servidores das carreiras disciplinadas nas Seções II e III do Capítulo sejam remunerados na forma do art. 39, § 4º.
+
+**O QUE SIGNIFICA**
+
+O artigo alcança as carreiras disciplinadas nas Seções II e III do Capítulo das funções essenciais à Justiça, como a advocacia pública.
+
+O art. 39, § 4º, prevê a remuneração por subsídio, fixado em parcela única. Isso significa que esses servidores recebem um valor único, sem gratificações, adicionais ou outras parcelas acrescidas ao subsídio.
+
+**EXEMPLO PRÁTICO**
+
+Um procurador do Estado não recebe salário-base mais gratificações por desempenho: recebe um subsídio em parcela única, fixado em lei.
+
+**ATENÇÃO**
+
+O artigo remete ao art. 39, § 4º. As parcelas que podem ser pagas além do subsídio, como as de caráter indenizatório, são temas da lei e da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Subsídio*: remuneração fixada em parcela única, sem acréscimo de gratificações.
+- *Parcela indenizatória*: valor pago para ressarcir despesa, e não como remuneração.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: das carreiras disciplinadas nas seções ii e iii)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.136
+
+Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 136 — Estado de defesa
+
+- **TARGET:** `CF88:ART.136` · `ENTENDA/CF88:ART.136/BASE/1`
+- **DISPLAY TITLE:** Art. 136 — Estado de defesa
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 292 palavras · 2140 bytes · referências 0
+- **Motivo da seleção:** Visao geral: requisitos, finalidade, duracao e mapa do regime do estado de defesa.
+
+**O QUE DIZ**
+
+O art. 136 permite que o Presidente da República, depois de ouvir o Conselho da República e o Conselho de Defesa Nacional, decrete estado de defesa. A medida se limita a locais restritos e determinados e serve para preservar ou restabelecer com rapidez a ordem pública ou a paz social em duas situações: ameaça de instabilidade institucional grave e iminente, ou dano causado por calamidade natural de grandes proporções. O § 2º limita a duração a trinta dias, com uma prorrogação por igual período se persistirem as razões. Os demais parágrafos tratam das medidas permitidas, que seguem os termos e limites da lei, das garantias dos presos e do controle pelo Congresso.
+
+**O QUE SIGNIFICA**
+
+O estado de defesa é a primeira e mais leve das medidas excepcionais da Constituição. Ele permite restringir alguns direitos para enfrentar uma crise localizada.
+
+Há limites claros. A medida só vale para locais restritos e determinados, e não para o país inteiro. As hipóteses são duas: instabilidade institucional grave e iminente, ou calamidade natural de grandes proporções.
+
+O Presidente decreta a medida antes de qualquer autorização, mas precisa ouvir os dois Conselhos e submeter o decreto ao Congresso, que pode rejeitá-lo.
+
+O prazo é curto: até trinta dias, com uma única prorrogação.
+
+**EXEMPLO PRÁTICO**
+
+Uma enchente de grandes proporções destrói parte de uma região e provoca saques e desordem. O Presidente, depois de ouvir os Conselhos, decreta estado de defesa apenas nos municípios atingidos e o envia ao Congresso.
+
+**ATENÇÃO**
+
+O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presidente. As medidas permitidas são apenas as do § 1º, com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Estado de defesa*: medida excepcional e temporária para enfrentar crise localizada.
+- *Instabilidade institucional*: ameaça ao funcionamento normal das instituições.
+- *Paz social*: convivência pacífica na sociedade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: conselho da república e o conselho de defesa)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 136, § 1º — Medidas do estado de defesa
+
+- **TARGET:** `CF88:ART.136:PAR.1` · `ENTENDA/CF88:ART.136:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 136, § 1º — Medidas do estado de defesa
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.136`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 1851 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: conteudo obrigatorio do decreto e lista fechada de medidas coercitivas.
+
+**O QUE DIZ**
+
+O § 1º exige que o decreto do estado de defesa fixe o tempo de duração, especifique as áreas abrangidas e indique, nos termos e limites da lei, as medidas coercitivas que vão vigorar, escolhidas entre as previstas. As medidas são restrições aos direitos de reunião, inclusive no interior das associações, ao sigilo de correspondência e ao sigilo das comunicações telegráfica e telefônica. Em caso de calamidade pública, também é possível ocupar e usar temporariamente bens e serviços públicos, e a União responde pelos danos e custos.
+
+**O QUE SIGNIFICA**
+
+O decreto não é um cheque em branco. Ele precisa dizer por quanto tempo vale, onde vale e quais medidas serão aplicadas.
+
+As medidas possíveis estão listadas no próprio parágrafo, e o decreto escolhe entre elas. Fora delas, nenhuma outra restrição de direitos é autorizada pelo estado de defesa.
+
+A ocupação de bens e serviços públicos só é admitida em caso de calamidade pública, e a União arca com os prejuízos.
+
+**EXEMPLO PRÁTICO**
+
+Diante de uma crise institucional em uma capital, o decreto restringe reuniões em determinadas praças por quinze dias. O decreto não pode, por exemplo, autorizar busca em residências, porque essa medida não está na lista.
+
+**ATENÇÃO**
+
+As medidas são aplicadas nos termos e limites da lei. A restrição ao sigilo das comunicações não dispensa os limites legais e o controle do Congresso.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Medida coercitiva*: medida imposta pelo Estado mesmo contra a vontade das pessoas.
+- *Sigilo de correspondência*: proteção do conteúdo de cartas e mensagens contra acesso de terceiros.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nos termos e limites da lei as medidas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 136, § 3º — Garantias do preso no estado de defesa
+
+- **TARGET:** `CF88:ART.136:PAR.3` · `ENTENDA/CF88:ART.136:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 136, § 3º — Garantias do preso no estado de defesa
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.136`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 272 palavras · 1907 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: comunicacao da prisao ao juiz, declaracao do estado fisico e mental, limite de dez dias e vedacao de incomunicabilidade.
+
+**O QUE DIZ**
+
+O § 3º fixa regras para a prisão durante o estado de defesa. Quando o executor da medida prende alguém por crime contra o Estado, comunica imediatamente o juiz competente, que relaxa a prisão se ela for ilegal; o preso pode pedir à autoridade policial exame de corpo de delito. A comunicação vem com declaração da autoridade sobre o estado físico e mental do detido no momento da autuação. A prisão ou detenção não passa de dez dias, salvo autorização do Judiciário, e é proibida a incomunicabilidade do preso.
+
+**O QUE SIGNIFICA**
+
+Mesmo em situação excepcional, o preso não fica sem proteção. O parágrafo mantém o controle judicial sobre as prisões.
+
+O juiz é avisado imediatamente e pode soltar o preso se a prisão for ilegal. A declaração sobre o estado físico e mental do detido no momento da prisão permite verificar depois se houve maus-tratos.
+
+O limite de dez dias só pode ser ultrapassado com autorização judicial. E o preso não pode ser mantido isolado, sem contato com o mundo exterior.
+
+**EXEMPLO PRÁTICO**
+
+Durante o estado de defesa, uma pessoa é presa pelo executor da medida. O juiz recebe a comunicação no mesmo dia, com a declaração sobre o estado físico do detido, e verifica se a prisão é legal.
+
+**ATENÇÃO**
+
+O inciso I trata da prisão por crime contra o Estado; os incisos III e IV valem para a prisão ou detenção de qualquer pessoa durante o estado de defesa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Relaxar a prisão*: mandar soltar o preso porque a prisão é ilegal.
+- *Exame de corpo de delito*: perícia que registra lesões no corpo da pessoa.
+- *Incomunicabilidade*: isolamento total do preso, sem contato com advogado ou família.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: estado físico e mental do detido no momento); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: estado físico e mental do detido no momento)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 136, §§ 4º, 5º, 6º e 7º — Controle do estado de defesa pelo Congresso
+
+- **TARGET:** `CF88:ART.136:PAR.4` · `ENTENDA/CF88:ART.136:PAR.4/BASE/1`
+- **DISPLAY TITLE:** Art. 136, §§ 4º, 5º, 6º e 7º — Controle do estado de defesa pelo Congresso
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.136:PAR.5`, `CF88:ART.136:PAR.6`, `CF88:ART.136:PAR.7`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.136`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 237 palavras · 1908 bytes · referências 0
+- **Motivo da seleção:** Bloco: envio do decreto ao Congresso em vinte e quatro horas, convocacao no recesso, prazo de exame e efeito da rejeicao.
+
+**O QUE DIZ**
+
+O § 4º determina que o Presidente, em até vinte e quatro horas depois de decretar o estado de defesa ou sua prorrogação, envie o ato e a justificação ao Congresso Nacional, que decide por maioria absoluta. O § 5º manda convocar o Congresso extraordinariamente em cinco dias se estiver em recesso. O § 6º fixa dez dias para o exame do decreto, contados do recebimento, e exige que o Congresso continue funcionando enquanto durar a medida. O § 7º estabelece que, rejeitado o decreto, o estado de defesa cessa imediatamente.
+
+**O QUE SIGNIFICA**
+
+No estado de defesa, o controle do Congresso vem depois do decreto. O Presidente age primeiro, mas precisa submeter a decisão aos parlamentares em prazo muito curto.
+
+O Congresso não pode parar: se estiver em recesso, é convocado, e permanece funcionando durante toda a medida.
+
+A decisão exige maioria absoluta. Se o decreto for rejeitado, a medida termina na hora.
+
+**EXEMPLO PRÁTICO**
+
+O Presidente decreta estado de defesa em uma sexta-feira, durante o recesso. Até sábado ele envia o decreto ao Congresso, que é convocado em até cinco dias e tem dez dias, a partir do recebimento, para decidir.
+
+**ATENÇÃO**
+
+A maioria absoluta do § 4º é exigida para a decisão do Congresso. O fim da medida não apaga a responsabilidade por abusos cometidos durante sua vigência (art. 141).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Recesso*: período em que o Congresso não realiza sessões ordinárias.
+- *Maioria absoluta*: mais da metade de todos os membros, e não só dos presentes.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.137
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 137 — Estado de sítio
+
+- **TARGET:** `CF88:ART.137` · `ENTENDA/CF88:ART.137/BASE/1`
+- **DISPLAY TITLE:** Art. 137 — Estado de sítio
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 1831 bytes · referências 0
+- **Motivo da seleção:** Visao geral: hipoteses, autorizacao previa do Congresso e quorum.
+
+**O QUE DIZ**
+
+O art. 137 permite que o Presidente da República, depois de ouvir os Conselhos da República e de Defesa Nacional, peça ao Congresso Nacional autorização para decretar o estado de sítio. As hipóteses são a comoção grave de repercussão nacional ou a ocorrência de fatos que comprovem a ineficácia de medida tomada no estado de defesa, e a declaração de estado de guerra ou a resposta a agressão armada estrangeira. O parágrafo único exige que o Presidente relate os motivos do pedido e que o Congresso decida por maioria absoluta.
+
+**O QUE SIGNIFICA**
+
+O estado de sítio é mais grave que o estado de defesa, e por isso o controle é mais rigoroso.
+
+A diferença principal está na ordem dos atos. No estado de defesa, o Presidente decreta e depois submete ao Congresso. No estado de sítio, o Presidente precisa pedir autorização antes de decretar.
+
+As hipóteses também são mais graves: comoção de alcance nacional, fracasso do estado de defesa, guerra ou agressão estrangeira.
+
+O pedido deve ser fundamentado, e a autorização exige maioria absoluta.
+
+**EXEMPLO PRÁTICO**
+
+Um estado de defesa decretado para conter grave crise não produz resultado. O Presidente ouve os Conselhos e pede ao Congresso autorização para decretar estado de sítio, relatando por que as medidas anteriores foram ineficazes.
+
+**ATENÇÃO**
+
+Sem autorização prévia do Congresso, o estado de sítio não pode ser decretado. A duração e as medidas dependem da hipótese (arts. 138 e 139).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Estado de sítio*: medida excepcional mais grave, para crises nacionais ou guerra.
+- *Comoção grave*: perturbação séria da ordem, com grande impacto.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao congresso nacional autorização para decretar o estado)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.138
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 138 — Decreto e funcionamento no estado de sítio
+
+- **TARGET:** `CF88:ART.138` · `ENTENDA/CF88:ART.138/BASE/1`
+- **DISPLAY TITLE:** Art. 138 — Decreto e funcionamento no estado de sítio
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 221 palavras · 1680 bytes · referências 0
+- **Motivo da seleção:** Visao geral: conteudo do decreto, executor, convocacao no recesso e funcionamento do Congresso.
+
+**O QUE DIZ**
+
+O art. 138 exige que o decreto do estado de sítio indique sua duração, as normas necessárias para a execução e as garantias constitucionais que ficarão suspensas. Depois de publicado o decreto, o Presidente designa o executor das medidas específicas e as áreas abrangidas. Os parágrafos tratam da duração, da convocação do Congresso durante o recesso e do funcionamento do Congresso até o fim das medidas coercitivas.
+
+**O QUE SIGNIFICA**
+
+Assim como no estado de defesa, o decreto precisa ser claro sobre o que muda. Ele deve dizer quanto tempo dura, como será executado e quais garantias ficam suspensas.
+
+O Presidente escolhe quem executa as medidas e em que áreas, o que mostra que o estado de sítio pode alcançar áreas mais amplas.
+
+Se o pedido de autorização chegar durante o recesso, o Presidente do Senado convoca o Congresso de imediato, para se reunir em até cinco dias. E o Congresso continua funcionando enquanto houver medidas coercitivas.
+
+**EXEMPLO PRÁTICO**
+
+Autorizado o estado de sítio, o decreto é publicado indicando trinta dias de duração e as garantias suspensas. Em seguida, o Presidente designa o executor das medidas e define as áreas atingidas.
+
+**ATENÇÃO**
+
+A duração tem regras diferentes conforme a hipótese (§ 1º, com explicação própria).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Executor das medidas*: autoridade designada para aplicar as medidas do estado de sítio.
+- *Garantia constitucional*: proteção que a Constituição dá a um direito.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: executor das medidas específicas e as áreas abrangidas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 138, § 1º — Duração do estado de sítio
+
+- **TARGET:** `CF88:ART.138:PAR.1` · `ENTENDA/CF88:ART.138:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 138, § 1º — Duração do estado de sítio
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.138`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 178 palavras · 1357 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: limite de trinta dias por periodo na comocao grave e duracao enquanto durar a guerra.
+
+**O QUE DIZ**
+
+O § 1º estabelece que, na hipótese do art. 137, I, o estado de sítio não pode ser decretado por mais de trinta dias, nem prorrogado, a cada vez, por prazo maior. Na hipótese do inciso II, pode ser decretado por todo o tempo que durar a guerra ou a agressão armada estrangeira.
+
+**O QUE SIGNIFICA**
+
+A duração depende da causa.
+
+Na comoção grave ou no fracasso do estado de defesa, cada período tem no máximo trinta dias. O texto admite prorrogações, mas cada uma também limitada a trinta dias, e cada prorrogação exige novo pedido ao Congresso (art. 137, parágrafo único).
+
+Na guerra ou na agressão estrangeira, o limite é o próprio conflito: a medida dura enquanto ele durar.
+
+**EXEMPLO PRÁTICO**
+
+Decretado estado de sítio por comoção grave, ele vale por até trinta dias. Se a crise continuar, o Presidente pede ao Congresso nova autorização para prorrogar por mais até trinta dias.
+
+**ATENÇÃO**
+
+Diferentemente do estado de defesa, o texto não limita o número de prorrogações no caso de comoção grave; limita a duração de cada uma.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Prorrogação*: extensão do prazo de uma medida.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: decretado por mais de trinta dias nem prorrogado)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.139
+
+Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 139 — Medidas no estado de sítio por comoção grave
+
+- **TARGET:** `CF88:ART.139` · `ENTENDA/CF88:ART.139/BASE/1`
+- **DISPLAY TITLE:** Art. 139 — Medidas no estado de sítio por comoção grave
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 290 palavras · 2043 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lista fechada de medidas contra as pessoas e ressalva dos pronunciamentos parlamentares.
+
+**O QUE DIZ**
+
+O art. 139 determina que, no estado de sítio decretado com base no art. 137, I, só podem ser tomadas contra as pessoas as medidas da lista. São elas: obrigação de ficar em local determinado; detenção em prédio que não seja destinado a acusados ou condenados por crime comum; restrições, na forma da lei, à inviolabilidade da correspondência e ao sigilo das comunicações, ao dever de prestar informações e à liberdade de imprensa, de radiodifusão e de televisão; suspensão da liberdade de reunião; busca e apreensão em domicílio; intervenção em empresas de serviços públicos; e requisição de bens. O parágrafo único exclui das restrições a difusão de pronunciamentos feitos por parlamentares em suas Casas, se a Mesa a liberar.
+
+**O QUE SIGNIFICA**
+
+Na comoção grave, a lista de medidas é fechada. A palavra só indica que nada além do que está nos incisos pode ser imposto às pessoas.
+
+As medidas são mais fortes que as do estado de defesa: incluem busca e apreensão em domicílio e restrições à imprensa.
+
+O parágrafo único protege a voz do Parlamento: o que os parlamentares dizem nas Casas pode ser divulgado, desde que a Mesa libere.
+
+**EXEMPLO PRÁTICO**
+
+Durante estado de sítio por comoção grave, o executor determina que líderes de um movimento permaneçam em uma cidade específica. Essa medida está prevista. Já a pena de banimento do país não está na lista e não pode ser aplicada.
+
+**ATENÇÃO**
+
+A lista vale para o estado de sítio do art. 137, I. No caso de guerra (inciso II), o texto não traz lista equivalente, e as garantias suspensas são indicadas no decreto (art. 138).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Requisição de bens*: uso de bens particulares pelo poder público em situação de necessidade.
+- *Busca e apreensão*: entrada em local para procurar e recolher objetos ou pessoas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.140
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 140 — Comissão de acompanhamento
+
+- **TARGET:** `CF88:ART.140` · `ENTENDA/CF88:ART.140/BASE/1`
+- **DISPLAY TITLE:** Art. 140 — Comissão de acompanhamento
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 171 palavras · 1348 bytes · referências 0
+- **Motivo da seleção:** Visao geral: comissao parlamentar para fiscalizar as medidas dos estados de defesa e de sitio.
+
+**O QUE DIZ**
+
+O art. 140 determina que a Mesa do Congresso Nacional, depois de ouvir os líderes partidários, forme uma Comissão com cinco parlamentares encarregada de acompanhar e fiscalizar como são executadas as medidas do estado de defesa e do estado de sítio.
+
+**O QUE SIGNIFICA**
+
+Além de autorizar ou aprovar as medidas, o Congresso acompanha de perto a sua execução.
+
+A fiscalização é feita por uma comissão pequena, de cinco parlamentares. A escolha é da Mesa do Congresso, mas os líderes partidários precisam ser ouvidos.
+
+A comissão funciona durante toda a medida, verificando se as restrições aplicadas respeitam o decreto e a Constituição.
+
+**EXEMPLO PRÁTICO**
+
+Durante um estado de defesa, a comissão recebe denúncias de que pessoas foram detidas sem comunicação ao juiz. Ela pode pedir explicações ao executor das medidas e levar o caso ao Congresso.
+
+**ATENÇÃO**
+
+A comissão acompanha e fiscaliza; o texto não lhe dá poder de suspender sozinha as medidas.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Mesa do Congresso Nacional*: órgão que dirige os trabalhos do Congresso em sessão conjunta.
+- *Líder partidário*: parlamentar que representa a bancada de um partido.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.141
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 141 — Fim dos estados de defesa e de sítio
+
+- **TARGET:** `CF88:ART.141` · `ENTENDA/CF88:ART.141/BASE/1`
+- **DISPLAY TITLE:** Art. 141 — Fim dos estados de defesa e de sítio
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 190 palavras · 1482 bytes · referências 0
+- **Motivo da seleção:** Visao geral: cessacao dos efeitos, responsabilidade pelos ilicitos e relato ao Congresso.
+
+**O QUE DIZ**
+
+O art. 141 estabelece que, terminado o estado de defesa ou o estado de sítio, cessam também os seus efeitos, sem prejuízo da responsabilidade pelos ilícitos cometidos por executores ou agentes. O parágrafo único determina que o Presidente relate ao Congresso, por mensagem, as medidas aplicadas, especificando e justificando as providências, com relação nominal dos atingidos e indicação das restrições.
+
+**O QUE SIGNIFICA**
+
+Quando a medida termina, as restrições também terminam. Não há efeitos que continuem depois do fim.
+
+O fim da medida não apaga abusos. Quem cometeu ilegalidades na execução continua respondendo por elas.
+
+O relatório do Presidente informa ao Congresso o que foi feito, contra quem e por quê, com a lista nominal das pessoas atingidas.
+
+**EXEMPLO PRÁTICO**
+
+Encerrado o estado de sítio, um agente que agrediu um detido durante a medida é processado. O fim da medida não o protege. O Presidente envia ao Congresso relatório com o nome de cada pessoa detida e as restrições aplicadas.
+
+**ATENÇÃO**
+
+A responsabilidade alcança executores e agentes que cometeram ilícitos. A mensagem ao Congresso deve ser enviada logo que cesse a medida.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ilícito*: ato contrário à lei.
+- *Relação nominal*: lista com o nome de cada pessoa.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com relação nominal dos atingidos e indicação das); TERM_LOW_UTILITY (palavras_dificeis: Ilícito)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.142
+
+Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 142 — Forças Armadas
+
+- **TARGET:** `CF88:ART.142` · `ENTENDA/CF88:ART.142/BASE/1`
+- **DISPLAY TITLE:** Art. 142 — Forças Armadas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 2138 bytes · referências 0
+- **Motivo da seleção:** Visao geral: composicao, natureza, comando supremo e destinacao das Forcas Armadas; tema com interpretacao controvertida.
+
+**O QUE DIZ**
+
+O art. 142 define as Forças Armadas, que reúnem Marinha, Exército e Aeronáutica. O texto as qualifica como instituições nacionais, permanentes e regulares, organizadas sobre hierarquia e disciplina e submetidas à autoridade suprema do Presidente da República. Destinam-se a defender a Pátria, a garantir os poderes constitucionais e, quando um desses poderes tomar a iniciativa, a garantir a lei e a ordem. Os parágrafos tratam da lei complementar de organização, do habeas corpus nas punições disciplinares e do regime jurídico dos militares.
+
+**O QUE SIGNIFICA**
+
+O texto qualifica as Forças Armadas como permanentes e regulares e as coloca sob a autoridade suprema do Presidente.
+
+A hierarquia e a disciplina são a base da organização.
+
+O texto indica três destinações: defender o país, garantir os poderes constitucionais e, quando um desses poderes tomar a iniciativa, garantir a lei e a ordem.
+
+A lei complementar define normas gerais de organização, preparo e emprego.
+
+**EXEMPLO PRÁTICO**
+
+Diante de grave perturbação da ordem em uma cidade, um dos poderes constitucionais pede o emprego das Forças Armadas para garantia da lei e da ordem, nos termos da lei complementar.
+
+**ATENÇÃO**
+
+O alcance da expressão garantia dos poderes constitucionais é objeto de debate e não deve ser deduzido de leitura isolada do caput. A relação das Forças Armadas com os Poderes é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Hierarquia*: ordenação de autoridade por graus.
+- *Garantia da lei e da ordem*: emprego excepcional das Forças Armadas na segurança interna, por iniciativa de um dos poderes.
+- *Autoridade suprema*: posição mais alta de comando.
+
+**CAMADA EXTERNA**
+
+- A interpretação do caput sobre o papel das Forças Armadas em relação aos Poderes é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+- A lei complementar sobre organização, preparo e emprego das Forças Armadas fica na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 142, § 2º — Habeas corpus e punições disciplinares militares
+
+- **TARGET:** `CF88:ART.142:PAR.2` · `ENTENDA/CF88:ART.142:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 142, § 2º — Habeas corpus e punições disciplinares militares
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.142`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1686 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: vedacao de habeas corpus contra punicoes disciplinares militares, cuja leitura literal nao basta.
+
+**O QUE DIZ**
+
+O § 2º estabelece que não cabe habeas corpus em relação a punições disciplinares militares.
+
+**O QUE SIGNIFICA**
+
+A disciplina é a base da organização militar. O parágrafo afasta o habeas corpus, a ação que protege a liberdade de locomoção, quando a restrição decorre de punição disciplinar.
+
+A regra limita, para esse caso, o direito previsto no art. 5º, LXVIII. Ela se dirige às punições disciplinares, e não a prisões por crime.
+
+A forma de questionar uma punição disciplinar ilegal fica, então, fora do habeas corpus, nos termos da lei e da camada JURISPRUDÊNCIA.
+
+**EXEMPLO PRÁTICO**
+
+Um soldado recebe punição de detenção disciplinar por chegar atrasado ao quartel. Pelo texto, ele não pode usar o habeas corpus para discutir se mereceu a punição.
+
+**ATENÇÃO**
+
+O alcance da vedação não deve ser deduzido apenas do texto: a possibilidade de discutir pelo habeas corpus a legalidade da punição, como a competência de quem a aplicou, é definida pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Habeas corpus*: ação que protege a liberdade de locomoção contra ilegalidade ou abuso.
+- *Punição disciplinar*: sanção administrativa por falta no serviço, diferente da pena por crime.
+
+**CAMADA EXTERNA**
+
+- A distinção entre o mérito da punição e os pressupostos de legalidade examináveis em habeas corpus é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: habeas corpus em relação a punições disciplinares militares)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 142, § 3º — Regime jurídico dos militares
+
+- **TARGET:** `CF88:ART.142:PAR.3` · `ENTENDA/CF88:ART.142:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 142, § 3º — Regime jurídico dos militares
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.142`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 326 palavras · 2284 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: patentes, cargo civil, vedacoes politicas e sindicais, perda do posto e direitos aplicaveis aos militares.
+
+**O QUE DIZ**
+
+O § 3º denomina militares os membros das Forças Armadas e lhes aplica, além do que a lei fixar, regras próprias. Entre elas: as patentes são conferidas pelo Presidente; o militar da ativa que assume cargo civil permanente vai para a reserva, e o que assume cargo civil temporário fica agregado, ressalvada nos dois casos a hipótese do art. 37, XVI, c; são proibidas a sindicalização e a greve; o militar em serviço ativo não pode ser filiado a partido; e o oficial só perde o posto e a patente por decisão de tribunal militar. O inciso VIII estende aos militares direitos dos arts. 7º e 37, e o inciso X remete à lei temas como ingresso, estabilidade, remuneração e inatividade.
+
+**O QUE SIGNIFICA**
+
+O parágrafo cria um regime próprio para os militares, diferente do dos servidores civis.
+
+Há restrições que não existem para os civis: não podem fazer greve nem se sindicalizar, e, na ativa, não podem ser filiados a partido político.
+
+Há também garantias: o oficial só perde posto e patente se um tribunal militar o julgar indigno do oficialato ou incompatível com ele. O oficial condenado a pena de prisão superior a dois anos, por sentença definitiva, é submetido a esse julgamento.
+
+A acumulação com cargo civil segue a exceção do art. 37, XVI, c, para profissionais de saúde.
+
+**EXEMPLO PRÁTICO**
+
+Um capitão do Exército é aprovado em concurso para cargo civil permanente de professor de escola técnica. Fora da exceção do art. 37, XVI, c, ele é transferido para a reserva ao tomar posse.
+
+**ATENÇÃO**
+
+A perda do posto depende de decisão de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Patente*: grau hierárquico do oficial militar.
+- *Reserva*: situação do militar afastado do serviço ativo, mas ainda vinculado às Forças.
+- *Agregado*: militar afastado temporariamente do quadro, sem perder o vínculo.
+- *Oficialato*: condição de oficial militar.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.143
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 143 — Serviço militar
+
+- **TARGET:** `CF88:ART.143` · `ENTENDA/CF88:ART.143/BASE/1`
+- **DISPLAY TITLE:** Art. 143 — Serviço militar
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 1997 bytes · referências 0
+- **Motivo da seleção:** Visao geral: obrigatoriedade do servico militar, servico alternativo e isencoes em tempo de paz.
+
+**O QUE DIZ**
+
+O art. 143 torna o serviço militar obrigatório, nos termos da lei. O § 1º atribui às Forças Armadas, na forma da lei, a tarefa de fixar serviço alternativo para quem, em tempo de paz e depois de alistado, alegar imperativo de consciência para não exercer atividades essencialmente militares. O imperativo pode decorrer de crença religiosa ou de convicção filosófica ou política. O § 2º isenta mulheres e eclesiásticos do serviço militar obrigatório em tempo de paz, sujeitos a outros encargos que a lei lhes atribuir.
+
+**O QUE SIGNIFICA**
+
+A regra geral é a obrigatoriedade, nos termos da lei.
+
+O § 1º concilia essa obrigação com a liberdade de consciência. Quem tem objeção religiosa, filosófica ou política às atividades militares não fica simplesmente dispensado: cumpre um serviço alternativo.
+
+O § 2º cria isenções para mulheres e eclesiásticos, mas apenas em tempo de paz, e a lei pode atribuir a eles outros encargos.
+
+Tanto o serviço alternativo quanto a isenção valem em tempo de paz.
+
+**EXEMPLO PRÁTICO**
+
+Um jovem alistado declara que sua religião o impede de portar armas. Ele não é obrigado a atividades essencialmente militares e cumpre serviço alternativo definido em lei.
+
+**ATENÇÃO**
+
+A recusa a cumprir também o serviço alternativo tem consequências previstas no art. 5º, VIII, e no art. 15, IV, que tratam da privação ou suspensão de direitos.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Imperativo de consciência*: convicção religiosa, filosófica ou política que impede a pessoa de agir de certa forma.
+- *Serviço alternativo*: atividade civil que substitui o serviço militar para quem tem objeção de consciência.
+- *Eclesiástico*: membro do clero de uma religião.
+
+**CAMADA EXTERNA**
+
+- A lei do serviço militar e a lei do serviço alternativo ficam na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a outros encargos que a lei lhes atribuir)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.144
+
+Sem explicação própria: 20 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 144 — Segurança pública
+
+- **TARGET:** `CF88:ART.144` · `ENTENDA/CF88:ART.144/BASE/1`
+- **DISPLAY TITLE:** Art. 144 — Segurança pública
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 306 palavras · 2250 bytes · referências 1
+- **Motivo da seleção:** Visao geral: natureza da seguranca publica, lista de orgaos e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 144 define a segurança pública como dever do Estado, direito e responsabilidade de todos, exercida para preservar a ordem pública e a incolumidade das pessoas e do patrimônio. Os órgãos são a polícia federal, a polícia rodoviária federal, a polícia ferroviária federal, as polícias civis, as polícias militares e corpos de bombeiros militares e as polícias penais federal, estaduais e distrital. Os parágrafos definem as funções de cada órgão, sua subordinação, a lei de organização, as guardas municipais, a remuneração e a segurança viária, que cabe a órgãos ou entidades executivos de trânsito, na forma da lei.
+
+**O QUE SIGNIFICA**
+
+A segurança pública é tarefa do Estado, mas o texto também fala em responsabilidade de todos.
+
+A lista de órgãos divide as funções entre União e Estados. A União mantém as polícias federal, rodoviária federal, ferroviária federal e a penal federal. Os Estados e o Distrito Federal mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais e distrital.
+
+As polícias militares, os bombeiros, as polícias civis e as penais estaduais e distrital subordinam-se aos Governadores.
+
+A lei organiza o funcionamento desses órgãos, e a remuneração dos policiais segue o regime de subsídio (art. 39, § 4º).
+
+**EXEMPLO PRÁTICO**
+
+Um assalto a banco em uma capital mobiliza a polícia militar, que faz o policiamento ostensivo e a prisão em flagrante, e a polícia civil, que investiga. Se o banco for uma empresa pública federal, a investigação pode caber à polícia federal.
+
+**ATENÇÃO**
+
+Os Municípios não estão na lista de órgãos do caput; eles podem criar guardas municipais (§ 8º, com explicação própria). A segurança viária (§ 10) cabe aos órgãos de trânsito, na forma da lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Incolumidade*: estado de quem ou do que não sofreu dano.
+- *Ordem pública*: situação de paz e normalidade na convivência social.
+- *Polícia ostensiva*: policiamento visível, feito por agentes fardados, para prevenir crimes.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: dever do estado direito e responsabilidade de todos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 144, § 1º — Polícia federal
+
+- **TARGET:** `CF88:ART.144:PAR.1` · `ENTENDA/CF88:ART.144:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 144, § 1º — Polícia federal
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.144`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2245 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: natureza e funcoes da policia federal, inclusive a exclusividade de policia judiciaria da Uniao.
+
+**O QUE DIZ**
+
+O § 1º descreve a polícia federal como órgão permanente, instituído por lei, organizado e mantido pela União e estruturado em carreira. Ela apura infrações penais que atinjam a ordem política e social, ou que causem detrimento a bens, serviços e interesses da União, de suas entidades autárquicas e de suas empresas públicas. Também apura outras infrações de repercussão interestadual ou internacional que exijam repressão uniforme, segundo a lei. Também previne e reprime o tráfico de drogas, o contrabando e o descaminho, preservada a atuação da área fazendária e de outros órgãos. Exerce as funções de polícia marítima, aeroportuária e de fronteiras e é, com exclusividade, a polícia judiciária da União.
+
+**O QUE SIGNIFICA**
+
+A polícia federal investiga os crimes que interessam à União.
+
+O primeiro critério são as infrações contra bens e interesses da União e de suas entidades. O texto acrescenta crimes com repercussão interestadual ou internacional que exijam repressão uniforme, segundo a lei.
+
+No tráfico de drogas, contrabando e descaminho, atua sem excluir a Receita e outros órgãos.
+
+Ela exerce, com exclusividade, as funções de polícia judiciária da União.
+
+**EXEMPLO PRÁTICO**
+
+Uma quadrilha comete fraudes bancárias em vários Estados com o mesmo método. Se a lei previr a atuação federal pela repercussão interestadual, a polícia federal pode investigar o caso.
+
+**ATENÇÃO**
+
+A investigação de crimes com repercussão interestadual depende do que dispuser a lei. A exclusividade de polícia judiciária da União não impede a atuação de outros órgãos nas áreas do inciso II.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Polícia judiciária*: polícia que investiga crimes e auxilia o Judiciário.
+- *Descaminho*: entrada ou saída de mercadoria lícita sem pagar os tributos devidos.
+- *Contrabando*: importação ou exportação de mercadoria proibida.
+
+**CAMADA EXTERNA**
+
+- A lei que define as infrações de repercussão interestadual ou internacional fica na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as funções de polícia marítima aeroportuária e de); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: com exclusividade as funções de polícia judiciária da)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 144, § 4º — Polícias civis
+
+- **TARGET:** `CF88:ART.144:PAR.4` · `ENTENDA/CF88:ART.144:PAR.4/BASE/1`
+- **DISPLAY TITLE:** Art. 144, § 4º — Polícias civis
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.144`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 164 palavras · 1328 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: direcao por delegados de carreira e funcoes de policia judiciaria, com ressalvas.
+
+**O QUE DIZ**
+
+O § 4º confia às polícias civis, dirigidas por delegados de polícia de carreira, a função de polícia judiciária e a investigação de infrações penais. Fica ressalvada a competência da União, e ficam excluídas as infrações militares.
+
+**O QUE SIGNIFICA**
+
+A polícia civil é a polícia de investigação dos Estados e do Distrito Federal. Ela apura os crimes e reúne provas para o processo penal.
+
+A direção cabe a delegado de polícia de carreira.
+
+Há duas ressalvas. O que é de competência da União fica com a polícia federal. E as infrações militares não são investigadas pela polícia civil.
+
+**EXEMPLO PRÁTICO**
+
+Um homicídio comum ocorre em uma cidade. A investigação é feita pela polícia civil, que instaura inquérito sob a direção de um delegado. Se o crime fosse militar, a apuração seguiria outro caminho.
+
+**ATENÇÃO**
+
+As duas ressalvas do texto são a competência da União e as infrações militares.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Delegado de polícia*: autoridade que dirige a polícia civil e preside o inquérito.
+- *Inquérito*: investigação feita pela polícia para apurar um crime.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: civis dirigidas por delegados de polícia de carreira)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais
+
+- **TARGET:** `CF88:ART.144:PAR.5` · `ENTENDA/CF88:ART.144:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.144:PAR.5-A`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.144`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1723 bytes · referências 1
+- **Motivo da seleção:** Bloco: policia ostensiva e ordem publica, defesa civil e seguranca dos estabelecimentos penais.
+
+**O QUE DIZ**
+
+O § 5º atribui às polícias militares a polícia ostensiva e a preservação da ordem pública, e aos corpos de bombeiros militares a execução de atividades de defesa civil, somadas às tarefas que a lei lhes atribuir. O § 5º-A atribui às polícias penais, vinculadas ao órgão que administra o sistema penal da respectiva unidade federativa, a segurança dos estabelecimentos penais.
+
+**O QUE SIGNIFICA**
+
+Os dois parágrafos tratam das forças que atuam de forma preventiva ou em áreas específicas.
+
+A polícia militar faz o patrulhamento visível nas ruas e atua para manter a ordem.
+
+Os bombeiros militares cuidam da defesa civil e de outras tarefas que a lei lhes der.
+
+A polícia penal cuida da segurança dos presídios, vinculada ao órgão que administra o sistema penal.
+
+**EXEMPLO PRÁTICO**
+
+Durante uma rebelião em um presídio estadual, a polícia penal atua na segurança interna. Do lado de fora, a polícia militar faz o isolamento da área.
+
+**ATENÇÃO**
+
+O § 6º, explicado na visão geral, subordina essas forças aos Governadores e qualifica as polícias militares e os bombeiros como forças auxiliares e reserva do Exército.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Polícia ostensiva*: policiamento visível, feito por agentes fardados, para prevenir crimes.
+- *Defesa civil*: ações de prevenção e resposta a desastres.
+- *Estabelecimento penal*: local de cumprimento de pena ou de custódia de presos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a polícia ostensiva e a preservação da ordem)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 144, § 8º — Guardas municipais
+
+- **TARGET:** `CF88:ART.144:PAR.8` · `ENTENDA/CF88:ART.144:PAR.8/BASE/1`
+- **DISPLAY TITLE:** Art. 144, § 8º — Guardas municipais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.144`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 128 palavras · 1422 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: faculdade municipal de criar guardas e finalidade declarada no texto; alcance definido em lei e interpretacao.
+
+**O QUE DIZ**
+
+O § 8º permite que os Municípios criem guardas municipais para proteger os próprios bens, serviços e instalações, conforme dispuser a lei.
+
+**O QUE SIGNIFICA**
+
+A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.
+
+A finalidade descrita no texto é a proteção dos bens, serviços e instalações do próprio Município.
+
+Os detalhes de organização e as atribuições da guarda dependem da lei.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cria guarda municipal para proteger escolas, postos de saúde e praças públicas.
+
+**ATENÇÃO**
+
+O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações não deve ser deduzido apenas do texto do parágrafo: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Guarda municipal*: corporação criada pelo Município para proteger seus bens, serviços e instalações.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica remete à Lei n. 13.022, de 2014 (estatuto das guardas municipais), na camada de legislação correlata.
+- A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bens serviços e instalações conforme dispuser a lei)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.145
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 145 — Espécies de tributos e princípios do sistema
+
+- **TARGET:** `CF88:ART.145` · `ENTENDA/CF88:ART.145/BASE/1`
+- **DISPLAY TITLE:** Art. 145 — Espécies de tributos e princípios do sistema
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 284 palavras · 2347 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia comum para impostos, taxas e contribuicao de melhoria e principios do sistema tributario.
+
+**O QUE DIZ**
+
+O art. 145 permite que a União, os Estados, o Distrito Federal e os Municípios instituam impostos, taxas e contribuição de melhoria. As taxas decorrem do exercício do poder de polícia ou da utilização de serviços públicos específicos e divisíveis; a contribuição de melhoria decorre de obras públicas. O § 1º trata do caráter pessoal e da capacidade econômica, o § 2º proíbe que taxas tenham base de cálculo própria de impostos, o § 3º lista princípios do Sistema Tributário Nacional e o § 4º determina que as alterações da legislação tributária busquem atenuar efeitos regressivos.
+
+**O QUE SIGNIFICA**
+
+O artigo apresenta três espécies de tributos que a União, os Estados, o Distrito Federal e os Municípios podem criar, cada um dentro da sua competência e nos termos da lei.
+
+A taxa está ligada, pelo próprio texto, a uma atuação do Estado dirigida ao contribuinte: fiscalização ou serviço. A contribuição de melhoria está ligada a obra pública. Para o imposto, o artigo não exige atuação estatal específica.
+
+Os §§ 3º e 4º trazem princípios gerais: simplicidade, transparência, justiça tributária, cooperação, defesa do meio ambiente e atenuação de efeitos regressivos.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cobra imposto sobre a propriedade urbana, taxa pela coleta de lixo domiciliar e contribuição de melhoria dos imóveis valorizados por uma nova avenida.
+
+**ATENÇÃO**
+
+O artigo não esgota as espécies tributárias da Constituição: há também empréstimos compulsórios e contribuições (arts. 148 e 149). Os §§ 3º e 4º foram incluídos por emenda recente, e sua aplicação no tempo segue as regras da camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Tributo*: valor em dinheiro que o Estado exige por lei, sem caráter de punição.
+- *Contribuição de melhoria*: tributo cobrado de quem teve imóvel valorizado por obra pública.
+- *Efeito regressivo*: quando o tributo pesa proporcionalmente mais sobre quem ganha menos.
+
+**CAMADA EXTERNA**
+
+- Os §§ 3º e 4º têm redação de emenda constitucional recente; regras de transição da reforma tributária ficam no ADCT, na camada externa.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 145, inciso II — Taxas
+
+- **TARGET:** `CF88:ART.145:INC.II` · `ENTENDA/CF88:ART.145:INC.II/BASE/1`
+- **DISPLAY TITLE:** Art. 145, inciso II — Taxas
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.145`, `CF88:ART.145:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1901 bytes · referências 2
+- **Motivo da seleção:** Item: fatos que justificam a taxa (poder de policia e servico publico especifico e divisivel).
+
+**O QUE DIZ**
+
+O inciso II autoriza a cobrança de taxas em duas situações: pelo exercício do poder de polícia, ou pelo uso, efetivo ou potencial, de serviço público específico e divisível prestado ao contribuinte ou colocado à sua disposição.
+
+**O QUE SIGNIFICA**
+
+A taxa depende de uma atuação do Estado ligada ao contribuinte. O texto indica duas situações.
+
+A primeira é o poder de polícia: a fiscalização que o Estado exerce sobre atividades particulares, como o licenciamento de um estabelecimento.
+
+A segunda é o serviço público específico e divisível, que pode ser medido por usuário. Basta que o serviço esteja à disposição: a utilização pode ser efetiva ou potencial.
+
+Serviços prestados a toda a coletividade, sem possibilidade de individualizar o usuário, não se encaixam nessa descrição.
+
+**EXEMPLO PRÁTICO**
+
+Um Município cobra taxa pela coleta de lixo das residências. O serviço está à disposição de cada imóvel, mesmo que o morador fique alguns dias sem colocar o lixo para fora.
+
+**ATENÇÃO**
+
+Quais serviços são específicos e divisíveis não deve ser deduzido apenas do texto; a classificação de cada serviço é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Poder de polícia*: atividade do Estado de fiscalizar e limitar atividades particulares em favor do interesse público.
+- *Serviço divisível*: serviço cuja utilização pode ser medida para cada usuário.
+- *Utilização potencial*: serviço posto à disposição, ainda que o contribuinte não o use.
+
+**CAMADA EXTERNA**
+
+- A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 145, § 1º — Capacidade contributiva
+
+- **TARGET:** `CF88:ART.145:PAR.1` · `ENTENDA/CF88:ART.145:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 145, § 1º — Capacidade contributiva
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.145`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 205 palavras · 1655 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: pessoalidade e capacidade economica dos impostos e faculdade de identificacao do patrimonio pela administracao tributaria.
+
+**O QUE DIZ**
+
+O § 1º determina que os impostos, quando possível, tenham caráter pessoal e sejam graduados conforme a capacidade econômica do contribuinte. Para dar efetividade a esses objetivos, a administração tributária pode identificar o patrimônio, os rendimentos e as atividades econômicas do contribuinte, respeitados os direitos individuais e nos termos da lei.
+
+**O QUE SIGNIFICA**
+
+O parágrafo expressa a ideia de que quem tem mais deve contribuir mais.
+
+O caráter pessoal significa levar em conta a situação de cada contribuinte. A graduação pela capacidade econômica significa ajustar o imposto ao que a pessoa pode pagar.
+
+A expressão do texto que limita a regra ao que for possível mostra que ela é aplicada na medida em que o imposto permite.
+
+Para tornar isso efetivo, a fiscalização pode conhecer o patrimônio e a renda do contribuinte, mas dentro dos limites da lei e dos direitos individuais.
+
+**EXEMPLO PRÁTICO**
+
+No imposto de renda, quem ganha mais paga alíquota maior. É um exemplo de imposto graduado pela capacidade econômica.
+
+**ATENÇÃO**
+
+O texto fala em impostos. A aplicação da capacidade contributiva a outras espécies tributárias e o alcance do acesso a dados do contribuinte são temas da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Capacidade contributiva*: aptidão econômica do contribuinte para pagar tributos.
+- *Administração tributária*: órgãos do Estado que fiscalizam e cobram tributos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o patrimônio os rendimentos e as atividades econômicas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.146
+
+Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 146 — Papel da lei complementar tributária
+
+- **TARGET:** `CF88:ART.146` · `ENTENDA/CF88:ART.146/BASE/1`
+- **DISPLAY TITLE:** Art. 146 — Papel da lei complementar tributária
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 2097 bytes · referências 1
+- **Motivo da seleção:** Visao geral: funcoes da lei complementar em materia tributaria e regime unico de arrecadacao.
+
+**O QUE DIZ**
+
+O art. 146 atribui à lei complementar três funções em matéria tributária: dispor sobre conflitos de competência entre os entes federativos, regular as limitações constitucionais ao poder de tributar e estabelecer normas gerais de legislação tributária. Os §§ 1º a 3º tratam do regime único de arrecadação para microempresas e empresas de pequeno porte e de sua relação com os tributos dos arts. 156-A e 195, V.
+
+**O QUE SIGNIFICA**
+
+A lei complementar funciona como uma ponte entre a Constituição e as leis de cada ente. Ela organiza o sistema tributário de forma nacional.
+
+Ela dispõe sobre os conflitos de competência tributária entre os entes federativos: União, Estados, Distrito Federal e Municípios.
+
+As limitações ao poder de tributar, como as imunidades, também são reguladas por lei complementar.
+
+As normas gerais dão uniformidade a temas como definição de tributos, lançamento, prescrição e decadência.
+
+**EXEMPLO PRÁTICO**
+
+Um Município e um Estado disputam se certa atividade é serviço, sujeita ao imposto municipal, ou circulação de mercadoria, sujeita ao imposto estadual. A lei complementar define a fronteira entre os dois.
+
+**ATENÇÃO**
+
+O inciso III e o regime único (§§ 1º a 3º) têm explicações próprias. A relação com os novos tributos dos arts. 156-A e 195, V, decorre de emenda recente, com regras de transição na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lei complementar*: lei aprovada por maioria absoluta, exigida pela Constituição para certos temas.
+- *Limitações ao poder de tributar*: regras que restringem a criação e a cobrança de tributos.
+- *Conflito de competência*: disputa entre entes sobre quem pode cobrar determinado tributo.
+
+**CAMADA EXTERNA**
+
+- O Código Tributário Nacional e as leis complementares tributárias ficam na camada de legislação correlata; as regras de transição da reforma tributária ficam no ADCT.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: regular as limitações constitucionais ao poder de tributar)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 146, inciso III — Normas gerais de legislação tributária
+
+- **TARGET:** `CF88:ART.146:INC.III` · `ENTENDA/CF88:ART.146:INC.III/BASE/1`
+- **DISPLAY TITLE:** Art. 146, inciso III — Normas gerais de legislação tributária
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.146`, `CF88:ART.146:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 245 palavras · 1987 bytes · referências 1
+- **Motivo da seleção:** Item: materias reservadas as normas gerais de lei complementar.
+
+**O QUE DIZ**
+
+O inciso III reserva à lei complementar as normas gerais de legislação tributária, especialmente sobre: definição de tributos e espécies e, quanto aos impostos discriminados na Constituição, seus fatos geradores, bases de cálculo e contribuintes; obrigação, lançamento, crédito, prescrição e decadência tributários; adequado tratamento tributário ao ato cooperativo; e tratamento diferenciado e favorecido para microempresas e empresas de pequeno porte.
+
+**O QUE SIGNIFICA**
+
+O inciso indica temas que precisam de tratamento uniforme no país.
+
+A definição dos elementos dos impostos discriminados na Constituição fica na lei complementar.
+
+Prescrição e decadência, que limitam no tempo a cobrança, também ficam com a lei complementar.
+
+As alíneas c e d tratam de setores que recebem atenção especial: as cooperativas e as micro e pequenas empresas.
+
+A palavra especialmente mostra que a lista não é fechada.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer saber em quanto tempo perde o direito de cobrar um imposto não pago. A resposta está nas normas gerais de prescrição e decadência, fixadas em lei complementar e aplicáveis à União, aos Estados, ao Distrito Federal e aos Municípios.
+
+**ATENÇÃO**
+
+As alíneas c e d mencionam também os tributos dos arts. 156-A e 195, V, incluídos por emenda recente, com regras de transição na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Fato gerador*: situação prevista em lei que faz nascer a obrigação de pagar o tributo.
+- *Lançamento*: procedimento que constitui oficialmente o crédito tributário.
+- *Decadência*: perda do direito de constituir o crédito pelo decurso do prazo.
+- *Prescrição*: perda do direito de cobrar o crédito pelo decurso do prazo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
+
+- **TARGET:** `CF88:ART.146:PAR.1` · `ENTENDA/CF88:ART.146:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 146, §§ 1º, 2º e 3º — Regime único de arrecadação
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.146:PAR.2`, `CF88:ART.146:PAR.3`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.146`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 274 palavras · 2354 bytes · referências 0
+- **Motivo da seleção:** Bloco: regime unico das micro e pequenas empresas e opcao quanto aos tributos dos arts. 156-A e 195, V.
+
+**O QUE DIZ**
+
+O § 1º permite que a lei complementar do inciso III, d, institua um regime único para arrecadar impostos e contribuições federais, estaduais, distritais e municipais. Esse regime é opcional para o contribuinte, admite condições de enquadramento diferentes por Estado, tem recolhimento unificado e centralizado com repasse imediato aos entes e permite fiscalização e cobrança compartilhadas, com cadastro nacional único. O § 2º permite que o optante recolha fora do regime os tributos dos arts. 156-A e 195, V, e o § 3º regula os créditos desses tributos quando recolhidos pelo regime único.
+
+**O QUE SIGNIFICA**
+
+O regime único permite que micro e pequenas empresas recolham vários tributos em um só recolhimento.
+
+O regime é uma opção, e não uma obrigação. O dinheiro arrecadado é repassado imediatamente a cada ente, sem retenção.
+
+Os §§ 2º e 3º tratam da relação com os novos tributos sobre bens e serviços. A empresa pode recolhê-los fora do regime único. Se recolher dentro dele, não aproveita créditos desses tributos, mas quem compra dela pode aproveitar crédito no valor cobrado pelo regime único.
+
+**EXEMPLO PRÁTICO**
+
+Uma pequena padaria opta pelo regime único e paga mensalmente uma guia que reúne vários tributos. Se vende para uma empresa que não está no regime, essa empresa pode aproveitar crédito equivalente ao valor recolhido pela padaria.
+
+**ATENÇÃO**
+
+Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária. A aplicação no tempo dessas regras depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Regime único de arrecadação*: sistema que reúne vários tributos em um só recolhimento.
+- *Crédito tributário*: neste contexto, valor de tributo pago antes que pode ser abatido do tributo devido depois.
+- *Optante*: contribuinte que escolheu aderir ao regime.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do regime único e as regras de transição da reforma tributária ficam na camada de legislação correlata e no ADCT.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.146-A
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 146-A — Tributação e concorrência
+
+- **TARGET:** `CF88:ART.146-A` · `ENTENDA/CF88:ART.146-A/BASE/1`
+- **DISPLAY TITLE:** Art. 146-A — Tributação e concorrência
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 175 palavras · 1428 bytes · referências 0
+- **Motivo da seleção:** Visao geral: criterios especiais de tributacao para prevenir desequilibrios da concorrencia.
+
+**O QUE DIZ**
+
+O art. 146-A autoriza a lei complementar a criar critérios especiais de tributação para prevenir desequilíbrios na concorrência, sem prejuízo da competência da União para, por lei, editar normas com o mesmo objetivo.
+
+**O QUE SIGNIFICA**
+
+O tributo pode afetar a concorrência entre empresas. Se uma empresa deixa de pagar tributos de forma sistemática, por exemplo, consegue vender mais barato e prejudica as concorrentes que pagam.
+
+O artigo permite que a lei complementar crie regras especiais de tributação com esse objetivo, que é declarado no próprio texto.
+
+A parte final preserva a competência da União para tratar do mesmo objetivo por lei.
+
+**EXEMPLO PRÁTICO**
+
+Em um setor em que algumas empresas sonegam tributos de forma reiterada, uma lei complementar cria regime especial de fiscalização e recolhimento para restabelecer condições iguais de concorrência.
+
+**ATENÇÃO**
+
+O artigo é permissivo: a lei complementar pode criar os critérios, mas o texto não diz quais são. Os limites desses regimes especiais são tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Concorrência*: disputa entre empresas por clientes no mercado.
+- *Desequilíbrio da concorrência*: vantagem indevida de uma empresa sobre as demais.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.147
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 147 — Impostos nos Territórios e no Distrito Federal
+
+- **TARGET:** `CF88:ART.147` · `ENTENDA/CF88:ART.147/BASE/1`
+- **DISPLAY TITLE:** Art. 147 — Impostos nos Territórios e no Distrito Federal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1444 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia tributaria da Uniao nos Territorios e do Distrito Federal para impostos municipais.
+
+**O QUE DIZ**
+
+O art. 147 atribui à União, nos Territórios Federais, os impostos estaduais e, se o Território não estiver dividido em Municípios, também os impostos municipais. Ao Distrito Federal cabem os impostos municipais.
+
+**O QUE SIGNIFICA**
+
+O artigo resolve quem cobra impostos em situações especiais da Federação.
+
+O Território Federal não é Estado. Por isso, os impostos que seriam estaduais ficam com a União. Se o Território não tiver Municípios, a União também cobra os impostos municipais.
+
+O Distrito Federal não pode ser dividido em Municípios (art. 32). Assim, ele próprio acumula os impostos municipais, além dos estaduais que já lhe cabem em outros dispositivos da Constituição.
+
+**EXEMPLO PRÁTICO**
+
+No Distrito Federal, o imposto sobre a propriedade predial e territorial urbana, que em outros lugares é municipal, é cobrado pelo próprio Distrito Federal.
+
+**ATENÇÃO**
+
+A competência do Distrito Federal para os impostos estaduais está em outros dispositivos (art. 155). Este artigo trata apenas dos municipais no Distrito Federal.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Território Federal*: divisão administrativa ligada à União, prevista na Constituição.
+- *Cumulativamente*: ao mesmo tempo, somando uma competência a outra.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: impostos municipais ao distrito federal cabem os impostos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.148
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 148 — Empréstimos compulsórios
+
+- **TARGET:** `CF88:ART.148` · `ENTENDA/CF88:ART.148/BASE/1`
+- **DISPLAY TITLE:** Art. 148 — Empréstimos compulsórios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1867 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia da Uniao, exigencia de lei complementar, hipoteses e vinculacao dos recursos.
+
+**O QUE DIZ**
+
+O art. 148 permite que a União, por lei complementar, institua empréstimos compulsórios em duas hipóteses: para cobrir despesas extraordinárias que decorram de calamidade pública ou de guerra externa, inclusive de sua iminência; e no caso de investimento público urgente e de relevante interesse nacional, observado o art. 150, III, b. O parágrafo único vincula a aplicação dos recursos à despesa que justificou a criação do empréstimo.
+
+**O QUE SIGNIFICA**
+
+O empréstimo compulsório é um tributo que o Estado cobra com a promessa de devolver depois. É uma medida excepcional, e o artigo a cerca de cuidados.
+
+Só a União pode criá-lo, e apenas por lei complementar.
+
+As hipóteses são duas: emergências graves, como calamidade e guerra, e investimentos urgentes de relevante interesse nacional. Na segunda hipótese, deve ser respeitada a anterioridade do exercício (art. 150, III, b).
+
+O dinheiro arrecadado não pode ir para qualquer finalidade: deve ser aplicado na despesa que motivou a cobrança.
+
+**EXEMPLO PRÁTICO**
+
+Uma calamidade de grandes proporções exige despesas extraordinárias. A União aprova lei complementar instituindo empréstimo compulsório e usa os valores arrecadados para enfrentar a calamidade.
+
+**ATENÇÃO**
+
+A regra de devolução e suas condições ficam na lei complementar que instituir o empréstimo. A exceção à anterioridade vale para a hipótese do inciso I (art. 150, § 1º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Empréstimo compulsório*: tributo cobrado pela União com obrigação de restituição posterior.
+- *Iminência*: situação que está prestes a acontecer.
+- *Vinculação*: obrigação de usar o recurso apenas em determinada finalidade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: urgente e de relevante interesse nacional observado o); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Uma calamidade de grandes proporções exige despesas extraord)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.149
+
+Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 149 — Contribuições especiais
+
+- **TARGET:** `CF88:ART.149` · `ENTENDA/CF88:ART.149/BASE/1`
+- **DISPLAY TITLE:** Art. 149 — Contribuições especiais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 292 palavras · 2230 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia exclusiva da Uniao para contribuicoes sociais, de intervencao e corporativas e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 149 reserva somente à União a criação de três tipos de contribuição: sociais, de intervenção no domínio econômico, e as de interesse de categorias profissionais ou econômicas. Elas servem como instrumento de atuação da União nessas áreas e observam os arts. 146, III, e 150, I e III, sem prejuízo do art. 195, § 6º, para as contribuições a que ele se refere. Os parágrafos tratam das contribuições dos servidores para o regime próprio de previdência, das regras de incidência sobre exportação e importação, da equiparação do importador pessoa natural e da incidência única definida em lei.
+
+**O QUE SIGNIFICA**
+
+As contribuições são tributos ligados a uma finalidade. O artigo indica três tipos.
+
+As contribuições sociais financiam áreas como a seguridade social. As de intervenção no domínio econômico servem para a União atuar em setores da economia. As de interesse de categorias financiam entidades profissionais ou econômicas.
+
+A competência do caput é exclusiva da União. O § 1º, porém, determina que a União, os Estados, o Distrito Federal e os Municípios instituam contribuição dos seus servidores para o regime próprio de previdência.
+
+A remissão ao art. 195, § 6º, indica que as contribuições da seguridade social seguem prazo especial de anterioridade.
+
+**EXEMPLO PRÁTICO**
+
+A União institui contribuição de intervenção sobre a importação e a comercialização de combustíveis, para atuar nesse setor. A contribuição não incide sobre as receitas de exportação, conforme o § 2º.
+
+**ATENÇÃO**
+
+A contribuição para iluminação pública é municipal e está em outro artigo (art. 149-A). As contribuições do § 1º e do § 2º têm explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Contribuição de intervenção no domínio econômico*: tributo usado pela União para atuar em um setor da economia.
+- *Regime próprio de previdência*: previdência dos servidores com cargo efetivo de cada ente.
+- *Categoria profissional*: grupo de pessoas que exercem a mesma profissão.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: arts 146 iii e 150 i e iii); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 149, §§ 1º, 1º-A, 1º-B e 1º-C — Contribuição previdenciária dos servidores
+
+- **TARGET:** `CF88:ART.149:PAR.1` · `ENTENDA/CF88:ART.149:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 149, §§ 1º, 1º-A, 1º-B e 1º-C — Contribuição previdenciária dos servidores
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.149:PAR.1-A`, `CF88:ART.149:PAR.1-B`, `CF88:ART.149:PAR.1-C`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.149`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2398 bytes · referências 0
+- **Motivo da seleção:** Bloco: contribuicao para o regime proprio, aliquotas progressivas, base ampliada em deficit e contribuicao extraordinaria da Uniao.
+
+**O QUE DIZ**
+
+O § 1º determina que a União, os Estados, o Distrito Federal e os Municípios instituam, por lei, contribuições para custear o regime próprio de previdência, cobradas dos servidores ativos, aposentados e pensionistas, com possibilidade de alíquotas progressivas. O § 1º-A permite, havendo deficit atuarial, que a contribuição dos aposentados e pensionistas incida sobre o valor dos proventos que supere o salário-mínimo. O § 1º-B faculta à União, demonstrada a insuficiência dessa medida, instituir contribuição extraordinária, e o § 1º-C exige que ela seja criada junto com outras medidas e vigore por período determinado.
+
+**O QUE SIGNIFICA**
+
+Os servidores com regime próprio contribuem para sua previdência, inclusive depois de aposentados.
+
+As alíquotas progressivas permitem cobrar percentual maior de quem ganha mais.
+
+Os §§ 1º-A a 1º-C criam uma escala de medidas para o deficit atuarial. Primeiro, a contribuição de aposentados e pensionistas pode alcançar a parte dos proventos acima do salário-mínimo. Se isso não bastar, a União pode criar contribuição extraordinária, que precisa vir com outras medidas e ter prazo determinado.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado com deficit atuarial no regime próprio aprova lei para que a contribuição dos aposentados incida sobre a parte da aposentadoria que ultrapassa o salário-mínimo.
+
+**ATENÇÃO**
+
+A contribuição extraordinária do § 1º-B está prevista no âmbito da União. A instituição das contribuições depende de lei de cada ente, e regras de transição da reforma previdenciária ficam na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Deficit atuarial*: falta de recursos, calculada a longo prazo, para pagar os benefícios futuros.
+- *Alíquota progressiva*: percentual que aumenta conforme cresce a base de cálculo.
+- *Proventos*: valor recebido pelo servidor aposentado.
+
+**CAMADA EXTERNA**
+
+- As regras de transição da emenda que alterou o regime próprio de previdência ficam na camada externa.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 149, § 2º — Incidência das contribuições sociais e de intervenção
+
+- **TARGET:** `CF88:ART.149:PAR.2` · `ENTENDA/CF88:ART.149:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 149, § 2º — Incidência das contribuições sociais e de intervenção
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.149`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1663 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: nao incidencia sobre exportacao, incidencia sobre importacao e tipos de aliquota.
+
+**O QUE DIZ**
+
+O § 2º estabelece três regras para as contribuições sociais e de intervenção no domínio econômico do caput. Elas não incidem sobre receitas de exportação e incidem também sobre a importação de produtos estrangeiros ou serviços. Suas alíquotas podem ser ad valorem, sobre o faturamento, a receita bruta, o valor da operação ou, na importação, o valor aduaneiro, ou específicas, sobre a unidade de medida adotada.
+
+**O QUE SIGNIFICA**
+
+O parágrafo define três pontos.
+
+Primeiro, as receitas de exportação ficam fora dessas contribuições.
+
+Segundo, a importação de bens e serviços é alcançada.
+
+Terceiro, há dois modos de calcular a alíquota. Na ad valorem, aplica-se um percentual sobre um valor, como o faturamento. Na específica, cobra-se um valor fixo por unidade, como por litro ou por tonelada.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa que exporta café não paga a contribuição sobre a receita da venda ao exterior. Já a empresa que importa equipamentos paga a contribuição sobre o valor aduaneiro da importação.
+
+**ATENÇÃO**
+
+O parágrafo trata das contribuições sociais e de intervenção do caput, e não das contribuições de interesse de categorias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ad valorem*: calculado como percentual sobre um valor.
+- *Alíquota específica*: valor fixo cobrado por unidade de medida.
+- *Valor aduaneiro*: valor da mercadoria importada usado para cálculo dos tributos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as contribuições sociais e de intervenção no domínio)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.149-A
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 149-A — Contribuição de iluminação pública
+
+- **TARGET:** `CF88:ART.149-A` · `ENTENDA/CF88:ART.149-A/BASE/1`
+- **DISPLAY TITLE:** Art. 149-A — Contribuição de iluminação pública
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1492 bytes · referências 0
+- **Motivo da seleção:** Visao geral: contribuicao municipal e distrital para iluminacao publica e monitoramento de logradouros.
+
+**O QUE DIZ**
+
+O art. 149-A permite que os Municípios e o Distrito Federal instituam, por suas leis, contribuição para custear, expandir e melhorar o serviço de iluminação pública e sistemas de monitoramento para a segurança e a preservação de logradouros públicos, observado o art. 150, I e III. O parágrafo único permite cobrar a contribuição na fatura de energia elétrica.
+
+**O QUE SIGNIFICA**
+
+A iluminação pública beneficia todos ao mesmo tempo, e não é possível medir quanto cada pessoa usa. Por isso, o artigo prevê uma contribuição própria para financiá-la.
+
+A contribuição também pode financiar sistemas de monitoramento de ruas e praças, voltados à segurança e à preservação desses espaços.
+
+A cobrança respeita a legalidade e a anterioridade (art. 150, I e III) e pode vir junto com a conta de luz.
+
+**EXEMPLO PRÁTICO**
+
+Um Município aprova lei criando a contribuição e passa a cobrá-la na fatura mensal de energia elétrica dos moradores.
+
+**ATENÇÃO**
+
+A contribuição é municipal e distrital. Os critérios de quem paga e quanto paga ficam na lei de cada ente, e seus limites são tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Logradouro público*: espaço de uso comum, como ruas, praças e avenidas.
+- *Custeio*: pagamento das despesas de manutenção.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.149-B
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 149-B — Regras comuns ao IBS e à CBS
+
+- **TARGET:** `CF88:ART.149-B` · `ENTENDA/CF88:ART.149-B/BASE/1`
+- **DISPLAY TITLE:** Art. 149-B — Regras comuns ao IBS e à CBS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 1997 bytes · referências 0
+- **Motivo da seleção:** Visao geral: identidade de regras entre o imposto do art. 156-A e a contribuicao do art. 195, V.
+
+**O QUE DIZ**
+
+O art. 149-B determina que o imposto do art. 156-A e a contribuição do art. 195, V, observem as mesmas regras sobre fato gerador, base de cálculo, casos de não incidência e sujeitos passivos; imunidades; regimes específicos, diferenciados ou favorecidos; e não cumulatividade e creditamento. O parágrafo único manda aplicar a esses tributos as imunidades do art. 150, VI, e afasta deles o art. 195, § 7º.
+
+**O QUE SIGNIFICA**
+
+O artigo trata dos dois tributos sobre bens e serviços criados pela reforma tributária: o imposto do art. 156-A, dos Estados, do Distrito Federal e dos Municípios, e a contribuição do art. 195, V, da União.
+
+Embora pertençam a entes diferentes, os dois seguem as mesmas regras básicas. Isso significa que um mesmo fato é tratado da mesma forma pelos dois tributos.
+
+O parágrafo único aplica a ambos as imunidades gerais de impostos, mesmo à contribuição, e afasta a imunidade das entidades beneficentes prevista para as contribuições de seguridade.
+
+**EXEMPLO PRÁTICO**
+
+Uma operação que não sofre incidência do imposto do art. 156-A também não sofre incidência da contribuição do art. 195, V, porque as hipóteses de não incidência são as mesmas.
+
+**ATENÇÃO**
+
+Os tributos dos arts. 156-A e 195, V, foram criados por emenda recente. A partir de quando cada regra se aplica depende de regra de transição do ADCT, consultada na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Não cumulatividade*: técnica que permite abater o tributo pago nas etapas anteriores.
+- *Sujeito passivo*: pessoa obrigada a pagar o tributo.
+- *Imunidade*: proibição constitucional de cobrar tributo em certos casos.
+
+**CAMADA EXTERNA**
+
+- Regras de transição da reforma tributária (ADCT) e leis complementares do imposto e da contribuição sobre bens e serviços ficam na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.149-C
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 149-C — Tributação das compras públicas
+
+- **TARGET:** `CF88:ART.149-C` · `ENTENDA/CF88:ART.149-C/BASE/1`
+- **DISPLAY TITLE:** Art. 149-C — Tributação das compras públicas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 1905 bytes · referências 0
+- **Motivo da seleção:** Visao geral: destinacao ao ente contratante da arrecadacao sobre operacoes contratadas pela administracao publica.
+
+**O QUE DIZ**
+
+O art. 149-C determina que a arrecadação do imposto do art. 156-A e da contribuição do art. 195, V, sobre operações contratadas pela administração pública direta, autarquias e fundações públicas, inclusive importações, seja destinada integralmente ao ente contratante. Isso ocorre pela redução a zero das alíquotas devidas aos demais entes e pela elevação equivalente da alíquota do ente contratante. Os parágrafos permitem alíquotas reduzidas de modo uniforme e hipóteses, previstas em lei complementar, em que a regra não se aplica, e tratam das importações feitas pela administração.
+
+**O QUE SIGNIFICA**
+
+Quando o poder público compra bens ou serviços, parte do preço é tributo. O artigo faz com que esse tributo fique com o próprio ente que compra.
+
+Na prática, as alíquotas dos outros entes caem a zero, e a do ente comprador sobe na mesma medida. O valor total não muda, mas o destino da arrecadação sim.
+
+A lei complementar pode prever alíquotas reduzidas para essas operações e casos em que a regra não se aplica.
+
+**EXEMPLO PRÁTICO**
+
+Um Município compra computadores para suas escolas. O tributo sobre essa compra, em vez de ser dividido entre União, Estado e Município, fica integralmente com o Município.
+
+**ATENÇÃO**
+
+A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ente contratante*: ente público que faz a compra ou contrata o serviço.
+- *Alíquota*: percentual aplicado para calcular o tributo.
+
+**CAMADA EXTERNA**
+
+- Regras de transição da reforma tributária ficam no ADCT, na camada externa.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.150
+
+Reutilizada do piloto (aprovada): `ENTENDA/CF88:ART.150/BASE/1`.
+
+Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 150, inciso I — Legalidade tributária
+
+- **TARGET:** `CF88:ART.150:INC.I` · `ENTENDA/CF88:ART.150:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 150, inciso I — Legalidade tributária
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 120 palavras · 1088 bytes · referências 1
+- **Motivo da seleção:** Item: exigencia de lei para criar ou aumentar tributo.
+
+**O QUE DIZ**
+
+O inciso I proíbe exigir ou aumentar tributo sem lei que o estabeleça.
+
+**O QUE SIGNIFICA**
+
+É o princípio da legalidade tributária. Nenhum ente pode criar um tributo novo ou aumentar um tributo existente sem que uma lei, aprovada pelo Legislativo, preveja isso.
+
+O texto fala em lei que estabeleça o tributo.
+
+**EXEMPLO PRÁTICO**
+
+Um prefeito edita decreto aumentando a alíquota de um imposto municipal. O aumento contraria o inciso, que exige lei.
+
+**ATENÇÃO**
+
+A própria Constituição admite que o Executivo altere alíquotas de alguns tributos, nas condições e limites da lei (art. 153, § 1º, por exemplo). O alcance da legalidade em outros casos é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Legalidade tributária*: exigência de lei para criar ou aumentar tributo.
+- *Alíquota*: percentual aplicado para calcular o tributo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: exigir ou aumentar tributo sem lei que o); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O aumento contraria o inciso, que exige lei.)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, inciso III — Irretroatividade e anterioridade
+
+- **TARGET:** `CF88:ART.150:INC.III` · `ENTENDA/CF88:ART.150:INC.III/BASE/1`
+- **DISPLAY TITLE:** Art. 150, inciso III — Irretroatividade e anterioridade
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 1816 bytes · referências 0
+- **Motivo da seleção:** Item: vedacoes temporais na cobranca de tributos (fatos anteriores, exercicio e noventa dias).
+
+**O QUE DIZ**
+
+O inciso III impede a cobrança de tributos em três situações: sobre fatos geradores anteriores à entrada em vigor da lei que os criou ou aumentou (alínea a); no mesmo exercício financeiro em que essa lei foi publicada (alínea b); e antes de noventa dias contados da publicação dessa lei, observada a alínea b (alínea c).
+
+**O QUE SIGNIFICA**
+
+O inciso protege o contribuinte contra surpresas.
+
+A alínea a impede que a lei alcance fatos passados: é a irretroatividade.
+
+As alíneas b e c tratam da anterioridade. O tributo criado ou aumentado não pode ser cobrado no mesmo ano da lei, e também precisa esperar noventa dias. As duas regras se somam: vale o prazo que terminar depois.
+
+Assim, uma lei publicada no começo do ano permite a cobrança no ano seguinte; uma lei publicada no fim do ano obriga a esperar os noventa dias, mesmo que o ano mude.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei publicada em maio cria um novo tributo sobre certa atividade. Ele não alcança as atividades realizadas antes da vigência da lei (alínea a). Também não pode ser cobrado no mesmo ano (alínea b), e a cobrança no ano seguinte respeita os noventa dias (alínea c).
+
+**ATENÇÃO**
+
+Há tributos que não seguem a alínea b, a alínea c ou ambas: as exceções estão no § 1º, com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Exercício financeiro*: período anual do orçamento, que coincide com o ano civil.
+- *Irretroatividade*: proibição de aplicar a lei a fatos anteriores a ela.
+- *Fato gerador*: situação prevista em lei que faz nascer a obrigação de pagar o tributo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** PARENT_REPETITION (*: CF88:ART.150: 0.263)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, inciso IV — Vedação ao confisco
+
+- **TARGET:** `CF88:ART.150:INC.IV` · `ENTENDA/CF88:ART.150:INC.IV/BASE/1`
+- **DISPLAY TITLE:** Art. 150, inciso IV — Vedação ao confisco
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1460 bytes · referências 0
+- **Motivo da seleção:** Item: proibicao de tributo com efeito de confisco, conceito aberto.
+
+**O QUE DIZ**
+
+O inciso IV proíbe utilizar tributo com efeito de confisco.
+
+**O QUE SIGNIFICA**
+
+O tributo não pode ser tão pesado que, na prática, retire do contribuinte o patrimônio ou a renda.
+
+A tributação é legítima, mas tem um limite. Quando a carga é tão alta que inviabiliza a atividade ou absorve a propriedade, ela passa a ter efeito de confisco, o que o texto proíbe.
+
+O texto não diz qual percentual configura confisco. É um conceito aberto, aplicado caso a caso.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei municipal fixa imposto anual sobre imóveis em valor próximo ao do próprio imóvel. Em pouco tempo o proprietário teria pago o bem inteiro em tributo, o que caracteriza efeito de confisco.
+
+**ATENÇÃO**
+
+O momento em que um tributo ou uma multa passa a ter efeito confiscatório não deve ser deduzido apenas do texto: é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Confisco*: tomada de bens sem justa compensação; aqui, tributação excessiva.
+- *Conceito aberto*: expressão cujo conteúdo é definido na aplicação a cada caso.
+
+**CAMADA EXTERNA**
+
+- A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, inciso VI — Imunidades tributárias
+
+- **TARGET:** `CF88:ART.150:INC.VI` · `ENTENDA/CF88:ART.150:INC.VI/BASE/1`
+- **DISPLAY TITLE:** Art. 150, inciso VI — Imunidades tributárias
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 275 palavras · 2282 bytes · referências 1
+- **Motivo da seleção:** Item: lista de imunidades de impostos.
+
+**O QUE DIZ**
+
+O inciso VI proíbe instituir impostos sobre: patrimônio, renda ou serviços de um ente federativo cobrados por outro (alínea a); templos de qualquer culto e entidades religiosas, com suas organizações assistenciais e beneficentes (alínea b); patrimônio, renda ou serviços de partidos políticos e suas fundações, de entidades sindicais dos trabalhadores e de instituições sem fins lucrativos de educação e de assistência social, observados os requisitos da lei (alínea c); livros, jornais, periódicos e o papel destinado à impressão (alínea d); e fonogramas e videofonogramas musicais produzidos no Brasil com obras ou intérpretes brasileiros, salvo na etapa de replicação industrial de mídias ópticas (alínea e).
+
+**O QUE SIGNIFICA**
+
+As imunidades impedem a cobrança de impostos sobre as pessoas e os bens indicados.
+
+A alínea a impede um ente de cobrar imposto de outro. As alíneas b e c alcançam templos, partidos e suas fundações, sindicatos de trabalhadores e instituições de educação e assistência sem fins lucrativos. A alínea d alcança livros, jornais, periódicos e o papel de impressão, e a alínea e alcança certas obras musicais brasileiras.
+
+A imunidade do inciso vale para impostos, e não para taxas ou contribuições, salvo previsão específica em outro dispositivo.
+
+**EXEMPLO PRÁTICO**
+
+Uma igreja não paga imposto sobre a propriedade do imóvel onde está o templo. Uma editora não paga imposto sobre os livros que vende.
+
+**ATENÇÃO**
+
+Os §§ 2º a 4º limitam o alcance das imunidades das alíneas a, b e c às finalidades essenciais das entidades. A alínea c exige que sejam atendidos os requisitos da lei, e o alcance de cada imunidade é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Imunidade*: proibição constitucional de cobrar tributo em certos casos.
+- *Fonograma*: gravação de sons, como uma música gravada.
+
+**CAMADA EXTERNA**
+
+- O alcance das imunidades (por exemplo, livros digitais e imóveis alugados de entidades imunes) é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: e fonogramas e videofonogramas musicais produzidos no brasil)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, § 1º — Exceções à anterioridade
+
+- **TARGET:** `CF88:ART.150:PAR.1` · `ENTENDA/CF88:ART.150:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 150, § 1º — Exceções à anterioridade
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.150`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 258 palavras · 1803 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: tributos que nao seguem a anterioridade do exercicio, a nonagesimal ou ambas.
+
+**O QUE DIZ**
+
+O § 1º indica tributos que não seguem as anterioridades. Ficam fora da anterioridade do exercício (inciso III, b) os tributos do art. 148, I, do art. 154, II, e do art. 153, I, II, IV e V. Ficam fora da anterioridade de noventa dias (inciso III, c) os tributos do art. 154, II, do art. 148, I, e do art. 153, I, II, III e V, além da fixação da base de cálculo dos impostos dos arts. 155, III, e 156, I.
+
+**O QUE SIGNIFICA**
+
+O parágrafo libera alguns tributos de uma ou de ambas as esperas.
+
+Os empréstimos compulsórios de emergência e os impostos extraordinários de guerra não seguem nenhuma das duas anterioridades.
+
+Os impostos de importação, exportação e sobre operações financeiras também não seguem nenhuma delas.
+
+O imposto de renda segue a anterioridade do exercício, mas não a de noventa dias. O imposto sobre produtos industrializados segue a de noventa dias, mas não a do exercício.
+
+A base de cálculo do imposto sobre veículos e do imposto sobre imóveis urbanos pode ser fixada sem esperar os noventa dias.
+
+**EXEMPLO PRÁTICO**
+
+O governo federal aumenta a alíquota do imposto de importação de determinado produto. O aumento pode valer logo, sem esperar o ano seguinte nem noventa dias.
+
+**ATENÇÃO**
+
+A leitura do parágrafo depende de cruzar os números com os artigos citados. O imposto sobre produtos industrializados (art. 153, IV) está na primeira lista, mas não na segunda.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Anterioridade*: espera exigida entre a lei que cria ou aumenta o tributo e a cobrança.
+- *Base de cálculo*: valor sobre o qual se aplica a alíquota.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** PARENT_REPETITION (*: CF88:ART.150: 0.206)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca
+
+- **TARGET:** `CF88:ART.150:PAR.2` · `ENTENDA/CF88:ART.150:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.150:PAR.3`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.150`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2229 bytes · referências 0
+- **Motivo da seleção:** Bloco: extensao da imunidade reciproca a autarquias, fundacoes e empresa postal (§ 2º) e seus limites (§ 3º).
+
+**O QUE DIZ**
+
+O § 2º estende a imunidade recíproca (inciso VI, a) às autarquias, às fundações criadas e mantidas pelo poder público e à empresa pública que presta o serviço postal. A extensão alcança patrimônio, renda e serviços ligados às finalidades essenciais dessas entidades ou delas decorrentes. O § 3º afasta essas imunidades quando patrimônio, renda e serviços se ligam à exploração de atividade econômica sujeita às regras dos empreendimentos privados ou quando o usuário paga preço ou tarifa. Também não libera do imposto sobre o imóvel quem se comprometeu a comprá-lo.
+
+**O QUE SIGNIFICA**
+
+A imunidade recíproca protege os entes federativos. O § 2º a estende a entidades que fazem parte da estrutura pública, como autarquias e fundações públicas, e à empresa pública dos correios.
+
+A proteção, porém, vale apenas para o que está ligado às finalidades essenciais dessas entidades.
+
+O § 3º mostra os limites. Quando o ente ou a entidade explora atividade econômica como uma empresa privada, ou cobra preço ou tarifa do usuário, não há imunidade. E quem se compromete a comprar um imóvel público continua devendo o imposto sobre ele.
+
+**EXEMPLO PRÁTICO**
+
+Uma universidade federal, que é autarquia, não paga imposto municipal sobre o prédio onde funcionam as salas de aula. Se o mesmo prédio for usado para atividade econômica comum, a imunidade pode deixar de valer.
+
+**ATENÇÃO**
+
+A aplicação da imunidade a empresas estatais além da empresa postal é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Autarquia*: entidade pública com personalidade própria criada por lei para atividade típica do Estado.
+- *Promitente comprador*: quem se compromete, por contrato, a comprar um imóvel.
+- *Tarifa*: preço cobrado do usuário por um serviço.
+
+**CAMADA EXTERNA**
+
+- A extensão da imunidade recíproca a outras empresas estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: e mantidas pelo poder público e à empresa)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, § 6º — Lei específica para benefícios fiscais
+
+- **TARGET:** `CF88:ART.150:PAR.6` · `ENTENDA/CF88:ART.150:PAR.6/BASE/1`
+- **DISPLAY TITLE:** Art. 150, § 6º — Lei específica para benefícios fiscais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.150`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1680 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: exigencia de lei especifica para subsidio, isencao, anistia e remissao, com ressalva do ICMS.
+
+**O QUE DIZ**
+
+O § 6º exige lei específica para conceder subsídio, isenção, redução de base de cálculo, crédito presumido, anistia ou remissão em impostos, taxas ou contribuições. Essa lei, federal, estadual ou municipal, trata exclusivamente desses benefícios ou do tributo correspondente. Fica ressalvado o art. 155, § 2º, XII, g.
+
+**O QUE SIGNIFICA**
+
+Benefícios fiscais significam receita que o Estado deixa de arrecadar.
+
+O texto não se contenta com qualquer lei: exige lei específica, que trate só do benefício ou do tributo correspondente. Com isso, o benefício não pode ser incluído em lei sobre outro assunto.
+
+A ressalva do art. 155, § 2º, XII, g, trata dos benefícios do imposto estadual sobre circulação de mercadorias, que dependem de deliberação dos Estados.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer perdoar multas de um imposto municipal. Precisa aprovar lei específica sobre essa anistia, e não incluir o perdão em uma lei sobre trânsito.
+
+**ATENÇÃO**
+
+A exigência alcança impostos, taxas e contribuições. A forma de concessão dos benefícios do imposto estadual sobre circulação de mercadorias segue regra própria, ressalvada no texto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Isenção*: dispensa legal do pagamento de um tributo.
+- *Anistia*: perdão de multas e infrações tributárias.
+- *Remissão*: perdão da própria dívida tributária.
+- *Crédito presumido*: valor que a lei permite abater do tributo, sem pagamento anterior efetivo.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa aprovar lei específica sobre essa anistia, e não inc)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 150, § 7º — Substituição tributária para frente
+
+- **TARGET:** `CF88:ART.150:PAR.7` · `ENTENDA/CF88:ART.150:PAR.7/BASE/1`
+- **DISPLAY TITLE:** Art. 150, § 7º — Substituição tributária para frente
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.150`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1691 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: responsabilidade por fato gerador futuro e restituicao se o fato nao ocorrer.
+
+**O QUE DIZ**
+
+O § 7º permite que a lei torne um sujeito passivo responsável por pagar imposto ou contribuição de fato gerador que ainda vai acontecer. Se o fato gerador presumido não se realizar, fica assegurada a restituição imediata e preferencial da quantia paga.
+
+**O QUE SIGNIFICA**
+
+O parágrafo autoriza a chamada substituição tributária para frente. O tributo é cobrado antecipadamente de alguém da cadeia, antes que a operação final aconteça.
+
+Como o pagamento é feito sobre um fato que ainda não aconteceu, o texto garante a devolução imediata e preferencial se ele não ocorrer.
+
+**EXEMPLO PRÁTICO**
+
+Uma fábrica de cerveja recolhe, na saída do produto, o imposto que seria devido pelos bares na venda ao consumidor. Se o lote for destruído antes da venda, a quantia paga deve ser restituída.
+
+**ATENÇÃO**
+
+O texto garante restituição quando o fato gerador não se realiza. Se há direito à diferença quando a venda ocorre por valor menor que o presumido não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Substituição tributária*: regime em que um contribuinte paga o tributo devido por outro da cadeia.
+- *Fato gerador presumido*: operação futura que se supõe que vai acontecer.
+- *Restituição*: devolução do valor pago.
+
+**CAMADA EXTERNA**
+
+- A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Se o lote for destruído antes da venda, a quantia paga deve ); TERM_LOW_UTILITY (palavras_dificeis: Restituição)
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 

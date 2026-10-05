@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (54)
+## A — CLEAN_LOW (97)
 
 ### `CF88:ART.76` — Art. 76 — Exercício do Poder Executivo
 
@@ -272,10 +272,10 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 
 - Risco: LOW · complexidade: STRUCTURED
 - Ponto jurídico: O § 3º determina que, se a proposta do Judiciário não for enviada no prazo da lei de diretrizes orçamentárias, o Executivo considere os valores da lei orçamentária vigente, ajustados aos limites do §…
-- Interpretação principal: Os três parágrafos fecham as brechas da autonomia financeira.
+- Interpretação principal: Os três parágrafos completam o regime da autonomia financeira.
 - ATENÇÃO: A ressalva do § 5º exige autorização prévia: créditos suplementares ou especiais não podem ser abertos depois que a despesa já foi feita.
 - Dependência externa: nenhuma
-- Warnings: lint PARENT_REPETITION
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido), lint PARENT_REPETITION
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -598,7 +598,480 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (32)
+### `CF88:ART.126` — Art. 126 — Varas agrárias
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 126 determina que, para resolver conflitos fundiários, o Tribunal de Justiça proponha a criação de varas especializadas que cuidem só de questões agrárias.
+- Interpretação principal: O artigo prevê juízes dedicados aos conflitos pela posse e pela propriedade da terra no campo.
+- ATENÇÃO: O artigo fala em proposta do Tribunal de Justiça.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.127` — Art. 127 — Ministério Público
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 127 define o Ministério Público como instituição permanente e essencial à função jurisdicional do Estado.
+- Interpretação principal: O texto qualifica o Ministério Público como instituição permanente e essencial à função jurisdicional, regulada em capítulo próprio, fora dos três Poderes.
+- ATENÇÃO: O texto não inclui o Ministério Público em nenhum dos Poderes, mas a sua organização, a lista de funções e as garantias dos membros estão nos arts. 128 e 129.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.127:PAR.1` — Art. 127, § 1º — Princípios institucionais do Ministério Público
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O § 1º indica três princípios que regem a instituição: unidade, indivisibilidade e independência funcional.
+- Interpretação principal: A unidade significa que os membros de um mesmo Ministério Público atuam como uma só instituição, sob a mesma chefia.
+- ATENÇÃO: A independência funcional protege a convicção do membro, mas não afasta a organização administrativa da instituição.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.127:PAR.2` — Art. 127, § 2º — Autonomia do Ministério Público
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º assegura ao Ministério Público autonomia funcional e administrativa.
+- Interpretação principal: A autonomia funcional garante que o Ministério Público exerça suas funções sem subordinação a outro Poder.
+- ATENÇÃO: O texto fala em autonomia funcional e administrativa.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.127:PAR.3` — Art. 127, §§ 3º, 4º, 5º e 6º — Orçamento do Ministério Público
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º manda o Ministério Público elaborar a sua proposta orçamentária nos limites da lei de diretrizes orçamentárias.
+- Interpretação principal: Os parágrafos combinam autonomia e controle.
+- ATENÇÃO: As regras são semelhantes às do Judiciário (art. 99, §§ 3º a 5º).
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128:PAR.1` — Art. 128, §§ 1º e 2º — Procurador-Geral da República
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º estabelece que o Procurador-Geral da República chefia o Ministério Público da União.
+- Interpretação principal: A escolha do Procurador-Geral da República combina três elementos: indicação do Presidente, limitada a membros da carreira, aprovação do Senado e mandato fixo.
+- ATENÇÃO: O § 1º permite a recondução sem dizer quantas vezes; o § 3º, para os Estados, permite uma recondução.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: da carreira maiores de trinta e cinco anos), EXAMPLE_NUMBER_NOT_IN_TEXT(50), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.129:INC.I` — Art. 129, inciso I — Ação penal pública
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso I atribui ao Ministério Público, de forma privativa, a promoção da ação penal pública, na forma da lei.
+- Interpretação principal: Nos crimes de ação penal pública, quem acusa o réu perante o juiz é o Ministério Público.
+- ATENÇÃO: A Constituição admite ação privada nos crimes de ação pública quando o Ministério Público não age no prazo legal (art. 5º, LIX).
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.129:INC.III` — Art. 129, inciso III — Inquérito civil e ação civil pública
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O inciso III atribui ao Ministério Público a promoção do inquérito civil e da ação civil pública para proteger o patrimônio público e social, o meio ambiente e outros interesses difusos e coletivos.
+- Interpretação principal: O inciso dá ao Ministério Público dois instrumentos para defender interesses que pertencem a muitas pessoas.
+- ATENÇÃO: O Ministério Público não é o único legitimado para a ação civil pública: o § 1º preserva a legitimação de terceiros, nos termos da Constituição e da lei.
+- Dependência externa: nenhuma
+- Warnings: lint PARENT_REPETITION
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.129:INC.VII` — Art. 129, inciso VII — Controle externo da atividade policial
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso VII atribui ao Ministério Público o controle externo da atividade policial, nos termos da lei complementar prevista no art. 128, § 5º.
+- Interpretação principal: A polícia tem seus próprios órgãos internos de controle, como as corregedorias.
+- ATENÇÃO: O inciso fala em controle externo da atividade policial, e não em comando da polícia.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.129:INC.IX` — Art. 129, inciso IX — Outras funções e vedação de representação judicial
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O inciso IX admite que o Ministério Público receba outras funções, contanto que sejam compatíveis com a sua finalidade.
+- Interpretação principal: A lista de funções não é fechada: a lei pode atribuir novas tarefas ao Ministério Público.
+- ATENÇÃO: O inciso condiciona as novas funções à compatibilidade com a finalidade da instituição; quem decide sobre essa compatibilidade não está dito no texto.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a representação judicial e a consultoria jurídica…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.129:PAR.2` — Art. 129, § 2º — Exercício por integrantes da carreira e residência
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º reserva as funções do Ministério Público aos integrantes da carreira.
+- Interpretação principal: O parágrafo tem duas regras.
+- ATENÇÃO: A residência na comarca é a regra, e a autorização do chefe é a exceção prevista no próprio texto.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.131` — Art. 131 — Advocacia-Geral da União
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 131 define a Advocacia-Geral da União como a instituição que representa a União judicial e extrajudicialmente, diretamente ou por órgão vinculado.
+- Interpretação principal: A Advocacia-Geral da União é o escritório de advocacia do Estado federal.
+- ATENÇÃO: O § 2º tem nota de remissão a lei na fonte oficial.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.132` — Art. 132 — Procuradores dos Estados e do Distrito Federal
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 132 atribui a representação judicial e a consultoria jurídica dos Estados e do Distrito Federal aos seus Procuradores.
+- Interpretação principal: Os procuradores estaduais têm, nos Estados e no Distrito Federal, o papel que a Advocacia-Geral da União tem na esfera federal: defendem o ente em juízo e lhe dão…
+- ATENÇÃO: O artigo fala em Estados e Distrito Federal.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: participação da ordem dos advogados do brasil em), NEAR_COPY_MICROFIX(o_que_significa: da ordem dos advogados do brasil em todas), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.134` — Art. 134 — Defensoria Pública
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 134 define a Defensoria Pública como instituição permanente, essencial à função jurisdicional do Estado.
+- Interpretação principal: O texto apresenta a Defensoria como expressão e instrumento do regime democrático, ligada ao direito à assistência jurídica gratuita do art. 5º, LXXIV.
+- ATENÇÃO: O texto fala em necessitados, na forma do art. 5º, LXXIV, que exige comprovação de insuficiência de recursos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: instituição permanente essencial à função…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.134:PAR.2` — Art. 134, §§ 2º e 3º — Autonomia das Defensorias Públicas
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º garante às Defensorias Públicas dos Estados autonomia funcional e administrativa.
+- Interpretação principal: A autonomia funcional significa que a Defensoria exerce suas funções sem subordinação ao Executivo.
+- ATENÇÃO: A remissão ao art. 99, § 2º, trata do encaminhamento da proposta orçamentária.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: defensorias públicas da união e do distrito…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.135` — Art. 135 — Remuneração das carreiras jurídicas
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 135 determina que os servidores das carreiras disciplinadas nas Seções II e III do Capítulo sejam remunerados na forma do art. 39, § 4º.
+- Interpretação principal: O artigo alcança as carreiras disciplinadas nas Seções II e III do Capítulo das funções essenciais à Justiça, como a advocacia pública.
+- ATENÇÃO: O artigo remete ao art. 39, § 4º.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: das carreiras disciplinadas nas seções ii e iii), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.136:PAR.1` — Art. 136, § 1º — Medidas do estado de defesa
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O § 1º exige que o decreto do estado de defesa fixe o tempo de duração, especifique as áreas abrangidas e indique, nos termos e limites da lei, as medidas coercitivas que vão vigorar, escolhidas…
+- Interpretação principal: O decreto não é um cheque em branco.
+- ATENÇÃO: As medidas são aplicadas nos termos e limites da lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: nos termos e limites da lei as medidas), NUMBER_FROM_OTHER_DEVICE(15 dias)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.136:PAR.4` — Art. 136, §§ 4º, 5º, 6º e 7º — Controle do estado de defesa pelo Congresso
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 4º determina que o Presidente, em até vinte e quatro horas depois de decretar o estado de defesa ou sua prorrogação, envie o ato e a justificação ao Congresso Nacional, que decide por maioria…
+- Interpretação principal: No estado de defesa, o controle do Congresso vem depois do decreto.
+- ATENÇÃO: A maioria absoluta do § 4º é exigida para a decisão do Congresso.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.137` — Art. 137 — Estado de sítio
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 137 permite que o Presidente da República, depois de ouvir os Conselhos da República e de Defesa Nacional, peça ao Congresso Nacional autorização para decretar o estado de sítio.
+- Interpretação principal: O estado de sítio é mais grave que o estado de defesa, e por isso o controle é mais rigoroso.
+- ATENÇÃO: Sem autorização prévia do Congresso, o estado de sítio não pode ser decretado.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ao congresso nacional autorização para decretar o…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.138` — Art. 138 — Decreto e funcionamento no estado de sítio
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 138 exige que o decreto do estado de sítio indique sua duração, as normas necessárias para a execução e as garantias constitucionais que ficarão suspensas.
+- Interpretação principal: Assim como no estado de defesa, o decreto precisa ser claro sobre o que muda.
+- ATENÇÃO: A duração tem regras diferentes conforme a hipótese (§ 1º, com explicação própria).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: executor das medidas específicas e as áreas…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.138:PAR.1` — Art. 138, § 1º — Duração do estado de sítio
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º estabelece que, na hipótese do art. 137, I, o estado de sítio não pode ser decretado por mais de trinta dias, nem prorrogado, a cada vez, por prazo maior.
+- Interpretação principal: A duração depende da causa.
+- ATENÇÃO: Diferentemente do estado de defesa, o texto não limita o número de prorrogações no caso de comoção grave; limita a duração de cada uma.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: decretado por mais de trinta dias nem prorrogado)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.140` — Art. 140 — Comissão de acompanhamento
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 140 determina que a Mesa do Congresso Nacional, depois de ouvir os líderes partidários, forme uma Comissão com cinco parlamentares encarregada de acompanhar e fiscalizar como são executadas as…
+- Interpretação principal: Além de autorizar ou aprovar as medidas, o Congresso acompanha de perto a sua execução.
+- ATENÇÃO: A comissão acompanha e fiscaliza; o texto não lhe dá poder de suspender sozinha as medidas.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.141` — Art. 141 — Fim dos estados de defesa e de sítio
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 141 estabelece que, terminado o estado de defesa ou o estado de sítio, cessam também os seus efeitos, sem prejuízo da responsabilidade pelos ilícitos cometidos por executores ou agentes.
+- Interpretação principal: Quando a medida termina, as restrições também terminam.
+- ATENÇÃO: A responsabilidade alcança executores e agentes que cometeram ilícitos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: com relação nominal dos atingidos e indicação das), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.143` — Art. 143 — Serviço militar
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 143 torna o serviço militar obrigatório, nos termos da lei.
+- Interpretação principal: A regra geral é a obrigatoriedade, nos termos da lei.
+- ATENÇÃO: A recusa a cumprir também o serviço alternativo tem consequências previstas no art. 5º, VIII, e no art. 15, IV, que tratam da privação ou suspensão de direitos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a outros encargos que a lei lhes atribuir)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.144` — Art. 144 — Segurança pública
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 144 define a segurança pública como dever do Estado, direito e responsabilidade de todos, exercida para preservar a ordem pública e a incolumidade das pessoas e do patrimônio.
+- Interpretação principal: A segurança pública é tarefa do Estado, mas o texto também fala em responsabilidade de todos.
+- ATENÇÃO: Os Municípios não estão na lista de órgãos do caput; eles podem criar guardas municipais (§ 8º, com explicação própria).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: dever do estado direito e responsabilidade de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.144:PAR.1` — Art. 144, § 1º — Polícia federal
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 1º descreve a polícia federal como órgão permanente, instituído por lei, organizado e mantido pela União e estruturado em carreira.
+- Interpretação principal: A polícia federal investiga os crimes que interessam à União.
+- ATENÇÃO: A investigação de crimes com repercussão interestadual depende do que dispuser a lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: as funções de polícia marítima aeroportuária e de), NEAR_COPY_MICROFIX(o_que_significa: com exclusividade as funções de polícia…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.144:PAR.4` — Art. 144, § 4º — Polícias civis
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 4º confia às polícias civis, dirigidas por delegados de polícia de carreira, a função de polícia judiciária e a investigação de infrações penais.
+- Interpretação principal: A polícia civil é a polícia de investigação dos Estados e do Distrito Federal.
+- ATENÇÃO: As duas ressalvas do texto são a competência da União e as infrações militares.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: civis dirigidas por delegados de polícia de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.144:PAR.5` — Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 5º atribui às polícias militares a polícia ostensiva e a preservação da ordem pública, e aos corpos de bombeiros militares a execução de atividades de defesa civil, somadas às tarefas que a lei…
+- Interpretação principal: Os dois parágrafos tratam das forças que atuam de forma preventiva ou em áreas específicas.
+- ATENÇÃO: O § 6º, explicado na visão geral, subordina essas forças aos Governadores e qualifica as polícias militares e os bombeiros como forças auxiliares e reserva do Exército.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a polícia ostensiva e a preservação da ordem)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.145` — Art. 145 — Espécies de tributos e princípios do sistema
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 145 permite que a União, os Estados, o Distrito Federal e os Municípios instituam impostos, taxas e contribuição de melhoria.
+- Interpretação principal: O artigo apresenta três espécies de tributos que a União, os Estados, o Distrito Federal e os Municípios podem criar, cada um dentro da sua competência e nos termos da…
+- ATENÇÃO: O artigo não esgota as espécies tributárias da Constituição: há também empréstimos compulsórios e contribuições (arts. 148 e 149).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e), NEAR_COPY_MICROFIX(o_que_significa: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.145:PAR.1` — Art. 145, § 1º — Capacidade contributiva
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º determina que os impostos, quando possível, tenham caráter pessoal e sejam graduados conforme a capacidade econômica do contribuinte.
+- Interpretação principal: O parágrafo expressa a ideia de que quem tem mais deve contribuir mais.
+- ATENÇÃO: O texto fala em impostos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o patrimônio os rendimentos e as atividades…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.146` — Art. 146 — Papel da lei complementar tributária
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 146 atribui à lei complementar três funções em matéria tributária: dispor sobre conflitos de competência entre os entes federativos, regular as limitações constitucionais ao poder de tributar…
+- Interpretação principal: A lei complementar funciona como uma ponte entre a Constituição e as leis de cada ente.
+- ATENÇÃO: O inciso III e o regime único (§§ 1º a 3º) têm explicações próprias.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: regular as limitações constitucionais ao poder de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.146:INC.III` — Art. 146, inciso III — Normas gerais de legislação tributária
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso III reserva à lei complementar as normas gerais de legislação tributária, especialmente sobre: definição de tributos e espécies e, quanto aos impostos discriminados na Constituição, seus…
+- Interpretação principal: O inciso indica temas que precisam de tratamento uniforme no país.
+- ATENÇÃO: As alíneas c e d mencionam também os tributos dos arts. 156-A e 195, V, incluídos por emenda recente, com regras de transição na camada externa.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.146-A` — Art. 146-A — Tributação e concorrência
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 146-A autoriza a lei complementar a criar critérios especiais de tributação para prevenir desequilíbrios na concorrência, sem prejuízo da competência da União para, por lei, editar normas com…
+- Interpretação principal: O tributo pode afetar a concorrência entre empresas.
+- ATENÇÃO: O artigo é permissivo: a lei complementar pode criar os critérios, mas o texto não diz quais são.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.147` — Art. 147 — Impostos nos Territórios e no Distrito Federal
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 147 atribui à União, nos Territórios Federais, os impostos estaduais e, se o Território não estiver dividido em Municípios, também os impostos municipais.
+- Interpretação principal: O artigo resolve quem cobra impostos em situações especiais da Federação.
+- ATENÇÃO: A competência do Distrito Federal para os impostos estaduais está em outros dispositivos (art. 155).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: impostos municipais ao distrito federal cabem os…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.148` — Art. 148 — Empréstimos compulsórios
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 148 permite que a União, por lei complementar, institua empréstimos compulsórios em duas hipóteses: para cobrir despesas extraordinárias que decorram de calamidade pública ou de guerra…
+- Interpretação principal: O empréstimo compulsório é um tributo que o Estado cobra com a promessa de devolver depois.
+- ATENÇÃO: A regra de devolução e suas condições ficam na lei complementar que instituir o empréstimo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: urgente e de relevante interesse nacional…), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.149` — Art. 149 — Contribuições especiais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 149 reserva somente à União a criação de três tipos de contribuição: sociais, de intervenção no domínio econômico, e as de interesse de categorias profissionais ou econômicas.
+- Interpretação principal: As contribuições são tributos ligados a uma finalidade.
+- ATENÇÃO: A contribuição para iluminação pública é municipal e está em outro artigo (art. 149-A).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: arts 146 iii e 150 i e iii), NEAR_COPY_MICROFIX(o_que_significa: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.149:PAR.1` — Art. 149, §§ 1º, 1º-A, 1º-B e 1º-C — Contribuição previdenciária dos servidores
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 1º determina que a União, os Estados, o Distrito Federal e os Municípios instituam, por lei, contribuições para custear o regime próprio de previdência, cobradas dos servidores ativos,…
+- Interpretação principal: Os servidores com regime próprio contribuem para sua previdência, inclusive depois de aposentados.
+- ATENÇÃO: A contribuição extraordinária do § 1º-B está prevista no âmbito da União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.149:PAR.2` — Art. 149, § 2º — Incidência das contribuições sociais e de intervenção
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º estabelece três regras para as contribuições sociais e de intervenção no domínio econômico do caput.
+- Interpretação principal: O parágrafo define três pontos.
+- ATENÇÃO: O parágrafo trata das contribuições sociais e de intervenção do caput, e não das contribuições de interesse de categorias.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: as contribuições sociais e de intervenção no…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.149-A` — Art. 149-A — Contribuição de iluminação pública
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 149-A permite que os Municípios e o Distrito Federal instituam, por suas leis, contribuição para custear, expandir e melhorar o serviço de iluminação pública e sistemas de monitoramento para a…
+- Interpretação principal: A iluminação pública beneficia todos ao mesmo tempo, e não é possível medir quanto cada pessoa usa.
+- ATENÇÃO: A contribuição é municipal e distrital.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.150:INC.I` — Art. 150, inciso I — Legalidade tributária
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O inciso I proíbe exigir ou aumentar tributo sem lei que o estabeleça.
+- Interpretação principal: É o princípio da legalidade tributária.
+- ATENÇÃO: A própria Constituição admite que o Executivo altere alíquotas de alguns tributos, nas condições e limites da lei (art. 153, § 1º, por exemplo).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: exigir ou aumentar tributo sem lei que o), lint EXAMPLE_REQUIREMENT_LANGUAGE, lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.150:INC.III` — Art. 150, inciso III — Irretroatividade e anterioridade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso III impede a cobrança de tributos em três situações: sobre fatos geradores anteriores à entrada em vigor da lei que os criou ou aumentou (alínea a); no mesmo exercício financeiro em que essa…
+- Interpretação principal: O inciso protege o contribuinte contra surpresas.
+- ATENÇÃO: Há tributos que não seguem a alínea b, a alínea c ou ambas: as exceções estão no § 1º, com explicação própria.
+- Dependência externa: nenhuma
+- Warnings: lint PARENT_REPETITION
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.150:PAR.1` — Art. 150, § 1º — Exceções à anterioridade
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º indica tributos que não seguem as anterioridades.
+- Interpretação principal: O parágrafo libera alguns tributos de uma ou de ambas as esperas.
+- ATENÇÃO: A leitura do parágrafo depende de cruzar os números com os artigos citados.
+- Dependência externa: nenhuma
+- Warnings: lint PARENT_REPETITION
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.150:PAR.6` — Art. 150, § 6º — Lei específica para benefícios fiscais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 6º exige lei específica para conceder subsídio, isenção, redução de base de cálculo, crédito presumido, anistia ou remissão em impostos, taxas ou contribuições.
+- Interpretação principal: Benefícios fiscais significam receita que o Estado deixa de arrecadar.
+- ATENÇÃO: A exigência alcança impostos, taxas e contribuições.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (45)
 
 ### `CF88:ART.83` — Art. 83 — Ausência do País e perda do cargo
 
@@ -827,7 +1300,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: O Conselho é um órgão do Judiciário que não julga processos.
 - ATENÇÃO: As competências do Conselho (§ 4º) têm explicação própria.
 - Dependência externa: nenhuma
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cidadãos de notável saber jurídico e reputação…)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cidadãos de notável saber jurídico e reputação…), DUPLICATION(resolvido)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -838,7 +1311,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: O parágrafo mostra que o Conselho atua em duas frentes.
 - ATENÇÃO: As competências são administrativas e disciplinares.
 - Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da competência do tribunal de contas da união)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da competência do tribunal de contas da união), DUPLICATION(resolvido), DUPLICATION(resolvido)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -950,5 +1423,148 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: NEAR_COPY_MICROFIX(o_que_significa: crimes militares definidos em lei e as ações), lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128` — Art. 128 — Estrutura do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perder o cargo
+- Ponto jurídico: O art. 128 divide o Ministério Público em Ministério Público da União, que compreende o Federal, o do Trabalho, o Militar e o do Distrito Federal e Territórios, e Ministérios Públicos dos Estados.
+- Interpretação principal: Não existe um único Ministério Público, mas vários, cada um com sua chefia.
+- ATENÇÃO: O Ministério Público do Distrito Federal e Territórios faz parte do Ministério Público da União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: a organização as atribuições e o estatuto de)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128:PAR.3` — Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o…
+- Ponto jurídico: O § 3º prevê que, nos Estados e no Ministério Público do Distrito Federal e Territórios, a própria carreira forme lista tríplice, na forma da lei respectiva.
+- Interpretação principal: Nos Estados, a escolha do chefe do Ministério Público começa dentro da própria instituição: a carreira forma uma lista de três nomes, e o chefe do Executivo escolhe um…
+- ATENÇÃO: No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a…
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128:PAR.5` — Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perder o cargo
+- Ponto jurídico: O § 5º determina que leis complementares da União e dos Estados, de iniciativa facultada aos Procuradores-Gerais, definam como cada Ministério Público se organiza, suas atribuições e o estatuto dos…
+- Interpretação principal: As garantias protegem o membro do Ministério Público para que possa atuar sem medo de retaliação.
+- ATENÇÃO: A irredutibilidade tem ressalvas expressas, como o teto remuneratório e as regras tributárias indicadas no texto.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.130` — Art. 130 — Ministério Público junto aos Tribunais de Contas
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de…
+- Ponto jurídico: O art. 130 estende aos membros do Ministério Público que atuam junto aos Tribunais de Contas as disposições desta Seção sobre direitos, vedações e forma de investidura.
+- Interpretação principal: Junto aos Tribunais de Contas atua um Ministério Público especial, que fiscaliza a aplicação da lei nos processos de controle das contas públicas.
+- ATENÇÃO: O artigo estende direitos, vedações e investidura.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.130-A` — Art. 130-A — Conselho Nacional do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
+- Ponto jurídico: O art. 130-A estabelece que o Conselho Nacional do Ministério Público tem quatorze membros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado, para mandato de dois…
+- Interpretação principal: O Conselho tem para o Ministério Público papel semelhante ao do Conselho Nacional de Justiça para o Judiciário: controla a atuação administrativa e financeira e o…
+- ATENÇÃO: As competências do Conselho (§ 2º) têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cidadãos de notável saber jurídico e reputação…), NEAR_COPY_MICROFIX(o_que_significa: sem prejuízo da competência dos tribunais de…), DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.130-A:PAR.2` — Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
+- Ponto jurídico: O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais.
+- Interpretação principal: O parágrafo repete, para o Ministério Público, o modelo de controle do art. 103-B, § 4º.
+- ATENÇÃO: As competências são administrativas e disciplinares.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: do ministério público da união e dos estados), DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.133` — Art. 133 — Advocacia
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: invioláv
+- Ponto jurídico: O art. 133 declara o advogado indispensável à administração da justiça.
+- Interpretação principal: O artigo reconhece a advocacia como parte do funcionamento da Justiça, ao lado do Judiciário, do Ministério Público e da Defensoria.
+- ATENÇÃO: O texto não diz que todo processo exige advogado.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.136` — Art. 136 — Estado de defesa
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: prisão
+- Ponto jurídico: O art. 136 permite que o Presidente da República, depois de ouvir o Conselho da República e o Conselho de Defesa Nacional, decrete estado de defesa.
+- Interpretação principal: O estado de defesa é a primeira e mais leve das medidas excepcionais da Constituição.
+- ATENÇÃO: O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presidente.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: conselho da república e o conselho de defesa)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.136:PAR.3` — Art. 136, § 3º — Garantias do preso no estado de defesa
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: prisão
+- Ponto jurídico: O § 3º fixa regras para a prisão durante o estado de defesa.
+- Interpretação principal: Mesmo em situação excepcional, o preso não fica sem proteção.
+- ATENÇÃO: O inciso I trata da prisão por crime contra o Estado; os incisos III e IV valem para a prisão ou detenção de qualquer pessoa durante o estado de defesa.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: estado físico e mental do detido no momento), NEAR_COPY_MICROFIX(o_que_significa: estado físico e mental do detido no momento)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.139` — Art. 139 — Medidas no estado de sítio por comoção grave
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 139 determina que, no estado de sítio decretado com base no art. 137, I, só podem ser tomadas contra as pessoas as medidas da lista.
+- Interpretação principal: Na comoção grave, a lista de medidas é fechada.
+- ATENÇÃO: A lista vale para o estado de sítio do art. 137, I.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.142:PAR.3` — Art. 142, § 3º — Regime jurídico dos militares
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: prerrogativ
+- Ponto jurídico: O § 3º denomina militares os membros das Forças Armadas e lhes aplica, além do que a lei fixar, regras próprias.
+- Interpretação principal: O parágrafo cria um regime próprio para os militares, diferente do dos servidores civis.
+- ATENÇÃO: A perda do posto depende de decisão de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.150:INC.VI` — Art. 150, inciso VI — Imunidades tributárias
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades (por exemplo, livros digitais e…
+- Ponto jurídico: O inciso VI proíbe instituir impostos sobre: patrimônio, renda ou serviços de um ente federativo cobrados por outro (alínea a); templos de qualquer culto e entidades religiosas, com suas organizações…
+- Interpretação principal: As imunidades impedem a cobrança de impostos sobre as pessoas e os bens indicados.
+- ATENÇÃO: Os §§ 2º a 4º limitam o alcance das imunidades das alíneas a, b e c às finalidades essenciais das entidades.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: e fonogramas e videofonogramas musicais…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.150:PAR.2` — Art. 150, §§ 2º e 3º — Alcance da imunidade recíproca
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A extensão da imunidade recíproca a outras empresas estatais…
+- Ponto jurídico: O § 2º estende a imunidade recíproca (inciso VI, a) às autarquias, às fundações criadas e mantidas pelo poder público e à empresa pública que presta o serviço postal.
+- Interpretação principal: A imunidade recíproca protege os entes federativos.
+- ATENÇÃO: A aplicação da imunidade a empresas estatais além da empresa postal é tema da camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: e mantidas pelo poder público e à empresa), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

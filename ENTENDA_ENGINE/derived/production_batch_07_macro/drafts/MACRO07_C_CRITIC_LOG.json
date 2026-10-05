@@ -1,0 +1,1205 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "C",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.150",
+   "section": "*",
+   "category": "REUSO_DE_APROVADO",
+   "detector": "BATCH_DUPLICATE_TARGET_EXPLANATION",
+   "reason": "O art. 150 ja tem visao geral HUMAN_APPROVED_T1 no corpus principal; o rascunho novo foi removido e a explicacao aprovada e reutilizada sem alteracao.",
+   "before": "(rascunho removido)",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.126",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; \"sempre que\" reformulado.",
+   "before": "O art. 126 determina que o Tribunal de Justiça proponha a criação de varas especializadas, com competência exclusiva para questões agrárias, para resolver conflitos fundiários. O parágrafo único prevê que o juiz vá ao local do litígio sempre que isso for necessário para a eficiente prestação jurisdicional.",
+   "after": "O art. 126 determina que, para resolver conflitos fundiários, o Tribunal de Justiça proponha a criação de varas especializadas que cuidem só de questões agrárias. O parágrafo único prevê que o juiz compareça ao local do litígio quando isso for necessário para a eficiente prestação jurisdicional."
+  },
+  {
+   "target_id": "CF88:ART.126",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Generalizacao sobre a natureza dos conflitos sem base no texto.",
+   "before": "Conflitos pela posse e pela propriedade da terra no campo costumam ter características próprias, e o artigo prevê juízes dedicados a eles.",
+   "after": "O artigo prevê juízes dedicados aos conflitos pela posse e pela propriedade da terra no campo."
+  },
+  {
+   "target_id": "CF88:ART.127",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Inferencia (\"nao pode ser extinto\") apresentada como regra; reformulada pelo texto.",
+   "before": "O Ministério Público não pertence a nenhum dos três Poderes e não pode ser extinto, porque o texto o qualifica como permanente.",
+   "after": "O texto qualifica o Ministério Público como instituição permanente e essencial à função jurisdicional, regulada em capítulo próprio, fora dos três Poderes."
+  },
+  {
+   "target_id": "CF88:ART.127",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "LAW_DEPENDENCY_OMITTED",
+   "reason": "Dependencia de lei do § 2º nao mencionada; finalidade retirada.",
+   "before": "Os parágrafos dão à instituição meios para atuar com independência: princípios próprios, autonomia para organizar seus serviços e proposta orçamentária própria.",
+   "after": "Os parágrafos dão à instituição princípios próprios, autonomia para organizar seus serviços, com lei sobre organização e funcionamento, e proposta orçamentária própria."
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 1º estabelece três princípios institucionais do Ministério Público: a unidade, a indivisibilidade e a independência funcional.",
+   "after": "O § 1º indica três princípios que regem a instituição: unidade, indivisibilidade e independência funcional."
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.3",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"so pode\" reformulado; \"creditos adicionais\" substituido pelos termos do texto.",
+   "before": "Durante o ano, a instituição só pode gastar além dos limites com autorização prévia, por meio de créditos adicionais.",
+   "after": "Durante o ano, despesas além dos limites dependem de autorização prévia, por créditos suplementares ou especiais."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.1",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada; iniciativa presidencial explicitada como no texto.",
+   "before": "A destituição antes do fim do mandato exige autorização do Senado por maioria absoluta, o que dá ao chefe da instituição proteção contra afastamento sem controle.",
+   "after": "A destituição por iniciativa do Presidente, antes do fim do mandato, exige autorização do Senado por maioria absoluta."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 3º determina que os Ministérios Públicos dos Estados e o do Distrito Federal e Territórios formem lista tríplice entre integrantes da carreira, na forma da lei, para a escolha do Procurador-Geral pelo Chefe do Poder Executivo, com mandato de dois anos e uma recondução permitida. O § 4º permite que esses Procuradores-Gerais sejam destituídos por deliberação da maioria absoluta do Poder Legislativo, na forma da lei complementar respectiva.",
+   "after": "O § 3º prevê que, nos Estados e no Ministério Público do Distrito Federal e Territórios, a própria carreira forme lista tríplice, na forma da lei respectiva, para que o Chefe do Poder Executivo escolha o Procurador-Geral, com mandato de dois anos e uma recondução permitida. O § 4º admite a destituição desses Procuradores-Gerais pela maioria absoluta do Poder Legislativo, na forma da lei complementar respectiva."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "section": "atencao",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao sobre a autoridade nomeante (\"nao e o Governador\") sem proveniencia.",
+   "before": "No Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o chefe do Executivo que nomeia não é o Governador do Distrito Federal; a identificação dessa autoridade e o órgão que delibera a destituição são temas da lei e da camada JURISPRUDÊNCIA.",
+   "after": "No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a destituição. Essa identificação depende da lei complementar e da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "estabeleçam a organização, as atribuições e o estatuto de cada Ministério Público.",
+   "after": "definam como cada Ministério Público se organiza, suas atribuições e o estatuto dos membros."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.I",
+   "section": "atencao",
+   "category": "QUALIFICADOR_FORA_DO_TEXTO",
+   "detector": "QUALIFIER_NOT_IN_TEXT",
+   "reason": "\"subsidiaria\" e rotulo doutrinario; reformulado pelo texto do art. 5º, LIX.",
+   "before": "A Constituição admite ação privada subsidiária quando o Ministério Público não age no prazo legal (art. 5º, LIX).",
+   "after": "A Constituição admite ação privada nos crimes de ação pública quando o Ministério Público não age no prazo legal (art. 5º, LIX)."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.III",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "\"serve para\" reformulado.",
+   "before": "O inquérito civil é a investigação: serve para reunir provas e esclarecer os fatos.",
+   "after": "O inquérito civil é a investigação, em que se reúnem provas e se esclarecem os fatos."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.VII",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso VII atribui ao Ministério Público o controle externo da atividade policial, na forma da lei complementar de que trata o art. 128, § 5º.",
+   "after": "O inciso VII atribui ao Ministério Público o controle externo da atividade policial, nos termos da lei complementar prevista no art. 128, § 5º."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.VII",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Justificativa doutrinaria nao declarada no texto.",
+   "before": "Esse controle tem relação com o papel do Ministério Público no processo penal: as investigações policiais servem de base para as ações penais que ele promove.\n",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.129:INC.IX",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso IX permite que o Ministério Público exerça outras funções que lhe forem conferidas, desde que compatíveis com sua finalidade. O mesmo inciso proíbe que ele faça a representação judicial e a consultoria jurídica de entidades públicas.",
+   "after": "O inciso IX admite que o Ministério Público receba outras funções, contanto que sejam compatíveis com a sua finalidade. O mesmo inciso proíbe que ele faça a representação judicial e a consultoria jurídica de entidades públicas."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.IX",
+   "section": "atencao",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Reformulado sem afirmar finalidade.",
+   "before": "A compatibilidade com a finalidade é a condição que o próprio texto impõe às novas funções.",
+   "after": "O inciso condiciona as novas funções à compatibilidade com a finalidade da instituição; quem decide sobre essa compatibilidade não está dito no texto."
+  },
+  {
+   "target_id": "CF88:ART.129:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 2º determina que as funções do Ministério Público só podem ser exercidas por integrantes da carreira. Eles devem residir na comarca onde estão lotados, salvo autorização do chefe da instituição.",
+   "after": "O § 2º reserva as funções do Ministério Público aos integrantes da carreira. Eles devem residir na comarca onde estão lotados, salvo autorização do chefe da instituição."
+  },
+  {
+   "target_id": "CF88:ART.129:PAR.2",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "A segunda exige que o membro more na comarca em que atua, o que aproxima o promotor da comunidade que atende. A exceção é a autorização do chefe da instituição.",
+   "after": "A segunda exige que o membro more na comarca em que atua. A exceção é a autorização do chefe da instituição."
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalvas do § 2º omitidas no resumo.",
+   "before": "O Conselho tem para o Ministério Público papel semelhante ao do Conselho Nacional de Justiça para o Judiciário: controla a atuação administrativa e financeira e o cumprimento dos deveres funcionais dos membros.",
+   "after": "O Conselho tem para o Ministério Público papel semelhante ao do Conselho Nacional de Justiça para o Judiciário: controla a atuação administrativa e financeira e o cumprimento dos deveres funcionais dos membros, sem prejuízo da competência dos Tribunais de Contas e da competência disciplinar da própria instituição."
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "section": "atencao",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao interpretativa reformulada como leitura do texto.",
+   "before": "As competências do Conselho (§ 2º) têm explicação própria. O Conselho não revê o conteúdo da atuação funcional dos membros, protegido pela independência funcional; sua atuação é administrativa e disciplinar.",
+   "after": "As competências do Conselho (§ 2º) têm explicação própria. O texto atribui ao Conselho controle administrativo, financeiro e disciplinar; ele não menciona revisão do conteúdo das manifestações dos membros."
+  },
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elementos de lista sem traco.",
+   "before": "O § 2º atribui ao Conselho o controle da atuação administrativa e financeira do Ministério Público e do cumprimento dos deveres funcionais de seus membros. Entre as atribuições listadas nos incisos estão zelar pela autonomia da instituição e expedir atos regulamentares, apreciar a legalidade de atos administrativos, receber reclamações e aplicar sanções administrativas com ampla defesa, rever processos disciplinares julgados há menos de um ano e elaborar relatório anual.",
+   "after": "O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais. Entre as atribuições listadas nos incisos estão zelar pela autonomia da instituição, expedir atos regulamentares ou recomendar providências e apreciar a legalidade de atos administrativos. Também recebe reclamações, pode determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, revê processos disciplinares julgados há menos de um ano e elabora relatório anual."
+  },
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "section": "o_que_significa",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "para garantir o cumprimento da lei, sem prejuízo da competência dos Tribunais de Contas.",
+   "after": "para garantir o cumprimento da lei, preservada a competência dos Tribunais de Contas."
+  },
+  {
+   "target_id": "CF88:ART.131",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 1º prevê que o Advogado-Geral da União é de livre nomeação do Presidente entre cidadãos maiores de trinta e cinco anos, de notável saber jurídico e reputação ilibada.",
+   "after": "O § 1º prevê que o Presidente nomeia livremente o Advogado-Geral da União, escolhido entre cidadãos com mais de trinta e cinco anos, notável saber jurídico e reputação ilibada."
+  },
+  {
+   "target_id": "CF88:ART.132",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 132 determina que os Procuradores dos Estados e do Distrito Federal, organizados em carreira com ingresso por concurso de provas e títulos, com participação da Ordem dos Advogados do Brasil em todas as fases, façam a representação judicial e a consultoria jurídica das respectivas unidades federadas.",
+   "after": "O art. 132 atribui a representação judicial e a consultoria jurídica dos Estados e do Distrito Federal aos seus Procuradores. Eles formam uma carreira, com ingresso por concurso de provas e títulos e participação da Ordem dos Advogados do Brasil em cada fase."
+  },
+  {
+   "target_id": "CF88:ART.133",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 133 declara o advogado indispensável à administração da justiça e inviolável por seus atos e manifestações no exercício da profissão, nos limites da lei.",
+   "after": "O art. 133 declara o advogado indispensável à administração da justiça. No exercício da profissão, seus atos e manifestações são invioláveis, nos limites da lei."
+  },
+  {
+   "target_id": "CF88:ART.133",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "ABSOLUTE_CLAIM",
+   "reason": "\"absoluta\" retirado.",
+   "before": "Essa proteção não é absoluta. O próprio texto a limita à atuação profissional e aos limites da lei.",
+   "after": "O próprio texto limita essa proteção à atuação profissional e aos limites da lei."
+  },
+  {
+   "target_id": "CF88:ART.134",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Cabem a ela a orientação jurídica, a promoção dos direitos humanos e a defesa dos direitos individuais e coletivos dos necessitados,",
+   "after": "Cabem a ela, entre outras tarefas, orientar juridicamente, promover os direitos humanos e defender os direitos individuais e coletivos dos necessitados,"
+  },
+  {
+   "target_id": "CF88:ART.134",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade reformulada com as palavras do proprio texto.",
+   "before": "A Defensoria Pública é o instrumento que torna real o direito à assistência jurídica gratuita para quem não pode pagar advogado.",
+   "after": "O texto apresenta a Defensoria como expressão e instrumento do regime democrático, ligada ao direito à assistência jurídica gratuita do art. 5º, LXXIV."
+  },
+  {
+   "target_id": "CF88:ART.134:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 2º assegura às Defensorias Públicas Estaduais autonomia funcional e administrativa e a iniciativa de sua proposta orçamentária, dentro dos limites da lei de diretrizes orçamentárias e com subordinação ao art. 99, § 2º. O § 3º estende essa regra às Defensorias Públicas da União e do Distrito Federal.",
+   "after": "O § 2º garante às Defensorias Públicas dos Estados autonomia funcional e administrativa. Elas têm a iniciativa da sua proposta orçamentária, que respeita os limites da lei de diretrizes orçamentárias e se subordina ao art. 99, § 2º. O § 3º estende essa regra às Defensorias Públicas da União e do Distrito Federal."
+  },
+  {
+   "target_id": "CF88:ART.134:PAR.2",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Justificativa factual (\"muitas vezes atua contra o Estado\") sem base no texto.",
+   "before": "A Defensoria muitas vezes atua contra o próprio Estado, defendendo pessoas em processos contra o poder público. A autonomia permite que ela faça isso sem depender do Executivo.\n",
+   "after": "A autonomia funcional significa que a Defensoria exerce suas funções sem subordinação ao Executivo.\n"
+  },
+  {
+   "target_id": "CF88:ART.135",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Identificacao das Secoes (incluindo a Defensoria) dependia da organizacao atual do Capitulo; frase sobre \"transparencia\" retirada.",
+   "before": "As Seções II e III do Capítulo das funções essenciais à Justiça tratam da advocacia pública e da advocacia e Defensoria Pública. Assim, o artigo alcança, entre outros, os advogados públicos e os defensores públicos.\nO art. 39, § 4º, prevê a remuneração por subsídio, fixado em parcela única. Isso significa que esses servidores recebem um valor único, sem gratificações, adicionais ou outras parcelas acrescidas ao subsídio.\nO objetivo de transparência não está declarado no artigo, mas o efeito é que a remuneração fica concentrada em uma só parcela.",
+   "after": "O artigo alcança as carreiras disciplinadas nas Seções II e III do Capítulo das funções essenciais à Justiça, como a advocacia pública.\nO art. 39, § 4º, prevê a remuneração por subsídio, fixado em parcela única. Isso significa que esses servidores recebem um valor único, sem gratificações, adicionais ou outras parcelas acrescidas ao subsídio."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "pela maioria absoluta do Poder Legislativo, na forma da lei complementar respectiva.",
+   "after": "por deliberação do Legislativo, tomada por maioria absoluta, conforme a lei complementar de cada Ministério Público."
+  },
+  {
+   "target_id": "CF88:ART.132",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "estabilidade após três anos de efetivo exercício, mediante avaliação de desempenho",
+   "after": "estabilidade depois de três anos de efetivo exercício, com avaliação de desempenho"
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalvas do § 2º omitidas; lista sem marca de selecao.",
+   "before": "Os parágrafos tratam da indicação dos membros, das competências,",
+   "after": "Os parágrafos tratam, entre outros temas, da indicação dos membros, das competências (sem prejuízo das competências dos Tribunais de Contas e da própria instituição),"
+  },
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do inciso V sem traco.",
+   "before": "e elabora relatório anual.",
+   "after": "e elabora relatório anual sobre a situação do Ministério Público e as atividades do Conselho."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.I",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo do glossario alinhado ao texto da explicacao.",
+   "before": "\"termo\": \"Ação penal privada subsidiária\"",
+   "after": "\"termo\": \"Ação privada nos crimes de ação pública\""
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": ", para que o Chefe do Poder Executivo escolha o Procurador-Geral, com mandato",
+   "after": ". Dessa lista, o Chefe do Poder Executivo escolhe o Procurador-Geral, com mandato"
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "MODALITY_SHIFT",
+   "reason": "Texto permissivo quanto a iniciativa; \"devem\" reformulado.",
+   "before": "Elas devem observar as garantias dos membros,",
+   "after": "Essas leis observam as garantias dos membros,"
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento \"ainda que em disponibilidade\" sem traco.",
+   "before": "Também devem observar as vedações: honorários, advocacia, participação em sociedade comercial na forma da lei, outra função pública salvo uma de magistério,",
+   "after": "E observam as vedações: honorários, advocacia, participação em sociedade comercial na forma da lei, outra função pública, mesmo em disponibilidade, salvo uma de magistério,"
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": ", propor ação de inconstitucionalidade e representação para intervenção,",
+   "after": ". Também estão propor ação de inconstitucionalidade e representação para intervenção,"
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva do inciso III do § 2º sem ancora reconhecivel.",
+   "before": "(sem prejuízo das competências dos Tribunais de Contas e da própria instituição)",
+   "after": "(sem prejuízo da competência disciplinar e correicional do Ministério Público da União e dos Estados e da competência dos Tribunais de Contas)"
+  },
+  {
+   "target_id": "CF88:ART.130",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TECHNICAL_TERM_UNDEFINED",
+   "reason": "Termos tecnicos usados sem definicao.",
+   "before": "{\"termo\": \"Investidura\",",
+   "after": "{\"termo\": \"Vitaliciedade\", \"explicacao\": \"garantia de só perder o cargo por sentença judicial definitiva.\"}, {\"termo\": \"Inamovibilidade\", \"explicacao\": \"garantia de não ser transferido contra a vontade, salvo por interesse público.\"}, {\"termo\": \"Investidura\","
+  },
+  {
+   "target_id": "CF88:ART.132",
+   "section": "atencao",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "LAW_DEPENDENCY_OMITTED",
+   "reason": "Remissao a lei da nota oficial nao mencionada no corpo.",
+   "before": "A situação das procuradorias municipais",
+   "after": "A nota do texto oficial remete a uma lei sobre o tema, indicada na camada externa. A situação das procuradorias municipais"
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": ", do Corregedor nacional,",
+   "after": ". Também tratam do Corregedor nacional,"
+  },
+  {
+   "target_id": "CF88:ART.136",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; dependencia de lei do § 1º nao mencionada.",
+   "before": "O art. 136 permite que o Presidente da República, depois de ouvir o Conselho da República e o Conselho de Defesa Nacional, decrete estado de defesa. A medida serve para preservar ou restabelecer rapidamente, em locais restritos e determinados, a ordem pública ou a paz social ameaçadas por grave e iminente instabilidade institucional ou atingidas por calamidades naturais de grandes proporções. O § 2º limita a duração a trinta dias, com uma prorrogação por igual período se persistirem as razões. Os demais parágrafos tratam das medidas permitidas, das garantias dos presos e do controle pelo Congresso.",
+   "after": "O art. 136 permite que o Presidente da República, depois de ouvir o Conselho da República e o Conselho de Defesa Nacional, decrete estado de defesa. A medida se limita a locais restritos e determinados e serve para preservar ou restabelecer com rapidez a ordem pública ou a paz social em duas situações: ameaça de instabilidade institucional grave e iminente, ou dano causado por calamidade natural de grandes proporções. O § 2º limita a duração a trinta dias, com uma prorrogação por igual período se persistirem as razões. Os demais parágrafos tratam das medidas permitidas, que seguem os termos e limites da lei, das garantias dos presos e do controle pelo Congresso."
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; \"deve ser comunicada\" ajustado.",
+   "before": "O § 3º estabelece regras para a prisão durante o estado de defesa. A prisão por crime contra o Estado, determinada pelo executor da medida, deve ser comunicada imediatamente ao juiz competente, que a relaxa se for ilegal; o preso pode pedir exame de corpo de delito. A comunicação vem acompanhada de declaração sobre o estado físico e mental do detido. A prisão ou detenção não pode passar de dez dias, salvo autorização do Judiciário, e é proibida a incomunicabilidade do preso.",
+   "after": "O § 3º fixa regras para a prisão durante o estado de defesa. Quando o executor da medida prende alguém por crime contra o Estado, comunica imediatamente o juiz competente, que relaxa a prisão se ela for ilegal; o preso pode pedir à autoridade policial exame de corpo de delito. A comunicação vem com declaração da autoridade sobre o estado físico e mental do detido no momento da autuação. A prisão ou detenção não passa de dez dias, salvo autorização do Judiciário, e é proibida a incomunicabilidade do preso."
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.4",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto substituido.",
+   "before": "{\"termo\": \"Convocação extraordinária\", \"explicacao\": \"chamada do Congresso para se reunir fora do período normal.\"}",
+   "after": "{\"termo\": \"Maioria absoluta\", \"explicacao\": \"mais da metade de todos os membros, e não só dos presentes.\"}"
+  },
+  {
+   "target_id": "CF88:ART.137",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 137 permite que o Presidente da República, ouvidos o Conselho da República e o Conselho de Defesa Nacional, peça",
+   "after": "O art. 137 permite que o Presidente da República, depois de ouvir os Conselhos da República e de Defesa Nacional, peça"
+  },
+  {
+   "target_id": "CF88:ART.139",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 139 determina que, no estado de sítio decretado com base no art. 137, I, só podem ser tomadas contra as pessoas as medidas listadas: obrigação de permanecer em local determinado; detenção em edifício não destinado a acusados ou condenados por crimes comuns; restrições à inviolabilidade da correspondência, ao sigilo das comunicações, à prestação de informações e à liberdade de imprensa, radiodifusão e televisão, na forma da lei; suspensão da liberdade de reunião; busca e apreensão em domicílio; intervenção nas empresas de serviços públicos; e requisição de bens. O parágrafo único exclui das restrições a difusão de pronunciamentos de parlamentares feitos em suas Casas, se liberada pela Mesa.",
+   "after": "O art. 139 determina que, no estado de sítio decretado com base no art. 137, I, só podem ser tomadas contra as pessoas as medidas da lista. São elas: obrigação de ficar em local determinado; detenção em prédio que não seja destinado a acusados ou condenados por crime comum; restrições, na forma da lei, à inviolabilidade da correspondência, ao sigilo das comunicações, à prestação de informações e à liberdade de imprensa, rádio e televisão; suspensão da liberdade de reunião; busca e apreensão em domicílio; intervenção em empresas de serviços públicos; e requisição de bens. O parágrafo único exclui das restrições a difusão de pronunciamentos feitos por parlamentares em suas Casas, se a Mesa a liberar."
+  },
+  {
+   "target_id": "CF88:ART.140",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 140 determina que a Mesa do Congresso Nacional, depois de ouvir os líderes partidários, designe uma Comissão de cinco de seus membros para acompanhar e fiscalizar a execução das medidas do estado de defesa e do estado de sítio.",
+   "after": "O art. 140 determina que a Mesa do Congresso Nacional, depois de ouvir os líderes partidários, forme uma Comissão com cinco parlamentares encarregada de acompanhar e fiscalizar como são executadas as medidas do estado de defesa e do estado de sítio."
+  },
+  {
+   "target_id": "CF88:ART.140",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "A escolha é da Mesa do Congresso, mas os líderes partidários precisam ser ouvidos, o que permite a participação de diferentes forças políticas.",
+   "after": "A escolha é da Mesa do Congresso, mas os líderes partidários precisam ser ouvidos."
+  },
+  {
+   "target_id": "CF88:ART.141",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade (\"por isso\") nao declarada.",
+   "before": "O relatório do Presidente permite ao Congresso verificar o que foi feito, contra quem e por quê. Por isso exige a lista com o nome das pessoas atingidas.",
+   "after": "O relatório do Presidente informa ao Congresso o que foi feito, contra quem e por quê, com a lista nominal das pessoas atingidas."
+  },
+  {
+   "target_id": "CF88:ART.142",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 142 define as Forças Armadas, formadas pela Marinha, pelo Exército e pela Aeronáutica, como instituições nacionais permanentes e regulares, organizadas com base na hierarquia e na disciplina, sob a autoridade suprema do Presidente da República. Elas se destinam à defesa da Pátria, à garantia dos poderes constitucionais e, por iniciativa de qualquer destes, da lei e da ordem. Os parágrafos tratam da lei complementar de organização, do habeas corpus nas punições disciplinares e do regime jurídico dos militares.",
+   "after": "O art. 142 define as Forças Armadas, formadas pela Marinha, pelo Exército e pela Aeronáutica. São instituições nacionais, permanentes e regulares, organizadas sobre hierarquia e disciplina e submetidas à autoridade suprema do Presidente da República. Destinam-se a defender a Pátria, a garantir os poderes constitucionais e, quando um desses poderes tomar a iniciativa, a garantir a lei e a ordem. Os parágrafos tratam da lei complementar de organização, do habeas corpus nas punições disciplinares e do regime jurídico dos militares."
+  },
+  {
+   "target_id": "CF88:ART.142",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Qualificacao doutrinaria retirada.",
+   "before": "As Forças Armadas são instituições do Estado, e não de um governo. O texto as qualifica como permanentes e regulares e as coloca sob a autoridade suprema do Presidente.",
+   "after": "O texto qualifica as Forças Armadas como permanentes e regulares e as coloca sob a autoridade suprema do Presidente."
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.3",
+   "section": "atencao",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de 10 palavras do inciso VI.",
+   "before": "A perda do posto exige decisão de tribunal militar de caráter permanente, em tempo de paz, ou de tribunal especial, em tempo de guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII.",
+   "after": "A perda do posto depende de decisão de tribunal militar permanente, em tempo de paz, ou de tribunal especial, em tempo de guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII."
+  },
+  {
+   "target_id": "CF88:ART.139",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; \"radiodifusao\" sem traco.",
+   "before": "restrições, na forma da lei, à inviolabilidade da correspondência, ao sigilo das comunicações, à prestação de informações e à liberdade de imprensa, rádio e televisão;",
+   "after": "restrições, na forma da lei, à inviolabilidade da correspondência e ao sigilo das comunicações, ao dever de prestar informações e à liberdade de imprensa, de radiodifusão e de televisão;"
+  },
+  {
+   "target_id": "CF88:ART.142",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "formadas pela Marinha, pelo Exército e pela Aeronáutica. São instituições nacionais, permanentes e regulares,",
+   "after": "que reúnem Marinha, Exército e Aeronáutica. O texto as qualifica como instituições nacionais, permanentes e regulares,"
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.3",
+   "section": "atencao",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de 10 palavras.",
+   "before": "de tribunal militar permanente, em tempo de paz, ou de tribunal especial, em tempo de guerra.",
+   "after": "de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra."
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.2",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "\"excecao\" sem marcador no texto.",
+   "before": "A regra é uma exceção ao direito previsto no art. 5º, LXVIII.",
+   "after": "A regra limita, para esse caso, o direito previsto no art. 5º, LXVIII."
+  },
+  {
+   "target_id": "CF88:ART.143",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O § 1º atribui às Forças Armadas, na forma da lei, a tarefa de fixar serviço alternativo para quem, em tempo de paz e depois de alistado, alegar imperativo de consciência, decorrente de crença religiosa ou de convicção filosófica ou política, para se eximir de atividades essencialmente militares.",
+   "after": "O § 1º atribui às Forças Armadas, na forma da lei, a tarefa de fixar serviço alternativo para quem, em tempo de paz e depois de alistado, alegar imperativo de consciência para não exercer atividades essencialmente militares. O imperativo pode decorrer de crença religiosa ou de convicção filosófica ou política."
+  },
+  {
+   "target_id": "CF88:ART.144",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do § 10 sem traco.",
+   "before": "a remuneração e a segurança viária.",
+   "after": "a remuneração e a segurança viária, que cabe a órgãos ou entidades executivos de trânsito, na forma da lei."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elementos da lista sem traco.",
+   "before": "O § 1º descreve a polícia federal como órgão permanente, instituído por lei, organizado e mantido pela União e estruturado em carreira. Suas funções são apurar infrações contra a ordem política e social ou contra bens, serviços e interesses da União e de suas autarquias e empresas públicas, além de outras infrações de repercussão interestadual ou internacional que exijam repressão uniforme, segundo a lei. Também previne e reprime o tráfico de drogas, o contrabando e o descaminho, sem prejuízo da ação fazendária e de outros órgãos, exerce as funções de polícia marítima, aeroportuária e de fronteiras e é, com exclusividade, a polícia judiciária da União.",
+   "after": "O § 1º descreve a polícia federal como órgão permanente, instituído por lei, organizado e mantido pela União e estruturado em carreira. Ela apura infrações penais contra a ordem política e social ou em detrimento de bens, serviços e interesses da União e de suas entidades autárquicas e empresas públicas, além de outras infrações de repercussão interestadual ou internacional que exijam repressão uniforme, segundo a lei. Também previne e reprime o tráfico de drogas, o contrabando e o descaminho, preservada a atuação da área fazendária e de outros órgãos. Exerce as funções de polícia marítima, aeroportuária e de fronteiras e é, com exclusividade, a polícia judiciária da União."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Inferencia sobre a Justica competente retirada.",
+   "before": "O critério básico acompanha a competência da Justiça Federal: infrações contra bens e interesses da União e de suas entidades. Mas o texto vai além e inclui crimes com repercussão interestadual ou internacional que exijam repressão uniforme, segundo a lei, mesmo que não sejam julgados pela Justiça Federal.",
+   "after": "O primeiro critério são as infrações contra bens e interesses da União e de suas entidades. O texto acrescenta crimes com repercussão interestadual ou internacional que exijam repressão uniforme, segundo a lei."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Reformulado pelo texto do inciso IV.",
+   "before": "Como polícia judiciária da União, cabe só a ela investigar para a Justiça Federal.",
+   "after": "Ela exerce, com exclusividade, as funções de polícia judiciária da União."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.4",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 4º atribui às polícias civis, dirigidas por delegados de polícia de carreira, as funções de polícia judiciária e a apuração de infrações penais. Fica ressalvada a competência da União, e ficam excluídas as infrações militares.",
+   "after": "O § 4º confia às polícias civis, dirigidas por delegados de polícia de carreira, a função de polícia judiciária e a investigação de infrações penais. Fica ressalvada a competência da União, e ficam excluídas as infrações militares."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.4",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Inferencia retirada.",
+   "before": "A direção cabe a delegado de carreira, o que impede que pessoa de fora da carreira chefie a instituição.",
+   "after": "A direção cabe a delegado de polícia de carreira."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.4",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo alinhado ao texto da explicacao.",
+   "before": "\"termo\": \"Inquérito policial\"",
+   "after": "\"termo\": \"Inquérito\""
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e aos corpos de bombeiros militares, além das atribuições definidas em lei, a execução de atividades de defesa civil.",
+   "after": "e aos corpos de bombeiros militares a execução de atividades de defesa civil, somadas às tarefas que a lei lhes atribuir."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.5",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Inferencia retirada.",
+   "before": "A polícia militar faz o patrulhamento visível nas ruas e atua para manter a ordem. Ela não é, como regra, a polícia de investigação.",
+   "after": "A polícia militar faz o patrulhamento visível nas ruas e atua para manter a ordem."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.8",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 8º permite que os Municípios criem guardas municipais destinadas à proteção de seus bens, serviços e instalações, conforme a lei.",
+   "after": "O § 8º permite que os Municípios criem guardas municipais para proteger os próprios bens, serviços e instalações, conforme dispuser a lei."
+  },
+  {
+   "target_id": "CF88:ART.145",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Definicao de imposto do Codigo Tributario reformulada como leitura do artigo.",
+   "before": "O imposto é cobrado sem que o Estado precise oferecer algo específico ao contribuinte. A taxa está ligada a uma atuação do Estado dirigida ao contribuinte: fiscalização ou serviço. A contribuição de melhoria está ligada à valorização causada por obra pública.",
+   "after": "A taxa está ligada, pelo próprio texto, a uma atuação do Estado dirigida ao contribuinte: fiscalização ou serviço. A contribuição de melhoria está ligada a obra pública. Para o imposto, o artigo não exige atuação estatal específica."
+  },
+  {
+   "target_id": "CF88:ART.145",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado; dependencia de lei do § 1º mencionada.",
+   "before": "O artigo apresenta três espécies de tributos que todos os entes podem criar, cada um dentro da sua competência.",
+   "after": "O artigo apresenta três espécies de tributos que a União, os Estados, o Distrito Federal e os Municípios podem criar, cada um dentro da sua competência e nos termos da lei."
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso II autoriza a instituição de taxas em razão do exercício do poder de polícia ou pela utilização, efetiva ou potencial, de serviços públicos específicos e divisíveis, prestados ao contribuinte ou postos à sua disposição.",
+   "after": "O inciso II autoriza a cobrança de taxas em duas situações: pelo exercício do poder de polícia, ou pelo uso, efetivo ou potencial, de serviço público específico e divisível prestado ao contribuinte ou colocado à sua disposição."
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO",
+   "detector": "ABSOLUTE_CLAIM",
+   "reason": "\"sempre que possivel\" reformulado para nao ler como absoluto.",
+   "before": "O § 1º determina que, sempre que possível, os impostos tenham caráter pessoal e sejam graduados conforme a capacidade econômica do contribuinte. Para dar efetividade a esses objetivos, a administração tributária pode identificar o patrimônio, os rendimentos e as atividades econômicas do contribuinte, respeitados os direitos individuais e nos termos da lei.",
+   "after": "O § 1º determina que os impostos, quando possível, tenham caráter pessoal e sejam graduados conforme a capacidade econômica do contribuinte. Para dar efetividade a esses objetivos, a administração tributária pode identificar o patrimônio, os rendimentos e as atividades econômicas do contribuinte, respeitados os direitos individuais e nos termos da lei."
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "ABSOLUTE_CLAIM",
+   "reason": "Afirmacao doutrinaria sobre impostos de consumo retirada; \"sempre\" reformulado.",
+   "before": "A expressão sempre que possível mostra que a regra é aplicada na medida em que o imposto permite. Alguns impostos, como os que incidem sobre o consumo, têm mais dificuldade em considerar a situação pessoal.",
+   "after": "A ressalva do texto, que limita a regra ao que for possível, mostra que ela é aplicada na medida em que o imposto permite."
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "section": "exemplo_pratico",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Regra da legislacao do imposto de renda retirada do exemplo.",
+   "before": "No imposto de renda, quem ganha mais paga alíquota maior, e despesas pessoais, como as de saúde, podem ser consideradas. É um exemplo de imposto graduado pela capacidade econômica.",
+   "after": "No imposto de renda, quem ganha mais paga alíquota maior. É um exemplo de imposto graduado pela capacidade econômica."
+  },
+  {
+   "target_id": "CF88:ART.146",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada; entes do inciso I explicitados.",
+   "before": "Os conflitos de competência são resolvidos por ela, para evitar que dois entes cobrem o mesmo tributo sobre o mesmo fato.",
+   "after": "Ela dispõe sobre os conflitos de competência entre a União, os Estados, o Distrito Federal e os Municípios."
+  },
+  {
+   "target_id": "CF88:ART.146:INC.III",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada.",
+   "before": "A definição dos elementos dos impostos evita que cada ente invente conceitos próprios para o mesmo tributo.",
+   "after": "A definição dos elementos dos impostos discriminados na Constituição fica na lei complementar."
+  },
+  {
+   "target_id": "CF88:ART.146:INC.III",
+   "section": "exemplo_pratico",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Exemplo afirmava invalidade de lei estadual (conclusao jurisprudencial).",
+   "before": "Um Estado aprova lei que amplia o prazo para cobrar uma dívida tributária. Como prescrição tributária é matéria de norma geral, reservada à lei complementar, a lei estadual não pode tratar do tema dessa forma.",
+   "after": "Um Município quer saber em quanto tempo perde o direito de cobrar um imposto não pago. A resposta está nas normas gerais de prescrição e decadência, fixadas em lei complementar e aplicáveis a todos os entes."
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "institua um regime único de arrecadação dos impostos e contribuições de todos os entes federativos.",
+   "after": "institua um regime único de arrecadação dos impostos e contribuições da União, dos Estados, do Distrito Federal e dos Municípios."
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "O regime único simplifica a vida das micro e pequenas empresas: em vez de pagar vários tributos separadamente, elas recolhem tudo em uma guia.",
+   "after": "O regime único permite que micro e pequenas empresas recolham vários tributos em um só recolhimento."
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 146-A permite que lei complementar estabeleça critérios especiais de tributação com o objetivo de prevenir desequilíbrios da concorrência. A União mantém a competência para, por lei, estabelecer normas com o mesmo objetivo.",
+   "after": "O art. 146-A autoriza a lei complementar a criar critérios especiais de tributação para prevenir desequilíbrios na concorrência. A União mantém a competência para, por lei, editar normas com o mesmo objetivo."
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade atribuida ao texto.",
+   "before": "O artigo permite que a lei complementar crie regras especiais de tributação para evitar esses desequilíbrios.",
+   "after": "O artigo permite que a lei complementar crie regras especiais de tributação com esse objetivo, que é declarado no próprio texto."
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo alinhado ao texto.",
+   "before": "\"termo\": \"Desequilíbrio concorrencial\"",
+   "after": "\"termo\": \"Desequilíbrio da concorrência\""
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Ela apura infrações penais contra a ordem política e social ou em detrimento de bens, serviços e interesses da União e de suas entidades autárquicas e empresas públicas,",
+   "after": "Ela apura infrações penais que atinjam a ordem política e social, ou que causem detrimento a bens, serviços e interesses da União, de suas entidades autárquicas e de suas empresas públicas,"
+  },
+  {
+   "target_id": "CF88:ART.146",
+   "section": "o_que_significa",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Ela dispõe sobre os conflitos de competência entre a União, os Estados, o Distrito Federal e os Municípios.",
+   "after": "Ela dispõe sobre os conflitos de competência tributária entre os entes federativos: União, Estados, Distrito Federal e Municípios."
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "institua um regime único de arrecadação dos impostos e contribuições da União, dos Estados, do Distrito Federal e dos Municípios.",
+   "after": "institua um regime único para arrecadar impostos e contribuições da União, dos Estados, do Distrito Federal e dos Municípios."
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"so pode\" reformulado.",
+   "before": "A taxa só pode ser cobrada quando existe uma atuação do Estado ligada ao contribuinte.",
+   "after": "A taxa depende de uma atuação do Estado ligada ao contribuinte."
+  },
+  {
+   "target_id": "CF88:ART.145:PAR.1",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "\"ressalva\" sem marcador no texto.",
+   "before": "A ressalva do texto, que limita a regra ao que for possível,",
+   "after": "A expressão do texto que limita a regra ao que for possível"
+  },
+  {
+   "target_id": "CF88:ART.146:INC.III",
+   "section": "exemplo_pratico",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "aplicáveis a todos os entes.",
+   "after": "aplicáveis à União, aos Estados, ao Distrito Federal e aos Municípios."
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva (\"sem prejuizo\") sem marcador no resumo.",
+   "before": "A União mantém a competência para, por lei, editar normas com o mesmo objetivo.",
+   "after": "Sem prejuízo disso, a União mantém a competência para, por lei, editar normas com o mesmo objetivo."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.1",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": ", além de outras infrações de repercussão interestadual",
+   "after": ". Também apura outras infrações de repercussão interestadual"
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "impostos e contribuições da União, dos Estados, do Distrito Federal e dos Municípios.",
+   "after": "impostos e contribuições federais, estaduais, distritais e municipais."
+  },
+  {
+   "target_id": "CF88:ART.146-A",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva unida a frase que resume a regra.",
+   "before": "para prevenir desequilíbrios na concorrência. Sem prejuízo disso, a União mantém a competência para, por lei, editar normas com o mesmo objetivo.",
+   "after": "para prevenir desequilíbrios na concorrência, sem prejuízo da competência da União para, por lei, editar normas com o mesmo objetivo."
+  },
+  {
+   "target_id": "CF88:ART.147",
+   "section": "o_que_significa",
+   "category": "REMISSAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Fundamento constitucional da afirmacao explicitado.",
+   "before": "O Distrito Federal não pode ser dividido em Municípios.",
+   "after": "O Distrito Federal não pode ser dividido em Municípios (art. 32)."
+  },
+  {
+   "target_id": "CF88:ART.148",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "para atender a despesas extraordinárias decorrentes de calamidade pública, de guerra externa ou de sua iminência;",
+   "after": "para cobrir despesas extraordinárias causadas por calamidade pública, por guerra externa ou por sua iminência;"
+  },
+  {
+   "target_id": "CF88:ART.149",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 149 dá à União competência exclusiva para instituir contribuições sociais, de intervenção no domínio econômico e de interesse das categorias profissionais ou econômicas, como instrumento de sua atuação nessas áreas. Devem ser observados os arts. 146, III, e 150, I e III, sem prejuízo do art. 195, § 6º, para as contribuições a que ele se refere. Os parágrafos tratam das contribuições dos servidores para o regime próprio de previdência, das regras de incidência sobre exportação e importação, da equiparação do importador pessoa natural e da incidência única definida em lei.",
+   "after": "O art. 149 reserva somente à União a criação de três tipos de contribuição: sociais, de intervenção no domínio econômico e de interesse das categorias profissionais ou econômicas. Elas servem como instrumento de atuação da União nessas áreas e observam os arts. 146, III, e 150, I e III, sem prejuízo do art. 195, § 6º, para as contribuições a que ele se refere. Os parágrafos tratam das contribuições dos servidores para o regime próprio de previdência, das regras de incidência sobre exportação e importação, da equiparação do importador pessoa natural e da incidência única definida em lei."
+  },
+  {
+   "target_id": "CF88:ART.149",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" e \"excecao\" sem marcador no texto reformulados.",
+   "before": "A competência é exclusiva da União. A exceção está no § 1º: todos os entes instituem contribuição dos seus servidores para o regime próprio de previdência.",
+   "after": "A competência do caput é exclusiva da União. O § 1º, porém, determina que a União, os Estados, o Distrito Federal e os Municípios instituam contribuição dos seus servidores para o regime próprio de previdência."
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.1",
+   "section": "o_que_significa",
+   "category": "CONTRATO_DO_MOTOR",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Erro de redacao (\"alineas\").",
+   "before": "As alíneas progressivas permitem cobrar mais de quem ganha mais.",
+   "after": "As alíquotas progressivas permitem cobrar percentual maior de quem ganha mais."
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.1",
+   "section": "exemplo_pratico",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Referencia a limite de outra norma retirada do exemplo.",
+   "before": ", e não apenas sobre o que supera um limite mais alto.",
+   "after": "."
+  },
+  {
+   "target_id": "CF88:ART.149:PAR.2",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O § 2º estabelece que as contribuições sociais e de intervenção no domínio econômico do caput não incidem sobre receitas de exportação, incidem também sobre a importação de produtos estrangeiros ou serviços e podem ter alíquotas ad valorem, sobre o faturamento, a receita bruta, o valor da operação ou, na importação, o valor aduaneiro, ou específicas, sobre a unidade de medida adotada.",
+   "after": "O § 2º estabelece três regras para as contribuições sociais e de intervenção no domínio econômico do caput. Elas não incidem sobre receitas de exportação e incidem também sobre a importação de produtos estrangeiros ou serviços. Suas alíquotas podem ser ad valorem, sobre o faturamento, a receita bruta, o valor da operação ou, na importação, o valor aduaneiro, ou específicas, sobre a unidade de medida adotada."
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "observem as mesmas regras sobre fatos geradores, bases de cálculo, hipóteses de não incidência e sujeitos passivos;",
+   "after": "observem as mesmas regras sobre fato gerador, base de cálculo, casos de não incidência e sujeitos passivos;"
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "section": "o_que_significa",
+   "category": "REMISSAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Fonte da afirmacao explicitada por remissao.",
+   "before": "um imposto dos Estados e Municípios e uma contribuição da União.",
+   "after": "o imposto do art. 156-A, dos Estados, do Distrito Federal e dos Municípios, e a contribuição do art. 195, V, da União."
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "section": "o_que_diz",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "\"excecoes\" sem marcador; reformulado pelo § 2º.",
+   "before": "Os parágrafos permitem alíquotas reduzidas de modo uniforme e exceções previstas em lei complementar,",
+   "after": "Os parágrafos permitem alíquotas reduzidas de modo uniforme e hipóteses, previstas em lei complementar, em que a regra não se aplica,"
+  },
+  {
+   "target_id": "CF88:ART.150:INC.I",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade e conclusao interpretativa nao declaradas no texto.",
+   "before": "A lei precisa estabelecer o tributo: não basta uma autorização genérica para que o Executivo decida tudo depois.\nO princípio protege o contribuinte, porque só os representantes eleitos podem decidir quanto ele vai pagar.",
+   "after": "O texto fala em lei que estabeleça o tributo."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.I",
+   "section": "exemplo_pratico",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "\"porque\" lido como finalidade; reformulado.",
+   "before": "O aumento é inválido, porque o inciso exige lei.",
+   "after": "O aumento contraria o inciso, que exige lei."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.III",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso III proíbe cobrar tributos em três situações: sobre fatos geradores ocorridos antes do início da vigência da lei que os criou ou aumentou (alínea a); no mesmo exercício financeiro em que foi publicada essa lei (alínea b); e antes de noventa dias da publicação dessa lei, observada a alínea b (alínea c).",
+   "after": "O inciso III impede a cobrança de tributos em três situações: sobre fatos geradores anteriores à entrada em vigor da lei que os criou ou aumentou (alínea a); no mesmo exercício financeiro em que essa lei foi publicada (alínea b); e antes de noventa dias contados da publicação dessa lei, observada a alínea b (alínea c)."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.IV",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto substituido.",
+   "before": "{\"termo\": \"Carga tributária\", \"explicacao\": \"peso total dos tributos sobre o contribuinte.\"}",
+   "after": "{\"termo\": \"Conceito aberto\", \"explicacao\": \"expressão cujo conteúdo é definido na aplicação a cada caso.\"}"
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso VI proíbe instituir impostos sobre: patrimônio, renda ou serviços dos entes federativos entre si (alínea a); entidades religiosas e templos de qualquer culto, inclusive suas organizações assistenciais e beneficentes (alínea b); patrimônio, renda ou serviços de partidos políticos e suas fundações, entidades sindicais dos trabalhadores e instituições de educação e de assistência social sem fins lucrativos, atendidos os requisitos da lei (alínea c); livros, jornais, periódicos e o papel destinado à impressão (alínea d); e fonogramas e videofonogramas musicais produzidos no Brasil com obras ou intérpretes brasileiros, salvo na etapa de replicação industrial de mídias ópticas (alínea e).",
+   "after": "O inciso VI proíbe instituir impostos sobre: patrimônio, renda ou serviços de um ente federativo cobrados por outro (alínea a); templos de qualquer culto e entidades religiosas, com suas organizações assistenciais e beneficentes (alínea b); patrimônio, renda ou serviços de partidos políticos e suas fundações, de entidades sindicais dos trabalhadores e de instituições de educação e de assistência social sem fins lucrativos, atendidos os requisitos da lei (alínea c); livros, jornais, periódicos e o papel destinado à impressão (alínea d); e fonogramas e videofonogramas musicais produzidos no Brasil com obras ou intérpretes brasileiros, salvo na etapa de replicação industrial de mídias ópticas (alínea e)."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Valores atribuidos a cada imunidade (finalidades) nao declarados no texto.",
+   "before": "As imunidades protegem valores que a Constituição considera essenciais, impedindo a cobrança de impostos.\nA alínea a protege a Federação: um ente não cobra imposto do outro. As alíneas b e c protegem a liberdade religiosa, a atividade política, a organização dos trabalhadores, a educação e a assistência social. A alínea d protege a liberdade de expressão e a difusão da cultura. A alínea e protege a música brasileira.\nA imunidade vale para impostos, e não para taxas ou contribuições, salvo previsão específica.",
+   "after": "As imunidades impedem a cobrança de impostos sobre as pessoas e os bens indicados.\nA alínea a impede um ente de cobrar imposto de outro. As alíneas b e c alcançam templos, partidos e suas fundações, sindicatos de trabalhadores e instituições de educação e assistência sem fins lucrativos. A alínea d alcança livros, jornais, periódicos e o papel de impressão, e a alínea e alcança certas obras musicais brasileiras.\nA imunidade do inciso vale para impostos, e não para taxas ou contribuições, salvo previsão específica em outro dispositivo."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto retirado.",
+   "before": "{\"termo\": \"Imunidade recíproca\", \"explicacao\": \"proibição de um ente cobrar imposto de outro.\"}, ",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras (listas de remissao reordenadas).",
+   "before": "O § 1º exclui da anterioridade do exercício (inciso III, b) os tributos dos arts. 148, I, 153, I, II, IV e V, e 154, II. Exclui da anterioridade de noventa dias (inciso III, c) os tributos dos arts. 148, I, 153, I, II, III e V, e 154, II, e a fixação da base de cálculo dos impostos dos arts. 155, III, e 156, I.",
+   "after": "O § 1º lista exceções às anterioridades. Ficam fora da anterioridade do exercício (inciso III, b) os tributos do art. 148, I, do art. 154, II, e do art. 153, I, II, IV e V. Ficam fora da anterioridade de noventa dias (inciso III, c) os tributos do art. 154, II, do art. 148, I, e do art. 153, I, II, III e V, além da fixação da base de cálculo dos impostos dos arts. 155, III, e 156, I."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "Alguns tributos precisam ser alterados com rapidez, e por isso a Constituição os libera de uma ou de ambas as esperas.\n",
+   "after": "O parágrafo libera alguns tributos de uma ou de ambas as esperas.\n"
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Justificativa doutrinaria retirada.",
+   "before": "Os impostos de importação, exportação e sobre operações financeiras também não seguem nenhuma delas, porque funcionam como instrumentos de política econômica.",
+   "after": "Os impostos de importação, exportação e sobre operações financeiras também não seguem nenhuma delas."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto substituido.",
+   "before": "{\"termo\": \"Anterioridade nonagesimal\", \"explicacao\": \"espera de noventa dias entre a lei e a cobrança.\"}",
+   "after": "{\"termo\": \"Anterioridade\", \"explicacao\": \"espera exigida entre a lei que cria ou aumenta o tributo e a cobrança.\"}"
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 2º estende a imunidade recíproca (inciso VI, a) às autarquias e às fundações instituídas e mantidas pelo poder público e à empresa pública prestadora de serviço postal, quanto ao patrimônio, à renda e aos serviços ligados às suas finalidades essenciais ou delas decorrentes. O § 3º afasta essas imunidades do patrimônio, da renda e dos serviços ligados a atividades econômicas regidas pelas normas de empreendimentos privados, ou em que haja contraprestação ou pagamento de preços ou tarifas pelo usuário, e não exonera o promitente comprador do imposto sobre o imóvel.",
+   "after": "O § 2º estende a imunidade recíproca (inciso VI, a) às autarquias, às fundações criadas e mantidas pelo poder público e à empresa pública que presta o serviço postal. A extensão alcança patrimônio, renda e serviços ligados às finalidades essenciais dessas entidades ou delas decorrentes. O § 3º afasta essas imunidades quando patrimônio, renda e serviços se ligam à exploração de atividade econômica sujeita às regras dos empreendimentos privados ou quando o usuário paga preço ou tarifa. Também não libera do imposto sobre o imóvel quem se comprometeu a comprá-lo."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.2",
+   "section": "o_que_significa",
+   "category": "CONTRATO_DO_MOTOR",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Correcao gramatical.",
+   "before": "E quem compromete-se a comprar um imóvel público continua devendo o imposto sobre ele.",
+   "after": "E quem se compromete a comprar um imóvel público continua devendo o imposto sobre ele."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.6",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 6º exige lei específica, federal, estadual ou municipal, que trate exclusivamente da matéria ou do tributo correspondente, para conceder subsídio, isenção, redução de base de cálculo, crédito presumido, anistia ou remissão relativos a impostos, taxas ou contribuições. Fica ressalvado o art. 155, § 2º, XII, g.",
+   "after": "O § 6º exige lei específica para conceder subsídio, isenção, redução de base de cálculo, crédito presumido, anistia ou remissão em impostos, taxas ou contribuições. Essa lei, federal, estadual ou municipal, deve tratar exclusivamente desses benefícios ou do tributo correspondente. Fica ressalvado o art. 155, § 2º, XII, g."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.6",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Finalidade (\"transparencia\", \"debate proprio\") nao declarada; exigencia atribuida ao texto.",
+   "before": "Benefícios fiscais significam receita que o Estado deixa de arrecadar. Por isso o parágrafo exige transparência na sua concessão.\nNão basta qualquer lei: ela precisa ser específica, tratando só do benefício ou do tributo correspondente. Isso impede que benefícios sejam incluídos em leis sobre outros assuntos, sem debate próprio.",
+   "after": "Benefícios fiscais significam receita que o Estado deixa de arrecadar.\nO texto não se contenta com qualquer lei: exige lei específica, que trate só do benefício ou do tributo correspondente. Com isso, o benefício não pode ser incluído em lei sobre outro assunto."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 7º permite que a lei atribua a um sujeito passivo a responsabilidade pelo pagamento de imposto ou contribuição cujo fato gerador deva ocorrer depois. Fica assegurada a restituição imediata e preferencial da quantia paga se o fato gerador presumido não se realizar.",
+   "after": "O § 7º permite que a lei torne um sujeito passivo responsável por pagar imposto ou contribuição de fato gerador que ainda vai acontecer. Se o fato gerador presumido não se realizar, a quantia paga deve ser restituída de forma imediata e preferencial."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "Isso facilita a fiscalização, porque concentra a cobrança em poucos contribuintes, como os fabricantes.\n",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.149",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "sociais, de intervenção no domínio econômico e de interesse das categorias profissionais ou econômicas.",
+   "after": "sociais, de intervenção no domínio econômico, e as de interesse de categorias profissionais ou econômicas."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e de instituições de educação e de assistência social sem fins lucrativos, atendidos os requisitos da lei (alínea c);",
+   "after": "e de instituições sem fins lucrativos de educação e de assistência social, observados os requisitos da lei (alínea c);"
+  },
+  {
+   "target_id": "CF88:ART.148",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento \"decorrentes\" sem traco.",
+   "before": "para cobrir despesas extraordinárias causadas por calamidade pública, por guerra externa ou por sua iminência;",
+   "after": "para cobrir despesas extraordinárias que decorram de calamidade pública ou de guerra externa, inclusive de sua iminência;"
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.1",
+   "section": "o_que_diz",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "\"excecoes\" sem marcador no texto.",
+   "before": "O § 1º lista exceções às anterioridades.",
+   "after": "O § 1º indica tributos que não seguem as anterioridades."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.6",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "MODALITY_SHIFT",
+   "reason": "\"deve\" lido como mudanca de modalidade.",
+   "before": "deve tratar exclusivamente desses benefícios",
+   "after": "trata exclusivamente desses benefícios"
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "MODALITY_SHIFT",
+   "reason": "Texto permissivo; garantia expressa pelo proprio termo do texto.",
+   "before": "Se o fato gerador presumido não se realizar, a quantia paga deve ser restituída de forma imediata e preferencial.",
+   "after": "Se o fato gerador presumido não se realizar, fica assegurada a restituição imediata e preferencial da quantia paga."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.III",
+   "section": "exemplo_pratico",
+   "category": "NUMERO",
+   "detector": "EXAMPLE_NUMBER",
+   "reason": "Data do exemplo sem base no texto retirada; exemplo diferenciado da visao geral aprovada do art. 150 (ENTENDA_REPEATED_ACROSS_HIERARCHY).",
+   "before": "Uma lei que aumenta um imposto é publicada em 20 de dezembro. Pela alínea b, só poderia ser cobrada a partir de janeiro; mas pela alínea c precisa esperar noventa dias, ou seja, até março.",
+   "after": "Uma lei publicada em maio cria um novo tributo sobre certa atividade. Ele não alcança as atividades realizadas antes da vigência da lei (alínea a). Também não pode ser cobrado no mesmo ano (alínea b), e a cobrança no ano seguinte respeita os noventa dias (alínea c)."
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.3",
+   "section": "o_que_diz",
+   "category": "DUPLICACAO",
+   "detector": "DUPLICATION",
+   "reason": "Resumo quase identico ao do art. 99, § 3º (estrutura paralela); reescrito por remissao, destacando o que e proprio do Ministerio Publico.",
+   "before": "O § 3º determina que o Ministério Público elabore sua proposta orçamentária dentro dos limites da lei de diretrizes orçamentárias. O § 4º prevê que, se a proposta não for enviada no prazo, o Executivo use os valores da lei orçamentária vigente, ajustados aos limites. O § 5º manda o Executivo fazer os ajustes se a proposta vier fora dos limites. O § 6º proíbe despesas ou obrigações acima dos limites durante a execução do orçamento, salvo autorização prévia por créditos suplementares ou especiais.",
+   "after": "O § 3º manda o Ministério Público elaborar a sua proposta orçamentária nos limites da lei de diretrizes orçamentárias. Os §§ 4º a 6º aplicam à instituição o mesmo esquema do Judiciário (art. 99, §§ 3º a 5º) para três situações: proposta não enviada no prazo, proposta acima dos limites e despesas durante a execução, que não podem extrapolar os limites salvo créditos suplementares ou especiais autorizados antes."
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "section": "atencao",
+   "category": "TRANSICAO_E_EFEITO_TEMPORAL",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Aplicacao no tempo e material para a correcao da leitura; dependencia explicitada.",
+   "before": "foram criados por emenda recente e têm regras de transição no ADCT, consultadas na camada externa.",
+   "after": "foram criados por emenda recente. A partir de quando cada regra se aplica depende de regra de transição do ADCT, consultada na camada externa."
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "section": "atencao",
+   "category": "TRANSICAO_E_EFEITO_TEMPORAL",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Aplicacao no tempo e material para a correcao da leitura; dependencia explicitada.",
+   "before": "Os tributos envolvidos têm regras de transição no ADCT, na camada externa.",
+   "after": "A aplicação no tempo depende de regra de transição do ADCT, na camada externa."
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "section": "atencao",
+   "category": "TRANSICAO_E_EFEITO_TEMPORAL",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Aplicacao no tempo e material para a correcao da leitura; dependencia explicitada.",
+   "before": "A aplicação no tempo dessas regras segue as normas de transição da camada externa.",
+   "after": "A aplicação no tempo dessas regras depende de regra de transição do ADCT, na camada externa."
+  }
+ ]
+}
