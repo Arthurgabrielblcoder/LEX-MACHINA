@@ -96,6 +96,14 @@ Jurisprudência: CONTEXT_ONLY 25, NONE 152, REQUIRED_FOR_CORRECTNESS 2.
 | — MACRO08_QUICK_C_REVIEW.md | 9.593 |
 | Redução vs. modelo antigo | 339.394 (58.1%) |
 
+### Por segmento (cada segmento empacotado sozinho, mesmo código de pacotes)
+
+| Segmento | Rascunhos | Modelo antigo | Apresentado | Redução |
+|---|---|---|---|---|
+| CORPO | 156.539 | 339.978 | 110.600 | 229.378 (67.5%) |
+| ADCT | 93.473 | 244.584 | 135.696 | 108.888 (44.5%) |
+| TOTAL (lote, empacotado junto) | 250.012 | 584.584 | 245.190 | 339.394 (58.1%) |
+
 ## Checks estruturais
 
 - PASS: contrato do motor, Lei Seca idêntica ao texto do perfil em todos os registros, 0 HARD_FAIL, 0 aprovado novo, 0 STALE.

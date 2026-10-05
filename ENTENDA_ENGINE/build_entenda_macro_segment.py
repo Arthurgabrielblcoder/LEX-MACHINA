@@ -552,6 +552,8 @@ def build(bd):
                      for x, v in critic.items()}
     doc['checks'] = M.checks(c, doc)
     doc['segments'] = {s: segment_of_rows(doc, s) for s in ('CORPO', 'ADCT')}
+    for s in doc['segments']:
+        doc['segments'][s]['metrics'] = segment_metrics(doc, c, nm, s)
     for name, text in out.items():
         (bd / name).write_bytes(text.encode('utf-8'))
     _json(bd / 'MICRO_ADJUSTMENTS_LOG.json', micro)
@@ -613,6 +615,15 @@ def segment_of_rows(doc, seg):
                 legal_risk={k: sum(1 for x in rows if x['legal_risk'] == k) for k in ('LOW', 'MEDIUM', 'HIGH')},
                 verification_complexity={k: sum(1 for x in rows if x['verification_complexity'] == k) for k in ('SIMPLE', 'STRUCTURED', 'EXTERNAL')},
                 jurisprudence=dict(sorted(Counter(x['jurisprudence'] for x in rows).items())))
+
+
+def segment_metrics(doc, c, nm, seg):
+    """Character metrics of one segment, as if its items were packaged alone (same packet code as the whole batch)."""
+    rows = [x for x in doc['rows'] if SEGMENT_OF.get(x['target_id'].split(':')[0]) == seg]
+    sub = dict(doc, rows=rows, counts={q: sum(1 for x in rows if x['queue'] == q) for q in BP.QUEUES})
+    m = BP.metrics(sub, c, render_packets(sub, c, nm)) if rows else dict(total_draft_chars=0, old_model_full_package_chars=0, presented_chars=0,
+                                                                           reduction_abs=0, reduction_pct=None)
+    return {k: v for k, v in m.items() if k != 'presented_by_file'}
 
 
 def full_vigency(ms, ctx):
@@ -802,6 +813,14 @@ def report(doc, sel, c, ms, nm, skips, tmaps):
           f"| **Apresentado ao humano (pacotes + prioridade)** | **{_n(m['presented_chars'])}** |"]
     L += [f"| — {k} | {_n(v)} |" for k, v in m['presented_by_file'].items()]
     L += [f"| Redução vs. modelo antigo | {_n(m['reduction_abs'])} ({m['reduction_pct']}%) |", '',
+          '### Por segmento (cada segmento empacotado sozinho, mesmo código de pacotes)', '',
+          '| Segmento | Rascunhos | Modelo antigo | Apresentado | Redução |', '|---|---|---|---|---|']
+    for seg, d in doc['segments'].items():
+        sm = d['metrics']
+        L.append(f"| {seg} | {_n(sm['total_draft_chars'])} | {_n(sm['old_model_full_package_chars'])} | {_n(sm['presented_chars'])} | "
+                 f"{_n(sm['reduction_abs'])} ({sm['reduction_pct']}%) |")
+    L += [f"| TOTAL (lote, empacotado junto) | {_n(m['total_draft_chars'])} | {_n(m['old_model_full_package_chars'])} | {_n(m['presented_chars'])} | "
+          f"{_n(m['reduction_abs'])} ({m['reduction_pct']}%) |", '',
           '## Checks estruturais', '', f"- {doc['checks']['status']}: contrato do motor, Lei Seca idêntica ao texto do perfil em todos os registros, "
           f"0 HARD_FAIL, 0 aprovado novo, 0 STALE.", '', '## Limites do validador', ''] + [f'- {x}' for x in doc['validator_limits']]
     return '\n'.join(L) + '\n'

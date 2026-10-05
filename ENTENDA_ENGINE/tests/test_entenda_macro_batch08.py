@@ -1,0 +1,297 @@
+"""Tests for ENTENDA CF MACRO BATCH 08 (CF arts. 176-250 + ADCT): segment builder, CF88_OFFICIAL_RUNTIME text profile, temporal layer,
+T1 drafts (drafter + critic passes), risk triage and review packets. Nothing is approved: every new explanation is PENDING_HUMAN_REVIEW."""
+import hashlib
+import json
+import shutil
+import subprocess
+import sys
+import tempfile
+import unittest
+from collections import Counter
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parents[1]
+ROOT = HERE.parent
+sys.path.insert(0, str(HERE))
+import build_entenda_macro_batch as M  # noqa: E402
+import build_entenda_macro_segment as S  # noqa: E402
+import entenda_engine as E  # noqa: E402
+import entenda_text_profile as TP  # noqa: E402
+import production_batch as PB  # noqa: E402
+
+BD = HERE / 'derived/production_batch_08_macro'
+BD07 = HERE / 'derived/production_batch_07_macro'
+BODY = ('o_que_diz', 'o_que_significa', 'exemplo_pratico', 'atencao')
+SUBS = 'ABCDEFGH'
+
+
+def load(name, bd=BD):
+    return json.loads((bd / name).read_text(encoding='utf-8'))
+
+
+def sha(p):
+    return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+
+class TextProfile(unittest.TestCase):
+    def test_profile_rebuilds_byte_identical(self):
+        res = TP.check('CF88_OFFICIAL_RUNTIME')
+        self.assertTrue(res)
+        self.assertTrue(all(res.values()), res)
+
+    def test_round_trip_and_cf88_unchanged(self):
+        man = json.loads((HERE / 'profiles/CF88_OFFICIAL_RUNTIME/PROFILE_MANIFEST.json').read_text(encoding='utf-8'))
+        rt = man['round_trip']
+        self.assertEqual(rt['status'], 'PASS')
+        self.assertEqual(rt['mismatched_count'], 0)
+        self.assertGreater(rt['profiled_targets_with_text'], 0)
+        self.assertEqual((rt['other_namespaces_text_mismatch'], rt['other_namespaces_status_mismatch']), (0, 0))
+        ctx_g = E.NormContext('CF88')
+        ctx_p = E.NormContext('CF88', HERE / 'profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json')
+        for t in ('CF88:ART.1', 'CF88:ART.176', 'CF88:ART.225', 'CF88:ART.250'):
+            self.assertEqual(ctx_g.snapshot(t), ctx_p.snapshot(t), t)
+            self.assertEqual(ctx_g.legal_status(t), ctx_p.legal_status(t), t)
+
+    def test_adct_ids_canonical_no_new_namespace(self):
+        ctx = E.NormContext('CF88', HERE / 'profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json')
+        ids = [t for t in ctx.order if t.startswith('ADCT:')]
+        self.assertTrue(ids)
+        self.assertEqual({t.split(':')[0] for t in ctx.order}, {'CF88', 'ADCT'})
+        self.assertIn('ADCT:ART.10:INC.II:AL.a', ids)
+        self.assertIn('ADCT:ART.18-A', ids)
+        self.assertEqual(ctx.effective_status('ADCT:ART.125'), 'CURRENT')
+
+
+class MacroBatch08(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.ms = load('MACRO_SPEC.json')
+        cls.ctx = E.NormContext('CF88', S.config_path(cls.ms))
+        cls.spec = load('BATCH_SPEC.json')
+        cls.corpus = E.load_corpus(BD / 'CF88_MACRO_08.entenda.jsonl')
+        cls.triage = load('MACRO08_TRIAGE.json')
+        cls.sel = load('SELECTION_REPORT.json')
+        cls.tin = load('TEMPORAL_INPUT.json')
+        cls.tmap = load('MACRO08_ADCT_TEMPORAL_MAP.json')
+        cls.skips = load('MACRO08_SKIP_REGISTER.json')
+
+    def test_scope_sub_blocks_and_segments(self):
+        sb = self.ms['sub_blocks']
+        self.assertEqual(self.ms['sub_blocks_built'], list(SUBS))
+        self.assertEqual([(x, sb[x]['namespace'], sb[x]['start'], sb[x]['end']) for x in 'ABC'],
+                         [('A', 'CF88', 176, 200), ('B', 'CF88', 201, 225), ('C', 'CF88', 226, 250)])
+        self.assertEqual({sb[x]['namespace'] for x in 'DEFGH'}, {'ADCT'})
+        arts = [a for x in SUBS for a in S.article_targets(self.ctx, sb[x])]
+        adct = [a for a in self.ctx.order if a.startswith('ADCT:') and a.count(':') == 1]
+        self.assertEqual(sorted(a for a in arts if a.startswith('ADCT:')), sorted(adct))
+        self.assertNotIn('CF88:ART.175', arts)
+        self.assertNotIn('CF88:ART.251', arts)
+
+    def test_nothing_approved(self):
+        self.assertTrue(self.corpus)
+        self.assertEqual({r['review_status'] for r in self.corpus}, {'PENDING_HUMAN_REVIEW'})
+        self.assertEqual(self.triage['human_approved_t1_granted'], 0)
+        self.assertEqual(self.triage['micro_adjustments']['applied'], 0)
+        cfg = json.loads((HERE / 'editorial/T1_PIPELINE_CONFIG.json').read_text(encoding='utf-8')) if (HERE / 'editorial/T1_PIPELINE_CONFIG.json').is_file() else {}
+        for k in ('AUTO_APPROVE_LOW', 'AUTO_APPROVE_MEDIUM', 'MICROAUTO_APPLY'):
+            self.assertFalse(cfg.get(k, False), k)
+
+    def test_engine_contract_and_lei_seca(self):
+        E.validate_corpus(self.corpus, self.ctx)
+        for r in self.corpus:
+            E.validate_explanation(r, self.ctx)
+            self.assertEqual(r['source']['source_text_snapshot'], self.ctx.snapshot(r['target_id'], r['granularity'].get('covered_targets', [])))
+        self.assertEqual(self.triage['checks']['status'], 'PASS')
+
+    def test_every_current_target_selected_or_skipped_with_reason(self):
+        cur = [r for r in self.sel['selection'] if r['status'] == 'CURRENT']
+        self.assertTrue(all(r['classification'] in PB.SELECTED + ('NO_SEPARATE_EXPLANATION',) for r in cur))
+        for r in cur:
+            if r['classification'] == 'NO_SEPARATE_EXPLANATION':
+                self.assertTrue(r.get('selection_reason') and r.get('covered_by'), r['target_id'])
+        for row in self.skips['rows']:
+            self.assertIn(row['decision'], S.SKIP_CODES, row['article'])
+            self.assertTrue(row['reason'], row['article'])
+
+    def test_every_adct_article_has_temporal_class_with_provenance(self):
+        rows = self.tmap['articles']
+        self.assertEqual(len(rows), len([a for a in self.ctx.order if a.startswith('ADCT:') and a.count(':') == 1]))
+        for r in rows:
+            self.assertIn(r['temporal_class'], S.TEMPORAL_CLASSES, r['article'])
+            if r['temporal_class'] != 'REVOKED':
+                self.assertTrue(r['provenance'], r['article'])
+        self.assertEqual(sum(self.tmap['counts'].values()), len(rows))
+
+    def test_exhausted_adct_not_explained_as_current(self):
+        own = {r['target_id'] for r in self.corpus}
+        for r in self.tmap['articles']:
+            if r['temporal_class'] in ('REVOKED', 'HISTORICAL_ONLY'):
+                self.assertNotIn(r['article'], own, r['article'])
+            if r['temporal_class'] == 'EFFECT_EXHAUSTED' and r['article'] in own:
+                # selected only as historical-pedagogical, declared as producing no effects
+                self.assertEqual(r['decision'], 'SELECT', r['article'])
+                self.assertIs(r['produces_effects'], False, r['article'])
+                self.assertIn('Exaurido', r['situation_as_of'], r['article'])
+            elif r['temporal_class'] == 'EFFECT_EXHAUSTED':
+                self.assertTrue(r['decision'].startswith(('SKIP_', 'EXCLUDED_')), r['article'])
+
+    def test_unresolved_temporal_goes_to_d(self):
+        rows = {x['target_id']: x for x in self.triage['rows']}
+        for r in self.corpus:
+            t = r['target_id']
+            if not t.startswith('ADCT:'):
+                continue
+            cls = S.temporal_class_of(self.tin, t, self.ctx)
+            if cls in S.UNRESOLVED_CLASSES and not S.dated_trigger(self.tin, t):
+                self.assertEqual(rows[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
+                self.assertIn('TEMPORAL_STATUS_UNRESOLVED', rows[t]['legal_rules'], t)
+            if S.dated_trigger(self.tin, t):
+                self.assertNotIn('TEMPORAL_STATUS_UNRESOLVED', rows[t]['legal_rules'], t)
+
+    def test_transition_evidence_matches_temporal_layer(self):
+        te = load('MACRO08_TRANSITION_EVIDENCE.json')
+        self.assertEqual(te['resolved'] + te['unresolved'], te['total'])
+        for e in te['entries']:
+            self.assertEqual(e['resolved_deterministically'], S.is_resolved(self.tin, e['target_id'], self.ctx), e['target_id'])
+            self.assertTrue(e['source_text_sha256'] and e['runtime_sha256'], e['target_id'])
+
+    def test_every_built_article_overview_or_skip(self):
+        own = {r['target_id'] for r in self.corpus} | set(self.spec['reused'])
+        skipped = {r['article'] for r in self.skips['rows']}
+        for a in self.spec['scope']:
+            if self.ctx.effective_status(a) == 'CURRENT' and a not in skipped:
+                self.assertIn(a, own)
+
+    def test_approved_overview_reused_unchanged(self):
+        self.assertIn('CF88:ART.225', self.spec['reused'])
+        self.assertNotIn('CF88:ART.225', {r['target_id'] for r in self.corpus})
+
+    def test_body_free_of_case_numbers(self):
+        for r in self.corpus:
+            for k in BODY:
+                self.assertIsNone(E.EXTERNAL_CASE_RE.search(r['content'][k] or ''), (r['target_id'], k))
+
+    def test_judicial_review_annotations_classified(self):
+        rows = {x['target_id']: x for x in self.triage['rows']}
+        for t, e in self.tin['explanations'].items():
+            jr = e.get('judicial_review')
+            if jr and t in rows:
+                self.assertIn(jr['classification'], ('JUDICIAL_REVIEW_CONTEXT_ONLY', 'JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS'))
+                self.assertTrue(jr['reason'])
+                if jr['classification'] == 'JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS':
+                    self.assertEqual(rows[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
+
+    def test_critic_pass_reproduces_versioned_drafts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            t = Path(tmp) / 'b'
+            shutil.copytree(BD / 'drafts', t / 'drafts')
+            shutil.copy(BD / 'MACRO_SPEC.json', t / 'MACRO_SPEC.json')
+            for x in SUBS:
+                parts = sorted(str(p) for p in (t / 'drafts/pass1').glob(f'MACRO08_{x}_PASS1_*.json'))
+                subprocess.run([sys.executable, str(HERE / 'macro_critic_pass.py'), str(t), x, str(t / f'drafts/pass1/MACRO08_{x}_CRITIC_EDITS.json'), *parts],
+                               check=True, capture_output=True)
+                for n in (f'MACRO08_{x}_DRAFTS.json', f'MACRO08_{x}_CRITIC_LOG.json'):
+                    self.assertEqual(sha(t / 'drafts' / n), sha(BD / 'drafts' / n), n)
+
+    def test_critic_log_is_complete(self):
+        total = 0
+        for x in SUBS:
+            log = load(f'drafts/MACRO08_{x}_CRITIC_LOG.json')
+            self.assertTrue(log['corrections'], x)
+            for c in log['corrections']:
+                self.assertTrue(c['reason'] and c['category'] and 'before' in c and 'after' in c)
+            total += len(log['corrections'])
+        self.assertEqual(total, sum(v['corrections'] for v in self.triage['critic'].values()))
+
+    def test_queues_close_and_packets_exist(self):
+        rows = self.triage['rows']
+        self.assertEqual(len(rows), len(self.corpus))
+        self.assertEqual(sum(self.triage['counts'].values()), len(rows))
+        self.assertEqual(self.triage['counts']['E_HARD_FAIL'], 0)
+        for f in ('MACRO08_COMPACT_AB_REVIEW.md', 'MACRO08_QUICK_C_REVIEW.md', 'MACRO08_FULL_D_REVIEW.md', 'MACRO08_HARD_FAIL_REPORT.md',
+                  'MACRO08_HUMAN_REVIEW_PRIORITY.md', 'MACRO08_BACKLOG.md', 'MACRO08_SCALE_REPORT.md', 'MACRO08_SOURCE_ANOMALIES.md',
+                  'MACRO08_ADCT_STRUCTURAL_AUDIT.md', 'MACRO08_D_DIAGNOSTIC.md'):
+            self.assertTrue((BD / f).is_file(), f)
+        full = (BD / 'MACRO08_FULL_D_REVIEW.md').read_text(encoding='utf-8')
+        for x in rows:
+            if x['queue'] == 'D_FULL_HUMAN_REVIEW':
+                self.assertIn(f"`{x['target_id']}`", full)
+
+    def test_segments_add_up(self):
+        seg = self.triage['segments']
+        self.assertEqual(set(seg), {'CORPO', 'ADCT'})
+        self.assertEqual(sum(s['new_explanations'] for s in seg.values()), len(self.corpus))
+        for q in ('A_CLEAN_LOW', 'B_CLEAN_MEDIUM', 'C_QUICK_REVIEW', 'D_FULL_HUMAN_REVIEW', 'E_HARD_FAIL'):
+            self.assertEqual(sum(s['queues'][q] for s in seg.values()), self.triage['counts'][q], q)
+        n = Counter(r['target_id'].split(':')[0] for r in self.corpus)
+        self.assertEqual(n['CF88'], seg['CORPO']['new_explanations'])
+        self.assertEqual(n['ADCT'], seg['ADCT']['new_explanations'])
+
+    def test_checkpoints_per_sub_block(self):
+        tot = Counter()
+        for x in SUBS:
+            cp = load(f'MACRO08_{x}_CHECKPOINT.json')
+            self.assertEqual(cp['status'], 'PASS')
+            self.assertEqual(cp['human_approved_t1_granted'], 0)
+            st = cp['stats']
+            self.assertEqual(st['select'] + st['skip'], st['targets_current'])
+            tot['new'] += st['new_explanations']
+        self.assertEqual(tot['new'], len(self.corpus))
+
+    def test_source_anomalies_registered(self):
+        a = load('MACRO08_SOURCE_ANOMALIES.json')
+        reg = {r['id'] for r in load('SOURCE_ANOMALIES_INPUT.json')['registered']}
+        self.assertTrue({'MB08-SRC-01', 'MB08-SRC-02', 'MB08-SRC-03', 'MB08-SRC-06'} <= reg)
+        self.assertTrue(a)
+
+    def test_adct_structural_audit_answers(self):
+        au = load('MACRO08_ADCT_STRUCTURAL_AUDIT.json')
+        self.assertGreaterEqual(len(au['questions']), 10)
+        self.assertTrue(all(q['a'] for q in au['questions']))
+        self.assertEqual(au['articles'], len([a for a in self.ctx.order if a.startswith('ADCT:') and a.count(':') == 1]))
+
+    def test_determinism_evidence(self):
+        ev = load('DETERMINISM_EVIDENCE.json')
+        self.assertTrue(ev['byte_identical'])
+        self.assertGreaterEqual(ev['runs'], 3)
+        self.assertEqual(ev['sub_blocks_built'], list(SUBS))
+
+    def test_rebuild_is_byte_identical(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            t = Path(tmp) / BD.name
+            S.copy_inputs(BD, t)
+            S.build(t)
+            for p in sorted(BD.rglob('*')):
+                rel = p.relative_to(BD)
+                if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json' and not p.name.startswith('MACRO08_D_DIAGNOSTIC'):
+                    self.assertEqual(sha(t / rel), sha(p), str(rel))
+
+    def test_shared_modules_untouched(self):
+        for man in (HERE / 'derived/production_batch_06/BATCH06_MANIFEST.json', BD07 / 'MACRO07_MANIFEST.json'):
+            code = json.loads(man.read_text(encoding='utf-8')).get('code_sha256_lf') or {}
+            self.assertTrue(code, man.name)
+            for name, h in code.items():
+                if (HERE / name).is_file():
+                    self.assertEqual(M.sha_lf(HERE / name), h, f'{man.name}: {name}')
+
+    def test_prior_batches_untouched(self):
+        self.assertEqual(self.triage['backlog']['old_content']['by_review_status'].get('HUMAN_APPROVED_T1'), 300)
+        text = (BD / 'MACRO08_BACKLOG.md').read_text(encoding='utf-8')
+        self.assertIn('Nenhum foi alterado', text)
+        own = {r['target_id'] for r in self.corpus}
+        for prior in self.spec['prior_corpora']:
+            p = ROOT / prior if not Path(prior).is_absolute() else Path(prior)
+            if p.is_file():
+                for r in E.load_corpus(p):
+                    if r.get('review_status') == 'HUMAN_APPROVED_T1':
+                        self.assertNotIn(r['target_id'], own, r['target_id'])
+
+    def test_backlog_items_registered(self):
+        ids = {i['id'] for i in load('BACKLOG_INPUT.json')['items']}
+        self.assertIn('MB08-11', ids)
+        text = (BD / 'MACRO08_BACKLOG.md').read_text(encoding='utf-8')
+        self.assertIn('PARALLEL_BRANCH_RECONCILIATION', text)
+
+
+if __name__ == '__main__':
+    unittest.main()
