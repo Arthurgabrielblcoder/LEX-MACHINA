@@ -1,0 +1,789 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_ART38_39_41_HIGH_ROUND_2",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND2.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND2.json": "8826a179148dea4540aa01f6ea5f9d94628395f7cef6227bcdbf807c24c14aa3",
+  "ENTENDA_BATCH05_REVIEW_ROUND02_ART38_39_41_HIGH.md": "1fe0db507a3a47cca04a23525c3e7cf2fb3a87744348bdf89c174b63412a018f",
+  "REVIEW_BATCH_05.md": "718a53d11b50ddd46bac826de37aa1ac7235f27b84b0ba0c4a7d5757861fe21a",
+  "CF88_BATCH_05.entenda.jsonl": "e45c462b1ea89f9b8f521d76bcf735a896b5abfe0653223241a03c1ec4bc5205",
+  "EDITORIAL_CHECKS.json": "e0d03bdbc805008cb3224cfe6626a311032077ef803e3b44636d0d56fa98f09f"
+ },
+ "review_status": "APPROVED_AFTER_FINAL_CHECK",
+ "round_result": {
+  "reviewed": 9,
+  "approved_unchanged": 2,
+  "adjust": 7,
+  "rejected": 0
+ },
+ "deviation_policy": "texto do revisor incorporado literalmente, exceto onde regra bloqueante do ENTENDA-T1 impede (lista t1_contract_deviations); desvios minimos, para confirmacao na verificacao final",
+ "provenance_policy": "fatos externos informados pela revisao humana registrados como HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE em content_provenance; nao alteram o payload",
+ "adjustments": [
+  {
+   "target_id": "CF88:ART.38:INC.V",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 2)",
+   "review_reason": "\"Nao passa a contribuir para outro regime\" descrevia mecanismo contributivo que o inciso nao detalha; retirada a justificativa teleologica sobre \"evitar fragmentacao\".",
+   "from_explanation_id": "ENTENDA/CF88:ART.38:INC.V/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.38:INC.V/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "\"Nao passa a contribuir para outro regime\" descrevia mecanismo contributivo que o inciso nao detalha; retirada a justificativa teleologica sobre \"evitar fragmentacao\".",
+    "content": {
+     "o_que_diz": "O inciso V estabelece que o servidor que já é segurado de regime próprio de previdência social e passa a exercer mandato eletivo permanece filiado ao regime próprio do ente federativo de origem.",
+     "o_que_significa": "O exercício do mandato não rompe, por si só, o vínculo previdenciário que o servidor efetivo já possuía com o regime próprio de seu ente.\nAssim, se um servidor estadual vinculado ao regime próprio do Estado assume mandato eletivo, continua filiado àquele regime durante a situação prevista pelo art. 38.\nA regra trata da filiação previdenciária do servidor que já possuía vínculo com regime próprio antes do mandato.",
+     "exemplo_pratico": "Um auditor fiscal estadual, titular de cargo efetivo e segurado do regime próprio do Estado, é eleito deputado federal. Durante o mandato, permanece filiado ao regime próprio do ente estadual de origem.",
+     "atencao": "A regra pressupõe que a pessoa já seja segurada de regime próprio.\nPara quem ocupa exclusivamente mandato eletivo, sem essa condição de servidor segurado de regime próprio, o art. 40, § 13, prevê a aplicação do Regime Geral de Previdência Social.",
+     "palavras_dificeis": [
+      {
+       "termo": "Segurado",
+       "explicacao": "pessoa vinculada a determinado regime de previdência."
+      },
+      {
+       "termo": "Ente de origem",
+       "explicacao": "União, Estado, Distrito Federal ou Município ao qual pertence o vínculo efetivo do servidor."
+      },
+      {
+       "termo": "Filiação",
+       "explicacao": "vínculo jurídico da pessoa com determinado regime previdenciário."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "No art. 38, este inciso trata do servidor segurado de regime próprio de previdência que exerce mandato: ele continua filiado a esse regime, no ente federativo de origem.",
+     "o_que_significa": "O servidor titular de cargo efetivo contribui para o regime próprio do seu ente, por exemplo o do Estado. Ao assumir um mandato, ele não passa a contribuir para outro regime em razão do mandato: continua vinculado ao regime próprio de onde veio.\nA regra dá continuidade à vida previdenciária do servidor e evita a fragmentação do seu tempo de contribuição entre regimes diferentes.",
+     "exemplo_pratico": "Um auditor fiscal do Estado, segurado do regime próprio estadual, é eleito deputado federal. Durante o mandato, ele continua filiado ao regime próprio do Estado, que é o seu ente de origem.",
+     "atencao": "O inciso vale para quem já é segurado de regime próprio. Detentores de mandato eletivo que não são servidores efetivos seguem, em regra, o Regime Geral, conforme o art. 40, § 13.",
+     "palavras_dificeis": [
+      {
+       "termo": "Segurado",
+       "explicacao": "pessoa vinculada a um regime de previdência, com direito aos seus benefícios."
+      },
+      {
+       "termo": "Ente de origem",
+       "explicacao": "União, Estado, Distrito Federal ou Município ao qual pertence o cargo efetivo do servidor."
+      },
+      {
+       "termo": "Filiação",
+       "explicacao": "vínculo jurídico da pessoa com um regime de previdência."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O inciso V estabelece que o servidor que já é segurado de regime próprio de previdência social e passa a exercer mandato eletivo permanece filiado ao regime próprio do ente federativo de origem.",
+     "o_que_significa": "O exercício do mandato não rompe, por si só, o vínculo previdenciário que o servidor efetivo já possuía com o regime próprio de seu ente.\nAssim, se um servidor estadual vinculado ao regime próprio do Estado assume mandato eletivo, continua filiado àquele regime durante a situação prevista pelo art. 38.\nA regra trata da filiação previdenciária do servidor que já possuía vínculo com regime próprio antes do mandato.",
+     "exemplo_pratico": "Um auditor fiscal estadual, titular de cargo efetivo e segurado do regime próprio do Estado, é eleito deputado federal. Durante o mandato, permanece filiado ao regime próprio do ente estadual de origem.",
+     "atencao": "A regra pressupõe que a pessoa já seja segurada de regime próprio.\nPara quem ocupa exclusivamente mandato eletivo, sem essa condição de servidor segurado de regime próprio, o art. 40, § 13, prevê a aplicação do Regime Geral de Previdência Social.",
+     "palavras_dificeis": [
+      {
+       "termo": "Segurado",
+       "explicacao": "pessoa vinculada a determinado regime de previdência."
+      },
+      {
+       "termo": "Ente de origem",
+       "explicacao": "União, Estado, Distrito Federal ou Município ao qual pertence o vínculo efetivo do servidor."
+      },
+      {
+       "termo": "Filiação",
+       "explicacao": "vínculo jurídico da pessoa com determinado regime previdenciário."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "final_check_edits": []
+  },
+  {
+   "target_id": "CF88:ART.39",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 3)",
+   "review_reason": "A ATENCAO tratava a eficacia do caput como controversia pendente (\"qual redacao produz efeitos\"); informacao desatualizada segundo o revisor: o julgamento definitivo declarou constitucional a redacao da EC 19/1998 (eficacia prospectiva, sem transmudacao automatica do regime dos atuais servidores). T1 revisado.",
+   "from_explanation_id": "ENTENDA/CF88:ART.39/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.39/BASE/3",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "A ATENCAO tratava a eficacia do caput como controversia pendente (\"qual redacao produz efeitos\"); informacao desatualizada segundo o revisor: o julgamento definitivo declarou constitucional a redacao da EC 19/1998 (eficacia prospectiva, sem transmudacao automatica do regime dos atuais servidores). T1 revisado.",
+    "content": {
+     "o_que_diz": "O art. 39 reúne regras sobre administração e remuneração de pessoal no serviço público.\nO caput determina que União, Estados, Distrito Federal e Municípios instituam conselho de política de administração e remuneração de pessoal, integrado por servidores designados pelos respectivos Poderes.\nOs parágrafos tratam, entre outros pontos, dos critérios para estruturar a remuneração, da formação dos servidores, de direitos sociais aplicáveis, do subsídio, da publicidade dos valores pagos e da proibição de incorporar determinadas vantagens temporárias.",
+     "o_que_significa": "Enquanto o art. 37 contém princípios e regras gerais da Administração Pública, o art. 39 concentra diversas normas relacionadas à organização, formação e remuneração dos servidores.\nO conselho previsto no caput deve ser integrado por servidores designados pelos respectivos Poderes. A Constituição não define, nesse dispositivo, quantos membros ele terá nem detalha todas as suas competências.\nO § 1º indica fatores que devem ser considerados na estrutura remuneratória, como responsabilidade, complexidade, requisitos de ingresso e peculiaridades dos cargos.\nOs demais parágrafos tratam de temas específicos que recebem explicação própria quando necessário, como subsídio e incorporação de vantagens.",
+     "exemplo_pratico": "Ao estruturar a carreira de fiscais, um Estado deve considerar fatores como a complexidade das atribuições, a responsabilidade do cargo e os requisitos exigidos para ingresso.\nAlém disso, deve observar as demais regras constitucionais do artigo relacionadas à política de pessoal e remuneração.",
+     "atencao": "O caput do art. 39 teve uma longa controvérsia constitucional.\nMateriais produzidos durante o período da medida cautelar podem apresentar como vigente a redação original sobre regime jurídico único.\nO julgamento definitivo declarou constitucional a redação dada pela EC 19/1998, que é a utilizada atualmente no CF88_RUNTIME.\nOs efeitos temporais e a preservação das situações anteriores pertencem à camada JURISPRUDÊNCIA.",
+     "palavras_dificeis": [
+      {
+       "termo": "Política remuneratória",
+       "explicacao": "conjunto de regras e critérios relacionados à remuneração dos servidores."
+      },
+      {
+       "termo": "Carreira",
+       "explicacao": "organização de cargos ou posições funcionais segundo a estrutura prevista em lei."
+      },
+      {
+       "termo": "Designação",
+       "explicacao": "indicação formal de alguém para determinada função."
+      },
+      {
+       "termo": "Subsídio",
+       "explicacao": "forma constitucional de remuneração em parcela única."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "ADI nº 2.135: o julgamento definitivo declarou constitucional a alteração promovida pela EC 19/1998 no caput do art. 39.",
+     "ADI nº 2.135: eficácia ex nunc; inexistência de transmudação automática do regime dos atuais servidores; embargos rejeitados em 2025."
+    ]
+   },
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "remuneração de pessoal, integrado por servidores designados",
+     "applied_text": "remuneração de pessoal, composto por servidores designados",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 16 palavras seguidas do caput oficial; \"integrado\" -> \"composto\""
+    }
+   ],
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "ADI nº 2.135: julgamento definitivo; constitucionalidade da redacao dada pela EC 19/1998 ao caput; eficacia ex nunc; nao transmudacao automatica do regime dos atuais servidores; embargos rejeitados em 2025",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art39": false,
+     "note": "o runtime e a fonte estrutural canonica contem apenas a remissao \"Vide ADI nº 2.135\"; o resultado do julgamento foi informado pela revisao humana. Numero da ADI apenas na CAMADA EXTERNA (regra T1 do corpo)"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O art. 39 organiza a política de pessoal dos servidores. O caput manda cada ente instituir um conselho de política de administração e remuneração de pessoal, formado por servidores indicados pelos Poderes. Os parágrafos tratam dos critérios da remuneração, das escolas de governo, dos direitos sociais aplicáveis, do subsídio, dos limites internos da remuneração, da publicação dos valores, do uso da economia de despesas e da proibição de incorporar vantagens.",
+     "o_que_significa": "Enquanto o art. 37 traz princípios e regras gerais da administração, o art. 39 se concentra em como os servidores são remunerados, formados e organizados em carreira.\nO conselho do caput é um órgão de apoio: reúne servidores designados pelos Poderes para pensar a política de administração e de remuneração de pessoal, de modo coordenado. O texto não define as suas competências nem a sua composição numérica, que ficam a cargo de cada ente.\nOs parágrafos podem ser lidos em grupos: como fixar a remuneração (§§ 1º, 4º, 5º e 8º), como formar e valorizar o servidor (§§ 2º e 7º), quais direitos trabalhistas se estendem a ele (§ 3º), a transparência dos valores (§ 6º) e a vedação de incorporar vantagens temporárias (§ 9º).\nTodos os entes se submetem a essas regras, respeitada a autonomia de cada um para editar as suas leis de pessoal.",
+     "exemplo_pratico": "Um Município cria, por lei, o seu conselho de política de administração e remuneração, com servidores indicados pelo Executivo e pela Câmara. Ao reestruturar a carreira de fiscal, o Município considera a complexidade do cargo e os requisitos de ingresso, publica anualmente os valores da remuneração e não permite que a gratificação de chefia seja incorporada ao cargo efetivo.",
+     "atencao": "O art. 39 convive com o art. 37: teto, irredutibilidade e exigência de lei para fixar remuneração estão no art. 37 e continuam valendo. A redação do caput tem histórico constitucional complexo, ligado ao regime jurídico dos servidores; qual redação produz efeitos deve ser conferido na camada externa, e não deduzido só da leitura deste texto.",
+     "palavras_dificeis": [
+      {
+       "termo": "Política remuneratória",
+       "explicacao": "conjunto de critérios e decisões sobre como os servidores são pagos."
+      },
+      {
+       "termo": "Carreira",
+       "explicacao": "conjunto de cargos organizados em níveis, pelos quais o servidor avança."
+      },
+      {
+       "termo": "Designação",
+       "explicacao": "indicação formal de alguém para exercer uma função."
+      },
+      {
+       "termo": "Subsídio",
+       "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A fonte estrutural canônica do projeto registra, junto ao caput, a remissão \"Vide ADI nº 2.135\" e a redação original sobre regime jurídico único e planos de carreira. A eficácia de cada redação do caput é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O art. 39 reúne regras sobre administração e remuneração de pessoal no serviço público.\nO caput determina que União, Estados, Distrito Federal e Municípios instituam conselho de política de administração e remuneração de pessoal, composto por servidores designados pelos respectivos Poderes.\nOs parágrafos tratam, entre outros pontos, dos critérios para estruturar a remuneração, da formação dos servidores, de direitos sociais aplicáveis, do subsídio, da publicidade dos valores pagos e da proibição de incorporar determinadas vantagens temporárias.",
+     "o_que_significa": "Enquanto o art. 37 contém princípios e regras gerais da Administração Pública, o art. 39 concentra diversas normas relacionadas à organização, formação e remuneração dos servidores.\nO conselho previsto no caput deve ser integrado por servidores designados pelos respectivos Poderes. A Constituição não define, nesse dispositivo, quantos membros ele terá nem detalha todas as suas competências.\nO § 1º indica fatores que devem ser considerados na estrutura remuneratória, como responsabilidade, complexidade, requisitos de ingresso e peculiaridades dos cargos.\nOs demais parágrafos tratam de temas específicos que recebem explicação própria quando necessário, como subsídio e incorporação de vantagens.",
+     "exemplo_pratico": "Ao estruturar a carreira de fiscais, um Estado deve considerar fatores como a complexidade das atribuições, a responsabilidade do cargo e os requisitos exigidos para ingresso.\nAlém disso, deve observar as demais regras constitucionais do artigo relacionadas à política de pessoal e remuneração.",
+     "atencao": "O caput do art. 39 teve uma longa controvérsia constitucional.\nMateriais produzidos durante o período da medida cautelar podem apresentar como vigente a redação original sobre regime jurídico único.\nO julgamento definitivo declarou constitucional a redação dada pela EC 19/1998, que corresponde ao texto constitucional vigente utilizado neste aplicativo.\nOs efeitos temporais e a preservação das situações anteriores pertencem à camada JURISPRUDÊNCIA.",
+     "palavras_dificeis": [
+      {
+       "termo": "Política remuneratória",
+       "explicacao": "conjunto de regras e critérios relacionados à remuneração dos servidores."
+      },
+      {
+       "termo": "Carreira",
+       "explicacao": "organização de cargos ou posições funcionais segundo a estrutura prevista em lei."
+      },
+      {
+       "termo": "Designação",
+       "explicacao": "indicação formal de alguém para determinada função."
+      },
+      {
+       "termo": "Subsídio",
+       "explicacao": "forma constitucional de remuneração em parcela única."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "ADI nº 2.135: o julgamento definitivo declarou constitucional a alteração promovida pela EC 19/1998 no caput do art. 39.",
+     "ADI nº 2.135: eficácia ex nunc; inexistência de transmudação automática do regime dos atuais servidores; embargos rejeitados em 2025."
+    ]
+   },
+   "final_check_edits": [
+    {
+     "section": "atencao",
+     "before": "O julgamento definitivo declarou constitucional a redação dada pela EC 19/1998, que é a utilizada atualmente no CF88_RUNTIME.",
+     "after": "O julgamento definitivo declarou constitucional a redação dada pela EC 19/1998, que corresponde ao texto constitucional vigente utilizado neste aplicativo.",
+     "reason": "CF88_RUNTIME e nomenclatura interna de implementacao e nao deve aparecer ao usuario final; texto substituto fornecido pelo revisor na verificacao final; sem alteracao de conteudo juridico"
+    }
+   ],
+   "version_history": [
+    "ENTENDA/CF88:ART.39/BASE/1",
+    "ENTENDA/CF88:ART.39/BASE/2",
+    "ENTENDA/CF88:ART.39/BASE/3"
+   ],
+   "after_reviewer_text_v2": {
+    "content": {
+     "o_que_diz": "O art. 39 reúne regras sobre administração e remuneração de pessoal no serviço público.\nO caput determina que União, Estados, Distrito Federal e Municípios instituam conselho de política de administração e remuneração de pessoal, composto por servidores designados pelos respectivos Poderes.\nOs parágrafos tratam, entre outros pontos, dos critérios para estruturar a remuneração, da formação dos servidores, de direitos sociais aplicáveis, do subsídio, da publicidade dos valores pagos e da proibição de incorporar determinadas vantagens temporárias.",
+     "o_que_significa": "Enquanto o art. 37 contém princípios e regras gerais da Administração Pública, o art. 39 concentra diversas normas relacionadas à organização, formação e remuneração dos servidores.\nO conselho previsto no caput deve ser integrado por servidores designados pelos respectivos Poderes. A Constituição não define, nesse dispositivo, quantos membros ele terá nem detalha todas as suas competências.\nO § 1º indica fatores que devem ser considerados na estrutura remuneratória, como responsabilidade, complexidade, requisitos de ingresso e peculiaridades dos cargos.\nOs demais parágrafos tratam de temas específicos que recebem explicação própria quando necessário, como subsídio e incorporação de vantagens.",
+     "exemplo_pratico": "Ao estruturar a carreira de fiscais, um Estado deve considerar fatores como a complexidade das atribuições, a responsabilidade do cargo e os requisitos exigidos para ingresso.\nAlém disso, deve observar as demais regras constitucionais do artigo relacionadas à política de pessoal e remuneração.",
+     "atencao": "O caput do art. 39 teve uma longa controvérsia constitucional.\nMateriais produzidos durante o período da medida cautelar podem apresentar como vigente a redação original sobre regime jurídico único.\nO julgamento definitivo declarou constitucional a redação dada pela EC 19/1998, que é a utilizada atualmente no CF88_RUNTIME.\nOs efeitos temporais e a preservação das situações anteriores pertencem à camada JURISPRUDÊNCIA.",
+     "palavras_dificeis": [
+      {
+       "termo": "Política remuneratória",
+       "explicacao": "conjunto de regras e critérios relacionados à remuneração dos servidores."
+      },
+      {
+       "termo": "Carreira",
+       "explicacao": "organização de cargos ou posições funcionais segundo a estrutura prevista em lei."
+      },
+      {
+       "termo": "Designação",
+       "explicacao": "indicação formal de alguém para determinada função."
+      },
+      {
+       "termo": "Subsídio",
+       "explicacao": "forma constitucional de remuneração em parcela única."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "ADI nº 2.135: o julgamento definitivo declarou constitucional a alteração promovida pela EC 19/1998 no caput do art. 39.",
+     "ADI nº 2.135: eficácia ex nunc; inexistência de transmudação automática do regime dos atuais servidores; embargos rejeitados em 2025."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.4",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 2)",
+   "review_reason": "Retirada a afirmacao teleologica de que o \"objetivo e transparencia\"; \"membro de Poder\" nao e mais definido com categorias que o proprio § 4º enumera separadamente; exemplo menos sujeito a excecoes tratadas fora do dispositivo.",
+   "from_explanation_id": "ENTENDA/CF88:ART.39:PAR.4/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.39:PAR.4/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirada a afirmacao teleologica de que o \"objetivo e transparencia\"; \"membro de Poder\" nao e mais definido com categorias que o proprio § 4º enumera separadamente; exemplo menos sujeito a excecoes tratadas fora do dispositivo.",
+    "content": {
+     "o_que_diz": "O § 4º determina a remuneração por subsídio em parcela única para as categorias nele indicadas, como membros de Poder, detentores de mandato eletivo, Ministros de Estado e Secretários estaduais e municipais.\nO dispositivo veda o acréscimo das espécies remuneratórias que enumera e manda observar as regras do art. 37, X e XI.\nO § 8º permite aplicar essa mesma forma de remuneração aos servidores públicos organizados em carreira.",
+     "o_que_significa": "Subsídio é uma forma constitucional de remuneração fixada em parcela única.\nPara as categorias listadas no § 4º, essa forma de pagamento é obrigatória.\nJá para servidores organizados em carreira, o § 8º permite que o legislador também adote o sistema de subsídio.\nComo o § 4º remete ao art. 37, X e XI, o subsídio está sujeito às regras constitucionais de fixação ou alteração por lei específica e aos limites remuneratórios aplicáveis.",
+     "exemplo_pratico": "A remuneração ordinária de um Secretário municipal é fixada em subsídio. Não se pode simplesmente acrescentar ao subsídio uma gratificação remuneratória pelo próprio exercício normal daquele cargo, contrariando a regra da parcela única.",
+     "atencao": "“Parcela única” não significa, por si só, que qualquer pagamento de natureza diversa seja constitucionalmente proibido.\nO tratamento de parcelas indenizatórias, décimo terceiro, férias e outras situações específicas depende das demais normas constitucionais e da jurisprudência.",
+     "palavras_dificeis": [
+      {
+       "termo": "Subsídio",
+       "explicacao": "forma de remuneração constitucionalmente fixada em parcela única."
+      },
+      {
+       "termo": "Parcela remuneratória",
+       "explicacao": "valor pago como contraprestação pelo exercício do cargo ou função."
+      },
+      {
+       "termo": "Verba indenizatória",
+       "explicacao": "valor destinado a compensar ou reembolsar determinada despesa, conforme o regime jurídico aplicável."
+      }
+     ]
+    },
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O § 4º manda remunerar por subsídio, em parcela única, os membros de Poder, os detentores de mandato eletivo, os Ministros de Estado e os Secretários dos Estados e dos Municípios, proibindo acréscimos como gratificações, adicionais, abonos e prêmios, e mandando observar o art. 37, X e XI. O § 8º permite que servidores organizados em carreira também sejam remunerados assim.",
+     "o_que_significa": "Subsídio é uma forma de remuneração em valor único. O objetivo é transparência: em vez de um vencimento básico somado a muitas parcelas, há um valor só, fácil de conhecer e de comparar com o teto.\nPara as autoridades listadas no § 4º, o subsídio é obrigatório. Membros de Poder são, por exemplo, parlamentares, chefes do Executivo e magistrados.\nPara servidores organizados em carreira, o § 8º torna o subsídio uma opção do legislador.\nO subsídio também depende de lei específica e se sujeita ao teto, por força da remissão ao art. 37, X e XI.",
+     "exemplo_pratico": "Um deputado estadual recebe subsídio fixado em parcela única e não pode receber, além dele, uma gratificação por presidir uma comissão. Já uma lei pode organizar a carreira de procurador do Estado em subsídio, com base no § 8º.",
+     "atencao": "A proibição atinge parcelas de natureza remuneratória. O texto não trata de parcelas que apenas indenizam despesas; o tratamento delas depende de interpretação e das regras do teto (art. 37, § 11).",
+     "palavras_dificeis": [
+      {
+       "termo": "Subsídio",
+       "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias."
+      },
+      {
+       "termo": "Membro de Poder",
+       "explicacao": "agente que integra a cúpula de um Poder, como parlamentares, chefes do Executivo e magistrados."
+      },
+      {
+       "termo": "Verba de representação",
+       "explicacao": "parcela paga em razão do cargo para custear atividades de representação."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Quais parcelas podem ser pagas junto com o subsídio (por exemplo, décimo terceiro e terço de férias) é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 4º determina a remuneração por subsídio em parcela única para as categorias nele indicadas, como membros de Poder, detentores de mandato eletivo, Ministros de Estado e Secretários estaduais e municipais.\nO dispositivo veda o acréscimo das espécies remuneratórias que enumera e manda observar as regras do art. 37, X e XI.\nO § 8º permite aplicar essa mesma forma de remuneração aos servidores públicos organizados em carreira.",
+     "o_que_significa": "Subsídio é uma forma constitucional de remuneração fixada em parcela única.\nPara as categorias listadas no § 4º, essa forma de pagamento é obrigatória.\nJá para servidores organizados em carreira, o § 8º permite que o legislador também adote o sistema de subsídio.\nComo o § 4º remete ao art. 37, X e XI, o subsídio está sujeito às regras constitucionais de fixação ou alteração por lei específica e aos limites remuneratórios aplicáveis.",
+     "exemplo_pratico": "A remuneração ordinária de um Secretário municipal é fixada em subsídio. Não se pode simplesmente acrescentar ao subsídio uma gratificação remuneratória pelo próprio exercício normal daquele cargo, contrariando a regra da parcela única.",
+     "atencao": "“Parcela única” não significa, por si só, que qualquer pagamento de natureza diversa seja constitucionalmente proibido.\nO tratamento de parcelas indenizatórias, décimo terceiro, férias e outras situações específicas depende das demais normas constitucionais e da jurisprudência.",
+     "palavras_dificeis": [
+      {
+       "termo": "Subsídio",
+       "explicacao": "forma de remuneração constitucionalmente fixada em parcela única."
+      },
+      {
+       "termo": "Parcela remuneratória",
+       "explicacao": "valor pago como contraprestação pelo exercício do cargo ou função."
+      },
+      {
+       "termo": "Verba indenizatória",
+       "explicacao": "valor destinado a compensar ou reembolsar determinada despesa, conforme o regime jurídico aplicável."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Quais parcelas podem ser pagas junto com o subsídio (por exemplo, décimo terceiro e terço de férias) é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "final_check_edits": []
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.9",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 2)",
+   "review_reason": "Nucleo correto; substituida a justificativa generica (\"evita que a remuneracao cresca\") e a transicao tornada precisa (art. 13 da EC 103/2019, conteudo externo).",
+   "from_explanation_id": "ENTENDA/CF88:ART.39:PAR.9/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.39:PAR.9/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Nucleo correto; substituida a justificativa generica (\"evita que a remuneracao cresca\") e a transicao tornada precisa (art. 13 da EC 103/2019, conteudo externo).",
+    "content": {
+     "o_que_diz": "O § 9º impede que vantagens temporárias ou relacionadas ao exercício de função de confiança ou cargo em comissão sejam incorporadas à remuneração permanente do cargo efetivo.",
+     "o_que_significa": "Incorporação ocorre quando determinada parcela que era paga apenas em razão de uma situação temporária passa a integrar de forma permanente a remuneração do servidor.\nO § 9º proíbe essa transformação para as vantagens abrangidas pelo dispositivo.\nAssim, uma parcela ligada ao exercício temporário de função de confiança ou cargo em comissão não se torna, apenas pelo decurso do tempo, parte permanente da remuneração do cargo efetivo.",
+     "exemplo_pratico": "Uma servidora ocupa durante alguns anos uma função de direção e recebe a vantagem correspondente enquanto exerce essa função.\nDepois de deixar a direção, essa vantagem não pode ser incorporada à remuneração permanente do seu cargo efetivo com fundamento apenas no período em que exerceu a função.",
+     "atencao": "O § 9º foi introduzido pela EC 103/2019.\nA própria emenda contém regra de transição: seu art. 13 determina que o § 9º não se aplica às incorporações abrangidas por ele que tenham sido efetivadas até a entrada em vigor da EC 103/2019.\nEssa regra está fora do art. 39 e deve permanecer identificada como conteúdo externo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Incorporação",
+       "explicacao": "transformação de determinada vantagem em parcela permanente da remuneração."
+      },
+      {
+       "termo": "Vantagem temporária",
+       "explicacao": "parcela ligada a uma situação que não possui caráter permanente."
+      },
+      {
+       "termo": "Função de confiança",
+       "explicacao": "função atribuída a servidor efetivo para atividades de direção, chefia ou assessoramento, conforme o regime aplicável."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "EC 103/2019, art. 13."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "art. 13 da EC 103/2019: o § 9º nao se aplica as incorporacoes efetivadas ate a entrada em vigor da emenda",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art39": false,
+     "note": "regra transitoria informada pela revisao humana; a origem do § 9º na EC 103/2019 consta da fonte estrutural canonica"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo proíbe incorporar à remuneração do cargo efetivo as vantagens temporárias e as que decorrem do exercício de função de confiança ou de cargo em comissão.",
+     "o_que_significa": "Incorporar significa transformar uma vantagem passageira em parte permanente da remuneração. Por exemplo, depois de alguns anos recebendo gratificação de chefia, o servidor passaria a recebê-la de forma permanente, mesmo sem continuar chefiando.\nO parágrafo proíbe isso. A gratificação de função ou de cargo em comissão é paga enquanto o servidor exerce a função; quando ela termina, a parcela deixa de ser paga.\nA regra evita que a remuneração cresça de forma permanente por atividades exercidas apenas por um tempo.",
+     "exemplo_pratico": "Uma servidora ocupou por seis anos a função de diretora de um departamento, com gratificação. Ao deixar a função, volta a receber apenas a remuneração do seu cargo efetivo, sem incorporar a gratificação.",
+     "atencao": "O parágrafo foi incluído pela reforma da previdência de 2019. Incorporações ocorridas antes dela dependem das regras de transição da emenda, que não estão neste parágrafo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Incorporação",
+       "explicacao": "transformação de uma vantagem temporária em parte permanente da remuneração."
+      },
+      {
+       "termo": "Vantagem de caráter temporário",
+       "explicacao": "parcela paga apenas enquanto existe certa situação ou atividade."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "As regras de transição da Emenda Constitucional nº 103/2019 sobre incorporações anteriores devem ser consultadas na própria emenda."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 9º impede que vantagens temporárias ou relacionadas ao exercício de função de confiança ou cargo em comissão sejam incorporadas à remuneração permanente do cargo efetivo.",
+     "o_que_significa": "Incorporação ocorre quando determinada parcela que era paga apenas em razão de uma situação temporária passa a integrar de forma permanente a remuneração do servidor.\nO § 9º proíbe essa transformação para as vantagens abrangidas pelo dispositivo.\nAssim, uma parcela ligada ao exercício temporário de função de confiança ou cargo em comissão não se torna, apenas pelo decurso do tempo, parte permanente da remuneração do cargo efetivo.",
+     "exemplo_pratico": "Uma servidora ocupa durante alguns anos uma função de direção e recebe a vantagem correspondente enquanto exerce essa função.\nDepois de deixar a direção, essa vantagem não pode ser incorporada à remuneração permanente do seu cargo efetivo com fundamento apenas no período em que exerceu a função.",
+     "atencao": "O § 9º foi introduzido pela EC 103/2019.\nA própria emenda contém regra de transição: seu art. 13 determina que o § 9º não se aplica às incorporações abrangidas por ele que tenham sido efetivadas até a entrada em vigor da EC 103/2019.\nEssa regra está fora do art. 39 e deve permanecer identificada como conteúdo externo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Incorporação",
+       "explicacao": "transformação de determinada vantagem em parcela permanente da remuneração."
+      },
+      {
+       "termo": "Vantagem temporária",
+       "explicacao": "parcela ligada a uma situação que não possui caráter permanente."
+      },
+      {
+       "termo": "Função de confiança",
+       "explicacao": "função atribuída a servidor efetivo para atividades de direção, chefia ou assessoramento, conforme o regime aplicável."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "EC 103/2019, art. 13."
+    ]
+   },
+   "final_check_edits": []
+  },
+  {
+   "target_id": "CF88:ART.41",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 2)",
+   "review_reason": "O exemplo dizia que, apos adquirir estabilidade, o servidor \"so pode perder o cargo nas hipoteses do § 1º\", o que e incompleto diante do art. 169, § 4º.",
+   "from_explanation_id": "ENTENDA/CF88:ART.41/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.41/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "O exemplo dizia que, apos adquirir estabilidade, o servidor \"so pode perder o cargo nas hipoteses do § 1º\", o que e incompleto diante do art. 169, § 4º.",
+    "content": {
+     "o_que_diz": "O art. 41 disciplina a estabilidade do servidor nomeado para cargo efetivo após concurso público.\nO caput estabelece o período de três anos de efetivo exercício. Os parágrafos tratam das hipóteses de perda do cargo, da reintegração, da disponibilidade e da avaliação especial necessária à aquisição da estabilidade.",
+     "o_que_significa": "Estabilidade é uma garantia constitucional relacionada à permanência do servidor no serviço público depois do cumprimento dos requisitos constitucionais.\nO caput exige cargo de provimento efetivo, ingresso mediante concurso público e três anos de efetivo exercício.\nAlém disso, o § 4º exige avaliação especial de desempenho realizada por comissão instituída para essa finalidade.\nEfetividade e estabilidade não são a mesma coisa. O servidor ocupa cargo efetivo desde o ingresso nessa espécie de cargo; a estabilidade é adquirida depois do preenchimento das condições constitucionais.",
+     "exemplo_pratico": "Uma analista ingressa por concurso em cargo efetivo.\nDepois de completar o período constitucional e preencher a condição da avaliação especial de desempenho, adquire estabilidade.\nA partir daí, a perda do cargo depende das hipóteses admitidas pela Constituição.",
+     "atencao": "A estabilidade não se aplica apenas porque alguém ingressou por processo seletivo ou trabalha de forma permanente para o poder público: o caput refere-se ao servidor nomeado para cargo de provimento efetivo em virtude de concurso público.\nAlém das hipóteses do § 1º, a Constituição prevê no art. 169, § 4º, outra possibilidade de perda do cargo do servidor estável, ligada à redução de despesas com pessoal e sujeita às condições daquele artigo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Estabilidade",
+       "explicacao": "garantia constitucional adquirida após o preenchimento das condições do art. 41."
+      },
+      {
+       "termo": "Cargo efetivo",
+       "explicacao": "cargo público cujo provimento definitivo depende de concurso."
+      },
+      {
+       "termo": "Avaliação especial de desempenho",
+       "explicacao": "avaliação obrigatória prevista como condição para aquisição da estabilidade."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação constitucional prevista para determinados servidores estáveis afastados do exercício do cargo."
+      },
+      {
+       "termo": "Reintegração",
+       "explicacao": "retorno do servidor estável após invalidação judicial de sua demissão."
+      }
+     ]
+    },
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O art. 41 trata da estabilidade do servidor público. O caput garante estabilidade, após três anos de efetivo exercício, aos servidores nomeados por concurso para cargo de provimento efetivo. Os parágrafos tratam das hipóteses de perda do cargo, da reintegração após demissão invalidada, da disponibilidade e da avaliação especial de desempenho.",
+     "o_que_significa": "Estabilidade é a garantia de permanência no serviço público. O servidor estável só pode perder o cargo nas hipóteses que a Constituição admite. Ela protege o servidor contra demissões arbitrárias e, com isso, protege também a impessoalidade e a continuidade da administração.\nO caput traz três condições cumulativas: cargo de provimento efetivo, nomeação em virtude de concurso público e três anos de efetivo exercício. A essas condições, o § 4º acrescenta a aprovação em avaliação especial de desempenho.\nEstabilidade é diferente de efetividade. Efetividade é a característica do cargo, ocupado de forma permanente. Estabilidade é a garantia que o servidor adquire depois do período e da avaliação.\nO período antes da estabilidade é conhecido como estágio probatório.",
+     "exemplo_pratico": "Uma analista toma posse em cargo efetivo depois de aprovada em concurso. Durante os três primeiros anos, ela é acompanhada e avaliada. Aprovada na avaliação especial e completado o período, torna-se estável e só pode perder o cargo nas hipóteses do § 1º.",
+     "atencao": "A estabilidade não alcança ocupantes só de cargo em comissão nem contratados temporários. A Constituição também prevê, no art. 169, § 4º, perda do cargo do servidor estável por excesso de despesa com pessoal, hipótese que está fora do art. 41.",
+     "palavras_dificeis": [
+      {
+       "termo": "Estabilidade",
+       "explicacao": "garantia de permanência no serviço público, com perda do cargo só nas hipóteses constitucionais."
+      },
+      {
+       "termo": "Cargo de provimento efetivo",
+       "explicacao": "cargo ocupado de forma permanente, após concurso."
+      },
+      {
+       "termo": "Estágio probatório",
+       "explicacao": "período inicial em que o servidor é avaliado antes de adquirir estabilidade."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação do servidor estável que fica sem exercer o cargo, mas vinculado e remunerado proporcionalmente."
+      },
+      {
+       "termo": "Reintegração",
+       "explicacao": "retorno do servidor ao cargo após a anulação da sua demissão."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A relação entre o prazo do estágio probatório e o prazo da estabilidade é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O art. 41 disciplina a estabilidade do servidor nomeado para cargo efetivo após concurso público.\nO caput estabelece o período de três anos de efetivo exercício. Os parágrafos tratam das hipóteses de perda do cargo, da reintegração, da disponibilidade e da avaliação especial necessária à aquisição da estabilidade.",
+     "o_que_significa": "Estabilidade é uma garantia constitucional relacionada à permanência do servidor no serviço público depois do cumprimento dos requisitos constitucionais.\nO caput exige cargo de provimento efetivo, ingresso mediante concurso público e três anos de efetivo exercício.\nAlém disso, o § 4º exige avaliação especial de desempenho realizada por comissão instituída para essa finalidade.\nEfetividade e estabilidade não são a mesma coisa. O servidor ocupa cargo efetivo desde o ingresso nessa espécie de cargo; a estabilidade é adquirida depois do preenchimento das condições constitucionais.",
+     "exemplo_pratico": "Uma analista ingressa por concurso em cargo efetivo.\nDepois de completar o período constitucional e preencher a condição da avaliação especial de desempenho, adquire estabilidade.\nA partir daí, a perda do cargo depende das hipóteses admitidas pela Constituição.",
+     "atencao": "A estabilidade não se aplica apenas porque alguém ingressou por processo seletivo ou trabalha de forma permanente para o poder público: o caput refere-se ao servidor nomeado para cargo de provimento efetivo em virtude de concurso público.\nAlém das hipóteses do § 1º, a Constituição prevê no art. 169, § 4º, outra possibilidade de perda do cargo do servidor estável, ligada à redução de despesas com pessoal e sujeita às condições daquele artigo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Estabilidade",
+       "explicacao": "garantia constitucional adquirida após o preenchimento das condições do art. 41."
+      },
+      {
+       "termo": "Cargo efetivo",
+       "explicacao": "cargo público cujo provimento definitivo depende de concurso."
+      },
+      {
+       "termo": "Avaliação especial de desempenho",
+       "explicacao": "avaliação obrigatória prevista como condição para aquisição da estabilidade."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação constitucional prevista para determinados servidores estáveis afastados do exercício do cargo."
+      },
+      {
+       "termo": "Reintegração",
+       "explicacao": "retorno do servidor estável após invalidação judicial de sua demissão."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A relação entre o prazo do estágio probatório e o prazo da estabilidade é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "final_check_edits": []
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.2",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 2)",
+   "review_reason": "Retirado \"retorna como se nao tivesse saido\" (sugeria efeitos financeiros que o paragrafo nao detalha); substituido o exemplo de \"promocao para a vaga\"; melhorada a definicao de aproveitamento.",
+   "from_explanation_id": "ENTENDA/CF88:ART.41:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.41:PAR.2/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirado \"retorna como se nao tivesse saido\" (sugeria efeitos financeiros que o paragrafo nao detalha); substituido o exemplo de \"promocao para a vaga\"; melhorada a definicao de aproveitamento.",
+    "content": {
+     "o_que_diz": "Se a demissão de um servidor estável for invalidada por sentença judicial, ele será reintegrado.\nSe a vaga estiver ocupada por outro servidor estável, a Constituição prevê para esse ocupante a recondução ao cargo de origem, sem indenização, o aproveitamento em outro cargo ou a disponibilidade com remuneração proporcional ao tempo de serviço.",
+     "o_que_significa": "Reintegração é o retorno do servidor estável ao cargo após a invalidação judicial de sua demissão.\nA Constituição também precisa resolver a situação da pessoa que passou a ocupar aquela vaga.\nSe esse ocupante também for estável, poderá retornar ao cargo de origem, ser aproveitado em outro cargo ou ficar em disponibilidade, conforme a situação aplicável.\nA regra de ausência de indenização mencionada pelo parágrafo refere-se ao ocupante estável reconduzido.",
+     "exemplo_pratico": "Um fiscal estável é demitido. Posteriormente, uma sentença judicial invalida a demissão e ele deve ser reintegrado.\nSe outro servidor estável estiver ocupando aquela vaga, poderá ser reconduzido ao seu cargo de origem, nas condições previstas pelo § 2º.",
+     "atencao": "O § 2º não detalha os efeitos financeiros da reintegração do servidor cuja demissão foi invalidada.\nTambém não se deve confundir a indenização mencionada no dispositivo com eventuais efeitos financeiros relativos ao servidor reintegrado.",
+     "palavras_dificeis": [
+      {
+       "termo": "Reintegração",
+       "explicacao": "retorno do servidor estável ao cargo após a invalidação judicial de sua demissão."
+      },
+      {
+       "termo": "Recondução",
+       "explicacao": "retorno do servidor estável ao cargo de origem na situação prevista pelo dispositivo."
+      },
+      {
+       "termo": "Aproveitamento",
+       "explicacao": "colocação do servidor em outro cargo adequado, conforme o regime jurídico aplicável."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação em que o servidor permanece vinculado à Administração sem exercer o cargo, nas condições constitucionais."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo trata da demissão de servidor estável invalidada por sentença judicial. O servidor é reintegrado. Quem ocupava a vaga, se for estável, volta ao cargo de origem sem indenização, é aproveitado em outro cargo ou fica em disponibilidade, com remuneração proporcional ao tempo de serviço.",
+     "o_que_significa": "Reintegração é a volta do servidor ao cargo de que foi ilegalmente demitido. Como a demissão foi anulada, ele retorna como se não tivesse saído.\nO problema prático é a vaga, que pode ter sido ocupada por outra pessoa. O parágrafo resolve a situação do ocupante estável em três alternativas: recondução ao cargo de origem, aproveitamento em outro cargo ou disponibilidade com remuneração proporcional.\nO ocupante reconduzido não tem direito a indenização, porque apenas volta à situação anterior.",
+     "exemplo_pratico": "Um fiscal estável é demitido e, anos depois, a Justiça anula a demissão. Ele é reintegrado ao cargo. A servidora estável que havia sido promovida para essa vaga volta ao seu cargo anterior, sem indenização.",
+     "atencao": "As três alternativas do parágrafo se referem ao ocupante estável da vaga. Os efeitos financeiros da reintegração para o servidor demitido não estão detalhados neste texto.",
+     "palavras_dificeis": [
+      {
+       "termo": "Reintegração",
+       "explicacao": "retorno do servidor ao cargo após a anulação da sua demissão."
+      },
+      {
+       "termo": "Recondução",
+       "explicacao": "retorno do servidor estável ao cargo que ocupava antes."
+      },
+      {
+       "termo": "Aproveitamento",
+       "explicacao": "aproveitamento do servidor em disponibilidade em outro cargo compatível."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação do servidor estável que fica sem exercer o cargo, mas vinculado e remunerado proporcionalmente."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "Se a demissão de um servidor estável for invalidada por sentença judicial, ele será reintegrado.\nSe a vaga estiver ocupada por outro servidor estável, a Constituição prevê para esse ocupante a recondução ao cargo de origem, sem indenização, o aproveitamento em outro cargo ou a disponibilidade com remuneração proporcional ao tempo de serviço.",
+     "o_que_significa": "Reintegração é o retorno do servidor estável ao cargo após a invalidação judicial de sua demissão.\nA Constituição também precisa resolver a situação da pessoa que passou a ocupar aquela vaga.\nSe esse ocupante também for estável, poderá retornar ao cargo de origem, ser aproveitado em outro cargo ou ficar em disponibilidade, conforme a situação aplicável.\nA regra de ausência de indenização mencionada pelo parágrafo refere-se ao ocupante estável reconduzido.",
+     "exemplo_pratico": "Um fiscal estável é demitido. Posteriormente, uma sentença judicial invalida a demissão e ele deve ser reintegrado.\nSe outro servidor estável estiver ocupando aquela vaga, poderá ser reconduzido ao seu cargo de origem, nas condições previstas pelo § 2º.",
+     "atencao": "O § 2º não detalha os efeitos financeiros da reintegração do servidor cuja demissão foi invalidada.\nTambém não se deve confundir a indenização mencionada no dispositivo com eventuais efeitos financeiros relativos ao servidor reintegrado.",
+     "palavras_dificeis": [
+      {
+       "termo": "Reintegração",
+       "explicacao": "retorno do servidor estável ao cargo após a invalidação judicial de sua demissão."
+      },
+      {
+       "termo": "Recondução",
+       "explicacao": "retorno do servidor estável ao cargo de origem na situação prevista pelo dispositivo."
+      },
+      {
+       "termo": "Aproveitamento",
+       "explicacao": "colocação do servidor em outro cargo adequado, conforme o regime jurídico aplicável."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação em que o servidor permanece vinculado à Administração sem exercer o cargo, nas condições constitucionais."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "final_check_edits": []
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.4",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (verificacao final 2026-10-04; editorial_version 2)",
+   "review_reason": "Retirados criterios inventados no exemplo (assiduidade, produtividade, responsabilidade); diferenca entre avaliacao especial e periodica explicitada; afastada a sugestao de exoneracao automatica.",
+   "from_explanation_id": "ENTENDA/CF88:ART.41:PAR.4/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.41:PAR.4/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirados criterios inventados no exemplo (assiduidade, produtividade, responsabilidade); diferenca entre avaliacao especial e periodica explicitada; afastada a sugestao de exoneracao automatica.",
+    "content": {
+     "o_que_diz": "O § 4º estabelece uma condição adicional para a aquisição da estabilidade: o servidor deve passar por avaliação especial de desempenho realizada por comissão criada para essa finalidade.",
+     "o_que_significa": "Completar três anos de efetivo exercício não é, isoladamente, suficiente para adquirir estabilidade.\nA Constituição também exige a avaliação especial de desempenho.\nEssa avaliação deve ser realizada por uma comissão instituída especificamente para essa finalidade, conforme a disciplina jurídica aplicável.\nEla não se confunde com a avaliação periódica mencionada no § 1º, III. A avaliação especial está ligada à aquisição da estabilidade; a periódica é prevista como possível fundamento para perda do cargo de servidor já estável e depende de lei complementar.",
+     "exemplo_pratico": "Uma servidora ingressa por concurso em cargo efetivo e completa o período de três anos.\nAntes de adquirir estabilidade, deve ser submetida à avaliação especial realizada pela comissão competente, segundo os critérios definidos pelo regime jurídico aplicável.",
+     "atencao": "O § 4º não enumera os critérios concretos que a comissão deve utilizar.\nEsses critérios e o procedimento da avaliação são disciplinados pela legislação aplicável.\nTambém não se deve tratar a avaliação especial e a avaliação periódica do § 1º, III, como se fossem o mesmo procedimento.",
+     "palavras_dificeis": [
+      {
+       "termo": "Avaliação especial de desempenho",
+       "explicacao": "avaliação constitucionalmente exigida para aquisição da estabilidade."
+      },
+      {
+       "termo": "Comissão",
+       "explicacao": "grupo formalmente instituído para desempenhar determinada função."
+      },
+      {
+       "termo": "Avaliação periódica de desempenho",
+       "explicacao": "mecanismo distinto, previsto no § 1º, III, relacionado à possível perda do cargo do servidor estável."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo torna obrigatória, como condição para adquirir estabilidade, uma avaliação especial de desempenho feita por comissão criada para essa finalidade.",
+     "o_que_significa": "O tempo de exercício, sozinho, não basta. Além dos três anos do caput, o servidor precisa ser aprovado em uma avaliação especial.\nA avaliação é feita por uma comissão instituída para isso, e não apenas pela chefia imediata. Ela verifica se o servidor demonstrou aptidão para o cargo durante o período inicial.\nEsta avaliação é diferente da avaliação periódica do § 1º, III. A especial acontece antes da estabilidade e é condição para adquiri-la; a periódica acontece depois e pode levar à perda do cargo.",
+     "exemplo_pratico": "Ao fim do período inicial, uma comissão analisa assiduidade, produtividade e responsabilidade de um servidor. Aprovado, ele adquire estabilidade. Reprovado, não se torna estável e pode ser exonerado conforme a lei.",
+     "atencao": "Não confundir a avaliação especial (condição para adquirir estabilidade) com a avaliação periódica de desempenho (hipótese de perda do cargo de quem já é estável). Os critérios da avaliação especial estão na legislação de cada ente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Avaliação especial de desempenho",
+       "explicacao": "avaliação obrigatória para que o servidor adquira estabilidade."
+      },
+      {
+       "termo": "Comissão",
+       "explicacao": "grupo de pessoas designado para uma tarefa específica, aqui a avaliação do servidor."
+      },
+      {
+       "termo": "Exoneração",
+       "explicacao": "desligamento do servidor que não tem caráter de punição."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 4º estabelece uma condição adicional para a aquisição da estabilidade: o servidor deve passar por avaliação especial de desempenho realizada por comissão criada para essa finalidade.",
+     "o_que_significa": "Completar três anos de efetivo exercício não é, isoladamente, suficiente para adquirir estabilidade.\nA Constituição também exige a avaliação especial de desempenho.\nEssa avaliação deve ser realizada por uma comissão instituída especificamente para essa finalidade, conforme a disciplina jurídica aplicável.\nEla não se confunde com a avaliação periódica mencionada no § 1º, III. A avaliação especial está ligada à aquisição da estabilidade; a periódica é prevista como possível fundamento para perda do cargo de servidor já estável e depende de lei complementar.",
+     "exemplo_pratico": "Uma servidora ingressa por concurso em cargo efetivo e completa o período de três anos.\nAntes de adquirir estabilidade, deve ser submetida à avaliação especial realizada pela comissão competente, segundo os critérios definidos pelo regime jurídico aplicável.",
+     "atencao": "O § 4º não enumera os critérios concretos que a comissão deve utilizar.\nEsses critérios e o procedimento da avaliação são disciplinados pela legislação aplicável.\nTambém não se deve tratar a avaliação especial e a avaliação periódica do § 1º, III, como se fossem o mesmo procedimento.",
+     "palavras_dificeis": [
+      {
+       "termo": "Avaliação especial de desempenho",
+       "explicacao": "avaliação constitucionalmente exigida para aquisição da estabilidade."
+      },
+      {
+       "termo": "Comissão",
+       "explicacao": "grupo formalmente instituído para desempenhar determinada função."
+      },
+      {
+       "termo": "Avaliação periódica de desempenho",
+       "explicacao": "mecanismo distinto, previsto no § 1º, III, relacionado à possível perda do cargo do servidor estável."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "final_check_edits": []
+  }
+ ],
+ "final_check": {
+  "date": "2026-10-04",
+  "decisions": [
+   "desvio T1 do art. 39 (\"integrado\" -> \"composto\"): APROVADO (adaptacao editorial sem alteracao do sentido juridico)",
+   "camada externa do art. 39 em duas notas sobre a ADI nº 2.135: APROVADA; nota antiga (eficacia como questao aberta) REMOVIDA",
+   "camada externa do art. 39 § 9º substituida por \"EC 103/2019, art. 13.\": APROVADA; proveniencia externa mantida",
+   "art. 39 § 4º e art. 41: notas existentes mantidas sem duplicacao; itens com \"—\": camada externa vazia",
+   "art. 39 ATENCAO: identificador interno CF88_RUNTIME retirado do corpo visivel com o texto do revisor; versao carimbada e imutavel -> v3, v2 preservada como RETIRED/CHANGES_REQUESTED"
+  ],
+  "versioning": "v2 imutavel desde o carimbo (ENTENDA_CONTENT_CHANGED_WITHOUT_VERSION_BUMP): CF88:ART.39 v1 -> v2 -> v3; os outros 6 aprovados na v2, sem v3"
+ }
+}

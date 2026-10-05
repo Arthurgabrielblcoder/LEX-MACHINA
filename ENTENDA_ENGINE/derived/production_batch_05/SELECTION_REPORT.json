@@ -1,0 +1,2073 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "norma_id": "CF88",
+ "scope": [
+  "CF88:ART.37",
+  "CF88:ART.38",
+  "CF88:ART.39",
+  "CF88:ART.40",
+  "CF88:ART.41"
+ ],
+ "policy": "ENTENDA-T1 (semantica)",
+ "summary": {
+  "targets_evaluated": 133,
+  "targets_current": 118,
+  "selected": 72,
+  "by_classification": {
+   "BLOCK": 18,
+   "DEVICE": 32,
+   "EXCLUDED_HISTORICAL": 14,
+   "EXCLUDED_REVOKED": 1,
+   "ITEM": 17,
+   "NO_SEPARATE_EXPLANATION": 46,
+   "OVERVIEW": 5
+  },
+  "historical_excluded": 14,
+  "revoked_excluded": 1,
+  "reused_from_pilot": 3,
+  "new_explanations": 69,
+  "batch_total_explanations": 72,
+  "soft_target": [
+   50,
+   65
+  ],
+  "hard_cap": 70,
+  "soft_target_status": "OUTSIDE_JUSTIFIED",
+  "soft_target_justification": "69 explicacoes novas (quatro acima da meta de 65, abaixo do teto de 70) para 5 artigos e 118 dispositivos vigentes; somadas as 3 explicacoes aprovadas do piloto (art. 37, § 6 e § 10), o lote chega a 72. O art. 37 (49 dispositivos) e o art. 40 (39 dispositivos vigentes) estao entre os mais densos da Constituicao. Mesmo com 18 blocos (13 cobrem 17 dispositivos irmaos e 6 tem subdivisoes proprias; o inciso XVI do art. 37 tem as duas coisas), que deixam 46 dispositivos sem explicacao propria, separar concurso, teto, acumulacao, licitacao, improbidade e prescricao (art. 37) e cada hipotese de aposentadoria, piso/teto, pensao, acumulacao de beneficios, contribuicao de inativos, abono e previdencia complementar (art. 40) exige explicacoes proprias; fundir mais misturaria regimes que o estudante precisa distinguir.",
+  "new_words_mean": 249,
+  "new_payload_bytes_mean": 2157,
+  "largest": {
+   "target_id": "CF88:ART.40:PAR.14",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/2",
+   "role": "BLOCK",
+   "payload_bytes": 3209,
+   "words": 330,
+   "freshness": "FRESH",
+   "reference_count": 0
+  },
+  "files": {
+   "ENTENDA_LOOKUP.IDX": {
+    "sha256": "d9da019e302dc50fd57ee8695eee69313b457644f325cdcfbc461bcc7471a307",
+    "bytes": 9398
+   },
+   "ENTENDA_PAYLOAD.DAT": {
+    "sha256": "98221f6dc6d378ffc3bd5d2112be89478e9c011daf7245ed57bf2ad285bc8311",
+    "bytes": 156918
+   },
+   "ENTENDA_BUILD_MANIFEST.json": {
+    "sha256": "f84515219b07a4a66bd5c3a7a2b972d3a4373148c19fec0293bfb1cf85edc487",
+    "bytes": 48679
+   }
+  },
+  "lookup_rows": 89,
+  "targets_with_references": 19,
+  "warnings": 73,
+  "warning_counts": {
+   "ABSOLUTE_CLAIM": 8,
+   "EXAMPLE_REQUIREMENT_LANGUAGE": 20,
+   "JURISPRUDENCE_WORDING_IN_BODY": 12,
+   "LONG_EXPLANATION": 3,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 23,
+   "PARENT_REPETITION": 2,
+   "TERM_LOW_UTILITY": 1,
+   "TERM_NOT_USED": 4
+  },
+  "focus_article": {
+   "target": "CF88:ART.40",
+   "evaluated": 54,
+   "own_explanations": 22,
+   "new_explanations": 22,
+   "incisos_evaluated": 21,
+   "no_separate": 17,
+   "by_classification": {
+    "OVERVIEW": 1,
+    "DEVICE": 13,
+    "BLOCK": 5,
+    "ITEM": 3,
+    "NO_SEPARATE_EXPLANATION": 17
+   }
+  },
+  "retired_versions": 47,
+  "review_status_counts": {
+   "HUMAN_APPROVED_T1": 72
+  },
+  "jurisprudence_recommendations": {
+   "total": 0,
+   "ready_to_link": 0,
+   "pending_external_ingestion": 0,
+   "identity_found_pending_subject_verification": 0
+  },
+  "targets_structurally_present": 133,
+  "targets_legally_current": 118,
+  "targets_revoked": 1,
+  "temporal_notes": {
+   "as_of": "2026-10-04",
+   "total": 0,
+   "not_yet_effective": 0,
+   "review_due": 0
+  }
+ },
+ "selection": [
+  {
+   "target_id": "CF88:ART.37",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.37/BASE/1",
+   "explanation_source": "PILOT_T1_APPROVED",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [],
+   "selection_reason": "Visao geral do art. 37 aprovada no piloto ENTENDA-CF-A2 (HUMAN_APPROVED_T1); reutilizada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.37:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:CAPUT/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Caput com comando proprio e conceitos centrais (os cinco principios expressos). A visao geral do art. 37 situa os principios em uma frase cada; aqui cada principio e desenvolvido, com os limites de cada um."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.I/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Regra propria de acesso (brasileiros e estrangeiros) com reserva legal diferente para cada grupo."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.II/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Regra central do regime de pessoal (concurso como forma de investidura) com a excecao dos cargos em comissao."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.III/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Incisos III e IV formam a unidade sobre a vida util do concurso: prazo de validade e prioridade do aprovado sobre novos concursados."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.III",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.V/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Distincao conceitual frequente em prova (funcao de confianca x cargo em comissao) e limite material de uso."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.VI/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Incisos VI e VII formam a unidade dos direitos coletivos do servidor publico civil: associacao sindical e greve."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.VI",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.VIII/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Acao afirmativa com comando proprio ao legislador (percentual e criterios de admissao)."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.IX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.IX/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Excecao relevante ao concurso, com requisitos proprios (temporariedade e excepcional interesse publico)."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.X",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.X/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra propria sobre fixacao de remuneracao (reserva de lei especifica, iniciativa privativa) e revisao geral anual."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XI/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "selection_reason": "Teto constitucional: regra autonoma de alta utilidade interpretativa, com subtetos por ente e por Poder."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XII/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Incisos XII, XIII e XIV formam a unidade das vedacoes que controlam o crescimento da remuneracao: limite em relacao ao Executivo, proibicao de vinculacao ou equiparacao e proibicao do efeito cascata."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XIV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XV/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Garantia autonoma com ressalvas expressas (teto, efeito cascata, subsidio e normas tributarias)."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XVI/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "selection_reason": "Inciso-bloco com enunciado e tres alineas de excecao; o inciso XVII estende a proibicao e completa a unidade."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVI:AL.a",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XVI",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVI:AL.b",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XVI",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVI:AL.c",
+   "kind": "ALINEA",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XVI",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XVI",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XVIII/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Incisos XVIII e XXII tratam da mesma atividade (administracao fazendaria e tributaria): precedencia e recursos prioritarios com atuacao integrada."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XIX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XIX/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Incisos XIX e XX formam a unidade sobre a criacao de entidades da administracao indireta e de suas subsidiarias."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XIX",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XXI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XXI/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Regra-base das contratacoes publicas, com principio da igualdade entre concorrentes e limite as exigencias de qualificacao."
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XXII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:INC.XVIII",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Paragrafo autonomo de alta utilidade pratica: finalidade da publicidade oficial e vedacao de promocao pessoal."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Sancao autonoma para a violacao dos incisos II e III (concurso e validade): nulidade do ato e punicao da autoridade."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Paragrafo-bloco com enunciado e tres incisos sobre participacao do usuario: reclamacoes, acesso a informacoes e representacao."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.3",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.4/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "selection_reason": "Base constitucional da improbidade: sancoes, reserva de lei para forma e gradacao, independencia da esfera penal."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.5/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    6
+   ],
+   "selection_reason": "Regra autonoma de reserva legal sobre prescricao, com ressalva de redacao controvertida que exige cuidado editorial."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.6",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.6/BASE/2",
+   "explanation_source": "PILOT_T1_APPROVED",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [],
+   "selection_reason": "Responsabilidade civil do Estado aprovada no piloto (HUMAN_APPROVED_T1, versao 2); reutilizada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.7",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.7/BASE/3",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Comando autonomo ao legislador sobre conflito de interesses de quem acessa informacoes privilegiadas."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.8/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    5
+   ],
+   "selection_reason": "Paragrafo-bloco com enunciado (ampliacao de autonomia por contrato com metas) e tres incisos sobre o conteudo da lei."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.8",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.8",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.8",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.9",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.9/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    6
+   ],
+   "selection_reason": "Paragrafos 9, 11 e 12 completam o teto do inciso XI: alcance sobre estatais dependentes, exclusao de parcelas indenizatorias e subteto unico facultativo dos Estados e do Distrito Federal."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.10",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.10/BASE/1",
+   "explanation_source": "PILOT_T1_APPROVED",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [],
+   "selection_reason": "Vedacao de acumular proventos e remuneracao aprovada no piloto (HUMAN_APPROVED_T1); reutilizada sem alteracao."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.11",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.9",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.12",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.37:PAR.9",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.13",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.13/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Instituto proprio (readaptacao), com condicoes e garantia de manutencao da remuneracao."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.14",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.14/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    6
+   ],
+   "selection_reason": "Regra autonoma introduzida na reforma previdenciaria: efeito da aposentadoria sobre o vinculo publico."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.15",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.15/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    6
+   ],
+   "selection_reason": "Vedacao autonoma com duas excecoes expressas (previdencia complementar do art. 40 e lei de extincao de regime proprio)."
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.16",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.16/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Dever autonomo de avaliacao de politicas publicas com transparencia (objeto e resultados)."
+  },
+  {
+   "target_id": "CF88:ART.38",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.38/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do regime do servidor eleito: o caput delimita quem e alcancado; os incisos, cada um com explicacao propria, distinguem mandato federal/estadual/distrital, Prefeito e Vereador e tratam de tempo de servico e previdencia."
+  },
+  {
+   "target_id": "CF88:ART.38:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.38",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.38:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.I/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Regra propria e incondicionada para mandatos federal, estadual e distrital (afastamento sem opcao de remuneracao)."
+  },
+  {
+   "target_id": "CF88:ART.38:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.II/BASE/3",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Regra propria do Prefeito: afastamento obrigatorio com opcao de remuneracao."
+  },
+  {
+   "target_id": "CF88:ART.38:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.III/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5,
+    6
+   ],
+   "selection_reason": "Unica hipotese do artigo em que cargo e mandato podem ser exercidos ao mesmo tempo; depende de compatibilidade de horarios."
+  },
+  {
+   "target_id": "CF88:ART.38:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.IV/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    5
+   ],
+   "selection_reason": "Regra autonoma sobre contagem do tempo de servico do servidor afastado, com excecao expressa (promocao por merecimento)."
+  },
+  {
+   "target_id": "CF88:ART.38:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.V/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    3,
+    6
+   ],
+   "selection_reason": "Regra previdenciaria propria: manutencao da filiacao ao regime proprio do ente de origem."
+  },
+  {
+   "target_id": "CF88:ART.39",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.39/BASE/3",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do artigo sobre politica de pessoal: o caput (conselho de politica de administracao e remuneracao) e explicado aqui; os paragrafos com regra autonoma tem explicacao propria."
+  },
+  {
+   "target_id": "CF88:ART.39:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.39",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Paragrafo-bloco com enunciado e tres incisos de criterios para fixar vencimentos; explicar a logica em conjunto."
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.39:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.39:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.39:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.2/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Comando autonomo: escolas de governo e participacao em cursos como requisito de promocao."
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra autonoma de grande utilidade: lista dos direitos do art. 7º estendidos ao servidor e requisitos de admissao."
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.4/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Paragrafos 4 e 8 formam a unidade do subsidio: quem e obrigatoriamente remunerado por subsidio e a possibilidade de estende-lo a servidores organizados em carreira."
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.5/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Paragrafos 5 e 6 formam a unidade de controle e transparencia da estrutura remuneratoria: relacao maior/menor e publicacao anual dos valores."
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.6",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.39:PAR.5",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.7",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.7/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5
+   ],
+   "selection_reason": "Comando autonomo ao legislador sobre o destino da economia de despesas correntes (qualidade, produtividade, premio)."
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.8",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.39:PAR.4",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.9",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.9/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Vedacao autonoma: incorporacao de vantagens temporarias ou de funcao de confianca/cargo em comissao ao cargo efetivo."
+  },
+  {
+   "target_id": "CF88:ART.40",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.40/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral do artigo mais denso do lote: situa o caput, as hipoteses de aposentadoria, os beneficios, as vedacoes, a previdencia complementar e a organizacao dos regimes proprios, cada grupo com explicacoes proprias. Os incisos e alineas historicos ficam fora (CURRENT-only)."
+  },
+  {
+   "target_id": "CF88:ART.40:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:CAPUT/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Caput com comando distinto da visao geral: fundamentos do regime proprio (contribuicao, solidariedade, equilibrio financeiro e atuarial) e quem contribui."
+  },
+  {
+   "target_id": "CF88:ART.40:INC.I",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:INC.II",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:INC.III",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:INC.III:AL.a",
+   "kind": "ALINEA",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:INC.III:AL.b",
+   "kind": "ALINEA",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:INC.III:AL.c",
+   "kind": "ALINEA",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:INC.III:AL.d",
+   "kind": "ALINEA",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "Enunciado das hipoteses de aposentadoria: situado na visao geral do art. 40; cada hipotese (incisos I, II e III) tem explicacao propria.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.2/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Regra autonoma sobre piso e teto dos proventos, ligada a previdencia complementar (§§ 14 a 16)."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Paragrafos 3 e 17 formam a unidade do calculo dos proventos: regras em lei do ente e atualizacao das remuneracoes consideradas no calculo."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.4/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Regra geral de igualdade de requisitos no regime proprio, com remissao expressa as excecoes (§§ 4º-A, 4º-B, 4º-C e 5º)."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.5/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Excecao autonoma ao § 4º para o magisterio, com requisito proprio de tempo de efetivo exercicio."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.I/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Hipotese autonoma de aposentadoria com requisitos proprios (incapacidade permanente, impossibilidade de readaptacao, avaliacoes periodicas)."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Hipotese autonoma de aposentadoria por idade maxima (70 ou 75 anos), com proventos proporcionais."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "ITEM",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.III/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4,
+    6
+   ],
+   "selection_reason": "Hipotese autonoma e mais consultada: idade minima na Uniao e competencia de Estados, DF e Municipios para fixar a sua."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.III:AL.a",
+   "kind": "ALINEA",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.III:AL.b",
+   "kind": "ALINEA",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4:INC.I",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4:INC.II",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4:INC.III",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4-A",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.4-A/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    5
+   ],
+   "selection_reason": "Paragrafos 4-A, 4-B e 4-C formam a unidade das excecoes ao § 4º: deficiencia, seguranca publica/sistema prisional e socioeducativo e exposicao a agentes nocivos, todas por lei complementar do ente."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4-B",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.4-A",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4-C",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.4-A",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.6",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.6/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Vedacao autonoma de mais de uma aposentadoria no regime proprio, com ressalva dos cargos acumulaveis e remissao as regras do Regime Geral."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.7",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.7/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Regra autonoma da pensao por morte no regime proprio, com garantia de piso e tratamento diferenciado de morte em servico para agentes do § 4º-B."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.7:INC.I",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.7:INC.II",
+   "kind": "INCISO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.8",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.8/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Garantia autonoma de preservacao do valor real dos beneficios, com criterios em lei."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.9",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.9/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Paragrafos 9 e 10 formam a unidade da contagem de tempo: contagem reciproca entre entes e regimes e vedacao de tempo de contribuicao ficticio."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.10",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.9",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.11",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.11/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    4
+   ],
+   "selection_reason": "Regra autonoma de aplicacao do teto do art. 37, XI, a soma de proventos e a combinacao de proventos com remuneracao."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.12",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.12/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Regra autonoma de integracao entre regimes: aplicacao, no que couber, de requisitos e criterios do Regime Geral."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.13",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.13/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Regra autonoma que delimita o alcance do regime proprio: comissionados exclusivos, temporarios, eletivos e empregados publicos vao para o Regime Geral."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.14",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "selection_reason": "Paragrafos 14, 15 e 16 formam a unidade da previdencia complementar: obrigacao de instituir, modalidade e entidade, e opcao de quem ingressou antes."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.15",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.14",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.16",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.14",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.17",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.3",
+   "coverage": "BLOCK_COVERED_SIBLING",
+   "selection_reason": "explicado em bloco com irmaos (covered_targets do bloco)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.18",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.18/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Regra autonoma sobre a incidencia de contribuicao sobre proventos e pensoes acima do teto do Regime Geral."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.19",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.19/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Instituto proprio (abono de permanencia) com criterios em lei do ente e limite maximo."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.20",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.20/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Vedacao autonoma de mais de um regime proprio e de mais de uma gestora por ente."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.21",
+   "kind": "PARAGRAFO",
+   "status": "REVOKED",
+   "structurally_present": true,
+   "legal_status": "REVOKED",
+   "legally_current": false,
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "estruturalmente presente no texto consolidado, mas legal_status REVOKED: nao recebe ENTENDA vigente"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.22/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3
+   ],
+   "selection_reason": "Paragrafo-bloco com enunciado (vedacao de novos regimes proprios e lei complementar federal) e dez incisos de conteudo da lei; explicar a logica, nao repetir a lista."
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.VI",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.VII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.VIII",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.IX",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22:INC.X",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.40:PAR.22",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.41",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/CF88:ART.41/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    5,
+    6
+   ],
+   "selection_reason": "Visao geral da estabilidade: o caput (tres anos, cargo efetivo, concurso) e explicado aqui; perda do cargo, reintegracao, disponibilidade e avaliacao especial tem explicacoes proprias."
+  },
+  {
+   "target_id": "CF88:ART.41:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.41",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "BLOCK",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.1/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    2,
+    3,
+    4
+   ],
+   "selection_reason": "Paragrafo-bloco com enunciado e tres incisos que esgotam as hipoteses de perda do cargo previstas no art. 41."
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.2/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Efeitos autonomos da invalidacao judicial da demissao: reintegracao do demitido e destino do ocupante da vaga."
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.3/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3,
+    5
+   ],
+   "selection_reason": "Instituto proprio (disponibilidade remunerada proporcional) na extincao ou desnecessidade do cargo."
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.1:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.41:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.1:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.41:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.1:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "CF88:ART.41:PAR.1",
+   "coverage": "BLOCK_SUBDIVISION",
+   "selection_reason": "subdivisao explicada no bloco do dispositivo-pai",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "DEVICE",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.4/BASE/2",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "HUMAN_APPROVED_T1",
+   "selection_criteria": [
+    1,
+    3
+   ],
+   "selection_reason": "Condicao autonoma e obrigatoria para adquirir estabilidade, feita por comissao propria."
+  }
+ ]
+}

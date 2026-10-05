@@ -1,0 +1,383 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_ART37_HIGH_ROUND_1",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND1.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND1.json": "71ef07cd1c9d7d65f4c367f2b7d262db5fbde4e028d0c8bdb51e647e7bba3425",
+  "ENTENDA_BATCH05_REVIEW_ROUND01_ART37_HIGH.md": "d883cbce511585bdcaf234d9be6d2b8705e4a276d77842e3e288a24a9cbe92e3",
+  "REVIEW_BATCH_05.md": "d7b8a70e19f53ffefa89f03e9cfdaf2b0d844fbb3f456045816299daaf6fa4de",
+  "CF88_BATCH_05.entenda.jsonl": "b084fe83194ef48d40a90dda6368f16b24108052f9558ae3c451638ad02b9ecc",
+  "EDITORIAL_CHECKS.json": "5222956afbf5e18199b98fba633ef8c06dd2ecfe0ce67979b3d07968a6e3a819"
+ },
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "decision_counts": {
+  "APPROVED": 1,
+  "APPROVED_AFTER_ADJUSTMENT": 6
+ },
+ "note": "Decisoes de aprovacao da rodada 1 (round_approvals): 7 de 7.",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.37:PAR.5",
+   "decision": "APPROVED",
+   "review_reason": "Texto contido a literalidade constitucional; nao afirma imprescritibilidade geral e deixa o alcance da ressalva final para a camada JURISPRUDENCIA. Opcao editorial preservada.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.5/BASE/1"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Exemplo anterior afirmava a soma das remuneracoes de acumulacao licita para aplicar o teto, em conflito com a jurisprudencia indicada pelo revisor (Temas 377 e 384); T1 substituido.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:INC.XI/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:INC.XI/BASE/2",
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_significa",
+     "reviewer_text": "limitado a 90,25% do subsídio dos Ministros do STF.",
+     "applied_text": "limitado a 90,25% do subsídio dos Ministros do Supremo Tribunal Federal.",
+     "reason": "ENTENDA_EXTERNAL_CASE_CONTENT: sigla de tribunal no corpo e bloqueada; expandida por extenso"
+    },
+    {
+     "section": "o_que_significa",
+     "reviewer_text": "também é aplicado aos membros do Ministério Público, aos Procuradores e aos Defensores Públicos.",
+     "applied_text": "também é aplicado a membros do Ministério Público, Procuradores e Defensores Públicos.",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do texto oficial; artigos \"aos\" suprimidos"
+    },
+    {
+     "section": "palavras_dificeis",
+     "reviewer_text": "Subsídio: remuneração fixada em parcela única, nos termos constitucionais.",
+     "applied_text": "(removido)",
+     "reason": "ENTENDA_TERMS_INVALID: maximo de 5 termos; \"Subsídio\" ja e definido em CF88:ART.37:INC.X e INC.XV"
+    }
+   ],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "Temas 377 e 384 do STF (teto em acumulacoes licitas, por vinculo)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art37": false,
+     "note": "referencia jurisprudencial indicada pela revisao humana; somente na CAMADA EXTERNA"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "Dentro das regras do art. 37, o inciso XI fixa um teto para tudo o que é pago a agentes públicos: remuneração, subsídio, proventos, pensões e vantagens de qualquer natureza, somados ou não. O teto geral é o subsídio dos Ministros do Supremo Tribunal Federal. Nos Municípios e nos Estados e Distrito Federal há limites próprios, os subtetos.",
+    "o_que_significa": "O teto é o valor máximo que um agente público pode receber dos cofres públicos. Ele alcança servidores da administração direta, autárquica e fundacional, membros dos Poderes, detentores de mandato eletivo, aposentados e pensionistas.\nOs subtetos funcionam assim. Nos Municípios, o limite é o subsídio do Prefeito. Nos Estados e no Distrito Federal, o limite varia por Poder: no Executivo, o subsídio do Governador; no Legislativo, o dos Deputados Estaduais e Distritais; no Judiciário, o dos Desembargadores do Tribunal de Justiça. Esse último fica limitado a 90,25% do subsídio dos Ministros do Supremo e também vale para membros do Ministério Público, Procuradores e Defensores Públicos.\nO teto alcança também as vantagens pessoais e o total recebido cumulativamente.",
+    "exemplo_pratico": "Um servidor municipal acumula licitamente dois cargos e, somadas as remunerações, ultrapassaria o subsídio do Prefeito. Pelo texto do inciso, a soma está sujeita ao teto municipal, e o excedente não é pago.",
+    "atencao": "Algumas regras completam o teto e estão em outros dispositivos: a extensão às estatais que recebem recursos públicos, as parcelas indenizatórias excluídas e o subteto único facultativo dos Estados (§§ 9º, 11 e 12). O teto para a soma de aposentadorias e remunerações também aparece no art. 40, § 11.",
+    "palavras_dificeis": [
+     {
+      "termo": "Teto remuneratório",
+      "explicacao": "limite máximo de tudo o que um agente público pode receber dos cofres públicos."
+     },
+     {
+      "termo": "Subteto",
+      "explicacao": "limite próprio de um ente ou Poder, abaixo do teto geral."
+     },
+     {
+      "termo": "Vantagem pessoal",
+      "explicacao": "parcela paga em razão da situação individual do servidor, como adicionais por tempo de serviço."
+     },
+     {
+      "termo": "Subsídio",
+      "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+     },
+     {
+      "termo": "Proventos",
+      "explicacao": "valor pago ao servidor aposentado."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVI",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Retirada a afirmacao de que a soma das remuneracoes e submetida ao teto e a justificativa especulativa de que a Constituicao quis \"aproveitar o profissional\".",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:INC.XVI/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:INC.XVI/BASE/2",
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "dois cargos ou empregos privativos de profissionais de saúde com profissões regulamentadas.",
+     "applied_text": "dois cargos ou empregos privativos de profissionais da saúde com profissões regulamentadas.",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do texto oficial; \"de\" -> \"da\""
+    },
+    {
+     "section": "o_que_significa",
+     "reviewer_text": "A vedação também alcança empregos e funções e abrange autarquias,",
+     "applied_text": "A vedação também alcança empregos e funções, abrangendo autarquias,",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do texto oficial; \"e abrange\" -> \"abrangendo\""
+    }
+   ],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "Temas 377/384 do STF (teto em acumulacoes licitas)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art37": false,
+     "note": "referencia jurisprudencial indicada pela revisao humana; somente na CAMADA EXTERNA"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "Em regra, é proibido acumular cargos públicos remunerados. As exceções exigem compatibilidade de horários e respeito ao teto, e são três: dois cargos de professor; um de professor com outro de qualquer natureza; dois cargos ou empregos privativos de profissionais de saúde com profissão regulamentada. O inciso XVII estende a proibição a empregos e funções, inclusive na administração indireta.",
+    "o_que_significa": "A regra geral é um vínculo público remunerado por pessoa. A acumulação só é permitida nas três hipóteses das alíneas, e mesmo assim com duas condições: os horários precisam ser compatíveis, e a soma das remunerações se submete ao teto do inciso XI.\nAs hipóteses protegem áreas em que a Constituição quis aproveitar o profissional em mais de um vínculo: o magistério e a saúde.\nO inciso XVII amplia o alcance da proibição. Ela não se limita a cargos: vale para empregos e funções e alcança toda a administração indireta, incluídas as estatais, as suas subsidiárias e as sociedades que o poder público controla direta ou indiretamente.",
+    "exemplo_pratico": "Uma enfermeira concursada de um hospital estadual é aprovada para emprego de enfermeira em empresa pública federal de saúde. Como são duas ocupações privativas de profissional de saúde, a acumulação é possível se os plantões forem compatíveis. Já um técnico administrativo de uma prefeitura não pode assumir, ao mesmo tempo, emprego em sociedade de economia mista estadual, porque a proibição alcança também a administração indireta.",
+    "atencao": "A proibição é de acumulação remunerada, e as exceções dependem das duas condições: horários compatíveis e teto. Na alínea \"b\", a redação vigente, dada pela Emenda Constitucional nº 138, de 2025, admite o cargo de professor com outro de qualquer natureza; materiais mais antigos falam em cargo técnico ou científico. A acumulação de aposentadoria com remuneração tem regra própria no § 10.",
+    "palavras_dificeis": [
+     {
+      "termo": "Acumulação",
+      "explicacao": "exercício simultâneo de mais de um cargo, emprego ou função pública."
+     },
+     {
+      "termo": "Compatibilidade de horários",
+      "explicacao": "possibilidade real de cumprir as jornadas dos dois vínculos sem sobreposição."
+     },
+     {
+      "termo": "Profissão regulamentada",
+      "explicacao": "profissão cujo exercício é disciplinado por lei, como medicina e enfermagem."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.4",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A definicao anterior de improbidade era ampla demais e podia sugerir que o proprio § 4º define quais condutas sao improbidade.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:PAR.4/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:PAR.4/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo prevê as consequências dos atos de improbidade administrativa: suspensão dos direitos políticos, perda da função pública, indisponibilidade dos bens e ressarcimento ao erário. A forma e a gradação dessas medidas ficam para a lei, e a responsabilização não impede a ação penal cabível.",
+    "o_que_significa": "Improbidade é a conduta desonesta ou gravemente desleal de quem exerce função pública, como enriquecer ilicitamente, causar prejuízo aos cofres públicos ou violar deveres de honestidade.\nO parágrafo lista medidas de natureza diferente. A suspensão dos direitos políticos e a perda da função são sanções. O ressarcimento repara o dano ao patrimônio público. A indisponibilidade dos bens serve para garantir que haverá patrimônio para ressarcir.\nA expressão \"sem prejuízo da ação penal\" indica que a responsabilização por improbidade é independente da criminal: a mesma conduta pode gerar os dois processos.",
+    "exemplo_pratico": "Um servidor municipal recebe dinheiro de uma empresa para favorecê-la em contratos. Ele pode responder por improbidade, com perda da função, suspensão dos direitos políticos e ressarcimento, conforme a lei. Ao mesmo tempo, pode ser processado criminalmente pelo crime cometido.",
+    "atencao": "O parágrafo não define quais condutas são improbidade nem fixa prazos ou graduações: tudo isso está na lei. A suspensão dos direitos políticos aqui prevista dialoga com o art. 15, V.",
+    "palavras_dificeis": [
+     {
+      "termo": "Improbidade administrativa",
+      "explicacao": "ato desonesto ou gravemente contrário aos deveres de quem exerce função pública, definido em lei."
+     },
+     {
+      "termo": "Erário",
+      "explicacao": "patrimônio financeiro do poder público; os cofres públicos."
+     },
+     {
+      "termo": "Indisponibilidade dos bens",
+      "explicacao": "bloqueio que impede vender ou transferir bens, para garantir o ressarcimento."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.9",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Evitar \"estatal dependente\" como se fosse expressao do § 9º; nao reduzir o criterio a ideia generica de depender de dinheiro publico; explicitar a regra transitoria da EC 135/2024; reduzir o tamanho.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:PAR.9/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:PAR.9/BASE/2",
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_significa",
+     "reviewer_text": "respeitado o máximo de 90,25% do subsídio dos Ministros do STF.",
+     "applied_text": "respeitado o máximo de 90,25% do subsídio dos Ministros do Supremo Tribunal Federal.",
+     "reason": "ENTENDA_EXTERNAL_CASE_CONTENT: sigla de tribunal no corpo e bloqueada; expandida por extenso"
+    }
+   ],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "art. 3º da EC 135/2024 como regra transitoria do § 11 ate a lei ordinaria nacional",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art37": false,
+     "note": "o runtime contem apenas a remissao \"( Vide o art. 3º da Emenda Constitucional nº 135/2024 )\"; o carater transitorio foi informado pela revisao humana"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O § 9º aplica o teto às empresas públicas, sociedades de economia mista e subsidiárias que recebem recursos públicos para pagar pessoal ou custeio. O § 11 exclui do teto as parcelas indenizatórias previstas expressamente em lei ordinária nacional, aprovada pelo Congresso. O § 12 permite que Estados e Distrito Federal adotem como limite único o subsídio dos Desembargadores do Tribunal de Justiça.",
+    "o_que_significa": "Os três parágrafos ajustam o alcance do teto do inciso XI.\nO § 9º trata das estatais. Em regra, elas não estão no texto do inciso XI, que fala da administração direta, autárquica e fundacional. Mas, se dependem de dinheiro público para pagar salários ou despesas correntes, passam a se submeter ao teto.\nO § 11 tira do teto as parcelas indenizatórias, que reembolsam gastos e não remuneram o trabalho. A exclusão só vale para as parcelas previstas expressamente em lei ordinária de alcance nacional, válida para todos os Poderes e órgãos autônomos.\nO § 12 é uma opção dos Estados e do Distrito Federal: por emenda à Constituição estadual ou à Lei Orgânica, podem adotar um subteto único, limitado a 90,25% do subsídio dos Ministros do Supremo. A opção não alcança Deputados Estaduais e Distritais nem Vereadores.",
+    "exemplo_pratico": "Uma companhia estadual de transportes que depende de repasses do Estado para pagar a folha passa a observar o teto (§ 9º). Uma diária paga a um servidor para cobrir hospedagem em viagem de trabalho, se prevista na lei nacional exigida pelo § 11, não entra na conta do teto.",
+    "atencao": "O texto oficial do § 11 traz remissão ao art. 3º da Emenda Constitucional nº 135/2024, que trata da aplicação dessa regra. O conteúdo dessa disposição está fora do art. 37 e deve ser consultado na emenda. Estatais que não recebem recursos públicos para pessoal ou custeio não estão alcançadas pelo § 9º.",
+    "palavras_dificeis": [
+     {
+      "termo": "Estatal dependente",
+      "explicacao": "empresa do poder público que precisa de repasses do Tesouro para pagar pessoal ou custeio."
+     },
+     {
+      "termo": "Parcela indenizatória",
+      "explicacao": "valor pago para reembolsar despesa do servidor, e não para remunerar o seu trabalho."
+     },
+     {
+      "termo": "Custeio",
+      "explicacao": "despesas correntes de manutenção, como contas, materiais e serviços."
+     },
+     {
+      "termo": "Subsídio",
+      "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+     },
+     {
+      "termo": "Sociedade de economia mista",
+      "explicacao": "empresa com capital público e privado, controlada pelo poder público."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.14",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Corpo aprovado; T1 substituido para tornar a ATENCAO mais precisa (regra de transicao do art. 6º da EC 103/2019).",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:PAR.14/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:PAR.14/BASE/2",
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "concedida com o uso de tempo de contribuição",
+     "applied_text": "concedida com o uso do tempo de contribuição",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do texto oficial; \"de\" -> \"do\""
+    }
+   ],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "art. 6º da EC 103/2019: o § 14 nao se aplica as aposentadorias concedidas pelo RGPS ate a entrada em vigor da emenda",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art37": false,
+     "note": "introduzido pela revisao editorial humana; nao e conteudo da Lei Seca do art. 37"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O parágrafo determina que a aposentadoria concedida com o uso de tempo de contribuição de cargo, emprego ou função pública rompe o vínculo que gerou esse tempo, inclusive quando a aposentadoria é do Regime Geral.",
+    "o_que_significa": "A regra impede que a pessoa se aposente usando o tempo de um vínculo público e continue nesse mesmo vínculo, recebendo ao mesmo tempo a aposentadoria e a remuneração.\nO ponto central é a origem do tempo de contribuição. Se a aposentadoria usou o tempo de um cargo, emprego ou função pública, esse vínculo termina. A menção expressa ao Regime Geral alcança, por exemplo, o empregado público que se aposenta pelo regime geral usando o tempo do seu emprego.",
+    "exemplo_pratico": "Um empregado de uma empresa pública, vinculado ao Regime Geral, se aposenta contando o tempo de contribuição desse emprego. Pelo texto do parágrafo, a aposentadoria rompe o vínculo de emprego com a empresa pública.",
+    "atencao": "O parágrafo foi incluído pela reforma da previdência de 2019. A aplicação a aposentadorias concedidas antes da sua vigência depende de regras de transição da própria emenda, que não estão neste parágrafo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Tempo de contribuição",
+      "explicacao": "período em que a pessoa contribuiu para um regime de previdência."
+     },
+     {
+      "termo": "Regime Geral de Previdência Social",
+      "explicacao": "sistema previdenciário administrado pelo INSS, que abrange os trabalhadores em geral."
+     },
+     {
+      "termo": "Rompimento do vínculo",
+      "explicacao": "término da relação de trabalho do agente com a administração."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.15",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A definicao anterior dizia que a complementacao seria necessariamente pagamento extra feito pelo ente publico (mais estreita que o texto); regra transitoria descrita com precisao (art. 7º da EC 103/2019).",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:PAR.15/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:PAR.15/BASE/2",
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "proíbe a complementação de aposentadorias de servidores públicos e de pensões por morte de seus dependentes",
+     "applied_text": "proíbe a complementação das aposentadorias de servidores públicos e das pensões por morte de seus dependentes",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do texto oficial; \"de\" -> \"das\" (duas vezes)"
+    }
+   ],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "art. 7º da EC 103/2019: o § 15 nao se aplica as complementacoes concedidas ate a entrada em vigor da emenda",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "lei_seca_art37": false,
+     "note": "introduzido pela revisao editorial humana; nao e conteudo da Lei Seca do art. 37"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O parágrafo proíbe complementar aposentadorias de servidores públicos e pensões por morte de seus dependentes. Há duas exceções: a complementação que decorre do regime de previdência complementar do art. 40, §§ 14 a 16, e a prevista em lei que extinga regime próprio de previdência.",
+    "o_que_significa": "Complementação é um pagamento extra, feito pelo ente público, para aumentar o valor de uma aposentadoria ou pensão. O parágrafo impede que o ente crie esses acréscimos por conta própria.\nFicam permitidas apenas duas formas. A primeira é a previdência complementar dos servidores, organizada nos termos do art. 40, baseada em contribuições. A segunda é a complementação prevista na lei que extingue um regime próprio, caso em que os servidores daquele ente passam para o Regime Geral.",
+    "exemplo_pratico": "Um Município aprova lei para pagar, com recursos do Tesouro, um valor adicional às pensões de dependentes de servidores falecidos, fora de qualquer plano de previdência complementar. Essa lei contraria o parágrafo.",
+    "atencao": "O parágrafo foi incluído pela reforma da previdência de 2019. A situação das complementações já existentes antes dela depende das regras de transição da emenda, que não estão escritas aqui.",
+    "palavras_dificeis": [
+     {
+      "termo": "Complementação",
+      "explicacao": "pagamento adicional que aumenta o valor de uma aposentadoria ou pensão."
+     },
+     {
+      "termo": "Pensão por morte",
+      "explicacao": "benefício pago aos dependentes de quem faleceu."
+     },
+     {
+      "termo": "Regime próprio de previdência social",
+      "explicacao": "sistema previdenciário dos servidores titulares de cargo efetivo de cada ente."
+     }
+    ]
+   }
+  }
+ ],
+ "final_check": {
+  "date": "2026-10-04",
+  "decisions": [
+   "STF por extenso nos dois pontos do corpo: APROVADO (nao e alteracao de conteudo); STF mantido na CAMADA EXTERNA",
+   "glossario do inciso XI: retirado \"Subsidio\"; mantidos Teto remuneratorio, Subteto, Vantagem pessoal, Proventos, Pensionista",
+   "5 microalteracoes contra copia literal: APROVADAS (adaptacoes editoriais, sem mudanca de conteudo juridico)",
+   "arts. 6º e 7º da EC 103/2019 mantidos na ATENCAO/CAMADA EXTERNA com proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+  ],
+  "approved_without_new_version": true
+ }
+}

@@ -1,0 +1,355 @@
+{
+ "schema_version": 1,
+ "catalog_id": "T1_EXTERNAL_CATALOG",
+ "standard": "ENTENDA-T1 A6",
+ "as_of": "2026-10-04",
+ "policy": "Somente entradas usadas e validadas nas Rodadas HIGH 01, 02, 03A e 03B do Batch05 (ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW). O catalogo e dado: novas entradas nao alteram o motor. Fatos com provenance_required=true entram no corpo/camada externa so com content_provenance HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE.",
+ "fields": {
+  "kind": "JURISPRUDENCE | EXTERNAL_LAW | TRANSITION_RULE | AMENDMENT_ORIGIN | CF_CROSS_REFERENCE",
+  "status": "RESOLVED | IN_FORCE | PENDING_REGULATION | TRANSITORY | STRUCTURAL",
+  "placement": "EXTERNAL_LAYER_ONLY (numero/tese so na camada externa) | CORE_WITH_PROVENANCE (pode aparecer no corpo com proveniencia) | CORE_ALLOWED (texto constitucional no runtime)",
+  "refs": "formas de citacao procuradas no corpo/camada externa (minusculas, sem acento nao exigido)",
+  "applies_to_targets": "targets onde a revisao humana exigiu a entrada (memoria de regressao)",
+  "trigger": "regex do tema no corpo (generaliza para targets novos)",
+  "contradicts": "regex de leitura que contraria a entrada (nao negada)",
+  "open_framing": "regex que trata como aberta uma questao ja resolvida",
+  "context": "regex que a mesma frase deve conter para trigger/contradicts contarem (reduz falso positivo fora do tema)"
+ },
+ "entries": [
+  {
+   "id": "STF_TEMAS_377_384",
+   "kind": "JURISPRUDENCE",
+   "status": "RESOLVED",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Teto remuneratorio nas acumulacoes constitucionalmente autorizadas: considerado em cada vinculo, nao sobre o somatorio",
+   "refs": [
+    "tema 377",
+    "temas 377"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:INC.XI",
+    "CF88:ART.37:INC.XVI",
+    "CF88:ART.40:PAR.6",
+    "CF88:ART.40:PAR.11"
+   ],
+   "trigger": "(teto[^.]{0,80}(acumula\\w*|cumulativ\\w*|v[íi]nculos)|(acumula\\w*|cumulativ\\w*|v[íi]nculos acumulados)[^.]{0,80}teto)",
+   "contradicts": "((soma|somat[óo]rio|total)[^.]{0,60}(sujeit\\w+|submet\\w+|limitad\\w+)[^.]{0,30}teto|teto[^.]{0,40}(sobre|[àa]) (a )?soma|todas as somas)",
+   "open_framing": null,
+   "learned_from": [
+    "R01 CF88:ART.37:INC.XI",
+    "R01 CF88:ART.37:INC.XVI",
+    "R03A CF88:ART.40:PAR.6",
+    "R03B CF88:ART.40:PAR.11"
+   ],
+   "context": "(remunera|provento|v[íi]nculo|cargo|aposentadori|acumula|cumulativ)",
+   "false_positive_learned": "R-A6 calibracao: \"teto\" do subsidio de vereador e da folha (arts. 29, 29-A) nao e o tema"
+  },
+  {
+   "id": "STF_TEMA_359",
+   "kind": "JURISPRUDENCE",
+   "status": "RESOLVED",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Morte do instituidor apos a EC 19/1998: teto sobre o somatorio de remuneracao ou provento e pensao",
+   "refs": [
+    "tema 359"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.40:PAR.11"
+   ],
+   "trigger": "pens[ãa]o[^.]{0,80}(remunera[çc][ãa]o|provento)[^.]{0,80}teto",
+   "contradicts": null,
+   "open_framing": null,
+   "learned_from": [
+    "R03B CF88:ART.40:PAR.11"
+   ],
+   "context": null
+  },
+  {
+   "id": "STF_TEMA_965_ADI_3772",
+   "kind": "JURISPRUDENCE",
+   "status": "RESOLVED",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Funcoes de magisterio: direcao de unidade escolar, coordenacao e assessoramento pedagogico por professores de carreira na educacao basica",
+   "refs": [
+    "tema 965",
+    "adi 3.772"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.40:PAR.5"
+   ],
+   "trigger": "fun[çc][õo]es de magist[ée]rio|magist[ée]rio[^.]{0,40}(aposentadoria|redu[çc][ãa]o)",
+   "contradicts": "(magist[ée]rio[^.]{0,40}(somente|apenas|s[óo]) [^.]{0,20}sala de aula|magist[ée]rio: exerc[íi]cio da fun[çc][ãa]o de professor)",
+   "open_framing": null,
+   "learned_from": [
+    "R03A CF88:ART.40:PAR.5"
+   ],
+   "context": null
+  },
+  {
+   "id": "STF_ADI_2135",
+   "kind": "JURISPRUDENCE",
+   "status": "RESOLVED",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Art. 39, caput: julgamento definitivo declarou constitucional a redacao da EC 19/1998; eficacia ex nunc; sem transmudacao automatica; embargos rejeitados em 2025",
+   "refs": [
+    "adi nº 2.135",
+    "adi 2.135"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.39"
+   ],
+   "trigger": "regime jur[íi]dico [úu]nico|conselho de pol[íi]tica de administra[çc][ãa]o",
+   "contradicts": null,
+   "open_framing": "(qual reda[çc][ãa]o produz efeitos|hist[óo]rico constitucional complexo|efic[áa]cia de cada reda[çc][ãa]o)",
+   "learned_from": [
+    "R02 CF88:ART.39"
+   ],
+   "context": null
+  },
+  {
+   "id": "LC_152_2015",
+   "kind": "EXTERNAL_LAW",
+   "status": "IN_FORCE",
+   "placement": "CORE_WITH_PROVENANCE",
+   "provenance_required": true,
+   "label": "Lei Complementar nº 152/2015: aposentadoria compulsoria aos 75 anos para os agentes abrangidos",
+   "refs": [
+    "152/2015"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.40:PAR.1:INC.II"
+   ],
+   "trigger": "compuls[óo]ri\\w+[^.]{0,80}75 anos|75 anos[^.]{0,80}lei complementar",
+   "contradicts": "(depende do que a lei complementar dispuser|lei complementar que fixou a idade)",
+   "open_framing": null,
+   "learned_from": [
+    "R03A CF88:ART.40:PAR.1:INC.II"
+   ],
+   "context": null
+  },
+  {
+   "id": "EC103_ART6",
+   "kind": "TRANSITION_RULE",
+   "status": "TRANSITORY",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "EC 103/2019, art. 6º: o art. 37, § 14, nao se aplica as aposentadorias concedidas pelo RGPS ate a entrada em vigor da emenda",
+   "refs": [
+    "art. 6º da ec 103",
+    "art. 6º da emenda constitucional nº 103",
+    "ec 103/2019, art. 6"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:PAR.14"
+   ],
+   "trigger": null,
+   "contradicts": null,
+   "open_framing": null,
+   "learned_from": [
+    "R01 CF88:ART.37:PAR.14"
+   ],
+   "context": null
+  },
+  {
+   "id": "EC103_ART7",
+   "kind": "TRANSITION_RULE",
+   "status": "TRANSITORY",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "EC 103/2019, art. 7º: o art. 37, § 15, nao se aplica as complementacoes concedidas ate a entrada em vigor da emenda",
+   "refs": [
+    "art. 7º da ec 103",
+    "art. 7º da emenda constitucional nº 103",
+    "ec 103/2019, art. 7"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:PAR.15"
+   ],
+   "trigger": null,
+   "contradicts": null,
+   "open_framing": null,
+   "learned_from": [
+    "R01 CF88:ART.37:PAR.15"
+   ],
+   "context": null
+  },
+  {
+   "id": "EC103_ART9_LEI_9717",
+   "kind": "TRANSITION_RULE",
+   "status": "PENDING_REGULATION",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "EC 103/2019, art. 9º: ate a lei complementar do art. 40, § 22, aplicam-se aos RPPS a Lei nº 9.717/1998 e as regras do proprio art. 9º",
+   "refs": [
+    "art. 9º",
+    "9.717/1998"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.40:PAR.22"
+   ],
+   "trigger": "lei complementar federal[^.]{0,80}(normas gerais|regimes? pr[óo]prios?)",
+   "contradicts": "lei complementar federal[^.]{0,120}(est[áa] na camada|foi editada|j[áa] (foi|existe))",
+   "open_framing": null,
+   "learned_from": [
+    "R03B CF88:ART.40:PAR.22"
+   ],
+   "context": null
+  },
+  {
+   "id": "EC103_ART13",
+   "kind": "TRANSITION_RULE",
+   "status": "TRANSITORY",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "EC 103/2019, art. 13: o art. 39, § 9º, nao se aplica as incorporacoes efetivadas ate a entrada em vigor da emenda",
+   "refs": [
+    "art. 13"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.39:PAR.9"
+   ],
+   "trigger": null,
+   "contradicts": null,
+   "open_framing": null,
+   "learned_from": [
+    "R02 CF88:ART.39:PAR.9"
+   ],
+   "context": null
+  },
+  {
+   "id": "EC135_2024_ART3",
+   "kind": "TRANSITION_RULE",
+   "status": "TRANSITORY",
+   "placement": "CORE_WITH_PROVENANCE",
+   "provenance_required": true,
+   "label": "EC 135/2024, art. 3º: regra transitoria das parcelas indenizatorias do art. 37, § 11, ate a lei ordinaria nacional",
+   "refs": [
+    "135/2024"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:PAR.9"
+   ],
+   "trigger": "parcelas? (de car[áa]ter )?indenizat[óo]ri\\w+[^.]{0,80}(teto|limite)",
+   "contradicts": null,
+   "open_framing": null,
+   "learned_from": [
+    "R01 CF88:ART.37:PAR.9"
+   ],
+   "context": null
+  },
+  {
+   "id": "EC138_2025_ART37_XVI_B",
+   "kind": "AMENDMENT_ORIGIN",
+   "status": "STRUCTURAL",
+   "placement": "CORE_ALLOWED",
+   "provenance_required": false,
+   "label": "EC 138/2025: art. 37, XVI, b, passou a 'um cargo de professor com outro de qualquer natureza' (antes: tecnico ou cientifico)",
+   "refs": [
+    "138/2025"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:INC.XVI"
+   ],
+   "trigger": "cargo de professor com outro",
+   "contradicts": "professor com outro[^.]{0,20}t[ée]cnico ou cient[íi]fico",
+   "open_framing": null,
+   "learned_from": [
+    "R01 CF88:ART.37:INC.XVI (fonte estrutural canonica)"
+   ],
+   "context": null
+  },
+  {
+   "id": "CF_ART149_PAR1A",
+   "kind": "CF_CROSS_REFERENCE",
+   "status": "IN_FORCE",
+   "placement": "CORE_ALLOWED",
+   "provenance_required": false,
+   "label": "CF, art. 149, § 1º-A: com deficit atuarial, contribuicao ordinaria de aposentados e pensionistas sobre o que exceder o salario minimo",
+   "refs": [
+    "art. 149, § 1º-a"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.40:PAR.18"
+   ],
+   "trigger": "contribui[çc][ãa]o[^.]{0,80}(aposentad|pensionist|inativ)[^.]{0,80}(teto|exced|supera)",
+   "contradicts": "leitura usual",
+   "open_framing": null,
+   "learned_from": [
+    "R03B CF88:ART.40:PAR.18"
+   ],
+   "context": null
+  },
+  {
+   "id": "LEI_12813_2013",
+   "kind": "EXTERNAL_LAW",
+   "status": "IN_FORCE",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Lei nº 12.813/2013: conflito de interesses no exercicio de cargo ou emprego do Poder Executivo federal, inclusive informacoes privilegiadas; nao e regulamentacao universal do art. 37, § 7º, para todos os entes",
+   "refs": [
+    "12.813/2013",
+    "lei nº 12.813"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:PAR.7"
+   ],
+   "trigger": "conflito de interesses?[^.]{0,80}(lei|poder executivo federal)",
+   "context": null,
+   "contradicts": "(lei sobre conflito de interesses[^.]{0,80}est[áa] na camada|lei nº 12\\.813[^.]{0,80}(todos os entes|estados e munic[íi]pios))",
+   "open_framing": null,
+   "relations_engine": {
+    "destino": "EXT_LEI12813_2013",
+    "status": "PENDING (C_EXTERNA_PENDENTE_VALIDACAO / OCULTAR_ATE_VALIDAR_VIGENCIA, quarentena 2D3)"
+   },
+   "learned_from": [
+    "RD CF88:ART.37:PAR.7 (fila D da triagem, 2026-10-04)"
+   ]
+  },
+  {
+   "id": "STF_TEMA_612",
+   "kind": "JURISPRUDENCE",
+   "status": "RESOLVED",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Contratacao temporaria (art. 37, IX): previsao legal dos casos, prazo predeterminado, necessidade temporaria, interesse publico excepcional e indispensabilidade da contratacao; nao afirmar que a natureza permanente da atividade, isoladamente, invalida a contratacao",
+   "refs": [
+    "tema 612"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:INC.IX"
+   ],
+   "trigger": null,
+   "contradicts": null,
+   "open_framing": null,
+   "context": null,
+   "learned_from": [
+    "R-FINAL CF88:ART.37:INC.IX (calibracao humana 2026-10-04)"
+   ]
+  },
+  {
+   "id": "STF_IRREDUTIBILIDADE_MONTANTE_NOMINAL",
+   "kind": "JURISPRUDENCE",
+   "status": "RESOLVED",
+   "placement": "EXTERNAL_LAYER_ONLY",
+   "provenance_required": true,
+   "label": "Irredutibilidade (art. 37, XV): protege o montante nominal da remuneracao; nao ha direito adquirido a composicao imutavel das parcelas. Sem numero de tema/processo indicado pela revisao humana (nenhum foi acrescentado).",
+   "refs": [
+    "montante nominal"
+   ],
+   "applies_to_targets": [
+    "CF88:ART.37:INC.XV"
+   ],
+   "trigger": null,
+   "contradicts": null,
+   "open_framing": null,
+   "context": null,
+   "learned_from": [
+    "R-FINAL CF88:ART.37:INC.XV (calibracao humana 2026-10-04)"
+   ]
+  }
+ ]
+}

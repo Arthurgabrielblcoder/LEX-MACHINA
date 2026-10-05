@@ -1,0 +1,52 @@
+{
+ "schema_version": 1,
+ "standard": "ENTENDA-T1 A6",
+ "validator": "T1_VALIDATOR_V2",
+ "AUTO_APPROVE_LOW": false,
+ "AUTO_APPROVE_MEDIUM": false,
+ "MICROAUTO_APPLY": false,
+ "policy": "Nesta fase o pipeline apenas CLASSIFICA. Nenhuma fila aprova sozinha; CLEAN_LOW e CLEAN_MEDIUM continuam PENDING_HUMAN_REVIEW. A ativacao depende de decisao humana apos a primeira triagem.",
+ "queues": {
+  "A_CLEAN_LOW": "lista compacta; T1 completo so sob pedido",
+  "B_CLEAN_MEDIUM": "revisao agregada: ponto central, dependencia externa, alertas, amostra do nucleo",
+  "C_QUICK_REVIEW": "so o trecho, o motivo, o contexto minimo e a acao proposta",
+  "D_FULL_HUMAN_REVIEW": "pacote completo no padrao das Rodadas HIGH",
+  "E_HARD_FAIL": "erro objetivo; corrigir antes de qualquer revisao"
+ },
+ "external_resolver": {
+  "order": [
+   "T1_EXTERNAL_CATALOG",
+   "RELATIONS_ENGINE_VALIDATED",
+   "LOCAL_LEGAL_CORPUS",
+   "ENTENDA_CONTENT_PROVENANCE",
+   "PENDING_OR_REQUIRED"
+  ],
+  "policy": "relacao do Relations Engine e evidencia (EVIDENCE_AVAILABLE_LOCAL), nunca verdade para o nucleo T1; so relacoes validadas (A_EXPRESSA/B_REGULAMENTACAO_OFICIAL com EXIBIR, ou status ATUAL no catalogo global) evitam EXTERNAL_VERIFICATION_REQUIRED; pendentes/fracas resultam em EXTERNAL_EVIDENCE_LOCAL_PENDING e continuam exigindo revisao",
+  "relations_sources": [
+   {
+    "path": "LEX-MACHINAETAPA_2E41/etapa2e4_work/saida/PACOTE_FUSAO_CF_2E4/99_RELATIONS_V2/01_RELACOES_GLOBAIS/RELACOES_CF88.json",
+    "role": "VALIDATED"
+   },
+   {
+    "path": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/RELACOES_CF88_EXIBIVEIS_2D4.json",
+    "role": "VALIDATED"
+   },
+   {
+    "path": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/QUARENTENA_2D3_PRESERVADA.json",
+    "role": "POOL"
+   },
+   {
+    "path": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/CANDIDATAS_P1_RELACAO_EXPRESSA.json",
+    "role": "POOL"
+   },
+   {
+    "path": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/CANDIDATAS_P2_LEIS_ATUAIS.json",
+    "role": "POOL"
+   },
+   {
+    "path": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/CANDIDATAS_P3_DECRETOS_OU_AMPLAS.json",
+    "role": "POOL"
+   }
+  ]
+ }
+}

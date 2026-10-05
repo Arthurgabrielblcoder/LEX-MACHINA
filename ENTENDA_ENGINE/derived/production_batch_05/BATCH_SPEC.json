@@ -1,0 +1,66 @@
+{
+ "norma_id": "CF88",
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "report_schema": 2,
+ "as_of_date": "2026-10-04",
+ "scope": [
+  "CF88:ART.37",
+  "CF88:ART.38",
+  "CF88:ART.39",
+  "CF88:ART.40",
+  "CF88:ART.41"
+ ],
+ "focus_article": "CF88:ART.40",
+ "drafts": "BATCH_05_DRAFTS.json",
+ "reference_export": "LEGAL_TARGET_ID/derived/export_test/run3/CF88_REFERENCES_EXPORT.json",
+ "batch_corpus": "CF88_BATCH_05.entenda.jsonl",
+ "index_dir": "index",
+ "review_sheet": "REVIEW_BATCH_05.md",
+ "prior_corpora": [
+  "ENTENDA_ENGINE/derived/production_batch_01_final/CF88_BATCH_01_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_02_final/CF88_BATCH_02_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_03_final/CF88_BATCH_03_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_04/CF88_BATCH_04.entenda.jsonl"
+ ],
+ "soft_target": [
+  50,
+  65
+ ],
+ "hard_cap": 70,
+ "soft_target_justification": "69 explicacoes novas (quatro acima da meta de 65, abaixo do teto de 70) para 5 artigos e 118 dispositivos vigentes; somadas as 3 explicacoes aprovadas do piloto (art. 37, § 6 e § 10), o lote chega a 72. O art. 37 (49 dispositivos) e o art. 40 (39 dispositivos vigentes) estao entre os mais densos da Constituicao. Mesmo com 18 blocos (13 cobrem 17 dispositivos irmaos e 6 tem subdivisoes proprias; o inciso XVI do art. 37 tem as duas coisas), que deixam 46 dispositivos sem explicacao propria, separar concurso, teto, acumulacao, licitacao, improbidade e prescricao (art. 37) e cada hipotese de aposentadoria, piso/teto, pensao, acumulacao de beneficios, contribuicao de inativos, abono e previdencia complementar (art. 40) exige explicacoes proprias; fundir mais misturaria regimes que o estudante precisa distinguir.",
+ "reused": {
+  "CF88:ART.37": "Visao geral do art. 37 aprovada no piloto ENTENDA-CF-A2 (HUMAN_APPROVED_T1); reutilizada sem alteracao.",
+  "CF88:ART.37:PAR.6": "Responsabilidade civil do Estado aprovada no piloto (HUMAN_APPROVED_T1, versao 2); reutilizada sem alteracao.",
+  "CF88:ART.37:PAR.10": "Vedacao de acumular proventos e remuneracao aprovada no piloto (HUMAN_APPROVED_T1); reutilizada sem alteracao."
+ },
+ "no_separate_reasons": {
+  "CF88:ART.40:PAR.1": "Enunciado das hipoteses de aposentadoria: situado na visao geral do art. 40; cada hipotese (incisos I, II e III) tem explicacao propria."
+ },
+ "jurisprudence_recommendations": [],
+ "round_approvals": [
+  {
+   "review_scope": "CF88_ART37_HIGH_ROUND_1",
+   "decisions": "ROUND_1_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_ART38_39_41_HIGH_ROUND_2",
+   "decisions": "ROUND_2_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_ART40_HIGH_ROUND_3A",
+   "decisions": "ROUND_3A_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_ART40_HIGH_ROUND_3B",
+   "decisions": "ROUND_3B_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH05_TRIAGE_QUEUE_D",
+   "decisions": "ROUND_D_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH05_TRIAGE_FINAL_29",
+   "decisions": "ROUND_FINAL_HUMAN_REVIEW_DECISIONS.json"
+  }
+ ]
+}

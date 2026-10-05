@@ -1,0 +1,981 @@
+{
+ "validator": "T1_VALIDATOR_V2 (A6, 2026-10-04)",
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "changes_requested_v1": {
+  "total": 43,
+  "true_positives": 40,
+  "true_positives_pattern_rules": 29,
+  "true_positives_generalizable": 34,
+  "true_positives_catalog_memory_only": 6,
+  "memory_only_targets": [
+   "CF88:ART.37:INC.IX",
+   "CF88:ART.37:INC.XV",
+   "CF88:ART.37:PAR.14",
+   "CF88:ART.37:PAR.15",
+   "CF88:ART.40:PAR.5",
+   "CF88:ART.40:PAR.6"
+  ],
+  "false_negatives": [
+   "CF88:ART.37:PAR.9",
+   "CF88:ART.40:CAPUT",
+   "CF88:ART.40:PAR.9"
+  ],
+  "codes": {
+   "CATALOG_CONTRADICTION": 8,
+   "CATALOG_LINK_MISSING": 14,
+   "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE": 3,
+   "TELEOLOGY_SPECULATIVE": 12,
+   "EXTERNAL_FACT_NEEDS_PROVENANCE": 1,
+   "OUTDATED_CONTROVERSY": 1,
+   "RESOLVED_TREATED_AS_OPEN": 1,
+   "UNIVERSAL_CLAIM": 10,
+   "AUTOMATIC_CONSEQUENCE": 3,
+   "EXAMPLE_INVENTED_REQUIREMENT": 2,
+   "QUALIFIER_NOT_IN_TEXT": 2,
+   "LAW_STATUS_CLAIM": 3,
+   "PERMISSION_NOT_IN_TEXT": 2,
+   "INTERPRETATION_AS_RULE": 1,
+   "EXHAUSTIVE_ENUMERATION_RISK": 1,
+   "EXCEPTION_OR_RESSALVA_DROPPED": 1
+  }
+ },
+ "approved_unchanged_v1": {
+  "total": 26,
+  "flagged_raw": [
+   "CF88:ART.37:INC.II",
+   "CF88:ART.37:INC.V",
+   "CF88:ART.37:INC.X",
+   "CF88:ART.37:INC.XII",
+   "CF88:ART.38",
+   "CF88:ART.39:PAR.2",
+   "CF88:ART.40:PAR.1:INC.III",
+   "CF88:ART.41:PAR.1"
+  ],
+  "flagged_after_known": []
+ },
+ "approved_final": {
+  "total": 69,
+  "flagged_raw": [
+   "CF88:ART.37:INC.II",
+   "CF88:ART.37:INC.V",
+   "CF88:ART.37:INC.X",
+   "CF88:ART.37:INC.XII",
+   "CF88:ART.38",
+   "CF88:ART.39:PAR.2",
+   "CF88:ART.40",
+   "CF88:ART.40:PAR.1:INC.III",
+   "CF88:ART.40:PAR.4",
+   "CF88:ART.41:PAR.1"
+  ],
+  "flagged_after_known": [],
+  "hard_fail": []
+ },
+ "pilots": {
+  "total": 3,
+  "hard_fail": [],
+  "flagged_raw": [
+   "CF88:ART.37"
+  ]
+ },
+ "prior_approved_corpus": {
+  "total": 220,
+  "hard_fail": [],
+  "flagged_raw": 49,
+  "codes": {
+   "EXCEPTION_OR_RESSALVA_DROPPED": 1,
+   "CATALOG_LINK_MISSING": 1,
+   "TELEOLOGY_SPECULATIVE": 16,
+   "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE": 4,
+   "UNIVERSAL_CLAIM": 28,
+   "QUALIFIER_NOT_IN_TEXT": 3,
+   "LAW_STATUS_CLAIM": 2,
+   "AUTOMATIC_CONSEQUENCE": 1
+  }
+ },
+ "version_chain": {
+  "findings": []
+ },
+ "detail": {
+  "changes_requested_v1": {
+   "CF88:ART.37:INC.XI": [
+    "CATALOG_CONTRADICTION",
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.37:INC.XVI": [
+    "CATALOG_CONTRADICTION",
+    "CATALOG_LINK_MISSING",
+    "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.37:PAR.4": [
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.37:PAR.9": [],
+   "CF88:ART.37:PAR.14": [
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.37:PAR.15": [
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.38:INC.V": [
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.39": [
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "OUTDATED_CONTROVERSY",
+    "RESOLVED_TREATED_AS_OPEN",
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.39:PAR.4": [
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.39:PAR.9": [
+    "CATALOG_LINK_MISSING",
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.41": [
+    "TELEOLOGY_SPECULATIVE",
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.41:PAR.2": [
+    "AUTOMATIC_CONSEQUENCE",
+    "EXAMPLE_INVENTED_REQUIREMENT"
+   ],
+   "CF88:ART.41:PAR.4": [
+    "EXAMPLE_INVENTED_REQUIREMENT"
+   ],
+   "CF88:ART.40": [
+    "CATALOG_LINK_MISSING",
+    "QUALIFIER_NOT_IN_TEXT"
+   ],
+   "CF88:ART.40:CAPUT": [],
+   "CF88:ART.40:PAR.1:INC.I": [
+    "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.40:PAR.1:INC.II": [
+    "CATALOG_CONTRADICTION",
+    "CATALOG_LINK_MISSING",
+    "LAW_STATUS_CLAIM"
+   ],
+   "CF88:ART.40:PAR.2": [
+    "AUTOMATIC_CONSEQUENCE"
+   ],
+   "CF88:ART.40:PAR.4": [
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.40:PAR.5": [
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.40:PAR.6": [
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.40:PAR.7": [
+    "PERMISSION_NOT_IN_TEXT"
+   ],
+   "CF88:ART.40:PAR.9": [],
+   "CF88:ART.40:PAR.11": [
+    "CATALOG_CONTRADICTION",
+    "CATALOG_LINK_MISSING",
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.40:PAR.12": [
+    "QUALIFIER_NOT_IN_TEXT"
+   ],
+   "CF88:ART.40:PAR.13": [
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.40:PAR.14": [
+    "AUTOMATIC_CONSEQUENCE",
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.40:PAR.18": [
+    "CATALOG_CONTRADICTION",
+    "INTERPRETATION_AS_RULE"
+   ],
+   "CF88:ART.40:PAR.19": [
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.40:PAR.20": [
+    "TELEOLOGY_SPECULATIVE",
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.40:PAR.22": [
+    "CATALOG_CONTRADICTION",
+    "CATALOG_LINK_MISSING",
+    "LAW_STATUS_CLAIM"
+   ],
+   "CF88:ART.38:INC.III": [
+    "CATALOG_CONTRADICTION"
+   ],
+   "CF88:ART.37:PAR.7": [
+    "CATALOG_CONTRADICTION",
+    "CATALOG_LINK_MISSING",
+    "LAW_STATUS_CLAIM",
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.37:CAPUT": [
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.37:INC.IX": [
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.37:INC.VIII": [
+    "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE"
+   ],
+   "CF88:ART.37:INC.XV": [
+    "CATALOG_LINK_MISSING"
+   ],
+   "CF88:ART.37:INC.XVIII": [
+    "UNIVERSAL_CLAIM"
+   ],
+   "CF88:ART.37:PAR.13": [
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.38:INC.I": [
+    "EXHAUSTIVE_ENUMERATION_RISK"
+   ],
+   "CF88:ART.38:INC.II": [
+    "PERMISSION_NOT_IN_TEXT",
+    "TELEOLOGY_SPECULATIVE"
+   ],
+   "CF88:ART.38:INC.IV": [
+    "EXCEPTION_OR_RESSALVA_DROPPED"
+   ],
+   "CF88:ART.39:PAR.7": [
+    "TELEOLOGY_SPECULATIVE"
+   ]
+  },
+  "approved_final_raw": {
+   "CF88:ART.40": [
+    "CATALOG_LINK_MISSING:lei complementar federal estabeleça normas gerais"
+   ],
+   "CF88:ART.40:PAR.4": [
+    "CATALOG_LINK_MISSING:funções de magistério"
+   ],
+   "CF88:ART.41:PAR.1": [
+    "UNIVERSAL_CLAIM:só pode"
+   ],
+   "CF88:ART.40:PAR.1:INC.III": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "CF88:ART.37:INC.II": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "CF88:ART.37:INC.V": [
+    "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE:devem ter uma parte"
+   ],
+   "CF88:ART.37:INC.X": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "CF88:ART.37:INC.XII": [
+    "UNIVERSAL_CLAIM:sempre",
+    "AUTOMATIC_CONSEQUENCE:automaticamente"
+   ],
+   "CF88:ART.39:PAR.2": [
+    "UNIVERSAL_CLAIM:só pode"
+   ],
+   "CF88:ART.38": [
+    "EXCEPTION_OR_RESSALVA_DROPPED:todos"
+   ]
+  },
+  "prior_flagged": [
+   {
+    "explanation_id": "ENTENDA/CF88:ART.14:PAR.3/BASE/2",
+    "target_id": "CF88:ART.14:PAR.3",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todas as",
+      "sentence": "Para ser candidato, a pessoa precisa preencher todas as condições do § 3º.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.15/BASE/2",
+    "target_id": "CF88:ART.15",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "A privação desses direitos só pode ocorrer nos casos listados, que são fechados.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.16/BASE/1",
+    "target_id": "CF88:ART.16",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "O objetivo é",
+      "sentence": "O objetivo é evitar mudanças de regras às vésperas da disputa, que poderiam favorecer quem está no poder e prejudicar a segurança dos candidatos e eleitores.",
+      "detail": ""
+     },
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evitar",
+      "sentence": "O objetivo é evitar mudanças de regras às vésperas da disputa, que poderiam favorecer quem está no poder e prejudicar a segurança dos candidatos e eleitores.",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "A lei nova vale desde a publicação, mas só pode ser aplicada às eleições realizadas depois de um ano.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.17:PAR.3/BASE/2",
+    "target_id": "CF88:ART.17:PAR.3",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "O objetivo é",
+      "sentence": "O objetivo é estimular partidos com representatividade nacional.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.17:PAR.7/BASE/2",
+    "target_id": "CF88:ART.17:PAR.7",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "incentivo",
+      "sentence": "investir em programas permanentes de incentivo à participação feminina e reservar parte dos recursos de campanha e do tempo de propaganda.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.18/BASE/2",
+    "target_id": "CF88:ART.18",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "cada ente tem",
+      "sentence": "Autonomia significa que cada ente tem uma esfera própria de atuação definida pela Constituição:",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "sempre",
+      "sentence": "18, sempre dentro dos limites fixados pela Constituição.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.18:PAR.4/BASE/2",
+    "target_id": "CF88:ART.18:PAR.4",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evita",
+      "sentence": "A regra evita a criação de Municípios sem condições de se manter e sem participação da população afetada.",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "Essa lei só pode ser editada no período definido por lei complementar federal, depois da divulgação de Estudos de Viabilidade Municipal e de plebiscito com a po",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Essa lei só pode ser editada no período definido por lei complementar federal, depois da divulgação de Estudos de Viabilidade Municipal e de plebiscito com a po",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "plebiscito com as populações de todos os Municípios envolvidos;",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.2/BASE/2",
+    "target_id": "CF88:ART.2",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "para evitar",
+      "sentence": "as funções do Estado são distribuídas entre órgãos diferentes para evitar a concentração de poder.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.20:PAR.1/BASE/2",
+    "target_id": "CF88:ART.20:PAR.1",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Embora esses recursos sejam bens da União, a Constituição garante a todos os entes — União, Estados, Distrito Federal e Municípios — participação no resultado d",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.21:INC.XXV/BASE/1",
+    "target_id": "CF88:ART.21:INC.XXV",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "somente pode",
+      "sentence": "Uma cooperativa de garimpeiros somente pode atuar em área e nas condições admitidas pelo regime jurídico aplicável, com os títulos exigidos pela legislação mine",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.22:INC.IV/BASE/2",
+    "target_id": "CF88:ART.22:INC.IV",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Uma lei estadual obriga todos os veículos a portar um equipamento de segurança não previsto na legislação federal de trânsito.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.22:INC.VI/BASE/1",
+    "target_id": "CF88:ART.22:INC.VI",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "para evitar",
+      "sentence": "Moeda, crédito, seguros e comércio entre Estados ou com o exterior exigem regras nacionais para evitar barreiras internas e insegurança econômica.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.22:INC.XXVII/BASE/2",
+    "target_id": "CF88:ART.22:INC.XXVII",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Reserva à União o poder de editar normas gerais de licitação e contratação, em todas as modalidades, válidas para a administração direta, autárquica e fundacion",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.22:INC.XXX/BASE/1",
+    "target_id": "CF88:ART.22:INC.XXX",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evita",
+      "sentence": "Isso evita que empresas e órgãos públicos tenham de seguir regras diferentes em cada Estado ou Município.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.23:INC.II/BASE/2",
+    "target_id": "CF88:ART.23:INC.II",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "Todos os",
+      "sentence": "Todos os entes devem cuidar da saúde e da assistência pública e proteger e garantir os direitos das pessoas com deficiência (II);",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Essas são grandes políticas sociais em que todos os entes têm atribuições.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.23:INC.III/BASE/1",
+    "target_id": "CF88:ART.23:INC.III",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evitar",
+      "sentence": "Impedir a evasão de obras de arte inclui evitar sua saída irregular do País, tarefa em que a atuação federal tem papel relevante, mas não exclusivo.",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "Todos os",
+      "sentence": "Todos os entes devem proteger documentos, obras e bens de valor histórico, artístico e cultural, além de monumentos, paisagens naturais notáveis e sítios arqueo",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "A proteção do patrimônio cultural e a promoção do acesso à cultura, à educação e à ciência envolvem todos os entes.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.23:INC.VI/BASE/2",
+    "target_id": "CF88:ART.23:INC.VI",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "Todos os",
+      "sentence": "Todos os entes devem proteger o meio ambiente e combater a poluição de qualquer tipo (VI);",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "Todos os",
+      "sentence": "Todos os entes possuem responsabilidades ambientais.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.23:PAR.UNICO/BASE/2",
+    "target_id": "CF88:ART.23:PAR.UNICO",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "para evitar",
+      "sentence": "Como todos os entes atuam nas mesmas áreas da competência comum, é preciso organizar essa atuação para evitar conflitos, lacunas e desperdício.",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Como todos os entes atuam nas mesmas áreas da competência comum, é preciso organizar essa atuação para evitar conflitos, lacunas e desperdício.",
+      "detail": ""
+     },
+     {
+      "code": "QUALIFIER_NOT_IN_TEXT",
+      "match": "lacunas",
+      "sentence": "Como todos os entes atuam nas mesmas áreas da competência comum, é preciso organizar essa atuação para evitar conflitos, lacunas e desperdício.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.25:PAR.1/BASE/1",
+    "target_id": "CF88:ART.25:PAR.1",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evita",
+      "sentence": "evita que um assunto fique sem nenhum ente responsável.",
+      "detail": ""
+     },
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "serve para",
+      "sentence": "Também não é competência suplementar, que serve para completar uma lei de outro ente.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.25:PAR.3/BASE/2",
+    "target_id": "CF88:ART.25:PAR.3",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "A criação depende de lei complementar estadual e só pode reunir Municípios que fazem divisa entre si.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.29:INC.I/BASE/1",
+    "target_id": "CF88:ART.29:INC.I",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "As eleições municipais acontecem no mesmo dia em todos os Municípios do Brasil.",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "Ele só pode ocorrer onde há mais de 200 mil eleitores, aplicando-se a regra da maioria absoluta do art.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.29:INC.V/BASE/1",
+    "target_id": "CF88:ART.29:INC.V",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Terceiro, a soma do que se paga a todos os Vereadores tem limite de 5% da receita municipal.",
+      "detail": ""
+     },
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "Em um Município de 40 mil habitantes, o subsídio de cada Vereador pode ser de no máximo 30% do que recebe um Deputado Estadual, e esse valor só pode ser definid",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.29:INC.XIV/BASE/1",
+    "target_id": "CF88:ART.29:INC.XIV",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "A ideia é",
+      "sentence": "A ideia é que o chefe do Executivo municipal se dedique ao Município e não acumule outra função pública.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.30/BASE/2",
+    "target_id": "CF88:ART.30",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "serve para",
+      "sentence": "Por isso, essa divisão serve para facilitar o estudo, mas não é absoluta.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.30:INC.II/BASE/1",
+    "target_id": "CF88:ART.30:INC.II",
+    "findings": [
+     {
+      "code": "QUALIFIER_NOT_IN_TEXT",
+      "match": "lacunas",
+      "sentence": "Ela detalha ou preenche lacunas, ligada a um interesse local.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.30:INC.III/BASE/1",
+    "target_id": "CF88:ART.30:INC.III",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "O Município só pode criar os tributos que a Constituição lhe entrega, como o imposto sobre a propriedade predial e territorial urbana (IPTU), além de taxas e co",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.31:PAR.1/BASE/1",
+    "target_id": "CF88:ART.31:PAR.1",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "um tribunal de contas de um único Município ou um tribunal estadual dedicado a todos os Municípios do Estado.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.31:PAR.3/BASE/1",
+    "target_id": "CF88:ART.31:PAR.3",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "O § 3º manda que as contas do Município fiquem, todos os anos, por sessenta dias, disponíveis para exame de qualquer contribuinte, que pode questionar a sua leg",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.36:PAR.1/BASE/1",
+    "target_id": "CF88:ART.36:PAR.1",
+    "findings": [
+     {
+      "code": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+      "match": "precisa ser claro",
+      "sentence": "O decreto precisa ser claro sobre os limites da intervenção:",
+      "detail": "termos fora da Lei Seca/contexto citado: limite, precis"
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.36:PAR.3/BASE/2",
+    "target_id": "CF88:ART.36:PAR.3",
+    "findings": [
+     {
+      "code": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+      "match": "deve ser o menos",
+      "sentence": "Além disso, o decreto deve ser o menos invasivo possível.",
+      "detail": "termos fora da Lei Seca/contexto citado: invasi, possív"
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.36:PAR.4/BASE/1",
+    "target_id": "CF88:ART.36:PAR.4",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "serve para",
+      "sentence": "A intervenção não serve para substituir definitivamente governantes eleitos.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.37/BASE/1",
+    "target_id": "CF88:ART.37",
+    "findings": [
+     {
+      "code": "CATALOG_LINK_MISSING",
+      "match": "teto, acumulação",
+      "sentence": "",
+      "detail": "STF_TEMAS_377_384 (tema detectado no corpo)"
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5/BASE/2",
+    "target_id": "CF88:ART.5",
+    "findings": [
+     {
+      "code": "EXCEPTION_OR_RESSALVA_DROPPED",
+      "match": "qualquer",
+      "sentence": "Um estrangeiro que mora no Brasil é preso em flagrante. Como qualquer brasileiro, deve ser informado de seus direitos, entre eles o de permanecer calado (inciso",
+      "detail": "ressalva do texto: \"salvo nos casos de transgressão militar ou crime propriament\""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.II/BASE/2",
+    "target_id": "CF88:ART.5:INC.II",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "ela só pode agir quando e como a lei autoriza (art.",
+      "detail": ""
+     },
+     {
+      "code": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+      "match": "precisam ter fundamento",
+      "sentence": "Com isso, obrigações e proibições impostas ao particular precisam ter fundamento em lei, e não na simples vontade de uma autoridade.",
+      "detail": "termos fora da Lei Seca/contexto citado: autori, fundam, precis, simple"
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LIV/BASE/1",
+    "target_id": "CF88:ART.5:INC.LIV",
+    "findings": [
+     {
+      "code": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+      "match": "precisa ser regular",
+      "sentence": "o caminho até ela também precisa ser regular.",
+      "detail": "termos fora da Lei Seca/contexto citado: precis, regula"
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LIX/BASE/1",
+    "target_id": "CF88:ART.5:INC.LIX",
+    "findings": [
+     {
+      "code": "QUALIFIER_NOT_IN_TEXT",
+      "match": "subsidiária",
+      "sentence": "É a chamada ação penal privada subsidiária da pública.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LV/BASE/2",
+    "target_id": "CF88:ART.5:INC.LV",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Garante às partes em processo judicial ou administrativo, e aos acusados em geral, o contraditório e a ampla defesa, com todos os meios e recursos próprios da d",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXIX/BASE/1",
+    "target_id": "CF88:ART.5:INC.LXIX",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Se a mesma exigência afetar todos os associados de uma entidade de classe, a entidade pode impetrar mandado de segurança coletivo.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXI/BASE/1",
+    "target_id": "CF88:ART.5:INC.LXXI",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "nunca",
+      "sentence": "A Constituição garante um direito a determinada categoria, mas condiciona seu exercício a uma lei específica que nunca foi editada.",
+      "detail": ""
+     },
+     {
+      "code": "LAW_STATUS_CLAIM",
+      "match": "a lei específica que nunca foi editada",
+      "sentence": "A Constituição garante um direito a determinada categoria, mas condiciona seu exercício a uma lei específica que nunca foi editada.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXII/BASE/1",
+    "target_id": "CF88:ART.5:INC.LXXII",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "sempre",
+      "sentence": "O objeto é sempre informação relativa ao próprio impetrante.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.LXXIII/BASE/1",
+    "target_id": "CF88:ART.5:INC.LXXIII",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evita",
+      "sentence": "A isenção de custas e de sucumbência evita que o risco financeiro desestimule o cidadão;",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XI/BASE/1",
+    "target_id": "CF88:ART.5:INC.XI",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "Já a entrada por determinação judicial, como no cumprimento de mandado de busca e apreensão, só pode ocorrer durante o dia.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XLIX/BASE/2",
+    "target_id": "CF88:ART.5:INC.XLIX",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "evitar",
+      "sentence": "A separação por natureza do delito, idade e sexo busca evitar abusos e adequar o cumprimento da pena.",
+      "detail": ""
+     },
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "protege também",
+      "sentence": "A garantia do inciso L protege também a criança, assegurando o vínculo com a mãe no período de amamentação.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXIX/BASE/1",
+    "target_id": "CF88:ART.5:INC.XXXIX",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "O inciso XXXIX estabelece que uma conduta só é crime, e só pode receber pena, se uma lei anterior assim o previr.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.5:INC.XXXVII/BASE/1",
+    "target_id": "CF88:ART.5:INC.XXXVII",
+    "findings": [
+     {
+      "code": "TELEOLOGY_SPECULATIVE",
+      "match": "O objetivo é",
+      "sentence": "O objetivo é garantir imparcialidade:",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.7:INC.I/BASE/2",
+    "target_id": "CF88:ART.7:INC.I",
+    "findings": [
+     {
+      "code": "LAW_STATUS_CLAIM",
+      "match": "a lei complementar que ainda não foi editada",
+      "sentence": "O inciso I remete a uma lei complementar que ainda não foi editada.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.7:INC.IV/BASE/2",
+    "target_id": "CF88:ART.7:INC.IV",
+    "findings": [
+     {
+      "code": "AUTOMATIC_CONSEQUENCE",
+      "match": "automaticamente",
+      "sentence": "A vedação impede que o salário mínimo seja automaticamente utilizado como indexador de outras obrigações;",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.8:INC.II/BASE/1",
+    "target_id": "CF88:ART.8:INC.II",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "só pode",
+      "sentence": "em cada base territorial, uma categoria só pode ter um sindicato.",
+      "detail": ""
+     }
+    ]
+   },
+   {
+    "explanation_id": "ENTENDA/CF88:ART.8:INC.III/BASE/1",
+    "target_id": "CF88:ART.8:INC.III",
+    "findings": [
+     {
+      "code": "UNIVERSAL_CLAIM",
+      "match": "todos os",
+      "sentence": "Uma empresa deixa de pagar um adicional a todos os empregados de um setor.",
+      "detail": ""
+     }
+    ]
+   }
+  ]
+ }
+}

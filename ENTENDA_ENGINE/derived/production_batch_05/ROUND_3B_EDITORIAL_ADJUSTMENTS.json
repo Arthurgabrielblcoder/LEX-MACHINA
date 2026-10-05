@@ -1,0 +1,1113 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_ART40_HIGH_ROUND_3B",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND3B.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND3B.json": "bcb4db21d5aa843b727951fc5d33ac0ac887dc44e17c1c005f4ef4b1ab052fde",
+  "ENTENDA_BATCH05_REVIEW_ROUND03B_ART40_HIGH.md": "7842fc4b74e7b02c188ab90cc26b7bf9a682582d8664db483d878bba3812f107",
+  "REVIEW_BATCH_05.md": "1af0c537155c8e7a0f8b9701395ae9e814a385b56c2035c252291e7698c27560",
+  "CF88_BATCH_05.entenda.jsonl": "4e8a8d33699ed4a9d5a076254429e894c5da75ad52dda7c37a061cda731ae8b7",
+  "EDITORIAL_CHECKS.json": "9b2f9b3a5c8da8d91ea0ce700c126ca92ef7d50ab0fa0b88c0a430c78e9c3b63"
+ },
+ "t1_microadjust_policy": {
+  "authorized": [
+   "escrever siglas por extenso quando o T1 bloquear",
+   "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+   "remover do glossario um termo redundante quando exceder o limite de 5",
+   "pequenos ajustes gramaticais exigidos pelo validador",
+   "substituir identificadores internos por expressao adequada ao usuario final"
+  ],
+  "conditions": "significado juridico identico; nenhuma regra, excecao, requisito, prazo, valor ou exemplo alterado; todo desvio registrado; teste automatico demonstra que so houve adaptacao T1; mudanca juridica/conceitual/factual -> PARAR e devolver"
+ },
+ "review_status": "APPROVED_UNDER_PRE_AUTHORIZED_T1_POLICY",
+ "round_result": {
+  "reviewed": 11,
+  "approved_unchanged": 1,
+  "adjust": 10,
+  "rejected": 0
+ },
+ "deviation_policy": "texto do revisor incorporado literalmente; somente microajustes T1 da politica pre-autorizada, cada um com policy_item; mudanca juridica/factual -> devolver a revisao humana",
+ "provenance_policy": "fatos externos informados pela revisao humana registrados como HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+ "adjustments": [
+  {
+   "target_id": "CF88:ART.40:PAR.7",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "O draft afirmava que, com outra renda formal, a pensao \"pode ficar abaixo do salario minimo\"; nao transformar a ausencia da garantia em autorizacao generica para qualquer valor.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.7/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.7/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "O draft afirmava que, com outra renda formal, a pensao \"pode ficar abaixo do salario minimo\"; nao transformar a ausencia da garantia em autorizacao generica para qualquer valor.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 7º deixa à lei do respectivo ente federativo a disciplina\nda pensão por morte no regime próprio.\nQuando a pensão constituir a única fonte de renda formal\nauferida pelo dependente, deve ser observado o piso\nconstitucional relacionado ao art. 201, § 2º.\nA lei também deve dar tratamento diferenciado à morte dos\nservidores abrangidos pelo § 4º-B quando decorrente de\nagressão sofrida no exercício ou em razão da função.",
+     "o_que_significa": "A pensão por morte é o benefício previdenciário destinado\naos dependentes do servidor falecido.\nA Constituição não define neste parágrafo toda a fórmula de\ncálculo nem todas as condições do benefício. Esses pontos\ndependem da legislação do respectivo ente.\nHá, porém, uma proteção expressa: quando a pensão é a única\nfonte de renda formal do dependente, aplica-se a garantia\nconstitucional do valor mínimo mencionada pelo dispositivo.\nTambém deve existir tratamento diferenciado para a pensão\ndecorrente da morte, em determinadas circunstâncias, dos\nagentes indicados no § 4º-B.",
+     "exemplo_pratico": "Um policial civil morre em decorrência de agressão sofrida\ndurante o exercício de sua função.\nA legislação previdenciária do Estado deverá tratar essa\nsituação de forma diferenciada, conforme exige o § 7º.",
+     "atencao": "Se o dependente possuir outra fonte de renda formal, a\ngarantia específica do piso prevista neste parágrafo não\nincide da mesma forma.\nIsso não significa que o § 7º, isoladamente, determine qual\nserá o valor da pensão nessa situação: o cálculo deve ser\nverificado na legislação aplicável.",
+     "palavras_dificeis": [
+      "Pensão por morte: benefício previdenciário destinado aos\ndependentes do segurado falecido.",
+      "Dependente: pessoa reconhecida pela legislação como\nbeneficiária da pensão.",
+      "Renda formal: renda considerada formalmente para fins da\nregra previdenciária aplicável."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 7º deixa à lei do respectivo ente federativo a disciplina da pensão por morte no regime próprio.\nQuando a pensão constituir a única fonte de renda formal auferida pelo dependente, deve ser observado o piso constitucional relacionado ao art. 201, § 2º.\nA lei também deve dar tratamento diferenciado à morte dos servidores abrangidos pelo § 4º-B quando decorrente de agressão sofrida no exercício ou em razão da função.",
+     "o_que_significa": "A pensão por morte é o benefício previdenciário destinado aos dependentes do servidor falecido.\nA Constituição não define neste parágrafo toda a fórmula de cálculo nem todas as condições do benefício. Esses pontos dependem da legislação do respectivo ente.\nHá, porém, uma proteção expressa: quando a pensão é a única fonte de renda formal do dependente, aplica-se a garantia constitucional do valor mínimo mencionada pelo dispositivo.\nTambém deve existir tratamento diferenciado para a pensão decorrente da morte, em determinadas circunstâncias, dos agentes indicados no § 4º-B.",
+     "exemplo_pratico": "Um policial civil morre em decorrência de agressão sofrida durante o exercício de sua função.\nA legislação previdenciária do Estado deverá tratar essa situação de forma diferenciada, conforme exige o § 7º.",
+     "atencao": "Se o dependente possuir outra fonte de renda formal, a garantia específica do piso prevista neste parágrafo não incide da mesma forma.\nIsso não significa que o § 7º, isoladamente, determine qual será o valor da pensão nessa situação: o cálculo deve ser verificado na legislação aplicável.",
+     "palavras_dificeis": [
+      {
+       "termo": "Pensão por morte",
+       "explicacao": "benefício previdenciário destinado aos dependentes do segurado falecido."
+      },
+      {
+       "termo": "Dependente",
+       "explicacao": "pessoa reconhecida pela legislação como beneficiária da pensão."
+      },
+      {
+       "termo": "Renda formal",
+       "explicacao": "renda considerada formalmente para fins da regra previdenciária aplicável."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "quando decorrente de agressão sofrida",
+     "applied_text": "quando decorrente da agressão sofrida",
+     "policy_item": 2,
+     "policy_text": "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do § 7º oficial; preposicao \"de\" -> \"da\""
+    }
+   ],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo remete à lei de cada ente a concessão da pensão por morte no regime próprio. Garante o piso do art. 201, § 2º, quando a pensão for a única fonte de renda formal do dependente, e manda a lei dar tratamento diferenciado à morte de agentes do § 4º-B por agressão sofrida no exercício ou em razão da função.",
+     "o_que_significa": "A pensão por morte é o benefício pago aos dependentes do servidor que falece. A Constituição deixou para a lei de cada ente as regras de concessão e de valor.\nHá duas garantias no próprio texto. A primeira é o piso: se a pensão é a única renda formal do dependente, ela não pode ser menor que o salário mínimo. A segunda é o tratamento diferenciado para a família do policial ou agente penitenciário ou socioeducativo que morre em razão de agressão sofrida no trabalho.",
+     "exemplo_pratico": "Um policial civil é morto durante uma operação. A lei do Estado deve prever tratamento diferenciado para a pensão dos seus dependentes. Já a pensão de um dependente que tem outra renda formal pode ficar abaixo do salário mínimo, se a lei do ente assim previr.",
+     "atencao": "O piso de um salário mínimo vale quando a pensão é a única fonte de renda formal do dependente. Os incisos antigos deste parágrafo, com as regras anteriores de cálculo, são históricos.",
+     "palavras_dificeis": [
+      {
+       "termo": "Pensão por morte",
+       "explicacao": "benefício pago aos dependentes de quem faleceu."
+      },
+      {
+       "termo": "Dependente",
+       "explicacao": "pessoa que a lei reconhece como beneficiária da pensão, como cônjuge e filhos."
+      },
+      {
+       "termo": "Renda formal",
+       "explicacao": "rendimento registrado, como salário, aposentadoria ou outro benefício."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 7º deixa à lei do respectivo ente federativo a disciplina da pensão por morte no regime próprio.\nQuando a pensão constituir a única fonte de renda formal auferida pelo dependente, deve ser observado o piso constitucional relacionado ao art. 201, § 2º.\nA lei também deve dar tratamento diferenciado à morte dos servidores abrangidos pelo § 4º-B quando decorrente da agressão sofrida no exercício ou em razão da função.",
+     "o_que_significa": "A pensão por morte é o benefício previdenciário destinado aos dependentes do servidor falecido.\nA Constituição não define neste parágrafo toda a fórmula de cálculo nem todas as condições do benefício. Esses pontos dependem da legislação do respectivo ente.\nHá, porém, uma proteção expressa: quando a pensão é a única fonte de renda formal do dependente, aplica-se a garantia constitucional do valor mínimo mencionada pelo dispositivo.\nTambém deve existir tratamento diferenciado para a pensão decorrente da morte, em determinadas circunstâncias, dos agentes indicados no § 4º-B.",
+     "exemplo_pratico": "Um policial civil morre em decorrência de agressão sofrida durante o exercício de sua função.\nA legislação previdenciária do Estado deverá tratar essa situação de forma diferenciada, conforme exige o § 7º.",
+     "atencao": "Se o dependente possuir outra fonte de renda formal, a garantia específica do piso prevista neste parágrafo não incide da mesma forma.\nIsso não significa que o § 7º, isoladamente, determine qual será o valor da pensão nessa situação: o cálculo deve ser verificado na legislação aplicável.",
+     "palavras_dificeis": [
+      {
+       "termo": "Pensão por morte",
+       "explicacao": "benefício previdenciário destinado aos dependentes do segurado falecido."
+      },
+      {
+       "termo": "Dependente",
+       "explicacao": "pessoa reconhecida pela legislação como beneficiária da pensão."
+      },
+      {
+       "termo": "Renda formal",
+       "explicacao": "renda considerada formalmente para fins da regra previdenciária aplicável."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.9",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Evitar a ideia de que a mudanca de ente transfere automaticamente o tempo sem observar a contagem reciproca; explicacao de tempo ficticio mais precisa.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.9/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.9/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Evitar a ideia de que a mudanca de ente transfere automaticamente o tempo sem observar a contagem reciproca; explicacao de tempo ficticio mais precisa.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 9º assegura o aproveitamento do tempo de contribuição\nfederal, estadual, distrital ou municipal para fins de\naposentadoria, observadas as regras de contagem recíproca\ndo art. 201.\nO tempo de serviço correspondente é contado para fins de\ndisponibilidade.\nO § 10 impede que a lei crie formas de contagem de tempo de\ncontribuição fictício.",
+     "o_que_significa": "O tempo de contribuição realizado em determinado regime\npode ser aproveitado em outro, dentro do sistema de contagem\nrecíproca.\nEsse aproveitamento deve observar as regras previdenciárias\naplicáveis, inclusive a compensação financeira entre os\nregimes e a proibição de utilizar o mesmo período mais de\numa vez.\nO § 10 impede que a legislação acrescente artificialmente\ntempo previdenciário sem fundamento em período efetivamente\nreconhecido pelo sistema.",
+     "exemplo_pratico": "Uma servidora contribuiu durante dez anos para um regime\nmunicipal e depois ingressou em cargo federal.\nEsse período pode ser aproveitado para aposentadoria no\nnovo regime por meio da contagem recíproca, observadas as\nregras legais correspondentes.\nJá uma lei nova não pode simplesmente determinar que um ano\nsem efetiva correspondência previdenciária passe a valer\ncomo dois anos de contribuição.",
+     "atencao": "Tempo de contribuição para aposentadoria e tempo de serviço\npara disponibilidade possuem finalidades diferentes.\nAlém disso, situações reconhecidas por regras antigas ou de\ntransição devem ser examinadas segundo a legislação\ncorrespondente.",
+     "palavras_dificeis": [
+      "Contagem recíproca: aproveitamento, em um regime\nprevidenciário, de tempo reconhecido em outro regime.",
+      "Compensação financeira: acerto entre regimes em razão do\ntempo previdenciário aproveitado.",
+      "Tempo fictício: período artificialmente acrescentado ao\ntempo previdenciário sem correspondência admitida pelo\nordenamento.",
+      "Disponibilidade: situação constitucional do servidor\nestável afastado do exercício nas hipóteses previstas."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 9º assegura o aproveitamento do tempo de contribuição federal, estadual, distrital ou municipal para fins de aposentadoria, observadas as regras de contagem recíproca do art. 201.\nO tempo de serviço correspondente é contado para fins de disponibilidade.\nO § 10 impede que a lei crie formas de contagem de tempo de contribuição fictício.",
+     "o_que_significa": "O tempo de contribuição realizado em determinado regime pode ser aproveitado em outro, dentro do sistema de contagem recíproca.\nEsse aproveitamento deve observar as regras previdenciárias aplicáveis, inclusive a compensação financeira entre os regimes e a proibição de utilizar o mesmo período mais de uma vez.\nO § 10 impede que a legislação acrescente artificialmente tempo previdenciário sem fundamento em período efetivamente reconhecido pelo sistema.",
+     "exemplo_pratico": "Uma servidora contribuiu durante dez anos para um regime municipal e depois ingressou em cargo federal.\nEsse período pode ser aproveitado para aposentadoria no novo regime por meio da contagem recíproca, observadas as regras legais correspondentes.\nJá uma lei nova não pode simplesmente determinar que um ano sem efetiva correspondência previdenciária passe a valer como dois anos de contribuição.",
+     "atencao": "Tempo de contribuição para aposentadoria e tempo de serviço para disponibilidade possuem finalidades diferentes.\nAlém disso, situações reconhecidas por regras antigas ou de transição devem ser examinadas segundo a legislação correspondente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Contagem recíproca",
+       "explicacao": "aproveitamento, em um regime previdenciário, de tempo reconhecido em outro regime."
+      },
+      {
+       "termo": "Compensação financeira",
+       "explicacao": "acerto entre regimes em razão do tempo previdenciário aproveitado."
+      },
+      {
+       "termo": "Tempo fictício",
+       "explicacao": "período artificialmente acrescentado ao tempo previdenciário sem correspondência admitida pelo ordenamento."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação constitucional do servidor estável afastado do exercício nas hipóteses previstas."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O § 9º determina que o tempo de contribuição em qualquer esfera de governo seja contado para aposentadoria, observadas as regras de contagem recíproca do art. 201, §§ 9º e 9º-A, e que o tempo de serviço correspondente seja contado para disponibilidade. O § 10 proíbe a lei de criar tempo de contribuição fictício.",
+     "o_que_significa": "O servidor que muda de ente, por exemplo de um Município para a União, não perde o tempo já contribuído: ele é levado em conta na nova aposentadoria. Os regimes acertam as contas entre si pela compensação financeira prevista no art. 201.\nO § 10 completa a lógica contributiva do regime. Tempo fictício é aquele contado sem que tenha havido contribuição correspondente, como contar em dobro períodos de licença não gozada. A lei não pode criar esse tipo de contagem.",
+     "exemplo_pratico": "Uma servidora trabalhou dez anos como professora municipal e depois foi aprovada em concurso federal. Os dez anos de contribuição ao regime do Município contam para a sua aposentadoria pelo regime federal. Uma lei que mandasse contar em dobro, para aposentadoria, o tempo de licença não usufruída criaria tempo fictício.",
+     "atencao": "O tempo de serviço contado para disponibilidade não se confunde com tempo de contribuição para aposentadoria. A situação de períodos fictícios reconhecidos antes da vedação depende de regras de transição.",
+     "palavras_dificeis": [
+      {
+       "termo": "Contagem recíproca",
+       "explicacao": "aproveitamento, em um regime previdenciário, do tempo de contribuição feito em outro."
+      },
+      {
+       "termo": "Compensação financeira",
+       "explicacao": "acerto de valores entre regimes previdenciários pelo tempo aproveitado."
+      },
+      {
+       "termo": "Tempo fictício",
+       "explicacao": "período contado para aposentadoria sem contribuição correspondente."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação do servidor estável que fica sem exercer o cargo, mas vinculado e remunerado proporcionalmente."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 9º assegura o aproveitamento do tempo de contribuição federal, estadual, distrital ou municipal para fins de aposentadoria, observadas as regras de contagem recíproca do art. 201.\nO tempo de serviço correspondente é contado para fins de disponibilidade.\nO § 10 impede que a lei crie formas de contagem de tempo de contribuição fictício.",
+     "o_que_significa": "O tempo de contribuição realizado em determinado regime pode ser aproveitado em outro, dentro do sistema de contagem recíproca.\nEsse aproveitamento deve observar as regras previdenciárias aplicáveis, inclusive a compensação financeira entre os regimes e a proibição de utilizar o mesmo período mais de uma vez.\nO § 10 impede que a legislação acrescente artificialmente tempo previdenciário sem fundamento em período efetivamente reconhecido pelo sistema.",
+     "exemplo_pratico": "Uma servidora contribuiu durante dez anos para um regime municipal e depois ingressou em cargo federal.\nEsse período pode ser aproveitado para aposentadoria no novo regime por meio da contagem recíproca, observadas as regras legais correspondentes.\nJá uma lei nova não pode simplesmente determinar que um ano sem efetiva correspondência previdenciária passe a valer como dois anos de contribuição.",
+     "atencao": "Tempo de contribuição para aposentadoria e tempo de serviço para disponibilidade possuem finalidades diferentes.\nAlém disso, situações reconhecidas por regras antigas ou de transição devem ser examinadas segundo a legislação correspondente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Contagem recíproca",
+       "explicacao": "aproveitamento, em um regime previdenciário, de tempo reconhecido em outro regime."
+      },
+      {
+       "termo": "Compensação financeira",
+       "explicacao": "acerto entre regimes em razão do tempo previdenciário aproveitado."
+      },
+      {
+       "termo": "Tempo fictício",
+       "explicacao": "período artificialmente acrescentado ao tempo previdenciário sem correspondência admitida pelo ordenamento."
+      },
+      {
+       "termo": "Disponibilidade",
+       "explicacao": "situação constitucional do servidor estável afastado do exercício nas hipóteses previstas."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.11",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "O nucleo afirmava como regra universal que o teto vale \"sobre a soma\" e que o total de duas aposentadorias licitamente acumuladas se sujeita ao teto; a jurisprudencia constitucional distingue hipoteses de acumulacao.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.11/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.11/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "O nucleo afirmava como regra universal que o teto vale \"sobre a soma\" e que o total de duas aposentadorias licitamente acumuladas se sujeita ao teto; a jurisprudencia constitucional distingue hipoteses de acumulacao.",
+    "raw_wrapped": {
+     "o_que_diz": "O texto do § 11 determina a aplicação do teto previsto no\nart. 37, XI, às combinações de proventos e remunerações que\nele enumera.\nO dispositivo menciona a soma de proventos de inatividade\ne também situações em que proventos são recebidos juntamente\ncom remuneração decorrente de determinados vínculos.",
+     "o_que_significa": "O § 11 conecta os benefícios de inatividade ao teto\nconstitucional do art. 37, XI.\nEntretanto, a aplicação prática dessa regra não pode ser\nexplicada apenas pela palavra “soma”.\nA jurisprudência constitucional distingue diferentes tipos\nde acumulação.\nNas acumulações de vínculos constitucionalmente permitidas,\nhá situações em que o teto é considerado separadamente em\ncada vínculo.\nJá outras combinações, como determinadas acumulações de\npensão com remuneração ou proventos, recebem tratamento\ndiferente.",
+     "exemplo_pratico": "Uma pessoa recebe simultaneamente valores decorrentes de\nmais de um vínculo público constitucionalmente admitido.\nNão basta simplesmente somar todos os valores e aplicar o\nteto de forma automática.\nÉ necessário identificar a natureza de cada vínculo e a\njurisprudência aplicável àquela combinação.",
+     "atencao": "O § 11 possui redação ampla, mas sua aplicação foi\ninterpretada pelo Supremo Tribunal Federal.\nPor isso, o ENTENDA não deve transformar a expressão\n“soma total” em regra universal para toda acumulação\nconstitucionalmente lícita.\nA camada JURISPRUDÊNCIA deve apresentar as distinções.",
+     "palavras_dificeis": [
+      "Proventos de inatividade: valores recebidos em razão da\naposentadoria.",
+      "Teto remuneratório: limite constitucional previsto no\nart. 37, XI.",
+      "Acumulação: recebimento simultâneo de valores decorrentes\nde mais de um vínculo ou benefício."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O texto do § 11 determina a aplicação do teto previsto no art. 37, XI, às combinações de proventos e remunerações que ele enumera.\nO dispositivo menciona a soma de proventos de inatividade e também situações em que proventos são recebidos juntamente com remuneração decorrente de determinados vínculos.",
+     "o_que_significa": "O § 11 conecta os benefícios de inatividade ao teto constitucional do art. 37, XI.\nEntretanto, a aplicação prática dessa regra não pode ser explicada apenas pela palavra “soma”.\nA jurisprudência constitucional distingue diferentes tipos de acumulação.\nNas acumulações de vínculos constitucionalmente permitidas, há situações em que o teto é considerado separadamente em cada vínculo.\nJá outras combinações, como determinadas acumulações de pensão com remuneração ou proventos, recebem tratamento diferente.",
+     "exemplo_pratico": "Uma pessoa recebe simultaneamente valores decorrentes de mais de um vínculo público constitucionalmente admitido.\nNão basta simplesmente somar todos os valores e aplicar o teto de forma automática.\nÉ necessário identificar a natureza de cada vínculo e a jurisprudência aplicável àquela combinação.",
+     "atencao": "O § 11 possui redação ampla, mas sua aplicação foi interpretada pelo Supremo Tribunal Federal.\nPor isso, o ENTENDA não deve transformar a expressão “soma total” em regra universal para toda acumulação constitucionalmente lícita.\nA camada JURISPRUDÊNCIA deve apresentar as distinções.",
+     "palavras_dificeis": [
+      {
+       "termo": "Proventos de inatividade",
+       "explicacao": "valores recebidos em razão da aposentadoria."
+      },
+      {
+       "termo": "Teto remuneratório",
+       "explicacao": "limite constitucional previsto no art. 37, XI."
+      },
+      {
+       "termo": "Acumulação",
+       "explicacao": "recebimento simultâneo de valores decorrentes de mais de um vínculo ou benefício."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": [
+     "Temas 377 e 384: nas acumulações constitucionalmente autorizadas de cargos, empregos e funções, o teto do art. 37, XI, é considerado em relação a cada vínculo, e não sobre o somatório.",
+     "Tema 359: na hipótese abrangida pela tese, ocorrida a morte do instituidor da pensão após a EC 19/1998, o teto incide sobre o somatório de remuneração ou provento e pensão percebidos pelo servidor."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "Temas 377 e 384 (teto por vinculo nas acumulacoes autorizadas) e Tema 359 (teto sobre o somatorio de remuneracao/provento e pensao, morte do instituidor apos a EC 19/1998)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "jurisprudencia indicada pela revisao humana; numeros so na CAMADA EXTERNA"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo submete ao teto do art. 37, XI, a soma de todos os proventos de inatividade, inclusive os vindos de acumulação de cargos ou de outras atividades que contribuem para o Regime Geral. Também o aplica à soma de proventos com a remuneração de cargo acumulável, cargo em comissão ou cargo eletivo.",
+     "o_que_significa": "O teto remuneratório também vale para aposentados, e vale sobre a soma.\nSe o servidor tem duas aposentadorias públicas licitamente acumuladas, o total delas se sujeita ao teto. O mesmo acontece quando ele soma proventos a uma remuneração permitida, por exemplo de cargo em comissão ou de mandato eletivo.\nO parágrafo fecha o caminho de quem tentaria contornar o teto somando vínculos diferentes.",
+     "exemplo_pratico": "Um professor aposentado por um Estado é nomeado para cargo em comissão de secretário municipal. Pelo texto do parágrafo, a soma dos proventos e da remuneração do cargo em comissão se submete ao teto.",
+     "atencao": "O parágrafo fala em soma total. A forma de aplicar o teto em cada hipótese concreta de acumulação lícita é tema de interpretação, tratado na camada externa.",
+     "palavras_dificeis": [
+      {
+       "termo": "Proventos de inatividade",
+       "explicacao": "valores recebidos pelo servidor aposentado."
+      },
+      {
+       "termo": "Cargo acumulável",
+       "explicacao": "cargo que pode ser exercido junto com outro nas hipóteses admitidas pela Constituição."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Se o teto incide sobre a soma ou sobre cada vínculo acumulado licitamente é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O texto do § 11 determina a aplicação do teto previsto no art. 37, XI, às combinações de proventos e remunerações que ele enumera.\nO dispositivo menciona a soma de proventos de inatividade e também situações em que proventos são recebidos juntamente com remuneração decorrente de determinados vínculos.",
+     "o_que_significa": "O § 11 conecta os benefícios de inatividade ao teto constitucional do art. 37, XI.\nEntretanto, a aplicação prática dessa regra não pode ser explicada apenas pela palavra “soma”.\nA jurisprudência constitucional distingue diferentes tipos de acumulação.\nNas acumulações de vínculos constitucionalmente permitidas, há situações em que o teto é considerado separadamente em cada vínculo.\nJá outras combinações, como determinadas acumulações de pensão com remuneração ou proventos, recebem tratamento diferente.",
+     "exemplo_pratico": "Uma pessoa recebe simultaneamente valores decorrentes de mais de um vínculo público constitucionalmente admitido.\nNão basta simplesmente somar todos os valores e aplicar o teto de forma automática.\nÉ necessário identificar a natureza de cada vínculo e a jurisprudência aplicável àquela combinação.",
+     "atencao": "O § 11 possui redação ampla, mas sua aplicação foi interpretada pelo Supremo Tribunal Federal.\nPor isso, o ENTENDA não deve transformar a expressão “soma total” em regra universal para toda acumulação constitucionalmente lícita.\nA camada JURISPRUDÊNCIA deve apresentar as distinções.",
+     "palavras_dificeis": [
+      {
+       "termo": "Proventos de inatividade",
+       "explicacao": "valores recebidos em razão da aposentadoria."
+      },
+      {
+       "termo": "Teto remuneratório",
+       "explicacao": "limite constitucional previsto no art. 37, XI."
+      },
+      {
+       "termo": "Acumulação",
+       "explicacao": "recebimento simultâneo de valores decorrentes de mais de um vínculo ou benefício."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Temas 377 e 384: nas acumulações constitucionalmente autorizadas de cargos, empregos e funções, o teto do art. 37, XI, é considerado em relação a cada vínculo, e não sobre o somatório.",
+     "Tema 359: na hipótese abrangida pela tese, ocorrida a morte do instituidor da pensão após a EC 19/1998, o teto incide sobre o somatório de remuneração ou provento e pensão percebidos pelo servidor."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.12",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "O draft definia a regra como puramente \"subsidiaria\", aplicavel so na omissao do art. 40 ou da lei do ente; essa condicao de omissao nao esta no § 12.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.12/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.12/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "O draft definia a regra como puramente \"subsidiaria\", aplicavel so na omissao do art. 40 ou da lei do ente; essa condicao de omissao nao esta no § 12.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 12 determina que, além das regras próprias do art. 40,\no regime próprio observe, no que couber, requisitos e\ncritérios previstos para o Regime Geral de Previdência\nSocial.",
+     "o_que_significa": "O regime próprio possui disciplina constitucional própria,\nmas não funciona de maneira completamente isolada do Regime\nGeral.\nA Constituição determina que requisitos e critérios do RGPS\ntambém sejam observados quando forem compatíveis com o\nregime dos servidores.\nA expressão decisiva é “no que couber”.\nEla exige verificar se determinada regra do Regime Geral\npode ser aplicada à situação do regime próprio sem contrariar\nas normas específicas deste.",
+     "exemplo_pratico": "Ao analisar determinada exigência previdenciária de um\nregime próprio, pode ser necessário verificar também o\ncritério correspondente utilizado no Regime Geral.\nEsse critério somente será aplicado na medida em que seja\ncompatível com a disciplina constitucional e legal do RPPS.",
+     "atencao": "O § 12 não diz que as regras do RGPS somente podem ser\nutilizadas quando existir uma lacuna.\nEle determina sua observância “no que couber”, isto é,\nconforme a compatibilidade com o regime próprio.",
+     "palavras_dificeis": [
+      "Regime Geral de Previdência Social: regime previdenciário\ngeral previsto no art. 201 da Constituição.",
+      "No que couber: na medida em que determinada regra seja\ncompatível com a situação regulada."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 12 determina que, além das regras próprias do art. 40, o regime próprio observe, no que couber, requisitos e critérios previstos para o Regime Geral de Previdência Social.",
+     "o_que_significa": "O regime próprio possui disciplina constitucional própria, mas não funciona de maneira completamente isolada do Regime Geral.\nA Constituição determina que requisitos e critérios do RGPS também sejam observados quando forem compatíveis com o regime dos servidores.\nA expressão decisiva é “no que couber”.\nEla exige verificar se determinada regra do Regime Geral pode ser aplicada à situação do regime próprio sem contrariar as normas específicas deste.",
+     "exemplo_pratico": "Ao analisar determinada exigência previdenciária de um regime próprio, pode ser necessário verificar também o critério correspondente utilizado no Regime Geral.\nEsse critério somente será aplicado na medida em que seja compatível com a disciplina constitucional e legal do RPPS.",
+     "atencao": "O § 12 não diz que as regras do RGPS somente podem ser utilizadas quando existir uma lacuna.\nEle determina sua observância “no que couber”, isto é, conforme a compatibilidade com o regime próprio.",
+     "palavras_dificeis": [
+      {
+       "termo": "Regime Geral de Previdência Social",
+       "explicacao": "regime previdenciário geral previsto no art. 201 da Constituição."
+      },
+      {
+       "termo": "No que couber",
+       "explicacao": "na medida em que determinada regra seja compatível com a situação regulada."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo determina que o regime próprio, além de seguir o art. 40, aplique no que couber os requisitos e critérios que valem para o Regime Geral de Previdência Social.",
+     "o_que_significa": "As regras do Regime Geral funcionam como complemento. Quando o art. 40 e a lei do ente não tratam de um ponto, e a regra do Regime Geral for compatível, ela pode ser usada no regime próprio.\nA expressão \"no que couber\" é o filtro: só se aplica aquilo que for compatível com as características do regime dos servidores.",
+     "exemplo_pratico": "A lei de um regime próprio não define certo critério de comprovação de dependência para a pensão. Se o Regime Geral tem critério compatível sobre o tema, ele pode ser aplicado ao regime próprio, no que couber.",
+     "atencao": "A aplicação é subsidiária e condicionada à compatibilidade. Ela não substitui as regras próprias do art. 40 nem as da lei do ente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Aplicação subsidiária",
+       "explicacao": "uso de uma regra para completar outra quando esta é omissa."
+      },
+      {
+       "termo": "No que couber",
+       "explicacao": "na medida em que for compatível com a situação regulada."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 12 determina que, além das regras próprias do art. 40, o regime próprio observe, no que couber, requisitos e critérios previstos para o Regime Geral de Previdência Social.",
+     "o_que_significa": "O regime próprio possui disciplina constitucional própria, mas não funciona de maneira completamente isolada do Regime Geral.\nA Constituição determina que requisitos e critérios do RGPS também sejam observados quando forem compatíveis com o regime dos servidores.\nA expressão decisiva é “no que couber”.\nEla exige verificar se determinada regra do Regime Geral pode ser aplicada à situação do regime próprio sem contrariar as normas específicas deste.",
+     "exemplo_pratico": "Ao analisar determinada exigência previdenciária de um regime próprio, pode ser necessário verificar também o critério correspondente utilizado no Regime Geral.\nEsse critério somente será aplicado na medida em que seja compatível com a disciplina constitucional e legal do RPPS.",
+     "atencao": "O § 12 não diz que as regras do RGPS somente podem ser utilizadas quando existir uma lacuna.\nEle determina sua observância “no que couber”, isto é, conforme a compatibilidade com o regime próprio.",
+     "palavras_dificeis": [
+      {
+       "termo": "Regime Geral de Previdência Social",
+       "explicacao": "regime previdenciário geral previsto no art. 201 da Constituição."
+      },
+      {
+       "termo": "No que couber",
+       "explicacao": "na medida em que determinada regra seja compatível com a situação regulada."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.13",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Evitar a generalizacao \"o regime proprio e para quem ocupa cargo efetivo; os demais contribuem para o Regime Geral\" (nem todo ente possui RPPS); \"exclusivamente\" e essencial.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.13/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.13/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Evitar a generalizacao \"o regime proprio e para quem ocupa cargo efetivo; os demais contribuem para o Regime Geral\" (nem todo ente possui RPPS); \"exclusivamente\" e essencial.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 13 determina a aplicação do Regime Geral de Previdência\nSocial ao agente público cujo vínculo seja exclusivamente\ncargo em comissão de livre nomeação e exoneração, outro\ncargo temporário, inclusive mandato eletivo, ou emprego\npúblico.",
+     "o_que_significa": "O dispositivo separa essas espécies de vínculo do regime\npróprio disciplinado pelo art. 40.\nQuem possui apenas um dos vínculos indicados no § 13 fica\nsubmetido ao Regime Geral.\nA palavra “exclusivamente” é importante porque a situação\nde quem também possui cargo efetivo e vínculo previdenciário\npróprio deve ser analisada de acordo com esse outro vínculo\ne com as demais regras constitucionais.",
+     "exemplo_pratico": "Uma pessoa sem cargo efetivo é nomeada exclusivamente para\ncargo em comissão em um Estado.\nSeu vínculo previdenciário decorrente daquele cargo é com\no Regime Geral.\nJá a situação de um servidor efetivo que assume função ou\nmandato adicional não deve ser resolvida ignorando o vínculo\nefetivo que ele já possui.",
+     "atencao": "O art. 38, V, contém regra específica para o servidor\nsegurado de regime próprio que exerce mandato eletivo:\nele permanece filiado ao regime próprio do ente de origem.",
+     "palavras_dificeis": [
+      "Cargo em comissão: cargo de livre nomeação e exoneração,\nnas hipóteses constitucionais.",
+      "Emprego público: vínculo de trabalho com entidade pública\nsubmetido ao regime trabalhista.",
+      "Vínculo previdenciário: relação da pessoa com determinado\nregime de previdência."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 13 determina a aplicação do Regime Geral de Previdência Social ao agente público cujo vínculo seja exclusivamente cargo em comissão de livre nomeação e exoneração, outro cargo temporário, inclusive mandato eletivo, ou emprego público.",
+     "o_que_significa": "O dispositivo separa essas espécies de vínculo do regime próprio disciplinado pelo art. 40.\nQuem possui apenas um dos vínculos indicados no § 13 fica submetido ao Regime Geral.\nA palavra “exclusivamente” é importante porque a situação de quem também possui cargo efetivo e vínculo previdenciário próprio deve ser analisada de acordo com esse outro vínculo e com as demais regras constitucionais.",
+     "exemplo_pratico": "Uma pessoa sem cargo efetivo é nomeada exclusivamente para cargo em comissão em um Estado.\nSeu vínculo previdenciário decorrente daquele cargo é com o Regime Geral.\nJá a situação de um servidor efetivo que assume função ou mandato adicional não deve ser resolvida ignorando o vínculo efetivo que ele já possui.",
+     "atencao": "O art. 38, V, contém regra específica para o servidor segurado de regime próprio que exerce mandato eletivo: ele permanece filiado ao regime próprio do ente de origem.",
+     "palavras_dificeis": [
+      {
+       "termo": "Cargo em comissão",
+       "explicacao": "cargo de livre nomeação e exoneração, nas hipóteses constitucionais."
+      },
+      {
+       "termo": "Emprego público",
+       "explicacao": "vínculo de trabalho com entidade pública submetido ao regime trabalhista."
+      },
+      {
+       "termo": "Vínculo previdenciário",
+       "explicacao": "relação da pessoa com determinado regime de previdência."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo vincula ao Regime Geral o agente público que ocupa só cargo em comissão de livre nomeação e exoneração, outro cargo temporário, inclusive mandato eletivo, ou emprego público.",
+     "o_que_significa": "O regime próprio é para quem ocupa cargo efetivo. Os demais agentes públicos contribuem para o Regime Geral, o mesmo dos trabalhadores da iniciativa privada.\nA palavra \"exclusivamente\" é decisiva. Se a pessoa ocupa apenas um cargo em comissão, sem vínculo efetivo, vai para o Regime Geral. Se é servidora efetiva e exerce um cargo em comissão, continua no regime próprio pelo seu cargo efetivo.\nO mesmo vale para mandato eletivo, contratação temporária e emprego público.",
+     "exemplo_pratico": "Um advogado sem vínculo com a administração é nomeado assessor em cargo em comissão de um Estado: ele contribui para o Regime Geral. Já uma auditora efetiva do mesmo Estado, nomeada para o mesmo tipo de cargo, continua vinculada ao regime próprio estadual.",
+     "atencao": "O servidor efetivo que exerce mandato eletivo segue a regra do art. 38, V: permanece no regime próprio do ente de origem.",
+     "palavras_dificeis": [
+      {
+       "termo": "Cargo temporário",
+       "explicacao": "cargo exercido por prazo determinado, sem vínculo efetivo."
+      },
+      {
+       "termo": "Emprego público",
+       "explicacao": "vínculo de trabalho com a administração regido pela legislação trabalhista."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 13 determina a aplicação do Regime Geral de Previdência Social ao agente público cujo vínculo seja exclusivamente cargo em comissão de livre nomeação e exoneração, outro cargo temporário, inclusive mandato eletivo, ou emprego público.",
+     "o_que_significa": "O dispositivo separa essas espécies de vínculo do regime próprio disciplinado pelo art. 40.\nQuem possui apenas um dos vínculos indicados no § 13 fica submetido ao Regime Geral.\nA palavra “exclusivamente” é importante porque a situação de quem também possui cargo efetivo e vínculo previdenciário próprio deve ser analisada de acordo com esse outro vínculo e com as demais regras constitucionais.",
+     "exemplo_pratico": "Uma pessoa sem cargo efetivo é nomeada exclusivamente para cargo em comissão em um Estado.\nSeu vínculo previdenciário decorrente daquele cargo é com o Regime Geral.\nJá a situação de um servidor efetivo que assume função ou mandato adicional não deve ser resolvida ignorando o vínculo efetivo que ele já possui.",
+     "atencao": "O art. 38, V, contém regra específica para o servidor segurado de regime próprio que exerce mandato eletivo: ele permanece filiado ao regime próprio do ente de origem.",
+     "palavras_dificeis": [
+      {
+       "termo": "Cargo em comissão",
+       "explicacao": "cargo de livre nomeação e exoneração, nas hipóteses constitucionais."
+      },
+      {
+       "termo": "Emprego público",
+       "explicacao": "vínculo de trabalho com entidade pública submetido ao regime trabalhista."
+      },
+      {
+       "termo": "Vínculo previdenciário",
+       "explicacao": "relação da pessoa com determinado regime de previdência."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.14",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Evitar \"o regime proprio paga ate o teto do Regime Geral\" como afirmacao absoluta (depende da instituicao do regime complementar e da situacao do servidor); nao afirmar genericamente que quem ingressou antes \"continua com as regras anteriores\".",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Evitar \"o regime proprio paga ate o teto do Regime Geral\" como afirmacao absoluta (depende da instituicao do regime complementar e da situacao do servidor); nao afirmar genericamente que quem ingressou antes \"continua com as regras anteriores\".",
+    "raw_wrapped": {
+     "o_que_diz": "O § 14 determina que os entes instituam regime de\nprevidência complementar para os servidores ocupantes de\ncargo efetivo.\nCom a aplicação desse regime, o valor das aposentadorias e\npensões do RPPS observa o limite máximo dos benefícios do\nRegime Geral, ressalvada a situação prevista no § 16.\nO § 15 determina que o plano complementar utilize a\nmodalidade de contribuição definida e seja administrado\npelas entidades admitidas constitucionalmente.\nO § 16 protege quem ingressou no serviço público antes da\ninstituição do correspondente regime complementar:\na aplicação dos §§ 14 e 15 a esse servidor depende de opção\nprévia e expressa.",
+     "o_que_significa": "A previdência complementar cria uma separação entre o\nbenefício básico pago pelo RPPS, dentro dos limites\nconstitucionais aplicáveis, e o benefício adicional que\npode resultar do plano complementar.\nNa modalidade de contribuição definida, são conhecidas as\ncontribuições feitas para o plano, enquanto o benefício\nfuturo depende do saldo formado e das regras do plano.\nPara quem já estava no serviço público antes da instituição\ndo regime complementar correspondente, a Constituição exige\nopção prévia e expressa para aplicar as regras dos §§ 14 e\n15.",
+     "exemplo_pratico": "Um servidor ingressa depois da instituição do regime de\nprevidência complementar do seu ente.\nA limitação constitucional do benefício do RPPS ao teto do\nRegime Geral incide segundo esse regime, independentemente\nde o servidor decidir realizar contribuições adicionais a\num plano complementar.\nJá para servidor que ingressou antes do marco de instituição,\na aplicação dos §§ 14 e 15 depende da opção prevista no\n§ 16.",
+     "atencao": "A limitação do benefício do RPPS ao teto do Regime Geral\nnão significa que a previdência complementar pagará\nautomaticamente a diferença entre a remuneração do servidor\ne esse teto.\nO valor de eventual benefício complementar depende das\ncontribuições, do saldo acumulado e das regras do plano.",
+     "palavras_dificeis": [
+      "Previdência complementar: regime previdenciário adicional\nao regime básico.",
+      "Contribuição definida: modalidade em que as contribuições\nsão definidas e o benefício depende do saldo acumulado.",
+      "Opção prévia e expressa: manifestação formal necessária\nantes da aplicação da regra ao servidor abrangido pelo\n§ 16."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 14 determina que os entes instituam regime de previdência complementar para os servidores ocupantes de cargo efetivo.\nCom a aplicação desse regime, o valor das aposentadorias e pensões do RPPS observa o limite máximo dos benefícios do Regime Geral, ressalvada a situação prevista no § 16.\nO § 15 determina que o plano complementar utilize a modalidade de contribuição definida e seja administrado pelas entidades admitidas constitucionalmente.\nO § 16 protege quem ingressou no serviço público antes da instituição do correspondente regime complementar: a aplicação dos §§ 14 e 15 a esse servidor depende de opção prévia e expressa.",
+     "o_que_significa": "A previdência complementar cria uma separação entre o benefício básico pago pelo RPPS, dentro dos limites constitucionais aplicáveis, e o benefício adicional que pode resultar do plano complementar.\nNa modalidade de contribuição definida, são conhecidas as contribuições feitas para o plano, enquanto o benefício futuro depende do saldo formado e das regras do plano.\nPara quem já estava no serviço público antes da instituição do regime complementar correspondente, a Constituição exige opção prévia e expressa para aplicar as regras dos §§ 14 e 15.",
+     "exemplo_pratico": "Um servidor ingressa depois da instituição do regime de previdência complementar do seu ente.\nA limitação constitucional do benefício do RPPS ao teto do Regime Geral incide segundo esse regime, independentemente de o servidor decidir realizar contribuições adicionais a um plano complementar.\nJá para servidor que ingressou antes do marco de instituição, a aplicação dos §§ 14 e 15 depende da opção prevista no § 16.",
+     "atencao": "A limitação do benefício do RPPS ao teto do Regime Geral não significa que a previdência complementar pagará automaticamente a diferença entre a remuneração do servidor e esse teto.\nO valor de eventual benefício complementar depende das contribuições, do saldo acumulado e das regras do plano.",
+     "palavras_dificeis": [
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "regime previdenciário adicional ao regime básico."
+      },
+      {
+       "termo": "Contribuição definida",
+       "explicacao": "modalidade em que as contribuições são definidas e o benefício depende do saldo acumulado."
+      },
+      {
+       "termo": "Opção prévia e expressa",
+       "explicacao": "manifestação formal necessária antes da aplicação da regra ao servidor abrangido pelo § 16."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": [
+     "ACRESCENTAR",
+     "A aplicação concreta do teto do Regime Geral depende do marco de instituição do regime de previdência complementar de cada ente e da situação do servidor perante o § 16."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "aplicacao concreta do teto do RGPS depende do marco de instituicao do regime complementar e da situacao do servidor perante o § 16",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "nota acrescentada por instrucao da revisao humana"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O § 14 obriga todos os entes a instituir, por lei de iniciativa do Executivo, previdência complementar para os servidores efetivos, limitando os benefícios do regime próprio ao teto do Regime Geral, ressalvado o § 16. O § 15 exige plano na modalidade contribuição definida, por entidade fechada ou aberta. O § 16 só aplica essas regras a quem ingressou antes da instituição se houver opção prévia e expressa.",
+     "o_que_significa": "O regime próprio paga até o teto do Regime Geral. Acima disso, o servidor pode formar uma reserva na previdência complementar, baseada em contribuições.\nNa contribuição definida, sabe-se quanto se contribui, mas o valor do benefício depende do que for acumulado e rendido. É diferente do benefício definido, em que o valor é prometido de antemão.\nO § 16 protege quem já era servidor quando o regime complementar foi criado: ele só passa a ter o benefício limitado ao teto se optar por isso, de forma prévia e expressa.",
+     "exemplo_pratico": "Um servidor que tomou posse depois da criação da previdência complementar federal terá aposentadoria do regime próprio limitada ao teto do Regime Geral e pode aderir ao plano complementar. Um colega que ingressou antes continua com as regras anteriores, a menos que opte pela migração.",
+     "atencao": "A instituição da previdência complementar é obrigatória para os entes, nos termos do § 14. As condições específicas de adesão e de migração estão nas leis de cada ente e nas regras de transição.",
+     "palavras_dificeis": [
+      {
+       "termo": "Contribuição definida",
+       "explicacao": "modalidade em que o benefício depende do saldo acumulado com as contribuições e os rendimentos."
+      },
+      {
+       "termo": "Entidade fechada de previdência complementar",
+       "explicacao": "entidade sem fins lucrativos que administra planos para grupos determinados."
+      },
+      {
+       "termo": "Opção prévia e expressa",
+       "explicacao": "escolha formal do servidor, manifestada antes de as regras serem aplicadas a ele."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 14 determina que os entes instituam regime de previdência complementar para os servidores ocupantes de cargo efetivo.\nCom a aplicação desse regime, o valor das aposentadorias e pensões do RPPS observa o limite máximo dos benefícios do Regime Geral, ressalvada a situação prevista no § 16.\nO § 15 determina que o plano complementar utilize a modalidade de contribuição definida e seja administrado pelas entidades admitidas constitucionalmente.\nO § 16 protege quem ingressou no serviço público antes da instituição do correspondente regime complementar: a aplicação dos §§ 14 e 15 a esse servidor depende de opção prévia e expressa.",
+     "o_que_significa": "A previdência complementar cria uma separação entre o benefício básico pago pelo RPPS, dentro dos limites constitucionais aplicáveis, e o benefício adicional que pode resultar do plano complementar.\nNa modalidade de contribuição definida, são conhecidas as contribuições feitas para o plano, enquanto o benefício futuro depende do saldo formado e das regras do plano.\nPara quem já estava no serviço público antes da instituição do regime complementar correspondente, a Constituição exige opção prévia e expressa para aplicar as regras dos §§ 14 e 15.",
+     "exemplo_pratico": "Um servidor ingressa depois da instituição do regime de previdência complementar do seu ente.\nA limitação constitucional do benefício do RPPS ao teto do Regime Geral incide segundo esse regime, independentemente de o servidor decidir realizar contribuições adicionais a um plano complementar.\nJá para servidor que ingressou antes do marco de instituição, a aplicação dos §§ 14 e 15 depende da opção prevista no § 16.",
+     "atencao": "A limitação do benefício do RPPS ao teto do Regime Geral não significa que a previdência complementar pagará automaticamente a diferença entre a remuneração do servidor e esse teto.\nO valor de eventual benefício complementar depende das contribuições, do saldo acumulado e das regras do plano.",
+     "palavras_dificeis": [
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "regime previdenciário adicional ao regime básico."
+      },
+      {
+       "termo": "Contribuição definida",
+       "explicacao": "modalidade em que as contribuições são definidas e o benefício depende do saldo acumulado."
+      },
+      {
+       "termo": "Opção prévia e expressa",
+       "explicacao": "manifestação formal necessária antes da aplicação da regra ao servidor abrangido pelo § 16."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40.",
+     "A aplicação concreta do teto do Regime Geral depende do marco de instituição do regime de previdência complementar de cada ente e da situação do servidor perante o § 16."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.18",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Retirado \"a leitura usual e\"; regra ordinaria explicada objetivamente e coordenada com o art. 149, § 1º-A.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.18/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.18/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirado \"a leitura usual e\"; regra ordinaria explicada objetivamente e coordenada com o art. 149, § 1º-A.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 18 prevê contribuição previdenciária sobre aposentadorias\ne pensões do regime próprio que ultrapassem o limite máximo\ndos benefícios do Regime Geral.\nA contribuição segue o percentual previsto para os\nservidores titulares de cargos efetivos, conforme o regime\naplicável.",
+     "o_que_significa": "Na situação ordinária prevista pelo § 18, a contribuição do\naposentado ou pensionista incide sobre a parcela do benefício\nque ultrapassa o teto do Regime Geral.\nAssim, não se trata de contribuição calculada\nnecessariamente sobre o valor inteiro da aposentadoria ou\npensão.\nA Constituição, porém, contém outra regra relevante no\nart. 149, § 1º-A.\nQuando houver déficit atuarial, esse dispositivo permite\nque a contribuição ordinária dos aposentados e pensionistas\nalcance a parcela que exceder o salário mínimo, conforme a\ndisciplina legal aplicável.",
+     "exemplo_pratico": "Se um aposentado recebe benefício acima do teto do Regime\nGeral e não existe hipótese constitucional de ampliação da\nbase, a contribuição ordinária incide sobre a parcela que\nultrapassa aquele teto.\nSe existir déficit atuarial e forem preenchidos os requisitos\ndo art. 149, § 1º-A, a legislação pode estabelecer a base\nampliada admitida pela Constituição.",
+     "atencao": "O § 18 não deve ser lido isoladamente.\nO art. 149, § 1º-A, contém regra excepcional relacionada a\ndéficit atuarial que pode alterar a faixa sobre a qual a\ncontribuição de aposentados e pensionistas incide.",
+     "palavras_dificeis": [
+      "Base de contribuição: valor sobre o qual a contribuição\nprevidenciária é calculada.",
+      "Alíquota: percentual utilizado para calcular a\ncontribuição.",
+      "Déficit atuarial: insuficiência projetada de recursos para\ncobrir as obrigações futuras do regime.",
+      "Pensionista: beneficiário de pensão previdenciária."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 18 prevê contribuição previdenciária sobre aposentadorias e pensões do regime próprio que ultrapassem o limite máximo dos benefícios do Regime Geral.\nA contribuição segue o percentual previsto para os servidores titulares de cargos efetivos, conforme o regime aplicável.",
+     "o_que_significa": "Na situação ordinária prevista pelo § 18, a contribuição do aposentado ou pensionista incide sobre a parcela do benefício que ultrapassa o teto do Regime Geral.\nAssim, não se trata de contribuição calculada necessariamente sobre o valor inteiro da aposentadoria ou pensão.\nA Constituição, porém, contém outra regra relevante no art. 149, § 1º-A.\nQuando houver déficit atuarial, esse dispositivo permite que a contribuição ordinária dos aposentados e pensionistas alcance a parcela que exceder o salário mínimo, conforme a disciplina legal aplicável.",
+     "exemplo_pratico": "Se um aposentado recebe benefício acima do teto do Regime Geral e não existe hipótese constitucional de ampliação da base, a contribuição ordinária incide sobre a parcela que ultrapassa aquele teto.\nSe existir déficit atuarial e forem preenchidos os requisitos do art. 149, § 1º-A, a legislação pode estabelecer a base ampliada admitida pela Constituição.",
+     "atencao": "O § 18 não deve ser lido isoladamente.\nO art. 149, § 1º-A, contém regra excepcional relacionada a déficit atuarial que pode alterar a faixa sobre a qual a contribuição de aposentados e pensionistas incide.",
+     "palavras_dificeis": [
+      {
+       "termo": "Base de contribuição",
+       "explicacao": "valor sobre o qual a contribuição previdenciária é calculada."
+      },
+      {
+       "termo": "Alíquota",
+       "explicacao": "percentual utilizado para calcular a contribuição."
+      },
+      {
+       "termo": "Déficit atuarial",
+       "explicacao": "insuficiência projetada de recursos para cobrir as obrigações futuras do regime."
+      },
+      {
+       "termo": "Pensionista",
+       "explicacao": "beneficiário de pensão previdenciária."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": [
+     "Art. 149, § 1º-A."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "o_que_significa/exemplo_pratico/atencao",
+     "content": "parametro ordinario (parcela acima do teto do RGPS) e base excepcional do art. 149, § 1º-A (deficit atuarial)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "explicacao indicada pela revisao humana; o texto do art. 149, § 1º-A, consta do runtime"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo prevê contribuição sobre as aposentadorias e pensões do regime próprio na parte que superar o teto de benefícios do Regime Geral, com o mesmo percentual cobrado dos servidores efetivos em atividade.",
+     "o_que_significa": "Aposentados e pensionistas também contribuem, o que expressa o caráter solidário do caput. Este parágrafo usa como referência o teto do Regime Geral: a contribuição alcança os benefícios que o superam, e a leitura usual é que ela recai sobre a parte excedente.\nO percentual é o mesmo exigido dos servidores ativos.\nOutro dispositivo da Constituição, o art. 149, § 1º-A, permite que, havendo déficit atuarial, a contribuição de aposentados e pensionistas incida sobre o valor que supere o salário mínimo.",
+     "exemplo_pratico": "Uma aposentada recebe proventos acima do teto do Regime Geral. Pela regra deste parágrafo, a contribuição recai sobre o valor que excede esse teto, com o mesmo percentual aplicado aos servidores em atividade do seu ente.",
+     "atencao": "O parágrafo não é a única regra sobre a contribuição de inativos: a base ampliada em caso de déficit está no art. 149, § 1º-A, e as alíquotas dependem da lei de cada ente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Base de contribuição",
+       "explicacao": "parcela do valor recebido sobre a qual a contribuição é calculada."
+      },
+      {
+       "termo": "Alíquota",
+       "explicacao": "percentual aplicado sobre a base para calcular a contribuição."
+      },
+      {
+       "termo": "Déficit atuarial",
+       "explicacao": "diferença projetada entre os benefícios futuros e os recursos para pagá-los."
+      },
+      {
+       "termo": "Pensionista",
+       "explicacao": "dependente que recebe pensão por morte do servidor."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 18 prevê contribuição previdenciária sobre aposentadorias e pensões do regime próprio que ultrapassem o limite máximo dos benefícios do Regime Geral.\nA contribuição segue o percentual previsto para os servidores titulares de cargos efetivos, conforme o regime aplicável.",
+     "o_que_significa": "Na situação ordinária prevista pelo § 18, a contribuição do aposentado ou pensionista incide sobre a parcela do benefício que ultrapassa o teto do Regime Geral.\nAssim, não se trata de contribuição calculada necessariamente sobre o valor inteiro da aposentadoria ou pensão.\nA Constituição, porém, contém outra regra relevante no art. 149, § 1º-A.\nQuando houver déficit atuarial, esse dispositivo permite que a contribuição ordinária dos aposentados e pensionistas alcance a parcela que exceder o salário mínimo, conforme a disciplina legal aplicável.",
+     "exemplo_pratico": "Se um aposentado recebe benefício acima do teto do Regime Geral e não existe hipótese constitucional de ampliação da base, a contribuição ordinária incide sobre a parcela que ultrapassa aquele teto.\nSe existir déficit atuarial e forem preenchidos os requisitos do art. 149, § 1º-A, a legislação pode estabelecer a base ampliada admitida pela Constituição.",
+     "atencao": "O § 18 não deve ser lido isoladamente.\nO art. 149, § 1º-A, contém regra excepcional relacionada a déficit atuarial que pode alterar a faixa sobre a qual a contribuição de aposentados e pensionistas incide.",
+     "palavras_dificeis": [
+      {
+       "termo": "Base de contribuição",
+       "explicacao": "valor sobre o qual a contribuição previdenciária é calculada."
+      },
+      {
+       "termo": "Alíquota",
+       "explicacao": "percentual utilizado para calcular a contribuição."
+      },
+      {
+       "termo": "Déficit atuarial",
+       "explicacao": "insuficiência projetada de recursos para cobrir as obrigações futuras do regime."
+      },
+      {
+       "termo": "Pensionista",
+       "explicacao": "beneficiário de pensão previdenciária."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Art. 149, § 1º-A."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.19",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Retirada a finalidade especulativa (\"incentivo para o servidor experiente\"; \"adia a necessidade de substitui-lo\").",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.19/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.19/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirada a finalidade especulativa (\"incentivo para o servidor experiente\"; \"adia a necessidade de substitui-lo\").",
+    "raw_wrapped": {
+     "o_que_diz": "O § 19 permite que o servidor titular de cargo efetivo que\njá cumpriu as exigências para aposentadoria voluntária e\nopta por permanecer em atividade possa receber abono de\npermanência.\nOs critérios são definidos em lei do respectivo ente e o\nvalor não pode superar o montante da contribuição\nprevidenciária do servidor.",
+     "o_que_significa": "O servidor que já possui os requisitos para pedir\naposentadoria voluntária pode escolher continuar em\natividade.\nNessa situação, a legislação do ente pode prever o abono de\npermanência.\nA Constituição não fixa um valor obrigatório igual à\ncontribuição previdenciária: ela estabelece essa contribuição\ncomo limite máximo do abono.\nO benefício pode ser pago até a idade da aposentadoria\ncompulsória, conforme as regras aplicáveis.",
+     "exemplo_pratico": "Uma servidora cumpre os requisitos para aposentadoria\nvoluntária, mas prefere continuar exercendo seu cargo.\nSe preencher os critérios estabelecidos pela lei do ente,\npoderá receber abono de permanência dentro do limite\nconstitucional.",
+     "atencao": "A expressão “poderá fazer jus” e a remissão à lei do ente\nsão importantes.\nO § 19 não permite concluir que todo servidor que permanece\nem atividade receberá automaticamente valor idêntico à sua\ncontribuição previdenciária.",
+     "palavras_dificeis": [
+      "Abono de permanência: valor que pode ser devido ao\nservidor que já cumpriu os requisitos para aposentadoria\nvoluntária e permanece em atividade.",
+      "Aposentadoria compulsória: aposentadoria obrigatória ao\natingir a idade-limite aplicável."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 19 permite que o servidor titular de cargo efetivo que já cumpriu as exigências para aposentadoria voluntária e opta por permanecer em atividade possa receber abono de permanência.\nOs critérios são definidos em lei do respectivo ente e o valor não pode superar o montante da contribuição previdenciária do servidor.",
+     "o_que_significa": "O servidor que já possui os requisitos para pedir aposentadoria voluntária pode escolher continuar em atividade.\nNessa situação, a legislação do ente pode prever o abono de permanência.\nA Constituição não fixa um valor obrigatório igual à contribuição previdenciária: ela estabelece essa contribuição como limite máximo do abono.\nO benefício pode ser pago até a idade da aposentadoria compulsória, conforme as regras aplicáveis.",
+     "exemplo_pratico": "Uma servidora cumpre os requisitos para aposentadoria voluntária, mas prefere continuar exercendo seu cargo.\nSe preencher os critérios estabelecidos pela lei do ente, poderá receber abono de permanência dentro do limite constitucional.",
+     "atencao": "A expressão “poderá fazer jus” e a remissão à lei do ente são importantes.\nO § 19 não permite concluir que todo servidor que permanece em atividade receberá automaticamente valor idêntico à sua contribuição previdenciária.",
+     "palavras_dificeis": [
+      {
+       "termo": "Abono de permanência",
+       "explicacao": "valor que pode ser devido ao servidor que já cumpriu os requisitos para aposentadoria voluntária e permanece em atividade."
+      },
+      {
+       "termo": "Aposentadoria compulsória",
+       "explicacao": "aposentadoria obrigatória ao atingir a idade-limite aplicável."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo permite que o servidor efetivo que já cumpriu as exigências da aposentadoria voluntária e decide continuar trabalhando receba um abono de permanência. O abono pode chegar, no máximo, ao valor da sua contribuição previdenciária e vai até a idade da compulsória, segundo critérios da lei do ente.",
+     "o_que_significa": "O abono é um incentivo para o servidor experiente continuar em atividade, em vez de se aposentar. Para a administração, isso adia a necessidade de substituí-lo.\nO valor máximo é o da contribuição previdenciária do servidor; o texto usa \"no máximo\", o que permite valores menores conforme a lei. O pagamento termina quando o servidor atinge a idade da aposentadoria compulsória.\nO texto atual usa \"poderá fazer jus\" e remete à lei do ente os critérios.",
+     "exemplo_pratico": "Um servidor federal cumpre os requisitos da aposentadoria voluntária, mas decide continuar trabalhando. Conforme a lei aplicável, ele passa a receber o abono de permanência, de valor equivalente, no máximo, à sua contribuição, até atingir a idade da compulsória.",
+     "atencao": "O abono depende dos critérios da lei de cada ente. O texto não garante que o valor seja igual à contribuição: ela é o limite máximo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Abono de permanência",
+       "explicacao": "valor pago ao servidor que já pode se aposentar e continua trabalhando."
+      },
+      {
+       "termo": "Fazer jus",
+       "explicacao": "ter direito a receber algo, por cumprir as condições exigidas."
+      },
+      {
+       "termo": "Aposentadoria compulsória",
+       "explicacao": "aposentadoria obrigatória ao atingir a idade-limite fixada pela Constituição e pela lei."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 19 permite que o servidor titular de cargo efetivo que já cumpriu as exigências para aposentadoria voluntária e opta por permanecer em atividade possa receber abono de permanência.\nOs critérios são definidos em lei do respectivo ente e o valor não pode superar o montante da contribuição previdenciária do servidor.",
+     "o_que_significa": "O servidor que já possui os requisitos para pedir aposentadoria voluntária pode escolher continuar em atividade.\nNessa situação, a legislação do ente pode prever o abono de permanência.\nA Constituição não fixa um valor obrigatório igual à contribuição previdenciária: ela estabelece essa contribuição como limite máximo do abono.\nO benefício pode ser pago até a idade da aposentadoria compulsória, conforme as regras aplicáveis.",
+     "exemplo_pratico": "Uma servidora cumpre os requisitos para aposentadoria voluntária, mas prefere continuar exercendo seu cargo.\nSe preencher os critérios estabelecidos pela lei do ente, poderá receber abono de permanência dentro do limite constitucional.",
+     "atencao": "A expressão “poderá fazer jus” e a remissão à lei do ente são importantes.\nO § 19 não permite concluir que todo servidor que permanece em atividade receberá automaticamente valor idêntico à sua contribuição previdenciária.",
+     "palavras_dificeis": [
+      {
+       "termo": "Abono de permanência",
+       "explicacao": "valor que pode ser devido ao servidor que já cumpriu os requisitos para aposentadoria voluntária e permanece em atividade."
+      },
+      {
+       "termo": "Aposentadoria compulsória",
+       "explicacao": "aposentadoria obrigatória ao atingir a idade-limite aplicável."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.20",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "\"Cada ente tem um unico regime proprio e uma unica gestora\" qualificado (so o ente que possui RPPS); nao dizer que Poderes nao podem manter \"fundos\" separados; retirada a justificativa teleologica sobre reducao de custos.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.20/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.20/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "\"Cada ente tem um unico regime proprio e uma unica gestora\" qualificado (so o ente que possui RPPS); nao dizer que Poderes nao podem manter \"fundos\" separados; retirada a justificativa teleologica sobre reducao de custos.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 20 impede que um mesmo ente federativo mantenha mais de\num regime próprio de previdência social ou mais de um órgão\nou entidade responsável por sua gestão.\nO regime existente deve abranger os Poderes, órgãos,\nautarquias e fundações alcançados pelo dispositivo, que\nparticipam de seu financiamento.",
+     "o_que_significa": "Se União, Estado, Distrito Federal ou Município possui\nRPPS, não pode fragmentá-lo em vários regimes previdenciários\nindependentes para cada Poder ou órgão.\nTambém deve existir uma única estrutura gestora do regime,\nnos termos das normas constitucionais e da legislação\naplicável.\nIsso não significa que toda organização financeira interna\ndo RPPS seja proibida: a vedação constitucional é à\nexistência de vários regimes próprios ou de várias entidades\ngestoras para o mesmo ente.",
+     "exemplo_pratico": "Um Estado não pode manter um RPPS independente para o\nExecutivo e outro RPPS separado para os servidores do\nJudiciário.\nOs servidores abrangidos integram o regime próprio único\ndo Estado, sujeito à estrutura de gestão prevista pela\nlegislação.",
+     "atencao": "A unicidade prevista no § 20 refere-se ao regime próprio e\nao órgão ou entidade gestora.\nOs Poderes, órgãos e entidades abrangidos continuam\nresponsáveis pelo financiamento do sistema nas condições\nprevistas constitucional e legalmente.",
+     "palavras_dificeis": [
+      "Entidade gestora: estrutura responsável pela administração\ndo regime próprio.",
+      "Financiamento: conjunto dos recursos destinados ao custeio\ndo sistema previdenciário.",
+      "Regime próprio: regime previdenciário dos servidores\ntitulares de cargos efetivos abrangidos por ele."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 20 impede que um mesmo ente federativo mantenha mais de um regime próprio de previdência social ou mais de um órgão ou entidade responsável por sua gestão.\nO regime existente deve abranger os Poderes, órgãos, autarquias e fundações alcançados pelo dispositivo, que participam de seu financiamento.",
+     "o_que_significa": "Se União, Estado, Distrito Federal ou Município possui RPPS, não pode fragmentá-lo em vários regimes previdenciários independentes para cada Poder ou órgão.\nTambém deve existir uma única estrutura gestora do regime, nos termos das normas constitucionais e da legislação aplicável.\nIsso não significa que toda organização financeira interna do RPPS seja proibida: a vedação constitucional é à existência de vários regimes próprios ou de várias entidades gestoras para o mesmo ente.",
+     "exemplo_pratico": "Um Estado não pode manter um RPPS independente para o Executivo e outro RPPS separado para os servidores do Judiciário.\nOs servidores abrangidos integram o regime próprio único do Estado, sujeito à estrutura de gestão prevista pela legislação.",
+     "atencao": "A unicidade prevista no § 20 refere-se ao regime próprio e ao órgão ou entidade gestora.\nOs Poderes, órgãos e entidades abrangidos continuam responsáveis pelo financiamento do sistema nas condições previstas constitucional e legalmente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Entidade gestora",
+       "explicacao": "estrutura responsável pela administração do regime próprio."
+      },
+      {
+       "termo": "Financiamento",
+       "explicacao": "conjunto dos recursos destinados ao custeio do sistema previdenciário."
+      },
+      {
+       "termo": "Regime próprio",
+       "explicacao": "regime previdenciário dos servidores titulares de cargos efetivos abrangidos por ele."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo proíbe que um ente federativo tenha mais de um regime próprio de previdência ou mais de um órgão ou entidade gestora desse regime. Todos os Poderes, órgãos, autarquias e fundações ficam no mesmo regime e respondem pelo seu financiamento, conforme a lei complementar do § 22.",
+     "o_que_significa": "Cada ente tem um único regime próprio e uma única gestora. Assim, o Judiciário, o Legislativo e o Executivo de um Estado não podem manter fundos ou institutos previdenciários separados.\nA unicidade facilita o controle, reduz custos administrativos e dá transparência ao equilíbrio do regime. Ao mesmo tempo, cada Poder e entidade continua responsável por financiar a parte do regime que lhe corresponde.",
+     "exemplo_pratico": "Um Estado mantinha um instituto de previdência para o Executivo e outro para o Tribunal de Justiça. Pelo parágrafo, os servidores dos dois Poderes devem integrar um único regime, administrado por uma só entidade gestora.",
+     "atencao": "A unicidade é de regime e de gestora, não de orçamento: cada Poder e entidade responde pelo financiamento, nos termos da lei complementar federal do § 22.",
+     "palavras_dificeis": [
+      {
+       "termo": "Entidade gestora",
+       "explicacao": "órgão ou entidade que administra o regime próprio de previdência do ente."
+      },
+      {
+       "termo": "Financiamento",
+       "explicacao": "aporte dos recursos necessários para pagar os benefícios do regime."
+      },
+      {
+       "termo": "Autarquia",
+       "explicacao": "entidade de direito público criada por lei para executar atividade típica do Estado."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 20 impede que um mesmo ente federativo mantenha mais de um regime próprio de previdência social ou mais de um órgão ou entidade responsável por sua gestão.\nO regime existente deve abranger os Poderes, órgãos, autarquias e fundações alcançados pelo dispositivo, que participam de seu financiamento.",
+     "o_que_significa": "Se União, Estado, Distrito Federal ou Município possui RPPS, não pode fragmentá-lo em vários regimes previdenciários independentes para cada Poder ou órgão.\nTambém deve existir uma única estrutura gestora do regime, nos termos das normas constitucionais e da legislação aplicável.\nIsso não significa que toda organização financeira interna do RPPS seja proibida: a vedação constitucional é à existência de vários regimes próprios ou de várias entidades gestoras para o mesmo ente.",
+     "exemplo_pratico": "Um Estado não pode manter um RPPS independente para o Executivo e outro RPPS separado para os servidores do Judiciário.\nOs servidores abrangidos integram o regime próprio único do Estado, sujeito à estrutura de gestão prevista pela legislação.",
+     "atencao": "A unicidade prevista no § 20 refere-se ao regime próprio e ao órgão ou entidade gestora.\nOs Poderes, órgãos e entidades abrangidos continuam responsáveis pelo financiamento do sistema nas condições previstas constitucional e legalmente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Entidade gestora",
+       "explicacao": "estrutura responsável pela administração do regime próprio."
+      },
+      {
+       "termo": "Financiamento",
+       "explicacao": "conjunto dos recursos destinados ao custeio do sistema previdenciário."
+      },
+      {
+       "termo": "Regime próprio",
+       "explicacao": "regime previdenciário dos servidores titulares de cargos efetivos abrangidos por ele."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "A camada externa sugeria que a lei complementar federal especifica do § 22 ja foi editada; as fontes oficiais a tratam como pendente (art. 9º da EC 103/2019: Lei nº 9.717/1998 e regras transitorias). T1 revisado.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.22/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.22/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "A camada externa sugeria que a lei complementar federal especifica do § 22 ja foi editada; as fontes oficiais a tratam como pendente (art. 9º da EC 103/2019: Lei nº 9.717/1998 e regras transitorias). T1 revisado.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 22 proíbe a instituição de novos regimes próprios de\nprevidência social.\nPara os RPPS já existentes, determina que lei complementar\nfederal estabeleça normas gerais sobre organização,\nfuncionamento e responsabilidade na gestão.\nOs incisos I a X indicam matérias que essa disciplina deve\nabranger.",
+     "o_que_significa": "Depois da reforma previdenciária de 2019, um ente que não\npossuía regime próprio não pode criar um novo RPPS.\nOs regimes que já existiam podem continuar funcionando,\nmas estão submetidos às normas constitucionais e às normas\ngerais federais aplicáveis.\nOs incisos mostram os principais assuntos que a disciplina\nnacional deve tratar, entre eles:\n\n* extinção do RPPS e migração para o Regime Geral;\n* arrecadação e utilização dos recursos;\n* fiscalização e controle;\n* equilíbrio financeiro e atuarial;\n* mecanismos para enfrentar déficit;\n* estrutura e governança da entidade gestora;\n* responsabilização de gestores;\n* consórcios públicos;\n* parâmetros para contribuições ordinárias e extraordinárias.",
+     "exemplo_pratico": "Um Município que não possuía RPPS quando entrou em vigor a\nvedação constitucional não pode instituir um novo regime\npróprio para seus servidores.\nJá um Município que mantém RPPS anterior à reforma continua\nsubmetido às normas constitucionais e às normas gerais\nfederais aplicáveis à gestão desse regime.",
+     "atencao": "A lista dos incisos não é exaustiva: o próprio § 22 utiliza\na expressão “entre outros aspectos”.\nA lei complementar federal específica prevista pelo § 22\ndeve ser acompanhada na camada de legislação correlata.\nEnquanto essa regulamentação específica não entra em vigor,\na EC 103/2019 contém disciplina transitória para os regimes\npróprios existentes.",
+     "palavras_dificeis": [
+      "Normas gerais: regras nacionais que estabelecem parâmetros\ncomuns para os regimes próprios.",
+      "Déficit atuarial: insuficiência projetada de recursos para\ncobrir obrigações previdenciárias futuras.",
+      "Governança: conjunto de mecanismos de direção, controle e\nresponsabilização da gestão.",
+      "Consórcio público: forma de cooperação entre entes\nfederativos para executar atividades de interesse comum."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 22 proíbe a instituição de novos regimes próprios de previdência social.\nPara os RPPS já existentes, determina que lei complementar federal estabeleça normas gerais sobre organização, funcionamento e responsabilidade na gestão.\nOs incisos I a X indicam matérias que essa disciplina deve abranger.",
+     "o_que_significa": "Depois da reforma previdenciária de 2019, um ente que não possuía regime próprio não pode criar um novo RPPS.\nOs regimes que já existiam podem continuar funcionando, mas estão submetidos às normas constitucionais e às normas gerais federais aplicáveis.\nOs incisos mostram os principais assuntos que a disciplina nacional deve tratar, entre eles:\n* extinção do RPPS e migração para o Regime Geral;\n* arrecadação e utilização dos recursos;\n* fiscalização e controle;\n* equilíbrio financeiro e atuarial;\n* mecanismos para enfrentar déficit;\n* estrutura e governança da entidade gestora;\n* responsabilização de gestores;\n* consórcios públicos;\n* parâmetros para contribuições ordinárias e extraordinárias.",
+     "exemplo_pratico": "Um Município que não possuía RPPS quando entrou em vigor a vedação constitucional não pode instituir um novo regime próprio para seus servidores.\nJá um Município que mantém RPPS anterior à reforma continua submetido às normas constitucionais e às normas gerais federais aplicáveis à gestão desse regime.",
+     "atencao": "A lista dos incisos não é exaustiva: o próprio § 22 utiliza a expressão “entre outros aspectos”.\nA lei complementar federal específica prevista pelo § 22 deve ser acompanhada na camada de legislação correlata.\nEnquanto essa regulamentação específica não entra em vigor, a EC 103/2019 contém disciplina transitória para os regimes próprios existentes.",
+     "palavras_dificeis": [
+      {
+       "termo": "Normas gerais",
+       "explicacao": "regras nacionais que estabelecem parâmetros comuns para os regimes próprios."
+      },
+      {
+       "termo": "Déficit atuarial",
+       "explicacao": "insuficiência projetada de recursos para cobrir obrigações previdenciárias futuras."
+      },
+      {
+       "termo": "Governança",
+       "explicacao": "conjunto de mecanismos de direção, controle e responsabilização da gestão."
+      },
+      {
+       "termo": "Consórcio público",
+       "explicacao": "forma de cooperação entre entes federativos para executar atividades de interesse comum."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo) e antes de item de lista *",
+    "external_layer_notes": [
+     "EC 103/2019, art. 9º: enquanto não entrar em vigor a lei complementar que discipline o § 22, aplicam-se aos regimes próprios a Lei nº 9.717/1998 e as regras previstas no próprio art. 9º da EC 103/2019."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "art. 9º da EC 103/2019: ate a lei complementar do § 22, aplicam-se a Lei nº 9.717/1998 e as regras do proprio art. 9º; a lei complementar especifica do § 22 e tratada como pendente pelas fontes oficiais",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "informado pela revisao humana; nao pesquisado automaticamente"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo proíbe criar novos regimes próprios de previdência. Para os que já existem, manda uma lei complementar federal fixar normas gerais de organização, funcionamento e responsabilidade da gestão. Os incisos listam temas dessa lei, como extinção e migração para o Regime Geral, uso dos recursos, fiscalização, equilíbrio atuarial, déficit, governança e alíquotas.",
+     "o_que_significa": "Com a vedação, o ente que não tem regime próprio não pode criá-lo, e os seus servidores efetivos ficam no Regime Geral.\nOs regimes que já existem continuam, mas sob normas gerais nacionais. A lei complementar federal define regras comuns de boa gestão, controle e responsabilidade.\nOs incisos mostram as preocupações centrais: permitir a extinção do regime e a migração ordenada dos servidores para o Regime Geral; organizar a arrecadação e o uso dos recursos; garantir fiscalização da União e controle externo e social; definir equilíbrio atuarial e formas de equacionar o déficit; estruturar a gestora com governança e transparência; responsabilizar gestores; permitir consórcios; e fixar parâmetros de base de cálculo e alíquotas, inclusive extraordinárias.",
+     "exemplo_pratico": "Um Município sem regime próprio pretende criar um para os seus servidores efetivos. A vedação do parágrafo impede isso, e os servidores continuam no Regime Geral. Um Município que já tem regime próprio deve seguir as normas gerais da lei complementar federal sobre gestão e equilíbrio.",
+     "atencao": "O parágrafo trata de normas gerais nacionais; cada ente continua a editar a sua própria legislação dentro desses limites. A lista dos incisos é exemplificativa: o texto diz \"entre outros aspectos\".",
+     "palavras_dificeis": [
+      {
+       "termo": "Normas gerais",
+       "explicacao": "regras nacionais que estabelecem bases comuns, deixando aos entes o detalhamento."
+      },
+      {
+       "termo": "Déficit atuarial",
+       "explicacao": "diferença projetada entre os benefícios futuros e os recursos para pagá-los."
+      },
+      {
+       "termo": "Consórcio público",
+       "explicacao": "associação entre entes federativos para gerir em conjunto uma atividade."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A lei complementar federal de normas gerais dos regimes próprios está na camada de leis correlatas."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 22 proíbe a instituição de novos regimes próprios de previdência social.\nPara os RPPS já existentes, determina que lei complementar federal estabeleça normas gerais sobre organização, funcionamento e responsabilidade na gestão.\nOs incisos I a X indicam matérias que essa disciplina deve abranger.",
+     "o_que_significa": "Depois da reforma previdenciária de 2019, um ente que não possuía regime próprio não pode criar um novo RPPS.\nOs regimes que já existiam podem continuar funcionando, mas estão submetidos às normas constitucionais e às normas gerais federais aplicáveis.\nOs incisos mostram os principais assuntos que a disciplina nacional deve tratar, entre eles:\n* extinção do RPPS e migração para o Regime Geral;\n* arrecadação e utilização dos recursos;\n* fiscalização e controle;\n* equilíbrio financeiro e atuarial;\n* mecanismos para enfrentar déficit;\n* estrutura e governança da entidade gestora;\n* responsabilização de gestores;\n* consórcios públicos;\n* parâmetros para contribuições ordinárias e extraordinárias.",
+     "exemplo_pratico": "Um Município que não possuía RPPS quando entrou em vigor a vedação constitucional não pode instituir um novo regime próprio para seus servidores.\nJá um Município que mantém RPPS anterior à reforma continua submetido às normas constitucionais e às normas gerais federais aplicáveis à gestão desse regime.",
+     "atencao": "A lista dos incisos não é exaustiva: o próprio § 22 utiliza a expressão “entre outros aspectos”.\nA lei complementar federal específica prevista pelo § 22 deve ser acompanhada na camada de legislação correlata.\nEnquanto essa regulamentação específica não entra em vigor, a EC 103/2019 contém disciplina transitória para os regimes próprios existentes.",
+     "palavras_dificeis": [
+      {
+       "termo": "Normas gerais",
+       "explicacao": "regras nacionais que estabelecem parâmetros comuns para os regimes próprios."
+      },
+      {
+       "termo": "Déficit atuarial",
+       "explicacao": "insuficiência projetada de recursos para cobrir obrigações previdenciárias futuras."
+      },
+      {
+       "termo": "Governança",
+       "explicacao": "conjunto de mecanismos de direção, controle e responsabilização da gestão."
+      },
+      {
+       "termo": "Consórcio público",
+       "explicacao": "forma de cooperação entre entes federativos para executar atividades de interesse comum."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "EC 103/2019, art. 9º: enquanto não entrar em vigor a lei complementar que discipline o § 22, aplicam-se aos regimes próprios a Lei nº 9.717/1998 e as regras previstas no próprio art. 9º da EC 103/2019."
+    ]
+   }
+  }
+ ]
+}

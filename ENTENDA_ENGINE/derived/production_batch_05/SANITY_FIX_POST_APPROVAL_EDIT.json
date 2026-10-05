@@ -1,0 +1,73 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_BATCH05_FINAL_SANITY_FIX",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "review_status": "POST_APPROVAL_EDIT_APPLIED",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_SANITY_FIX.json",
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_SANITY_FIX.json": "d89d59e64a69f5bcea75a2e72d72c22d2a2b9f07ee9e4f49aecda0d832fb7ffb"
+ },
+ "edits": [
+  {
+   "target_id": "CF88:ART.38:INC.II",
+   "decision": "APPROVED_AFTER_POST_APPROVAL_EDIT",
+   "review_reason": "Retirada somente a justificativa causal nao declarada pelo texto (\"porque o cargo de Prefeito exige dedicacao ao Executivo municipal\"); mantida a conclusao (afastamento obrigatorio, inciso II). A opcao de remuneracao ja consta do mesmo paragrafo da explicacao (\"O servidor afastado pode escolher entre a remuneracao do vinculo funcional e a remuneracao do mandato de Prefeito\"), por isso nao foi repetida.",
+   "from_explanation_id": "ENTENDA/CF88:ART.38:INC.II/BASE/2",
+   "to_explanation_id": "ENTENDA/CF88:ART.38:INC.II/BASE/3",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O afastamento é obrigatório, porque o cargo de Prefeito exige dedicação ao Executivo municipal.",
+     "after": "O afastamento do cargo, emprego ou função é obrigatório."
+    }
+   ],
+   "regression_rule": "TELEOLOGY_SPECULATIVE (alternativa causal \"porque o/a X exige/requer/demanda\")",
+   "before": {
+    "content": {
+     "o_que_diz": "No art. 38, este inciso trata do servidor investido no mandato de Prefeito: ele é afastado do cargo, emprego ou função, mas pode escolher receber a remuneração do cargo de servidor em vez do subsídio de Prefeito.",
+     "o_que_significa": "O afastamento é obrigatório, porque o cargo de Prefeito exige dedicação ao Executivo municipal. A novidade em relação ao inciso I é a opção: o servidor escolhe qual remuneração receber, a do seu cargo ou a do mandato.\nEle recebe uma ou outra, não as duas. O servidor afastado pode escolher entre a remuneração do vínculo funcional e a remuneração do mandato de Prefeito.",
+     "exemplo_pratico": "Um médico federal é eleito prefeito de uma cidade pequena, cujo subsídio é inferior ao seu salário de médico. Ele se afasta do cargo de médico e opta por continuar recebendo a remuneração do cargo federal enquanto exerce o mandato.",
+     "atencao": "A opção é entre remunerações; não permite acumular os dois valores. O afastamento do cargo ocorre de qualquer modo, ainda que haja compatibilidade de horários.",
+     "palavras_dificeis": [
+      {
+       "termo": "Investido no mandato",
+       "explicacao": "empossado no cargo eletivo, passando a exercê-lo formalmente."
+      },
+      {
+       "termo": "Opção de remuneração",
+       "explicacao": "escolha entre receber a remuneração do cargo de origem ou o subsídio do mandato."
+      },
+      {
+       "termo": "Subsídio",
+       "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+      }
+     ]
+    }
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "No art. 38, este inciso trata do servidor investido no mandato de Prefeito: ele é afastado do cargo, emprego ou função, mas pode escolher receber a remuneração do cargo de servidor em vez do subsídio de Prefeito.",
+     "o_que_significa": "O afastamento do cargo, emprego ou função é obrigatório. A novidade em relação ao inciso I é a opção: o servidor escolhe qual remuneração receber, a do seu cargo ou a do mandato.\nEle recebe uma ou outra, não as duas. O servidor afastado pode escolher entre a remuneração do vínculo funcional e a remuneração do mandato de Prefeito.",
+     "exemplo_pratico": "Um médico federal é eleito prefeito de uma cidade pequena, cujo subsídio é inferior ao seu salário de médico. Ele se afasta do cargo de médico e opta por continuar recebendo a remuneração do cargo federal enquanto exerce o mandato.",
+     "atencao": "A opção é entre remunerações; não permite acumular os dois valores. O afastamento do cargo ocorre de qualquer modo, ainda que haja compatibilidade de horários.",
+     "palavras_dificeis": [
+      {
+       "termo": "Investido no mandato",
+       "explicacao": "empossado no cargo eletivo, passando a exercê-lo formalmente."
+      },
+      {
+       "termo": "Opção de remuneração",
+       "explicacao": "escolha entre receber a remuneração do cargo de origem ou o subsídio do mandato."
+      },
+      {
+       "termo": "Subsídio",
+       "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

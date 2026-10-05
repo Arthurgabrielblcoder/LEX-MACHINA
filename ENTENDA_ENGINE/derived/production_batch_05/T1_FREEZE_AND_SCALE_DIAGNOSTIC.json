@@ -1,0 +1,609 @@
+{
+ "schema_version": 1,
+ "diagnostic": "T1_EDITORIAL_STANDARD_FREEZE_AND_SCALE",
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "read_only": true,
+ "rules": [
+  {
+   "code": "TELEOLOGY_SPECULATIVE",
+   "learned_from": "justificativa de finalidade nao escrita no texto (R2 39 §4 \"objetivo e transparencia\"; R2 38 V \"evitar fragmentacao\"; R3B §19 \"incentivo\"; R3B §20 \"reducao de custos\"; R1 XVI \"aproveitar o profissional\")",
+   "pattern": "\\b(o objetivo [ée]|objetivo d[oa]s?|a finalidade [ée]|serve para|para evitar|evita(?:r|ndo)?|incentiv\\w*|aproveitar o|a ideia [ée]|a regra (?:d[áa]|busca|quer)|isso adia|reduz(?:ir)? (?:os )?custos?|protege tamb[ée]m)\\b",
+   "sections": [
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "negation_aware": false
+  },
+  {
+   "code": "UNIVERSAL_CLAIM",
+   "learned_from": "generalizacao universal (R3A art. 40 \"todos os servidores\"; R3B §20 \"cada ente tem um unico\"; R3B §11 \"todas as somas\"; R2 41 \"so pode perder o cargo nas hipoteses do § 1º\")",
+   "pattern": "\\b(todos os|todas as|todo (?:servidor|ente)|cada ente tem|s[óo] pode|somente pode|sempre|nunca|em nenhuma hip[óo]tese|os demais agentes)\\b",
+   "sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico"
+   ],
+   "negation_aware": true
+  },
+  {
+   "code": "AUTOMATIC_CONSEQUENCE",
+   "learned_from": "consequencia automatica nao prevista (R2 41 §4 \"pode ser exonerado\"; R2 41 §2 \"como se nao tivesse saido\"; R3A §2 \"busca a diferenca\"; R3B §9 transferencia automatica)",
+   "pattern": "\\b(automaticamente|como se n[ãa]o tivesse|pode ser exonerad\\w|busca a diferen[çc]a|passa(?:m)? a receber|continua com as regras)\\b",
+   "sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "negation_aware": true
+  },
+  {
+   "code": "JURIS_SENSITIVE_TOPIC",
+   "learned_from": "tema com jurisprudencia catalogada pelos revisores no nucleo (teto x soma/acumulacao: R1 XI/XVI, R3A §6, R3B §11; magisterio x sala de aula: R3A §5; paridade: R3B §8; regime juridico unico/ADI: R2 39)",
+   "pattern": "(teto[^.]{0,80}(soma|somat[óo]rio|cumulativ|acumula)|(soma|somat[óo]rio|acumula\\w*)[^.]{0,80}teto|sala de aula|paridade|regime jur[íi]dico [úu]nico)",
+   "sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "negation_aware": true
+  },
+  {
+   "code": "LAW_STATUS_CLAIM",
+   "learned_from": "afirmacao sobre existencia/estado de lei regulamentadora (R3A §1º II LC 152/2015; R3B §22 LC pendente)",
+   "pattern": "(lei complementar|lei espec[íi]fica|lei federal)[^.]{0,80}\\b(j[áa] (?:foi|existe|regulament)|foi editada|est[áa] na camada|regulamentou)\\b",
+   "sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "negation_aware": false
+  },
+  {
+   "code": "INTERNAL_IDENTIFIER",
+   "learned_from": "identificador interno no corpo (R2 39 \"CF88_RUNTIME\")",
+   "pattern": "\\b[A-Z0-9]{2,}_[A-Z0-9_]{2,}\\b",
+   "sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao"
+   ],
+   "negation_aware": false
+  },
+  {
+   "code": "OUTDATED_CONTROVERSY",
+   "learned_from": "controversia tratada como aberta/indefinida (R2 39 \"qual redacao produz efeitos\")",
+   "pattern": "(qual reda[çc][ãa]o produz efeitos|hist[óo]rico constitucional complexo|ainda (?:se )?discute|n[ãa]o est[áa] pacificad)",
+   "sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "atencao"
+   ],
+   "negation_aware": false
+  },
+  {
+   "code": "EXAMPLE_INVENTED_CRITERIA",
+   "learned_from": "exemplo com criterios/mecanismos concretos nao previstos (R2 41 §4 \"assiduidade, produtividade e responsabilidade\"; R2 41 §2 \"promovida para a vaga\")",
+   "pattern": "\\b(analisa\\w*|avalia\\w*|considera\\w*)\\b[^.]{0,40}\\b\\w+,\\s*\\w+\\s+e\\s+\\w+|\\bpromovid\\w+ para (?:a|essa) vaga",
+   "sections": [
+    "exemplo_pratico"
+   ],
+   "negation_aware": false
+  }
+ ],
+ "summary": {
+  "as_of": "2026-10-04",
+  "batch05_human_approved_t1": 38,
+  "batch05_new_approved": 38,
+  "pilots_reused": 3,
+  "approved_before_batch05": 220,
+  "cf88_entenda_approved_total_if_batch05_integrated": 258,
+  "high_approved": "38/38",
+  "medium_pending": 23,
+  "low_pending": 8,
+  "editorial_findings_on_pending": {
+   "ABSOLUTE_CLAIM": 3,
+   "EXAMPLE_NUMBER": 1,
+   "MODALITY_SHIFT": 2,
+   "TECHNICAL_TERM_UNDEFINED": 1
+  },
+  "editorial_findings_unresolved": 0,
+  "lint_on_pending": {
+   "PARENT_REPETITION": 1,
+   "ABSOLUTE_CLAIM": 4,
+   "EXAMPLE_REQUIREMENT_LANGUAGE": 9,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 3
+  },
+  "lint_total_batch": {
+   "ABSOLUTE_CLAIM": 7,
+   "EXAMPLE_REQUIREMENT_LANGUAGE": 20,
+   "JURISPRUDENCE_WORDING_IN_BODY": 10,
+   "LONG_EXPLANATION": 2,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 23,
+   "PARENT_REPETITION": 2,
+   "TERM_LOW_UTILITY": 1,
+   "TERM_NOT_USED": 3
+  },
+  "learned_rule_hits_on_pending": {
+   "TELEOLOGY_SPECULATIVE": 6,
+   "UNIVERSAL_CLAIM": 9,
+   "AUTOMATIC_CONSEQUENCE": 3,
+   "JURIS_SENSITIVE_TOPIC": 1
+  },
+  "classification": {
+   "HUMAN_REQUIRED": 15,
+   "AUTO_CANDIDATE_IF_LINT_ACCEPTED": 1,
+   "AUTO_APPROVAL_CANDIDATE": 15
+  },
+  "classification_by_risk": {
+   "MEDIUM": {
+    "HUMAN_REQUIRED": 12,
+    "AUTO_CANDIDATE_IF_LINT_ACCEPTED": 1,
+    "AUTO_APPROVAL_CANDIDATE": 10
+   },
+   "LOW": {
+    "AUTO_APPROVAL_CANDIDATE": 5,
+    "HUMAN_REQUIRED": 3
+   }
+  },
+  "rounds": [
+   {
+    "round": "01",
+    "scope": "CF88_ART37_HIGH_ROUND_1",
+    "decisions": 7,
+    "APPROVED": 1,
+    "APPROVED_AFTER_ADJUSTMENT": 6
+   },
+   {
+    "round": "02",
+    "scope": "CF88_ART38_39_41_HIGH_ROUND_2",
+    "decisions": 9,
+    "APPROVED": 2,
+    "APPROVED_AFTER_ADJUSTMENT": 7
+   },
+   {
+    "round": "03A",
+    "scope": "CF88_ART40_HIGH_ROUND_3A",
+    "decisions": 11,
+    "APPROVED_AFTER_ADJUSTMENT": 8,
+    "APPROVED": 3
+   },
+   {
+    "round": "03B",
+    "scope": "CF88_ART40_HIGH_ROUND_3B",
+    "decisions": 11,
+    "APPROVED_AFTER_ADJUSTMENT": 10,
+    "APPROVED": 1
+   }
+  ],
+  "t1_deviations_per_round": {
+   "01": 8,
+   "02": 2,
+   "03A": 2,
+   "03B": 1
+  },
+  "evaluation": {
+   "adjusted_v1_flagged": 19,
+   "adjusted_total": 31,
+   "approved_unchanged_v1_flagged": 4,
+   "approved_unchanged_total": 7,
+   "final_approved_flagged": 9,
+   "final_total": 38,
+   "missed": [
+    "CF88:ART.37:PAR.14",
+    "CF88:ART.37:PAR.15",
+    "CF88:ART.40:CAPUT",
+    "CF88:ART.40:PAR.1:INC.I",
+    "CF88:ART.40:PAR.1:INC.II",
+    "CF88:ART.40:PAR.2",
+    "CF88:ART.40:PAR.5",
+    "CF88:ART.40:PAR.7",
+    "CF88:ART.40:PAR.9",
+    "CF88:ART.40:PAR.12",
+    "CF88:ART.40:PAR.18",
+    "CF88:ART.40:PAR.22"
+   ],
+   "codes_on_adjusted_v1": {
+    "JURIS_SENSITIVE_TOPIC": 12,
+    "TELEOLOGY_SPECULATIVE": 10,
+    "UNIVERSAL_CLAIM": 10,
+    "OUTDATED_CONTROVERSY": 2,
+    "AUTOMATIC_CONSEQUENCE": 3,
+    "EXAMPLE_INVENTED_CRITERIA": 2
+   }
+  }
+ },
+ "pending": [
+  {
+   "target_id": "CF88:ART.37:CAPUT",
+   "title": "Art. 37, caput — Princípios da administração pública",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "learned_rule_hits": [
+    "TELEOLOGY_SPECULATIVE:serve para",
+    "UNIVERSAL_CLAIM:todos os",
+    "UNIVERSAL_CLAIM:só pode"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.I",
+   "title": "Art. 37, inciso I — Acesso a cargos, empregos e funções",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [
+    "ABSOLUTE_CLAIM:incondicional"
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [],
+   "classification": "AUTO_CANDIDATE_IF_LINT_ACCEPTED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.II",
+   "title": "Art. 37, inciso II — Concurso público",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.III",
+   "title": "Art. 37, incisos III e IV — Validade do concurso e prioridade do aprovado",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.V",
+   "title": "Art. 37, inciso V — Funções de confiança e cargos em comissão",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "AUTOMATIC_CONSEQUENCE:passa a receber"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VI",
+   "title": "Art. 37, incisos VI e VII — Sindicalização e greve do servidor civil",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VIII",
+   "title": "Art. 37, inciso VIII — Reserva de vagas para pessoas com deficiência",
+   "role": "ITEM",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.IX",
+   "title": "Art. 37, inciso IX — Contratação por tempo determinado",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "TELEOLOGY_SPECULATIVE:serve para"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.X",
+   "title": "Art. 37, inciso X — Remuneração por lei e revisão geral anual",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [
+    "ABSOLUTE_CLAIM:sempre"
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "EXAMPLE_REQUIREMENT_LANGUAGE",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XII",
+   "title": "Art. 37, incisos XII, XIII e XIV — Limites e vedações na política remuneratória",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "editorial_findings": [
+    "ABSOLUTE_CLAIM:automaticamente"
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "ABSOLUTE_CLAIM"
+   ],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:sempre",
+    "AUTOMATIC_CONSEQUENCE:automaticamente"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XV",
+   "title": "Art. 37, inciso XV — Irredutibilidade de subsídio e vencimentos",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [
+    "EXAMPLE_NUMBER:10%"
+   ],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVIII",
+   "title": "Art. 37, incisos XVIII e XXII — Administração tributária",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:todas as"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XIX",
+   "title": "Art. 37, incisos XIX e XX — Criação de entidades da administração indireta",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XXI",
+   "title": "Art. 37, inciso XXI — Licitação",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.1",
+   "title": "Art. 37, § 1º — Publicidade institucional sem promoção pessoal",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.2",
+   "title": "Art. 37, § 2º — Nulidade por desrespeito ao concurso",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3",
+   "title": "Art. 37, § 3º — Participação do usuário de serviço público",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.7",
+   "title": "Art. 37, § 7º — Informações privilegiadas",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "TELEOLOGY_SPECULATIVE:evitar"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8",
+   "title": "Art. 37, § 8º — Contrato de desempenho e autonomia ampliada",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "editorial_findings": [
+    "MODALITY_SHIFT:deve"
+   ],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.13",
+   "title": "Art. 37, § 13 — Readaptação do servidor",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "TELEOLOGY_SPECULATIVE:evita"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.16",
+   "title": "Art. 37, § 16 — Avaliação de políticas públicas",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.38",
+   "title": "Art. 38 — Servidor público no exercício de mandato eletivo",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "editorial_findings": [
+    "TECHNICAL_TERM_UNDEFINED:economia mista"
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.38:INC.I",
+   "title": "Art. 38, inciso I — Mandato federal, estadual ou distrital",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "AUTOMATIC_CONSEQUENCE:passa a receber"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.38:INC.II",
+   "title": "Art. 38, inciso II — Servidor eleito Prefeito",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.38:INC.III",
+   "title": "Art. 38, inciso III — Servidor eleito Vereador",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "JURIS_SENSITIVE_TOPIC:soma das remunerações continua sujeita ao teto"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.38:INC.IV",
+   "title": "Art. 38, inciso IV — Tempo de serviço durante o mandato",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:todos os"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1",
+   "title": "Art. 39, § 1º — Critérios do sistema remuneratório",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.2",
+   "title": "Art. 39, § 2º — Escolas de governo",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "editorial_findings": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "learned_rule_hits": [
+    "UNIVERSAL_CLAIM:só pode"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.3",
+   "title": "Art. 39, § 3º — Direitos sociais aplicáveis aos servidores",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.5",
+   "title": "Art. 39, §§ 5º e 6º — Relação entre remunerações e publicação anual",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "editorial_findings": [
+    "MODALITY_SHIFT:obriga"
+   ],
+   "lint": [],
+   "learned_rule_hits": [],
+   "classification": "AUTO_APPROVAL_CANDIDATE"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.7",
+   "title": "Art. 39, § 7º — Aplicação da economia com despesas correntes",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "editorial_findings": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "learned_rule_hits": [
+    "TELEOLOGY_SPECULATIVE:A ideia é",
+    "TELEOLOGY_SPECULATIVE:incentivar"
+   ],
+   "classification": "HUMAN_REQUIRED"
+  }
+ ]
+}

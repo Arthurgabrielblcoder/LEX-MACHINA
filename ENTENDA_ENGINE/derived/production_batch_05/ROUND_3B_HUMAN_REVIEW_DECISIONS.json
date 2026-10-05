@@ -1,0 +1,452 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_ART40_HIGH_ROUND_3B",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND3B.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND3B.json": "bcb4db21d5aa843b727951fc5d33ac0ac887dc44e17c1c005f4ef4b1ab052fde",
+  "ENTENDA_BATCH05_REVIEW_ROUND03B_ART40_HIGH.md": "7842fc4b74e7b02c188ab90cc26b7bf9a682582d8664db483d878bba3812f107",
+  "REVIEW_BATCH_05.md": "1af0c537155c8e7a0f8b9701395ae9e814a385b56c2035c252291e7698c27560",
+  "CF88_BATCH_05.entenda.jsonl": "4e8a8d33699ed4a9d5a076254429e894c5da75ad52dda7c37a061cda731ae8b7",
+  "EDITORIAL_CHECKS.json": "9b2f9b3a5c8da8d91ea0ce700c126ca92ef7d50ab0fa0b88c0a430c78e9c3b63"
+ },
+ "t1_microadjust_policy": {
+  "authorized": [
+   "escrever siglas por extenso quando o T1 bloquear",
+   "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+   "remover do glossario um termo redundante quando exceder o limite de 5",
+   "pequenos ajustes gramaticais exigidos pelo validador",
+   "substituir identificadores internos por expressao adequada ao usuario final"
+  ],
+  "conditions": "significado juridico identico; nenhuma regra, excecao, requisito, prazo, valor ou exemplo alterado; todo desvio registrado; teste automatico demonstra que so houve adaptacao T1; mudanca juridica/conceitual/factual -> PARAR e devolver"
+ },
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "decision_counts": {
+  "APPROVED": 1,
+  "APPROVED_AFTER_ADJUSTMENT": 10
+ },
+ "note": "Decisoes de aprovacao da rodada 3B (round_approvals): 11 de 11. Os 10 ajustados foram aprovados sem nova consulta porque so houve desvios da politica de microajustes T1 pre-autorizada.",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.40:PAR.7",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "O draft afirmava que, com outra renda formal, a pensao \"pode ficar abaixo do salario minimo\"; nao transformar a ausencia da garantia em autorizacao generica para qualquer valor.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.7/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.7/BASE/2",
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "quando decorrente de agressão sofrida",
+     "applied_text": "quando decorrente da agressão sofrida",
+     "policy_item": 2,
+     "policy_text": "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do § 7º oficial; preposicao \"de\" -> \"da\""
+    }
+   ],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo remete à lei de cada ente a concessão da pensão por morte no regime próprio. Garante o piso do art. 201, § 2º, quando a pensão for a única fonte de renda formal do dependente, e manda a lei dar tratamento diferenciado à morte de agentes do § 4º-B por agressão sofrida no exercício ou em razão da função.",
+    "o_que_significa": "A pensão por morte é o benefício pago aos dependentes do servidor que falece. A Constituição deixou para a lei de cada ente as regras de concessão e de valor.\nHá duas garantias no próprio texto. A primeira é o piso: se a pensão é a única renda formal do dependente, ela não pode ser menor que o salário mínimo. A segunda é o tratamento diferenciado para a família do policial ou agente penitenciário ou socioeducativo que morre em razão de agressão sofrida no trabalho.",
+    "exemplo_pratico": "Um policial civil é morto durante uma operação. A lei do Estado deve prever tratamento diferenciado para a pensão dos seus dependentes. Já a pensão de um dependente que tem outra renda formal pode ficar abaixo do salário mínimo, se a lei do ente assim previr.",
+    "atencao": "O piso de um salário mínimo vale quando a pensão é a única fonte de renda formal do dependente. Os incisos antigos deste parágrafo, com as regras anteriores de cálculo, são históricos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Pensão por morte",
+      "explicacao": "benefício pago aos dependentes de quem faleceu."
+     },
+     {
+      "termo": "Dependente",
+      "explicacao": "pessoa que a lei reconhece como beneficiária da pensão, como cônjuge e filhos."
+     },
+     {
+      "termo": "Renda formal",
+      "explicacao": "rendimento registrado, como salário, aposentadoria ou outro benefício."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.8",
+   "decision": "APPROVED",
+   "review_reason": "Distingue preservacao do valor real; indice e periodicidade remetidos a lei; inexistencia, no § 8º atual, de garantia geral de paridade com servidores ativos; eventual paridade oriunda de regras de transicao externas.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.8/BASE/1"
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.9",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Evitar a ideia de que a mudanca de ente transfere automaticamente o tempo sem observar a contagem reciproca; explicacao de tempo ficticio mais precisa.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.9/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.9/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O § 9º determina que o tempo de contribuição em qualquer esfera de governo seja contado para aposentadoria, observadas as regras de contagem recíproca do art. 201, §§ 9º e 9º-A, e que o tempo de serviço correspondente seja contado para disponibilidade. O § 10 proíbe a lei de criar tempo de contribuição fictício.",
+    "o_que_significa": "O servidor que muda de ente, por exemplo de um Município para a União, não perde o tempo já contribuído: ele é levado em conta na nova aposentadoria. Os regimes acertam as contas entre si pela compensação financeira prevista no art. 201.\nO § 10 completa a lógica contributiva do regime. Tempo fictício é aquele contado sem que tenha havido contribuição correspondente, como contar em dobro períodos de licença não gozada. A lei não pode criar esse tipo de contagem.",
+    "exemplo_pratico": "Uma servidora trabalhou dez anos como professora municipal e depois foi aprovada em concurso federal. Os dez anos de contribuição ao regime do Município contam para a sua aposentadoria pelo regime federal. Uma lei que mandasse contar em dobro, para aposentadoria, o tempo de licença não usufruída criaria tempo fictício.",
+    "atencao": "O tempo de serviço contado para disponibilidade não se confunde com tempo de contribuição para aposentadoria. A situação de períodos fictícios reconhecidos antes da vedação depende de regras de transição.",
+    "palavras_dificeis": [
+     {
+      "termo": "Contagem recíproca",
+      "explicacao": "aproveitamento, em um regime previdenciário, do tempo de contribuição feito em outro."
+     },
+     {
+      "termo": "Compensação financeira",
+      "explicacao": "acerto de valores entre regimes previdenciários pelo tempo aproveitado."
+     },
+     {
+      "termo": "Tempo fictício",
+      "explicacao": "período contado para aposentadoria sem contribuição correspondente."
+     },
+     {
+      "termo": "Disponibilidade",
+      "explicacao": "situação do servidor estável que fica sem exercer o cargo, mas vinculado e remunerado proporcionalmente."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.11",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "O nucleo afirmava como regra universal que o teto vale \"sobre a soma\" e que o total de duas aposentadorias licitamente acumuladas se sujeita ao teto; a jurisprudencia constitucional distingue hipoteses de acumulacao.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.11/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.11/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "Temas 377 e 384 (teto por vinculo nas acumulacoes autorizadas) e Tema 359 (teto sobre o somatorio de remuneracao/provento e pensao, morte do instituidor apos a EC 19/1998)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "jurisprudencia indicada pela revisao humana; numeros so na CAMADA EXTERNA"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O parágrafo submete ao teto do art. 37, XI, a soma de todos os proventos de inatividade, inclusive os vindos de acumulação de cargos ou de outras atividades que contribuem para o Regime Geral. Também o aplica à soma de proventos com a remuneração de cargo acumulável, cargo em comissão ou cargo eletivo.",
+    "o_que_significa": "O teto remuneratório também vale para aposentados, e vale sobre a soma.\nSe o servidor tem duas aposentadorias públicas licitamente acumuladas, o total delas se sujeita ao teto. O mesmo acontece quando ele soma proventos a uma remuneração permitida, por exemplo de cargo em comissão ou de mandato eletivo.\nO parágrafo fecha o caminho de quem tentaria contornar o teto somando vínculos diferentes.",
+    "exemplo_pratico": "Um professor aposentado por um Estado é nomeado para cargo em comissão de secretário municipal. Pelo texto do parágrafo, a soma dos proventos e da remuneração do cargo em comissão se submete ao teto.",
+    "atencao": "O parágrafo fala em soma total. A forma de aplicar o teto em cada hipótese concreta de acumulação lícita é tema de interpretação, tratado na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Proventos de inatividade",
+      "explicacao": "valores recebidos pelo servidor aposentado."
+     },
+     {
+      "termo": "Cargo acumulável",
+      "explicacao": "cargo que pode ser exercido junto com outro nas hipóteses admitidas pela Constituição."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.12",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "O draft definia a regra como puramente \"subsidiaria\", aplicavel so na omissao do art. 40 ou da lei do ente; essa condicao de omissao nao esta no § 12.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.12/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.12/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo determina que o regime próprio, além de seguir o art. 40, aplique no que couber os requisitos e critérios que valem para o Regime Geral de Previdência Social.",
+    "o_que_significa": "As regras do Regime Geral funcionam como complemento. Quando o art. 40 e a lei do ente não tratam de um ponto, e a regra do Regime Geral for compatível, ela pode ser usada no regime próprio.\nA expressão \"no que couber\" é o filtro: só se aplica aquilo que for compatível com as características do regime dos servidores.",
+    "exemplo_pratico": "A lei de um regime próprio não define certo critério de comprovação de dependência para a pensão. Se o Regime Geral tem critério compatível sobre o tema, ele pode ser aplicado ao regime próprio, no que couber.",
+    "atencao": "A aplicação é subsidiária e condicionada à compatibilidade. Ela não substitui as regras próprias do art. 40 nem as da lei do ente.",
+    "palavras_dificeis": [
+     {
+      "termo": "Aplicação subsidiária",
+      "explicacao": "uso de uma regra para completar outra quando esta é omissa."
+     },
+     {
+      "termo": "No que couber",
+      "explicacao": "na medida em que for compatível com a situação regulada."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.13",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Evitar a generalizacao \"o regime proprio e para quem ocupa cargo efetivo; os demais contribuem para o Regime Geral\" (nem todo ente possui RPPS); \"exclusivamente\" e essencial.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.13/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.13/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo vincula ao Regime Geral o agente público que ocupa só cargo em comissão de livre nomeação e exoneração, outro cargo temporário, inclusive mandato eletivo, ou emprego público.",
+    "o_que_significa": "O regime próprio é para quem ocupa cargo efetivo. Os demais agentes públicos contribuem para o Regime Geral, o mesmo dos trabalhadores da iniciativa privada.\nA palavra \"exclusivamente\" é decisiva. Se a pessoa ocupa apenas um cargo em comissão, sem vínculo efetivo, vai para o Regime Geral. Se é servidora efetiva e exerce um cargo em comissão, continua no regime próprio pelo seu cargo efetivo.\nO mesmo vale para mandato eletivo, contratação temporária e emprego público.",
+    "exemplo_pratico": "Um advogado sem vínculo com a administração é nomeado assessor em cargo em comissão de um Estado: ele contribui para o Regime Geral. Já uma auditora efetiva do mesmo Estado, nomeada para o mesmo tipo de cargo, continua vinculada ao regime próprio estadual.",
+    "atencao": "O servidor efetivo que exerce mandato eletivo segue a regra do art. 38, V: permanece no regime próprio do ente de origem.",
+    "palavras_dificeis": [
+     {
+      "termo": "Cargo temporário",
+      "explicacao": "cargo exercido por prazo determinado, sem vínculo efetivo."
+     },
+     {
+      "termo": "Emprego público",
+      "explicacao": "vínculo de trabalho com a administração regido pela legislação trabalhista."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.14",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Evitar \"o regime proprio paga ate o teto do Regime Geral\" como afirmacao absoluta (depende da instituicao do regime complementar e da situacao do servidor); nao afirmar genericamente que quem ingressou antes \"continua com as regras anteriores\".",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "aplicacao concreta do teto do RGPS depende do marco de instituicao do regime complementar e da situacao do servidor perante o § 16",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "nota acrescentada por instrucao da revisao humana"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O § 14 obriga todos os entes a instituir, por lei de iniciativa do Executivo, previdência complementar para os servidores efetivos, limitando os benefícios do regime próprio ao teto do Regime Geral, ressalvado o § 16. O § 15 exige plano na modalidade contribuição definida, por entidade fechada ou aberta. O § 16 só aplica essas regras a quem ingressou antes da instituição se houver opção prévia e expressa.",
+    "o_que_significa": "O regime próprio paga até o teto do Regime Geral. Acima disso, o servidor pode formar uma reserva na previdência complementar, baseada em contribuições.\nNa contribuição definida, sabe-se quanto se contribui, mas o valor do benefício depende do que for acumulado e rendido. É diferente do benefício definido, em que o valor é prometido de antemão.\nO § 16 protege quem já era servidor quando o regime complementar foi criado: ele só passa a ter o benefício limitado ao teto se optar por isso, de forma prévia e expressa.",
+    "exemplo_pratico": "Um servidor que tomou posse depois da criação da previdência complementar federal terá aposentadoria do regime próprio limitada ao teto do Regime Geral e pode aderir ao plano complementar. Um colega que ingressou antes continua com as regras anteriores, a menos que opte pela migração.",
+    "atencao": "A instituição da previdência complementar é obrigatória para os entes, nos termos do § 14. As condições específicas de adesão e de migração estão nas leis de cada ente e nas regras de transição.",
+    "palavras_dificeis": [
+     {
+      "termo": "Contribuição definida",
+      "explicacao": "modalidade em que o benefício depende do saldo acumulado com as contribuições e os rendimentos."
+     },
+     {
+      "termo": "Entidade fechada de previdência complementar",
+      "explicacao": "entidade sem fins lucrativos que administra planos para grupos determinados."
+     },
+     {
+      "termo": "Opção prévia e expressa",
+      "explicacao": "escolha formal do servidor, manifestada antes de as regras serem aplicadas a ele."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.18",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Retirado \"a leitura usual e\"; regra ordinaria explicada objetivamente e coordenada com o art. 149, § 1º-A.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.18/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.18/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "o_que_significa/exemplo_pratico/atencao",
+     "content": "parametro ordinario (parcela acima do teto do RGPS) e base excepcional do art. 149, § 1º-A (deficit atuarial)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "explicacao indicada pela revisao humana; o texto do art. 149, § 1º-A, consta do runtime"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O parágrafo prevê contribuição sobre as aposentadorias e pensões do regime próprio na parte que superar o teto de benefícios do Regime Geral, com o mesmo percentual cobrado dos servidores efetivos em atividade.",
+    "o_que_significa": "Aposentados e pensionistas também contribuem, o que expressa o caráter solidário do caput. Este parágrafo usa como referência o teto do Regime Geral: a contribuição alcança os benefícios que o superam, e a leitura usual é que ela recai sobre a parte excedente.\nO percentual é o mesmo exigido dos servidores ativos.\nOutro dispositivo da Constituição, o art. 149, § 1º-A, permite que, havendo déficit atuarial, a contribuição de aposentados e pensionistas incida sobre o valor que supere o salário mínimo.",
+    "exemplo_pratico": "Uma aposentada recebe proventos acima do teto do Regime Geral. Pela regra deste parágrafo, a contribuição recai sobre o valor que excede esse teto, com o mesmo percentual aplicado aos servidores em atividade do seu ente.",
+    "atencao": "O parágrafo não é a única regra sobre a contribuição de inativos: a base ampliada em caso de déficit está no art. 149, § 1º-A, e as alíquotas dependem da lei de cada ente.",
+    "palavras_dificeis": [
+     {
+      "termo": "Base de contribuição",
+      "explicacao": "parcela do valor recebido sobre a qual a contribuição é calculada."
+     },
+     {
+      "termo": "Alíquota",
+      "explicacao": "percentual aplicado sobre a base para calcular a contribuição."
+     },
+     {
+      "termo": "Déficit atuarial",
+      "explicacao": "diferença projetada entre os benefícios futuros e os recursos para pagá-los."
+     },
+     {
+      "termo": "Pensionista",
+      "explicacao": "dependente que recebe pensão por morte do servidor."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.19",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "Retirada a finalidade especulativa (\"incentivo para o servidor experiente\"; \"adia a necessidade de substitui-lo\").",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.19/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.19/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo permite que o servidor efetivo que já cumpriu as exigências da aposentadoria voluntária e decide continuar trabalhando receba um abono de permanência. O abono pode chegar, no máximo, ao valor da sua contribuição previdenciária e vai até a idade da compulsória, segundo critérios da lei do ente.",
+    "o_que_significa": "O abono é um incentivo para o servidor experiente continuar em atividade, em vez de se aposentar. Para a administração, isso adia a necessidade de substituí-lo.\nO valor máximo é o da contribuição previdenciária do servidor; o texto usa \"no máximo\", o que permite valores menores conforme a lei. O pagamento termina quando o servidor atinge a idade da aposentadoria compulsória.\nO texto atual usa \"poderá fazer jus\" e remete à lei do ente os critérios.",
+    "exemplo_pratico": "Um servidor federal cumpre os requisitos da aposentadoria voluntária, mas decide continuar trabalhando. Conforme a lei aplicável, ele passa a receber o abono de permanência, de valor equivalente, no máximo, à sua contribuição, até atingir a idade da compulsória.",
+    "atencao": "O abono depende dos critérios da lei de cada ente. O texto não garante que o valor seja igual à contribuição: ela é o limite máximo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Abono de permanência",
+      "explicacao": "valor pago ao servidor que já pode se aposentar e continua trabalhando."
+     },
+     {
+      "termo": "Fazer jus",
+      "explicacao": "ter direito a receber algo, por cumprir as condições exigidas."
+     },
+     {
+      "termo": "Aposentadoria compulsória",
+      "explicacao": "aposentadoria obrigatória ao atingir a idade-limite fixada pela Constituição e pela lei."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.20",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "\"Cada ente tem um unico regime proprio e uma unica gestora\" qualificado (so o ente que possui RPPS); nao dizer que Poderes nao podem manter \"fundos\" separados; retirada a justificativa teleologica sobre reducao de custos.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.20/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.20/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo proíbe que um ente federativo tenha mais de um regime próprio de previdência ou mais de um órgão ou entidade gestora desse regime. Todos os Poderes, órgãos, autarquias e fundações ficam no mesmo regime e respondem pelo seu financiamento, conforme a lei complementar do § 22.",
+    "o_que_significa": "Cada ente tem um único regime próprio e uma única gestora. Assim, o Judiciário, o Legislativo e o Executivo de um Estado não podem manter fundos ou institutos previdenciários separados.\nA unicidade facilita o controle, reduz custos administrativos e dá transparência ao equilíbrio do regime. Ao mesmo tempo, cada Poder e entidade continua responsável por financiar a parte do regime que lhe corresponde.",
+    "exemplo_pratico": "Um Estado mantinha um instituto de previdência para o Executivo e outro para o Tribunal de Justiça. Pelo parágrafo, os servidores dos dois Poderes devem integrar um único regime, administrado por uma só entidade gestora.",
+    "atencao": "A unicidade é de regime e de gestora, não de orçamento: cada Poder e entidade responde pelo financiamento, nos termos da lei complementar federal do § 22.",
+    "palavras_dificeis": [
+     {
+      "termo": "Entidade gestora",
+      "explicacao": "órgão ou entidade que administra o regime próprio de previdência do ente."
+     },
+     {
+      "termo": "Financiamento",
+      "explicacao": "aporte dos recursos necessários para pagar os benefícios do regime."
+     },
+     {
+      "termo": "Autarquia",
+      "explicacao": "entidade de direito público criada por lei para executar atividade típica do Estado."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "review_reason": "A camada externa sugeria que a lei complementar federal especifica do § 22 ja foi editada; as fontes oficiais a tratam como pendente (art. 9º da EC 103/2019: Lei nº 9.717/1998 e regras transitorias). T1 revisado.",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.22/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.22/BASE/2",
+   "t1_contract_deviations": [],
+   "t1_contract_deviations_confirmed": true,
+   "content_provenance": [
+    {
+     "section": "atencao/external_layer_notes",
+     "content": "art. 9º da EC 103/2019: ate a lei complementar do § 22, aplicam-se a Lei nº 9.717/1998 e as regras do proprio art. 9º; a lei complementar especifica do § 22 e tratada como pendente pelas fontes oficiais",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "informado pela revisao humana; nao pesquisado automaticamente"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "O parágrafo proíbe criar novos regimes próprios de previdência. Para os que já existem, manda uma lei complementar federal fixar normas gerais de organização, funcionamento e responsabilidade da gestão. Os incisos listam temas dessa lei, como extinção e migração para o Regime Geral, uso dos recursos, fiscalização, equilíbrio atuarial, déficit, governança e alíquotas.",
+    "o_que_significa": "Com a vedação, o ente que não tem regime próprio não pode criá-lo, e os seus servidores efetivos ficam no Regime Geral.\nOs regimes que já existem continuam, mas sob normas gerais nacionais. A lei complementar federal define regras comuns de boa gestão, controle e responsabilidade.\nOs incisos mostram as preocupações centrais: permitir a extinção do regime e a migração ordenada dos servidores para o Regime Geral; organizar a arrecadação e o uso dos recursos; garantir fiscalização da União e controle externo e social; definir equilíbrio atuarial e formas de equacionar o déficit; estruturar a gestora com governança e transparência; responsabilizar gestores; permitir consórcios; e fixar parâmetros de base de cálculo e alíquotas, inclusive extraordinárias.",
+    "exemplo_pratico": "Um Município sem regime próprio pretende criar um para os seus servidores efetivos. A vedação do parágrafo impede isso, e os servidores continuam no Regime Geral. Um Município que já tem regime próprio deve seguir as normas gerais da lei complementar federal sobre gestão e equilíbrio.",
+    "atencao": "O parágrafo trata de normas gerais nacionais; cada ente continua a editar a sua própria legislação dentro desses limites. A lista dos incisos é exemplificativa: o texto diz \"entre outros aspectos\".",
+    "palavras_dificeis": [
+     {
+      "termo": "Normas gerais",
+      "explicacao": "regras nacionais que estabelecem bases comuns, deixando aos entes o detalhamento."
+     },
+     {
+      "termo": "Déficit atuarial",
+      "explicacao": "diferença projetada entre os benefícios futuros e os recursos para pagá-los."
+     },
+     {
+      "termo": "Consórcio público",
+      "explicacao": "associação entre entes federativos para gerir em conjunto uma atividade."
+     }
+    ]
+   }
+  }
+ ]
+}

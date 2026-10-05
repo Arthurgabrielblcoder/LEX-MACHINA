@@ -1,0 +1,96 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "norma_id": "CF88",
+ "as_of": "2026-10-04",
+ "scope": [
+  "CF88:ART.37",
+  "CF88:ART.38",
+  "CF88:ART.39",
+  "CF88:ART.40",
+  "CF88:ART.41"
+ ],
+ "baseline": {
+  "commit": "1754186824c29a95c5b05cf4ea77b2a910eb2da9",
+  "tag": "lex-device-v1-context-citation-guard-approved-2026-10-04"
+ },
+ "text_base": {
+  "runtime": "DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt (== /99_LEX_V1/05_TEXT/CF88_RUNTIME.txt do baseline fisico)",
+  "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+  "runtime_bytes": 587133,
+  "runtime_equals_physical_staging": true,
+  "engine_text_source": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+  "per_target_text_equal_to_runtime": "113/113",
+  "structural_canonical_source": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+  "note": "Lei Seca nao alterada. A fonte estrutural canonica (compilado com anotacoes de redacao) foi usada somente para confirmar a origem das redacoes citadas (emendas), nunca como texto da explicacao."
+ },
+ "targets": {
+  "structural": 133,
+  "current": 118,
+  "historical": 14,
+  "revoked": 1,
+  "by_classification": {
+   "BLOCK": 18,
+   "DEVICE": 32,
+   "EXCLUDED_HISTORICAL": 14,
+   "EXCLUDED_REVOKED": 1,
+   "ITEM": 17,
+   "NO_SEPARATE_EXPLANATION": 46,
+   "OVERVIEW": 5
+  }
+ },
+ "per_article": {
+  "CF88:ART.37": {
+   "BLOCK": 9,
+   "DEVICE": 12,
+   "ITEM": 9,
+   "NO_SEPARATE_EXPLANATION": 18,
+   "OVERVIEW": 1
+  },
+  "CF88:ART.38": {
+   "ITEM": 5,
+   "NO_SEPARATE_EXPLANATION": 1,
+   "OVERVIEW": 1
+  },
+  "CF88:ART.39": {
+   "BLOCK": 3,
+   "DEVICE": 4,
+   "NO_SEPARATE_EXPLANATION": 6,
+   "OVERVIEW": 1
+  },
+  "CF88:ART.40": {
+   "BLOCK": 5,
+   "DEVICE": 13,
+   "EXCLUDED_HISTORICAL": 14,
+   "EXCLUDED_REVOKED": 1,
+   "ITEM": 3,
+   "NO_SEPARATE_EXPLANATION": 17,
+   "OVERVIEW": 1
+  },
+  "CF88:ART.41": {
+   "BLOCK": 1,
+   "DEVICE": 3,
+   "NO_SEPARATE_EXPLANATION": 4,
+   "OVERVIEW": 1
+  }
+ },
+ "vigency_findings": {
+  "ART37_XVI_B_REDACAO": "EC 138/2025: \"um cargo de professor com outro de qualquer natureza\" (antes: tecnico ou cientifico; fonte estrutural canonica)",
+  "ART37_XVI_C_REDACAO": "EC 34/2001 (profissionais de saude com profissoes regulamentadas)",
+  "ART37_PAR11_REMISSAO": "texto oficial traz \"( Vide o art. 3º da Emenda Constitucional nº 135/2024 )\"; conteudo da EC fora do art. 37 (ATENCAO + camada externa)",
+  "ART37_PAR14_PAR15": "Incluidos pela EC 103/2019 (fonte estrutural canonica)",
+  "ART37_PAR16": "Incluido pela EC 109/2021",
+  "ART39_CAPUT": "redacao da EC 19/1998 com \"Vide ADI nº 2.135\" e redacao original sobre regime juridico unico na fonte canonica: nao resolvido no corpo (ATENCAO + camada JURISPRUDENCIA)",
+  "ART39_PAR9": "Incluido pela EC 103/2019",
+  "ART40": "caput e maioria dos §§ com redacao da EC 103/2019; §§ 8, 17 e 18 da EC 41/2003; §§ 10, 11 e 16 da EC 20/1998; regras de transicao fora do art. 40",
+  "ART40_HISTORICAL": "14 incisos/alineas historicos (caput I-III e alineas, § 1º III a/b, § 4º I-III, § 7º I-II): EXCLUDED_HISTORICAL",
+  "ART40_PAR21": "(Revogado): EXCLUDED_REVOKED",
+  "ART41": "redacao da EC 19/1998 (tres anos, § 1º I-III, § 4º)"
+ },
+ "reused_pilots": [
+  "CF88:ART.37",
+  "CF88:ART.37:PAR.10",
+  "CF88:ART.37:PAR.6"
+ ],
+ "status": "DRAFT_T1 / PENDING_HUMAN_REVIEW (READY_FOR_EDITORIAL_REVIEW); nenhuma aprovacao humana registrada"
+}

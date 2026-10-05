@@ -1,0 +1,178 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_BATCH05_TRIAGE_QUEUE_D",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND_D.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND_D.json": "2c40d7fd2e73be7a0579284f208ef13dc35be6c91582a2c98d4d59e1d0439e45",
+  "T1_PENDING_TRIAGE_HUMAN_CALIBRATION_REVIEWED_2026-10-04.md": "0de4e1467535a510ff10231f85cd1520da3039f8def3e393fcddf37543f7dcda",
+  "CF88_BATCH_05.entenda.jsonl": "1f57ca086b86f13ef74adca2fd6acce81664032bb40770e33cf09fddfa34df67",
+  "EDITORIAL_CHECKS.json": "8877465a84c878bfc733f075661530e614d256edd875a857dfca85ee18d5bc39",
+  "T1_PENDING_TRIAGE.json": "869555c6f1df77e27f3c6545f0446fb47ddd53758141360430fda8ef01a4a461"
+ },
+ "origin": "T1_PENDING_TRIAGE fila D_FULL_HUMAN_REVIEW (pacote de calibracao humana)",
+ "review_status": "APPROVED_AFTER_ADJUSTMENT",
+ "round_result": {
+  "reviewed": 2,
+  "approved_unchanged": 0,
+  "adjust": 2,
+  "rejected": 0
+ },
+ "adjustments": [
+  {
+   "target_id": "CF88:ART.38:INC.III",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (editorial_version 2)",
+   "review_reason": "A ATENCAO afirmava que \"a soma das remuneracoes continua sujeita ao teto do art. 37, XI\", em tensao com os Temas 377/384 (teto por vinculo nas acumulacoes constitucionalmente autorizadas); a incidencia do teto nessa combinacao fica na camada JURISPRUDENCIA, sem afirmar que os temas decidiram especificamente servidor + mandato de Vereador.",
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "text_edits": [
+    {
+     "section": "atencao",
+     "before": "A soma das remunerações continua sujeita ao teto do art. 37, XI.",
+     "after": "A forma de incidência do teto remuneratório nessa combinação não deve ser deduzida apenas da leitura deste inciso e pertence à camada de JURISPRUDÊNCIA."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "Temas 377 e 384 (teto em acumulacoes constitucionalmente autorizadas), sem afirmar precedente especifico sobre servidor + mandato de Vereador",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "jurisprudencia indicada pela revisao humana; ja catalogada (STF_TEMAS_377_384)"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "Este inciso do art. 38 trata do servidor eleito Vereador. Se houver compatibilidade de horários, ele continua no cargo e recebe as vantagens dele junto com a remuneração do mandato. Se não houver, aplica-se a regra do Prefeito: afastamento com opção de remuneração.",
+     "o_que_significa": "O mandato de Vereador costuma ser exercido em sessões com dias e horários definidos. Por isso a Constituição admite que o servidor continue trabalhando e receba as duas remunerações, desde que consiga cumprir os dois compromissos.\nSe os horários se chocam, a solução é a do inciso II: afastamento do cargo e escolha entre a remuneração do cargo e a do mandato.\nA compatibilidade é verificada no caso concreto, considerando a jornada do cargo e as atividades da Câmara.",
+     "exemplo_pratico": "Uma servidora municipal com jornada pela manhã é eleita vereadora, e as sessões da Câmara acontecem à noite. Ela mantém o cargo e recebe as duas remunerações. Se, em outro município, as sessões ocorressem no mesmo horário da sua jornada, ela seria afastada e teria de escolher uma das remunerações.",
+     "atencao": "É a única hipótese do art. 38 em que cargo e mandato podem ser exercidos ao mesmo tempo, e só com compatibilidade de horários. A soma das remunerações continua sujeita ao teto do art. 37, XI.",
+     "palavras_dificeis": [
+      {
+       "termo": "Compatibilidade de horários",
+       "explicacao": "possibilidade de cumprir a jornada do cargo e as atividades do mandato sem conflito."
+      },
+      {
+       "termo": "Vantagens do cargo",
+       "explicacao": "remuneração e demais parcelas a que o servidor tem direito pelo cargo que ocupa."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "Este inciso do art. 38 trata do servidor eleito Vereador. Se houver compatibilidade de horários, ele continua no cargo e recebe as vantagens dele junto com a remuneração do mandato. Se não houver, aplica-se a regra do Prefeito: afastamento com opção de remuneração.",
+     "o_que_significa": "O mandato de Vereador costuma ser exercido em sessões com dias e horários definidos. Por isso a Constituição admite que o servidor continue trabalhando e receba as duas remunerações, desde que consiga cumprir os dois compromissos.\nSe os horários se chocam, a solução é a do inciso II: afastamento do cargo e escolha entre a remuneração do cargo e a do mandato.\nA compatibilidade é verificada no caso concreto, considerando a jornada do cargo e as atividades da Câmara.",
+     "exemplo_pratico": "Uma servidora municipal com jornada pela manhã é eleita vereadora, e as sessões da Câmara acontecem à noite. Ela mantém o cargo e recebe as duas remunerações. Se, em outro município, as sessões ocorressem no mesmo horário da sua jornada, ela seria afastada e teria de escolher uma das remunerações.",
+     "atencao": "É a única hipótese do art. 38 em que cargo e mandato podem ser exercidos ao mesmo tempo, e só com compatibilidade de horários. A forma de incidência do teto remuneratório nessa combinação não deve ser deduzida apenas da leitura deste inciso e pertence à camada de JURISPRUDÊNCIA.",
+     "palavras_dificeis": [
+      {
+       "termo": "Compatibilidade de horários",
+       "explicacao": "possibilidade de cumprir a jornada do cargo e as atividades do mandato sem conflito."
+      },
+      {
+       "termo": "Vantagens do cargo",
+       "explicacao": "remuneração e demais parcelas a que o servidor tem direito pelo cargo que ocupa."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Temas 377 e 384 do Supremo Tribunal Federal: jurisprudência relevante sobre a incidência do teto do art. 37, XI, nas acumulações constitucionalmente autorizadas de cargos, empregos e funções (teto considerado em cada vínculo). Não são precedente específico sobre o servidor no exercício do mandato de Vereador."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.7",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (editorial_version 2)",
+   "review_reason": "A camada externa afirmava, sem identificar a lei nem registrar fonte, que \"a lei sobre conflito de interesses no Poder Executivo federal esta na camada de leis correlatas\"; substituida pela identificacao da Lei nº 12.813/2013, restrita ao ambito do Poder Executivo federal (nao e regulamentacao universal do § 7º).",
+   "changed_sections": [
+    "external_layer_notes"
+   ],
+   "text_edits": [],
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "Lei nº 12.813/2013 (conflito de interesses no Poder Executivo federal), indicada pela fonte institucional da Camara para o art. 37, § 7º, como legislacao ordinaria",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "revisao humana com fonte oficial (Camara: leginfra ArtCF0862); restrita ao Poder Executivo federal",
+     "relations_engine": {
+      "origem": "CF88:ART.37:PAR.7",
+      "destino": "EXT_LEI12813_2013",
+      "tipo": "REGULAMENTACAO",
+      "fonte": "CAMARA_REGULAMENTACAO_CF",
+      "url": "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0862.htm",
+      "evidencia": "Legislação ordinária: Lei nº 12.813, de 16/05/2013",
+      "arquivo": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/QUARENTENA_2D3_PRESERVADA.json",
+      "classe": "C_EXTERNA_PENDENTE_VALIDACAO",
+      "decisao": "OCULTAR_ATE_VALIDAR_VIGENCIA",
+      "vigencia_status": "NAO_LOCALIZADA",
+      "status_resolvedor": "PENDING",
+      "observacao": "relacao existente no projeto, porem em quarentena (nao validada para exibicao); serve de evidencia local, nao de validacao"
+     },
+     "local_corpus": "updater/saida/18_AGENCIAS_E_ORGAOS_REGULADORES/lei_13848_2019_agencias_reguladoras.txt (linhas 878-879) cita \"conflito de interesse, nos termos da Lei nº 12.813, de 16 de maio de 2013\""
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo manda a lei estabelecer requisitos e restrições para quem ocupa cargo ou emprego, na administração direta ou indireta, que dê acesso a informações privilegiadas.",
+     "o_que_significa": "Alguns agentes públicos conhecem, antes do mercado e da população, decisões que valem dinheiro: mudanças de juros, contratos, regulações. Essa informação é chamada privilegiada.\nO parágrafo quer evitar o conflito de interesses, isto é, o uso dessa informação em benefício próprio ou de terceiros. Por isso a lei pode exigir requisitos para ocupar esses cargos e impor restrições, como períodos de impedimento depois de deixar o cargo.",
+     "exemplo_pratico": "Um diretor de agência reguladora conhece de antemão uma nova regra que valorizará empresas de um setor. A lei pode proibi-lo de negociar ações dessas empresas e de trabalhar para elas por certo período depois de deixar o cargo, como restrição prevista para quem acessa informações privilegiadas.",
+     "atencao": "O parágrafo não fixa quais são as restrições: ele depende de lei. A quarentena após a saída do cargo é um exemplo de restrição legal, não está escrita no texto constitucional.",
+     "palavras_dificeis": [
+      {
+       "termo": "Informação privilegiada",
+       "explicacao": "informação relevante ainda não divulgada, que dá vantagem a quem a conhece."
+      },
+      {
+       "termo": "Conflito de interesses",
+       "explicacao": "situação em que o interesse particular do agente pode influenciar a sua atuação pública."
+      },
+      {
+       "termo": "Quarentena",
+       "explicacao": "período em que o ex-ocupante de cargo fica impedido de exercer certas atividades."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A lei sobre conflito de interesses no Poder Executivo federal está na camada de leis correlatas."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O parágrafo manda a lei estabelecer requisitos e restrições para quem ocupa cargo ou emprego, na administração direta ou indireta, que dê acesso a informações privilegiadas.",
+     "o_que_significa": "Alguns agentes públicos conhecem, antes do mercado e da população, decisões que valem dinheiro: mudanças de juros, contratos, regulações. Essa informação é chamada privilegiada.\nO parágrafo quer evitar o conflito de interesses, isto é, o uso dessa informação em benefício próprio ou de terceiros. Por isso a lei pode exigir requisitos para ocupar esses cargos e impor restrições, como períodos de impedimento depois de deixar o cargo.",
+     "exemplo_pratico": "Um diretor de agência reguladora conhece de antemão uma nova regra que valorizará empresas de um setor. A lei pode proibi-lo de negociar ações dessas empresas e de trabalhar para elas por certo período depois de deixar o cargo, como restrição prevista para quem acessa informações privilegiadas.",
+     "atencao": "O parágrafo não fixa quais são as restrições: ele depende de lei. A quarentena após a saída do cargo é um exemplo de restrição legal, não está escrita no texto constitucional.",
+     "palavras_dificeis": [
+      {
+       "termo": "Informação privilegiada",
+       "explicacao": "informação relevante ainda não divulgada, que dá vantagem a quem a conhece."
+      },
+      {
+       "termo": "Conflito de interesses",
+       "explicacao": "situação em que o interesse particular do agente pode influenciar a sua atuação pública."
+      },
+      {
+       "termo": "Quarentena",
+       "explicacao": "período em que o ex-ocupante de cargo fica impedido de exercer certas atividades."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "No âmbito do Poder Executivo federal, a Lei nº 12.813/2013 disciplina conflito de interesses, inclusive situações relacionadas ao acesso e ao uso de informações privilegiadas."
+    ]
+   }
+  }
+ ]
+}

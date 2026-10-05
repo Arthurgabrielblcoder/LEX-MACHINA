@@ -1,0 +1,1283 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "as_of": "2026-10-04",
+ "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
+ "explanations": 69,
+ "risk_counts": {
+  "LOW": 8,
+  "MEDIUM": 23,
+  "HIGH": 38
+ },
+ "finding_counts": {
+  "ABSOLUTE_CLAIM": 7,
+  "EXAMPLE_NUMBER": 1,
+  "EXTRAPOLATION_NUMBER": 16,
+  "FACT_INCONSISTENCY": 1,
+  "LAW_DEPENDENCY_OMITTED": 5,
+  "LONG_SENTENCE": 1,
+  "MODALITY_SHIFT": 2,
+  "TECHNICAL_TERM_UNDEFINED": 10
+ },
+ "unresolved_findings": 0,
+ "ready_for_editorial_review": 69,
+ "human_approved_t1": 69,
+ "duplication_pairs": [],
+ "rows": [
+  {
+   "target_id": "CF88:ART.37:CAPUT",
+   "explanation_id": "ENTENDA/CF88:ART.37:CAPUT/BASE/2",
+   "title": "Art. 37, caput — Princípios da administração pública",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "principios estruturantes; distincao legalidade administrativa x privada; principios implicitos apenas mencionados"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.I/BASE/1",
+   "title": "Art. 37, inciso I — Acesso a cargos, empregos e funções",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "acesso de estrangeiros depende de lei (eficacia limitada)"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "o_que_significa",
+     "detail": "incondicional",
+     "resolution": "negacao (\"o acesso nao e incondicional\"): reforca que ha requisitos legais; nao e afirmacao absoluta."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.II",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.II/BASE/1",
+   "title": "Art. 37, inciso II — Concurso público",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "concurso publico e excecao do cargo em comissao; nulidade remetida ao § 2º"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.III",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.III/BASE/1",
+   "title": "Art. 37, incisos III e IV — Validade do concurso e prioridade do aprovado",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "prazo de validade e prioridade do aprovado; nao afirmar direito a nomeacao"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.V",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.V/BASE/1",
+   "title": "Art. 37, inciso V — Funções de confiança e cargos em comissão",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "distincao funcao de confianca x cargo em comissao; percentual minimo em lei"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VI",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.VI/BASE/1",
+   "title": "Art. 37, incisos VI e VII — Sindicalização e greve do servidor civil",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "direito de greve dependente de lei especifica; militares fora do inciso"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VIII",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.VIII/BASE/2",
+   "title": "Art. 37, inciso VIII — Reserva de vagas para pessoas com deficiência",
+   "role": "ITEM",
+   "risk": "LOW",
+   "risk_reasons": [
+    "reserva de vagas: comando ao legislador, sem percentual constitucional"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.IX",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.IX/BASE/2",
+   "title": "Art. 37, inciso IX — Contratação por tempo determinado",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "contratacao temporaria: excecao ao concurso, requisitos cumulativos"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.X",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.X/BASE/1",
+   "title": "Art. 37, inciso X — Remuneração por lei e revisão geral anual",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "reserva de lei especifica, iniciativa privativa, revisao geral anual sem indice fixado"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "atencao",
+     "detail": "sempre",
+     "resolution": "negacao (\"nem diz que a revisao sera sempre igual a inflacao\"): afasta leitura indevida do texto."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XI",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XI/BASE/2",
+   "title": "Art. 37, inciso XI — Teto remuneratório e subtetos",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "teto e subtetos por ente e Poder; percentual de 90,25%; alcance sobre proventos e vantagens pessoais"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "90,25%",
+     "resolution": "equivalente numerico de \"noventa inteiros e vinte e cinco centesimos por cento\" do texto oficial."
+    },
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "subsídio",
+     "resolution": "definido em CF88:ART.37:INC.X e INC.XV; retirado deste glossario pelo limite de 5 termos (desvio T1 listado para a verificacao final)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XII",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XII/BASE/1",
+   "title": "Art. 37, incisos XII, XIII e XIV — Limites e vedações na política remuneratória",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "vedacoes remuneratorias: vinculacao, equiparacao e efeito cascata"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "atencao",
+     "detail": "automaticamente",
+     "resolution": "descreve a regra proibida (equiparacao automatica), que e exatamente o conteudo da vedacao do inciso XIII."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XV",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XV/BASE/2",
+   "title": "Art. 37, inciso XV — Irredutibilidade de subsídio e vencimentos",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "irredutibilidade com ressalvas expressas (teto, cascata, subsidio, tributos)"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "o_que_significa",
+     "detail": "sempre",
+     "resolution": "negacao do revisor (\"nao garante que todas as parcelas mantenham para sempre a mesma estrutura\"): afasta leitura absoluta."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVI",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XVI/BASE/2",
+   "title": "Art. 37, incisos XVI e XVII — Acumulação de cargos públicos",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "acumulacao de cargos; alinea \"b\" alterada pela EC 138/2025 (redacao recente); compatibilidade e teto"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2025",
+     "resolution": "ano da EC 138/2025 (texto do revisor), origem confirmada na fonte estrutural canonica do projeto."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2025",
+     "resolution": "ano da EC 138/2025 (texto do revisor), origem confirmada na fonte estrutural canonica do projeto."
+    },
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "autarquia",
+     "resolution": "lista do texto do revisor (inciso XVII); termo definido em CF88:ART.37:INC.XIX."
+    },
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "economia mista",
+     "resolution": "lista do texto do revisor (inciso XVII); termo definido em CF88:ART.37:INC.XIX."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVIII",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XVIII/BASE/2",
+   "title": "Art. 37, incisos XVIII e XXII — Administração tributária",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [
+    "administracao tributaria: precedencia e atuacao integrada"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XIX",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XIX/BASE/1",
+   "title": "Art. 37, incisos XIX e XX — Criação de entidades da administração indireta",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "criacao por lei x autorizacao legislativa; lei complementar para fundacoes"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XXI",
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XXI/BASE/1",
+   "title": "Art. 37, inciso XXI — Licitação",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "licitacao: regra e excecoes legais; limite as exigencias de qualificacao"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.1/BASE/1",
+   "title": "Art. 37, § 1º — Publicidade institucional sem promoção pessoal",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [
+    "publicidade institucional sem promocao pessoal"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.2/BASE/1",
+   "title": "Art. 37, § 2º — Nulidade por desrespeito ao concurso",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "nulidade e punicao; efeitos da nulidade para o trabalhador fora do texto"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.3/BASE/1",
+   "title": "Art. 37, § 3º — Participação do usuário de serviço público",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [
+    "participacao do usuario: comando ao legislador"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.4/BASE/2",
+   "title": "Art. 37, § 4º — Improbidade administrativa",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "improbidade: sancoes, reserva de lei, independencia da esfera penal"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.5",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.5/BASE/1",
+   "title": "Art. 37, § 5º — Prescrição de ilícitos contra o erário",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "prescricao e ressalva das acoes de ressarcimento: redacao controvertida; nao afirmar imprescritibilidade geral"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.7",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.7/BASE/3",
+   "title": "Art. 37, § 7º — Informações privilegiadas",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [
+    "informacoes privilegiadas: comando ao legislador"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.8/BASE/1",
+   "title": "Art. 37, § 8º — Contrato de desempenho e autonomia ampliada",
+   "role": "BLOCK",
+   "risk": "LOW",
+   "risk_reasons": [
+    "contrato de desempenho: faculdade, dependente de lei"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "MODALITY_SHIFT",
+     "section": "o_que_diz",
+     "detail": "deve",
+     "resolution": "o dever e do legislador (\"cabendo a lei dispor sobre\"), literal do texto; a faculdade (ampliacao da autonomia) e explicitada na ATENCAO."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.9",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.9/BASE/2",
+   "title": "Art. 37, §§ 9º, 11 e 12 — Teto: estatais dependentes, parcelas indenizatórias e subteto único",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "teto: estatais dependentes, parcelas indenizatorias (remissao a EC 135/2024) e subteto unico facultativo"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "subsídio",
+     "resolution": "definido em CF88:ART.37:INC.X e INC.XV."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.13",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.13/BASE/2",
+   "title": "Art. 37, § 13 — Readaptação do servidor",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "readaptacao: condicoes cumulativas e manutencao da remuneracao"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.14",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.14/BASE/2",
+   "title": "Art. 37, § 14 — Aposentadoria e rompimento do vínculo",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia: rompimento do vinculo (EC 103/2019); transicao fora do texto"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019, origem confirmada na fonte estrutural canonica; o conteudo do art. 6º da emenda foi informado pela revisao humana (nao consta do runtime)."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019, origem confirmada na fonte estrutural canonica; o conteudo do art. 6º da emenda foi informado pela revisao humana (nao consta do runtime)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.15",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.15/BASE/2",
+   "title": "Art. 37, § 15 — Vedação de complementação de aposentadorias e pensões",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia: vedacao de complementacao com duas excecoes (EC 103/2019)"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019, origem confirmada na fonte estrutural canonica; o conteudo do art. 7º da emenda foi informado pela revisao humana (nao consta do runtime)."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019, origem confirmada na fonte estrutural canonica; o conteudo do art. 7º da emenda foi informado pela revisao humana (nao consta do runtime)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.16",
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.16/BASE/1",
+   "title": "Art. 37, § 16 — Avaliação de políticas públicas",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [
+    "avaliacao de politicas publicas (EC 109/2021)"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.38",
+   "explanation_id": "ENTENDA/CF88:ART.38/BASE/2",
+   "title": "Art. 38 — Servidor público no exercício de mandato eletivo",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "visao geral do servidor em mandato eletivo; distincao por tipo de mandato"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "economia mista",
+     "resolution": "mencionado apenas para delimitar o alcance do artigo (que nao os cita); definido em CF88:ART.37:INC.XIX."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.38:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.I/BASE/2",
+   "title": "Art. 38, inciso I — Mandato federal, estadual ou distrital",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "afastamento obrigatorio sem opcao de remuneracao"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.38:INC.II",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.II/BASE/3",
+   "title": "Art. 38, inciso II — Servidor eleito Prefeito",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "Prefeito: afastamento com opcao de remuneracao, sem acumulo"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.38:INC.III",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.III/BASE/2",
+   "title": "Art. 38, inciso III — Servidor eleito Vereador",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "Vereador: compatibilidade de horarios; teto"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.38:INC.IV",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.IV/BASE/2",
+   "title": "Art. 38, inciso IV — Tempo de serviço durante o mandato",
+   "role": "ITEM",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "tempo de servico: excecao da promocao por merecimento"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.38:INC.V",
+   "explanation_id": "ENTENDA/CF88:ART.38:INC.V/BASE/2",
+   "title": "Art. 38, inciso V — Previdência do servidor no mandato",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia: filiacao ao regime proprio do ente de origem"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39",
+   "explanation_id": "ENTENDA/CF88:ART.39/BASE/3",
+   "title": "Art. 39 — Política de pessoal e remuneração dos servidores",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "regime constitucional complexo: historico da redacao do caput (Vide ADI 2.135 na fonte canonica); nao resolvido no corpo"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "1998",
+     "resolution": "ano da EC 19/1998 (texto do revisor), redacao do caput confirmada na fonte estrutural canonica; o resultado do julgamento e conteudo externo com proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE."
+    },
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "a lei",
+     "resolution": "a remissao a lei vem do § 3º (requisitos diferenciados de admissao) e dos §§ 5º e 7º, explicados em CF88:ART.39:PAR.3, PAR.5 e PAR.7; a visao geral apenas situa os temas."
+    },
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "incorporação",
+     "resolution": "citada apenas como tema dos paragrafos; definida no glossario de CF88:ART.39:PAR.9."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.1/BASE/1",
+   "title": "Art. 39, § 1º — Critérios do sistema remuneratório",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "criterios do sistema remuneratorio"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.2/BASE/1",
+   "title": "Art. 39, § 2º — Escolas de governo",
+   "role": "DEVICE",
+   "risk": "LOW",
+   "risk_reasons": [
+    "escolas de governo: Municipios fora da obrigacao textual"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.3/BASE/1",
+   "title": "Art. 39, § 3º — Direitos sociais aplicáveis aos servidores",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "lista fechada de direitos do art. 7º; requisitos diferenciados de admissao"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.4/BASE/2",
+   "title": "Art. 39, §§ 4º e 8º — Subsídio em parcela única",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "subsidio em parcela unica e teto (art. 37, X e XI); parcelas indenizatorias fora do texto"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.5",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.5/BASE/1",
+   "title": "Art. 39, §§ 5º e 6º — Relação entre remunerações e publicação anual",
+   "role": "BLOCK",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "relacao maior/menor remuneracao (faculdade) e publicacao anual (dever)"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "MODALITY_SHIFT",
+     "section": "o_que_diz",
+     "detail": "obriga",
+     "resolution": "a obrigacao e do § 6º (\"publicarao anualmente\"), coberto pelo bloco; a faculdade do § 5º (\"podera\") esta preservada e destacada na ATENCAO."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.7",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.7/BASE/2",
+   "title": "Art. 39, § 7º — Aplicação da economia com despesas correntes",
+   "role": "DEVICE",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "economia de despesas e premio de produtividade dependente de lei"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.9",
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.9/BASE/2",
+   "title": "Art. 39, § 9º — Proibição de incorporar vantagens temporárias",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "vedacao de incorporacao (EC 103/2019); transicao fora do texto"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019 (texto do revisor), origem do § 9º confirmada na fonte estrutural canonica; o conteudo do art. 13 da emenda tem proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019 (texto do revisor), origem do § 9º confirmada na fonte estrutural canonica; o conteudo do art. 13 da emenda tem proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40",
+   "explanation_id": "ENTENDA/CF88:ART.40/BASE/2",
+   "title": "Art. 40 — Regime próprio de previdência dos servidores",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da Emenda Constitucional nº 103/2019, origem confirmada na fonte estrutural canonica do projeto (anotacoes \"Redacao dada pela EC 103/2019\")."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:CAPUT",
+   "explanation_id": "ENTENDA/CF88:ART.40:CAPUT/BASE/2",
+   "title": "Art. 40, caput — Caráter contributivo, solidário e equilíbrio atuarial",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "pensionista",
+     "resolution": "termo do proprio texto oficial do caput (\"de aposentados e de pensionistas\"), de uso comum; glossario do revisor dedicado aos conceitos centrais (carater contributivo/solidario, equilibrios)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.2/BASE/2",
+   "title": "Art. 40, § 2º — Valor mínimo e máximo dos proventos",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "atencao",
+     "detail": "automaticamente",
+     "resolution": "negacao (\"nao significa, por si so, que o servidor recebera automaticamente\"): afasta leitura indevida; nao e afirmacao absoluta."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.3/BASE/1",
+   "title": "Art. 40, §§ 3º e 17 — Cálculo e atualização dos proventos",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.4/BASE/2",
+   "title": "Art. 40, § 4º — Vedação de critérios diferenciados",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.5",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.5/BASE/2",
+   "title": "Art. 40, § 5º — Redução de idade para professores",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LONG_SENTENCE",
+     "section": "o_que_diz",
+     "detail": "O § 5º reduz em cinco anos a idade mínima aplicável ao professor em relação à re",
+     "resolution": "frase do revisor que acompanha a estrutura do § 5º (reducao, condicao de tempo e lei complementar); dividi-la iria alem da politica de microajustes; legibilidade aceita pelo revisor."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "65",
+     "resolution": "idade do § 1º, III (Uniao, homem), base da reducao; dispositivo citado e conferido no runtime."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "57",
+     "resolution": "calculo direto do proprio texto: 62 anos (§ 1º, III, Uniao, mulher) menos 5 anos (§ 5º)."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "60",
+     "resolution": "calculo direto do proprio texto: 65 anos (§ 1º, III, Uniao, homem) menos 5 anos (§ 5º)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.I",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.I/BASE/2",
+   "title": "Art. 40, § 1º, inciso I — Aposentadoria por incapacidade permanente",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "proventos",
+     "resolution": "definido no glossario da visao geral CF88:ART.40 (\"Proventos\"); aqui apenas mencionado (\"o calculo dos proventos tambem nao e definido aqui\")."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.II",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/2",
+   "title": "Art. 40, § 1º, inciso II — Aposentadoria compulsória",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "2015",
+     "resolution": "ano da Lei Complementar nº 152/2015 (texto do revisor), com proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE."
+    },
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "2015",
+     "resolution": "ano da Lei Complementar nº 152/2015 (texto do revisor), com proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.III",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.III/BASE/1",
+   "title": "Art. 40, § 1º, inciso III — Aposentadoria voluntária: idade mínima",
+   "role": "ITEM",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4-A",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.4-A/BASE/1",
+   "title": "Art. 40, §§ 4º-A, 4º-B e 4º-C — Aposentadorias com critérios diferenciados",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.6",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.6/BASE/2",
+   "title": "Art. 40, § 6º — Acumulação de aposentadorias",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40",
+    "acumulacao de beneficios"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.7",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.7/BASE/2",
+   "title": "Art. 40, § 7º — Pensão por morte",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.8",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.8/BASE/1",
+   "title": "Art. 40, § 8º — Reajustamento dos benefícios",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.9",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.9/BASE/2",
+   "title": "Art. 40, §§ 9º e 10 — Contagem de tempo e proibição de tempo fictício",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.11",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.11/BASE/2",
+   "title": "Art. 40, § 11 — Teto sobre proventos e acumulações",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40",
+    "teto sobre soma de proventos e acumulacoes"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "em lei",
+     "resolution": "falso positivo: \"em lei\" integra a expressao \"cargo em comissao declarado em lei de livre nomeacao\", nao remete a regulamentacao."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.12",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.12/BASE/2",
+   "title": "Art. 40, § 12 — Aplicação subsidiária das regras do Regime Geral",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.13",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.13/BASE/2",
+   "title": "Art. 40, § 13 — Quem se vincula ao Regime Geral",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "em lei",
+     "resolution": "falso positivo: \"em lei\" integra a expressao \"cargo em comissao declarado em lei de livre nomeacao\", nao remete a regulamentacao."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.14",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.14/BASE/2",
+   "title": "Art. 40, §§ 14, 15 e 16 — Previdência complementar dos servidores",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40",
+    "previdencia complementar e opcao previa do § 16"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "atencao",
+     "detail": "automaticamente",
+     "resolution": "negacao (\"nao significa que a previdencia complementar pagara automaticamente a diferenca\"): afasta leitura indevida."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.18",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.18/BASE/2",
+   "title": "Art. 40, § 18 — Contribuição de aposentados e pensionistas",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.19",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.19/BASE/2",
+   "title": "Art. 40, § 19 — Abono de permanência",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "atencao",
+     "detail": "automaticamente",
+     "resolution": "negacao (\"nao permite concluir que todo servidor ... recebera automaticamente\"): afasta leitura indevida."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.20",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.20/BASE/2",
+   "title": "Art. 40, § 20 — Unicidade do regime próprio e da gestora",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "lei complementar",
+     "resolution": "o corpo remete a \"legislacao aplicavel\"; a lei complementar do § 22, a que o § 20 se refere, e explicada no BLOCK CF88:ART.40:PAR.22."
+    },
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "autarquia",
+     "resolution": "termo do proprio texto oficial do § 20; definido em CF88:ART.37:INC.XIX."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.22",
+   "explanation_id": "ENTENDA/CF88:ART.40:PAR.22/BASE/2",
+   "title": "Art. 40, § 22 — Vedação de novos regimes próprios e normas gerais",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "previdencia do servidor (regime proprio); redacao dada majoritariamente pela EC 103/2019; regras de transicao fora do art. 40"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "atencao",
+     "detail": "2019",
+     "resolution": "ano da EC 103/2019, que incluiu o § 22 (registro de vigencia ART40 da fonte estrutural canonica); a disciplina transitoria do art. 9º tem proveniencia HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.41",
+   "explanation_id": "ENTENDA/CF88:ART.41/BASE/2",
+   "title": "Art. 41 — Estabilidade do servidor público",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "estabilidade, perda do cargo e seus efeitos (redacao da EC 19/1998); hipotese do art. 169, § 4º, fora do art. 41"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "LAW_DEPENDENCY_OMITTED",
+     "section": "body",
+     "detail": "de lei",
+     "resolution": "a lei complementar da avaliacao periodica (§ 1º, III) e explicada no bloco CF88:ART.41:PAR.1; a visao geral situa as hipoteses."
+    },
+    {
+     "code": "TECHNICAL_TERM_UNDEFINED",
+     "section": "body",
+     "detail": "provimento",
+     "resolution": "expressao \"cargo de provimento efetivo\" do texto oficial; explicada pelo termo \"Cargo efetivo\" do glossario do revisor (glossario no limite de 5 termos)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.1",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.1/BASE/1",
+   "title": "Art. 41, § 1º — Hipóteses de perda do cargo do servidor estável",
+   "role": "BLOCK",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "estabilidade, perda do cargo e seus efeitos (redacao da EC 19/1998); hipotese do art. 169, § 4º, fora do art. 41"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.2",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.2/BASE/2",
+   "title": "Art. 41, § 2º — Reintegração e recondução",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "estabilidade, perda do cargo e seus efeitos (redacao da EC 19/1998); hipotese do art. 169, § 4º, fora do art. 41"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.3",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.3/BASE/1",
+   "title": "Art. 41, § 3º — Disponibilidade do servidor estável",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "estabilidade, perda do cargo e seus efeitos (redacao da EC 19/1998); hipotese do art. 169, § 4º, fora do art. 41"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "FACT_INCONSISTENCY",
+     "section": "DISPONIBILIDADE_PROPORCIONAL",
+     "detail": "A remuneração na disponibilidade é proporcional ao tempo de serviço, e não necessariamente integral.",
+     "resolution": "falso positivo da regra: a frase afirma a proporcionalidade do texto e nega a integralidade, exatamente o que a regra protege."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "CF88:ART.41:PAR.4",
+   "explanation_id": "ENTENDA/CF88:ART.41:PAR.4/BASE/2",
+   "title": "Art. 41, § 4º — Avaliação especial de desempenho",
+   "role": "DEVICE",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "estabilidade, perda do cargo e seus efeitos (redacao da EC 19/1998); hipotese do art. 169, § 4º, fora do art. 41"
+   ],
+   "review_status": "HUMAN_APPROVED_T1",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  }
+ ]
+}

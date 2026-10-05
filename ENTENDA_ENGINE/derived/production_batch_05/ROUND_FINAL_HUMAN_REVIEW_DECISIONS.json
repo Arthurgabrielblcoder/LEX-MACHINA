@@ -1,0 +1,739 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_BATCH05_TRIAGE_FINAL_29",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND_FINAL.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND_FINAL.json": "ea9447ad8fe7f37e5f1fc3ac9edfcdbef3c65087a95df831b4aae7bc432409fc",
+  "T1_PENDING_TRIAGE_HUMAN_CALIBRATION_REVIEWED_2026-10-04.md": "0de4e1467535a510ff10231f85cd1520da3039f8def3e393fcddf37543f7dcda",
+  "CF88_BATCH_05.entenda.jsonl": "ab80ce1295568060058141f5daa745712d1dbd53d5c853d8bdbe0aaed9506c39",
+  "EDITORIAL_CHECKS.json": "aa20101d68f4ecf0419a63a42ec1a47dec45f6c15d1e5809a7d6e3ed89f90fa2"
+ },
+ "calibration": {
+  "queue_c_original": 9,
+  "queue_c_false_positives": [
+   "CF88:ART.37:INC.II",
+   "CF88:ART.37:INC.X",
+   "CF88:ART.37:INC.XII",
+   "CF88:ART.39:PAR.2"
+  ],
+  "queue_c_useful": [
+   "CF88:ART.37:CAPUT",
+   "CF88:ART.37:INC.XVIII",
+   "CF88:ART.37:PAR.13",
+   "CF88:ART.38:INC.II",
+   "CF88:ART.39:PAR.7"
+  ],
+  "queue_c_precision": "5/9",
+  "clean_low_found_problem": [
+   "CF88:ART.37:INC.VIII"
+  ],
+  "clean_medium_found_problems": [
+   "CF88:ART.37:INC.IX",
+   "CF88:ART.37:INC.XV",
+   "CF88:ART.38:INC.I",
+   "CF88:ART.38:INC.IV"
+  ],
+  "lesson": "sem alerta != aprovacao automatica segura; pipeline = triagem e reducao de volume humano, nao aprovacao autonoma"
+ },
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "decision_counts": {
+  "APPROVED": 19,
+  "APPROVED_AFTER_ADJUSTMENT": 10
+ },
+ "note": "29 de 29 pendentes. CF88:ART.37:PAR.7 (ja aprovado na fila D) recebeu edicao pos-aprovacao v2 -> v3 (post_approval_edits).",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.37:INC.I",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.I/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.II",
+   "decision": "APPROVED",
+   "calibration_queue": "C->B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.II/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (alerta da fila C falso positivo no contexto; reclassificado para B)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.III",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.III/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.V",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.V/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VI",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.VI/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.X",
+   "decision": "APPROVED",
+   "calibration_queue": "C->B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.X/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (alerta da fila C falso positivo no contexto; reclassificado para B)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XII",
+   "decision": "APPROVED",
+   "calibration_queue": "C->B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XII/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (alerta da fila C falso positivo no contexto; reclassificado para B)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XIX",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XIX/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XXI",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:INC.XXI/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.1",
+   "decision": "APPROVED",
+   "calibration_queue": "A",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.1/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_LOW confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.16",
+   "decision": "APPROVED",
+   "calibration_queue": "A",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.16/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_LOW confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.2",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.2/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.3",
+   "decision": "APPROVED",
+   "calibration_queue": "A",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.3/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_LOW confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.8",
+   "decision": "APPROVED",
+   "calibration_queue": "A",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.37:PAR.8/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_LOW confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.1",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.1/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.2",
+   "decision": "APPROVED",
+   "calibration_queue": "C->B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.2/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (alerta da fila C falso positivo no contexto; reclassificado para B)"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.3",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.3/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.5",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.39:PAR.5/BASE/1",
+   "review_reason": "aprovado sem mudanca juridica na calibracao humana (CLEAN_MEDIUM confirmado)"
+  },
+  {
+   "target_id": "CF88:ART.37:CAPUT",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "C",
+   "review_reason": "\"O administrador publico so pode agir com base em autorizacao da lei\" e formulacao excessivamente absoluta.",
+   "changed_sections": [
+    "o_que_significa",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:CAPUT/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:CAPUT/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "o administrador público só pode agir com base em autorização da lei.",
+     "after": "a legalidade exige que a Administração atue conforme o ordenamento jurídico e dentro das competências que lhe são atribuídas."
+    },
+    {
+     "section": "palavras_dificeis:Legalidade administrativa",
+     "before": "regra segundo a qual a administração só age quando a lei autoriza.",
+     "after": "dever de a Administração atuar conforme o ordenamento jurídico e dentro das competências que lhe são atribuídas."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O caput fixa cinco princípios que guiam qualquer atuação administrativa, seja de órgão, seja de entidade pública, em qualquer nível de governo: legalidade, impessoalidade, moralidade, publicidade e eficiência. Na sequência, abre a lista de regras que os incisos detalham.",
+    "o_que_significa": "Princípio é uma norma de orientação geral: vale para todos os atos administrativos e serve para interpretar as regras específicas.\nLegalidade administrativa é diferente da legalidade do particular. A pessoa comum pode fazer tudo o que a lei não proíbe; o administrador público só pode agir com base em autorização da lei.\nImpessoalidade tem duas faces: a administração não pode favorecer nem perseguir pessoas, e o ato é atribuído ao órgão, não à autoridade que o assina.\nMoralidade exige honestidade, lealdade e boa-fé. Um ato pode parecer legal na forma e ainda assim violar a moralidade, por exemplo quando é usado para um fim desonesto.\nPublicidade é a regra de transparência: os atos devem ser divulgados, e o sigilo só cabe nas hipóteses que a própria Constituição admite.\nEficiência cobra bons resultados com uso racional dos recursos públicos.",
+    "exemplo_pratico": "Um secretário municipal decide conceder, por conta própria, um desconto de taxa a uma empresa amiga, sem lei que o autorize. O ato viola a legalidade, porque falta base legal, e a impessoalidade, porque beneficia um particular específico. Se, além disso, o desconto for concedido em troca de apoio político, também fica evidente a ofensa à moralidade.",
+    "atencao": "Os cinco princípios do caput são os expressos. A administração também se submete a outros princípios que decorrem do sistema constitucional e das leis, como razoabilidade e proporcionalidade. Publicidade não significa ausência total de sigilo: a Constituição admite restrições, por exemplo para proteger a intimidade ou a segurança da sociedade e do Estado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Princípio",
+      "explicacao": "norma geral que orienta a interpretação e a aplicação das demais regras."
+     },
+     {
+      "termo": "Legalidade administrativa",
+      "explicacao": "regra segundo a qual a administração só age quando a lei autoriza."
+     },
+     {
+      "termo": "Impessoalidade",
+      "explicacao": "dever de agir para o interesse público, sem favorecer nem prejudicar pessoas determinadas."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:INC.IX",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "B->C",
+   "review_reason": "Nao ensinar que a natureza permanente da atividade, isoladamente, invalida a contratacao temporaria; nucleo: necessidade temporaria de excepcional interesse publico. Tema 612 na camada externa.",
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:INC.IX/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:INC.IX/BASE/2",
+   "text_edits": [
+    {
+     "section": "atencao",
+     "before": "Contratações temporárias renovadas por anos seguidos para atividades permanentes desvirtuam o inciso e contornam a exigência de concurso do inciso II.",
+     "after": "A contratação temporária não pode ser utilizada como forma ordinária de suprir necessidades permanentes da Administração. A validade depende dos requisitos constitucionais e legais aplicáveis à necessidade concreta."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Tema 612 (requisitos da contratacao temporaria: previsao legal, prazo predeterminado, necessidade temporaria, interesse publico excepcional, indispensabilidade)",
+     "note": "jurisprudencia indicada pela revisao humana; nao afirma que a natureza permanente da atividade, isoladamente, invalida a contratacao"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "Dentro das regras do art. 37, este inciso atribui à lei a definição dos casos em que a administração pode contratar pessoal por tempo determinado. A finalidade é atender a uma necessidade temporária e de excepcional interesse público.",
+    "o_que_significa": "É uma forma de contratação sem concurso, admitida apenas em situações passageiras e excepcionais. O texto combina três ideias: tempo determinado, necessidade temporária e interesse público excepcional.\nPor isso a contratação temporária não serve para suprir, de forma permanente, a falta de servidores efetivos. Se a necessidade é contínua, o caminho é criar cargos e realizar concurso.\nOs casos permitidos são fixados em lei de cada ente federativo. Em geral há um processo seletivo simplificado, mas o inciso não exige concurso.",
+    "exemplo_pratico": "Durante uma epidemia, um município contrata, por seis meses, profissionais de saúde para reforçar o atendimento, com base na lei municipal que prevê essa hipótese. Terminada a situação excepcional, os contratos se encerram.",
+    "atencao": "Contratações temporárias renovadas por anos seguidos para atividades permanentes desvirtuam o inciso e contornam a exigência de concurso do inciso II. O contratado temporário não ocupa cargo efetivo e não adquire estabilidade.",
+    "palavras_dificeis": [
+     {
+      "termo": "Excepcional interesse público",
+      "explicacao": "situação incomum que exige resposta rápida da administração para proteger o interesse coletivo."
+     },
+     {
+      "termo": "Processo seletivo simplificado",
+      "explicacao": "seleção mais rápida e simples que o concurso, usada nas contratações temporárias."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:INC.VIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "A->C",
+   "review_reason": "O nucleo afirmava \"A deficiencia deve ser compativel com as atribuicoes do cargo\", condicao que nao vem do inciso VIII; substituida pela remissao a legislacao aplicavel (percentual e criterios).",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:INC.VIII/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:INC.VIII/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": " A Constituição não fixa o percentual; ela obriga o legislador a fixá-lo e a definir como esses candidatos serão admitidos.",
+     "after": ""
+    },
+    {
+     "section": "o_que_significa",
+     "before": "A deficiência deve ser compatível com as atribuições do cargo.",
+     "after": "A Constituição não fixa o percentual reservado nem detalha todos os critérios de admissão. Esses pontos dependem da legislação aplicável."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "No conjunto de regras do art. 37, este inciso manda a lei reservar uma parte dos cargos e empregos públicos para pessoas com deficiência e definir os critérios de admissão desses candidatos.",
+    "o_que_significa": "É uma ação afirmativa: uma medida que busca igualdade real, compensando barreiras enfrentadas por um grupo. A Constituição não fixa o percentual; ela obriga o legislador a fixá-lo e a definir como esses candidatos serão admitidos.\nA reserva não dispensa o concurso. O candidato com deficiência participa do concurso e concorre às vagas reservadas, segundo os critérios previstos em lei e no edital. A deficiência deve ser compatível com as atribuições do cargo.\nO texto oficial usa a expressão \"pessoas portadoras de deficiência\", da época da redação. Hoje se usa a expressão \"pessoa com deficiência\".",
+    "exemplo_pratico": "Um concurso estadual oferece 100 vagas e, conforme a lei estadual, reserva parte delas a candidatos com deficiência. Uma candidata cega concorre nessas vagas para um cargo administrativo e realiza a prova com os recursos de acessibilidade previstos no edital.",
+    "atencao": "O inciso não fixa número nem percentual: isso cabe à lei de cada ente. A reserva convive com o concurso e não o substitui.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ação afirmativa",
+      "explicacao": "medida que dá tratamento diferenciado a um grupo para promover igualdade real."
+     },
+     {
+      "termo": "Reserva de vagas",
+      "explicacao": "parte das vagas de um concurso destinada a determinado grupo de candidatos."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XV",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "B->D",
+   "review_reason": "O draft tratava a irredutibilidade como garantia de que uma parcela especifica (vencimento basico) jamais possa ser reduzida; a garantia protege o montante nominal, sem direito a composicao imutavel.",
+   "changed_sections": [
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:INC.XV/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:INC.XV/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Irredutibilidade significa que o valor nominal pago pelo cargo não pode ser diminuído por ato do poder público. A garantia dá segurança ao servidor sobre a sua remuneração.",
+     "after": "A irredutibilidade protege o montante nominal da remuneração juridicamente assegurada, mas não garante que todas as parcelas mantenham para sempre a mesma estrutura ou forma de cálculo. A legislação pode alterar a composição remuneratória, observadas a garantia constitucional e as ressalvas previstas no próprio inciso."
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma lei estadual reduz em 10% o vencimento básico de um cargo, sem relação com o teto. Essa redução contraria o inciso XV. Já o corte da parte da remuneração que excede o teto do inciso XI não viola a irredutibilidade, porque é uma das ressalvas do próprio texto.",
+     "after": "Uma lei reorganiza a carreira e modifica determinada gratificação, preservando o total nominal da remuneração. A mudança da composição, por si só, não caracteriza necessariamente violação à irredutibilidade. Situação diferente ocorre se a alteração reduz o montante nominal constitucionalmente protegido sem fundamento jurídico que autorize a redução."
+    },
+    {
+     "section": "atencao",
+     "before": "A garantia protege o valor nominal. O inciso",
+     "after": "Não há direito adquirido à composição imutável da remuneração. O próprio inciso contém ressalvas, e o teto remuneratório deve ser tratado conforme a Constituição e a jurisprudência. O inciso"
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "o_que_significa/exemplo_pratico/atencao/external_layer_notes",
+     "content": "irredutibilidade protege o montante nominal; sem direito adquirido a composicao imutavel da remuneracao",
+     "note": "conceito fornecido pela revisao humana; nenhum numero de tema/processo foi indicado e nenhum foi acrescentado"
+    }
+   ],
+   "original_content": {
+    "o_que_diz": "Entre as regras do art. 37, este inciso torna irredutíveis o subsídio e os vencimentos de quem ocupa cargo ou emprego público. A garantia tem ressalvas expressas: o teto (inciso XI), a vedação do efeito cascata (inciso XIV), o subsídio em parcela única (art. 39, § 4º) e regras tributárias, como o imposto de renda.",
+    "o_que_significa": "Irredutibilidade significa que o valor nominal pago pelo cargo não pode ser diminuído por ato do poder público. A garantia dá segurança ao servidor sobre a sua remuneração.\nMas ela não é ilimitada. Os valores que ultrapassam o teto podem ser cortados; acréscimos calculados em cascata podem ser ajustados; e a incidência de tributos, como o imposto de renda, não é tratada como redução proibida. As remissões aos arts. 150, II, e 153 confirmam que o servidor paga impostos como os demais contribuintes.",
+    "exemplo_pratico": "Uma lei estadual reduz em 10% o vencimento básico de um cargo, sem relação com o teto. Essa redução contraria o inciso XV. Já o corte da parte da remuneração que excede o teto do inciso XI não viola a irredutibilidade, porque é uma das ressalvas do próprio texto.",
+    "atencao": "A garantia protege o valor nominal. O inciso não assegura reajuste automático para repor perdas da inflação; esse tema é tratado pela revisão geral anual do inciso X.",
+    "palavras_dificeis": [
+     {
+      "termo": "Irredutibilidade",
+      "explicacao": "proibição de reduzir o valor da remuneração do cargo."
+     },
+     {
+      "termo": "Valor nominal",
+      "explicacao": "quantia em dinheiro efetivamente fixada, sem considerar a perda pela inflação."
+     },
+     {
+      "termo": "Vencimentos",
+      "explicacao": "remuneração do cargo efetivo formada pelo vencimento básico e pelas vantagens previstas em lei."
+     },
+     {
+      "termo": "Subsídio",
+      "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:INC.XVIII",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "C",
+   "review_reason": "Retirada a generalizacao \"porque dela depende o financiamento de todas as politicas publicas\".",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:INC.XVIII/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:INC.XVIII/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Os dois incisos valorizam a atividade de arrecadar e fiscalizar tributos, porque dela depende o financiamento de todas as políticas públicas.",
+     "after": "Os dois incisos dão tratamento especial à atividade de arrecadar e fiscalizar tributos."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O inciso XVIII dá à administração fazendária e aos seus servidores fiscais precedência sobre os demais setores administrativos, dentro de sua competência e na forma da lei. O inciso XXII qualifica as administrações tributárias como essenciais ao Estado, exercidas por carreiras específicas, com recursos prioritários e atuação integrada entre os entes.",
+    "o_que_significa": "Os dois incisos valorizam a atividade de arrecadar e fiscalizar tributos, porque dela depende o financiamento de todas as políticas públicas.\nPrecedência significa prioridade: quando a fiscalização tributária atua na sua área, ela tem preferência sobre outros setores administrativos, nos termos da lei.\nO inciso XXII acrescenta três ideias. A atividade deve ser exercida por servidores de carreiras próprias. Ela tem prioridade na destinação de recursos. E União, Estados, Distrito Federal e Municípios devem atuar de forma integrada, inclusive compartilhando cadastros e informações fiscais, conforme lei ou convênio.",
+    "exemplo_pratico": "A Receita de um Estado e a de um Município firmam convênio para trocar dados cadastrais de empresas e cruzar informações sobre prestação de serviços e circulação de mercadorias. Esse compartilhamento é a atuação integrada prevista no inciso XXII.",
+    "atencao": "A precedência é limitada às áreas de competência da administração fazendária e depende da forma da lei. O compartilhamento de informações fiscais ocorre na forma da lei ou de convênio e não afasta as regras de sigilo aplicáveis.",
+    "palavras_dificeis": [
+     {
+      "termo": "Administração fazendária",
+      "explicacao": "setor do poder público responsável pelas finanças e pela arrecadação."
+     },
+     {
+      "termo": "Administração tributária",
+      "explicacao": "conjunto de órgãos e servidores que fiscalizam e cobram tributos."
+     },
+     {
+      "termo": "Precedência",
+      "explicacao": "prioridade de atuação de um setor em relação a outros."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.37:PAR.13",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "C",
+   "review_reason": "Retirada a explicacao por finalidade presumida (\"Ela evita duas solucoes piores\").",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.37:PAR.13/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:PAR.13/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Readaptação é a mudança do servidor para um cargo compatível com a sua nova condição de saúde. Ela evita duas soluções piores: manter o servidor em atividade que ele não consegue mais exercer, ou aposentá-lo quando ainda pode trabalhar em outra função.",
+     "after": "Readaptação é a mudança do servidor para um cargo cujas atribuições e responsabilidades sejam compatíveis com a limitação física ou mental que ele sofreu."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo permite readaptar o servidor titular de cargo efetivo que tenha sofrido limitação física ou mental. Ele passa a exercer cargo com atribuições compatíveis com essa limitação, enquanto ela durar, se tiver a habilitação e a escolaridade exigidas. A remuneração do cargo de origem é mantida.",
+    "o_que_significa": "Readaptação é a mudança do servidor para um cargo compatível com a sua nova condição de saúde. Ela evita duas soluções piores: manter o servidor em atividade que ele não consegue mais exercer, ou aposentá-lo quando ainda pode trabalhar em outra função.\nO texto traz condições: o servidor deve ser titular de cargo efetivo; a limitação deve ser física ou mental; e ele deve ter a habilitação e o nível de escolaridade do cargo de destino. A readaptação dura enquanto a limitação permanecer.\nA garantia é a remuneração: o servidor continua recebendo a do cargo de origem.",
+    "exemplo_pratico": "Um motorista concursado de uma prefeitura perde parte da visão e não pode mais dirigir. Se tiver a escolaridade exigida, pode ser readaptado para um cargo administrativo, mantendo a remuneração de motorista.",
+    "atencao": "A readaptação se relaciona com a aposentadoria por incapacidade permanente do art. 40, § 1º, I, que só ocorre quando o servidor não pode ser readaptado.",
+    "palavras_dificeis": [
+     {
+      "termo": "Readaptação",
+      "explicacao": "transferência do servidor para cargo compatível com limitação física ou mental sofrida."
+     },
+     {
+      "termo": "Cargo de destino",
+      "explicacao": "cargo para o qual o servidor é readaptado."
+     },
+     {
+      "termo": "Habilitação",
+      "explicacao": "qualificação formal, como diploma ou registro profissional, exigida para o cargo."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.38",
+   "decision": "APPROVED",
+   "calibration_queue": "B",
+   "review_reason": "aprovado sem mudanca juridica; microajuste T1 de NEAR_COPY",
+   "changed_sections": [
+    "o_que_diz"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.38/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.38/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_diz",
+     "before": "com o servidor público da administração direta, autárquica e fundacional",
+     "after": "com o servidor da administração pública direta, autárquica e fundacional"
+    }
+   ],
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "com o servidor público da administração direta, autárquica e fundacional",
+     "applied_text": "com o servidor da administração pública direta, autárquica e fundacional",
+     "policy_item": 2,
+     "reason": "NEAR_COPY_OF_OFFICIAL_TEXT (8 palavras do caput); inversao \"servidor publico da administracao\" -> \"servidor da administracao publica\"; a sugestao automatica (\"da\" -> \"de\") foi rejeitada por piorar a gramatica"
+    }
+   ],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O art. 38 regula o que acontece com o servidor público da administração direta, autárquica e fundacional quando ele assume um mandato eletivo. O caput anuncia as regras, e os cinco incisos tratam do afastamento do cargo, da remuneração, da contagem do tempo de serviço e da previdência.",
+    "o_que_significa": "O artigo resolve um conflito prático: a mesma pessoa passa a ter dois vínculos com o poder público, o cargo de servidor e o mandato. A Constituição não exige que o servidor deixe definitivamente o cargo, mas organiza como os dois vínculos convivem.\nA solução depende do tipo de mandato. Para mandatos federais, estaduais e distritais, o servidor fica afastado do cargo (inciso I). Para Prefeito, também é afastado, mas pode escolher qual remuneração receber (inciso II). Para Vereador, a solução depende da compatibilidade de horários (inciso III).\nOs incisos IV e V protegem a carreira do servidor afastado: o tempo de mandato conta para quase todos os efeitos, e o vínculo previdenciário com o regime próprio de origem é mantido.\nO artigo alcança o servidor da administração direta, autárquica e fundacional. Não menciona expressamente os empregados de empresas públicas e sociedades de economia mista.",
+    "exemplo_pratico": "Uma professora efetiva da rede estadual é eleita deputada estadual. Ela se afasta do cargo de professora durante o mandato, recebe o subsídio de deputada, tem o tempo de mandato contado para os efeitos legais, salvo promoção por merecimento, e continua vinculada ao regime próprio do Estado. Ao fim do mandato, volta ao seu cargo.",
+    "atencao": "O art. 38 não trata de quem pode se candidatar nem de prazos de desincompatibilização antes da eleição. Esses temas estão na legislação eleitoral.",
+    "palavras_dificeis": [
+     {
+      "termo": "Mandato eletivo",
+      "explicacao": "período de exercício de cargo obtido por eleição, como deputado, prefeito ou vereador."
+     },
+     {
+      "termo": "Afastamento",
+      "explicacao": "suspensão temporária do exercício do cargo, sem perda do vínculo."
+     },
+     {
+      "termo": "Desincompatibilização",
+      "explicacao": "afastamento de certos cargos exigido antes da eleição para que alguém possa se candidatar."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.38:INC.I",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "B->C",
+   "review_reason": "\"Mandatos federais sao os de Deputado Federal e Senador\" era enumeracao incompleta; exemplos nao exaustivos.",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.38:INC.I/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.38:INC.I/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Mandatos federais são os de Deputado Federal e Senador. Estaduais e distritais são os de Deputado Estadual e Distrital.",
+     "after": "Mandato federal é o exercido em cargo eletivo da esfera federal, como Presidente da República, Senador ou Deputado Federal. O mesmo vale para os mandatos estaduais e distritais, como os de Governador e de Deputado Estadual ou Distrital."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "Para o servidor que assume mandato federal, estadual ou distrital, este inciso do art. 38 determina o afastamento do cargo, emprego ou função durante o mandato.",
+    "o_que_significa": "Mandatos federais são os de Deputado Federal e Senador. Estaduais e distritais são os de Deputado Estadual e Distrital. Nesses casos, o servidor não pode continuar exercendo o cargo: ele é afastado.\nO inciso não prevê opção de remuneração, diferentemente do inciso II, que cuida do Prefeito. Assim, o servidor afastado passa a receber o subsídio do mandato.\nO afastamento não significa perda do cargo: o vínculo continua, e o servidor retorna ao fim do mandato.",
+    "exemplo_pratico": "Um analista do Tesouro Nacional é eleito deputado federal. Ele fica afastado do cargo de analista enquanto durar o mandato e recebe o subsídio de deputado. Terminado o mandato, retorna ao Tesouro.",
+    "atencao": "A possibilidade de optar pela remuneração do cargo existe para o Prefeito e, em certos casos, para o Vereador. Para os mandatos deste inciso, o texto não a prevê.",
+    "palavras_dificeis": [
+     {
+      "termo": "Mandato distrital",
+      "explicacao": "mandato de Deputado Distrital, na Câmara Legislativa do Distrito Federal."
+     },
+     {
+      "termo": "Subsídio",
+      "explicacao": "remuneração em parcela única paga a detentores de mandato eletivo."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.38:INC.II",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "C",
+   "review_reason": "Retirada a justificativa economica (\"a opcao existe porque o subsidio do Prefeito pode ser menor\").",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.38:INC.II/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.38:INC.II/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A opção existe porque, em muitos municípios, o subsídio do Prefeito pode ser menor do que a remuneração do cargo efetivo.",
+     "after": "O servidor afastado pode escolher entre a remuneração do vínculo funcional e a remuneração do mandato de Prefeito."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "No art. 38, este inciso trata do servidor investido no mandato de Prefeito: ele é afastado do cargo, emprego ou função, mas pode escolher receber a remuneração do cargo de servidor em vez do subsídio de Prefeito.",
+    "o_que_significa": "O afastamento é obrigatório, porque o cargo de Prefeito exige dedicação ao Executivo municipal. A novidade em relação ao inciso I é a opção: o servidor escolhe qual remuneração receber, a do seu cargo ou a do mandato.\nEle recebe uma ou outra, não as duas. A opção existe porque, em muitos municípios, o subsídio do Prefeito pode ser menor do que a remuneração do cargo efetivo.",
+    "exemplo_pratico": "Um médico federal é eleito prefeito de uma cidade pequena, cujo subsídio é inferior ao seu salário de médico. Ele se afasta do cargo de médico e opta por continuar recebendo a remuneração do cargo federal enquanto exerce o mandato.",
+    "atencao": "A opção é entre remunerações; não permite acumular os dois valores. O afastamento do cargo ocorre de qualquer modo, ainda que haja compatibilidade de horários.",
+    "palavras_dificeis": [
+     {
+      "termo": "Investido no mandato",
+      "explicacao": "empossado no cargo eletivo, passando a exercê-lo formalmente."
+     },
+     {
+      "termo": "Opção de remuneração",
+      "explicacao": "escolha entre receber a remuneração do cargo de origem ou o subsídio do mandato."
+     },
+     {
+      "termo": "Subsídio",
+      "explicacao": "remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º)."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.38:INC.IV",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "B->C",
+   "review_reason": "\"O servidor afastado para exercer mandato nao perde tempo de carreira\" apagava a ressalva expressa da promocao por merecimento.",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.38:INC.IV/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.38:INC.IV/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "O servidor afastado para exercer mandato não perde tempo de carreira.",
+     "after": "O período de afastamento é contado como tempo de serviço para os efeitos previstos pelo inciso, exceto para promoção por merecimento."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "Dentro do art. 38, este inciso determina que, nos casos em que o mandato exige afastamento, o tempo de serviço do servidor afastado é contado para todos os efeitos legais, menos para a promoção por merecimento.",
+    "o_que_significa": "O servidor afastado para exercer mandato não perde tempo de carreira. O período conta, por exemplo, para adicionais por tempo de serviço e para a promoção por antiguidade, conforme a lei de cada carreira.\nA exceção é a promoção por merecimento. Ela depende da avaliação do desempenho no próprio cargo, e quem está afastado não exerce o cargo nesse período.\nO inciso só se aplica quando há afastamento. O Vereador que continua no cargo, por ter horários compatíveis, segue trabalhando normalmente.",
+    "exemplo_pratico": "Um servidor fica oito anos afastado como deputado estadual. Ao voltar, esses oito anos contam para os adicionais e para a promoção por antiguidade previstos na lei da sua carreira. Não contam, porém, para a promoção por merecimento.",
+    "atencao": "O inciso trata do tempo de serviço. A situação previdenciária do servidor afastado está no inciso V, e a contagem para aposentadoria depende das regras previdenciárias.",
+    "palavras_dificeis": [
+     {
+      "termo": "Promoção por merecimento",
+      "explicacao": "avanço na carreira baseado na avaliação do desempenho do servidor."
+     },
+     {
+      "termo": "Promoção por antiguidade",
+      "explicacao": "avanço na carreira baseado no tempo de serviço."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.39:PAR.7",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "calibration_queue": "C",
+   "review_reason": "Retirada a finalidade presumida (\"A ideia e incentivar a eficiencia\").",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.39:PAR.7/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.39:PAR.7/BASE/2",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "A ideia é incentivar a eficiência.",
+     "after": "O dispositivo permite que a lei discipline o uso da economia obtida com despesas correntes nas finalidades que o próprio parágrafo enumera."
+    }
+   ],
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo manda a lei de cada ente disciplinar o uso dos recursos economizados com despesas correntes em cada órgão, autarquia e fundação. Esses recursos podem ir para programas de qualidade e produtividade, treinamento, modernização e reaparelhamento do serviço público, inclusive como adicional ou prêmio de produtividade.",
+    "o_que_significa": "A ideia é incentivar a eficiência. Se um órgão gasta menos com despesas do dia a dia, como energia, aluguel e materiais, parte dessa economia pode voltar para melhorar o próprio serviço.\nO parágrafo admite que essa aplicação inclua um adicional ou prêmio de produtividade para os servidores, como forma de recompensar resultados.\nTudo depende de lei, que define critérios e limites.",
+    "exemplo_pratico": "Uma autarquia estadual reduz seus gastos com energia e papel ao digitalizar processos. Com base na lei estadual, parte da economia é usada para comprar equipamentos e para pagar prêmio de produtividade aos servidores das unidades que atingiram as metas.",
+    "atencao": "O prêmio de produtividade depende de previsão em lei e continua sujeito às regras gerais de remuneração, como o teto. O parágrafo não autoriza o gestor a criar o prêmio por ato próprio.",
+    "palavras_dificeis": [
+     {
+      "termo": "Despesas correntes",
+      "explicacao": "gastos de manutenção do funcionamento da administração, como energia, materiais e serviços."
+     },
+     {
+      "termo": "Prêmio de produtividade",
+      "explicacao": "valor pago ao servidor como recompensa pelo alcance de metas de desempenho."
+     },
+     {
+      "termo": "Reaparelhamento",
+      "explicacao": "renovação de equipamentos e estrutura de um órgão."
+     },
+     {
+      "termo": "Autarquia",
+      "explicacao": "entidade de direito público criada por lei para executar atividade típica do Estado."
+     }
+    ]
+   }
+  }
+ ],
+ "post_approval_edits": [
+  {
+   "target_id": "CF88:ART.37:PAR.7",
+   "decision": "APPROVED_AFTER_POST_APPROVAL_EDIT",
+   "review_reason": "Pos-aprovacao: retirada a finalidade nao declarada (\"O paragrafo quer evitar o conflito de interesses\"); formulacao neutra. Camada externa (Lei nº 12.813/2013) e proveniencia mantidas; relacao do Relations Engine segue PENDING (quarentena), nao promovida.",
+   "from_explanation_id": "ENTENDA/CF88:ART.37:PAR.7/BASE/2",
+   "to_explanation_id": "ENTENDA/CF88:ART.37:PAR.7/BASE/3",
+   "text_edits": [
+    {
+     "section": "o_que_significa",
+     "before": "Alguns agentes públicos conhecem, antes do mercado e da população, decisões que valem dinheiro: mudanças de juros, contratos, regulações. Essa informação é chamada privilegiada.\nO parágrafo quer evitar o conflito de interesses, isto é, o uso dessa informação em benefício próprio ou de terceiros. Por isso a lei pode exigir requisitos para ocupar esses cargos e impor restrições, como períodos de impedimento depois de deixar o cargo.",
+     "after": "Informação privilegiada é informação relevante ainda não divulgada cujo conhecimento pode gerar vantagem.\nO parágrafo não enumera as restrições aplicáveis: remete à lei a definição dos requisitos e limites para quem ocupa cargo ou emprego com acesso a esse tipo de informação."
+    }
+   ],
+   "relations_engine_status": "PENDING (quarentena; nao promovida)",
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo manda a lei estabelecer requisitos e restrições para quem ocupa cargo ou emprego, na administração direta ou indireta, que dê acesso a informações privilegiadas.",
+     "o_que_significa": "Alguns agentes públicos conhecem, antes do mercado e da população, decisões que valem dinheiro: mudanças de juros, contratos, regulações. Essa informação é chamada privilegiada.\nO parágrafo quer evitar o conflito de interesses, isto é, o uso dessa informação em benefício próprio ou de terceiros. Por isso a lei pode exigir requisitos para ocupar esses cargos e impor restrições, como períodos de impedimento depois de deixar o cargo.",
+     "exemplo_pratico": "Um diretor de agência reguladora conhece de antemão uma nova regra que valorizará empresas de um setor. A lei pode proibi-lo de negociar ações dessas empresas e de trabalhar para elas por certo período depois de deixar o cargo, como restrição prevista para quem acessa informações privilegiadas.",
+     "atencao": "O parágrafo não fixa quais são as restrições: ele depende de lei. A quarentena após a saída do cargo é um exemplo de restrição legal, não está escrita no texto constitucional.",
+     "palavras_dificeis": [
+      {
+       "termo": "Informação privilegiada",
+       "explicacao": "informação relevante ainda não divulgada, que dá vantagem a quem a conhece."
+      },
+      {
+       "termo": "Conflito de interesses",
+       "explicacao": "situação em que o interesse particular do agente pode influenciar a sua atuação pública."
+      },
+      {
+       "termo": "Quarentena",
+       "explicacao": "período em que o ex-ocupante de cargo fica impedido de exercer certas atividades."
+      }
+     ]
+    }
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O parágrafo manda a lei estabelecer requisitos e restrições para quem ocupa cargo ou emprego, na administração direta ou indireta, que dê acesso a informações privilegiadas.",
+     "o_que_significa": "Informação privilegiada é informação relevante ainda não divulgada cujo conhecimento pode gerar vantagem.\nO parágrafo não enumera as restrições aplicáveis: remete à lei a definição dos requisitos e limites para quem ocupa cargo ou emprego com acesso a esse tipo de informação.",
+     "exemplo_pratico": "Um diretor de agência reguladora conhece de antemão uma nova regra que valorizará empresas de um setor. A lei pode proibi-lo de negociar ações dessas empresas e de trabalhar para elas por certo período depois de deixar o cargo, como restrição prevista para quem acessa informações privilegiadas.",
+     "atencao": "O parágrafo não fixa quais são as restrições: ele depende de lei. A quarentena após a saída do cargo é um exemplo de restrição legal, não está escrita no texto constitucional.",
+     "palavras_dificeis": [
+      {
+       "termo": "Informação privilegiada",
+       "explicacao": "informação relevante ainda não divulgada, que dá vantagem a quem a conhece."
+      },
+      {
+       "termo": "Conflito de interesses",
+       "explicacao": "situação em que o interesse particular do agente pode influenciar a sua atuação pública."
+      },
+      {
+       "termo": "Quarentena",
+       "explicacao": "período em que o ex-ocupante de cargo fica impedido de exercer certas atividades."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "No âmbito do Poder Executivo federal, a Lei nº 12.813/2013 disciplina conflito de interesses, inclusive situações relacionadas ao acesso e ao uso de informações privilegiadas."
+    ]
+   }
+  }
+ ]
+}

@@ -296,3 +296,7 @@ Estados possíveis de uma recomendação:
 
 - **Alvo principal × correlato.** `primary_target_id` indica o dispositivo em que o vínculo curado deve ficar (ex.: art. 231); o target da recomendação é o correlato (ex.: art. 20, XI). `READY_TO_LINK` exige o vínculo local no alvo principal e a tese materialmente conferida.
 - **Vínculo local equivocado.** `excluded_local_links` registra, como overlay, o vínculo local errado (ex.: Tema 1031 → art. 16, falso positivo do "art. 16.4 da Convenção 169 OIT"). As fontes originais de jurisprudência não são editadas; o vínculo excluído nunca é usado.
+
+## 16. Adendo A6 (2026-10-04): padrão congelado após as Rodadas HIGH do Batch05
+
+Texto integral em `ENTENDA_T1_EDITORIAL_STANDARD_A6.md`: separação Lei Seca / T1 / camada externa / jurisprudência / legislação correlata / transição; proibições aprendidas nas Rodadas 01–03B; proveniência `HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE`; versionamento imutável; política de microajustes T1; severidades e filas do validador v2 (`t1_validator_v2.py`, `t1_triage.py`, `editorial/T1_EXTERNAL_CATALOG.json`). Autoaprovação desligada (`editorial/T1_PIPELINE_CONFIG.json`).

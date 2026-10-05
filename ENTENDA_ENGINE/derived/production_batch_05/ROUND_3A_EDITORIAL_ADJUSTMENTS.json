@@ -1,0 +1,897 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_05",
+ "review_date": "2026-10-04",
+ "review_scope": "CF88_ART40_HIGH_ROUND_3A",
+ "reviewer_decision": "ARTHUR_AUTHORIZED_CHATGPT_EDITORIAL_REVIEW",
+ "original_drafts": "BATCH_05_DRAFTS_PRE_ROUND3A.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_05_DRAFTS_PRE_ROUND3A.json": "173c0c4dc9ad2b5e8d3a95f12e9bfa4adffd66c6b68b3c079d08cc817c4b6568",
+  "ENTENDA_BATCH05_REVIEW_ROUND03A_ART40_HIGH.md": "a3c071ffa53c54bb776843acd17f6b11ab77917abbdd11564d308823d03f5780",
+  "REVIEW_BATCH_05.md": "f69cca1ab90dd446fcab34e048438d7e592a8f019da8cad8a2c42ed4bfecbe07",
+  "CF88_BATCH_05.entenda.jsonl": "23889793d424cecc5684eec5fb9abe6296bce48ff2ff39f71ab4277c2533d396",
+  "EDITORIAL_CHECKS.json": "04f3c0ed30cbb5f70ecaacd5b43b6166d66cf35892d87b25789d59f5988008f8"
+ },
+ "t1_microadjust_policy": {
+  "authorized": [
+   "escrever siglas por extenso quando o T1 bloquear",
+   "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+   "remover do glossario um termo redundante quando exceder o limite de 5",
+   "pequenos ajustes gramaticais exigidos pelo validador",
+   "substituir identificadores internos por expressao adequada ao usuario final"
+  ],
+  "conditions": "significado juridico identico; nenhuma regra, excecao, requisito, prazo, valor ou exemplo alterado; todo desvio registrado; teste automatico demonstra que so houve adaptacao T1; mudanca juridica/conceitual/factual -> PARAR e devolver"
+ },
+ "review_status": "APPROVED_UNDER_PRE_AUTHORIZED_T1_POLICY",
+ "round_result": {
+  "reviewed": 11,
+  "approved_unchanged": 3,
+  "adjust": 8,
+  "rejected": 0
+ },
+ "deviation_policy": "texto do revisor incorporado literalmente; somente microajustes T1 da politica pre-autorizada, cada um com policy_item; mudanca juridica/factual -> devolver a revisao humana",
+ "provenance_policy": "fatos externos informados pela revisao humana registrados como HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+ "adjustments": [
+  {
+   "target_id": "CF88:ART.40",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Nao afirmar que todos os servidores efetivos necessariamente se aposentam por RPPS: o art. 40 disciplina os regimes proprios existentes; nem todo ente possui RPPS e o § 22 veda a instituicao de novos regimes proprios.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Nao afirmar que todos os servidores efetivos necessariamente se aposentam por RPPS: o art. 40 disciplina os regimes proprios existentes; nem todo ente possui RPPS e o § 22 veda a instituicao de novos regimes proprios.",
+    "raw_wrapped": {
+     "o_que_diz": "O art. 40 disciplina o regime próprio de previdência social\ndos servidores titulares de cargos efetivos abrangidos por\nesse regime.\nO artigo trata do financiamento do regime, das modalidades\nde aposentadoria, do cálculo e dos limites dos benefícios,\ndas hipóteses com critérios diferenciados, da pensão por\nmorte, da acumulação de benefícios, da previdência\ncomplementar e da organização dos regimes próprios.",
+     "o_que_significa": "O regime próprio de previdência social, ou RPPS, é o sistema\nprevidenciário mantido por determinado ente federativo para\nos servidores titulares de cargos efetivos que estejam\nabrangidos por esse regime.\nO art. 40 estabelece a estrutura constitucional permanente\ndos RPPS.\nO caput trata do financiamento e do equilíbrio do sistema.\nO § 1º apresenta as modalidades de aposentadoria. Outros\nparágrafos disciplinam cálculo, limites, critérios\ndiferenciados, pensão, acumulação, previdência complementar\ne organização do regime.\nNem todo ente federativo possui RPPS. Além disso, o § 22\nveda a instituição de novos regimes próprios e determina\nque lei complementar federal estabeleça normas gerais para\nos que já existam.",
+     "exemplo_pratico": "Uma servidora titular de cargo efetivo de um Estado que\npossui regime próprio contribui para esse sistema.\nQuando preencher os requisitos aplicáveis, sua aposentadoria\nserá concedida pelo RPPS estadual, segundo a Constituição,\nas normas gerais e a legislação daquele regime.",
+     "atencao": "O texto permanente do art. 40 não deve ser confundido com\nas diversas regras de transição criadas pela EC 103/2019.\nPara servidores que já estavam no serviço público quando\nocorreram as reformas previdenciárias, pode ser necessário\nconsultar a própria emenda e a legislação aplicável ao ente.",
+     "palavras_dificeis": [
+      "Regime próprio de previdência social: regime previdenciário\ndestinado aos servidores titulares de cargos efetivos\nabrangidos por ele.",
+      "Proventos: valor recebido em razão da aposentadoria.",
+      "Previdência complementar: regime previdenciário adicional,\ndisciplinado por regras próprias."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O art. 40 disciplina o regime próprio de previdência social dos servidores titulares de cargos efetivos abrangidos por esse regime.\nO artigo trata do financiamento do regime, das modalidades de aposentadoria, do cálculo e dos limites dos benefícios, das hipóteses com critérios diferenciados, da pensão por morte, da acumulação de benefícios, da previdência complementar e da organização dos regimes próprios.",
+     "o_que_significa": "O regime próprio de previdência social, ou RPPS, é o sistema previdenciário mantido por determinado ente federativo para os servidores titulares de cargos efetivos que estejam abrangidos por esse regime.\nO art. 40 estabelece a estrutura constitucional permanente dos RPPS.\nO caput trata do financiamento e do equilíbrio do sistema.\nO § 1º apresenta as modalidades de aposentadoria. Outros parágrafos disciplinam cálculo, limites, critérios diferenciados, pensão, acumulação, previdência complementar e organização do regime.\nNem todo ente federativo possui RPPS. Além disso, o § 22 veda a instituição de novos regimes próprios e determina que lei complementar federal estabeleça normas gerais para os que já existam.",
+     "exemplo_pratico": "Uma servidora titular de cargo efetivo de um Estado que possui regime próprio contribui para esse sistema.\nQuando preencher os requisitos aplicáveis, sua aposentadoria será concedida pelo RPPS estadual, segundo a Constituição, as normas gerais e a legislação daquele regime.",
+     "atencao": "O texto permanente do art. 40 não deve ser confundido com as diversas regras de transição criadas pela EC 103/2019.\nPara servidores que já estavam no serviço público quando ocorreram as reformas previdenciárias, pode ser necessário consultar a própria emenda e a legislação aplicável ao ente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Regime próprio de previdência social",
+       "explicacao": "regime previdenciário destinado aos servidores titulares de cargos efetivos abrangidos por ele."
+      },
+      {
+       "termo": "Proventos",
+       "explicacao": "valor recebido em razão da aposentadoria."
+      },
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "regime previdenciário adicional, disciplinado por regras próprias."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "regime próprio de previdência social dos servidores titulares",
+     "applied_text": "regime próprio de previdência social para os servidores titulares",
+     "policy_item": 2,
+     "policy_text": "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 11 palavras seguidas do caput oficial; preposicao \"dos\" -> \"para os\""
+    }
+   ],
+   "content_provenance": [
+    {
+     "section": "o_que_significa",
+     "content": "nem todo ente federativo possui RPPS",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "afirmacao factual trazida pela revisao humana; o § 22 (no runtime) veda novos regimes proprios"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O art. 40 disciplina o regime próprio de previdência social dos servidores titulares de cargo efetivo. O caput define o caráter do regime. Os parágrafos tratam das hipóteses de aposentadoria, do valor e do cálculo dos proventos, das aposentadorias com critérios diferenciados, da pensão por morte, da contagem de tempo, das vedações de acumulação, da previdência complementar e da organização dos regimes próprios.",
+     "o_que_significa": "Os servidores efetivos não se aposentam pelo INSS, mas por um regime próprio, organizado por cada ente: União, Estados, Distrito Federal e Municípios que tenham esse regime.\nO texto atual do artigo resulta, em grande parte, da reforma da previdência de 2019. O desenho é este. O caput fixa os fundamentos: contribuição, solidariedade e equilíbrio entre receitas e despesas. O § 1º lista as hipóteses de aposentadoria. Os §§ 2º, 3º, 8º e 17 tratam do valor, do cálculo e da atualização dos benefícios. O § 4º proíbe critérios diferenciados, com as exceções dos §§ 4º-A a 5º. Os §§ 6º, 7º, 9º a 13, 18 e 19 tratam de acumulação, pensão, tempo de contribuição, teto, regras subsidiárias, contribuição de inativos e abono de permanência. Os §§ 14 a 16 criam a previdência complementar, e os §§ 20 e 22 organizam os regimes próprios.\nMuitas regras dependem de lei do respectivo ente federativo, o que faz o regime variar entre a União, os Estados e os Municípios.",
+     "exemplo_pratico": "Uma servidora efetiva de um Estado contribui mensalmente para o regime próprio estadual. Ao preencher os requisitos fixados pela Constituição e pela lei do Estado, ela se aposenta por esse regime, e o valor dos seus proventos segue as regras de cálculo da lei estadual. Se o Estado já tiver previdência complementar, o valor pago pelo regime próprio pode ficar limitado ao teto do Regime Geral.",
+     "atencao": "O art. 40 contém a regra permanente. Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40. Os incisos e alíneas do texto original do caput e de alguns parágrafos são históricos e não fazem parte do texto vigente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Regime próprio de previdência social",
+       "explicacao": "sistema previdenciário dos servidores titulares de cargo efetivo de cada ente."
+      },
+      {
+       "termo": "Proventos",
+       "explicacao": "valor pago ao servidor aposentado."
+      },
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "sistema adicional e baseado em contribuições, que complementa o benefício do regime básico."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A situação de cada ente, as regras de transição da Emenda Constitucional nº 103/2019 e a legislação de cada regime próprio pertencem à camada externa e às leis correlatas."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O art. 40 disciplina o regime próprio de previdência social para os servidores titulares de cargos efetivos abrangidos por esse regime.\nO artigo trata do financiamento do regime, das modalidades de aposentadoria, do cálculo e dos limites dos benefícios, das hipóteses com critérios diferenciados, da pensão por morte, da acumulação de benefícios, da previdência complementar e da organização dos regimes próprios.",
+     "o_que_significa": "O regime próprio de previdência social, ou RPPS, é o sistema previdenciário mantido por determinado ente federativo para os servidores titulares de cargos efetivos que estejam abrangidos por esse regime.\nO art. 40 estabelece a estrutura constitucional permanente dos RPPS.\nO caput trata do financiamento e do equilíbrio do sistema.\nO § 1º apresenta as modalidades de aposentadoria. Outros parágrafos disciplinam cálculo, limites, critérios diferenciados, pensão, acumulação, previdência complementar e organização do regime.\nNem todo ente federativo possui RPPS. Além disso, o § 22 veda a instituição de novos regimes próprios e determina que lei complementar federal estabeleça normas gerais para os que já existam.",
+     "exemplo_pratico": "Uma servidora titular de cargo efetivo de um Estado que possui regime próprio contribui para esse sistema.\nQuando preencher os requisitos aplicáveis, sua aposentadoria será concedida pelo RPPS estadual, segundo a Constituição, as normas gerais e a legislação daquele regime.",
+     "atencao": "O texto permanente do art. 40 não deve ser confundido com as diversas regras de transição criadas pela EC 103/2019.\nPara servidores que já estavam no serviço público quando ocorreram as reformas previdenciárias, pode ser necessário consultar a própria emenda e a legislação aplicável ao ente.",
+     "palavras_dificeis": [
+      {
+       "termo": "Regime próprio de previdência social",
+       "explicacao": "regime previdenciário destinado aos servidores titulares de cargos efetivos abrangidos por ele."
+      },
+      {
+       "termo": "Proventos",
+       "explicacao": "valor recebido em razão da aposentadoria."
+      },
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "regime previdenciário adicional, disciplinado por regras próprias."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A situação de cada ente, as regras de transição da Emenda Constitucional nº 103/2019 e a legislação de cada regime próprio pertencem à camada externa e às leis correlatas."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:CAPUT",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "\"Contributivo\" nao deve ser explicado apenas como \"o direito ao beneficio depende de contribuicao\"; nao afirmar que todos os aposentados e pensionistas contribuem da mesma maneira (incidencia concreta tratada por outras normas).",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:CAPUT/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:CAPUT/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "\"Contributivo\" nao deve ser explicado apenas como \"o direito ao beneficio depende de contribuicao\"; nao afirmar que todos os aposentados e pensionistas contribuem da mesma maneira (incidencia concreta tratada por outras normas).",
+    "raw_wrapped": {
+     "o_que_diz": "O caput estabelece que o regime próprio possui caráter\ncontributivo e solidário.\nSeu financiamento envolve o ente federativo, servidores\nativos, aposentados e pensionistas, observadas as regras\naplicáveis, e o sistema deve preservar equilíbrio financeiro\ne atuarial.",
+     "o_que_significa": "Caráter contributivo significa que o RPPS é financiado por\ncontribuições e funciona dentro de um sistema previdenciário\nbaseado nesse custeio.\nCaráter solidário significa que o financiamento não fica\nligado apenas à contribuição individual de cada servidor:\nos recursos integram um sistema coletivo destinado ao\npagamento dos benefícios previstos pelo regime.\nA Constituição também exige equilíbrio financeiro e\natuarial.\nO equilíbrio financeiro considera a capacidade de pagar\nas obrigações correntes.\nO equilíbrio atuarial considera também o longo prazo,\nprojetando contribuições, benefícios e demais fatores que\ninfluenciam a sustentabilidade futura do regime.",
+     "exemplo_pratico": "Se estudos do regime indicarem que, no longo prazo, os\nrecursos projetados serão insuficientes para cumprir suas\nobrigações previdenciárias, o ente deverá enfrentar o\ndesequilíbrio segundo as medidas permitidas pela\nConstituição e pela legislação aplicável.",
+     "atencao": "O caput identifica as categorias que participam do\nfinanciamento do sistema, mas não define sozinho a base,\no valor ou todas as condições de cada contribuição.\nA contribuição incidente sobre aposentadorias e pensões\npossui disciplina constitucional e legal própria.",
+     "palavras_dificeis": [
+      "Caráter contributivo: característica de um sistema\nfinanciado mediante contribuições previdenciárias.",
+      "Caráter solidário: financiamento coletivo do regime,\nsegundo as regras constitucionais e legais.",
+      "Equilíbrio financeiro: capacidade de compatibilizar\nreceitas e despesas do regime.",
+      "Equilíbrio atuarial: equilíbrio projetado no longo prazo\nentre recursos e obrigações previdenciárias."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O caput estabelece que o regime próprio possui caráter contributivo e solidário.\nSeu financiamento envolve o ente federativo, servidores ativos, aposentados e pensionistas, observadas as regras aplicáveis, e o sistema deve preservar equilíbrio financeiro e atuarial.",
+     "o_que_significa": "Caráter contributivo significa que o RPPS é financiado por contribuições e funciona dentro de um sistema previdenciário baseado nesse custeio.\nCaráter solidário significa que o financiamento não fica ligado apenas à contribuição individual de cada servidor: os recursos integram um sistema coletivo destinado ao pagamento dos benefícios previstos pelo regime.\nA Constituição também exige equilíbrio financeiro e atuarial.\nO equilíbrio financeiro considera a capacidade de pagar as obrigações correntes.\nO equilíbrio atuarial considera também o longo prazo, projetando contribuições, benefícios e demais fatores que influenciam a sustentabilidade futura do regime.",
+     "exemplo_pratico": "Se estudos do regime indicarem que, no longo prazo, os recursos projetados serão insuficientes para cumprir suas obrigações previdenciárias, o ente deverá enfrentar o desequilíbrio segundo as medidas permitidas pela Constituição e pela legislação aplicável.",
+     "atencao": "O caput identifica as categorias que participam do financiamento do sistema, mas não define sozinho a base, o valor ou todas as condições de cada contribuição.\nA contribuição incidente sobre aposentadorias e pensões possui disciplina constitucional e legal própria.",
+     "palavras_dificeis": [
+      {
+       "termo": "Caráter contributivo",
+       "explicacao": "característica de um sistema financiado mediante contribuições previdenciárias."
+      },
+      {
+       "termo": "Caráter solidário",
+       "explicacao": "financiamento coletivo do regime, segundo as regras constitucionais e legais."
+      },
+      {
+       "termo": "Equilíbrio financeiro",
+       "explicacao": "capacidade de compatibilizar receitas e despesas do regime."
+      },
+      {
+       "termo": "Equilíbrio atuarial",
+       "explicacao": "equilíbrio projetado no longo prazo entre recursos e obrigações previdenciárias."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O caput define o regime próprio dos servidores efetivos como contributivo e solidário. Contribuem o ente federativo, os servidores ativos, os aposentados e os pensionistas, e o regime deve observar critérios que preservem o seu equilíbrio financeiro e atuarial.",
+     "o_que_significa": "Caráter contributivo significa que o direito ao benefício depende de contribuição: não basta o tempo no cargo.\nCaráter solidário significa que todos financiam o sistema em conjunto. Por isso o texto inclui como contribuintes não só os ativos e o ente, mas também aposentados e pensionistas.\nO equilíbrio tem duas dimensões. O financeiro olha para o presente: as receitas do ano devem cobrir as despesas do ano. O atuarial olha para o futuro: projeta por décadas, com base em dados como idade e expectativa de vida, se as contribuições serão suficientes para pagar os benefícios prometidos.",
+     "exemplo_pratico": "Um Município verifica, em estudo técnico, que as contribuições atuais não bastarão para pagar as aposentadorias daqui a vinte anos. Esse desequilíbrio atuarial obriga o Município a adotar medidas, como ajustar alíquotas ou aportar recursos, na forma da lei, para preservar o equilíbrio que o caput exige.",
+     "atencao": "A contribuição de aposentados e pensionistas tem regra específica sobre a parcela que incide (§ 18). O caput abrange os servidores titulares de cargo efetivo; ocupantes só de cargo em comissão e outros agentes temporários seguem o Regime Geral (§ 13).",
+     "palavras_dificeis": [
+      {
+       "termo": "Caráter contributivo",
+       "explicacao": "exigência de contribuição para que haja direito ao benefício."
+      },
+      {
+       "termo": "Caráter solidário",
+       "explicacao": "financiamento conjunto do regime por todos os participantes, inclusive aposentados e pensionistas."
+      },
+      {
+       "termo": "Equilíbrio atuarial",
+       "explicacao": "compatibilidade, projetada no longo prazo, entre as contribuições e os benefícios futuros."
+      },
+      {
+       "termo": "Pensionista",
+       "explicacao": "dependente que recebe pensão por morte do servidor."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O caput estabelece que o regime próprio possui caráter contributivo e solidário.\nSeu financiamento envolve o ente federativo, servidores ativos, aposentados e pensionistas, observadas as regras aplicáveis, e o sistema deve preservar equilíbrio financeiro e atuarial.",
+     "o_que_significa": "Caráter contributivo significa que o RPPS é financiado por contribuições e funciona dentro de um sistema previdenciário baseado nesse custeio.\nCaráter solidário significa que o financiamento não fica ligado apenas à contribuição individual de cada servidor: os recursos integram um sistema coletivo destinado ao pagamento dos benefícios previstos pelo regime.\nA Constituição também exige equilíbrio financeiro e atuarial.\nO equilíbrio financeiro considera a capacidade de pagar as obrigações correntes.\nO equilíbrio atuarial considera também o longo prazo, projetando contribuições, benefícios e demais fatores que influenciam a sustentabilidade futura do regime.",
+     "exemplo_pratico": "Se estudos do regime indicarem que, no longo prazo, os recursos projetados serão insuficientes para cumprir suas obrigações previdenciárias, o ente deverá enfrentar o desequilíbrio segundo as medidas permitidas pela Constituição e pela legislação aplicável.",
+     "atencao": "O caput identifica as categorias que participam do financiamento do sistema, mas não define sozinho a base, o valor ou todas as condições de cada contribuição.\nA contribuição incidente sobre aposentadorias e pensões possui disciplina constitucional e legal própria.",
+     "palavras_dificeis": [
+      {
+       "termo": "Caráter contributivo",
+       "explicacao": "característica de um sistema financiado mediante contribuições previdenciárias."
+      },
+      {
+       "termo": "Caráter solidário",
+       "explicacao": "financiamento coletivo do regime, segundo as regras constitucionais e legais."
+      },
+      {
+       "termo": "Equilíbrio financeiro",
+       "explicacao": "capacidade de compatibilizar receitas e despesas do regime."
+      },
+      {
+       "termo": "Equilíbrio atuarial",
+       "explicacao": "equilíbrio projetado no longo prazo entre recursos e obrigações previdenciárias."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.I",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Nao exigir incapacidade para \"qualquer atividade compativel com a formacao\" (a Constituicao fala em incapacidade permanente no cargo e impossibilidade de readaptacao); nao afirmar automaticamente a consequencia de eventual melhora nas avaliacoes.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.I/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.I/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Nao exigir incapacidade para \"qualquer atividade compativel com a formacao\" (a Constituicao fala em incapacidade permanente no cargo e impossibilidade de readaptacao); nao afirmar automaticamente a consequencia de eventual melhora nas avaliacoes.",
+    "raw_wrapped": {
+     "o_que_diz": "O inciso prevê aposentadoria quando o servidor apresenta\nincapacidade permanente para o trabalho no cargo em que\nestá investido e não é possível sua readaptação.\nDepois da concessão, avaliações periódicas devem verificar\nse continuam presentes as condições que justificaram a\naposentadoria, conforme a lei do ente.",
+     "o_que_significa": "A incapacidade considerada pelo inciso está ligada ao cargo\nocupado pelo servidor.\nAntes da aposentadoria, deve ser considerada a possibilidade\nde readaptação prevista no art. 37, § 13.\nSe for possível exercer outro cargo compatível com a\nlimitação, observados os requisitos constitucionais da\nreadaptação, a aposentadoria por incapacidade não é a\nsolução prevista para aquela situação.\nSe a incapacidade for permanente para o cargo e a\nreadaptação não for possível, pode ocorrer a aposentadoria.",
+     "exemplo_pratico": "Um servidor adquire limitação permanente que o impede de\nexercer as atribuições de seu cargo.\nDepois da análise da possibilidade de readaptação, conclui-se\nque ela não é possível nas condições constitucionais.\nNessa hipótese, poderá ser aposentado por incapacidade\npermanente, conforme o regime aplicável.",
+     "atencao": "A Constituição exige avaliações periódicas mesmo após a\nconcessão, para verificar a continuidade das condições que\na justificaram.\nOs efeitos de eventual mudança dessas condições dependem\nda legislação aplicável e não devem ser deduzidos apenas\ndeste inciso.\nO cálculo dos proventos também não é definido aqui.",
+     "palavras_dificeis": [
+      "Incapacidade permanente: limitação duradoura que impede o\nexercício do trabalho no cargo.",
+      "Readaptação: passagem para cargo compatível com a limitação,\nnas condições do art. 37, § 13.",
+      "Avaliação periódica: reavaliação realizada em intervalos\npara verificar a continuidade das condições consideradas."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O inciso prevê aposentadoria quando o servidor apresenta incapacidade permanente para o trabalho no cargo em que está investido e não é possível sua readaptação.\nDepois da concessão, avaliações periódicas devem verificar se continuam presentes as condições que justificaram a aposentadoria, conforme a lei do ente.",
+     "o_que_significa": "A incapacidade considerada pelo inciso está ligada ao cargo ocupado pelo servidor.\nAntes da aposentadoria, deve ser considerada a possibilidade de readaptação prevista no art. 37, § 13.\nSe for possível exercer outro cargo compatível com a limitação, observados os requisitos constitucionais da readaptação, a aposentadoria por incapacidade não é a solução prevista para aquela situação.\nSe a incapacidade for permanente para o cargo e a readaptação não for possível, pode ocorrer a aposentadoria.",
+     "exemplo_pratico": "Um servidor adquire limitação permanente que o impede de exercer as atribuições de seu cargo.\nDepois da análise da possibilidade de readaptação, conclui-se que ela não é possível nas condições constitucionais.\nNessa hipótese, poderá ser aposentado por incapacidade permanente, conforme o regime aplicável.",
+     "atencao": "A Constituição exige avaliações periódicas mesmo após a concessão, para verificar a continuidade das condições que a justificaram.\nOs efeitos de eventual mudança dessas condições dependem da legislação aplicável e não devem ser deduzidos apenas deste inciso.\nO cálculo dos proventos também não é definido aqui.",
+     "palavras_dificeis": [
+      {
+       "termo": "Incapacidade permanente",
+       "explicacao": "limitação duradoura que impede o exercício do trabalho no cargo."
+      },
+      {
+       "termo": "Readaptação",
+       "explicacao": "passagem para cargo compatível com a limitação, nas condições do art. 37, § 13."
+      },
+      {
+       "termo": "Avaliação periódica",
+       "explicacao": "reavaliação realizada em intervalos para verificar a continuidade das condições consideradas."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "Este inciso, uma das hipóteses de aposentadoria do § 1º, trata da incapacidade permanente para o trabalho no cargo, quando não for possível readaptar o servidor. Nesse caso, são obrigatórias avaliações periódicas para verificar se as condições que levaram à aposentadoria continuam, na forma de lei do ente.",
+     "o_que_significa": "A aposentadoria por incapacidade permanente ocorre quando o servidor não consegue mais exercer o seu cargo de forma definitiva. O texto traz duas condições ligadas entre si: a incapacidade deve ser permanente para o cargo ocupado, e o servidor não pode ser aproveitado por readaptação.\nA readaptação, prevista no art. 37, § 13, vem antes: se o servidor pode exercer outro cargo compatível com a sua limitação, a solução é readaptá-lo, e não aposentá-lo.\nDepois de aposentado, o servidor passa por reavaliações periódicas. Se as condições mudarem, a aposentadoria pode ser revista, conforme a lei do ente.",
+     "exemplo_pratico": "Um servidor sofre uma doença grave que o impede de forma definitiva de exercer qualquer atividade compatível com a sua formação, e não há cargo para readaptação. Ele é aposentado por incapacidade permanente e passa por avaliações periódicas definidas na lei do ente.",
+     "atencao": "O cálculo do valor dessa aposentadoria não está neste inciso: cabe à lei do ente (§ 3º). A expressão antiga \"aposentadoria por invalidez\" deu lugar a \"incapacidade permanente para o trabalho\".",
+     "palavras_dificeis": [
+      {
+       "termo": "Incapacidade permanente",
+       "explicacao": "impossibilidade definitiva de exercer o trabalho no cargo ocupado."
+      },
+      {
+       "termo": "Readaptação",
+       "explicacao": "transferência do servidor para cargo compatível com a limitação sofrida (art. 37, § 13)."
+      },
+      {
+       "termo": "Avaliação periódica",
+       "explicacao": "reexame feito de tempos em tempos para verificar se a incapacidade continua."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O inciso prevê aposentadoria quando o servidor apresenta incapacidade permanente para o trabalho no cargo em que está investido e não é possível sua readaptação.\nDepois da concessão, avaliações periódicas devem verificar se continuam presentes as condições que justificaram a aposentadoria, conforme a lei do ente.",
+     "o_que_significa": "A incapacidade considerada pelo inciso está ligada ao cargo ocupado pelo servidor.\nAntes da aposentadoria, deve ser considerada a possibilidade de readaptação prevista no art. 37, § 13.\nSe for possível exercer outro cargo compatível com a limitação, observados os requisitos constitucionais da readaptação, a aposentadoria por incapacidade não é a solução prevista para aquela situação.\nSe a incapacidade for permanente para o cargo e a readaptação não for possível, pode ocorrer a aposentadoria.",
+     "exemplo_pratico": "Um servidor adquire limitação permanente que o impede de exercer as atribuições de seu cargo.\nDepois da análise da possibilidade de readaptação, conclui-se que ela não é possível nas condições constitucionais.\nNessa hipótese, poderá ser aposentado por incapacidade permanente, conforme o regime aplicável.",
+     "atencao": "A Constituição exige avaliações periódicas mesmo após a concessão, para verificar a continuidade das condições que a justificaram.\nOs efeitos de eventual mudança dessas condições dependem da legislação aplicável e não devem ser deduzidos apenas deste inciso.\nO cálculo dos proventos também não é definido aqui.",
+     "palavras_dificeis": [
+      {
+       "termo": "Incapacidade permanente",
+       "explicacao": "limitação duradoura que impede o exercício do trabalho no cargo."
+      },
+      {
+       "termo": "Readaptação",
+       "explicacao": "passagem para cargo compatível com a limitação, nas condições do art. 37, § 13."
+      },
+      {
+       "termo": "Avaliação periódica",
+       "explicacao": "reavaliação realizada em intervalos para verificar a continuidade das condições consideradas."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.1:INC.II",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "O texto constitucional fala em 70 ou 75 anos na forma de lei complementar, mas a legislacao complementar atual ja regulamentou a hipotese.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "O texto constitucional fala em 70 ou 75 anos na forma de lei complementar, mas a legislacao complementar atual ja regulamentou a hipotese.",
+    "raw_wrapped": {
+     "o_que_diz": "O inciso trata da aposentadoria compulsória.\nA Constituição prevê aposentadoria obrigatória aos\n70 anos ou aos 75 anos, na forma de lei complementar,\ncom proventos proporcionais ao tempo de contribuição.",
+     "o_que_significa": "Compulsória significa que a aposentadoria ocorre\nobrigatoriamente quando a pessoa alcança a idade-limite\naplicável, independentemente de pedido do servidor.\nA Constituição deixou à lei complementar a aplicação do\nlimite de 75 anos.\nNa legislação atualmente vigente, a Lei Complementar\nnº 152/2015 fixa 75 anos para os servidores e demais\nagentes abrangidos por ela.",
+     "exemplo_pratico": "Um servidor titular de cargo efetivo abrangido pela\nLei Complementar nº 152/2015 completa 75 anos.\nMesmo que queira permanecer trabalhando, alcançou a\nidade de aposentadoria compulsória.",
+     "atencao": "O inciso constitucional deve ser lido junto com a lei\ncomplementar que o regulamenta.\nO valor dos proventos é proporcional ao tempo de\ncontribuição, mas a fórmula concreta de cálculo depende\ndas demais regras previdenciárias aplicáveis.",
+     "palavras_dificeis": [
+      "Aposentadoria compulsória: aposentadoria obrigatória ao\natingir a idade-limite.",
+      "Proventos proporcionais: proventos cujo cálculo considera\na proporcionalidade prevista pelo regime em relação ao\ntempo de contribuição.",
+      "Lei complementar: espécie legislativa exigida pela\nConstituição para determinadas matérias."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O inciso trata da aposentadoria compulsória.\nA Constituição prevê aposentadoria obrigatória aos 70 anos ou aos 75 anos, na forma de lei complementar, com proventos proporcionais ao tempo de contribuição.",
+     "o_que_significa": "Compulsória significa que a aposentadoria ocorre obrigatoriamente quando a pessoa alcança a idade-limite aplicável, independentemente de pedido do servidor.\nA Constituição deixou à lei complementar a aplicação do limite de 75 anos.\nNa legislação atualmente vigente, a Lei Complementar nº 152/2015 fixa 75 anos para os servidores e demais agentes abrangidos por ela.",
+     "exemplo_pratico": "Um servidor titular de cargo efetivo abrangido pela Lei Complementar nº 152/2015 completa 75 anos.\nMesmo que queira permanecer trabalhando, alcançou a idade de aposentadoria compulsória.",
+     "atencao": "O inciso constitucional deve ser lido junto com a lei complementar que o regulamenta.\nO valor dos proventos é proporcional ao tempo de contribuição, mas a fórmula concreta de cálculo depende das demais regras previdenciárias aplicáveis.",
+     "palavras_dificeis": [
+      {
+       "termo": "Aposentadoria compulsória",
+       "explicacao": "aposentadoria obrigatória ao atingir a idade-limite."
+      },
+      {
+       "termo": "Proventos proporcionais",
+       "explicacao": "proventos cujo cálculo considera a proporcionalidade prevista pelo regime em relação ao tempo de contribuição."
+      },
+      {
+       "termo": "Lei complementar",
+       "explicacao": "espécie legislativa exigida pela Constituição para determinadas matérias."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": [
+     "Lei Complementar nº 152/2015."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "o_que_significa/exemplo_pratico/external_layer_notes",
+     "content": "Lei Complementar nº 152/2015 fixa 75 anos para os servidores e demais agentes abrangidos",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "legislacao correlata indicada pela revisao humana; o runtime traz apenas \"na forma de lei complementar\""
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "Dentro das hipóteses do § 1º, este inciso prevê a aposentadoria compulsória aos 70 anos de idade, ou aos 75 anos na forma de lei complementar, com proventos proporcionais ao tempo de contribuição.",
+     "o_que_significa": "Compulsória quer dizer obrigatória. Ao atingir a idade-limite, o servidor é aposentado mesmo que queira continuar trabalhando e esteja apto.\nO texto traz duas idades: 70 anos, como regra, e 75 anos, quando prevista em lei complementar. Assim, a idade efetivamente aplicável depende do que a lei complementar dispuser.\nOs proventos são proporcionais ao tempo de contribuição: quem contribuiu por menos tempo recebe valor proporcionalmente menor.",
+     "exemplo_pratico": "Uma servidora completa a idade-limite prevista para o seu caso e continua em plena atividade. Ainda assim, é aposentada compulsoriamente, e os seus proventos são calculados de forma proporcional ao seu tempo de contribuição.",
+     "atencao": "O inciso não fixa sozinho qual das duas idades vale para cada servidor: isso depende da lei complementar. A aposentadoria compulsória é diferente da voluntária, tratada no inciso III.",
+     "palavras_dificeis": [
+      {
+       "termo": "Aposentadoria compulsória",
+       "explicacao": "aposentadoria obrigatória ao atingir a idade-limite fixada pela Constituição e pela lei."
+      },
+      {
+       "termo": "Proventos proporcionais",
+       "explicacao": "valor de aposentadoria calculado em proporção ao tempo de contribuição."
+      },
+      {
+       "termo": "Lei complementar",
+       "explicacao": "lei que exige aprovação por maioria absoluta e trata de temas indicados pela Constituição."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "A lei complementar que fixou a idade de 75 anos e o seu alcance estão na camada de leis correlatas."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O inciso trata da aposentadoria compulsória.\nA Constituição prevê aposentadoria obrigatória aos 70 anos ou aos 75 anos, na forma de lei complementar, com proventos proporcionais ao tempo de contribuição.",
+     "o_que_significa": "Compulsória significa que a aposentadoria ocorre obrigatoriamente quando a pessoa alcança a idade-limite aplicável, independentemente de pedido do servidor.\nA Constituição deixou à lei complementar a aplicação do limite de 75 anos.\nNa legislação atualmente vigente, a Lei Complementar nº 152/2015 fixa 75 anos para os servidores e demais agentes abrangidos por ela.",
+     "exemplo_pratico": "Um servidor titular de cargo efetivo abrangido pela Lei Complementar nº 152/2015 completa 75 anos.\nMesmo que queira permanecer trabalhando, alcançou a idade de aposentadoria compulsória.",
+     "atencao": "O inciso constitucional deve ser lido junto com a lei complementar que o regulamenta.\nO valor dos proventos é proporcional ao tempo de contribuição, mas a fórmula concreta de cálculo depende das demais regras previdenciárias aplicáveis.",
+     "palavras_dificeis": [
+      {
+       "termo": "Aposentadoria compulsória",
+       "explicacao": "aposentadoria obrigatória ao atingir a idade-limite."
+      },
+      {
+       "termo": "Proventos proporcionais",
+       "explicacao": "proventos cujo cálculo considera a proporcionalidade prevista pelo regime em relação ao tempo de contribuição."
+      },
+      {
+       "termo": "Lei complementar",
+       "explicacao": "espécie legislativa exigida pela Constituição para determinadas matérias."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Lei Complementar nº 152/2015."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.2",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Retirada a ideia de que quem ultrapassa o teto do RGPS simplesmente \"busca a diferenca\" na previdencia complementar: a existencia e o valor de eventual beneficio complementar dependem do regime e do plano aplicavel.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.2/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirada a ideia de que quem ultrapassa o teto do RGPS simplesmente \"busca a diferenca\" na previdencia complementar: a existencia e o valor de eventual beneficio complementar dependem do regime e do plano aplicavel.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 2º estabelece limites mínimo e máximo para os proventos\nde aposentadoria concedidos pelo regime próprio, fazendo\nremissão ao art. 201, § 2º, ao limite máximo dos benefícios\ndo Regime Geral e às regras dos §§ 14 a 16.",
+     "o_que_significa": "O limite mínimo remete ao art. 201, § 2º, que protege o\nvalor mínimo dos benefícios que substituem a renda do\ntrabalho.\nNo limite superior, o dispositivo relaciona o valor das\naposentadorias do regime próprio ao teto do Regime Geral,\nmas exige que sejam observados os §§ 14 a 16, que tratam\nda previdência complementar.\nPor isso, o teto não deve ser analisado isoladamente:\né necessário considerar a instituição do regime\ncomplementar e a situação do servidor perante esse regime.",
+     "exemplo_pratico": "Se o cálculo de uma aposentadoria resultar em valor inferior\nao piso constitucional aplicável, o benefício não poderá\nser concedido abaixo daquele limite.\nJá a aplicação do teto do Regime Geral deve ser analisada\njunto com as regras constitucionais da previdência\ncomplementar.",
+     "atencao": "O § 16 protege a situação de quem ingressou no serviço\npúblico antes da instituição do correspondente regime de\nprevidência complementar, exigindo opção prévia e expressa\npara a aplicação das regras ali indicadas.\nA existência de previdência complementar não significa,\npor si só, que o servidor receberá automaticamente a\ndiferença entre o teto do Regime Geral e sua remuneração.",
+     "palavras_dificeis": [
+      "Piso: valor mínimo aplicável ao benefício.",
+      "Teto do Regime Geral: limite máximo dos benefícios\nprevidenciários do RGPS.",
+      "Proventos: valor recebido em razão da aposentadoria.",
+      "Previdência complementar: regime adicional de previdência,\nsujeito às regras de seu plano."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 2º estabelece limites mínimo e máximo para os proventos de aposentadoria concedidos pelo regime próprio, fazendo remissão ao art. 201, § 2º, ao limite máximo dos benefícios do Regime Geral e às regras dos §§ 14 a 16.",
+     "o_que_significa": "O limite mínimo remete ao art. 201, § 2º, que protege o valor mínimo dos benefícios que substituem a renda do trabalho.\nNo limite superior, o dispositivo relaciona o valor das aposentadorias do regime próprio ao teto do Regime Geral, mas exige que sejam observados os §§ 14 a 16, que tratam da previdência complementar.\nPor isso, o teto não deve ser analisado isoladamente: é necessário considerar a instituição do regime complementar e a situação do servidor perante esse regime.",
+     "exemplo_pratico": "Se o cálculo de uma aposentadoria resultar em valor inferior ao piso constitucional aplicável, o benefício não poderá ser concedido abaixo daquele limite.\nJá a aplicação do teto do Regime Geral deve ser analisada junto com as regras constitucionais da previdência complementar.",
+     "atencao": "O § 16 protege a situação de quem ingressou no serviço público antes da instituição do correspondente regime de previdência complementar, exigindo opção prévia e expressa para a aplicação das regras ali indicadas.\nA existência de previdência complementar não significa, por si só, que o servidor receberá automaticamente a diferença entre o teto do Regime Geral e sua remuneração.",
+     "palavras_dificeis": [
+      {
+       "termo": "Piso",
+       "explicacao": "valor mínimo aplicável ao benefício."
+      },
+      {
+       "termo": "Teto do Regime Geral",
+       "explicacao": "limite máximo dos benefícios previdenciários do RGPS."
+      },
+      {
+       "termo": "Proventos",
+       "explicacao": "valor recebido em razão da aposentadoria."
+      },
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "regime adicional de previdência, sujeito às regras de seu plano."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo fixa limites para os proventos de aposentadoria do regime próprio. Eles não podem ser menores que o valor mínimo do art. 201, § 2º, nem maiores que o limite máximo do Regime Geral, observados os §§ 14 a 16.",
+     "o_que_significa": "O piso remete ao art. 201, § 2º, que impede benefício substitutivo da renda inferior ao salário mínimo. Assim, nenhuma aposentadoria do regime próprio fica abaixo desse valor.\nO teto é o limite máximo de benefícios do Regime Geral. A remissão aos §§ 14 a 16 é essencial: ela liga esse teto à previdência complementar. Quem recebe acima do teto do Regime Geral deve buscar a diferença na previdência complementar.\nPara quem ingressou antes da instituição da previdência complementar do seu ente, o § 16 exige opção prévia e expressa para que essas regras se apliquem.",
+     "exemplo_pratico": "Um servidor municipal de baixa remuneração se aposenta por incapacidade permanente com tempo de contribuição curto. Mesmo que o cálculo da lei municipal resulte em valor menor, os proventos não podem ficar abaixo do piso a que o § 2º remete, ligado ao salário mínimo.",
+     "atencao": "O parágrafo não diz que todo servidor tem a aposentadoria limitada ao teto do Regime Geral. A aplicação do teto depende da previdência complementar e da data de ingresso, nos termos dos §§ 14 a 16.",
+     "palavras_dificeis": [
+      {
+       "termo": "Piso",
+       "explicacao": "valor mínimo que um benefício pode ter."
+      },
+      {
+       "termo": "Teto do Regime Geral",
+       "explicacao": "valor máximo dos benefícios pagos pelo Regime Geral de Previdência Social."
+      },
+      {
+       "termo": "Proventos",
+       "explicacao": "valor pago ao servidor aposentado."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 2º estabelece limites mínimo e máximo para os proventos de aposentadoria concedidos pelo regime próprio, fazendo remissão ao art. 201, § 2º, ao limite máximo dos benefícios do Regime Geral e às regras dos §§ 14 a 16.",
+     "o_que_significa": "O limite mínimo remete ao art. 201, § 2º, que protege o valor mínimo dos benefícios que substituem a renda do trabalho.\nNo limite superior, o dispositivo relaciona o valor das aposentadorias do regime próprio ao teto do Regime Geral, mas exige que sejam observados os §§ 14 a 16, que tratam da previdência complementar.\nPor isso, o teto não deve ser analisado isoladamente: é necessário considerar a instituição do regime complementar e a situação do servidor perante esse regime.",
+     "exemplo_pratico": "Se o cálculo de uma aposentadoria resultar em valor inferior ao piso constitucional aplicável, o benefício não poderá ser concedido abaixo daquele limite.\nJá a aplicação do teto do Regime Geral deve ser analisada junto com as regras constitucionais da previdência complementar.",
+     "atencao": "O § 16 protege a situação de quem ingressou no serviço público antes da instituição do correspondente regime de previdência complementar, exigindo opção prévia e expressa para a aplicação das regras ali indicadas.\nA existência de previdência complementar não significa, por si só, que o servidor receberá automaticamente a diferença entre o teto do Regime Geral e sua remuneração.",
+     "palavras_dificeis": [
+      {
+       "termo": "Piso",
+       "explicacao": "valor mínimo aplicável ao benefício."
+      },
+      {
+       "termo": "Teto do Regime Geral",
+       "explicacao": "limite máximo dos benefícios previdenciários do RGPS."
+      },
+      {
+       "termo": "Proventos",
+       "explicacao": "valor recebido em razão da aposentadoria."
+      },
+      {
+       "termo": "Previdência complementar",
+       "explicacao": "regime adicional de previdência, sujeito às regras de seu plano."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Regras de transição para quem já era servidor antes da Emenda Constitucional nº 103/2019, e a situação de Estados, Distrito Federal e Municípios que ainda não adaptaram as suas normas, estão na própria emenda e na legislação de cada ente (camada externa); não estão escritas no art. 40."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.4",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Evitar dizer que \"todos os servidores se aposentam pelas mesmas regras gerais\", porque regras concretas podem variar entre entes e beneficios.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.4/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.4/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Evitar dizer que \"todos os servidores se aposentam pelas mesmas regras gerais\", porque regras concretas podem variar entre entes e beneficios.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 4º estabelece como regra a proibição de requisitos ou\ncritérios diferenciados para concessão de benefícios no\nregime próprio.\nAs exceções estão indicadas nos §§ 4º-A, 4º-B, 4º-C e 5º.",
+     "o_que_significa": "A Constituição impede que sejam criados livremente regimes\nmais favoráveis de aposentadoria para determinadas\ncategorias de servidores.\nOs tratamentos diferenciados dependem das hipóteses que a\nprópria Constituição ressalva.\nEssas hipóteses envolvem servidores com deficiência,\ndeterminados agentes das áreas indicadas no § 4º-B,\natividades com exposição efetiva a agentes prejudiciais à\nsaúde e professores nas condições do § 5º.",
+     "exemplo_pratico": "Uma lei não pode reduzir a idade de aposentadoria de uma\ncategoria apenas porque considera sua atividade desgastante,\nse a situação não estiver enquadrada em uma das hipóteses\nconstitucionais de tratamento diferenciado.",
+     "atencao": "As exceções não significam que todos os detalhes já estejam\nprontos no texto constitucional.\nOs §§ 4º-A, 4º-B e 4º-C remetem a lei complementar do\nrespectivo ente.\nO § 5º possui regra constitucional própria para professores\ne também remete à lei complementar quanto ao tempo de\nefetivo exercício das funções de magistério.",
+     "palavras_dificeis": [
+      "Critério diferenciado: requisito previdenciário diferente\ndaquele aplicado pela regra geral.",
+      "Ressalva: exceção prevista pelo próprio texto constitucional."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 4º estabelece como regra a proibição de requisitos ou critérios diferenciados para concessão de benefícios no regime próprio.\nAs exceções estão indicadas nos §§ 4º-A, 4º-B, 4º-C e 5º.",
+     "o_que_significa": "A Constituição impede que sejam criados livremente regimes mais favoráveis de aposentadoria para determinadas categorias de servidores.\nOs tratamentos diferenciados dependem das hipóteses que a própria Constituição ressalva.\nEssas hipóteses envolvem servidores com deficiência, determinados agentes das áreas indicadas no § 4º-B, atividades com exposição efetiva a agentes prejudiciais à saúde e professores nas condições do § 5º.",
+     "exemplo_pratico": "Uma lei não pode reduzir a idade de aposentadoria de uma categoria apenas porque considera sua atividade desgastante, se a situação não estiver enquadrada em uma das hipóteses constitucionais de tratamento diferenciado.",
+     "atencao": "As exceções não significam que todos os detalhes já estejam prontos no texto constitucional.\nOs §§ 4º-A, 4º-B e 4º-C remetem a lei complementar do respectivo ente.\nO § 5º possui regra constitucional própria para professores e também remete à lei complementar quanto ao tempo de efetivo exercício das funções de magistério.",
+     "palavras_dificeis": [
+      {
+       "termo": "Critério diferenciado",
+       "explicacao": "requisito previdenciário diferente daquele aplicado pela regra geral."
+      },
+      {
+       "termo": "Ressalva",
+       "explicacao": "exceção prevista pelo próprio texto constitucional."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": "MANTER (notas existentes inalteradas)"
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo proíbe adotar requisitos ou critérios diferenciados para conceder benefícios no regime próprio. As únicas ressalvas são as dos §§ 4º-A, 4º-B, 4º-C e 5º.",
+     "o_que_significa": "A regra é a igualdade: todos os servidores do regime próprio se aposentam pelas mesmas regras gerais.\nQuando há motivo constitucional para tratar alguns grupos de forma diferente, a própria Constituição indica quais são: servidores com deficiência (§ 4º-A), certos agentes de segurança pública e do sistema prisional e socioeducativo (§ 4º-B), servidores expostos a agentes nocivos à saúde (§ 4º-C) e professores (§ 5º).\nFora dessas hipóteses, a lei não pode criar aposentadorias especiais com requisitos mais brandos.",
+     "exemplo_pratico": "Uma lei municipal reduz a idade mínima de aposentadoria para os fiscais de tributos, alegando desgaste da função. Como essa categoria não está entre as ressalvas do parágrafo, a lei contraria a vedação.",
+     "atencao": "A lista de ressalvas é fechada. As próprias ressalvas dependem de lei complementar de cada ente para serem aplicadas.",
+     "palavras_dificeis": [
+      {
+       "termo": "Critério diferenciado",
+       "explicacao": "regra de aposentadoria mais favorável aplicada a um grupo específico."
+      },
+      {
+       "termo": "Ressalva",
+       "explicacao": "exceção prevista no próprio texto da norma."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 4º estabelece como regra a proibição de requisitos ou critérios diferenciados para concessão de benefícios no regime próprio.\nAs exceções estão indicadas nos §§ 4º-A, 4º-B, 4º-C e 5º.",
+     "o_que_significa": "A Constituição impede que sejam criados livremente regimes mais favoráveis de aposentadoria para determinadas categorias de servidores.\nOs tratamentos diferenciados dependem das hipóteses que a própria Constituição ressalva.\nEssas hipóteses envolvem servidores com deficiência, determinados agentes das áreas indicadas no § 4º-B, atividades com exposição efetiva a agentes prejudiciais à saúde e professores nas condições do § 5º.",
+     "exemplo_pratico": "Uma lei não pode reduzir a idade de aposentadoria de uma categoria apenas porque considera sua atividade desgastante, se a situação não estiver enquadrada em uma das hipóteses constitucionais de tratamento diferenciado.",
+     "atencao": "As exceções não significam que todos os detalhes já estejam prontos no texto constitucional.\nOs §§ 4º-A, 4º-B e 4º-C remetem a lei complementar do respectivo ente.\nO § 5º possui regra constitucional própria para professores e também remete à lei complementar quanto ao tempo de efetivo exercício das funções de magistério.",
+     "palavras_dificeis": [
+      {
+       "termo": "Critério diferenciado",
+       "explicacao": "requisito previdenciário diferente daquele aplicado pela regra geral."
+      },
+      {
+       "termo": "Ressalva",
+       "explicacao": "exceção prevista pelo próprio texto constitucional."
+      }
+     ]
+    },
+    "external_layer_notes": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.5",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Nao definir \"magisterio\" simplesmente como atividade em sala de aula.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.5/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.5/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Nao definir \"magisterio\" simplesmente como atividade em sala de aula.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 5º reduz em cinco anos a idade mínima aplicável ao\nprofessor em relação à regra do § 1º, III, desde que seja\ncumprido o tempo de efetivo exercício das funções de\nmagistério na educação infantil e nos ensinos fundamental\ne médio, conforme lei complementar do respectivo ente.",
+     "o_que_significa": "O dispositivo cria tratamento previdenciário específico\npara professores da educação básica.\nNa União, a referência constitucional de 62 anos para\nmulher e 65 anos para homem corresponde, com a redução de\ncinco anos, a 57 e 60 anos respectivamente, sem afastar os\ndemais requisitos aplicáveis.\nA redução exige o tempo de efetivo exercício das funções de\nmagistério fixado na legislação correspondente.",
+     "exemplo_pratico": "Uma professora abrangida pelo RPPS e que preencha o tempo\nde funções de magistério exigido pela legislação aplicável\npoderá utilizar a redução constitucional de cinco anos na\nidade mínima, desde que satisfaça também os demais\nrequisitos previdenciários pertinentes.",
+     "atencao": "O dispositivo é dirigido à educação infantil e aos ensinos\nfundamental e médio; não inclui o magistério de ensino\nsuperior.\nO conceito de funções de magistério não se limita,\nnecessariamente, ao tempo dentro da sala de aula.\nO alcance de atividades como direção de unidade escolar,\ncoordenação e assessoramento pedagógico é tratado pela\njurisprudência.",
+     "palavras_dificeis": [
+      "Funções de magistério: atividades da carreira do magistério\nconsideradas para essa regra, cujo alcance também é\ninterpretado pela legislação e jurisprudência.",
+      "Educação básica: educação infantil e ensinos fundamental\ne médio."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 5º reduz em cinco anos a idade mínima aplicável ao professor em relação à regra do § 1º, III, desde que seja cumprido o tempo de efetivo exercício das funções de magistério na educação infantil e nos ensinos fundamental e médio, conforme lei complementar do respectivo ente.",
+     "o_que_significa": "O dispositivo cria tratamento previdenciário específico para professores da educação básica.\nNa União, a referência constitucional de 62 anos para mulher e 65 anos para homem corresponde, com a redução de cinco anos, a 57 e 60 anos respectivamente, sem afastar os demais requisitos aplicáveis.\nA redução exige o tempo de efetivo exercício das funções de magistério fixado na legislação correspondente.",
+     "exemplo_pratico": "Uma professora abrangida pelo RPPS e que preencha o tempo de funções de magistério exigido pela legislação aplicável poderá utilizar a redução constitucional de cinco anos na idade mínima, desde que satisfaça também os demais requisitos previdenciários pertinentes.",
+     "atencao": "O dispositivo é dirigido à educação infantil e aos ensinos fundamental e médio; não inclui o magistério de ensino superior.\nO conceito de funções de magistério não se limita, necessariamente, ao tempo dentro da sala de aula.\nO alcance de atividades como direção de unidade escolar, coordenação e assessoramento pedagógico é tratado pela jurisprudência.",
+     "palavras_dificeis": [
+      {
+       "termo": "Funções de magistério",
+       "explicacao": "atividades da carreira do magistério consideradas para essa regra, cujo alcance também é interpretado pela legislação e jurisprudência."
+      },
+      {
+       "termo": "Educação básica",
+       "explicacao": "educação infantil e ensinos fundamental e médio."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": [
+     "Tema 965 e ADI 3.772 do Supremo Tribunal Federal: nas condições fixadas pela jurisprudência, também podem ser computadas atividades de direção de unidade escolar, coordenação e assessoramento pedagógico exercidas por professores de carreira em estabelecimentos de educação básica."
+    ]
+   },
+   "t1_contract_deviations": [
+    {
+     "section": "o_que_diz",
+     "reviewer_text": "tempo de efetivo exercício das funções de",
+     "applied_text": "tempo de efetivo exercício nas funções de",
+     "policy_item": 2,
+     "policy_text": "trocar artigo, preposicao, ordem sintatica ou sinonimo exclusivamente para evitar NEAR_COPY_OF_OFFICIAL_TEXT",
+     "reason": "ENTENDA_COPIES_OFFICIAL_TEXT: 12 palavras seguidas do § 5º oficial; preposicao \"das\" -> \"nas\""
+    }
+   ],
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "Tema 965 e ADI 3.772 (funcoes de magisterio alem da sala de aula)",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "jurisprudencia indicada pela revisao humana; so na CAMADA EXTERNA"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo reduz em cinco anos a idade mínima de aposentadoria voluntária do professor, em relação às idades do § 1º, III. Para isso, ele precisa comprovar o tempo de efetivo exercício no magistério da educação infantil e dos ensinos fundamental e médio, fixado em lei complementar do ente.",
+     "o_que_significa": "É a exceção dos professores à regra de igualdade do § 4º.\nA redução vale para a idade mínima: se, na União, a idade da mulher é 62 anos, a professora que cumpre o requisito pode se aposentar aos 57.\nO requisito é o efetivo exercício de funções de magistério na educação básica: infantil, fundamental e média. O tempo exigido é definido pela lei complementar de cada ente.",
+     "exemplo_pratico": "Uma professora federal da educação básica comprova o tempo de magistério exigido pela lei complementar. Ela pode se aposentar com idade cinco anos menor do que a exigida das demais servidoras federais.",
+     "atencao": "A redução não alcança o magistério no ensino superior, que não aparece no texto. O tempo exigido é o de efetivo exercício de funções de magistério; funções que se enquadram nesse conceito são definidas fora deste parágrafo.",
+     "palavras_dificeis": [
+      {
+       "termo": "Magistério",
+       "explicacao": "exercício da função de professor."
+      },
+      {
+       "termo": "Educação básica",
+       "explicacao": "etapas da educação formadas pela educação infantil e pelos ensinos fundamental e médio."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Quais funções além da sala de aula contam como magistério é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 5º reduz em cinco anos a idade mínima aplicável ao professor em relação à regra do § 1º, III, desde que seja cumprido o tempo de efetivo exercício nas funções de magistério na educação infantil e nos ensinos fundamental e médio, conforme lei complementar do respectivo ente.",
+     "o_que_significa": "O dispositivo cria tratamento previdenciário específico para professores da educação básica.\nNa União, a referência constitucional de 62 anos para mulher e 65 anos para homem corresponde, com a redução de cinco anos, a 57 e 60 anos respectivamente, sem afastar os demais requisitos aplicáveis.\nA redução exige o tempo de efetivo exercício das funções de magistério fixado na legislação correspondente.",
+     "exemplo_pratico": "Uma professora abrangida pelo RPPS e que preencha o tempo de funções de magistério exigido pela legislação aplicável poderá utilizar a redução constitucional de cinco anos na idade mínima, desde que satisfaça também os demais requisitos previdenciários pertinentes.",
+     "atencao": "O dispositivo é dirigido à educação infantil e aos ensinos fundamental e médio; não inclui o magistério de ensino superior.\nO conceito de funções de magistério não se limita, necessariamente, ao tempo dentro da sala de aula.\nO alcance de atividades como direção de unidade escolar, coordenação e assessoramento pedagógico é tratado pela jurisprudência.",
+     "palavras_dificeis": [
+      {
+       "termo": "Funções de magistério",
+       "explicacao": "atividades da carreira do magistério consideradas para essa regra, cujo alcance também é interpretado pela legislação e jurisprudência."
+      },
+      {
+       "termo": "Educação básica",
+       "explicacao": "educação infantil e ensinos fundamental e médio."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "Tema 965 e ADI 3.772 do Supremo Tribunal Federal: nas condições fixadas pela jurisprudência, também podem ser computadas atividades de direção de unidade escolar, coordenação e assessoramento pedagógico exercidas por professores de carreira em estabelecimentos de educação básica."
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.40:PAR.6",
+   "decision": "AJUSTAR",
+   "status_after": "HUMAN_APPROVED_T1 (politica de microajustes T1 pre-autorizada; editorial_version 2)",
+   "review_reason": "Retirada a afirmacao categorica \"Todas as somas se sujeitam ao teto (§ 11)\": a relacao entre teto e acumulacoes constitucionalmente admitidas possui tratamento jurisprudencial.",
+   "from_explanation_id": "ENTENDA/CF88:ART.40:PAR.6/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.40:PAR.6/BASE/2",
+   "changed_sections": [
+    "o_que_diz",
+    "o_que_significa",
+    "exemplo_pratico",
+    "atencao",
+    "palavras_dificeis",
+    "external_layer_notes"
+   ],
+   "reviewer_text_verbatim": {
+    "reason": "Retirada a afirmacao categorica \"Todas as somas se sujeitam ao teto (§ 11)\": a relacao entre teto e acumulacoes constitucionalmente admitidas possui tratamento jurisprudencial.",
+    "raw_wrapped": {
+     "o_que_diz": "O § 6º proíbe, como regra, a percepção de mais de uma\naposentadoria custeada por regime próprio.\nA Constituição ressalva as aposentadorias decorrentes de\ncargos que poderiam ser acumulados constitucionalmente.\nO dispositivo também determina a aplicação de outras\nvedações, condições e regras de acumulação de benefícios\nprevistas para o Regime Geral.",
+     "o_que_significa": "A regra geral é impedir que uma pessoa receba múltiplas\naposentadorias de RPPS sem fundamento constitucional.\nA exceção acompanha as hipóteses em que a própria\nConstituição permite acumular cargos.\nAssim, se dois cargos puderam ser exercidos licitamente\nde forma acumulada, as aposentadorias correspondentes podem\nse enquadrar na ressalva do § 6º.\nA parte final do dispositivo também conecta a acumulação de\nbenefícios às demais regras previdenciárias aplicáveis ao\nRegime Geral.",
+     "exemplo_pratico": "Um médico que tenha exercido licitamente dois cargos\npúblicos acumuláveis pode preencher os requisitos para\naposentadoria decorrente de cada vínculo.\nJá o exercício de um único cargo não permite criar uma\nsegunda aposentadoria de RPPS sem outra hipótese\nconstitucional que a autorize.",
+     "atencao": "O § 6º não detalha todas as combinações possíveis entre\naposentadorias, pensões e outros benefícios.\nTambém não deve ser usado isoladamente para definir como o\nteto remuneratório incide em situações de acumulação.\nO § 11 e a jurisprudência constitucional devem ser\nconsultados para essas questões.",
+     "palavras_dificeis": [
+      "Cargos acumuláveis: cargos cujo exercício simultâneo é\nadmitido pela Constituição.",
+      "Acumulação de benefícios: recebimento simultâneo de mais\nde um benefício previdenciário."
+     ]
+    },
+    "content": {
+     "o_que_diz": "O § 6º proíbe, como regra, a percepção de mais de uma aposentadoria custeada por regime próprio.\nA Constituição ressalva as aposentadorias decorrentes de cargos que poderiam ser acumulados constitucionalmente.\nO dispositivo também determina a aplicação de outras vedações, condições e regras de acumulação de benefícios previstas para o Regime Geral.",
+     "o_que_significa": "A regra geral é impedir que uma pessoa receba múltiplas aposentadorias de RPPS sem fundamento constitucional.\nA exceção acompanha as hipóteses em que a própria Constituição permite acumular cargos.\nAssim, se dois cargos puderam ser exercidos licitamente de forma acumulada, as aposentadorias correspondentes podem se enquadrar na ressalva do § 6º.\nA parte final do dispositivo também conecta a acumulação de benefícios às demais regras previdenciárias aplicáveis ao Regime Geral.",
+     "exemplo_pratico": "Um médico que tenha exercido licitamente dois cargos públicos acumuláveis pode preencher os requisitos para aposentadoria decorrente de cada vínculo.\nJá o exercício de um único cargo não permite criar uma segunda aposentadoria de RPPS sem outra hipótese constitucional que a autorize.",
+     "atencao": "O § 6º não detalha todas as combinações possíveis entre aposentadorias, pensões e outros benefícios.\nTambém não deve ser usado isoladamente para definir como o teto remuneratório incide em situações de acumulação.\nO § 11 e a jurisprudência constitucional devem ser consultados para essas questões.",
+     "palavras_dificeis": [
+      {
+       "termo": "Cargos acumuláveis",
+       "explicacao": "cargos cujo exercício simultâneo é admitido pela Constituição."
+      },
+      {
+       "termo": "Acumulação de benefícios",
+       "explicacao": "recebimento simultâneo de mais de um benefício previdenciário."
+      }
+     ]
+    },
+    "unwrap_rule": "quebras de linha unidas por espaco, exceto apos . : ; seguido de inicio de frase (paragrafo)",
+    "external_layer_notes": [
+     "ACRESCENTAR",
+     "A incidência do teto em acumulações constitucionalmente admitidas possui jurisprudência própria, inclusive os Temas 377 e 384 do Supremo Tribunal Federal, já catalogados na revisão do art. 37."
+    ]
+   },
+   "t1_contract_deviations": [],
+   "content_provenance": [
+    {
+     "section": "external_layer_notes",
+     "content": "Temas 377 e 384 (teto em acumulacoes licitas), ja catalogados na Rodada 01",
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "note": "jurisprudencia indicada pela revisao humana; so na CAMADA EXTERNA"
+    }
+   ],
+   "before": {
+    "content": {
+     "o_que_diz": "O parágrafo proíbe receber mais de uma aposentadoria do regime próprio, salvo as decorrentes de cargos que a Constituição permite acumular. Também manda aplicar outras vedações e condições de acumulação de benefícios previstas no Regime Geral.",
+     "o_que_significa": "Em regra, cada servidor recebe uma só aposentadoria do regime próprio. A exceção acompanha o art. 37, XVI: quem acumulou licitamente dois cargos, como dois de professor, pode se aposentar nos dois.\nA parte final importa as regras de acumulação de benefícios do Regime Geral. Elas podem limitar a soma de benefícios diferentes, como aposentadoria e pensão.",
+     "exemplo_pratico": "Um médico que ocupou licitamente dois cargos públicos de médico pode receber duas aposentadorias do regime próprio. Um servidor com um único cargo não pode obter uma segunda aposentadoria nesse regime.",
+     "atencao": "O parágrafo trata de aposentadorias do regime próprio. Os limites concretos para acumular aposentadoria com pensão vêm das regras do Regime Geral a que o texto remete, e não estão detalhados aqui. Todas as somas se sujeitam ao teto (§ 11).",
+     "palavras_dificeis": [
+      {
+       "termo": "Cargos acumuláveis",
+       "explicacao": "cargos que a Constituição permite exercer ao mesmo tempo, como dois de professor."
+      },
+      {
+       "termo": "Acumulação de benefícios",
+       "explicacao": "recebimento simultâneo de mais de um benefício previdenciário."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "As regras de acumulação de benefícios aplicáveis e as reduções de valor previstas estão na Emenda Constitucional nº 103/2019 e na legislação do Regime Geral (camada externa)."
+    ]
+   },
+   "after": {
+    "content": {
+     "o_que_diz": "O § 6º proíbe, como regra, a percepção de mais de uma aposentadoria custeada por regime próprio.\nA Constituição ressalva as aposentadorias decorrentes de cargos que poderiam ser acumulados constitucionalmente.\nO dispositivo também determina a aplicação de outras vedações, condições e regras de acumulação de benefícios previstas para o Regime Geral.",
+     "o_que_significa": "A regra geral é impedir que uma pessoa receba múltiplas aposentadorias de RPPS sem fundamento constitucional.\nA exceção acompanha as hipóteses em que a própria Constituição permite acumular cargos.\nAssim, se dois cargos puderam ser exercidos licitamente de forma acumulada, as aposentadorias correspondentes podem se enquadrar na ressalva do § 6º.\nA parte final do dispositivo também conecta a acumulação de benefícios às demais regras previdenciárias aplicáveis ao Regime Geral.",
+     "exemplo_pratico": "Um médico que tenha exercido licitamente dois cargos públicos acumuláveis pode preencher os requisitos para aposentadoria decorrente de cada vínculo.\nJá o exercício de um único cargo não permite criar uma segunda aposentadoria de RPPS sem outra hipótese constitucional que a autorize.",
+     "atencao": "O § 6º não detalha todas as combinações possíveis entre aposentadorias, pensões e outros benefícios.\nTambém não deve ser usado isoladamente para definir como o teto remuneratório incide em situações de acumulação.\nO § 11 e a jurisprudência constitucional devem ser consultados para essas questões.",
+     "palavras_dificeis": [
+      {
+       "termo": "Cargos acumuláveis",
+       "explicacao": "cargos cujo exercício simultâneo é admitido pela Constituição."
+      },
+      {
+       "termo": "Acumulação de benefícios",
+       "explicacao": "recebimento simultâneo de mais de um benefício previdenciário."
+      }
+     ]
+    },
+    "external_layer_notes": [
+     "As regras de acumulação de benefícios aplicáveis e as reduções de valor previstas estão na Emenda Constitucional nº 103/2019 e na legislação do Regime Geral (camada externa).",
+     "A incidência do teto em acumulações constitucionalmente admitidas possui jurisprudência própria, inclusive os Temas 377 e 384 do Supremo Tribunal Federal, já catalogados na revisão do art. 37."
+    ]
+   }
+  }
+ ]
+}
