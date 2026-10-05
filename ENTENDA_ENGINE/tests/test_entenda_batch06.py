@@ -23,6 +23,12 @@ import text_source_reconstruction as TSR  # noqa: E402
 
 BD = HERE / 'derived/production_batch_06'
 PILOTS = ('CF88:ART.60', 'CF88:ART.60:PAR.4', 'CF88:ART.60:PAR.4:INC.IV')
+ROUND_D_AS_IS = ('CF88:ART.51:INC.I', 'CF88:ART.52:INC.X')
+ROUND_D_ADJUSTED = ('CF88:ART.52:PAR.UNICO', 'CF88:ART.53:CAPUT', 'CF88:ART.53:PAR.1', 'CF88:ART.53:PAR.2', 'CF88:ART.55:INC.VI', 'CF88:ART.58:PAR.3',
+                    'CF88:ART.62:PAR.6', 'CF88:ART.63', 'CF88:ART.75')
+REQUIRED_SOURCES = {'CF88:ART.52:PAR.UNICO': ('MS 34.418', '25/09/2023', 'MS 21.689'), 'CF88:ART.53:CAPUT': ('Inq 4.781 Ref', 'Tema 950'),
+                    'CF88:ART.53:PAR.1': ('HC 232.627', 'Inq 4.787-QO'), 'CF88:ART.55:INC.VI': ('AP 694',), 'CF88:ART.62:PAR.6': ('MS 27.931',),
+                    'CF88:ART.63': ('ADI 3.114', 'ADI 2.681 MC', 'Tema 686'), 'CF88:ART.75': ('Emenda Constitucional nº 139',)}
 COMPLEXITY_ONLY = {'QUORUM', 'DEADLINE', 'NUMBER_OR_PERCENTAGE', 'EXCEPTION', 'COMPLEX_REMISSION', 'BLOCK_MULTI_DEPENDENCY', 'LAW_DEPENDENCY',
                    'EC_WORDING', 'REMISSION_OR_LIST'}
 
@@ -49,7 +55,11 @@ class Batch06(unittest.TestCase):
         cls.ctx = E.NormContext('CF88')
         cls.catalog = V.load_catalog()
         cls.spec = load('BATCH_SPEC.json')
-        cls.corpus = [r for r in E.load_corpus(BD / 'CF88_BATCH_06.entenda.jsonl') if r['status'] == 'ACTIVE']
+        cls.all = E.load_corpus(BD / 'CF88_BATCH_06.entenda.jsonl')
+        cls.corpus = [r for r in cls.all if r['status'] == 'ACTIVE']
+        cls.pre = E.load_corpus(BD / 'CF88_BATCH_06_PRE_ROUND_D.entenda.jsonl')
+        cls.pre_by = {r['target_id']: r for r in cls.pre}
+        cls.pre_tri = {x['target_id']: x for x in load('BATCH06_TRIAGE_PRE_ROUND_D.json')['rows']}
         cls.by = {r['target_id']: r for r in cls.corpus}
         cls.sel = load('SELECTION_REPORT.json')
         cls.tri = load('BATCH06_TRIAGE.json')
@@ -67,18 +77,69 @@ class Batch06(unittest.TestCase):
         self.assertIn('ENTENDA_ENGINE/derived/production_batch_05/CF88_BATCH_05.entenda.jsonl', self.spec['prior_corpora'])
         self.assertEqual(sorted(self.spec['reused']), sorted(PILOTS))
 
-    def test_no_human_approval_granted(self):
+    def test_only_queue_d_approved_in_round_d(self):
         cfg = V.load_json(V.CONFIG)
         self.assertFalse(cfg['AUTO_APPROVE_LOW'])
         self.assertFalse(cfg['AUTO_APPROVE_MEDIUM'])
         self.assertFalse(cfg['MICROAUTO_APPLY'])
         self.assertEqual(len(self.corpus), 93)
-        self.assertTrue(all(r['review_status'] == 'PENDING_HUMAN_REVIEW' and r['editorial_version'] == 1 for r in self.corpus))
-        self.assertEqual(self.tri['human_approved_t1_granted'], 0)
-        self.assertEqual(self.sel['summary']['review_status_counts'], {'HUMAN_APPROVED_T1': 3, 'PENDING_HUMAN_REVIEW': 93})
-        drafts = load('BATCH_06_DRAFTS.json')
-        self.assertEqual(drafts['review_status'], 'PENDING_HUMAN_REVIEW')
-        self.assertFalse(any(e.get('review_status') or e.get('human_review') for e in drafts['explanations']))
+        approved = sorted(r['target_id'] for r in self.corpus if r['review_status'] == 'HUMAN_APPROVED_T1')
+        self.assertEqual(approved, sorted(ROUND_D_AS_IS + ROUND_D_ADJUSTED))
+        for t in approved:                                              # all 11 came from queue D of the recalibrated triage
+            self.assertEqual(self.pre_tri[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
+            self.assertEqual(self.by[t]['human_review']['review_scope'], 'CF88_BATCH06_TRIAGE_QUEUE_D', t)
+        pending = [r for r in self.corpus if r['review_status'] == 'PENDING_HUMAN_REVIEW']
+        self.assertEqual(len(pending), 82)
+        self.assertTrue(all(self.pre_tri[r['target_id']]['queue'] in ('A_CLEAN_LOW', 'B_CLEAN_MEDIUM', 'C_QUICK_REVIEW') for r in pending))
+        self.assertEqual(self.tri['human_approved_t1_granted'], 11)
+        self.assertEqual(self.sel['summary']['review_status_counts'], {'HUMAN_APPROVED_T1': 14, 'PENDING_HUMAN_REVIEW': 82})
+        tot = self.tri['approval_totals']
+        self.assertEqual((tot['global_before'], tot['global_after'], tot['batch06_new_pending']), (289, 300, 82))
+        dec = load('ROUND_D_HUMAN_REVIEW_DECISIONS.json')
+        self.assertEqual(dec['review_status'], 'ROUND_REVIEW_COMPLETED')
+        self.assertEqual(dec['decision_counts'], {'APPROVED': 2, 'APPROVED_AFTER_ADJUSTMENT': 9, 'REJECTED': 0})
+        for name, h in dec['original_evidence_sha256'].items():
+            self.assertEqual(sha(BD / name), h, name)
+
+    def test_round_d_versions_and_history(self):
+        retired = {r['target_id']: r for r in self.all if r['status'] == 'RETIRED'}
+        self.assertEqual(sorted(retired), sorted(ROUND_D_ADJUSTED))
+        for t in ROUND_D_ADJUSTED:
+            old, new = retired[t], self.by[t]
+            self.assertEqual((old['editorial_version'], new['editorial_version']), (1, 2), t)
+            self.assertEqual(old['review_status'], 'CHANGES_REQUESTED', t)
+            self.assertEqual(old['superseded_by'], new['explanation_id'], t)
+            self.assertEqual(old['content'], self.pre_by[t]['content'], t)            # earlier version preserved, never overwritten
+            self.assertEqual(old['source'], self.pre_by[t]['source'], t)
+            self.assertEqual(new['human_review']['decision'], 'APPROVED_AFTER_ADJUSTMENT', t)
+        for t in ROUND_D_AS_IS:                                          # approved without rewriting content: same version and bytes
+            r = self.by[t]
+            self.assertEqual(r['editorial_version'], 1)
+            self.assertEqual(r['content'], self.pre_by[t]['content'])
+            self.assertEqual(r['external_layer_notes'], self.pre_by[t]['external_layer_notes'])
+            self.assertEqual(r['human_review']['decision'], 'APPROVED')
+        self.assertEqual(V.version_chain_findings(self.all, self.pre), [])
+
+    def test_round_d_provenance_and_sources(self):
+        for t in ROUND_D_ADJUSTED:
+            prov = self.by[t]['human_review']['content_provenance']
+            self.assertTrue(prov, t)
+            self.assertTrue(all(p['source_type'] == 'HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE' for p in prov), t)
+            notes = ' '.join(self.by[t]['external_layer_notes'])
+            for ref in REQUIRED_SOURCES.get(t, ()):
+                self.assertIn(ref, notes, (t, ref))
+        recs = load('JURISPRUDENCE_LINK_RECOMMENDATIONS.json')
+        self.assertTrue(all(r['status'] == 'PENDING_EXTERNAL_INGESTION' for r in recs['recommendations']))   # nothing fabricated locally
+        self.assertIn('MS 27.931 (STF)', {r['desired_reference'] for r in recs['recommendations']})
+
+    def test_round_d_approval_gate(self):
+        gate = self.tri['round_approvals']['gate']
+        self.assertEqual(len(gate), 11)
+        for g in gate:
+            self.assertEqual(g['gate'], 'PASS', g['target_id'])
+            self.assertEqual((g['hard_fail'], g['review_required_open'], g['editorial_checks_open']), ([], [], 0), g['target_id'])
+        open_ = {r['target_id']: r['unresolved'] for r in self.chk['rows']}
+        self.assertTrue(all(open_[t] == 0 for t in ROUND_D_AS_IS + ROUND_D_ADJUSTED))
 
     def test_every_current_target_selected_or_skipped_with_reason(self):
         rows = self.sel['selection']
@@ -114,7 +175,7 @@ class Batch06(unittest.TestCase):
         self.assertEqual(ops, {TSR.recipes()['updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt']['sha256']})
 
     def test_recalibration_log_matches_drafts(self):
-        drafts = {e['target_id']: e for e in load('BATCH_06_DRAFTS.json')['explanations']}
+        drafts = {e['target_id']: e for e in load('BATCH_06_DRAFTS_PRE_ROUND_D.json')['explanations']}   # ROUND_0B edits precede round D
         for e in self.log['edits']:
             d = drafts[e['target_id']]
             text = '\n'.join(d['external_layer_notes']) if e['section'] == 'external_layer_notes' else d['content'][e['section']]
@@ -158,29 +219,47 @@ class Batch06(unittest.TestCase):
         self.assertNotIn('COMPLEX_REMISSION', R.classify(rec, self.ctx)['rules'])  # legacy classifier: snapshot ids are not remissions
 
     def test_jurisprudence_context_vs_required(self):
-        jur = {t: x['jurisprudence'] for t, x in self.rows.items()}
+        jur = {t: x['jurisprudence'] for t, x in self.pre_tri.items()}     # routing of the pending drafts that went to round D
         for t in ('CF88:ART.53:PAR.1', 'CF88:ART.62:PAR.6', 'CF88:ART.55:INC.VI'):
             self.assertEqual(jur[t], 'REQUIRED_FOR_CORRECTNESS', t)
-            self.assertEqual(self.rows[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
+            self.assertEqual(self.pre_tri[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
         for t in ('CF88:ART.49:INC.I', 'CF88:ART.69', 'CF88:ART.71:INC.III'):
             self.assertEqual(jur[t], 'CONTEXT_ONLY', t)
             self.assertNotEqual(self.rows[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
 
-    def test_art75_official_evidence_and_semantic_ambiguity(self):
+    def test_art75_official_evidence_and_ambiguity_closed(self):
         r = self.by['CF88:ART.75']
         body = (ROOT / 'updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt').read_text(encoding='utf-8')
-        self.assertIn('vedada sua extinção, criação ou instalação', body)          # official source in the repo: no EXTERNAL_VERIFICATION
+        self.assertEqual(body.count('vedada sua extinção, criação ou instalação'), 2)     # art. 31, par. 1o, and art. 75 (EC 139/2026)
         self.assertFalse(any('EXTERNAL_VERIFICATION_REQUIRED' in n for n in r['external_layer_notes']))
-        x = self.rows['CF88:ART.75']
-        self.assertEqual(x['queue'], 'D_FULL_HUMAN_REVIEW')
-        self.assertIn('CONSTITUTIONAL_AMBIGUITY', x['legal_rules'])
-        self.assertIn('EC 139', load('BATCH06_TARGET_PLAN.json')['vigency_findings']['ART75_EC139_2026'])
-        # regression: the checkpoint paraphrase resolved the referent of "sua" by itself
-        old = with_text(r, 'o_que_diz', self.edit('CF88:ART.75', 'o_que_diz'))
-        codes = {f['code'] for f in V3.validate(old, self.ctx, self.catalog) if f['severity'] == 'REVIEW_REQUIRED'}
-        self.assertIn('SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', codes)
-        self.assertNotIn('SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', {f['code'] for f in V3.validate(r, self.ctx, self.catalog)
-                                                                 if f['severity'] == 'REVIEW_REQUIRED'})
+        risk = load('EDITORIAL_REVIEW_INPUT.json')['risk']['CF88:ART.75']
+        self.assertNotIn('CONSTITUTIONAL_AMBIGUITY', risk['rules'])
+        self.assertIn('art. 31, § 4º', r['content']['atencao'])
+        self.assertIn('Verificacao externa encerrada', load('BATCH06_TARGET_PLAN.json')['vigency_findings']['ART75_EC139_2026'])
+        codes = {f['code'] for f in V3.validate(r, self.ctx, self.catalog)}
+        self.assertIn('SEMANTIC_AMBIGUITY_RESOLVED', codes)
+        # without the recorded resolution the same paraphrase would still be routed to D (the rule is data-driven, not per target)
+        reg = V3.load_registry()
+        reg['entries'] = [{k: v for k, v in e.items() if k != 'resolution'} for e in reg['entries']]
+        open_codes = {f['code'] for f in V3.validate(r, self.ctx, self.catalog, registry=reg) if f['severity'] == 'REVIEW_REQUIRED'}
+        self.assertIn('SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', open_codes)
+        # regression of the checkpoint paraphrase on the pre-round wording (registry without resolution)
+        pre = self.pre_by['CF88:ART.75']
+        old = with_text(pre, 'o_que_diz', self.edit('CF88:ART.75', 'o_que_diz'))
+        self.assertIn('SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', {f['code'] for f in V3.validate(old, self.ctx, self.catalog, registry=reg)
+                                                             if f['severity'] == 'REVIEW_REQUIRED'})
+
+    def test_round_d_generalized_rules(self):
+        pre, now = self.pre_by['CF88:ART.53:PAR.2'], self.by['CF88:ART.53:PAR.2']
+        self.assertIn('PRISON_SCOPE_UNQUALIFIED', {f['code'] for f in V3.validate(pre, self.ctx, self.catalog)})       # absolute prison ban
+        self.assertNotIn('PRISON_SCOPE_UNQUALIFIED', {f['code'] for f in V3.validate(now, self.ctx, self.catalog)})   # cautelar x prisao-pena
+        bare = copy.deepcopy(now)
+        bare['human_review'] = {}
+        codes = {f['code'] for f in V3.validate(bare, self.ctx, self.catalog) if f['severity'] == 'REVIEW_REQUIRED'}
+        self.assertIn('JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE', codes)                  # current precedent needs provenance
+        self.assertIn('JURISPRUDENCE_CLAIM_WITH_PROVENANCE', {f['code'] for f in V3.validate(now, self.ctx, self.catalog)})
+        pending_codes = {d['code'] for x in self.tri['rows'] for d in x['detectors']}
+        self.assertFalse(pending_codes & {'PRISON_SCOPE_UNQUALIFIED', 'JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE'})   # no new noise on the 82
 
     def test_art45_par1_resolver_status_preserved(self):
         x = self.rows['CF88:ART.45:PAR.1']
@@ -234,12 +313,12 @@ class Batch06(unittest.TestCase):
     def test_teleology_true_positives_kept_false_positives_refined(self):
         for t in ('CF88:ART.49:INC.V', 'CF88:ART.53:PAR.3', 'CF88:ART.57:PAR.2', 'CF88:ART.62:PAR.1', 'CF88:ART.62:PAR.6', 'CF88:ART.64:PAR.2', 'CF88:ART.67'):
             e = next(e for e in self.log['edits'] if e['target_id'] == t and e['category'] == 'TELEOLOGY')
-            old = with_text(self.by[t], e['section'], [(e['after'], e['before'])])
+            old = with_text(self.pre_by[t], e['section'], [(e['after'], e['before'])])
             codes = {f['code'] for f in V3.validate(old, self.ctx, self.catalog) if f['severity'] == 'REVIEW_REQUIRED'}
             self.assertIn('TELEOLOGY_SPECULATIVE', codes, t)
-            now = {f['code'] for f in V3.validate(self.by[t], self.ctx, self.catalog) if f['severity'] == 'REVIEW_REQUIRED'}
+            now = {f['code'] for f in V3.validate(self.pre_by[t], self.ctx, self.catalog) if f['severity'] == 'REVIEW_REQUIRED'}
             self.assertNotIn('TELEOLOGY_SPECULATIVE', now, t)
-        refined = {(x['target_id'], i['code']) for x in self.tri['rows'] for i in x['info'] if i['code'] in ('TELEOLOGY_SPECULATIVE', 'UNIVERSAL_CLAIM',
+        refined = {(x['target_id'], i['code']) for x in self.pre_tri.values() for i in x['info'] if i['code'] in ('TELEOLOGY_SPECULATIVE', 'UNIVERSAL_CLAIM',
                                                                                                           'AUTOMATIC_CONSEQUENCE')}
         for pair in (('CF88:ART.43', 'TELEOLOGY_SPECULATIVE'), ('CF88:ART.68', 'TELEOLOGY_SPECULATIVE'), ('CF88:ART.46', 'UNIVERSAL_CLAIM'),
                      ('CF88:ART.51:INC.I', 'UNIVERSAL_CLAIM'), ('CF88:ART.67', 'UNIVERSAL_CLAIM'), ('CF88:ART.57:PAR.7', 'AUTOMATIC_CONSEQUENCE')):
@@ -257,15 +336,17 @@ class Batch06(unittest.TestCase):
 
     def test_queues_and_packets(self):
         c = self.tri['counts']
-        self.assertEqual(sum(c.values()), 93)
         self.assertEqual(c['E_HARD_FAIL'], 0)
         self.assertIn('Total: **0**', (BD / 'BATCH06_HARD_FAIL_REPORT.md').read_text(encoding='utf-8'))
-        self.assertLessEqual(c['D_FULL_HUMAN_REVIEW'], 0.4 * 93)
+        self.assertEqual(sum(c.values()), 82)                            # the 11 approved in round D leave the triage
+        self.assertEqual(c['D_FULL_HUMAN_REVIEW'], 0)
         self.assertTrue((BD / 'BATCH06_FULL_HUMAN_REVIEW.md').is_file())
         self.assertFalse((BD / 'BATCH06_D_ESCALATION_DIAGNOSTIC.md').is_file())
         full = (BD / 'BATCH06_FULL_HUMAN_REVIEW.md').read_text(encoding='utf-8')
         compact = (BD / 'BATCH06_COMPACT_CLEAN_REVIEW.md').read_text(encoding='utf-8')
         quick = (BD / 'BATCH06_QUICK_REVIEW.md').read_text(encoding='utf-8')
+        for t in ROUND_D_AS_IS + ROUND_D_ADJUSTED:
+            self.assertNotIn(f"`{t}`", compact + quick + full)
         for x in self.tri['rows']:
             t, q = x['target_id'], x['queue']
             if q == 'D_FULL_HUMAN_REVIEW':
@@ -289,8 +370,8 @@ class Batch06(unittest.TestCase):
 
     def test_migration_of_previous_d(self):
         m = self.tri['migration']
-        self.assertEqual(m['previous_D'], 89)
-        self.assertEqual(m['previous_D_migrated'], 89 - m['previous_D_now'].get('D_FULL_HUMAN_REVIEW', 0))
+        self.assertEqual(m['previous_D'] + 11, 89)                        # 11 old D were decided in round D
+        self.assertEqual(m['previous_D_migrated'], m['previous_D'] - m['previous_D_now'].get('D_FULL_HUMAN_REVIEW', 0))
         self.assertGreater(m['previous_D_migrated'], 0)
 
     def test_volume_reduction_measured(self):

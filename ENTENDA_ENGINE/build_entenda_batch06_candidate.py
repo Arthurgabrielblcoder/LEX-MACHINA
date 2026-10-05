@@ -35,7 +35,9 @@ import text_source_reconstruction as TSR  # noqa: E402
 
 BD = HERE / 'derived/production_batch_06'
 INPUTS = ('BATCH_SPEC.json', 'BATCH_06_DRAFTS.json', 'BATCH06_TARGET_PLAN.json', 'EDITORIAL_REVIEW_INPUT.json', 'BATCH06_RELATIONS_PIN.json',
-          'PRE_RECALIBRATION_MANIFEST.json', 'RECALIBRATION_EDITORIAL_LOG.json', 'ROUND_0_EDITORIAL_LOG.json')
+          'PRE_RECALIBRATION_MANIFEST.json', 'RECALIBRATION_EDITORIAL_LOG.json', 'ROUND_0_EDITORIAL_LOG.json',
+          'BATCH_06_DRAFTS_PRE_ROUND_D.json', 'CF88_BATCH_06_PRE_ROUND_D.entenda.jsonl', 'ROUND_D_HUMAN_REVIEW_DECISIONS.json',
+          'BATCH06_FULL_HUMAN_REVIEW_PRE_ROUND_D.md', 'BATCH06_TRIAGE_PRE_ROUND_D.json')
 GENERATED = ('CF88_BATCH_06.entenda.jsonl', 'index/ENTENDA_BUILD_MANIFEST.json', 'index/ENTENDA_LOOKUP.IDX', 'index/ENTENDA_PAYLOAD.DAT',
              'SELECTION_REPORT.json', 'JURISPRUDENCE_LINK_RECOMMENDATIONS.json', 'REVIEW_BATCH_06.md', 'EDITORIAL_REVIEW_INPUT.json',
              'EDITORIAL_CHECKS.json', 'REVIEW_BATCH_06_RISK_TRIAGE.md', 'BATCH06_TRIAGE.json', 'BATCH06_COMPACT_CLEAN_REVIEW.md',
@@ -96,10 +98,51 @@ def batch05_regression(ctx, catalog):
                 new_codes_on_approved_unchanged=dict(sorted(Counter(c for t in same for c in flag3[t] - flag2[t]).items())))
 
 
+class ApprovalGateError(RuntimeError):
+    pass
+
+
+def approval_gate(c):
+    """Every explanation approved in a recorded round must pass all checks before it can carry HUMAN_APPROVED_T1: engine contract
+    (production_batch already validated the corpus), validator v3 without HARD_FAIL and without open REVIEW_REQUIRED (known resolutions
+    of the approved wording included), and editorial_checks without open findings. Any failure stops the build (fail closed)."""
+    chk = {r['target_id']: r for r in V.load_json(c.bd / 'EDITORIAL_CHECKS.json')['rows']}
+    man = V.load_json(c.bd / c.spec['index_dir'] / 'ENTENDA_BUILD_MANIFEST.json')
+    lint = {}
+    for w in man['warnings']:
+        lint.setdefault(w['target_id'], []).append(w)
+    rows, bad = [], []
+    for t, r in sorted(c.records.items(), key=lambda kv: c.ctx.order[kv[0]]):
+        if r['review_status'] != 'HUMAN_APPROVED_T1':
+            continue
+        fs = c.validate(r, lint.get(t, []), chk[t]['findings'])
+        hard = sorted({f['code'] for f in fs if f['severity'] == 'HARD_FAIL'})
+        open_ = sorted({f['code'] for f in fs if f['severity'] == 'REVIEW_REQUIRED'})
+        row = dict(target_id=t, explanation_id=r['explanation_id'], editorial_version=r['editorial_version'],
+                   decision=(r.get('human_review') or {}).get('decision'), review_scope=(r.get('human_review') or {}).get('review_scope'),
+                   provenance_items=len(V._provenance(r)), hard_fail=hard, review_required_open=open_, editorial_checks_open=chk[t]['unresolved'],
+                   info=sorted({f['code'] for f in fs if f['severity'] == 'INFO' and f['code'].startswith(('JURISPRUDENCE_', 'EXTERNAL_FACT', 'SEMANTIC_'))}),
+                   gate='PASS' if not (hard or open_ or chk[t]['unresolved']) else 'FAIL')
+        rows.append(row)
+        if row['gate'] == 'FAIL':
+            bad.append(row)
+    if bad:
+        raise ApprovalGateError(json.dumps(bad, ensure_ascii=False))
+    return rows
+
+
+def global_approved(spec):
+    """HUMAN_APPROVED_T1 explanation keys in force across the approved corpora (main + prior) and this batch (pilots counted once)."""
+    root = HERE.parent
+    recs = E.load_corpus(HERE / 'corpus/CF88.entenda.jsonl') + [r for pc in spec['prior_corpora'] for r in E.load_corpus(root / pc)]
+    before = {r['explanation_key'] for r in recs if r['status'] == 'ACTIVE' and r['review_status'] == 'HUMAN_APPROVED_T1'}
+    return before
+
+
 def build(bd=BD):
     bd = Path(bd)
     for n in ('CF88_BATCH_06.entenda.jsonl', 'index/ENTENDA_BUILD_MANIFEST.json', 'index/ENTENDA_LOOKUP.IDX', 'index/ENTENDA_PAYLOAD.DAT'):
-        (bd / n).unlink(missing_ok=True)                     # candidate corpus is regenerated from the drafts (no reviewed version)
+        (bd / n).unlink(missing_ok=True)   # rebuilt from the drafts on the frozen pre-round evidence corpus (spec stamping_evidence_corpus)
     sel = PB.run(bd)
     ctx = E.NormContext('CF88')
     catalog, known, registry = V.load_catalog(), V.load_json(V.KNOWN), V3.load_registry()
@@ -116,6 +159,7 @@ def build(bd=BD):
     inp['risk'] = BP.risk_input(c)
     _json(bd / 'EDITORIAL_REVIEW_INPUT.json', inp)
     EC.run(bd)
+    gate = approval_gate(c)
     doc = BP.triage(c, pre.get('queues_by_target'))
     files, full_generated = BP.packets(doc, c)
     for n in ('BATCH06_FULL_HUMAN_REVIEW.md', 'BATCH06_D_ESCALATION_DIAGNOSTIC.md'):
@@ -126,7 +170,18 @@ def build(bd=BD):
     doc['d_full_package'] = 'GERADO' if full_generated else 'NAO_GERADO (diagnostico de escalonamento)'
     micro = BP.micro_auto(doc, c.cfg)
     doc['micro_adjustments'] = dict(applied=micro['applied'], eligible=micro['eligible'], microauto_apply=micro['microauto_apply'])
-    doc['human_approved_t1_granted'] = 0
+    before = global_approved(c.spec)
+    new_approved = {r['explanation_key'] for r in c.records.values() if r['review_status'] == 'HUMAN_APPROVED_T1'}
+    pend = [r for r in c.records.values() if r['review_status'] == 'PENDING_HUMAN_REVIEW']
+    doc['human_approved_t1_granted'] = len(new_approved)
+    doc['round_approvals'] = dict(review_scopes=[ra['review_scope'] for ra in c.spec.get('round_approvals', [])], gate=gate,
+                                  approved=len(gate), approved_unchanged=sum(1 for g in gate if g['decision'] == 'APPROVED'),
+                                  approved_after_adjustment=sum(1 for g in gate if g['decision'] == 'APPROVED_AFTER_ADJUSTMENT'),
+                                  retired_versions=sorted(r['explanation_id'] for r in E.load_corpus(bd / c.spec['batch_corpus']) if r['status'] == 'RETIRED'))
+    doc['approval_totals'] = dict(global_before=len(before), batch06_new_approved=len(new_approved - before),
+                                  global_after=len(before | new_approved), batch06_new_pending=len(pend),
+                                  batch06_reused_pilots_already_approved=len(c.spec.get('reused', {})),
+                                  note='pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo')
     doc['text_source'] = text_source_status(ctx)
     doc['relations_pin'] = dict(file='BATCH06_RELATIONS_PIN.json', coverage=pin['coverage'])
     doc['validator_limits'] = V3.LIMITS
@@ -179,7 +234,18 @@ def scale_report(doc, sel, c, pre):
     L += ['', f"Risco no checkpoint: {', '.join(f'{k} {v}' for k, v in sorted(mig.get('previous_risk_counts', {}).items()))}.", '',
           f"**Migração dos {mig.get('previous_D', 0)} D antigos:** {mig.get('previous_D_migrated', 0)} saíram de D → "
           + ', '.join(f'{k} {v}' for k, v in sorted(mig.get('previous_D_now', {}).items())) + '.', '',
-          '## Motivos dos D restantes', '']
+          '## Rodada D (revisão jurídica humana dos 11 itens D)', '']
+    ra, tot = doc.get('round_approvals') or {}, doc.get('approval_totals') or {}
+    if ra.get('gate'):
+        L += [f"Escopo `{', '.join(ra['review_scopes'])}` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · "
+              f"{ra['approved_unchanged']} aprovados sem alteração jurídica · {ra['approved_after_adjustment']} ajustados e aprovados · 0 rejeitados.",
+              '', '| Target | Versão aprovada | Decisão | Proveniência | Portão de checks |', '|---|---|---|---|---|']
+        L += [f"| `{g['target_id']}` | v{g['editorial_version']} | {g['decision']} | {g['provenance_items']} item(ns) | {g['gate']} |" for g in ra['gate']]
+        L += ['', f"Versões anteriores preservadas como RETIRED: {len(ra['retired_versions'])} (v1 dos ajustados).",
+              f"Acervo HUMAN_APPROVED_T1: {tot['global_before']} antes → **{tot['global_after']}** depois (+{tot['batch06_new_approved']} do Batch06; "
+              f"os {tot['batch06_reused_pilots_already_approved']} pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: "
+              f"**{tot['batch06_new_pending']}** (A, B e C não foram decididos).", '']
+    L += ['## Motivos dos D pendentes', '']
     L += [f"- {k}: {v}" for k, v in doc['d_reasons'].items()]
     L += [''] + [f"- `{x['target_id']}` — {'; '.join(x['legal_reasons']) or x['reason']}" for x in rows if x['queue'] == 'D_FULL_HUMAN_REVIEW']
     L += ['', '## Achados que ainda pedem revisão (REVIEW_REQUIRED)', '']

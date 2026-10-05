@@ -1,7 +1,7 @@
 {
  "schema_version": 2,
  "triage": "T1_PENDING_TRIAGE_RECALIBRATED",
- "validator": "T1_VALIDATOR_V3 (A6 + recalibracao Batch06 + licoes da fila D, 2026-10-05)",
+ "validator": "T1_VALIDATOR_V3 (A6 + recalibracao Batch06, 2026-10-05)",
  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
  "as_of": "2026-10-04",
  "auto_approve": {
@@ -26,21 +26,23 @@
   "A_CLEAN_LOW": 42,
   "B_CLEAN_MEDIUM": 27,
   "C_QUICK_REVIEW": 13,
-  "D_FULL_HUMAN_REVIEW": 0,
+  "D_FULL_HUMAN_REVIEW": 11,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 46,
-  "MEDIUM": 36
+  "MEDIUM": 36,
+  "HIGH": 11
  },
  "complexity_counts": {
   "STRUCTURED": 59,
-  "EXTERNAL": 18,
+  "EXTERNAL": 29,
   "SIMPLE": 5
  },
  "jurisprudence_counts": {
   "NONE": 72,
-  "CONTEXT_ONLY": 10
+  "CONTEXT_ONLY": 15,
+  "REQUIRED_FOR_CORRECTNESS": 6
  },
  "by_legal_risk": {
   "LOW": {
@@ -61,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 11,
    "E_HARD_FAIL": 0
   }
  },
@@ -84,7 +86,7 @@
    "A_CLEAN_LOW": 1,
    "B_CLEAN_MEDIUM": 9,
    "C_QUICK_REVIEW": 8,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 11,
    "E_HARD_FAIL": 0
   }
  },
@@ -3696,29 +3698,564 @@
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.51:INC.I",
+   "title": "Art. 51, inciso I — Autorização para processo contra o Presidente",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "SANCTION_WITH_INTERPRETATION"
+   ],
+   "legal_reasons": [
+    "SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + \"tema de interpretação constitucional\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O rito do processo por crime de responsabilidade e o alcance da autorização da Câmara são tratados na lei que define esses crimes e na camad"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: dois terços",
+    "number_or_percentage: dois"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "o_que_significa",
+     "match": "todos os",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + \"tema de interpretação constitucional\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:INC.X",
+   "title": "Art. 52, inciso X — Suspensão de lei declarada inconstitucional",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "INTERPRETIVE_CONTROVERSY"
+   ],
+   "legal_reasons": [
+    "INTERPRETIVE_CONTROVERSY: \"objeto de debate\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance atual da suspensão pelo Senado e os efeitos das decisões em controle difuso são temas da camada JURISPRUDÊNCIA."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: INTERPRETIVE_CONTROVERSY: \"objeto de debate\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "title": "Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "SANCTION_WITH_INTERPRETATION"
+   ],
+   "legal_reasons": [
+    "SANCTION_WITH_INTERPRETATION: perda do cargo + \"questão de interpretação constitucional\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação separada da perda do cargo e da inabilitação é tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: perda do cargo"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: dois terços",
+    "deadline: oito anos",
+    "number_or_percentage: dois"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: SANCTION_WITH_INTERPRETATION: perda do cargo + \"questão de interpretação constitucional\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:CAPUT",
+   "title": "Art. 53, caput — Inviolabilidade por opiniões, palavras e votos",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"é definida pela interpretação\""
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: invioláv"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"é definida pela interpretação\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.1",
+   "title": "Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"delimitados pela interpretação\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"delimitados pela interpretação\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.2",
+   "title": "Art. 53, § 2º — Limites à prisão do parlamentar",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "SANCTION_WITH_INTERPRETATION"
+   ],
+   "legal_reasons": [
+    "SANCTION_WITH_INTERPRETATION: presos + \"questão de interpretação constitucional\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação do § 2º a medidas cautelares diversas da prisão é tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: crime"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "deadline: quatro horas",
+    "number_or_percentage: vinte",
+    "exception: salvo",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "flagrante de crime inafiançável nesse caso os autos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: SANCTION_WITH_INTERPRETATION: presos + \"questão de interpretação constitucional\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55:INC.VI",
+   "title": "Art. 55, inciso VI — Condenação criminal definitiva e perda do mandato",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "INTERPRETIVE_CONTROVERSY",
+    "SANCTION_WITH_INTERPRETATION"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"",
+    "INTERPRETIVE_CONTROVERSY: \"gera dúvidas\"",
+    "SANCTION_WITH_INTERPRETATION: condenação criminal + \"questão tratada pela interpretação constitucional\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "que sofrer condenação criminal em sentença transitada em",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"; INTERPRETIVE_CONTROVERSY: \"gera dúvidas\"; SANCTION_WITH_INTERPRETATION: condenação criminal + \"questão tratada pela interpretação constitucional\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.58:PAR.3",
+   "title": "Art. 58, § 3º — Comissões parlamentares de inquérito",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"são definidos pela interpretação\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: um terço",
+    "deadline: prazo"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "120 dias",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"são definidos pela interpretação\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.6",
+   "title": "Art. 62, § 6º — Regime de urgência e trancamento de pauta",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"delimitado pela interpretação\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: cinco dias",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as demais deliberações legislativas da casa em que",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"delimitado pela interpretação\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.63",
+   "title": "Art. 63 — Proibição de aumentar despesa por emenda",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: nota JURISPRUDENCIA + CONDITION_NOT_IN_TEXT (\"desde que guardem relação com o tema do projeto\")"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: ressalvado",
+    "remissao: arts. 166",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de iniciativa exclusiva do presidente da república ressalvado",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "CONDITION_NOT_IN_TEXT",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "atencao",
+     "match": "desde que guardem relação com o tema do projeto",
+     "sentence": "Emendas que reduzam gastos ou apenas aperfeiçoem o texto, sem elevar a despesa, são admitidas, desde que guardem relação com o tema do projeto.",
+     "detail": "termos da condicao fora da Lei Seca/contexto citado: guarde, relaçã"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: nota JURISPRUDENCIA + CONDITION_NOT_IN_TEXT (\"desde que guardem relação com o tema do projeto\")",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.75",
+   "title": "Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "CONSTITUTIONAL_AMBIGUITY"
+   ],
+   "legal_reasons": [
+    "CONSTITUTIONAL_AMBIGUITY: \"não é definido nesta explicação\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação do modelo federal aos Tribunais de Contas estaduais por simetria é tema da camada JURISPRUDÊNCIA."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia, nota externa",
+    "number_or_percentage: sete",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de contas dos estados e do distrito federal",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "SEMANTIC_AMBIGUITY_REGISTERED",
+     "section": "*",
+     "match": "vedada sua extinção, criação ou instalação",
+     "detail": "CF88_ART75_VEDADA_SUA_EXTINCAO: referente do pronome \"sua\" (Tribunais de Contas em geral, os dos Estados/DF ou os Tribunais e Conselhos de Contas dos Municipios) e relacao com o art. 31, § 4º"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: CONSTITUTIONAL_AMBIGUITY: \"não é definido nesta explicação\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   }
  ],
  "migration": {
   "previous_counts": {
-   "D_FULL_HUMAN_REVIEW": 78,
+   "D_FULL_HUMAN_REVIEW": 89,
    "A_CLEAN_LOW": 1,
    "C_QUICK_REVIEW": 3
   },
-  "previous_D": 78,
+  "previous_D": 89,
   "previous_D_now": {
    "A_CLEAN_LOW": 38,
    "B_CLEAN_MEDIUM": 27,
-   "C_QUICK_REVIEW": 13
+   "C_QUICK_REVIEW": 13,
+   "D_FULL_HUMAN_REVIEW": 11
   },
   "previous_D_migrated": 78,
   "previous_risk_counts": {
-   "HIGH": 78,
+   "HIGH": 89,
    "LOW": 3,
    "MEDIUM": 1
   }
  },
- "d_reasons": {},
+ "d_reasons": {
+  "CONSTITUTIONAL_AMBIGUITY": 1,
+  "INTERPRETIVE_CONTROVERSY": 2,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 6,
+  "SANCTION_WITH_INTERPRETATION": 4
+ },
  "finding_counts": {
+  "CONDITION_NOT_IN_TEXT": 1,
   "EXCEPTION_OR_RESSALVA_DROPPED": 1,
   "EXTERNAL_FACT_NEEDS_PROVENANCE": 1,
   "HISTORICAL_CLAIM_UNVERIFIED": 7,
@@ -3727,221 +4264,29 @@
  "refined_false_positive_counts": {
   "AUTOMATIC_CONSEQUENCE": 2,
   "TELEOLOGY_SPECULATIVE": 7,
-  "UNIVERSAL_CLAIM": 6
+  "UNIVERSAL_CLAIM": 7
  },
  "metrics": {
-  "total_draft_chars": 109697,
-  "old_model_full_package_chars": 219048,
-  "presented_chars": 64577,
+  "total_draft_chars": 124343,
+  "old_model_full_package_chars": 245266,
+  "presented_chars": 96146,
   "presented_by_file": {
    "BATCH06_COMPACT_CLEAN_REVIEW.md": 54547,
-   "BATCH06_FULL_HUMAN_REVIEW.md": 218,
+   "BATCH06_FULL_HUMAN_REVIEW.md": 31787,
    "BATCH06_HARD_FAIL_REPORT.md": 119,
    "BATCH06_QUICK_REVIEW.md": 9693
   },
-  "reduction_abs": 154471,
-  "reduction_pct": 70.5,
+  "reduction_abs": 149120,
+  "reduction_pct": 60.8,
   "checkpoint_presented_chars": 265430
  },
  "d_full_package": "GERADO",
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 37,
+  "eligible": 42,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 11,
- "round_approvals": {
-  "review_scopes": [
-   "CF88_BATCH06_TRIAGE_QUEUE_D"
-  ],
-  "gate": [
-   {
-    "target_id": "CF88:ART.51:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.51:INC.I/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.52:INC.X",
-    "explanation_id": "ENTENDA/CF88:ART.52:INC.X/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.52:PAR.UNICO",
-    "explanation_id": "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.53:CAPUT",
-    "explanation_id": "ENTENDA/CF88:ART.53:CAPUT/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE",
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.53:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.53:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.53:PAR.2",
-    "explanation_id": "ENTENDA/CF88:ART.53:PAR.2/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.55:INC.VI",
-    "explanation_id": "ENTENDA/CF88:ART.55:INC.VI/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.58:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.58:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.62:PAR.6",
-    "explanation_id": "ENTENDA/CF88:ART.62:PAR.6/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.63",
-    "explanation_id": "ENTENDA/CF88:ART.63/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE",
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.75",
-    "explanation_id": "ENTENDA/CF88:ART.75/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "SEMANTIC_AMBIGUITY_RESOLVED"
-    ],
-    "gate": "PASS"
-   }
-  ],
-  "approved": 11,
-  "approved_unchanged": 2,
-  "approved_after_adjustment": 9,
-  "retired_versions": [
-   "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/1",
-   "ENTENDA/CF88:ART.53:CAPUT/BASE/1",
-   "ENTENDA/CF88:ART.53:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.53:PAR.2/BASE/1",
-   "ENTENDA/CF88:ART.55:INC.VI/BASE/1",
-   "ENTENDA/CF88:ART.58:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.62:PAR.6/BASE/1",
-   "ENTENDA/CF88:ART.63/BASE/1",
-   "ENTENDA/CF88:ART.75/BASE/1"
-  ]
- },
- "approval_totals": {
-  "global_before": 289,
-  "batch06_new_approved": 11,
-  "global_after": 300,
-  "batch06_new_pending": 82,
-  "batch06_reused_pilots_already_approved": 3,
-  "note": "pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo"
- },
+ "human_approved_t1_granted": 0,
  "text_source": {
   "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt": {
    "sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
@@ -3958,8 +4303,6 @@
   "LIST_ITEM_POSSIBLY_DROPPED usa radicais distintivos de cada item; sinonimos escapam (falso positivo) e omissao em lista curta (< 3 itens) nao e verificada. Listas declaradas seletivas (\"entre elas\", \"por exemplo\") nao sao cobradas.",
   "EXTERNAL_NORMATIVE_CONTENT_CLAIM depende de verbo de afirmacao normativa perto da referencia; afirmacao implicita sobre lei externa sem esse verbo nao e detectada. Remissao a artigo da propria CF presente no runtime e tratada como ancorada (o pacote D lista o texto).",
   "A distincao JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS x CONTEXT_ONLY le os marcadores de dependencia interpretativa que o proprio draft escreve; jurisprudencia necessaria e nao sinalizada pelo draft so e pega quando ha nota da camada e condicao sem base no texto.",
-  "JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE so reconhece afirmacoes explicitas (\"o Supremo decidiu/exige/admite\", \"a jurisprudencia delimita/reconhece\"); jurisprudencia implicita (regra afirmada sem atribuicao) nao e detectada.",
-  "PRISON_SCOPE_UNQUALIFIED cobre so a vedacao de prisao formulada como absoluta; outras garantias processuais ensinadas como absolutas dependem de UNIVERSAL_CLAIM/EXCEPTION_OR_RESSALVA_DROPPED.",
   "Nenhum check interpreta juridicamente o dispositivo: eles roteiam risco para revisao humana."
  ],
  "validator_v3_regression_batch05": {

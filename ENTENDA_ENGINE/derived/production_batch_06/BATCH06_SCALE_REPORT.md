@@ -10,7 +10,7 @@ Data de referência: 2026-10-04 · gerado por `ENTENDA_ENGINE/build_entenda_batc
 | SELECT | 96 = 93 explicações novas + 3 pilotos reutilizados |
 | SKIP | 213 (todos com motivo e explicação que os cobre) |
 | Sub-blocos (vigentes / novas / reutilizadas / SKIP) | A 17/5/0/12 · B 153/44/0/109 · C 92/25/3/64 · D 47/19/0/28 |
-| Papéis das novas | BLOCK 25, DEVICE 25, ITEM 10, OVERVIEW 33 |
+| Papéis das novas | BLOCK 25, DEVICE 19, ITEM 7, OVERVIEW 31 |
 
 ## Dois eixos
 
@@ -22,9 +22,9 @@ Número, percentual, prazo, idade, votos, quórum, BLOCK, lista, artigo longo, r
 |---|---|---|---|---|
 | LOW | 46 | | SIMPLE | 5 |
 | MEDIUM | 36 | | STRUCTURED | 59 |
-| HIGH | 11 | | EXTERNAL | 29 |
+| HIGH | 0 | | EXTERNAL | 18 |
 
-Jurisprudência: CONTEXT_ONLY 15, NONE 72, REQUIRED_FOR_CORRECTNESS 6 (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
+Jurisprudência: CONTEXT_ONLY 10, NONE 72 (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
 
 ## Filas
 
@@ -33,35 +33,40 @@ Jurisprudência: CONTEXT_ONLY 15, NONE 72, REQUIRED_FOR_CORRECTNESS 6 (CONTEXT_O
 | A_CLEAN_LOW | 42 | 1 |
 | B_CLEAN_MEDIUM | 27 | 0 |
 | C_QUICK_REVIEW | 13 | 3 |
-| D_FULL_HUMAN_REVIEW | 11 | 89 |
+| D_FULL_HUMAN_REVIEW | 0 | 78 |
 | E_HARD_FAIL | 0 | 0 |
 
-Risco no checkpoint: HIGH 89, LOW 3, MEDIUM 1.
+Risco no checkpoint: HIGH 78, LOW 3, MEDIUM 1.
 
-**Migração dos 89 D antigos:** 78 saíram de D → A_CLEAN_LOW 38, B_CLEAN_MEDIUM 27, C_QUICK_REVIEW 13, D_FULL_HUMAN_REVIEW 11.
+**Migração dos 78 D antigos:** 78 saíram de D → A_CLEAN_LOW 38, B_CLEAN_MEDIUM 27, C_QUICK_REVIEW 13.
 
-## Motivos dos D restantes
+## Rodada D (revisão jurídica humana dos 11 itens D)
 
-- CONSTITUTIONAL_AMBIGUITY: 1
-- INTERPRETIVE_CONTROVERSY: 2
-- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 6
-- SANCTION_WITH_INTERPRETATION: 4
+Escopo `CF88_BATCH06_TRIAGE_QUEUE_D` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · 2 aprovados sem alteração jurídica · 9 ajustados e aprovados · 0 rejeitados.
 
-- `CF88:ART.51:INC.I` — SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + "tema de interpretação constitucional"
-- `CF88:ART.52:INC.X` — INTERPRETIVE_CONTROVERSY: "objeto de debate"
-- `CF88:ART.52:PAR.UNICO` — SANCTION_WITH_INTERPRETATION: perda do cargo + "questão de interpretação constitucional"
-- `CF88:ART.53:CAPUT` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "é definida pela interpretação"
-- `CF88:ART.53:PAR.1` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "delimitados pela interpretação"
-- `CF88:ART.53:PAR.2` — SANCTION_WITH_INTERPRETATION: presos + "questão de interpretação constitucional"
-- `CF88:ART.55:INC.VI` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "Não se deve concluir apenas"; INTERPRETIVE_CONTROVERSY: "gera dúvidas"; SANCTION_WITH_INTERPRETATION: condenação criminal + "questão tratada pela interpretação constitucional"
-- `CF88:ART.58:PAR.3` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "são definidos pela interpretação"
-- `CF88:ART.62:PAR.6` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "delimitado pela interpretação"
-- `CF88:ART.63` — JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: nota JURISPRUDENCIA + CONDITION_NOT_IN_TEXT ("desde que guardem relação com o tema do projeto")
-- `CF88:ART.75` — CONSTITUTIONAL_AMBIGUITY: "não é definido nesta explicação"
+| Target | Versão aprovada | Decisão | Proveniência | Portão de checks |
+|---|---|---|---|---|
+| `CF88:ART.51:INC.I` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.52:INC.X` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.52:PAR.UNICO` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.53:CAPUT` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.53:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.53:PAR.2` | v2 | APPROVED_AFTER_ADJUSTMENT | 3 item(ns) | PASS |
+| `CF88:ART.55:INC.VI` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.58:PAR.3` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.62:PAR.6` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.63` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.75` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+
+Versões anteriores preservadas como RETIRED: 9 (v1 dos ajustados).
+Acervo HUMAN_APPROVED_T1: 289 antes → **300** depois (+11 do Batch06; os 3 pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: **82** (A, B e C não foram decididos).
+
+## Motivos dos D pendentes
+
+
 
 ## Achados que ainda pedem revisão (REVIEW_REQUIRED)
 
-- CONDITION_NOT_IN_TEXT: 1
 - EXCEPTION_OR_RESSALVA_DROPPED: 1
 - EXTERNAL_FACT_NEEDS_PROVENANCE: 1
 - HISTORICAL_CLAIM_UNVERIFIED: 7
@@ -71,7 +76,7 @@ Risco no checkpoint: HIGH 89, LOW 3, MEDIUM 1.
 
 - AUTOMATIC_CONSEQUENCE: 2 alerta(s) rebaixado(s) para INFO
 - TELEOLOGY_SPECULATIVE: 7 alerta(s) rebaixado(s) para INFO
-- UNIVERSAL_CLAIM: 7 alerta(s) rebaixado(s) para INFO
+- UNIVERSAL_CLAIM: 6 alerta(s) rebaixado(s) para INFO
 - "incentivo(s)" como substantivo do próprio texto ou como matéria da lei não é teleologia; "todos os"/"só pode" que reproduzem quórum/condição explícitos não são universalização; "automaticamente" expresso no artigo não é consequência inventada.
 - Rótulo truncado do fato externo ("Lei Complementar nº 7") passa a mostrar a identificação inteira; fato só na camada externa vai para C (o núcleo T1 não depende dele).
 
@@ -83,16 +88,16 @@ Risco no checkpoint: HIGH 89, LOW 3, MEDIUM 1.
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 124.343 |
-| Modelo antigo (pacote completo de todos os itens) | 245.266 |
+| Rascunhos (5 seções + glossário) | 109.697 |
+| Modelo antigo (pacote completo de todos os itens) | 219.048 |
 | Checkpoint (pacotes apresentados, D=89) | 265.430 |
-| **Agora (pacotes apresentados)** | **96.146** |
+| **Agora (pacotes apresentados)** | **64.577** |
 | — BATCH06_COMPACT_CLEAN_REVIEW.md | 54.547 |
-| — BATCH06_FULL_HUMAN_REVIEW.md | 31.787 |
+| — BATCH06_FULL_HUMAN_REVIEW.md | 218 |
 | — BATCH06_HARD_FAIL_REPORT.md | 119 |
 | — BATCH06_QUICK_REVIEW.md | 9.693 |
-| Redução vs. modelo antigo | 149.120 (60.8%) |
-| Redução vs. checkpoint | 169.284 (63.8%) |
+| Redução vs. modelo antigo | 154.471 (70.5%) |
+| Redução vs. checkpoint | 200.853 (75.7%) |
 
 Pacote D: GERADO (limite do diagnóstico: 40% em D).
 
@@ -118,4 +123,6 @@ Pacote D: GERADO (limite do diagnóstico: 40% em D).
 - LIST_ITEM_POSSIBLY_DROPPED usa radicais distintivos de cada item; sinonimos escapam (falso positivo) e omissao em lista curta (< 3 itens) nao e verificada. Listas declaradas seletivas ("entre elas", "por exemplo") nao sao cobradas.
 - EXTERNAL_NORMATIVE_CONTENT_CLAIM depende de verbo de afirmacao normativa perto da referencia; afirmacao implicita sobre lei externa sem esse verbo nao e detectada. Remissao a artigo da propria CF presente no runtime e tratada como ancorada (o pacote D lista o texto).
 - A distincao JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS x CONTEXT_ONLY le os marcadores de dependencia interpretativa que o proprio draft escreve; jurisprudencia necessaria e nao sinalizada pelo draft so e pega quando ha nota da camada e condicao sem base no texto.
+- JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE so reconhece afirmacoes explicitas ("o Supremo decidiu/exige/admite", "a jurisprudencia delimita/reconhece"); jurisprudencia implicita (regra afirmada sem atribuicao) nao e detectada.
+- PRISON_SCOPE_UNQUALIFIED cobre so a vedacao de prisao formulada como absoluta; outras garantias processuais ensinadas como absolutas dependem de UNIVERSAL_CLAIM/EXCEPTION_OR_RESSALVA_DROPPED.
 - Nenhum check interpreta juridicamente o dispositivo: eles roteiam risco para revisao humana.

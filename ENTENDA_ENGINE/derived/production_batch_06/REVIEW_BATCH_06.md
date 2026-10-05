@@ -1,6 +1,7 @@
 # REVIEW — ENTENDA_CF_PRODUCTION_BATCH_06
 
-Explicações novas para revisão humana. Todas estão em `PENDING_HUMAN_REVIEW`.
+Explicações novas para revisão humana. Estão em `PENDING_HUMAN_REVIEW`, exceto as aprovadas em rodada de revisão registrada
+(`HUMAN_APPROVED_T1`, com a DECISÃO HUMANA indicada abaixo de cada uma).
 As explicações reutilizadas de lotes aprovados não são repetidas aqui.
 
 Para cada explicação, marque APROVAR, AJUSTAR (indique o trecho) ou REJEITAR.
@@ -874,7 +875,7 @@ A Câmara autoriza o processo contra o Presidente, mas não o julga: o julgament
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.51`, `CF88:ART.51:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1869 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1866 bytes · referências 0
 - **Motivo da seleção:** Item com quorum qualificado e papel central no impeachment; perde sentido se resumido na visao geral.
 
 **O QUE DIZ**
@@ -909,7 +910,7 @@ O inciso não define o rito do processo nem os crimes de responsabilidade: isso 
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.51: 0.231)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — aprovado sem alteracao juridica na revisao humana da fila D; nenhum microajuste T1 exigido pelo validador
 
 ---
 
@@ -1009,12 +1010,12 @@ Crime de responsabilidade não é crime comum: nos crimes comuns, o Presidente �
 
 ### Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena
 
-- **TARGET:** `CF88:ART.52:PAR.UNICO` · `ENTENDA/CF88:ART.52:PAR.UNICO/BASE/1`
+- **TARGET:** `CF88:ART.52:PAR.UNICO` · `ENTENDA/CF88:ART.52:PAR.UNICO/BASE/2`
 - **DISPLAY TITLE:** Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.52`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 209 palavras · 1796 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 232 palavras · 2120 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo com quorum qualificado e pena propria do julgamento por crime de responsabilidade.
 
 **O QUE DIZ**
@@ -1023,7 +1024,7 @@ O parágrafo único determina que, nos julgamentos dos incisos I e II, a sessão
 
 **O QUE SIGNIFICA**
 
-O julgamento continua sendo do Senado, mas é conduzido pelo chefe do Judiciário, o que dá à sessão garantias de um julgamento.
+O julgamento é realizado pelo Senado Federal. Nos casos dos incisos I e II, a sessão é presidida pelo Presidente do Supremo Tribunal Federal.
 
 O quórum é qualificado: dois terços dos votos do Senado.
 
@@ -1035,7 +1036,7 @@ Condenada pelo voto de dois terços dos senadores, a autoridade perde o cargo e 
 
 **ATENÇÃO**
 
-Se a perda do cargo e a inabilitação podem ser votadas separadamente é questão de interpretação constitucional, fora do texto do parágrafo.
+O texto constitucional associa à condenação a perda do cargo e a inabilitação por oito anos. A possibilidade e os efeitos de votação separada dessas consequências já foram objeto de apreciação pelo Supremo Tribunal Federal e devem ser consultados na camada de JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1044,11 +1045,11 @@ Se a perda do cargo e a inabilitação podem ser votadas separadamente é quest�
 
 **CAMADA EXTERNA**
 
-- A aplicação separada da perda do cargo e da inabilitação é tema da camada JURISPRUDÊNCIA.
+- Votação separada da perda do cargo e da inabilitação: MS 34.418 (Supremo Tribunal Federal, Plenário, julgamento em 25/09/2023); para contexto histórico, MS 21.689. A camada registra os precedentes sem lhes atribuir tese mais ampla do que a efetivamente decidida.
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a frase teleologica/vaga ("o que da a sessao garantias de um julgamento"); o nucleo passa a descrever quem julga e quem preside. A ATENCAO deixa de tratar a votacao separada como questao abstrata: o STF ja a apreciou (camada JURISPRUDENCIA, MS 34.418 e, para contexto historico, MS 21.689), sem atribuir aos precedentes tese mais ampla. (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
@@ -1104,7 +1105,7 @@ A sabatina é pública, mas o voto é secreto. Para os chefes de missão diplom�
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.52`, `CF88:ART.52:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1769 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 192 palavras · 1766 bytes · referências 0
 - **Motivo da seleção:** Item com instituto proprio do controle difuso de constitucionalidade; exige contexto proprio.
 
 **O QUE DIZ**
@@ -1138,7 +1139,7 @@ O papel atual dessa competência, diante dos efeitos que as decisões do Supremo
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — aprovado sem alteracao juridica na revisao humana da fila D; nenhum microajuste T1 exigido pelo validador
 
 ---
 
@@ -1194,12 +1195,12 @@ As imunidades começam com a expedição do diploma pela Justiça Eleitoral, ant
 
 ### Art. 53, caput — Inviolabilidade por opiniões, palavras e votos
 
-- **TARGET:** `CF88:ART.53:CAPUT` · `ENTENDA/CF88:ART.53:CAPUT/BASE/1`
+- **TARGET:** `CF88:ART.53:CAPUT` · `ENTENDA/CF88:ART.53:CAPUT/BASE/2`
 - **DISPLAY TITLE:** Art. 53, caput — Inviolabilidade por opiniões, palavras e votos
 - **DISPOSITIVO:** CAPUT
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1881 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 207 palavras · 2036 bytes · referências 0
 - **Motivo da seleção:** Caput com comando distinto da visao geral: a imunidade material, conceito central de estudo.
 
 **O QUE DIZ**
@@ -1208,19 +1209,21 @@ O caput declara os deputados e senadores invioláveis, nas esferas civil e penal
 
 **O QUE SIGNIFICA**
 
-Esta é a chamada imunidade material. Ela impede que o parlamentar seja condenado a pagar indenização ou punido criminalmente por aquilo que diz ou vota.
+Esta é a chamada imunidade material.
 
-Diferentemente das imunidades formais, aqui não há apenas um obstáculo ao processo: a manifestação protegida não gera responsabilidade civil nem penal.
+Quando uma opinião, palavra ou voto está abrangido pela garantia constitucional, a manifestação não gera responsabilidade civil ou penal do parlamentar.
 
-A garantia existe para que o debate político seja livre, inclusive quando o parlamentar faz críticas duras a autoridades, empresas ou grupos.
+O Supremo Tribunal Federal exige conexão com o exercício do mandato ou que a manifestação tenha sido proferida em razão dele, especialmente na análise de manifestações feitas fora do recinto parlamentar.
+
+A imunidade é uma garantia funcional ligada ao mandato e não protege manifestações ou condutas estranhas à função parlamentar.
 
 **EXEMPLO PRÁTICO**
 
-Durante uma sessão de comissão, um senador acusa uma empresa de fraudar licitações. A empresa não poderá obter indenização nem ver o senador condenado criminalmente por essas palavras, por força do caput.
+Durante uma sessão de comissão que examina contratos públicos, um senador acusa uma empresa de fraudar licitações. Como a fala ocorreu no exercício do mandato, a empresa não poderá obter indenização nem ver o senador condenado criminalmente por essas palavras.
 
 **ATENÇÃO**
 
-A inviolabilidade não é ilimitada. A exigência de relação entre a manifestação e o exercício do mandato, sobretudo fora do recinto do Congresso, é definida pela interpretação constitucional. Além disso, a imunidade não impede que a própria Casa examine o caso sob o ângulo do decoro parlamentar (art. 55, § 1º).
+A inviolabilidade afasta a responsabilidade civil e penal da manifestação protegida, mas não impede que a própria Casa examine a conduta sob o ângulo do decoro parlamentar (art. 55, § 1º).
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1230,22 +1233,22 @@ A inviolabilidade não é ilimitada. A exigência de relação entre a manifesta
 
 **CAMADA EXTERNA**
 
-- O alcance da inviolabilidade para manifestações fora do recinto e a exigência de ligação com o mandato são temas da camada JURISPRUDÊNCIA.
+- Imunidade material e conexão com o exercício do mandato, inclusive para manifestações fora do recinto parlamentar: Inq 4.781 Ref (Supremo Tribunal Federal). Responsabilidade civil por manifestações de parlamentar: Tema 950 da repercussão geral (Supremo Tribunal Federal, julgado em 2025).
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O nucleo nasce qualificado: a inviolabilidade cobre a manifestacao abrangida pela garantia, e o STF exige conexao com o exercicio do mandato (em especial fora do recinto). Retirada a finalidade "a garantia existe para que o debate politico seja livre". ATENCAO mantem a distincao entre imunidade civil/penal e analise de decoro. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
 ### Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal
 
-- **TARGET:** `CF88:ART.53:PAR.1` · `ENTENDA/CF88:ART.53:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.53:PAR.1` · `ENTENDA/CF88:ART.53:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1641 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 212 palavras · 1982 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma de competencia originaria (foro por prerrogativa de funcao), recorrente em estudo.
 
 **O QUE DIZ**
@@ -1254,19 +1257,21 @@ O § 1º estabelece que deputados e senadores, a partir da expedição do diplom
 
 **O QUE SIGNIFICA**
 
-É o foro por prerrogativa de função: em vez de começar na primeira instância, o processo criminal contra o parlamentar tramita diretamente no Supremo Tribunal Federal.
+Trata-se do foro por prerrogativa de função.
 
-O marco inicial é a diplomação, e não a posse.
+Embora o texto constitucional indique o Supremo Tribunal Federal desde a diplomação, a jurisprudência atual delimita o foro aos crimes praticados durante o exercício do cargo e em razão das funções desempenhadas.
 
-A regra se liga ao art. 102, I, b, que dá ao Supremo Tribunal Federal a competência para processar e julgar os membros do Congresso Nacional nas infrações penais comuns.
+Para esses crimes, segundo o Supremo, a prerrogativa de foro subsiste mesmo depois do afastamento ou do término do cargo, ainda que o inquérito ou a ação penal tenham início posteriormente.
+
+O marco inicial é a diplomação, e não a posse. A regra se liga ao art. 102, I, b.
 
 **EXEMPLO PRÁTICO**
 
-Um senador diplomado é denunciado por crime praticado no exercício do mandato. O processo tramita no Supremo Tribunal Federal, e não em uma vara criminal comum.
+Um senador diplomado é denunciado por crime praticado no exercício do mandato e em razão dele. O processo tramita no Supremo Tribunal Federal, e não em uma vara criminal comum.
 
 **ATENÇÃO**
 
-O texto não diz quais crimes atraem o foro nem o que acontece quando o mandato termina durante o processo. Esses pontos foram delimitados pela interpretação constitucional e não devem ser deduzidos só da leitura do parágrafo.
+O foro no Supremo não alcança qualquer crime atribuído ao parlamentar: pela jurisprudência atual, alcança os crimes praticados no cargo e em razão das funções. Para esses crimes, o fim do mandato não afasta a competência do Supremo.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1275,22 +1280,22 @@ O texto não diz quais crimes atraem o foro nem o que acontece quando o mandato 
 
 **CAMADA EXTERNA**
 
-- A restrição do foro aos crimes praticados no cargo e em razão dele e os efeitos do fim do mandato sobre a competência são temas da camada JURISPRUDÊNCIA.
+- Foro restrito aos crimes praticados no cargo e em razão das funções, com subsistência após o afastamento ou o término do cargo: HC 232.627 e Inq 4.787-QO (Supremo Tribunal Federal, 2025); esclarecimentos em embargos de declaração no HC 232.627 (2026). A camada não estende a regra a crimes sem relação com o cargo.
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste importante: o T1 nao pode ensinar que todo processo criminal contra parlamentar tramita no STF. O nucleo passa a refletir a jurisprudencia atual: foro limitado a crimes praticados no exercicio do cargo e em razao das funcoes, subsistindo apos o afastamento ou termino do cargo (HC 232.627 e Inq 4.787-QO, 2025; esclarecimentos em 2026). (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
 ### Art. 53, § 2º — Limites à prisão do parlamentar
 
-- **TARGET:** `CF88:ART.53:PAR.2` · `ENTENDA/CF88:ART.53:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.53:PAR.2` · `ENTENDA/CF88:ART.53:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 53, § 2º — Limites à prisão do parlamentar
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1838 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 2269 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma de imunidade formal com excecao (flagrante de crime inafiancavel), prazo e quorum.
 
 **O QUE DIZ**
@@ -1299,11 +1304,11 @@ O § 2º proíbe a prisão de membros do Congresso desde a expedição do diplom
 
 **O QUE SIGNIFICA**
 
-A regra protege o mandato contra prisões que poderiam afastar o parlamentar das votações por motivos políticos.
+No plano das prisões cautelares, a Constituição estabelece forte proteção ao parlamentar desde a diplomação: a prisão prevista expressamente no § 2º é o flagrante de crime inafiançável.
 
-Há uma só hipótese de prisão admitida no texto: o flagrante de crime que não admite fiança. Fora dela, o parlamentar não pode ser preso no curso do mandato.
+Nesse caso, os autos devem ser enviados em vinte e quatro horas à Casa respectiva, que decide, pela maioria de seus membros, sobre a prisão.
 
-Mesmo no flagrante, a última palavra é da Casa. Ela recebe os autos em vinte e quatro horas e decide, por maioria absoluta, se a prisão se mantém.
+A jurisprudência do Supremo Tribunal Federal também admite a imposição judicial de medidas cautelares diversas da prisão. Quando a medida impossibilita, direta ou indiretamente, o exercício regular do mandato, ela é submetida à Casa nos termos definidos pelo Supremo.
 
 **EXEMPLO PRÁTICO**
 
@@ -1311,7 +1316,7 @@ Um deputado é flagrado praticando crime inafiançável. A prisão em flagrante 
 
 **ATENÇÃO**
 
-O texto fala em maioria dos membros, isto é, maioria absoluta da Casa, e não dos presentes. A aplicação dessa garantia a outras medidas cautelares diferentes da prisão é questão de interpretação constitucional.
+O texto fala em maioria dos membros, isto é, maioria absoluta da Casa, e não dos presentes. A imunidade à prisão cautelar não impede o cumprimento de prisão-pena decorrente de condenação criminal definitiva.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1321,11 +1326,11 @@ O texto fala em maioria dos membros, isto é, maioria absoluta da Casa, e não d
 
 **CAMADA EXTERNA**
 
-- A aplicação do § 2º a medidas cautelares diversas da prisão é tema da camada JURISPRUDÊNCIA.
+- Medidas cautelares diversas da prisão impostas a parlamentar e sua submissão à Casa quando impossibilitam, direta ou indiretamente, o exercício regular do mandato; cumprimento de prisão-pena após condenação criminal definitiva: entendimento do Supremo Tribunal Federal. A camada não o converte em autorização genérica de prisão cautelar.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: flagrante de crime inafiançável nesse caso os autos); TERM_NOT_USED (palavras_dificeis: Imunidade formal)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: jurisprudência); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: flagrante de crime inafiançável nesse caso os autos); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: flagrante de crime inafiançável nesse caso os autos); TERM_NOT_USED (palavras_dificeis: Imunidade formal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste importante: o draft convertia o § 2o em proibicao absoluta de qualquer prisao. Passa a distinguir prisao cautelar (flagrante de crime inafiancavel, com remessa a Casa) de prisao-pena apos condenacao definitiva; acrescenta, sem excesso, o entendimento do STF sobre medidas cautelares diversas da prisao. Retirada a finalidade ("protege o mandato contra prisoes ... por motivos politicos"). (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
@@ -1659,12 +1664,12 @@ Perda do mandato não é o mesmo que suspensão de direitos políticos, embora e
 
 ### Art. 55, inciso VI — Condenação criminal definitiva e perda do mandato
 
-- **TARGET:** `CF88:ART.55:INC.VI` · `ENTENDA/CF88:ART.55:INC.VI/BASE/1`
+- **TARGET:** `CF88:ART.55:INC.VI` · `ENTENDA/CF88:ART.55:INC.VI/BASE/2`
 - **DISPLAY TITLE:** Art. 55, inciso VI — Condenação criminal definitiva e perda do mandato
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.55`, `CF88:ART.55:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1770 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 233 palavras · 2043 bytes · referências 0
 - **Motivo da seleção:** Item que exige contexto proprio: relacao com o § 2º (decisao da Casa) e com a suspensao de direitos politicos (art. 15, III).
 
 **O QUE DIZ**
@@ -1673,19 +1678,21 @@ O inciso VI prevê a perda do mandato do deputado ou senador que sofrer condena�
 
 **O QUE SIGNIFICA**
 
-A condenação criminal definitiva é causa de perda do mandato. Mas o § 2º diz que, neste caso, a perda é decidida pela própria Casa, por maioria absoluta, e não declarada automaticamente.
+A condenação criminal definitiva é causa constitucional de perda do mandato.
 
-Ao mesmo tempo, o art. 15, III, prevê a suspensão dos direitos políticos enquanto durarem os efeitos da condenação criminal definitiva, e a perda dos direitos políticos é tratada no inciso IV, cuja perda de mandato é declarada pela Mesa.
+Pela leitura conjunta do inciso VI com o § 2º, a regra geral é que a perda seja decidida pela Câmara dos Deputados ou pelo Senado Federal, por maioria absoluta.
 
-A convivência entre essas regras gera dúvidas sobre quem tem a palavra final em cada situação.
+O art. 15, III, também prevê a suspensão dos direitos políticos enquanto durarem os efeitos da condenação, e o inciso IV do art. 55 contempla a perda ou a suspensão desses direitos.
+
+A jurisprudência do Supremo Tribunal Federal reconhece situações excepcionais em que as consequências concretas da pena podem atrair outra hipótese constitucional de perda do mandato, especialmente quando o cumprimento da pena torna inviável o comparecimento às sessões.
 
 **EXEMPLO PRÁTICO**
 
-Um senador é condenado por crime em decisão da qual não cabe mais recurso. O texto do inciso VI, combinado com o § 2º, leva a questão ao plenário do Senado, que decide por maioria absoluta.
+Um senador sofre condenação criminal definitiva. Como ponto de partida, a perda do mandato é examinada à luz do inciso VI e do § 2º. Se o modo de cumprimento da pena criar outra causa constitucional objetiva de perda, essa situação também precisa ser considerada.
 
 **ATENÇÃO**
 
-Se a perda é declarada pela Mesa ou decidida pelo plenário, conforme a pena aplicada e outras circunstâncias, é questão tratada pela interpretação constitucional. Não se deve concluir apenas pela leitura isolada deste inciso.
+A solução não pode ser obtida pela leitura isolada do inciso VI: é preciso considerar o § 2º, o art. 15, III, as demais hipóteses do art. 55 e a jurisprudência do Supremo Tribunal Federal.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1694,11 +1701,11 @@ Se a perda é declarada pela Mesa ou decidida pelo plenário, conforme a pena ap
 
 **CAMADA EXTERNA**
 
-- A relação entre o art. 55, VI e § 2º, e o art. 15, III, e quem decide a perda do mandato em cada caso são temas da camada JURISPRUDÊNCIA.
+- Perda do mandato por condenação criminal definitiva e situações excepcionais ligadas ao cumprimento da pena: AP 694 (Supremo Tribunal Federal) e jurisprudência correlata do art. 55, sem generalização.
 
-**WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: automaticamente); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: que sofrer condenação criminal em sentença transitada em); TERM_NOT_USED (palavras_dificeis: Trânsito em julgado)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: que sofrer condenação criminal em sentença transitada em); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Se o modo de cumprimento da pena criar outra causa constituc); TERM_NOT_USED (palavras_dificeis: Trânsito em julgado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste importante: mantido o ponto de partida (inciso VI + § 2o: decisao da Casa por maioria absoluta), sem apresenta-lo como solucao universal; corrigida a referencia ao inciso IV (perda OU suspensao dos direitos politicos); registradas as situacoes excepcionais reconhecidas pelo STF; exemplo condicional; ATENCAO explica que a solucao nao vem da leitura isolada do inciso. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -2258,12 +2265,12 @@ Quais projetos podem ser votados de forma conclusiva é definido pelo regimento 
 
 ### Art. 58, § 3º — Comissões parlamentares de inquérito
 
-- **TARGET:** `CF88:ART.58:PAR.3` · `ENTENDA/CF88:ART.58:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.58:PAR.3` · `ENTENDA/CF88:ART.58:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 58, § 3º — Comissões parlamentares de inquérito
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.58`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 245 palavras · 2161 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 315 palavras · 2860 bytes · referências 1
 - **Motivo da seleção:** Regra autonoma de grande importancia pratica: requisitos de criacao, poderes e destino das conclusoes da CPI.
 
 **O QUE DIZ**
@@ -2274,31 +2281,34 @@ O § 3º trata das comissões parlamentares de inquérito: dispõem dos poderes 
 
 A comissão parlamentar de inquérito é o principal instrumento de investigação do Legislativo.
 
-Para criá-la, o texto exige três requisitos: requerimento de um terço dos membros da Casa, fato determinado e prazo certo. Preenchidos, a criação é um direito da minoria parlamentar.
+Para criá-la, o texto exige três requisitos: requerimento de um terço dos membros da Casa, fato determinado e prazo certo. Segundo a jurisprudência do Supremo Tribunal Federal, preenchidos esses requisitos, a criação é um direito da minoria parlamentar.
 
-Os poderes são de investigação, como os de um juiz na fase de apuração: ouvir testemunhas, requisitar documentos e outras diligências. A comissão não julga nem aplica penas: envia suas conclusões ao Ministério Público.
+As CPIs possuem poderes constitucionais de investigação, mas esses poderes não se confundem com todas as competências jurisdicionais reservadas ao Poder Judiciário. A jurisprudência reconhece limites decorrentes da reserva de jurisdição: medidas como busca domiciliar, interceptação telefônica e prisão fora das hipóteses constitucionais dependem de decisão judicial.
+
+A comissão não julga nem aplica penas: envia suas conclusões ao Ministério Público.
 
 **EXEMPLO PRÁTICO**
 
-Um terço dos senadores assina requerimento para investigar contratos de uma obra específica, por cento e vinte dias. Ao final, a comissão aprova relatório e o envia ao Ministério Público, que decide se propõe ações contra os responsáveis.
+Um terço dos senadores assina requerimento para investigar contratos de uma obra específica, por um prazo certo fixado no ato de criação (por exemplo, cento e vinte dias, número apenas ilustrativo). Ao final, a comissão aprova relatório e o envia ao Ministério Público, que decide se propõe ações contra os responsáveis.
 
 **ATENÇÃO**
 
-A comissão investiga, mas não condena. Os limites dos seus poderes, como quais medidas exigem decisão judicial, são definidos pela interpretação constitucional e não estão detalhados no texto.
+A comissão investiga, mas não condena. Os requisitos de criação estão no texto; o direito da minoria e os limites decorrentes da reserva de jurisdição vêm da jurisprudência do Supremo Tribunal Federal.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Fato determinado*: acontecimento específico e delimitado que justifica a investigação.
 - *Poderes de investigação*: meios de apuração, como ouvir testemunhas e requisitar documentos.
 - *Minoria parlamentar*: grupo de parlamentares que não compõe a maioria da Casa.
+- *Reserva de jurisdição*: matérias em que só o Poder Judiciário pode decidir, como certas medidas que restringem direitos.
 
 **CAMADA EXTERNA**
 
-- Os limites dos poderes das comissões parlamentares de inquérito e as medidas sujeitas a reserva de jurisdição são temas da camada JURISPRUDÊNCIA.
+- Direito da minoria parlamentar à criação da comissão preenchidos os requisitos do § 3º; reserva de jurisdição (busca domiciliar, interceptação telefônica, prisão fora das hipóteses constitucionais) e limites dos poderes das comissões parlamentares de inquérito: jurisprudência do Supremo Tribunal Federal.
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Mantidos os tres requisitos constitucionais; o direito da minoria parlamentar fica atribuido expressamente a jurisprudencia (com proveniencia); substituida a comparacao com "um juiz na fase de apuracao" por formulacao sobre poderes de investigacao que nao se confundem com competencias reservadas ao Judiciario (reserva de jurisdicao); prazo do exemplo marcado como ilustrativo. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2739,12 +2749,12 @@ O parecer da comissão mista é etapa constitucional, e não mera formalidade re
 
 ### Art. 62, § 6º — Regime de urgência e trancamento de pauta
 
-- **TARGET:** `CF88:ART.62:PAR.6` · `ENTENDA/CF88:ART.62:PAR.6/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.6` · `ENTENDA/CF88:ART.62:PAR.6/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 6º — Regime de urgência e trancamento de pauta
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1656 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 244 palavras · 2153 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo de quarenta e cinco dias e efeito sobre as demais deliberacoes da Casa.
 
 **O QUE DIZ**
@@ -2753,17 +2763,21 @@ O § 6º determina que a medida provisória não apreciada em até quarenta e ci
 
 **O QUE SIGNIFICA**
 
-Passados quarenta e cinco dias sem votação, a medida passa a ter prioridade: as outras deliberações legislativas da Casa ficam paradas até que ela seja votada. É o chamado trancamento de pauta.
+Passados quarenta e cinco dias sem apreciação, a medida provisória entra em regime de urgência.
+
+Embora o texto constitucional se refira às "demais deliberações legislativas", o Supremo Tribunal Federal interpretou o § 6º no sentido de que o sobrestamento alcança apenas matérias que poderiam ser disciplinadas por medida provisória.
+
+Por isso, não ficam bloqueadas por esse mecanismo propostas de emenda à Constituição, projetos de lei complementar, decretos legislativos, resoluções e projetos de lei ordinária sobre matérias que a própria Constituição exclui do campo das medidas provisórias.
 
 O efeito é sucessivo: atinge primeiro a Câmara, onde a votação começa, e depois o Senado.
 
 **EXEMPLO PRÁTICO**
 
-Uma medida provisória completa quarenta e cinco dias sem ser votada na Câmara. A partir daí, a Câmara não pode concluir a votação de outros projetos de lei sujeitos ao sobrestamento enquanto não votar a medida.
+Uma medida provisória completa quarenta e cinco dias sem ser votada na Câmara. A partir daí, ficam sobrestados na Câmara os projetos de lei ordinária sobre matérias que poderiam ser tratadas por medida provisória; uma proposta de emenda à Constituição, por exemplo, pode continuar a ser votada.
 
 **ATENÇÃO**
 
-O alcance da expressão "demais deliberações legislativas", isto é, quais votações ficam de fato paradas, foi delimitado pela interpretação constitucional e não deve ser deduzido apenas do texto.
+A leitura literal de "todas as demais deliberações legislativas" não corresponde ao alcance fixado pelo Supremo Tribunal Federal: só ficam bloqueadas as proposições sujeitas ao sobrestamento.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2773,11 +2787,11 @@ O alcance da expressão "demais deliberações legislativas", isto é, quais vot
 
 **CAMADA EXTERNA**
 
-- O alcance do sobrestamento das "demais deliberações legislativas" é tema da camada JURISPRUDÊNCIA.
+- Alcance do sobrestamento das "demais deliberações legislativas": MS 27.931 (Supremo Tribunal Federal).
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as demais deliberações legislativas da casa em que); TERM_LOW_UTILITY (palavras_dificeis: Sobrestar)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as demais deliberações legislativas da casa em que); TERM_LOW_UTILITY (palavras_dificeis: Sobrestar); TERM_NOT_USED (palavras_dificeis: Trancamento de pauta)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste importante: a jurisprudencia e necessaria para a correcao do nucleo. O QUE SIGNIFICA passa a dizer que o STF interpretou o sobrestamento como restrito as materias que podem ser objeto de medida provisoria (MS 27.931), excluindo PEC, PLP, decretos legislativos, resolucoes e PL ordinario sobre materias vedadas a MP; mantida a sucessividade; exemplo ajustado. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -2876,12 +2890,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 63 — Proibição de aumentar despesa por emenda
 
-- **TARGET:** `CF88:ART.63` · `ENTENDA/CF88:ART.63/BASE/1`
+- **TARGET:** `CF88:ART.63` · `ENTENDA/CF88:ART.63/BASE/2`
 - **DISPLAY TITLE:** Art. 63 — Proibição de aumentar despesa por emenda
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1675 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1990 bytes · referências 0
 - **Motivo da seleção:** Artigo com regra autonoma e ressalva expressa, ligado a reserva de iniciativa.
 
 **O QUE DIZ**
@@ -2890,9 +2904,9 @@ O art. 63 impede emendas que aumentem a despesa prevista em dois tipos de projet
 
 **O QUE SIGNIFICA**
 
-A regra protege a reserva de iniciativa. Se o Congresso pudesse aumentar livremente a despesa de um projeto que só o Presidente pode apresentar, a reserva perderia sentido.
+O artigo limita o poder de emenda parlamentar nos projetos que enumera: nesses casos, não se admite emenda que aumente a despesa prevista, observada a ressalva constitucional do art. 166.
 
-O Congresso pode emendar esses projetos, mas não pode elevar o gasto previsto.
+O artigo não proíbe toda e qualquer emenda parlamentar: o Congresso pode emendar esses projetos, mas não pode elevar o gasto previsto.
 
 A ressalva do art. 166, §§ 3º e 4º, se refere às emendas aos projetos de lei orçamentária, que seguem regras próprias, como a indicação dos recursos necessários.
 
@@ -2902,7 +2916,7 @@ O Presidente envia projeto reestruturando uma carreira do Executivo federal. Um 
 
 **ATENÇÃO**
 
-O artigo proíbe aumento de despesa, e não toda emenda. Emendas que reduzam gastos ou apenas aperfeiçoem o texto, sem elevar a despesa, são admitidas, desde que guardem relação com o tema do projeto.
+A ausência de aumento de despesa não torna automaticamente válida qualquer emenda. A jurisprudência do Supremo Tribunal Federal também exige relação de pertinência entre a emenda parlamentar e o objeto do projeto, além do atendimento das demais regras constitucionais aplicáveis.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2911,11 +2925,11 @@ O artigo proíbe aumento de despesa, e não toda emenda. Emendas que reduzam gas
 
 **CAMADA EXTERNA**
 
-- A exigência de pertinência temática das emendas parlamentares é tema da camada JURISPRUDÊNCIA.
+- Vedação de aumento de despesa por emenda parlamentar e exigência de pertinência temática: ADI 3.114, ADI 2.681 MC e Tema 686 da repercussão geral (Supremo Tribunal Federal). A camada não atribui ao Tema 686 tese mais ampla do que a efetivamente fixada.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de iniciativa exclusiva do presidente da república ressalvad); TERM_NOT_USED (palavras_dificeis: Emenda parlamentar)
+**WARNINGS:** ABSOLUTE_CLAIM (atencao: automaticamente); JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de iniciativa exclusiva do presidente da república ressalvad)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada do nucleo a teleologia ("a regra protege a reserva de iniciativa"); descricao objetiva do limite ao poder de emenda; mantido que o artigo nao proibe toda emenda; a pertinencia tematica deixa de parecer condicao textual do art. 63 e passa a ser apresentada como jurisprudencia do STF (ADI 3.114, ADI 2.681 MC, Tema 686), sem atribuir ao Tema 686 tese mais ampla. (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
@@ -4335,25 +4349,27 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios
 
-- **TARGET:** `CF88:ART.75` · `ENTENDA/CF88:ART.75/BASE/1`
+- **TARGET:** `CF88:ART.75` · `ENTENDA/CF88:ART.75/BASE/2`
 - **DISPLAY TITLE:** Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2636 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 290 palavras · 2900 bytes · referências 2
 - **Motivo da seleção:** Artigo com redacao recente atribuida a EC (139/2026 na fonte canonica), com vedacao de extincao, criacao ou instalacao; explicar apenas o texto do runtime e sinalizar verificacao externa.
 
 **O QUE DIZ**
 
-O art. 75 afirma que os Tribunais de Contas são instituições permanentes e essenciais ao controle externo. Manda aplicar, no que couber, as regras desta Seção aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios, quanto à organização, à composição e à fiscalização. A parte final do caput diz "vedada sua extinção, criação ou instalação". O parágrafo único remete às Constituições estaduais e fixa em sete o número de conselheiros.
+O art. 75 afirma que os Tribunais de Contas são instituições permanentes e essenciais ao controle externo. Manda aplicar, no que couber, as regras desta Seção aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios, quanto à organização, à composição e à fiscalização. A parte final do caput veda a extinção, a criação ou a instalação desses órgãos. O parágrafo único remete às Constituições estaduais e fixa em sete o número de conselheiros.
 
 **O QUE SIGNIFICA**
 
-O artigo estende aos Estados, ao Distrito Federal e aos Municípios o modelo federal de controle externo, com as adaptações necessárias.
+O artigo determina que, no que couber, o modelo constitucional de controle externo desta Seção seja aplicado aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios.
 
-Ao chamar os Tribunais de Contas de permanentes e essenciais, o texto reforça que eles não podem ser tratados como órgãos provisórios.
+Com a Emenda Constitucional nº 139, de 2026, essas instituições receberam proteção constitucional expressa de permanência: fica vedada a extinção das existentes e também a criação ou instalação de novos Tribunais ou Conselhos de Contas abrangidos pela regra.
 
-A parte final do caput, no texto utilizado neste aplicativo, veda "sua extinção, criação ou instalação"; a quais tribunais o pronome "sua" se refere não é definido nesta explicação e depende de verificação. O parágrafo único deixa a disciplina dos tribunais estaduais às Constituições estaduais, com composição de sete conselheiros.
+O art. 31, § 1º, recebeu na mesma emenda a mesma vedação, no contexto do controle externo municipal.
+
+O parágrafo único deixa a disciplina dos tribunais estaduais às Constituições estaduais, com composição de sete conselheiros.
 
 **EXEMPLO PRÁTICO**
 
@@ -4361,7 +4377,7 @@ Um Estado organiza o seu Tribunal de Contas na Constituição estadual, com sete
 
 **ATENÇÃO**
 
-A redação atual do caput é atribuída pela fonte a emenda constitucional recente. O texto não explicita a quais tribunais se refere o pronome "sua" na vedação de extinção, criação ou instalação, e a relação com a regra do art. 31, § 4º, sobre tribunais municipais, exige verificação.
+O art. 31, § 4º, continua prevendo especificamente que é vedada a criação de Tribunais, Conselhos ou órgãos de Contas Municipais. As duas regras convivem e não se contradizem quanto à criação de novos órgãos de contas municipais.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4371,12 +4387,12 @@ A redação atual do caput é atribuída pela fonte a emenda constitucional rece
 
 **CAMADA EXTERNA**
 
-- A redação do caput consta da compilação oficial monovigente do Senado Federal versionada no projeto (norma 579494); a fonte canônica estrutural a atribui à Emenda Constitucional nº 139, de 2026. O referente de "sua" na vedação final e a relação com o art. 31, § 4º, exigem revisão humana (ambiguidade semântica).
+- Emenda Constitucional nº 139, de 5 de maio de 2026: deu nova redação ao art. 31, § 1º, e ao art. 75, reconheceu os Tribunais de Contas como instituições permanentes e essenciais e inseriu a vedação de extinção, criação ou instalação (redação confirmada na compilação oficial monovigente do Senado e na fonte canônica estrutural versionadas no projeto). Finalidade e alcance esclarecidos pela sessão oficial de promulgação: impedir a extinção dos Tribunais de Contas existentes e a criação ou instalação de novos.
 - A aplicação do modelo federal aos Tribunais de Contas estaduais por simetria é tema da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de contas dos estados e do distrito federal); TERM_NOT_USED (palavras_dificeis: Simetria)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de contas dos estados e do distrito federal); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de contas dos estados e do distrito federal); TERM_NOT_USED (palavras_dificeis: Simetria)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ambiguidade encerrada por fonte oficial: a EC 139/2026 alterou o art. 31, § 1o, e o art. 75, reconheceu os Tribunais de Contas como permanentes e essenciais e inseriu a vedacao de extincao, criacao ou instalacao; o historico oficial da promulgacao esclarece o alcance (impedir extincao dos existentes e criacao/instalacao de novos). Removidos EXTERNAL_VERIFICATION_REQUIRED e CONSTITUTIONAL_AMBIGUITY; ATENCAO registra o art. 31, § 4o, sem apresentar as regras como contraditorias. (seções: atencao, external_layer_notes, o_que_diz, o_que_significa)
 
 ---
 

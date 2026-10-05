@@ -5,9 +5,9 @@
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
  "explanations": 93,
  "risk_counts": {
-  "LOW": 46,
-  "MEDIUM": 36,
-  "HIGH": 11
+  "LOW": 49,
+  "MEDIUM": 41,
+  "HIGH": 3
  },
  "finding_counts": {
   "ABSOLUTE_CLAIM": 4,
@@ -15,11 +15,11 @@
   "EXCEPTION_NOT_IN_TEXT": 2,
   "LAW_DEPENDENCY_OMITTED": 4,
   "MODALITY_SHIFT": 1,
-  "TRANSITION_IN_CORE": 1
+  "TRANSITION_IN_CORE": 2
  },
  "unresolved_findings": 0,
  "ready_for_editorial_review": 93,
- "human_approved_t1": 0,
+ "human_approved_t1": 11,
  "duplication_pairs": [],
  "rows": [
   {
@@ -284,7 +284,7 @@
    "risk_reasons": [
     "SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + \"tema de interpretação constitucional\""
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -339,21 +339,21 @@
    "risk_reasons": [
     "INTERPRETIVE_CONTROVERSY: \"objeto de debate\""
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
   },
   {
    "target_id": "CF88:ART.52:PAR.UNICO",
-   "explanation_id": "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/2",
    "title": "Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena",
    "role": "DEVICE",
-   "risk": "HIGH",
+   "risk": "MEDIUM",
    "risk_reasons": [
-    "SANCTION_WITH_INTERPRETATION: perda do cargo + \"questão de interpretação constitucional\""
+    "SENSITIVE_THEME: perda do cargo"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -374,42 +374,40 @@
   },
   {
    "target_id": "CF88:ART.53:CAPUT",
-   "explanation_id": "ENTENDA/CF88:ART.53:CAPUT/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.53:CAPUT/BASE/2",
    "title": "Art. 53, caput — Inviolabilidade por opiniões, palavras e votos",
    "role": "DEVICE",
-   "risk": "HIGH",
+   "risk": "MEDIUM",
    "risk_reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"é definida pela interpretação\""
+    "SENSITIVE_THEME: invioláv"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
   },
   {
    "target_id": "CF88:ART.53:PAR.1",
-   "explanation_id": "ENTENDA/CF88:ART.53:PAR.1/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.53:PAR.1/BASE/2",
    "title": "Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal",
    "role": "DEVICE",
-   "risk": "HIGH",
-   "risk_reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"delimitados pela interpretação\""
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
   },
   {
    "target_id": "CF88:ART.53:PAR.2",
-   "explanation_id": "ENTENDA/CF88:ART.53:PAR.2/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.53:PAR.2/BASE/2",
    "title": "Art. 53, § 2º — Limites à prisão do parlamentar",
    "role": "DEVICE",
-   "risk": "HIGH",
+   "risk": "MEDIUM",
    "risk_reasons": [
-    "SANCTION_WITH_INTERPRETATION: presos + \"questão de interpretação constitucional\""
+    "SENSITIVE_THEME: crime"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -507,25 +505,16 @@
   },
   {
    "target_id": "CF88:ART.55:INC.VI",
-   "explanation_id": "ENTENDA/CF88:ART.55:INC.VI/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.55:INC.VI/BASE/2",
    "title": "Art. 55, inciso VI — Condenação criminal definitiva e perda do mandato",
    "role": "ITEM",
    "risk": "HIGH",
    "risk_reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"",
-    "INTERPRETIVE_CONTROVERSY: \"gera dúvidas\"",
-    "SANCTION_WITH_INTERPRETATION: condenação criminal + \"questão tratada pela interpretação constitucional\""
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"leitura isolada\""
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
-   "findings": [
-    {
-     "code": "ABSOLUTE_CLAIM",
-     "section": "o_que_significa",
-     "detail": "automaticamente",
-     "resolution": "Falso positivo: frase negativa (\"e não declarada automaticamente\"), que justamente afasta efeito automatico."
-    }
-   ],
+   "findings": [],
    "unresolved": 0
   },
   {
@@ -716,14 +705,14 @@
   },
   {
    "target_id": "CF88:ART.58:PAR.3",
-   "explanation_id": "ENTENDA/CF88:ART.58:PAR.3/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.58:PAR.3/BASE/2",
    "title": "Art. 58, § 3º — Comissões parlamentares de inquérito",
    "role": "DEVICE",
-   "risk": "HIGH",
+   "risk": "MEDIUM",
    "risk_reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"são definidos pela interpretação\""
+    "JURISPRUDENCE_CONTEXT_ONLY: Direito da minoria parlamentar à criação da comissão preenchidos os requisitos do § 3º; reserva de jurisdição (busca domiciliar, interceptaç"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -858,14 +847,12 @@
   },
   {
    "target_id": "CF88:ART.62:PAR.6",
-   "explanation_id": "ENTENDA/CF88:ART.62:PAR.6/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.62:PAR.6/BASE/2",
    "title": "Art. 62, § 6º — Regime de urgência e trancamento de pauta",
    "role": "DEVICE",
-   "risk": "HIGH",
-   "risk_reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"delimitado pela interpretação\""
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -896,16 +883,21 @@
   },
   {
    "target_id": "CF88:ART.63",
-   "explanation_id": "ENTENDA/CF88:ART.63/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.63/BASE/2",
    "title": "Art. 63 — Proibição de aumentar despesa por emenda",
    "role": "OVERVIEW",
-   "risk": "HIGH",
-   "risk_reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: nota JURISPRUDENCIA + CONDITION_NOT_IN_TEXT (\"desde que guardem relação com o tema do projeto\")"
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
-   "findings": [],
+   "findings": [
+    {
+     "code": "ABSOLUTE_CLAIM",
+     "section": "atencao",
+     "detail": "automaticamente",
+     "resolution": "Falso positivo: frase negativa (\"não torna automaticamente válida qualquer emenda\"), redação indicada pela revisão jurídica humana da fila D (2026-10-05)."
+    }
+   ],
    "unresolved": 0
   },
   {
@@ -1326,16 +1318,23 @@
   },
   {
    "target_id": "CF88:ART.75",
-   "explanation_id": "ENTENDA/CF88:ART.75/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.75/BASE/2",
    "title": "Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios",
    "role": "OVERVIEW",
-   "risk": "HIGH",
+   "risk": "MEDIUM",
    "risk_reasons": [
-    "CONSTITUTIONAL_AMBIGUITY: \"não é definido nesta explicação\""
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação do modelo federal aos Tribunais de Contas estaduais por simetria é tema da camada JURISPRUDÊNCIA."
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
-   "findings": [],
+   "findings": [
+    {
+     "code": "TRANSITION_IN_CORE",
+     "section": "o_que_significa",
+     "detail": "Emenda Constitucional",
+     "resolution": "Decisão da revisão jurídica humana da fila D (2026-10-05): a menção à Emenda Constitucional nº 139, de 2026, no O QUE SIGNIFICA é exigida para explicar a proteção de permanência; não é regra de transição."
+    }
+   ],
    "unresolved": 0
   }
  ]

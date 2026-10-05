@@ -2,67 +2,26 @@
 
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 93 · risco LOW 46 · MEDIUM 36 · HIGH 11
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Explicações: 93 · risco LOW 49 · MEDIUM 41 · HIGH 3
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 11
+- Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 2 · não resolvidos: 0
 
 ## Risco HIGH
 
 ### Art. 51, inciso I — Autorização para processo contra o Presidente
 
-- `CF88:ART.51:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.51:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + "tema de interpretação constitucional"
 
 ### Art. 52, inciso X — Suspensão de lei declarada inconstitucional
 
-- `CF88:ART.52:INC.X` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.52:INC.X` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: INTERPRETIVE_CONTROVERSY: "objeto de debate"
-
-### Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena
-
-- `CF88:ART.52:PAR.UNICO` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SANCTION_WITH_INTERPRETATION: perda do cargo + "questão de interpretação constitucional"
-
-### Art. 53, caput — Inviolabilidade por opiniões, palavras e votos
-
-- `CF88:ART.53:CAPUT` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "é definida pela interpretação"
-
-### Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal
-
-- `CF88:ART.53:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "delimitados pela interpretação"
-
-### Art. 53, § 2º — Limites à prisão do parlamentar
-
-- `CF88:ART.53:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SANCTION_WITH_INTERPRETATION: presos + "questão de interpretação constitucional"
 
 ### Art. 55, inciso VI — Condenação criminal definitiva e perda do mandato
 
-- `CF88:ART.55:INC.VI` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "Não se deve concluir apenas"; INTERPRETIVE_CONTROVERSY: "gera dúvidas"; SANCTION_WITH_INTERPRETATION: condenação criminal + "questão tratada pela interpretação constitucional"
-- ABSOLUTE_CLAIM (o_que_significa: automaticamente) → Falso positivo: frase negativa ("e não declarada automaticamente"), que justamente afasta efeito automatico.
-
-### Art. 58, § 3º — Comissões parlamentares de inquérito
-
-- `CF88:ART.58:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "são definidos pela interpretação"
-
-### Art. 62, § 6º — Regime de urgência e trancamento de pauta
-
-- `CF88:ART.62:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "delimitado pela interpretação"
-
-### Art. 63 — Proibição de aumentar despesa por emenda
-
-- `CF88:ART.63` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: nota JURISPRUDENCIA + CONDITION_NOT_IN_TEXT ("desde que guardem relação com o tema do projeto")
-
-### Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios
-
-- `CF88:ART.75` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: CONSTITUTIONAL_AMBIGUITY: "não é definido nesta explicação"
+- `CF88:ART.55:INC.VI` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"
 
 ## Risco MEDIUM
 
@@ -101,10 +60,25 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.52:INC.I` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A definição dos crimes de responsabilidade e o rito do julgamento estão na lei especial e na camada JURISPRUDÊNCIA.; SENSITIVE_THEME: crimes
 
+### Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena
+
+- `CF88:ART.52:PAR.UNICO` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: SENSITIVE_THEME: perda do cargo
+
 ### Art. 53 — Imunidades e prerrogativas dos parlamentares
 
 - `CF88:ART.53` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: invioláv
+
+### Art. 53, caput — Inviolabilidade por opiniões, palavras e votos
+
+- `CF88:ART.53:CAPUT` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: SENSITIVE_THEME: invioláv
+
+### Art. 53, § 2º — Limites à prisão do parlamentar
+
+- `CF88:ART.53:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: SENSITIVE_THEME: crime
 
 ### Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar
 
@@ -150,6 +124,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.57:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance da vedação de recondução entre legislaturas e a sua aplicação a Estados e Municípios são temas da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: "questões de interpretação constitucional" (o draft nao responde; remete)
+
+### Art. 58, § 3º — Comissões parlamentares de inquérito
+
+- `CF88:ART.58:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Direito da minoria parlamentar à criação da comissão preenchidos os requisitos do § 3º; reserva de jurisdição (busca domiciliar, interceptaç
 
 ### Art. 61, § 1º — Iniciativa privativa do Presidente da República
 
@@ -249,6 +228,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.74:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: sob pena
 
+### Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios
+
+- `CF88:ART.75` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A aplicação do modelo federal aos Tribunais de Contas estaduais por simetria é tema da camada JURISPRUDÊNCIA.
+- TRANSITION_IN_CORE (o_que_significa: Emenda Constitucional) → Decisão da revisão jurídica humana da fila D (2026-10-05): a menção à Emenda Constitucional nº 139, de 2026, no O QUE SIGNIFICA é exigida para explicar a proteção de permanência; não é regra de transição.
+
 ## Risco LOW
 
 ### Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
@@ -323,6 +308,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
 
 - `CF88:ART.52:INC.III` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal
+
+- `CF88:ART.53:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 53, § 6º — Dispensa de testemunhar sobre informações do mandato
@@ -404,6 +394,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.62:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 
+### Art. 62, § 6º — Regime de urgência e trancamento de pauta
+
+- `CF88:ART.62:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: 
+
 ### Art. 62, § 10 — Proibição de reeditar medida provisória
 
 - `CF88:ART.62:PAR.10` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -413,6 +408,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.62:PAR.11` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
+
+### Art. 63 — Proibição de aumentar despesa por emenda
+
+- `CF88:ART.63` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: 
+- ABSOLUTE_CLAIM (atencao: automaticamente) → Falso positivo: frase negativa ("não torna automaticamente válida qualquer emenda"), redação indicada pela revisão jurídica humana da fila D (2026-10-05).
 
 ### Art. 64 — Início na Câmara e urgência constitucional
 
