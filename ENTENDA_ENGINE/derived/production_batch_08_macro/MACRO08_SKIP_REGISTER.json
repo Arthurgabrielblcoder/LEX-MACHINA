@@ -3,8 +3,780 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "artigos avaliados e nao explicados (SKIP de artigo inteiro), sempre com motivo; seus targets constam aqui, nao no SELECTION_REPORT",
- "articles": 0,
- "targets": 0,
- "by_decision": {},
- "rows": []
+ "articles": 22,
+ "targets": 94,
+ "by_decision": {
+  "SKIP_APPROVED_PILOT_LEGACY_MODEL": 1,
+  "SKIP_CONSUMED_CONSTITUTIVE_ACT": 4,
+  "SKIP_EXHAUSTED_TRANSITION": 9,
+  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 5,
+  "SKIP_TRANSITION_EVENT_DEPENDENT": 3
+ },
+ "rows": [
+  {
+   "article": "ADCT:ART.1",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Compromisso prestado no ato e na data da promulgacao; evento unico consumado.",
+   "situation_as_of": "Exaurido: o ato devia ocorrer na promulgacao.",
+   "provenance": [
+    "runtime: ADCT art. 1 (\"no ato e na data de sua promulgacao\")",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.1",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.1:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.2",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Plebiscito com data fixa no texto (21 de abril de 1993), anterior a data de referencia; regulamentacao pelo TSE apos a promulgacao.",
+   "situation_as_of": "Exaurido por decurso da data fixada; o resultado do plebiscito nao consta de fonte versionada e nao e afirmado.",
+   "provenance": [
+    "runtime: ADCT art. 2, caput"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.2",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.2:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.2:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.2:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.4",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Termino de mandatos em datas fixas (1989, 1990, 1991) e primeira eleicao presidencial de 1989.",
+   "situation_as_of": "Exaurido por decurso das datas fixadas.",
+   "provenance": [
+    "runtime: ADCT art. 4, caput e §§ 1º a 4º"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.4",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.4:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.4:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.4:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.4:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.4:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.5",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Regras das eleicoes de 15 de novembro de 1988.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 5"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.5",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.5:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.5:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.5:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.5:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.5:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.5:PAR.5",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.6",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Registro de novos partidos nos seis meses posteriores a promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 6",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.6",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.6:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.6:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.6:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.9",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Pedido ao STF por cassados entre 15 de julho e 31 de dezembro de 1969; alcanca apenas pessoas daquela situacao; aplicacao residual depende de fatos individuais.",
+   "situation_as_of": "Residual e pessoal; estado atual nao versionado.",
+   "provenance": [
+    "runtime: ADCT art. 9"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.9",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.9:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.9:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.10",
+   "decision": "SKIP_APPROVED_PILOT_LEGACY_MODEL",
+   "decision_definition": "artigo com explicacao aprovada em modelagem legada (fonte estrutural antiga); reconciliacao fora do lote",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Artigo com explicacao aprovada (ADCT:ART.10:INC.II, HUMAN_APPROVED_T1) carimbada com o texto do cf.txt legado e status UNKNOWN + verificacao externa; sob o perfil oficial o status e CURRENT e o snapshot diverge. Fica fora do lote para nao alterar conteudo aprovado (MB08-SRC-05); reconciliacao no BACKLOG.",
+   "situation_as_of": "Regras condicionadas a leis externas (estado nao versionado).",
+   "provenance": [
+    "runtime: ADCT art. 10",
+    "ENTENDA_ENGINE/corpus/CF88.entenda.jsonl: ENTENDA/ADCT:ART.10:INC.II/BASE/2 (HUMAN_APPROVED_T1)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.10",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:INC.II:AL.a",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:INC.II:AL.b",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.10:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.11",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Constituicoes estaduais em um ano e leis organicas em seis meses, contados da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 11",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.11",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.11:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.11:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.13",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "decision_definition": "ato constitutivo de efeito instantaneo na promulgacao (criacao, extincao, reconhecimento); o resultado persiste sem comando operativo novo",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Criacao e instalacao do Estado do Tocantins com eleicoes e instalacao datadas em 1988 e 1989; limites do § 1º persistem como fato territorial; o art. 18-A do ADCT (redacao de 2021) pressupoe a instalacao entre 1989 e 1994.",
+   "situation_as_of": "Exaurido como comando; Estado criado.",
+   "provenance": [
+    "runtime: ADCT art. 13",
+    "runtime: ADCT art. 18-A (\"Estado do Tocantins, decorrentes de sua instalacao, entre 1º de janeiro de 1989 e 31 de dezembro de 1994\")"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.13",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.3:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.3:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.3:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.3:INC.IV",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.5",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.6",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.13:PAR.7",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.14",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "decision_definition": "ato constitutivo de efeito instantaneo na promulgacao (criacao, extincao, reconhecimento); o resultado persiste sem comando operativo novo",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Transformacao dos Territorios de Roraima e Amapa em Estados, com instalacao pela posse dos Governadores eleitos em 1990.",
+   "situation_as_of": "Exaurido como comando.",
+   "provenance": [
+    "runtime: ADCT art. 14"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.14",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.14:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.14:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.14:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.14:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.14:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.15",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "decision_definition": "ato constitutivo de efeito instantaneo na promulgacao (criacao, extincao, reconhecimento); o resultado persiste sem comando operativo novo",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Extincao do Territorio de Fernando de Noronha e reincorporacao a Pernambuco, com efeito na promulgacao.",
+   "situation_as_of": "Exaurido; resultado territorial persiste.",
+   "provenance": [
+    "runtime: ADCT art. 15",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.15",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.15:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.16",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Indicacao do Governador do DF pelo Presidente e competencias do Senado ate a efetivacao do art. 32, § 2º, e a instalacao da Camara Legislativa; o estado desses eventos nao consta de fonte versionada.",
+   "situation_as_of": "Condicionado a evento institucional nao versionado.",
+   "provenance": [
+    "runtime: ADCT art. 16"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.16",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.16:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.16:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.16:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.16:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.18",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "decision_definition": "ato constitutivo de efeito instantaneo na promulgacao (criacao, extincao, reconhecimento); o resultado persiste sem comando operativo novo",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Extincao dos efeitos de atos de estabilidade sem concurso lavrados apos a instalacao da Constituinte; efeito constitutivo na promulgacao.",
+   "situation_as_of": "Exaurido como comando.",
+   "provenance": [
+    "runtime: ADCT art. 18"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.18",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.18:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.20",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Revisao de direitos de inativos e pensionistas em cento e oitenta dias.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 20",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.20",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.20:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.21",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Juizes togados de investidura limitada em exercicio na promulgacao; quadro em extincao.",
+   "situation_as_of": "Residual e pessoal.",
+   "provenance": [
+    "runtime: ADCT art. 21"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.21",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.21:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.21:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.22",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Opcao pela carreira dos defensores publicos investidos ate a instalacao da Constituinte.",
+   "situation_as_of": "Residual e pessoal.",
+   "provenance": [
+    "runtime: ADCT art. 22"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.22",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.22:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.23",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Ocupantes do cargo de censor federal ate a regulamentacao do art. 21, XVI; aproveitamento por lei.",
+   "situation_as_of": "Residual e pessoal; estado da regulamentacao nao versionado.",
+   "provenance": [
+    "runtime: ADCT art. 23"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.23",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.23:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.23:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.24",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Leis de compatibilizacao de quadros de pessoal em dezoito meses da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 24",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.24",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.24:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.26",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Comissao mista sobre endividamento externo no prazo de um ano da promulgacao.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 26",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.26",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.26:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.26:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.26:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.28",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Juizes federais do art. 123, § 2º, da Constituicao de 1967 investidos na titularidade de varas.",
+   "situation_as_of": "Residual e pessoal.",
+   "provenance": [
+    "runtime: ADCT art. 28"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.28",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.28:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.28:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.29",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Atividades do MPF, PGFN e consultorias ate as leis complementares do Ministerio Publico e da AGU; estado das leis nao versionado; opcoes pessoais dos §§ 2º a 4º.",
+   "situation_as_of": "Condicionado a leis externas.",
+   "provenance": [
+    "runtime: ADCT art. 29"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.29",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.29:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.29:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.29:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.29:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.29:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.29:PAR.5",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.30",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Manutencao dos juizes de paz ate a posse dos novos titulares, pela lei que criar a justica de paz.",
+   "situation_as_of": "Condicionado a lei e a eventos nao versionados.",
+   "provenance": [
+    "runtime: ADCT art. 30"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.30",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.30:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  }
+ ]
 }

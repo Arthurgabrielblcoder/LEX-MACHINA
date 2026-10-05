@@ -49,7 +49,14 @@ TEMPORAL_CLASSES = ('OPERATIVE_CURRENT', 'OPERATIVE_TRANSITION', 'EFFECT_EXHAUST
                     'PARTIALLY_OPERATIVE', 'EXTERNAL_STATUS_REQUIRED')
 RESOLVED_CLASSES = ('OPERATIVE_CURRENT', 'OPERATIVE_TRANSITION', 'EFFECT_EXHAUSTED', 'HISTORICAL_ONLY')
 UNRESOLVED_CLASSES = ('FUTURE_TRIGGER', 'PARTIALLY_OPERATIVE', 'EXTERNAL_STATUS_REQUIRED')
-SKIP_CODES = ('SKIP_EXHAUSTED_TRANSITION', 'SKIP_HISTORICAL_NO_CURRENT_VALUE', 'SKIP_APPROVED_PILOT_LEGACY_MODEL')
+SKIP_CODES = {
+    'SKIP_EXHAUSTED_TRANSITION': 'prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual',
+    'SKIP_CONSUMED_CONSTITUTIVE_ACT': 'ato constitutivo de efeito instantaneo na promulgacao (criacao, extincao, reconhecimento); o resultado persiste sem comando operativo novo',
+    'SKIP_RESIDUAL_PERSONAL_TRANSITION': 'alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados',
+    'SKIP_TRANSITION_EVENT_DEPENDENT': 'regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo',
+    'SKIP_HISTORICAL_NO_CURRENT_VALUE': 'conteudo puramente historico, sem valor juridico atual',
+    'SKIP_APPROVED_PILOT_LEGACY_MODEL': 'artigo com explicacao aprovada em modelagem legada (fonte estrutural antiga); reconciliacao fora do lote',
+}
 JR_CLASSES = ('JUDICIAL_REVIEW_CONTEXT_ONLY', 'JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS')
 MONTHS = ('janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro')
 DATE_RE = re.compile(r'\b(\d{1,2})º?\s+de\s+(' + '|'.join(MONTHS) + r')(?:\s+de\s+(\d{4}))?', re.I)
@@ -316,9 +323,14 @@ def namespace_cited(rec, ctx, sentence=None):
     return out
 
 
-def extended_grounding(rec, ctx):
+GROUNDING_FACTS = ()
+
+
+def extended_grounding(rec, ctx, facts=()):
+    """Grounding of numbers/dates: record snapshot + article + cited devices (v3) + cited devices of the other namespace + versioned
+    grounding facts declared in MACRO_SPEC.grounding_facts (each with provenance, e.g. the promulgation date of the closing formula)."""
     arts = namespace_cited(rec, ctx)
-    return V3.grounding(rec, ctx) + '\n' + '\n'.join(ctx.text.get(t, '') for a in arts for t in ctx.subtree(a))
+    return V3.grounding(rec, ctx) + '\n' + '\n'.join(ctx.text.get(t, '') for a in arts for t in ctx.subtree(a)) + '\n' + '\n'.join(f['text'] for f in facts)
 
 
 def refine_numbers(findings, rec, ground, ctx=None):
@@ -355,8 +367,9 @@ def refine_numbers(findings, rec, ground, ctx=None):
 class SegmentContext(M.MacroContext):
     """Macro-08 calibration (see module docstring). tin: TEMPORAL_INPUT.json."""
 
-    def __init__(self, *a, tin=None, as_of_year=None, as_of_date=None, **k):
+    def __init__(self, *a, tin=None, as_of_year=None, as_of_date=None, facts=(), **k):
         super().__init__(*a, **k)
+        self.facts = tuple(facts)
         self.tin = tin or dict(articles={}, explanations={})
         self.as_of_year = as_of_year
         self.as_of_dates = ()
@@ -365,7 +378,7 @@ class SegmentContext(M.MacroContext):
             self.as_of_year, self.as_of_dates = y, ((int(d), MONTHS[int(mth) - 1]),)
 
     def validate(self, r, lint_rows=(), editorial_rows=()):
-        ground = extended_grounding(r, self.ctx) + '\n' + '\n'.join(a for t in R.scope_targets(r, self.ctx) for a in self.vigency.get(t, []))
+        ground = extended_grounding(r, self.ctx, self.facts) + '\n' + '\n'.join(a for t in R.scope_targets(r, self.ctx) for a in self.vigency.get(t, []))
         fs = refine_numbers(super().validate(r, lint_rows, editorial_rows), r, ground, self.ctx)
         return fs + dates_findings(r, ground, extra_years=(self.as_of_year,) if self.as_of_year else (), extra_dates=self.as_of_dates)
 
@@ -498,7 +511,8 @@ def build(bd):
         (bd / n).unlink(missing_ok=True)
     sel = PB.run(bd, cfgp)
     catalog, known, registry = V.load_catalog(), V.load_json(V.KNOWN), V3.load_registry()
-    c = SegmentContext(bd, ctx, catalog, known, registry, _load(bd / 'RELATIONS_PIN.json'), tin=tin, as_of_date=ms['as_of_date'])
+    c = SegmentContext(bd, ctx, catalog, known, registry, _load(bd / 'RELATIONS_PIN.json'), tin=tin, as_of_date=ms['as_of_date'],
+                       facts=ms.get('grounding_facts', ()))
     inp = _load(bd / 'EDITORIAL_INPUT.json')
     inp.update(schema_version=1, batch_id=ms['batch_id'], triage_sheet=nm.triage_sheet,
                risk_criteria=dict(classifier='ENTENDA_ENGINE/t1_risk.py::assess + complexity (validator v3) + build_entenda_macro_segment.SegmentContext',
@@ -538,6 +552,8 @@ def build(bd):
     anomalies = source_sanity(ctx, [a for v in all_articles(ms, ctx, built_only=False).values() for a in v],
                               (ms.get('source_sanity') or {}).get('closing_markers', ()))
     write_anomalies(bd, nm, ms, anomalies, _load(bd / 'SOURCE_ANOMALIES_INPUT.json') if (bd / 'SOURCE_ANOMALIES_INPUT.json').is_file() else {})
+    for seg, tm in tmaps.items():
+        write_segment_audit(bd, nm, segment_audit(ms, ctx, tin, tm, anomalies, seg))
     spec = _load(bd / 'BATCH_SPEC.json')
     for x in ms['sub_blocks']:
         cp = bd / f'{nm.p}_{x}_CHECKPOINT.json'
@@ -595,7 +611,7 @@ def skip_register(ms, ctx, skips, tin):
     rows = []
     for a in sorted(skips, key=lambda x: ctx.order[x]):
         d = skips[a]
-        rows.append(dict(article=a, decision=d['decision'], temporal_class=d.get('class'), reason=d['reason'],
+        rows.append(dict(article=a, decision=d['decision'], decision_definition=SKIP_CODES[d['decision']], temporal_class=d.get('class'), reason=d['reason'],
                          situation_as_of=d.get('situation_2026'), provenance=d.get('provenance', []),
                          targets=[dict(target_id=t, kind=ctx.kind(t), status=ctx.effective_status(t)) for t in ctx.subtree(a)]))
     return dict(schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'],
@@ -619,6 +635,107 @@ def write_anomalies(bd, nm, ms, rows, inp):
     L += ['## Achados automáticos', '', '| Target | Código | Severidade | Detalhe | Diagnóstico |', '|---|---|---|---|---|']
     L += [f"| `{r['target_id']}` | {r['code']} | {r['severity']} | {r['detail'][:140].replace('|', '/')} | {(r['diagnosis'] or '—')[:200]} |" for r in doc['rows']] or ['| — | — | — | — | — |']
     (bd / f'{nm.p}_SOURCE_ANOMALIES.md').write_bytes(('\n'.join(L) + '\n').encode('utf-8'))
+
+
+# ---------------------------------------------------------------- ADCT structural audit (generated, deterministic)
+
+def segment_audit(ms, ctx, tin, tmap, anomalies, namespace='ADCT'):
+    """Structural audit of a profiled segment: how it is represented (namespace, norm id, id grammar), counts, status, temporal layer,
+    legacy-vs-runtime differences, anomalies and reproducibility from Git. Evidence only from versioned files."""
+    cfg = ctx.cfg['norms'][ms['norma_id']]
+    prof_idx = json.loads((ROOT / cfg['target_index']).read_text(encoding='utf-8'))
+    prof_manifest_p = ROOT / cfg['target_index'].rsplit('/', 1)[0] / 'PROFILE_MANIFEST.json'
+    prof_manifest = _load(prof_manifest_p) if prof_manifest_p.is_file() else {}
+    base_cfg = _load(HERE / 'entenda_config.json')['norms'][ms['norma_id']]
+    legacy_idx = json.loads((ROOT / base_cfg['target_index']).read_text(encoding='utf-8'))
+    legacy_st = json.loads((ROOT / base_cfg['target_status']).read_text(encoding='utf-8'))['targets']
+    reg = json.loads((ROOT / 'LEGAL_TARGET_ID/namespaces.json').read_text(encoding='utf-8'))['subnamespaces'][namespace]
+    lock = json.loads((ROOT / 'updater/fontes_oficiais_senado/SOURCES_LOCK.json').read_text(encoding='utf-8'))['sources'].get(namespace)
+    tg = [t for t in prof_idx['targets'] if t['namespace'] == namespace]
+    arts = [t['target_id'] for t in tg if t['kind'] == 'ARTIGO']
+    lettered = [a for a in arts if '-' in a.split('.')[1]]
+    kinds = dict(sorted(Counter(t['kind'] for t in tg).items()))
+    legacy_ns = [t for t in legacy_idx['targets'] if t['namespace'] == namespace]
+    art_status = {}
+    for a in arts:
+        st = ctx.effective_status(a)
+        cap = ctx.text.get(a + ':CAPUT', '')
+        art_status[a] = 'REVOKED' if st == 'REVOKED' or E.REVOKED_TEXT_RE.match(cap) else st
+    dev = [t for t in tg if t['kind'] not in ('ARTIGO', 'NAMESPACE')]
+    origin = Counter(t.get('profile_origin', 'LEGACY') for t in tg)
+    tclass = Counter((r['temporal_class'] or 'NAO_CLASSIFICADO') for r in tmap['articles']) if tmap else Counter()
+    decisions = Counter((r['decision'] or 'NAO_DECIDIDO') for r in tmap['articles']) if tmap else Counter()
+    examples = [t['target_id'] for t in tg if t['target_id'] in ('ADCT:ART.18-A', 'ADCT:ART.10:INC.II:AL.b', 'ADCT:ART.107-A:PAR.1:INC.I',
+                                                                 'ADCT:ART.2:PAR.1', 'ADCT:ART.21:PAR.UNICO', 'ADCT:ART.76-B')]
+    adct_anom = [r for r in anomalies if r['target_id'].startswith(namespace + ':')]
+    legacy_unknown = sum(1 for t in legacy_ns if legacy_st.get(t['target_id'], {}).get('status') == 'UNKNOWN_VALIDITY')
+    q = [
+        dict(q='1. O ADCT ja possui targets estruturais?', a=f"Sim. O indice canonico CF88_TARGET_INDEX.json ja tinha {len(legacy_ns)} targets do namespace {namespace} "
+             f"(fonte estrutural legada cf.txt), mas {legacy_unknown} estavam UNKNOWN_VALIDITY e o texto vinha da compilacao multivigente. O perfil "
+             f"{prof_idx.get('profile')} usa {origin.get('OFFICIAL_RUNTIME', 0)} targets do runtime oficial e mantem {origin.get('LEGACY_STRUCTURAL_ONLY', 0)} "
+             'targets so legados como HISTORICAL_ONLY.'),
+        dict(q='2. Qual e o norma_id real?', a=f"{ms['norma_id']} (campo norma_id dos targets); o ADCT e o subnamespace '{namespace}' com parent '{reg['parent']}' "
+             f"(LEGAL_TARGET_ID/namespaces.json; source_marker '{reg['source_marker']}')."),
+        dict(q='3. Qual e a gramatica real dos IDs?', a="ADCT:ART.<n>[-<LETRA>][:CAPUT | :PAR.<n>[-<LETRA>] | :PAR.UNICO][:INC.<romano>[-<LETRA>]][:AL.<letra>] "
+             f"(LEGAL_TARGET_ID/target_id.py). Exemplos do indice: {', '.join(examples)}."),
+        dict(q='4. O ADCT esta dentro de CF88 ou e norma separada?', a='Dentro de CF88: namespace proprio (ADCT:ART.5 nao colide com CF88:ART.5), mesma norma e mesmo indice. '
+             'Nenhum namespace novo foi criado.'),
+        dict(q='5. Quantos artigos estruturais existem?', a=f"{len(arts)} artigos ({len(lettered)} com letra: {', '.join(a.split(':')[1][4:] for a in lettered)}); "
+             f"{len(dev)} dispositivos abaixo do artigo; tipos: {kinds}."),
+        dict(q='6. Quantos estao vigentes/operativos?', a=f"Status do texto: {sum(1 for v in art_status.values() if v == 'CURRENT')} artigos com texto vigente na compilacao "
+             f"monovigente. Camada temporal editorial: {dict(sorted(tclass.items()))}."),
+        dict(q='7. Quantos estao revogados?', a=f"{sum(1 for v in art_status.values() if v == 'REVOKED')} artigos com caput apenas '(Revogado)': "
+             f"{', '.join(a.split(':')[1][4:] for a, v in art_status.items() if v == 'REVOKED')}; dispositivos revogados: "
+             f"{sum(1 for t in dev if ctx.legal_status(t['target_id']) == 'REVOKED')}."),
+        dict(q='8. Quantos possuem efeitos temporais ja exauridos?', a=f"{tclass.get('EFFECT_EXHAUSTED', 0)} artigos classificados EFFECT_EXHAUSTED (prova pelo texto e pela "
+             f"data de promulgacao versionada); {tclass.get('PARTIALLY_OPERATIVE', 0)} parcialmente operantes; {tclass.get('FUTURE_TRIGGER', 0)} com marco futuro."),
+        dict(q='9. Existem lacunas ou erros de segmentacao?', a=f"Runtime x indice legado: {sum(1 for t in tg if t.get('profile_origin') == 'LEGACY_STRUCTURAL_ONLY')} targets so legados "
+             f"(redacoes revogadas ou renumeradas), {len(prof_manifest.get('counts', {}).get(namespace, {}).get('runtime_only', []))} so do runtime "
+             f"({', '.join(prof_manifest.get('counts', {}).get(namespace, {}).get('runtime_only', []))}, diferenca revisada em TARGET_DIFF_REVIEWED.json). "
+             f"Sanity: {dict(sorted(Counter(r['code'] for r in adct_anom).items()))} (ver MACRO08_SOURCE_ANOMALIES)."),
+        dict(q='10. E possivel reconstrui-lo integralmente apenas com conteudo versionado?', a='Sim. Fonte oficial travada (SOURCES_LOCK: Senado ' + (lock or {}).get('norma_id_senado', '?')
+             + f", raw {((lock or {}).get('raw_sha256') or '')[:12]}..., normalizado {((lock or {}).get('normalizado_sha256') or '')[:12]}...), runtime da Lei Seca "
+             f"versionado ({prof_manifest.get('runtime_sha256', '')[:12]}...) e perfil gerado com prova de ida e volta: {(prof_manifest.get('round_trip') or {}).get('status')} "
+             f"({(prof_manifest.get('round_trip') or {}).get('profiled_targets_with_text')} textos)."),
+    ]
+    blocks = {x: dict(name=v['name'], start=v.get('start'), end=v.get('end'), articles=len(article_targets(ctx, v)),
+                      targets_current=sum(1 for a in article_targets(ctx, v) for t in ctx.subtree(a) if ctx.effective_status(t) == 'CURRENT'))
+              for x, v in ms['sub_blocks'].items() if v['namespace'] == namespace}
+    return dict(schema_version=1, batch_id=ms['batch_id'], namespace=namespace, norma_id=ms['norma_id'], as_of=ms['as_of_date'],
+                entenda_config=ms.get('entenda_config'), parent=reg['parent'], source_marker=reg['source_marker'],
+                official_source=dict(lock or {}), runtime=dict(path=prof_manifest.get('runtime'), sha256=prof_manifest.get('runtime_sha256'),
+                                                              composition=prof_manifest.get('runtime_composition')),
+                legacy=dict(index=base_cfg['target_index'], targets=len(legacy_ns), unknown_validity=legacy_unknown,
+                            text_source=[s0['path'] for s0 in base_cfg['text_sources'] if namespace in s0['namespaces']]),
+                profile=dict(id=prof_idx.get('profile'), targets_by_origin=dict(sorted(origin.items())), round_trip=prof_manifest.get('round_trip')),
+                articles=len(arts), lettered_articles=[a.split(':')[1][4:] for a in lettered], targets=len(tg), kinds=kinds,
+                article_status=dict(sorted(Counter(art_status.values()).items())),
+                revoked_articles=[a for a, v in art_status.items() if v == 'REVOKED'],
+                temporal_classes=dict(sorted(tclass.items())), decisions=dict(sorted(decisions.items())), blocks=blocks,
+                block_rule=ms.get('adct_block_rule'), questions=q,
+                decision='ADCT_PROCESSABLE (texto oficial versionado; lacuna era de targetizacao/status/leitor, resolvida pelo perfil generico)',
+                pilot_conflict='ADCT:ART.10:INC.II (HUMAN_APPROVED_T1) carimbado com o cf.txt legado: ADCT art. 10 fora do lote (SKIP_APPROVED_PILOT_LEGACY_MODEL); BACKLOG')
+
+
+def write_segment_audit(bd, nm, doc):
+    _json(bd / f"{nm.p}_{doc['namespace']}_STRUCTURAL_AUDIT.json", doc)
+    L = [f"# {nm.p} — AUDITORIA ESTRUTURAL DO {doc['namespace']}", '',
+         f"Lote `{doc['batch_id']}` · data de referência {doc['as_of']} · gerado por `build_entenda_macro_segment.py` (determinístico, só conteúdo versionado).", '',
+         f"**Decisão:** {doc['decision']}.", '', '## Respostas', '']
+    for x in doc['questions']:
+        L += [f"**{x['q']}**", '', x['a'], '']
+    L += ['## Representação', '', '| Item | Valor |', '|---|---|',
+          f"| Namespace / parent | `{doc['namespace']}` / `{doc['parent']}` |", f"| norma_id | `{doc['norma_id']}` |",
+          f"| Fonte oficial | Senado {doc['official_source'].get('norma_id_senado')} · `{doc['official_source'].get('dir')}` · normalizado `{(doc['official_source'].get('normalizado_sha256') or '')[:16]}…` |",
+          f"| Runtime da Lei Seca | `{doc['runtime']['path']}` · `{(doc['runtime']['sha256'] or '')[:16]}…` |",
+          f"| Leitor legado (config global) | `{', '.join(doc['legacy']['text_source'])}` · {doc['legacy']['targets']} targets, {doc['legacy']['unknown_validity']} UNKNOWN_VALIDITY |",
+          f"| Perfil usado no lote | `{doc['profile']['id']}` · origem dos targets {doc['profile']['targets_by_origin']} |",
+          f"| Artigos / com letra | {doc['articles']} / {len(doc['lettered_articles'])} |", f"| Targets / tipos | {doc['targets']} / {doc['kinds']} |",
+          f"| Status dos artigos | {doc['article_status']} |", f"| Camada temporal | {doc['temporal_classes']} |", f"| Decisões | {doc['decisions']} |", '',
+          '## Blocos do ADCT', '', f"Regra: {doc['block_rule']}", '', '| Bloco | Artigos | Intervalo | Targets vigentes |', '|---|---|---|---|']
+    L += [f"| {v['name']} | {v['articles']} | {v['start']}–{v['end']} | {v['targets_current']} |" for v in doc['blocks'].values()]
+    L += ['', '## Conflito com piloto aprovado', '', doc['pilot_conflict'], '']
+    (bd / f"{nm.p}_{doc['namespace']}_STRUCTURAL_AUDIT.md").write_bytes(('\n'.join(L) + '\n').encode('utf-8'))
 
 
 # ---------------------------------------------------------------- report / manifest
@@ -684,8 +801,7 @@ INPUTS = ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACK
 def manifest(bd, ms, nm, doc, sel):
     inputs = [p for p in INPUTS if (bd / p).is_file()] + sorted(str(p.relative_to(bd)) for p in (bd / 'drafts').rglob('*.json'))
     generated = sorted(str(p.relative_to(bd)) for p in bd.rglob('*') if p.is_file() and str(p.relative_to(bd)) not in inputs
-                       and p.name not in (nm.manifest, 'DETERMINISM_EVIDENCE.json') and not p.name.startswith(f'{nm.p}_D_DIAGNOSTIC')
-                       and not p.name.startswith(f'{nm.p}_ADCT_STRUCTURAL_AUDIT'))
+                       and p.name not in (nm.manifest, 'DETERMINISM_EVIDENCE.json') and not p.name.startswith(f'{nm.p}_D_DIAGNOSTIC'))
     prof = config_path(ms).parent / 'PROFILE_MANIFEST.json'
     _json(bd / nm.manifest, dict(
         schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'], status='CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado',
@@ -709,7 +825,7 @@ def copy_inputs(bd, td):
 def determinism(bd, n=3):
     bd = Path(bd).resolve()
     ms = _load(bd / 'MACRO_SPEC.json')
-    skip = lambda p: p.name == 'DETERMINISM_EVIDENCE.json' or p.name.startswith(('MACRO08_D_DIAGNOSTIC', 'MACRO08_ADCT_STRUCTURAL_AUDIT'))  # noqa: E731
+    skip = lambda p: p.name == 'DETERMINISM_EVIDENCE.json' or p.name.startswith('MACRO08_D_DIAGNOSTIC')  # noqa: E731
     runs = []
     with tempfile.TemporaryDirectory(prefix='macro_seg_det_') as tmp:
         for i in range(n):
@@ -722,7 +838,7 @@ def determinism(bd, n=3):
     ev = dict(schema_version=1, batch_id=ms['batch_id'], runs=n, byte_identical=not differing, differing_files=differing, files=len(inplace),
               sha256=dict(sorted(inplace.items())), sub_blocks_built=ms['sub_blocks_built'],
               procedure=f'{n} builds completos em copias temporarias das entradas versionadas, comparados entre si e com o build no lugar '
-                        '(fora da comparacao: documentos consolidados escritos a mao, MACRO08_D_DIAGNOSTIC e MACRO08_ADCT_STRUCTURAL_AUDIT)')
+                        '(fora da comparacao: o diagnostico consolidado MACRO08_D_DIAGNOSTIC, escrito a mao)')
     _json(bd / 'DETERMINISM_EVIDENCE.json', ev)
     return ev
 

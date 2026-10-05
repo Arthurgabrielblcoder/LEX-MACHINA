@@ -23,30 +23,30 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 78,
-  "B_CLEAN_MEDIUM": 19,
+  "A_CLEAN_LOW": 79,
+  "B_CLEAN_MEDIUM": 22,
   "C_QUICK_REVIEW": 12,
-  "D_FULL_HUMAN_REVIEW": 4,
+  "D_FULL_HUMAN_REVIEW": 9,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 88,
-  "MEDIUM": 21,
-  "HIGH": 4
+  "LOW": 89,
+  "MEDIUM": 24,
+  "HIGH": 9
  },
  "complexity_counts": {
-  "STRUCTURED": 66,
-  "EXTERNAL": 45,
+  "STRUCTURED": 67,
+  "EXTERNAL": 53,
   "SIMPLE": 2
  },
  "jurisprudence_counts": {
-  "NONE": 95,
-  "CONTEXT_ONLY": 17,
-  "REQUIRED_FOR_CORRECTNESS": 1
+  "NONE": 97,
+  "CONTEXT_ONLY": 23,
+  "REQUIRED_FOR_CORRECTNESS": 2
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 78,
+   "A_CLEAN_LOW": 79,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 10,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -54,7 +54,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 19,
+   "B_CLEAN_MEDIUM": 22,
    "C_QUICK_REVIEW": 2,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 4,
+   "D_FULL_HUMAN_REVIEW": 9,
    "E_HARD_FAIL": 0
   }
  },
@@ -76,7 +76,7 @@
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 56,
+   "A_CLEAN_LOW": 57,
    "B_CLEAN_MEDIUM": 3,
    "C_QUICK_REVIEW": 7,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -84,9 +84,9 @@
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 20,
-   "B_CLEAN_MEDIUM": 16,
+   "B_CLEAN_MEDIUM": 19,
    "C_QUICK_REVIEW": 5,
-   "D_FULL_HUMAN_REVIEW": 4,
+   "D_FULL_HUMAN_REVIEW": 9,
    "E_HARD_FAIL": 0
   }
  },
@@ -3094,6 +3094,37 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.18-A",
+   "title": "ADCT, art. 18-A — Convalidação de atos da instalação do Tocantins",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: cinco",
+    "exception: salvo",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -3934,6 +3965,157 @@
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.3",
+   "title": "ADCT, art. 3º — Revisão constitucional (histórico)",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A possibilidade de nova revisão fora do art. 60 é tema da camada JURISPRUDÊNCIA e da doutrina.",
+    "INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "deadline: cinco anos",
+    "number_or_percentage: cinco",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da maioria absoluta dos membros do congresso nacional",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED",
+    "EXTRAPOLATION_NUMBER:RESOLVED",
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.7",
+   "title": "ADCT, art. 7º — Tribunal internacional dos direitos humanos",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A adesão do Brasil a tribunais internacionais de direitos humanos e seus efeitos pertencem aos tratados e à camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "formação de um tribunal internacional dos direitos humanos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.19",
+   "title": "ADCT, art. 19 — Estabilidade excepcional de servidores",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A diferença entre estabilidade e efetividade e seus efeitos práticos são temas da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: cinco anos",
+    "number_or_percentage: cinco",
+    "exception: exceto",
+    "law_dependency: na forma da lei",
+    "remissao: arts. 37",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aos professores de nível superior nos termos da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXTRAPOLATION_NUMBER:RESOLVED"
+   ],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
@@ -4782,16 +4964,264 @@
     "via": null,
     "evidence": []
    }
+  },
+  {
+   "target_id": "ADCT:ART.8",
+   "title": "ADCT, art. 8º — Anistia política",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado)."
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A lei que regulamenta a reparação dos anistiados políticos e sua aplicação pertencem à legislação correlata e à camada JURISPRUDÊNCIA (EXTER"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "number_or_percentage: doze",
+    "exception: exceto",
+    "law_dependency: regulament",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado).",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.12",
+   "title": "ADCT, art. 12 — Comissão de estudos territoriais e limites entre entes",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas)."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: noventa dias",
+    "number_or_percentage: noventa",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas).",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.17",
+   "title": "ADCT, art. 17 — Redução de remunerações e acumulações protegidas",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao."
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O texto oficial remete à Emenda Constitucional nº 41/2003 no caput (nota da fonte canônica); a aplicação atual do artigo é tema da camada JU"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.17:CAPUT: Vide Emenda Constitucional n. 41, 19.12.2003)",
+    "camada externa: jurisprudencia",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de dois cargos ou empregos privativos de médico",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.25",
+   "title": "ADCT, art. 25 — Revogação de delegações ao Executivo e decretos-leis pendentes",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos)."
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: As leis que prorrogaram o prazo do caput e o alcance da revogação (por exemplo, sobre competências normativas de órgãos do sistema financeir"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: oitenta dias",
+    "number_or_percentage: cento",
+    "remissao: arts. 62",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "3 de setembro de 1988 e a promulgação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos).",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.27",
+   "title": "ADCT, art. 27 — Implantação do STJ e dos Tribunais Regionais Federais",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "CONSTITUTIONAL_AMBIGUITY",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS",
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"",
+    "CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: \"exige verificação\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).",
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada."
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 5017\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.27:PAR.11: Vide ADIN n. 5017, de 2013)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "deadline: prazo",
+    "number_or_percentage: cinco",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 104, 107",
+    "overview com 15 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 5017",
+     "sentence": "A anotação oficial do § 11 remete à ADI 5017;",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aproveitamento dos ministros do tribunal federal de recursos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 5017",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"; CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: \"exige verificação\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).; TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
   }
  ],
  "d_reasons": {
+  "CONSTITUTIONAL_AMBIGUITY": 1,
   "INTERPRETIVE_CONTROVERSY": 1,
-  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 1,
+  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 1,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 2,
   "SANCTION_WITH_INTERPRETATION": 1,
-  "TEMPORAL_STATUS_UNRESOLVED": 1
+  "TEMPORAL_STATUS_UNRESOLVED": 6
  },
  "finding_counts": {
-  "EXTERNAL_FACT_NEEDS_PROVENANCE": 1,
+  "EXTERNAL_FACT_NEEDS_PROVENANCE": 2,
   "LIST_ITEM_POSSIBLY_DROPPED": 14,
   "NUMBER_NOT_IN_TEXT": 2,
   "PERMISSION_NOT_IN_TEXT": 1
@@ -4801,24 +5231,24 @@
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 156539,
-  "old_model_full_package_chars": 340230,
-  "presented_chars": 111024,
+  "total_draft_chars": 170459,
+  "old_model_full_package_chars": 372966,
+  "presented_chars": 141740,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 75063,
-   "MACRO08_FULL_D_REVIEW.md": 11652,
+   "MACRO08_COMPACT_AB_REVIEW.md": 78572,
+   "MACRO08_FULL_D_REVIEW.md": 37470,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 15621,
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 17010,
    "MACRO08_QUICK_C_REVIEW.md": 8569
   },
-  "reduction_abs": 229206,
-  "reduction_pct": 67.4
+  "reduction_abs": 231226,
+  "reduction_pct": 62.0
  },
- "d_ratio": 0.035,
+ "d_ratio": 0.074,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 79,
+  "eligible": 85,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -4898,6 +5328,18 @@
     "PROVENIENCIA": 1,
     "TELEOLOGIA": 1
    }
+  },
+  "D": {
+   "corrections": 13,
+   "by_category": {
+    "COPIA_DA_LEI_SECA": 3,
+    "DATA": 1,
+    "FRASE_LONGA": 4,
+    "LISTA_INCOMPLETA": 1,
+    "NUMERO_ILUSTRATIVO": 2,
+    "SIGLA": 1,
+    "TRANSICAO_NO_NUCLEO": 1
+   }
   }
  },
  "checks": {
@@ -4941,26 +5383,32 @@
    }
   },
   "ADCT": {
-   "new_explanations": 0,
-   "roles": {},
+   "new_explanations": 9,
+   "roles": {
+    "OVERVIEW": 9
+   },
    "queues": {
-    "A_CLEAN_LOW": 0,
-    "B_CLEAN_MEDIUM": 0,
+    "A_CLEAN_LOW": 1,
+    "B_CLEAN_MEDIUM": 3,
     "C_QUICK_REVIEW": 0,
-    "D_FULL_HUMAN_REVIEW": 0,
+    "D_FULL_HUMAN_REVIEW": 5,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 0,
-    "MEDIUM": 0,
-    "HIGH": 0
+    "LOW": 1,
+    "MEDIUM": 3,
+    "HIGH": 5
    },
    "verification_complexity": {
     "SIMPLE": 0,
-    "STRUCTURED": 0,
-    "EXTERNAL": 0
+    "STRUCTURED": 1,
+    "EXTERNAL": 8
    },
-   "jurisprudence": {}
+   "jurisprudence": {
+    "CONTEXT_ONLY": 6,
+    "NONE": 2,
+    "REQUIRED_FOR_CORRECTNESS": 1
+   }
   }
  },
  "backlog": {

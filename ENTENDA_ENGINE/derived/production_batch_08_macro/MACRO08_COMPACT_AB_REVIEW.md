@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (78)
+## A — CLEAN_LOW (79)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -862,7 +862,18 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (19)
+### `ADCT:ART.18-A` — ADCT, art. 18-A — Convalidação de atos da instalação do Tocantins
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 18-A do ADCT trata dos atos administrativos do Estado do Tocantins ligados à sua instalação, praticados de 1º de janeiro de 1989 até 31 de dezembro de 1994.
+- Interpretação principal: Atos administrativos podem ter defeitos jurídicos.
+- ATENÇÃO: A convalidação não alcança quem agiu de má-fé, desde que ela seja comprovada.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (22)
 
 ### `CF88:ART.182:PAR.4` — Art. 182, § 4º — Sanções ao imóvel urbano subutilizado
 
@@ -1071,5 +1082,38 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: nenhuma
 - Warnings: nenhum
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.3` — ADCT, art. 3º — Revisão constitucional (histórico)
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A possibilidade de nova revisão…; INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação…
+- Ponto jurídico: O art. 3º do ADCT previu uma revisão constitucional depois de cinco anos da promulgação da Constituição, aprovada pelo voto da maioria absoluta dos membros do Congresso Nacional, reunidos em sessão…
+- Interpretação principal: Trata-se de regra histórica.
+- ATENÇÃO: A regra já produziu seus efeitos.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: da maioria absoluta dos membros do congresso…), EXTRAPOLATION_NUMBER(resolvido), EXTRAPOLATION_NUMBER(resolvido), EXAMPLE_NUMBER(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.7` — ADCT, art. 7º — Tribunal internacional dos direitos humanos
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A adesão do Brasil a tribunais…
+- Ponto jurídico: O art. 7º do ADCT determina que o Brasil atue em favor da formação de um tribunal internacional dos direitos humanos.
+- Interpretação principal: A regra orienta a política externa brasileira: nas relações internacionais, o país deve defender a criação de uma corte internacional voltada à proteção dos direitos…
+- ATENÇÃO: O artigo indica uma direção para a atuação do país; ele não cria, por si, obrigação de aderir a um tribunal determinado.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: formação de um tribunal internacional dos…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.19` — ADCT, art. 19 — Estabilidade excepcional de servidores
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A diferença entre estabilidade e…
+- Ponto jurídico: O art. 19 do ADCT considera estáveis no serviço público certos servidores civis dos quatro entes da Federação, na administração direta, nas autarquias e nas fundações públicas.
+- Interpretação principal: A Constituição deu estabilidade a quem já trabalhava no serviço público havia muito tempo sem ter passado por concurso.
+- ATENÇÃO: A estabilidade deste artigo não torna o servidor efetivo no cargo.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos professores de nível superior nos termos da), EXTRAPOLATION_NUMBER(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

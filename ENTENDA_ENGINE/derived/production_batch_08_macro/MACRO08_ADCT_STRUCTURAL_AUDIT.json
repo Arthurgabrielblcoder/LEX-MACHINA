@@ -1,0 +1,190 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "namespace": "ADCT",
+ "norma_id": "CF88",
+ "as_of": "2026-10-05",
+ "entenda_config": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json",
+ "parent": "CF88",
+ "source_marker": "ATO DAS DISPOSIÇÕES CONSTITUCIONAIS TRANSITÓRIAS",
+ "official_source": {
+  "dir": "ADCT/16434816_2e7bf19d",
+  "norma_id_senado": "604119",
+  "publicacao_url": "https://legis.senado.leg.br/norma/604119/publicacao/16434816",
+  "raw_sha256": "2e7bf19d595106fdd83f6ddc13ed9dd2a8f3561c4d2e2b34bc036d50d70b03ee",
+  "normalizado_sha256": "887617267a648cccd36128323db07c2659194326c1e85020f1ddfd636067006a",
+  "adquirido_em_utc": "2026-09-29T16:37:50Z"
+ },
+ "runtime": {
+  "path": "DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt",
+  "sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+  "composition": [
+   "CF88 (Senado 579494, Compilação Monovigente)",
+   "ADCT (Senado 604119, Compilação Monovigente)"
+  ]
+ },
+ "legacy": {
+  "index": "LEGAL_TARGET_ID/derived/CF88_TARGET_INDEX.json",
+  "targets": 961,
+  "unknown_validity": 812,
+  "text_source": [
+   "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt"
+  ]
+ },
+ "profile": {
+  "id": "CF88_OFFICIAL_RUNTIME",
+  "targets_by_origin": {
+   "LEGACY_STRUCTURAL_ONLY": 72,
+   "OFFICIAL_RUNTIME": 891
+  },
+  "round_trip": {
+   "profiled_targets_with_text": 742,
+   "mismatched": [],
+   "mismatched_count": 0,
+   "extra_targets": [],
+   "other_namespaces_text_mismatch": 0,
+   "other_namespaces_status_mismatch": 0,
+   "status": "PASS"
+  }
+ },
+ "articles": 148,
+ "lettered_articles": [
+  "18-A",
+  "54-A",
+  "60-A",
+  "76-A",
+  "76-B",
+  "92-A",
+  "92-B",
+  "107-A",
+  "111-A",
+  "116-A"
+ ],
+ "targets": 963,
+ "kinds": {
+  "ALINEA": 71,
+  "ARTIGO": 148,
+  "CAPUT": 148,
+  "INCISO": 272,
+  "NAMESPACE": 1,
+  "PARAGRAFO": 286,
+  "PARAGRAFO_UNICO": 37
+ },
+ "article_status": {
+  "CURRENT": 138,
+  "REVOKED": 10
+ },
+ "revoked_articles": [
+  "ADCT:ART.91",
+  "ADCT:ART.106",
+  "ADCT:ART.107",
+  "ADCT:ART.108",
+  "ADCT:ART.109",
+  "ADCT:ART.110",
+  "ADCT:ART.111",
+  "ADCT:ART.111-A",
+  "ADCT:ART.112",
+  "ADCT:ART.114"
+ ],
+ "temporal_classes": {
+  "EFFECT_EXHAUSTED": 14,
+  "EXTERNAL_STATUS_REQUIRED": 10,
+  "NAO_CLASSIFICADO": 107,
+  "OPERATIVE_CURRENT": 3,
+  "PARTIALLY_OPERATIVE": 4,
+  "REVOKED": 10
+ },
+ "decisions": {
+  "EXCLUDED_HISTORICAL": 3,
+  "EXCLUDED_REVOKED": 7,
+  "NAO_DECIDIDO": 107,
+  "SELECT": 9,
+  "SKIP_APPROVED_PILOT_LEGACY_MODEL": 1,
+  "SKIP_CONSUMED_CONSTITUTIVE_ACT": 4,
+  "SKIP_EXHAUSTED_TRANSITION": 9,
+  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 5,
+  "SKIP_TRANSITION_EVENT_DEPENDENT": 3
+ },
+ "blocks": {
+  "D": {
+   "name": "MACRO_08_D",
+   "start": 1,
+   "end": 30,
+   "articles": 31,
+   "targets_current": 147
+  },
+  "E": {
+   "name": "MACRO_08_E",
+   "start": 31,
+   "end": 60,
+   "articles": 32,
+   "targets_current": 173
+  },
+  "F": {
+   "name": "MACRO_08_F",
+   "start": 61,
+   "end": 90,
+   "articles": 32,
+   "targets_current": 164
+  },
+  "G": {
+   "name": "MACRO_08_G",
+   "start": 91,
+   "end": 115,
+   "articles": 29,
+   "targets_current": 151
+  },
+  "H": {
+   "name": "MACRO_08_H",
+   "start": 116,
+   "end": 138,
+   "articles": 24,
+   "targets_current": 196
+  }
+ },
+ "block_rule": "blocos de ~25-35 artigos estruturais, determinados pela estrutura real (148 artigos; 831 targets CURRENT): fronteiras por numero de artigo, equilibrando targets (147/171/164/151/196)",
+ "questions": [
+  {
+   "q": "1. O ADCT ja possui targets estruturais?",
+   "a": "Sim. O indice canonico CF88_TARGET_INDEX.json ja tinha 961 targets do namespace ADCT (fonte estrutural legada cf.txt), mas 812 estavam UNKNOWN_VALIDITY e o texto vinha da compilacao multivigente. O perfil CF88_OFFICIAL_RUNTIME usa 891 targets do runtime oficial e mantem 72 targets so legados como HISTORICAL_ONLY."
+  },
+  {
+   "q": "2. Qual e o norma_id real?",
+   "a": "CF88 (campo norma_id dos targets); o ADCT e o subnamespace 'ADCT' com parent 'CF88' (LEGAL_TARGET_ID/namespaces.json; source_marker 'ATO DAS DISPOSIÇÕES CONSTITUCIONAIS TRANSITÓRIAS')."
+  },
+  {
+   "q": "3. Qual e a gramatica real dos IDs?",
+   "a": "ADCT:ART.<n>[-<LETRA>][:CAPUT | :PAR.<n>[-<LETRA>] | :PAR.UNICO][:INC.<romano>[-<LETRA>]][:AL.<letra>] (LEGAL_TARGET_ID/target_id.py). Exemplos do indice: ADCT:ART.2:PAR.1, ADCT:ART.10:INC.II:AL.b, ADCT:ART.18-A, ADCT:ART.21:PAR.UNICO, ADCT:ART.76-B."
+  },
+  {
+   "q": "4. O ADCT esta dentro de CF88 ou e norma separada?",
+   "a": "Dentro de CF88: namespace proprio (ADCT:ART.5 nao colide com CF88:ART.5), mesma norma e mesmo indice. Nenhum namespace novo foi criado."
+  },
+  {
+   "q": "5. Quantos artigos estruturais existem?",
+   "a": "148 artigos (10 com letra: 18-A, 54-A, 60-A, 76-A, 76-B, 92-A, 92-B, 107-A, 111-A, 116-A); 814 dispositivos abaixo do artigo; tipos: {'ALINEA': 71, 'ARTIGO': 148, 'CAPUT': 148, 'INCISO': 272, 'NAMESPACE': 1, 'PARAGRAFO': 286, 'PARAGRAFO_UNICO': 37}."
+  },
+  {
+   "q": "6. Quantos estao vigentes/operativos?",
+   "a": "Status do texto: 138 artigos com texto vigente na compilacao monovigente. Camada temporal editorial: {'EFFECT_EXHAUSTED': 14, 'EXTERNAL_STATUS_REQUIRED': 10, 'NAO_CLASSIFICADO': 107, 'OPERATIVE_CURRENT': 3, 'PARTIALLY_OPERATIVE': 4, 'REVOKED': 10}."
+  },
+  {
+   "q": "7. Quantos estao revogados?",
+   "a": "10 artigos com caput apenas '(Revogado)': 91, 106, 107, 108, 109, 110, 111, 111-A, 112, 114; dispositivos revogados: 49."
+  },
+  {
+   "q": "8. Quantos possuem efeitos temporais ja exauridos?",
+   "a": "14 artigos classificados EFFECT_EXHAUSTED (prova pelo texto e pela data de promulgacao versionada); 4 parcialmente operantes; 0 com marco futuro."
+  },
+  {
+   "q": "9. Existem lacunas ou erros de segmentacao?",
+   "a": "Runtime x indice legado: 72 targets so legados (redacoes revogadas ou renumeradas), 2 so do runtime (ADCT:ART.77:INC.I:AL.a, ADCT:ART.77:INC.I:AL.b, diferenca revisada em TARGET_DIFF_REVIEWED.json). Sanity: {'REPEATED_LABEL': 1} (ver MACRO08_SOURCE_ANOMALIES)."
+  },
+  {
+   "q": "10. E possivel reconstrui-lo integralmente apenas com conteudo versionado?",
+   "a": "Sim. Fonte oficial travada (SOURCES_LOCK: Senado 604119, raw 2e7bf19d5951..., normalizado 887617267a64...), runtime da Lei Seca versionado (7ef82290d30f...) e perfil gerado com prova de ida e volta: PASS (742 textos)."
+  }
+ ],
+ "decision": "ADCT_PROCESSABLE (texto oficial versionado; lacuna era de targetizacao/status/leitor, resolvida pelo perfil generico)",
+ "pilot_conflict": "ADCT:ART.10:INC.II (HUMAN_APPROVED_T1) carimbado com o cf.txt legado: ADCT art. 10 fora do lote (SKIP_APPROVED_PILOT_LEGACY_MODEL); BACKLOG"
+}

@@ -1,7 +1,439 @@
 {
  "schema_version": 1,
  "policy": "Camada temporal editorial do Macro08 (build_entenda_macro_segment.py). Classes: OPERATIVE_CURRENT, OPERATIVE_TRANSITION, EFFECT_EXHAUSTED, REVOKED (derivado do runtime), HISTORICAL_ONLY, FUTURE_TRIGGER, PARTIALLY_OPERATIVE, EXTERNAL_STATUS_REQUIRED. Toda classificacao traz proveniencia no texto versionado (runtime oficial sha256 7ef82290...) ou nas anotacoes da fonte estrutural canonica; nada de memoria. Data de referencia: 2026-10-05.",
- "articles": {},
+ "articles": {
+  "ADCT:ART.1": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Compromisso prestado no ato e na data da promulgacao; evento unico consumado.",
+   "markers": [
+    "ato e data da promulgacao"
+   ],
+   "situation_2026": "Exaurido: o ato devia ocorrer na promulgacao.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 1 (\"no ato e na data de sua promulgacao\")",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.2": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Plebiscito com data fixa no texto (21 de abril de 1993), anterior a data de referencia; regulamentacao pelo TSE apos a promulgacao.",
+   "markers": [
+    "21 de abril de 1993"
+   ],
+   "situation_2026": "Exaurido por decurso da data fixada; o resultado do plebiscito nao consta de fonte versionada e nao e afirmado.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 2, caput"
+   ]
+  },
+  "ADCT:ART.3": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SELECT",
+   "reason": "Revisao constitucional realizada: Emendas de Revisao nº 1 a 6, de 1994, anotadas na fonte canonica. Selecionado como historico-pedagogico (distincao revisao x emenda).",
+   "markers": [
+    "cinco anos apos a promulgacao",
+    "1994 (Emendas de Revisao)"
+   ],
+   "situation_2026": "Exaurido: revisao realizada em 1994; procedimentos atuais de alteracao seguem o art. 60.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 3",
+    "cf.txt: anotacoes Emenda Constitucional de Revisao nº 1 a 6, de 1994",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.4": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Termino de mandatos em datas fixas (1989, 1990, 1991) e primeira eleicao presidencial de 1989.",
+   "markers": [
+    "15 de marco de 1990",
+    "15 de novembro de 1989",
+    "15 de marco de 1991",
+    "1º de janeiro de 1989"
+   ],
+   "situation_2026": "Exaurido por decurso das datas fixadas.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 4, caput e §§ 1º a 4º"
+   ]
+  },
+  "ADCT:ART.5": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Regras das eleicoes de 15 de novembro de 1988.",
+   "markers": [
+    "15 de novembro de 1988"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 5"
+   ]
+  },
+  "ADCT:ART.6": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Registro de novos partidos nos seis meses posteriores a promulgacao.",
+   "markers": [
+    "seis meses da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 6",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.7": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Diretriz de politica externa sem prazo nem condicao.",
+   "markers": [],
+   "situation_2026": "Operante: diretriz permanente da atuacao internacional.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 7"
+   ]
+  },
+  "ADCT:ART.8": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Anistia concedida na promulgacao (efeito unico) com direitos dela decorrentes reconhecidos caso a caso; reparacao do § 3º depende de lei.",
+   "markers": [
+    "18 de setembro de 1946 a promulgacao",
+    "efeitos financeiros a partir da promulgacao"
+   ],
+   "situation_2026": "Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 8 e §§",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.9": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Pedido ao STF por cassados entre 15 de julho e 31 de dezembro de 1969; alcanca apenas pessoas daquela situacao; aplicacao residual depende de fatos individuais.",
+   "markers": [
+    "15 de julho a 31 de dezembro de 1969"
+   ],
+   "situation_2026": "Residual e pessoal; estado atual nao versionado.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 9"
+   ]
+  },
+  "ADCT:ART.10": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_APPROVED_PILOT_LEGACY_MODEL",
+   "reason": "Artigo com explicacao aprovada (ADCT:ART.10:INC.II, HUMAN_APPROVED_T1) carimbada com o texto do cf.txt legado e status UNKNOWN + verificacao externa; sob o perfil oficial o status e CURRENT e o snapshot diverge. Fica fora do lote para nao alterar conteudo aprovado (MB08-SRC-05); reconciliacao no BACKLOG.",
+   "markers": [
+    "ate a lei complementar do art. 7º, I; ate a lei do art. 7º, XIX"
+   ],
+   "situation_2026": "Regras condicionadas a leis externas (estado nao versionado).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 10",
+    "ENTENDA_ENGINE/corpus/CF88.entenda.jsonl: ENTENDA/ADCT:ART.10:INC.II/BASE/2 (HUMAN_APPROVED_T1)"
+   ]
+  },
+  "ADCT:ART.11": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Constituicoes estaduais em um ano e leis organicas em seis meses, contados da promulgacao.",
+   "markers": [
+    "um ano da promulgacao",
+    "seis meses da Constituicao estadual"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 11",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.12": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Prazos da comissao e da demarcacao ja decorridos; competencia supletiva da Uniao para limites nao demarcados (§ 4º) e homologacao dos limites do Acre (§ 5º) com efeito duradouro.",
+   "markers": [
+    "noventa dias, um ano e tres anos da promulgacao"
+   ],
+   "situation_2026": "Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 12",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.13": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Criacao e instalacao do Estado do Tocantins com eleicoes e instalacao datadas em 1988 e 1989; limites do § 1º persistem como fato territorial; o art. 18-A do ADCT (redacao de 2021) pressupoe a instalacao entre 1989 e 1994.",
+   "markers": [
+    "instalacao nao antes de 1º de janeiro de 1989",
+    "eleicoes nao antes de 15 de novembro de 1988"
+   ],
+   "situation_2026": "Exaurido como comando; Estado criado.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 13",
+    "runtime: ADCT art. 18-A (\"Estado do Tocantins, decorrentes de sua instalacao, entre 1º de janeiro de 1989 e 31 de dezembro de 1994\")"
+   ]
+  },
+  "ADCT:ART.14": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Transformacao dos Territorios de Roraima e Amapa em Estados, com instalacao pela posse dos Governadores eleitos em 1990.",
+   "markers": [
+    "posse dos Governadores eleitos em 1990"
+   ],
+   "situation_2026": "Exaurido como comando.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 14"
+   ]
+  },
+  "ADCT:ART.15": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Extincao do Territorio de Fernando de Noronha e reincorporacao a Pernambuco, com efeito na promulgacao.",
+   "markers": [
+    "promulgacao"
+   ],
+   "situation_2026": "Exaurido; resultado territorial persiste.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 15",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.16": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Indicacao do Governador do DF pelo Presidente e competencias do Senado ate a efetivacao do art. 32, § 2º, e a instalacao da Camara Legislativa; o estado desses eventos nao consta de fonte versionada.",
+   "markers": [
+    "ate a efetivacao do art. 32, § 2º; ate a instalacao da Camara Legislativa"
+   ],
+   "situation_2026": "Condicionado a evento institucional nao versionado.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 16"
+   ]
+  },
+  "ADCT:ART.17": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Reducao imediata na promulgacao (caput, efeito unico) e protecao de acumulacoes de cargos de saude entao existentes (§§ 1º e 2º, efeito residual).",
+   "markers": [
+    "promulgacao"
+   ],
+   "situation_2026": "Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 17",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.18": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Extincao dos efeitos de atos de estabilidade sem concurso lavrados apos a instalacao da Constituinte; efeito constitutivo na promulgacao.",
+   "markers": [
+    "instalacao da Assembleia Nacional Constituinte"
+   ],
+   "situation_2026": "Exaurido como comando.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 18"
+   ]
+  },
+  "ADCT:ART.18-A": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Convalidacao de atos da instalacao do Tocantins (1989 a 1994) apos cinco anos de cada ato, salvo ma-fe; redacao de 2021.",
+   "markers": [
+    "1º de janeiro de 1989 a 31 de dezembro de 1994",
+    "cinco anos da pratica do ato"
+   ],
+   "situation_2026": "Operante: o efeito convalidatorio esta declarado no texto vigente; periodo coberto fechado.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 18-A",
+    "cf.txt: anotacao \"Redacao dada pela Emenda constitucional n. 110, de 2021\""
+   ]
+  },
+  "ADCT:ART.19": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Estabilidade concedida na promulgacao a servidores com cinco anos continuados de exercicio; situacao consolidada que continua a produzir efeitos.",
+   "markers": [
+    "cinco anos continuados ate a promulgacao"
+   ],
+   "situation_2026": "Operante: estabilidade adquirida continua produzindo efeitos para os alcancados.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 19",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.20": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Revisao de direitos de inativos e pensionistas em cento e oitenta dias.",
+   "markers": [
+    "cento e oitenta dias"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 20",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.21": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Juizes togados de investidura limitada em exercicio na promulgacao; quadro em extincao.",
+   "markers": [
+    "exercicio na data da promulgacao"
+   ],
+   "situation_2026": "Residual e pessoal.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 21"
+   ]
+  },
+  "ADCT:ART.22": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Opcao pela carreira dos defensores publicos investidos ate a instalacao da Constituinte.",
+   "markers": [
+    "instalacao da Assembleia Nacional Constituinte"
+   ],
+   "situation_2026": "Residual e pessoal.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 22"
+   ]
+  },
+  "ADCT:ART.23": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Ocupantes do cargo de censor federal ate a regulamentacao do art. 21, XVI; aproveitamento por lei.",
+   "markers": [
+    "ate a regulamentacao do art. 21, XVI"
+   ],
+   "situation_2026": "Residual e pessoal; estado da regulamentacao nao versionado.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 23"
+   ]
+  },
+  "ADCT:ART.24": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Leis de compatibilizacao de quadros de pessoal em dezoito meses da promulgacao.",
+   "markers": [
+    "dezoito meses da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 24",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.25": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Revogacao de delegacoes ao Executivo a partir de cento e oitenta dias, prazo prorrogavel por lei (leis de prorrogacao nao versionadas); regime de decretos-leis pendentes exaurido.",
+   "markers": [
+    "cento e oitenta dias da promulgacao, prorrogavel por lei",
+    "2 e 3 de setembro de 1988"
+   ],
+   "situation_2026": "Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 25",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.26": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Comissao mista sobre endividamento externo no prazo de um ano da promulgacao.",
+   "markers": [
+    "um ano da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 26",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.27": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Regras de instalacao do STJ e dos TRFs (prazos contados da promulgacao, exauridos) e § 11 (TRFs da 6ª a 9ª Regiao, EC 73/2013) com anotacao \"Vide ADIN 5017\".",
+   "markers": [
+    "seis meses da promulgacao",
+    "§ 11 incluido em 2013"
+   ],
+   "situation_2026": "Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 27",
+    "cf.txt: anotacoes \"Incluido pela Emenda Constitucional n. 73, de 2013; Vide ADIN n. 5017, de 2013\"",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.28": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Juizes federais do art. 123, § 2º, da Constituicao de 1967 investidos na titularidade de varas.",
+   "markers": [
+    "situacao existente na promulgacao"
+   ],
+   "situation_2026": "Residual e pessoal.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 28"
+   ]
+  },
+  "ADCT:ART.29": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Atividades do MPF, PGFN e consultorias ate as leis complementares do Ministerio Publico e da AGU; estado das leis nao versionado; opcoes pessoais dos §§ 2º a 4º.",
+   "markers": [
+    "ate as leis complementares do MP e da AGU",
+    "cento e vinte dias"
+   ],
+   "situation_2026": "Condicionado a leis externas.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 29"
+   ]
+  },
+  "ADCT:ART.30": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Manutencao dos juizes de paz ate a posse dos novos titulares, pela lei que criar a justica de paz.",
+   "markers": [
+    "ate a posse dos novos juizes de paz"
+   ],
+   "situation_2026": "Condicionado a lei e a eventos nao versionados.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 30"
+   ]
+  }
+ },
  "explanations": {
   "CF88:ART.195": {
    "temporal_class": "OPERATIVE_CURRENT",
@@ -98,6 +530,12 @@
     "provenance": [
      "runtime: CF art. 239, § 3º ('para pagamento em 2025, corrigida, a partir de 2026') e § 3º-A"
     ]
+   }
+  },
+  "ADCT:ART.27": {
+   "judicial_review": {
+    "classification": "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS",
+    "reason": "A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION)."
    }
   }
  }

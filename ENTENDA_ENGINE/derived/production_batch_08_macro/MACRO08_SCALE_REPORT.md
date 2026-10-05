@@ -4,16 +4,16 @@ Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macr
 
 Config de texto: `ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json`.
 
-Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C.
+Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C, MACRO_08_D.
 
 ## Seleção (lote inteiro)
 
 | | |
 |---|---|
-| Artigos no escopo | 79 explicados/avaliados no SELECTION_REPORT + 0 SKIP de artigo inteiro (SKIP_REGISTER) |
-| Targets analisados | 611 (581 vigentes; excluídos: EXCLUDED_HISTORICAL 14, EXCLUDED_REVOKED 16) |
-| SELECT | 114 = 113 novas + 1 reutilizada(s) já aprovada(s) |
-| SKIP | 467 dispositivos (com motivo) + 0 artigos inteiros |
+| Artigos no escopo | 88 explicados/avaliados no SELECTION_REPORT + 22 SKIP de artigo inteiro (SKIP_REGISTER) |
+| Targets analisados | 664 (634 vigentes; excluídos: EXCLUDED_HISTORICAL 14, EXCLUDED_REVOKED 16) |
+| SELECT | 123 = 122 novas + 1 reutilizada(s) já aprovada(s) |
+| SKIP | 511 dispositivos (com motivo) + 22 artigos inteiros |
 
 ## Por sub-bloco
 
@@ -22,50 +22,57 @@ Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C.
 | MACRO_08_A | CORPO | 25 | 0 | 182 | 41 | 141 | 41 | 30/10/1 | 26/9/5/1/0 | 66 |
 | MACRO_08_B | CORPO | 29 | 0 | 287 | 43 | 244 | 42 | 37/5/0 | 34/4/4/0/0 | 89 |
 | MACRO_08_C | CORPO | 25 | 0 | 112 | 30 | 82 | 30 | 21/6/3 | 18/6/3/3/0 | 44 |
+| MACRO_08_D | ADCT | 9 | 22 | 53 | 9 | 44 | 9 | 1/3/5 | 1/3/0/5/0 | 13 |
 
 ## Por segmento
 
 | Segmento | Novas | LOW/MED/HIGH | SIMPLE/STRUCT/EXT | A/B/C/D/E |
 |---|---|---|---|---|
 | CORPO | 113 | 88/21/4 | 2/66/45 | 78/19/12/4/0 |
-| ADCT | 0 | 0/0/0 | 0/0/0 | 0/0/0/0/0 |
+| ADCT | 9 | 1/3/5 | 0/1/8 | 1/3/0/5/0 |
 
 ## Mapa temporal (ADCT)
 
 | Classe | Artigos |
 |---|---|
-| NAO_CLASSIFICADO | 138 |
+| EFFECT_EXHAUSTED | 14 |
+| EXTERNAL_STATUS_REQUIRED | 10 |
+| NAO_CLASSIFICADO | 107 |
+| OPERATIVE_CURRENT | 3 |
+| PARTIALLY_OPERATIVE | 4 |
 | REVOKED | 10 |
 
 ## Dois eixos e filas (lote)
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
-| LOW | 88 | | SIMPLE | 2 |
-| MEDIUM | 21 | | STRUCTURED | 66 |
-| HIGH | 4 | | EXTERNAL | 45 |
+| LOW | 89 | | SIMPLE | 2 |
+| MEDIUM | 24 | | STRUCTURED | 67 |
+| HIGH | 9 | | EXTERNAL | 53 |
 
 | Fila | Itens |
 |---|---|
-| A_CLEAN_LOW | 78 |
-| B_CLEAN_MEDIUM | 19 |
+| A_CLEAN_LOW | 79 |
+| B_CLEAN_MEDIUM | 22 |
 | C_QUICK_REVIEW | 12 |
-| D_FULL_HUMAN_REVIEW | 4 |
+| D_FULL_HUMAN_REVIEW | 9 |
 | E_HARD_FAIL | 0 |
 
-D = 3.5% das novas.
-Jurisprudência: CONTEXT_ONLY 17, NONE 95, REQUIRED_FOR_CORRECTNESS 1.
+D = 7.4% das novas.
+Jurisprudência: CONTEXT_ONLY 23, NONE 97, REQUIRED_FOR_CORRECTNESS 2.
 
 ## Motivos dos D
 
+- CONSTITUTIONAL_AMBIGUITY: 1
 - INTERPRETIVE_CONTROVERSY: 1
-- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 1
+- JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: 1
+- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 2
 - SANCTION_WITH_INTERPRETATION: 1
-- TEMPORAL_STATUS_UNRESOLVED: 1
+- TEMPORAL_STATUS_UNRESOLVED: 6
 
 ## Achados REVIEW_REQUIRED
 
-- EXTERNAL_FACT_NEEDS_PROVENANCE: 1
+- EXTERNAL_FACT_NEEDS_PROVENANCE: 2
 - LIST_ITEM_POSSIBLY_DROPPED: 14
 - NUMBER_NOT_IN_TEXT: 2
 - PERMISSION_NOT_IN_TEXT: 1
@@ -74,15 +81,15 @@ Jurisprudência: CONTEXT_ONLY 17, NONE 95, REQUIRED_FOR_CORRECTNESS 1.
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 156.539 |
-| Modelo antigo (pacote completo de todos os itens) | 340.230 |
-| **Apresentado ao humano (pacotes + prioridade)** | **111.024** |
-| — MACRO08_COMPACT_AB_REVIEW.md | 75.063 |
-| — MACRO08_FULL_D_REVIEW.md | 11.652 |
+| Rascunhos (5 seções + glossário) | 170.459 |
+| Modelo antigo (pacote completo de todos os itens) | 372.966 |
+| **Apresentado ao humano (pacotes + prioridade)** | **141.740** |
+| — MACRO08_COMPACT_AB_REVIEW.md | 78.572 |
+| — MACRO08_FULL_D_REVIEW.md | 37.470 |
 | — MACRO08_HARD_FAIL_REPORT.md | 119 |
-| — MACRO08_HUMAN_REVIEW_PRIORITY.md | 15.621 |
+| — MACRO08_HUMAN_REVIEW_PRIORITY.md | 17.010 |
 | — MACRO08_QUICK_C_REVIEW.md | 8.569 |
-| Redução vs. modelo antigo | 229.206 (67.4%) |
+| Redução vs. modelo antigo | 231.226 (62.0%) |
 
 ## Checks estruturais
 

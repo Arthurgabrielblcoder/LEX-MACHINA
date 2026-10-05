@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 113 · risco LOW 88 · MEDIUM 21 · HIGH 4
-- Prontas para revisão editorial: 113 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 3, EXAMPLE_NUMBER 2, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 4, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Explicações: 122 · risco LOW 89 · MEDIUM 24 · HIGH 9
+- Prontas para revisão editorial: 122 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 3, EXAMPLE_NUMBER 4, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 7, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -30,6 +30,31 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.231:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: INTERPRETIVE_CONTROVERSY: INTERPRETIVE_CONTROVERSY: "controvérsia"
+
+### ADCT, art. 8º — Anistia política
+
+- `ADCT:ART.8` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado).
+
+### ADCT, art. 12 — Comissão de estudos territoriais e limites entre entes
+
+- `ADCT:ART.12` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas).
+
+### ADCT, art. 17 — Redução de remunerações e acumulações protegidas
+
+- `ADCT:ART.17` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao.
+
+### ADCT, art. 25 — Revogação de delegações ao Executivo e decretos-leis pendentes
+
+- `ADCT:ART.25` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos).
+
+### ADCT, art. 27 — Implantação do STJ e dos Tribunais Regionais Federais
+
+- `ADCT:ART.27` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "Não se deve concluir apenas"; CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: "exige verificação"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).; TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada.
 
 ## Risco MEDIUM
 
@@ -138,6 +163,25 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.247` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: perda do cargo
+
+### ADCT, art. 3º — Revisão constitucional (histórico)
+
+- `ADCT:ART.3` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A possibilidade de nova revisão fora do art. 60 é tema da camada JURISPRUDÊNCIA e da doutrina.; INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao responde; remete)
+- EXTRAPOLATION_NUMBER (o_que_significa: 5) → Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana.
+- EXTRAPOLATION_NUMBER (o_que_significa: 1994) → Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana.
+- EXAMPLE_NUMBER (exemplo_pratico: 1994) → Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 7º — Tribunal internacional dos direitos humanos
+
+- `ADCT:ART.7` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A adesão do Brasil a tribunais internacionais de direitos humanos e seus efeitos pertencem aos tratados e à camada JURISPRUDÊNCIA.
+
+### ADCT, art. 19 — Estabilidade excepcional de servidores
+
+- `ADCT:ART.19` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A diferença entre estabilidade e efetividade e seus efeitos práticos são temas da camada JURISPRUDÊNCIA.
+- EXTRAPOLATION_NUMBER (o_que_significa: 5) → Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana.
 
 ## Risco LOW
 
@@ -590,4 +634,10 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.250` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
+
+### ADCT, art. 18-A — Convalidação de atos da instalação do Tocantins
+
+- `ADCT:ART.18-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXAMPLE_NUMBER (exemplo_pratico: 1990) → Ano do exemplo marcado como ilustrativo, dentro do periodo de 1989 a 1994 do texto. Resolucao do drafter, sujeita a revisao humana.
 

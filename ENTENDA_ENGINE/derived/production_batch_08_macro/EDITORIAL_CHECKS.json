@@ -3,21 +3,21 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
- "explanations": 113,
+ "explanations": 122,
  "risk_counts": {
-  "LOW": 88,
-  "MEDIUM": 21,
-  "HIGH": 4
+  "LOW": 89,
+  "MEDIUM": 24,
+  "HIGH": 9
  },
  "finding_counts": {
   "ABSOLUTE_CLAIM": 3,
-  "EXAMPLE_NUMBER": 2,
+  "EXAMPLE_NUMBER": 4,
   "EXCEPTION_NOT_IN_TEXT": 4,
-  "EXTRAPOLATION_NUMBER": 4,
+  "EXTRAPOLATION_NUMBER": 7,
   "TRANSITION_IN_CORE": 1
  },
  "unresolved_findings": 0,
- "ready_for_editorial_review": 113,
+ "ready_for_editorial_review": 122,
  "human_approved_t1": 0,
  "duplication_pairs": [],
  "rows": [
@@ -1522,6 +1522,167 @@
    "role": "OVERVIEW",
    "risk": "LOW",
    "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.3",
+   "explanation_id": "ENTENDA/ADCT:ART.3/BASE/1",
+   "title": "ADCT, art. 3º — Revisão constitucional (histórico)",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A possibilidade de nova revisão fora do art. 60 é tema da camada JURISPRUDÊNCIA e da doutrina.",
+    "INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "5",
+     "resolution": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "1994",
+     "resolution": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana."
+    },
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "1994",
+     "resolution": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.7",
+   "explanation_id": "ENTENDA/ADCT:ART.7/BASE/1",
+   "title": "ADCT, art. 7º — Tribunal internacional dos direitos humanos",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A adesão do Brasil a tribunais internacionais de direitos humanos e seus efeitos pertencem aos tratados e à camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.8",
+   "explanation_id": "ENTENDA/ADCT:ART.8/BASE/1",
+   "title": "ADCT, art. 8º — Anistia política",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.12",
+   "explanation_id": "ENTENDA/ADCT:ART.12/BASE/1",
+   "title": "ADCT, art. 12 — Comissão de estudos territoriais e limites entre entes",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.17",
+   "explanation_id": "ENTENDA/ADCT:ART.17/BASE/1",
+   "title": "ADCT, art. 17 — Redução de remunerações e acumulações protegidas",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.18-A",
+   "explanation_id": "ENTENDA/ADCT:ART.18-A/BASE/1",
+   "title": "ADCT, art. 18-A — Convalidação de atos da instalação do Tocantins",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXAMPLE_NUMBER",
+     "section": "exemplo_pratico",
+     "detail": "1990",
+     "resolution": "Ano do exemplo marcado como ilustrativo, dentro do periodo de 1989 a 1994 do texto. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.19",
+   "explanation_id": "ENTENDA/ADCT:ART.19/BASE/1",
+   "title": "ADCT, art. 19 — Estabilidade excepcional de servidores",
+   "role": "OVERVIEW",
+   "risk": "MEDIUM",
+   "risk_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A diferença entre estabilidade e efetividade e seus efeitos práticos são temas da camada JURISPRUDÊNCIA."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "EXTRAPOLATION_NUMBER",
+     "section": "o_que_significa",
+     "detail": "5",
+     "resolution": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.25",
+   "explanation_id": "ENTENDA/ADCT:ART.25/BASE/1",
+   "title": "ADCT, art. 25 — Revogação de delegações ao Executivo e decretos-leis pendentes",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos)."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.27",
+   "explanation_id": "ENTENDA/ADCT:ART.27/BASE/1",
+   "title": "ADCT, art. 27 — Implantação do STJ e dos Tribunais Regionais Federais",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"",
+    "CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: \"exige verificação\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).",
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada."
+   ],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],

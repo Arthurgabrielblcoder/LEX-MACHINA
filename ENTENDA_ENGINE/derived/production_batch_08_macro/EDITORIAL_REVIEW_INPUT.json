@@ -32,9 +32,186 @@
   "CF88:ART.246": {
    "EXAMPLE_NUMBER": "Ano do exemplo marcado como ilustrativo na propria frase, dentro do periodo de 1995 a 2001 do texto. Resolucao do drafter, sujeita a revisao humana.",
    "TRANSITION_IN_CORE": "O proprio artigo tem emendas constitucionais como objeto; a mencao a EC 32/2001 identifica o termo final do periodo com base nas anotacoes da fonte oficial. Nao e regra de transicao misturada ao nucleo. Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.3": {
+   "EXTRAPOLATION_NUMBER": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana.",
+   "EXAMPLE_NUMBER": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.19": {
+   "EXTRAPOLATION_NUMBER": "Data/ano de fato de fundamentacao versionado (MACRO_SPEC.grounding_facts: promulgacao em 5 de outubro de 1988 na formula de encerramento do runtime; Emendas de Revisao de 1994 nas anotacoes da fonte canonica). Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.18-A": {
+   "EXAMPLE_NUMBER": "Ano do exemplo marcado como ilustrativo, dentro do periodo de 1989 a 1994 do texto. Resolucao do drafter, sujeita a revisao humana."
   }
  },
  "risk": {
+  "ADCT:ART.12": {
+   "level": "HIGH",
+   "rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas)."
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: noventa dias",
+    "number_or_percentage: noventa",
+    "overview com 7 dispositivos"
+   ]
+  },
+  "ADCT:ART.17": {
+   "level": "HIGH",
+   "rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.17:CAPUT: Vide Emenda Constitucional n. 41, 19.12.2003)",
+    "camada externa: jurisprudencia",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "ADCT:ART.18-A": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: cinco",
+    "exception: salvo",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "ADCT:ART.19": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A diferença entre estabilidade e efetividade e seus efeitos práticos são temas da camada JURISPRUDÊNCIA."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: cinco anos",
+    "number_or_percentage: cinco",
+    "exception: exceto",
+    "law_dependency: na forma da lei",
+    "remissao: arts. 37",
+    "overview com 5 dispositivos"
+   ]
+  },
+  "ADCT:ART.25": {
+   "level": "HIGH",
+   "rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos)."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: oitenta dias",
+    "number_or_percentage: cento",
+    "remissao: arts. 62",
+    "overview com 9 dispositivos"
+   ]
+  },
+  "ADCT:ART.27": {
+   "level": "HIGH",
+   "rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "CONSTITUTIONAL_AMBIGUITY",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS",
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"Não se deve concluir apenas\"",
+    "CONSTITUTIONAL_AMBIGUITY: CONSTITUTIONAL_AMBIGUITY: \"exige verificação\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.27:PAR.11: Vide ADIN n. 5017, de 2013 -- A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION).",
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada."
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.27:PAR.11: Vide ADIN n. 5017, de 2013)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "deadline: prazo",
+    "number_or_percentage: cinco",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 104, 107",
+    "overview com 15 dispositivos"
+   ]
+  },
+  "ADCT:ART.3": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A possibilidade de nova revisão fora do art. 60 é tema da camada JURISPRUDÊNCIA e da doutrina.",
+    "INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "deadline: cinco anos",
+    "number_or_percentage: cinco",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "ADCT:ART.7": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A adesão do Brasil a tribunais internacionais de direitos humanos e seus efeitos pertencem aos tratados e à camada JURISPRUDÊNCIA."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "ADCT:ART.8": {
+   "level": "HIGH",
+   "rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: PARTIALLY_OPERATIVE: Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado)."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "number_or_percentage: doze",
+    "exception: exceto",
+    "law_dependency: regulament",
+    "overview com 7 dispositivos"
+   ]
+  },
   "CF88:ART.176": {
    "level": "LOW",
    "rules": [],
