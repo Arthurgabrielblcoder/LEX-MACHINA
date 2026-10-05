@@ -56,3 +56,71 @@ Detalhe por teste: `DEVICE_INTEGRATION_CLOUD_ACCOUNTING.json` e `LEGAL_TARGET_ID
   `EXTERNAL_VERIFICATION_REQUIRED` na camada externa, e as 67 recomendações de link são `PENDING_EXTERNAL_INGESTION`.
 - As fontes locais de jurisprudência (`C:/LMA/...`) e o export local de referências não existem no Cloud: nenhuma recomendação pode ficar READY_TO_LINK.
 - ESP32, microSD, firmware conectado e staging físico: fora do alcance da VM.
+
+---
+
+# MACRO07 — segundo passe (MACRO07_SECOND_PASS_RISK_COMPRESSION_AND_SOURCE_SANITY)
+
+**0 HUMAN_APPROVED_T1 novos; nenhum ENTENDA aprovado.** AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY continuam OFF. Não há cota artificial.
+
+## Reprodução a partir do Git
+
+```
+python LEGAL_TARGET_ID/status_errata.py --check                      # errata de status (114 VIII; 155 I c)
+python ENTENDA_ENGINE/macro_critic_pass.py ENTENDA_ENGINE/derived/production_batch_07_macro <X> \
+       .../drafts/pass1/MACRO07_<X>_CRITIC_EDITS.json --second-pass .../drafts/pass1/MACRO07_<X>_SECOND_PASS_EDITS.json \
+       .../drafts/pass1/MACRO07_<X>_PASS1_*.json                    # X = A, B, C, D
+python ENTENDA_ENGINE/build_entenda_macro_batch.py ENTENDA_ENGINE/derived/production_batch_07_macro --determinism 3
+```
+
+## Antes e depois
+
+| | Antes | Depois |
+|---|---|---|
+| Filas A/B/C/D/E | 143/53/0/53/0 | **143/82/0/24/0** |
+| LEGAL_RISK LOW/MEDIUM/HIGH | 143/53/53 | 143/82/24 |
+| D | 21,3% | **9,6%** (abaixo de 20%: diagnóstico não exigido) |
+| Jurisprudência REQUIRED/CONTEXT | 18/24 | 9/33 |
+| Caracteres apresentados ao humano | 441.681 | **316.685** (−28,3%; −61,5% vs. modelo antigo de 823.155) |
+
+Motivos dos 24 D:
+- TRANSITION_OR_TEMPORAL: 10;
+- JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: 11;
+- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 9;
+- INTERPRETIVE_CONTROVERSY: 1.
+
+Um item pode ter mais de um motivo.
+
+Os pacotes anteriores estão preservados em `production_batch_07_macro/history/pre_second_pass/*_PRE_SECOND_PASS.*`.
+
+## Suítes (segundo passe)
+
+| Suíte | Resultado |
+|---|---|
+| ENTENDA completa | **PASS**: 208 testes, 2 skips (os mesmos do baseline). Inclui rebuild byte a byte do Batch06 e `test_entenda_macro_batch07` (28 testes, 10 novos) |
+| Determinismo do builder macro | **PASS**: 3 builds + build no lugar byte-idênticos |
+| Validator v3, crítico e checks do segundo passe | 0 HARD_FAIL; transição sem evidência 0; Vide ADI sem classificação 0; PARENT_CHILD em aberto 0 |
+| Reconstrução da fonte | **PASS**: `PRESENT_IDENTICAL` (sha da receita) |
+| Errata de status / índice | **PASS**: `ERRATA_UP_TO_DATE`; `CF88_TARGET_STATUS.json` e `CF88_TARGET_INDEX.json` intactos |
+| Materialização Git (`--source HEAD`) | **PASS**: 304/304 arquivos byte-idênticos, 11 pares de índice, 1146/1146 blocos, 0 problemas |
+| Hashes dos módulos do Batch06 | **PASS**: inalterados |
+
+| Suíte | Total | PASS | FAIL | SKIPPED | NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY | NOT_COLLECTED |
+|---|---|---|---|---|---|---|
+| DEVICE_INTEGRATION | **353** | 120 | 2 | 136 | 68 | 27 |
+| LEGAL_TARGET_ID | **77** | 75 | 1 | 0 | 1 | 0 |
+
+DEVICE_INTEGRATION ficou idêntico ao baseline, teste a teste.
+
+LEGAL_TARGET_ID ganhou 12 testes novos (`test_source_corrections`), todos PASS. As falhas preexistentes não foram mascaradas:
+- `test_predeploy_a2c`: `test_ec45_cross_source` e `test_fail_closed`, por causa da cópia da EC 45 com sha divergente;
+- `test_source_hash`: `cf.txt` legado em CRLF;
+- NOT_RUN: `CF_SEGMENTADA_V2/` local.
+
+Detalhes em `*_CLOUD_ACCOUNTING_SECOND_PASS.json`.
+
+## Relatórios
+
+- `MACRO07_SOURCE_ANOMALY_ART114_REPORT.md`: causa A (fonte); correção aprovada aplicada no parser e errata de status.
+- `MACRO07_SOURCE_ANOMALY_ART155_REPORT.md`: causa D (status); rótulo renumerado e errata.
+- Lote: `MACRO07_TRANSITION_EVIDENCE.json`, `MACRO07_SECOND_PASS_EDITORIAL_LOG.json`, `MACRO07_FULL_D_REVIEW.md` (formato v2), `MACRO07_BACKLOG.md` (MB07-01/02 resolvidos; MB07-08 a MB07-11 novos).
