@@ -368,11 +368,9 @@ def determinism(bd, n=3):
     with tempfile.TemporaryDirectory(prefix='macro_det_') as tmp:
         for i in range(n):
             td = Path(tmp) / f'run{i}' / bd.name
-            (td / 'drafts').mkdir(parents=True)
+            shutil.copytree(bd / 'drafts', td / 'drafts')   # versioned drafts, critic logs and pass-1 inputs (drafts/pass1)
             for f in inputs:
                 shutil.copy(bd / f, td / f)
-            for f in (bd / 'drafts').glob('*.json'):
-                shutil.copy(f, td / 'drafts' / f.name)
             build(td)
             runs.append({str(p.relative_to(td)): sha(p) for p in td.rglob('*') if p.is_file()})
     inplace = {str(p.relative_to(bd)): sha(p) for p in bd.rglob('*') if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json'}

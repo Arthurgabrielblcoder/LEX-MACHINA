@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (31)
+## A — CLEAN_LOW (54)
 
 ### `CF88:ART.76` — Art. 76 — Exercício do Poder Executivo
 
@@ -345,7 +345,260 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (16)
+### `CF88:ART.101` — Art. 101 — Composição do Supremo Tribunal Federal
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 101 estabelece que o Supremo Tribunal Federal tem onze Ministros.
+- Interpretação principal: O Supremo é o órgão de cúpula do Judiciário, e o artigo define quem pode integrá-lo e como se chega lá.
+- ATENÇÃO: O artigo exige apenas cidadania; outra regra da Constituição reserva o cargo de Ministro do Supremo a brasileiros natos (art. 12, § 3º).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de trinta e cinco e menos de setenta), EXAMPLE_NUMBER_NOT_IN_TEXT(50), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.102:INC.III` — Art. 102, inciso III — Recurso extraordinário
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O inciso III atribui ao Supremo Tribunal Federal o julgamento, por recurso extraordinário, das causas decididas em única ou última instância.
+- Interpretação principal: O recurso extraordinário é o caminho para levar ao Supremo uma questão constitucional surgida em qualquer processo.
+- ATENÇÃO: Além das alíneas, o recorrente precisa demonstrar a repercussão geral da questão (§ 3º, com explicação própria).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: julgar válida lei ou ato de governo local), DUPLICATION(resolvido), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.102:PAR.3` — Art. 102, § 3º — Repercussão geral no recurso extraordinário
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 3º exige que, no recurso extraordinário, o recorrente demonstre a repercussão geral das questões constitucionais discutidas, nos termos da lei.
+- Interpretação principal: Não basta que a questão seja constitucional: o recorrente precisa demonstrar a repercussão geral.
+- ATENÇÃO: Os critérios do que tem repercussão geral estão na lei processual, e não neste parágrafo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: lo pela manifestação de dois terços de seus), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103:PAR.2` — Art. 103, § 2º — Inconstitucionalidade por omissão
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º estabelece que, declarada a inconstitucionalidade por omissão de medida necessária para tornar efetiva uma norma constitucional, o Poder competente recebe ciência para adotar as providências…
+- Interpretação principal: Algumas normas da Constituição só funcionam plenamente depois que o legislador ou a administração fazem a sua parte.
+- ATENÇÃO: O texto não fixa prazo para o Poder Legislativo.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.104` — Art. 104 — Composição do Superior Tribunal de Justiça
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 104 estabelece que o Superior Tribunal de Justiça tem no mínimo trinta e três Ministros.
+- Interpretação principal: O artigo combina dois elementos: um número mínimo de Ministros e uma regra de origem das vagas.
+- ATENÇÃO: Diferentemente do art. 101, aqui o texto exige que o escolhido seja brasileiro.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de trinta e cinco e menos de setenta), NEAR_COPY_MICROFIX(o_que_significa: desembargadores dos tribunais de justiça…), DUPLICATION(resolvido), DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.106` — Art. 106 — Órgãos da Justiça Federal
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 106 indica os órgãos da Justiça Federal: os Tribunais Regionais Federais e os Juízes Federais.
+- Interpretação principal: A Justiça Federal tem dois graus.
+- ATENÇÃO: O artigo apenas lista os órgãos.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.107` — Art. 107 — Composição dos Tribunais Regionais Federais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 107 estabelece que os Tribunais Regionais Federais têm no mínimo sete juízes, recrutados quando possível na própria região e nomeados pelo Presidente da República entre brasileiros com mais de…
+- Interpretação principal: O artigo aplica aos tribunais federais de segundo grau o modelo do quinto constitucional: a maior parte das vagas fica com juízes de carreira, e um quinto com…
+- ATENÇÃO: A remoção e a permuta de juízes dos tribunais, assim como a jurisdição e a sede de cada um, são definidas em lei (§ 1º), e não neste artigo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: brasileiros com mais de trinta e menos de), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:PAR.3` — Art. 109, §§ 3º e 4º — Causas previdenciárias na Justiça estadual
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 3º permite que a lei leve à Justiça estadual causas federais entre instituição de previdência social e segurado, quando não houver vara federal sediada na comarca onde o segurado mora.
+- Interpretação principal: Os parágrafos tratam de uma delegação de competência para facilitar o acesso do segurado.
+- ATENÇÃO: O § 3º é permissivo: a lei pode autorizar a delegação e definir suas condições.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.110` — Art. 110 — Seções judiciárias
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 110 determina que cada Estado e o Distrito Federal formem uma seção judiciária, com sede na respectiva capital, e varas localizadas conforme a lei.
+- Interpretação principal: A seção judiciária é a unidade territorial da Justiça Federal de primeiro grau.
+- ATENÇÃO: A localização das varas é definida em lei.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: nos territórios federais a jurisdição e as…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.111` — Art. 111 — Órgãos da Justiça do Trabalho
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 111 indica os órgãos da Justiça do Trabalho: o Tribunal Superior do Trabalho, os Tribunais Regionais do Trabalho e os Juízes do Trabalho.
+- Interpretação principal: A Justiça do Trabalho é um ramo especializado do Judiciário, voltado às relações de trabalho.
+- ATENÇÃO: Os parágrafos originais do artigo foram revogados; a composição e o funcionamento dos tribunais estão nos artigos seguintes.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.111-A` — Art. 111-A — Tribunal Superior do Trabalho
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 111-A estabelece que o Tribunal Superior do Trabalho tem vinte e sete Ministros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado.
+- Interpretação principal: Diferentemente do Superior Tribunal de Justiça, o Tribunal Superior do Trabalho tem número fixo de Ministros: vinte e sete.
+- ATENÇÃO: A competência do Tribunal Superior do Trabalho é definida em lei (§ 1º).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de trinta e cinco e menos de setenta), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.112` — Art. 112 — Varas do Trabalho
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 112 determina que a lei crie as varas da Justiça do Trabalho.
+- Interpretação principal: As varas do trabalho são a porta de entrada da Justiça do Trabalho, mas não existem em todas as cidades.
+- ATENÇÃO: A atribuição ao juiz de direito é uma possibilidade, a ser definida em lei, e vale apenas para comarcas não abrangidas pela jurisdição de vara do trabalho.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos juízes de direito com recurso para o)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.113` — Art. 113 — Lei de organização da Justiça do Trabalho
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 113 remete à lei a disciplina dos órgãos da Justiça do Trabalho: como são constituídos, como seus membros são investidos, qual a sua jurisdição e competência, quais as garantias e as condições…
+- Interpretação principal: A Constituição traça a estrutura básica da Justiça do Trabalho nos arts. 111 a 116, mas deixa os detalhes para o legislador.
+- ATENÇÃO: As garantias da magistratura do trabalho incluem as que a própria Constituição dá a todos os juízes (art. 95).
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.115` — Art. 115 — Tribunais Regionais do Trabalho
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 115 fixa a composição dos Tribunais Regionais do Trabalho: pelo menos sete juízes, nomeados pelo Presidente da República entre brasileiros que tenham mais de trinta e menos de setenta anos,…
+- Interpretação principal: O desenho é o mesmo dos Tribunais Regionais Federais (art. 107): número mínimo, quinto constitucional e promoção de juízes de carreira.
+- ATENÇÃO: O texto não exige tempo mínimo de exercício para a promoção dos juízes do trabalho, diferentemente do que faz para os Tribunais Regionais Federais (art. 107).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: mais de trinta e menos de setenta anos), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.116` — Art. 116 — Juiz singular nas Varas do Trabalho
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 116 determina que, nas Varas do Trabalho, a jurisdição seja exercida por um juiz singular.
+- Interpretação principal: Na primeira instância da Justiça do Trabalho, quem julga é um único juiz, chamado juiz singular.
+- ATENÇÃO: O artigo trata apenas da vara do trabalho.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.118` — Art. 118 — Órgãos da Justiça Eleitoral
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 118 indica os órgãos da Justiça Eleitoral: o Tribunal Superior Eleitoral, os Tribunais Regionais Eleitorais, os Juízes Eleitorais e as Juntas Eleitorais.
+- Interpretação principal: A Justiça Eleitoral é o ramo do Judiciário que cuida das eleições: do alistamento dos eleitores à diplomação dos eleitos e aos processos sobre o pleito.
+- ATENÇÃO: A composição dos tribunais eleitorais está nos arts. 119 e 120.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido), DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.119` — Art. 119 — Composição do Tribunal Superior Eleitoral
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 119 estabelece que o Tribunal Superior Eleitoral tem no mínimo sete membros.
+- Interpretação principal: O Tribunal Superior Eleitoral não tem quadro próprio de juízes de carreira.
+- ATENÇÃO: O número sete é mínimo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: advogados de notável saber jurídico e idoneidade…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.120` — Art. 120 — Tribunais Regionais Eleitorais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 120 prevê que cada Estado tenha um Tribunal Regional Eleitoral sediado na capital, e que o Distrito Federal também tenha o seu.
+- Interpretação principal: O tribunal regional segue o modelo do tribunal superior: não tem juízes próprios de carreira, e sim membros vindos de outros ramos do Judiciário e da advocacia.
+- ATENÇÃO: As vagas da advocacia exigem notável saber jurídico e idoneidade moral.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: juízes de direito escolhidos pelo tribunal de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.121` — Art. 121 — Organização e funcionamento da Justiça Eleitoral
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 121 remete à lei complementar a organização e a competência dos órgãos da Justiça Eleitoral: tribunais, juízes de direito e juntas.
+- Interpretação principal: A Justiça Eleitoral depende muito da lei complementar, que define o que cada órgão faz.
+- ATENÇÃO: Os §§ 2º, 3º e 4º têm explicações próprias.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.121:PAR.2` — Art. 121, § 2º — Mandato dos juízes eleitorais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º determina que os juízes dos tribunais eleitorais sirvam por pelo menos dois anos, salvo motivo justificado, e por no máximo dois biênios seguidos.
+- Interpretação principal: Os juízes dos tribunais eleitorais não ficam no cargo por tempo indeterminado.
+- ATENÇÃO: O limite fala em biênios consecutivos.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY, lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.121:PAR.3` — Art. 121, §§ 3º e 4º — Recursos contra decisões eleitorais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º estabelece que não cabe recurso contra as decisões do Tribunal Superior Eleitoral, salvo quando contrariarem a Constituição ou negarem habeas corpus ou mandado de segurança.
+- Interpretação principal: Os parágrafos limitam os recursos no processo eleitoral.
+- ATENÇÃO: As hipóteses de recurso contra os tribunais regionais formam lista fechada, indicada pela palavra somente.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.122` — Art. 122 — Órgãos da Justiça Militar
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 122 indica os órgãos da Justiça Militar: o Superior Tribunal Militar e os Tribunais e Juízes Militares instituídos por lei.
+- Interpretação principal: A Justiça Militar é o ramo especializado do Judiciário que julga crimes militares.
+- ATENÇÃO: A organização da primeira instância da Justiça Militar da União é definida em lei, e não neste artigo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: os tribunais e juízes militares instituídos por…), DUPLICATION(resolvido), DUPLICATION(resolvido), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.123` — Art. 123 — Composição do Superior Tribunal Militar
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 123 estabelece que o Superior Tribunal Militar tem quinze Ministros vitalícios, nomeados pelo Presidente da República depois que o Senado aprova a indicação.
+- Interpretação principal: O tribunal tem composição mista: a maioria é de militares de alta patente, e uma parte é de civis.
+- ATENÇÃO: Para os Ministros militares, o texto não fixa limite de idade; a faixa de trinta e cinco a setenta anos está no parágrafo único, dirigido aos civis.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: advogados de notório saber jurídico e conduta…), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (32)
 
 ### `CF88:ART.83` — Art. 83 — Ausência do País e perda do cargo
 
@@ -508,7 +761,7 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Interpretação principal: Há três níveis na fila.
 - ATENÇÃO: Doença grave e deficiência são definidas na forma da lei.
 - Dependência externa: JURISPRUDENCIA (contexto)
-- Warnings: NEAR_COPY_MICROFIX(o_que_diz: portadores de doença grave ou pessoas com…), EXAMPLE_NUMBER_NOT_IN_TEXT(70), lint JURISPRUDENCE_WORDING_IN_BODY
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: portadores de doença grave ou pessoas com…), NUMBER_FROM_OTHER_DEVICE(70 anos), lint JURISPRUDENCE_WORDING_IN_BODY
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -521,5 +774,181 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: ou tentar frustrar a liquidação regular de…)
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.102:INC.I` — Art. 102, inciso I — Competência originária do Supremo
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance do foro por prerrogativa de função e o momento em…; SENSITIVE_THEME: crimes
+- Ponto jurídico: O inciso I lista as causas que o Supremo Tribunal Federal processa e julga originariamente.
+- Interpretação principal: As alíneas podem ser lidas em grupos.
+- ATENÇÃO: A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade de Ministro de Estado ou de Comandante militar for conexo com o do Presidente, o julgamento cabe ao Senado.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ações contra o conselho nacional de justiça e), NEAR_COPY_MICROFIX(o_que_significa: a revisão criminal e a ação rescisória de), lint JURISPRUDENCE_WORDING_IN_BODY, lint LONG_EXPLANATION
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103` — Art. 103 — Quem pode propor as ações de controle
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O requisito de pertinência temática para certos legitimados é…
+- Ponto jurídico: O art. 103 indica quem tem legitimidade para a ação direta de inconstitucionalidade e para a declaratória de constitucionalidade: o Presidente da República; a Mesa do Senado Federal; a Mesa da Câmara…
+- Interpretação principal: Essas ações não podem ser propostas por qualquer pessoa.
+- ATENÇÃO: O texto não diz se todos os legitimados podem questionar qualquer norma.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: confederação sindical ou entidade de classe de…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103:PAR.1` — Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance do dever de defesa do Advogado-Geral da União é…
+- Ponto jurídico: O § 1º determina que o Procurador-Geral da República seja ouvido antes da decisão nas ações de inconstitucionalidade e, de modo geral, nos processos de competência do Supremo.
+- Interpretação principal: Os dois parágrafos colocam duas figuras diferentes no processo de controle.
+- ATENÇÃO: O § 3º fala em defesa do ato impugnado.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-A:PAR.3` — Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: cassa
+- Ponto jurídico: O § 3º prevê reclamação ao Supremo Tribunal Federal contra ato administrativo ou decisão judicial que contrariar o enunciado vinculante aplicável ou que o aplicar indevidamente.
+- Interpretação principal: A reclamação é o instrumento que dá força prática ao efeito vinculante.
+- ATENÇÃO: A lei pode exigir etapas prévias para a reclamação contra atos da administração.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: outra seja proferida com ou sem a aplicação)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-B` — Art. 103-B — Conselho Nacional de Justiça
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
+- Ponto jurídico: O art. 103-B estabelece que o Conselho Nacional de Justiça tem quinze membros, com mandato de dois anos e uma recondução admitida.
+- Interpretação principal: O Conselho é um órgão do Judiciário que não julga processos.
+- ATENÇÃO: As competências do Conselho (§ 4º) têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cidadãos de notável saber jurídico e reputação…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-B:PAR.4` — Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder regulamentar do Conselho são tema da…; SENSITIVE_THEME: sanções
+- Ponto jurídico: O § 4º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira dos tribunais e o cumprimento, pelos juízes, dos seus deveres funcionais.
+- Interpretação principal: O parágrafo mostra que o Conselho atua em duas frentes.
+- ATENÇÃO: As competências são administrativas e disciplinares.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da competência do tribunal de contas da união)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.105` — Art. 105 — Competências do Superior Tribunal de Justiça
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 105 atribui ao Superior Tribunal de Justiça três tipos de competência.
+- Interpretação principal: O artigo reúne as competências do tribunal em três vias.
+- ATENÇÃO: O recurso especial e o filtro de relevância (inciso III e §§ 2º e 3º) têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.105:INC.III` — Art. 105, inciso III — Recurso especial
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O cabimento de recurso especial contra decisões de turmas…
+- Ponto jurídico: O inciso III atribui ao Superior Tribunal de Justiça o julgamento, por recurso especial, das causas que os Tribunais Regionais Federais e os tribunais dos Estados, do Distrito Federal e dos…
+- Interpretação principal: O recurso especial é o caminho para levar ao Superior Tribunal de Justiça uma questão sobre lei federal.
+- ATENÇÃO: O recurso especial cuida de lei federal; a questão constitucional vai ao Supremo por recurso extraordinário.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.108` — Art. 108 — Competências dos Tribunais Regionais Federais
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 108 atribui aos Tribunais Regionais Federais o julgamento originário, por crimes comuns e de responsabilidade, dos juízes federais da sua área (incluídos os juízes militares e os do trabalho)…
+- Interpretação principal: O tribunal regional tem duas funções.
+- ATENÇÃO: A competência penal originária tem ressalva expressa: os casos da competência da Justiça Eleitoral ficam fora.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109` — Art. 109 — Competências dos juízes federais
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 109 lista as causas que os juízes federais processam e julgam.
+- Interpretação principal: A lógica do artigo é o interesse federal.
+- ATENÇÃO: Os incisos I e IV têm exceções importantes e explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a bordo de navios ou aeronaves ressalvada a)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:INC.I` — Art. 109, inciso I — Causas cíveis de interesse da União
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A competência para causas de sociedades de economia mista e…
+- Ponto jurídico: O inciso I atribui aos juízes federais as causas de que participem, como autoras, rés, assistentes ou oponentes, a União, uma autarquia federal ou uma empresa pública federal.
+- Interpretação principal: O critério é a pessoa que está no processo, e não o assunto.
+- ATENÇÃO: A participação da entidade federal precisa ocorrer em uma das posições listadas.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:INC.IV` — Art. 109, inciso IV — Crimes de competência federal
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O inciso IV atribui aos juízes federais os crimes políticos e as infrações penais praticadas contra bens, serviços ou interesse da União, de suas autarquias ou de suas empresas públicas.
+- Interpretação principal: No campo penal, a Justiça Federal julga o que ofende diretamente a União ou suas entidades.
+- ATENÇÃO: O texto menciona empresas públicas, e não sociedades de economia mista.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: os crimes políticos e as infrações penais…), lint JURISPRUDENCE_WORDING_IN_BODY, lint PARENT_REPETITION
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:PAR.1` — Art. 109, §§ 1º e 2º — Onde propor as ações da União
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A aplicação do § 2º a autarquias federais é tema da camada…
+- Ponto jurídico: O § 1º determina que as causas em que a União for autora sejam propostas na seção judiciária do domicílio da outra parte.
+- Interpretação principal: Os dois parágrafos protegem a parte que litiga contra a União.
+- ATENÇÃO: No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: as causas em que a união for autora)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:PAR.5` — Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os requisitos aplicados para deferir o deslocamento de…
+- Ponto jurídico: O § 5º permite que, em caso de violação grave de direitos humanos, o Procurador-Geral da República peça ao Superior Tribunal de Justiça, em qualquer fase do inquérito ou do processo, o deslocamento…
+- Interpretação principal: O parágrafo cria uma via excepcional para levar à Justiça Federal casos que, pelas regras comuns de competência, não estariam nela.
+- ATENÇÃO: O texto exige grave violação de direitos humanos e a finalidade de cumprir obrigações de tratados.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de direitos humanos o procurador geral da…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.125` — Art. 125 — Justiça dos Estados
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 125 determina que os Estados organizem sua Justiça, observados os princípios da Constituição.
+- Interpretação principal: A Justiça estadual é organizada por cada Estado, mas dentro dos limites da Constituição Federal.
+- ATENÇÃO: O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadual (§§ 3º a 5º) têm explicações próprias.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.125:PAR.3` — Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os crimes abrangidos pela ressalva do júri e a distribuição…; SENSITIVE_THEME: crimes
+- Ponto jurídico: O § 3º permite que a lei estadual, por proposta do Tribunal de Justiça, crie a Justiça Militar estadual.
+- Interpretação principal: A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.
+- ATENÇÃO: A ressalva do júri vale quando a vítima é civil; a delimitação dos crimes abrangidos é da lei e da camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: crimes militares definidos em lei e as ações), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

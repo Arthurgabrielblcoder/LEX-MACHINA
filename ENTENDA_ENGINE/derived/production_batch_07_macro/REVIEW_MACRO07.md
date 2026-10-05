@@ -2571,3 +2571,2374 @@ O inciso III remete à legislação de responsabilidade fiscal e de improbidade:
 
 ---
 
+## CF88:ART.101
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 101 — Composição do Supremo Tribunal Federal
+
+- **TARGET:** `CF88:ART.101` · `ENTENDA/CF88:ART.101/BASE/1`
+- **DISPLAY TITLE:** Art. 101 — Composição do Supremo Tribunal Federal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1825 bytes · referências 0
+- **Motivo da seleção:** Visao geral: numero de Ministros, requisitos e forma de escolha do Supremo Tribunal Federal.
+
+**O QUE DIZ**
+
+O art. 101 estabelece que o Supremo Tribunal Federal tem onze Ministros. Eles são escolhidos entre cidadãos que tenham mais de trinta e cinco e menos de setenta anos, e que tenham notável saber jurídico e reputação ilibada. O parágrafo único determina que a nomeação cabe ao Presidente da República, depois que a maioria absoluta do Senado Federal aprovar a escolha.
+
+**O QUE SIGNIFICA**
+
+O Supremo é o órgão de cúpula do Judiciário, e o artigo define quem pode integrá-lo e como se chega lá.
+
+Os requisitos são de idade e de qualidades pessoais. O texto não exige que o escolhido seja juiz de carreira: basta ser cidadão com notável saber jurídico e reputação sem manchas.
+
+A escolha envolve dois Poderes. O Presidente indica e nomeia, mas a nomeação só ocorre depois da aprovação pelo Senado, por maioria absoluta.
+
+**EXEMPLO PRÁTICO**
+
+Abre-se uma vaga no Supremo. O Presidente indica um jurista de cinquenta anos, que passa por sabatina e votação no Senado. Com a aprovação da maioria absoluta dos senadores, o Presidente assina a nomeação.
+
+**ATENÇÃO**
+
+O artigo exige apenas cidadania; outra regra da Constituição reserva o cargo de Ministro do Supremo a brasileiros natos (art. 12, § 3º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Notável saber jurídico*: conhecimento do Direito reconhecido como acima da média.
+- *Reputação ilibada*: vida pública e privada sem fatos que comprometam a honra da pessoa.
+- *Maioria absoluta*: mais da metade de todos os membros da Casa, e não só dos presentes.
+
+**CAMADA EXTERNA**
+
+- O procedimento de sabatina no Senado fica no regimento da Casa, na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de trinta e cinco e menos de setenta)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.102
+
+Sem explicação própria: 25 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 102 — Competências do Supremo Tribunal Federal
+
+- **TARGET:** `CF88:ART.102` · `ENTENDA/CF88:ART.102/BASE/1`
+- **DISPLAY TITLE:** Art. 102 — Competências do Supremo Tribunal Federal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 297 palavras · 2526 bytes · referências 0
+- **Motivo da seleção:** Visao geral: guarda da Constituicao e as tres vias de atuacao do Supremo (originaria, recurso ordinario, recurso extraordinario).
+
+**O QUE DIZ**
+
+O art. 102 atribui ao Supremo Tribunal Federal, como função principal, a guarda da Constituição. Entre outras atribuições, ele julga causas originariamente (inciso I), julga recursos ordinários em casos específicos (inciso II) e julga o recurso extraordinário contra decisões que tocam a Constituição (inciso III). Os parágrafos tratam da arguição de descumprimento de preceito fundamental, do efeito das decisões nas ações de controle e da repercussão geral.
+
+**O QUE SIGNIFICA**
+
+O artigo mostra as três portas de entrada de um processo no Supremo.
+
+Na competência originária, a causa começa e termina no próprio tribunal: é o caso das ações de controle de constitucionalidade e dos processos contra altas autoridades.
+
+No recurso ordinário, o Supremo funciona como segunda instância de algumas decisões dos Tribunais Superiores, como as que negam habeas corpus ou mandado de segurança, e de casos de crime político.
+
+No recurso extraordinário, o Supremo revisa decisões finais de outros tribunais quando está em jogo a interpretação da Constituição. A arguição de descumprimento de preceito fundamental é outra ação de controle, apreciada na forma da lei.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei estadual é questionada diretamente no Supremo por ação direta: competência originária. Em outro processo, uma pessoa perde no tribunal de origem e alega que a decisão contraria a Constituição: o caminho é o recurso extraordinário.
+
+**ATENÇÃO**
+
+O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria. O alcance de cada competência e as condições de admissão dos recursos são definidos também pela lei processual e pela camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Competência originária*: processo que começa diretamente no tribunal, sem passar por instância inferior.
+- *Recurso extraordinário*: recurso ao Supremo contra decisão final que envolve questão constitucional.
+- *Repercussão geral*: requisito de relevância da questão constitucional para que o recurso extraordinário seja examinado.
+- *Preceito fundamental*: norma da Constituição considerada essencial para a ordem constitucional.
+
+**CAMADA EXTERNA**
+
+- A lei que regula a arguição de descumprimento de preceito fundamental e as leis processuais das ações de controle ficam na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 102, inciso I — Competência originária do Supremo
+
+- **TARGET:** `CF88:ART.102:INC.I` · `ENTENDA/CF88:ART.102:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 102, inciso I — Competência originária do Supremo
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.102`, `CF88:ART.102:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 354 palavras · 2752 bytes · referências 2
+- **Motivo da seleção:** Item: mapa das causas que comecam no Supremo, agrupadas por tipo.
+
+**O QUE DIZ**
+
+O inciso I lista as causas que o Supremo Tribunal Federal processa e julga originariamente. Entre elas estão as ações de controle de constitucionalidade e o pedido de medida cautelar nessas ações. Há também os processos penais contra as mais altas autoridades, com a ressalva do art. 52, I. Completam a lista habeas corpus, mandado de segurança e habeas data contra certos atos e litígios com Estados estrangeiros. Há ainda conflitos entre a União e os Estados, extradição, reclamação, mandado de injunção em casos indicados e ações contra o Conselho Nacional de Justiça e o Conselho Nacional do Ministério Público.
+
+**O QUE SIGNIFICA**
+
+As alíneas podem ser lidas em grupos.
+
+O primeiro grupo é o controle de constitucionalidade: a ação direta de inconstitucionalidade, a ação declaratória de constitucionalidade e o pedido cautelar nessas ações.
+
+O segundo grupo é o foro por prerrogativa de função: o Presidente, o Vice, os parlamentares federais, os Ministros do próprio tribunal e o Procurador-Geral da República, nas infrações penais comuns, e outras autoridades também nos crimes de responsabilidade, ressalvado o julgamento pelo Senado previsto no art. 52, I.
+
+O terceiro grupo envolve a Federação e as relações exteriores: conflitos entre entes federativos, litígios com Estado estrangeiro e extradição.
+
+Há ainda instrumentos para proteger a autoridade do próprio tribunal, como a reclamação, a revisão criminal e a ação rescisória de seus julgados.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado e a União discordam sobre a divisão de receitas e o conflito ameaça a relação federativa. A ação é proposta diretamente no Supremo, que a julga em instância única.
+
+**ATENÇÃO**
+
+A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade de Ministro de Estado ou de Comandante militar for conexo com o do Presidente, o julgamento cabe ao Senado. O alcance exato de cada alínea depende também da lei processual e da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Foro por prerrogativa de função*: regra que leva o julgamento de certas autoridades a um tribunal específico.
+- *Reclamação*: ação para preservar a competência de um tribunal ou garantir que suas decisões sejam cumpridas.
+- *Extradição*: entrega de uma pessoa a outro país que a solicitou para processo ou cumprimento de pena.
+
+**CAMADA EXTERNA**
+
+- O alcance do foro por prerrogativa de função e o momento em que ele se aplica são temas da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ações contra o conselho nacional de justiça e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a revisão criminal e a ação rescisória de); LONG_EXPLANATION (*: 354 palavras (limite 400))
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 102, inciso III — Recurso extraordinário
+
+- **TARGET:** `CF88:ART.102:INC.III` · `ENTENDA/CF88:ART.102:INC.III/BASE/1`
+- **DISPLAY TITLE:** Art. 102, inciso III — Recurso extraordinário
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.102`, `CF88:ART.102:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 224 palavras · 1897 bytes · referências 0
+- **Motivo da seleção:** Item: hipoteses de cabimento do recurso extraordinario.
+
+**O QUE DIZ**
+
+O inciso III atribui ao Supremo Tribunal Federal o julgamento, por recurso extraordinário, das causas decididas em única ou última instância. O recurso cabe quando a decisão contrariar dispositivo da Constituição, declarar inconstitucional tratado ou lei federal, julgar válida lei ou ato de governo local contestado diante da Constituição ou julgar válida lei local contestada diante de lei federal.
+
+**O QUE SIGNIFICA**
+
+O recurso extraordinário é o caminho para levar ao Supremo uma questão constitucional surgida em qualquer processo.
+
+Há duas exigências de partida. A decisão precisa ser de única ou última instância, ou seja, sem outro recurso comum disponível. E a questão discutida precisa se encaixar em uma das quatro alíneas.
+
+As alíneas cobrem a violação direta da Constituição, a declaração de inconstitucionalidade de norma federal e dois conflitos entre normas locais e normas superiores.
+
+**EXEMPLO PRÁTICO**
+
+Um tribunal estadual aplica uma lei municipal que um contribuinte considera contrária à Constituição. Esgotados os recursos comuns, o contribuinte pode interpor recurso extraordinário com base na alínea c.
+
+**ATENÇÃO**
+
+Além das alíneas, o recorrente precisa demonstrar a repercussão geral da questão (§ 3º, com explicação própria). Os demais requisitos de admissão ficam na lei processual e na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Última instância*: decisão contra a qual não cabe mais recurso comum.
+- *Repercussão geral*: requisito de relevância da questão constitucional, exigido no § 3º.
+- *Governo local*: Estados, Distrito Federal e Municípios, em oposição à União.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: julgar válida lei ou ato de governo local)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 102, § 2º — Efeito vinculante nas ações de controle
+
+- **TARGET:** `CF88:ART.102:PAR.2` · `ENTENDA/CF88:ART.102:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 102, § 2º — Efeito vinculante nas ações de controle
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.102`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 2076 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: eficacia contra todos e efeito vinculante das decisoes definitivas de merito nas acoes diretas.
+
+**O QUE DIZ**
+
+O § 2º estabelece que, na ação direta de inconstitucionalidade e na declaratória de constitucionalidade, a decisão definitiva de mérito do Supremo tem eficácia contra todos e efeito vinculante. Esse efeito alcança os demais órgãos do Poder Judiciário e a administração pública direta e indireta da União, dos Estados e dos Municípios.
+
+**O QUE SIGNIFICA**
+
+Nessas ações, o Supremo não decide um caso entre duas partes, mas a validade de uma norma em tese. Por isso a decisão vale para todos.
+
+O efeito vinculante significa que juízes, tribunais e órgãos da administração ficam obrigados a seguir a decisão. Um juiz não pode aplicar uma lei que o Supremo declarou inconstitucional nessas ações.
+
+O texto exige que a decisão seja definitiva e de mérito: decisões provisórias ou que não examinam o conteúdo da norma não estão descritas neste parágrafo.
+
+**EXEMPLO PRÁTICO**
+
+O Supremo julga procedente uma ação direta contra uma lei estadual de tributos. A partir daí, a secretaria de fazenda do Estado não pode mais cobrar com base nessa lei, e os juízes não podem aplicá-la.
+
+**ATENÇÃO**
+
+O texto não menciona o Poder Legislativo entre os destinatários do efeito vinculante. Questões como o alcance desse efeito, o momento em que começa a valer e sua aplicação a outras ações de controle pertencem à camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Decisão de mérito*: decisão que examina o conteúdo da questão, e não só aspectos formais do processo.
+- *Eficácia contra todos*: efeito que alcança qualquer pessoa, e não apenas as partes do processo.
+- *Efeito vinculante*: obrigação de os órgãos indicados seguirem a decisão.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota este parágrafo com controle de constitucionalidade (Vide ADIN 3392): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 102, § 3º — Repercussão geral no recurso extraordinário
+
+- **TARGET:** `CF88:ART.102:PAR.3` · `ENTENDA/CF88:ART.102:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 102, § 3º — Repercussão geral no recurso extraordinário
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.102`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1618 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: requisito da repercussao geral e quorum de recusa.
+
+**O QUE DIZ**
+
+O § 3º exige que, no recurso extraordinário, o recorrente demonstre a repercussão geral das questões constitucionais discutidas, nos termos da lei. Com isso o Tribunal examina se admite o recurso, e só pode recusá-lo pela manifestação de dois terços de seus membros.
+
+**O QUE SIGNIFICA**
+
+Não basta que a questão seja constitucional: o recorrente precisa demonstrar a repercussão geral. O parágrafo não define esse conceito; ele remete à lei.
+
+Com base nessa demonstração, o tribunal decide se o recurso será examinado.
+
+A recusa tem um quórum elevado: dois terços dos Ministros.
+
+**EXEMPLO PRÁTICO**
+
+Um aposentado recorre ao Supremo discutindo uma regra de cálculo de benefício que afeta milhares de segurados. Ele demonstra que a questão alcança muitas pessoas. Para recusar o recurso por falta de repercussão geral, seriam necessários os votos de dois terços dos Ministros.
+
+**ATENÇÃO**
+
+Os critérios do que tem repercussão geral estão na lei processual, e não neste parágrafo. A aplicação desses critérios a cada tema fica na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Repercussão geral*: requisito de relevância da questão constitucional, cujos critérios estão na lei processual.
+- *Recorrente*: quem apresenta o recurso.
+
+**CAMADA EXTERNA**
+
+- Os critérios legais da repercussão geral ficam na lei processual, na camada de legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (exemplo_pratico: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: lo pela manifestação de dois terços de seus)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.103
+
+Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 103 — Quem pode propor as ações de controle
+
+- **TARGET:** `CF88:ART.103` · `ENTENDA/CF88:ART.103/BASE/1`
+- **DISPLAY TITLE:** Art. 103 — Quem pode propor as ações de controle
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2180 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lista dos legitimados para a acao direta e a acao declaratoria e o mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 103 indica quem tem legitimidade para a ação direta de inconstitucionalidade e para a declaratória de constitucionalidade: o Presidente da República; a Mesa do Senado Federal; a Mesa da Câmara dos Deputados; a Mesa de Assembleia Legislativa ou da Câmara Legislativa do Distrito Federal; o Governador de Estado ou do Distrito Federal; o Procurador-Geral da República; o Conselho Federal da Ordem dos Advogados do Brasil; partido político com representação no Congresso Nacional; e confederação sindical ou entidade de classe de âmbito nacional. Os parágrafos tratam da oitiva do Procurador-Geral, da omissão inconstitucional e da defesa da norma pelo Advogado-Geral da União.
+
+**O QUE SIGNIFICA**
+
+Essas ações não podem ser propostas por qualquer pessoa. A lista é fechada e reúne autoridades e entidades com representação política ou social.
+
+O cidadão comum não está na lista. Se uma pessoa entende que uma lei é inconstitucional, pode discutir isso no seu próprio processo, ou pedir a um dos legitimados que proponha a ação.
+
+A lista mistura órgãos federais, estaduais e da sociedade civil, como partidos e entidades de classe nacionais.
+
+**EXEMPLO PRÁTICO**
+
+Uma entidade nacional de médicos considera inconstitucional uma lei federal sobre a profissão. Como entidade de classe de âmbito nacional, ela pode propor a ação direta no Supremo. Um médico, sozinho, não pode.
+
+**ATENÇÃO**
+
+O texto não diz se todos os legitimados podem questionar qualquer norma. A exigência de relação entre o tema da norma e as finalidades de quem propõe a ação é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Legitimado*: quem a Constituição autoriza a propor determinada ação.
+- *Mesa*: órgão que dirige os trabalhos de uma Casa legislativa.
+- *Entidade de classe*: associação que representa uma categoria profissional ou econômica.
+
+**CAMADA EXTERNA**
+
+- O requisito de pertinência temática para certos legitimados é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: confederação sindical ou entidade de classe de âmbito)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
+
+- **TARGET:** `CF88:ART.103:PAR.1` · `ENTENDA/CF88:ART.103:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.103:PAR.3`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.103`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1782 bytes · referências 0
+- **Motivo da seleção:** Bloco: papeis do Procurador-Geral da Republica (§ 1º) e do Advogado-Geral da Uniao (§ 3º) no controle abstrato.
+
+**O QUE DIZ**
+
+O § 1º determina que o Procurador-Geral da República seja ouvido antes da decisão nas ações de inconstitucionalidade e, de modo geral, nos processos de competência do Supremo. O § 3º prevê que, quando o Supremo examinar em tese a inconstitucionalidade de norma legal ou ato normativo, o Advogado-Geral da União será citado antes para defender o ato ou texto questionado.
+
+**O QUE SIGNIFICA**
+
+Os dois parágrafos colocam duas figuras diferentes no processo de controle.
+
+O Procurador-Geral da República atua como fiscal da ordem jurídica: dá seu parecer antes da decisão, em todos os processos do Supremo, mesmo quando não é parte.
+
+O Advogado-Geral da União recebe o papel de defensor da norma questionada. Assim, a ação não tramita só com o lado que ataca a lei.
+
+**EXEMPLO PRÁTICO**
+
+Um partido propõe ação contra uma lei federal. O Advogado-Geral da União é citado para apresentar a defesa da lei, e o Procurador-Geral da República emite parecer antes do julgamento.
+
+**ATENÇÃO**
+
+O § 3º fala em defesa do ato impugnado. O texto não resolve se o Advogado-Geral pode deixar de defender a norma; esse tema pertence à camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Em tese*: de forma abstrata, sem um caso concreto entre partes.
+- *Citação*: ato que chama alguém a participar do processo.
+- *Impugnado*: questionado, atacado no processo.
+
+**CAMADA EXTERNA**
+
+- O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 103, § 2º — Inconstitucionalidade por omissão
+
+- **TARGET:** `CF88:ART.103:PAR.2` · `ENTENDA/CF88:ART.103:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 103, § 2º — Inconstitucionalidade por omissão
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1655 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: consequencia da declaracao de inconstitucionalidade por omissao e prazo para orgao administrativo.
+
+**O QUE DIZ**
+
+O § 2º estabelece que, declarada a inconstitucionalidade por omissão de medida necessária para tornar efetiva uma norma constitucional, o Poder competente recebe ciência para adotar as providências necessárias. Se a providência couber a órgão administrativo, ele deve adotá-la em trinta dias.
+
+**O QUE SIGNIFICA**
+
+Algumas normas da Constituição só funcionam plenamente depois que o legislador ou a administração fazem a sua parte. Quando isso não acontece, há omissão inconstitucional.
+
+O parágrafo trata da consequência da decisão que reconhece essa omissão. A Constituição distingue dois casos.
+
+Quando a medida cabe a um Poder, a decisão dá ciência para que ele tome as providências. Quando cabe a órgão administrativo, há um prazo certo: trinta dias.
+
+**EXEMPLO PRÁTICO**
+
+A Constituição prevê um direito que depende de regulamento de um órgão administrativo. Reconhecida a omissão, o órgão é comunicado e tem trinta dias para editar o ato necessário.
+
+**ATENÇÃO**
+
+O texto não fixa prazo para o Poder Legislativo. O que acontece quando a omissão continua e quais medidas o Supremo pode adotar são temas da lei e da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Omissão inconstitucional*: falta de uma medida que a Constituição exige para que uma norma produza efeitos.
+- *Órgão administrativo*: órgão da administração pública que executa tarefas do Estado, sem legislar nem julgar.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.103-A
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 103-A — Enunciado com efeito vinculante do Supremo
+
+- **TARGET:** `CF88:ART.103-A` · `ENTENDA/CF88:ART.103-A/BASE/1`
+- **DISPLAY TITLE:** Art. 103-A — Enunciado com efeito vinculante do Supremo
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 298 palavras · 2565 bytes · referências 0
+- **Motivo da seleção:** Visao geral: requisitos, objeto, legitimados e efeitos do enunciado vinculante aprovado pelo Supremo.
+
+**O QUE DIZ**
+
+O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros um enunciado com efeito vinculante, depois de reiteradas decisões sobre matéria constitucional. O efeito alcança os demais órgãos do Judiciário e a administração pública direta e indireta, a partir da publicação na imprensa oficial. O tribunal também pode revisar ou cancelar o enunciado, na forma da lei. O § 1º define o objeto do enunciado, o § 2º indica quem pode pedir sua aprovação, revisão ou cancelamento, e o § 3º prevê a reclamação.
+
+**O QUE SIGNIFICA**
+
+O artigo cria um instrumento para fixar, de forma obrigatória, a interpretação do Supremo sobre um tema constitucional já decidido muitas vezes.
+
+Há três requisitos: decisões reiteradas sobre a matéria, aprovação por dois terços dos Ministros e publicação oficial. Só a partir da publicação o efeito vinculante começa.
+
+O objeto é a validade, a interpretação e a eficácia de normas determinadas, quando há controvérsia atual que cause grave insegurança jurídica e multiplicação de processos sobre a mesma questão.
+
+Os legitimados para provocar o tribunal são os mesmos que podem propor a ação direta de inconstitucionalidade, sem prejuízo do que a lei estabelecer.
+
+**EXEMPLO PRÁTICO**
+
+Depois de julgar centenas de casos iguais sobre uma cobrança feita por prefeituras, o Supremo aprova um enunciado vinculante. A partir da publicação, juízes e prefeituras precisam seguir aquele entendimento.
+
+**ATENÇÃO**
+
+Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca ele aparece com o nome próprio que a Constituição lhe dá. O efeito vinculante alcança Judiciário e administração; o texto não inclui o Poder Legislativo na sua função de legislar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *De ofício*: por iniciativa do próprio tribunal, sem pedido de ninguém.
+- *Efeito vinculante*: obrigação de os órgãos indicados seguirem o enunciado.
+- *Insegurança jurídica*: incerteza sobre qual regra vale, causada por decisões divergentes.
+
+**CAMADA EXTERNA**
+
+- Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). A fonte canônica remete à Lei n. 11.417, de 2006, que disciplina o procedimento, na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a interpretação e a eficácia de normas determinadas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
+
+- **TARGET:** `CF88:ART.103-A:PAR.3` · `ENTENDA/CF88:ART.103-A:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103-A`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1781 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: cabimento e efeitos da reclamacao ao Supremo contra ato ou decisao que contraria o enunciado.
+
+**O QUE DIZ**
+
+O § 3º prevê reclamação ao Supremo Tribunal Federal contra ato administrativo ou decisão judicial que contrariar o enunciado vinculante aplicável ou que o aplicar indevidamente. Se julgar a reclamação procedente, o Supremo anula o ato administrativo ou cassa a decisão judicial e determina que outra seja proferida, com ou sem a aplicação do enunciado, conforme o caso.
+
+**O QUE SIGNIFICA**
+
+A reclamação é o instrumento que dá força prática ao efeito vinculante.
+
+Ela cabe em duas situações: quando o ato ou a decisão ignora um enunciado que deveria ser aplicado e quando aplica um enunciado a um caso a que ele não se refere.
+
+O Supremo não decide o caso no lugar da autoridade. Ele anula ou cassa o ato e manda que outro seja feito, agora de acordo com o enunciado.
+
+**EXEMPLO PRÁTICO**
+
+Um órgão público nega um pedido contrariando um enunciado vinculante. O interessado apresenta reclamação ao Supremo, que anula a negativa e determina que o órgão decida de novo, seguindo o enunciado.
+
+**ATENÇÃO**
+
+A lei pode exigir etapas prévias para a reclamação contra atos da administração. Esses requisitos estão fora deste parágrafo e ficam na camada de legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Reclamação*: ação para garantir que decisões e enunciados do tribunal sejam respeitados.
+- *Cassar*: anular uma decisão judicial.
+
+**CAMADA EXTERNA**
+
+- Eventuais requisitos legais prévios à reclamação contra ato administrativo ficam na Lei n. 11.417, de 2006, na camada de legislação correlata.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: outra seja proferida com ou sem a aplicação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.103-B
+
+Sem explicação própria: 30 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 103-B — Conselho Nacional de Justiça
+
+- **TARGET:** `CF88:ART.103-B` · `ENTENDA/CF88:ART.103-B/BASE/1`
+- **DISPLAY TITLE:** Art. 103-B — Conselho Nacional de Justiça
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 275 palavras · 2148 bytes · referências 0
+- **Motivo da seleção:** Visao geral: composicao, mandato, presidencia, nomeacao, corregedoria e ouvidorias do Conselho Nacional de Justica.
+
+**O QUE DIZ**
+
+O art. 103-B estabelece que o Conselho Nacional de Justiça tem quinze membros, com mandato de dois anos e uma recondução admitida. A composição reúne, entre outros, o Presidente do Supremo Tribunal Federal, magistrados de vários ramos e instâncias, membros do Ministério Público, dois advogados e dois cidadãos de notável saber jurídico e reputação ilibada, indicados pela Câmara e pelo Senado. Os parágrafos tratam da presidência, da nomeação, das competências, do Ministro-Corregedor, de quem oficia junto ao Conselho e das ouvidorias de justiça.
+
+**O QUE SIGNIFICA**
+
+O Conselho é um órgão do Judiciário que não julga processos. Sua função é controlar a atuação administrativa e financeira dos tribunais e o cumprimento dos deveres dos juízes.
+
+A composição mistura magistrados com pessoas de fora da magistratura, como advogados, membros do Ministério Público e cidadãos indicados pelo Congresso.
+
+O Presidente do Supremo preside o Conselho. Os demais membros são nomeados pelo Presidente da República, depois de aprovação pela maioria absoluta do Senado. Se as indicações não forem feitas no prazo fixado em lei, a escolha passa ao Supremo.
+
+O Ministro do Superior Tribunal de Justiça atua como Ministro-Corregedor, recebendo reclamações e fazendo inspeções.
+
+**EXEMPLO PRÁTICO**
+
+Um cidadão se queixa da demora injustificada de um juiz. Ele pode apresentar reclamação ao Conselho, que tem competência para apurar o cumprimento dos deveres funcionais.
+
+**ATENÇÃO**
+
+As competências do Conselho (§ 4º) têm explicação própria. O texto não dá ao Conselho poder de rever o conteúdo de decisões judiciais; a atuação é administrativa e disciplinar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Recondução*: nova nomeação da mesma pessoa para outro mandato seguido.
+- *Corregedor*: autoridade que fiscaliza a atuação de juízes e serviços judiciários.
+- *Ouvidoria*: canal para receber reclamações e denúncias do público.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cidadãos de notável saber jurídico e reputação ilibada)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça
+
+- **TARGET:** `CF88:ART.103-B:PAR.4` · `ENTENDA/CF88:ART.103-B:PAR.4/BASE/1`
+- **DISPLAY TITLE:** Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103-B`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 2182 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: controle administrativo, financeiro e disciplinar e as atribuicoes listadas nos incisos.
+
+**O QUE DIZ**
+
+O § 4º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira dos tribunais e o cumprimento, pelos juízes, dos seus deveres funcionais. O Estatuto da Magistratura pode lhe dar outras atribuições. Entre as listadas nos incisos estão zelar pela autonomia do Judiciário, expedir atos regulamentares e apreciar a legalidade de atos administrativos dos tribunais. Também recebe reclamações, aplica sanções administrativas com ampla defesa, revê processos disciplinares julgados há menos de um ano, representa ao Ministério Público e elabora relatórios estatísticos e anuais.
+
+**O QUE SIGNIFICA**
+
+O parágrafo mostra que o Conselho atua em duas frentes.
+
+Na frente administrativa, ele controla a gestão e as finanças do Judiciário, pode rever atos administrativos dos tribunais para garantir o cumprimento da lei e expedir regulamentos dentro da sua competência, sem prejuízo da competência do Tribunal de Contas da União.
+
+Na frente disciplinar, recebe reclamações, pode avocar processos disciplinares, aplicar sanções e rever punições recentes, sem prejuízo da competência disciplinar dos próprios tribunais.
+
+Os relatórios semestral e anual dão transparência ao funcionamento do Judiciário.
+
+**EXEMPLO PRÁTICO**
+
+Um tribunal estadual nomeia servidores sem concurso para cargos que o exigem. O Conselho pode examinar a legalidade desses atos e desconstituí-los, por respeito ao art. 37.
+
+**ATENÇÃO**
+
+As competências são administrativas e disciplinares. O texto não autoriza o Conselho a julgar processos judiciais nem a rever o conteúdo de sentenças.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Avocar*: trazer para si um processo que estava com outro órgão.
+- *Deveres funcionais*: obrigações ligadas ao exercício do cargo.
+- *Ato regulamentar*: norma administrativa que detalha como algo deve ser feito.
+
+**CAMADA EXTERNA**
+
+- Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da competência do tribunal de contas da união)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.104
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 104 — Composição do Superior Tribunal de Justiça
+
+- **TARGET:** `CF88:ART.104` · `ENTENDA/CF88:ART.104/BASE/1`
+- **DISPLAY TITLE:** Art. 104 — Composição do Superior Tribunal de Justiça
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2018 bytes · referências 0
+- **Motivo da seleção:** Visao geral: numero minimo de Ministros, requisitos, nomeacao e origem das vagas do Superior Tribunal de Justica.
+
+**O QUE DIZ**
+
+O art. 104 estabelece que o Superior Tribunal de Justiça tem no mínimo trinta e três Ministros. Eles são nomeados pelo Presidente da República entre brasileiros que tenham mais de trinta e cinco e menos de setenta anos, notável saber jurídico e reputação ilibada, depois que a maioria absoluta do Senado aprova a escolha. Um terço das vagas vem dos Tribunais Regionais Federais, um terço dos Tribunais de Justiça e um terço, em partes iguais e de forma alternada, da advocacia e do Ministério Público.
+
+**O QUE SIGNIFICA**
+
+O artigo combina dois elementos: um número mínimo de Ministros e uma regra de origem das vagas.
+
+O número trinta e três é um piso, e não um total fixo.
+
+As vagas são divididas em três partes. Duas vêm da magistratura de segundo grau: juízes dos Tribunais Regionais Federais e desembargadores dos Tribunais de Justiça, indicados em lista tríplice feita pelo próprio Superior Tribunal de Justiça. A terceira parte vem de fora da magistratura: advogados e membros do Ministério Público, que se alternam e são indicados na forma do art. 94.
+
+Como no Supremo, a nomeação depende de aprovação do Senado por maioria absoluta.
+
+**EXEMPLO PRÁTICO**
+
+Abre-se uma vaga reservada aos desembargadores estaduais. O Superior Tribunal de Justiça forma uma lista com três nomes, o Presidente escolhe um deles e o Senado aprova a indicação antes da nomeação.
+
+**ATENÇÃO**
+
+Diferentemente do art. 101, aqui o texto exige que o escolhido seja brasileiro. A forma de escolha nas vagas da advocacia e do Ministério Público segue o art. 94.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lista tríplice*: lista com três nomes, da qual a autoridade escolhe um.
+- *Desembargador*: juiz que integra um Tribunal de Justiça.
+- *Reputação ilibada*: vida pública e privada sem fatos que comprometam a honra da pessoa.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de trinta e cinco e menos de setenta); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: desembargadores dos tribunais de justiça indicados em lista)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.105
+
+Sem explicação própria: 29 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 105 — Competências do Superior Tribunal de Justiça
+
+- **TARGET:** `CF88:ART.105` · `ENTENDA/CF88:ART.105/BASE/1`
+- **DISPLAY TITLE:** Art. 105 — Competências do Superior Tribunal de Justiça
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 322 palavras · 2375 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia originaria, recurso ordinario, recurso especial e orgaos junto ao tribunal.
+
+**O QUE DIZ**
+
+O art. 105 atribui ao Superior Tribunal de Justiça três tipos de competência. Entre outras, ele julga originariamente causas como processos penais contra Governadores e outras autoridades, conflitos de competência entre tribunais (ressalvada a competência do Supremo), homologação de sentenças estrangeiras e conflitos entre entes federativos sobre os tributos dos arts. 156-A e 195, V (inciso I). Julga recursos ordinários em casos específicos (inciso II) e o recurso especial (inciso III). O § 1º indica os órgãos que funcionam junto ao tribunal, e os §§ 2º e 3º tratam do filtro de relevância do recurso especial.
+
+**O QUE SIGNIFICA**
+
+O artigo reúne as competências do tribunal em três vias.
+
+Na competência originária, as causas começam no próprio tribunal: é o caso do foro de Governadores nos crimes comuns e de outras autoridades estaduais e federais, ressalvada em alguns casos a competência da Justiça Eleitoral.
+
+No recurso ordinário, o tribunal revisa decisões de tribunais de segundo grau que negam habeas corpus ou mandado de segurança, e causas entre Estado estrangeiro e Município ou pessoa residente no país. Já o habeas corpus originário tem ressalva em favor da Justiça Eleitoral.
+
+No recurso especial, revisa decisões de tribunais que contrariam a lei federal ou divergem entre si.
+
+Junto ao tribunal funcionam a escola nacional de formação de magistrados e o Conselho da Justiça Federal, que supervisiona a Justiça Federal na forma da lei.
+
+**EXEMPLO PRÁTICO**
+
+Um Governador é acusado de crime comum. O processo não começa em vara criminal: corre diretamente no Superior Tribunal de Justiça, por força do inciso I.
+
+**ATENÇÃO**
+
+O recurso especial e o filtro de relevância (inciso III e §§ 2º e 3º) têm explicação própria. Várias alíneas do inciso I têm ressalvas, como a competência da Justiça Eleitoral e a do Supremo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Conflito de competência*: disputa entre órgãos judiciais sobre quem deve julgar uma causa.
+- *Homologação*: ato que reconhece no Brasil os efeitos de uma decisão estrangeira.
+- *Exequatur*: autorização para cumprir no Brasil um pedido de justiça estrangeira.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 105, inciso III — Recurso especial
+
+- **TARGET:** `CF88:ART.105:INC.III` · `ENTENDA/CF88:ART.105:INC.III/BASE/1`
+- **DISPLAY TITLE:** Art. 105, inciso III — Recurso especial
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.105`, `CF88:ART.105:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 246 palavras · 1970 bytes · referências 0
+- **Motivo da seleção:** Item: hipoteses de cabimento do recurso especial.
+
+**O QUE DIZ**
+
+O inciso III atribui ao Superior Tribunal de Justiça o julgamento, por recurso especial, das causas que os Tribunais Regionais Federais e os tribunais dos Estados, do Distrito Federal e dos Territórios julgaram em única ou última instância. O recurso cabe quando a decisão contrariar tratado ou lei federal ou negar sua vigência, quando julgar válido ato de governo local contestado diante de lei federal, ou quando interpretar lei federal de modo diferente de outro tribunal.
+
+**O QUE SIGNIFICA**
+
+O recurso especial é o caminho para levar ao Superior Tribunal de Justiça uma questão sobre lei federal.
+
+Há duas exigências de partida. A decisão precisa vir de um tribunal de segundo grau, e não de juiz de primeira instância ou de turma de juizado. E a questão precisa se encaixar em uma das três alíneas.
+
+A alínea c mostra a função de uniformizar: quando dois tribunais leem a mesma lei federal de formas diferentes, o recurso permite fixar uma leitura única.
+
+**EXEMPLO PRÁTICO**
+
+O Tribunal de Justiça de um Estado interpreta uma regra do Código Civil de um modo, e o de outro Estado, de modo oposto. A parte que perdeu pode interpor recurso especial com base na divergência.
+
+**ATENÇÃO**
+
+O recurso especial cuida de lei federal; a questão constitucional vai ao Supremo por recurso extraordinário. A admissão depende também do filtro de relevância dos §§ 2º e 3º, com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Negar vigência*: deixar de aplicar uma lei que deveria ser aplicada.
+- *Divergência*: diferença de interpretação entre tribunais sobre a mesma norma.
+
+**CAMADA EXTERNA**
+
+- O cabimento de recurso especial contra decisões de turmas recursais de juizados é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 105, §§ 2º e 3º — Relevância no recurso especial
+
+- **TARGET:** `CF88:ART.105:PAR.2` · `ENTENDA/CF88:ART.105:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 105, §§ 2º e 3º — Relevância no recurso especial
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.105:PAR.3`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.105`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 258 palavras · 2258 bytes · referências 0
+- **Motivo da seleção:** Bloco: exigencia de relevancia (§ 2º), quorum de recusa e hipoteses em que a relevancia existe (§ 3º).
+
+**O QUE DIZ**
+
+O § 2º exige que, no recurso especial, o recorrente demonstre a relevância das questões de direito federal infraconstitucional, nos termos da lei. O tribunal só pode deixar de conhecer do recurso por esse motivo com o voto de dois terços dos membros do órgão competente. O § 3º indica casos em que essa relevância existe: ações penais, ações de improbidade administrativa, ações de valor superior a quinhentos salários mínimos, ações que possam gerar inelegibilidade, decisões contrárias à jurisprudência dominante do tribunal e outras hipóteses previstas em lei.
+
+**O QUE SIGNIFICA**
+
+O filtro de relevância funciona para o recurso especial de modo parecido com a repercussão geral no Supremo.
+
+Como regra, o recorrente precisa demonstrar que a questão é relevante. Nos casos do § 3º, porém, a própria Constituição já reconhece a relevância.
+
+A recusa por falta de relevância exige quórum alto: dois terços do órgão que julgaria o recurso.
+
+**EXEMPLO PRÁTICO**
+
+Em uma ação de improbidade administrativa, o réu interpõe recurso especial. Como a hipótese está no § 3º, a relevância já está reconhecida pelo texto e não pode servir de motivo para recusar o recurso.
+
+**ATENÇÃO**
+
+O § 2º remete à lei a regulamentação do filtro. A partir de quando ele passou a ser exigido depende dessa regulamentação e de regra de transição da emenda que o criou, consultadas na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Direito infraconstitucional*: normas abaixo da Constituição, como leis e decretos.
+- *Não conhecer do recurso*: recusar o exame do recurso, sem julgar o seu conteúdo.
+- *Repercussão geral*: filtro equivalente exigido no recurso extraordinário ao Supremo (art. 102, § 3º).
+- *Inelegibilidade*: impedimento de se candidatar a cargo eletivo.
+
+**CAMADA EXTERNA**
+
+- A regulamentação legal do filtro de relevância e sua aplicação no tempo dependem de lei e de regra de transição da emenda: EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: repercussão geral); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a relevância das questões de direito federal infraconstituci)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.106
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 106 — Órgãos da Justiça Federal
+
+- **TARGET:** `CF88:ART.106` · `ENTENDA/CF88:ART.106/BASE/1`
+- **DISPLAY TITLE:** Art. 106 — Órgãos da Justiça Federal
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1531 bytes · referências 0
+- **Motivo da seleção:** Visao geral: estrutura em dois graus da Justica Federal.
+
+**O QUE DIZ**
+
+O art. 106 indica os órgãos da Justiça Federal: os Tribunais Regionais Federais e os Juízes Federais.
+
+**O QUE SIGNIFICA**
+
+A Justiça Federal tem dois graus. Na primeira instância atuam os juízes federais, que recebem as causas em que há interesse da União e de suas entidades, conforme o art. 109. Na segunda instância estão os Tribunais Regionais Federais, que julgam os recursos contra as decisões desses juízes, conforme o art. 108.
+
+Os tribunais são regionais porque cada um abrange uma região que pode reunir vários Estados. Os juízes federais atuam nas seções judiciárias, organizadas por Estado, conforme o art. 110.
+
+O Superior Tribunal de Justiça e o Supremo não fazem parte da Justiça Federal: eles estão acima dos vários ramos do Judiciário.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa processa o instituto federal de previdência por um benefício negado. A ação é julgada por um juiz federal; se houver recurso, ele vai ao Tribunal Regional Federal da respectiva região.
+
+**ATENÇÃO**
+
+O artigo apenas lista os órgãos. A composição dos tribunais está no art. 107, e as competências, nos arts. 108 e 109.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Justiça Federal*: ramo do Judiciário que julga, em regra, causas de interesse da União e de suas entidades.
+- *Instância*: grau de jurisdição, como primeira instância e tribunal de recurso.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.107
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 107 — Composição dos Tribunais Regionais Federais
+
+- **TARGET:** `CF88:ART.107` · `ENTENDA/CF88:ART.107/BASE/1`
+- **DISPLAY TITLE:** Art. 107 — Composição dos Tribunais Regionais Federais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 1909 bytes · referências 0
+- **Motivo da seleção:** Visao geral: numero minimo, requisitos, origem das vagas, justica itinerante e camaras regionais.
+
+**O QUE DIZ**
+
+O art. 107 estabelece que os Tribunais Regionais Federais têm no mínimo sete juízes, recrutados quando possível na própria região e nomeados pelo Presidente da República entre brasileiros com mais de trinta e menos de setenta anos. Um quinto das vagas vem da advocacia e do Ministério Público Federal, com mais de dez anos de atividade, e as demais vêm da promoção de juízes federais que tenham mais de cinco anos no cargo, alternando antiguidade e merecimento. Os parágrafos tratam da lei sobre remoção e sede, da justiça itinerante e das câmaras regionais.
+
+**O QUE SIGNIFICA**
+
+O artigo aplica aos tribunais federais de segundo grau o modelo do quinto constitucional: a maior parte das vagas fica com juízes de carreira, e um quinto com profissionais vindos de fora.
+
+O número sete é um piso, e não um total fixo.
+
+Os §§ 2º e 3º aproximam a Justiça do cidadão. A justiça itinerante leva audiências a locais distantes, usando equipamentos públicos e comunitários. As câmaras regionais permitem que o tribunal funcione de forma descentralizada.
+
+**EXEMPLO PRÁTICO**
+
+Um tribunal regional que abrange vários Estados cria uma câmara regional em uma cidade do interior, para que as partes daquela área não precisem se deslocar até a sede.
+
+**ATENÇÃO**
+
+A remoção e a permuta de juízes dos tribunais, assim como a jurisdição e a sede de cada um, são definidas em lei (§ 1º), e não neste artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Quinto constitucional*: reserva de um quinto das vagas de certos tribunais a advogados e membros do Ministério Público.
+- *Justiça itinerante*: atendimento judicial que se desloca até onde está a população.
+- *Permuta*: troca de lotação entre dois juízes.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: brasileiros com mais de trinta e menos de)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.108
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 108 — Competências dos Tribunais Regionais Federais
+
+- **TARGET:** `CF88:ART.108` · `ENTENDA/CF88:ART.108/BASE/1`
+- **DISPLAY TITLE:** Art. 108 — Competências dos Tribunais Regionais Federais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1839 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia originaria e recursal dos tribunais federais de segundo grau.
+
+**O QUE DIZ**
+
+O art. 108 atribui aos Tribunais Regionais Federais o julgamento originário, por crimes comuns e de responsabilidade, dos juízes federais da sua área (incluídos os juízes militares e os do trabalho) e dos membros do Ministério Público da União, com ressalva para a competência da Justiça Eleitoral. Também julgam originariamente revisões criminais e ações rescisórias, mandados de segurança e habeas data contra ato do tribunal ou de juiz federal, habeas corpus contra juiz federal e conflitos de competência entre juízes federais vinculados. Em grau de recurso, revisam as decisões dos juízes federais da área de jurisdição do tribunal e as dos juízes estaduais quando atuam em competência federal.
+
+**O QUE SIGNIFICA**
+
+O tribunal regional tem duas funções.
+
+A principal é julgar recursos: as decisões dos juízes federais da região sobem a ele. Também sobem as decisões de juízes estaduais que julgam causas federais por delegação, nos casos que a Constituição admite.
+
+A outra função é a competência originária, com foco em autoridades e atos ligados à própria Justiça Federal da região.
+
+**EXEMPLO PRÁTICO**
+
+Um juiz federal é acusado de crime comum. O processo corre diretamente no Tribunal Regional Federal da sua área, e não em vara de primeira instância.
+
+**ATENÇÃO**
+
+A competência penal originária tem ressalva expressa: os casos da competência da Justiça Eleitoral ficam fora.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Revisão criminal*: ação para rever condenação penal já definitiva, nos casos da lei.
+- *Ação rescisória*: ação para desfazer uma decisão cível definitiva, nos casos da lei.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.109
+
+Sem explicação própria: 13 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 109 — Competências dos juízes federais
+
+- **TARGET:** `CF88:ART.109` · `ENTENDA/CF88:ART.109/BASE/1`
+- **DISPLAY TITLE:** Art. 109 — Competências dos juízes federais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 294 palavras · 2226 bytes · referências 0
+- **Motivo da seleção:** Visao geral: mapa das causas da Justica Federal de primeiro grau e regras de foro.
+
+**O QUE DIZ**
+
+O art. 109 lista as causas que os juízes federais processam e julgam. Entre elas estão as causas em que a União, suas autarquias ou empresas públicas sejam interessadas, salvo as exceções do inciso I. Também estão os crimes contra bens e interesses da União, ressalvadas as Justiças Militar e Eleitoral, e os crimes a bordo de navios ou aeronaves, ressalvada a Justiça Militar. Completam a lista, entre outros, crimes previstos em tratado, crimes contra a organização do trabalho, mandado de segurança contra autoridade federal (salvo competência dos tribunais federais), causas sobre nacionalidade e a disputa sobre direitos indígenas. Os parágrafos tratam do local das ações da União, da delegação a juízes estaduais e do deslocamento de competência em grave violação de direitos humanos.
+
+**O QUE SIGNIFICA**
+
+A lógica do artigo é o interesse federal. A Justiça Federal julga, em regra, o que envolve a União, suas entidades e temas que a Constituição considera nacionais ou internacionais.
+
+No cível, o critério principal é a presença da União, de autarquia ou de empresa pública federal no processo. No penal, o critério é a ofensa a bens, serviços ou interesses federais, além de crimes específicos indicados no texto.
+
+Outros incisos tratam de temas ligados à soberania e às relações exteriores, como nacionalidade, cartas rogatórias e direitos indígenas.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa falsifica documento para sacar um benefício do instituto federal de previdência. Como o crime atinge interesse de autarquia federal, o processo vai à Justiça Federal.
+
+**ATENÇÃO**
+
+Os incisos I e IV têm exceções importantes e explicação própria. Os §§ 1º a 5º também têm explicações próprias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Autarquia*: entidade pública com personalidade própria criada por lei para atividade típica do Estado.
+- *Empresa pública*: empresa com capital inteiramente público.
+- *Carta rogatória*: pedido de autoridade judicial estrangeira para que um ato seja cumprido no Brasil.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a bordo de navios ou aeronaves ressalvada a)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 109, inciso I — Causas cíveis de interesse da União
+
+- **TARGET:** `CF88:ART.109:INC.I` · `ENTENDA/CF88:ART.109:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 109, inciso I — Causas cíveis de interesse da União
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.109`, `CF88:ART.109:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1907 bytes · referências 3
+- **Motivo da seleção:** Item: criterio da presenca da Uniao e entidades federais e as excecoes do inciso.
+
+**O QUE DIZ**
+
+O inciso I atribui aos juízes federais as causas de que participem, como autoras, rés, assistentes ou oponentes, a União, uma autarquia federal ou uma empresa pública federal. Ficam de fora as falências, os acidentes de trabalho e as causas da competência das Justiças Eleitoral e do Trabalho.
+
+**O QUE SIGNIFICA**
+
+O critério é a pessoa que está no processo, e não o assunto. Basta que a União, uma autarquia federal ou uma empresa pública federal participe em uma das posições indicadas para a causa ir à Justiça Federal.
+
+As exceções retiram desse critério quatro tipos de causa. Falência e acidentes de trabalho seguem para a Justiça estadual. As causas eleitorais e trabalhistas seguem para as suas justiças especializadas.
+
+O texto menciona empresa pública federal, e não sociedade de economia mista.
+
+**EXEMPLO PRÁTICO**
+
+Um segurado sofre acidente de trabalho e pede benefício acidentário ao instituto federal de previdência. Embora a autarquia seja federal, a ação corre na Justiça estadual, por causa da exceção de acidentes de trabalho.
+
+**ATENÇÃO**
+
+A participação da entidade federal precisa ocorrer em uma das posições listadas. Questões como a situação das sociedades de economia mista e dos conselhos profissionais são da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Assistente*: quem entra no processo para ajudar uma das partes por ter interesse no resultado.
+- *Oponente*: quem entra no processo disputando o mesmo bem ou direito das partes.
+
+**CAMADA EXTERNA**
+
+- A competência para causas de sociedades de economia mista e de conselhos de fiscalização profissional é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 109, inciso IV — Crimes de competência federal
+
+- **TARGET:** `CF88:ART.109:INC.IV` · `ENTENDA/CF88:ART.109:INC.IV/BASE/1`
+- **DISPLAY TITLE:** Art. 109, inciso IV — Crimes de competência federal
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.109`, `CF88:ART.109:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1514 bytes · referências 0
+- **Motivo da seleção:** Item: crimes politicos e infracoes contra bens e interesses federais, com exclusao das contravencoes e ressalvas.
+
+**O QUE DIZ**
+
+O inciso IV atribui aos juízes federais os crimes políticos e as infrações penais praticadas contra bens, serviços ou interesse da União, de suas autarquias ou de suas empresas públicas. Ficam excluídas as contravenções penais, com ressalva para a competência das Justiças Militar e Eleitoral.
+
+**O QUE SIGNIFICA**
+
+No campo penal, a Justiça Federal julga o que ofende diretamente a União ou suas entidades.
+
+A exclusão das contravenções é expressa: mesmo que atinjam interesse federal, essas infrações mais leves ficam com a Justiça estadual.
+
+As ressalvas retiram crimes militares e eleitorais, que vão às suas justiças especializadas.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa danifica um bem de uma universidade federal, que é autarquia. Trata-se de crime contra bem de entidade federal, julgado pela Justiça Federal. Se a conduta fosse apenas uma contravenção, iria à Justiça estadual.
+
+**ATENÇÃO**
+
+O texto menciona empresas públicas, e não sociedades de economia mista. O que conta como interesse direto da União em cada crime é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Contravenção penal*: infração penal de menor gravidade que o crime.
+- *Crime político*: crime que atenta contra a segurança e a ordem política do Estado.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os crimes políticos e as infrações penais praticadas); PARENT_REPETITION (*: CF88:ART.109: 0.208)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 109, §§ 1º e 2º — Onde propor as ações da União
+
+- **TARGET:** `CF88:ART.109:PAR.1` · `ENTENDA/CF88:ART.109:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 109, §§ 1º e 2º — Onde propor as ações da União
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.109:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.109`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 187 palavras · 1584 bytes · referências 0
+- **Motivo da seleção:** Bloco: foro das acoes em que a Uniao e autora (§ 1º) e das acoes contra a Uniao (§ 2º).
+
+**O QUE DIZ**
+
+O § 1º determina que as causas em que a União for autora sejam propostas na seção judiciária do domicílio da outra parte. O § 2º permite que as causas contra a União sejam propostas na seção judiciária do domicílio do autor, onde ocorreu o ato ou fato que originou a demanda, onde está a coisa ou no Distrito Federal.
+
+**O QUE SIGNIFICA**
+
+Os dois parágrafos protegem a parte que litiga contra a União.
+
+Quando a União processa alguém, ela vai até o domicílio da pessoa. Quando alguém processa a União, pode escolher entre várias opções, incluindo o próprio domicílio.
+
+Com isso, o cidadão pode se defender ou reclamar um direito sem ir obrigatoriamente à capital federal.
+
+**EXEMPLO PRÁTICO**
+
+Uma moradora de uma cidade do interior quer processar a União por um dano causado por obra federal na sua rua. Ela pode propor a ação na seção judiciária do seu domicílio, no local do fato ou no Distrito Federal.
+
+**ATENÇÃO**
+
+No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Seção judiciária*: divisão territorial da Justiça Federal, em regra correspondente a um Estado.
+- *Aforar*: propor uma ação em determinado juízo.
+
+**CAMADA EXTERNA**
+
+- A aplicação do § 2º a autarquias federais é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as causas em que a união for autora)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 109, §§ 3º e 4º — Causas previdenciárias na Justiça estadual
+
+- **TARGET:** `CF88:ART.109:PAR.3` · `ENTENDA/CF88:ART.109:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 109, §§ 3º e 4º — Causas previdenciárias na Justiça estadual
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.109:PAR.4`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.109`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1729 bytes · referências 1
+- **Motivo da seleção:** Bloco: delegacao por lei de causas previdenciarias a Justica estadual e o recurso ao tribunal federal.
+
+**O QUE DIZ**
+
+O § 3º permite que a lei leve à Justiça estadual causas federais entre instituição de previdência social e segurado, quando não houver vara federal sediada na comarca onde o segurado mora. O § 4º determina que, nesse caso, o recurso vá ao Tribunal Regional Federal da área do juiz de primeiro grau.
+
+**O QUE SIGNIFICA**
+
+Os parágrafos tratam de uma delegação de competência para facilitar o acesso do segurado.
+
+Onde não há vara federal, a lei pode permitir que o juiz estadual julgue a causa previdenciária. A causa continua sendo federal: por isso o recurso não vai ao Tribunal de Justiça, mas ao Tribunal Regional Federal.
+
+A delegação não é automática: depende de autorização em lei.
+
+**EXEMPLO PRÁTICO**
+
+Um trabalhador rural mora em município sem vara federal e quer pedir aposentadoria. Se a lei autorizar, ele propõe a ação no fórum estadual da sua cidade, e eventual recurso segue ao Tribunal Regional Federal.
+
+**ATENÇÃO**
+
+O § 3º é permissivo: a lei pode autorizar a delegação e definir suas condições. Os critérios atuais estão na lei, na camada de legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Segurado*: pessoa vinculada à previdência social com direito a benefícios.
+- *Comarca*: área territorial de atuação de um juiz estadual.
+
+**CAMADA EXTERNA**
+
+- Os critérios legais da delegação (como distância até a vara federal) ficam na lei, na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos
+
+- **TARGET:** `CF88:ART.109:PAR.5` · `ENTENDA/CF88:ART.109:PAR.5/BASE/1`
+- **DISPLAY TITLE:** Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.109`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1877 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: incidente de deslocamento de competencia para a Justica Federal (com o inciso V-A, que a ele remete).
+
+**O QUE DIZ**
+
+O § 5º permite que, em caso de violação grave de direitos humanos, o Procurador-Geral da República peça ao Superior Tribunal de Justiça, em qualquer fase do inquérito ou do processo, o deslocamento da competência para a Justiça Federal. A finalidade declarada é garantir o cumprimento de obrigações assumidas pelo Brasil em tratados internacionais de direitos humanos. O inciso V-A do artigo remete a essas causas.
+
+**O QUE SIGNIFICA**
+
+O parágrafo cria uma via excepcional para levar à Justiça Federal casos que, pelas regras comuns de competência, não estariam nela.
+
+Só o Procurador-Geral da República pode pedir, e só o Superior Tribunal de Justiça decide. O pedido pode ser feito durante a investigação ou já no processo.
+
+A razão indicada no próprio texto é internacional: o Brasil responde perante outros países e organismos se não cumprir tratados de direitos humanos.
+
+**EXEMPLO PRÁTICO**
+
+Uma chacina com suspeita de participação de agentes locais fica anos sem investigação efetiva. O Procurador-Geral pede ao Superior Tribunal de Justiça que o caso passe à Justiça Federal.
+
+**ATENÇÃO**
+
+O texto exige grave violação de direitos humanos e a finalidade de cumprir obrigações de tratados. Os demais requisitos para o deslocamento ser deferido são tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Incidente de deslocamento de competência*: pedido para transferir um caso para a Justiça Federal.
+- *Inquérito*: investigação que antecede a ação penal.
+
+**CAMADA EXTERNA**
+
+- Os requisitos aplicados para deferir o deslocamento de competência são tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de direitos humanos o procurador geral da república)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.110
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 110 — Seções judiciárias
+
+- **TARGET:** `CF88:ART.110` · `ENTENDA/CF88:ART.110/BASE/1`
+- **DISPLAY TITLE:** Art. 110 — Seções judiciárias
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1531 bytes · referências 0
+- **Motivo da seleção:** Visao geral: organizacao territorial da Justica Federal e regra para os Territorios.
+
+**O QUE DIZ**
+
+O art. 110 determina que cada Estado e o Distrito Federal formem uma seção judiciária, com sede na respectiva capital, e varas localizadas conforme a lei. O parágrafo único atribui aos juízes da Justiça local, nos Territórios Federais, a jurisdição e as atribuições dos juízes federais, na forma da lei.
+
+**O QUE SIGNIFICA**
+
+A seção judiciária é a unidade territorial da Justiça Federal de primeiro grau. Há uma por Estado e uma no Distrito Federal, com sede na capital.
+
+Dentro da seção, as varas federais podem ficar em outras cidades, conforme a lei decidir. Isso permite levar a Justiça Federal ao interior.
+
+Nos Territórios Federais, a regra é diferente: não há seção própria, e quem exerce a função de juiz federal é o juiz da Justiça local.
+
+**EXEMPLO PRÁTICO**
+
+Em um Estado, a seção judiciária tem sede na capital e varas em várias cidades do interior. Uma ação contra a União proposta numa dessas cidades corre na vara federal local.
+
+**ATENÇÃO**
+
+A localização das varas é definida em lei. A regra dos Territórios depende da existência de Território Federal, cuja criação é regulada em lei complementar (art. 18, § 2º).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vara*: unidade judiciária de primeira instância onde atua o juiz.
+- *Território Federal*: divisão administrativa ligada à União, prevista na Constituição.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nos territórios federais a jurisdição e as atribuições)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.111
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 111 — Órgãos da Justiça do Trabalho
+
+- **TARGET:** `CF88:ART.111` · `ENTENDA/CF88:ART.111/BASE/1`
+- **DISPLAY TITLE:** Art. 111 — Órgãos da Justiça do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1384 bytes · referências 0
+- **Motivo da seleção:** Visao geral: estrutura em tres niveis da Justica do Trabalho.
+
+**O QUE DIZ**
+
+O art. 111 indica os órgãos da Justiça do Trabalho: o Tribunal Superior do Trabalho, os Tribunais Regionais do Trabalho e os Juízes do Trabalho.
+
+**O QUE SIGNIFICA**
+
+A Justiça do Trabalho é um ramo especializado do Judiciário, voltado às relações de trabalho.
+
+Ela tem três níveis. Na base estão os juízes do trabalho, que atuam nas varas. Acima deles, os Tribunais Regionais do Trabalho julgam recursos em cada região. No topo, o Tribunal Superior do Trabalho uniformiza a interpretação da legislação trabalhista no país.
+
+A composição do Tribunal Superior está no art. 111-A, as varas no art. 112, e a competência no art. 114.
+
+**EXEMPLO PRÁTICO**
+
+Um empregado demitido sem receber as verbas rescisórias entra com ação na vara do trabalho. Se houver recurso, ele vai ao Tribunal Regional do Trabalho e, em certos casos, ao Tribunal Superior do Trabalho.
+
+**ATENÇÃO**
+
+Os parágrafos originais do artigo foram revogados; a composição e o funcionamento dos tribunais estão nos artigos seguintes.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Justiça especializada*: ramo do Judiciário dedicado a uma matéria específica.
+- *Vara do trabalho*: unidade de primeira instância da Justiça do Trabalho.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.111-A
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 111-A — Tribunal Superior do Trabalho
+
+- **TARGET:** `CF88:ART.111-A` · `ENTENDA/CF88:ART.111-A/BASE/1`
+- **DISPLAY TITLE:** Art. 111-A — Tribunal Superior do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 290 palavras · 2114 bytes · referências 0
+- **Motivo da seleção:** Visao geral: composicao, requisitos, nomeacao, orgaos junto ao tribunal e reclamacao.
+
+**O QUE DIZ**
+
+O art. 111-A estabelece que o Tribunal Superior do Trabalho tem vinte e sete Ministros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado. Eles são escolhidos entre brasileiros que tenham mais de trinta e cinco e menos de setenta anos, notável saber jurídico e reputação ilibada. Um quinto vem da advocacia e do Ministério Público do Trabalho, exigidos mais de dez anos de atividade ou de exercício, e os demais vêm dos Tribunais Regionais do Trabalho, entre juízes de carreira indicados pelo próprio tribunal. Os parágrafos remetem à lei a competência do tribunal, indicam os órgãos que funcionam junto a ele e preveem a reclamação.
+
+**O QUE SIGNIFICA**
+
+Diferentemente do Superior Tribunal de Justiça, o Tribunal Superior do Trabalho tem número fixo de Ministros: vinte e sete.
+
+A composição segue o modelo do quinto constitucional, com remissão ao art. 94. A maior parte das vagas é de juízes de carreira dos tribunais regionais.
+
+Junto ao tribunal funcionam uma escola nacional de formação de magistrados do trabalho e o Conselho Superior da Justiça do Trabalho, que supervisiona a gestão da Justiça do Trabalho, na forma da lei.
+
+A reclamação protege a competência do tribunal e a autoridade de suas decisões.
+
+**EXEMPLO PRÁTICO**
+
+Um tribunal regional deixa de cumprir uma decisão do Tribunal Superior do Trabalho em um processo. A parte prejudicada pode apresentar reclamação diretamente ao Tribunal Superior.
+
+**ATENÇÃO**
+
+A competência do Tribunal Superior do Trabalho é definida em lei (§ 1º). As vagas de juízes de carreira são reservadas a quem vem da magistratura, e não do quinto.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Quinto constitucional*: reserva de um quinto das vagas de certos tribunais a advogados e membros do Ministério Público.
+- *Reclamação*: ação para preservar a competência de um tribunal ou garantir que suas decisões sejam cumpridas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de trinta e cinco e menos de setenta)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.112
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 112 — Varas do Trabalho
+
+- **TARGET:** `CF88:ART.112` · `ENTENDA/CF88:ART.112/BASE/1`
+- **DISPLAY TITLE:** Art. 112 — Varas do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1448 bytes · referências 0
+- **Motivo da seleção:** Visao geral: criacao das varas por lei e atribuicao da jurisdicao trabalhista a juizes de direito.
+
+**O QUE DIZ**
+
+O art. 112 determina que a lei crie as varas da Justiça do Trabalho. Nas comarcas que não estejam abrangidas pela jurisdição de uma vara do trabalho, a lei pode atribuir essa jurisdição aos juízes de direito, com recurso para o Tribunal Regional do Trabalho respectivo.
+
+**O QUE SIGNIFICA**
+
+As varas do trabalho são a porta de entrada da Justiça do Trabalho, mas não existem em todas as cidades.
+
+Para não deixar o trabalhador sem acesso, o artigo permite que, onde não houver vara do trabalho, o juiz de direito, que é juiz estadual, julgue causas trabalhistas.
+
+Mesmo nesse caso, a causa continua trabalhista: o recurso vai ao Tribunal Regional do Trabalho, e não ao Tribunal de Justiça.
+
+**EXEMPLO PRÁTICO**
+
+Em uma pequena cidade sem vara do trabalho e fora da área de jurisdição de qualquer vara, um empregado propõe ação contra o empregador perante o juiz de direito local. O recurso, se houver, vai ao Tribunal Regional do Trabalho.
+
+**ATENÇÃO**
+
+A atribuição ao juiz de direito é uma possibilidade, a ser definida em lei, e vale apenas para comarcas não abrangidas pela jurisdição de vara do trabalho.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Juiz de direito*: juiz estadual de primeira instância.
+- *Jurisdição*: poder de julgar dentro de uma área e de uma matéria.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos juízes de direito com recurso para o)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.113
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 113 — Lei de organização da Justiça do Trabalho
+
+- **TARGET:** `CF88:ART.113` · `ENTENDA/CF88:ART.113/BASE/1`
+- **DISPLAY TITLE:** Art. 113 — Lei de organização da Justiça do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1645 bytes · referências 0
+- **Motivo da seleção:** Visao geral: remissao a lei da organizacao dos orgaos da Justica do Trabalho.
+
+**O QUE DIZ**
+
+O art. 113 remete à lei a disciplina dos órgãos da Justiça do Trabalho: como são constituídos, como seus membros são investidos, qual a sua jurisdição e competência, quais as garantias e as condições de exercício.
+
+**O QUE SIGNIFICA**
+
+A Constituição traça a estrutura básica da Justiça do Trabalho nos arts. 111 a 116, mas deixa os detalhes para o legislador.
+
+O artigo é uma norma de remissão: ele não cria regra nova, e sim indica que caberá à lei completar o quadro. Assim, aspectos como a organização interna dos tribunais e as condições de trabalho dos juízes do trabalho são encontrados na legislação.
+
+A competência da Justiça do Trabalho, porém, tem núcleo fixado na própria Constituição, no art. 114, que a lei não pode contrariar.
+
+**EXEMPLO PRÁTICO**
+
+Quem quer saber como funciona internamente um Tribunal Regional do Trabalho, ou quais são as regras de investidura dos juízes, precisa consultar a lei a que o art. 113 se refere, além da Constituição.
+
+**ATENÇÃO**
+
+As garantias da magistratura do trabalho incluem as que a própria Constituição dá a todos os juízes (art. 95). A lei completa esse quadro, mas não pode reduzi-lo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Investidura*: ato pelo qual alguém assume formalmente um cargo.
+- *Jurisdição*: poder de julgar dentro de uma área e de uma matéria.
+
+**CAMADA EXTERNA**
+
+- A lei de organização da Justiça do Trabalho fica na camada de legislação correlata.
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Quem quer saber como funciona internamente um Tribunal Regio)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.114
+
+Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 114 — Competência da Justiça do Trabalho
+
+- **TARGET:** `CF88:ART.114` · `ENTENDA/CF88:ART.114/BASE/1`
+- **DISPLAY TITLE:** Art. 114 — Competência da Justiça do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 314 palavras · 2734 bytes · referências 0
+- **Motivo da seleção:** Visao geral: mapa da competencia trabalhista e das regras sobre negociacao, arbitragem e dissidio coletivo.
+
+**O QUE DIZ**
+
+O art. 114 lista o que a Justiça do Trabalho processa e julga. Entre outras, estão as ações oriundas da relação de trabalho, as que envolvem o exercício do direito de greve, as disputas sobre representação sindical, os mandados de segurança, habeas corpus e habeas data em matéria trabalhista. Também estão os conflitos de competência entre órgãos trabalhistas (ressalvada a competência do Supremo), as indenizações por dano moral ou patrimonial decorrentes da relação de trabalho e as ações sobre penalidades aplicadas pela fiscalização do trabalho. Inclui ainda a execução de ofício de contribuições sociais decorrentes das suas sentenças e outras controvérsias da relação de trabalho, na forma da lei. Os parágrafos tratam de arbitragem, dissídio coletivo e greve em atividade essencial.
+
+**O QUE SIGNIFICA**
+
+O artigo tem como eixo a relação de trabalho. Os incisos reúnem tudo o que dela decorre: o conflito individual, a greve, a disputa entre sindicatos, as indenizações e as multas aplicadas ao empregador pela fiscalização.
+
+O inciso IX deixa a porta aberta para a lei acrescentar outras controvérsias da relação de trabalho.
+
+Os parágrafos tratam dos conflitos coletivos, que envolvem categorias inteiras e não apenas um empregado. Eles preveem negociação, arbitragem e, em último caso, o dissídio coletivo.
+
+**EXEMPLO PRÁTICO**
+
+Um sindicato de trabalhadores entra em greve e a empresa pede ao Judiciário que declare a greve abusiva. A ação é da Justiça do Trabalho, pelo inciso II.
+
+**ATENÇÃO**
+
+O caput e os §§ 2º e 3º têm anotações de controle de constitucionalidade na fonte canônica. O alcance da competência trabalhista em vários incisos não deve ser deduzido apenas do texto: ele é delimitado pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Relação de trabalho*: vínculo em que uma pessoa presta serviço a outra, sendo o emprego a forma mais comum.
+- *Dissídio coletivo*: processo que resolve um conflito entre categorias, e não entre pessoas determinadas.
+- *Execução de ofício*: cobrança iniciada pelo próprio juiz, sem pedido da parte.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Observação estrutural: no texto consolidado do runtime, o conteúdo do inciso VIII aparece anexado ao inciso VII; a separação deve ser conferida na fonte oficial.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da relação de trabalho na forma da lei)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 114, inciso I — Ações oriundas da relação de trabalho
+
+- **TARGET:** `CF88:ART.114:INC.I` · `ENTENDA/CF88:ART.114:INC.I/BASE/1`
+- **DISPLAY TITLE:** Art. 114, inciso I — Ações oriundas da relação de trabalho
+- **DISPOSITIVO:** INCISO
+- **COVERED TARGETS:** —
+- **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.114`, `CF88:ART.114:CAPUT`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1959 bytes · referências 0
+- **Motivo da seleção:** Item: criterio central da competencia trabalhista e mencao a administracao publica, cuja leitura literal nao basta.
+
+**O QUE DIZ**
+
+O inciso I atribui à Justiça do Trabalho as ações que nascem da relação de trabalho. O texto menciona expressamente os entes de direito público externo e a administração pública, direta e indireta, de qualquer nível da Federação.
+
+**O QUE SIGNIFICA**
+
+O critério do inciso é a origem do conflito: se ele nasce de uma relação de trabalho, a competência é trabalhista.
+
+O texto fala em relação de trabalho, expressão mais ampla do que relação de emprego. Também menciona os entes públicos, inclusive Estados estrangeiros e organismos internacionais, como possíveis partes.
+
+A menção à administração pública, porém, não resolve sozinha quais vínculos com o poder público ficam na Justiça do Trabalho.
+
+**EXEMPLO PRÁTICO**
+
+Um empregado contratado com carteira assinada por uma empresa pública federal é dispensado e cobra verbas rescisórias. A ação nasce da relação de trabalho e vai à Justiça do Trabalho.
+
+**ATENÇÃO**
+
+A leitura isolada do inciso não basta para saber se servidores com vínculo estatutário ou de natureza administrativa estão abrangidos. Esse ponto é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ente de direito público externo*: Estado estrangeiro ou organismo internacional.
+- *Vínculo estatutário*: relação do servidor com o poder público regida por lei própria, e não por contrato de trabalho.
+
+**CAMADA EXTERNA**
+
+- A exclusão de vínculos estatutários ou administrativos da competência trabalhista resulta de interpretação do Supremo sobre o caput e este inciso: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA (a fonte canônica anota o caput com Vide ADIN 3392 e ADIN 3432).
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
+
+- **TARGET:** `CF88:ART.114:PAR.1` · `ENTENDA/CF88:ART.114:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.114:PAR.2`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.114`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 2219 bytes · referências 0
+- **Motivo da seleção:** Bloco: arbitragem apos negociacao frustrada (§ 1º) e dissidio coletivo de natureza economica de comum acordo (§ 2º).
+
+**O QUE DIZ**
+
+O § 1º permite que as partes elejam árbitros quando a negociação coletiva fracassar. O § 2º estabelece que, se uma das partes recusar a negociação coletiva ou a arbitragem, as partes podem, de comum acordo, ajuizar dissídio coletivo de natureza econômica. A Justiça do Trabalho então decide o conflito, respeitando as disposições mínimas legais de proteção ao trabalho e as que foram convencionadas antes.
+
+**O QUE SIGNIFICA**
+
+Os parágrafos descrevem uma escada para resolver conflitos coletivos.
+
+O primeiro degrau é a negociação entre sindicatos e empresas. Se ela falha, as partes podem escolher a arbitragem.
+
+O último degrau é o dissídio coletivo econômico, em que a Justiça do Trabalho fixa condições de trabalho, como reajustes. O texto exige comum acordo para esse ajuizamento.
+
+A decisão judicial tem um piso: não pode ficar abaixo das proteções mínimas da lei nem das conquistas já convencionadas.
+
+**EXEMPLO PRÁTICO**
+
+Sindicato e empresas não chegam a acordo sobre o reajuste anual. Se ambos concordarem, levam o caso à Justiça do Trabalho, que fixa o reajuste respeitando os direitos já previstos em lei e em acordos anteriores.
+
+**ATENÇÃO**
+
+A exigência de comum acordo e seu alcance não devem ser deduzidos apenas do texto: o tema foi objeto de controle de constitucionalidade (anotações na fonte canônica) e fica na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Negociação coletiva*: negociação entre sindicato de trabalhadores e empregadores sobre condições de trabalho.
+- *Arbitragem*: solução de conflito por um terceiro escolhido pelas partes.
+- *Dissídio coletivo econômico*: processo em que a Justiça do Trabalho fixa condições de trabalho para uma categoria.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as disposições mínimas legais de proteção ao trabalho)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 114, § 3º — Greve em atividade essencial
+
+- **TARGET:** `CF88:ART.114:PAR.3` · `ENTENDA/CF88:ART.114:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 114, § 3º — Greve em atividade essencial
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.114`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1796 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: legitimidade do Ministerio Publico do Trabalho para o dissidio coletivo em greve de atividade essencial.
+
+**O QUE DIZ**
+
+O § 3º estabelece que, havendo greve em atividade essencial que possa lesar o interesse público, o Ministério Público do Trabalho pode ajuizar dissídio coletivo. A decisão do conflito cabe à Justiça do Trabalho.
+
+**O QUE SIGNIFICA**
+
+Nas greves comuns, o conflito é das partes: sindicatos e empregadores. Quando a greve atinge atividade essencial e pode prejudicar o interesse público, entra em cena um terceiro.
+
+O Ministério Público do Trabalho ganha legitimidade para levar o conflito à Justiça do Trabalho, sem precisar do acordo das partes exigido no § 2º.
+
+O texto exige duas condições: que a atividade seja essencial e que haja possibilidade de lesão ao interesse público.
+
+**EXEMPLO PRÁTICO**
+
+Trabalhadores de uma empresa de transporte coletivo entram em greve sem garantir o atendimento mínimo à população. O Ministério Público do Trabalho ajuíza dissídio coletivo, e a Justiça do Trabalho decide o conflito.
+
+**ATENÇÃO**
+
+O parágrafo não define quais são as atividades essenciais; isso está na lei de greve. O parágrafo tem anotações de controle de constitucionalidade na fonte canônica, a conferir na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Atividade essencial*: serviço indispensável à comunidade, definido em lei.
+- *Ajuizar*: propor uma ação na Justiça.
+
+**CAMADA EXTERNA**
+
+- A lista legal de atividades essenciais fica na lei de greve, na camada de legislação correlata.
+- A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432): EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.115
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 115 — Tribunais Regionais do Trabalho
+
+- **TARGET:** `CF88:ART.115` · `ENTENDA/CF88:ART.115/BASE/1`
+- **DISPLAY TITLE:** Art. 115 — Tribunais Regionais do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1824 bytes · referências 0
+- **Motivo da seleção:** Visao geral: composicao, origem das vagas, justica itinerante e camaras regionais.
+
+**O QUE DIZ**
+
+O art. 115 fixa a composição dos Tribunais Regionais do Trabalho: pelo menos sete juízes, nomeados pelo Presidente da República entre brasileiros que tenham mais de trinta e menos de setenta anos, recrutados na região quando possível. O quinto destinado a advogados e a membros do Ministério Público do Trabalho segue o art. 94 e exige mais de dez anos de atividade ou de exercício. Nas outras vagas entram juízes do trabalho promovidos, uma vez por antiguidade e outra por merecimento. Os §§ 1º e 2º preveem justiça itinerante e câmaras regionais.
+
+**O QUE SIGNIFICA**
+
+O desenho é o mesmo dos Tribunais Regionais Federais (art. 107): número mínimo, quinto constitucional e promoção de juízes de carreira.
+
+Sete é o mínimo de juízes; a lei pode prever mais.
+
+Os §§ 1º e 2º tratam do acesso do trabalhador ao tribunal: audiências realizadas fora da sede, com apoio de equipamentos públicos e comunitários, e órgãos do tribunal instalados em outras cidades da região.
+
+**EXEMPLO PRÁTICO**
+
+Um tribunal regional instala atendimento itinerante em municípios do interior, realizando audiências em escolas e centros comunitários, para que trabalhadores dessas áreas tenham acesso à Justiça do Trabalho.
+
+**ATENÇÃO**
+
+O texto não exige tempo mínimo de exercício para a promoção dos juízes do trabalho, diferentemente do que faz para os Tribunais Regionais Federais (art. 107).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Quinto constitucional*: reserva de um quinto das vagas de certos tribunais a advogados e membros do Ministério Público.
+- *Câmara regional*: órgão do tribunal instalado fora da sede para atender uma área.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: mais de trinta e menos de setenta anos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.116
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 116 — Juiz singular nas Varas do Trabalho
+
+- **TARGET:** `CF88:ART.116` · `ENTENDA/CF88:ART.116/BASE/1`
+- **DISPLAY TITLE:** Art. 116 — Juiz singular nas Varas do Trabalho
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1230 bytes · referências 0
+- **Motivo da seleção:** Visao geral: jurisdicao exercida por juiz singular na primeira instancia trabalhista.
+
+**O QUE DIZ**
+
+O art. 116 determina que, nas Varas do Trabalho, a jurisdição seja exercida por um juiz singular.
+
+**O QUE SIGNIFICA**
+
+Na primeira instância da Justiça do Trabalho, quem julga é um único juiz, chamado juiz singular.
+
+O artigo define a forma de atuação da vara: a decisão não é tomada por um colegiado, mas pelo juiz que a integra.
+
+O parágrafo único do artigo foi revogado, e o texto vigente se limita a essa regra.
+
+Os órgãos colegiados da Justiça do Trabalho são os tribunais, que julgam os recursos contra as decisões das varas.
+
+**EXEMPLO PRÁTICO**
+
+Uma trabalhadora propõe ação cobrando horas extras. Na vara do trabalho, a audiência, a instrução e a sentença ficam a cargo de um único juiz do trabalho.
+
+**ATENÇÃO**
+
+O artigo trata apenas da vara do trabalho. Onde não há vara, a lei pode atribuir a jurisdição trabalhista ao juiz de direito (art. 112).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Juiz singular*: juiz que decide sozinho, e não em colegiado.
+- *Colegiado*: órgão formado por vários julgadores que decidem em conjunto.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.117
+
+Sem explicação própria: 0 dispositivos (ver `SELECTION_REPORT.json`).
+
+## CF88:ART.118
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 118 — Órgãos da Justiça Eleitoral
+
+- **TARGET:** `CF88:ART.118` · `ENTENDA/CF88:ART.118/BASE/1`
+- **DISPLAY TITLE:** Art. 118 — Órgãos da Justiça Eleitoral
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1588 bytes · referências 0
+- **Motivo da seleção:** Visao geral: estrutura da Justica Eleitoral.
+
+**O QUE DIZ**
+
+O art. 118 indica os órgãos da Justiça Eleitoral: o Tribunal Superior Eleitoral, os Tribunais Regionais Eleitorais, os Juízes Eleitorais e as Juntas Eleitorais.
+
+**O QUE SIGNIFICA**
+
+A Justiça Eleitoral é o ramo do Judiciário que cuida das eleições: do alistamento dos eleitores à diplomação dos eleitos e aos processos sobre o pleito.
+
+Ela tem quatro tipos de órgãos. No topo está o Tribunal Superior Eleitoral; em cada Estado e no Distrito Federal, um Tribunal Regional Eleitoral; na base, os juízes eleitorais e as juntas eleitorais.
+
+A organização e a competência das juntas eleitorais ficam em lei complementar (art. 121).
+
+**EXEMPLO PRÁTICO**
+
+Um candidato a vereador tem o registro de candidatura impugnado. O processo começa perante o juiz eleitoral da zona; os recursos podem subir ao Tribunal Regional Eleitoral e, em certos casos, ao Tribunal Superior Eleitoral.
+
+**ATENÇÃO**
+
+A composição dos tribunais eleitorais está nos arts. 119 e 120. A organização e a competência dos órgãos eleitorais são definidas em lei complementar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Junta Eleitoral*: órgão colegiado da Justiça Eleitoral, com competência definida em lei complementar.
+- *Diplomação*: ato da Justiça Eleitoral que reconhece oficialmente o eleito.
+
+**CAMADA EXTERNA**
+
+- A competência das juntas eleitorais fica na lei complementar prevista no art. 121, na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.119
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 119 — Composição do Tribunal Superior Eleitoral
+
+- **TARGET:** `CF88:ART.119` · `ENTENDA/CF88:ART.119/BASE/1`
+- **DISPLAY TITLE:** Art. 119 — Composição do Tribunal Superior Eleitoral
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 226 palavras · 1728 bytes · referências 0
+- **Motivo da seleção:** Visao geral: numero minimo, origem das vagas, presidencia e corregedoria do Tribunal Superior Eleitoral.
+
+**O QUE DIZ**
+
+O art. 119 estabelece que o Tribunal Superior Eleitoral tem no mínimo sete membros. Por eleição em voto secreto, três vêm do Supremo Tribunal Federal e dois do Superior Tribunal de Justiça. Outros dois são advogados de notável saber jurídico e idoneidade moral: o Supremo indica seis nomes, e o Presidente da República nomeia dois. O parágrafo único determina que o Presidente e o Vice-Presidente sejam eleitos entre os Ministros do Supremo, e o corregedor eleitoral entre os Ministros do Superior Tribunal de Justiça.
+
+**O QUE SIGNIFICA**
+
+O Tribunal Superior Eleitoral não tem quadro próprio de juízes de carreira. Ele é formado por Ministros de outros tribunais e por advogados.
+
+A maior parte vem dos dois tribunais de cúpula, escolhida pelos próprios tribunais em votação secreta. Os advogados entram por uma combinação: o Supremo indica seis nomes, e o Presidente da República escolhe dois.
+
+O comando do tribunal fica com Ministros do Supremo, e a corregedoria, com um Ministro do Superior Tribunal de Justiça.
+
+**EXEMPLO PRÁTICO**
+
+Termina o período de um Ministro do Supremo no Tribunal Superior Eleitoral. O Supremo faz nova eleição secreta entre seus Ministros para escolher quem ocupará a vaga.
+
+**ATENÇÃO**
+
+O número sete é mínimo. O tempo de permanência dos juízes eleitorais é tratado no art. 121, § 2º, com explicação própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Idoneidade moral*: conduta honesta e respeitável.
+- *Corregedor eleitoral*: autoridade que fiscaliza os serviços da Justiça Eleitoral.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: advogados de notável saber jurídico e idoneidade moral)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.120
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 120 — Tribunais Regionais Eleitorais
+
+- **TARGET:** `CF88:ART.120` · `ENTENDA/CF88:ART.120/BASE/1`
+- **DISPLAY TITLE:** Art. 120 — Tribunais Regionais Eleitorais
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1779 bytes · referências 0
+- **Motivo da seleção:** Visao geral: sede, composicao e presidencia dos tribunais regionais eleitorais.
+
+**O QUE DIZ**
+
+O art. 120 prevê que cada Estado tenha um Tribunal Regional Eleitoral sediado na capital, e que o Distrito Federal também tenha o seu. O § 1º define a composição: por eleição em voto secreto, dois desembargadores e dois juízes de direito escolhidos pelo Tribunal de Justiça; um juiz do Tribunal Regional Federal sediado na capital ou, se não houver, um juiz federal, escolhido pelo Tribunal Regional Federal; e dois advogados nomeados pelo Presidente da República a partir de lista de seis nomes do Tribunal de Justiça. O § 2º determina que o Presidente e o Vice-Presidente sejam eleitos entre os desembargadores.
+
+**O QUE SIGNIFICA**
+
+O tribunal regional segue o modelo do tribunal superior: não tem juízes próprios de carreira, e sim membros vindos de outros ramos do Judiciário e da advocacia.
+
+A composição combina membros da Justiça estadual, da Justiça Federal e da advocacia.
+
+Os advogados chegam por indicação do Tribunal de Justiça, em lista de seis nomes, e nomeação do Presidente da República.
+
+A presidência fica com um desembargador do Tribunal de Justiça.
+
+**EXEMPLO PRÁTICO**
+
+Em um Estado onde não há Tribunal Regional Federal com sede na capital, a vaga federal do tribunal eleitoral é ocupada por um juiz federal, escolhido pelo Tribunal Regional Federal da região.
+
+**ATENÇÃO**
+
+As vagas da advocacia exigem notável saber jurídico e idoneidade moral. O tempo de permanência dos membros segue o art. 121, § 2º.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Desembargador*: juiz que integra um Tribunal de Justiça.
+- *Juiz de direito*: juiz estadual de primeira instância.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: juízes de direito escolhidos pelo tribunal de justiça)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.121
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 121 — Organização e funcionamento da Justiça Eleitoral
+
+- **TARGET:** `CF88:ART.121` · `ENTENDA/CF88:ART.121/BASE/1`
+- **DISPLAY TITLE:** Art. 121 — Organização e funcionamento da Justiça Eleitoral
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 208 palavras · 1804 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lei complementar, garantias, mandato dos juizes e recorribilidade das decisoes.
+
+**O QUE DIZ**
+
+O art. 121 remete à lei complementar a organização e a competência dos órgãos da Justiça Eleitoral: tribunais, juízes de direito e juntas. O § 1º assegura aos membros da Justiça Eleitoral, no exercício das funções e no que for aplicável, plenas garantias e inamovibilidade. Os §§ 2º a 4º tratam do tempo de atuação dos juízes eleitorais, salvo motivo justificado, e dos recursos contra as decisões dos tribunais eleitorais, que têm exceções à regra da irrecorribilidade.
+
+**O QUE SIGNIFICA**
+
+A Justiça Eleitoral depende muito da lei complementar, que define o que cada órgão faz.
+
+Os membros da Justiça Eleitoral recebem as garantias necessárias ao exercício da função enquanto nela atuam.
+
+O artigo também cria duas características próprias do ramo eleitoral: os juízes atuam por períodos limitados, e as decisões dos tribunais eleitorais têm recursos restritos.
+
+**EXEMPLO PRÁTICO**
+
+Um juiz de direito exerce também a função de juiz eleitoral em sua comarca. Enquanto atua nas eleições, tem as garantias do § 1º, inclusive a de não ser removido contra a vontade.
+
+**ATENÇÃO**
+
+Os §§ 2º, 3º e 4º têm explicações próprias. A garantia de inamovibilidade vale no exercício da função eleitoral e no que for aplicável.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Inamovibilidade*: garantia de não ser transferido contra a vontade.
+- *Lei complementar*: lei aprovada por maioria absoluta, exigida pela Constituição para certos temas.
+
+**CAMADA EXTERNA**
+
+- A lei complementar sobre organização e competência da Justiça Eleitoral fica na camada de legislação correlata.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 121, § 2º — Mandato dos juízes eleitorais
+
+- **TARGET:** `CF88:ART.121:PAR.2` · `ENTENDA/CF88:ART.121:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 121, § 2º — Mandato dos juízes eleitorais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.121`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1511 bytes · referências 2
+- **Motivo da seleção:** Dispositivo: periodo minimo, limite de bienios consecutivos e escolha dos substitutos.
+
+**O QUE DIZ**
+
+O § 2º determina que os juízes dos tribunais eleitorais sirvam por pelo menos dois anos, salvo motivo justificado, e por no máximo dois biênios seguidos. Os substitutos são escolhidos ao mesmo tempo e da mesma forma que os titulares, na mesma quantidade em cada categoria.
+
+**O QUE SIGNIFICA**
+
+Os juízes dos tribunais eleitorais não ficam no cargo por tempo indeterminado. Eles servem por período fixo, de pelo menos dois anos.
+
+O limite é de dois biênios seguidos: completado o segundo biênio consecutivo, o juiz precisa deixar o tribunal eleitoral.
+
+O período mínimo pode ser interrompido por motivo justificado.
+
+Para cada categoria de membro há substitutos, escolhidos ao mesmo tempo e da mesma forma que os titulares.
+
+**EXEMPLO PRÁTICO**
+
+Um advogado nomeado para o Tribunal Regional Eleitoral cumpre dois biênios seguidos. Ao final do segundo biênio, não pode ser reconduzido para um terceiro período consecutivo.
+
+**ATENÇÃO**
+
+O limite fala em biênios consecutivos. O texto não proíbe que a pessoa volte ao tribunal depois de um intervalo; as condições de retorno são tema da lei e da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Biênio*: período de dois anos.
+- *Categoria*: cada grupo de origem dos membros, como desembargadores, juízes federais ou advogados.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); TERM_LOW_UTILITY (palavras_dificeis: Biênio)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 121, §§ 3º e 4º — Recursos contra decisões eleitorais
+
+- **TARGET:** `CF88:ART.121:PAR.3` · `ENTENDA/CF88:ART.121:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 121, §§ 3º e 4º — Recursos contra decisões eleitorais
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.121:PAR.4`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.121`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 252 palavras · 2094 bytes · referências 0
+- **Motivo da seleção:** Bloco: irrecorribilidade das decisoes do Tribunal Superior Eleitoral (§ 3º) e hipoteses de recurso contra os tribunais regionais (§ 4º).
+
+**O QUE DIZ**
+
+O § 3º estabelece que não cabe recurso contra as decisões do Tribunal Superior Eleitoral, salvo quando contrariarem a Constituição ou negarem habeas corpus ou mandado de segurança. O § 4º só admite recurso contra decisão de Tribunal Regional Eleitoral em cinco hipóteses. São elas: violação de disposição expressa da Constituição ou de lei; divergência com outro tribunal eleitoral na interpretação de lei; decisão sobre inelegibilidade ou sobre a expedição de diplomas em eleições federais ou estaduais; anulação de diplomas ou perda de mandato federal ou estadual; e negativa de habeas corpus, habeas data, mandado de segurança ou mandado de injunção.
+
+**O QUE SIGNIFICA**
+
+Os parágrafos limitam os recursos no processo eleitoral.
+
+Contra as decisões do Tribunal Superior Eleitoral, a regra é não haver recurso. As exceções levam o caso ao Supremo: quando a decisão contraria a Constituição ou nega habeas corpus ou mandado de segurança.
+
+Contra os tribunais regionais, o recurso existe apenas nas hipóteses listadas. Elas envolvem violação da Constituição ou da lei, divergência entre tribunais, temas graves das eleições federais e estaduais e a negativa de ações de proteção de direitos.
+
+**EXEMPLO PRÁTICO**
+
+Um Tribunal Regional Eleitoral cassa o diploma de um deputado estadual. Como a decisão anula diploma em eleição estadual, cabe recurso ao Tribunal Superior Eleitoral.
+
+**ATENÇÃO**
+
+As hipóteses de recurso contra os tribunais regionais formam lista fechada, indicada pela palavra somente. As eleições municipais não aparecem nos incisos III e IV.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Irrecorrível*: decisão contra a qual não cabe recurso.
+- *Diploma*: documento da Justiça Eleitoral que reconhece o eleito.
+- *Denegatória*: decisão que nega o pedido.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.122
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 122 — Órgãos da Justiça Militar
+
+- **TARGET:** `CF88:ART.122` · `ENTENDA/CF88:ART.122/BASE/1`
+- **DISPLAY TITLE:** Art. 122 — Órgãos da Justiça Militar
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 164 palavras · 1280 bytes · referências 0
+- **Motivo da seleção:** Visao geral: estrutura da Justica Militar da Uniao.
+
+**O QUE DIZ**
+
+O art. 122 indica os órgãos da Justiça Militar: o Superior Tribunal Militar e os Tribunais e Juízes Militares instituídos por lei.
+
+**O QUE SIGNIFICA**
+
+A Justiça Militar é o ramo especializado do Judiciário que julga crimes militares.
+
+O artigo trata da Justiça Militar da União. No topo está o Superior Tribunal Militar. Abaixo dele, a estrutura de tribunais e juízes militares não está desenhada na Constituição: ela depende de lei.
+
+A Justiça Militar dos Estados é outra estrutura, prevista no art. 125, §§ 3º a 5º.
+
+**EXEMPLO PRÁTICO**
+
+Um militar das Forças Armadas é acusado de crime militar praticado em um quartel. O processo corre na primeira instância da Justiça Militar da União, organizada por lei, e eventual recurso vai ao Superior Tribunal Militar.
+
+**ATENÇÃO**
+
+A organização da primeira instância da Justiça Militar da União é definida em lei, e não neste artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crime militar*: crime definido como tal na lei penal militar.
+- *Justiça Militar da União*: ramo que julga crimes militares ligados às Forças Armadas, na forma da lei.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os tribunais e juízes militares instituídos por lei)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.123
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 123 — Composição do Superior Tribunal Militar
+
+- **TARGET:** `CF88:ART.123` · `ENTENDA/CF88:ART.123/BASE/1`
+- **DISPLAY TITLE:** Art. 123 — Composição do Superior Tribunal Militar
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 1925 bytes · referências 0
+- **Motivo da seleção:** Visao geral: quinze Ministros vitalicios, divisao entre militares e civis, requisitos dos civis.
+
+**O QUE DIZ**
+
+O art. 123 estabelece que o Superior Tribunal Militar tem quinze Ministros vitalícios, nomeados pelo Presidente da República depois que o Senado aprova a indicação. Dez são oficiais-generais da ativa, do posto mais elevado da carreira: três da Marinha, quatro do Exército e três da Aeronáutica. Cinco são civis. O parágrafo único exige que os civis sejam brasileiros que tenham mais de trinta e cinco e menos de setenta anos: três advogados de notório saber jurídico e conduta ilibada, exigidos mais de dez anos de atividade profissional, e dois escolhidos de forma paritária entre juízes-auditores e membros do Ministério Público da Justiça Militar.
+
+**O QUE SIGNIFICA**
+
+O tribunal tem composição mista: a maioria é de militares de alta patente, e uma parte é de civis.
+
+Os militares precisam estar na ativa e no topo da carreira. Os civis vêm da advocacia e de carreiras ligadas à própria Justiça Militar.
+
+A escolha dos civis cabe ao Presidente da República, que também nomeia os militares. Para os quinze Ministros, a indicação passa pelo Senado.
+
+**EXEMPLO PRÁTICO**
+
+Abre-se uma vaga destinada ao Exército. O Presidente indica um general do posto mais alto, ainda na ativa, e o Senado aprova a indicação antes da nomeação.
+
+**ATENÇÃO**
+
+Para os Ministros militares, o texto não fixa limite de idade; a faixa de trinta e cinco a setenta anos está no parágrafo único, dirigido aos civis. O caput fala em aprovação pelo Senado, sem indicar quórum.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Vitalício*: que ocupa o cargo de forma permanente, só perdendo-o nos casos previstos.
+- *Oficial-general*: militar dos postos mais altos das Forças Armadas.
+- *Paritário*: dividido em partes iguais entre os grupos indicados.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: advogados de notório saber jurídico e conduta ilibada)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.124
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 124 — Competência da Justiça Militar
+
+- **TARGET:** `CF88:ART.124` · `ENTENDA/CF88:ART.124/BASE/1`
+- **DISPLAY TITLE:** Art. 124 — Competência da Justiça Militar
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1456 bytes · referências 0
+- **Motivo da seleção:** Visao geral: competencia para crimes militares definidos em lei e remissao a lei de organizacao.
+
+**O QUE DIZ**
+
+O art. 124 atribui à Justiça Militar o processo e o julgamento dos crimes militares definidos em lei. O parágrafo único remete à lei a organização, o funcionamento e a competência da Justiça Militar.
+
+**O QUE SIGNIFICA**
+
+A competência da Justiça Militar da União é definida pela natureza do crime: ela julga crimes militares.
+
+O que é crime militar não está na Constituição. A definição está na lei, que indica quais condutas, em quais circunstâncias, são crimes militares.
+
+O artigo fala em crimes; ele não atribui à Justiça Militar da União o julgamento de ações civis ou disciplinares, diferentemente do que o art. 125, § 4º, faz para a Justiça Militar estadual.
+
+**EXEMPLO PRÁTICO**
+
+Um soldado das Forças Armadas desvia armamento do quartel. Se a lei penal militar define a conduta como crime militar, o caso é julgado pela Justiça Militar da União.
+
+**ATENÇÃO**
+
+Quando um civil pode ser julgado pela Justiça Militar da União não deve ser deduzido apenas do texto: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crime militar*: crime definido como tal na lei penal militar.
+
+**CAMADA EXTERNA**
+
+- O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a organização o funcionamento e a competência da)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.125
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 125 — Justiça dos Estados
+
+- **TARGET:** `CF88:ART.125` · `ENTENDA/CF88:ART.125/BASE/1`
+- **DISPLAY TITLE:** Art. 125 — Justiça dos Estados
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1526 bytes · referências 0
+- **Motivo da seleção:** Visao geral: auto-organizacao da Justica estadual e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 125 determina que os Estados organizem sua Justiça, observados os princípios da Constituição. A competência dos tribunais é definida na Constituição do Estado, e a lei de organização judiciária é de iniciativa do Tribunal de Justiça. Os parágrafos tratam do controle de constitucionalidade estadual, da Justiça Militar estadual, das câmaras regionais e da justiça itinerante.
+
+**O QUE SIGNIFICA**
+
+A Justiça estadual é organizada por cada Estado, mas dentro dos limites da Constituição Federal.
+
+Dois instrumentos dividem essa tarefa: a Constituição estadual define a competência dos tribunais, e a lei de organização judiciária, proposta pelo Tribunal de Justiça, estrutura comarcas, varas e serviços.
+
+Os §§ 6º e 7º aproximam a Justiça do cidadão, com câmaras regionais e justiça itinerante.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado quer criar novas varas em cidades do interior. A mudança é feita por lei de organização judiciária, cujo projeto é enviado pelo Tribunal de Justiça à Assembleia Legislativa.
+
+**ATENÇÃO**
+
+O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadual (§§ 3º a 5º) têm explicações próprias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Organização judiciária*: estrutura de comarcas, varas, tribunais e serviços da Justiça.
+- *Iniciativa*: poder de apresentar o projeto de lei.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 125, § 2º — Controle de constitucionalidade estadual
+
+- **TARGET:** `CF88:ART.125:PAR.2` · `ENTENDA/CF88:ART.125:PAR.2/BASE/1`
+- **DISPLAY TITLE:** Art. 125, § 2º — Controle de constitucionalidade estadual
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.125`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 190 palavras · 1820 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: representacao de inconstitucionalidade diante da Constituicao estadual e vedacao de legitimado unico.
+
+**O QUE DIZ**
+
+O § 2º atribui aos Estados a criação da representação de inconstitucionalidade contra leis ou atos normativos estaduais e municipais que contrariem a Constituição do Estado. É proibido atribuir a legitimação para propor essa ação a um único órgão.
+
+**O QUE SIGNIFICA**
+
+Assim como existe controle de constitucionalidade em relação à Constituição Federal, os Estados podem ter um controle próprio, tendo como parâmetro a Constituição estadual.
+
+O objeto são leis e atos normativos estaduais e municipais. O parâmetro é a Constituição do Estado.
+
+A vedação final impede que só uma autoridade possa propor a ação: a Constituição estadual precisa prever mais de um legitimado.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei municipal contraria regra da Constituição do Estado sobre servidores. Um dos legitimados previstos na Constituição estadual propõe a representação de inconstitucionalidade no Tribunal de Justiça.
+
+**ATENÇÃO**
+
+O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Federal como parâmetro nesse controle estadual não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Representação de inconstitucionalidade*: ação estadual para declarar uma norma contrária à Constituição do Estado.
+- *Legitimação para agir*: autorização para propor a ação.
+- *Parâmetro*: norma usada como referência para julgar a validade de outra.
+
+**CAMADA EXTERNA**
+
+- O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
+
+- **TARGET:** `CF88:ART.125:PAR.3` · `ENTENDA/CF88:ART.125:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.125:PAR.4`, `CF88:ART.125:PAR.5`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.125`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 308 palavras · 2504 bytes · referências 0
+- **Motivo da seleção:** Bloco: criacao, estrutura, competencia e divisao interna da Justica Militar estadual.
+
+**O QUE DIZ**
+
+O § 3º permite que a lei estadual, por proposta do Tribunal de Justiça, crie a Justiça Militar estadual. No primeiro grau atuam os juízes de direito e os Conselhos de Justiça. No segundo grau atua o Tribunal de Justiça ou, onde o efetivo militar passar de vinte mil integrantes, um Tribunal de Justiça Militar. O § 4º lhe atribui os crimes militares dos militares estaduais e as ações judiciais contra punições disciplinares militares, com ressalva para o júri quando a vítima for civil. O § 5º divide o primeiro grau entre o juiz de direito e o Conselho de Justiça.
+
+**O QUE SIGNIFICA**
+
+A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.
+
+Sua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, prevalece a competência do júri, que a Constituição reserva aos crimes dolosos contra a vida (art. 5º, XXXVIII, d).
+
+No primeiro grau, o juiz de direito julga sozinho os crimes militares contra civis e as ações disciplinares. Os demais crimes militares ficam com o Conselho de Justiça, presidido pelo juiz de direito.
+
+Cabe ao tribunal competente decidir se oficiais perdem posto e patente e se praças perdem a graduação.
+
+**EXEMPLO PRÁTICO**
+
+Um policial militar é acusado de lesão corporal contra um civil durante uma abordagem, conduta prevista como crime militar. O caso é julgado pelo juiz de direito do juízo militar, sozinho, porque a vítima é civil.
+
+**ATENÇÃO**
+
+A ressalva do júri vale quando a vítima é civil; a delimitação dos crimes abrangidos é da lei e da camada JURISPRUDÊNCIA. O Tribunal de Justiça Militar depende de efetivo superior a vinte mil integrantes.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Conselho de Justiça*: órgão colegiado do primeiro grau da Justiça Militar, presidido por juiz de direito.
+- *Patente*: grau hierárquico do oficial militar.
+- *Praça*: militar que não é oficial, como soldados e sargentos.
+
+**CAMADA EXTERNA**
+
+- Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: crimes militares definidos em lei e as ações)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

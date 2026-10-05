@@ -1,6 +1,6 @@
 # MACRO07 — REVISÃO HUMANA COMPLETA (fila D)
 
-Lote `ENTENDA_CF_MACRO_BATCH_07` · 8 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
+Lote `ENTENDA_CF_MACRO_BATCH_07` · 18 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
 
 ## Índice
 
@@ -12,6 +12,16 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 8 itens · nenhum aprovado. Só itens com LE
 6. [A] `CF88:ART.100:PAR.5` — Art. 100, § 5º — Inclusão dos precatórios no orçamento · TRANSITION_OR_TEMPORAL
 7. [A] `CF88:ART.100:PAR.9` — Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa · JUDICIAL_REVIEW_ANNOTATED
 8. [A] `CF88:ART.100:PAR.12` — Art. 100, § 12 — Atualização e juros dos precatórios · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED
+9. [B] `CF88:ART.102` — Art. 102 — Competências do Supremo Tribunal Federal · JUDICIAL_REVIEW_ANNOTATED
+10. [B] `CF88:ART.102:PAR.2` — Art. 102, § 2º — Efeito vinculante nas ações de controle · JUDICIAL_REVIEW_ANNOTATED
+11. [B] `CF88:ART.103-A` — Art. 103-A — Enunciado com efeito vinculante do Supremo · INTERPRETIVE_CONTROVERSY
+12. [B] `CF88:ART.105:PAR.2` — Art. 105, §§ 2º e 3º — Relevância no recurso especial · TRANSITION_OR_TEMPORAL
+13. [B] `CF88:ART.114` — Art. 114 — Competência da Justiça do Trabalho · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, INTERPRETIVE_CONTROVERSY, JUDICIAL_REVIEW_ANNOTATED
+14. [B] `CF88:ART.114:INC.I` — Art. 114, inciso I — Ações oriundas da relação de trabalho · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+15. [B] `CF88:ART.114:PAR.1` — Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, JUDICIAL_REVIEW_ANNOTATED
+16. [B] `CF88:ART.114:PAR.3` — Art. 114, § 3º — Greve em atividade essencial · JUDICIAL_REVIEW_ANNOTATED
+17. [B] `CF88:ART.124` — Art. 124 — Competência da Justiça Militar · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
+18. [B] `CF88:ART.125:PAR.2` — Art. 125, § 2º — Controle de constitucionalidade estadual · JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS
 
 ## 1. Art. 82 — Duração e início do mandato presidencial
 
@@ -471,6 +481,568 @@ Este parágrafo tem anotação de controle de constitucionalidade na fonte canô
 **Alertas do validator v2**
 
 - REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 4425" — O § 12 tem anotação de controle de constitucionalidade na fonte canônica (Vide ADI 4425), e o índice de correção dos requisitórios foi tratado em emendas poster
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 9. Art. 102 — Competências do Supremo Tribunal Federal
+
+- `CF88:ART.102` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.102/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392
+- Dispositivos citados (runtime): `ART.102:INC.I` processar e julgar, originariamente: · `ART.102:INC.II` julgar, em recurso ordinário: · `ART.102:INC.III` julgar, mediante recurso extraordinário, as causas decididas em única ou última instância, quando a decisão recorrida: · `ART.102:PAR.2` As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de…
+
+**Lei Seca**
+
+- `CF88:ART.102:CAPUT`: Compete ao Supremo Tribunal Federal, precipuamente, a guarda da Constituição, cabendo-lhe:
+- `CF88:ART.102:INC.I`: processar e julgar, originariamente:
+- `CF88:ART.102:INC.I:AL.a`: a ação direta de inconstitucionalidade de lei ou ato normativo federal ou estadual e a ação declaratória de constitucionalidade de lei ou ato normativo federal;
+- `CF88:ART.102:INC.I:AL.b`: nas infrações penais comuns, o Presidente da República, o Vice-Presidente, os membros do Congresso Nacional, seus próprios Ministros e o Procurador-Geral da República;
+- `CF88:ART.102:INC.I:AL.c`: nas infrações penais comuns e nos crimes de responsabilidade, os Ministros de Estado e os Comandantes da Marinha, do Exército e da Aeronáutica, ressalvado o disposto no art. 52, I, os membros dos Tribunais Superiores, os do Tribunal de Contas da União e os chefes de missão diplomática de caráter permanente;
+- `CF88:ART.102:INC.I:AL.d`: o habeas corpus, sendo paciente qualquer das pessoas referidas nas alíneas anteriores; o mandado de segurança e o habeas data contra atos do Presidente da República, das Mesas da Câmara dos Deputados e do Senado Federal, do Tribunal de Contas da União, do Procurador-Geral da República e do próprio Supremo Tribunal Federal;
+- `CF88:ART.102:INC.I:AL.e`: o litígio entre Estado estrangeiro ou organismo internacional e a União, o Estado, o Distrito Federal ou o Território;
+- `CF88:ART.102:INC.I:AL.f`: as causas e os conflitos entre a União e os Estados, a União e o Distrito Federal, ou entre uns e outros, inclusive as respectivas entidades da administração indireta;
+- `CF88:ART.102:INC.I:AL.g`: a extradição solicitada por Estado estrangeiro;
+- `CF88:ART.102:INC.I:AL.h`: (Revogada).
+- `CF88:ART.102:INC.I:AL.i`: o habeas corpus, quando o coator for Tribunal Superior ou quando o coator ou o paciente for autoridade ou funcionário cujos atos estejam sujeitos diretamente à jurisdição do Supremo Tribunal Federal, ou se trate de crime sujeito à mesma jurisdição em uma única instância;
+- `CF88:ART.102:INC.I:AL.j`: a revisão criminal e a ação rescisória de seus julgados;
+- `CF88:ART.102:INC.I:AL.l`: a reclamação para a preservação de sua competência e garantia da autoridade de suas decisões;
+- `CF88:ART.102:INC.I:AL.m`: a execução de sentença nas causas de sua competência originária, facultada a delegação de atribuições para a prática de atos processuais;
+- `CF88:ART.102:INC.I:AL.n`: a ação em que todos os membros da magistratura sejam direta ou indiretamente interessados, e aquela em que mais da metade dos membros do tribunal de origem estejam impedidos ou sejam direta ou indiretamente interessados;
+- `CF88:ART.102:INC.I:AL.o`: os conflitos de competência entre o Superior Tribunal de Justiça e quaisquer tribunais, entre Tribunais Superiores, ou entre estes e qualquer outro tribunal;
+- `CF88:ART.102:INC.I:AL.p`: o pedido de medida cautelar das ações diretas de inconstitucionalidade;
+- `CF88:ART.102:INC.I:AL.q`: o mandado de injunção, quando a elaboração da norma regulamentadora for atribuição do Presidente da República, do Congresso Nacional, da Câmara dos Deputados, do Senado Federal, da Mesa de uma dessas Casas Legislativas, do Tribunal de Contas da União, de um dos Tribunais Superiores, ou do próprio Supremo Tribunal Federal;
+- `CF88:ART.102:INC.I:AL.r`: as ações contra o Conselho Nacional de Justiça e contra o Conselho Nacional do Ministério Público;
+- `CF88:ART.102:INC.II`: julgar, em recurso ordinário:
+- `CF88:ART.102:INC.II:AL.a`: o habeas corpus, o mandado de segurança, o habeas data e o mandado de injunção decididos em única instância pelos Tribunais Superiores, se denegatória a decisão;
+- `CF88:ART.102:INC.II:AL.b`: o crime político;
+- `CF88:ART.102:INC.III`: julgar, mediante recurso extraordinário, as causas decididas em única ou última instância, quando a decisão recorrida:
+- `CF88:ART.102:INC.III:AL.a`: contrariar dispositivo desta Constituição;
+- `CF88:ART.102:INC.III:AL.b`: declarar a inconstitucionalidade de tratado ou lei federal;
+- `CF88:ART.102:INC.III:AL.c`: julgar válida lei ou ato de governo local contestado em face desta Constituição.
+- `CF88:ART.102:INC.III:AL.d`: julgar válida lei local contestada em face de lei federal.
+- `CF88:ART.102:PAR.1`: A argüição de descumprimento de preceito fundamental, decorrente desta Constituição, será apreciada pelo Supremo Tribunal Federal, na forma da lei.
+- `CF88:ART.102:PAR.2`: As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal.
+- `CF88:ART.102:PAR.3`: No recurso extraordinário o recorrente deverá demonstrar a repercussão geral das questões constitucionais discutidas no caso, nos termos da lei, a fim de que o Tribunal examine a admissão do recurso, somente podendo recusá-lo pela manifestação de dois terços de seus membros.
+
+**O QUE DIZ**
+
+O art. 102 atribui ao Supremo Tribunal Federal, como função principal, a guarda da Constituição. Entre outras atribuições, ele julga causas originariamente (inciso I), julga recursos ordinários em casos específicos (inciso II) e julga o recurso extraordinário contra decisões que tocam a Constituição (inciso III). Os parágrafos tratam da arguição de descumprimento de preceito fundamental, do efeito das decisões nas ações de controle e da repercussão geral.
+
+**O QUE SIGNIFICA**
+
+O artigo mostra as três portas de entrada de um processo no Supremo.
+
+Na competência originária, a causa começa e termina no próprio tribunal: é o caso das ações de controle de constitucionalidade e dos processos contra altas autoridades.
+
+No recurso ordinário, o Supremo funciona como segunda instância de algumas decisões dos Tribunais Superiores, como as que negam habeas corpus ou mandado de segurança, e de casos de crime político.
+
+No recurso extraordinário, o Supremo revisa decisões finais de outros tribunais quando está em jogo a interpretação da Constituição. A arguição de descumprimento de preceito fundamental é outra ação de controle, apreciada na forma da lei.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei estadual é questionada diretamente no Supremo por ação direta: competência originária. Em outro processo, uma pessoa perde no tribunal de origem e alega que a decisão contraria a Constituição: o caminho é o recurso extraordinário.
+
+**ATENÇÃO**
+
+O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria. O alcance de cada competência e as condições de admissão dos recursos são definidos também pela lei processual e pela camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Competência originária*: processo que começa diretamente no tribunal, sem passar por instância inferior.
+- *Recurso extraordinário*: recurso ao Supremo contra decisão final que envolve questão constitucional.
+- *Repercussão geral*: requisito de relevância da questão constitucional para que o recurso extraordinário seja examinado.
+- *Preceito fundamental*: norma da Constituição considerada essencial para a ordem constitucional.
+
+**CAMADA EXTERNA**
+
+- A lei que regula a arguição de descumprimento de preceito fundamental e as leis processuais das ações de controle ficam na camada de legislação correlata.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 10. Art. 102, § 2º — Efeito vinculante nas ações de controle
+
+- `CF88:ART.102:PAR.2` · DEVICE · risco HIGH · ENTENDA/CF88:ART.102:PAR.2/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: CONTEXT_ONLY
+- Por que exige raciocínio humano: JUDICIAL_REVIEW_ANNOTATED: ART.102:PAR.2: Vide ADIN 3392
+- Vigência (fonte canônica): Redacao dada pela Emenda Constitucional n. 45, de 2004; Vide ADIN 3392
+
+**Lei Seca**
+
+- `CF88:ART.102:PAR.2`: As decisões definitivas de mérito, proferidas pelo Supremo Tribunal Federal, nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade produzirão eficácia contra todos e efeito vinculante, relativamente aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal.
+
+**O QUE DIZ**
+
+O § 2º estabelece que, na ação direta de inconstitucionalidade e na declaratória de constitucionalidade, a decisão definitiva de mérito do Supremo tem eficácia contra todos e efeito vinculante. Esse efeito alcança os demais órgãos do Poder Judiciário e a administração pública direta e indireta da União, dos Estados e dos Municípios.
+
+**O QUE SIGNIFICA**
+
+Nessas ações, o Supremo não decide um caso entre duas partes, mas a validade de uma norma em tese. Por isso a decisão vale para todos.
+
+O efeito vinculante significa que juízes, tribunais e órgãos da administração ficam obrigados a seguir a decisão. Um juiz não pode aplicar uma lei que o Supremo declarou inconstitucional nessas ações.
+
+O texto exige que a decisão seja definitiva e de mérito: decisões provisórias ou que não examinam o conteúdo da norma não estão descritas neste parágrafo.
+
+**EXEMPLO PRÁTICO**
+
+O Supremo julga procedente uma ação direta contra uma lei estadual de tributos. A partir daí, a secretaria de fazenda do Estado não pode mais cobrar com base nessa lei, e os juízes não podem aplicá-la.
+
+**ATENÇÃO**
+
+O texto não menciona o Poder Legislativo entre os destinatários do efeito vinculante. Questões como o alcance desse efeito, o momento em que começa a valer e sua aplicação a outras ações de controle pertencem à camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Decisão de mérito*: decisão que examina o conteúdo da questão, e não só aspectos formais do processo.
+- *Eficácia contra todos*: efeito que alcança qualquer pessoa, e não apenas as partes do processo.
+- *Efeito vinculante*: obrigação de os órgãos indicados seguirem a decisão.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota este parágrafo com controle de constitucionalidade (Vide ADIN 3392): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 11. Art. 103-A — Enunciado com efeito vinculante do Supremo
+
+- `CF88:ART.103-A` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.103-A/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: INTERPRETIVE_CONTROVERSY: "controvérsia"
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: CONTEXT_ONLY
+- Por que exige raciocínio humano: INTERPRETIVE_CONTROVERSY: "controvérsia"
+
+**Lei Seca**
+
+- `CF88:ART.103-A:CAPUT`: O Supremo Tribunal Federal poderá, de ofício ou por provocação, mediante decisão de dois terços dos seus membros, após reiteradas decisões sobre matéria constitucional, aprovar súmula que, a partir de sua publicação na imprensa oficial, terá efeito vinculante em relação aos demais órgãos do Poder Judiciário e à administração pública direta e indireta, nas esferas federal, estadual e municipal, bem como proceder à sua revisão ou cancelamento, na forma estabelecida em lei.
+- `CF88:ART.103-A:PAR.1`: A súmula terá por objetivo a validade, a interpretação e a eficácia de normas determinadas, acerca das quais haja controvérsia atual entre órgãos judiciários ou entre esses e a administração pública que acarrete grave insegurança jurídica e relevante multiplicação de processos sobre questão idêntica.
+- `CF88:ART.103-A:PAR.2`: Sem prejuízo do que vier a ser estabelecido em lei, a aprovação, revisão ou cancelamento de súmula poderá ser provocada por aqueles que podem propor a ação direta de inconstitucionalidade.
+- `CF88:ART.103-A:PAR.3`: Do ato administrativo ou decisão judicial que contrariar a súmula aplicável ou que indevidamente a aplicar, caberá reclamação ao Supremo Tribunal Federal que, julgando-a procedente, anulará o ato administrativo ou cassará a decisão judicial reclamada, e determinará que outra seja proferida com ou sem a aplicação da súmula, conforme o caso.
+
+**O QUE DIZ**
+
+O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros um enunciado com efeito vinculante, depois de reiteradas decisões sobre matéria constitucional. O efeito alcança os demais órgãos do Judiciário e a administração pública direta e indireta, a partir da publicação na imprensa oficial. O tribunal também pode revisar ou cancelar o enunciado, na forma da lei. O § 1º define o objeto do enunciado, o § 2º indica quem pode pedir sua aprovação, revisão ou cancelamento, e o § 3º prevê a reclamação.
+
+**O QUE SIGNIFICA**
+
+O artigo cria um instrumento para fixar, de forma obrigatória, a interpretação do Supremo sobre um tema constitucional já decidido muitas vezes.
+
+Há três requisitos: decisões reiteradas sobre a matéria, aprovação por dois terços dos Ministros e publicação oficial. Só a partir da publicação o efeito vinculante começa.
+
+O objeto é a validade, a interpretação e a eficácia de normas determinadas, quando há controvérsia atual que cause grave insegurança jurídica e multiplicação de processos sobre a mesma questão.
+
+Os legitimados para provocar o tribunal são os mesmos que podem propor a ação direta de inconstitucionalidade, sem prejuízo do que a lei estabelecer.
+
+**EXEMPLO PRÁTICO**
+
+Depois de julgar centenas de casos iguais sobre uma cobrança feita por prefeituras, o Supremo aprova um enunciado vinculante. A partir da publicação, juízes e prefeituras precisam seguir aquele entendimento.
+
+**ATENÇÃO**
+
+Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca ele aparece com o nome próprio que a Constituição lhe dá. O efeito vinculante alcança Judiciário e administração; o texto não inclui o Poder Legislativo na sua função de legislar.
+
+**PALAVRAS DIFÍCEIS**
+
+- *De ofício*: por iniciativa do próprio tribunal, sem pedido de ninguém.
+- *Efeito vinculante*: obrigação de os órgãos indicados seguirem o enunciado.
+- *Insegurança jurídica*: incerteza sobre qual regra vale, causada por decisões divergentes.
+
+**CAMADA EXTERNA**
+
+- Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). A fonte canônica remete à Lei n. 11.417, de 2006, que disciplina o procedimento, na camada de legislação correlata.
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_significa: "a interpretação e a eficácia de normas determinadas" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 12. Art. 105, §§ 2º e 3º — Relevância no recurso especial
+
+- `CF88:ART.105:PAR.2` · BLOCK · risco HIGH · ENTENDA/CF88:ART.105:PAR.2/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TRANSITION_OR_TEMPORAL: transicao/nota temporal
+
+**Lei Seca**
+
+- `CF88:ART.105:PAR.2`: No recurso especial, o recorrente deve demonstrar a relevância das questões de direito federal infraconstitucional discutidas no caso, nos termos da lei, a fim de que a admissão do recurso seja examinada pelo Tribunal, o qual somente pode dele não conhecer com base nesse motivo pela manifestação de 2/3 (dois terços) dos membros do órgão competente para o julgamento.
+- `CF88:ART.105:PAR.3`: Haverá a relevância de que trata o § 2º deste artigo nos seguintes casos:
+- `CF88:ART.105:PAR.3:INC.I`: ações penais;
+- `CF88:ART.105:PAR.3:INC.II`: ações de improbidade administrativa;
+- `CF88:ART.105:PAR.3:INC.III`: ações cujo valor da causa ultrapasse 500 (quinhentos) salários mínimos;
+- `CF88:ART.105:PAR.3:INC.IV`: ações que possam gerar inelegibilidade;
+- `CF88:ART.105:PAR.3:INC.V`: hipóteses em que o acórdão recorrido contrariar jurisprudência dominante do Superior Tribunal de Justiça;
+- `CF88:ART.105:PAR.3:INC.VI`: outras hipóteses previstas em lei.
+
+**O QUE DIZ**
+
+O § 2º exige que, no recurso especial, o recorrente demonstre a relevância das questões de direito federal infraconstitucional, nos termos da lei. O tribunal só pode deixar de conhecer do recurso por esse motivo com o voto de dois terços dos membros do órgão competente. O § 3º indica casos em que essa relevância existe: ações penais, ações de improbidade administrativa, ações de valor superior a quinhentos salários mínimos, ações que possam gerar inelegibilidade, decisões contrárias à jurisprudência dominante do tribunal e outras hipóteses previstas em lei.
+
+**O QUE SIGNIFICA**
+
+O filtro de relevância funciona para o recurso especial de modo parecido com a repercussão geral no Supremo.
+
+Como regra, o recorrente precisa demonstrar que a questão é relevante. Nos casos do § 3º, porém, a própria Constituição já reconhece a relevância.
+
+A recusa por falta de relevância exige quórum alto: dois terços do órgão que julgaria o recurso.
+
+**EXEMPLO PRÁTICO**
+
+Em uma ação de improbidade administrativa, o réu interpõe recurso especial. Como a hipótese está no § 3º, a relevância já está reconhecida pelo texto e não pode servir de motivo para recusar o recurso.
+
+**ATENÇÃO**
+
+O § 2º remete à lei a regulamentação do filtro. A partir de quando ele passou a ser exigido depende dessa regulamentação e de regra de transição da emenda que o criou, consultadas na camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Direito infraconstitucional*: normas abaixo da Constituição, como leis e decretos.
+- *Não conhecer do recurso*: recusar o exame do recurso, sem julgar o seu conteúdo.
+- *Repercussão geral*: filtro equivalente exigido no recurso extraordinário ao Supremo (art. 102, § 3º).
+- *Inelegibilidade*: impedimento de se candidatar a cargo eletivo.
+
+**CAMADA EXTERNA**
+
+- A regulamentação legal do filtro de relevância e sua aplicação no tempo dependem de lei e de regra de transição da emenda: EXTERNAL_VERIFICATION_REQUIRED.
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "a relevância das questões de direito federal infraconstitucional" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 13. Art. 114 — Competência da Justiça do Trabalho
+
+- `CF88:ART.114` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.114/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "controvérsias"; JUDICIAL_REVIEW_ANNOTATED: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10)
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "controvérsias"; JUDICIAL_REVIEW_ANNOTATED: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10)
+- Resolver externo: EXTERNAL_VERIFICATION_REQUIRED via None
+- Dispositivos citados (runtime): `ART.114:INC.IX` outras controvérsias decorrentes da relação de trabalho, na forma da lei. · `ART.114:INC.II` as ações que envolvam exercício do direito de greve; · `ART.114:PAR.2` Recusando-se qualquer das partes à negociação coletiva ou à arbitragem, é facultado às mesmas, de comum acordo, ajuizar dissídio coletivo de natureza…
+
+**Lei Seca**
+
+- `CF88:ART.114:CAPUT`: Compete à Justiça do Trabalho processar e julgar:
+- `CF88:ART.114:INC.I`: as ações oriundas da relação de trabalho, abrangidos os entes de direito público externo e da administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios;
+- `CF88:ART.114:INC.II`: as ações que envolvam exercício do direito de greve;
+- `CF88:ART.114:INC.III`: as ações sobre representação sindical, entre sindicatos, entre sindicatos e trabalhadores, e entre sindicatos e empregadores;
+- `CF88:ART.114:INC.IV`: os mandados de segurança, habeas corpus e habeas data, quando o ato questionado envolver matéria sujeita à sua jurisdição;
+- `CF88:ART.114:INC.V`: os conflitos de competência entre órgãos com jurisdição trabalhista, ressalvado o disposto no art. 102, I, o;
+- `CF88:ART.114:INC.VI`: as ações de indenização por dano moral ou patrimonial, decorrentes da relação de trabalho;
+- `CF88:ART.114:INC.VII`: as ações relativas às penalidades administrativas impostas aos empregadores pelos órgãos de fiscalização das relações de trabalho; VII I - a execução, de ofício, das contribuições sociais previstas no art. 195, I, a, e II, e seus acréscimos legais, decorrentes das sentenças que proferir;
+- `CF88:ART.114:INC.IX`: outras controvérsias decorrentes da relação de trabalho, na forma da lei.
+- `CF88:ART.114:PAR.1`: Frustrada a negociação coletiva, as partes poderão eleger árbitros.
+- `CF88:ART.114:PAR.2`: Recusando-se qualquer das partes à negociação coletiva ou à arbitragem, é facultado às mesmas, de comum acordo, ajuizar dissídio coletivo de natureza econômica, podendo a Justiça do Trabalho decidir o conflito, respeitadas as disposições mínimas legais de proteção ao trabalho, bem como as convencionadas anteriormente.
+- `CF88:ART.114:PAR.3`: Em caso de greve em atividade essencial, com possibilidade de lesão do interesse público, o Ministério Público do Trabalho poderá ajuizar dissídio coletivo, competindo à Justiça do Trabalho decidir o conflito.
+
+**O QUE DIZ**
+
+O art. 114 lista o que a Justiça do Trabalho processa e julga. Entre outras, estão as ações oriundas da relação de trabalho, as que envolvem o exercício do direito de greve, as disputas sobre representação sindical, os mandados de segurança, habeas corpus e habeas data em matéria trabalhista. Também estão os conflitos de competência entre órgãos trabalhistas (ressalvada a competência do Supremo), as indenizações por dano moral ou patrimonial decorrentes da relação de trabalho e as ações sobre penalidades aplicadas pela fiscalização do trabalho. Inclui ainda a execução de ofício de contribuições sociais decorrentes das suas sentenças e outras controvérsias da relação de trabalho, na forma da lei. Os parágrafos tratam de arbitragem, dissídio coletivo e greve em atividade essencial.
+
+**O QUE SIGNIFICA**
+
+O artigo tem como eixo a relação de trabalho. Os incisos reúnem tudo o que dela decorre: o conflito individual, a greve, a disputa entre sindicatos, as indenizações e as multas aplicadas ao empregador pela fiscalização.
+
+O inciso IX deixa a porta aberta para a lei acrescentar outras controvérsias da relação de trabalho.
+
+Os parágrafos tratam dos conflitos coletivos, que envolvem categorias inteiras e não apenas um empregado. Eles preveem negociação, arbitragem e, em último caso, o dissídio coletivo.
+
+**EXEMPLO PRÁTICO**
+
+Um sindicato de trabalhadores entra em greve e a empresa pede ao Judiciário que declare a greve abusiva. A ação é da Justiça do Trabalho, pelo inciso II.
+
+**ATENÇÃO**
+
+O caput e os §§ 2º e 3º têm anotações de controle de constitucionalidade na fonte canônica. O alcance da competência trabalhista em vários incisos não deve ser deduzido apenas do texto: ele é delimitado pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Relação de trabalho*: vínculo em que uma pessoa presta serviço a outra, sendo o emprego a forma mais comum.
+- *Dissídio coletivo*: processo que resolve um conflito entre categorias, e não entre pessoas determinadas.
+- *Execução de ofício*: cobrança iniciada pelo próprio juiz, sem pedido da parte.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Observação estrutural: no texto consolidado do runtime, o conteúdo do inciso VIII aparece anexado ao inciso VII; a separação deve ser conferida na fonte oficial.
+
+**Alertas do validator v2**
+
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520):
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "da relação de trabalho na forma da lei" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 14. Art. 114, inciso I — Ações oriundas da relação de trabalho
+
+- `CF88:ART.114:INC.I` · ITEM · risco HIGH · ENTENDA/CF88:ART.114:INC.I/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"
+
+**Lei Seca**
+
+- `CF88:ART.114:INC.I`: as ações oriundas da relação de trabalho, abrangidos os entes de direito público externo e da administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios;
+
+**O QUE DIZ**
+
+O inciso I atribui à Justiça do Trabalho as ações que nascem da relação de trabalho. O texto menciona expressamente os entes de direito público externo e a administração pública, direta e indireta, de qualquer nível da Federação.
+
+**O QUE SIGNIFICA**
+
+O critério do inciso é a origem do conflito: se ele nasce de uma relação de trabalho, a competência é trabalhista.
+
+O texto fala em relação de trabalho, expressão mais ampla do que relação de emprego. Também menciona os entes públicos, inclusive Estados estrangeiros e organismos internacionais, como possíveis partes.
+
+A menção à administração pública, porém, não resolve sozinha quais vínculos com o poder público ficam na Justiça do Trabalho.
+
+**EXEMPLO PRÁTICO**
+
+Um empregado contratado com carteira assinada por uma empresa pública federal é dispensado e cobra verbas rescisórias. A ação nasce da relação de trabalho e vai à Justiça do Trabalho.
+
+**ATENÇÃO**
+
+A leitura isolada do inciso não basta para saber se servidores com vínculo estatutário ou de natureza administrativa estão abrangidos. Esse ponto é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ente de direito público externo*: Estado estrangeiro ou organismo internacional.
+- *Vínculo estatutário*: relação do servidor com o poder público regida por lei própria, e não por contrato de trabalho.
+
+**CAMADA EXTERNA**
+
+- A exclusão de vínculos estatutários ou administrativos da competência trabalhista resulta de interpretação do Supremo sobre o caput e este inciso: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA (a fonte canônica anota o caput com Vide ADIN 3392 e ADIN 3432).
+
+**Alertas do validator v2**
+
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 15. Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
+
+- `CF88:ART.114:PAR.1` · BLOCK · risco HIGH · ENTENDA/CF88:ART.114:PAR.1/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não devem ser deduzidos"; JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3)
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não devem ser deduzidos"; JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3)
+- Resolver externo: EXTERNAL_VERIFICATION_REQUIRED via None
+
+**Lei Seca**
+
+- `CF88:ART.114:PAR.1`: Frustrada a negociação coletiva, as partes poderão eleger árbitros.
+- `CF88:ART.114:PAR.2`: Recusando-se qualquer das partes à negociação coletiva ou à arbitragem, é facultado às mesmas, de comum acordo, ajuizar dissídio coletivo de natureza econômica, podendo a Justiça do Trabalho decidir o conflito, respeitadas as disposições mínimas legais de proteção ao trabalho, bem como as convencionadas anteriormente.
+
+**O QUE DIZ**
+
+O § 1º permite que as partes elejam árbitros quando a negociação coletiva fracassar. O § 2º estabelece que, se uma das partes recusar a negociação coletiva ou a arbitragem, as partes podem, de comum acordo, ajuizar dissídio coletivo de natureza econômica. A Justiça do Trabalho então decide o conflito, respeitando as disposições mínimas legais de proteção ao trabalho e as que foram convencionadas antes.
+
+**O QUE SIGNIFICA**
+
+Os parágrafos descrevem uma escada para resolver conflitos coletivos.
+
+O primeiro degrau é a negociação entre sindicatos e empresas. Se ela falha, as partes podem escolher a arbitragem.
+
+O último degrau é o dissídio coletivo econômico, em que a Justiça do Trabalho fixa condições de trabalho, como reajustes. O texto exige comum acordo para esse ajuizamento.
+
+A decisão judicial tem um piso: não pode ficar abaixo das proteções mínimas da lei nem das conquistas já convencionadas.
+
+**EXEMPLO PRÁTICO**
+
+Sindicato e empresas não chegam a acordo sobre o reajuste anual. Se ambos concordarem, levam o caso à Justiça do Trabalho, que fixa o reajuste respeitando os direitos já previstos em lei e em acordos anteriores.
+
+**ATENÇÃO**
+
+A exigência de comum acordo e seu alcance não devem ser deduzidos apenas do texto: o tema foi objeto de controle de constitucionalidade (anotações na fonte canônica) e fica na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Negociação coletiva*: negociação entre sindicato de trabalhadores e empregadores sobre condições de trabalho.
+- *Arbitragem*: solução de conflito por um terceiro escolhido pelas partes.
+- *Dissídio coletivo econômico*: processo em que a Justiça do Trabalho fixa condições de trabalho para uma categoria.
+
+**CAMADA EXTERNA**
+
+- A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "as disposições mínimas legais de proteção ao trabalho" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 16. Art. 114, § 3º — Greve em atividade essencial
+
+- `CF88:ART.114:PAR.3` · DEVICE · risco HIGH · ENTENDA/CF88:ART.114:PAR.3/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2)
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: JUDICIAL_REVIEW_ANNOTATED: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2)
+- Vigência (fonte canônica): Redacao dada pela Emenda Constitucional n. 45, de 2004; Vide ADI n. 3423; Vide ADI n. 3431; Vide ADI n. 3520; Vide ADIN 3392; Vide ADIN 3432
+- Resolver externo: EXTERNAL_VERIFICATION_REQUIRED via None
+
+**Lei Seca**
+
+- `CF88:ART.114:PAR.3`: Em caso de greve em atividade essencial, com possibilidade de lesão do interesse público, o Ministério Público do Trabalho poderá ajuizar dissídio coletivo, competindo à Justiça do Trabalho decidir o conflito.
+
+**O QUE DIZ**
+
+O § 3º estabelece que, havendo greve em atividade essencial que possa lesar o interesse público, o Ministério Público do Trabalho pode ajuizar dissídio coletivo. A decisão do conflito cabe à Justiça do Trabalho.
+
+**O QUE SIGNIFICA**
+
+Nas greves comuns, o conflito é das partes: sindicatos e empregadores. Quando a greve atinge atividade essencial e pode prejudicar o interesse público, entra em cena um terceiro.
+
+O Ministério Público do Trabalho ganha legitimidade para levar o conflito à Justiça do Trabalho, sem precisar do acordo das partes exigido no § 2º.
+
+O texto exige duas condições: que a atividade seja essencial e que haja possibilidade de lesão ao interesse público.
+
+**EXEMPLO PRÁTICO**
+
+Trabalhadores de uma empresa de transporte coletivo entram em greve sem garantir o atendimento mínimo à população. O Ministério Público do Trabalho ajuíza dissídio coletivo, e a Justiça do Trabalho decide o conflito.
+
+**ATENÇÃO**
+
+O parágrafo não define quais são as atividades essenciais; isso está na lei de greve. O parágrafo tem anotações de controle de constitucionalidade na fonte canônica, a conferir na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Atividade essencial*: serviço indispensável à comunidade, definido em lei.
+- *Ajuizar*: propor uma ação na Justiça.
+
+**CAMADA EXTERNA**
+
+- A lista legal de atividades essenciais fica na lei de greve, na camada de legislação correlata.
+- A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432): EXTERNAL_VERIFICATION_REQUIRED.
+
+**Alertas do validator v2**
+
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432):
+- REVIEW_REQUIRED · EXTERNAL_FACT_NEEDS_PROVENANCE · external_layer_notes: "ADI 3423" — A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432):
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 17. Art. 124 — Competência da Justiça Militar
+
+- `CF88:ART.124` · OVERVIEW · risco HIGH · ENTENDA/CF88:ART.124/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Dispositivos citados (runtime): `ART.125:PAR.4` Compete à Justiça Militar estadual processar e julgar os militares dos Estados, nos crimes militares definidos em lei e as ações judiciais contra atos…
+
+**Lei Seca**
+
+- `CF88:ART.124:CAPUT`: À Justiça Militar compete processar e julgar os crimes militares definidos em lei.
+- `CF88:ART.124:PAR.UNICO`: A lei disporá sobre a organização, o funcionamento e a competência da Justiça Militar.
+
+**O QUE DIZ**
+
+O art. 124 atribui à Justiça Militar o processo e o julgamento dos crimes militares definidos em lei. O parágrafo único remete à lei a organização, o funcionamento e a competência da Justiça Militar.
+
+**O QUE SIGNIFICA**
+
+A competência da Justiça Militar da União é definida pela natureza do crime: ela julga crimes militares.
+
+O que é crime militar não está na Constituição. A definição está na lei, que indica quais condutas, em quais circunstâncias, são crimes militares.
+
+O artigo fala em crimes; ele não atribui à Justiça Militar da União o julgamento de ações civis ou disciplinares, diferentemente do que o art. 125, § 4º, faz para a Justiça Militar estadual.
+
+**EXEMPLO PRÁTICO**
+
+Um soldado das Forças Armadas desvia armamento do quartel. Se a lei penal militar define a conduta como crime militar, o caso é julgado pela Justiça Militar da União.
+
+**ATENÇÃO**
+
+Quando um civil pode ser julgado pela Justiça Militar da União não deve ser deduzido apenas do texto: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crime militar*: crime definido como tal na lei penal militar.
+
+**CAMADA EXTERNA**
+
+- O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "a organização o funcionamento e a competência da" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 18. Art. 125, § 2º — Controle de constitucionalidade estadual
+
+- `CF88:ART.125:PAR.2` · DEVICE · risco HIGH · ENTENDA/CF88:ART.125:PAR.2/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+- Sub-bloco B · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: REQUIRED_FOR_CORRECTNESS
+- Por que exige raciocínio humano: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"
+
+**Lei Seca**
+
+- `CF88:ART.125:PAR.2`: Cabe aos Estados a instituição de representação de inconstitucionalidade de leis ou atos normativos estaduais ou municipais em face da Constituição estadual, vedada a atribuição da legitimação para agir a um único órgão.
+
+**O QUE DIZ**
+
+O § 2º atribui aos Estados a criação da representação de inconstitucionalidade contra leis ou atos normativos estaduais e municipais que contrariem a Constituição do Estado. É proibido atribuir a legitimação para propor essa ação a um único órgão.
+
+**O QUE SIGNIFICA**
+
+Assim como existe controle de constitucionalidade em relação à Constituição Federal, os Estados podem ter um controle próprio, tendo como parâmetro a Constituição estadual.
+
+O objeto são leis e atos normativos estaduais e municipais. O parâmetro é a Constituição do Estado.
+
+A vedação final impede que só uma autoridade possa propor a ação: a Constituição estadual precisa prever mais de um legitimado.
+
+**EXEMPLO PRÁTICO**
+
+Uma lei municipal contraria regra da Constituição do Estado sobre servidores. Um dos legitimados previstos na Constituição estadual propõe a representação de inconstitucionalidade no Tribunal de Justiça.
+
+**ATENÇÃO**
+
+O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Federal como parâmetro nesse controle estadual não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Representação de inconstitucionalidade*: ação estadual para declarar uma norma contrária à Constituição do Estado.
+- *Legitimação para agir*: autorização para propor a ação.
+- *Parâmetro*: norma usada como referência para julgar a validade de outra.
+
+**CAMADA EXTERNA**
+
+- O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA.
+
+**Alertas do validator v2**
+
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
