@@ -3,23 +3,32 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
- "explanations": 136,
+ "explanations": 147,
  "risk_counts": {
-  "LOW": 95,
+  "LOW": 104,
   "MEDIUM": 25,
-  "HIGH": 16
+  "HIGH": 18
  },
  "finding_counts": {
   "ABSOLUTE_CLAIM": 3,
+  "DUPLICATION": 2,
   "EXAMPLE_NUMBER": 6,
   "EXCEPTION_NOT_IN_TEXT": 4,
   "EXTRAPOLATION_NUMBER": 9,
   "TRANSITION_IN_CORE": 1
  },
  "unresolved_findings": 0,
- "ready_for_editorial_review": 136,
+ "ready_for_editorial_review": 147,
  "human_approved_t1": 0,
- "duplication_pairs": [],
+ "duplication_pairs": [
+  {
+   "a": "ADCT:ART.76-A",
+   "b": "ADCT:ART.76-B",
+   "section": "o_que_diz",
+   "similarity": 0.456,
+   "shared_sentences": []
+  }
+ ],
  "rows": [
   {
    "target_id": "CF88:ART.176",
@@ -1893,6 +1902,156 @@
    "risk": "HIGH",
    "risk_reasons": [
     "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.64",
+   "explanation_id": "ENTENDA/ADCT:ART.64/BASE/1",
+   "title": "ADCT, art. 64 — Edição popular da Constituição",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.68",
+   "explanation_id": "ENTENDA/ADCT:ART.68/BASE/1",
+   "title": "ADCT, art. 68 — Terras das comunidades quilombolas",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.69",
+   "explanation_id": "ENTENDA/ADCT:ART.69/BASE/1",
+   "title": "ADCT, art. 69 — Consultorias jurídicas dos Estados",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.76",
+   "explanation_id": "ENTENDA/ADCT:ART.76/BASE/1",
+   "title": "ADCT, art. 76 — Desvinculação de receitas da União",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "explanation_id": "ENTENDA/ADCT:ART.76-A/BASE/1",
+   "title": "ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "ADCT:ART.76-A x ADCT:ART.76-B sim=0.456",
+     "resolution": "Arts. 76-A e 76-B tem estrutura paralela por desenho (desvinculacao estadual x municipal); percentuais, datas e excecoes diferem e sao explicados em cada um. Resolucao do drafter, sujeita a revisao humana."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.76-B",
+   "explanation_id": "ENTENDA/ADCT:ART.76-B/BASE/1",
+   "title": "ADCT, art. 76-B — Desvinculação de receitas dos Municípios",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [
+    {
+     "code": "DUPLICATION",
+     "section": "o_que_diz",
+     "detail": "ADCT:ART.76-A x ADCT:ART.76-B sim=0.456",
+     "resolution": "Idem ADCT:ART.76-A (estrutura paralela; conteudo distinto)."
+    }
+   ],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.79",
+   "explanation_id": "ENTENDA/ADCT:ART.79/BASE/1",
+   "title": "ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Vigencia apos 2010 depende de dado externo."
+   ],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.82",
+   "explanation_id": "ENTENDA/ADCT:ART.82/BASE/1",
+   "title": "ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.83",
+   "explanation_id": "ENTENDA/ADCT:ART.83/BASE/1",
+   "title": "ADCT, art. 83 — Definição de produtos e serviços supérfluos",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.87",
+   "explanation_id": "ENTENDA/ADCT:ART.87/BASE/1",
+   "title": "ADCT, art. 87 — Pequeno valor até a lei de cada ente",
+   "role": "OVERVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
+   "findings": [],
+   "unresolved": 0
+  },
+  {
+   "target_id": "ADCT:ART.88",
+   "explanation_id": "ENTENDA/ADCT:ART.88/BASE/1",
+   "title": "ADCT, art. 88 — Alíquota mínima do ISS",
+   "role": "OVERVIEW",
+   "risk": "HIGH",
+   "risk_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo."
    ],
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",

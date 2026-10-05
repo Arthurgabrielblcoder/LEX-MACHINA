@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO HUMANA COMPLETA (fila D)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 16 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 18 itens · nenhum aprovado. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. Ordenado por sub-bloco e dispositivo.
 
 ## Índice
 
@@ -20,6 +20,8 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 16 itens · nenhum aprovado. Só itens com L
 14. [E] `ADCT:ART.52` — ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras · TEMPORAL_STATUS_UNRESOLVED
 15. [E] `ADCT:ART.54-A` — ADCT, art. 54-A — Indenização aos seringueiros · TEMPORAL_STATUS_UNRESOLVED
 16. [E] `ADCT:ART.60-A` — ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb · TEMPORAL_STATUS_UNRESOLVED
+17. [F] `ADCT:ART.79` — ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza · TEMPORAL_STATUS_UNRESOLVED
+18. [F] `ADCT:ART.88` — ADCT, art. 88 — Alíquota mínima do ISS · TEMPORAL_STATUS_UNRESOLVED
 
 ## 1. Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços
 
@@ -871,6 +873,106 @@ O artigo não informa a data de início da vigência dos fundos; por isso, o ano
 
 **Alertas do validator v2**
 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 17. ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza
+
+- `ADCT:ART.79` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.79/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Vigencia apos 2010 depende de dado externo.
+- Sub-bloco F · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Vigencia apos 2010 depende de dado externo.
+
+**Lei Seca**
+
+- `ADCT:ART.79:CAPUT`: É instituído, para vigorar até o ano de 2010, no âmbito do Poder Executivo Federal, o Fundo de Combate e Erradicação da Pobreza, a ser regulado por lei complementar com o objetivo de viabilizar a todos os brasileiros acesso a níveis dignos de subsistência, cujos recursos serão aplicados em ações suplementares de nutrição, habitação, educação, saúde, reforço de renda familiar e outros programas de relevante interesse social voltados para melhoria da qualidade de vida. (Vide Emenda Constitucional nº 67 de 22 de dezembro de 2010)
+- `ADCT:ART.79:PAR.UNICO`: O Fundo previsto neste artigo terá Conselho Consultivo e de Acompanhamento que conte com a participação de representantes da sociedade civil, nos termos da lei.
+
+**O QUE DIZ**
+
+O art. 79 do ADCT criou o Fundo de Combate e Erradicação da Pobreza, no âmbito do Executivo da União, com vigência prevista até 2010 e regulação por lei complementar. A finalidade declarada é dar a todos os brasileiros acesso a níveis dignos de subsistência. Os recursos vão para ações suplementares em áreas como alimentação, moradia, educação e saúde, para complementar a renda das famílias e para outros programas de interesse social. O parágrafo único exige um Conselho Consultivo e de Acompanhamento com participação de representantes da sociedade civil.
+
+**O QUE SIGNIFICA**
+
+O artigo criou um fundo com destino social definido: complementar políticas públicas voltadas a quem vive em pobreza.
+
+O prazo original terminava em 2010.
+
+O próprio texto oficial traz uma nota que remete a uma alteração constitucional de dezembro de 2010; o conteúdo dessa alteração não está na base versionada deste lote.
+
+**EXEMPLO PRÁTICO**
+
+Um programa federal de reforço de renda familiar recebe recursos desse fundo, nos termos da lei que o regula.
+
+**ATENÇÃO**
+
+A vigência do fundo depois de 2010 depende do conteúdo da emenda indicada na nota do texto oficial, que pertence à camada externa. As receitas do fundo estão nos arts. 80 e 81 do ADCT.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Fundo*: conjunto de recursos reservados a uma finalidade específica.
+- *Ação suplementar*: medida que complementa outras políticas públicas.
+
+**CAMADA EXTERNA**
+
+- Situação do fundo após 2010: depende da Emenda Constitucional n. 67, de 2010, indicada em nota do texto oficial (PENDING_EXTERNAL_INGESTION).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "a todos os brasileiros acesso a níveis dignos" — 
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## 18. ADCT, art. 88 — Alíquota mínima do ISS
+
+- `ADCT:ART.88` · OVERVIEW · risco HIGH · ENTENDA/ADCT:ART.88/BASE/1
+- Motivo do roteamento: LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
+- Sub-bloco F · LEGAL_RISK HIGH · complexidade EXTERNAL · jurisprudência: NONE
+- Por que exige raciocínio humano: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
+- Dispositivos citados (runtime): `ART.156:PAR.3` Em relação ao imposto previsto no inciso III do caput deste artigo, cabe à lei complementar:
+
+**Lei Seca**
+
+- `ADCT:ART.88:CAPUT`: Enquanto lei complementar não disciplinar o disposto nos incisos I e III do § 3º do art. 156 da Constituição Federal, o imposto a que se refere o inciso III do caput do mesmo artigo:
+- `ADCT:ART.88:INC.I`: terá alíquota mínima de dois por cento, exceto para os serviços a que se referem os itens 32, 33 e 34 da Lista de Serviços anexa ao Decreto-Lei nº 406, de 31 de dezembro de 1968;
+- `ADCT:ART.88:INC.II`: não será objeto de concessão de isenções, incentivos e benefícios fiscais, que resulte, direta ou indiretamente, na redução da alíquota mínima estabelecida no inciso I.
+
+**O QUE DIZ**
+
+O art. 88 do ADCT fixa regras para o imposto municipal sobre serviços enquanto lei complementar não disciplinar os incisos I e III do § 3º do art. 156. O imposto tem alíquota mínima de dois por cento, salvo para os serviços dos itens 32, 33 e 34 da lista anexa ao Decreto-Lei nº 406, editado em 31 de dezembro de 1968 (inciso I). Além disso, o imposto não pode ser objeto de concessão de isenções, incentivos ou benefícios fiscais capazes de levar, direta ou indiretamente, a alíquota abaixo desse mínimo (inciso II).
+
+**O QUE SIGNIFICA**
+
+O piso impede a cobrança do imposto abaixo de dois por cento, salvo nos serviços excepcionados.
+
+O piso de dois por cento vale também contra benefícios indiretos, como descontos na base de cálculo que reduzam o imposto efetivo.
+
+A regra é provisória: dura até que lei complementar trate do tema.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer atrair uma empresa de serviços oferecendo alíquota de um por cento. Enquanto vigorar o art. 88, isso esbarra no piso de dois por cento.
+
+**ATENÇÃO**
+
+A aplicação do artigo depende de um dado que o texto não fornece: a disciplina da matéria pela lei complementar do art. 156, § 3º. A substituição do ISS na reforma tributária está nos arts. 124 e seguintes do ADCT.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Isenção*: dispensa legal do pagamento de um tributo.
+- *Benefício fiscal*: vantagem tributária concedida pelo poder público.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do art. 156, § 3º, pertence à camada externa (PENDING_EXTERNAL_INGESTION).
+
+**Alertas do validator v2**
+
+- EDITORIAL_AUTO_FIX_ELIGIBLE · NEAR_COPY_MICROFIX · o_que_diz: "i e iii do 3 do art 156" — 
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 

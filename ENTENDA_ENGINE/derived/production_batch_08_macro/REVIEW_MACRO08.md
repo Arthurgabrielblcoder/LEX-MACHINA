@@ -6640,3 +6640,546 @@ O artigo não informa a data de início da vigência dos fundos; por isso, o ano
 
 ---
 
+## ADCT:ART.64
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 64 — Edição popular da Constituição
+
+- **TARGET:** `ADCT:ART.64` · `ENTENDA/ADCT:ART.64/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 64 — Edição popular da Constituição
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 199 palavras · 1624 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de publicar e distribuir gratuitamente o texto integral da Constituicao, sem prazo final.
+
+**O QUE DIZ**
+
+O art. 64 do ADCT determina que a Imprensa Nacional e as demais gráficas públicas da União, dos Estados, do Distrito Federal e dos Municípios, inclusive as da administração indireta e as fundações mantidas pelo poder público, façam uma edição popular do texto completo da Constituição. Os exemplares ficam à disposição, sem custo, de escolas, cartórios, sindicatos, quartéis, igrejas e outras instituições representativas da comunidade. A meta declarada é que cada cidadão possa receber do Estado um exemplar.
+
+**O QUE SIGNIFICA**
+
+O artigo trata a divulgação da Constituição como tarefa do próprio Estado.
+
+A obrigação recai sobre as gráficas oficiais da União, dos Estados, do Distrito Federal e dos Municípios.
+
+A entrega é gratuita e passa por instituições próximas da população, como escolas e sindicatos.
+
+O texto não fixa prazo, de modo que o dever não se esgota com uma única edição.
+
+**EXEMPLO PRÁTICO**
+
+Uma escola pública pede exemplares da Constituição para a biblioteca. A edição popular prevista no artigo é distribuída sem cobrança.
+
+**ATENÇÃO**
+
+O artigo não define tiragem, formato nem periodicidade das edições. Esses detalhes ficam a cargo da administração de cada ente.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Edição popular*: publicação de baixo custo, pensada para ampla distribuição.
+- *Administração indireta*: autarquias, fundações e empresas criadas pelo poder público.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da união dos estados do distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da união dos estados do distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.68
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 68 — Terras das comunidades quilombolas
+
+- **TARGET:** `ADCT:ART.68` · `ENTENDA/ADCT:ART.68/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 68 — Terras das comunidades quilombolas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1593 bytes · referências 1
+- **Motivo da seleção:** Visao geral: reconhecimento da propriedade definitiva das terras ocupadas por remanescentes das comunidades dos quilombos e dever estatal de titulacao.
+
+**O QUE DIZ**
+
+O art. 68 do ADCT reconhece a propriedade definitiva das terras ocupadas pelos remanescentes das comunidades dos quilombos, desde que estejam nelas. O artigo impõe ao Estado o dever de emitir os títulos correspondentes.
+
+**O QUE SIGNIFICA**
+
+O artigo trata a ocupação tradicional das comunidades quilombolas como base de um direito de propriedade, e não de simples posse.
+
+O reconhecimento vem da própria Constituição: o título emitido pelo Estado documenta um direito que o texto já declara.
+
+O dever de titular é do Estado, sem prazo final no texto.
+
+A regra se liga à proteção do patrimônio cultural dos grupos formadores da sociedade brasileira, tratada no art. 216 da Constituição.
+
+**EXEMPLO PRÁTICO**
+
+Uma comunidade remanescente de quilombo ocupa há gerações uma área rural. Com base no art. 68 do ADCT, ela pede ao poder público a emissão do título de propriedade.
+
+**ATENÇÃO**
+
+O procedimento de identificação, delimitação e titulação está na legislação, não no artigo. O artigo exige ocupação atual das terras pela comunidade.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Quilombo*: comunidade formada historicamente por pessoas negras escravizadas que resistiram à escravidão.
+- *Título de propriedade*: documento oficial que comprova quem é dono de um imóvel.
+
+**CAMADA EXTERNA**
+
+- O procedimento administrativo de titulação pertence à legislação correlata, ainda não ingerida.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.69
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 69 — Consultorias jurídicas dos Estados
+
+- **TARGET:** `ADCT:ART.69` · `ENTENDA/ADCT:ART.69/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 69 — Consultorias jurídicas dos Estados
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 160 palavras · 1380 bytes · referências 0
+- **Motivo da seleção:** Visao geral: permissao para Estados manterem consultorias juridicas separadas das procuradorias, condicionada a situacao existente na promulgacao.
+
+**O QUE DIZ**
+
+O art. 69 do ADCT permite que os Estados mantenham consultorias jurídicas separadas de suas Procuradorias-Gerais ou Advocacias-Gerais. A permissão vale apenas para o Estado que, na data da promulgação da Constituição, já tinha órgãos distintos para essas funções.
+
+**O QUE SIGNIFICA**
+
+Em regra, a Constituição concentra a representação judicial e a consultoria jurídica dos Estados nos procuradores, organizados em carreira, conforme o art. 132.
+
+O art. 69 abre uma exceção para preservar estruturas que já existiam na promulgação.
+
+O critério é uma fotografia da data da promulgação: o Estado que tinha os órgãos separados naquele momento pode mantê-los.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado que, na data da promulgação, já tinha uma consultoria jurídica separada da procuradoria pode continuar com essa organização.
+
+**ATENÇÃO**
+
+A permissão não autoriza criar a separação depois da promulgação: depende da situação verificada naquela data.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Consultoria jurídica*: órgão que orienta juridicamente a administração por meio de pareceres.
+- *Procuradoria-Geral*: órgão que representa o Estado em juízo e presta consultoria jurídica.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: consultorias jurídicas separadas de suas procuradorias gerai)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.76
+
+Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 76 — Desvinculação de receitas da União
+
+- **TARGET:** `ADCT:ART.76` · `ENTENDA/ADCT:ART.76/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 76 — Desvinculação de receitas da União
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 224 palavras · 1856 bytes · referências 0
+- **Motivo da seleção:** Visao geral: desvinculacao de 30% de receitas federais ate 2032, com as excecoes dos paragrafos; §§ 1º e 3º revogados ficam fora.
+
+**O QUE DIZ**
+
+O art. 76 do ADCT libera de vinculação a órgão, fundo ou despesa 30% da arrecadação da União com contribuições sociais, contribuições de intervenção no domínio econômico, taxas e receitas patrimoniais, existentes ou criadas até 31 de dezembro de 2032, data final da medida. A medida não prejudica o pagamento das despesas do Regime Geral de Previdência Social. Ficam fora da desvinculação a contribuição do salário-educação (§ 2º), as contribuições sociais destinadas à seguridade social (§ 4º), os recursos que devem ser transferidos a Estados, Distrito Federal e Municípios (§ 5º) e as receitas do fundo e os recursos indicados nas leis citadas no § 6º.
+
+**O QUE SIGNIFICA**
+
+Muitas receitas da União nascem com destino obrigatório, chamado vinculação.
+
+O artigo permite que uma fatia dessas receitas, de 30%, seja usada livremente no orçamento até o fim de 2032.
+
+Os parágrafos protegem receitas que a Constituição quer manter destinadas, como as da seguridade social e as que pertencem a outros entes.
+
+**EXEMPLO PRÁTICO**
+
+Uma taxa federal tem toda a arrecadação destinada a um órgão. Com a desvinculação, até 30% desse valor pode ser aplicado em outra despesa do orçamento até 2032.
+
+**ATENÇÃO**
+
+A desvinculação tem data final: 31 de dezembro de 2032. Os §§ 1º e 3º estão revogados.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Desvinculação*: liberação de uma receita do destino obrigatório fixado em norma.
+- *Receita patrimonial*: valor obtido com a exploração do patrimônio público, como aluguéis e concessões.
+
+**CAMADA EXTERNA**
+
+- As leis citadas no § 6º pertencem à legislação correlata, ainda não ingerida.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: das despesas do regime geral de previdência social)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.76-A
+
+Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF
+
+- **TARGET:** `ADCT:ART.76-A` · `ENTENDA/ADCT:ART.76-A/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 257 palavras · 1888 bytes · referências 0
+- **Motivo da seleção:** Visao geral: desvinculacao de 30% de receitas estaduais e distritais ate 2032 e excecoes do paragrafo unico.
+
+**O QUE DIZ**
+
+O art. 76-A do ADCT libera de vinculação a órgão, fundo ou despesa 30% das receitas dos Estados e do Distrito Federal com impostos, taxas e multas, existentes ou criados até 31 de dezembro de 2032, data final da medida, com adicionais e acréscimos legais. Também alcança outras receitas correntes. O parágrafo único exclui da desvinculação: os recursos mínimos de saúde e de educação dos arts. 198 e 212; as receitas que pertencem aos Municípios por transferência constitucional; as contribuições previdenciárias e de assistência à saúde dos servidores; as transferências entre entes com destino fixado em lei; e os fundos do Judiciário, dos Tribunais de Contas, do Ministério Público, das Defensorias e das Procuradorias.
+
+**O QUE SIGNIFICA**
+
+O artigo aplica aos Estados e ao Distrito Federal a mesma lógica da desvinculação federal do art. 76.
+
+Uma parte das receitas com destino obrigatório pode ser usada com liberdade até o fim de 2032.
+
+Os itens excluídos preservam os pisos de saúde e educação, o dinheiro dos Municípios, a previdência dos servidores e os fundos de órgãos com autonomia.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado arrecada uma taxa com destino fixado em lei estadual. Até 2032, 30% dessa receita pode ser aplicada em outra despesa, desde que ela não esteja entre as exceções do parágrafo único.
+
+**ATENÇÃO**
+
+A desvinculação vale até 31 de dezembro de 2032. Ela não reduz os mínimos de saúde e de educação.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Receita corrente*: receita regular do ente, como tributos e transferências, usada nas despesas do dia a dia.
+- *Acréscimo legal*: valor somado ao tributo devido, como juros e multa de mora.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: contribuições previdenciárias e de assistência à saúde dos); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Até 2032, 30% dessa receita pode ser aplicada em outra despe)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.76-B
+
+Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 76-B — Desvinculação de receitas dos Municípios
+
+- **TARGET:** `ADCT:ART.76-B` · `ENTENDA/ADCT:ART.76-B/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 76-B — Desvinculação de receitas dos Municípios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 1966 bytes · referências 0
+- **Motivo da seleção:** Visao geral: desvinculacao de receitas municipais ate 2032 com percentual escalonado (50% ate 2026 e 30% de 2027 a 2032), excecoes do § 1º e uso de superavits do § 2º.
+
+**O QUE DIZ**
+
+O art. 76-B do ADCT libera de vinculação a órgão, fundo ou despesa, até 31 de dezembro de 2032, receitas dos Municípios com impostos, contribuições, taxas e multas, existentes ou criados até essa data, com adicionais, acréscimos legais e outras receitas correntes. O percentual é de 50% até 31 de dezembro de 2026. Entre 1º de janeiro de 2027 e o fim de 2032, passa a 30%. O § 1º exclui os mínimos de saúde e de educação, as contribuições previdenciárias e de assistência à saúde dos servidores, as transferências entre entes com destino fixado em lei e os fundos do Tribunal de Contas do Município. Pelo § 2º, até 2032, os superávits financeiros dos fundos do Executivo municipal no exercício anterior podem financiar políticas locais de saúde, educação e adaptação às mudanças climáticas.
+
+**O QUE SIGNIFICA**
+
+O artigo dá aos Municípios uma desvinculação maior que a de União e Estados, mas em duas etapas.
+
+Em 5 de outubro de 2026, data de referência deste lote, vale o percentual de 50%, que se aplica até o fim de 2026; a partir de 2027 o percentual cai para 30%.
+
+O § 2º cria outra flexibilidade: sobras de fundos municipais podem ser redirecionadas, mas só para saúde, educação e adaptação climática.
+
+**EXEMPLO PRÁTICO**
+
+Um Município tem receitas com destino fixado em lei. Até o fim de 2026, metade delas pode ser usada livremente; em 2027, essa parcela passa a 30%.
+
+**ATENÇÃO**
+
+Os percentuais mudam em 1º de janeiro de 2027. Os superávits do § 2º não podem ser usados em outras finalidades.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Superávit financeiro*: sobra de recursos de um exercício, apurada no balanço.
+- *Exercício financeiro*: período de um ano, de janeiro a dezembro, usado no orçamento público.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: contribuições previdenciárias e de assistência à saúde dos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.79
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza
+
+- **TARGET:** `ADCT:ART.79` · `ENTENDA/ADCT:ART.79/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 212 palavras · 1796 bytes · referências 0
+- **Motivo da seleção:** Visao geral: instituicao do fundo federal de combate a pobreza, com prazo original ate 2010 e remissao textual a emenda de 2010 cujo conteudo nao esta versionado.
+
+**O QUE DIZ**
+
+O art. 79 do ADCT criou o Fundo de Combate e Erradicação da Pobreza, no âmbito do Executivo da União, com vigência prevista até 2010 e regulação por lei complementar. A finalidade declarada é dar a todos os brasileiros acesso a níveis dignos de subsistência. Os recursos vão para ações suplementares em áreas como alimentação, moradia, educação e saúde, para complementar a renda das famílias e para outros programas de interesse social. O parágrafo único exige um Conselho Consultivo e de Acompanhamento com participação de representantes da sociedade civil.
+
+**O QUE SIGNIFICA**
+
+O artigo criou um fundo com destino social definido: complementar políticas públicas voltadas a quem vive em pobreza.
+
+O prazo original terminava em 2010.
+
+O próprio texto oficial traz uma nota que remete a uma alteração constitucional de dezembro de 2010; o conteúdo dessa alteração não está na base versionada deste lote.
+
+**EXEMPLO PRÁTICO**
+
+Um programa federal de reforço de renda familiar recebe recursos desse fundo, nos termos da lei que o regula.
+
+**ATENÇÃO**
+
+A vigência do fundo depois de 2010 depende do conteúdo da emenda indicada na nota do texto oficial, que pertence à camada externa. As receitas do fundo estão nos arts. 80 e 81 do ADCT.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Fundo*: conjunto de recursos reservados a uma finalidade específica.
+- *Ação suplementar*: medida que complementa outras políticas públicas.
+
+**CAMADA EXTERNA**
+
+- Situação do fundo após 2010: depende da Emenda Constitucional n. 67, de 2010, indicada em nota do texto oficial (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a todos os brasileiros acesso a níveis dignos)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.82
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza
+
+- **TARGET:** `ADCT:ART.82` · `ENTENDA/ADCT:ART.82/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1852 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de Estados, DF e Municipios instituirem fundos de combate a pobreza e adicionais de ICMS e ISS sobre bens e servicos superfluos.
+
+**O QUE DIZ**
+
+O art. 82 do ADCT manda que Estados, Distrito Federal e Municípios instituam Fundos de Combate à Pobreza, com os recursos previstos no artigo e outros que destinarem. Esses fundos são geridos por entidades com participação da sociedade civil. O § 1º permite, para os fundos estaduais e distrital, um adicional de até dois pontos percentuais na alíquota do ICMS sobre produtos e serviços supérfluos, nas condições da lei complementar do art. 155, § 2º, XII, sem a repartição com Municípios do art. 158, IV. O § 2º permite, para os fundos municipais, um adicional de até meio ponto percentual no ISS ou no imposto que o substituir, sobre serviços supérfluos.
+
+**O QUE SIGNIFICA**
+
+O artigo leva aos entes subnacionais a ideia do fundo federal de combate à pobreza.
+
+A fonte de recursos prevista é um acréscimo de imposto sobre bens e serviços considerados supérfluos.
+
+No caso do ICMS, o adicional fica inteiro com o fundo do Estado, sem a parte que normalmente cabe aos Municípios.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado cria seu fundo de combate à pobreza e institui adicional de um ponto percentual de ICMS sobre um produto classificado como supérfluo.
+
+**ATENÇÃO**
+
+Os produtos e serviços supérfluos são definidos em lei federal, conforme o art. 83 do ADCT. O § 2º menciona o imposto que vier a substituir o ISS.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Alíquota*: percentual aplicado sobre a base de cálculo para chegar ao valor do tributo.
+- *Supérfluo*: não essencial; dispensável para as necessidades básicas.
+
+**CAMADA EXTERNA**
+
+- A substituição do ICMS e do ISS na reforma tributária está tratada nos arts. 124 e seguintes do ADCT.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: adicional de até dois pontos percentuais na alíquota)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.83
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 83 — Definição de produtos e serviços supérfluos
+
+- **TARGET:** `ADCT:ART.83` · `ENTENDA/ADCT:ART.83/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 83 — Definição de produtos e serviços supérfluos
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1378 bytes · referências 0
+- **Motivo da seleção:** Visao geral: reserva a lei federal da definicao dos produtos e servicos superfluos usados nos arts. 80, II, e 82, § 2º.
+
+**O QUE DIZ**
+
+O art. 83 do ADCT reserva a uma lei federal a definição dos produtos e serviços supérfluos mencionados em duas regras do próprio ADCT. A primeira é o adicional sobre o imposto de produtos industrializados que financia o fundo federal de combate à pobreza (art. 80, II). A segunda é o adicional sobre o imposto municipal de serviços que financia os fundos municipais (art. 82, § 2º).
+
+**O QUE SIGNIFICA**
+
+O artigo uniformiza o conceito de supérfluo no país.
+
+Como os adicionais aumentam o imposto, a lista do que é supérfluo não fica a critério de cada ente: é a União que a define por lei.
+
+Com isso, o mesmo serviço não é tratado como supérfluo em um Município e essencial em outro por decisão local.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer aplicar o adicional do art. 82, § 2º. O adicional incide sobre os serviços que a lei federal classifique como supérfluos.
+
+**ATENÇÃO**
+
+O artigo cita expressamente o art. 82, § 2º. O § 1º do art. 82, sobre o ICMS, remete às condições de lei complementar própria.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lei federal*: lei aprovada pelo Congresso Nacional.
+- *Adicional*: acréscimo na alíquota de um imposto já existente.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.87
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 87 — Pequeno valor até a lei de cada ente
+
+- **TARGET:** `ADCT:ART.87` · `ENTENDA/ADCT:ART.87/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 87 — Pequeno valor até a lei de cada ente
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1809 bytes · referências 0
+- **Motivo da seleção:** Visao geral: valores supletivos de obrigacoes de pequeno valor (40 e 30 salarios-minimos) ate a publicacao da lei de cada ente, e renuncia ao excedente.
+
+**O QUE DIZ**
+
+O art. 87 do ADCT define quais débitos são de pequeno valor, para fins do art. 100, § 3º, da Constituição e do art. 78 do ADCT, até que cada ente publique sua lei própria. Para débitos dos Estados e do Distrito Federal, o limite é de quarenta salários-mínimos (inciso I); para débitos dos Municípios, de trinta salários-mínimos (inciso II). O artigo manda observar o art. 100, § 4º. Pelo parágrafo único, a execução acima do limite segue por precatório, mas o credor pode renunciar ao excedente para receber o saldo sem precatório.
+
+**O QUE SIGNIFICA**
+
+Débitos de pequeno valor são pagos sem a fila do precatório.
+
+O artigo funciona como regra de reserva: vale para o Estado ou Município que ainda não publicou sua própria lei com o limite.
+
+O credor que tem crédito pouco acima do limite pode abrir mão da diferença para receber mais rápido.
+
+**EXEMPLO PRÁTICO**
+
+Uma pessoa tem crédito contra um Município que não publicou sua lei de pequeno valor. Se o crédito couber em trinta salários-mínimos, é pago fora do precatório; se passar disso, ela pode renunciar ao excedente.
+
+**ATENÇÃO**
+
+A situação de cada ente, isto é, se já publicou sua lei, é dado externo. O artigo não trata da União. O limite da lei própria segue o art. 100, § 4º.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Precatório*: ordem de pagamento de dívida do poder público reconhecida por decisão judicial definitiva.
+- *Renúncia ao crédito*: ato do credor de abrir mão de parte do valor a receber.
+
+**CAMADA EXTERNA**
+
+- Leis de pequeno valor de cada ente: legislação estadual e municipal correlata, ainda não ingerida.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## ADCT:ART.88
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### ADCT, art. 88 — Alíquota mínima do ISS
+
+- **TARGET:** `ADCT:ART.88` · `ENTENDA/ADCT:ART.88/BASE/1`
+- **DISPLAY TITLE:** ADCT, art. 88 — Alíquota mínima do ISS
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 225 palavras · 1714 bytes · referências 0
+- **Motivo da seleção:** Visao geral: aliquota minima de 2% do ISS e vedacao de beneficios que a reduzam, enquanto lei complementar nao disciplinar o art. 156, § 3º, I e III.
+
+**O QUE DIZ**
+
+O art. 88 do ADCT fixa regras para o imposto municipal sobre serviços enquanto lei complementar não disciplinar os incisos I e III do § 3º do art. 156. O imposto tem alíquota mínima de dois por cento, salvo para os serviços dos itens 32, 33 e 34 da lista anexa ao Decreto-Lei nº 406, editado em 31 de dezembro de 1968 (inciso I). Além disso, o imposto não pode ser objeto de concessão de isenções, incentivos ou benefícios fiscais capazes de levar, direta ou indiretamente, a alíquota abaixo desse mínimo (inciso II).
+
+**O QUE SIGNIFICA**
+
+O piso impede a cobrança do imposto abaixo de dois por cento, salvo nos serviços excepcionados.
+
+O piso de dois por cento vale também contra benefícios indiretos, como descontos na base de cálculo que reduzam o imposto efetivo.
+
+A regra é provisória: dura até que lei complementar trate do tema.
+
+**EXEMPLO PRÁTICO**
+
+Um Município quer atrair uma empresa de serviços oferecendo alíquota de um por cento. Enquanto vigorar o art. 88, isso esbarra no piso de dois por cento.
+
+**ATENÇÃO**
+
+A aplicação do artigo depende de um dado que o texto não fornece: a disciplina da matéria pela lei complementar do art. 156, § 3º. A substituição do ISS na reforma tributária está nos arts. 124 e seguintes do ADCT.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Isenção*: dispensa legal do pagamento de um tributo.
+- *Benefício fiscal*: vantagem tributária concedida pelo poder público.
+
+**CAMADA EXTERNA**
+
+- A lei complementar do art. 156, § 3º, pertence à camada externa (PENDING_EXTERNAL_INGESTION).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: i e iii do 3 do art 156)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

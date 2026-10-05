@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (84)
+## A — CLEAN_LOW (93)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -925,6 +925,105 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - ATENÇÃO: O art. 54-A prevê, para esses mesmos seringueiros, uma indenização em parcela única.
 - Dependência externa: nenhuma
 - Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos seringueiros que atendendo a apelo do governo)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.64` — ADCT, art. 64 — Edição popular da Constituição
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 64 do ADCT determina que a Imprensa Nacional e as demais gráficas públicas da União, dos Estados, do Distrito Federal e dos Municípios, inclusive as da administração indireta e as fundações…
+- Interpretação principal: O artigo trata a divulgação da Constituição como tarefa do próprio Estado.
+- ATENÇÃO: O artigo não define tiragem, formato nem periodicidade das edições.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: da união dos estados do distrito federal e), NEAR_COPY_MICROFIX(o_que_significa: da união dos estados do distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.68` — ADCT, art. 68 — Terras das comunidades quilombolas
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 68 do ADCT reconhece a propriedade definitiva das terras ocupadas pelos remanescentes das comunidades dos quilombos, desde que estejam nelas.
+- Interpretação principal: O artigo trata a ocupação tradicional das comunidades quilombolas como base de um direito de propriedade, e não de simples posse.
+- ATENÇÃO: O procedimento de identificação, delimitação e titulação está na legislação, não no artigo.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.69` — ADCT, art. 69 — Consultorias jurídicas dos Estados
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 69 do ADCT permite que os Estados mantenham consultorias jurídicas separadas de suas Procuradorias-Gerais ou Advocacias-Gerais.
+- Interpretação principal: Em regra, a Constituição concentra a representação judicial e a consultoria jurídica dos Estados nos procuradores, organizados em carreira, conforme o art. 132.
+- ATENÇÃO: A permissão não autoriza criar a separação depois da promulgação: depende da situação verificada naquela data.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: consultorias jurídicas separadas de suas…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.76` — ADCT, art. 76 — Desvinculação de receitas da União
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 76 do ADCT libera de vinculação a órgão, fundo ou despesa 30% da arrecadação da União com contribuições sociais, contribuições de intervenção no domínio econômico, taxas e receitas…
+- Interpretação principal: Muitas receitas da União nascem com destino obrigatório, chamado vinculação.
+- ATENÇÃO: A desvinculação tem data final: 31 de dezembro de 2032.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: das despesas do regime geral de previdência social)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.76-A` — ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 76-A do ADCT libera de vinculação a órgão, fundo ou despesa 30% das receitas dos Estados e do Distrito Federal com impostos, taxas e multas, existentes ou criados até 31 de dezembro de 2032,…
+- Interpretação principal: O artigo aplica aos Estados e ao Distrito Federal a mesma lógica da desvinculação federal do art. 76.
+- ATENÇÃO: A desvinculação vale até 31 de dezembro de 2032.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: contribuições previdenciárias e de assistência à…), DUPLICATION(resolvido), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.76-B` — ADCT, art. 76-B — Desvinculação de receitas dos Municípios
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 76-B do ADCT libera de vinculação a órgão, fundo ou despesa, até 31 de dezembro de 2032, receitas dos Municípios com impostos, contribuições, taxas e multas, existentes ou criados até essa…
+- Interpretação principal: O artigo dá aos Municípios uma desvinculação maior que a de União e Estados, mas em duas etapas.
+- ATENÇÃO: Os percentuais mudam em 1º de janeiro de 2027.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: contribuições previdenciárias e de assistência à…), EXAMPLE_NUMBER_NOT_IN_TEXT(fracao 1/2), DUPLICATION(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.82` — ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 82 do ADCT manda que Estados, Distrito Federal e Municípios instituam Fundos de Combate à Pobreza, com os recursos previstos no artigo e outros que destinarem.
+- Interpretação principal: O artigo leva aos entes subnacionais a ideia do fundo federal de combate à pobreza.
+- ATENÇÃO: Os produtos e serviços supérfluos são definidos em lei federal, conforme o art. 83 do ADCT.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: adicional de até dois pontos percentuais na…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.83` — ADCT, art. 83 — Definição de produtos e serviços supérfluos
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 83 do ADCT reserva a uma lei federal a definição dos produtos e serviços supérfluos mencionados em duas regras do próprio ADCT.
+- Interpretação principal: O artigo uniformiza o conceito de supérfluo no país.
+- ATENÇÃO: O artigo cita expressamente o art. 82, § 2º.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `ADCT:ART.87` — ADCT, art. 87 — Pequeno valor até a lei de cada ente
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 87 do ADCT define quais débitos são de pequeno valor, para fins do art. 100, § 3º, da Constituição e do art. 78 do ADCT, até que cada ente publique sua lei própria.
+- Interpretação principal: Débitos de pequeno valor são pagos sem a fila do precatório.
+- ATENÇÃO: A situação de cada ente, isto é, se já publicou sua lei, é dado externo.
+- Dependência externa: nenhuma
+- Warnings: nenhum
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 136 · risco LOW 95 · MEDIUM 25 · HIGH 16
-- Prontas para revisão editorial: 136 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 3, EXAMPLE_NUMBER 6, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 9, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Explicações: 147 · risco LOW 104 · MEDIUM 25 · HIGH 18
+- Prontas para revisão editorial: 147 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 3, DUPLICATION 2, EXAMPLE_NUMBER 6, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 9, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -92,6 +92,16 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `ADCT:ART.60-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Ano da primeira revisao depende de dado externo.
+
+### ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza
+
+- `ADCT:ART.79` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Vigencia apos 2010 depende de dado externo.
+
+### ADCT, art. 88 — Alíquota mínima do ISS
+
+- `ADCT:ART.88` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.
 
 ## Risco MEDIUM
 
@@ -714,4 +724,51 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - Motivos do risco: 
 - EXTRAPOLATION_NUMBER (atencao: 2026) → 2026 e o sexto ano contado de 1º de janeiro de 2021 (texto do caput) e coincide com o ano da data de referencia do lote. Resolucao do drafter, sujeita a revisao humana.
 - EXAMPLE_NUMBER (exemplo_pratico: 2026) → Idem (sexto ano = 2026, derivado do texto).
+
+### ADCT, art. 64 — Edição popular da Constituição
+
+- `ADCT:ART.64` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 68 — Terras das comunidades quilombolas
+
+- `ADCT:ART.68` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 69 — Consultorias jurídicas dos Estados
+
+- `ADCT:ART.69` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 76 — Desvinculação de receitas da União
+
+- `ADCT:ART.76` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF
+
+- `ADCT:ART.76-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- DUPLICATION (o_que_diz: ADCT:ART.76-A x ADCT:ART.76-B sim=0.456) → Arts. 76-A e 76-B tem estrutura paralela por desenho (desvinculacao estadual x municipal); percentuais, datas e excecoes diferem e sao explicados em cada um. Resolucao do drafter, sujeita a revisao humana.
+
+### ADCT, art. 76-B — Desvinculação de receitas dos Municípios
+
+- `ADCT:ART.76-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- DUPLICATION (o_que_diz: ADCT:ART.76-A x ADCT:ART.76-B sim=0.456) → Idem ADCT:ART.76-A (estrutura paralela; conteudo distinto).
+
+### ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza
+
+- `ADCT:ART.82` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 83 — Definição de produtos e serviços supérfluos
+
+- `ADCT:ART.83` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### ADCT, art. 87 — Pequeno valor até a lei de cada ente
+
+- `ADCT:ART.87` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
 

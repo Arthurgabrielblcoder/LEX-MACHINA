@@ -23,30 +23,30 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 84,
+  "A_CLEAN_LOW": 93,
   "B_CLEAN_MEDIUM": 23,
   "C_QUICK_REVIEW": 13,
-  "D_FULL_HUMAN_REVIEW": 16,
+  "D_FULL_HUMAN_REVIEW": 18,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 95,
+  "LOW": 104,
   "MEDIUM": 25,
-  "HIGH": 16
+  "HIGH": 18
  },
  "complexity_counts": {
-  "STRUCTURED": 73,
-  "EXTERNAL": 61,
+  "STRUCTURED": 78,
+  "EXTERNAL": 67,
   "SIMPLE": 2
  },
  "jurisprudence_counts": {
-  "NONE": 111,
+  "NONE": 122,
   "CONTEXT_ONLY": 23,
   "REQUIRED_FOR_CORRECTNESS": 2
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 84,
+   "A_CLEAN_LOW": 93,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 11,
    "D_FULL_HUMAN_REVIEW": 0,
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 16,
+   "D_FULL_HUMAN_REVIEW": 18,
    "E_HARD_FAIL": 0
   }
  },
@@ -76,17 +76,17 @@
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 60,
+   "A_CLEAN_LOW": 65,
    "B_CLEAN_MEDIUM": 3,
    "C_QUICK_REVIEW": 9,
    "D_FULL_HUMAN_REVIEW": 1,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 22,
+   "A_CLEAN_LOW": 26,
    "B_CLEAN_MEDIUM": 20,
    "C_QUICK_REVIEW": 4,
-   "D_FULL_HUMAN_REVIEW": 15,
+   "D_FULL_HUMAN_REVIEW": 17,
    "E_HARD_FAIL": 0
   }
  },
@@ -3358,6 +3358,355 @@
    "editorial_version": 1
   },
   {
+   "target_id": "ADCT:ART.64",
+   "title": "ADCT, art. 64 — Edição popular da Constituição",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da união dos estados do distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "da união dos estados do distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.68",
+   "title": "ADCT, art. 68 — Terras das comunidades quilombolas",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.69",
+   "title": "ADCT, art. 69 — Consultorias jurídicas dos Estados",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "consultorias jurídicas separadas de suas procuradorias gerais ou",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.76",
+   "title": "ADCT, art. 76 — Desvinculação de receitas da União",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 2, 47, 212",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "das despesas do regime geral de previdência social",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "title": "ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 198, 212",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "contribuições previdenciárias e de assistência à saúde dos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.76-B",
+   "title": "ADCT, art. 76-B — Desvinculação de receitas dos Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 198, 212",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "contribuições previdenciárias e de assistência à saúde dos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "fracao 1/2",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.82",
+   "title": "ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: dois",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 155, 158",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "adicional de até dois pontos percentuais na alíquota",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.83",
+   "title": "ADCT, art. 83 — Definição de produtos e serviços supérfluos",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "remissao: arts. 80",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.87",
+   "title": "ADCT, art. 87 — Pequeno valor até a lei de cada ente",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 78, 100",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -5831,6 +6180,106 @@
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.79",
+   "title": "ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Vigencia apos 2010 depende de dado externo."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a todos os brasileiros acesso a níveis dignos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Vigencia apos 2010 depende de dado externo.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "ADCT:ART.88",
+   "title": "ADCT, art. 88 — Alíquota mínima do ISS",
+   "role": "OVERVIEW",
+   "sub_block": "F",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TEMPORAL_STATUS_UNRESOLVED"
+   ],
+   "legal_reasons": [
+    "TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: dois",
+    "exception: exceto",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 156",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "i e iii do 3 do art 156",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "1%",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TEMPORAL_STATUS_UNRESOLVED: EXTERNAL_STATUS_REQUIRED: Dependente de dado externo.",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   }
  ],
  "d_reasons": {
@@ -5839,7 +6288,7 @@
   "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 1,
   "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 2,
   "SANCTION_WITH_INTERPRETATION": 1,
-  "TEMPORAL_STATUS_UNRESOLVED": 13
+  "TEMPORAL_STATUS_UNRESOLVED": 15
  },
  "finding_counts": {
   "EXTERNAL_FACT_NEEDS_PROVENANCE": 2,
@@ -5851,24 +6300,24 @@
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 189862,
-  "old_model_full_package_chars": 419273,
-  "presented_chars": 175427,
+  "total_draft_chars": 204274,
+  "old_model_full_package_chars": 448851,
+  "presented_chars": 189428,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 83360,
-   "MACRO08_FULL_D_REVIEW.md": 64559,
+   "MACRO08_COMPACT_AB_REVIEW.md": 89779,
+   "MACRO08_FULL_D_REVIEW.md": 70689,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 18958,
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 20410,
    "MACRO08_QUICK_C_REVIEW.md": 8431
   },
-  "reduction_abs": 243846,
-  "reduction_pct": 58.2
+  "reduction_abs": 259423,
+  "reduction_pct": 57.8
  },
- "d_ratio": 0.118,
+ "d_ratio": 0.122,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 95,
+  "eligible": 104,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -5976,6 +6425,20 @@
     "REPETICAO": 1,
     "TELEOLOGIA": 1
    }
+  },
+  "F": {
+   "corrections": 21,
+   "by_category": {
+    "AFIRMACAO_UNIVERSAL": 2,
+    "COPIA_DA_LEI_SECA": 9,
+    "EXCECAO_FORA_DO_TEXTO": 2,
+    "FRASE_LONGA": 1,
+    "LISTA_INCOMPLETA": 1,
+    "MODALIDADE": 1,
+    "NUCLEO_TEMPORAL": 1,
+    "NUMERO": 3,
+    "TELEOLOGIA": 1
+   }
   }
  },
  "checks": {
@@ -6019,31 +6482,31 @@
    }
   },
   "ADCT": {
-   "new_explanations": 23,
+   "new_explanations": 34,
    "roles": {
     "BLOCK": 1,
-    "OVERVIEW": 22
+    "OVERVIEW": 33
    },
    "queues": {
-    "A_CLEAN_LOW": 5,
+    "A_CLEAN_LOW": 14,
     "B_CLEAN_MEDIUM": 4,
     "C_QUICK_REVIEW": 2,
-    "D_FULL_HUMAN_REVIEW": 12,
+    "D_FULL_HUMAN_REVIEW": 14,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 7,
+    "LOW": 16,
     "MEDIUM": 4,
-    "HIGH": 12
+    "HIGH": 14
    },
    "verification_complexity": {
     "SIMPLE": 0,
-    "STRUCTURED": 7,
-    "EXTERNAL": 16
+    "STRUCTURED": 12,
+    "EXTERNAL": 22
    },
    "jurisprudence": {
     "CONTEXT_ONLY": 6,
-    "NONE": 16,
+    "NONE": 27,
     "REQUIRED_FOR_CORRECTNESS": 1
    }
   }

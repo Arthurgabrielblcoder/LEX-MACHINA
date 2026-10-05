@@ -3,14 +3,14 @@
  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
  "as_of": "2026-10-05",
  "policy": "artigos avaliados e nao explicados (SKIP de artigo inteiro), sempre com motivo; seus targets constam aqui, nao no SELECTION_REPORT",
- "articles": 41,
- "targets": 164,
+ "articles": 62,
+ "targets": 285,
  "by_decision": {
   "SKIP_APPROVED_PILOT_LEGACY_MODEL": 1,
   "SKIP_CONSUMED_CONSTITUTIVE_ACT": 4,
-  "SKIP_EXHAUSTED_TRANSITION": 21,
-  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 8,
-  "SKIP_TRANSITION_EVENT_DEPENDENT": 7
+  "SKIP_EXHAUSTED_TRANSITION": 33,
+  "SKIP_RESIDUAL_PERSONAL_TRANSITION": 12,
+  "SKIP_TRANSITION_EVENT_DEPENDENT": 12
  },
  "rows": [
   {
@@ -1381,6 +1381,889 @@
     {
      "target_id": "ADCT:ART.59:PAR.UNICO",
      "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.61",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Continuidade de repasses a entidades educacionais que receberam recursos publicos nos tres anos anteriores a promulgacao; alcanca situacoes existentes em 1988.",
+   "situation_as_of": "Residual.",
+   "provenance": [
+    "runtime: ADCT art. 61",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.61",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.61:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.62",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Ordem de criacao do Servico Nacional de Aprendizagem Rural por lei; o cumprimento depende de lei nao versionada.",
+   "situation_as_of": "Dependente de lei externa.",
+   "provenance": [
+    "runtime: ADCT art. 62"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.62",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.62:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.63",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Comissao para as comemoracoes do centenario da Republica (1889) e da primeira Constituicao republicana (1891); evento comemorativo encerrado.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 63"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.63",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.63:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.63:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.65",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Prazo de doze meses para regulamentar o art. 220, § 4º.",
+   "situation_as_of": "Exaurido por decurso do prazo.",
+   "provenance": [
+    "runtime: ADCT art. 65",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.65",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.65:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.66",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Manutencao das concessoes de telecomunicacoes em vigor na promulgacao.",
+   "situation_as_of": "Residual.",
+   "provenance": [
+    "runtime: ADCT art. 66"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.66",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.66:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.67",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Prazo de cinco anos da promulgacao para concluir a demarcacao das terras indigenas; o prazo decorreu e o dever de demarcar permanece no art. 231 do corpo permanente.",
+   "situation_as_of": "Prazo exaurido; dever permanente no art. 231.",
+   "provenance": [
+    "runtime: ADCT art. 67",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.67",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.67:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.70",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Competencia dos tribunais estaduais mantida ate a definicao pela Constituicao do Estado; evento externo nao versionado.",
+   "situation_as_of": "Dependente de evento externo.",
+   "provenance": [
+    "runtime: ADCT art. 70"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.70",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.70:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.71",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Fundo Social de Emergencia / Fundo de Estabilizacao Fiscal para 1994 a 31 de dezembro de 1999.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 71"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.71",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.71:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.71:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "HISTORICAL"
+    },
+    {
+     "target_id": "ADCT:ART.71:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.71:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.71:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.72",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Receitas do Fundo Social de Emergencia, vinculadas aos periodos do art. 71.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 72"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.72",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:INC.IV",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:INC.V",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:INC.VI",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.5",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.5:INC.I",
+     "kind": "INCISO",
+     "status": "HISTORICAL"
+    },
+    {
+     "target_id": "ADCT:ART.72:PAR.5:INC.II",
+     "kind": "INCISO",
+     "status": "HISTORICAL"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.73",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Vedacao de medida provisoria na regulacao do Fundo Social de Emergencia, extinto com o fim dos periodos do art. 71.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT arts. 71 e 73"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.73",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.73:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.74",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Contribuicao provisoria sobre movimentacao financeira, cobrada por prazo nao superior a dois anos e prorrogada pelos arts. 75, 84 e 90 ate 31 de dezembro de 2007.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT arts. 74, 75, 84 e 90"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.74",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.74:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.74:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.74:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.74:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.74:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.75",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Prorrogacao da contribuicao provisoria por trinta e seis meses (1999-2001).",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 75"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.75",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.75:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.75:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.75:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.75:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.77",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Minimos de saude ate 2004 (exauridos); § 4º manda aplicar o artigo a partir de 2005 na ausencia da lei complementar do art. 198, § 3º, cujo estado nao esta versionado.",
+   "situation_as_of": "Caput exaurido; § 4º dependente de dado externo.",
+   "provenance": [
+    "runtime: ADCT art. 77"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.77",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:INC.I:AL.a",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:INC.I:AL.b",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.77:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.78",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Parcelamento de precatorios em ate dez anos (emenda de 2000) para precatorios pendentes e acoes ajuizadas ate 1999.",
+   "situation_as_of": "Exaurido pelo prazo maximo.",
+   "provenance": [
+    "runtime: ADCT art. 78",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 30, de 2000\""
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.78",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.78:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.78:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.78:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.78:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.78:PAR.4",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.80",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Receitas do Fundo do art. 79 (adicional de contribuicao provisoria de 2000 a 2002 exaurido; demais fontes dependem da vigencia do Fundo).",
+   "situation_as_of": "Dependente do estado do art. 79.",
+   "provenance": [
+    "runtime: ADCT art. 80"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.80",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:INC.IV",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:INC.V",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:INC.VI",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.80:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.81",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "decision_definition": "regra condicionada a evento de implantacao institucional ou a lei cujo estado atual nao esta em fonte versionada; sem valor pedagogico atual autonomo",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Fundo de rendimentos de desestatizacao vinculado ao Fundo do art. 79.",
+   "situation_as_of": "Dependente do estado do art. 79.",
+   "provenance": [
+    "runtime: ADCT art. 81"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.81",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.81:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.81:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.81:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.81:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.84",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Cobranca da contribuicao provisoria ate 31 de dezembro de 2004, prorrogada pelo art. 90 ate 2007.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT arts. 84 e 90"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.84",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.2:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.2:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.2:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.3:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.84:PAR.3:INC.II",
+     "kind": "INCISO",
+     "status": "REVOKED"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.85",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Hipoteses de nao incidencia da contribuicao provisoria do art. 84, cuja cobranca terminou em 2007.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT arts. 84, 85 e 90"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.85",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.I:AL.a",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.I:AL.b",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.I:AL.c",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.II:AL.a",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.II:AL.b",
+     "kind": "ALINEA",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.85:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.86",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Debitos de pequeno valor pendentes na data da publicacao da emenda de 2002, fora do parcelamento do art. 78.",
+   "situation_as_of": "Residual.",
+   "provenance": [
+    "runtime: ADCT art. 86",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 37, de 2002\""
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.86",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:INC.I",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:INC.II",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:INC.III",
+     "kind": "INCISO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.86:PAR.3",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.89",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "decision_definition": "alcanca apenas pessoas em situacao existente na promulgacao (opcoes, quadros em extincao); aplicacao residual depende de fatos individuais nao versionados",
+   "temporal_class": "EXTERNAL_STATUS_REQUIRED",
+   "reason": "Quadro em extincao de servidores e policiais militares do ex-Territorio de Rondonia, definidos por fatos ate 1987.",
+   "situation_as_of": "Residual.",
+   "provenance": [
+    "runtime: ADCT art. 89"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.89",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.89:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.89:PAR.UNICO",
+     "kind": "PARAGRAFO_UNICO",
+     "status": "HISTORICAL"
+    },
+    {
+     "target_id": "ADCT:ART.89:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.89:PAR.2",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    }
+   ]
+  },
+  {
+   "article": "ADCT:ART.90",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "decision_definition": "prazo, data ou evento datado ja decorrido (provado pelo texto e pela data de promulgacao versionada); sem valor pedagogico atual",
+   "temporal_class": "EFFECT_EXHAUSTED",
+   "reason": "Prorrogacao da contribuicao provisoria ate 31 de dezembro de 2007.",
+   "situation_as_of": "Exaurido.",
+   "provenance": [
+    "runtime: ADCT art. 90"
+   ],
+   "targets": [
+    {
+     "target_id": "ADCT:ART.90",
+     "kind": "ARTIGO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.90:CAPUT",
+     "kind": "CAPUT",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.90:PAR.1",
+     "kind": "PARAGRAFO",
+     "status": "CURRENT"
+    },
+    {
+     "target_id": "ADCT:ART.90:PAR.2",
+     "kind": "PARAGRAFO",
      "status": "CURRENT"
     }
    ]

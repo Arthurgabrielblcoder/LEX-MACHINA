@@ -49,6 +49,13 @@ O piloto aprovado (HUMAN_APPROVED_T1) do ADCT art. 10, II, foi carimbado com o t
 - Diagnóstico: Conflito de modelagem entre o piloto legado e o perfil oficial; nao e erro do texto.
 - Tratamento: ADCT art. 10 fica fora deste lote (SKIP_APPROVED_PILOT_LEGACY_MODEL, com motivo); o piloto nao foi alterado. Reconciliacao no BACKLOG.
 
+### MB08-SRC-06 — `ADCT:ART.77:INC.I:AL.a` (ORDINAL_GLYPH_IN_WORD)
+
+No texto oficial versionado (CF88_RUNTIME.txt), as alineas a e b do inciso I do art. 77 do ADCT trazem 'anº 2000' e 'anº 2001 ao anº 2004' no lugar de 'ano'. Os dois targets existem apenas no runtime (nao estao no indice legado).
+
+- Diagnóstico: Artefato de normalizacao do sinal ordinal na fonte oficial (abreviacao 'ano' convertida como se fosse 'nº'). Nao altera o sentido, mas o texto exibido diverge da grafia correta.
+- Tratamento: Nao corrigido manualmente na Lei Seca. O art. 77 foi classificado como SKIP (prazos ate 2004 exauridos; § 4º dependente de dado externo), entao nenhum ENTENDA cita a grafia. Registro no BACKLOG para revisao do normalizador da fonte.
+
 ## Achados automáticos
 
 | Target | Código | Severidade | Detalhe | Diagnóstico |

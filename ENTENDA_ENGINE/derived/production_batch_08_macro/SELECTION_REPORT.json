@@ -103,27 +103,38 @@
   "ADCT:ART.54",
   "ADCT:ART.54-A",
   "ADCT:ART.60",
-  "ADCT:ART.60-A"
+  "ADCT:ART.60-A",
+  "ADCT:ART.64",
+  "ADCT:ART.68",
+  "ADCT:ART.69",
+  "ADCT:ART.76",
+  "ADCT:ART.76-A",
+  "ADCT:ART.76-B",
+  "ADCT:ART.79",
+  "ADCT:ART.82",
+  "ADCT:ART.83",
+  "ADCT:ART.87",
+  "ADCT:ART.88"
  ],
  "policy": "ENTENDA-T1 (semantica)",
  "summary": {
-  "targets_evaluated": 797,
-  "targets_current": 737,
-  "selected": 137,
+  "targets_evaluated": 848,
+  "targets_current": 785,
+  "selected": 148,
   "by_classification": {
    "BLOCK": 22,
    "DEVICE": 13,
-   "EXCLUDED_HISTORICAL": 17,
-   "EXCLUDED_REVOKED": 43,
+   "EXCLUDED_HISTORICAL": 18,
+   "EXCLUDED_REVOKED": 45,
    "ITEM": 2,
-   "NO_SEPARATE_EXPLANATION": 600,
-   "OVERVIEW": 100
+   "NO_SEPARATE_EXPLANATION": 637,
+   "OVERVIEW": 111
   },
-  "historical_excluded": 17,
-  "revoked_excluded": 43,
+  "historical_excluded": 18,
+  "revoked_excluded": 45,
   "reused_from_pilot": 1,
-  "new_explanations": 136,
-  "batch_total_explanations": 137,
+  "new_explanations": 147,
+  "batch_total_explanations": 148,
   "soft_target": [
    200,
    500
@@ -131,8 +142,8 @@
   "hard_cap": 600,
   "soft_target_status": "OUTSIDE_JUSTIFIED",
   "soft_target_justification": "sem cota: visao geral de todo artigo vigente com valor atual + dispositivos com ganho pedagogico proprio; listas e regras formais na visao geral; ADCT exaurido sem valor atual vira SKIP_EXHAUSTED_TRANSITION (registro com motivo)",
-  "new_words_mean": 225,
-  "new_payload_bytes_mean": 1810,
+  "new_words_mean": 224,
+  "new_payload_bytes_mean": 1803,
   "largest": {
    "target_id": "CF88:ART.201",
    "explanation_id": "ENTENDA/CF88:ART.201/BASE/1",
@@ -144,26 +155,26 @@
   },
   "files": {
    "ENTENDA_LOOKUP.IDX": {
-    "sha256": "40f64ff7e620c3423d863a865cee4893d59d450cbf39b7a248a0e7c26af9d093",
-    "bytes": 15853
+    "sha256": "664a77edd343962708a6010aab1064f9cd0c7f4003228265db58058fab855ead",
+    "bytes": 16887
    },
    "ENTENDA_PAYLOAD.DAT": {
-    "sha256": "0846f35a8af6a58236cd0e6f7665d11fb1b445b08b13934e7f8e78ce54a7e078",
-    "bytes": 248838
+    "sha256": "691af62fe95990915e38df44573f80219e20ecc037aadf3691759024439f0698",
+    "bytes": 267694
    },
    "ENTENDA_BUILD_MANIFEST.json": {
-    "sha256": "4e0cbb7d41d8a893055b09149b042e408f62257085617a00ed9691c29ff55b5b",
-    "bytes": 69844
+    "sha256": "de2f4fe1b344b4912832ff41e649d4ca6ed4815aabf9e644a6cc7559c470cb34",
+    "bytes": 74480
    }
   },
-  "lookup_rows": 157,
-  "targets_with_references": 15,
-  "warnings": 144,
+  "lookup_rows": 168,
+  "targets_with_references": 16,
+  "warnings": 154,
   "warning_counts": {
    "ABSOLUTE_CLAIM": 6,
-   "EXAMPLE_REQUIREMENT_LANGUAGE": 21,
+   "EXAMPLE_REQUIREMENT_LANGUAGE": 22,
    "JURISPRUDENCE_WORDING_IN_BODY": 7,
-   "NEAR_COPY_OF_OFFICIAL_TEXT": 96,
+   "NEAR_COPY_OF_OFFICIAL_TEXT": 105,
    "PARENT_REPETITION": 5,
    "TERM_LOW_UTILITY": 6,
    "TERM_NOT_USED": 3
@@ -171,7 +182,7 @@
   "retired_versions": 0,
   "review_status_counts": {
    "HUMAN_APPROVED_T1": 1,
-   "PENDING_HUMAN_REVIEW": 136
+   "PENDING_HUMAN_REVIEW": 147
   },
   "jurisprudence_recommendations": {
    "total": 27,
@@ -179,9 +190,9 @@
    "pending_external_ingestion": 27,
    "identity_found_pending_subject_verification": 0
   },
-  "targets_structurally_present": 797,
-  "targets_legally_current": 737,
-  "targets_revoked": 43,
+  "targets_structurally_present": 848,
+  "targets_legally_current": 785,
+  "targets_revoked": 45,
   "temporal_notes": {
    "as_of": "2026-10-05",
    "total": 0,
@@ -10420,6 +10431,683 @@
    "covered_by": "ADCT:ART.60-A",
    "coverage": "ARTICLE_OVERVIEW",
    "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.64",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.64/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    6
+   ],
+   "selection_reason": "Visao geral: dever de publicar e distribuir gratuitamente o texto integral da Constituicao, sem prazo final."
+  },
+  {
+   "target_id": "ADCT:ART.64:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.64",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.68",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.68/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    3,
+    6
+   ],
+   "selection_reason": "Visao geral: reconhecimento da propriedade definitiva das terras ocupadas por remanescentes das comunidades dos quilombos e dever estatal de titulacao."
+  },
+  {
+   "target_id": "ADCT:ART.68:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.68",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.69",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.69/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    5
+   ],
+   "selection_reason": "Visao geral: permissao para Estados manterem consultorias juridicas separadas das procuradorias, condicionada a situacao existente na promulgacao."
+  },
+  {
+   "target_id": "ADCT:ART.69:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.69",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.76/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "selection_reason": "Visao geral: desvinculacao de 30% de receitas federais ate 2032, com as excecoes dos paragrafos; §§ 1º e 3º revogados ficam fora."
+  },
+  {
+   "target_id": "ADCT:ART.76:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "REVOKED",
+   "structurally_present": true,
+   "legal_status": "REVOKED",
+   "legally_current": false,
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "estruturalmente presente no texto consolidado, mas legal_status REVOKED: nao recebe ENTENDA vigente"
+  },
+  {
+   "target_id": "ADCT:ART.76:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: paragrafos de excecao (§§ 2º, 4º, 5º e 6º) explicados na visao geral; §§ 1º e 3º revogados ficam fora (EXCLUDED_REVOKED).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76:PAR.3",
+   "kind": "PARAGRAFO",
+   "status": "REVOKED",
+   "structurally_present": true,
+   "legal_status": "REVOKED",
+   "legally_current": false,
+   "classification": "EXCLUDED_REVOKED",
+   "selection_reason": "estruturalmente presente no texto consolidado, mas legal_status REVOKED: nao recebe ENTENDA vigente"
+  },
+  {
+   "target_id": "ADCT:ART.76:PAR.4",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: paragrafos de excecao (§§ 2º, 4º, 5º e 6º) explicados na visao geral; §§ 1º e 3º revogados ficam fora (EXCLUDED_REVOKED).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76:PAR.5",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: paragrafos de excecao (§§ 2º, 4º, 5º e 6º) explicados na visao geral; §§ 1º e 3º revogados ficam fora (EXCLUDED_REVOKED).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76:PAR.6",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: paragrafos de excecao (§§ 2º, 4º, 5º e 6º) explicados na visao geral; §§ 1º e 3º revogados ficam fora (EXCLUDED_REVOKED).",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.76-A/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "selection_reason": "Visao geral: desvinculacao de 30% de receitas estaduais e distritais ate 2032 e excecoes do paragrafo unico."
+  },
+  {
+   "target_id": "ADCT:ART.76-A:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo unico sem explicacao propria: paragrafo unico e incisos (excecoes) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A:PAR.UNICO:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: paragrafo unico e incisos (excecoes) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A:PAR.UNICO:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: paragrafo unico e incisos (excecoes) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A:PAR.UNICO:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: paragrafo unico e incisos (excecoes) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A:PAR.UNICO:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: paragrafo unico e incisos (excecoes) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-A:PAR.UNICO:INC.V",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-A",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: paragrafo unico e incisos (excecoes) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.76-B/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "selection_reason": "Visao geral: desvinculacao de receitas municipais ate 2032 com percentual escalonado (50% ate 2026 e 30% de 2027 a 2032), excecoes do § 1º e uso de superavits do § 2º."
+  },
+  {
+   "target_id": "ADCT:ART.76-B:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "HISTORICAL",
+   "structurally_present": true,
+   "legal_status": "HISTORICAL_ONLY",
+   "legally_current": false,
+   "classification": "EXCLUDED_HISTORICAL",
+   "selection_reason": "redacao historica: producao CURRENT-only"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.1:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.1:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.1:INC.III",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.1:INC.IV",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.76-B:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.76-B",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: incisos com os percentuais, § 1º e incisos (excecoes) e § 2º (superavits) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.79",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.79/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    6
+   ],
+   "selection_reason": "Visao geral: instituicao do fundo federal de combate a pobreza, com prazo original ate 2010 e remissao textual a emenda de 2010 cujo conteudo nao esta versionado."
+  },
+  {
+   "target_id": "ADCT:ART.79:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.79",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.79:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.79",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo unico sem explicacao propria: paragrafo unico (conselho consultivo) explicado na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.82",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.82/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "selection_reason": "Visao geral: dever de Estados, DF e Municipios instituirem fundos de combate a pobreza e adicionais de ICMS e ISS sobre bens e servicos superfluos."
+  },
+  {
+   "target_id": "ADCT:ART.82:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.82",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.82:PAR.1",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.82",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: §§ 1º e 2º (adicionais de ICMS e ISS) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.82:PAR.2",
+   "kind": "PARAGRAFO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.82",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo sem explicacao propria: §§ 1º e 2º (adicionais de ICMS e ISS) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.83",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.83/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2
+   ],
+   "selection_reason": "Visao geral: reserva a lei federal da definicao dos produtos e servicos superfluos usados nos arts. 80, II, e 82, § 2º."
+  },
+  {
+   "target_id": "ADCT:ART.83:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.83",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.87",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.87/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "selection_reason": "Visao geral: valores supletivos de obrigacoes de pequeno valor (40 e 30 salarios-minimos) ate a publicacao da lei de cada ente, e renuncia ao excedente."
+  },
+  {
+   "target_id": "ADCT:ART.87:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.87",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.87:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.87",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos (limites) e paragrafo unico (renuncia ao excedente) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.87:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.87",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos (limites) e paragrafo unico (renuncia ao excedente) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.87:PAR.UNICO",
+   "kind": "PARAGRAFO_UNICO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.87",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "paragrafo unico sem explicacao propria: incisos (limites) e paragrafo unico (renuncia ao excedente) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.88",
+   "kind": "ARTIGO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "classification": "OVERVIEW",
+   "explanation_id": "ENTENDA/ADCT:ART.88/BASE/1",
+   "explanation_source": "BATCH_NEW",
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "selection_criteria": [
+    1,
+    2,
+    4
+   ],
+   "selection_reason": "Visao geral: aliquota minima de 2% do ISS e vedacao de beneficios que a reduzam, enquanto lei complementar nao disciplinar o art. 156, § 3º, I e III."
+  },
+  {
+   "target_id": "ADCT:ART.88:CAPUT",
+   "kind": "CAPUT",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.88",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "caput explicado na visao geral do artigo (regra T1: caput sem comando distinto da visao geral)",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.88:INC.I",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.88",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos (aliquota minima e vedacao de beneficios) explicados na visao geral.",
+   "classification": "NO_SEPARATE_EXPLANATION"
+  },
+  {
+   "target_id": "ADCT:ART.88:INC.II",
+   "kind": "INCISO",
+   "status": "CURRENT",
+   "structurally_present": true,
+   "legal_status": "CURRENT",
+   "legally_current": true,
+   "covered_by": "ADCT:ART.88",
+   "coverage": "ARTICLE_OVERVIEW",
+   "selection_reason": "inciso sem explicacao propria: incisos (aliquota minima e vedacao de beneficios) explicados na visao geral.",
    "classification": "NO_SEPARATE_EXPLANATION"
   }
  ]
