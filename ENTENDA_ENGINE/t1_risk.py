@@ -101,3 +101,118 @@ def classify(rec, ctx, vigency=None):
     if medium:
         return dict(level='MEDIUM', rules=['REMISSION_OR_LIST'], reasons=medium)
     return dict(level='LOW', rules=[], reasons=['regra simples, sem remissao, numero, prazo, excecao ou tema sensivel'])
+
+
+# ---------------------------------------------------------------- v2: LEGAL_RISK x VERIFICATION_COMPLEXITY (recalibracao Batch06)
+#
+# classify() above is the checkpoint classifier (any trigger -> HIGH). It is kept only to measure the migration of the old queues.
+# assess() separates two questions:
+#   LEGAL_RISK              "is there a real risk of a wrong legal reading?"          LOW / MEDIUM / HIGH
+#   VERIFICATION_COMPLEXITY "how hard is it to check the draft deterministically?"   SIMPLE / STRUCTURED / EXTERNAL
+# Numbers, percentages, deadlines, ages, votes, quorums, BLOCKs, lists, long articles, simple remissions, law dependency and
+# constitutional amendments raise VERIFICATION_COMPLEXITY, never LEGAL_RISK by themselves. Academic importance is not HIGH.
+
+LEGAL_HIGH = {
+    'JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS': 'o proprio draft diz que a leitura do texto nao basta (escopo delimitado pela jurisprudencia), '
+                                              'ou ha nota JURISPRUDENCIA e o corpo afirma condicao/norma sem base no texto',
+    'INTERPRETIVE_CONTROVERSY': 'o draft registra controversia/debate aberto sobre o dispositivo',
+    'CONSTITUTIONAL_AMBIGUITY': 'ambiguidade ou conflito entre dispositivos sinalizado pelo draft ou registrado (registro de ambiguidades)',
+    'SANCTION_WITH_INTERPRETATION': 'perda de mandato/cargo, imunidade, prisao ou sancao com questao interpretativa apontada pelo proprio draft',
+    'EXTERNAL_DEPENDENCY_MATERIAL': 'conteudo externo afirmado no nucleo (O QUE DIZ / O QUE SIGNIFICA) sem evidencia suficiente',
+    'TRANSITION_OR_TEMPORAL': 'regra de transicao, nota temporal ou vigencia futura',
+    'LEGAL_CONTENT_FINDING': 'alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)',
+}
+SANCTION_RE = re.compile(r'perd(?:a|er[áa]?) (?:d[oa] |o |a )?(?:mandato|cargo)|\bimunidade|\binviol[áa]v|\bpris[ãa]o\b|\bpres[oa]s?\b|'
+                         r'\binabilita|\bcassa|\bsan[çc][ãa]o penal|crimes? de responsabilidade|condena[çc][ãa]o criminal', re.I)
+SENSITIVE_RE = re.compile(r'perd(?:a|er[áa]?) (?:d[oa] |o |a )?(?:mandato|cargo)|\bimunidade|\binviol[áa]v|\bincompat[íi]v|\bsan[çc][ãa]o|'
+                          r'\bsan[çc][õo]es|\bmulta\b|\bcrimes?\b|\bprerrogativ|\bcassa|\bsob pena\b|\bpris[ãa]o\b', re.I)
+LEGAL_FULL_CODES = {'CATALOG_CONTRADICTION', 'INTERPRETATION_AS_RULE', 'LAW_STATUS_CLAIM', 'OUTDATED_CONTROVERSY', 'RESOLVED_TREATED_AS_OPEN',
+                    'SEMANTIC_AMBIGUITY_REVIEW_REQUIRED', 'CATALOG_LINK_MISSING'}
+UNGROUNDED_CODES = {'CONDITION_NOT_IN_TEXT', 'EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE', 'EXTERNAL_NORMATIVE_CONTENT_CLAIM'}
+
+
+def complexity(rec, ctx, vigency=None, findings=()):
+    """SIMPLE / STRUCTURED / EXTERNAL with the reasons (what makes deterministic verification harder)."""
+    vigency = vigency or {}
+    targets = scope_targets(rec, ctx)
+    snap = ID_PREFIX_RE.sub('', rec['source']['source_text_snapshot'] + '\n' + '\n'.join(ctx.text.get(t, '') or '' for t in targets
+                                                                                         if t != rec['target_id']))
+    notes = ' '.join(rec.get('external_layer_notes') or [])
+    ext, struct = [], []
+    vide = [f"{t.split(':', 1)[1]}: {a}" for t in targets for a in vigency.get(t, []) if re.search(r'\bVide\b', a)]
+    if vide:
+        ext.append('remissao externa anotada na fonte (' + '; '.join(vide[:2]) + ')')
+    if notes:
+        ext.append('camada externa: ' + ', '.join(sorted({'jurisprudencia' if JURIS_NOTE_RE.search(n) else 'nota externa'
+                                                         for n in rec['external_layer_notes']})))
+    ext += sorted({f"{f['code']}" for f in findings if f['code'] in ('EXTERNAL_FACT_NEEDS_PROVENANCE', 'EXTERNAL_NORMATIVE_CONTENT_CLAIM',
+                                                                         'HISTORICAL_CLAIM_UNVERIFIED')})
+    for code, rx, _ in RULES:
+        if code in ('SENSITIVE_THEME',):
+            continue
+        m = rx.search(snap)
+        if m:
+            struct.append(f'{code.lower()}: {m.group(0)}')
+    ec = sorted({a for t in targets for a in vigency.get(t, []) if re.search(r'Emenda Constitucional', a, re.I)})
+    if ec:
+        struct.append(f'redacao de emenda constitucional ({len(ec)} anotacao(oes))')
+    refs = sorted({m.group(1) for m in REMISSION_RE.finditer(snap)}, key=int)
+    if refs:
+        struct.append('remissao: arts. ' + ', '.join(refs[:5]))
+    if len(targets) > 1:
+        struct.append(f"{rec['granularity']['role'].lower()} com {len(targets)} dispositivos")
+    level = 'EXTERNAL' if ext else 'STRUCTURED' if struct else 'SIMPLE'
+    return dict(level=level, reasons=ext + struct or ['dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa'])
+
+
+def assess(rec, ctx, vigency=None, findings=(), signals=None):
+    """Legal risk (LOW/MEDIUM/HIGH) from interpretive signals and legal-content findings; complexity separately.
+    findings: validator v3 findings of the record; signals: t1_validator_v3.interpretive_signals(rec)."""
+    signals = signals or {}
+    c = rec['content']
+    body = ' '.join(c.get(k) or '' for k in ('o_que_diz', 'o_que_significa', 'exemplo_pratico', 'atencao'))
+    targets = scope_targets(rec, ctx)
+    snap = ID_PREFIX_RE.sub('', rec['source']['source_text_snapshot'])
+    rev = [f for f in findings if f['severity'] in ('REVIEW_REQUIRED', 'HARD_FAIL')]
+    high, medium = [], []
+    juris_note = 'JURIS_NOTE' in signals
+    ungrounded = [f for f in rev if f['code'] in UNGROUNDED_CODES and f['section'] != 'exemplo_pratico']
+    if 'JURIS_REQUIRED_MARKER' in signals:
+        high.append(('JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS', f"marcador do draft: \"{signals['JURIS_REQUIRED_MARKER']}\""))
+    elif juris_note and ungrounded:
+        high.append(('JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS', f"nota JURISPRUDENCIA + {ungrounded[0]['code']} (\"{ungrounded[0]['match']}\")"))
+    if 'CONTROVERSY' in signals:
+        high.append(('INTERPRETIVE_CONTROVERSY', f"\"{signals['CONTROVERSY']}\""))
+    amb = [f for f in findings if f['code'] in ('SEMANTIC_AMBIGUITY_REGISTERED', 'SEMANTIC_AMBIGUITY_REVIEW_REQUIRED')]
+    if 'AMBIGUITY' in signals or amb:
+        high.append(('CONSTITUTIONAL_AMBIGUITY', f"\"{signals.get('AMBIGUITY') or amb[0]['match']}\""))
+    sanction = SANCTION_RE.search(snap + ' ' + body)
+    if sanction and 'INTERPRETIVE_QUESTION' in signals:
+        high.append(('SANCTION_WITH_INTERPRETATION', f"{sanction.group(0)} + \"{signals['INTERPRETIVE_QUESTION']}\""))
+    material = [f for f in rev if f['route'] == 'FULL' and f['code'] in ('EXTERNAL_FACT_NEEDS_PROVENANCE', 'EXTERNAL_NORMATIVE_CONTENT_CLAIM')]
+    if material:
+        high.append(('EXTERNAL_DEPENDENCY_MATERIAL', f"{material[0]['code']} (\"{material[0]['match']}\")"))
+    if rec.get('temporal') or re.search(r'\btransi[çc][ãa]o\b', snap) or re.search(r'regra de transi[çc][ãa]o', body, re.I):
+        high.append(('TRANSITION_OR_TEMPORAL', 'transicao/nota temporal'))
+    legal = [f for f in rev if f['code'] in LEGAL_FULL_CODES]
+    if legal:
+        high.append(('LEGAL_CONTENT_FINDING', f"{legal[0]['code']} (\"{legal[0]['match']}\")"))
+    if juris_note and not any(h[0] == 'JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS' for h in high):
+        medium.append(('JURISPRUDENCE_CONTEXT_ONLY', signals['JURIS_NOTE']))
+    if 'INTERPRETIVE_QUESTION' in signals and not any(h[0] == 'SANCTION_WITH_INTERPRETATION' for h in high):
+        medium.append(('INTERPRETIVE_QUESTION_DEFERRED', f"\"{signals['INTERPRETIVE_QUESTION']}\" (o draft nao responde; remete)"))
+    m = SENSITIVE_RE.search(snap + ' ' + '\n'.join(ctx.text.get(t, '') or '' for t in targets))
+    if m:
+        medium.append(('SENSITIVE_THEME', m.group(0)))
+    ext = [f for f in rev if f['code'] in ('EXTERNAL_FACT_NEEDS_PROVENANCE', 'EXTERNAL_NORMATIVE_CONTENT_CLAIM', 'HISTORICAL_CLAIM_UNVERIFIED')
+           and f not in material]
+    if ext:
+        medium.append(('EXTERNAL_DEPENDENCY_NON_MATERIAL', f"{ext[0]['code']} em {ext[0]['section']} (\"{ext[0]['match']}\")"))
+    if [f for f in ungrounded if f not in material] and not juris_note:
+        medium.append(('UNGROUNDED_STATEMENT', f"{ungrounded[0]['code']} (\"{ungrounded[0]['match']}\")"))
+    level = 'HIGH' if high else 'MEDIUM' if medium else 'LOW'
+    reasons = high or medium
+    return dict(level=level, rules=[r for r, _ in reasons], reasons=[f'{r}: {d}' for r, d in reasons],
+                secondary=[f'{r}: {d}' for r, d in medium] if high else [],
+                jurisprudence=('REQUIRED_FOR_CORRECTNESS' if any(h[0] == 'JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS' for h in high)
+                               else 'CONTEXT_ONLY' if juris_note else 'NONE'))
