@@ -1,0 +1,15 @@
+{
+ "schema_version": 1,
+ "policy": "Fonte de texto ignorada pelo Git (updater/saida) reconstruida byte a byte a partir de conteudo versionado. Fail closed: so e usada se o arquivo configurado estiver ausente E o sha256 reconstruido for exatamente o registrado. Nenhuma palavra da lei e editada: cabecalho do updater (updater/main.py::criar_cabecalho_mestre, data fixa do download arquivado) + corpo travado do Senado + quebra de linha final (updater/main.py::_montar_conteudo_mestre).",
+ "sources": {
+  "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt": {
+   "body": "updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt",
+   "body_sha256": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2",
+   "header": "LEX MACHINA\n========================================\nNORMA: Constituição da República Federativa do Brasil de 1988\nRAMO: CONSTITUCIONAL\nPRIORIDADE: BASE\nTIPO_REGISTRO: LEGISLAÇÃO - CATÁLOGO MESTRE\nFONTE: Senado Federal - Compilação Monovigente\nURL_FONTE: https://legis.senado.leg.br/norma/579494/publicacao/16434817\nMETODO_ATUALIZACAO: COMPILACAO_MONOVIGENTE_SENADO\nVALIDACAO_INTEGRIDADE: APROVADA\nPASTA_DESTINO: 1- CONSTITUIÇÃO FEDERAL\nCODIFICACAO_ORIGEM: portal-oficial-senado\nCODIFICACAO_ARQUIVO: UTF-8\nATUALIZADO_EM: 14/09/2026 17:07\n========================================\n\n",
+   "suffix": "\n",
+   "sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "bytes": 429832,
+   "evidence": "parametros do cabecalho: updater/catalogo_mestre_vademecum.json (item CF88) e o retorno de _resolver_fonte_especial (fonte_nome/metodo/codificacao); ATUALIZADO_EM = data do arquivo operacional (CF88_RUNTIME_SOURCE_AUDIT: atualizado em 14/09/2026). sha256 conferido contra text_source_file_sha256 de todos os registros ENTENDA (682 snapshots identicos)."
+  }
+ }
+}

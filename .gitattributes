@@ -152,3 +152,6 @@ LEGAL_TARGET_ID/derived/** text eol=lf
 # Reafirma -text para os IDX desses diretorios (a regra "derived/** text" acima prevaleceria sobre "*.IDX -text").
 ENTENDA_ENGINE/derived/**/ENTENDA_PAYLOAD.DAT -text
 ENTENDA_ENGINE/derived/**/*.IDX -text
+# Fontes oficiais travadas do Senado (sha256 em SOURCES_LOCK.json; base da reconstrucao byte a byte do texto operacional da CF
+# usado pelo ENTENDA, ENTENDA_ENGINE/editorial/TEXT_SOURCE_RECONSTRUCTION.json): bytes exatos, sem conversao de fim de linha.
+updater/fontes_oficiais_senado/** -text

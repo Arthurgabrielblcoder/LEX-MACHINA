@@ -35,3 +35,16 @@ python ENTENDA_ENGINE/git_materialization_check.py --source INDEX --run-tests   
 
 - **Texto-fonte da CF** (`updater/saida/1- CONSTITUIÇÃO FEDERAL/...`), **fonte estrutural do ADCT** (`updater/backup_catalogos/...`) e **`CF_SEGMENTADA_V2/`**: um clone puro não roda as suítes ENTENDA/LEGAL completas sem esses dados locais. A verificação os copia do worktree principal só para `--run-tests`.
 - **Pastas de trabalho do Relations Engine** (`LEX-MACHINAETAPA_2D4/2E41`): usadas só pelo teste opcional de integração com a relação real da Lei 12.813/2013. A lógica do resolvedor é provada de forma hermética em `tests/test_t1_external_resolver.py`, com `tests/fixtures/t1_relations_fixture.json`.
+
+## Atualização (recalibração do Batch06, 2026-10-05): texto da CF reconstruído do Git
+
+O texto operacional da CF (`updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt`, ignorado pelo Git) passou a ser **reconstruível byte a byte** a partir de conteúdo versionado:
+
+- receita: `ENTENDA_ENGINE/editorial/TEXT_SOURCE_RECONSTRUCTION.json` = cabeçalho do updater (`criar_cabecalho_mestre`, data fixa `14/09/2026 17:07`) + corpo travado do Senado (`updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt`, sha256 `d2f681e0…`) + `\n`;
+- resultado conferido: sha256 `3100e097…` (o mesmo `text_source_file_sha256` de todos os registros ENTENDA; os 682 snapshots carimbados coincidem);
+- `entenda_engine.read_source_bytes` lê o arquivo local quando existe; na ausência (clone limpo, Cloud) usa a reconstrução, com falha fechada se o hash divergir. Nenhuma palavra da lei é editada;
+- `.gitattributes`: `updater/fontes_oficiais_senado/** -text` (os blobs já eram LF; nenhum blob mudou), para que a reconstrução funcione também com `core.autocrlf=true`.
+
+Com isso as suítes ENTENDA rodam num clone puro. Seguem dependências locais: `CF_SEGMENTADA_V2/` e a materialização CRLF do `cf.txt` legado (LEGAL_TARGET_ID, 2 testes), o staging do SD, a tag local `lex-device-v1-physical-approved-2026-10-01` e a cópia de verificação da EC 45 (DEVICE_INTEGRATION), e as pastas do Relations Engine (o Batch06 usa `BATCH06_RELATIONS_PIN.json`).
+
+Builder do Batch06: `python ENTENDA_ENGINE/build_entenda_batch06_candidate.py --determinism 3` (Python ≥ 3.12).

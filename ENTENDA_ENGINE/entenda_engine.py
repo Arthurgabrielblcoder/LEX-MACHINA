@@ -92,6 +92,17 @@ def explanation_id(target_id, variant='BASE', version=1):
     return f'{explanation_key(target_id, variant)}/{version}'
 
 
+def read_source_bytes(base, rel_path):
+    """Bytes of a configured text source. A git-ignored source absent from a clean clone is rebuilt byte for byte from versioned
+    content (text_source_reconstruction.py, sha256 verified, fail closed); a present file is always read as is."""
+    path = Path(base) / rel_path
+    if path.is_file() or Path(base) != REPO:
+        return path.read_bytes()
+    sys.path.insert(0, str(HERE))
+    import text_source_reconstruction as TSR
+    return TSR.reconstruct(rel_path, base)
+
+
 class NormContext:
     """One norm: target index, status, current text per target (from configured sources) and structural order."""
 
@@ -122,7 +133,7 @@ class NormContext:
         for src in self.ncfg['text_sources']:
             path = self.base / src['path']
             raw = (overrides or {}).get(src['path'])
-            data = raw.encode('utf-8') if raw is not None else path.read_bytes()
+            data = raw.encode('utf-8') if raw is not None else read_source_bytes(self.base, src['path'])
             parsed, _, _ = SP.parse_structure(data.decode('utf-8-sig'), self.norma_id, preview_len=10 ** 6)
             info = dict(role=src['role'], path=src['path'], file_sha256=hashlib.sha256(data).hexdigest())
             for t in parsed:

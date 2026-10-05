@@ -99,7 +99,7 @@ class PilotCorpusTest(unittest.TestCase):
 
     def test_stale_end_to_end_when_official_text_changes(self):
         src = self.ctx.ncfg['text_sources'][0]['path']
-        text = (REPO / src).read_bytes().decode('utf-8-sig')
+        text = E.read_source_bytes(REPO, src).decode('utf-8-sig')
         old = 'Não será objeto de deliberação a proposta de emenda tendente a abolir:'
         self.assertIn(old, text)
         ctx2 = E.NormContext('CF88').reload_text({src: text.replace(old, 'Não será objeto de deliberação a proposta de emenda que vise abolir:')})

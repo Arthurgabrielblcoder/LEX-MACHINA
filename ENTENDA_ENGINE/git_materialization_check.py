@@ -29,11 +29,13 @@ CRITICAL = ['ENTENDA_ENGINE/derived', 'DEVICE_INTEGRATION/runtime', 'LEGAL_TARGE
 # normalization-safe by consumption: read as text lines (splitlines) and compared only through `git diff` -> logical equality is checked
 LOGICAL = ['ENTENDA_ENGINE/corpus']
 FOR_TESTS = ['ENTENDA_ENGINE', 'LEGAL_TARGET_ID', 'DEVICE_INTEGRATION/runtime', 'DEVICE_INTEGRATION/tools', 'updater/catalogo_mestre_vademecum.json',
+             'updater/fontes_oficiais_senado',   # base of the byte-exact CF text reconstruction (ENTENDA_ENGINE/editorial/TEXT_SOURCE_RECONSTRUCTION.json)
              'REFERENCE_REGISTRY', 'REFERENCE_COVERAGE_AUDIT', 'LEX_MACHINA_REFERENCIAS_ADAPTADOR_CATALOGO_69_V1']
 # local inputs that are NOT versioned (large external data); copied from the main working tree only for --run-tests
 LOCAL_UNTRACKED_INPUTS = ['CF_SEGMENTADA_V2/CF_DISPOSITIVOS_LIMPOS.json']
 # these tests run `git diff HEAD` and therefore need to be inside the repository; outside it they are reported apart, not hidden
-REQUIRES_GIT_CHECKOUT = {'test_approved_batches_immutable', 'test_approved_content_immutable', 'test_protected_registry_untouched'}
+REQUIRES_GIT_CHECKOUT = {'test_approved_batches_immutable', 'test_approved_content_immutable', 'test_protected_registry_untouched',
+                         'test_batch05_untouched'}
 PINNED_RUNTIME = ('DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt', 'ENTENDA_ENGINE/derived/production_batch_05/BATCH05_TARGET_PLAN.json')
 
 

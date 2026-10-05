@@ -103,7 +103,7 @@ class Batch01FinalTest(unittest.TestCase):
 
     def test_stale_covers_covered_targets(self):
         src = self.ctx.ncfg['text_sources'][0]['path']
-        text = (REPO / src).read_bytes().decode('utf-8-sig')
+        text = E.read_source_bytes(REPO, src).decode('utf-8-sig')
         old = 'é assegurado o direito de resposta, proporcional ao agravo'
         self.assertIn(old, text)
         ctx2 = E.NormContext('CF88').reload_text({src: text.replace(old, 'é assegurado o direito de resposta, na medida do agravo')})
