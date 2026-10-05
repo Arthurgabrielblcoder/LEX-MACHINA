@@ -1,5 +1,51 @@
 {
  "schema_version": 1,
- "registered": [],
- "diagnoses": {}
+ "registered": [
+  {
+   "id": "MB08-SRC-01",
+   "target": "CF88:ART.239:PAR.4",
+   "kind": "GLUED_PARAGRAPH_IN_OPERATIONAL_SOURCE",
+   "detail": "Na fonte operacional do ENTENDA (Senado normalizado CF, sha256 d2f681e0..., reconstruida em constituicao_federal_1988.txt) o texto do § 4º esta colado ao final do § 3º-A ('...1,5 (um inteiro e cinco decimos).§ 4º O financiamento...'). O target CF88:ART.239:PAR.4 fica CURRENT sem texto e o snapshot de CF88:ART.239:PAR.3-A inclui o § 4º.",
+   "diagnosis": "Defeito da fonte oficial normalizada; o runtime da Lei Seca (CF88_RUNTIME.txt) ja separa o § 4º pela regra HEADER_NORMALIZATION_RULE_V1 caso C (exportar_cf88_runtime.py). O leitor ENTENDA do namespace CF88 usa a fonte operacional e nao aplica o caso C.",
+   "handling": "Nao contornado por redacao manual: o § 4º e explicado na visao geral do art. 239 e o bloco do § 3º declara na camada externa que o § 4º nao o integra. Correcao definitiva (perfil CF88 tambem pelo runtime, com reconciliacao dos registros aprovados) fica no BACKLOG."
+  },
+  {
+   "id": "MB08-SRC-02",
+   "target": "CF88:ART.250:CAPUT",
+   "kind": "CLOSING_FORMULA_ABSORBED",
+   "detail": "Na fonte operacional, o caput do art. 250 absorve a formula de encerramento ('Brasilia, 5 de outubro de 1988.') e as assinaturas dos constituintes, porque o leitor ENTENDA analisa a fonte sem marcador de fim.",
+   "diagnosis": "O parser estrito do runtime usa o marcador de fim e nao tem a anomalia; o perfil CF88_OFFICIAL_RUNTIME so troca o leitor do ADCT. A visao geral do art. 250 explica so o conteudo normativo.",
+   "handling": "Registrado; nota na camada externa da visao geral; correcao no BACKLOG (mesmo item de MB08-SRC-01)."
+  },
+  {
+   "id": "MB08-SRC-03",
+   "target": "ADCT:ART.134:PAR.4 / ADCT:ART.134:PAR.6",
+   "kind": "HYPERLINK_FRAGMENT_REPEATED_LABEL",
+   "detail": "No runtime oficial, um fragmento de hiperlink ('§ 6º, todos da Constituicao Federal') inicia linha dentro do § 4º do art. 134 do ADCT. O parser estrito cria uma primeira ocorrencia de PAR.6 e o texto do § 4º termina em '...212, 212-A, II, e 216,'. A ultima ocorrencia (line_start) e o § 6º verdadeiro, com seus incisos.",
+   "diagnosis": "Conhecido e documentado em DEVICE_INTEGRATION/ADCT_SOURCE_INGESTION_REPORT.md (nota 2). O perfil ordena por line_start (mesma regra do mapa do runtime), entao o § 6º e seus incisos ficam corretos; o texto do § 4º permanece truncado na fonte.",
+   "handling": "O § 4º do ADCT art. 134 nao recebe explicacao propria; a visao geral do art. 134 descreve o § 4º apenas pelo que o texto disponivel diz e sinaliza a anomalia na camada externa."
+  },
+  {
+   "id": "MB08-SRC-04",
+   "target": "ADCT (namespace inteiro)",
+   "kind": "LEGACY_STRUCTURAL_SOURCE_FOR_ADCT",
+   "detail": "A config ENTENDA global le o ADCT do cf.txt legado multivigente (todos os targets UNKNOWN_VALIDITY; varias redacoes por rotulo; ex.: ADCT art. 2 com a data original de 1993 em vez da data vigente). O perfil CF88_OFFICIAL_RUNTIME le o ADCT da compilacao monovigente oficial.",
+   "diagnosis": "Lacuna de targetizacao/status, nao de fonte: o texto oficial do ADCT esta versionado (Senado 604119, SOURCES_LOCK) e no runtime da Lei Seca.",
+   "handling": "Resolvido de forma generica pelo perfil de texto (entenda_text_profile.py), sem alterar indice, status ou config globais."
+  },
+  {
+   "id": "MB08-SRC-05",
+   "target": "ADCT:ART.10:INC.II",
+   "kind": "APPROVED_PILOT_LEGACY_SNAPSHOT",
+   "detail": "O piloto aprovado (HUMAN_APPROVED_T1) do ADCT art. 10, II, foi carimbado com o texto do cf.txt legado, que inclui a nota '(Vide Lei Complementar nº 146, de 2014)' ausente da compilacao monovigente, e com status UNKNOWN + verificacao externa. Sob o perfil oficial o target e CURRENT e o snapshot diverge.",
+   "diagnosis": "Conflito de modelagem entre o piloto legado e o perfil oficial; nao e erro do texto.",
+   "handling": "ADCT art. 10 fica fora deste lote (SKIP_APPROVED_PILOT_LEGACY_MODEL, com motivo); o piloto nao foi alterado. Reconciliacao no BACKLOG."
+  }
+ ],
+ "diagnoses": {
+  "CF88:ART.239:PAR.4|CURRENT_WITHOUT_TEXT": "MB08-SRC-01: texto colado ao § 3º-A na fonte operacional; o runtime separa (caso C).",
+  "CF88:ART.239:PAR.3-A|POSSIBLE_GLUED_SIBLING_LABEL": "MB08-SRC-01.",
+  "CF88:ART.250:CAPUT|TEXT_CONTAINS_CLOSING_FORMULA": "MB08-SRC-02.",
+  "ADCT:ART.134:PAR.6|REPEATED_LABEL": "MB08-SRC-03: fragmento de hiperlink; ultima ocorrencia e a canonica."
+ }
 }

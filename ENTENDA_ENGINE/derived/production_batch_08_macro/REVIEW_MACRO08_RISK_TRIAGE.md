@@ -2,9 +2,9 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 83 · risco LOW 67 · MEDIUM 15 · HIGH 1
-- Prontas para revisão editorial: 83 · aprovadas (HUMAN_APPROVED_T1): 0
-- Achados: ABSOLUTE_CLAIM 1, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 3, EXTRAPOLATION_NUMBER 4 · não resolvidos: 0
+- Explicações: 113 · risco LOW 88 · MEDIUM 21 · HIGH 4
+- Prontas para revisão editorial: 113 · aprovadas (HUMAN_APPROVED_T1): 0
+- Achados: ABSOLUTE_CLAIM 3, EXAMPLE_NUMBER 2, EXCEPTION_NOT_IN_TEXT 4, EXTRAPOLATION_NUMBER 4, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -15,6 +15,21 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - EXTRAPOLATION_NUMBER (atencao: 2026) → Numeros/anos do cronograma (0,9%, 2026, 2027, 2028) vem do ADCT arts. 125, 126 e 127, versionados no runtime oficial e citados na propria frase (MACRO08_TRANSITION_EVIDENCE). Resolucao do drafter, sujeita a revisao humana.
 - EXTRAPOLATION_NUMBER (atencao: 2027) → Numeros/anos do cronograma (0,9%, 2026, 2027, 2028) vem do ADCT arts. 125, 126 e 127, versionados no runtime oficial e citados na propria frase (MACRO08_TRANSITION_EVIDENCE). Resolucao do drafter, sujeita a revisao humana.
 - EXTRAPOLATION_NUMBER (atencao: 2028) → Numeros/anos do cronograma (0,9%, 2026, 2027, 2028) vem do ADCT arts. 125, 126 e 127, versionados no runtime oficial e citados na propria frase (MACRO08_TRANSITION_EVIDENCE). Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 226, § 3º — União estável
+
+- `CF88:ART.226:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"
+
+### Art. 228 — Inimputabilidade penal do menor de 18 anos
+
+- `CF88:ART.228` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SANCTION_WITH_INTERPRETATION: SANCTION_WITH_INTERPRETATION: prisão + "questão de interpretação constitucional"
+
+### Art. 231, § 1º — Terras tradicionalmente ocupadas
+
+- `CF88:ART.231:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: INTERPRETIVE_CONTROVERSY: INTERPRETIVE_CONTROVERSY: "controvérsia"
 
 ## Risco MEDIUM
 
@@ -93,6 +108,36 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.220` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: Os limites da liberdade de expressão e de imprensa em casos concretos são tema da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao responde; remete)
+
+### Art. 226 — Família
+
+- `CF88:ART.226` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O reconhecimento de outras configurações familiares é tema da camada JURISPRUDÊNCIA.
+
+### Art. 231 — Direitos dos povos indígenas
+
+- `CF88:ART.231` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O texto oficial remete à Lei nº 14.701/2023 (nota de remissão da compilação oficial); seu conteúdo e os critérios de ocupação tradicional sã
+
+### Art. 240 — Contribuições ao sistema S
+
+- `CF88:ART.240` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O alcance da ressalva para contribuições criadas depois de 1988 é tema da camada JURISPRUDÊNCIA.
+
+### Art. 243 — Expropriação de terras com plantio ilegal ou trabalho escravo
+
+- `CF88:ART.243` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A necessidade de culpa do proprietário para a expropriação é tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: SENSITIVE_THEME: sanções
+
+### Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso
+
+- `CF88:ART.245` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: crime
+
+### Art. 247 — Servidores de atividades exclusivas de Estado
+
+- `CF88:ART.247` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: SENSITIVE_THEME: SENSITIVE_THEME: perda do cargo
 
 ## Risco LOW
 
@@ -434,5 +479,115 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 225, § 1º — Deveres ambientais do poder público
 
 - `CF88:ART.225:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 227 — Proteção da criança, do adolescente e do jovem
+
+- `CF88:ART.227` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- ABSOLUTE_CLAIM (o_que_diz: absoluta) → "absoluta" integra a expressao literal "absoluta prioridade" do caput. Resolucao do drafter, sujeita a revisao humana.
+- ABSOLUTE_CLAIM (o_que_significa: absoluta) → "absoluta" integra a expressao literal "absoluta prioridade" do caput. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens
+
+- `CF88:ART.227:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 227, § 6º — Igualdade entre os filhos
+
+- `CF88:ART.227:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 229 — Deveres recíprocos entre pais e filhos
+
+- `CF88:ART.229` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 230 — Proteção da pessoa idosa
+
+- `CF88:ART.230` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 231, § 3º — Recursos hídricos e minerais em terras indígenas
+
+- `CF88:ART.231:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 232 — Legitimidade processual dos índios
+
+- `CF88:ART.232` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 234 — Encargos na criação de Estado
+
+- `CF88:ART.234` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 235 — Normas para os dez primeiros anos de novo Estado
+
+- `CF88:ART.235` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 236 — Serviços notariais e de registro
+
+- `CF88:ART.236` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 237 — Controle do comércio exterior
+
+- `CF88:ART.237` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 238 — Venda e revenda de combustíveis
+
+- `CF88:ART.238` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 239 — PIS/PASEP, seguro-desemprego e abono
+
+- `CF88:ART.239` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 239, §§ 3º e 3º-A — Abono salarial
+
+- `CF88:ART.239:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 241 — Consórcios públicos e convênios de cooperação
+
+- `CF88:ART.241` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 242 — Exceção à gratuidade e outras regras de ensino
+
+- `CF88:ART.242` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXCEPTION_NOT_IN_TEXT (o_que_diz/o_que_significa: exceção) → O caput afasta a gratuidade ("nao se aplica") para as instituicoes indicadas; a "excecao" descrita e essa. O detector nao reconhece "nao se aplica". Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 244 — Adaptação de prédios e veículos para pessoas com deficiência
+
+- `CF88:ART.244` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 246 — Limite às medidas provisórias
+
+- `CF88:ART.246` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+- EXAMPLE_NUMBER (exemplo_pratico: 1998) → Ano do exemplo marcado como ilustrativo na propria frase, dentro do periodo de 1995 a 2001 do texto. Resolucao do drafter, sujeita a revisao humana.
+- TRANSITION_IN_CORE (o_que_significa: Emenda Constitucional) → O proprio artigo tem emendas constitucionais como objeto; a mencao a EC 32/2001 identifica o termo final do periodo com base nas anotacoes da fonte oficial. Nao e regra de transicao misturada ao nucleo. Resolucao do drafter, sujeita a revisao humana.
+
+### Art. 248 — Teto para benefícios pagos pelo regime geral
+
+- `CF88:ART.248` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 249 — Fundos para aposentadorias dos servidores
+
+- `CF88:ART.249` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 250 — Fundo do regime geral de previdência
+
+- `CF88:ART.250` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 

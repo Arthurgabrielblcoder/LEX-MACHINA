@@ -23,37 +23,38 @@
   "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
  },
  "counts": {
-  "A_CLEAN_LOW": 60,
-  "B_CLEAN_MEDIUM": 13,
-  "C_QUICK_REVIEW": 9,
-  "D_FULL_HUMAN_REVIEW": 1,
+  "A_CLEAN_LOW": 78,
+  "B_CLEAN_MEDIUM": 19,
+  "C_QUICK_REVIEW": 12,
+  "D_FULL_HUMAN_REVIEW": 4,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 67,
-  "MEDIUM": 15,
-  "HIGH": 1
+  "LOW": 88,
+  "MEDIUM": 21,
+  "HIGH": 4
  },
  "complexity_counts": {
-  "STRUCTURED": 49,
-  "EXTERNAL": 33,
-  "SIMPLE": 1
+  "STRUCTURED": 66,
+  "EXTERNAL": 45,
+  "SIMPLE": 2
  },
  "jurisprudence_counts": {
-  "NONE": 72,
-  "CONTEXT_ONLY": 11
+  "NONE": 95,
+  "CONTEXT_ONLY": 17,
+  "REQUIRED_FOR_CORRECTNESS": 1
  },
  "by_legal_risk": {
   "LOW": {
-   "A_CLEAN_LOW": 60,
+   "A_CLEAN_LOW": 78,
    "B_CLEAN_MEDIUM": 0,
-   "C_QUICK_REVIEW": 7,
+   "C_QUICK_REVIEW": 10,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 13,
+   "B_CLEAN_MEDIUM": 19,
    "C_QUICK_REVIEW": 2,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -62,30 +63,30 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 1,
+   "D_FULL_HUMAN_REVIEW": 4,
    "E_HARD_FAIL": 0
   }
  },
  "by_complexity": {
   "SIMPLE": {
-   "A_CLEAN_LOW": 1,
+   "A_CLEAN_LOW": 2,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
-   "A_CLEAN_LOW": 43,
-   "B_CLEAN_MEDIUM": 2,
-   "C_QUICK_REVIEW": 4,
+   "A_CLEAN_LOW": 56,
+   "B_CLEAN_MEDIUM": 3,
+   "C_QUICK_REVIEW": 7,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
-   "A_CLEAN_LOW": 16,
-   "B_CLEAN_MEDIUM": 11,
+   "A_CLEAN_LOW": 20,
+   "B_CLEAN_MEDIUM": 16,
    "C_QUICK_REVIEW": 5,
-   "D_FULL_HUMAN_REVIEW": 1,
+   "D_FULL_HUMAN_REVIEW": 4,
    "E_HARD_FAIL": 0
   }
  },
@@ -2443,6 +2444,656 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.227:PAR.6",
+   "title": "Art. 227, § 6º — Igualdade entre os filhos",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.229",
+   "title": "Art. 229 — Deveres recíprocos entre pais e filhos",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.230",
+   "title": "Art. 230 — Proteção da pessoa idosa",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco anos",
+    "number_or_percentage: sessenta",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "70",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.231:PAR.3",
+   "title": "Art. 231, § 3º — Recursos hídricos e minerais em terras indígenas",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aproveitamento dos recursos hídricos incluídos os potenciais energéticos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.232",
+   "title": "Art. 232 — Legitimidade processual dos índios",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "juízo em defesa de seus direitos e interesses",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.234",
+   "title": "Art. 234 — Encargos na criação de Estado",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.236",
+   "title": "Art. 236 — Serviços notariais e de registro",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: seis meses",
+    "number_or_percentage: seis",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "abertura de concurso de provimento ou de remoção",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.237",
+   "title": "Art. 237 — Controle do comércio exterior",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a fiscalização e o controle sobre o comércio",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.238",
+   "title": "Art. 238 — Venda e revenda de combustíveis",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.239",
+   "title": "Art. 239 — PIS/PASEP, seguro-desemprego e abono",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: Lei Complementar",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 166",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.239:PAR.3",
+   "title": "Art. 239, §§ 3º e 3º-A — Abono salarial",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: duas",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a partir de 2026 pela variação anual do",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.241",
+   "title": "Art. 241 — Consórcios públicos e convênios de cooperação",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "os consórcios públicos e os convênios de cooperação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.242",
+   "title": "Art. 242 — Exceção à gratuidade e outras regras de ensino",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "remissao: arts. 206",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "conta as contribuições das diferentes culturas e etnias",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [
+    "EXCEPTION_NOT_IN_TEXT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.244",
+   "title": "Art. 244 — Adaptação de prédios e veículos para pessoas com deficiência",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei disporá",
+    "remissao: arts. 227",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.246",
+   "title": "Art. 246 — Limite às medidas provisórias",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "artigo da constituição cuja redação tenha sido alterada",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED",
+    "TRANSITION_IN_CORE:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.248",
+   "title": "Art. 248 — Teto para benefícios pagos pelo regime geral",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 37",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os benefícios pagos a qualquer título pelo órgão",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.249",
+   "title": "Art. 249 — Fundos para aposentadorias dos servidores",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união os estados o distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.250",
+   "title": "Art. 250 — Fundo do regime geral de previdência",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "benefícios concedidos pelo regime geral de previdência social",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.182:PAR.4",
    "title": "Art. 182, § 4º — Sanções ao imóvel urbano subutilizado",
    "role": "BLOCK",
@@ -3007,6 +3658,287 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.226",
+   "title": "Art. 226 — Família",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O reconhecimento de outras configurações familiares é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a comunidade formada por qualquer dos pais e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.231",
+   "title": "Art. 231 — Direitos dos povos indígenas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O texto oficial remete à Lei nº 14.701/2023 (nota de remissão da compilação oficial); seu conteúdo e os critérios de ocupação tradicional sã"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "remissao: arts. 174",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "proteger e fazer respeitar todos os seus bens",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "das riquezas naturais do solo dos rios e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.240",
+   "title": "Art. 240 — Contribuições ao sistema S",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O alcance da ressalva para contribuições criadas depois de 1988 é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: ressalvadas",
+    "remissao: arts. 195",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "entidades privadas de serviço social e de formação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.243",
+   "title": "Art. 243 — Expropriação de terras com plantio ilegal ou trabalho escravo",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A necessidade de culpa do proprietário para a expropriação é tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 5",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a fundo especial com destinação específica na forma",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.245",
+   "title": "Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: crime"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: lei disporá",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "assistência aos herdeiros e dependentes carentes de pessoas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.247",
+   "title": "Art. 247 — Servidores de atividades exclusivas de Estado",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: SENSITIVE_THEME: perda do cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 41, 169",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.177",
    "title": "Art. 177 — Monopólio da União sobre petróleo, gás e minérios nucleares",
    "role": "OVERVIEW",
@@ -3489,6 +4421,177 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.227",
+   "title": "Art. 227 — Proteção da criança, do adolescente e do jovem",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: salvo",
+    "law_dependency: lei disporá",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 7, 204",
+    "overview com 21 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de negligência discriminação exploração violência crueldade e opressão",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "o abuso a violência e a exploração sexual",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ART.227:PAR.3:INC.I",
+     "sentence": "",
+     "detail": "6/7 itens de ART.227:PAR.3 reconhecidos; sem traco: ART.227:PAR.3:INC.I \"idade mínima de quatorze anos para admissão ao tra\""
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_significa",
+     "match": "10 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "ABSOLUTE_CLAIM",
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED",
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (ART.227:PAR.3:INC.I)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.227:PAR.3",
+   "title": "Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 7",
+    "block com 8 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "acesso do trabalhador adolescente e jovem à escola",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "ao jovem dependente de entorpecentes",
+     "sentence": "",
+     "detail": "ART.227:PAR.3:INC.VII: 4/5 elementos reconhecidos; sem traco: \"ao jovem dependente de entorpecentes\""
+    }
+   ],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "16",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (ao jovem dependente de entorpecentes)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.235",
+   "title": "Art. 235 — Normas para os dez primeiros anos de novo Estado",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco anos",
+    "number_or_percentage: dez",
+    "overview com 17 dispositivos"
+   ],
+   "queue": "C_QUICK_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "LIST_ITEM_POSSIBLY_DROPPED",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "o_que_diz",
+     "match": "superior a esse número",
+     "sentence": "",
+     "detail": "ART.235:INC.I: 4/5 elementos reconhecidos; sem traco: \"superior a esse número\""
+    }
+   ],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LIST_ITEM_POSSIBLY_DROPPED (superior a esse número)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.195:PAR.15",
    "title": "Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços",
    "role": "BLOCK",
@@ -3537,13 +4640,159 @@
    "show_full_t1": true,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.226:PAR.3",
+   "title": "Art. 226, § 3º — União estável",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"leitura isolada\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a união estável entre o homem e a",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"leitura isolada\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.228",
+   "title": "Art. 228 — Inimputabilidade penal do menor de 18 anos",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "SANCTION_WITH_INTERPRETATION"
+   ],
+   "legal_reasons": [
+    "SANCTION_WITH_INTERPRETATION: SANCTION_WITH_INTERPRETATION: prisão + \"questão de interpretação constitucional\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A possibilidade de reduzir a idade penal por emenda é tema de debate constitucional (camada JURISPRUDÊNCIA e doutrina)."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "17",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: SANCTION_WITH_INTERPRETATION: SANCTION_WITH_INTERPRETATION: prisão + \"questão de interpretação constitucional\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.231:PAR.1",
+   "title": "Art. 231, § 1º — Terras tradicionalmente ocupadas",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "INTERPRETIVE_CONTROVERSY"
+   ],
+   "legal_reasons": [
+    "INTERPRETIVE_CONTROVERSY: INTERPRETIVE_CONTROVERSY: \"controvérsia\""
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A exigência ou não de marco temporal de ocupação é tema da camada JURISPRUDÊNCIA e da legislação correlata (remissão oficial à Lei nº 14.701",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"Lei nº 14.701\")"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "Lei nº 14.701",
+     "sentence": "A exigência ou não de marco temporal de ocupação é tema da camada JURISPRUDÊNCIA e da legislação correlata (remissão oficial à Lei nº 14.701/2023 no caput);",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)",
+    "Lei nº 14.701"
+   ],
+   "reason": "LEGAL_RISK HIGH: INTERPRETIVE_CONTROVERSY: INTERPRETIVE_CONTROVERSY: \"controvérsia\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
   }
  ],
  "d_reasons": {
+  "INTERPRETIVE_CONTROVERSY": 1,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 1,
+  "SANCTION_WITH_INTERPRETATION": 1,
   "TEMPORAL_STATUS_UNRESOLVED": 1
  },
  "finding_counts": {
-  "LIST_ITEM_POSSIBLY_DROPPED": 11,
+  "EXTERNAL_FACT_NEEDS_PROVENANCE": 1,
+  "LIST_ITEM_POSSIBLY_DROPPED": 14,
   "NUMBER_NOT_IN_TEXT": 2,
   "PERMISSION_NOT_IN_TEXT": 1
  },
@@ -3552,24 +4801,24 @@
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 118705,
-  "old_model_full_package_chars": 260523,
-  "presented_chars": 78708,
+  "total_draft_chars": 156539,
+  "old_model_full_package_chars": 340230,
+  "presented_chars": 111024,
   "presented_by_file": {
-   "MACRO08_COMPACT_AB_REVIEW.md": 55963,
-   "MACRO08_FULL_D_REVIEW.md": 4152,
+   "MACRO08_COMPACT_AB_REVIEW.md": 75063,
+   "MACRO08_FULL_D_REVIEW.md": 11652,
    "MACRO08_HARD_FAIL_REPORT.md": 119,
-   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 11635,
-   "MACRO08_QUICK_C_REVIEW.md": 6839
+   "MACRO08_HUMAN_REVIEW_PRIORITY.md": 15621,
+   "MACRO08_QUICK_C_REVIEW.md": 8569
   },
-  "reduction_abs": 181815,
-  "reduction_pct": 69.8
+  "reduction_abs": 229206,
+  "reduction_pct": 67.4
  },
- "d_ratio": 0.012,
+ "d_ratio": 0.035,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 57,
+  "eligible": 79,
   "microauto_apply": false
  },
  "human_approved_t1_granted": 0,
@@ -3631,6 +4880,24 @@
     "RESSALVA": 1,
     "TELEOLOGIA": 4
    }
+  },
+  "C": {
+   "corrections": 44,
+   "by_category": {
+    "CONDICAO_FORA_DO_TEXTO": 1,
+    "COPIA_DA_LEI_SECA": 20,
+    "DATA": 4,
+    "DEPENDENCIA_DE_LEI_OMITIDA": 1,
+    "EXEMPLO_CRIA_REQUISITO": 2,
+    "FRASE_LONGA": 4,
+    "GENERALIZACAO_ABSOLUTA": 2,
+    "HISTORICO_SEM_PROVENIENCIA": 1,
+    "INTERPRETACAO_COMO_REGRA": 1,
+    "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA": 5,
+    "NUMERO_ILUSTRATIVO": 1,
+    "PROVENIENCIA": 1,
+    "TELEOLOGIA": 1
+   }
   }
  },
  "checks": {
@@ -3643,33 +4910,34 @@
  },
  "segments": {
   "CORPO": {
-   "new_explanations": 83,
+   "new_explanations": 113,
    "roles": {
-    "BLOCK": 19,
-    "DEVICE": 9,
+    "BLOCK": 21,
+    "DEVICE": 13,
     "ITEM": 2,
-    "OVERVIEW": 53
+    "OVERVIEW": 77
    },
    "queues": {
-    "A_CLEAN_LOW": 60,
-    "B_CLEAN_MEDIUM": 13,
-    "C_QUICK_REVIEW": 9,
-    "D_FULL_HUMAN_REVIEW": 1,
+    "A_CLEAN_LOW": 78,
+    "B_CLEAN_MEDIUM": 19,
+    "C_QUICK_REVIEW": 12,
+    "D_FULL_HUMAN_REVIEW": 4,
     "E_HARD_FAIL": 0
    },
    "legal_risk": {
-    "LOW": 67,
-    "MEDIUM": 15,
-    "HIGH": 1
+    "LOW": 88,
+    "MEDIUM": 21,
+    "HIGH": 4
    },
    "verification_complexity": {
-    "SIMPLE": 1,
-    "STRUCTURED": 49,
-    "EXTERNAL": 33
+    "SIMPLE": 2,
+    "STRUCTURED": 66,
+    "EXTERNAL": 45
    },
    "jurisprudence": {
-    "CONTEXT_ONLY": 11,
-    "NONE": 72
+    "CONTEXT_ONLY": 17,
+    "NONE": 95,
+    "REQUIRED_FOR_CORRECTNESS": 1
    }
   },
   "ADCT": {

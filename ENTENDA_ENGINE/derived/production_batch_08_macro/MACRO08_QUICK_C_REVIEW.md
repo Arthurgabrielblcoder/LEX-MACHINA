@@ -1,6 +1,6 @@
 # MACRO08 — REVISÃO RÁPIDA (fila C)
 
-Lote `ENTENDA_CF_MACRO_BATCH_08` · 9 itens · só o trecho com problema; nenhuma correção foi aplicada.
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 12 itens · só o trecho com problema; nenhuma correção foi aplicada.
 
 ## `CF88:ART.177` — Art. 177 — Monopólio da União sobre petróleo, gás e minérios nucleares · risco LOW · EXTERNAL
 
@@ -90,6 +90,33 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 9 itens · só o trecho com problema; nenhum
 ## `CF88:ART.225:PAR.1` — Art. 225, § 1º — Deveres ambientais do poder público · risco LOW · STRUCTURED
 
 - **Lei Seca sem traço na explicação (o_que_diz):** ART.225:PAR.1:INC.VII: 3/4 elementos reconhecidos; sem traco: "provoquem a extinção de espécies"
+- **Detector:** LIST_ITEM_POSSIBLY_DROPPED
+- **Motivo:** enumeração parafraseada sem o item/elemento indicado
+- **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")
+
+- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
+
+## `CF88:ART.227` — Art. 227 — Proteção da criança, do adolescente e do jovem · risco LOW · STRUCTURED
+
+- **Lei Seca sem traço na explicação (o_que_diz):** 6/7 itens de ART.227:PAR.3 reconhecidos; sem traco: ART.227:PAR.3:INC.I "idade mínima de quatorze anos para admissão ao tra"
+- **Detector:** LIST_ITEM_POSSIBLY_DROPPED
+- **Motivo:** enumeração parafraseada sem o item/elemento indicado
+- **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")
+
+- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
+
+## `CF88:ART.227:PAR.3` — Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens · risco LOW · STRUCTURED
+
+- **Lei Seca sem traço na explicação (o_que_diz):** ART.227:PAR.3:INC.VII: 4/5 elementos reconhecidos; sem traco: "ao jovem dependente de entorpecentes"
+- **Detector:** LIST_ITEM_POSSIBLY_DROPPED
+- **Motivo:** enumeração parafraseada sem o item/elemento indicado
+- **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")
+
+- [ ] ACEITAR PROPOSTA   - [ ] FALSO POSITIVO (manter)   - [ ] MANDAR PARA D
+
+## `CF88:ART.235` — Art. 235 — Normas para os dez primeiros anos de novo Estado · risco LOW · STRUCTURED
+
+- **Lei Seca sem traço na explicação (o_que_diz):** ART.235:INC.I: 4/5 elementos reconhecidos; sem traco: "superior a esse número"
 - **Detector:** LIST_ITEM_POSSIBLY_DROPPED
 - **Motivo:** enumeração parafraseada sem o item/elemento indicado
 - **Proposta de correção segura:** incluir o item/elemento sem traco ou declarar que a enumeracao e parcial ("entre elas")

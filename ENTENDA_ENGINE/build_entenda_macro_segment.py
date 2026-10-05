@@ -437,8 +437,10 @@ def _seqnum(t):
     return None
 
 
-def source_sanity(ctx, arts):
-    """Pre-generation checks on the structure and text the explanations will be written on. Never corrects anything."""
+def source_sanity(ctx, arts, closing_markers=()):
+    """Pre-generation checks on the structure and text the explanations will be written on. Never corrects anything.
+    closing_markers (MACRO_SPEC.source_sanity.closing_markers): the norm's closing formula; a device text that contains it has absorbed the
+    signatures (a text source parsed without end marker)."""
     rows = []
     for a in arts:
         sub = ctx.subtree(a)
@@ -449,6 +451,11 @@ def source_sanity(ctx, arts):
             txt = ctx.text.get(t, '')
             if st == 'CURRENT' and not txt:
                 rows.append(dict(target_id=t, code='CURRENT_WITHOUT_TEXT', severity='BLOCKING_FOR_TARGET', detail='target CURRENT sem texto no runtime/fonte'))
+            for cm in closing_markers:
+                if st == 'CURRENT' and cm in txt:
+                    i = txt.index(cm)
+                    rows.append(dict(target_id=t, code='TEXT_CONTAINS_CLOSING_FORMULA', severity='REVIEW',
+                                     detail=f'texto do dispositivo continua apos o fim normativo: "{txt[max(0, i - 40):i + 80]}"'))
             m = GLUED_RE.search(txt)
             if st == 'CURRENT' and m:
                 rows.append(dict(target_id=t, code='POSSIBLE_GLUED_SIBLING_LABEL', severity='REVIEW', detail=txt[max(0, m.start() - 40):m.end() + 40]))
@@ -528,7 +535,8 @@ def build(bd):
         _json(bd / f'{nm.p}_{s}_TEMPORAL_MAP.json', d)
     _json(bd / f'{nm.p}_TRANSITION_EVIDENCE.json', transition_evidence(ms, ctx, c, tin, vig_scope, runtime_sha))
     _json(bd / f'{nm.p}_SKIP_REGISTER.json', skip_register(ms, ctx, skips, tin))
-    anomalies = source_sanity(ctx, [a for v in all_articles(ms, ctx, built_only=False).values() for a in v])
+    anomalies = source_sanity(ctx, [a for v in all_articles(ms, ctx, built_only=False).values() for a in v],
+                              (ms.get('source_sanity') or {}).get('closing_markers', ()))
     write_anomalies(bd, nm, ms, anomalies, _load(bd / 'SOURCE_ANOMALIES_INPUT.json') if (bd / 'SOURCE_ANOMALIES_INPUT.json').is_file() else {})
     spec = _load(bd / 'BATCH_SPEC.json')
     for x in ms['sub_blocks']:

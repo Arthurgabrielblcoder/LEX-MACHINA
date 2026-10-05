@@ -4018,3 +4018,1485 @@ A proibição de crueldade com animais do inciso VII deve ser lida junto com o �
 
 ---
 
+## CF88:ART.226
+
+Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 226 — Família
+
+- **TARGET:** `CF88:ART.226` · `ENTENDA/CF88:ART.226/BASE/1`
+- **DISPLAY TITLE:** Art. 226 — Família
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2034 bytes · referências 0
+- **Motivo da seleção:** Visao geral: protecao especial da familia, casamento, entidades familiares, igualdade, divorcio, planejamento familiar e violencia domestica.
+
+**O QUE DIZ**
+
+O art. 226 declara a família base da sociedade e lhe dá especial proteção do Estado. O casamento é civil, e sua celebração é gratuita; o casamento religioso tem efeito civil, nos termos da lei. O artigo reconhece como entidade familiar a união estável e a comunidade formada por qualquer dos pais e seus descendentes. Homem e mulher exercem igualmente os direitos e deveres da sociedade conjugal, e o casamento civil pode ser dissolvido pelo divórcio. O planejamento familiar é livre decisão do casal, cabendo ao Estado oferecer recursos educacionais e científicos e proibida qualquer coerção. O Estado também deve criar mecanismos para coibir a violência nas relações familiares.
+
+**O QUE SIGNIFICA**
+
+A Constituição protege a família em suas diferentes formas, e não apenas a formada pelo casamento.
+
+A família formada por um dos pais e seus filhos, chamada monoparental, é expressamente reconhecida.
+
+No casamento, marido e mulher têm os mesmos direitos e deveres.
+
+O § 6º permite o divórcio sem fixar no texto prazos ou requisitos prévios.
+
+O planejamento familiar pertence ao casal: o Estado informa e oferece meios, mas não pode impor escolhas.
+
+**EXEMPLO PRÁTICO**
+
+Uma mãe cria sozinha os dois filhos. Pelo § 4º, os três formam uma entidade familiar e têm direito à especial proteção do Estado.
+
+**ATENÇÃO**
+
+A união estável tem explicação própria. O alcance atual das formas de família protegidas é tema também da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Entidade familiar*: grupo reconhecido como família para receber a proteção do Estado.
+- *Família monoparental*: família formada por um dos pais e seus filhos.
+- *Paternidade responsável*: dever dos pais de planejar e assumir as responsabilidades com os filhos.
+
+**CAMADA EXTERNA**
+
+- O reconhecimento de outras configurações familiares é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a comunidade formada por qualquer dos pais e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 226, § 3º — União estável
+
+- **TARGET:** `CF88:ART.226:PAR.3` · `ENTENDA/CF88:ART.226:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 226, § 3º — União estável
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.226`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1684 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: reconhecimento da uniao estavel como entidade familiar e dever da lei de facilitar sua conversao em casamento; alcance atual depende da interpretacao constitucional.
+
+**O QUE DIZ**
+
+O § 3º reconhece como entidade familiar, para efeito da proteção do Estado, a união estável entre o homem e a mulher, e manda a lei facilitar que ela seja convertida em casamento.
+
+**O QUE SIGNIFICA**
+
+O texto não define a união estável: seus requisitos estão na legislação civil. A Constituição a trata como família, com direito à proteção do Estado, mesmo sem casamento formal.
+
+O texto também determina que a lei torne mais simples transformar essa união em casamento, se o casal quiser.
+
+**EXEMPLO PRÁTICO**
+
+Um casal vive junto há anos e cria os filhos em comum, sem ter se casado, e a relação preenche os requisitos da lei civil. A relação é protegida como entidade familiar e pode ser convertida em casamento pelo procedimento facilitado que a lei prever.
+
+**ATENÇÃO**
+
+A leitura isolada da expressão entre o homem e a mulher não basta para saber quem pode formar união estável hoje: o alcance do parágrafo foi delimitado pela interpretação constitucional, na camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *União estável*: convivência reconhecida como família sem casamento formal, nos requisitos da lei civil.
+- *Conversão em casamento*: transformação da união estável em casamento civil.
+
+**CAMADA EXTERNA**
+
+- O alcance da expressão 'entre o homem e a mulher' (uniões entre pessoas do mesmo sexo) é tema da camada JURISPRUDÊNCIA (EXTERNAL_VERIFICATION_REQUIRED). Os requisitos legais da união estável pertencem à legislação correlata.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união estável entre o homem e a); PARENT_REPETITION (*: CF88:ART.226: 0.206)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.227
+
+Sem explicação própria: 18 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 227 — Proteção da criança, do adolescente e do jovem
+
+- **TARGET:** `CF88:ART.227` · `ENTENDA/CF88:ART.227/BASE/1`
+- **DISPLAY TITLE:** Art. 227 — Proteção da criança, do adolescente e do jovem
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 266 palavras · 2058 bytes · referências 3
+- **Motivo da seleção:** Visao geral: dever compartilhado com absoluta prioridade, direitos assegurados e mapa dos paragrafos.
+
+**O QUE DIZ**
+
+O art. 227 atribui à família, à sociedade e ao Estado o dever de garantir, com absoluta prioridade, à criança, ao adolescente e ao jovem direitos como vida, saúde, alimentação, educação, lazer, profissionalização, cultura, dignidade, respeito, liberdade e convivência familiar e comunitária. Também cabe a eles proteger esse público de negligência, discriminação, exploração, violência, crueldade e opressão. Os parágrafos tratam de programas de saúde, acessibilidade, proteção especial, punição do abuso e da exploração sexual, adoção, igualdade entre os filhos, atendimento pela assistência social e da lei sobre os direitos dos jovens.
+
+**O QUE SIGNIFICA**
+
+A expressão absoluta prioridade indica que esses direitos devem ser atendidos com preferência; o detalhamento dessa preferência está na legislação específica.
+
+O dever é de três atores ao mesmo tempo: família, sociedade e Estado.
+
+O § 4º exige que a lei puna severamente o abuso, a violência e a exploração sexual de crianças e adolescentes.
+
+O § 5º manda o poder público acompanhar a adoção e a lei fixar casos e condições da adoção por estrangeiros.
+
+O § 8º prevê o estatuto da juventude e um plano nacional de juventude de dez anos.
+
+**EXEMPLO PRÁTICO**
+
+Ao decidir entre ampliar uma praça e construir uma creche com o mesmo recurso, o Município deve considerar a absoluta prioridade dos direitos das crianças.
+
+**ATENÇÃO**
+
+O jovem foi incluído no artigo ao lado da criança e do adolescente. Quem é considerado jovem e como seus direitos são exercidos é definido em lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Absoluta prioridade*: preferência dos direitos de crianças, adolescentes e jovens nas decisões e nos gastos públicos.
+- *Convivência familiar e comunitária*: direito de crescer com a família e de participar da vida da comunidade.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** ABSOLUTE_CLAIM (o_que_diz: absoluta); ABSOLUTE_CLAIM (o_que_significa: absoluta); ABSOLUTE_CLAIM (exemplo_pratico: absoluta); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de negligência discriminação exploração violência crueldade ); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: o abuso a violência e a exploração sexual); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao decidir entre ampliar uma praça e construir uma creche co)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens
+
+- **TARGET:** `CF88:ART.227:PAR.3` · `ENTENDA/CF88:ART.227:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.227`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2216 bytes · referências 0
+- **Motivo da seleção:** Bloco: os sete aspectos da protecao especial (idade para trabalho, direitos trabalhistas, escola, garantias processuais, medida privativa de liberdade, acolhimento e dependencia quimica).
+
+**O QUE DIZ**
+
+O § 3º lista sete aspectos da proteção especial: idade mínima de quatorze anos para começar a trabalhar, observado o art. 7º, XXXIII; garantia de direitos previdenciários e trabalhistas; acesso do trabalhador adolescente e jovem à escola; conhecimento pleno e formal da acusação de ato infracional, igualdade entre as partes no processo e defesa técnica por profissional habilitado; observância da brevidade, da excepcionalidade e da condição de pessoa em desenvolvimento ao aplicar medida privativa de liberdade; estímulo público, nos termos da lei, inclusive por assistência jurídica, incentivos fiscais e subsídios, ao acolhimento por guarda de criança ou adolescente órfão ou abandonado; e programas de prevenção e atendimento especializado para dependentes de drogas.
+
+**O QUE SIGNIFICA**
+
+A proteção especial cobre o trabalho, o processo e a assistência.
+
+No trabalho, a idade de quatorze anos deve ser lida junto com o art. 7º, XXXIII, que traz as demais regras sobre idade para o trabalho.
+
+No processo, o adolescente acusado de ato infracional tem direito de saber exatamente do que é acusado e de ter advogado.
+
+A medida que tira a liberdade deve ser breve, excepcional e adequada a uma pessoa em desenvolvimento.
+
+O poder público deve estimular o acolhimento de órfãos e abandonados em famílias, por guarda.
+
+**EXEMPLO PRÁTICO**
+
+Um adolescente de 16 anos é apontado como autor de ato infracional. Ele deve ser formalmente informado da acusação e ter defesa técnica, e uma eventual internação deve respeitar a brevidade e a excepcionalidade.
+
+**ATENÇÃO**
+
+As medidas aplicáveis ao adolescente e o procedimento estão na legislação tutelar específica.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ato infracional*: conduta de criança ou adolescente descrita na lei como crime ou contravenção.
+- *Defesa técnica*: defesa feita por advogado ou defensor público.
+- *Guarda*: forma de colocação da criança em família, com dever de cuidado e assistência.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: acesso do trabalhador adolescente e jovem à escola); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ele deve ser formalmente informado da acusação e ter defesa )
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 227, § 6º — Igualdade entre os filhos
+
+- **TARGET:** `CF88:ART.227:PAR.6` · `ENTENDA/CF88:ART.227:PAR.6/BASE/1`
+- **DISPLAY TITLE:** Art. 227, § 6º — Igualdade entre os filhos
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.227`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 137 palavras · 1180 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: mesmos direitos e qualificacoes para filhos havidos ou nao do casamento e adotivos, com proibicao de designacoes discriminatorias.
+
+**O QUE DIZ**
+
+O § 6º garante os mesmos direitos e qualificações aos filhos, tenham nascido ou não do casamento, ou sido adotados, e proíbe qualquer designação discriminatória relativa à filiação.
+
+**O QUE SIGNIFICA**
+
+Não existe filho de primeira ou de segunda categoria.
+
+O filho nascido fora do casamento e o filho adotado têm exatamente os mesmos direitos que o nascido dentro do casamento, inclusive na herança e no direito a alimentos.
+
+Também ficam proibidos termos que diferenciem os filhos pela origem, como filho ilegítimo ou bastardo.
+
+**EXEMPLO PRÁTICO**
+
+Um homem morre e deixa dois filhos: um nascido do casamento e outro, adotado. Na herança, os dois recebem partes iguais.
+
+**ATENÇÃO**
+
+A igualdade alcança direitos e também a forma de designar os filhos em documentos oficiais.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Filiação*: vínculo jurídico entre pais e filhos.
+- *Designação discriminatória*: nome ou termo que trata um filho como inferior por sua origem.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.228
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 228 — Inimputabilidade penal do menor de 18 anos
+
+- **TARGET:** `CF88:ART.228` · `ENTENDA/CF88:ART.228/BASE/1`
+- **DISPLAY TITLE:** Art. 228 — Inimputabilidade penal do menor de 18 anos
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 161 palavras · 1501 bytes · referências 0
+- **Motivo da seleção:** Visao geral: menores de dezoito anos sao penalmente inimputaveis e sujeitos a legislacao especial.
+
+**O QUE DIZ**
+
+O art. 228 declara penalmente inimputáveis os menores de dezoito anos e os submete às normas da legislação especial.
+
+**O QUE SIGNIFICA**
+
+Quem tem menos de dezoito anos não responde a processo penal comum nem recebe pena de prisão como um adulto.
+
+Isso não significa ausência de consequências: a conduta é tratada pela legislação especial, que prevê medidas próprias para crianças e adolescentes.
+
+O limite de idade está fixado na própria Constituição, e não apenas no Código Penal.
+
+**EXEMPLO PRÁTICO**
+
+Um adolescente de 17 anos pratica um roubo. Ele não é julgado pelo Código Penal como adulto, mas responde segundo a legislação especial, que pode aplicar medidas como internação, nos casos e limites previstos.
+
+**ATENÇÃO**
+
+Inimputabilidade penal não é impunidade: a resposta à conduta segue a legislação especial. Se essa idade pode ser alterada por emenda constitucional é questão de interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Inimputável*: quem não pode receber pena criminal comum pela conduta praticada.
+- *Legislação especial*: leis próprias para crianças e adolescentes, com regras diferentes das penais comuns.
+
+**CAMADA EXTERNA**
+
+- A possibilidade de reduzir a idade penal por emenda é tema de debate constitucional (camada JURISPRUDÊNCIA e doutrina).
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.229
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 229 — Deveres recíprocos entre pais e filhos
+
+- **TARGET:** `CF88:ART.229` · `ENTENDA/CF88:ART.229/BASE/1`
+- **DISPLAY TITLE:** Art. 229 — Deveres recíprocos entre pais e filhos
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 160 palavras · 1241 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever dos pais de assistir, criar e educar os filhos menores e dos filhos maiores de amparar os pais.
+
+**O QUE DIZ**
+
+O art. 229 estabelece deveres recíprocos: aos pais cabe assistir, criar e educar os filhos menores; aos filhos maiores cabe ajudar e amparar os pais na velhice, na carência ou na enfermidade.
+
+**O QUE SIGNIFICA**
+
+A relação entre pais e filhos gera obrigações nos dois sentidos.
+
+Enquanto os filhos são menores, cabe aos pais sustentá-los, cuidar deles e garantir sua educação.
+
+Quando os filhos são adultos, cabe a eles apoiar os pais em três situações: velhice, carência ou doença.
+
+Esse dever pode ter efeitos jurídicos, como o dever de pagar alimentos, nos termos da lei civil.
+
+**EXEMPLO PRÁTICO**
+
+Uma mãe idosa, sem renda suficiente, adoece e não consegue se manter. Seu filho adulto, que tem condições, tem o dever de ajudá-la e ampará-la.
+
+**ATENÇÃO**
+
+O dever dos filhos se refere aos maiores e às situações de velhice, carência ou enfermidade dos pais.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Amparar*: dar apoio, proteção e meios de subsistência.
+- *Alimentos*: valores devidos para o sustento de alguém, como comida, moradia e saúde.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.230
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 230 — Proteção da pessoa idosa
+
+- **TARGET:** `CF88:ART.230` · `ENTENDA/CF88:ART.230/BASE/1`
+- **DISPLAY TITLE:** Art. 230 — Proteção da pessoa idosa
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1364 bytes · referências 0
+- **Motivo da seleção:** Visao geral: dever de amparo as pessoas idosas, programas executados nos lares e gratuidade do transporte coletivo urbano aos maiores de sessenta e cinco anos.
+
+**O QUE DIZ**
+
+O art. 230 atribui à família, à sociedade e ao Estado o dever de amparar as pessoas idosas: garantir que participem da comunidade, defender sua dignidade e seu bem-estar e assegurar seu direito à vida. Os programas de amparo devem ser executados de preferência nos próprios lares, e os maiores de sessenta e cinco anos têm gratuidade nos transportes coletivos urbanos.
+
+**O QUE SIGNIFICA**
+
+A proteção da pessoa idosa é um dever compartilhado, que inclui participação social, dignidade, bem-estar e o direito à vida.
+
+O § 1º dá preferência ao atendimento em casa, junto à família, em vez de instituições.
+
+O § 2º garante transporte coletivo urbano gratuito a quem tem mais de sessenta e cinco anos, diretamente pela Constituição.
+
+**EXEMPLO PRÁTICO**
+
+Uma senhora de 70 anos embarca no ônibus urbano da sua cidade e não paga a passagem.
+
+**ATENÇÃO**
+
+A gratuidade do § 2º trata dos transportes coletivos urbanos. Outras vantagens, para outras idades ou meios de transporte, dependem de lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Amparo*: proteção e apoio material e moral.
+- *Transporte coletivo urbano*: transporte público de passageiros dentro da cidade, como ônibus e metrô.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.231
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 231 — Direitos dos povos indígenas
+
+- **TARGET:** `CF88:ART.231` · `ENTENDA/CF88:ART.231/BASE/1`
+- **DISPLAY TITLE:** Art. 231 — Direitos dos povos indígenas
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 326 palavras · 2601 bytes · referências 1
+- **Motivo da seleção:** Visao geral: reconhecimento da organizacao social e dos direitos originarios sobre as terras, dever de demarcacao da Uniao e regime das terras indigenas.
+
+**O QUE DIZ**
+
+O art. 231 reconhece a organização social, os costumes, as línguas, as crenças e as tradições dos índios, e os seus direitos originários sobre as terras de ocupação tradicional, cabendo à União demarcá-las e proteger e fazer respeitar todos os seus bens. Os parágrafos definem essas terras e as destinam à posse permanente dos índios, com usufruto exclusivo das riquezas naturais ali existentes. Também condicionam o aproveitamento de recursos hídricos e minerais à autorização do Congresso, tornam as terras inalienáveis e indisponíveis e os direitos imprescritíveis e proíbem a remoção dos grupos, salvo em hipóteses excepcionais. Por fim, anulam os atos de ocupação e domínio dessas terras e afastam a regra do art. 174, §§ 3º e 4º.
+
+**O QUE SIGNIFICA**
+
+Os direitos dos índios sobre as terras são originários: existem antes e independentemente de qualquer título dado pelo Estado. A demarcação reconhece esse direito; não o cria.
+
+As terras são bens da União (art. 20, XI), mas destinadas à posse permanente dos povos indígenas, que usufruem com exclusividade das riquezas naturais do solo, dos rios e dos lagos.
+
+Essas terras não podem ser vendidas nem negociadas, e o direito sobre elas não se perde com o tempo.
+
+A remoção só é admitida nas situações do § 5º, com retorno assim que cessar o risco.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa obtém um título de propriedade sobre área que depois é reconhecida como terra indígena. Pelo § 6º, o título é nulo, e a empresa só pode buscar indenização pelas benfeitorias de boa-fé, na forma da lei.
+
+**ATENÇÃO**
+
+O texto oficial traz nota de remissão a lei de 2023 no caput. Os critérios para identificar a ocupação tradicional são tema da camada JURISPRUDÊNCIA e da legislação correlata.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Direitos originários*: direitos que existem antes de qualquer ato do Estado que os reconheça.
+- *Demarcação*: procedimento que identifica e delimita oficialmente a terra indígena.
+- *Usufruto exclusivo*: direito de usar e aproveitar os bens sem a participação de terceiros.
+- *Imprescritível*: que não se perde com o passar do tempo.
+
+**CAMADA EXTERNA**
+
+- O texto oficial remete à Lei nº 14.701/2023 (nota de remissão da compilação oficial); seu conteúdo e os critérios de ocupação tradicional são temas da legislação correlata e da camada JURISPRUDÊNCIA (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: proteger e fazer respeitar todos os seus bens); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: das riquezas naturais do solo dos rios e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 231, § 1º — Terras tradicionalmente ocupadas
+
+- **TARGET:** `CF88:ART.231:PAR.1` · `ENTENDA/CF88:ART.231:PAR.1/BASE/1`
+- **DISPLAY TITLE:** Art. 231, § 1º — Terras tradicionalmente ocupadas
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.231`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 204 palavras · 1830 bytes · referências 1
+- **Motivo da seleção:** Dispositivo: definicao constitucional das terras tradicionalmente ocupadas pelos indios (quatro elementos); criterios temporais de ocupacao dependem de interpretacao e de legislacao externa.
+
+**O QUE DIZ**
+
+O § 1º define as terras tradicionalmente ocupadas pelos índios com quatro elementos, segundo seus usos, costumes e tradições: as que habitam em caráter permanente; as que usam em suas atividades produtivas; as indispensáveis para preservar os recursos ambientais de que precisam para seu bem-estar; e as necessárias à sua reprodução física e cultural.
+
+**O QUE SIGNIFICA**
+
+A definição não se limita ao lugar onde ficam as casas da aldeia.
+
+Abrange também as áreas de trabalho, como roças, caça e pesca, as áreas de preservação ambiental de que a comunidade depende e as necessárias à sua sobrevivência física e cultural.
+
+O critério é o modo de vida do próprio povo, segundo seus usos, costumes e tradições.
+
+**EXEMPLO PRÁTICO**
+
+Uma comunidade indígena vive em uma aldeia, mas pesca em um rio e coleta frutos em uma mata a alguns quilômetros. Pela definição do § 1º, essas áreas de uso também podem integrar a terra tradicionalmente ocupada.
+
+**ATENÇÃO**
+
+Se a ocupação tradicional precisa ser verificada em uma data determinada é objeto de controvérsia, ligada à legislação recente e à camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ocupação tradicional*: uso da terra segundo o modo de vida próprio de um povo indígena.
+- *Reprodução física e cultural*: condições para a comunidade sobreviver e manter sua cultura ao longo das gerações.
+
+**CAMADA EXTERNA**
+
+- A exigência ou não de marco temporal de ocupação é tema da camada JURISPRUDÊNCIA e da legislação correlata (remissão oficial à Lei nº 14.701/2023 no caput); EXTERNAL_VERIFICATION_REQUIRED.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 231, § 3º — Recursos hídricos e minerais em terras indígenas
+
+- **TARGET:** `CF88:ART.231:PAR.3` · `ENTENDA/CF88:ART.231:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 231, § 3º — Recursos hídricos e minerais em terras indígenas
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** —
+- **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.231`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1503 bytes · referências 0
+- **Motivo da seleção:** Dispositivo: aproveitamento hidrico e energetico e mineracao em terras indigenas dependem de autorizacao do Congresso, oitiva das comunidades e participacao nos resultados.
+
+**O QUE DIZ**
+
+O § 3º condiciona o aproveitamento dos recursos hídricos, incluídos os potenciais energéticos, e a pesquisa e a lavra de minérios nessas terras à autorização do Congresso Nacional, depois de ouvidas as comunidades afetadas. A elas fica assegurada participação nos resultados da lavra, na forma da lei.
+
+**O QUE SIGNIFICA**
+
+Construir uma hidrelétrica ou minerar em terra indígena não depende só do órgão administrativo: exige decisão do Congresso Nacional.
+
+Antes disso, as comunidades atingidas precisam ser ouvidas.
+
+Se a mineração ocorrer, a comunidade tem direito a participar dos resultados, conforme a lei.
+
+**EXEMPLO PRÁTICO**
+
+Uma empresa quer explorar ouro em área de terra indígena. Sem autorização do Congresso Nacional e sem a oitiva das comunidades afetadas, a exploração não pode ser feita.
+
+**ATENÇÃO**
+
+O texto exige que as comunidades sejam ouvidas; os efeitos dessa oitiva sobre a decisão do Congresso e a forma da participação nos resultados dependem da lei e da interpretação constitucional.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Lavra*: extração do minério da jazida.
+- *Oitiva*: ato de ouvir formalmente os interessados antes de uma decisão.
+- *Potencial energético*: capacidade de gerar energia, como em rios usados por hidrelétricas.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aproveitamento dos recursos hídricos incluídos os potenciais)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.232
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 232 — Legitimidade processual dos índios
+
+- **TARGET:** `CF88:ART.232` · `ENTENDA/CF88:ART.232/BASE/1`
+- **DISPLAY TITLE:** Art. 232 — Legitimidade processual dos índios
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 145 palavras · 1259 bytes · referências 0
+- **Motivo da seleção:** Visao geral: indios, comunidades e organizacoes sao partes legitimas em juizo, com intervencao do Ministerio Publico em todos os atos.
+
+**O QUE DIZ**
+
+O art. 232 reconhece aos índios, às suas comunidades e às suas organizações legitimidade para ir a juízo em defesa de seus direitos e interesses. O Ministério Público intervém em todos os atos do processo.
+
+**O QUE SIGNIFICA**
+
+Os índios e suas comunidades podem defender seus direitos diretamente na Justiça, sem depender de que outro órgão o faça por eles.
+
+As organizações indígenas, como associações, também podem propor ações.
+
+Nesses processos, o Ministério Público intervém em todos os atos.
+
+**EXEMPLO PRÁTICO**
+
+Uma associação indígena propõe ação para impedir a invasão de suas terras por madeireiros. O Ministério Público acompanha o processo e intervém em todos os seus atos.
+
+**ATENÇÃO**
+
+A intervenção do Ministério Público acompanha a atuação da comunidade; não a substitui.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Parte legítima*: quem pode propor ou responder a uma ação judicial sobre determinado direito.
+- *Intervenção do Ministério Público*: participação do Ministério Público no processo para fiscalizar e proteger direitos.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: juízo em defesa de seus direitos e interesses)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.233
+
+Sem explicação própria: 0 dispositivos (ver `SELECTION_REPORT.json`).
+
+## CF88:ART.234
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 234 — Encargos na criação de Estado
+
+- **TARGET:** `CF88:ART.234` · `ENTENDA/CF88:ART.234/BASE/1`
+- **DISPLAY TITLE:** Art. 234 — Encargos na criação de Estado
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1383 bytes · referências 0
+- **Motivo da seleção:** Visao geral: vedacao a Uniao de assumir encargos de inativos e da divida em decorrencia da criacao de Estado.
+
+**O QUE DIZ**
+
+O art. 234 proíbe a União de assumir, direta ou indiretamente, por causa da criação de um Estado, encargos com despesas de pessoal inativo e com juros e amortizações das dívidas interna e externa da administração do novo Estado, inclusive a indireta.
+
+**O QUE SIGNIFICA**
+
+Quando um novo Estado é criado, ele não pode transferir para a União certos custos.
+
+As despesas com servidores aposentados e o pagamento da dívida pública do novo Estado não passam a ser responsabilidade da União por causa dessa criação.
+
+A vedação vale para a administração direta e para a indireta, e alcança também formas indiretas de assumir esses encargos.
+
+**EXEMPLO PRÁTICO**
+
+Se uma lei complementar criasse um novo Estado a partir do desmembramento de outro, as aposentadorias dos servidores e as dívidas da nova administração não poderiam ser assumidas pela União em razão dessa criação (situação hipotética).
+
+**ATENÇÃO**
+
+A regra se aplica quando há criação de Estado. O art. 235 traz outras normas para os primeiros anos do novo Estado.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Pessoal inativo*: servidores aposentados.
+- *Amortização da dívida*: pagamento de parte do valor principal de uma dívida.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Pessoal inativo)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.235
+
+Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 235 — Normas para os dez primeiros anos de novo Estado
+
+- **TARGET:** `CF88:ART.235` · `ENTENDA/CF88:ART.235/BASE/1`
+- **DISPLAY TITLE:** Art. 235 — Normas para os dez primeiros anos de novo Estado
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 272 palavras · 2010 bytes · referências 0
+- **Motivo da seleção:** Visao geral: normas basicas aplicaveis nos dez primeiros anos da criacao de Estado (composicao de orgaos, nomeacoes, encargos e limite de pessoal).
+
+**O QUE DIZ**
+
+O art. 235 fixa normas básicas para os dez primeiros anos de um Estado recém-criado. A Assembleia Legislativa tem dezessete Deputados se a população for inferior a seiscentos mil habitantes, e vinte e quatro se tiver desse número até um milhão e quinhentos mil habitantes. O Governo tem no máximo dez Secretarias, o Tribunal de Contas tem três membros e o Tribunal de Justiça tem sete desembargadores, com regras para as primeiras nomeações. Outros incisos tratam dos primeiros juízes, promotores e defensores, dos cargos jurídicos até a Constituição estadual, da transferência gradual de encargos com servidores quando o Estado vem de Território Federal e do limite de cinquenta por cento da receita para despesas com pessoal.
+
+**O QUE SIGNIFICA**
+
+O artigo cria um regime de instalação para Estados novos, com estrutura enxuta e limites de gasto.
+
+O artigo trata dos dez primeiros anos de um Estado recém-criado.
+
+As regras evitam que o novo Estado comece com uma máquina grande demais: limitam secretarias, membros de tribunais e gastos com pessoal.
+
+Se o Estado nasce de um Território Federal, os encargos com servidores federais optantes passam a ele aos poucos, do sexto ao oitavo ano.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado criado com quinhentos mil habitantes teria, nos seus primeiros dez anos, Assembleia Legislativa com dezessete Deputados e no máximo dez Secretarias de Governo (situação hipotética).
+
+**ATENÇÃO**
+
+As regras são temporárias para cada novo Estado: valem nos dez primeiros anos a partir de sua criação.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Território Federal*: unidade administrativa da União que pode ser transformada em Estado.
+- *Demissível ad nutum*: que pode ser dispensado a qualquer tempo, por decisão de quem nomeou.
+- *Desembargador*: juiz que integra o Tribunal de Justiça.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.236
+
+Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 236 — Serviços notariais e de registro
+
+- **TARGET:** `CF88:ART.236` · `ENTENDA/CF88:ART.236/BASE/1`
+- **DISPLAY TITLE:** Art. 236 — Serviços notariais e de registro
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1639 bytes · referências 0
+- **Motivo da seleção:** Visao geral: exercicio privado por delegacao, lei sobre responsabilidade e fiscalizacao judicial, emolumentos e concurso publico.
+
+**O QUE DIZ**
+
+O art. 236 determina que os serviços notariais e de registro sejam prestados em caráter privado, mediante delegação do poder público. A lei regula as atividades, fixa a responsabilidade civil e criminal de notários, registradores e prepostos e define como o Poder Judiciário fiscaliza seus atos. Lei federal fixa normas gerais sobre emolumentos. O ingresso na atividade depende de concurso público de provas e títulos, e nenhuma serventia pode ficar vaga por mais de seis meses sem abertura de concurso de provimento ou de remoção.
+
+**O QUE SIGNIFICA**
+
+Cartórios são serviços públicos prestados por particulares, que recebem a delegação do Estado.
+
+O titular não é servidor comum: trabalha em caráter privado, mas fiscalizado pelo Judiciário e sujeito à lei.
+
+O acesso à titularidade é por concurso público de provas e títulos.
+
+O texto também impede que um cartório fique muito tempo sem titular escolhido por concurso.
+
+**EXEMPLO PRÁTICO**
+
+O titular de um cartório de registro de imóveis se aposenta. O tribunal deve abrir concurso para preencher a vaga em até seis meses.
+
+**ATENÇÃO**
+
+Os valores cobrados pelos cartórios, chamados emolumentos, seguem normas gerais de lei federal.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Delegação*: transferência, pelo poder público, do exercício de um serviço a um particular.
+- *Emolumentos*: valores cobrados pelos atos de cartório.
+- *Serventia*: unidade de serviço notarial ou de registro, o cartório.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: abertura de concurso de provimento ou de remoção); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O tribunal deve abrir concurso para preencher a vaga em até )
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.237
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 237 — Controle do comércio exterior
+
+- **TARGET:** `CF88:ART.237` · `ENTENDA/CF88:ART.237/BASE/1`
+- **DISPLAY TITLE:** Art. 237 — Controle do comércio exterior
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 134 palavras · 1380 bytes · referências 0
+- **Motivo da seleção:** Visao geral: fiscalizacao e controle do comercio exterior atribuidos ao Ministerio da Fazenda.
+
+**O QUE DIZ**
+
+O art. 237 atribui ao Ministério da Fazenda a fiscalização e o controle sobre o comércio exterior, que o texto considera essenciais à defesa dos interesses fazendários nacionais.
+
+**O QUE SIGNIFICA**
+
+O comércio com outros países envolve impostos, câmbio e controle aduaneiro, temas ligados às finanças públicas.
+
+Por isso a Constituição atribui a fiscalização e o controle dessa atividade ao órgão federal responsável pela Fazenda.
+
+O artigo nomeia o órgão que exerce essa fiscalização.
+
+**EXEMPLO PRÁTICO**
+
+Uma carga importada chega a um porto e passa por fiscalização aduaneira. Essa fiscalização é exercida pela estrutura fazendária federal, conforme o artigo.
+
+**ATENÇÃO**
+
+O nome atual do órgão responsável pela área fazendária é dado institucional mutável, que pertence à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Comércio exterior*: compra e venda de bens e serviços com outros países.
+- *Interesses fazendários*: interesses ligados à arrecadação e às finanças públicas.
+
+**CAMADA EXTERNA**
+
+- A denominação atual do ministério da área fazendária e a estrutura da fiscalização aduaneira pertencem à legislação correlata (dado institucional mutável).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a fiscalização e o controle sobre o comércio)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.238
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 238 — Venda e revenda de combustíveis
+
+- **TARGET:** `CF88:ART.238` · `ENTENDA/CF88:ART.238/BASE/1`
+- **DISPLAY TITLE:** Art. 238 — Venda e revenda de combustíveis
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 149 palavras · 1197 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lei ordena a venda e revenda de combustiveis de petroleo, alcool carburante e combustiveis renovaveis.
+
+**O QUE DIZ**
+
+O art. 238 manda a lei ordenar a venda e a revenda de combustíveis derivados de petróleo, de álcool carburante e de outros combustíveis feitos de matérias-primas renováveis, respeitados os princípios da Constituição.
+
+**O QUE SIGNIFICA**
+
+A distribuição e o comércio de combustíveis não são livres de regras: a lei deve organizar essas atividades.
+
+O artigo alcança tanto os combustíveis de origem fóssil, como gasolina e diesel, quanto os renováveis, como o etanol.
+
+A lei que organiza o setor precisa respeitar os princípios constitucionais, como os da ordem econômica e da defesa do consumidor.
+
+**EXEMPLO PRÁTICO**
+
+Um posto de gasolina revende combustíveis segundo as regras que a lei fixa para o setor.
+
+**ATENÇÃO**
+
+O artigo trata da venda e revenda; a pesquisa, a lavra e o refino do petróleo seguem o art. 177.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Álcool carburante*: álcool usado como combustível de veículos, como o etanol.
+- *Revenda*: venda ao consumidor final de produto comprado de distribuidor.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.239
+
+Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 239 — PIS/PASEP, seguro-desemprego e abono
+
+- **TARGET:** `CF88:ART.239` · `ENTENDA/CF88:ART.239/BASE/1`
+- **DISPLAY TITLE:** Art. 239 — PIS/PASEP, seguro-desemprego e abono
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 298 palavras · 2394 bytes · referências 0
+- **Motivo da seleção:** Visao geral: destinacao da arrecadacao do PIS e do PASEP ao seguro-desemprego, a outras acoes da previdencia e ao abono, parcela minima para o BNDES, patrimonios acumulados, contribuicao adicional por rotatividade e avaliacao.
+
+**O QUE DIZ**
+
+O art. 239 destina a arrecadação das contribuições para o PIS e para o PASEP, programas criados por leis complementares de 1970, nos termos da lei, ao seguro-desemprego, a outras ações da previdência social e ao abono do § 3º. Ao menos 28% desses recursos são aplicados pelo Banco Nacional de Desenvolvimento Econômico e Social em programas de desenvolvimento econômico, com remuneração que preserve seu valor. Os patrimônios acumulados dos dois programas são preservados, mantidas as hipóteses de saque das leis específicas, salvo a retirada por casamento, e fica proibido distribuir a arrecadação em contas individuais. O financiamento do seguro-desemprego recebe contribuição adicional da empresa com rotatividade acima da média do setor, na forma da lei, e os programas financiados são avaliados e divulgados todo ano.
+
+**O QUE SIGNIFICA**
+
+O artigo dá destino constitucional a duas contribuições antigas, o PIS e o PASEP: elas sustentam o seguro-desemprego, o abono salarial e outras ações previdenciárias.
+
+Uma parte mínima vai para financiar o desenvolvimento econômico.
+
+O dinheiro que já estava nas contas individuais dos trabalhadores foi preservado, mas a arrecadação nova não vai mais para essas contas.
+
+A empresa que demite e contrata muito acima da média do seu setor paga mais para o seguro-desemprego.
+
+**EXEMPLO PRÁTICO**
+
+Um trabalhador demitido sem justa causa recebe parcelas do seguro-desemprego. Parte do dinheiro que paga esse benefício vem da arrecadação do PIS e do PASEP.
+
+**ATENÇÃO**
+
+O ADCT prevê a extinção da contribuição para o PIS a partir de 2027, condicionada à instituição da contribuição do art. 195, V (art. 126, II, do ADCT).
+
+**PALAVRAS DIFÍCEIS**
+
+- *Abono salarial*: pagamento anual a trabalhadores de menor renda, nas condições do texto e da lei.
+- *Rotatividade*: frequência de demissões e contratações de uma empresa.
+- *Seguro-desemprego*: benefício temporário pago a quem perde o emprego sem culpa, nos termos da lei.
+
+**CAMADA EXTERNA**
+
+- Na fonte de texto usada por esta explicação, o § 4º aparece unido ao final do § 3º-A (anomalia de segmentação registrada); o conteúdo do § 4º é explicado nesta visão geral.
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+### Art. 239, §§ 3º e 3º-A — Abono salarial
+
+- **TARGET:** `CF88:ART.239:PAR.3` · `ENTENDA/CF88:ART.239:PAR.3/BASE/1`
+- **DISPLAY TITLE:** Art. 239, §§ 3º e 3º-A — Abono salarial
+- **DISPOSITIVO:** PARAGRAFO
+- **COVERED TARGETS:** `CF88:ART.239:PAR.3-A`
+- **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.239`
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2120 bytes · referências 0
+- **Motivo da seleção:** Bloco: regra do abono anual de um salario minimo, limite de remuneracao com correcao pelo INPC a partir de 2026 (§ 3º) e piso desse limite (§ 3º-A).
+
+**O QUE DIZ**
+
+O § 3º assegura o pagamento anual de um salário mínimo aos empregados de empregadores que contribuem para o PIS ou para o PASEP e que recebem remuneração mensal até um limite: duas vezes o salário mínimo do ano-base usado para o pagamento de 2025, corrigido a partir de 2026 pela variação anual do INPC acumulada no segundo exercício anterior ao do pagamento. No valor se computa o rendimento das contas individuais, no caso de quem já participava dos programas até a promulgação da Constituição. O § 3º-A impede que esse limite fique abaixo do salário mínimo do período trabalhado multiplicado por 1,5.
+
+**O QUE SIGNIFICA**
+
+O abono é um pagamento anual de um salário mínimo para trabalhadores de menor renda.
+
+O limite de renda não é fixado em salários mínimos correntes: parte de duas vezes o salário mínimo da referência do pagamento de 2025 e, a partir de 2026, é corrigido pela inflação medida pelo INPC.
+
+O § 3º-A cria um piso para esse limite: ele não pode ser menor que uma vez e meia o salário mínimo do período trabalhado.
+
+**EXEMPLO PRÁTICO**
+
+Em determinado ano, o limite corrigido pelo INPC fica abaixo de uma vez e meia o salário mínimo do período trabalhado. Pelo § 3º-A, vale o piso de 1,5 salário mínimo para definir quem recebe o abono.
+
+**ATENÇÃO**
+
+Em 5 de outubro de 2026, a correção do limite pelo INPC já se aplica, nos termos do § 3º. Os demais requisitos do abono estão na lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *INPC*: índice oficial de inflação que mede a variação de preços para famílias de menor renda.
+- *Ano-base*: ano de referência usado para calcular o direito ou o valor do benefício.
+
+**CAMADA EXTERNA**
+
+- Na fonte de texto usada por esta explicação, o § 4º aparece unido ao final do § 3º-A (anomalia de segmentação registrada); o § 4º não integra este bloco.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a partir de 2026 pela variação anual do)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.240
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 240 — Contribuições ao sistema S
+
+- **TARGET:** `CF88:ART.240` · `ENTENDA/CF88:ART.240/BASE/1`
+- **DISPLAY TITLE:** Art. 240 — Contribuições ao sistema S
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 162 palavras · 1517 bytes · referências 0
+- **Motivo da seleção:** Visao geral: ressalva do art. 195 para as contribuicoes compulsorias dos empregadores destinadas as entidades privadas de servico social e formacao profissional.
+
+**O QUE DIZ**
+
+O art. 240 ressalva do regime do art. 195 as contribuições compulsórias que os empregadores já pagavam sobre a folha de salários e destinadas a entidades privadas, vinculadas ao sistema sindical, que prestam serviço social e formação profissional.
+
+**O QUE SIGNIFICA**
+
+Quando a Constituição foi promulgada, já existiam contribuições pagas pelos empregadores para financiar entidades privadas de serviço social e de formação profissional ligadas ao sistema sindical.
+
+O artigo mantém essas contribuições, mesmo sem se encaixarem nas fontes de custeio da seguridade social do art. 195.
+
+O dinheiro vai para essas entidades privadas, e não para o orçamento da seguridade.
+
+**EXEMPLO PRÁTICO**
+
+Uma indústria recolhe, sobre a sua folha de salários, a contribuição destinada à entidade de formação profissional do seu setor. Essa cobrança está ressalvada pelo art. 240.
+
+**ATENÇÃO**
+
+O artigo fala em contribuições atuais, isto é, as que existiam quando a Constituição foi promulgada.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Contribuição compulsória*: pagamento obrigatório, fixado por lei, que não depende de vontade.
+- *Sistema sindical*: conjunto das entidades que representam trabalhadores e empregadores.
+
+**CAMADA EXTERNA**
+
+- O alcance da ressalva para contribuições criadas depois de 1988 é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: entidades privadas de serviço social e de formação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.241
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 241 — Consórcios públicos e convênios de cooperação
+
+- **TARGET:** `CF88:ART.241` · `ENTENDA/CF88:ART.241/BASE/1`
+- **DISPLAY TITLE:** Art. 241 — Consórcios públicos e convênios de cooperação
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1464 bytes · referências 0
+- **Motivo da seleção:** Visao geral: disciplina por lei dos consorcios publicos e convenios de cooperacao e gestao associada de servicos publicos.
+
+**O QUE DIZ**
+
+O art. 241 manda a União, os Estados, o Distrito Federal e os Municípios regularem por lei os consórcios públicos e os convênios de cooperação firmados entre eles. Essas leis autorizam a gestão associada de serviços públicos e a transferência, no todo ou em parte, dos encargos, serviços, servidores e bens necessários para que os serviços transferidos continuem.
+
+**O QUE SIGNIFICA**
+
+Os entes da Federação podem se unir para prestar serviços públicos em conjunto, o que é chamado gestão associada.
+
+Os instrumentos são os consórcios públicos e os convênios de cooperação, disciplinados por lei.
+
+Nessa associação, um ente pode transferir a outro, ou ao consórcio, encargos, serviços, servidores e bens necessários para que o serviço continue funcionando.
+
+**EXEMPLO PRÁTICO**
+
+Vários Municípios pequenos de uma região formam um consórcio público para administrar juntos um aterro sanitário, dividindo custos e equipamentos.
+
+**ATENÇÃO**
+
+Cada ente participante precisa de lei que discipline sua participação, conforme o artigo.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Consórcio público*: associação entre entes da Federação para realizar objetivos comuns.
+- *Gestão associada*: prestação conjunta de serviço público por mais de um ente.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: os consórcios públicos e os convênios de cooperação)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.242
+
+Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 242 — Exceção à gratuidade e outras regras de ensino
+
+- **TARGET:** `CF88:ART.242` · `ENTENDA/CF88:ART.242/BASE/1`
+- **DISPLAY TITLE:** Art. 242 — Exceção à gratuidade e outras regras de ensino
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 209 palavras · 1699 bytes · referências 0
+- **Motivo da seleção:** Visao geral: instituicoes oficiais anteriores a 1988 nao mantidas por recursos publicos fora da gratuidade, ensino da historia do Brasil e Colegio Pedro II.
+
+**O QUE DIZ**
+
+O art. 242 afasta a gratuidade do art. 206, IV, das instituições educacionais oficiais criadas por lei estadual ou municipal que já existiam na data da promulgação da Constituição e que não sejam total ou preponderantemente mantidas com recursos públicos. O ensino da História do Brasil deve levar em conta as contribuições das diferentes culturas e etnias na formação do povo brasileiro. O Colégio Pedro II, no Rio de Janeiro, continua mantido pela União.
+
+**O QUE SIGNIFICA**
+
+A regra geral é que o ensino público em estabelecimentos oficiais seja gratuito. O caput abre uma exceção limitada: escolas oficiais estaduais ou municipais que já existiam na data da promulgação da Constituição e que não dependem principalmente de dinheiro público podem cobrar.
+
+O § 1º orienta o ensino de História a valorizar a diversidade de culturas e etnias.
+
+O § 2º garante que o Colégio Pedro II continue na esfera federal.
+
+**EXEMPLO PRÁTICO**
+
+Uma fundação municipal de ensino superior, criada antes da promulgação da Constituição e mantida principalmente por mensalidades, pode continuar cobrando dos alunos com base nessa exceção.
+
+**ATENÇÃO**
+
+A exceção exige os três requisitos ao mesmo tempo: criação por lei estadual ou municipal, existência na data da promulgação da Constituição e manutenção não preponderantemente pública.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Instituição oficial*: instituição criada pelo poder público.
+- *Preponderantemente*: em sua maior parte.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: conta as contribuições das diferentes culturas e etnias); TERM_LOW_UTILITY (palavras_dificeis: Preponderantemente)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.243
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 243 — Expropriação de terras com plantio ilegal ou trabalho escravo
+
+- **TARGET:** `CF88:ART.243` · `ENTENDA/CF88:ART.243/BASE/1`
+- **DISPLAY TITLE:** Art. 243 — Expropriação de terras com plantio ilegal ou trabalho escravo
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2097 bytes · referências 1
+- **Motivo da seleção:** Visao geral: expropriacao sem indenizacao de propriedades com culturas ilegais de psicotropicos ou trabalho escravo e confisco de bens ligados ao trafico e ao trabalho escravo.
+
+**O QUE DIZ**
+
+O art. 243 determina a expropriação, sem qualquer indenização ao proprietário, das propriedades rurais e urbanas em que forem encontradas culturas ilegais de plantas psicotrópicas ou exploração de trabalho escravo, na forma da lei. Essas propriedades vão para a reforma agrária e para programas de habitação popular, sem prejuízo de outras sanções legais e observado, no que couber, o art. 5º. O parágrafo único manda confiscar todo bem de valor econômico apreendido em decorrência do tráfico de drogas e da exploração de trabalho escravo, revertendo-o a fundo especial com destinação específica, na forma da lei.
+
+**O QUE SIGNIFICA**
+
+É uma das poucas hipóteses em que o Estado toma uma propriedade sem pagar nada.
+
+Duas situações levam a essa perda: plantio ilegal de plantas que produzem drogas e uso de trabalho escravo.
+
+A medida vale para imóveis rurais e urbanos de qualquer região.
+
+Além do imóvel, bens apreendidos ligados ao tráfico ou ao trabalho escravo são confiscados e destinados a um fundo especial.
+
+**EXEMPLO PRÁTICO**
+
+A fiscalização encontra trabalhadores em condição análoga à de escravo em uma fazenda. Comprovada a situação na forma da lei, o imóvel pode ser expropriado sem indenização e destinado à reforma agrária.
+
+**ATENÇÃO**
+
+A expropriação observa, no que couber, as garantias do art. 5º, como o devido processo legal. Como a responsabilidade do proprietário é apurada é tema da camada JURISPRUDÊNCIA.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Expropriação*: perda da propriedade imposta pelo Estado, aqui sem indenização.
+- *Plantas psicotrópicas*: plantas das quais se extraem substâncias que alteram o funcionamento do cérebro.
+- *Confisco*: tomada de bens pelo Estado como sanção, sem indenização.
+
+**CAMADA EXTERNA**
+
+- A necessidade de culpa do proprietário para a expropriação é tema da camada JURISPRUDÊNCIA.
+
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a fundo especial com destinação específica na forma)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.244
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 244 — Adaptação de prédios e veículos para pessoas com deficiência
+
+- **TARGET:** `CF88:ART.244` · `ENTENDA/CF88:ART.244/BASE/1`
+- **DISPLAY TITLE:** Art. 244 — Adaptação de prédios e veículos para pessoas com deficiência
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1298 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lei de adaptacao dos logradouros, edificios publicos e veiculos de transporte coletivo existentes, conforme o art. 227, § 2º.
+
+**O QUE DIZ**
+
+O art. 244 manda a lei tratar da adaptação de logradouros, edifícios de uso público e veículos de transporte coletivo então existentes, para garantir acesso adequado às pessoas com deficiência, conforme o art. 227, § 2º.
+
+**O QUE SIGNIFICA**
+
+O art. 227, § 2º, trata das construções e veículos novos: a lei deve fixar normas para que já nasçam acessíveis.
+
+O art. 244 completa essa regra para o que já existia: ruas, praças, prédios de uso público e ônibus antigos também devem ser adaptados, nos termos da lei.
+
+O objetivo declarado no texto é o acesso adequado das pessoas com deficiência.
+
+**EXEMPLO PRÁTICO**
+
+Um prédio público antigo, sem rampa nem elevador, precisa ser adaptado para permitir a entrada de pessoas em cadeira de rodas, segundo as normas legais de acessibilidade.
+
+**ATENÇÃO**
+
+Os prazos e as normas técnicas da adaptação são definidos em lei.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Logradouro*: espaço público de circulação, como rua, praça e avenida.
+- *Acessibilidade*: condição de acesso seguro e autônomo a espaços, transportes e serviços.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um prédio público antigo, sem rampa nem elevador, precisa se)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.245
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso
+
+- **TARGET:** `CF88:ART.245` · `ENTENDA/CF88:ART.245/BASE/1`
+- **DISPLAY TITLE:** Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 175 palavras · 1515 bytes · referências 0
+- **Motivo da seleção:** Visao geral: lei sobre assistencia do poder publico a herdeiros e dependentes carentes de vitimas de crime doloso, sem prejuizo da responsabilidade do autor.
+
+**O QUE DIZ**
+
+O art. 245 manda a lei dispor sobre as hipóteses e as condições em que o poder público prestará assistência aos herdeiros e dependentes carentes de pessoas vítimas de crime doloso, sem prejuízo da responsabilidade civil do autor do crime.
+
+**O QUE SIGNIFICA**
+
+Quando alguém morre ou sofre dano em razão de crime intencional, sua família pode ficar desamparada.
+
+O artigo prevê que o poder público dê assistência aos herdeiros e dependentes carentes, nos casos e condições que a lei definir.
+
+Essa assistência não livra o autor do crime: ele continua obrigado a indenizar os danos que causou.
+
+**EXEMPLO PRÁTICO**
+
+Um trabalhador é assassinado e deixa filhos pequenos sem outra fonte de renda. Se a lei previr a assistência, a família pode recebê-la do poder público e, ao mesmo tempo, cobrar indenização do autor do crime.
+
+**ATENÇÃO**
+
+O artigo depende de lei para produzir efeitos concretos. A existência e o conteúdo dessa lei pertencem à camada externa.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Crime doloso*: crime cometido com intenção ou assumindo o risco do resultado.
+- *Responsabilidade civil*: dever de reparar o dano causado a outra pessoa.
+
+**CAMADA EXTERNA**
+
+- A edição da lei prevista no artigo e seu conteúdo pertencem à legislação correlata (EXTERNAL_VERIFICATION_REQUIRED).
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: assistência aos herdeiros e dependentes carentes de pessoas)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.246
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 246 — Limite às medidas provisórias
+
+- **TARGET:** `CF88:ART.246` · `ENTENDA/CF88:ART.246/BASE/1`
+- **DISPLAY TITLE:** Art. 246 — Limite às medidas provisórias
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1655 bytes · referências 0
+- **Motivo da seleção:** Visao geral: vedacao de medida provisoria para regulamentar artigo alterado por emenda promulgada no periodo indicado.
+
+**O QUE DIZ**
+
+O art. 246 proíbe usar medida provisória para regulamentar artigo da Constituição cuja redação tenha sido alterada por emenda promulgada entre 1º de janeiro de 1995 e a promulgação da emenda que deu a redação atual a este artigo, inclusive.
+
+**O QUE SIGNIFICA**
+
+A medida provisória é um ato do Presidente da República com força de lei. O artigo impede seu uso para regulamentar dispositivos constitucionais modificados por emendas de um período determinado.
+
+O período começa em 1º de janeiro de 1995 e termina na promulgação da emenda que deu a redação atual ao artigo, que, segundo as anotações da fonte oficial, é a Emenda Constitucional nº 32, de 2001.
+
+Para artigos alterados por emendas posteriores, a vedação deste artigo não se aplica, embora existam outros limites às medidas provisórias no art. 62.
+
+**EXEMPLO PRÁTICO**
+
+Um artigo da Constituição teve a redação alterada por emenda promulgada em 1998 (ano ilustrativo, dentro do período). Para regulamentá-lo, o Presidente não pode editar medida provisória; é preciso lei.
+
+**ATENÇÃO**
+
+O período de emendas alcançado é fechado: de 1º de janeiro de 1995 até a promulgação da emenda de 2001 que deu a redação atual. As demais restrições às medidas provisórias estão no art. 62.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Medida provisória*: ato do Presidente da República com força de lei, sujeito à aprovação do Congresso.
+- *Regulamentar*: detalhar como uma norma será aplicada.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: artigo da constituição cuja redação tenha sido alterada)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.247
+
+Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 247 — Servidores de atividades exclusivas de Estado
+
+- **TARGET:** `CF88:ART.247` · `ENTENDA/CF88:ART.247/BASE/1`
+- **DISPLAY TITLE:** Art. 247 — Servidores de atividades exclusivas de Estado
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1723 bytes · referências 0
+- **Motivo da seleção:** Visao geral: criterios e garantias especiais para perda do cargo de servidor estavel em atividade exclusiva de Estado e processo administrativo na insuficiencia de desempenho.
+
+**O QUE DIZ**
+
+O art. 247 determina que as leis previstas no art. 41, § 1º, III, e no art. 169, § 7º, prevejam critérios e garantias especiais contra a perda do cargo do servidor estável cujas atribuições do cargo efetivo sejam atividades exclusivas de Estado. Se o motivo for insuficiência de desempenho, o servidor só perde o cargo por processo administrativo com contraditório e ampla defesa.
+
+**O QUE SIGNIFICA**
+
+Alguns servidores exercem funções que só o Estado pode desempenhar, como fiscalizar, arrecadar ou exercer poder de polícia. Para eles, a Constituição exige proteção reforçada contra a perda do cargo.
+
+As leis que tratam da avaliação de desempenho e da redução de despesas com pessoal devem prever critérios e garantias especiais para esses servidores.
+
+Se o motivo for desempenho insuficiente, a perda do cargo depende de processo administrativo com direito de defesa.
+
+**EXEMPLO PRÁTICO**
+
+Um auditor fiscal estável recebe avaliações negativas de desempenho. Antes de perder o cargo, ele tem direito a processo administrativo, com contraditório e ampla defesa.
+
+**ATENÇÃO**
+
+Quais carreiras exercem atividades exclusivas de Estado é definido em lei; os exemplos acima são ilustrativos.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Servidor estável*: servidor efetivo que adquiriu estabilidade após o estágio probatório.
+- *Atividade exclusiva de Estado*: função que só pode ser exercida pelo poder público.
+- *Contraditório e ampla defesa*: direito de conhecer as acusações e de se defender com todos os meios legais.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** —
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.248
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 248 — Teto para benefícios pagos pelo regime geral
+
+- **TARGET:** `CF88:ART.248` · `ENTENDA/CF88:ART.248/BASE/1`
+- **DISPLAY TITLE:** Art. 248 — Teto para benefícios pagos pelo regime geral
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 201 palavras · 1510 bytes · referências 0
+- **Motivo da seleção:** Visao geral: beneficios pagos pelo orgao do regime geral, ainda que a conta do Tesouro, e os nao sujeitos ao limite do regime observam o teto do art. 37, XI.
+
+**O QUE DIZ**
+
+O art. 248 alcança os benefícios pagos, a qualquer título, pelo órgão que administra o regime geral de previdência social, mesmo quando pagos com recursos do Tesouro Nacional, e os que não estão sujeitos ao limite máximo de valor do regime geral. Todos esses benefícios devem observar os limites fixados no art. 37, XI.
+
+**O QUE SIGNIFICA**
+
+O órgão do regime geral às vezes paga benefícios que não são previdenciários comuns, com dinheiro do Tesouro, e alguns desses benefícios não seguem o teto do regime geral.
+
+O artigo impede que esses pagamentos ultrapassem o teto remuneratório do serviço público previsto no art. 37, XI.
+
+Assim, nenhum benefício pago pelo órgão do regime geral, qualquer que seja sua origem, fica acima desse limite.
+
+**EXEMPLO PRÁTICO**
+
+Uma pensão especial criada por lei é paga pelo órgão do regime geral com recursos do Tesouro e não segue o teto previdenciário comum. Ainda assim, seu valor não pode passar do teto do art. 37, XI.
+
+**ATENÇÃO**
+
+O limite aplicado é o do art. 37, XI, e não o teto comum de benefícios do regime geral.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Teto remuneratório*: valor máximo que remunerações e benefícios públicos podem atingir.
+- *À conta do Tesouro*: pago com recursos do orçamento geral, e não das contribuições previdenciárias.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os benefícios pagos a qualquer título pelo órgão)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.249
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 249 — Fundos para aposentadorias dos servidores
+
+- **TARGET:** `CF88:ART.249` · `ENTENDA/CF88:ART.249/BASE/1`
+- **DISPLAY TITLE:** Art. 249 — Fundos para aposentadorias dos servidores
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 169 palavras · 1377 bytes · referências 0
+- **Motivo da seleção:** Visao geral: faculdade dos entes de constituir fundos para pagamento de aposentadorias e pensoes de seus servidores, mediante lei.
+
+**O QUE DIZ**
+
+O art. 249 permite que a União, os Estados, o Distrito Federal e os Municípios constituam fundos formados por contribuições e por bens, direitos e ativos de qualquer natureza. Esses fundos asseguram recursos para pagar aposentadorias e pensões de seus servidores e dependentes, além dos recursos dos respectivos tesouros. A lei disporá sobre a natureza e a administração desses fundos.
+
+**O QUE SIGNIFICA**
+
+Pagar aposentadorias e pensões de servidores exige muito dinheiro ao longo do tempo. O artigo permite que cada ente crie fundos próprios para reforçar esse pagamento.
+
+Os fundos podem reunir contribuições e também imóveis, direitos e outros ativos.
+
+A criação é uma faculdade, e não uma obrigação, e depende de lei que defina natureza e administração.
+
+**EXEMPLO PRÁTICO**
+
+Um Estado cria por lei um fundo previdenciário para seus servidores e transfere a ele imóveis e participações em empresas, que geram renda para pagar aposentadorias no futuro.
+
+**ATENÇÃO**
+
+Os fundos complementam os recursos do tesouro do ente; não os substituem.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Ativos*: bens e direitos com valor econômico.
+- *Proventos*: valor pago ao servidor aposentado.
+
+**CAMADA EXTERNA**
+
+—
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+
+## CF88:ART.250
+
+Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
+
+### Art. 250 — Fundo do regime geral de previdência
+
+- **TARGET:** `CF88:ART.250` · `ENTENDA/CF88:ART.250/BASE/1`
+- **DISPLAY TITLE:** Art. 250 — Fundo do regime geral de previdência
+- **DISPOSITIVO:** ARTIGO
+- **COVERED TARGETS:** —
+- **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
+- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 178 palavras · 1643 bytes · referências 0
+- **Motivo da seleção:** Visao geral: faculdade da Uniao de constituir fundo de bens, direitos e ativos para pagamento dos beneficios do regime geral, mediante lei.
+
+**O QUE DIZ**
+
+O art. 250 permite que a União constitua fundo formado por bens, direitos e ativos de qualquer natureza para assegurar recursos ao pagamento dos benefícios concedidos pelo regime geral de previdência social, além dos recursos de sua arrecadação. A lei disporá sobre a natureza e a administração desse fundo.
+
+**O QUE SIGNIFICA**
+
+O artigo aplica ao regime geral uma ideia parecida com a do art. 249 para os servidores.
+
+A União pode criar um fundo com bens e direitos para reforçar o pagamento dos benefícios do regime geral, além do que já vem das contribuições.
+
+A criação é uma faculdade da União, e a lei define como o fundo funciona e é administrado.
+
+**EXEMPLO PRÁTICO**
+
+A União cria por lei um fundo do regime geral e transfere a ele imóveis públicos sem uso, cuja venda ou aluguel gera recursos para ajudar a pagar aposentadorias.
+
+**ATENÇÃO**
+
+É o último artigo do corpo permanente da Constituição; em seguida começa o Ato das Disposições Constitucionais Transitórias.
+
+**PALAVRAS DIFÍCEIS**
+
+- *Regime geral de previdência social*: sistema previdenciário dos trabalhadores em geral, administrado pela União.
+- *Fundo*: reserva de recursos com finalidade específica.
+
+**CAMADA EXTERNA**
+
+- Na fonte de texto usada por esta explicação, o caput do art. 250 aparece seguido da fórmula de encerramento e das assinaturas da Constituição (anomalia de segmentação registrada); esse trecho não é conteúdo normativo do artigo.
+
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: benefícios concedidos pelo regime geral de previdência socia)
+
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+
+---
+

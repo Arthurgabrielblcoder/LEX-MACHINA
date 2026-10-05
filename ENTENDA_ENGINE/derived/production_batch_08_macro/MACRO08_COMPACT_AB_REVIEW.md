@@ -2,7 +2,7 @@
 
 Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (60)
+## A — CLEAN_LOW (78)
 
 ### `CF88:ART.176` — Art. 176 — Recursos minerais e potenciais hidráulicos
 
@@ -664,7 +664,205 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (13)
+### `CF88:ART.227:PAR.6` — Art. 227, § 6º — Igualdade entre os filhos
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O § 6º garante os mesmos direitos e qualificações aos filhos, tenham nascido ou não do casamento, ou sido adotados, e proíbe qualquer designação discriminatória relativa à filiação.
+- Interpretação principal: Não existe filho de primeira ou de segunda categoria.
+- ATENÇÃO: A igualdade alcança direitos e também a forma de designar os filhos em documentos oficiais.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.229` — Art. 229 — Deveres recíprocos entre pais e filhos
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 229 estabelece deveres recíprocos: aos pais cabe assistir, criar e educar os filhos menores; aos filhos maiores cabe ajudar e amparar os pais na velhice, na carência ou na enfermidade.
+- Interpretação principal: A relação entre pais e filhos gera obrigações nos dois sentidos.
+- ATENÇÃO: O dever dos filhos se refere aos maiores e às situações de velhice, carência ou enfermidade dos pais.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.230` — Art. 230 — Proteção da pessoa idosa
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 230 atribui à família, à sociedade e ao Estado o dever de amparar as pessoas idosas: garantir que participem da comunidade, defender sua dignidade e seu bem-estar e assegurar seu direito à…
+- Interpretação principal: A proteção da pessoa idosa é um dever compartilhado, que inclui participação social, dignidade, bem-estar e o direito à vida.
+- ATENÇÃO: A gratuidade do § 2º trata dos transportes coletivos urbanos.
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(70)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.231:PAR.3` — Art. 231, § 3º — Recursos hídricos e minerais em terras indígenas
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º condiciona o aproveitamento dos recursos hídricos, incluídos os potenciais energéticos, e a pesquisa e a lavra de minérios nessas terras à autorização do Congresso Nacional, depois de ouvidas…
+- Interpretação principal: Construir uma hidrelétrica ou minerar em terra indígena não depende só do órgão administrativo: exige decisão do Congresso Nacional.
+- ATENÇÃO: O texto exige que as comunidades sejam ouvidas; os efeitos dessa oitiva sobre a decisão do Congresso e a forma da participação nos resultados dependem da lei e da interpretação constitucional.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aproveitamento dos recursos hídricos incluídos os…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.232` — Art. 232 — Legitimidade processual dos índios
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 232 reconhece aos índios, às suas comunidades e às suas organizações legitimidade para ir a juízo em defesa de seus direitos e interesses.
+- Interpretação principal: Os índios e suas comunidades podem defender seus direitos diretamente na Justiça, sem depender de que outro órgão o faça por eles.
+- ATENÇÃO: A intervenção do Ministério Público acompanha a atuação da comunidade; não a substitui.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: juízo em defesa de seus direitos e interesses)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.234` — Art. 234 — Encargos na criação de Estado
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 234 proíbe a União de assumir, direta ou indiretamente, por causa da criação de um Estado, encargos com despesas de pessoal inativo e com juros e amortizações das dívidas interna e externa da…
+- Interpretação principal: Quando um novo Estado é criado, ele não pode transferir para a União certos custos.
+- ATENÇÃO: A regra se aplica quando há criação de Estado.
+- Dependência externa: nenhuma
+- Warnings: lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.236` — Art. 236 — Serviços notariais e de registro
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 236 determina que os serviços notariais e de registro sejam prestados em caráter privado, mediante delegação do poder público.
+- Interpretação principal: Cartórios são serviços públicos prestados por particulares, que recebem a delegação do Estado.
+- ATENÇÃO: Os valores cobrados pelos cartórios, chamados emolumentos, seguem normas gerais de lei federal.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: abertura de concurso de provimento ou de remoção), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.237` — Art. 237 — Controle do comércio exterior
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 237 atribui ao Ministério da Fazenda a fiscalização e o controle sobre o comércio exterior, que o texto considera essenciais à defesa dos interesses fazendários nacionais.
+- Interpretação principal: O comércio com outros países envolve impostos, câmbio e controle aduaneiro, temas ligados às finanças públicas.
+- ATENÇÃO: O nome atual do órgão responsável pela área fazendária é dado institucional mutável, que pertence à camada externa.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a fiscalização e o controle sobre o comércio)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.238` — Art. 238 — Venda e revenda de combustíveis
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 238 manda a lei ordenar a venda e a revenda de combustíveis derivados de petróleo, de álcool carburante e de outros combustíveis feitos de matérias-primas renováveis, respeitados os princípios…
+- Interpretação principal: A distribuição e o comércio de combustíveis não são livres de regras: a lei deve organizar essas atividades.
+- ATENÇÃO: O artigo trata da venda e revenda; a pesquisa, a lavra e o refino do petróleo seguem o art. 177.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.239` — Art. 239 — PIS/PASEP, seguro-desemprego e abono
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 239 destina a arrecadação das contribuições para o PIS e para o PASEP, programas criados por leis complementares de 1970, nos termos da lei, ao seguro-desemprego, a outras ações da previdência…
+- Interpretação principal: O artigo dá destino constitucional a duas contribuições antigas, o PIS e o PASEP: elas sustentam o seguro-desemprego, o abono salarial e outras ações previdenciárias.
+- ATENÇÃO: O ADCT prevê a extinção da contribuição para o PIS a partir de 2027, condicionada à instituição da contribuição do art. 195, V (art. 126, II, do ADCT).
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.239:PAR.3` — Art. 239, §§ 3º e 3º-A — Abono salarial
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O § 3º assegura o pagamento anual de um salário mínimo aos empregados de empregadores que contribuem para o PIS ou para o PASEP e que recebem remuneração mensal até um limite: duas vezes o salário…
+- Interpretação principal: O abono é um pagamento anual de um salário mínimo para trabalhadores de menor renda.
+- ATENÇÃO: Em 5 de outubro de 2026, a correção do limite pelo INPC já se aplica, nos termos do § 3º.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a partir de 2026 pela variação anual do)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.241` — Art. 241 — Consórcios públicos e convênios de cooperação
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 241 manda a União, os Estados, o Distrito Federal e os Municípios regularem por lei os consórcios públicos e os convênios de cooperação firmados entre eles.
+- Interpretação principal: Os entes da Federação podem se unir para prestar serviços públicos em conjunto, o que é chamado gestão associada.
+- ATENÇÃO: Cada ente participante precisa de lei que discipline sua participação, conforme o artigo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e), NEAR_COPY_MICROFIX(o_que_significa: os consórcios públicos e os convênios de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.242` — Art. 242 — Exceção à gratuidade e outras regras de ensino
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 242 afasta a gratuidade do art. 206, IV, das instituições educacionais oficiais criadas por lei estadual ou municipal que já existiam na data da promulgação da Constituição e que não sejam…
+- Interpretação principal: A regra geral é que o ensino público em estabelecimentos oficiais seja gratuito.
+- ATENÇÃO: A exceção exige os três requisitos ao mesmo tempo: criação por lei estadual ou municipal, existência na data da promulgação da Constituição e manutenção não preponderantemente pública.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: conta as contribuições das diferentes culturas e…), EXCEPTION_NOT_IN_TEXT(resolvido), lint TERM_LOW_UTILITY
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.244` — Art. 244 — Adaptação de prédios e veículos para pessoas com deficiência
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 244 manda a lei tratar da adaptação de logradouros, edifícios de uso público e veículos de transporte coletivo então existentes, para garantir acesso adequado às pessoas com deficiência,…
+- Interpretação principal: O art. 227, § 2º, trata das construções e veículos novos: a lei deve fixar normas para que já nasçam acessíveis.
+- ATENÇÃO: Os prazos e as normas técnicas da adaptação são definidos em lei.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.246` — Art. 246 — Limite às medidas provisórias
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 246 proíbe usar medida provisória para regulamentar artigo da Constituição cuja redação tenha sido alterada por emenda promulgada entre 1º de janeiro de 1995 e a promulgação da emenda que deu…
+- Interpretação principal: A medida provisória é um ato do Presidente da República com força de lei.
+- ATENÇÃO: O período de emendas alcançado é fechado: de 1º de janeiro de 1995 até a promulgação da emenda de 2001 que deu a redação atual.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: artigo da constituição cuja redação tenha sido…), EXAMPLE_NUMBER(resolvido), TRANSITION_IN_CORE(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.248` — Art. 248 — Teto para benefícios pagos pelo regime geral
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 248 alcança os benefícios pagos, a qualquer título, pelo órgão que administra o regime geral de previdência social, mesmo quando pagos com recursos do Tesouro Nacional, e os que não estão…
+- Interpretação principal: O órgão do regime geral às vezes paga benefícios que não são previdenciários comuns, com dinheiro do Tesouro, e alguns desses benefícios não seguem o teto do regime…
+- ATENÇÃO: O limite aplicado é o do art. 37, XI, e não o teto comum de benefícios do regime geral.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: os benefícios pagos a qualquer título pelo órgão)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.249` — Art. 249 — Fundos para aposentadorias dos servidores
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 249 permite que a União, os Estados, o Distrito Federal e os Municípios constituam fundos formados por contribuições e por bens, direitos e ativos de qualquer natureza.
+- Interpretação principal: Pagar aposentadorias e pensões de servidores exige muito dinheiro ao longo do tempo.
+- ATENÇÃO: Os fundos complementam os recursos do tesouro do ente; não os substituem.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a união os estados o distrito federal e)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.250` — Art. 250 — Fundo do regime geral de previdência
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 250 permite que a União constitua fundo formado por bens, direitos e ativos de qualquer natureza para assegurar recursos ao pagamento dos benefícios concedidos pelo regime geral de previdência…
+- Interpretação principal: O artigo aplica ao regime geral uma ideia parecida com a do art. 249 para os servidores.
+- ATENÇÃO: É o último artigo do corpo permanente da Constituição; em seguida começa o Ato das Disposições Constitucionais Transitórias.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: benefícios concedidos pelo regime geral de…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+## B — CLEAN_MEDIUM (19)
 
 ### `CF88:ART.182:PAR.4` — Art. 182, § 4º — Sanções ao imóvel urbano subutilizado
 
@@ -807,5 +1005,71 @@ Lote `ENTENDA_CF_MACRO_BATCH_08` · 2026-10-05 · nenhum item aprovado (AUTO_APP
 - Dependência externa: JURISPRUDENCIA (contexto)
 - Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
 - Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.226` — Art. 226 — Família
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O reconhecimento de outras…
+- Ponto jurídico: O art. 226 declara a família base da sociedade e lhe dá especial proteção do Estado.
+- Interpretação principal: A Constituição protege a família em suas diferentes formas, e não apenas a formada pelo casamento.
+- ATENÇÃO: A união estável tem explicação própria.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a comunidade formada por qualquer dos pais e), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.231` — Art. 231 — Direitos dos povos indígenas
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O texto oficial remete à Lei nº…
+- Ponto jurídico: O art. 231 reconhece a organização social, os costumes, as línguas, as crenças e as tradições dos índios, e os seus direitos originários sobre as terras de ocupação tradicional, cabendo à União…
+- Interpretação principal: Os direitos dos índios sobre as terras são originários: existem antes e independentemente de qualquer título dado pelo Estado.
+- ATENÇÃO: O texto oficial traz nota de remissão a lei de 2023 no caput.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: proteger e fazer respeitar todos os seus bens), NEAR_COPY_MICROFIX(o_que_significa: das riquezas naturais do solo dos rios e), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.240` — Art. 240 — Contribuições ao sistema S
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: O alcance da ressalva para…
+- Ponto jurídico: O art. 240 ressalva do regime do art. 195 as contribuições compulsórias que os empregadores já pagavam sobre a folha de salários e destinadas a entidades privadas, vinculadas ao sistema sindical, que…
+- Interpretação principal: Quando a Constituição foi promulgada, já existiam contribuições pagas pelos empregadores para financiar entidades privadas de serviço social e de formação profissional…
+- ATENÇÃO: O artigo fala em contribuições atuais, isto é, as que existiam quando a Constituição foi promulgada.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: entidades privadas de serviço social e de formação)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.243` — Art. 243 — Expropriação de terras com plantio ilegal ou trabalho escravo
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A necessidade de culpa do…; SENSITIVE_THEME: SENSITIVE_THEME: sanções
+- Ponto jurídico: O art. 243 determina a expropriação, sem qualquer indenização ao proprietário, das propriedades rurais e urbanas em que forem encontradas culturas ilegais de plantas psicotrópicas ou exploração de…
+- Interpretação principal: É uma das poucas hipóteses em que o Estado toma uma propriedade sem pagar nada.
+- ATENÇÃO: A expropriação observa, no que couber, as garantias do art. 5º, como o devido processo legal.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a fundo especial com destinação específica na…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.245` — Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: SENSITIVE_THEME: crime
+- Ponto jurídico: O art. 245 manda a lei dispor sobre as hipóteses e as condições em que o poder público prestará assistência aos herdeiros e dependentes carentes de pessoas vítimas de crime doloso, sem prejuízo da…
+- Interpretação principal: Quando alguém morre ou sofre dano em razão de crime intencional, sua família pode ficar desamparada.
+- ATENÇÃO: O artigo depende de lei para produzir efeitos concretos.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: assistência aos herdeiros e dependentes carentes…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.247` — Art. 247 — Servidores de atividades exclusivas de Estado
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: SENSITIVE_THEME: perda do cargo
+- Ponto jurídico: O art. 247 determina que as leis previstas no art. 41, § 1º, III, e no art. 169, § 7º, prevejam critérios e garantias especiais contra a perda do cargo do servidor estável cujas atribuições do cargo…
+- Interpretação principal: Alguns servidores exercem funções que só o Estado pode desempenhar, como fiscalizar, arrecadar ou exercer poder de polícia.
+- ATENÇÃO: Quais carreiras exercem atividades exclusivas de Estado é definido em lei; os exemplos acima são ilustrativos.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
