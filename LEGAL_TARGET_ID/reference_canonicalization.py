@@ -60,8 +60,15 @@ def load_targets():
     return idx, {t['target_id']: t for t in idx['targets']}, text
 
 
-def build_status(tg, text):
-    op_targets, _, _ = SP.parse_structure(OPERATIONAL.read_bytes().decode('utf-8-sig'), 'CF88', end_markers=END)
+def _head(s):
+    return s[:80].rstrip(' .;,:')
+
+
+def build_status(tg, text, errata=False):
+    """errata=False reproduces the frozen CF88_TARGET_STATUS.json (a pinned input of Batch06 and of the DEVICE exports).
+    errata=True is the corrected build used by status_errata.py: approved source transcription corrections applied to the operational
+    text (source_corrections.py) and the renumbered-label comparison without final punctuation."""
+    op_targets, _, _ = SP.parse_structure(OPERATIONAL.read_bytes().decode('utf-8-sig'), 'CF88', end_markers=END, source_corrections=errata)
     op_ids = {t['target_id'] for t in op_targets}
     op_text = norm(' '.join(OPERATIONAL.read_text(encoding='utf-8').splitlines()))
     status = {}
@@ -74,7 +81,8 @@ def build_status(tg, text):
             st, why = 'CURRENT', 'rotulo presente no texto operacional vigente (Senado)'
         elif len(text.get(tid, '')) >= 30 and text[tid][:80] in op_text:
             art = tid.split(':PAR.')[0].split(':INC.')[0].split(':CAPUT')[0]
-            same = sorted(x for x in op_ids if x != tid and x.startswith(art + ':') and text.get(x, '')[:80] == text[tid][:80])
+            key = _head if errata else (lambda v: v[:80])
+            same = sorted(x for x in op_ids if x != tid and x.startswith(art + ':') and key(text.get(x, '')) == key(text[tid]))
             if same:
                 st, why = 'HISTORICAL_ONLY', 'rotulo renumerado: o mesmo texto esta no vigente sob ' + ', '.join(same)
             else:

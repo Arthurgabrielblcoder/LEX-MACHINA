@@ -1,0 +1,49 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "base_status_file": "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json",
+ "base_status_sha256": "5b88efebe9b41dae2cb3439805110e1e576d1c2a7ee67f1bdf4017dfa603a53b",
+ "operational_source": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+ "operational_sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+ "source_corrections": "updater/fontes_oficiais_senado/SOURCE_TEXT_CORRECTIONS.json",
+ "source_corrections_sha256": "55e68825300068ee57389ecbda94baa1644aeb7aa89e7e57a44e6826f80767c8",
+ "count": 2,
+ "targets": {
+  "CF88:ART.114:INC.VIII": {
+   "frozen": {
+    "status": "HISTORICAL_ONLY",
+    "reason": "rotulo e texto ausentes do texto operacional vigente; existe so no compilado historico",
+    "revoked_marker": false,
+    "present_in_operational_text": false
+   },
+   "corrected": {
+    "status": "CURRENT",
+    "reason": "rotulo presente no texto operacional vigente (Senado)",
+    "revoked_marker": false,
+    "present_in_operational_text": true
+   },
+   "cause": {
+    "kind": "SOURCE_TEXT_CORRECTION",
+    "correction_id": "SRC-CORR-CF88-579494-16434817-ART114-INC-VIII"
+   }
+  },
+  "CF88:ART.155:INC.I:AL.c": {
+   "frozen": {
+    "status": "CURRENT",
+    "reason": "texto presente no texto operacional vigente (rotulo com formatacao divergente)",
+    "revoked_marker": false,
+    "present_in_operational_text": false
+   },
+   "corrected": {
+    "status": "HISTORICAL_ONLY",
+    "reason": "rotulo renumerado: o mesmo texto esta no vigente sob CF88:ART.155:INC.III",
+    "revoked_marker": false,
+    "present_in_operational_text": false
+   },
+   "cause": {
+    "kind": "RENUMBERED_LABEL_FINAL_PUNCTUATION",
+    "note": "mesmo texto sob outro rotulo vigente; a pontuacao final nao faz parte da redacao"
+   }
+  }
+ }
+}
