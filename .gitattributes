@@ -141,3 +141,14 @@ sdcard/README.md -text
 
 # Ledger de relocacao protected545 (prova derivada): preservar bytes exatos.
 PROTECTED545_RELOCATION/ledger/P545_RELOCATION_LEDGER.json -text
+
+# ENTENDA / Lei Seca / Reference Engine: bytes fixados (hardening pos-Batch05, 2026-10-04).
+# Artefatos gerados em LF (Python write_bytes) e conferidos por hash ou byte a byte (evidencias das rodadas, builds
+# deterministicos, manifestos, sha do runtime da Lei Seca, export RUN3): checkout sempre em LF, independente de core.autocrlf.
+ENTENDA_ENGINE/derived/** text eol=lf
+DEVICE_INTEGRATION/runtime/** text eol=lf
+LEGAL_TARGET_ID/derived/** text eol=lf
+# ENTENDA_PAYLOAD.DAT e lido em binario por OFFSET/BYTES do LOOKUP.IDX (motor e firmware): nenhuma conversao.
+# Reafirma -text para os IDX desses diretorios (a regra "derived/** text" acima prevaleceria sobre "*.IDX -text").
+ENTENDA_ENGINE/derived/**/ENTENDA_PAYLOAD.DAT -text
+ENTENDA_ENGINE/derived/**/*.IDX -text

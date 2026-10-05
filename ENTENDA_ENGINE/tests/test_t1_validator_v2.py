@@ -205,6 +205,8 @@ class ValidatorV2Test(unittest.TestCase):
 
     # ---------------- external dependency resolver ----------------
     def test_resolver_real_relation_is_pending_not_validated(self):
+        """OPTIONAL LOCAL INTEGRATION: needs the unversioned Relations Engine working folders (skipped in a clean clone).
+        The essential resolver logic is proven hermetically in test_t1_external_resolver (versioned fixture)."""
         idx = X.RelationsIndex.from_config(V.load_json(V.CONFIG))
         cat = V.load_json(V.CATALOG)
         v1 = next(r for r in self.all if r['explanation_id'] == 'ENTENDA/CF88:ART.37:PAR.7/BASE/1')

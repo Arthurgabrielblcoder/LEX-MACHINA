@@ -1,0 +1,41 @@
+{
+ "schema": "lex-machina-relations-v2/test-fixture/1",
+ "note": "Fixture minima e sintetica para o resolvedor externo (t1_external_resolver). Reproduz so os campos que o resolvedor le, nos dois esquemas do Relations Engine (2D: classe/decisao; 2E4 global: status). Nao e dado juridico; nao substitui nem altera o Relations Engine. O caso PENDING copia a forma da relacao real em quarentena CF88 art. 37, § 7º -> EXT_LEI12813_2013.",
+ "relacoes": [
+  {
+   "case": "A_VALIDATED_2D",
+   "origem_norma": "CF88", "origem_artigo": "37", "origem_paragrafo": "8",
+   "destino_norma": "EXT_FIXTURE_VALIDADA", "tipos": ["REGULAMENTACAO"], "fontes": ["CAMARA_REGULAMENTACAO_CF"],
+   "urls": ["https://example.invalid/validada"], "evidencias": ["fixture"], "texto_local_disponivel": false,
+   "classe": "B_REGULAMENTACAO_OFICIAL", "decisao": "EXIBIR"
+  },
+  {
+   "case": "A_VALIDATED_GLOBAL_2E4",
+   "id": "REL_FIXTURE_GLOBAL", "tipo": "LEGISLACAO_CORRELATA", "status": "ATUAL", "origem_norma": "CF88",
+   "origem_caminhos": ["146"], "destino_norma": "EXT_FIXTURE_GLOBAL",
+   "fontes": {"relacao_oficial": "https://example.invalid/global"}
+  },
+  {
+   "case": "B_PENDING_QUARANTINE",
+   "origem_norma": "CF88", "origem_artigo": "37", "origem_paragrafo": "7",
+   "destino_norma": "EXT_LEI12813_2013", "tipos": ["REGULAMENTACAO"], "fontes": ["CAMARA_REGULAMENTACAO_CF"],
+   "urls": ["https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0862.htm"],
+   "evidencias": ["Legislação ordinária: Lei nº 12.813, de 16/05/2013"], "texto_local_disponivel": false,
+   "classe": "C_EXTERNA_PENDENTE_VALIDACAO", "decisao": "OCULTAR_ATE_VALIDAR_VIGENCIA", "vigencia_status": "NAO_LOCALIZADA"
+  },
+  {
+   "case": "C_WEAK",
+   "origem_norma": "CF88", "origem_artigo": "37", "origem_paragrafo": "3",
+   "destino_norma": "EXT_FIXTURE_FRACA", "tipos": ["REGULAMENTACAO"], "fontes": ["CAMARA_REGULAMENTACAO_CF"],
+   "urls": ["https://example.invalid/fraca"], "evidencias": ["fixture"], "texto_local_disponivel": true,
+   "classe": "D_FRACA", "decisao": "OCULTAR_ATE_REVISAO"
+  },
+  {
+   "case": "C_WEAK_SECTION_UNDETERMINED",
+   "origem_norma": "CF88", "origem_artigo": "37", "origem_paragrafo": "1",
+   "destino_norma": "EXT_FIXTURE_INDETERMINADA", "tipos": ["REGULAMENTACAO"], "fontes": ["CAMARA_REGULAMENTACAO_CF"],
+   "urls": ["https://example.invalid/indeterminada"], "evidencias": ["fixture"], "texto_local_disponivel": false,
+   "classe": "C_SECAO_INDETERMINADA", "decisao": "OCULTAR_ATE_REVISAO"
+  }
+ ]
+}
