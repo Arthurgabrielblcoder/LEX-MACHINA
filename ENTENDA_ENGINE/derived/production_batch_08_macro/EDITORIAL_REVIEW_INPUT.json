@@ -93,6 +93,9 @@
   },
   "ADCT:ART.121": {
    "LAW_DEPENDENCY_OMITTED": "A explicacao remete a \"lei civil indicada no texto\" e a camada externa registra o Codigo Civil, art. 1.275, III. Resolucao do drafter, sujeita a revisao humana."
+  },
+  "ADCT:ART.127": {
+   "TRANSITION_IN_CORE": "MB08-HFR-25 TRANSITION_IS_THE_DEVICE_CORE (decisao humana explicita, revisao 3): O caráter transitório pertence ao próprio conteúdo normativo do art. 127, que fixa expressamente regras para 2027 e 2028. Retirar datas ou transição para satisfazer o detector reduziria a precisão jurídica do T1. O mapa temporal do Macro08 complementa, mas não substitui, essa informação."
   }
  },
  "risk": {
@@ -101,13 +104,11 @@
    "rules": [
     "JURISPRUDENCE_CONTEXT_ONLY",
     "SENSITIVE_THEME",
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL",
     "JUDICIAL_REVIEW_CONTEXT_ONLY"
    ],
    "reasons": [
     "JURISPRUDENCE_CONTEXT_ONLY: JURISPRUDENCE_CONTEXT_ONLY: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_E",
     "SENSITIVE_THEME: SENSITIVE_THEME: sob pena",
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7047\")",
     "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064 -- A anotacao \"Vide ADI 7047; Vide ADI 7064\" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION)."
    ],
    "jurisprudence": "CONTEXT_ONLY",
@@ -115,7 +116,6 @@
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.101:PAR.5: Vide ADI 7047; ART.101:PAR.5: Vide ADI 7064)",
     "camada externa: jurisprudencia",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
     "quorum: um terço",
     "deadline: sessenta dias",
     "number_or_percentage: doze",
@@ -195,7 +195,6 @@
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.107-A:INC.II: Vide MI 7300; ART.107-A:INC.II: Vide ADI 7064)",
     "camada externa: jurisprudencia",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
     "deadline: dois anos",
     "number_or_percentage: %",
     "law_dependency: regulament",
@@ -267,8 +266,9 @@
    "rules": [],
    "reasons": [],
    "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
+   "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
+    "camada externa: nota externa",
     "redacao de emenda constitucional (2 anotacao(oes))",
     "remissao: arts. 115, 167",
     "overview com 5 dispositivos"
@@ -604,7 +604,6 @@
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.27:PAR.11: Vide ADIN n. 5017, de 2013)",
     "camada externa: jurisprudencia",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
     "deadline: prazo",
     "number_or_percentage: cinco",
     "redacao de emenda constitucional (1 anotacao(oes))",
@@ -2350,8 +2349,7 @@
    "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
-    "camada externa: jurisprudencia",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE"
+    "camada externa: jurisprudencia"
    ]
   },
   "CF88:ART.231:PAR.3": {

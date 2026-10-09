@@ -1,6 +1,7 @@
 # REVIEW — ENTENDA_CF_MACRO_BATCH_08
 
-Explicações novas para revisão humana. Todas estão em `PENDING_HUMAN_REVIEW`.
+Explicações novas para revisão humana. Estão em `PENDING_HUMAN_REVIEW`, exceto as aprovadas em rodada de revisão registrada
+(`HUMAN_APPROVED_T1`, com a DECISÃO HUMANA indicada abaixo de cada uma).
 As explicações reutilizadas de lotes aprovados não são repetidas aqui.
 
 Para cada explicação, marque APROVAR, AJUSTAR (indique o trecho) ou REJEITAR.
@@ -16,7 +17,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 291 palavras · 2125 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 291 palavras · 2122 bytes · referências 0
 - **Motivo da seleção:** Visao geral: separacao entre solo e subsolo, titularidade da Uniao e regime das autorizacoes e concessoes de mineracao e energia hidraulica.
 
 **O QUE DIZ**
@@ -54,7 +55,7 @@ A separação entre solo e subsolo vale para efeito de exploração ou aproveita
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: demais recursos minerais e os potenciais de energia); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para extraí-lo, precisa de título da União.)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -65,7 +66,7 @@ A separação entre solo e subsolo vale para efeito de exploração ou aproveita
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.176`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 238 palavras · 1819 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 238 palavras · 1816 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: requisitos subjetivos (brasileiro ou empresa constituida e sediada no pais), titulo da Uniao e condicoes especificas em faixa de fronteira e terras indigenas.
 
 **O QUE DIZ**
@@ -99,7 +100,7 @@ As condições específicas para faixa de fronteira e terras indígenas dependem
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a pesquisa e a lavra de recursos minerais); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para receber a concessão, precisa atuar por meio de uma empr)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -114,7 +115,7 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2172 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 282 palavras · 2169 bytes · referências 0
 - **Motivo da seleção:** Visao geral: atividades em monopolio, contratacao de empresas, lei do setor, materiais radioativos e contribuicao sobre combustiveis.
 
 **O QUE DIZ**
@@ -149,7 +150,7 @@ Monopólio não é o mesmo que exploração direta e exclusiva por empresa estat
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-01, MB08-HFR-02
 
 ---
 
@@ -160,7 +161,7 @@ Monopólio não é o mesmo que exploração direta e exclusiva por empresa estat
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.177`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1670 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 210 palavras · 1667 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: abertura das atividades dos incisos I a IV a empresas estatais ou privadas, nas condicoes da lei; o § 2º (conteudo dessa lei) fica na visao geral.
 
 **O QUE DIZ**
@@ -195,18 +196,18 @@ A expressão é empresas estatais ou privadas: o texto não reserva as atividade
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
 ### Art. 177, § 4º — Contribuição sobre combustíveis
 
-- **TARGET:** `CF88:ART.177:PAR.4` · `ENTENDA/CF88:ART.177:PAR.4/BASE/1`
+- **TARGET:** `CF88:ART.177:PAR.4` · `ENTENDA/CF88:ART.177:PAR.4/BASE/2`
 - **DISPLAY TITLE:** Art. 177, § 4º — Contribuição sobre combustíveis
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.177`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 267 palavras · 2180 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 270 palavras · 2203 bytes · referências 0
 - **Motivo da seleção:** Bloco: requisitos da lei que instituir contribuicao de intervencao no dominio economico sobre petroleo, gas e alcool combustivel (aliquota e destino dos recursos).
 
 **O QUE DIZ**
@@ -223,7 +224,7 @@ A limitação está no inciso II: o dinheiro arrecadado tem destino definido, as
 
 **EXEMPLO PRÁTICO**
 
-Diante de uma alta no preço do diesel, o Executivo reduz por decreto a alíquota da contribuição sobre esse combustível. Meses depois, a restabelece também por decreto, sem precisar de nova lei.
+Diante de uma alta no preço do diesel, o Poder Executivo reduz a alíquota da contribuição sobre esse combustível. Meses depois, pode restabelecê-la por ato do Poder Executivo, sem precisar esperar o exercício seguinte.
 
 **ATENÇÃO**
 
@@ -241,7 +242,7 @@ O texto autoriza o Executivo a reduzir e a restabelecer a alíquota; o limite de
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a tarifas de transporte público coletivo de passageiros)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano EXAMPLE_FORM_OF_ACT_OVERCLAIM (fila C) em exemplo_pratico; flags fechadas por decisao humana explicita: MB08-HFR-03, MB08-HFR-04 (seções: exemplo_pratico)
 
 ---
 
@@ -256,7 +257,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1518 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 194 palavras · 1515 bytes · referências 1
 - **Motivo da seleção:** Visao geral: lei de ordenacao dos transportes, acordos internacionais com reciprocidade e regra sobre embarcacoes estrangeiras.
 
 **O QUE DIZ**
@@ -289,7 +290,7 @@ Um navio com bandeira estrangeira quer levar carga de Santos para Manaus. Esse t
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de mercadorias na cabotagem e a navegação interior)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -304,7 +305,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 193 palavras · 1681 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 193 palavras · 1678 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever dos quatro entes de dar tratamento juridico diferenciado as microempresas e empresas de pequeno porte, definidas em lei.
 
 **O QUE DIZ**
@@ -336,7 +337,7 @@ O tratamento diferenciado depende da definição e das medidas previstas em lei.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -351,7 +352,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 154 palavras · 1221 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 154 palavras · 1218 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever dos quatro entes de promover e incentivar o turismo como fator de desenvolvimento.
 
 **O QUE DIZ**
@@ -382,7 +383,7 @@ Um Município litorâneo cria um programa para divulgar suas praias e melhorar a
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -397,7 +398,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1575 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 163 palavras · 1572 bytes · referências 0
 - **Motivo da seleção:** Visao geral: requisicao de documento ou informacao comercial por autoridade estrangeira depende de autorizacao do Poder competente.
 
 **O QUE DIZ**
@@ -429,7 +430,7 @@ O artigo trata de documentos e informações de natureza comercial. Qual é o Po
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a pessoa física ou jurídica residente ou domiciliada)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -444,7 +445,7 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2226 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 285 palavras · 2223 bytes · referências 1
 - **Motivo da seleção:** Visao geral: politica urbana municipal, plano diretor, funcao social da propriedade urbana e desapropriacao.
 
 **O QUE DIZ**
@@ -481,18 +482,18 @@ A indenização em dinheiro é a regra das desapropriações urbanas comuns. Qua
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: feitas com prévia e justa indenização em dinheiro)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-05
 
 ---
 
 ### Art. 182, § 4º — Sanções ao imóvel urbano subutilizado
 
-- **TARGET:** `CF88:ART.182:PAR.4` · `ENTENDA/CF88:ART.182:PAR.4/BASE/1`
+- **TARGET:** `CF88:ART.182:PAR.4` · `ENTENDA/CF88:ART.182:PAR.4/BASE/2`
 - **DISPLAY TITLE:** Art. 182, § 4º — Sanções ao imóvel urbano subutilizado
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.182`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2105 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 291 palavras · 2160 bytes · referências 0
 - **Motivo da seleção:** Bloco: faculdade municipal de exigir aproveitamento do solo urbano ocioso e as tres sancoes sucessivas dos incisos.
 
 **O QUE DIZ**
@@ -509,7 +510,7 @@ Os títulos precisam ter emissão aprovada antes pelo Senado Federal, e o texto 
 
 **EXEMPLO PRÁTICO**
 
-Um terreno no centro de uma cidade fica anos sem uso em área prevista no plano diretor. O Município, com lei específica, notifica o dono para construir. Sem resposta, aplica o imposto progressivo no tempo e, por fim, desapropria com pagamento em títulos.
+Um terreno no centro de uma cidade fica anos sem uso em área incluída no plano diretor. O Município, com lei específica e nos termos da lei federal, exige o adequado aproveitamento. Persistindo o descumprimento, aplica as medidas sucessivas previstas no § 4º, até a desapropriação com pagamento em títulos.
 
 **ATENÇÃO**
 
@@ -525,9 +526,9 @@ A medida é uma faculdade do Município e depende de lei municipal específica, 
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até dez anos em parcelas anuais iguais e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: o valor real da indenização e os juros)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até dez anos em parcelas anuais iguais e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: o valor real da indenização e os juros); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O Município, com lei específica e nos termos da lei federal,)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano EXTERNAL_PROCEDURAL_DETAIL_IN_EXAMPLE (fila B) em exemplo_pratico (seções: exemplo_pratico)
 
 ---
 
@@ -542,7 +543,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 1811 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 1808 bytes · referências 1
 - **Motivo da seleção:** Visao geral: requisitos da usucapiao urbana para moradia, titulo ao homem ou a mulher, direito reconhecido uma unica vez e vedacao para imoveis publicos.
 
 **O QUE DIZ**
@@ -577,7 +578,7 @@ Se o terreno for público, não há usucapião, mesmo cumpridos todos os demais 
 
 **WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Domínio)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -587,12 +588,12 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 184 — Desapropriação para reforma agrária
 
-- **TARGET:** `CF88:ART.184` · `ENTENDA/CF88:ART.184/BASE/1`
+- **TARGET:** `CF88:ART.184` · `ENTENDA/CF88:ART.184/BASE/2`
 - **DISPLAY TITLE:** Art. 184 — Desapropriação para reforma agrária
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 310 palavras · 2225 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 305 palavras · 2303 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia da Uniao, indenizacao em titulos da divida agraria, benfeitorias em dinheiro, decreto, rito sumario, orcamento e isencao de impostos.
 
 **O QUE DIZ**
@@ -601,13 +602,13 @@ O art. 184 dá à União competência para desapropriar, por interesse social e 
 
 **O QUE SIGNIFICA**
 
-A competência para desapropriar para reforma agrária é da União, e o alvo é o imóvel rural que não cumpre a função social.
+A desapropriação para reforma agrária compete à União e pode alcançar o imóvel rural que não cumpra sua função social.
 
-A terra nua é paga em títulos, que mantêm o valor real e só começam a ser resgatados a partir do segundo ano. As benfeitorias úteis e necessárias, como uma casa ou um sistema de irrigação, são pagas em dinheiro.
+A indenização é feita por títulos da dívida agrária, com preservação do valor real. As benfeitorias úteis e necessárias recebem tratamento diferente: são indenizadas em dinheiro.
 
-O processo começa com um decreto que declara o interesse social; depois vem a ação judicial, com rito especial e rápido definido em lei complementar.
+Depois do decreto que declara o interesse social para fins de reforma agrária, a União pode ajuizar a ação de desapropriação, seguindo o procedimento especial definido em lei complementar.
 
-A transferência do imóvel para os beneficiários não paga impostos de nenhum ente.
+A transferência dos imóveis desapropriados no programa de reforma agrária é isenta dos impostos federais, estaduais e municipais previstos pelo dispositivo.
 
 **EXEMPLO PRÁTICO**
 
@@ -629,7 +630,7 @@ A indenização em títulos alcança a terra; benfeitorias úteis e necessárias
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até vinte anos a partir do segundo ano)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano OVER_NARROW_INDEMNITY_PARAPHRASE (fila A) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY) (seções: o_que_significa)
 
 ---
 
@@ -644,7 +645,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 209 palavras · 1780 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 209 palavras · 1777 bytes · referências 0
 - **Motivo da seleção:** Visao geral: pequena e media propriedade rural (com a condicao do texto) e propriedade produtiva; tratamento especial da propriedade produtiva.
 
 **O QUE DIZ**
@@ -678,7 +679,7 @@ A proteção é contra a desapropriação para fins de reforma agrária. A rela�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -693,7 +694,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1506 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 186 palavras · 1503 bytes · referências 0
 - **Motivo da seleção:** Visao geral: os quatro requisitos simultaneos da funcao social rural, com criterios e graus fixados em lei.
 
 **O QUE DIZ**
@@ -727,7 +728,7 @@ O não cumprimento da função social é o que permite a desapropriação do art
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -742,7 +743,7 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1748 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1745 bytes · referências 0
 - **Motivo da seleção:** Visao geral: planejamento e execucao da politica agricola com participacao do setor produtivo, fatores a considerar e compatibilizacao com a reforma agraria.
 
 **O QUE DIZ**
@@ -776,7 +777,7 @@ Ao planejar o crédito rural do ano, o governo ouve representantes de produtores
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: planejada e executada na forma da lei com)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -791,7 +792,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1789 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 1786 bytes · referências 0
 - **Motivo da seleção:** Visao geral: compatibilizacao com a politica agricola e a reforma agraria, aprovacao do Congresso para grandes areas e a excecao da reforma agraria.
 
 **O QUE DIZ**
@@ -826,7 +827,7 @@ A exigência de aprovação do Congresso vale para alienação e concessão a qu
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a política agrícola e com o plano nacional)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -841,7 +842,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1320 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1317 bytes · referências 0
 - **Motivo da seleção:** Visao geral: titulos de dominio ou de concessao de uso, inegociaveis por dez anos, conferidos ao homem ou a mulher.
 
 **O QUE DIZ**
@@ -876,7 +877,7 @@ A vedação de negociação dura dez anos. As demais condições do título depe
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: beneficiários da distribuição de imóveis rurais pela reforma)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -891,7 +892,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 154 palavras · 1433 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 154 palavras · 1430 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei regula e limita aquisicao ou arrendamento de imovel rural por estrangeiro e define casos de autorizacao do Congresso.
 
 **O QUE DIZ**
@@ -922,7 +923,7 @@ Quais são os limites e quando a autorização do Congresso é necessária são 
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ela deve observar os limites da lei e, se o caso estiver ent)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -937,7 +938,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1462 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 194 palavras · 1459 bytes · referências 0
 - **Motivo da seleção:** Visao geral: requisitos da usucapiao rural pro labore e vedacao para imoveis publicos.
 
 **O QUE DIZ**
@@ -969,7 +970,7 @@ O trabalho que torna a terra produtiva é requisito expresso. Imóvel público n
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -984,7 +985,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1743 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 213 palavras · 1740 bytes · referências 1
 - **Motivo da seleção:** Visao geral: finalidade do sistema financeiro, abrangencia das cooperativas de credito e regulacao por leis complementares; incisos e paragrafos revogados ficam fora (EXCLUDED_REVOKED).
 
 **O QUE DIZ**
@@ -1021,7 +1022,7 @@ Os incisos e parágrafos do artigo aparecem no texto apenas com a marca de revog
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as cooperativas de crédito será regulado por leis); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para mudar regras gerais sobre a entrada de capital estrange)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1036,7 +1037,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 178 palavras · 1320 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 178 palavras · 1317 bytes · referências 0
 - **Motivo da seleção:** Visao geral: primado do trabalho, bem-estar e justica sociais e planejamento das politicas sociais com participacao da sociedade.
 
 **O QUE DIZ**
@@ -1068,7 +1069,7 @@ Um conselho com representantes da sociedade civil acompanha e avalia um programa
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: objetivo o bem estar e a justiça sociais)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1078,12 +1079,12 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 194 — Seguridade social
 
-- **TARGET:** `CF88:ART.194` · `ENTENDA/CF88:ART.194/BASE/1`
+- **TARGET:** `CF88:ART.194` · `ENTENDA/CF88:ART.194/BASE/2`
 - **DISPLAY TITLE:** Art. 194 — Seguridade social
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1697 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 202 palavras · 1585 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conceito de seguridade social (saude, previdencia e assistencia); objetivos em bloco proprio do paragrafo unico.
 
 **O QUE DIZ**
@@ -1092,11 +1093,11 @@ O art. 194 define a seguridade social como um conjunto integrado de ações, tom
 
 **O QUE SIGNIFICA**
 
-A seguridade social reúne três áreas: saúde, previdência e assistência social. O texto as trata como partes de um mesmo sistema, e não como políticas isoladas.
+A seguridade social reúne saúde, previdência e assistência social, mas cada área possui regime próprio.
 
 As ações vêm do poder público e também da sociedade.
 
-As três áreas têm lógicas diferentes. A previdência tem caráter contributivo, como reforça o inciso VI do parágrafo único. A saúde é direito de todos, segundo o art. 196. A assistência atende a quem dela necessitar, nos termos do art. 203.
+A saúde é direito de todos, nos termos do art. 196; a previdência tem caráter contributivo, conforme o art. 201; e a assistência social é prestada a quem dela necessitar, nos termos do art. 203.
 
 **EXEMPLO PRÁTICO**
 
@@ -1118,7 +1119,7 @@ Os sete objetivos do parágrafo único orientam a organização do sistema e sã
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: à saúde à previdência e à assistência social)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano CROSS_DEVICE_ATTRIBUTION_ERROR (fila C) em o_que_significa; flags fechadas por decisao humana explicita: MB08-HFR-06 (seções: o_que_significa)
 
 ---
 
@@ -1129,7 +1130,7 @@ Os sete objetivos do parágrafo único orientam a organização do sistema e sã
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.194`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 252 palavras · 2296 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 252 palavras · 2293 bytes · referências 0
 - **Motivo da seleção:** Bloco: os sete objetivos que orientam a organizacao da seguridade pelo poder publico.
 
 **O QUE DIZ**
@@ -1167,7 +1168,7 @@ O alcance concreto da irredutibilidade do valor dos benefícios é questão de i
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: dos trabalhadores dos empregadores dos aposentados e do); PARENT_REPETITION (*: CF88:ART.194: 0.203)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -1177,12 +1178,12 @@ Sem explicação própria: 20 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 195 — Financiamento da seguridade social
 
-- **TARGET:** `CF88:ART.195` · `ENTENDA/CF88:ART.195/BASE/1`
+- **TARGET:** `CF88:ART.195` · `ENTENDA/CF88:ART.195/BASE/2`
 - **DISPLAY TITLE:** Art. 195 — Financiamento da seguridade social
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 322 palavras · 2537 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 326 palavras · 2555 bytes · referências 0
 - **Motivo da seleção:** Visao geral: financiamento direto e indireto por toda a sociedade, orcamentos dos entes e as cinco fontes de contribuicao social, com mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -1191,9 +1192,9 @@ O art. 195 determina que a seguridade social seja custeada por toda a sociedade,
 
 **O QUE SIGNIFICA**
 
-A seguridade é paga de duas formas: indiretamente, pelos orçamentos públicos, que vêm dos impostos; e diretamente, pelas contribuições sociais.
+A seguridade é financiada de forma indireta por recursos dos orçamentos públicos e de forma direta pelas contribuições sociais previstas no artigo.
 
-Cada inciso indica quem paga ou sobre o que incide: empresas, trabalhadores, loterias, importações e, no inciso V, bens e serviços.
+Cada inciso indica quem paga ou sobre o que incide: empresas, trabalhadores, concursos de prognósticos, importações e, no inciso V, bens e serviços.
 
 O § 1º separa as receitas estaduais e municipais da seguridade do orçamento da União. O § 3º impede a pessoa jurídica em débito com a seguridade de contratar com o poder público. O § 4º permite à lei criar outras fontes, observado o art. 154, I.
 
@@ -1219,7 +1220,7 @@ A contribuição sobre bens e serviços do inciso V tem cronograma de cobrança 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bens e serviços nos termos de lei complementar); TERM_NOT_USED (palavras_dificeis: Financiamento indireto)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano BUDGET_SOURCE_OVERGENERALIZATION (fila A) em o_que_significa (seções: o_que_significa)
 
 ---
 
@@ -1230,7 +1231,7 @@ A contribuição sobre bens e serviços do inciso V tem cronograma de cobrança 
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.195`, `CF88:ART.195:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 245 palavras · 1860 bytes · referências 3
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 245 palavras · 1857 bytes · referências 3
 - **Motivo da seleção:** Bloco: as tres bases de incidencia das contribuicoes do empregador, da empresa e da entidade equiparada (folha, receita ou faturamento e lucro).
 
 **O QUE DIZ**
@@ -1267,18 +1268,18 @@ O ADCT prevê a extinção, a partir de 2027, da contribuição sobre receita ou
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-07
 
 ---
 
 ### Art. 195, § 5º — Benefício só com fonte de custeio
 
-- **TARGET:** `CF88:ART.195:PAR.5` · `ENTENDA/CF88:ART.195:PAR.5/BASE/1`
+- **TARGET:** `CF88:ART.195:PAR.5` · `ENTENDA/CF88:ART.195:PAR.5/BASE/2`
 - **DISPLAY TITLE:** Art. 195, § 5º — Benefício só com fonte de custeio
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.195`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 150 palavras · 1218 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 146 palavras · 1209 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: regra da contrapartida (nenhum beneficio ou servico criado, majorado ou estendido sem fonte de custeio total).
 
 **O QUE DIZ**
@@ -1295,7 +1296,7 @@ Com isso, o parágrafo procura manter o equilíbrio entre o que a seguridade pag
 
 **EXEMPLO PRÁTICO**
 
-Um projeto de lei propõe estender um benefício previdenciário a uma nova categoria de trabalhadores. Para atender ao § 5º, o projeto precisa indicar a fonte de custeio total dessa extensão.
+Uma medida pretende estender um benefício previdenciário a uma nova categoria de trabalhadores. O § 5º condiciona essa extensão à existência da correspondente fonte de custeio total.
 
 **ATENÇÃO**
 
@@ -1310,9 +1311,9 @@ O texto exige fonte de custeio total, e não apenas parcial. A forma de demonstr
 
 —
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para atender ao § 5º, o projeto precisa indicar a fonte de c); TERM_LOW_UTILITY (palavras_dificeis: Majorar)
+**WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Majorar)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano PROCEDURAL_REQUIREMENT_INVENTED (fila A) em exemplo_pratico; redacao final reformulada pelo revisor (VALIDATOR_FLAG_REWORDED) (seções: exemplo_pratico)
 
 ---
 
@@ -1323,7 +1324,7 @@ O texto exige fonte de custeio total, e não apenas parcial. A forma de demonstr
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.195`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1458 bytes · referências 3
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 185 palavras · 1455 bytes · referências 3
 - **Motivo da seleção:** Dispositivo: prazo de noventa dias para exigir contribuicao instituida ou modificada e afastamento da anterioridade do exercicio.
 
 **O QUE DIZ**
@@ -1357,18 +1358,18 @@ O parágrafo afasta apenas a anterioridade do exercício (art. 150, III, b). A c
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
 ### Art. 195, § 7º — Entidades beneficentes de assistência social
 
-- **TARGET:** `CF88:ART.195:PAR.7` · `ENTENDA/CF88:ART.195:PAR.7/BASE/1`
+- **TARGET:** `CF88:ART.195:PAR.7` · `ENTENDA/CF88:ART.195:PAR.7/BASE/2`
 - **DISPLAY TITLE:** Art. 195, § 7º — Entidades beneficentes de assistência social
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.195`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 137 palavras · 1512 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 149 palavras · 1610 bytes · referências 2
 - **Motivo da seleção:** Dispositivo: dispensa de contribuicao para entidades beneficentes de assistencia social que atendam exigencias legais.
 
 **O QUE DIZ**
@@ -1394,15 +1395,15 @@ O texto remete à lei para as exigências que a entidade deve cumprir.
 **PALAVRAS DIFÍCEIS**
 
 - *Entidade beneficente*: organização sem fins lucrativos que presta serviço social gratuito ou subsidiado.
-- *Isenção*: dispensa do pagamento de um tributo, nas condições fixadas.
+- *Isentas (no texto constitucional)*: expressão usada pelo § 7º para a dispensa de contribuição; sua qualificação jurídica como imunidade é tratada na jurisprudência.
 
 **CAMADA EXTERNA**
 
 - O texto oficial remete à Lei Complementar nº 187/2021 (nota de remissão da compilação oficial). A natureza da dispensa (isenção ou imunidade) e a espécie normativa exigida para os requisitos são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** —
+**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Isentas (no texto constitucional))
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano TAXONOMIC_GLOSSARY_RISK (fila B) em palavras_dificeis (seções: palavras_dificeis)
 
 ---
 
@@ -1413,7 +1414,7 @@ O texto remete à lei para as exigências que a entidade deve cumprir.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.195`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1642 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 210 palavras · 1639 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: contribuicao sobre o resultado da comercializacao para o produtor em regime de economia familiar, sem empregados permanentes.
 
 **O QUE DIZ**
@@ -1448,7 +1449,7 @@ A contratação de empregados permanentes afasta o enquadramento. Os benefícios
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: em regime de economia familiar sem empregados permanentes)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1459,7 +1460,7 @@ A contratação de empregados permanentes afasta o enquadramento. Os benefícios
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.195`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1389 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 163 palavras · 1386 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: competencia so conta como tempo de contribuicao se a contribuicao atingir o minimo mensal da categoria, com agrupamento assegurado.
 
 **O QUE DIZ**
@@ -1491,7 +1492,7 @@ O parágrafo trata do Regime Geral de Previdência Social. Os detalhes do agrupa
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1502,7 +1503,7 @@ O parágrafo trata do Regime Geral de Previdência Social. Os detalhes do agrupa
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.195:PAR.16`, `CF88:ART.195:PAR.17`, `CF88:ART.195:PAR.18`, `CF88:ART.195:PAR.19`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.195`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 274 palavras · 2280 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 274 palavras · 2277 bytes · referências 0
 - **Motivo da seleção:** Bloco: os §§ 15 a 19 formam o regime constitucional da contribuicao do inciso V (aliquota por lei ordinaria, regras comuns com o imposto do art. 156-A, base de calculo, devolucao a pessoas fisicas e seu tratamento na receita corrente liquida).
 
 **O QUE DIZ**
@@ -1539,7 +1540,7 @@ A cobrança da contribuição segue o cronograma do ADCT: em 2026, alíquota de 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: computada na receita corrente líquida da união para)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -1554,7 +1555,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1588 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 198 palavras · 1585 bytes · referências 0
 - **Motivo da seleção:** Visao geral: saude como direito de todos e dever do Estado, garantido por politicas sociais e economicas e acesso universal e igualitario.
 
 **O QUE DIZ**
@@ -1588,7 +1589,7 @@ O alcance desse dever quando se pede ao Estado um tratamento ou medicamento espe
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a saúde é direito de todos e dever)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -1603,7 +1604,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 149 palavras · 1283 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 149 palavras · 1280 bytes · referências 0
 - **Motivo da seleção:** Visao geral: relevancia publica das acoes e servicos de saude, regulamentacao, fiscalizacao e controle pelo poder publico e execucao direta ou por terceiros.
 
 **O QUE DIZ**
@@ -1634,7 +1635,7 @@ A participação privada no sistema único de saúde segue regras próprias do a
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: por pessoa física ou jurídica de direito privado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1649,7 +1650,7 @@ Sem explicação própria: 21 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 265 palavras · 2183 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 265 palavras · 2180 bytes · referências 0
 - **Motivo da seleção:** Visao geral: rede regionalizada e hierarquizada, diretrizes do sistema unico, financiamento e mapa dos paragrafos (minimos, agentes comunitarios, pisos da enfermagem).
 
 **O QUE DIZ**
@@ -1686,7 +1687,7 @@ O inciso IV do § 3º está revogado.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com direção única em cada esfera de governo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -1697,7 +1698,7 @@ O inciso IV do § 3º está revogado.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.198`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 288 palavras · 2198 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 288 palavras · 2195 bytes · referências 0
 - **Motivo da seleção:** Bloco: dever anual de aplicacao minima em saude e bases de calculo para Uniao, Estados/DF e Municipios/DF.
 
 **O QUE DIZ**
@@ -1734,18 +1735,18 @@ O inciso I traz percentual expresso apenas para a União. Os percentuais de Esta
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Sobre esse total aplica o percentual previsto na lei complem)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
 ### Art. 198, §§ 4º, 5º e 6º — Agentes comunitários de saúde e de combate às endemias
 
-- **TARGET:** `CF88:ART.198:PAR.4` · `ENTENDA/CF88:ART.198:PAR.4/BASE/1`
+- **TARGET:** `CF88:ART.198:PAR.4` · `ENTENDA/CF88:ART.198:PAR.4/BASE/2`
 - **DISPLAY TITLE:** Art. 198, §§ 4º, 5º e 6º — Agentes comunitários de saúde e de combate às endemias
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.198:PAR.5`, `CF88:ART.198:PAR.6`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.198`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2181 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 277 palavras · 2239 bytes · referências 0
 - **Motivo da seleção:** Bloco: admissao por processo seletivo publico, lei federal sobre regime e piso e hipotese adicional de perda do cargo.
 
 **O QUE DIZ**
@@ -1754,19 +1755,19 @@ O § 4º permite que os gestores locais do sistema único admitam, por processo 
 
 **O QUE SIGNIFICA**
 
-Esses agentes trabalham perto da comunidade, por isso a Constituição criou para eles uma forma própria de ingresso: o processo seletivo público, diferente do concurso comum.
+Para esses agentes, o § 4º prevê admissão por processo seletivo público, de acordo com a natureza e a complexidade das atribuições e com os requisitos específicos para a atuação.
 
-O regime e o piso salarial são definidos por lei federal, válida para todo o país, e a União ajuda financeiramente os outros entes a pagar o piso.
+O regime e o piso salarial são definidos por lei federal, e a União presta assistência financeira complementar aos demais entes para o cumprimento do piso, nos termos da lei.
 
-Além das hipóteses gerais de perda do cargo dos arts. 41 e 169, o agente pode perder o cargo se deixar de cumprir os requisitos específicos da função, previstos em lei.
+Além das hipóteses gerais dos arts. 41 e 169, o servidor que exerça funções equivalentes pode perder o cargo se descumprir os requisitos específicos fixados em lei para o exercício da função.
 
 **EXEMPLO PRÁTICO**
 
-Um Município abre processo seletivo público para contratar agentes comunitários de saúde. Se a lei exigir, por exemplo, que o agente resida na área em que atua (requisito ilustrativo), deixar de cumpri-lo pode levar à perda do cargo.
+Um Município abre processo seletivo público para admitir agentes comunitários de saúde. Depois da admissão, o agente deve cumprir os requisitos específicos que a lei fixar para o exercício da função; o descumprimento pode levar à perda do cargo nos termos do § 6º.
 
 **ATENÇÃO**
 
-O exemplo usa um requisito apenas como ilustração: os requisitos específicos são os fixados em lei. Os §§ 7º a 11 trazem regras sobre o vencimento desses agentes.
+Os requisitos específicos da função são os fixados em lei. Os §§ 7º a 11 trazem regras sobre o vencimento desses agentes.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1778,9 +1779,9 @@ O exemplo usa um requisito apenas como ilustração: os requisitos específicos 
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: agentes comunitários de saúde e agentes de combate)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: agentes comunitários de saúde e agentes de combate); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: processo seletivo público de acordo com a natureza); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Depois da admissão, o agente deve cumprir os requisitos espe)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano EXTERNAL_REQUIREMENT_IN_EXAMPLE (fila B) em atencao, exemplo_pratico, o_que_significa (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -1791,7 +1792,7 @@ O exemplo usa um requisito apenas como ilustração: os requisitos específicos 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.198:PAR.8`, `CF88:ART.198:PAR.9`, `CF88:ART.198:PAR.10`, `CF88:ART.198:PAR.11`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.198`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 2271 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 263 palavras · 2268 bytes · referências 0
 - **Motivo da seleção:** Bloco: responsabilidade da Uniao pelo vencimento, dotacao propria, minimo de dois salarios minimos, aposentadoria especial e insalubridade e exclusao do limite de pessoal.
 
 **O QUE DIZ**
@@ -1828,18 +1829,18 @@ O piso de dois salários mínimos é o mínimo do vencimento. As regras da apose
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
 ### Art. 198, §§ 12, 13, 14 e 15 — Pisos salariais da enfermagem
 
-- **TARGET:** `CF88:ART.198:PAR.12` · `ENTENDA/CF88:ART.198:PAR.12/BASE/1`
+- **TARGET:** `CF88:ART.198:PAR.12` · `ENTENDA/CF88:ART.198:PAR.12/BASE/2`
 - **DISPLAY TITLE:** Art. 198, §§ 12, 13, 14 e 15 — Pisos salariais da enfermagem
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.198:PAR.13`, `CF88:ART.198:PAR.14`, `CF88:ART.198:PAR.15`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.198`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 2186 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 2349 bytes · referências 0
 - **Motivo da seleção:** Bloco: lei federal de pisos da enfermagem, adequacao das carreiras e assistencia financeira complementar da Uniao com dotacao propria.
 
 **O QUE DIZ**
@@ -1848,11 +1849,11 @@ O § 12 manda uma lei federal instituir pisos salariais nacionais para enfermeir
 
 **O QUE SIGNIFICA**
 
-Os pisos não são fixados pela Constituição: ela exige uma lei federal que os crie para quatro categorias.
+Os pisos não são fixados diretamente pela Constituição: o texto determina que uma lei federal os institua para enfermeiro, técnico de enfermagem, auxiliar de enfermagem e parteira.
 
-O piso vale para hospitais públicos e privados.
+Esses pisos devem ser respeitados por pessoas jurídicas, sejam elas públicas ou privadas.
 
-Para ajudar quem tem dificuldade de pagar, a União deve dar apoio financeiro complementar aos entes, às filantrópicas e aos prestadores que dependem do sistema único, desde que atendam pelo menos 60% dos pacientes por ele.
+A União também presta assistência financeira complementar, nos termos da lei, aos entes federativos, às entidades filantrópicas e aos prestadores contratualizados que atendam pelo menos 60% de seus pacientes pelo sistema único, para auxiliar no cumprimento dos pisos.
 
 **EXEMPLO PRÁTICO**
 
@@ -1873,7 +1874,7 @@ O valor dos pisos está na lei federal, não na Constituição. A aplicação co
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano SCOPE_NARROWING_AND_TELEOLOGY (fila B) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY) (seções: o_que_significa)
 
 ---
 
@@ -1888,7 +1889,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 2120 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 269 palavras · 2117 bytes · referências 0
 - **Motivo da seleção:** Visao geral: liberdade da iniciativa privada, participacao complementar no sistema unico, vedacoes de subvencao e de capital estrangeiro e proibicao de comercio de orgaos e sangue.
 
 **O QUE DIZ**
@@ -1925,7 +1926,7 @@ Contratar serviços de uma clínica com fins lucrativos é diferente de dar a el
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1940,7 +1941,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 262 palavras · 2071 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 262 palavras · 2068 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista nao exaustiva das atribuicoes do sistema unico, nos termos da lei.
 
 **O QUE DIZ**
@@ -1975,7 +1976,7 @@ Em várias tarefas o verbo é participar ou colaborar, e não executar sozinho: 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de medicamentos equipamentos imunobiológicos hemoderivados e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -1985,12 +1986,12 @@ Sem explicação própria: 22 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 201 — Regime Geral de Previdência Social
 
-- **TARGET:** `CF88:ART.201` · `ENTENDA/CF88:ART.201/BASE/1`
+- **TARGET:** `CF88:ART.201` · `ENTENDA/CF88:ART.201/BASE/2`
 - **DISPLAY TITLE:** Art. 201 — Regime Geral de Previdência Social
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 331 palavras · 2705 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 339 palavras · 2772 bytes · referências 0
 - **Motivo da seleção:** Visao geral: caracteristicas do regime geral, eventos cobertos e mapa dos paragrafos (beneficios, aposentadoria, contagem reciproca, inclusao previdenciaria).
 
 **O QUE DIZ**
@@ -1999,7 +2000,9 @@ O art. 201 organiza a previdência social no Regime Geral de Previdência Social
 
 **O QUE SIGNIFICA**
 
-Contributivo quer dizer que, em regra, quem quer a proteção precisa contribuir. Filiação obrigatória quer dizer que quem exerce atividade remunerada abrangida pelo regime geral entra nele por força da lei, sem escolha.
+O Regime Geral de Previdência Social tem caráter contributivo e filiação obrigatória nos casos previstos em lei.
+
+A filiação obrigatória significa que quem exerce atividade remunerada abrangida pelo regime entra nele por força da lei.
 
 O equilíbrio financeiro e atuarial exige que as regras considerem o que entra e o que sai, inclusive no longo prazo.
 
@@ -2015,7 +2018,7 @@ Segundo as anotações da fonte oficial, a redação atual de vários dispositiv
 
 **PALAVRAS DIFÍCEIS**
 
-- *Caráter contributivo*: exigência de contribuição para ter direito à proteção previdenciária.
+- *Caráter contributivo*: característica do regime previdenciário financiado por contribuições, conforme as regras legais de filiação e benefícios.
 - *Equilíbrio atuarial*: compatibilidade, no longo prazo, entre as contribuições e os benefícios a pagar.
 - *Auxílio-reclusão*: benefício pago aos dependentes de segurado de baixa renda que está preso.
 
@@ -2025,18 +2028,18 @@ Segundo as anotações da fonte oficial, a redação atual de vários dispositiv
 
 **WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: critérios que preservem o equilíbrio financeiro e atuarial)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano CONTRIBUTORY_RULE_OVERGENERALIZATION (fila A) em o_que_significa, palavras_dificeis (seções: o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções
 
-- **TARGET:** `CF88:ART.201:PAR.1` · `ENTENDA/CF88:ART.201:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.201:PAR.1` · `ENTENDA/CF88:ART.201:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2123 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 258 palavras · 2155 bytes · referências 1
 - **Motivo da seleção:** Bloco: vedacao de requisitos diferenciados e as duas excecoes por lei complementar (segurados com deficiencia e expostos a agentes nocivos).
 
 **O QUE DIZ**
@@ -2055,7 +2058,7 @@ No inciso II, o que importa é a exposição efetiva do trabalhador a agentes no
 
 **EXEMPLO PRÁTICO**
 
-Um técnico trabalha diariamente exposto a ruído e a produtos químicos acima dos limites de tolerância. Ele pode ter regras de aposentadoria diferentes, nos termos da lei complementar, por causa da exposição efetiva, e não pelo nome do cargo que ocupa.
+Um trabalhador exerce atividade com efetiva exposição a ruído e a produtos químicos prejudiciais à saúde. Ele pode ter idade e tempo de contribuição diferenciados para aposentadoria, nos termos da lei complementar, por causa da exposição efetiva, e não pelo nome do cargo que ocupa.
 
 **ATENÇÃO**
 
@@ -2073,7 +2076,7 @@ A vedação de caracterizar a atividade especial por categoria profissional est�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano EXTERNAL_THRESHOLD_IN_EXAMPLE (fila A) em exemplo_pratico; flags fechadas por decisao humana explicita: MB08-HFR-24 (seções: exemplo_pratico)
 
 ---
 
@@ -2084,7 +2087,7 @@ A vedação de caracterizar a atividade especial por categoria profissional est�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.201`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1326 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 163 palavras · 1323 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: beneficio substitutivo do salario de contribuicao ou do rendimento do trabalho nao pode ser inferior ao salario minimo.
 
 **O QUE DIZ**
@@ -2116,7 +2119,7 @@ O piso é o salário mínimo vigente no país. Quais benefícios têm natureza s
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2127,7 +2130,7 @@ O piso é o salário mínimo vigente no país. Quais benefícios têm natureza s
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1915 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 243 palavras · 1912 bytes · referências 0
 - **Motivo da seleção:** Bloco: idades minimas para homens e mulheres na regra geral e para trabalhadores rurais e de economia familiar.
 
 **O QUE DIZ**
@@ -2163,7 +2166,7 @@ O tempo mínimo de contribuição não está no § 7º. Quem já era segurado an
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: incluídos o produtor rural o garimpeiro e o)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2174,7 +2177,7 @@ O tempo mínimo de contribuição não está no § 7º. Quem já era segurado an
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.201:PAR.9-A`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 1977 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 247 palavras · 1974 bytes · referências 0
 - **Motivo da seleção:** Bloco: contagem reciproca entre regime geral e regimes proprios (§ 9º) e com o tempo de servico militar (§ 9º-A), com compensacao financeira.
 
 **O QUE DIZ**
@@ -2209,7 +2212,7 @@ A contagem é do tempo de contribuição. O § 14 proíbe contar tempo de contri
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2220,7 +2223,7 @@ A contagem é do tempo de contribuição. O § 14 proíbe contar tempo de contri
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.201:PAR.13`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.201`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1737 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 211 palavras · 1734 bytes · referências 0
 - **Motivo da seleção:** Bloco: sistema de inclusao com aliquotas diferenciadas para baixa renda e trabalho domestico nao remunerado em familia de baixa renda (§ 12) e valor da aposentadoria (§ 13).
 
 **O QUE DIZ**
@@ -2256,7 +2259,7 @@ As alíquotas e as condições concretas estão na lei. O valor de um salário m
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: especial de inclusão previdenciária com alíquotas diferencia)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2271,7 +2274,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2062 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 2059 bytes · referências 0
 - **Motivo da seleção:** Visao geral: carater complementar, autonomo e facultativo, reservas, lei complementar e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -2308,7 +2311,7 @@ O § 2º ressalva os benefícios concedidos da regra de não integração à rem
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de reservas que garantam o benefício contratado e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2319,7 +2322,7 @@ O § 2º ressalva os benefícios concedidos da regra de não integração à rem
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.202`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1536 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1533 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: vedacao de aporte de recursos publicos, salvo como patrocinador, com contribuicao normal limitada a do segurado.
 
 **O QUE DIZ**
@@ -2353,7 +2356,7 @@ O limite recai sobre a contribuição normal do patrocinador público.
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.202: 0.258)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2368,7 +2371,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 242 palavras · 1934 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 242 palavras · 1931 bytes · referências 0
 - **Motivo da seleção:** Visao geral: assistencia a quem dela necessitar, sem contribuicao, e seus seis objetivos.
 
 **O QUE DIZ**
@@ -2403,7 +2406,7 @@ O critério de acesso é a necessidade, e não a contribuição. Os requisitos c
 
 **WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: nunca)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2414,7 +2417,7 @@ O critério de acesso é a necessidade, e não a contribuição. Os requisitos c
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.203`, `CF88:ART.203:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 193 palavras · 1692 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 193 palavras · 1689 bytes · referências 2
 - **Motivo da seleção:** Item: garantia de um salario minimo mensal a pessoa com deficiencia e ao idoso sem meios de manutencao propria ou familiar.
 
 **O QUE DIZ**
@@ -2450,7 +2453,7 @@ O inciso depende do caput: a assistência social é prestada a quem dela necessi
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.203: 0.211)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -2465,7 +2468,7 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 294 palavras · 2308 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 294 palavras · 2305 bytes · referências 0
 - **Motivo da seleção:** Visao geral: fontes de recursos, descentralizacao, participacao popular e vinculacao facultativa estadual.
 
 **O QUE DIZ**
@@ -2500,7 +2503,7 @@ A vinculação do parágrafo único é uma faculdade, com teto de cinco décimos
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2515,7 +2518,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 151 palavras · 1159 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 151 palavras · 1156 bytes · referências 0
 - **Motivo da seleção:** Visao geral: educacao como direito de todos e dever do Estado e da familia, com colaboracao da sociedade e tres finalidades.
 
 **O QUE DIZ**
@@ -2546,7 +2549,7 @@ As garantias concretas do dever do Estado estão no art. 208.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de todos e dever do estado e da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2561,7 +2564,7 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 302 palavras · 2390 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 302 palavras · 2387 bytes · referências 0
 - **Motivo da seleção:** Visao geral: os nove principios do ensino e a lei sobre profissionais da educacao basica.
 
 **O QUE DIZ**
@@ -2596,7 +2599,7 @@ O piso salarial do inciso VIII é fixado por lei federal. O alcance concreto de 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: direito à educação e à aprendizagem ao longo); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo inciso V, o ingresso deve ocorrer por concurso público )
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2611,7 +2614,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1636 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 191 palavras · 1633 bytes · referências 0
 - **Motivo da seleção:** Visao geral: autonomia didatico-cientifica, administrativa e de gestao financeira e patrimonial, indissociabilidade e paragrafos.
 
 **O QUE DIZ**
@@ -2646,7 +2649,7 @@ A autonomia é exercida nos limites da Constituição e da lei.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: admitir professores técnicos e cientistas estrangeiros na fo); TERM_NOT_USED (palavras_dificeis: Extensão universitária)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2661,7 +2664,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 265 palavras · 2001 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 265 palavras · 1998 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as garantias que efetivam o dever do Estado com a educacao e o mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -2695,18 +2698,18 @@ No inciso III, o atendimento especializado é oferecido preferencialmente na red
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Como a educação básica é obrigatória e gratuita a partir des)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
 ### Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos
 
-- **TARGET:** `CF88:ART.208:INC.I` · `ENTENDA/CF88:ART.208:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.208:INC.I` · `ENTENDA/CF88:ART.208:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.208`, `CF88:ART.208:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 169 palavras · 1341 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 166 palavras · 1346 bytes · referências 0
 - **Motivo da seleção:** Item: faixa etaria obrigatoria e gratuita e oferta gratuita a quem nao estudou na idade propria.
 
 **O QUE DIZ**
@@ -2715,11 +2718,11 @@ O inciso I garante educação básica obrigatória e gratuita dos 4 aos 17 anos 
 
 **O QUE SIGNIFICA**
 
-Entre 4 e 17 anos, frequentar a educação básica é obrigatório e o ensino público é gratuito.
+Dos 4 aos 17 anos, a educação básica é obrigatória e gratuita.
 
-A obrigatoriedade pesa sobre o Estado, que deve oferecer a vaga, e sobre a família, que deve matricular.
+O Estado deve assegurar sua oferta, e a gratuidade também alcança quem não teve acesso à educação básica na idade própria.
 
-Quem passou dessa idade sem estudar não perde o direito: o inciso assegura a oferta gratuita também para jovens e adultos.
+O inciso, portanto, não limita essa oferta gratuita às pessoas que ainda estejam dentro da faixa etária de escolarização obrigatória.
 
 **EXEMPLO PRÁTICO**
 
@@ -2738,9 +2741,9 @@ O inciso depende do caput: é uma das garantias do dever do Estado com a educaç
 
 —
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo inciso I, o poder público deve oferecer esse ensino gra)
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo inciso I, o poder público deve oferecer esse ensino gra); TERM_NOT_USED (palavras_dificeis: Educação de jovens e adultos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano CROSS_DEVICE_DUTY_ATTRIBUTION (fila A) em o_que_significa; redacao final reformulada pelo revisor (VALIDATOR_FLAG_REWORDED) (seções: o_que_significa)
 
 ---
 
@@ -2751,7 +2754,7 @@ O inciso depende do caput: é uma das garantias do dever do Estado com a educaç
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.208:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.208`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 167 palavras · 1459 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 167 palavras · 1456 bytes · referências 0
 - **Motivo da seleção:** Bloco: acesso ao ensino obrigatorio como direito publico subjetivo (§ 1º) e responsabilidade da autoridade pela nao oferta ou oferta irregular (§ 2º).
 
 **O QUE DIZ**
@@ -2783,7 +2786,7 @@ O tipo de responsabilidade da autoridade e o procedimento são definidos na legi
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.208: 0.206)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2793,12 +2796,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 209 — Ensino privado
 
-- **TARGET:** `CF88:ART.209` · `ENTENDA/CF88:ART.209/BASE/1`
+- **TARGET:** `CF88:ART.209` · `ENTENDA/CF88:ART.209/BASE/2`
 - **DISPLAY TITLE:** Art. 209 — Ensino privado
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 122 palavras · 1038 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 203 palavras · 1646 bytes · referências 0
 - **Motivo da seleção:** Visao geral: liberdade de ensino a iniciativa privada e as duas condicoes.
 
 **O QUE DIZ**
@@ -2807,11 +2810,7 @@ O art. 209 declara o ensino livre à iniciativa privada, com duas condições: c
 
 **O QUE SIGNIFICA**
 
-A iniciativa privada pode oferecer ensino, desde que cumpra as duas condições do artigo.
-
-A primeira condição, prevista no inciso I, é cumprir as normas gerais da educação nacional.
-
-A segunda envolve o poder público em dois momentos: ele autoriza o funcionamento da instituição e, depois, avalia a qualidade do ensino oferecido.
+A Constituição permite que instituições privadas ofereçam ensino, mas condiciona essa atuação ao cumprimento das normas gerais da educação nacional e ao controle público previsto no próprio artigo. Isso significa que a liberdade de iniciativa na área educacional não é irrestrita. A instituição privada deve respeitar as regras gerais aplicáveis à educação e também se submeter à autorização e à avaliação de qualidade pelo poder público. O dispositivo, porém, não descreve como funciona o procedimento de autorização, quais critérios concretos serão usados na avaliação ou qual órgão será responsável por cada etapa. Esses detalhes pertencem à legislação educacional. O ponto central do art. 209 é, portanto, admitir o ensino privado dentro de condições constitucionais: respeito às normas gerais da educação nacional e sujeição à autorização e à avaliação de qualidade pelo poder público.
 
 **EXEMPLO PRÁTICO**
 
@@ -2831,7 +2830,7 @@ Um grupo de professores quer abrir uma faculdade particular. Antes de funcionar,
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: autorização e avaliação de qualidade pelo poder público); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Antes de funcionar, precisa da autorização do órgão competen)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano PROCEDURAL_SEQUENCE_INVENTED (fila A) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_MIN_LENGTH) (seções: o_que_significa)
 
 ---
 
@@ -2846,7 +2845,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1719 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 196 palavras · 1716 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conteudos minimos do ensino fundamental, ensino religioso facultativo e lingua portuguesa com linguas indigenas.
 
 **O QUE DIZ**
@@ -2880,7 +2879,7 @@ A matrícula no ensino religioso é facultativa. O modelo de ensino religioso na
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: disciplina dos horários normais das escolas públicas de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -2895,7 +2894,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1969 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 1966 bytes · referências 0
 - **Motivo da seleção:** Visao geral: regime de colaboracao, atuacao prioritaria de cada ente, funcao redistributiva e supletiva da Uniao e padrao minimo de qualidade.
 
 **O QUE DIZ**
@@ -2932,7 +2931,7 @@ As áreas indicadas são de atuação prioritária, e não exclusiva.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2947,7 +2946,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 280 palavras · 2046 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 280 palavras · 2043 bytes · referências 0
 - **Motivo da seleção:** Visao geral: percentuais minimos de aplicacao em manutencao e desenvolvimento do ensino e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -2983,7 +2982,7 @@ Os percentuais são mínimos. A divisão de parte desses recursos com o fundo da
 
 **WARNINGS:** ABSOLUTE_CLAIM (o_que_diz: nunca); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os estados o distrito federal e os municípios); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Sobre o total, deve aplicar pelo menos vinte e cinco por cen)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -2994,7 +2993,7 @@ Os percentuais são mínimos. A divisão de parte desses recursos com o fundo da
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.212:PAR.6`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.212`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1606 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 189 palavras · 1603 bytes · referências 0
 - **Motivo da seleção:** Bloco: salario-educacao como fonte adicional da educacao basica publica (§ 5º) e distribuicao das cotas estaduais e municipais por matriculas (§ 6º).
 
 **O QUE DIZ**
@@ -3028,7 +3027,7 @@ O salário-educação é fonte adicional: não substitui os percentuais mínimos
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao número de alunos matriculados na educação básica)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3043,7 +3042,7 @@ Sem explicação própria: 32 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 347 palavras · 2467 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 347 palavras · 2464 bytes · referências 0
 - **Motivo da seleção:** Visao geral: fundo de manutencao e desenvolvimento da educacao basica e valorizacao dos profissionais, composicao, distribuicao, complementacao, aplicacao e regras temporais dos incisos XIV e XV.
 
 **O QUE DIZ**
@@ -3080,7 +3079,7 @@ O inciso XIV vale só para o exercício de 2025, já encerrado em 5 de outubro d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os estados o distrito federal e os municípios)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-08
 
 ---
 
@@ -3091,7 +3090,7 @@ O inciso XIV vale só para o exercício de 2025, já encerrado em 5 de outubro d
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.212-A`, `CF88:ART.212-A:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 287 palavras · 2062 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 287 palavras · 2059 bytes · referências 0
 - **Motivo da seleção:** Bloco: complementacao minima de 23% e as tres modalidades de distribuicao (VAAF, VAAT e resultados).
 
 **O QUE DIZ**
@@ -3128,7 +3127,7 @@ O inciso depende do caput: a complementação incide sobre os fundos do art. 212
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-09, MB08-HFR-10
 
 ---
 
@@ -3138,12 +3137,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 213 — Destinação de recursos públicos à educação
 
-- **TARGET:** `CF88:ART.213` · `ENTENDA/CF88:ART.213/BASE/1`
+- **TARGET:** `CF88:ART.213` · `ENTENDA/CF88:ART.213/BASE/2`
 - **DISPLAY TITLE:** Art. 213 — Destinação de recursos públicos à educação
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2038 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 296 palavras · 2323 bytes · referências 0
 - **Motivo da seleção:** Visao geral: recursos para escolas publicas, excecao das comunitarias, confessionais e filantropicas, bolsas e apoio a pesquisa e extensao.
 
 **O QUE DIZ**
@@ -3152,11 +3151,11 @@ O art. 213 destina os recursos públicos às escolas públicas e permite dirigi-
 
 **O QUE SIGNIFICA**
 
-A regra é dinheiro público para escola pública.
+A regra principal é destinar recursos públicos às escolas públicas.
 
-A exceção vale para escolas sem fins lucrativos que cumpram as duas condições do texto: aplicar as sobras em educação e não deixar o patrimônio virar lucro privado no fim das atividades.
+O artigo também admite repasses a escolas comunitárias, confessionais ou filantrópicas definidas em lei. Para recebê-los, essas instituições não podem ter finalidade lucrativa, devem aplicar em educação os recursos que sobrarem e, se encerrarem suas atividades, precisam destinar o patrimônio conforme a alternativa prevista no próprio dispositivo.
 
-As bolsas são uma solução provisória para a falta de vaga pública, e o poder público fica obrigado a expandir sua própria rede na localidade.
+O § 1º admite bolsas de estudo quando, na localidade onde o estudante reside, não houver vagas e cursos regulares suficientes na rede pública. Mesmo nessa situação, o poder público deve priorizar a expansão de sua própria rede naquele local.
 
 **EXEMPLO PRÁTICO**
 
@@ -3175,9 +3174,9 @@ A abertura para escolas privadas alcança apenas as comunitárias, confessionais
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a escolas comunitárias confessionais ou filantrópicas defini); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao mesmo tempo, o poder público deve priorizar a ampliação d)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a escolas comunitárias confessionais ou filantrópicas defini); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a escolas comunitárias confessionais ou filantrópicas defini); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao mesmo tempo, o poder público deve priorizar a ampliação d)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano TELEOLOGY_NOT_IN_TEXT (fila A) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY, VALIDATOR_FLAG_REWORDED) (seções: o_que_significa)
 
 ---
 
@@ -3192,7 +3191,7 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 252 palavras · 1945 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 252 palavras · 1942 bytes · referências 0
 - **Motivo da seleção:** Visao geral: plano decenal estabelecido em lei, sistema nacional de educacao e os resultados a que deve conduzir.
 
 **O QUE DIZ**
@@ -3224,7 +3223,7 @@ Os números e as metas concretas estão na lei do plano, e não no artigo. O exe
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nacional de educação em regime de colaboração e); TERM_LOW_UTILITY (palavras_dificeis: Decenal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3239,7 +3238,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1704 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 1701 bytes · referências 0
 - **Motivo da seleção:** Visao geral: garantia dos direitos culturais, protecao das culturas populares, datas comemorativas e Plano Nacional de Cultura.
 
 **O QUE DIZ**
@@ -3273,7 +3272,7 @@ Um governo estadual apoia financeiramente festas tradicionais de comunidades afr
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a todos o pleno exercício dos direitos culturais); TERM_LOW_UTILITY (palavras_dificeis: Plurianual)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3288,7 +3287,7 @@ Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 288 palavras · 2267 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 288 palavras · 2264 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conceito de patrimonio cultural material e imaterial, bens incluidos, instrumentos de protecao e regras dos paragrafos.
 
 **O QUE DIZ**
@@ -3325,7 +3324,7 @@ O tombamento do § 5º decorre diretamente do texto constitucional. Os danos ao 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: obras objetos documentos edificações e demais espaços destin)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3340,7 +3339,7 @@ Sem explicação própria: 26 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1926 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 243 palavras · 1923 bytes · referências 0
 - **Motivo da seleção:** Visao geral: sistema de gestao compartilhada de politicas culturais, principios, estrutura e leis.
 
 **O QUE DIZ**
@@ -3372,7 +3371,7 @@ A regulamentação nacional depende de lei federal, e cada ente organiza seu sis
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: entre os entes da federação e a sociedade)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3387,7 +3386,7 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1707 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 214 palavras · 1704 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de fomento ao desporto, criterios, justica desportiva e lazer.
 
 **O QUE DIZ**
@@ -3423,7 +3422,7 @@ A autonomia das entidades desportivas alcança sua organização e funcionamento
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diferenciado para o desporto profissional e o não)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3434,7 +3433,7 @@ A autonomia das entidades desportivas alcança sua organização e funcionamento
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.217:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.217`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1731 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 185 palavras · 1728 bytes · referências 0
 - **Motivo da seleção:** Bloco: esgotamento previo da justica desportiva para acoes sobre disciplina e competicoes (§ 1º) e prazo maximo de sessenta dias para decisao final (§ 2º).
 
 **O QUE DIZ**
@@ -3468,7 +3467,7 @@ A exigência alcança apenas ações sobre disciplina e competições desportiva
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as instâncias da justiça desportiva regulada em lei); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Antes de ir ao Judiciário, deve recorrer às instâncias da ju)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -3483,7 +3482,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2075 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 273 palavras · 2072 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever do Estado de promover ciencia, pesquisa e inovacao e os instrumentos dos paragrafos.
 
 **O QUE DIZ**
@@ -3520,7 +3519,7 @@ A vinculação de receita do § 5º é uma faculdade dos Estados e do Distrito F
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a atuação no exterior das instituições públicas de); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: entidades públicas de fomento ao ensino e à)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3535,7 +3534,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1609 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 200 palavras · 1606 bytes · referências 0
 - **Motivo da seleção:** Visao geral: mercado interno como patrimonio nacional e estimulo a inovacao nas empresas e entes.
 
 **O QUE DIZ**
@@ -3569,7 +3568,7 @@ O incentivo ao mercado interno se faz nos termos de lei federal.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bem estar da população e a autonomia tecnológica)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3584,7 +3583,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1504 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 179 palavras · 1501 bytes · referências 0
 - **Motivo da seleção:** Visao geral: instrumentos de cooperacao dos entes com entidades publicas e privadas para projetos de pesquisa e inovacao.
 
 **O QUE DIZ**
@@ -3618,7 +3617,7 @@ As condições dos instrumentos de cooperação são definidas em lei.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3633,7 +3632,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 159 palavras · 1346 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 159 palavras · 1343 bytes · referências 0
 - **Motivo da seleção:** Visao geral: sistema em regime de colaboracao, lei federal de normas gerais e legislacao concorrente sobre peculiaridades.
 
 **O QUE DIZ**
@@ -3665,7 +3664,7 @@ O § 2º inclui os Municípios entre os entes que legislam sobre suas peculiarid
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o desenvolvimento científico e tecnológico e a inovação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3680,7 +3679,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 278 palavras · 2227 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 278 palavras · 2224 bytes · referências 0
 - **Motivo da seleção:** Visao geral: liberdade de manifestacao, criacao, expressao e informacao, vedacao de censura e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -3717,18 +3716,18 @@ A liberdade convive com os limites expressos no próprio texto constitucional. C
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Não precisa de licença para circular e não pode sofrer censu)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
 ### Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda
 
-- **TARGET:** `CF88:ART.220:PAR.3` · `ENTENDA/CF88:ART.220:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.220:PAR.3` · `ENTENDA/CF88:ART.220:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.220:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.220`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2055 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 298 palavras · 2354 bytes · referências 0
 - **Motivo da seleção:** Bloco: competencia da lei federal para regular diversoes e dar meios de defesa contra programacao e propaganda nocivas (§ 3º) e restricoes a propaganda de tabaco, bebidas alcoolicas, agrotoxicos, medicamentos e terapias (§ 4º).
 
 **O QUE DIZ**
@@ -3737,11 +3736,11 @@ O § 3º atribui à lei federal duas tarefas: regular as diversões e os espetá
 
 **O QUE SIGNIFICA**
 
-O poder público não proíbe espetáculos: informa a sociedade, indicando para quais idades não são recomendados e em que horários ou locais são inadequados. É a lógica da classificação indicativa.
+O inciso I atribui à lei federal a disciplina das diversões e dos espetáculos públicos e determina que o poder público forneça informações sobre seu conteúdo, a classificação por idade e a inadequação de determinados locais ou horários.
 
-A lei deve dar às famílias instrumentos para se proteger de programação e de propaganda nocivas.
+No inciso II, a lei deve criar instrumentos para que pessoas e famílias possam reagir a programas de rádio e televisão incompatíveis com os princípios do art. 221 e também a mensagens publicitárias relativas a produtos, práticas ou serviços capazes de prejudicar a saúde ou o meio ambiente.
 
-Para cinco tipos de produto, a propaganda comercial pode ser restringida por lei e deve trazer advertência quando necessário.
+O § 4º permite restrições legais à propaganda comercial de tabaco, bebidas alcoólicas, agrotóxicos, medicamentos e terapias e prevê advertência sobre riscos quando necessária.
 
 **EXEMPLO PRÁTICO**
 
@@ -3760,9 +3759,9 @@ No § 3º, I, o papel do poder público é informar, e não vetar a exibição. 
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: comercial de tabaco bebidas alcoólicas agrotóxicos medicamen); TERM_NOT_USED (palavras_dificeis: Classificação indicativa)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano ABSOLUTE_INFERENCE (fila A) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY, VALIDATOR_FLAG_REWORDED) (seções: o_que_significa)
 
 ---
 
@@ -3777,7 +3776,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1648 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 191 palavras · 1645 bytes · referências 1
 - **Motivo da seleção:** Visao geral: os quatro principios da producao e da programacao das emissoras de radio e televisao.
 
 **O QUE DIZ**
@@ -3811,7 +3810,7 @@ O § 3º do art. 222 estende esses princípios aos meios de comunicação social
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3826,7 +3825,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 301 palavras · 2216 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 301 palavras · 2213 bytes · referências 0
 - **Motivo da seleção:** Visao geral: titularidade, capital minimo nacional, responsabilidade editorial, comunicacao eletronica, capital estrangeiro e alteracoes de controle.
 
 **O QUE DIZ**
@@ -3861,7 +3860,7 @@ As mudanças de controle societário dessas empresas devem ser comunicadas ao Co
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a propriedade de empresa jornalística e de radiodifusão); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: brasileiros natos ou naturalizados há mais de dez); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: brasileiros natos ou naturalizados há mais de dez)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3876,7 +3875,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 1911 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 1908 bytes · referências 0
 - **Motivo da seleção:** Visao geral: outorga e renovacao pelo Executivo, apreciacao do Congresso, quorum para nao renovacao, eficacia, cancelamento judicial e prazos.
 
 **O QUE DIZ**
@@ -3911,7 +3910,7 @@ O quórum de dois quintos é exigido para não renovar, e não para renovar. O c
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aprovação de no mínimo dois quintos do congresso)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -3921,12 +3920,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 224 — Conselho de Comunicação Social
 
-- **TARGET:** `CF88:ART.224` · `ENTENDA/CF88:ART.224/BASE/1`
+- **TARGET:** `CF88:ART.224` · `ENTENDA/CF88:ART.224/BASE/2`
 - **DISPLAY TITLE:** Art. 224 — Conselho de Comunicação Social
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 131 palavras · 1060 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 200 palavras · 1594 bytes · referências 0
 - **Motivo da seleção:** Visao geral: orgao auxiliar instituido pelo Congresso Nacional para os temas do capitulo.
 
 **O QUE DIZ**
@@ -3935,11 +3934,7 @@ O art. 224 manda o Congresso Nacional instituir, como órgão auxiliar e na form
 
 **O QUE SIGNIFICA**
 
-O Conselho de Comunicação Social é um órgão de apoio ao Congresso Nacional nos temas do capítulo da comunicação social, que vão da liberdade de expressão à propriedade dos meios e às concessões de rádio e televisão.
-
-Ele é auxiliar: oferece estudos e opiniões, mas não decide no lugar do Congresso.
-
-O artigo não fixa sua composição nem suas atribuições, que ficam a cargo da lei.
+O art. 224 cria o Conselho de Comunicação Social como órgão auxiliar do Congresso Nacional para os efeitos do capítulo constitucional dedicado à comunicação social. O próprio dispositivo não apresenta a composição do Conselho, não enumera competências específicas e não explica como será seu funcionamento. Esses elementos ficam para a lei. Por isso, a explicação do artigo não deve atribuir ao Conselho tarefas concretas que o texto constitucional não descreve, ainda que determinadas funções possam existir na legislação que o regulamenta. O núcleo do dispositivo é mais simples: a Constituição prevê a existência desse Conselho, instituído por lei, e o coloca em posição de auxílio ao Congresso Nacional nessa matéria. Para saber quem o integra, como seus membros são escolhidos, quais procedimentos adota e quais atribuições exerce na prática, é necessário consultar a legislação correlata.
 
 **EXEMPLO PRÁTICO**
 
@@ -3959,7 +3954,7 @@ Antes de votar um projeto sobre propaganda infantil na televisão, o Congresso p
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano EXTERNAL_FUNCTION_ATTRIBUTION (fila A) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_MIN_LENGTH) (seções: o_que_significa)
 
 ---
 
@@ -3976,7 +3971,7 @@ Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.225`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 327 palavras · 2609 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 327 palavras · 2606 bytes · referências 0
 - **Motivo da seleção:** Bloco: as oito incumbencias do poder publico para tornar efetivo o direito ao meio ambiente equilibrado; complementa a visao geral aprovada do art. 225 sem repeti-la.
 
 **O QUE DIZ**
@@ -4014,7 +4009,7 @@ A proibição de crueldade com animais do inciso VII deve ser lida junto com o �
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a diversidade e a integridade do patrimônio genético)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-11, MB08-HFR-12
 
 ---
 
@@ -4029,7 +4024,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2034 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 2031 bytes · referências 0
 - **Motivo da seleção:** Visao geral: protecao especial da familia, casamento, entidades familiares, igualdade, divorcio, planejamento familiar e violencia domestica.
 
 **O QUE DIZ**
@@ -4068,7 +4063,7 @@ A união estável tem explicação própria. O alcance atual das formas de famí
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a comunidade formada por qualquer dos pais e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -4079,7 +4074,7 @@ A união estável tem explicação própria. O alcance atual das formas de famí
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.226`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1684 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1681 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: reconhecimento da uniao estavel como entidade familiar e dever da lei de facilitar sua conversao em casamento; alcance atual depende da interpretacao constitucional.
 
 **O QUE DIZ**
@@ -4111,7 +4106,7 @@ A leitura isolada da expressão entre o homem e a mulher não basta para saber q
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união estável entre o homem e a); PARENT_REPETITION (*: CF88:ART.226: 0.206)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -4126,7 +4121,7 @@ Sem explicação própria: 18 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 266 palavras · 2058 bytes · referências 3
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 266 palavras · 2055 bytes · referências 3
 - **Motivo da seleção:** Visao geral: dever compartilhado com absoluta prioridade, direitos assegurados e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -4164,23 +4159,23 @@ O jovem foi incluído no artigo ao lado da criança e do adolescente. Quem é co
 
 **WARNINGS:** ABSOLUTE_CLAIM (o_que_diz: absoluta); ABSOLUTE_CLAIM (o_que_significa: absoluta); ABSOLUTE_CLAIM (exemplo_pratico: absoluta); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de negligência discriminação exploração violência crueldade ); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: o abuso a violência e a exploração sexual); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao decidir entre ampliar uma praça e construir uma creche co)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-13
 
 ---
 
 ### Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens
 
-- **TARGET:** `CF88:ART.227:PAR.3` · `ENTENDA/CF88:ART.227:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.227:PAR.3` · `ENTENDA/CF88:ART.227:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.227`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2216 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 295 palavras · 2283 bytes · referências 0
 - **Motivo da seleção:** Bloco: os sete aspectos da protecao especial (idade para trabalho, direitos trabalhistas, escola, garantias processuais, medida privativa de liberdade, acolhimento e dependencia quimica).
 
 **O QUE DIZ**
 
-O § 3º lista sete aspectos da proteção especial: idade mínima de quatorze anos para começar a trabalhar, observado o art. 7º, XXXIII; garantia de direitos previdenciários e trabalhistas; acesso do trabalhador adolescente e jovem à escola; conhecimento pleno e formal da acusação de ato infracional, igualdade entre as partes no processo e defesa técnica por profissional habilitado; observância da brevidade, da excepcionalidade e da condição de pessoa em desenvolvimento ao aplicar medida privativa de liberdade; estímulo público, nos termos da lei, inclusive por assistência jurídica, incentivos fiscais e subsídios, ao acolhimento por guarda de criança ou adolescente órfão ou abandonado; e programas de prevenção e atendimento especializado para dependentes de drogas.
+O § 3º lista sete aspectos da proteção especial: idade mínima de quatorze anos para começar a trabalhar, observado o art. 7º, XXXIII; garantia de direitos previdenciários e trabalhistas; acesso do trabalhador adolescente e jovem à escola; conhecimento pleno e formal da acusação de ato infracional, igualdade entre as partes no processo e defesa técnica por profissional habilitado; observância da brevidade, da excepcionalidade e da condição de pessoa em desenvolvimento ao aplicar medida privativa de liberdade; estímulo público, nos termos da lei, inclusive por assistência jurídica, incentivos fiscais e subsídios, ao acolhimento por guarda de criança ou adolescente órfão ou abandonado; e programas voltados à prevenção e ao atendimento especializado de crianças, adolescentes e jovens com dependência de entorpecentes e drogas afins.
 
 **O QUE SIGNIFICA**
 
@@ -4214,7 +4209,7 @@ As medidas aplicáveis ao adolescente e o procedimento estão na legislação tu
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: acesso do trabalhador adolescente e jovem à escola); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ele deve ser formalmente informado da acusação e ter defesa )
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano ENUMERATION_SCOPE_LOSS (fila C) em o_que_diz; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY) (seções: o_que_diz)
 
 ---
 
@@ -4225,7 +4220,7 @@ As medidas aplicáveis ao adolescente e o procedimento estão na legislação tu
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.227`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 137 palavras · 1180 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 137 palavras · 1177 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: mesmos direitos e qualificacoes para filhos havidos ou nao do casamento e adotivos, com proibicao de designacoes discriminatorias.
 
 **O QUE DIZ**
@@ -4259,7 +4254,7 @@ A igualdade alcança direitos e também a forma de designar os filhos em documen
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4274,7 +4269,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 161 palavras · 1501 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 161 palavras · 1498 bytes · referências 0
 - **Motivo da seleção:** Visao geral: menores de dezoito anos sao penalmente inimputaveis e sujeitos a legislacao especial.
 
 **O QUE DIZ**
@@ -4308,7 +4303,7 @@ Inimputabilidade penal não é impunidade: a resposta à conduta segue a legisla
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -4323,7 +4318,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 160 palavras · 1241 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1238 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever dos pais de assistir, criar e educar os filhos menores e dos filhos maiores de amparar os pais.
 
 **O QUE DIZ**
@@ -4359,7 +4354,7 @@ O dever dos filhos se refere aos maiores e às situações de velhice, carência
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4374,7 +4369,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1364 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 176 palavras · 1361 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de amparo as pessoas idosas, programas executados nos lares e gratuidade do transporte coletivo urbano aos maiores de sessenta e cinco anos.
 
 **O QUE DIZ**
@@ -4408,7 +4403,7 @@ A gratuidade do § 2º trata dos transportes coletivos urbanos. Outras vantagens
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4418,17 +4413,17 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 231 — Direitos dos povos indígenas
 
-- **TARGET:** `CF88:ART.231` · `ENTENDA/CF88:ART.231/BASE/1`
+- **TARGET:** `CF88:ART.231` · `ENTENDA/CF88:ART.231/BASE/2`
 - **DISPLAY TITLE:** Art. 231 — Direitos dos povos indígenas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 326 palavras · 2601 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 333 palavras · 2630 bytes · referências 1
 - **Motivo da seleção:** Visao geral: reconhecimento da organizacao social e dos direitos originarios sobre as terras, dever de demarcacao da Uniao e regime das terras indigenas.
 
 **O QUE DIZ**
 
-O art. 231 reconhece a organização social, os costumes, as línguas, as crenças e as tradições dos índios, e os seus direitos originários sobre as terras de ocupação tradicional, cabendo à União demarcá-las e proteger e fazer respeitar todos os seus bens. Os parágrafos definem essas terras e as destinam à posse permanente dos índios, com usufruto exclusivo das riquezas naturais ali existentes. Também condicionam o aproveitamento de recursos hídricos e minerais à autorização do Congresso, tornam as terras inalienáveis e indisponíveis e os direitos imprescritíveis e proíbem a remoção dos grupos, salvo em hipóteses excepcionais. Por fim, anulam os atos de ocupação e domínio dessas terras e afastam a regra do art. 174, §§ 3º e 4º.
+O art. 231 reconhece a organização social, os costumes, as línguas, as crenças e as tradições dos índios, e os seus direitos originários sobre as terras de ocupação tradicional, cabendo à União demarcá-las e proteger e fazer respeitar todos os seus bens. Os parágrafos definem essas terras e as destinam à posse permanente dos índios, com usufruto exclusivo das riquezas encontradas no solo, nos rios e nos lagos dessas terras. Também condicionam o aproveitamento de recursos hídricos e minerais à autorização do Congresso, tornam as terras inalienáveis e indisponíveis e os direitos imprescritíveis e proíbem a remoção dos grupos, salvo em hipóteses excepcionais. Por fim, anulam os atos de ocupação e domínio dessas terras e afastam a regra do art. 174, §§ 3º e 4º.
 
 **O QUE SIGNIFICA**
 
@@ -4461,7 +4456,7 @@ O texto oficial traz nota de remissão a lei de 2023 no caput. Os critérios par
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: proteger e fazer respeitar todos os seus bens); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: das riquezas naturais do solo dos rios e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano OVERBROAD_USUFRUCT_SCOPE (fila B) em o_que_diz; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY) (seções: o_que_diz)
 
 ---
 
@@ -4472,7 +4467,7 @@ O texto oficial traz nota de remissão a lei de 2023 no caput. Os critérios par
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.231`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 204 palavras · 1830 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 204 palavras · 1827 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: definicao constitucional das terras tradicionalmente ocupadas pelos indios (quatro elementos); criterios temporais de ocupacao dependem de interpretacao e de legislacao externa.
 
 **O QUE DIZ**
@@ -4506,7 +4501,7 @@ Se a ocupação tradicional precisa ser verificada em uma data determinada é ob
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D); flags fechadas por decisao humana explicita: MB08-HFR-20
 
 ---
 
@@ -4517,7 +4512,7 @@ Se a ocupação tradicional precisa ser verificada em uma data determinada é ob
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.231`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1503 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 176 palavras · 1500 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: aproveitamento hidrico e energetico e mineracao em terras indigenas dependem de autorizacao do Congresso, oitiva das comunidades e participacao nos resultados.
 
 **O QUE DIZ**
@@ -4552,7 +4547,7 @@ O texto exige que as comunidades sejam ouvidas; os efeitos dessa oitiva sobre a 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aproveitamento dos recursos hídricos incluídos os potenciais)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4567,7 +4562,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 145 palavras · 1259 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 145 palavras · 1256 bytes · referências 0
 - **Motivo da seleção:** Visao geral: indios, comunidades e organizacoes sao partes legitimas em juizo, com intervencao do Ministerio Publico em todos os atos.
 
 **O QUE DIZ**
@@ -4601,7 +4596,7 @@ A intervenção do Ministério Público acompanha a atuação da comunidade; nã
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: juízo em defesa de seus direitos e interesses)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4620,7 +4615,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1383 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 176 palavras · 1380 bytes · referências 0
 - **Motivo da seleção:** Visao geral: vedacao a Uniao de assumir encargos de inativos e da divida em decorrencia da criacao de Estado.
 
 **O QUE DIZ**
@@ -4654,7 +4649,7 @@ A regra se aplica quando há criação de Estado. O art. 235 traz outras normas 
 
 **WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Pessoal inativo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4669,7 +4664,7 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 272 palavras · 2010 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 272 palavras · 2007 bytes · referências 0
 - **Motivo da seleção:** Visao geral: normas basicas aplicaveis nos dez primeiros anos da criacao de Estado (composicao de orgaos, nomeacoes, encargos e limite de pessoal).
 
 **O QUE DIZ**
@@ -4706,7 +4701,7 @@ As regras são temporárias para cada novo Estado: valem nos dez primeiros anos 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-14
 
 ---
 
@@ -4716,12 +4711,12 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 236 — Serviços notariais e de registro
 
-- **TARGET:** `CF88:ART.236` · `ENTENDA/CF88:ART.236/BASE/1`
+- **TARGET:** `CF88:ART.236` · `ENTENDA/CF88:ART.236/BASE/2`
 - **DISPLAY TITLE:** Art. 236 — Serviços notariais e de registro
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1639 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1684 bytes · referências 0
 - **Motivo da seleção:** Visao geral: exercicio privado por delegacao, lei sobre responsabilidade e fiscalizacao judicial, emolumentos e concurso publico.
 
 **O QUE DIZ**
@@ -4740,7 +4735,7 @@ O texto também impede que um cartório fique muito tempo sem titular escolhido 
 
 **EXEMPLO PRÁTICO**
 
-O titular de um cartório de registro de imóveis se aposenta. O tribunal deve abrir concurso para preencher a vaga em até seis meses.
+O titular de um cartório de registro de imóveis se aposenta. A serventia não pode permanecer vaga por mais de seis meses sem que seja aberto concurso de provimento ou de remoção.
 
 **ATENÇÃO**
 
@@ -4756,9 +4751,9 @@ Os valores cobrados pelos cartórios, chamados emolumentos, seguem normas gerais
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: abertura de concurso de provimento ou de remoção); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O tribunal deve abrir concurso para preencher a vaga em até )
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: abertura de concurso de provimento ou de remoção)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano ACTOR_ATTRIBUTION_NOT_IN_TEXT (fila A) em exemplo_pratico (seções: exemplo_pratico)
 
 ---
 
@@ -4773,7 +4768,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 134 palavras · 1380 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 134 palavras · 1377 bytes · referências 0
 - **Motivo da seleção:** Visao geral: fiscalizacao e controle do comercio exterior atribuidos ao Ministerio da Fazenda.
 
 **O QUE DIZ**
@@ -4807,7 +4802,7 @@ O nome atual do órgão responsável pela área fazendária é dado instituciona
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a fiscalização e o controle sobre o comércio)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4822,7 +4817,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 149 palavras · 1197 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 149 palavras · 1194 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei ordena a venda e revenda de combustiveis de petroleo, alcool carburante e combustiveis renovaveis.
 
 **O QUE DIZ**
@@ -4856,7 +4851,7 @@ O artigo trata da venda e revenda; a pesquisa, a lavra e o refino do petróleo s
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4871,7 +4866,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 298 palavras · 2394 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 298 palavras · 2391 bytes · referências 0
 - **Motivo da seleção:** Visao geral: destinacao da arrecadacao do PIS e do PASEP ao seguro-desemprego, a outras acoes da previdencia e ao abono, parcela minima para o BNDES, patrimonios acumulados, contribuicao adicional por rotatividade e avaliacao.
 
 **O QUE DIZ**
@@ -4908,7 +4903,7 @@ O ADCT prevê a extinção da contribuição para o PIS a partir de 2027, condic
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4919,7 +4914,7 @@ O ADCT prevê a extinção da contribuição para o PIS a partir de 2027, condic
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.239:PAR.3-A`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.239`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2120 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 276 palavras · 2117 bytes · referências 0
 - **Motivo da seleção:** Bloco: regra do abono anual de um salario minimo, limite de remuneracao com correcao pelo INPC a partir de 2026 (§ 3º) e piso desse limite (§ 3º-A).
 
 **O QUE DIZ**
@@ -4953,7 +4948,7 @@ Em 5 de outubro de 2026, a correção do limite pelo INPC já se aplica, nos ter
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a partir de 2026 pela variação anual do)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -4968,7 +4963,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 162 palavras · 1517 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 162 palavras · 1514 bytes · referências 0
 - **Motivo da seleção:** Visao geral: ressalva do art. 195 para as contribuicoes compulsorias dos empregadores destinadas as entidades privadas de servico social e formacao profissional.
 
 **O QUE DIZ**
@@ -5002,7 +4997,7 @@ O artigo fala em contribuições atuais, isto é, as que existiam quando a Const
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: entidades privadas de serviço social e de formação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -5017,7 +5012,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1464 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 170 palavras · 1461 bytes · referências 0
 - **Motivo da seleção:** Visao geral: disciplina por lei dos consorcios publicos e convenios de cooperacao e gestao associada de servicos publicos.
 
 **O QUE DIZ**
@@ -5051,7 +5046,7 @@ Cada ente participante precisa de lei que discipline sua participação, conform
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: os consórcios públicos e os convênios de cooperação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5066,7 +5061,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 209 palavras · 1699 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 209 palavras · 1696 bytes · referências 0
 - **Motivo da seleção:** Visao geral: instituicoes oficiais anteriores a 1988 nao mantidas por recursos publicos fora da gratuidade, ensino da historia do Brasil e Colegio Pedro II.
 
 **O QUE DIZ**
@@ -5100,7 +5095,7 @@ A exceção exige os três requisitos ao mesmo tempo: criação por lei estadual
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: conta as contribuições das diferentes culturas e etnias); TERM_LOW_UTILITY (palavras_dificeis: Preponderantemente)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5115,7 +5110,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2097 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 2094 bytes · referências 1
 - **Motivo da seleção:** Visao geral: expropriacao sem indenizacao de propriedades com culturas ilegais de psicotropicos ou trabalho escravo e confisco de bens ligados ao trafico e ao trabalho escravo.
 
 **O QUE DIZ**
@@ -5152,7 +5147,7 @@ A expropriação observa, no que couber, as garantias do art. 5º, como o devido
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a fundo especial com destinação específica na forma)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -5167,7 +5162,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1298 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 157 palavras · 1295 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei de adaptacao dos logradouros, edificios publicos e veiculos de transporte coletivo existentes, conforme o art. 227, § 2º.
 
 **O QUE DIZ**
@@ -5201,7 +5196,7 @@ Os prazos e as normas técnicas da adaptação são definidos em lei.
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um prédio público antigo, sem rampa nem elevador, precisa se)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5211,12 +5206,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso
 
-- **TARGET:** `CF88:ART.245` · `ENTENDA/CF88:ART.245/BASE/1`
+- **TARGET:** `CF88:ART.245` · `ENTENDA/CF88:ART.245/BASE/2`
 - **DISPLAY TITLE:** Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 175 palavras · 1515 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 165 palavras · 1463 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei sobre assistencia do poder publico a herdeiros e dependentes carentes de vitimas de crime doloso, sem prejuizo da responsabilidade do autor.
 
 **O QUE DIZ**
@@ -5225,11 +5220,11 @@ O art. 245 manda a lei dispor sobre as hipóteses e as condições em que o pode
 
 **O QUE SIGNIFICA**
 
-Quando alguém morre ou sofre dano em razão de crime intencional, sua família pode ficar desamparada.
+Quando uma pessoa é vitimada por crime doloso, seus herdeiros e dependentes carentes podem ficar desamparados.
 
-O artigo prevê que o poder público dê assistência aos herdeiros e dependentes carentes, nos casos e condições que a lei definir.
+O artigo prevê que o poder público lhes dê assistência, nos casos e condições que a lei definir.
 
-Essa assistência não livra o autor do crime: ele continua obrigado a indenizar os danos que causou.
+Essa assistência não afasta a responsabilidade civil do autor do ilícito.
 
 **EXEMPLO PRÁTICO**
 
@@ -5250,7 +5245,7 @@ O artigo depende de lei para produzir efeitos concretos. A existência e o conte
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: assistência aos herdeiros e dependentes carentes de pessoas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano OVER_NARROW_PARAPHRASE (fila B) em o_que_significa (seções: o_que_significa)
 
 ---
 
@@ -5260,12 +5255,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 246 — Limite às medidas provisórias
 
-- **TARGET:** `CF88:ART.246` · `ENTENDA/CF88:ART.246/BASE/1`
+- **TARGET:** `CF88:ART.246` · `ENTENDA/CF88:ART.246/BASE/2`
 - **DISPLAY TITLE:** Art. 246 — Limite às medidas provisórias
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1655 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 220 palavras · 1662 bytes · referências 0
 - **Motivo da seleção:** Visao geral: vedacao de medida provisoria para regulamentar artigo alterado por emenda promulgada no periodo indicado.
 
 **O QUE DIZ**
@@ -5282,7 +5277,7 @@ Para artigos alterados por emendas posteriores, a vedação deste artigo não se
 
 **EXEMPLO PRÁTICO**
 
-Um artigo da Constituição teve a redação alterada por emenda promulgada em 1998 (ano ilustrativo, dentro do período). Para regulamentá-lo, o Presidente não pode editar medida provisória; é preciso lei.
+Um artigo da Constituição teve a redação alterada por emenda promulgada em 1998 (ano ilustrativo, dentro do período). Para regulamentá-lo, o Presidente não pode usar medida provisória com fundamento nesse artigo.
 
 **ATENÇÃO**
 
@@ -5299,7 +5294,7 @@ O período de emendas alcançado é fechado: de 1º de janeiro de 1995 até a pr
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: artigo da constituição cuja redação tenha sido alterada)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano UNSUPPORTED_LEGISLATIVE_CONSEQUENCE (fila A) em exemplo_pratico (seções: exemplo_pratico)
 
 ---
 
@@ -5314,7 +5309,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1723 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 217 palavras · 1720 bytes · referências 0
 - **Motivo da seleção:** Visao geral: criterios e garantias especiais para perda do cargo de servidor estavel em atividade exclusiva de Estado e processo administrativo na insuficiencia de desempenho.
 
 **O QUE DIZ**
@@ -5349,7 +5344,7 @@ Quais carreiras exercem atividades exclusivas de Estado é definido em lei; os e
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -5364,7 +5359,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 201 palavras · 1510 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 201 palavras · 1507 bytes · referências 0
 - **Motivo da seleção:** Visao geral: beneficios pagos pelo orgao do regime geral, ainda que a conta do Tesouro, e os nao sujeitos ao limite do regime observam o teto do art. 37, XI.
 
 **O QUE DIZ**
@@ -5398,7 +5393,7 @@ O limite aplicado é o do art. 37, XI, e não o teto comum de benefícios do reg
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os benefícios pagos a qualquer título pelo órgão)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5413,7 +5408,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 169 palavras · 1377 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 169 palavras · 1374 bytes · referências 0
 - **Motivo da seleção:** Visao geral: faculdade dos entes de constituir fundos para pagamento de aposentadorias e pensoes de seus servidores, mediante lei.
 
 **O QUE DIZ**
@@ -5447,7 +5442,7 @@ Os fundos complementam os recursos do tesouro do ente; não os substituem.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5462,7 +5457,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 178 palavras · 1643 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 178 palavras · 1640 bytes · referências 0
 - **Motivo da seleção:** Visao geral: faculdade da Uniao de constituir fundo de bens, direitos e ativos para pagamento dos beneficios do regime geral, mediante lei.
 
 **O QUE DIZ**
@@ -5496,7 +5491,7 @@ A União cria por lei um fundo do regime geral e transfere a ele imóveis públi
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: benefícios concedidos pelo regime geral de previdência socia)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5511,7 +5506,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1752 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1749 bytes · referências 0
 - **Motivo da seleção:** Visao geral historico-pedagogica claramente marcada: a revisao constitucional prevista para cinco anos apos a promulgacao ja foi realizada (Emendas de Revisao de 1994, anotadas na fonte canonica); distingue revisao de emenda.
 
 **O QUE DIZ**
@@ -5546,7 +5541,7 @@ A regra já produziu seus efeitos. Se uma nova revisão nos moldes deste artigo 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da maioria absoluta dos membros do congresso nacional)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -5561,7 +5556,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 151 palavras · 1424 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 151 palavras · 1421 bytes · referências 0
 - **Motivo da seleção:** Visao geral: diretriz de politica externa ainda operante (sem prazo), de atuacao do Brasil pela formacao de tribunal internacional de direitos humanos.
 
 **O QUE DIZ**
@@ -5595,7 +5590,7 @@ O artigo indica uma direção para a atuação do país; ele não cria, por si, 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: formação de um tribunal internacional dos direitos humanos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -5610,7 +5605,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 305 palavras · 2582 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 305 palavras · 2579 bytes · referências 0
 - **Motivo da seleção:** Visao geral: anistia concedida na promulgacao aos atingidos por atos de excecao de motivacao politica (1946 a 1988), com efeitos que continuam a ser reconhecidos; parte das regras e de efeito unico.
 
 **O QUE DIZ**
@@ -5645,7 +5640,7 @@ A concessão da anistia ocorreu na promulgação, mas os direitos dela decorrent
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -5660,7 +5655,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 257 palavras · 2098 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 257 palavras · 2095 bytes · referências 0
 - **Motivo da seleção:** Visao geral: prazos de implantacao ja decorridos e regras de limites que ainda podem ter efeito (competencia supletiva da Uniao e homologacao dos limites do Acre).
 
 **O QUE DIZ**
@@ -5697,7 +5692,7 @@ Os prazos já decorreram. Quais divisas ainda estão em disputa e como a compet�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -5712,7 +5707,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 2044 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 2041 bytes · referências 0
 - **Motivo da seleção:** Visao geral: reducao imediata, na promulgacao, de remuneracoes acima dos limites constitucionais e protecao das acumulacoes de cargos de medicos e profissionais de saude entao existentes.
 
 **O QUE DIZ**
@@ -5747,7 +5742,7 @@ A redução do caput ocorreu na promulgação. O texto oficial traz, no caput, n
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de dois cargos ou empregos privativos de médico)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -5762,7 +5757,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 238 palavras · 1747 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 238 palavras · 1744 bytes · referências 0
 - **Motivo da seleção:** Visao geral: convalidacao, apos cinco anos, de atos administrativos viciados praticados na instalacao do Tocantins entre 1989 e 1994, salvo ma-fe; regra de redacao recente com efeito atual.
 
 **O QUE DIZ**
@@ -5797,7 +5792,7 @@ A convalidação não alcança quem agiu de má-fé, desde que ela seja comprova
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -5812,7 +5807,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 266 palavras · 2130 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 266 palavras · 2127 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estabilidade concedida na promulgacao a servidores sem concurso com cinco anos continuados de exercicio, e suas exclusoes; situacao consolidada que continua a produzir efeitos.
 
 **O QUE DIZ**
@@ -5849,7 +5844,7 @@ A estabilidade deste artigo não torna o servidor efetivo no cargo. O requisito 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos professores de nível superior nos termos da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao B)
 
 ---
 
@@ -5864,7 +5859,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2305 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 268 palavras · 2302 bytes · referências 0
 - **Motivo da seleção:** Visao geral: revogacao, em cento e oitenta dias prorrogaveis por lei, das normas que delegavam ao Executivo competencias do Congresso, e regime dos decretos-leis pendentes na promulgacao.
 
 **O QUE DIZ**
@@ -5899,7 +5894,7 @@ O alcance concreto da revogação depende das leis que prorrogaram o prazo e da 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 3 de setembro de 1988 e a promulgação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -5914,7 +5909,7 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 283 palavras · 2399 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 283 palavras · 2396 bytes · referências 0
 - **Motivo da seleção:** Visao geral: regras de implantacao do Superior Tribunal de Justica e dos TRFs (de efeito ja produzido) e o § 11, que cria os TRFs da 6ª a 9ª Regiao, com anotacao de controle de constitucionalidade na fonte.
 
 **O QUE DIZ**
@@ -5949,7 +5944,7 @@ Não se deve concluir apenas pela leitura do § 11 que os quatro tribunais nele 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aproveitamento dos ministros do tribunal federal de recursos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D); flags fechadas por decisao humana explicita: MB08-HFR-21
 
 ---
 
@@ -5964,7 +5959,7 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 292 palavras · 2407 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 292 palavras · 2404 bytes · referências 0
 - **Motivo da seleção:** Visao geral: regras de passagem para o sistema tributario da Constituicao (prazos ja exauridos) e clausulas com efeito duradouro, como a aplicacao da legislacao anterior compativel (§ 5º).
 
 **O QUE DIZ**
@@ -5999,7 +5994,7 @@ As datas e percentuais de implantação do artigo já produziram seus efeitos. O
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a aplicação da legislação anterior no que não)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6014,7 +6009,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 256 palavras · 2037 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 256 palavras · 2034 bytes · referências 0
 - **Motivo da seleção:** Visao geral: implantacao progressiva da regionalizacao do orcamento (prazo exaurido) e regras provisorias de prazos do PPA, da LDO e da LOA ate a lei complementar do art. 165, § 9º.
 
 **O QUE DIZ**
@@ -6049,7 +6044,7 @@ A aplicação do § 2º está condicionada à ausência da lei complementar do a
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6060,7 +6055,7 @@ A aplicação do § 2º está condicionada à ausência da lei complementar do a
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `ADCT:ART.35`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 245 palavras · 1844 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 245 palavras · 1841 bytes · referências 0
 - **Motivo da seleção:** Bloco: prazos de envio e de devolucao para sancao dos tres projetos orcamentarios da Uniao, aplicaveis ate a lei complementar do art. 165, § 9º.
 
 **O QUE DIZ**
@@ -6094,7 +6089,7 @@ Os prazos valem enquanto a lei complementar do art. 165, § 9º, não dispuser s
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do primeiro exercício financeiro e devolvido para sanção); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para um exercício financeiro que termina em 31 de dezembro ()
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6109,7 +6104,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 280 palavras · 2173 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 280 palavras · 2170 bytes · referências 0
 - **Motivo da seleção:** Visao geral: limite de sessenta e cinco por cento ate a lei complementar do art. 169, retorno gradual ao limite e contabilizacao escalonada das despesas com os pisos da enfermagem.
 
 **O QUE DIZ**
@@ -6143,7 +6138,7 @@ Se o caput ainda se aplica depende da existência da lei complementar do art. 16
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6158,7 +6153,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 1926 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 250 palavras · 1923 bytes · referências 0
 - **Motivo da seleção:** Visao geral: manutencao da Zona Franca de Manaus por vinte e cinco anos a partir da promulgacao, prazo acrescido pelos arts. 92 e 92-A do ADCT, e reserva de lei federal para os criterios de aprovacao de projetos.
 
 **O QUE DIZ**
@@ -6192,7 +6187,7 @@ O prazo atual da Zona Franca resulta da soma dos arts. 40, 92 e 92-A do ADCT. O 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a zona franca de manaus com suas características)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6207,7 +6202,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1452 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 189 palavras · 1449 bytes · referências 0
 - **Motivo da seleção:** Visao geral: percentuais minimos de aplicacao regional dos recursos federais de irrigacao durante quarenta anos e reserva para agricultura familiar.
 
 **O QUE DIZ**
@@ -6241,7 +6236,7 @@ O texto não indica o termo inicial do prazo de 40 anos. Em 5 de outubro de 2026
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6256,7 +6251,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1885 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 217 palavras · 1882 bytes · referências 0
 - **Motivo da seleção:** Visao geral: correcao monetaria ininterrupta de creditos contra entidades em intervencao ou liquidacao extrajudicial, mesmo convertidas em falencia, e operacoes alcancadas.
 
 **O QUE DIZ**
@@ -6291,7 +6286,7 @@ O artigo trata de correção monetária; juros e a ordem de pagamento dos credor
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: efetivo pagamento sem interrupção ou suspensão os créditos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6301,23 +6296,23 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 49 — Enfiteuse
 
-- **TARGET:** `ADCT:ART.49` · `ENTENDA/ADCT:ART.49/BASE/1`
+- **TARGET:** `ADCT:ART.49` · `ENTENDA/ADCT:ART.49/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 49 — Enfiteuse
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 1894 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 260 palavras · 1966 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei sobre enfiteuse em imoveis urbanos, remicao pelos foreiros, protecao dos ocupantes e manutencao da enfiteuse nos terrenos de marinha.
 
 **O QUE DIZ**
 
-O art. 49 do ADCT manda a lei dispor sobre a enfiteuse em imóveis urbanos e faculta aos foreiros, se ela for extinta, remir o aforamento adquirindo o domínio direto, conforme os contratos. Sem cláusula contratual, valem os critérios da legislação especial dos imóveis da União. Os direitos dos atuais ocupantes inscritos ficam assegurados por outra modalidade de contrato. A enfiteuse continua a ser aplicada aos terrenos de marinha e acrescidos, situados na faixa de segurança a partir da orla. Remido o foro, o antigo titular deve entregar a documentação ao registro de imóveis em noventa dias.
+O art. 49 do ADCT manda a lei dispor sobre a enfiteuse em imóveis urbanos e faculta aos foreiros, se ela for extinta, remir o aforamento adquirindo o domínio direto, conforme os contratos. Sem cláusula contratual, valem os critérios da legislação especial dos imóveis da União. Os direitos dos atuais ocupantes inscritos ficam assegurados por outra modalidade de contrato. A enfiteuse continua a ser aplicada aos terrenos de marinha e acrescidos, situados na faixa de segurança a partir da orla. Remido o foro, o antigo titular deve entregar a documentação ao registro de imóveis em noventa dias, sob pena de responsabilidade.
 
 **O QUE SIGNIFICA**
 
 Na enfiteuse, o domínio do imóvel se divide: um titular tem o domínio direto e outro, o foreiro, usa o imóvel pagando uma prestação anual, o foro.
 
-O artigo prepara a extinção dessa figura nos imóveis urbanos, permitindo que o foreiro se torne proprietário pleno ao resgatar o aforamento.
+O artigo disciplina a hipótese de extinção da enfiteuse em imóveis urbanos e permite que o foreiro, nessa situação, remia o aforamento e adquira o domínio direto conforme o contrato.
 
 Nos terrenos de marinha, porém, a enfiteuse continua aplicável.
 
@@ -6341,7 +6336,7 @@ A disciplina concreta da enfiteuse e de sua extinção está na lei civil e na l
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: acrescidos situados na faixa de segurança a partir)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano TELEOLOGY_AND_OMITTED_CONSEQUENCE (fila B) em o_que_diz, o_que_significa (seções: o_que_diz, o_que_significa)
 
 ---
 
@@ -6356,7 +6351,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 193 palavras · 1719 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 193 palavras · 1716 bytes · referências 0
 - **Motivo da seleção:** Visao geral: vedacoes a novas agencias de instituicoes estrangeiras e ao aumento de participacao estrangeira ate as condicoes do art. 192, e excecoes por acordos, reciprocidade ou interesse do Governo.
 
 **O QUE DIZ**
@@ -6390,7 +6385,7 @@ A regra vale até que sejam fixadas as condições do art. 192. Se e como isso o
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até que sejam fixadas as condições do art)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6405,7 +6400,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 2110 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 273 palavras · 2107 bytes · referências 0
 - **Motivo da seleção:** Visao geral: direitos assegurados ao ex-combatente que participou de operacoes belicas na Segunda Guerra Mundial e a seus dependentes; direitos de efeito continuado.
 
 **O QUE DIZ**
@@ -6440,7 +6435,7 @@ A qualificação de ex-combatente segue a lei indicada no próprio texto. A pens
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos vinte e cinco anos de serviço efetivo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-15
 
 ---
 
@@ -6455,7 +6450,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1479 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 189 palavras · 1476 bytes · referências 0
 - **Motivo da seleção:** Visao geral: pensao mensal vitalicia de dois salarios minimos aos seringueiros carentes recrutados ou que contribuiram para o esforco de guerra, transferivel aos dependentes carentes.
 
 **O QUE DIZ**
@@ -6489,7 +6484,7 @@ O art. 54-A prevê, para esses mesmos seringueiros, uma indenização em parcela
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos seringueiros que atendendo a apelo do governo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6504,7 +6499,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 144 palavras · 1228 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 144 palavras · 1225 bytes · referências 0
 - **Motivo da seleção:** Visao geral: indenizacao em parcela unica aos seringueiros do art. 54 do ADCT, no valor fixado no texto.
 
 **O QUE DIZ**
@@ -6538,7 +6533,7 @@ O artigo foi incluído depois do texto original, segundo as anotações da fonte
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6553,7 +6548,7 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 1813 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 270 palavras · 1810 bytes · referências 0
 - **Motivo da seleção:** Visao geral: cronograma anual de percentuais minimos da complementacao da Uniao ao Fundeb a partir de 1º de janeiro de 2021, com minimos das parcelas VAAT e de resultados; em 2026 corre o sexto ano.
 
 **O QUE DIZ**
@@ -6587,7 +6582,7 @@ Com o sexto ano em 2026, o cronograma chega ao patamar final previsto na Constit
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a partir de 1 de janeiro de 2021); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Em 2026, sexto ano do cronograma, o orçamento da União deve )
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-16
 
 ---
 
@@ -6602,7 +6597,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 167 palavras · 1475 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 167 palavras · 1472 bytes · referências 0
 - **Motivo da seleção:** Visao geral: revisao dos criterios de distribuicao da complementacao e dos fundos no sexto ano de vigencia e, depois, a cada dez anos.
 
 **O QUE DIZ**
@@ -6636,7 +6631,7 @@ O artigo não informa a data de início da vigência dos fundos; por isso, o ano
 
 **WARNINGS:** TERM_NOT_USED (palavras_dificeis: Revisão periódica)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6651,7 +6646,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 199 palavras · 1624 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 199 palavras · 1621 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de publicar e distribuir gratuitamente o texto integral da Constituicao, sem prazo final.
 
 **O QUE DIZ**
@@ -6687,7 +6682,7 @@ O artigo não define tiragem, formato nem periodicidade das edições. Esses det
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da união dos estados do distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da união dos estados do distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6697,12 +6692,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 68 — Terras das comunidades quilombolas
 
-- **TARGET:** `ADCT:ART.68` · `ENTENDA/ADCT:ART.68/BASE/1`
+- **TARGET:** `ADCT:ART.68` · `ENTENDA/ADCT:ART.68/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 68 — Terras das comunidades quilombolas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1593 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 173 palavras · 1584 bytes · referências 1
 - **Motivo da seleção:** Visao geral: reconhecimento da propriedade definitiva das terras ocupadas por remanescentes das comunidades dos quilombos e dever estatal de titulacao.
 
 **O QUE DIZ**
@@ -6711,13 +6706,13 @@ O art. 68 do ADCT reconhece a propriedade definitiva das terras ocupadas pelos r
 
 **O QUE SIGNIFICA**
 
-O artigo trata a ocupação tradicional das comunidades quilombolas como base de um direito de propriedade, e não de simples posse.
+O artigo garante a propriedade definitiva das terras às comunidades remanescentes de quilombos que ocupem essas áreas e atribui ao Estado o dever de emitir os títulos correspondentes.
 
-O reconhecimento vem da própria Constituição: o título emitido pelo Estado documenta um direito que o texto já declara.
+O direito decorre do próprio texto constitucional; o título formaliza juridicamente essa propriedade.
 
-O dever de titular é do Estado, sem prazo final no texto.
+O artigo não fixa prazo final para a titulação.
 
-A regra se liga à proteção do patrimônio cultural dos grupos formadores da sociedade brasileira, tratada no art. 216 da Constituição.
+O procedimento de identificação, delimitação e emissão dos títulos pertence à legislação correlata.
 
 **EXEMPLO PRÁTICO**
 
@@ -6738,7 +6733,7 @@ O procedimento de identificação, delimitação e titulação está na legisla�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano TERM_NOT_IN_DEVICE (fila A) em o_que_significa; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY) (seções: o_que_significa)
 
 ---
 
@@ -6753,7 +6748,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 160 palavras · 1380 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1377 bytes · referências 0
 - **Motivo da seleção:** Visao geral: permissao para Estados manterem consultorias juridicas separadas das procuradorias, condicionada a situacao existente na promulgacao.
 
 **O QUE DIZ**
@@ -6787,7 +6782,7 @@ A permissão não autoriza criar a separação depois da promulgação: depende 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: consultorias jurídicas separadas de suas procuradorias gerai)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6797,12 +6792,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 76 — Desvinculação de receitas da União
 
-- **TARGET:** `ADCT:ART.76` · `ENTENDA/ADCT:ART.76/BASE/1`
+- **TARGET:** `ADCT:ART.76` · `ENTENDA/ADCT:ART.76/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 76 — Desvinculação de receitas da União
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 224 palavras · 1856 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1844 bytes · referências 0
 - **Motivo da seleção:** Visao geral: desvinculacao de 30% de receitas federais ate 2032, com as excecoes dos paragrafos; §§ 1º e 3º revogados ficam fora.
 
 **O QUE DIZ**
@@ -6813,9 +6808,9 @@ O art. 76 do ADCT libera de vinculação a órgão, fundo ou despesa 30% da arre
 
 Muitas receitas da União nascem com destino obrigatório, chamado vinculação.
 
-O artigo permite que uma fatia dessas receitas, de 30%, seja usada livremente no orçamento até o fim de 2032.
+O artigo permite que uma parcela de 30% das receitas abrangidas seja utilizada sem a vinculação original até o fim de 2032.
 
-Os parágrafos protegem receitas que a Constituição quer manter destinadas, como as da seguridade social e as que pertencem a outros entes.
+Os parágrafos preservam receitas que permanecem excluídas da desvinculação, como as indicadas no próprio artigo.
 
 **EXEMPLO PRÁTICO**
 
@@ -6836,7 +6831,7 @@ A desvinculação tem data final: 31 de dezembro de 2032. Os §§ 1º e 3º est�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: das despesas do regime geral de previdência social)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano DESVINCULATION_NOT_FREE_SPENDING (fila A) em o_que_significa (seções: o_que_significa)
 
 ---
 
@@ -6851,7 +6846,7 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 257 palavras · 1888 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 257 palavras · 1885 bytes · referências 0
 - **Motivo da seleção:** Visao geral: desvinculacao de 30% de receitas estaduais e distritais ate 2032 e excecoes do paragrafo unico.
 
 **O QUE DIZ**
@@ -6885,7 +6880,7 @@ A desvinculação vale até 31 de dezembro de 2032. Ela não reduz os mínimos d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: contribuições previdenciárias e de assistência à saúde dos); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Até 2032, 30% dessa receita pode ser aplicada em outra despe)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -6895,12 +6890,12 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 76-B — Desvinculação de receitas dos Municípios
 
-- **TARGET:** `ADCT:ART.76-B` · `ENTENDA/ADCT:ART.76-B/BASE/1`
+- **TARGET:** `ADCT:ART.76-B` · `ENTENDA/ADCT:ART.76-B/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 76-B — Desvinculação de receitas dos Municípios
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 1966 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 291 palavras · 2065 bytes · referências 0
 - **Motivo da seleção:** Visao geral: desvinculacao de receitas municipais ate 2032 com percentual escalonado (50% ate 2026 e 30% de 2027 a 2032), excecoes do § 1º e uso de superavits do § 2º.
 
 **O QUE DIZ**
@@ -6917,7 +6912,7 @@ O § 2º cria outra flexibilidade: sobras de fundos municipais podem ser redirec
 
 **EXEMPLO PRÁTICO**
 
-Um Município tem receitas com destino fixado em lei. Até o fim de 2026, metade delas pode ser usada livremente; em 2027, essa parcela passa a 30%.
+Um Município tem receita abrangida pelo art. 76-B com destino previamente vinculado. Até o fim de 2026, 50% dessa receita pode ser utilizada sem a vinculação original; de 2027 a 2032, o percentual passa a 30%, ressalvadas as exceções do artigo.
 
 **ATENÇÃO**
 
@@ -6934,7 +6929,7 @@ Os percentuais mudam em 1º de janeiro de 2027. Os superávits do § 2º não po
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: contribuições previdenciárias e de assistência à saúde dos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano DESVINCULATION_NOT_FREE_SPENDING (fila A) em exemplo_pratico (seções: exemplo_pratico)
 
 ---
 
@@ -6949,7 +6944,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 212 palavras · 1796 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 212 palavras · 1793 bytes · referências 0
 - **Motivo da seleção:** Visao geral: instituicao do fundo federal de combate a pobreza, com prazo original ate 2010 e remissao textual a emenda de 2010 cujo conteudo nao esta versionado.
 
 **O QUE DIZ**
@@ -6983,7 +6978,7 @@ A vigência do fundo depois de 2010 depende do conteúdo da emenda indicada na n
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a todos os brasileiros acesso a níveis dignos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -6998,7 +6993,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1852 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 233 palavras · 1849 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de Estados, DF e Municipios instituirem fundos de combate a pobreza e adicionais de ICMS e ISS sobre bens e servicos superfluos.
 
 **O QUE DIZ**
@@ -7032,7 +7027,7 @@ Os produtos e serviços supérfluos são definidos em lei federal, conforme o ar
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: adicional de até dois pontos percentuais na alíquota)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7047,7 +7042,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1378 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1375 bytes · referências 0
 - **Motivo da seleção:** Visao geral: reserva a lei federal da definicao dos produtos e servicos superfluos usados nos arts. 80, II, e 82, § 2º.
 
 **O QUE DIZ**
@@ -7081,7 +7076,7 @@ O artigo cita expressamente o art. 82, § 2º. O § 1º do art. 82, sobre o ICMS
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7096,7 +7091,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1809 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 241 palavras · 1806 bytes · referências 0
 - **Motivo da seleção:** Visao geral: valores supletivos de obrigacoes de pequeno valor (40 e 30 salarios-minimos) ate a publicacao da lei de cada ente, e renuncia ao excedente.
 
 **O QUE DIZ**
@@ -7130,7 +7125,7 @@ A situação de cada ente, isto é, se já publicou sua lei, é dado externo. O 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7145,7 +7140,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 225 palavras · 1714 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 225 palavras · 1711 bytes · referências 0
 - **Motivo da seleção:** Visao geral: aliquota minima de 2% do ISS e vedacao de beneficios que a reduzam, enquanto lei complementar nao disciplinar o art. 156, § 3º, I e III.
 
 **O QUE DIZ**
@@ -7179,7 +7174,7 @@ A aplicação do artigo depende de um dado que o texto não fornece: a disciplin
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: i e iii do 3 do art 156)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -7198,7 +7193,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1428 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 200 palavras · 1425 bytes · referências 0
 - **Motivo da seleção:** Visao geral: acrescimo de dez anos ao prazo da Zona Franca de Manaus fixado no art. 40 do ADCT.
 
 **O QUE DIZ**
@@ -7232,7 +7227,7 @@ O artigo deve ser lido em conjunto com os arts. 40 e 92-A do ADCT. O texto ofici
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7247,7 +7242,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1290 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 183 palavras · 1287 bytes · referências 0
 - **Motivo da seleção:** Visao geral: acrescimo de cinquenta anos ao prazo do art. 92, completando a soma dos prazos da Zona Franca de Manaus.
 
 **O QUE DIZ**
@@ -7281,7 +7276,7 @@ O cálculo da data final exige a data da promulgação da Constituição, que é
 
 **WARNINGS:** TERM_NOT_USED (palavras_dificeis: Acréscimo de prazo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7296,7 +7291,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 317 palavras · 2391 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 317 palavras · 2388 bytes · referências 0
 - **Motivo da seleção:** Visao geral: preservacao do diferencial competitivo da Zona Franca de Manaus e das areas de livre comercio nas leis do IBS e da CBS, e fundos de desenvolvimento por lei complementar.
 
 **O QUE DIZ**
@@ -7328,7 +7323,7 @@ Os mecanismos concretos ficam nas leis dos novos tributos e nas leis complementa
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: As leis do novo imposto e da nova contribuição devem criar m)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7343,7 +7338,7 @@ Sem explicação própria: 51 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 386 palavras · 2789 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 386 palavras · 2786 bytes · referências 0
 - **Motivo da seleção:** Visao geral: regime especial de pagamento de precatorios de Estados, DF e Municipios em mora (2009), ate a lei complementar do art. 100, § 15, e regra atual de atualizacao dos requisitorios (§§ 16 e 16-A, redacao de 2025).
 
 **O QUE DIZ**
@@ -7378,7 +7373,7 @@ A vigência atual do regime especial dos §§ 1º a 15 depende da lei complement
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a partir de 1 de agosto de 2025)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D); flags fechadas por decisao humana explicita: MB08-HFR-22
 
 ---
 
@@ -7393,7 +7388,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 204 palavras · 1596 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 204 palavras · 1593 bytes · referências 0
 - **Motivo da seleção:** Visao geral: numero de defensores proporcional a demanda e a populacao, com meta de oito anos para presenca em todas as unidades jurisdicionais.
 
 **O QUE DIZ**
@@ -7428,7 +7423,7 @@ O texto não informa se a meta do § 1º foi cumprida; isso é dado externo. O c
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7443,7 +7438,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1647 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1644 bytes · referências 0
 - **Motivo da seleção:** Visao geral: escalonamento da partilha do diferencial de aliquotas do ICMS entre origem e destino (2015 a 2018) e regra final de 100% ao destino desde 2019.
 
 **O QUE DIZ**
@@ -7478,7 +7473,7 @@ O artigo trata só do diferencial de alíquotas em vendas a consumidor final nã
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diferença entre a alíquota interna e a interestadual); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: diferença entre a alíquota interna e a interestadual)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7493,7 +7488,7 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 304 palavras · 2322 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 304 palavras · 2319 bytes · referências 0
 - **Motivo da seleção:** Visao geral: regime especial para Estados, DF e Municipios em mora em 25 de marco de 2015, com quitacao ate 31 de dezembro de 2029, depositos mensais e fontes adicionais de recursos.
 
 **O QUE DIZ**
@@ -7528,7 +7523,7 @@ O regime alcança apenas os entes em mora em 25 de março de 2015. O § 4º est�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: em conta especial do tribunal de justiça local)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Ajuste so de provenance OFFICIAL_CANONICAL_ANNOTATION, T1 inalterado: A remissão oficial do § 5º às ADIs 7047 e 7064 é provenance da compilação oficial; conteúdo e alcance das decisões permanecem na camada JURISPRUDÊNCIA.; flags fechadas por decisao humana explicita: MB08-HFR-17
 
 ---
 
@@ -7543,7 +7538,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1805 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 243 palavras · 1802 bytes · referências 0
 - **Motivo da seleção:** Visao geral: destinacao de ao menos 50% dos recursos do regime do art. 101 a ordem cronologica com preferencias, e uso do restante em acordos diretos.
 
 **O QUE DIZ**
@@ -7578,7 +7573,7 @@ O desconto de 40% é o máximo admitido nos acordos, não um valor fixo. Os requ
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7593,7 +7588,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1665 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 202 palavras · 1662 bytes · referências 0
 - **Motivo da seleção:** Visao geral: vedacao de sequestro enquanto o ente paga as parcelas do art. 101 e vedacao de desapropriacoes por entes com estoque elevado de precatorios.
 
 **O QUE DIZ**
@@ -7625,7 +7620,7 @@ A proteção contra sequestro cai se os recursos não forem liberados no tempo d
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7640,7 +7635,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 1928 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 268 palavras · 1925 bytes · referências 0
 - **Motivo da seleção:** Visao geral: consequencias da nao liberacao tempestiva dos recursos do regime do art. 101.
 
 **O QUE DIZ**
@@ -7673,7 +7668,7 @@ O inciso IV, em redação de 2023, já menciona o Comitê Gestor do Imposto sobr
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da legislação de responsabilidade fiscal e de improbidade)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7688,7 +7683,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 1855 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 264 palavras · 1852 bytes · referências 0
 - **Motivo da seleção:** Visao geral: faculdade do credor de compensar precatorios com debitos inscritos em divida ativa ate 25 de marco de 2015, durante o regime do art. 101.
 
 **O QUE DIZ**
@@ -7722,7 +7717,7 @@ Débitos inscritos em dívida ativa depois de 25 de março de 2015 não entram n
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7745,7 +7740,7 @@ Sem explicação própria: 17 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 314 palavras · 2384 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 314 palavras · 2381 bytes · referências 0
 - **Motivo da seleção:** Visao geral: limite anual para alocacao de despesas com precatorios ate o fim de 2026, ordem de pagamento e alternativas do credor; afirmacao de eficacia depende de acoes de controle anotadas.
 
 **O QUE DIZ**
@@ -7780,7 +7775,7 @@ O texto oficial traz notas de remissão a ações de controle de constitucionali
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 2016 incluídos os restos a pagar pagos corrigido)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D); flags fechadas por decisao humana explicita: MB08-HFR-23
 
 ---
 
@@ -7814,17 +7809,17 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 113 — Impacto orçamentário de novas despesas
 
-- **TARGET:** `ADCT:ART.113` · `ENTENDA/ADCT:ART.113/BASE/1`
+- **TARGET:** `ADCT:ART.113` · `ENTENDA/ADCT:ART.113/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 113 — Impacto orçamentário de novas despesas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1335 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 159 palavras · 1304 bytes · referências 0
 - **Motivo da seleção:** Visao geral: exigencia de estimativa de impacto orcamentario e financeiro para proposicoes que criem ou alterem despesa obrigatoria ou renuncia de receita.
 
 **O QUE DIZ**
 
-O art. 113 do ADCT exige que a proposta legislativa que crie ou modifique despesa obrigatória ou renúncia de receita venha acompanhada da estimativa de seu impacto orçamentário e financeiro. A regra alcança projetos que aumentem gastos permanentes ou que reduzam a arrecadação por meio de benefícios.
+O art. 113 do ADCT determina que uma proposição legislativa que mexa em despesa obrigatória ou em renúncia de receita venha acompanhada de estimativa de seu impacto orçamentário e financeiro. A exigência vale tanto para a criação quanto para a alteração dessas medidas.
 
 **O QUE SIGNIFICA**
 
@@ -7853,7 +7848,7 @@ O artigo exige a estimativa; ele não proíbe a aprovação da medida. A forma d
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A proposta precisa trazer a estimativa de quanto custará ao )
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano MANDATORY_EXPENSE_SCOPE_NARROWING (fila A) em o_que_diz; redacao final reformulada pelo revisor (ENGINE_CONTRACT_VERBATIM_COPY) (seções: o_que_diz)
 
 ---
 
@@ -7872,7 +7867,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 311 palavras · 2318 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 311 palavras · 2315 bytes · referências 0
 - **Motivo da seleção:** Visao geral: autorizacao excepcional de parcelamento, em ate 300 prestacoes, de debitos de Estados, DF e Municipios com seus regimes proprios de previdencia, mediante condicoes cumulativas.
 
 **O QUE DIZ**
@@ -7907,7 +7902,7 @@ O prazo de quinze meses é contado da promulgação da emenda de 2025, cuja data
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até 31 de agosto de 2025 inclusive os); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Com lei municipal autorizando, ele parcela o débito em até 3)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -7922,7 +7917,7 @@ Sem explicação própria: 33 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 422 palavras · 2985 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 422 palavras · 2982 bytes · referências 0
 - **Motivo da seleção:** Visao geral: parcelamento excepcional, em ate 300 prestacoes, de debitos previdenciarios dos Municipios com o Regime Geral, com reducoes, juros por faixa, sancoes e formas de quitacao antecipada.
 
 **O QUE DIZ**
@@ -7957,7 +7952,7 @@ A formalização do parcelamento tinha prazo até 31 de agosto de 2026, conforme
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: até 1 de março de 2027 as condições)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao C); flags fechadas por decisao humana explicita: MB08-HFR-18, MB08-HFR-19
 
 ---
 
@@ -7972,7 +7967,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1783 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 1780 bytes · referências 0
 - **Motivo da seleção:** Visao geral: parcelamento excepcional dos debitos previdenciarios dos consorcios publicos intermunicipais com o Regime Geral, nas regras do art. 116.
 
 **O QUE DIZ**
@@ -8004,7 +7999,7 @@ A remissão alcança só os §§ 2º a 6º do art. 116; as sanções dos §§ 7�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8014,12 +8009,12 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM
 
-- **TARGET:** `ADCT:ART.117` · `ENTENDA/ADCT:ART.117/BASE/1`
+- **TARGET:** `ADCT:ART.117` · `ENTENDA/ADCT:ART.117/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1784 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 266 palavras · 2198 bytes · referências 0
 - **Motivo da seleção:** Visao geral: prazo de formalizacao dos parcelamentos dos arts. 115, 116 e 116-A e vinculacao do FPM com ordem de preferencia.
 
 **O QUE DIZ**
@@ -8028,11 +8023,11 @@ O art. 117 do ADCT fixa até 31 de agosto de 2026 o prazo para formalizar os par
 
 **O QUE SIGNIFICA**
 
-O artigo dá segurança ao credor: as prestações são pagas com recursos que o Município receberia da União.
+O artigo fixa prazo e condição para formalizar os parcelamentos a que remete e estabelece uma ordem de preferência no uso dos recursos vinculados do Fundo de Participação dos Municípios.
 
-A ordem de preferência resolve conflitos quando o fundo não basta para tudo.
+O caput remete expressamente aos arts. 115, 116 e 116-A. Como a própria condição de vinculação é formulada em termos do Município e do FPM, esta explicação não amplia nem restringe por inferência o alcance dessa remissão.
 
-Em 5 de outubro de 2026, data de referência deste lote, o prazo de formalização já terminou; a vinculação e a ordem de preferência continuam valendo para os parcelamentos formalizados.
+Em 5 de outubro de 2026, data de referência deste lote, o prazo de formalização já havia terminado.
 
 **EXEMPLO PRÁTICO**
 
@@ -8040,7 +8035,7 @@ Um Município formalizou seu parcelamento em julho de 2026 (data ilustrativa). A
 
 **ATENÇÃO**
 
-Parcelamentos não formalizados até 31 de agosto de 2026 ficam fora deste regime. A ordem de preferência põe os débitos com a União antes das contribuições previdenciárias.
+O caput remete aos arts. 115, 116 e 116-A e exige autorização para vinculação do Fundo de Participação dos Municípios. O alcance concreto dessa combinação deve ser preservado literalmente no T1 e aprofundado na camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8049,11 +8044,11 @@ Parcelamentos não formalizados até 31 de agosto de 2026 ficam fora deste regim
 
 **CAMADA EXTERNA**
 
-—
+- O alcance concreto da remissão do art. 117 aos arts. 115, 116 e 116-A, diante da vinculação expressa ao Fundo de Participação dos Municípios, requer tratamento conservador na camada externa.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano TEXTUAL_TENSION_PRESERVE_LITERALITY (fila A) em atencao, external_layer_notes, o_que_significa (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
@@ -8068,7 +8063,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1835 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 241 palavras · 1832 bytes · referências 0
 - **Motivo da seleção:** Visao geral: encerramento de contas do fundo PIS-PASEP nao reclamadas ha mais de 20 anos e prazo de 5 anos para pedido de ressarcimento.
 
 **O QUE DIZ**
@@ -8103,7 +8098,7 @@ O prazo de 20 anos se refere a recursos não reclamados. O pedido de ressarcimen
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da publicação de aviso no diário oficial da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8118,7 +8113,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1640 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1637 bytes · referências 0
 - **Motivo da seleção:** Visao geral: remissao aos arts. 125 a 133 como criterios da passagem para o IBS e a CBS e instituicao da CBS pela mesma lei complementar do IBS.
 
 **O QUE DIZ**
@@ -8153,7 +8148,7 @@ O artigo não traz alíquotas nem datas próprias. A lei complementar que instit
 
 **WARNINGS:** TERM_NOT_USED (palavras_dificeis: IBS); TERM_NOT_USED (palavras_dificeis: CBS)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8163,12 +8158,12 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 125 — Ano de teste de 2026
 
-- **TARGET:** `ADCT:ART.125` · `ENTENDA/ADCT:ART.125/BASE/1`
+- **TARGET:** `ADCT:ART.125` · `ENTENDA/ADCT:ART.125/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 125 — Ano de teste de 2026
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 1822 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 267 palavras · 1986 bytes · referências 0
 - **Motivo da seleção:** Visao geral: cobranca do IBS a 0,1% e da CBS a 0,9% em 2026, compensacao com PIS e Cofins, destinacao da arrecadacao e dispensa de recolhimento.
 
 **O QUE DIZ**
@@ -8177,9 +8172,9 @@ O art. 125 do ADCT trata do ano de 2026. Nesse ano, o imposto do art. 156-A é c
 
 **O QUE SIGNIFICA**
 
-O ano de 2026 é um teste dos novos tributos, com alíquotas baixas.
+O art. 125 estabelece para 2026 alíquotas específicas do novo imposto e da nova contribuição.
 
-Na prática, o valor pago não aumenta a carga, porque é abatido de tributos antigos.
+O valor recolhido é compensado com os tributos indicados no § 1º; se não houver débitos suficientes, o § 2º admite compensação com outro tributo federal ou ressarcimento em até sessenta dias, mediante requerimento.
 
 Em 5 de outubro de 2026, data de referência deste lote, este é o ano em curso previsto no caput.
 
@@ -8202,7 +8197,7 @@ A dispensa de recolhimento do § 4º depende de lei complementar. As alíquotas 
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Esse valor é abatido do PIS e da Cofins que ela deve no perí)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano TAX_NEUTRALITY_OVERCLAIM (fila A) em o_que_significa (seções: o_que_significa)
 
 ---
 
@@ -8217,7 +8212,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1693 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 217 palavras · 1690 bytes · referências 0
 - **Motivo da seleção:** Visao geral: a partir de 2027, cobranca da CBS e do imposto seletivo, extincao de PIS e Cofins condicionada a instituicao da CBS e IPI com aliquota zero, ressalvada a Zona Franca.
 
 **O QUE DIZ**
@@ -8251,7 +8246,7 @@ Em 5 de outubro de 2026, data de referência deste lote, o artigo ainda não pro
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: industrialização incentivada na zona franca de manaus confor); TERM_NOT_USED (palavras_dificeis: Imposto seletivo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -8261,12 +8256,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 127 — Alíquotas de 2027 e 2028
 
-- **TARGET:** `ADCT:ART.127` · `ENTENDA/ADCT:ART.127/BASE/1`
+- **TARGET:** `ADCT:ART.127` · `ENTENDA/ADCT:ART.127/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 127 — Alíquotas de 2027 e 2028
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1212 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 176 palavras · 1254 bytes · referências 0
 - **Motivo da seleção:** Visao geral: aliquotas do IBS de 0,05% estadual e 0,05% municipal em 2027 e 2028 e reducao correspondente da CBS.
 
 **O QUE DIZ**
@@ -8275,11 +8270,11 @@ O art. 127 do ADCT determina que, em 2027 e 2028, o imposto do art. 156-A seja c
 
 **O QUE SIGNIFICA**
 
-O artigo mantém o imposto estadual e municipal em nível simbólico por dois anos.
+O artigo fixa para 2027 e 2028 alíquotas estaduais e municipais de 0,05% para o imposto do art. 156-A.
 
-A redução da contribuição federal compensa o valor do novo imposto, para que a soma não aumente.
+No mesmo período, o parágrafo único determina redução de 0,1 ponto percentual na alíquota da contribuição do art. 195, V.
 
-Depois desse período vem a redução gradual do ICMS e do ISS, tratada no art. 128.
+Depois desse período, a transição continua pelas regras dos artigos seguintes.
 
 **EXEMPLO PRÁTICO**
 
@@ -8300,7 +8295,7 @@ O artigo produz efeitos a partir de 2027, ano fixado no próprio texto. Em 5 de 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano CAUSAL_PURPOSE_NOT_IN_TEXT (fila A) em o_que_significa; flags fechadas por decisao humana explicita: MB08-HFR-25 (seções: o_que_significa)
 
 ---
 
@@ -8315,7 +8310,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1617 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1614 bytes · referências 0
 - **Motivo da seleção:** Visao geral: reducao proporcional das aliquotas do ICMS e do ISS de 2029 a 2032 e dos beneficios fiscais correspondentes.
 
 **O QUE DIZ**
@@ -8349,7 +8344,7 @@ O artigo produz efeitos a partir de 2029, data fixada no próprio texto. A Lei C
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: art 3 da lei complementar n 160 de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8364,7 +8359,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 161 palavras · 1221 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 161 palavras · 1218 bytes · referências 0
 - **Motivo da seleção:** Visao geral: extincao do ICMS e do ISS a partir de 2033.
 
 **O QUE DIZ**
@@ -8398,7 +8393,7 @@ O artigo produz efeitos a partir de 2033, data fixada no próprio texto. Débito
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8408,12 +8403,12 @@ Sem explicação própria: 31 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### ADCT, art. 130 — Alíquotas de referência do IBS e da CBS
 
-- **TARGET:** `ADCT:ART.130` · `ENTENDA/ADCT:ART.130/BASE/1`
+- **TARGET:** `ADCT:ART.130` · `ENTENDA/ADCT:ART.130/BASE/2`
 - **DISPLAY TITLE:** ADCT, art. 130 — Alíquotas de referência do IBS e da CBS
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 330 palavras · 2304 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 359 palavras · 2557 bytes · referências 0
 - **Motivo da seleção:** Visao geral: fixacao das aliquotas de referencia por resolucao do Senado, calculadas pelo TCU, para equivalencia de receitas entre 2027 e 2033, e mecanismo de reducao em 2030 e 2035.
 
 **O QUE DIZ**
@@ -8422,11 +8417,11 @@ O art. 130 do ADCT atribui a resolução do Senado Federal a fixação das alíq
 
 **O QUE SIGNIFICA**
 
-O artigo procura manter a arrecadação estável durante a mudança: nem perda, nem aumento.
+O artigo estabelece mecanismos para que as alíquotas de referência considerem a equivalência entre a receita dos novos tributos e a redução das receitas dos tributos substituídos, nos períodos e segundo as fórmulas constitucionais.
 
-O Senado fixa a alíquota de referência, e cada ente pode depois fixar a sua.
+O Senado fixa as alíquotas de referência com base em cálculo do Tribunal de Contas da União e nos limites previstos em lei complementar.
 
-As travas de 2030 e 2035 reduzem a alíquota se a receita passar dos tetos calculados sobre a média de 2012 a 2021.
+As travas de 2030 e 2035 reduzem as alíquotas se as receitas-base superarem os respectivos tetos de referência.
 
 **EXEMPLO PRÁTICO**
 
@@ -8438,7 +8433,7 @@ As alíquotas são fixadas no ano anterior ao de sua vigência, sem a espera de 
 
 **PALAVRAS DIFÍCEIS**
 
-- *Alíquota de referência*: percentual que serve de base para que cada ente fixe a sua alíquota.
+- *Alíquota de referência*: percentual fixado pelo Senado segundo os critérios constitucionais e a forma de cálculo prevista em lei complementar.
 - *Teto de referência*: limite de receita calculado sobre a média de anos anteriores.
 - *PIB*: soma dos bens e serviços produzidos no país em um período.
 
@@ -8448,7 +8443,7 @@ As alíquotas são fixadas no ano anterior ao de sua vigência, sem a espera de 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste humano REVENUE_EQUIVALENCE_OVERCLAIM_AND_EXTERNAL_RULE (fila A) em o_que_significa, palavras_dificeis (seções: o_que_significa, palavras_dificeis)
 
 ---
 
@@ -8463,7 +8458,7 @@ Sem explicação própria: 25 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 1907 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 250 palavras · 1904 bytes · referências 0
 - **Motivo da seleção:** Visao geral: retencao e distribuicao do IBS de Estados, DF e Municipios de 2029 a 2077 conforme receita media, com reducao gradual da retencao.
 
 **O QUE DIZ**
@@ -8495,7 +8490,7 @@ O artigo produz efeitos a partir de 2029, data fixada no próprio texto. Os crit
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8510,7 +8505,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 227 palavras · 1640 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 227 palavras · 1637 bytes · referências 0
 - **Motivo da seleção:** Visao geral: retencao de 5% do IBS para distribuicao aos entes com menores razoes entre receita apurada e receita media, e reducao gradual entre 2078 e 2097.
 
 **O QUE DIZ**
@@ -8544,7 +8539,7 @@ A retenção opera junto com a distribuição do art. 131. A receita média cons
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: três vezes a média nacional por habitante da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8559,7 +8554,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1317 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 191 palavras · 1314 bytes · referências 0
 - **Motivo da seleção:** Visao geral: exclusao de IPI, ICMS, ISS, PIS e Cofins da base de calculo do IBS e da CBS.
 
 **O QUE DIZ**
@@ -8593,7 +8588,7 @@ A regra trata da base de cálculo dos novos tributos; ela não altera a base dos
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8608,7 +8603,7 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2148 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 285 palavras · 2145 bytes · referências 0
 - **Motivo da seleção:** Visao geral: aproveitamento dos saldos credores de ICMS existentes ao final de 2032, por compensacao com o IBS; registro de truncamento do § 4º na fonte.
 
 **O QUE DIZ**
@@ -8643,7 +8638,7 @@ O texto do § 4º aparece incompleto na fonte versionada (anomalia de fonte regi
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8658,7 +8653,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1733 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 207 palavras · 1730 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei complementar sobre o uso dos creditos de IPI, PIS e Cofins nao apropriados ate a extincao desses tributos, com compensacao ou ressarcimento.
 
 **O QUE DIZ**
@@ -8692,7 +8687,7 @@ A extinção do PIS e da Cofins depende da instituição da nova contribuição 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com outros tributos federais inclusive com a contribuição)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao D)
 
 ---
 
@@ -8707,7 +8702,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1716 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1713 bytes · referências 0
 - **Motivo da seleção:** Visao geral: possibilidade de os Estados com fundos de infraestrutura e habitacao em 30 de abril de 2023 instituirem contribuicoes semelhantes desvinculadas do ICMS, ate 31 de dezembro de 2043.
 
 **O QUE DIZ**
@@ -8741,7 +8736,7 @@ A permissão só vale para Estados que tinham esses fundos em 30 de abril de 202
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 130 ii b e 131 2 i b)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
@@ -8756,7 +8751,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 188 palavras · 1566 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 188 palavras · 1563 bytes · referências 0
 - **Motivo da seleção:** Visao geral: ate 2032, criacao, alteracao ou prorrogacao de vinculacao de receitas nao pode elevar a despesa primaria acima da variacao do limite de despesas primarias.
 
 **O QUE DIZ**
@@ -8790,7 +8785,7 @@ O artigo vale até 2032. O limite de despesas primárias está em lei complement
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao na revisao humana do Macro08 (fila de calibracao A)
 
 ---
 
