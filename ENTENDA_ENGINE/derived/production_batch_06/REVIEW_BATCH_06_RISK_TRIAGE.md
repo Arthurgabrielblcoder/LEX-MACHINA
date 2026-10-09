@@ -3,7 +3,7 @@
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 33
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 42
 - Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 2 · não resolvidos: 0
 
 ## Risco HIGH
@@ -92,7 +92,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 55, § 1º — O que é incompatível com o decoro parlamentar
 
-- `CF88:ART.55:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.55:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: incompatív
 
 ### Art. 55, §§ 2º e 3º — Quem decide a perda do mandato
@@ -102,17 +102,17 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 55, § 4º — Renúncia durante processo de perda do mandato
 
-- `CF88:ART.55:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.55:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: perda do mandato
 
 ### Art. 56 — Situações que não geram perda do mandato
 
-- `CF88:ART.56` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.56` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: perderá o mandato
 
 ### Art. 57, § 4º — Sessões preparatórias e eleição das Mesas
 
-- `CF88:ART.57:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.57:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance da vedação de recondução entre legislaturas e a sua aplicação a Estados e Municípios são temas da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: "questões de interpretação constitucional" (o draft nao responde; remete)
 
 ### Art. 58, § 3º — Comissões parlamentares de inquérito
@@ -133,27 +133,27 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 62, § 1º — Matérias vedadas às medidas provisórias
 
-- `CF88:ART.62:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.62:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A admissão de medidas provisórias em matéria penal benéfica e o controle dos créditos extraordinários são temas da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao responde; remete); SENSITIVE_THEME: sanção
 
 ### Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso
 
-- `CF88:ART.62:PAR.5` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A obrigatoriedade do parecer da comissão mista e o controle judicial dos pressupostos de relevância e urgência são temas da camada JURISPRUD; INTERPRETIVE_QUESTION_DEFERRED: "tema de interpretação constitucional" (o draft nao responde; remete)
+- `CF88:ART.62:PAR.5` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A obrigatoriedade do parecer da comissão mista e o controle judicial dos pressupostos de relevância e urgência são temas da camada JURISPRUD
 
 ### Art. 65 — Revisão do projeto pela outra Casa
 
-- `CF88:ART.65` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.65` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanção
 
 ### Art. 66 — Sanção, veto e promulgação
 
-- `CF88:ART.66` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.66` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanção
 
 ### Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita
 
-- `CF88:ART.66:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.66:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanção
 
 ### Art. 69 — Quórum da lei complementar

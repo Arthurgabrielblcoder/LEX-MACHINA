@@ -24,23 +24,23 @@
  },
  "counts": {
   "A_CLEAN_LOW": 42,
-  "B_CLEAN_MEDIUM": 9,
+  "B_CLEAN_MEDIUM": 18,
   "C_QUICK_REVIEW": 0,
   "D_FULL_HUMAN_REVIEW": 0,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 42,
-  "MEDIUM": 9
+  "MEDIUM": 18
  },
  "complexity_counts": {
-  "STRUCTURED": 42,
-  "EXTERNAL": 5,
-  "SIMPLE": 4
+  "STRUCTURED": 47,
+  "EXTERNAL": 8,
+  "SIMPLE": 5
  },
  "jurisprudence_counts": {
-  "NONE": 47,
-  "CONTEXT_ONLY": 4
+  "NONE": 53,
+  "CONTEXT_ONLY": 7
  },
  "by_legal_risk": {
   "LOW": {
@@ -52,7 +52,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 9,
+   "B_CLEAN_MEDIUM": 18,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -68,21 +68,21 @@
  "by_complexity": {
   "SIMPLE": {
    "A_CLEAN_LOW": 3,
-   "B_CLEAN_MEDIUM": 1,
+   "B_CLEAN_MEDIUM": 2,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
    "A_CLEAN_LOW": 38,
-   "B_CLEAN_MEDIUM": 4,
+   "B_CLEAN_MEDIUM": 9,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 1,
-   "B_CLEAN_MEDIUM": 4,
+   "B_CLEAN_MEDIUM": 7,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -1287,7 +1287,9 @@
    },
    "detectors": [],
    "info": [],
-   "lint": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
    "editorial_checks": [],
    "external_dependency": null,
    "reason": "sem alerta; LEGAL_RISK LOW",
@@ -1771,6 +1773,359 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.55:PAR.1",
+   "title": "Art. 55, § 1º — O que é incompatível com o decoro parlamentar",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: incompatív"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.4",
+   "title": "Art. 55, § 4º — Renúncia durante processo de perda do mandato",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perda do mandato"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.56",
+   "title": "Art. 56 — Situações que não geram perda do mandato",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perderá o mandato"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: vinte dias",
+    "number_or_percentage: cento",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.4",
+   "title": "Art. 57, § 4º — Sessões preparatórias e eleição das Mesas",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance da vedação de recondução entre legislaturas e a sua aplicação a Estados e Municípios são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"questões de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.1",
+   "title": "Art. 62, § 1º — Matérias vedadas às medidas provisórias",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A admissão de medidas provisórias em matéria penal benéfica e o controle dos créditos extraordinários são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)",
+    "SENSITIVE_THEME: sanção"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: ressalvado",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 167",
+    "block com 9 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "diretrizes orçamentárias orçamento e créditos adicionais e suplementares",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a carreira e a garantia de seus membros",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.5",
+   "title": "Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A obrigatoriedade do parecer da comissão mista e o controle judicial dos pressupostos de relevância e urgência são temas da camada JURISPRUD",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"tema de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.65",
+   "title": "Art. 65 — Revisão do projeto pela outra Casa",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66",
+   "title": "Art. 66 — Sanção, veto e promulgação",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.1",
+   "title": "Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "block com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.69",
    "title": "Art. 69 — Quórum da lei complementar",
    "role": "OVERVIEW",
@@ -2140,18 +2495,18 @@
  ],
  "migration": {
   "previous_counts": {
-   "D_FULL_HUMAN_REVIEW": 47,
+   "D_FULL_HUMAN_REVIEW": 56,
    "A_CLEAN_LOW": 1,
    "C_QUICK_REVIEW": 3
   },
-  "previous_D": 47,
+  "previous_D": 56,
   "previous_D_now": {
    "A_CLEAN_LOW": 38,
-   "B_CLEAN_MEDIUM": 9
+   "B_CLEAN_MEDIUM": 18
   },
-  "previous_D_migrated": 47,
+  "previous_D_migrated": 56,
   "previous_risk_counts": {
-   "HIGH": 47,
+   "HIGH": 56,
    "LOW": 3,
    "MEDIUM": 1
   }
@@ -2164,32 +2519,31 @@
   "UNIVERSAL_CLAIM": 5
  },
  "metrics": {
-  "total_draft_chars": 65350,
-  "old_model_full_package_chars": 119239,
-  "presented_chars": 39571,
+  "total_draft_chars": 77305,
+  "old_model_full_package_chars": 141747,
+  "presented_chars": 47349,
   "presented_by_file": {
-   "BATCH06_COMPACT_CLEAN_REVIEW.md": 39064,
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 46842,
    "BATCH06_FULL_HUMAN_REVIEW.md": 218,
    "BATCH06_HARD_FAIL_REPORT.md": 119,
    "BATCH06_QUICK_REVIEW.md": 170
   },
-  "reduction_abs": 79668,
-  "reduction_pct": 66.8,
+  "reduction_abs": 94398,
+  "reduction_pct": 66.6,
   "checkpoint_presented_chars": 265430
  },
  "d_full_package": "GERADO",
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 22,
+  "eligible": 24,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 42,
+ "human_approved_t1_granted": 33,
  "round_approvals": {
   "review_scopes": [
    "CF88_BATCH06_TRIAGE_QUEUE_D",
    "CF88_BATCH06_TRIAGE_QUEUE_C",
-   "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-   "CF88_BATCH06_TRIAGE_QUEUE_B_PART2"
+   "CF88_BATCH06_TRIAGE_QUEUE_B_PART1"
   ],
   "gate": [
    {
@@ -2466,19 +2820,6 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.55:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.55:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.55:PAR.2",
     "explanation_id": "ENTENDA/CF88:ART.55:PAR.2/BASE/1",
     "editorial_version": 1,
@@ -2492,51 +2833,12 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.55:PAR.4",
-    "explanation_id": "ENTENDA/CF88:ART.55:PAR.4/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.56",
-    "explanation_id": "ENTENDA/CF88:ART.56/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.57",
     "explanation_id": "ENTENDA/CF88:ART.57/BASE/2",
     "editorial_version": 2,
     "decision": "APPROVED_AFTER_ADJUSTMENT",
     "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
     "provenance_items": 1,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.57:PAR.4",
-    "explanation_id": "ENTENDA/CF88:ART.57:PAR.4/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
     "hard_fail": [],
     "review_required_open": [],
     "editorial_checks_open": 0,
@@ -2611,32 +2913,6 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.62:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.62:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.62:PAR.5",
-    "explanation_id": "ENTENDA/CF88:ART.62:PAR.5/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.62:PAR.6",
     "explanation_id": "ENTENDA/CF88:ART.62:PAR.6/BASE/2",
     "editorial_version": 2,
@@ -2665,45 +2941,6 @@
      "EXTERNAL_FACT_WITH_PROVENANCE",
      "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
     ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.65",
-    "explanation_id": "ENTENDA/CF88:ART.65/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.66",
-    "explanation_id": "ENTENDA/CF88:ART.66/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.66:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.66:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
     "gate": "PASS"
    },
    {
@@ -2761,9 +2998,9 @@
     "gate": "PASS"
    }
   ],
-  "approved": 42,
-  "approved_unchanged": 12,
-  "approved_after_adjustment": 30,
+  "approved": 33,
+  "approved_unchanged": 11,
+  "approved_after_adjustment": 22,
   "retired_versions": [
    "ENTENDA/CF88:ART.48/BASE/1",
    "ENTENDA/CF88:ART.49:INC.I/BASE/1",
@@ -2779,29 +3016,21 @@
    "ENTENDA/CF88:ART.53:PAR.8/BASE/1",
    "ENTENDA/CF88:ART.55/BASE/1",
    "ENTENDA/CF88:ART.55:INC.VI/BASE/1",
-   "ENTENDA/CF88:ART.55:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.55:PAR.4/BASE/1",
-   "ENTENDA/CF88:ART.56/BASE/1",
    "ENTENDA/CF88:ART.57/BASE/1",
    "ENTENDA/CF88:ART.58:PAR.3/BASE/1",
    "ENTENDA/CF88:ART.61:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.62/BASE/1",
-   "ENTENDA/CF88:ART.62:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.62:PAR.5/BASE/1",
    "ENTENDA/CF88:ART.62:PAR.6/BASE/1",
    "ENTENDA/CF88:ART.63/BASE/1",
-   "ENTENDA/CF88:ART.65/BASE/1",
-   "ENTENDA/CF88:ART.66/BASE/1",
-   "ENTENDA/CF88:ART.66:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.73:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.75/BASE/1"
   ]
  },
  "approval_totals": {
   "global_before": 289,
-  "batch06_new_approved": 42,
-  "global_after": 331,
-  "batch06_new_pending": 51,
+  "batch06_new_approved": 33,
+  "global_after": 322,
+  "batch06_new_pending": 60,
   "batch06_reused_pilots_already_approved": 3,
   "note": "pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo"
  },

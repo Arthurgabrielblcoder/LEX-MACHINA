@@ -330,7 +330,7 @@ Lote `ENTENDA_CF_PRODUCTION_BATCH_06` · 2026-10-04 · nenhum item aprovado (AUT
 - Interpretação principal: A regra impede que a lei deixe de existir formalmente por omissão do Presidente.
 - ATENÇÃO: O parágrafo trata da promulgação nos casos dos §§ 3º e 5º.
 - Dependência externa: nenhuma
-- Warnings: nenhum
+- Warnings: lint PARENT_REPETITION
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
@@ -466,7 +466,106 @@ Lote `ENTENDA_CF_PRODUCTION_BATCH_06` · 2026-10-04 · nenhum item aprovado (AUT
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (9)
+## B — CLEAN_MEDIUM (18)
+
+### `CF88:ART.55:PAR.1` — Art. 55, § 1º — O que é incompatível com o decoro parlamentar
+
+- Risco: MEDIUM · complexidade: SIMPLE · SENSITIVE_THEME: incompatív
+- Ponto jurídico: O § 1º aponta duas condutas contrárias ao decoro parlamentar, que se somam às previstas no regimento interno: o abuso das prerrogativas de membro do Congresso e o recebimento de vantagens indevidas.
+- Interpretação principal: Decoro é a conduta compatível com a dignidade do mandato.
+- ATENÇÃO: O processo por quebra de decoro é político e corre na própria Casa; ele não depende de condenação criminal prévia.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.55:PAR.4` — Art. 55, § 4º — Renúncia durante processo de perda do mandato
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perda do mandato
+- Ponto jurídico: O § 4º suspende os efeitos da renúncia do parlamentar que responde a processo capaz de levar à perda do mandato, até que sejam tomadas as decisões finais dos §§ 2º e 3º.
+- Interpretação principal: Sem esta regra, o parlamentar ameaçado de cassação poderia renunciar para escapar das consequências da perda do mandato e voltar a se candidatar.
+- ATENÇÃO: O parágrafo não proíbe a renúncia; suspende seus efeitos enquanto o processo estiver em andamento.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.56` — Art. 56 — Situações que não geram perda do mandato
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perderá o mandato
+- Ponto jurídico: O art. 56 indica quando o deputado ou senador não perde o mandato: ao ser investido como Ministro de Estado, como Governador de Território, como secretário estadual, distrital, de Território ou de…
+- Interpretação principal: O artigo funciona como exceção ao art. 54, que proíbe certos cargos: os cargos listados aqui podem ser assumidos sem perda do mandato.
+- ATENÇÃO: A lista do inciso I é fechada: um deputado nomeado secretário de Prefeitura de cidade que não seja capital não está amparado por este artigo.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.57:PAR.4` — Art. 57, § 4º — Sessões preparatórias e eleição das Mesas
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance da vedação de recondução entre legislaturas e a sua…; INTERPRETIVE_QUESTION_DEFERRED: "questões de interpretação constitucional" (o draft nao…
+- Ponto jurídico: O § 4º prevê sessões preparatórias de cada Casa, a partir de 1º de fevereiro do primeiro ano da legislatura, para a posse dos membros e a eleição das Mesas.
+- Interpretação principal: No início de cada legislatura, os eleitos tomam posse e escolhem quem dirigirá a Casa.
+- ATENÇÃO: Como a vedação se aplica quando a eleição ocorre em legislaturas diferentes e se ela alcança os Legislativos estaduais e municipais são questões de interpretação constitucional, fora do texto.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.62:PAR.1` — Art. 62, § 1º — Matérias vedadas às medidas provisórias
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A admissão de medidas provisórias em matéria penal benéfica e…; INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao…; SENSITIVE_THEME: sanção
+- Ponto jurídico: O § 1º proíbe medida provisória sobre: nacionalidade, cidadania, direitos políticos, partidos e direito eleitoral; direito penal, processual penal e processual civil; organização do Judiciário e do…
+- Interpretação principal: Os limites retiram um conjunto de temas do alcance da medida provisória, que é ato editado pelo Presidente.
+- ATENÇÃO: A vedação de direito penal se refere ao texto da alínea b; se medidas provisórias favoráveis ao réu são admitidas é questão de interpretação constitucional.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: diretrizes orçamentárias orçamento e créditos…), NEAR_COPY_MICROFIX(o_que_significa: a carreira e a garantia de seus membros), lint TERM_NOT_USED
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.62:PAR.5` — Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A obrigatoriedade do parecer da comissão mista e o controle…; INTERPRETIVE_QUESTION_DEFERRED: "tema de interpretação constitucional" (o draft nao…
+- Ponto jurídico: O § 5º exige que cada Casa, antes de deliberar sobre o mérito, faça um juízo prévio sobre o atendimento dos pressupostos constitucionais.
+- Interpretação principal: O rito tem três passos.
+- ATENÇÃO: O parecer da comissão mista é etapa constitucional, e não mera formalidade regimental.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.65` — Art. 65 — Revisão do projeto pela outra Casa
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanção
+- Ponto jurídico: O art. 65 determina que o projeto aprovado por uma Casa passe pela revisão da outra, que o discute e vota em turno único.
+- Interpretação principal: O artigo expressa o bicameralismo: em regra, a lei só existe se as duas Casas concordarem.
+- ATENÇÃO: A revisão é feita em um só turno.
+- Dependência externa: nenhuma
+- Warnings: lint TERM_NOT_USED
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.66` — Art. 66 — Sanção, veto e promulgação
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanção
+- Ponto jurídico: O art. 66 regula o que acontece depois da votação: a Casa que concluiu a votação envia o projeto ao Presidente da República, que o sanciona se concordar.
+- Interpretação principal: Sanção é a concordância do Presidente com o projeto, que se transforma em lei.
+- ATENÇÃO: Sanção e promulgação são atos diferentes: a sanção transforma o projeto em lei; a promulgação atesta que a lei existe e determina o seu cumprimento.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.66:PAR.1` — Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanção
+- Ponto jurídico: O § 1º permite ao Presidente vetar o projeto, total ou parcialmente, por inconstitucionalidade ou contrariedade ao interesse público, em quinze dias úteis do recebimento, comunicando os motivos ao…
+- Interpretação principal: O veto tem dois fundamentos possíveis: jurídico, quando o Presidente entende que o projeto é inconstitucional, ou político, quando o considera contrário ao interesse…
+- ATENÇÃO: O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze dias.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.69` — Art. 69 — Quórum da lei complementar
 

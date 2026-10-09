@@ -1710,12 +1710,12 @@ A solução não pode ser obtida pela leitura isolada do inciso VI: é preciso c
 
 ### Art. 55, § 1º — O que é incompatível com o decoro parlamentar
 
-- **TARGET:** `CF88:ART.55:PAR.1` · `ENTENDA/CF88:ART.55:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.55:PAR.1` · `ENTENDA/CF88:ART.55:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 55, § 1º — O que é incompatível com o decoro parlamentar
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.55`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 221 palavras · 1702 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 208 palavras · 1676 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo que define parte do conceito de quebra de decoro.
 
 **O QUE DIZ**
@@ -1724,11 +1724,9 @@ O § 1º aponta duas condutas contrárias ao decoro parlamentar, que se somam à
 
 **O QUE SIGNIFICA**
 
-Decoro é a conduta compatível com a dignidade do mandato. A Constituição não o define por inteiro: indica dois casos e deixa os demais para o regimento interno de cada Casa.
+A Constituição não esgota as hipóteses de quebra de decoro parlamentar. Além dos casos definidos no regimento interno de cada Casa, o § 1º menciona expressamente duas situações: o abuso das prerrogativas asseguradas ao parlamentar e a percepção de vantagens indevidas.
 
-O primeiro caso é o abuso de prerrogativas, como usar as imunidades para fins que não têm relação com a função. O segundo é receber vantagens indevidas, por exemplo em troca de votos.
-
-A quebra de decoro leva à perda do mandato decidida pela Casa (art. 55, II e § 2º).
+O dispositivo deve ser lido com o art. 55, II e § 2º. Quando a perda do mandato decorrer de quebra de decoro, a decisão cabe à respectiva Casa legislativa, assegurada ampla defesa.
 
 **EXEMPLO PRÁTICO**
 
@@ -1736,22 +1734,21 @@ Um deputado que recebe dinheiro de uma empresa para apresentar emendas de seu in
 
 **ATENÇÃO**
 
-O processo por quebra de decoro é político e corre na própria Casa; ele não depende de condenação criminal prévia.
+A quebra de decoro e eventual responsabilidade criminal pelo mesmo fato são questões distintas. O § 1º não exige condenação criminal prévia para que a conduta seja examinada no âmbito parlamentar.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Prerrogativa*: garantia ligada ao cargo, como as imunidades parlamentares.
 - *Vantagem indevida*: benefício que a pessoa não tem direito de receber, em razão da função que exerce.
 - *Decoro parlamentar*: padrão de conduta ética e respeitosa exigido de quem exerce mandato.
-- *Imunidade parlamentar*: garantia que protege o exercício do mandato contra certas responsabilizações e prisões.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: decoro parlamentar além dos casos definidos no regimento)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo correto; retiradas formulacoes interpretativas (definicao fechada de decoro e exemplo de abuso de imunidades). O QUE SIGNIFICA e ATENCAO substituidos; O QUE DIZ e exemplo mantidos. Glossario: "Imunidade parlamentar" removido (TERM_NOT_USED apos o ajuste). (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -1803,12 +1800,12 @@ A redação atual do § 2º foi dada pela Emenda Constitucional nº 76, de 2013;
 
 ### Art. 55, § 4º — Renúncia durante processo de perda do mandato
 
-- **TARGET:** `CF88:ART.55:PAR.4` · `ENTENDA/CF88:ART.55:PAR.4/BASE/1`
+- **TARGET:** `CF88:ART.55:PAR.4` · `ENTENDA/CF88:ART.55:PAR.4/BASE/2`
 - **DISPLAY TITLE:** Art. 55, § 4º — Renúncia durante processo de perda do mandato
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.55`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 166 palavras · 1340 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1357 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma (incluida pela Emenda Constitucional de Revisao nº 6, de 1994) que impede a renuncia para fugir da cassacao.
 
 **O QUE DIZ**
@@ -1817,19 +1814,19 @@ O § 4º suspende os efeitos da renúncia do parlamentar que responde a processo
 
 **O QUE SIGNIFICA**
 
-Sem esta regra, o parlamentar ameaçado de cassação poderia renunciar para escapar das consequências da perda do mandato e voltar a se candidatar.
+Quando o parlamentar apresenta renúncia enquanto responde a processo que vise à perda do mandato ou que possa levar a ela, a renúncia não produz imediatamente seus efeitos.
 
-Com a renúncia suspensa, o processo continua e a Casa chega à sua decisão final. Só depois se sabe se prevalece a cassação ou a renúncia.
+Esses efeitos ficam suspensos até as deliberações finais previstas nos §§ 2º e 3º.
 
-A regra vale a partir da instauração de processo que possa levar à perda do mandato, e não apenas depois da decisão.
+Portanto, a apresentação da renúncia não encerra, por si só, o procedimento de perda do mandato que já esteja abrangido pelo § 4º.
 
 **EXEMPLO PRÁTICO**
 
-Aberto processo por quebra de decoro contra um deputado, ele apresenta renúncia. A renúncia fica sem efeito até a Câmara concluir o processo; se ele for cassado, a cassação prevalece.
+Durante processo por quebra de decoro contra um deputado, ele apresenta renúncia ao mandato. Os efeitos dessa renúncia ficam suspensos até a deliberação final prevista no art. 55.
 
 **ATENÇÃO**
 
-O parágrafo não proíbe a renúncia; suspende seus efeitos enquanto o processo estiver em andamento. As consequências eleitorais da renúncia estão na legislação eleitoral.
+O § 4º não proíbe a apresentação da renúncia; apenas suspende seus efeitos durante o procedimento nele previsto. Eventuais consequências eleitorais da renúncia não são disciplinadas por este dispositivo.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1841,7 +1838,7 @@ O parágrafo não proíbe a renúncia; suspende seus efeitos enquanto o processo
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas a teleologia de "renunciar para escapar", a afirmacao sobre "voltar a se candidatar" e a formulacao de que a cassacao prevalece sobre a renuncia (coerencia com a v2 aprovada do art. 55). O QUE SIGNIFICA, exemplo e ATENCAO substituidos; glossario mantido. Complementacao autorizada: "responde a processo que vise a perda do mandato ou que possa levar a ela" (a redacao anterior repetia 12 palavras seguidas da Lei Seca; ENTENDA_COPIES_OFFICIAL_TEXT eliminado pela redacao, maior sequencia literal 5). (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -1851,12 +1848,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 56 — Situações que não geram perda do mandato
 
-- **TARGET:** `CF88:ART.56` · `ENTENDA/CF88:ART.56/BASE/1`
+- **TARGET:** `CF88:ART.56` · `ENTENDA/CF88:ART.56/BASE/2`
 - **DISPLAY TITLE:** Art. 56 — Situações que não geram perda do mandato
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1748 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 1962 bytes · referências 0
 - **Motivo da seleção:** Visao geral: investidura em cargos e licencas que nao geram perda; a convocacao de suplente e a eleicao para a vaga tem bloco proprio; o § 3º e situado aqui.
 
 **O QUE DIZ**
@@ -1865,19 +1862,21 @@ O art. 56 indica quando o deputado ou senador não perde o mandato: ao ser inves
 
 **O QUE SIGNIFICA**
 
-O artigo funciona como exceção ao art. 54, que proíbe certos cargos: os cargos listados aqui podem ser assumidos sem perda do mandato.
+O art. 56 estabelece situações em que o Deputado ou Senador não perde o mandato.
 
-As licenças também são protegidas. A licença por doença não tem limite de tempo no texto; a licença por interesse particular é sem remuneração e limitada a cento e vinte dias por sessão legislativa.
+No inciso I, isso ocorre quando o parlamentar assume um dos cargos expressamente enumerados pelo dispositivo.
 
-Quem assume um dos cargos do inciso I pode escolher entre a remuneração do mandato e a do cargo (§ 3º).
+No inciso II, a Constituição protege a licença por motivo de doença e a licença para tratar de interesse particular. Nesta última hipótese, a licença deve ser sem remuneração e o afastamento não pode ultrapassar cento e vinte dias por sessão legislativa.
+
+O § 3º estabelece que, na hipótese do inciso I, o parlamentar pode optar pela remuneração do mandato.
 
 **EXEMPLO PRÁTICO**
 
-Um senador nomeado Ministro de Estado se afasta do Senado, mantém o mandato e pode optar por continuar recebendo o subsídio de senador. Seu suplente assume a cadeira.
+Um senador é nomeado Ministro de Estado. O art. 56 permite que ele assuma esse cargo sem perder o mandato, e o § 3º permite que opte pela remuneração do mandato. Nessa hipótese, o suplente é convocado, conforme o § 1º.
 
 **ATENÇÃO**
 
-A lista do inciso I é fechada: um deputado nomeado secretário de Prefeitura de cidade que não seja capital não está amparado por este artigo. A licença por interesse particular acima de cento e vinte dias não está protegida.
+O inciso I enumera os cargos abrangidos pela regra constitucional. Este T1 não estende essa proteção a cargos que não estejam previstos no dispositivo. Na licença para tratar de interesse particular, o limite constitucional é de cento e vinte dias por sessão legislativa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1891,7 +1890,7 @@ A lista do inciso I é fechada: um deputado nomeado secretário de Prefeitura de
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas tres leituras apresentadas como texto: o art. 56 como "excecao ao art. 54", a enumeracao do inciso I como "lista fechada" e a escolha entre duas remuneracoes no § 3º. O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos. Complementacao autorizada: "o afastamento nao pode ultrapassar" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela redacao). (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -2041,7 +2040,7 @@ O parágrafo fala em aprovação do projeto, e não em sanção da lei. A elabor
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1690 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 198 palavras · 1687 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo de mandato e vedacao de reconducao, frequente em estudo e com controversia interpretativa.
 
 **O QUE DIZ**
@@ -2075,7 +2074,7 @@ Como a vedação se aplica quando a eleição ocorre em legislaturas diferentes 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. A regra textual da eleicao imediatamente subsequente esta corretamente explicada; mudanca de legislatura e aplicacao a Estados e Municipios permanecem fora do nucleo, remetidas a camada JURISPRUDENCIA. Nenhuma jurisprudencia acrescentada.
 
 ---
 
@@ -2563,25 +2562,25 @@ Medida provisória não é lei: é ato com força de lei, sujeito ao regime cons
 
 ### Art. 62, § 1º — Matérias vedadas às medidas provisórias
 
-- **TARGET:** `CF88:ART.62:PAR.1` · `ENTENDA/CF88:ART.62:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.1` · `ENTENDA/CF88:ART.62:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 1º — Matérias vedadas às medidas provisórias
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2485 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 2421 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos e alineas que listam os limites materiais das medidas provisorias, com ressalva expressa.
 
 **O QUE DIZ**
 
-O § 1º proíbe medida provisória sobre: nacionalidade, cidadania, direitos políticos, partidos e direito eleitoral; direito penal, processual penal e processual civil; organização do Judiciário e do Ministério Público e garantias de seus membros; planos plurianuais, diretrizes orçamentárias, orçamento e créditos adicionais e suplementares, com a ressalva do art. 167, § 3º; detenção ou sequestro de bens, poupança ou outros ativos financeiros; matéria reservada a lei complementar; e matéria já tratada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
+O § 1º lista matérias sobre as quais não pode ser editada medida provisória. Entre elas estão nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral; direito penal, processual penal e processual civil; organização do Poder Judiciário e do Ministério Público, inclusive carreira e garantias de seus membros; matérias orçamentárias indicadas no dispositivo, ressalvada a hipótese do art. 167, § 3º; detenção ou sequestro de bens, poupança popular ou outros ativos financeiros; matérias reservadas a lei complementar; e matéria já disciplinada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
 
 **O QUE SIGNIFICA**
 
-Os limites retiram um conjunto de temas do alcance da medida provisória, que é ato editado pelo Presidente.
+O parágrafo estabelece limites materiais à edição de medidas provisórias: determinados assuntos foram retirados desse instrumento pelo próprio texto constitucional.
 
-Alguns temas envolvem direitos, como o direito penal e o eleitoral. Outros envolvem a organização de instituições, como o Judiciário e o Ministério Público, incluídas a carreira e a garantia de seus membros. O inciso II veda medida que vise à detenção ou ao sequestro de bens, de poupança popular ou de outro ativo financeiro, e o inciso IV veda medida sobre matéria já disciplinada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
+Algumas proibições alcançam áreas inteiras, como os temas expressamente enumerados nos incisos e alíneas. Na matéria orçamentária, porém, o próprio texto faz uma ressalva para a hipótese do art. 167, § 3º.
 
-A ressalva do art. 167, § 3º, permite medida provisória para abrir créditos extraordinários em despesas imprevisíveis e urgentes.
+Esse dispositivo permite a abertura de crédito extraordinário para despesas imprevisíveis e urgentes nas situações constitucionalmente previstas.
 
 **EXEMPLO PRÁTICO**
 
@@ -2595,15 +2594,15 @@ A vedação de direito penal se refere ao texto da alínea b; se medidas provis�
 
 - *Crédito extraordinário*: autorização de despesa para situações imprevisíveis e urgentes.
 - *Sequestro de bens*: apreensão judicial ou administrativa de bens.
-- *Limite material*: restrição ao conteúdo que determinado ato pode tratar.
+- *Limite material*: restrição constitucional aos assuntos que determinado instrumento normativo pode disciplinar.
 
 **CAMADA EXTERNA**
 
 - A admissão de medidas provisórias em matéria penal benéfica e o controle dos créditos extraordinários são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diretrizes orçamentárias orçamento e créditos adicionais e s); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a carreira e a garantia de seus membros); TERM_NOT_USED (palavras_dificeis: Limite material)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cidadania direitos políticos partidos políticos e direito el)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Omissoes pequenas ("carreira", "poupanca popular"), repeticao quase literal dos incisos II e IV e TERM_NOT_USED ("Limite material"). O QUE DIZ e O QUE SIGNIFICA substituidos; "Limite material" redefinido e passa a ser usado no texto; exemplo e ATENCAO mantidos; a controversia sobre medida provisoria penal benefica continua fora do T1. (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2702,12 +2701,12 @@ O prazo fica suspenso durante o recesso parlamentar. A prorrogação é automát
 
 ### Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso
 
-- **TARGET:** `CF88:ART.62:PAR.5` · `ENTENDA/CF88:ART.62:PAR.5/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.5` · `ENTENDA/CF88:ART.62:PAR.5/BASE/2`
 - **DISPLAY TITLE:** Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.62:PAR.8`, `CF88:ART.62:PAR.9`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 2018 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 226 palavras · 2086 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 5º, 8º e 9º descrevem o rito (juizo previo dos pressupostos, inicio na Camara e parecer da comissao mista).
 
 **O QUE DIZ**
@@ -2716,13 +2715,13 @@ O § 5º exige que cada Casa, antes de deliberar sobre o mérito, faça um juíz
 
 **O QUE SIGNIFICA**
 
-O rito tem três passos.
+A comissão mista de Deputados e Senadores examina a medida provisória e emite parecer antes da apreciação pelos plenários.
 
-Primeiro, uma comissão mista, formada por deputados e senadores, examina a medida e emite parecer.
+A votação começa na Câmara dos Deputados e depois segue para o Senado Federal.
 
-Depois, a Câmara vota; em seguida, o Senado. Cada plenário vota em sessão própria, e não em sessão conjunta.
+Em cada Casa, antes da deliberação sobre o mérito, deve haver juízo prévio sobre o atendimento dos pressupostos constitucionais da medida provisória, especialmente relevância e urgência.
 
-Antes de discutir o conteúdo, cada Casa verifica se a medida atende aos pressupostos de relevância e urgência. Se entender que não atende, a medida pode ser rejeitada sem exame do mérito.
+Câmara e Senado apreciam a matéria separadamente, e não em sessão conjunta.
 
 **EXEMPLO PRÁTICO**
 
@@ -2730,7 +2729,7 @@ Editada a medida provisória, uma comissão mista é instalada e aprova parecer.
 
 **ATENÇÃO**
 
-O parecer da comissão mista é etapa constitucional, e não mera formalidade regimental. As consequências da falta desse parecer são tema de interpretação constitucional.
+O exame e o parecer da comissão mista estão expressamente previstos no § 9º. As consequências jurídicas da ausência ou de irregularidades nessa etapa pertencem à camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2742,9 +2741,9 @@ O parecer da comissão mista é etapa constitucional, e não mera formalidade re
 
 - A obrigatoriedade do parecer da comissão mista e o controle judicial dos pressupostos de relevância e urgência são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A estrutura misturava as etapas e acrescentava consequencia nao expressa no § 5º ("rejeitada sem exame do merito"); retirada tambem a qualificacao "nao e mera formalidade regimental". O QUE SIGNIFICA e ATENCAO substituidos; O QUE DIZ, exemplo e glossario mantidos. (seções: atencao, o_que_significa)
 
 ---
 
@@ -3035,12 +3034,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 65 — Revisão do projeto pela outra Casa
 
-- **TARGET:** `CF88:ART.65` · `ENTENDA/CF88:ART.65/BASE/1`
+- **TARGET:** `CF88:ART.65` · `ENTENDA/CF88:ART.65/BASE/2`
 - **DISPLAY TITLE:** Art. 65 — Revisão do projeto pela outra Casa
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1415 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1652 bytes · referências 0
 - **Motivo da seleção:** Artigo com regra autonoma do bicameralismo; o paragrafo unico (retorno a Casa iniciadora) e situado aqui.
 
 **O QUE DIZ**
@@ -3049,33 +3048,35 @@ O art. 65 determina que o projeto aprovado por uma Casa passe pela revisão da o
 
 **O QUE SIGNIFICA**
 
-O artigo expressa o bicameralismo: em regra, a lei só existe se as duas Casas concordarem.
+O projeto de lei aprovado por uma das Casas é submetido à revisão da outra em um único turno de discussão e votação.
 
-A Casa revisora tem três caminhos: aprovar como recebeu, rejeitar ou emendar.
+A Casa revisora pode aprová-lo, rejeitá-lo ou modificá-lo.
 
-Quando há emenda, a Casa iniciadora examina apenas as alterações feitas pela revisora. Ela pode aceitar ou recusar as emendas, e a sua decisão prevalece sobre esses pontos.
+Se o aprovar, o projeto segue para sanção ou promulgação, conforme o caso. Se o rejeitar, é arquivado. Se fizer emendas, o projeto retorna à Casa em que a votação começou.
+
+O art. 65 não detalha, por si só, como a Casa iniciadora apreciará as alterações introduzidas pela Casa revisora.
 
 **EXEMPLO PRÁTICO**
 
-Um projeto aprovado no Senado vai à Câmara, que o emenda. O projeto volta ao Senado, que decide se aceita ou não as alterações da Câmara e depois o envia à sanção.
+Um projeto aprovado no Senado é enviado à Câmara. Se a Câmara fizer emendas, o projeto retorna ao Senado, que foi a Casa iniciadora.
 
 **ATENÇÃO**
 
-A revisão é feita em um só turno. Rejeição pela revisora encerra o projeto: ele não volta à Casa iniciadora para nova votação.
+O projeto rejeitado pela Casa revisora é arquivado nos termos do art. 65. A matéria, porém, pode voltar a ser proposta nas condições do art. 67, que contém regra própria para a apresentação de novo projeto sobre matéria anteriormente rejeitada.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Casa revisora*: Casa que examina o projeto depois da Casa iniciadora.
 - *Turno*: cada rodada de discussão e votação de um projeto.
-- *Arquivamento*: encerramento da tramitação do projeto.
+- *Casa iniciadora*: Casa legislativa em que começou a votação do projeto.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Arquivamento)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Removida a descricao de procedimento que nao consta do art. 65 (exame "apenas" das alteracoes e prevalencia da Casa iniciadora). O QUE SIGNIFICA, exemplo e ATENCAO substituidos (remissao ao art. 67); O QUE DIZ mantido. Complementacoes autorizadas: "projeto de lei" na 1a frase (LAW_DEPENDENCY_OMITTED eliminado) e 2a frase da ATENCAO sem "jamais" (ABSOLUTE_CLAIM eliminado), sem resolucao registrada. Glossario: "Arquivamento" removido (TERM_NOT_USED). "Casa iniciadora" acrescentado (termo presente no T1). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3085,12 +3086,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 66 — Sanção, veto e promulgação
 
-- **TARGET:** `CF88:ART.66` · `ENTENDA/CF88:ART.66/BASE/1`
+- **TARGET:** `CF88:ART.66` · `ENTENDA/CF88:ART.66/BASE/2`
 - **DISPLAY TITLE:** Art. 66 — Sanção, veto e promulgação
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1490 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 276 palavras · 2078 bytes · referências 0
 - **Motivo da seleção:** Visao geral da fase final do processo legislativo; veto, apreciacao do veto e promulgacao tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -3099,25 +3100,27 @@ O art. 66 regula o que acontece depois da votação: a Casa que concluiu a vota�
 
 **O QUE SIGNIFICA**
 
-Sanção é a concordância do Presidente com o projeto, que se transforma em lei. Veto é a discordância, por inconstitucionalidade ou por contrariedade ao interesse público.
+Sanção é a concordância do Presidente da República com o projeto aprovado pelo Legislativo. O veto ocorre quando o Presidente discorda do projeto, total ou parcialmente, por inconstitucionalidade ou por contrariedade ao interesse público.
 
-O veto não é definitivo: o Congresso pode derrubá-lo.
+O veto não encerra necessariamente o processo legislativo, porque o Congresso Nacional pode apreciá-lo e rejeitá-lo nas condições previstas no próprio artigo.
 
-Depois da sanção ou da derrubada do veto, a lei precisa ser promulgada, isto é, ter a sua existência atestada, e publicada para produzir efeitos.
+Depois da sanção ou, quando for o caso, da rejeição do veto, seguem-se as regras constitucionais de promulgação. O § 7º prevê inclusive quem deve promulgar a lei caso o Presidente da República não o faça nas hipóteses ali previstas.
+
+O art. 66 não disciplina o momento em que a lei começa a produzir efeitos.
 
 **EXEMPLO PRÁTICO**
 
-Aprovado o projeto, o Senado o envia ao Presidente, que sanciona a maior parte e veta dois artigos. Os artigos vetados voltam ao Congresso para apreciação do veto.
+Depois de aprovado o projeto, a Casa em que a votação terminou o envia ao Presidente da República. Se ele sancionar parte do texto e vetar determinados dispositivos, o veto será submetido à apreciação do Congresso Nacional.
 
 **ATENÇÃO**
 
-Sanção e promulgação são atos diferentes: a sanção transforma o projeto em lei; a promulgação atesta que a lei existe e determina o seu cumprimento.
+Sanção e promulgação são etapas distintas. A sanção corresponde à concordância presidencial com o projeto, inclusive na forma tácita prevista no § 3º. A promulgação é o ato formal que declara a existência da lei resultante do processo legislativo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Sanção*: concordância do Presidente com o projeto, que o transforma em lei.
-- *Veto*: discordância do Presidente com o projeto, total ou parcial.
-- *Promulgação*: ato que atesta a existência da lei e ordena o seu cumprimento.
+- *Sanção*: concordância do Presidente da República com o projeto aprovado.
+- *Veto*: discordância presidencial, total ou parcial, fundada em inconstitucionalidade ou contrariedade ao interesse público.
+- *Promulgação*: ato formal que declara a existência da lei resultante do processo legislativo.
 
 **CAMADA EXTERNA**
 
@@ -3125,18 +3128,18 @@ Sanção e promulgação são atos diferentes: a sanção transforma o projeto e
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a afirmacao "publicada para produzir efeitos" (publicacao e inicio da vigencia nao sao disciplinados pelo art. 66). O QUE SIGNIFICA, exemplo, ATENCAO e glossario (Sancao, Veto, Promulgacao) substituidos; O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita
 
-- **TARGET:** `CF88:ART.66:PAR.1` · `ENTENDA/CF88:ART.66:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.66:PAR.1` · `ENTENDA/CF88:ART.66:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.66:PAR.2`, `CF88:ART.66:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 1955 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1927 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 1º, 2º e 3º formam a disciplina do veto pelo Presidente (prazo, comunicacao, alcance do veto parcial e silencio).
 
 **O QUE DIZ**
@@ -3145,13 +3148,11 @@ O § 1º permite ao Presidente vetar o projeto, total ou parcialmente, por incon
 
 **O QUE SIGNIFICA**
 
-O veto tem dois fundamentos possíveis: jurídico, quando o Presidente entende que o projeto é inconstitucional, ou político, quando o considera contrário ao interesse público.
+O Presidente da República pode vetar o projeto por dois fundamentos constitucionais: considerar o texto inconstitucional ou contrário ao interesse público.
 
-O prazo é de quinze dias úteis, e os motivos devem ser comunicados em quarenta e oito horas.
+O veto pode atingir todo o projeto ou apenas parte dele. No veto parcial, porém, o § 2º exige que seja alcançado o texto integral de artigo, parágrafo, inciso ou alínea; não é permitido vetar apenas palavras ou expressões isoladas.
 
-O veto parcial não pode suprimir palavras ou expressões isoladas: precisa atingir um dispositivo inteiro. Isso impede que o Presidente mude o sentido do texto aprovado.
-
-Se o Presidente nada fizer no prazo, ocorre a sanção tácita.
+Se o Presidente permanecer em silêncio durante o prazo constitucional, ocorre a sanção tácita prevista no § 3º.
 
 **EXEMPLO PRÁTICO**
 
@@ -3159,13 +3160,12 @@ O Presidente concorda com um projeto, mas não com um inciso. Ele pode vetar ess
 
 **ATENÇÃO**
 
-O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze dias. Os motivos do veto são dirigidos ao Presidente do Senado porque o veto é apreciado em sessão conjunta, presidida por ele.
+O § 1º fixa quinze dias úteis para o veto e quarenta e oito horas para a comunicação dos seus motivos ao Presidente do Senado Federal. Separadamente, o § 4º determina que o veto seja apreciado em sessão conjunta do Congresso Nacional.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Veto parcial*: veto que atinge apenas parte do projeto.
 - *Sanção tácita*: sanção que decorre do silêncio do Presidente no prazo.
-- *Veto jurídico*: veto fundado na inconstitucionalidade do projeto.
 
 **CAMADA EXTERNA**
 
@@ -3173,7 +3173,7 @@ O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze d
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas teleologia ("impede que o Presidente mude o sentido"), causalidade inferida ("porque o veto e apreciado em sessao conjunta") e rotulos doutrinarios ("juridico"/"politico"). O QUE SIGNIFICA e ATENCAO substituidos; glossario sem "Veto juridico"; O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3262,7 +3262,7 @@ O parágrafo trata da promulgação nos casos dos §§ 3º e 5º. Quando o Presi
 
 —
 
-**WARNINGS:** PARENT_REPETITION (*: CF88:ART.66: 0.25)
+**WARNINGS:** —
 
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
 
