@@ -10,7 +10,7 @@ Data de referência: 2026-10-04 · gerado por `ENTENDA_ENGINE/build_entenda_batc
 | SELECT | 96 = 93 explicações novas + 3 pilotos reutilizados |
 | SKIP | 213 (todos com motivo e explicação que os cobre) |
 | Sub-blocos (vigentes / novas / reutilizadas / SKIP) | A 17/5/0/12 · B 153/44/0/109 · C 92/25/3/64 · D 47/19/0/28 |
-| Papéis das novas | BLOCK 18, DEVICE 18, ITEM 7, OVERVIEW 26 |
+| Papéis das novas | BLOCK 17, DEVICE 16, ITEM 6, OVERVIEW 21 |
 
 ## Dois eixos
 
@@ -21,41 +21,50 @@ Número, percentual, prazo, idade, votos, quórum, BLOCK, lista, artigo longo, r
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
 | LOW | 42 | | SIMPLE | 5 |
-| MEDIUM | 27 | | STRUCTURED | 54 |
-| HIGH | 0 | | EXTERNAL | 10 |
+| MEDIUM | 18 | | STRUCTURED | 47 |
+| HIGH | 0 | | EXTERNAL | 8 |
 
-Jurisprudência: CONTEXT_ONLY 9, NONE 60 (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
+Jurisprudência: CONTEXT_ONLY 7, NONE 53 (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
 
 ## Filas
 
 | Fila | Agora | Checkpoint |
 |---|---|---|
 | A_CLEAN_LOW | 42 | 1 |
-| B_CLEAN_MEDIUM | 27 | 0 |
+| B_CLEAN_MEDIUM | 18 | 0 |
 | C_QUICK_REVIEW | 0 | 3 |
-| D_FULL_HUMAN_REVIEW | 0 | 65 |
+| D_FULL_HUMAN_REVIEW | 0 | 56 |
 | E_HARD_FAIL | 0 | 0 |
 
-Risco no checkpoint: HIGH 65, LOW 3, MEDIUM 1.
+Risco no checkpoint: HIGH 56, LOW 3, MEDIUM 1.
 
-**Migração dos 65 D antigos:** 65 saíram de D → A_CLEAN_LOW 38, B_CLEAN_MEDIUM 27.
+**Migração dos 56 D antigos:** 56 saíram de D → A_CLEAN_LOW 38, B_CLEAN_MEDIUM 18.
 
 ## Rodada D (revisão jurídica humana dos 11 itens D)
 
-Escopo `CF88_BATCH06_TRIAGE_QUEUE_D, CF88_BATCH06_TRIAGE_QUEUE_C` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · 10 aprovados sem alteração jurídica · 14 ajustados e aprovados · 0 rejeitados.
+Escopo `CF88_BATCH06_TRIAGE_QUEUE_D, CF88_BATCH06_TRIAGE_QUEUE_C, CF88_BATCH06_TRIAGE_QUEUE_B_PART1` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · 11 aprovados sem alteração jurídica · 22 ajustados e aprovados · 0 rejeitados.
 
 | Target | Versão aprovada | Decisão | Proveniência | Portão de checks |
 |---|---|---|---|---|
 | `CF88:ART.43` | v1 | APPROVED | 0 item(ns) | PASS |
 | `CF88:ART.45:PAR.1` | v1 | APPROVED | 1 item(ns) | PASS |
+| `CF88:ART.48` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.49:INC.I` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.50` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.50:PAR.2` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.51:INC.I` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.52` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.52:INC.I` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.52:INC.X` | v1 | APPROVED | 0 item(ns) | PASS |
 | `CF88:ART.52:PAR.UNICO` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
+| `CF88:ART.53` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.53:CAPUT` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
 | `CF88:ART.53:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
 | `CF88:ART.53:PAR.2` | v2 | APPROVED_AFTER_ADJUSTMENT | 3 item(ns) | PASS |
 | `CF88:ART.53:PAR.3` | v2 | APPROVED_AFTER_ADJUSTMENT | 1 item(ns) | PASS |
+| `CF88:ART.53:PAR.8` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.54:INC.I` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.55` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.55:INC.VI` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
 | `CF88:ART.55:PAR.2` | v1 | APPROVED | 1 item(ns) | PASS |
 | `CF88:ART.57` | v2 | APPROVED_AFTER_ADJUSTMENT | 1 item(ns) | PASS |
@@ -71,8 +80,8 @@ Escopo `CF88_BATCH06_TRIAGE_QUEUE_D, CF88_BATCH06_TRIAGE_QUEUE_C` · decisões e
 | `CF88:ART.73:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 1 item(ns) | PASS |
 | `CF88:ART.75` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
 
-Versões anteriores preservadas como RETIRED: 14 (v1 dos ajustados).
-Acervo HUMAN_APPROVED_T1: 289 antes → **313** depois (+24 do Batch06; os 3 pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: **69** (A, B e C não foram decididos).
+Versões anteriores preservadas como RETIRED: 22 (v1 dos ajustados).
+Acervo HUMAN_APPROVED_T1: 289 antes → **322** depois (+33 do Batch06; os 3 pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: **60** (A, B e C não foram decididos).
 
 ## Motivos dos D pendentes
 
@@ -86,7 +95,7 @@ Acervo HUMAN_APPROVED_T1: 289 antes → **313** depois (+24 do Batch06; os 3 pil
 
 - AUTOMATIC_CONSEQUENCE: 1 alerta(s) rebaixado(s) para INFO
 - TELEOLOGY_SPECULATIVE: 4 alerta(s) rebaixado(s) para INFO
-- UNIVERSAL_CLAIM: 6 alerta(s) rebaixado(s) para INFO
+- UNIVERSAL_CLAIM: 5 alerta(s) rebaixado(s) para INFO
 - "incentivo(s)" como substantivo do próprio texto ou como matéria da lei não é teleologia; "todos os"/"só pode" que reproduzem quórum/condição explícitos não são universalização; "automaticamente" expresso no artigo não é consequência inventada.
 - Rótulo truncado do fato externo ("Lei Complementar nº 7") passa a mostrar a identificação inteira; fato só na camada externa vai para C (o núcleo T1 não depende dele).
 
@@ -98,16 +107,16 @@ Acervo HUMAN_APPROVED_T1: 289 antes → **313** depois (+24 do Batch06; os 3 pil
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 90.413 |
-| Modelo antigo (pacote completo de todos os itens) | 171.470 |
+| Rascunhos (5 seções + glossário) | 77.305 |
+| Modelo antigo (pacote completo de todos os itens) | 141.747 |
 | Checkpoint (pacotes apresentados, D=89) | 265.430 |
-| **Agora (pacotes apresentados)** | **55.054** |
-| — BATCH06_COMPACT_CLEAN_REVIEW.md | 54.547 |
+| **Agora (pacotes apresentados)** | **47.349** |
+| — BATCH06_COMPACT_CLEAN_REVIEW.md | 46.842 |
 | — BATCH06_FULL_HUMAN_REVIEW.md | 218 |
 | — BATCH06_HARD_FAIL_REPORT.md | 119 |
 | — BATCH06_QUICK_REVIEW.md | 170 |
-| Redução vs. modelo antigo | 116.416 (67.9%) |
-| Redução vs. checkpoint | 210.376 (79.3%) |
+| Redução vs. modelo antigo | 94.398 (66.6%) |
+| Redução vs. checkpoint | 218.081 (82.2%) |
 
 Pacote D: GERADO (limite do diagnóstico: 40% em D).
 

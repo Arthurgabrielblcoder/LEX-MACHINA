@@ -466,7 +466,106 @@ Lote `ENTENDA_CF_PRODUCTION_BATCH_06` · 2026-10-04 · nenhum item aprovado (AUT
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (18)
+## B — CLEAN_MEDIUM (27)
+
+### `CF88:ART.48` — Art. 48 — Competência legislativa do Congresso com sanção
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanção
+- Ponto jurídico: O art. 48 atribui ao Congresso Nacional, com sanção do Presidente da República, legislar sobre todas as matérias de competência da União, e dá exemplos: sistema tributário, orçamento e dívida…
+- Interpretação principal: Este artigo trata das matérias decididas por lei.
+- ATENÇÃO: Competência da União para legislar (arts. 22 e 24) não é o mesmo que competência do Congresso: o art. 48 diz quem vota as leis federais e com qual participação do Presidente.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: sobre todas as matérias de competência da união)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.49:INC.I` — Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: As etapas de incorporação de tratados ao direito interno e a…
+- Ponto jurídico: O inciso I reserva ao Congresso a palavra final sobre tratados e outros atos internacionais que tragam encargos ou compromissos gravosos ao patrimônio nacional.
+- Interpretação principal: Quem celebra tratados em nome do Brasil é o Presidente da República (art. 84, VIII), mas, quando o tratado gera ônus relevantes para o país, a palavra final cabe ao…
+- ATENÇÃO: O inciso fala em encargos ou compromissos gravosos.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.50` — Art. 50 — Convocação de ministros e pedidos de informação
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crime
+- Ponto jurídico: O art. 50 permite que a Câmara, o Senado ou qualquer de suas comissões convoque Ministro de Estado, chefes de órgãos ligados diretamente à Presidência e quem preside o Comitê Gestor do Imposto sobre…
+- Interpretação principal: O artigo é um instrumento de fiscalização do Executivo pelo Legislativo.
+- ATENÇÃO: O Presidente da República não está entre as autoridades que podem ser convocadas por este artigo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: comitê gestor do imposto sobre bens e serviços), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.50:PAR.2` — Art. 50, § 2º — Pedidos escritos de informação
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crime
+- Ponto jurídico: O § 2º permite que as Mesas da Câmara e do Senado enviem pedidos escritos de informação a Ministros de Estado e às demais autoridades do caput.
+- Interpretação principal: Este é o meio escrito de fiscalização, complementar à convocação pessoal do caput.
+- ATENÇÃO: O prazo de trinta dias se conta para o atendimento do pedido.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: pedidos escritos de informação a ministros de…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.52` — Art. 52 — Competências privativas do Senado
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 52 lista as competências privativas do Senado Federal.
+- Interpretação principal: O Senado, Casa de representação dos Estados, recebe funções ligadas ao equilíbrio federativo, como fixar limites para o endividamento da União, dos Estados, do Distrito…
+- ATENÇÃO: Várias competências do Senado em matéria financeira dependem de proposta do Presidente da República, como a fixação de limites globais da dívida consolidada (inciso VI).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da união dos estados do distrito federal e), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.52:INC.I` — Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A definição dos crimes de responsabilidade e o rito do…; SENSITIVE_THEME: crimes
+- Ponto jurídico: Os incisos I e II indicam quem o Senado processa e julga por crime de responsabilidade: o Presidente e o Vice-Presidente da República; os Ministros de Estado e os Comandantes das três Forças Armadas,…
+- Interpretação principal: Nesses casos o Senado não legisla: atua como órgão de julgamento político, apurando infrações político-administrativas das mais altas autoridades.
+- ATENÇÃO: Crime de responsabilidade não é crime comum: nos crimes comuns, o Presidente é julgado pelo Supremo Tribunal Federal (art. 102, I, b).
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o presidente e o vice presidente da república)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.53` — Art. 53 — Imunidades e prerrogativas dos parlamentares
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: invioláv
+- Ponto jurídico: O art. 53 reúne as garantias dos deputados e senadores ligadas ao exercício do mandato: a inviolabilidade por opiniões, palavras e votos; o julgamento perante o Supremo Tribunal Federal; os limites à…
+- Interpretação principal: Essas garantias não são privilégios pessoais: protegem a função parlamentar, para que o representante possa falar, votar e fiscalizar sem medo de perseguição.
+- ATENÇÃO: As imunidades começam com a expedição do diploma pela Justiça Eleitoral, antes mesmo da posse.
+- Dependência externa: nenhuma
+- Warnings: HISTORICAL_CLAIM_SUPPORTED(vem, em grande parte, da Emenda…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.53:PAR.8` — Art. 53, § 8º — Imunidades durante o estado de sítio
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: imunidade
+- Ponto jurídico: O § 8º mantém as imunidades de deputados e senadores durante o estado de sítio.
+- Interpretação principal: O estado de sítio permite restringir garantias de toda a população.
+- ATENÇÃO: A suspensão não é automática nem decidida pelo Executivo: depende de votação da própria Casa.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: que sejam incompatíveis com a execução da medida)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.55` — Art. 55 — Perda do mandato de deputado ou senador
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: Perderá o mandato
+- Ponto jurídico: O art. 55 lista as hipóteses em que deputado ou senador perde o mandato: violar as proibições do art. 54; ter conduta declarada incompatível com o decoro; faltar a um terço das sessões ordinárias da…
+- Interpretação principal: O artigo enumera as causas e, nos parágrafos, define quem decide em cada caso e com quais garantias.
+- ATENÇÃO: Perda do mandato não é o mesmo que suspensão de direitos políticos, embora esta seja uma das causas daquela (inciso IV).
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(fracao 1/3 ), NUMBER_FROM_OTHER_DEVICE(fracao 1/3 )
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.55:PAR.1` — Art. 55, § 1º — O que é incompatível com o decoro parlamentar
 

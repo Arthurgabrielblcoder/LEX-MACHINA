@@ -3,7 +3,7 @@
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 24
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 33
 - Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 2 · não resolvidos: 0
 
 ## Risco HIGH
@@ -27,32 +27,32 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 48 — Competência legislativa do Congresso com sanção
 
-- `CF88:ART.48` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.48` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanção
 
 ### Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional
 
-- `CF88:ART.49:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.49:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: As etapas de incorporação de tratados ao direito interno e a hierarquia de tratados de direitos humanos (art. 5º, § 3º) são temas da doutrin
 
 ### Art. 50 — Convocação de ministros e pedidos de informação
 
-- `CF88:ART.50` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.50` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crime
 
 ### Art. 50, § 2º — Pedidos escritos de informação
 
-- `CF88:ART.50:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.50:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crime
 
 ### Art. 52 — Competências privativas do Senado
 
-- `CF88:ART.52` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.52` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 
 ### Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade
 
-- `CF88:ART.52:INC.I` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.52:INC.I` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A definição dos crimes de responsabilidade e o rito do julgamento estão na lei especial e na camada JURISPRUDÊNCIA.; SENSITIVE_THEME: crimes
 
 ### Art. 52, parágrafo único — Julgamento político: presidência, quórum e pena
@@ -62,7 +62,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 53 — Imunidades e prerrogativas dos parlamentares
 
-- `CF88:ART.53` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.53` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: invioláv
 
 ### Art. 53, caput — Inviolabilidade por opiniões, palavras e votos
@@ -82,12 +82,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 53, § 8º — Imunidades durante o estado de sítio
 
-- `CF88:ART.53:PAR.8` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.53:PAR.8` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: imunidade
 
 ### Art. 55 — Perda do mandato de deputado ou senador
 
-- `CF88:ART.55` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.55` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: Perderá o mandato
 
 ### Art. 55, § 1º — O que é incompatível com o decoro parlamentar

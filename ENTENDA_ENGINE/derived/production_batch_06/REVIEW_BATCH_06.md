@@ -489,12 +489,12 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 48 — Competência legislativa do Congresso com sanção
 
-- **TARGET:** `CF88:ART.48` · `ENTENDA/CF88:ART.48/BASE/1`
+- **TARGET:** `CF88:ART.48` · `ENTENDA/CF88:ART.48/BASE/2`
 - **DISPLAY TITLE:** Art. 48 — Competência legislativa do Congresso com sanção
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 302 palavras · 2285 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 289 palavras · 2227 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: o caput define a competencia com sancao presidencial; os incisos sao itens curtos de materia explicados aqui, sem explicacao propria.
 
 **O QUE DIZ**
@@ -505,7 +505,7 @@ O art. 48 atribui ao Congresso Nacional, com sanção do Presidente da Repúblic
 
 Este artigo trata das matérias decididas por lei. Lei passa pelo Congresso e depois pelo Presidente da República, que pode sancionar ou vetar.
 
-O caput faz uma separação importante: as matérias dos arts. 49, 51 e 52 não dependem de sanção. O art. 49 cuida da competência exclusiva do Congresso, exercida por decreto legislativo; os arts. 51 e 52, das competências privativas da Câmara e do Senado, exercidas por resolução.
+O caput faz uma separação importante: as matérias dos arts. 49, 51 e 52 não dependem de sanção presidencial. Esses dispositivos reúnem competências constitucionais próprias do Congresso Nacional, da Câmara dos Deputados e do Senado Federal. A forma de exercício e o instrumento utilizado dependem da competência específica.
 
 A lista do art. 48 é exemplificativa: a palavra "especialmente" mostra que outras matérias federais também são legisladas dessa forma.
 
@@ -521,7 +521,6 @@ Competência da União para legislar (arts. 22 e 24) não é o mesmo que compet�
 
 - *Sanção*: concordância do Presidente da República com o projeto de lei aprovado, que o transforma em lei.
 - *Anistia*: perdão concedido por lei a fatos considerados infrações.
-- *Decreto legislativo*: ato do Congresso que trata de matéria exclusiva dele, sem sanção presidencial.
 - *Subsídio*: remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º).
 
 **CAMADA EXTERNA**
@@ -530,7 +529,7 @@ Competência da União para legislar (arts. 22 e 24) não é o mesmo que compet�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: sobre todas as matérias de competência da união)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A frase sobre decreto legislativo (art. 49) e resolucao (arts. 51 e 52) generalizava a especie normativa de competencias heterogeneas; substituida por redacao que so afirma a dispensa de sancao e que o instrumento depende da competencia especifica. Restante mantido. Glossario: "Decreto legislativo" removido (termo deixou de aparecer no corpo e na fonte). (seções: o_que_significa, palavras_dificeis)
 
 ---
 
@@ -588,25 +587,25 @@ O art. 49 trata da competência do Congresso como um todo. As competências priv
 
 ### Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional
 
-- **TARGET:** `CF88:ART.49:INC.I` · `ENTENDA/CF88:ART.49:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.49:INC.I` · `ENTENDA/CF88:ART.49:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 204 palavras · 1914 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1841 bytes · referências 0
 - **Motivo da seleção:** Item de alta utilidade interpretativa: papel do Congresso na incorporacao de tratados.
 
 **O QUE DIZ**
 
-O inciso I reserva ao Congresso a palavra final sobre tratados e outros atos internacionais que tragam encargos ou compromissos gravosos ao patrimônio nacional.
+O inciso I atribui ao Congresso Nacional a competência de deliberar sobre tratados, acordos ou atos internacionais que imponham encargos ou compromissos gravosos ao patrimônio nacional.
 
 **O QUE SIGNIFICA**
 
-Quem celebra tratados em nome do Brasil é o Presidente da República (art. 84, VIII), mas, quando o tratado gera ônus relevantes para o país, a palavra final cabe ao Congresso.
+O art. 84, VIII atribui ao Presidente da República a celebração de tratados, convenções e atos internacionais, sujeita ao referendo do Congresso Nacional.
 
-Na prática, o Presidente assina o tratado e o envia ao Congresso, que o aprova ou rejeita por decreto legislativo. Sem essa aprovação, o compromisso não pode ser assumido de forma definitiva.
+Quando o ato internacional se enquadra no art. 49, I, a manifestação do Congresso integra o procedimento constitucional necessário para sua aprovação.
 
-A expressão "resolver definitivamente" indica que a manifestação do Congresso é condição para que o Brasil se obrigue.
+A atuação do Congresso e a atuação do Presidente são etapas distintas. Este dispositivo não disciplina sozinho todas as fases de celebração, ratificação ou produção de efeitos internos do tratado.
 
 **EXEMPLO PRÁTICO**
 
@@ -620,7 +619,6 @@ O inciso fala em encargos ou compromissos gravosos. Quais tratados exigem essa a
 
 - *Tratado*: acordo formal entre Estados ou organizações internacionais.
 - *Encargo gravoso*: obrigação que gera ônus significativo, como custo financeiro ou compromisso relevante.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
 
 **CAMADA EXTERNA**
 
@@ -628,7 +626,7 @@ O inciso fala em encargos ou compromissos gravosos. Quais tratados exigem essa a
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Palavra final" e "o compromisso nao pode ser assumido de forma definitiva" simplificavam a articulacao entre o art. 49, I e o art. 84, VIII; O QUE DIZ e O QUE SIGNIFICA substituidos. Exemplo, ATENCAO e external_layer_notes mantidos; hierarquia e incorporacao seguem na camada externa. Glossario: "Decreto legislativo" removido (deixou de aparecer no corpo; decisao complementar). (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -735,7 +733,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1732 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 213 palavras · 1729 bytes · referências 0
 - **Motivo da seleção:** Visao geral: convocacao para comparecimento pessoal (caput) e comparecimento espontaneo (§ 1º); o § 2º (pedidos escritos) tem explicacao propria.
 
 **O QUE DIZ**
@@ -769,18 +767,18 @@ O Presidente da República não está entre as autoridades que podem ser convoca
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: comitê gestor do imposto sobre bens e serviços); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O ministro deve comparecer na data marcada;)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. "Reforma tributaria de 2023" corresponde a alteracao introduzida pela EC 132/2023, respaldada pela anotacao de vigencia versionada (CF88:ART.50:CAPUT, redacao dada pela Emenda Constitucional n. 132, de 2023); o mecanismo de provenance nao exige formalizacao (nenhum alerta aberto). NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
 ### Art. 50, § 2º — Pedidos escritos de informação
 
-- **TARGET:** `CF88:ART.50:PAR.2` · `ENTENDA/CF88:ART.50:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.50:PAR.2` · `ENTENDA/CF88:ART.50:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 50, § 2º — Pedidos escritos de informação
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.50`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1547 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1733 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo e sancao propria (crime de responsabilidade).
 
 **O QUE DIZ**
@@ -789,32 +787,32 @@ O § 2º permite que as Mesas da Câmara e do Senado enviem pedidos escritos de 
 
 **O QUE SIGNIFICA**
 
-Este é o meio escrito de fiscalização, complementar à convocação pessoal do caput.
+Este é o mecanismo escrito de obtenção de informações previsto pelo artigo.
 
-O pedido parte da Mesa da Casa, e não de qualquer parlamentar isoladamente: o deputado ou senador apresenta o requerimento, e a Mesa o encaminha.
+A Constituição atribui às Mesas da Câmara dos Deputados e do Senado Federal o encaminhamento dos pedidos às autoridades alcançadas pelo dispositivo.
 
-Três condutas são punidas: recusar a resposta, deixar de responder em trinta dias e responder com informações falsas.
+O § 2º prevê três situações que configuram crime de responsabilidade: a recusa, o não atendimento dentro de trinta dias e a prestação de informações falsas.
 
 **EXEMPLO PRÁTICO**
 
-Um senador apresenta requerimento de informações sobre contratos de um ministério. A Mesa do Senado envia o pedido ao ministro, que tem trinta dias para responder. Se a resposta não vier no prazo, configura-se a hipótese de crime de responsabilidade prevista no parágrafo.
+A Mesa do Senado encaminha a um Ministro de Estado pedido escrito de informações sobre contratos de determinado órgão. Se o pedido não for atendido no prazo constitucional de trinta dias, incide a hipótese de crime de responsabilidade prevista no § 2º.
 
 **ATENÇÃO**
 
-O prazo de trinta dias se conta para o atendimento do pedido. A apuração do crime de responsabilidade segue procedimento próprio, previsto em lei.
+A Constituição fixa o prazo de trinta dias para atendimento do pedido e qualifica a recusa, o não atendimento e a prestação de informações falsas como crime de responsabilidade. O procedimento de apuração dessa responsabilidade não é disciplinado por este parágrafo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Mesa*: órgão de direção de cada Casa legislativa, composto pelo presidente, vice-presidentes e secretários.
-- *Requerimento de informação*: pedido formal de dados ou esclarecimentos dirigido a uma autoridade.
+- *Mesa*: órgão de direção da respectiva Casa legislativa.
+- *Pedido escrito de informação*: solicitação formal de informações encaminhada pela Mesa da Câmara dos Deputados ou do Senado Federal às autoridades alcançadas pelo dispositivo.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pedidos escritos de informação a ministros de estado)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pedidos escritos de informação a ministros de estado); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da câmara dos deputados e do senado federal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O texto introduzia procedimento regimental nao contido no § 2º ("o deputado ou senador apresenta o requerimento, e a Mesa o encaminha"). O QUE SIGNIFICA, exemplo, ATENCAO e glossario "Mesa" substituidos; composicao da Mesa retirada. Glossario: "Requerimento de informacao" substituido por "Pedido escrito de informacao" (vocabulario do § 2º; decisao complementar). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -920,12 +918,12 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 52 — Competências privativas do Senado
 
-- **TARGET:** `CF88:ART.52` · `ENTENDA/CF88:ART.52/BASE/1`
+- **TARGET:** `CF88:ART.52` · `ENTENDA/CF88:ART.52/BASE/2`
 - **DISPLAY TITLE:** Art. 52 — Competências privativas do Senado
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1792 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 281 palavras · 2240 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: processo por crime de responsabilidade, aprovacao de autoridades e suspensao de lei tem explicacao propria; competencias financeiras e de organizacao sao situadas aqui.
 
 **O QUE DIZ**
@@ -934,11 +932,11 @@ O art. 52 lista as competências privativas do Senado Federal. Entre elas estão
 
 **O QUE SIGNIFICA**
 
-O Senado, Casa de representação dos Estados, recebe funções ligadas ao equilíbrio federativo, como fixar limites para o endividamento da União, dos Estados, do Distrito Federal e dos Municípios.
+O art. 52 reúne competências privativas do Senado em diferentes áreas. Algumas dizem respeito ao julgamento de autoridades, outras à aprovação prévia de determinadas escolhas, ao controle financeiro e federativo, à organização da própria Casa e a outras funções previstas na Constituição.
 
-Recebe também funções de controle sobre autoridades: julga as mais altas por crime de responsabilidade e aprova, depois de sabatina, a escolha de ministros de tribunais, diretores do Banco Central, embaixadores e outros.
+As hipóteses de aprovação de autoridades não seguem todas o mesmo procedimento. O inciso III prevê arguição pública para as autoridades ali relacionadas. O inciso IV trata separadamente dos chefes de missão diplomática de caráter permanente e prevê arguição em sessão secreta.
 
-Essas competências são exercidas por resolução, sem sanção presidencial.
+Também não existe um único instrumento normativo para todas as competências do artigo. O próprio inciso XIII, por exemplo, prevê iniciativa de lei para a fixação da remuneração correspondente.
 
 **EXEMPLO PRÁTICO**
 
@@ -946,31 +944,31 @@ Um Estado que deseja contrair empréstimo com um banco estrangeiro precisa de au
 
 **ATENÇÃO**
 
-Várias competências do Senado em matéria financeira dependem de proposta do Presidente da República, como a fixação de limites globais da dívida consolidada (inciso VI).
+O inciso VI exige expressamente proposta do Presidente da República para a fixação dos limites globais da dívida consolidada. Os incisos VII, VIII e IX contêm outras competências financeiras do Senado, mas não repetem essa exigência no texto constitucional.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Sabatina*: arguição pública de um indicado a cargo antes da votação sobre sua escolha.
+- *Arguição*: questionamento do indicado antes da deliberação do Senado; conforme a hipótese constitucional, pode ocorrer publicamente ou em sessão secreta.
 - *Dívida consolidada*: conjunto das obrigações financeiras de longo prazo de um ente público.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da união dos estados do distrito federal e); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Estado que deseja contrair empréstimo com um banco estran)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: dos chefes de missão diplomática de caráter permanente); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Estado que deseja contrair empréstimo com um banco estran)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Tres correcoes: (1) nao ha um unico instrumento para todas as competencias (o inciso XIII preve iniciativa de lei); (2) arguicao publica no inciso III e em sessao secreta no inciso IV (chefes de missao diplomatica); (3) so o inciso VI exige proposta do Presidente. O QUE SIGNIFICA, ATENCAO substituidos; glossario: "Sabatina" substituido por "Arguicao", expressao do proprio texto constitucional (decisao complementar). O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade
 
-- **TARGET:** `CF88:ART.52:INC.I` · `ENTENDA/CF88:ART.52:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.52:INC.I` · `ENTENDA/CF88:ART.52:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** `CF88:ART.52:INC.II`
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.52`, `CF88:ART.52:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 2137 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 271 palavras · 2297 bytes · referências 1
 - **Motivo da seleção:** Bloco: incisos I e II definem, juntos, quem o Senado julga por crime de responsabilidade.
 
 **O QUE DIZ**
@@ -983,7 +981,7 @@ Nesses casos o Senado não legisla: atua como órgão de julgamento político, a
 
 Os incisos têm alcances diferentes. O inciso I trata do chefe do Executivo e de quem com ele responde por fatos conexos. O inciso II alcança autoridades de outros Poderes e órgãos, que respondem por fatos próprios.
 
-Para o Presidente da República, o julgamento só começa depois da autorização da Câmara (art. 51, I). O modo de julgar e a pena estão no parágrafo único, com explicação própria.
+Além das competências do Senado previstas nestes incisos, o art. 51, I atribui à Câmara dos Deputados a autorização, por dois terços de seus membros, para a instauração de processo contra o Presidente, o Vice-Presidente da República e os Ministros de Estado. O art. 86 contém ainda regras específicas relativas ao Presidente da República.
 
 **EXEMPLO PRÁTICO**
 
@@ -1004,7 +1002,7 @@ Crime de responsabilidade não é crime comum: nos crimes comuns, o Presidente �
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o presidente e o vice presidente da república)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Lista de autoridades adequada. A mencao ao art. 51, I estava restrita ao Presidente; o terceiro paragrafo de O QUE SIGNIFICA foi substituido (autorizacao da Camara para Presidente, Vice-Presidente e Ministros de Estado; art. 86 com regras especificas do Presidente). Restante mantido; camada externa continua JURISPRUDENCE CONTEXT_ONLY. (seções: o_que_significa)
 
 ---
 
@@ -1149,12 +1147,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 53 — Imunidades e prerrogativas dos parlamentares
 
-- **TARGET:** `CF88:ART.53` · `ENTENDA/CF88:ART.53/BASE/1`
+- **TARGET:** `CF88:ART.53` · `ENTENDA/CF88:ART.53/BASE/2`
 - **DISPLAY TITLE:** Art. 53 — Imunidades e prerrogativas dos parlamentares
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2037 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 304 palavras · 2308 bytes · referências 0
 - **Motivo da seleção:** Visao geral: organiza as garantias do mandato (inviolabilidade, foro, prisao, processo, testemunho, incorporacao militar e estado de sitio); as principais tem explicacao propria e o § 7º e situado aqui.
 
 **O QUE DIZ**
@@ -1163,11 +1161,11 @@ O art. 53 reúne as garantias dos deputados e senadores ligadas ao exercício do
 
 **O QUE SIGNIFICA**
 
-Essas garantias não são privilégios pessoais: protegem a função parlamentar, para que o representante possa falar, votar e fiscalizar sem medo de perseguição.
+O artigo reúne diferentes garantias constitucionais relacionadas ao exercício do mandato parlamentar.
 
-Costuma-se separar dois grupos. A imunidade material (caput) afasta a responsabilidade civil e penal pelas manifestações. As imunidades formais (§§ 2º a 5º) não afastam o crime, mas limitam a prisão e permitem que a Casa suspenda o processo.
+O caput estabelece a inviolabilidade civil e penal por opiniões, palavras e votos. Os §§ 2º a 5º disciplinam regras relativas à prisão e à sustação do processo penal. O § 1º trata do julgamento perante o Supremo Tribunal Federal, e os §§ 6º a 8º estabelecem outras garantias e regras específicas.
 
-O foro do § 1º e as garantias dos §§ 6º a 8º completam esse conjunto.
+Cada uma dessas proteções possui alcance próprio. Questões sobre o alcance concreto da imunidade material e do foro devem ser lidas junto às explicações específicas dos dispositivos e à camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -1175,7 +1173,7 @@ Um deputado critica duramente, da tribuna, a atuação de um ministro. A crític
 
 **ATENÇÃO**
 
-As imunidades começam com a expedição do diploma pela Justiça Eleitoral, antes mesmo da posse. Elas pertencem ao mandato: quem deixa o cargo deixa de tê-las. A redação atual do artigo vem, em grande parte, da Emenda Constitucional nº 35, de 2001.
+Os §§ 1º e 2º utilizam expressamente a expedição do diploma como marco para as regras neles previstas. Isso não autoriza estender o mesmo termo inicial e final a todas as garantias do art. 53. O alcance temporal de cada proteção deve ser analisado conforme o respectivo dispositivo. A redação atual do artigo vem, em grande parte, da Emenda Constitucional nº 35, de 2001.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1187,9 +1185,9 @@ As imunidades começam com a expedição do diploma pela Justiça Eleitoral, ant
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas duas generalizacoes ("As imunidades comecam com a expedicao do diploma" e "quem deixa o cargo deixa de te-las"): "desde a expedicao do diploma" aparece so nos §§ 1º e 2º e o efeito temporal da imunidade material nao deve ser inferido no overview. O QUE SIGNIFICA e ATENCAO substituidos; exemplo mantido; informacao historica da EC 35/2001 mantida no formato canonico. Decisao complementar: "atribuir automaticamente" substituido por "estender" (elimina o falso positivo ABSOLUTE_CLAIM pela redacao, sem mudar o sentido). (seções: atencao, o_que_significa)
 
 ---
 
@@ -1429,12 +1427,12 @@ O parágrafo trata de uma dispensa: não proíbe o parlamentar de testemunhar se
 
 ### Art. 53, § 8º — Imunidades durante o estado de sítio
 
-- **TARGET:** `CF88:ART.53:PAR.8` · `ENTENDA/CF88:ART.53:PAR.8/BASE/1`
+- **TARGET:** `CF88:ART.53:PAR.8` · `ENTENDA/CF88:ART.53:PAR.8/BASE/2`
 - **DISPLAY TITLE:** Art. 53, § 8º — Imunidades durante o estado de sítio
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1627 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1663 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com quorum de dois tercos e hipotese restrita de suspensao das imunidades.
 
 **O QUE DIZ**
@@ -1443,11 +1441,11 @@ O § 8º mantém as imunidades de deputados e senadores durante o estado de sít
 
 **O QUE SIGNIFICA**
 
-O estado de sítio permite restringir garantias de toda a população. O parágrafo impede que essa situação seja usada para silenciar o Parlamento.
+Durante o estado de sítio, as imunidades parlamentares continuam vigentes.
 
-A suspensão exige três condições ao mesmo tempo: decisão da própria Casa por dois terços dos membros; atos praticados fora do recinto do Congresso; e incompatibilidade desses atos com a execução do estado de sítio.
+O § 8º permite sua suspensão somente quando três requisitos aparecem conjuntamente: aprovação de dois terços dos membros da Casa respectiva, prática do ato fora do recinto do Congresso Nacional e incompatibilidade desse ato com a execução da medida.
 
-Manifestações feitas dentro do Congresso continuam protegidas mesmo nessas circunstâncias.
+Como a hipótese constitucional de suspensão está limitada a atos praticados fora do recinto do Congresso, o mecanismo do § 8º não alcança atos praticados dentro dele.
 
 **EXEMPLO PRÁTICO**
 
@@ -1455,7 +1453,7 @@ Durante um estado de sítio, um deputado convoca, nas ruas, atos que dificultam 
 
 **ATENÇÃO**
 
-A suspensão não é automática nem decidida pelo Executivo: depende de votação da própria Casa. E não atinge o que o parlamentar diz ou faz no recinto do Congresso.
+A suspensão não é automática. Ela depende do voto de dois terços dos membros da Casa respectiva e somente pode ocorrer na hipótese delimitada pelo próprio § 8º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1466,9 +1464,9 @@ A suspensão não é automática nem decidida pelo Executivo: depende de votaç�
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: que sejam incompatíveis com a execução da medida)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: que sejam incompatíveis com a execução da medida); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de dois terços dos membros da casa respectiva)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas finalidade e generalizacao desnecessarias ("O estado de sitio permite restringir garantias de toda a populacao" e "impede que essa situacao seja usada para silenciar o Parlamento"). O QUE SIGNIFICA e ATENCAO substituidos; exemplo e glossario mantidos. (seções: atencao, o_que_significa)
 
 ---
 
@@ -1620,12 +1618,12 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 55 — Perda do mandato de deputado ou senador
 
-- **TARGET:** `CF88:ART.55` · `ENTENDA/CF88:ART.55/BASE/1`
+- **TARGET:** `CF88:ART.55` · `ENTENDA/CF88:ART.55/BASE/2`
 - **DISPLAY TITLE:** Art. 55 — Perda do mandato de deputado ou senador
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1630 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 227 palavras · 1712 bytes · referências 0
 - **Motivo da seleção:** Visao geral das hipoteses de perda do mandato; decoro, competencia para decidir e renuncia tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -1638,11 +1636,11 @@ O artigo enumera as causas e, nos parágrafos, define quem decide em cada caso e
 
 Algumas causas exigem um juízo político da Casa, como a quebra de decoro. Outras decorrem de fatos objetivos, como a falta reiterada às sessões ou uma decisão da Justiça Eleitoral.
 
-Em todos os casos, é assegurada ampla defesa. O § 4º impede que a renúncia seja usada para escapar do processo de cassação.
+Em todos os casos, é assegurada ampla defesa. O § 4º determina que os efeitos da renúncia fiquem suspensos enquanto estiver pendente a deliberação sobre processo que vise ou possa levar à perda do mandato.
 
 **EXEMPLO PRÁTICO**
 
-Um deputado falta, sem licença, a mais de um terço das sessões ordinárias de uma sessão legislativa. A Mesa da Câmara declara a perda do mandato, assegurada a defesa.
+Um deputado fica ausente, sem licença ou missão autorizada, de pelo menos um terço das sessões ordinárias de uma sessão legislativa. Nessa hipótese, a perda do mandato é declarada pela Mesa da Câmara, assegurada ampla defesa.
 
 **ATENÇÃO**
 
@@ -1651,16 +1649,15 @@ Perda do mandato não é o mesmo que suspensão de direitos políticos, embora e
 **PALAVRAS DIFÍCEIS**
 
 - *Decoro parlamentar*: padrão de conduta ética exigido de quem exerce mandato.
-- *Cassação*: perda do mandato decidida pela Casa legislativa.
 - *Ampla defesa*: direito de usar todos os meios legítimos para se defender.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: processo que vise ou possa levar à perda)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Overview adequado; duas correcoes: o § 4º passa a ser descrito pelo efeito do texto (efeitos da renuncia suspensos) e o exemplo usa "pelo menos um terco" em vez de "mais de um terco", que estreitava a hipotese do inciso III. Glossario: "Cassacao" removido (decisao complementar). Restante mantido. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 

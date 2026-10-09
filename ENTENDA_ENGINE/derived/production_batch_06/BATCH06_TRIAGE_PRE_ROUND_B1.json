@@ -24,23 +24,23 @@
  },
  "counts": {
   "A_CLEAN_LOW": 42,
-  "B_CLEAN_MEDIUM": 18,
+  "B_CLEAN_MEDIUM": 27,
   "C_QUICK_REVIEW": 0,
   "D_FULL_HUMAN_REVIEW": 0,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 42,
-  "MEDIUM": 18
+  "MEDIUM": 27
  },
  "complexity_counts": {
-  "STRUCTURED": 47,
-  "EXTERNAL": 8,
+  "STRUCTURED": 54,
+  "EXTERNAL": 10,
   "SIMPLE": 5
  },
  "jurisprudence_counts": {
-  "NONE": 53,
-  "CONTEXT_ONLY": 7
+  "NONE": 60,
+  "CONTEXT_ONLY": 9
  },
  "by_legal_risk": {
   "LOW": {
@@ -52,7 +52,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 18,
+   "B_CLEAN_MEDIUM": 27,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -75,14 +75,14 @@
   },
   "STRUCTURED": {
    "A_CLEAN_LOW": 38,
-   "B_CLEAN_MEDIUM": 9,
+   "B_CLEAN_MEDIUM": 16,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 1,
-   "B_CLEAN_MEDIUM": 7,
+   "B_CLEAN_MEDIUM": 9,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -1773,6 +1773,433 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.48",
+   "title": "Art. 48 — Competência legislativa do Congresso com sanção",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 39, 49, 84",
+    "overview com 17 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "sobre todas as matérias de competência da união",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49:INC.I",
+   "title": "Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: As etapas de incorporação de tratados ao direito interno e a hierarquia de tratados de direitos humanos (art. 5º, § 3º) são temas da doutrin"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.50",
+   "title": "Art. 50 — Convocação de ministros e pedidos de informação",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "comitê gestor do imposto sobre bens e serviços",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.50:PAR.2",
+   "title": "Art. 50, § 2º — Pedidos escritos de informação",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pedidos escritos de informação a ministros de estado",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52",
+   "title": "Art. 52 — Competências privativas do Senado",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: oito anos",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 89",
+    "overview com 24 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "da união dos estados do distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:INC.I",
+   "title": "Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A definição dos crimes de responsabilidade e o rito do julgamento estão na lei especial e na camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o presidente e o vice presidente da república",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53",
+   "title": "Art. 53 — Imunidades e prerrogativas dos parlamentares",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: invioláv"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: quatro horas",
+    "number_or_percentage: vinte",
+    "exception: salvo",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "HISTORICAL_CLAIM_SUPPORTED",
+     "section": "atencao",
+     "match": "vem, em grande parte, da Emenda Constitucional nº 35, de 200",
+     "detail": "emenda registrada nas anotacoes de vigencia do plano do lote"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.8",
+   "title": "Art. 53, § 8º — Imunidades durante o estado de sítio",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "que sejam incompatíveis com a execução da medida",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.55",
+   "title": "Art. 55 — Perda do mandato de deputado ou senador",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: Perderá o mandato"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: terça parte",
+    "exception: salvo",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "o_que_significa",
+     "match": "todos os",
+     "detail": "o predicado quantificado reproduz trecho literal do texto"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "fracao 1/3 ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "fracao 1/3 ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.55:PAR.1",
    "title": "Art. 55, § 1º — O que é incompatível com o decoro parlamentar",
    "role": "DEVICE",
@@ -2495,18 +2922,18 @@
  ],
  "migration": {
   "previous_counts": {
-   "D_FULL_HUMAN_REVIEW": 56,
+   "D_FULL_HUMAN_REVIEW": 65,
    "A_CLEAN_LOW": 1,
    "C_QUICK_REVIEW": 3
   },
-  "previous_D": 56,
+  "previous_D": 65,
   "previous_D_now": {
    "A_CLEAN_LOW": 38,
-   "B_CLEAN_MEDIUM": 18
+   "B_CLEAN_MEDIUM": 27
   },
-  "previous_D_migrated": 56,
+  "previous_D_migrated": 65,
   "previous_risk_counts": {
-   "HIGH": 56,
+   "HIGH": 65,
    "LOW": 3,
    "MEDIUM": 1
   }
@@ -2516,34 +2943,33 @@
  "refined_false_positive_counts": {
   "AUTOMATIC_CONSEQUENCE": 1,
   "TELEOLOGY_SPECULATIVE": 4,
-  "UNIVERSAL_CLAIM": 5
+  "UNIVERSAL_CLAIM": 6
  },
  "metrics": {
-  "total_draft_chars": 77305,
-  "old_model_full_package_chars": 141747,
-  "presented_chars": 47349,
+  "total_draft_chars": 90413,
+  "old_model_full_package_chars": 171470,
+  "presented_chars": 55054,
   "presented_by_file": {
-   "BATCH06_COMPACT_CLEAN_REVIEW.md": 46842,
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 54547,
    "BATCH06_FULL_HUMAN_REVIEW.md": 218,
    "BATCH06_HARD_FAIL_REPORT.md": 119,
    "BATCH06_QUICK_REVIEW.md": 170
   },
-  "reduction_abs": 94398,
-  "reduction_pct": 66.6,
+  "reduction_abs": 116416,
+  "reduction_pct": 67.9,
   "checkpoint_presented_chars": 265430
  },
  "d_full_package": "GERADO",
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 24,
+  "eligible": 30,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 33,
+ "human_approved_t1_granted": 24,
  "round_approvals": {
   "review_scopes": [
    "CF88_BATCH06_TRIAGE_QUEUE_D",
-   "CF88_BATCH06_TRIAGE_QUEUE_C",
-   "CF88_BATCH06_TRIAGE_QUEUE_B_PART1"
+   "CF88_BATCH06_TRIAGE_QUEUE_C"
   ],
   "gate": [
    {
@@ -2575,89 +3001,11 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.48",
-    "explanation_id": "ENTENDA/CF88:ART.48/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.49:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.49:INC.I/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.50",
-    "explanation_id": "ENTENDA/CF88:ART.50/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.50:PAR.2",
-    "explanation_id": "ENTENDA/CF88:ART.50:PAR.2/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.51:INC.I",
     "explanation_id": "ENTENDA/CF88:ART.51:INC.I/BASE/1",
     "editorial_version": 1,
     "decision": "APPROVED",
     "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.52",
-    "explanation_id": "ENTENDA/CF88:ART.52/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.52:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.52:INC.I/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
     "provenance_items": 0,
     "hard_fail": [],
     "review_required_open": [],
@@ -2691,19 +3039,6 @@
     "info": [
      "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
     ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.53",
-    "explanation_id": "ENTENDA/CF88:ART.53/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
     "gate": "PASS"
    },
    {
@@ -2766,37 +3101,11 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.53:PAR.8",
-    "explanation_id": "ENTENDA/CF88:ART.53:PAR.8/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.54:INC.I",
     "explanation_id": "ENTENDA/CF88:ART.54:INC.I/BASE/1",
     "editorial_version": 1,
     "decision": "APPROVED",
     "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.55",
-    "explanation_id": "ENTENDA/CF88:ART.55/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
     "provenance_items": 0,
     "hard_fail": [],
     "review_required_open": [],
@@ -2998,23 +3307,15 @@
     "gate": "PASS"
    }
   ],
-  "approved": 33,
-  "approved_unchanged": 11,
-  "approved_after_adjustment": 22,
+  "approved": 24,
+  "approved_unchanged": 10,
+  "approved_after_adjustment": 14,
   "retired_versions": [
-   "ENTENDA/CF88:ART.48/BASE/1",
-   "ENTENDA/CF88:ART.49:INC.I/BASE/1",
-   "ENTENDA/CF88:ART.50:PAR.2/BASE/1",
-   "ENTENDA/CF88:ART.52/BASE/1",
-   "ENTENDA/CF88:ART.52:INC.I/BASE/1",
    "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/1",
-   "ENTENDA/CF88:ART.53/BASE/1",
    "ENTENDA/CF88:ART.53:CAPUT/BASE/1",
    "ENTENDA/CF88:ART.53:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.53:PAR.2/BASE/1",
    "ENTENDA/CF88:ART.53:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.53:PAR.8/BASE/1",
-   "ENTENDA/CF88:ART.55/BASE/1",
    "ENTENDA/CF88:ART.55:INC.VI/BASE/1",
    "ENTENDA/CF88:ART.57/BASE/1",
    "ENTENDA/CF88:ART.58:PAR.3/BASE/1",
@@ -3028,9 +3329,9 @@
  },
  "approval_totals": {
   "global_before": 289,
-  "batch06_new_approved": 33,
-  "global_after": 322,
-  "batch06_new_pending": 60,
+  "batch06_new_approved": 24,
+  "global_after": 313,
+  "batch06_new_pending": 69,
   "batch06_reused_pilots_already_approved": 3,
   "note": "pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo"
  },
