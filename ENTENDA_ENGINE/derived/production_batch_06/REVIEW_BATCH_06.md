@@ -158,7 +158,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2200 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 282 palavras · 2197 bytes · referências 0
 - **Motivo da seleção:** Visao geral: articulacao da Uniao por complexos regionais, lei complementar (§ 1º) e incentivos regionais (§ 2º, com explicacao propria); §§ 3º e 4º situados aqui.
 
 **O QUE DIZ**
@@ -193,7 +193,7 @@ A expressão "para efeitos administrativos" indica que a região não altera a d
 
 **WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: sempre); ABSOLUTE_CLAIM (atencao: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ação em um mesmo complexo geoeconômico e social)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: o target e OVERVIEW e nao se apresenta como enumeracao exaustiva dos quatro incisos do § 2º; informa que o artigo preve incentivos regionais e existe bloco proprio para o § 2º. A ausencia lexical do inciso I no overview nao elimina seu conteudo do sistema. A inclusao do § 4º pela EC 132/2023 ja esta coberta pela evidencia de vigencia versionada. NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
@@ -348,7 +348,7 @@ O sistema proporcional da Câmara é diferente do sistema majoritário do Senado
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.45`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1984 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1981 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com limites numericos e remissao a lei complementar.
 
 **O QUE DIZ**
@@ -382,7 +382,7 @@ O parágrafo não fixa o número total de deputados: remete à lei complementar.
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.45: 0.229)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Ajuste so de provenance (OFFICIAL_CANONICAL_ANNOTATION), T1 byte-identico: a compilacao oficial remete expressamente a Lei Complementar nº 78/1993 no art. 45, § 1º; a remissao foi confirmada em fonte oficial. O T1 nao incorpora o conteudo da LC nem depende dele; nao afirma o numero total atual de Deputados nem a controversia legislativa de 2025/2026, que permanecem na camada correlata/atualizacao legislativa. external_layer_notes mantidas (ja registram a remissao sem afirmar o conteudo da LC).
 
 ---
 
@@ -1336,12 +1336,12 @@ O texto fala em maioria dos membros, isto é, maioria absoluta da Casa, e não d
 
 ### Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar
 
-- **TARGET:** `CF88:ART.53:PAR.3` · `ENTENDA/CF88:ART.53:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.53:PAR.3` · `ENTENDA/CF88:ART.53:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.53:PAR.4`, `CF88:ART.53:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 2086 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 299 palavras · 2364 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 3º, 4º e 5º formam o procedimento de sustacao da acao penal (iniciativa, prazo e efeito sobre a prescricao).
 
 **O QUE DIZ**
@@ -1350,11 +1350,13 @@ O § 3º permite que, recebida denúncia contra senador ou deputado por crime po
 
 **O QUE SIGNIFICA**
 
-O processo penal contra o parlamentar não depende de autorização prévia da Casa: o Supremo Tribunal Federal recebe a denúncia e apenas comunica a Casa.
+Nas hipóteses alcançadas por este dispositivo, o andamento da ação penal não depende de autorização prévia da Casa legislativa.
 
-A Casa pode, depois, sustar o andamento da ação. Para isso, um partido com representação na Casa precisa pedir, e a maioria absoluta dos membros precisa aprovar.
+Recebida a denúncia no Supremo Tribunal Federal dentro do regime constitucional aplicável, a Corte comunica a Casa respectiva. A partir daí, partido político nela representado pode provocar a votação sobre a sustação do processo.
 
-A regra vale só para crime cometido depois da diplomação. O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Enquanto a ação estiver sustada, a prescrição também fica suspensa, até o fim do mandato (§ 5º).
+Para a sustação, é necessária a aprovação da maioria dos membros da Casa. A regra alcança crime ocorrido após a diplomação.
+
+O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Enquanto o processo permanecer sustado, a prescrição também fica suspensa durante o mandato.
 
 **EXEMPLO PRÁTICO**
 
@@ -1362,7 +1364,7 @@ Recebida a denúncia contra um deputado por crime cometido no mandato, um partid
 
 **ATENÇÃO**
 
-Antes da Emenda Constitucional nº 35, de 2001, o texto exigia licença prévia da Casa para processar o parlamentar; materiais antigos podem trazer essa regra. Crimes praticados antes da diplomação não admitem sustação.
+Antes da Emenda Constitucional nº 35, de 2001, a Constituição exigia prévia licença da Casa para o processamento criminal do parlamentar. O mecanismo atual de sustação substituiu esse modelo. O alcance da competência penal por prerrogativa de função deve ser lido junto com o § 1º e com a camada JURISPRUDÊNCIA; este bloco explica especificamente o mecanismo dos §§ 3º a 5º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1374,9 +1376,9 @@ Antes da Emenda Constitucional nº 35, de 2001, o texto exigia licença prévia 
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Afirmacao historica confirmada (a redacao original exigia previa licenca da Casa para o processamento criminal; EC 35/2001). Ajuste para nao sugerir que todo processo penal contra parlamentar tramita no STF independentemente do alcance atual do foro; o bloco explica o mecanismo dos §§ 3º a 5º. Citacao da emenda no formato canonico "nº 35, de 2001" (ajuste formal autorizado). HISTORICAL_CLAIM_UNVERIFIED remanescente (o detector reage a "Antes da...") resolvido como HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE pela decisao humana complementar; a informacao historica nao foi suprimida. (seções: atencao, o_que_significa)
 
 ---
 
@@ -1526,7 +1528,7 @@ Incompatibilidade não se confunde com inelegibilidade: a primeira impede certas
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.54`, `CF88:ART.54:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1785 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 213 palavras · 1782 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com alineas a e b, com excecao expressa (clausulas uniformes).
 
 **O QUE DIZ**
@@ -1561,7 +1563,7 @@ O marco é a diplomação, anterior à posse. As vedações mais amplas do incis
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aceitar ou exercer cargo função ou emprego remunerado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. EXCEPTION_OR_RESSALVA_DROPPED resolvido como EXCEPTION_SEMANTICALLY_PRESENT: o exemplo usa expressamente um contrato padrao, igual ao oferecido aos demais clientes, para ilustrar a excecao do contrato de clausulas uniformes; a ressalva nao foi omitida, o detector nao reconheceu a parafrase. NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
@@ -1763,7 +1765,7 @@ O processo por quebra de decoro é político e corre na própria Casa; ele não 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.55:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.55`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1811 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1808 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º e 3º distinguem a perda decidida pelo plenario (incisos I, II e VI) e a declarada pela Mesa (incisos III a V).
 
 **O QUE DIZ**
@@ -1798,7 +1800,7 @@ A redação atual do § 2º foi dada pela Emenda Constitucional nº 76, de 2013;
 
 **WARNINGS:** TERM_NOT_USED (palavras_dificeis: Decoro parlamentar)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. A advertencia historica esta confirmada pela EC 76/2013, que alterou expressamente o § 2º do art. 55 e suprimiu o modelo anterior de votacao secreta (HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE). A decisao anterior sobre o art. 55, VI nao e reaberta; este target e §§ 2º e 3º.
 
 ---
 
@@ -1947,12 +1949,12 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 57 — Funcionamento do Congresso: sessões e reuniões
 
-- **TARGET:** `CF88:ART.57` · `ENTENDA/CF88:ART.57/BASE/1`
+- **TARGET:** `CF88:ART.57` · `ENTENDA/CF88:ART.57/BASE/2`
 - **DISPLAY TITLE:** Art. 57 — Funcionamento do Congresso: sessões e reuniões
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 238 palavras · 1790 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 259 palavras · 1907 bytes · referências 0
 - **Motivo da seleção:** Visao geral do calendario e das reunioes do Congresso; LDO, Mesas, convocacao extraordinaria e pauta extraordinaria tem explicacoes proprias; os demais itens sao situados aqui.
 
 **O QUE DIZ**
@@ -1973,7 +1975,7 @@ Se o dia 2 de fevereiro cair em um sábado, a reunião que inaugura a sessão le
 
 **ATENÇÃO**
 
-As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; materiais anteriores trazem outro calendário. Fora desses períodos, o Congresso só se reúne mediante convocação extraordinária.
+As datas atuais do caput foram fixadas pela Emenda Constitucional nº 50, de 2006. O § 4º prevê ainda sessões preparatórias a partir de 1º de fevereiro, no primeiro ano da legislatura. Fora dos períodos ordinários do caput, o Congresso também pode reunir-se mediante convocação extraordinária nas hipóteses do § 6º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1987,7 +1989,7 @@ As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; mate
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: receber o compromisso do presidente e do vice)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — LIST_ITEM_POSSIBLY_DROPPED (§ 3º, II) resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: formulacao exemplificativa das hipoteses de sessao conjunta, sem pretensao de enumerar os quatro incisos do § 3º. A frase "Fora desses periodos, o Congresso so se reune mediante convocacao extraordinaria" era absoluta demais diante das sessoes preparatorias do § 4º: ATENCAO substituida. EC 50/2006 registrada como fonte oficial da alteracao; citacao no formato canonico "nº 50, de 2006" (ajuste formal autorizado). Microfix nao aplicado. (seções: atencao)
 
 ---
 
@@ -2087,7 +2089,7 @@ Como a vedação se aplica quando a eleição ocorre em legislaturas diferentes 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1800 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1797 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com dois incisos que separam quem convoca e em que hipoteses, com aprovacao por maioria absoluta no inciso II.
 
 **O QUE DIZ**
@@ -2121,7 +2123,7 @@ A exigência de aprovação por maioria absoluta vale para todas as hipóteses d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: casas em caso de urgência ou interesse público)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como SEMANTIC_ITEM_ALREADY_PRESENT: "ou a maioria dos membros das duas Casas" preserva "a requerimento da maioria dos membros de ambas as Casas"; o elemento constitucional nao foi omitido. NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
@@ -2383,7 +2385,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1727 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 222 palavras · 1724 bytes · referências 0
 - **Motivo da seleção:** Visao geral da iniciativa: o caput lista quem pode apresentar projetos; iniciativa privativa do Presidente e iniciativa popular tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -2417,31 +2419,33 @@ A expressão "na forma e nos casos previstos nesta Constituição" indica que o 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. Alertas das alineas do § 1º resolvidos como OVERVIEW_MAY_SUMMARIZE_CHILDREN: o target e OVERVIEW, informa que o § 1º contem materias de iniciativa reservada ao Presidente e existe bloco proprio para esse paragrafo.
 
 ---
 
 ### Art. 61, § 1º — Iniciativa privativa do Presidente da República
 
-- **TARGET:** `CF88:ART.61:PAR.1` · `ENTENDA/CF88:ART.61:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.61:PAR.1` · `ENTENDA/CF88:ART.61:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 61, § 1º — Iniciativa privativa do Presidente da República
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.61`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 277 palavras · 2331 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 331 palavras · 2885 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos e alineas que reservam ao Presidente a iniciativa de leis sobre Forcas Armadas e organizacao administrativa; vicio de iniciativa e frequente em estudo.
 
 **O QUE DIZ**
 
-O § 1º reserva ao Presidente da República a iniciativa das leis que fixem ou alterem os efetivos das Forças Armadas e das leis sobre: criação de cargos e funções na administração direta e autárquica ou aumento da sua remuneração; organização administrativa e judiciária dos Territórios, bem como sua matéria tributária, seu orçamento, seus serviços e seu pessoal; servidores da União e dos Territórios; organização do Ministério Público e da Defensoria Pública da União e normas gerais para os dos Estados; criação e extinção de Ministérios e órgãos; e militares das Forças Armadas.
+O § 1º reserva ao Presidente da República a apresentação de projetos em determinadas matérias. Entram nessa reserva: a definição ou alteração do efetivo das Forças Armadas; a criação de cargos, funções ou empregos na administração direta e nas autarquias, bem como mudanças em sua remuneração; a disciplina administrativa e judiciária dos Territórios, incluindo tributos, orçamento, serviços e pessoal; o regime jurídico dos servidores da União e dos Territórios, com regras sobre provimento, estabilidade e aposentadoria; a organização tanto do Ministério Público quanto da Defensoria Pública da União e as normas gerais dessas instituições para Estados, Distrito Federal e Territórios; a criação ou extinção de Ministérios e órgãos administrativos; e o regime jurídico dos militares das Forças Armadas, abrangendo provimento, promoções, estabilidade, remuneração, reforma e transferência para a reserva.
 
 **O QUE SIGNIFICA**
 
-Nesses temas, só o Presidente pode apresentar o projeto. A razão está na separação de Poderes: são assuntos ligados à organização e ao funcionamento do próprio Executivo.
+Nessas matérias, a Constituição reserva ao Presidente da República o poder de iniciar o processo legislativo.
 
-Se um parlamentar apresentar projeto sobre um desses temas, há vício de iniciativa, e a lei resultante pode ser considerada inconstitucional.
+A lista alcança temas da Administração federal e dos Territórios, das Forças Armadas e também determinadas regras de organização do Ministério Público e da Defensoria Pública.
 
-Reserva de iniciativa não impede o Congresso de alterar o projeto: as emendas são possíveis, observados os limites de aumento de despesa do art. 63, I.
+Se um projeto sujeito a essa reserva for apresentado por quem não possui a iniciativa constitucional, existe vício de iniciativa.
+
+O Congresso pode apreciar e emendar projetos de iniciativa presidencial dentro dos limites constitucionais. O art. 63, I, contém uma limitação expressa ao aumento de despesa, enquanto outros limites interpretativos pertencem à camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -2449,7 +2453,7 @@ Um deputado apresenta projeto que cria cargos no quadro de uma autarquia federal
 
 **ATENÇÃO**
 
-A alínea b menciona matéria tributária e orçamentária dos Territórios; a reserva de iniciativa em matéria tributária em geral não decorre deste texto. Se a sanção do Presidente corrige o vício de iniciativa e como a regra se aplica aos Estados são temas de interpretação constitucional.
+A alínea b trata especificamente da matéria tributária e orçamentária dos Territórios; dela não decorre uma reserva presidencial geral para toda matéria tributária. Questões como simetria para os Estados, efeitos da sanção e outros limites às emendas parlamentares pertencem à camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2461,9 +2465,9 @@ A alínea b menciona matéria tributária e orçamentária dos Territórios; a r
 
 - A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do ministério público e da defensoria pública da)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: estabilidade remuneração reforma e transferência para a rese); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: organização do ministério público e da defensoria pública)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Omissao real e generalizacao explicativa excessiva: incluidos "empregos" publicos, Distrito Federal e Territorios na alinea d; retirada a justificativa teleologica de que todos os assuntos seriam ligados ao funcionamento do proprio Executivo; o art. 63, I nao e apresentado como unico limite as emendas. O_QUE_DIZ na redacao complementar da revisao humana (sem mais de 10 palavras consecutivas da Lei Seca), preservando todas as categorias juridicas das alineas a a f; ajuste autorizado em 2026-10-09: "regime juridico" (servidores e militares) e "transferencia para a reserva" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela propria redacao) e "tanto ... quanto" na alinea d (maior sequencia literal 9 < 10). Exemplo e external_layer_notes mantidos. (seções: atencao, o_que_diz, o_que_significa)
 
 ---
 
@@ -2518,12 +2522,12 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 62 — Medidas provisórias
 
-- **TARGET:** `CF88:ART.62` · `ENTENDA/CF88:ART.62/BASE/1`
+- **TARGET:** `CF88:ART.62` · `ENTENDA/CF88:ART.62/BASE/2`
 - **DISPLAY TITLE:** Art. 62 — Medidas provisórias
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 228 palavras · 1742 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 1847 bytes · referências 1
 - **Motivo da seleção:** Visao geral do regime das medidas provisorias; vedacoes, prazos, tramitacao, trancamento de pauta, reedicao e efeitos apos a votacao tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -2542,7 +2546,7 @@ O Presidente edita medida provisória criando um programa emergencial. As regras
 
 **ATENÇÃO**
 
-Medida provisória não é lei: é ato com força de lei, sujeito à conversão. O regime atual foi definido pela Emenda Constitucional nº 32, de 2001; materiais anteriores descrevem um regime diferente, com reedições sucessivas.
+Medida provisória não é lei: é ato com força de lei, sujeito ao regime constitucional de conversão. O modelo atual do art. 62 foi estabelecido pela Emenda Constitucional nº 32, de 2001. A redação constitucional anterior previa regime e prazo diferentes, por isso materiais produzidos antes dessa emenda devem ser lidos com cautela.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2556,7 +2560,7 @@ Medida provisória não é lei: é ato com força de lei, sujeito à conversão.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo adequado. ATENCAO substituida para remover a narrativa historica sobre reedicoes sucessivas sem perder a advertencia: o modelo atual foi estabelecido pela EC 32/2001 (registrada como provenance oficial); citacao no formato canonico "nº 32, de 2001" (ajuste formal autorizado). (seções: atencao)
 
 ---
 
@@ -3183,7 +3187,7 @@ O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.66:PAR.5`, `CF88:ART.66:PAR.6`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 242 palavras · 1924 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 242 palavras · 1921 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 4º, 5º e 6º formam a apreciacao do veto (sessao conjunta, prazo, quorum de rejeicao, promulgacao e sobrestamento).
 
 **O QUE DIZ**
@@ -3219,7 +3223,7 @@ A redação atual do § 4º foi dada pela Emenda Constitucional nº 76, de 2013;
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. A advertencia historica esta confirmada pela EC 76/2013, que alterou expressamente o § 4º do art. 66 e aboliu a votacao secreta na apreciacao de veto (HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE).
 
 ---
 
@@ -3611,7 +3615,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1802 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1799 bytes · referências 0
 - **Motivo da seleção:** Visao geral das competencias do TCU; incisos de maior impacto e sustacao de atos e contratos tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -3646,7 +3650,7 @@ O Tribunal auxilia o Congresso, mas não lhe é subordinado nas competências pr
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com o auxílio do tribunal de contas da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: OVERVIEW que sintetiza as competencias por categorias; o inciso IX esta representado em "fixar prazo para correcoes" e o XI nao precisa ser transcrito numa visao geral que nao se apresenta como lista exaustiva dos onze incisos; os dispositivos especificos continuam no corpus. Microfix nao aplicado.
 
 ---
 
@@ -4068,12 +4072,12 @@ Os Ministros do Tribunal de Contas não são Ministros de Estado, e o Tribunal n
 
 ### Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73:PAR.1` · `ENTENDA/CF88:ART.73:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.73:PAR.1` · `ENTENDA/CF88:ART.73:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.73`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1718 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 248 palavras · 1999 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos de requisitos cumulativos; o inciso de idade tem redacao dada por EC (122/2022).
 
 **O QUE DIZ**
@@ -4082,11 +4086,11 @@ O § 1º exige que os Ministros do Tribunal de Contas da União sejam brasileiro
 
 **O QUE SIGNIFICA**
 
-Os requisitos buscam garantir que os Ministros tenham preparo técnico e experiência compatíveis com a função de controle.
+Os quatro requisitos são cumulativos e combinam idade, reputação, conhecimento técnico e experiência profissional.
 
-São cumulativos: faltando um, a nomeação não pode ocorrer.
+A pessoa indicada deve ter mais de trinta e cinco e menos de setenta anos, idoneidade moral e reputação ilibada, conhecimentos notórios em pelo menos uma das áreas mencionadas e mais de dez anos de experiência em função ou atividade profissional que exija esses conhecimentos.
 
-O último requisito liga a experiência profissional aos conhecimentos do inciso anterior: não basta qualquer atividade por dez anos, ela precisa exigir esses saberes técnicos.
+O último requisito está ligado ao anterior: não basta qualquer experiência profissional por mais de dez anos; a atividade deve exigir os conhecimentos técnicos indicados pelo dispositivo.
 
 **EXEMPLO PRÁTICO**
 
@@ -4094,7 +4098,7 @@ Um economista com sessenta e oito anos, reputação ilibada e vinte anos de atua
 
 **ATENÇÃO**
 
-O limite máximo de idade foi alterado pela Emenda Constitucional nº 122, de 2022; materiais anteriores trazem limite diferente. A avaliação de "notórios conhecimentos" é feita por quem indica e por quem aprova o nome.
+O limite máximo de idade foi elevado pela Emenda Constitucional nº 122, de 2022. Antes dessa alteração, o inciso I exigia idade inferior a sessenta e cinco anos. Os requisitos para a função estão no § 1º, enquanto a forma de escolha dos Ministros é tratada pelo § 2º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4106,9 +4110,9 @@ O limite máximo de idade foi alterado pela Emenda Constitucional nº 122, de 20
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de dez anos de exercício de função ou)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de dez anos de exercício de função ou); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de trinta e cinco e menos de setenta); TERM_NOT_USED (palavras_dificeis: Notório saber)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Afirmacao historica confirmada (EC 122/2022 elevou o limite maximo de idade de 65 para 70 anos; HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE). Retiradas a teleologia e a generalizacao sobre quem "avalia" os notorios conhecimentos. ATENCAO na redacao complementar: sem a sigla do tribunal no corpo, sem referencia jurisprudencial, citacao "nº 122, de 2022". NEAR_COPY_MICROFIX nao aplicado. (seções: atencao, o_que_significa)
 
 ---
 

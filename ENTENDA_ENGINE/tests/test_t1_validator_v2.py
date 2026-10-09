@@ -85,6 +85,7 @@ class ValidatorV2Test(unittest.TestCase):
 
     def test_known_resolutions_are_version_scoped(self):
         ids = {r['explanation_id'] for r in self.all} | {r['explanation_id'] for r in E.load_corpus(HERE / 'corpus/CF88.entenda.jsonl')}
+        ids |= {r['explanation_id'] for r in E.load_corpus(HERE / 'derived/production_batch_06/CF88_BATCH_06.entenda.jsonl')}   # Batch06 round C
         for eid in self.known['resolutions']:
             self.assertIn(eid, ids)
 

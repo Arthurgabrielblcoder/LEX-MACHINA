@@ -2,8 +2,8 @@
 
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 93 · risco LOW 49 · MEDIUM 41 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 11
+- Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 24
 - Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 2 · não resolvidos: 0
 
 ## Risco HIGH
@@ -24,11 +24,6 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"
 
 ## Risco MEDIUM
-
-### Art. 45, § 1º — Número de deputados por Estado
-
-- `CF88:ART.45:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes ("Lei Complementar nº 78, de 1993")
 
 ### Art. 48 — Competência legislativa do Congresso com sanção
 
@@ -82,8 +77,8 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar
 
-- `CF88:ART.53:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SENSITIVE_THEME: crime; EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao ("Antes da Emenda Constitucional nº 35, de 2001, o texto exigi")
+- `CF88:ART.53:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: SENSITIVE_THEME: crime
 
 ### Art. 53, § 8º — Imunidades durante o estado de sítio
 
@@ -102,8 +97,8 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 55, §§ 2º e 3º — Quem decide a perda do mandato
 
-- `CF88:ART.55:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SENSITIVE_THEME: perda do mandato; EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao ("materiais anteriores podem trazer outra forma de votação")
+- `CF88:ART.55:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: SENSITIVE_THEME: perda do mandato
 
 ### Art. 55, § 4º — Renúncia durante processo de perda do mandato
 
@@ -114,11 +109,6 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.56` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: perderá o mandato
-
-### Art. 57 — Funcionamento do Congresso: sessões e reuniões
-
-- `CF88:ART.57` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao ("materiais anteriores trazem outro calendário")
 
 ### Art. 57, § 4º — Sessões preparatórias e eleição das Mesas
 
@@ -132,13 +122,13 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 61, § 1º — Iniciativa privativa do Presidente da República
 
-- `CF88:ART.61:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURIS; INTERPRETIVE_QUESTION_DEFERRED: "temas de interpretação constitucional" (o draft nao responde; remete)
+- `CF88:ART.61:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURIS
 
 ### Art. 62 — Medidas provisórias
 
-- `CF88:ART.62` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SENSITIVE_THEME: sanção; EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao ("materiais anteriores descrevem um regime diferente, com reed")
+- `CF88:ART.62` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: SENSITIVE_THEME: sanção
 - MODALITY_SHIFT (o_que_diz: devem) → Fiel ao texto: o caput diz "devendo submetê-las de imediato ao Congresso Nacional"; a obrigacao e textual.
 
 ### Art. 62, § 1º — Matérias vedadas às medidas provisórias
@@ -166,11 +156,6 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.66:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: sanção
 
-### Art. 66, §§ 4º, 5º e 6º — Apreciação do veto pelo Congresso
-
-- `CF88:ART.66:PAR.4` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao ("materiais anteriores podem trazer outra forma de votação")
-
 ### Art. 69 — Quórum da lei complementar
 
 - `CF88:ART.69` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -178,7 +163,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 71 — Competências do Tribunal de Contas da União
 
-- `CF88:ART.71` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.71` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanções
 - LAW_DEPENDENCY_OMITTED (body: em lei) → Dependencia de lei e do inciso VIII (sancoes previstas em lei), que tem explicacao propria (ITEM) mencionando a lei.
 
@@ -206,11 +191,6 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.73` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: prerrogativ
-
-### Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
-
-- `CF88:ART.73:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao ("materiais anteriores trazem limite diferente")
 
 ### Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
 
@@ -254,7 +234,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 43 — Regiões de desenvolvimento
 
-- `CF88:ART.43` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.43` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 - ABSOLUTE_CLAIM (o_que_significa: sempre) → Falso positivo: "sempre que possível" reproduz a expressao do § 4º, que e justamente uma ressalva (nao absoluta).
 - ABSOLUTE_CLAIM (atencao: sempre) → Falso positivo: "sempre que possível" reproduz a expressao do § 4º, que e justamente uma ressalva (nao absoluta).
@@ -272,6 +252,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 45 — Câmara dos Deputados
 
 - `CF88:ART.45` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 45, § 1º — Número de deputados por Estado
+
+- `CF88:ART.45:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 46 — Senado Federal
@@ -327,7 +312,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 54, inciso I — Vedações desde a expedição do diploma
 
-- `CF88:ART.54:INC.I` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.54:INC.I` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 54, inciso II — Vedações desde a posse
@@ -340,6 +325,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.56:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 
+### Art. 57 — Funcionamento do Congresso: sessões e reuniões
+
+- `CF88:ART.57` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: 
+
 ### Art. 57, § 2º — Recesso condicionado à aprovação da LDO
 
 - `CF88:ART.57:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -348,7 +338,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 57, § 6º — Convocação extraordinária do Congresso
 
-- `CF88:ART.57:PAR.6` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.57:PAR.6` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária
@@ -376,7 +366,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 61 — Iniciativa das leis
 
-- `CF88:ART.61` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.61` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 61, § 2º — Iniciativa popular de lei
@@ -425,6 +415,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.64:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: 
 - EXCEPTION_NOT_IN_TEXT (o_que_diz/o_que_significa: exceto) → Falso positivo do detector: o § 2º diz "com exceção das que tenham prazo constitucional determinado" ("exceção" nao esta na lista de marcadores).
+
+### Art. 66, §§ 4º, 5º e 6º — Apreciação do veto pelo Congresso
+
+- `CF88:ART.66:PAR.4` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: 
 
 ### Art. 66, § 7º — Quem promulga a lei
 
@@ -479,6 +474,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 72 — Despesas não autorizadas: atuação da comissão mista
 
 - `CF88:ART.72` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
+
+- `CF88:ART.73:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União

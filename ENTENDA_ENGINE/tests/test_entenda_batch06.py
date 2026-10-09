@@ -1,4 +1,4 @@
-"""Tests for ENTENDA CF PRODUCTION BATCH 06 (arts. 42-75): T1 drafts and recalibrated triage only (no human approval in this phase)."""
+"""Tests for ENTENDA CF PRODUCTION BATCH 06 (arts. 42-75): T1 drafts, recalibrated triage and the human rounds D and C (queues D and C)."""
 import copy
 import hashlib
 import json
@@ -15,6 +15,7 @@ ROOT = HERE.parent
 sys.path.insert(0, str(HERE))
 import build_entenda_batch06_candidate as B  # noqa: E402
 import entenda_engine as E  # noqa: E402
+import t1_batch_packets as BP  # noqa: E402
 import t1_external_resolver as X  # noqa: E402
 import t1_risk as R  # noqa: E402
 import t1_validator_v2 as V  # noqa: E402
@@ -26,6 +27,11 @@ PILOTS = ('CF88:ART.60', 'CF88:ART.60:PAR.4', 'CF88:ART.60:PAR.4:INC.IV')
 ROUND_D_AS_IS = ('CF88:ART.51:INC.I', 'CF88:ART.52:INC.X')
 ROUND_D_ADJUSTED = ('CF88:ART.52:PAR.UNICO', 'CF88:ART.53:CAPUT', 'CF88:ART.53:PAR.1', 'CF88:ART.53:PAR.2', 'CF88:ART.55:INC.VI', 'CF88:ART.58:PAR.3',
                     'CF88:ART.62:PAR.6', 'CF88:ART.63', 'CF88:ART.75')
+ROUND_C_AS_IS = ('CF88:ART.43', 'CF88:ART.45:PAR.1', 'CF88:ART.54:INC.I', 'CF88:ART.55:PAR.2', 'CF88:ART.57:PAR.6', 'CF88:ART.61', 'CF88:ART.66:PAR.4',
+                 'CF88:ART.71')
+ROUND_C_ADJUSTED = ('CF88:ART.53:PAR.3', 'CF88:ART.57', 'CF88:ART.61:PAR.1', 'CF88:ART.62', 'CF88:ART.73:PAR.1')
+APPROVED = ROUND_D_AS_IS + ROUND_D_ADJUSTED + ROUND_C_AS_IS + ROUND_C_ADJUSTED
+SCOPE = {'D': 'CF88_BATCH06_TRIAGE_QUEUE_D', 'C': 'CF88_BATCH06_TRIAGE_QUEUE_C'}
 REQUIRED_SOURCES = {'CF88:ART.52:PAR.UNICO': ('MS 34.418', '25/09/2023', 'MS 21.689'), 'CF88:ART.53:CAPUT': ('Inq 4.781 Ref', 'Tema 950'),
                     'CF88:ART.53:PAR.1': ('HC 232.627', 'Inq 4.787-QO'), 'CF88:ART.55:INC.VI': ('AP 694',), 'CF88:ART.62:PAR.6': ('MS 27.931',),
                     'CF88:ART.63': ('ADI 3.114', 'ADI 2.681 MC', 'Tema 686'), 'CF88:ART.75': ('Emenda Constitucional nº 139',)}
@@ -60,6 +66,7 @@ class Batch06(unittest.TestCase):
         cls.pre = E.load_corpus(BD / 'CF88_BATCH_06_PRE_ROUND_D.entenda.jsonl')
         cls.pre_by = {r['target_id']: r for r in cls.pre}
         cls.pre_tri = {x['target_id']: x for x in load('BATCH06_TRIAGE_PRE_ROUND_D.json')['rows']}
+        cls.pre_tri_c = {x['target_id']: x for x in load('BATCH06_TRIAGE_PRE_ROUND_C.json')['rows']}
         cls.by = {r['target_id']: r for r in cls.corpus}
         cls.sel = load('SELECTION_REPORT.json')
         cls.tri = load('BATCH06_TRIAGE.json')
@@ -77,34 +84,42 @@ class Batch06(unittest.TestCase):
         self.assertIn('ENTENDA_ENGINE/derived/production_batch_05/CF88_BATCH_05.entenda.jsonl', self.spec['prior_corpora'])
         self.assertEqual(sorted(self.spec['reused']), sorted(PILOTS))
 
-    def test_only_queue_d_approved_in_round_d(self):
+    def test_only_queues_d_and_c_approved(self):
         cfg = V.load_json(V.CONFIG)
         self.assertFalse(cfg['AUTO_APPROVE_LOW'])
         self.assertFalse(cfg['AUTO_APPROVE_MEDIUM'])
         self.assertFalse(cfg['MICROAUTO_APPLY'])
         self.assertEqual(len(self.corpus), 93)
         approved = sorted(r['target_id'] for r in self.corpus if r['review_status'] == 'HUMAN_APPROVED_T1')
-        self.assertEqual(approved, sorted(ROUND_D_AS_IS + ROUND_D_ADJUSTED))
-        for t in approved:                                              # all 11 came from queue D of the recalibrated triage
+        self.assertEqual(approved, sorted(APPROVED))
+        for t in ROUND_D_AS_IS + ROUND_D_ADJUSTED:                      # the 11 of round D came from queue D of the recalibrated triage
             self.assertEqual(self.pre_tri[t]['queue'], 'D_FULL_HUMAN_REVIEW', t)
-            self.assertEqual(self.by[t]['human_review']['review_scope'], 'CF88_BATCH06_TRIAGE_QUEUE_D', t)
+            self.assertEqual(self.by[t]['human_review']['review_scope'], SCOPE['D'], t)
+        for t in ROUND_C_AS_IS + ROUND_C_ADJUSTED:                      # the 13 of round C came from queue C of the same triage
+            self.assertEqual(self.pre_tri_c[t]['queue'], 'C_QUICK_REVIEW', t)
+            self.assertEqual(self.by[t]['human_review']['review_scope'], SCOPE['C'], t)
+            self.assertEqual(self.by[t]['human_review']['calibration_queue'], 'C', t)
+        self.assertEqual(sorted(t for t, x in self.pre_tri_c.items() if x['queue'] == 'C_QUICK_REVIEW'), sorted(ROUND_C_AS_IS + ROUND_C_ADJUSTED))
         pending = [r for r in self.corpus if r['review_status'] == 'PENDING_HUMAN_REVIEW']
-        self.assertEqual(len(pending), 82)
-        self.assertTrue(all(self.pre_tri[r['target_id']]['queue'] in ('A_CLEAN_LOW', 'B_CLEAN_MEDIUM', 'C_QUICK_REVIEW') for r in pending))
-        self.assertEqual(self.tri['human_approved_t1_granted'], 11)
-        self.assertEqual(self.sel['summary']['review_status_counts'], {'HUMAN_APPROVED_T1': 14, 'PENDING_HUMAN_REVIEW': 82})
+        self.assertEqual(len(pending), 69)
+        self.assertTrue(all(self.pre_tri_c[r['target_id']]['queue'] in ('A_CLEAN_LOW', 'B_CLEAN_MEDIUM') for r in pending))
+        self.assertEqual(self.tri['human_approved_t1_granted'], 24)
+        self.assertEqual(self.sel['summary']['review_status_counts'], {'HUMAN_APPROVED_T1': 27, 'PENDING_HUMAN_REVIEW': 69})
         tot = self.tri['approval_totals']
-        self.assertEqual((tot['global_before'], tot['global_after'], tot['batch06_new_pending']), (289, 300, 82))
-        dec = load('ROUND_D_HUMAN_REVIEW_DECISIONS.json')
-        self.assertEqual(dec['review_status'], 'ROUND_REVIEW_COMPLETED')
-        self.assertEqual(dec['decision_counts'], {'APPROVED': 2, 'APPROVED_AFTER_ADJUSTMENT': 9, 'REJECTED': 0})
-        for name, h in dec['original_evidence_sha256'].items():
-            self.assertEqual(sha(BD / name), h, name)
+        self.assertEqual((tot['global_before'], tot['global_after'], tot['batch06_new_pending']), (289, 313, 69))
+        for name, counts in (('ROUND_D_HUMAN_REVIEW_DECISIONS.json', {'APPROVED': 2, 'APPROVED_AFTER_ADJUSTMENT': 9, 'REJECTED': 0}),
+                             ('ROUND_C_HUMAN_REVIEW_DECISIONS.json', {'APPROVED': 8, 'APPROVED_AFTER_ADJUSTMENT': 5, 'REJECTED': 0})):
+            dec = load(name)
+            self.assertEqual(dec['review_status'], 'ROUND_REVIEW_COMPLETED')
+            self.assertEqual(dec['decision_counts'], counts)
+            for ev, h in dec['original_evidence_sha256'].items():
+                self.assertEqual(sha(BD / ev), h, ev)
+        self.assertEqual([ra['review_scope'] for ra in self.spec['round_approvals']], [SCOPE['D'], SCOPE['C']])
 
-    def test_round_d_versions_and_history(self):
+    def test_round_d_and_c_versions_and_history(self):
         retired = {r['target_id']: r for r in self.all if r['status'] == 'RETIRED'}
-        self.assertEqual(sorted(retired), sorted(ROUND_D_ADJUSTED))
-        for t in ROUND_D_ADJUSTED:
+        self.assertEqual(sorted(retired), sorted(ROUND_D_ADJUSTED + ROUND_C_ADJUSTED))
+        for t in ROUND_D_ADJUSTED + ROUND_C_ADJUSTED:
             old, new = retired[t], self.by[t]
             self.assertEqual((old['editorial_version'], new['editorial_version']), (1, 2), t)
             self.assertEqual(old['review_status'], 'CHANGES_REQUESTED', t)
@@ -112,7 +127,7 @@ class Batch06(unittest.TestCase):
             self.assertEqual(old['content'], self.pre_by[t]['content'], t)            # earlier version preserved, never overwritten
             self.assertEqual(old['source'], self.pre_by[t]['source'], t)
             self.assertEqual(new['human_review']['decision'], 'APPROVED_AFTER_ADJUSTMENT', t)
-        for t in ROUND_D_AS_IS:                                          # approved without rewriting content: same version and bytes
+        for t in ROUND_D_AS_IS + ROUND_C_AS_IS:                          # approved without rewriting content: same version and bytes
             r = self.by[t]
             self.assertEqual(r['editorial_version'], 1)
             self.assertEqual(r['content'], self.pre_by[t]['content'])
@@ -134,12 +149,50 @@ class Batch06(unittest.TestCase):
 
     def test_round_d_approval_gate(self):
         gate = self.tri['round_approvals']['gate']
-        self.assertEqual(len(gate), 11)
+        self.assertEqual(sorted(g['target_id'] for g in gate), sorted(APPROVED))
         for g in gate:
             self.assertEqual(g['gate'], 'PASS', g['target_id'])
             self.assertEqual((g['hard_fail'], g['review_required_open'], g['editorial_checks_open']), ([], [], 0), g['target_id'])
         open_ = {r['target_id']: r['unresolved'] for r in self.chk['rows']}
-        self.assertTrue(all(open_[t] == 0 for t in ROUND_D_AS_IS + ROUND_D_ADJUSTED))
+        self.assertTrue(all(open_[t] == 0 for t in APPROVED))
+
+    def test_round_c_resolutions_and_wording(self):
+        dec = {d['target_id']: d for d in load('ROUND_C_HUMAN_REVIEW_DECISIONS.json')['decisions']}
+        self.assertEqual(sorted(dec), sorted(ROUND_C_AS_IS + ROUND_C_ADJUSTED))
+        known = V.load_json(V.KNOWN)['resolutions']
+        c = BP.Context(BD, self.ctx, self.catalog, {}, V3.load_registry(), load('BATCH06_RELATIONS_PIN.json'))
+        bare = {}                                                        # the gate's validator context without the recorded known resolutions
+        for t, d in dec.items():
+            r = self.by[t]
+            open_bare = [f for f in c.validate(r) if f['severity'] in ('REVIEW_REQUIRED', 'HARD_FAIL')]
+            bare[t] = {f['code'] for f in open_bare}
+            decided = {x['flag'] for x in d.get('flag_resolutions', [])}
+            self.assertFalse([f for f in open_bare if f['severity'] == 'HARD_FAIL'], t)
+            self.assertTrue(bare[t] <= decided, (t, bare[t] - decided))  # every open flag has an explicit human resolution
+            reg = known.get(r['explanation_id'], {})
+            self.assertEqual(bool(reg), bool(bare[t]), t)                 # resolutions only where a flag stays open, on the approved version
+            self.assertTrue(all(k.split(':', 1)[0] in decided for k in reg), t)
+        self.assertEqual({t for t, v in bare.items() if not v}, {'CF88:ART.45:PAR.1', 'CF88:ART.61:PAR.1', 'CF88:ART.62'})
+        c9 = self.by['CF88:ART.61:PAR.1']
+        diz = c9['content']['o_que_diz']                                 # omission fixed by the wording itself (no resolution registered)
+        for term in ('empregos', 'servidores da União e dos Territórios', 'Distrito Federal', 'normas gerais', 'Ministério Público',
+                     'Defensoria Pública da União', 'Ministérios e órgãos', 'militares das Forças Armadas', 'regime jurídico',
+                     'transferência para a reserva'):
+            self.assertIn(term, diz, term)
+        src = [w.lower() for w in E.words(c9['source']['source_text_snapshot'])]
+        grams = {tuple(src[i:i + 10]) for i in range(len(src) - 9)}
+        w = [x.lower() for x in E.words(diz)]
+        self.assertFalse([i for i in range(len(w) - 9) if tuple(w[i:i + 10]) in grams])   # longest literal run < 10 words
+        c13 = self.by['CF88:ART.73:PAR.1']
+        self.assertIn('sessenta e cinco anos', c13['content']['atencao'])                 # historical number kept, resolved by official source
+        self.assertNotIn('TCU', c13['content']['atencao'])
+        self.assertIn('NUMBER_NOT_IN_TEXT:65', known[c13['explanation_id']])
+        self.assertEqual(bare['CF88:ART.73:PAR.1'], {'NUMBER_NOT_IN_TEXT'})
+        for t in ('CF88:ART.53:PAR.3', 'CF88:ART.57', 'CF88:ART.62', 'CF88:ART.73:PAR.1'):
+            self.assertRegex(self.by[t]['content']['atencao'], r'Emenda Constitucional nº \d+, de \d{4}')
+        prov = self.by['CF88:ART.45:PAR.1']['human_review']['content_provenance']
+        self.assertEqual([p['human_reason_code'] for p in prov], ['OFFICIAL_CANONICAL_ANNOTATION'])
+        self.assertEqual(self.by['CF88:ART.45:PAR.1']['content'], self.pre_by['CF88:ART.45:PAR.1']['content'])   # T1 byte-identical
 
     def test_every_current_target_selected_or_skipped_with_reason(self):
         rows = self.sel['selection']
@@ -262,7 +315,7 @@ class Batch06(unittest.TestCase):
         self.assertFalse(pending_codes & {'PRISON_SCOPE_UNQUALIFIED', 'JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE'})   # no new noise on the 82
 
     def test_art45_par1_resolver_status_preserved(self):
-        x = self.rows['CF88:ART.45:PAR.1']
+        x = self.pre_tri_c['CF88:ART.45:PAR.1']                              # triage row of the draft reviewed in round C
         self.assertEqual(x['external_resolution']['status'], X.PENDING)            # relation PENDING: not promoted
         self.assertEqual(x['external_resolution']['via'], 'RELATIONS_ENGINE_PENDING')
         self.assertIn('Lei Complementar nº 78, de 1993', x['external_dependency'])   # full identification (no "nº 7" truncation)
@@ -338,14 +391,14 @@ class Batch06(unittest.TestCase):
         c = self.tri['counts']
         self.assertEqual(c['E_HARD_FAIL'], 0)
         self.assertIn('Total: **0**', (BD / 'BATCH06_HARD_FAIL_REPORT.md').read_text(encoding='utf-8'))
-        self.assertEqual(sum(c.values()), 82)                            # the 11 approved in round D leave the triage
-        self.assertEqual(c['D_FULL_HUMAN_REVIEW'], 0)
+        self.assertEqual(sum(c.values()), 69)                            # the 11 of round D and the 13 of round C leave the triage
+        self.assertEqual((c['A_CLEAN_LOW'], c['B_CLEAN_MEDIUM'], c['C_QUICK_REVIEW'], c['D_FULL_HUMAN_REVIEW']), (42, 27, 0, 0))
         self.assertTrue((BD / 'BATCH06_FULL_HUMAN_REVIEW.md').is_file())
         self.assertFalse((BD / 'BATCH06_D_ESCALATION_DIAGNOSTIC.md').is_file())
         full = (BD / 'BATCH06_FULL_HUMAN_REVIEW.md').read_text(encoding='utf-8')
         compact = (BD / 'BATCH06_COMPACT_CLEAN_REVIEW.md').read_text(encoding='utf-8')
         quick = (BD / 'BATCH06_QUICK_REVIEW.md').read_text(encoding='utf-8')
-        for t in ROUND_D_AS_IS + ROUND_D_ADJUSTED:
+        for t in APPROVED:
             self.assertNotIn(f"`{t}`", compact + quick + full)
         for x in self.tri['rows']:
             t, q = x['target_id'], x['queue']
@@ -365,12 +418,15 @@ class Batch06(unittest.TestCase):
         for field in ('Risco:', 'complexidade:', 'Ponto jurídico:', 'Interpretação principal:', 'ATENÇÃO:', 'Dependência externa:', 'Warnings:',
                       'Motivo da fila:'):
             self.assertIn(field, compact)
+        self.assertIn('nenhum item nesta fila', quick)                 # queue C fully decided in round C
         for field in ('**Detector:**', '**Motivo:**', '**Proposta de correção segura:**'):
-            self.assertIn(field, quick)
+            self.assertIn(field, (BD / 'BATCH06_QUICK_REVIEW_PRE_ROUND_C.md').read_text(encoding='utf-8'))
 
     def test_migration_of_previous_d(self):
         m = self.tri['migration']
-        self.assertEqual(m['previous_D'] + 11, 89)                        # 11 old D were decided in round D
+        old_d = {t for t, v in load('PRE_RECALIBRATION_MANIFEST.json')['queues_by_target'].items() if v['queue'] == 'D_FULL_HUMAN_REVIEW'}
+        self.assertEqual(len(old_d & set(APPROVED)), 24)
+        self.assertEqual(m['previous_D'] + 24, 89)                        # old D decided in round D (11) and round C (13) leave the triage
         self.assertEqual(m['previous_D_migrated'], m['previous_D'] - m['previous_D_now'].get('D_FULL_HUMAN_REVIEW', 0))
         self.assertGreater(m['previous_D_migrated'], 0)
 

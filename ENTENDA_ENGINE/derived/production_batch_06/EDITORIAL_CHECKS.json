@@ -5,8 +5,8 @@
  "policy": "checagens editoriais (nao reescrevem conteudo); READY_FOR_EDITORIAL_REVIEW != HUMAN_APPROVED_T1; review_status inalterado",
  "explanations": 93,
  "risk_counts": {
-  "LOW": 49,
-  "MEDIUM": 41,
+  "LOW": 53,
+  "MEDIUM": 37,
   "HIGH": 3
  },
  "finding_counts": {
@@ -19,7 +19,7 @@
  },
  "unresolved_findings": 0,
  "ready_for_editorial_review": 93,
- "human_approved_t1": 11,
+ "human_approved_t1": 24,
  "duplication_pairs": [],
  "rows": [
   {
@@ -72,7 +72,7 @@
    "role": "OVERVIEW",
    "risk": "LOW",
    "risk_reasons": [],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [
     {
@@ -131,11 +131,9 @@
    "explanation_id": "ENTENDA/CF88:ART.45:PAR.1/BASE/1",
    "title": "Art. 45, § 1º — Número de deputados por Estado",
    "role": "DEVICE",
-   "risk": "MEDIUM",
-   "risk_reasons": [
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"Lei Complementar nº 78, de 1993\")"
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -414,15 +412,14 @@
   },
   {
    "target_id": "CF88:ART.53:PAR.3",
-   "explanation_id": "ENTENDA/CF88:ART.53:PAR.3/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.53:PAR.3/BASE/2",
    "title": "Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar",
    "role": "BLOCK",
    "risk": "MEDIUM",
    "risk_reasons": [
-    "SENSITIVE_THEME: crime",
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao (\"Antes da Emenda Constitucional nº 35, de 2001, o texto exigi\")"
+    "SENSITIVE_THEME: crime"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -472,7 +469,7 @@
    "role": "BLOCK",
    "risk": "LOW",
    "risk_reasons": [],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -538,10 +535,9 @@
    "role": "BLOCK",
    "risk": "MEDIUM",
    "risk_reasons": [
-    "SENSITIVE_THEME: perda do mandato",
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao (\"materiais anteriores podem trazer outra forma de votação\")"
+    "SENSITIVE_THEME: perda do mandato"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -588,14 +584,12 @@
   },
   {
    "target_id": "CF88:ART.57",
-   "explanation_id": "ENTENDA/CF88:ART.57/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.57/BASE/2",
    "title": "Art. 57 — Funcionamento do Congresso: sessões e reuniões",
    "role": "OVERVIEW",
-   "risk": "MEDIUM",
-   "risk_reasons": [
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao (\"materiais anteriores trazem outro calendário\")"
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -641,7 +635,7 @@
    "role": "BLOCK",
    "risk": "LOW",
    "risk_reasons": [],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -736,22 +730,21 @@
    "role": "OVERVIEW",
    "risk": "LOW",
    "risk_reasons": [],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
   },
   {
    "target_id": "CF88:ART.61:PAR.1",
-   "explanation_id": "ENTENDA/CF88:ART.61:PAR.1/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.61:PAR.1/BASE/2",
    "title": "Art. 61, § 1º — Iniciativa privativa do Presidente da República",
    "role": "BLOCK",
    "risk": "MEDIUM",
    "risk_reasons": [
-    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURIS",
-    "INTERPRETIVE_QUESTION_DEFERRED: \"temas de interpretação constitucional\" (o draft nao responde; remete)"
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURIS"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -770,15 +763,14 @@
   },
   {
    "target_id": "CF88:ART.62",
-   "explanation_id": "ENTENDA/CF88:ART.62/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.62/BASE/2",
    "title": "Art. 62 — Medidas provisórias",
    "role": "OVERVIEW",
    "risk": "MEDIUM",
    "risk_reasons": [
-    "SENSITIVE_THEME: sanção",
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao (\"materiais anteriores descrevem um regime diferente, com reed\")"
+    "SENSITIVE_THEME: sanção"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [
     {
@@ -978,11 +970,9 @@
    "explanation_id": "ENTENDA/CF88:ART.66:PAR.4/BASE/1",
    "title": "Art. 66, §§ 4º, 5º e 6º — Apreciação do veto pelo Congresso",
    "role": "BLOCK",
-   "risk": "MEDIUM",
-   "risk_reasons": [
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao (\"materiais anteriores podem trazer outra forma de votação\")"
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
@@ -1095,7 +1085,7 @@
    "risk_reasons": [
     "SENSITIVE_THEME: sanções"
    ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [
     {
@@ -1231,14 +1221,12 @@
   },
   {
    "target_id": "CF88:ART.73:PAR.1",
-   "explanation_id": "ENTENDA/CF88:ART.73:PAR.1/BASE/1",
+   "explanation_id": "ENTENDA/CF88:ART.73:PAR.1/BASE/2",
    "title": "Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União",
    "role": "BLOCK",
-   "risk": "MEDIUM",
-   "risk_reasons": [
-    "EXTERNAL_DEPENDENCY_NON_MATERIAL: HISTORICAL_CLAIM_UNVERIFIED em atencao (\"materiais anteriores trazem limite diferente\")"
-   ],
-   "review_status": "PENDING_HUMAN_REVIEW",
+   "risk": "LOW",
+   "risk_reasons": [],
+   "review_status": "HUMAN_APPROVED_T1",
    "editorial_state": "READY_FOR_EDITORIAL_REVIEW",
    "findings": [],
    "unresolved": 0
