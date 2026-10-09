@@ -12,12 +12,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
 
-- **TARGET:** `CF88:ART.42` · `ENTENDA/CF88:ART.42/BASE/1`
+- **TARGET:** `CF88:ART.42` · `ENTENDA/CF88:ART.42/BASE/2`
 - **DISPLAY TITLE:** Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2099 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 290 palavras · 2259 bytes · referências 0
 - **Motivo da seleção:** Visao geral: define quem sao os militares estaduais e situa as regras do § 1º (remissoes), do § 2º (pensionistas) e do § 3º (acumulacao), estes dois ultimos com tratamento proprio ou na visao geral.
 
 **O QUE DIZ**
@@ -26,19 +26,19 @@ O art. 42 identifica os militares estaduais: os integrantes das Polícias Milita
 
 **O QUE SIGNIFICA**
 
-O artigo separa duas categorias de militares. As Forças Armadas (Marinha, Exército e Aeronáutica) pertencem à União e são tratadas no art. 142. Policiais e bombeiros militares pertencem aos Estados, ao Distrito Federal e aos Territórios.
+O artigo distingue os militares dos Estados, do Distrito Federal e dos Territórios dos integrantes das Forças Armadas, que são disciplinados pelo art. 142.
 
-Hierarquia e disciplina são a base dessas corporações: há uma cadeia de comando, e o dever de obediência é mais intenso do que no serviço civil.
+Policiais militares e bombeiros militares integram instituições organizadas com base na hierarquia e na disciplina e possuem regime constitucional próprio, que não se confunde integralmente com o regime dos servidores civis.
 
-Por isso os militares estaduais não seguem integralmente o regime dos servidores civis. A Constituição escolhe algumas regras das Forças Armadas e algumas regras gerais e as estende a eles (§ 1º). A pensão dos seus pensionistas fica com a lei específica de cada ente (§ 2º).
+Os parágrafos do art. 42 fazem remissões a outras regras constitucionais, tratam da legislação aplicável às pensões e determinam a aplicação da regra de acumulação do art. 37, XVI, com prevalência da atividade militar.
 
 **EXEMPLO PRÁTICO**
 
-Um soldado da Polícia Militar de um Estado é servidor estadual, mas com estatuto militar: está sujeito à hierarquia da corporação e a regras próprias de ingresso, promoção e inatividade definidas em lei estadual, e não ao estatuto dos servidores civis do mesmo Estado.
+Um soldado da Polícia Militar é militar estadual, e não servidor civil. Seu regime jurídico resulta das regras constitucionais aplicáveis aos militares e da legislação pertinente ao respectivo ente, observadas também as competências normativas atribuídas à União pela Constituição.
 
 **ATENÇÃO**
 
-Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças Armadas, embora algumas regras destas lhes sejam aplicadas por remissão. A Polícia Civil, por sua vez, é corporação civil e não está neste artigo.
+Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças Armadas, embora algumas regras destas lhes sejam aplicadas por remissão. A Polícia Civil, por sua vez, é corporação civil e não está neste artigo. A competência da lei estadual específica prevista no § 1º não afasta as competências legislativas atribuídas à União em outros dispositivos, como a edição de normas gerais prevista no art. 22, XXI.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -50,20 +50,20 @@ Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças A
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: dos estados do distrito federal e dos territórios)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e exemplo substituidos: militar estadual nao e chamado de servidor estadual; nao se afirma competencia legislativa estadual exclusiva. ATENCAO mantida com acrescimo sobre as normas gerais da Uniao (art. 22, XXI). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
 ### Art. 42, § 1º — Regras aplicáveis aos militares estaduais
 
-- **TARGET:** `CF88:ART.42:PAR.1` · `ENTENDA/CF88:ART.42:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.42:PAR.1` · `ENTENDA/CF88:ART.42:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 42, § 1º — Regras aplicáveis aos militares estaduais
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.42`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 289 palavras · 2098 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 308 palavras · 2246 bytes · referências 0
 - **Motivo da seleção:** Paragrafo de remissoes multiplas (arts. 14, 40 e 142) que perde sentido se resumido na visao geral; exige contexto proprio.
 
 **O QUE DIZ**
@@ -76,7 +76,7 @@ O parágrafo funciona por remissão: em vez de repetir regras, aponta para outro
 
 Do art. 142 vêm, entre outras, a regra de que não cabe habeas corpus contra punição disciplinar militar e as restrições próprias da vida militar, como a proibição de sindicalização e de greve.
 
-O art. 142, § 3º, X, lista matérias como ingresso, limites de idade, estabilidade, transferência para a inatividade, remuneração, direitos e deveres. Para os militares estaduais, essas matérias são tratadas por lei estadual específica, e não pela lei federal das Forças Armadas.
+O art. 142, § 3º, X, reúne matérias como ingresso, limites de idade, estabilidade, transferência para a inatividade, remuneração, direitos e deveres. Para os militares estaduais, o art. 42, § 1º determina que essas matérias sejam disciplinadas por lei estadual específica. Isso não afasta outras competências legislativas atribuídas à União pela própria Constituição, inclusive as normas gerais previstas no art. 22, XXI.
 
 A patente do oficial é o posto da carreira; quem a confere é o Governador do respectivo ente.
 
@@ -100,37 +100,39 @@ Ler este parágrafo exige consultar os dispositivos citados: ele não reproduz o
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Paragrafo do art. 142, par. 3, X substituido: a lei estadual especifica do par. 1 nao afasta as competencias legislativas da Uniao, inclusive as normas gerais do art. 22, XXI. Demais secoes e glossario mantidos. (seções: o_que_significa)
 
 ---
 
 ### Art. 42, § 3º — Acumulação de cargos pelo militar estadual
 
-- **TARGET:** `CF88:ART.42:PAR.3` · `ENTENDA/CF88:ART.42:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.42:PAR.3` · `ENTENDA/CF88:ART.42:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 42, § 3º — Acumulação de cargos pelo militar estadual
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.42`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1710 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 2027 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma incluida pela EC 101/2019: permite ao militar estadual a acumulacao do art. 37, XVI, com prevalencia da atividade militar.
 
 **O QUE DIZ**
 
-O § 3º manda aplicar aos militares dos Estados, do Distrito Federal e dos Territórios a regra do art. 37, XVI, sobre acumulação remunerada de cargos públicos, com prioridade para a atividade militar.
+O § 3º determina a aplicação aos militares dos Estados, do Distrito Federal e dos Territórios da regra do art. 37, XVI, sobre acumulação remunerada de cargos públicos, com prevalência da atividade militar. A acumulação é admitida apenas nas hipóteses constitucionais, com compatibilidade de horários e observância do limite remuneratório referido no art. 37, XI.
 
 **O QUE SIGNIFICA**
 
-O art. 37, XVI, proíbe em regra acumular cargos públicos remunerados e admite exceções, como a de professor com outro cargo e a de dois cargos de profissionais da saúde, desde que haja compatibilidade de horários.
+O art. 37, XVI estabelece como regra a proibição da acumulação remunerada de cargos públicos, mas prevê exceções quando houver compatibilidade de horários.
 
-Este parágrafo abre essas exceções também para policiais e bombeiros militares estaduais. A cláusula "com prevalência da atividade militar" significa que, havendo choque entre as duas atividades, a militar tem precedência: o segundo vínculo não pode prejudicar o serviço na corporação.
+Atualmente, as hipóteses são: dois cargos de professor; um cargo de professor com outro de qualquer natureza; e dois cargos ou empregos privativos de profissionais de saúde com profissões regulamentadas.
+
+O § 3º do art. 42 torna essa regra aplicável aos militares estaduais, acrescentando que a atividade militar deve prevalecer.
 
 **EXEMPLO PRÁTICO**
 
-Um bombeiro militar formado em medicina pode, em tese, ocupar também um cargo de médico em hospital público estadual, se a hipótese se enquadrar no art. 37, XVI, e os horários forem compatíveis. Em uma escala de emergência, o serviço no Corpo de Bombeiros prevalece.
+Um policial militar que também ocupe cargo público de professor poderá acumular os vínculos se a situação estiver abrangida pelo art. 37, XVI, houver compatibilidade de horários e forem respeitadas as demais condições constitucionais. Havendo conflito entre as atividades, prevalece a atividade militar.
 
 **ATENÇÃO**
 
-O parágrafo não cria hipóteses novas de acumulação: remete às do art. 37, XVI. O parágrafo foi incluído pela Emenda Constitucional nº 101, de 2019; regras anteriores sobre o tema devem ser lidas à luz dessa inclusão.
+O § 3º não cria novas hipóteses de acumulação: ele remete ao art. 37, XVI. A Emenda Constitucional nº 101, de 2019, incluiu esse parágrafo no art. 42. Posteriormente, a Emenda Constitucional nº 138, de 2025, alterou a alínea “b” do art. 37, XVI, que atualmente admite a acumulação de um cargo de professor com outro de qualquer natureza.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -143,7 +145,7 @@ O parágrafo não cria hipóteses novas de acumulação: remete às do art. 37, 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos militares dos estados do distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo e ATENCAO substituidos: exemplo do bombeiro-medico (fora da alinea c) trocado por militar-professor; incluidas compatibilidade de horarios e o limite do art. 37, XI; registrada a redacao da alinea b dada pela EC 138/2025; retirada a frase vaga sobre regras anteriores. Complementacao autorizada: "somente pode ocorrer" -> "e admitida apenas" (elimina UNIVERSAL_CLAIM). Resolucao antiga EXCEPTION_NOT_IN_TEXT mantida e ainda aplicavel. Glossario mantido. (seções: atencao, exemplo_pratico, o_que_diz, o_que_significa)
 
 ---
 
@@ -199,17 +201,17 @@ A expressão "para efeitos administrativos" indica que a região não altera a d
 
 ### Art. 43, § 2º — Incentivos regionais
 
-- **TARGET:** `CF88:ART.43:PAR.2` · `ENTENDA/CF88:ART.43:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.43:PAR.2` · `ENTENDA/CF88:ART.43:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 43, § 2º — Incentivos regionais
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.43`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 224 palavras · 1852 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 2022 bytes · referências 0
 - **Motivo da seleção:** Paragrafo-bloco: enunciado e quatro incisos com os instrumentos de incentivo regional.
 
 **O QUE DIZ**
 
-O § 2º lista, sem esgotar, os incentivos regionais, na forma da lei: igualdade de tarifas, fretes, seguros e outros custos de responsabilidade do poder público; juros favorecidos para atividades prioritárias; isenção, redução ou adiamento temporário de tributos federais; e prioridade no aproveitamento de rios e reservatórios nas regiões de baixa renda sujeitas a secas periódicas.
+O § 2º apresenta, sem esgotar a lista e na forma da lei, diferentes incentivos regionais: igualdade de tarifas, fretes, seguros e demais itens de custos e preços sob responsabilidade do poder público; juros favorecidos para atividades prioritárias; isenções, reduções ou diferimento temporário dos tributos federais devidos por pessoas físicas ou jurídicas; e prioridade no aproveitamento econômico e social de rios e massas de água represadas ou represáveis em regiões de baixa renda sujeitas a secas periódicas.
 
 **O QUE SIGNIFICA**
 
@@ -221,7 +223,7 @@ Todos dependem de lei. O parágrafo não concede, por si só, nenhum benefício 
 
 **EXEMPLO PRÁTICO**
 
-Uma lei federal pode reduzir temporariamente o imposto de renda de empresas que se instalem em área de atuação de uma política regional. Esse benefício se enquadra no inciso III e, pelo § 4º, deve considerar, sempre que possível, critérios ambientais.
+Uma lei pode prever incentivo tributário federal enquadrado no inciso III para determinada política regional. Na concessão desse tipo de incentivo, o § 4º determina que, sempre que possível, sejam considerados critérios de sustentabilidade ambiental e de redução das emissões de carbono.
 
 **ATENÇÃO**
 
@@ -237,9 +239,9 @@ Os benefícios tributários do inciso III alcançam tributos federais. Isenção
 
 —
 
-**WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nas regiões de baixa renda sujeitas a secas); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Esse benefício se enquadra no inciso III e, pelo § 4º, deve )
+**WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: regiões de baixa renda sujeitas a secas periódicas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ e exemplo substituidos: os quatro grupos de incentivos completos ("precos", "represaveis", pessoas fisicas ou juridicas) e o par. 4 com "reducao das emissoes de carbono". Complementacoes autorizadas: "demais itens", "sob responsabilidade", "em regioes" e "dos tributos federais devidos por pessoas fisicas ou juridicas" (eliminam ENTENDA_COPIES_OFFICIAL_TEXT e LIST_ITEM_POSSIBLY_DROPPED). O QUE SIGNIFICA, ATENCAO e glossario mantidos. (seções: exemplo_pratico, o_que_diz)
 
 ---
 
@@ -254,7 +256,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1418 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 186 palavras · 1415 bytes · referências 0
 - **Motivo da seleção:** Visao geral: abre o Titulo do Poder Legislativo, define o bicameralismo federal e a duracao da legislatura (paragrafo unico situado aqui).
 
 **O QUE DIZ**
@@ -288,7 +290,7 @@ Legislatura (quatro anos) não se confunde com sessão legislativa (o período a
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: Congresso, Camara e Senado, legislatura, sessao legislativa e mandato do Senador corretamente distinguidos. v1 mantida byte-identica.
 
 ---
 
@@ -298,12 +300,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 45 — Câmara dos Deputados
 
-- **TARGET:** `CF88:ART.45` · `ENTENDA/CF88:ART.45/BASE/1`
+- **TARGET:** `CF88:ART.45` · `ENTENDA/CF88:ART.45/BASE/2`
 - **DISPLAY TITLE:** Art. 45 — Câmara dos Deputados
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1632 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 220 palavras · 1816 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao da Camara pelo sistema proporcional; o § 1º (numero de deputados) tem explicacao propria e o § 2º (Territorios) e situado aqui.
 
 **O QUE DIZ**
@@ -312,23 +314,25 @@ O art. 45 define a Câmara dos Deputados como a Casa dos representantes do povo,
 
 **O QUE SIGNIFICA**
 
-Os deputados representam a população, e não os entes federativos. Por isso o número de cadeiras de cada Estado acompanha, com limites, o tamanho da sua população, conforme lei complementar (§ 1º).
+A Câmara dos Deputados é formada por representantes do povo eleitos pelo sistema proporcional.
 
-No sistema proporcional, as cadeiras são distribuídas conforme a votação obtida pelos partidos, e não apenas pelos candidatos individualmente mais votados. As regras de cálculo estão na legislação eleitoral.
+A representação de cada Estado e do Distrito Federal é definida proporcionalmente à população, dentro dos limites constitucionais e conforme lei complementar.
 
-Cada Território, se vier a ser criado, elegerá quatro deputados, número fixo que independe da população.
+A Constituição determina o uso do sistema proporcional, mas não estabelece neste artigo todo o método de cálculo e distribuição das cadeiras. Esses detalhes pertencem à legislação eleitoral.
+
+Se houver Território federal, cada Território elegerá quatro Deputados, conforme o § 2º.
 
 **EXEMPLO PRÁTICO**
 
-Em uma eleição para deputado federal, os votos de um partido em determinado Estado definem quantas cadeiras ele obtém; depois, essas cadeiras vão para os candidatos mais votados da lista do partido.
+Em uma eleição para Deputado Federal, as cadeiras são preenchidas pelo sistema proporcional previsto no art. 45, de acordo com as regras estabelecidas pela legislação eleitoral. O art. 45, por si só, não descreve todo o cálculo utilizado nessa distribuição.
 
 **ATENÇÃO**
 
-O sistema proporcional da Câmara é diferente do sistema majoritário do Senado (art. 46). Atualmente não existem Territórios federais, mas a regra continua no texto.
+O sistema proporcional utilizado para a Câmara é diferente do princípio majoritário previsto para o Senado no art. 46. O § 2º mantém no texto constitucional a regra de que cada Território federal elegerá quatro Deputados.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Sistema proporcional*: forma de eleição em que as cadeiras são distribuídas na proporção dos votos de cada partido.
+- *Sistema proporcional*: sistema eleitoral em que a representação é distribuída proporcionalmente segundo critérios definidos pela legislação eleitoral.
 - *Território federal*: divisão administrativa da União prevista na Constituição, sem autonomia de Estado.
 
 **CAMADA EXTERNA**
@@ -337,7 +341,7 @@ O sistema proporcional da Câmara é diferente do sistema majoritário do Senado
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do povo eleitos pelo sistema proporcional em cada)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo, ATENCAO e glossario "Sistema proporcional" substituidos: sem mecanica eleitoral especifica sem fonte versionada; Distrito Federal incluido; retirada a afirmacao "Atualmente nao existem Territorios federais". O QUE DIZ e "Territorio federal" mantidos. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -392,12 +396,12 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 46 — Senado Federal
 
-- **TARGET:** `CF88:ART.46` · `ENTENDA/CF88:ART.46/BASE/1`
+- **TARGET:** `CF88:ART.46` · `ENTENDA/CF88:ART.46/BASE/2`
 - **DISPLAY TITLE:** Art. 46 — Senado Federal
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1558 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 253 palavras · 1781 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao do Senado pelo principio majoritario; os tres paragrafos (numero, mandato, renovacao e suplentes) sao curtos e situados aqui.
 
 **O QUE DIZ**
@@ -406,19 +410,21 @@ O art. 46 define o Senado Federal como a Casa dos representantes dos Estados e d
 
 **O QUE SIGNIFICA**
 
-No Senado, todos os Estados têm o mesmo peso, independentemente da população. Isso expressa a igualdade entre os entes da Federação, ao lado da Câmara, que reflete a população.
+O Senado representa os Estados e o Distrito Federal em igualdade numérica: cada um elege três Senadores, independentemente da população.
 
-Pelo princípio majoritário, vence quem obtém mais votos, sem distribuição proporcional entre partidos.
+A eleição segue o princípio majoritário, diferentemente do sistema proporcional da Câmara dos Deputados.
 
-A renovação alternada faz com que, em uma eleição, cada Estado escolha um senador e, na seguinte, dois. Assim o Senado não se renova por inteiro de uma só vez.
+O mandato de Senador é de oito anos, mas a representação é renovada a cada quatro anos, alternadamente por um terço e dois terços. Assim, em um ciclo cada Estado e o Distrito Federal elegem um Senador e, no ciclo seguinte, dois.
+
+Cada Senador é eleito com dois suplentes. As hipóteses em que o suplente é convocado são disciplinadas pelo art. 56, § 1º.
 
 **EXEMPLO PRÁTICO**
 
-Em uma eleição geral, cada Estado elege um senador; quatro anos depois, elege dois. O senador eleito exerce mandato de oito anos, e seus dois suplentes podem substituí-lo em caso de licença ou vaga.
+Em uma renovação de um terço do Senado, cada Estado e o Distrito Federal elegem um Senador. Quatro anos depois, na renovação de dois terços, cada um elege dois. O mandato de cada Senador continua sendo de oito anos.
 
 **ATENÇÃO**
 
-Os suplentes são eleitos junto com o senador, na mesma chapa; não há eleição separada para eles. O mandato de oito anos é o dobro do mandato dos deputados.
+Cada Senador é eleito com dois suplentes. Nos termos do art. 56, § 1º, o suplente é convocado nos casos de vaga, de investidura nas funções previstas no art. 56 ou de licença superior a cento e vinte dias.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -431,7 +437,7 @@ Os suplentes são eleitos junto com o senador, na mesma chapa; não há eleiçã
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: representantes dos estados e do distrito federal eleitos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: Distrito Federal incluido; suplencia alinhada ao art. 56, par. 1 (vaga, investidura, licenca superior a cento e vinte dias); retiradas as referencias a "mesma chapa". O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -441,12 +447,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 47 — Quórum das deliberações
 
-- **TARGET:** `CF88:ART.47` · `ENTENDA/CF88:ART.47/BASE/1`
+- **TARGET:** `CF88:ART.47` · `ENTENDA/CF88:ART.47/BASE/2`
 - **DISPLAY TITLE:** Art. 47 — Quórum das deliberações
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 1716 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 208 palavras · 1605 bytes · referências 1
 - **Motivo da seleção:** Artigo de caput unico com regra geral de quorum, de alta utilidade para todo o processo legislativo.
 
 **O QUE DIZ**
@@ -455,9 +461,13 @@ O art. 47 estabelece a regra geral de votação no Congresso: ressalvadas as exc
 
 **O QUE SIGNIFICA**
 
-A regra tem duas exigências diferentes. A primeira é de presença: para votar, é preciso que mais da metade dos membros da Casa ou da comissão esteja presente. A segunda é de aprovação: entre os presentes, vence a posição com mais votos, a chamada maioria simples ou relativa.
+O artigo estabelece duas condições diferentes.
 
-Essa é a regra padrão, usada, por exemplo, para aprovar leis ordinárias. Quando a Constituição exige outro quórum, como maioria absoluta para lei complementar (art. 69) ou três quintos para emenda constitucional (art. 60, § 2º), prevalece a regra especial.
+Primeiro, há um quórum de presença: a deliberação exige a presença da maioria absoluta dos membros da Casa ou da comissão.
+
+Atendido esse quórum, a regra geral de aprovação é a maioria dos votos. Essa regra só vale quando a própria Constituição não exigir quórum diferente.
+
+Por isso, dispositivos especiais prevalecem sobre o art. 47, como a maioria absoluta exigida para leis complementares e os três quintos exigidos para emendas constitucionais.
 
 **EXEMPLO PRÁTICO**
 
@@ -465,13 +475,12 @@ Em uma comissão com quarenta membros, a votação só pode ocorrer com pelo men
 
 **ATENÇÃO**
 
-Maioria simples (dos votos dos presentes) é diferente de maioria absoluta (mais da metade de todos os membros da Casa). A expressão "salvo disposição constitucional em contrário" indica que há exceções espalhadas pelo texto.
+No art. 47, maioria absoluta é requisito de presença, enquanto a decisão segue, como regra geral, a maioria dos votos. Não se deve confundir maioria dos votos com maioria absoluta do total de membros.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Quórum*: número mínimo de membros exigido para votar ou para aprovar uma proposta.
-- *Maioria absoluta*: mais da metade do total de membros da Casa.
-- *Maioria simples*: mais votos a favor do que contra entre os presentes.
+- *Quórum*: número de membros ou de votos exigido constitucionalmente para determinada deliberação.
+- *Maioria absoluta*: mais da metade do número total de membros do órgão.
 
 **CAMADA EXTERNA**
 
@@ -479,7 +488,7 @@ Maioria simples (dos votos dos presentes) é diferente de maioria absoluta (mais
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, ATENCAO e glossario substituidos: quorum de presenca (maioria absoluta) separado da regra geral de deliberacao (maioria dos votos), sem definir maioria simples como "maioria dos presentes". Decisao complementar: "Maioria simples" retirado do glossario (glossario final: Quorum, Maioria absoluta). Resolucao antiga TRANSITION_IN_CORE nao e mais disparada pela v2 (sem uso), mantida no historico. O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -539,29 +548,33 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 49 — Competência exclusiva do Congresso
 
-- **TARGET:** `CF88:ART.49` · `ENTENDA/CF88:ART.49/BASE/1`
+- **TARGET:** `CF88:ART.49` · `ENTENDA/CF88:ART.49/BASE/2`
 - **DISPLAY TITLE:** Art. 49 — Competência exclusiva do Congresso
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 321 palavras · 2482 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 324 palavras · 2489 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: competencias exclusivas sem sancao; incisos I, V e IX tem explicacao propria, os demais itens curtos sao situados aqui.
 
 **O QUE DIZ**
 
-O art. 49 enumera as competências exclusivas do Congresso Nacional. Entre elas estão: decidir definitivamente sobre tratados que gerem encargos gravosos; autorizar declaração de guerra, celebração de paz e trânsito ou permanência temporária de forças estrangeiras, ressalvados os casos previstos em lei complementar; autorizar ausência do Presidente e do Vice por mais de quinze dias; aprovar estado de defesa e intervenção federal; sustar atos normativos do Executivo; fixar subsídios; julgar as contas do Presidente; fiscalizar o Executivo; autorizar referendo e convocar plebiscito; e decretar estado de calamidade pública nacional.
+O art. 49 enumera competências exclusivas do Congresso Nacional. Entre elas estão decidir sobre determinados atos internacionais; autorizar atos do Presidente, com a ressalva de lei complementar prevista no inciso II; aprovar o estado de defesa e a intervenção federal e autorizar o estado de sítio ou suspender essas medidas; sustar atos normativos do Executivo nas hipóteses constitucionais; fixar subsídios; julgar as contas do Presidente; fiscalizar o Executivo; autorizar referendo e convocar plebiscito; e decretar o estado de calamidade pública de âmbito nacional nas condições constitucionais.
 
 **O QUE SIGNIFICA**
 
-Competência exclusiva é aquela que o Congresso exerce sozinho, sem sanção ou veto do Presidente. O instrumento normalmente usado é o decreto legislativo.
+As matérias do art. 49 são atribuídas constitucionalmente ao Congresso Nacional e não dependem de sanção presidencial.
 
-As competências mostram duas faces do Legislativo. Uma é de controle: aprovar medidas excepcionais, autorizar atos do Presidente, sustar atos normativos, julgar contas e fiscalizar. A outra é de decisão política: tratados gravosos, concessões de rádio e televisão, atividades nucleares, terras indígenas e grandes alienações de terras públicas.
+Isso não significa que o Presidente da República fique excluído de todo o procedimento. Algumas competências do artigo pressupõem ato, iniciativa, pedido ou situação relacionada ao Poder Executivo.
+
+O art. 49 também não estabelece um único instrumento normativo para todas as suas competências. A forma de exercício depende da hipótese constitucional específica.
+
+Essas atribuições abrangem funções de autorização, controle, fiscalização e decisão conferidas ao Congresso Nacional.
 
 O inciso XVIII remete ao regime de calamidade pública dos arts. 167-B a 167-G.
 
 **EXEMPLO PRÁTICO**
 
-Se o Presidente da República precisar viajar ao exterior por mais de quinze dias, depende de autorização do Congresso (inciso III). Essa autorização é dada por decreto legislativo, sem passar pela sanção presidencial.
+Se o Presidente da República pretender ausentar-se do País por período superior a quinze dias, a autorização do Congresso Nacional é exigida pelo inciso III. Essa deliberação não é submetida à sanção presidencial.
 
 **ATENÇÃO**
 
@@ -569,19 +582,18 @@ O art. 49 trata da competência do Congresso como um todo. As competências priv
 
 **PALAVRAS DIFÍCEIS**
 
-- *Competência exclusiva*: atribuição que só o Congresso exerce, sem participação do Presidente da República.
+- *Competência exclusiva*: atribuição que a Constituição confere ao Congresso Nacional e cujo exercício, nos casos do art. 49, não depende de sanção presidencial.
 - *Referendo*: consulta ao povo sobre ato já aprovado, para confirmá-lo ou rejeitá-lo.
 - *Plebiscito*: consulta ao povo antes da decisão sobre determinado tema.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
 - *Subsídio*: remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º).
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aprovar o estado de defesa e a intervenção)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario "Competencia exclusiva" substituidos: competencia exclusiva nao equivale a ausencia de qualquer participacao presidencial; sem instrumento unico; inciso IV completo (estado de sitio). Complementacoes autorizadas: "intervencao federal e autorizar" (elimina ENTENDA_COPIES_OFFICIAL_TEXT), "fique excluido de todo o procedimento" (elimina ABSOLUTE_CLAIM) e "com a ressalva de lei complementar prevista no inciso II" (elimina LAW_DEPENDENCY_OMITTED). "Decreto legislativo" retirado do glossario por decisao editorial. ATENCAO mantida. (seções: exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -632,12 +644,12 @@ O inciso fala em encargos ou compromissos gravosos. Quais tratados exigem essa a
 
 ### Art. 49, inciso V — Sustação de atos normativos do Executivo
 
-- **TARGET:** `CF88:ART.49:INC.V` · `ENTENDA/CF88:ART.49:INC.V/BASE/1`
+- **TARGET:** `CF88:ART.49:INC.V` · `ENTENDA/CF88:ART.49:INC.V/BASE/2`
 - **DISPLAY TITLE:** Art. 49, inciso V — Sustação de atos normativos do Executivo
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1678 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 183 palavras · 1567 bytes · referências 0
 - **Motivo da seleção:** Item com instituto proprio de controle (veto legislativo), frequente em estudo.
 
 **O QUE DIZ**
@@ -646,26 +658,25 @@ O inciso V autoriza o Congresso a sustar os atos normativos do Poder Executivo q
 
 **O QUE SIGNIFICA**
 
-O Executivo pode editar regulamentos para executar as leis (art. 84, IV) e leis delegadas nos limites da resolução de delegação (art. 68). Quando ultrapassa esses limites, invade a função do Legislativo.
+O Poder Executivo pode expedir decretos e regulamentos para a fiel execução das leis e pode exercer delegação legislativa quando a Constituição e o ato de delegação assim permitirem.
 
-O inciso dá ao Congresso um meio de reagir diretamente: um decreto legislativo que suspende os efeitos do ato. Não é preciso esperar o Judiciário.
+Se um ato normativo do Executivo ultrapassar o poder regulamentar ou os limites da delegação legislativa, o inciso V atribui ao Congresso Nacional competência para sustá-lo.
 
-A sustação recai sobre o ato que exorbita, isto é, que vai além do poder regulamentar ou dos limites da delegação legislativa.
+Essa competência constitucional do Congresso não se confunde com o controle judicial de constitucionalidade.
 
 **EXEMPLO PRÁTICO**
 
-Se um decreto presidencial criar uma obrigação para os cidadãos que nenhuma lei prevê, o Congresso pode sustá-lo por decreto legislativo, com fundamento neste inciso.
+Se um decreto do Executivo criar obrigação que ultrapasse os limites da lei que deveria apenas regulamentar, poderá estar configurada a hipótese constitucional para sua sustação pelo Congresso.
 
 **ATENÇÃO**
 
-Sustar não é o mesmo que revogar nem que declarar inconstitucional: o Congresso suspende a eficácia do ato que exorbitou. A eventual inconstitucionalidade do próprio ato também pode ser discutida no Judiciário.
+Sustar não é o mesmo que revogar nem que declarar judicialmente a inconstitucionalidade. O inciso V trata especificamente de ato normativo que exceda o poder regulamentar ou os limites da delegação legislativa.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Poder regulamentar*: competência do Executivo para editar normas que detalham a execução das leis.
 - *Exorbitar*: ir além dos limites permitidos.
 - *Sustar*: suspender os efeitos de um ato.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
 
 **CAMADA EXTERNA**
 
@@ -673,18 +684,18 @@ Sustar não é o mesmo que revogar nem que declarar inconstitucional: o Congress
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: sustar os atos normativos do poder executivo que)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: retirada a afirmacao de que a sustacao e necessariamente feita por decreto legislativo; competencia do Congresso distinta do controle judicial. "Decreto legislativo" retirado do glossario por decisao editorial. O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 49, inciso IX — Julgamento das contas do Presidente
 
-- **TARGET:** `CF88:ART.49:INC.IX` · `ENTENDA/CF88:ART.49:INC.IX/BASE/1`
+- **TARGET:** `CF88:ART.49:INC.IX` · `ENTENDA/CF88:ART.49:INC.IX/BASE/2`
 - **DISPLAY TITLE:** Art. 49, inciso IX — Julgamento das contas do Presidente
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1462 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1501 bytes · referências 0
 - **Motivo da seleção:** Item que exige contexto proprio (relacao com o parecer previo do TCU no art. 71, I).
 
 **O QUE DIZ**
@@ -693,15 +704,15 @@ O inciso IX encarrega o Congresso de julgar a cada ano as contas do Presidente d
 
 **O QUE SIGNIFICA**
 
-O Presidente presta contas anualmente ao Congresso (art. 84, XXIV). O Tribunal de Contas da União analisa essas contas e emite um parecer prévio (art. 71, I), mas quem julga é o Congresso.
+O Presidente da República presta anualmente suas contas ao Congresso Nacional.
 
-O parecer é técnico; o julgamento é político, feito pelos representantes eleitos.
+O Tribunal de Contas da União aprecia essas contas e emite o parecer prévio previsto no art. 71, I. O julgamento das contas presidenciais, porém, é competência do Congresso Nacional, nos termos do art. 49, IX.
 
-Além das contas, o Congresso aprecia os relatórios sobre a execução dos planos de governo, o que reforça a sua função de acompanhar a gestão.
+O Congresso também aprecia os relatórios relativos à execução dos planos de governo.
 
 **EXEMPLO PRÁTICO**
 
-Ao fim de um exercício, o Tribunal de Contas da União emite parecer recomendando a rejeição das contas do Presidente. O Congresso pode acompanhar ou não o parecer ao julgar as contas.
+Depois de apresentadas as contas presidenciais, o Tribunal de Contas da União realiza sua apreciação e emite parecer prévio. Posteriormente, cabe ao Congresso Nacional exercer o julgamento previsto no art. 49, IX.
 
 **ATENÇÃO**
 
@@ -710,15 +721,15 @@ Se o Presidente não apresentar as contas no prazo, cabe à Câmara proceder à 
 **PALAVRAS DIFÍCEIS**
 
 - *Prestação de contas*: demonstração de como os recursos públicos foram usados.
-- *Parecer prévio*: opinião técnica emitida antes do julgamento, que não vincula quem julga.
+- *Parecer prévio*: manifestação emitida pelo Tribunal de Contas da União sobre as contas do Presidente antes do julgamento pelo Congresso Nacional.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: os relatórios sobre a execução dos planos de)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e glossario "Parecer previo" substituidos: parecer previo do TCU (art. 71, I) separado do julgamento pelo Congresso, sem definir genericamente todo parecer previo como nao vinculante. O QUE DIZ, ATENCAO e "Prestacao de contas" mantidos. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -822,25 +833,27 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 51 — Competências privativas da Câmara
 
-- **TARGET:** `CF88:ART.51` · `ENTENDA/CF88:ART.51/BASE/1`
+- **TARGET:** `CF88:ART.51` · `ENTENDA/CF88:ART.51/BASE/2`
 - **DISPLAY TITLE:** Art. 51 — Competências privativas da Câmara
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1821 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 1970 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: o inciso I (autorizacao para processo contra o Presidente) tem explicacao propria; os demais itens curtos sao situados aqui.
 
 **O QUE DIZ**
 
-O art. 51 lista as competências privativas da Câmara dos Deputados: autorizar a instauração de processo contra o Presidente, o Vice-Presidente e os Ministros de Estado; tomar as contas do Presidente quando não apresentadas no prazo; elaborar o regimento interno; dispor sobre sua organização, polícia e serviços; e eleger membros do Conselho da República.
+O art. 51 reúne competências privativas da Câmara dos Deputados. Entre elas estão autorizar, por dois terços de seus membros, a instauração dos processos indicados no inciso I; proceder à tomada de contas do Presidente quando não apresentadas no prazo constitucional; elaborar seu regimento interno; dispor sobre sua organização, funcionamento, polícia e serviços; exercer a iniciativa de lei prevista no inciso IV; e eleger membros do Conselho da República.
 
 **O QUE SIGNIFICA**
 
-Competência privativa é aquela exercida só pela Câmara, sem participação do Senado nem sanção do Presidente. O instrumento é, em regra, a resolução.
+O artigo atribui determinadas competências especificamente à Câmara dos Deputados.
 
-Algumas competências são de controle político (autorizar processo e tomar contas). Outras garantem a autonomia da Casa: regimento próprio, organização administrativa e iniciativa da lei que fixa a remuneração dos seus servidores.
+Essas competências não seguem necessariamente um único procedimento ou instrumento. Algumas são exercidas diretamente pela própria Casa, enquanto o inciso IV prevê expressamente iniciativa de lei para a fixação da remuneração correspondente.
 
-Essa autonomia tem limite: a remuneração dos servidores da Câmara depende de lei e deve respeitar a lei de diretrizes orçamentárias.
+Por isso, a forma de exercício deve ser verificada em cada inciso.
+
+Entre as atribuições estão funções de controle político e medidas ligadas à organização e à autonomia administrativa da Câmara.
 
 **EXEMPLO PRÁTICO**
 
@@ -852,7 +865,7 @@ A Câmara autoriza o processo contra o Presidente, mas não o julga: o julgament
 
 **PALAVRAS DIFÍCEIS**
 
-- *Competência privativa*: atribuição exercida por uma só Casa, sem participação da outra nem do Presidente.
+- *Competência privativa*: atribuição que a Constituição confere especificamente à Câmara dos Deputados, nos limites do respectivo dispositivo.
 - *Regimento interno*: conjunto de regras que organiza o funcionamento da Casa.
 - *Tomada de contas*: levantamento das contas feito por quem fiscaliza quando o responsável não as apresenta.
 
@@ -860,9 +873,9 @@ A Câmara autoriza o processo contra o Presidente, mas não o julga: o julgament
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: autorizar por dois terços de seus membros a)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA e glossario "Competencia privativa" substituidos: sem definicao universal "sem participacao do Senado nem sancao" e sem instrumento unico; quorum de dois tercos e iniciativa de lei do inciso IV explicitos. Exemplo, ATENCAO, "Regimento interno" e "Tomada de contas" mantidos. (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -906,7 +919,7 @@ O inciso não define o rito do processo nem os crimes de responsabilidade: isso 
 
 - O rito do processo por crime de responsabilidade e o alcance da autorização da Câmara são tratados na lei que define esses crimes e na camada JURISPRUDÊNCIA.
 
-**WARNINGS:** PARENT_REPETITION (*: CF88:ART.51: 0.231)
+**WARNINGS:** —
 
 **DECISÃO HUMANA:** APPROVED — aprovado sem alteracao juridica na revisao humana da fila D; nenhum microajuste T1 exigido pelo validador
 
@@ -1053,12 +1066,12 @@ O texto constitucional associa à condenação a perda do cargo e a inabilitaç�
 
 ### Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
 
-- **TARGET:** `CF88:ART.52:INC.III` · `ENTENDA/CF88:ART.52:INC.III/BASE/1`
+- **TARGET:** `CF88:ART.52:INC.III` · `ENTENDA/CF88:ART.52:INC.III/BASE/2`
 - **DISPLAY TITLE:** Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.52`, `CF88:ART.52:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1622 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 228 palavras · 1926 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com enunciado e alineas que listam as autoridades sujeitas a sabatina.
 
 **O QUE DIZ**
@@ -1067,19 +1080,19 @@ O inciso III exige aprovação prévia do Senado, por voto secreto e após argui
 
 **O QUE SIGNIFICA**
 
-É um mecanismo de controle mútuo entre os Poderes. O Presidente indica, mas a escolha só se completa com a aprovação do Senado.
+O inciso III exige aprovação prévia do Senado para as escolhas nele enumeradas. A deliberação ocorre por voto secreto, depois de arguição pública da pessoa indicada.
 
-O procedimento tem duas etapas: a arguição pública, conhecida como sabatina, em que o indicado responde a perguntas dos senadores, e a votação secreta.
+A exigência funciona como etapa constitucional anterior à conclusão da escolha nas hipóteses previstas.
 
-A alínea f permite que a lei amplie a lista de cargos que dependem dessa aprovação.
+A alínea “f” permite que a lei determine outros cargos cuja escolha também dependa dessa aprovação.
 
 **EXEMPLO PRÁTICO**
 
-Indicado pelo Presidente para a presidência do Banco Central, o candidato passa por sabatina em comissão do Senado e depois tem o nome votado secretamente. Se rejeitado, não pode ser nomeado.
+Se uma pessoa for indicada para a presidência do Banco Central, ela será submetida à arguição pública e posteriormente à votação secreta do Senado. Sem a aprovação exigida constitucionalmente, não se completa a etapa necessária à nomeação prevista para essa hipótese.
 
 **ATENÇÃO**
 
-A sabatina é pública, mas o voto é secreto. Para os chefes de missão diplomática permanente (inciso IV), até a arguição é feita em sessão secreta.
+No inciso III, a arguição é pública e o voto é secreto. O inciso IV contém regra diferente para os chefes de missão diplomática de caráter permanente, cuja arguição ocorre em sessão secreta. Outras disposições constitucionais podem estabelecer requisitos adicionais para autoridades específicas, como ocorre com o Procurador-Geral da República.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1092,7 +1105,7 @@ A sabatina é pública, mas o voto é secreto. Para os chefes de missão diplom�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do tribunal de contas da união indicados pelo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: retirado o procedimento regimental ("em comissao do Senado"); incisos III e IV distinguidos; mencao a requisitos adicionais de outras disposicoes (Procurador-Geral da Republica). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -1387,7 +1400,7 @@ Antes da Emenda Constitucional nº 35, de 2001, a Constituição exigia prévia 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 172 palavras · 1404 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 172 palavras · 1401 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma de protecao ao sigilo das fontes do parlamentar.
 
 **O QUE DIZ**
@@ -1421,7 +1434,7 @@ O parágrafo trata de uma dispensa: não proíbe o parlamentar de testemunhar se
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: distingue possibilidade de ser chamado, dispensa de revelar informacoes recebidas ou prestadas em razao do mandato e a identidade das pessoas, e fatos sem relacao com o mandato. v1 mantida byte-identica.
 
 ---
 
@@ -1476,46 +1489,48 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 54 — Incompatibilidades dos parlamentares
 
-- **TARGET:** `CF88:ART.54` · `ENTENDA/CF88:ART.54/BASE/1`
+- **TARGET:** `CF88:ART.54` · `ENTENDA/CF88:ART.54/BASE/2`
 - **DISPLAY TITLE:** Art. 54 — Incompatibilidades dos parlamentares
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1664 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 307 palavras · 2312 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as vedacoes se dividem por marco temporal (diplomacao e posse), cada grupo com bloco proprio.
 
 **O QUE DIZ**
 
-O art. 54 lista o que deputados e senadores não podem fazer. Um grupo de proibições vale desde a expedição do diploma; outro, desde a posse. As vedações envolvem contratos com o poder público, cargos e funções em entidades públicas, empresas favorecidas por contratos públicos, patrocínio de causas e acúmulo de mandatos eletivos.
+O art. 54 estabelece incompatibilidades aplicáveis a Deputados e Senadores em dois momentos diferentes. Algumas proibições começam com a expedição do diploma; outras, com a posse. Elas envolvem contratos e vínculos com as entidades indicadas pelo artigo, determinados cargos e funções e empresas favorecidas por contrato com pessoa jurídica de direito público. Também envolvem o patrocínio de causas em que essas entidades sejam interessadas e a titularidade simultânea de mais de um cargo ou mandato público eletivo.
 
 **O QUE SIGNIFICA**
 
-As incompatibilidades evitam conflito de interesses: quem vota leis e fiscaliza o governo não deve manter vínculos que o tornem dependente do próprio poder público.
+O artigo utiliza dois marcos temporais.
 
-O artigo usa dois momentos. A partir da diplomação, valem as vedações sobre contratos e cargos nas entidades públicas. A partir da posse, as proibições ficam mais amplas, alcançando a propriedade e a direção de empresas favorecidas, o patrocínio de causas contra essas entidades e a titularidade de mais de um mandato.
+Desde a expedição do diploma, aplicam-se as vedações do inciso I, relativas a determinados contratos e a cargos, funções ou empregos remunerados nas entidades ali indicadas.
 
-Desrespeitar qualquer delas leva à perda do mandato (art. 55, I).
+Desde a posse, passam a valer também as proibições do inciso II, relativas às situações nele enumeradas, como determinados vínculos com empresas, patrocínio de causas em que as entidades referidas sejam interessadas e a titularidade de mais de um cargo ou mandato público eletivo.
+
+A violação dessas proibições constitui hipótese de perda do mandato pelo art. 55, I. Nos termos do art. 55, § 2º, essa perda é decidida pela respectiva Casa, por maioria absoluta, mediante provocação prevista no dispositivo e com garantia de ampla defesa.
 
 **EXEMPLO PRÁTICO**
 
-Um deputado eleito que é diretor de empresa beneficiada por contrato com um ministério precisa deixar essa direção até a posse, sob pena de incorrer na vedação do inciso II.
+Um Deputado eleito permanece diretor de empresa que goza de favor decorrente de contrato com a União. Como essa vedação se aplica desde a posse, ele precisa deixar a situação incompatível antes de assumir o mandato para não incidir na hipótese do art. 54, II.
 
 **ATENÇÃO**
 
-Incompatibilidade não se confunde com inelegibilidade: a primeira impede certas atividades durante o mandato; a segunda impede a própria candidatura.
+As incompatibilidades do art. 54 possuem marcos distintos: algumas começam com a expedição do diploma e outras somente com a posse. Elas também não se confundem com inelegibilidade, que diz respeito às condições para disputar ou exercer validamente uma candidatura.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Incompatibilidade*: proibição de exercer certas atividades ou ter certos vínculos durante o mandato.
+- *Incompatibilidade*: proibição constitucional de manter determinada atividade, vínculo ou situação a partir do marco estabelecido pelo art. 54.
 - *Posse*: ato formal de entrada no exercício do mandato.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um deputado eleito que é diretor de empresa beneficiada por )
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de mais de um cargo ou mandato público); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de mais de um cargo ou mandato público); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Como essa vedação se aplica desde a posse, ele precisa deixa)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo, ATENCAO e glossario "Incompatibilidade" substituidos: "em que essas entidades sejam interessadas" no lugar de "contra essas entidades"; perda do mandato decidida pela Casa (art. 55, par. 2), nao automatica; marcos da diplomacao e da posse. Complementacao autorizada: frase final do O QUE DIZ dividida (elimina LONG_SENTENCE). "Posse" mantido. (seções: atencao, exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 

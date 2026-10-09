@@ -3,8 +3,8 @@
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 51
-- Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 2 · não resolvidos: 0
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 66
+- Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -218,17 +218,17 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
 
-- `CF88:ART.42` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.42` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 42, § 1º — Regras aplicáveis aos militares estaduais
 
-- `CF88:ART.42:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.42:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 42, § 3º — Acumulação de cargos pelo militar estadual
 
-- `CF88:ART.42:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.42:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 - EXCEPTION_NOT_IN_TEXT (o_que_diz/o_que_significa: exceções) → Falso positivo: "exceções" descreve as hipoteses do art. 37, XVI, para o qual o § 3º remete; nao cria excecao propria.
 
@@ -241,17 +241,17 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 43, § 2º — Incentivos regionais
 
-- `CF88:ART.43:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.43:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 44 — Congresso Nacional e legislatura
 
-- `CF88:ART.44` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.44` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 45 — Câmara dos Deputados
 
-- `CF88:ART.45` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.45` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 45, § 1º — Número de deputados por Estado
@@ -261,38 +261,37 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 46 — Senado Federal
 
-- `CF88:ART.46` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.46` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 47 — Quórum das deliberações
 
-- `CF88:ART.47` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.47` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
-- TRANSITION_IN_CORE (o_que_significa: emenda constitucional) → Falso positivo: "emenda constitucional" designa a especie normativa (quorum de tres quintos), nao regra de transicao nem historico de redacao.
 
 ### Art. 49 — Competência exclusiva do Congresso
 
-- `CF88:ART.49` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.49` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 49, inciso V — Sustação de atos normativos do Executivo
 
-- `CF88:ART.49:INC.V` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.49:INC.V` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 49, inciso IX — Julgamento das contas do Presidente
 
-- `CF88:ART.49:INC.IX` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.49:INC.IX` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 51 — Competências privativas da Câmara
 
-- `CF88:ART.51` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.51` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
 
-- `CF88:ART.52:INC.III` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.52:INC.III` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 53, § 1º — Foro dos parlamentares no Supremo Tribunal Federal
@@ -302,12 +301,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 53, § 6º — Dispensa de testemunhar sobre informações do mandato
 
-- `CF88:ART.53:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.53:PAR.6` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 54 — Incompatibilidades dos parlamentares
 
-- `CF88:ART.54` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.54` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 54, inciso I — Vedações desde a expedição do diploma

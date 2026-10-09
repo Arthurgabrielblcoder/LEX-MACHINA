@@ -2,7 +2,172 @@
 
 Lote `ENTENDA_CF_PRODUCTION_BATCH_06` · 2026-10-04 · nenhum item aprovado (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
-## A — CLEAN_LOW (27)
+## A — CLEAN_LOW (42)
+
+### `CF88:ART.42` — Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 42 identifica os militares estaduais: os integrantes das Polícias Militares e dos Corpos de Bombeiros Militares, instituições que se organizam pela hierarquia e pela disciplina.
+- Interpretação principal: O artigo separa duas categorias de militares.
+- ATENÇÃO: Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças Armadas, embora algumas regras destas lhes sejam aplicadas por remissão.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.42:PAR.1` — Art. 42, § 1º — Regras aplicáveis aos militares estaduais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 1º estende aos militares estaduais, além do que a lei fixar, as regras do art. 14, § 8º (elegibilidade do militar), do art. 40, § 9º (contagem do tempo de contribuição) e do art. 142, §§ 2º e 3º…
+- Interpretação principal: O parágrafo funciona por remissão: em vez de repetir regras, aponta para outros artigos.
+- ATENÇÃO: Ler este parágrafo exige consultar os dispositivos citados: ele não reproduz o conteúdo do art. 14, § 8º, do art. 40, § 9º, nem do art. 142.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.42:PAR.3` — Art. 42, § 3º — Acumulação de cargos pelo militar estadual
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 3º manda aplicar aos militares dos Estados, do Distrito Federal e dos Territórios a regra do art. 37, XVI, sobre acumulação remunerada de cargos públicos, com prioridade para a atividade militar.
+- Interpretação principal: O art. 37, XVI, proíbe em regra acumular cargos públicos remunerados e admite exceções, como a de professor com outro cargo e a de dois cargos de profissionais da saúde,…
+- ATENÇÃO: O parágrafo não cria hipóteses novas de acumulação: remete às do art. 37, XVI.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: aos militares dos estados do distrito federal e), HISTORICAL_CLAIM_SUPPORTED(foi incluído pela Emenda Constitucional…), EXCEPTION_NOT_IN_TEXT(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.43:PAR.2` — Art. 43, § 2º — Incentivos regionais
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 2º lista, sem esgotar, os incentivos regionais, na forma da lei: igualdade de tarifas, fretes, seguros e outros custos de responsabilidade do poder público; juros favorecidos para atividades…
+- Interpretação principal: Os incentivos são ferramentas para reduzir desvantagens de regiões menos desenvolvidas.
+- ATENÇÃO: Os benefícios tributários do inciso III alcançam tributos federais.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: nas regiões de baixa renda sujeitas a secas), lint ABSOLUTE_CLAIM, lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.44` — Art. 44 — Congresso Nacional e legislatura
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 44 atribui o Poder Legislativo da União ao Congresso Nacional, formado por duas Casas: a Câmara dos Deputados e o Senado Federal.
+- Interpretação principal: O Brasil adota, no plano federal, o bicameralismo: as leis em regra passam pelas duas Casas.
+- ATENÇÃO: Legislatura (quatro anos) não se confunde com sessão legislativa (o período anual de trabalho) nem com o mandato do senador, que é de oito anos.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(8 anos), EXAMPLE_NUMBER_NOT_IN_TEXT(2), NUMBER_FROM_OTHER_DEVICE(8 anos)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.45` — Art. 45 — Câmara dos Deputados
+
+- Risco: LOW · complexidade: EXTERNAL
+- Ponto jurídico: O art. 45 define a Câmara dos Deputados como a Casa dos representantes do povo, eleitos pelo sistema proporcional em cada Estado, Território e no Distrito Federal.
+- Interpretação principal: Os deputados representam a população, e não os entes federativos.
+- ATENÇÃO: O sistema proporcional da Câmara é diferente do sistema majoritário do Senado (art. 46).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: do povo eleitos pelo sistema proporcional em cada)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.46` — Art. 46 — Senado Federal
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 46 define o Senado Federal como a Casa dos representantes dos Estados e do Distrito Federal, eleitos pelo princípio majoritário.
+- Interpretação principal: No Senado, todos os Estados têm o mesmo peso, independentemente da população.
+- ATENÇÃO: Os suplentes são eleitos junto com o senador, na mesma chapa; não há eleição separada para eles.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: representantes dos estados e do distrito federal…), NUMBER_FROM_OTHER_DEVICE(fracao 1/3 , fracao 2/3 )
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.47` — Art. 47 — Quórum das deliberações
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 47 estabelece a regra geral de votação no Congresso: ressalvadas as exceções previstas na própria Constituição, cada Casa e cada comissão decidem por maioria dos votos, desde que esteja…
+- Interpretação principal: A regra tem duas exigências diferentes.
+- ATENÇÃO: Maioria simples (dos votos dos presentes) é diferente de maioria absoluta (mais da metade de todos os membros da Casa).
+- Dependência externa: nenhuma
+- Warnings: EXAMPLE_NUMBER_NOT_IN_TEXT(21, 40), EXAMPLE_NUMBER_NOT_IN_TEXT(16), TRANSITION_IN_CORE(resolvido)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.49` — Art. 49 — Competência exclusiva do Congresso
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 49 enumera as competências exclusivas do Congresso Nacional.
+- Interpretação principal: Competência exclusiva é aquela que o Congresso exerce sozinho, sem sanção ou veto do Presidente.
+- ATENÇÃO: O art. 49 trata da competência do Congresso como um todo.
+- Dependência externa: nenhuma
+- Warnings: HISTORICAL_CLAIM_SUPPORTED(foi incluído pela Emenda Constitucional…)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.49:INC.V` — Art. 49, inciso V — Sustação de atos normativos do Executivo
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso V autoriza o Congresso a sustar os atos normativos do Poder Executivo que ultrapassem o poder regulamentar ou os limites de uma delegação legislativa.
+- Interpretação principal: O Executivo pode editar regulamentos para executar as leis (art. 84, IV) e leis delegadas nos limites da resolução de delegação (art. 68).
+- ATENÇÃO: Sustar não é o mesmo que revogar nem que declarar inconstitucional: o Congresso suspende a eficácia do ato que exorbitou.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: sustar os atos normativos do poder executivo que)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.49:INC.IX` — Art. 49, inciso IX — Julgamento das contas do Presidente
+
+- Risco: LOW · complexidade: SIMPLE
+- Ponto jurídico: O inciso IX encarrega o Congresso de julgar a cada ano as contas do Presidente da República e de examinar os relatórios de execução dos planos de governo.
+- Interpretação principal: O Presidente presta contas anualmente ao Congresso (art. 84, XXIV).
+- ATENÇÃO: Se o Presidente não apresentar as contas no prazo, cabe à Câmara proceder à tomada de contas (art. 51, II).
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: os relatórios sobre a execução dos planos de)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.51` — Art. 51 — Competências privativas da Câmara
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 51 lista as competências privativas da Câmara dos Deputados: autorizar a instauração de processo contra o Presidente, o Vice-Presidente e os Ministros de Estado; tomar as contas do Presidente…
+- Interpretação principal: Competência privativa é aquela exercida só pela Câmara, sem participação do Senado nem sanção do Presidente.
+- ATENÇÃO: A Câmara autoriza o processo contra o Presidente, mas não o julga: o julgamento por crime de responsabilidade cabe ao Senado (art. 52, I).
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.52:INC.III` — Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O inciso III exige aprovação prévia do Senado, por voto secreto e após arguição pública, para a escolha de certas autoridades.
+- Interpretação principal: É um mecanismo de controle mútuo entre os Poderes.
+- ATENÇÃO: A sabatina é pública, mas o voto é secreto.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: do tribunal de contas da união indicados pelo)
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.53:PAR.6` — Art. 53, § 6º — Dispensa de testemunhar sobre informações do mandato
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O § 6º dispensa deputados e senadores de testemunhar sobre informações recebidas ou prestadas por causa do mandato e sobre as pessoas que lhes passaram ou delas receberam informações.
+- Interpretação principal: A regra protege a relação de confiança entre o parlamentar e quem leva a ele denúncias e dados, por exemplo para uma investigação parlamentar.
+- ATENÇÃO: O parágrafo trata de uma dispensa: não proíbe o parlamentar de testemunhar se quiser.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.54` — Art. 54 — Incompatibilidades dos parlamentares
+
+- Risco: LOW · complexidade: STRUCTURED
+- Ponto jurídico: O art. 54 lista o que deputados e senadores não podem fazer.
+- Interpretação principal: As incompatibilidades evitam conflito de interesses: quem vota leis e fiscaliza o governo não deve manter vínculos que o tornem dependente do próprio poder público.
+- ATENÇÃO: Incompatibilidade não se confunde com inelegibilidade: a primeira impede certas atividades durante o mandato; a segunda impede a própria candidatura.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: LOW sem alerta
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.54:INC.II` — Art. 54, inciso II — Vedações desde a posse
 
