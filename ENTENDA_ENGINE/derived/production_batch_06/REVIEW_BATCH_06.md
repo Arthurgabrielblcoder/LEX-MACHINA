@@ -1582,27 +1582,29 @@ O marco é a diplomação, anterior à posse. As vedações mais amplas do incis
 
 ### Art. 54, inciso II — Vedações desde a posse
 
-- **TARGET:** `CF88:ART.54:INC.II` · `ENTENDA/CF88:ART.54:INC.II/BASE/1`
+- **TARGET:** `CF88:ART.54:INC.II` · `ENTENDA/CF88:ART.54:INC.II/BASE/2`
 - **DISPLAY TITLE:** Art. 54, inciso II — Vedações desde a posse
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.54`, `CF88:ART.54:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1678 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 268 palavras · 2035 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com quatro alineas sobre empresas favorecidas, cargos, patrocinio de causas e acumulo de mandatos.
 
 **O QUE DIZ**
 
-O inciso II proíbe ao parlamentar, desde a posse: ser dono, controlador ou diretor de empresa beneficiada por favor que resulte de contrato com o poder público, ou exercer nela função remunerada; ocupar cargo de livre exoneração nas entidades do inciso I, a; patrocinar causa de interesse dessas entidades; e ser titular de mais de um cargo ou mandato público eletivo.
+O inciso II proíbe ao parlamentar, desde a posse: ser dono, controlador ou diretor de empresa beneficiada por favor que resulte de contrato com pessoa jurídica de direito público, ou exercer nela função remunerada; ocupar cargo de livre exoneração nas entidades do inciso I, a; patrocinar causa de interesse dessas entidades; e ser titular de mais de um cargo ou mandato público eletivo.
 
 **O QUE SIGNIFICA**
 
-Com a posse, as restrições ficam mais rigorosas.
+A partir da posse passam a valer as incompatibilidades previstas no inciso II.
 
-A alínea a atinge a ligação do parlamentar com empresas que recebem vantagem por contrato com o poder público, ainda que ele não assine contrato pessoalmente.
+A alínea “a” alcança a situação em que o parlamentar seja proprietário, controlador ou diretor de empresa que goze de favor resultante de contrato com pessoa jurídica de direito público, bem como o exercício de função remunerada nessa empresa.
 
-A alínea c impede, por exemplo, que o parlamentar atue como advogado em causas em que entidades públicas tenham interesse.
+A alínea “b” alcança os cargos ou funções demissíveis ad nutum nas entidades referidas no inciso I, “a”.
 
-A alínea d impede acumular mandatos: não se pode ser, ao mesmo tempo, deputado e vereador.
+A alínea “c” impede o parlamentar de patrocinar causa em que qualquer dessas entidades seja interessada.
+
+A alínea “d” impede a titularidade simultânea de mais de um cargo ou mandato público eletivo.
 
 **EXEMPLO PRÁTICO**
 
@@ -1610,7 +1612,7 @@ Uma deputada advogada não pode, depois da posse, representar um cliente em aç�
 
 **ATENÇÃO**
 
-A proibição da alínea a fala em empresa que goze de favor decorrente de contrato público: não é qualquer empresa da qual o parlamentar seja sócio. O exercício de cargo de Ministro e outros previstos no art. 56 não gera perda do mandato.
+A vedação da alínea “a” não alcança qualquer empresa da qual o parlamentar seja proprietário ou diretor: o texto exige o favor decorrente de contrato com pessoa jurídica de direito público. As situações do art. 56 possuem disciplina constitucional própria e não devem ser tratadas como uma exceção genérica às vedações do art. 54.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1621,9 +1623,9 @@ A proibição da alínea a fala em empresa que goze de favor decorrente de contr
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de mais de um cargo ou mandato público)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: contrato com pessoa jurídica de direito público ou); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: ad nutum nas entidades referidas no inciso i)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ ajustado ("contrato com pessoa juridica de direito publico" no lugar de "contrato com o poder publico"); O QUE SIGNIFICA e ATENCAO substituidos: as quatro alineas explicadas, sem "entidades publicas" como sinonimo das entidades do inciso I, a, e sem tratar o art. 56 como excecao generica. Complementacao autorizada: "favor resultante de contrato" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). Exemplo e glossario mantidos. (seções: atencao, o_que_diz, o_que_significa)
 
 ---
 
@@ -1916,7 +1918,7 @@ O inciso I enumera os cargos abrangidos pela regra constitucional. Este T1 não 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.56:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.56`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1608 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1605 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 1º e 2º regulam a substituicao do parlamentar (convocacao do suplente e eleicao quando nao ha suplente).
 
 **O QUE DIZ**
@@ -1950,7 +1952,7 @@ A licença de até cento e vinte dias não gera convocação de suplente pelo §
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de licença superior a cento e vinte dias)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: vaga, investidura nas funcoes do art. 56, licenca superior a cento e vinte dias, ausencia de suplente e mais de quinze meses restantes corretamente distinguidos. v1 mantida byte-identica.
 
 ---
 
@@ -2011,7 +2013,7 @@ As datas atuais do caput foram fixadas pela Emenda Constitucional nº 50, de 200
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1311 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 157 palavras · 1308 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma que vincula a interrupcao da sessao legislativa a votacao da lei de diretrizes orcamentarias.
 
 **O QUE DIZ**
@@ -2044,7 +2046,7 @@ O parágrafo fala em aprovação do projeto, e não em sanção da lei. A elabor
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: "recesso de meio de ano" e explicacao compativel com o calendario do art. 57. Resolucao antiga EXAMPLE_NUMBER mantida e aplicavel. v1 mantida byte-identica.
 
 ---
 
@@ -2140,12 +2142,12 @@ A exigência de aprovação por maioria absoluta vale para todas as hipóteses d
 
 ### Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária
 
-- **TARGET:** `CF88:ART.57:PAR.7` · `ENTENDA/CF88:ART.57:PAR.7/BASE/1`
+- **TARGET:** `CF88:ART.57:PAR.7` · `ENTENDA/CF88:ART.57:PAR.7/BASE/2`
 - **DISPLAY TITLE:** Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.57:PAR.8`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1684 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 195 palavras · 1742 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 7º e 8º definem a materia deliberavel na convocacao extraordinaria e a inclusao automatica das medidas provisorias.
 
 **O QUE DIZ**
@@ -2154,15 +2156,15 @@ O § 7º limita a sessão legislativa extraordinária à matéria para a qual o 
 
 **O QUE SIGNIFICA**
 
-Na convocação extraordinária, o Congresso não tem pauta livre: só delibera sobre o que motivou a convocação.
+Na sessão legislativa extraordinária, o Congresso somente pode deliberar sobre a matéria para a qual foi convocado.
 
-A exceção são as medidas provisórias em vigor, que entram na pauta automaticamente, porque têm prazo para ser votadas.
+O § 8º cria uma ressalva: as medidas provisórias que já estiverem em vigor na data da convocação extraordinária são incluídas automaticamente na pauta.
 
-A proibição de pagamento extra impede que a convocação durante o recesso seja usada para gerar remuneração adicional aos parlamentares.
+O § 7º também determina que a convocação extraordinária não gere pagamento de parcela indenizatória em razão da própria convocação.
 
 **EXEMPLO PRÁTICO**
 
-Convocado em janeiro para votar um projeto específico, o Congresso também pode votar as medidas provisórias em vigor naquela data, mas não pode incluir outros projetos sem relação com a convocação.
+Convocado extraordinariamente para deliberar sobre determinada matéria, o Congresso fica limitado ao objeto da convocação, além das medidas provisórias em vigor que sejam automaticamente incluídas na pauta pelo § 8º.
 
 **ATENÇÃO**
 
@@ -2177,9 +2179,9 @@ A vedação de parcela indenizatória pela convocação tem a redação dada pel
 
 —
 
-**WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: automaticamente)
+**WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: automaticamente); ABSOLUTE_CLAIM (exemplo_pratico: automaticamente); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sobre a matéria para a qual foi convocado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e exemplo substituidos: retirada a causalidade "porque tem prazo para ser votadas"; exemplo limitado ao objeto da convocacao e as medidas provisorias do par. 8. Resolucao antiga ABSOLUTE_CLAIM ("automaticamente", do proprio par. 8) mantida e aplicavel. O QUE DIZ, ATENCAO e glossario mantidos. (seções: exemplo_pratico, o_que_significa)
 
 ---
 
@@ -2194,7 +2196,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1760 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 1757 bytes · referências 0
 - **Motivo da seleção:** Visao geral das comissoes: competencias e CPI tem explicacoes proprias; proporcionalidade (§ 1º) e comissao representativa (§ 4º) sao situadas aqui.
 
 **O QUE DIZ**
@@ -2229,29 +2231,29 @@ A expressão "tanto quanto possível" indica que a proporcionalidade é um objet
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: tanto quanto possível a representação proporcional dos parti)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: overview com o carater "tanto quanto possivel" preservado na ATENCAO. Resolucao antiga LAW_DEPENDENCY_OMITTED mantida e aplicavel. v1 mantida byte-identica.
 
 ---
 
 ### Art. 58, § 2º — O que as comissões podem fazer
 
-- **TARGET:** `CF88:ART.58:PAR.2` · `ENTENDA/CF88:ART.58:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.58:PAR.2` · `ENTENDA/CF88:ART.58:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 58, § 2º — O que as comissões podem fazer
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.58`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1769 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 250 palavras · 2091 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com seis incisos de competencias, incluindo o poder conclusivo (inciso I) com recurso de um decimo.
 
 **O QUE DIZ**
 
-O § 2º atribui às comissões, conforme a matéria de sua competência: discutir e votar projetos que dispensem o plenário, na forma do regimento, salvo recurso de um décimo dos membros da Casa; realizar audiências públicas; convocar Ministros de Estado; receber petições e reclamações contra autoridades; solicitar depoimento de autoridades ou cidadãos; e apreciar programas de obras e planos de desenvolvimento.
+O § 2º atribui às comissões, dentro da matéria de sua competência, diferentes funções. Elas podem discutir e votar certos projetos de lei na forma regimental, ressalvado o recurso de um décimo dos membros da Casa; realizar audiências públicas com entidades da sociedade civil; convocar Ministros de Estado para prestar informações relacionadas às suas atribuições; receber petições, reclamações, representações ou queixas de qualquer pessoa sobre atos ou omissões de autoridades ou entidades públicas; solicitar depoimentos de autoridades ou cidadãos; e examinar programas de obras e planos nacionais, regionais e setoriais de desenvolvimento, emitindo parecer sobre eles.
 
 **O QUE SIGNIFICA**
 
-O inciso I traz o chamado poder conclusivo: certos projetos podem ser aprovados pela própria comissão, sem passar pelo plenário. Se um décimo dos membros da Casa recorrer, porém, o plenário volta a decidir.
+O inciso I permite que determinados projetos sejam decididos pela própria comissão quando o regimento dispensar a votação pelo plenário. Se houver recurso de um décimo dos membros da Casa, porém, a matéria deverá ser submetida ao plenário.
 
-Os demais incisos dão às comissões meios de ouvir a sociedade e de fiscalizar o governo: audiências públicas, convocação de ministros, recebimento de reclamações e pedidos de depoimento.
+Os demais incisos atribuem às comissões instrumentos de participação, fiscalização e análise: audiências públicas, convocação de Ministros de Estado, recebimento de manifestações de qualquer pessoa, solicitação de depoimentos e apreciação de programas e planos com emissão de parecer.
 
 **EXEMPLO PRÁTICO**
 
@@ -2263,16 +2265,15 @@ Quais projetos podem ser votados de forma conclusiva é definido pelo regimento 
 
 **PALAVRAS DIFÍCEIS**
 
-- *Poder conclusivo*: possibilidade de a comissão aprovar o projeto sem votação no plenário.
 - *Audiência pública*: reunião aberta para ouvir especialistas, entidades e cidadãos sobre um tema.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: recurso de um décimo dos membros da casa)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: petições reclamações representações ou queixas de qualquer p); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: houver recurso de um décimo dos membros da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ e O QUE SIGNIFICA substituidos: incisos II, III, IV e VI completos (sociedade civil, informacoes inerentes as atribuicoes, representacoes ou queixas de qualquer pessoa sobre atos ou omissoes, emissao de parecer). Complementacao autorizada: "planos nacionais, regionais e setoriais de desenvolvimento" (elimina LIST_ITEM_POSSIBLY_DROPPED). "Poder conclusivo" retirado do glossario. Resolucao antiga LAW_DEPENDENCY_OMITTED nao e mais disparada pela v2 (sem uso), mantida no historico. Exemplo e ATENCAO mantidos. (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2331,12 +2332,12 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 59 — Espécies do processo legislativo
 
-- **TARGET:** `CF88:ART.59` · `ENTENDA/CF88:ART.59/BASE/1`
+- **TARGET:** `CF88:ART.59` · `ENTENDA/CF88:ART.59/BASE/2`
 - **DISPLAY TITLE:** Art. 59 — Espécies do processo legislativo
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 275 palavras · 2137 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 277 palavras · 2250 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista das especies normativas (itens curtos situados aqui) e remissao a lei complementar sobre tecnica legislativa.
 
 **O QUE DIZ**
@@ -2345,15 +2346,15 @@ O art. 59 enumera o que o processo legislativo produz: emendas à Constituição
 
 **O QUE SIGNIFICA**
 
-Cada espécie tem procedimento e função próprios, detalhados nos artigos seguintes.
+O art. 59 reúne sete espécies do processo legislativo, mas cada uma possui disciplina constitucional própria.
 
-A emenda altera a própria Constituição (art. 60). As leis complementares tratam de temas que a Constituição reserva a elas e exigem maioria absoluta (art. 69). As leis ordinárias são a regra geral. A lei delegada é feita pelo Presidente com autorização do Congresso (art. 68). A medida provisória é editada pelo Presidente em caso de relevância e urgência (art. 62).
+A emenda à Constituição segue o procedimento do art. 60. As leis complementares possuem, entre outras características, o quórum previsto no art. 69. As leis delegadas são disciplinadas pelo art. 68, e as medidas provisórias pelo art. 62.
 
-O decreto legislativo e a resolução não passam por sanção: são atos do Congresso ou de cada Casa sobre matérias de sua competência própria.
+Decretos legislativos e resoluções também são espécies previstas pelo art. 59, mas este artigo, sozinho, não define todas as matérias ou procedimentos em que cada uma será utilizada.
 
 **EXEMPLO PRÁTICO**
 
-Para aprovar um tratado que gera encargos ao país, o Congresso edita decreto legislativo; para fixar limites de dívida dos Estados, o Senado edita resolução; para criar um tributo comum, aprova-se lei ordinária.
+Uma proposta de alteração da própria Constituição segue o regime das emendas constitucionais. Uma matéria que a Constituição reserve à lei complementar deverá observar o regime correspondente, inclusive o quórum do art. 69. Já medidas provisórias e leis delegadas possuem regras próprias nos arts. 62 e 68.
 
 **ATENÇÃO**
 
@@ -2361,19 +2362,19 @@ A lista não estabelece hierarquia simples entre as espécies: lei complementar 
 
 **PALAVRAS DIFÍCEIS**
 
-- *Processo legislativo*: conjunto de etapas para a produção das normas previstas no art. 59.
-- *Lei delegada*: lei elaborada pelo Presidente da República por delegação do Congresso.
-- *Resolução*: ato normativo de uma Casa ou do Congresso sobre matéria de sua competência própria.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
-- *Quórum*: número mínimo de presentes ou de votos exigido para uma deliberação.
+- *Processo legislativo*: conjunto constitucional de procedimentos relacionados à elaboração das espécies normativas indicadas no art. 59.
+- *Lei delegada*: espécie legislativa elaborada pelo Presidente da República nos termos da delegação prevista no art. 68.
+- *Resolução*: espécie normativa prevista no art. 59, VII, cujo uso depende da hipótese constitucional correspondente.
+- *Decreto legislativo*: espécie normativa prevista no art. 59, VI, não submetida à sanção presidencial.
+- *Quórum*: número de membros ou votos exigido para determinada deliberação.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Uma matéria que a Constituição reserve à lei complementar de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e glossario substituidos: sem atribuir instrumento a competencias dos arts. 49 e 52; decreto legislativo definido pelo art. 59, VI, sem vinculo generico a competencia exclusiva. Complementacao autorizada: "A emenda a Constituicao" (elimina TRANSITION_IN_CORE). O QUE DIZ e ATENCAO mantidos. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2489,7 +2490,7 @@ A alínea b trata especificamente da matéria tributária e orçamentária dos T
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.61`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 212 palavras · 1614 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 212 palavras · 1611 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com requisitos percentuais de apoio do eleitorado.
 
 **O QUE DIZ**
@@ -2523,7 +2524,7 @@ A iniciativa popular prevista aqui é para leis, e não para emendas à Constitu
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: décimos por cento dos eleitores de cada um); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa reunir o equivalente a um por cento dos eleitores do)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: um por cento do eleitorado nacional, pelo menos cinco Estados e tres decimos por cento dos eleitores de cada um; Camara dos Deputados; sem extensao a emendas constitucionais. v1 mantida byte-identica.
 
 ---
 
@@ -2623,12 +2624,12 @@ A vedação de direito penal se refere ao texto da alínea b; se medidas provis�
 
 ### Art. 62, § 2º — Medida provisória sobre impostos
 
-- **TARGET:** `CF88:ART.62:PAR.2` · `ENTENDA/CF88:ART.62:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.2` · `ENTENDA/CF88:ART.62:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 2º — Medida provisória sobre impostos
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 1812 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 1911 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com excecoes expressas e efeito temporal ligado ao exercicio financeiro.
 
 **O QUE DIZ**
@@ -2637,11 +2638,13 @@ O § 2º determina que a medida provisória que crie ou aumente impostos só pro
 
 **O QUE SIGNIFICA**
 
-A regra combina a medida provisória com a anterioridade tributária. Para criar ou aumentar imposto por medida provisória, não basta editá-la: é preciso que seja convertida em lei até o fim do ano da edição para produzir efeitos no ano seguinte.
+O § 2º estabelece uma regra específica para medida provisória que institua ou aumente impostos.
 
-As exceções são impostos que a Constituição trata como instrumentos de regulação ou de situações excepcionais: importação, exportação, produtos industrializados, operações financeiras e o imposto extraordinário de guerra.
+Fora das exceções expressamente enumeradas, a medida somente produzirá efeitos no exercício financeiro seguinte se tiver sido convertida em lei até o último dia do exercício em que foi editada.
 
-O parágrafo fala em impostos, uma espécie de tributo, e não em todos os tributos.
+As exceções são exatamente os impostos referidos nos arts. 153, I, II, IV e V, e 154, II.
+
+O dispositivo fala especificamente em impostos, e não em todas as espécies de tributos.
 
 **EXEMPLO PRÁTICO**
 
@@ -2649,32 +2652,32 @@ Uma medida provisória editada em outubro aumenta o imposto de renda. Se for con
 
 **ATENÇÃO**
 
-A regra se soma às demais limitações ao poder de tributar, como os prazos de anterioridade do art. 150, III. As exceções devem ser lidas nos dispositivos citados.
+A regra se soma às demais limitações ao poder de tributar, como os prazos de anterioridade tributária do art. 150, III. As exceções devem ser lidas nos dispositivos citados.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Exercício financeiro*: período de um ano usado para o orçamento e para os tributos, coincidente com o ano civil.
-- *Anterioridade tributária*: regra que adia a cobrança de tributo criado ou aumentado para momento posterior.
-- *Majoração*: aumento de um tributo.
+- *Exercício financeiro*: período de referência utilizado pela Constituição para a aplicação temporal da regra prevista neste dispositivo.
+- *Anterioridade tributária*: limitação constitucional relacionada ao momento em que determinados tributos instituídos ou aumentados podem produzir efeitos ou ser cobrados, conforme as regras constitucionais aplicáveis.
+- *Majoração*: aumento do valor, da alíquota ou da carga de determinado tributo.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Majoração)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sido convertida em lei até o último dia)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e glossario substituidos: sem a qualificacao doutrinaria das excecoes ("instrumentos de regulacao") e sem "coincidente com o ano civil"; "Majoracao" redefinida (elimina TERM_LOW_UTILITY). Complementacao autorizada: "anterioridade tributaria" na ATENCAO (elimina TERM_NOT_USED; termo mantido no glossario). O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória
 
-- **TARGET:** `CF88:ART.62:PAR.3` · `ENTENDA/CF88:ART.62:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.3` · `ENTENDA/CF88:ART.62:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.62:PAR.4`, `CF88:ART.62:PAR.7`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 2060 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 337 palavras · 2645 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 3º, 4º e 7º formam a regra de prazo (sessenta dias, prorrogacao unica, contagem e suspensao no recesso).
 
 **O QUE DIZ**
@@ -2683,11 +2686,13 @@ O § 3º estabelece que a medida provisória perde a eficácia desde a edição 
 
 **O QUE SIGNIFICA**
 
-A medida provisória tem vida limitada: sessenta dias, mais sessenta se a votação não for concluída, totalizando até cento e vinte dias, sem contar o recesso.
+A medida provisória possui prazo constitucional limitado. O prazo inicial é de sessenta dias e pode haver uma única prorrogação por igual período quando a votação não tiver sido encerrada nas duas Casas.
 
-Se não for convertida nesse prazo, perde a eficácia retroativamente, desde a edição, como se não tivesse existido.
+A contagem começa com a publicação e fica suspensa durante os períodos de recesso do Congresso Nacional. Por isso, os sessenta dias mais a eventual prorrogação não devem ser tratados simplesmente como cento e vinte dias corridos.
 
-Para resolver o que aconteceu enquanto ela vigorou, o Congresso deve editar decreto legislativo disciplinando essas relações. Os §§ 11 e 12 tratam do que ocorre se esse decreto não vier.
+Se a medida não for convertida em lei dentro do prazo constitucional, perde eficácia desde a edição, ressalvado o tratamento dado pela própria Constituição às relações jurídicas surgidas durante sua vigência.
+
+O § 3º determina que o Congresso discipline essas relações por decreto legislativo, enquanto os §§ 11 e 12 contêm regras complementares sobre os efeitos dessa perda de eficácia e da conversão com alterações.
 
 **EXEMPLO PRÁTICO**
 
@@ -2695,22 +2700,22 @@ Uma medida provisória publicada em março não é votada em sessenta dias e tem
 
 **ATENÇÃO**
 
-O prazo fica suspenso durante o recesso parlamentar. A prorrogação é automática e única: não depende de novo ato do Presidente nem pode se repetir.
+A prorrogação prevista no § 7º ocorre uma única vez por igual período. Ela não se confunde com reedição da medida provisória, matéria tratada pelo § 10.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Perda de eficácia*: fim dos efeitos de um ato, que deixa de produzir consequências.
-- *Desde a edição*: com efeito retroativo à data em que o ato foi publicado.
-- *Prorrogação*: extensão do prazo por mais um período.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
+- *Perda de eficácia*: cessação da eficácia da medida provisória nos termos constitucionais.
+- *Desde a edição*: expressão que indica que a perda de eficácia se projeta à origem da medida, observadas as regras constitucionais sobre as relações jurídicas formadas durante sua vigência.
+- *Prorrogação*: extensão única do período de vigência prevista no § 7º.
+- *Decreto legislativo*: ato normativo referido pelo § 3º para disciplinar as relações jurídicas decorrentes da medida provisória.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: durante os períodos de recesso do congresso nacional)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, ATENCAO e glossario substituidos: retirada a frase "como se nao tivesse existido"; perda de eficacia desde a edicao ressalvado o tratamento das relacoes juridicas (par. 3, 11 e 12); prazo nao tratado como cento e vinte dias corridos; retirada a afirmacao "nao depende de novo ato do Presidente"; prorrogacao distinta de reedicao. O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2812,12 +2817,12 @@ A leitura literal de "todas as demais deliberações legislativas" não correspo
 
 ### Art. 62, § 10 — Proibição de reeditar medida provisória
 
-- **TARGET:** `CF88:ART.62:PAR.10` · `ENTENDA/CF88:ART.62:PAR.10/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.10` · `ENTENDA/CF88:ART.62:PAR.10/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 10 — Proibição de reeditar medida provisória
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 164 palavras · 1363 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1380 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma (EC 32/2001) que impede reedicoes sucessivas na mesma sessao legislativa.
 
 **O QUE DIZ**
@@ -2826,15 +2831,15 @@ O § 10 proíbe reeditar, na mesma sessão legislativa, medida provisória rejei
 
 **O QUE SIGNIFICA**
 
-Antes de 2001, medidas provisórias não votadas eram reeditadas repetidamente, e algumas vigoravam por anos sem decisão do Congresso. Este parágrafo encerra essa prática.
+Se uma medida provisória for rejeitada ou perder eficácia pelo decurso do prazo, ela não pode ser reeditada na mesma sessão legislativa.
 
-Se a medida for rejeitada ou caducar, o Presidente não pode editar outra igual no mesmo ano legislativo.
+A vedação é temporalmente limitada à mesma sessão legislativa. Ela não deve ser confundida com a legislatura, que possui duração distinta.
 
-Na sessão legislativa seguinte, o tema pode voltar a ser objeto de medida provisória, desde que atendidos de novo os pressupostos.
+Em sessão legislativa posterior, o § 10 deixa de ser, por si só, o impedimento à edição, sem afastar os demais requisitos e limites constitucionais aplicáveis às medidas provisórias.
 
 **EXEMPLO PRÁTICO**
 
-Uma medida provisória perde a eficácia em agosto sem ter sido votada. O Presidente não pode editar, em setembro, outra medida com o mesmo conteúdo; poderá fazê-lo a partir da próxima sessão legislativa.
+Uma medida provisória perde eficácia durante determinada sessão legislativa. Outra medida que configure sua reedição não pode ser editada nessa mesma sessão.
 
 **ATENÇÃO**
 
@@ -2851,18 +2856,18 @@ A vedação alcança a reedição da mesma medida. Até que ponto uma nova medid
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e exemplo substituidos: retirada a narrativa historica sem fonte versionada; "sessao legislativa" no lugar de "ano legislativo", distinta da legislatura. O QUE DIZ, ATENCAO e glossario mantidos. (seções: exemplo_pratico, o_que_significa)
 
 ---
 
 ### Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações
 
-- **TARGET:** `CF88:ART.62:PAR.11` · `ENTENDA/CF88:ART.62:PAR.11/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.11` · `ENTENDA/CF88:ART.62:PAR.11/BASE/2`
 - **DISPLAY TITLE:** Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.62:PAR.12`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1884 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 249 palavras · 2064 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 11 e 12 definem o que vale apos a rejeicao ou perda de eficacia sem decreto legislativo e durante a analise do projeto de lei de conversao.
 
 **O QUE DIZ**
@@ -2871,9 +2876,9 @@ O § 11 determina que, se o decreto legislativo do § 3º não for editado em at
 
 **O QUE SIGNIFICA**
 
-O § 11 dá segurança a quem agiu com base na medida enquanto ela valia: se o Congresso não regular a situação em sessenta dias, esses atos continuam regidos pela medida, mesmo depois de rejeitada.
+O § 11 disciplina as relações jurídicas formadas enquanto a medida provisória esteve em vigor. Se o decreto legislativo previsto no § 3º não for editado no prazo de sessenta dias após a rejeição ou a perda de eficácia, essas relações continuam regidas pela medida provisória.
 
-O § 12 trata da conversão com alterações. Enquanto o Presidente não sancionar ou vetar o projeto de lei de conversão, continua valendo o texto original da medida, e não a versão alterada pelo Congresso.
+O § 12 trata de situação diferente: se o Congresso aprovar projeto de lei de conversão alterando o texto original, a medida provisória permanece integralmente em vigor até que esse projeto seja sancionado ou vetado.
 
 **EXEMPLO PRÁTICO**
 
@@ -2885,17 +2890,17 @@ O § 11 só alcança relações constituídas e atos praticados durante a vigên
 
 **PALAVRAS DIFÍCEIS**
 
-- *Projeto de lei de conversão*: projeto que resulta da aprovação da medida provisória com alterações.
-- *Relação jurídica*: vínculo entre pessoas que gera direitos e deveres.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
+- *Projeto de lei de conversão*: projeto resultante da apreciação de medida provisória com alterações em relação ao texto original.
+- *Relação jurídica*: vínculo juridicamente relevante que produz direitos, deveres ou outros efeitos jurídicos.
+- *Decreto legislativo*: ato normativo referido pelo § 3º para disciplinar as relações jurídicas decorrentes da medida provisória.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de lei de conversão alterando o texto original)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e glossario substituidos: redacao neutra (sem finalidade) e "Decreto legislativo" definido pelo par. 3, sem vinculo generico a competencia exclusiva. O QUE DIZ, exemplo e ATENCAO mantidos. (seções: o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2954,12 +2959,12 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 64 — Início na Câmara e urgência constitucional
 
-- **TARGET:** `CF88:ART.64` · `ENTENDA/CF88:ART.64/BASE/1`
+- **TARGET:** `CF88:ART.64` · `ENTENDA/CF88:ART.64/BASE/2`
 - **DISPLAY TITLE:** Art. 64 — Início na Câmara e urgência constitucional
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 201 palavras · 1554 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 239 palavras · 1826 bytes · referências 0
 - **Motivo da seleção:** Visao geral: Casa iniciadora dos projetos externos e urgencia a pedido do Presidente; os prazos da urgencia tem bloco proprio.
 
 **O QUE DIZ**
@@ -2968,11 +2973,13 @@ O art. 64 determina que os projetos de lei apresentados pelo Presidente da Repú
 
 **O QUE SIGNIFICA**
 
-Projetos que vêm de fora do Congresso entram pela Câmara, a Casa de representação do povo. O Senado atua como Casa revisora.
+O art. 64 determina que os projetos de lei de iniciativa do Presidente da República, bem como do Supremo Tribunal Federal e dos Tribunais Superiores tenham sua discussão e votação iniciadas na Câmara dos Deputados.
 
-Projetos de parlamentares, ao contrário, começam na Casa do autor: o de um senador, no Senado.
+Nessas hipóteses, a Câmara funciona como Casa iniciadora e o Senado poderá atuar posteriormente como Casa revisora dentro do processo legislativo.
 
-A urgência a pedido do Presidente é um instrumento para acelerar projetos do Executivo, com prazos que, descumpridos, travam a pauta.
+O § 1º permite ao Presidente da República solicitar urgência para a apreciação de projetos de sua própria iniciativa.
+
+O art. 64 não estabelece, por si só, onde se inicia a tramitação de todas as demais hipóteses de iniciativa previstas na Constituição.
 
 **EXEMPLO PRÁTICO**
 
@@ -2992,20 +2999,20 @@ A urgência do § 1º só pode ser pedida para projetos de iniciativa do própri
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Casa iniciadora)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de lei de iniciativa do presidente da república)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA substituido: restrito aos tres legitimados do caput; "Casa iniciadora" usada no corpo (elimina TERM_NOT_USED); retirada a regra "projetos de parlamentares comecam na Casa do autor". Complementacao autorizada: "bem como do Supremo Tribunal Federal" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ, exemplo, ATENCAO e glossario mantidos. (seções: o_que_significa)
 
 ---
 
 ### Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente
 
-- **TARGET:** `CF88:ART.64:PAR.2` · `ENTENDA/CF88:ART.64:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.64:PAR.2` · `ENTENDA/CF88:ART.64:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.64:PAR.3`, `CF88:ART.64:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.64`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1797 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 240 palavras · 2023 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º, 3º e 4º formam a regra de prazos (quarenta e cinco dias em cada Casa, dez dias para emendas do Senado, recesso e codigos).
 
 **O QUE DIZ**
@@ -3014,11 +3021,13 @@ O § 2º determina que, pedida a urgência, se a Câmara e o Senado não se mani
 
 **O QUE SIGNIFICA**
 
-Cada Casa tem quarenta e cinco dias para se manifestar, uma depois da outra. Se o prazo passa, a pauta da Casa fica travada, salvo para matérias com prazo constitucional próprio.
+No regime de urgência solicitado pelo Presidente, Câmara e Senado dispõem, sucessivamente, de até quarenta e cinco dias para se manifestar sobre a proposição.
 
-Se o Senado emendar o projeto, a Câmara tem dez dias para apreciar essas emendas.
+Se a respectiva Casa ultrapassar esse prazo, ficam sobrestadas as demais deliberações legislativas, ressalvadas aquelas com prazo constitucional determinado, até que se conclua a votação.
 
-Os prazos não correm no recesso, e projetos de código, como um novo Código Civil, não se sujeitam a essa urgência.
+Se o Senado aprovar emendas, a Câmara possui dez dias para apreciá-las. Quanto ao restante, aplica-se também a disciplina do parágrafo anterior.
+
+Os prazos do § 2º não correm durante o recesso do Congresso e não se aplicam aos projetos de código.
 
 **EXEMPLO PRÁTICO**
 
@@ -3039,7 +3048,7 @@ O sobrestamento não alcança as deliberações que tenham prazo constitucional 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cada qual sucessivamente em até quarenta e cinco)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA substituido: prazos sucessivos de cada Casa, sobrestamento com a ressalva do prazo constitucional determinado, dez dias para as emendas do Senado com remissao ao paragrafo anterior e "os prazos do par. 2 nao se aplicam aos projetos de codigo". Resolucao antiga EXCEPTION_NOT_IN_TEXT mantida e aplicavel. O QUE DIZ, exemplo, ATENCAO e glossario mantidos. (seções: o_que_significa)
 
 ---
 
@@ -3241,12 +3250,12 @@ A redação atual do § 4º foi dada pela Emenda Constitucional nº 76, de 2013;
 
 ### Art. 66, § 7º — Quem promulga a lei
 
-- **TARGET:** `CF88:ART.66:PAR.7` · `ENTENDA/CF88:ART.66:PAR.7/BASE/1`
+- **TARGET:** `CF88:ART.66:PAR.7` · `ENTENDA/CF88:ART.66:PAR.7/BASE/2`
 - **DISPLAY TITLE:** Art. 66, § 7º — Quem promulga a lei
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1325 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 201 palavras · 1499 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazos e sequencia de autoridades responsaveis pela promulgacao.
 
 **O QUE DIZ**
@@ -3255,11 +3264,13 @@ O § 7º trata da promulgação nos casos de sanção tácita e de veto derrubad
 
 **O QUE SIGNIFICA**
 
-A regra impede que a lei deixe de existir formalmente por omissão do Presidente.
+O § 7º estabelece uma ordem sucessiva para a promulgação nas situações dos §§ 3º e 5º.
 
-A promulgação é atribuída em cadeia: primeiro o Presidente da República; depois o Presidente do Senado; por fim o Vice-Presidente do Senado, cada um com quarenta e oito horas.
+Primeiro, cabe ao Presidente da República promulgar a lei. Se ele não o fizer no prazo de quarenta e oito horas, a competência passa ao Presidente do Senado.
 
-O parágrafo se aplica às situações em que o Presidente não concordou com o projeto ou se omitiu: sanção tácita e derrubada do veto.
+O Presidente do Senado dispõe de igual prazo. Se também não promulgar a lei, caberá ao Vice-Presidente do Senado fazê-lo.
+
+O texto constitucional não fixa expressamente outro prazo de quarenta e oito horas para o Vice-Presidente do Senado.
 
 **EXEMPLO PRÁTICO**
 
@@ -3267,19 +3278,19 @@ O Congresso derruba um veto e envia o texto para promulgação. O Presidente nã
 
 **ATENÇÃO**
 
-O parágrafo trata da promulgação nos casos dos §§ 3º e 5º. Quando o Presidente sanciona expressamente, ele mesmo promulga.
+O § 7º trata exclusivamente da promulgação nas hipóteses dos §§ 3º e 5º. Não se deve confundir promulgação com sanção, que corresponde a etapa distinta do processo legislativo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Promulgação*: ato que atesta a existência da lei e ordena o seu cumprimento.
+- *Promulgação*: ato formal que declara a existência da lei resultante do processo legislativo.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: caberá ao vice presidente do senado fazê lo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, ATENCAO e glossario "Promulgacao" substituidos: ordem sucessiva (Presidente da Republica em quarenta e oito horas, Presidente do Senado em igual prazo, Vice-Presidente do Senado sem prazo expresso); promulgacao distinta de sancao; definicao de Promulgacao identica a do art. 66 (v2). O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 

@@ -3,8 +3,8 @@
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 66
-- Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 1 · não resolvidos: 0
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 81
+- Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 3, MODALITY_SHIFT 1, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
@@ -316,12 +316,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 54, inciso II — Vedações desde a posse
 
-- `CF88:ART.54:INC.II` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.54:INC.II` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 56, §§ 1º e 2º — Suplente e eleição para preencher a vaga
 
-- `CF88:ART.56:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.56:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 57 — Funcionamento do Congresso: sessões e reuniões
@@ -331,7 +331,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 57, § 2º — Recesso condicionado à aprovação da LDO
 
-- `CF88:ART.57:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.57:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 - EXAMPLE_NUMBER (exemplo_pratico: 17) → Data "17 de julho" vem do caput do art. 57 (fim do primeiro periodo), contexto do § 2º; nao e numero inventado.
 
@@ -342,25 +342,24 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária
 
-- `CF88:ART.57:PAR.7` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.57:PAR.7` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 - ABSOLUTE_CLAIM (o_que_significa: automaticamente) → Fiel ao texto: o § 8º diz que as medidas provisorias em vigor serao automaticamente incluidas na pauta.
 
 ### Art. 58 — Comissões do Congresso e de suas Casas
 
-- `CF88:ART.58` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.58` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 - LAW_DEPENDENCY_OMITTED (body: de lei) → Falso positivo: "de lei" no texto e parte de "projeto de lei" (competencia das comissoes), nao dependencia de lei.
 
 ### Art. 58, § 2º — O que as comissões podem fazer
 
-- `CF88:ART.58:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.58:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
-- LAW_DEPENDENCY_OMITTED (body: de lei) → Falso positivo: "de lei" no texto e parte de "projeto de lei", nao dependencia de lei.
 
 ### Art. 59 — Espécies do processo legislativo
 
-- `CF88:ART.59` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.59` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 61 — Iniciativa das leis
@@ -370,17 +369,17 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 61, § 2º — Iniciativa popular de lei
 
-- `CF88:ART.61:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.61:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 62, § 2º — Medida provisória sobre impostos
 
-- `CF88:ART.62:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.62:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória
 
-- `CF88:ART.62:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.62:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 62, § 6º — Regime de urgência e trancamento de pauta
@@ -390,12 +389,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 62, § 10 — Proibição de reeditar medida provisória
 
-- `CF88:ART.62:PAR.10` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.62:PAR.10` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações
 
-- `CF88:ART.62:PAR.11` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.62:PAR.11` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 63 — Proibição de aumentar despesa por emenda
@@ -406,12 +405,12 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 64 — Início na Câmara e urgência constitucional
 
-- `CF88:ART.64` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.64` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente
 
-- `CF88:ART.64:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.64:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 - EXCEPTION_NOT_IN_TEXT (o_que_diz/o_que_significa: exceto) → Falso positivo do detector: o § 2º diz "com exceção das que tenham prazo constitucional determinado" ("exceção" nao esta na lista de marcadores).
 
@@ -422,7 +421,7 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 66, § 7º — Quem promulga a lei
 
-- `CF88:ART.66:PAR.7` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.66:PAR.7` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 67 — Reapresentação de projeto rejeitado
