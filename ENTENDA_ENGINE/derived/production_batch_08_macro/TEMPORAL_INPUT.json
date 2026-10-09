@@ -1,0 +1,1998 @@
+{
+ "schema_version": 1,
+ "policy": "Camada temporal editorial do Macro08 (build_entenda_macro_segment.py). Classes: OPERATIVE_CURRENT, OPERATIVE_TRANSITION, EFFECT_EXHAUSTED, REVOKED (derivado do runtime), HISTORICAL_ONLY, FUTURE_TRIGGER, PARTIALLY_OPERATIVE, EXTERNAL_STATUS_REQUIRED. Toda classificacao traz proveniencia no texto versionado (runtime oficial sha256 7ef82290...) ou nas anotacoes da fonte estrutural canonica; nada de memoria. Data de referencia: 2026-10-05.",
+ "articles": {
+  "ADCT:ART.1": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Compromisso prestado no ato e na data da promulgacao; evento unico consumado.",
+   "markers": [
+    "ato e data da promulgacao"
+   ],
+   "situation_2026": "Exaurido: o ato devia ocorrer na promulgacao.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 1 (\"no ato e na data de sua promulgacao\")",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.2": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Plebiscito com data fixa no texto (21 de abril de 1993), anterior a data de referencia; regulamentacao pelo TSE apos a promulgacao.",
+   "markers": [
+    "21 de abril de 1993"
+   ],
+   "situation_2026": "Exaurido por decurso da data fixada; o resultado do plebiscito nao consta de fonte versionada e nao e afirmado.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 2, caput"
+   ]
+  },
+  "ADCT:ART.3": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SELECT",
+   "reason": "Revisao constitucional realizada: Emendas de Revisao nº 1 a 6, de 1994, anotadas na fonte canonica. Selecionado como historico-pedagogico (distincao revisao x emenda).",
+   "markers": [
+    "cinco anos apos a promulgacao",
+    "1994 (Emendas de Revisao)"
+   ],
+   "situation_2026": "Exaurido: revisao realizada em 1994; procedimentos atuais de alteracao seguem o art. 60.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 3",
+    "cf.txt: anotacoes Emenda Constitucional de Revisao nº 1 a 6, de 1994",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.4": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Termino de mandatos em datas fixas (1989, 1990, 1991) e primeira eleicao presidencial de 1989.",
+   "markers": [
+    "15 de marco de 1990",
+    "15 de novembro de 1989",
+    "15 de marco de 1991",
+    "1º de janeiro de 1989"
+   ],
+   "situation_2026": "Exaurido por decurso das datas fixadas.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 4, caput e §§ 1º a 4º"
+   ]
+  },
+  "ADCT:ART.5": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Regras das eleicoes de 15 de novembro de 1988.",
+   "markers": [
+    "15 de novembro de 1988"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 5"
+   ]
+  },
+  "ADCT:ART.6": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Registro de novos partidos nos seis meses posteriores a promulgacao.",
+   "markers": [
+    "seis meses da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 6",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.7": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Diretriz de politica externa sem prazo nem condicao.",
+   "markers": [],
+   "situation_2026": "Operante: diretriz permanente da atuacao internacional.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 7"
+   ]
+  },
+  "ADCT:ART.8": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Anistia concedida na promulgacao (efeito unico) com direitos dela decorrentes reconhecidos caso a caso; reparacao do § 3º depende de lei.",
+   "markers": [
+    "18 de setembro de 1946 a promulgacao",
+    "efeitos financeiros a partir da promulgacao"
+   ],
+   "situation_2026": "Parcialmente operante: concessao consumada; reconhecimento individual dos direitos continua, conforme a lei (estado da lei nao versionado).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 8 e §§",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.9": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Pedido ao STF por cassados entre 15 de julho e 31 de dezembro de 1969; alcanca apenas pessoas daquela situacao; aplicacao residual depende de fatos individuais.",
+   "markers": [
+    "15 de julho a 31 de dezembro de 1969"
+   ],
+   "situation_2026": "Residual e pessoal; estado atual nao versionado.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 9"
+   ]
+  },
+  "ADCT:ART.10": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_APPROVED_PILOT_LEGACY_MODEL",
+   "reason": "Artigo com explicacao aprovada (ADCT:ART.10:INC.II, HUMAN_APPROVED_T1) carimbada com o texto do cf.txt legado e status UNKNOWN + verificacao externa; sob o perfil oficial o status e CURRENT e o snapshot diverge. Fica fora do lote para nao alterar conteudo aprovado (MB08-SRC-05); reconciliacao no BACKLOG.",
+   "markers": [
+    "ate a lei complementar do art. 7º, I; ate a lei do art. 7º, XIX"
+   ],
+   "situation_2026": "Regras condicionadas a leis externas (estado nao versionado).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 10",
+    "ENTENDA_ENGINE/corpus/CF88.entenda.jsonl: ENTENDA/ADCT:ART.10:INC.II/BASE/2 (HUMAN_APPROVED_T1)"
+   ]
+  },
+  "ADCT:ART.11": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Constituicoes estaduais em um ano e leis organicas em seis meses, contados da promulgacao.",
+   "markers": [
+    "um ano da promulgacao",
+    "seis meses da Constituicao estadual"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 11",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.12": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Prazos da comissao e da demarcacao ja decorridos; competencia supletiva da Uniao para limites nao demarcados (§ 4º) e homologacao dos limites do Acre (§ 5º) com efeito duradouro.",
+   "markers": [
+    "noventa dias, um ano e tres anos da promulgacao"
+   ],
+   "situation_2026": "Parcialmente operante: prazos exauridos; § 4º e § 5º com efeitos duradouros (divisas ainda litigiosas nao versionadas).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 12",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.13": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Criacao e instalacao do Estado do Tocantins com eleicoes e instalacao datadas em 1988 e 1989; limites do § 1º persistem como fato territorial; o art. 18-A do ADCT (redacao de 2021) pressupoe a instalacao entre 1989 e 1994.",
+   "markers": [
+    "instalacao nao antes de 1º de janeiro de 1989",
+    "eleicoes nao antes de 15 de novembro de 1988"
+   ],
+   "situation_2026": "Exaurido como comando; Estado criado.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 13",
+    "runtime: ADCT art. 18-A (\"Estado do Tocantins, decorrentes de sua instalacao, entre 1º de janeiro de 1989 e 31 de dezembro de 1994\")"
+   ]
+  },
+  "ADCT:ART.14": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Transformacao dos Territorios de Roraima e Amapa em Estados, com instalacao pela posse dos Governadores eleitos em 1990.",
+   "markers": [
+    "posse dos Governadores eleitos em 1990"
+   ],
+   "situation_2026": "Exaurido como comando.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 14"
+   ]
+  },
+  "ADCT:ART.15": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Extincao do Territorio de Fernando de Noronha e reincorporacao a Pernambuco, com efeito na promulgacao.",
+   "markers": [
+    "promulgacao"
+   ],
+   "situation_2026": "Exaurido; resultado territorial persiste.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 15",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.16": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Indicacao do Governador do DF pelo Presidente e competencias do Senado ate a efetivacao do art. 32, § 2º, e a instalacao da Camara Legislativa; o estado desses eventos nao consta de fonte versionada.",
+   "markers": [
+    "ate a efetivacao do art. 32, § 2º; ate a instalacao da Camara Legislativa"
+   ],
+   "situation_2026": "Condicionado a evento institucional nao versionado.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 16"
+   ]
+  },
+  "ADCT:ART.17": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Reducao imediata na promulgacao (caput, efeito unico) e protecao de acumulacoes de cargos de saude entao existentes (§§ 1º e 2º, efeito residual).",
+   "markers": [
+    "promulgacao"
+   ],
+   "situation_2026": "Parcialmente operante: caput consumado; §§ 1º e 2º protegem situacoes existentes na promulgacao.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 17",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.18": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Extincao dos efeitos de atos de estabilidade sem concurso lavrados apos a instalacao da Constituinte; efeito constitutivo na promulgacao.",
+   "markers": [
+    "instalacao da Assembleia Nacional Constituinte"
+   ],
+   "situation_2026": "Exaurido como comando.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 18"
+   ]
+  },
+  "ADCT:ART.18-A": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Convalidacao de atos da instalacao do Tocantins (1989 a 1994) apos cinco anos de cada ato, salvo ma-fe; redacao de 2021.",
+   "markers": [
+    "1º de janeiro de 1989 a 31 de dezembro de 1994",
+    "cinco anos da pratica do ato"
+   ],
+   "situation_2026": "Operante: o efeito convalidatorio esta declarado no texto vigente; periodo coberto fechado.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 18-A",
+    "cf.txt: anotacao \"Redacao dada pela Emenda constitucional n. 110, de 2021\""
+   ]
+  },
+  "ADCT:ART.19": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Estabilidade concedida na promulgacao a servidores com cinco anos continuados de exercicio; situacao consolidada que continua a produzir efeitos.",
+   "markers": [
+    "cinco anos continuados ate a promulgacao"
+   ],
+   "situation_2026": "Operante: estabilidade adquirida continua produzindo efeitos para os alcancados.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 19",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.20": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Revisao de direitos de inativos e pensionistas em cento e oitenta dias.",
+   "markers": [
+    "cento e oitenta dias"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 20",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.21": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Juizes togados de investidura limitada em exercicio na promulgacao; quadro em extincao.",
+   "markers": [
+    "exercicio na data da promulgacao"
+   ],
+   "situation_2026": "Residual e pessoal.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 21"
+   ]
+  },
+  "ADCT:ART.22": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Opcao pela carreira dos defensores publicos investidos ate a instalacao da Constituinte.",
+   "markers": [
+    "instalacao da Assembleia Nacional Constituinte"
+   ],
+   "situation_2026": "Residual e pessoal.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 22"
+   ]
+  },
+  "ADCT:ART.23": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Ocupantes do cargo de censor federal ate a regulamentacao do art. 21, XVI; aproveitamento por lei.",
+   "markers": [
+    "ate a regulamentacao do art. 21, XVI"
+   ],
+   "situation_2026": "Residual e pessoal; estado da regulamentacao nao versionado.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 23"
+   ]
+  },
+  "ADCT:ART.24": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Leis de compatibilizacao de quadros de pessoal em dezoito meses da promulgacao.",
+   "markers": [
+    "dezoito meses da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 24",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.25": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Revogacao de delegacoes ao Executivo a partir de cento e oitenta dias, prazo prorrogavel por lei (leis de prorrogacao nao versionadas); regime de decretos-leis pendentes exaurido.",
+   "markers": [
+    "cento e oitenta dias da promulgacao, prorrogavel por lei",
+    "2 e 3 de setembro de 1988"
+   ],
+   "situation_2026": "Revogacao produziu efeitos; alcance depende de leis de prorrogacao e de interpretacao (externos).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 25",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.26": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Comissao mista sobre endividamento externo no prazo de um ano da promulgacao.",
+   "markers": [
+    "um ano da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 26",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.27": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Regras de instalacao do STJ e dos TRFs (prazos contados da promulgacao, exauridos) e § 11 (TRFs da 6ª a 9ª Regiao, EC 73/2013) com anotacao \"Vide ADIN 5017\".",
+   "markers": [
+    "seis meses da promulgacao",
+    "§ 11 incluido em 2013"
+   ],
+   "situation_2026": "Parcialmente operante; situacao do § 11 depende de decisao judicial nao versionada.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 27",
+    "cf.txt: anotacoes \"Incluido pela Emenda Constitucional n. 73, de 2013; Vide ADIN n. 5017, de 2013\"",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.28": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Juizes federais do art. 123, § 2º, da Constituicao de 1967 investidos na titularidade de varas.",
+   "markers": [
+    "situacao existente na promulgacao"
+   ],
+   "situation_2026": "Residual e pessoal.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 28"
+   ]
+  },
+  "ADCT:ART.29": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Atividades do MPF, PGFN e consultorias ate as leis complementares do Ministerio Publico e da AGU; estado das leis nao versionado; opcoes pessoais dos §§ 2º a 4º.",
+   "markers": [
+    "ate as leis complementares do MP e da AGU",
+    "cento e vinte dias"
+   ],
+   "situation_2026": "Condicionado a leis externas.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 29"
+   ]
+  },
+  "ADCT:ART.30": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Manutencao dos juizes de paz ate a posse dos novos titulares, pela lei que criar a justica de paz.",
+   "markers": [
+    "ate a posse dos novos juizes de paz"
+   ],
+   "situation_2026": "Condicionado a lei e a eventos nao versionados.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 30"
+   ]
+  },
+  "ADCT:ART.31": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Estatizacao das serventias do foro judicial, definidas em lei, respeitados os direitos dos titulares da epoca; execucao depende de leis e fatos nao versionados.",
+   "markers": [
+    "titulares existentes na promulgacao"
+   ],
+   "situation_2026": "Dependente de lei e de fatos externos.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 31"
+   ]
+  },
+  "ADCT:ART.32": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Afasta o art. 236 para serventias ja oficializadas na promulgacao, respeitado o direito dos servidores; alcanca situacoes existentes em 1988.",
+   "markers": [
+    "serventias ja oficializadas na promulgacao"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 32"
+   ]
+  },
+  "ADCT:ART.33": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Pagamento parcelado dos precatorios pendentes na promulgacao em ate oito anos a partir de 1º de julho de 1989.",
+   "markers": [
+    "1º de julho de 1989 + oito anos"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 33"
+   ]
+  },
+  "ADCT:ART.34": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Implantacao do sistema tributario de 1988 (datas de 1989 a 1993 exauridas); § 5º (aplicacao da legislacao anterior compativel) com efeito duradouro; §§ 9º e 11 dependentes de leis posteriores.",
+   "markers": [
+    "quinto mes apos a promulgacao",
+    "1989 a 1993"
+   ],
+   "situation_2026": "Parcialmente operante.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 34",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.35": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Regionalizacao em dez anos (exaurida); § 2º com prazos do ciclo orcamentario aplicaveis ate a lei complementar do art. 165, § 9º (estado da lei nao versionado).",
+   "markers": [
+    "dez anos",
+    "ate a lei complementar do art. 165, § 9º"
+   ],
+   "situation_2026": "§ 2º aplicavel enquanto ausente a lei complementar (dado externo).",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 35"
+   ]
+  },
+  "ADCT:ART.36": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Extincao dos fundos nao ratificados pelo Congresso em dois anos da promulgacao.",
+   "markers": [
+    "dois anos da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 36",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.37": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Adaptacao ao art. 167, III, em cinco anos.",
+   "markers": [
+    "cinco anos"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 37",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.38": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Limite de 65% ate a lei complementar do art. 169 (estado nao versionado); § 2º com escalonamento a partir da publicacao do dispositivo (emenda de 2022; data exata nao versionada).",
+   "markers": [
+    "ate a lei complementar do art. 169",
+    "exercicios seguintes a publicacao do § 2º"
+   ],
+   "situation_2026": "Dependente de dados externos.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 38",
+    "cf.txt: anotacoes \"Incluido pela Emenda Constitucional n. 127, de 2022\""
+   ]
+  },
+  "ADCT:ART.39": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Revisao da lei orcamentaria de 1989 e lei complementar do art. 161, II, em doze meses.",
+   "markers": [
+    "exercicio de 1989",
+    "doze meses"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 39"
+   ]
+  },
+  "ADCT:ART.40": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Zona Franca de Manaus mantida por vinte e cinco anos da promulgacao, prazo acrescido de dez anos (ADCT art. 92) e de cinquenta anos (ADCT art. 92-A).",
+   "markers": [
+    "vinte e cinco anos da promulgacao + 10 + 50 anos"
+   ],
+   "situation_2026": "Operante em 2026 pelo prazo somado dos arts. 40, 92 e 92-A.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 40, 92 e 92-A",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.41": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Reavaliacao de incentivos setoriais e revogacao dos nao confirmados em dois anos; ressalva de direitos adquiridos ate aquela data.",
+   "markers": [
+    "dois anos da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 41",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.42": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Aplicacao regional de recursos de irrigacao durante quarenta anos (redacao de 2015); termo inicial nao explicitado, mas a regra esta em vigor em 5 de outubro de 2026 em qualquer leitura do termo inicial (1988 ou 2015).",
+   "markers": [
+    "quarenta anos"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 42",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 89, de 2015\"",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.43": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Titulos minerarios sem efeito na data da lei de mineracao ou em um ano da promulgacao.",
+   "markers": [
+    "um ano da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 43",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.44": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Prazo de quatro anos para empresas mineradoras da epoca e dispensas para empresas entao existentes.",
+   "markers": [
+    "quatro anos da promulgacao"
+   ],
+   "situation_2026": "Prazos exauridos; efeitos residuais para empresas da epoca.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 44",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.45": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Refinarias em funcionamento na promulgacao fora do monopolio e contratos de risco entao vigentes ressalvados.",
+   "markers": [
+    "situacoes existentes na promulgacao"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 45"
+   ]
+  },
+  "ADCT:ART.46": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Correcao monetaria ininterrupta de creditos contra entidades em intervencao ou liquidacao extrajudicial; regra sem prazo.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 46"
+   ]
+  },
+  "ADCT:ART.47": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Dispensa de correcao monetaria de emprestimos de 1986 e 1987 liquidados em noventa dias da promulgacao.",
+   "markers": [
+    "noventa dias da promulgacao",
+    "1986-1987"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 47",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.48": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Prazo de cento e vinte dias da promulgacao para o Congresso elaborar o codigo de defesa do consumidor (o cumprimento do prazo nao e afirmado).",
+   "markers": [
+    "cento e vinte dias da promulgacao"
+   ],
+   "situation_2026": "Exaurido por decurso do prazo.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 48",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.49": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Enfiteuse: lei, remicao, ocupantes e manutencao nos terrenos de marinha; regra sem prazo.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 49"
+   ]
+  },
+  "ADCT:ART.50": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Lei agricola no prazo de um ano.",
+   "markers": [
+    "um ano"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 50"
+   ]
+  },
+  "ADCT:ART.51": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Revisao, em tres anos da promulgacao, de doacoes, vendas e concessoes de terras publicas de 1962 a 1987.",
+   "markers": [
+    "tres anos da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 51",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.52": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Vedacoes a capital estrangeiro em instituicoes financeiras ate as condicoes do art. 192 (redacao de 2003); estado das leis complementares nao versionado.",
+   "markers": [
+    "ate as condicoes do art. 192"
+   ],
+   "situation_2026": "Dependente de dado externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 52",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 40, de 2003\""
+   ]
+  },
+  "ADCT:ART.53": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Direitos dos ex-combatentes, com pensao especial requerivel a qualquer tempo.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 53"
+   ]
+  },
+  "ADCT:ART.54": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Pensao vitalicia de dois salarios minimos aos seringueiros carentes, transferivel a dependentes carentes.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 54"
+   ]
+  },
+  "ADCT:ART.54-A": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Indenizacao em parcela unica aos seringueiros do art. 54 (incluida em 2014); situacao dos pagamentos nao versionada.",
+   "markers": [],
+   "situation_2026": "Regra vigente; execucao externa.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 54-A",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 78, de 2014\""
+   ]
+  },
+  "ADCT:ART.55": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Destinacao de trinta por cento da seguridade a saude ate a aprovacao da lei de diretrizes orcamentarias; estado do evento nao versionado.",
+   "markers": [
+    "ate a lei de diretrizes orcamentarias"
+   ],
+   "situation_2026": "Dependente de evento externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 55"
+   ]
+  },
+  "ADCT:ART.56": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Destinacao de contribuicao a seguridade ate a lei sobre o art. 195, I; ressalva do exercicio de 1988.",
+   "markers": [
+    "ate a lei do art. 195, I"
+   ],
+   "situation_2026": "Dependente de lei externa.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 56"
+   ]
+  },
+  "ADCT:ART.57": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Parcelamento de debitos previdenciarios de Estados e Municipios ate 1988, requerido em cento e oitenta dias da promulgacao.",
+   "markers": [
+    "cento e oitenta dias da promulgacao",
+    "30 de junho de 1988"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 57",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.58": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Revisao dos beneficios mantidos na promulgacao ate a implantacao do plano de custeio e beneficios; estado da implantacao nao versionado.",
+   "markers": [
+    "setimo mes da promulgacao",
+    "ate a implantacao dos planos"
+   ],
+   "situation_2026": "Dependente de evento externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 58"
+   ]
+  },
+  "ADCT:ART.59": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Projetos de lei da seguridade em seis meses da promulgacao e implantacao em dezoito meses.",
+   "markers": [
+    "seis meses da promulgacao"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 59",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.60": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Cronograma anual da complementacao da Uniao ao Fundeb a partir de 1º de janeiro de 2021 (redacao de 2020): o sexto ano e 2026.",
+   "markers": [
+    "1º de janeiro de 2021; sexto ano = 2026"
+   ],
+   "situation_2026": "Em 5 de outubro de 2026 corre o sexto ano: minimo de 23%, 10,5 pontos (parcela VAAT) e 2,5 pontos (parcela de resultados).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 60, caput, incisos e §§ 1º e 2º"
+   ]
+  },
+  "ADCT:ART.60-A": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Revisao dos criterios no sexto ano de vigencia dos fundos e a cada dez anos; o termo inicial da vigencia dos fundos nao consta do artigo.",
+   "markers": [
+    "sexto ano de vigencia; a cada dez anos"
+   ],
+   "situation_2026": "Ano da primeira revisao depende de dado externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 60-A"
+   ]
+  },
+  "ADCT:ART.61": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Continuidade de repasses a entidades educacionais que receberam recursos publicos nos tres anos anteriores a promulgacao; alcanca situacoes existentes em 1988.",
+   "markers": [
+    "ultimos tres anos antes da promulgacao"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 61",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.62": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Ordem de criacao do Servico Nacional de Aprendizagem Rural por lei; o cumprimento depende de lei nao versionada.",
+   "markers": [
+    "a lei criara"
+   ],
+   "situation_2026": "Dependente de lei externa.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 62"
+   ]
+  },
+  "ADCT:ART.63": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Comissao para as comemoracoes do centenario da Republica (1889) e da primeira Constituicao republicana (1891); evento comemorativo encerrado.",
+   "markers": [
+    "centenario da proclamacao da Republica"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 63"
+   ]
+  },
+  "ADCT:ART.64": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Edicao popular e distribuicao gratuita do texto integral da Constituicao; dever sem prazo.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 64"
+   ]
+  },
+  "ADCT:ART.65": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Prazo de doze meses para regulamentar o art. 220, § 4º.",
+   "markers": [
+    "doze meses"
+   ],
+   "situation_2026": "Exaurido por decurso do prazo.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 65",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.66": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Manutencao das concessoes de telecomunicacoes em vigor na promulgacao.",
+   "markers": [
+    "concessoes atualmente em vigor (1988)"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 66"
+   ]
+  },
+  "ADCT:ART.67": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Prazo de cinco anos da promulgacao para concluir a demarcacao das terras indigenas; o prazo decorreu e o dever de demarcar permanece no art. 231 do corpo permanente.",
+   "markers": [
+    "cinco anos da promulgacao"
+   ],
+   "situation_2026": "Prazo exaurido; dever permanente no art. 231.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 67",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.68": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Propriedade definitiva das terras ocupadas por remanescentes das comunidades dos quilombos e dever de emissao dos titulos; regra sem prazo.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 68"
+   ]
+  },
+  "ADCT:ART.69": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Permissao duradoura para Estados manterem consultorias juridicas separadas, condicionada a fato verificado na data da promulgacao.",
+   "markers": [
+    "orgaos distintos na data da promulgacao"
+   ],
+   "situation_2026": "Operante para os Estados que preenchiam a condicao em 1988.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 69",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.70": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Competencia dos tribunais estaduais mantida ate a definicao pela Constituicao do Estado; evento externo nao versionado.",
+   "markers": [
+    "ate a Constituicao do Estado"
+   ],
+   "situation_2026": "Dependente de evento externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 70"
+   ]
+  },
+  "ADCT:ART.71": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Fundo Social de Emergencia / Fundo de Estabilizacao Fiscal para 1994 a 31 de dezembro de 1999.",
+   "markers": [
+    "1994 a 31 de dezembro de 1999"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 71"
+   ]
+  },
+  "ADCT:ART.72": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Receitas do Fundo Social de Emergencia, vinculadas aos periodos do art. 71.",
+   "markers": [
+    "periodos de 1994 a 1999"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 72"
+   ]
+  },
+  "ADCT:ART.73": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Vedacao de medida provisoria na regulacao do Fundo Social de Emergencia, extinto com o fim dos periodos do art. 71.",
+   "markers": [
+    "vinculado ao art. 71"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT arts. 71 e 73"
+   ]
+  },
+  "ADCT:ART.74": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Contribuicao provisoria sobre movimentacao financeira, cobrada por prazo nao superior a dois anos e prorrogada pelos arts. 75, 84 e 90 ate 31 de dezembro de 2007.",
+   "markers": [
+    "dois anos; ate 31 de dezembro de 2007 (ADCT art. 90)"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT arts. 74, 75, 84 e 90"
+   ]
+  },
+  "ADCT:ART.75": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Prorrogacao da contribuicao provisoria por trinta e seis meses (1999-2001).",
+   "markers": [
+    "trinta e seis meses; 1999 a 2001"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 75"
+   ]
+  },
+  "ADCT:ART.76": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Desvinculacao de receitas da Uniao ate 31 de dezembro de 2032.",
+   "markers": [
+    "ate 31 de dezembro de 2032"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 76",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 135, de 2024\""
+   ]
+  },
+  "ADCT:ART.76-A": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Desvinculacao de receitas dos Estados e do Distrito Federal ate 31 de dezembro de 2032.",
+   "markers": [
+    "ate 31 de dezembro de 2032"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 76-A",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.76-B": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Desvinculacao de receitas dos Municipios: 50% ate 31 de dezembro de 2026 e 30% de 2027 a 2032.",
+   "markers": [
+    "ate 31 de dezembro de 2026; 2027 a 2032"
+   ],
+   "situation_2026": "Em 5 de outubro de 2026 vale o percentual de 50% (inciso I).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 76-B, caput e incisos I e II",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 136, de 2025\""
+   ]
+  },
+  "ADCT:ART.77": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Minimos de saude ate 2004 (exauridos); § 4º manda aplicar o artigo a partir de 2005 na ausencia da lei complementar do art. 198, § 3º, cujo estado nao esta versionado.",
+   "markers": [
+    "ate 2004; a partir de 2005 na ausencia da lei complementar"
+   ],
+   "situation_2026": "Caput exaurido; § 4º dependente de dado externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 77"
+   ]
+  },
+  "ADCT:ART.78": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Parcelamento de precatorios em ate dez anos (emenda de 2000) para precatorios pendentes e acoes ajuizadas ate 1999.",
+   "markers": [
+    "dez anos; acoes ate 31 de dezembro de 1999"
+   ],
+   "situation_2026": "Exaurido pelo prazo maximo.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 78",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 30, de 2000\""
+   ]
+  },
+  "ADCT:ART.79": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Fundo de Combate e Erradicacao da Pobreza instituido para vigorar ate 2010; o texto remete a Emenda Constitucional n. 67, de 2010, cujo conteudo nao esta versionado.",
+   "markers": [
+    "ate o ano de 2010",
+    "Vide Emenda Constitucional n. 67 de 2010"
+   ],
+   "situation_2026": "Vigencia apos 2010 depende de dado externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 79"
+   ]
+  },
+  "ADCT:ART.80": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Receitas do Fundo do art. 79 (adicional de contribuicao provisoria de 2000 a 2002 exaurido; demais fontes dependem da vigencia do Fundo).",
+   "markers": [
+    "18 de junho de 2000 a 17 de junho de 2002",
+    "ate a extincao do Fundo"
+   ],
+   "situation_2026": "Dependente do estado do art. 79.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 80"
+   ]
+  },
+  "ADCT:ART.81": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Fundo de rendimentos de desestatizacao vinculado ao Fundo do art. 79.",
+   "markers": [
+    "rendimentos a partir de 18 de junho de 2002"
+   ],
+   "situation_2026": "Dependente do estado do art. 79.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 81"
+   ]
+  },
+  "ADCT:ART.82": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Fundos de Combate a Pobreza de Estados, Distrito Federal e Municipios e adicionais de ICMS e ISS; o artigo nao fixa prazo.",
+   "markers": [],
+   "situation_2026": "Operante pelo texto.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 82"
+   ]
+  },
+  "ADCT:ART.83": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Lei federal define os produtos e servicos superfluos dos arts. 80, II, e 82, § 2º.",
+   "markers": [],
+   "situation_2026": "Operante pelo texto.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 83"
+   ]
+  },
+  "ADCT:ART.84": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Cobranca da contribuicao provisoria ate 31 de dezembro de 2004, prorrogada pelo art. 90 ate 2007.",
+   "markers": [
+    "ate 31 de dezembro de 2004"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT arts. 84 e 90"
+   ]
+  },
+  "ADCT:ART.85": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Hipoteses de nao incidencia da contribuicao provisoria do art. 84, cuja cobranca terminou em 2007.",
+   "markers": [
+    "vinculado aos arts. 84 e 90"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT arts. 84, 85 e 90"
+   ]
+  },
+  "ADCT:ART.86": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Debitos de pequeno valor pendentes na data da publicacao da emenda de 2002, fora do parcelamento do art. 78.",
+   "markers": [
+    "pendentes na data de publicacao da emenda"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 86",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 37, de 2002\""
+   ]
+  },
+  "ADCT:ART.87": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Valores supletivos de pequeno valor (40 e 30 salarios-minimos) ate a publicacao da lei definidora de cada ente; a regra opera para cada ente enquanto nao houver a sua lei.",
+   "markers": [
+    "ate a publicacao das leis definidoras pelos entes"
+   ],
+   "situation_2026": "Operante como regra supletiva; a situacao de cada ente e dado externo.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 87"
+   ]
+  },
+  "ADCT:ART.88": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SELECT",
+   "reason": "Aliquota minima do ISS e vedacao de beneficios enquanto lei complementar nao disciplinar o art. 156, § 3º, I e III; estado da lei nao versionado.",
+   "markers": [
+    "enquanto lei complementar nao disciplinar"
+   ],
+   "situation_2026": "Dependente de dado externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 88"
+   ]
+  },
+  "ADCT:ART.89": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Quadro em extincao de servidores e policiais militares do ex-Territorio de Rondonia, definidos por fatos ate 1987.",
+   "markers": [
+    "15 de marco de 1987"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 89"
+   ]
+  },
+  "ADCT:ART.90": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Prorrogacao da contribuicao provisoria ate 31 de dezembro de 2007.",
+   "markers": [
+    "ate 31 de dezembro de 2007"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 90"
+   ]
+  },
+  "ADCT:ART.92": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Acrescimo de dez anos ao prazo da Zona Franca de Manaus do art. 40; combinado com o art. 92-A, o prazo somado alcanca data posterior a 2026.",
+   "markers": [
+    "art. 40 + dez anos"
+   ],
+   "situation_2026": "Operante (prazo em curso).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 40, 92 e 92-A",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.92-A": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Acrescimo de cinquenta anos ao prazo do art. 92 (25 + 10 + 50 anos contados da promulgacao).",
+   "markers": [
+    "art. 92 + cinquenta anos"
+   ],
+   "situation_2026": "Operante (prazo em curso).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 40, 92 e 92-A",
+    "promulgacao em 5 de outubro de 1988 (formula de encerramento versionada no runtime, linhas 3434 e 4523)"
+   ]
+  },
+  "ADCT:ART.92-B": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Manutencao do diferencial competitivo da Zona Franca de Manaus e das areas de livre comercio nas leis do IBS e da CBS; fundos de sustentabilidade por lei complementar.",
+   "markers": [
+    "areas de livre comercio existentes em 31 de maio de 2023"
+   ],
+   "situation_2026": "Comando vigente; execucao por leis complementares externas.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 92-B",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.93": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Vigencia do art. 159, III, e § 4º condicionada a edicao de lei; estado da lei nao versionado.",
+   "markers": [
+    "apos a edicao da lei"
+   ],
+   "situation_2026": "Dependente de lei externa.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 93"
+   ]
+  },
+  "ADCT:ART.94": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Cessacao dos regimes especiais de microempresas com a entrada em vigor do regime do art. 146, III, d; evento externo nao versionado.",
+   "markers": [
+    "entrada em vigor do regime do art. 146, III, d"
+   ],
+   "situation_2026": "Dependente de evento externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 94"
+   ]
+  },
+  "ADCT:ART.95": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Registro de nascidos no estrangeiro entre 7 de junho de 1994 e a promulgacao da emenda de 2007; grupo fechado de pessoas.",
+   "markers": [
+    "7 de junho de 1994 ate a emenda de 2007"
+   ],
+   "situation_2026": "Residual (grupo fechado).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 95",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 54, de 2007\""
+   ]
+  },
+  "ADCT:ART.96": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_CONSUMED_CONSTITUTIVE_ACT",
+   "reason": "Convalidacao de atos de criacao, fusao, incorporacao e desmembramento de Municipios com lei publicada ate 31 de dezembro de 2006; ato constitutivo consumado com a propria emenda.",
+   "markers": [
+    "ate 31 de dezembro de 2006"
+   ],
+   "situation_2026": "Efeito consumado.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 96"
+   ]
+  },
+  "ADCT:ART.97": {
+   "class": "PARTIALLY_OPERATIVE",
+   "decision": "SELECT",
+   "reason": "Regime especial de precatorios de 2009 ate a lei complementar do art. 100, § 15 (estado nao versionado; regime convive com o do art. 101); §§ 16 e 16-A (redacao de 2025) com atualizacao pelo IPCA e juros de 2% ao ano desde 1º de agosto de 2025, limitados pela Selic.",
+   "markers": [
+    "ate a lei complementar do art. 100, § 15",
+    "a partir de 1º de agosto de 2025"
+   ],
+   "situation_2026": "§§ 16 e 16-A operantes em 2026; demais regras dependem de dados externos.",
+   "produces_effects": "PARCIAL",
+   "provenance": [
+    "runtime: ADCT art. 97",
+    "cf.txt: anotacao do § 16 \"Redacao dada pela Emenda Constitucional n. 136, de 2025\""
+   ]
+  },
+  "ADCT:ART.98": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Proporcionalidade do numero de defensores (caput, sem prazo); prazo de oito anos do § 1º contado da emenda de 2014 ja decorrido em qualquer data de publicacao daquele ano.",
+   "markers": [
+    "oito anos a partir de 2014"
+   ],
+   "situation_2026": "Caput operante; prazo do § 1º decorrido.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 98",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 80, de 2014\""
+   ]
+  },
+  "ADCT:ART.99": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Partilha do diferencial de aliquotas do ICMS: escalonamento de 2015 a 2018 encerrado; desde 2019, 100% para o Estado de destino.",
+   "markers": [
+    "2015 a 2018; a partir de 2019"
+   ],
+   "situation_2026": "Em 2026 vale o inciso V (100% ao destino).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 99"
+   ]
+  },
+  "ADCT:ART.100": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_TRANSITION_EVENT_DEPENDENT",
+   "reason": "Aposentadoria compulsoria aos 75 anos de ministros ate a lei complementar do art. 40, § 1º, II; estado da lei nao versionado.",
+   "markers": [
+    "ate a lei complementar"
+   ],
+   "situation_2026": "Dependente de lei externa.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 100"
+   ]
+  },
+  "ADCT:ART.101": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Regime especial de pagamento de precatorios em mora em 25 de marco de 2015, com quitacao ate 31 de dezembro de 2029.",
+   "markers": [
+    "ate 31 de dezembro de 2029"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 101"
+   ]
+  },
+  "ADCT:ART.102": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Ordem de aplicacao dos recursos do regime especial do art. 101.",
+   "markers": [
+    "enquanto viger o regime do art. 101"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 101 e 102"
+   ]
+  },
+  "ADCT:ART.103": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Vedacao de sequestro e de desapropriacoes durante o regime do art. 101.",
+   "markers": [
+    "vigencia do regime do art. 101"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 101 e 103"
+   ]
+  },
+  "ADCT:ART.104": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Consequencias da nao liberacao dos recursos do art. 101.",
+   "markers": [
+    "vinculado ao regime do art. 101"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 101 e 104"
+   ]
+  },
+  "ADCT:ART.105": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Compensacao de precatorios com debitos inscritos em divida ativa ate 25 de marco de 2015, durante o regime do art. 101; prazo de regulamentacao de 2018 decorrido (§ 3º).",
+   "markers": [
+    "enquanto viger o regime do art. 101",
+    "cento e vinte dias a partir de 1º de janeiro de 2018"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 101 e 105"
+   ]
+  },
+  "ADCT:ART.107-A": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Limite anual para alocacao de despesas com precatorios ate o fim de 2026; remissoes textuais a acoes de controle (ADI 7064, MI 7300) sem conteudo versionado.",
+   "markers": [
+    "ate o fim de 2026"
+   ],
+   "situation_2026": "Pelo texto, em vigor ate 31 de dezembro de 2026; eficacia depende do resultado das acoes anotadas.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 107-A",
+    "cf.txt: anotacoes \"Vide ADI 7064\" e \"Vide MI 7300\""
+   ]
+  },
+  "ADCT:ART.113": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Estimativa de impacto orcamentario e financeiro em proposicoes que criem ou alterem despesa obrigatoria ou renuncia de receita; regra sem prazo.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 113"
+   ]
+  },
+  "ADCT:ART.115": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Parcelamento excepcional de debitos de Estados, DF e Municipios com seus regimes proprios (vencimento ate 31 de agosto de 2025; ate 300 prestacoes), condicionado a comprovacoes em 15 meses da promulgacao da emenda de 2025 (data exata nao versionada).",
+   "markers": [
+    "vencimento ate 31 de agosto de 2025",
+    "15 meses da promulgacao da alteracao"
+   ],
+   "situation_2026": "Autorizacao vigente; termo final do prazo de 15 meses depende de data nao versionada.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 115",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 136, de 2025\""
+   ]
+  },
+  "ADCT:ART.116": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Parcelamento excepcional, em ate 300 prestacoes, de debitos previdenciarios dos Municipios com o RGPS vencidos ate 31 de agosto de 2025; § 1º com prazo ate 1º de marco de 2027; incisos do § 3º com prazo de 18 meses da promulgacao do inciso (data exata nao versionada).",
+   "markers": [
+    "vencimento ate 31 de agosto de 2025",
+    "ate 1º de marco de 2027",
+    "18 meses apos a promulgacao do inciso"
+   ],
+   "situation_2026": "Autorizacao vigente; formalizacao encerrada em 31 de agosto de 2026 (ADCT art. 117); prazo do § 1º em curso.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 116 e 117",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 136, de 2025\""
+   ]
+  },
+  "ADCT:ART.116-A": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Parcelamento excepcional dos debitos previdenciarios de consorcios publicos intermunicipais com o RGPS ate 31 de agosto de 2025, com as regras dos §§ 2º a 6º do art. 116.",
+   "markers": [
+    "ate 31 de agosto de 2025"
+   ],
+   "situation_2026": "Autorizacao vigente; formalizacao encerrada em 31 de agosto de 2026 (ADCT art. 117).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 116-A e 117"
+   ]
+  },
+  "ADCT:ART.117": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Formalizacao dos parcelamentos dos arts. 115, 116 e 116-A ate 31 de agosto de 2026, com vinculacao do FPM e ordem de preferencia.",
+   "markers": [
+    "ate 31 de agosto de 2026"
+   ],
+   "situation_2026": "Em 5 de outubro de 2026 o prazo de formalizacao ja terminou; a vinculacao do FPM e a ordem de preferencia seguem aplicaveis aos parcelamentos formalizados.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 117",
+    "cf.txt: anotacao \"Redacao dada pela Emenda Constitucional n. 136, de 2025\""
+   ]
+  },
+  "ADCT:ART.118": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Definicao dos requisitos da renda basica e do art. 203, VI, ate 31 de dezembro de 2022, com dispensa limitada ao exercicio de 2022.",
+   "markers": [
+    "ate 31 de dezembro de 2022"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 118"
+   ]
+  },
+  "ADCT:ART.119": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Afastamento de responsabilizacao pelo descumprimento do art. 212 em 2020 e 2021, com complementacao ate 2023.",
+   "markers": [
+    "2020 e 2021; ate 2023"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 119"
+   ]
+  },
+  "ADCT:ART.120": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Estado de emergencia reconhecido no ano de 2022 (precos de combustiveis) e regime das medidas correspondentes.",
+   "markers": [
+    "ano de 2022"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 120"
+   ]
+  },
+  "ADCT:ART.121": {
+   "class": "OPERATIVE_CURRENT",
+   "decision": "SELECT",
+   "reason": "Encerramento de contas do PIS-PASEP nao reclamadas por mais de 20 anos, apos aviso de 60 dias, e prazo de 5 anos para pedir ressarcimento; regra sem prazo final.",
+   "markers": [],
+   "situation_2026": "Operante.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 121",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 126, de 2022\""
+   ]
+  },
+  "ADCT:ART.122": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Execucao de transferencias para enfrentamento da Covid-19 ate 31 de dezembro de 2023.",
+   "markers": [
+    "ate 31 de dezembro de 2023"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 122"
+   ]
+  },
+  "ADCT:ART.123": {
+   "class": "EXTERNAL_STATUS_REQUIRED",
+   "decision": "SKIP_RESIDUAL_PERSONAL_TRANSITION",
+   "reason": "Prazo adicional para permissoes lotericas em vigor na data de publicacao do dispositivo; alcanca instrumentos existentes naquela data e a duracao do acrescimo nao consta do texto.",
+   "markers": [
+    "instrumentos em vigor na publicacao"
+   ],
+   "situation_2026": "Residual.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 123",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 129, de 2023\""
+   ]
+  },
+  "ADCT:ART.124": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Moldura da transicao para o IBS e a CBS (arts. 125 a 133) e instituicao da CBS pela mesma lei complementar do IBS.",
+   "markers": [
+    "arts. 125 a 133"
+   ],
+   "situation_2026": "Operante: a transicao comecou em 2026 (ADCT art. 125).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 124 e 125",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.125": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Ano de teste de 2026: IBS a 0,1% e CBS a 0,9%, compensaveis com PIS/Cofins; destinacao da arrecadacao do IBS; possibilidade de dispensa do recolhimento.",
+   "markers": [
+    "Em 2026"
+   ],
+   "situation_2026": "Em 5 de outubro de 2026 esta em curso o ano previsto no caput.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 125",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.126": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "A partir de 2027: cobranca da CBS e do imposto seletivo; extincao de PIS/Cofins condicionada a instituicao da CBS; IPI com aliquota zero salvo Zona Franca.",
+   "markers": [
+    "A partir de 2027",
+    "desde que instituida a contribuicao"
+   ],
+   "situation_2026": "Ainda nao produz efeitos em 5 de outubro de 2026; o inciso II depende da instituicao da CBS, dado externo.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 126",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.127": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Aliquotas do IBS (0,05% estadual e 0,05% municipal) e reducao da CBS em 2027 e 2028.",
+   "markers": [
+    "Em 2027 e 2028"
+   ],
+   "situation_2026": "Produz efeitos a partir de 1º de janeiro de 2027 (data fixada no texto).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 127",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ],
+   "trigger_date": "2027"
+  },
+  "ADCT:ART.128": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Reducao proporcional das aliquotas do ICMS e do ISS de 2029 a 2032 (9/10 a 6/10) e dos beneficios fiscais.",
+   "markers": [
+    "De 2029 a 2032"
+   ],
+   "situation_2026": "Produz efeitos a partir de 2029 (data fixada no texto).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 128",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ],
+   "trigger_date": "2029"
+  },
+  "ADCT:ART.129": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Extincao do ICMS e do ISS a partir de 2033.",
+   "markers": [
+    "a partir de 2033"
+   ],
+   "situation_2026": "Produz efeitos a partir de 2033 (data fixada no texto).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 129",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ],
+   "trigger_date": "2033"
+  },
+  "ADCT:ART.130": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Aliquotas de referencia do IBS e da CBS fixadas por resolucao do Senado no ano anterior a vigencia, com calculo do TCU, para equivalencia de receitas de 2027 a 2033 e travas de reducao em 2030 e 2035.",
+   "markers": [
+    "de 2027 a 2033",
+    "ano anterior ao de sua vigencia"
+   ],
+   "situation_2026": "Operante: em 2026 corre o ano anterior a vigencia das aliquotas de 2027 (§ 1º).",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 130",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.131": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Distribuicao do IBS de Estados, DF e Municipios de 2029 a 2077, com retencoes decrescentes (80%, 90% e reducao de 1/45 ao ano).",
+   "markers": [
+    "De 2029 a 2077"
+   ],
+   "situation_2026": "Produz efeitos a partir de 2029 (data fixada no texto).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 131",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ],
+   "trigger_date": "2029"
+  },
+  "ADCT:ART.132": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Retencao de 5% do IBS para entes com menores razoes entre receita apurada e receita media, no periodo da distribuicao do art. 131; reducao gradativa entre 2078 e 2097 por lei complementar.",
+   "markers": [
+    "periodo do art. 131 (2029 a 2077)",
+    "2078 a 2097"
+   ],
+   "situation_2026": "Produz efeitos a partir de 2029, por remissao ao art. 131, § 1º.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT arts. 131 e 132",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ],
+   "trigger_date": "2029 (remissao ao art. 131, § 1º)"
+  },
+  "ADCT:ART.133": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Exclusao de IPI, ICMS, ISS, PIS e Cofins da base de calculo do IBS e da CBS; aplica-se desde a cobranca do ano de teste (2026).",
+   "markers": [],
+   "situation_2026": "Operante enquanto coexistirem os tributos.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT arts. 125 e 133",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.134": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Aproveitamento dos saldos credores de ICMS existentes ao final de 2032, por compensacao com o IBS (240 parcelas ou prazo remanescente) e atualizacao pelo IPCA a partir de 2033; § 4º truncado na fonte (MB08-SRC-03).",
+   "markers": [
+    "final de 2032",
+    "A partir de 2033"
+   ],
+   "situation_2026": "Produz efeitos a partir de 2033 (data fixada no texto).",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT art. 134",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ],
+   "trigger_date": "2033"
+  },
+  "ADCT:ART.135": {
+   "class": "FUTURE_TRIGGER",
+   "decision": "SELECT",
+   "reason": "Lei complementar sobre o uso dos creditos de IPI, PIS e Cofins nao aproveitados ate a extincao desses tributos.",
+   "markers": [
+    "ate a extincao"
+   ],
+   "situation_2026": "Depende da extincao dos tributos (ADCT art. 126) e de lei complementar; dados externos.",
+   "produces_effects": null,
+   "provenance": [
+    "runtime: ADCT arts. 126 e 135",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.136": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Contribuicoes estaduais substitutas dos fundos de infraestrutura e habitacao existentes em 30 de abril de 2023, extintas em 31 de dezembro de 2043.",
+   "markers": [
+    "30 de abril de 2023",
+    "ate 31 de dezembro de 2043"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 136",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 132, de 2023\""
+   ]
+  },
+  "ADCT:ART.137": {
+   "class": "EFFECT_EXHAUSTED",
+   "decision": "SKIP_EXHAUSTED_TRANSITION",
+   "reason": "Uso de saldos de transferencias da Covid-19 ate 31 de dezembro de 2024.",
+   "markers": [
+    "ate 31 de dezembro de 2024"
+   ],
+   "situation_2026": "Exaurido.",
+   "produces_effects": false,
+   "provenance": [
+    "runtime: ADCT art. 137"
+   ]
+  },
+  "ADCT:ART.138": {
+   "class": "OPERATIVE_TRANSITION",
+   "decision": "SELECT",
+   "reason": "Ate 2032, criacao, alteracao ou prorrogacao de vinculacao de receitas nao pode elevar a despesa primaria acima da variacao do limite de despesas primarias.",
+   "markers": [
+    "Ate 2032"
+   ],
+   "situation_2026": "Operante em 2026.",
+   "produces_effects": true,
+   "provenance": [
+    "runtime: ADCT art. 138",
+    "cf.txt: anotacao \"Incluido pela Emenda Constitucional n. 135, de 2024\""
+   ]
+  }
+ },
+ "explanations": {
+  "CF88:ART.195": {
+   "temporal_class": "OPERATIVE_CURRENT",
+   "transition": {
+    "ec": "EC 132/2023 (inciso V e §§ 15 a 19, anotacao da fonte canonica)",
+    "artigo": "CF art. 195, V; ADCT arts. 124 a 127",
+    "marco": "2026 (aliquota de teste, ADCT art. 125); 2027 (cobranca, ADCT art. 126, I, a)",
+    "situacao_2026": "Financiamento da seguridade vigente; contribuicao do inciso V cobrada em 2026 apenas a aliquota de teste do ADCT art. 125 (0,9%), compensavel (art. 125, § 1º).",
+    "produz_efeitos": "SIM (regra permanente); inciso V em regime de transicao",
+    "provenance": [
+     "runtime: ADCT art. 125, caput e § 1º; ADCT art. 126, caput e I, a"
+    ]
+   }
+  },
+  "CF88:ART.195:INC.I": {
+   "temporal_class": "OPERATIVE_CURRENT",
+   "transition": {
+    "ec": "EC 20/1998 (redacao); extincao futura da alinea b pela EC 132/2023 (ADCT art. 126, II)",
+    "artigo": "CF art. 195, I; ADCT art. 126, II",
+    "marco": "a partir de 2027, condicionada a instituicao da contribuicao do art. 195, V",
+    "situacao_2026": "As tres bases (folha, receita ou faturamento, lucro) vigentes em 2026.",
+    "produz_efeitos": "SIM",
+    "provenance": [
+     "runtime: ADCT art. 126, caput e II"
+    ]
+   }
+  },
+  "CF88:ART.195:PAR.15": {
+   "temporal_class": "FUTURE_TRIGGER",
+   "transition": {
+    "ec": "EC 132/2023",
+    "artigo": "CF art. 195, §§ 15 a 19; ADCT arts. 125 a 127",
+    "marco": "2026 aliquota de teste (ADCT art. 125); cobranca a partir de 2027 (ADCT art. 126, I, a); reducao de 0,1 ponto em 2027 e 2028 (ADCT art. 127, paragrafo unico)",
+    "situacao_2026": "Regras constitucionais vigentes; cobranca plena da contribuicao so a partir de 2027.",
+    "produz_efeitos": "PARCIAL (teste em 2026; cobranca plena futura)",
+    "provenance": [
+     "runtime: ADCT arts. 125, 126 e 127"
+    ]
+   }
+  },
+  "CF88:ART.198": {
+   "judicial_review": {
+    "classification": "JUDICIAL_REVIEW_CONTEXT_ONLY",
+    "reason": "A explicacao descreve a organizacao literal do sistema unico (rede, diretrizes, financiamento); a correcao do T1 nao depende do resultado da ADPF anotada no caput, cujo conteudo fica como aprofundamento na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION)."
+   }
+  },
+  "CF88:ART.212-A": {
+   "temporal_class": "OPERATIVE_CURRENT",
+   "transition": {
+    "ec": "anotacoes da fonte canonica: EC 108/2020 e EC 132/2023 (incisos II a XIII); incisos XIV e XV sem anotacao identica",
+    "artigo": "CF art. 212-A, XIV e XV",
+    "marco": "exercicio de 2025 (inciso XIV); a partir do exercicio de 2026 (inciso XV)",
+    "situacao_2026": "Inciso XIV com efeito restrito ao exercicio de 2025 (encerrado); inciso XV produzindo efeitos no exercicio de 2026; demais incisos vigentes.",
+    "produz_efeitos": "SIM (inciso XIV exaurido)",
+    "provenance": [
+     "runtime: CF art. 212-A, XIV ('no exercicio de 2025') e XV ('a partir do exercicio de 2026')"
+    ]
+   }
+  },
+  "CF88:ART.201": {
+   "temporal_class": "OPERATIVE_CURRENT",
+   "transition": {
+    "ec": "EC 103/2019 (anotacoes da fonte canonica)",
+    "artigo": "CF art. 201",
+    "marco": "regras de transicao da EC 103/2019 fora do runtime",
+    "situacao_2026": "Texto permanente vigente; regras de transicao para segurados anteriores ficam na camada externa (nao versionadas no runtime).",
+    "produz_efeitos": "SIM",
+    "provenance": [
+     "anotacoes: 'Redacao dada pela Emenda Constitucional n. 103, de 2019'"
+    ]
+   }
+  },
+  "CF88:ART.239": {
+   "temporal_class": "OPERATIVE_CURRENT",
+   "transition": {
+    "ec": "EC 103/2019 e EC 135/2024 (anotacoes); extincao futura do PIS pela EC 132/2023 (ADCT art. 126, II)",
+    "artigo": "CF art. 239; ADCT art. 126, II",
+    "marco": "a partir de 2027, condicionada a instituicao da contribuicao do art. 195, V",
+    "situacao_2026": "Destinacao do PIS/PASEP vigente em 2026.",
+    "produz_efeitos": "SIM",
+    "provenance": [
+     "runtime: ADCT art. 126, II"
+    ]
+   }
+  },
+  "CF88:ART.239:PAR.3": {
+   "temporal_class": "OPERATIVE_TRANSITION",
+   "transition": {
+    "ec": "EC 135/2024 (anotacao da fonte canonica)",
+    "artigo": "CF art. 239, §§ 3º e 3º-A",
+    "marco": "limite de referencia do pagamento de 2025; correcao pelo INPC a partir de 2026",
+    "situacao_2026": "Em 5 de outubro de 2026 o limite ja e corrigido pelo INPC acumulado no segundo exercicio anterior ao do pagamento, com piso de 1,5 salario minimo do periodo trabalhado.",
+    "produz_efeitos": "SIM",
+    "provenance": [
+     "runtime: CF art. 239, § 3º ('para pagamento em 2025, corrigida, a partir de 2026') e § 3º-A"
+    ]
+   }
+  },
+  "ADCT:ART.27": {
+   "judicial_review": {
+    "classification": "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS",
+    "reason": "A existencia e o funcionamento dos tribunais criados pelo § 11 dependem do resultado da acao anotada; o T1 nao pode afirmar a situacao sem a decisao (PENDING_EXTERNAL_INGESTION)."
+   }
+  },
+  "ADCT:ART.101": {
+   "judicial_review": {
+    "classification": "JUDICIAL_REVIEW_CONTEXT_ONLY",
+    "reason": "A anotacao \"Vide ADI 7047; Vide ADI 7064\" esta no § 5º; a explicacao descreve o regime pelo texto vigente e nao depende do resultado das acoes, que fica na camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION)."
+   }
+  },
+  "ADCT:ART.107-A": {
+   "judicial_review": {
+    "classification": "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS",
+    "reason": "Incisos II e III e §§ 3º, 5º e 6º trazem \"Vide ADI 7064\" (e \"Vide MI 7300\"); afirmar o limite como eficaz em 2026 depende do resultado dessas acoes, nao versionado (PENDING_EXTERNAL_INGESTION)."
+   }
+  }
+ }
+}

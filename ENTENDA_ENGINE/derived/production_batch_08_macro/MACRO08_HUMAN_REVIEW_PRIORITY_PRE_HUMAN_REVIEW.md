@@ -1,0 +1,185 @@
+# MACRO08 — PRIORIDADE DA REVISÃO HUMANA
+
+Lote `ENTENDA_CF_MACRO_BATCH_08` · 179 explicações novas, todas `PENDING_HUMAN_REVIEW`. Ordem: fila (E, D, C, B, A), risco jurídico, complexidade de verificação e posição no texto. Ler de cima para baixo; o pacote de cada fila traz o detalhe.
+
+| # | Fila | Risco | Complexidade | Target | Título | Motivo principal |
+|---|---|---|---|---|---|---|
+| 1 | D | HIGH | EXTERNAL | `CF88:ART.195:PAR.15` | Art. 195, §§ 15, 16, 17, 18 e 19 — Regras da contribuição sobre bens e serviços | TEMPORAL_STATUS_UNRESOLVED |
+| 2 | D | HIGH | EXTERNAL | `CF88:ART.226:PAR.3` | Art. 226, § 3º — União estável | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS |
+| 3 | D | HIGH | EXTERNAL | `CF88:ART.228` | Art. 228 — Inimputabilidade penal do menor de 18 anos | SANCTION_WITH_INTERPRETATION |
+| 4 | D | HIGH | EXTERNAL | `CF88:ART.231:PAR.1` | Art. 231, § 1º — Terras tradicionalmente ocupadas | INTERPRETIVE_CONTROVERSY |
+| 5 | D | HIGH | EXTERNAL | `ADCT:ART.8` | ADCT, art. 8º — Anistia política | TEMPORAL_STATUS_UNRESOLVED |
+| 6 | D | HIGH | EXTERNAL | `ADCT:ART.12` | ADCT, art. 12 — Comissão de estudos territoriais e limites entre entes | TEMPORAL_STATUS_UNRESOLVED |
+| 7 | D | HIGH | EXTERNAL | `ADCT:ART.17` | ADCT, art. 17 — Redução de remunerações e acumulações protegidas | TEMPORAL_STATUS_UNRESOLVED |
+| 8 | D | HIGH | EXTERNAL | `ADCT:ART.25` | ADCT, art. 25 — Revogação de delegações ao Executivo e decretos-leis pendentes | TEMPORAL_STATUS_UNRESOLVED |
+| 9 | D | HIGH | EXTERNAL | `ADCT:ART.27` | ADCT, art. 27 — Implantação do STJ e dos Tribunais Regionais Federais | JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS, CONSTITUTIONAL_AMBIGUITY, JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS, TEMPORAL_STATUS_UNRESOLVED |
+| 10 | D | HIGH | EXTERNAL | `ADCT:ART.34` | ADCT, art. 34 — Entrada em vigor do sistema tributário de 1988 | TEMPORAL_STATUS_UNRESOLVED |
+| 11 | D | HIGH | EXTERNAL | `ADCT:ART.35` | ADCT, art. 35 — Regionalização do orçamento e prazos orçamentários provisórios | TEMPORAL_STATUS_UNRESOLVED |
+| 12 | D | HIGH | EXTERNAL | `ADCT:ART.38` | ADCT, art. 38 — Limite provisório de despesa com pessoal | TEMPORAL_STATUS_UNRESOLVED |
+| 13 | D | HIGH | EXTERNAL | `ADCT:ART.52` | ADCT, art. 52 — Restrições ao capital estrangeiro em instituições financeiras | TEMPORAL_STATUS_UNRESOLVED |
+| 14 | D | HIGH | EXTERNAL | `ADCT:ART.54-A` | ADCT, art. 54-A — Indenização aos seringueiros | TEMPORAL_STATUS_UNRESOLVED |
+| 15 | D | HIGH | EXTERNAL | `ADCT:ART.60-A` | ADCT, art. 60-A — Revisão periódica dos critérios do Fundeb | TEMPORAL_STATUS_UNRESOLVED |
+| 16 | D | HIGH | EXTERNAL | `ADCT:ART.79` | ADCT, art. 79 — Fundo de Combate e Erradicação da Pobreza | TEMPORAL_STATUS_UNRESOLVED |
+| 17 | D | HIGH | EXTERNAL | `ADCT:ART.88` | ADCT, art. 88 — Alíquota mínima do ISS | TEMPORAL_STATUS_UNRESOLVED |
+| 18 | D | HIGH | EXTERNAL | `ADCT:ART.97` | ADCT, art. 97 — Regime especial de precatórios de 2009 e atualização | TEMPORAL_STATUS_UNRESOLVED |
+| 19 | D | HIGH | EXTERNAL | `ADCT:ART.107-A` | ADCT, art. 107-A — Limite para pagamento de precatórios até 2026 | JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS |
+| 20 | D | HIGH | EXTERNAL | `ADCT:ART.126` | ADCT, art. 126 — O que muda a partir de 2027 | TEMPORAL_STATUS_UNRESOLVED |
+| 21 | D | HIGH | EXTERNAL | `ADCT:ART.135` | ADCT, art. 135 — Créditos de IPI, PIS e Cofins não usados | TEMPORAL_STATUS_UNRESOLVED |
+| 22 | D | HIGH | STRUCTURED | `ADCT:ART.35:PAR.2` | ADCT, art. 35, § 2º — Prazos do PPA, da LDO e da LOA | TEMPORAL_STATUS_UNRESOLVED |
+| 23 | C | MEDIUM | EXTERNAL | `CF88:ART.182` | Art. 182 — Política de desenvolvimento urbano | SENSITIVE_THEME |
+| 24 | C | MEDIUM | EXTERNAL | `CF88:ART.212-A` | Art. 212-A — Fundeb | SENSITIVE_THEME |
+| 25 | C | MEDIUM | EXTERNAL | `ADCT:ART.101` | ADCT, art. 101 — Regime especial de precatórios até 2029 | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, EXTERNAL_DEPENDENCY_NON_MATERIAL, JUDICIAL_REVIEW_CONTEXT_ONLY |
+| 26 | C | MEDIUM | STRUCTURED | `ADCT:ART.116` | ADCT, art. 116 — Parcelamento das dívidas dos Municípios com o INSS | SENSITIVE_THEME |
+| 27 | C | LOW | EXTERNAL | `CF88:ART.177` | Art. 177 — Monopólio da União sobre petróleo, gás e minérios nucleares | LIST_ITEM_POSSIBLY_DROPPED (ART.177:INC.II); LIST_ITEM_POSSIBLY_DROPPED (ao pagamento de… |
+| 28 | C | LOW | EXTERNAL | `CF88:ART.177:PAR.4` | Art. 177, § 4º — Contribuição sobre combustíveis | LIST_ITEM_POSSIBLY_DROPPED (ao pagamento de subsídios a preços); PERMISSION_NOT_IN_TEXT… |
+| 29 | C | LOW | STRUCTURED | `CF88:ART.194` | Art. 194 — Seguridade social | LIST_ITEM_POSSIBLY_DROPPED (ART.194:PAR.UNICO:INC.I, ART.194:PAR.UNICO:INC.V) |
+| 30 | C | LOW | STRUCTURED | `CF88:ART.195:INC.I` | Art. 195, inciso I — Contribuições do empregador e da empresa | LIST_ITEM_POSSIBLY_DROPPED (a qualquer título) |
+| 31 | C | LOW | STRUCTURED | `CF88:ART.212-A:INC.V` | Art. 212-A, inciso V — Complementação da União ao Fundeb | LIST_ITEM_POSSIBLY_DROPPED (5 (dois inteiros); LIST_ITEM_POSSIBLY_DROPPED… |
+| 32 | C | LOW | STRUCTURED | `CF88:ART.225:PAR.1` | Art. 225, § 1º — Deveres ambientais do poder público | LIST_ITEM_POSSIBLY_DROPPED (aos impostos a que se referem os arts. 155);… |
+| 33 | C | LOW | STRUCTURED | `CF88:ART.227` | Art. 227 — Proteção da criança, do adolescente e do jovem | LIST_ITEM_POSSIBLY_DROPPED (ART.227:PAR.3:INC.I) |
+| 34 | C | LOW | STRUCTURED | `CF88:ART.227:PAR.3` | Art. 227, § 3º — Proteção especial de crianças, adolescentes e jovens | LIST_ITEM_POSSIBLY_DROPPED (ao jovem dependente de entorpecentes) |
+| 35 | C | LOW | STRUCTURED | `CF88:ART.235` | Art. 235 — Normas para os dez primeiros anos de novo Estado | LIST_ITEM_POSSIBLY_DROPPED (superior a esse número) |
+| 36 | C | LOW | STRUCTURED | `ADCT:ART.53` | ADCT, art. 53 — Direitos dos ex-combatentes | LIST_ITEM_POSSIBLY_DROPPED (de valor igual à do inciso anterior) |
+| 37 | C | LOW | STRUCTURED | `ADCT:ART.60` | ADCT, art. 60 — Implantação progressiva da complementação da União ao Fundeb | LIST_ITEM_POSSIBLY_DROPPED (ART.60:PAR.1:INC.VI) |
+| 38 | B | MEDIUM | EXTERNAL | `CF88:ART.185` | Art. 185 — Imóveis que não podem ser desapropriados para reforma agrária | JURISPRUDENCE_CONTEXT_ONLY |
+| 39 | B | MEDIUM | EXTERNAL | `CF88:ART.190` | Art. 190 — Aquisição de terra rural por estrangeiros | JURISPRUDENCE_CONTEXT_ONLY |
+| 40 | B | MEDIUM | EXTERNAL | `CF88:ART.194:PAR.UNICO` | Art. 194, parágrafo único — Objetivos da seguridade social | JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED |
+| 41 | B | MEDIUM | EXTERNAL | `CF88:ART.195:PAR.7` | Art. 195, § 7º — Entidades beneficentes de assistência social | JURISPRUDENCE_CONTEXT_ONLY |
+| 42 | B | MEDIUM | EXTERNAL | `CF88:ART.196` | Art. 196 — Direito à saúde | JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED |
+| 43 | B | MEDIUM | EXTERNAL | `CF88:ART.198` | Art. 198 — Sistema único de saúde | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, JUDICIAL_REVIEW_CONTEXT_ONLY |
+| 44 | B | MEDIUM | EXTERNAL | `CF88:ART.198:PAR.12` | Art. 198, §§ 12, 13, 14 e 15 — Pisos salariais da enfermagem | JURISPRUDENCE_CONTEXT_ONLY |
+| 45 | B | MEDIUM | EXTERNAL | `CF88:ART.203:INC.V` | Art. 203, inciso V — Benefício de um salário mínimo da assistência social | JURISPRUDENCE_CONTEXT_ONLY |
+| 46 | B | MEDIUM | EXTERNAL | `CF88:ART.210` | Art. 210 — Conteúdos mínimos, ensino religioso e língua | JURISPRUDENCE_CONTEXT_ONLY |
+| 47 | B | MEDIUM | EXTERNAL | `CF88:ART.217:PAR.1` | Art. 217, §§ 1º e 2º — Justiça desportiva | JURISPRUDENCE_CONTEXT_ONLY |
+| 48 | B | MEDIUM | EXTERNAL | `CF88:ART.220` | Art. 220 — Comunicação social e liberdade de expressão | JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED |
+| 49 | B | MEDIUM | EXTERNAL | `CF88:ART.226` | Art. 226 — Família | JURISPRUDENCE_CONTEXT_ONLY |
+| 50 | B | MEDIUM | EXTERNAL | `CF88:ART.231` | Art. 231 — Direitos dos povos indígenas | JURISPRUDENCE_CONTEXT_ONLY |
+| 51 | B | MEDIUM | EXTERNAL | `CF88:ART.240` | Art. 240 — Contribuições ao sistema S | JURISPRUDENCE_CONTEXT_ONLY |
+| 52 | B | MEDIUM | EXTERNAL | `CF88:ART.243` | Art. 243 — Expropriação de terras com plantio ilegal ou trabalho escravo | JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME |
+| 53 | B | MEDIUM | EXTERNAL | `CF88:ART.245` | Art. 245 — Assistência a herdeiros e dependentes de vítimas de crime doloso | SENSITIVE_THEME |
+| 54 | B | MEDIUM | EXTERNAL | `ADCT:ART.3` | ADCT, art. 3º — Revisão constitucional (histórico) | JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED |
+| 55 | B | MEDIUM | EXTERNAL | `ADCT:ART.7` | ADCT, art. 7º — Tribunal internacional dos direitos humanos | JURISPRUDENCE_CONTEXT_ONLY |
+| 56 | B | MEDIUM | EXTERNAL | `ADCT:ART.19` | ADCT, art. 19 — Estabilidade excepcional de servidores | JURISPRUDENCE_CONTEXT_ONLY |
+| 57 | B | MEDIUM | EXTERNAL | `ADCT:ART.49` | ADCT, art. 49 — Enfiteuse | SENSITIVE_THEME |
+| 58 | B | MEDIUM | STRUCTURED | `CF88:ART.182:PAR.4` | Art. 182, § 4º — Sanções ao imóvel urbano subutilizado | SENSITIVE_THEME |
+| 59 | B | MEDIUM | STRUCTURED | `CF88:ART.198:PAR.4` | Art. 198, §§ 4º, 5º e 6º — Agentes comunitários de saúde e de combate às endemias | SENSITIVE_THEME |
+| 60 | B | MEDIUM | STRUCTURED | `CF88:ART.247` | Art. 247 — Servidores de atividades exclusivas de Estado | SENSITIVE_THEME |
+| 61 | A | LOW | EXTERNAL | `CF88:ART.177:PAR.1` | Art. 177, § 1º — Contratação de empresas no setor de petróleo e gás | sem alerta; LEGAL_RISK LOW |
+| 62 | A | LOW | EXTERNAL | `CF88:ART.179` | Art. 179 — Tratamento diferenciado das micro e pequenas empresas | sem alerta; LEGAL_RISK LOW |
+| 63 | A | LOW | EXTERNAL | `CF88:ART.181` | Art. 181 — Requisição estrangeira de documentos comerciais | sem alerta; LEGAL_RISK LOW |
+| 64 | A | LOW | EXTERNAL | `CF88:ART.192` | Art. 192 — Sistema financeiro nacional | sem alerta; LEGAL_RISK LOW |
+| 65 | A | LOW | EXTERNAL | `CF88:ART.195` | Art. 195 — Financiamento da seguridade social | sem alerta; LEGAL_RISK LOW |
+| 66 | A | LOW | EXTERNAL | `CF88:ART.198:PAR.2` | Art. 198, § 2º — Aplicação mínima de recursos em saúde | sem alerta; LEGAL_RISK LOW |
+| 67 | A | LOW | EXTERNAL | `CF88:ART.201` | Art. 201 — Regime Geral de Previdência Social | sem alerta; LEGAL_RISK LOW |
+| 68 | A | LOW | EXTERNAL | `CF88:ART.201:PAR.7` | Art. 201, § 7º — Idades para aposentadoria no regime geral | sem alerta; LEGAL_RISK LOW |
+| 69 | A | LOW | EXTERNAL | `CF88:ART.202` | Art. 202 — Previdência privada complementar | sem alerta; LEGAL_RISK LOW |
+| 70 | A | LOW | EXTERNAL | `CF88:ART.202:PAR.3` | Art. 202, § 3º — Aporte público em previdência privada | sem alerta; LEGAL_RISK LOW |
+| 71 | A | LOW | EXTERNAL | `CF88:ART.206` | Art. 206 — Princípios do ensino | sem alerta; LEGAL_RISK LOW |
+| 72 | A | LOW | EXTERNAL | `CF88:ART.208` | Art. 208 — Dever do Estado com a educação | sem alerta; LEGAL_RISK LOW |
+| 73 | A | LOW | EXTERNAL | `CF88:ART.208:INC.I` | Art. 208, inciso I — Educação básica obrigatória dos 4 aos 17 anos | sem alerta; LEGAL_RISK LOW |
+| 74 | A | LOW | EXTERNAL | `CF88:ART.212` | Art. 212 — Aplicação mínima em educação | sem alerta; LEGAL_RISK LOW |
+| 75 | A | LOW | EXTERNAL | `CF88:ART.212:PAR.5` | Art. 212, §§ 5º e 6º — Salário-educação | sem alerta; LEGAL_RISK LOW |
+| 76 | A | LOW | EXTERNAL | `CF88:ART.214` | Art. 214 — Plano nacional de educação | sem alerta; LEGAL_RISK LOW |
+| 77 | A | LOW | EXTERNAL | `CF88:ART.216` | Art. 216 — Patrimônio cultural brasileiro | sem alerta; LEGAL_RISK LOW |
+| 78 | A | LOW | EXTERNAL | `CF88:ART.237` | Art. 237 — Controle do comércio exterior | sem alerta; LEGAL_RISK LOW |
+| 79 | A | LOW | EXTERNAL | `CF88:ART.239` | Art. 239 — PIS/PASEP, seguro-desemprego e abono | sem alerta; LEGAL_RISK LOW |
+| 80 | A | LOW | EXTERNAL | `CF88:ART.239:PAR.3` | Art. 239, §§ 3º e 3º-A — Abono salarial | sem alerta; LEGAL_RISK LOW |
+| 81 | A | LOW | EXTERNAL | `CF88:ART.250` | Art. 250 — Fundo do regime geral de previdência | sem alerta; LEGAL_RISK LOW |
+| 82 | A | LOW | EXTERNAL | `ADCT:ART.40` | ADCT, art. 40 — Zona Franca de Manaus | sem alerta; LEGAL_RISK LOW |
+| 83 | A | LOW | EXTERNAL | `ADCT:ART.68` | ADCT, art. 68 — Terras das comunidades quilombolas | sem alerta; LEGAL_RISK LOW |
+| 84 | A | LOW | EXTERNAL | `ADCT:ART.76` | ADCT, art. 76 — Desvinculação de receitas da União | sem alerta; LEGAL_RISK LOW |
+| 85 | A | LOW | EXTERNAL | `ADCT:ART.82` | ADCT, art. 82 — Fundos estaduais e municipais de combate à pobreza | sem alerta; LEGAL_RISK LOW |
+| 86 | A | LOW | EXTERNAL | `ADCT:ART.87` | ADCT, art. 87 — Pequeno valor até a lei de cada ente | sem alerta; LEGAL_RISK LOW |
+| 87 | A | LOW | EXTERNAL | `ADCT:ART.92` | ADCT, art. 92 — Mais dez anos para a Zona Franca | sem alerta; LEGAL_RISK LOW |
+| 88 | A | LOW | EXTERNAL | `ADCT:ART.92-B` | ADCT, art. 92-B — Zona Franca na reforma tributária | sem alerta; LEGAL_RISK LOW |
+| 89 | A | LOW | EXTERNAL | `ADCT:ART.121` | ADCT, art. 121 — Contas antigas do PIS-PASEP | sem alerta; LEGAL_RISK LOW |
+| 90 | A | LOW | EXTERNAL | `ADCT:ART.124` | ADCT, art. 124 — Regras da passagem para o IBS e a CBS | sem alerta; LEGAL_RISK LOW |
+| 91 | A | LOW | EXTERNAL | `ADCT:ART.125` | ADCT, art. 125 — Ano de teste de 2026 | sem alerta; LEGAL_RISK LOW |
+| 92 | A | LOW | EXTERNAL | `ADCT:ART.128` | ADCT, art. 128 — Redução gradual de ICMS e ISS | sem alerta; LEGAL_RISK LOW |
+| 93 | A | LOW | EXTERNAL | `ADCT:ART.130` | ADCT, art. 130 — Alíquotas de referência do IBS e da CBS | sem alerta; LEGAL_RISK LOW |
+| 94 | A | LOW | EXTERNAL | `ADCT:ART.131` | ADCT, art. 131 — Distribuição do IBS de 2029 a 2077 | sem alerta; LEGAL_RISK LOW |
+| 95 | A | LOW | EXTERNAL | `ADCT:ART.134` | ADCT, art. 134 — Créditos acumulados de ICMS | sem alerta; LEGAL_RISK LOW |
+| 96 | A | LOW | EXTERNAL | `ADCT:ART.138` | ADCT, art. 138 — Limite para novas vinculações de receita | sem alerta; LEGAL_RISK LOW |
+| 97 | A | LOW | STRUCTURED | `CF88:ART.176` | Art. 176 — Recursos minerais e potenciais hidráulicos | sem alerta; LEGAL_RISK LOW |
+| 98 | A | LOW | STRUCTURED | `CF88:ART.176:PAR.1` | Art. 176, § 1º — Quem pode pesquisar e explorar minérios | sem alerta; LEGAL_RISK LOW |
+| 99 | A | LOW | STRUCTURED | `CF88:ART.178` | Art. 178 — Ordenação dos transportes | sem alerta; LEGAL_RISK LOW |
+| 100 | A | LOW | STRUCTURED | `CF88:ART.180` | Art. 180 — Incentivo ao turismo | sem alerta; LEGAL_RISK LOW |
+| 101 | A | LOW | STRUCTURED | `CF88:ART.183` | Art. 183 — Usucapião especial urbana | sem alerta; LEGAL_RISK LOW |
+| 102 | A | LOW | STRUCTURED | `CF88:ART.184` | Art. 184 — Desapropriação para reforma agrária | sem alerta; LEGAL_RISK LOW |
+| 103 | A | LOW | STRUCTURED | `CF88:ART.186` | Art. 186 — Função social da propriedade rural | sem alerta; LEGAL_RISK LOW |
+| 104 | A | LOW | STRUCTURED | `CF88:ART.187` | Art. 187 — Política agrícola | sem alerta; LEGAL_RISK LOW |
+| 105 | A | LOW | STRUCTURED | `CF88:ART.188` | Art. 188 — Destinação de terras públicas e devolutas | sem alerta; LEGAL_RISK LOW |
+| 106 | A | LOW | STRUCTURED | `CF88:ART.189` | Art. 189 — Títulos dos beneficiários da reforma agrária | sem alerta; LEGAL_RISK LOW |
+| 107 | A | LOW | STRUCTURED | `CF88:ART.191` | Art. 191 — Usucapião especial rural | sem alerta; LEGAL_RISK LOW |
+| 108 | A | LOW | STRUCTURED | `CF88:ART.193` | Art. 193 — Base e objetivo da ordem social | sem alerta; LEGAL_RISK LOW |
+| 109 | A | LOW | STRUCTURED | `CF88:ART.195:PAR.6` | Art. 195, § 6º — Noventena das contribuições da seguridade | sem alerta; LEGAL_RISK LOW |
+| 110 | A | LOW | STRUCTURED | `CF88:ART.195:PAR.8` | Art. 195, § 8º — Segurado especial rural e pescador artesanal | sem alerta; LEGAL_RISK LOW |
+| 111 | A | LOW | STRUCTURED | `CF88:ART.195:PAR.14` | Art. 195, § 14 — Contribuição mínima e tempo de contribuição | sem alerta; LEGAL_RISK LOW |
+| 112 | A | LOW | STRUCTURED | `CF88:ART.197` | Art. 197 — Relevância pública das ações de saúde | sem alerta; LEGAL_RISK LOW |
+| 113 | A | LOW | STRUCTURED | `CF88:ART.198:PAR.7` | Art. 198, §§ 7º, 8º, 9º, 10 e 11 — Vencimento dos agentes comunitários e de endemias | sem alerta; LEGAL_RISK LOW |
+| 114 | A | LOW | STRUCTURED | `CF88:ART.199` | Art. 199 — Participação da iniciativa privada na saúde | sem alerta; LEGAL_RISK LOW |
+| 115 | A | LOW | STRUCTURED | `CF88:ART.200` | Art. 200 — Atribuições do sistema único de saúde | sem alerta; LEGAL_RISK LOW |
+| 116 | A | LOW | STRUCTURED | `CF88:ART.201:PAR.1` | Art. 201, § 1º — Proibição de critérios diferenciados e suas exceções | sem alerta; LEGAL_RISK LOW |
+| 117 | A | LOW | STRUCTURED | `CF88:ART.201:PAR.2` | Art. 201, § 2º — Piso dos benefícios previdenciários | sem alerta; LEGAL_RISK LOW |
+| 118 | A | LOW | STRUCTURED | `CF88:ART.201:PAR.9` | Art. 201, §§ 9º e 9º-A — Contagem recíproca de tempo de contribuição | sem alerta; LEGAL_RISK LOW |
+| 119 | A | LOW | STRUCTURED | `CF88:ART.201:PAR.12` | Art. 201, §§ 12 e 13 — Sistema especial de inclusão previdenciária | sem alerta; LEGAL_RISK LOW |
+| 120 | A | LOW | STRUCTURED | `CF88:ART.203` | Art. 203 — Assistência social | sem alerta; LEGAL_RISK LOW |
+| 121 | A | LOW | STRUCTURED | `CF88:ART.204` | Art. 204 — Financiamento e diretrizes da assistência social | sem alerta; LEGAL_RISK LOW |
+| 122 | A | LOW | STRUCTURED | `CF88:ART.205` | Art. 205 — Direito à educação | sem alerta; LEGAL_RISK LOW |
+| 123 | A | LOW | STRUCTURED | `CF88:ART.207` | Art. 207 — Autonomia universitária | sem alerta; LEGAL_RISK LOW |
+| 124 | A | LOW | STRUCTURED | `CF88:ART.208:PAR.1` | Art. 208, §§ 1º e 2º — Direito público subjetivo e responsabilidade | sem alerta; LEGAL_RISK LOW |
+| 125 | A | LOW | STRUCTURED | `CF88:ART.209` | Art. 209 — Ensino privado | sem alerta; LEGAL_RISK LOW |
+| 126 | A | LOW | STRUCTURED | `CF88:ART.211` | Art. 211 — Sistemas de ensino em regime de colaboração | sem alerta; LEGAL_RISK LOW |
+| 127 | A | LOW | STRUCTURED | `CF88:ART.213` | Art. 213 — Destinação de recursos públicos à educação | sem alerta; LEGAL_RISK LOW |
+| 128 | A | LOW | STRUCTURED | `CF88:ART.215` | Art. 215 — Direitos culturais | sem alerta; LEGAL_RISK LOW |
+| 129 | A | LOW | STRUCTURED | `CF88:ART.216-A` | Art. 216-A — Sistema Nacional de Cultura | sem alerta; LEGAL_RISK LOW |
+| 130 | A | LOW | STRUCTURED | `CF88:ART.217` | Art. 217 — Desporto | sem alerta; LEGAL_RISK LOW |
+| 131 | A | LOW | STRUCTURED | `CF88:ART.218` | Art. 218 — Ciência, tecnologia e inovação | sem alerta; LEGAL_RISK LOW |
+| 132 | A | LOW | STRUCTURED | `CF88:ART.219` | Art. 219 — Mercado interno e inovação | sem alerta; LEGAL_RISK LOW |
+| 133 | A | LOW | STRUCTURED | `CF88:ART.219-A` | Art. 219-A — Cooperação para pesquisa e inovação | sem alerta; LEGAL_RISK LOW |
+| 134 | A | LOW | STRUCTURED | `CF88:ART.219-B` | Art. 219-B — Sistema Nacional de Ciência, Tecnologia e Inovação | sem alerta; LEGAL_RISK LOW |
+| 135 | A | LOW | STRUCTURED | `CF88:ART.220:PAR.3` | Art. 220, §§ 3º e 4º — Classificação indicativa e restrições à propaganda | sem alerta; LEGAL_RISK LOW |
+| 136 | A | LOW | STRUCTURED | `CF88:ART.221` | Art. 221 — Princípios da programação de rádio e televisão | sem alerta; LEGAL_RISK LOW |
+| 137 | A | LOW | STRUCTURED | `CF88:ART.222` | Art. 222 — Propriedade de empresas jornalísticas e de radiodifusão | sem alerta; LEGAL_RISK LOW |
+| 138 | A | LOW | STRUCTURED | `CF88:ART.223` | Art. 223 — Concessões de rádio e televisão | sem alerta; LEGAL_RISK LOW |
+| 139 | A | LOW | STRUCTURED | `CF88:ART.224` | Art. 224 — Conselho de Comunicação Social | sem alerta; LEGAL_RISK LOW |
+| 140 | A | LOW | STRUCTURED | `CF88:ART.229` | Art. 229 — Deveres recíprocos entre pais e filhos | sem alerta; LEGAL_RISK LOW |
+| 141 | A | LOW | STRUCTURED | `CF88:ART.230` | Art. 230 — Proteção da pessoa idosa | sem alerta; LEGAL_RISK LOW |
+| 142 | A | LOW | STRUCTURED | `CF88:ART.231:PAR.3` | Art. 231, § 3º — Recursos hídricos e minerais em terras indígenas | sem alerta; LEGAL_RISK LOW |
+| 143 | A | LOW | STRUCTURED | `CF88:ART.232` | Art. 232 — Legitimidade processual dos índios | sem alerta; LEGAL_RISK LOW |
+| 144 | A | LOW | STRUCTURED | `CF88:ART.234` | Art. 234 — Encargos na criação de Estado | sem alerta; LEGAL_RISK LOW |
+| 145 | A | LOW | STRUCTURED | `CF88:ART.236` | Art. 236 — Serviços notariais e de registro | sem alerta; LEGAL_RISK LOW |
+| 146 | A | LOW | STRUCTURED | `CF88:ART.238` | Art. 238 — Venda e revenda de combustíveis | sem alerta; LEGAL_RISK LOW |
+| 147 | A | LOW | STRUCTURED | `CF88:ART.241` | Art. 241 — Consórcios públicos e convênios de cooperação | sem alerta; LEGAL_RISK LOW |
+| 148 | A | LOW | STRUCTURED | `CF88:ART.242` | Art. 242 — Exceção à gratuidade e outras regras de ensino | sem alerta; LEGAL_RISK LOW |
+| 149 | A | LOW | STRUCTURED | `CF88:ART.244` | Art. 244 — Adaptação de prédios e veículos para pessoas com deficiência | sem alerta; LEGAL_RISK LOW |
+| 150 | A | LOW | STRUCTURED | `CF88:ART.246` | Art. 246 — Limite às medidas provisórias | sem alerta; LEGAL_RISK LOW |
+| 151 | A | LOW | STRUCTURED | `CF88:ART.248` | Art. 248 — Teto para benefícios pagos pelo regime geral | sem alerta; LEGAL_RISK LOW |
+| 152 | A | LOW | STRUCTURED | `CF88:ART.249` | Art. 249 — Fundos para aposentadorias dos servidores | sem alerta; LEGAL_RISK LOW |
+| 153 | A | LOW | STRUCTURED | `ADCT:ART.18-A` | ADCT, art. 18-A — Convalidação de atos da instalação do Tocantins | sem alerta; LEGAL_RISK LOW |
+| 154 | A | LOW | STRUCTURED | `ADCT:ART.42` | ADCT, art. 42 — Aplicação regional dos recursos de irrigação | sem alerta; LEGAL_RISK LOW |
+| 155 | A | LOW | STRUCTURED | `ADCT:ART.46` | ADCT, art. 46 — Correção monetária de créditos contra entidades em liquidação | sem alerta; LEGAL_RISK LOW |
+| 156 | A | LOW | STRUCTURED | `ADCT:ART.54` | ADCT, art. 54 — Pensão dos seringueiros | sem alerta; LEGAL_RISK LOW |
+| 157 | A | LOW | STRUCTURED | `ADCT:ART.64` | ADCT, art. 64 — Edição popular da Constituição | sem alerta; LEGAL_RISK LOW |
+| 158 | A | LOW | STRUCTURED | `ADCT:ART.69` | ADCT, art. 69 — Consultorias jurídicas dos Estados | sem alerta; LEGAL_RISK LOW |
+| 159 | A | LOW | STRUCTURED | `ADCT:ART.76-A` | ADCT, art. 76-A — Desvinculação de receitas dos Estados e do DF | sem alerta; LEGAL_RISK LOW |
+| 160 | A | LOW | STRUCTURED | `ADCT:ART.76-B` | ADCT, art. 76-B — Desvinculação de receitas dos Municípios | sem alerta; LEGAL_RISK LOW |
+| 161 | A | LOW | STRUCTURED | `ADCT:ART.83` | ADCT, art. 83 — Definição de produtos e serviços supérfluos | sem alerta; LEGAL_RISK LOW |
+| 162 | A | LOW | STRUCTURED | `ADCT:ART.92-A` | ADCT, art. 92-A — Mais cinquenta anos para a Zona Franca | sem alerta; LEGAL_RISK LOW |
+| 163 | A | LOW | STRUCTURED | `ADCT:ART.98` | ADCT, art. 98 — Defensores públicos proporcionais à demanda | sem alerta; LEGAL_RISK LOW |
+| 164 | A | LOW | STRUCTURED | `ADCT:ART.99` | ADCT, art. 99 — Partilha do ICMS nas vendas a consumidor de outro Estado | sem alerta; LEGAL_RISK LOW |
+| 165 | A | LOW | STRUCTURED | `ADCT:ART.102` | ADCT, art. 102 — Ordem de pagamento no regime especial | sem alerta; LEGAL_RISK LOW |
+| 166 | A | LOW | STRUCTURED | `ADCT:ART.103` | ADCT, art. 103 — Proteções e limites durante o regime especial | sem alerta; LEGAL_RISK LOW |
+| 167 | A | LOW | STRUCTURED | `ADCT:ART.104` | ADCT, art. 104 — Sanções pela falta de repasse no regime especial | sem alerta; LEGAL_RISK LOW |
+| 168 | A | LOW | STRUCTURED | `ADCT:ART.105` | ADCT, art. 105 — Compensação de precatórios com dívida ativa | sem alerta; LEGAL_RISK LOW |
+| 169 | A | LOW | STRUCTURED | `ADCT:ART.113` | ADCT, art. 113 — Impacto orçamentário de novas despesas | sem alerta; LEGAL_RISK LOW |
+| 170 | A | LOW | STRUCTURED | `ADCT:ART.115` | ADCT, art. 115 — Parcelamento de dívidas com regimes próprios | sem alerta; LEGAL_RISK LOW |
+| 171 | A | LOW | STRUCTURED | `ADCT:ART.116-A` | ADCT, art. 116-A — Parcelamento das dívidas de consórcios públicos | sem alerta; LEGAL_RISK LOW |
+| 172 | A | LOW | STRUCTURED | `ADCT:ART.117` | ADCT, art. 117 — Formalização dos parcelamentos e garantia pelo FPM | sem alerta; LEGAL_RISK LOW |
+| 173 | A | LOW | STRUCTURED | `ADCT:ART.127` | ADCT, art. 127 — Alíquotas de 2027 e 2028 | sem alerta; LEGAL_RISK LOW |
+| 174 | A | LOW | STRUCTURED | `ADCT:ART.129` | ADCT, art. 129 — Extinção do ICMS e do ISS | sem alerta; LEGAL_RISK LOW |
+| 175 | A | LOW | STRUCTURED | `ADCT:ART.132` | ADCT, art. 132 — Retenção de 5% para entes com menor receita relativa | sem alerta; LEGAL_RISK LOW |
+| 176 | A | LOW | STRUCTURED | `ADCT:ART.133` | ADCT, art. 133 — Tributos antigos fora da base do IBS e da CBS | sem alerta; LEGAL_RISK LOW |
+| 177 | A | LOW | STRUCTURED | `ADCT:ART.136` | ADCT, art. 136 — Contribuições estaduais para infraestrutura e habitação | sem alerta; LEGAL_RISK LOW |
+| 178 | A | LOW | SIMPLE | `CF88:ART.195:PAR.5` | Art. 195, § 5º — Benefício só com fonte de custeio | sem alerta; LEGAL_RISK LOW |
+| 179 | A | LOW | SIMPLE | `CF88:ART.227:PAR.6` | Art. 227, § 6º — Igualdade entre os filhos | sem alerta; LEGAL_RISK LOW |

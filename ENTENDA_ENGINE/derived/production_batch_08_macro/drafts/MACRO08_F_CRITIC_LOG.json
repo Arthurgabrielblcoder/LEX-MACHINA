@@ -1,0 +1,197 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "F",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "ADCT:ART.68",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 68 do ADCT reconhece aos remanescentes das comunidades dos quilombos que estejam ocupando suas terras a propriedade definitiva dessas áreas.",
+   "after": "O art. 68 do ADCT reconhece a propriedade definitiva das terras ocupadas pelos remanescentes das comunidades dos quilombos, desde que estejam nelas."
+  },
+  {
+   "target_id": "ADCT:ART.76",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 76 do ADCT libera de vinculação a órgão, fundo ou despesa, até 31 de dezembro de 2032, 30% da arrecadação",
+   "after": "O art. 76 do ADCT libera de vinculação a órgão, fundo ou despesa 30% da arrecadação"
+  },
+  {
+   "target_id": "ADCT:ART.76",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "receitas patrimoniais, existentes ou criadas até essa data.",
+   "after": "receitas patrimoniais, existentes ou criadas até 31 de dezembro de 2032, data final da medida."
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 76-A do ADCT libera de vinculação a órgão, fundo ou despesa, até 31 de dezembro de 2032, 30% das receitas",
+   "after": "O art. 76-A do ADCT libera de vinculação a órgão, fundo ou despesa 30% das receitas"
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "existentes ou criados até essa data, com adicionais",
+   "after": "existentes ou criados até 31 de dezembro de 2032, data final da medida, com adicionais"
+  },
+  {
+   "target_id": "ADCT:ART.76-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O percentual é de 50% até 31 de dezembro de 2026 e de 30% de 1º de janeiro de 2027 a 31 de dezembro de 2032.",
+   "after": "O percentual é de 50% até 31 de dezembro de 2026. Entre 1º de janeiro de 2027 e o fim de 2032, passa a 30%."
+  },
+  {
+   "target_id": "ADCT:ART.79",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 79 do ADCT criou, no Poder Executivo Federal, o Fundo de Combate e Erradicação da Pobreza, com vigência prevista até 2010 e regulação por lei complementar.",
+   "after": "O art. 79 do ADCT criou o Fundo de Combate e Erradicação da Pobreza, no âmbito do Executivo da União, com vigência prevista até 2010 e regulação por lei complementar."
+  },
+  {
+   "target_id": "ADCT:ART.79",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Os recursos vão para ações suplementares de nutrição, habitação, educação, saúde, reforço de renda familiar e outros programas sociais.",
+   "after": "Os recursos vão para ações suplementares em áreas como alimentação, moradia, educação e saúde, para complementar a renda das famílias e para outros programas de interesse social."
+  },
+  {
+   "target_id": "ADCT:ART.87",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O limite é de quarenta salários-mínimos perante a Fazenda dos Estados e do Distrito Federal (inciso I) e de trinta salários-mínimos perante a Fazenda dos Municípios (inciso II).",
+   "after": "Para débitos dos Estados e do Distrito Federal, o limite é de quarenta salários-mínimos (inciso I); para débitos dos Municípios, de trinta salários-mínimos (inciso II)."
+  },
+  {
+   "target_id": "ADCT:ART.64",
+   "section": "o_que_significa",
+   "category": "AFIRMACAO_UNIVERSAL",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Quantificador universal substituido pela enumeracao do texto.",
+   "before": "sobre as gráficas oficiais de todos os entes da Federação, e não apenas da União.",
+   "after": "sobre as gráficas oficiais da União, dos Estados, do Distrito Federal e dos Municípios."
+  },
+  {
+   "target_id": "ADCT:ART.69",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Ano trocado pela referencia do texto (data da promulgacao).",
+   "before": "preservar estruturas que já existiam em 1988.",
+   "after": "preservar estruturas que já existiam na promulgação."
+  },
+  {
+   "target_id": "ADCT:ART.69",
+   "section": "exemplo_pratico",
+   "category": "NUMERO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Idem.",
+   "before": "Um Estado que, em 1988, já tinha",
+   "after": "Um Estado que, na data da promulgação, já tinha"
+  },
+  {
+   "target_id": "ADCT:ART.69",
+   "section": "atencao",
+   "category": "NUMERO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Data dispensavel removida (EXTRAPOLATION_NUMBER).",
+   "before": " A data da promulgação é 5 de outubro de 1988.",
+   "after": ""
+  },
+  {
+   "target_id": "ADCT:ART.76",
+   "section": "o_que_diz",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Termo \"ressalva\" substituido pela formula do texto (\"sem prejuizo\").",
+   "before": "O caput ressalva o pagamento das despesas do Regime Geral de Previdência Social.",
+   "after": "A medida não prejudica o pagamento das despesas do Regime Geral de Previdência Social."
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "com adicionais e acréscimos legais, além de outras receitas correntes. O parágrafo único",
+   "after": "com adicionais e acréscimos legais. Também alcança outras receitas correntes. O parágrafo único"
+  },
+  {
+   "target_id": "ADCT:ART.76-A",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Termo alinhado ao texto (\"Excetuam-se\").",
+   "before": "As exceções preservam os pisos",
+   "after": "Os itens excluídos preservam os pisos"
+  },
+  {
+   "target_id": "ADCT:ART.83",
+   "section": "exemplo_pratico",
+   "category": "AFIRMACAO_UNIVERSAL",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Restricao reformulada sem \"so pode\".",
+   "before": "Ele só pode cobrá-lo sobre serviços que a lei federal classifique como supérfluos.",
+   "after": "O adicional incide sobre os serviços que a lei federal classifique como supérfluos."
+  },
+  {
+   "target_id": "ADCT:ART.87",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Modalidade atribuida ao texto (\"observado o disposto\").",
+   "before": "Deve ser observado o art. 100, § 4º.",
+   "after": "O artigo manda observar o art. 100, § 4º."
+  },
+  {
+   "target_id": "ADCT:ART.79",
+   "section": "o_que_significa",
+   "category": "NUCLEO_TEMPORAL",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Mencao a emenda no nucleo (TRANSITION_IN_CORE) reformulada.",
+   "before": "O próprio texto oficial traz uma nota de remissão a uma emenda constitucional de dezembro de 2010; o conteúdo dessa emenda não está na base versionada deste lote.",
+   "after": "O próprio texto oficial traz uma nota que remete a uma alteração constitucional de dezembro de 2010; o conteúdo dessa alteração não está na base versionada deste lote."
+  },
+  {
+   "target_id": "ADCT:ART.88",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada no texto removida.",
+   "before": "O artigo procura evitar a disputa entre Municípios para atrair empresas com imposto muito baixo.\n",
+   "after": "O piso impede a cobrança do imposto abaixo de dois por cento, salvo nos serviços excepcionados.\n"
+  },
+  {
+   "target_id": "ADCT:ART.88",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elementos dos incisos I e II restaurados.",
+   "before": "Decreto-Lei nº 406, de 1968 (inciso I). Além disso, não pode haver isenção, incentivo ou benefício fiscal que leve, direta ou indiretamente, a alíquota abaixo desse mínimo (inciso II).",
+   "after": "Decreto-Lei nº 406, editado em 31 de dezembro de 1968 (inciso I). Além disso, o imposto não pode ser objeto de concessão de isenções, incentivos ou benefícios fiscais capazes de levar, direta ou indiretamente, a alíquota abaixo desse mínimo (inciso II)."
+  }
+ ]
+}

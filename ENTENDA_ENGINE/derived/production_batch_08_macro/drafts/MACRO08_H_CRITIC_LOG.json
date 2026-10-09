@@ -1,0 +1,170 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "H",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "ADCT:ART.116",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "dos Municípios, de suas autarquias e fundações, com o Regime Geral de Previdência Social, vencidos",
+   "after": "devidas ao Regime Geral de Previdência Social pelos Municípios e por suas autarquias e fundações, vencidos"
+  },
+  {
+   "target_id": "ADCT:ART.116-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "dos débitos de contribuições previdenciárias com o Regime Geral de Previdência Social, até 31 de agosto de 2025.",
+   "after": "dos débitos de contribuições previdenciárias devidas ao Regime Geral de Previdência Social, alcançando os débitos até 31 de agosto de 2025."
+  },
+  {
+   "target_id": "ADCT:ART.134",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Alcança os saldos admitidos pela legislação em vigor em 31 de dezembro de 2032 e homologados pelo ente;",
+   "after": "Alcança os saldos cujo aproveitamento ou ressarcimento a legislação vigente no último dia de 2032 admita e que o ente tenha homologado;"
+  },
+  {
+   "target_id": "ADCT:ART.138",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "nenhuma criação, alteração ou prorrogação de vinculação legal ou constitucional de receitas a despesas, inclusive as de aplicação mínima, resulte",
+   "after": "a criação, a alteração ou a prorrogação de vinculações de receitas a despesas, sejam legais ou constitucionais, inclusive as de aplicação mínima, não resulte"
+  },
+  {
+   "target_id": "ADCT:ART.116",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Formas de quitacao antecipada do § 12 enumeradas, com as exigencias de lei especifica e aceite.",
+   "before": "O § 12 lista formas de quitação antecipada.",
+   "after": "O § 12 lista formas de quitação antecipada: pagamento em dinheiro; transferência à União de participações societárias, com leis específicas da União e do Município; transferência de bens, com aceite das partes e lei específica municipal; e cessões de créditos e outros ativos. Entre estas estão a transferência de créditos do Município com a União, os recebíveis da dívida ativa e da compensação financeira por exploração de recursos naturais, e outros ativos aceitos em comum acordo."
+  },
+  {
+   "target_id": "ADCT:ART.116-A",
+   "section": "exemplo_pratico",
+   "category": "DATA",
+   "detector": "V3_DATE_OR_YEAR_NOT_IN_TEXT",
+   "reason": "Ano fora do texto trocado pela data-limite do texto.",
+   "before": "tem contribuições previdenciárias atrasadas de 2024.",
+   "after": "tem contribuições previdenciárias atrasadas, vencidas antes de 31 de agosto de 2025."
+  },
+  {
+   "target_id": "ADCT:ART.125",
+   "section": "o_que_diz",
+   "category": "REMISSAO_EXTERNA",
+   "detector": "V3_EXTERNAL_NORMATIVE_CONTENT_CLAIM",
+   "reason": "Frase de abertura separada dos numeros (falso positivo de conteudo normativo externo na remissao ao proprio artigo).",
+   "before": "O art. 125 do ADCT determina que, em 2026, o imposto do art. 156-A seja cobrado com alíquota estadual de 0,1% e a contribuição do art. 195, V, com alíquota de 0,9%.",
+   "after": "O art. 125 do ADCT trata do ano de 2026. Nesse ano, o imposto do art. 156-A é cobrado com alíquota estadual de 0,1%, e a contribuição do art. 195, V, com alíquota de 0,9%."
+  },
+  {
+   "target_id": "ADCT:ART.121",
+   "section": "o_que_diz",
+   "category": "REMISSAO_EXTERNA",
+   "detector": "V3_EXTERNAL_NORMATIVE_CONTENT_CLAIM",
+   "reason": "Remissao a lei civil descrita sem afirmar conteudo externo (o texto cita a regra de abandono).",
+   "before": "os valores são considerados abandonados, nos termos do Código Civil, e passam",
+   "after": "os valores são considerados abandonados, na forma da lei civil indicada no texto, e passam"
+  },
+  {
+   "target_id": "ADCT:ART.127",
+   "section": "o_que_significa",
+   "category": "DATA",
+   "detector": "V3_DATE_OR_YEAR_NOT_IN_TEXT",
+   "reason": "Ano de outro artigo removido.",
+   "before": "É uma fase de preparação para a redução gradual do ICMS e do ISS a partir de 2029.",
+   "after": "Depois desse período vem a redução gradual do ICMS e do ISS, tratada no art. 128."
+  },
+  {
+   "target_id": "ADCT:ART.127",
+   "section": "atencao",
+   "category": "DATA",
+   "detector": "V3_DATE_OR_YEAR_NOT_IN_TEXT",
+   "reason": "Dia e mes nao constam do texto.",
+   "before": "O artigo produz efeitos a partir de 1º de janeiro de 2027, data fixada no próprio texto.",
+   "after": "O artigo produz efeitos a partir de 2027, ano fixado no próprio texto."
+  },
+  {
+   "target_id": "ADCT:ART.130",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do texto (\"sobre operacoes de seguro\") restaurado.",
+   "before": "com IPI, PIS, Cofins e IOF-seguros;",
+   "after": "com IPI, PIS, Cofins e o imposto federal sobre operações de seguro;"
+  },
+  {
+   "target_id": "ADCT:ART.130",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "V3_RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Excecao do inciso II, b, incluida.",
+   "before": "com o ICMS e certos fundos estaduais;",
+   "after": "com o ICMS e certos fundos estaduais, excetuadas as receitas dos fundos mantidos pelo art. 136;"
+  },
+  {
+   "target_id": "ADCT:ART.130",
+   "section": "atencao",
+   "category": "TERMO_TECNICO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Termo tecnico substituido por descricao.",
+   "before": "sem a regra da noventena do art. 150, III, c.",
+   "after": "sem a espera de noventa dias do art. 150, III, c."
+  },
+  {
+   "target_id": "ADCT:ART.132",
+   "section": "atencao",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada removida; ano de outro artigo removido.",
+   "before": "A retenção opera junto com a distribuição do art. 131, que começa em 2029. O limite de três vezes a média nacional por habitante evita distorções.",
+   "after": "A retenção opera junto com a distribuição do art. 131. A receita média considerada tem como teto três vezes a média nacional por habitante."
+  },
+  {
+   "target_id": "ADCT:ART.133",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade reformulada como efeito do texto.",
+   "before": "O artigo evita tributo sobre tributo durante o período em que os sistemas antigo e novo convivem.",
+   "after": "Pela regra, o valor dos tributos antigos fica fora do cálculo dos novos enquanto os dois sistemas convivem."
+  },
+  {
+   "target_id": "ADCT:ART.134",
+   "section": "atencao",
+   "category": "NUMERO",
+   "detector": "V3_NUMBER_NOT_IN_TEXT",
+   "reason": "Codigo da anomalia (com digitos) mantido so na camada externa.",
+   "before": "O texto do § 4º aparece incompleto na fonte versionada (anomalia registrada MB08-SRC-03);",
+   "after": "O texto do § 4º aparece incompleto na fonte versionada (anomalia de fonte registrada neste lote);"
+  },
+  {
+   "target_id": "ADCT:ART.136",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Inciso II descrito com os elementos do texto.",
+   "before": "A nova contribuição extingue a anterior vinculada ao ICMS (inciso II),",
+   "after": "A instituição da nova contribuição implica a extinção da anterior, vinculada ao ICMS (inciso II),"
+  },
+  {
+   "target_id": "ADCT:ART.138",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O art. 138 do ADCT determina que, até 2032, a criação, a alteração ou a prorrogação de vinculações de receitas a despesas, sejam legais ou constitucionais, inclusive as de aplicação mínima, não resulte em crescimento anual da despesa primária correspondente acima da variação do limite de despesas primárias.",
+   "after": "O art. 138 do ADCT vale até 2032 e trata da criação, da alteração ou da prorrogação de vinculações de receitas a despesas, sejam legais ou constitucionais, inclusive as de aplicação mínima. Essas medidas não podem fazer a despesa primária correspondente crescer, a cada ano, acima da variação do limite de despesas primárias."
+  }
+ ]
+}
