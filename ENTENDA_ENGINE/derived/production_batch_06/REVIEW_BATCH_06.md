@@ -3461,12 +3461,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 69 — Quórum da lei complementar
 
-- **TARGET:** `CF88:ART.69` · `ENTENDA/CF88:ART.69/BASE/1`
+- **TARGET:** `CF88:ART.69` · `ENTENDA/CF88:ART.69/BASE/2`
 - **DISPLAY TITLE:** Art. 69 — Quórum da lei complementar
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1647 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1836 bytes · referências 0
 - **Motivo da seleção:** Artigo de caput unico com regra de quorum que define a lei complementar.
 
 **O QUE DIZ**
@@ -3475,19 +3475,21 @@ O art. 69 estabelece que as leis complementares sejam aprovadas por maioria abso
 
 **O QUE SIGNIFICA**
 
-A lei complementar se distingue da lei ordinária por dois elementos. O primeiro é a matéria: só é exigida quando a Constituição a menciona expressamente. O segundo é o quórum: maioria absoluta, isto é, mais da metade do total de membros de cada Casa.
+O art. 69 estabelece o quórum exigido para a aprovação das leis complementares: maioria absoluta.
 
-A lei ordinária, por sua vez, é aprovada por maioria simples, presente a maioria absoluta dos membros (art. 47).
+Maioria absoluta significa mais da metade do número total de membros da Casa que estiver deliberando, e não apenas mais da metade dos presentes.
 
-Por isso a lei complementar é mais difícil de aprovar e de alterar.
+O art. 69 não define quais matérias precisam ser tratadas por lei complementar. Essa exigência aparece em outros dispositivos da própria Constituição.
+
+O art. 47 contém a regra geral das deliberações legislativas, ressalvando expressamente as situações em que a Constituição exige quórum diferente, como ocorre aqui.
 
 **EXEMPLO PRÁTICO**
 
-Um projeto de lei complementar precisa de votos favoráveis de mais da metade de todos os deputados, ainda que nem todos estejam presentes, e depois de mais da metade de todos os senadores.
+Na Câmara dos Deputados, um projeto de lei complementar somente é aprovado se obtiver votos favoráveis da maioria absoluta dos deputados. Quando o Senado deliberar sobre o projeto, também deverá ser alcançada a maioria absoluta dos seus membros.
 
 **ATENÇÃO**
 
-O quórum de maioria absoluta é para aprovar; a lei complementar também tem matéria própria. Se uma lei ordinária pode tratar de tema não reservado que esteja em lei complementar é questão de interpretação constitucional.
+O art. 69 trata do quórum de aprovação. A relação entre lei complementar e lei ordinária, inclusive a possibilidade de lei ordinária modificar conteúdo inserido em lei formalmente complementar, pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3499,9 +3501,9 @@ O quórum de maioria absoluta é para aprovar; a lei complementar também tem ma
 
 - A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um projeto de lei complementar precisa de votos favoráveis d)
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Quando o Senado deliberar sobre o projeto, também deverá ser)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo (maioria absoluta) correto. Retirados: a ideia de que o art. 69 define as materias reservadas a lei complementar, a afirmacao de que ela e necessariamente "mais dificil de alterar" e o exemplo com ordem obrigatoria Camara -> Senado. O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos; nenhuma hierarquia geral entre lei complementar e lei ordinaria afirmada. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -3743,29 +3745,29 @@ Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efei
 
 ### Art. 71, inciso III — Registro de admissões e aposentadorias
 
-- **TARGET:** `CF88:ART.71:INC.III` · `ENTENDA/CF88:ART.71:INC.III/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.III` · `ENTENDA/CF88:ART.71:INC.III/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso III — Registro de admissões e aposentadorias
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1859 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 221 palavras · 2032 bytes · referências 0
 - **Motivo da seleção:** Inciso com excecao (cargos em comissao) e ressalva (melhorias posteriores); tema de alto impacto previdenciario.
 
 **O QUE DIZ**
 
-O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em comissão. Também examina a legalidade das concessões de aposentadorias, reformas e pensões, ficando de fora as melhorias posteriores que não mudem o fundamento legal da concessão.
+O inciso III atribui ao Tribunal a apreciação, para fins de registro, da legalidade das admissões de pessoal feitas a qualquer título pela administração direta e indireta, inclusive pelas fundações instituídas e mantidas pelo poder público. Ficam fora dessa regra as nomeações para cargos em comissão. O dispositivo também alcança concessões de aposentadorias, reformas e pensões, mas não as melhorias posteriores que mantenham o fundamento legal da concessão.
 
 **O QUE SIGNIFICA**
 
-O Tribunal confere se a admissão de servidores e a concessão de aposentadorias e pensões respeitaram a lei, e só então as registra.
+O Tribunal verifica a legalidade desses atos para decidir sobre o respectivo registro.
 
-Há duas exclusões no texto. As nomeações para cargos em comissão, de livre nomeação e exoneração, não passam por esse registro. E melhorias posteriores no benefício também não, desde que não alterem a base legal da concessão.
+O próprio inciso estabelece duas ressalvas importantes: as nomeações para cargos em comissão não são submetidas a esse registro, e melhorias posteriores em aposentadorias, reformas ou pensões ficam fora dessa apreciação quando não alteram o fundamento legal da concessão.
 
-Se o Tribunal considerar o ato ilegal, nega o registro, e o órgão de origem deve corrigi-lo.
+Este inciso não disciplina, sozinho, todas as consequências posteriores de uma eventual conclusão pela ilegalidade do ato.
 
 **EXEMPLO PRÁTICO**
 
-Um servidor federal se aposenta, e o ato é enviado ao Tribunal. Constatado erro no cálculo, o Tribunal nega o registro, e o órgão precisa rever o valor do benefício.
+Uma aposentadoria concedida a servidor federal é submetida à apreciação do Tribunal para fins de registro. O Tribunal verifica se a concessão atende aos requisitos legais aplicáveis.
 
 **ATENÇÃO**
 
@@ -3773,7 +3775,7 @@ O prazo para o Tribunal examinar a aposentadoria e a necessidade de ouvir o inte
 
 **PALAVRAS DIFÍCEIS**
 
-- *Registro*: ato que confirma a legalidade de admissões e aposentadorias.
+- *Registro*: ato relacionado à apreciação da legalidade das admissões e concessões abrangidas pelo inciso III.
 - *Cargo em comissão*: cargo de livre nomeação e exoneração.
 - *Reforma*: passagem do militar para a inatividade.
 
@@ -3781,20 +3783,20 @@ O prazo para o Tribunal examinar a aposentadoria e a necessidade de ouvir o inte
 
 - O prazo para o registro de aposentadorias e o direito do interessado ao contraditório são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Constatado erro no cálculo, o Tribunal nega o registro, e o )
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O T1 afirmava consequencia que nao esta no inciso III ("o orgao de origem deve corrigi-lo"); os incisos IX e X nao foram usados para criar consequencia automatica. O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario "Registro" substituidos; ATENCAO (prazo e contraditorio) mantida. Complementacao autorizada: O QUE DIZ reformulado sem copia literal (a redacao anterior repetia 15 e 19 palavras seguidas da Lei Seca). (seções: exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal
 
-- **TARGET:** `CF88:ART.71:INC.VIII` · `ENTENDA/CF88:ART.71:INC.VIII/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.VIII` · `ENTENDA/CF88:ART.71:INC.VIII/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1400 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 187 palavras · 1664 bytes · referências 0
 - **Motivo da seleção:** Inciso sancionador com remissao a lei e multa proporcional ao dano.
 
 **O QUE DIZ**
@@ -3803,33 +3805,34 @@ O inciso VIII permite ao Tribunal aplicar aos responsáveis, quando houver despe
 
 **O QUE SIGNIFICA**
 
-O Tribunal tem poder sancionador próprio. Não precisa recorrer ao Judiciário para aplicar a multa.
+A própria Constituição atribui ao Tribunal competência para aplicar aos responsáveis as sanções previstas em lei quando houver ilegalidade de despesa ou irregularidade de contas.
 
-As sanções, porém, precisam estar previstas em lei; o próprio inciso exige que ela preveja multa proporcional ao dano.
+O inciso determina ainda que essa lei estabeleça, entre outras cominações, multa proporcional ao dano causado ao erário.
 
-A decisão que aplica multa tem força de título executivo (§ 3º): se não houver pagamento, o valor pode ser cobrado diretamente na Justiça.
+Quando uma decisão do Tribunal resultar em multa, o § 3º estabelece que ela terá eficácia de título executivo.
 
 **EXEMPLO PRÁTICO**
 
-Um gestor autoriza pagamento indevido a uma empresa. Além de mandar devolver o valor, o Tribunal aplica-lhe multa proporcional ao prejuízo.
+Um gestor pratica irregularidade que causa dano ao erário. Se estiver configurada a hipótese legal aplicável, o Tribunal pode impor a sanção prevista em lei, inclusive multa proporcional ao dano.
 
 **ATENÇÃO**
 
-As sanções concretas e seus limites estão na lei orgânica do Tribunal, cuja versão vigente deve ser consultada.
+As sanções concretamente aplicáveis e seus limites dependem da lei mencionada pelo próprio inciso VIII. Este dispositivo constitucional não identifica, por si só, todas essas sanções.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Sanção*: penalidade aplicada a quem descumpre uma norma.
 - *Cominação*: penalidade prevista em norma.
 - *Título executivo*: documento que permite cobrar judicialmente uma dívida de forma direta.
+- *Erário*: conjunto dos recursos financeiros e patrimoniais do poder público.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: cominações multa proporcional ao dano causado ao erário)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo sancionador correto. Retiradas a identificacao nao fundamentada da lei como "lei organica do Tribunal" e a mistura entre imputacao de debito e multa no exemplo. O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos; nenhum diploma legal especifico identificado sem provenance. Complementacao autorizada: "Erario" acrescentado ao glossario (termo do proprio dispositivo; TECHNICAL_TERM_UNDEFINED eliminado). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3880,57 +3883,58 @@ A sustação direta pelo Tribunal vale para atos, e não para contratos. A disti
 
 ### Art. 71, §§ 1º e 2º — Sustação de contratos
 
-- **TARGET:** `CF88:ART.71:PAR.1` · `ENTENDA/CF88:ART.71:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.71:PAR.1` · `ENTENDA/CF88:ART.71:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 71, §§ 1º e 2º — Sustação de contratos
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.71:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.71`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1625 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 1914 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 1º e 2º formam a regra propria para contratos (sustacao pelo Congresso e decisao do Tribunal apos noventa dias).
 
 **O QUE DIZ**
 
-O § 1º atribui diretamente ao Congresso Nacional a sustação de contrato, cabendo-lhe pedir de imediato ao Executivo as medidas adequadas. O § 2º prevê que, se o Congresso ou o Executivo não tomarem essas medidas em noventa dias, o Tribunal decide sobre o caso.
+No caso de contrato, o § 1º atribui diretamente ao Congresso Nacional o ato de sustação e determina que ele solicite imediatamente ao Poder Executivo as medidas cabíveis. O § 2º estabelece que, se as medidas previstas não forem efetivadas pelo Congresso Nacional ou pelo Poder Executivo no prazo de noventa dias, o Tribunal decidirá a respeito.
 
 **O QUE SIGNIFICA**
 
-Para contratos, a Constituição prefere que a decisão de suspender seja política, tomada pelo Congresso, porque envolve relações com particulares e efeitos econômicos.
+A Constituição distingue a sustação de atos da sustação de contratos.
 
-O Tribunal não fica sem ação: se, em noventa dias, nem o Congresso nem o Executivo agirem, a decisão passa a ser dele.
+No inciso X, o Tribunal possui competência para sustar a execução do ato impugnado nas condições ali previstas. No caso de contrato, porém, o § 1º atribui diretamente ao Congresso Nacional o ato de sustação.
 
-É uma regra de reserva: a omissão dos órgãos políticos transfere a decisão ao Tribunal.
+Se, no prazo constitucional de noventa dias, não forem efetivadas as medidas previstas no § 1º pelo Congresso Nacional ou pelo Poder Executivo, o § 2º determina que o Tribunal decida a respeito.
+
+O texto não detalha neste parágrafo qual é todo o alcance dessa decisão do Tribunal.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal aponta irregularidade grave em um contrato de obra. O Congresso não susta o contrato e o Executivo não adota medidas. Passados noventa dias, o Tribunal decide a respeito.
+É identificada irregularidade em determinado contrato. A sustação do contrato cabe diretamente ao Congresso Nacional nos termos do § 1º. Se as medidas previstas no dispositivo não forem efetivadas no prazo de noventa dias, aplica-se a regra do § 2º.
 
 **ATENÇÃO**
 
-O alcance da expressão "decidirá a respeito", inclusive se permite ao Tribunal sustar diretamente o contrato, é tema de interpretação constitucional.
+A Constituição usa a expressão "decidirá a respeito" no § 2º. O alcance dessa expressão, inclusive quanto à possibilidade de sustação direta do contrato pelo Tribunal, pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Sustação*: suspensão dos efeitos de um ato ou contrato.
-- *Contrato administrativo*: acordo firmado pelo poder público com particulares para obras, serviços ou compras.
 
 **CAMADA EXTERNA**
 
 - O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Contrato administrativo)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirados: a teleologia da "decisao politica", a exigencia de inercia simultanea dos dois orgaos (o § 2º diz "ou"), a ideia de que a competencia "passa" ao Tribunal e a antecipacao do sentido de "decidira a respeito". Explicitada a distincao entre sustacao de ato (inciso X, Tribunal) e de contrato (§ 1º, Congresso). O QUE DIZ, O QUE SIGNIFICA, exemplo e ATENCAO substituidos; glossario sem "Contrato administrativo". (seções: atencao, exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, § 3º — Força das decisões que impõem débito ou multa
 
-- **TARGET:** `CF88:ART.71:PAR.3` · `ENTENDA/CF88:ART.71:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.71:PAR.3` · `ENTENDA/CF88:ART.71:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 71, § 3º — Força das decisões que impõem débito ou multa
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.71`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 160 palavras · 1518 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 150 palavras · 1457 bytes · referências 1
 - **Motivo da seleção:** Paragrafo autonomo com efeito processual relevante (titulo executivo).
 
 **O QUE DIZ**
@@ -3939,19 +3943,19 @@ O § 3º atribui eficácia de título executivo às decisões do Tribunal que im
 
 **O QUE SIGNIFICA**
 
-Título executivo é um documento que permite a cobrança judicial direta, sem a necessidade de um processo prévio para reconhecer a dívida.
+As decisões do Tribunal das quais resulte imputação de débito ou multa têm eficácia de título executivo.
 
-Assim, se o responsável condenado pelo Tribunal a devolver valores ou pagar multa não pagar, a cobrança vai direto para a fase de execução na Justiça.
+Isso permite que a própria decisão sirva de fundamento para a cobrança pela via executiva, sem necessidade de obter previamente outra decisão que reconheça a existência do débito ou da multa.
 
-O parágrafo dá efetividade às decisões do Tribunal, que de outro modo dependeriam de nova discussão judicial.
+O § 3º não identifica quem possui legitimidade para promover essa execução.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal condena um ex-gestor a devolver valores desviados. Sem pagamento, o órgão competente propõe ação de execução usando a própria decisão do Tribunal como título.
+Uma decisão do Tribunal imputa determinado débito a um responsável. Se a obrigação não for cumprida, a própria decisão pode ser utilizada como título executivo na cobrança judicial.
 
 **ATENÇÃO**
 
-O Tribunal não executa a própria decisão: a cobrança é proposta por órgão de representação judicial competente. Quem tem legitimidade para essa cobrança é tema de interpretação constitucional.
+O § 3º estabelece a eficácia executiva da decisão, mas não define quem deve promover judicialmente a cobrança. Essa questão pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3964,7 +3968,7 @@ O Tribunal não executa a própria decisão: a cobrança é proposta por órgão
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O T1 respondia uma questao que depois dizia ser controvertida. Retirados: "O Tribunal nao executa a propria decisao", a identificacao de "orgao de representacao judicial competente" e a teleologia do que ocorreria "de outro modo". O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos; o corpo nao afirma quem executa. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -4024,12 +4028,12 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 73 — Composição e organização do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73` · `ENTENDA/CF88:ART.73/BASE/1`
+- **TARGET:** `CF88:ART.73` · `ENTENDA/CF88:ART.73/BASE/2`
 - **DISPLAY TITLE:** Art. 73 — Composição e organização do Tribunal de Contas da União
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 188 palavras · 1515 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 289 palavras · 2242 bytes · referências 0
 - **Motivo da seleção:** Visao geral da composicao do TCU; requisitos, escolha e garantias dos Ministros tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -4038,15 +4042,17 @@ O art. 73 define o Tribunal de Contas da União: nove Ministros, sede no Distrit
 
 **O QUE SIGNIFICA**
 
-O Tribunal tem autonomia administrativa: organiza seus serviços e seu pessoal, de modo semelhante aos tribunais judiciais, por isso a remissão ao art. 96.
+O art. 73 disciplina aspectos da estrutura e da composição do Tribunal de Contas da União.
 
-A jurisdição nacional significa que o Tribunal fiscaliza recursos federais onde quer que sejam aplicados, inclusive quando repassados a Estados e Municípios.
+O órgão possui nove Ministros e quadro próprio de pessoal, tem sede no Distrito Federal e exerce jurisdição em todo o território nacional. A referência territorial significa que sua atuação constitucional não fica limitada ao Distrito Federal, embora suas competências materiais sejam definidas pelos demais dispositivos da Constituição.
 
-A composição combina indicações do Presidente e do Congresso, com vagas reservadas a membros de carreira.
+O artigo também determina que o Tribunal exerça, no que couber, as atribuições previstas no art. 96.
+
+Quanto à composição, um terço dos Ministros é escolhido pelo Presidente da República, com aprovação do Senado Federal, e dois terços são escolhidos pelo Congresso Nacional. Dentro da parcela presidencial, duas escolhas são feitas alternadamente entre auditores e membros do Ministério Público junto ao Tribunal, a partir de lista tríplice apresentada pelo próprio órgão.
 
 **EXEMPLO PRÁTICO**
 
-Um Município recebe verba federal para construir uma escola. O Tribunal de Contas da União pode fiscalizar essa aplicação, mesmo fora de Brasília, porque se trata de recurso da União.
+Embora tenha sede no Distrito Federal, o Tribunal de Contas da União exerce sua jurisdição constitucional em todo o território nacional. A existência dessa jurisdição nacional não significa, por si só, que o Tribunal possa atuar sobre qualquer matéria: suas competências são as atribuídas pela Constituição.
 
 **ATENÇÃO**
 
@@ -4054,16 +4060,16 @@ Os Ministros do Tribunal de Contas não são Ministros de Estado, e o Tribunal n
 
 **PALAVRAS DIFÍCEIS**
 
-- *Jurisdição*: âmbito territorial e material de atuação de um órgão.
+- *Jurisdição*: âmbito de atuação atribuído juridicamente a um órgão; neste artigo, a expressão não significa que o Tribunal integre o Poder Judiciário.
 - *Quadro próprio de pessoal*: conjunto de cargos e servidores do próprio órgão.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: auditores e membros do ministério público junto ao)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A "jurisdicao em todo o territorio nacional" era explicada pela competencia do art. 71, VI, misturando estrutura (art. 73) e competencia fiscalizatoria (art. 71). O QUE SIGNIFICA e exemplo substituidos (registrada a aprovacao do Senado no terco presidencial; preservado o "no que couber" da remissao ao art. 96); glossario "Jurisdicao" substituido; O QUE DIZ e ATENCAO mantidos. Complementacao autorizada: frase da estrutura reformulada sem copia literal (a redacao anterior repetia 15 palavras seguidas da Lei Seca). (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -4161,12 +4167,12 @@ O Ministério Público junto ao Tribunal de Contas é um órgão próprio, disti
 
 ### Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73:PAR.3` · `ENTENDA/CF88:ART.73:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.73:PAR.3` · `ENTENDA/CF88:ART.73:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.73`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1579 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 193 palavras · 1656 bytes · referências 2
 - **Motivo da seleção:** Paragrafo autonomo de equiparacao (garantias, prerrogativas, impedimentos e remuneracao) com remissao previdenciaria.
 
 **O QUE DIZ**
@@ -4175,15 +4181,17 @@ O § 3º iguala os Ministros do Tribunal de Contas da União aos Ministros do Su
 
 **O QUE SIGNIFICA**
 
-A equiparação dá aos Ministros do Tribunal de Contas independência semelhante à dos magistrados de tribunal superior, como a vitaliciedade e a inamovibilidade.
+O § 3º equipara os Ministros do Tribunal de Contas da União aos Ministros do Superior Tribunal de Justiça quanto a garantias, prerrogativas, impedimentos, vencimentos e vantagens.
 
-Em troca, eles se sujeitam aos mesmos impedimentos, como a proibição de exercer outras atividades incompatíveis com o cargo.
+Isso significa que, nessas matérias, aplica-se aos dois cargos o tratamento jurídico correspondente previsto pela Constituição.
 
-Para aposentadoria e pensão, seguem as regras dos servidores públicos titulares de cargo efetivo (art. 40).
+Para aposentadoria e pensão, o próprio § 3º faz uma remissão específica às normas do art. 40.
+
+A equiparação não transforma os Ministros do Tribunal de Contas em integrantes do Poder Judiciário.
 
 **EXEMPLO PRÁTICO**
 
-Um Ministro do Tribunal de Contas da União só perde o cargo nas hipóteses aplicáveis aos Ministros do Superior Tribunal de Justiça e recebe a mesma remuneração deles.
+Ao analisar as garantias, os impedimentos, os vencimentos ou as vantagens de um Ministro do Tribunal de Contas da União, deve ser considerada a equiparação constitucional estabelecida em relação aos Ministros do Superior Tribunal de Justiça.
 
 **ATENÇÃO**
 
@@ -4192,16 +4200,15 @@ A equiparação não transforma os Ministros do Tribunal de Contas em magistrado
 **PALAVRAS DIFÍCEIS**
 
 - *Equiparação*: atribuição do mesmo tratamento jurídico a cargos diferentes.
-- *Vitaliciedade*: garantia de só perder o cargo nas hipóteses e formas previstas, em regra por decisão judicial.
 - *Impedimento*: proibição de exercer certas atividades ou atuar em certos casos.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os ministros do tribunal de contas da união)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os ministros do tribunal de contas da união); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: os ministros do tribunal de contas da união); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao analisar as garantias, os impedimentos, os vencimentos ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a formulacao teleologica "Em troca", que tratava garantias e impedimentos como contrapartidas; garantias do art. 95 nao enumeradas. O QUE SIGNIFICA e exemplo substituidos; O QUE DIZ e ATENCAO mantidos. Glossario: "Vitaliciedade" removido (TERM_NOT_USED apos o ajuste). (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -4211,12 +4218,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 74 — Sistema de controle interno
 
-- **TARGET:** `CF88:ART.74` · `ENTENDA/CF88:ART.74/BASE/1`
+- **TARGET:** `CF88:ART.74` · `ENTENDA/CF88:ART.74/BASE/2`
 - **DISPLAY TITLE:** Art. 74 — Sistema de controle interno
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1698 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 301 palavras · 2264 bytes · referências 0
 - **Motivo da seleção:** Visao geral do controle interno integrado dos tres Poderes; dever de comunicar e denuncia por cidadaos tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -4225,11 +4232,11 @@ O art. 74 obriga o Legislativo, o Executivo e o Judiciário a manter, de forma i
 
 **O QUE SIGNIFICA**
 
-O controle interno é a fiscalização feita de dentro: cada Poder acompanha a gestão dos próprios órgãos, de forma contínua.
+O controle interno é o sistema mantido pelos próprios Poderes para acompanhar e avaliar a gestão nas matérias indicadas pelo art. 74.
 
-Ele não se limita a verificar se as regras foram cumpridas; também avalia resultados, ou seja, se os programas alcançaram seus objetivos com bom uso dos recursos.
+Ele não se limita à verificação da legalidade. A Constituição também determina a avaliação de resultados quanto à eficácia e à eficiência da gestão orçamentária, financeira e patrimonial das entidades da administração federal. Essa avaliação alcança ainda a aplicação de recursos públicos por entidades privadas. Além disso, cabe ao sistema o controle das operações, garantias, direitos e haveres mencionados no dispositivo.
 
-O controle interno trabalha em apoio ao externo, fornecendo informações ao Congresso e ao Tribunal de Contas.
+O inciso IV determina ainda que o sistema de controle interno apoie o controle externo no exercício de sua missão institucional.
 
 **EXEMPLO PRÁTICO**
 
@@ -4237,32 +4244,32 @@ A unidade de controle interno de um ministério acompanha a execução de um pro
 
 **ATENÇÃO**
 
-O controle interno não substitui o externo: os dois coexistem, com funções complementares.
+Controle interno e controle externo não se confundem. O art. 70 atribui o controle externo ao Congresso Nacional e prevê também o sistema de controle interno de cada Poder; o art. 71 estabelece que o controle externo é exercido com o auxílio do Tribunal de Contas da União.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Controle interno*: fiscalização que cada Poder faz sobre os seus próprios órgãos.
-- *Plano plurianual*: lei que fixa metas e programas do governo para quatro anos.
+- *Plano plurianual*: instrumento de planejamento previsto na Constituição para estabelecer diretrizes, objetivos e metas da administração pública.
 - *Operação de crédito*: empréstimo ou financiamento contratado pelo poder público.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: controle externo no exercício de sua missão institucional)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo correto; retiradas duas extrapolacoes ("de forma continua" e "fornecendo informacoes ao Congresso"). O QUE SIGNIFICA, ATENCAO e glossario "Plano plurianual" (sem duracao temporal que nao consta do art. 74) substituidos; O QUE DIZ e exemplo mantidos. Resolucao editorial antiga de LAW_DEPENDENCY_OMITTED mantida; sua justificativa (explicacao propria do § 2º) devera ser revalidada quando CF88:ART.74:PAR.2 for submetido a revisao humana na fila A. Complementacao autorizada: 2o paragrafo do O QUE SIGNIFICA dividido, mantendo "entidades da administracao federal" e "aplicacao de recursos publicos por entidades privadas" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela redacao). (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 74, § 1º — Dever de comunicar irregularidades
 
-- **TARGET:** `CF88:ART.74:PAR.1` · `ENTENDA/CF88:ART.74:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.74:PAR.1` · `ENTENDA/CF88:ART.74:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 74, § 1º — Dever de comunicar irregularidades
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.74`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 139 palavras · 1215 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1580 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo com sancao (responsabilidade solidaria) para omissao dos responsaveis pelo controle interno.
 
 **O QUE DIZ**
@@ -4271,23 +4278,23 @@ O § 1º determina que os responsáveis pelo controle interno, ao saberem de qua
 
 **O QUE SIGNIFICA**
 
-Quem trabalha no controle interno não pode guardar para si as irregularidades que descobre.
+Os responsáveis pelo controle interno têm o dever de comunicar ao Tribunal de Contas da União as irregularidades ou ilegalidades de que tomarem conhecimento.
 
-A comunicação ao Tribunal é obrigatória, e não uma escolha.
+A comunicação é obrigatória. Se o responsável deixar de dar ciência ao Tribunal, o próprio § 1º prevê responsabilidade solidária.
 
-Se o responsável se omitir, passa a responder junto com o autor da irregularidade, o que pode incluir o dever de reparar integralmente o prejuízo.
+O dispositivo estabelece o dever de comunicar e a consequência da omissão, mas não detalha neste trecho todo o alcance patrimonial ou processual dessa responsabilidade.
 
 **EXEMPLO PRÁTICO**
 
-O chefe do controle interno de um órgão identifica pagamentos sem cobertura contratual e não informa o Tribunal. Pode ser responsabilizado solidariamente pelo dano causado.
+O responsável pelo controle interno de um órgão identifica pagamentos irregulares e deixa de comunicar o fato ao Tribunal de Contas da União. Nessa hipótese, poderá incidir a responsabilidade solidária prevista no § 1º.
 
 **ATENÇÃO**
 
-O dever é de comunicar ao Tribunal de Contas da União; os canais e formas dessa comunicação são definidos em normas próprias.
+O § 1º define o dever de comunicação, o destinatário e a responsabilidade pela omissão. A forma prática e os canais utilizados para essa comunicação não são disciplinados pelo próprio parágrafo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Responsabilidade solidária*: responsabilidade em que cada um pode ser cobrado pelo total da dívida.
+- *Responsabilidade solidária*: forma de responsabilidade em que uma pessoa pode responder juntamente com outra pela mesma obrigação, conforme o regime jurídico aplicável.
 
 **CAMADA EXTERNA**
 
@@ -4295,7 +4302,7 @@ O dever é de comunicar ao Tribunal de Contas da União; os canais e formas dess
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao tribunal de contas da união sob pena)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Evitada a ampliacao de "responsaveis pelo controle interno" para "quem trabalha no controle interno" e retirada a reparacao integral como consequencia direta do § 1º. O QUE SIGNIFICA, exemplo, ATENCAO e glossario substituidos; O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 

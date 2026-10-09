@@ -466,7 +466,104 @@ Lote `ENTENDA_CF_PRODUCTION_BATCH_06` · 2026-10-04 · nenhum item aprovado (AUT
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (0)
+## B — CLEAN_MEDIUM (9)
 
-- nenhum item nesta fila
+### `CF88:ART.69` — Art. 69 — Quórum da lei complementar
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A relação entre lei complementar e lei ordinária e a…; INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao…
+- Ponto jurídico: O art. 69 estabelece que as leis complementares sejam aprovadas por maioria absoluta.
+- Interpretação principal: A lei complementar se distingue da lei ordinária por dois elementos.
+- ATENÇÃO: O quórum de maioria absoluta é para aprovar; a lei complementar também tem matéria própria.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.71:INC.III` — Art. 71, inciso III — Registro de admissões e aposentadorias
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O prazo para o registro de aposentadorias e o direito do…; INTERPRETIVE_QUESTION_DEFERRED: "temas de interpretação constitucional" (o draft nao…
+- Ponto jurídico: O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em…
+- Interpretação principal: O Tribunal confere se a admissão de servidores e a concessão de aposentadorias e pensões respeitaram a lei, e só então as registra.
+- ATENÇÃO: O prazo para o Tribunal examinar a aposentadoria e a necessidade de ouvir o interessado são temas de interpretação constitucional, não definidos no texto deste inciso.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.71:INC.VIII` — Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
+- Ponto jurídico: O inciso VIII permite ao Tribunal aplicar aos responsáveis, quando houver despesa ilegal ou contas irregulares, as sanções previstas em lei, que deve incluir, entre outras penalidades, multa…
+- Interpretação principal: O Tribunal tem poder sancionador próprio.
+- ATENÇÃO: As sanções concretas e seus limites estão na lei orgânica do Tribunal, cuja versão vigente deve ser consultada.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.71:PAR.1` — Art. 71, §§ 1º e 2º — Sustação de contratos
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance do poder do Tribunal após o prazo do § 2º é tema da…; INTERPRETIVE_QUESTION_DEFERRED: "tema de interpretação constitucional" (o draft nao…
+- Ponto jurídico: O § 1º atribui diretamente ao Congresso Nacional a sustação de contrato, cabendo-lhe pedir de imediato ao Executivo as medidas adequadas.
+- Interpretação principal: Para contratos, a Constituição prefere que a decisão de suspender seja política, tomada pelo Congresso, porque envolve relações com particulares e efeitos econômicos.
+- ATENÇÃO: O alcance da expressão "decidirá a respeito", inclusive se permite ao Tribunal sustar diretamente o contrato, é tema de interpretação constitucional.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint TERM_NOT_USED
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.71:PAR.3` — Art. 71, § 3º — Força das decisões que impõem débito ou multa
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A legitimidade para executar as decisões do Tribunal de…; INTERPRETIVE_QUESTION_DEFERRED: "tema de interpretação constitucional" (o draft nao…; SENSITIVE_THEME: multa
+- Ponto jurídico: O § 3º atribui eficácia de título executivo às decisões do Tribunal que imputem débito ou apliquem multa.
+- Interpretação principal: Título executivo é um documento que permite a cobrança judicial direta, sem a necessidade de um processo prévio para reconhecer a dívida.
+- ATENÇÃO: O Tribunal não executa a própria decisão: a cobrança é proposta por órgão de representação judicial competente.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.73` — Art. 73 — Composição e organização do Tribunal de Contas da União
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: prerrogativ
+- Ponto jurídico: O art. 73 define o Tribunal de Contas da União: nove Ministros, sede no Distrito Federal, pessoal próprio e atuação em todo o país, com as atribuições do art. 96 no que forem compatíveis.
+- Interpretação principal: O Tribunal tem autonomia administrativa: organiza seus serviços e seu pessoal, de modo semelhante aos tribunais judiciais, por isso a remissão ao art. 96.
+- ATENÇÃO: Os Ministros do Tribunal de Contas não são Ministros de Estado, e o Tribunal não integra o Judiciário, apesar das semelhanças de organização.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.73:PAR.3` — Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: prerrogativ
+- Ponto jurídico: O § 3º iguala os Ministros do Tribunal de Contas da União aos Ministros do Superior Tribunal de Justiça em garantias, prerrogativas, impedimentos, remuneração e vantagens, e manda aplicar a eles, na…
+- Interpretação principal: A equiparação dá aos Ministros do Tribunal de Contas independência semelhante à dos magistrados de tribunal superior, como a vitaliciedade e a inamovibilidade.
+- ATENÇÃO: A equiparação não transforma os Ministros do Tribunal de Contas em magistrados do Judiciário.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: os ministros do tribunal de contas da união)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.74` — Art. 74 — Sistema de controle interno
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O art. 74 obriga o Legislativo, o Executivo e o Judiciário a manter, de forma integrada, um sistema de controle interno, com quatro finalidades: avaliar o cumprimento das metas do plano plurianual e…
+- Interpretação principal: O controle interno é a fiscalização feita de dentro: cada Poder acompanha a gestão dos próprios órgãos, de forma contínua.
+- ATENÇÃO: O controle interno não substitui o externo: os dois coexistem, com funções complementares.
+- Dependência externa: nenhuma
+- Warnings: LAW_DEPENDENCY_OMITTED(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.74:PAR.1` — Art. 74, § 1º — Dever de comunicar irregularidades
+
+- Risco: MEDIUM · complexidade: SIMPLE · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O § 1º determina que os responsáveis pelo controle interno, ao saberem de qualquer irregularidade ou ilegalidade, a comuniquem ao Tribunal de Contas da União, sob pena de responderem solidariamente.
+- Interpretação principal: Quem trabalha no controle interno não pode guardar para si as irregularidades que descobre.
+- ATENÇÃO: O dever é de comunicar ao Tribunal de Contas da União; os canais e formas dessa comunicação são definidos em normas próprias.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ao tribunal de contas da união sob pena)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 

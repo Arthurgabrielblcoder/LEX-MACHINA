@@ -3,7 +3,7 @@
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 42
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 51
 - Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 4, MODALITY_SHIFT 1, TRANSITION_IN_CORE 2 · não resolvidos: 0
 
 ## Risco HIGH
@@ -158,8 +158,8 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 69 — Quórum da lei complementar
 
-- `CF88:ART.69` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas ; INTERPRETIVE_QUESTION_DEFERRED: "questão de interpretação constitucional" (o draft nao responde; remete)
+- `CF88:ART.69` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas 
 
 ### Art. 71 — Competências do Tribunal de Contas da União
 
@@ -169,43 +169,43 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 71, inciso III — Registro de admissões e aposentadorias
 
-- `CF88:ART.71:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.71:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O prazo para o registro de aposentadorias e o direito do interessado ao contraditório são temas da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: "temas de interpretação constitucional" (o draft nao responde; remete)
 
 ### Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal
 
-- `CF88:ART.71:INC.VIII` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.71:INC.VIII` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanções
 
 ### Art. 71, §§ 1º e 2º — Sustação de contratos
 
-- `CF88:ART.71:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: "tema de interpretação constitucional" (o draft nao responde; remete)
+- `CF88:ART.71:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 71, § 3º — Força das decisões que impõem débito ou multa
 
-- `CF88:ART.71:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A legitimidade para executar as decisões do Tribunal de Contas é tema da camada JURISPRUDÊNCIA.; INTERPRETIVE_QUESTION_DEFERRED: "tema de interpretação constitucional" (o draft nao responde; remete); SENSITIVE_THEME: multa
+- `CF88:ART.71:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A legitimidade para executar as decisões do Tribunal de Contas é tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: multa
 
 ### Art. 73 — Composição e organização do Tribunal de Contas da União
 
-- `CF88:ART.73` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.73` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: prerrogativ
 
 ### Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
 
-- `CF88:ART.73:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.73:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: prerrogativ
 
 ### Art. 74 — Sistema de controle interno
 
-- `CF88:ART.74` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.74` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sob pena
 - LAW_DEPENDENCY_OMITTED (body: na forma da lei) → "Na forma da lei" e do § 2º (denuncia ao TCU), que tem explicacao propria (DEVICE) mencionando a lei.
 
 ### Art. 74, § 1º — Dever de comunicar irregularidades
 
-- `CF88:ART.74:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.74:PAR.1` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sob pena
 
 ### Art. 75 — Tribunais de Contas dos Estados, do Distrito Federal e dos Municípios

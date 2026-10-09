@@ -24,21 +24,23 @@
  },
  "counts": {
   "A_CLEAN_LOW": 42,
-  "B_CLEAN_MEDIUM": 0,
+  "B_CLEAN_MEDIUM": 9,
   "C_QUICK_REVIEW": 0,
   "D_FULL_HUMAN_REVIEW": 0,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
-  "LOW": 42
+  "LOW": 42,
+  "MEDIUM": 9
  },
  "complexity_counts": {
-  "STRUCTURED": 38,
-  "EXTERNAL": 1,
-  "SIMPLE": 3
+  "STRUCTURED": 42,
+  "EXTERNAL": 5,
+  "SIMPLE": 4
  },
  "jurisprudence_counts": {
-  "NONE": 42
+  "NONE": 47,
+  "CONTEXT_ONLY": 4
  },
  "by_legal_risk": {
   "LOW": {
@@ -50,7 +52,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 0,
+   "B_CLEAN_MEDIUM": 9,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -66,21 +68,21 @@
  "by_complexity": {
   "SIMPLE": {
    "A_CLEAN_LOW": 3,
-   "B_CLEAN_MEDIUM": 0,
+   "B_CLEAN_MEDIUM": 1,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
    "A_CLEAN_LOW": 38,
-   "B_CLEAN_MEDIUM": 0,
+   "B_CLEAN_MEDIUM": 4,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 1,
-   "B_CLEAN_MEDIUM": 0,
+   "B_CLEAN_MEDIUM": 4,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -1767,21 +1769,389 @@
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.69",
+   "title": "Art. 69 — Quórum da lei complementar",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas ",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "exemplo_pratico",
+     "match": "todos os",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.III",
+   "title": "Art. 71, inciso III — Registro de admissões e aposentadorias",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O prazo para o registro de aposentadorias e o direito do interessado ao contraditório são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"temas de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: excetuad"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.VIII",
+   "title": "Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: previstas em lei"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:PAR.1",
+   "title": "Art. 71, §§ 1º e 2º — Sustação de contratos",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"tema de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "number_or_percentage: noventa",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:PAR.3",
+   "title": "Art. 71, § 3º — Força das decisões que impõem débito ou multa",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A legitimidade para executar as decisões do Tribunal de Contas é tema da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"tema de interpretação constitucional\" (o draft nao responde; remete)",
+    "SENSITIVE_THEME: multa"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73",
+   "title": "Art. 73 — Composição e organização do Tribunal de Contas da União",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "deadline: setenta anos",
+    "number_or_percentage: nove",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 40, 96",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.3",
+   "title": "Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os ministros do tribunal de contas da união",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74",
+   "title": "Art. 74 — Sistema de controle interno",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74:PAR.1",
+   "title": "Art. 74, § 1º — Dever de comunicar irregularidades",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao tribunal de contas da união sob pena",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
   }
  ],
  "migration": {
   "previous_counts": {
-   "D_FULL_HUMAN_REVIEW": 38,
+   "D_FULL_HUMAN_REVIEW": 47,
    "A_CLEAN_LOW": 1,
    "C_QUICK_REVIEW": 3
   },
-  "previous_D": 38,
+  "previous_D": 47,
   "previous_D_now": {
-   "A_CLEAN_LOW": 38
+   "A_CLEAN_LOW": 38,
+   "B_CLEAN_MEDIUM": 9
   },
-  "previous_D_migrated": 38,
+  "previous_D_migrated": 47,
   "previous_risk_counts": {
-   "HIGH": 38,
+   "HIGH": 47,
    "LOW": 3,
    "MEDIUM": 1
   }
@@ -1791,36 +2161,35 @@
  "refined_false_positive_counts": {
   "AUTOMATIC_CONSEQUENCE": 1,
   "TELEOLOGY_SPECULATIVE": 4,
-  "UNIVERSAL_CLAIM": 4
+  "UNIVERSAL_CLAIM": 5
  },
  "metrics": {
-  "total_draft_chars": 55038,
-  "old_model_full_package_chars": 99194,
-  "presented_chars": 31459,
+  "total_draft_chars": 65350,
+  "old_model_full_package_chars": 119239,
+  "presented_chars": 39571,
   "presented_by_file": {
-   "BATCH06_COMPACT_CLEAN_REVIEW.md": 30952,
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 39064,
    "BATCH06_FULL_HUMAN_REVIEW.md": 218,
    "BATCH06_HARD_FAIL_REPORT.md": 119,
    "BATCH06_QUICK_REVIEW.md": 170
   },
-  "reduction_abs": 67735,
-  "reduction_pct": 68.3,
+  "reduction_abs": 79668,
+  "reduction_pct": 66.8,
   "checkpoint_presented_chars": 265430
  },
  "d_full_package": "GERADO",
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 20,
+  "eligible": 22,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 51,
+ "human_approved_t1_granted": 42,
  "round_approvals": {
   "review_scopes": [
    "CF88_BATCH06_TRIAGE_QUEUE_D",
    "CF88_BATCH06_TRIAGE_QUEUE_C",
    "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
-   "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
-   "CF88_BATCH06_TRIAGE_QUEUE_B_PART3"
+   "CF88_BATCH06_TRIAGE_QUEUE_B_PART2"
   ],
   "gate": [
    {
@@ -2351,89 +2720,11 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.69",
-    "explanation_id": "ENTENDA/CF88:ART.69/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.71",
     "explanation_id": "ENTENDA/CF88:ART.71/BASE/1",
     "editorial_version": 1,
     "decision": "APPROVED",
     "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.71:INC.III",
-    "explanation_id": "ENTENDA/CF88:ART.71:INC.III/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.71:INC.VIII",
-    "explanation_id": "ENTENDA/CF88:ART.71:INC.VIII/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.71:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.71:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.71:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.71:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.73",
-    "explanation_id": "ENTENDA/CF88:ART.73/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
     "provenance_items": 0,
     "hard_fail": [],
     "review_required_open": [],
@@ -2448,45 +2739,6 @@
     "decision": "APPROVED_AFTER_ADJUSTMENT",
     "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
     "provenance_items": 1,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.73:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.73:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.74",
-    "explanation_id": "ENTENDA/CF88:ART.74/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.74:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.74:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
-    "provenance_items": 0,
     "hard_fail": [],
     "review_required_open": [],
     "editorial_checks_open": 0,
@@ -2509,9 +2761,9 @@
     "gate": "PASS"
    }
   ],
-  "approved": 51,
+  "approved": 42,
   "approved_unchanged": 12,
-  "approved_after_adjustment": 39,
+  "approved_after_adjustment": 30,
   "retired_versions": [
    "ENTENDA/CF88:ART.48/BASE/1",
    "ENTENDA/CF88:ART.49:INC.I/BASE/1",
@@ -2541,24 +2793,15 @@
    "ENTENDA/CF88:ART.65/BASE/1",
    "ENTENDA/CF88:ART.66/BASE/1",
    "ENTENDA/CF88:ART.66:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.69/BASE/1",
-   "ENTENDA/CF88:ART.71:INC.III/BASE/1",
-   "ENTENDA/CF88:ART.71:INC.VIII/BASE/1",
-   "ENTENDA/CF88:ART.71:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.71:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.73/BASE/1",
    "ENTENDA/CF88:ART.73:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.73:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.74/BASE/1",
-   "ENTENDA/CF88:ART.74:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.75/BASE/1"
   ]
  },
  "approval_totals": {
   "global_before": 289,
-  "batch06_new_approved": 51,
-  "global_after": 340,
-  "batch06_new_pending": 42,
+  "batch06_new_approved": 42,
+  "global_after": 331,
+  "batch06_new_pending": 51,
   "batch06_reused_pilots_already_approved": 3,
   "note": "pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo"
  },
