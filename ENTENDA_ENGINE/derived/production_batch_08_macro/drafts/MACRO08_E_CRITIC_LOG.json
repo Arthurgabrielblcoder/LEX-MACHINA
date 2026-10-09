@@ -1,0 +1,188 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "E",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "ADCT:ART.40",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "como área livre de comércio, de exportação e importação e de incentivos fiscais,",
+   "after": "com suas características de área de livre comércio, de exportação, de importação e de incentivos fiscais,"
+  },
+  {
+   "target_id": "ADCT:ART.40",
+   "section": "atencao",
+   "category": "REMISSAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"preserva\" caracterizava a remissao alem do texto; descrita com o conteudo literal do ADCT art. 126, III, a, e com o art. 92-B.",
+   "before": "O conteúdo dos incentivos fiscais está na legislação, e o art. 126, III, a, do ADCT preserva a industrialização incentivada na Zona Franca na transição tributária.",
+   "after": "O conteúdo dos incentivos fiscais está na legislação. Na transição tributária, o art. 126, III, a, do ADCT excetua da redução a zero das alíquotas do imposto sobre produtos industrializados os produtos com industrialização incentivada na Zona Franca, segundo lei complementar, e o art. 92-B trata da manutenção do seu diferencial competitivo."
+  },
+  {
+   "target_id": "ADCT:ART.42",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "no mínimo 50% vão para projetos de irrigação que beneficiem agricultores familiares que atendam aos requisitos da legislação específica.",
+   "after": "no mínimo 50% devem ir para projetos de irrigação em favor de agricultores familiares que cumpram os requisitos da legislação específica."
+  },
+  {
+   "target_id": "ADCT:ART.49",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Caracteristica da lei civil (\"perpetua\") afirmada sem proveniencia.",
+   "before": "{\"termo\": \"Enfiteuse\", \"explicacao\": \"direito de usar imóvel alheio de forma perpétua, pagando foro anual ao titular.\"}",
+   "after": "{\"termo\": \"Enfiteuse\", \"explicacao\": \"direito de usar imóvel alheio pagando foro anual ao titular do domínio direto.\"}"
+  },
+  {
+   "target_id": "ADCT:ART.52",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "a instalação no País de novas agências de instituições financeiras domiciliadas no exterior",
+   "after": "a abertura no Brasil de novas agências de instituições financeiras com domicílio no exterior"
+  },
+  {
+   "target_id": "ADCT:ART.52",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "A proibição não se aplica às autorizações decorrentes de acordos internacionais, de reciprocidade ou de interesse do Governo brasileiro.",
+   "after": "A proibição não alcança as autorizações que resultem de acordos internacionais, de reciprocidade ou do interesse do Governo brasileiro."
+  },
+  {
+   "target_id": "ADCT:ART.54",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "trabalharam na produção de borracha na Região Amazônica durante a Segunda Guerra Mundial,",
+   "after": "trabalharam na Amazônia produzindo borracha durante a Segunda Guerra Mundial,"
+  },
+  {
+   "target_id": "ADCT:ART.54-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "uma indenização em parcela única no valor de R$ 25.000,00.",
+   "after": "uma indenização paga de uma só vez, de R$ 25.000,00."
+  },
+  {
+   "target_id": "ADCT:ART.60-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 60-A do ADCT determina que os critérios de distribuição da complementação da União e dos fundos do art. 212-A, I, sejam revistos no sexto ano de vigência e, a partir dessa primeira revisão, periodicamente, a cada 10 anos.",
+   "after": "O art. 60-A do ADCT manda rever as regras de distribuição dos fundos do art. 212-A, I, e da complementação da União. A primeira revisão ocorre no sexto ano de vigência; depois dela, as revisões se repetem a cada 10 anos."
+  },
+  {
+   "target_id": "ADCT:ART.34",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "Previu o aumento gradual dos fundos de participação de Estados e Municípios até 1993, permitiu que os entes editassem desde logo as leis do novo sistema, com efeitos a partir de sua vigência, e assegurou a aplicação da legislação anterior no que não fosse incompatível com o novo sistema.",
+   "after": "Previu o aumento gradual dos fundos de participação de Estados e Municípios até 1993. Permitiu que os entes editassem desde logo as leis do novo sistema, com efeitos a partir de sua vigência, e assegurou a aplicação da legislação anterior no que não fosse incompatível com o novo sistema."
+  },
+  {
+   "target_id": "ADCT:ART.35",
+   "section": "o_que_significa",
+   "category": "AFIRMACAO_SOBRE_ESTADO_DE_LEI",
+   "detector": "V2_LAW_STATUS_CLAIM",
+   "reason": "Frase sobre existencia de lei (mesmo negativa) aciona LAW_STATUS_CLAIM; reformulada sem afirmar estado da lei.",
+   "before": "Se essa lei complementar já existe ou não é um dado externo ao texto.",
+   "after": "A aplicação do § 2º depende de um dado que o texto não fornece: a disciplina da matéria pela lei complementar do art. 165, § 9º."
+  },
+  {
+   "target_id": "ADCT:ART.35",
+   "section": "atencao",
+   "category": "AFIRMACAO_SOBRE_ESTADO_DE_LEI",
+   "detector": "V2_LAW_STATUS_CLAIM",
+   "reason": "Idem; remissao a camada externa sem afirmar estado.",
+   "before": "O texto não informa se essa lei foi editada.",
+   "after": "A situação dessa lei complementar pertence à camada externa."
+  },
+  {
+   "target_id": "ADCT:ART.38",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Finalidade (\"para que nao estoure\") nao declarada; \"transicao\" no nucleo (TRANSITION_IN_CORE).",
+   "before": "O § 2º, acrescentado em 2022, criou uma transição gradual para que o custo dos pisos da enfermagem não estoure de imediato os limites com pessoal.",
+   "after": "O § 2º, acrescentado em 2022 segundo as anotações da fonte oficial, escalona a contagem do custo dos pisos da enfermagem nos limites com pessoal."
+  },
+  {
+   "target_id": "ADCT:ART.38",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Obrigacao descrita com o verbo do texto (\"deverao retornar\") e com a indicacao do paragrafo.",
+   "before": "Quem estiver acima do limite deve retornar a ele, reduzindo o excesso à razão de um quinto por ano.",
+   "after": "O § 1º manda quem estiver acima do limite voltar a ele, reduzindo o excesso à razão de um quinto por ano."
+  },
+  {
+   "target_id": "ADCT:ART.42",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "V3_NUMBER_NOT_IN_TEXT",
+   "reason": "Quantidade expressa na forma do texto (50%), sem conversao.",
+   "before": "Dentro desses percentuais, pelo menos metade deve atender a agricultores familiares, conforme os requisitos da lei.",
+   "after": "Dentro desses percentuais, no mínimo 50% devem atender a agricultores familiares, conforme os requisitos da lei."
+  },
+  {
+   "target_id": "ADCT:ART.46",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "A regra se aplica também às operações posteriores à decretação desses regimes, a várias operações financeiras de apoio, como empréstimos, assistência de liquidez e garantia de depósitos, aos créditos anteriores à promulgação e aos créditos de entidades públicas anteriores a ela, não liquidados até 1º de janeiro de 1988.",
+   "after": "A regra se aplica também às operações posteriores à decretação desses regimes e a várias operações financeiras de apoio, como empréstimos, assistência de liquidez e garantia de depósitos. Alcança ainda os créditos anteriores à promulgação e os créditos de entidades públicas anteriores a ela, não liquidados até 1º de janeiro de 1988."
+  },
+  {
+   "target_id": "ADCT:ART.53",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elementos do inciso III restaurados.",
+   "before": "pensão aos dependentes em caso de morte;",
+   "after": "em caso de morte, pensão à viúva, à companheira ou a dependente, de forma proporcional e de valor igual ao da pensão especial;"
+  },
+  {
+   "target_id": "ADCT:ART.53",
+   "section": "o_que_significa",
+   "category": "EXCECAO_OMITIDA",
+   "detector": "V3_EXCEPTION_OR_RESSALVA_DROPPED",
+   "reason": "Reformulado para nao reafirmar a regra em termos gerais (EXCEPTION_OR_RESSALVA_DROPPED).",
+   "before": "A pensão especial pode ser requerida a qualquer tempo, o que mantém a regra aplicável enquanto houver beneficiários.",
+   "after": "Não há prazo para requerer a pensão especial, o que mantém a regra aplicável enquanto houver beneficiários."
+  },
+  {
+   "target_id": "ADCT:ART.53",
+   "section": "o_que_significa",
+   "category": "REPETICAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Repeticao do inciso III, agora completo em O QUE DIZ.",
+   "before": "A morte do ex-combatente transfere a pensão à viúva, à companheira ou a dependentes, de forma proporcional.\n",
+   "after": ""
+  },
+  {
+   "target_id": "ADCT:ART.60",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O § 1º fixa mínimos anuais para a parcela ligada ao valor anual total por aluno, de 2 a 10,5 pontos percentuais, e o § 2º fixa valores para a parcela ligada a resultados, de 0,75 a 2,5 pontos percentuais, do terceiro ao sexto ano.",
+   "after": "O § 1º fixa mínimos anuais para a parcela ligada ao valor anual total por aluno, de 2 a 10,5 pontos percentuais. O § 2º fixa valores para a parcela ligada a resultados, de 0,75 a 2,5 pontos percentuais, do terceiro ao sexto ano."
+  }
+ ]
+}

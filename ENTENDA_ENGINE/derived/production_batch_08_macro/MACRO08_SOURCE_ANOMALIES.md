@@ -1,0 +1,144 @@
+# MACRO08 — ANOMALIAS DA FONTE (sanity antes da geração)
+
+sanity estrutural executado ANTES da geracao; nada foi corrigido por redacao manual.
+
+Escopo: todos os artigos do macrolote (corpo permanente e ADCT), inclusive sub-blocos ainda não gerados. Fonte: config do lote (`ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/entenda_config.json`).
+
+## Contagem
+
+- CURRENT_WITHOUT_TEXT: 1
+- LEGACY_MULTIVERSION_LABEL: 78
+- POSSIBLE_GLUED_SIBLING_LABEL: 1
+- REPEATED_LABEL: 1
+- TEXT_CONTAINS_CLOSING_FORMULA: 1
+
+## Anomalias registradas (diagnóstico)
+
+### MB08-SRC-01 — `CF88:ART.239:PAR.4` (GLUED_PARAGRAPH_IN_OPERATIONAL_SOURCE)
+
+Na fonte operacional do ENTENDA (Senado normalizado CF, sha256 d2f681e0..., reconstruida em constituicao_federal_1988.txt) o texto do § 4º esta colado ao final do § 3º-A ('...1,5 (um inteiro e cinco decimos).§ 4º O financiamento...'). O target CF88:ART.239:PAR.4 fica CURRENT sem texto e o snapshot de CF88:ART.239:PAR.3-A inclui o § 4º.
+
+- Diagnóstico: Defeito da fonte oficial normalizada; o runtime da Lei Seca (CF88_RUNTIME.txt) ja separa o § 4º pela regra HEADER_NORMALIZATION_RULE_V1 caso C (exportar_cf88_runtime.py). O leitor ENTENDA do namespace CF88 usa a fonte operacional e nao aplica o caso C.
+- Tratamento: Nao contornado por redacao manual: o § 4º e explicado na visao geral do art. 239 e o bloco do § 3º declara na camada externa que o § 4º nao o integra. Correcao definitiva (perfil CF88 tambem pelo runtime, com reconciliacao dos registros aprovados) fica no BACKLOG.
+
+### MB08-SRC-02 — `CF88:ART.250:CAPUT` (CLOSING_FORMULA_ABSORBED)
+
+Na fonte operacional, o caput do art. 250 absorve a formula de encerramento ('Brasilia, 5 de outubro de 1988.') e as assinaturas dos constituintes, porque o leitor ENTENDA analisa a fonte sem marcador de fim.
+
+- Diagnóstico: O parser estrito do runtime usa o marcador de fim e nao tem a anomalia; o perfil CF88_OFFICIAL_RUNTIME so troca o leitor do ADCT. A visao geral do art. 250 explica so o conteudo normativo.
+- Tratamento: Registrado; nota na camada externa da visao geral; correcao no BACKLOG (mesmo item de MB08-SRC-01).
+
+### MB08-SRC-03 — `ADCT:ART.134:PAR.4 / ADCT:ART.134:PAR.6` (HYPERLINK_FRAGMENT_REPEATED_LABEL)
+
+No runtime oficial, um fragmento de hiperlink ('§ 6º, todos da Constituicao Federal') inicia linha dentro do § 4º do art. 134 do ADCT. O parser estrito cria uma primeira ocorrencia de PAR.6 e o texto do § 4º termina em '...212, 212-A, II, e 216,'. A ultima ocorrencia (line_start) e o § 6º verdadeiro, com seus incisos.
+
+- Diagnóstico: Conhecido e documentado em DEVICE_INTEGRATION/ADCT_SOURCE_INGESTION_REPORT.md (nota 2). O perfil ordena por line_start (mesma regra do mapa do runtime), entao o § 6º e seus incisos ficam corretos; o texto do § 4º permanece truncado na fonte.
+- Tratamento: O § 4º do ADCT art. 134 nao recebe explicacao propria; a visao geral do art. 134 descreve o § 4º apenas pelo que o texto disponivel diz e sinaliza a anomalia na camada externa.
+
+### MB08-SRC-04 — `ADCT (namespace inteiro)` (LEGACY_STRUCTURAL_SOURCE_FOR_ADCT)
+
+A config ENTENDA global le o ADCT do cf.txt legado multivigente (todos os targets UNKNOWN_VALIDITY; varias redacoes por rotulo; ex.: ADCT art. 2 com a data original de 1993 em vez da data vigente). O perfil CF88_OFFICIAL_RUNTIME le o ADCT da compilacao monovigente oficial.
+
+- Diagnóstico: Lacuna de targetizacao/status, nao de fonte: o texto oficial do ADCT esta versionado (Senado 604119, SOURCES_LOCK) e no runtime da Lei Seca.
+- Tratamento: Resolvido de forma generica pelo perfil de texto (entenda_text_profile.py), sem alterar indice, status ou config globais.
+
+### MB08-SRC-05 — `ADCT:ART.10:INC.II` (APPROVED_PILOT_LEGACY_SNAPSHOT)
+
+O piloto aprovado (HUMAN_APPROVED_T1) do ADCT art. 10, II, foi carimbado com o texto do cf.txt legado, que inclui a nota '(Vide Lei Complementar nº 146, de 2014)' ausente da compilacao monovigente, e com status UNKNOWN + verificacao externa. Sob o perfil oficial o target e CURRENT e o snapshot diverge.
+
+- Diagnóstico: Conflito de modelagem entre o piloto legado e o perfil oficial; nao e erro do texto.
+- Tratamento: ADCT art. 10 fica fora deste lote (SKIP_APPROVED_PILOT_LEGACY_MODEL, com motivo); o piloto nao foi alterado. Reconciliacao no BACKLOG.
+
+### MB08-SRC-06 — `ADCT:ART.77:INC.I:AL.a` (ORDINAL_GLYPH_IN_WORD)
+
+No texto oficial versionado (CF88_RUNTIME.txt), as alineas a e b do inciso I do art. 77 do ADCT trazem 'anº 2000' e 'anº 2001 ao anº 2004' no lugar de 'ano'. Os dois targets existem apenas no runtime (nao estao no indice legado).
+
+- Diagnóstico: Artefato de normalizacao do sinal ordinal na fonte oficial (abreviacao 'ano' convertida como se fosse 'nº'). Nao altera o sentido, mas o texto exibido diverge da grafia correta.
+- Tratamento: Nao corrigido manualmente na Lei Seca. O art. 77 foi classificado como SKIP (prazos ate 2004 exauridos; § 4º dependente de dado externo), entao nenhum ENTENDA cita a grafia. Registro no BACKLOG para revisao do normalizador da fonte.
+
+## Achados automáticos
+
+| Target | Código | Severidade | Detalhe | Diagnóstico |
+|---|---|---|---|---|
+| `CF88:ART.176:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.177:INC.V` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.177:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.177:PAR.2` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.178:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.192:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.194:PAR.UNICO:INC.VI` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.194:PAR.UNICO:INC.VII` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.195:INC.I` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.195:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.195:PAR.8` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.195:PAR.9` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.195:PAR.11` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.198:PAR.2:INC.I` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.198:PAR.2:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.198:PAR.2:INC.III` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.198:PAR.3:INC.I` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.198:PAR.5` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.200:INC.V` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:INC.I` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:INC.III` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:INC.IV` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:INC.V` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 4 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.2` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.3` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.4` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.5` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.6` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.7` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.8` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.7:INC.I` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.7:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.9` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.10` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.12` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.201:PAR.13` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.202:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.202:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.202:PAR.2` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.202:PAR.4` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.202:PAR.5` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.202:PAR.6` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.206:INC.V` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.208:INC.I` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.208:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.208:INC.IV` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.208:INC.VII` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.211:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.211:PAR.2` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.211:PAR.4` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.212:PAR.3` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.212:PAR.5` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.212-A:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.213:PAR.2` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.214:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.218:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.218:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.218:PAR.3` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.222:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.222:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.222:PAR.2` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.225:PAR.1:INC.VIII` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.226:PAR.6` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.227:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.227:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.227:PAR.1:INC.II` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.227:PAR.3:INC.III` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.227:PAR.3:INC.VII` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.239:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.239:PAR.1` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.239:PAR.3` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.239:PAR.3-A` | POSSIBLE_GLUED_SIBLING_LABEL | REVIEW | ice de 1,5 (um inteiro e cinco décimos).§ 4º O financiamento do seguro-desemprego rece | MB08-SRC-01. |
+| `CF88:ART.239:PAR.4` | CURRENT_WITHOUT_TEXT | BLOCKING_FOR_TARGET | target CURRENT sem texto no runtime/fonte | MB08-SRC-01: texto colado ao § 3º-A na fonte operacional; o runtime separa (caso C). |
+| `CF88:ART.241:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.243:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.243:PAR.UNICO` | LEGACY_MULTIVERSION_LABEL | INFO | 2 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.246:CAPUT` | LEGACY_MULTIVERSION_LABEL | INFO | 3 redacoes no indice estrutural legado (cf.txt multivigente); texto lido da fonte monovigente | — |
+| `CF88:ART.250:CAPUT` | TEXT_CONTAINS_CLOSING_FORMULA | REVIEW | texto do dispositivo continua apos o fim normativo: "a natureza e administração desse fundo. Brasília, 5 de outubro de 1988. Ulysses Guimarã | MB08-SRC-02. |
+| `ADCT:ART.134:PAR.6` | REPEATED_LABEL | REVIEW | 2 ocorrencias do rotulo na compilacao monovigente; texto da ultima ocorrencia (line_start) | MB08-SRC-03: fragmento de hiperlink; ultima ocorrencia e a canonica. |

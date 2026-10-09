@@ -1,0 +1,91 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "policy": "Registro de problemas encontrados durante a missao em modulos compartilhados, runtime, fonte ou conteudo antigo. Nada aqui foi corrigido nesta missao.",
+ "items": [
+  {
+   "id": "MB08-01",
+   "kind": "PILOT_LEGACY_MODEL_CONFLICT",
+   "target": "ADCT:ART.10:INC.II",
+   "detail": "ADCT:ART.10:INC.II tem explicacao HUMAN_APPROVED_T1 carimbada com o texto do cf.txt legado (status UNKNOWN); sob o perfil oficial o status e CURRENT e o snapshot diverge (MB08-SRC-05). O Macro08 nao gerou explicacao para o art. 10 (SKIP_APPROVED_PILOT_LEGACY_MODEL) para nao alterar conteudo aprovado.",
+   "action": "Revisao humana do registro piloto contra o texto oficial do runtime; decidir substituicao em missao propria."
+  },
+  {
+   "id": "MB08-02",
+   "kind": "OPERATIONAL_SOURCE_ANOMALY",
+   "target": "CF88:ART.239:PAR.4",
+   "detail": "Fonte operacional do namespace CF88 cola o § 4º ao § 3º-A (MB08-SRC-01); o runtime ja separa. Nao corrigido; explicado na visao geral.",
+   "action": "Estender o perfil CF88_OFFICIAL_RUNTIME ao namespace CF88 com reconciliacao dos 300 HUMAN_APPROVED_T1 (missao propria)."
+  },
+  {
+   "id": "MB08-03",
+   "kind": "OPERATIONAL_SOURCE_ANOMALY",
+   "target": "CF88:ART.250:CAPUT",
+   "detail": "Caput do art. 250 absorve a formula de encerramento e as assinaturas na fonte operacional (MB08-SRC-02).",
+   "action": "Mesma acao de MB08-02 (perfil runtime tambem para CF88)."
+  },
+  {
+   "id": "MB08-04",
+   "kind": "RUNTIME_TEXT_ANOMALY",
+   "target": "ADCT:ART.134:PAR.4",
+   "detail": "§ 4º truncado e fragmento de hiperlink no § 6º no texto oficial versionado (MB08-SRC-03). A visao geral do art. 134 avisa o leitor.",
+   "action": "Conferir o art. 134 na fonte oficial (Senado) e regenerar o runtime se necessario."
+  },
+  {
+   "id": "MB08-05",
+   "kind": "RUNTIME_TEXT_ANOMALY",
+   "target": "ADCT:ART.77:INC.I:AL.a",
+   "detail": "Grafia \"anº\" no lugar de \"ano\" nas alineas a e b do inciso I do art. 77 do ADCT (MB08-SRC-06).",
+   "action": "Revisar o normalizador do sinal ordinal na geracao do runtime."
+  },
+  {
+   "id": "MB08-06",
+   "kind": "LEGACY_READER_ADCT",
+   "target": "ADCT",
+   "detail": "O config global le o ADCT do cf.txt multi-versao (812 alvos UNKNOWN_VALIDITY, 139 divergencias com o parser estrito); o Macro08 usa o perfil CF88_OFFICIAL_RUNTIME (MB08-SRC-04). Os lotes anteriores e o config global nao foram alterados.",
+   "action": "Promover o perfil runtime a config padrao do ADCT apos reconciliacao (missao propria)."
+  },
+  {
+   "id": "MB08-07",
+   "kind": "SHARED_VALIDATOR_LIMIT",
+   "target": "t1_validator_v2.cited_targets",
+   "detail": "O validador compartilhado v2 so resolve citacoes do namespace CF88; remissoes ao ADCT viram EXTERNAL_*. O Macro08 refina no builder (namespace_cited / ADCT_REFERENCE_GROUNDED_IN_RUNTIME) sem tocar o modulo hash-pinned.",
+   "action": "Tornar cited_targets ciente de namespace no validador compartilhado (com novo pin de hash)."
+  },
+  {
+   "id": "MB08-08",
+   "kind": "SHARED_VALIDATOR_FALSE_POSITIVE",
+   "target": "t1_validator_v2.LAW_STATUS_CLAIM",
+   "detail": "A regex de LAW_STATUS_CLAIM dispara mesmo em frases que negam conhecer o estado da lei (\"O texto nao informa se essa lei foi editada\"). Os drafts foram reescritos para contornar.",
+   "action": "Ajustar a regex para ignorar formulacoes negativas/condicionais."
+  },
+  {
+   "id": "MB08-09",
+   "kind": "NUMERIC_PARITY_LIMIT",
+   "target": "CF88:ART.212",
+   "detail": "O texto diz \"dezoito, e os Estados, o Distrito Federal e os Municipios vinte e cinco por cento\"; o detector de paridade numerica nao associa \"dezoito\" a \"por cento\" e marca 18% como NUMBER_NOT_IN_TEXT (fila C).",
+   "action": "Ensinar ao extrator de quantidades a distribuicao de \"por cento\" em enumeracoes."
+  },
+  {
+   "id": "MB08-10",
+   "kind": "OLD_CONTENT_JUDICIAL_REVIEW",
+   "target": "corpora anteriores",
+   "detail": "26 registros antigos (12 HUMAN_APPROVED_T1, 14 PENDING) seriam HIGH pela regra JUDICIAL_REVIEW_ANNOTATED (tabela acima). Nenhum alterado.",
+   "action": "Classificar CONTEXT_ONLY x REQUIRED em missao propria."
+  },
+  {
+   "id": "MB08-11",
+   "kind": "PARALLEL_BRANCH_RECONCILIATION",
+   "target": "cf-macro-176-250-adct-cloud",
+   "detail": "Branch criado do checkpoint fixo 03e6f259 em paralelo a cf-macro-76-175-cloud (STACKED_PARALLEL_BRANCH). Contagem global de aprovacoes e corpora precisam de reconciliacao antes de qualquer merge (GLOBAL_APPROVAL_COUNT_REQUIRES_PARALLEL_RECONCILIATION).",
+   "action": "Reconciliar com cf-macro-76-175-cloud antes do merge (RECONCILIATION_REQUIRED_BEFORE_MERGE)."
+  },
+  {
+   "id": "MB08-12",
+   "kind": "EXTERNAL_INGESTION_PENDING",
+   "target": "ADCT (varios)",
+   "detail": "Estado de leis complementares, emendas nao versionadas (ex.: EC 67/2010 no art. 79) e acoes de controle (ADI 7064, MI 7300) mantem 18 itens ADCT em D (TEMPORAL_STATUS_UNRESOLVED / JUDICIAL_REVIEW_REQUIRED).",
+   "action": "Ingerir legislacao correlata e jurisprudencia (PENDING_EXTERNAL_INGESTION) e reavaliar os D."
+  }
+ ]
+}
