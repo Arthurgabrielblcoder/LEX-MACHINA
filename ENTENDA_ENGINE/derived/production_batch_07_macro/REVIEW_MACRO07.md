@@ -6629,12 +6629,12 @@ A garantia da lei e da ordem possui caráter excepcional e pressupõe o esgotame
 
 ### Art. 142, § 2º — Habeas corpus e punições disciplinares militares
 
-- **TARGET:** `CF88:ART.142:PAR.2` · `ENTENDA/CF88:ART.142:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.142:PAR.2` · `ENTENDA/CF88:ART.142:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 142, § 2º — Habeas corpus e punições disciplinares militares
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.142`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1661 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 244 palavras · 2503 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: vedacao de habeas corpus contra punicoes disciplinares militares, cuja leitura literal nao basta.
 
 **O QUE DIZ**
@@ -6643,19 +6643,19 @@ O § 2º estabelece que não cabe habeas corpus em relação a punições discip
 
 **O QUE SIGNIFICA**
 
-A disciplina é a base da organização militar. O parágrafo afasta o habeas corpus, a ação que protege a liberdade de locomoção, quando a restrição decorre de punição disciplinar.
+A disciplina é a base da organização militar. A Constituição restringe o uso do habeas corpus, a ação que protege a liberdade de locomoção, contra punições disciplinares militares. A regra limita, para esse caso, o direito previsto no art. 5º, LXVIII, e se dirige às punições disciplinares, e não a prisões por crime.
 
-A regra limita, para esse caso, o direito previsto no art. 5º, LXVIII. Ela se dirige às punições disciplinares, e não a prisões por crime.
+Essa vedação impede que a ação seja usada apenas para reexaminar o mérito da punição disciplinar.
 
-O que pode ser examinado em habeas corpus quanto à legalidade dessa punição é tema da camada JURISPRUDÊNCIA.
+O Supremo Tribunal Federal, entretanto, admite o exame dos pressupostos de legalidade da medida: existência da hierarquia, poder disciplinar da autoridade, relação do ato com a função militar e possibilidade jurídica de aplicação disciplinar da sanção. Portanto, a vedação constitucional não transforma a punição disciplinar em ato imune ao controle de legalidade.
 
 **EXEMPLO PRÁTICO**
 
-Um soldado recebe punição de detenção disciplinar por chegar atrasado ao quartel. Pelo texto, ele não pode usar o habeas corpus para discutir se mereceu a punição.
+Um soldado recebe punição de detenção disciplinar por chegar atrasado ao quartel. Ele não pode usar o habeas corpus apenas para discutir se a punição foi justa ou merecida. Pode, porém, questionar vício relacionado à legalidade da medida, como a inexistência de poder disciplinar da autoridade que a aplicou.
 
 **ATENÇÃO**
 
-O alcance da vedação não deve ser deduzido apenas do texto: a possibilidade de discutir pelo habeas corpus a legalidade da punição, como a competência de quem a aplicou, é definida pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+A distinção fundamental é entre o mérito disciplinar, protegido pela restrição constitucional ao habeas corpus, e os pressupostos de legalidade da punição, que podem ser submetidos ao controle judicial nos limites reconhecidos pela jurisprudência.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -6664,11 +6664,11 @@ O alcance da vedação não deve ser deduzido apenas do texto: a possibilidade d
 
 **CAMADA EXTERNA**
 
-- A distinção entre o mérito da punição e os pressupostos de legalidade examináveis em habeas corpus é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 142, § 2º): HC 70.648 (1ª Turma, 9/11/1993) admite o exame, em habeas corpus, dos pressupostos de legalidade da punição disciplinar militar (hierarquia, poder disciplinar, ato ligado à função e pena suscetível de ser aplicada disciplinarmente); a vedação alcança o mérito. Orientação seguida no RHC 88.543 (2007) e no RE 338.840 (2003). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: habeas corpus em relação a punições disciplinares militares)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: habeas corpus em relação a punições disciplinares militares)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O T1 remetia à camada JURISPRUDÊNCIA uma distinção já consolidada: a vedação do § 2º alcança o mérito da punição, mas não impede o exame dos pressupostos de legalidade (HC 70.648, seguido no RHC 88.543 e no RE 338.840). O O QUE SIGNIFICA, o exemplo e a ATENÇÃO passam a ensinar a distinção; os identificadores ficam nas notas e na provenance. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -8320,12 +8320,12 @@ A faculdade alcança apenas os quatro impostos indicados. Para eles, o art. 150,
 
 ### Art. 153, § 3º — Regras do imposto sobre produtos industrializados
 
-- **TARGET:** `CF88:ART.153:PAR.3` · `ENTENDA/CF88:ART.153:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.153:PAR.3` · `ENTENDA/CF88:ART.153:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 153, § 3º — Regras do imposto sobre produtos industrializados
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 220 palavras · 1859 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 266 palavras · 2898 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: seletividade, nao cumulatividade, nao incidencia na exportacao e reducao sobre bens de capital.
 
 **O QUE DIZ**
@@ -8348,7 +8348,9 @@ Uma fábrica de móveis compra madeira já tributada pelo imposto. Ao vender os 
 
 **ATENÇÃO**
 
-A redução do impacto sobre bens de capital depende da lei. A reforma tributária alterou o papel deste imposto, e a aplicação no tempo depende de regra de transição do ADCT, na camada externa.
+A redução do impacto sobre bens de capital depende da lei.
+A transição da reforma tributária modifica o papel deste imposto a partir de 2027. Desde esse ano, suas alíquotas ficam reduzidas a zero, ressalvados os produtos industrializados sob o regime favorecido da Zona Franca de Manaus que se enquadrem nos critérios constitucionais e da legislação complementar aplicável. Esses critérios já foram disciplinados pela legislação complementar da reforma tributária.
+No exercício de 2026, a redução a zero ainda não começou.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8358,11 +8360,11 @@ A redução do impacto sobre bens de capital depende da lei. A reforma tributár
 
 **CAMADA EXTERNA**
 
-- As regras de transição da reforma tributária sobre este imposto ficam no ADCT, na camada externa.
+- Verificado na fonte oficial (Planalto): ADCT, art. 126, III, "a": a partir de 2027, alíquotas do IPI reduzidas a zero, exceto para os produtos com industrialização incentivada na Zona Franca de Manaus, conforme critérios de lei complementar; "b": sem incidência cumulativa com o imposto do art. 153, VIII. LC 214/2025, art. 454: a partir de 1º/1/2027, alíquota zero também para produtos com alíquota inferior a 6,5% na Tipi vigente em 31/12/2023, industrializados na Zona Franca de Manaus em 2024 ou com projeto aprovado pelo CAS (excluídos os bens de TIC do § 2º; lista divulgada pelo Executivo, § 3º); art. 455: bens sem similar nacional instalados na Zona Franca de Manaus (crédito presumido de CBS ou IPI mínimo de 6,5%). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Núcleo das quatro características correto e mantido. A ATENÇÃO deixa de remeter à camada externa e passa a dar a regra concreta: redução a zero a partir de 2027, ressalvados os produtos da Zona Franca de Manaus nos critérios da LC 214/2025 (arts. 454 e 455); em 2026 a redução ainda não começou. Sem "todo IPI será zero" e sem "segue cobrado normalmente". (seções: atencao, external_layer_notes)
 
 ---
 
@@ -8887,12 +8889,12 @@ O regime depende da lei complementar que define os combustíveis de incidência 
 
 ### Art. 155, § 6º — Imposto sobre a propriedade de veículos
 
-- **TARGET:** `CF88:ART.155:PAR.6` · `ENTENDA/CF88:ART.155:PAR.6/BASE/1`
+- **TARGET:** `CF88:ART.155:PAR.6` · `ENTENDA/CF88:ART.155:PAR.6/BASE/2`
 - **DISPLAY TITLE:** Art. 155, § 6º — Imposto sobre a propriedade de veículos
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 260 palavras · 2223 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 315 palavras · 3147 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: aliquotas minimas, aliquotas diferenciadas, veiculos alcancados e excecoes.
 
 **O QUE DIZ**
@@ -8909,11 +8911,12 @@ Vários veículos ficam excetuados por estarem ligados a atividades econômicas 
 
 **EXEMPLO PRÁTICO**
 
-Um proprietário de lancha de passeio passa a pagar o imposto sobre ela. Já um pescador artesanal com embarcação de pesca fica fora da incidência.
+Se a legislação do Estado competente já tiver instituído a cobrança segundo a nova competência constitucional, o proprietário de uma lancha de passeio poderá estar sujeito ao imposto. A embarcação abrangida por uma das exceções constitucionais, como a utilizada na pesca artesanal nas condições previstas pelo texto, fica fora dessa incidência.
 
 **ATENÇÃO**
 
-A inclusão de veículos aquáticos e aéreos e as exceções foram trazidas por emenda recente. A aplicação no tempo depende de regra de transição e da legislação de cada Estado, consultadas na camada externa.
+A ampliação constitucional da incidência para veículos aquáticos e aéreos, com as exceções previstas no texto, está vigente desde a publicação da reforma tributária. A cobrança concreta depende da legislação do Estado competente e da observância das limitações constitucionais ao poder de tributar.
+A Constituição também passou a excetuar determinados veículos terrestres com vinte anos ou mais, nos termos da alteração constitucional posterior.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8923,11 +8926,11 @@ A inclusão de veículos aquáticos e aéreos e as exceções foram trazidas por
 
 **CAMADA EXTERNA**
 
-- Regras de transição da emenda que ampliou o imposto e a legislação estadual ficam na camada externa.
+- Verificado na fonte oficial (Planalto): a nova redação do § 6º foi dada pelo art. 1º da EC 132/2023 e vigora desde a publicação (art. 23, III; DOU de 21/12/2023), sem regra de transição própria para a ampliação; a alínea "e" do inciso III (veículos terrestres com vinte anos ou mais) foi incluída pela EC 137/2025, em vigor na publicação (art. 2º). A cobrança sobre veículos aquáticos e aéreos depende da lei de cada Estado e das anterioridades; a legislação estadual não foi verificada. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: veículos terrestres de passageiros caminhonetes e mistos com)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O exemplo afirmava em plano nacional que o dono de lancha "passa a pagar", sem a lei estadual. Agora separa os três planos: competência constitucional (vigente desde a publicação da EC 132), instituição e cobrança pela lei do Estado (com as limitações ao poder de tributar) e exceções constitucionais (inclusive a da EC 137). Retirada a menção a "regra de transição", inexistente para a ampliação do § 6º. (seções: atencao, exemplo_pratico, external_layer_notes)
 
 ---
 
@@ -9126,12 +9129,12 @@ Sem explicação própria: 58 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 156-A — Imposto sobre bens e serviços
 
-- **TARGET:** `CF88:ART.156-A` · `ENTENDA/CF88:ART.156-A/BASE/1`
+- **TARGET:** `CF88:ART.156-A` · `ENTENDA/CF88:ART.156-A/BASE/2`
 - **DISPLAY TITLE:** Art. 156-A — Imposto sobre bens e serviços
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 307 palavras · 2379 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 368 palavras · 3401 bytes · referências 0
 - **Motivo da seleção:** Visao geral: imposto de competencia compartilhada criado pela reforma tributaria e mapa dos paragrafos; aplicacao no tempo depende de transicao.
 
 **O QUE DIZ**
@@ -9140,13 +9143,11 @@ O art. 156-A determina que lei complementar crie um imposto sobre bens e serviç
 
 **O QUE SIGNIFICA**
 
-O imposto sobre bens e serviços é um tributo novo criado pela reforma tributária. Ele não pertence a um único ente: Estados, Distrito Federal e Municípios dividem a competência.
+O imposto sobre bens e serviços previsto no art. 156-A já foi instituído pela legislação complementar. Sua competência é compartilhada entre Estados, Distrito Federal e Municípios, e sua administração ocorre de forma integrada, pelo Comitê Gestor (art. 156-B).
 
 O texto desenha um imposto amplo sobre o consumo, com a mesma legislação em todo o país e cobrança no destino, isto é, no lugar onde o bem ou o serviço é consumido.
 
-Cada ente fixa sua própria alíquota por lei específica, e o imposto devido é a soma das alíquotas do Estado e do Município de destino.
-
-A arrecadação é administrada de forma integrada pelo Comitê Gestor (art. 156-B).
+No modelo permanente, cada ente fixa sua própria alíquota por lei específica, e o imposto devido é a soma das alíquotas do Estado e do Município de destino. No exercício de 2026, porém, o imposto ainda está em fase específica de implantação.
 
 **EXEMPLO PRÁTICO**
 
@@ -9154,7 +9155,8 @@ Uma pessoa em um Município compra um eletrodoméstico de uma loja de outro Esta
 
 **ATENÇÃO**
 
-O imposto foi criado por emenda recente. A partir de quando ele é cobrado e como convive com os impostos que substitui dependem de regra de transição do ADCT e da lei complementar, consultadas na camada externa.
+No exercício de 2026, o imposto sobre bens e serviços (IBS) está na fase inicial de transição, com alíquota reduzida fixada no ADCT. A legislação complementar prevê mecanismos de compensação e hipótese de dispensa do recolhimento quando cumpridas as obrigações acessórias aplicáveis.
+Nos exercícios de 2027 e 2028 começa a etapa seguinte da transição. De 2029 a 2032 ocorre a redução gradual dos impostos que serão substituídos e, a partir de 2033, extinguem-se o ICMS e o ISS, segundo o cronograma constitucional.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -9164,11 +9166,11 @@ O imposto foi criado por emenda recente. A partir de quando ele é cobrado e com
 
 **CAMADA EXTERNA**
 
-- A lei complementar do imposto e as regras de transição da reforma tributária (ADCT) ficam na camada externa: EXTERNAL_VERIFICATION_REQUIRED para a fase de aplicação vigente.
+- Verificado na fonte oficial (Planalto): ADCT, arts. 125 (2026: IBS a 0,1% e CBS a 0,9%, compensáveis; arrecadação de 2026 sem as vinculações e repartições constitucionais; dispensa por lei complementar), 127 (2027-2028), 128 (2029-2032) e 129 (extinção do ICMS e do ISS em 2033). LC 214/2025 institui o IBS: art. 343 (0,1% em 2026), art. 344 (0,05% estadual e 0,05% municipal em 2027-2028), art. 348 (compensação com PIS/Cofins, outro tributo federal ou ressarcimento; § 1º, dispensa do recolhimento para quem cumpre as obrigações acessórias; §§ 3º e 4º incluídos pela LC 227/2026). LC 227/2026 institui o Comitê Gestor do IBS e disciplina o processo administrativo e a distribuição. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: alíquotas do estado e do município de destino); NEAR_COPY_OF_OFFICIAL_TEXT (exemplo_pratico: alíquotas do estado e do município de destino)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O T1 tratava o IBS como tributo apenas futuro e remetia à camada externa uma lei já existente. O O QUE SIGNIFICA passa a dizer que o imposto já foi instituído (LC 214/2025) e está em fase de implantação em 2026; a ATENÇÃO dá o cronograma do ADCT, com a alíquota de 0,1% em 2026, a compensação e a dispensa do recolhimento para quem cumpre as obrigações acessórias. Comitê Gestor com provenance na LC 227/2026. (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
@@ -9554,12 +9556,12 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 158 — Receitas tributárias dos Municípios
 
-- **TARGET:** `CF88:ART.158` · `ENTENDA/CF88:ART.158/BASE/1`
+- **TARGET:** `CF88:ART.158` · `ENTENDA/CF88:ART.158/BASE/2`
 - **DISPLAY TITLE:** Art. 158 — Receitas tributárias dos Municípios
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 283 palavras · 2023 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 328 palavras · 2654 bytes · referências 0
 - **Motivo da seleção:** Visao geral: receitas de impostos federais e estaduais que pertencem aos Municipios.
 
 **O QUE DIZ**
@@ -9570,7 +9572,7 @@ O art. 158 atribui aos Municípios o imposto de renda retido na fonte sobre rend
 
 O Município recebe parte de impostos que não são seus.
 
-Da União, fica com o imposto de renda que retém sobre os salários que paga e com parte do imposto territorial rural.
+Da União, fica com o imposto de renda objeto de retenção na fonte sobre os rendimentos pagos, a qualquer título, por ele, por suas autarquias e por suas fundações, nos termos do inciso I, e com parte do imposto territorial rural.
 
 Do Estado, recebe cinquenta por cento do imposto sobre veículos e vinte e cinco por cento do imposto sobre circulação de mercadorias e do novo imposto sobre bens e serviços destinado ao Estado.
 
@@ -9582,31 +9584,31 @@ Um morador licencia seu carro em determinado Município e paga o imposto estadua
 
 **ATENÇÃO**
 
-A parcela do imposto territorial rural chega à totalidade quando o Município opta por fiscalizar e cobrar o imposto (art. 153, § 4º, III). As referências ao imposto do art. 156-A seguem regra de transição do ADCT, na camada externa.
+A parcela do imposto territorial rural chega à totalidade quando o Município opta por fiscalizar e cobrar o imposto (art. 153, § 4º, III).
+As regras do art. 158 são permanentes, mas a parcela relacionada ao imposto do art. 156-A tem transição própria. Na arrecadação transitória de 2026, esse imposto não é repartido segundo essa regra. De 2029 a 2077, antes da distribuição ordinária, incide o mecanismo transitório de retenção e redistribuição previsto no ADCT.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Licenciamento*: registro anual do veículo no órgão de trânsito.
 - *Retenção na fonte*: desconto do imposto feito por quem paga o rendimento.
 
 **CAMADA EXTERNA**
 
-—
+- Verificado na fonte oficial (Planalto, texto compilado do ADCT): art. 125, § 3º (arrecadação do IBS de 2026 sem as repartições do art. 158, IV, "b") e art. 131 (de 2029 a 2077, parcela do IBS retida e distribuída antes da aplicação do art. 158, IV, "b"). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cinquenta por cento do produto da arrecadação do); TERM_NOT_USED (palavras_dificeis: Licenciamento); TERM_NOT_USED (palavras_dificeis: Retenção na fonte)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cinquenta por cento do produto da arrecadação do)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Imposto de renda que retém sobre os salários que paga" estreitava o inciso I: o texto fala em rendimentos pagos, a qualquer título, pelo Município, suas autarquias e fundações. A expressão "retenção na fonte" passa ao corpo (o glossário deixa de ser inútil) e "Licenciamento", sem uso, sai do glossário. A ATENÇÃO separa a regra permanente da transição do ADCT (2026 sem repartição; retenção de 2029 a 2077). (seções: atencao, external_layer_notes, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios
 
-- **TARGET:** `CF88:ART.158:PAR.1` · `ENTENDA/CF88:ART.158:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.158:PAR.1` · `ENTENDA/CF88:ART.158:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.158:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.158`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2168 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 323 palavras · 2854 bytes · referências 0
 - **Motivo da seleção:** Bloco: criterios de credito das parcelas do imposto de circulacao (§ 1º) e do imposto do art. 156-A (§ 2º).
 
 **O QUE DIZ**
@@ -9627,7 +9629,8 @@ Dois Municípios de mesmo tamanho recebem valores diferentes da parcela do impos
 
 **ATENÇÃO**
 
-Os critérios de educação e de meio ambiente são detalhados em lei estadual. A aplicação do § 2º acompanha regra de transição do ADCT, na camada externa.
+Os critérios de educação e de meio ambiente são detalhados em lei estadual.
+Os critérios do § 1º aplicam-se à repartição nele disciplinada. Já a distribuição relacionada ao imposto do art. 156-A possui transição constitucional própria: no exercício de 2026 não ocorre a repartição prevista para essa arrecadação transitória e, de 2029 a 2077, aplica-se também o mecanismo transitório previsto no ADCT antes da distribuição segundo os critérios permanentes do § 2º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -9637,11 +9640,11 @@ Os critérios de educação e de meio ambiente são detalhados em lei estadual. 
 
 **CAMADA EXTERNA**
 
-—
+- Verificado na fonte oficial (Planalto, texto compilado do ADCT): art. 125, § 3º (arrecadação do IBS de 2026 sem as repartições constitucionais) e art. 131 (de 2029 a 2077, retenção e distribuição de parcela do IBS antes da aplicação dos critérios do art. 158, § 2º). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Percentuais dos §§ 1º e 2º corretos e mantidos. A ATENÇÃO deixa de remeter à camada externa e explica que a transição atinge a distribuição ligada ao imposto do art. 156-A (2026 sem repartição; mecanismo do ADCT de 2029 a 2077), sem dizer que o § 2º "não vale". (seções: atencao, external_layer_notes)
 
 ---
 
@@ -9750,12 +9753,12 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 159-A — Fundo Nacional de Desenvolvimento Regional
 
-- **TARGET:** `CF88:ART.159-A` · `ENTENDA/CF88:ART.159-A/BASE/1`
+- **TARGET:** `CF88:ART.159-A` · `ENTENDA/CF88:ART.159-A/BASE/2`
 - **DISPLAY TITLE:** Art. 159-A — Fundo Nacional de Desenvolvimento Regional
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 264 palavras · 2116 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 297 palavras · 2694 bytes · referências 0
 - **Motivo da seleção:** Visao geral: finalidade, usos, garantias, prioridade ambiental e criterios de partilha do fundo.
 
 **O QUE DIZ**
@@ -9778,7 +9781,7 @@ Um Estado recebe recursos do fundo e decide aplicá-los em uma rodovia e em um c
 
 **ATENÇÃO**
 
-Os valores do fundo e o cronograma de entrega não estão no texto do artigo; ficam na camada externa.
+O próprio art. 159-A não enumera os valores anuais do fundo, mas a emenda constitucional que o instituiu fixou o cronograma de aportes. As entregas começam no exercício de 2029 e crescem progressivamente até o patamar anual previsto a partir de 2043, com atualização monetária segundo a regra da própria emenda.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -9788,11 +9791,11 @@ Os valores do fundo e o cronograma de entrega não estão no texto do artigo; fi
 
 **CAMADA EXTERNA**
 
-- Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional não constam do art. 159-A nem do ADCT versionado: EXTERNAL_VERIFICATION_REQUIRED.
+- Verificado na fonte oficial (Planalto): EC 132/2023, art. 13: aportes da União ao Fundo Nacional de Desenvolvimento Regional de R$ 8 bilhões em 2029, R$ 16 bilhões em 2030, R$ 24 bilhões em 2031, R$ 32 bilhões em 2032 e R$ 40 bilhões em 2033, crescendo R$ 2 bilhões por ano até R$ 60 bilhões anuais a partir de 2043, atualizados pelo IPCA desde 2023; art. 15: esses recursos não se sujeitam aos limites da lei complementar do art. 6º da EC 126/2022. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A frase "os valores e o cronograma não estão disponíveis" ficou falsa: a EC 132/2023, art. 13, fixa o cronograma. A ATENÇÃO diz que os valores estão na emenda, com entregas a partir de 2029 até o patamar de 2043 em diante; a tabela de valores fica nas notas e na provenance. (seções: atencao, external_layer_notes)
 
 ---
 
@@ -10428,12 +10431,12 @@ Pelo § 13, o dever do § 10 se aplica exclusivamente aos orçamentos fiscal e d
 
 ### Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026
 
-- **TARGET:** `CF88:ART.165:PAR.18` · `ENTENDA/CF88:ART.165:PAR.18/BASE/1`
+- **TARGET:** `CF88:ART.165:PAR.18` · `ENTENDA/CF88:ART.165:PAR.18/BASE/2`
 - **DISPLAY TITLE:** Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.165:PAR.19`, `CF88:ART.165:PAR.20`, `CF88:ART.165:PAR.21`, `CF88:ART.165:PAR.22`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.165`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 315 palavras · 2629 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 371 palavras · 3423 bytes · referências 0
 - **Motivo da seleção:** Bloco: regras com efeito temporal sobre precatorios, limite individualizado do Executivo e meta de resultado primario.
 
 **O QUE DIZ**
@@ -10456,7 +10459,9 @@ No orçamento da União de 2027, uma parte das despesas com precatórios entra n
 
 **ATENÇÃO**
 
-As regras têm efeito no tempo e dependem de regra de transição do ADCT (art. 107-A) e da lei complementar do art. 6º da Emenda Constitucional nº 126, consultadas na camada externa. A aplicação a cada exercício deve ser conferida com as fontes oficiais.
+A lei complementar mencionada nesses dispositivos é a Lei Complementar nº 200, de 2023, que instituiu o regime fiscal sustentável com fundamento no art. 6º da Emenda Constitucional nº 126.
+O Supremo Tribunal Federal afastou a aplicação continuada do antigo limite de pagamento de precatórios do art. 107-A do ADCT, reconhecendo sua incidência apenas no período admitido pelo julgamento correspondente.
+A alteração constitucional posterior passou a utilizar o valor associado ao art. 107-A como referência de cálculo em regras específicas de 2025 e 2026. Essa referência não deve ser confundida com a restauração geral do antigo teto de pagamento.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -10466,11 +10471,12 @@ As regras têm efeito no tempo e dependem de regra de transição do ADCT (art. 
 
 **CAMADA EXTERNA**
 
-- Regra de transição e efeitos temporais: art. 107-A do ADCT e lei complementar do art. 6º da Emenda Constitucional nº 126, de 2022: EXTERNAL_VERIFICATION_REQUIRED.
+- Verificado na fonte oficial (Planalto): a LC 200/2023 declara fundamento no art. 6º da EC 126/2022 e institui o regime fiscal sustentável; é a lei complementar referida nos §§ 18 e 19. EC 136/2025: usa o limite do art. 107-A do ADCT como parâmetro de cálculo (§ 19) e de exclusão da meta de 2026 (§ 22).
+- Verificado na fonte oficial (STF, ADI 7064, com a ADI 7047): interpretação conforme ao art. 107-A do ADCT, com efeitos apenas para o exercício de 2022 (decisão de 30/11/2023). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 107 a do ato das disposições constitucionais transitórias)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 107 a do ato das disposições constitucionais transitórias); LONG_EXPLANATION (*: 371 palavras (limite 400))
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Núcleo dos §§ 18-22 correto e mantido. A ATENÇÃO identifica a LC 200/2023 como a lei complementar do art. 6º da EC 126 e deixa claro que o antigo teto de precatórios do art. 107-A não continua vigente (ADI 7064): a EC 136/2025 usa o valor desse limite apenas como referência de cálculo para 2025 e 2026. Registro de transição do projeto corrigido (MACRO07_TRANSITION_EVIDENCE). (seções: atencao, external_layer_notes)
 
 ---
 
@@ -10480,12 +10486,12 @@ Sem explicação própria: 28 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares
 
-- **TARGET:** `CF88:ART.166` · `ENTENDA/CF88:ART.166/BASE/1`
+- **TARGET:** `CF88:ART.166` · `ENTENDA/CF88:ART.166/BASE/2`
 - **DISPLAY TITLE:** Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2322 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 322 palavras · 3732 bytes · referências 0
 - **Motivo da seleção:** Visao geral: apreciacao pelo Congresso, comissao mista, emendas e execucao obrigatoria de emendas.
 
 **O QUE DIZ**
@@ -10506,7 +10512,9 @@ Um deputado apresenta emenda ao orçamento para construir um posto de saúde em 
 
 **ATENÇÃO**
 
-Vários parágrafos sobre emendas parlamentares têm anotações de controle de constitucionalidade na fonte canônica. O alcance dessas regras não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA.
+A execução das emendas parlamentares não possui caráter ilimitado.
+Em medida cautelar referendada pelo Plenário, o Supremo Tribunal Federal estabeleceu que a execução deve observar critérios técnicos de eficiência, transparência e rastreabilidade e que o Poder Executivo deve verificar, de forma motivada e transparente, se a programação está apta à execução. O julgamento de mérito correspondente ainda está pendente.
+A legislação complementar também disciplina atualmente a proposição e a execução das emendas parlamentares.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -10516,11 +10524,12 @@ Vários parágrafos sobre emendas parlamentares têm anotações de controle de 
 
 **CAMADA EXTERNA**
 
-- A fonte canônica anota parágrafos do art. 166 com controle de constitucionalidade (Vide ADI 7697): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, andamento da ADI 7697): medida cautelar parcial deferida em 14/08/2024 e referendada pelo Plenário, por unanimidade, em 19/08/2024, com efeitos ex nunc; interpretação conforme aos arts. 165, § 9º, III, e § 10, 166, §§ 9º, 9º-A, 10 a 14 e 16 a 20, e 166-A: execução de emendas condicionada a critérios técnicos de eficiência, transparência e rastreabilidade, vedada interpretação que confira caráter absoluto à impositividade, e aferição motivada e transparente pelo Poder Executivo. Julgamento de mérito pendente (medida cautelar vigente); decisões monocráticas de acompanhamento posteriores, até 04/05/2026. A anotação "Vide ADI 7697" da fonte canônica é pertinente. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
+- ADI 7060 (Constituição de Sergipe, emendas impositivas estaduais; procedente em 2023) não é pertinente ao art. 166 federal. LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técnica; art. 12, contingenciamento até a mesma proporção das demais despesas discricionárias. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de lei do plano plurianual das diretrizes orçamentárias)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de lei do plano plurianual das diretrizes orçamentárias)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A ATENÇÃO genérica passa a dar o estado jurídico atual: medida cautelar referendada pelo Plenário (impositividade sem caráter absoluto; critérios técnicos de eficiência, transparência e rastreabilidade; verificação motivada pelo Executivo) e disciplina da LC 210/2024. Sem afirmar julgamento definitivo: o mérito segue pendente (notas e provenance). (seções: atencao, external_layer_notes)
 
 ---
 
@@ -10574,12 +10583,12 @@ Os incisos do texto estão ligados pela conjunção ou; a leitura de quais requi
 
 ### Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais
 
-- **TARGET:** `CF88:ART.166:PAR.9` · `ENTENDA/CF88:ART.166:PAR.9/BASE/1`
+- **TARGET:** `CF88:ART.166:PAR.9` · `ENTENDA/CF88:ART.166:PAR.9/BASE/2`
 - **DISPLAY TITLE:** Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.166:PAR.9-A`, `CF88:ART.166:PAR.10`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.166`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1989 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 3154 bytes · referências 0
 - **Motivo da seleção:** Bloco: limite das emendas individuais, divisao entre Camara e Senado e destinacao a saude.
 
 **O QUE DIZ**
@@ -10590,7 +10599,7 @@ O § 9º limita a aprovação das emendas individuais ao projeto de lei orçamen
 
 As emendas individuais têm um teto ligado à receita da União.
 
-Dentro desse teto, metade vai obrigatoriamente para a saúde. Esse valor conta para o mínimo que a União deve aplicar em saúde, mas não pode ser usado para pagar salários.
+Dentro desse teto, metade vai obrigatoriamente para a saúde. Esse valor conta para o mínimo que a União deve aplicar em saúde, mas não pode ser destinado ao pagamento de pessoal ou encargos sociais.
 
 O limite é repartido entre deputados e senadores conforme o § 9º-A.
 
@@ -10600,7 +10609,7 @@ Um deputado distribui o valor de suas emendas individuais. Metade precisa ir par
 
 **ATENÇÃO**
 
-Os parágrafos têm anotação de controle de constitucionalidade na fonte canônica. O alcance atual das regras deve ser conferido na camada JURISPRUDÊNCIA.
+Embora os percentuais permaneçam no texto constitucional, a execução das emendas está sujeita aos requisitos técnicos, de transparência e de rastreabilidade atualmente exigíveis segundo a medida cautelar referendada pelo Supremo Tribunal Federal e a legislação complementar aplicável.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -10610,22 +10619,23 @@ Os parágrafos têm anotação de controle de constitucionalidade na fonte canô
 
 **CAMADA EXTERNA**
 
-- Vide ADI 7697 anotada na fonte canônica para os §§ 9º, 9º-A e 10: EXTERNAL_VERIFICATION_REQUIRED.
+- Verificado na fonte oficial (STF, andamento da ADI 7697): medida cautelar parcial deferida em 14/08/2024 e referendada pelo Plenário, por unanimidade, em 19/08/2024, com efeitos ex nunc; interpretação conforme aos arts. 165, § 9º, III, e § 10, 166, §§ 9º, 9º-A, 10 a 14 e 16 a 20, e 166-A: execução de emendas condicionada a critérios técnicos de eficiência, transparência e rastreabilidade, vedada interpretação que confira caráter absoluto à impositividade, e aferição motivada e transparente pelo Poder Executivo. Julgamento de mérito pendente (medida cautelar vigente); decisões monocráticas de acompanhamento posteriores, até 04/05/2026. A anotação "Vide ADI 7697" da fonte canônica é pertinente. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
+- LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técnica; art. 12, contingenciamento até a mesma proporção das demais despesas discricionárias. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da receita corrente líquida do exercício anterior ao); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Metade precisa ir para ações de saúde, como equipar um hospi)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da receita corrente líquida do exercício anterior ao); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Metade precisa ir para ações de saúde, como equipar um hospi)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Percentuais vigentes conferidos na Constituição compilada (2%, metade para saúde; 1,55% e 0,45%). "Não pode ser usado para pagar salários" estreitava o § 10 e passa a "pagamento de pessoal ou encargos sociais". A ATENÇÃO informa que a execução segue os requisitos da medida cautelar referendada e da legislação complementar, sem sugerir julgamento de mérito. (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
 ### Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas
 
-- **TARGET:** `CF88:ART.166:PAR.11` · `ENTENDA/CF88:ART.166:PAR.11/BASE/1`
+- **TARGET:** `CF88:ART.166:PAR.11` · `ENTENDA/CF88:ART.166:PAR.11/BASE/2`
 - **DISPLAY TITLE:** Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.166:PAR.12`, `CF88:ART.166:PAR.13`, `CF88:ART.166:PAR.18`, `CF88:ART.166:PAR.19`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.166`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2683 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 332 palavras · 4346 bytes · referências 0
 - **Motivo da seleção:** Bloco: execucao obrigatoria de emendas individuais e de bancada, impedimentos tecnicos, reducao proporcional e execucao equitativa.
 
 **O QUE DIZ**
@@ -10634,17 +10644,18 @@ O § 11 torna obrigatória a execução orçamentária e financeira das emendas 
 
 **O QUE SIGNIFICA**
 
-Para as emendas individuais e de bancada, o texto torna a execução obrigatória, dentro dos limites.
+Para as emendas individuais e de bancada, o texto torna a execução obrigatória, dentro dos limites. Obrigatória, porém, não quer dizer independente dos requisitos técnicos.
 
 A obrigação tem três limites expressos. Impedimentos técnicos afastam a execução. Se a meta fiscal estiver em risco, os valores podem ser reduzidos em até a mesma proporção da limitação das demais despesas discricionárias. E o texto exige execução equitativa, que atenda às emendas independentemente da autoria.
 
 **EXEMPLO PRÁTICO**
 
-Uma bancada estadual aprova emenda para construir um hospital regional. A execução é obrigatória, salvo impedimento técnico, como a falta de terreno adequado, ou redução proporcional exigida pelo cumprimento da meta fiscal.
+Uma bancada estadual aprova emenda para construir um hospital regional, obra que exige licença ambiental prévia. Se essa licença necessária ainda não existir, há impedimento de ordem técnica nos termos da legislação complementar, sujeito ao procedimento de regularização nela previsto. A execução também pode sofrer redução proporcional exigida pelo cumprimento da meta fiscal.
 
 **ATENÇÃO**
 
-O regime das emendas impositivas tem anotação de controle de constitucionalidade na fonte canônica. O alcance atual dessas regras depende do resultado desse controle e não deve ser deduzido apenas do texto; a conferência fica na camada JURISPRUDÊNCIA.
+A execução obrigatória está sujeita aos impedimentos técnicos previstos em lei e aos requisitos de transparência e rastreabilidade. O Supremo Tribunal Federal afastou, em medida cautelar referendada, interpretação que conferisse caráter ilimitado à impositividade das emendas; o julgamento de mérito correspondente ainda não ocorreu.
+A legislação complementar também admite contingenciamento na proporção aplicável às demais despesas discricionárias, nos termos nela previstos.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -10654,12 +10665,13 @@ O regime das emendas impositivas tem anotação de controle de constitucionalida
 
 **CAMADA EXTERNA**
 
-- Vide ADI 7697 anotada na fonte canônica para os §§ 11 a 20 do art. 166: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, andamento da ADI 7697): medida cautelar parcial deferida em 14/08/2024 e referendada pelo Plenário, por unanimidade, em 19/08/2024, com efeitos ex nunc; interpretação conforme aos arts. 165, § 9º, III, e § 10, 166, §§ 9º, 9º-A, 10 a 14 e 16 a 20, e 166-A: execução de emendas condicionada a critérios técnicos de eficiência, transparência e rastreabilidade, vedada interpretação que confira caráter absoluto à impositividade, e aferição motivada e transparente pelo Poder Executivo. Julgamento de mérito pendente (medida cautelar vigente); decisões monocráticas de acompanhamento posteriores, até 04/05/2026. A anotação "Vide ADI 7697" da fonte canônica é pertinente. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
+- LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técnica; art. 12, contingenciamento até a mesma proporção das demais despesas discricionárias. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION. Art. 10, IV: ausência de licença ambiental prévia, quando necessária, é impedimento de ordem técnica; o § 3º admite o empenho e prevê que a licença seja providenciada no prazo da cláusula suspensiva.
 - A fonte oficial remete o § 13 à Lei n. 14.436, de 2022, na camada de legislação correlata.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: reduzidos em até a mesma proporção da limitação); PARENT_REPETITION (*: CF88:ART.166: 0.25); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A execução é obrigatória, salvo impedimento técnico, como a )
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: reduzidos em até a mesma proporção da limitação); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Uma bancada estadual aprova emenda para construir um hospita)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Falta de terreno adequado" não tem enquadramento claro no rol do art. 10 da LC 210/2024; o exemplo passa a usar a ausência de licença ambiental prévia (art. 10, IV), com o procedimento de regularização do § 3º. O O QUE SIGNIFICA deixa claro que obrigatória não significa independente dos requisitos técnicos; a ATENÇÃO dá o estado da medida cautelar referendada e o contingenciamento da LC 210/2024 (art. 12). Mérito judicial pendente nas notas. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -10669,12 +10681,12 @@ Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 166-A — Transferências por emendas individuais
 
-- **TARGET:** `CF88:ART.166-A` · `ENTENDA/CF88:ART.166-A/BASE/1`
+- **TARGET:** `CF88:ART.166-A` · `ENTENDA/CF88:ART.166-A/BASE/2`
 - **DISPLAY TITLE:** Art. 166-A — Transferências por emendas individuais
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 299 palavras · 2386 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 381 palavras · 4830 bytes · referências 0
 - **Motivo da seleção:** Visao geral: transferencia especial e transferencia com finalidade definida para entes federativos.
 
 **O QUE DIZ**
@@ -10685,19 +10697,20 @@ O art. 166-A permite que as emendas individuais impositivas ao projeto de lei or
 
 O artigo cria duas formas de o parlamentar levar recursos de suas emendas a Estados e Municípios.
 
-Na transferência especial, o dinheiro chega direto ao ente, sem convênio, e passa a ser dele. O ente decide a aplicação dentro das áreas de competência do seu Executivo, mas a maior parte deve ir para investimentos.
+Na transferência especial, o dinheiro chega direto ao ente e passa a ser dele. O ente decide a aplicação dentro das áreas de competência do seu Executivo, mas a maior parte deve ir para investimentos. A Constituição dispensa a celebração de convênio ou instrumento congênere, mas isso não elimina as exigências legais e judiciais atuais de transparência, planejamento, controle e prestação de contas.
 
 Na transferência com finalidade definida, o recurso segue vinculado à programação da emenda.
 
-Em ambos os casos, os recursos não podem pagar salários nem a dívida do ente.
+Em ambos os casos, os recursos não podem pagar pessoal, encargos sociais, pensionistas nem o serviço da dívida.
 
 **EXEMPLO PRÁTICO**
 
-Um deputado destina, por transferência especial, recursos a um Município. O dinheiro entra no caixa municipal sem convênio, e a prefeitura o aplica, por exemplo, na pavimentação de ruas.
+Um Município é indicado como beneficiário de transferência especial destinada à pavimentação de ruas. Antes da liberação de nova transferência, o plano de trabalho deve ser apresentado e aprovado conforme as regras atualmente aplicáveis. Os recursos são movimentados em conta específica, e sua execução permanece sujeita aos mecanismos de transparência, rastreabilidade e fiscalização.
 
 **ATENÇÃO**
 
-O artigo tem anotação de controle de constitucionalidade na fonte canônica. O alcance atual dessas transferências depende do resultado desse controle e não deve ser deduzido apenas do texto; a conferência fica na camada JURISPRUDÊNCIA.
+A legislação complementar exige identificação do objeto, conta específica e publicidade das informações da transferência. Além disso, decisão referendada pelo Plenário do Supremo Tribunal Federal passou a exigir, para novas transferências especiais, apresentação e aprovação prévias do plano de trabalho.
+A fiscalização dos recursos federais dessas transferências envolve o Tribunal de Contas da União, sem prejuízo das demais competências de controle previstas no ordenamento.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -10707,11 +10720,13 @@ O artigo tem anotação de controle de constitucionalidade na fonte canônica. O
 
 **CAMADA EXTERNA**
 
-- Vide ADI 7697 anotada na fonte canônica para o art. 166-A: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, andamento da ADI 7697): medida cautelar parcial deferida em 14/08/2024 e referendada pelo Plenário, por unanimidade, em 19/08/2024, com efeitos ex nunc; interpretação conforme aos arts. 165, § 9º, III, e § 10, 166, §§ 9º, 9º-A, 10 a 14 e 16 a 20, e 166-A: execução de emendas condicionada a critérios técnicos de eficiência, transparência e rastreabilidade, vedada interpretação que confira caráter absoluto à impositividade, e aferição motivada e transparente pelo Poder Executivo. Julgamento de mérito pendente (medida cautelar vigente); decisões monocráticas de acompanhamento posteriores, até 04/05/2026. A anotação "Vide ADI 7697" da fonte canônica é pertinente. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
+- Verificado na fonte oficial (STF, ADI 7697): referendo do Plenário de 04/12/2024, que reitera decisões das ADIs 7688 e 7695: novas transferências especiais só podem ser liberadas com plano de trabalho apresentado e aprovado previamente no Transferegov, sob pena de impedimento de ordem técnica; fiscalização e aprovação das contas pelo TCU, com atuação da CGU e da Polícia Federal em suas competências. A aprovação prévia do plano decorre dessa decisão judicial vigente, e não da LC 210/2024. Textos oficiais das ADIs 7688 e 7695 não lidos (apenas notícia oficial).
+- LC 210/2024 (Planalto): art. 7º (objeto e valor informados pelo autor; destinação preferencial a obras inacabadas; apreciação pelo TCU); art. 8º (conta-corrente específica no Transferegov; comunicação, em 30 dias, ao Legislativo local, ao TCU e aos tribunais de contas do valor, do plano de trabalho e do cronograma de execução, com ampla publicidade). A expressão popular "emenda Pix" não é usada como categoria jurídica no T1. Ingestão: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a estados ao distrito federal e a municípios)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a estados ao distrito federal e a municípios); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Antes da liberação de nova transferência, o plano de trabalh)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O exemplo ("entra no caixa sem convênio e a prefeitura aplica") omitia o plano de trabalho prévio e a conta específica, hoje exigidos. O O QUE SIGNIFICA deixa claro que a dispensa de convênio não elimina transparência, controle e prestação de contas, e "salários" passa a "pessoal, encargos sociais, pensionistas". A ATENÇÃO distingue as fontes: LC 210/2024 (objeto, conta específica, publicidade) e decisão judicial vigente (aprovação prévia do plano). Sem "emenda Pix" como categoria. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 

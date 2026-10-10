@@ -1,6 +1,6 @@
 # ENTENDA_CF_MACRO_BATCH_07 — relatório de escala
 
-Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · **12 HUMAN_APPROVED_T1 novos** pela(s) rodada(s) humana(s) registrada(s) (`CF88_MACRO07_TRIAGE_QUEUE_D_PART1`); 237 explicações novas seguem `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.
+Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · **24 HUMAN_APPROVED_T1 novos** pela(s) rodada(s) humana(s) registrada(s) (`CF88_MACRO07_TRIAGE_QUEUE_D_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_D_PART2`); 225 explicações novas seguem `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.
 
 Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–125), MACRO_07_C (arts. 126–150), MACRO_07_D (arts. 151–175).
 
@@ -12,7 +12,7 @@ Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–12
 | Targets analisados | 1367 (1309 vigentes; excluídos: EXCLUDED_HISTORICAL 39, EXCLUDED_REVOKED 19) |
 | SELECT | 250 = 249 novas + 1 reutilizada(s) já aprovada(s) |
 | SKIP | 1059 (todos com motivo e explicação que os cobre) |
-| Papéis das novas | BLOCK 41, DEVICE 54, ITEM 28, OVERVIEW 114 |
+| Papéis das novas | BLOCK 37, DEVICE 51, ITEM 28, OVERVIEW 109 |
 
 ## Por sub-bloco
 
@@ -20,58 +20,52 @@ Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–12
 |---|---|---|---|---|---|---|---|---|
 | MACRO_07_A | 25 | 260 | 55 | 205 | 50 | 31/19/0 | 31/19/0/0/0 | 75 |
 | MACRO_07_B | 28 | 257 | 49 | 208 | 43 | 23/20/0 | 23/20/0/0/0 | 77 |
-| MACRO_07_C | 30 | 267 | 67 | 200 | 65 | 43/21/1 | 43/21/0/1/0 | 133 |
-| MACRO_07_D | 38 | 525 | 79 | 446 | 79 | 46/22/11 | 46/22/0/11/0 | 156 |
+| MACRO_07_C | 30 | 267 | 67 | 200 | 64 | 43/21/0 | 43/21/0/0/0 | 133 |
+| MACRO_07_D | 38 | 525 | 79 | 446 | 68 | 46/22/0 | 46/22/0/0/0 | 156 |
 
 ## Dois eixos e filas
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
 | LOW | 143 | | SIMPLE | 11 |
-| MEDIUM | 82 | | STRUCTURED | 135 |
-| HIGH | 12 | | EXTERNAL | 91 |
+| MEDIUM | 82 | | STRUCTURED | 133 |
+| HIGH | 0 | | EXTERNAL | 81 |
 
 | Fila | Itens |
 |---|---|
 | A_CLEAN_LOW | 143 |
 | B_CLEAN_MEDIUM | 82 |
 | C_QUICK_REVIEW | 0 |
-| D_FULL_HUMAN_REVIEW | 12 |
+| D_FULL_HUMAN_REVIEW | 0 |
 | E_HARD_FAIL | 0 |
 
-D = 5.1% das novas.
-Jurisprudência: CONTEXT_ONLY 30, NONE 203, REQUIRED_FOR_CORRECTNESS 4.
+D = 0.0% das novas.
+Jurisprudência: CONTEXT_ONLY 30, NONE 195.
 
 ## Motivos dos D
 
-- JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: 4
-- JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: 4
-- TRANSITION_OR_TEMPORAL: 7
 
 ## Achados REVIEW_REQUIRED
 
-- EXTERNAL_FACT_NEEDS_PROVENANCE: 4
+- nenhum
 
 ## Dependências externas
 
-- `CF88:ART.166`: ADI 7697, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
-- `CF88:ART.166:PAR.9`: ADI 7697 · resolver EXTERNAL_VERIFICATION_REQUIRED
-- `CF88:ART.166:PAR.11`: ADI 7697, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
-- `CF88:ART.166-A`: ADI 7697, JURISPRUDENCIA (necessaria) · resolver EXTERNAL_VERIFICATION_REQUIRED
+- nenhuma além da camada de jurisprudência
 
 ## Volume para o humano
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 339.932 |
-| Modelo antigo (pacote completo de todos os itens) | 764.619 |
-| **Apresentado ao humano (pacotes + prioridade)** | **259.790** |
+| Rascunhos (5 seções + glossário) | 320.139 |
+| Modelo antigo (pacote completo de todos os itens) | 699.711 |
+| **Apresentado ao humano (pacotes + prioridade)** | **201.408** |
 | — MACRO07_COMPACT_AB_REVIEW.md | 169.874 |
-| — MACRO07_FULL_D_REVIEW.md | 56.923 |
+| — MACRO07_FULL_D_REVIEW.md | 433 |
 | — MACRO07_HARD_FAIL_REPORT.md | 143 |
-| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 32.480 |
+| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 30.588 |
 | — MACRO07_QUICK_C_REVIEW.md | 370 |
-| Redução vs. modelo antigo | 504.829 (66.0%) |
+| Redução vs. modelo antigo | 498.303 (71.2%) |
 
 ## Checks estruturais
 

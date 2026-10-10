@@ -26,21 +26,23 @@
   "A_CLEAN_LOW": 143,
   "B_CLEAN_MEDIUM": 82,
   "C_QUICK_REVIEW": 0,
-  "D_FULL_HUMAN_REVIEW": 0,
+  "D_FULL_HUMAN_REVIEW": 12,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 143,
-  "MEDIUM": 82
+  "MEDIUM": 82,
+  "HIGH": 12
  },
  "complexity_counts": {
-  "STRUCTURED": 133,
+  "STRUCTURED": 135,
   "SIMPLE": 11,
-  "EXTERNAL": 81
+  "EXTERNAL": 91
  },
  "jurisprudence_counts": {
-  "NONE": 195,
-  "CONTEXT_ONLY": 30
+  "NONE": 203,
+  "CONTEXT_ONLY": 30,
+  "REQUIRED_FOR_CORRECTNESS": 4
  },
  "by_legal_risk": {
   "LOW": {
@@ -61,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 12,
    "E_HARD_FAIL": 0
   }
  },
@@ -77,14 +79,14 @@
    "A_CLEAN_LOW": 103,
    "B_CLEAN_MEDIUM": 30,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 2,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 31,
    "B_CLEAN_MEDIUM": 50,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 10,
    "E_HARD_FAIL": 0
   }
  },
@@ -8797,41 +8799,682 @@
    "show_full_t1": false,
    "review_status": "PENDING_HUMAN_REVIEW",
    "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.2",
+   "title": "Art. 142, § 2º — Habeas corpus e punições disciplinares militares",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "habeas corpus em relação a punições disciplinares militares",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.3",
+   "title": "Art. 153, § 3º — Regras do imposto sobre produtos industrializados",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + REGIMES_COEXISTENTES + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + REGIMES_COEXISTENTES + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "title": "Art. 155, § 6º — Imposto sobre a propriedade de veículos",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA + TEXTO_VIGENTE_INSUFICIENTE — ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: vinte",
+    "exception: excetuad",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "veículos terrestres de passageiros caminhonetes e mistos com",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA + TEXTO_VIGENTE_INSUFICIENTE — ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "title": "Art. 156-A — Imposto sobre bens e serviços",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — 2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: prazo",
+    "number_or_percentage: %",
+    "exception: ressalvado",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 29, 153, 158, 239",
+    "overview com 64 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "alíquotas do estado e do município de destino",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "exemplo_pratico",
+     "match": "alíquotas do estado e do município de destino",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — 2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "title": "Art. 158 — Receitas tributárias dos Municípios",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: por cento",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 153, 156",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cinquenta por cento do produto da arrecadação do",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "fracao 1/2 ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "TERM_NOT_USED",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.158:PAR.1",
+   "title": "Art. 158, §§ 1º e 2º — Critérios de repasse aos Municípios",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 8 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "title": "Art. 159-A — Fundo Nacional de Desenvolvimento Regional",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: TEXTO_VIGENTE_INSUFICIENTE — valores e cronograma de entrega do fundo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 3, 159",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: TEXTO_VIGENTE_INSUFICIENTE — valores e cronograma de entrega do fundo",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.18",
+   "title": "Art. 165, §§ 18, 19, 20, 21 e 22 — Precatórios, limite de despesas e meta fiscal a partir de 2026",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: %",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 6, 100, 107",
+    "block com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "107 a do ato das disposições constitucionais transitórias",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "TRANSITION_IN_CORE:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.166",
+   "title": "Art. 166 — Tramitação das leis orçamentárias e emendas parlamentares",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: incompatív",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166:PAR.9: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: duas",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 58, 165, 169, 198",
+    "overview com 32 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "166 com controle de constitucionalidade (Vide ADI 7697):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de lei do plano plurianual das diretrizes orçamentárias",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.9",
+   "title": "Art. 166, §§ 9º, 9º-A e 10 — Limite das emendas individuais",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166:PAR.9: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697)",
+    "camada externa: nota externa",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 198",
+    "block com 3 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "Vide ADI 7697 anotada na fonte canônica para os §§ 9º, 9º-A e 10:",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da receita corrente líquida do exercício anterior ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "title": "Art. 166, §§ 11, 12, 13, 18 e 19 — Execução obrigatória das emendas",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697)",
+    "camada externa: jurisprudencia, nota externa",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: %",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 165",
+    "block com 5 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "Vide ADI 7697 anotada na fonte canônica para os §§ 11 a 20 do art.",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "reduzidos em até a mesma proporção da limitação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.166-A",
+   "title": "Art. 166-A — Transferências por emendas individuais",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7697\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.166-A:CAPUT: Vide ADI 7697)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: %",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 166",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7697",
+     "sentence": "Vide ADI 7697 anotada na fonte canônica para o art.",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a estados ao distrito federal e a municípios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 7697",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
   }
  ],
- "d_reasons": {},
- "finding_counts": {},
+ "d_reasons": {
+  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 4,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 4,
+  "TRANSITION_OR_TEMPORAL": 7
+ },
+ "finding_counts": {
+  "EXTERNAL_FACT_NEEDS_PROVENANCE": 4
+ },
  "refined_false_positive_counts": {
   "TELEOLOGY_SPECULATIVE": 4,
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 320139,
-  "old_model_full_package_chars": 699711,
-  "presented_chars": 201408,
+  "total_draft_chars": 339932,
+  "old_model_full_package_chars": 764619,
+  "presented_chars": 259790,
   "presented_by_file": {
    "MACRO07_COMPACT_AB_REVIEW.md": 169874,
-   "MACRO07_FULL_D_REVIEW.md": 433,
+   "MACRO07_FULL_D_REVIEW.md": 56923,
    "MACRO07_HARD_FAIL_REPORT.md": 143,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 30588,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 32480,
    "MACRO07_QUICK_C_REVIEW.md": 370
   },
-  "pending_items": 225,
-  "reduction_abs": 498303,
-  "reduction_pct": 71.2
+  "pending_items": 237,
+  "reduction_abs": 504829,
+  "reduction_pct": 66.0
  },
- "d_ratio": 0.0,
+ "d_ratio": 0.051,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 135,
+  "eligible": 145,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 24,
+ "human_approved_t1_granted": 12,
  "round_approvals": {
   "review_scopes": [
-   "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-   "CF88_MACRO07_TRIAGE_QUEUE_D_PART2"
+   "CF88_MACRO07_TRIAGE_QUEUE_D_PART1"
   ],
   "gate": [
    {
@@ -9021,189 +9664,11 @@
      "EXTERNAL_FACT_WITH_PROVENANCE"
     ],
     "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.142:PAR.2",
-    "explanation_id": "ENTENDA/CF88:ART.142:PAR.2/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.153:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.153:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.155:PAR.6",
-    "explanation_id": "ENTENDA/CF88:ART.155:PAR.6/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.156-A",
-    "explanation_id": "ENTENDA/CF88:ART.156-A/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 5,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.158",
-    "explanation_id": "ENTENDA/CF88:ART.158/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.158:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.158:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.159-A",
-    "explanation_id": "ENTENDA/CF88:ART.159-A/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.165:PAR.18",
-    "explanation_id": "ENTENDA/CF88:ART.165:PAR.18/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 5,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.166",
-    "explanation_id": "ENTENDA/CF88:ART.166/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.166:PAR.9",
-    "explanation_id": "ENTENDA/CF88:ART.166:PAR.9/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.166:PAR.11",
-    "explanation_id": "ENTENDA/CF88:ART.166:PAR.11/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.166-A",
-    "explanation_id": "ENTENDA/CF88:ART.166-A/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-    "provenance_items": 5,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
    }
   ],
-  "approved": 24,
+  "approved": 12,
   "approved_unchanged": 1,
-  "approved_after_adjustment": 23,
+  "approved_after_adjustment": 11,
   "rejected": 0,
   "retired_versions": [
    "ENTENDA/CF88:ART.100/BASE/1",
@@ -9216,26 +9681,14 @@
    "ENTENDA/CF88:ART.114:INC.I/BASE/1",
    "ENTENDA/CF88:ART.114:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.142/BASE/1",
-   "ENTENDA/CF88:ART.142:PAR.2/BASE/1",
-   "ENTENDA/CF88:ART.153:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.155:PAR.6/BASE/1",
-   "ENTENDA/CF88:ART.156-A/BASE/1",
-   "ENTENDA/CF88:ART.158/BASE/1",
-   "ENTENDA/CF88:ART.158:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.159-A/BASE/1",
-   "ENTENDA/CF88:ART.165:PAR.18/BASE/1",
-   "ENTENDA/CF88:ART.166-A/BASE/1",
-   "ENTENDA/CF88:ART.166/BASE/1",
-   "ENTENDA/CF88:ART.166:PAR.11/BASE/1",
-   "ENTENDA/CF88:ART.166:PAR.9/BASE/1",
    "ENTENDA/CF88:ART.82/BASE/1"
   ]
  },
  "approval_totals": {
   "global_before": 382,
-  "batch_new_approved": 24,
-  "global_after": 406,
-  "batch_new_pending": 225,
+  "batch_new_approved": 12,
+  "global_after": 394,
+  "batch_new_pending": 237,
   "note": "aprovados do corpus principal e dos corpora anteriores, por explanation_key"
  },
  "validator_limits": [
@@ -9344,7 +9797,7 @@
   "transition_without_evidence": [],
   "transition_evidence_unused": [],
   "judicial_review_unclassified": [],
-  "approved_by_recorded_round": 24,
+  "approved_by_recorded_round": 12,
   "status": "PASS"
  },
  "backlog": {
@@ -9355,6 +9808,6 @@
    },
    "hits": 12
   },
-  "items": 14
+  "items": 13
  }
 }

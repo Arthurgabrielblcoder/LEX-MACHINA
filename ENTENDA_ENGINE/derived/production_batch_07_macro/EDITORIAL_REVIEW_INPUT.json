@@ -1466,14 +1466,14 @@
    ]
   },
   "CF88:ART.142:PAR.2": {
-   "level": "HIGH",
+   "level": "MEDIUM",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    "JURISPRUDENCE_CONTEXT_ONLY"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\""
+    "JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 142, § 2º): HC 70.648 (1ª Turma, 9/11/1993) admite o exame, em habeas c"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "camada externa: jurisprudencia"
@@ -2332,8 +2332,9 @@
     "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — 2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)"
    ],
    "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
+   "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
+    "camada externa: nota externa",
     "number_or_percentage: por cento",
     "redacao de emenda constitucional (3 anotacao(oes))",
     "remissao: arts. 153, 156",
@@ -2349,8 +2350,9 @@
     "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + VIGENCIA_PARCIAL — idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077"
    ],
    "jurisprudence": "NONE",
-   "verification_complexity": "STRUCTURED",
+   "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
+    "camada externa: nota externa",
     "number_or_percentage: %",
     "redacao de emenda constitucional (2 anotacao(oes))",
     "block com 8 dispositivos"
@@ -2539,12 +2541,12 @@
     "TRANSITION_OR_TEMPORAL"
    ],
    "reasons": [
-    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026"
+    "TRANSITION_OR_TEMPORAL: REGIMES_COEXISTENTES + EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — a partir do exercício de 2026 (texto do § 18); o limite do art. 107-A do ADCT aparece só como valor de referência de cálculo (§§ 19 e 22, EC 136/2025)"
    ],
-   "jurisprudence": "NONE",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
-    "camada externa: nota externa",
+    "camada externa: jurisprudencia, nota externa",
     "number_or_percentage: %",
     "law_dependency: lei complementar",
     "redacao de emenda constitucional (1 anotacao(oes))",
@@ -2585,19 +2587,16 @@
   "CF88:ART.166": {
    "level": "HIGH",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.17: Vide ADI 7697 (+3) — a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.166:PAR.9: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697)",
-    "camada externa: jurisprudencia",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "camada externa: jurisprudencia, nota externa",
     "number_or_percentage: duas",
     "law_dependency: nos termos da lei",
     "redacao de emenda constitucional (3 anotacao(oes))",
@@ -2608,19 +2607,16 @@
   "CF88:ART.166-A": {
    "level": "HIGH",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166-A:CAPUT: Vide ADI 7697 — a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.166-A:CAPUT: Vide ADI 7697)",
-    "camada externa: jurisprudencia",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "camada externa: jurisprudencia, nota externa",
     "number_or_percentage: %",
     "redacao de emenda constitucional (1 anotacao(oes))",
     "remissao: arts. 166",
@@ -2630,19 +2626,16 @@
   "CF88:ART.166:PAR.11": {
    "level": "HIGH",
    "rules": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
    ],
    "reasons": [
-    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697 — a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade"
    ],
-   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.166:PAR.11: Vide ADI 7697; ART.166:PAR.19: Vide ADI 7697)",
     "camada externa: jurisprudencia, nota externa",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
     "number_or_percentage: %",
     "law_dependency: lei complementar",
     "redacao de emenda constitucional (1 anotacao(oes))",
@@ -2668,12 +2661,11 @@
    "reasons": [
     "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.166:PAR.10: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697; ART.166:PAR.9: Vide ADI 7697 — a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade"
    ],
-   "jurisprudence": "NONE",
+   "jurisprudence": "CONTEXT_ONLY",
    "verification_complexity": "EXTERNAL",
    "complexity_reasons": [
     "remissao externa anotada na fonte (ART.166:PAR.9: Vide ADI 7697; ART.166:PAR.9-A: Vide ADI 7697)",
-    "camada externa: nota externa",
-    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "camada externa: jurisprudencia, nota externa",
     "number_or_percentage: %",
     "redacao de emenda constitucional (3 anotacao(oes))",
     "remissao: arts. 198",
