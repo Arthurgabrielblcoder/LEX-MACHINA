@@ -1,6 +1,7 @@
 # REVIEW — ENTENDA_CF_MACRO_BATCH_07
 
-Explicações novas para revisão humana. Todas estão em `PENDING_HUMAN_REVIEW`.
+Explicações novas para revisão humana. Estão em `PENDING_HUMAN_REVIEW`, exceto as aprovadas em rodada de revisão registrada
+(`HUMAN_APPROVED_T1`, com a DECISÃO HUMANA indicada abaixo de cada uma).
 As explicações reutilizadas de lotes aprovados não são repetidas aqui.
 
 Para cada explicação, marque APROVAR, AJUSTAR (indique o trecho) ou REJEITAR.
@@ -394,12 +395,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 82 — Duração e início do mandato presidencial
 
-- **TARGET:** `CF88:ART.82` · `ENTENDA/CF88:ART.82/BASE/1`
+- **TARGET:** `CF88:ART.82` · `ENTENDA/CF88:ART.82/BASE/2`
 - **DISPLAY TITLE:** Art. 82 — Duração e início do mandato presidencial
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 169 palavras · 1470 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 171 palavras · 1683 bytes · referências 0
 - **Motivo da seleção:** Visao geral: duracao de quatro anos e data de inicio do mandato presidencial.
 
 **O QUE DIZ**
@@ -408,19 +409,19 @@ O art. 82 fixa em quatro anos o mandato do Presidente da República e estabelece
 
 **O QUE SIGNIFICA**
 
-O mandato tem prazo certo. A eleição acontece em outubro (art. 77), e a posse ocorre no início do ano seguinte, na data indicada pelo artigo.
+O mandato presidencial dura quatro anos.
 
-A duração de quatro anos se combina com a possibilidade de uma única reeleição para o período subsequente, prevista no art. 14, § 5º.
+A eleição ocorre no primeiro domingo de outubro e, se houver segundo turno, no último domingo de outubro, conforme o art. 77.
 
-Entre a eleição e o início do mandato há um intervalo de alguns meses.
+A nova regra do art. 82 fixa o início do mandato em 5 de janeiro do ano seguinte ao da eleição.
 
 **EXEMPLO PRÁTICO**
 
-Um candidato eleito Presidente em outubro de um ano começa o mandato em 5 de janeiro do ano seguinte e o exerce por quatro anos.
+O Presidente eleito em 2026 inicia o mandato em 5 de janeiro de 2027. O mandato presidencial iniciado no primeiro dia de 2023 foi expressamente estendido pela regra de transição até a posse do sucessor, em 5 de janeiro de 2027.
 
 **ATENÇÃO**
 
-A data de início do mandato foi alterada por emenda constitucional. A partir de quando a nova data passou a valer é tema de regra de transição da própria emenda, que fica fora deste artigo e deve ser consultada na camada externa.
+A mudança para 5 de janeiro não foi aplicada à eleição de 2022. Os arts. 4º e 5º da Emenda Constitucional nº 111, de 2021, estabeleceram a transição e determinaram a aplicação da nova data somente a partir das eleições de 2026.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -428,11 +429,11 @@ A data de início do mandato foi alterada por emenda constitucional. A partir de
 
 **CAMADA EXTERNA**
 
-- Redação do art. 82 dada pela Emenda Constitucional nº 111, de 2021 (fonte canônica estrutural do projeto). A aplicação temporal da nova data de início do mandato depende de regra de transição da emenda: EXTERNAL_VERIFICATION_REQUIRED.
+- Redação do art. 82 dada pela Emenda Constitucional nº 111, de 2021. Aplicacao temporal verificada na fonte oficial: a EC 111/2021, art. 5º, aplica a nova data de posse somente a partir das eleicoes de 2026; o art. 4º preve a posse dos eleitos em 2022 em 1º/1/2023 e a duracao desses mandatos ate a posse dos sucessores em 5/1/2027 (Planalto; HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE). Ingestao do texto da emenda: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: em 5 de janeiro do ano seguinte ao)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: em 5 de janeiro do ano seguinte ao); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: em 5 de janeiro do ano seguinte ao)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A EC 111/2021 resolve objetivamente a aplicacao temporal (arts. 4º e 5º): a nova data vale a partir das eleicoes de 2026, e o mandato iniciado em 1º/1/2023 vai ate 5/1/2027. A ATENCAO deixa de remeter a camada externa; os turnos da eleicao seguem o art. 77. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -2038,12 +2039,12 @@ Sem explicação própria: 48 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 100 — Precatórios
 
-- **TARGET:** `CF88:ART.100` · `ENTENDA/CF88:ART.100/BASE/1`
+- **TARGET:** `CF88:ART.100` · `ENTENDA/CF88:ART.100/BASE/2`
 - **DISPLAY TITLE:** Art. 100 — Precatórios
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 319 palavras · 2690 bytes · referências 4
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 379 palavras · 3301 bytes · referências 4
 - **Motivo da seleção:** Visao geral: regime de pagamento das condenacoes judiciais da Fazenda Publica e mapa dos seus paragrafos.
 
 **O QUE DIZ**
@@ -2056,15 +2057,15 @@ Quando o poder público perde uma ação e precisa pagar, o pagamento não é fe
 
 A regra central é a ordem cronológica: quem apresentou o precatório antes recebe antes. O orçamento não pode reservar dinheiro para um credor escolhido.
 
-O restante do artigo cria exceções e complementos. Créditos alimentares têm preferência sobre os demais, salvo sobre os créditos alimentares de idosos, doentes graves e pessoas com deficiência, que vêm antes. Dívidas definidas em lei como de pequeno valor são pagas sem precatório. Os parágrafos finais tratam de limites de pagamento e de financiamento para Estados, Distrito Federal e Municípios.
+O restante do artigo cria exceções e complementos. Os créditos alimentares possuem preferência sobre os demais. Dentro deles, os titulares abrangidos pelo § 2º possuem preferência especial até o limite correspondente ao triplo da obrigação de pequeno valor; eventual saldo remanescente segue a ordem cronológica própria do crédito. Dívidas definidas em lei como de pequeno valor são pagas sem precatório. Os parágrafos finais tratam de limites de pagamento e de financiamento para Estados, Distrito Federal e Municípios.
 
 **EXEMPLO PRÁTICO**
 
-Um servidor vence uma ação contra o Estado e tem direito a receber diferenças salariais. O juiz expede o precatório, que entra na fila do Estado. O pagamento ocorrerá conforme a posição na ordem e as preferências aplicáveis, e não por escolha do governo.
+Um servidor vence uma ação contra o Estado e tem direito a receber diferenças salariais, que configuram crédito alimentar. O juiz expede o precatório, que entra na fila do Estado. O pagamento seguirá a ordem cronológica e as preferências constitucionais aplicáveis, e não a escolha do governo.
 
 **ATENÇÃO**
 
-Vários parágrafos do artigo tiveram a redação alterada ou foram objeto de controle de constitucionalidade. A redação que aparece no texto deve ser lida junto com a camada JURISPRUDÊNCIA e as regras de transição das emendas, consultadas na camada externa.
+Alguns dispositivos do art. 100 não podem ser compreendidos apenas pela redação literal. O Supremo Tribunal Federal declarou inconstitucional a compensação unilateral prevista nos §§ 9º e 10 introduzidos pela Emenda Constitucional nº 62, de 2009, e também declarou inconstitucional o § 9º na redação dada pela Emenda Constitucional nº 113, de 2021. O índice da poupança previsto no § 12 também foi afastado no controle de constitucionalidade. As regras atualmente aplicáveis de atualização e juros decorrem da jurisprudência e de alterações constitucionais posteriores.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2074,11 +2075,11 @@ Vários parágrafos do artigo tiveram a redação alterada ou foram objeto de co
 
 **CAMADA EXTERNA**
 
-- Dispositivos do art. 100 têm anotações de controle de constitucionalidade na fonte canônica (ex.: ADI 4425, ADI 7047, ADI 7064): a redação literal deve ser conferida na camada JURISPRUDÊNCIA. As regras de transição sobre precatórios ficam no ADCT e nas emendas, na camada externa.
+- Controle de constitucionalidade verificado na fonte oficial (STF): ADI 4425 (2013; §§ 2º, 9º, 10 e 12 da redacao da EC 62/2009, com modulacao em 25/3/2015) e ADI 7064, julgada com a ADI 7047 (2023; § 9º na redacao da EC 113/2021). Compensacao unilateral: Tema 558 (RE 678360). Limites dos §§ 23 a 30 e atualizacao: EC 136/2025. Ingestao na camada JURISPRUDENCIA/externa: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: exclusivamente na ordem cronológica de apresentação dos prec)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: exclusivamente na ordem cronológica de apresentação dos prec)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo mantido (ordem cronologica, alimentares, preferencias, RPV, orcamento). A preferencia do § 2º passa a ter o limite do triplo da RPV e o saldo volta a ordem; o exemplo e qualificado como credito alimentar; a ATENCAO deixa de ser generica e registra as inconstitucionalidades verificadas, sem ensinar §§ 9º, 10 ou 12 como regra atual. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -2175,12 +2176,12 @@ O município não pode fixar limite abaixo do maior benefício do regime geral d
 
 ### Art. 100, § 5º — Inclusão dos precatórios no orçamento
 
-- **TARGET:** `CF88:ART.100:PAR.5` · `ENTENDA/CF88:ART.100:PAR.5/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.5` · `ENTENDA/CF88:ART.100:PAR.5/BASE/2`
 - **DISPLAY TITLE:** Art. 100, § 5º — Inclusão dos precatórios no orçamento
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 175 palavras · 1701 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 263 palavras · 2599 bytes · referências 2
 - **Motivo da seleção:** Dispositivo com regra autonoma: obrigacao de incluir no orcamento os precatorios apresentados ate a data fixada e prazo de pagamento.
 
 **O QUE DIZ**
@@ -2189,9 +2190,9 @@ O § 5º obriga as entidades de direito público a incluírem no orçamento a ve
 
 **O QUE SIGNIFICA**
 
-O parágrafo cria um calendário. Os precatórios apresentados até a data de corte entram obrigatoriamente no orçamento do ano seguinte.
+O parágrafo cria um calendário. Os precatórios apresentados até 1º de fevereiro entram obrigatoriamente no ciclo orçamentário correspondente, ou seja, no orçamento do ano seguinte.
 
-A inclusão não é opcional: o ente devedor precisa reservar a verba. O pagamento deve ocorrer até o fim daquele exercício seguinte, com os valores corrigidos.
+A inclusão não é opcional: o ente devedor precisa reservar a verba. O pagamento deve ocorrer até o fim do exercício seguinte, com os valores corrigidos.
 
 **EXEMPLO PRÁTICO**
 
@@ -2199,7 +2200,8 @@ Um precatório apresentado em janeiro deve ser incluído no orçamento do ano se
 
 **ATENÇÃO**
 
-A data de corte e a forma de atualização dos valores foram alteradas por emendas; a aplicação no tempo dessas mudanças é tema de regra de transição, consultada na camada externa. Os limites de pagamento dos Estados, Distrito Federal e Municípios (§ 23) também influenciam o prazo efetivo.
+A Emenda Constitucional nº 136, de 2025, alterou a data de corte do § 5º para 1º de fevereiro e entrou em vigor na data de sua publicação. Ela não estabeleceu uma regra específica de transição para essa alteração do § 5º. Assim, a nova data já está vigente; o primeiro corte anual posterior à emenda foi 1º de fevereiro de 2026.
+Para os requisitórios que envolvam a Fazenda Pública federal, o art. 3º, § 3º, da Emenda Constitucional nº 113, de 2021, na redação dada pela Emenda Constitucional nº 136, de 2025, determina que não incidam juros de mora durante o período previsto no § 5º. Essa previsão sobre a ausência de juros de mora foi verificada para os requisitórios da Fazenda Pública federal. Estados, Distrito Federal e Municípios possuem disciplina constitucional própria.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2208,11 +2210,11 @@ A data de corte e a forma de atualização dos valores foram alteradas por emend
 
 **CAMADA EXTERNA**
 
-- Redação do § 5º dada pela Emenda Constitucional nº 136, de 2025 (fonte canônica estrutural). A aplicação no tempo da nova data de apresentação depende das regras de transição da emenda: EXTERNAL_VERIFICATION_REQUIRED.
+- Redacao do § 5º dada pela EC 136/2025, verificada na fonte oficial (Planalto): data de corte em 1º de fevereiro; vigencia na publicacao (art. 9º); nenhuma regra de transicao propria para o § 5º (o art. 8º trata so do § 23). Data anterior (2 de abril) introduzida pela EC 114/2021, com vigencia a partir de 2022 (art. 8º, I). Juros de mora no periodo do § 5º: EC 113/2021, art. 3º, § 3º, na redacao da EC 136/2025 (requisitorios federais). Exercicio financeiro = ano civil: Lei 4.320/1964, art. 34. Ingestao na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um precatório apresentado em janeiro deve ser incluído no or)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A transicao da data de corte e objetiva: a EC 136/2025 entrou em vigor na publicacao, sem regra propria para o § 5º; o primeiro corte posterior foi 1º/2/2026. Acrescentado o periodo sem juros de mora dos requisitorios federais, sem generalizar para os entes subnacionais. Glossario mantido (Lei 4.320/1964, art. 34). (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
@@ -2263,44 +2265,48 @@ Fora das duas hipóteses do § 6º, o sequestro não é autorizado por este par�
 
 ### Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa
 
-- **TARGET:** `CF88:ART.100:PAR.9` · `ENTENDA/CF88:ART.100:PAR.9/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.9` · `ENTENDA/CF88:ART.100:PAR.9/BASE/2`
 - **DISPLAY TITLE:** Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.100:PAR.10`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 249 palavras · 2110 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 309 palavras · 3020 bytes · referências 1
 - **Motivo da seleção:** Bloco: deposito do valor correspondente a debitos do credor em divida ativa e consulta previa a Fazenda; dispositivos com anotacao de controle de constitucionalidade.
 
 **O QUE DIZ**
 
-O § 9º prevê que, sem interromper o pagamento do precatório e mediante comunicação da Fazenda ao Tribunal, o valor dos débitos do credor inscritos em dívida ativa seja depositado à conta do juízo da ação de cobrança, que decide o destino final. O § 10 determina que, antes de expedir o precatório, o Tribunal pergunte à Fazenda, com prazo de trinta dias, sobre esses débitos, sob pena de perda do direito de abatimento.
+A redação literal dos §§ 9º e 10 descreve mecanismos relacionados a débitos do credor perante a Fazenda Pública: o § 9º trata dos débitos inscritos em dívida ativa contra o credor, e o § 10, da consulta prévia do Tribunal à Fazenda sobre esses débitos. Entretanto, esses dispositivos foram atingidos por decisões de controle de constitucionalidade, e sua leitura isolada não corresponde ao regime jurídico atualmente aplicável.
 
 **O QUE SIGNIFICA**
 
-Os parágrafos tratam do credor que também deve ao poder público. Quando há dívida dele inscrita em dívida ativa, o valor correspondente não vai diretamente ao credor: é depositado no processo de cobrança, e o juiz desse processo decide o que fazer.
+Os §§ 9º e 10, na redação de 2009, previam compensação entre o precatório e débitos existentes perante a Fazenda Pública. O Supremo Tribunal Federal declarou esse mecanismo inconstitucional.
 
-O § 10 organiza o procedimento: o Tribunal consulta a Fazenda antes de expedir o precatório, e a Fazenda que não responder em trinta dias perde o direito de abater.
+Posteriormente, uma nova redação do § 9º, de 2021, previu depósito do valor correspondente ao débito inscrito em dívida ativa. Essa nova regra também foi declarada inconstitucional pelo Supremo.
+
+Portanto, os §§ 9º e 10 não podem ser utilizados como fundamento para uma compensação ou retenção unilateral do precatório pelo poder público.
+
+Outros mecanismos previstos no próprio art. 100, como os dos §§ 11 e 21, possuem requisitos próprios e não devem ser confundidos com a compensação unilateral afastada pelo Supremo.
 
 **EXEMPLO PRÁTICO**
 
-Uma empresa tem precatório a receber do Estado, mas deve ICMS inscrito em dívida ativa. A parte do valor correspondente à dívida é depositada na execução fiscal, e o juiz dessa execução decide seu destino.
+Uma empresa possui um precatório e, ao mesmo tempo, dívida inscrita perante a Fazenda Pública. O poder público não pode, apenas com fundamento nos §§ 9º e 10, reduzir unilateralmente o precatório para compensar essa dívida. Eventual utilização de outro mecanismo constitucional depende do cumprimento dos requisitos específicos desse mecanismo.
 
 **ATENÇÃO**
 
-Estes parágrafos têm anotação de controle de constitucionalidade na fonte canônica. A validade e o alcance da compensação ou do abatimento com débitos do credor devem ser conferidos na camada JURISPRUDÊNCIA e não podem ser deduzidos apenas da leitura do texto.
+A redação literal desses parágrafos permanece relevante para compreender a evolução constitucional, mas não representa, isoladamente, o regime jurídico vigente. A compensação unilateral foi afastada pelo Supremo Tribunal Federal, tanto na redação dada pela Emenda Constitucional nº 62, de 2009, quanto na redação do § 9º dada pela Emenda Constitucional nº 113, de 2021.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Dívida ativa*: cadastro de créditos do poder público vencidos e não pagos, que permite a cobrança judicial.
-- *Abatimento*: redução do valor a pagar pelo desconto de uma dívida do credor.
+- *Compensação unilateral*: desconto de uma dívida do credor feito por iniciativa só do devedor público, sem acordo do credor.
 
 **CAMADA EXTERNA**
 
-- Os §§ 9º e 10 têm anotações de controle de constitucionalidade na fonte canônica (Vide ADI 7047, ADI 7064; § 10: Vide ADI 4425): tema da camada JURISPRUDÊNCIA.
+- Controle de constitucionalidade verificado na fonte oficial (STF): ADI 4425 (2013; §§ 9º e 10 da redacao da EC 62/2009 declarados inconstitucionais; compensacoes realizadas ate 25/3/2015 mantidas pela modulacao) e ADI 7064, julgada com a ADI 7047 (2023; § 9º na redacao da EC 113/2021 declarado inconstitucional). Tema 558 (RE 678360): compensacao unilateral inconstitucional. Ingestao na camada JURISPRUDENCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pagamento do precatório e mediante comunicação da fazenda); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Uma empresa tem precatório a receber do Estado, mas deve ICM)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: débitos inscritos em dívida ativa contra o credor)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Diverge da sugestao inicial de REJEITAR: o target e aproveitavel com reescrita integral. O nucleo deixa de ensinar o deposito e o abatimento como regras operativas e passa a registrar as duas declaracoes de inconstitucionalidade; o exemplo nao cria compensacao unilateral valida; §§ 11 e 21 aparecem como mecanismos distintos, com requisitos proprios. Glossario: "Abatimento" sai (deixou de ser usado) e entra "Compensacao unilateral". (seções: atencao, exemplo_pratico, external_layer_notes, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2352,31 +2358,35 @@ As operações valem com o mesmo ente devedor. O crédito contra um Estado não 
 
 ### Art. 100, § 12 — Atualização e juros dos precatórios
 
-- **TARGET:** `CF88:ART.100:PAR.12` · `ENTENDA/CF88:ART.100:PAR.12/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.12` · `ENTENDA/CF88:ART.100:PAR.12/BASE/2`
 - **DISPLAY TITLE:** Art. 100, § 12 — Atualização e juros dos precatórios
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1994 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 302 palavras · 2711 bytes · referências 0
 - **Motivo da seleção:** Dispositivo com regra autonoma sobre correcao e juros dos requisitorios, com anotacao de controle de constitucionalidade.
 
 **O QUE DIZ**
 
-O § 12 trata da atualização dos requisitórios entre a expedição e o pagamento, a partir da promulgação da emenda que o incluiu. O texto adota o índice da remuneração básica da poupança e juros simples no mesmo percentual dos juros da poupança para compensar a mora, sem juros compensatórios.
+A redação literal do § 12 prevê atualização pela remuneração básica da poupança e juros vinculados à poupança, além de afastar juros compensatórios. Esse critério literal não é o atualmente aplicável.
 
 **O QUE SIGNIFICA**
 
-O parágrafo trata de como o valor do precatório é corrigido enquanto aguarda o pagamento. O texto adota o índice da poupança para a atualização e os juros da poupança para compensar o atraso.
+O critério literal da poupança previsto no § 12 não corresponde ao regime atualmente aplicável. O Supremo Tribunal Federal afastou esse índice em controle concentrado de constitucionalidade.
 
-Juros compensatórios, que remuneram o credor por ter ficado sem o bem ou o valor, ficam afastados nesse período.
+Para requisitórios que envolvam a Fazenda Pública federal, a regra constitucional atual prevê atualização pelo IPCA e juros simples de 2% ao ano. Se o resultado dessa combinação superar a variação da Selic no mesmo período, aplica-se a Selic em substituição.
+
+Nos processos tributários aplicam-se os mesmos critérios utilizados pela Fazenda Pública para remunerar seu crédito tributário.
+
+Para Estados, Distrito Federal e Municípios, os §§ 16 e 16-A do art. 97 do ADCT estabelecem, desde 1º de agosto de 2025, IPCA e juros simples de 2% ao ano, também limitados pela Selic.
 
 **EXEMPLO PRÁTICO**
 
-Entre a expedição de um precatório e o seu pagamento passam dois anos. O valor é corrigido e acrescido de juros conforme a regra indicada pelo parágrafo, observada a disciplina definida pela camada JURISPRUDÊNCIA.
+Um precatório contra a União permanece pendente entre a expedição e o pagamento. A atualização deve seguir o regime constitucional atualmente aplicável aos requisitórios federais, e não o índice da poupança que ainda aparece na redação literal do § 12.
 
 **ATENÇÃO**
 
-Este parágrafo tem anotação de controle de constitucionalidade na fonte canônica, e o índice de correção aplicável aos precatórios foi alterado por emendas posteriores. O critério efetivamente aplicável não deve ser deduzido apenas da leitura do texto: consultar a camada JURISPRUDÊNCIA e a camada externa.
+O regime federal está no art. 3º da Emenda Constitucional nº 113, de 2021, na redação dada pela Emenda Constitucional nº 136, de 2025. Os processos tributários têm regime próprio, ligado aos critérios de remuneração do crédito tributário da Fazenda Pública. Para os requisitórios federais, não incidem juros de mora durante o período previsto no § 5º. A disciplina federal e a de Estados, Distrito Federal e Municípios estão em dispositivos distintos e não devem ser confundidas.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2386,11 +2396,11 @@ Este parágrafo tem anotação de controle de constitucionalidade na fonte canô
 
 **CAMADA EXTERNA**
 
-- O § 12 tem anotação de controle de constitucionalidade na fonte canônica (Vide ADI 4425), e o índice de correção dos requisitórios foi tratado em emendas posteriores: tema da camada JURISPRUDÊNCIA e da camada externa (EXTERNAL_VERIFICATION_REQUIRED).
+- Verificado na fonte oficial: ADI 4425 (STF; indice da poupanca do § 12 declarado inconstitucional; modulacao: TR ate 25/3/2015 e, depois, IPCA-E); regime atual da EC 113/2021, art. 3º, caput e §§ 1º a 3º, e do ADCT, art. 97, §§ 16 e 16-A, ambos na redacao da EC 136/2025 (Planalto). Ingestao na camada externa/JURISPRUDENCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (exemplo_pratico: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A atualização deve seguir o regime constitucional atualmente)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Ajuste substancial: separa o que a redacao literal diz do regime aplicavel. O exemplo deixa de aplicar a regra da poupanca; o regime federal (EC 113, art. 3º) e o subnacional (ADCT, art. 97, §§ 16 e 16-A) ficam distintos, com o regime tributario e o periodo sem mora (requisitorios federais) na ATENCAO. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_diz, o_que_significa)
 
 ---
 
@@ -2772,12 +2782,12 @@ Além das alíneas, o recorrente precisa demonstrar a repercussão geral da ques
 
 ### Art. 102, § 2º — Efeito vinculante nas ações de controle
 
-- **TARGET:** `CF88:ART.102:PAR.2` · `ENTENDA/CF88:ART.102:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.102:PAR.2` · `ENTENDA/CF88:ART.102:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 102, § 2º — Efeito vinculante nas ações de controle
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.102`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 2076 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 267 palavras · 2539 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: eficacia contra todos e efeito vinculante das decisoes definitivas de merito nas acoes diretas.
 
 **O QUE DIZ**
@@ -2788,13 +2798,13 @@ O § 2º estabelece que, na ação direta de inconstitucionalidade e na declarat
 
 Nessas ações, o Supremo não decide um caso entre duas partes, mas a validade de uma norma em tese. Por isso a decisão vale para todos.
 
-O efeito vinculante significa que juízes, tribunais e órgãos da administração ficam obrigados a seguir a decisão. Um juiz não pode aplicar uma lei que o Supremo declarou inconstitucional nessas ações.
+O efeito vinculante significa que os órgãos do Poder Judiciário e da administração pública abrangidos pelo parágrafo devem observar a decisão do Supremo, respeitados o alcance e a eventual modulação de efeitos fixados pelo próprio Tribunal.
 
 O texto exige que a decisão seja definitiva e de mérito: decisões provisórias ou que não examinam o conteúdo da norma não estão descritas neste parágrafo.
 
 **EXEMPLO PRÁTICO**
 
-O Supremo julga procedente uma ação direta contra uma lei estadual de tributos. A partir daí, a secretaria de fazenda do Estado não pode mais cobrar com base nessa lei, e os juízes não podem aplicá-la.
+O Supremo julga procedente uma ação direta contra uma lei estadual de tributos. Tornada eficaz a decisão nos termos definidos pelo Supremo, a secretaria de fazenda do Estado e os juízes devem observá-la. Se houver modulação de efeitos, também devem respeitar o marco temporal definido pelo Tribunal.
 
 **ATENÇÃO**
 
@@ -2808,11 +2818,11 @@ O texto não menciona o Poder Legislativo entre os destinatários do efeito vinc
 
 **CAMADA EXTERNA**
 
-- A fonte canônica anota este parágrafo com controle de constitucionalidade (Vide ADIN 3392): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Modulacao de efeitos e alcance do efeito vinculante: Lei 9.868/1999, arts. 27 e 28, paragrafo unico (verificados na fonte oficial, Planalto). Anomalia de anotacao da fonte canonica: a anotacao "Vide ADIN 3392" neste paragrafo nao se refere ao efeito vinculante; a ADI 3392 trata de sentenca normativa trabalhista (art. 114, § 2º) e foi julgada improcedente (STF, 2020). Ela nao e fundamento deste T1 (backlog MB07-12). Ingestao na camada externa: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Tornada eficaz a decisão nos termos definidos pelo Supremo, ); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Se houver modulação de efeitos, também devem respeitar o mar)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A frase absoluta ("um juiz nao pode aplicar") passa a comportar o alcance e a modulacao de efeitos (Lei 9.868/1999, art. 27); o exemplo deixa de fixar o marco temporal. A ADI 3392 nao trata deste paragrafo: registrada como anomalia de anotacao (MB07-12), sem alterar a fonte congelada. (seções: exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -3352,12 +3362,12 @@ O recurso especial cuida de lei federal; a questão constitucional vai ao Suprem
 
 ### Art. 105, §§ 2º e 3º — Relevância no recurso especial
 
-- **TARGET:** `CF88:ART.105:PAR.2` · `ENTENDA/CF88:ART.105:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.105:PAR.2` · `ENTENDA/CF88:ART.105:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 105, §§ 2º e 3º — Relevância no recurso especial
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.105:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.105`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 258 palavras · 2258 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 288 palavras · 2796 bytes · referências 0
 - **Motivo da seleção:** Bloco: exigencia de relevancia (§ 2º), quorum de recusa e hipoteses em que a relevancia existe (§ 3º).
 
 **O QUE DIZ**
@@ -3366,34 +3376,36 @@ O § 2º exige que, no recurso especial, o recorrente demonstre a relevância da
 
 **O QUE SIGNIFICA**
 
-O filtro de relevância funciona para o recurso especial de modo parecido com a repercussão geral no Supremo.
+O filtro de relevância do recurso especial já foi regulamentado pela Lei nº 15.484, de 2026.
 
-Como regra, o recorrente precisa demonstrar que a questão é relevante. Nos casos do § 3º, porém, a própria Constituição já reconhece a relevância.
+O recorrente deve apresentar a questão de relevância em tópico específico e fundamentado.
 
-A recusa por falta de relevância exige quórum alto: dois terços do órgão que julgaria o recurso.
+Nas hipóteses previstas no § 3º, a relevância é presumida.
+
+A inexistência de relevância somente permite o não conhecimento do recurso pelo quórum constitucional de dois terços do órgão competente. O filtro não se confunde com a repercussão geral do recurso extraordinário.
 
 **EXEMPLO PRÁTICO**
 
-Em uma ação de improbidade administrativa, o réu interpõe recurso especial. Como a hipótese está no § 3º, a relevância já está reconhecida pelo texto e não pode servir de motivo para recusar o recurso.
+Em recurso especial interposto em ação de improbidade administrativa, a relevância é presumida pela Constituição. Ainda assim, a petição deve observar a forma prevista na legislação regulamentadora, inclusive o tópico específico exigido pela Lei nº 15.484, de 2026.
 
 **ATENÇÃO**
 
-O § 2º remete à lei a regulamentação do filtro. A partir de quando ele passou a ser exigido depende dessa regulamentação e de regra de transição da emenda que o criou, consultadas na camada externa.
+A Lei nº 15.484, de 2026, determina que a exigência seja aplicada aos recursos especiais interpostos contra acórdãos publicados após sua entrada em vigor. Em outubro de 2026, essa regulamentação já está vigente.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Direito infraconstitucional*: normas abaixo da Constituição, como leis e decretos.
 - *Não conhecer do recurso*: recusar o exame do recurso, sem julgar o seu conteúdo.
-- *Repercussão geral*: filtro equivalente exigido no recurso extraordinário ao Supremo (art. 102, § 3º).
+- *Repercussão geral*: requisito próprio do recurso extraordinário ao Supremo Tribunal Federal, previsto no art. 102, § 3º, com disciplina distinta do filtro de relevância do recurso especial.
 - *Inelegibilidade*: impedimento de se candidatar a cargo eletivo.
 
 **CAMADA EXTERNA**
 
-- A regulamentação legal do filtro de relevância e sua aplicação no tempo dependem de lei e de regra de transição da emenda: EXTERNAL_VERIFICATION_REQUIRED.
+- Regulamentacao verificada na fonte oficial (Planalto): Lei 15.484/2026 (art. 1.035-A do CPC, incluido pelo art. 2º: topico especifico e fundamentado, presuncao nas hipoteses do art. 105, § 3º, quorum de 2/3; art. 4º: exigencia nos recursos contra acordaos publicados apos a vigencia; art. 7º: vigencia 30 dias apos a publicacao, em 4/8/2026). EC 125/2022, art. 2º. Ingestao na camada externa: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: repercussão geral); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a relevância das questões de direito federal infraconstituci)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: jurisprudência); JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: repercussão geral); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a relevância das questões de direito federal infraconstituci); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ainda assim, a petição deve observar a forma prevista na leg)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A regulamentacao existe (Lei 15.484/2026) e define o marco temporal (art. 4º); a ATENCAO deixa de remeter a camada externa. O exemplo nao afirma que a presuncao dispensa os requisitos formais. "Repercussao geral" redefinida como requisito proprio do recurso extraordinario. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -4073,12 +4085,12 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 114 — Competência da Justiça do Trabalho
 
-- **TARGET:** `CF88:ART.114` · `ENTENDA/CF88:ART.114/BASE/1`
+- **TARGET:** `CF88:ART.114` · `ENTENDA/CF88:ART.114/BASE/2`
 - **DISPLAY TITLE:** Art. 114 — Competência da Justiça do Trabalho
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 314 palavras · 2567 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 371 palavras · 3159 bytes · referências 0
 - **Motivo da seleção:** Visao geral: mapa da competencia trabalhista e das regras sobre negociacao, arbitragem e dissidio coletivo.
 
 **O QUE DIZ**
@@ -4087,11 +4099,13 @@ O art. 114 lista o que a Justiça do Trabalho processa e julga. Entre outras, es
 
 **O QUE SIGNIFICA**
 
-O artigo tem como eixo a relação de trabalho. Os incisos reúnem tudo o que dela decorre: o conflito individual, a greve, a disputa entre sindicatos, as indenizações e as multas aplicadas ao empregador pela fiscalização.
+A relação de trabalho é um eixo importante das competências do art. 114, mas o alcance dos incisos não é ilimitado. Os incisos tratam do conflito individual, da greve, da representação sindical, das indenizações por danos, das penalidades aplicadas ao empregador pela fiscalização e da execução das contribuições sociais decorrentes das sentenças.
+
+O Supremo Tribunal Federal assentou que o inciso I não inclui as causas que discutam relação jurídico-estatutária entre o Poder Público e seus servidores. O Supremo também afastou interpretação dos incisos I, IV e IX que atribuísse à Justiça do Trabalho competência para processar e julgar ações penais.
 
 O inciso IX deixa a porta aberta para a lei acrescentar outras controvérsias da relação de trabalho.
 
-Os parágrafos tratam dos conflitos coletivos, que envolvem categorias inteiras e não apenas um empregado. Eles preveem negociação, arbitragem e, em último caso, o dissídio coletivo.
+Os parágrafos tratam dos conflitos coletivos, que envolvem categorias inteiras e não apenas um empregado: negociação, arbitragem e dissídio coletivo.
 
 **EXEMPLO PRÁTICO**
 
@@ -4099,7 +4113,7 @@ Um sindicato de trabalhadores entra em greve e a empresa pede ao Judiciário que
 
 **ATENÇÃO**
 
-O caput e os §§ 2º e 3º têm anotações de controle de constitucionalidade na fonte canônica. O alcance da competência trabalhista em vários incisos não deve ser deduzido apenas do texto: ele é delimitado pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+A competência da Justiça do Trabalho possui delimitações jurisprudenciais. Entre elas, estão a exclusão das relações jurídico-estatutárias entre Poder Público e servidores, e a inexistência de competência penal genérica, ambas fixadas pelo Supremo Tribunal Federal em controle concentrado.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4109,22 +4123,22 @@ O caput e os §§ 2º e 3º têm anotações de controle de constitucionalidade 
 
 **CAMADA EXTERNA**
 
-- A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Delimitacoes verificadas na fonte oficial (STF): ADI 3395 (2020; interpretacao conforme do inciso I, sem relacao juridico-estatutaria) e ADI 3684 (2020; incisos I, IV e IX sem competencia para acoes penais). §§ 2º e 3º declarados constitucionais na ADI 3423 e na ADI 3392 (2020). Ingestao na camada JURISPRUDENCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da relação de trabalho na forma da lei)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da relação de trabalho na forma da lei)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a formula "tudo o que dela decorre" (overbreadth); o nucleo registra as duas delimitacoes verificadas (ADI 3395 e ADI 3684); a ATENCAO fica concreta e a lista de ADIs nao verificadas sai do nucleo. Os paragrafos deixam de ser descritos como etapas obrigatorias. (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
 ### Art. 114, inciso I — Ações oriundas da relação de trabalho
 
-- **TARGET:** `CF88:ART.114:INC.I` · `ENTENDA/CF88:ART.114:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.114:INC.I` · `ENTENDA/CF88:ART.114:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 114, inciso I — Ações oriundas da relação de trabalho
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.114`, `CF88:ART.114:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1959 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 220 palavras · 2158 bytes · referências 0
 - **Motivo da seleção:** Item: criterio central da competencia trabalhista e mencao a administracao publica, cuja leitura literal nao basta.
 
 **O QUE DIZ**
@@ -4133,11 +4147,11 @@ O inciso I atribui à Justiça do Trabalho as ações que nascem da relação de
 
 **O QUE SIGNIFICA**
 
-O critério do inciso é a origem do conflito: se ele nasce de uma relação de trabalho, a competência é trabalhista.
+O inciso utiliza a expressão “relação de trabalho”, que é mais ampla que relação de emprego. O texto também menciona os entes públicos, inclusive Estados estrangeiros e organismos internacionais, como possíveis partes.
 
-O texto fala em relação de trabalho, expressão mais ampla do que relação de emprego. Também menciona os entes públicos, inclusive Estados estrangeiros e organismos internacionais, como possíveis partes.
+Entretanto, o Supremo Tribunal Federal deu interpretação conforme ao dispositivo para excluir de sua abrangência as causas que discutam relação jurídico-estatutária entre o Poder Público e seus servidores.
 
-A menção à administração pública, porém, não resolve sozinha quais vínculos com o poder público ficam na Justiça do Trabalho.
+Assim, a simples presença de um ente público no processo não basta para definir a competência trabalhista; é necessário considerar a natureza jurídica do vínculo.
 
 **EXEMPLO PRÁTICO**
 
@@ -4145,7 +4159,7 @@ Um empregado contratado com carteira assinada por uma empresa pública federal �
 
 **ATENÇÃO**
 
-A leitura isolada do inciso não basta para saber se servidores com vínculo estatutário ou de natureza administrativa estão abrangidos. Esse ponto é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.
+A exclusão confirmada pelo Supremo Tribunal Federal em controle concentrado refere-se às relações jurídico-estatutárias entre o Poder Público e seus servidores. Outros vínculos públicos devem ser examinados conforme sua natureza jurídica e a jurisprudência aplicável.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4154,22 +4168,22 @@ A leitura isolada do inciso não basta para saber se servidores com vínculo est
 
 **CAMADA EXTERNA**
 
-- A exclusão de vínculos estatutários ou administrativos da competência trabalhista resulta de interpretação do Supremo sobre o caput e este inciso: EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA (a fonte canônica anota o caput com Vide ADIN 3392 e ADIN 3432).
+- Verificado na fonte oficial (STF): ADI 3395, merito em 2020, interpretacao conforme sem reducao de texto: o inciso I nao abrange causas de relacao juridico-estatutaria entre o Poder Publico e seus servidores. Ingestao na camada JURISPRUDENCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: jurisprudência)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O nucleo passa a afirmar a exclusao verificada na ADI 3395, limitada as relacoes juridico-estatutarias, sem ampliar para toda relacao administrativa. Exemplo do celetista de empresa publica mantido. (seções: atencao, external_layer_notes, o_que_significa)
 
 ---
 
 ### Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
 
-- **TARGET:** `CF88:ART.114:PAR.1` · `ENTENDA/CF88:ART.114:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.114:PAR.1` · `ENTENDA/CF88:ART.114:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.114:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.114`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 2219 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 2343 bytes · referências 0
 - **Motivo da seleção:** Bloco: arbitragem apos negociacao frustrada (§ 1º) e dissidio coletivo de natureza economica de comum acordo (§ 2º).
 
 **O QUE DIZ**
@@ -4178,21 +4192,21 @@ O § 1º permite que as partes elejam árbitros quando a negociação coletiva f
 
 **O QUE SIGNIFICA**
 
-Os parágrafos descrevem uma escada para resolver conflitos coletivos.
+Os §§ 1º e 2º disciplinam formas de solução dos conflitos coletivos.
 
-O primeiro degrau é a negociação entre sindicatos e empresas. Se ela falha, as partes podem escolher a arbitragem.
+Frustrada a negociação coletiva, as partes podem escolher árbitros.
 
-O último degrau é o dissídio coletivo econômico, em que a Justiça do Trabalho fixa condições de trabalho, como reajustes. O texto exige comum acordo para esse ajuizamento.
+Se houver recusa à negociação coletiva ou à arbitragem, as partes podem, de comum acordo, ajuizar dissídio coletivo de natureza econômica. O Supremo Tribunal Federal declarou constitucional a exigência de comum acordo.
 
-A decisão judicial tem um piso: não pode ficar abaixo das proteções mínimas da lei nem das conquistas já convencionadas.
+Ao decidir o conflito, a Justiça do Trabalho deve respeitar as disposições mínimas legais de proteção ao trabalho e as condições anteriormente convencionadas.
 
 **EXEMPLO PRÁTICO**
 
-Sindicato e empresas não chegam a acordo sobre o reajuste anual. Se ambos concordarem, levam o caso à Justiça do Trabalho, que fixa o reajuste respeitando os direitos já previstos em lei e em acordos anteriores.
+Sindicato e empresas não chegam a acordo sobre o reajuste anual. Se ambos concordarem em levar o conflito à Justiça do Trabalho, ela fixa o reajuste respeitando os direitos já previstos em lei e as condições anteriormente convencionadas.
 
 **ATENÇÃO**
 
-A exigência de comum acordo e seu alcance não devem ser deduzidos apenas do texto: o tema foi objeto de controle de constitucionalidade (anotações na fonte canônica) e fica na camada JURISPRUDÊNCIA.
+A exigência de comum acordo prevista no § 2º foi considerada constitucional pelo Supremo Tribunal Federal.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4202,11 +4216,11 @@ A exigência de comum acordo e seu alcance não devem ser deduzidos apenas do te
 
 **CAMADA EXTERNA**
 
-- A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF): ADI 3423 e ADI 3392, julgadas improcedentes em 2020 (exigencia de comum acordo do § 2º constitucional). Tema 841 (RE 1002295) como contexto, com transito em julgado em 21/10/2020; a redacao da tese nao foi lida na fonte oficial. Ingestao na camada JURISPRUDENCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as disposições mínimas legais de proteção ao trabalho)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as disposições mínimas legais de proteção ao trabalho); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as disposições mínimas legais de proteção ao trabalho)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a ideia de "escada" obrigatoria (negociacao -> arbitragem -> dissidio): o texto nao exige arbitragem previa. A ATENCAO registra a constitucionalidade do comum acordo (ADI 3423). "Conquistas" substituido por "condicoes anteriormente convencionadas". (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -4217,7 +4231,7 @@ A exigência de comum acordo e seu alcance não devem ser deduzidos apenas do te
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.114`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1796 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 183 palavras · 1793 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: legitimidade do Ministerio Publico do Trabalho para o dissidio coletivo em greve de atividade essencial.
 
 **O QUE DIZ**
@@ -4252,7 +4266,7 @@ O parágrafo não define quais são as atividades essenciais; isso está na lei 
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteudo juridico aprovado sem alteracao (v1 byte-identica). Provenance oficial registrada: ADI 3423 (legitimidade do MPT, § 3º constitucional) e Lei 7.783/1989, art. 10 (atividades essenciais; transporte coletivo no inciso V).
 
 ---
 
@@ -6567,12 +6581,12 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 142 — Forças Armadas
 
-- **TARGET:** `CF88:ART.142` · `ENTENDA/CF88:ART.142/BASE/1`
+- **TARGET:** `CF88:ART.142` · `ENTENDA/CF88:ART.142/BASE/2`
 - **DISPLAY TITLE:** Art. 142 — Forças Armadas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 2138 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 351 palavras · 3054 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao, natureza, comando supremo e destinacao das Forcas Armadas; tema com interpretacao controvertida.
 
 **O QUE DIZ**
@@ -6581,36 +6595,35 @@ O art. 142 define as Forças Armadas, que reúnem Marinha, Exército e Aeronáut
 
 **O QUE SIGNIFICA**
 
-O texto qualifica as Forças Armadas como permanentes e regulares e as coloca sob a autoridade suprema do Presidente.
+As Forças Armadas são instituições nacionais, permanentes e regulares. A hierarquia e a disciplina são a base da sua organização, e elas ficam sob a autoridade suprema do Presidente da República.
 
-A hierarquia e a disciplina são a base da organização.
-
-O texto indica três destinações: defender o país, garantir os poderes constitucionais e, quando um desses poderes tomar a iniciativa, garantir a lei e a ordem.
+O texto indica três destinações: a defesa da Pátria, a garantia dos poderes constitucionais e, por iniciativa de qualquer desses poderes, a garantia da lei e da ordem.
 
 A lei complementar define normas gerais de organização, preparo e emprego.
 
 **EXEMPLO PRÁTICO**
 
-Diante de grave perturbação da ordem em uma cidade, um dos poderes constitucionais pede o emprego das Forças Armadas para garantia da lei e da ordem, nos termos da lei complementar.
+Diante de grave e concreta violação da segurança pública interna, depois de esgotados os instrumentos ordinários de preservação da ordem pública, pode ocorrer emprego excepcional das Forças Armadas para garantia da lei e da ordem. A decisão de emprego cabe ao Presidente da República. Quando a iniciativa partir de outro Poder, o pedido é formulado pelo Presidente do Supremo Tribunal Federal, do Senado Federal ou da Câmara dos Deputados, como prevê a lei complementar.
 
 **ATENÇÃO**
 
-O alcance da expressão garantia dos poderes constitucionais é objeto de debate e não deve ser deduzido de leitura isolada do caput. A relação das Forças Armadas com os Poderes é tema da camada JURISPRUDÊNCIA.
+O Supremo Tribunal Federal assentou, em controle concentrado, que o art. 142 não atribui às Forças Armadas função de poder moderador entre Executivo, Legislativo e Judiciário.
+A autoridade do Presidente da República sobre as Forças Armadas é constitucionalmente limitada e não permite utilização das instituições militares para interferir no funcionamento independente dos demais Poderes.
+A garantia da lei e da ordem possui caráter excepcional e pressupõe o esgotamento dos instrumentos ordinários de preservação da ordem pública.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Hierarquia*: ordenação de autoridade por graus.
-- *Garantia da lei e da ordem*: emprego excepcional das Forças Armadas na segurança interna, por iniciativa de um dos poderes.
-- *Autoridade suprema*: posição mais alta de comando.
+- *Garantia da lei e da ordem*: emprego excepcional das Forças Armadas, nas hipóteses constitucionais e legais, após o esgotamento dos instrumentos ordinários de preservação da ordem pública.
+- *Autoridade suprema*: posição mais alta de comando das Forças Armadas, exercida nos limites da Constituição.
 
 **CAMADA EXTERNA**
 
-- A interpretação do caput sobre o papel das Forças Armadas em relação aos Poderes é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
-- A lei complementar sobre organização, preparo e emprego das Forças Armadas fica na camada de legislação correlata.
+- Verificado na fonte oficial (STF): ADI 6457 (2024, unanime): a missao das Forcas Armadas nao acomoda poder moderador entre os Poderes; a chefia e poder limitado; o emprego nao pode ser exercido contra os proprios Poderes; a garantia da lei e da ordem e excepcional e subsidiaria. LC 97/1999, art. 15, §§ 1º e 2º (Planalto). Ingestao na camada JURISPRUDENCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: dos poderes constitucionais e por iniciativa de qualquer)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A ADI 6457 (unanime) encerrou a questao do chamado poder moderador: a ATENCAO deixa de trata-la como controversia aberta. O exemplo deixa claro que a decisao de emprego e do Presidente da Republica, com pedido dos Presidentes dos outros Poderes, e o carater excepcional e subsidiario da GLO. "Autoridade suprema" redefinida nos limites da Constituicao. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa, palavras_dificeis)
 
 ---
 

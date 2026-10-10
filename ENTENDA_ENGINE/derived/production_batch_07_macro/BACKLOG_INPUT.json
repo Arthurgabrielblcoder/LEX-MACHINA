@@ -79,6 +79,20 @@
    "target": "ADI 3392, 3423, 3431, 3432, 3520, 4425, 7047, 7064, 7697",
    "detail": "As decisoes dos controles anotados (Vide ADI) nao estao versionadas; 11 explicacoes ficam JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS (D).",
    "action": "Ingestao oficial das decisoes (STF) e reavaliacao."
+  },
+  {
+   "id": "MB07-12",
+   "kind": "SOURCE_ANNOTATION_ANOMALY",
+   "target": "CF88:ART.102:PAR.2 (Vide ADIN 3392)",
+   "detail": "A fonte canonica anota o art. 102, § 2º, com \"Vide ADIN 3392\", mas a ADI 3392 trata de sentenca normativa trabalhista (art. 114, § 2º) e foi julgada improcedente (STF, 2020). A anotacao nao e jurisprudencia do efeito vinculante; o T1 aprovado na rodada D1 nao a usa.",
+   "action": "Manter a fonte congelada; registrar a anomalia na ingestao da camada JURISPRUDENCIA e reavaliar o roteamento HIGH desse paragrafo."
+  },
+  {
+   "id": "MB07-13",
+   "kind": "EXTERNAL_SOURCE_VERIFIED_PENDING_INGESTION",
+   "target": "rodada D1 do Macro07 (D1-D12)",
+   "detail": "Fontes oficiais conferidas e aprovadas pela revisao humana (EC 111/2021, EC 113/2021, EC 114/2021, EC 125/2022, EC 136/2025, Lei 15.484/2026, Lei 9.868/1999, Lei 7.783/1989, Lei 4.320/1964, LC 97/1999; STF: ADI 4425, 7064/7047, 3392, 3423, 3395, 3684, 6457; Tema 558 indicado pela revisao humana): registradas em human_review.content_provenance (HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE).",
+   "action": "Ingerir os textos e decisoes na camada externa/JURISPRUDENCIA com sha256 (PENDING_EXTERNAL_INGESTION)."
   }
  ]
 }

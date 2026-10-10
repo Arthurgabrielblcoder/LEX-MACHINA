@@ -2,71 +2,61 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 249 · risco LOW 143 · MEDIUM 82 · HIGH 24
-- Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 0
+- Explicações: 249 · risco LOW 143 · MEDIUM 84 · HIGH 22
+- Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 12
 - Achados: DUPLICATION 30, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
 
 ### Art. 82 — Duração e início do mandato presidencial
 
-- `CF88:ART.82` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.82` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda
 
 ### Art. 100 — Precatórios
 
-- `CF88:ART.100` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.100` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade
 
 ### Art. 100, § 5º — Inclusão dos precatórios no orçamento
 
-- `CF88:ART.100:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.100:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)
 
 ### Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa
 
-- `CF88:ART.100:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade
+- `CF88:ART.100:PAR.9` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade
 
 ### Art. 100, § 12 — Atualização e juros dos precatórios
 
-- `CF88:ART.100:PAR.12` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade
+- `CF88:ART.100:PAR.12` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade
 
 ### Art. 102, § 2º — Efeito vinculante nas ações de controle
 
-- `CF88:ART.102:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.102:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade
 
 ### Art. 105, §§ 2º e 3º — Relevância no recurso especial
 
-- `CF88:ART.105:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.105:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial "nos termos da lei"
 
 ### Art. 114 — Competência da Justiça do Trabalho
 
-- `CF88:ART.114` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade
-
-### Art. 114, inciso I — Ações oriundas da relação de trabalho
-
-- `CF88:ART.114:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "leitura isolada"
+- `CF88:ART.114` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade
 
 ### Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico
 
-- `CF88:ART.114:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não devem ser deduzidos"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade
+- `CF88:ART.114:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade
 
 ### Art. 114, § 3º — Greve em atividade essencial
 
-- `CF88:ART.114:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.114:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade
-
-### Art. 142 — Forças Armadas
-
-- `CF88:ART.142` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: "não deve ser deduzido"; INTERPRETIVE_CONTROVERSY: "objeto de debate"
 
 ### Art. 142, § 2º — Habeas corpus e punições disciplinares militares
 
@@ -311,6 +301,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 - `CF88:ART.109:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os requisitos aplicados para deferir o deslocamento de competência são tema da camada JURISPRUDÊNCIA.
 
+### Art. 114, inciso I — Ações oriundas da relação de trabalho
+
+- `CF88:ART.114:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF): ADI 3395, merito em 2020, interpretacao conforme sem reducao de texto: o inciso I nao abrange causas de r
+
 ### Art. 124 — Competência da Justiça Militar
 
 - `CF88:ART.124` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
@@ -387,6 +382,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 - `CF88:ART.139` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
 - Motivos do risco: SENSITIVE_THEME: crimes
+
+### Art. 142 — Forças Armadas
+
+- `CF88:ART.142` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF): ADI 6457 (2024, unanime): a missao das Forcas Armadas nao acomoda poder moderador entre os Poderes; a che; SENSITIVE_THEME: prerrogativ
 
 ### Art. 142, § 3º — Regime jurídico dos militares
 

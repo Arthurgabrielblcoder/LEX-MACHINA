@@ -211,8 +211,73 @@ def derived_jurisprudence_recommendations(ctx, expl, vig, seen):
     return out
 
 
+HUMAN_SECTIONS = ('o_que_diz', 'o_que_significa', 'exemplo_pratico', 'atencao', 'palavras_dificeis', 'external_layer_notes')
+
+
+def human_rounds(ms):
+    return ms.get('human_review_rounds') or []
+
+
+def round_targets(bd, ms):
+    return {d['target_id'] for rnd in human_rounds(ms) for d in _load(Path(bd) / rnd['decisions'])['decisions']}
+
+
+def apply_human_rounds(bd, ms, expl):
+    """Recorded human review rounds (MACRO_SPEC.human_review_rounds): the round_approvals mechanism of Batch04-06, fail closed as in Macro08.
+    Each decision names the authoring text it was taken on (original_content / original_external_layer_notes) and the sections it sets;
+    the sub-block drafts stay the second-pass output. The decided explanation gets HUMAN_APPROVED_T1 with human_review (content_provenance
+    under A6) and, when adjusted, a new editorial_version: the earlier one stays RETIRED, stamped on the frozen pre-round corpus
+    (production_batch stamping_evidence_corpus). Any mismatch stops the build."""
+    by = {}
+    for i, e in enumerate(expl):
+        by.setdefault(e['target_id'], []).append(i)
+    out, decided = list(expl), set()
+    for rnd in human_rounds(ms):
+        doc = _load(bd / rnd['decisions'])
+        if doc.get('batch_id') != ms['batch_id'] or doc.get('review_scope') != rnd['review_scope'] or doc.get('review_status') != 'ROUND_REVIEW_COMPLETED':
+            raise MacroBuildError(f"HUMAN_ROUND_DECISIONS_INVALID {rnd['decisions']}")
+        base = dict(reviewed_on=doc['review_date'], approval_method=doc['approval_method'], reviewer_decision=doc['reviewer_decision'],
+                    reviewer=doc['reviewer'], standard=doc['standard'], review_scope=doc['review_scope'])
+        counts = Counter()
+        for d in doc['decisions']:
+            t = d['target_id']
+            if t in decided or len(by.get(t, [])) != 1:
+                raise MacroBuildError(f'HUMAN_ROUND_TARGET_INVALID {t}')
+            decided.add(t)
+            i = by[t][0]
+            e = out[i]
+            notes0 = e.get('external_layer_notes', [])
+            if e.get('review_status') is not None or e['content'] != d['original_content'] or notes0 != d['original_external_layer_notes']:
+                raise MacroBuildError(f'HUMAN_ROUND_BASE_TEXT_MISMATCH {t}')
+            st = d.get('set') or {}
+            if set(st) - set(HUMAN_SECTIONS):
+                raise MacroBuildError(f'HUMAN_ROUND_SECTION_NOT_ALLOWED {t} {sorted(set(st) - set(HUMAN_SECTIONS))}')
+            content = dict(e['content'], **{k: v for k, v in st.items() if k != 'external_layer_notes'})
+            notes = st.get('external_layer_notes', notes0)
+            changed = sorted({k for k in content if content[k] != e['content'].get(k)} | ({'external_layer_notes'} if notes != notes0 else set()))
+            if d['decision'] not in ('APPROVED', 'APPROVED_AFTER_ADJUSTMENT') or changed != sorted(d['changed_sections']) \
+                    or bool(changed) != (d['decision'] == 'APPROVED_AFTER_ADJUSTMENT'):
+                raise MacroBuildError(f'HUMAN_ROUND_DECISION_MISMATCH {t}')
+            ver, variant = e.get('editorial_version', 1), e.get('variant', 'BASE')
+            new_ver = ver + 1 if changed else ver
+            if d['from_explanation_id'] != E.explanation_id(t, variant, ver) or d['to_explanation_id'] != E.explanation_id(t, variant, new_ver):
+                raise MacroBuildError(f'HUMAN_ROUND_VERSION_MISMATCH {t}')
+            human = dict(base, decision=d['decision'], human_decision=d['human_decision'], calibration_queue=d['calibration_queue'],
+                         **({'content_provenance': d['content_provenance']} if d.get('content_provenance') else {}))
+            e2 = dict(e, content=content, review_status='HUMAN_APPROVED_T1', human_review=human)
+            if notes != notes0:
+                e2['external_layer_notes'] = notes
+            if new_ver != ver:
+                e2['editorial_version'] = new_ver
+            out[i] = e2
+            counts[d['decision']] += 1
+        if dict(counts) != {k: v for k, v in doc['decision_counts'].items() if v}:
+            raise MacroBuildError(f"HUMAN_ROUND_COUNTS_MISMATCH {rnd['decisions']} {dict(counts)}")
+    return out
+
+
 def assemble(bd, ms, ctx, nm):
-    """Merges the built sub-blocks into the generated drafts, spec and vigency plan."""
+    """Merges the built sub-blocks into the generated drafts, spec and vigency plan (recorded human rounds applied on top)."""
     built = ms['sub_blocks_built']
     arts, notes, expl, authoring = [], {}, [], None
     for x in built:
@@ -221,6 +286,8 @@ def assemble(bd, ms, ctx, nm):
         d = _load(bd / 'drafts' / f"{nm.p}_{x}_DRAFTS.json")
         notes.update(d['article_notes'])
         expl += d['explanations']
+    if human_rounds(ms):
+        expl = apply_human_rounds(bd, ms, expl)
     main = [r for r in E.load_corpus(HERE / 'corpus' / f"{ms['norma_id']}.entenda.jsonl") if r['status'] == 'ACTIVE']
     in_scope = lambda t: any(t == a or t.startswith(a + ':') for a in arts)  # noqa: E731
     reused = {r['target_id']: f"Explicacao aprovada anteriormente (HUMAN_APPROVED_T1, {r['explanation_id']}); reutilizada sem alteracao."
@@ -256,6 +323,9 @@ def assemble(bd, ms, ctx, nm):
                 packet_prefix=nm.p)
     if not spec['reference_export']:
         spec.pop('reference_export')
+    if human_rounds(ms):   # production_batch round_approvals; earlier versions are stamped on the corpus frozen before the first round
+        spec['round_approvals'] = [dict(review_scope=r['review_scope'], decisions=r['decisions']) for r in human_rounds(ms)]
+        spec['stamping_evidence_corpus'] = f"ENTENDA_ENGINE/derived/{bd.name}/{human_rounds(ms)[0]['pre_review_evidence']['corpus']}"
     _json(bd / 'BATCH_SPEC.json', spec)
     _json(bd / nm.plan, dict(schema_version=1, batch_id=ms['batch_id'], norma_id=ms['norma_id'], as_of=ms['as_of_date'], scope=arts,
                              canonical_structural_source=ms['canonical_structural_source'], method='entenda_vigency_plan.vigency_map',
@@ -281,16 +351,19 @@ def priority(doc, c, nm):
     return '\n'.join(L) + '\n'
 
 
-def slice_stats(doc, sel, spec, articles):
-    """Counts for a set of articles (a sub-block checkpoint)."""
+def slice_stats(doc, sel, spec, articles, approved=None):
+    """Counts for a set of articles (a sub-block checkpoint). approved: explanations of the batch already HUMAN_APPROVED_T1 in a recorded
+    round (they leave the triage; the per-queue counts are the pending ones)."""
     inart = lambda t: any(t == a or t.startswith(a + ':') for a in articles)  # noqa: E731
     rows = [x for x in doc['rows'] if inart(x['target_id'])]
     srows = [r for r in sel['selection'] if inart(r['target_id'])]
     cur = [r for r in srows if r['status'] == 'CURRENT']
+    done = sorted(t for t in (approved or ()) if inart(t))
     return dict(articles=len(articles), targets_evaluated=len(srows), targets_current=len(cur),
                 select=sum(1 for r in cur if r['classification'] in PB.SELECTED), skip=sum(1 for r in cur if r['classification'] == 'NO_SEPARATE_EXPLANATION'),
                 excluded=dict(Counter(r['classification'] for r in srows if r['classification'].startswith('EXCLUDED'))),
-                new_explanations=len(rows), reused=sum(1 for r in cur if r.get('explanation_source') == 'PILOT_T1_APPROVED'),
+                new_explanations=len(rows) + len(done), **({'pending_in_triage': len(rows), 'human_approved_t1': len(done)} if approved is not None else {}),
+                reused=sum(1 for r in cur if r.get('explanation_source') == 'PILOT_T1_APPROVED'),
                 roles=dict(sorted(Counter(x['role'] for x in rows).items())),
                 legal_risk={k: sum(1 for x in rows if x['legal_risk'] == k) for k in ('LOW', 'MEDIUM', 'HIGH')},
                 verification_complexity={k: sum(1 for x in rows if x['verification_complexity'] == k) for k in ('SIMPLE', 'STRUCTURED', 'EXTERNAL')},
@@ -298,12 +371,49 @@ def slice_stats(doc, sel, spec, articles):
                 jurisprudence=dict(sorted(Counter(x['jurisprudence'] for x in rows).items())))
 
 
+class ApprovalGateError(MacroBuildError):
+    pass
+
+
+def approval_gate(c):
+    """Every explanation approved in a recorded human round must pass all checks before it can carry HUMAN_APPROVED_T1 (Batch06 gate): engine
+    contract (production_batch already validated the corpus), validator v3 with the macro layer without HARD_FAIL and without open
+    REVIEW_REQUIRED (known resolutions of the approved wording included), and editorial_checks without open findings. Fail closed."""
+    chk = {r['target_id']: r for r in V.load_json(c.bd / 'EDITORIAL_CHECKS.json')['rows']}
+    man = V.load_json(c.bd / c.spec['index_dir'] / 'ENTENDA_BUILD_MANIFEST.json')
+    lint = {}
+    for w in man['warnings']:
+        lint.setdefault(w['target_id'], []).append(w)
+    rows, bad = [], []
+    for t, r in sorted(c.records.items(), key=lambda kv: c.ctx.order[kv[0]]):
+        if r['review_status'] != 'HUMAN_APPROVED_T1':
+            continue
+        fs = c.validate(r, lint.get(t, []), chk[t]['findings'])
+        hard = sorted({f['code'] for f in fs if f['severity'] == 'HARD_FAIL'})
+        open_ = sorted({f['code'] for f in fs if f['severity'] == 'REVIEW_REQUIRED'})
+        hr = r.get('human_review') or {}
+        row = dict(target_id=t, explanation_id=r['explanation_id'], editorial_version=r['editorial_version'], decision=hr.get('decision'),
+                   human_decision=hr.get('human_decision'), review_scope=hr.get('review_scope'), provenance_items=len(V._provenance(r)),
+                   hard_fail=hard, review_required_open=open_, editorial_checks_open=chk[t]['unresolved'],
+                   info=sorted({f['code'] for f in fs if f['severity'] == 'INFO' and f['code'].startswith(('JURISPRUDENCE_', 'EXTERNAL_FACT', 'SEMANTIC_'))}),
+                   gate='PASS' if not (hard or open_ or chk[t]['unresolved']) else 'FAIL')
+        rows.append(row)
+        if row['gate'] == 'FAIL':
+            bad.append(row)
+    if bad:
+        raise ApprovalGateError(json.dumps(bad, ensure_ascii=False))
+    return rows
+
+
 def checks(c, doc):
-    """Structural checks of the build: engine contract (already enforced by production_batch), Lei Seca divergence, hard fails, status."""
+    """Structural checks of the build: engine contract (already enforced by production_batch), Lei Seca divergence, hard fails, status. An
+    explanation may leave PENDING_HUMAN_REVIEW only as HUMAN_APPROVED_T1 decided in a recorded human round."""
     rec = list(c.records.values())
     div = [r['target_id'] for r in rec if r['source']['source_text_snapshot'] != c.ctx.snapshot(r['target_id'], r['granularity'].get('covered_targets', []))]
     hard = [x['target_id'] for x in doc['rows'] if x['queue'] == 'E_HARD_FAIL']
-    approved_new = [r['target_id'] for r in rec if r['review_status'] != 'PENDING_HUMAN_REVIEW']
+    decided = round_targets(c.bd, _load(c.bd / 'MACRO_SPEC.json'))
+    approved_new = [r['target_id'] for r in rec if r['review_status'] != 'PENDING_HUMAN_REVIEW'
+                    and not (r['review_status'] == 'HUMAN_APPROVED_T1' and r['target_id'] in decided)]
     stale = [s for s in E.stale_report(rec, c.ctx) if s['state'] != 'FRESH']
     # second pass: every transition signal has versioned evidence, every evidence row is used, every "Vide ADI" scope is classified
     no_evidence = sorted(set(c.transition_seen) - set(c.transition)) if c.transition or c.second['judicial_review'] else []
@@ -312,7 +422,9 @@ def checks(c, doc):
     ok = not (div or hard or approved_new or stale or no_evidence or unused_evidence or unclassified)
     return dict(engine_contract='PASS (production_batch.validate_corpus)', lei_seca_divergence=div, hard_fail=hard, new_not_pending=approved_new,
                 stale=[s['target_id'] for s in stale], transition_without_evidence=no_evidence, transition_evidence_unused=unused_evidence,
-                judicial_review_unclassified=unclassified, status='PASS' if ok else 'FAIL')
+                judicial_review_unclassified=unclassified,
+                **({'approved_by_recorded_round': sum(1 for r in rec if r['review_status'] == 'HUMAN_APPROVED_T1')} if decided else {}),
+                status='PASS' if ok else 'FAIL')
 
 
 def old_content_scan(ctx, ms):
@@ -377,6 +489,7 @@ def _build(bd):
                risk=BP.risk_input(c))
     _json(bd / 'EDITORIAL_REVIEW_INPUT.json', dict(sorted(inp.items())))
     EC.run(bd)
+    gate = approval_gate(c) if human_rounds(ms) else None
     doc = BP.triage(c)
     files, full_generated = BP.packets(doc, c)
     out = {}
@@ -400,7 +513,20 @@ def _build(bd):
     doc['d_escalation_diagnostic'] = nm.packets['diagnostic'] in out
     micro = BP.micro_auto(doc, c.cfg)
     doc['micro_adjustments'] = dict(applied=micro['applied'], eligible=micro['eligible'], microauto_apply=micro['microauto_apply'])
-    doc['human_approved_t1_granted'] = 0
+    approved = sorted((t for t, r in c.records.items() if r['review_status'] == 'HUMAN_APPROVED_T1'), key=lambda t: ctx.order[t])
+    doc['human_approved_t1_granted'] = len(approved)
+    if gate is not None:
+        rounds = [_load(bd / r['decisions']) for r in human_rounds(ms)]
+        doc['round_approvals'] = dict(review_scopes=[r['review_scope'] for r in human_rounds(ms)], gate=gate, approved=len(gate),
+                                      approved_unchanged=sum(1 for g in gate if g['decision'] == 'APPROVED'),
+                                      approved_after_adjustment=sum(1 for g in gate if g['decision'] == 'APPROVED_AFTER_ADJUSTMENT'),
+                                      rejected=sum(d['decision_counts'].get('REJECTED', 0) for d in rounds),
+                                      retired_versions=sorted(r['explanation_id'] for r in E.load_corpus(bd / c.spec['batch_corpus']) if r['status'] == 'RETIRED'))
+        before = {r['explanation_key'] for f in [f"ENTENDA_ENGINE/corpus/{ms['norma_id']}.entenda.jsonl"] + ms['prior_corpora']
+                  for r in E.load_corpus(ROOT / f) if r['status'] == 'ACTIVE' and r['review_status'] == 'HUMAN_APPROVED_T1'}
+        new_keys = {c.records[t]['explanation_key'] for t in approved}
+        doc['approval_totals'] = dict(global_before=len(before), batch_new_approved=len(new_keys - before), global_after=len(before | new_keys),
+                                      batch_new_pending=len(doc['rows']), note='aprovados do corpus principal e dos corpora anteriores, por explanation_key')
     doc['validator_limits'] = V3.LIMITS
     critic = {x: _load(bd / 'drafts' / f"{nm.p}_{x}_CRITIC_LOG.json") for x in ms['sub_blocks_built'] if (bd / 'drafts' / f"{nm.p}_{x}_CRITIC_LOG.json").is_file()}
     doc['critic'] = {x: dict(corrections=len(v['corrections']), by_category=dict(sorted(Counter(e['category'] for e in v['corrections']).items())))
@@ -415,22 +541,25 @@ def _build(bd):
         if x not in ms['sub_blocks_built']:
             cp.unlink(missing_ok=True)
             continue
-        st = slice_stats(doc, sel, spec, spec['sub_blocks'][x])
+        st = slice_stats(doc, sel, spec, spec['sub_blocks'][x], approved if gate is not None else None)
         _json(cp, dict(schema_version=1, batch_id=ms['batch_id'], sub_block=f"{ms['sub_blocks'][x]['name']}",
                        articles_range=f"{ms['sub_blocks'][x]['start']}-{ms['sub_blocks'][x]['end']}", stats=st,
                        critic=doc['critic'].get(x, dict(corrections=0, by_category={})),
                        checks=dict(doc['checks'], scope='lote acumulado ate este sub-bloco'),
                        determinism='ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)',
-                       human_approved_t1_granted=0, status=doc['checks']['status']))
+                       human_approved_t1_granted=st.get('human_approved_t1', 0), status=doc['checks']['status']))
     _json(bd / nm.triage, doc)
     rep = report(doc, sel, c, ms, nm)
     pre_f = bd / HISTORY / 'pre_second_pass' / f'{nm.p}_TRIAGE_PRE_SECOND_PASS.json'
     diag = bd / f'{nm.p}_D_SECOND_PASS_DIAGNOSTIC.md'
     if second:
         pre = _load(pre_f) if pre_f.is_file() else None
-        log = SP.editorial_log(bd, nm.p, doc, c, pre)
+        # the second-pass log describes the second pass: once a human round takes explanations out of the triage, it is computed on the
+        # triage frozen before the first round (versioned history), not on the shrinking pending triage
+        sp_doc = _load(bd / human_rounds(ms)[0]['pre_review_evidence']['triage']) if gate is not None else doc
+        log = SP.editorial_log(bd, nm.p, sp_doc, c, pre)
         _json(bd / f'{nm.p}_SECOND_PASS_EDITORIAL_LOG.json', log)
-        rep += '\n'.join(SP.report_section(doc, pre, log, (pre or {}).get('metrics', {}).get('presented_chars'))) + '\n'
+        rep += '\n'.join(SP.report_section(sp_doc, pre, log, (pre or {}).get('metrics', {}).get('presented_chars'))) + '\n'
         if doc['d_ratio'] > SECOND_PASS_D_LIMIT:
             diag.write_bytes(d_second_pass_diagnostic(doc, nm).encode('utf-8'))
         else:
@@ -461,7 +590,10 @@ def report(doc, sel, c, ms, nm):
     rows = doc['rows']
     L = [f"# {ms['batch_id']} — relatório de escala", '',
          f"Data de referência: {ms['as_of_date']} · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · "
-         '**0 HUMAN_APPROVED_T1 novos**: todas as explicações novas estão `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.', '',
+         + (f"**{doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 novos** pela(s) rodada(s) humana(s) registrada(s) "
+            f"({', '.join(f'`{s}`' for s in doc['round_approvals']['review_scopes'])}); {len(rows)} explicações novas seguem `PENDING_HUMAN_REVIEW`; "
+            'AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.' if doc.get('round_approvals') else
+            '**0 HUMAN_APPROVED_T1 novos**: todas as explicações novas estão `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.'), '',
          f"Sub-blocos construídos: {', '.join(ms['sub_blocks'][x]['name'] + ' (arts. ' + str(ms['sub_blocks'][x]['start']) + '–' + str(ms['sub_blocks'][x]['end']) + ')' for x in ms['sub_blocks_built'])}.", '',
          '## Seleção', '', '| | |', '|---|---|',
          f"| Artigos | {len(doc_spec(c)['scope'])} |",
@@ -515,7 +647,9 @@ def manifest(bd, ms, nm, doc, sel):
     history = sorted(str(p.relative_to(bd)) for p in (bd / HISTORY).rglob('*') if p.is_file()) if (bd / HISTORY).is_dir() else []
     ctx_errata = _status_errata_input(ms['norma_id'])
     _json(bd / nm.manifest, dict(
-        schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'], status='CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado',
+        schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'],
+        status=(f"IN_HUMAN_REVIEW: {doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 por rodada(s) humana(s) registrada(s); "
+                f"{len(doc['rows'])} pendente(s)") if doc.get('round_approvals') else 'CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado',
         builder='ENTENDA_ENGINE/build_entenda_macro_batch.py', validator=doc['validator'], sub_blocks_built=ms['sub_blocks_built'],
         selection=dict(targets_evaluated=sel['summary']['targets_evaluated'], current=sel['summary']['targets_current'], selected=sel['summary']['selected'],
                        new=sel['summary']['new_explanations'], reused=sel['summary']['reused_from_pilot'],
@@ -540,7 +674,7 @@ def _status_errata_input(norma_id):
 def root_inputs(bd, ms):
     """Versioned editorial inputs at the batch root (besides drafts/ and history/)."""
     names = ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json', 'SECOND_PASS_INPUT.json',
-             f"{ms['packet_prefix']}_TRANSITION_EVIDENCE.json")
+             f"{ms['packet_prefix']}_TRANSITION_EVIDENCE.json") + tuple(r['decisions'] for r in human_rounds(ms))
     return [p for p in names if (Path(bd) / p).is_file()]
 
 

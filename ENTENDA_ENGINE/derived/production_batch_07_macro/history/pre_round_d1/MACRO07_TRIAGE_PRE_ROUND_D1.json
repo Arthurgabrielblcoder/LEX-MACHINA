@@ -26,23 +26,23 @@
   "A_CLEAN_LOW": 143,
   "B_CLEAN_MEDIUM": 82,
   "C_QUICK_REVIEW": 0,
-  "D_FULL_HUMAN_REVIEW": 12,
+  "D_FULL_HUMAN_REVIEW": 24,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 143,
   "MEDIUM": 82,
-  "HIGH": 12
+  "HIGH": 24
  },
  "complexity_counts": {
   "STRUCTURED": 135,
   "SIMPLE": 11,
-  "EXTERNAL": 91
+  "EXTERNAL": 103
  },
  "jurisprudence_counts": {
-  "NONE": 203,
-  "CONTEXT_ONLY": 30,
-  "REQUIRED_FOR_CORRECTNESS": 4
+  "NONE": 207,
+  "CONTEXT_ONLY": 33,
+  "REQUIRED_FOR_CORRECTNESS": 9
  },
  "by_legal_risk": {
   "LOW": {
@@ -63,7 +63,7 @@
    "A_CLEAN_LOW": 0,
    "B_CLEAN_MEDIUM": 0,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 12,
+   "D_FULL_HUMAN_REVIEW": 24,
    "E_HARD_FAIL": 0
   }
  },
@@ -86,7 +86,7 @@
    "A_CLEAN_LOW": 31,
    "B_CLEAN_MEDIUM": 50,
    "C_QUICK_REVIEW": 0,
-   "D_FULL_HUMAN_REVIEW": 10,
+   "D_FULL_HUMAN_REVIEW": 22,
    "E_HARD_FAIL": 0
   }
  },
@@ -8801,6 +8801,769 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.82",
+   "title": "Art. 82 — Duração e início do mandato presidencial",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "number_or_percentage: quatro",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "em 5 de janeiro do ano seguinte ao",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: DATA_DE_IMPLANTACAO_AINDA_MATERIAL + TEXTO_VIGENTE_INSUFICIENTE — inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.100",
+   "title": "Art. 100 — Precatórios",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Dispositivos do art. 100 têm anotações de controle de constitucionalidade na fonte canônica (ex.: ADI 4425, ADI 7047, ADI 7064): a redação l",
+    "SENSITIVE_THEME: crime",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 4425\")"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.100:CAPUT: Vide Emenda Constitucional n. 62, de 2009; ART.100:CAPUT: Vide ADI 4425)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "deadline: prazo",
+    "number_or_percentage: sessenta",
+    "exception: exceto",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (9 anotacao(oes))",
+    "remissao: arts. 20, 52, 167, 201",
+    "overview com 60 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 4425",
+     "sentence": "ADI 4425, ADI 7047, ADI 7064):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7047",
+     "sentence": "ADI 4425, ADI 7047, ADI 7064):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7047",
+     "sentence": "ADI 4425, ADI 7047, ADI 7064):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "exclusivamente na ordem cronológica de apresentação dos precatórios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 4425",
+    "ADI 7047",
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:CAPUT: Vide ADI 4425; ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.12: Vide ADI 4425 (+2) — a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.5",
+   "title": "Art. 100, § 5º — Inclusão dos precatórios no orçamento",
+   "role": "DEVICE",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: EMENDA_RECENTE_COM_TRANSICAO_PROPRIA + TEXTO_VIGENTE_INSUFICIENTE — nova data de apresentacao dos precatorios (redacao da EC 136/2025)",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.9",
+   "title": "Art. 100, §§ 9º e 10 — Débitos do credor inscritos em dívida ativa",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Os §§ 9º e 10 têm anotações de controle de constitucionalidade na fonte canônica (Vide ADI 7047, ADI 7064; § 10: Vide ADI 4425): tema da cam",
+    "SENSITIVE_THEME: sob pena",
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 7047\")"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7047",
+     "sentence": "Os §§ 9º e 10 têm anotações de controle de constitucionalidade na fonte canônica (Vide ADI 7047, ADI 7064;",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 7047",
+     "sentence": "Os §§ 9º e 10 têm anotações de controle de constitucionalidade na fonte canônica (Vide ADI 7047, ADI 7064;",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 4425",
+     "sentence": "Vide ADI 4425):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pagamento do precatório e mediante comunicação da fazenda",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 4425",
+    "ADI 7047",
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.10: Vide ADI 4425; ART.100:PAR.9: Vide ADI 7047; ART.100:PAR.9: Vide ADI 7064 — a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.12",
+   "title": "Art. 100, § 12 — Atualização e juros dos precatórios",
+   "role": "DEVICE",
+   "sub_block": "A",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 4425\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.100:PAR.12: Vide ADI 4425)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 4425",
+     "sentence": "O § 12 tem anotação de controle de constitucionalidade na fonte canônica (Vide ADI 4425), e o índice de correção dos requisitórios foi tratado em emendas poster",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "2 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 4425",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.100:PAR.12: Vide ADI 4425 — a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.102:PAR.2",
+   "title": "Art. 102, § 2º — Efeito vinculante nas ações de controle",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A fonte canônica anota este parágrafo com controle de constitucionalidade (Vide ADIN 3392): EXTERNAL_VERIFICATION_REQUIRED na camada JURISPR"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.102:PAR.2: Vide ADIN 3392)",
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.102:PAR.2: Vide ADIN 3392 — a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.105:PAR.2",
+   "title": "Art. 105, §§ 2º e 3º — Relevância no recurso especial",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "TRANSITION_OR_TEMPORAL"
+   ],
+   "legal_reasons": [
+    "TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial \"nos termos da lei\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "law_dependency: nos termos da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 8 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a relevância das questões de direito federal infraconstitucional",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "o_que_diz",
+     "match": "só pode",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "LEGAL_RISK HIGH: TRANSITION_OR_TEMPORAL: TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA — filtro de relevancia do recurso especial \"nos termos da lei\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.114",
+   "title": "Art. 114 — Competência da Justiça do Trabalho",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")",
+    "CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "exception: ressalvado",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 102, 195",
+    "overview com 14 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o caput e os §§ 2º e 3º com controle de constitucionalidade (Vide ADIN 3392, ADIN 3432, ADI 3423, ADI 3431, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "da relação de trabalho na forma da lei",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 3423",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:CAPUT: Vide ADIN 3392; ART.114:CAPUT: Vide ADIN 3432; ART.114:PAR.2: Vide ADI n. 3392 (+10) — a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.114:INC.I",
+   "title": "Art. 114, inciso I — Ações oriundas da relação de trabalho",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"leitura isolada\""
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"leitura isolada\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.114:PAR.1",
+   "title": "Art. 114, §§ 1º e 2º — Arbitragem e dissídio coletivo econômico",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não devem ser deduzidos\"",
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3392)",
+    "camada externa: jurisprudencia",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 2º com controle de constitucionalidade (ADI 3423, ADI 3392, ADI 3431, ADI 3432, ADI 3520):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as disposições mínimas legais de proteção ao trabalho",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 3423",
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não devem ser deduzidos\"; JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.2: Vide ADI n. 3392; ART.114:PAR.2: Vide ADI n. 3423; ART.114:PAR.2: Vide ADI n. 3431 (+3) — a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.114:PAR.3",
+   "title": "Art. 114, § 3º — Greve em atividade essencial",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade"
+   ],
+   "legal_secondary": [
+    "EXTERNAL_DEPENDENCY_NON_MATERIAL: EXTERNAL_FACT_NEEDS_PROVENANCE em external_layer_notes (\"ADI 3423\")"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431)",
+    "camada externa: nota externa",
+    "EXTERNAL_FACT_NEEDS_PROVENANCE",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    },
+    {
+     "code": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+     "severity": "REVIEW_REQUIRED",
+     "route": "QUICK",
+     "section": "external_layer_notes",
+     "match": "ADI 3423",
+     "sentence": "A fonte canônica anota o § 3º com controle de constitucionalidade (ADI 3423, ADI 3431, ADI 3520, ADIN 3392, ADIN 3432):",
+     "detail": "so na camada externa: o nucleo T1 nao depende do fato"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "ADI 3423"
+   ],
+   "reason": "LEGAL_RISK HIGH: JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS: ART.114:PAR.3: Vide ADI n. 3423; ART.114:PAR.3: Vide ADI n. 3431; ART.114:PAR.3: Vide ADI n. 3520 (+2) — a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1,
+   "external_resolution": {
+    "status": "EXTERNAL_VERIFICATION_REQUIRED",
+    "via": null,
+    "evidence": []
+   }
+  },
+  {
+   "target_id": "CF88:ART.142",
+   "title": "Art. 142 — Forças Armadas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "HIGH",
+   "legal_rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS",
+    "INTERPRETIVE_CONTROVERSY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"",
+    "INTERPRETIVE_CONTROVERSY: \"objeto de debate\""
+   ],
+   "legal_secondary": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia, nota externa",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "exception: ressalvada",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 7, 37",
+    "overview com 14 dispositivos"
+   ],
+   "queue": "D_FULL_HUMAN_REVIEW",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (necessaria)"
+   ],
+   "reason": "LEGAL_RISK HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"não deve ser deduzido\"; INTERPRETIVE_CONTROVERSY: \"objeto de debate\"",
+   "show_full_t1": true,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.142:PAR.2",
    "title": "Art. 142, § 2º — Habeas corpus e punições disciplinares militares",
    "role": "DEVICE",
@@ -9438,259 +10201,41 @@
   }
  ],
  "d_reasons": {
-  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 4,
-  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 4,
-  "TRANSITION_OR_TEMPORAL": 7
+  "INTERPRETIVE_CONTROVERSY": 1,
+  "JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS": 11,
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 9,
+  "TRANSITION_OR_TEMPORAL": 10
  },
  "finding_counts": {
-  "EXTERNAL_FACT_NEEDS_PROVENANCE": 4
+  "EXTERNAL_FACT_NEEDS_PROVENANCE": 22
  },
  "refined_false_positive_counts": {
   "TELEOLOGY_SPECULATIVE": 4,
-  "UNIVERSAL_CLAIM": 2
+  "UNIVERSAL_CLAIM": 3
  },
  "metrics": {
-  "total_draft_chars": 339932,
-  "old_model_full_package_chars": 764619,
-  "presented_chars": 259790,
+  "total_draft_chars": 357481,
+  "old_model_full_package_chars": 823155,
+  "presented_chars": 316741,
   "presented_by_file": {
    "MACRO07_COMPACT_AB_REVIEW.md": 169874,
-   "MACRO07_FULL_D_REVIEW.md": 56923,
+   "MACRO07_FULL_D_REVIEW.md": 112033,
    "MACRO07_HARD_FAIL_REPORT.md": 143,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 32480,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 34321,
    "MACRO07_QUICK_C_REVIEW.md": 370
   },
-  "pending_items": 237,
-  "reduction_abs": 504829,
-  "reduction_pct": 66.0
+  "pending_items": 249,
+  "reduction_abs": 506414,
+  "reduction_pct": 61.5
  },
- "d_ratio": 0.051,
+ "d_ratio": 0.096,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 145,
+  "eligible": 151,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 12,
- "round_approvals": {
-  "review_scopes": [
-   "CF88_MACRO07_TRIAGE_QUEUE_D_PART1"
-  ],
-  "gate": [
-   {
-    "target_id": "CF88:ART.82",
-    "explanation_id": "ENTENDA/CF88:ART.82/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.100",
-    "explanation_id": "ENTENDA/CF88:ART.100/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 5,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.100:PAR.5",
-    "explanation_id": "ENTENDA/CF88:ART.100:PAR.5/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 5,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.100:PAR.9",
-    "explanation_id": "ENTENDA/CF88:ART.100:PAR.9/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.100:PAR.12",
-    "explanation_id": "ENTENDA/CF88:ART.100:PAR.12/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 6,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.102:PAR.2",
-    "explanation_id": "ENTENDA/CF88:ART.102:PAR.2/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.105:PAR.2",
-    "explanation_id": "ENTENDA/CF88:ART.105:PAR.2/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.114",
-    "explanation_id": "ENTENDA/CF88:ART.114/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.114:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.114:INC.I/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.114:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.114:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.114:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.114:PAR.3/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE_WITH_PROVENANCE_ONLY",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.142",
-    "explanation_id": "ENTENDA/CF88:ART.142/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   }
-  ],
-  "approved": 12,
-  "approved_unchanged": 1,
-  "approved_after_adjustment": 11,
-  "rejected": 0,
-  "retired_versions": [
-   "ENTENDA/CF88:ART.100/BASE/1",
-   "ENTENDA/CF88:ART.100:PAR.12/BASE/1",
-   "ENTENDA/CF88:ART.100:PAR.5/BASE/1",
-   "ENTENDA/CF88:ART.100:PAR.9/BASE/1",
-   "ENTENDA/CF88:ART.102:PAR.2/BASE/1",
-   "ENTENDA/CF88:ART.105:PAR.2/BASE/1",
-   "ENTENDA/CF88:ART.114/BASE/1",
-   "ENTENDA/CF88:ART.114:INC.I/BASE/1",
-   "ENTENDA/CF88:ART.114:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.142/BASE/1",
-   "ENTENDA/CF88:ART.82/BASE/1"
-  ]
- },
- "approval_totals": {
-  "global_before": 382,
-  "batch_new_approved": 12,
-  "global_after": 394,
-  "batch_new_pending": 237,
-  "note": "aprovados do corpus principal e dos corpora anteriores, por explanation_key"
- },
+ "human_approved_t1_granted": 0,
  "validator_limits": [
   "NUMBER_NOT_IN_TEXT compara quantidades, nao o sentido: um numero correto do texto usado no lugar errado passa; numeros por extenso so sao lidos em formas cardinais (um..mil) e fracoes (terco, quinto, quarto, metade, decimo); ordinais e datas ficam fora.",
   "RESSALVA_OMITTED_IN_SUMMARY reconhece que a explicacao \"fala\" de um dispositivo por radicais compartilhados (>= 2); parafrase com vocabulario totalmente diferente nao e reconhecida (falso negativo), e dispositivo com explicacao propria no lote nao e cobrado.",
@@ -9797,7 +10342,6 @@
   "transition_without_evidence": [],
   "transition_evidence_unused": [],
   "judicial_review_unclassified": [],
-  "approved_by_recorded_round": 12,
   "status": "PASS"
  },
  "backlog": {
@@ -9808,6 +10352,6 @@
    },
    "hits": 12
   },
-  "items": 13
+  "items": 11
  }
 }
