@@ -12,12 +12,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
 
-- **TARGET:** `CF88:ART.42` · `ENTENDA/CF88:ART.42/BASE/1`
+- **TARGET:** `CF88:ART.42` · `ENTENDA/CF88:ART.42/BASE/2`
 - **DISPLAY TITLE:** Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2099 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 290 palavras · 2259 bytes · referências 0
 - **Motivo da seleção:** Visao geral: define quem sao os militares estaduais e situa as regras do § 1º (remissoes), do § 2º (pensionistas) e do § 3º (acumulacao), estes dois ultimos com tratamento proprio ou na visao geral.
 
 **O QUE DIZ**
@@ -26,19 +26,19 @@ O art. 42 identifica os militares estaduais: os integrantes das Polícias Milita
 
 **O QUE SIGNIFICA**
 
-O artigo separa duas categorias de militares. As Forças Armadas (Marinha, Exército e Aeronáutica) pertencem à União e são tratadas no art. 142. Policiais e bombeiros militares pertencem aos Estados, ao Distrito Federal e aos Territórios.
+O artigo distingue os militares dos Estados, do Distrito Federal e dos Territórios dos integrantes das Forças Armadas, que são disciplinados pelo art. 142.
 
-Hierarquia e disciplina são a base dessas corporações: há uma cadeia de comando, e o dever de obediência é mais intenso do que no serviço civil.
+Policiais militares e bombeiros militares integram instituições organizadas com base na hierarquia e na disciplina e possuem regime constitucional próprio, que não se confunde integralmente com o regime dos servidores civis.
 
-Por isso os militares estaduais não seguem integralmente o regime dos servidores civis. A Constituição escolhe algumas regras das Forças Armadas e algumas regras gerais e as estende a eles (§ 1º). A pensão dos seus pensionistas fica com a lei específica de cada ente (§ 2º).
+Os parágrafos do art. 42 fazem remissões a outras regras constitucionais, tratam da legislação aplicável às pensões e determinam a aplicação da regra de acumulação do art. 37, XVI, com prevalência da atividade militar.
 
 **EXEMPLO PRÁTICO**
 
-Um soldado da Polícia Militar de um Estado é servidor estadual, mas com estatuto militar: está sujeito à hierarquia da corporação e a regras próprias de ingresso, promoção e inatividade definidas em lei estadual, e não ao estatuto dos servidores civis do mesmo Estado.
+Um soldado da Polícia Militar é militar estadual, e não servidor civil. Seu regime jurídico resulta das regras constitucionais aplicáveis aos militares e da legislação pertinente ao respectivo ente, observadas também as competências normativas atribuídas à União pela Constituição.
 
 **ATENÇÃO**
 
-Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças Armadas, embora algumas regras destas lhes sejam aplicadas por remissão. A Polícia Civil, por sua vez, é corporação civil e não está neste artigo.
+Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças Armadas, embora algumas regras destas lhes sejam aplicadas por remissão. A Polícia Civil, por sua vez, é corporação civil e não está neste artigo. A competência da lei estadual específica prevista no § 1º não afasta as competências legislativas atribuídas à União em outros dispositivos, como a edição de normas gerais prevista no art. 22, XXI.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -50,20 +50,20 @@ Polícia Militar e Corpo de Bombeiros Militar não se confundem com as Forças A
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: dos estados do distrito federal e dos territórios)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e exemplo substituidos: militar estadual nao e chamado de servidor estadual; nao se afirma competencia legislativa estadual exclusiva. ATENCAO mantida com acrescimo sobre as normas gerais da Uniao (art. 22, XXI). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
 ### Art. 42, § 1º — Regras aplicáveis aos militares estaduais
 
-- **TARGET:** `CF88:ART.42:PAR.1` · `ENTENDA/CF88:ART.42:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.42:PAR.1` · `ENTENDA/CF88:ART.42:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 42, § 1º — Regras aplicáveis aos militares estaduais
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.42`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 289 palavras · 2098 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 308 palavras · 2246 bytes · referências 0
 - **Motivo da seleção:** Paragrafo de remissoes multiplas (arts. 14, 40 e 142) que perde sentido se resumido na visao geral; exige contexto proprio.
 
 **O QUE DIZ**
@@ -76,7 +76,7 @@ O parágrafo funciona por remissão: em vez de repetir regras, aponta para outro
 
 Do art. 142 vêm, entre outras, a regra de que não cabe habeas corpus contra punição disciplinar militar e as restrições próprias da vida militar, como a proibição de sindicalização e de greve.
 
-O art. 142, § 3º, X, lista matérias como ingresso, limites de idade, estabilidade, transferência para a inatividade, remuneração, direitos e deveres. Para os militares estaduais, essas matérias são tratadas por lei estadual específica, e não pela lei federal das Forças Armadas.
+O art. 142, § 3º, X, reúne matérias como ingresso, limites de idade, estabilidade, transferência para a inatividade, remuneração, direitos e deveres. Para os militares estaduais, o art. 42, § 1º determina que essas matérias sejam disciplinadas por lei estadual específica. Isso não afasta outras competências legislativas atribuídas à União pela própria Constituição, inclusive as normas gerais previstas no art. 22, XXI.
 
 A patente do oficial é o posto da carreira; quem a confere é o Governador do respectivo ente.
 
@@ -100,37 +100,39 @@ Ler este parágrafo exige consultar os dispositivos citados: ele não reproduz o
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Paragrafo do art. 142, par. 3, X substituido: a lei estadual especifica do par. 1 nao afasta as competencias legislativas da Uniao, inclusive as normas gerais do art. 22, XXI. Demais secoes e glossario mantidos. (seções: o_que_significa)
 
 ---
 
 ### Art. 42, § 3º — Acumulação de cargos pelo militar estadual
 
-- **TARGET:** `CF88:ART.42:PAR.3` · `ENTENDA/CF88:ART.42:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.42:PAR.3` · `ENTENDA/CF88:ART.42:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 42, § 3º — Acumulação de cargos pelo militar estadual
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.42`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1710 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 2027 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma incluida pela EC 101/2019: permite ao militar estadual a acumulacao do art. 37, XVI, com prevalencia da atividade militar.
 
 **O QUE DIZ**
 
-O § 3º manda aplicar aos militares dos Estados, do Distrito Federal e dos Territórios a regra do art. 37, XVI, sobre acumulação remunerada de cargos públicos, com prioridade para a atividade militar.
+O § 3º determina a aplicação aos militares dos Estados, do Distrito Federal e dos Territórios da regra do art. 37, XVI, sobre acumulação remunerada de cargos públicos, com prevalência da atividade militar. A acumulação é admitida apenas nas hipóteses constitucionais, com compatibilidade de horários e observância do limite remuneratório referido no art. 37, XI.
 
 **O QUE SIGNIFICA**
 
-O art. 37, XVI, proíbe em regra acumular cargos públicos remunerados e admite exceções, como a de professor com outro cargo e a de dois cargos de profissionais da saúde, desde que haja compatibilidade de horários.
+O art. 37, XVI estabelece como regra a proibição da acumulação remunerada de cargos públicos, mas prevê exceções quando houver compatibilidade de horários.
 
-Este parágrafo abre essas exceções também para policiais e bombeiros militares estaduais. A cláusula "com prevalência da atividade militar" significa que, havendo choque entre as duas atividades, a militar tem precedência: o segundo vínculo não pode prejudicar o serviço na corporação.
+Atualmente, as hipóteses são: dois cargos de professor; um cargo de professor com outro de qualquer natureza; e dois cargos ou empregos privativos de profissionais de saúde com profissões regulamentadas.
+
+O § 3º do art. 42 torna essa regra aplicável aos militares estaduais, acrescentando que a atividade militar deve prevalecer.
 
 **EXEMPLO PRÁTICO**
 
-Um bombeiro militar formado em medicina pode, em tese, ocupar também um cargo de médico em hospital público estadual, se a hipótese se enquadrar no art. 37, XVI, e os horários forem compatíveis. Em uma escala de emergência, o serviço no Corpo de Bombeiros prevalece.
+Um policial militar que também ocupe cargo público de professor poderá acumular os vínculos se a situação estiver abrangida pelo art. 37, XVI, houver compatibilidade de horários e forem respeitadas as demais condições constitucionais. Havendo conflito entre as atividades, prevalece a atividade militar.
 
 **ATENÇÃO**
 
-O parágrafo não cria hipóteses novas de acumulação: remete às do art. 37, XVI. O parágrafo foi incluído pela Emenda Constitucional nº 101, de 2019; regras anteriores sobre o tema devem ser lidas à luz dessa inclusão.
+O § 3º não cria novas hipóteses de acumulação: ele remete ao art. 37, XVI. A Emenda Constitucional nº 101, de 2019, incluiu esse parágrafo no art. 42. Posteriormente, a Emenda Constitucional nº 138, de 2025, alterou a alínea “b” do art. 37, XVI, que atualmente admite a acumulação de um cargo de professor com outro de qualquer natureza.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -143,7 +145,7 @@ O parágrafo não cria hipóteses novas de acumulação: remete às do art. 37, 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos militares dos estados do distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo e ATENCAO substituidos: exemplo do bombeiro-medico (fora da alinea c) trocado por militar-professor; incluidas compatibilidade de horarios e o limite do art. 37, XI; registrada a redacao da alinea b dada pela EC 138/2025; retirada a frase vaga sobre regras anteriores. Complementacao autorizada: "somente pode ocorrer" -> "e admitida apenas" (elimina UNIVERSAL_CLAIM). Resolucao antiga EXCEPTION_NOT_IN_TEXT mantida e ainda aplicavel. Glossario mantido. (seções: atencao, exemplo_pratico, o_que_diz, o_que_significa)
 
 ---
 
@@ -158,7 +160,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2200 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 282 palavras · 2197 bytes · referências 0
 - **Motivo da seleção:** Visao geral: articulacao da Uniao por complexos regionais, lei complementar (§ 1º) e incentivos regionais (§ 2º, com explicacao propria); §§ 3º e 4º situados aqui.
 
 **O QUE DIZ**
@@ -193,23 +195,23 @@ A expressão "para efeitos administrativos" indica que a região não altera a d
 
 **WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: sempre); ABSOLUTE_CLAIM (atencao: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ação em um mesmo complexo geoeconômico e social)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: o target e OVERVIEW e nao se apresenta como enumeracao exaustiva dos quatro incisos do § 2º; informa que o artigo preve incentivos regionais e existe bloco proprio para o § 2º. A ausencia lexical do inciso I no overview nao elimina seu conteudo do sistema. A inclusao do § 4º pela EC 132/2023 ja esta coberta pela evidencia de vigencia versionada. NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
 ### Art. 43, § 2º — Incentivos regionais
 
-- **TARGET:** `CF88:ART.43:PAR.2` · `ENTENDA/CF88:ART.43:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.43:PAR.2` · `ENTENDA/CF88:ART.43:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 43, § 2º — Incentivos regionais
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.43`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 224 palavras · 1852 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 2022 bytes · referências 0
 - **Motivo da seleção:** Paragrafo-bloco: enunciado e quatro incisos com os instrumentos de incentivo regional.
 
 **O QUE DIZ**
 
-O § 2º lista, sem esgotar, os incentivos regionais, na forma da lei: igualdade de tarifas, fretes, seguros e outros custos de responsabilidade do poder público; juros favorecidos para atividades prioritárias; isenção, redução ou adiamento temporário de tributos federais; e prioridade no aproveitamento de rios e reservatórios nas regiões de baixa renda sujeitas a secas periódicas.
+O § 2º apresenta, sem esgotar a lista e na forma da lei, diferentes incentivos regionais: igualdade de tarifas, fretes, seguros e demais itens de custos e preços sob responsabilidade do poder público; juros favorecidos para atividades prioritárias; isenções, reduções ou diferimento temporário dos tributos federais devidos por pessoas físicas ou jurídicas; e prioridade no aproveitamento econômico e social de rios e massas de água represadas ou represáveis em regiões de baixa renda sujeitas a secas periódicas.
 
 **O QUE SIGNIFICA**
 
@@ -221,7 +223,7 @@ Todos dependem de lei. O parágrafo não concede, por si só, nenhum benefício 
 
 **EXEMPLO PRÁTICO**
 
-Uma lei federal pode reduzir temporariamente o imposto de renda de empresas que se instalem em área de atuação de uma política regional. Esse benefício se enquadra no inciso III e, pelo § 4º, deve considerar, sempre que possível, critérios ambientais.
+Uma lei pode prever incentivo tributário federal enquadrado no inciso III para determinada política regional. Na concessão desse tipo de incentivo, o § 4º determina que, sempre que possível, sejam considerados critérios de sustentabilidade ambiental e de redução das emissões de carbono.
 
 **ATENÇÃO**
 
@@ -237,9 +239,9 @@ Os benefícios tributários do inciso III alcançam tributos federais. Isenção
 
 —
 
-**WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nas regiões de baixa renda sujeitas a secas); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Esse benefício se enquadra no inciso III e, pelo § 4º, deve )
+**WARNINGS:** ABSOLUTE_CLAIM (exemplo_pratico: sempre); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: regiões de baixa renda sujeitas a secas periódicas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ e exemplo substituidos: os quatro grupos de incentivos completos ("precos", "represaveis", pessoas fisicas ou juridicas) e o par. 4 com "reducao das emissoes de carbono". Complementacoes autorizadas: "demais itens", "sob responsabilidade", "em regioes" e "dos tributos federais devidos por pessoas fisicas ou juridicas" (eliminam ENTENDA_COPIES_OFFICIAL_TEXT e LIST_ITEM_POSSIBLY_DROPPED). O QUE SIGNIFICA, ATENCAO e glossario mantidos. (seções: exemplo_pratico, o_que_diz)
 
 ---
 
@@ -254,7 +256,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1418 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 186 palavras · 1415 bytes · referências 0
 - **Motivo da seleção:** Visao geral: abre o Titulo do Poder Legislativo, define o bicameralismo federal e a duracao da legislatura (paragrafo unico situado aqui).
 
 **O QUE DIZ**
@@ -288,7 +290,7 @@ Legislatura (quatro anos) não se confunde com sessão legislativa (o período a
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: Congresso, Camara e Senado, legislatura, sessao legislativa e mandato do Senador corretamente distinguidos. v1 mantida byte-identica.
 
 ---
 
@@ -298,12 +300,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 45 — Câmara dos Deputados
 
-- **TARGET:** `CF88:ART.45` · `ENTENDA/CF88:ART.45/BASE/1`
+- **TARGET:** `CF88:ART.45` · `ENTENDA/CF88:ART.45/BASE/2`
 - **DISPLAY TITLE:** Art. 45 — Câmara dos Deputados
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1632 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 220 palavras · 1816 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao da Camara pelo sistema proporcional; o § 1º (numero de deputados) tem explicacao propria e o § 2º (Territorios) e situado aqui.
 
 **O QUE DIZ**
@@ -312,23 +314,25 @@ O art. 45 define a Câmara dos Deputados como a Casa dos representantes do povo,
 
 **O QUE SIGNIFICA**
 
-Os deputados representam a população, e não os entes federativos. Por isso o número de cadeiras de cada Estado acompanha, com limites, o tamanho da sua população, conforme lei complementar (§ 1º).
+A Câmara dos Deputados é formada por representantes do povo eleitos pelo sistema proporcional.
 
-No sistema proporcional, as cadeiras são distribuídas conforme a votação obtida pelos partidos, e não apenas pelos candidatos individualmente mais votados. As regras de cálculo estão na legislação eleitoral.
+A representação de cada Estado e do Distrito Federal é definida proporcionalmente à população, dentro dos limites constitucionais e conforme lei complementar.
 
-Cada Território, se vier a ser criado, elegerá quatro deputados, número fixo que independe da população.
+A Constituição determina o uso do sistema proporcional, mas não estabelece neste artigo todo o método de cálculo e distribuição das cadeiras. Esses detalhes pertencem à legislação eleitoral.
+
+Se houver Território federal, cada Território elegerá quatro Deputados, conforme o § 2º.
 
 **EXEMPLO PRÁTICO**
 
-Em uma eleição para deputado federal, os votos de um partido em determinado Estado definem quantas cadeiras ele obtém; depois, essas cadeiras vão para os candidatos mais votados da lista do partido.
+Em uma eleição para Deputado Federal, as cadeiras são preenchidas pelo sistema proporcional previsto no art. 45, de acordo com as regras estabelecidas pela legislação eleitoral. O art. 45, por si só, não descreve todo o cálculo utilizado nessa distribuição.
 
 **ATENÇÃO**
 
-O sistema proporcional da Câmara é diferente do sistema majoritário do Senado (art. 46). Atualmente não existem Territórios federais, mas a regra continua no texto.
+O sistema proporcional utilizado para a Câmara é diferente do princípio majoritário previsto para o Senado no art. 46. O § 2º mantém no texto constitucional a regra de que cada Território federal elegerá quatro Deputados.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Sistema proporcional*: forma de eleição em que as cadeiras são distribuídas na proporção dos votos de cada partido.
+- *Sistema proporcional*: sistema eleitoral em que a representação é distribuída proporcionalmente segundo critérios definidos pela legislação eleitoral.
 - *Território federal*: divisão administrativa da União prevista na Constituição, sem autonomia de Estado.
 
 **CAMADA EXTERNA**
@@ -337,7 +341,7 @@ O sistema proporcional da Câmara é diferente do sistema majoritário do Senado
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do povo eleitos pelo sistema proporcional em cada)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo, ATENCAO e glossario "Sistema proporcional" substituidos: sem mecanica eleitoral especifica sem fonte versionada; Distrito Federal incluido; retirada a afirmacao "Atualmente nao existem Territorios federais". O QUE DIZ e "Territorio federal" mantidos. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -348,7 +352,7 @@ O sistema proporcional da Câmara é diferente do sistema majoritário do Senado
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.45`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1984 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1981 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com limites numericos e remissao a lei complementar.
 
 **O QUE DIZ**
@@ -382,7 +386,7 @@ O parágrafo não fixa o número total de deputados: remete à lei complementar.
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.45: 0.229)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Ajuste so de provenance (OFFICIAL_CANONICAL_ANNOTATION), T1 byte-identico: a compilacao oficial remete expressamente a Lei Complementar nº 78/1993 no art. 45, § 1º; a remissao foi confirmada em fonte oficial. O T1 nao incorpora o conteudo da LC nem depende dele; nao afirma o numero total atual de Deputados nem a controversia legislativa de 2025/2026, que permanecem na camada correlata/atualizacao legislativa. external_layer_notes mantidas (ja registram a remissao sem afirmar o conteudo da LC).
 
 ---
 
@@ -392,12 +396,12 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 46 — Senado Federal
 
-- **TARGET:** `CF88:ART.46` · `ENTENDA/CF88:ART.46/BASE/1`
+- **TARGET:** `CF88:ART.46` · `ENTENDA/CF88:ART.46/BASE/2`
 - **DISPLAY TITLE:** Art. 46 — Senado Federal
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1558 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 253 palavras · 1781 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao do Senado pelo principio majoritario; os tres paragrafos (numero, mandato, renovacao e suplentes) sao curtos e situados aqui.
 
 **O QUE DIZ**
@@ -406,19 +410,21 @@ O art. 46 define o Senado Federal como a Casa dos representantes dos Estados e d
 
 **O QUE SIGNIFICA**
 
-No Senado, todos os Estados têm o mesmo peso, independentemente da população. Isso expressa a igualdade entre os entes da Federação, ao lado da Câmara, que reflete a população.
+O Senado representa os Estados e o Distrito Federal em igualdade numérica: cada um elege três Senadores, independentemente da população.
 
-Pelo princípio majoritário, vence quem obtém mais votos, sem distribuição proporcional entre partidos.
+A eleição segue o princípio majoritário, diferentemente do sistema proporcional da Câmara dos Deputados.
 
-A renovação alternada faz com que, em uma eleição, cada Estado escolha um senador e, na seguinte, dois. Assim o Senado não se renova por inteiro de uma só vez.
+O mandato de Senador é de oito anos, mas a representação é renovada a cada quatro anos, alternadamente por um terço e dois terços. Assim, em um ciclo cada Estado e o Distrito Federal elegem um Senador e, no ciclo seguinte, dois.
+
+Cada Senador é eleito com dois suplentes. As hipóteses em que o suplente é convocado são disciplinadas pelo art. 56, § 1º.
 
 **EXEMPLO PRÁTICO**
 
-Em uma eleição geral, cada Estado elege um senador; quatro anos depois, elege dois. O senador eleito exerce mandato de oito anos, e seus dois suplentes podem substituí-lo em caso de licença ou vaga.
+Em uma renovação de um terço do Senado, cada Estado e o Distrito Federal elegem um Senador. Quatro anos depois, na renovação de dois terços, cada um elege dois. O mandato de cada Senador continua sendo de oito anos.
 
 **ATENÇÃO**
 
-Os suplentes são eleitos junto com o senador, na mesma chapa; não há eleição separada para eles. O mandato de oito anos é o dobro do mandato dos deputados.
+Cada Senador é eleito com dois suplentes. Nos termos do art. 56, § 1º, o suplente é convocado nos casos de vaga, de investidura nas funções previstas no art. 56 ou de licença superior a cento e vinte dias.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -431,7 +437,7 @@ Os suplentes são eleitos junto com o senador, na mesma chapa; não há eleiçã
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: representantes dos estados e do distrito federal eleitos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: Distrito Federal incluido; suplencia alinhada ao art. 56, par. 1 (vaga, investidura, licenca superior a cento e vinte dias); retiradas as referencias a "mesma chapa". O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -441,12 +447,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 47 — Quórum das deliberações
 
-- **TARGET:** `CF88:ART.47` · `ENTENDA/CF88:ART.47/BASE/1`
+- **TARGET:** `CF88:ART.47` · `ENTENDA/CF88:ART.47/BASE/2`
 - **DISPLAY TITLE:** Art. 47 — Quórum das deliberações
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 1716 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 208 palavras · 1605 bytes · referências 1
 - **Motivo da seleção:** Artigo de caput unico com regra geral de quorum, de alta utilidade para todo o processo legislativo.
 
 **O QUE DIZ**
@@ -455,9 +461,13 @@ O art. 47 estabelece a regra geral de votação no Congresso: ressalvadas as exc
 
 **O QUE SIGNIFICA**
 
-A regra tem duas exigências diferentes. A primeira é de presença: para votar, é preciso que mais da metade dos membros da Casa ou da comissão esteja presente. A segunda é de aprovação: entre os presentes, vence a posição com mais votos, a chamada maioria simples ou relativa.
+O artigo estabelece duas condições diferentes.
 
-Essa é a regra padrão, usada, por exemplo, para aprovar leis ordinárias. Quando a Constituição exige outro quórum, como maioria absoluta para lei complementar (art. 69) ou três quintos para emenda constitucional (art. 60, § 2º), prevalece a regra especial.
+Primeiro, há um quórum de presença: a deliberação exige a presença da maioria absoluta dos membros da Casa ou da comissão.
+
+Atendido esse quórum, a regra geral de aprovação é a maioria dos votos. Essa regra só vale quando a própria Constituição não exigir quórum diferente.
+
+Por isso, dispositivos especiais prevalecem sobre o art. 47, como a maioria absoluta exigida para leis complementares e os três quintos exigidos para emendas constitucionais.
 
 **EXEMPLO PRÁTICO**
 
@@ -465,13 +475,12 @@ Em uma comissão com quarenta membros, a votação só pode ocorrer com pelo men
 
 **ATENÇÃO**
 
-Maioria simples (dos votos dos presentes) é diferente de maioria absoluta (mais da metade de todos os membros da Casa). A expressão "salvo disposição constitucional em contrário" indica que há exceções espalhadas pelo texto.
+No art. 47, maioria absoluta é requisito de presença, enquanto a decisão segue, como regra geral, a maioria dos votos. Não se deve confundir maioria dos votos com maioria absoluta do total de membros.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Quórum*: número mínimo de membros exigido para votar ou para aprovar uma proposta.
-- *Maioria absoluta*: mais da metade do total de membros da Casa.
-- *Maioria simples*: mais votos a favor do que contra entre os presentes.
+- *Quórum*: número de membros ou de votos exigido constitucionalmente para determinada deliberação.
+- *Maioria absoluta*: mais da metade do número total de membros do órgão.
 
 **CAMADA EXTERNA**
 
@@ -479,7 +488,7 @@ Maioria simples (dos votos dos presentes) é diferente de maioria absoluta (mais
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, ATENCAO e glossario substituidos: quorum de presenca (maioria absoluta) separado da regra geral de deliberacao (maioria dos votos), sem definir maioria simples como "maioria dos presentes". Decisao complementar: "Maioria simples" retirado do glossario (glossario final: Quorum, Maioria absoluta). Resolucao antiga TRANSITION_IN_CORE nao e mais disparada pela v2 (sem uso), mantida no historico. O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -489,12 +498,12 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 48 — Competência legislativa do Congresso com sanção
 
-- **TARGET:** `CF88:ART.48` · `ENTENDA/CF88:ART.48/BASE/1`
+- **TARGET:** `CF88:ART.48` · `ENTENDA/CF88:ART.48/BASE/2`
 - **DISPLAY TITLE:** Art. 48 — Competência legislativa do Congresso com sanção
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 302 palavras · 2285 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 289 palavras · 2227 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: o caput define a competencia com sancao presidencial; os incisos sao itens curtos de materia explicados aqui, sem explicacao propria.
 
 **O QUE DIZ**
@@ -505,7 +514,7 @@ O art. 48 atribui ao Congresso Nacional, com sanção do Presidente da Repúblic
 
 Este artigo trata das matérias decididas por lei. Lei passa pelo Congresso e depois pelo Presidente da República, que pode sancionar ou vetar.
 
-O caput faz uma separação importante: as matérias dos arts. 49, 51 e 52 não dependem de sanção. O art. 49 cuida da competência exclusiva do Congresso, exercida por decreto legislativo; os arts. 51 e 52, das competências privativas da Câmara e do Senado, exercidas por resolução.
+O caput faz uma separação importante: as matérias dos arts. 49, 51 e 52 não dependem de sanção presidencial. Esses dispositivos reúnem competências constitucionais próprias do Congresso Nacional, da Câmara dos Deputados e do Senado Federal. A forma de exercício e o instrumento utilizado dependem da competência específica.
 
 A lista do art. 48 é exemplificativa: a palavra "especialmente" mostra que outras matérias federais também são legisladas dessa forma.
 
@@ -521,7 +530,6 @@ Competência da União para legislar (arts. 22 e 24) não é o mesmo que compet�
 
 - *Sanção*: concordância do Presidente da República com o projeto de lei aprovado, que o transforma em lei.
 - *Anistia*: perdão concedido por lei a fatos considerados infrações.
-- *Decreto legislativo*: ato do Congresso que trata de matéria exclusiva dele, sem sanção presidencial.
 - *Subsídio*: remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º).
 
 **CAMADA EXTERNA**
@@ -530,7 +538,7 @@ Competência da União para legislar (arts. 22 e 24) não é o mesmo que compet�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: sobre todas as matérias de competência da união)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A frase sobre decreto legislativo (art. 49) e resolucao (arts. 51 e 52) generalizava a especie normativa de competencias heterogeneas; substituida por redacao que so afirma a dispensa de sancao e que o instrumento depende da competencia especifica. Restante mantido. Glossario: "Decreto legislativo" removido (termo deixou de aparecer no corpo e na fonte). (seções: o_que_significa, palavras_dificeis)
 
 ---
 
@@ -540,29 +548,33 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 49 — Competência exclusiva do Congresso
 
-- **TARGET:** `CF88:ART.49` · `ENTENDA/CF88:ART.49/BASE/1`
+- **TARGET:** `CF88:ART.49` · `ENTENDA/CF88:ART.49/BASE/2`
 - **DISPLAY TITLE:** Art. 49 — Competência exclusiva do Congresso
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 321 palavras · 2482 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 324 palavras · 2489 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: competencias exclusivas sem sancao; incisos I, V e IX tem explicacao propria, os demais itens curtos sao situados aqui.
 
 **O QUE DIZ**
 
-O art. 49 enumera as competências exclusivas do Congresso Nacional. Entre elas estão: decidir definitivamente sobre tratados que gerem encargos gravosos; autorizar declaração de guerra, celebração de paz e trânsito ou permanência temporária de forças estrangeiras, ressalvados os casos previstos em lei complementar; autorizar ausência do Presidente e do Vice por mais de quinze dias; aprovar estado de defesa e intervenção federal; sustar atos normativos do Executivo; fixar subsídios; julgar as contas do Presidente; fiscalizar o Executivo; autorizar referendo e convocar plebiscito; e decretar estado de calamidade pública nacional.
+O art. 49 enumera competências exclusivas do Congresso Nacional. Entre elas estão decidir sobre determinados atos internacionais; autorizar atos do Presidente, com a ressalva de lei complementar prevista no inciso II; aprovar o estado de defesa e a intervenção federal e autorizar o estado de sítio ou suspender essas medidas; sustar atos normativos do Executivo nas hipóteses constitucionais; fixar subsídios; julgar as contas do Presidente; fiscalizar o Executivo; autorizar referendo e convocar plebiscito; e decretar o estado de calamidade pública de âmbito nacional nas condições constitucionais.
 
 **O QUE SIGNIFICA**
 
-Competência exclusiva é aquela que o Congresso exerce sozinho, sem sanção ou veto do Presidente. O instrumento normalmente usado é o decreto legislativo.
+As matérias do art. 49 são atribuídas constitucionalmente ao Congresso Nacional e não dependem de sanção presidencial.
 
-As competências mostram duas faces do Legislativo. Uma é de controle: aprovar medidas excepcionais, autorizar atos do Presidente, sustar atos normativos, julgar contas e fiscalizar. A outra é de decisão política: tratados gravosos, concessões de rádio e televisão, atividades nucleares, terras indígenas e grandes alienações de terras públicas.
+Isso não significa que o Presidente da República fique excluído de todo o procedimento. Algumas competências do artigo pressupõem ato, iniciativa, pedido ou situação relacionada ao Poder Executivo.
+
+O art. 49 também não estabelece um único instrumento normativo para todas as suas competências. A forma de exercício depende da hipótese constitucional específica.
+
+Essas atribuições abrangem funções de autorização, controle, fiscalização e decisão conferidas ao Congresso Nacional.
 
 O inciso XVIII remete ao regime de calamidade pública dos arts. 167-B a 167-G.
 
 **EXEMPLO PRÁTICO**
 
-Se o Presidente da República precisar viajar ao exterior por mais de quinze dias, depende de autorização do Congresso (inciso III). Essa autorização é dada por decreto legislativo, sem passar pela sanção presidencial.
+Se o Presidente da República pretender ausentar-se do País por período superior a quinze dias, a autorização do Congresso Nacional é exigida pelo inciso III. Essa deliberação não é submetida à sanção presidencial.
 
 **ATENÇÃO**
 
@@ -570,43 +582,42 @@ O art. 49 trata da competência do Congresso como um todo. As competências priv
 
 **PALAVRAS DIFÍCEIS**
 
-- *Competência exclusiva*: atribuição que só o Congresso exerce, sem participação do Presidente da República.
+- *Competência exclusiva*: atribuição que a Constituição confere ao Congresso Nacional e cujo exercício, nos casos do art. 49, não depende de sanção presidencial.
 - *Referendo*: consulta ao povo sobre ato já aprovado, para confirmá-lo ou rejeitá-lo.
 - *Plebiscito*: consulta ao povo antes da decisão sobre determinado tema.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
 - *Subsídio*: remuneração fixada em parcela única, sem acréscimos de outras espécies remuneratórias (art. 39, § 4º).
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aprovar o estado de defesa e a intervenção)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario "Competencia exclusiva" substituidos: competencia exclusiva nao equivale a ausencia de qualquer participacao presidencial; sem instrumento unico; inciso IV completo (estado de sitio). Complementacoes autorizadas: "intervencao federal e autorizar" (elimina ENTENDA_COPIES_OFFICIAL_TEXT), "fique excluido de todo o procedimento" (elimina ABSOLUTE_CLAIM) e "com a ressalva de lei complementar prevista no inciso II" (elimina LAW_DEPENDENCY_OMITTED). "Decreto legislativo" retirado do glossario por decisao editorial. ATENCAO mantida. (seções: exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional
 
-- **TARGET:** `CF88:ART.49:INC.I` · `ENTENDA/CF88:ART.49:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.49:INC.I` · `ENTENDA/CF88:ART.49:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 49, inciso I — Tratados que geram encargos ao patrimônio nacional
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 204 palavras · 1914 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1841 bytes · referências 0
 - **Motivo da seleção:** Item de alta utilidade interpretativa: papel do Congresso na incorporacao de tratados.
 
 **O QUE DIZ**
 
-O inciso I reserva ao Congresso a palavra final sobre tratados e outros atos internacionais que tragam encargos ou compromissos gravosos ao patrimônio nacional.
+O inciso I atribui ao Congresso Nacional a competência de deliberar sobre tratados, acordos ou atos internacionais que imponham encargos ou compromissos gravosos ao patrimônio nacional.
 
 **O QUE SIGNIFICA**
 
-Quem celebra tratados em nome do Brasil é o Presidente da República (art. 84, VIII), mas, quando o tratado gera ônus relevantes para o país, a palavra final cabe ao Congresso.
+O art. 84, VIII atribui ao Presidente da República a celebração de tratados, convenções e atos internacionais, sujeita ao referendo do Congresso Nacional.
 
-Na prática, o Presidente assina o tratado e o envia ao Congresso, que o aprova ou rejeita por decreto legislativo. Sem essa aprovação, o compromisso não pode ser assumido de forma definitiva.
+Quando o ato internacional se enquadra no art. 49, I, a manifestação do Congresso integra o procedimento constitucional necessário para sua aprovação.
 
-A expressão "resolver definitivamente" indica que a manifestação do Congresso é condição para que o Brasil se obrigue.
+A atuação do Congresso e a atuação do Presidente são etapas distintas. Este dispositivo não disciplina sozinho todas as fases de celebração, ratificação ou produção de efeitos internos do tratado.
 
 **EXEMPLO PRÁTICO**
 
@@ -620,7 +631,6 @@ O inciso fala em encargos ou compromissos gravosos. Quais tratados exigem essa a
 
 - *Tratado*: acordo formal entre Estados ou organizações internacionais.
 - *Encargo gravoso*: obrigação que gera ônus significativo, como custo financeiro ou compromisso relevante.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
 
 **CAMADA EXTERNA**
 
@@ -628,18 +638,18 @@ O inciso fala em encargos ou compromissos gravosos. Quais tratados exigem essa a
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Palavra final" e "o compromisso nao pode ser assumido de forma definitiva" simplificavam a articulacao entre o art. 49, I e o art. 84, VIII; O QUE DIZ e O QUE SIGNIFICA substituidos. Exemplo, ATENCAO e external_layer_notes mantidos; hierarquia e incorporacao seguem na camada externa. Glossario: "Decreto legislativo" removido (deixou de aparecer no corpo; decisao complementar). (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 49, inciso V — Sustação de atos normativos do Executivo
 
-- **TARGET:** `CF88:ART.49:INC.V` · `ENTENDA/CF88:ART.49:INC.V/BASE/1`
+- **TARGET:** `CF88:ART.49:INC.V` · `ENTENDA/CF88:ART.49:INC.V/BASE/2`
 - **DISPLAY TITLE:** Art. 49, inciso V — Sustação de atos normativos do Executivo
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1678 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 183 palavras · 1567 bytes · referências 0
 - **Motivo da seleção:** Item com instituto proprio de controle (veto legislativo), frequente em estudo.
 
 **O QUE DIZ**
@@ -648,26 +658,25 @@ O inciso V autoriza o Congresso a sustar os atos normativos do Poder Executivo q
 
 **O QUE SIGNIFICA**
 
-O Executivo pode editar regulamentos para executar as leis (art. 84, IV) e leis delegadas nos limites da resolução de delegação (art. 68). Quando ultrapassa esses limites, invade a função do Legislativo.
+O Poder Executivo pode expedir decretos e regulamentos para a fiel execução das leis e pode exercer delegação legislativa quando a Constituição e o ato de delegação assim permitirem.
 
-O inciso dá ao Congresso um meio de reagir diretamente: um decreto legislativo que suspende os efeitos do ato. Não é preciso esperar o Judiciário.
+Se um ato normativo do Executivo ultrapassar o poder regulamentar ou os limites da delegação legislativa, o inciso V atribui ao Congresso Nacional competência para sustá-lo.
 
-A sustação recai sobre o ato que exorbita, isto é, que vai além do poder regulamentar ou dos limites da delegação legislativa.
+Essa competência constitucional do Congresso não se confunde com o controle judicial de constitucionalidade.
 
 **EXEMPLO PRÁTICO**
 
-Se um decreto presidencial criar uma obrigação para os cidadãos que nenhuma lei prevê, o Congresso pode sustá-lo por decreto legislativo, com fundamento neste inciso.
+Se um decreto do Executivo criar obrigação que ultrapasse os limites da lei que deveria apenas regulamentar, poderá estar configurada a hipótese constitucional para sua sustação pelo Congresso.
 
 **ATENÇÃO**
 
-Sustar não é o mesmo que revogar nem que declarar inconstitucional: o Congresso suspende a eficácia do ato que exorbitou. A eventual inconstitucionalidade do próprio ato também pode ser discutida no Judiciário.
+Sustar não é o mesmo que revogar nem que declarar judicialmente a inconstitucionalidade. O inciso V trata especificamente de ato normativo que exceda o poder regulamentar ou os limites da delegação legislativa.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Poder regulamentar*: competência do Executivo para editar normas que detalham a execução das leis.
 - *Exorbitar*: ir além dos limites permitidos.
 - *Sustar*: suspender os efeitos de um ato.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
 
 **CAMADA EXTERNA**
 
@@ -675,18 +684,18 @@ Sustar não é o mesmo que revogar nem que declarar inconstitucional: o Congress
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: sustar os atos normativos do poder executivo que)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: retirada a afirmacao de que a sustacao e necessariamente feita por decreto legislativo; competencia do Congresso distinta do controle judicial. "Decreto legislativo" retirado do glossario por decisao editorial. O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 49, inciso IX — Julgamento das contas do Presidente
 
-- **TARGET:** `CF88:ART.49:INC.IX` · `ENTENDA/CF88:ART.49:INC.IX/BASE/1`
+- **TARGET:** `CF88:ART.49:INC.IX` · `ENTENDA/CF88:ART.49:INC.IX/BASE/2`
 - **DISPLAY TITLE:** Art. 49, inciso IX — Julgamento das contas do Presidente
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.49`, `CF88:ART.49:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1462 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1501 bytes · referências 0
 - **Motivo da seleção:** Item que exige contexto proprio (relacao com o parecer previo do TCU no art. 71, I).
 
 **O QUE DIZ**
@@ -695,15 +704,15 @@ O inciso IX encarrega o Congresso de julgar a cada ano as contas do Presidente d
 
 **O QUE SIGNIFICA**
 
-O Presidente presta contas anualmente ao Congresso (art. 84, XXIV). O Tribunal de Contas da União analisa essas contas e emite um parecer prévio (art. 71, I), mas quem julga é o Congresso.
+O Presidente da República presta anualmente suas contas ao Congresso Nacional.
 
-O parecer é técnico; o julgamento é político, feito pelos representantes eleitos.
+O Tribunal de Contas da União aprecia essas contas e emite o parecer prévio previsto no art. 71, I. O julgamento das contas presidenciais, porém, é competência do Congresso Nacional, nos termos do art. 49, IX.
 
-Além das contas, o Congresso aprecia os relatórios sobre a execução dos planos de governo, o que reforça a sua função de acompanhar a gestão.
+O Congresso também aprecia os relatórios relativos à execução dos planos de governo.
 
 **EXEMPLO PRÁTICO**
 
-Ao fim de um exercício, o Tribunal de Contas da União emite parecer recomendando a rejeição das contas do Presidente. O Congresso pode acompanhar ou não o parecer ao julgar as contas.
+Depois de apresentadas as contas presidenciais, o Tribunal de Contas da União realiza sua apreciação e emite parecer prévio. Posteriormente, cabe ao Congresso Nacional exercer o julgamento previsto no art. 49, IX.
 
 **ATENÇÃO**
 
@@ -712,15 +721,15 @@ Se o Presidente não apresentar as contas no prazo, cabe à Câmara proceder à 
 **PALAVRAS DIFÍCEIS**
 
 - *Prestação de contas*: demonstração de como os recursos públicos foram usados.
-- *Parecer prévio*: opinião técnica emitida antes do julgamento, que não vincula quem julga.
+- *Parecer prévio*: manifestação emitida pelo Tribunal de Contas da União sobre as contas do Presidente antes do julgamento pelo Congresso Nacional.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: os relatórios sobre a execução dos planos de)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e glossario "Parecer previo" substituidos: parecer previo do TCU (art. 71, I) separado do julgamento pelo Congresso, sem definir genericamente todo parecer previo como nao vinculante. O QUE DIZ, ATENCAO e "Prestacao de contas" mantidos. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -735,7 +744,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1732 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 213 palavras · 1729 bytes · referências 0
 - **Motivo da seleção:** Visao geral: convocacao para comparecimento pessoal (caput) e comparecimento espontaneo (§ 1º); o § 2º (pedidos escritos) tem explicacao propria.
 
 **O QUE DIZ**
@@ -769,18 +778,18 @@ O Presidente da República não está entre as autoridades que podem ser convoca
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: comitê gestor do imposto sobre bens e serviços); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O ministro deve comparecer na data marcada;)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. "Reforma tributaria de 2023" corresponde a alteracao introduzida pela EC 132/2023, respaldada pela anotacao de vigencia versionada (CF88:ART.50:CAPUT, redacao dada pela Emenda Constitucional n. 132, de 2023); o mecanismo de provenance nao exige formalizacao (nenhum alerta aberto). NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
 ### Art. 50, § 2º — Pedidos escritos de informação
 
-- **TARGET:** `CF88:ART.50:PAR.2` · `ENTENDA/CF88:ART.50:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.50:PAR.2` · `ENTENDA/CF88:ART.50:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 50, § 2º — Pedidos escritos de informação
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.50`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1547 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1733 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo e sancao propria (crime de responsabilidade).
 
 **O QUE DIZ**
@@ -789,32 +798,32 @@ O § 2º permite que as Mesas da Câmara e do Senado enviem pedidos escritos de 
 
 **O QUE SIGNIFICA**
 
-Este é o meio escrito de fiscalização, complementar à convocação pessoal do caput.
+Este é o mecanismo escrito de obtenção de informações previsto pelo artigo.
 
-O pedido parte da Mesa da Casa, e não de qualquer parlamentar isoladamente: o deputado ou senador apresenta o requerimento, e a Mesa o encaminha.
+A Constituição atribui às Mesas da Câmara dos Deputados e do Senado Federal o encaminhamento dos pedidos às autoridades alcançadas pelo dispositivo.
 
-Três condutas são punidas: recusar a resposta, deixar de responder em trinta dias e responder com informações falsas.
+O § 2º prevê três situações que configuram crime de responsabilidade: a recusa, o não atendimento dentro de trinta dias e a prestação de informações falsas.
 
 **EXEMPLO PRÁTICO**
 
-Um senador apresenta requerimento de informações sobre contratos de um ministério. A Mesa do Senado envia o pedido ao ministro, que tem trinta dias para responder. Se a resposta não vier no prazo, configura-se a hipótese de crime de responsabilidade prevista no parágrafo.
+A Mesa do Senado encaminha a um Ministro de Estado pedido escrito de informações sobre contratos de determinado órgão. Se o pedido não for atendido no prazo constitucional de trinta dias, incide a hipótese de crime de responsabilidade prevista no § 2º.
 
 **ATENÇÃO**
 
-O prazo de trinta dias se conta para o atendimento do pedido. A apuração do crime de responsabilidade segue procedimento próprio, previsto em lei.
+A Constituição fixa o prazo de trinta dias para atendimento do pedido e qualifica a recusa, o não atendimento e a prestação de informações falsas como crime de responsabilidade. O procedimento de apuração dessa responsabilidade não é disciplinado por este parágrafo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Mesa*: órgão de direção de cada Casa legislativa, composto pelo presidente, vice-presidentes e secretários.
-- *Requerimento de informação*: pedido formal de dados ou esclarecimentos dirigido a uma autoridade.
+- *Mesa*: órgão de direção da respectiva Casa legislativa.
+- *Pedido escrito de informação*: solicitação formal de informações encaminhada pela Mesa da Câmara dos Deputados ou do Senado Federal às autoridades alcançadas pelo dispositivo.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pedidos escritos de informação a ministros de estado)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pedidos escritos de informação a ministros de estado); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da câmara dos deputados e do senado federal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O texto introduzia procedimento regimental nao contido no § 2º ("o deputado ou senador apresenta o requerimento, e a Mesa o encaminha"). O QUE SIGNIFICA, exemplo, ATENCAO e glossario "Mesa" substituidos; composicao da Mesa retirada. Glossario: "Requerimento de informacao" substituido por "Pedido escrito de informacao" (vocabulario do § 2º; decisao complementar). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -824,25 +833,27 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 51 — Competências privativas da Câmara
 
-- **TARGET:** `CF88:ART.51` · `ENTENDA/CF88:ART.51/BASE/1`
+- **TARGET:** `CF88:ART.51` · `ENTENDA/CF88:ART.51/BASE/2`
 - **DISPLAY TITLE:** Art. 51 — Competências privativas da Câmara
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1821 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 1970 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: o inciso I (autorizacao para processo contra o Presidente) tem explicacao propria; os demais itens curtos sao situados aqui.
 
 **O QUE DIZ**
 
-O art. 51 lista as competências privativas da Câmara dos Deputados: autorizar a instauração de processo contra o Presidente, o Vice-Presidente e os Ministros de Estado; tomar as contas do Presidente quando não apresentadas no prazo; elaborar o regimento interno; dispor sobre sua organização, polícia e serviços; e eleger membros do Conselho da República.
+O art. 51 reúne competências privativas da Câmara dos Deputados. Entre elas estão autorizar, por dois terços de seus membros, a instauração dos processos indicados no inciso I; proceder à tomada de contas do Presidente quando não apresentadas no prazo constitucional; elaborar seu regimento interno; dispor sobre sua organização, funcionamento, polícia e serviços; exercer a iniciativa de lei prevista no inciso IV; e eleger membros do Conselho da República.
 
 **O QUE SIGNIFICA**
 
-Competência privativa é aquela exercida só pela Câmara, sem participação do Senado nem sanção do Presidente. O instrumento é, em regra, a resolução.
+O artigo atribui determinadas competências especificamente à Câmara dos Deputados.
 
-Algumas competências são de controle político (autorizar processo e tomar contas). Outras garantem a autonomia da Casa: regimento próprio, organização administrativa e iniciativa da lei que fixa a remuneração dos seus servidores.
+Essas competências não seguem necessariamente um único procedimento ou instrumento. Algumas são exercidas diretamente pela própria Casa, enquanto o inciso IV prevê expressamente iniciativa de lei para a fixação da remuneração correspondente.
 
-Essa autonomia tem limite: a remuneração dos servidores da Câmara depende de lei e deve respeitar a lei de diretrizes orçamentárias.
+Por isso, a forma de exercício deve ser verificada em cada inciso.
+
+Entre as atribuições estão funções de controle político e medidas ligadas à organização e à autonomia administrativa da Câmara.
 
 **EXEMPLO PRÁTICO**
 
@@ -854,7 +865,7 @@ A Câmara autoriza o processo contra o Presidente, mas não o julga: o julgament
 
 **PALAVRAS DIFÍCEIS**
 
-- *Competência privativa*: atribuição exercida por uma só Casa, sem participação da outra nem do Presidente.
+- *Competência privativa*: atribuição que a Constituição confere especificamente à Câmara dos Deputados, nos limites do respectivo dispositivo.
 - *Regimento interno*: conjunto de regras que organiza o funcionamento da Casa.
 - *Tomada de contas*: levantamento das contas feito por quem fiscaliza quando o responsável não as apresenta.
 
@@ -862,9 +873,9 @@ A Câmara autoriza o processo contra o Presidente, mas não o julga: o julgament
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: autorizar por dois terços de seus membros a)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA e glossario "Competencia privativa" substituidos: sem definicao universal "sem participacao do Senado nem sancao" e sem instrumento unico; quorum de dois tercos e iniciativa de lei do inciso IV explicitos. Exemplo, ATENCAO, "Regimento interno" e "Tomada de contas" mantidos. (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -908,7 +919,7 @@ O inciso não define o rito do processo nem os crimes de responsabilidade: isso 
 
 - O rito do processo por crime de responsabilidade e o alcance da autorização da Câmara são tratados na lei que define esses crimes e na camada JURISPRUDÊNCIA.
 
-**WARNINGS:** PARENT_REPETITION (*: CF88:ART.51: 0.231)
+**WARNINGS:** —
 
 **DECISÃO HUMANA:** APPROVED — aprovado sem alteracao juridica na revisao humana da fila D; nenhum microajuste T1 exigido pelo validador
 
@@ -920,12 +931,12 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 52 — Competências privativas do Senado
 
-- **TARGET:** `CF88:ART.52` · `ENTENDA/CF88:ART.52/BASE/1`
+- **TARGET:** `CF88:ART.52` · `ENTENDA/CF88:ART.52/BASE/2`
 - **DISPLAY TITLE:** Art. 52 — Competências privativas do Senado
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1792 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 281 palavras · 2240 bytes · referências 0
 - **Motivo da seleção:** Visao geral de artigo-lista: processo por crime de responsabilidade, aprovacao de autoridades e suspensao de lei tem explicacao propria; competencias financeiras e de organizacao sao situadas aqui.
 
 **O QUE DIZ**
@@ -934,11 +945,11 @@ O art. 52 lista as competências privativas do Senado Federal. Entre elas estão
 
 **O QUE SIGNIFICA**
 
-O Senado, Casa de representação dos Estados, recebe funções ligadas ao equilíbrio federativo, como fixar limites para o endividamento da União, dos Estados, do Distrito Federal e dos Municípios.
+O art. 52 reúne competências privativas do Senado em diferentes áreas. Algumas dizem respeito ao julgamento de autoridades, outras à aprovação prévia de determinadas escolhas, ao controle financeiro e federativo, à organização da própria Casa e a outras funções previstas na Constituição.
 
-Recebe também funções de controle sobre autoridades: julga as mais altas por crime de responsabilidade e aprova, depois de sabatina, a escolha de ministros de tribunais, diretores do Banco Central, embaixadores e outros.
+As hipóteses de aprovação de autoridades não seguem todas o mesmo procedimento. O inciso III prevê arguição pública para as autoridades ali relacionadas. O inciso IV trata separadamente dos chefes de missão diplomática de caráter permanente e prevê arguição em sessão secreta.
 
-Essas competências são exercidas por resolução, sem sanção presidencial.
+Também não existe um único instrumento normativo para todas as competências do artigo. O próprio inciso XIII, por exemplo, prevê iniciativa de lei para a fixação da remuneração correspondente.
 
 **EXEMPLO PRÁTICO**
 
@@ -946,31 +957,31 @@ Um Estado que deseja contrair empréstimo com um banco estrangeiro precisa de au
 
 **ATENÇÃO**
 
-Várias competências do Senado em matéria financeira dependem de proposta do Presidente da República, como a fixação de limites globais da dívida consolidada (inciso VI).
+O inciso VI exige expressamente proposta do Presidente da República para a fixação dos limites globais da dívida consolidada. Os incisos VII, VIII e IX contêm outras competências financeiras do Senado, mas não repetem essa exigência no texto constitucional.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Sabatina*: arguição pública de um indicado a cargo antes da votação sobre sua escolha.
+- *Arguição*: questionamento do indicado antes da deliberação do Senado; conforme a hipótese constitucional, pode ocorrer publicamente ou em sessão secreta.
 - *Dívida consolidada*: conjunto das obrigações financeiras de longo prazo de um ente público.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da união dos estados do distrito federal e); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Estado que deseja contrair empréstimo com um banco estran)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: dos chefes de missão diplomática de caráter permanente); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Estado que deseja contrair empréstimo com um banco estran)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Tres correcoes: (1) nao ha um unico instrumento para todas as competencias (o inciso XIII preve iniciativa de lei); (2) arguicao publica no inciso III e em sessao secreta no inciso IV (chefes de missao diplomatica); (3) so o inciso VI exige proposta do Presidente. O QUE SIGNIFICA, ATENCAO substituidos; glossario: "Sabatina" substituido por "Arguicao", expressao do proprio texto constitucional (decisao complementar). O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade
 
-- **TARGET:** `CF88:ART.52:INC.I` · `ENTENDA/CF88:ART.52:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.52:INC.I` · `ENTENDA/CF88:ART.52:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 52, incisos I e II — Autoridades julgadas pelo Senado por crime de responsabilidade
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** `CF88:ART.52:INC.II`
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.52`, `CF88:ART.52:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 247 palavras · 2137 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 271 palavras · 2297 bytes · referências 1
 - **Motivo da seleção:** Bloco: incisos I e II definem, juntos, quem o Senado julga por crime de responsabilidade.
 
 **O QUE DIZ**
@@ -983,7 +994,7 @@ Nesses casos o Senado não legisla: atua como órgão de julgamento político, a
 
 Os incisos têm alcances diferentes. O inciso I trata do chefe do Executivo e de quem com ele responde por fatos conexos. O inciso II alcança autoridades de outros Poderes e órgãos, que respondem por fatos próprios.
 
-Para o Presidente da República, o julgamento só começa depois da autorização da Câmara (art. 51, I). O modo de julgar e a pena estão no parágrafo único, com explicação própria.
+Além das competências do Senado previstas nestes incisos, o art. 51, I atribui à Câmara dos Deputados a autorização, por dois terços de seus membros, para a instauração de processo contra o Presidente, o Vice-Presidente da República e os Ministros de Estado. O art. 86 contém ainda regras específicas relativas ao Presidente da República.
 
 **EXEMPLO PRÁTICO**
 
@@ -1004,7 +1015,7 @@ Crime de responsabilidade não é crime comum: nos crimes comuns, o Presidente �
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o presidente e o vice presidente da república)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Lista de autoridades adequada. A mencao ao art. 51, I estava restrita ao Presidente; o terceiro paragrafo de O QUE SIGNIFICA foi substituido (autorizacao da Camara para Presidente, Vice-Presidente e Ministros de Estado; art. 86 com regras especificas do Presidente). Restante mantido; camada externa continua JURISPRUDENCE CONTEXT_ONLY. (seções: o_que_significa)
 
 ---
 
@@ -1055,12 +1066,12 @@ O texto constitucional associa à condenação a perda do cargo e a inabilitaç�
 
 ### Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
 
-- **TARGET:** `CF88:ART.52:INC.III` · `ENTENDA/CF88:ART.52:INC.III/BASE/1`
+- **TARGET:** `CF88:ART.52:INC.III` · `ENTENDA/CF88:ART.52:INC.III/BASE/2`
 - **DISPLAY TITLE:** Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.52`, `CF88:ART.52:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1622 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 228 palavras · 1926 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com enunciado e alineas que listam as autoridades sujeitas a sabatina.
 
 **O QUE DIZ**
@@ -1069,19 +1080,19 @@ O inciso III exige aprovação prévia do Senado, por voto secreto e após argui
 
 **O QUE SIGNIFICA**
 
-É um mecanismo de controle mútuo entre os Poderes. O Presidente indica, mas a escolha só se completa com a aprovação do Senado.
+O inciso III exige aprovação prévia do Senado para as escolhas nele enumeradas. A deliberação ocorre por voto secreto, depois de arguição pública da pessoa indicada.
 
-O procedimento tem duas etapas: a arguição pública, conhecida como sabatina, em que o indicado responde a perguntas dos senadores, e a votação secreta.
+A exigência funciona como etapa constitucional anterior à conclusão da escolha nas hipóteses previstas.
 
-A alínea f permite que a lei amplie a lista de cargos que dependem dessa aprovação.
+A alínea “f” permite que a lei determine outros cargos cuja escolha também dependa dessa aprovação.
 
 **EXEMPLO PRÁTICO**
 
-Indicado pelo Presidente para a presidência do Banco Central, o candidato passa por sabatina em comissão do Senado e depois tem o nome votado secretamente. Se rejeitado, não pode ser nomeado.
+Se uma pessoa for indicada para a presidência do Banco Central, ela será submetida à arguição pública e posteriormente à votação secreta do Senado. Sem a aprovação exigida constitucionalmente, não se completa a etapa necessária à nomeação prevista para essa hipótese.
 
 **ATENÇÃO**
 
-A sabatina é pública, mas o voto é secreto. Para os chefes de missão diplomática permanente (inciso IV), até a arguição é feita em sessão secreta.
+No inciso III, a arguição é pública e o voto é secreto. O inciso IV contém regra diferente para os chefes de missão diplomática de caráter permanente, cuja arguição ocorre em sessão secreta. Outras disposições constitucionais podem estabelecer requisitos adicionais para autoridades específicas, como ocorre com o Procurador-Geral da República.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1094,7 +1105,7 @@ A sabatina é pública, mas o voto é secreto. Para os chefes de missão diplom�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do tribunal de contas da união indicados pelo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: retirado o procedimento regimental ("em comissao do Senado"); incisos III e IV distinguidos; mencao a requisitos adicionais de outras disposicoes (Procurador-Geral da Republica). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -1149,12 +1160,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 53 — Imunidades e prerrogativas dos parlamentares
 
-- **TARGET:** `CF88:ART.53` · `ENTENDA/CF88:ART.53/BASE/1`
+- **TARGET:** `CF88:ART.53` · `ENTENDA/CF88:ART.53/BASE/2`
 - **DISPLAY TITLE:** Art. 53 — Imunidades e prerrogativas dos parlamentares
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2037 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 304 palavras · 2308 bytes · referências 0
 - **Motivo da seleção:** Visao geral: organiza as garantias do mandato (inviolabilidade, foro, prisao, processo, testemunho, incorporacao militar e estado de sitio); as principais tem explicacao propria e o § 7º e situado aqui.
 
 **O QUE DIZ**
@@ -1163,11 +1174,11 @@ O art. 53 reúne as garantias dos deputados e senadores ligadas ao exercício do
 
 **O QUE SIGNIFICA**
 
-Essas garantias não são privilégios pessoais: protegem a função parlamentar, para que o representante possa falar, votar e fiscalizar sem medo de perseguição.
+O artigo reúne diferentes garantias constitucionais relacionadas ao exercício do mandato parlamentar.
 
-Costuma-se separar dois grupos. A imunidade material (caput) afasta a responsabilidade civil e penal pelas manifestações. As imunidades formais (§§ 2º a 5º) não afastam o crime, mas limitam a prisão e permitem que a Casa suspenda o processo.
+O caput estabelece a inviolabilidade civil e penal por opiniões, palavras e votos. Os §§ 2º a 5º disciplinam regras relativas à prisão e à sustação do processo penal. O § 1º trata do julgamento perante o Supremo Tribunal Federal, e os §§ 6º a 8º estabelecem outras garantias e regras específicas.
 
-O foro do § 1º e as garantias dos §§ 6º a 8º completam esse conjunto.
+Cada uma dessas proteções possui alcance próprio. Questões sobre o alcance concreto da imunidade material e do foro devem ser lidas junto às explicações específicas dos dispositivos e à camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -1175,7 +1186,7 @@ Um deputado critica duramente, da tribuna, a atuação de um ministro. A crític
 
 **ATENÇÃO**
 
-As imunidades começam com a expedição do diploma pela Justiça Eleitoral, antes mesmo da posse. Elas pertencem ao mandato: quem deixa o cargo deixa de tê-las. A redação atual do artigo vem, em grande parte, da Emenda Constitucional nº 35, de 2001.
+Os §§ 1º e 2º utilizam expressamente a expedição do diploma como marco para as regras neles previstas. Isso não autoriza estender o mesmo termo inicial e final a todas as garantias do art. 53. O alcance temporal de cada proteção deve ser analisado conforme o respectivo dispositivo. A redação atual do artigo vem, em grande parte, da Emenda Constitucional nº 35, de 2001.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1187,9 +1198,9 @@ As imunidades começam com a expedição do diploma pela Justiça Eleitoral, ant
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas duas generalizacoes ("As imunidades comecam com a expedicao do diploma" e "quem deixa o cargo deixa de te-las"): "desde a expedicao do diploma" aparece so nos §§ 1º e 2º e o efeito temporal da imunidade material nao deve ser inferido no overview. O QUE SIGNIFICA e ATENCAO substituidos; exemplo mantido; informacao historica da EC 35/2001 mantida no formato canonico. Decisao complementar: "atribuir automaticamente" substituido por "estender" (elimina o falso positivo ABSOLUTE_CLAIM pela redacao, sem mudar o sentido). (seções: atencao, o_que_significa)
 
 ---
 
@@ -1336,12 +1347,12 @@ O texto fala em maioria dos membros, isto é, maioria absoluta da Casa, e não d
 
 ### Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar
 
-- **TARGET:** `CF88:ART.53:PAR.3` · `ENTENDA/CF88:ART.53:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.53:PAR.3` · `ENTENDA/CF88:ART.53:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 53, §§ 3º, 4º e 5º — Sustação do processo penal contra o parlamentar
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.53:PAR.4`, `CF88:ART.53:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 2086 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 299 palavras · 2364 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 3º, 4º e 5º formam o procedimento de sustacao da acao penal (iniciativa, prazo e efeito sobre a prescricao).
 
 **O QUE DIZ**
@@ -1350,11 +1361,13 @@ O § 3º permite que, recebida denúncia contra senador ou deputado por crime po
 
 **O QUE SIGNIFICA**
 
-O processo penal contra o parlamentar não depende de autorização prévia da Casa: o Supremo Tribunal Federal recebe a denúncia e apenas comunica a Casa.
+Nas hipóteses alcançadas por este dispositivo, o andamento da ação penal não depende de autorização prévia da Casa legislativa.
 
-A Casa pode, depois, sustar o andamento da ação. Para isso, um partido com representação na Casa precisa pedir, e a maioria absoluta dos membros precisa aprovar.
+Recebida a denúncia no Supremo Tribunal Federal dentro do regime constitucional aplicável, a Corte comunica a Casa respectiva. A partir daí, partido político nela representado pode provocar a votação sobre a sustação do processo.
 
-A regra vale só para crime cometido depois da diplomação. O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Enquanto a ação estiver sustada, a prescrição também fica suspensa, até o fim do mandato (§ 5º).
+Para a sustação, é necessária a aprovação da maioria dos membros da Casa. A regra alcança crime ocorrido após a diplomação.
+
+O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Enquanto o processo permanecer sustado, a prescrição também fica suspensa durante o mandato.
 
 **EXEMPLO PRÁTICO**
 
@@ -1362,7 +1375,7 @@ Recebida a denúncia contra um deputado por crime cometido no mandato, um partid
 
 **ATENÇÃO**
 
-Antes da Emenda Constitucional nº 35, de 2001, o texto exigia licença prévia da Casa para processar o parlamentar; materiais antigos podem trazer essa regra. Crimes praticados antes da diplomação não admitem sustação.
+Antes da Emenda Constitucional nº 35, de 2001, a Constituição exigia prévia licença da Casa para o processamento criminal do parlamentar. O mecanismo atual de sustação substituiu esse modelo. O alcance da competência penal por prerrogativa de função deve ser lido junto com o § 1º e com a camada JURISPRUDÊNCIA; este bloco explica especificamente o mecanismo dos §§ 3º a 5º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1374,9 +1387,9 @@ Antes da Emenda Constitucional nº 35, de 2001, o texto exigia licença prévia 
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Afirmacao historica confirmada (a redacao original exigia previa licenca da Casa para o processamento criminal; EC 35/2001). Ajuste para nao sugerir que todo processo penal contra parlamentar tramita no STF independentemente do alcance atual do foro; o bloco explica o mecanismo dos §§ 3º a 5º. Citacao da emenda no formato canonico "nº 35, de 2001" (ajuste formal autorizado). HISTORICAL_CLAIM_UNVERIFIED remanescente (o detector reage a "Antes da...") resolvido como HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE pela decisao humana complementar; a informacao historica nao foi suprimida. (seções: atencao, o_que_significa)
 
 ---
 
@@ -1387,7 +1400,7 @@ Antes da Emenda Constitucional nº 35, de 2001, o texto exigia licença prévia 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 172 palavras · 1404 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 172 palavras · 1401 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma de protecao ao sigilo das fontes do parlamentar.
 
 **O QUE DIZ**
@@ -1421,18 +1434,18 @@ O parágrafo trata de uma dispensa: não proíbe o parlamentar de testemunhar se
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: distingue possibilidade de ser chamado, dispensa de revelar informacoes recebidas ou prestadas em razao do mandato e a identidade das pessoas, e fatos sem relacao com o mandato. v1 mantida byte-identica.
 
 ---
 
 ### Art. 53, § 8º — Imunidades durante o estado de sítio
 
-- **TARGET:** `CF88:ART.53:PAR.8` · `ENTENDA/CF88:ART.53:PAR.8/BASE/1`
+- **TARGET:** `CF88:ART.53:PAR.8` · `ENTENDA/CF88:ART.53:PAR.8/BASE/2`
 - **DISPLAY TITLE:** Art. 53, § 8º — Imunidades durante o estado de sítio
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.53`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1627 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1663 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com quorum de dois tercos e hipotese restrita de suspensao das imunidades.
 
 **O QUE DIZ**
@@ -1441,11 +1454,11 @@ O § 8º mantém as imunidades de deputados e senadores durante o estado de sít
 
 **O QUE SIGNIFICA**
 
-O estado de sítio permite restringir garantias de toda a população. O parágrafo impede que essa situação seja usada para silenciar o Parlamento.
+Durante o estado de sítio, as imunidades parlamentares continuam vigentes.
 
-A suspensão exige três condições ao mesmo tempo: decisão da própria Casa por dois terços dos membros; atos praticados fora do recinto do Congresso; e incompatibilidade desses atos com a execução do estado de sítio.
+O § 8º permite sua suspensão somente quando três requisitos aparecem conjuntamente: aprovação de dois terços dos membros da Casa respectiva, prática do ato fora do recinto do Congresso Nacional e incompatibilidade desse ato com a execução da medida.
 
-Manifestações feitas dentro do Congresso continuam protegidas mesmo nessas circunstâncias.
+Como a hipótese constitucional de suspensão está limitada a atos praticados fora do recinto do Congresso, o mecanismo do § 8º não alcança atos praticados dentro dele.
 
 **EXEMPLO PRÁTICO**
 
@@ -1453,7 +1466,7 @@ Durante um estado de sítio, um deputado convoca, nas ruas, atos que dificultam 
 
 **ATENÇÃO**
 
-A suspensão não é automática nem decidida pelo Executivo: depende de votação da própria Casa. E não atinge o que o parlamentar diz ou faz no recinto do Congresso.
+A suspensão não é automática. Ela depende do voto de dois terços dos membros da Casa respectiva e somente pode ocorrer na hipótese delimitada pelo próprio § 8º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1464,9 +1477,9 @@ A suspensão não é automática nem decidida pelo Executivo: depende de votaç�
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: que sejam incompatíveis com a execução da medida)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: que sejam incompatíveis com a execução da medida); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de dois terços dos membros da casa respectiva)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas finalidade e generalizacao desnecessarias ("O estado de sitio permite restringir garantias de toda a populacao" e "impede que essa situacao seja usada para silenciar o Parlamento"). O QUE SIGNIFICA e ATENCAO substituidos; exemplo e glossario mantidos. (seções: atencao, o_que_significa)
 
 ---
 
@@ -1476,46 +1489,48 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 54 — Incompatibilidades dos parlamentares
 
-- **TARGET:** `CF88:ART.54` · `ENTENDA/CF88:ART.54/BASE/1`
+- **TARGET:** `CF88:ART.54` · `ENTENDA/CF88:ART.54/BASE/2`
 - **DISPLAY TITLE:** Art. 54 — Incompatibilidades dos parlamentares
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1664 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 307 palavras · 2312 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as vedacoes se dividem por marco temporal (diplomacao e posse), cada grupo com bloco proprio.
 
 **O QUE DIZ**
 
-O art. 54 lista o que deputados e senadores não podem fazer. Um grupo de proibições vale desde a expedição do diploma; outro, desde a posse. As vedações envolvem contratos com o poder público, cargos e funções em entidades públicas, empresas favorecidas por contratos públicos, patrocínio de causas e acúmulo de mandatos eletivos.
+O art. 54 estabelece incompatibilidades aplicáveis a Deputados e Senadores em dois momentos diferentes. Algumas proibições começam com a expedição do diploma; outras, com a posse. Elas envolvem contratos e vínculos com as entidades indicadas pelo artigo, determinados cargos e funções e empresas favorecidas por contrato com pessoa jurídica de direito público. Também envolvem o patrocínio de causas em que essas entidades sejam interessadas e a titularidade simultânea de mais de um cargo ou mandato público eletivo.
 
 **O QUE SIGNIFICA**
 
-As incompatibilidades evitam conflito de interesses: quem vota leis e fiscaliza o governo não deve manter vínculos que o tornem dependente do próprio poder público.
+O artigo utiliza dois marcos temporais.
 
-O artigo usa dois momentos. A partir da diplomação, valem as vedações sobre contratos e cargos nas entidades públicas. A partir da posse, as proibições ficam mais amplas, alcançando a propriedade e a direção de empresas favorecidas, o patrocínio de causas contra essas entidades e a titularidade de mais de um mandato.
+Desde a expedição do diploma, aplicam-se as vedações do inciso I, relativas a determinados contratos e a cargos, funções ou empregos remunerados nas entidades ali indicadas.
 
-Desrespeitar qualquer delas leva à perda do mandato (art. 55, I).
+Desde a posse, passam a valer também as proibições do inciso II, relativas às situações nele enumeradas, como determinados vínculos com empresas, patrocínio de causas em que as entidades referidas sejam interessadas e a titularidade de mais de um cargo ou mandato público eletivo.
+
+A violação dessas proibições constitui hipótese de perda do mandato pelo art. 55, I. Nos termos do art. 55, § 2º, essa perda é decidida pela respectiva Casa, por maioria absoluta, mediante provocação prevista no dispositivo e com garantia de ampla defesa.
 
 **EXEMPLO PRÁTICO**
 
-Um deputado eleito que é diretor de empresa beneficiada por contrato com um ministério precisa deixar essa direção até a posse, sob pena de incorrer na vedação do inciso II.
+Um Deputado eleito permanece diretor de empresa que goza de favor decorrente de contrato com a União. Como essa vedação se aplica desde a posse, ele precisa deixar a situação incompatível antes de assumir o mandato para não incidir na hipótese do art. 54, II.
 
 **ATENÇÃO**
 
-Incompatibilidade não se confunde com inelegibilidade: a primeira impede certas atividades durante o mandato; a segunda impede a própria candidatura.
+As incompatibilidades do art. 54 possuem marcos distintos: algumas começam com a expedição do diploma e outras somente com a posse. Elas também não se confundem com inelegibilidade, que diz respeito às condições para disputar ou exercer validamente uma candidatura.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Incompatibilidade*: proibição de exercer certas atividades ou ter certos vínculos durante o mandato.
+- *Incompatibilidade*: proibição constitucional de manter determinada atividade, vínculo ou situação a partir do marco estabelecido pelo art. 54.
 - *Posse*: ato formal de entrada no exercício do mandato.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um deputado eleito que é diretor de empresa beneficiada por )
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de mais de um cargo ou mandato público); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de mais de um cargo ou mandato público); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Como essa vedação se aplica desde a posse, ele precisa deixa)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo, ATENCAO e glossario "Incompatibilidade" substituidos: "em que essas entidades sejam interessadas" no lugar de "contra essas entidades"; perda do mandato decidida pela Casa (art. 55, par. 2), nao automatica; marcos da diplomacao e da posse. Complementacao autorizada: frase final do O QUE DIZ dividida (elimina LONG_SENTENCE). "Posse" mantido. (seções: atencao, exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -1526,7 +1541,7 @@ Incompatibilidade não se confunde com inelegibilidade: a primeira impede certas
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.54`, `CF88:ART.54:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1785 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 213 palavras · 1782 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com alineas a e b, com excecao expressa (clausulas uniformes).
 
 **O QUE DIZ**
@@ -1561,33 +1576,35 @@ O marco é a diplomação, anterior à posse. As vedações mais amplas do incis
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aceitar ou exercer cargo função ou emprego remunerado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. EXCEPTION_OR_RESSALVA_DROPPED resolvido como EXCEPTION_SEMANTICALLY_PRESENT: o exemplo usa expressamente um contrato padrao, igual ao oferecido aos demais clientes, para ilustrar a excecao do contrato de clausulas uniformes; a ressalva nao foi omitida, o detector nao reconheceu a parafrase. NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
 ### Art. 54, inciso II — Vedações desde a posse
 
-- **TARGET:** `CF88:ART.54:INC.II` · `ENTENDA/CF88:ART.54:INC.II/BASE/1`
+- **TARGET:** `CF88:ART.54:INC.II` · `ENTENDA/CF88:ART.54:INC.II/BASE/2`
 - **DISPLAY TITLE:** Art. 54, inciso II — Vedações desde a posse
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.54`, `CF88:ART.54:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1678 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 268 palavras · 2035 bytes · referências 0
 - **Motivo da seleção:** Bloco: inciso com quatro alineas sobre empresas favorecidas, cargos, patrocinio de causas e acumulo de mandatos.
 
 **O QUE DIZ**
 
-O inciso II proíbe ao parlamentar, desde a posse: ser dono, controlador ou diretor de empresa beneficiada por favor que resulte de contrato com o poder público, ou exercer nela função remunerada; ocupar cargo de livre exoneração nas entidades do inciso I, a; patrocinar causa de interesse dessas entidades; e ser titular de mais de um cargo ou mandato público eletivo.
+O inciso II proíbe ao parlamentar, desde a posse: ser dono, controlador ou diretor de empresa beneficiada por favor que resulte de contrato com pessoa jurídica de direito público, ou exercer nela função remunerada; ocupar cargo de livre exoneração nas entidades do inciso I, a; patrocinar causa de interesse dessas entidades; e ser titular de mais de um cargo ou mandato público eletivo.
 
 **O QUE SIGNIFICA**
 
-Com a posse, as restrições ficam mais rigorosas.
+A partir da posse passam a valer as incompatibilidades previstas no inciso II.
 
-A alínea a atinge a ligação do parlamentar com empresas que recebem vantagem por contrato com o poder público, ainda que ele não assine contrato pessoalmente.
+A alínea “a” alcança a situação em que o parlamentar seja proprietário, controlador ou diretor de empresa que goze de favor resultante de contrato com pessoa jurídica de direito público, bem como o exercício de função remunerada nessa empresa.
 
-A alínea c impede, por exemplo, que o parlamentar atue como advogado em causas em que entidades públicas tenham interesse.
+A alínea “b” alcança os cargos ou funções demissíveis ad nutum nas entidades referidas no inciso I, “a”.
 
-A alínea d impede acumular mandatos: não se pode ser, ao mesmo tempo, deputado e vereador.
+A alínea “c” impede o parlamentar de patrocinar causa em que qualquer dessas entidades seja interessada.
+
+A alínea “d” impede a titularidade simultânea de mais de um cargo ou mandato público eletivo.
 
 **EXEMPLO PRÁTICO**
 
@@ -1595,7 +1612,7 @@ Uma deputada advogada não pode, depois da posse, representar um cliente em aç�
 
 **ATENÇÃO**
 
-A proibição da alínea a fala em empresa que goze de favor decorrente de contrato público: não é qualquer empresa da qual o parlamentar seja sócio. O exercício de cargo de Ministro e outros previstos no art. 56 não gera perda do mandato.
+A vedação da alínea “a” não alcança qualquer empresa da qual o parlamentar seja proprietário ou diretor: o texto exige o favor decorrente de contrato com pessoa jurídica de direito público. As situações do art. 56 possuem disciplina constitucional própria e não devem ser tratadas como uma exceção genérica às vedações do art. 54.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1606,9 +1623,9 @@ A proibição da alínea a fala em empresa que goze de favor decorrente de contr
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de mais de um cargo ou mandato público)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: contrato com pessoa jurídica de direito público ou); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: ad nutum nas entidades referidas no inciso i)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ ajustado ("contrato com pessoa juridica de direito publico" no lugar de "contrato com o poder publico"); O QUE SIGNIFICA e ATENCAO substituidos: as quatro alineas explicadas, sem "entidades publicas" como sinonimo das entidades do inciso I, a, e sem tratar o art. 56 como excecao generica. Complementacao autorizada: "favor resultante de contrato" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). Exemplo e glossario mantidos. (seções: atencao, o_que_diz, o_que_significa)
 
 ---
 
@@ -1618,12 +1635,12 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 55 — Perda do mandato de deputado ou senador
 
-- **TARGET:** `CF88:ART.55` · `ENTENDA/CF88:ART.55/BASE/1`
+- **TARGET:** `CF88:ART.55` · `ENTENDA/CF88:ART.55/BASE/2`
 - **DISPLAY TITLE:** Art. 55 — Perda do mandato de deputado ou senador
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1630 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 227 palavras · 1712 bytes · referências 0
 - **Motivo da seleção:** Visao geral das hipoteses de perda do mandato; decoro, competencia para decidir e renuncia tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -1636,11 +1653,11 @@ O artigo enumera as causas e, nos parágrafos, define quem decide em cada caso e
 
 Algumas causas exigem um juízo político da Casa, como a quebra de decoro. Outras decorrem de fatos objetivos, como a falta reiterada às sessões ou uma decisão da Justiça Eleitoral.
 
-Em todos os casos, é assegurada ampla defesa. O § 4º impede que a renúncia seja usada para escapar do processo de cassação.
+Em todos os casos, é assegurada ampla defesa. O § 4º determina que os efeitos da renúncia fiquem suspensos enquanto estiver pendente a deliberação sobre processo que vise ou possa levar à perda do mandato.
 
 **EXEMPLO PRÁTICO**
 
-Um deputado falta, sem licença, a mais de um terço das sessões ordinárias de uma sessão legislativa. A Mesa da Câmara declara a perda do mandato, assegurada a defesa.
+Um deputado fica ausente, sem licença ou missão autorizada, de pelo menos um terço das sessões ordinárias de uma sessão legislativa. Nessa hipótese, a perda do mandato é declarada pela Mesa da Câmara, assegurada ampla defesa.
 
 **ATENÇÃO**
 
@@ -1649,16 +1666,15 @@ Perda do mandato não é o mesmo que suspensão de direitos políticos, embora e
 **PALAVRAS DIFÍCEIS**
 
 - *Decoro parlamentar*: padrão de conduta ética exigido de quem exerce mandato.
-- *Cassação*: perda do mandato decidida pela Casa legislativa.
 - *Ampla defesa*: direito de usar todos os meios legítimos para se defender.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: processo que vise ou possa levar à perda)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Overview adequado; duas correcoes: o § 4º passa a ser descrito pelo efeito do texto (efeitos da renuncia suspensos) e o exemplo usa "pelo menos um terco" em vez de "mais de um terco", que estreitava a hipotese do inciso III. Glossario: "Cassacao" removido (decisao complementar). Restante mantido. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -1711,12 +1727,12 @@ A solução não pode ser obtida pela leitura isolada do inciso VI: é preciso c
 
 ### Art. 55, § 1º — O que é incompatível com o decoro parlamentar
 
-- **TARGET:** `CF88:ART.55:PAR.1` · `ENTENDA/CF88:ART.55:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.55:PAR.1` · `ENTENDA/CF88:ART.55:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 55, § 1º — O que é incompatível com o decoro parlamentar
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.55`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 221 palavras · 1702 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 208 palavras · 1676 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo que define parte do conceito de quebra de decoro.
 
 **O QUE DIZ**
@@ -1725,11 +1741,9 @@ O § 1º aponta duas condutas contrárias ao decoro parlamentar, que se somam à
 
 **O QUE SIGNIFICA**
 
-Decoro é a conduta compatível com a dignidade do mandato. A Constituição não o define por inteiro: indica dois casos e deixa os demais para o regimento interno de cada Casa.
+A Constituição não esgota as hipóteses de quebra de decoro parlamentar. Além dos casos definidos no regimento interno de cada Casa, o § 1º menciona expressamente duas situações: o abuso das prerrogativas asseguradas ao parlamentar e a percepção de vantagens indevidas.
 
-O primeiro caso é o abuso de prerrogativas, como usar as imunidades para fins que não têm relação com a função. O segundo é receber vantagens indevidas, por exemplo em troca de votos.
-
-A quebra de decoro leva à perda do mandato decidida pela Casa (art. 55, II e § 2º).
+O dispositivo deve ser lido com o art. 55, II e § 2º. Quando a perda do mandato decorrer de quebra de decoro, a decisão cabe à respectiva Casa legislativa, assegurada ampla defesa.
 
 **EXEMPLO PRÁTICO**
 
@@ -1737,22 +1751,21 @@ Um deputado que recebe dinheiro de uma empresa para apresentar emendas de seu in
 
 **ATENÇÃO**
 
-O processo por quebra de decoro é político e corre na própria Casa; ele não depende de condenação criminal prévia.
+A quebra de decoro e eventual responsabilidade criminal pelo mesmo fato são questões distintas. O § 1º não exige condenação criminal prévia para que a conduta seja examinada no âmbito parlamentar.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Prerrogativa*: garantia ligada ao cargo, como as imunidades parlamentares.
 - *Vantagem indevida*: benefício que a pessoa não tem direito de receber, em razão da função que exerce.
 - *Decoro parlamentar*: padrão de conduta ética e respeitosa exigido de quem exerce mandato.
-- *Imunidade parlamentar*: garantia que protege o exercício do mandato contra certas responsabilizações e prisões.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: decoro parlamentar além dos casos definidos no regimento)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo correto; retiradas formulacoes interpretativas (definicao fechada de decoro e exemplo de abuso de imunidades). O QUE SIGNIFICA e ATENCAO substituidos; O QUE DIZ e exemplo mantidos. Glossario: "Imunidade parlamentar" removido (TERM_NOT_USED apos o ajuste). (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -1763,7 +1776,7 @@ O processo por quebra de decoro é político e corre na própria Casa; ele não 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.55:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.55`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1811 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1808 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º e 3º distinguem a perda decidida pelo plenario (incisos I, II e VI) e a declarada pela Mesa (incisos III a V).
 
 **O QUE DIZ**
@@ -1798,18 +1811,18 @@ A redação atual do § 2º foi dada pela Emenda Constitucional nº 76, de 2013;
 
 **WARNINGS:** TERM_NOT_USED (palavras_dificeis: Decoro parlamentar)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. A advertencia historica esta confirmada pela EC 76/2013, que alterou expressamente o § 2º do art. 55 e suprimiu o modelo anterior de votacao secreta (HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE). A decisao anterior sobre o art. 55, VI nao e reaberta; este target e §§ 2º e 3º.
 
 ---
 
 ### Art. 55, § 4º — Renúncia durante processo de perda do mandato
 
-- **TARGET:** `CF88:ART.55:PAR.4` · `ENTENDA/CF88:ART.55:PAR.4/BASE/1`
+- **TARGET:** `CF88:ART.55:PAR.4` · `ENTENDA/CF88:ART.55:PAR.4/BASE/2`
 - **DISPLAY TITLE:** Art. 55, § 4º — Renúncia durante processo de perda do mandato
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.55`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 166 palavras · 1340 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1357 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma (incluida pela Emenda Constitucional de Revisao nº 6, de 1994) que impede a renuncia para fugir da cassacao.
 
 **O QUE DIZ**
@@ -1818,19 +1831,19 @@ O § 4º suspende os efeitos da renúncia do parlamentar que responde a processo
 
 **O QUE SIGNIFICA**
 
-Sem esta regra, o parlamentar ameaçado de cassação poderia renunciar para escapar das consequências da perda do mandato e voltar a se candidatar.
+Quando o parlamentar apresenta renúncia enquanto responde a processo que vise à perda do mandato ou que possa levar a ela, a renúncia não produz imediatamente seus efeitos.
 
-Com a renúncia suspensa, o processo continua e a Casa chega à sua decisão final. Só depois se sabe se prevalece a cassação ou a renúncia.
+Esses efeitos ficam suspensos até as deliberações finais previstas nos §§ 2º e 3º.
 
-A regra vale a partir da instauração de processo que possa levar à perda do mandato, e não apenas depois da decisão.
+Portanto, a apresentação da renúncia não encerra, por si só, o procedimento de perda do mandato que já esteja abrangido pelo § 4º.
 
 **EXEMPLO PRÁTICO**
 
-Aberto processo por quebra de decoro contra um deputado, ele apresenta renúncia. A renúncia fica sem efeito até a Câmara concluir o processo; se ele for cassado, a cassação prevalece.
+Durante processo por quebra de decoro contra um deputado, ele apresenta renúncia ao mandato. Os efeitos dessa renúncia ficam suspensos até a deliberação final prevista no art. 55.
 
 **ATENÇÃO**
 
-O parágrafo não proíbe a renúncia; suspende seus efeitos enquanto o processo estiver em andamento. As consequências eleitorais da renúncia estão na legislação eleitoral.
+O § 4º não proíbe a apresentação da renúncia; apenas suspende seus efeitos durante o procedimento nele previsto. Eventuais consequências eleitorais da renúncia não são disciplinadas por este dispositivo.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1842,7 +1855,7 @@ O parágrafo não proíbe a renúncia; suspende seus efeitos enquanto o processo
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas a teleologia de "renunciar para escapar", a afirmacao sobre "voltar a se candidatar" e a formulacao de que a cassacao prevalece sobre a renuncia (coerencia com a v2 aprovada do art. 55). O QUE SIGNIFICA, exemplo e ATENCAO substituidos; glossario mantido. Complementacao autorizada: "responde a processo que vise a perda do mandato ou que possa levar a ela" (a redacao anterior repetia 12 palavras seguidas da Lei Seca; ENTENDA_COPIES_OFFICIAL_TEXT eliminado pela redacao, maior sequencia literal 5). (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -1852,12 +1865,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 56 — Situações que não geram perda do mandato
 
-- **TARGET:** `CF88:ART.56` · `ENTENDA/CF88:ART.56/BASE/1`
+- **TARGET:** `CF88:ART.56` · `ENTENDA/CF88:ART.56/BASE/2`
 - **DISPLAY TITLE:** Art. 56 — Situações que não geram perda do mandato
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 233 palavras · 1748 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 1962 bytes · referências 0
 - **Motivo da seleção:** Visao geral: investidura em cargos e licencas que nao geram perda; a convocacao de suplente e a eleicao para a vaga tem bloco proprio; o § 3º e situado aqui.
 
 **O QUE DIZ**
@@ -1866,19 +1879,21 @@ O art. 56 indica quando o deputado ou senador não perde o mandato: ao ser inves
 
 **O QUE SIGNIFICA**
 
-O artigo funciona como exceção ao art. 54, que proíbe certos cargos: os cargos listados aqui podem ser assumidos sem perda do mandato.
+O art. 56 estabelece situações em que o Deputado ou Senador não perde o mandato.
 
-As licenças também são protegidas. A licença por doença não tem limite de tempo no texto; a licença por interesse particular é sem remuneração e limitada a cento e vinte dias por sessão legislativa.
+No inciso I, isso ocorre quando o parlamentar assume um dos cargos expressamente enumerados pelo dispositivo.
 
-Quem assume um dos cargos do inciso I pode escolher entre a remuneração do mandato e a do cargo (§ 3º).
+No inciso II, a Constituição protege a licença por motivo de doença e a licença para tratar de interesse particular. Nesta última hipótese, a licença deve ser sem remuneração e o afastamento não pode ultrapassar cento e vinte dias por sessão legislativa.
+
+O § 3º estabelece que, na hipótese do inciso I, o parlamentar pode optar pela remuneração do mandato.
 
 **EXEMPLO PRÁTICO**
 
-Um senador nomeado Ministro de Estado se afasta do Senado, mantém o mandato e pode optar por continuar recebendo o subsídio de senador. Seu suplente assume a cadeira.
+Um senador é nomeado Ministro de Estado. O art. 56 permite que ele assuma esse cargo sem perder o mandato, e o § 3º permite que opte pela remuneração do mandato. Nessa hipótese, o suplente é convocado, conforme o § 1º.
 
 **ATENÇÃO**
 
-A lista do inciso I é fechada: um deputado nomeado secretário de Prefeitura de cidade que não seja capital não está amparado por este artigo. A licença por interesse particular acima de cento e vinte dias não está protegida.
+O inciso I enumera os cargos abrangidos pela regra constitucional. Este T1 não estende essa proteção a cargos que não estejam previstos no dispositivo. Na licença para tratar de interesse particular, o limite constitucional é de cento e vinte dias por sessão legislativa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1892,7 +1907,7 @@ A lista do inciso I é fechada: um deputado nomeado secretário de Prefeitura de
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas tres leituras apresentadas como texto: o art. 56 como "excecao ao art. 54", a enumeracao do inciso I como "lista fechada" e a escolha entre duas remuneracoes no § 3º. O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos. Complementacao autorizada: "o afastamento nao pode ultrapassar" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela redacao). (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -1903,7 +1918,7 @@ A lista do inciso I é fechada: um deputado nomeado secretário de Prefeitura de
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.56:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.56`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1608 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1605 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 1º e 2º regulam a substituicao do parlamentar (convocacao do suplente e eleicao quando nao ha suplente).
 
 **O QUE DIZ**
@@ -1937,7 +1952,7 @@ A licença de até cento e vinte dias não gera convocação de suplente pelo §
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de licença superior a cento e vinte dias)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: vaga, investidura nas funcoes do art. 56, licenca superior a cento e vinte dias, ausencia de suplente e mais de quinze meses restantes corretamente distinguidos. v1 mantida byte-identica.
 
 ---
 
@@ -1947,12 +1962,12 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 57 — Funcionamento do Congresso: sessões e reuniões
 
-- **TARGET:** `CF88:ART.57` · `ENTENDA/CF88:ART.57/BASE/1`
+- **TARGET:** `CF88:ART.57` · `ENTENDA/CF88:ART.57/BASE/2`
 - **DISPLAY TITLE:** Art. 57 — Funcionamento do Congresso: sessões e reuniões
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 238 palavras · 1790 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 259 palavras · 1907 bytes · referências 0
 - **Motivo da seleção:** Visao geral do calendario e das reunioes do Congresso; LDO, Mesas, convocacao extraordinaria e pauta extraordinaria tem explicacoes proprias; os demais itens sao situados aqui.
 
 **O QUE DIZ**
@@ -1973,7 +1988,7 @@ Se o dia 2 de fevereiro cair em um sábado, a reunião que inaugura a sessão le
 
 **ATENÇÃO**
 
-As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; materiais anteriores trazem outro calendário. Fora desses períodos, o Congresso só se reúne mediante convocação extraordinária.
+As datas atuais do caput foram fixadas pela Emenda Constitucional nº 50, de 2006. O § 4º prevê ainda sessões preparatórias a partir de 1º de fevereiro, no primeiro ano da legislatura. Fora dos períodos ordinários do caput, o Congresso também pode reunir-se mediante convocação extraordinária nas hipóteses do § 6º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1987,7 +2002,7 @@ As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; mate
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: receber o compromisso do presidente e do vice)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — LIST_ITEM_POSSIBLY_DROPPED (§ 3º, II) resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: formulacao exemplificativa das hipoteses de sessao conjunta, sem pretensao de enumerar os quatro incisos do § 3º. A frase "Fora desses periodos, o Congresso so se reune mediante convocacao extraordinaria" era absoluta demais diante das sessoes preparatorias do § 4º: ATENCAO substituida. EC 50/2006 registrada como fonte oficial da alteracao; citacao no formato canonico "nº 50, de 2006" (ajuste formal autorizado). Microfix nao aplicado. (seções: atencao)
 
 ---
 
@@ -1998,7 +2013,7 @@ As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; mate
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1311 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 157 palavras · 1308 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma que vincula a interrupcao da sessao legislativa a votacao da lei de diretrizes orcamentarias.
 
 **O QUE DIZ**
@@ -2031,7 +2046,7 @@ O parágrafo fala em aprovação do projeto, e não em sanção da lei. A elabor
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: "recesso de meio de ano" e explicacao compativel com o calendario do art. 57. Resolucao antiga EXAMPLE_NUMBER mantida e aplicavel. v1 mantida byte-identica.
 
 ---
 
@@ -2042,7 +2057,7 @@ O parágrafo fala em aprovação do projeto, e não em sanção da lei. A elabor
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1690 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 198 palavras · 1687 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazo de mandato e vedacao de reconducao, frequente em estudo e com controversia interpretativa.
 
 **O QUE DIZ**
@@ -2076,7 +2091,7 @@ Como a vedação se aplica quando a eleição ocorre em legislaturas diferentes 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. A regra textual da eleicao imediatamente subsequente esta corretamente explicada; mudanca de legislatura e aplicacao a Estados e Municipios permanecem fora do nucleo, remetidas a camada JURISPRUDENCIA. Nenhuma jurisprudencia acrescentada.
 
 ---
 
@@ -2087,7 +2102,7 @@ Como a vedação se aplica quando a eleição ocorre em legislaturas diferentes 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1800 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1797 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com dois incisos que separam quem convoca e em que hipoteses, com aprovacao por maioria absoluta no inciso II.
 
 **O QUE DIZ**
@@ -2121,18 +2136,18 @@ A exigência de aprovação por maioria absoluta vale para todas as hipóteses d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: casas em caso de urgência ou interesse público)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como SEMANTIC_ITEM_ALREADY_PRESENT: "ou a maioria dos membros das duas Casas" preserva "a requerimento da maioria dos membros de ambas as Casas"; o elemento constitucional nao foi omitido. NEAR_COPY_MICROFIX nao aplicado.
 
 ---
 
 ### Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária
 
-- **TARGET:** `CF88:ART.57:PAR.7` · `ENTENDA/CF88:ART.57:PAR.7/BASE/1`
+- **TARGET:** `CF88:ART.57:PAR.7` · `ENTENDA/CF88:ART.57:PAR.7/BASE/2`
 - **DISPLAY TITLE:** Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.57:PAR.8`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.57`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1684 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 195 palavras · 1742 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 7º e 8º definem a materia deliberavel na convocacao extraordinaria e a inclusao automatica das medidas provisorias.
 
 **O QUE DIZ**
@@ -2141,15 +2156,15 @@ O § 7º limita a sessão legislativa extraordinária à matéria para a qual o 
 
 **O QUE SIGNIFICA**
 
-Na convocação extraordinária, o Congresso não tem pauta livre: só delibera sobre o que motivou a convocação.
+Na sessão legislativa extraordinária, o Congresso somente pode deliberar sobre a matéria para a qual foi convocado.
 
-A exceção são as medidas provisórias em vigor, que entram na pauta automaticamente, porque têm prazo para ser votadas.
+O § 8º cria uma ressalva: as medidas provisórias que já estiverem em vigor na data da convocação extraordinária são incluídas automaticamente na pauta.
 
-A proibição de pagamento extra impede que a convocação durante o recesso seja usada para gerar remuneração adicional aos parlamentares.
+O § 7º também determina que a convocação extraordinária não gere pagamento de parcela indenizatória em razão da própria convocação.
 
 **EXEMPLO PRÁTICO**
 
-Convocado em janeiro para votar um projeto específico, o Congresso também pode votar as medidas provisórias em vigor naquela data, mas não pode incluir outros projetos sem relação com a convocação.
+Convocado extraordinariamente para deliberar sobre determinada matéria, o Congresso fica limitado ao objeto da convocação, além das medidas provisórias em vigor que sejam automaticamente incluídas na pauta pelo § 8º.
 
 **ATENÇÃO**
 
@@ -2164,9 +2179,9 @@ A vedação de parcela indenizatória pela convocação tem a redação dada pel
 
 —
 
-**WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: automaticamente)
+**WARNINGS:** ABSOLUTE_CLAIM (o_que_significa: automaticamente); ABSOLUTE_CLAIM (exemplo_pratico: automaticamente); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sobre a matéria para a qual foi convocado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e exemplo substituidos: retirada a causalidade "porque tem prazo para ser votadas"; exemplo limitado ao objeto da convocacao e as medidas provisorias do par. 8. Resolucao antiga ABSOLUTE_CLAIM ("automaticamente", do proprio par. 8) mantida e aplicavel. O QUE DIZ, ATENCAO e glossario mantidos. (seções: exemplo_pratico, o_que_significa)
 
 ---
 
@@ -2181,7 +2196,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1760 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 1757 bytes · referências 0
 - **Motivo da seleção:** Visao geral das comissoes: competencias e CPI tem explicacoes proprias; proporcionalidade (§ 1º) e comissao representativa (§ 4º) sao situadas aqui.
 
 **O QUE DIZ**
@@ -2216,29 +2231,29 @@ A expressão "tanto quanto possível" indica que a proporcionalidade é um objet
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: tanto quanto possível a representação proporcional dos parti)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: overview com o carater "tanto quanto possivel" preservado na ATENCAO. Resolucao antiga LAW_DEPENDENCY_OMITTED mantida e aplicavel. v1 mantida byte-identica.
 
 ---
 
 ### Art. 58, § 2º — O que as comissões podem fazer
 
-- **TARGET:** `CF88:ART.58:PAR.2` · `ENTENDA/CF88:ART.58:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.58:PAR.2` · `ENTENDA/CF88:ART.58:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 58, § 2º — O que as comissões podem fazer
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.58`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1769 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 250 palavras · 2091 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com seis incisos de competencias, incluindo o poder conclusivo (inciso I) com recurso de um decimo.
 
 **O QUE DIZ**
 
-O § 2º atribui às comissões, conforme a matéria de sua competência: discutir e votar projetos que dispensem o plenário, na forma do regimento, salvo recurso de um décimo dos membros da Casa; realizar audiências públicas; convocar Ministros de Estado; receber petições e reclamações contra autoridades; solicitar depoimento de autoridades ou cidadãos; e apreciar programas de obras e planos de desenvolvimento.
+O § 2º atribui às comissões, dentro da matéria de sua competência, diferentes funções. Elas podem discutir e votar certos projetos de lei na forma regimental, ressalvado o recurso de um décimo dos membros da Casa; realizar audiências públicas com entidades da sociedade civil; convocar Ministros de Estado para prestar informações relacionadas às suas atribuições; receber petições, reclamações, representações ou queixas de qualquer pessoa sobre atos ou omissões de autoridades ou entidades públicas; solicitar depoimentos de autoridades ou cidadãos; e examinar programas de obras e planos nacionais, regionais e setoriais de desenvolvimento, emitindo parecer sobre eles.
 
 **O QUE SIGNIFICA**
 
-O inciso I traz o chamado poder conclusivo: certos projetos podem ser aprovados pela própria comissão, sem passar pelo plenário. Se um décimo dos membros da Casa recorrer, porém, o plenário volta a decidir.
+O inciso I permite que determinados projetos sejam decididos pela própria comissão quando o regimento dispensar a votação pelo plenário. Se houver recurso de um décimo dos membros da Casa, porém, a matéria deverá ser submetida ao plenário.
 
-Os demais incisos dão às comissões meios de ouvir a sociedade e de fiscalizar o governo: audiências públicas, convocação de ministros, recebimento de reclamações e pedidos de depoimento.
+Os demais incisos atribuem às comissões instrumentos de participação, fiscalização e análise: audiências públicas, convocação de Ministros de Estado, recebimento de manifestações de qualquer pessoa, solicitação de depoimentos e apreciação de programas e planos com emissão de parecer.
 
 **EXEMPLO PRÁTICO**
 
@@ -2250,16 +2265,15 @@ Quais projetos podem ser votados de forma conclusiva é definido pelo regimento 
 
 **PALAVRAS DIFÍCEIS**
 
-- *Poder conclusivo*: possibilidade de a comissão aprovar o projeto sem votação no plenário.
 - *Audiência pública*: reunião aberta para ouvir especialistas, entidades e cidadãos sobre um tema.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: recurso de um décimo dos membros da casa)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: petições reclamações representações ou queixas de qualquer p); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: houver recurso de um décimo dos membros da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ e O QUE SIGNIFICA substituidos: incisos II, III, IV e VI completos (sociedade civil, informacoes inerentes as atribuicoes, representacoes ou queixas de qualquer pessoa sobre atos ou omissoes, emissao de parecer). Complementacao autorizada: "planos nacionais, regionais e setoriais de desenvolvimento" (elimina LIST_ITEM_POSSIBLY_DROPPED). "Poder conclusivo" retirado do glossario. Resolucao antiga LAW_DEPENDENCY_OMITTED nao e mais disparada pela v2 (sem uso), mantida no historico. Exemplo e ATENCAO mantidos. (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2318,12 +2332,12 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 59 — Espécies do processo legislativo
 
-- **TARGET:** `CF88:ART.59` · `ENTENDA/CF88:ART.59/BASE/1`
+- **TARGET:** `CF88:ART.59` · `ENTENDA/CF88:ART.59/BASE/2`
 - **DISPLAY TITLE:** Art. 59 — Espécies do processo legislativo
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 275 palavras · 2137 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 277 palavras · 2250 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista das especies normativas (itens curtos situados aqui) e remissao a lei complementar sobre tecnica legislativa.
 
 **O QUE DIZ**
@@ -2332,15 +2346,15 @@ O art. 59 enumera o que o processo legislativo produz: emendas à Constituição
 
 **O QUE SIGNIFICA**
 
-Cada espécie tem procedimento e função próprios, detalhados nos artigos seguintes.
+O art. 59 reúne sete espécies do processo legislativo, mas cada uma possui disciplina constitucional própria.
 
-A emenda altera a própria Constituição (art. 60). As leis complementares tratam de temas que a Constituição reserva a elas e exigem maioria absoluta (art. 69). As leis ordinárias são a regra geral. A lei delegada é feita pelo Presidente com autorização do Congresso (art. 68). A medida provisória é editada pelo Presidente em caso de relevância e urgência (art. 62).
+A emenda à Constituição segue o procedimento do art. 60. As leis complementares possuem, entre outras características, o quórum previsto no art. 69. As leis delegadas são disciplinadas pelo art. 68, e as medidas provisórias pelo art. 62.
 
-O decreto legislativo e a resolução não passam por sanção: são atos do Congresso ou de cada Casa sobre matérias de sua competência própria.
+Decretos legislativos e resoluções também são espécies previstas pelo art. 59, mas este artigo, sozinho, não define todas as matérias ou procedimentos em que cada uma será utilizada.
 
 **EXEMPLO PRÁTICO**
 
-Para aprovar um tratado que gera encargos ao país, o Congresso edita decreto legislativo; para fixar limites de dívida dos Estados, o Senado edita resolução; para criar um tributo comum, aprova-se lei ordinária.
+Uma proposta de alteração da própria Constituição segue o regime das emendas constitucionais. Uma matéria que a Constituição reserve à lei complementar deverá observar o regime correspondente, inclusive o quórum do art. 69. Já medidas provisórias e leis delegadas possuem regras próprias nos arts. 62 e 68.
 
 **ATENÇÃO**
 
@@ -2348,19 +2362,19 @@ A lista não estabelece hierarquia simples entre as espécies: lei complementar 
 
 **PALAVRAS DIFÍCEIS**
 
-- *Processo legislativo*: conjunto de etapas para a produção das normas previstas no art. 59.
-- *Lei delegada*: lei elaborada pelo Presidente da República por delegação do Congresso.
-- *Resolução*: ato normativo de uma Casa ou do Congresso sobre matéria de sua competência própria.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
-- *Quórum*: número mínimo de presentes ou de votos exigido para uma deliberação.
+- *Processo legislativo*: conjunto constitucional de procedimentos relacionados à elaboração das espécies normativas indicadas no art. 59.
+- *Lei delegada*: espécie legislativa elaborada pelo Presidente da República nos termos da delegação prevista no art. 68.
+- *Resolução*: espécie normativa prevista no art. 59, VII, cujo uso depende da hipótese constitucional correspondente.
+- *Decreto legislativo*: espécie normativa prevista no art. 59, VI, não submetida à sanção presidencial.
+- *Quórum*: número de membros ou votos exigido para determinada deliberação.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Uma matéria que a Constituição reserve à lei complementar de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e glossario substituidos: sem atribuir instrumento a competencias dos arts. 49 e 52; decreto legislativo definido pelo art. 59, VI, sem vinculo generico a competencia exclusiva. Complementacao autorizada: "A emenda a Constituicao" (elimina TRANSITION_IN_CORE). O QUE DIZ e ATENCAO mantidos. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2383,7 +2397,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1727 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 222 palavras · 1724 bytes · referências 0
 - **Motivo da seleção:** Visao geral da iniciativa: o caput lista quem pode apresentar projetos; iniciativa privativa do Presidente e iniciativa popular tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -2417,31 +2431,33 @@ A expressão "na forma e nos casos previstos nesta Constituição" indica que o 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. Alertas das alineas do § 1º resolvidos como OVERVIEW_MAY_SUMMARIZE_CHILDREN: o target e OVERVIEW, informa que o § 1º contem materias de iniciativa reservada ao Presidente e existe bloco proprio para esse paragrafo.
 
 ---
 
 ### Art. 61, § 1º — Iniciativa privativa do Presidente da República
 
-- **TARGET:** `CF88:ART.61:PAR.1` · `ENTENDA/CF88:ART.61:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.61:PAR.1` · `ENTENDA/CF88:ART.61:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 61, § 1º — Iniciativa privativa do Presidente da República
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.61`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 277 palavras · 2331 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 331 palavras · 2885 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos e alineas que reservam ao Presidente a iniciativa de leis sobre Forcas Armadas e organizacao administrativa; vicio de iniciativa e frequente em estudo.
 
 **O QUE DIZ**
 
-O § 1º reserva ao Presidente da República a iniciativa das leis que fixem ou alterem os efetivos das Forças Armadas e das leis sobre: criação de cargos e funções na administração direta e autárquica ou aumento da sua remuneração; organização administrativa e judiciária dos Territórios, bem como sua matéria tributária, seu orçamento, seus serviços e seu pessoal; servidores da União e dos Territórios; organização do Ministério Público e da Defensoria Pública da União e normas gerais para os dos Estados; criação e extinção de Ministérios e órgãos; e militares das Forças Armadas.
+O § 1º reserva ao Presidente da República a apresentação de projetos em determinadas matérias. Entram nessa reserva: a definição ou alteração do efetivo das Forças Armadas; a criação de cargos, funções ou empregos na administração direta e nas autarquias, bem como mudanças em sua remuneração; a disciplina administrativa e judiciária dos Territórios, incluindo tributos, orçamento, serviços e pessoal; o regime jurídico dos servidores da União e dos Territórios, com regras sobre provimento, estabilidade e aposentadoria; a organização tanto do Ministério Público quanto da Defensoria Pública da União e as normas gerais dessas instituições para Estados, Distrito Federal e Territórios; a criação ou extinção de Ministérios e órgãos administrativos; e o regime jurídico dos militares das Forças Armadas, abrangendo provimento, promoções, estabilidade, remuneração, reforma e transferência para a reserva.
 
 **O QUE SIGNIFICA**
 
-Nesses temas, só o Presidente pode apresentar o projeto. A razão está na separação de Poderes: são assuntos ligados à organização e ao funcionamento do próprio Executivo.
+Nessas matérias, a Constituição reserva ao Presidente da República o poder de iniciar o processo legislativo.
 
-Se um parlamentar apresentar projeto sobre um desses temas, há vício de iniciativa, e a lei resultante pode ser considerada inconstitucional.
+A lista alcança temas da Administração federal e dos Territórios, das Forças Armadas e também determinadas regras de organização do Ministério Público e da Defensoria Pública.
 
-Reserva de iniciativa não impede o Congresso de alterar o projeto: as emendas são possíveis, observados os limites de aumento de despesa do art. 63, I.
+Se um projeto sujeito a essa reserva for apresentado por quem não possui a iniciativa constitucional, existe vício de iniciativa.
+
+O Congresso pode apreciar e emendar projetos de iniciativa presidencial dentro dos limites constitucionais. O art. 63, I, contém uma limitação expressa ao aumento de despesa, enquanto outros limites interpretativos pertencem à camada JURISPRUDÊNCIA.
 
 **EXEMPLO PRÁTICO**
 
@@ -2449,7 +2465,7 @@ Um deputado apresenta projeto que cria cargos no quadro de uma autarquia federal
 
 **ATENÇÃO**
 
-A alínea b menciona matéria tributária e orçamentária dos Territórios; a reserva de iniciativa em matéria tributária em geral não decorre deste texto. Se a sanção do Presidente corrige o vício de iniciativa e como a regra se aplica aos Estados são temas de interpretação constitucional.
+A alínea b trata especificamente da matéria tributária e orçamentária dos Territórios; dela não decorre uma reserva presidencial geral para toda matéria tributária. Questões como simetria para os Estados, efeitos da sanção e outros limites às emendas parlamentares pertencem à camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2461,9 +2477,9 @@ A alínea b menciona matéria tributária e orçamentária dos Territórios; a r
 
 - A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do ministério público e da defensoria pública da)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: estabilidade remuneração reforma e transferência para a rese); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: organização do ministério público e da defensoria pública)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Omissao real e generalizacao explicativa excessiva: incluidos "empregos" publicos, Distrito Federal e Territorios na alinea d; retirada a justificativa teleologica de que todos os assuntos seriam ligados ao funcionamento do proprio Executivo; o art. 63, I nao e apresentado como unico limite as emendas. O_QUE_DIZ na redacao complementar da revisao humana (sem mais de 10 palavras consecutivas da Lei Seca), preservando todas as categorias juridicas das alineas a a f; ajuste autorizado em 2026-10-09: "regime juridico" (servidores e militares) e "transferencia para a reserva" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela propria redacao) e "tanto ... quanto" na alinea d (maior sequencia literal 9 < 10). Exemplo e external_layer_notes mantidos. (seções: atencao, o_que_diz, o_que_significa)
 
 ---
 
@@ -2474,7 +2490,7 @@ A alínea b menciona matéria tributária e orçamentária dos Territórios; a r
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.61`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 212 palavras · 1614 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 212 palavras · 1611 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com requisitos percentuais de apoio do eleitorado.
 
 **O QUE DIZ**
@@ -2508,7 +2524,7 @@ A iniciativa popular prevista aqui é para leis, e não para emendas à Constitu
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: décimos por cento dos eleitores de cada um); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa reunir o equivalente a um por cento dos eleitores do)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: um por cento do eleitorado nacional, pelo menos cinco Estados e tres decimos por cento dos eleitores de cada um; Camara dos Deputados; sem extensao a emendas constitucionais. v1 mantida byte-identica.
 
 ---
 
@@ -2518,12 +2534,12 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 62 — Medidas provisórias
 
-- **TARGET:** `CF88:ART.62` · `ENTENDA/CF88:ART.62/BASE/1`
+- **TARGET:** `CF88:ART.62` · `ENTENDA/CF88:ART.62/BASE/2`
 - **DISPLAY TITLE:** Art. 62 — Medidas provisórias
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 228 palavras · 1742 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 1847 bytes · referências 1
 - **Motivo da seleção:** Visao geral do regime das medidas provisorias; vedacoes, prazos, tramitacao, trancamento de pauta, reedicao e efeitos apos a votacao tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -2542,7 +2558,7 @@ O Presidente edita medida provisória criando um programa emergencial. As regras
 
 **ATENÇÃO**
 
-Medida provisória não é lei: é ato com força de lei, sujeito à conversão. O regime atual foi definido pela Emenda Constitucional nº 32, de 2001; materiais anteriores descrevem um regime diferente, com reedições sucessivas.
+Medida provisória não é lei: é ato com força de lei, sujeito ao regime constitucional de conversão. O modelo atual do art. 62 foi estabelecido pela Emenda Constitucional nº 32, de 2001. A redação constitucional anterior previa regime e prazo diferentes, por isso materiais produzidos antes dessa emenda devem ser lidos com cautela.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2556,31 +2572,31 @@ Medida provisória não é lei: é ato com força de lei, sujeito à conversão.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo adequado. ATENCAO substituida para remover a narrativa historica sobre reedicoes sucessivas sem perder a advertencia: o modelo atual foi estabelecido pela EC 32/2001 (registrada como provenance oficial); citacao no formato canonico "nº 32, de 2001" (ajuste formal autorizado). (seções: atencao)
 
 ---
 
 ### Art. 62, § 1º — Matérias vedadas às medidas provisórias
 
-- **TARGET:** `CF88:ART.62:PAR.1` · `ENTENDA/CF88:ART.62:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.1` · `ENTENDA/CF88:ART.62:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 1º — Matérias vedadas às medidas provisórias
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2485 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 2421 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos e alineas que listam os limites materiais das medidas provisorias, com ressalva expressa.
 
 **O QUE DIZ**
 
-O § 1º proíbe medida provisória sobre: nacionalidade, cidadania, direitos políticos, partidos e direito eleitoral; direito penal, processual penal e processual civil; organização do Judiciário e do Ministério Público e garantias de seus membros; planos plurianuais, diretrizes orçamentárias, orçamento e créditos adicionais e suplementares, com a ressalva do art. 167, § 3º; detenção ou sequestro de bens, poupança ou outros ativos financeiros; matéria reservada a lei complementar; e matéria já tratada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
+O § 1º lista matérias sobre as quais não pode ser editada medida provisória. Entre elas estão nacionalidade, cidadania, direitos políticos, partidos políticos e direito eleitoral; direito penal, processual penal e processual civil; organização do Poder Judiciário e do Ministério Público, inclusive carreira e garantias de seus membros; matérias orçamentárias indicadas no dispositivo, ressalvada a hipótese do art. 167, § 3º; detenção ou sequestro de bens, poupança popular ou outros ativos financeiros; matérias reservadas a lei complementar; e matéria já disciplinada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
 
 **O QUE SIGNIFICA**
 
-Os limites retiram um conjunto de temas do alcance da medida provisória, que é ato editado pelo Presidente.
+O parágrafo estabelece limites materiais à edição de medidas provisórias: determinados assuntos foram retirados desse instrumento pelo próprio texto constitucional.
 
-Alguns temas envolvem direitos, como o direito penal e o eleitoral. Outros envolvem a organização de instituições, como o Judiciário e o Ministério Público, incluídas a carreira e a garantia de seus membros. O inciso II veda medida que vise à detenção ou ao sequestro de bens, de poupança popular ou de outro ativo financeiro, e o inciso IV veda medida sobre matéria já disciplinada em projeto aprovado pelo Congresso e pendente de sanção ou veto.
+Algumas proibições alcançam áreas inteiras, como os temas expressamente enumerados nos incisos e alíneas. Na matéria orçamentária, porém, o próprio texto faz uma ressalva para a hipótese do art. 167, § 3º.
 
-A ressalva do art. 167, § 3º, permite medida provisória para abrir créditos extraordinários em despesas imprevisíveis e urgentes.
+Esse dispositivo permite a abertura de crédito extraordinário para despesas imprevisíveis e urgentes nas situações constitucionalmente previstas.
 
 **EXEMPLO PRÁTICO**
 
@@ -2594,26 +2610,26 @@ A vedação de direito penal se refere ao texto da alínea b; se medidas provis�
 
 - *Crédito extraordinário*: autorização de despesa para situações imprevisíveis e urgentes.
 - *Sequestro de bens*: apreensão judicial ou administrativa de bens.
-- *Limite material*: restrição ao conteúdo que determinado ato pode tratar.
+- *Limite material*: restrição constitucional aos assuntos que determinado instrumento normativo pode disciplinar.
 
 **CAMADA EXTERNA**
 
 - A admissão de medidas provisórias em matéria penal benéfica e o controle dos créditos extraordinários são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diretrizes orçamentárias orçamento e créditos adicionais e s); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a carreira e a garantia de seus membros); TERM_NOT_USED (palavras_dificeis: Limite material)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cidadania direitos políticos partidos políticos e direito el)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Omissoes pequenas ("carreira", "poupanca popular"), repeticao quase literal dos incisos II e IV e TERM_NOT_USED ("Limite material"). O QUE DIZ e O QUE SIGNIFICA substituidos; "Limite material" redefinido e passa a ser usado no texto; exemplo e ATENCAO mantidos; a controversia sobre medida provisoria penal benefica continua fora do T1. (seções: o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 62, § 2º — Medida provisória sobre impostos
 
-- **TARGET:** `CF88:ART.62:PAR.2` · `ENTENDA/CF88:ART.62:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.2` · `ENTENDA/CF88:ART.62:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 2º — Medida provisória sobre impostos
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 1812 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 1911 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com excecoes expressas e efeito temporal ligado ao exercicio financeiro.
 
 **O QUE DIZ**
@@ -2622,11 +2638,13 @@ O § 2º determina que a medida provisória que crie ou aumente impostos só pro
 
 **O QUE SIGNIFICA**
 
-A regra combina a medida provisória com a anterioridade tributária. Para criar ou aumentar imposto por medida provisória, não basta editá-la: é preciso que seja convertida em lei até o fim do ano da edição para produzir efeitos no ano seguinte.
+O § 2º estabelece uma regra específica para medida provisória que institua ou aumente impostos.
 
-As exceções são impostos que a Constituição trata como instrumentos de regulação ou de situações excepcionais: importação, exportação, produtos industrializados, operações financeiras e o imposto extraordinário de guerra.
+Fora das exceções expressamente enumeradas, a medida somente produzirá efeitos no exercício financeiro seguinte se tiver sido convertida em lei até o último dia do exercício em que foi editada.
 
-O parágrafo fala em impostos, uma espécie de tributo, e não em todos os tributos.
+As exceções são exatamente os impostos referidos nos arts. 153, I, II, IV e V, e 154, II.
+
+O dispositivo fala especificamente em impostos, e não em todas as espécies de tributos.
 
 **EXEMPLO PRÁTICO**
 
@@ -2634,32 +2652,32 @@ Uma medida provisória editada em outubro aumenta o imposto de renda. Se for con
 
 **ATENÇÃO**
 
-A regra se soma às demais limitações ao poder de tributar, como os prazos de anterioridade do art. 150, III. As exceções devem ser lidas nos dispositivos citados.
+A regra se soma às demais limitações ao poder de tributar, como os prazos de anterioridade tributária do art. 150, III. As exceções devem ser lidas nos dispositivos citados.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Exercício financeiro*: período de um ano usado para o orçamento e para os tributos, coincidente com o ano civil.
-- *Anterioridade tributária*: regra que adia a cobrança de tributo criado ou aumentado para momento posterior.
-- *Majoração*: aumento de um tributo.
+- *Exercício financeiro*: período de referência utilizado pela Constituição para a aplicação temporal da regra prevista neste dispositivo.
+- *Anterioridade tributária*: limitação constitucional relacionada ao momento em que determinados tributos instituídos ou aumentados podem produzir efeitos ou ser cobrados, conforme as regras constitucionais aplicáveis.
+- *Majoração*: aumento do valor, da alíquota ou da carga de determinado tributo.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Majoração)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sido convertida em lei até o último dia)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e glossario substituidos: sem a qualificacao doutrinaria das excecoes ("instrumentos de regulacao") e sem "coincidente com o ano civil"; "Majoracao" redefinida (elimina TERM_LOW_UTILITY). Complementacao autorizada: "anterioridade tributaria" na ATENCAO (elimina TERM_NOT_USED; termo mantido no glossario). O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória
 
-- **TARGET:** `CF88:ART.62:PAR.3` · `ENTENDA/CF88:ART.62:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.3` · `ENTENDA/CF88:ART.62:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.62:PAR.4`, `CF88:ART.62:PAR.7`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 2060 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 337 palavras · 2645 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 3º, 4º e 7º formam a regra de prazo (sessenta dias, prorrogacao unica, contagem e suspensao no recesso).
 
 **O QUE DIZ**
@@ -2668,11 +2686,13 @@ O § 3º estabelece que a medida provisória perde a eficácia desde a edição 
 
 **O QUE SIGNIFICA**
 
-A medida provisória tem vida limitada: sessenta dias, mais sessenta se a votação não for concluída, totalizando até cento e vinte dias, sem contar o recesso.
+A medida provisória possui prazo constitucional limitado. O prazo inicial é de sessenta dias e pode haver uma única prorrogação por igual período quando a votação não tiver sido encerrada nas duas Casas.
 
-Se não for convertida nesse prazo, perde a eficácia retroativamente, desde a edição, como se não tivesse existido.
+A contagem começa com a publicação e fica suspensa durante os períodos de recesso do Congresso Nacional. Por isso, os sessenta dias mais a eventual prorrogação não devem ser tratados simplesmente como cento e vinte dias corridos.
 
-Para resolver o que aconteceu enquanto ela vigorou, o Congresso deve editar decreto legislativo disciplinando essas relações. Os §§ 11 e 12 tratam do que ocorre se esse decreto não vier.
+Se a medida não for convertida em lei dentro do prazo constitucional, perde eficácia desde a edição, ressalvado o tratamento dado pela própria Constituição às relações jurídicas surgidas durante sua vigência.
+
+O § 3º determina que o Congresso discipline essas relações por decreto legislativo, enquanto os §§ 11 e 12 contêm regras complementares sobre os efeitos dessa perda de eficácia e da conversão com alterações.
 
 **EXEMPLO PRÁTICO**
 
@@ -2680,33 +2700,33 @@ Uma medida provisória publicada em março não é votada em sessenta dias e tem
 
 **ATENÇÃO**
 
-O prazo fica suspenso durante o recesso parlamentar. A prorrogação é automática e única: não depende de novo ato do Presidente nem pode se repetir.
+A prorrogação prevista no § 7º ocorre uma única vez por igual período. Ela não se confunde com reedição da medida provisória, matéria tratada pelo § 10.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Perda de eficácia*: fim dos efeitos de um ato, que deixa de produzir consequências.
-- *Desde a edição*: com efeito retroativo à data em que o ato foi publicado.
-- *Prorrogação*: extensão do prazo por mais um período.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
+- *Perda de eficácia*: cessação da eficácia da medida provisória nos termos constitucionais.
+- *Desde a edição*: expressão que indica que a perda de eficácia se projeta à origem da medida, observadas as regras constitucionais sobre as relações jurídicas formadas durante sua vigência.
+- *Prorrogação*: extensão única do período de vigência prevista no § 7º.
+- *Decreto legislativo*: ato normativo referido pelo § 3º para disciplinar as relações jurídicas decorrentes da medida provisória.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: durante os períodos de recesso do congresso nacional)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, ATENCAO e glossario substituidos: retirada a frase "como se nao tivesse existido"; perda de eficacia desde a edicao ressalvado o tratamento das relacoes juridicas (par. 3, 11 e 12); prazo nao tratado como cento e vinte dias corridos; retirada a afirmacao "nao depende de novo ato do Presidente"; prorrogacao distinta de reedicao. O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso
 
-- **TARGET:** `CF88:ART.62:PAR.5` · `ENTENDA/CF88:ART.62:PAR.5/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.5` · `ENTENDA/CF88:ART.62:PAR.5/BASE/2`
 - **DISPLAY TITLE:** Art. 62, §§ 5º, 8º e 9º — Tramitação da medida provisória no Congresso
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.62:PAR.8`, `CF88:ART.62:PAR.9`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 2018 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 226 palavras · 2086 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 5º, 8º e 9º descrevem o rito (juizo previo dos pressupostos, inicio na Camara e parecer da comissao mista).
 
 **O QUE DIZ**
@@ -2715,13 +2735,13 @@ O § 5º exige que cada Casa, antes de deliberar sobre o mérito, faça um juíz
 
 **O QUE SIGNIFICA**
 
-O rito tem três passos.
+A comissão mista de Deputados e Senadores examina a medida provisória e emite parecer antes da apreciação pelos plenários.
 
-Primeiro, uma comissão mista, formada por deputados e senadores, examina a medida e emite parecer.
+A votação começa na Câmara dos Deputados e depois segue para o Senado Federal.
 
-Depois, a Câmara vota; em seguida, o Senado. Cada plenário vota em sessão própria, e não em sessão conjunta.
+Em cada Casa, antes da deliberação sobre o mérito, deve haver juízo prévio sobre o atendimento dos pressupostos constitucionais da medida provisória, especialmente relevância e urgência.
 
-Antes de discutir o conteúdo, cada Casa verifica se a medida atende aos pressupostos de relevância e urgência. Se entender que não atende, a medida pode ser rejeitada sem exame do mérito.
+Câmara e Senado apreciam a matéria separadamente, e não em sessão conjunta.
 
 **EXEMPLO PRÁTICO**
 
@@ -2729,7 +2749,7 @@ Editada a medida provisória, uma comissão mista é instalada e aprova parecer.
 
 **ATENÇÃO**
 
-O parecer da comissão mista é etapa constitucional, e não mera formalidade regimental. As consequências da falta desse parecer são tema de interpretação constitucional.
+O exame e o parecer da comissão mista estão expressamente previstos no § 9º. As consequências jurídicas da ausência ou de irregularidades nessa etapa pertencem à camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2741,9 +2761,9 @@ O parecer da comissão mista é etapa constitucional, e não mera formalidade re
 
 - A obrigatoriedade do parecer da comissão mista e o controle judicial dos pressupostos de relevância e urgência são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** —
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A estrutura misturava as etapas e acrescentava consequencia nao expressa no § 5º ("rejeitada sem exame do merito"); retirada tambem a qualificacao "nao e mera formalidade regimental". O QUE SIGNIFICA e ATENCAO substituidos; O QUE DIZ, exemplo e glossario mantidos. (seções: atencao, o_que_significa)
 
 ---
 
@@ -2797,12 +2817,12 @@ A leitura literal de "todas as demais deliberações legislativas" não correspo
 
 ### Art. 62, § 10 — Proibição de reeditar medida provisória
 
-- **TARGET:** `CF88:ART.62:PAR.10` · `ENTENDA/CF88:ART.62:PAR.10/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.10` · `ENTENDA/CF88:ART.62:PAR.10/BASE/2`
 - **DISPLAY TITLE:** Art. 62, § 10 — Proibição de reeditar medida provisória
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 164 palavras · 1363 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1380 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma (EC 32/2001) que impede reedicoes sucessivas na mesma sessao legislativa.
 
 **O QUE DIZ**
@@ -2811,15 +2831,15 @@ O § 10 proíbe reeditar, na mesma sessão legislativa, medida provisória rejei
 
 **O QUE SIGNIFICA**
 
-Antes de 2001, medidas provisórias não votadas eram reeditadas repetidamente, e algumas vigoravam por anos sem decisão do Congresso. Este parágrafo encerra essa prática.
+Se uma medida provisória for rejeitada ou perder eficácia pelo decurso do prazo, ela não pode ser reeditada na mesma sessão legislativa.
 
-Se a medida for rejeitada ou caducar, o Presidente não pode editar outra igual no mesmo ano legislativo.
+A vedação é temporalmente limitada à mesma sessão legislativa. Ela não deve ser confundida com a legislatura, que possui duração distinta.
 
-Na sessão legislativa seguinte, o tema pode voltar a ser objeto de medida provisória, desde que atendidos de novo os pressupostos.
+Em sessão legislativa posterior, o § 10 deixa de ser, por si só, o impedimento à edição, sem afastar os demais requisitos e limites constitucionais aplicáveis às medidas provisórias.
 
 **EXEMPLO PRÁTICO**
 
-Uma medida provisória perde a eficácia em agosto sem ter sido votada. O Presidente não pode editar, em setembro, outra medida com o mesmo conteúdo; poderá fazê-lo a partir da próxima sessão legislativa.
+Uma medida provisória perde eficácia durante determinada sessão legislativa. Outra medida que configure sua reedição não pode ser editada nessa mesma sessão.
 
 **ATENÇÃO**
 
@@ -2836,18 +2856,18 @@ A vedação alcança a reedição da mesma medida. Até que ponto uma nova medid
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e exemplo substituidos: retirada a narrativa historica sem fonte versionada; "sessao legislativa" no lugar de "ano legislativo", distinta da legislatura. O QUE DIZ, ATENCAO e glossario mantidos. (seções: exemplo_pratico, o_que_significa)
 
 ---
 
 ### Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações
 
-- **TARGET:** `CF88:ART.62:PAR.11` · `ENTENDA/CF88:ART.62:PAR.11/BASE/1`
+- **TARGET:** `CF88:ART.62:PAR.11` · `ENTENDA/CF88:ART.62:PAR.11/BASE/2`
 - **DISPLAY TITLE:** Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.62:PAR.12`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.62`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1884 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 249 palavras · 2064 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 11 e 12 definem o que vale apos a rejeicao ou perda de eficacia sem decreto legislativo e durante a analise do projeto de lei de conversao.
 
 **O QUE DIZ**
@@ -2856,9 +2876,9 @@ O § 11 determina que, se o decreto legislativo do § 3º não for editado em at
 
 **O QUE SIGNIFICA**
 
-O § 11 dá segurança a quem agiu com base na medida enquanto ela valia: se o Congresso não regular a situação em sessenta dias, esses atos continuam regidos pela medida, mesmo depois de rejeitada.
+O § 11 disciplina as relações jurídicas formadas enquanto a medida provisória esteve em vigor. Se o decreto legislativo previsto no § 3º não for editado no prazo de sessenta dias após a rejeição ou a perda de eficácia, essas relações continuam regidas pela medida provisória.
 
-O § 12 trata da conversão com alterações. Enquanto o Presidente não sancionar ou vetar o projeto de lei de conversão, continua valendo o texto original da medida, e não a versão alterada pelo Congresso.
+O § 12 trata de situação diferente: se o Congresso aprovar projeto de lei de conversão alterando o texto original, a medida provisória permanece integralmente em vigor até que esse projeto seja sancionado ou vetado.
 
 **EXEMPLO PRÁTICO**
 
@@ -2870,17 +2890,17 @@ O § 11 só alcança relações constituídas e atos praticados durante a vigên
 
 **PALAVRAS DIFÍCEIS**
 
-- *Projeto de lei de conversão*: projeto que resulta da aprovação da medida provisória com alterações.
-- *Relação jurídica*: vínculo entre pessoas que gera direitos e deveres.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
+- *Projeto de lei de conversão*: projeto resultante da apreciação de medida provisória com alterações em relação ao texto original.
+- *Relação jurídica*: vínculo juridicamente relevante que produz direitos, deveres ou outros efeitos jurídicos.
+- *Decreto legislativo*: ato normativo referido pelo § 3º para disciplinar as relações jurídicas decorrentes da medida provisória.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de lei de conversão alterando o texto original)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e glossario substituidos: redacao neutra (sem finalidade) e "Decreto legislativo" definido pelo par. 3, sem vinculo generico a competencia exclusiva. O QUE DIZ, exemplo e ATENCAO mantidos. (seções: o_que_significa, palavras_dificeis)
 
 ---
 
@@ -2939,12 +2959,12 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 64 — Início na Câmara e urgência constitucional
 
-- **TARGET:** `CF88:ART.64` · `ENTENDA/CF88:ART.64/BASE/1`
+- **TARGET:** `CF88:ART.64` · `ENTENDA/CF88:ART.64/BASE/2`
 - **DISPLAY TITLE:** Art. 64 — Início na Câmara e urgência constitucional
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 201 palavras · 1554 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 239 palavras · 1826 bytes · referências 0
 - **Motivo da seleção:** Visao geral: Casa iniciadora dos projetos externos e urgencia a pedido do Presidente; os prazos da urgencia tem bloco proprio.
 
 **O QUE DIZ**
@@ -2953,11 +2973,13 @@ O art. 64 determina que os projetos de lei apresentados pelo Presidente da Repú
 
 **O QUE SIGNIFICA**
 
-Projetos que vêm de fora do Congresso entram pela Câmara, a Casa de representação do povo. O Senado atua como Casa revisora.
+O art. 64 determina que os projetos de lei de iniciativa do Presidente da República, bem como do Supremo Tribunal Federal e dos Tribunais Superiores tenham sua discussão e votação iniciadas na Câmara dos Deputados.
 
-Projetos de parlamentares, ao contrário, começam na Casa do autor: o de um senador, no Senado.
+Nessas hipóteses, a Câmara funciona como Casa iniciadora e o Senado poderá atuar posteriormente como Casa revisora dentro do processo legislativo.
 
-A urgência a pedido do Presidente é um instrumento para acelerar projetos do Executivo, com prazos que, descumpridos, travam a pauta.
+O § 1º permite ao Presidente da República solicitar urgência para a apreciação de projetos de sua própria iniciativa.
+
+O art. 64 não estabelece, por si só, onde se inicia a tramitação de todas as demais hipóteses de iniciativa previstas na Constituição.
 
 **EXEMPLO PRÁTICO**
 
@@ -2977,20 +2999,20 @@ A urgência do § 1º só pode ser pedida para projetos de iniciativa do própri
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Casa iniciadora)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de lei de iniciativa do presidente da república)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA substituido: restrito aos tres legitimados do caput; "Casa iniciadora" usada no corpo (elimina TERM_NOT_USED); retirada a regra "projetos de parlamentares comecam na Casa do autor". Complementacao autorizada: "bem como do Supremo Tribunal Federal" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ, exemplo, ATENCAO e glossario mantidos. (seções: o_que_significa)
 
 ---
 
 ### Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente
 
-- **TARGET:** `CF88:ART.64:PAR.2` · `ENTENDA/CF88:ART.64:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.64:PAR.2` · `ENTENDA/CF88:ART.64:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.64:PAR.3`, `CF88:ART.64:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.64`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1797 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 240 palavras · 2023 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º, 3º e 4º formam a regra de prazos (quarenta e cinco dias em cada Casa, dez dias para emendas do Senado, recesso e codigos).
 
 **O QUE DIZ**
@@ -2999,11 +3021,13 @@ O § 2º determina que, pedida a urgência, se a Câmara e o Senado não se mani
 
 **O QUE SIGNIFICA**
 
-Cada Casa tem quarenta e cinco dias para se manifestar, uma depois da outra. Se o prazo passa, a pauta da Casa fica travada, salvo para matérias com prazo constitucional próprio.
+No regime de urgência solicitado pelo Presidente, Câmara e Senado dispõem, sucessivamente, de até quarenta e cinco dias para se manifestar sobre a proposição.
 
-Se o Senado emendar o projeto, a Câmara tem dez dias para apreciar essas emendas.
+Se a respectiva Casa ultrapassar esse prazo, ficam sobrestadas as demais deliberações legislativas, ressalvadas aquelas com prazo constitucional determinado, até que se conclua a votação.
 
-Os prazos não correm no recesso, e projetos de código, como um novo Código Civil, não se sujeitam a essa urgência.
+Se o Senado aprovar emendas, a Câmara possui dez dias para apreciá-las. Quanto ao restante, aplica-se também a disciplina do parágrafo anterior.
+
+Os prazos do § 2º não correm durante o recesso do Congresso e não se aplicam aos projetos de código.
 
 **EXEMPLO PRÁTICO**
 
@@ -3024,7 +3048,7 @@ O sobrestamento não alcança as deliberações que tenham prazo constitucional 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cada qual sucessivamente em até quarenta e cinco)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA substituido: prazos sucessivos de cada Casa, sobrestamento com a ressalva do prazo constitucional determinado, dez dias para as emendas do Senado com remissao ao paragrafo anterior e "os prazos do par. 2 nao se aplicam aos projetos de codigo". Resolucao antiga EXCEPTION_NOT_IN_TEXT mantida e aplicavel. O QUE DIZ, exemplo, ATENCAO e glossario mantidos. (seções: o_que_significa)
 
 ---
 
@@ -3034,12 +3058,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 65 — Revisão do projeto pela outra Casa
 
-- **TARGET:** `CF88:ART.65` · `ENTENDA/CF88:ART.65/BASE/1`
+- **TARGET:** `CF88:ART.65` · `ENTENDA/CF88:ART.65/BASE/2`
 - **DISPLAY TITLE:** Art. 65 — Revisão do projeto pela outra Casa
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1415 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1652 bytes · referências 0
 - **Motivo da seleção:** Artigo com regra autonoma do bicameralismo; o paragrafo unico (retorno a Casa iniciadora) e situado aqui.
 
 **O QUE DIZ**
@@ -3048,33 +3072,35 @@ O art. 65 determina que o projeto aprovado por uma Casa passe pela revisão da o
 
 **O QUE SIGNIFICA**
 
-O artigo expressa o bicameralismo: em regra, a lei só existe se as duas Casas concordarem.
+O projeto de lei aprovado por uma das Casas é submetido à revisão da outra em um único turno de discussão e votação.
 
-A Casa revisora tem três caminhos: aprovar como recebeu, rejeitar ou emendar.
+A Casa revisora pode aprová-lo, rejeitá-lo ou modificá-lo.
 
-Quando há emenda, a Casa iniciadora examina apenas as alterações feitas pela revisora. Ela pode aceitar ou recusar as emendas, e a sua decisão prevalece sobre esses pontos.
+Se o aprovar, o projeto segue para sanção ou promulgação, conforme o caso. Se o rejeitar, é arquivado. Se fizer emendas, o projeto retorna à Casa em que a votação começou.
+
+O art. 65 não detalha, por si só, como a Casa iniciadora apreciará as alterações introduzidas pela Casa revisora.
 
 **EXEMPLO PRÁTICO**
 
-Um projeto aprovado no Senado vai à Câmara, que o emenda. O projeto volta ao Senado, que decide se aceita ou não as alterações da Câmara e depois o envia à sanção.
+Um projeto aprovado no Senado é enviado à Câmara. Se a Câmara fizer emendas, o projeto retorna ao Senado, que foi a Casa iniciadora.
 
 **ATENÇÃO**
 
-A revisão é feita em um só turno. Rejeição pela revisora encerra o projeto: ele não volta à Casa iniciadora para nova votação.
+O projeto rejeitado pela Casa revisora é arquivado nos termos do art. 65. A matéria, porém, pode voltar a ser proposta nas condições do art. 67, que contém regra própria para a apresentação de novo projeto sobre matéria anteriormente rejeitada.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Casa revisora*: Casa que examina o projeto depois da Casa iniciadora.
 - *Turno*: cada rodada de discussão e votação de um projeto.
-- *Arquivamento*: encerramento da tramitação do projeto.
+- *Casa iniciadora*: Casa legislativa em que começou a votação do projeto.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Arquivamento)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Removida a descricao de procedimento que nao consta do art. 65 (exame "apenas" das alteracoes e prevalencia da Casa iniciadora). O QUE SIGNIFICA, exemplo e ATENCAO substituidos (remissao ao art. 67); O QUE DIZ mantido. Complementacoes autorizadas: "projeto de lei" na 1a frase (LAW_DEPENDENCY_OMITTED eliminado) e 2a frase da ATENCAO sem "jamais" (ABSOLUTE_CLAIM eliminado), sem resolucao registrada. Glossario: "Arquivamento" removido (TERM_NOT_USED). "Casa iniciadora" acrescentado (termo presente no T1). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3084,12 +3110,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 66 — Sanção, veto e promulgação
 
-- **TARGET:** `CF88:ART.66` · `ENTENDA/CF88:ART.66/BASE/1`
+- **TARGET:** `CF88:ART.66` · `ENTENDA/CF88:ART.66/BASE/2`
 - **DISPLAY TITLE:** Art. 66 — Sanção, veto e promulgação
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1490 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 276 palavras · 2078 bytes · referências 0
 - **Motivo da seleção:** Visao geral da fase final do processo legislativo; veto, apreciacao do veto e promulgacao tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -3098,25 +3124,27 @@ O art. 66 regula o que acontece depois da votação: a Casa que concluiu a vota�
 
 **O QUE SIGNIFICA**
 
-Sanção é a concordância do Presidente com o projeto, que se transforma em lei. Veto é a discordância, por inconstitucionalidade ou por contrariedade ao interesse público.
+Sanção é a concordância do Presidente da República com o projeto aprovado pelo Legislativo. O veto ocorre quando o Presidente discorda do projeto, total ou parcialmente, por inconstitucionalidade ou por contrariedade ao interesse público.
 
-O veto não é definitivo: o Congresso pode derrubá-lo.
+O veto não encerra necessariamente o processo legislativo, porque o Congresso Nacional pode apreciá-lo e rejeitá-lo nas condições previstas no próprio artigo.
 
-Depois da sanção ou da derrubada do veto, a lei precisa ser promulgada, isto é, ter a sua existência atestada, e publicada para produzir efeitos.
+Depois da sanção ou, quando for o caso, da rejeição do veto, seguem-se as regras constitucionais de promulgação. O § 7º prevê inclusive quem deve promulgar a lei caso o Presidente da República não o faça nas hipóteses ali previstas.
+
+O art. 66 não disciplina o momento em que a lei começa a produzir efeitos.
 
 **EXEMPLO PRÁTICO**
 
-Aprovado o projeto, o Senado o envia ao Presidente, que sanciona a maior parte e veta dois artigos. Os artigos vetados voltam ao Congresso para apreciação do veto.
+Depois de aprovado o projeto, a Casa em que a votação terminou o envia ao Presidente da República. Se ele sancionar parte do texto e vetar determinados dispositivos, o veto será submetido à apreciação do Congresso Nacional.
 
 **ATENÇÃO**
 
-Sanção e promulgação são atos diferentes: a sanção transforma o projeto em lei; a promulgação atesta que a lei existe e determina o seu cumprimento.
+Sanção e promulgação são etapas distintas. A sanção corresponde à concordância presidencial com o projeto, inclusive na forma tácita prevista no § 3º. A promulgação é o ato formal que declara a existência da lei resultante do processo legislativo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Sanção*: concordância do Presidente com o projeto, que o transforma em lei.
-- *Veto*: discordância do Presidente com o projeto, total ou parcial.
-- *Promulgação*: ato que atesta a existência da lei e ordena o seu cumprimento.
+- *Sanção*: concordância do Presidente da República com o projeto aprovado.
+- *Veto*: discordância presidencial, total ou parcial, fundada em inconstitucionalidade ou contrariedade ao interesse público.
+- *Promulgação*: ato formal que declara a existência da lei resultante do processo legislativo.
 
 **CAMADA EXTERNA**
 
@@ -3124,18 +3152,18 @@ Sanção e promulgação são atos diferentes: a sanção transforma o projeto e
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a afirmacao "publicada para produzir efeitos" (publicacao e inicio da vigencia nao sao disciplinados pelo art. 66). O QUE SIGNIFICA, exemplo, ATENCAO e glossario (Sancao, Veto, Promulgacao) substituidos; O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita
 
-- **TARGET:** `CF88:ART.66:PAR.1` · `ENTENDA/CF88:ART.66:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.66:PAR.1` · `ENTENDA/CF88:ART.66:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 66, §§ 1º, 2º e 3º — Veto: prazo, motivos, veto parcial e sanção tácita
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.66:PAR.2`, `CF88:ART.66:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 1955 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1927 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 1º, 2º e 3º formam a disciplina do veto pelo Presidente (prazo, comunicacao, alcance do veto parcial e silencio).
 
 **O QUE DIZ**
@@ -3144,13 +3172,11 @@ O § 1º permite ao Presidente vetar o projeto, total ou parcialmente, por incon
 
 **O QUE SIGNIFICA**
 
-O veto tem dois fundamentos possíveis: jurídico, quando o Presidente entende que o projeto é inconstitucional, ou político, quando o considera contrário ao interesse público.
+O Presidente da República pode vetar o projeto por dois fundamentos constitucionais: considerar o texto inconstitucional ou contrário ao interesse público.
 
-O prazo é de quinze dias úteis, e os motivos devem ser comunicados em quarenta e oito horas.
+O veto pode atingir todo o projeto ou apenas parte dele. No veto parcial, porém, o § 2º exige que seja alcançado o texto integral de artigo, parágrafo, inciso ou alínea; não é permitido vetar apenas palavras ou expressões isoladas.
 
-O veto parcial não pode suprimir palavras ou expressões isoladas: precisa atingir um dispositivo inteiro. Isso impede que o Presidente mude o sentido do texto aprovado.
-
-Se o Presidente nada fizer no prazo, ocorre a sanção tácita.
+Se o Presidente permanecer em silêncio durante o prazo constitucional, ocorre a sanção tácita prevista no § 3º.
 
 **EXEMPLO PRÁTICO**
 
@@ -3158,13 +3184,12 @@ O Presidente concorda com um projeto, mas não com um inciso. Ele pode vetar ess
 
 **ATENÇÃO**
 
-O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze dias. Os motivos do veto são dirigidos ao Presidente do Senado porque o veto é apreciado em sessão conjunta, presidida por ele.
+O § 1º fixa quinze dias úteis para o veto e quarenta e oito horas para a comunicação dos seus motivos ao Presidente do Senado Federal. Separadamente, o § 4º determina que o veto seja apreciado em sessão conjunta do Congresso Nacional.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Veto parcial*: veto que atinge apenas parte do projeto.
 - *Sanção tácita*: sanção que decorre do silêncio do Presidente no prazo.
-- *Veto jurídico*: veto fundado na inconstitucionalidade do projeto.
 
 **CAMADA EXTERNA**
 
@@ -3172,7 +3197,7 @@ O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze d
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retiradas teleologia ("impede que o Presidente mude o sentido"), causalidade inferida ("porque o veto e apreciado em sessao conjunta") e rotulos doutrinarios ("juridico"/"politico"). O QUE SIGNIFICA e ATENCAO substituidos; glossario sem "Veto juridico"; O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3183,7 +3208,7 @@ O § 1º conta quinze dias úteis; o § 3º fala em decurso do prazo de quinze d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.66:PAR.5`, `CF88:ART.66:PAR.6`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 242 palavras · 1924 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 242 palavras · 1921 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 4º, 5º e 6º formam a apreciacao do veto (sessao conjunta, prazo, quorum de rejeicao, promulgacao e sobrestamento).
 
 **O QUE DIZ**
@@ -3219,18 +3244,18 @@ A redação atual do § 4º foi dada pela Emenda Constitucional nº 76, de 2013;
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. A advertencia historica esta confirmada pela EC 76/2013, que alterou expressamente o § 4º do art. 66 e aboliu a votacao secreta na apreciacao de veto (HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE).
 
 ---
 
 ### Art. 66, § 7º — Quem promulga a lei
 
-- **TARGET:** `CF88:ART.66:PAR.7` · `ENTENDA/CF88:ART.66:PAR.7/BASE/1`
+- **TARGET:** `CF88:ART.66:PAR.7` · `ENTENDA/CF88:ART.66:PAR.7/BASE/2`
 - **DISPLAY TITLE:** Art. 66, § 7º — Quem promulga a lei
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.66`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1325 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 201 palavras · 1499 bytes · referências 0
 - **Motivo da seleção:** Regra autonoma com prazos e sequencia de autoridades responsaveis pela promulgacao.
 
 **O QUE DIZ**
@@ -3239,11 +3264,13 @@ O § 7º trata da promulgação nos casos de sanção tácita e de veto derrubad
 
 **O QUE SIGNIFICA**
 
-A regra impede que a lei deixe de existir formalmente por omissão do Presidente.
+O § 7º estabelece uma ordem sucessiva para a promulgação nas situações dos §§ 3º e 5º.
 
-A promulgação é atribuída em cadeia: primeiro o Presidente da República; depois o Presidente do Senado; por fim o Vice-Presidente do Senado, cada um com quarenta e oito horas.
+Primeiro, cabe ao Presidente da República promulgar a lei. Se ele não o fizer no prazo de quarenta e oito horas, a competência passa ao Presidente do Senado.
 
-O parágrafo se aplica às situações em que o Presidente não concordou com o projeto ou se omitiu: sanção tácita e derrubada do veto.
+O Presidente do Senado dispõe de igual prazo. Se também não promulgar a lei, caberá ao Vice-Presidente do Senado fazê-lo.
+
+O texto constitucional não fixa expressamente outro prazo de quarenta e oito horas para o Vice-Presidente do Senado.
 
 **EXEMPLO PRÁTICO**
 
@@ -3251,19 +3278,19 @@ O Congresso derruba um veto e envia o texto para promulgação. O Presidente nã
 
 **ATENÇÃO**
 
-O parágrafo trata da promulgação nos casos dos §§ 3º e 5º. Quando o Presidente sanciona expressamente, ele mesmo promulga.
+O § 7º trata exclusivamente da promulgação nas hipóteses dos §§ 3º e 5º. Não se deve confundir promulgação com sanção, que corresponde a etapa distinta do processo legislativo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Promulgação*: ato que atesta a existência da lei e ordena o seu cumprimento.
+- *Promulgação*: ato formal que declara a existência da lei resultante do processo legislativo.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** PARENT_REPETITION (*: CF88:ART.66: 0.25)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: caberá ao vice presidente do senado fazê lo)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, ATENCAO e glossario "Promulgacao" substituidos: ordem sucessiva (Presidente da Republica em quarenta e oito horas, Presidente do Senado em igual prazo, Vice-Presidente do Senado sem prazo expresso); promulgacao distinta de sancao; definicao de Promulgacao identica a do art. 66 (v2). O QUE DIZ e exemplo mantidos. (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3273,12 +3300,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 67 — Reapresentação de projeto rejeitado
 
-- **TARGET:** `CF88:ART.67` · `ENTENDA/CF88:ART.67/BASE/1`
+- **TARGET:** `CF88:ART.67` · `ENTENDA/CF88:ART.67/BASE/2`
 - **DISPLAY TITLE:** Art. 67 — Reapresentação de projeto rejeitado
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 168 palavras · 1316 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 188 palavras · 1462 bytes · referências 0
 - **Motivo da seleção:** Artigo de caput unico com regra autonoma e quorum para excecao.
 
 **O QUE DIZ**
@@ -3287,21 +3314,22 @@ O art. 67 determina que a matéria de projeto de lei rejeitado só possa ser obj
 
 **O QUE SIGNIFICA**
 
-É o chamado princípio da irrepetibilidade. Rejeitado um projeto, o mesmo tema não volta, em regra, a ser apresentado no mesmo ano legislativo.
+O art. 67 estabelece uma restrição à reapresentação, na mesma sessão legislativa, da matéria constante de projeto de lei rejeitado.
 
-A exceção exige apoio amplo: a nova proposta precisa ser assinada pela maioria absoluta dos membros da Câmara ou do Senado.
+Nessa mesma sessão, a matéria somente poderá ser objeto de novo projeto mediante proposta da maioria absoluta dos membros da Câmara dos Deputados ou do Senado Federal.
+
+A regra é limitada à mesma sessão legislativa e não estabelece uma proibição permanente de nova apresentação da matéria.
 
 **EXEMPLO PRÁTICO**
 
-Um projeto sobre jornada de trabalho é rejeitado em maio. Em setembro do mesmo ano, outro projeto sobre a mesma matéria só pode ser apresentado se for subscrito pela maioria absoluta dos deputados ou dos senadores.
+Um projeto de lei é rejeitado durante determinada sessão legislativa. Para que a mesma matéria seja objeto de novo projeto ainda nessa sessão, é necessária proposta da maioria absoluta dos membros de uma das Casas do Congresso Nacional.
 
 **ATENÇÃO**
 
-A regra para projeto de lei é mais flexível que a da emenda constitucional: a proposta de emenda rejeitada não pode ser reapresentada na mesma sessão legislativa em hipótese alguma (art. 60, § 5º).
+A regra do art. 67 é diferente da prevista para emenda à Constituição. Pelo art. 60, § 5º, matéria constante de proposta de emenda rejeitada ou havida por prejudicada não pode ser objeto de nova proposta na mesma sessão legislativa.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Irrepetibilidade*: proibição de reapresentar a mesma matéria em certo período.
 - *Sessão legislativa*: período anual de trabalho do Congresso.
 
 **CAMADA EXTERNA**
@@ -3310,7 +3338,7 @@ A regra para projeto de lei é mais flexível que a da emenda constitucional: a 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: objeto de novo projeto na mesma sessão legislativa)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: "sessao legislativa" no lugar de "ano legislativo"; sem exigencia de assinatura ou subscricao; restricao limitada a mesma sessao legislativa; contraste com o art. 60, par. 5, incluindo "havida por prejudicada". "Irrepetibilidade" retirado do glossario (TERM_NOT_USED; remocao pre-autorizada "salvo alerta contratual"). O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3320,12 +3348,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 68 — Leis delegadas
 
-- **TARGET:** `CF88:ART.68` · `ENTENDA/CF88:ART.68/BASE/1`
+- **TARGET:** `CF88:ART.68` · `ENTENDA/CF88:ART.68/BASE/2`
 - **DISPLAY TITLE:** Art. 68 — Leis delegadas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1462 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 1726 bytes · referências 0
 - **Motivo da seleção:** Visao geral da lei delegada: pedido de delegacao, limites e forma da delegacao, com blocos proprios.
 
 **O QUE DIZ**
@@ -3334,15 +3362,15 @@ O art. 68 estabelece que as leis delegadas são elaboradas pelo Presidente da Re
 
 **O QUE SIGNIFICA**
 
-Na lei delegada, o Congresso transfere ao Presidente, por tempo e conteúdo definidos, o poder de legislar sobre um tema.
+A lei delegada é elaborada pelo Presidente da República depois que ele solicita ao Congresso Nacional a respectiva delegação.
 
-O caminho começa com o pedido do Presidente. O Congresso não delega por iniciativa própria.
+Essa delegação legislativa não é automática: o Congresso define, por resolução, o conteúdo autorizado e os termos de seu exercício.
 
-A delegação tem limites materiais e é feita por resolução, que fixa conteúdo e condições. É um instrumento pouco usado na prática, mas faz parte das espécies do art. 59.
+A Constituição também estabelece matérias que não podem ser delegadas e admite que a própria resolução determine posterior apreciação do projeto pelo Congresso Nacional.
 
 **EXEMPLO PRÁTICO**
 
-O Presidente pede ao Congresso autorização para editar lei sobre a reorganização de incentivos a um setor econômico. Aprovada a resolução, ele edita a lei delegada dentro dos termos fixados.
+O Presidente solicita ao Congresso delegação para legislar sobre determinada matéria que não esteja abrangida pelas vedações do § 1º. Se a delegação for concedida, a resolução do Congresso definirá o conteúdo autorizado e os termos de seu exercício.
 
 **ATENÇÃO**
 
@@ -3350,27 +3378,27 @@ Lei delegada não se confunde com medida provisória: depende de autorização p
 
 **PALAVRAS DIFÍCEIS**
 
-- *Delegação legislativa*: transferência temporária e limitada do poder de legislar ao Presidente.
-- *Resolução*: ato do Congresso ou de uma Casa sobre matéria de sua competência própria.
+- *Delegação legislativa*: autorização constitucional concedida nos termos do art. 68 para que o Presidente da República elabore lei dentro dos limites fixados pelo Congresso Nacional.
+- *Resolução*: ato normativo do Congresso Nacional que, neste artigo, formaliza a delegação e especifica seu conteúdo e os termos de seu exercício.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Delegação legislativa)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e glossario substituidos: retirados "instrumento pouco usado na pratica" e o prazo temporal nao previsto no par. 2; "delegacao legislativa" usada no corpo (elimina TERM_NOT_USED); "Resolucao" definida pelo proprio art. 68. O QUE DIZ e ATENCAO mantidos. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 68, § 1º — Matérias que não podem ser delegadas
 
-- **TARGET:** `CF88:ART.68:PAR.1` · `ENTENDA/CF88:ART.68:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.68:PAR.1` · `ENTENDA/CF88:ART.68:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 68, § 1º — Matérias que não podem ser delegadas
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.68`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 1912 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 1935 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos que listam os limites materiais da delegacao.
 
 **O QUE DIZ**
@@ -3379,11 +3407,13 @@ Pelo § 1º, ficam fora da delegação três grupos. O primeiro reúne os atos d
 
 **O QUE SIGNIFICA**
 
-Algumas matérias são vedadas por pertencerem ao núcleo das funções do próprio Legislativo, como as competências exclusivas e privativas, exercidas por decreto legislativo e resolução.
+O § 1º retira da delegação três grupos de matérias.
 
-Outras são vedadas por envolverem direitos fundamentais e instituições que não devem ficar à disposição de um ato do Executivo, como os direitos individuais e a organização do Judiciário.
+O primeiro compreende os atos de competência exclusiva do Congresso Nacional e os de competência privativa da Câmara dos Deputados ou, conforme o caso, do Senado Federal.
 
-A matéria de lei complementar também fica de fora, porque exige maioria absoluta do Congresso.
+O segundo corresponde às matérias reservadas à lei complementar.
+
+O terceiro reúne as matérias expressamente enumeradas nos incisos I a III: organização do Poder Judiciário e do Ministério Público, carreira e garantias de seus membros; nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e planos plurianuais, diretrizes orçamentárias e orçamentos.
 
 **EXEMPLO PRÁTICO**
 
@@ -3395,28 +3425,27 @@ A lista de vedações é parecida, mas não idêntica, à das medidas provisóri
 
 **PALAVRAS DIFÍCEIS**
 
-- *Competência exclusiva*: atribuição que só o Congresso exerce, sem participação do Presidente.
-- *Direitos individuais*: direitos fundamentais da pessoa, como os previstos no art. 5º.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
+- *Competência exclusiva*: atribuição que a Constituição confere ao Congresso Nacional nos casos por ela previstos.
+- *Direitos individuais*: direitos fundamentais atribuídos à pessoa pela Constituição.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de competência privativa da câmara dos deputados ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e glossario substituidos: os tres grupos de materias sem atribuir instrumento unico as competencias dos arts. 49, 51 e 52 e sem finalidade doutrinaria; "Competencia exclusiva" sem "sem participacao do Presidente"; "Decreto legislativo" retirado. Complementacao autorizada: "ou, conforme o caso, do Senado Federal" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ, exemplo e ATENCAO mantidos. (seções: o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso
 
-- **TARGET:** `CF88:ART.68:PAR.2` · `ENTENDA/CF88:ART.68:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.68:PAR.2` · `ENTENDA/CF88:ART.68:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.68:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.68`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1647 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1680 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º e 3º definem o instrumento da delegacao (resolucao) e a apreciacao do projeto em votacao unica, sem emenda.
 
 **O QUE DIZ**
@@ -3441,8 +3470,8 @@ A proibição de emendas vale para a apreciação prevista no § 3º, e não par
 
 **PALAVRAS DIFÍCEIS**
 
-- *Votação única*: deliberação em uma só votação, sem turnos sucessivos.
-- *Termos da delegação*: limites de conteúdo, tempo e forma fixados na resolução.
+- *Votação única*: deliberação realizada em uma única votação, nos termos do § 3º.
+- *Termos da delegação*: condições e limites de exercício fixados pela resolução do Congresso Nacional.
 
 **CAMADA EXTERNA**
 
@@ -3450,7 +3479,7 @@ A proibição de emendas vale para a apreciação prevista no § 3º, e não par
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a resolução determinar a apreciação do projeto pelo); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A resolução autoriza o Presidente a elaborar lei sobre um pr)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Glossario ajustado: "Termos da delegacao" sem limite temporal e "Votacao unica" com remissao ao par. 3. Demais secoes mantidas; apreciacao posterior continua condicionada a determinacao da resolucao. (seções: palavras_dificeis)
 
 ---
 
@@ -3460,12 +3489,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 69 — Quórum da lei complementar
 
-- **TARGET:** `CF88:ART.69` · `ENTENDA/CF88:ART.69/BASE/1`
+- **TARGET:** `CF88:ART.69` · `ENTENDA/CF88:ART.69/BASE/2`
 - **DISPLAY TITLE:** Art. 69 — Quórum da lei complementar
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1647 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1836 bytes · referências 0
 - **Motivo da seleção:** Artigo de caput unico com regra de quorum que define a lei complementar.
 
 **O QUE DIZ**
@@ -3474,19 +3503,21 @@ O art. 69 estabelece que as leis complementares sejam aprovadas por maioria abso
 
 **O QUE SIGNIFICA**
 
-A lei complementar se distingue da lei ordinária por dois elementos. O primeiro é a matéria: só é exigida quando a Constituição a menciona expressamente. O segundo é o quórum: maioria absoluta, isto é, mais da metade do total de membros de cada Casa.
+O art. 69 estabelece o quórum exigido para a aprovação das leis complementares: maioria absoluta.
 
-A lei ordinária, por sua vez, é aprovada por maioria simples, presente a maioria absoluta dos membros (art. 47).
+Maioria absoluta significa mais da metade do número total de membros da Casa que estiver deliberando, e não apenas mais da metade dos presentes.
 
-Por isso a lei complementar é mais difícil de aprovar e de alterar.
+O art. 69 não define quais matérias precisam ser tratadas por lei complementar. Essa exigência aparece em outros dispositivos da própria Constituição.
+
+O art. 47 contém a regra geral das deliberações legislativas, ressalvando expressamente as situações em que a Constituição exige quórum diferente, como ocorre aqui.
 
 **EXEMPLO PRÁTICO**
 
-Um projeto de lei complementar precisa de votos favoráveis de mais da metade de todos os deputados, ainda que nem todos estejam presentes, e depois de mais da metade de todos os senadores.
+Na Câmara dos Deputados, um projeto de lei complementar somente é aprovado se obtiver votos favoráveis da maioria absoluta dos deputados. Quando o Senado deliberar sobre o projeto, também deverá ser alcançada a maioria absoluta dos seus membros.
 
 **ATENÇÃO**
 
-O quórum de maioria absoluta é para aprovar; a lei complementar também tem matéria própria. Se uma lei ordinária pode tratar de tema não reservado que esteja em lei complementar é questão de interpretação constitucional.
+O art. 69 trata do quórum de aprovação. A relação entre lei complementar e lei ordinária, inclusive a possibilidade de lei ordinária modificar conteúdo inserido em lei formalmente complementar, pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3498,9 +3529,9 @@ O quórum de maioria absoluta é para aprovar; a lei complementar também tem ma
 
 - A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um projeto de lei complementar precisa de votos favoráveis d)
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Quando o Senado deliberar sobre o projeto, também deverá ser)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo (maioria absoluta) correto. Retirados: a ideia de que o art. 69 define as materias reservadas a lei complementar, a afirmacao de que ela e necessariamente "mais dificil de alterar" e o exemplo com ordem obrigatoria Camara -> Senado. O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos; nenhuma hierarquia geral entre lei complementar e lei ordinaria afirmada. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -3515,7 +3546,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1959 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 1956 bytes · referências 0
 - **Motivo da seleção:** Visao geral da fiscalizacao financeira da Uniao; o dever de prestar contas tem explicacao propria.
 
 **O QUE DIZ**
@@ -3551,23 +3582,23 @@ O artigo trata da União. Estados e Municípios têm sistemas próprios de fisca
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: modalidades e parametros da fiscalizacao corretos; Congresso titular do controle externo, com auxilio do TCU; controle interno de cada Poder. v1 mantida byte-identica.
 
 ---
 
 ### Art. 70, parágrafo único — Quem deve prestar contas
 
-- **TARGET:** `CF88:ART.70:PAR.UNICO` · `ENTENDA/CF88:ART.70:PAR.UNICO/BASE/1`
+- **TARGET:** `CF88:ART.70:PAR.UNICO` · `ENTENDA/CF88:ART.70:PAR.UNICO/BASE/2`
 - **DISPLAY TITLE:** Art. 70, parágrafo único — Quem deve prestar contas
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.70`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 166 palavras · 1388 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1534 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo que define o alcance subjetivo do dever de prestar contas, inclusive para particulares.
 
 **O QUE DIZ**
 
-O parágrafo único obriga a prestar contas toda pessoa, física ou jurídica, pública ou privada, que use, arrecade, guarde, gerencie ou administre dinheiro, bens ou valores públicos, ou pelos quais a União responda, e também quem assuma, em nome da União, obrigações de pagamento.
+O parágrafo único obriga a prestar contas qualquer pessoa física ou jurídica, seja pública ou privada, que utilize, arrecade, guarde, gerencie ou administre dinheiro, bens ou valores públicos, ou valores pelos quais a União responda. O dever também alcança quem, em nome da União, assuma obrigações de natureza pecuniária.
 
 **O QUE SIGNIFICA**
 
@@ -3587,16 +3618,16 @@ O dever alcança a parcela de recursos públicos administrada, e não toda a ati
 
 **PALAVRAS DIFÍCEIS**
 
-- *Prestação de contas*: demonstração de como recursos foram recebidos e utilizados.
-- *Natureza pecuniária*: que envolve pagamento em dinheiro.
+- *Prestação de contas*: demonstração da utilização, guarda, gerenciamento ou administração dos recursos sujeitos ao dever constitucional de prestar contas.
+- *Natureza pecuniária*: relacionada a obrigação expressa ou satisfeita em dinheiro.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pessoa física ou jurídica pública ou privada que); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Mesmo sendo entidade privada, deve prestar contas do uso des)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ou privada que utilize arrecade guarde gerencie ou); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Mesmo sendo entidade privada, deve prestar contas do uso des)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ e glossario substituidos: "obrigacoes de natureza pecuniaria" no corpo; glossario alinhado ao texto. Complementacao autorizada: "seja publica ou privada" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE SIGNIFICA, exemplo e ATENCAO mantidos. (seções: o_que_diz, palavras_dificeis)
 
 ---
 
@@ -3611,7 +3642,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1802 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1799 bytes · referências 0
 - **Motivo da seleção:** Visao geral das competencias do TCU; incisos de maior impacto e sustacao de atos e contratos tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -3646,18 +3677,18 @@ O Tribunal auxilia o Congresso, mas não lhe é subordinado nas competências pr
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com o auxílio do tribunal de contas da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: OVERVIEW que sintetiza as competencias por categorias; o inciso IX esta representado em "fixar prazo para correcoes" e o XI nao precisa ser transcrito numa visao geral que nao se apresenta como lista exaustiva dos onze incisos; os dispositivos especificos continuam no corpus. Microfix nao aplicado.
 
 ---
 
 ### Art. 71, inciso I — Parecer prévio sobre as contas do Presidente
 
-- **TARGET:** `CF88:ART.71:INC.I` · `ENTENDA/CF88:ART.71:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.I` · `ENTENDA/CF88:ART.71:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso I — Parecer prévio sobre as contas do Presidente
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 145 palavras · 1242 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 174 palavras · 1450 bytes · referências 0
 - **Motivo da seleção:** Inciso com prazo proprio e natureza opinativa, frequentemente confundido com julgamento.
 
 **O QUE DIZ**
@@ -3666,23 +3697,23 @@ O inciso I dá ao Tribunal a tarefa de examinar as contas apresentadas a cada an
 
 **O QUE SIGNIFICA**
 
-Nas contas do Presidente, o Tribunal não julga: emite parecer técnico, que orienta a decisão.
+Nas contas anuais do Presidente da República, o Tribunal de Contas da União exerce a competência de apreciação e emite parecer prévio.
 
-Quem julga essas contas é o Congresso Nacional (art. 49, IX).
+Esse parecer deve ser elaborado no prazo de sessenta dias contado do recebimento das contas.
 
-O parecer tem peso político e técnico relevante, porque reúne a análise da execução orçamentária e financeira do ano, mas a palavra final é do Legislativo.
+O julgamento das contas presidenciais não cabe ao Tribunal de Contas: é atribuição do Congresso Nacional, conforme o art. 49, IX.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal recebe as contas anuais do governo e, em sessenta dias, emite parecer recomendando a aprovação com ressalvas. O Congresso pode seguir ou não essa recomendação ao julgar.
+Recebidas as contas anuais do Presidente da República, o Tribunal de Contas da União tem sessenta dias, contados desse recebimento, para elaborar o parecer prévio. O julgamento dessas contas fica a cargo do Congresso Nacional (art. 49, IX).
 
 **ATENÇÃO**
 
-Não confundir com o inciso II: as contas dos demais administradores são julgadas pelo próprio Tribunal.
+Não confundir com o inciso II: as contas dos demais administradores e responsáveis abrangidos por aquele dispositivo são julgadas pelo próprio Tribunal.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Parecer prévio*: opinião técnica que antecede e orienta o julgamento de outro órgão.
+- *Parecer prévio*: manifestação emitida pelo Tribunal de Contas da União sobre as contas do Presidente antes do julgamento pelo Congresso Nacional.
 
 **CAMADA EXTERNA**
 
@@ -3690,35 +3721,35 @@ Não confundir com o inciso II: as contas dos demais administradores são julgad
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo, ATENCAO e glossario substituidos: TCU aprecia e emite parecer previo em sessenta dias do recebimento; Congresso julga (art. 49, IX); retirados "peso politico e tecnico" e "aprovacao com ressalvas"; "Parecer previo" identico ao art. 49, IX (v2). Complementacao autorizada: novo exemplo (elimina DUPLICATION com CF88:ART.49:INC.IX v2; similaridade 0,25). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, inciso II — Julgamento das contas de administradores
 
-- **TARGET:** `CF88:ART.71:INC.II` · `ENTENDA/CF88:ART.71:INC.II/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.II` · `ENTENDA/CF88:ART.71:INC.II/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso II — Julgamento das contas de administradores
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 199 palavras · 1660 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 224 palavras · 1901 bytes · referências 0
 - **Motivo da seleção:** Inciso de competencia decisoria propria do TCU, com sancao potencial; distingue-se do parecer do inciso I.
 
 **O QUE DIZ**
 
-O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal. Também cabe ao Tribunal julgar as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos.
+O inciso II atribui ao Tribunal de Contas da União o julgamento das contas dos administradores e demais responsáveis por dinheiro, bens e valores públicos da administração direta e indireta, incluindo as fundações e as sociedades instituídas e mantidas pelo poder público federal. Também alcança as contas de quem der causa a perda, extravio ou outra irregularidade da qual resulte prejuízo ao erário público.
 
 **O QUE SIGNIFICA**
 
-Aqui o Tribunal julga de fato: decide se as contas são regulares ou irregulares.
+Diferentemente do inciso I, aqui o próprio Tribunal exerce a competência constitucional de julgamento das contas.
 
-O julgamento alcança gestores públicos e também quem, mesmo sem ser gestor, causou dano ao erário.
+A regra alcança tanto administradores e responsáveis pelos recursos públicos indicados no dispositivo quanto aqueles que causarem perda, extravio ou outra irregularidade com prejuízo ao erário.
 
-Contas julgadas irregulares podem gerar imputação de débito e multa, com força de título executivo (§ 3º), além de outras consequências previstas em lei.
+Outros dispositivos do art. 71 tratam de sanções, imputação de débito e eficácia executiva das decisões, quando presentes as respectivas hipóteses.
 
 **EXEMPLO PRÁTICO**
 
-O diretor de uma autarquia federal tem as contas do ano examinadas pelo Tribunal, que as julga irregulares por pagamentos sem comprovação do serviço e determina a devolução dos valores.
+Um administrador de entidade federal responsável pela gestão de recursos públicos tem suas contas submetidas ao Tribunal de Contas da União. Havendo irregularidade que produza prejuízo ao erário, aplica-se o regime constitucional pertinente ao julgamento e às consequências previstas nos demais dispositivos do art. 71.
 
 **ATENÇÃO**
 
@@ -3726,9 +3757,8 @@ Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efei
 
 **PALAVRAS DIFÍCEIS**
 
-- *Erário*: conjunto dos recursos financeiros do poder público.
-- *Imputação de débito*: determinação de que o responsável devolva valor aos cofres públicos.
-- *Título executivo*: documento que permite cobrar judicialmente uma dívida de forma direta.
+- *Erário*: conjunto dos recursos financeiros e patrimoniais do poder público.
+- *Imputação de débito*: determinação de que o responsável restitua valor devido aos cofres públicos.
 
 **CAMADA EXTERNA**
 
@@ -3736,35 +3766,35 @@ Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efei
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bens e valores públicos da administração direta e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario substituidos: TCU julga as contas do inciso II, distinto do inciso I; sem a classificacao infraconstitucional "regulares ou irregulares"; "Erario" identico ao art. 71, VIII (v2); "Imputacao de debito" redefinida; "Titulo executivo" retirado (deixou de ser usado). Complementacao autorizada: "as fundacoes e as sociedades" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). ATENCAO mantida. (seções: exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, inciso III — Registro de admissões e aposentadorias
 
-- **TARGET:** `CF88:ART.71:INC.III` · `ENTENDA/CF88:ART.71:INC.III/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.III` · `ENTENDA/CF88:ART.71:INC.III/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso III — Registro de admissões e aposentadorias
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1859 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 221 palavras · 2032 bytes · referências 0
 - **Motivo da seleção:** Inciso com excecao (cargos em comissao) e ressalva (melhorias posteriores); tema de alto impacto previdenciario.
 
 **O QUE DIZ**
 
-O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em comissão. Também examina a legalidade das concessões de aposentadorias, reformas e pensões, ficando de fora as melhorias posteriores que não mudem o fundamento legal da concessão.
+O inciso III atribui ao Tribunal a apreciação, para fins de registro, da legalidade das admissões de pessoal feitas a qualquer título pela administração direta e indireta, inclusive pelas fundações instituídas e mantidas pelo poder público. Ficam fora dessa regra as nomeações para cargos em comissão. O dispositivo também alcança concessões de aposentadorias, reformas e pensões, mas não as melhorias posteriores que mantenham o fundamento legal da concessão.
 
 **O QUE SIGNIFICA**
 
-O Tribunal confere se a admissão de servidores e a concessão de aposentadorias e pensões respeitaram a lei, e só então as registra.
+O Tribunal verifica a legalidade desses atos para decidir sobre o respectivo registro.
 
-Há duas exclusões no texto. As nomeações para cargos em comissão, de livre nomeação e exoneração, não passam por esse registro. E melhorias posteriores no benefício também não, desde que não alterem a base legal da concessão.
+O próprio inciso estabelece duas ressalvas importantes: as nomeações para cargos em comissão não são submetidas a esse registro, e melhorias posteriores em aposentadorias, reformas ou pensões ficam fora dessa apreciação quando não alteram o fundamento legal da concessão.
 
-Se o Tribunal considerar o ato ilegal, nega o registro, e o órgão de origem deve corrigi-lo.
+Este inciso não disciplina, sozinho, todas as consequências posteriores de uma eventual conclusão pela ilegalidade do ato.
 
 **EXEMPLO PRÁTICO**
 
-Um servidor federal se aposenta, e o ato é enviado ao Tribunal. Constatado erro no cálculo, o Tribunal nega o registro, e o órgão precisa rever o valor do benefício.
+Uma aposentadoria concedida a servidor federal é submetida à apreciação do Tribunal para fins de registro. O Tribunal verifica se a concessão atende aos requisitos legais aplicáveis.
 
 **ATENÇÃO**
 
@@ -3772,7 +3802,7 @@ O prazo para o Tribunal examinar a aposentadoria e a necessidade de ouvir o inte
 
 **PALAVRAS DIFÍCEIS**
 
-- *Registro*: ato que confirma a legalidade de admissões e aposentadorias.
+- *Registro*: ato relacionado à apreciação da legalidade das admissões e concessões abrangidas pelo inciso III.
 - *Cargo em comissão*: cargo de livre nomeação e exoneração.
 - *Reforma*: passagem do militar para a inatividade.
 
@@ -3780,20 +3810,20 @@ O prazo para o Tribunal examinar a aposentadoria e a necessidade de ouvir o inte
 
 - O prazo para o registro de aposentadorias e o direito do interessado ao contraditório são temas da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Constatado erro no cálculo, o Tribunal nega o registro, e o )
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O T1 afirmava consequencia que nao esta no inciso III ("o orgao de origem deve corrigi-lo"); os incisos IX e X nao foram usados para criar consequencia automatica. O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario "Registro" substituidos; ATENCAO (prazo e contraditorio) mantida. Complementacao autorizada: O QUE DIZ reformulado sem copia literal (a redacao anterior repetia 15 e 19 palavras seguidas da Lei Seca). (seções: exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal
 
-- **TARGET:** `CF88:ART.71:INC.VIII` · `ENTENDA/CF88:ART.71:INC.VIII/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.VIII` · `ENTENDA/CF88:ART.71:INC.VIII/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1400 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 187 palavras · 1664 bytes · referências 0
 - **Motivo da seleção:** Inciso sancionador com remissao a lei e multa proporcional ao dano.
 
 **O QUE DIZ**
@@ -3802,44 +3832,45 @@ O inciso VIII permite ao Tribunal aplicar aos responsáveis, quando houver despe
 
 **O QUE SIGNIFICA**
 
-O Tribunal tem poder sancionador próprio. Não precisa recorrer ao Judiciário para aplicar a multa.
+A própria Constituição atribui ao Tribunal competência para aplicar aos responsáveis as sanções previstas em lei quando houver ilegalidade de despesa ou irregularidade de contas.
 
-As sanções, porém, precisam estar previstas em lei; o próprio inciso exige que ela preveja multa proporcional ao dano.
+O inciso determina ainda que essa lei estabeleça, entre outras cominações, multa proporcional ao dano causado ao erário.
 
-A decisão que aplica multa tem força de título executivo (§ 3º): se não houver pagamento, o valor pode ser cobrado diretamente na Justiça.
+Quando uma decisão do Tribunal resultar em multa, o § 3º estabelece que ela terá eficácia de título executivo.
 
 **EXEMPLO PRÁTICO**
 
-Um gestor autoriza pagamento indevido a uma empresa. Além de mandar devolver o valor, o Tribunal aplica-lhe multa proporcional ao prejuízo.
+Um gestor pratica irregularidade que causa dano ao erário. Se estiver configurada a hipótese legal aplicável, o Tribunal pode impor a sanção prevista em lei, inclusive multa proporcional ao dano.
 
 **ATENÇÃO**
 
-As sanções concretas e seus limites estão na lei orgânica do Tribunal, cuja versão vigente deve ser consultada.
+As sanções concretamente aplicáveis e seus limites dependem da lei mencionada pelo próprio inciso VIII. Este dispositivo constitucional não identifica, por si só, todas essas sanções.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Sanção*: penalidade aplicada a quem descumpre uma norma.
 - *Cominação*: penalidade prevista em norma.
 - *Título executivo*: documento que permite cobrar judicialmente uma dívida de forma direta.
+- *Erário*: conjunto dos recursos financeiros e patrimoniais do poder público.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: cominações multa proporcional ao dano causado ao erário)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo sancionador correto. Retiradas a identificacao nao fundamentada da lei como "lei organica do Tribunal" e a mistura entre imputacao de debito e multa no exemplo. O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos; nenhum diploma legal especifico identificado sem provenance. Complementacao autorizada: "Erario" acrescentado ao glossario (termo do proprio dispositivo; TECHNICAL_TERM_UNDEFINED eliminado). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, incisos IX e X — Prazo para correção e sustação de atos
 
-- **TARGET:** `CF88:ART.71:INC.IX` · `ENTENDA/CF88:ART.71:INC.IX/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.IX` · `ENTENDA/CF88:ART.71:INC.IX/BASE/2`
 - **DISPLAY TITLE:** Art. 71, incisos IX e X — Prazo para correção e sustação de atos
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** `CF88:ART.71:INC.X`
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1488 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 248 palavras · 1934 bytes · referências 0
 - **Motivo da seleção:** Bloco: incisos IX e X formam uma sequencia (prazo para correcao e sustacao se nao atendido).
 
 **O QUE DIZ**
@@ -3848,19 +3879,21 @@ Os incisos IX e X tratam da reação do Tribunal diante de ilegalidade. Ele pode
 
 **O QUE SIGNIFICA**
 
-Há uma sequência. Primeiro, o Tribunal dá ao órgão a oportunidade de corrigir a ilegalidade. Só se o órgão não agir é que o Tribunal suspende o ato.
+Os incisos IX e X estabelecem uma sequência.
 
-A sustação é medida forte: interrompe diretamente os efeitos do ato administrativo.
+Verificada ilegalidade, o Tribunal assina prazo para que o órgão ou entidade tome as providências necessárias ao exato cumprimento da lei.
 
-O poder de sustar alcança atos. Para contratos, a regra é diferente e está nos §§ 1º e 2º.
+Se a determinação não for atendida, o inciso X autoriza o Tribunal a sustar a execução do ato impugnado e determina a comunicação dessa decisão à Câmara dos Deputados e ao Senado Federal.
+
+Essa disciplina refere-se a atos. Para contratos, os §§ 1º e 2º do art. 71 estabelecem regras próprias.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal verifica que um edital de concurso viola a lei e dá trinta dias para o órgão corrigi-lo. Sem correção, o Tribunal susta o edital e informa as duas Casas do Congresso.
+O Tribunal verifica ilegalidade em determinado ato e fixa prazo para que o órgão responsável adote as providências necessárias. Se a determinação não for atendida, pode ocorrer a sustação da execução do ato nos termos do inciso X, com comunicação à Câmara e ao Senado.
 
 **ATENÇÃO**
 
-A sustação direta pelo Tribunal vale para atos, e não para contratos. A distinção entre os dois é decisiva para saber quem pode suspender.
+O inciso X trata da sustação da execução do ato impugnado. No caso de contrato, o § 1º atribui diretamente ao Congresso Nacional o ato de sustação. O § 2º prevê que, se as medidas ali indicadas não forem efetivadas no prazo constitucional, o Tribunal decidirá a respeito. O alcance dessa expressão pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3871,65 +3904,66 @@ A sustação direta pelo Tribunal vale para atos, e não para contratos. A disti
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a execução do ato impugnado comunicando a decisão)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a execução do ato impugnado comunicando a decisão); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as providências necessárias ao exato cumprimento da lei)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: sequencia ilegalidade-prazo-sustacao do ato-comunicacao; retirado o prazo numerico do exemplo; ATENCAO alinhada ao art. 71, par. 1 (v2), sem fechar o alcance de "decidira a respeito". Complementacao autorizada: "tome as providencias" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
 ### Art. 71, §§ 1º e 2º — Sustação de contratos
 
-- **TARGET:** `CF88:ART.71:PAR.1` · `ENTENDA/CF88:ART.71:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.71:PAR.1` · `ENTENDA/CF88:ART.71:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 71, §§ 1º e 2º — Sustação de contratos
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.71:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.71`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1625 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 1914 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 1º e 2º formam a regra propria para contratos (sustacao pelo Congresso e decisao do Tribunal apos noventa dias).
 
 **O QUE DIZ**
 
-O § 1º atribui diretamente ao Congresso Nacional a sustação de contrato, cabendo-lhe pedir de imediato ao Executivo as medidas adequadas. O § 2º prevê que, se o Congresso ou o Executivo não tomarem essas medidas em noventa dias, o Tribunal decide sobre o caso.
+No caso de contrato, o § 1º atribui diretamente ao Congresso Nacional o ato de sustação e determina que ele solicite imediatamente ao Poder Executivo as medidas cabíveis. O § 2º estabelece que, se as medidas previstas não forem efetivadas pelo Congresso Nacional ou pelo Poder Executivo no prazo de noventa dias, o Tribunal decidirá a respeito.
 
 **O QUE SIGNIFICA**
 
-Para contratos, a Constituição prefere que a decisão de suspender seja política, tomada pelo Congresso, porque envolve relações com particulares e efeitos econômicos.
+A Constituição distingue a sustação de atos da sustação de contratos.
 
-O Tribunal não fica sem ação: se, em noventa dias, nem o Congresso nem o Executivo agirem, a decisão passa a ser dele.
+No inciso X, o Tribunal possui competência para sustar a execução do ato impugnado nas condições ali previstas. No caso de contrato, porém, o § 1º atribui diretamente ao Congresso Nacional o ato de sustação.
 
-É uma regra de reserva: a omissão dos órgãos políticos transfere a decisão ao Tribunal.
+Se, no prazo constitucional de noventa dias, não forem efetivadas as medidas previstas no § 1º pelo Congresso Nacional ou pelo Poder Executivo, o § 2º determina que o Tribunal decida a respeito.
+
+O texto não detalha neste parágrafo qual é todo o alcance dessa decisão do Tribunal.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal aponta irregularidade grave em um contrato de obra. O Congresso não susta o contrato e o Executivo não adota medidas. Passados noventa dias, o Tribunal decide a respeito.
+É identificada irregularidade em determinado contrato. A sustação do contrato cabe diretamente ao Congresso Nacional nos termos do § 1º. Se as medidas previstas no dispositivo não forem efetivadas no prazo de noventa dias, aplica-se a regra do § 2º.
 
 **ATENÇÃO**
 
-O alcance da expressão "decidirá a respeito", inclusive se permite ao Tribunal sustar diretamente o contrato, é tema de interpretação constitucional.
+A Constituição usa a expressão "decidirá a respeito" no § 2º. O alcance dessa expressão, inclusive quanto à possibilidade de sustação direta do contrato pelo Tribunal, pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Sustação*: suspensão dos efeitos de um ato ou contrato.
-- *Contrato administrativo*: acordo firmado pelo poder público com particulares para obras, serviços ou compras.
 
 **CAMADA EXTERNA**
 
 - O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA.
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Contrato administrativo)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirados: a teleologia da "decisao politica", a exigencia de inercia simultanea dos dois orgaos (o § 2º diz "ou"), a ideia de que a competencia "passa" ao Tribunal e a antecipacao do sentido de "decidira a respeito". Explicitada a distincao entre sustacao de ato (inciso X, Tribunal) e de contrato (§ 1º, Congresso). O QUE DIZ, O QUE SIGNIFICA, exemplo e ATENCAO substituidos; glossario sem "Contrato administrativo". (seções: atencao, exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, § 3º — Força das decisões que impõem débito ou multa
 
-- **TARGET:** `CF88:ART.71:PAR.3` · `ENTENDA/CF88:ART.71:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.71:PAR.3` · `ENTENDA/CF88:ART.71:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 71, § 3º — Força das decisões que impõem débito ou multa
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.71`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 160 palavras · 1518 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 150 palavras · 1457 bytes · referências 1
 - **Motivo da seleção:** Paragrafo autonomo com efeito processual relevante (titulo executivo).
 
 **O QUE DIZ**
@@ -3938,19 +3972,19 @@ O § 3º atribui eficácia de título executivo às decisões do Tribunal que im
 
 **O QUE SIGNIFICA**
 
-Título executivo é um documento que permite a cobrança judicial direta, sem a necessidade de um processo prévio para reconhecer a dívida.
+As decisões do Tribunal das quais resulte imputação de débito ou multa têm eficácia de título executivo.
 
-Assim, se o responsável condenado pelo Tribunal a devolver valores ou pagar multa não pagar, a cobrança vai direto para a fase de execução na Justiça.
+Isso permite que a própria decisão sirva de fundamento para a cobrança pela via executiva, sem necessidade de obter previamente outra decisão que reconheça a existência do débito ou da multa.
 
-O parágrafo dá efetividade às decisões do Tribunal, que de outro modo dependeriam de nova discussão judicial.
+O § 3º não identifica quem possui legitimidade para promover essa execução.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal condena um ex-gestor a devolver valores desviados. Sem pagamento, o órgão competente propõe ação de execução usando a própria decisão do Tribunal como título.
+Uma decisão do Tribunal imputa determinado débito a um responsável. Se a obrigação não for cumprida, a própria decisão pode ser utilizada como título executivo na cobrança judicial.
 
 **ATENÇÃO**
 
-O Tribunal não executa a própria decisão: a cobrança é proposta por órgão de representação judicial competente. Quem tem legitimidade para essa cobrança é tema de interpretação constitucional.
+O § 3º estabelece a eficácia executiva da decisão, mas não define quem deve promover judicialmente a cobrança. Essa questão pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3963,7 +3997,7 @@ O Tribunal não executa a própria decisão: a cobrança é proposta por órgão
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O T1 respondia uma questao que depois dizia ser controvertida. Retirados: "O Tribunal nao executa a propria decisao", a identificacao de "orgao de representacao judicial competente" e a teleologia do que ocorreria "de outro modo". O QUE SIGNIFICA, exemplo e ATENCAO substituidos; O QUE DIZ e glossario mantidos; o corpo nao afirma quem executa. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -3973,12 +4007,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 72 — Despesas não autorizadas: atuação da comissão mista
 
-- **TARGET:** `CF88:ART.72` · `ENTENDA/CF88:ART.72/BASE/1`
+- **TARGET:** `CF88:ART.72` · `ENTENDA/CF88:ART.72/BASE/2`
 - **DISPLAY TITLE:** Art. 72 — Despesas não autorizadas: atuação da comissão mista
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1805 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 225 palavras · 1837 bytes · referências 0
 - **Motivo da seleção:** Artigo com rito proprio e prazos; os paragrafos sao situados nesta visao geral.
 
 **O QUE DIZ**
@@ -3987,7 +4021,7 @@ O art. 72 permite que a comissão mista permanente de orçamento (art. 166, § 1
 
 **O QUE SIGNIFICA**
 
-O artigo cria um procedimento rápido para gastos feitos sem autorização orçamentária, inclusive disfarçados de investimentos não programados ou subsídios não aprovados.
+O artigo cria um procedimento rápido para gastos feitos sem autorização orçamentária, inclusive quando se apresentem sob a forma de investimentos não programados ou sob a forma de subsídios não aprovados.
 
 O rito tem três etapas: pedido de esclarecimento à autoridade; consulta ao Tribunal de Contas; proposta de sustação ao Congresso.
 
@@ -4011,9 +4045,9 @@ A proposta de sustação depende de dois requisitos: a irregularidade apontada p
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 1 diante de indícios de despesas não autorizadas)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 1 diante de indícios de despesas não autorizadas); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sob a forma de investimentos não programados ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA ajustado: "disfarcados" substituido por formulacao neutra. Complementacao autorizada: "ou sob a forma de subsidios nao aprovados" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). Sequencia constitucional, prazos de cinco e trinta dias e proposta da comissao ao Congresso preservados. Demais secoes e glossario mantidos. (seções: o_que_significa)
 
 ---
 
@@ -4023,12 +4057,12 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 73 — Composição e organização do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73` · `ENTENDA/CF88:ART.73/BASE/1`
+- **TARGET:** `CF88:ART.73` · `ENTENDA/CF88:ART.73/BASE/2`
 - **DISPLAY TITLE:** Art. 73 — Composição e organização do Tribunal de Contas da União
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 188 palavras · 1515 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 289 palavras · 2242 bytes · referências 0
 - **Motivo da seleção:** Visao geral da composicao do TCU; requisitos, escolha e garantias dos Ministros tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -4037,15 +4071,17 @@ O art. 73 define o Tribunal de Contas da União: nove Ministros, sede no Distrit
 
 **O QUE SIGNIFICA**
 
-O Tribunal tem autonomia administrativa: organiza seus serviços e seu pessoal, de modo semelhante aos tribunais judiciais, por isso a remissão ao art. 96.
+O art. 73 disciplina aspectos da estrutura e da composição do Tribunal de Contas da União.
 
-A jurisdição nacional significa que o Tribunal fiscaliza recursos federais onde quer que sejam aplicados, inclusive quando repassados a Estados e Municípios.
+O órgão possui nove Ministros e quadro próprio de pessoal, tem sede no Distrito Federal e exerce jurisdição em todo o território nacional. A referência territorial significa que sua atuação constitucional não fica limitada ao Distrito Federal, embora suas competências materiais sejam definidas pelos demais dispositivos da Constituição.
 
-A composição combina indicações do Presidente e do Congresso, com vagas reservadas a membros de carreira.
+O artigo também determina que o Tribunal exerça, no que couber, as atribuições previstas no art. 96.
+
+Quanto à composição, um terço dos Ministros é escolhido pelo Presidente da República, com aprovação do Senado Federal, e dois terços são escolhidos pelo Congresso Nacional. Dentro da parcela presidencial, duas escolhas são feitas alternadamente entre auditores e membros do Ministério Público junto ao Tribunal, a partir de lista tríplice apresentada pelo próprio órgão.
 
 **EXEMPLO PRÁTICO**
 
-Um Município recebe verba federal para construir uma escola. O Tribunal de Contas da União pode fiscalizar essa aplicação, mesmo fora de Brasília, porque se trata de recurso da União.
+Embora tenha sede no Distrito Federal, o Tribunal de Contas da União exerce sua jurisdição constitucional em todo o território nacional. A existência dessa jurisdição nacional não significa, por si só, que o Tribunal possa atuar sobre qualquer matéria: suas competências são as atribuídas pela Constituição.
 
 **ATENÇÃO**
 
@@ -4053,27 +4089,27 @@ Os Ministros do Tribunal de Contas não são Ministros de Estado, e o Tribunal n
 
 **PALAVRAS DIFÍCEIS**
 
-- *Jurisdição*: âmbito territorial e material de atuação de um órgão.
+- *Jurisdição*: âmbito de atuação atribuído juridicamente a um órgão; neste artigo, a expressão não significa que o Tribunal integre o Poder Judiciário.
 - *Quadro próprio de pessoal*: conjunto de cargos e servidores do próprio órgão.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: auditores e membros do ministério público junto ao)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A "jurisdicao em todo o territorio nacional" era explicada pela competencia do art. 71, VI, misturando estrutura (art. 73) e competencia fiscalizatoria (art. 71). O QUE SIGNIFICA e exemplo substituidos (registrada a aprovacao do Senado no terco presidencial; preservado o "no que couber" da remissao ao art. 96); glossario "Jurisdicao" substituido; O QUE DIZ e ATENCAO mantidos. Complementacao autorizada: frase da estrutura reformulada sem copia literal (a redacao anterior repetia 15 palavras seguidas da Lei Seca). (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73:PAR.1` · `ENTENDA/CF88:ART.73:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.73:PAR.1` · `ENTENDA/CF88:ART.73:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.73`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1718 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 248 palavras · 1999 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos de requisitos cumulativos; o inciso de idade tem redacao dada por EC (122/2022).
 
 **O QUE DIZ**
@@ -4082,11 +4118,11 @@ O § 1º exige que os Ministros do Tribunal de Contas da União sejam brasileiro
 
 **O QUE SIGNIFICA**
 
-Os requisitos buscam garantir que os Ministros tenham preparo técnico e experiência compatíveis com a função de controle.
+Os quatro requisitos são cumulativos e combinam idade, reputação, conhecimento técnico e experiência profissional.
 
-São cumulativos: faltando um, a nomeação não pode ocorrer.
+A pessoa indicada deve ter mais de trinta e cinco e menos de setenta anos, idoneidade moral e reputação ilibada, conhecimentos notórios em pelo menos uma das áreas mencionadas e mais de dez anos de experiência em função ou atividade profissional que exija esses conhecimentos.
 
-O último requisito liga a experiência profissional aos conhecimentos do inciso anterior: não basta qualquer atividade por dez anos, ela precisa exigir esses saberes técnicos.
+O último requisito está ligado ao anterior: não basta qualquer experiência profissional por mais de dez anos; a atividade deve exigir os conhecimentos técnicos indicados pelo dispositivo.
 
 **EXEMPLO PRÁTICO**
 
@@ -4094,7 +4130,7 @@ Um economista com sessenta e oito anos, reputação ilibada e vinte anos de atua
 
 **ATENÇÃO**
 
-O limite máximo de idade foi alterado pela Emenda Constitucional nº 122, de 2022; materiais anteriores trazem limite diferente. A avaliação de "notórios conhecimentos" é feita por quem indica e por quem aprova o nome.
+O limite máximo de idade foi elevado pela Emenda Constitucional nº 122, de 2022. Antes dessa alteração, o inciso I exigia idade inferior a sessenta e cinco anos. Os requisitos para a função estão no § 1º, enquanto a forma de escolha dos Ministros é tratada pelo § 2º.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4106,20 +4142,20 @@ O limite máximo de idade foi alterado pela Emenda Constitucional nº 122, de 20
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de dez anos de exercício de função ou)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de dez anos de exercício de função ou); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de trinta e cinco e menos de setenta); TERM_NOT_USED (palavras_dificeis: Notório saber)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Afirmacao historica confirmada (EC 122/2022 elevou o limite maximo de idade de 65 para 70 anos; HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE). Retiradas a teleologia e a generalizacao sobre quem "avalia" os notorios conhecimentos. ATENCAO na redacao complementar: sem a sigla do tribunal no corpo, sem referencia jurisprudencial, citacao "nº 122, de 2022". NEAR_COPY_MICROFIX nao aplicado. (seções: atencao, o_que_significa)
 
 ---
 
 ### Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73:PAR.2` · `ENTENDA/CF88:ART.73:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.73:PAR.2` · `ENTENDA/CF88:ART.73:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.73`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 205 palavras · 1645 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 255 palavras · 2029 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos que distribuem as vagas entre Presidente e Congresso e reservam vagas de carreira.
 
 **O QUE DIZ**
@@ -4128,11 +4164,13 @@ O § 2º divide a escolha dos Ministros: um terço pelo Presidente da República
 
 **O QUE SIGNIFICA**
 
-Com nove Ministros, o Presidente escolhe três e o Congresso, seis.
+Como o Tribunal possui nove Ministros, um terço corresponde a três escolhas presidenciais e dois terços correspondem a seis escolhas do Congresso Nacional.
 
-Das três vagas do Presidente, duas são reservadas a membros de carreira técnica: auditores e integrantes do Ministério Público que atua no Tribunal. Nessas, ele escolhe dentro de uma lista de três nomes enviada pelo próprio Tribunal.
+Das três escolhas atribuídas ao Presidente da República, duas devem ocorrer alternadamente entre auditores e membros do Ministério Público junto ao Tribunal, a partir de lista tríplice apresentada pelo próprio Tribunal segundo os critérios de antiguidade e merecimento.
 
-A terceira vaga presidencial é de livre escolha, também sujeita à aprovação do Senado.
+A terceira escolha presidencial não está submetida a essa regra específica de lista tríplice, mas todos os escolhidos devem observar os requisitos constitucionais do § 1º.
+
+As escolhas feitas pelo Presidente da República dependem de aprovação do Senado Federal. O Senado aprova a escolha presidencial; não realiza a escolha em seu lugar.
 
 **EXEMPLO PRÁTICO**
 
@@ -4140,7 +4178,7 @@ Abre-se uma vaga reservada aos auditores. O Tribunal envia ao Presidente lista c
 
 **ATENÇÃO**
 
-O Ministério Público junto ao Tribunal de Contas é um órgão próprio, distinto do Ministério Público da União. A alternância entre as vagas de carreira segue a ordem de vacância.
+O § 2º divide a escolha entre Presidente da República e Congresso Nacional. Os requisitos pessoais para ocupar o cargo estão no § 1º e se aplicam às escolhas previstas neste parágrafo.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4152,20 +4190,20 @@ O Ministério Público junto ao Tribunal de Contas é um órgão próprio, disti
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pelo presidente da república com aprovação do senado)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pelo presidente da república com aprovação do senado); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: auditores e membros do ministério público junto ao); PARENT_REPETITION (*: CF88:ART.73: 0.311)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e ATENCAO substituidos: Senado aprova a escolha presidencial; terceira escolha sem lista triplice, mas sujeita aos requisitos do par. 1; retiradas as afirmacoes externas sobre a natureza do Ministerio Publico junto ao Tribunal e a ordem de vacancia. PARENT_REPETITION informativo (0,311 x CF88:ART.73) aceito pela revisao humana. O QUE DIZ, exemplo e glossario mantidos. (seções: atencao, o_que_significa)
 
 ---
 
 ### Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73:PAR.3` · `ENTENDA/CF88:ART.73:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.73:PAR.3` · `ENTENDA/CF88:ART.73:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.73`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1579 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 193 palavras · 1656 bytes · referências 2
 - **Motivo da seleção:** Paragrafo autonomo de equiparacao (garantias, prerrogativas, impedimentos e remuneracao) com remissao previdenciaria.
 
 **O QUE DIZ**
@@ -4174,15 +4212,17 @@ O § 3º iguala os Ministros do Tribunal de Contas da União aos Ministros do Su
 
 **O QUE SIGNIFICA**
 
-A equiparação dá aos Ministros do Tribunal de Contas independência semelhante à dos magistrados de tribunal superior, como a vitaliciedade e a inamovibilidade.
+O § 3º equipara os Ministros do Tribunal de Contas da União aos Ministros do Superior Tribunal de Justiça quanto a garantias, prerrogativas, impedimentos, vencimentos e vantagens.
 
-Em troca, eles se sujeitam aos mesmos impedimentos, como a proibição de exercer outras atividades incompatíveis com o cargo.
+Isso significa que, nessas matérias, aplica-se aos dois cargos o tratamento jurídico correspondente previsto pela Constituição.
 
-Para aposentadoria e pensão, seguem as regras dos servidores públicos titulares de cargo efetivo (art. 40).
+Para aposentadoria e pensão, o próprio § 3º faz uma remissão específica às normas do art. 40.
+
+A equiparação não transforma os Ministros do Tribunal de Contas em integrantes do Poder Judiciário.
 
 **EXEMPLO PRÁTICO**
 
-Um Ministro do Tribunal de Contas da União só perde o cargo nas hipóteses aplicáveis aos Ministros do Superior Tribunal de Justiça e recebe a mesma remuneração deles.
+Ao analisar as garantias, os impedimentos, os vencimentos ou as vantagens de um Ministro do Tribunal de Contas da União, deve ser considerada a equiparação constitucional estabelecida em relação aos Ministros do Superior Tribunal de Justiça.
 
 **ATENÇÃO**
 
@@ -4191,16 +4231,15 @@ A equiparação não transforma os Ministros do Tribunal de Contas em magistrado
 **PALAVRAS DIFÍCEIS**
 
 - *Equiparação*: atribuição do mesmo tratamento jurídico a cargos diferentes.
-- *Vitaliciedade*: garantia de só perder o cargo nas hipóteses e formas previstas, em regra por decisão judicial.
 - *Impedimento*: proibição de exercer certas atividades ou atuar em certos casos.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os ministros do tribunal de contas da união)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os ministros do tribunal de contas da união); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: os ministros do tribunal de contas da união); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao analisar as garantias, os impedimentos, os vencimentos ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Retirada a formulacao teleologica "Em troca", que tratava garantias e impedimentos como contrapartidas; garantias do art. 95 nao enumeradas. O QUE SIGNIFICA e exemplo substituidos; O QUE DIZ e ATENCAO mantidos. Glossario: "Vitaliciedade" removido (TERM_NOT_USED apos o ajuste). (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -4210,12 +4249,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 74 — Sistema de controle interno
 
-- **TARGET:** `CF88:ART.74` · `ENTENDA/CF88:ART.74/BASE/1`
+- **TARGET:** `CF88:ART.74` · `ENTENDA/CF88:ART.74/BASE/2`
 - **DISPLAY TITLE:** Art. 74 — Sistema de controle interno
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1698 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 301 palavras · 2264 bytes · referências 0
 - **Motivo da seleção:** Visao geral do controle interno integrado dos tres Poderes; dever de comunicar e denuncia por cidadaos tem explicacoes proprias.
 
 **O QUE DIZ**
@@ -4224,11 +4263,11 @@ O art. 74 obriga o Legislativo, o Executivo e o Judiciário a manter, de forma i
 
 **O QUE SIGNIFICA**
 
-O controle interno é a fiscalização feita de dentro: cada Poder acompanha a gestão dos próprios órgãos, de forma contínua.
+O controle interno é o sistema mantido pelos próprios Poderes para acompanhar e avaliar a gestão nas matérias indicadas pelo art. 74.
 
-Ele não se limita a verificar se as regras foram cumpridas; também avalia resultados, ou seja, se os programas alcançaram seus objetivos com bom uso dos recursos.
+Ele não se limita à verificação da legalidade. A Constituição também determina a avaliação de resultados quanto à eficácia e à eficiência da gestão orçamentária, financeira e patrimonial das entidades da administração federal. Essa avaliação alcança ainda a aplicação de recursos públicos por entidades privadas. Além disso, cabe ao sistema o controle das operações, garantias, direitos e haveres mencionados no dispositivo.
 
-O controle interno trabalha em apoio ao externo, fornecendo informações ao Congresso e ao Tribunal de Contas.
+O inciso IV determina ainda que o sistema de controle interno apoie o controle externo no exercício de sua missão institucional.
 
 **EXEMPLO PRÁTICO**
 
@@ -4236,32 +4275,32 @@ A unidade de controle interno de um ministério acompanha a execução de um pro
 
 **ATENÇÃO**
 
-O controle interno não substitui o externo: os dois coexistem, com funções complementares.
+Controle interno e controle externo não se confundem. O art. 70 atribui o controle externo ao Congresso Nacional e prevê também o sistema de controle interno de cada Poder; o art. 71 estabelece que o controle externo é exercido com o auxílio do Tribunal de Contas da União.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Controle interno*: fiscalização que cada Poder faz sobre os seus próprios órgãos.
-- *Plano plurianual*: lei que fixa metas e programas do governo para quatro anos.
+- *Plano plurianual*: instrumento de planejamento previsto na Constituição para estabelecer diretrizes, objetivos e metas da administração pública.
 - *Operação de crédito*: empréstimo ou financiamento contratado pelo poder público.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: controle externo no exercício de sua missão institucional)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Nucleo correto; retiradas duas extrapolacoes ("de forma continua" e "fornecendo informacoes ao Congresso"). O QUE SIGNIFICA, ATENCAO e glossario "Plano plurianual" (sem duracao temporal que nao consta do art. 74) substituidos; O QUE DIZ e exemplo mantidos. Resolucao editorial antiga de LAW_DEPENDENCY_OMITTED mantida; sua justificativa (explicacao propria do § 2º) devera ser revalidada quando CF88:ART.74:PAR.2 for submetido a revisao humana na fila A. Complementacao autorizada: 2o paragrafo do O QUE SIGNIFICA dividido, mantendo "entidades da administracao federal" e "aplicacao de recursos publicos por entidades privadas" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela redacao). (seções: atencao, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 74, § 1º — Dever de comunicar irregularidades
 
-- **TARGET:** `CF88:ART.74:PAR.1` · `ENTENDA/CF88:ART.74:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.74:PAR.1` · `ENTENDA/CF88:ART.74:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 74, § 1º — Dever de comunicar irregularidades
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.74`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 139 palavras · 1215 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1580 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo com sancao (responsabilidade solidaria) para omissao dos responsaveis pelo controle interno.
 
 **O QUE DIZ**
@@ -4270,23 +4309,23 @@ O § 1º determina que os responsáveis pelo controle interno, ao saberem de qua
 
 **O QUE SIGNIFICA**
 
-Quem trabalha no controle interno não pode guardar para si as irregularidades que descobre.
+Os responsáveis pelo controle interno têm o dever de comunicar ao Tribunal de Contas da União as irregularidades ou ilegalidades de que tomarem conhecimento.
 
-A comunicação ao Tribunal é obrigatória, e não uma escolha.
+A comunicação é obrigatória. Se o responsável deixar de dar ciência ao Tribunal, o próprio § 1º prevê responsabilidade solidária.
 
-Se o responsável se omitir, passa a responder junto com o autor da irregularidade, o que pode incluir o dever de reparar integralmente o prejuízo.
+O dispositivo estabelece o dever de comunicar e a consequência da omissão, mas não detalha neste trecho todo o alcance patrimonial ou processual dessa responsabilidade.
 
 **EXEMPLO PRÁTICO**
 
-O chefe do controle interno de um órgão identifica pagamentos sem cobertura contratual e não informa o Tribunal. Pode ser responsabilizado solidariamente pelo dano causado.
+O responsável pelo controle interno de um órgão identifica pagamentos irregulares e deixa de comunicar o fato ao Tribunal de Contas da União. Nessa hipótese, poderá incidir a responsabilidade solidária prevista no § 1º.
 
 **ATENÇÃO**
 
-O dever é de comunicar ao Tribunal de Contas da União; os canais e formas dessa comunicação são definidos em normas próprias.
+O § 1º define o dever de comunicação, o destinatário e a responsabilidade pela omissão. A forma prática e os canais utilizados para essa comunicação não são disciplinados pelo próprio parágrafo.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Responsabilidade solidária*: responsabilidade em que cada um pode ser cobrado pelo total da dívida.
+- *Responsabilidade solidária*: forma de responsabilidade em que uma pessoa pode responder juntamente com outra pela mesma obrigação, conforme o regime jurídico aplicável.
 
 **CAMADA EXTERNA**
 
@@ -4294,18 +4333,18 @@ O dever é de comunicar ao Tribunal de Contas da União; os canais e formas dess
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao tribunal de contas da união sob pena)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Evitada a ampliacao de "responsaveis pelo controle interno" para "quem trabalha no controle interno" e retirada a reparacao integral como consequencia direta do § 1º. O QUE SIGNIFICA, exemplo, ATENCAO e glossario substituidos; O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 74, § 2º — Denúncia de irregularidades ao Tribunal
 
-- **TARGET:** `CF88:ART.74:PAR.2` · `ENTENDA/CF88:ART.74:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.74:PAR.2` · `ENTENDA/CF88:ART.74:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 74, § 2º — Denúncia de irregularidades ao Tribunal
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.74`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 143 palavras · 1261 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1437 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo que confere legitimidade a cidadaos e entidades para denunciar ao TCU.
 
 **O QUE DIZ**
@@ -4314,19 +4353,19 @@ O § 2º reconhece a qualquer cidadão, partido político, associação ou sindi
 
 **O QUE SIGNIFICA**
 
-O parágrafo abre o controle das contas públicas à participação social.
+O § 2º permite que os legitimados indicados pela Constituição levem ao Tribunal de Contas da União denúncias de irregularidades ou ilegalidades.
 
-Qualquer cidadão pode denunciar, sem precisar demonstrar prejuízo pessoal.
+A legitimidade não depende da demonstração de prejuízo pessoal do denunciante.
 
-O Tribunal examina a denúncia e, se houver fundamento, apura os fatos. A expressão "na forma da lei" indica que os requisitos de apresentação são definidos pela legislação.
+A expressão “na forma da lei” significa que os requisitos e a forma de apresentação da denúncia dependem da disciplina legal aplicável.
 
 **EXEMPLO PRÁTICO**
 
-Um morador percebe que uma obra paga com verba federal está parada há meses, embora conste como concluída. Ele pode apresentar denúncia ao Tribunal de Contas da União.
+Um cidadão identifica possível irregularidade em obra custeada com recursos federais. Na forma prevista pela legislação aplicável, ele pode apresentar denúncia ao Tribunal de Contas da União.
 
 **ATENÇÃO**
 
-A denúncia não é uma ação judicial: leva os fatos ao Tribunal, que decide se e como apurar.
+A denúncia prevista no § 2º não é ação judicial. O dispositivo reconhece legitimidade para levar irregularidades ou ilegalidades ao Tribunal de Contas da União, observada a forma prevista em lei.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4339,7 +4378,7 @@ A denúncia não é uma ação judicial: leva os fatos ao Tribunal, que decide s
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: todos os legitimados, sem exigir prejuizo pessoal; "na forma da lei" preservada no O QUE DIZ e explicada no O QUE SIGNIFICA; "Um cidadao" no exemplo. Conclui a revalidacao da resolucao do B26 (VALID). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 

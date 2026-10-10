@@ -4,7 +4,7 @@ Registro de problemas encontrados durante a missao em modulos compartilhados, ru
 
 ## Regra nova aplicada ao conteúdo antigo
 
-`JUDICIAL_REVIEW_ANNOTATED` (anotação Vide ADI/ADIN/ADC/ADPF/ADO no escopo) aplicada a 382 registros ACTIVE dos corpora anteriores (HUMAN_APPROVED_T1 300, PENDING_HUMAN_REVIEW 82). 12 registro(s) caem na regra; pela recalibração do segundo passe cada um precisa ser classificado `JUDICIAL_REVIEW_CONTEXT_ONLY` (MEDIUM) ou `JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS` (HIGH); sem classificação, a regra é REQUIRED (fail closed). Nenhum foi alterado nem reclassificado; a revisão fica para missão própria.
+`JUDICIAL_REVIEW_ANNOTATED` (anotação Vide ADI/ADIN/ADC/ADPF/ADO no escopo) aplicada a 382 registros ACTIVE dos corpora anteriores (HUMAN_APPROVED_T1 382). 12 registro(s) caem na regra; pela recalibração do segundo passe cada um precisa ser classificado `JUDICIAL_REVIEW_CONTEXT_ONLY` (MEDIUM) ou `JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS` (HIGH); sem classificação, a regra é REQUIRED (fail closed). Nenhum foi alterado nem reclassificado; a revisão fica para missão própria.
 
 | Target | Status | Corpus | Anotações |
 |---|---|---|---|

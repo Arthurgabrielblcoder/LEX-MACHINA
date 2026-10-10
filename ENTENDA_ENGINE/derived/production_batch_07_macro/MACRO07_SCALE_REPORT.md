@@ -72,13 +72,13 @@ Jurisprudência: CONTEXT_ONLY 33, NONE 207, REQUIRED_FOR_CORRECTNESS 9.
 |---|---|
 | Rascunhos (5 seções + glossário) | 357.481 |
 | Modelo antigo (pacote completo de todos os itens) | 823.155 |
-| **Apresentado ao humano (pacotes + prioridade)** | **316.685** |
-| — MACRO07_COMPACT_AB_REVIEW.md | 169.842 |
+| **Apresentado ao humano (pacotes + prioridade)** | **316.741** |
+| — MACRO07_COMPACT_AB_REVIEW.md | 169.874 |
 | — MACRO07_FULL_D_REVIEW.md | 112.033 |
-| — MACRO07_HARD_FAIL_REPORT.md | 119 |
+| — MACRO07_HARD_FAIL_REPORT.md | 143 |
 | — MACRO07_HUMAN_REVIEW_PRIORITY.md | 34.321 |
 | — MACRO07_QUICK_C_REVIEW.md | 370 |
-| Redução vs. modelo antigo | 506.470 (61.5%) |
+| Redução vs. modelo antigo | 506.414 (61.5%) |
 
 ## Checks estruturais
 
@@ -108,7 +108,7 @@ Jurisprudência: CONTEXT_ONLY 33, NONE 207, REQUIRED_FOR_CORRECTNESS 9.
 | LEGAL_RISK MEDIUM | 53 | 82 |
 | LEGAL_RISK HIGH | 53 | 24 |
 | D (%) | 21.3% | 9.6% |
-| Caracteres apresentados ao humano | 441.681 | 316.685 |
+| Caracteres apresentados ao humano | 441.681 | 316.741 |
 
 - Correções editoriais do segundo passe: 94 (ABSOLUTO 12, AFIRMACAO_NAO_VERIFICAVEL 2, DUPLICACAO_COM_DIFERENCA_JURIDICA 1, ENUMERACAO_INCOMPLETA 4, EXEMPLO_CRIA_REQUISITO 3, FONTE_SANEADA 2, GLOSSARIO_ERRADO 1, JURISPRUDENCIA_RECLASSIFICADA 9, JURISPRUDENCIA_VELADA 7, LEI_COMO_CONSTITUICAO 4, NUMERO 4, PAI_CONTRADIZ_FILHO 8, REGRA_INVENTADA 12, REMISSAO_ERRADA 7, TELEOLOGIA 18).
 - Reclassificações de risco/fila: 29.
