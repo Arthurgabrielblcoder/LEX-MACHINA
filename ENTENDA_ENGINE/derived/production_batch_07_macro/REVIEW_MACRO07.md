@@ -443,12 +443,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 83 — Ausência do País e perda do cargo
 
-- **TARGET:** `CF88:ART.83` · `ENTENDA/CF88:ART.83/BASE/1`
+- **TARGET:** `CF88:ART.83` · `ENTENDA/CF88:ART.83/BASE/2`
 - **DISPLAY TITLE:** Art. 83 — Ausência do País e perda do cargo
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 146 palavras · 1152 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 152 palavras · 1187 bytes · referências 0
 - **Motivo da seleção:** Visao geral: licenca do Congresso para ausencia superior a quinze dias, sob pena de perda do cargo.
 
 **O QUE DIZ**
@@ -457,7 +457,7 @@ O art. 83 proíbe o Presidente e o Vice de se ausentarem do País por mais de qu
 
 **O QUE SIGNIFICA**
 
-Viagens curtas ao exterior não dependem de autorização. A partir de quinze dias de ausência, é preciso licença prévia do Congresso.
+Ausência do País que não ultrapasse quinze dias não depende dessa licença constitucional. Se o período for superior a quinze dias, o Presidente ou o Vice-Presidente precisa de licença do Congresso Nacional.
 
 A consequência prevista para quem descumpre a regra é grave: a perda do cargo. A licença é concedida pelo Congresso no exercício de sua competência exclusiva (art. 49, III).
 
@@ -465,7 +465,7 @@ A regra vale tanto para o Presidente quanto para o Vice.
 
 **EXEMPLO PRÁTICO**
 
-Se o Presidente planeja uma série de visitas oficiais a outros países que somará vinte dias fora do Brasil, precisa pedir licença ao Congresso antes de viajar.
+Se o Presidente planeja permanecer fora do País por mais de quinze dias, deve obter licença do Congresso antes da ausência.
 
 **ATENÇÃO**
 
@@ -479,9 +479,9 @@ Ausências de até quinze dias não exigem licença; a exigência começa quando
 
 —
 
-**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Se o Presidente planeja uma série de visitas oficiais a outr)
+**WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Se o Presidente planeja permanecer fora do País por mais de )
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Erro material corrigido: "a partir de quinze dias" incluía o 15º dia, contra o "período superior a quinze dias" do texto. O exemplo de vinte dias, que sugeria somar viagens separadas, foi substituído por ausência única superior a quinze dias. (seções: exemplo_pratico, o_que_significa)
 
 ---
 
@@ -628,12 +628,12 @@ Criar ou extinguir órgão público e criar cargo continuam exigindo lei. O decr
 
 ### Art. 84, inciso XII — Indulto e comutação de penas
 
-- **TARGET:** `CF88:ART.84:INC.XII` · `ENTENDA/CF88:ART.84:INC.XII/BASE/1`
+- **TARGET:** `CF88:ART.84:INC.XII` · `ENTENDA/CF88:ART.84:INC.XII/BASE/2`
 - **DISPLAY TITLE:** Art. 84, inciso XII — Indulto e comutação de penas
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.84`, `CF88:ART.84:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 191 palavras · 1678 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 2380 bytes · referências 1
 - **Motivo da seleção:** Item com conceito proprio relevante para estudo: indulto e comutacao como atribuicoes do Presidente.
 
 **O QUE DIZ**
@@ -642,7 +642,7 @@ O inciso XII atribui ao Presidente a concessão de indulto e a comutação de pe
 
 **O QUE SIGNIFICA**
 
-O indulto extingue a pena de pessoas condenadas que se enquadram nas condições fixadas no decreto presidencial. A comutação não extingue: reduz a pena ou a troca por outra mais branda.
+O indulto extingue a punibilidade de pessoas condenadas que se enquadram nas condições fixadas no decreto presidencial, permanecendo os efeitos secundários da condenação que não sejam alcançados pelo benefício. A comutação não extingue: reduz a pena ou a troca por outra mais branda.
 
 Na prática, o Presidente edita um decreto que descreve quem pode ser beneficiado. Depois, cada caso é verificado no processo de execução penal.
 
@@ -654,20 +654,21 @@ Um decreto de indulto prevê o benefício para condenados que cumpriram parte da
 
 **ATENÇÃO**
 
-O inciso não fixa os limites do indulto. Restrições estão em outras normas constitucionais, como o art. 5º, XLIII, que exclui a graça e a anistia para certos crimes. O alcance do poder de indultar é tema da camada JURISPRUDÊNCIA.
+A competência presidencial não é ilimitada. O Supremo Tribunal Federal reconhece controle de constitucionalidade do decreto e considera que a vedação constitucional à graça nos crimes abrangidos pelo art. 5º, XLIII, também alcança o indulto e a comutação.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Indulto*: perdão da pena concedido pelo Presidente da República a condenados que atendem a condições gerais.
+- *Indulto*: benefício concedido pelo Presidente da República que extingue a punibilidade de condenados que atendem a condições gerais.
 - *Comutação*: redução da pena ou sua troca por outra mais leve.
+- *Punibilidade*: possibilidade de o Estado aplicar ou executar a pena pelo crime praticado.
 
 **CAMADA EXTERNA**
 
-- Os limites do poder presidencial de indultar e a extensão das vedações do art. 5º, XLIII, são temas da camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 84, XII): ADPF 964, 965, 966 e 967 (2023): o indulto extingue apenas a punibilidade, remanescendo os efeitos secundários penais e extrapenais; controle judicial por desvio de finalidade. ADI 5.874 (2019): ato discricionário do Presidente; o Judiciário examina a constitucionalidade, não o mérito. HC 90.364 (2007) e HC 81.565 (2002): a graça é gênero do qual o indulto é espécie; a vedação do art. 5º, XLIII, alcança indulto e comutação. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Extingue a pena" era impreciso: o indulto extingue a punibilidade e não apaga os efeitos secundários. A ATENÇÃO deixava entender que o art. 5º, XLIII, só vedaria graça e anistia; passa a registrar que a vedação alcança indulto e comutação e que o decreto se sujeita a controle de constitucionalidade. (seções: atencao, external_layer_notes, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -725,7 +726,7 @@ Sem explicação própria: 9 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 259 palavras · 2112 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 259 palavras · 2109 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conceito de crime de responsabilidade, bens protegidos e remissao a lei especial.
 
 **O QUE DIZ**
@@ -760,7 +761,7 @@ A definição concreta dos crimes depende da lei especial; o artigo não basta p
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o cumprimento das leis e das decisões judiciais)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo aprovado sem alteração (v1 byte-idêntica). Provenance registrada apenas como contexto da lei especial (Lei 1.079/1950; Súmula Vinculante 46), sem mudança textual.
 
 ---
 
@@ -770,12 +771,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 86 — Processo e julgamento do Presidente
 
-- **TARGET:** `CF88:ART.86` · `ENTENDA/CF88:ART.86/BASE/1`
+- **TARGET:** `CF88:ART.86` · `ENTENDA/CF88:ART.86/BASE/2`
 - **DISPLAY TITLE:** Art. 86 — Processo e julgamento do Presidente
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 204 palavras · 1612 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 2210 bytes · referências 0
 - **Motivo da seleção:** Visao geral: juizo de admissibilidade pela Camara, julgamento pelo Supremo ou pelo Senado, afastamento e imunidades do Presidente.
 
 **O QUE DIZ**
@@ -784,15 +785,15 @@ O art. 86 estabelece que, admitida a acusação por dois terços da Câmara dos 
 
 **O QUE SIGNIFICA**
 
-O processo contra o Presidente tem duas etapas. Primeiro, a Câmara faz um juízo político de admissibilidade: só com dois terços dos seus membros a acusação segue adiante.
+A Câmara realiza o juízo constitucional de admissibilidade: só com dois terços dos seus membros a acusação segue adiante.
 
-Depois, o julgamento cabe a órgãos diferentes, conforme a natureza da acusação. Infrações penais comuns são julgadas pelo Supremo Tribunal Federal; crimes de responsabilidade, pelo Senado.
+Autorizada a acusação, cabe ao órgão competente decidir a etapa seguinte. Nas infrações penais comuns, o Supremo Tribunal Federal examina o recebimento da acusação; nos crimes de responsabilidade, o Senado Federal decide sobre a instauração do processo e, se instaurado, realiza o julgamento.
 
 Os §§ 1º e 2º (afastamento e seu prazo) e os §§ 3º e 4º (garantias do Presidente) têm explicações próprias.
 
 **EXEMPLO PRÁTICO**
 
-Apresentada uma denúncia por crime de responsabilidade, a Câmara vota se autoriza o processo. Se ao menos dois terços dos deputados votarem a favor, o caso segue para o Senado, que conduz o julgamento.
+Apresentada uma denúncia por crime de responsabilidade, a Câmara vota se autoriza o processo. A autorização de dois terços da Câmara não significa condenação nem instauração automática do processo no Senado: o Senado decide se instaura o processo e, se o instaurar, julga o Presidente.
 
 **ATENÇÃO**
 
@@ -805,11 +806,11 @@ Sem a autorização da Câmara por dois terços, o processo não avança, nem no
 
 **CAMADA EXTERNA**
 
-—
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", arts. 52 e 86): ADPF 378 MC (2015): cabe ao Senado o juízo inicial de instauração ou não do processo, por maioria simples; MS 21.564 (1992): a Câmara profere juízo político de admissibilidade; Inq 4.483 QO (2017): o juízo da Câmara precede a análise do recebimento da denúncia pelo Supremo. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: supremo tribunal federal nas infrações penais comuns ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O exemplo ensinava que, autorizada pela Câmara, a acusação seguia direto ao julgamento no Senado. O texto (§ 1º, II) e a ADPF 378 mostram a etapa de instauração pelo Senado; no Supremo, a etapa é o recebimento da acusação. (seções: exemplo_pratico, external_layer_notes, o_que_significa)
 
 ---
 
@@ -820,7 +821,7 @@ Sem a autorização da Câmara por dois terços, o processo não avança, nem no
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.86:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.86`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1701 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 210 palavras · 1698 bytes · referências 0
 - **Motivo da seleção:** Bloco: momento em que o Presidente e suspenso das funcoes em cada tipo de processo e limite de cento e oitenta dias.
 
 **O QUE DIZ**
@@ -854,18 +855,18 @@ O fim do afastamento pelo decurso do prazo não encerra o processo nem equivale 
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.86: 0.261)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo aprovado sem alteração (v1 byte-idêntica): distingue autorização, recebimento, instauração e afastamento; 180 dias não extinguem o processo.
 
 ---
 
 ### Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
 
-- **TARGET:** `CF88:ART.86:PAR.3` · `ENTENDA/CF88:ART.86:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.86:PAR.3` · `ENTENDA/CF88:ART.86:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.86:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.86`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 198 palavras · 1854 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 239 palavras · 2815 bytes · referências 0
 - **Motivo da seleção:** Bloco: garantia contra prisao antes de sentenca condenatoria nas infracoes comuns e nao responsabilizacao por atos estranhos as funcoes.
 
 **O QUE DIZ**
@@ -874,30 +875,32 @@ O § 3º estabelece que, nas infrações comuns, o Presidente não está sujeito
 
 **O QUE SIGNIFICA**
 
-O § 3º afasta a prisão cautelar do Presidente nas infrações penais comuns: antes de uma sentença condenatória, ele não pode ser preso preventivamente nem em flagrante por esse tipo de infração.
+O § 3º estabelece imunidade à prisão cautelar nas infrações penais comuns: antes de uma sentença condenatória, o Presidente não pode ser preso em flagrante, preventivamente ou temporariamente por esse tipo de infração.
 
-O § 4º trata de atos sem relação com a função presidencial, como um fato anterior ao mandato. Enquanto durar o mandato, o Presidente não responde por eles. O texto não diz que esses atos ficam sem consequência: diz que a responsabilização não ocorre na vigência do mandato.
+O § 4º estabelece uma imunidade temporária à persecução penal por atos estranhos ao exercício das funções presidenciais, como um fato anterior ao mandato. Durante o mandato, o Presidente não pode ser processado criminalmente por esses fatos; isso não significa irresponsabilidade definitiva.
+
+Segundo o Supremo Tribunal Federal, essa proteção não alcança responsabilidade civil, político-administrativa ou tributária.
 
 **EXEMPLO PRÁTICO**
 
-Se surgir uma acusação sobre um suposto crime praticado pelo Presidente antes de assumir o cargo e sem relação com a função, a apuração não pode resultar em responsabilização enquanto ele estiver no mandato.
+Se surgir uma acusação sobre um suposto crime praticado pelo Presidente antes de assumir o cargo e sem relação com a função, ele não pode ser processado criminalmente por esse fato enquanto estiver no mandato. Encerrado o mandato, a persecução penal pode ocorrer. Uma ação civil sobre o mesmo fato não fica impedida por essa garantia.
 
 **ATENÇÃO**
 
-A extensão dessas garantias, como o que acontece com investigações e prazos de prescrição durante o mandato, é tema da camada JURISPRUDÊNCIA.
+Outras consequências do § 4º, como a contagem da prescrição e o alcance de investigações durante o mandato, não estão resolvidas no texto e devem ser conferidas na camada JURISPRUDÊNCIA.
 
 **PALAVRAS DIFÍCEIS**
 
 - *Sentença condenatória*: decisão judicial que reconhece a culpa e aplica a pena.
-- *Prisão cautelar*: prisão decretada antes da condenação, como a preventiva ou a em flagrante.
+- *Prisão cautelar*: prisão decretada antes da condenação, como a em flagrante, a preventiva ou a temporária.
 
 **CAMADA EXTERNA**
 
-- O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 86): ADI 978 e ADI 1.021 (1995): o § 3º é imunidade à prisão cautelar (em flagrante, preventiva e temporária), exclusiva do Presidente; Inq 672 QO (1992): o § 4º impede, na vigência do mandato, a persecução penal por atos estranhos à função, inclusive anteriores ao mandato, tem exegese estrita e não se aplica a situações extrapenais (responsabilidade civil, político-administrativa e tributária); HC 83.154 (2003): imunidade temporária à persecução penal, não imunidade penal; a suspensão da prescrição ficou sem decisão. Investigação durante o mandato: sem tese oficial expressa verificada nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Não responde por eles" sugeria imunidade geral pelo § 4º. O Supremo restringe a garantia à persecução penal temporária, sem alcance civil, político-administrativo ou tributário (Inq 672 QO; HC 83.154). O § 3º passa a nomear flagrante, preventiva e temporária (ADI 978). Prescrição e investigação ficam fora do núcleo, porque não foram resolvidas. (seções: atencao, exemplo_pratico, external_layer_notes, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -1155,7 +1158,7 @@ Sem explicação própria: 12 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 240 palavras · 1840 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 240 palavras · 1837 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estrutura do Poder Judiciario e sede e jurisdicao dos tribunais de cupula.
 
 **O QUE DIZ**
@@ -1189,7 +1192,7 @@ O Conselho Nacional de Justiça é órgão do Judiciário, mas não exerce funç
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo aprovado sem alteração (v1 byte-idêntica). O T1 não usa a ADI 3392; a anotação do § 1º foi registrada como SOURCE_ANNOTATION_ANOMALY_CANDIDATE (BACKLOG MB07-15), sem alterar a fonte congelada.
 
 ---
 
@@ -1199,12 +1202,12 @@ Sem explicação própria: 17 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 93 — Estatuto da Magistratura
 
-- **TARGET:** `CF88:ART.93` · `ENTENDA/CF88:ART.93/BASE/1`
+- **TARGET:** `CF88:ART.93` · `ENTENDA/CF88:ART.93/BASE/2`
 - **DISPLAY TITLE:** Art. 93 — Estatuto da Magistratura
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 277 palavras · 2240 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 284 palavras · 2320 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei complementar de iniciativa do Supremo e os principios da carreira e do funcionamento do Judiciario.
 
 **O QUE DIZ**
@@ -1213,7 +1216,7 @@ O art. 93 determina que lei complementar, de iniciativa do Supremo Tribunal Fede
 
 **O QUE SIGNIFICA**
 
-O Estatuto da Magistratura é a lei que organiza a carreira dos juízes em todo o país. A iniciativa é do Supremo Tribunal Federal, e a forma é de lei complementar, aprovada por maioria absoluta.
+O Estatuto da Magistratura é a lei complementar nacional que disciplina a carreira e o regime dos magistrados e estabelece regras relevantes de organização e funcionamento do Poder Judiciário. A iniciativa é do Supremo Tribunal Federal, e a aprovação exige maioria absoluta.
 
 Os incisos são princípios obrigatórios para essa lei. Uns tratam da carreira (concurso, promoção, acesso aos tribunais, cursos de formação, subsídio). Outros tratam do funcionamento do Judiciário: julgamentos públicos e decisões fundamentadas, atividade sem interrupção, distribuição imediata e número de juízes proporcional à demanda e à população.
 
@@ -1239,18 +1242,18 @@ Os princípios do art. 93 valem para toda a magistratura, federal e estadual.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: lei complementar de iniciativa do supremo tribunal federal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A primeira frase reduzia o Estatuto à "carreira dos juízes"; o próprio art. 93 traz princípios de organização e funcionamento do Judiciário. (seções: o_que_significa)
 
 ---
 
 ### Art. 93, inciso I — Ingresso na magistratura
 
-- **TARGET:** `CF88:ART.93:INC.I` · `ENTENDA/CF88:ART.93:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.93:INC.I` · `ENTENDA/CF88:ART.93:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 93, inciso I — Ingresso na magistratura
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.93`, `CF88:ART.93:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 197 palavras · 1745 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 202 palavras · 2025 bytes · referências 1
 - **Motivo da seleção:** Item com regra autonoma muito cobrada: concurso, participacao da OAB, tres anos de atividade juridica e ordem de classificacao.
 
 **O QUE DIZ**
@@ -1267,11 +1270,11 @@ A experiência mínima de três anos em atividade jurídica é requisito do cand
 
 **EXEMPLO PRÁTICO**
 
-Uma candidata formada em Direito há quatro anos, que trabalhou durante três anos como advogada, pode se inscrever no concurso. Aprovada em quinto lugar, sua nomeação vem depois da dos quatro primeiros colocados.
+Uma bacharel em Direito que tenha completado três anos de atividade jurídica pode comprovar esse requisito na inscrição definitiva do concurso. Se aprovada em quinto lugar, sua nomeação observa a ordem de classificação.
 
 **ATENÇÃO**
 
-O que conta como atividade jurídica e o momento de comprová-la não estão definidos no inciso; são tratados em normas do Judiciário e na camada JURISPRUDÊNCIA.
+O inciso não define o que conta como atividade jurídica. O Supremo Tribunal Federal assentou que a comprovação ocorre na inscrição definitiva do concurso; os critérios detalhados estão em normas do Judiciário.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1280,11 +1283,11 @@ O que conta como atividade jurídica e o momento de comprová-la não estão def
 
 **CAMADA EXTERNA**
 
-- O conceito de atividade jurídica e o momento de sua comprovação são temas da camada JURISPRUDÊNCIA e de atos normativos do Conselho Nacional de Justiça.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 93, I): Tema 509 (RE 655.265, 2016) e ADI 3.460 (2006): o triênio de atividade jurídica é comprovado na inscrição definitiva; MS 28.226 AgR (2015): admite cargo não privativo de bacharel se as funções forem eminentemente jurídicas. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O requisito ensinado continua sendo de três anos; o "quatro anos" do exemplo era dispensável e foi retirado. O exemplo e a ATENÇÃO passam a registrar o momento da comprovação (inscrição definitiva; Tema 509 e ADI 3.460). (seções: atencao, exemplo_pratico, external_layer_notes)
 
 ---
 
@@ -1433,7 +1436,7 @@ Remoção por interesse público é diferente da remoção a pedido do próprio 
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.93`, `CF88:ART.93:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1720 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 1717 bytes · referências 1
 - **Motivo da seleção:** Item com principio processual central: julgamentos publicos e decisoes fundamentadas sob pena de nulidade, com limites para preservar a intimidade.
 
 **O QUE DIZ**
@@ -1467,18 +1470,18 @@ A restrição de publicidade depende de previsão em lei e de ponderação entre
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Mesmo assim, a sentença precisa expor as razões da decisão.)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo aprovado sem alteração (v1 byte-idêntica): publicidade em regra, com limite legal; fundamentação sem exceção no texto.
 
 ---
 
 ### Art. 93, inciso XII — Atividade jurisdicional ininterrupta
 
-- **TARGET:** `CF88:ART.93:INC.XII` · `ENTENDA/CF88:ART.93:INC.XII/BASE/1`
+- **TARGET:** `CF88:ART.93:INC.XII` · `ENTENDA/CF88:ART.93:INC.XII/BASE/2`
 - **DISPLAY TITLE:** Art. 93, inciso XII — Atividade jurisdicional ininterrupta
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.93`, `CF88:ART.93:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 187 palavras · 1659 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 202 palavras · 2056 bytes · referências 0
 - **Motivo da seleção:** Item com regra propria: vedacao de ferias coletivas nos juizos e tribunais de segundo grau e plantao permanente.
 
 **O QUE DIZ**
@@ -1487,9 +1490,9 @@ O inciso XII determina que a atividade jurisdicional seja ininterrupta. Proíbe 
 
 **O QUE SIGNIFICA**
 
-A Justiça não pode parar. Por isso juízes de primeiro grau e desembargadores não tiram férias todos ao mesmo tempo: as férias são individuais, em escala.
+A prestação jurisdicional não pode ser interrompida. Isso não significa expediente forense normal em cada dia do ano: nos períodos sem expediente normal, deve existir plantão para atendimento das medidas urgentes.
 
-Nos fins de semana, feriados e outros dias sem expediente normal, há juiz de plantão para casos urgentes.
+Por isso juízes de primeiro grau e desembargadores não tiram férias todos ao mesmo tempo: a Constituição proíbe férias coletivas nos juízos e nos tribunais de segundo grau.
 
 A proibição de férias coletivas alcança os juízos e os tribunais de segundo grau; o texto não a estende expressamente aos tribunais superiores.
 
@@ -1508,11 +1511,11 @@ A vedação de férias coletivas não se confunde com o recesso de fim de ano pr
 
 **CAMADA EXTERNA**
 
-- A relação entre a vedação de férias coletivas e o recesso forense previsto em lei é tema da camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 93, XII): ADI 3.085 (2005) e ADI 3.823 MC (2006): as normas sobre férias coletivas perderam fundamento de validade com a EC 45/2004. A relação com o recesso forense previsto em lei é contexto da camada JURISPRUDÊNCIA (não verificada nesta rodada). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Em um domingo, uma pessoa precisa de decisão urgente para ga)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "A Justiça não pode parar" podia ser lido como funcionamento ordinário pleno o tempo todo. O texto distingue continuidade jurisdicional (plantão) de expediente forense normal. (seções: external_layer_notes, o_que_significa)
 
 ---
 
@@ -1572,12 +1575,12 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 95 — Garantias e vedações dos juízes
 
-- **TARGET:** `CF88:ART.95` · `ENTENDA/CF88:ART.95/BASE/1`
+- **TARGET:** `CF88:ART.95` · `ENTENDA/CF88:ART.95/BASE/2`
 - **DISPLAY TITLE:** Art. 95 — Garantias e vedações dos juízes
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1753 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 244 palavras · 1916 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as tres garantias da magistratura e as vedacoes do paragrafo unico.
 
 **O QUE DIZ**
@@ -1588,7 +1591,7 @@ O art. 95 assegura aos juízes três garantias: vitaliciedade, inamovibilidade, 
 
 O artigo dá ao juiz três garantias, ligadas ao cargo, ao local de exercício e ao subsídio. A vitaliciedade impede a perda do cargo sem as formas previstas (inciso I, com explicação própria). A inamovibilidade impede transferências contra a vontade do juiz, salvo interesse público reconhecido pelo procedimento do art. 93, VIII. A irredutibilidade impede a redução do subsídio, ressalvadas as regras de teto, de revisão e de tributos indicadas no inciso III.
 
-As vedações do parágrafo único completam o desenho: limitam atividades paralelas, recebimentos, ressalvadas as exceções previstas em lei, e a atuação política do juiz.
+As vedações do parágrafo único completam o desenho: limitam atividades paralelas, recebimentos, ressalvadas as exceções previstas em lei, a participação político-partidária e também a advocacia, durante o período constitucional, no juízo ou tribunal do qual o magistrado se afastou (parágrafo único, com explicação própria).
 
 **EXEMPLO PRÁTICO**
 
@@ -1610,18 +1613,18 @@ A irredutibilidade não impede o desconto do imposto de renda nem a aplicação 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: interesse público na forma do art 93 viii)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A lista das vedações parecia completa sem a quarentena de advocacia (parágrafo único, V); acrescentada sem duplicar o T1 do parágrafo único. (seções: o_que_significa)
 
 ---
 
 ### Art. 95, inciso I — Vitaliciedade dos juízes
 
-- **TARGET:** `CF88:ART.95:INC.I` · `ENTENDA/CF88:ART.95:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.95:INC.I` · `ENTENDA/CF88:ART.95:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 95, inciso I — Vitaliciedade dos juízes
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.95`, `CF88:ART.95:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1670 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 221 palavras · 1696 bytes · referências 0
 - **Motivo da seleção:** Item com regra propria e muito cobrada: aquisicao da vitaliciedade apos dois anos e forma de perda do cargo antes e depois.
 
 **O QUE DIZ**
@@ -1630,9 +1633,9 @@ O inciso I estabelece que a vitaliciedade, no primeiro grau, só é adquirida ap
 
 **O QUE SIGNIFICA**
 
-O juiz que acabou de entrar na carreira passa por um período de dois anos de exercício. Durante esse tempo, ele pode perder o cargo por decisão do próprio tribunal, tomada em procedimento administrativo.
+No primeiro grau, a vitaliciedade é adquirida após dois anos de exercício. Durante esse período, a perda do cargo depende de deliberação do tribunal ao qual o juiz está vinculado, tomada em procedimento administrativo.
 
-Depois de completar os dois anos, o juiz se torna vitalício. A partir daí, só perde o cargo por sentença judicial definitiva, contra a qual não cabe mais recurso.
+Depois de completar os dois anos, o juiz se torna vitalício. A partir daí, só perde o cargo por sentença judicial transitada em julgado, contra a qual não cabe mais recurso.
 
 O texto fixa os dois anos para o primeiro grau; a situação de quem ingressa diretamente nos tribunais é tema da camada JURISPRUDÊNCIA.
 
@@ -1655,7 +1658,7 @@ Vitaliciedade não é o mesmo que estabilidade dos servidores (art. 41): o vital
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "O juiz que acabou de entrar na carreira" passa a ser ancorado em "no primeiro grau", como no texto; mantida a distinção da estabilidade (art. 41). (seções: o_que_significa)
 
 ---
 
@@ -1710,12 +1713,12 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 96 — Autogoverno dos tribunais
 
-- **TARGET:** `CF88:ART.96` · `ENTENDA/CF88:ART.96/BASE/1`
+- **TARGET:** `CF88:ART.96` · `ENTENDA/CF88:ART.96/BASE/2`
 - **DISPLAY TITLE:** Art. 96 — Autogoverno dos tribunais
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1955 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 307 palavras · 2303 bytes · referências 1
 - **Motivo da seleção:** Visao geral: competencias privativas dos tribunais para administrar a si mesmos e para propor leis sobre sua organizacao.
 
 **O QUE DIZ**
@@ -1736,7 +1739,8 @@ Um Tribunal de Justiça que precisa de mais desembargadores não cria os cargos 
 
 **ATENÇÃO**
 
-A iniciativa reservada aos tribunais impede que outro Poder apresente projeto sobre essas matérias, mas não dispensa a aprovação pelo Legislativo.
+No inciso II, a iniciativa legislativa é reservada aos tribunais indicados pela Constituição; outro Poder não pode apresentar projeto em substituição a essa iniciativa, embora a aprovação da lei continue cabendo ao Legislativo.
+Já a maior parte das competências do inciso I corresponde a atos de organização e administração exercidos diretamente pelos próprios tribunais. A criação de novas varas, embora prevista no inciso I, ocorre por proposta do tribunal, e não por ato próprio.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -1749,18 +1753,18 @@ A iniciativa reservada aos tribunais impede que outro Poder apresente projeto so
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Tribunal de Justiça que precisa de mais desembargadores n)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A ATENÇÃO estendia a iniciativa reservada (inciso II) a todas as competências do artigo; passa a distinguir os atos de autogoverno do inciso I das iniciativas legislativas do inciso II, preservando a proposta de criação de varas (inciso I, d). (seções: atencao)
 
 ---
 
 ### Art. 96, inciso III — Julgamento de juízes e promotores estaduais
 
-- **TARGET:** `CF88:ART.96:INC.III` · `ENTENDA/CF88:ART.96:INC.III/BASE/1`
+- **TARGET:** `CF88:ART.96:INC.III` · `ENTENDA/CF88:ART.96:INC.III/BASE/2`
 - **DISPLAY TITLE:** Art. 96, inciso III — Julgamento de juízes e promotores estaduais
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.96`, `CF88:ART.96:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1677 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 227 palavras · 2737 bytes · referências 0
 - **Motivo da seleção:** Item com regra de competencia propria: foro dos juizes e membros do Ministerio Publico estaduais no Tribunal de Justica.
 
 **O QUE DIZ**
@@ -1769,9 +1773,9 @@ O inciso III atribui aos Tribunais de Justiça o julgamento, por crimes comuns e
 
 **O QUE SIGNIFICA**
 
-Juízes e membros do Ministério Público que atuam nos Estados não são julgados por um juiz de primeiro grau quando acusados de crime: o processo corre no Tribunal de Justiça.
+Enquanto no exercício do cargo, juízes estaduais e do Distrito Federal e Territórios e membros do Ministério Público dos Estados têm foro por prerrogativa de função: são processados e julgados originariamente pelo Tribunal de Justiça nos crimes comuns e de responsabilidade, com ressalva da competência da Justiça Eleitoral.
 
-A regra vale para crimes comuns e para crimes de responsabilidade. A exceção é a matéria eleitoral: se o crime for eleitoral, o julgamento cabe à Justiça Eleitoral.
+Assim, quando acusados de crime, não são julgados por juiz de primeiro grau. Se o crime for eleitoral, o julgamento cabe à Justiça Eleitoral.
 
 **EXEMPLO PRÁTICO**
 
@@ -1788,11 +1792,12 @@ O inciso trata dos juízes estaduais e do Distrito Federal e Territórios e dos 
 
 **CAMADA EXTERNA**
 
-—
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 96, III): RE 398.042 (2003): a única ressalva à competência do Tribunal de Justiça para julgar juízes estaduais é a Justiça Eleitoral; HC 77.558 (1999): o Tribunal de Justiça julga juízes estaduais mesmo em crimes da competência da Justiça Federal.
+- Verificado na fonte oficial (Informativo STF 1212): Rcl 84.738 AgR/PI, Segunda Turma, unânime, julgamento finalizado em 14/04/2026: membro de Ministério Público estadual processado por crimes não relacionados com o cargo mantém foro no Tribunal de Justiça (art. 96, III); a restrição da QO na AP 937, fixada para parlamentar federal, não abarcou os cargos vitalícios. O tema segue pendente no Plenário (RE 1.331.044, Tema 1.147). Aposentadoria e cessação do exercício são questão distinta (Tema 453). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** PARENT_REPETITION (*: CF88:ART.96: 0.242); TERM_NOT_USED (palavras_dificeis: Foro por prerrogativa de função)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: juízes estaduais e do distrito federal e territórios); PARENT_REPETITION (*: CF88:ART.96: 0.242)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "Que atuam nos Estados" era impreciso: os destinatários são juízes estaduais e do Distrito Federal e Territórios e membros do Ministério Público dos Estados (o do Distrito Federal e Territórios integra o da União e segue o art. 108, I, a). O termo do glossário passa a ser usado no corpo (TERM_NOT_USED resolvido). (seções: external_layer_notes, o_que_significa)
 
 ---
 

@@ -3,7 +3,7 @@
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 249 · risco LOW 143 · MEDIUM 85 · HIGH 21
-- Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 24
+- Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 39
 - Achados: DUPLICATION 30, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
@@ -118,78 +118,78 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 83 — Ausência do País e perda do cargo
 
-- `CF88:ART.83` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.83` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sob pena
 
 ### Art. 84, inciso XII — Indulto e comutação de penas
 
-- `CF88:ART.84:INC.XII` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder presidencial de indultar e a extensão das vedações do art. 5º, XLIII, são temas da camada JURISPRUDÊNCIA.
+- `CF88:ART.84:INC.XII` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 84, XII): ADPF 964, 965, 966 e 967 (2023): o indulto extingue apenas a 
 
 ### Art. 85 — Crimes de responsabilidade do Presidente
 
-- `CF88:ART.85` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.85` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 
 ### Art. 86 — Processo e julgamento do Presidente
 
-- `CF88:ART.86` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SENSITIVE_THEME: crimes
+- `CF88:ART.86` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", arts. 52 e 86): ADPF 378 MC (2015): cabe ao Senado o juízo inicial de instau; SENSITIVE_THEME: crimes
 
 ### Art. 86, §§ 1º e 2º — Afastamento do Presidente durante o processo
 
-- `CF88:ART.86:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.86:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crime
 
 ### Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
 
-- `CF88:ART.86:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da ; SENSITIVE_THEME: prisão
+- `CF88:ART.86:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 86): ADI 978 e ADI 1.021 (1995): o § 3º é imunidade à prisão cautelar (; SENSITIVE_THEME: prisão
 
 ### Art. 92 — Órgãos do Poder Judiciário
 
-- `CF88:ART.92` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.92` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada
 
 ### Art. 93 — Estatuto da Magistratura
 
-- `CF88:ART.93` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.93` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sob pena
 
 ### Art. 93, inciso I — Ingresso na magistratura
 
-- `CF88:ART.93:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O conceito de atividade jurídica e o momento de sua comprovação são temas da camada JURISPRUDÊNCIA e de atos normativos do Conselho Nacional
+- `CF88:ART.93:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 93, I): Tema 509 (RE 655.265, 2016) e ADI 3.460 (2006): o triênio de at
 
 ### Art. 93, inciso IX — Publicidade dos julgamentos e fundamentação das decisões
 
-- `CF88:ART.93:INC.IX` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.93:INC.IX` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sob pena
 
 ### Art. 93, inciso XII — Atividade jurisdicional ininterrupta
 
-- `CF88:ART.93:INC.XII` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A relação entre a vedação de férias coletivas e o recesso forense previsto em lei é tema da camada JURISPRUDÊNCIA.
+- `CF88:ART.93:INC.XII` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 93, XII): ADI 3.085 (2005) e ADI 3.823 MC (2006): as normas sobre féria
 
 ### Art. 95 — Garantias e vedações dos juízes
 
-- `CF88:ART.95` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.95` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: perda do cargo
 
 ### Art. 95, inciso I — Vitaliciedade dos juízes
 
-- `CF88:ART.95:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.95:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: perda do cargo
 
 ### Art. 96 — Autogoverno dos tribunais
 
-- `CF88:ART.96` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.96` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 
 ### Art. 96, inciso III — Julgamento de juízes e promotores estaduais
 
-- `CF88:ART.96:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: SENSITIVE_THEME: crimes
+- `CF88:ART.96:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (Informativo STF 1212): Rcl 84.738 AgR/PI, Segunda Turma, unânime, julgamento finalizado em 14/04/2026: membro d; SENSITIVE_THEME: crimes
 
 ### Art. 97 — Cláusula de reserva de plenário
 

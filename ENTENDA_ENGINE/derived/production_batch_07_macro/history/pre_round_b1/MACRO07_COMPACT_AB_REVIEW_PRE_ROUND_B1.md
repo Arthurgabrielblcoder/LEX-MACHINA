@@ -1,6 +1,6 @@
 # MACRO07 — REVISÃO COMPACTA (filas A e B)
 
-Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · 210 itens pendentes; aprovação só por revisão humana (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
+Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · 225 itens pendentes; aprovação só por revisão humana (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
 ## A — CLEAN_LOW (143)
 
@@ -1577,7 +1577,172 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · 210 itens pendentes; aprovaç�
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (67)
+## B — CLEAN_MEDIUM (82)
+
+### `CF88:ART.83` — Art. 83 — Ausência do País e perda do cargo
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O art. 83 proíbe o Presidente e o Vice de se ausentarem do País por mais de quinze dias sem licença do Congresso Nacional, sob pena de perderem o cargo.
+- Interpretação principal: Viagens curtas ao exterior não dependem de autorização.
+- ATENÇÃO: Ausências de até quinze dias não exigem licença; a exigência começa quando o período fora do País supera esse limite.
+- Dependência externa: nenhuma
+- Warnings: NUMBER_FROM_OTHER_DEVICE(20 dias), lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.84:INC.XII` — Art. 84, inciso XII — Indulto e comutação de penas
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder presidencial de indultar e a extensão das…
+- Ponto jurídico: O inciso XII atribui ao Presidente a concessão de indulto e a comutação de penas, ouvindo, se necessário, os órgãos instituídos em lei.
+- Interpretação principal: O indulto extingue a pena de pessoas condenadas que se enquadram nas condições fixadas no decreto presidencial.
+- ATENÇÃO: O inciso não fixa os limites do indulto.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.85` — Art. 85 — Crimes de responsabilidade do Presidente
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 85 define como crimes de responsabilidade os atos do Presidente que atentem contra a Constituição e, em especial, contra: a existência da União; o livre exercício do Legislativo, do…
+- Interpretação principal: Crime de responsabilidade não é crime comum.
+- ATENÇÃO: A definição concreta dos crimes depende da lei especial; o artigo não basta para tipificar uma conduta.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o cumprimento das leis e das decisões judiciais)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.86` — Art. 86 — Processo e julgamento do Presidente
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 86 estabelece que, admitida a acusação por dois terços da Câmara dos Deputados, o Presidente é julgado pelo Supremo Tribunal Federal nas infrações penais comuns ou pelo Senado nos crimes de…
+- Interpretação principal: O processo contra o Presidente tem duas etapas.
+- ATENÇÃO: Sem a autorização da Câmara por dois terços, o processo não avança, nem no Supremo nem no Senado.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: supremo tribunal federal nas infrações penais…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.86:PAR.1` — Art. 86, §§ 1º e 2º — Afastamento do Presidente durante o processo
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crime
+- Ponto jurídico: O § 1º suspende o Presidente de suas funções nas infrações penais comuns, quando o Supremo Tribunal Federal recebe a denúncia ou queixa-crime, e nos crimes de responsabilidade, quando o Senado…
+- Interpretação principal: A autorização da Câmara não afasta o Presidente por si só.
+- ATENÇÃO: O fim do afastamento pelo decurso do prazo não encerra o processo nem equivale a absolvição.
+- Dependência externa: nenhuma
+- Warnings: lint PARENT_REPETITION
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.86:PAR.3` — Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e…; SENSITIVE_THEME: prisão
+- Ponto jurídico: O § 3º estabelece que, nas infrações comuns, o Presidente não está sujeito a prisão enquanto não houver sentença condenatória.
+- Interpretação principal: O § 3º afasta a prisão cautelar do Presidente nas infrações penais comuns: antes de uma sentença condenatória, ele não pode ser preso preventivamente nem em flagrante…
+- ATENÇÃO: A extensão dessas garantias, como o que acontece com investigações e prazos de prescrição durante o mandato, é tema da camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.92` — Art. 92 — Órgãos do Poder Judiciário
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º…
+- Ponto jurídico: O art. 92 lista os órgãos do Poder Judiciário: Supremo Tribunal Federal, Conselho Nacional de Justiça, Superior Tribunal de Justiça, Tribunal Superior do Trabalho, Tribunais Regionais Federais e…
+- Interpretação principal: O Judiciário brasileiro é organizado em ramos.
+- ATENÇÃO: O Conselho Nacional de Justiça é órgão do Judiciário, mas não exerce função jurisdicional.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.93` — Art. 93 — Estatuto da Magistratura
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O art. 93 determina que lei complementar, de iniciativa do Supremo Tribunal Federal, disponha sobre o Estatuto da Magistratura, observando uma série de princípios.
+- Interpretação principal: O Estatuto da Magistratura é a lei que organiza a carreira dos juízes em todo o país.
+- ATENÇÃO: Os princípios do art. 93 valem para toda a magistratura, federal e estadual.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: lei complementar de iniciativa do supremo…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.93:INC.I` — Art. 93, inciso I — Ingresso na magistratura
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O conceito de atividade jurídica e o momento de sua…
+- Ponto jurídico: O inciso I determina que o ingresso na magistratura se dê no cargo de juiz substituto, por concurso público de provas e títulos, acompanhado pela Ordem dos Advogados do Brasil em cada uma das suas…
+- Interpretação principal: Ninguém começa a carreira como juiz titular: o primeiro cargo é o de juiz substituto.
+- ATENÇÃO: O que conta como atividade jurídica e o momento de comprová-la não estão definidos no inciso; são tratados em normas do Judiciário e na camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NUMBER_FROM_OTHER_DEVICE(4 anos), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.93:INC.IX` — Art. 93, inciso IX — Publicidade dos julgamentos e fundamentação das decisões
+
+- Risco: MEDIUM · complexidade: SIMPLE · SENSITIVE_THEME: sob pena
+- Ponto jurídico: O inciso IX determina que todos os julgamentos do Judiciário sejam públicos e todas as decisões fundamentadas, sob pena de nulidade.
+- Interpretação principal: O inciso traz dois deveres.
+- ATENÇÃO: A restrição de publicidade depende de previsão em lei e de ponderação entre intimidade e interesse público; já o dever de fundamentar não tem exceção no texto.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.93:INC.XII` — Art. 93, inciso XII — Atividade jurisdicional ininterrupta
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A relação entre a vedação de férias coletivas e o recesso…
+- Ponto jurídico: O inciso XII determina que a atividade jurisdicional seja ininterrupta.
+- Interpretação principal: A Justiça não pode parar.
+- ATENÇÃO: A vedação de férias coletivas não se confunde com o recesso de fim de ano previsto em lei para alguns ramos; o tema é tratado em normas infraconstitucionais e na camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE, lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.95` — Art. 95 — Garantias e vedações dos juízes
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perda do cargo
+- Ponto jurídico: O art. 95 assegura aos juízes três garantias: vitaliciedade, inamovibilidade, salvo interesse público na forma do art. 93, VIII, e irredutibilidade de subsídio, com as ressalvas que indica.
+- Interpretação principal: O artigo dá ao juiz três garantias, ligadas ao cargo, ao local de exercício e ao subsídio.
+- ATENÇÃO: A irredutibilidade não impede o desconto do imposto de renda nem a aplicação do teto remuneratório: essas ressalvas estão no próprio inciso III.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: interesse público na forma do art 93 viii)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.95:INC.I` — Art. 95, inciso I — Vitaliciedade dos juízes
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perda do cargo
+- Ponto jurídico: O inciso I estabelece que a vitaliciedade, no primeiro grau, só é adquirida após dois anos de exercício.
+- Interpretação principal: O juiz que acabou de entrar na carreira passa por um período de dois anos de exercício.
+- ATENÇÃO: Vitaliciedade não é o mesmo que estabilidade dos servidores (art. 41): o vitalício só perde o cargo por sentença judicial definitiva.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.96` — Art. 96 — Autogoverno dos tribunais
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 96 atribui privativamente aos tribunais eleger seus órgãos diretivos e elaborar regimentos, organizar suas secretarias, prover os cargos de juiz e de servidores, salvo os de confiança…
+- Interpretação principal: O artigo traduz a ideia de autogoverno do Judiciário.
+- ATENÇÃO: A iniciativa reservada aos tribunais impede que outro Poder apresente projeto sobre essas matérias, mas não dispensa a aprovação pelo Legislativo.
+- Dependência externa: nenhuma
+- Warnings: lint EXAMPLE_REQUIREMENT_LANGUAGE
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.96:INC.III` — Art. 96, inciso III — Julgamento de juízes e promotores estaduais
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O inciso III atribui aos Tribunais de Justiça o julgamento, por crimes comuns e de responsabilidade, dos juízes estaduais, do Distrito Federal e dos Territórios e dos membros do Ministério Público,…
+- Interpretação principal: Juízes e membros do Ministério Público que atuam nos Estados não são julgados por um juiz de primeiro grau quando acusados de crime: o processo corre no Tribunal de…
+- ATENÇÃO: O inciso trata dos juízes estaduais e do Distrito Federal e Territórios e dos membros do Ministério Público dos Estados.
+- Dependência externa: nenhuma
+- Warnings: lint PARENT_REPETITION, lint TERM_NOT_USED
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.97` — Art. 97 — Cláusula de reserva de plenário
 

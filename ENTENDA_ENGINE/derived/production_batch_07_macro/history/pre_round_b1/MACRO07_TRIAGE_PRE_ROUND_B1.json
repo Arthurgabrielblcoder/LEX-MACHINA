@@ -24,23 +24,23 @@
  },
  "counts": {
   "A_CLEAN_LOW": 143,
-  "B_CLEAN_MEDIUM": 67,
+  "B_CLEAN_MEDIUM": 82,
   "C_QUICK_REVIEW": 0,
   "D_FULL_HUMAN_REVIEW": 0,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 143,
-  "MEDIUM": 67
+  "MEDIUM": 82
  },
  "complexity_counts": {
-  "STRUCTURED": 126,
-  "SIMPLE": 10,
-  "EXTERNAL": 74
+  "STRUCTURED": 133,
+  "SIMPLE": 11,
+  "EXTERNAL": 81
  },
  "jurisprudence_counts": {
-  "NONE": 184,
-  "CONTEXT_ONLY": 26
+  "NONE": 195,
+  "CONTEXT_ONLY": 30
  },
  "by_legal_risk": {
   "LOW": {
@@ -52,7 +52,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 67,
+   "B_CLEAN_MEDIUM": 82,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -68,21 +68,21 @@
  "by_complexity": {
   "SIMPLE": {
    "A_CLEAN_LOW": 9,
-   "B_CLEAN_MEDIUM": 1,
+   "B_CLEAN_MEDIUM": 2,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "STRUCTURED": {
    "A_CLEAN_LOW": 103,
-   "B_CLEAN_MEDIUM": 23,
+   "B_CLEAN_MEDIUM": 30,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 31,
-   "B_CLEAN_MEDIUM": 43,
+   "B_CLEAN_MEDIUM": 50,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -5353,6 +5353,584 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.83",
+   "title": "Art. 83 — Ausência do País e perda do cargo",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: quinze dias",
+    "number_or_percentage: quinze",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "20 dias",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.84:INC.XII",
+   "title": "Art. 84, inciso XII — Indulto e comutação de penas",
+   "role": "ITEM",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder presidencial de indultar e a extensão das vedações do art. 5º, XLIII, são temas da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.85",
+   "title": "Art. 85 — Crimes de responsabilidade do Presidente",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o cumprimento das leis e das decisões judiciais",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.86",
+   "title": "Art. 86 — Processo e julgamento do Presidente",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: prazo",
+    "number_or_percentage: dois",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "supremo tribunal federal nas infrações penais comuns ou",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.86:PAR.1",
+   "title": "Art. 86, §§ 1º e 2º — Afastamento do Presidente durante o processo",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: cento",
+    "block com 4 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.86:PAR.3",
+   "title": "Art. 86, §§ 3º e 4º — Imunidades do Presidente durante o mandato",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da ",
+    "SENSITIVE_THEME: prisão"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.92",
+   "title": "Art. 92 — Órgãos do Poder Judiciário",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.92:PAR.1: Vide ADIN 3392)",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 13 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.93",
+   "title": "Art. 93 — Estatuto da Magistratura",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: dois terços",
+    "deadline: três anos",
+    "number_or_percentage: três",
+    "exception: salvo",
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 37, 40, 94",
+    "overview com 24 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "lei complementar de iniciativa do supremo tribunal federal",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.93:INC.I",
+   "title": "Art. 93, inciso I — Ingresso na magistratura",
+   "role": "ITEM",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O conceito de atividade jurídica e o momento de sua comprovação são temas da camada JURISPRUDÊNCIA e de atos normativos do Conselho Nacional"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: três anos",
+    "number_or_percentage: três",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "4 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.93:INC.IX",
+   "title": "Art. 93, inciso IX — Publicidade dos julgamentos e fundamentação das decisões",
+   "role": "ITEM",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.93:INC.XII",
+   "title": "Art. 93, inciso XII — Atividade jurisdicional ininterrupta",
+   "role": "ITEM",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A relação entre a vedação de férias coletivas e o recesso forense previsto em lei é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.95",
+   "title": "Art. 95 — Garantias e vedações dos juízes",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perda do cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: previstas em lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 37, 93",
+    "overview com 11 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "interesse público na forma do art 93 viii",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.95:INC.I",
+   "title": "Art. 95, inciso I — Vitaliciedade dos juízes",
+   "role": "ITEM",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perda do cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: dois anos",
+    "number_or_percentage: dois"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.96",
+   "title": "Art. 96 — Autogoverno dos tribunais",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "number_or_percentage: cento",
+    "exception: exceto",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 169",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.96:INC.III",
+   "title": "Art. 96, inciso III — Julgamento de juízes e promotores estaduais",
+   "role": "ITEM",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "PARENT_REPETITION",
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.97",
    "title": "Art. 97 — Cláusula de reserva de plenário",
    "role": "OVERVIEW",
@@ -8228,33 +8806,32 @@
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 300097,
-  "old_model_full_package_chars": 656879,
-  "presented_chars": 187368,
+  "total_draft_chars": 320139,
+  "old_model_full_package_chars": 699711,
+  "presented_chars": 201408,
   "presented_by_file": {
-   "MACRO07_COMPACT_AB_REVIEW.md": 157762,
+   "MACRO07_COMPACT_AB_REVIEW.md": 169874,
    "MACRO07_FULL_D_REVIEW.md": 433,
    "MACRO07_HARD_FAIL_REPORT.md": 143,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 28660,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 30588,
    "MACRO07_QUICK_C_REVIEW.md": 370
   },
-  "pending_items": 210,
-  "reduction_abs": 469511,
-  "reduction_pct": 71.5
+  "pending_items": 225,
+  "reduction_abs": 498303,
+  "reduction_pct": 71.2
  },
  "d_ratio": 0.0,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 131,
+  "eligible": 135,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 39,
+ "human_approved_t1_granted": 24,
  "round_approvals": {
   "review_scopes": [
    "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
-   "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-   "CF88_MACRO07_TRIAGE_QUEUE_B_PART1"
+   "CF88_MACRO07_TRIAGE_QUEUE_D_PART2"
   ],
   "gate": [
    {
@@ -8269,227 +8846,6 @@
     "review_required_open": [],
     "editorial_checks_open": 0,
     "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.83",
-    "explanation_id": "ENTENDA/CF88:ART.83/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.84:INC.XII",
-    "explanation_id": "ENTENDA/CF88:ART.84:INC.XII/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE",
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.85",
-    "explanation_id": "ENTENDA/CF88:ART.85/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.86",
-    "explanation_id": "ENTENDA/CF88:ART.86/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.86:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.86:PAR.1/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.86:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.86:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 4,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.92",
-    "explanation_id": "ENTENDA/CF88:ART.92/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 1,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.93",
-    "explanation_id": "ENTENDA/CF88:ART.93/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.93:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.93:INC.I/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.93:INC.IX",
-    "explanation_id": "ENTENDA/CF88:ART.93:INC.IX/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.93:INC.XII",
-    "explanation_id": "ENTENDA/CF88:ART.93:INC.XII/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 1,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.95",
-    "explanation_id": "ENTENDA/CF88:ART.95/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.95:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.95:INC.I/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.96",
-    "explanation_id": "ENTENDA/CF88:ART.96/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.96:INC.III",
-    "explanation_id": "ENTENDA/CF88:ART.96:INC.III/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
     "gate": "PASS"
    },
    {
@@ -8845,9 +9201,9 @@
     "gate": "PASS"
    }
   ],
-  "approved": 39,
-  "approved_unchanged": 5,
-  "approved_after_adjustment": 34,
+  "approved": 24,
+  "approved_unchanged": 1,
+  "approved_after_adjustment": 23,
   "rejected": 0,
   "retired_versions": [
    "ENTENDA/CF88:ART.100/BASE/1",
@@ -8872,25 +9228,14 @@
    "ENTENDA/CF88:ART.166/BASE/1",
    "ENTENDA/CF88:ART.166:PAR.11/BASE/1",
    "ENTENDA/CF88:ART.166:PAR.9/BASE/1",
-   "ENTENDA/CF88:ART.82/BASE/1",
-   "ENTENDA/CF88:ART.83/BASE/1",
-   "ENTENDA/CF88:ART.84:INC.XII/BASE/1",
-   "ENTENDA/CF88:ART.86/BASE/1",
-   "ENTENDA/CF88:ART.86:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.93/BASE/1",
-   "ENTENDA/CF88:ART.93:INC.I/BASE/1",
-   "ENTENDA/CF88:ART.93:INC.XII/BASE/1",
-   "ENTENDA/CF88:ART.95/BASE/1",
-   "ENTENDA/CF88:ART.95:INC.I/BASE/1",
-   "ENTENDA/CF88:ART.96/BASE/1",
-   "ENTENDA/CF88:ART.96:INC.III/BASE/1"
+   "ENTENDA/CF88:ART.82/BASE/1"
   ]
  },
  "approval_totals": {
   "global_before": 382,
-  "batch_new_approved": 39,
-  "global_after": 421,
-  "batch_new_pending": 210,
+  "batch_new_approved": 24,
+  "global_after": 406,
+  "batch_new_pending": 225,
   "note": "aprovados do corpus principal e dos corpora anteriores, por explanation_key"
  },
  "validator_limits": [
@@ -8999,7 +9344,7 @@
   "transition_without_evidence": [],
   "transition_evidence_unused": [],
   "judicial_review_unclassified": [],
-  "approved_by_recorded_round": 39,
+  "approved_by_recorded_round": 24,
   "status": "PASS"
  },
  "backlog": {
@@ -9010,6 +9355,6 @@
    },
    "hits": 12
   },
-  "items": 16
+  "items": 14
  }
 }

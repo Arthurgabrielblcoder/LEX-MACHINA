@@ -428,8 +428,8 @@ class MacroBatch07HumanRoundD1(unittest.TestCase):
         n = len(self.decided)
         self.assertEqual((tot['global_before'], tot['batch_new_approved'], tot['global_after']), (len(prior), n, len(prior) + n))
         self.assertEqual(tot['batch_new_pending'], len(self.triage['rows']))
-        pre_d = sum(1 for x in load(self.rnd['pre_review_evidence']['triage'])['rows'] if x['queue'] == 'D_FULL_HUMAN_REVIEW')
-        self.assertEqual(self.triage['counts']['D_FULL_HUMAN_REVIEW'], pre_d - n)
+        pre_d = {x['target_id'] for x in load(self.rnd['pre_review_evidence']['triage'])['rows'] if x['queue'] == 'D_FULL_HUMAN_REVIEW'}
+        self.assertEqual(self.triage['counts']['D_FULL_HUMAN_REVIEW'], len(pre_d - self.decided))
         bl = {i['id'] for i in load('BACKLOG_INPUT.json')['items']}
         self.assertTrue({'MB07-12', 'MB07-13'} <= bl)
 
@@ -457,13 +457,14 @@ class MacroBatch07HumanRoundD2(unittest.TestCase):
         cls.triage = load('MACRO07_TRIAGE.json')
         cls.by = {d['target_id']: d for d in cls.dec['decisions']}
         cls.d1 = {d['target_id'] for d in load(M.human_rounds(cls.ms)[0]['decisions'])['decisions']}
+        cls.later = {d['target_id'] for r in M.human_rounds(cls.ms)[2:] for d in load(r['decisions'])['decisions']}
 
     def body(self, t):
         c = self.act[t]['content']
         return ' '.join([c[k] or '' for k in BODY] + [g['termo'] + ' ' + g['explicacao'] for g in c['palavras_dificeis']])
 
     def test_round_scope_counts_and_status(self):
-        self.assertEqual([r['review_scope'] for r in M.human_rounds(self.ms)], ['CF88_MACRO07_TRIAGE_QUEUE_D_PART1', 'CF88_MACRO07_TRIAGE_QUEUE_D_PART2'])
+        self.assertEqual([r['review_scope'] for r in M.human_rounds(self.ms)][:2], ['CF88_MACRO07_TRIAGE_QUEUE_D_PART1', 'CF88_MACRO07_TRIAGE_QUEUE_D_PART2'])
         self.assertEqual((self.dec['review_status'], self.dec['review_scope']), ('ROUND_REVIEW_COMPLETED', 'CF88_MACRO07_TRIAGE_QUEUE_D_PART2'))
         self.assertEqual(self.dec['decision_counts'], dict(APPROVED=0, APPROVED_AFTER_ADJUSTMENT=12, REJECTED=0))
         self.assertEqual(sorted(t for t, x in self.pre_rows.items() if x['queue'] == 'D_FULL_HUMAN_REVIEW'), sorted(self.by))
@@ -473,7 +474,9 @@ class MacroBatch07HumanRoundD2(unittest.TestCase):
             self.assertEqual((r['review_status'], r['editorial_version'], r['explanation_id']), ('HUMAN_APPROVED_T1', 2, d['to_explanation_id']), t)
             self.assertEqual((r['human_review']['review_scope'], d['human_decision']), (self.dec['review_scope'], 'ADJUST_THEN_APPROVE'), t)
             self.assertTrue(d['original_content'] and d['review_reason'] and d['flags_resolved'], t)
-        self.assertEqual(self.triage['counts'], dict(A_CLEAN_LOW=143, B_CLEAN_MEDIUM=82, C_QUICK_REVIEW=0, D_FULL_HUMAN_REVIEW=0, E_HARD_FAIL=0))
+        cnt = self.triage['counts']
+        self.assertEqual((cnt['C_QUICK_REVIEW'], cnt['D_FULL_HUMAN_REVIEW'], cnt['E_HARD_FAIL']), (0, 0, 0))
+        self.assertEqual(cnt['A_CLEAN_LOW'] + cnt['B_CLEAN_MEDIUM'], len(self.triage['rows']))
 
     def test_versions_retired_and_others_unchanged(self):
         for t in self.by:
@@ -486,11 +489,11 @@ class MacroBatch07HumanRoundD2(unittest.TestCase):
                              {k: v for k, v in self.pre[r['explanation_id']].items() if k not in ('status', 'review_status', 'superseded_by')}, t)
         n = 0
         for t, r in self.act.items():
-            if t not in self.by:
+            if t not in self.by and t not in self.later:
                 self.assertEqual(r, self.pre[r['explanation_id']], t)   # D1-D12 e filas A/B: identicos ao estado anterior a rodada
                 n += 1
-        self.assertEqual(n, 237)
-        self.assertEqual(sorted(x['target_id'] for x in self.triage['rows']), sorted(t for t in self.pre_rows if t not in self.by))
+        self.assertEqual(n, 237 - len(self.later))
+        self.assertEqual(sorted(x['target_id'] for x in self.triage['rows']), sorted(t for t in self.pre_rows if t not in self.by and t not in self.later))
         for x in self.triage['rows']:
             self.assertEqual(x, self.pre_rows[x['target_id']])
 
@@ -546,11 +549,12 @@ class MacroBatch07HumanRoundD2(unittest.TestCase):
 
     def test_gate_resolution_and_totals(self):
         gate = {g['target_id']: g for g in self.triage['round_approvals']['gate']}
-        self.assertEqual(len(gate), 24)
+        self.assertEqual(len(gate), 24 + len(self.later))
         self.assertEqual({g['gate'] for g in gate.values()}, {'PASS'})
         self.assertEqual(sum(len(g['hard_fail']) + len(g['review_required_open']) + g['editorial_checks_open'] for g in gate.values()), 0)
         tot = self.triage['approval_totals']
-        self.assertEqual((tot['batch_new_approved'], tot['batch_new_pending'], tot['global_after'] - tot['global_before']), (24, 225, 24))
+        self.assertEqual((tot['batch_new_approved'], tot['batch_new_pending'], tot['global_after'] - tot['global_before']),
+                         (24 + len(self.later), 225 - len(self.later), 24 + len(self.later)))
         rv = self.dec['existing_resolution_revalidation']
         self.assertEqual(rv['resolution'], load('EDITORIAL_INPUT.json')['resolutions']['CF88:ART.165:PAR.18'])
         self.assertTrue(rv['result'].startswith('REVALIDADA_EM_USO'))
@@ -572,9 +576,120 @@ class MacroBatch07HumanRoundD2(unittest.TestCase):
         for adi in ('3431', '3432', '3520'):
             self.assertIn(adi, bl['MB07-11']['detail'])
         self.assertIn('EXTERNAL_VERIFICATION_REQUIRED', bl['MB07-11']['detail'])
-        self.assertEqual({k: v for k, v in bl.items() if k not in ('MB07-10', 'MB07-11', 'MB07-14')},
-                         {k: v for k, v in prev.items() if k not in ('MB07-10', 'MB07-11')})
+        for k, v in prev.items():   # itens anteriores preservados; itens novos so podem ser acrescentados
+            if k not in ('MB07-10', 'MB07-11'):
+                self.assertEqual(bl[k], v, k)
         self.assertIn('MB07-14', (BD / 'MACRO07_BACKLOG.md').read_text(encoding='utf-8'))
+
+class _HumanRoundChecks:
+    """Verificações comuns a uma rodada humana do Macro07 identificada por SCOPE (valem também depois de rodadas posteriores)."""
+    SCOPE = None
+    QUEUE = None
+
+    @classmethod
+    def setUpClass(cls):
+        cls.ms = load('MACRO_SPEC.json')
+        rounds = M.human_rounds(cls.ms)
+        idx = [r['review_scope'] for r in rounds].index(cls.SCOPE)
+        cls.rnd = rounds[idx]
+        cls.dec = load(cls.rnd['decisions'])
+        cls.all = E.load_corpus(BD / 'CF88_MACRO_07.entenda.jsonl')
+        cls.act = {r['target_id']: r for r in cls.all if r['status'] == 'ACTIVE'}
+        cls.pre = {r['explanation_id']: r for r in E.load_corpus(BD / cls.rnd['pre_review_evidence']['corpus'])}
+        cls.pre_rows = {x['target_id']: x for x in load(cls.rnd['pre_review_evidence']['triage'])['rows']}
+        cls.triage = load('MACRO07_TRIAGE.json')
+        cls.by = {d['target_id']: d for d in cls.dec['decisions']}
+        cls.later = {d['target_id'] for r in rounds[idx + 1:] for d in load(r['decisions'])['decisions']}
+
+    def body(self, t):
+        c = self.act[t]['content']
+        return ' '.join([c[k] or '' for k in BODY] + [g['termo'] + ' ' + g['explicacao'] for g in c['palavras_dificeis']])
+
+    def test_round_decisions_versions_and_status(self):
+        self.assertEqual((self.dec['review_status'], self.dec['review_scope']), ('ROUND_REVIEW_COMPLETED', self.SCOPE))
+        for t, d in self.by.items():
+            r = self.act[t]
+            self.assertEqual(self.pre_rows[t]['queue'], self.QUEUE, t)
+            adjusted = d['decision'] == 'APPROVED_AFTER_ADJUSTMENT'
+            self.assertEqual(d['human_decision'], 'ADJUST_THEN_APPROVE' if adjusted else 'APPROVE', t)
+            self.assertEqual((r['review_status'], r['explanation_id'], r['human_review']['review_scope']),
+                             ('HUMAN_APPROVED_T1', d['to_explanation_id'], self.SCOPE), t)
+            old = self.pre[d['from_explanation_id']]
+            if adjusted:
+                self.assertEqual(r['editorial_version'], old['editorial_version'] + 1, t)
+                ret = [x for x in self.all if x['explanation_id'] == d['from_explanation_id']][0]
+                self.assertEqual((ret['status'], ret['review_status'], ret['superseded_by']), ('RETIRED', 'CHANGES_REQUESTED', r['explanation_id']), t)
+                self.assertEqual(ret['content'], old['content'], t)
+            else:
+                self.assertEqual((r['editorial_version'], r['content'], r['external_layer_notes']),
+                                 (old['editorial_version'], old['content'], old['external_layer_notes']), t)
+
+    def test_others_unchanged_by_the_round(self):
+        for t, r in self.act.items():
+            if t not in self.by and t not in self.later:
+                self.assertEqual(r, self.pre[r['explanation_id']], t)
+        for x in self.triage['rows']:
+            self.assertNotIn(x['target_id'], self.by)
+            self.assertEqual(x, self.pre_rows[x['target_id']])
+
+    def test_gate_provenance_and_body(self):
+        gate = {g['target_id']: g for g in self.triage['round_approvals']['gate']}
+        for t in self.by:
+            g = gate[t]
+            self.assertEqual((g['gate'], g['hard_fail'], g['review_required_open'], g['editorial_checks_open']), ('PASS', [], [], 0), t)
+            prov = self.act[t]['human_review'].get('content_provenance', [])
+            self.assertTrue(all(p['source_type'] == 'HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE' and p['official_source'].startswith('https://') for p in prov), t)
+            self.assertFalse(E.EXTERNAL_CASE_RE.search(self.body(t)), t)
+        tot = self.triage['approval_totals']
+        self.assertEqual((tot['batch_new_approved'], tot['batch_new_pending']), (len(M.round_targets(BD, self.ms)), len(self.triage['rows'])))
+
+
+class MacroBatch07HumanRoundB1(_HumanRoundChecks, unittest.TestCase):
+    """Primeira rodada humana da fila B do Macro07 (B1-B15): 4 aprovações sem alteração e 11 ajustes."""
+    SCOPE = 'CF88_MACRO07_TRIAGE_QUEUE_B_PART1'
+    QUEUE = 'B_CLEAN_MEDIUM'
+
+    def test_counts(self):
+        self.assertEqual(self.dec['decision_counts'], dict(APPROVED=4, APPROVED_AFTER_ADJUSTMENT=11, REJECTED=0))
+        self.assertEqual(sorted(t for t, d in self.by.items() if d['decision'] == 'APPROVED'),
+                         sorted(['CF88:ART.85', 'CF88:ART.86:PAR.1', 'CF88:ART.92', 'CF88:ART.93:INC.IX']))
+
+    def test_legal_points_of_the_round(self):
+        b = self.body
+        self.assertIn('não ultrapasse quinze dias', b('CF88:ART.83'))
+        self.assertIn('superior a quinze dias', b('CF88:ART.83'))
+        self.assertNotRegex(b('CF88:ART.83'), r'(?i)a partir de quinze|vinte dias')
+        self.assertIn('extingue a punibilidade', b('CF88:ART.84:INC.XII'))
+        self.assertIn('também alcança o indulto e a comutação', b('CF88:ART.84:INC.XII'))
+        self.assertIn('instauração automática', b('CF88:ART.86'))
+        self.assertIn('decide sobre a instauração do processo', b('CF88:ART.86'))
+        d6 = b('CF88:ART.86:PAR.3')
+        self.assertIn('imunidade temporária à persecução penal', d6)
+        self.assertIn('não alcança responsabilidade civil, político-administrativa ou tributária', d6)
+        self.assertNotRegex(self.act['CF88:ART.86:PAR.3']['content']['o_que_significa'], r'(?i)prescri')
+        self.assertIn('lei complementar nacional', b('CF88:ART.93'))
+        self.assertNotIn('quatro anos', b('CF88:ART.93:INC.I'))
+        self.assertIn('três anos de atividade jurídica', b('CF88:ART.93:INC.I'))
+        self.assertIn('inscrição definitiva', b('CF88:ART.93:INC.I'))
+        self.assertIn('A prestação jurisdicional não pode ser interrompida', b('CF88:ART.93:INC.XII'))
+        self.assertNotIn('A Justiça não pode parar', b('CF88:ART.93:INC.XII'))
+        self.assertIn('a advocacia', b('CF88:ART.95'))
+        self.assertTrue(self.act['CF88:ART.95:INC.I']['content']['o_que_significa'].startswith('No primeiro grau'))
+        self.assertIn('No inciso II, a iniciativa legislativa é reservada', b('CF88:ART.96'))
+        d15 = b('CF88:ART.96:INC.III')
+        self.assertIn('foro por prerrogativa de função', d15)
+        self.assertIn('Ministério Público dos Estados', d15)
+        self.assertNotIn('que atuam nos Estados', d15)
+        self.assertTrue(any('Rcl 84.738' in p['content'] for p in self.act['CF88:ART.96:INC.III']['human_review']['content_provenance']))
+
+    def test_anomaly_and_backlog(self):
+        self.assertEqual([a['target_id'] for a in self.dec['source_annotation_anomalies']], ['CF88:ART.92:PAR.1'])
+        self.assertNotIn('3392', self.body('CF88:ART.92'))
+        bl = {i['id']: i for i in load('BACKLOG_INPUT.json')['items']}
+        prev = {i['id']: i for i in load('history/pre_round_b1/BACKLOG_INPUT_PRE_ROUND_B1.json')['items']}
+        self.assertTrue({'MB07-15', 'MB07-16'} <= set(bl))
+        for k, v in prev.items():
+            self.assertEqual(bl[k], v, k)
 
 if __name__ == '__main__':
     unittest.main()
