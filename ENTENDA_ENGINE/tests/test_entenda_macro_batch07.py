@@ -200,7 +200,14 @@ class MacroBatch07(unittest.TestCase):
 
     def test_backlog_registers_old_content_without_editing(self):
         b = self.triage['backlog']
-        self.assertEqual(b['old_content']['by_review_status'].get('HUMAN_APPROVED_T1'), 300)
+        # contagem derivada da mesma fonte do builder (old_content_scan): registros ACTIVE do corpus principal + prior_corpora do
+        # MACRO_SPEC; continua valida quando os lotes anteriores mudarem (ex.: 300 -> 382 com o fechamento do Batch06)
+        prior = [r for f in [f"ENTENDA_ENGINE/corpus/{self.ms['norma_id']}.entenda.jsonl"] + self.ms['prior_corpora']
+                 for r in E.load_corpus(ROOT / f) if r['status'] == 'ACTIVE']
+        self.assertNotIn(f"production_batch_07_macro/{self.spec['batch_corpus']}", ' '.join(self.ms['prior_corpora']))
+        self.assertEqual(b['old_content']['records_checked'], len(prior))
+        self.assertEqual(b['old_content']['by_review_status'], dict(sorted(Counter(r['review_status'] for r in prior).items())))
+        self.assertGreater(b['old_content']['by_review_status'].get('HUMAN_APPROVED_T1', 0), 0)
         text = (BD / 'MACRO07_BACKLOG.md').read_text(encoding='utf-8')
         self.assertIn('Nenhum foi alterado', text)
 

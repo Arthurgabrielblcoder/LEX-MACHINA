@@ -370,7 +370,16 @@ class MacroBatch08(unittest.TestCase):
                     self.assertEqual(M.sha_lf(HERE / name), h, f'{man.name}: {name}')
 
     def test_prior_batches_untouched(self):
-        self.assertEqual(self.triage['backlog']['old_content']['by_review_status'].get('HUMAN_APPROVED_T1'), 300)
+        # contagem derivada da mesma fonte do builder (M.old_content_scan): registros ACTIVE do corpus principal + prior_corpora do
+        # MACRO_SPEC do Macro08 (sem o proprio Macro08); continua valida quando os lotes anteriores forem aprovados
+        ms = load('MACRO_SPEC.json')
+        self.assertFalse([p for p in ms['prior_corpora'] if 'production_batch_08_macro' in p])
+        prior = [r for f in [f"ENTENDA_ENGINE/corpus/{ms['norma_id']}.entenda.jsonl"] + ms['prior_corpora']
+                 for r in E.load_corpus(ROOT / f) if r['status'] == 'ACTIVE']
+        old = self.triage['backlog']['old_content']
+        self.assertEqual(old['records_checked'], len(prior))
+        self.assertEqual(old['by_review_status'], dict(sorted(Counter(r['review_status'] for r in prior).items())))
+        self.assertGreater(old['by_review_status'].get('HUMAN_APPROVED_T1', 0), 0)
         text = (BD / 'MACRO08_BACKLOG.md').read_text(encoding='utf-8')
         self.assertIn('Nenhum foi alterado', text)
         own = {r['target_id'] for r in self.corpus}

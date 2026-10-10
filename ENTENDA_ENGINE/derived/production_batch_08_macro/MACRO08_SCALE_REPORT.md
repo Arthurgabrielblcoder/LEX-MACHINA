@@ -78,14 +78,14 @@ Jurisprudência: .
 | Métrica | Caracteres |
 |---|---|
 | Rascunhos (5 seções + glossário) | 0 |
-| Modelo antigo (pacote completo de todos os itens) | 53 |
-| **Apresentado ao humano (pacotes + prioridade)** | **1.265** |
-| — MACRO08_COMPACT_AB_REVIEW.md | 381 |
-| — MACRO08_FULL_D_REVIEW.md | 213 |
-| — MACRO08_HARD_FAIL_REPORT.md | 119 |
+| Modelo antigo (pacote completo de todos os itens) | 0 |
+| **Apresentado ao humano (pacotes + prioridade)** | **1.063** |
+| — MACRO08_COMPACT_AB_REVIEW.md | 262 |
+| — MACRO08_FULL_D_REVIEW.md | 140 |
+| — MACRO08_HARD_FAIL_REPORT.md | 143 |
 | — MACRO08_HUMAN_REVIEW_PRIORITY.md | 387 |
-| — MACRO08_QUICK_C_REVIEW.md | 165 |
-| Redução vs. modelo antigo | -1.212 (-2286.8%) |
+| — MACRO08_QUICK_C_REVIEW.md | 131 |
+| Redução vs. modelo antigo | 0 (0.0%) |
 
 ### Por segmento (cada segmento empacotado sozinho, mesmo código de pacotes)
 
@@ -93,7 +93,7 @@ Jurisprudência: .
 |---|---|---|---|---|
 | CORPO | 0 | 0 | 0 | 0 (None%) |
 | ADCT | 0 | 0 | 0 | 0 (None%) |
-| TOTAL (lote, empacotado junto) | 0 | 53 | 1.265 | -1.212 (-2286.8%) |
+| TOTAL (lote, empacotado junto) | 0 | 0 | 1.063 | 0 (0.0%) |
 
 ## Checks estruturais
 

@@ -1,0 +1,472 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "review_date": "2026-10-09",
+ "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_A_PART3",
+ "reviewer_decision": "HUMAN_LEGAL_REVIEW_QUEUE_A_PART3",
+ "original_drafts": "BATCH_06_DRAFTS_PRE_ROUND_A3.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_06_DRAFTS_PRE_ROUND_A3.json": "680654a969a23983bc9262a4bfce836de08cda85aa79bfa130710dcc213343df",
+  "BATCH06_TRIAGE_PRE_ROUND_A3.json": "da14df5f8e810231b671e15d7a4502d5b34223126087a863d9d12d01098af4bb",
+  "BATCH06_COMPACT_CLEAN_REVIEW_PRE_ROUND_A3.md": "cbac90acfb9384f5167e42edc19743a01553202241ffc9878f9fc76da71246da"
+ },
+ "origin": "pacote de revisao A31-A42 da fila A (ordem estrutural), preparado a partir de BATCH06_COMPACT_CLEAN_REVIEW_PRE_ROUND_A3.md e dos artefatos versionados",
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "decision_counts": {
+  "APPROVED": 1,
+  "APPROVED_AFTER_ADJUSTMENT": 11,
+  "REJECTED": 0
+ },
+ "human_decision_counts": {
+  "APPROVE": 1,
+  "ADJUST_THEN_APPROVE": 11,
+  "REJECT": 0
+ },
+ "items": [
+  {
+   "item": "A31",
+   "target_id": "CF88:ART.67"
+  },
+  {
+   "item": "A32",
+   "target_id": "CF88:ART.68"
+  },
+  {
+   "item": "A33",
+   "target_id": "CF88:ART.68:PAR.1"
+  },
+  {
+   "item": "A34",
+   "target_id": "CF88:ART.68:PAR.2"
+  },
+  {
+   "item": "A35",
+   "target_id": "CF88:ART.70"
+  },
+  {
+   "item": "A36",
+   "target_id": "CF88:ART.70:PAR.UNICO"
+  },
+  {
+   "item": "A37",
+   "target_id": "CF88:ART.71:INC.I"
+  },
+  {
+   "item": "A38",
+   "target_id": "CF88:ART.71:INC.II"
+  },
+  {
+   "item": "A39",
+   "target_id": "CF88:ART.71:INC.IX"
+  },
+  {
+   "item": "A40",
+   "target_id": "CF88:ART.72"
+  },
+  {
+   "item": "A41",
+   "target_id": "CF88:ART.73:PAR.2"
+  },
+  {
+   "item": "A42",
+   "target_id": "CF88:ART.74:PAR.2"
+  }
+ ],
+ "external_sources_policy": "nenhuma fonte externa nova; remissoes conferidas no texto oficial versionado (arts. 31, 49, 51, 52, 59, 60, 62, 67, 68, 70, 71, 72, 73, 74, 75, 130 e 166)",
+ "resolutions_reviewed": [
+  {
+   "target_id": "CF88:ART.74",
+   "code": "LAW_DEPENDENCY_OMITTED",
+   "status": "MANTIDA_APLICAVEL",
+   "revalidation": "B26_RESOLUTION_REVALIDATION: VALID",
+   "origin_round": "ROUND_B3_HUMAN_REVIEW_DECISIONS.json (pending_revalidation)",
+   "note": "revalidacao concluida nesta rodada: CF88:ART.74:PAR.2 (A42) permanece como T1 proprio (DEVICE), preserva \"na forma da lei\" no O QUE DIZ e explica no O QUE SIGNIFICA que os requisitos e a forma de apresentacao da denuncia dependem da disciplina legal aplicavel; texto da resolucao inalterado; nenhuma resolucao nova; artefato historico da rodada B3 mantido intacto"
+  }
+ ],
+ "pending_revalidation_resolved": [
+  "CF88:ART.74: revalidacao pendente desde a rodada B3 concluida nesta rodada como B26_RESOLUTION_REVALIDATION: VALID"
+ ],
+ "pending_revalidation": [],
+ "accepted_info_warnings": [
+  {
+   "target_id": "CF88:ART.73:PAR.2",
+   "code": "PARENT_REPETITION",
+   "detail": "CF88:ART.73: 0.311 (limite contratual 0.35)",
+   "note": "aviso informativo aceito pela revisao humana: a composicao do Tribunal precisa ser explicada no par. 2; sem contradicao nem copia acima do limite"
+  }
+ ],
+ "note": "Fila A parte 3 (final): A31-A42 de 42. Com esta rodada nenhuma explicacao do Batch06 fica pendente de revisao humana.",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.67",
+   "item": "A31",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA, exemplo e ATENCAO substituidos: \"sessao legislativa\" no lugar de \"ano legislativo\"; sem exigencia de assinatura ou subscricao; restricao limitada a mesma sessao legislativa; contraste com o art. 60, par. 5, incluindo \"havida por prejudicada\". \"Irrepetibilidade\" retirado do glossario (TERM_NOT_USED; remocao pre-autorizada \"salvo alerta contratual\"). O QUE DIZ mantido.",
+   "changed_sections": [
+    "atencao",
+    "exemplo_pratico",
+    "o_que_significa",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.67/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.67/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O art. 67 determina que a matéria de projeto de lei rejeitado só possa ser objeto de novo projeto, na mesma sessão legislativa, se houver proposta da maioria absoluta dos membros de uma das Casas do Congresso.",
+    "o_que_significa": "É o chamado princípio da irrepetibilidade. Rejeitado um projeto, o mesmo tema não volta, em regra, a ser apresentado no mesmo ano legislativo.\nA exceção exige apoio amplo: a nova proposta precisa ser assinada pela maioria absoluta dos membros da Câmara ou do Senado.",
+    "exemplo_pratico": "Um projeto sobre jornada de trabalho é rejeitado em maio. Em setembro do mesmo ano, outro projeto sobre a mesma matéria só pode ser apresentado se for subscrito pela maioria absoluta dos deputados ou dos senadores.",
+    "atencao": "A regra para projeto de lei é mais flexível que a da emenda constitucional: a proposta de emenda rejeitada não pode ser reapresentada na mesma sessão legislativa em hipótese alguma (art. 60, § 5º).",
+    "palavras_dificeis": [
+     {
+      "termo": "Irrepetibilidade",
+      "explicacao": "proibição de reapresentar a mesma matéria em certo período."
+     },
+     {
+      "termo": "Sessão legislativa",
+      "explicacao": "período anual de trabalho do Congresso."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.68",
+   "item": "A32",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA, exemplo e glossario substituidos: retirados \"instrumento pouco usado na pratica\" e o prazo temporal nao previsto no par. 2; \"delegacao legislativa\" usada no corpo (elimina TERM_NOT_USED); \"Resolucao\" definida pelo proprio art. 68. O QUE DIZ e ATENCAO mantidos.",
+   "changed_sections": [
+    "exemplo_pratico",
+    "o_que_significa",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.68/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.68/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O art. 68 estabelece que as leis delegadas são elaboradas pelo Presidente da República, que precisa pedir a delegação ao Congresso Nacional. Os parágrafos indicam as matérias que não podem ser delegadas, a forma da delegação e a possibilidade de o Congresso apreciar o projeto antes da edição.",
+    "o_que_significa": "Na lei delegada, o Congresso transfere ao Presidente, por tempo e conteúdo definidos, o poder de legislar sobre um tema.\nO caminho começa com o pedido do Presidente. O Congresso não delega por iniciativa própria.\nA delegação tem limites materiais e é feita por resolução, que fixa conteúdo e condições. É um instrumento pouco usado na prática, mas faz parte das espécies do art. 59.",
+    "exemplo_pratico": "O Presidente pede ao Congresso autorização para editar lei sobre a reorganização de incentivos a um setor econômico. Aprovada a resolução, ele edita a lei delegada dentro dos termos fixados.",
+    "atencao": "Lei delegada não se confunde com medida provisória: depende de autorização prévia do Congresso e não tem prazo de conversão.",
+    "palavras_dificeis": [
+     {
+      "termo": "Delegação legislativa",
+      "explicacao": "transferência temporária e limitada do poder de legislar ao Presidente."
+     },
+     {
+      "termo": "Resolução",
+      "explicacao": "ato do Congresso ou de uma Casa sobre matéria de sua competência própria."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.1",
+   "item": "A33",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA e glossario substituidos: os tres grupos de materias sem atribuir instrumento unico as competencias dos arts. 49, 51 e 52 e sem finalidade doutrinaria; \"Competencia exclusiva\" sem \"sem participacao do Presidente\"; \"Decreto legislativo\" retirado. Complementacao autorizada: \"ou, conforme o caso, do Senado Federal\" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ, exemplo e ATENCAO mantidos.",
+   "changed_sections": [
+    "o_que_significa",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.68:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.68:PAR.1/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "Pelo § 1º, ficam fora da delegação três grupos. O primeiro reúne os atos de competência exclusiva do Congresso e os de competência privativa da Câmara ou do Senado. O segundo é a matéria reservada a lei complementar. O terceiro é a legislação sobre: organização do Judiciário e do Ministério Público, incluídas a carreira e as garantias dos seus membros; nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e planos plurianuais, diretrizes orçamentárias e orçamentos.",
+    "o_que_significa": "Algumas matérias são vedadas por pertencerem ao núcleo das funções do próprio Legislativo, como as competências exclusivas e privativas, exercidas por decreto legislativo e resolução.\nOutras são vedadas por envolverem direitos fundamentais e instituições que não devem ficar à disposição de um ato do Executivo, como os direitos individuais e a organização do Judiciário.\nA matéria de lei complementar também fica de fora, porque exige maioria absoluta do Congresso.",
+    "exemplo_pratico": "O Presidente não pode receber delegação para editar lei sobre direitos eleitorais nem sobre o orçamento anual: são matérias vedadas pelos incisos II e III.",
+    "atencao": "A lista de vedações é parecida, mas não idêntica, à das medidas provisórias (art. 62, § 1º). É preciso conferir cada uma separadamente.",
+    "palavras_dificeis": [
+     {
+      "termo": "Competência exclusiva",
+      "explicacao": "atribuição que só o Congresso exerce, sem participação do Presidente."
+     },
+     {
+      "termo": "Direitos individuais",
+      "explicacao": "direitos fundamentais da pessoa, como os previstos no art. 5º."
+     },
+     {
+      "termo": "Decreto legislativo",
+      "explicacao": "ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.2",
+   "item": "A34",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "Glossario ajustado: \"Termos da delegacao\" sem limite temporal e \"Votacao unica\" com remissao ao par. 3. Demais secoes mantidas; apreciacao posterior continua condicionada a determinacao da resolucao.",
+   "changed_sections": [
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.68:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.68:PAR.2/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O § 2º determina que a delegação ao Presidente seja feita por resolução do Congresso, que especifica o seu conteúdo e os termos de seu exercício. O § 3º prevê que, se a resolução determinar a apreciação do projeto pelo Congresso, este a fará em votação única, sem possibilidade de emenda.",
+    "o_que_significa": "A resolução de delegação funciona como um mandato com limites: indica o tema, o alcance e as condições da lei a ser editada.\nHá duas modalidades. Na delegação sem apreciação, o Presidente edita a lei diretamente. Na delegação com apreciação, o Presidente elabora o projeto e o Congresso o aprova ou rejeita por inteiro, sem emendar.\nSe o Presidente ultrapassar os limites da delegação, o Congresso pode sustar o ato (art. 49, V).",
+    "exemplo_pratico": "A resolução autoriza o Presidente a elaborar lei sobre um programa de incentivos e exige que o projeto volte ao Congresso. O Congresso vota o texto em uma só votação, aprovando ou rejeitando, sem alterar o conteúdo.",
+    "atencao": "A proibição de emendas vale para a apreciação prevista no § 3º, e não para a votação da própria resolução de delegação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Votação única",
+      "explicacao": "deliberação em uma só votação, sem turnos sucessivos."
+     },
+     {
+      "termo": "Termos da delegação",
+      "explicacao": "limites de conteúdo, tempo e forma fixados na resolução."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.70",
+   "item": "A35",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "Aprovado sem alteracao: modalidades e parametros da fiscalizacao corretos; Congresso titular do controle externo, com auxilio do TCU; controle interno de cada Poder. v1 mantida byte-identica.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.70/BASE/1"
+  },
+  {
+   "target_id": "CF88:ART.70:PAR.UNICO",
+   "item": "A36",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE DIZ e glossario substituidos: \"obrigacoes de natureza pecuniaria\" no corpo; glossario alinhado ao texto. Complementacao autorizada: \"seja publica ou privada\" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE SIGNIFICA, exemplo e ATENCAO mantidos.",
+   "changed_sections": [
+    "o_que_diz",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.70:PAR.UNICO/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.70:PAR.UNICO/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O parágrafo único obriga a prestar contas toda pessoa, física ou jurídica, pública ou privada, que use, arrecade, guarde, gerencie ou administre dinheiro, bens ou valores públicos, ou pelos quais a União responda, e também quem assuma, em nome da União, obrigações de pagamento.",
+    "o_que_significa": "O dever de prestar contas não depende de quem a pessoa é, mas do que ela faz com recursos públicos.\nPor isso alcança também particulares: uma empresa, uma organização social ou uma pessoa que receba recursos federais para executar um projeto precisa demonstrar como os usou.\nO texto inclui ainda bens e valores pelos quais a União responda, e não apenas os que são diretamente seus.",
+    "exemplo_pratico": "Uma associação privada recebe verba federal para um projeto cultural. Mesmo sendo entidade privada, deve prestar contas do uso desse dinheiro.",
+    "atencao": "O dever alcança a parcela de recursos públicos administrada, e não toda a atividade da entidade privada.",
+    "palavras_dificeis": [
+     {
+      "termo": "Prestação de contas",
+      "explicacao": "demonstração de como recursos foram recebidos e utilizados."
+     },
+     {
+      "termo": "Natureza pecuniária",
+      "explicacao": "que envolve pagamento em dinheiro."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.71:INC.I",
+   "item": "A37",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA, exemplo, ATENCAO e glossario substituidos: TCU aprecia e emite parecer previo em sessenta dias do recebimento; Congresso julga (art. 49, IX); retirados \"peso politico e tecnico\" e \"aprovacao com ressalvas\"; \"Parecer previo\" identico ao art. 49, IX (v2). Complementacao autorizada: novo exemplo (elimina DUPLICATION com CF88:ART.49:INC.IX v2; similaridade 0,25).",
+   "changed_sections": [
+    "atencao",
+    "exemplo_pratico",
+    "o_que_significa",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.71:INC.I/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.71:INC.I/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O inciso I dá ao Tribunal a tarefa de examinar as contas apresentadas a cada ano pelo Presidente da República e de emitir sobre elas parecer prévio no prazo de sessenta dias, contado do recebimento.",
+    "o_que_significa": "Nas contas do Presidente, o Tribunal não julga: emite parecer técnico, que orienta a decisão.\nQuem julga essas contas é o Congresso Nacional (art. 49, IX).\nO parecer tem peso político e técnico relevante, porque reúne a análise da execução orçamentária e financeira do ano, mas a palavra final é do Legislativo.",
+    "exemplo_pratico": "O Tribunal recebe as contas anuais do governo e, em sessenta dias, emite parecer recomendando a aprovação com ressalvas. O Congresso pode seguir ou não essa recomendação ao julgar.",
+    "atencao": "Não confundir com o inciso II: as contas dos demais administradores são julgadas pelo próprio Tribunal.",
+    "palavras_dificeis": [
+     {
+      "termo": "Parecer prévio",
+      "explicacao": "opinião técnica que antecede e orienta o julgamento de outro órgão."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.71:INC.II",
+   "item": "A38",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario substituidos: TCU julga as contas do inciso II, distinto do inciso I; sem a classificacao infraconstitucional \"regulares ou irregulares\"; \"Erario\" identico ao art. 71, VIII (v2); \"Imputacao de debito\" redefinida; \"Titulo executivo\" retirado (deixou de ser usado). Complementacao autorizada: \"as fundacoes e as sociedades\" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). ATENCAO mantida.",
+   "changed_sections": [
+    "exemplo_pratico",
+    "o_que_diz",
+    "o_que_significa",
+    "palavras_dificeis"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.71:INC.II/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.71:INC.II/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal. Também cabe ao Tribunal julgar as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos.",
+    "o_que_significa": "Aqui o Tribunal julga de fato: decide se as contas são regulares ou irregulares.\nO julgamento alcança gestores públicos e também quem, mesmo sem ser gestor, causou dano ao erário.\nContas julgadas irregulares podem gerar imputação de débito e multa, com força de título executivo (§ 3º), além de outras consequências previstas em lei.",
+    "exemplo_pratico": "O diretor de uma autarquia federal tem as contas do ano examinadas pelo Tribunal, que as julga irregulares por pagamentos sem comprovação do serviço e determina a devolução dos valores.",
+    "atencao": "Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efeitos de contas julgadas irregulares em outras esferas, como a eleitoral, dependem de lei.",
+    "palavras_dificeis": [
+     {
+      "termo": "Erário",
+      "explicacao": "conjunto dos recursos financeiros do poder público."
+     },
+     {
+      "termo": "Imputação de débito",
+      "explicacao": "determinação de que o responsável devolva valor aos cofres públicos."
+     },
+     {
+      "termo": "Título executivo",
+      "explicacao": "documento que permite cobrar judicialmente uma dívida de forma direta."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.71:INC.IX",
+   "item": "A39",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA, exemplo e ATENCAO substituidos: sequencia ilegalidade-prazo-sustacao do ato-comunicacao; retirado o prazo numerico do exemplo; ATENCAO alinhada ao art. 71, par. 1 (v2), sem fechar o alcance de \"decidira a respeito\". Complementacao autorizada: \"tome as providencias\" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ e glossario mantidos.",
+   "changed_sections": [
+    "atencao",
+    "exemplo_pratico",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.71:INC.IX/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.71:INC.IX/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "Os incisos IX e X tratam da reação do Tribunal diante de ilegalidade. Ele pode fixar prazo para que o órgão ou entidade tome as medidas necessárias ao cumprimento da lei e, se não for atendido, sustar a execução do ato impugnado, comunicando a decisão à Câmara e ao Senado.",
+    "o_que_significa": "Há uma sequência. Primeiro, o Tribunal dá ao órgão a oportunidade de corrigir a ilegalidade. Só se o órgão não agir é que o Tribunal suspende o ato.\nA sustação é medida forte: interrompe diretamente os efeitos do ato administrativo.\nO poder de sustar alcança atos. Para contratos, a regra é diferente e está nos §§ 1º e 2º.",
+    "exemplo_pratico": "O Tribunal verifica que um edital de concurso viola a lei e dá trinta dias para o órgão corrigi-lo. Sem correção, o Tribunal susta o edital e informa as duas Casas do Congresso.",
+    "atencao": "A sustação direta pelo Tribunal vale para atos, e não para contratos. A distinção entre os dois é decisiva para saber quem pode suspender.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assinar prazo",
+      "explicacao": "fixar um prazo para que alguém adote certa providência."
+     },
+     {
+      "termo": "Ato impugnado",
+      "explicacao": "ato contestado por ser considerado irregular."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.72",
+   "item": "A40",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA ajustado: \"disfarcados\" substituido por formulacao neutra. Complementacao autorizada: \"ou sob a forma de subsidios nao aprovados\" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). Sequencia constitucional, prazos de cinco e trinta dias e proposta da comissao ao Congresso preservados. Demais secoes e glossario mantidos.",
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.72/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.72/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O art. 72 permite que a comissão mista permanente de orçamento (art. 166, § 1º), diante de indícios de despesas não autorizadas, peça explicações à autoridade responsável em cinco dias. Sem resposta satisfatória, a comissão pede ao Tribunal de Contas manifestação conclusiva em trinta dias; se o Tribunal considerar a despesa irregular e a comissão entender que ela pode causar dano irreparável ou grave lesão à economia pública, propõe ao Congresso a sua sustação.",
+    "o_que_significa": "O artigo cria um procedimento rápido para gastos feitos sem autorização orçamentária, inclusive disfarçados de investimentos não programados ou subsídios não aprovados.\nO rito tem três etapas: pedido de esclarecimento à autoridade; consulta ao Tribunal de Contas; proposta de sustação ao Congresso.\nA decisão final de sustar é do Congresso, a partir da proposta da comissão.",
+    "exemplo_pratico": "A comissão de orçamento identifica que um órgão está financiando um programa que não consta do orçamento. Pede explicações; a resposta é insuficiente; o Tribunal confirma a irregularidade; a comissão propõe ao Congresso sustar a despesa.",
+    "atencao": "A proposta de sustação depende de dois requisitos: a irregularidade apontada pelo Tribunal e o risco de dano irreparável ou grave lesão à economia pública.",
+    "palavras_dificeis": [
+     {
+      "termo": "Comissão mista permanente",
+      "explicacao": "comissão de deputados e senadores responsável pelos temas orçamentários."
+     },
+     {
+      "termo": "Subsídio",
+      "explicacao": "auxílio financeiro concedido pelo poder público."
+     },
+     {
+      "termo": "Pronunciamento conclusivo",
+      "explicacao": "manifestação final sobre a questão."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.2",
+   "item": "A41",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA e ATENCAO substituidos: Senado aprova a escolha presidencial; terceira escolha sem lista triplice, mas sujeita aos requisitos do par. 1; retiradas as afirmacoes externas sobre a natureza do Ministerio Publico junto ao Tribunal e a ordem de vacancia. PARENT_REPETITION informativo (0,311 x CF88:ART.73) aceito pela revisao humana. O QUE DIZ, exemplo e glossario mantidos.",
+   "changed_sections": [
+    "atencao",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.73:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.73:PAR.2/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O § 2º divide a escolha dos Ministros: um terço pelo Presidente da República, com aprovação do Senado, sendo duas dessas vagas preenchidas, alternadamente, por auditores e por membros do Ministério Público junto ao Tribunal, a partir de lista tríplice elaborada pelo Tribunal por antiguidade e merecimento; e dois terços pelo Congresso Nacional.",
+    "o_que_significa": "Com nove Ministros, o Presidente escolhe três e o Congresso, seis.\nDas três vagas do Presidente, duas são reservadas a membros de carreira técnica: auditores e integrantes do Ministério Público que atua no Tribunal. Nessas, ele escolhe dentro de uma lista de três nomes enviada pelo próprio Tribunal.\nA terceira vaga presidencial é de livre escolha, também sujeita à aprovação do Senado.",
+    "exemplo_pratico": "Abre-se uma vaga reservada aos auditores. O Tribunal envia ao Presidente lista com três auditores; o Presidente escolhe um e submete o nome ao Senado.",
+    "atencao": "O Ministério Público junto ao Tribunal de Contas é um órgão próprio, distinto do Ministério Público da União. A alternância entre as vagas de carreira segue a ordem de vacância.",
+    "palavras_dificeis": [
+     {
+      "termo": "Lista tríplice",
+      "explicacao": "relação de três nomes da qual a autoridade escolhe um."
+     },
+     {
+      "termo": "Auditor",
+      "explicacao": "membro de carreira do Tribunal que pode substituir Ministros."
+     },
+     {
+      "termo": "Antiguidade e merecimento",
+      "explicacao": "critérios de escolha por tempo de carreira e por desempenho."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.74:PAR.2",
+   "item": "A42",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "A",
+   "review_reason": "O QUE SIGNIFICA, exemplo e ATENCAO substituidos: todos os legitimados, sem exigir prejuizo pessoal; \"na forma da lei\" preservada no O QUE DIZ e explicada no O QUE SIGNIFICA; \"Um cidadao\" no exemplo. Conclui a revalidacao da resolucao do B26 (VALID). O QUE DIZ e glossario mantidos.",
+   "changed_sections": [
+    "atencao",
+    "exemplo_pratico",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.74:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.74:PAR.2/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O § 2º reconhece a qualquer cidadão, partido político, associação ou sindicato legitimidade para levar ao Tribunal de Contas da União, na forma da lei, denúncia sobre irregularidades ou ilegalidades.",
+    "o_que_significa": "O parágrafo abre o controle das contas públicas à participação social.\nQualquer cidadão pode denunciar, sem precisar demonstrar prejuízo pessoal.\nO Tribunal examina a denúncia e, se houver fundamento, apura os fatos. A expressão \"na forma da lei\" indica que os requisitos de apresentação são definidos pela legislação.",
+    "exemplo_pratico": "Um morador percebe que uma obra paga com verba federal está parada há meses, embora conste como concluída. Ele pode apresentar denúncia ao Tribunal de Contas da União.",
+    "atencao": "A denúncia não é uma ação judicial: leva os fatos ao Tribunal, que decide se e como apurar.",
+    "palavras_dificeis": [
+     {
+      "termo": "Legitimidade",
+      "explicacao": "qualidade de quem pode, por lei, praticar determinado ato."
+     },
+     {
+      "termo": "Denúncia",
+      "explicacao": "comunicação formal de irregularidade a um órgão de controle."
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,2847 @@
+{
+ "schema_version": 2,
+ "triage": "T1_PENDING_TRIAGE_RECALIBRATED",
+ "validator": "T1_VALIDATOR_V3 (A6 + recalibracao Batch06 + licoes da fila D, 2026-10-05)",
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "as_of": "2026-10-04",
+ "auto_approve": {
+  "LOW": false,
+  "MEDIUM": false
+ },
+ "policy": "somente classificacao; nenhum texto, status ou versao alterado; o detector roteia risco e nao substitui revisao juridica",
+ "axes": {
+  "LEGAL_RISK": "ha risco real de interpretacao juridica incorreta? (t1_risk.assess)",
+  "VERIFICATION_COMPLEXITY": "quao dificil e verificar o draft deterministicamente? (t1_risk.complexity)"
+ },
+ "legal_high_rules": {
+  "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": "o proprio draft diz que a leitura do texto nao basta (escopo delimitado pela jurisprudencia), ou ha nota JURISPRUDENCIA e o corpo afirma condicao/norma sem base no texto",
+  "INTERPRETIVE_CONTROVERSY": "o draft registra controversia/debate aberto sobre o dispositivo",
+  "CONSTITUTIONAL_AMBIGUITY": "ambiguidade ou conflito entre dispositivos sinalizado pelo draft ou registrado (registro de ambiguidades)",
+  "SANCTION_WITH_INTERPRETATION": "perda de mandato/cargo, imunidade, prisao ou sancao com questao interpretativa apontada pelo proprio draft",
+  "EXTERNAL_DEPENDENCY_MATERIAL": "conteudo externo afirmado no nucleo (O QUE DIZ / O QUE SIGNIFICA) sem evidencia suficiente",
+  "TRANSITION_OR_TEMPORAL": "regra de transicao, nota temporal ou vigencia futura",
+  "LEGAL_CONTENT_FINDING": "alerta juridico do validador (contradicao de catalogo, interpretacao como regra, estado de lei, ambiguidade)"
+ },
+ "counts": {
+  "A_CLEAN_LOW": 42,
+  "B_CLEAN_MEDIUM": 9,
+  "C_QUICK_REVIEW": 0,
+  "D_FULL_HUMAN_REVIEW": 0,
+  "E_HARD_FAIL": 0
+ },
+ "legal_risk_counts": {
+  "LOW": 42,
+  "MEDIUM": 9
+ },
+ "complexity_counts": {
+  "STRUCTURED": 42,
+  "EXTERNAL": 5,
+  "SIMPLE": 4
+ },
+ "jurisprudence_counts": {
+  "NONE": 47,
+  "CONTEXT_ONLY": 4
+ },
+ "by_legal_risk": {
+  "LOW": {
+   "A_CLEAN_LOW": 42,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "MEDIUM": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 9,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "HIGH": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  }
+ },
+ "by_complexity": {
+  "SIMPLE": {
+   "A_CLEAN_LOW": 3,
+   "B_CLEAN_MEDIUM": 1,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "STRUCTURED": {
+   "A_CLEAN_LOW": 38,
+   "B_CLEAN_MEDIUM": 4,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "EXTERNAL": {
+   "A_CLEAN_LOW": 1,
+   "B_CLEAN_MEDIUM": 4,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  }
+ },
+ "rows": [
+  {
+   "target_id": "CF88:ART.42",
+   "title": "Art. 42 — Militares dos Estados, do Distrito Federal e dos Territórios",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 14, 37, 40, 142",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.42:PAR.1",
+   "title": "Art. 42, § 1º — Regras aplicáveis aos militares estaduais",
+   "role": "DEVICE",
+   "sub_block": "A",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 14, 40, 142"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.42:PAR.3",
+   "title": "Art. 42, § 3º — Acumulação de cargos pelo militar estadual",
+   "role": "DEVICE",
+   "sub_block": "A",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 37"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "aos militares dos estados do distrito federal e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "HISTORICAL_CLAIM_SUPPORTED",
+     "section": "atencao",
+     "match": "foi incluído pela Emenda Constitucional nº 101, de 2019",
+     "detail": "emenda registrada nas anotacoes de vigencia do plano do lote"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXCEPTION_NOT_IN_TEXT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.43:PAR.2",
+   "title": "Art. 43, § 2º — Incentivos regionais",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "block com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "nas regiões de baixa renda sujeitas a secas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    },
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "o_que_significa",
+     "match": "incentivos",
+     "detail": "substantivo da propria Lei Seca do artigo"
+    },
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "exemplo_pratico",
+     "match": "sempre",
+     "detail": "mesma expressao no artigo"
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.44",
+   "title": "Art. 44 — Congresso Nacional e legislatura",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: quatro anos",
+    "number_or_percentage: quatro",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "8 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    },
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "2",
+     "detail": "numero do exemplo nao esta no texto"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "atencao",
+     "match": "8 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.45",
+   "title": "Art. 45 — Câmara dos Deputados",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.45:PAR.1: Vide Lei Complementar n. 78, de 1993 (numero total de Deputados e representacao por Estado))",
+    "number_or_percentage: oito",
+    "law_dependency: lei complementar",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do povo eleitos pelo sistema proporcional em cada",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.46",
+   "title": "Art. 46 — Senado Federal",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: oito anos",
+    "number_or_percentage: três",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "representantes dos estados e do distrito federal eleitos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "o_que_significa",
+     "match": "todos os",
+     "detail": "quantificador distributivo do texto (\"cada\")"
+    },
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_diz",
+     "match": "fracao 1/3 , fracao 2/3 ",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.47",
+   "title": "Art. 47 — Quórum das deliberações",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "exception: Salvo",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "exemplo_pratico",
+     "match": "só pode",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    },
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "21, 40",
+     "detail": "numero do exemplo nao esta no texto"
+    },
+    {
+     "code": "EXAMPLE_NUMBER_NOT_IN_TEXT",
+     "section": "exemplo_pratico",
+     "match": "16",
+     "detail": "numero do exemplo nao esta no texto"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [
+    "TRANSITION_IN_CORE:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "title": "Art. 49 — Competência exclusiva do Congresso",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: quinze dias",
+    "number_or_percentage: quinze",
+    "exception: ressalvados",
+    "law_dependency: previstos em lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 37, 167",
+    "overview com 20 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "HISTORICAL_CLAIM_SUPPORTED",
+     "section": "atencao",
+     "match": "foi incluído pela Emenda Constitucional nº 109, de 2021",
+     "detail": "emenda registrada nas anotacoes de vigencia do plano do lote"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49:INC.V",
+   "title": "Art. 49, inciso V — Sustação de atos normativos do Executivo",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: regulament"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "sustar os atos normativos do poder executivo que",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.49:INC.IX",
+   "title": "Art. 49, inciso IX — Julgamento das contas do Presidente",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "LOW",
+    "queue": "A_CLEAN_LOW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "os relatórios sobre a execução dos planos de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.51",
+   "title": "Art. 51 — Competências privativas da Câmara",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: sessenta dias",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 89",
+    "overview com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.52:INC.III",
+   "title": "Art. 52, inciso III — Aprovação prévia de autoridades pelo Senado",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "do tribunal de contas da união indicados pelo",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.6",
+   "title": "Art. 53, § 6º — Dispensa de testemunhar sobre informações do mandato",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.54",
+   "title": "Art. 54 — Incompatibilidades dos parlamentares",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: salvo",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.54:INC.II",
+   "title": "Art. 54, inciso II — Vedações desde a posse",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 5 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de mais de um cargo ou mandato público",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.56:PAR.1",
+   "title": "Art. 56, §§ 1º e 2º — Suplente e eleição para preencher a vaga",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: vinte dias",
+    "number_or_percentage: cento",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de licença superior a cento e vinte dias",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.2",
+   "title": "Art. 57, § 2º — Recesso condicionado à aprovação da LDO",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "LOW",
+    "queue": "C_QUICK_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "EXAMPLE_NUMBER:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.7",
+   "title": "Art. 57, §§ 7º e 8º — Pauta da sessão extraordinária",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "AUTOMATIC_CONSEQUENCE",
+     "section": "o_que_significa",
+     "match": "automaticamente",
+     "detail": "consequencia automatica expressa no artigo"
+    }
+   ],
+   "lint": [
+    "ABSOLUTE_CLAIM"
+   ],
+   "editorial_checks": [
+    "ABSOLUTE_CLAIM:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.58",
+   "title": "Art. 58 — Comissões do Congresso e de suas Casas",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "deadline: prazo",
+    "number_or_percentage: décimo",
+    "exception: salvo",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "tanto quanto possível a representação proporcional dos partidos",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.58:PAR.2",
+   "title": "Art. 58, § 2º — O que as comissões podem fazer",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: décimo",
+    "exception: salvo",
+    "block com 7 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "recurso de um décimo dos membros da casa",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.59",
+   "title": "Art. 59 — Espécies do processo legislativo",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "overview com 10 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.61:PAR.2",
+   "title": "Art. 61, § 2º — Iniciativa popular de lei",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: por cento"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "décimos por cento dos eleitores de cada um",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.2",
+   "title": "Art. 62, § 2º — Medida provisória sobre impostos",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: exceto",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_LOW_UTILITY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.3",
+   "title": "Art. 62, §§ 3º, 4º e 7º — Prazo de vigência da medida provisória",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: sessenta",
+    "exception: ressalvado",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "o_que_significa",
+     "match": "120 dias",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.10",
+   "title": "Art. 62, § 10 — Proibição de reeditar medida provisória",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.11",
+   "title": "Art. 62, §§ 11 e 12 — Efeitos depois da rejeição ou da aprovação com alterações",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: sessenta dias",
+    "number_or_percentage: sessenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.64",
+   "title": "Art. 64 — Início na Câmara e urgência constitucional",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco dias",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.64:PAR.2",
+   "title": "Art. 64, §§ 2º, 3º e 4º — Prazos da urgência pedida pelo Presidente",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco dias",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cada qual sucessivamente em até quarenta e cinco",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "EXCEPTION_NOT_IN_TEXT:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.7",
+   "title": "Art. 66, § 7º — Quem promulga a lei",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: oito horas",
+    "number_or_percentage: quarenta"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.67",
+   "title": "Art. 67 — Reapresentação de projeto rejeitado",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "objeto de novo projeto na mesma sessão legislativa",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "exemplo_pratico",
+     "match": "só pode",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.68",
+   "title": "Art. 68 — Leis delegadas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "exemplo_pratico",
+     "match": "incentivos",
+     "detail": "designa a materia (objeto da lei/medida), nao finalidade"
+    }
+   ],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.1",
+   "title": "Art. 68, § 1º — Matérias que não podem ser delegadas",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "block com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.2",
+   "title": "Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "MEDIUM",
+    "queue": "C_QUICK_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a resolução determinar a apreciação do projeto pelo",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "TELEOLOGY_SPECULATIVE",
+     "section": "exemplo_pratico",
+     "match": "incentivos",
+     "detail": "designa a materia (objeto da lei/medida), nao finalidade"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.70",
+   "title": "Art. 70 — Fiscalização da União: controle externo e interno",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.70:PAR.UNICO",
+   "title": "Art. 70, parágrafo único — Quem deve prestar contas",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pessoa física ou jurídica pública ou privada que",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.I",
+   "title": "Art. 71, inciso I — Parecer prévio sobre as contas do Presidente",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: sessenta dias",
+    "number_or_percentage: sessenta"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.II",
+   "title": "Art. 71, inciso II — Julgamento das contas de administradores",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "LOW",
+    "queue": "C_QUICK_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "bens e valores públicos da administração direta e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.IX",
+   "title": "Art. 71, incisos IX e X — Prazo para correção e sustação de atos",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "block com 2 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a execução do ato impugnado comunicando a decisão",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "30 dias",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.72",
+   "title": "Art. 72 — Despesas não autorizadas: atuação da comissão mista",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: cinco",
+    "remissao: arts. 166",
+    "overview com 4 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "1 diante de indícios de despesas não autorizadas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.2",
+   "title": "Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "number_or_percentage: dois",
+    "block com 3 dispositivos"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "pelo presidente da república com aprovação do senado",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74:PAR.2",
+   "title": "Art. 74, § 2º — Denúncia de irregularidades ao Tribunal",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "LOW",
+   "legal_rules": [],
+   "legal_reasons": [],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei"
+   ],
+   "queue": "A_CLEAN_LOW",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK LOW",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.69",
+   "title": "Art. 69 — Quórum da lei complementar",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas ",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [
+    {
+     "code": "UNIVERSAL_CLAIM",
+     "section": "exemplo_pratico",
+     "match": "todos os",
+     "detail": "reproduz quorum/condicao explicita do texto"
+    }
+   ],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.III",
+   "title": "Art. 71, inciso III — Registro de admissões e aposentadorias",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O prazo para o registro de aposentadorias e o direito do interessado ao contraditório são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"temas de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: excetuad"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "EXAMPLE_REQUIREMENT_LANGUAGE"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:INC.VIII",
+   "title": "Art. 71, inciso VIII — Sanções aplicadas pelo Tribunal",
+   "role": "ITEM",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: previstas em lei"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:PAR.1",
+   "title": "Art. 71, §§ 1º e 2º — Sustação de contratos",
+   "role": "BLOCK",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"tema de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "number_or_percentage: noventa",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "TERM_NOT_USED"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.71:PAR.3",
+   "title": "Art. 71, § 3º — Força das decisões que impõem débito ou multa",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A legitimidade para executar as decisões do Tribunal de Contas é tema da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"tema de interpretação constitucional\" (o draft nao responde; remete)",
+    "SENSITIVE_THEME: multa"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, INTERPRETIVE_QUESTION_DEFERRED, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73",
+   "title": "Art. 73 — Composição e organização do Tribunal de Contas da União",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "deadline: setenta anos",
+    "number_or_percentage: nove",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 40, 96",
+    "overview com 12 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.3",
+   "title": "Art. 73, § 3º — Garantias dos Ministros do Tribunal de Contas da União",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os ministros do tribunal de contas da união",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74",
+   "title": "Art. 74 — Sistema de controle interno",
+   "role": "OVERVIEW",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "overview com 8 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "LAW_DEPENDENCY_OMITTED:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.74:PAR.1",
+   "title": "Art. 74, § 1º — Dever de comunicar irregularidades",
+   "role": "DEVICE",
+   "sub_block": "D",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": {
+    "risk": "HIGH",
+    "queue": "D_FULL_HUMAN_REVIEW"
+   },
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ao tribunal de contas da união sob pena",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  }
+ ],
+ "migration": {
+  "previous_counts": {
+   "D_FULL_HUMAN_REVIEW": 47,
+   "A_CLEAN_LOW": 1,
+   "C_QUICK_REVIEW": 3
+  },
+  "previous_D": 47,
+  "previous_D_now": {
+   "A_CLEAN_LOW": 38,
+   "B_CLEAN_MEDIUM": 9
+  },
+  "previous_D_migrated": 47,
+  "previous_risk_counts": {
+   "HIGH": 47,
+   "LOW": 3,
+   "MEDIUM": 1
+  }
+ },
+ "d_reasons": {},
+ "finding_counts": {},
+ "refined_false_positive_counts": {
+  "AUTOMATIC_CONSEQUENCE": 1,
+  "TELEOLOGY_SPECULATIVE": 4,
+  "UNIVERSAL_CLAIM": 5
+ },
+ "metrics": {
+  "total_draft_chars": 65350,
+  "old_model_full_package_chars": 119239,
+  "presented_chars": 39571,
+  "presented_by_file": {
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 39064,
+   "BATCH06_FULL_HUMAN_REVIEW.md": 218,
+   "BATCH06_HARD_FAIL_REPORT.md": 119,
+   "BATCH06_QUICK_REVIEW.md": 170
+  },
+  "reduction_abs": 79668,
+  "reduction_pct": 66.8,
+  "checkpoint_presented_chars": 265430
+ },
+ "d_full_package": "GERADO",
+ "micro_adjustments": {
+  "applied": 0,
+  "eligible": 22,
+  "microauto_apply": false
+ },
+ "human_approved_t1_granted": 42,
+ "round_approvals": {
+  "review_scopes": [
+   "CF88_BATCH06_TRIAGE_QUEUE_D",
+   "CF88_BATCH06_TRIAGE_QUEUE_C",
+   "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+   "CF88_BATCH06_TRIAGE_QUEUE_B_PART2"
+  ],
+  "gate": [
+   {
+    "target_id": "CF88:ART.43",
+    "explanation_id": "ENTENDA/CF88:ART.43/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.45:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.45:PAR.1/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "EXTERNAL_FACT_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.48",
+    "explanation_id": "ENTENDA/CF88:ART.48/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.49:INC.I",
+    "explanation_id": "ENTENDA/CF88:ART.49:INC.I/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.50",
+    "explanation_id": "ENTENDA/CF88:ART.50/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.50:PAR.2",
+    "explanation_id": "ENTENDA/CF88:ART.50:PAR.2/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.51:INC.I",
+    "explanation_id": "ENTENDA/CF88:ART.51:INC.I/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.52",
+    "explanation_id": "ENTENDA/CF88:ART.52/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.52:INC.I",
+    "explanation_id": "ENTENDA/CF88:ART.52:INC.I/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.52:INC.X",
+    "explanation_id": "ENTENDA/CF88:ART.52:INC.X/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.52:PAR.UNICO",
+    "explanation_id": "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.53",
+    "explanation_id": "ENTENDA/CF88:ART.53/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.53:CAPUT",
+    "explanation_id": "ENTENDA/CF88:ART.53:CAPUT/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "EXTERNAL_FACT_WITH_PROVENANCE",
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.53:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.53:PAR.1/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.53:PAR.2",
+    "explanation_id": "ENTENDA/CF88:ART.53:PAR.2/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 3,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.53:PAR.3",
+    "explanation_id": "ENTENDA/CF88:ART.53:PAR.3/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.53:PAR.8",
+    "explanation_id": "ENTENDA/CF88:ART.53:PAR.8/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.54:INC.I",
+    "explanation_id": "ENTENDA/CF88:ART.54:INC.I/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.55",
+    "explanation_id": "ENTENDA/CF88:ART.55/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.55:INC.VI",
+    "explanation_id": "ENTENDA/CF88:ART.55:INC.VI/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.55:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.55:PAR.1/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.55:PAR.2",
+    "explanation_id": "ENTENDA/CF88:ART.55:PAR.2/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.55:PAR.4",
+    "explanation_id": "ENTENDA/CF88:ART.55:PAR.4/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.56",
+    "explanation_id": "ENTENDA/CF88:ART.56/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.57",
+    "explanation_id": "ENTENDA/CF88:ART.57/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.57:PAR.4",
+    "explanation_id": "ENTENDA/CF88:ART.57:PAR.4/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.57:PAR.6",
+    "explanation_id": "ENTENDA/CF88:ART.57:PAR.6/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.58:PAR.3",
+    "explanation_id": "ENTENDA/CF88:ART.58:PAR.3/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.61",
+    "explanation_id": "ENTENDA/CF88:ART.61/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.61:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.61:PAR.1/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.62",
+    "explanation_id": "ENTENDA/CF88:ART.62/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.62:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.62:PAR.1/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.62:PAR.5",
+    "explanation_id": "ENTENDA/CF88:ART.62:PAR.5/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.62:PAR.6",
+    "explanation_id": "ENTENDA/CF88:ART.62:PAR.6/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.63",
+    "explanation_id": "ENTENDA/CF88:ART.63/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "EXTERNAL_FACT_WITH_PROVENANCE",
+     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
+    ],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.65",
+    "explanation_id": "ENTENDA/CF88:ART.65/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.66",
+    "explanation_id": "ENTENDA/CF88:ART.66/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.66:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.66:PAR.1/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.66:PAR.4",
+    "explanation_id": "ENTENDA/CF88:ART.66:PAR.4/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.71",
+    "explanation_id": "ENTENDA/CF88:ART.71/BASE/1",
+    "editorial_version": 1,
+    "decision": "APPROVED",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 0,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.73:PAR.1",
+    "explanation_id": "ENTENDA/CF88:ART.73:PAR.1/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+    "provenance_items": 1,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [],
+    "gate": "PASS"
+   },
+   {
+    "target_id": "CF88:ART.75",
+    "explanation_id": "ENTENDA/CF88:ART.75/BASE/2",
+    "editorial_version": 2,
+    "decision": "APPROVED_AFTER_ADJUSTMENT",
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "provenance_items": 2,
+    "hard_fail": [],
+    "review_required_open": [],
+    "editorial_checks_open": 0,
+    "info": [
+     "SEMANTIC_AMBIGUITY_RESOLVED"
+    ],
+    "gate": "PASS"
+   }
+  ],
+  "approved": 42,
+  "approved_unchanged": 12,
+  "approved_after_adjustment": 30,
+  "retired_versions": [
+   "ENTENDA/CF88:ART.48/BASE/1",
+   "ENTENDA/CF88:ART.49:INC.I/BASE/1",
+   "ENTENDA/CF88:ART.50:PAR.2/BASE/1",
+   "ENTENDA/CF88:ART.52/BASE/1",
+   "ENTENDA/CF88:ART.52:INC.I/BASE/1",
+   "ENTENDA/CF88:ART.52:PAR.UNICO/BASE/1",
+   "ENTENDA/CF88:ART.53/BASE/1",
+   "ENTENDA/CF88:ART.53:CAPUT/BASE/1",
+   "ENTENDA/CF88:ART.53:PAR.1/BASE/1",
+   "ENTENDA/CF88:ART.53:PAR.2/BASE/1",
+   "ENTENDA/CF88:ART.53:PAR.3/BASE/1",
+   "ENTENDA/CF88:ART.53:PAR.8/BASE/1",
+   "ENTENDA/CF88:ART.55/BASE/1",
+   "ENTENDA/CF88:ART.55:INC.VI/BASE/1",
+   "ENTENDA/CF88:ART.55:PAR.1/BASE/1",
+   "ENTENDA/CF88:ART.55:PAR.4/BASE/1",
+   "ENTENDA/CF88:ART.56/BASE/1",
+   "ENTENDA/CF88:ART.57/BASE/1",
+   "ENTENDA/CF88:ART.58:PAR.3/BASE/1",
+   "ENTENDA/CF88:ART.61:PAR.1/BASE/1",
+   "ENTENDA/CF88:ART.62/BASE/1",
+   "ENTENDA/CF88:ART.62:PAR.1/BASE/1",
+   "ENTENDA/CF88:ART.62:PAR.5/BASE/1",
+   "ENTENDA/CF88:ART.62:PAR.6/BASE/1",
+   "ENTENDA/CF88:ART.63/BASE/1",
+   "ENTENDA/CF88:ART.65/BASE/1",
+   "ENTENDA/CF88:ART.66/BASE/1",
+   "ENTENDA/CF88:ART.66:PAR.1/BASE/1",
+   "ENTENDA/CF88:ART.73:PAR.1/BASE/1",
+   "ENTENDA/CF88:ART.75/BASE/1"
+  ]
+ },
+ "approval_totals": {
+  "global_before": 289,
+  "batch06_new_approved": 42,
+  "global_after": 331,
+  "batch06_new_pending": 51,
+  "batch06_reused_pilots_already_approved": 3,
+  "note": "pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo"
+ },
+ "text_source": {
+  "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt": {
+   "sha256": "3100e09700b1c0ce4ba97e30dc9978d31e5ec645f1ae03f437d7212f41d2a7a2",
+   "reconstructible_from_git": true
+  }
+ },
+ "relations_pin": {
+  "file": "BATCH06_RELATIONS_PIN.json",
+  "coverage": "PARCIAL: so as relacoes que o resolver consultou no checkpoint. Atualizacao do pin para o escopo inteiro (arts. 42-75) exige as pastas locais do Relations Engine: NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY."
+ },
+ "validator_limits": [
+  "NUMBER_NOT_IN_TEXT compara quantidades, nao o sentido: um numero correto do texto usado no lugar errado passa; numeros por extenso so sao lidos em formas cardinais (um..mil) e fracoes (terco, quinto, quarto, metade, decimo); ordinais e datas ficam fora.",
+  "RESSALVA_OMITTED_IN_SUMMARY reconhece que a explicacao \"fala\" de um dispositivo por radicais compartilhados (>= 2); parafrase com vocabulario totalmente diferente nao e reconhecida (falso negativo), e dispositivo com explicacao propria no lote nao e cobrado.",
+  "LIST_ITEM_POSSIBLY_DROPPED usa radicais distintivos de cada item; sinonimos escapam (falso positivo) e omissao em lista curta (< 3 itens) nao e verificada. Listas declaradas seletivas (\"entre elas\", \"por exemplo\") nao sao cobradas.",
+  "EXTERNAL_NORMATIVE_CONTENT_CLAIM depende de verbo de afirmacao normativa perto da referencia; afirmacao implicita sobre lei externa sem esse verbo nao e detectada. Remissao a artigo da propria CF presente no runtime e tratada como ancorada (o pacote D lista o texto).",
+  "A distincao JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS x CONTEXT_ONLY le os marcadores de dependencia interpretativa que o proprio draft escreve; jurisprudencia necessaria e nao sinalizada pelo draft so e pega quando ha nota da camada e condicao sem base no texto.",
+  "JURISPRUDENCE_CLAIM_WITHOUT_PROVENANCE so reconhece afirmacoes explicitas (\"o Supremo decidiu/exige/admite\", \"a jurisprudencia delimita/reconhece\"); jurisprudencia implicita (regra afirmada sem atribuicao) nao e detectada.",
+  "PRISON_SCOPE_UNQUALIFIED cobre so a vedacao de prisao formulada como absoluta; outras garantias processuais ensinadas como absolutas dependem de UNIVERSAL_CLAIM/EXCEPTION_OR_RESSALVA_DROPPED.",
+  "Nenhum check interpreta juridicamente o dispositivo: eles roteiam risco para revisao humana."
+ ],
+ "validator_v3_regression_batch05": {
+  "changes_requested_v1": 43,
+  "true_positives_v2": 40,
+  "true_positives_v3": 41,
+  "lost_by_v3": [],
+  "gained_by_v3": [
+   "CF88:ART.37:PAR.9"
+  ],
+  "approved_unchanged_v1": 26,
+  "flagged_v2": 8,
+  "flagged_v3": 14,
+  "new_codes_on_approved_unchanged": {
+   "CONDITION_NOT_IN_TEXT": 1,
+   "HISTORICAL_CLAIM_UNVERIFIED": 3,
+   "LIST_ITEM_POSSIBLY_DROPPED": 2,
+   "NUMBER_NOT_IN_TEXT": 1,
+   "RESSALVA_OMITTED_IN_SUMMARY": 3
+  }
+ }
+}
