@@ -1,0 +1,456 @@
+{
+ "schema_version": 2,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "review_date": "2026-10-09",
+ "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+ "reviewer_decision": "HUMAN_LEGAL_REVIEW_QUEUE_C",
+ "original_drafts": "BATCH_06_DRAFTS_PRE_ROUND_C.json",
+ "original_drafts_preserved": true,
+ "original_evidence_sha256": {
+  "BATCH_06_DRAFTS_PRE_ROUND_C.json": "52f01e00402a38510a3d1a6af0f44433489f9c8470ec8ce9bd86dca738fc1ecc",
+  "BATCH06_TRIAGE_PRE_ROUND_C.json": "23380b2f6e3b9be1db3ed69406852a7549408b42873a729123f682f0ef818e00",
+  "BATCH06_QUICK_REVIEW_PRE_ROUND_C.md": "64a27d66d7e68a32507065487a6e0596c4b7f9af58375e6b6b026363e1d1c78b"
+ },
+ "origin": "BATCH06_QUICK_REVIEW_PRE_ROUND_C.md (fila C da triagem recalibrada, 13 itens; copia preservada do pacote revisado)",
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "decision_counts": {
+  "APPROVED": 8,
+  "APPROVED_AFTER_ADJUSTMENT": 5,
+  "REJECTED": 0
+ },
+ "human_decision_counts": {
+  "APPROVE": 7,
+  "ADJUST_THEN_APPROVE": 5,
+  "ADJUST_PROVENANCE_THEN_APPROVE": 1,
+  "REJECT": 0
+ },
+ "complementary_decisions": [
+  "C9: O_QUE_DIZ substituido pela redacao complementar (sem mais de 10 palavras consecutivas da Lei Seca), preservando empregos publicos, Uniao e Territorios, Distrito Federal, normas gerais de MP e Defensoria, Ministerios e orgaos e o regime dos militares das Forcas Armadas",
+  "C13: ATENCAO substituida pela redacao complementar (sem sigla do tribunal no corpo, sem referencia jurisprudencial)",
+  "C3, C6, C10, C13: citacao de emenda no formato canonico \"Emenda Constitucional nº X, de AAAA\" (ajuste exclusivamente formal)",
+  "C3: HISTORICAL_CLAIM_UNVERIFIED remanescente resolvido como HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE (decisao humana + fonte oficial)",
+  "C9: \"regime juridico\" (servidores e militares) e \"transferencia para a reserva\" na redacao, para o detector reconhecer as alineas c e f; paráfrase minima \"tanto ... quanto\" na alinea d reduz a maior sequencia literal para 9 palavras",
+  "C13: NUMBER_NOT_IN_TEXT (65) resolvido como HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE: descreve a redacao anterior do art. 73, § 1º, I, alterada pela Emenda Constitucional nº 122, de 2022; nao e extrapolacao da redacao vigente"
+ ],
+ "flag_resolution_mechanism": "editorial/T1_KNOWN_RESOLUTIONS.json (por explanation_id aprovado; mecanismo existente do validator)",
+ "external_sources_policy": "fontes oficiais indicadas pela revisao humana (emendas constitucionais e remissao da compilacao oficial), todas ja presentes nas anotacoes de vigencia versionadas do plano do lote; nenhum conteudo externo incorporado ao T1",
+ "note": "Fila C: 13 de 13. Filas A (42) e B (27) NAO foram decididas e continuam PENDING_HUMAN_REVIEW. Fila D ja resolvida na rodada D.",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.43",
+   "item": "C1",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: o target e OVERVIEW e nao se apresenta como enumeracao exaustiva dos quatro incisos do § 2º; informa que o artigo preve incentivos regionais e existe bloco proprio para o § 2º. A ausencia lexical do inciso I no overview nao elimina seu conteudo do sistema. A inclusao do § 4º pela EC 132/2023 ja esta coberta pela evidencia de vigencia versionada. NEAR_COPY_MICROFIX nao aplicado.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.43/BASE/1",
+   "flag_resolutions": [
+    {
+     "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+     "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.45:PAR.1",
+   "item": "C2",
+   "decision": "APPROVED",
+   "human_decision": "ADJUST_PROVENANCE_THEN_APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Ajuste so de provenance (OFFICIAL_CANONICAL_ANNOTATION), T1 byte-identico: a compilacao oficial remete expressamente a Lei Complementar nº 78/1993 no art. 45, § 1º; a remissao foi confirmada em fonte oficial. O T1 nao incorpora o conteudo da LC nem depende dele; nao afirma o numero total atual de Deputados nem a controversia legislativa de 2025/2026, que permanecem na camada correlata/atualizacao legislativa. external_layer_notes mantidas (ja registram a remissao sem afirmar o conteudo da LC).",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.45:PAR.1/BASE/1",
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Lei Complementar nº 78, de 1993: remissao da compilacao oficial ao art. 45, § 1º (existencia da remissao; conteudo na camada externa)",
+     "official_annotation": [
+      "Vide Lei Complementar n. 78, de 1993 (numero total de Deputados e representacao por Estado)"
+     ],
+     "human_reason_code": "OFFICIAL_CANONICAL_ANNOTATION",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.3",
+   "item": "C3",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Afirmacao historica confirmada (a redacao original exigia previa licenca da Casa para o processamento criminal; EC 35/2001). Ajuste para nao sugerir que todo processo penal contra parlamentar tramita no STF independentemente do alcance atual do foro; o bloco explica o mecanismo dos §§ 3º a 5º. Citacao da emenda no formato canonico \"nº 35, de 2001\" (ajuste formal autorizado). HISTORICAL_CLAIM_UNVERIFIED remanescente (o detector reage a \"Antes da...\") resolvido como HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE pela decisao humana complementar; a informacao historica nao foi suprimida.",
+   "changed_sections": [
+    "atencao",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.53:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.53:PAR.3/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O § 3º permite que, recebida denúncia contra senador ou deputado por crime posterior à diplomação, a Casa respectiva, por iniciativa de partido nela representado e pela maioria de seus membros, suste o andamento da ação até a decisão final. O § 4º fixa quarenta e cinco dias improrrogáveis para apreciar o pedido, e o § 5º determina que a sustação suspende a prescrição enquanto durar o mandato.",
+    "o_que_significa": "O processo penal contra o parlamentar não depende de autorização prévia da Casa: o Supremo Tribunal Federal recebe a denúncia e apenas comunica a Casa.\nA Casa pode, depois, sustar o andamento da ação. Para isso, um partido com representação na Casa precisa pedir, e a maioria absoluta dos membros precisa aprovar.\nA regra vale só para crime cometido depois da diplomação. O pedido deve ser apreciado em quarenta e cinco dias, sem prorrogação. Enquanto a ação estiver sustada, a prescrição também fica suspensa, até o fim do mandato (§ 5º).",
+    "exemplo_pratico": "Recebida a denúncia contra um deputado por crime cometido no mandato, um partido pede a sustação. A Câmara tem quarenta e cinco dias para votar; se a maioria absoluta aprovar, a ação fica parada até o fim do mandato, e o prazo de prescrição não corre nesse período.",
+    "atencao": "Antes da Emenda Constitucional nº 35, de 2001, o texto exigia licença prévia da Casa para processar o parlamentar; materiais antigos podem trazer essa regra. Crimes praticados antes da diplomação não admitem sustação.",
+    "palavras_dificeis": [
+     {
+      "termo": "Denúncia",
+      "explicacao": "peça do Ministério Público que dá início à ação penal."
+     },
+     {
+      "termo": "Sustação",
+      "explicacao": "paralisação do andamento do processo."
+     },
+     {
+      "termo": "Prescrição",
+      "explicacao": "perda do direito de punir pelo decurso do tempo."
+     }
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Emenda Constitucional nº 35, de 2001: a redacao anterior exigia previa licenca da Casa para o processamento criminal do parlamentar",
+     "official_annotation": [
+      "Redacao dada pela Emenda Constitucional n. 35, de 2001"
+     ],
+     "human_reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ],
+   "flag_resolutions": [
+    {
+     "flag": "HISTORICAL_CLAIM_UNVERIFIED",
+     "reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.54:INC.I",
+   "item": "C4",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. EXCEPTION_OR_RESSALVA_DROPPED resolvido como EXCEPTION_SEMANTICALLY_PRESENT: o exemplo usa expressamente um contrato padrao, igual ao oferecido aos demais clientes, para ilustrar a excecao do contrato de clausulas uniformes; a ressalva nao foi omitida, o detector nao reconheceu a parafrase. NEAR_COPY_MICROFIX nao aplicado.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.54:INC.I/BASE/1",
+   "flag_resolutions": [
+    {
+     "flag": "EXCEPTION_OR_RESSALVA_DROPPED",
+     "reason_code": "EXCEPTION_SEMANTICALLY_PRESENT"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.55:PAR.2",
+   "item": "C5",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. A advertencia historica esta confirmada pela EC 76/2013, que alterou expressamente o § 2º do art. 55 e suprimiu o modelo anterior de votacao secreta (HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE). A decisao anterior sobre o art. 55, VI nao e reaberta; este target e §§ 2º e 3º.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.55:PAR.2/BASE/1",
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Emenda Constitucional nº 76, de 2013: alterou o § 2º do art. 55 e suprimiu a votacao secreta",
+     "official_annotation": [
+      "Redacao dada pela Emenda Constitucional n. 76, de 2013"
+     ],
+     "human_reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ],
+   "flag_resolutions": [
+    {
+     "flag": "HISTORICAL_CLAIM_UNVERIFIED",
+     "reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.57",
+   "item": "C6",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "LIST_ITEM_POSSIBLY_DROPPED (§ 3º, II) resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: formulacao exemplificativa das hipoteses de sessao conjunta, sem pretensao de enumerar os quatro incisos do § 3º. A frase \"Fora desses periodos, o Congresso so se reune mediante convocacao extraordinaria\" era absoluta demais diante das sessoes preparatorias do § 4º: ATENCAO substituida. EC 50/2006 registrada como fonte oficial da alteracao; citacao no formato canonico \"nº 50, de 2006\" (ajuste formal autorizado). Microfix nao aplicado.",
+   "changed_sections": [
+    "atencao"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.57/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.57/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O art. 57 organiza o funcionamento do Congresso Nacional. Trata do calendário anual de reuniões, com dois períodos, um de fevereiro a julho e outro de agosto a dezembro, e da transferência de datas que caiam em fim de semana ou feriado. Trata ainda da vinculação do recesso à aprovação da lei de diretrizes orçamentárias, das sessões conjuntas, das sessões preparatórias e da eleição das Mesas, da Mesa do Congresso, da convocação extraordinária e da pauta dessa convocação.",
+    "o_que_significa": "O período de reuniões do ano é a sessão legislativa ordinária. Os intervalos entre os períodos são o recesso parlamentar.\nEm regra, Câmara e Senado trabalham separadamente. O § 3º lista casos em que se reúnem em sessão conjunta, como para inaugurar a sessão legislativa, receber o compromisso do Presidente e do Vice e deliberar sobre o veto.\nA Mesa do Congresso é presidida pelo Presidente do Senado, e os demais cargos se alternam entre membros das duas Casas.",
+    "exemplo_pratico": "Se o dia 2 de fevereiro cair em um sábado, a reunião que inaugura a sessão legislativa passa para a segunda-feira seguinte, por força do § 1º.",
+    "atencao": "As datas do caput foram fixadas pela Emenda Constitucional nº 50, de 2006; materiais anteriores trazem outro calendário. Fora desses períodos, o Congresso só se reúne mediante convocação extraordinária.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sessão legislativa",
+      "explicacao": "período anual de trabalho do Congresso."
+     },
+     {
+      "termo": "Recesso",
+      "explicacao": "intervalo entre os períodos de reunião do Congresso."
+     },
+     {
+      "termo": "Sessão conjunta",
+      "explicacao": "reunião da Câmara e do Senado juntos."
+     }
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Emenda Constitucional nº 50, de 2006: fixou as datas atuais do caput do art. 57",
+     "official_annotation": [
+      "Redacao dada pela Emenda Constitucional n. 50, de 2006"
+     ],
+     "human_reason_code": "OFFICIAL_SOURCE_OF_AMENDMENT",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ],
+   "flag_resolutions": [
+    {
+     "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+     "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.6",
+   "item": "C7",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como SEMANTIC_ITEM_ALREADY_PRESENT: \"ou a maioria dos membros das duas Casas\" preserva \"a requerimento da maioria dos membros de ambas as Casas\"; o elemento constitucional nao foi omitido. NEAR_COPY_MICROFIX nao aplicado.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.57:PAR.6/BASE/1",
+   "flag_resolutions": [
+    {
+     "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+     "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.61",
+   "item": "C8",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. Alertas das alineas do § 1º resolvidos como OVERVIEW_MAY_SUMMARIZE_CHILDREN: o target e OVERVIEW, informa que o § 1º contem materias de iniciativa reservada ao Presidente e existe bloco proprio para esse paragrafo.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.61/BASE/1",
+   "flag_resolutions": [
+    {
+     "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+     "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.61:PAR.1",
+   "item": "C9",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Omissao real e generalizacao explicativa excessiva: incluidos \"empregos\" publicos, Distrito Federal e Territorios na alinea d; retirada a justificativa teleologica de que todos os assuntos seriam ligados ao funcionamento do proprio Executivo; o art. 63, I nao e apresentado como unico limite as emendas. O_QUE_DIZ na redacao complementar da revisao humana (sem mais de 10 palavras consecutivas da Lei Seca), preservando todas as categorias juridicas das alineas a a f; ajuste autorizado em 2026-10-09: \"regime juridico\" (servidores e militares) e \"transferencia para a reserva\" (LIST_ITEM_POSSIBLY_DROPPED eliminado pela propria redacao) e \"tanto ... quanto\" na alinea d (maior sequencia literal 9 < 10). Exemplo e external_layer_notes mantidos.",
+   "changed_sections": [
+    "atencao",
+    "o_que_diz",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.61:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.61:PAR.1/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O § 1º reserva ao Presidente da República a iniciativa das leis que fixem ou alterem os efetivos das Forças Armadas e das leis sobre: criação de cargos e funções na administração direta e autárquica ou aumento da sua remuneração; organização administrativa e judiciária dos Territórios, bem como sua matéria tributária, seu orçamento, seus serviços e seu pessoal; servidores da União e dos Territórios; organização do Ministério Público e da Defensoria Pública da União e normas gerais para os dos Estados; criação e extinção de Ministérios e órgãos; e militares das Forças Armadas.",
+    "o_que_significa": "Nesses temas, só o Presidente pode apresentar o projeto. A razão está na separação de Poderes: são assuntos ligados à organização e ao funcionamento do próprio Executivo.\nSe um parlamentar apresentar projeto sobre um desses temas, há vício de iniciativa, e a lei resultante pode ser considerada inconstitucional.\nReserva de iniciativa não impede o Congresso de alterar o projeto: as emendas são possíveis, observados os limites de aumento de despesa do art. 63, I.",
+    "exemplo_pratico": "Um deputado apresenta projeto que cria cargos no quadro de uma autarquia federal. Como a criação de cargos na administração autárquica é de iniciativa privativa do Presidente, o projeto tem vício de iniciativa.",
+    "atencao": "A alínea b menciona matéria tributária e orçamentária dos Territórios; a reserva de iniciativa em matéria tributária em geral não decorre deste texto. Se a sanção do Presidente corrige o vício de iniciativa e como a regra se aplica aos Estados são temas de interpretação constitucional.",
+    "palavras_dificeis": [
+     {
+      "termo": "Iniciativa privativa",
+      "explicacao": "iniciativa reservada a um único legitimado."
+     },
+     {
+      "termo": "Vício de iniciativa",
+      "explicacao": "defeito do projeto apresentado por quem não tinha poder para propô-lo."
+     },
+     {
+      "termo": "Efetivo",
+      "explicacao": "quantidade de integrantes de uma força ou corporação."
+     }
+    ]
+   }
+  },
+  {
+   "target_id": "CF88:ART.62",
+   "item": "C10",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Nucleo adequado. ATENCAO substituida para remover a narrativa historica sobre reedicoes sucessivas sem perder a advertencia: o modelo atual foi estabelecido pela EC 32/2001 (registrada como provenance oficial); citacao no formato canonico \"nº 32, de 2001\" (ajuste formal autorizado).",
+   "changed_sections": [
+    "atencao"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.62/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.62/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O art. 62 permite que o Presidente da República, em caso de relevância e urgência, adote medidas provisórias com força de lei, que devem ser enviadas de imediato ao Congresso Nacional. Os parágrafos estabelecem as matérias vedadas, a regra para impostos, o prazo de vigência e sua contagem, a tramitação, o regime de urgência, a vedação de reedição e os efeitos da rejeição ou da aprovação com alterações.",
+    "o_que_significa": "A medida provisória produz efeitos desde a edição, como uma lei, mas é provisória: precisa ser convertida em lei pelo Congresso dentro do prazo, ou perde a eficácia.\nRelevância e urgência são os pressupostos que justificam a medida. O Congresso examina esses pressupostos antes de votar o mérito (§ 5º).",
+    "exemplo_pratico": "O Presidente edita medida provisória criando um programa emergencial. As regras passam a valer na publicação. O Congresso então vota a conversão em lei; se não o fizer no prazo, a medida perde a eficácia.",
+    "atencao": "Medida provisória não é lei: é ato com força de lei, sujeito à conversão. O regime atual foi definido pela Emenda Constitucional nº 32, de 2001; materiais anteriores descrevem um regime diferente, com reedições sucessivas.",
+    "palavras_dificeis": [
+     {
+      "termo": "Medida provisória",
+      "explicacao": "ato do Presidente da República com força de lei, sujeito à conversão pelo Congresso."
+     },
+     {
+      "termo": "Relevância e urgência",
+      "explicacao": "pressupostos constitucionais que justificam a edição da medida provisória."
+     },
+     {
+      "termo": "Conversão em lei",
+      "explicacao": "aprovação da medida provisória pelo Congresso, transformando-a em lei."
+     }
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Emenda Constitucional nº 32, de 2001: estabeleceu o modelo atual do art. 62; a redacao anterior previa regime e prazo diferentes",
+     "official_annotation": [
+      "Incluido pela Emenda Constitucional n. 32, de 2001",
+      "Redacao dada pela Emenda Constitucional n. 32, de 2001"
+     ],
+     "human_reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ],
+   "flag_resolutions": [
+    {
+     "flag": "HISTORICAL_CLAIM_UNVERIFIED",
+     "reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.4",
+   "item": "C11",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. A advertencia historica esta confirmada pela EC 76/2013, que alterou expressamente o § 4º do art. 66 e aboliu a votacao secreta na apreciacao de veto (HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE).",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.66:PAR.4/BASE/1",
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Emenda Constitucional nº 76, de 2013: alterou o § 4º do art. 66 e suprimiu a votacao secreta na apreciacao de veto",
+     "official_annotation": [
+      "Redacao dada pela Emenda Constitucional n. 76, de 2013"
+     ],
+     "human_reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ],
+   "flag_resolutions": [
+    {
+     "flag": "HISTORICAL_CLAIM_UNVERIFIED",
+     "reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.71",
+   "item": "C12",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Aprovado sem alteracao. LIST_ITEM_POSSIBLY_DROPPED resolvido como OVERVIEW_MAY_SUMMARIZE_CHILDREN: OVERVIEW que sintetiza as competencias por categorias; o inciso IX esta representado em \"fixar prazo para correcoes\" e o XI nao precisa ser transcrito numa visao geral que nao se apresenta como lista exaustiva dos onze incisos; os dispositivos especificos continuam no corpus. Microfix nao aplicado.",
+   "changed_sections": [],
+   "explanation_id": "ENTENDA/CF88:ART.71/BASE/1",
+   "flag_resolutions": [
+    {
+     "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+     "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.73:PAR.1",
+   "item": "C13",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "C",
+   "review_reason": "Afirmacao historica confirmada (EC 122/2022 elevou o limite maximo de idade de 65 para 70 anos; HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE). Retiradas a teleologia e a generalizacao sobre quem \"avalia\" os notorios conhecimentos. ATENCAO na redacao complementar: sem a sigla do tribunal no corpo, sem referencia jurisprudencial, citacao \"nº 122, de 2022\". NEAR_COPY_MICROFIX nao aplicado.",
+   "changed_sections": [
+    "atencao",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.73:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.73:PAR.1/BASE/2",
+   "t1_contract_deviations": [],
+   "original_content": {
+    "o_que_diz": "O § 1º exige que os Ministros do Tribunal de Contas da União sejam brasileiros e preencham, ao mesmo tempo, quatro requisitos: idade acima de trinta e cinco e abaixo de setenta anos; idoneidade moral e reputação ilibada; notórios conhecimentos jurídicos, contábeis, econômicos, financeiros ou de administração pública; e mais de dez anos de exercício de função ou de atividade profissional que exija esses conhecimentos.",
+    "o_que_significa": "Os requisitos buscam garantir que os Ministros tenham preparo técnico e experiência compatíveis com a função de controle.\nSão cumulativos: faltando um, a nomeação não pode ocorrer.\nO último requisito liga a experiência profissional aos conhecimentos do inciso anterior: não basta qualquer atividade por dez anos, ela precisa exigir esses saberes técnicos.",
+    "exemplo_pratico": "Um economista com sessenta e oito anos, reputação ilibada e vinte anos de atuação em finanças públicas preenche os requisitos de idade, conhecimento e experiência.",
+    "atencao": "O limite máximo de idade foi alterado pela Emenda Constitucional nº 122, de 2022; materiais anteriores trazem limite diferente. A avaliação de \"notórios conhecimentos\" é feita por quem indica e por quem aprova o nome.",
+    "palavras_dificeis": [
+     {
+      "termo": "Idoneidade moral",
+      "explicacao": "conduta ética compatível com a função."
+     },
+     {
+      "termo": "Reputação ilibada",
+      "explicacao": "reputação sem mancha ou acusação que a comprometa."
+     },
+     {
+      "termo": "Notório saber",
+      "explicacao": "conhecimento amplamente reconhecido em uma área."
+     }
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Emenda Constitucional nº 122, de 2022: elevou o limite maximo de idade (antes, inferior a sessenta e cinco anos)",
+     "official_annotation": [
+      "Redacao dada pela Emenda Constitucional n. 122, de 2022"
+     ],
+     "human_reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE",
+     "note": "fonte oficial indicada pela revisao humana (rodada C) e anotacao de vigencia versionada no plano do lote; nenhum conteudo externo incorporado ao T1"
+    }
+   ],
+   "flag_resolutions": [
+    {
+     "flag": "HISTORICAL_CLAIM_UNVERIFIED",
+     "reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE"
+    },
+    {
+     "flag": "NUMBER_NOT_IN_TEXT",
+     "reason_code": "HISTORICAL_CLAIM_SUPPORTED_BY_OFFICIAL_SOURCE"
+    }
+   ]
+  }
+ ]
+}

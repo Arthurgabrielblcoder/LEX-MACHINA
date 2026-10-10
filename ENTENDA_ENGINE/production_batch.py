@@ -315,7 +315,10 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
         raise BatchError('BATCH_SPLIT_RECOMMENDED', f'{n_new} > {spec["hard_cap"]}')
     corpus_path = bd / spec['batch_corpus']
     # evidence corpus (pending batch) is immutable input for a final batch; otherwise the batch's own corpus keeps its hashes
-    existing = E.load_corpus(ctx.base / spec['supersedes_corpus']) if spec.get('supersedes_corpus') else E.load_corpus(corpus_path)
+    # a pending batch rebuilt from scratch may name its frozen pre-round corpus (stamping_evidence_corpus): earlier versions keep their
+    # snapshots and become RETIRED when a round bumps the editorial_version
+    evidence = spec.get('supersedes_corpus') or spec.get('stamping_evidence_corpus')
+    existing = E.load_corpus(ctx.base / evidence) if evidence else E.load_corpus(corpus_path)
     stamped = E.stamp(drafts, ctx, existing)
     new = [r for r in stamped if r['status'] == 'ACTIVE']
     if any(r['review_status'] != ('HUMAN_APPROVED_T1' if r['target_id'] in round_approved else expected) for r in new):

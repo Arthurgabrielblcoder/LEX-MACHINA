@@ -1,0 +1,1410 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "triage_sheet": "REVIEW_BATCH_06_RISK_TRIAGE.md",
+ "risk_criteria": {
+  "classifier": "ENTENDA_ENGINE/t1_risk.py::assess + complexity (validator v3)",
+  "LEGAL_RISK": "HIGH: JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS; INTERPRETIVE_CONTROVERSY; CONSTITUTIONAL_AMBIGUITY; SANCTION_WITH_INTERPRETATION; EXTERNAL_DEPENDENCY_MATERIAL; TRANSITION_OR_TEMPORAL; LEGAL_CONTENT_FINDING. MEDIUM: jurisprudencia so de contexto, questao interpretativa remetida, tema sensivel, dependencia externa nao material. LOW: o restante.",
+  "VERIFICATION_COMPLEXITY": "EXTERNAL: dependencia/nota externa; STRUCTURED: numero, prazo, quorum, lista, bloco, remissao, excecao, lei, emenda; SIMPLE: o restante. Nao altera LEGAL_RISK.",
+  "level": "o campo level e o LEGAL_RISK"
+ },
+ "risk": {
+  "CF88:ART.42": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei específica",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 14, 37, 40, 142",
+    "overview com 5 dispositivos"
+   ]
+  },
+  "CF88:ART.42:PAR.1": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 14, 40, 142"
+   ]
+  },
+  "CF88:ART.42:PAR.3": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 37"
+   ]
+  },
+  "CF88:ART.43": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ]
+  },
+  "CF88:ART.43:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "block com 5 dispositivos"
+   ]
+  },
+  "CF88:ART.44": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: quatro anos",
+    "number_or_percentage: quatro",
+    "overview com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.45": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.45:PAR.1: Vide Lei Complementar n. 78, de 1993 (numero total de Deputados e representacao por Estado))",
+    "number_or_percentage: oito",
+    "law_dependency: lei complementar",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "CF88:ART.45:PAR.1": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.45:PAR.1: Vide Lei Complementar n. 78, de 1993 (numero total de Deputados e representacao por Estado))",
+    "camada externa: nota externa",
+    "number_or_percentage: oito",
+    "law_dependency: lei complementar"
+   ]
+  },
+  "CF88:ART.46": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: oito anos",
+    "number_or_percentage: três",
+    "overview com 5 dispositivos"
+   ]
+  },
+  "CF88:ART.47": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "exception: Salvo",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.48": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 39, 49, 84",
+    "overview com 17 dispositivos"
+   ]
+  },
+  "CF88:ART.49": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: quinze dias",
+    "number_or_percentage: quinze",
+    "exception: ressalvados",
+    "law_dependency: previstos em lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 37, 167",
+    "overview com 20 dispositivos"
+   ]
+  },
+  "CF88:ART.49:INC.I": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: As etapas de incorporação de tratados ao direito interno e a hierarquia de tratados de direitos humanos (art. 5º, § 3º) são temas da doutrin"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ]
+  },
+  "CF88:ART.49:INC.IX": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ]
+  },
+  "CF88:ART.49:INC.V": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: regulament"
+   ]
+  },
+  "CF88:ART.50": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "CF88:ART.50:PAR.2": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.51": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "deadline: sessenta dias",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 89",
+    "overview com 7 dispositivos"
+   ]
+  },
+  "CF88:ART.51:INC.I": {
+   "level": "HIGH",
+   "rules": [
+    "SANCTION_WITH_INTERPRETATION"
+   ],
+   "reasons": [
+    "SANCTION_WITH_INTERPRETATION: crimes de responsabilidade + \"tema de interpretação constitucional\""
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: dois terços",
+    "number_or_percentage: dois"
+   ]
+  },
+  "CF88:ART.52": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: oito anos",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 89",
+    "overview com 24 dispositivos"
+   ]
+  },
+  "CF88:ART.52:INC.I": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A definição dos crimes de responsabilidade e o rito do julgamento estão na lei especial e na camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: crimes"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.52:INC.III": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 7 dispositivos"
+   ]
+  },
+  "CF88:ART.52:INC.X": {
+   "level": "HIGH",
+   "rules": [
+    "INTERPRETIVE_CONTROVERSY"
+   ],
+   "reasons": [
+    "INTERPRETIVE_CONTROVERSY: \"objeto de debate\""
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ]
+  },
+  "CF88:ART.52:PAR.UNICO": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: perda do cargo"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: dois terços",
+    "deadline: oito anos",
+    "number_or_percentage: dois"
+   ]
+  },
+  "CF88:ART.53": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: invioláv"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: quatro horas",
+    "number_or_percentage: vinte",
+    "exception: salvo",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 10 dispositivos"
+   ]
+  },
+  "CF88:ART.53:CAPUT": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: invioláv"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.53:PAR.1": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.53:PAR.2": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "quorum: maioria",
+    "deadline: quatro horas",
+    "number_or_percentage: vinte",
+    "exception: salvo",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.53:PAR.3": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "HISTORICAL_CLAIM_UNVERIFIED",
+    "quorum: maioria",
+    "deadline: prazo",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.53:PAR.6": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.53:PAR.8": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: imunidade"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.54": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: salvo",
+    "overview com 10 dispositivos"
+   ]
+  },
+  "CF88:ART.54:INC.I": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: salvo",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.54:INC.II": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 5 dispositivos"
+   ]
+  },
+  "CF88:ART.55": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: Perderá o mandato"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: terça parte",
+    "exception: salvo",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 12 dispositivos"
+   ]
+  },
+  "CF88:ART.55:INC.VI": {
+   "level": "HIGH",
+   "rules": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS: marcador do draft: \"leitura isolada\""
+   ],
+   "jurisprudence": "REQUIRED_FOR_CORRECTNESS",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ]
+  },
+  "CF88:ART.55:PAR.1": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: incompatív"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ]
+  },
+  "CF88:ART.55:PAR.2": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: perda do mandato"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "HISTORICAL_CLAIM_UNVERIFIED",
+    "quorum: maioria",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.55:PAR.4": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: perda do mandato"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.56": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: perderá o mandato"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: vinte dias",
+    "number_or_percentage: cento",
+    "overview com 7 dispositivos"
+   ]
+  },
+  "CF88:ART.56:PAR.1": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: vinte dias",
+    "number_or_percentage: cento",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.57": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "number_or_percentage: duas",
+    "exception: ressalvada",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 16 dispositivos"
+   ]
+  },
+  "CF88:ART.57:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ]
+  },
+  "CF88:ART.57:PAR.4": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance da vedação de recondução entre legislaturas e a sua aplicação a Estados e Municípios são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"questões de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.57:PAR.6": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.57:PAR.7": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.58": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "deadline: prazo",
+    "number_or_percentage: décimo",
+    "exception: salvo",
+    "overview com 12 dispositivos"
+   ]
+  },
+  "CF88:ART.58:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: décimo",
+    "exception: salvo",
+    "block com 7 dispositivos"
+   ]
+  },
+  "CF88:ART.58:PAR.3": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Direito da minoria parlamentar à criação da comissão preenchidos os requisitos do § 3º; reserva de jurisdição (busca domiciliar, interceptaç"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: um terço",
+    "deadline: prazo"
+   ]
+  },
+  "CF88:ART.59": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: Lei complementar",
+    "overview com 10 dispositivos"
+   ]
+  },
+  "CF88:ART.61": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: por cento",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 84",
+    "overview com 12 dispositivos"
+   ]
+  },
+  "CF88:ART.61:PAR.1": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação da reserva de iniciativa aos Estados, por simetria, e os efeitos da sanção sobre o vício de iniciativa são temas da camada JURIS"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 84",
+    "block com 9 dispositivos"
+   ]
+  },
+  "CF88:ART.61:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: por cento"
+   ]
+  },
+  "CF88:ART.62": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: sessenta",
+    "exception: ressalvado",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 153, 167",
+    "overview com 22 dispositivos"
+   ]
+  },
+  "CF88:ART.62:PAR.1": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED",
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A admissão de medidas provisórias em matéria penal benéfica e o controle dos créditos extraordinários são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"questão de interpretação constitucional\" (o draft nao responde; remete)",
+    "SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: ressalvado",
+    "law_dependency: lei complementar",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 167",
+    "block com 9 dispositivos"
+   ]
+  },
+  "CF88:ART.62:PAR.10": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.62:PAR.11": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: sessenta dias",
+    "number_or_percentage: sessenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.62:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: exceto",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 153"
+   ]
+  },
+  "CF88:ART.62:PAR.3": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: sessenta",
+    "exception: ressalvado",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.62:PAR.5": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A obrigatoriedade do parecer da comissão mista e o controle judicial dos pressupostos de relevância e urgência são temas da camada JURISPRUD"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.62:PAR.6": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "deadline: cinco dias",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.63": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "exception: ressalvado",
+    "remissao: arts. 166",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "CF88:ART.64": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco dias",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 6 dispositivos"
+   ]
+  },
+  "CF88:ART.64:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: cinco dias",
+    "number_or_percentage: quarenta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.65": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "overview com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.66": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 9 dispositivos"
+   ]
+  },
+  "CF88:ART.66:PAR.1": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanção"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.66:PAR.4": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "HISTORICAL_CLAIM_UNVERIFIED",
+    "quorum: maioria",
+    "deadline: trinta dias",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.66:PAR.7": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: oito horas",
+    "number_or_percentage: quarenta"
+   ]
+  },
+  "CF88:ART.67": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.68": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "overview com 8 dispositivos"
+   ]
+  },
+  "CF88:ART.68:PAR.1": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: lei complementar",
+    "block com 4 dispositivos"
+   ]
+  },
+  "CF88:ART.68:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.69": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A relação entre lei complementar e lei ordinária e a possibilidade de alteração de lei formalmente complementar por lei ordinária são temas "
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "overview com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.70": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.70:PAR.UNICO": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ]
+  },
+  "CF88:ART.71": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: sessenta dias",
+    "number_or_percentage: sessenta",
+    "exception: excetuad",
+    "law_dependency: previstas em lei",
+    "overview com 17 dispositivos"
+   ]
+  },
+  "CF88:ART.71:INC.I": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: sessenta dias",
+    "number_or_percentage: sessenta"
+   ]
+  },
+  "CF88:ART.71:INC.II": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ]
+  },
+  "CF88:ART.71:INC.III": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "INTERPRETIVE_QUESTION_DEFERRED"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O prazo para o registro de aposentadorias e o direito do interessado ao contraditório são temas da camada JURISPRUDÊNCIA.",
+    "INTERPRETIVE_QUESTION_DEFERRED: \"temas de interpretação constitucional\" (o draft nao responde; remete)"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: excetuad"
+   ]
+  },
+  "CF88:ART.71:INC.IX": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.71:INC.VIII": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: previstas em lei"
+   ]
+  },
+  "CF88:ART.71:PAR.1": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance do poder do Tribunal após o prazo do § 2º é tema da camada JURISPRUDÊNCIA."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "number_or_percentage: noventa",
+    "block com 2 dispositivos"
+   ]
+  },
+  "CF88:ART.71:PAR.3": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A legitimidade para executar as decisões do Tribunal de Contas é tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: multa"
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ]
+  },
+  "CF88:ART.72": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: prazo",
+    "number_or_percentage: cinco",
+    "remissao: arts. 166",
+    "overview com 4 dispositivos"
+   ]
+  },
+  "CF88:ART.73": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "deadline: setenta anos",
+    "number_or_percentage: nove",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 40, 96",
+    "overview com 12 dispositivos"
+   ]
+  },
+  "CF88:ART.73:PAR.1": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "deadline: setenta anos",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "block com 5 dispositivos"
+   ]
+  },
+  "CF88:ART.73:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: um terço",
+    "number_or_percentage: dois",
+    "block com 3 dispositivos"
+   ]
+  },
+  "CF88:ART.73:PAR.3": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: prerrogativ"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 40"
+   ]
+  },
+  "CF88:ART.74": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei",
+    "overview com 8 dispositivos"
+   ]
+  },
+  "CF88:ART.74:PAR.1": {
+   "level": "MEDIUM",
+   "rules": [
+    "SENSITIVE_THEME"
+   ],
+   "reasons": [
+    "SENSITIVE_THEME: sob pena"
+   ],
+   "jurisprudence": "NONE",
+   "verification_complexity": "SIMPLE",
+   "complexity_reasons": [
+    "dispositivo unico, sem numero, prazo, lista, remissao ou dependencia externa"
+   ]
+  },
+  "CF88:ART.74:PAR.2": {
+   "level": "LOW",
+   "rules": [],
+   "reasons": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "law_dependency: na forma da lei"
+   ]
+  },
+  "CF88:ART.75": {
+   "level": "MEDIUM",
+   "rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação do modelo federal aos Tribunais de Contas estaduais por simetria é tema da camada JURISPRUDÊNCIA."
+   ],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia, nota externa",
+    "number_or_percentage: sete",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 3 dispositivos"
+   ]
+  }
+ },
+ "fact_rules": [
+  {
+   "id": "SENADO_TRES_POR_UNIDADE_OITO_ANOS",
+   "if_contains": "Senador",
+   "must_not_contain": "\\b(?:dois|quatro) Senadores por|mandato de (?:quatro|seis) anos"
+  },
+  {
+   "id": "LEGISLATURA_QUATRO_ANOS",
+   "if_contains": "legislatura",
+   "must_not_contain": "legislatura[^.]{0,30}\\b(?:cinco|oito) anos"
+  },
+  {
+   "id": "MP_SESSENTA_MAIS_SESSENTA",
+   "if_contains": "medida provis",
+   "must_not_contain": "\\b(?:trinta|noventa) dias[^.]{0,20}prorrog"
+  },
+  {
+   "id": "VETO_QUINZE_DIAS_UTEIS",
+   "if_contains": "\\bveto",
+   "must_not_contain": "\\b(?:dez|trinta) dias [úu]teis"
+  },
+  {
+   "id": "TCU_NOVE_MINISTROS",
+   "if_contains": "Tribunal de Contas da Uni",
+   "must_not_contain": "\\b(?:sete|onze) Ministros"
+  },
+  {
+   "id": "TCE_SETE_CONSELHEIROS",
+   "if_contains": "conselheiros",
+   "must_not_contain": "\\b(?:nove|cinco) conselheiros"
+  },
+  {
+   "id": "TCU_IDADE_70",
+   "if_contains": "trinta e cinco",
+   "must_not_contain": "sessenta e cinco anos"
+  },
+  {
+   "id": "INICIATIVA_POPULAR_UM_POR_CENTO",
+   "if_contains": "iniciativa popular|eleitorado",
+   "must_not_contain": "\\bdois por cento|\\bcinco por cento do eleitorado"
+  },
+  {
+   "id": "IMUNIDADE_SEM_LICENCA_PREVIA",
+   "if_contains": "den[úu]ncia|processo",
+   "must_not_contain": "licen[çc]a pr[ée]via da Casa (?:[ée]|seja) (?:necess|exig)"
+  },
+  {
+   "id": "DERRUBADA_VETO_MAIORIA_ABSOLUTA",
+   "if_contains": "derrub",
+   "must_not_contain": "dois ter[çc]os dos (?:deputados|parlamentares)[^.]{0,30}veto"
+  }
+ ],
+ "technical_terms": [
+  "decreto legislativo",
+  "sobrest",
+  "título executivo",
+  "decoro",
+  "quórum",
+  "imunidade",
+  "erário",
+  "subsídio"
+ ],
+ "resolutions": {
+  "CF88:ART.42:PAR.3": {
+   "EXCEPTION_NOT_IN_TEXT": "Falso positivo: \"exceções\" descreve as hipoteses do art. 37, XVI, para o qual o § 3º remete; nao cria excecao propria."
+  },
+  "CF88:ART.43": {
+   "ABSOLUTE_CLAIM": "Falso positivo: \"sempre que possível\" reproduz a expressao do § 4º, que e justamente uma ressalva (nao absoluta)."
+  },
+  "CF88:ART.47": {
+   "TRANSITION_IN_CORE": "Falso positivo: \"emenda constitucional\" designa a especie normativa (quorum de tres quintos), nao regra de transicao nem historico de redacao."
+  },
+  "CF88:ART.55:INC.VI": {
+   "ABSOLUTE_CLAIM": "Falso positivo: frase negativa (\"e não declarada automaticamente\"), que justamente afasta efeito automatico."
+  },
+  "CF88:ART.57:PAR.2": {
+   "EXAMPLE_NUMBER": "Data \"17 de julho\" vem do caput do art. 57 (fim do primeiro periodo), contexto do § 2º; nao e numero inventado."
+  },
+  "CF88:ART.57:PAR.7": {
+   "ABSOLUTE_CLAIM": "Fiel ao texto: o § 8º diz que as medidas provisorias em vigor serao automaticamente incluidas na pauta."
+  },
+  "CF88:ART.58": {
+   "LAW_DEPENDENCY_OMITTED": "Falso positivo: \"de lei\" no texto e parte de \"projeto de lei\" (competencia das comissoes), nao dependencia de lei."
+  },
+  "CF88:ART.58:PAR.2": {
+   "LAW_DEPENDENCY_OMITTED": "Falso positivo: \"de lei\" no texto e parte de \"projeto de lei\", nao dependencia de lei."
+  },
+  "CF88:ART.62": {
+   "MODALITY_SHIFT": "Fiel ao texto: o caput diz \"devendo submetê-las de imediato ao Congresso Nacional\"; a obrigacao e textual."
+  },
+  "CF88:ART.64:PAR.2": {
+   "EXCEPTION_NOT_IN_TEXT": "Falso positivo do detector: o § 2º diz \"com exceção das que tenham prazo constitucional determinado\" (\"exceção\" nao esta na lista de marcadores)."
+  },
+  "CF88:ART.71": {
+   "LAW_DEPENDENCY_OMITTED": "Dependencia de lei e do inciso VIII (sancoes previstas em lei), que tem explicacao propria (ITEM) mencionando a lei."
+  },
+  "CF88:ART.74": {
+   "LAW_DEPENDENCY_OMITTED": "\"Na forma da lei\" e do § 2º (denuncia ao TCU), que tem explicacao propria (DEVICE) mencionando a lei."
+  },
+  "CF88:ART.63": {
+   "ABSOLUTE_CLAIM": "Falso positivo: frase negativa (\"não torna automaticamente válida qualquer emenda\"), redação indicada pela revisão jurídica humana da fila D (2026-10-05)."
+  },
+  "CF88:ART.75": {
+   "TRANSITION_IN_CORE": "Decisão da revisão jurídica humana da fila D (2026-10-05): a menção à Emenda Constitucional nº 139, de 2026, no O QUE SIGNIFICA é exigida para explicar a proteção de permanência; não é regra de transição."
+  }
+ }
+}

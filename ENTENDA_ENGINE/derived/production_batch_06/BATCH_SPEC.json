@@ -1,0 +1,400 @@
+{
+ "norma_id": "CF88",
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "report_schema": 2,
+ "as_of_date": "2026-10-04",
+ "scope": [
+  "CF88:ART.42",
+  "CF88:ART.43",
+  "CF88:ART.44",
+  "CF88:ART.45",
+  "CF88:ART.46",
+  "CF88:ART.47",
+  "CF88:ART.48",
+  "CF88:ART.49",
+  "CF88:ART.50",
+  "CF88:ART.51",
+  "CF88:ART.52",
+  "CF88:ART.53",
+  "CF88:ART.54",
+  "CF88:ART.55",
+  "CF88:ART.56",
+  "CF88:ART.57",
+  "CF88:ART.58",
+  "CF88:ART.59",
+  "CF88:ART.60",
+  "CF88:ART.61",
+  "CF88:ART.62",
+  "CF88:ART.63",
+  "CF88:ART.64",
+  "CF88:ART.65",
+  "CF88:ART.66",
+  "CF88:ART.67",
+  "CF88:ART.68",
+  "CF88:ART.69",
+  "CF88:ART.70",
+  "CF88:ART.71",
+  "CF88:ART.72",
+  "CF88:ART.73",
+  "CF88:ART.74",
+  "CF88:ART.75"
+ ],
+ "focus_article": "CF88:ART.62",
+ "sub_blocks": {
+  "A": [
+   "CF88:ART.42",
+   "CF88:ART.43"
+  ],
+  "B": [
+   "CF88:ART.44",
+   "CF88:ART.45",
+   "CF88:ART.46",
+   "CF88:ART.47",
+   "CF88:ART.48",
+   "CF88:ART.49",
+   "CF88:ART.50",
+   "CF88:ART.51",
+   "CF88:ART.52",
+   "CF88:ART.53",
+   "CF88:ART.54",
+   "CF88:ART.55",
+   "CF88:ART.56",
+   "CF88:ART.57",
+   "CF88:ART.58"
+  ],
+  "C": [
+   "CF88:ART.59",
+   "CF88:ART.60",
+   "CF88:ART.61",
+   "CF88:ART.62",
+   "CF88:ART.63",
+   "CF88:ART.64",
+   "CF88:ART.65",
+   "CF88:ART.66",
+   "CF88:ART.67",
+   "CF88:ART.68",
+   "CF88:ART.69"
+  ],
+  "D": [
+   "CF88:ART.70",
+   "CF88:ART.71",
+   "CF88:ART.72",
+   "CF88:ART.73",
+   "CF88:ART.74",
+   "CF88:ART.75"
+  ]
+ },
+ "drafts": "BATCH_06_DRAFTS.json",
+ "reference_export": "LEGAL_TARGET_ID/derived/export_test/run3/CF88_REFERENCES_EXPORT.json",
+ "batch_corpus": "CF88_BATCH_06.entenda.jsonl",
+ "index_dir": "index",
+ "review_sheet": "REVIEW_BATCH_06.md",
+ "prior_corpora": [
+  "ENTENDA_ENGINE/derived/production_batch_01_final/CF88_BATCH_01_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_02_final/CF88_BATCH_02_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_03_final/CF88_BATCH_03_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_04/CF88_BATCH_04.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_05/CF88_BATCH_05.entenda.jsonl"
+ ],
+ "soft_target": [
+  60,
+  95
+ ],
+ "hard_cap": 100,
+ "soft_target_justification": "93 explicacoes novas para 34 artigos e 309 dispositivos vigentes (sem cota): toda visao geral de artigo + dispositivos de valor pedagogico proprio; listas curtas, fatos simples e regras organizacionais ficam na visao geral (SKIP com motivo). O art. 60 usa somente os 3 pilotos aprovados.",
+ "reused": {
+  "CF88:ART.60": "Visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1); reutilizada sem alteracao.",
+  "CF88:ART.60:PAR.4": "Bloco das clausulas petreas aprovado no piloto (HUMAN_APPROVED_T1); reutilizado sem alteracao.",
+  "CF88:ART.60:PAR.4:INC.IV": "Item direitos e garantias individuais aprovado no piloto (HUMAN_APPROVED_T1, versao 2); reutilizado sem alteracao."
+ },
+ "no_separate_reasons": {
+  "CF88:ART.42:PAR.2": "Remissao simples a lei do ente sobre pensao de pensionistas: situada na visao geral do art. 42; explicacao propria repetiria a regra.",
+  "CF88:ART.43:PAR.1": "Comando ao legislador (lei complementar sobre integracao regional): situado na visao geral do art. 43.",
+  "CF88:ART.43:PAR.1:INC.I": "Objeto da lei complementar (integracao de regioes): item curto situado na visao geral do art. 43.",
+  "CF88:ART.43:PAR.1:INC.II": "Objeto da lei complementar (organismos regionais): item curto situado na visao geral do art. 43.",
+  "CF88:ART.43:PAR.3": "Diretriz de cooperacao em areas aridas: complemento do bloco de incentivos (§ 2º), situado na visao geral do art. 43.",
+  "CF88:ART.43:PAR.4": "Criterio de sustentabilidade na concessao de incentivos (EC 132/2023): situado na visao geral do art. 43; sem comando autonomo de alto impacto.",
+  "CF88:ART.44:PAR.UNICO": "Duracao da legislatura (quatro anos): fato simples situado na visao geral do art. 44.",
+  "CF88:ART.45:PAR.2": "Numero fixo de Deputados por Territorio: fato simples situado na visao geral do art. 45.",
+  "CF88:ART.46:PAR.1": "Tres Senadores por unidade, mandato de oito anos: fato simples explicado na visao geral do art. 46.",
+  "CF88:ART.46:PAR.2": "Renovacao alternada de um e dois tercos: explicada na visao geral do art. 46.",
+  "CF88:ART.46:PAR.3": "Dois suplentes por Senador: fato simples situado na visao geral do art. 46.",
+  "CF88:ART.48:INC.I": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.II": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.III": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.IV": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.IX": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.V": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.VI": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.VII": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.VIII": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.X": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.XI": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.XII": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.XIII": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.XIV": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.48:INC.XV": "Item da lista de materias legislativas com sancao: tema enumerado na visao geral do art. 48; explicacao isolada repetiria a lista.",
+  "CF88:ART.49:INC.II": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.III": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.IV": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.VI": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.VII": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.VIII": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.X": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XI": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XII": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XIII": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XIV": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XV": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XVI": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XVII": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.49:INC.XVIII": "Competencia exclusiva do Congresso de enunciado direto: situada na visao geral do art. 49; os incisos de maior impacto (I, V, IX) tem explicacao propria.",
+  "CF88:ART.50:PAR.1": "Comparecimento voluntario de Ministro: situado na visao geral do art. 50; contraponto da convocacao.",
+  "CF88:ART.51:INC.II": "Competencia privativa da Camara de natureza organizacional ou procedimental: situada na visao geral do art. 51.",
+  "CF88:ART.51:INC.III": "Competencia privativa da Camara de natureza organizacional ou procedimental: situada na visao geral do art. 51.",
+  "CF88:ART.51:INC.IV": "Competencia privativa da Camara de natureza organizacional ou procedimental: situada na visao geral do art. 51.",
+  "CF88:ART.51:INC.V": "Competencia privativa da Camara de natureza organizacional ou procedimental: situada na visao geral do art. 51.",
+  "CF88:ART.52:INC.IV": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.IX": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.V": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.VI": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.VII": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.VIII": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.XI": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.XII": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.XIII": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.XIV": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.52:INC.XV": "Competencia privativa do Senado de enunciado direto (aprovacoes, limites financeiros, organizacao interna): situada na visao geral do art. 52.",
+  "CF88:ART.53:PAR.7": "Incorporacao de parlamentares as Forcas Armadas dependente de licenca da Casa: situada na visao geral do art. 53; tema raro.",
+  "CF88:ART.55:INC.I": "Hipotese de perda de mandato enumerada na visao geral do art. 55; o rito de decisao por hipotese esta nos blocos dos §§ 2º e 3º.",
+  "CF88:ART.55:INC.II": "Hipotese de perda de mandato enumerada na visao geral do art. 55; o rito de decisao por hipotese esta nos blocos dos §§ 2º e 3º.",
+  "CF88:ART.55:INC.III": "Hipotese de perda de mandato enumerada na visao geral do art. 55; o rito de decisao por hipotese esta nos blocos dos §§ 2º e 3º.",
+  "CF88:ART.55:INC.IV": "Hipotese de perda de mandato enumerada na visao geral do art. 55; o rito de decisao por hipotese esta nos blocos dos §§ 2º e 3º.",
+  "CF88:ART.55:INC.V": "Hipotese de perda de mandato enumerada na visao geral do art. 55; o rito de decisao por hipotese esta nos blocos dos §§ 2º e 3º.",
+  "CF88:ART.56:INC.I": "Hipotese em que o parlamentar nao perde o mandato: enumerada e explicada na visao geral do art. 56.",
+  "CF88:ART.56:INC.II": "Hipotese em que o parlamentar nao perde o mandato: enumerada e explicada na visao geral do art. 56.",
+  "CF88:ART.56:PAR.3": "Opcao pela remuneracao do mandato na hipotese do inciso I: situada na visao geral do art. 56.",
+  "CF88:ART.57:PAR.1": "Transferencia de reunioes para o primeiro dia util: regra de calendario situada na visao geral do art. 57.",
+  "CF88:ART.57:PAR.3": "Sessoes conjuntas (lista de finalidades): situadas na visao geral do art. 57.",
+  "CF88:ART.57:PAR.3:INC.I": "Finalidade de sessao conjunta: item curto situado na visao geral do art. 57.",
+  "CF88:ART.57:PAR.3:INC.II": "Finalidade de sessao conjunta: item curto situado na visao geral do art. 57.",
+  "CF88:ART.57:PAR.3:INC.III": "Finalidade de sessao conjunta: item curto situado na visao geral do art. 57.",
+  "CF88:ART.57:PAR.3:INC.IV": "Finalidade de sessao conjunta: item curto situado na visao geral do art. 57.",
+  "CF88:ART.57:PAR.5": "Mesa do Congresso presidida pelo Presidente do Senado: regra organizacional situada na visao geral do art. 57.",
+  "CF88:ART.58:PAR.1": "Representacao proporcional nas Mesas e comissoes: principio organizacional situado na visao geral do art. 58.",
+  "CF88:ART.58:PAR.4": "Comissao representativa durante o recesso: regra organizacional situada na visao geral do art. 58.",
+  "CF88:ART.59:INC.I": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:INC.II": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:INC.III": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:INC.IV": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:INC.V": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:INC.VI": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:INC.VII": "Especie normativa enumerada: item de uma palavra explicado na visao geral do art. 59; cada especie tem artigo proprio.",
+  "CF88:ART.59:PAR.UNICO": "Lei complementar sobre tecnica legislativa: situada na visao geral do art. 59.",
+  "CF88:ART.60:INC.I": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.60:INC.II": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.60:INC.III": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.60:PAR.1": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.60:PAR.2": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.60:PAR.3": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.60:PAR.5": "Coberto pela visao geral do art. 60 aprovada no piloto (HUMAN_APPROVED_T1, reutilizada sem alteracao); nova explicacao nao criada nesta missao.",
+  "CF88:ART.63:INC.I": "Hipotese de vedacao de aumento de despesa: as duas hipoteses sao explicadas na visao geral do art. 63.",
+  "CF88:ART.63:INC.II": "Hipotese de vedacao de aumento de despesa: as duas hipoteses sao explicadas na visao geral do art. 63.",
+  "CF88:ART.64:PAR.1": "Pedido de urgencia pelo Presidente: explicado na visao geral do art. 64; os prazos tem bloco proprio (§ 2º).",
+  "CF88:ART.65:PAR.UNICO": "Retorno do projeto emendado a Casa iniciadora: explicado na visao geral do art. 65.",
+  "CF88:ART.71:INC.IV": "Competencia do Tribunal de Contas da Uniao de enunciado direto: situada na visao geral do art. 71; incisos de maior impacto tem explicacao propria.",
+  "CF88:ART.71:INC.V": "Competencia do Tribunal de Contas da Uniao de enunciado direto: situada na visao geral do art. 71; incisos de maior impacto tem explicacao propria.",
+  "CF88:ART.71:INC.VI": "Competencia do Tribunal de Contas da Uniao de enunciado direto: situada na visao geral do art. 71; incisos de maior impacto tem explicacao propria.",
+  "CF88:ART.71:INC.VII": "Competencia do Tribunal de Contas da Uniao de enunciado direto: situada na visao geral do art. 71; incisos de maior impacto tem explicacao propria.",
+  "CF88:ART.71:INC.XI": "Competencia do Tribunal de Contas da Uniao de enunciado direto: situada na visao geral do art. 71; incisos de maior impacto tem explicacao propria.",
+  "CF88:ART.71:PAR.4": "Relatorios trimestrais e anuais ao Congresso: regra de rotina situada na visao geral do art. 71.",
+  "CF88:ART.72:PAR.1": "Etapa do rito (pronunciamento do Tribunal em trinta dias): explicada na visao geral do art. 72.",
+  "CF88:ART.72:PAR.2": "Etapa final do rito (proposta de sustacao ao Congresso): explicada na visao geral do art. 72.",
+  "CF88:ART.73:PAR.4": "Garantias do auditor substituto: situado na visao geral do art. 73 e no bloco de escolha (§ 2º); regra funcional especifica.",
+  "CF88:ART.74:INC.I": "Finalidade do controle interno: enumerada e explicada na visao geral do art. 74.",
+  "CF88:ART.74:INC.II": "Finalidade do controle interno: enumerada e explicada na visao geral do art. 74.",
+  "CF88:ART.74:INC.III": "Finalidade do controle interno: enumerada e explicada na visao geral do art. 74.",
+  "CF88:ART.74:INC.IV": "Finalidade do controle interno: enumerada e explicada na visao geral do art. 74.",
+  "CF88:ART.75:PAR.UNICO": "Tribunais de Contas estaduais com sete conselheiros: explicado na visao geral do art. 75."
+ },
+ "jurisprudence_recommendations": [
+  {
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "desired_reference": "MS 34.418 (STF, Plenario, 25/09/2023)",
+   "purpose": "votacao separada da perda do cargo e da inabilitacao",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "desired_reference": "MS 21.689 (STF)",
+   "purpose": "contexto historico da votacao separada",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.53:CAPUT",
+   "desired_reference": "Inq 4.781 Ref (STF)",
+   "purpose": "nexo da imunidade material com o mandato",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.53:CAPUT",
+   "desired_reference": "Pet 7.174 (STF)",
+   "purpose": "imunidade material (indicada como catalogavel pela revisao)",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.53:CAPUT",
+   "desired_reference": "Tema 950 da repercussao geral (STF, 2025)",
+   "purpose": "responsabilidade civil por manifestacao de parlamentar",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.1",
+   "desired_reference": "HC 232.627 (STF, 2025)",
+   "purpose": "foro restrito a crimes no cargo e em razao das funcoes; subsistencia apos o termino",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.1",
+   "desired_reference": "Inq 4.787-QO (STF, 2025)",
+   "purpose": "foro restrito a crimes no cargo e em razao das funcoes; subsistencia apos o termino",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.1",
+   "desired_reference": "HC 232.627 ED (STF, 2026)",
+   "purpose": "esclarecimentos sobre o alcance da regra",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.55:INC.VI",
+   "desired_reference": "AP 694 (STF)",
+   "purpose": "perda do mandato por condenacao criminal e cumprimento da pena",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.6",
+   "desired_reference": "MS 27.931 (STF)",
+   "purpose": "alcance do sobrestamento de pauta por medida provisoria",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.63",
+   "desired_reference": "ADI 3.114 (STF)",
+   "purpose": "aumento de despesa e pertinencia tematica de emenda parlamentar",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.63",
+   "desired_reference": "ADI 2.681 MC (STF)",
+   "purpose": "aumento de despesa e pertinencia tematica de emenda parlamentar",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  },
+  {
+   "target_id": "CF88:ART.63",
+   "desired_reference": "Tema 686 da repercussao geral (STF)",
+   "purpose": "emenda parlamentar em projeto de iniciativa reservada (sem ampliar a tese)",
+   "local_identity": null,
+   "subject_keywords": [],
+   "human_supplied": {
+    "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE"
+   }
+  }
+ ],
+ "round_approvals": [
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_D",
+   "decisions": "ROUND_D_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_C",
+   "decisions": "ROUND_C_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART1",
+   "decisions": "ROUND_B1_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART2",
+   "decisions": "ROUND_B2_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_B_PART3",
+   "decisions": "ROUND_B3_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_A_PART1",
+   "decisions": "ROUND_A1_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_A_PART2",
+   "decisions": "ROUND_A2_HUMAN_REVIEW_DECISIONS.json"
+  },
+  {
+   "review_scope": "CF88_BATCH06_TRIAGE_QUEUE_A_PART3",
+   "decisions": "ROUND_A3_HUMAN_REVIEW_DECISIONS.json"
+  }
+ ],
+ "stamping_evidence_corpus": "ENTENDA_ENGINE/derived/production_batch_06/CF88_BATCH_06_PRE_ROUND_D.entenda.jsonl"
+}

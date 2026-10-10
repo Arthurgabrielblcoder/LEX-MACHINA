@@ -1,0 +1,22 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "policy": "Evidencia do Relations Engine fixada para o build do Batch06 (os arquivos de trabalho LEX-MACHINAETAPA_2D4/2E41 nao sao versionados). O builder usa SEMPRE este pin, em qualquer ambiente, para que o build seja reproduzivel a partir do Git. Relacao fixada nao e promovida: a classe/decisao sao as registradas. Target sem relacao fixada resolve de forma conservadora (EXTERNAL_VERIFICATION_REQUIRED se houver alerta externo).",
+ "captured_from": "BATCH06_TRIAGE.json do checkpoint 7c59f2e (external_resolution.evidence de CF88:ART.45:PAR.1, gerado localmente com as fontes de T1_PIPELINE_CONFIG.external_resolver.relations_sources)",
+ "coverage": "PARCIAL: so as relacoes que o resolver consultou no checkpoint. Atualizacao do pin para o escopo inteiro (arts. 42-75) exige as pastas locais do Relations Engine: NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY.",
+ "sources": [
+  {
+   "source": "LEX-MACHINAETAPA_2D4/saida/99_RELATIONS_V2/99_AUDITORIA_QUALIDADE_2D4/CANDIDATAS_P1_RELACAO_EXPRESSA.json",
+   "relations": [
+    {
+     "origem_norma": "CF88", "origem_artigo": "45", "origem_paragrafo": "1",
+     "destino_norma": "EXT_LC78_1993", "tipos": ["REGULAMENTACAO"], "fontes": ["CAMARA_REGULAMENTACAO_CF"],
+     "urls": ["https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0980.htm"],
+     "texto_local_disponivel": false,
+     "classe": "C_EXTERNA_PENDENTE_VALIDACAO", "decisao": "OCULTAR_ATE_VALIDAR_VIGENCIA",
+     "pin_note": "classe inferida do status PENDING registrado; texto_local_disponivel=false inferido (o resolver registrou RELATIONS_ENGINE_PENDING, que vem depois do passo LOCAL_LEGAL_CORPUS)"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
+ "stage": "ROUND_0B (recalibracao Cloud, antes de qualquer revisao humana; nenhum item aprovado)",
+ "base_commit": "7c59f2e51575a26adf1aac1e61e64ce4e7b3722b",
+ "policy": "correcoes de redacao para achados reais ja registrados no checkpoint (teleologia nao declarada, ressalva omitida, frases longas, duplicacao, item de lista omitido, afirmacao externa sem proveniencia, resolucao categorica de referente ambiguo). Retira-se apenas o trecho problematico; o conteudo juridico restante nao muda. Nao sao micro-ajustes automaticos; editorial_version permanece 1 porque nenhuma versao foi revisada por humano (corpus candidato regenerado pelo builder).",
+ "counts": {
+  "TELEOLOGY": 7,
+  "EXTERNAL": 1,
+  "RESSALVA": 1,
+  "DUPLICATION": 1,
+  "LONG_SENTENCE": 8,
+  "SEMANTIC": 2,
+  "EC_EVIDENCE": 1
+ },
+ "targets": [
+  "CF88:ART.45:PAR.1",
+  "CF88:ART.49",
+  "CF88:ART.49:INC.V",
+  "CF88:ART.52",
+  "CF88:ART.52:INC.III",
+  "CF88:ART.53:PAR.3",
+  "CF88:ART.57",
+  "CF88:ART.57:PAR.2",
+  "CF88:ART.57:PAR.4",
+  "CF88:ART.62:PAR.1",
+  "CF88:ART.62:PAR.6",
+  "CF88:ART.64:PAR.2",
+  "CF88:ART.66:PAR.7",
+  "CF88:ART.67",
+  "CF88:ART.68:PAR.1",
+  "CF88:ART.71:INC.II",
+  "CF88:ART.71:INC.III",
+  "CF88:ART.71:INC.IX",
+  "CF88:ART.75"
+ ],
+ "edits": [
+  {
+   "target_id": "CF88:ART.49:INC.V",
+   "section": "o_que_significa",
+   "finding": "TELEOLOGY_SPECULATIVE (\"serve para\": limite/finalidade nao declarados no inciso)",
+   "category": "TELEOLOGY",
+   "before": "A sustação atinge o ato que exorbita, isto é, que vai além do permitido; não serve para rever atos regulares apenas por discordância política.",
+   "after": "A sustação recai sobre o ato que exorbita, isto é, que vai além do poder regulamentar ou dos limites da delegação legislativa."
+  },
+  {
+   "target_id": "CF88:ART.53:PAR.3",
+   "section": "o_que_significa",
+   "finding": "TELEOLOGY_SPECULATIVE (\"para evitar\": finalidade nao declarada no § 5º)",
+   "category": "TELEOLOGY",
+   "before": "Como o processo fica parado, a prescrição também fica suspensa enquanto durar o mandato, para evitar que o tempo extinga a punição.",
+   "after": "Enquanto a ação estiver sustada, a prescrição também fica suspensa, até o fim do mandato (§ 5º)."
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.2",
+   "section": "o_que_significa",
+   "finding": "TELEOLOGY_SPECULATIVE (\"para garantir\"/\"incentivo institucional\": finalidade nao declarada)",
+   "category": "TELEOLOGY",
+   "before": "Para garantir a votação, a Constituição condiciona o recesso de meio de ano à aprovação desse projeto: enquanto não for aprovado, o Congresso continua em sessão.\nÉ um incentivo institucional ligado ao calendário, sem sanção pessoal aos parlamentares.",
+   "after": "A Constituição condiciona o recesso de meio de ano à aprovação desse projeto: enquanto não for aprovado, o Congresso continua em sessão.\nO parágrafo não prevê sanção pessoal aos parlamentares: a consequência descrita no texto é a continuidade da sessão legislativa."
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.1",
+   "section": "o_que_significa",
+   "finding": "TELEOLOGY_SPECULATIVE (\"protegem\"/\"evita\"/\"contornar\": finalidade nao declarada) + LIST_ITEM (\"carreira\" da alinea c)",
+   "category": "TELEOLOGY",
+   "before": "Os limites protegem temas em que a decisão não deve ser tomada por ato unilateral e imediato do Presidente.\nAlguns protegem direitos fundamentais, como o direito penal e o eleitoral. Outros protegem a organização de instituições, como o Judiciário e o Ministério Público. O inciso II evita medidas de bloqueio de poupança, e o inciso IV impede que o Presidente use a medida para contornar um projeto já aprovado pelo Congresso.",
+   "after": "Os limites retiram um conjunto de temas do alcance da medida provisória, que é ato editado pelo Presidente.\nAlguns temas envolvem direitos, como o direito penal e o eleitoral. Outros envolvem a organização de instituições, como o Judiciário e o Ministério Público, incluídas a carreira e a garantia de seus membros. O inciso II veda medida que vise à detenção ou ao sequestro de bens, de poupança popular ou de outro ativo financeiro, e o inciso IV veda medida sobre matéria já disciplinada em projeto aprovado pelo Congresso e pendente de sanção ou veto."
+  },
+  {
+   "target_id": "CF88:ART.62:PAR.6",
+   "section": "o_que_significa",
+   "finding": "TELEOLOGY_SPECULATIVE (\"o objetivo do texto\": finalidade nao declarada)",
+   "category": "TELEOLOGY",
+   "before": "O efeito é sucessivo: atinge primeiro a Câmara, onde a votação começa, e depois o Senado.\nO objetivo do texto é pressionar o Congresso a decidir dentro do prazo.",
+   "after": "O efeito é sucessivo: atinge primeiro a Câmara, onde a votação começa, e depois o Senado."
+  },
+  {
+   "target_id": "CF88:ART.64:PAR.2",
+   "section": "atencao",
+   "finding": "TELEOLOGY_SPECULATIVE (\"evita conflito\": finalidade nao declarada)",
+   "category": "TELEOLOGY",
+   "before": "A exceção para matérias com prazo constitucional determinado evita conflito com outras regras de prazo, como as das medidas provisórias.",
+   "after": "O sobrestamento não alcança as deliberações que tenham prazo constitucional determinado: o § 2º as exclui expressamente."
+  },
+  {
+   "target_id": "CF88:ART.67",
+   "section": "o_que_significa",
+   "finding": "TELEOLOGY_SPECULATIVE (\"a regra evita\": finalidade nao declarada)",
+   "category": "TELEOLOGY",
+   "before": "A exceção exige apoio amplo: a nova proposta precisa ser assinada pela maioria absoluta dos membros da Câmara ou do Senado.\nA regra evita que o Congresso seja obrigado a decidir repetidamente a mesma questão em curto período.",
+   "after": "A exceção exige apoio amplo: a nova proposta precisa ser assinada pela maioria absoluta dos membros da Câmara ou do Senado."
+  },
+  {
+   "target_id": "CF88:ART.45:PAR.1",
+   "section": "external_layer_notes",
+   "finding": "EXTERNAL_FACT_NEEDS_PROVENANCE / LAW_STATUS (\"a lei complementar que fixa ... esta na camada\": estado e conteudo de lei externa sem proveniencia; relacao PENDING nao promovida)",
+   "category": "EXTERNAL",
+   "before": "A lei complementar que fixa o número de deputados e a sua atualização estão na camada de legislação correlata; a fonte estrutural do projeto registra a remissão \"Vide Lei Complementar nº 78, de 1993\".",
+   "after": "A fonte estrutural do projeto registra a remissão \"Vide Lei Complementar nº 78, de 1993\". A relação com essa lei está pendente de validação no Relations Engine (evidência local pendente) e o conteúdo dela não é afirmado nesta explicação."
+  },
+  {
+   "target_id": "CF88:ART.49",
+   "section": "o_que_diz",
+   "finding": "RESSALVA OMITIDA (inciso II: \"ressalvados os casos previstos em lei complementar\") + LAW_DEPENDENCY_OMITTED + LONG_SENTENCE",
+   "category": "RESSALVA",
+   "before": "O art. 49 enumera as competências exclusivas do Congresso Nacional, entre elas: decidir definitivamente sobre tratados que gerem encargos gravosos, autorizar declaração de guerra e celebração de paz, autorizar ausência prolongada do Presidente e do Vice, aprovar estado de defesa e intervenção federal, sustar atos normativos do Executivo, fixar subsídios, julgar as contas do Presidente, fiscalizar o Executivo, autorizar referendo e convocar plebiscito e decretar estado de calamidade pública nacional.",
+   "after": "O art. 49 enumera as competências exclusivas do Congresso Nacional. Entre elas estão: decidir definitivamente sobre tratados que gerem encargos gravosos; autorizar declaração de guerra, celebração de paz e trânsito ou permanência temporária de forças estrangeiras, ressalvados os casos previstos em lei complementar; autorizar ausência do Presidente e do Vice por mais de quinze dias; aprovar estado de defesa e intervenção federal; sustar atos normativos do Executivo; fixar subsídios; julgar as contas do Presidente; fiscalizar o Executivo; autorizar referendo e convocar plebiscito; e decretar estado de calamidade pública nacional."
+  },
+  {
+   "target_id": "CF88:ART.68:PAR.1",
+   "section": "o_que_diz",
+   "finding": "DUPLICATION (62 § 1º x 68 § 1º, sim 0.356 > 0.35) + LIST_ITEM (\"carreira\" do inciso I omitida)",
+   "category": "DUPLICATION",
+   "before": "O § 1º proíbe delegar os atos de competência exclusiva do Congresso, os de competência privativa da Câmara ou do Senado, a matéria reservada a lei complementar e a legislação sobre organização do Judiciário e do Ministério Público e garantias de seus membros; sobre nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e sobre planos plurianuais, diretrizes orçamentárias e orçamentos.",
+   "after": "Pelo § 1º, ficam fora da delegação três grupos. O primeiro reúne os atos de competência exclusiva do Congresso e os de competência privativa da Câmara ou do Senado. O segundo é a matéria reservada a lei complementar. O terceiro é a legislação sobre: organização do Judiciário e do Ministério Público, incluídas a carreira e as garantias dos seus membros; nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e planos plurianuais, diretrizes orçamentárias e orçamentos."
+  },
+  {
+   "target_id": "CF88:ART.52",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O art. 52 lista as competências privativas do Senado Federal: julgar autoridades por crime de responsabilidade, aprovar a escolha de autoridades, autorizar operações financeiras externas, fixar limites de dívida e de crédito dos entes, suspender lei declarada inconstitucional, aprovar a exoneração antecipada do Procurador-Geral da República, cuidar da sua própria organização e avaliar o Sistema Tributário Nacional.",
+   "after": "O art. 52 lista as competências privativas do Senado Federal. Entre elas estão julgar autoridades por crime de responsabilidade, aprovar a escolha de autoridades, autorizar operações financeiras externas e fixar limites de dívida e de crédito dos entes. Cabe-lhe também suspender lei declarada inconstitucional, aprovar a exoneração antecipada do Procurador-Geral da República, cuidar da sua própria organização e avaliar o Sistema Tributário Nacional."
+  },
+  {
+   "target_id": "CF88:ART.52:INC.III",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O inciso III exige aprovação prévia do Senado, por voto secreto e após arguição pública, para a escolha de magistrados nos casos previstos na Constituição, Ministros do Tribunal de Contas da União indicados pelo Presidente, Governador de Território, presidente e diretores do Banco Central, Procurador-Geral da República e titulares de outros cargos que a lei determinar.",
+   "after": "O inciso III exige aprovação prévia do Senado, por voto secreto e após arguição pública, para a escolha de certas autoridades. São elas: magistrados, nos casos previstos na Constituição; Ministros do Tribunal de Contas da União indicados pelo Presidente; Governador de Território; presidente e diretores do Banco Central; Procurador-Geral da República; e titulares de outros cargos que a lei determinar."
+  },
+  {
+   "target_id": "CF88:ART.57",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O art. 57 organiza o funcionamento do Congresso Nacional: o calendário anual de reuniões, com dois períodos, um de fevereiro a julho e outro de agosto a dezembro, a transferência de datas que caiam em fim de semana ou feriado, a vinculação do recesso à aprovação da lei de diretrizes orçamentárias, as sessões conjuntas, as sessões preparatórias e a eleição das Mesas, a Mesa do Congresso, a convocação extraordinária e a pauta dessa convocação.",
+   "after": "O art. 57 organiza o funcionamento do Congresso Nacional. Trata do calendário anual de reuniões, com dois períodos, um de fevereiro a julho e outro de agosto a dezembro, e da transferência de datas que caiam em fim de semana ou feriado. Trata ainda da vinculação do recesso à aprovação da lei de diretrizes orçamentárias, das sessões conjuntas, das sessões preparatórias e da eleição das Mesas, da Mesa do Congresso, da convocação extraordinária e da pauta dessa convocação."
+  },
+  {
+   "target_id": "CF88:ART.57:PAR.4",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O § 4º prevê sessões preparatórias de cada Casa, a partir de 1º de fevereiro do primeiro ano da legislatura, para a posse dos membros e a eleição das Mesas, com mandato de dois anos e vedada a recondução para o mesmo cargo na eleição imediatamente seguinte.",
+   "after": "O § 4º prevê sessões preparatórias de cada Casa, a partir de 1º de fevereiro do primeiro ano da legislatura, para a posse dos membros e a eleição das Mesas. Os membros da Mesa têm mandato de dois anos e não podem ser reconduzidos ao mesmo cargo na eleição imediatamente seguinte."
+  },
+  {
+   "target_id": "CF88:ART.66:PAR.7",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O § 7º determina que, se o Presidente da República não promulgar a lei em quarenta e oito horas, nos casos de sanção tácita e de veto derrubado, o Presidente do Senado a promulgue, e, se este não o fizer no mesmo prazo, a tarefa caiba ao Vice-Presidente do Senado.",
+   "after": "O § 7º trata da promulgação nos casos de sanção tácita e de veto derrubado. Se o Presidente da República não promulgar a lei em quarenta e oito horas, o Presidente do Senado a promulga; se este não o fizer no mesmo prazo, a tarefa cabe ao Vice-Presidente do Senado."
+  },
+  {
+   "target_id": "CF88:ART.71:INC.II",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal, e também as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos.",
+   "after": "O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal. Também cabe ao Tribunal julgar as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos."
+  },
+  {
+   "target_id": "CF88:ART.71:INC.III",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em comissão, e das concessões de aposentadorias, reformas e pensões, ficando de fora as melhorias posteriores que não mudem o fundamento legal da concessão.",
+   "after": "O inciso III atribui ao Tribunal examinar, para registro, a legalidade das admissões de pessoal na administração direta e indireta, inclusive fundações, sem incluir as nomeações para cargos em comissão. Também examina a legalidade das concessões de aposentadorias, reformas e pensões, ficando de fora as melhorias posteriores que não mudem o fundamento legal da concessão."
+  },
+  {
+   "target_id": "CF88:ART.71:INC.IX",
+   "section": "o_que_diz",
+   "finding": "LONG_SENTENCE",
+   "category": "LONG_SENTENCE",
+   "before": "Os incisos IX e X permitem ao Tribunal, diante de ilegalidade, fixar prazo para que o órgão ou entidade tome as medidas necessárias ao cumprimento da lei e, se não for atendido, suspender a execução do ato questionado, comunicando a decisão à Câmara e ao Senado.",
+   "after": "Os incisos IX e X tratam da reação do Tribunal diante de ilegalidade. Ele pode fixar prazo para que o órgão ou entidade tome as medidas necessárias ao cumprimento da lei e, se não for atendido, sustar a execução do ato impugnado, comunicando a decisão à Câmara e ao Senado."
+  },
+  {
+   "target_id": "CF88:ART.75",
+   "section": "o_que_diz",
+   "finding": "SEMANTIC_AMBIGUITY (\"proíbe a sua extinção\": a parafrase resolvia categoricamente o referente de \"sua\"; substituida pela citacao literal)",
+   "category": "SEMANTIC",
+   "before": "Manda aplicar, no que couber, as regras desta Seção aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios, quanto a sua organização, composição e fiscalização, e proíbe a sua extinção, criação ou instalação.",
+   "after": "Manda aplicar, no que couber, as regras desta Seção aos Tribunais de Contas dos Estados e do Distrito Federal e aos Tribunais e Conselhos de Contas dos Municípios, quanto à organização, à composição e à fiscalização. A parte final do caput diz \"vedada sua extinção, criação ou instalação\"."
+  },
+  {
+   "target_id": "CF88:ART.75",
+   "section": "external_layer_notes",
+   "finding": "EC 139/2026: existencia da redacao comprovada por fonte oficial versionada (nao e mais EXTERNAL_VERIFICATION_REQUIRED); permanece ambiguidade semantica",
+   "category": "EC_EVIDENCE",
+   "before": "Redação do caput atribuída na fonte canônica à Emenda Constitucional nº 139, de 2026: EXTERNAL_VERIFICATION_REQUIRED sobre redação oficial vigente e alcance da vedação.",
+   "after": "A redação do caput consta da compilação oficial monovigente do Senado Federal versionada no projeto (norma 579494); a fonte canônica estrutural a atribui à Emenda Constitucional nº 139, de 2026. O referente de \"sua\" na vedação final e a relação com o art. 31, § 4º, exigem revisão humana (ambiguidade semântica)."
+  },
+  {
+   "target_id": "CF88:ART.75",
+   "section": "atencao",
+   "finding": "SEMANTIC_AMBIGUITY (redacao oficial ja comprovada; ressalva reduzida ao referente de \"sua\")",
+   "category": "SEMANTIC",
+   "before": "A redação atual do caput é atribuída pela fonte a emenda constitucional recente, e o alcance exato da vedação de extinção, criação ou instalação deve ser conferido na redação oficial vigente. A relação com a regra do art. 31, § 4º, sobre tribunais municipais, também exige verificação.",
+   "after": "A redação atual do caput é atribuída pela fonte a emenda constitucional recente. O texto não explicita a quais tribunais se refere o pronome \"sua\" na vedação de extinção, criação ou instalação, e a relação com a regra do art. 31, § 4º, sobre tribunais municipais, exige verificação."
+  }
+ ]
+}
