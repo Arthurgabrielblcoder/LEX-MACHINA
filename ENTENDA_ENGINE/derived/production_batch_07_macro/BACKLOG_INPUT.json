@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "policy": "Registro de problemas encontrados durante a missao em modulos compartilhados, runtime ou conteudo antigo. Itens marcados RESOLVIDO foram tratados no segundo passe (MACRO07_SECOND_PASS); os demais seguem sem correcao.",
+ "items": [
+  {
+   "id": "MB07-01",
+   "kind": "RUNTIME_TEXT_ANOMALY",
+   "target": "CF88:ART.114:INC.VII",
+   "detail": "RESOLVIDO no segundo passe. Causa: a fonte do Senado (raw.html e normalizado.txt) traz \"VII I - a execucao...\"; a segmentacao anexava o texto ao VII e o status marcava VIII HISTORICAL. Correcao aprovada SRC-CORR-CF88-579494-16434817-ART114-INC-VIII aplicada pelo parser compartilhado (fail closed, verificada contra o cf.txt canonico) e errata de status (VIII CURRENT). Ver MACRO07_SOURCE_ANOMALY_ART114_REPORT.md.",
+   "action": "Nenhuma nesta camada. Consolidar a errata no status congelado numa missao que regenere os exports do DEVICE (MB07-09)."
+  },
+  {
+   "id": "MB07-02",
+   "kind": "RUNTIME_TEXT_ANOMALY",
+   "target": "CF88:ART.155:INC.I:AL.c",
+   "detail": "RESOLVIDO no segundo passe. A alinea c do inciso I e a redacao original de 1988, renumerada para o inciso III pela EC 3/1993; a comparacao do status falhava so pelo ponto final. Errata de status: HISTORICAL_ONLY (rotulo renumerado). Ver MACRO07_SOURCE_ANOMALY_ART155_REPORT.md.",
+   "action": "Nenhuma nesta camada (ver MB07-09)."
+  },
+  {
+   "id": "MB07-03",
+   "kind": "ENGINE_TERM_COLLISION",
+   "target": "entenda_engine.EXTERNAL_CASE_RE",
+   "detail": "O contrato bloqueia \"sumula\" no corpo, inclusive quando a palavra designa o proprio instituto constitucional (art. 103-A). O corpo usa \"enunciado vinculante\" e a ATENCAO avisa o leitor; o termo constitucional fica na camada externa.",
+   "action": "Avaliar excecao no contrato para o termo constitucional (alteraria modulo compartilhado com hash do Batch06)."
+  },
+  {
+   "id": "MB07-04",
+   "kind": "RISK_DETECTOR_GAP",
+   "target": "t1_risk.assess",
+   "detail": "Somente \"regra de transicao\" (singular) no corpo eleva para TRANSITION_OR_TEMPORAL; o plural nao. Contornado na redacao dos drafts em que a aplicacao no tempo e material (146 § 1º, 149-B, 149-C e reforma tributaria em 151-159-A). No segundo passe a decisao passou a ser da evidencia versionada (MACRO07_TRANSITION_EVIDENCE.json), nao da redacao do draft.",
+   "action": "Aceitar singular e plural no detector (modulo compartilhado)."
+  },
+  {
+   "id": "MB07-05",
+   "kind": "VALIDATOR_GAP",
+   "target": "t1_validator_v3.EXCEPTION_IN_DRAFT",
+   "detail": "\"excetuado(s)\" nao e reconhecido como marcador de excecao no draft (so \"exceto\"). Contornado na redacao (art. 155).",
+   "action": "Incluir excetuad* no marcador (modulo compartilhado)."
+  },
+  {
+   "id": "MB07-06",
+   "kind": "VIGENCY_MATCH_COVERAGE",
+   "target": "entenda_vigency_plan.vigency_map",
+   "detail": "A anotacao de vigencia so e casada quando o texto do dispositivo no runtime e identico (apos normalizacao) a linha anotada do cf.txt canonico; dispositivos sem casamento ficam sem anotacao (falso negativo possivel para JUDICIAL_REVIEW_ANNOTATED e para historico).",
+   "action": "Casamento aproximado com revisao humana das divergencias."
+  },
+  {
+   "id": "MB07-07",
+   "kind": "DUPLICATE_DRAFT_DROPPED",
+   "target": "CF88:ART.150",
+   "detail": "A visao geral do art. 150 ja e HUMAN_APPROVED_T1 no corpus principal: reutilizada sem alteracao; o rascunho novo foi removido pelo critic (DROP_EXPLANATION, registrado no log).",
+   "action": "Nenhuma."
+  },
+  {
+   "id": "MB07-08",
+   "kind": "STATUS_FORMAT_DIVERGENCE",
+   "target": "CF88:ART.239:PAR.4",
+   "detail": "Unica outra entrada do status com motivo \"rotulo com formatacao divergente\"; fora do escopo dos arts. 76-175. A errata recalculada nao a altera (continua CURRENT).",
+   "action": "Conferir na missao do art. 239."
+  },
+  {
+   "id": "MB07-09",
+   "kind": "FROZEN_STATUS_ERRATA",
+   "target": "LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json",
+   "detail": "O status e entrada fixada do manifesto do Batch06 e dos exports run1/run2/run3 do DEVICE; nao foi reescrito. As correcoes (114, VIII; 155, I, c) estao em CF88_TARGET_STATUS_ERRATA.json, aplicada pelo builder macro.",
+   "action": "Missao propria para consolidar a errata e regenerar os exports do DEVICE com aprovacao."
+  },
+  {
+   "id": "MB07-10",
+   "kind": "EXTERNAL_SOURCE_NOT_VERSIONED",
+   "target": "EC 111/2021, EC 125/2022, EC 132/2023, EC 136/2025",
+   "detail": "As regras de transicao proprias dessas emendas (fora do ADCT) nao estao versionadas: 82, 100 § 5º, 105 § 2º, 155 § 6º, 159-A e 165 § 18 seguem HIGH com PENDING_EXTERNAL_INGESTION.",
+   "action": "Ingerir o texto oficial das emendas (Planalto/Senado) com sha256 e reavaliar."
+  },
+  {
+   "id": "MB07-11",
+   "kind": "JUDICIAL_REVIEW_DECISION_NOT_VERSIONED",
+   "target": "ADI 3392, 3423, 3431, 3432, 3520, 4425, 7047, 7064, 7697",
+   "detail": "As decisoes dos controles anotados (Vide ADI) nao estao versionadas; 11 explicacoes ficam JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS (D).",
+   "action": "Ingestao oficial das decisoes (STF) e reavaliacao."
+  },
+  {
+   "id": "MB07-12",
+   "kind": "SOURCE_ANNOTATION_ANOMALY",
+   "target": "CF88:ART.102:PAR.2 (Vide ADIN 3392)",
+   "detail": "A fonte canonica anota o art. 102, § 2º, com \"Vide ADIN 3392\", mas a ADI 3392 trata de sentenca normativa trabalhista (art. 114, § 2º) e foi julgada improcedente (STF, 2020). A anotacao nao e jurisprudencia do efeito vinculante; o T1 aprovado na rodada D1 nao a usa.",
+   "action": "Manter a fonte congelada; registrar a anomalia na ingestao da camada JURISPRUDENCIA e reavaliar o roteamento HIGH desse paragrafo."
+  },
+  {
+   "id": "MB07-13",
+   "kind": "EXTERNAL_SOURCE_VERIFIED_PENDING_INGESTION",
+   "target": "rodada D1 do Macro07 (D1-D12)",
+   "detail": "Fontes oficiais conferidas e aprovadas pela revisao humana (EC 111/2021, EC 113/2021, EC 114/2021, EC 125/2022, EC 136/2025, Lei 15.484/2026, Lei 9.868/1999, Lei 7.783/1989, Lei 4.320/1964, LC 97/1999; STF: ADI 4425, 7064/7047, 3392, 3423, 3395, 3684, 6457; Tema 558 indicado pela revisao humana): registradas em human_review.content_provenance (HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE).",
+   "action": "Ingerir os textos e decisoes na camada externa/JURISPRUDENCIA com sha256 (PENDING_EXTERNAL_INGESTION)."
+  }
+ ]
+}

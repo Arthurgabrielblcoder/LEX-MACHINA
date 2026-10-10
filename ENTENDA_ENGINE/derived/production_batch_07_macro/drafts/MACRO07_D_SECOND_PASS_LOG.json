@@ -1,0 +1,323 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "D",
+ "policy": "SEGUNDO PASSE: revisao critica adicional (teleologia, regra inventada, absolutos, pai x filho, numero ilustrativo, enumeracao incompleta, remissao errada, lei infraconstitucional como CF, jurisprudencia velada, emenda recente, transicao ativa, exemplo que cria requisito) e saneamento de fonte. Correcao automatica so quando segura; o que exige interpretacao juridica externa vai para C/D. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.155",
+   "section": "article_notes",
+   "category": "FONTE_SANEADA",
+   "detector": "SOURCE_SANITY",
+   "reason": "A alinea c do inciso I e a redacao original renumerada para o inciso III (errata de status: HISTORICAL_ONLY); deixa de ser alvo vigente.",
+   "before": " e a alinea c do inciso I (sem texto no runtime)",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.151",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A propria Constituicao permite que lei complementar afaste incidencias de tributos estaduais e municipais (arts. 155, § 2º, XII, e; 156, § 3º, II).",
+   "before": "só o ente que tem a competência pode isentar.",
+   "after": "em regra, a isenção cabe ao ente que tem a competência sobre o tributo, ressalvados os casos previstos na própria Constituição."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.5",
+   "section": "o_que_significa",
+   "category": "LEI_COMO_CONSTITUICAO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A definicao da operacao de origem vem da lei; trecho retirado (correcao segura).",
+   "before": "A cobrança ocorre na operação de origem, isto é, na primeira venda do ouro extraído.",
+   "after": "A cobrança ocorre na operação de origem."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.5",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Trinta mais setenta por cento somam todo o montante.",
+   "before": "a arrecadação vai quase toda para os entes de onde o ouro saiu",
+   "after": "a arrecadação vai inteira para os entes de onde o ouro saiu"
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "section": "o_que_significa",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O art. 195, V, e contribuicao; o texto fala em tributos.",
+   "before": "entra na base de cálculo dos impostos sobre consumo indicados",
+   "after": "entra na base de cálculo dos tributos sobre consumo indicados no inciso IV"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A exigencia de lei complementar vem de interpretacao judicial; passa a ser remetida.",
+   "before": "A cobrança dessa diferença depende de lei complementar sobre o imposto.",
+   "after": "Se a cobrança dessa diferença depende de lei complementar específica é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.3",
+   "section": "o_que_significa",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Conclusao jurisprudencial afirmada como regra; passa a ser remetida.",
+   "before": "Contribuições não estão abrangidas pela palavra imposto usada no texto.",
+   "after": "O texto fala apenas em impostos; a situação das contribuições é tratada na camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.4",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A incidencia unica vale para os combustiveis definidos em lei complementar (§ 2º, XII, h).",
+   "before": "Os combustíveis têm um regime especial: o imposto é cobrado uma única vez na cadeia.",
+   "after": "Os combustíveis e lubrificantes definidos em lei complementar têm um regime especial: o imposto é cobrado uma única vez na cadeia."
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "section": "exemplo_pratico",
+   "category": "EXEMPLO_CRIA_REQUISITO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O texto nao fixa o domicilio do comprador como destino (§ 5º, IV).",
+   "before": "O imposto é calculado pelas alíquotas do Estado e do Município onde mora o comprador.",
+   "after": "O imposto é calculado pelas alíquotas do Estado e do Município de destino da operação, definido conforme os critérios da lei complementar."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso VIII ressalva tambem as hipoteses previstas na Constituicao.",
+   "before": "a empresa abate o imposto cobrado em todas as suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar",
+   "after": "a empresa abate o imposto cobrado em suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar e as hipóteses previstas na própria Constituição"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_diz",
+   "category": "ENUMERACAO_INCOMPLETA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Mesma ressalva do inciso VIII.",
+   "before": "é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar",
+   "after": "é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar e às hipóteses previstas na Constituição"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_significa",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso X veda incentivos e beneficios relativos ao imposto, salvo hipoteses constitucionais.",
+   "before": "E os entes não podem conceder benefícios fiscais por conta própria.",
+   "after": "E o imposto não pode ser objeto de incentivos, benefícios ou regimes favorecidos, salvo nos casos previstos na própria Constituição."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O paragrafo nao declara a razao dos regimes especificos.",
+   "before": "Alguns setores não se encaixam bem nas regras gerais do imposto. Para eles, a lei complementar cria regimes específicos.",
+   "after": "Para os setores listados no parágrafo, a lei complementar cria regimes específicos."
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "section": "o_que_significa",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Os §§ 1º e 2º tratam so das parcelas do inciso IV.",
+   "before": "Os §§ 1º e 2º definem como essas parcelas estaduais são divididas entre os Municípios.",
+   "after": "Os §§ 1º e 2º definem como as parcelas do imposto sobre circulação de mercadorias e do imposto do art. 156-A são divididas entre os Municípios."
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "section": "o_que_diz",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Os paragrafos alcancam apenas as parcelas do inciso IV.",
+   "before": "Os parágrafos fixam critérios para creditar essas parcelas estaduais.",
+   "after": "Os parágrafos fixam critérios para creditar as parcelas do inciso IV."
+  },
+  {
+   "target_id": "CF88:ART.165",
+   "section": "o_que_significa",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A visao geral generalizava alem do filho (§§ 10, 11 e 13).",
+   "before": "criam deveres como a transparência da execução e a obrigação de executar o que foi aprovado.",
+   "after": "criam deveres como a transparência da execução e o dever de executar as programações, que tem limites e, pelo § 13, alcança os orçamentos fiscal e da seguridade social da União."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.18",
+   "section": "o_que_significa",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 18 nao preve termo final; o marco \"a partir de 2026\" e do proprio texto.",
+   "before": "O bloco muda temporariamente a forma de contar os precatórios da União nas regras fiscais.",
+   "after": "O bloco muda, a partir de 2026, a forma de contar os precatórios da União nas regras fiscais."
+  },
+  {
+   "target_id": "CF88:ART.166",
+   "section": "o_que_significa",
+   "category": "LEI_COMO_CONSTITUICAO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A sessao conjunta vem das normas regimentais.",
+   "before": "e depois são votadas em sessão conjunta.",
+   "after": "e depois são apreciadas pelas duas Casas, na forma do regimento comum."
+  },
+  {
+   "target_id": "CF88:ART.166",
+   "section": "exemplo_pratico",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Omitia as excecoes dos §§ 13 e 18 (explicacao propria).",
+   "before": "se aprovada dentro do limite das emendas individuais, tem execução obrigatória.",
+   "after": "se aprovada dentro do limite das emendas individuais, tem execução obrigatória, salvo impedimento de ordem técnica ou redução admitida pelo texto para cumprir a meta fiscal."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.3",
+   "section": "o_que_diz",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O_que_diz escolhia uma leitura (tres situacoes) que contradizia o_que_significa e a ATENCAO; paráfrase neutra, inciso por inciso; a cumulatividade segue remetida.",
+   "before": "O § 3º permite aprovar emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, apenas em três situações. Na primeira, a emenda respeita o plano plurianual e a lei de diretrizes orçamentárias e indica os recursos necessários. Esses recursos só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. Nas outras duas, a emenda corrige erros ou omissões ou se refere aos dispositivos do texto do projeto.",
+   "after": "O § 3º limita a aprovação de emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, às hipóteses dos incisos I a III. O inciso I pede compatibilidade com o plano plurianual e a lei de diretrizes orçamentárias. O inciso II exige a indicação dos recursos, que só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. O inciso III trata de emendas que corrigem erros ou omissões ou que se referem aos dispositivos do texto do projeto."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.3",
+   "section": "o_que_significa",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Mesma harmonizacao: sem afirmar a cumulatividade.",
+   "before": "Além disso, a emenda precisa respeitar o plano plurianual e a lei de diretrizes orçamentárias.",
+   "after": "O texto também menciona a compatibilidade com o plano plurianual e a lei de diretrizes orçamentárias (inciso I)."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "section": "o_que_diz",
+   "category": "NUMERO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 18 fixa um teto (\"em ate\").",
+   "before": "O § 18 permite reduzir esses montantes na mesma proporção da limitação das demais despesas discricionárias",
+   "after": "O § 18 permite reduzir esses montantes em até a mesma proporção da limitação das demais despesas discricionárias"
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Idem.",
+   "before": "os valores podem ser reduzidos na mesma proporção das demais despesas discricionárias",
+   "after": "os valores podem ser reduzidos em até a mesma proporção da limitação das demais despesas discricionárias"
+  },
+  {
+   "target_id": "CF88:ART.167",
+   "section": "atencao",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso III nao tem explicacao propria (PARENT_CHILD_LEGAL_CONSISTENCY).",
+   "before": "Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria.",
+   "after": "O inciso IV e os §§ 1º, 3º e 7º têm explicação própria."
+  },
+  {
+   "target_id": "CF88:ART.167",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso XII admite despesas de organizacao e funcionamento.",
+   "before": "Outros incisos protegem os recursos da previdência, que só podem pagar benefícios.",
+   "after": "Outros incisos restringem o uso dos recursos da previdência ao pagamento de benefícios e, no regime próprio, também às despesas de organização e funcionamento."
+  },
+  {
+   "target_id": "CF88:ART.167",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Ignorava o § 5º.",
+   "before": "o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa.",
+   "after": "em regra, o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa; o § 5º abre exceção para ciência, tecnologia e inovação."
+  },
+  {
+   "target_id": "CF88:ART.167:INC.IV",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Finalidade nao declarada.",
+   "before": "A receita dos impostos deve ficar livre para que o orçamento decida, a cada ano, onde aplicá-la.",
+   "after": "A regra é a não vinculação da receita de impostos."
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Relacao causal nao declarada.",
+   "before": "Por isso, o texto o limita a situações excepcionais.",
+   "after": "O texto limita esse crédito a situações excepcionais."
+  },
+  {
+   "target_id": "CF88:ART.167-A:PAR.1",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 3º, III, fala em deixar de existir a hipotese do § 1º.",
+   "before": "ou se a relação cair abaixo de 85%, ele deixa de valer",
+   "after": "ou se deixar de existir a situação do § 1º, ele deixa de valer"
+  },
+  {
+   "target_id": "CF88:ART.167-D",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO_ERRADO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A definicao atrelava o conceito a calamidade.",
+   "before": "despesa permanente, criada por lei ou ato, que continua depois do fim da calamidade.",
+   "after": "despesa criada por lei ou ato que obriga o ente por período prolongado; o conceito técnico vem da legislação de finanças públicas."
+  },
+  {
+   "target_id": "CF88:ART.169",
+   "section": "exemplo_pratico",
+   "category": "EXEMPLO_CRIA_REQUISITO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 3º nao fixa ordem entre as providencias.",
+   "before": "Primeiro, reduz em no mínimo vinte por cento o gasto com cargos em comissão e funções de confiança; depois, exonera servidores não estáveis.",
+   "after": "Deve reduzir em pelo menos vinte por cento o gasto com cargos em comissão e funções de confiança e exonerar servidores não estáveis."
+  },
+  {
+   "target_id": "CF88:ART.169:PAR.1",
+   "section": "o_que_significa",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A propria ATENCAO remete o ponto a camada JURISPRUDENCIA.",
+   "before": "mas continuam sujeitas à exigência de dotação.",
+   "after": "e a aplicação a elas da exigência de dotação é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "section": "atencao",
+   "category": "AFIRMACAO_NAO_VERIFICAVEL",
+   "detector": "SECOND_PASS_REVIEW",
+   "reason": "O ADCT versionado nao traz valores nem cronograma do fundo (MACRO07_TRANSITION_EVIDENCE.json); a afirmacao \"estao no ADCT\" nao e verificavel.",
+   "before": "Os valores do fundo e o cronograma de entrega estão no ADCT e dependem de regra de transição, consultada na camada externa.",
+   "after": "Os valores do fundo e o cronograma de entrega não estão no texto do artigo; ficam na camada externa."
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "section": "external_layer_notes",
+   "category": "AFIRMACAO_NAO_VERIFICAVEL",
+   "detector": "SECOND_PASS_REVIEW",
+   "reason": "Idem.",
+   "before": "Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional estão no ADCT, na camada externa.",
+   "after": "Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional não constam do art. 159-A nem do ADCT versionado: EXTERNAL_VERIFICATION_REQUIRED."
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo parafraseia a nao incidencia do texto; o excesso e extensao: CONTEXT_ONLY.",
+   "before": "O alcance da não incidência quando o valor do imóvel supera o capital integralizado não deve ser deduzido apenas do texto; é tema da camada JURISPRUDÊNCIA.",
+   "after": "O alcance da não incidência quando o valor do imóvel supera o capital integralizado é tema da camada JURISPRUDÊNCIA."
+  }
+ ]
+}

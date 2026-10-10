@@ -1,0 +1,73 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "packet_prefix": "MACRO07",
+ "as_of_date": "2026-10-05",
+ "scope_articles": "CF88 arts. 76 a 175 (inclui artigos com letra, ex.: 103-A, 156-A, 167-G)",
+ "sub_blocks": {
+  "A": {
+   "name": "MACRO_07_A",
+   "start": 76,
+   "end": 100
+  },
+  "B": {
+   "name": "MACRO_07_B",
+   "start": 101,
+   "end": 125
+  },
+  "C": {
+   "name": "MACRO_07_C",
+   "start": 126,
+   "end": 150
+  },
+  "D": {
+   "name": "MACRO_07_D",
+   "start": 151,
+   "end": 175
+  }
+ },
+ "sub_blocks_built": [
+  "A",
+  "B",
+  "C",
+  "D"
+ ],
+ "canonical_structural_source": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+ "reference_export": "LEGAL_TARGET_ID/derived/export_test/run3/CF88_REFERENCES_EXPORT.json",
+ "prior_corpora": [
+  "ENTENDA_ENGINE/derived/production_batch_01_final/CF88_BATCH_01_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_02_final/CF88_BATCH_02_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_03_final/CF88_BATCH_03_FINAL.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_04/CF88_BATCH_04.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_05/CF88_BATCH_05.entenda.jsonl",
+  "ENTENDA_ENGINE/derived/production_batch_06/CF88_BATCH_06.entenda.jsonl"
+ ],
+ "soft_target": [
+  150,
+  400
+ ],
+ "hard_cap": 450,
+ "soft_target_justification": "sem cota: toda visao geral de artigo + dispositivos com ganho pedagogico proprio; listas e regras formais ficam na visao geral (SKIP com motivo)",
+ "template_version": "ENTENDA-T1 (O QUE DIZ / O QUE SIGNIFICA / EXEMPLO PRATICO / ATENCAO / PALAVRAS DIFICEIS)",
+ "prompt_version": "ENTENDA-T1-EDITORIAL-STANDARD congelado (tag entenda-batch05-t1-frozen-2026-10-04) + adendo A6 + calibracoes do Batch06 (validator v3, filas recalibradas, licoes da fila D)",
+ "authoring": {
+  "mode": "EDITORIAL_EXPLICITO (redigido e revisavel; nao gerado por transformacao mecanica da lei); dois passes: DRAFTER e CRITIC",
+  "author": "rascunho editorial Claude para revisao humana",
+  "generated_at": "2026-10-05"
+ },
+ "base_branch": "batch06-scale-cloud @ da0dbfa452c2ce16310b58e868de8921441f0cef",
+ "human_review_rounds": [
+  {
+   "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
+   "decisions": "MACRO07_ROUND_D1_HUMAN_REVIEW_DECISIONS.json",
+   "pre_review_evidence": {
+    "corpus": "history/pre_round_d1/CF88_MACRO_07_PRE_ROUND_D1.entenda.jsonl",
+    "triage": "history/pre_round_d1/MACRO07_TRIAGE_PRE_ROUND_D1.json",
+    "packets": [
+     "history/pre_round_d1/MACRO07_FULL_D_REVIEW_PRE_ROUND_D1.md"
+    ]
+   }
+  }
+ ]
+}

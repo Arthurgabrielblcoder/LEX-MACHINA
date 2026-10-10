@@ -1,0 +1,152 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "A",
+ "policy": "SEGUNDO PASSE: revisao critica adicional (teleologia, regra inventada, absolutos, pai x filho, numero ilustrativo, enumeracao incompleta, remissao errada, lei infraconstitucional como CF, jurisprudencia velada, emenda recente, transicao ativa, exemplo que cria requisito) e saneamento de fonte. Correcao automatica so quando segura; o que exige interpretacao juridica externa vai para C/D. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.77",
+   "section": "atencao",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Os arts. 28 e 29, II mandam aplicar o art. 77; o criterio municipal e o numero de eleitores.",
+   "before": "Governadores e Prefeitos de grandes Municípios seguem regras próprias, por remissão (arts. 28 e 29, II)",
+   "after": "Governadores e Prefeitos de Municípios acima do número de eleitores fixado no art. 29, II, seguem as mesmas regras do art. 77, por remissão (arts. 28 e 29, II)"
+  },
+  {
+   "target_id": "CF88:ART.85",
+   "section": "o_que_diz",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso II cita Legislativo e Judiciario e \"unidades da Federacao\" (inclui o Distrito Federal).",
+   "before": "o livre exercício dos Poderes, do Ministério Público e dos Poderes dos Estados",
+   "after": "o livre exercício do Legislativo, do Judiciário, do Ministério Público e dos Poderes das unidades da Federação"
+  },
+  {
+   "target_id": "CF88:ART.87",
+   "section": "atencao",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O art. 12, § 3º, VII, reserva a brasileiro nato um unico cargo de Ministro de Estado.",
+   "before": "Para alguns Ministérios a Constituição exige brasileiro nato: é o caso do Ministro de Estado da Defesa",
+   "after": "Só para um Ministério a Constituição exige brasileiro nato: o cargo de Ministro de Estado da Defesa"
+  },
+  {
+   "target_id": "CF88:ART.89",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O artigo so lista os membros; nao declara finalidade.",
+   "before": "A presença dos líderes da minoria garante que a oposição também seja ouvida.",
+   "after": "Entre os membros estão também os líderes da minoria na Câmara e no Senado."
+  },
+  {
+   "target_id": "CF88:ART.90",
+   "section": "exemplo_pratico",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O Ministro da Justica ja e membro (art. 89, VI); o § 1º serve para os demais Ministros.",
+   "before": "chama o Ministro da Justiça para a reunião, porque a pauta envolve sua área",
+   "after": "chama para a reunião o Ministro de Estado cuja pasta está ligada ao tema em pauta (o Ministro da Justiça não precisa ser chamado, porque já integra o Conselho)"
+  },
+  {
+   "target_id": "CF88:ART.92",
+   "section": "exemplo_pratico",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Jurisdicao nacional (§ 2º) nao torna a decisao valida para todo o pais.",
+   "before": "em Brasília, cuja decisão vale para todo o país",
+   "after": "em Brasília, que tem jurisdição em todo o território nacional"
+  },
+  {
+   "target_id": "CF88:ART.93",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A aplicacao direta dos principios antes do novo Estatuto nao esta no texto; trecho retirado (correcao segura, sem nova afirmacao).",
+   "before": ", inclusive antes de qualquer alteração do Estatuto.",
+   "after": "."
+  },
+  {
+   "target_id": "CF88:ART.95",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O art. 95 lista as garantias sem declarar finalidade.",
+   "before": "As garantias protegem a independência do juiz para decidir sem pressões.",
+   "after": "O artigo dá ao juiz três garantias, ligadas ao cargo, ao local de exercício e ao subsídio."
+  },
+  {
+   "target_id": "CF88:ART.95:PAR.UNICO",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O paragrafo unico so enumera as proibicoes.",
+   "before": "As vedações procuram manter o juiz dedicado à função e afastado de interesses que possam influenciar suas decisões.",
+   "after": "O parágrafo lista cinco proibições ligadas a outras atividades, a recebimentos, à política partidária e à advocacia depois de deixar o cargo."
+  },
+  {
+   "target_id": "CF88:ART.95:PAR.UNICO",
+   "section": "o_que_significa",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso III fala em dedicacao a atividade politico-partidaria, nao em filiacao.",
+   "before": "O juiz não pode filiar-se a partido nem atuar em política partidária.",
+   "after": "O juiz não pode se dedicar a atividade político-partidária."
+  },
+  {
+   "target_id": "CF88:ART.96:INC.III",
+   "section": "atencao",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O MPDFT integra o MPU (art. 128, I, d), julgado pelo TRF (art. 108, I, a): harmonizacao so com o texto.",
+   "before": "O inciso trata dos juízes e do Ministério Público ligados aos Estados e ao Distrito Federal; juízes federais e membros do Ministério Público da União seguem outra regra (art. 108, I, a).",
+   "after": "O inciso trata dos juízes estaduais e do Distrito Federal e Territórios e dos membros do Ministério Público dos Estados. Juízes federais e membros do Ministério Público da União, do qual faz parte o do Distrito Federal e Territórios (art. 128, I, d), seguem outra regra (art. 108, I, a)."
+  },
+  {
+   "target_id": "CF88:ART.98:INC.I",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O texto so permite, nas hipoteses previstas em lei.",
+   "before": "Os recursos não sobem ao tribunal: são julgados por turmas formadas por juízes de primeiro grau.",
+   "after": "Nas hipóteses previstas em lei, os recursos podem ser julgados por turmas formadas por juízes de primeiro grau, sem subir ao tribunal."
+  },
+  {
+   "target_id": "CF88:ART.99:PAR.3",
+   "section": "exemplo_pratico",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "No ambito da Uniao, quem encaminha sao os Presidentes do STF e dos Tribunais Superiores (§ 2º, I).",
+   "before": "Um Tribunal Regional envia proposta acima do limite combinado.",
+   "after": "A proposta encaminhada pelo Presidente de um Tribunal Superior vem acima do limite combinado."
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.13",
+   "section": "exemplo_pratico",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 13 so afasta os §§ 2º e 3º do cessionario.",
+   "before": "mas recebe pela ordem comum, sem a preferência que o aposentado teria",
+   "after": "mas não fica com a superpreferência do § 2º que o aposentado teria"
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.20",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Finalidade nao declarada; o texto e impositivo (\"serao pagos\").",
+   "before": "Um único precatório muito grande poderia consumir quase todo o orçamento destinado a precatórios. O parágrafo permite que esse crédito seja pago em partes",
+   "after": "Quando um precatório passa desse percentual, o parágrafo determina que ele seja pago em partes"
+  },
+  {
+   "target_id": "CF88:ART.86:PAR.3",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo so parafraseia o texto (sem prisao antes de sentenca condenatoria); investigacoes e prescricao sao extensao: CONTEXT_ONLY.",
+   "before": " e não deve ser deduzida apenas do texto.",
+   "after": "."
+  }
+ ]
+}

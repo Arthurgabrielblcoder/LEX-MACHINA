@@ -12,6 +12,7 @@ happen because suffixes are part of the grammar.
 import hashlib
 import re
 
+import source_corrections as SC
 import target_id as T
 
 # A letter suffix ('103-A', '4º-A') must be glued to the number: '§ 4º - Será' is a dash, not suffix 'S'.
@@ -113,13 +114,18 @@ def _clean(s):
 
 
 def parse_structure(text, norma_id, reg=None, end_markers=(), preview_len=100, article_case_sensitive=False, remission_guard=False,
-                    heading_variants=False):
+                    heading_variants=False, source_corrections=True):
+    """source_corrections: apply the approved, exact transcription corrections of the official source (source_corrections.py);
+    each one used is reported as a SOURCE_TEXT_CORRECTION anomaly. The text handed in is never modified in place."""
     reg = reg or T.registry()
     if not reg.known(norma_id) or reg.parent(norma_id):
         raise T.TargetIdError('UNKNOWN_NORM', norma_id)
     markers = {cfg['source_marker'].upper(): ns for ns, cfg in reg.sub.items() if cfg['parent'] == norma_id}
     lines = text.splitlines()
     targets, order, anomalies = {}, [], []
+    if source_corrections:
+        lines, used = SC.apply(lines, norma_id)
+        anomalies += [dict(line=None, code='SOURCE_TEXT_CORRECTION', text=u['correction_id'], correction=u) for u in used]
     ns, art, par, inc = norma_id, None, None, None
     open_tid = None
     after_marker = False

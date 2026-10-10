@@ -1,0 +1,88 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "MACRO_07_C",
+ "articles_range": "126-150",
+ "stats": {
+  "articles": 30,
+  "targets_evaluated": 274,
+  "targets_current": 267,
+  "select": 67,
+  "skip": 200,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 6,
+   "EXCLUDED_REVOKED": 1
+  },
+  "new_explanations": 66,
+  "pending_in_triage": 65,
+  "human_approved_t1": 1,
+  "reused": 1,
+  "roles": {
+   "BLOCK": 9,
+   "DEVICE": 18,
+   "ITEM": 10,
+   "OVERVIEW": 28
+  },
+  "legal_risk": {
+   "LOW": 43,
+   "MEDIUM": 21,
+   "HIGH": 1
+  },
+  "verification_complexity": {
+   "SIMPLE": 5,
+   "STRUCTURED": 37,
+   "EXTERNAL": 23
+  },
+  "queues": {
+   "A_CLEAN_LOW": 43,
+   "B_CLEAN_MEDIUM": 21,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 1,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {
+   "CONTEXT_ONLY": 9,
+   "NONE": 55,
+   "REQUIRED_FOR_CORRECTNESS": 1
+  }
+ },
+ "critic": {
+  "corrections": 133,
+  "by_category": {
+   "CONTRATO_DO_MOTOR": 2,
+   "COPIA_DA_LEI_SECA": 47,
+   "DUPLICACAO": 1,
+   "EXCECAO_FORA_DO_TEXTO": 4,
+   "FATO_EXTERNO": 6,
+   "FRASE_LONGA": 6,
+   "GENERALIZACAO": 9,
+   "GLOSSARIO": 8,
+   "INTERPRETACAO_COMO_REGRA": 8,
+   "LISTA_INCOMPLETA": 4,
+   "MODALIDADE": 3,
+   "NUMERO": 1,
+   "QUALIFICADOR_FORA_DO_TEXTO": 1,
+   "REMISSAO": 2,
+   "RESSALVA_OMITIDA": 7,
+   "REUSO_DE_APROVADO": 1,
+   "TELEOLOGIA": 20,
+   "TRANSICAO_E_EFEITO_TEMPORAL": 3
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "approved_by_recorded_round": 12,
+  "status": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 1,
+ "status": "PASS"
+}

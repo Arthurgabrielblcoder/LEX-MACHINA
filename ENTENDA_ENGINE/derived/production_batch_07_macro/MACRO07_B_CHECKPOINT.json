@@ -1,0 +1,82 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "MACRO_07_B",
+ "articles_range": "101-125",
+ "stats": {
+  "articles": 28,
+  "targets_evaluated": 277,
+  "targets_current": 257,
+  "select": 49,
+  "skip": 208,
+  "excluded": {
+   "EXCLUDED_REVOKED": 7,
+   "EXCLUDED_HISTORICAL": 13
+  },
+  "new_explanations": 49,
+  "pending_in_triage": 43,
+  "human_approved_t1": 6,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 5,
+   "DEVICE": 7,
+   "ITEM": 5,
+   "OVERVIEW": 26
+  },
+  "legal_risk": {
+   "LOW": 23,
+   "MEDIUM": 20,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 1,
+   "STRUCTURED": 22,
+   "EXTERNAL": 20
+  },
+  "queues": {
+   "A_CLEAN_LOW": 23,
+   "B_CLEAN_MEDIUM": 20,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {
+   "CONTEXT_ONLY": 12,
+   "NONE": 31
+  }
+ },
+ "critic": {
+  "corrections": 77,
+  "by_category": {
+   "CONTRATO_DO_MOTOR": 1,
+   "COPIA_DA_LEI_SECA": 33,
+   "DUPLICACAO": 2,
+   "FATO_EXTERNO": 6,
+   "FRASE_LONGA": 3,
+   "GENERALIZACAO": 4,
+   "GLOSSARIO": 5,
+   "LISTA_INCOMPLETA": 2,
+   "NUMERO": 3,
+   "QUALIFICADOR_FORA_DO_TEXTO": 2,
+   "REMISSAO": 1,
+   "RESSALVA_OMITIDA": 9,
+   "TELEOLOGIA": 6
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "approved_by_recorded_round": 12,
+  "status": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 6,
+ "status": "PASS"
+}
