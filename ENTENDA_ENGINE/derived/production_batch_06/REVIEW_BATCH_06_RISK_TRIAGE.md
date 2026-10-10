@@ -3,7 +3,7 @@
 Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
 - Explicações: 93 · risco LOW 53 · MEDIUM 37 · HIGH 3
-- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 81
+- Prontas para revisão editorial: 93 · aprovadas (HUMAN_APPROVED_T1): 93
 - Achados: ABSOLUTE_CLAIM 4, EXAMPLE_NUMBER 1, EXCEPTION_NOT_IN_TEXT 2, LAW_DEPENDENCY_OMITTED 3, MODALITY_SHIFT 1, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
@@ -426,52 +426,52 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 67 — Reapresentação de projeto rejeitado
 
-- `CF88:ART.67` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.67` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 68 — Leis delegadas
 
-- `CF88:ART.68` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.68` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 68, § 1º — Matérias que não podem ser delegadas
 
-- `CF88:ART.68:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.68:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso
 
-- `CF88:ART.68:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.68:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 70 — Fiscalização da União: controle externo e interno
 
-- `CF88:ART.70` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.70` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 70, parágrafo único — Quem deve prestar contas
 
-- `CF88:ART.70:PAR.UNICO` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.70:PAR.UNICO` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 71, inciso I — Parecer prévio sobre as contas do Presidente
 
-- `CF88:ART.71:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.71:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 71, inciso II — Julgamento das contas de administradores
 
-- `CF88:ART.71:INC.II` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.71:INC.II` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 71, incisos IX e X — Prazo para correção e sustação de atos
 
-- `CF88:ART.71:INC.IX` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.71:INC.IX` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 72 — Despesas não autorizadas: atuação da comissão mista
 
-- `CF88:ART.72` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.72` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 73, § 1º — Requisitos para Ministro do Tribunal de Contas da União
@@ -481,11 +481,11 @@ Data de referência: 2026-10-04. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União
 
-- `CF88:ART.73:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.73:PAR.2` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 74, § 2º — Denúncia de irregularidades ao Tribunal
 
-- `CF88:ART.74:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.74:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 

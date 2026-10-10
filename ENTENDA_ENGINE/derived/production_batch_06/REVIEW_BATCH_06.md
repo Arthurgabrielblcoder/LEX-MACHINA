@@ -3300,12 +3300,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 67 — Reapresentação de projeto rejeitado
 
-- **TARGET:** `CF88:ART.67` · `ENTENDA/CF88:ART.67/BASE/1`
+- **TARGET:** `CF88:ART.67` · `ENTENDA/CF88:ART.67/BASE/2`
 - **DISPLAY TITLE:** Art. 67 — Reapresentação de projeto rejeitado
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 168 palavras · 1316 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 188 palavras · 1462 bytes · referências 0
 - **Motivo da seleção:** Artigo de caput unico com regra autonoma e quorum para excecao.
 
 **O QUE DIZ**
@@ -3314,21 +3314,22 @@ O art. 67 determina que a matéria de projeto de lei rejeitado só possa ser obj
 
 **O QUE SIGNIFICA**
 
-É o chamado princípio da irrepetibilidade. Rejeitado um projeto, o mesmo tema não volta, em regra, a ser apresentado no mesmo ano legislativo.
+O art. 67 estabelece uma restrição à reapresentação, na mesma sessão legislativa, da matéria constante de projeto de lei rejeitado.
 
-A exceção exige apoio amplo: a nova proposta precisa ser assinada pela maioria absoluta dos membros da Câmara ou do Senado.
+Nessa mesma sessão, a matéria somente poderá ser objeto de novo projeto mediante proposta da maioria absoluta dos membros da Câmara dos Deputados ou do Senado Federal.
+
+A regra é limitada à mesma sessão legislativa e não estabelece uma proibição permanente de nova apresentação da matéria.
 
 **EXEMPLO PRÁTICO**
 
-Um projeto sobre jornada de trabalho é rejeitado em maio. Em setembro do mesmo ano, outro projeto sobre a mesma matéria só pode ser apresentado se for subscrito pela maioria absoluta dos deputados ou dos senadores.
+Um projeto de lei é rejeitado durante determinada sessão legislativa. Para que a mesma matéria seja objeto de novo projeto ainda nessa sessão, é necessária proposta da maioria absoluta dos membros de uma das Casas do Congresso Nacional.
 
 **ATENÇÃO**
 
-A regra para projeto de lei é mais flexível que a da emenda constitucional: a proposta de emenda rejeitada não pode ser reapresentada na mesma sessão legislativa em hipótese alguma (art. 60, § 5º).
+A regra do art. 67 é diferente da prevista para emenda à Constituição. Pelo art. 60, § 5º, matéria constante de proposta de emenda rejeitada ou havida por prejudicada não pode ser objeto de nova proposta na mesma sessão legislativa.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Irrepetibilidade*: proibição de reapresentar a mesma matéria em certo período.
 - *Sessão legislativa*: período anual de trabalho do Congresso.
 
 **CAMADA EXTERNA**
@@ -3337,7 +3338,7 @@ A regra para projeto de lei é mais flexível que a da emenda constitucional: a 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: objeto de novo projeto na mesma sessão legislativa)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: "sessao legislativa" no lugar de "ano legislativo"; sem exigencia de assinatura ou subscricao; restricao limitada a mesma sessao legislativa; contraste com o art. 60, par. 5, incluindo "havida por prejudicada". "Irrepetibilidade" retirado do glossario (TERM_NOT_USED; remocao pre-autorizada "salvo alerta contratual"). O QUE DIZ mantido. (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3347,12 +3348,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 68 — Leis delegadas
 
-- **TARGET:** `CF88:ART.68` · `ENTENDA/CF88:ART.68/BASE/1`
+- **TARGET:** `CF88:ART.68` · `ENTENDA/CF88:ART.68/BASE/2`
 - **DISPLAY TITLE:** Art. 68 — Leis delegadas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1462 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 1726 bytes · referências 0
 - **Motivo da seleção:** Visao geral da lei delegada: pedido de delegacao, limites e forma da delegacao, com blocos proprios.
 
 **O QUE DIZ**
@@ -3361,15 +3362,15 @@ O art. 68 estabelece que as leis delegadas são elaboradas pelo Presidente da Re
 
 **O QUE SIGNIFICA**
 
-Na lei delegada, o Congresso transfere ao Presidente, por tempo e conteúdo definidos, o poder de legislar sobre um tema.
+A lei delegada é elaborada pelo Presidente da República depois que ele solicita ao Congresso Nacional a respectiva delegação.
 
-O caminho começa com o pedido do Presidente. O Congresso não delega por iniciativa própria.
+Essa delegação legislativa não é automática: o Congresso define, por resolução, o conteúdo autorizado e os termos de seu exercício.
 
-A delegação tem limites materiais e é feita por resolução, que fixa conteúdo e condições. É um instrumento pouco usado na prática, mas faz parte das espécies do art. 59.
+A Constituição também estabelece matérias que não podem ser delegadas e admite que a própria resolução determine posterior apreciação do projeto pelo Congresso Nacional.
 
 **EXEMPLO PRÁTICO**
 
-O Presidente pede ao Congresso autorização para editar lei sobre a reorganização de incentivos a um setor econômico. Aprovada a resolução, ele edita a lei delegada dentro dos termos fixados.
+O Presidente solicita ao Congresso delegação para legislar sobre determinada matéria que não esteja abrangida pelas vedações do § 1º. Se a delegação for concedida, a resolução do Congresso definirá o conteúdo autorizado e os termos de seu exercício.
 
 **ATENÇÃO**
 
@@ -3377,27 +3378,27 @@ Lei delegada não se confunde com medida provisória: depende de autorização p
 
 **PALAVRAS DIFÍCEIS**
 
-- *Delegação legislativa*: transferência temporária e limitada do poder de legislar ao Presidente.
-- *Resolução*: ato do Congresso ou de uma Casa sobre matéria de sua competência própria.
+- *Delegação legislativa*: autorização constitucional concedida nos termos do art. 68 para que o Presidente da República elabore lei dentro dos limites fixados pelo Congresso Nacional.
+- *Resolução*: ato normativo do Congresso Nacional que, neste artigo, formaliza a delegação e especifica seu conteúdo e os termos de seu exercício.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Delegação legislativa)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e glossario substituidos: retirados "instrumento pouco usado na pratica" e o prazo temporal nao previsto no par. 2; "delegacao legislativa" usada no corpo (elimina TERM_NOT_USED); "Resolucao" definida pelo proprio art. 68. O QUE DIZ e ATENCAO mantidos. (seções: exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 68, § 1º — Matérias que não podem ser delegadas
 
-- **TARGET:** `CF88:ART.68:PAR.1` · `ENTENDA/CF88:ART.68:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.68:PAR.1` · `ENTENDA/CF88:ART.68:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 68, § 1º — Matérias que não podem ser delegadas
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.68`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 1912 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 1935 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos que listam os limites materiais da delegacao.
 
 **O QUE DIZ**
@@ -3406,11 +3407,13 @@ Pelo § 1º, ficam fora da delegação três grupos. O primeiro reúne os atos d
 
 **O QUE SIGNIFICA**
 
-Algumas matérias são vedadas por pertencerem ao núcleo das funções do próprio Legislativo, como as competências exclusivas e privativas, exercidas por decreto legislativo e resolução.
+O § 1º retira da delegação três grupos de matérias.
 
-Outras são vedadas por envolverem direitos fundamentais e instituições que não devem ficar à disposição de um ato do Executivo, como os direitos individuais e a organização do Judiciário.
+O primeiro compreende os atos de competência exclusiva do Congresso Nacional e os de competência privativa da Câmara dos Deputados ou, conforme o caso, do Senado Federal.
 
-A matéria de lei complementar também fica de fora, porque exige maioria absoluta do Congresso.
+O segundo corresponde às matérias reservadas à lei complementar.
+
+O terceiro reúne as matérias expressamente enumeradas nos incisos I a III: organização do Poder Judiciário e do Ministério Público, carreira e garantias de seus membros; nacionalidade, cidadania e direitos individuais, políticos e eleitorais; e planos plurianuais, diretrizes orçamentárias e orçamentos.
 
 **EXEMPLO PRÁTICO**
 
@@ -3422,28 +3425,27 @@ A lista de vedações é parecida, mas não idêntica, à das medidas provisóri
 
 **PALAVRAS DIFÍCEIS**
 
-- *Competência exclusiva*: atribuição que só o Congresso exerce, sem participação do Presidente.
-- *Direitos individuais*: direitos fundamentais da pessoa, como os previstos no art. 5º.
-- *Decreto legislativo*: ato do Congresso Nacional sobre matéria de sua competência exclusiva, sem sanção do Presidente.
+- *Competência exclusiva*: atribuição que a Constituição confere ao Congresso Nacional nos casos por ela previstos.
+- *Direitos individuais*: direitos fundamentais atribuídos à pessoa pela Constituição.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** —
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: de competência privativa da câmara dos deputados ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e glossario substituidos: os tres grupos de materias sem atribuir instrumento unico as competencias dos arts. 49, 51 e 52 e sem finalidade doutrinaria; "Competencia exclusiva" sem "sem participacao do Presidente"; "Decreto legislativo" retirado. Complementacao autorizada: "ou, conforme o caso, do Senado Federal" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ, exemplo e ATENCAO mantidos. (seções: o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso
 
-- **TARGET:** `CF88:ART.68:PAR.2` · `ENTENDA/CF88:ART.68:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.68:PAR.2` · `ENTENDA/CF88:ART.68:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 68, §§ 2º e 3º — Forma da delegação e apreciação pelo Congresso
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.68:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.68`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1647 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1680 bytes · referências 0
 - **Motivo da seleção:** Bloco: §§ 2º e 3º definem o instrumento da delegacao (resolucao) e a apreciacao do projeto em votacao unica, sem emenda.
 
 **O QUE DIZ**
@@ -3468,8 +3470,8 @@ A proibição de emendas vale para a apreciação prevista no § 3º, e não par
 
 **PALAVRAS DIFÍCEIS**
 
-- *Votação única*: deliberação em uma só votação, sem turnos sucessivos.
-- *Termos da delegação*: limites de conteúdo, tempo e forma fixados na resolução.
+- *Votação única*: deliberação realizada em uma única votação, nos termos do § 3º.
+- *Termos da delegação*: condições e limites de exercício fixados pela resolução do Congresso Nacional.
 
 **CAMADA EXTERNA**
 
@@ -3477,7 +3479,7 @@ A proibição de emendas vale para a apreciação prevista no § 3º, e não par
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a resolução determinar a apreciação do projeto pelo); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A resolução autoriza o Presidente a elaborar lei sobre um pr)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Glossario ajustado: "Termos da delegacao" sem limite temporal e "Votacao unica" com remissao ao par. 3. Demais secoes mantidas; apreciacao posterior continua condicionada a determinacao da resolucao. (seções: palavras_dificeis)
 
 ---
 
@@ -3544,7 +3546,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1959 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 1956 bytes · referências 0
 - **Motivo da seleção:** Visao geral da fiscalizacao financeira da Uniao; o dever de prestar contas tem explicacao propria.
 
 **O QUE DIZ**
@@ -3580,23 +3582,23 @@ O artigo trata da União. Estados e Municípios têm sistemas próprios de fisca
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Aprovado sem alteracao: modalidades e parametros da fiscalizacao corretos; Congresso titular do controle externo, com auxilio do TCU; controle interno de cada Poder. v1 mantida byte-identica.
 
 ---
 
 ### Art. 70, parágrafo único — Quem deve prestar contas
 
-- **TARGET:** `CF88:ART.70:PAR.UNICO` · `ENTENDA/CF88:ART.70:PAR.UNICO/BASE/1`
+- **TARGET:** `CF88:ART.70:PAR.UNICO` · `ENTENDA/CF88:ART.70:PAR.UNICO/BASE/2`
 - **DISPLAY TITLE:** Art. 70, parágrafo único — Quem deve prestar contas
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.70`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 166 palavras · 1388 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1534 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo que define o alcance subjetivo do dever de prestar contas, inclusive para particulares.
 
 **O QUE DIZ**
 
-O parágrafo único obriga a prestar contas toda pessoa, física ou jurídica, pública ou privada, que use, arrecade, guarde, gerencie ou administre dinheiro, bens ou valores públicos, ou pelos quais a União responda, e também quem assuma, em nome da União, obrigações de pagamento.
+O parágrafo único obriga a prestar contas qualquer pessoa física ou jurídica, seja pública ou privada, que utilize, arrecade, guarde, gerencie ou administre dinheiro, bens ou valores públicos, ou valores pelos quais a União responda. O dever também alcança quem, em nome da União, assuma obrigações de natureza pecuniária.
 
 **O QUE SIGNIFICA**
 
@@ -3616,16 +3618,16 @@ O dever alcança a parcela de recursos públicos administrada, e não toda a ati
 
 **PALAVRAS DIFÍCEIS**
 
-- *Prestação de contas*: demonstração de como recursos foram recebidos e utilizados.
-- *Natureza pecuniária*: que envolve pagamento em dinheiro.
+- *Prestação de contas*: demonstração da utilização, guarda, gerenciamento ou administração dos recursos sujeitos ao dever constitucional de prestar contas.
+- *Natureza pecuniária*: relacionada a obrigação expressa ou satisfeita em dinheiro.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pessoa física ou jurídica pública ou privada que); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Mesmo sendo entidade privada, deve prestar contas do uso des)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ou privada que utilize arrecade guarde gerencie ou); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Mesmo sendo entidade privada, deve prestar contas do uso des)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ e glossario substituidos: "obrigacoes de natureza pecuniaria" no corpo; glossario alinhado ao texto. Complementacao autorizada: "seja publica ou privada" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE SIGNIFICA, exemplo e ATENCAO mantidos. (seções: o_que_diz, palavras_dificeis)
 
 ---
 
@@ -3681,12 +3683,12 @@ O Tribunal auxilia o Congresso, mas não lhe é subordinado nas competências pr
 
 ### Art. 71, inciso I — Parecer prévio sobre as contas do Presidente
 
-- **TARGET:** `CF88:ART.71:INC.I` · `ENTENDA/CF88:ART.71:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.I` · `ENTENDA/CF88:ART.71:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso I — Parecer prévio sobre as contas do Presidente
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 145 palavras · 1242 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 174 palavras · 1450 bytes · referências 0
 - **Motivo da seleção:** Inciso com prazo proprio e natureza opinativa, frequentemente confundido com julgamento.
 
 **O QUE DIZ**
@@ -3695,23 +3697,23 @@ O inciso I dá ao Tribunal a tarefa de examinar as contas apresentadas a cada an
 
 **O QUE SIGNIFICA**
 
-Nas contas do Presidente, o Tribunal não julga: emite parecer técnico, que orienta a decisão.
+Nas contas anuais do Presidente da República, o Tribunal de Contas da União exerce a competência de apreciação e emite parecer prévio.
 
-Quem julga essas contas é o Congresso Nacional (art. 49, IX).
+Esse parecer deve ser elaborado no prazo de sessenta dias contado do recebimento das contas.
 
-O parecer tem peso político e técnico relevante, porque reúne a análise da execução orçamentária e financeira do ano, mas a palavra final é do Legislativo.
+O julgamento das contas presidenciais não cabe ao Tribunal de Contas: é atribuição do Congresso Nacional, conforme o art. 49, IX.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal recebe as contas anuais do governo e, em sessenta dias, emite parecer recomendando a aprovação com ressalvas. O Congresso pode seguir ou não essa recomendação ao julgar.
+Recebidas as contas anuais do Presidente da República, o Tribunal de Contas da União tem sessenta dias, contados desse recebimento, para elaborar o parecer prévio. O julgamento dessas contas fica a cargo do Congresso Nacional (art. 49, IX).
 
 **ATENÇÃO**
 
-Não confundir com o inciso II: as contas dos demais administradores são julgadas pelo próprio Tribunal.
+Não confundir com o inciso II: as contas dos demais administradores e responsáveis abrangidos por aquele dispositivo são julgadas pelo próprio Tribunal.
 
 **PALAVRAS DIFÍCEIS**
 
-- *Parecer prévio*: opinião técnica que antecede e orienta o julgamento de outro órgão.
+- *Parecer prévio*: manifestação emitida pelo Tribunal de Contas da União sobre as contas do Presidente antes do julgamento pelo Congresso Nacional.
 
 **CAMADA EXTERNA**
 
@@ -3719,35 +3721,35 @@ Não confundir com o inciso II: as contas dos demais administradores são julgad
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo, ATENCAO e glossario substituidos: TCU aprecia e emite parecer previo em sessenta dias do recebimento; Congresso julga (art. 49, IX); retirados "peso politico e tecnico" e "aprovacao com ressalvas"; "Parecer previo" identico ao art. 49, IX (v2). Complementacao autorizada: novo exemplo (elimina DUPLICATION com CF88:ART.49:INC.IX v2; similaridade 0,25). (seções: atencao, exemplo_pratico, o_que_significa, palavras_dificeis)
 
 ---
 
 ### Art. 71, inciso II — Julgamento das contas de administradores
 
-- **TARGET:** `CF88:ART.71:INC.II` · `ENTENDA/CF88:ART.71:INC.II/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.II` · `ENTENDA/CF88:ART.71:INC.II/BASE/2`
 - **DISPLAY TITLE:** Art. 71, inciso II — Julgamento das contas de administradores
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 199 palavras · 1660 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 224 palavras · 1901 bytes · referências 0
 - **Motivo da seleção:** Inciso de competencia decisoria propria do TCU, com sancao potencial; distingue-se do parecer do inciso I.
 
 **O QUE DIZ**
 
-O inciso II atribui ao Tribunal julgar as contas de quem administra ou responde por dinheiro, bens e valores públicos da administração direta e indireta, inclusive fundações e sociedades criadas e mantidas pelo poder público federal. Também cabe ao Tribunal julgar as contas de quem causar perda, extravio ou outra irregularidade com prejuízo aos cofres públicos.
+O inciso II atribui ao Tribunal de Contas da União o julgamento das contas dos administradores e demais responsáveis por dinheiro, bens e valores públicos da administração direta e indireta, incluindo as fundações e as sociedades instituídas e mantidas pelo poder público federal. Também alcança as contas de quem der causa a perda, extravio ou outra irregularidade da qual resulte prejuízo ao erário público.
 
 **O QUE SIGNIFICA**
 
-Aqui o Tribunal julga de fato: decide se as contas são regulares ou irregulares.
+Diferentemente do inciso I, aqui o próprio Tribunal exerce a competência constitucional de julgamento das contas.
 
-O julgamento alcança gestores públicos e também quem, mesmo sem ser gestor, causou dano ao erário.
+A regra alcança tanto administradores e responsáveis pelos recursos públicos indicados no dispositivo quanto aqueles que causarem perda, extravio ou outra irregularidade com prejuízo ao erário.
 
-Contas julgadas irregulares podem gerar imputação de débito e multa, com força de título executivo (§ 3º), além de outras consequências previstas em lei.
+Outros dispositivos do art. 71 tratam de sanções, imputação de débito e eficácia executiva das decisões, quando presentes as respectivas hipóteses.
 
 **EXEMPLO PRÁTICO**
 
-O diretor de uma autarquia federal tem as contas do ano examinadas pelo Tribunal, que as julga irregulares por pagamentos sem comprovação do serviço e determina a devolução dos valores.
+Um administrador de entidade federal responsável pela gestão de recursos públicos tem suas contas submetidas ao Tribunal de Contas da União. Havendo irregularidade que produza prejuízo ao erário, aplica-se o regime constitucional pertinente ao julgamento e às consequências previstas nos demais dispositivos do art. 71.
 
 **ATENÇÃO**
 
@@ -3755,9 +3757,8 @@ Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efei
 
 **PALAVRAS DIFÍCEIS**
 
-- *Erário*: conjunto dos recursos financeiros do poder público.
-- *Imputação de débito*: determinação de que o responsável devolva valor aos cofres públicos.
-- *Título executivo*: documento que permite cobrar judicialmente uma dívida de forma direta.
+- *Erário*: conjunto dos recursos financeiros e patrimoniais do poder público.
+- *Imputação de débito*: determinação de que o responsável restitua valor devido aos cofres públicos.
 
 **CAMADA EXTERNA**
 
@@ -3765,7 +3766,7 @@ Embora se fale em julgamento, o Tribunal não é órgão do Judiciário. Os efei
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: bens e valores públicos da administração direta e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE DIZ, O QUE SIGNIFICA, exemplo e glossario substituidos: TCU julga as contas do inciso II, distinto do inciso I; sem a classificacao infraconstitucional "regulares ou irregulares"; "Erario" identico ao art. 71, VIII (v2); "Imputacao de debito" redefinida; "Titulo executivo" retirado (deixou de ser usado). Complementacao autorizada: "as fundacoes e as sociedades" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). ATENCAO mantida. (seções: exemplo_pratico, o_que_diz, o_que_significa, palavras_dificeis)
 
 ---
 
@@ -3864,12 +3865,12 @@ As sanções concretamente aplicáveis e seus limites dependem da lei mencionada
 
 ### Art. 71, incisos IX e X — Prazo para correção e sustação de atos
 
-- **TARGET:** `CF88:ART.71:INC.IX` · `ENTENDA/CF88:ART.71:INC.IX/BASE/1`
+- **TARGET:** `CF88:ART.71:INC.IX` · `ENTENDA/CF88:ART.71:INC.IX/BASE/2`
 - **DISPLAY TITLE:** Art. 71, incisos IX e X — Prazo para correção e sustação de atos
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** `CF88:ART.71:INC.X`
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.71`, `CF88:ART.71:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1488 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 248 palavras · 1934 bytes · referências 0
 - **Motivo da seleção:** Bloco: incisos IX e X formam uma sequencia (prazo para correcao e sustacao se nao atendido).
 
 **O QUE DIZ**
@@ -3878,19 +3879,21 @@ Os incisos IX e X tratam da reação do Tribunal diante de ilegalidade. Ele pode
 
 **O QUE SIGNIFICA**
 
-Há uma sequência. Primeiro, o Tribunal dá ao órgão a oportunidade de corrigir a ilegalidade. Só se o órgão não agir é que o Tribunal suspende o ato.
+Os incisos IX e X estabelecem uma sequência.
 
-A sustação é medida forte: interrompe diretamente os efeitos do ato administrativo.
+Verificada ilegalidade, o Tribunal assina prazo para que o órgão ou entidade tome as providências necessárias ao exato cumprimento da lei.
 
-O poder de sustar alcança atos. Para contratos, a regra é diferente e está nos §§ 1º e 2º.
+Se a determinação não for atendida, o inciso X autoriza o Tribunal a sustar a execução do ato impugnado e determina a comunicação dessa decisão à Câmara dos Deputados e ao Senado Federal.
+
+Essa disciplina refere-se a atos. Para contratos, os §§ 1º e 2º do art. 71 estabelecem regras próprias.
 
 **EXEMPLO PRÁTICO**
 
-O Tribunal verifica que um edital de concurso viola a lei e dá trinta dias para o órgão corrigi-lo. Sem correção, o Tribunal susta o edital e informa as duas Casas do Congresso.
+O Tribunal verifica ilegalidade em determinado ato e fixa prazo para que o órgão responsável adote as providências necessárias. Se a determinação não for atendida, pode ocorrer a sustação da execução do ato nos termos do inciso X, com comunicação à Câmara e ao Senado.
 
 **ATENÇÃO**
 
-A sustação direta pelo Tribunal vale para atos, e não para contratos. A distinção entre os dois é decisiva para saber quem pode suspender.
+O inciso X trata da sustação da execução do ato impugnado. No caso de contrato, o § 1º atribui diretamente ao Congresso Nacional o ato de sustação. O § 2º prevê que, se as medidas ali indicadas não forem efetivadas no prazo constitucional, o Tribunal decidirá a respeito. O alcance dessa expressão pertence à camada externa.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3901,9 +3904,9 @@ A sustação direta pelo Tribunal vale para atos, e não para contratos. A disti
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a execução do ato impugnado comunicando a decisão)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a execução do ato impugnado comunicando a decisão); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as providências necessárias ao exato cumprimento da lei)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: sequencia ilegalidade-prazo-sustacao do ato-comunicacao; retirado o prazo numerico do exemplo; ATENCAO alinhada ao art. 71, par. 1 (v2), sem fechar o alcance de "decidira a respeito". Complementacao autorizada: "tome as providencias" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 
@@ -4004,12 +4007,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 72 — Despesas não autorizadas: atuação da comissão mista
 
-- **TARGET:** `CF88:ART.72` · `ENTENDA/CF88:ART.72/BASE/1`
+- **TARGET:** `CF88:ART.72` · `ENTENDA/CF88:ART.72/BASE/2`
 - **DISPLAY TITLE:** Art. 72 — Despesas não autorizadas: atuação da comissão mista
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1805 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 225 palavras · 1837 bytes · referências 0
 - **Motivo da seleção:** Artigo com rito proprio e prazos; os paragrafos sao situados nesta visao geral.
 
 **O QUE DIZ**
@@ -4018,7 +4021,7 @@ O art. 72 permite que a comissão mista permanente de orçamento (art. 166, § 1
 
 **O QUE SIGNIFICA**
 
-O artigo cria um procedimento rápido para gastos feitos sem autorização orçamentária, inclusive disfarçados de investimentos não programados ou subsídios não aprovados.
+O artigo cria um procedimento rápido para gastos feitos sem autorização orçamentária, inclusive quando se apresentem sob a forma de investimentos não programados ou sob a forma de subsídios não aprovados.
 
 O rito tem três etapas: pedido de esclarecimento à autoridade; consulta ao Tribunal de Contas; proposta de sustação ao Congresso.
 
@@ -4042,9 +4045,9 @@ A proposta de sustação depende de dois requisitos: a irregularidade apontada p
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 1 diante de indícios de despesas não autorizadas)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 1 diante de indícios de despesas não autorizadas); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sob a forma de investimentos não programados ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA ajustado: "disfarcados" substituido por formulacao neutra. Complementacao autorizada: "ou sob a forma de subsidios nao aprovados" (elimina ENTENDA_COPIES_OFFICIAL_TEXT). Sequencia constitucional, prazos de cinco e trinta dias e proposta da comissao ao Congresso preservados. Demais secoes e glossario mantidos. (seções: o_que_significa)
 
 ---
 
@@ -4147,12 +4150,12 @@ O limite máximo de idade foi elevado pela Emenda Constitucional nº 122, de 202
 
 ### Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União
 
-- **TARGET:** `CF88:ART.73:PAR.2` · `ENTENDA/CF88:ART.73:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.73:PAR.2` · `ENTENDA/CF88:ART.73:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 73, § 2º — Escolha dos Ministros do Tribunal de Contas da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.73`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 205 palavras · 1645 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 255 palavras · 2029 bytes · referências 0
 - **Motivo da seleção:** Bloco: paragrafo com incisos que distribuem as vagas entre Presidente e Congresso e reservam vagas de carreira.
 
 **O QUE DIZ**
@@ -4161,11 +4164,13 @@ O § 2º divide a escolha dos Ministros: um terço pelo Presidente da República
 
 **O QUE SIGNIFICA**
 
-Com nove Ministros, o Presidente escolhe três e o Congresso, seis.
+Como o Tribunal possui nove Ministros, um terço corresponde a três escolhas presidenciais e dois terços correspondem a seis escolhas do Congresso Nacional.
 
-Das três vagas do Presidente, duas são reservadas a membros de carreira técnica: auditores e integrantes do Ministério Público que atua no Tribunal. Nessas, ele escolhe dentro de uma lista de três nomes enviada pelo próprio Tribunal.
+Das três escolhas atribuídas ao Presidente da República, duas devem ocorrer alternadamente entre auditores e membros do Ministério Público junto ao Tribunal, a partir de lista tríplice apresentada pelo próprio Tribunal segundo os critérios de antiguidade e merecimento.
 
-A terceira vaga presidencial é de livre escolha, também sujeita à aprovação do Senado.
+A terceira escolha presidencial não está submetida a essa regra específica de lista tríplice, mas todos os escolhidos devem observar os requisitos constitucionais do § 1º.
+
+As escolhas feitas pelo Presidente da República dependem de aprovação do Senado Federal. O Senado aprova a escolha presidencial; não realiza a escolha em seu lugar.
 
 **EXEMPLO PRÁTICO**
 
@@ -4173,7 +4178,7 @@ Abre-se uma vaga reservada aos auditores. O Tribunal envia ao Presidente lista c
 
 **ATENÇÃO**
 
-O Ministério Público junto ao Tribunal de Contas é um órgão próprio, distinto do Ministério Público da União. A alternância entre as vagas de carreira segue a ordem de vacância.
+O § 2º divide a escolha entre Presidente da República e Congresso Nacional. Os requisitos pessoais para ocupar o cargo estão no § 1º e se aplicam às escolhas previstas neste parágrafo.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4185,9 +4190,9 @@ O Ministério Público junto ao Tribunal de Contas é um órgão próprio, disti
 
 —
 
-**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pelo presidente da república com aprovação do senado)
+**WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: pelo presidente da república com aprovação do senado); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: auditores e membros do ministério público junto ao); PARENT_REPETITION (*: CF88:ART.73: 0.311)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA e ATENCAO substituidos: Senado aprova a escolha presidencial; terceira escolha sem lista triplice, mas sujeita aos requisitos do par. 1; retiradas as afirmacoes externas sobre a natureza do Ministerio Publico junto ao Tribunal e a ordem de vacancia. PARENT_REPETITION informativo (0,311 x CF88:ART.73) aceito pela revisao humana. O QUE DIZ, exemplo e glossario mantidos. (seções: atencao, o_que_significa)
 
 ---
 
@@ -4334,12 +4339,12 @@ O § 1º define o dever de comunicação, o destinatário e a responsabilidade p
 
 ### Art. 74, § 2º — Denúncia de irregularidades ao Tribunal
 
-- **TARGET:** `CF88:ART.74:PAR.2` · `ENTENDA/CF88:ART.74:PAR.2/BASE/1`
+- **TARGET:** `CF88:ART.74:PAR.2` · `ENTENDA/CF88:ART.74:PAR.2/BASE/2`
 - **DISPLAY TITLE:** Art. 74, § 2º — Denúncia de irregularidades ao Tribunal
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.74`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 143 palavras · 1261 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 160 palavras · 1437 bytes · referências 0
 - **Motivo da seleção:** Paragrafo autonomo que confere legitimidade a cidadaos e entidades para denunciar ao TCU.
 
 **O QUE DIZ**
@@ -4348,19 +4353,19 @@ O § 2º reconhece a qualquer cidadão, partido político, associação ou sindi
 
 **O QUE SIGNIFICA**
 
-O parágrafo abre o controle das contas públicas à participação social.
+O § 2º permite que os legitimados indicados pela Constituição levem ao Tribunal de Contas da União denúncias de irregularidades ou ilegalidades.
 
-Qualquer cidadão pode denunciar, sem precisar demonstrar prejuízo pessoal.
+A legitimidade não depende da demonstração de prejuízo pessoal do denunciante.
 
-O Tribunal examina a denúncia e, se houver fundamento, apura os fatos. A expressão "na forma da lei" indica que os requisitos de apresentação são definidos pela legislação.
+A expressão “na forma da lei” significa que os requisitos e a forma de apresentação da denúncia dependem da disciplina legal aplicável.
 
 **EXEMPLO PRÁTICO**
 
-Um morador percebe que uma obra paga com verba federal está parada há meses, embora conste como concluída. Ele pode apresentar denúncia ao Tribunal de Contas da União.
+Um cidadão identifica possível irregularidade em obra custeada com recursos federais. Na forma prevista pela legislação aplicável, ele pode apresentar denúncia ao Tribunal de Contas da União.
 
 **ATENÇÃO**
 
-A denúncia não é uma ação judicial: leva os fatos ao Tribunal, que decide se e como apurar.
+A denúncia prevista no § 2º não é ação judicial. O dispositivo reconhece legitimidade para levar irregularidades ou ilegalidades ao Tribunal de Contas da União, observada a forma prevista em lei.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -4373,7 +4378,7 @@ A denúncia não é uma ação judicial: leva os fatos ao Tribunal, que decide s
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O QUE SIGNIFICA, exemplo e ATENCAO substituidos: todos os legitimados, sem exigir prejuizo pessoal; "na forma da lei" preservada no O QUE DIZ e explicada no O QUE SIGNIFICA; "Um cidadao" no exemplo. Conclui a revalidacao da resolucao do B26 (VALID). O QUE DIZ e glossario mantidos. (seções: atencao, exemplo_pratico, o_que_significa)
 
 ---
 

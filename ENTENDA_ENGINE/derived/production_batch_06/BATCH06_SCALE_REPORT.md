@@ -10,7 +10,7 @@ Data de referência: 2026-10-04 · gerado por `ENTENDA_ENGINE/build_entenda_batc
 | SELECT | 96 = 93 explicações novas + 3 pilotos reutilizados |
 | SKIP | 213 (todos com motivo e explicação que os cobre) |
 | Sub-blocos (vigentes / novas / reutilizadas / SKIP) | A 17/5/0/12 · B 153/44/0/109 · C 92/25/3/64 · D 47/19/0/28 |
-| Papéis das novas | BLOCK 4, DEVICE 2, ITEM 2, OVERVIEW 4 |
+| Papéis das novas |  |
 
 ## Dois eixos
 
@@ -20,29 +20,29 @@ Número, percentual, prazo, idade, votos, quórum, BLOCK, lista, artigo longo, r
 
 | LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |
 |---|---|---|---|---|
-| LOW | 12 | | SIMPLE | 1 |
-| MEDIUM | 0 | | STRUCTURED | 11 |
+| LOW | 0 | | SIMPLE | 0 |
+| MEDIUM | 0 | | STRUCTURED | 0 |
 | HIGH | 0 | | EXTERNAL | 0 |
 
-Jurisprudência: NONE 12 (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
+Jurisprudência:  (CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).
 
 ## Filas
 
 | Fila | Agora | Checkpoint |
 |---|---|---|
-| A_CLEAN_LOW | 12 | 0 |
+| A_CLEAN_LOW | 0 | 0 |
 | B_CLEAN_MEDIUM | 0 | 0 |
-| C_QUICK_REVIEW | 0 | 2 |
-| D_FULL_HUMAN_REVIEW | 0 | 10 |
+| C_QUICK_REVIEW | 0 | 0 |
+| D_FULL_HUMAN_REVIEW | 0 | 0 |
 | E_HARD_FAIL | 0 | 0 |
 
-Risco no checkpoint: HIGH 10, LOW 1, MEDIUM 1.
+Risco no checkpoint: .
 
-**Migração dos 10 D antigos:** 10 saíram de D → A_CLEAN_LOW 10.
+**Migração dos 0 D antigos:** 0 saíram de D → .
 
 ## Rodada D (revisão jurídica humana dos 11 itens D)
 
-Escopo `CF88_BATCH06_TRIAGE_QUEUE_D, CF88_BATCH06_TRIAGE_QUEUE_C, CF88_BATCH06_TRIAGE_QUEUE_B_PART1, CF88_BATCH06_TRIAGE_QUEUE_B_PART2, CF88_BATCH06_TRIAGE_QUEUE_B_PART3, CF88_BATCH06_TRIAGE_QUEUE_A_PART1, CF88_BATCH06_TRIAGE_QUEUE_A_PART2` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · 18 aprovados sem alteração jurídica · 63 ajustados e aprovados · 0 rejeitados.
+Escopo `CF88_BATCH06_TRIAGE_QUEUE_D, CF88_BATCH06_TRIAGE_QUEUE_C, CF88_BATCH06_TRIAGE_QUEUE_B_PART1, CF88_BATCH06_TRIAGE_QUEUE_B_PART2, CF88_BATCH06_TRIAGE_QUEUE_B_PART3, CF88_BATCH06_TRIAGE_QUEUE_A_PART1, CF88_BATCH06_TRIAGE_QUEUE_A_PART2, CF88_BATCH06_TRIAGE_QUEUE_A_PART3` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · 19 aprovados sem alteração jurídica · 74 ajustados e aprovados · 0 rejeitados.
 
 | Target | Versão aprovada | Decisão | Proveniência | Portão de checks |
 |---|---|---|---|---|
@@ -115,21 +115,33 @@ Escopo `CF88_BATCH06_TRIAGE_QUEUE_D, CF88_BATCH06_TRIAGE_QUEUE_C, CF88_BATCH06_T
 | `CF88:ART.66:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.66:PAR.4` | v1 | APPROVED | 1 item(ns) | PASS |
 | `CF88:ART.66:PAR.7` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.67` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.68` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.68:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.68:PAR.2` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.69` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.70` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.70:PAR.UNICO` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.71` | v1 | APPROVED | 0 item(ns) | PASS |
+| `CF88:ART.71:INC.I` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.71:INC.II` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.71:INC.III` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.71:INC.VIII` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.71:INC.IX` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.71:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.71:PAR.3` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.72` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.73` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.73:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 1 item(ns) | PASS |
+| `CF88:ART.73:PAR.2` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.73:PAR.3` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.74` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.74:PAR.1` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
+| `CF88:ART.74:PAR.2` | v2 | APPROVED_AFTER_ADJUSTMENT | 0 item(ns) | PASS |
 | `CF88:ART.75` | v2 | APPROVED_AFTER_ADJUSTMENT | 2 item(ns) | PASS |
 
-Versões anteriores preservadas como RETIRED: 63 (v1 dos ajustados).
-Acervo HUMAN_APPROVED_T1: 289 antes → **370** depois (+81 do Batch06; os 3 pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: **12** (A, B e C não foram decididos).
+Versões anteriores preservadas como RETIRED: 74 (v1 dos ajustados).
+Acervo HUMAN_APPROVED_T1: 289 antes → **382** depois (+93 do Batch06; os 3 pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: **0** (A, B e C não foram decididos).
 
 ## Motivos dos D pendentes
 
@@ -141,8 +153,7 @@ Acervo HUMAN_APPROVED_T1: 289 antes → **370** depois (+81 do Batch06; os 3 pil
 
 ## Falsos positivos corrigidos por regra geral (validator v3)
 
-- TELEOLOGY_SPECULATIVE: 2 alerta(s) rebaixado(s) para INFO
-- UNIVERSAL_CLAIM: 1 alerta(s) rebaixado(s) para INFO
+- nenhum
 - "incentivo(s)" como substantivo do próprio texto ou como matéria da lei não é teleologia; "todos os"/"só pode" que reproduzem quórum/condição explícitos não são universalização; "automaticamente" expresso no artigo não é consequência inventada.
 - Rótulo truncado do fato externo ("Lei Complementar nº 7") passa a mostrar a identificação inteira; fato só na camada externa vai para C (o núcleo T1 não depende dele).
 
@@ -154,16 +165,16 @@ Acervo HUMAN_APPROVED_T1: 289 antes → **370** depois (+81 do Batch06; os 3 pil
 
 | Métrica | Caracteres |
 |---|---|
-| Rascunhos (5 seções + glossário) | 14.372 |
-| Modelo antigo (pacote completo de todos os itens) | 25.823 |
+| Rascunhos (5 seções + glossário) | 0 |
+| Modelo antigo (pacote completo de todos os itens) | 53 |
 | Checkpoint (pacotes apresentados, D=89) | 265.430 |
-| **Agora (pacotes apresentados)** | **9.602** |
-| — BATCH06_COMPACT_CLEAN_REVIEW.md | 9.095 |
+| **Agora (pacotes apresentados)** | **893** |
+| — BATCH06_COMPACT_CLEAN_REVIEW.md | 386 |
 | — BATCH06_FULL_HUMAN_REVIEW.md | 218 |
 | — BATCH06_HARD_FAIL_REPORT.md | 119 |
 | — BATCH06_QUICK_REVIEW.md | 170 |
-| Redução vs. modelo antigo | 16.221 (62.8%) |
-| Redução vs. checkpoint | 255.828 (96.4%) |
+| Redução vs. modelo antigo | -840 (-1584.9%) |
+| Redução vs. checkpoint | 264.537 (99.7%) |
 
 Pacote D: GERADO (limite do diagnóstico: 40% em D).
 
