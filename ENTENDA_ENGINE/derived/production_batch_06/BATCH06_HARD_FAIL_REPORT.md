@@ -2,4 +2,4 @@
 
 Total: **0**
 
-- fila E encerrada: nenhum item pendente com HARD_FAIL (validator v3 e contrato de bloqueio do engine).
+- nenhum item pendente com HARD_FAIL nesta fila (validator v3 e contrato de bloqueio do engine).

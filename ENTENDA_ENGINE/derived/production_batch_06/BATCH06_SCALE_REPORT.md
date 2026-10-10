@@ -197,11 +197,11 @@ Novos pendentes do lote: **0**. Todas as filas de revisão humana foram concluí
 |---|---|
 | Itens pendentes | 0 |
 | Conteúdo pendente para revisão humana (5 seções + glossário) | 0 |
-| Pacotes atuais (só cabeçalhos de filas vazias, mantidos por contrato) | 740 |
-| — BATCH06_COMPACT_CLEAN_REVIEW.md | 295 |
-| — BATCH06_FULL_HUMAN_REVIEW.md | 152 |
-| — BATCH06_HARD_FAIL_REPORT.md | 150 |
-| — BATCH06_QUICK_REVIEW.md | 143 |
+| Pacotes atuais (só cabeçalhos de filas vazias, mantidos por contrato) | 691 |
+| — BATCH06_COMPACT_CLEAN_REVIEW.md | 267 |
+| — BATCH06_FULL_HUMAN_REVIEW.md | 145 |
+| — BATCH06_HARD_FAIL_REPORT.md | 143 |
+| — BATCH06_QUICK_REVIEW.md | 136 |
 | Redução vs. modelo antigo | N/A — não existem mais itens pendentes |
 | Redução vs. checkpoint | N/A — não existem mais itens pendentes |
 

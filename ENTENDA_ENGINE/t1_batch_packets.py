@@ -192,7 +192,7 @@ def compact(doc, c):
     pending = sum(1 for x in doc['rows'] if x['queue'] in ('A_CLEAN_LOW', 'B_CLEAN_MEDIUM'))
     L = [f"# {prefix(spec['batch_id'])} — REVISÃO COMPACTA (filas A e B)", '',
          f"Lote `{spec['batch_id']}` · {spec['as_of_date']} · "
-         + ('filas A e B encerradas: nenhuma revisão pendente nas filas A e B (AUTO_APPROVE_LOW/MEDIUM = OFF).' if not pending else
+         + ('nenhum item pendente nas filas A e B (AUTO_APPROVE_LOW/MEDIUM = OFF).' if not pending else
             f"{pending} itens pendentes; aprovação só por revisão humana (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória "
             'em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.'), '']
     for q, label in (('A_CLEAN_LOW', 'A — CLEAN_LOW'), ('B_CLEAN_MEDIUM', 'B — CLEAN_MEDIUM')):
@@ -217,7 +217,7 @@ def compact(doc, c):
 def quick(doc, c):
     xs = [x for x in doc['rows'] if x['queue'] == 'C_QUICK_REVIEW']
     L = [f"# {prefix(c.spec['batch_id'])} — REVISÃO RÁPIDA (fila C)", '',
-         f"Lote `{c.spec['batch_id']}` · " + ('fila C encerrada: nenhum item pendente.' if not xs else
+         f"Lote `{c.spec['batch_id']}` · " + ('nenhum item pendente nesta fila.' if not xs else
                                               f"{len(xs)} itens pendentes · só o trecho com problema; nenhuma correção foi aplicada."), '']
     if not xs:
         L += ['- nenhum item nesta fila']
@@ -253,7 +253,7 @@ def full(doc, c):
     xs = sorted(xs, key=lambda x: (x['sub_block'], c.ctx.order[x['target_id']]))
     if not xs:
         return '\n'.join([f"# {prefix(c.spec['batch_id'])} — REVISÃO HUMANA COMPLETA (fila D)", '',
-                          f"Lote `{c.spec['batch_id']}` · fila D encerrada: nenhum item pendente.", '', '- nenhum item nesta fila']) + '\n'
+                          f"Lote `{c.spec['batch_id']}` · nenhum item pendente nesta fila.", '', '- nenhum item nesta fila']) + '\n'
     L = [f"# {prefix(c.spec['batch_id'])} — REVISÃO HUMANA COMPLETA (fila D)", '',
          f"Lote `{c.spec['batch_id']}` · {len(xs)} itens pendentes de revisão humana. Só itens com LEGAL_RISK HIGH ou alerta jurídico FULL. "
          'Ordenado por sub-bloco e dispositivo.', '', '## Índice', '']
@@ -291,7 +291,7 @@ def diagnostic(doc, c):
 def hard(doc, c):
     xs = [x for x in doc['rows'] if x['queue'] == 'E_HARD_FAIL']
     L = [f"# {prefix(c.spec['batch_id'])} — HARD FAIL (fila E)", '', f'Total: **{len(xs)}**', '']
-    L += [f"- `{x['target_id']}` — {x['reason']}" for x in xs] or ['- fila E encerrada: nenhum item pendente com HARD_FAIL (validator v3 e contrato '
+    L += [f"- `{x['target_id']}` — {x['reason']}" for x in xs] or ['- nenhum item pendente com HARD_FAIL nesta fila (validator v3 e contrato '
                                                                    'de bloqueio do engine).']
     return '\n'.join(L) + '\n'
 
@@ -327,6 +327,7 @@ def metrics(doc, c, files):
         full_all += T._full_package_item(i, act[x['target_id']], c.ctx, x)
     old_model = len('\n'.join(full_all)) if rows else 0   # sem pendentes nao ha pacote completo a comparar (so cabecalhos de filas vazias)
     presented = sum(len(v) for v in files.values())
+    # contrato numerico (os consumidores formatam esses campos): sem pendentes a reducao e neutra (0); exibir N/A e decisao de cada relatorio
     return dict(total_draft_chars=draft_chars, old_model_full_package_chars=old_model, presented_chars=presented,
                 presented_by_file={k: len(v) for k, v in sorted(files.items())}, pending_items=len(rows),
-                reduction_abs=old_model - presented if rows else None, reduction_pct=round(100 * (1 - presented / old_model), 1) if rows else None)
+                reduction_abs=old_model - presented if rows else 0, reduction_pct=round(100 * (1 - presented / old_model), 1) if rows else 0.0)

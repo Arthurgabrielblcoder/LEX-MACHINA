@@ -871,21 +871,38 @@ class Batch06(unittest.TestCase):
     def test_closure_empty_queue_shells(self):
         shells = {n: (BD / n).read_text(encoding='utf-8') for n in ('BATCH06_COMPACT_CLEAN_REVIEW.md', 'BATCH06_QUICK_REVIEW.md',
                                                                     'BATCH06_FULL_HUMAN_REVIEW.md', 'BATCH06_HARD_FAIL_REPORT.md')}
-        self.assertIn('filas A e B encerradas: nenhuma revisão pendente nas filas A e B', shells['BATCH06_COMPACT_CLEAN_REVIEW.md'])
-        self.assertIn('fila C encerrada: nenhum item pendente', shells['BATCH06_QUICK_REVIEW.md'])
-        self.assertIn('fila D encerrada: nenhum item pendente', shells['BATCH06_FULL_HUMAN_REVIEW.md'])
-        self.assertIn('fila E encerrada: nenhum item pendente com HARD_FAIL', shells['BATCH06_HARD_FAIL_REPORT.md'])
-        for name, text in shells.items():
-            for bad in ('nenhum item aprovado', 'nenhum aprovado', '## Índice'):
+        self.assertIn('nenhum item pendente nas filas A e B', shells['BATCH06_COMPACT_CLEAN_REVIEW.md'])
+        self.assertIn('nenhum item pendente nesta fila', shells['BATCH06_QUICK_REVIEW.md'])
+        self.assertIn('nenhum item pendente nesta fila', shells['BATCH06_FULL_HUMAN_REVIEW.md'])
+        self.assertIn('nenhum item pendente com HARD_FAIL nesta fila', shells['BATCH06_HARD_FAIL_REPORT.md'])
+        for name, text in shells.items():   # o modulo generico de pacotes so descreve a fila; o status do lote e do builder do lote
+            for bad in ('nenhum item aprovado', 'nenhum aprovado', '## Índice', 'encerrada', 'FECHADO', 'CLOSED'):
                 self.assertNotIn(bad, text, name)
+
+    def test_shared_packet_metrics_numeric_contract_without_pending(self):
+        """t1_batch_packets.metrics com 0 pendentes: todos os campos numericos continuam numericos (os builders macro formatam com _n)."""
+        class _Ctx:
+            records = {}
+        files = {'X_COMPACT.md': 'abc', 'X_HARD.md': 'de'}
+        m = BP.metrics(dict(rows=[]), _Ctx(), files)
+        for k in ('total_draft_chars', 'old_model_full_package_chars', 'presented_chars', 'pending_items', 'reduction_abs', 'reduction_pct'):
+            self.assertIsInstance(m[k], (int, float), k)
+            self.assertNotIsInstance(m[k], bool, k)
+        self.assertEqual((m['pending_items'], m['old_model_full_package_chars'], m['reduction_abs'], m['reduction_pct']), (0, 0, 0, 0.0))
+        self.assertEqual(m['presented_chars'], 5)
+        # mesma formatacao das linhas de volume dos builders macro (build_entenda_macro_batch._n e "(pct%)")
+        self.assertEqual(f"{B._n(m['reduction_abs'])} ({m['reduction_pct']}%)", '0 (0.0%)')
+        for k in ('old_model_full_package_chars', 'presented_chars', 'total_draft_chars'):
+            B._n(m[k])
 
     def test_closure_volume_metrics_without_pending(self):
         m = self.tri['metrics']
         self.assertEqual((m['pending_items'], m['total_draft_chars'], m['old_model_full_package_chars']), (0, 0, 0))
-        self.assertIsNone(m['reduction_abs'])
-        self.assertIsNone(m['reduction_pct'])
+        self.assertEqual((m['reduction_abs'], m['reduction_pct']), (0, 0.0))   # contrato numerico neutro na camada compartilhada
         rep = (BD / 'BATCH06_SCALE_REPORT.md').read_text(encoding='utf-8')
-        self.assertEqual(rep.count('N/A — não existem mais itens pendentes'), 2)
+        self.assertEqual(rep.count('N/A — não existem mais itens pendentes'), 2)   # a decisao de exibir N/A fica no builder do Batch06
+        self.assertNotIn('| Redução vs. modelo antigo | 0', rep)
+        self.assertNotIn('(0.0%)', rep)
         for snap in ('BATCH06_TRIAGE_PRE_ROUND_D.json', 'BATCH06_TRIAGE_PRE_ROUND_A3.json'):   # comparacao historica com fonte declarada
             hm = load(snap)['metrics']
             self.assertIn(f"`{snap}` ({len(load(snap)['rows'])} pendentes)", rep)
