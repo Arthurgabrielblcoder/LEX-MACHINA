@@ -2,7 +2,7 @@
  "schema_version": 2,
  "batch_id": "ENTENDA_CF_PRODUCTION_BATCH_06",
  "as_of": "2026-10-04",
- "status": "WIP_CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado; triagem recalibrada",
+ "status": "CLOSED: revisao humana concluida; 93 HUMAN_APPROVED_T1 novos; 0 pendentes",
  "builder": "ENTENDA_ENGINE/build_entenda_batch06_candidate.py",
  "validator": "T1_VALIDATOR_V3 (A6 + recalibracao Batch06 + licoes da fila D, 2026-10-05)",
  "selection": {
@@ -32,16 +32,17 @@
  "verification_complexity": {},
  "metrics": {
   "total_draft_chars": 0,
-  "old_model_full_package_chars": 53,
-  "presented_chars": 893,
+  "old_model_full_package_chars": 0,
+  "presented_chars": 740,
   "presented_by_file": {
-   "BATCH06_COMPACT_CLEAN_REVIEW.md": 386,
-   "BATCH06_FULL_HUMAN_REVIEW.md": 218,
-   "BATCH06_HARD_FAIL_REPORT.md": 119,
-   "BATCH06_QUICK_REVIEW.md": 170
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 295,
+   "BATCH06_FULL_HUMAN_REVIEW.md": 152,
+   "BATCH06_HARD_FAIL_REPORT.md": 150,
+   "BATCH06_QUICK_REVIEW.md": 143
   },
-  "reduction_abs": -840,
-  "reduction_pct": -1584.9,
+  "pending_items": 0,
+  "reduction_abs": null,
+  "reduction_pct": null,
   "checkpoint_presented_chars": 265430
  },
  "text_source": {
@@ -62,8 +63,8 @@
   "updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2"
  },
  "code_sha256_lf": {
-  "build_entenda_batch06_candidate.py": "78aa681b2baf67641876853e2862e5fb195b03badf5611342eb9540a305da2b1",
-  "t1_batch_packets.py": "9102b7f8177fc4b6ffa5faea931be0f8087d5312e47d7c7de0da1d5ebb21eabb",
+  "build_entenda_batch06_candidate.py": "a7698a351c88903b4b020d85d4079120ec5e76002375533109f52a297510122b",
+  "t1_batch_packets.py": "fc3af66383aa573e5214aea8f83255dd11bb6ecde017b57deb81b105c0653336",
   "t1_risk.py": "a6fc3e3cba9be88f81d1dc31a3c6f57c2ad94bda508416bb56825ee693d0584a",
   "t1_validator_v3.py": "3c502b07258883fa708bed6fcc8388cd19dc8436c513593d6874a517e7ae3d63",
   "t1_validator_v2.py": "c4f3f01707672f4850d4522724bd4aea00acbd91eeadb7f93a9e10914f4fa71a",
@@ -125,12 +126,12 @@
   "REVIEW_BATCH_06.md": "716dd0e7bf79e18d61a6549f7ba9e3cfa19c8dfb344c240c3255a9acb7d2551a",
   "EDITORIAL_CHECKS.json": "64461b066bb54424f34d9d27ba33b4739338a29fe59757c6f54b6f05a0880098",
   "REVIEW_BATCH_06_RISK_TRIAGE.md": "9617d83a5bcf9bfc520ff9707e1ad5f9e04050352f0ac0d17bfdc4dae5c411d0",
-  "BATCH06_TRIAGE.json": "a8c437f6bff2e14a10f458a8801500fffadc14ce149856f7c84e370145667884",
-  "BATCH06_COMPACT_CLEAN_REVIEW.md": "ee27e124db4bb60ce8c9e9d9859a7c3ea4571583ef1e076bca30174ed4f534d0",
-  "BATCH06_QUICK_REVIEW.md": "4a0f27959c87be5e3b8feabe615a7ad9ad8c4e5a26c4a0feea90f36f84619f4c",
-  "BATCH06_FULL_HUMAN_REVIEW.md": "8979ed561de376449a8757ba03cd6c00af805f3cd9e63dea42ae2da4a2e91241",
-  "BATCH06_HARD_FAIL_REPORT.md": "563b2142300168b4a7fd0a2b57a8ab271962989821b1c08f97766c0ea3185525",
+  "BATCH06_TRIAGE.json": "fe249d362394a76da20e0ecb75b146bf226dac7f9db584e435ded43878c36ffb",
+  "BATCH06_COMPACT_CLEAN_REVIEW.md": "caf9bfa074883c19a46708a622c56aada23cab469605b906832e09d5d345943a",
+  "BATCH06_QUICK_REVIEW.md": "9446c2639defa4041f204cdad5f2cad2bf4f7ac46eaa675c59d70f12acb876cd",
+  "BATCH06_FULL_HUMAN_REVIEW.md": "38b526b5ffbcae389b1d4f1a0a43520e3d7c538f9988be5419ce3dae2bb237f2",
+  "BATCH06_HARD_FAIL_REPORT.md": "6d1c352b22d5589f97aa45ea2dd009a22e164dcd6af6ddbbe226aee1953bb58c",
   "MICRO_ADJUSTMENTS_LOG.json": "9342bfe474c058c74cb5a970dacdafdbc7b7ac162298746ffc284c5adae5fbb7",
-  "BATCH06_SCALE_REPORT.md": "8563d07dcb6fb78934a166b02164675ddfce0a04927f687eaa5260017f08a685"
+  "BATCH06_SCALE_REPORT.md": "4cf2045972dcc9c47239ca03e07badd442e76a0c68bcd9ab396ac15c6b14cd3b"
  }
 }

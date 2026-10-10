@@ -8,8 +8,9 @@ Replaces the temporary b06_* scripts of the checkpoint. Inputs (all in Git):
   CF88 text: updater/saida (git-ignored) or its byte-exact reconstruction (text_source_reconstruction.py, sha256 verified).
 Steps: production_batch (SELECT/SKIP, stamping, index, review sheet) -> risk map (t1_risk.assess/complexity on validator v3) ->
 editorial_checks -> triage A-E (t1_batch_packets) -> packets -> scale report -> manifest.
-The candidate corpus is regenerated from the drafts on every build (none of its explanations was human-reviewed, so there is no version
-chain to keep); nothing is approved: AUTO_APPROVE_* stay OFF and every explanation stays PENDING_HUMAN_REVIEW.
+The corpus is regenerated from the drafts and the frozen pre-round evidence on every build; HUMAN_APPROVED_T1 comes only from the
+recorded human rounds (BATCH_SPEC round_approvals) behind the approval gate; AUTO_APPROVE_* stay OFF. Once the rounds empty the queues,
+the scale report takes the triage history from the versioned pre-round snapshots, never from the empty current triage.
 Usage:
   python build_entenda_batch06_candidate.py                      build in place
   python build_entenda_batch06_candidate.py --determinism 3      + 3 builds in temporary copies; writes DETERMINISM_EVIDENCE.json
@@ -181,7 +182,8 @@ def build(bd=BD):
             (bd / n).unlink(missing_ok=True)
     doc['metrics'] = BP.metrics(doc, c, files)
     doc['metrics']['checkpoint_presented_chars'] = CHECKPOINT_PRESENTED
-    doc['d_full_package'] = 'GERADO' if full_generated else 'NAO_GERADO (diagnostico de escalonamento)'
+    doc['d_full_package'] = ('GERADO' if doc['counts']['D_FULL_HUMAN_REVIEW'] else 'GERADO_SEM_ITENS_PENDENTES') if full_generated else \
+        'NAO_GERADO (diagnostico de escalonamento)'
     micro = BP.micro_auto(doc, c.cfg)
     doc['micro_adjustments'] = dict(applied=micro['applied'], eligible=micro['eligible'], microauto_apply=micro['microauto_apply'])
     before = global_approved(c.spec)
@@ -196,6 +198,9 @@ def build(bd=BD):
                                   global_after=len(before | new_approved), batch06_new_pending=len(pend),
                                   batch06_reused_pilots_already_approved=len(c.spec.get('reused', {})),
                                   note='pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo')
+    if 'migration' in doc:
+        doc['migration']['scope'] = 'itens pendentes da triagem atual (o historico da triagem esta em triage_history)'
+    doc['triage_history'] = triage_history(c, pre, doc)
     doc['text_source'] = text_source_status(ctx)
     doc['relations_pin'] = dict(file='BATCH06_RELATIONS_PIN.json', coverage=pin['coverage'])
     doc['validator_limits'] = V3.LIMITS
@@ -209,9 +214,58 @@ def build(bd=BD):
     return doc
 
 
+def round_snapshot(bd, spec, ra):
+    """Triage frozen right before a recorded human round (<P>_TRIAGE_PRE_<ROUND>.json, a versioned input): the history source once the
+    rounds have emptied the current queues. None if the round has no frozen triage."""
+    name = ra['decisions'].replace('_HUMAN_REVIEW_DECISIONS.json', '')
+    p = Path(bd) / f"{BP.prefix(spec['batch_id'])}_TRIAGE_PRE_{name}.json"
+    return (p.name, V.load_json(p)) if p.is_file() else None
+
+
+def triage_history(c, pre, doc):
+    """Triage history from versioned sources only: the recalibrated triage frozen before the first human round (or the current triage
+    while no round is recorded), the pre-recalibration checkpoint queues, and the final destination of the checkpoint's D items."""
+    ras = c.spec.get('round_approvals') or []
+    first = round_snapshot(c.bd, c.spec, ras[0]) if ras else None
+    name, hist = first if first else (f"{BP.prefix(c.spec['batch_id'])}_TRIAGE.json", doc)
+    decided = {x['target_id']: (r['review_scope'], x['decision']) for r in ras for x in V.load_json(c.bd / r['decisions'])['decisions']}
+    old = (pre or {}).get('queues_by_target') or {}
+    hist_q = {x['target_id']: x['queue'] for x in hist['rows']}
+    old_d = sorted(t for t, v in old.items() if v['queue'] == 'D_FULL_HUMAN_REVIEW')
+    moved = Counter(hist_q.get(t, 'FORA_DA_TRIAGEM') for t in old_d)
+    by_round = Counter(decided[t][0] for t in old_d if t in decided)
+    return dict(source=name, pending_items=len(hist['rows']), counts=hist['counts'], legal_risk_counts=hist['legal_risk_counts'],
+                complexity_counts=hist['complexity_counts'], jurisprudence_counts=hist['jurisprudence_counts'], d_reasons=hist['d_reasons'],
+                checkpoint=dict(source='PRE_RECALIBRATION_MANIFEST.json', counts=dict(sorted(Counter(v['queue'] for v in old.values()).items())),
+                                risk_counts=dict(sorted(Counter(v['risk'] for v in old.values() if v.get('risk')).items()))),
+                checkpoint_d=dict(items=len(old_d), left_d=sum(1 for t in old_d if hist_q.get(t) != 'D_FULL_HUMAN_REVIEW'),
+                                  recalibrated_queue={q: moved[q] for q in list(BP.QUEUES) + sorted(set(moved) - set(BP.QUEUES)) if moved.get(q)},
+                                  final_review_status=dict(sorted(Counter(c.records[t]['review_status'] if t in c.records else 'SEM_REGISTRO_ATIVO'
+                                                                          for t in old_d).items())),
+                                  final_decision=dict(sorted(Counter(decided[t][1] for t in old_d if t in decided).items())),
+                                  decided_by_round={r['review_scope']: by_round[r['review_scope']] for r in ras if by_round.get(r['review_scope'])}))
+
+
+def _counts(d, keys=None):
+    items = [(k, d.get(k, 0)) for k in keys] if keys else sorted(d.items())
+    return ', '.join(f'{k} {v}' for k, v in items) or 'nenhum'
+
+
+def _reduction(m):
+    return f"{_n(m['reduction_abs'])} ({m['reduction_pct']}%)" if m.get('reduction_abs') is not None else 'N/A'
+
+
 def scale_report(doc, sel, c, pre):
-    s, m, mig = sel['summary'], doc['metrics'], doc.get('migration', {})
-    rows = doc['rows']
+    s, m, rows = sel['summary'], doc['metrics'], doc['rows']
+    ras = c.spec.get('round_approvals') or []
+    ra, tot = doc.get('round_approvals') or {}, doc.get('approval_totals') or {}
+    pending = tot.get('batch06_new_pending', len(rows))
+    closed = bool(ras) and pending == 0
+    rounds = [(r, V.load_json(c.bd / r['decisions'])) for r in ras]
+    rejected = sum(d['decision_counts'].get('REJECTED', 0) for _, d in rounds)
+    first = round_snapshot(c.bd, c.spec, ras[0]) if ras else None     # triagem recalibrada, antes da primeira rodada humana
+    last = round_snapshot(c.bd, c.spec, ras[-1]) if ras else None     # ultimo estado versionado com itens pendentes
+    h, hd = doc['triage_history'], doc['triage_history']['checkpoint_d']
     sb = {}
     for r in sel['selection']:
         if r['status'] != 'CURRENT':
@@ -220,69 +274,126 @@ def scale_report(doc, sel, c, pre):
         cur = sb.setdefault(k, Counter())
         cur['current'] += 1
         cur['new' if r.get('explanation_source') == 'BATCH_NEW' else 'reused' if r.get('explanation_source') else 'skip'] += 1
+    roles = Counter(c.records[r['target_id']]['granularity']['role'] for r in sel['selection']
+                    if r.get('explanation_source') == 'BATCH_NEW' and r['target_id'] in c.records)
     rec = json.loads((c.bd / 'RECALIBRATION_EDITORIAL_LOG.json').read_text(encoding='utf-8'))
+    if closed:
+        status = (f"**FECHADO: revisão jurídica humana concluída para todas as explicações novas do lote** ({ra.get('approved', 0)}/"
+                  f"{s['new_explanations']} aprovadas após revisão humana; 0 pendências; os {tot.get('batch06_reused_pilots_already_approved', 0)} "
+                  'pilotos reutilizados já estavam aprovados). AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY permaneceram OFF.')
+    else:
+        status = (f"**EM REVISÃO HUMANA: {ra.get('approved', 0)} de {s['new_explanations']} explicações novas aprovadas; {pending} pendentes** "
+                  '(AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF).')
     L = [f"# {c.spec['batch_id']} — relatório de escala (recalibração de risco)", '',
          f"Data de referência: {c.spec['as_of_date']} · gerado por `ENTENDA_ENGINE/build_entenda_batch06_candidate.py` (determinístico, só conteúdo "
-         'versionado) · **WIP: nenhum ENTENDA do Batch06 aprovado** (0 HUMAN_APPROVED_T1 novos; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF).', '',
+         f"versionado) · {status}", '',
          '## Seleção', '', '| | |', '|---|---|',
          f"| Targets analisados | {s['targets_evaluated']} ({s['targets_current']} vigentes + {s['historical_excluded']} históricos excluídos) |",
          f"| SELECT | {s['selected']} = {s['new_explanations']} explicações novas + {s['reused_from_pilot']} pilotos reutilizados |",
          f"| SKIP | {s['by_classification'].get('NO_SEPARATE_EXPLANATION', 0)} (todos com motivo e explicação que os cobre) |",
          '| Sub-blocos (vigentes / novas / reutilizadas / SKIP) | ' + ' · '.join(f"{k} {v['current']}/{v['new']}/{v['reused']}/{v['skip']}"
                                                                          for k, v in sorted(sb.items())) + ' |',
-         f"| Papéis das novas | {', '.join(f'{k} {v}' for k, v in sorted(Counter(x['role'] for x in rows).items()))} |", '',
+         f"| Papéis das novas | {_counts(roles)} |", '',
          '## Dois eixos', '',
          '- **LEGAL_RISK** — há risco real de interpretação jurídica incorreta?',
          '- **VERIFICATION_COMPLEXITY** — quão difícil é verificar o draft deterministicamente?',
          'Número, percentual, prazo, idade, votos, quórum, BLOCK, lista, artigo longo, remissão simples, dependência de lei e emenda '
-         'constitucional elevam só a complexidade.', '',
-         '| LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |', '|---|---|---|---|---|']
-    for a, b in zip(('LOW', 'MEDIUM', 'HIGH'), ('SIMPLE', 'STRUCTURED', 'EXTERNAL')):
-        L.append(f"| {a} | {doc['legal_risk_counts'].get(a, 0)} | | {b} | {doc['complexity_counts'].get(b, 0)} |")
-    L += ['', f"Jurisprudência: {', '.join(f'{k} {v}' for k, v in sorted(doc['jurisprudence_counts'].items()))} "
-          '(CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).', '',
-          '## Filas', '', '| Fila | Agora | Checkpoint |', '|---|---|---|']
-    prev = mig.get('previous_counts', {})
-    for q in BP.QUEUES:
-        L.append(f"| {q} | {doc['counts'][q]} | {prev.get(q, 0)} |")
-    L += ['', f"Risco no checkpoint: {', '.join(f'{k} {v}' for k, v in sorted(mig.get('previous_risk_counts', {}).items()))}.", '',
-          f"**Migração dos {mig.get('previous_D', 0)} D antigos:** {mig.get('previous_D_migrated', 0)} saíram de D → "
-          + ', '.join(f'{k} {v}' for k, v in sorted(mig.get('previous_D_now', {}).items())) + '.', '',
-          '## Rodada D (revisão jurídica humana dos 11 itens D)', '']
-    ra, tot = doc.get('round_approvals') or {}, doc.get('approval_totals') or {}
+         'constitucional elevam só a complexidade.', '']
+
+    def axes(d):
+        out = ['| LEGAL_RISK | Itens | | VERIFICATION_COMPLEXITY | Itens |', '|---|---|---|---|---|']
+        for a, b in zip(('LOW', 'MEDIUM', 'HIGH'), ('SIMPLE', 'STRUCTURED', 'EXTERNAL')):
+            out.append(f"| {a} | {d['legal_risk_counts'].get(a, 0)} | | {b} | {d['complexity_counts'].get(b, 0)} |")
+        return out
+    L += ['### Estado atual das pendências', '']
+    if not rows:
+        L += ['Nenhuma explicação nova pendente. As tabelas desta subseção contam só itens ainda pendentes; por isso estão zeradas. A '
+              'classificação que as explicações tiveram está em “Histórico da triagem”.', '']
+    L += axes(doc) + ['', f"Jurisprudência (pendentes): {_counts(doc['jurisprudence_counts']) if rows else 'nenhum item pendente'} "
+                          '(CONTEXT_ONLY não gera D; REQUIRED_FOR_CORRECTNESS é gatilho de D).', '']
+    if first:
+        L += ['### Histórico da triagem', '',
+              f"Fonte: `{h['source']}` (triagem recalibrada versionada, congelada antes da primeira rodada humana; {h['pending_items']} explicações "
+              'novas pendentes). Não é reconstruída da triagem atual.', ''] + axes(h)
+        L += ['', f"Jurisprudência: {_counts(h['jurisprudence_counts'])} · motivos dos D: {_counts(h['d_reasons'])}.", '']
+    L += ['## Filas', '', '| Fila | Agora (pendentes) | Triagem recalibrada | Checkpoint pré-recalibração |', '|---|---|---|---|']
+    L += [f"| {q} | {doc['counts'][q]} | {h['counts'][q]} | {h['checkpoint']['counts'].get(q, 0)} |" for q in BP.QUEUES]
+    L += ['', f"Triagem recalibrada: `{h['source']}` · checkpoint pré-recalibração: `{h['checkpoint']['source']}`.",
+          f"Risco no checkpoint: {_counts(h['checkpoint']['risk_counts'])}.", '']
+    if hd['items']:
+        L += [f"**Migração dos {hd['items']} D antigos** (checkpoint → triagem recalibrada): {hd['left_d']} saíram de D → "
+              f"{_counts(hd['recalibrated_queue'], list(hd['recalibrated_queue']))}.",
+              f"Destino final dos {hd['items']} D antigos: {_counts(hd['final_review_status'])} · decisões: {_counts(hd['final_decision'])}"
+              + (f" · por rodada: {_counts(hd['decided_by_round'], list(hd['decided_by_round']))}" if hd['decided_by_round'] else '') + '.', '']
+    L += [f"## Revisão jurídica humana consolidada ({BP.prefix(c.spec['batch_id'])})", '']
     if ra.get('gate'):
-        L += [f"Escopo `{', '.join(ra['review_scopes'])}` · decisões em `ROUND_D_HUMAN_REVIEW_DECISIONS.json` · "
-              f"{ra['approved_unchanged']} aprovados sem alteração jurídica · {ra['approved_after_adjustment']} ajustados e aprovados · 0 rejeitados.",
-              '', '| Target | Versão aprovada | Decisão | Proveniência | Portão de checks |', '|---|---|---|---|---|']
-        L += [f"| `{g['target_id']}` | v{g['editorial_version']} | {g['decision']} | {g['provenance_items']} item(ns) | {g['gate']} |" for g in ra['gate']]
-        L += ['', f"Versões anteriores preservadas como RETIRED: {len(ra['retired_versions'])} (v1 dos ajustados).",
-              f"Acervo HUMAN_APPROVED_T1: {tot['global_before']} antes → **{tot['global_after']}** depois (+{tot['batch06_new_approved']} do Batch06; "
-              f"os {tot['batch06_reused_pilots_already_approved']} pilotos reutilizados não são contados de novo). Batch06 novos ainda pendentes: "
-              f"**{tot['batch06_new_pending']}** (A, B e C não foram decididos).", '']
+        L += [f"{len(rounds)} rodadas componentes · {ra['approved']} decisões · {ra['approved_unchanged']} aprovados sem alteração jurídica · "
+              f"{ra['approved_after_adjustment']} ajustados e aprovados · {rejected} rejeitados.", '',
+              '| Rodada (escopo) | Decisões | Itens | Sem alteração | Ajustados | Rejeitados |', '|---|---|---|---|---|---|']
+        L += [f"| `{r['review_scope']}` | `{r['decisions']}` | {len(d['decisions'])} | {d['decision_counts'].get('APPROVED', 0)} | "
+              f"{d['decision_counts'].get('APPROVED_AFTER_ADJUSTMENT', 0)} | {d['decision_counts'].get('REJECTED', 0)} |" for r, d in rounds]
+        L += ['', '| Target | Rodada | Versão aprovada | Decisão | Proveniência | Portão de checks |', '|---|---|---|---|---|---|']
+        L += [f"| `{g['target_id']}` | `{g['review_scope']}` | v{g['editorial_version']} | {g['decision']} | {g['provenance_items']} item(ns) | "
+              f"{g['gate']} |" for g in ra['gate']]
+        L += ['', f"Versões anteriores preservadas como RETIRED / CHANGES_REQUESTED: {len(ra['retired_versions'])} (v1 dos ajustados).",
+              f"Acervo HUMAN_APPROVED_T1: {tot['global_before']} antes → **{tot['global_after']}** depois (+{tot['batch06_new_approved']} do lote; "
+              f"os {tot['batch06_reused_pilots_already_approved']} pilotos reutilizados não são contados de novo).",
+              ('Novos pendentes do lote: **0**. Todas as filas de revisão humana foram concluídas.' if closed else
+               f"Novos pendentes do lote: **{pending}** ({_counts({q: n for q, n in doc['counts'].items() if n})})."), '']
+    else:
+        L += ['- nenhuma rodada de revisão humana registrada', '']
     L += ['## Motivos dos D pendentes', '']
-    L += [f"- {k}: {v}" for k, v in doc['d_reasons'].items()]
-    L += [''] + [f"- `{x['target_id']}` — {'; '.join(x['legal_reasons']) or x['reason']}" for x in rows if x['queue'] == 'D_FULL_HUMAN_REVIEW']
+    d_now = [x for x in rows if x['queue'] == 'D_FULL_HUMAN_REVIEW']
+    if d_now:
+        L += [f"- {k}: {v}" for k, v in doc['d_reasons'].items()]
+        L += [''] + [f"- `{x['target_id']}` — {'; '.join(x['legal_reasons']) or x['reason']}" for x in d_now]
+    else:
+        L += ['- Nenhum item D permanece pendente (fila D encerrada).']
     L += ['', '## Achados que ainda pedem revisão (REVIEW_REQUIRED)', '']
     L += [f"- {k}: {v}" for k, v in doc['finding_counts'].items()] or ['- nenhum']
     L += ['', '## Falsos positivos corrigidos por regra geral (validator v3)', '']
-    L += [f"- {k}: {v} alerta(s) rebaixado(s) para INFO" for k, v in doc['refined_false_positive_counts'].items()] or ['- nenhum']
+    L += [f"- {k}: {v} alerta(s) rebaixado(s) para INFO" for k, v in doc['refined_false_positive_counts'].items()] or \
+        [f"- {'nenhum entre os itens pendentes' if rows else 'nenhum item pendente'}"]
     L += ['- "incentivo(s)" como substantivo do próprio texto ou como matéria da lei não é teleologia; "todos os"/"só pode" que reproduzem '
           'quórum/condição explícitos não são universalização; "automaticamente" expresso no artigo não é consequência inventada.',
           '- Rótulo truncado do fato externo ("Lei Complementar nº 7") passa a mostrar a identificação inteira; fato só na camada externa '
           'vai para C (o núcleo T1 não depende dele).', '',
-          '## Correções editoriais desta rodada (ROUND_0B)', '',
+          '## Correções editoriais da recalibração (ROUND_0B)', '',
           f"{len(rec['edits'])} edições em {len(rec['targets'])} explicações: " + ', '.join(f'{k} {v}' for k, v in sorted(rec['counts'].items()))
           + ' (antes/depois em `RECALIBRATION_EDITORIAL_LOG.json`).', '',
-          '## Volume para o humano', '', '| Métrica | Caracteres |', '|---|---|',
-          f"| Rascunhos (5 seções + glossário) | {_n(m['total_draft_chars'])} |",
-          f"| Modelo antigo (pacote completo de todos os itens) | {_n(m['old_model_full_package_chars'])} |",
-          f"| Checkpoint (pacotes apresentados, D=89) | {_n(m['checkpoint_presented_chars'])} |",
-          f"| **Agora (pacotes apresentados)** | **{_n(m['presented_chars'])}** |"]
-    L += [f"| — {k} | {_n(v)} |" for k, v in m['presented_by_file'].items()]
-    L += [f"| Redução vs. modelo antigo | {_n(m['reduction_abs'])} ({m['reduction_pct']}%) |",
-          f"| Redução vs. checkpoint | {_n(m['checkpoint_presented_chars'] - m['presented_chars'])} "
-          f"({round(100 * (1 - m['presented_chars'] / m['checkpoint_presented_chars']), 1)}%) |", '',
-          f"Pacote D: {doc['d_full_package']} (limite do diagnóstico: {int(BP.D_DIAGNOSTIC_THRESHOLD * 100)}% em D).", '',
+          '## Volume para o humano', '', '| Métrica | Caracteres |', '|---|---|']
+    if rows:
+        L += [f"| Rascunhos (5 seções + glossário) | {_n(m['total_draft_chars'])} |",
+              f"| Modelo antigo (pacote completo de todos os itens) | {_n(m['old_model_full_package_chars'])} |",
+              f"| Checkpoint (pacotes apresentados, D={hd['items']}) | {_n(m['checkpoint_presented_chars'])} |",
+              f"| **Agora (pacotes apresentados)** | **{_n(m['presented_chars'])}** |"]
+        L += [f"| — {k} | {_n(v)} |" for k, v in m['presented_by_file'].items()]
+        L += [f"| Redução vs. modelo antigo | {_reduction(m)} |",
+              f"| Redução vs. checkpoint | {_n(m['checkpoint_presented_chars'] - m['presented_chars'])} "
+              f"({round(100 * (1 - m['presented_chars'] / m['checkpoint_presented_chars']), 1)}%) |", '']
+    else:
+        L += ['| Itens pendentes | 0 |', '| Conteúdo pendente para revisão humana (5 seções + glossário) | 0 |',
+              f"| Pacotes atuais (só cabeçalhos de filas vazias, mantidos por contrato) | {_n(m['presented_chars'])} |"]
+        L += [f"| — {k} | {_n(v)} |" for k, v in m['presented_by_file'].items()]
+        L += ['| Redução vs. modelo antigo | N/A — não existem mais itens pendentes |',
+              '| Redução vs. checkpoint | N/A — não existem mais itens pendentes |', '']
+    snaps = []
+    for x in (first, last):
+        if x and x[1]['rows'] and x[0] not in [y[0] for y in snaps]:
+            snaps.append(x)
+    if snaps:
+        hm = [d['metrics'] for _, d in snaps]
+        L += ['Volume histórico (métricas registradas nos snapshots versionados que ainda tinham itens pendentes; não recalculadas):', '',
+              '| Métrica | ' + ' | '.join(f"`{n}` ({len(d['rows'])} pendentes)" for n, d in snaps) + ' |', '|---|' + '---|' * len(snaps),
+              f"| Rascunhos (5 seções + glossário) | {' | '.join(_n(x['total_draft_chars']) for x in hm)} |",
+              f"| Modelo antigo (pacote completo dos pendentes) | {' | '.join(_n(x['old_model_full_package_chars']) for x in hm)} |",
+              f"| Pacotes apresentados | {' | '.join(_n(x['presented_chars']) for x in hm)} |",
+              f"| Redução vs. modelo antigo | {' | '.join(_reduction(x) for x in hm)} |",
+              f"| Checkpoint pré-recalibração (pacotes apresentados, D={hd['items']}) | {' | '.join(_n(x['checkpoint_presented_chars']) for x in hm)} |",
+              '']
+    n_d = doc['counts']['D_FULL_HUMAN_REVIEW']
+    L += [('Artefato D: gerado, sem itens pendentes (arquivo mantido por contrato determinístico).' if doc['d_full_package'].startswith('GERADO')
+           and not n_d else f"Pacote D: {doc['d_full_package']} (limite do diagnóstico: {int(BP.D_DIAGNOSTIC_THRESHOLD * 100)}% em D)."), '',
           '## Dependências externas', '']
     L += [f"- `{x['target_id']}`: {', '.join(x['external_dependency'])}" + (f" · resolver {x['external_resolution']['status']} via "
                                                                              f"{x['external_resolution']['via']}" if x.get('external_resolution') else '')
@@ -307,8 +418,12 @@ def scale_report(doc, sel, c, pre):
 def manifest(bd, doc, sel):
     root = HERE.parent
     files = {n: sha(bd / n) for n in INPUTS + GENERATED if (bd / n).is_file() and n != 'BATCH06_MANIFEST.json'}
+    tot = doc.get('approval_totals') or {}
+    pend = tot.get('batch06_new_pending', len(doc['rows']))
+    status = (f"CLOSED: revisao humana concluida; {tot.get('batch06_new_approved', 0)} HUMAN_APPROVED_T1 novos; 0 pendentes" if not pend else
+              f"IN_HUMAN_REVIEW: {tot.get('batch06_new_approved', 0)} HUMAN_APPROVED_T1 novos; {pend} pendentes")
     _json(bd / 'BATCH06_MANIFEST.json', dict(
-        schema_version=2, batch_id=doc['batch_id'], as_of=doc['as_of'], status='WIP_CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado; triagem recalibrada',
+        schema_version=2, batch_id=doc['batch_id'], as_of=doc['as_of'], status=status,
         builder='ENTENDA_ENGINE/build_entenda_batch06_candidate.py', validator=doc['validator'],
         selection=dict(targets_evaluated=sel['summary']['targets_evaluated'], current=sel['summary']['targets_current'],
                        selected=sel['summary']['selected'], new=sel['summary']['new_explanations'], reused=sel['summary']['reused_from_pilot'],

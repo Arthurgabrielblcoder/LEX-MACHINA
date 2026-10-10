@@ -800,7 +800,22 @@ class Batch06(unittest.TestCase):
         old_d = {t for t, v in load('PRE_RECALIBRATION_MANIFEST.json')['queues_by_target'].items() if v['queue'] == 'D_FULL_HUMAN_REVIEW'}
         self.assertEqual(len(old_d), 89)
         self.assertEqual(old_d - set(APPROVED), set())                    # os 89 D antigos foram todos decididos: D, C, B e A1-A3 (A3: 10)
-        self.assertEqual((m['previous_D'], m['previous_D_now'], m['previous_D_migrated']), (0, {}, 0))   # nada resta a migrar
+        self.assertEqual((m['previous_D'], m['previous_D_now'], m['previous_D_migrated']), (0, {}, 0))   # migration = so pendentes atuais
+        h = self.tri['triage_history']                                   # historico: snapshot versionado, nunca a triagem atual vazia
+        snap = load('BATCH06_TRIAGE_PRE_ROUND_D.json')
+        self.assertEqual(h['source'], 'BATCH06_TRIAGE_PRE_ROUND_D.json')
+        self.assertEqual((h['pending_items'], h['counts'], h['legal_risk_counts'], h['complexity_counts'], h['jurisprudence_counts']),
+                         (93, snap['counts'], snap['legal_risk_counts'], snap['complexity_counts'], snap['jurisprudence_counts']))
+        hd = h['checkpoint_d']
+        moved = {q: sum(1 for t in old_d if self.pre_tri[t]['queue'] == q) for q in BP.QUEUES}
+        self.assertEqual(hd['items'], len(old_d))
+        self.assertEqual(hd['left_d'], 78)
+        self.assertEqual(hd['recalibrated_queue'], {q: n for q, n in moved.items() if n})
+        self.assertEqual(hd['recalibrated_queue'], {'A_CLEAN_LOW': 38, 'B_CLEAN_MEDIUM': 27, 'C_QUICK_REVIEW': 13, 'D_FULL_HUMAN_REVIEW': 11})
+        self.assertEqual(hd['final_review_status'], {'HUMAN_APPROVED_T1': 89})
+        self.assertEqual(sum(hd['final_decision'].values()), 89)
+        self.assertEqual(sum(hd['decided_by_round'].values()), 89)
+        self.assertEqual(h['checkpoint']['counts'], {'A_CLEAN_LOW': 1, 'C_QUICK_REVIEW': 3, 'D_FULL_HUMAN_REVIEW': 89})
 
     def test_volume_reduction_measured(self):
         m = self.tri['metrics']
@@ -822,6 +837,78 @@ class Batch06(unittest.TestCase):
         open_ = {r['target_id'] for r in self.chk['rows'] if r['unresolved']}
         for t in open_:
             self.assertIn(self.rows[t]['queue'], ('C_QUICK_REVIEW', 'D_FULL_HUMAN_REVIEW'), t)
+
+    # ------------------------------------------------------------ fechamento final do Batch06 (apresentação do estado encerrado)
+
+    def test_closure_scale_report_final_state(self):
+        rep = (BD / 'BATCH06_SCALE_REPORT.md').read_text(encoding='utf-8')
+        for bad in ('WIP: nenhum ENTENDA', 'WIP', 'nenhum item aprovado', 'A, B e C não foram decididos', 'Rodada D (revisão',
+                    'Correções editoriais desta rodada', 'Pacote D: GERADO', 'Migração dos 0 D', 'Risco no checkpoint: .', '| Papéis das novas |  |',
+                    'Jurisprudência:  ('):
+            self.assertNotIn(bad, rep, bad)
+        self.assertIsNone(re.search(r'\(-\d', rep))                      # nenhuma reducao percentual negativa
+        self.assertIsNone(re.search(r'\|  +\|', rep))                    # nenhuma celula vazia (valor nao calculado)
+        for good in ('**FECHADO: revisão jurídica humana concluída', '93/93 aprovadas após revisão humana', '289 antes → **382** depois',
+                     '+93 do lote', 'os 3 pilotos reutilizados não são contados de novo', 'Novos pendentes do lote: **0**',
+                     'Todas as filas de revisão humana foram concluídas', 'Revisão jurídica humana consolidada (BATCH06)', '8 rodadas componentes',
+                     '19 aprovados sem alteração jurídica · 74 ajustados e aprovados · 0 rejeitados',
+                     'Versões anteriores preservadas como RETIRED / CHANGES_REQUESTED: 74', 'Nenhum item D permanece pendente',
+                     'Correções editoriais da recalibração (ROUND_0B)', 'Artefato D: gerado, sem itens pendentes', 'Histórico da triagem',
+                     '**Migração dos 89 D antigos**', 'Destino final dos 89 D antigos: HUMAN_APPROVED_T1 89',
+                     '| Papéis das novas | BLOCK 25, DEVICE 25, ITEM 10, OVERVIEW 33 |'):
+            self.assertIn(good, rep, good)
+        for scope in SCOPE.values():
+            self.assertIn(f'`{scope}`', rep)
+        for q in BP.QUEUES:
+            self.assertEqual(self.tri['counts'][q], 0)
+            self.assertIn(f'| {q} | 0 |', rep)
+        man = load('BATCH06_MANIFEST.json')
+        self.assertEqual(man['status'], 'CLOSED: revisao humana concluida; 93 HUMAN_APPROVED_T1 novos; 0 pendentes')
+        self.assertEqual(self.tri['d_full_package'], 'GERADO_SEM_ITENS_PENDENTES')
+        tot = self.tri['approval_totals']
+        self.assertEqual((tot['global_before'], tot['global_after'], tot['batch06_new_approved'], tot['batch06_new_pending']), (289, 382, 93, 0))
+
+    def test_closure_empty_queue_shells(self):
+        shells = {n: (BD / n).read_text(encoding='utf-8') for n in ('BATCH06_COMPACT_CLEAN_REVIEW.md', 'BATCH06_QUICK_REVIEW.md',
+                                                                    'BATCH06_FULL_HUMAN_REVIEW.md', 'BATCH06_HARD_FAIL_REPORT.md')}
+        self.assertIn('filas A e B encerradas: nenhuma revisão pendente nas filas A e B', shells['BATCH06_COMPACT_CLEAN_REVIEW.md'])
+        self.assertIn('fila C encerrada: nenhum item pendente', shells['BATCH06_QUICK_REVIEW.md'])
+        self.assertIn('fila D encerrada: nenhum item pendente', shells['BATCH06_FULL_HUMAN_REVIEW.md'])
+        self.assertIn('fila E encerrada: nenhum item pendente com HARD_FAIL', shells['BATCH06_HARD_FAIL_REPORT.md'])
+        for name, text in shells.items():
+            for bad in ('nenhum item aprovado', 'nenhum aprovado', '## Índice'):
+                self.assertNotIn(bad, text, name)
+
+    def test_closure_volume_metrics_without_pending(self):
+        m = self.tri['metrics']
+        self.assertEqual((m['pending_items'], m['total_draft_chars'], m['old_model_full_package_chars']), (0, 0, 0))
+        self.assertIsNone(m['reduction_abs'])
+        self.assertIsNone(m['reduction_pct'])
+        rep = (BD / 'BATCH06_SCALE_REPORT.md').read_text(encoding='utf-8')
+        self.assertEqual(rep.count('N/A — não existem mais itens pendentes'), 2)
+        for snap in ('BATCH06_TRIAGE_PRE_ROUND_D.json', 'BATCH06_TRIAGE_PRE_ROUND_A3.json'):   # comparacao historica com fonte declarada
+            hm = load(snap)['metrics']
+            self.assertIn(f"`{snap}` ({len(load(snap)['rows'])} pendentes)", rep)
+            self.assertIn(B._n(hm['presented_chars']), rep)
+            self.assertGreater(hm['reduction_pct'], 0)
+
+    def test_closure_did_not_change_t1_decisions_or_resolutions(self):
+        base = '8b3ec1e0eb733847b65487e3473023b94cbaf7c3'                 # checkpoint de partida do fechamento (rodada A3 aplicada)
+        p6 = 'ENTENDA_ENGINE/derived/production_batch_06/'
+        names = ['CF88_BATCH_06.entenda.jsonl', 'BATCH_06_DRAFTS.json'] + [r['decisions'] for r in self.spec['round_approvals']]
+        for n in names:
+            old = subprocess.run(['git', 'show', f'{base}:{p6}{n}'], cwd=ROOT, capture_output=True, check=True).stdout
+            self.assertEqual(old.replace(b'\r\n', b'\n'), (BD / n).read_bytes().replace(b'\r\n', b'\n'), n)
+        old_inp = json.loads(subprocess.run(['git', 'show', f'{base}:{p6}EDITORIAL_REVIEW_INPUT.json'], cwd=ROOT, capture_output=True,
+                                            check=True).stdout.decode('utf-8'))
+        self.assertEqual(old_inp['resolutions'], load('EDITORIAL_REVIEW_INPUT.json')['resolutions'])
+        a3 = load('ROUND_A3_HUMAN_REVIEW_DECISIONS.json')
+        self.assertEqual([x['revalidation'] for x in a3['resolutions_reviewed']], ['B26_RESOLUTION_REVALIDATION: VALID'])
+        self.assertEqual(a3['pending_revalidation'], [])
+        p2 = self.by['CF88:ART.74:PAR.2']
+        self.assertEqual((p2['review_status'], p2['editorial_version']), ('HUMAN_APPROVED_T1', 2))
+        self.assertIn('na forma da lei', p2['content']['o_que_diz'])
+        self.assertIn('disciplina legal aplicável', p2['content']['o_que_significa'])
 
     # ------------------------------------------------------------ frozen baseline untouched
 

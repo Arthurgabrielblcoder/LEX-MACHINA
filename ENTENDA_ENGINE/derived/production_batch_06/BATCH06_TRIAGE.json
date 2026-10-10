@@ -84,26 +84,28 @@
   "previous_D": 0,
   "previous_D_now": {},
   "previous_D_migrated": 0,
-  "previous_risk_counts": {}
+  "previous_risk_counts": {},
+  "scope": "itens pendentes da triagem atual (o historico da triagem esta em triage_history)"
  },
  "d_reasons": {},
  "finding_counts": {},
  "refined_false_positive_counts": {},
  "metrics": {
   "total_draft_chars": 0,
-  "old_model_full_package_chars": 53,
-  "presented_chars": 893,
+  "old_model_full_package_chars": 0,
+  "presented_chars": 740,
   "presented_by_file": {
-   "BATCH06_COMPACT_CLEAN_REVIEW.md": 386,
-   "BATCH06_FULL_HUMAN_REVIEW.md": 218,
-   "BATCH06_HARD_FAIL_REPORT.md": 119,
-   "BATCH06_QUICK_REVIEW.md": 170
+   "BATCH06_COMPACT_CLEAN_REVIEW.md": 295,
+   "BATCH06_FULL_HUMAN_REVIEW.md": 152,
+   "BATCH06_HARD_FAIL_REPORT.md": 150,
+   "BATCH06_QUICK_REVIEW.md": 143
   },
-  "reduction_abs": -840,
-  "reduction_pct": -1584.9,
+  "pending_items": 0,
+  "reduction_abs": null,
+  "reduction_pct": null,
   "checkpoint_presented_chars": 265430
  },
- "d_full_package": "GERADO",
+ "d_full_package": "GERADO_SEM_ITENS_PENDENTES",
  "micro_adjustments": {
   "applied": 0,
   "eligible": 0,
@@ -1441,6 +1443,78 @@
   "batch06_new_pending": 0,
   "batch06_reused_pilots_already_approved": 3,
   "note": "pilotos reutilizados ja estavam no acervo aprovado e nao sao contados de novo"
+ },
+ "triage_history": {
+  "source": "BATCH06_TRIAGE_PRE_ROUND_D.json",
+  "pending_items": 93,
+  "counts": {
+   "A_CLEAN_LOW": 42,
+   "B_CLEAN_MEDIUM": 27,
+   "C_QUICK_REVIEW": 13,
+   "D_FULL_HUMAN_REVIEW": 11,
+   "E_HARD_FAIL": 0
+  },
+  "legal_risk_counts": {
+   "LOW": 46,
+   "MEDIUM": 36,
+   "HIGH": 11
+  },
+  "complexity_counts": {
+   "STRUCTURED": 59,
+   "EXTERNAL": 29,
+   "SIMPLE": 5
+  },
+  "jurisprudence_counts": {
+   "NONE": 72,
+   "CONTEXT_ONLY": 15,
+   "REQUIRED_FOR_CORRECTNESS": 6
+  },
+  "d_reasons": {
+   "CONSTITUTIONAL_AMBIGUITY": 1,
+   "INTERPRETIVE_CONTROVERSY": 2,
+   "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS": 6,
+   "SANCTION_WITH_INTERPRETATION": 4
+  },
+  "checkpoint": {
+   "source": "PRE_RECALIBRATION_MANIFEST.json",
+   "counts": {
+    "A_CLEAN_LOW": 1,
+    "C_QUICK_REVIEW": 3,
+    "D_FULL_HUMAN_REVIEW": 89
+   },
+   "risk_counts": {
+    "HIGH": 89,
+    "LOW": 3,
+    "MEDIUM": 1
+   }
+  },
+  "checkpoint_d": {
+   "items": 89,
+   "left_d": 78,
+   "recalibrated_queue": {
+    "A_CLEAN_LOW": 38,
+    "B_CLEAN_MEDIUM": 27,
+    "C_QUICK_REVIEW": 13,
+    "D_FULL_HUMAN_REVIEW": 11
+   },
+   "final_review_status": {
+    "HUMAN_APPROVED_T1": 89
+   },
+   "final_decision": {
+    "APPROVED": 18,
+    "APPROVED_AFTER_ADJUSTMENT": 71
+   },
+   "decided_by_round": {
+    "CF88_BATCH06_TRIAGE_QUEUE_D": 11,
+    "CF88_BATCH06_TRIAGE_QUEUE_C": 13,
+    "CF88_BATCH06_TRIAGE_QUEUE_B_PART1": 9,
+    "CF88_BATCH06_TRIAGE_QUEUE_B_PART2": 9,
+    "CF88_BATCH06_TRIAGE_QUEUE_B_PART3": 9,
+    "CF88_BATCH06_TRIAGE_QUEUE_A_PART1": 14,
+    "CF88_BATCH06_TRIAGE_QUEUE_A_PART2": 14,
+    "CF88_BATCH06_TRIAGE_QUEUE_A_PART3": 10
+   }
+  }
  },
  "text_source": {
   "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt": {
