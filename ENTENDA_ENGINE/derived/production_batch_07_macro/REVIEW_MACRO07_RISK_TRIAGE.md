@@ -2,8 +2,8 @@
 
 Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e nenhuma explicação foi aprovada: todas seguem `PENDING_HUMAN_REVIEW`. `READY_FOR_EDITORIAL_REVIEW` significa apenas que as checagens automáticas foram resolvidas pelo editor e que a explicação pode ir para a revisão humana.
 
-- Explicações: 249 · risco LOW 143 · MEDIUM 85 · HIGH 21
-- Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 39
+- Explicações: 249 · risco LOW 144 · MEDIUM 84 · HIGH 21
+- Prontas para revisão editorial: 249 · aprovadas (HUMAN_APPROVED_T1): 69
 - Achados: DUPLICATION 30, TRANSITION_IN_CORE 1 · não resolvidos: 0
 
 ## Risco HIGH
@@ -193,107 +193,107 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 97 — Cláusula de reserva de plenário
 
-- `CF88:ART.97` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.97` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: As hipóteses em que o órgão fracionário pode deixar de submeter a questão ao plenário ou ao órgão especial são tema da camada JURISPRUDÊNCIA
 
 ### Art. 98 — Juizados especiais e justiça de paz
 
-- `CF88:ART.98` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.98` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada
 
 ### Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência
 
-- `CF88:ART.100:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.100:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A forma de verificação da idade e dos demais requisitos da superpreferência é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 100, §§ 6º e 7º — Sequestro de verbas e responsabilidade do Presidente do Tribunal
 
-- `CF88:ART.100:PAR.6` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.100:PAR.6` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crime
 
 ### Art. 102 — Competências do Supremo Tribunal Federal
 
-- `CF88:ART.102` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.102` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes; JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele
 
 ### Art. 102, inciso I — Competência originária do Supremo
 
-- `CF88:ART.102:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.102:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance do foro por prerrogativa de função e o momento em que ele se aplica são temas da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: crimes
 
 ### Art. 103 — Quem pode propor as ações de controle
 
-- `CF88:ART.103` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.103` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O requisito de pertinência temática para certos legitimados é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
 
-- `CF88:ART.103:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA.
+- `CF88:ART.103:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 103, § 3º): ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva d
 
 ### Art. 103-A — Enunciado com efeito vinculante do Supremo
 
-- `CF88:ART.103-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.103-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ; SENSITIVE_THEME: cassa; CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate
 
 ### Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
 
-- `CF88:ART.103-A:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.103-A:PAR.3` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: cassa
 
 ### Art. 103-B — Conselho Nacional de Justiça
 
-- `CF88:ART.103-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.103-B` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanções
 - DUPLICATION (o_que_diz: CF88:ART.103-B x CF88:ART.130-A sim=0.38) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça
 
-- `CF88:ART.103-B:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.103-B:PAR.4` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: sanções
 - DUPLICATION (o_que_significa: CF88:ART.103-B:PAR.4 x CF88:ART.130-A:PAR.2 sim=0.413) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 105 — Competências do Superior Tribunal de Justiça
 
-- `CF88:ART.105` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.105` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 - DUPLICATION (exemplo_pratico: CF88:ART.105 x CF88:ART.108 sim=0.381) → Paralelismo estrutural (macro 07): os artigos comparados usam a mesma formula constitucional (lista de orgaos, composicao de tribunal ou cabimento de recurso) e o resumo acompanha essa formula; conteudo proprio conferido, sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 105, inciso III — Recurso especial
 
-- `CF88:ART.105:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.105:INC.III` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O cabimento de recurso especial contra decisões de turmas recursais de juizados é tema da camada JURISPRUDÊNCIA.
 - DUPLICATION (o_que_diz: CF88:ART.102:INC.III x CF88:ART.105:INC.III sim=0.435) → Paralelismo estrutural (macro 07): os artigos comparados usam a mesma formula constitucional (lista de orgaos, composicao de tribunal ou cabimento de recurso) e o resumo acompanha essa formula; conteudo proprio conferido, sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 108 — Competências dos Tribunais Regionais Federais
 
-- `CF88:ART.108` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.108` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 - DUPLICATION (exemplo_pratico: CF88:ART.105 x CF88:ART.108 sim=0.381) → Paralelismo estrutural (macro 07): os artigos comparados usam a mesma formula constitucional (lista de orgaos, composicao de tribunal ou cabimento de recurso) e o resumo acompanha essa formula; conteudo proprio conferido, sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
 ### Art. 109 — Competências dos juízes federais
 
-- `CF88:ART.109` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.109` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 
 ### Art. 109, inciso I — Causas cíveis de interesse da União
 
-- `CF88:ART.109:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.109:INC.I` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A competência para causas de sociedades de economia mista e de conselhos de fiscalização profissional é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 109, inciso IV — Crimes de competência federal
 
-- `CF88:ART.109:INC.IV` · ITEM · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.109:INC.IV` · ITEM · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 
 ### Art. 109, §§ 1º e 2º — Onde propor as ações da União
 
-- `CF88:ART.109:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.109:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A aplicação do § 2º a autarquias federais é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos
 
-- `CF88:ART.109:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.109:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os requisitos aplicados para deferir o deslocamento de competência são tema da camada JURISPRUDÊNCIA.
 
 ### Art. 114, inciso I — Ações oriundas da relação de trabalho
@@ -303,52 +303,47 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 
 ### Art. 124 — Competência da Justiça Militar
 
-- `CF88:ART.124` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.124` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.; SENSITIVE_THEME: crimes
 
 ### Art. 125 — Justiça dos Estados
 
-- `CF88:ART.125` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.125` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: crimes
 
 ### Art. 125, § 2º — Controle de constitucionalidade estadual
 
-- `CF88:ART.125:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.125:PAR.2` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA.
 
 ### Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
 
-- `CF88:ART.125:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.125:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUD; SENSITIVE_THEME: crimes
 
 ### Art. 128 — Estrutura do Ministério Público
 
-- `CF88:ART.128` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.128` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: perder o cargo
-
-### Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
-
-- `CF88:ART.128:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são de
 
 ### Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público
 
-- `CF88:ART.128:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.128:PAR.5` · DEVICE · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: perder o cargo
 
 ### Art. 129 — Funções institucionais do Ministério Público
 
-- `CF88:ART.129` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+- `CF88:ART.129` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 129): Tema 184 (RE 593.727, 2015): o Ministério Público dispõe de compe
 
 ### Art. 130 — Ministério Público junto aos Tribunais de Contas
 
-- `CF88:ART.130` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
-- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA.
+- `CF88:ART.130` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
+- Motivos do risco: JURISPRUDENCE_CONTEXT_ONLY: Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 130): ADI 789 (citada na ADI 3.315, 2008), ADI 3.804 (2021) e ADI 4.427
 
 ### Art. 130-A — Conselho Nacional do Ministério Público
 
-- `CF88:ART.130-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- `CF88:ART.130-A` · OVERVIEW · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: SENSITIVE_THEME: sanções
 - DUPLICATION (o_que_diz: CF88:ART.103-B x CF88:ART.130-A sim=0.38) → Paralelismo estrutural (macro 07): a Constituicao repete para o Ministerio Publico regras quase identicas as do Judiciario (art. 99 x art. 127; art. 103-B x art. 130-A); a explicacao do Ministerio Publico remete a do Judiciario e destaca o que e proprio. Sem frase compartilhada de 8+ palavras. Resolucao do drafter, sujeita a revisao humana.
 
@@ -871,6 +866,11 @@ Data de referência: 2026-10-05. Nenhum texto foi alterado por esta triagem e ne
 ### Art. 128, §§ 1º e 2º — Procurador-Geral da República
 
 - `CF88:ART.128:PAR.1` · BLOCK · READY_FOR_EDITORIAL_REVIEW · PENDING_HUMAN_REVIEW
+- Motivos do risco: 
+
+### Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
+
+- `CF88:ART.128:PAR.3` · BLOCK · READY_FOR_EDITORIAL_REVIEW · HUMAN_APPROVED_T1
 - Motivos do risco: 
 
 ### Art. 129, inciso I — Ação penal pública

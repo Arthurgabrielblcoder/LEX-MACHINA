@@ -24,23 +24,23 @@
  },
  "counts": {
   "A_CLEAN_LOW": 143,
-  "B_CLEAN_MEDIUM": 37,
+  "B_CLEAN_MEDIUM": 67,
   "C_QUICK_REVIEW": 0,
   "D_FULL_HUMAN_REVIEW": 0,
   "E_HARD_FAIL": 0
  },
  "legal_risk_counts": {
   "LOW": 143,
-  "MEDIUM": 37
+  "MEDIUM": 67
  },
  "complexity_counts": {
-  "STRUCTURED": 116,
+  "STRUCTURED": 126,
   "SIMPLE": 10,
-  "EXTERNAL": 54
+  "EXTERNAL": 74
  },
  "jurisprudence_counts": {
-  "NONE": 171,
-  "CONTEXT_ONLY": 9
+  "NONE": 184,
+  "CONTEXT_ONLY": 26
  },
  "by_legal_risk": {
   "LOW": {
@@ -52,7 +52,7 @@
   },
   "MEDIUM": {
    "A_CLEAN_LOW": 0,
-   "B_CLEAN_MEDIUM": 37,
+   "B_CLEAN_MEDIUM": 67,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -75,14 +75,14 @@
   },
   "STRUCTURED": {
    "A_CLEAN_LOW": 103,
-   "B_CLEAN_MEDIUM": 13,
+   "B_CLEAN_MEDIUM": 23,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
   },
   "EXTERNAL": {
    "A_CLEAN_LOW": 31,
-   "B_CLEAN_MEDIUM": 23,
+   "B_CLEAN_MEDIUM": 43,
    "C_QUICK_REVIEW": 0,
    "D_FULL_HUMAN_REVIEW": 0,
    "E_HARD_FAIL": 0
@@ -5353,6 +5353,1331 @@
    "editorial_version": 1
   },
   {
+   "target_id": "CF88:ART.97",
+   "title": "Art. 97 — Cláusula de reserva de plenário",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: As hipóteses em que o órgão fracionário pode deixar de submeter a questão ao plenário ou ao órgão especial são tema da camada JURISPRUDÊNCIA"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.98",
+   "title": "Art. 98 — Juizados especiais e justiça de paz",
+   "role": "OVERVIEW",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.98:PAR.1: Vide ADIN 3392)",
+    "deadline: quatro anos",
+    "number_or_percentage: quatro",
+    "law_dependency: previstas em lei",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "overview com 6 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.1",
+   "title": "Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A forma de verificação da idade e dos demais requisitos da superpreferência é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "number_or_percentage: sessenta",
+    "exception: exceto",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "portadores de doença grave ou pessoas com deficiência",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [
+    {
+     "code": "NUMBER_FROM_OTHER_DEVICE",
+     "section": "exemplo_pratico",
+     "match": "70 anos",
+     "detail": "quantidade com a mesma unidade em outro dispositivo do escopo do lote (nao no dispositivo explicado)"
+    }
+   ],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.6",
+   "title": "Art. 100, §§ 6º e 7º — Sequestro de verbas e responsabilidade do Presidente do Tribunal",
+   "role": "BLOCK",
+   "sub_block": "A",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crime"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ou tentar frustrar a liquidação regular de precatórios",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.102",
+   "title": "Art. 102 — Competências do Supremo Tribunal Federal",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.102:PAR.2: Vide ADIN 3392)",
+    "camada externa: nota externa",
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "exception: ressalvado",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (5 anotacao(oes))",
+    "remissao: arts. 52",
+    "overview com 30 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, JUDICIAL_REVIEW_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.102:INC.I",
+   "title": "Art. 102, inciso I — Competência originária do Supremo",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance do foro por prerrogativa de função e o momento em que ele se aplica são temas da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: ressalvado",
+    "law_dependency: regulament",
+    "remissao: arts. 52"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "ações contra o conselho nacional de justiça e",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a revisão criminal e a ação rescisória de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "LONG_EXPLANATION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103",
+   "title": "Art. 103 — Quem pode propor as ações de controle",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O requisito de pertinência temática para certos legitimados é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: trinta dias",
+    "number_or_percentage: trinta",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 14 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "confederação sindical ou entidade de classe de âmbito",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.1",
+   "title": "Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103-A",
+   "title": "Art. 103-A — Enunciado com efeito vinculante do Supremo",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME",
+    "CONTROVERSY_TERM_FROM_LEI_SECA"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ",
+    "SENSITIVE_THEME: cassa",
+    "CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "remissao externa anotada na fonte (ART.103-A:CAPUT: Vide Lei n. 11.417, de 2006)",
+    "camada externa: jurisprudencia",
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "overview com 5 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a interpretação e a eficácia de normas determinadas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, CONTROVERSY_TERM_FROM_LEI_SECA)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103-A:PAR.3",
+   "title": "Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: cassa"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: nota externa",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "outra seja proferida com ou sem a aplicação",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103-B",
+   "title": "Art. 103-B — Conselho Nacional de Justiça",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: prazo",
+    "number_or_percentage: quinze",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (3 anotacao(oes))",
+    "remissao: arts. 37",
+    "overview com 32 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cidadãos de notável saber jurídico e reputação ilibada",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "title": "Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: prazo",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (1 anotacao(oes))",
+    "remissao: arts. 37"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "da competência do tribunal de contas da união",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.105",
+   "title": "Art. 105 — Competências do Superior Tribunal de Justiça",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: dois terços",
+    "number_or_percentage: dois",
+    "exception: ressalvada",
+    "law_dependency: regulament",
+    "redacao de emenda constitucional (6 anotacao(oes))",
+    "remissao: arts. 102, 156",
+    "overview com 32 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.105:INC.III",
+   "title": "Art. 105, inciso III — Recurso especial",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O cabimento de recurso especial contra decisões de turmas recursais de juizados é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.108",
+   "title": "Art. 108 — Competências dos Tribunais Regionais Federais",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.109",
+   "title": "Art. 109 — Competências dos juízes federais",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: exceto",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 19 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a bordo de navios ou aeronaves ressalvada a",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.109:INC.I",
+   "title": "Art. 109, inciso I — Causas cíveis de interesse da União",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A competência para causas de sociedades de economia mista e de conselhos de fiscalização profissional é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "exception: exceto"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.109:INC.IV",
+   "title": "Art. 109, inciso IV — Crimes de competência federal",
+   "role": "ITEM",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "exception: ressalvada"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "os crimes políticos e as infrações penais praticadas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "PARENT_REPETITION"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.1",
+   "title": "Art. 109, §§ 1º e 2º — Onde propor as ações da União",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A aplicação do § 2º a autarquias federais é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "as causas em que a união for autora",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.5",
+   "title": "Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Os requisitos aplicados para deferir o deslocamento de competência são tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "redacao de emenda constitucional (1 anotacao(oes))"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "de direitos humanos o procurador geral da república",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.124",
+   "title": "Art. 124 — Competência da Justiça Militar",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.",
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "law_dependency: lei disporá",
+    "overview com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "a organização o funcionamento e a competência da",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.125",
+   "title": "Art. 125 — Justiça dos Estados",
+   "role": "OVERVIEW",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "number_or_percentage: vinte",
+    "exception: ressalvada",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "overview com 9 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.2",
+   "title": "Art. 125, § 2º — Controle de constitucionalidade estadual",
+   "role": "DEVICE",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.3",
+   "title": "Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual",
+   "role": "BLOCK",
+   "sub_block": "B",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUD",
+    "SENSITIVE_THEME: crimes"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "number_or_percentage: vinte",
+    "exception: ressalvada",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "block com 3 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "crimes militares definidos em lei e as ações",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128",
+   "title": "Art. 128 — Estrutura do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: cinco anos",
+    "number_or_percentage: trinta",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (4 anotacao(oes))",
+    "remissao: arts. 37, 39, 95",
+    "overview com 25 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a organização as atribuições e o estatuto de",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "title": "Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal",
+   "role": "BLOCK",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são de"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "quorum: maioria",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "law_dependency: na forma da lei",
+    "block com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "title": "Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público",
+   "role": "DEVICE",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: perder o cargo"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "remissao: arts. 37, 39"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "title": "Art. 129 — Funções institucionais do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "deadline: três anos",
+    "number_or_percentage: três",
+    "exception: salvo",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 93",
+    "overview com 16 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "o inquérito civil e a ação civil pública",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "a legitimação do ministério público para as ações",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY",
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.130",
+   "title": "Art. 130 — Ministério Público junto aos Tribunais de Contas",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "legal_reasons": [
+    "JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA."
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "CONTEXT_ONLY",
+   "verification_complexity": "EXTERNAL",
+   "complexity_reasons": [
+    "camada externa: jurisprudencia",
+    "overview com 2 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [],
+   "info": [],
+   "lint": [
+    "JURISPRUDENCE_WORDING_IN_BODY"
+   ],
+   "editorial_checks": [],
+   "external_dependency": [
+    "JURISPRUDENCIA (contexto)"
+   ],
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "title": "Art. 130-A — Conselho Nacional do Ministério Público",
+   "role": "OVERVIEW",
+   "sub_block": "C",
+   "legal_risk": "MEDIUM",
+   "legal_rules": [
+    "SENSITIVE_THEME"
+   ],
+   "legal_reasons": [
+    "SENSITIVE_THEME: sanções"
+   ],
+   "legal_secondary": [],
+   "jurisprudence": "NONE",
+   "verification_complexity": "STRUCTURED",
+   "complexity_reasons": [
+    "quorum: maioria",
+    "deadline: dois anos",
+    "number_or_percentage: dois",
+    "law_dependency: na forma da lei",
+    "redacao de emenda constitucional (2 anotacao(oes))",
+    "remissao: arts. 37, 84",
+    "overview com 21 dispositivos"
+   ],
+   "queue": "B_CLEAN_MEDIUM",
+   "previous": null,
+   "detectors": [
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_diz",
+     "match": "cidadãos de notável saber jurídico e reputação ilibada",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    },
+    {
+     "code": "NEAR_COPY_MICROFIX",
+     "severity": "EDITORIAL_AUTO_FIX_ELIGIBLE",
+     "route": null,
+     "section": "o_que_significa",
+     "match": "sem prejuízo da competência dos tribunais de contas",
+     "sentence": "",
+     "detail": "politica A6 item 2"
+    }
+   ],
+   "info": [],
+   "lint": [
+    "NEAR_COPY_OF_OFFICIAL_TEXT",
+    "NEAR_COPY_OF_OFFICIAL_TEXT"
+   ],
+   "editorial_checks": [
+    "DUPLICATION:RESOLVED"
+   ],
+   "external_dependency": null,
+   "reason": "sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)",
+   "show_full_t1": false,
+   "review_status": "PENDING_HUMAN_REVIEW",
+   "editorial_version": 1
+  },
+  {
    "target_id": "CF88:ART.130-A:PAR.2",
    "title": "Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público",
    "role": "DEVICE",
@@ -6903,34 +8228,33 @@
   "UNIVERSAL_CLAIM": 2
  },
  "metrics": {
-  "total_draft_chars": 253050,
-  "old_model_full_package_chars": 540660,
-  "presented_chars": 157641,
+  "total_draft_chars": 300097,
+  "old_model_full_package_chars": 656879,
+  "presented_chars": 187368,
   "presented_by_file": {
-   "MACRO07_COMPACT_AB_REVIEW.md": 132266,
+   "MACRO07_COMPACT_AB_REVIEW.md": 157762,
    "MACRO07_FULL_D_REVIEW.md": 433,
    "MACRO07_HARD_FAIL_REPORT.md": 143,
-   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 24429,
+   "MACRO07_HUMAN_REVIEW_PRIORITY.md": 28660,
    "MACRO07_QUICK_C_REVIEW.md": 370
   },
-  "pending_items": 180,
-  "reduction_abs": 383019,
-  "reduction_pct": 70.8
+  "pending_items": 210,
+  "reduction_abs": 469511,
+  "reduction_pct": 71.5
  },
  "d_ratio": 0.0,
  "d_escalation_diagnostic": false,
  "micro_adjustments": {
   "applied": 0,
-  "eligible": 111,
+  "eligible": 131,
   "microauto_apply": false
  },
- "human_approved_t1_granted": 69,
+ "human_approved_t1_granted": 39,
  "round_approvals": {
   "review_scopes": [
    "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
    "CF88_MACRO07_TRIAGE_QUEUE_D_PART2",
-   "CF88_MACRO07_TRIAGE_QUEUE_B_PART1",
-   "CF88_MACRO07_TRIAGE_QUEUE_B_PART2"
+   "CF88_MACRO07_TRIAGE_QUEUE_B_PART1"
   ],
   "gate": [
    {
@@ -7169,34 +8493,6 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.97",
-    "explanation_id": "ENTENDA/CF88:ART.97/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.98",
-    "explanation_id": "ENTENDA/CF88:ART.98/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 1,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.100",
     "explanation_id": "ENTENDA/CF88:ART.100/BASE/2",
     "editorial_version": 2,
@@ -7213,20 +8509,6 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.100:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.100:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.100:PAR.5",
     "explanation_id": "ENTENDA/CF88:ART.100:PAR.5/BASE/2",
     "editorial_version": 2,
@@ -7234,20 +8516,6 @@
     "human_decision": "ADJUST_THEN_APPROVE",
     "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_D_PART1",
     "provenance_items": 5,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.100:PAR.6",
-    "explanation_id": "ENTENDA/CF88:ART.100:PAR.6/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
     "hard_fail": [],
     "review_required_open": [],
     "editorial_checks_open": 0,
@@ -7287,34 +8555,6 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.102",
-    "explanation_id": "ENTENDA/CF88:ART.102/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.102:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.102:INC.I/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.102:PAR.2",
     "explanation_id": "ENTENDA/CF88:ART.102:PAR.2/BASE/2",
     "editorial_version": 2,
@@ -7331,123 +8571,6 @@
     "gate": "PASS"
    },
    {
-    "target_id": "CF88:ART.103",
-    "explanation_id": "ENTENDA/CF88:ART.103/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.103:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.103:PAR.1/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE",
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.103-A",
-    "explanation_id": "ENTENDA/CF88:ART.103-A/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.103-A:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.103-A:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.103-B",
-    "explanation_id": "ENTENDA/CF88:ART.103-B/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.103-B:PAR.4",
-    "explanation_id": "ENTENDA/CF88:ART.103-B:PAR.4/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.105",
-    "explanation_id": "ENTENDA/CF88:ART.105/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.105:INC.III",
-    "explanation_id": "ENTENDA/CF88:ART.105:INC.III/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
     "target_id": "CF88:ART.105:PAR.2",
     "explanation_id": "ENTENDA/CF88:ART.105:PAR.2/BASE/2",
     "editorial_version": 2,
@@ -7461,90 +8584,6 @@
     "info": [
      "EXTERNAL_FACT_WITH_PROVENANCE"
     ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.108",
-    "explanation_id": "ENTENDA/CF88:ART.108/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.109",
-    "explanation_id": "ENTENDA/CF88:ART.109/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.109:INC.I",
-    "explanation_id": "ENTENDA/CF88:ART.109:INC.I/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.109:INC.IV",
-    "explanation_id": "ENTENDA/CF88:ART.109:INC.IV/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.109:PAR.1",
-    "explanation_id": "ENTENDA/CF88:ART.109:PAR.1/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.109:PAR.5",
-    "explanation_id": "ENTENDA/CF88:ART.109:PAR.5/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
     "gate": "PASS"
    },
    {
@@ -7609,152 +8648,6 @@
     "info": [
      "EXTERNAL_FACT_WITH_PROVENANCE"
     ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.124",
-    "explanation_id": "ENTENDA/CF88:ART.124/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.125",
-    "explanation_id": "ENTENDA/CF88:ART.125/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.125:PAR.2",
-    "explanation_id": "ENTENDA/CF88:ART.125:PAR.2/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.125:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.125:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.128",
-    "explanation_id": "ENTENDA/CF88:ART.128/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.128:PAR.3",
-    "explanation_id": "ENTENDA/CF88:ART.128:PAR.3/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.128:PAR.5",
-    "explanation_id": "ENTENDA/CF88:ART.128:PAR.5/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.129",
-    "explanation_id": "ENTENDA/CF88:ART.129/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 3,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE",
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.130",
-    "explanation_id": "ENTENDA/CF88:ART.130/BASE/2",
-    "editorial_version": 2,
-    "decision": "APPROVED_AFTER_ADJUSTMENT",
-    "human_decision": "ADJUST_THEN_APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 2,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [
-     "EXTERNAL_FACT_WITH_PROVENANCE",
-     "JURISPRUDENCE_CLAIM_WITH_PROVENANCE"
-    ],
-    "gate": "PASS"
-   },
-   {
-    "target_id": "CF88:ART.130-A",
-    "explanation_id": "ENTENDA/CF88:ART.130-A/BASE/1",
-    "editorial_version": 1,
-    "decision": "APPROVED",
-    "human_decision": "APPROVE",
-    "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
-    "provenance_items": 0,
-    "hard_fail": [],
-    "review_required_open": [],
-    "editorial_checks_open": 0,
-    "info": [],
     "gate": "PASS"
    },
    {
@@ -7952,28 +8845,20 @@
     "gate": "PASS"
    }
   ],
-  "approved": 69,
-  "approved_unchanged": 27,
-  "approved_after_adjustment": 42,
+  "approved": 39,
+  "approved_unchanged": 5,
+  "approved_after_adjustment": 34,
   "rejected": 0,
   "retired_versions": [
    "ENTENDA/CF88:ART.100/BASE/1",
-   "ENTENDA/CF88:ART.100:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.100:PAR.12/BASE/1",
    "ENTENDA/CF88:ART.100:PAR.5/BASE/1",
    "ENTENDA/CF88:ART.100:PAR.9/BASE/1",
    "ENTENDA/CF88:ART.102:PAR.2/BASE/1",
-   "ENTENDA/CF88:ART.103-A:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.103:PAR.1/BASE/1",
    "ENTENDA/CF88:ART.105:PAR.2/BASE/1",
    "ENTENDA/CF88:ART.114/BASE/1",
    "ENTENDA/CF88:ART.114:INC.I/BASE/1",
    "ENTENDA/CF88:ART.114:PAR.1/BASE/1",
-   "ENTENDA/CF88:ART.125:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.128/BASE/1",
-   "ENTENDA/CF88:ART.128:PAR.3/BASE/1",
-   "ENTENDA/CF88:ART.129/BASE/1",
-   "ENTENDA/CF88:ART.130/BASE/1",
    "ENTENDA/CF88:ART.142/BASE/1",
    "ENTENDA/CF88:ART.142:PAR.2/BASE/1",
    "ENTENDA/CF88:ART.153:PAR.3/BASE/1",
@@ -8003,9 +8888,9 @@
  },
  "approval_totals": {
   "global_before": 382,
-  "batch_new_approved": 69,
-  "global_after": 451,
-  "batch_new_pending": 180,
+  "batch_new_approved": 39,
+  "global_after": 421,
+  "batch_new_pending": 210,
   "note": "aprovados do corpus principal e dos corpora anteriores, por explanation_key"
  },
  "validator_limits": [
@@ -8114,7 +8999,7 @@
   "transition_without_evidence": [],
   "transition_evidence_unused": [],
   "judicial_review_unclassified": [],
-  "approved_by_recorded_round": 69,
+  "approved_by_recorded_round": 39,
   "status": "PASS"
  },
  "backlog": {
@@ -8125,6 +9010,6 @@
    },
    "hits": 12
   },
-  "items": 17
+  "items": 16
  }
 }

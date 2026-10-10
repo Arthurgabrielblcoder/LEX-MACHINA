@@ -691,5 +691,31 @@ class MacroBatch07HumanRoundB1(_HumanRoundChecks, unittest.TestCase):
         for k, v in prev.items():
             self.assertEqual(bl[k], v, k)
 
+class MacroBatch07HumanRoundB2(_HumanRoundChecks, unittest.TestCase):
+    """Segunda rodada da fila B do Macro07 (B16-B45), sob pré-autorização humana: 22 aprovações sem alteração e 8 ajustes; nenhum item retido."""
+    SCOPE = 'CF88_MACRO07_TRIAGE_QUEUE_B_PART2'
+    QUEUE = 'B_CLEAN_MEDIUM'
+
+    def test_counts(self):
+        self.assertEqual(self.dec['decision_counts'], dict(APPROVED=22, APPROVED_AFTER_ADJUSTMENT=8, REJECTED=0))
+        self.assertEqual(len(self.by), 30)
+
+    def test_legal_points_of_the_round(self):
+        b = self.body
+        self.assertNotIn('setenta', b('CF88:ART.100:PAR.1'))
+        self.assertIn('deixe de defender tese cuja inconstitucionalidade', b('CF88:ART.103:PAR.1'))
+        self.assertIn('esgotadas as vias administrativas', b('CF88:ART.103-A:PAR.3'))
+        self.assertIn('não é recurso', b('CF88:ART.103-A:PAR.3'))
+        self.assertIn('crimes dolosos contra a vida ficam com o júri', b('CF88:ART.125:PAR.3'))
+        self.assertIn('maioria absoluta do Senado', b('CF88:ART.128'))
+        self.assertIn('nos Estados e no Distrito Federal e Territórios', b('CF88:ART.128'))
+        self.assertIn('Presidente da República a nomeação do Procurador-Geral', b('CF88:ART.128:PAR.3'))
+        self.assertIn('investigações de natureza penal', b('CF88:ART.129'))
+        self.assertFalse([n for n in self.act['CF88:ART.129']['external_layer_notes'] if 'EXTERNAL_VERIFICATION_REQUIRED' in n])
+        self.assertIn('integra a estrutura do Tribunal de Contas', b('CF88:ART.130'))
+        for t in ('CF88:ART.98', 'CF88:ART.102'):
+            self.assertNotIn('3392', b(t))
+        self.assertIn('MB07-17', {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
+
 if __name__ == '__main__':
     unittest.main()

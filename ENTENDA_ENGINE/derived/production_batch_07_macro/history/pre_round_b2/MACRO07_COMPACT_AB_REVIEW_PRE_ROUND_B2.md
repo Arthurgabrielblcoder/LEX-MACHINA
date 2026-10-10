@@ -1,6 +1,6 @@
 # MACRO07 — REVISÃO COMPACTA (filas A e B)
 
-Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · 180 itens pendentes; aprovação só por revisão humana (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
+Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · 210 itens pendentes; aprovação só por revisão humana (AUTO_APPROVE_LOW/MEDIUM = OFF). Revisão humana obrigatória em formato compacto; T1 completo só sob pedido. Risco = LEGAL_RISK; complexidade = VERIFICATION_COMPLEXITY.
 
 ## A — CLEAN_LOW (143)
 
@@ -1577,7 +1577,337 @@ Lote `ENTENDA_CF_MACRO_BATCH_07` · 2026-10-05 · 180 itens pendentes; aprovaç�
 - Motivo da fila: LOW sem alerta
 - [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
-## B — CLEAN_MEDIUM (37)
+## B — CLEAN_MEDIUM (67)
+
+### `CF88:ART.97` — Art. 97 — Cláusula de reserva de plenário
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: As hipóteses em que o órgão fracionário pode deixar de…
+- Ponto jurídico: O art. 97 exige o voto da maioria absoluta dos membros do tribunal, ou dos membros do seu órgão especial, para que o tribunal reconheça que uma lei ou um ato normativo do poder público é…
+- Interpretação principal: É a chamada cláusula de reserva de plenário.
+- ATENÇÃO: O artigo se dirige aos tribunais e não trata da decisão do juiz de primeiro grau.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.98` — Art. 98 — Juizados especiais e justiça de paz
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º,…
+- Ponto jurídico: O art. 98 obriga os Estados e a União (esta, no Distrito Federal e nos Territórios) a criar juizados especiais, voltados a causas cíveis simples e a infrações penais leves (inciso I), e a justiça de…
+- Interpretação principal: O artigo cria dois instrumentos de Justiça mais próxima do cidadão.
+- ATENÇÃO: O juiz de paz exerce atribuições conciliatórias sem caráter jurisdicional: não profere sentenças.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JUDICIAL_REVIEW_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.100:PAR.1` — Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A forma de verificação da idade e dos demais requisitos da…
+- Ponto jurídico: O § 1º define os débitos de natureza alimentícia: os que decorrem de relação de trabalho ou previdenciária, mesmo de natureza tributária, inclusive a devolução de tributo cobrado indevidamente sobre…
+- Interpretação principal: Há três níveis na fila.
+- ATENÇÃO: Doença grave e deficiência são definidas na forma da lei.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: portadores de doença grave ou pessoas com…), NUMBER_FROM_OTHER_DEVICE(70 anos), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.100:PAR.6` — Art. 100, §§ 6º e 7º — Sequestro de verbas e responsabilidade do Presidente do Tribunal
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crime
+- Ponto jurídico: O § 6º determina que as verbas para precatórios sejam entregues diretamente ao Judiciário e que o Presidente do Tribunal que proferiu a decisão determine o pagamento integral.
+- Interpretação principal: O dinheiro dos precatórios não fica com o devedor: é repassado ao Judiciário, que controla os pagamentos.
+- ATENÇÃO: Fora das duas hipóteses do § 6º, o sequestro não é autorizado por este parágrafo.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ou tentar frustrar a liquidação regular de…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.102` — Art. 102 — Competências do Supremo Tribunal Federal
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: crimes; JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º,…
+- Ponto jurídico: O art. 102 atribui ao Supremo Tribunal Federal, como função principal, a guarda da Constituição.
+- Interpretação principal: O artigo mostra as três portas de entrada de um processo no Supremo.
+- ATENÇÃO: O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME, JUDICIAL_REVIEW_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.102:INC.I` — Art. 102, inciso I — Competência originária do Supremo
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance do foro por prerrogativa de função e o momento em…; SENSITIVE_THEME: crimes
+- Ponto jurídico: O inciso I lista as causas que o Supremo Tribunal Federal processa e julga originariamente.
+- Interpretação principal: As alíneas podem ser lidas em grupos.
+- ATENÇÃO: A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade de Ministro de Estado ou de Comandante militar for conexo com o do Presidente, o julgamento cabe ao Senado.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: ações contra o conselho nacional de justiça e), NEAR_COPY_MICROFIX(o_que_significa: a revisão criminal e a ação rescisória de), lint JURISPRUDENCE_WORDING_IN_BODY, lint LONG_EXPLANATION
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103` — Art. 103 — Quem pode propor as ações de controle
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O requisito de pertinência temática para certos legitimados é…
+- Ponto jurídico: O art. 103 indica quem tem legitimidade para a ação direta de inconstitucionalidade e para a declaratória de constitucionalidade: o Presidente da República; a Mesa do Senado Federal; a Mesa da Câmara…
+- Interpretação principal: Essas ações não podem ser propostas por qualquer pessoa.
+- ATENÇÃO: O texto não diz se todos os legitimados podem questionar qualquer norma.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: confederação sindical ou entidade de classe de…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103:PAR.1` — Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O alcance do dever de defesa do Advogado-Geral da União é…
+- Ponto jurídico: O § 1º determina que o Procurador-Geral da República seja ouvido antes da decisão nas ações de inconstitucionalidade e, de modo geral, nos processos de competência do Supremo.
+- Interpretação principal: Os dois parágrafos colocam duas figuras diferentes no processo de controle.
+- ATENÇÃO: O § 3º fala em defesa do ato impugnado.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-A` — Art. 103-A — Enunciado com efeito vinculante do Supremo
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA…; SENSITIVE_THEME: cassa; CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate
+- Ponto jurídico: O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros um enunciado com efeito vinculante, depois de reiteradas decisões sobre matéria…
+- Interpretação principal: O artigo cria um instrumento para fixar, de forma obrigatória, a interpretação do Supremo sobre um tema constitucional já decidido muitas vezes.
+- ATENÇÃO: Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca ele aparece com o nome próprio que a Constituição lhe dá.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: a interpretação e a eficácia de normas…)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME, CONTROVERSY_TERM_FROM_LEI_SECA)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-A:PAR.3` — Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
+
+- Risco: MEDIUM · complexidade: EXTERNAL · SENSITIVE_THEME: cassa
+- Ponto jurídico: O § 3º prevê reclamação ao Supremo Tribunal Federal contra ato administrativo ou decisão judicial que contrariar o enunciado vinculante aplicável ou que o aplicar indevidamente.
+- Interpretação principal: A reclamação é o instrumento que dá força prática ao efeito vinculante.
+- ATENÇÃO: A lei pode exigir etapas prévias para a reclamação contra atos da administração.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: outra seja proferida com ou sem a aplicação)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-B` — Art. 103-B — Conselho Nacional de Justiça
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
+- Ponto jurídico: O art. 103-B estabelece que o Conselho Nacional de Justiça tem quinze membros, com mandato de dois anos e uma recondução admitida.
+- Interpretação principal: O Conselho é um órgão do Judiciário que não julga processos.
+- ATENÇÃO: As competências do Conselho (§ 4º) têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cidadãos de notável saber jurídico e reputação…), DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.103-B:PAR.4` — Art. 103-B, § 4º — Competências do Conselho Nacional de Justiça
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os limites do poder regulamentar do Conselho são tema da…; SENSITIVE_THEME: sanções
+- Ponto jurídico: O § 4º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira dos tribunais e o cumprimento, pelos juízes, dos seus deveres funcionais.
+- Interpretação principal: O parágrafo mostra que o Conselho atua em duas frentes.
+- ATENÇÃO: As competências são administrativas e disciplinares.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: da competência do tribunal de contas da união), DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.105` — Art. 105 — Competências do Superior Tribunal de Justiça
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 105 atribui ao Superior Tribunal de Justiça três tipos de competência.
+- Interpretação principal: O artigo reúne as competências do tribunal em três vias.
+- ATENÇÃO: O recurso especial e o filtro de relevância (inciso III e §§ 2º e 3º) têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.105:INC.III` — Art. 105, inciso III — Recurso especial
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O cabimento de recurso especial contra decisões de turmas…
+- Ponto jurídico: O inciso III atribui ao Superior Tribunal de Justiça o julgamento, por recurso especial, das causas que os Tribunais Regionais Federais e os tribunais dos Estados, do Distrito Federal e dos…
+- Interpretação principal: O recurso especial é o caminho para levar ao Superior Tribunal de Justiça uma questão sobre lei federal.
+- ATENÇÃO: O recurso especial cuida de lei federal; a questão constitucional vai ao Supremo por recurso extraordinário.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.108` — Art. 108 — Competências dos Tribunais Regionais Federais
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 108 atribui aos Tribunais Regionais Federais o julgamento originário, por crimes comuns e de responsabilidade, dos juízes federais da sua área (incluídos os juízes militares e os do trabalho)…
+- Interpretação principal: O tribunal regional tem duas funções.
+- ATENÇÃO: A competência penal originária tem ressalva expressa: os casos da competência da Justiça Eleitoral ficam fora.
+- Dependência externa: nenhuma
+- Warnings: DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109` — Art. 109 — Competências dos juízes federais
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 109 lista as causas que os juízes federais processam e julgam.
+- Interpretação principal: A lógica do artigo é o interesse federal.
+- ATENÇÃO: Os incisos I e IV têm exceções importantes e explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a bordo de navios ou aeronaves ressalvada a)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:INC.I` — Art. 109, inciso I — Causas cíveis de interesse da União
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A competência para causas de sociedades de economia mista e…
+- Ponto jurídico: O inciso I atribui aos juízes federais as causas de que participem, como autoras, rés, assistentes ou oponentes, a União, uma autarquia federal ou uma empresa pública federal.
+- Interpretação principal: O critério é a pessoa que está no processo, e não o assunto.
+- ATENÇÃO: A participação da entidade federal precisa ocorrer em uma das posições listadas.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:INC.IV` — Art. 109, inciso IV — Crimes de competência federal
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O inciso IV atribui aos juízes federais os crimes políticos e as infrações penais praticadas contra bens, serviços ou interesse da União, de suas autarquias ou de suas empresas públicas.
+- Interpretação principal: No campo penal, a Justiça Federal julga o que ofende diretamente a União ou suas entidades.
+- ATENÇÃO: O texto menciona empresas públicas, e não sociedades de economia mista.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: os crimes políticos e as infrações penais…), lint JURISPRUDENCE_WORDING_IN_BODY, lint PARENT_REPETITION
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:PAR.1` — Art. 109, §§ 1º e 2º — Onde propor as ações da União
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A aplicação do § 2º a autarquias federais é tema da camada…
+- Ponto jurídico: O § 1º determina que as causas em que a União for autora sejam propostas na seção judiciária do domicílio da outra parte.
+- Interpretação principal: Os dois parágrafos definem onde são propostas as causas de que a União participa.
+- ATENÇÃO: No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: as causas em que a união for autora)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.109:PAR.5` — Art. 109, § 5º — Deslocamento de competência por violação de direitos humanos
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os requisitos aplicados para deferir o deslocamento de…
+- Ponto jurídico: O § 5º permite que, em caso de violação grave de direitos humanos, o Procurador-Geral da República peça ao Superior Tribunal de Justiça, em qualquer fase do inquérito ou do processo, o deslocamento…
+- Interpretação principal: O parágrafo cria uma via excepcional para levar à Justiça Federal casos que, pelas regras comuns de competência, não estariam nela.
+- ATENÇÃO: O texto exige grave violação de direitos humanos e a finalidade de cumprir obrigações de tratados.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: de direitos humanos o procurador geral da…), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.124` — Art. 124 — Competência da Justiça Militar
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da…; SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 124 atribui à Justiça Militar o processo e o julgamento dos crimes militares definidos em lei.
+- Interpretação principal: A competência da Justiça Militar da União é definida pela natureza do crime: ela julga crimes militares.
+- ATENÇÃO: Quando um civil pode ser julgado pela Justiça Militar da União depende da lei e é tema da camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: a organização o funcionamento e a competência da), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.125` — Art. 125 — Justiça dos Estados
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: crimes
+- Ponto jurídico: O art. 125 determina que os Estados organizem sua Justiça, observados os princípios da Constituição.
+- Interpretação principal: A Justiça estadual é organizada por cada Estado, mas dentro dos limites da Constituição Federal.
+- ATENÇÃO: O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadual (§§ 3º a 5º) têm explicações próprias.
+- Dependência externa: nenhuma
+- Warnings: nenhum
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.125:PAR.2` — Art. 125, § 2º — Controle de constitucionalidade estadual
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução…
+- Ponto jurídico: O § 2º atribui aos Estados a criação da representação de inconstitucionalidade contra leis ou atos normativos estaduais e municipais que contrariem a Constituição do Estado.
+- Interpretação principal: Assim como existe controle de constitucionalidade em relação à Constituição Federal, os Estados podem ter um controle próprio, tendo como parâmetro a Constituição…
+- ATENÇÃO: O parágrafo trata do parâmetro estadual.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.125:PAR.3` — Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: Os crimes abrangidos pela ressalva do júri e a distribuição…; SENSITIVE_THEME: crimes
+- Ponto jurídico: O § 3º permite que a lei estadual, por proposta do Tribunal de Justiça, crie a Justiça Militar estadual.
+- Interpretação principal: A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.
+- ATENÇÃO: A ressalva do júri vale quando a vítima é civil; a delimitação dos crimes abrangidos é da lei e da camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: crimes militares definidos em lei e as ações), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY, SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128` — Art. 128 — Estrutura do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perder o cargo
+- Ponto jurídico: O art. 128 divide o Ministério Público em Ministério Público da União, que compreende o Federal, o do Trabalho, o Militar e o do Distrito Federal e Territórios, e Ministérios Públicos dos Estados.
+- Interpretação principal: Não existe um único Ministério Público, mas vários, cada um com sua chefia.
+- ATENÇÃO: O Ministério Público do Distrito Federal e Territórios faz parte do Ministério Público da União.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_significa: a organização as atribuições e o estatuto de)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128:PAR.3` — Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A autoridade que nomeia e o órgão legislativo que destitui o…
+- Ponto jurídico: O § 3º prevê que, nos Estados e no Ministério Público do Distrito Federal e Territórios, a própria carreira forme lista tríplice, na forma da lei respectiva.
+- Interpretação principal: Nos Estados, a escolha do chefe do Ministério Público começa dentro da própria instituição: a carreira forma uma lista de três nomes, e o chefe do Executivo escolhe um…
+- ATENÇÃO: No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a…
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.128:PAR.5` — Art. 128, § 5º — Garantias e vedações dos membros do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: perder o cargo
+- Ponto jurídico: O § 5º determina que leis complementares da União e dos Estados, de iniciativa facultada aos Procuradores-Gerais, definam como cada Ministério Público se organiza, suas atribuições e o estatuto dos…
+- Interpretação principal: O texto dá garantias ao membro do Ministério Público.
+- ATENÇÃO: A irredutibilidade tem ressalvas expressas, como o teto remuneratório e as regras tributárias indicadas no texto.
+- Dependência externa: nenhuma
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.129` — Art. 129 — Funções institucionais do Ministério Público
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público…
+- Ponto jurídico: O art. 129 lista as funções institucionais do Ministério Público.
+- Interpretação principal: O artigo mostra que o Ministério Público atua em várias frentes.
+- ATENÇÃO: O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto é tema da camada JURISPRUDÊNCIA.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: o inquérito civil e a ação civil pública), NEAR_COPY_MICROFIX(o_que_significa: a legitimação do ministério público para as ações), lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.130` — Art. 130 — Ministério Público junto aos Tribunais de Contas
+
+- Risco: MEDIUM · complexidade: EXTERNAL · JURISPRUDENCE_CONTEXT_ONLY: A autonomia do Ministério Público junto aos Tribunais de…
+- Ponto jurídico: O art. 130 estende aos membros do Ministério Público que atuam junto aos Tribunais de Contas as disposições desta Seção sobre direitos, vedações e forma de investidura.
+- Interpretação principal: Junto aos Tribunais de Contas atua um Ministério Público especial, que fiscaliza a aplicação da lei nos processos de controle das contas públicas.
+- ATENÇÃO: O artigo estende direitos, vedações e investidura.
+- Dependência externa: JURISPRUDENCIA (contexto)
+- Warnings: lint JURISPRUDENCE_WORDING_IN_BODY
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (JURISPRUDENCE_CONTEXT_ONLY)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
+
+### `CF88:ART.130-A` — Art. 130-A — Conselho Nacional do Ministério Público
+
+- Risco: MEDIUM · complexidade: STRUCTURED · SENSITIVE_THEME: sanções
+- Ponto jurídico: O art. 130-A estabelece que o Conselho Nacional do Ministério Público tem quatorze membros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado, para mandato de dois…
+- Interpretação principal: O Conselho tem para o Ministério Público papel semelhante ao do Conselho Nacional de Justiça para o Judiciário: controla a atuação administrativa e financeira e o…
+- ATENÇÃO: As competências do Conselho (§ 2º) têm explicação própria.
+- Dependência externa: nenhuma
+- Warnings: NEAR_COPY_MICROFIX(o_que_diz: cidadãos de notável saber jurídico e reputação…), NEAR_COPY_MICROFIX(o_que_significa: sem prejuízo da competência dos tribunais de…), DUPLICATION(resolvido)
+- Motivo da fila: sem alerta; LEGAL_RISK MEDIUM (SENSITIVE_THEME)
+- [ ] APROVAR   - [ ] AJUSTAR   - [ ] MANDAR PARA D
 
 ### `CF88:ART.130-A:PAR.2` — Art. 130-A, § 2º — Competências do Conselho Nacional do Ministério Público
 

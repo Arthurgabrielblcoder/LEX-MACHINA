@@ -1812,7 +1812,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1649 bytes · referências 3
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 196 palavras · 1646 bytes · referências 3
 - **Motivo da seleção:** Visao geral: quorum de maioria absoluta do tribunal ou do orgao especial para declarar inconstitucionalidade.
 
 **O QUE DIZ**
@@ -1844,7 +1844,7 @@ O artigo se dirige aos tribunais e não trata da decisão do juiz de primeiro gr
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Cláusula de reserva de plenário correta: maioria absoluta, plenário ou órgão especial, declaração de inconstitucionalidade; não alcança o juiz de primeiro grau.
 
 ---
 
@@ -1859,7 +1859,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1647 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1644 bytes · referências 0
 - **Motivo da seleção:** Visao geral: obrigacao de criar juizados especiais e justica de paz, juizados federais e destino das custas.
 
 **O QUE DIZ**
@@ -1893,7 +1893,7 @@ O juiz de paz exerce atribuições conciliatórias sem caráter jurisdicional: n
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Juizados e justiça de paz corretos (eleição, mandato, atribuições conciliatórias sem caráter jurisdicional). A anotação "Vide ADIN 3392" do § 1º não é usada (MB07-15).
 
 ---
 
@@ -2090,12 +2090,12 @@ Alguns dispositivos do art. 100 não podem ser compreendidos apenas pela redaç�
 
 ### Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência
 
-- **TARGET:** `CF88:ART.100:PAR.1` · `ENTENDA/CF88:ART.100:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.1` · `ENTENDA/CF88:ART.100:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 100, §§ 1º e 2º — Créditos alimentares e superpreferência
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.100:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2451 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 295 palavras · 2458 bytes · referências 2
 - **Motivo da seleção:** Bloco: conceito de debito alimentar e preferencia, e a superpreferencia de idosos, doentes graves e pessoas com deficiencia ate o limite fixado.
 
 **O QUE DIZ**
@@ -2112,7 +2112,7 @@ O § 2º alcança os titulares originários e também os que receberam o crédit
 
 **EXEMPLO PRÁTICO**
 
-Uma aposentada de setenta anos tem precatório de natureza previdenciária. Uma parte do crédito, até o triplo do limite de pequeno valor, é paga antes dos demais créditos. O saldo restante é pago depois, na ordem cronológica.
+Uma aposentada com mais de sessenta anos tem precatório de natureza previdenciária. Uma parte do crédito, até o triplo do limite de pequeno valor, é paga antes dos demais créditos. O saldo restante é pago depois, na ordem cronológica.
 
 **ATENÇÃO**
 
@@ -2130,7 +2130,7 @@ Doença grave e deficiência são definidas na forma da lei. A idade de sessenta
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: portadores de doença grave ou pessoas com deficiência)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Número ilustrativo desnecessário ("setenta anos") retirado; coerente com o T1 aprovado do art. 100 (preferência especial até o triplo e saldo na ordem cronológica). (seções: exemplo_pratico)
 
 ---
 
@@ -2230,7 +2230,7 @@ Para os requisitórios que envolvam a Fazenda Pública federal, o art. 3º, § 3
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.100:PAR.7`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 1976 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 1973 bytes · referências 0
 - **Motivo da seleção:** Bloco: pagamento sob ordem do Presidente do Tribunal, sequestro em casos restritos e crime de responsabilidade por retardar ou frustrar a liquidacao.
 
 **O QUE DIZ**
@@ -2264,7 +2264,7 @@ Fora das duas hipóteses do § 6º, o sequestro não é autorizado por este par�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ou tentar frustrar a liquidação regular de precatórios)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Sequestro restrito às duas hipóteses do § 6º (preterimento e não alocação orçamentária); responsabilidade do Presidente do Tribunal (§ 7º); remissão correta ao § 27, II.
 
 ---
 
@@ -2647,7 +2647,7 @@ Sem explicação própria: 25 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 297 palavras · 2526 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 297 palavras · 2523 bytes · referências 0
 - **Motivo da seleção:** Visao geral: guarda da Constituicao e as tres vias de atuacao do Supremo (originaria, recurso ordinario, recurso extraordinario).
 
 **O QUE DIZ**
@@ -2685,7 +2685,7 @@ O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria. O alcan
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Visão geral correta e coerente com o T1 aprovado do § 2º; não usa a ADI 3392.
 
 ---
 
@@ -2696,7 +2696,7 @@ O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria. O alcan
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.102`, `CF88:ART.102:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 348 palavras · 2722 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 348 palavras · 2719 bytes · referências 2
 - **Motivo da seleção:** Item: mapa das causas que comecam no Supremo, agrupadas por tipo.
 
 **O QUE DIZ**
@@ -2735,7 +2735,7 @@ A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ações contra o conselho nacional de justiça e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a revisão criminal e a ação rescisória de); LONG_EXPLANATION (*: 348 palavras (limite 400))
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Competência originária correta (alíneas b e c, ressalva do art. 52, I); o alcance temporal do foro fica, sem afirmação, na camada externa.
 
 ---
 
@@ -2887,7 +2887,7 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 276 palavras · 2180 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 276 palavras · 2177 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista dos legitimados para a acao direta e a acao declaratoria e o mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -2922,18 +2922,18 @@ O texto não diz se todos os legitimados podem questionar qualquer norma. A exig
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: confederação sindical ou entidade de classe de âmbito)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Rol de legitimados completo e fechado; a pertinência temática é apenas sinalizada, sem afirmação incorreta.
 
 ---
 
 ### Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
 
-- **TARGET:** `CF88:ART.103:PAR.1` · `ENTENDA/CF88:ART.103:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.103:PAR.1` · `ENTENDA/CF88:ART.103:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 103, §§ 1º e 3º — Procurador-Geral e Advogado-Geral nas ações de controle
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.103:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.103`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1782 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 225 palavras · 2289 bytes · referências 0
 - **Motivo da seleção:** Bloco: papeis do Procurador-Geral da Republica (§ 1º) e do Advogado-Geral da Uniao (§ 3º) no controle abstrato.
 
 **O QUE DIZ**
@@ -2954,7 +2954,7 @@ Um partido propõe ação contra uma lei federal. O Advogado-Geral da União é 
 
 **ATENÇÃO**
 
-O § 3º fala em defesa do ato impugnado. O texto não resolve se o Advogado-Geral pode deixar de defender a norma; esse tema pertence à camada JURISPRUDÊNCIA.
+O § 3º atribui ao Advogado-Geral a defesa do ato impugnado, e não a emissão de parecer contrário a ele. O Supremo Tribunal Federal admite, porém, que o Advogado-Geral deixe de defender tese cuja inconstitucionalidade o próprio Supremo já tenha afirmado.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2964,11 +2964,11 @@ O § 3º fala em defesa do ato impugnado. O texto não resolve se o Advogado-Ger
 
 **CAMADA EXTERNA**
 
-- O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 103, § 3º): ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva do Advogado-Geral da União, sem emissão de parecer pela inconstitucionalidade; ADI 1.616 (2001): o múnus deve ser entendido com temperamentos, sem obrigação de defender tese já declarada inconstitucional pelo Supremo. A página remete ainda à ADI 3.916 (2010), não lida nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A ATENÇÃO deixava em aberto um ponto objetivo: o dever de defesa tem o temperamento da ADI 1.616, sem tornar a defesa facultativa em geral (ADI 4.983). (seções: atencao, external_layer_notes)
 
 ---
 
@@ -3028,7 +3028,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 298 palavras · 2565 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 298 palavras · 2562 bytes · referências 0
 - **Motivo da seleção:** Visao geral: requisitos, objeto, legitimados e efeitos do enunciado vinculante aprovado pelo Supremo.
 
 **O QUE DIZ**
@@ -3065,18 +3065,18 @@ Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca e
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a interpretação e a eficácia de normas determinadas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Requisitos corretos (de ofício ou por provocação, dois terços, reiteradas decisões, matéria constitucional, publicação); o corpo usa "enunciado vinculante" por força do contrato.
 
 ---
 
 ### Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
 
-- **TARGET:** `CF88:ART.103-A:PAR.3` · `ENTENDA/CF88:ART.103-A:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.103-A:PAR.3` · `ENTENDA/CF88:ART.103-A:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 103-A, § 3º — Reclamação contra descumprimento do enunciado vinculante
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1804 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 220 palavras · 2062 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: cabimento e efeitos da reclamacao ao Supremo contra ato ou decisao que contraria o enunciado.
 
 **O QUE DIZ**
@@ -3097,7 +3097,7 @@ Um órgão público nega um pedido contrariando um enunciado vinculante. O inter
 
 **ATENÇÃO**
 
-A lei pode exigir etapas prévias para a reclamação contra atos da administração. Esses requisitos estão fora deste parágrafo e ficam na camada de legislação correlata.
+Contra omissão ou ato da administração pública, a Lei nº 11.417, de 2006, só admite a reclamação depois de esgotadas as vias administrativas. A reclamação não é recurso: é ação própria para garantir a observância do enunciado vinculante.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -3106,11 +3106,11 @@ A lei pode exigir etapas prévias para a reclamação contra atos da administra�
 
 **CAMADA EXTERNA**
 
-- Eventuais requisitos legais prévios à reclamação contra ato administrativo ficam na Lei n. 11.417, de 2006, na camada de legislação correlata.
+- Verificado na fonte oficial (Planalto): Lei 11.417/2006, art. 7º, § 1º: contra omissão ou ato da administração pública, a reclamação só é admitida após o esgotamento das vias administrativas; § 2º: anulação do ato ou cassação da decisão. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: outra seja proferida com ou sem a aplicação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — "A lei pode exigir etapas prévias" era vago: a Lei 11.417/2006 exige o esgotamento das vias administrativas; acrescentado que a reclamação não é recurso. (seções: atencao, external_layer_notes)
 
 ---
 
@@ -3125,7 +3125,7 @@ Sem explicação própria: 30 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 275 palavras · 2148 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 275 palavras · 2145 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao, mandato, presidencia, nomeacao, corregedoria e ouvidorias do Conselho Nacional de Justica.
 
 **O QUE DIZ**
@@ -3162,7 +3162,7 @@ As competências do Conselho (§ 4º) têm explicação própria. O texto não d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cidadãos de notável saber jurídico e reputação ilibada)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Composição, mandato, nomeação e função administrativa e disciplinar corretas; não atribui jurisdição ao Conselho.
 
 ---
 
@@ -3173,7 +3173,7 @@ As competências do Conselho (§ 4º) têm explicação própria. O texto não d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103-B`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 2197 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 253 palavras · 2194 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: controle administrativo, financeiro e disciplinar e as atribuicoes listadas nos incisos.
 
 **O QUE DIZ**
@@ -3210,7 +3210,7 @@ As competências são administrativas e disciplinares. O texto não autoriza o C
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da competência do tribunal de contas da união)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Competências administrativas e disciplinares corretas; afirma que o Conselho não revê o conteúdo de decisões judiciais.
 
 ---
 
@@ -3277,7 +3277,7 @@ Sem explicação própria: 29 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 322 palavras · 2375 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 322 palavras · 2372 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia originaria, recurso ordinario, recurso especial e orgaos junto ao tribunal.
 
 **O QUE DIZ**
@@ -3316,7 +3316,7 @@ O recurso especial e o filtro de relevância (inciso III e §§ 2º e 3º) têm 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Visão geral correta e coerente com o T1 aprovado do § 2º (filtro de relevância vigente); não trata a regulamentação como futura.
 
 ---
 
@@ -3327,7 +3327,7 @@ O recurso especial e o filtro de relevância (inciso III e §§ 2º e 3º) têm 
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.105`, `CF88:ART.105:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 246 palavras · 1970 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 1967 bytes · referências 0
 - **Motivo da seleção:** Item: hipoteses de cabimento do recurso especial.
 
 **O QUE DIZ**
@@ -3361,7 +3361,7 @@ O recurso especial cuida de lei federal; a questão constitucional vai ao Suprem
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Hipóteses do recurso especial corretas; remete ao filtro de relevância sem contradizer o T1 aprovado do § 2º.
 
 ---
 
@@ -3524,7 +3524,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1839 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1836 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia originaria e recursal dos tribunais federais de segundo grau.
 
 **O QUE DIZ**
@@ -3558,7 +3558,7 @@ A competência penal originária tem ressalva expressa: os casos da competência
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Competências originária e recursal corretas; membros do Ministério Público da União (inclusive o do Distrito Federal e Territórios) no TRF.
 
 ---
 
@@ -3573,7 +3573,7 @@ Sem explicação própria: 13 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 294 palavras · 2226 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 294 palavras · 2223 bytes · referências 0
 - **Motivo da seleção:** Visao geral: mapa das causas da Justica Federal de primeiro grau e regras de foro.
 
 **O QUE DIZ**
@@ -3608,7 +3608,7 @@ Os incisos I e IV têm exceções importantes e explicação própria. Os §§ 1
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a bordo de navios ou aeronaves ressalvada a)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Visão geral correta (União, autarquias e empresas públicas federais; ressalvas; §§ 1º a 5º com explicação própria, § 4º coberto pelo bloco do § 3º).
 
 ---
 
@@ -3619,7 +3619,7 @@ Os incisos I e IV têm exceções importantes e explicação própria. Os §§ 1
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.109`, `CF88:ART.109:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1907 bytes · referências 3
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1904 bytes · referências 3
 - **Motivo da seleção:** Item: criterio da presenca da Uniao e entidades federais e as excecoes do inciso.
 
 **O QUE DIZ**
@@ -3653,7 +3653,7 @@ A participação da entidade federal precisa ocorrer em uma das posições lista
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Critério pessoal correto; exclusões corretas; não inclui sociedade de economia mista.
 
 ---
 
@@ -3664,7 +3664,7 @@ A participação da entidade federal precisa ocorrer em uma das posições lista
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.109`, `CF88:ART.109:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1514 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 181 palavras · 1511 bytes · referências 0
 - **Motivo da seleção:** Item: crimes politicos e infracoes contra bens e interesses federais, com exclusao das contravencoes e ressalvas.
 
 **O QUE DIZ**
@@ -3698,7 +3698,7 @@ O texto menciona empresas públicas, e não sociedades de economia mista. O que 
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os crimes políticos e as infrações penais praticadas); PARENT_REPETITION (*: CF88:ART.109: 0.208)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Crimes políticos e infrações contra bens, serviços e interesses federais; exclusão das contravenções e ressalvas militar e eleitoral corretas.
 
 ---
 
@@ -3709,7 +3709,7 @@ O texto menciona empresas públicas, e não sociedades de economia mista. O que 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.109:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.109`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1626 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 192 palavras · 1623 bytes · referências 0
 - **Motivo da seleção:** Bloco: foro das acoes em que a Uniao e autora (§ 1º) e das acoes contra a Uniao (§ 2º).
 
 **O QUE DIZ**
@@ -3743,7 +3743,7 @@ No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as causas em que a união for autora)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Foro das causas da União correto (§ 1º fixo; § 2º à escolha do autor).
 
 ---
 
@@ -3799,7 +3799,7 @@ O § 3º é permissivo: a lei pode autorizar a delegação e definir suas condi�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.109`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1897 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 222 palavras · 1894 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: incidente de deslocamento de competencia para a Justica Federal (com o inciso V-A, que a ele remete).
 
 **O QUE DIZ**
@@ -3833,7 +3833,7 @@ O texto exige grave violação de direitos humanos e a finalidade de cumprir obr
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de direitos humanos o procurador geral da república)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Caráter excepcional, legitimidade exclusiva do Procurador-Geral da República e decisão do Superior Tribunal de Justiça preservados.
 
 ---
 
@@ -4780,7 +4780,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 167 palavras · 1393 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 167 palavras · 1390 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia para crimes militares definidos em lei e remissao a lei de organizacao.
 
 **O QUE DIZ**
@@ -4813,7 +4813,7 @@ Quando um civil pode ser julgado pela Justiça Militar da União depende da lei 
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a organização o funcionamento e a competência da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Competência pela natureza do crime militar definido em lei; não afirma regra categórica sobre civis.
 
 ---
 
@@ -4828,7 +4828,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1526 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1523 bytes · referências 0
 - **Motivo da seleção:** Visao geral: auto-organizacao da Justica estadual e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -4862,7 +4862,7 @@ O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadua
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Organização da Justiça estadual correta (Constituição estadual e lei de organização judiciária de iniciativa do Tribunal de Justiça).
 
 ---
 
@@ -4873,7 +4873,7 @@ O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadua
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.125`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1780 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 183 palavras · 1777 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: representacao de inconstitucionalidade diante da Constituicao estadual e vedacao de legitimado unico.
 
 **O QUE DIZ**
@@ -4908,18 +4908,18 @@ O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Fed
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Distingue o parâmetro estadual; o uso de normas federais de reprodução obrigatória fica sinalizado, sem afirmação incorreta.
 
 ---
 
 ### Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
 
-- **TARGET:** `CF88:ART.125:PAR.3` · `ENTENDA/CF88:ART.125:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.125:PAR.3` · `ENTENDA/CF88:ART.125:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 125, §§ 3º, 4º e 5º — Justiça Militar estadual
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.125:PAR.4`, `CF88:ART.125:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.125`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 308 palavras · 2504 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 311 palavras · 2512 bytes · referências 0
 - **Motivo da seleção:** Bloco: criacao, estrutura, competencia e divisao interna da Justica Militar estadual.
 
 **O QUE DIZ**
@@ -4930,7 +4930,7 @@ O § 3º permite que a lei estadual, por proposta do Tribunal de Justiça, crie 
 
 A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.
 
-Sua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, prevalece a competência do júri, que a Constituição reserva aos crimes dolosos contra a vida (art. 5º, XXXVIII, d).
+Sua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, os crimes dolosos contra a vida ficam com o júri, conforme a competência que a Constituição lhe reserva (art. 5º, XXXVIII, d).
 
 No primeiro grau, o juiz de direito julga sozinho os crimes militares contra civis e as ações disciplinares. Os demais crimes militares ficam com o Conselho de Justiça, presidido pelo juiz de direito.
 
@@ -4956,7 +4956,7 @@ A ressalva do júri vale quando a vítima é civil; a delimitação dos crimes a
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: crimes militares definidos em lei e as ações)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A ressalva do júri podia ser lida como alcançando todo crime militar com vítima civil; passa a dizer que alcança os crimes dolosos contra a vida. (seções: o_que_significa)
 
 ---
 
@@ -5202,12 +5202,12 @@ Sem explicação própria: 21 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 128 — Estrutura do Ministério Público
 
-- **TARGET:** `CF88:ART.128` · `ENTENDA/CF88:ART.128/BASE/1`
+- **TARGET:** `CF88:ART.128` · `ENTENDA/CF88:ART.128/BASE/2`
 - **DISPLAY TITLE:** Art. 128 — Estrutura do Ministério Público
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 243 palavras · 1843 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 269 palavras · 2006 bytes · referências 0
 - **Motivo da seleção:** Visao geral: ramos do Ministerio Publico, chefias, leis organicas, garantias e vedacoes.
 
 **O QUE DIZ**
@@ -5218,7 +5218,7 @@ O art. 128 divide o Ministério Público em Ministério Público da União, que 
 
 Não existe um único Ministério Público, mas vários, cada um com sua chefia. O da União reúne quatro ramos sob o comando do Procurador-Geral da República; cada Estado tem o seu, chefiado pelo Procurador-Geral de Justiça.
 
-A forma de escolha das chefias é diferente: na União, o Presidente escolhe entre membros da carreira; nos Estados, o Governador escolhe a partir de lista tríplice formada pela própria carreira.
+A forma de escolha das chefias é diferente: o Procurador-Geral da República é nomeado pelo Presidente da República entre integrantes da carreira, maiores de trinta e cinco anos, após aprovação pela maioria absoluta do Senado; nos Estados e no Distrito Federal e Territórios, o chefe é escolhido a partir de lista tríplice formada pela própria carreira.
 
 As leis complementares definem a organização, as atribuições e o estatuto de cada ramo, respeitando as garantias e vedações do § 5º.
 
@@ -5242,7 +5242,7 @@ O Ministério Público do Distrito Federal e Territórios faz parte do Ministér
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a organização as atribuições e o estatuto de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Omitia a aprovação pelo Senado na escolha do Procurador-Geral da República (§ 1º) e dava a entender que a lista tríplice vale só nos Estados, quando também se aplica ao Ministério Público do Distrito Federal e Territórios (§ 3º). (seções: o_que_significa)
 
 ---
 
@@ -5293,12 +5293,12 @@ O § 1º permite a recondução sem dizer quantas vezes; o § 3º, para os Estad
 
 ### Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
 
-- **TARGET:** `CF88:ART.128:PAR.3` · `ENTENDA/CF88:ART.128:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.128:PAR.3` · `ENTENDA/CF88:ART.128:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 128, §§ 3º e 4º — Procuradores-Gerais nos Estados e no Distrito Federal
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.128:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.128`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 2065 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 226 palavras · 2351 bytes · referências 0
 - **Motivo da seleção:** Bloco: lista triplice, nomeacao, mandato e destituicao dos Procuradores-Gerais estaduais e do Distrito Federal.
 
 **O QUE DIZ**
@@ -5319,7 +5319,7 @@ Os promotores e procuradores de um Estado votam e formam lista com três nomes. 
 
 **ATENÇÃO**
 
-No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a destituição. Essa identificação depende da lei complementar e da camada JURISPRUDÊNCIA.
+O Ministério Público do Distrito Federal e Territórios integra o Ministério Público da União. Nele, a lei complementar respectiva atribui ao Presidente da República a nomeação do Procurador-Geral, a partir da lista tríplice. A destituição cabe à maioria absoluta do Senado Federal, mediante representação do Presidente da República.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -5328,11 +5328,11 @@ No caso do Ministério Público do Distrito Federal e Territórios, que integra 
 
 **CAMADA EXTERNA**
 
-- A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são definidos na lei complementar do Ministério Público da União e na camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (Planalto): LC 75/1993, art. 156: o Procurador-Geral de Justiça do Distrito Federal e Territórios é nomeado pelo Presidente da República dentre integrantes de lista tríplice, para mandato de dois anos, permitida uma recondução; § 2º: destituição por deliberação da maioria absoluta do Senado Federal, mediante representação do Presidente da República. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — O regime do Ministério Público do Distrito Federal e Territórios estava em aberto; a LC 75/1993, art. 156, o define (Presidente da República e Senado Federal). (seções: atencao, external_layer_notes)
 
 ---
 
@@ -5343,7 +5343,7 @@ No caso do Ministério Público do Distrito Federal e Territórios, que integra 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.128`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 305 palavras · 2411 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 305 palavras · 2408 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: leis complementares de organizacao, garantias (vitaliciedade, inamovibilidade, irredutibilidade) e vedacoes dos membros.
 
 **O QUE DIZ**
@@ -5379,7 +5379,7 @@ A irredutibilidade tem ressalvas expressas, como o teto remuneratório e as regr
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Garantias e as seis vedações completas no O QUE DIZ; resumo do O QUE SIGNIFICA sem afirmação incorreta.
 
 ---
 
@@ -5389,12 +5389,12 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 129 — Funções institucionais do Ministério Público
 
-- **TARGET:** `CF88:ART.129` · `ENTENDA/CF88:ART.129/BASE/1`
+- **TARGET:** `CF88:ART.129` · `ENTENDA/CF88:ART.129/BASE/2`
 - **DISPLAY TITLE:** Art. 129 — Funções institucionais do Ministério Público
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 303 palavras · 2561 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 326 palavras · 3418 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lista das funcoes institucionais e regras sobre carreira, residencia e distribuicao.
 
 **O QUE DIZ**
@@ -5419,7 +5419,7 @@ Um hospital público deixa de atender pacientes por falta de medicamentos. O Min
 
 **ATENÇÃO**
 
-O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto é tema da camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.
+O Supremo Tribunal Federal reconhece que o Ministério Público pode promover, por autoridade própria e por prazo razoável, investigações de natureza penal, respeitados os direitos dos investigados, a reserva de jurisdição e o controle judicial; os requisitos detalhados desse procedimento estão na camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -5429,11 +5429,11 @@ O texto não diz se o Ministério Público pode conduzir, ele próprio, investig
 
 **CAMADA EXTERNA**
 
-- O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 129): Tema 184 (RE 593.727, 2015): o Ministério Público dispõe de competência para promover, por autoridade própria e por prazo razoável, investigações de natureza penal, respeitados os direitos e garantias dos investigados, a reserva constitucional de jurisdição, as prerrogativas dos advogados e o controle jurisdicional dos atos documentados; ADI 2.943, ADI 3.309 e ADI 3.318 (2024): parâmetros adicionais do procedimento investigatório criminal (entre eles distribuição por dependência ao juízo, aplicação do art. 18 do CPP, motivação da instauração quando houver suspeita de envolvimento de agentes de segurança e requisição de perícias). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o inquérito civil e a ação civil pública); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a legitimação do ministério público para as ações)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A ATENÇÃO tratava a investigação criminal direta como questão aberta (EXTERNAL_VERIFICATION_REQUIRED). O Supremo a reconhece (Tema 184) e fixou parâmetros (ADIs 2.943, 3.309 e 3.318); o T1 registra o estado atual sem virar tratado. (seções: atencao, external_layer_notes)
 
 ---
 
@@ -5664,12 +5664,12 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 130 — Ministério Público junto aos Tribunais de Contas
 
-- **TARGET:** `CF88:ART.130` · `ENTENDA/CF88:ART.130/BASE/1`
+- **TARGET:** `CF88:ART.130` · `ENTENDA/CF88:ART.130/BASE/2`
 - **DISPLAY TITLE:** Art. 130 — Ministério Público junto aos Tribunais de Contas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1879 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 238 palavras · 2350 bytes · referências 0
 - **Motivo da seleção:** Visao geral: aplicacao das regras da Secao sobre direitos, vedacoes e investidura.
 
 **O QUE DIZ**
@@ -5690,7 +5690,7 @@ Um procurador do Ministério Público junto ao Tribunal de Contas de um Estado q
 
 **ATENÇÃO**
 
-O artigo estende direitos, vedações e investidura. Outras questões, como autonomia administrativa e financeira, não estão mencionadas, e sua aplicação é tema da camada JURISPRUDÊNCIA.
+O Supremo Tribunal Federal entende que esse Ministério Público especial integra a estrutura do Tribunal de Contas e não recebeu a autonomia administrativa e financeira do Ministério Público comum: a extensão do art. 130 protege os membros, e não a instituição.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -5701,11 +5701,11 @@ O artigo estende direitos, vedações e investidura. Outras questões, como auto
 
 **CAMADA EXTERNA**
 
-- A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA.
+- Verificado na fonte oficial (STF, "A Constituição e o Supremo", art. 130): ADI 789 (citada na ADI 3.315, 2008), ADI 3.804 (2021) e ADI 4.427 (2023): o Ministério Público especial integra a estrutura do Tribunal de Contas, sem vínculo com o Ministério Público comum; o art. 130 não lhe outorga as prerrogativas de autonomia do Ministério Público comum e alcança só direitos, vedações e forma de investidura dos membros. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION.
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A autonomia institucional ficava em aberto; o Supremo a resolveu (integração à estrutura do Tribunal de Contas; garantia pessoal dos membros). (seções: atencao, external_layer_notes)
 
 ---
 
@@ -5720,7 +5720,7 @@ Sem explicação própria: 19 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 308 palavras · 2435 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 308 palavras · 2432 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao, mandato, nomeacao, corregedoria e ouvidorias do Conselho Nacional do Ministerio Publico.
 
 **O QUE DIZ**
@@ -5755,7 +5755,7 @@ As competências do Conselho (§ 2º) têm explicação própria. O texto atribu
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: cidadãos de notável saber jurídico e reputação ilibada); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: sem prejuízo da competência dos tribunais de contas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Composição (14 membros), nomeação, mandato e Corregedor nacional corretos; não confunde o Conselho com o Ministério Público da União nem com o Conselho Nacional de Justiça.
 
 ---
 
