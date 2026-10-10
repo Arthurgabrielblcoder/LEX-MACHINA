@@ -1,0 +1,602 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "A",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.176",
+   "section": "o_que_significa",
+   "category": "CONSEQUENCIA_INVENTADA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"que pode vende-lo\" e consequencia nao escrita no texto; o texto garante a propriedade do produto da lavra.",
+   "before": "O minério já extraído passa a pertencer ao concessionário, que pode vendê-lo.",
+   "after": "O minério extraído passa a ser propriedade do concessionário."
+  },
+  {
+   "target_id": "CF88:ART.176:PAR.1",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"sempre\" generalizava contra a excecao do § 4º do mesmo artigo; afirmacao negativa reformulada como descricao do texto.",
+   "before": "O título é sempre federal e depende do interesse nacional. O requisito para a empresa é ser organizada pela lei brasileira e ter sede e administração no Brasil; o texto não exige que o capital seja nacional.",
+   "after": "O título vem da União e depende do interesse nacional, ressalvada a dispensa do § 4º para energia renovável de capacidade reduzida. Para a empresa, o texto exige constituição sob as leis brasileiras e sede e administração no Brasil; ele não menciona a origem do capital."
+  },
+  {
+   "target_id": "CF88:ART.177:PAR.4",
+   "section": "atencao",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Limite do restabelecimento apresentado como regra literal; o texto so diz \"reduzida e restabelecida\".",
+   "before": "O que o Executivo pode fazer é reduzir e restabelecer a alíquota. O texto não autoriza aumento acima do nível fixado em lei. A alínea d, sobre transporte público coletivo, foi acrescentada depois das demais.",
+   "after": "O texto autoriza o Executivo a reduzir e a restabelecer a alíquota; o limite desse restabelecimento é questão de interpretação. A alínea d, sobre transporte público coletivo, foi acrescentada depois das demais."
+  },
+  {
+   "target_id": "CF88:ART.177:PAR.4",
+   "section": "external_layer_notes",
+   "category": "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Estado de lei externa (\"foi instituida\") afirmado sem proveniencia versionada.",
+   "before": "A contribuição sobre combustíveis foi instituída por lei federal; o conteúdo dessa lei pertence à legislação correlata (camada externa).",
+   "after": "A lei que institui a contribuição sobre combustíveis e o seu conteúdo pertencem à legislação correlata (camada externa)."
+  },
+  {
+   "target_id": "CF88:ART.178",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "No transporte internacional, a lei deve observar os acordos firmados pela União, atendido o princípio da reciprocidade.",
+   "after": "No transporte internacional, a lei fica vinculada aos tratados celebrados pela União e à regra da reciprocidade."
+  },
+  {
+   "target_id": "CF88:ART.179",
+   "section": "exemplo_pratico",
+   "category": "EXEMPLO_CRIA_REQUISITO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "O exemplo afirmava o conteudo de lei externa como certo; reformulado como hipotese.",
+   "before": "Uma pequena padaria se enquadra como empresa de pequeno porte. Por lei, ela pode recolher seus tributos de forma simplificada e cumprir menos exigências burocráticas do que uma grande indústria.",
+   "after": "Uma pequena padaria se enquadra, pela lei, como empresa de pequeno porte. Se a lei lhe der tratamento simplificado, ela cumpre menos exigências burocráticas do que uma grande indústria."
+  },
+  {
+   "target_id": "CF88:ART.179",
+   "section": "external_layer_notes",
+   "category": "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Especie e existencia de lei externa afirmadas sem proveniencia.",
+   "before": "O regime simplificado das micro e pequenas empresas está em lei complementar própria (legislação correlata, camada externa).",
+   "after": "O regime das micro e pequenas empresas definido em lei pertence à legislação correlata (camada externa)."
+  },
+  {
+   "target_id": "CF88:ART.181",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade (soberania) nao declarada no texto.",
+   "before": "A regra protege a soberania brasileira: o pedido estrangeiro passa por uma autoridade nacional, que decide se o atendimento é possível.",
+   "after": "Assim, o pedido estrangeiro passa por uma autoridade nacional, que decide se o atendimento é possível."
+  },
+  {
+   "target_id": "CF88:ART.182",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "para ordenar as funções sociais da cidade e garantir o bem-estar de seus habitantes.",
+   "after": "para ordenar o desenvolvimento das funções sociais da cidade e assegurar o bem-estar de quem nela vive."
+  },
+  {
+   "target_id": "CF88:ART.182",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "A propriedade urbana cumpre sua função social quando atende às exigências do plano diretor.",
+   "after": "A propriedade urbana atende à sua função social quando segue as exigências do plano diretor."
+  },
+  {
+   "target_id": "CF88:ART.183",
+   "section": "exemplo_pratico",
+   "category": "EXEMPLO_CRIA_REQUISITO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"abandonado pelo dono\" sugeria requisito que o texto nao traz.",
+   "before": "em terreno particular abandonado pelo dono, e não tem outro imóvel.",
+   "after": "em terreno particular, e não tem outro imóvel."
+  },
+  {
+   "target_id": "CF88:ART.184",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "paga em títulos da dívida agrária com cláusula de preservação do valor real, resgatáveis em até vinte anos",
+   "after": "paga em títulos da dívida agrária que preservam o valor real e são resgatáveis em até vinte anos"
+  },
+  {
+   "target_id": "CF88:ART.184",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Quantificador \"somente\" reformulado como descricao da competencia atribuida pelo texto.",
+   "before": "Somente a União pode desapropriar para reforma agrária, e apenas o imóvel rural que não cumpre a função social.",
+   "after": "A competência para desapropriar para reforma agrária é da União, e o alvo é o imóvel rural que não cumpre a função social."
+  },
+  {
+   "target_id": "CF88:ART.186",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e exploração que favoreça o bem-estar dos proprietários e dos trabalhadores.",
+   "after": "e exploração que promova o bem-estar de proprietários e trabalhadores."
+  },
+  {
+   "target_id": "CF88:ART.188",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "seja compatível com a política agrícola e com o plano nacional de reforma agrária.",
+   "after": "esteja em harmonia com a política agrícola e com o plano nacional da reforma agrária."
+  },
+  {
+   "target_id": "CF88:ART.189",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade especulativa nao declarada no texto.",
+   "before": "Por dez anos o título não pode ser vendido ou negociado. A ideia é que a terra fique com quem foi assentado e não volte a se concentrar.",
+   "after": "Por dez anos o título não pode ser vendido ou negociado."
+  },
+  {
+   "target_id": "CF88:ART.190",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "manda a lei regular e limitar a aquisição ou o arrendamento de propriedade rural por pessoa física ou jurídica estrangeira e estabelecer os casos",
+   "after": "manda a lei regular e limitar a compra ou o arrendamento de imóvel rural por estrangeiros, pessoas físicas ou jurídicas, e definir os casos"
+  },
+  {
+   "target_id": "CF88:ART.192",
+   "section": "atencao",
+   "category": "HISTORICO_SEM_PROVENIENCIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Conteudo historico (\"limites de juros\") afirmado sem citacao da fonte historica versionada.",
+   "before": "Os incisos e parágrafos do artigo aparecem no texto apenas com a marca de revogação. Regras antigas que estavam neles, como limites de juros, não estão mais no artigo.",
+   "after": "Os incisos e parágrafos do artigo aparecem no texto apenas com a marca de revogação: o conteúdo anterior deles não vale mais."
+  },
+  {
+   "target_id": "CF88:ART.193",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 193 afirma que a ordem social tem como base o primado do trabalho e como objetivo o bem-estar e a justiça sociais. O parágrafo único atribui ao Estado o planejamento das políticas sociais, assegurada, na forma da lei, a participação da sociedade na formulação, no monitoramento, no controle e na avaliação dessas políticas.",
+   "after": "O art. 193 indica a base e o objetivo da ordem social: a base é o primado do trabalho; o objetivo, o bem-estar e a justiça sociais. O parágrafo único dá ao Estado a função de planejar as políticas sociais e garante, na forma da lei, que a sociedade participe da formulação, do monitoramento, do controle e da avaliação dessas políticas."
+  },
+  {
+   "target_id": "CF88:ART.194",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 194 define a seguridade social como um conjunto integrado de ações de iniciativa dos poderes públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.",
+   "after": "O art. 194 define a seguridade social como um conjunto integrado de ações, tomadas pelos poderes públicos e pela sociedade, para garantir os direitos ligados à saúde, à previdência e à assistência social."
+  },
+  {
+   "target_id": "CF88:ART.195",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "seja financiada por toda a sociedade, de forma direta e indireta, nos termos da lei, com recursos dos orçamentos da União, dos Estados, do Distrito Federal e dos Municípios",
+   "after": "seja custeada por toda a sociedade, direta e indiretamente, conforme a lei, com recursos orçamentários dos quatro entes da Federação"
+  },
+  {
+   "target_id": "CF88:ART.195",
+   "section": "o_que_significa",
+   "category": "NUMERO_ERRADO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "O § 13 esta revogado no texto oficial; nao traz regra vigente.",
+   "before": "Os §§ 9º, 11, 12 e 13 trazem regras de alíquotas, parcelamento e não cumulatividade.",
+   "after": "Os §§ 9º, 11 e 12 trazem regras de alíquotas diferenciadas, de parcelamento e de não cumulatividade; o § 13 está revogado."
+  },
+  {
+   "target_id": "CF88:ART.195",
+   "section": "atencao",
+   "category": "TEMPORAL",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"aliquota de teste\" e qualificacao que o texto nao usa; situacao de 2026 descrita com o texto do ADCT art. 125, caput e § 1º.",
+   "before": "Pelo art. 126 do ADCT, ela passa a ser cobrada a partir de 2027, e o art. 125 do ADCT prevê alíquota de teste em 2026.",
+   "after": "Pelo art. 126 do ADCT, ela passa a ser cobrada a partir de 2027; em 2026, o art. 125 do ADCT prevê cobrança à alíquota de 0,9%, compensável com outras contribuições."
+  },
+  {
+   "target_id": "CF88:ART.195:INC.I",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "a cargo do empregador, da empresa e da entidade a ela equiparada na forma da lei,",
+   "after": "a cargo do empregador, da empresa e de quem a lei equiparar à empresa,"
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 7º declara isentas de contribuição para a seguridade social as entidades beneficentes de assistência social que atendam às exigências estabelecidas em lei.",
+   "after": "O § 7º libera as entidades beneficentes de assistência social de pagar contribuição para a seguridade, desde que cumpram as exigências fixadas em lei."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Qualificacao doutrinaria/jurisprudencial (imunidade que a lei nao pode suprimir) apresentada como regra do texto.",
+   "before": "Embora o texto use a palavra isentas, a dispensa está na própria Constituição, e por isso é tratada como imunidade, que a lei não pode suprimir.",
+   "after": "O texto usa a palavra isentas, mas a dispensa está na própria Constituição. Se ela tem natureza de isenção ou de imunidade é questão de interpretação constitucional."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.8",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "que o produtor, o parceiro, o meeiro e o arrendatário rurais e o pescador artesanal, com seus cônjuges,",
+   "after": "que o produtor rural, o parceiro, o meeiro, o arrendatário rural e o pescador artesanal, com os cônjuges,"
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.14",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 14 determina que o segurado só tem reconhecida como tempo de contribuição ao Regime Geral de Previdência Social a competência em que sua contribuição for igual ou superior à contribuição mínima mensal exigida para sua categoria, assegurado o agrupamento de contribuições.",
+   "after": "O § 14 só deixa contar como tempo de contribuição ao regime geral o mês em que o segurado pagar pelo menos a contribuição mínima mensal fixada para sua categoria, garantido o agrupamento de contribuições."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.15",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Caracterizacao (\"novo modelo de tributacao do consumo\") alem do texto.",
+   "before": "A contribuição do inciso V é a parte federal do novo modelo de tributação do consumo; a parte estadual e municipal é o imposto do art. 156-A. Por isso as duas seguem muitas regras comuns.",
+   "after": "A contribuição do inciso V convive com o imposto do art. 156-A, de Estados e Municípios, e por isso segue muitas regras comuns a ele (§ 16)."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.15",
+   "section": "atencao",
+   "category": "TEMPORAL",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Situacao na data de referencia explicitada; \"teste\" retirado (nao e termo do texto).",
+   "before": "A cobrança da contribuição segue o cronograma do ADCT: alíquota de teste em 2026 (art. 125) e cobrança a partir de 2027 (art. 126), com a alíquota reduzida em 2027 e 2028 pelo art. 127, parágrafo único.",
+   "after": "A cobrança da contribuição segue o cronograma do ADCT: em 2026, alíquota de 0,9%, compensável (art. 125); cobrança a partir de 2027 (art. 126); e alíquota reduzida em 2027 e 2028 (art. 127, parágrafo único). Em 5 de outubro de 2026, vale a etapa do art. 125."
+  },
+  {
+   "target_id": "CF88:ART.197",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Cabe ao poder público dispor, nos termos da lei, sobre sua regulamentação, fiscalização e controle.",
+   "after": "Compete ao poder público, nos termos da lei, regulamentar, fiscalizar e controlar essas atividades."
+  },
+  {
+   "target_id": "CF88:ART.198",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Alusao ao tema da acao anotada (emergencia sanitaria) no corpo; o apontamento fica so na camada externa.",
+   "before": "O inciso IV do § 3º está revogado. A distribuição de competências entre os entes em situações de emergência sanitária é tema externo a este artigo.",
+   "after": "O inciso IV do § 3º está revogado."
+  },
+  {
+   "target_id": "CF88:ART.198:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e dos recursos dos arts. 157 e 159, I, a, e II, deduzidas as parcelas transferidas aos Municípios.",
+   "after": "e dos recursos dos arts. 157 e 159, I, a, e II, menos as parcelas repassadas aos Municípios."
+  },
+  {
+   "target_id": "CF88:ART.198:PAR.4",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "admitam agentes comunitários de saúde e agentes de combate às endemias por processo seletivo público, conforme",
+   "after": "admitam, por processo seletivo público, agentes comunitários de saúde e agentes de combate às endemias, conforme"
+  },
+  {
+   "target_id": "CF88:ART.198:PAR.4",
+   "section": "exemplo_pratico",
+   "category": "EXEMPLO_CRIA_REQUISITO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "O exemplo afirmava como certo um requisito de lei externa sem proveniencia.",
+   "before": "Um Município abre processo seletivo público para contratar agentes comunitários de saúde. A lei exige que o agente resida na área em que atua; se ele deixar de cumprir esse requisito, pode perder o cargo.",
+   "after": "Um Município abre processo seletivo público para contratar agentes comunitários de saúde. Se a lei exigir, por exemplo, que o agente resida na área em que atua (requisito ilustrativo), deixar de cumpri-lo pode levar à perda do cargo."
+  },
+  {
+   "target_id": "CF88:ART.198:PAR.7",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "tratam da remuneração dos agentes comunitários de saúde e dos agentes de combate às endemias.",
+   "after": "tratam da remuneração desses dois grupos de agentes: os comunitários de saúde e os de combate às endemias."
+  },
+  {
+   "target_id": "CF88:ART.198:PAR.12",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "a serem observados por pessoas jurídicas de direito público e privado.",
+   "after": "obrigatórios para entidades públicas e privadas."
+  },
+  {
+   "target_id": "CF88:ART.199",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Também é vedada a participação de empresas ou capitais estrangeiros na assistência à saúde no País, salvo nos casos previstos em lei.",
+   "after": "Empresas e capitais estrangeiros não podem participar da assistência à saúde no País, a não ser nos casos que a lei prever."
+  },
+  {
+   "target_id": "CF88:ART.200",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "controlar e fiscalizar procedimentos, produtos e substâncias de interesse para a saúde e participar da produção de medicamentos e insumos;",
+   "after": "controlar e fiscalizar procedimentos, produtos e substâncias que interessam à saúde e participar da fabricação de medicamentos e insumos;"
+  },
+  {
+   "target_id": "CF88:ART.194",
+   "section": "o_que_diz",
+   "category": "PAI_FILHO_REPETICAO",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Frase identica a do bloco do paragrafo unico (repeticao ao longo da hierarquia).",
+   "before": "O parágrafo único atribui ao poder público, nos termos da lei, a organização da seguridade com base em sete objetivos.",
+   "after": "O parágrafo único lista os sete objetivos que orientam a organização do sistema."
+  },
+  {
+   "target_id": "CF88:ART.177:PAR.1",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Termo tecnico usado no corpo sem definicao (TECHNICAL_TERM_UNDEFINED).",
+   "before": "{\"termo\": \"Órgão regulador\", \"explicacao\": \"entidade pública que regula e fiscaliza um setor econômico.\"}",
+   "after": "{\"termo\": \"Órgão regulador\", \"explicacao\": \"entidade pública que regula e fiscaliza um setor econômico.\"}, {\"termo\": \"Monopólio\", \"explicacao\": \"exclusividade da titularidade de uma atividade econômica, aqui atribuída à União.\"}"
+  },
+  {
+   "target_id": "CF88:ART.177:PAR.4",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Quantificador \"so pode\" reformulado como descricao da destinacao do texto.",
+   "before": "A limitação está no inciso II: o dinheiro arrecadado só pode ir para as quatro finalidades listadas nas alíneas.",
+   "after": "A limitação está no inciso II: o dinheiro arrecadado tem destino definido, as quatro finalidades listadas nas alíneas."
+  },
+  {
+   "target_id": "CF88:ART.181",
+   "section": "exemplo_pratico",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "\"so pode\" reformulado com o verbo do texto (dependera).",
+   "before": "A empresa só pode atender ao pedido com autorização da autoridade brasileira competente.",
+   "after": "O atendimento ao pedido depende de autorização da autoridade brasileira competente."
+  },
+  {
+   "target_id": "CF88:ART.183",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O art. 183 permite que quem possui como sua uma área urbana de até duzentos e cinquenta metros quadrados, por cinco anos, sem interrupção e sem oposição, usando-a para morar com ou sem a família, adquira o domínio do imóvel, desde que não seja dono de outro imóvel urbano ou rural.",
+   "after": "O art. 183 permite adquirir o domínio de área urbana de até duzentos e cinquenta metros quadrados. Para isso, a pessoa precisa possuí-la como sua por cinco anos, sem interrupção e sem oposição, usando-a como moradia própria ou da família, e não ser dona de outro imóvel urbano ou rural."
+  },
+  {
+   "target_id": "CF88:ART.184",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "Os parágrafos determinam o pagamento em dinheiro das benfeitorias úteis e necessárias, autorizam a ação de desapropriação após o decreto de interesse social, deixam à lei complementar o procedimento judicial sumário, mandam o orçamento fixar a cada ano os títulos e recursos do programa e isentam de impostos as transferências dos imóveis desapropriados.",
+   "after": "Os parágrafos mandam pagar em dinheiro as benfeitorias úteis e necessárias e autorizam a ação de desapropriação depois do decreto de interesse social. Também deixam à lei complementar o procedimento judicial sumário, mandam o orçamento fixar a cada ano os títulos e recursos do programa e isentam de impostos as transferências dos imóveis desapropriados."
+  },
+  {
+   "target_id": "CF88:ART.186",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Quantificador reformulado com o numero de requisitos do texto.",
+   "before": "A palavra simultaneamente é decisiva: o imóvel precisa cumprir todos os requisitos ao mesmo tempo. Atender a um só não basta.",
+   "after": "A palavra simultaneamente é decisiva: os quatro requisitos devem estar presentes ao mesmo tempo. Atender a um só não basta."
+  },
+  {
+   "target_id": "CF88:ART.191",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O art. 191 permite adquirir a propriedade de área de terra em zona rural de até cinquenta hectares a quem, não sendo dono de imóvel rural ou urbano, a possua como sua por cinco anos ininterruptos e sem oposição, tornando-a produtiva com seu trabalho ou o de sua família e nela morando.",
+   "after": "O art. 191 permite adquirir a propriedade de área rural de até cinquenta hectares. Os requisitos são: não ser dono de imóvel rural ou urbano, possuir a área como sua por cinco anos ininterruptos e sem oposição, torná-la produtiva com o próprio trabalho ou o da família e morar nela."
+  },
+  {
+   "target_id": "CF88:ART.191",
+   "section": "exemplo_pratico",
+   "category": "DUPLICACAO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Exemplo muito parecido com o do art. 183 (DUPLICATION sim=0,44).",
+   "before": "Uma família cultiva há sete anos, sem oposição, uma área rural particular de vinte hectares onde mora, e não tem outro imóvel. Ela pode pedir o reconhecimento da propriedade.",
+   "after": "Um agricultor planta milho e cria galinhas em um sítio particular de vinte hectares, onde vive com os filhos há sete anos sem que ninguém conteste. Como não tem outro imóvel, ele pode pedir que a propriedade seja reconhecida."
+  },
+  {
+   "target_id": "CF88:ART.193",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "\"todas as etapas\" substituido pelas quatro etapas do texto.",
+   "before": "O parágrafo único transforma isso em tarefa: o Estado planeja as políticas sociais, mas a sociedade participa de todas as etapas, desde a formulação até a avaliação, nos termos da lei.",
+   "after": "O parágrafo único transforma isso em tarefa: o Estado planeja as políticas sociais, e a sociedade participa da formulação, do monitoramento, do controle e da avaliação, nos termos da lei."
+  },
+  {
+   "target_id": "CF88:ART.194",
+   "section": "o_que_diz",
+   "category": "DEPENDENCIA_DE_LEI_OMITIDA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "O texto remete a lei (\"nos termos da lei\") e o corpo nao dizia (LAW_DEPENDENCY_OMITTED).",
+   "before": "O parágrafo único lista os sete objetivos que orientam a organização do sistema.",
+   "after": "O parágrafo único lista os sete objetivos que orientam a organização do sistema pelo poder público, nos termos da lei."
+  },
+  {
+   "target_id": "CF88:ART.194:PAR.UNICO",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Formula doutrinaria absoluta reduzida ao que o texto diz.",
+   "before": "A universalidade busca alcançar todos os riscos e todas as pessoas.",
+   "after": "A universalidade diz respeito à amplitude da cobertura e do atendimento."
+  },
+  {
+   "target_id": "CF88:ART.194:PAR.UNICO",
+   "section": "exemplo_pratico",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY",
+   "reason": "Reformulado como remissao ao inciso.",
+   "before": "A composição segue o objetivo da gestão quadripartite.",
+   "after": "A composição corresponde à gestão quadripartite prevista no inciso VII."
+  },
+  {
+   "target_id": "CF88:ART.195",
+   "section": "o_que_diz",
+   "category": "GLOSSARIO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Termo tecnico sem definicao no corpo; descrito pelo conteudo do § 7º.",
+   "before": "de prazos de cobrança, de imunidade, de alíquotas diferenciadas",
+   "after": "de prazos de cobrança, da dispensa das entidades beneficentes, de alíquotas diferenciadas"
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "o_que_significa",
+   "category": "CONDICAO_FORA_DO_TEXTO",
+   "detector": "V3_CONDITION_NOT_IN_TEXT",
+   "reason": "Reformulado com a condicao literal do texto (\"que atendam as exigencias estabelecidas em lei\").",
+   "before": "Entidades que prestam assistência social de forma beneficente não pagam contribuições para a seguridade, desde que cumpram os requisitos da lei.",
+   "after": "Entidades que prestam assistência social de forma beneficente não pagam contribuições para a seguridade quando atendem às exigências fixadas em lei."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "o_que_significa",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "A natureza juridica da dispensa (isencao x imunidade) e debate externo ao texto: retirado do nucleo e mantido so como apontamento na camada externa.",
+   "before": "O texto usa a palavra isentas, mas a dispensa está na própria Constituição. Se ela tem natureza de isenção ou de imunidade é questão de interpretação constitucional.",
+   "after": "O texto usa a palavra isentas, e a dispensa está prevista na própria Constituição."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Termo ajustado ao que o corpo usa.",
+   "before": "{\"termo\": \"Imunidade\", \"explicacao\": \"dispensa de tributo prevista na própria Constituição.\"}",
+   "after": "{\"termo\": \"Isenção\", \"explicacao\": \"dispensa do pagamento de um tributo, nas condições fixadas.\"}"
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "A questao da especie normativa fica so na camada externa.",
+   "before": "O texto remete à lei para as exigências. Qual espécie de lei é necessária para fixar esses requisitos é tema da legislação correlata e da camada JURISPRUDÊNCIA.",
+   "after": "O texto remete à lei para as exigências que a entidade deve cumprir."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.7",
+   "section": "external_layer_notes",
+   "category": "CAMADA_EXTERNA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Debate interpretativo realocado para a camada externa.",
+   "before": "O texto oficial remete à Lei Complementar nº 187/2021 (nota de remissão da compilação oficial). A espécie normativa exigida para os requisitos é tema da camada JURISPRUDÊNCIA.",
+   "after": "O texto oficial remete à Lei Complementar nº 187/2021 (nota de remissão da compilação oficial). A natureza da dispensa (isenção ou imunidade) e a espécie normativa exigida para os requisitos são temas da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.8",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O § 8º estabelece que o produtor rural, o parceiro, o meeiro, o arrendatário rural e o pescador artesanal, com os cônjuges, que trabalham em regime de economia familiar sem empregados permanentes, contribuem para a seguridade social aplicando uma alíquota sobre o resultado da venda da produção, e têm direito aos benefícios nos termos da lei.",
+   "after": "O § 8º trata do produtor rural, do parceiro, do meeiro, do arrendatário rural e do pescador artesanal, com os cônjuges, que trabalham em regime de economia familiar sem empregados permanentes. Eles contribuem para a seguridade social com uma alíquota sobre o resultado da venda da produção e têm direito aos benefícios nos termos da lei."
+  },
+  {
+   "target_id": "CF88:ART.195:PAR.15",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY",
+   "reason": "Efeito descrito pelo texto, sem finalidade atribuida.",
+   "before": "O § 17 evita tributo sobre tributo, ao excluir a contribuição de sua própria base e da base de outros tributos.",
+   "after": "Pelo § 17, a contribuição fica fora de sua própria base de cálculo e da base de outros tributos indicados."
+  },
+  {
+   "target_id": "CF88:ART.198",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY",
+   "reason": "Finalidade nao declarada no texto.",
+   "before": "Cada esfera tem uma direção própria, o que evita comandos conflitantes no mesmo nível.",
+   "after": "Cada esfera de governo tem uma direção única no sistema."
+  },
+  {
+   "target_id": "CF88:ART.198:PAR.7",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY",
+   "reason": "Efeito descrito pelo texto, sem finalidade atribuida; Distrito Federal incluido (lista completa).",
+   "before": "O § 11 evita que o dinheiro repassado pela União pese no limite de gastos com pessoal de Estados e Municípios.",
+   "after": "Pelo § 11, o dinheiro repassado pela União não entra no cálculo do limite de despesa com pessoal de Estados, Distrito Federal e Municípios."
+  },
+  {
+   "target_id": "CF88:ART.199",
+   "section": "o_que_diz",
+   "category": "RESSALVA",
+   "detector": "V3_RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva expressa com a palavra do texto.",
+   "before": "Empresas e capitais estrangeiros não podem participar da assistência à saúde no País, a não ser nos casos que a lei prever.",
+   "after": "Empresas e capitais estrangeiros não podem participar da assistência à saúde no Brasil, salvo nos casos previstos em lei."
+  },
+  {
+   "target_id": "CF88:ART.199",
+   "section": "o_que_significa",
+   "category": "EXCECAO_OMITIDA",
+   "detector": "V3_EXCEPTION_OR_RESSALVA_DROPPED",
+   "reason": "Afirmacao geral (\"qualquer pessoa ou empresa\") apagava a restricao ao capital estrangeiro do § 3º.",
+   "before": "Qualquer pessoa ou empresa pode prestar serviços de saúde, mas a participação no sistema público é apenas complementar, por contrato ou convênio, e segue as diretrizes do sistema.",
+   "after": "A assistência à saúde é aberta à iniciativa privada, observadas as restrições dos parágrafos. A participação no sistema público é complementar, por contrato ou convênio, e segue as diretrizes do sistema."
+  },
+  {
+   "target_id": "CF88:ART.200",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Lista do inciso I resumida sem os itens (LIST_ITEM_POSSIBLY_DROPPED).",
+   "before": "participar da fabricação de medicamentos e insumos;",
+   "after": "participar da fabricação de medicamentos, equipamentos, imunobiológicos, hemoderivados e outros insumos;"
+  },
+  {
+   "target_id": "CF88:ART.200",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Restricao \"em sua area de atuacao\" do inciso V omitida.",
+   "before": "incrementar o desenvolvimento científico e tecnológico e a inovação;",
+   "after": "estimular, em sua área de atuação, a ciência, a tecnologia e a inovação;"
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_F",
+ "namespace": "ADCT",
+ "articles_range": "ADCT 61-90",
+ "stats": {
+  "articles": 11,
+  "targets_evaluated": 51,
+  "targets_current": 48,
+  "select": 11,
+  "skip": 37,
+  "excluded": {
+   "EXCLUDED_REVOKED": 2,
+   "EXCLUDED_HISTORICAL": 1
+  },
+  "new_explanations": 11,
+  "reused": 0,
+  "roles": {
+   "OVERVIEW": 11
+  },
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {},
+  "pending_in_triage": 0,
+  "human_approved_t1": 11,
+  "skipped_articles": [
+   "ADCT:ART.61",
+   "ADCT:ART.62",
+   "ADCT:ART.63",
+   "ADCT:ART.65",
+   "ADCT:ART.66",
+   "ADCT:ART.67",
+   "ADCT:ART.70",
+   "ADCT:ART.71",
+   "ADCT:ART.72",
+   "ADCT:ART.73",
+   "ADCT:ART.74",
+   "ADCT:ART.75",
+   "ADCT:ART.77",
+   "ADCT:ART.78",
+   "ADCT:ART.80",
+   "ADCT:ART.81",
+   "ADCT:ART.84",
+   "ADCT:ART.85",
+   "ADCT:ART.86",
+   "ADCT:ART.89",
+   "ADCT:ART.90"
+  ]
+ },
+ "critic": {
+  "corrections": 21,
+  "by_category": {
+   "AFIRMACAO_UNIVERSAL": 2,
+   "COPIA_DA_LEI_SECA": 9,
+   "EXCECAO_FORA_DO_TEXTO": 2,
+   "FRASE_LONGA": 1,
+   "LISTA_INCOMPLETA": 1,
+   "MODALIDADE": 1,
+   "NUCLEO_TEMPORAL": 1,
+   "NUMERO": 3,
+   "TELEOLOGIA": 1
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "status": "PASS",
+  "approved_by_recorded_round": 179,
+  "approval_gate": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 11,
+ "status": "PASS"
+}

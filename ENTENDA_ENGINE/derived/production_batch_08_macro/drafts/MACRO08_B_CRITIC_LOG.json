@@ -1,0 +1,809 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "B",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.201",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Servidores vinculados a regime proprio nao entram no regime geral; a afirmacao generalizava.",
+   "before": "Filiação obrigatória quer dizer que quem exerce atividade remunerada entra no regime por força da lei, sem escolha.",
+   "after": "Filiação obrigatória quer dizer que quem exerce atividade remunerada abrangida pelo regime geral entra nele por força da lei, sem escolha."
+  },
+  {
+   "target_id": "CF88:ART.201",
+   "section": "atencao",
+   "category": "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao historica ancorada nas anotacoes de vigencia da fonte canonica (EC 103/2019).",
+   "before": "Grande parte da redação atual do artigo veio da reforma de 2019. As regras de transição dessa reforma não estão no art. 201 e pertencem à camada externa.",
+   "after": "Segundo as anotações da fonte oficial, a redação atual de vários dispositivos do artigo foi dada pela Emenda Constitucional nº 103, de 2019. As regras de transição dessa emenda não estão no art. 201 e pertencem à camada externa."
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e trabalhadores com efetiva exposição a agentes químicos, físicos e biológicos prejudiciais à saúde, ou à sua combinação,",
+   "after": "e trabalhadores efetivamente expostos a agentes químicos, físicos e biológicos nocivos à saúde, ou à combinação deles,"
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 2º impede que o benefício que substitui o salário de contribuição ou o rendimento do trabalho do segurado tenha valor mensal abaixo do salário mínimo.",
+   "after": "O § 2º impede que o benefício que faz as vezes do salário de contribuição ou da renda do trabalho do segurado tenha valor mensal abaixo do salário mínimo."
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.2",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Conclusao sobre beneficios complementares reformulada como leitura do texto, sem afirmar regra.",
+   "before": "A regra não vale para todo e qualquer benefício: alcança os que substituem a renda. Benefícios de outra natureza, que complementam a renda, não entram nesse piso pelo texto do parágrafo.",
+   "after": "O piso se refere aos benefícios que substituem a renda; o texto não o estende expressamente a benefícios de outra natureza."
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.9",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 9º garante, para fins de aposentadoria, a contagem recíproca do tempo de contribuição entre o regime geral e os regimes próprios de previdência,",
+   "after": "O § 9º garante, para fins de aposentadoria, que o tempo de contribuição seja contado reciprocamente entre o regime geral e os regimes próprios,"
+  },
+  {
+   "target_id": "CF88:ART.202",
+   "section": "atencao",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Consequencia da ressalva (\"podem integrar a remuneracao\") apresentada como regra.",
+   "before": "A exceção do § 2º é dos benefícios já concedidos, que podem integrar a remuneração nos termos da lei.",
+   "after": "O § 2º ressalva os benefícios concedidos da regra de não integração à remuneração; o alcance dessa ressalva depende da lei e da interpretação."
+  },
+  {
+   "target_id": "CF88:ART.202:PAR.3",
+   "section": "o_que_significa",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "A regra alcança também autarquias, fundações, empresas públicas, sociedades de economia mista e outras entidades públicas.",
+   "after": "A regra alcança também as entidades da administração indireta e outras entidades públicas."
+  },
+  {
+   "target_id": "CF88:ART.202:PAR.3",
+   "section": "exemplo_pratico",
+   "category": "NUMERO_ILUSTRATIVO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Numero do exemplo marcado como ilustrativo na propria frase.",
+   "before": "Se o empregado contribui com 7% do salário,",
+   "after": "Se o empregado contribui com 7% do salário (percentual ilustrativo),"
+  },
+  {
+   "target_id": "CF88:ART.202:PAR.3",
+   "section": "atencao",
+   "category": "NUMERO_ILUSTRATIVO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Marcacao deslocada para a frase do exemplo.",
+   "before": "O limite recai sobre a contribuição normal. O exemplo usa um percentual apenas como ilustração.",
+   "after": "O limite recai sobre a contribuição normal do patrocinador público."
+  },
+  {
+   "target_id": "CF88:ART.203",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade/historico atribuido sem fonte; reformulado como descricao do inciso.",
+   "before": "O inciso VI foi acrescentado para a redução da pobreza.",
+   "after": "O inciso VI trata da redução da vulnerabilidade de famílias pobres ou extremamente pobres."
+  },
+  {
+   "target_id": "CF88:ART.203:INC.V",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O inciso V inclui entre os objetivos da assistência social a garantia de um salário mínimo de benefício mensal à pessoa com deficiência e ao idoso",
+   "after": "O inciso V inclui entre os objetivos da assistência social um benefício mensal de um salário mínimo para a pessoa com deficiência e para o idoso"
+  },
+  {
+   "target_id": "CF88:ART.204",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "sejam pagas com recursos do orçamento da seguridade social, previstos no art. 195, e de outras fontes.",
+   "after": "sejam custeadas pelo orçamento da seguridade social do art. 195 e por outras fontes."
+  },
+  {
+   "target_id": "CF88:ART.204",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e participação da população, por organizações representativas, na formulação das políticas e no controle das ações.",
+   "after": "e participação da população, por meio de suas organizações representativas, ao formular as políticas e ao controlar as ações."
+  },
+  {
+   "target_id": "CF88:ART.206",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "liberdade de aprender, ensinar, pesquisar e divulgar o pensamento, a arte e o saber;",
+   "after": "liberdade de aprender, de ensinar, de pesquisar e de divulgar pensamento, arte e saber;"
+  },
+  {
+   "target_id": "CF88:ART.206",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "piso salarial nacional para os profissionais da educação escolar pública, nos termos de lei federal;",
+   "after": "piso salarial nacional, fixado em lei federal, para os profissionais da educação escolar pública;"
+  },
+  {
+   "target_id": "CF88:ART.206",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Varios principios do artigo se dirigem so ao ensino publico; a frase generalizava.",
+   "before": "Os princípios orientam todo o ensino, público e privado.",
+   "after": "Os princípios orientam o ensino; alguns valem especificamente para a rede pública, como a gratuidade, a gestão democrática e o piso salarial."
+  },
+  {
+   "target_id": "CF88:ART.207",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 207 garante às universidades autonomia didático-científica, administrativa e de gestão financeira e patrimonial, e as obriga",
+   "after": "O art. 207 garante às universidades autonomia didático-científica, autonomia administrativa e autonomia de gestão financeira e patrimonial, e as obriga"
+  },
+  {
+   "target_id": "CF88:ART.207",
+   "section": "atencao",
+   "category": "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao sobre controles externos sem base no texto do artigo.",
+   "before": "A autonomia não é soberania: a universidade continua sujeita à lei e aos controles próprios da administração pública.",
+   "after": "A autonomia é exercida nos limites da Constituição e da lei."
+  },
+  {
+   "target_id": "CF88:ART.208",
+   "section": "atencao",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Alcance interpretativo retirado; mantido o que o texto diz.",
+   "before": "A preferência pela rede regular para o atendimento especializado não exclui outras formas de atendimento quando necessárias, segundo a lei e a interpretação constitucional.",
+   "after": "No inciso III, o atendimento especializado é oferecido preferencialmente na rede regular de ensino."
+  },
+  {
+   "target_id": "CF88:ART.208:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 1º declara que o acesso ao ensino obrigatório e gratuito é direito público subjetivo.",
+   "after": "O § 1º qualifica como direito público subjetivo o acesso ao ensino obrigatório e gratuito."
+  },
+  {
+   "target_id": "CF88:ART.209",
+   "section": "o_que_significa",
+   "category": "EXTENSAO_MINIMA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Visao geral abaixo da faixa minima (120 palavras); \"qualquer particular\" generalizava.",
+   "before": "Qualquer particular pode abrir uma escola ou faculdade, mas não fora das regras.\nA instituição privada segue as normas gerais da educação e depende de autorização do poder público para funcionar, além de passar por avaliação de qualidade.",
+   "after": "A iniciativa privada pode oferecer ensino, desde que cumpra as duas condições do artigo.\nA primeira é seguir as normas gerais da educação nacional, que valem para todas as instituições.\nA segunda envolve o poder público em dois momentos: ele autoriza o funcionamento da instituição e, depois, avalia a qualidade do ensino oferecido."
+  },
+  {
+   "target_id": "CF88:ART.210",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "de modo a assegurar formação básica comum e respeito aos valores culturais e artísticos, nacionais e regionais.",
+   "after": "para garantir uma formação básica comum e o respeito aos valores culturais e artísticos do país e das regiões."
+  },
+  {
+   "target_id": "CF88:ART.212",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada no texto.",
+   "before": "O dinheiro transferido conta para quem recebe, e não para quem envia, o que evita contar a mesma receita duas vezes.",
+   "after": "O dinheiro transferido conta para quem recebe, e não para quem envia (§ 1º)."
+  },
+  {
+   "target_id": "CF88:ART.212",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"reforma de impostos\" e caracterizacao externa; usada a hipotese do texto.",
+   "before": "O § 8º manda recalcular os percentuais se a reforma de impostos mudar a base.",
+   "after": "O § 8º manda redefinir os percentuais se impostos forem extintos ou substituídos."
+  },
+  {
+   "target_id": "CF88:ART.212:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 5º estabelece que a educação básica pública tem como fonte adicional de financiamento a contribuição social do salário-educação, recolhida pelas empresas na forma da lei.",
+   "after": "O § 5º dá à educação básica pública uma fonte extra de recursos: o salário-educação, contribuição social paga pelas empresas na forma da lei."
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "no mínimo 10,5 pontos percentuais em cada rede pública municipal, estadual ou distrital sempre que o valor anual total por aluno (VAAT) não alcançar o mínimo nacional;",
+   "after": "no mínimo 10,5 pontos percentuais em cada rede pública municipal, estadual ou distrital quando o valor anual total por aluno da rede (VAAT) ficar abaixo do mínimo nacional;"
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "cumpridas condições de melhoria de gestão previstas em lei, alcançarem evolução de indicadores",
+   "after": "cumpridas as condições legais de melhoria de gestão, mostrarem evolução de indicadores"
+  },
+  {
+   "target_id": "CF88:ART.214",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e à fixação de meta de aplicação de recursos públicos em educação como proporção do produto interno bruto.",
+   "after": "e à fixação de uma meta de investimento público em educação, medida como proporção do produto interno bruto."
+  },
+  {
+   "target_id": "CF88:ART.216",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e conjuntos urbanos e sítios de valor histórico, paisagístico, artístico, arqueológico, paleontológico, ecológico e científico.",
+   "after": "e conjuntos urbanos e sítios com valor histórico, paisagístico, artístico, arqueológico, paleontológico, ecológico ou científico."
+  },
+  {
+   "target_id": "CF88:ART.216-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 216-A institui o Sistema Nacional de Cultura, organizado em regime de colaboração, de forma descentralizada e participativa, como processo de gestão e promoção conjunta de políticas públicas de cultura,",
+   "after": "O art. 216-A cria o Sistema Nacional de Cultura, um processo de gestão e de promoção compartilhada das políticas culturais, em regime de colaboração, descentralizado e participativo, com políticas"
+  },
+  {
+   "target_id": "CF88:ART.217",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 217 impõe ao Estado o dever de fomentar práticas desportivas formais e não formais, como direito de cada um, observados quatro critérios:",
+   "after": "O art. 217 impõe ao Estado o dever de estimular as práticas esportivas, formais e não formais, que são direito de cada pessoa, observados quatro critérios:"
+  },
+  {
+   "target_id": "CF88:ART.217:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 2º dá à justiça desportiva o prazo máximo de sessenta dias, contados da instauração do processo, para proferir a decisão final.",
+   "after": "O § 2º fixa para a justiça desportiva o limite de sessenta dias, a partir da instauração do processo, para a decisão final."
+  },
+  {
+   "target_id": "CF88:ART.218",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 218 manda o Estado promover e incentivar o desenvolvimento científico, a pesquisa, a capacitação científica e tecnológica e a inovação.",
+   "after": "O art. 218 manda o Estado promover e incentivar a ciência, a pesquisa, a formação científica e tecnológica e a inovação."
+  },
+  {
+   "target_id": "CF88:ART.218",
+   "section": "o_que_significa",
+   "category": "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"fundacoes de amparo\" e designacao externa ao texto; lista de entes completada (Distrito Federal).",
+   "before": "O § 5º permite que Estados reservem parte de suas receitas para fundações de amparo à pesquisa.",
+   "after": "O § 5º permite que Estados e o Distrito Federal reservem parte de suas receitas para entidades públicas de fomento ao ensino e à pesquisa."
+  },
+  {
+   "target_id": "CF88:ART.219",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "para viabilizar o desenvolvimento cultural e socioeconômico, o bem-estar da população e a autonomia tecnológica do País.",
+   "after": "para tornar possíveis o desenvolvimento cultural e socioeconômico, o bem-estar da população e a autonomia tecnológica brasileira."
+  },
+  {
+   "target_id": "CF88:ART.219",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "a atuação de inventores independentes e a criação, absorção, difusão e transferência de tecnologia.",
+   "after": "a atuação de inventores independentes e a criação, a absorção, a difusão e a transferência de tecnologia."
+  },
+  {
+   "target_id": "CF88:ART.219-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "para executar projetos de pesquisa, de desenvolvimento científico e tecnológico e de inovação.",
+   "after": "para executar projetos de pesquisa, de desenvolvimento da ciência e da tecnologia e de inovação."
+  },
+  {
+   "target_id": "CF88:ART.220",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Juizo comparativo (\"principal\") alem do texto.",
+   "before": "O artigo é a principal garantia da liberdade de comunicação.",
+   "after": "O artigo garante a liberdade de comunicação."
+  },
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e de propaganda de produtos, práticas e serviços que possam ser nocivos à saúde e ao meio ambiente.",
+   "after": "e da propaganda de produtos, práticas e serviços potencialmente nocivos à saúde e ao meio ambiente."
+  },
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O § 4º sujeita a propaganda comercial de tabaco, bebidas alcoólicas, agrotóxicos, medicamentos e terapias a restrições legais",
+   "after": "O § 4º submete a restrições legais a propaganda comercial de cinco grupos: tabaco, bebidas alcoólicas, agrotóxicos, medicamentos e terapias,"
+  },
+  {
+   "target_id": "CF88:ART.221",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O art. 221 determina que a produção e a programação das emissoras de rádio e televisão atendam a quatro princípios:",
+   "after": "O art. 221 fixa quatro princípios para o que as emissoras de rádio e televisão produzem e exibem:"
+  },
+  {
+   "target_id": "CF88:ART.221",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "promoção da cultura nacional e regional e estímulo à produção independente que a divulgue;",
+   "after": "promoção da cultura nacional e regional, com estímulo à produção independente voltada à sua divulgação;"
+  },
+  {
+   "target_id": "CF88:ART.221",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e respeito aos valores éticos e sociais da pessoa e da família.",
+   "after": "e respeito aos valores éticos e sociais das pessoas e das famílias."
+  },
+  {
+   "target_id": "CF88:ART.222",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Pelo menos setenta por cento do capital total e do capital votante dessas empresas deve pertencer, direta ou indiretamente, a brasileiros natos ou naturalizados há mais de dez anos, que farão a gestão e definirão a programação.",
+   "after": "No mínimo setenta por cento do capital total e também do votante dessas empresas deve estar, direta ou indiretamente, nas mãos desses brasileiros, que farão a gestão e definirão a programação."
+  },
+  {
+   "target_id": "CF88:ART.222",
+   "section": "exemplo_pratico",
+   "category": "NUMERO_CALCULADO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "O exemplo calculava um limite (trinta por cento) que o texto nao traz.",
+   "before": "Pode adquirir no máximo trinta por cento do capital total e do votante, na forma da lei, e não pode assumir a direção da programação.",
+   "after": "Só pode adquirir participação que mantenha ao menos setenta por cento do capital total e do votante com brasileiros natos ou naturalizados há mais de dez anos, na forma da lei, e não pode assumir a direção da programação."
+  },
+  {
+   "target_id": "CF88:ART.223",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "O Congresso Nacional aprecia o ato no prazo do art. 64, §§ 2º e 4º.",
+   "after": "O Congresso Nacional examina o ato dentro do prazo previsto no art. 64, §§ 2º e 4º."
+  },
+  {
+   "target_id": "CF88:ART.223",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade especulativa reformulada como descricao do texto.",
+   "before": "O texto protege a emissora contra decisões políticas fáceis: para não renovar, exige dois quintos do Congresso em votação nominal; para cancelar antes do prazo, exige decisão judicial.",
+   "after": "O texto torna mais exigentes a não renovação e o cancelamento: para não renovar, exige dois quintos do Congresso em votação nominal; para cancelar antes do prazo, exige decisão judicial."
+  },
+  {
+   "target_id": "CF88:ART.224",
+   "section": "o_que_significa",
+   "category": "EXTENSAO_MINIMA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Visao geral abaixo da faixa minima (120 palavras).",
+   "before": "O Conselho de Comunicação Social é um órgão de apoio ao Congresso Nacional em temas de comunicação, como liberdade de expressão, programação e propriedade de meios.\nEle é auxiliar: não decide no lugar do Congresso. Sua composição e suas atribuições estão na lei.",
+   "after": "O Conselho de Comunicação Social é um órgão de apoio ao Congresso Nacional nos temas do capítulo da comunicação social, que vão da liberdade de expressão à propriedade dos meios e às concessões de rádio e televisão.\nEle é auxiliar: oferece estudos e opiniões, mas não decide no lugar do Congresso.\nO artigo não fixa sua composição nem suas atribuições, que ficam a cargo da lei."
+  },
+  {
+   "target_id": "CF88:ART.225:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e manter regime fiscal favorecido para biocombustíveis e hidrogênio de baixa emissão de carbono, na forma de lei complementar.",
+   "after": "e manter, por lei complementar, regime fiscal favorecido para biocombustíveis e hidrogênio de baixa emissão de carbono."
+  },
+  {
+   "target_id": "CF88:ART.201",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE). Lista do inciso V completada (\"homem ou mulher\").",
+   "before": "Na forma da lei, o regime cobre a incapacidade temporária ou permanente para o trabalho e a idade avançada, protege a maternidade, especialmente a gestante, e o trabalhador em desemprego involuntário, paga salário-família e auxílio-reclusão aos dependentes de segurados de baixa renda e pensão por morte ao cônjuge, ao companheiro e aos dependentes.",
+   "after": "Na forma da lei, o regime cobre a incapacidade temporária ou permanente para o trabalho e a idade avançada, protege a maternidade, especialmente a gestante, e protege o trabalhador em desemprego involuntário. Também paga salário-família e auxílio-reclusão aos dependentes de segurados de baixa renda e pensão por morte do segurado, homem ou mulher, ao cônjuge, ao companheiro e aos dependentes."
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.1",
+   "section": "o_que_diz",
+   "category": "RESSALVA",
+   "detector": "V3_RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva expressa ligada a regra, com a palavra do texto.",
+   "before": "O § 1º proíbe adotar requisitos ou critérios diferentes para conceder benefícios. Ressalva a possibilidade",
+   "after": "O § 1º proíbe adotar requisitos ou critérios diferentes para conceder benefícios, ressalvada a possibilidade"
+  },
+  {
+   "target_id": "CF88:ART.201:PAR.12",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O § 12 manda a lei criar um sistema especial de inclusão previdenciária, com alíquotas diferenciadas, para trabalhadores de baixa renda, inclusive os informais, e para pessoas sem renda própria que se dedicam só ao trabalho doméstico na própria casa, desde que pertençam a famílias de baixa renda.",
+   "after": "O § 12 manda a lei criar um sistema especial de inclusão previdenciária, com alíquotas diferenciadas, para trabalhadores de baixa renda, inclusive os informais. O sistema também alcança pessoas sem renda própria que se dedicam só ao trabalho doméstico na própria casa, desde que pertençam a famílias de baixa renda."
+  },
+  {
+   "target_id": "CF88:ART.202",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "Os parágrafos asseguram ao participante acesso pleno às informações da gestão de seus planos, afirmam que contribuições do empregador, benefícios e condições dos planos não integram o contrato de trabalho nem, salvo os benefícios concedidos, a remuneração, limitam o aporte de recursos públicos e mandam lei complementar disciplinar o patrocínio por entes públicos e por concessionárias e permissionárias.",
+   "after": "Os parágrafos asseguram ao participante acesso pleno às informações da gestão de seus planos. Afirmam que contribuições do empregador, benefícios e condições dos planos não integram o contrato de trabalho nem, salvo os benefícios concedidos, a remuneração. Também limitam o aporte de recursos públicos e mandam lei complementar disciplinar o patrocínio por entes públicos e por concessionárias e permissionárias."
+  },
+  {
+   "target_id": "CF88:ART.202",
+   "section": "o_que_significa",
+   "category": "CONDICAO_FORA_DO_TEXTO",
+   "detector": "V3_EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Exigencia de suficiencia formulada alem do texto (\"reservas que garantam o beneficio contratado\").",
+   "before": "Ela funciona por acumulação de reservas: o dinheiro guardado deve ser suficiente para pagar o benefício prometido.",
+   "after": "Ela funciona por acumulação de reservas, que o texto liga à garantia do benefício contratado."
+  },
+  {
+   "target_id": "CF88:ART.202:PAR.3",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Quantificador reformulado com a ressalva do texto.",
+   "before": "Dinheiro público só pode ir para um fundo de previdência privada quando o ente atua como patrocinador do plano,",
+   "after": "Dinheiro público vai para um fundo de previdência privada apenas na hipótese ressalvada: quando o ente atua como patrocinador do plano,"
+  },
+  {
+   "target_id": "CF88:ART.203:INC.V",
+   "section": "exemplo_pratico",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Palavra absoluta desnecessaria no exemplo.",
+   "before": "Um idoso que nunca contribuiu para a previdência mora sozinho,",
+   "after": "Um idoso que não contribuiu para a previdência mora sozinho,"
+  },
+  {
+   "target_id": "CF88:ART.203:INC.V",
+   "section": "atencao",
+   "category": "TELEOLOGIA",
+   "detector": "V3_TELEOLOGY",
+   "reason": "Formulacao confundida com finalidade; reescrita com o caput.",
+   "before": "O inciso depende do caput: é um objetivo da assistência social, prestado a quem necessitar.",
+   "after": "O inciso depende do caput: a assistência social é prestada a quem dela necessitar."
+  },
+  {
+   "target_id": "CF88:ART.205",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Reformulado com a expressao do proprio texto (\"direito de todos\").",
+   "before": "A educação tem um titular amplo, todas as pessoas, e responsáveis compartilhados:",
+   "after": "A educação é direito de todos e tem responsáveis compartilhados:"
+  },
+  {
+   "target_id": "CF88:ART.206",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elementos do inciso V (\"na forma da lei\", \"concurso publico\") restaurados.",
+   "before": "valorização dos profissionais da educação escolar, com planos de carreira e ingresso nas redes públicas só por concurso de provas e títulos;",
+   "after": "valorização dos profissionais da educação escolar, com planos de carreira, na forma da lei, e ingresso nas redes públicas exclusivamente por concurso público de provas e títulos;"
+  },
+  {
+   "target_id": "CF88:ART.207",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "O § 1º e permissivo; a obrigacao do caput descrita com o verbo do texto (\"obedecerao\").",
+   "before": "e as obriga a respeitar a indissociabilidade entre ensino, pesquisa e extensão.",
+   "after": "e determina que elas obedeçam à indissociabilidade entre ensino, pesquisa e extensão."
+  },
+  {
+   "target_id": "CF88:ART.208",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do inciso V reconhecido com a expressao do texto.",
+   "before": "acesso aos níveis mais altos do ensino, da pesquisa e da criação artística conforme a capacidade de cada um;",
+   "after": "acesso, segundo a capacidade de cada um, aos níveis mais elevados de ensino, de pesquisa e de criação artística;"
+  },
+  {
+   "target_id": "CF88:ART.208",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do inciso VII (assistencia a saude) restaurado.",
+   "before": "e programas suplementares de material escolar, transporte, alimentação e saúde em toda a educação básica.",
+   "after": "e, em todas as etapas da educação básica, programas suplementares de transporte, alimentação, assistência à saúde e material didático-escolar."
+  },
+  {
+   "target_id": "CF88:ART.209",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Quantificador desnecessario; frase reformulada.",
+   "before": "A primeira é seguir as normas gerais da educação nacional, que valem para todas as instituições.",
+   "after": "A primeira condição, prevista no inciso I, é cumprir as normas gerais da educação nacional."
+  },
+  {
+   "target_id": "CF88:ART.210",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Afirmacao de resultado universal reformulada com a finalidade declarada no texto.",
+   "before": "Os conteúdos mínimos garantem que todos os alunos do país tenham uma base comum, sem apagar as diferenças regionais.",
+   "after": "Os conteúdos mínimos buscam uma formação básica comum no ensino fundamental, sem apagar os valores regionais."
+  },
+  {
+   "target_id": "CF88:ART.212",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O art. 212 obriga a União a aplicar a cada ano, no mínimo, dezoito por cento, e os Estados, o Distrito Federal e os Municípios, no mínimo, vinte e cinco por cento da receita de impostos, incluída a que vem de transferências, na manutenção e no desenvolvimento do ensino.",
+   "after": "O art. 212 fixa mínimos anuais de aplicação da receita de impostos, incluída a que vem de transferências, na manutenção e no desenvolvimento do ensino. A União aplica nunca menos de dezoito por cento; os Estados, o Distrito Federal e os Municípios, no mínimo vinte e cinco por cento."
+  },
+  {
+   "target_id": "CF88:ART.212",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE). Dependencia de lei (§ 9º) mencionada.",
+   "before": "Os parágrafos esclarecem que a parcela transferida a outro ente não conta como receita de quem transfere, indicam o que entra no cálculo, dão prioridade ao ensino obrigatório, tratam dos programas suplementares, do salário-educação, da proibição de pagar aposentadorias com esses recursos, da redefinição dos percentuais se impostos forem extintos ou substituídos e da fiscalização das despesas.",
+   "after": "Os parágrafos esclarecem que a parcela transferida a outro ente não conta como receita de quem transfere e indicam o que entra no cálculo. Também dão prioridade ao ensino obrigatório e tratam dos programas suplementares, do salário-educação, da proibição de pagar aposentadorias com esses recursos, da redefinição dos percentuais se impostos forem extintos ou substituídos e da fiscalização das despesas, que a lei disciplinará."
+  },
+  {
+   "target_id": "CF88:ART.212-A",
+   "section": "o_que_significa",
+   "category": "DEPENDENCIA_DE_LEI_OMITIDA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "O texto remete a lei em varios incisos; o corpo nao dizia. Inciso XII incluido.",
+   "before": "A União entra com recursos adicionais, explicados no bloco do inciso V.",
+   "after": "A União entra com recursos adicionais, explicados no bloco do inciso V. A organização dos fundos, o cálculo dos valores por aluno e o piso do magistério ficam a cargo da lei (incisos X e XII)."
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "\"sempre\" reformulado (ABSOLUTE_CLAIM).",
+   "before": "sempre que o valor anual por aluno (VAAF) não alcançar o mínimo nacional;",
+   "after": "quando o valor anual por aluno do fundo (VAAF) ficar abaixo do mínimo nacional;"
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "V3_NUMBER_NOT_IN_TEXT",
+   "reason": "Quantidade expressa na mesma unidade do texto (percentual).",
+   "before": "A complementação federal tem três partes, que somam o mínimo de 23 pontos.",
+   "after": "A complementação federal tem três partes, e o total é de, no mínimo, 23% dos recursos do inciso II."
+  },
+  {
+   "target_id": "CF88:ART.212-A:INC.V",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "\"todos os recursos\" generalizava; descrito com o inciso VI.",
+   "before": "A segunda olha para cada rede: considera todos os recursos educacionais da rede, e não só o fundo.",
+   "after": "A segunda olha para cada rede: o VAAT considera, além do fundo, outras receitas e transferências vinculadas à educação (inciso VI)."
+  },
+  {
+   "target_id": "CF88:ART.213",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O art. 213 destina os recursos públicos às escolas públicas e permite dirigi-los também a escolas comunitárias, confessionais ou filantrópicas, definidas em lei, que comprovem finalidade não lucrativa, apliquem seus excedentes em educação e garantam que, se encerrarem as atividades, seu patrimônio irá para outra escola desse tipo ou para o poder público.",
+   "after": "O art. 213 destina os recursos públicos às escolas públicas e permite dirigi-los também a escolas comunitárias, confessionais ou filantrópicas, definidas em lei. Essas escolas precisam comprovar finalidade não lucrativa, aplicar seus excedentes em educação e garantir que, se encerrarem as atividades, seu patrimônio irá para outra escola desse tipo ou para o poder público."
+  },
+  {
+   "target_id": "CF88:ART.213",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Obrigacao descrita com a expressao do texto (\"ficando o poder publico obrigado\").",
+   "before": "nesse caso, o poder público deve investir prioritariamente na expansão de sua rede ali.",
+   "after": "nesse caso, o poder público fica obrigado a investir prioritariamente na expansão de sua rede ali."
+  },
+  {
+   "target_id": "CF88:ART.214",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Quantificador substituido pela expressao do texto.",
+   "before": "que organiza os esforços de todos os entes em torno de metas comuns.",
+   "after": "que organiza os esforços dos poderes públicos das diferentes esferas em torno de metas comuns."
+  },
+  {
+   "target_id": "CF88:ART.214",
+   "section": "exemplo_pratico",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "Meta universal inventada no exemplo.",
+   "before": "como alfabetizar todas as crianças até determinada série e ampliar",
+   "after": "como metas de alfabetização e de ampliação do atendimento escolar e de ampliar"
+  },
+  {
+   "target_id": "CF88:ART.214",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "Essas ações devem conduzir à erradicação do analfabetismo, à universalização do atendimento escolar, à melhoria da qualidade do ensino, à formação para o trabalho, à promoção humanística, científica e tecnológica do País e à fixação de uma meta de investimento público em educação, medida como proporção do produto interno bruto.",
+   "after": "Essas ações devem conduzir à erradicação do analfabetismo, à universalização do atendimento escolar, à melhoria da qualidade do ensino e à formação para o trabalho. Também devem levar à promoção humanística, científica e tecnológica do País e à fixação de uma meta de investimento público em educação, medida como proporção do produto interno bruto."
+  },
+  {
+   "target_id": "CF88:ART.215",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "A lei fixa datas comemorativas importantes para os diferentes segmentos étnicos e estabelece o Plano Nacional de Cultura, plurianual, voltado à defesa do patrimônio cultural, à produção e difusão de bens culturais, à formação de gestores da cultura, à democratização do acesso e à valorização da diversidade étnica e regional.",
+   "after": "A lei fixa datas comemorativas importantes para os diferentes segmentos étnicos. A lei também estabelece o Plano Nacional de Cultura, plurianual, voltado à defesa do patrimônio cultural, à produção e difusão de bens culturais, à formação de gestores da cultura, à democratização do acesso e à valorização da diversidade étnica e regional."
+  },
+  {
+   "target_id": "CF88:ART.216",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do inciso IV resumido de forma imprecisa.",
+   "before": "obras, objetos, documentos, edificações e espaços culturais;",
+   "after": "obras, objetos, documentos, edificações e demais espaços destinados a manifestações artístico-culturais;"
+  },
+  {
+   "target_id": "CF88:ART.216-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O sistema se fundamenta na política nacional de cultura e no Plano Nacional de Cultura e segue doze princípios, entre eles a diversidade das expressões culturais, a universalização do acesso, a cooperação entre os entes, a transparência e a ampliação progressiva dos recursos públicos para a cultura.",
+   "after": "O sistema se fundamenta na política nacional de cultura e no Plano Nacional de Cultura. Segue doze princípios, entre eles a diversidade das expressões culturais, a universalização do acesso, a cooperação entre os entes, a transparência e a ampliação progressiva dos recursos públicos para a cultura."
+  },
+  {
+   "target_id": "CF88:ART.218",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Snapshot permissivo em parte; o verbo do texto (\"voltar-se-a\") e descritivo.",
+   "before": "e a pesquisa tecnológica deve voltar-se preponderantemente aos problemas brasileiros e ao sistema produtivo nacional e regional.",
+   "after": "e a pesquisa tecnológica se volta preponderantemente aos problemas brasileiros e ao sistema produtivo nacional e regional."
+  },
+  {
+   "target_id": "CF88:ART.219",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+   "before": "O parágrafo único manda o Estado estimular a inovação nas empresas e em outros entes públicos ou privados, a criação e a manutenção de parques e polos tecnológicos e de outros ambientes de inovação, a atuação de inventores independentes e a criação, a absorção, a difusão e a transferência de tecnologia.",
+   "after": "O parágrafo único manda o Estado estimular a inovação nas empresas e em outros entes públicos ou privados. Também deve estimular parques e polos tecnológicos e outros ambientes de inovação, a atuação de inventores independentes e a criação, a absorção, a difusão e a transferência de tecnologia."
+  },
+  {
+   "target_id": "CF88:ART.219-B",
+   "section": "o_que_significa",
+   "category": "CONDICAO_FORA_DO_TEXTO",
+   "detector": "V3_CONDITION_NOT_IN_TEXT",
+   "reason": "Condicao formulada alem da letra do texto.",
+   "before": "Cada um dos demais entes pode editar leis sobre suas particularidades, desde que respeite essas regras gerais.",
+   "after": "Os demais entes legislam concorrentemente sobre suas particularidades, ao lado das regras gerais da lei federal."
+  },
+  {
+   "target_id": "CF88:ART.220",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Termo tecnico usado no corpo sem definicao.",
+   "before": "{\"termo\": \"Oligopólio\", \"explicacao\": \"controle de um mercado por poucas empresas.\"}",
+   "after": "{\"termo\": \"Oligopólio\", \"explicacao\": \"controle de um mercado por poucas empresas.\"}, {\"termo\": \"Monopólio\", \"explicacao\": \"controle de um mercado por uma única empresa ou grupo.\"}"
+  },
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "\"sempre\" (ABSOLUTE_CLAIM) desnecessario.",
+   "before": "e exige, sempre que necessário, advertência sobre os malefícios do uso.",
+   "after": "e exige, quando necessário, advertência sobre os malefícios do uso."
+  },
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do inciso I restaurado.",
+   "before": "as faixas etárias a que não se recomendam e os locais e horários inadequados;",
+   "after": "as faixas etárias a que não se recomendam e os locais e horários em que a apresentação se mostre inadequada;"
+  },
+  {
+   "target_id": "CF88:ART.221",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento do inciso III reconhecido com a expressao do texto.",
+   "before": "regionalização da produção cultural, artística e jornalística, conforme percentuais fixados em lei;",
+   "after": "regionalização da produção cultural, artística e jornalística, segundo os percentuais estabelecidos em lei;"
+  },
+  {
+   "target_id": "CF88:ART.222",
+   "section": "o_que_significa",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE). Requisito de constituicao sob leis brasileiras restaurado.",
+   "before": "Uma empresa com sede no Brasil pode ser dona de jornal ou emissora, mas ao menos setenta por cento do capital, inclusive o que dá direito a voto, deve estar com brasileiros natos ou naturalizados há mais de dez anos, que também dirigem a empresa e a programação.",
+   "after": "Uma empresa constituída sob as leis brasileiras e sediada no País pode ser dona de jornal ou emissora. Mas ao menos setenta por cento do capital, inclusive o que dá direito a voto, deve estar com brasileiros natos ou naturalizados há mais de dez anos, que também dirigem a empresa e a programação."
+  },
+  {
+   "target_id": "CF88:ART.225:PAR.1",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "\"so pode\" reformulado com o texto (\"permitidas somente atraves de lei\").",
+   "before": "No inciso III, uma área protegida só pode ser alterada ou suprimida por lei,",
+   "after": "No inciso III, a alteração ou a supressão de uma área protegida depende de lei,"
+  },
+  {
+   "target_id": "CF88:ART.225:PAR.1",
+   "section": "exemplo_pratico",
+   "category": "GENERALIZACAO_ABSOLUTA",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "\"so pode\" reformulado.",
+   "before": "Pelo inciso III, a redução só pode ser feita por lei.",
+   "after": "Pelo inciso III, a redução depende de lei."
+  }
+ ]
+}

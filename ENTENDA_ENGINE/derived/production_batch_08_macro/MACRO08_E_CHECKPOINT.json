@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_E",
+ "namespace": "ADCT",
+ "articles_range": "ADCT 31-60",
+ "stats": {
+  "articles": 13,
+  "targets_evaluated": 133,
+  "targets_current": 103,
+  "select": 14,
+  "skip": 89,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 3,
+   "EXCLUDED_REVOKED": 27
+  },
+  "new_explanations": 14,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 1,
+   "OVERVIEW": 13
+  },
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {},
+  "pending_in_triage": 0,
+  "human_approved_t1": 14,
+  "skipped_articles": [
+   "ADCT:ART.31",
+   "ADCT:ART.32",
+   "ADCT:ART.33",
+   "ADCT:ART.36",
+   "ADCT:ART.37",
+   "ADCT:ART.39",
+   "ADCT:ART.41",
+   "ADCT:ART.43",
+   "ADCT:ART.44",
+   "ADCT:ART.45",
+   "ADCT:ART.47",
+   "ADCT:ART.48",
+   "ADCT:ART.50",
+   "ADCT:ART.51",
+   "ADCT:ART.55",
+   "ADCT:ART.56",
+   "ADCT:ART.57",
+   "ADCT:ART.58",
+   "ADCT:ART.59"
+  ]
+ },
+ "critic": {
+  "corrections": 20,
+  "by_category": {
+   "AFIRMACAO_SOBRE_ESTADO_DE_LEI": 2,
+   "COPIA_DA_LEI_SECA": 7,
+   "EXCECAO_OMITIDA": 1,
+   "FRASE_LONGA": 3,
+   "GLOSSARIO": 1,
+   "LISTA_INCOMPLETA": 1,
+   "MODALIDADE": 1,
+   "NUMERO": 1,
+   "REMISSAO": 1,
+   "REPETICAO": 1,
+   "TELEOLOGIA": 1
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "status": "PASS",
+  "approved_by_recorded_round": 179,
+  "approval_gate": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 14,
+ "status": "PASS"
+}
