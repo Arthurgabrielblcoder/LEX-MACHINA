@@ -13,6 +13,8 @@ Usage: python build_sd_staging.py [--out DIR] [--profile BATCH04_RUN3]
 Profiles: default (no profile) = the physically approved staging_sd_v1 (163 ENTENDA, RUN1), reproduced byte for byte.
 BATCH04_RUN3 = consolidation candidate: + ENTENDA Batch04 (CF88 arts. 25-36, approved by rounds), REF pair from the approved RUN3
 export (byte copy), + the physically validated ARTICLE_SEARCH indexes (CF88 + CC2002, byte copy, hash-checked).
+FULL_CF_ENTENDA_810 = BATCH04_RUN3 with the ENTENDA pair rebuilt from the whole approved chain of the final reconciliation (selection
+derived from the real corpora; see approved_entenda_chain).
 """
 import argparse
 import hashlib
@@ -67,6 +69,20 @@ PROFILES = {
         entenda_note='ENTENDA: CF88 arts. 1 a 36 (inclui 29-A) + 9 pilotos aprovados (arts. 37, 37 §6, 37 §10, 60, 60 §4, 60 §4 IV, 150, 225, '
                      'ADCT 10 II); ausencia de linha no lookup = sem ENTENDA aprovado.',
         article_indexes=ARTICLE_INDEXES),
+    # Full approved CF88/ADCT corpus after the final Macro07 x Macro08 reconciliation. Selection is DERIVED (never listed): union of
+    # every ACTIVE HUMAN_APPROVED_T1 record of the canonical approved chain = main corpus + prior_corpora of the last macro spec + the
+    # last macro corpus. Same ENTENDA schema/engine, same runtime, same RUN3 pair and same validated article indexes as BATCH04_RUN3.
+    'FULL_CF_ENTENDA_810': dict(
+        selection='APPROVED_CHAIN', expected_entenda=None, max_article=None,
+        chain=dict(spec='ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO_SPEC.json',
+                   corpus='ENTENDA_ENGINE/derived/production_batch_08_macro/CF88_MACRO_08.entenda.jsonl'),
+        entenda_scope='CF88_ADCT_FULL_HUMAN_APPROVED_T1',
+        entenda_tags=['entenda-cf-batch01-approved-2026-09-28', 'entenda-cf-batch02-approved-2026-09-28',
+                      'entenda-cf-batch03-approved-2026-09-29', 'entenda-batch05-t1-frozen-2026-10-04',
+                      'reconcile-macro07-macro08 fa9719a6bd335275252473a5f154e4e11f5532f4 (Batch04-06, Macro07 249/249, Macro08 179/179)'],
+        entenda_note='ENTENDA: acervo completo CF88 + ADCT aprovado por revisao humana (HUMAN_APPROVED_T1) na reconciliacao final '
+                     'Macro07 x Macro08; ausencia de linha no lookup = sem ENTENDA aprovado.',
+        article_indexes=ARTICLE_INDEXES),
 }
 
 
@@ -114,6 +130,104 @@ def approved_entenda(ctx, batches=BATCHES, expected=EXPECTED_ENTENDA, max_articl
     if out_of_scope:
         raise BuildError(f'ENTENDA_OUT_OF_SCOPE {out_of_scope}')
     return rows
+
+
+def approved_entenda_chain(ctx, chain):
+    """Union of the ACTIVE HUMAN_APPROVED_T1 records of the approved chain (fail closed): every ACTIVE record of those corpora must be
+    approved, one explanation per target and per explanation_key, no RETIRED record, the 9 approved pilots included.
+    Returns [(context, rows)]: each record keeps the ENTENDA context of the batch that approved it -- the chain corpus uses the config its
+    MACRO_SPEC declares (entenda_config, a text profile read from the device runtime), every other corpus the base config."""
+    spec = json.loads((ROOT / chain['spec']).read_text(encoding='utf-8'))
+    cctx = E.NormContext('CF88', ROOT / spec['entenda_config']) if spec.get('entenda_config') else ctx
+    files = [(ROOT / ctx.ncfg['corpus'], 0)] + [(ROOT / f, 0) for f in spec['prior_corpora']] + [(ROOT / chain['corpus'], 1)]
+    by_tid, keys, group = {}, {}, {}
+    for f, gi in files:
+        for r in E.load_corpus(f):
+            if r['status'] != 'ACTIVE':
+                continue
+            if r['review_status'] != 'HUMAN_APPROVED_T1':
+                raise BuildError(f"ENTENDA_NOT_APPROVED_IN_CHAIN {f.name} {r['target_id']} {r['review_status']}")
+            prev = by_tid.get(r['target_id'])
+            if prev is not None:
+                raise BuildError(f"ENTENDA_DUPLICATE_TARGET {r['target_id']} {prev['explanation_id']} {r['explanation_id']}")
+            if r['explanation_key'] in keys:
+                raise BuildError(f"ENTENDA_DUPLICATE_KEY {r['explanation_key']}")
+            by_tid[r['target_id']] = r
+            keys[r['explanation_key']] = f.name
+            group[r['target_id']] = gi
+    missing = [t for t in APPROVED_PILOTS if t not in by_tid]
+    if missing:
+        raise BuildError(f'PILOT_MISSING {missing}')
+    covered = [c for r in by_tid.values() for c in r['granularity'].get('covered_targets', [])]
+    clash = sorted(set(covered) & set(by_tid)) + sorted({c for c in covered if covered.count(c) > 1})
+    if clash:
+        raise BuildError(f'ENTENDA_COVERED_TARGET_CONFLICT {clash[:5]}')
+    # hierarchy rule of entenda_engine.validate_corpus for parent/child pairs that fall in different groups
+    for tid, r in by_tid.items():
+        for anc in r['granularity']['context_targets']:
+            if anc in by_tid and group[anc] != group[tid]:
+                a = by_tid[anc]
+                for k in E.REQUIRED_TEXT:
+                    if E._sentences(r['content'][k]) & E._sentences(a['content'][k]):
+                        raise BuildError(f'ENTENDA_REPEATED_ACROSS_HIERARCHY {tid} x {anc}: {k}')
+                    if E.similarity(r['content'][k], a['content'][k]) > ctx.limits['max_section_similarity']:
+                        raise BuildError(f'ENTENDA_REPEATED_ACROSS_HIERARCHY {tid} x {anc}: {k}')
+    out = []
+    for gi, gctx in ((0, ctx), (1, cctx)):
+        rows = [by_tid[t] for t in by_tid if group[t] == gi]
+        out.append((gctx, sorted(rows, key=lambda r: gctx.order[r['target_id']])))
+    return out
+
+
+def build_entenda_groups(groups, sd):
+    """One ENTENDA pair from several validated groups: each group goes through entenda_engine.build_entenda_index with its own context
+    (all validations, freshness and rendering of the engine); the blocks are then laid out exactly as build_entenda_index does for a
+    single corpus (same header, blocks ordered by target_id, lookup sorted by target_id, same row format)."""
+    blocks, rows, mans, heads = {}, [], [], set()
+    tmp = Path(tempfile.mkdtemp(prefix='lexv1_entenda_'))
+    try:
+        for i, (gctx, g) in enumerate(groups):
+            d = tmp / str(i)
+            E.build_entenda_index(gctx, g, d)
+            pay = (d / 'ENTENDA_PAYLOAD.DAT').read_bytes()
+            mans.append(json.loads((d / 'ENTENDA_BUILD_MANIFEST.json').read_text(encoding='utf-8')))
+            first = None
+            for l in (d / 'ENTENDA_LOOKUP.IDX').read_text(encoding='utf-8').splitlines():
+                if l and not l.startswith('#'):
+                    p = l.split('|')
+                    o, n = int(p[1]), int(p[2])
+                    first = o if first is None else min(first, o)
+                    if p[7] == 'DIRECT':
+                        blocks[p[0]] = (o, pay[o:o + n])
+                    rows.append((p[0], p[3:], pay[o:o + n]))
+            heads.add(pay[:first])
+    finally:
+        shutil.rmtree(tmp)
+    if len(heads) != 1:
+        raise BuildError('ENTENDA_PAYLOAD_HEADER_DIVERGES')
+    head = heads.pop()
+    order = sorted(blocks)
+    offset, off, anchor_of = len(head), {}, {}
+    for t in order:
+        off[t] = offset
+        offset += len(blocks[t][1])
+        anchor_of.setdefault(blocks[t][1], t)
+    lookup = []
+    for tid, tail, blob in rows:
+        anchor = anchor_of[blob] if tail[-1] == 'COVERED_BY_BLOCK' else tid
+        lookup.append(f"{tid}|{off[anchor]}|{len(blob)}|{'|'.join(tail)}")
+    lookup.sort(key=lambda l: l.split('|', 1)[0])
+    if len({l.split('|', 1)[0] for l in lookup}) != len(lookup):
+        raise BuildError('ENTENDA_LOOKUP_DUPLICATE_KEY')
+    d = sd / '30_ENTENDA'
+    d.mkdir(parents=True)
+    (d / 'ENTENDA_PAYLOAD.DAT').write_bytes(head + b''.join(blocks[t][1] for t in order))
+    (d / 'ENTENDA_LOOKUP.IDX').write_bytes(('#LEXMACHINA|ENTENDA_LOOKUP|2\n#TARGET_ID|OFFSET|BYTES|EXPLANATION_ID|VALIDITY|FRESHNESS|REVIEW|RESOLUTION\n'
+                                            + ''.join(l + '\n' for l in lookup)).encode('utf-8'))
+    return dict(schema_version=2, contract_version=E.CONTRACT, explanations=len(blocks), lookup_rows=len(lookup),
+                groups=[dict(explanations=m['explanations'], lookup_rows=m['lookup_rows'], hierarchy_pairs=len(m['hierarchy_pairs']),
+                             warning_counts=m['warning_counts']) for m in mans],
+                per_explanation=[x for m in mans for x in m['per_explanation']])
 
 
 def build_entenda(ctx, rows, sd):
@@ -309,9 +423,14 @@ def build(out, ref_dir=REF_DIR, require_committed_refs=True, reference_engine_ve
     sd.mkdir(parents=True)
     host.mkdir(parents=True)
     ctx = E.NormContext('CF88')
-    rows = (approved_entenda(ctx, prof['batches'], prof['expected_entenda'], prof['max_article']) if prof else approved_entenda(ctx))
+    if prof and prof.get('selection') == 'APPROVED_CHAIN':
+        groups = approved_entenda_chain(ctx, prof['chain'])
+        rows = [r for _, g in groups for r in g]
+        ent_manifest = build_entenda_groups(groups, sd)
+    else:
+        rows = (approved_entenda(ctx, prof['batches'], prof['expected_entenda'], prof['max_article']) if prof else approved_entenda(ctx))
+        ent_manifest, _ = build_entenda(ctx, rows, sd)
     entenda_scope = prof['entenda_scope'] if prof else ENTENDA_SCOPE
-    ent_manifest, _ = build_entenda(ctx, rows, sd)
     ref_blobs = build_references(sd, ref_dir, require_committed_refs)
     data, prov, idx, diff = build_runtime(sd, host, ctx)
     layers = validate_layers_against_runtime(idx, sd)
