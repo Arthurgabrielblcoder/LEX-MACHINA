@@ -341,6 +341,12 @@ def _retitle(text, nm):
 def priority(doc, c, nm):
     rows = sorted(doc['rows'], key=lambda x: (QUEUE_ORDER.index(x['queue']), RISK_ORDER[x['legal_risk']], CX_ORDER[x['verification_complexity']],
                                               c.ctx.order[x['target_id']]))
+    if not rows and c.spec.get('round_approvals'):   # a prioridade é gerada antes de doc['round_approvals']
+        n = sum(1 for r in c.records.values() if r['review_status'] == 'HUMAN_APPROVED_T1')
+        return '\n'.join([f"# {nm.p} — PRIORIDADE DA REVISÃO HUMANA", '',
+                          f"Lote `{doc['batch_id']}` · fechado: nenhuma explicação nova pendente; revisão humana concluída "
+                          f"({n} HUMAN_APPROVED_T1 novos; 0 `PENDING_HUMAN_REVIEW`).", '',
+                          '- nenhum item pendente']) + '\n'
     L = [f"# {nm.p} — PRIORIDADE DA REVISÃO HUMANA", '',
          f"Lote `{doc['batch_id']}` · {len(rows)} explicações novas, todas `PENDING_HUMAN_REVIEW`. Ordem: fila (E, D, C, B, A), risco jurídico, "
          'complexidade de verificação e posição no texto. Ler de cima para baixo; o pacote de cada fila traz o detalhe.', '',
@@ -588,9 +594,14 @@ def d_second_pass_diagnostic(doc, nm):
 def report(doc, sel, c, ms, nm):
     s, m = sel['summary'], doc['metrics']
     rows = doc['rows']
+    closed = bool(doc.get('round_approvals')) and not rows
     L = [f"# {ms['batch_id']} — relatório de escala", '',
          f"Data de referência: {ms['as_of_date']} · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · "
-         + (f"**{doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 novos** pela(s) rodada(s) humana(s) registrada(s) "
+         + (f"**FECHADO: revisão jurídica humana concluída para todas as explicações novas do lote ({doc['human_approved_t1_granted']}/"
+            f"{s['new_explanations']} HUMAN_APPROVED_T1 em {len(doc['round_approvals']['review_scopes'])} rodadas humanas registradas: "
+            f"{', '.join(f'`{s}`' for s in doc['round_approvals']['review_scopes'])}); 0 pendências**; AUTO_APPROVE_LOW/MEDIUM e "
+            'MICROAUTO_APPLY OFF.' if closed else
+            f"**{doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 novos** pela(s) rodada(s) humana(s) registrada(s) "
             f"({', '.join(f'`{s}`' for s in doc['round_approvals']['review_scopes'])}); {len(rows)} explicações novas seguem `PENDING_HUMAN_REVIEW`; "
             'AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.' if doc.get('round_approvals') else
             '**0 HUMAN_APPROVED_T1 novos**: todas as explicações novas estão `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.'), '',
@@ -601,8 +612,11 @@ def report(doc, sel, c, ms, nm):
          + ', '.join(f'{k} {v}' for k, v in sorted(s['by_classification'].items()) if k.startswith('EXCLUDED')) + ') |',
          f"| SELECT | {s['selected']} = {s['new_explanations']} novas + {s['reused_from_pilot']} reutilizada(s) já aprovada(s) |",
          f"| SKIP | {s['by_classification'].get('NO_SEPARATE_EXPLANATION', 0)} (todos com motivo e explicação que os cobre) |",
-         f"| Papéis das novas | {', '.join(f'{k} {v}' for k, v in sorted(Counter(x['role'] for x in rows).items()))} |", '',
-         '## Por sub-bloco', '', '| Sub-bloco | Artigos | Vigentes | SELECT | SKIP | Novas | LOW/MED/HIGH | A/B/C/D/E | Correções do critic |',
+         f"| Papéis das novas | {', '.join(f'{k} {v}' for k, v in sorted(Counter(x['role'] for x in rows).items()))} |" if not closed else
+         f"| Papéis das novas (todas aprovadas) | "
+         f"{', '.join(f'{k} {v}' for k, v in sorted(Counter(r['granularity']['role'] for r in c.records.values()).items()))} |", '',
+         '## Por sub-bloco', ''] + (['Lote fechado: esta tabela e as de eixos e filas contam só itens pendentes (todos 0); a triagem anterior a '
+                                    'cada rodada está congelada em `history/pre_round_*/`.', ''] if closed else []) + [ '| Sub-bloco | Artigos | Vigentes | SELECT | SKIP | Novas | LOW/MED/HIGH | A/B/C/D/E | Correções do critic |',
          '|---|---|---|---|---|---|---|---|---|']
     spec = doc_spec(c)
     for x in ms['sub_blocks_built']:
@@ -617,8 +631,8 @@ def report(doc, sel, c, ms, nm):
         L.append(f"| {a} | {doc['legal_risk_counts'].get(a, 0)} | | {b} | {doc['complexity_counts'].get(b, 0)} |")
     L += ['', '| Fila | Itens |', '|---|---|'] + [f"| {q} | {doc['counts'][q]} |" for q in BP.QUEUES]
     L += ['', f"D = {doc['d_ratio'] * 100:.1f}% das novas" + (' — acima de 40%: ver diagnóstico de escalonamento.' if doc['d_escalation_diagnostic'] else '.'),
-          f"Jurisprudência: {', '.join(f'{k} {v}' for k, v in sorted(doc['jurisprudence_counts'].items()))}.", '',
-          '## Motivos dos D', ''] + [f"- {k}: {v}" for k, v in doc['d_reasons'].items()]
+          f"Jurisprudência: {', '.join(f'{k} {v}' for k, v in sorted(doc['jurisprudence_counts'].items())) or 'nenhum item pendente'}.", '',
+          '## Motivos dos D', ''] + ([f"- {k}: {v}" for k, v in doc['d_reasons'].items()] or ['- nenhum item D pendente'])
     L += ['', '## Achados REVIEW_REQUIRED', ''] + ([f"- {k}: {v}" for k, v in doc['finding_counts'].items()] or ['- nenhum'])
     L += ['', '## Dependências externas', '']
     ext = [x for x in rows if x['external_dependency'] and any(not d.startswith('JURISPRUD') for d in x['external_dependency'])]
@@ -631,7 +645,8 @@ def report(doc, sel, c, ms, nm):
     L += [f"| — {k} | {_n(v)} |" for k, v in m['presented_by_file'].items()]
     L += [f"| Redução vs. modelo antigo | {_n(m['reduction_abs'])} ({m['reduction_pct']}%) |", '',
           '## Checks estruturais', '', f"- {doc['checks']['status']}: contrato do motor, Lei Seca idêntica ao runtime em todos os registros, "
-          f"0 HARD_FAIL, 0 aprovado novo, 0 STALE.", '',
+          + ('0 HARD_FAIL, 0 aprovação automática (aprovações só por rodada humana registrada), 0 STALE.' if doc.get('round_approvals') else
+             '0 HARD_FAIL, 0 aprovado novo, 0 STALE.'), '',
           '## Limites do validador', ''] + [f'- {x}' for x in V3.LIMITS]
     return '\n'.join(L) + '\n'
 
@@ -648,7 +663,9 @@ def manifest(bd, ms, nm, doc, sel):
     ctx_errata = _status_errata_input(ms['norma_id'])
     _json(bd / nm.manifest, dict(
         schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'],
-        status=(f"IN_HUMAN_REVIEW: {doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 por rodada(s) humana(s) registrada(s); "
+        status=(f"CLOSED: revisao humana concluida; {doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 novos; 0 pendentes"
+                if doc.get('round_approvals') and not doc['rows'] else
+                f"IN_HUMAN_REVIEW: {doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 por rodada(s) humana(s) registrada(s); "
                 f"{len(doc['rows'])} pendente(s)") if doc.get('round_approvals') else 'CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado',
         builder='ENTENDA_ENGINE/build_entenda_macro_batch.py', validator=doc['validator'], sub_blocks_built=ms['sub_blocks_built'],
         selection=dict(targets_evaluated=sel['summary']['targets_evaluated'], current=sel['summary']['targets_current'], selected=sel['summary']['selected'],
@@ -674,7 +691,8 @@ def _status_errata_input(norma_id):
 def root_inputs(bd, ms):
     """Versioned editorial inputs at the batch root (besides drafts/ and history/)."""
     names = ('MACRO_SPEC.json', 'EDITORIAL_INPUT.json', 'RELATIONS_PIN.json', 'BACKLOG_INPUT.json', 'SECOND_PASS_INPUT.json',
-             f"{ms['packet_prefix']}_TRANSITION_EVIDENCE.json") + tuple(r['decisions'] for r in human_rounds(ms))
+             f"{ms['packet_prefix']}_TRANSITION_EVIDENCE.json", f"{ms['packet_prefix']}_FINAL_CLOSURE_LOG.md") + \
+        tuple(r['decisions'] for r in human_rounds(ms))
     return [p for p in names if (Path(bd) / p).is_file()]
 
 

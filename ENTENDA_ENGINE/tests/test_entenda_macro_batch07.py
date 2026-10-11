@@ -807,5 +807,72 @@ class MacroBatch07HumanRoundA2(_HumanRoundChecks, unittest.TestCase):
         self.assertIn('nenhum item pendente nesta fila.', (BD / 'MACRO07_FULL_D_REVIEW.md').read_text(encoding='utf-8'))
         self.assertEqual(self.triage['d_ratio'], 0)
 
+class MacroBatch07FinalClosure(unittest.TestCase):
+    """Fechamento técnico do Macro07: revisão humana T1 concluída (0 pendentes), histórico preservado e registro de fechamento versionado.
+    Os números vêm dos artefatos e das rodadas registradas; o teste de integridade compara com o commit de conteúdo final."""
+    CONTENT_CHECKPOINT = '8daf73a4b7a67833c879f4f64e75ace16cfbdc80'
+
+    @classmethod
+    def setUpClass(cls):
+        cls.ms = load('MACRO_SPEC.json')
+        cls.rounds = M.human_rounds(cls.ms)
+        cls.decs = [load(r['decisions']) for r in cls.rounds]
+        cls.all = E.load_corpus(BD / 'CF88_MACRO_07.entenda.jsonl')
+        cls.act = {r['target_id']: r for r in cls.all if r['status'] == 'ACTIVE'}
+        cls.triage = load('MACRO07_TRIAGE.json')
+
+    def test_closed_state_and_totals(self):
+        self.assertEqual(self.triage['rows'], [])
+        self.assertEqual(set(self.triage['counts'].values()), {0})
+        decided = {d['target_id']: r['review_scope'] for r, dec in zip(self.rounds, self.decs) for d in dec['decisions']}
+        self.assertEqual(set(decided), set(self.act))
+        for t, r in self.act.items():
+            self.assertEqual((r['review_status'], r['human_review']['review_scope']), ('HUMAN_APPROVED_T1', decided[t]), t)
+        tot = self.triage['approval_totals']
+        self.assertEqual((tot['batch_new_approved'], tot['batch_new_pending']), (len(self.act), 0))
+        self.assertEqual(tot['global_after'], tot['global_before'] + tot['batch_new_approved'])
+        g = self.triage['round_approvals']['gate']
+        self.assertEqual((len(g), sum(x['gate'] == 'PASS' for x in g)), (len(self.act), len(self.act)))
+        self.assertFalse([dec['decision_counts']['REJECTED'] for dec in self.decs if dec['decision_counts']['REJECTED']])
+        man = load('MACRO07_MANIFEST.json')
+        self.assertEqual(man['status'], f"CLOSED: revisao humana concluida; {len(self.act)} HUMAN_APPROVED_T1 novos; 0 pendentes")
+
+    def test_versions_history_and_no_duplicate_active_keys(self):
+        ret = [r for r in self.all if r['status'] != 'ACTIVE']
+        adjusted = sum(dec['decision_counts']['APPROVED_AFTER_ADJUSTMENT'] for dec in self.decs)
+        self.assertEqual(len(ret), adjusted)
+        for r in ret:
+            self.assertEqual((r['status'], r['review_status'], r['superseded_by']), ('RETIRED', 'CHANGES_REQUESTED', self.act[r['target_id']]['explanation_id']))
+        self.assertEqual(Counter(r['editorial_version'] for r in self.act.values()), Counter({1: len(self.act) - adjusted, 2: adjusted}))
+        keys = Counter()
+        for f in [HERE / 'corpus/CF88.entenda.jsonl'] + [ROOT / f for f in self.ms['prior_corpora']] + [BD / 'CF88_MACRO_07.entenda.jsonl']:
+            keys.update(r['explanation_key'] for r in E.load_corpus(f) if r['status'] == 'ACTIVE')
+        self.assertEqual([k for k, v in keys.items() if v > 1], [])
+        for r in self.rounds:
+            for f in [r['pre_review_evidence']['corpus'], r['pre_review_evidence']['triage']] + r['pre_review_evidence'].get('packets', []):
+                self.assertTrue((BD / f).is_file(), f)
+
+    def test_closure_presentation_without_pending_wording(self):
+        rep = (BD / 'MACRO07_SCALE_REPORT.md').read_text(encoding='utf-8')
+        self.assertIn(f"**FECHADO: revisão jurídica humana concluída para todas as explicações novas do lote ({len(self.act)}/{len(self.act)} ", rep)
+        self.assertNotIn('0 aprovado novo', rep)
+        self.assertNotIn('Jurisprudência: .', rep)
+        pri = (BD / 'MACRO07_HUMAN_REVIEW_PRIORITY.md').read_text(encoding='utf-8')
+        self.assertNotIn('todas `PENDING_HUMAN_REVIEW`', pri)
+        self.assertIn('- nenhum item pendente', pri)
+        log = (BD / 'MACRO07_FINAL_CLOSURE_LOG.md').read_text(encoding='utf-8')
+        self.assertIn('MACRO07_FINAL_CLOSURE_LOG.md', M.root_inputs(BD, self.ms))
+        for k in ('toda a revisão humana T1 do Macro07 foi concluída', 'PENDING_HUMAN_REVIEW = 0', 'PENDING_EXTERNAL_INGESTION', self.CONTENT_CHECKPOINT):
+            self.assertIn(k, log, k)
+
+    def test_closure_did_not_change_t1_decisions_or_resolutions(self):
+        def at(rel):
+            return subprocess.run(['git', 'show', f'{self.CONTENT_CHECKPOINT}:ENTENDA_ENGINE/derived/production_batch_07_macro/{rel}'],
+                                  cwd=ROOT, capture_output=True, check=True).stdout
+        names = ['CF88_MACRO_07.entenda.jsonl', 'EDITORIAL_INPUT.json', 'BACKLOG_INPUT.json', 'MACRO_SPEC.json'] + [r['decisions'] for r in self.rounds]
+        names += sorted(str(p.relative_to(BD)).replace('\\', '/') for p in (BD / 'drafts').glob('*.json'))
+        for rel in names:
+            self.assertEqual(at(rel).replace(b'\r\n', b'\n'), (BD / rel).read_bytes().replace(b'\r\n', b'\n'), rel)
+
 if __name__ == '__main__':
     unittest.main()

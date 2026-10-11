@@ -1,6 +1,6 @@
 # ENTENDA_CF_MACRO_BATCH_07 — relatório de escala
 
-Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · **249 HUMAN_APPROVED_T1 novos** pela(s) rodada(s) humana(s) registrada(s) (`CF88_MACRO07_TRIAGE_QUEUE_D_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_D_PART2`, `CF88_MACRO07_TRIAGE_QUEUE_B_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_B_PART2`, `CF88_MACRO07_TRIAGE_QUEUE_B_PART3`, `CF88_MACRO07_TRIAGE_QUEUE_A_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_A_PART2`); 0 explicações novas seguem `PENDING_HUMAN_REVIEW`; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.
+Data de referência: 2026-10-05 · gerado por `ENTENDA_ENGINE/build_entenda_macro_batch.py` (determinístico, só conteúdo versionado) · **FECHADO: revisão jurídica humana concluída para todas as explicações novas do lote (249/249 HUMAN_APPROVED_T1 em 7 rodadas humanas registradas: `CF88_MACRO07_TRIAGE_QUEUE_D_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_D_PART2`, `CF88_MACRO07_TRIAGE_QUEUE_B_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_B_PART2`, `CF88_MACRO07_TRIAGE_QUEUE_B_PART3`, `CF88_MACRO07_TRIAGE_QUEUE_A_PART1`, `CF88_MACRO07_TRIAGE_QUEUE_A_PART2`); 0 pendências**; AUTO_APPROVE_LOW/MEDIUM e MICROAUTO_APPLY OFF.
 
 Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–125), MACRO_07_C (arts. 126–150), MACRO_07_D (arts. 151–175).
 
@@ -12,9 +12,11 @@ Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–12
 | Targets analisados | 1367 (1309 vigentes; excluídos: EXCLUDED_HISTORICAL 39, EXCLUDED_REVOKED 19) |
 | SELECT | 250 = 249 novas + 1 reutilizada(s) já aprovada(s) |
 | SKIP | 1059 (todos com motivo e explicação que os cobre) |
-| Papéis das novas |  |
+| Papéis das novas (todas aprovadas) | BLOCK 44, DEVICE 58, ITEM 29, OVERVIEW 118 |
 
 ## Por sub-bloco
+
+Lote fechado: esta tabela e as de eixos e filas contam só itens pendentes (todos 0); a triagem anterior a cada rodada está congelada em `history/pre_round_*/`.
 
 | Sub-bloco | Artigos | Vigentes | SELECT | SKIP | Novas | LOW/MED/HIGH | A/B/C/D/E | Correções do critic |
 |---|---|---|---|---|---|---|---|---|
@@ -40,10 +42,11 @@ Sub-blocos construídos: MACRO_07_A (arts. 76–100), MACRO_07_B (arts. 101–12
 | E_HARD_FAIL | 0 |
 
 D = 0.0% das novas.
-Jurisprudência: .
+Jurisprudência: nenhum item pendente.
 
 ## Motivos dos D
 
+- nenhum item D pendente
 
 ## Achados REVIEW_REQUIRED
 
@@ -59,17 +62,17 @@ Jurisprudência: .
 |---|---|
 | Rascunhos (5 seções + glossário) | 0 |
 | Modelo antigo (pacote completo de todos os itens) | 0 |
-| **Apresentado ao humano (pacotes + prioridade)** | **1.304** |
+| **Apresentado ao humano (pacotes + prioridade)** | **1.143** |
 | — MACRO07_COMPACT_AB_REVIEW.md | 262 |
 | — MACRO07_FULL_D_REVIEW.md | 142 |
 | — MACRO07_HARD_FAIL_REPORT.md | 143 |
-| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 387 |
+| — MACRO07_HUMAN_REVIEW_PRIORITY.md | 226 |
 | — MACRO07_QUICK_C_REVIEW.md | 370 |
 | Redução vs. modelo antigo | 0 (0.0%) |
 
 ## Checks estruturais
 
-- PASS: contrato do motor, Lei Seca idêntica ao runtime em todos os registros, 0 HARD_FAIL, 0 aprovado novo, 0 STALE.
+- PASS: contrato do motor, Lei Seca idêntica ao runtime em todos os registros, 0 HARD_FAIL, 0 aprovação automática (aprovações só por rodada humana registrada), 0 STALE.
 
 ## Limites do validador
 

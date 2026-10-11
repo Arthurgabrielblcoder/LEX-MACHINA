@@ -1,6 +1,5 @@
 # MACRO07 — PRIORIDADE DA REVISÃO HUMANA
 
-Lote `ENTENDA_CF_MACRO_BATCH_07` · 0 explicações novas, todas `PENDING_HUMAN_REVIEW`. Ordem: fila (E, D, C, B, A), risco jurídico, complexidade de verificação e posição no texto. Ler de cima para baixo; o pacote de cada fila traz o detalhe.
+Lote `ENTENDA_CF_MACRO_BATCH_07` · fechado: nenhuma explicação nova pendente; revisão humana concluída (249 HUMAN_APPROVED_T1 novos; 0 `PENDING_HUMAN_REVIEW`).
 
-| # | Fila | Risco | Complexidade | Target | Título | Motivo principal |
-|---|---|---|---|---|---|---|
+- nenhum item pendente
