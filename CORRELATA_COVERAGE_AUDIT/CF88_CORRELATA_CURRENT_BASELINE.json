@@ -1,0 +1,3333 @@
+{
+ "mission": "CF88_CORRELATA_COVERAGE_AUDIT_C0",
+ "baseline": {
+  "branch_from": "device-entenda-810",
+  "head": "44ef69ba3957d9c55a6b4b5fe9f9f68fcd77efef",
+  "physical_tag": "lex-device-v1-entenda-810-physical-approved-2026-10-11",
+  "legal_reconciliation": "fa9719a6bd335275252473a5f154e4e11f5532f4"
+ },
+ "diagnostic_only": true,
+ "promoted": 0,
+ "pin": {
+  "path": "CORRELATA_COVERAGE_AUDIT/inputs/CORRELATA_EVIDENCE_PIN.json",
+  "sha256": "1ee3376b7e91b4e01c6ad860dffc4ce017c9dcabf9047b845db59ed635dce22d"
+ },
+ "schema_version": 1,
+ "artifact": "CF88_CORRELATA_CURRENT_BASELINE",
+ "derivation": "LEGAL_TARGET_ID/derived/export_test/run3/CF88_REFERENCES_EXPORT.json (reference_type=CORRELATA; camada SD_RELATIONS_REL_LOOKUP do engine_config) x RELACOES/EXT_NORMAS/EXT_ARTIGOS do cartao (pin)",
+ "counts": {
+  "total": 46,
+  "visible": 44,
+  "hidden": 2,
+  "targets_visible": 39,
+  "relations_distinct": 23,
+  "destination_norms": 20,
+  "plausibility": {
+   "NEEDS_REVIEW": 19,
+   "OBSOLETE_HIDDEN": 2,
+   "PLAUSIBLE_NOT_VERIFIED": 11,
+   "PLAUSIBLE_STRONG": 14
+  }
+ },
+ "preservation": {
+  "run3_rebuilt_in_temp_dir_byte_identical": true,
+  "run3_ref_files_equal_card": {
+   "REF_LOOKUP.IDX": true,
+   "REF_PAYLOAD.IDX": true
+  },
+  "device_tables_equal_card": true,
+  "runtime_sha_equals_device_targets_source": true,
+  "operational_files_sha256": {
+   "LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json": "89bd39c48c45e71eeb4b14c4e323f67c2e945c14ded8c86089c37e6578e19319",
+   "LEGAL_TARGET_ID/derived/CF88_LINK_EXCLUSIONS.json": "f2c622a0be7d6db8b8a10e2503562950b439c22dadf5dbe3de706045a9140cae",
+   "LEGAL_TARGET_ID/derived/CF88_WORK_REFERENCE_ADDITIONS.json": "e6cb6b04994c2e224fb1bd838b840c481755a3b305f6355da36e038258f5dcae",
+   "LEGAL_TARGET_ID/derived/export_test/run3/REF_LOOKUP.IDX": "6d6c88d79bb63a74443de92a52768bb058b56f7b6da1e899746c58d513970ac8",
+   "LEGAL_TARGET_ID/derived/export_test/run3/REF_PAYLOAD.IDX": "24b4f0d97ec004303a6e327a6abf76054eeb05c8cd2a44a424bd70c8341f58ea",
+   "LEGAL_TARGET_ID/derived/export_test/run3/CF88_REFERENCES_EXPORT.json": "cb10096e0d4fce187f4e8e279f32c213b69a61f6fabe4add4cc8d31ff65326ba",
+   "LEGAL_TARGET_ID/engine_config.json": "bb25cc6285a6157aaa04f61b8e8b91d2143764fb49523bb838e3dbbbf11e5119",
+   "LEGAL_TARGET_ID/reference_engine.py": "0f4f493b3f84ffd5a5131da5c4e75414b203291ed78b93c06abe4a4647c281ab"
+  },
+  "run3_sha256": {
+   "CF88_REFERENCES_EXPORT.json": "cb10096e0d4fce187f4e8e279f32c213b69a61f6fabe4add4cc8d31ff65326ba",
+   "REF_LOOKUP.IDX": "6d6c88d79bb63a74443de92a52768bb058b56f7b6da1e899746c58d513970ac8",
+   "REF_PAYLOAD.IDX": "24b4f0d97ec004303a6e327a6abf76054eeb05c8cd2a44a424bd70c8341f58ea"
+  }
+ },
+ "links": [
+  {
+   "reference_id": "CORRELATA:REL_DD3B2F9749F1A8A7@CF88:ART.5:INC.XLIII",
+   "target_id": "CF88:ART.5:INC.XLIII",
+   "display_target": "CF art. 5, XLIII",
+   "relation_id": "REL_DD3B2F9749F1A8A7",
+   "destination_norm_id": "EXT_LEI13260_2016",
+   "destination_norm_key": "LEI:13260/2016",
+   "destination_norm_name": "Lei nº 13.260/2016",
+   "label": "EXT_LEI13260_2016",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_DD3B2F9749F1A8A7",
+     "index_row": "REL_LOOKUP:L3"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0260.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2016/lei-13260-16-marco-2016-782561-publicacaooriginal-149752-pl.html"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "5, XLIII",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "BC--RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.109:INC.IV",
+    "CF88:ART.5:INC.XLIII"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [],
+   "destination_ementa": "Secretaria-Geral LEI Nº 13.260, DE 16 DE MARÇO DE 2016. Mensagem de veto Regulamenta o disposto no inciso XLIII do art. 5º da Constituição Federal, disciplinando o terrorismo, tratando de disposições investigatórias e processuais e reformulando o conceito de organização terrorista; e altera as Leis…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_7525C422E1E1B4A1@CF88:ART.20:PAR.1",
+   "target_id": "CF88:ART.20:PAR.1",
+   "display_target": "CF art. 20, § 1",
+   "relation_id": "REL_7525C422E1E1B4A1",
+   "destination_norm_id": "EXT_LEI12734_2012",
+   "destination_norm_key": "LEI:12734/2012",
+   "destination_norm_name": "Lei nº 12.734/2012",
+   "label": "EXT_LEI12734_2012",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_7525C422E1E1B4A1",
+     "index_row": "REL_LOOKUP:L4"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0640.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2012/lei-12734-30-novembro-2012-774705-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1",
+      "2"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "20, § 1º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1",
+        "2"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "EC--RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1",
+    "2"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.1",
+    "CF88:ART.159",
+    "CF88:ART.20:PAR.1"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 12.734, DE 30 DE NOVEMBRO DE 2012 Modifica as Leis nº 9.478, de 6 de agosto de 1997, e nº 12.351, de 22 de dezembro de 2010, para determinar novas regras de distribuição entre os entes da Federação dos royalties e da participação especial devidos em função…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_0628FE08FD9A170F@CF88:ART.20:PAR.1",
+   "target_id": "CF88:ART.20:PAR.1",
+   "display_target": "CF art. 20, § 1",
+   "relation_id": "REL_0628FE08FD9A170F",
+   "destination_norm_id": "EXT_LEI9984_2000",
+   "destination_norm_key": "LEI:9984/2000",
+   "destination_norm_name": "Lei nº 9.984/2000",
+   "label": "EXT_LEI9984_2000",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_0628FE08FD9A170F",
+     "index_row": "REL_LOOKUP:L4"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0640.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2000/lei-9984-17-julho-2000-360468-normaatualizada-pl.html"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "20, § 1º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "EC--RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 9.984/2000 cria a ANA; a participacao/compensacao financeira do § 1º nao e o objeto da ementa"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 9.984, DE 17 DE JULHO DE 2000 Dispõe sobre a criação da Agência Nacional de Águas e Saneamento Básico (ANA), entidade federal de implementação da Política Nacional de Recursos Hídricos, integrante do Sistema Nacional de Gerenciamento de Recursos Hídricos (…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_A0A931F9E613AA9F@CF88:ART.34:INC.V:AL.b",
+   "target_id": "CF88:ART.34:INC.V:AL.b",
+   "display_target": "CF art. 34, V, b)",
+   "relation_id": "REL_A0A931F9E613AA9F",
+   "destination_norm_id": "EXT_LC63_1990",
+   "destination_norm_key": "LC:63/1990",
+   "destination_norm_name": "Lei Complementar nº 63/1990",
+   "label": "EXT_LC63_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_A0A931F9E613AA9F",
+     "index_row": "REL_LOOKUP:L5"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0740.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1990/leicomplementar-63-11-janeiro-1990-363989-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "10"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "34, V, b",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "10"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "10"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.146:PAR.UNICO",
+    "CF88:ART.150:INC.VI:AL.d",
+    "CF88:ART.155:PAR.2:INC.X",
+    "CF88:ART.158:INC.III",
+    "CF88:ART.158:INC.IV",
+    "CF88:ART.159:INC.II",
+    "CF88:ART.159:PAR.3",
+    "CF88:ART.34:INC.V:AL.b"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 63, DE 11 DE JANEIRO DE 1990 Dispõe sobre critérios e prazos de crédito das parcelas do produto da arrecadação de impostos de competência dos Estados e de transferências por estes recebidas, pertencentes aos Municípios, e dá outras providência…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_167CD90B031F3404@CF88:ART.37:INC.II",
+   "target_id": "CF88:ART.37:INC.II",
+   "display_target": "CF art. 37, II",
+   "relation_id": "REL_167CD90B031F3404",
+   "destination_norm_id": "EXT_LEI14965_2024",
+   "destination_norm_key": "LEI:14965/2024",
+   "destination_norm_name": "Lei nº 14.965/2024",
+   "label": "EXT_LEI14965_2024",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_167CD90B031F3404",
+     "index_row": "REL_LOOKUP:L6"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0747.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2024/lei-14965-9-setembro-2024-796212-publicacaooriginal-172961-pl.html"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "37, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "ECJ-RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.129:PAR.3",
+    "CF88:ART.131:PAR.2",
+    "CF88:ART.132",
+    "CF88:ART.134:PAR.1",
+    "CF88:ART.142:PAR.3:INC.X",
+    "CF88:ART.198:PAR.4",
+    "CF88:ART.207:PAR.1",
+    "CF88:ART.37:INC.II",
+    "CF88:ART.37:INC.IX",
+    "CF88:ART.93:INC.I"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [],
+   "destination_ementa": "Secretaria Especial para Assuntos Jurídicos LEI Nº 14.965, DE 9 DE SETEMBRO DE 2024 Vigência Dispõe sobre as normas gerais relativas a concursos públicos. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.I",
+   "target_id": "CF88:ART.37:PAR.3:INC.I",
+   "display_target": "CF art. 37, § 3, I",
+   "relation_id": "REL_9DFE2FF258879347",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "destination_norm_key": "LEI:13460/2017",
+   "destination_norm_name": "Lei nº 13.460/2017",
+   "label": "EXT_LEI13460_2017",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_9DFE2FF258879347",
+     "index_row": "REL_LOOKUP:L7"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0840.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13460-26-junho-2017-785098-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "37, § 3º, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "37, § 3º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "37, § 3º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.37:PAR.3:INC.I",
+    "CF88:ART.5:INC.X"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 13.460, DE 26 DE JUNHO DE 2017 Dispõe sobre participação, proteção e defesa dos direitos do usuário dos serviços públicos da administração pública. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.II",
+   "target_id": "CF88:ART.37:PAR.3:INC.II",
+   "display_target": "CF art. 37, § 3, II",
+   "relation_id": "REL_9DFE2FF258879347",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "destination_norm_key": "LEI:13460/2017",
+   "destination_norm_name": "Lei nº 13.460/2017",
+   "label": "EXT_LEI13460_2017",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_9DFE2FF258879347",
+     "index_row": "REL_LOOKUP:L8"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0840.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13460-26-junho-2017-785098-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "37, § 3º, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "37, § 3º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "37, § 3º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.37:PAR.3:INC.I",
+    "CF88:ART.5:INC.X"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: inciso II (acesso a registros/informacoes) e regulado pela LAI (Lei 12.527/2011, ementa); Lei 13.460/2017 e o inciso I"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 13.460, DE 26 DE JUNHO DE 2017 Dispõe sobre participação, proteção e defesa dos direitos do usuário dos serviços públicos da administração pública. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.III",
+   "target_id": "CF88:ART.37:PAR.3:INC.III",
+   "display_target": "CF art. 37, § 3, III",
+   "relation_id": "REL_9DFE2FF258879347",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "destination_norm_key": "LEI:13460/2017",
+   "destination_norm_name": "Lei nº 13.460/2017",
+   "label": "EXT_LEI13460_2017",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_9DFE2FF258879347",
+     "index_row": "REL_LOOKUP:L9"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0840.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13460-26-junho-2017-785098-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "37, § 3º, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "37, § 3º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "37, § 3º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.37:PAR.3:INC.I",
+    "CF88:ART.5:INC.X"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 13.460, DE 26 DE JUNHO DE 2017 Dispõe sobre participação, proteção e defesa dos direitos do usuário dos serviços públicos da administração pública. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.I",
+   "target_id": "CF88:ART.43:PAR.1:INC.I",
+   "display_target": "CF art. 43, § 1, I",
+   "relation_id": "REL_4468A85CBDDD620A",
+   "destination_norm_id": "EXT_LC112_2001",
+   "destination_norm_key": "LC:112/2001",
+   "destination_norm_name": "Lei Complementar nº 112/2001",
+   "label": "EXT_LC112_2001",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_4468A85CBDDD620A",
+     "index_row": "REL_LOOKUP:L12"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0970.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2001/leicomplementar-112-19-setembro-2001-398679-publicacaooriginal-1-pl.html"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "43, § 1º, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "43, § 1º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.21:INC.IX",
+    "CF88:ART.43",
+    "CF88:ART.48:INC.IV"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: LC 112/2001 cria uma RIDE especifica (Grande Teresina): instancia, nao a lei geral do inciso"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 112, DE 19 DE SETEMBRO DE 2001 Autoriza o Poder Executivo a criar a Região Integrada de Desenvolvimento da Grande Teresina e instituir o Programa Especial de Desenvolvimento da Grande Teresina e dá outras providências. O PRESIDENTE DA REPÚBLIC…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II",
+   "target_id": "CF88:ART.43:PAR.1:INC.II",
+   "display_target": "CF art. 43, § 1, II",
+   "relation_id": "REL_4468A85CBDDD620A",
+   "destination_norm_id": "EXT_LC112_2001",
+   "destination_norm_key": "LC:112/2001",
+   "destination_norm_name": "Lei Complementar nº 112/2001",
+   "label": "EXT_LC112_2001",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_4468A85CBDDD620A",
+     "index_row": "REL_LOOKUP:L13"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF0970.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2001/leicomplementar-112-19-setembro-2001-398679-publicacaooriginal-1-pl.html"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "43, § 1º, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "43, § 1º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.21:INC.IX",
+    "CF88:ART.43",
+    "CF88:ART.48:INC.IV"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: LC 112/2001 cria uma RIDE especifica (Grande Teresina): instancia, nao a lei geral do inciso"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 112, DE 19 DE SETEMBRO DE 2001 Autoriza o Poder Executivo a criar a Região Integrada de Desenvolvimento da Grande Teresina e instituir o Programa Especial de Desenvolvimento da Grande Teresina e dá outras providências. O PRESIDENTE DA REPÚBLIC…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146",
+   "target_id": "CF88:ART.146",
+   "display_target": "CF art. 146",
+   "relation_id": "REL_5EB3E41B2BB014D3",
+   "destination_norm_id": "EXT_LC199_2023",
+   "destination_norm_key": "LC:199/2023",
+   "destination_norm_name": "Lei Complementar nº 199/2023",
+   "label": "EXT_LC199_2023",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5EB3E41B2BB014D3",
+     "index_row": "REL_LOOKUP:L14"
+    },
+    "migration": "KEPT_AS_ARTICLE",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1490.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2023/leicomplementar-199-1-agosto-2023-794487-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "146",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "STRUCTURAL",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "EC--RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SUBDIVISAO_DO_TARGET",
+   "destination_cites": [
+    "CF88:ART.146:INC.III:AL.b",
+    "CF88:ART.153:CAPUT"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "ARTICLE_LEVEL_LINK (artigo com subdivisoes: revisar target mais especifico)"
+   ],
+   "destination_ementa": "CÂMARA DOS DE PUTADOS Centro de Documentação e Informação LEI COMPLEMENTAR Nº 199, DE 1º DE AGOSTO DE 2023 Institui o Estatuto Nacional de Simplificação de Obrigações Tributárias Acessórias; e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sancion…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_839B2CF9F1A80DA2@CF88:ART.150:PAR.7",
+   "target_id": "CF88:ART.150:PAR.7",
+   "display_target": "CF art. 150, § 7",
+   "relation_id": "REL_839B2CF9F1A80DA2",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_norm_name": "Lei Complementar nº 87/1996",
+   "label": "EXT_LC87_1996",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_839B2CF9F1A80DA2",
+     "index_row": "REL_LOOKUP:L15"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF3320.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "150, § 7º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "EC--RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.12:CAPUT",
+    "CF88:ART.153:INC.VIII",
+    "CF88:ART.155:PAR.2:INC.IV",
+    "CF88:ART.158:PAR.UNICO"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [],
+   "destination_ementa": "CÂMARA DOS DEPUTADOS Centro de Documentação e Informação LEI COMPLEMENTAR Nº 87, DE 13 DE SETEMBRO DE 1996 (Vide Lei Complementar nº 214, de 16/1/2025) Dispõe sobre o Imposto dos Estados e do Distrito Federal sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Tr…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "display_target": "CF art. 153, § 4, II",
+   "relation_id": "REL_0920FF60E61E5491",
+   "destination_norm_id": "EXT_LEI11250_2005",
+   "destination_norm_key": "LEI:11250/2005",
+   "destination_norm_name": "Lei nº 11.250/2005",
+   "label": "EXT_LEI11250_2005",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_0920FF60E61E5491",
+     "index_row": "REL_LOOKUP:L16"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1600.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2005/lei-11250-27-dezembro-2005-539968-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "153, § 4º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "153, § 4º, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.153:INC.VI",
+    "CF88:ART.153:PAR.4:INC.III"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 11.250/2005 \"Regulamenta o inciso III do § 4º do art. 153\" (ementa): nao o inciso II"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 11.250, DE 27 DE DEZEMBRO DE 2005 Regulamenta o inciso III do § 4º do art. 153 da Constituição Federal. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:"
+  },
+  {
+   "reference_id": "CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "display_target": "CF art. 153, § 4, II",
+   "relation_id": "REL_2C57B972486FE4AE",
+   "destination_norm_id": "EXT_LEI8981_1995",
+   "destination_norm_key": "LEI:8981/1995",
+   "destination_norm_name": "Lei nº 8.981/1995",
+   "label": "EXT_LEI8981_1995",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_2C57B972486FE4AE",
+     "index_row": "REL_LOOKUP:L16"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1600.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1995/lei-8981-20-janeiro-1995-374786-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "117",
+      "90"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "153, § 4º, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "90",
+        "117"
+       ]
+      },
+      {
+       "origem_caminho": "153, § 4º, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "90",
+        "117"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "90",
+    "117"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.153:PAR.1",
+    "CF88:ART.62:PAR.UNICO"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 8.981/1995 \"Altera a legislacao tributaria federal\": vinculo amplo, sem relacao direta demonstrada"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 8.981, DE 20 DE JANEIRO DE 1995 Altera a legislação tributária federal e dá outras providências. Faço saber que o PRESIDENTE DA REPÚBLICA adotou a Medida Provisória nº 812, de 1994, que o Congresso Nacional aprovou, e eu, HUMBERTO LUCENA, Presidente do Sen…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "display_target": "CF art. 153, § 4, II",
+   "relation_id": "REL_D152FF761345E231",
+   "destination_norm_id": "EXT_LEI9393_1996",
+   "destination_norm_key": "LEI:9393/1996",
+   "destination_norm_name": "Lei nº 9.393/1996",
+   "label": "EXT_LEI9393_1996",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_D152FF761345E231",
+     "index_row": "REL_LOOKUP:L16"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1600.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1996/lei-9393-19-dezembro-1996-372239-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "153, § 4º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "153, § 4º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.153:PAR.4",
+    "CF88:ART.184"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 9.393, DE 19 DE DEZEMBRO DE 1996 Dispõe sobre o Imposto sobre a Propriedade Territorial Rural - ITR, sobre pagamento da dívida representada por Títulos da Dívida Agrária e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Naciona…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "display_target": "CF art. 153, § 4, III",
+   "relation_id": "REL_0920FF60E61E5491",
+   "destination_norm_id": "EXT_LEI11250_2005",
+   "destination_norm_key": "LEI:11250/2005",
+   "destination_norm_name": "Lei nº 11.250/2005",
+   "label": "EXT_LEI11250_2005",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_0920FF60E61E5491",
+     "index_row": "REL_LOOKUP:L17"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1600.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2005/lei-11250-27-dezembro-2005-539968-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "153, § 4º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "153, § 4º, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.153:INC.VI",
+    "CF88:ART.153:PAR.4:INC.III"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 11.250, DE 27 DE DEZEMBRO DE 2005 Regulamenta o inciso III do § 4º do art. 153 da Constituição Federal. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:"
+  },
+  {
+   "reference_id": "CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "display_target": "CF art. 153, § 4, III",
+   "relation_id": "REL_2C57B972486FE4AE",
+   "destination_norm_id": "EXT_LEI8981_1995",
+   "destination_norm_key": "LEI:8981/1995",
+   "destination_norm_name": "Lei nº 8.981/1995",
+   "label": "EXT_LEI8981_1995",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_2C57B972486FE4AE",
+     "index_row": "REL_LOOKUP:L17"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1600.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1995/lei-8981-20-janeiro-1995-374786-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "117",
+      "90"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "153, § 4º, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "90",
+        "117"
+       ]
+      },
+      {
+       "origem_caminho": "153, § 4º, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "90",
+        "117"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "90",
+    "117"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.153:PAR.1",
+    "CF88:ART.62:PAR.UNICO"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 8.981/1995 \"Altera a legislacao tributaria federal\": vinculo amplo, sem relacao direta demonstrada"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 8.981, DE 20 DE JANEIRO DE 1995 Altera a legislação tributária federal e dá outras providências. Faço saber que o PRESIDENTE DA REPÚBLICA adotou a Medida Provisória nº 812, de 1994, que o Congresso Nacional aprovou, e eu, HUMBERTO LUCENA, Presidente do Sen…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "display_target": "CF art. 153, § 4, III",
+   "relation_id": "REL_D152FF761345E231",
+   "destination_norm_id": "EXT_LEI9393_1996",
+   "destination_norm_key": "LEI:9393/1996",
+   "destination_norm_name": "Lei nº 9.393/1996",
+   "label": "EXT_LEI9393_1996",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_D152FF761345E231",
+     "index_row": "REL_LOOKUP:L17"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1600.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1996/lei-9393-19-dezembro-1996-372239-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "153, § 4º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "153, § 4º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.153:PAR.4",
+    "CF88:ART.184"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 9.393/1996 (ITR) e a lei do imposto; o inciso III trata da opcao municipal (Lei 11.250/2005)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 9.393, DE 19 DE DEZEMBRO DE 1996 Dispõe sobre o Imposto sobre a Propriedade Territorial Rural - ITR, sobre pagamento da dívida representada por Títulos da Dívida Agrária e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Naciona…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_FEB2B8ACAD1A48FA@CF88:ART.155:PAR.1:INC.III",
+   "target_id": "CF88:ART.155:PAR.1:INC.III",
+   "display_target": "CF art. 155, § 1, III",
+   "relation_id": "REL_FEB2B8ACAD1A48FA",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_norm_name": "Lei Complementar nº 87/1996",
+   "label": "EXT_LC87_1996",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_FEB2B8ACAD1A48FA",
+     "index_row": "REL_LOOKUP:L18"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF3340.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.html"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "155, § 1º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-CJ-R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.12:CAPUT",
+    "CF88:ART.153:INC.VIII",
+    "CF88:ART.155:PAR.2:INC.IV",
+    "CF88:ART.158:PAR.UNICO"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: o § 1º trata do imposto do inciso I (ITCMD); a LC 87/1996 e a lei do ICMS (inciso II)"
+   ],
+   "destination_ementa": "CÂMARA DOS DEPUTADOS Centro de Documentação e Informação LEI COMPLEMENTAR Nº 87, DE 13 DE SETEMBRO DE 1996 (Vide Lei Complementar nº 214, de 16/1/2025) Dispõe sobre o Imposto dos Estados e do Distrito Federal sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Tr…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_DD78F9101785B52A@CF88:ART.155:PAR.2:INC.XII",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "relation_id": "REL_DD78F9101785B52A",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_norm_name": "Lei Complementar nº 87/1996",
+   "label": "EXT_LC87_1996",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_DD78F9101785B52A",
+     "index_row": "REL_LOOKUP:L19"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1630.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "155, § 2º, XII",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.12:CAPUT",
+    "CF88:ART.153:INC.VIII",
+    "CF88:ART.155:PAR.2:INC.IV",
+    "CF88:ART.158:PAR.UNICO"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "CITA_IRMAO_MAS_O_TARGET_EXIGE_LC_E_O_DESTINO_E_LC (sem inconsistencia evidente)"
+   ],
+   "destination_ementa": "CÂMARA DOS DEPUTADOS Centro de Documentação e Informação LEI COMPLEMENTAR Nº 87, DE 13 DE SETEMBRO DE 1996 (Vide Lei Complementar nº 214, de 16/1/2025) Dispõe sobre o Imposto dos Estados e do Distrito Federal sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Tr…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II",
+   "target_id": "CF88:ART.158:PAR.1:INC.II",
+   "display_target": "CF art. 158, § 1, II",
+   "relation_id": "REL_DF3F18219DDA1CD5",
+   "destination_norm_id": "EXT_LC63_1990",
+   "destination_norm_key": "LC:63/1990",
+   "destination_norm_name": "Lei Complementar nº 63/1990",
+   "label": "EXT_LC63_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_DF3F18219DDA1CD5",
+     "index_row": "REL_LOOKUP:L20"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1650.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1990/leicomplementar-63-11-janeiro-1990-363989-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "158, § 1º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.146:PAR.UNICO",
+    "CF88:ART.150:INC.VI:AL.d",
+    "CF88:ART.155:PAR.2:INC.X",
+    "CF88:ART.158:INC.III",
+    "CF88:ART.158:INC.IV",
+    "CF88:ART.159:INC.II",
+    "CF88:ART.159:PAR.3",
+    "CF88:ART.34:INC.V:AL.b"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 63, DE 11 DE JANEIRO DE 1990 Dispõe sobre critérios e prazos de crédito das parcelas do produto da arrecadação de impostos de competência dos Estados e de transferências por estes recebidas, pertencentes aos Municípios, e dá outras providência…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I",
+   "target_id": "CF88:ART.161:INC.I",
+   "display_target": "CF art. 161, I",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "destination_norm_id": "EXT_LC62_1989",
+   "destination_norm_key": "LC:62/1989",
+   "destination_norm_name": "Lei Complementar nº 62/1989",
+   "label": "EXT_LC62_1989",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_B41DCE7A7582235E",
+     "index_row": "REL_LOOKUP:L21"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1670.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1989/leicomplementar-62-28-dezembro-1989-363988-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "161, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "161, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "161, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.161:INC.II",
+    "CF88:ART.161:INC.III"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: inciso I (valor adicionado do art. 158, § 1º, I) e materia da LC 63/1990; a LC 62/1989 trata dos fundos (inciso II)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 62, DE 28 DE DEZEMBRO DE 1989 Estabelece normas sobre o cálculo, a entrega e o controle das liberações dos recursos dos Fundos de Participação e dá outras providências. O PRESIDENTE DA REPÚBLICA, Faço saber que o Congresso Nacional decreta e e…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.II",
+   "target_id": "CF88:ART.161:INC.II",
+   "display_target": "CF art. 161, II",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "destination_norm_id": "EXT_LC62_1989",
+   "destination_norm_key": "LC:62/1989",
+   "destination_norm_name": "Lei Complementar nº 62/1989",
+   "label": "EXT_LC62_1989",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_B41DCE7A7582235E",
+     "index_row": "REL_LOOKUP:L22"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1670.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1989/leicomplementar-62-28-dezembro-1989-363988-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "161, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "161, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "161, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.161:INC.II",
+    "CF88:ART.161:INC.III"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 62, DE 28 DE DEZEMBRO DE 1989 Estabelece normas sobre o cálculo, a entrega e o controle das liberações dos recursos dos Fundos de Participação e dá outras providências. O PRESIDENTE DA REPÚBLICA, Faço saber que o Congresso Nacional decreta e e…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.III",
+   "target_id": "CF88:ART.161:INC.III",
+   "display_target": "CF art. 161, III",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "destination_norm_id": "EXT_LC62_1989",
+   "destination_norm_key": "LC:62/1989",
+   "destination_norm_name": "Lei Complementar nº 62/1989",
+   "label": "EXT_LC62_1989",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_B41DCE7A7582235E",
+     "index_row": "REL_LOOKUP:L23"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF1670.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1989/leicomplementar-62-28-dezembro-1989-363988-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "161, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "161, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "161, III",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.161:INC.II",
+    "CF88:ART.161:INC.III"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 62, DE 28 DE DEZEMBRO DE 1989 Estabelece normas sobre o cálculo, a entrega e o controle das liberações dos recursos dos Fundos de Participação e dá outras providências. O PRESIDENTE DA REPÚBLICA, Faço saber que o Congresso Nacional decreta e e…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_70C4549A507F6E00@CF88:ART.182",
+   "target_id": "CF88:ART.182",
+   "display_target": "CF art. 182",
+   "relation_id": "REL_70C4549A507F6E00",
+   "destination_norm_id": "EXT_LEI13425_2017",
+   "destination_norm_key": "LEI:13425/2017",
+   "destination_norm_name": "Lei nº 13.425/2017",
+   "label": "EXT_LEI13425_2017",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_70C4549A507F6E00",
+     "index_row": "REL_LOOKUP:L24"
+    },
+    "migration": "KEPT_AS_ARTICLE",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF4180.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2017/lei-13425-30-marco-2017-784547-publicacaooriginal-152268-pl.html"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "182",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "STRUCTURAL",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "EC--RX",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SUBDIVISAO_DO_TARGET",
+   "destination_cites": [
+    "CF88:ART.182:CAPUT",
+    "CF88:ART.21:INC.XX"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "ARTICLE_LEVEL_LINK (artigo com subdivisoes: revisar target mais especifico)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 13.425/2017 (prevencao de incendios) no artigo inteiro; vinculo tematico/estreito para a politica urbana"
+   ],
+   "destination_ementa": "Secretaria-Geral LEI Nº 13.425, DE 30 DE MARÇO DE 2017. Vigência Mensagem de veto Estabelece diretrizes gerais sobre medidas de prevenção e combate a incêndio e a desastres em estabelecimentos, edificações e áreas de reunião de público; altera as Leis nº s 8.078, de 11 de setembro de 1990, e 10.406…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I",
+   "target_id": "CF88:ART.195:INC.I",
+   "display_target": "CF art. 195, I",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "label": "EXT_LC70_1991",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_EA8171739858C1AC",
+     "index_row": "REL_LOOKUP:L25"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2140.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1991/leicomplementar-70-30-dezembro-1991-354945-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "195, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "195, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 1º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 2º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "ECJ-R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.195:INC.I"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 70, DE 30 DE DEZEMBRO DE 1991 Institui Contribuição para Financiamento da Seguridade Social, Eleva a Alíquota da Contribuição Social sobre o Lucro das Instituições Financeiras; e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.II",
+   "target_id": "CF88:ART.195:INC.II",
+   "display_target": "CF art. 195, II",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "label": "EXT_LC70_1991",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_EA8171739858C1AC",
+     "index_row": "REL_LOOKUP:L26"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2140.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1991/leicomplementar-70-30-dezembro-1991-354945-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "195, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "195, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 1º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 2º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-CJ-R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.195:INC.I"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: LC 70/1991 institui a COFINS (contribuicao do empregador/empresa, inciso I); inciso II e a contribuicao do trabalhador"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 70, DE 30 DE DEZEMBRO DE 1991 Institui Contribuição para Financiamento da Seguridade Social, Eleva a Alíquota da Contribuição Social sobre o Lucro das Instituições Financeiras; e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.1",
+   "target_id": "CF88:ART.195:PAR.1",
+   "display_target": "CF art. 195, § 1",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "label": "EXT_LC70_1991",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_EA8171739858C1AC",
+     "index_row": "REL_LOOKUP:L27"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2140.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1991/leicomplementar-70-30-dezembro-1991-354945-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "195, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "195, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 1º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 2º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.195:INC.I"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: § 1º trata das receitas de Estados/DF/Municipios nos orcamentos; a ementa da LC 70/1991 nao trata disso"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 70, DE 30 DE DEZEMBRO DE 1991 Institui Contribuição para Financiamento da Seguridade Social, Eleva a Alíquota da Contribuição Social sobre o Lucro das Instituições Financeiras; e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.2",
+   "target_id": "CF88:ART.195:PAR.2",
+   "display_target": "CF art. 195, § 2",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "label": "EXT_LC70_1991",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_EA8171739858C1AC",
+     "index_row": "REL_LOOKUP:L28"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2140.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/1991/leicomplementar-70-30-dezembro-1991-354945-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "195, I",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "195, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 1º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "195, § 2º",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.195:INC.I"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: § 2º trata da proposta orcamentaria da seguridade; a ementa da LC 70/1991 nao trata disso"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 70, DE 30 DE DEZEMBRO DE 1991 Institui Contribuição para Financiamento da Seguridade Social, Eleva a Alíquota da Contribuição Social sobre o Lucro das Instituições Financeiras; e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.I",
+   "target_id": "CF88:ART.201:INC.I",
+   "display_target": "CF art. 201, I",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "label": "EXT_LEI7998_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_294595B0B7254C57",
+     "index_row": "REL_LOOKUP:L29"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2230.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1990/lei-7998-11-janeiro-1990-366029-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "201, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, IV",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C-WR-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.201:INC.IV",
+    "CF88:ART.239",
+    "CF88:ART.239:PAR.4",
+    "CF88:ART.7:INC.II"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 7.998/1990 regula seguro-desemprego/abono (inciso III); inciso I e incapacidade e idade avancada"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 7.998, DE 11 DE JANEIRO DE 1990 Regula o Programa do Seguro-Desemprego, o Abono Salarial, institui o Fundo de Amparo ao Trabalhador - FAT, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a segui…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.II",
+   "target_id": "CF88:ART.201:INC.II",
+   "display_target": "CF art. 201, II",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "label": "EXT_LEI7998_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_294595B0B7254C57",
+     "index_row": "REL_LOOKUP:L30"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2230.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1990/lei-7998-11-janeiro-1990-366029-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "201, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, IV",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.201:INC.IV",
+    "CF88:ART.239",
+    "CF88:ART.239:PAR.4",
+    "CF88:ART.7:INC.II"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 7.998/1990 regula seguro-desemprego/abono (inciso III); inciso II e protecao a maternidade"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 7.998, DE 11 DE JANEIRO DE 1990 Regula o Programa do Seguro-Desemprego, o Abono Salarial, institui o Fundo de Amparo ao Trabalhador - FAT, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a segui…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.III",
+   "target_id": "CF88:ART.201:INC.III",
+   "display_target": "CF art. 201, III",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "label": "EXT_LEI7998_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_294595B0B7254C57",
+     "index_row": "REL_LOOKUP:L31"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2230.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1990/lei-7998-11-janeiro-1990-366029-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "201, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, IV",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.201:INC.IV",
+    "CF88:ART.239",
+    "CF88:ART.239:PAR.4",
+    "CF88:ART.7:INC.II"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "NOTA_DO_AUDITOR: texto vigente do inciso III = desemprego involuntario, objeto da Lei 7.998/1990 (ementa: seguro-desemprego); a lei cita o \"inciso IV\" pela numeracao anterior"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 7.998, DE 11 DE JANEIRO DE 1990 Regula o Programa do Seguro-Desemprego, o Abono Salarial, institui o Fundo de Amparo ao Trabalhador - FAT, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a segui…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.IV",
+   "target_id": "CF88:ART.201:INC.IV",
+   "display_target": "CF art. 201, IV",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "label": "EXT_LEI7998_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_294595B0B7254C57",
+     "index_row": "REL_LOOKUP:L32"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2230.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1990/lei-7998-11-janeiro-1990-366029-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "201, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, IV",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-CJ-R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.201:INC.IV",
+    "CF88:ART.239",
+    "CF88:ART.239:PAR.4",
+    "CF88:ART.7:INC.II"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: a Lei 7.998/1990 cita \"inciso IV do art. 201\" na numeracao de 1990; no texto vigente o inciso IV e salario-familia/auxilio-reclusao e o desemprego involuntario esta no inciso III (renumeracao: confirmar)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 7.998, DE 11 DE JANEIRO DE 1990 Regula o Programa do Seguro-Desemprego, o Abono Salarial, institui o Fundo de Amparo ao Trabalhador - FAT, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a segui…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.V",
+   "target_id": "CF88:ART.201:INC.V",
+   "display_target": "CF art. 201, V",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "label": "EXT_LEI7998_1990",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_294595B0B7254C57",
+     "index_row": "REL_LOOKUP:L33"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2230.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/1990/lei-7998-11-janeiro-1990-366029-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "201, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, II",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "201, IV",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "201, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-CJ-R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "destination_cites": [
+    "CF88:ART.201:INC.IV",
+    "CF88:ART.239",
+    "CF88:ART.239:PAR.4",
+    "CF88:ART.7:INC.II"
+   ],
+   "plausibility": "NEEDS_REVIEW",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 7.998/1990 regula seguro-desemprego/abono (inciso III); inciso V e pensao por morte"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 7.998, DE 11 DE JANEIRO DE 1990 Regula o Programa do Seguro-Desemprego, o Abono Salarial, institui o Fundo de Amparo ao Trabalhador - FAT, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a segui…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_E3E07057AD3E162C@CF88:ART.202:CAPUT",
+   "target_id": "CF88:ART.202:CAPUT",
+   "display_target": "CF art. 202, caput",
+   "relation_id": "REL_E3E07057AD3E162C",
+   "destination_norm_id": "EXT_LC109_2001",
+   "destination_norm_key": "LC:109/2001",
+   "destination_norm_name": "Lei Complementar nº 109/2001",
+   "label": "EXT_LC109_2001",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_E3E07057AD3E162C",
+     "index_row": "REL_LOOKUP:L34"
+    },
+    "migration": "MIGRATED_TO_CAPUT",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF6150.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2001/leicomplementar-109-29-maio-2001-328208-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "202",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "E-----",
+   "device_flag_C": false,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.202:CAPUT",
+    "CF88:ART.84:INC.VI"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 109, DE 29 DE MAIO DE 2001 Dispõe sobre o Regime de Previdência Complementar e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei Complementar: CAPÍTULO I INTRODUÇÃO"
+  },
+  {
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.4",
+   "target_id": "CF88:ART.202:PAR.4",
+   "display_target": "CF art. 202, § 4",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "destination_norm_id": "EXT_LC108_2001",
+   "destination_norm_key": "LC:108/2001",
+   "destination_norm_name": "Lei Complementar nº 108/2001",
+   "label": "EXT_LC108_2001",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_D7475B8BEB5B6C53",
+     "index_row": "REL_LOOKUP:L35"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF3940.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2001/leicomplementar-108-29-maio-2001-327554-publicacaooriginal-1-pl.html"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "202, § 4º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "202, § 5º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "202, § 6º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.202:CAPUT",
+    "CF88:ART.202:PAR.3",
+    "CF88:ART.202:PAR.4",
+    "CF88:ART.202:PAR.5",
+    "CF88:ART.202:PAR.6"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 108, DE 29 DE MAIO DE 2001 Dispõe sobre a relação entre a União, os Estados, o Distrito Federal e os Municípios, suas autarquias, fundações, sociedades de economia mista e outras entidades públicas e suas respectivas entidades fechadas de prev…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.5",
+   "target_id": "CF88:ART.202:PAR.5",
+   "display_target": "CF art. 202, § 5",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "destination_norm_id": "EXT_LC108_2001",
+   "destination_norm_key": "LC:108/2001",
+   "destination_norm_name": "Lei Complementar nº 108/2001",
+   "label": "EXT_LC108_2001",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_D7475B8BEB5B6C53",
+     "index_row": "REL_LOOKUP:L36"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF3940.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2001/leicomplementar-108-29-maio-2001-327554-publicacaooriginal-1-pl.html"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "202, § 4º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "202, § 5º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "202, § 6º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.202:CAPUT",
+    "CF88:ART.202:PAR.3",
+    "CF88:ART.202:PAR.4",
+    "CF88:ART.202:PAR.5",
+    "CF88:ART.202:PAR.6"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 108, DE 29 DE MAIO DE 2001 Dispõe sobre a relação entre a União, os Estados, o Distrito Federal e os Municípios, suas autarquias, fundações, sociedades de economia mista e outras entidades públicas e suas respectivas entidades fechadas de prev…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.6",
+   "target_id": "CF88:ART.202:PAR.6",
+   "display_target": "CF art. 202, § 6",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "destination_norm_id": "EXT_LC108_2001",
+   "destination_norm_key": "LC:108/2001",
+   "destination_norm_name": "Lei Complementar nº 108/2001",
+   "label": "EXT_LC108_2001",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_D7475B8BEB5B6C53",
+     "index_row": "REL_LOOKUP:L37"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF3940.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2001/leicomplementar-108-29-maio-2001-327554-publicacaooriginal-1-pl.html"
+     ],
+     "destino_artigos": [
+      "1"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "202, § 4º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "202, § 5º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      },
+      {
+       "origem_caminho": "202, § 6º",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "1"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "1"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.202:CAPUT",
+    "CF88:ART.202:PAR.3",
+    "CF88:ART.202:PAR.4",
+    "CF88:ART.202:PAR.5",
+    "CF88:ART.202:PAR.6"
+   ],
+   "plausibility": "PLAUSIBLE_STRONG",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI COMPLEMENTAR Nº 108, DE 29 DE MAIO DE 2001 Dispõe sobre a relação entre a União, os Estados, o Distrito Federal e os Municípios, suas autarquias, fundações, sociedades de economia mista e outras entidades públicas e suas respectivas entidades fechadas de prev…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I",
+   "target_id": "CF88:ART.214:INC.I",
+   "display_target": "CF art. 214, I",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "label": "EXT_LEI15388_2026",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5084B9E9143D03D6",
+     "index_row": "REL_LOOKUP:L38"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2390.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15388-14-abril-2026-798950-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "4"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "214, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, IV",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, VI",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "4"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "4"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.206",
+    "CF88:ART.206:INC.V",
+    "CF88:ART.206:INC.VIII",
+    "CF88:ART.208",
+    "CF88:ART.211:PAR.6",
+    "CF88:ART.211:PAR.7",
+    "CF88:ART.212",
+    "CF88:ART.214",
+    "CF88:ART.225:PAR.1:INC.VII",
+    "CF88:ART.242"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 15.388, DE 14 DE ABRIL DE 2026 Aprova o Plano Nacional de Educação (PNE). O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.II",
+   "target_id": "CF88:ART.214:INC.II",
+   "display_target": "CF art. 214, II",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "label": "EXT_LEI15388_2026",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5084B9E9143D03D6",
+     "index_row": "REL_LOOKUP:L39"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2390.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15388-14-abril-2026-798950-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "4"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "214, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, IV",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, VI",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "4"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "4"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.206",
+    "CF88:ART.206:INC.V",
+    "CF88:ART.206:INC.VIII",
+    "CF88:ART.208",
+    "CF88:ART.211:PAR.6",
+    "CF88:ART.211:PAR.7",
+    "CF88:ART.212",
+    "CF88:ART.214",
+    "CF88:ART.225:PAR.1:INC.VII",
+    "CF88:ART.242"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 15.388, DE 14 DE ABRIL DE 2026 Aprova o Plano Nacional de Educação (PNE). O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.III",
+   "target_id": "CF88:ART.214:INC.III",
+   "display_target": "CF art. 214, III",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "label": "EXT_LEI15388_2026",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5084B9E9143D03D6",
+     "index_row": "REL_LOOKUP:L40"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2390.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15388-14-abril-2026-798950-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "4"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "214, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, IV",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, VI",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "4"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "4"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.206",
+    "CF88:ART.206:INC.V",
+    "CF88:ART.206:INC.VIII",
+    "CF88:ART.208",
+    "CF88:ART.211:PAR.6",
+    "CF88:ART.211:PAR.7",
+    "CF88:ART.212",
+    "CF88:ART.214",
+    "CF88:ART.225:PAR.1:INC.VII",
+    "CF88:ART.242"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 15.388, DE 14 DE ABRIL DE 2026 Aprova o Plano Nacional de Educação (PNE). O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.IV",
+   "target_id": "CF88:ART.214:INC.IV",
+   "display_target": "CF art. 214, IV",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "label": "EXT_LEI15388_2026",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5084B9E9143D03D6",
+     "index_row": "REL_LOOKUP:L41"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2390.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15388-14-abril-2026-798950-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "4"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "214, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, IV",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, VI",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "4"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "4"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.206",
+    "CF88:ART.206:INC.V",
+    "CF88:ART.206:INC.VIII",
+    "CF88:ART.208",
+    "CF88:ART.211:PAR.6",
+    "CF88:ART.211:PAR.7",
+    "CF88:ART.212",
+    "CF88:ART.214",
+    "CF88:ART.225:PAR.1:INC.VII",
+    "CF88:ART.242"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 15.388, DE 14 DE ABRIL DE 2026 Aprova o Plano Nacional de Educação (PNE). O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.V",
+   "target_id": "CF88:ART.214:INC.V",
+   "display_target": "CF art. 214, V",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "label": "EXT_LEI15388_2026",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5084B9E9143D03D6",
+     "index_row": "REL_LOOKUP:L42"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2390.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15388-14-abril-2026-798950-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "4"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "214, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, IV",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, VI",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "4"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "4"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.206",
+    "CF88:ART.206:INC.V",
+    "CF88:ART.206:INC.VIII",
+    "CF88:ART.208",
+    "CF88:ART.211:PAR.6",
+    "CF88:ART.211:PAR.7",
+    "CF88:ART.212",
+    "CF88:ART.214",
+    "CF88:ART.225:PAR.1:INC.VII",
+    "CF88:ART.242"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 15.388, DE 14 DE ABRIL DE 2026 Aprova o Plano Nacional de Educação (PNE). O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.VI",
+   "target_id": "CF88:ART.214:INC.VI",
+   "display_target": "CF art. 214, VI",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "label": "EXT_LEI15388_2026",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_5084B9E9143D03D6",
+     "index_row": "REL_LOOKUP:L43"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF2390.htm",
+      "https://www2.camara.leg.br/legin/fed/lei/2026/lei-15388-14-abril-2026-798950-normaatualizada-pl.pdf"
+     ],
+     "destino_artigos": [
+      "4"
+     ],
+     "bindings": [
+      {
+       "origem_caminho": "214, I",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, IV",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, V",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "214, VI",
+       "modo": "ABRIR_ARTIGO_INTERNO",
+       "artigos": [
+        "4"
+       ]
+      }
+     ]
+    }
+   },
+   "target_engine_status": "CURRENT",
+   "target_runtime_status": "CURRENT",
+   "visibility": "CURRENT_VISIBLE",
+   "reachable_device_v1": true,
+   "device_target_flags": "-C--R-",
+   "device_flag_C": true,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_ARTIGO_INTERNO",
+   "relation_dest_articles": [
+    "4"
+   ],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "destination_cites": [
+    "CF88:ART.206",
+    "CF88:ART.206:INC.V",
+    "CF88:ART.206:INC.VIII",
+    "CF88:ART.208",
+    "CF88:ART.211:PAR.6",
+    "CF88:ART.211:PAR.7",
+    "CF88:ART.212",
+    "CF88:ART.214",
+    "CF88:ART.225:PAR.1:INC.VII",
+    "CF88:ART.242"
+   ],
+   "plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "review_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Centro de Documentação e Informação LEI Nº 15.388, DE 14 DE ABRIL DE 2026 Aprova o Plano Nacional de Educação (PNE). O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES"
+  },
+  {
+   "reference_id": "CORRELATA:REL_521CE46DBB902C96@CF88:ART.40:PAR.4:INC.II",
+   "target_id": "CF88:ART.40:PAR.4:INC.II",
+   "display_target": "CF art. 40, § 4, II",
+   "relation_id": "REL_521CE46DBB902C96",
+   "destination_norm_id": "EXT_LC144_2014",
+   "destination_norm_key": "LC:144/2014",
+   "destination_norm_name": "Lei Complementar nº 144/2014",
+   "label": "EXT_LC144_2014",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_521CE46DBB902C96",
+     "index_row": "REL_LOOKUP:L10"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF4440.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2014/leicomplementar-144-15-maio-2014-778732-publicacaooriginal-144121-pl.html"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "40, § 4º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "40, § 4º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "HISTORICAL_ONLY",
+   "target_runtime_status": "NOT_IN_RUNTIME",
+   "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT",
+   "reachable_device_v1": false,
+   "device_target_flags": null,
+   "device_flag_C": false,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.1",
+    "CF88:ART.103"
+   ],
+   "plausibility": "OBSOLETE_HIDDEN",
+   "review_flags": [
+    "HIDDEN_HISTORICAL_TARGET (alvo HISTORICAL_ONLY; nao aparece no aparelho)",
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Presidência da República LEI COMPLEMENTAR Nº 144, DE 15 DE MAIO DE 2014 Atualiza a ementa e altera o art. 1 o da Lei Complementar n o 51, de 20 de dezembro de 1985, que “Dispõe sobre a aposentadoria do funcionário policial, nos termos do art. 103, da Constituição Federal”, para regulamentar a apose…"
+  },
+  {
+   "reference_id": "CORRELATA:REL_521CE46DBB902C96@CF88:ART.40:PAR.4:INC.III",
+   "target_id": "CF88:ART.40:PAR.4:INC.III",
+   "display_target": "CF art. 40, § 4, III",
+   "relation_id": "REL_521CE46DBB902C96",
+   "destination_norm_id": "EXT_LC144_2014",
+   "destination_norm_key": "LC:144/2014",
+   "destination_norm_name": "Lei Complementar nº 144/2014",
+   "label": "EXT_LC144_2014",
+   "provenance": {
+    "engine": {
+     "system": "Relations V2 (pacote 2E4.1 -> SD teste 2E6)",
+     "relacao_id": "REL_521CE46DBB902C96",
+     "index_row": "REL_LOOKUP:L11"
+    },
+    "migration": "AUTO_MEMBER_MATCH",
+    "legacy_relation_2e4": {
+     "urls": [
+      "https://www.camara.leg.br/internet/infdoc/novoconteudo/html/leginfra/ArtCF4440.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2014/leicomplementar-144-15-maio-2014-778732-publicacaooriginal-144121-pl.html"
+     ],
+     "destino_artigos": [],
+     "bindings": [
+      {
+       "origem_caminho": "40, § 4º, II",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      },
+      {
+       "origem_caminho": "40, § 4º, III",
+       "modo": "ABRIR_NORMA_SEM_SALTO",
+       "artigos": []
+      }
+     ]
+    }
+   },
+   "target_engine_status": "HISTORICAL_ONLY",
+   "target_runtime_status": "NOT_IN_RUNTIME",
+   "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT",
+   "reachable_device_v1": false,
+   "device_target_flags": null,
+   "device_flag_C": false,
+   "relation_row_on_card": true,
+   "relation_mode": "ABRIR_NORMA_SEM_SALTO",
+   "relation_dest_articles": [],
+   "dest_articles_indexed": true,
+   "destination_in_ext_normas": true,
+   "destination_file_on_card": true,
+   "destination_text_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "destination_cites": [
+    "CF88:ART.1",
+    "CF88:ART.103"
+   ],
+   "plausibility": "OBSOLETE_HIDDEN",
+   "review_flags": [
+    "HIDDEN_HISTORICAL_TARGET (alvo HISTORICAL_ONLY; nao aparece no aparelho)",
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)"
+   ],
+   "destination_ementa": "Presidência da República LEI COMPLEMENTAR Nº 144, DE 15 DE MAIO DE 2014 Atualiza a ementa e altera o art. 1 o da Lei Complementar n o 51, de 20 de dezembro de 1985, que “Dispõe sobre a aposentadoria do funcionário policial, nos termos do art. 103, da Constituição Federal”, para regulamentar a apose…"
+  }
+ ]
+}
