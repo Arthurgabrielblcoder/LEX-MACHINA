@@ -128,16 +128,20 @@ class FullEntendaPackage(unittest.TestCase):
         finally:
             dev.close()
 
-    def test_firmware_fixed_diag_case_art127_is_the_only_stale_expectation(self):
-        """The approved app's boot self-test expects CF88:ART.127 WITHOUT ENTENDA; Macro07 approved it. Recorded, not hidden."""
+    def test_firmware_fixed_diag_cases_match_the_810_lookup(self):
+        """Boot self-test table casos[]: every expectation must match the approved lookup (CF88:ART.127 is DIRECT since Macro07;
+        the stale NONE expectation was the only one and was corrected in the diagnostic table only)."""
         rows, _ = lookup(NEW)
-        res = {r[0]: r[7] for r in rows}
+        res = {r[0]: r for r in rows}
         ino = (FW / 'LEX_MACHINA_DEVICE_V1_CANDIDATE.ino').read_text(encoding='utf-8')
         cases = re.findall(r'\{"([A-Z0-9:.\-]+)",(true|false),LEXV1_RES_(\w+),"([^"]*)"', ino)
-        stale = [t for t, ex, want, anc in cases if {'NONE': None, 'DIRECT': 'DIRECT', 'COVERED_BY_BLOCK': 'COVERED_BY_BLOCK'}[want] != res.get(t)]
         self.assertEqual(len(cases), 10)
-        self.assertEqual(stale, ['CF88:ART.127'])
-
+        for tid, exists, want, anchor in cases:
+            got = res.get(tid)
+            self.assertEqual(want, 'NONE' if got is None else got[7], tid)
+            if got is not None and got[7] == 'DIRECT':
+                self.assertEqual(anchor, tid, tid)
+        self.assertIn('{"CF88:ART.127",true,LEXV1_RES_DIRECT,"CF88:ART.127",1,1}', ino)
 
 if __name__ == '__main__':
     unittest.main()

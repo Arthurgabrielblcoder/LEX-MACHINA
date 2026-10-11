@@ -108,8 +108,14 @@ class SourceContractTest(unittest.TestCase):
 
     def test_sketch_untouched(self):
         # only the parser changed: reader, scroll, cache refill, landing, TEXT_MAP, layers and search code are byte-identical
-        ino = (ROOT / INO_REL).read_text(encoding='utf-8')
-        self.assertEqual(ino.replace('\r\n', '\n'), git_show(BASELINE_TAG, INO_REL).replace('\r\n', '\n'))
+        # FULL_CF_ENTENDA_810 (2026-10-11): the only allowed change is the boot self-test expectation of CF88:ART.127 (NONE -> DIRECT)
+        ino = (ROOT / INO_REL).read_text(encoding='utf-8').replace('\r\n', '\n').split('\n')
+        base = git_show(BASELINE_TAG, INO_REL).replace('\r\n', '\n').split('\n')
+        self.assertEqual(len(ino), len(base))
+        diff = [(a, b) for a, b in zip(base, ino) if a != b]
+        self.assertEqual(diff, [('      {"CF88:ART.127",true,LEXV1_RES_NONE,"",1,1},   // estavel RUN1..RUN3: 1 referencia, sem ENTENDA',
+                                 '      {"CF88:ART.127",true,LEXV1_RES_DIRECT,"CF88:ART.127",1,1},   // estavel RUN1..RUN3: 1 referencia; ENTENDA DIRECT '
+                                 '(FULL_CF_ENTENDA_810, Macro07)')])
 
     def test_no_io_no_state_in_guard(self):
         guard = CTX[CTX.index('#define LEX_CONTEXTO_CITACAO 1'):CTX.index('static inline bool aplicarLinhaContextoJuridico(')]

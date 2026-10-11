@@ -100,12 +100,17 @@ class SchemaContractTest(unittest.TestCase):
 class DiagnosticCoverageTest(unittest.TestCase):
     CASE_RE = re.compile(r'\{"([A-Z0-9:.]+)",(true|false),LEXV1_RES_(NONE|DIRECT|COVERED_BY_BLOCK),"([A-Z0-9:.]*)",(\d+),(\d+)\}')
 
+    # The boot self-test runs against the package physically on the card: since the FULL_CF_ENTENDA_810 deploy (2026-10-11) that is
+    # the 810 package (CF88:ART.127 has an approved DIRECT ENTENDA; Macro07). Older stagings keep their own tests.
+    SD_DEPLOYED = DI / 'staging_sd_v1_full_entenda_810_candidate/SD/99_LEX_V1'
+
+    @unittest.skipUnless((DI / 'staging_sd_v1_full_entenda_810_candidate/SD/99_LEX_V1/00_SYS/LEXV1.VER').is_file(), 'FULL 810 staging not built')
     def test_all_queries_and_expectations_match_simulator(self):
         cases = self.CASE_RE.findall(device_v1_ino_sections())
         ids = [c[0] for c in cases]
         self.assertEqual(ids, ['CF88:ART.5:INC.V', 'CF88:ART.21:INC.XXIV', 'CF88:ART.22:INC.XXIX', 'CF88:ART.24:PAR.4', 'CF88:ART.37:PAR.6',
                                'CF88:ART.60:PAR.4:INC.IV', 'ADCT:ART.10:INC.II', 'CF88:ART.114:INC.VIII', 'CF88:ART.127', 'CF88:ART.999'])
-        dev = S.Device(SD)
+        dev = S.Device(self.SD_DEPLOYED)
         try:
             for tid, exists, res, anchor, refs, visible in cases:
                 q = dev.query(tid.replace(':ART.', '.').replace(':PAR.', '.').replace(':INC.', '.'))

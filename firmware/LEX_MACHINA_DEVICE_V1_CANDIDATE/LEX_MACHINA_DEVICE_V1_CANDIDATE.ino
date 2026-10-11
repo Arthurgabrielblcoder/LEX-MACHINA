@@ -5904,7 +5904,7 @@ void lexV1DiagnosticoBoot()
       {"CF88:ART.60:PAR.4:INC.IV",true,LEXV1_RES_DIRECT,"CF88:ART.60:PAR.4:INC.IV",0,0},
       {"ADCT:ART.10:INC.II",true,LEXV1_RES_DIRECT,"ADCT:ART.10:INC.II",0,0},
       {"CF88:ART.114:INC.VIII",true,LEXV1_RES_NONE,"",2,0},   // known issue: 2 referencias historicas ocultas
-      {"CF88:ART.127",true,LEXV1_RES_NONE,"",1,1},   // estavel RUN1..RUN3: 1 referencia, sem ENTENDA
+      {"CF88:ART.127",true,LEXV1_RES_DIRECT,"CF88:ART.127",1,1},   // estavel RUN1..RUN3: 1 referencia; ENTENDA DIRECT (FULL_CF_ENTENDA_810, Macro07)
       {"CF88:ART.999",false,LEXV1_RES_NONE,"",0,0},
     };
     for(const LexV1Caso &c: casos){
