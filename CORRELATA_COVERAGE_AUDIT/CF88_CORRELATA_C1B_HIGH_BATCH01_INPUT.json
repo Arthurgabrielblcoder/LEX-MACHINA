@@ -1,0 +1,1122 @@
+{
+ "schema_version": 1,
+ "mission": "CF88_CORRELATA_C1B_HIGH_REVIEW_BATCH01",
+ "baseline": {
+  "branch": "cf-correlata-coverage-audit",
+  "head": "281b2e6e101c54f1e4349c3dce6a5169058f3527"
+ },
+ "applied": false,
+ "verified_on": "2026-10-11",
+ "artifact": "CF88_CORRELATA_C1B_HIGH_BATCH01_INPUT",
+ "selection": {
+  "source": "CORRELATA_COVERAGE_AUDIT/CF88_CORRELATA_REVIEW_QUEUE.json :: HIGH",
+  "rule": "target CF88 art. 5 a 43; ordem estrutural do Target Index",
+  "pool": 29,
+  "taken": 29,
+  "limit_rule": "<= 35: todos; > 35: primeiros 30",
+  "candidate_ids": [
+   "CORRC0-BDB0C3B6A45D",
+   "CORRC0-ABBD129F7E41",
+   "CORRC0-514534A6E80F",
+   "CORRC0-06D0375C4D5A",
+   "CORRC0-A809DD115D5A",
+   "CORRC0-AFD5D339090B",
+   "CORRC0-142570A4C40E",
+   "CORRC0-EE675AD3A3EF",
+   "CORRC0-FFA7F8C1F500",
+   "CORRC0-23FDAA617AC7",
+   "CORRC0-EC2800C205A0",
+   "CORRC0-7C51431603DB",
+   "CORRC0-643E8D275C20",
+   "CORRC0-0ACA5FF28F47",
+   "CORRC0-1FA33FCCC066",
+   "CORRC0-5F7CFBD5912A",
+   "CORRC0-9C3FB3B95B9B",
+   "CORRC0-C6956D31D6B7",
+   "CORRC0-7387F1A2A033",
+   "CORRC0-6B89F3FB8FD7",
+   "CORRC0-2E98C1949CA4",
+   "CORRC0-9F2A47C4A756",
+   "CORRC0-75E9432F8BCD",
+   "CORRC0-9CC6494851BB",
+   "CORRC0-D961094C030C",
+   "CORRC0-E1D20570E8DC",
+   "CORRC0-F3505EF9129C",
+   "CORRC0-78E258F9B624",
+   "CORRC0-DAD68D5F75A2"
+  ]
+ },
+ "candidates": [
+  {
+   "candidate_id": "CORRC0-BDB0C3B6A45D",
+   "target_id": "CF88:ART.5:INC.XII",
+   "display_target": "CF art. 5, XII",
+   "norm_key": "LEI:9296/1996",
+   "norm_name": "Lei nº 9.296/1996",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_ITEM",
+    "LEGADO_2D4_QUARENTENA",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XII/BASE/1:content",
+     "evidence": "penal, seja para investigar um crime, seja para produzir prova em processo criminal. A lei que regula a interceptação de comunicações telefônicas é a Lei nº 9.296/1996. Em investigação de tráfico de drogas, a autoridade policial pede ao juiz autorização para …"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0017",
+     "evidence": "57 Legislação Complementar: Lei Complementar nº 105, de 10/01/2001 Legislação ordinária: Lei nº 9.296, de 24/07/1996"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-ABBD129F7E41",
+   "target_id": "CF88:ART.5:INC.XXXII",
+   "display_target": "CF art. 5, XXXII",
+   "norm_key": "LEI:8078/1990",
+   "norm_name": "Lei 8.078/1990 - Código de Defesa do Consumidor",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_ITEM",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_ART1_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XXXII/BASE/2:content",
+     "evidence": "sumidor em dever do Estado. Os direitos, prazos e mecanismos concretos vêm da legislação; o principal instrumento é o Código de Defesa do Consumidor (Lei nº 8.078/1990), elaborado por determinação da própria Constituição (art. 48 do ADCT). A legislação consum…"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:CDC1990:art.1:ART1",
+     "evidence": "O presente código estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social, nos termos dos arts. 5°, inciso XXXII, 170, inciso V, da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0002",
+     "evidence": "7.347, de 24/07/1985 (Ação Civil Penal) Legislação ordinária: Lei nº 8.002, de 14/03/1990 Lei nº 8.078, de 11/09/1990 (ADCT, art. 48) Lei nº 8.137, de 27/12/1990 Lei nº 8.158, de 08/01/1991 Lei nº 8.884, de 11/06/1994"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XXXII/BASE/2:content:NOME",
+     "evidence": "uição transforma a defesa do consumidor em dever do Estado. Os direitos, prazos e mecanismos concretos vêm da legislação; o principal instrumento é o Código de Defesa do Consumidor (Lei nº 8.078/1990), elaborado por determinação da própria Constituição (art. …"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XXXII/BASE/2:content:NOME",
+     "evidence": "a do Consumidor (Lei nº 8.078/1990), elaborado por determinação da própria Constituição (art. 48 do ADCT). A legislação consumerista, especialmente o Código de Defesa do Consumidor, parte da vulnerabilidade do consumidor nas relações de consumo. A defesa do c…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XXXII/BASE/2:content:NOME",
+     "evidence": "igido ao Estado; os direitos específicos, prazos e procedimentos estão na lei, e não no texto constitucional. Consumidor segundo a definição legal do Código de Defesa do Consumidor, quem adquire ou utiliza produto ou serviço como destinatário final."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-514534A6E80F",
+   "target_id": "CF88:ART.5:INC.XXXIII",
+   "display_target": "CF art. 5, XXXIII",
+   "norm_key": "LEI:12527/2011",
+   "norm_name": "Lei 12.527/2011 - Lei de Acesso à Informação",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S4_ACERVO_REVERSO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "REVERSE_ART1_COMPLEMENTA",
+    "REVERSE_EMENTA_REGULAMENTA"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XXXIII/BASE/1:content",
+     "evidence": "ra quem a pratica. O sigilo é exceção e só se justifica quando for imprescindível à segurança da sociedade e do Estado. A Lei de Acesso à Informação (Lei nº 12.527/2011) regula prazos e procedimentos. Uma jornalista pede à prefeitura cópia dos contratos de co…"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LAI2011:art.-:EMENTA",
+     "evidence": "Mensagem de veto Vigência Regulamento Regula o acesso a informações previsto no inciso XXXIII do art. 5º , no inciso II do § 3º do art. 37 e no § 2º do art. 216 da Constituição Federal"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LAI2011:art.1:ART1",
+     "evidence": "Esta Lei dispõe sobre os procedimentos a serem observados pela União, Estados, Distrito Federal e Municípios, com o fim de garantir o acesso a informações previsto no inciso XXXIII do art. 5º , no inciso II do § 3º do art. 37 e no § 2º do art. 216 da Constituição Federal"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.XXXIII/BASE/1:content:NOME",
+     "evidence": "ida gera responsabilidade para quem a pratica. O sigilo é exceção e só se justifica quando for imprescindível à segurança da sociedade e do Estado. A Lei de Acesso à Informação (Lei nº 12.527/2011) regula prazos e procedimentos. Uma jornalista pede à prefeitu…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-06D0375C4D5A",
+   "target_id": "CF88:ART.5:INC.XLIII",
+   "display_target": "CF art. 5, XLIII",
+   "norm_key": "LEI:8072/1990",
+   "norm_name": "Lei 8.072/1990 - Lei dos Crimes Hediondos",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_EMENTA_IMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:HEDIONDOS1990:art.-:EMENTA",
+     "evidence": "Texto compilado Mensagem de veto Dispõe sobre os crimes hediondos, nos termos do art. 5º, inciso XLIII, da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0005",
+     "evidence": "o anterior: Lei nº 6.368, de 21/10/1976 Lei nº 7.170, de 14/12/1983 Legislação ordinária: Lei nº 8.072, de 25/07/1990 Lei nº 9.455, de 07/04/1997 Lei nº 10.409, de 11/01/2002 Lei nº 11.343, de 23/08/2006 Lei nº 13.260, de 16/03/2016"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-A809DD115D5A",
+   "target_id": "CF88:ART.5:INC.LXXIX",
+   "display_target": "CF art. 5, LXXIX",
+   "norm_key": "LEI:13709/2018",
+   "norm_name": "Lei 13.709/2018 - Lei Geral de Proteção de Dados",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_ITEM",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.LXXIX/BASE/1:content",
+     "evidence": "bases legais para tratamento de dados, direitos do titular e sanções, estão na lei. O principal diploma é a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018). Um aplicativo coleta a localização e os contatos dos usuários e os repassa a terceiros se…"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0008",
+     "evidence": "Legislação ordinária: Lei nº 13.709, de 14/08/2018"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.5:INC.LXXIX/BASE/1:content:NOME",
+     "evidence": "papel e dados digitais. Os detalhes, como bases legais para tratamento de dados, direitos do titular e sanções, estão na lei. O principal diploma é a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018). Um aplicativo coleta a localização e os contato…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-AFD5D339090B",
+   "target_id": "CF88:ART.7:PAR.UNICO",
+   "display_target": "CF art. 7, p.u.",
+   "norm_key": "LC:150/2015",
+   "norm_name": "Lei Complementar nº 150/2015",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.7:PAR.UNICO/BASE/2:external_layer_notes",
+     "evidence": "A regulamentação dos direitos condicionados está na Lei Complementar nº 150/2015, legislação central dos trabalhadores domésticos."
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0002",
+     "evidence": "Legislação Complementar: Lei Complementar nº 150, de 01/06/2015"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-142570A4C40E",
+   "target_id": "CF88:ART.9:PAR.2",
+   "display_target": "CF art. 9, § 2",
+   "norm_key": "LEI:7783/1989",
+   "norm_name": "Lei 7.783/1989 - Lei de Greve",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_OVERVIEW",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.9/BASE/2:external_layer_notes",
+     "evidence": "A Lei nº 7.783/1989 define tecnicamente a greve e disciplina seu exercício."
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0020",
+     "evidence": "Legislação ordinária: Lei nº 7.783, de 28/06/1989"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-EE675AD3A3EF",
+   "target_id": "CF88:ART.14:PAR.9",
+   "display_target": "CF art. 14, § 9",
+   "norm_key": "LC:135/2010",
+   "norm_name": "Lei Complementar nº 135/2010",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.14:PAR.9/BASE/2:external_layer_notes",
+     "evidence": "Legislação correlata: Lei Complementar nº 64/1990, alterada pela Lei Complementar nº 135/2010 (Lei da Ficha Limpa)."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-FFA7F8C1F500",
+   "target_id": "CF88:ART.14:PAR.9",
+   "display_target": "CF art. 14, § 9",
+   "norm_key": "LC:64/1990",
+   "norm_name": "Lei Complementar 64/1990 - Inelegibilidades",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_EMENTA_IMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.14:PAR.9/BASE/2:external_layer_notes",
+     "evidence": "Legislação correlata: Lei Complementar nº 64/1990, alterada pela Lei Complementar nº 135/2010 (Lei da Ficha Limpa)."
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:INELEG1990:art.-:EMENTA",
+     "evidence": "MARCAÇÃO HTML RISCADA ======================================== Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI COMPLEMENTAR Nº 64, DE 18 DE MAIO DE 1990 Mensagem de veto Texto compilado Estabelece, de acordo com o art. 14, § 9º da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0023",
+     "evidence": "Legislação anterior: Lei Complementar nº 5, de 29/04/1970 Legislação Complementar: Lei Complementar nº 64, de 18/05/1990"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-23FDAA617AC7",
+   "target_id": "CF88:ART.17:PAR.2",
+   "display_target": "CF art. 17, § 2",
+   "norm_key": "LEI:9096/1995",
+   "norm_name": "Lei 9.096/1995 - Lei dos Partidos Políticos",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_EMENTA_REGULAMENTA",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:PARTIDOS1995:art.-:EMENTA",
+     "evidence": "========================== Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 9.096, DE 19 DE SETEMBRO DE 1995 Texto Compilado Mensagem de veto Dispõe sobre partidos políticos, regulamenta os arts. 17 e 14, § 3º, inciso V, da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0030",
+     "evidence": "Legislação ordinária: Lei nº 9.096, de 19/09/1995 Lei nº 10.406, de 10/01/2002 (Código Civil, art. 44 e 2.031)"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0028",
+     "evidence": ".291, de 2022) § 1º Os partidos políticos que tenham cumprido as condições estabelecidas no § 3º do art. 17 da Constituição Federal terão assegurado o direito de acesso gratuito ao rádio e à televisão, na proporção de sua bancada e | egislação anterior: Lei n…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-EC2800C205A0",
+   "target_id": "CF88:ART.17:PAR.3",
+   "display_target": "CF art. 17, § 3",
+   "norm_key": "LEI:9096/1995",
+   "norm_name": "Lei 9.096/1995 - Lei dos Partidos Políticos",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_INCIDENTAL",
+    "REVERSE_EMENTA_REGULAMENTA",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:PARTIDOS1995:art.-:EMENTA",
+     "evidence": "========================== Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 9.096, DE 19 DE SETEMBRO DE 1995 Texto Compilado Mensagem de veto Dispõe sobre partidos políticos, regulamenta os arts. 17 e 14, § 3º, inciso V, da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0029",
+     "evidence": "º 5.682, de 21/07/1971, arts. 105 e 108 Lei nº 7.508, de 04/07/1986 Legislação ordinária: Lei nº 9.096, de 19/09/1995 Lei nº 9.693, de 27/07/1998"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0028",
+     "evidence": ".291, de 2022) § 1º Os partidos políticos que tenham cumprido as condições estabelecidas no § 3º do art. 17 da Constituição Federal terão assegurado o direito de acesso gratuito ao rádio e à televisão, na proporção de sua bancada e | egislação anterior: Lei n…"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:PARTIDOS1995:art.50-B:BODY",
+     "evidence": "V - promover e difundir a participação política das mulheres, dos jovens e dos negros. § 1º Os partidos políticos que tenham cumprido as condições estabelecidas no § 3º do art. 17 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-7C51431603DB",
+   "target_id": "CF88:ART.18:PAR.4",
+   "display_target": "CF art. 18, § 4",
+   "norm_key": "LC:230/2026",
+   "norm_name": "Lei Complementar nº 230/2026",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "LEGADO_2D6_4_P1_CONSOLIDADAS",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.18:PAR.4/BASE/2:external_layer_notes",
+     "evidence": "Legislação (verificada em 2026-09-29 no texto oficial): a Lei Complementar nº 230/2026 (DOU de 16/04/2026) fixou normas gerais apenas para o desmembramento de parte de um Município para incorporação a outro, limítrofe. Por essa via não"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D6_4_P1_CONSOLIDADAS:0000",
+     "evidence": "Legislação Complementar: Lei complementar nº 230, de 15/04/2026"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-643E8D275C20",
+   "target_id": "CF88:ART.21:INC.IV",
+   "display_target": "CF art. 21, IV",
+   "norm_key": "LC:90/1997",
+   "norm_name": "Lei Complementar nº 90/1997",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0003",
+     "evidence": "Legislação Complementar: Lei Complementar nº 90, de 01/10/1997"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-0ACA5FF28F47",
+   "target_id": "CF88:ART.21:INC.XXVI",
+   "display_target": "CF art. 21, XXVI",
+   "norm_key": "LEI:13848/2019",
+   "norm_name": "Lei nº 13.848/2019",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.21:INC.XXVI/BASE/2:external_layer_notes",
+     "evidence": "ncia reguladora federal. Foi transformada pela Medida Provisória nº 1.317/2025, convertida na Lei nº 15.352/2026, que a incluiu no rol de agências da Lei nº 13.848/2019. Ver nota temporal."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-1FA33FCCC066",
+   "target_id": "CF88:ART.21:INC.XXVI",
+   "display_target": "CF art. 21, XXVI",
+   "norm_key": "LEI:15352/2026",
+   "norm_name": "Lei nº 15.352/2026",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.21:INC.XXVI/BASE/2:external_layer_notes",
+     "evidence": "l): a Agência Nacional de Proteção de Dados (ANPD) é agência reguladora federal. Foi transformada pela Medida Provisória nº 1.317/2025, convertida na Lei nº 15.352/2026, que a incluiu no rol de agências da Lei nº 13.848/2019. Ver nota temporal."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-5F7CFBD5912A",
+   "target_id": "CF88:ART.21:INC.XXVI",
+   "display_target": "CF art. 21, XXVI",
+   "norm_key": "MP:1317/2025",
+   "norm_name": "Medida Provisória nº 1317/2025",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.21:INC.XXVI/BASE/2:external_layer_notes",
+     "evidence": "ional (verificada em 2026-09-29 em fonte oficial): a Agência Nacional de Proteção de Dados (ANPD) é agência reguladora federal. Foi transformada pela Medida Provisória nº 1.317/2025, convertida na Lei nº 15.352/2026, que a incluiu no rol de agências da Lei nº…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-9C3FB3B95B9B",
+   "target_id": "CF88:ART.22:INC.XXVII",
+   "display_target": "CF art. 22, XXVII",
+   "norm_key": "LEI:13303/2016",
+   "norm_name": "Lei nº 13.303/2016",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.22:INC.XXVII/BASE/2:external_layer_notes",
+     "evidence": "al vigente é a Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos). Para empresas públicas e sociedades de economia mista, aplica-se a Lei nº 13.303/2016."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-C6956D31D6B7",
+   "target_id": "CF88:ART.22:INC.XXVII",
+   "display_target": "CF art. 22, XXVII",
+   "norm_key": "LEI:14133/2021",
+   "norm_name": "Lei 14.133/2021 - Licitações e Contratos Administrativos",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "secao_camara=NAO_CAMARA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.22:INC.XXVII/BASE/2:external_layer_notes",
+     "evidence": "A lei geral federal vigente é a Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos). Para empresas públicas e sociedades de economia mista, aplica-se a Lei nº 13.303/2016."
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.22:INC.XXVII/BASE/2:external_layer_notes:NOME",
+     "evidence": "A lei geral federal vigente é a Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos). Para empresas públicas e sociedades de economia mista, aplica-se a Lei nº 13.303/2016."
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.22:INC.XXVII/BASE/2:external_layer_notes:NOME",
+     "evidence": "A lei geral federal vigente é a Lei nº 14.133/2021 (Lei de Licitações e Contratos Administrativos). Para empresas públicas e sociedades de economia mista, aplica-se a Lei nº 13.303/2016."
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0036",
+     "evidence": "do disposto nas normas gerais de licitação e contratação a que se refere o inciso XXVII do caput do art. 22 da Constituição Federal. .................................................................................................."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-7387F1A2A033",
+   "target_id": "CF88:ART.22:PAR.UNICO",
+   "display_target": "CF art. 22, p.u.",
+   "norm_key": "LC:103/2000",
+   "norm_name": "Lei Complementar nº 103/2000",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "LEGADO_2D6_4_P1_CONSOLIDADAS",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.22:PAR.UNICO/BASE/2:content",
+     "evidence": "ederal acumula competências legislativas atribuídas aos Estados e aos Municípios e pode aparecer em autorizações concretas, como na lei do exemplo. A Lei Complementar nº 103/2000 autorizou os Estados e o Distrito Federal a instituir piso salarial para categor…"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D6_4_P1_CONSOLIDADAS:0006",
+     "evidence": "Legislação Complementar: Lei Complementar nº 103, de 14/07/2000"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-6B89F3FB8FD7",
+   "target_id": "CF88:ART.23:INC.VI",
+   "display_target": "CF art. 23, VI",
+   "norm_key": "LC:140/2011",
+   "norm_name": "Lei Complementar nº 140/2011",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.23:INC.VI/BASE/2:external_layer_notes",
+     "evidence": "A lei complementar de cooperação em matéria ambiental é a Lei Complementar nº 140/2011, segundo a qual cada empreendimento é licenciado por um único ente federativo; a divisão concreta de atribuições também é tratada na camada JURISPRUD"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-2E98C1949CA4",
+   "target_id": "CF88:ART.23:PAR.UNICO",
+   "display_target": "CF art. 23, p.u.",
+   "norm_key": "LC:140/2011",
+   "norm_name": "Lei Complementar nº 140/2011",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_DEVICE"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.23:PAR.UNICO/BASE/2:external_layer_notes",
+     "evidence": "A lei complementar de cooperação em matéria ambiental é a Lei Complementar nº 140/2011."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-9F2A47C4A756",
+   "target_id": "CF88:ART.37:PAR.2",
+   "display_target": "CF art. 37, § 2",
+   "norm_key": "LEI:8112/1990",
+   "norm_name": "Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0048",
+     "evidence": "o anterior: Lei nº 4.717, de 29/06/1965 Lei nº 4.898, de 09/12/1965 Legislação ordinária: Lei nº 8.112, de 11/12/1990"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0047",
+     "evidence": "Legislação ordinária: Lei nº 8.112, de 11/12/1990 Decreto nº 6.593, de 02/10/2008 Decreto nº 6.944, de 21/08/2009 Lei nº 14.965, de 09/09/2024 | legais, fazem jus à pensão por morte, observados os limites estabelecidos no inciso XI do caput do art. 37 da Cons…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-75E9432F8BCD",
+   "target_id": "CF88:ART.37:PAR.4",
+   "display_target": "CF art. 37, § 4",
+   "norm_key": "LEI:8112/1990",
+   "norm_name": "Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0049",
+     "evidence": "rior: Decreto-Lei nº 200, de 25/02/1967 Lei nº 7.492, de 16/06/1986 Legislação ordinária: Lei nº 8.112, de 11/12/1990 (arts. 121, 122, 123, 124, 125 e 126) Lei nº 8.429, de 02/06/1992 Lei nº 8.666, de 21/06/1993"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0047",
+     "evidence": "Legislação ordinária: Lei nº 8.112, de 11/12/1990 Decreto nº 6.593, de 02/10/2008 Decreto nº 6.944, de 21/08/2009 Lei nº 14.965, de 09/09/2024 | legais, fazem jus à pensão por morte, observados os limites estabelecidos no inciso XI do caput do art. 37 da Cons…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-9CC6494851BB",
+   "target_id": "CF88:ART.37:PAR.4",
+   "display_target": "CF art. 37, § 4",
+   "norm_key": "LEI:8429/1992",
+   "norm_name": "Lei 8.429/1992 - Improbidade Administrativa",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_EMENTA_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LIA1992:art.-:EMENTA",
+     "evidence": "======= Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.429, DE 2 DE JUNHO DE 1992 Texto compilado Dispõe sobre as sanções aplicáveis em virtude da prática de atos de improbidade administrativa, de que trata o § 4º do art. 37 da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0043",
+     "evidence": "6 Legislação ordinária: Lei nº 8.112, de 11/12/1990 (arts. 121, 122, 123, 124, 125 e 126) Lei nº 8.429, de 02/06/1992 Lei nº 8.666, de 21/06/1993"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-D961094C030C",
+   "target_id": "CF88:ART.37:PAR.5",
+   "display_target": "CF art. 37, § 5",
+   "norm_key": "LEI:8112/1990",
+   "norm_name": "Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0050",
+     "evidence": "5.869, de 11/01/1973 (arts. 184 e 816) Lei nº 7.492, de 16/06/1986 Legislação ordinária: Lei nº 8.112, de 11/12/1990 (art. 130, §1º) Lei nº 8.429, de 02/06/1992 Lei nº 10.406, de 10/01/2002"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0047",
+     "evidence": "Legislação ordinária: Lei nº 8.112, de 11/12/1990 Decreto nº 6.593, de 02/10/2008 Decreto nº 6.944, de 21/08/2009 Lei nº 14.965, de 09/09/2024 | legais, fazem jus à pensão por morte, observados os limites estabelecidos no inciso XI do caput do art. 37 da Cons…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-E1D20570E8DC",
+   "target_id": "CF88:ART.37:PAR.7",
+   "display_target": "CF art. 37, § 7",
+   "norm_key": "LEI:12813/2013",
+   "norm_name": "Lei nº 12.813/2013",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": true,
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "LEGADO_2D4_QUARENTENA",
+    "T1_IN_FORCE",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.37:PAR.7/BASE/3:external_layer_notes",
+     "evidence": "No âmbito do Poder Executivo federal, a Lei nº 12.813/2013 disciplina conflito de interesses, inclusive situações relacionadas ao acesso e ao uso de informações privilegiadas."
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "T1_EXTERNAL_CATALOG:LEI_12813_2013",
+     "evidence": "Lei nº 12.813/2013: conflito de interesses no exercicio de cargo ou emprego do Poder Executivo federal, inclusive informacoes privilegiadas; nao e regulamentacao universal do art. 37, § 7º, para todos os entes"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0054",
+     "evidence": "Legislação ordinária: Lei nº 12.813, de 16/05/2013"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-F3505EF9129C",
+   "target_id": "CF88:ART.40:PAR.1:INC.II",
+   "display_target": "CF art. 40, § 1, II",
+   "norm_key": "LC:152/2015",
+   "norm_name": "Lei Complementar nº 152/2015",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "LEGADO_2D6_4_P1_CONSOLIDADAS",
+    "T1_IN_FORCE",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/2:content",
+     "evidence": "dependentemente de pedido do servidor. A Constituição deixou à lei complementar a aplicação do limite de 75 anos. Na legislação atualmente vigente, a Lei Complementar nº 152/2015 fixa 75 anos para os servidores e demais agentes abrangidos por ela. Um servidor…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/2:content",
+     "evidence": "Lei Complementar nº 152/2015 fixa 75 anos para os servidores e demais agentes abrangidos por ela. Um servidor titular de cargo efetivo abrangido pela Lei Complementar nº 152/2015 completa 75 anos. Mesmo que queira permanecer trabalhando, alcançou a idade de a…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.40:PAR.1:INC.II/BASE/2:external_layer_notes",
+     "evidence": "Lei Complementar nº 152/2015."
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "T1_EXTERNAL_CATALOG:LC_152_2015",
+     "evidence": "Lei Complementar nº 152/2015: aposentadoria compulsoria aos 75 anos para os agentes abrangidos"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D6_4_P1_CONSOLIDADAS:0002",
+     "evidence": "Legislação Complementar: Lei Complementar nº 152, de 03/12/2015"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-78E258F9B624",
+   "target_id": "CF88:ART.40:PAR.7",
+   "display_target": "CF art. 40, § 7",
+   "norm_key": "LEI:8112/1990",
+   "norm_name": "Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_acervo_status": "IN_MAIN_CORPUS",
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=NAO_CAMARA",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0055",
+     "evidence": "Legislação ordinária: Lei nº 8.112, de 11/12/1990"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0054",
+     "evidence": "Art. 186. O servidor será aposentado: (Vide art. 40 da Constituição) I - por invalidez permanente, sendo os proventos integrais quando decorrente de acidente em serviç"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-DAD68D5F75A2",
+   "target_id": "CF88:ART.40:PAR.22",
+   "display_target": "CF art. 40, § 22",
+   "norm_key": "LEI:9717/1998",
+   "norm_name": "Lei nº 9.717/1998",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_acervo_status": "INGESTION_REQUIRED",
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_external_verification_required": false,
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "T1_PENDING_REGULATION"
+   ],
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.40:PAR.22/BASE/2:external_layer_notes",
+     "evidence": "EC 103/2019, art. 9º: enquanto não entrar em vigor a lei complementar que discipline o § 22, aplicam-se aos regimes próprios a Lei nº 9.717/1998 e as regras previstas no próprio art. 9º da EC 103/2019."
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "T1_EXTERNAL_CATALOG:EC103_ART9_LEI_9717",
+     "evidence": "EC 103/2019, art. 9º: ate a lei complementar do art. 40, § 22, aplicam-se aos RPPS a Lei nº 9.717/1998 e as regras do proprio art. 9º"
+    }
+   ]
+  }
+ ]
+}

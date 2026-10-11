@@ -258,6 +258,41 @@
 - **Dispositivos relevantes:** Lei 7.998/1990: nenhuma disposição sobre pensão por morte.
 - **Análise:** O inciso V é a pensão por morte (Lei 8.213/1991). A Lei 7.998 não a disciplina. É fan-out.
 
+## Revisão jurídica independente final
+
+- `INDEPENDENT_LEGAL_REVIEW: APPROVED_WITH_NOTES`
+- `C1A_DECISIONS_MATERIALLY_CHANGED: NO`
+- `OPERATIONAL_CHANGES: 0`
+
+**CF art. 20, § 1 (REPLACE):**
+
+- NON_EXCLUSIVE_PRIMARY_CORRELATA: a Lei 7.990/1989 tem relação direta e primária com a compensação financeira do art. 20, § 1º, mas a aprovação não a torna a única legislação correlata do dispositivo.
+- Não exclui futuros vínculos setoriais aprovados, como a Lei 8.001/1990 e a Lei 12.734/2012, que já está vinculada.
+- `NON_EXCLUSIVE_PRIMARY_CORRELATA = true`
+
+**CF art. 43, § 1, II (REPLACE):**
+
+- A avaliação jurídica sobe de MEDIA para ALTA. As LCs 124/2007 (SUDAM), 125/2007 (SUDENE) e 129/2009 (SUDECO):
+- são leis complementares;
+- são editadas "na forma do art. 43";
+- instituem os organismos regionais;
+- disciplinam sua composição e estrutura.
+- São implementação material direta do comando do § 1º, II. A decisão REPLACE se mantém; o campo `confidence` original fica preservado como registro histórico.
+- `independent_confidence = "ALTA"`
+- `relation_assessment = "IMPLEMENTACAO_MATERIAL_DIRETA"`
+
+**CF art. 182 (RETARGET):**
+
+- O RETARGET é técnico e só vale se compatível com a arquitetura. ART.182 e ART.182:CAPUT são a mesma unidade de apresentação, a única equivalência física permitida.
+- O retarget não cria segunda unidade de apresentação e não aumenta coverage_count.
+- Também não deve gerar dois botões nem vínculos duplicados no DEVICE.
+- Se o overlay futuro exigir o target canônico de apresentação, a decisão vira o equivalente técnico em CF88:ART.182, sem alteração jurídica.
+- Nada aplicado agora.
+- `PRESENTATION_EQUIVALENT_RETARGET = true`
+- `ART_CAPUT_DUPLICATION = false`
+- `presentation_target_id = "CF88:ART.182"`
+- `canonical_overlay_target_if_required = "CF88:ART.182"`
+
 ## Fora do escopo desta rodada
 
 Os itens que a missão lembrou como atenção especial e que NÃO estão entre os 19 NEEDS_REVIEW da C0 não foram revisados nem decididos aqui, por regra de escopo:

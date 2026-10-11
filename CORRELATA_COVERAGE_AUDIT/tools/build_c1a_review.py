@@ -248,6 +248,34 @@ REVIEW = [
          analysis='O inciso V é a pensão por morte (Lei 8.213/1991). A Lei 7.998 não a disciplina. É fan-out.'),
 ]
 
+INDEPENDENT_REVIEW = dict(verdict='APPROVED_WITH_NOTES', decisions_materially_changed='NO', operational_changes=0,
+                          scope='normalizacao final C1A: notas juridicas adicionais; nenhuma decisao, contagem ou simulacao alterada')
+INDEPENDENT_NOTES = {
+    R('REL_0628FE08FD9A170F', 'CF88:ART.20:PAR.1'): dict(
+        verdict='APPROVED_WITH_NOTES', NON_EXCLUSIVE_PRIMARY_CORRELATA=True,
+        notes=['NON_EXCLUSIVE_PRIMARY_CORRELATA: a Lei 7.990/1989 tem relação direta e primária com a compensação financeira do art. 20, '
+               '§ 1º, mas a aprovação não a torna a única legislação correlata do dispositivo.',
+               'Não exclui futuros vínculos setoriais aprovados, como a Lei 8.001/1990 e a Lei 12.734/2012, que já está vinculada.']),
+    R('REL_4468A85CBDDD620A', 'CF88:ART.43:PAR.1:INC.II'): dict(
+        verdict='APPROVED_WITH_NOTES', independent_confidence='ALTA', relation_assessment='IMPLEMENTACAO_MATERIAL_DIRETA',
+        notes=['A avaliação jurídica sobe de MEDIA para ALTA. As LCs 124/2007 (SUDAM), 125/2007 (SUDENE) e 129/2009 (SUDECO):',
+               'são leis complementares;',
+               'são editadas "na forma do art. 43";',
+               'instituem os organismos regionais;',
+               'disciplinam sua composição e estrutura.',
+               'São implementação material direta do comando do § 1º, II. A decisão REPLACE se mantém; o campo `confidence` original '
+               'fica preservado como registro histórico.']),
+    R('REL_70C4549A507F6E00', 'CF88:ART.182'): dict(
+        verdict='APPROVED_WITH_NOTES', PRESENTATION_EQUIVALENT_RETARGET=True, ART_CAPUT_DUPLICATION=False,
+        presentation_target_id='CF88:ART.182', canonical_overlay_target_if_required='CF88:ART.182',
+        notes=['O RETARGET é técnico e só vale se compatível com a arquitetura. ART.182 e ART.182:CAPUT são a mesma unidade de '
+               'apresentação, a única equivalência física permitida.',
+               'O retarget não cria segunda unidade de apresentação e não aumenta coverage_count.',
+               'Também não deve gerar dois botões nem vínculos duplicados no DEVICE.',
+               'Se o overlay futuro exigir o target canônico de apresentação, a decisão vira o equivalente técnico em CF88:ART.182, sem '
+               'alteração jurídica.',
+               'Nada aplicado agora.']),
+}
 OUT_OF_SCOPE_NOTE = ('Os itens que a missão lembrou como atenção especial e que NÃO estão entre os 19 NEEDS_REVIEW da C0 não foram '
                      'revisados nem decididos aqui, por regra de escopo:\n'
                      '- art. 214, I a VI × Lei 15.388/2026 (PLAUSIBLE_NOT_VERIFIED);\n'
@@ -300,7 +328,8 @@ def build():
                  destination_provisions=r['destination_provisions'], legal_analysis=r['analysis'],
                  retarget_to=r.get('retarget_to'), replacement_norms=r.get('replacement_norms', []),
                  route_fix=r.get('route') if r['decision'] in ('KEEP_WITH_ROUTE_FIX', 'RETARGET') else None,
-                 note=r.get('note'), applied=False)
+                 note=r.get('note'), applied=False,
+                 independent_review=INDEPENDENT_NOTES.get(s['reference_id'], dict(verdict='APPROVED', notes=[])))
         decisions.append(d)
     cnt = Counter(d['decision'] for d in decisions)
     # simulation only (never applied)
@@ -322,7 +351,10 @@ def build():
                                                                 - {unit(t) for t, _ in repl}),
         note='SIMULACAO, nao aplicada. Substitutas so contam se aprovadas e com rota de aparelho (LAI e Lei 8.212 = acervo principal; '
              'LC 63 = ja no cartao; Lei 7.990 e LCs 124/125/129 = ingestao). O retarget ART.182 -> ART.182:CAPUT nao muda a contagem.')
+    if any(by_ref[d['reference_id']]['decision'] != d['decision'] for d in decisions):
+        raise SystemExit('INDEPENDENT_REVIEW_MUST_NOT_CHANGE_DECISIONS')
     doc = dict(schema_version=1, mission=MISSION, baseline=BASE, applied=False, verified_on=VERIFIED_ON,
+               independent_review=INDEPENDENT_REVIEW,
                scope=dict(source=f'{QUEUE.relative_to(ROOT).as_posix()} :: CURRENT_LINK_REVIEW (plausibility NEEDS_REVIEW)',
                           total=len(snap), c0_current_link_review_section_total=len(q['CURRENT_LINK_REVIEW']),
                           excluded_from_scope=[x['reference_id'] for x in q['CURRENT_LINK_REVIEW'] if x['plausibility'] != 'NEEDS_REVIEW'],
@@ -395,6 +427,24 @@ def report(doc):
         if d['note']:
             a(f"- **Nota:** {d['note']}")
         a('')
+    ir = doc['independent_review']
+    a('## Revisão jurídica independente final')
+    a('')
+    a(f"- `INDEPENDENT_LEGAL_REVIEW: {ir['verdict']}`")
+    a(f"- `C1A_DECISIONS_MATERIALLY_CHANGED: {ir['decisions_materially_changed']}`")
+    a(f"- `OPERATIONAL_CHANGES: {ir['operational_changes']}`")
+    a('')
+    for d in doc['decisions']:
+        notes = d['independent_review']['notes']
+        if notes:
+            a(f"**{d['display_target']} ({d['decision']}):**")
+            a('')
+            for n in notes:
+                a(f'- {n}')
+            for k, v in d['independent_review'].items():
+                if k not in ('verdict', 'notes'):
+                    a(f'- `{k} = {json.dumps(v, ensure_ascii=False)}`')
+            a('')
     a('## Fora do escopo desta rodada')
     a('')
     a(doc['scope']['out_of_scope_note'])
