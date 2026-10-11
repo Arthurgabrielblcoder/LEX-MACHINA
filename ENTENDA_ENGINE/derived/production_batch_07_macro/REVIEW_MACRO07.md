@@ -6299,7 +6299,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 253 palavras · 1831 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 253 palavras · 1828 bytes · referências 0
 - **Motivo da seleção:** Visao geral: hipoteses, autorizacao previa do Congresso e quorum.
 
 **O QUE DIZ**
@@ -6335,7 +6335,7 @@ Sem autorização prévia do Congresso, o estado de sítio não pode ser decreta
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao congresso nacional autorização para decretar o estado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Hipóteses, autorização prévia do Congresso e oitiva dos dois Conselhos conferidas; o T1 não trata o parecer como autorização.
 
 ---
 
@@ -6350,7 +6350,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 226 palavras · 1714 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 226 palavras · 1711 bytes · referências 0
 - **Motivo da seleção:** Visao geral: conteudo do decreto, executor, convocacao no recesso e funcionamento do Congresso.
 
 **O QUE DIZ**
@@ -6384,7 +6384,7 @@ A duração tem regras diferentes conforme a hipótese (§ 1º, com explicação
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: executor das medidas específicas e as áreas abrangidas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6395,7 +6395,7 @@ A duração tem regras diferentes conforme a hipótese (§ 1º, com explicação
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.138`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 178 palavras · 1357 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 178 palavras · 1354 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: limite de trinta dias por periodo na comocao grave e duracao enquanto durar a guerra.
 
 **O QUE DIZ**
@@ -6428,7 +6428,7 @@ Diferentemente do estado de defesa, o texto não limita o número de prorrogaç�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: decretado por mais de trinta dias nem prorrogado)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Trinta dias por período na hipótese do art. 137, I, e duração da guerra no inciso II conferidos literalmente.
 
 ---
 
@@ -6492,7 +6492,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1350 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 170 palavras · 1347 bytes · referências 0
 - **Motivo da seleção:** Visao geral: comissao parlamentar para fiscalizar as medidas dos estados de defesa e de sitio.
 
 **O QUE DIZ**
@@ -6526,7 +6526,7 @@ A comissão acompanha e fiscaliza; o texto não lhe dá poder de suspender sozin
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6541,7 +6541,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 190 palavras · 1482 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 190 palavras · 1479 bytes · referências 0
 - **Motivo da seleção:** Visao geral: cessacao dos efeitos, responsabilidade pelos ilicitos e relato ao Congresso.
 
 **O QUE DIZ**
@@ -6575,7 +6575,7 @@ A responsabilidade alcança executores e agentes que cometeram ilícitos. A mens
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com relação nominal dos atingidos e indicação das); TERM_LOW_UTILITY (palavras_dificeis: Ilícito)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6737,7 +6737,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 251 palavras · 1997 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 251 palavras · 1994 bytes · referências 0
 - **Motivo da seleção:** Visao geral: obrigatoriedade do servico militar, servico alternativo e isencoes em tempo de paz.
 
 **O QUE DIZ**
@@ -6774,7 +6774,7 @@ A recusa a cumprir também o serviço alternativo tem consequências previstas n
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a outros encargos que a lei lhes atribuir)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6784,12 +6784,12 @@ Sem explicação própria: 20 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 144 — Segurança pública
 
-- **TARGET:** `CF88:ART.144` · `ENTENDA/CF88:ART.144/BASE/1`
+- **TARGET:** `CF88:ART.144` · `ENTENDA/CF88:ART.144/BASE/2`
 - **DISPLAY TITLE:** Art. 144 — Segurança pública
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 315 palavras · 2320 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 328 palavras · 2417 bytes · referências 1
 - **Motivo da seleção:** Visao geral: natureza da seguranca publica, lista de orgaos e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -6812,7 +6812,7 @@ Um assalto a banco em uma capital mobiliza a polícia militar, que faz o policia
 
 **ATENÇÃO**
 
-Os Municípios não estão na lista de órgãos do caput; eles podem criar guardas municipais (§ 8º, com explicação própria). A segurança viária (§ 10) cabe aos órgãos de trânsito, na forma da lei.
+Os Municípios não estão na lista de órgãos do caput, mas podem criar guardas municipais, que exercem atividade de segurança pública nos limites reconhecidos pelo Supremo Tribunal Federal (§ 8º, com explicação própria). A segurança viária (§ 10) cabe aos órgãos de trânsito, na forma da lei.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -6826,7 +6826,7 @@ Os Municípios não estão na lista de órgãos do caput; eles podem criar guard
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: dever do estado direito e responsabilidade de todos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Coerência com o T1 aprovado do § 8º (B52): a exclusão dos Municípios da lista do caput não significa que a guarda municipal fique fora da segurança pública. (seções: atencao)
 
 ---
 
@@ -6837,7 +6837,7 @@ Os Municípios não estão na lista de órgãos do caput; eles podem criar guard
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.144`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 2245 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 268 palavras · 2242 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: natureza e funcoes da policia federal, inclusive a exclusividade de policia judiciaria da Uniao.
 
 **O QUE DIZ**
@@ -6874,7 +6874,7 @@ A investigação de crimes com repercussão interestadual depende do que dispuse
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as funções de polícia marítima aeroportuária e de); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: com exclusividade as funções de polícia judiciária da)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6885,7 +6885,7 @@ A investigação de crimes com repercussão interestadual depende do que dispuse
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.144`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 164 palavras · 1328 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 164 palavras · 1325 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: direcao por delegados de carreira e funcoes de policia judiciaria, com ressalvas.
 
 **O QUE DIZ**
@@ -6919,18 +6919,18 @@ As duas ressalvas do texto são a competência da União e as infrações milita
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: civis dirigidas por delegados de polícia de carreira)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
 ### Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais
 
-- **TARGET:** `CF88:ART.144:PAR.5` · `ENTENDA/CF88:ART.144:PAR.5/BASE/1`
+- **TARGET:** `CF88:ART.144:PAR.5` · `ENTENDA/CF88:ART.144:PAR.5/BASE/2`
 - **DISPLAY TITLE:** Art. 144, §§ 5º e 5º-A — Polícias militares, bombeiros e polícias penais
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.144:PAR.5-A`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.144`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1723 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 226 palavras · 1866 bytes · referências 1
 - **Motivo da seleção:** Bloco: policia ostensiva e ordem publica, defesa civil e seguranca dos estabelecimentos penais.
 
 **O QUE DIZ**
@@ -6953,7 +6953,7 @@ Durante uma rebelião em um presídio estadual, a polícia penal atua na seguran
 
 **ATENÇÃO**
 
-O § 6º, explicado na visão geral, subordina essas forças aos Governadores e qualifica as polícias militares e os bombeiros como forças auxiliares e reserva do Exército.
+O § 6º, explicado na visão geral, subordina aos Governadores as polícias militares, os bombeiros militares e as polícias penais estaduais e distrital, e qualifica as polícias militares e os bombeiros militares como forças auxiliares e reserva do Exército. A polícia penal federal não entra nessa subordinação.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -6967,7 +6967,7 @@ O § 6º, explicado na visão geral, subordina essas forças aos Governadores e 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a polícia ostensiva e a preservação da ordem)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Overbreadth: "essas forças" incluía a polícia penal federal (§ 5º-A), que o § 6º não subordina aos Governadores. (seções: atencao)
 
 ---
 
@@ -7022,12 +7022,12 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 145 — Espécies de tributos e princípios do sistema
 
-- **TARGET:** `CF88:ART.145` · `ENTENDA/CF88:ART.145/BASE/1`
+- **TARGET:** `CF88:ART.145` · `ENTENDA/CF88:ART.145/BASE/2`
 - **DISPLAY TITLE:** Art. 145 — Espécies de tributos e princípios do sistema
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2317 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 287 palavras · 2403 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia comum para impostos, taxas e contribuicao de melhoria e principios do sistema tributario.
 
 **O QUE DIZ**
@@ -7048,7 +7048,7 @@ Um Município cobra imposto sobre a propriedade urbana, taxa pela coleta de lixo
 
 **ATENÇÃO**
 
-O artigo não esgota as espécies tributárias da Constituição: há também empréstimos compulsórios e contribuições (arts. 148 e 149). Os §§ 3º e 4º foram incluídos por emenda recente, e sua aplicação no tempo segue as regras da camada externa.
+O artigo não esgota as espécies tributárias da Constituição: há também empréstimos compulsórios e contribuições (arts. 148 e 149). Os §§ 3º e 4º foram incluídos pela reforma tributária de 2023 e vigoram desde a publicação da emenda; as regras de transição dos novos tributos ficam no ADCT.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7058,11 +7058,11 @@ O artigo não esgota as espécies tributárias da Constituição: há também em
 
 **CAMADA EXTERNA**
 
-- Os §§ 3º e 4º têm redação de emenda constitucional recente; regras de transição da reforma tributária ficam no ADCT, na camada externa.
+- Os §§ 3º e 4º foram incluídos pela EC 132/2023, art. 1º, em vigor na publicação (art. 23, III); regras de transição da reforma tributária ficam no ADCT, na camada externa.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Remissão temporal vaga ("emenda recente", aplicação no tempo em aberto): os §§ 3º e 4º vigoram desde a publicação da EC 132/2023. (seções: atencao, external_layer_notes)
 
 ---
 
@@ -7121,7 +7121,7 @@ A classificação de cada serviço como específico e divisível é tema da cama
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.145`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 205 palavras · 1655 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 205 palavras · 1652 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: pessoalidade e capacidade economica dos impostos e faculdade de identificacao do patrimonio pela administracao tributaria.
 
 **O QUE DIZ**
@@ -7157,7 +7157,7 @@ O texto fala em impostos. A aplicação da capacidade contributiva a outras esp�
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o patrimônio os rendimentos e as atividades econômicas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7167,12 +7167,12 @@ Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 146 — Papel da lei complementar tributária
 
-- **TARGET:** `CF88:ART.146` · `ENTENDA/CF88:ART.146/BASE/1`
+- **TARGET:** `CF88:ART.146` · `ENTENDA/CF88:ART.146/BASE/2`
 - **DISPLAY TITLE:** Art. 146 — Papel da lei complementar tributária
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 2097 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 260 palavras · 2168 bytes · referências 1
 - **Motivo da seleção:** Visao geral: funcoes da lei complementar em materia tributaria e regime unico de arrecadacao.
 
 **O QUE DIZ**
@@ -7195,7 +7195,7 @@ Um Município e um Estado disputam se certa atividade é serviço, sujeita ao im
 
 **ATENÇÃO**
 
-O inciso III e o regime único (§§ 1º a 3º) têm explicações próprias. A relação com os novos tributos dos arts. 156-A e 195, V, decorre de emenda recente, com regras de transição na camada externa.
+O inciso III e o regime único (§§ 1º a 3º) têm explicações próprias. A relação com os novos tributos dos arts. 156-A e 195, V, decorre da reforma tributária de 2023; esses tributos foram instituídos pela Lei Complementar nº 214, de 2025, e seguem a transição do ADCT.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7209,18 +7209,18 @@ O inciso III e o regime único (§§ 1º a 3º) têm explicações próprias. A 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: regular as limitações constitucionais ao poder de tributar)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Remissão temporal vaga ("emenda recente"); coerência com os T1 aprovados do art. 146, § 1º, e do art. 149-B. (seções: atencao)
 
 ---
 
 ### Art. 146, inciso III — Normas gerais de legislação tributária
 
-- **TARGET:** `CF88:ART.146:INC.III` · `ENTENDA/CF88:ART.146:INC.III/BASE/1`
+- **TARGET:** `CF88:ART.146:INC.III` · `ENTENDA/CF88:ART.146:INC.III/BASE/2`
 - **DISPLAY TITLE:** Art. 146, inciso III — Normas gerais de legislação tributária
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.146`, `CF88:ART.146:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 245 palavras · 1987 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 253 palavras · 2029 bytes · referências 1
 - **Motivo da seleção:** Item: materias reservadas as normas gerais de lei complementar.
 
 **O QUE DIZ**
@@ -7245,7 +7245,7 @@ Um Município quer saber em quanto tempo perde o direito de cobrar um imposto n�
 
 **ATENÇÃO**
 
-As alíneas c e d mencionam também os tributos dos arts. 156-A e 195, V, incluídos por emenda recente, com regras de transição na camada externa.
+As alíneas c e d mencionam também os tributos dos arts. 156-A e 195, V, criados pela reforma tributária de 2023 e instituídos pela Lei Complementar nº 214, de 2025, com transição no ADCT.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -7260,7 +7260,7 @@ As alíneas c e d mencionam também os tributos dos arts. 156-A e 195, V, inclu�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Remissão temporal vaga ("emenda recente"); coerência com os T1 aprovados do art. 146, § 1º, e do art. 149-B. (seções: atencao)
 
 ---
 
@@ -7321,7 +7321,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 175 palavras · 1428 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 175 palavras · 1425 bytes · referências 0
 - **Motivo da seleção:** Visao geral: criterios especiais de tributacao para prevenir desequilibrios da concorrencia.
 
 **O QUE DIZ**
@@ -7355,7 +7355,7 @@ O artigo é permissivo: a lei complementar pode criar os critérios, mas o texto
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7370,7 +7370,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 170 palavras · 1444 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 170 palavras · 1441 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia tributaria da Uniao nos Territorios e do Distrito Federal para impostos municipais.
 
 **O QUE DIZ**
@@ -7404,7 +7404,7 @@ A competência do Distrito Federal para os impostos estaduais está em outros di
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: impostos municipais ao distrito federal cabem os impostos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7419,7 +7419,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1867 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1864 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia da Uniao, exigencia de lei complementar, hipoteses e vinculacao dos recursos.
 
 **O QUE DIZ**
@@ -7456,7 +7456,7 @@ A regra de devolução e suas condições ficam na lei complementar que institui
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: urgente e de relevante interesse nacional observado o); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Uma calamidade de grandes proporções exige despesas extraord)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7471,7 +7471,7 @@ Sem explicação própria: 11 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 298 palavras · 2263 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 298 palavras · 2260 bytes · referências 0
 - **Motivo da seleção:** Visao geral: competencia exclusiva da Uniao para contribuicoes sociais, de intervencao e corporativas e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -7508,7 +7508,7 @@ A contribuição para iluminação pública é municipal e está em outro artigo
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: arts 146 iii e 150 i e iii); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7519,7 +7519,7 @@ A contribuição para iluminação pública é municipal e está em outro artigo
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.149:PAR.1-A`, `CF88:ART.149:PAR.1-B`, `CF88:ART.149:PAR.1-C`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.149`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2398 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 2395 bytes · referências 0
 - **Motivo da seleção:** Bloco: contribuicao para o regime proprio, aliquotas progressivas, base ampliada em deficit e contribuicao extraordinaria da Uniao.
 
 **O QUE DIZ**
@@ -7554,7 +7554,7 @@ A contribuição extraordinária do § 1º-B está prevista no âmbito da União
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7565,7 +7565,7 @@ A contribuição extraordinária do § 1º-B está prevista no âmbito da União
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.149`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1663 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 202 palavras · 1660 bytes · referências 1
 - **Motivo da seleção:** Dispositivo: nao incidencia sobre exportacao, incidencia sobre importacao e tipos de aliquota.
 
 **O QUE DIZ**
@@ -7602,7 +7602,7 @@ O parágrafo trata das contribuições sociais e de intervenção do caput, e n�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as contribuições sociais e de intervenção no domínio)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7617,7 +7617,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1428 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1425 bytes · referências 0
 - **Motivo da seleção:** Visao geral: contribuicao municipal e distrital para iluminacao publica e monitoramento de logradouros.
 
 **O QUE DIZ**
@@ -7651,7 +7651,7 @@ A contribuição é municipal e distrital. Os critérios de quem paga e quanto p
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7767,7 +7767,7 @@ Sem explicação própria: 14 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 132 palavras · 1161 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 132 palavras · 1158 bytes · referências 1
 - **Motivo da seleção:** Item: exigencia de lei para criar ou aumentar tributo.
 
 **O QUE DIZ**
@@ -7799,7 +7799,7 @@ A própria Constituição admite que o Executivo altere alíquotas de alguns tri
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: exigir ou aumentar tributo sem lei que o); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O aumento contraria o inciso, que exige lei.)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7810,7 +7810,7 @@ A própria Constituição admite que o Executivo altere alíquotas de alguns tri
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.150`, `CF88:ART.150:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 273 palavras · 1924 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 273 palavras · 1921 bytes · referências 0
 - **Motivo da seleção:** Item: vedacoes temporais na cobranca de tributos (fatos anteriores, exercicio e noventa dias).
 
 **O QUE DIZ**
@@ -7847,7 +7847,7 @@ Há tributos que não seguem a alínea b, a alínea c ou ambas: parte das exceç
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.150: 0.263)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -7948,7 +7948,7 @@ O § 2º estende a imunidade da alínea a a autarquias, fundações públicas e 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.150`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 258 palavras · 1803 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 258 palavras · 1800 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: tributos que nao seguem a anterioridade do exercicio, a nonagesimal ou ambas.
 
 **O QUE DIZ**
@@ -7986,7 +7986,7 @@ A leitura do parágrafo depende de cruzar os números com os artigos citados. O 
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.150: 0.206)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -8043,7 +8043,7 @@ A aplicação da imunidade a empresas estatais além da empresa postal é tema d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.150`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 200 palavras · 1680 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 200 palavras · 1677 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: exigencia de lei especifica para subsidio, isencao, anistia e remissao, com ressalva do ICMS.
 
 **O QUE DIZ**
@@ -8079,7 +8079,7 @@ A exigência alcança impostos, taxas e contribuições. A forma de concessão d
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa aprovar lei específica sobre essa anistia, e não inc)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -8190,7 +8190,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1455 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1452 bytes · referências 0
 - **Motivo da seleção:** Visao geral: proibicao de tratamento tributario diferente conforme a procedencia ou o destino de bens e servicos.
 
 **O QUE DIZ**
@@ -8222,7 +8222,7 @@ As alíquotas interestaduais do imposto estadual sobre circulação de mercadori
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diferença tributária entre bens e serviços de qualquer)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -8286,7 +8286,7 @@ O texto prevê o imposto sobre grandes fortunas, mas sua cobrança depende de le
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 157 palavras · 1321 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 157 palavras · 1318 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: faculdade do Executivo de alterar aliquotas de quatro impostos federais nos limites da lei.
 
 **O QUE DIZ**
@@ -8320,7 +8320,7 @@ A faculdade alcança apenas os quatro impostos indicados. Para eles, o art. 150,
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: as condições e os limites estabelecidos em lei); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Não precisa de nova lei para fazer essa mudança.)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Lista do § 1º conferida (incisos I, II, IV e V); a anterioridade dos mesmos impostos está no art. 150, § 1º.
 
 ---
 
@@ -8381,7 +8381,7 @@ No exercício de 2026, a redução a zero ainda não começou.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1607 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 210 palavras · 1604 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: progressividade contra propriedades improdutivas, imunidade de pequenas glebas e opcao municipal de fiscalizacao e cobranca.
 
 **O QUE DIZ**
@@ -8416,7 +8416,7 @@ O tamanho da pequena gleba é definido em lei. A opção dos Municípios segue a
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: incidirá sobre pequenas glebas rurais definidas em lei); TERM_LOW_UTILITY (palavras_dificeis: Gleba)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -8427,7 +8427,7 @@ O tamanho da pequena gleba é definido em lei. A opção dos Municípios segue a
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.153`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1588 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 214 palavras · 1585 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: incidencia exclusiva do imposto sobre operacoes financeiras, aliquota minima e reparticao da arrecadacao.
 
 **O QUE DIZ**
@@ -8461,7 +8461,7 @@ A regra só vale quando a lei define o ouro como ativo financeiro ou instrumento
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Alíquota mínima de um por cento e transferência de trinta e setenta por cento conferidas literalmente.
 
 ---
 
@@ -8524,7 +8524,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1858 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1855 bytes · referências 0
 - **Motivo da seleção:** Visao geral: impostos novos por lei complementar e impostos extraordinarios de guerra.
 
 **O QUE DIZ**
@@ -8556,7 +8556,7 @@ Os impostos extraordinários de guerra não seguem as regras de anterioridade (a
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: extraordinários compreendidos ou não em sua competência trib)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -8612,12 +8612,12 @@ A reforma tributária prevê a substituição gradual do imposto sobre circulaç
 
 ### Art. 155, § 1º — Imposto sobre heranças e doações
 
-- **TARGET:** `CF88:ART.155:PAR.1` · `ENTENDA/CF88:ART.155:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.155:PAR.1` · `ENTENDA/CF88:ART.155:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 155, § 1º — Imposto sobre heranças e doações
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 291 palavras · 2120 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 319 palavras · 2280 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: Estado competente, casos no exterior, aliquotas maximas, progressividade e nao incidencias.
 
 **O QUE DIZ**
@@ -8640,7 +8640,7 @@ Uma pessoa domiciliada em São Paulo morre e deixa um imóvel em Minas Gerais e 
 
 **ATENÇÃO**
 
-A progressividade e as novas não incidências foram incluídas por emenda recente; a aplicação no tempo segue as regras da camada externa. As condições das não incidências do inciso VII estão em lei complementar.
+O inciso V foi incluído por emenda de 2022, e os incisos VI e VII, pela reforma tributária de 2023; vigoram desde a publicação das respectivas emendas. A Lei Complementar nº 227, de 2026, instituiu normas gerais do imposto, inclusive a competência nos casos ligados ao exterior e a progressividade. As condições das não incidências do inciso VII estão em lei complementar.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8654,7 +8654,7 @@ A progressividade e as novas não incidências foram incluídas por emenda recen
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: valor do quinhão do legado ou da doação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Norma recente: a LC 227/2026 regulou a competência do art. 155, § 1º, III, e a progressividade; a "aplicação no tempo" em aberto foi substituída pela vigência das emendas. (seções: atencao)
 
 ---
 
@@ -8760,7 +8760,7 @@ A cobrança da diferença de alíquotas pressupõe lei complementar com normas g
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.155`, `CF88:ART.155:PAR.2`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1764 bytes · referências 3
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1761 bytes · referências 3
 - **Motivo da seleção:** Item: exportacoes, petroleo e energia para outros Estados, ouro ativo financeiro e radiodifusao gratuita.
 
 **O QUE DIZ**
@@ -8796,18 +8796,18 @@ A alínea b se refere à saída para outros Estados. A incidência única sobre 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
 ### Art. 155, § 3º — Impostos sobre energia, telecomunicações e combustíveis
 
-- **TARGET:** `CF88:ART.155:PAR.3` · `ENTENDA/CF88:ART.155:PAR.3/BASE/1`
+- **TARGET:** `CF88:ART.155:PAR.3` · `ENTENDA/CF88:ART.155:PAR.3/BASE/2`
 - **DISPLAY TITLE:** Art. 155, § 3º — Impostos sobre energia, telecomunicações e combustíveis
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.155`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1739 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 220 palavras · 1788 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: limitacao dos impostos que podem incidir sobre energia, telecomunicacoes, derivados de petroleo, combustiveis e minerais.
 
 **O QUE DIZ**
@@ -8822,7 +8822,7 @@ Para energia elétrica e telecomunicações, só podem incidir o imposto estadua
 
 Para derivados de petróleo, combustíveis e minerais, a lista é a mesma, acrescida do imposto do art. 153, VIII.
 
-A limitação vale para impostos. O texto fala apenas em impostos; a situação das contribuições é tratada na camada JURISPRUDÊNCIA.
+A limitação vale para impostos.
 
 **EXEMPLO PRÁTICO**
 
@@ -8830,7 +8830,7 @@ O Município não pode cobrar imposto municipal sobre serviços nas operações 
 
 **ATENÇÃO**
 
-A limitação fala em impostos. A incidência de contribuições sobre essas operações e o alcance da expressão operações relativas são temas da camada JURISPRUDÊNCIA.
+A limitação fala em impostos. A incidência de contribuições sobre essas operações e o alcance da expressão operações relativas são temas da camada JURISPRUDÊNCIA. O parágrafo está entre os dispositivos que a reforma tributária revoga a partir de 2033, junto com o imposto estadual sobre circulação de mercadorias.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8841,20 +8841,20 @@ A limitação fala em impostos. A incidência de contribuições sobre essas ope
 
 —
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: derivados de petróleo combustíveis e minerais do país)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: derivados de petróleo combustíveis e minerais do país)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Repetição editorial entre O QUE SIGNIFICA e ATENÇÃO retirada; transição material: o § 3º é revogado em 2033 (EC 132/2023, art. 22, II, a), coerente com os T1 aprovados do art. 155. (seções: atencao, o_que_significa)
 
 ---
 
 ### Art. 155, §§ 4º e 5º — Incidência única sobre combustíveis
 
-- **TARGET:** `CF88:ART.155:PAR.4` · `ENTENDA/CF88:ART.155:PAR.4/BASE/1`
+- **TARGET:** `CF88:ART.155:PAR.4` · `ENTENDA/CF88:ART.155:PAR.4/BASE/2`
 - **DISPLAY TITLE:** Art. 155, §§ 4º e 5º — Incidência única sobre combustíveis
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.155:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.155`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 274 palavras · 2160 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 296 palavras · 2287 bytes · referências 0
 - **Motivo da seleção:** Bloco: destino do imposto nas operacoes com combustiveis de incidencia unica e aliquotas definidas pelos Estados.
 
 **O QUE DIZ**
@@ -8877,7 +8877,7 @@ O óleo diesel é tributado uma única vez, com alíquota igual em todo o país,
 
 **ATENÇÃO**
 
-O regime depende da lei complementar que define os combustíveis de incidência única. A aplicação das deliberações dos Estados é tema da camada externa.
+O regime depende da lei complementar que define os combustíveis de incidência única. A aplicação das deliberações dos Estados é tema da camada externa. Os §§ 4º e 5º estão entre os dispositivos que a reforma tributária revoga a partir de 2033, com a extinção desse imposto.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -8890,7 +8890,7 @@ O regime depende da lei complementar que define os combustíveis de incidência 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Transição material: os §§ 4º e 5º são revogados em 2033 (EC 132/2023, art. 22, II, a), coerente com os T1 aprovados do art. 155. (seções: atencao)
 
 ---
 
@@ -9469,7 +9469,7 @@ A composição e as regras de deliberação (§§ 3º e 4º) têm explicação p
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.156-B:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.156-B`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 2009 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 250 palavras · 2006 bytes · referências 0
 - **Motivo da seleção:** Bloco: composicao paritaria da instancia maxima e quorum de deliberacao.
 
 **O QUE DIZ**
@@ -9504,7 +9504,7 @@ As duas maiorias são cumulativas. O Distrito Federal aparece nos dois conjuntos
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o conjunto dos municípios e do distrito federal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Composição (27 + 27, com 14 e 13) e maiorias cumulativas conferidas; coerente com o T1 aprovado do art. 156-B e com a LC 227/2026.
 
 ---
 
@@ -9514,12 +9514,12 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 157 — Receitas tributárias dos Estados vindas da União
 
-- **TARGET:** `CF88:ART.157` · `ENTENDA/CF88:ART.157/BASE/1`
+- **TARGET:** `CF88:ART.157` · `ENTENDA/CF88:ART.157/BASE/2`
 - **DISPLAY TITLE:** Art. 157 — Receitas tributárias dos Estados vindas da União
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1536 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 212 palavras · 1544 bytes · referências 0
 - **Motivo da seleção:** Visao geral: imposto de renda retido pelos Estados e parcela do imposto residual.
 
 **O QUE DIZ**
@@ -9530,7 +9530,7 @@ O art. 157 atribui aos Estados e ao Distrito Federal o produto da arrecadação 
 
 O artigo inicia a repartição das receitas tributárias, em que parte do que um ente arrecada pertence a outro.
 
-Quando o Estado paga salários e retém o imposto de renda na fonte, esse valor fica com o próprio Estado, embora o imposto seja federal.
+Quando o Estado paga salários e faz a retenção na fonte do imposto de renda, esse valor fica com o próprio Estado, embora o imposto seja federal.
 
 Se a União criar um imposto novo pela competência residual, vinte por cento da arrecadação pertence aos Estados e ao Distrito Federal.
 
@@ -9551,9 +9551,9 @@ O texto fala em rendimentos pagos pelo Estado, por suas autarquias e pelas funda
 
 —
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o produto da arrecadação do imposto da união); TERM_NOT_USED (palavras_dificeis: Retenção na fonte)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: o produto da arrecadação do imposto da união)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Glossário "Retenção na fonte" passa a ser usado no corpo (TERM_NOT_USED). (seções: o_que_significa)
 
 ---
 
@@ -9666,7 +9666,7 @@ Sem explicação própria: 13 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2127 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 285 palavras · 2124 bytes · referências 0
 - **Motivo da seleção:** Visao geral: fundos de participacao, entregas proporcionais as exportacoes e da contribuicao de intervencao sobre combustiveis.
 
 **O QUE DIZ**
@@ -9702,7 +9702,7 @@ O inciso I tem explicação própria. O imposto de renda que pertence aos Estado
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: do imposto sobre produtos industrializados e do imposto)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Percentuais vigentes conferidos (50%, 10%, 29% e 25% aos Municípios); coerente com o T1 aprovado do art. 159, I.
 
 ---
 
@@ -9818,7 +9818,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 184 palavras · 1437 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 184 palavras · 1434 bytes · referências 0
 - **Motivo da seleção:** Visao geral: proibicao de reter ou restringir os recursos repartidos e mapa das excecoes.
 
 **O QUE DIZ**
@@ -9850,18 +9850,18 @@ As hipóteses de condicionamento estão nos §§ 1º e 2º, com explicação pr�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a retenção ou qualquer restrição à entrega e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
 ### Art. 160, §§ 1º e 2º — Condicionamento e dedução dos repasses
 
-- **TARGET:** `CF88:ART.160:PAR.1` · `ENTENDA/CF88:ART.160:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.160:PAR.1` · `ENTENDA/CF88:ART.160:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 160, §§ 1º e 2º — Condicionamento e dedução dos repasses
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.160:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.160`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1767 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 1766 bytes · referências 0
 - **Motivo da seleção:** Bloco: condicoes que a Uniao e os Estados podem impor e clausulas de deducao nos contratos com a Uniao.
 
 **O QUE DIZ**
@@ -9874,7 +9874,7 @@ A proibição de retenção do caput tem dois limites.
 
 O primeiro: se o ente tem dívida com a União ou com o Estado, o repasse pode ficar condicionado ao pagamento. Também pode ficar condicionado ao cumprimento dos percentuais mínimos de gastos com saúde.
 
-O segundo: os contratos e parcelamentos com a União já trazem cláusula que permite descontar o valor devido diretamente dos repasses dos fundos de participação ou dos precatórios federais.
+O segundo: os contratos e parcelamentos com a União devem conter cláusula que permita descontar o valor devido diretamente dos repasses dos fundos de participação ou dos precatórios federais.
 
 **EXEMPLO PRÁTICO**
 
@@ -9896,7 +9896,7 @@ As hipóteses são as do texto: créditos do ente que repassa, mínimos de saúd
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao pagamento de seus créditos inclusive de suas); TERM_LOW_UTILITY (palavras_dificeis: Dedução)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Imprecisão: o § 2º impõe que os ajustes contenham a cláusula ("conterão"); não afirma que todos já a contenham. (seções: o_que_significa)
 
 ---
 
@@ -9906,12 +9906,12 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 161 — Lei complementar da repartição de receitas
 
-- **TARGET:** `CF88:ART.161` · `ENTENDA/CF88:ART.161/BASE/1`
+- **TARGET:** `CF88:ART.161` · `ENTENDA/CF88:ART.161/BASE/2`
 - **DISPLAY TITLE:** Art. 161 — Lei complementar da repartição de receitas
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 214 palavras · 1759 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1903 bytes · referências 0
 - **Motivo da seleção:** Visao geral: materias da lei complementar sobre repartição e calculo das quotas pelo Tribunal de Contas da Uniao.
 
 **O QUE DIZ**
@@ -9926,7 +9926,7 @@ Os critérios de rateio dos fundos de participação têm um objetivo declarado 
 
 Os Estados e Municípios beneficiários podem acompanhar o cálculo e a liberação dos valores.
 
-O cálculo das quotas dos fundos é feito por um órgão técnico, o Tribunal de Contas da União.
+O cálculo das quotas dos fundos é feito pelo Tribunal de Contas da União.
 
 **EXEMPLO PRÁTICO**
 
@@ -9934,7 +9934,7 @@ Todo ano, o Tribunal de Contas da União calcula a quota de cada Município no F
 
 **ATENÇÃO**
 
-Os critérios concretos de rateio estão na lei complementar, e não neste artigo.
+Os critérios concretos de rateio estão na lei complementar, e não neste artigo. O inciso I, ligado à repartição do imposto estadual sobre circulação de mercadorias, está entre os dispositivos que a reforma tributária revoga a partir de 2033.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -9947,7 +9947,7 @@ Os critérios concretos de rateio estão na lei complementar, e não neste artig
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Qualificação imprecisa do Tribunal de Contas da União ("órgão técnico") retirada; transição material: o inciso I é revogado em 2033. (seções: atencao, o_que_significa)
 
 ---
 
@@ -9962,7 +9962,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1606 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1603 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de publicar mensalmente arrecadacao, recebimentos, repasses e criterios de rateio.
 
 **O QUE DIZ**
@@ -9998,7 +9998,7 @@ O dever alcança os quatro níveis da Federação. O prazo é o último dia do m
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10013,7 +10013,7 @@ Sem explicação própria: 16 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 266 palavras · 2248 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 266 palavras · 2245 bytes · referências 0
 - **Motivo da seleção:** Visao geral: materias reservadas a lei complementar de financas publicas, divida e beneficios tributarios.
 
 **O QUE DIZ**
@@ -10048,7 +10048,7 @@ O artigo indica matérias; o conteúdo concreto está nas leis complementares, n
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: compatibilização das funções das instituições oficiais de cr)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10063,7 +10063,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1560 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 194 palavras · 1557 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de disponibilizar dados contabeis, orcamentarios e fiscais no padrao do orgao central.
 
 **O QUE DIZ**
@@ -10097,7 +10097,7 @@ O padrão é definido por órgão da União, mas o dever de disponibilizar os da
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a união os estados o distrito federal e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10112,7 +10112,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 248 palavras · 1797 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 248 palavras · 1794 bytes · referências 0
 - **Motivo da seleção:** Visao geral: emissao de moeda pelo Banco Central, vedacao de emprestimos ao Tesouro, operacoes com titulos e deposito das disponibilidades.
 
 **O QUE DIZ**
@@ -10149,7 +10149,7 @@ A proibição do § 1º alcança empréstimos diretos e indiretos. A compra de t
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a oferta de moeda ou a taxa de); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: O Tesouro Nacional precisa de recursos para pagar despesas.); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: precisa, por exemplo, vender títulos ao mercado.)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10164,7 +10164,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 210 palavras · 1628 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 210 palavras · 1625 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dever de conduzir a politica fiscal para manter a divida sustentavel.
 
 **O QUE DIZ**
@@ -10200,7 +10200,7 @@ O artigo depende da lei complementar para ter critérios concretos. Os indicador
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a compatibilidade dos indicadores fiscais com a sustentabili); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Ao elaborar o orçamento anual, um Estado precisa demonstrar )
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10215,7 +10215,7 @@ Sem explicação própria: 30 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 297 palavras · 2150 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 297 palavras · 2147 bytes · referências 0
 - **Motivo da seleção:** Visao geral: as tres leis orcamentarias de iniciativa do Executivo e mapa dos paragrafos.
 
 **O QUE DIZ**
@@ -10252,7 +10252,7 @@ Os §§ 18 a 22 trazem regras ligadas a exercícios específicos e a emendas rec
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: orçamentos fiscal e da seguridade social da união)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10263,7 +10263,7 @@ Os §§ 18 a 22 trazem regras ligadas a exercícios específicos e a emendas rec
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.165`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 194 palavras · 1573 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 194 palavras · 1570 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: conteudo da lei de diretrizes orcamentarias.
 
 **O QUE DIZ**
@@ -10297,7 +10297,7 @@ A menção à trajetória sustentável da dívida liga este parágrafo ao art. 1
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a política de aplicação das agências financeiras oficiais)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10308,7 +10308,7 @@ A menção à trajetória sustentável da dívida liga este parágrafo ao art. 1
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.165`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 218 palavras · 1750 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 218 palavras · 1747 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: orcamento fiscal, de investimento das estatais e da seguridade social.
 
 **O QUE DIZ**
@@ -10344,7 +10344,7 @@ O orçamento de investimento trata das empresas em que a União tem maioria do c
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: e fundações instituídos e mantidos pelo poder público)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10355,7 +10355,7 @@ O orçamento de investimento trata das empresas em que a União tem maioria do c
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.165`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 168 palavras · 1438 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 168 palavras · 1435 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: proibicao de materia estranha ao orcamento e suas excecoes.
 
 **O QUE DIZ**
@@ -10387,7 +10387,7 @@ As autorizações admitidas são apenas as do texto e seguem os termos da lei.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10398,7 +10398,7 @@ As autorizações admitidas são apenas as do texto e seguem os termos da lei.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.165:PAR.11`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.165`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 244 palavras · 2148 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 244 palavras · 2145 bytes · referências 0
 - **Motivo da seleção:** Bloco: dever de execucao das programacoes (§ 10) e seus limites (§ 11).
 
 **O QUE DIZ**
@@ -10433,7 +10433,7 @@ Pelo § 13, o dever do § 10 se aplica exclusivamente aos orçamentos fiscal e d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a efetiva entrega de bens e serviços à); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: A administração deve executá-la, salvo se surgir impedimento)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10548,7 +10548,7 @@ A legislação complementar também disciplina atualmente a proposição e a exe
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.166`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1894 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 1891 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: compatibilidade, indicacao de recursos com despesas protegidas e emendas de correcao.
 
 **O QUE DIZ**
@@ -10585,7 +10585,7 @@ Os incisos do texto estão ligados pela conjunção ou; a leitura de quais requi
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ao projeto de lei do orçamento anual ou)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10794,12 +10794,12 @@ O inciso IV e os §§ 1º, 3º e 7º têm explicação própria. A fonte oficial
 
 ### Art. 167, inciso IV — Não vinculação da receita de impostos
 
-- **TARGET:** `CF88:ART.167:INC.IV` · `ENTENDA/CF88:ART.167:INC.IV/BASE/1`
+- **TARGET:** `CF88:ART.167:INC.IV` · `ENTENDA/CF88:ART.167:INC.IV/BASE/2`
 - **DISPLAY TITLE:** Art. 167, inciso IV — Não vinculação da receita de impostos
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.167`, `CF88:ART.167:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 239 palavras · 1913 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 239 palavras · 1911 bytes · referências 1
 - **Motivo da seleção:** Item: proibicao de vincular receita de impostos e suas ressalvas.
 
 **O QUE DIZ**
@@ -10816,7 +10816,7 @@ A vedação alcança impostos. Taxas e contribuições não estão abrangidas pe
 
 **EXEMPLO PRÁTICO**
 
-Uma lei estadual determina que dez por cento do imposto sobre veículos vá obrigatoriamente para um fundo de esporte. A vinculação contraria o inciso IV, porque não está entre as exceções.
+Uma lei estadual determina que uma parte fixa do imposto sobre veículos vá obrigatoriamente para um fundo de esporte. A vinculação contraria o inciso IV, porque não está entre as exceções.
 
 **ATENÇÃO**
 
@@ -10833,7 +10833,7 @@ As exceções são as do texto. Outras vinculações constitucionais específica
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: 158 e 159 a destinação de recursos para)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Número ilustrativo de outro dispositivo (dez por cento) retirado do exemplo. (seções: exemplo_pratico)
 
 ---
 
@@ -10889,7 +10889,7 @@ O processo e as penas do crime de responsabilidade são definidos em lei especia
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 185 palavras · 1572 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 185 palavras · 1569 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: requisitos de imprevisibilidade e urgencia do credito extraordinario.
 
 **O QUE DIZ**
@@ -10923,7 +10923,7 @@ A verificação concreta dos requisitos de imprevisibilidade e urgência é tema
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: guerra comoção interna ou calamidade pública observado o)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10934,7 +10934,7 @@ A verificação concreta dos requisitos de imprevisibilidade e urgência é tema
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 195 palavras · 1522 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 195 palavras · 1519 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: proibicao de lei impor encargo de servico publico sem fonte ou transferencia, com ressalvas.
 
 **O QUE DIZ**
@@ -10968,7 +10968,7 @@ O alcance da regra sobre pisos salariais nacionais e seus efeitos para os entes 
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: prestação de serviço público inclusive despesas de pessoal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -10978,17 +10978,17 @@ Sem explicação própria: 26 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 167-A — Mecanismo de ajuste fiscal
 
-- **TARGET:** `CF88:ART.167-A` · `ENTENDA/CF88:ART.167-A/BASE/1`
+- **TARGET:** `CF88:ART.167-A` · `ENTENDA/CF88:ART.167-A/BASE/2`
 - **DISPLAY TITLE:** Art. 167-A — Mecanismo de ajuste fiscal
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2183 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 292 palavras · 2176 bytes · referências 0
 - **Motivo da seleção:** Visao geral: gatilho de 95% da relacao despesa corrente e receita corrente, vedacoes e efeitos.
 
 **O QUE DIZ**
 
-O art. 167-A trata da situação em que, a relação entre despesas correntes e receitas correntes, medida em doze meses, passa de 95% nos Estados, no Distrito Federal e nos Municípios. Nesse caso, os Poderes Executivo, Legislativo e Judiciário, o Ministério Público, o Tribunal de Contas e a Defensoria Pública do ente podem aplicar um mecanismo de ajuste fiscal, enquanto durar a situação. O mecanismo veda, entre outras medidas, aumentos e vantagens para servidores e membros de Poder, criação de cargos, admissões, concursos, criação de despesa obrigatória e concessão de benefícios tributários, com as exceções indicadas. Os parágrafos tratam do acionamento pelo Executivo a partir de 85%, da apuração bimestral, dos efeitos e das restrições para quem não adota as medidas.
+O art. 167-A trata da situação em que a relação entre despesas correntes e receitas correntes, medida em doze meses, passa de 95% nos Estados, no Distrito Federal e nos Municípios. Nesse caso, os Poderes Executivo, Legislativo e Judiciário, o Ministério Público, o Tribunal de Contas e a Defensoria Pública do ente podem aplicar um mecanismo de ajuste fiscal, enquanto durar a situação. O mecanismo veda, entre outras medidas, aumentos e vantagens para servidores e membros de Poder, criação de cargos, admissões, concursos, criação de despesa obrigatória e concessão de benefícios tributários, com as exceções indicadas. Os parágrafos tratam do acionamento pelo Executivo acima de 85%, da apuração bimestral, dos efeitos e das restrições para quem não adota as medidas.
 
 **O QUE SIGNIFICA**
 
@@ -11020,18 +11020,18 @@ No caput, a aplicação é facultativa. O § 6º prevê restrições para o ente
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a relação entre despesas correntes e receitas correntes)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Vírgula indevida entre sujeito e verbo retirada; "a partir de 85%" alinhado ao texto do § 1º ("supera"). (seções: o_que_diz)
 
 ---
 
 ### Art. 167-A, §§ 1º, 2º e 3º — Acionamento antecipado pelo Executivo
 
-- **TARGET:** `CF88:ART.167-A:PAR.1` · `ENTENDA/CF88:ART.167-A:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.167-A:PAR.1` · `ENTENDA/CF88:ART.167-A:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 167-A, §§ 1º, 2º e 3º — Acionamento antecipado pelo Executivo
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.167-A:PAR.2`, `CF88:ART.167-A:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.167-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 270 palavras · 2088 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 278 palavras · 2121 bytes · referências 0
 - **Motivo da seleção:** Bloco: medidas por ato do Executivo entre 85% e 95%, submissao ao Legislativo e perda de eficacia.
 
 **O QUE DIZ**
@@ -11048,7 +11048,7 @@ O ato vai ao Legislativo com urgência. Se for rejeitado, se não for apreciado 
 
 **EXEMPLO PRÁTICO**
 
-Um Estado atinge 88% de despesa corrente sobre receita corrente. O Governador edita ato suspendendo novos concursos, com efeito imediato, e o envia à Assembleia em regime de urgência.
+A despesa corrente de um Estado passa de 85% da receita corrente, sem chegar ao percentual do caput. O Governador edita ato suspendendo novos concursos, com efeito imediato, e o envia à Assembleia em regime de urgência.
 
 **ATENÇÃO**
 
@@ -11066,7 +11066,7 @@ O prazo de cento e oitenta dias conta para a apreciação pelo Legislativo. Mesm
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Número ilustrativo fora do texto (88%) substituído pela condição do § 1º. (seções: exemplo_pratico)
 
 ---
 
@@ -11077,7 +11077,7 @@ O prazo de cento e oitenta dias conta para a apreciação pelo Legislativo. Mesm
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.167-A`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 237 palavras · 1867 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 237 palavras · 1864 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: vedacao de garantias e de operacoes de credito entre entes ate a adocao das medidas.
 
 **O QUE DIZ**
@@ -11114,7 +11114,7 @@ A vedação dura até que todos os Poderes e órgãos tenham adotado todas as me
 
 **WARNINGS:** TERM_LOW_UTILITY (palavras_dificeis: Postergação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11178,7 +11178,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 188 palavras · 1644 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 188 palavras · 1641 bytes · referências 0
 - **Motivo da seleção:** Visao geral: processos simplificados de contratacao de pessoal temporario e de obras, servicos e compras.
 
 **O QUE DIZ**
@@ -11214,7 +11214,7 @@ A flexibilização tem finalidade exclusiva e prazo: enfrentar a calamidade, dur
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11229,7 +11229,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1917 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1914 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dispensa das limitacoes legais para despesas e renuncias temporarias e afastamento do art. 195, § 3º.
 
 **O QUE DIZ**
@@ -11263,7 +11263,7 @@ A dispensa não alcança despesa obrigatória de caráter continuado. As exigên
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11278,7 +11278,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 174 palavras · 1399 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 174 palavras · 1396 bytes · referências 0
 - **Motivo da seleção:** Visao geral: afastamento do art. 167, III, durante o exercicio da calamidade nacional.
 
 **O QUE DIZ**
@@ -11310,7 +11310,7 @@ A dispensa vale para todo o exercício financeiro em que vigorar a calamidade, e
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11325,7 +11325,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1848 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1845 bytes · referências 0
 - **Motivo da seleção:** Visao geral: dispensa de limites de credito da Uniao, uso do superavit financeiro e fontes excluidas.
 
 **O QUE DIZ**
@@ -11359,7 +11359,7 @@ A dispensa de limites de crédito é da União. As fontes excluídas do uso do s
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: financeiro apurado em 31 de dezembro do ano)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11374,7 +11374,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 231 palavras · 1778 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 231 palavras · 1775 bytes · referências 0
 - **Motivo da seleção:** Visao geral: aplicacao a Uniao das vedacoes do art. 167-A, excecoes, transferencia regional e adesao dos demais entes.
 
 **O QUE DIZ**
@@ -11408,7 +11408,7 @@ As exceções do § 1º valem só para medidas cuja vigência e efeitos não ult
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos estados ao distrito federal e aos municípios); TERM_LOW_UTILITY (palavras_dificeis: Vedação)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11423,7 +11423,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 219 palavras · 1531 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 219 palavras · 1528 bytes · referências 0
 - **Motivo da seleção:** Visao geral: entrega mensal dos recursos aos Poderes e orgaos autonomos, vedacao e restituicao do saldo.
 
 **O QUE DIZ**
@@ -11455,7 +11455,7 @@ O repasse é garantido aos órgãos indicados no texto. A forma de cálculo segu
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Dia 20, duodécimos e órgãos indicados (Legislativo, Judiciário, Ministério Público e Defensoria) conferidos literalmente.
 
 ---
 
@@ -11516,7 +11516,7 @@ Os §§ 1º e 3º a 7º têm explicação própria. A fonte oficial anota o § 1
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.169`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1932 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1929 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: previa dotacao e autorizacao especifica na LDO, com ressalva das estatais.
 
 **O QUE DIZ**
@@ -11552,7 +11552,7 @@ A ressalva das empresas estatais vale apenas para a autorização na lei de dire
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: JURISPRUDÊNCIA); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: admissão ou contratação de pessoal a qualquer título); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: as empresas públicas e as sociedades de economia); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Precisa que o orçamento preveja recursos suficientes para os)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11610,12 +11610,12 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 170 — Princípios da ordem econômica
 
-- **TARGET:** `CF88:ART.170` · `ENTENDA/CF88:ART.170/BASE/1`
+- **TARGET:** `CF88:ART.170` · `ENTENDA/CF88:ART.170/BASE/2`
 - **DISPLAY TITLE:** Art. 170 — Princípios da ordem econômica
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 282 palavras · 2073 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 278 palavras · 2042 bytes · referências 0
 - **Motivo da seleção:** Visao geral: fundamentos, finalidade e principios da ordem economica.
 
 **O QUE DIZ**
@@ -11628,7 +11628,7 @@ O artigo abre a parte da Constituição sobre a economia e mostra que ela combin
 
 De um lado estão a livre iniciativa, a propriedade privada e a livre concorrência. De outro, a função social da propriedade, a defesa do consumidor, do meio ambiente e a redução das desigualdades.
 
-O texto não escolhe um valor e descarta o outro: a atividade econômica é livre, mas deve servir à existência digna, conforme a justiça social, conforme a justiça social.
+O texto não escolhe um valor e descarta o outro: a atividade econômica é livre, mas deve servir à existência digna, conforme a justiça social.
 
 O parágrafo único, com explicação própria, garante o livre exercício de atividade econômica.
 
@@ -11652,7 +11652,7 @@ Os princípios convivem e, em casos concretos, precisam ser harmonizados. Como i
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de pequeno porte constituídas sob as leis brasileiras)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Repetição editorial ("conforme a justiça social" duplicado) retirada. (seções: o_que_significa)
 
 ---
 
@@ -11663,7 +11663,7 @@ Os princípios convivem e, em casos concretos, precisam ser harmonizados. Como i
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.170`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1545 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 163 palavras · 1542 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: liberdade de atividade economica sem autorizacao publica, salvo casos da lei.
 
 **O QUE DIZ**
@@ -11697,7 +11697,7 @@ A fonte canônica remete a lei sobre liberdade econômica, que detalha o tema. A
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a todos o livre exercício de qualquer atividade); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Pelo parágrafo, não precisa de autorização prévia de órgão p)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11716,7 +11716,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 181 palavras · 1497 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 181 palavras · 1494 bytes · referências 0
 - **Motivo da seleção:** Visao geral: disciplina legal do capital estrangeiro, reinvestimentos e remessa de lucros.
 
 **O QUE DIZ**
@@ -11750,7 +11750,7 @@ O artigo é uma remissão à lei. As restrições setoriais ao capital estrangei
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: base no interesse nacional os investimentos de capital)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11765,7 +11765,7 @@ Sem explicação própria: 10 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 257 palavras · 2022 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 257 palavras · 2019 bytes · referências 0
 - **Motivo da seleção:** Visao geral: excepcionalidade da atuacao empresarial do Estado, estatuto das estatais e repressao ao abuso economico.
 
 **O QUE DIZ**
@@ -11800,7 +11800,7 @@ O estatuto das estatais (§ 1º) tem explicação própria. Os casos ressalvados
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da empresa pública com o estado e a)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11811,7 +11811,7 @@ O estatuto das estatais (§ 1º) tem explicação própria. Os casos ressalvados
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.173`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 258 palavras · 2281 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 258 palavras · 2278 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: materias da lei do estatuto das estatais que exploram atividade economica.
 
 **O QUE DIZ**
@@ -11846,7 +11846,7 @@ O parágrafo trata das estatais que exploram atividade econômica. A aplicação
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de economia mista e de suas subsidiárias que)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11861,7 +11861,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1868 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 229 palavras · 1865 bytes · referências 0
 - **Motivo da seleção:** Visao geral: funcoes de fiscalizacao, incentivo e planejamento, cooperativismo e garimpo.
 
 **O QUE DIZ**
@@ -11896,7 +11896,7 @@ A fonte canônica remete o caput a lei sobre liberdade econômica, na camada de 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: como agente normativo e regulador da atividade econômica); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Os órgãos públicos devem segui-lo;)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -11911,7 +11911,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 2063 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 254 palavras · 2060 bytes · referências 0
 - **Motivo da seleção:** Visao geral: prestacao direta ou por concessao e permissao, licitacao e materias da lei.
 
 **O QUE DIZ**
@@ -11946,7 +11946,7 @@ O texto exige licitação para a concessão e a permissão. A titularidade do se
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: diretamente ou sob regime de concessão ou permissão); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: a empresa passa a cobrar tarifa e deve manter o serviço adeq)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Licitação para concessão e permissão e titularidade pública do serviço preservadas.
 
 ---
 

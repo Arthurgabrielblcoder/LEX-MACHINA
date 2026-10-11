@@ -309,7 +309,7 @@ class MacroBatch07SecondPass(unittest.TestCase):
 
     def test_d_only_deep_legal_reasoning(self):
         d = [x for x in self.triage['rows'] if x['queue'] == 'D_FULL_HUMAN_REVIEW']
-        self.assertLessEqual(len(d) / len(self.triage['rows']), M.SECOND_PASS_D_LIMIT)
+        self.assertLessEqual(len(d) / len(self.triage['rows']) if self.triage['rows'] else 0, M.SECOND_PASS_D_LIMIT)
         allowed = {'TRANSITION_OR_TEMPORAL', 'JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS', 'JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS', 'INTERPRETIVE_CONTROVERSY'}
         for x in d:
             self.assertTrue(set(x['legal_rules']) <= allowed, x['target_id'])
@@ -771,6 +771,41 @@ class MacroBatch07HumanRoundA1(_HumanRoundChecks, unittest.TestCase):
         self.assertNotIn('por quinze dias', b('CF88:ART.136:PAR.1'))
         self.assertNotIn('Defensoria', b('CF88:ART.135'))
         self.assertTrue({'MB07-19', 'MB07-20'} <= {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
+
+class MacroBatch07HumanRoundA2(_HumanRoundChecks, unittest.TestCase):
+    """Segunda e última rodada da fila A do Macro07 (A73-A143), sob pré-autorização humana: 56 aprovações sem alteração e 15 ajustes;
+    nenhum item retido. Depois dela, nenhum T1 do Macro07 continua pendente."""
+    SCOPE = 'CF88_MACRO07_TRIAGE_QUEUE_A_PART2'
+    QUEUE = 'A_CLEAN_LOW'
+
+    def test_counts_and_all_queues_closed(self):
+        self.assertEqual(self.dec['decision_counts'], dict(APPROVED=56, APPROVED_AFTER_ADJUSTMENT=15, REJECTED=0))
+        self.assertEqual(len(self.by), 71)
+        self.assertEqual(set(self.triage['counts'].values()), {0})
+        self.assertEqual(self.triage['rows'], [])
+
+    def test_legal_points_of_the_round(self):
+        b = self.body
+        self.assertIn('exercem atividade de segurança pública', b('CF88:ART.144'))
+        self.assertIn('A polícia penal federal não entra nessa subordinação', b('CF88:ART.144:PAR.5'))
+        for t in ('CF88:ART.145', 'CF88:ART.146', 'CF88:ART.146:INC.III', 'CF88:ART.155:PAR.1'):
+            self.assertNotIn('emenda recente', b(t), t)
+        self.assertIn('Lei Complementar nº 227, de 2026', b('CF88:ART.155:PAR.1'))
+        for t in ('CF88:ART.155:PAR.3', 'CF88:ART.155:PAR.4', 'CF88:ART.161'):
+            self.assertIn('revoga a partir de 2033', b(t), t)
+        self.assertIn('faz a retenção na fonte', b('CF88:ART.157'))
+        self.assertIn('devem conter cláusula', b('CF88:ART.160:PAR.1'))
+        self.assertNotIn('órgão técnico', b('CF88:ART.161'))
+        self.assertNotIn('dez por cento', b('CF88:ART.167:INC.IV'))
+        self.assertNotIn('88%', b('CF88:ART.167-A:PAR.1'))
+        self.assertNotIn('em que, a relação', b('CF88:ART.167-A'))
+        self.assertEqual(b('CF88:ART.170').count('conforme a justiça social'), 1)
+        self.assertIn('A titularidade do serviço continua sendo do poder público', b('CF88:ART.175'))
+        self.assertIn('MB07-21', {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
+
+    def test_empty_queue_packets_do_not_divide_by_zero(self):
+        self.assertIn('nenhum item pendente nesta fila.', (BD / 'MACRO07_FULL_D_REVIEW.md').read_text(encoding='utf-8'))
+        self.assertEqual(self.triage['d_ratio'], 0)
 
 if __name__ == '__main__':
     unittest.main()
