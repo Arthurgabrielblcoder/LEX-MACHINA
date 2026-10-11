@@ -1,0 +1,2685 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "review_date": "2026-10-11",
+ "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART3",
+ "reviewer_decision": "HUMAN_PREAUTHORIZED_REVIEW_QUEUE_B_PART3",
+ "reviewer": "revisão jurídica assistida dos itens B46-B82 da fila B do Macro07, sob pré-autorização humana de Arthur (usuário do projeto) para APPROVE e ADJUST_THEN_APPROVE (política de velocidade)",
+ "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+ "standard": "ENTENDA-T1 A6 (padrão congelado e calibrado)",
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "origin": "MACRO07_COMPACT_AB_REVIEW.md (fila B_CLEAN_MEDIUM, itens B46-B82; cópia preservada em history/pre_round_b3)",
+ "original_drafts": "drafts/MACRO07_?_DRAFTS.json (saída do segundo passe; inalterados: a rodada aplica as seções \"set\" sobre original_content)",
+ "original_evidence_sha256": {
+  "history/pre_round_b3/CF88_MACRO_07_PRE_ROUND_B3.entenda.jsonl": "aaa8749bfcb1026ed8710ac2aec01ef2297a09c312b998c32328c7ff9fed5478",
+  "history/pre_round_b3/MACRO07_TRIAGE_PRE_ROUND_B3.json": "3dd8c667a22f031f72467e533ad4b23854f336d06e86bfa5a610948908c06a91",
+  "history/pre_round_b3/MACRO07_COMPACT_AB_REVIEW_PRE_ROUND_B3.md": "81536a3e16a6b7e84dc32c175add1ecf1a633ce978655a6a9f46ac10ba145d4c",
+  "history/pre_round_b3/BACKLOG_INPUT_PRE_ROUND_B3.json": "a4e50242dc94afe3dbadea8ec029fe6cb86ec1d08054bcebae29923da483dc6c"
+ },
+ "decision_counts": {
+  "APPROVED": 15,
+  "APPROVED_AFTER_ADJUSTMENT": 22,
+  "REJECTED": 0
+ },
+ "human_decision_counts": {
+  "ADJUST_THEN_APPROVE": 22,
+  "APPROVE": 15
+ },
+ "external_sources_policy": "fontes oficiais conferidas na revisão e aprovadas pela revisão humana (HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE em human_review.content_provenance); a ingestão na camada externa/JURISPRUDÊNCIA segue PENDING_EXTERNAL_INGESTION",
+ "official_sources_verified": [
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=144",
+   "used_for": [
+    "Tema 656; RE 846.854; ADC 38; Tema 472"
+   ]
+  },
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=150",
+   "used_for": [
+    "Tema 201 (RE 593.849, 2016)",
+    "Tema 201; ADI 2.777; ADI 1.851"
+   ]
+  },
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=155",
+   "used_for": [
+    "Tema 1.093 (RE 1.287.019, 2021)",
+    "Tema 1.093; ADI 7.158"
+   ]
+  },
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=156",
+   "used_for": [
+    "Tema 796",
+    "Tema 796 (RE 796.376, 2020)"
+   ]
+  },
+  {
+   "source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+   "used_for": [
+    "ADCT, arts. 125-131 (texto compilado)",
+    "ADCT, arts. 128 e 129",
+    "EC 138/2025; texto compilado do art. 142, § 3º",
+    "art. 159, I (EC 132/2023); LC 214/2025, art. 409; ADCT, art. 126"
+   ]
+  },
+  {
+   "source": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc138.htm",
+   "used_for": [
+    "EC 138/2025"
+   ]
+  },
+  {
+   "source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+   "used_for": [
+    "LC 214/2025 (matérias do § 5º)",
+    "LC 214/2025, Título V",
+    "LC 214/2025, art. 1º",
+    "LC 214/2025, art. 409",
+    "LC 214/2025, art. 409; ADCT, art. 126",
+    "LC 214/2025, art. 409; ADCT, art. 126, I, b",
+    "LC 214/2025, art. 41, §§ 2º a 4º, e art. 348, III, c",
+    "LC 214/2025, arts. 112 e seguintes",
+    "LC 214/2025, arts. 18 e 19",
+    "LC 214/2025, arts. 1º e 2º",
+    "LC 214/2025, arts. 370, 472 e 473; LC 227/2026",
+    "LC 214/2025, arts. 409 e 410",
+    "LC 214/2025, arts. 409 e 410; ADCT, art. 126",
+    "LC 214/2025, arts. 41 e 348",
+    "LC 214/2025, arts. 472 e 473 (redação da LC 227/2026 no art. 472)",
+    "LC 214/2025; ADCT, arts. 125-131"
+   ]
+  },
+  {
+   "source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+   "used_for": [
+    "LC 214/2025; LC 227/2026",
+    "LC 227/2026",
+    "LC 227/2026; LC 214/2025, art. 343"
+   ]
+  },
+  {
+   "source": "https://www.stf.jus.br/arquivo/informativo/documento/informativo1166.htm",
+   "used_for": [
+    "Tema 656",
+    "Tema 656 (RE 608.588, 2025)"
+   ]
+  }
+ ],
+ "source_annotation_anomalies": [],
+ "note": "Terceira rodada da fila B do Macro07: itens B46-B82 (37), processados sob pré-autorização humana; nenhum item HELD_FOR_HUMAN_REVIEW. Com ela a fila B (MEDIUM) fica encerrada; a fila A (143) NÃO foi decidida e continua PENDING_HUMAN_REVIEW.",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "item": "B46",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.130-A:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.130-A:PAR.2/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 2º aplica ao Ministério Público o modelo de controle do Conselho Nacional de Justiça (art. 103-B, § 4º): gestão administrativa e financeira da instituição e deveres funcionais dos membros. As diferenças estão nos detalhes. O Conselho zela pela autonomia funcional e administrativa do Ministério Público. O controle de legalidade alcança atos de membros e órgãos do Ministério Público da União e dos Estados, sem afastar os Tribunais de Contas. Como o Conselho Nacional de Justiça, recebe reclamações, pode avocar processos disciplinares, determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, e revê processos disciplinares julgados há menos de um ano. A lista não traz a representação ao Ministério Público nem o relatório estatístico semestral previstos para o Conselho Nacional de Justiça, e o relatório anual integra a mensagem do art. 84, XI.",
+    "o_que_significa": "O parágrafo repete, para o Ministério Público, o modelo de controle do art. 103-B, § 4º.\nNa frente administrativa, o Conselho pode rever atos administrativos dos órgãos do Ministério Público da União e dos Estados, para garantir o cumprimento da lei, preservada a competência dos Tribunais de Contas.\nNa frente disciplinar, recebe reclamações, pode avocar processos disciplinares e aplicar sanções, sem prejuízo da competência disciplinar e correicional da própria instituição.\nO relatório anual integra a mensagem presidencial de abertura da sessão legislativa (art. 84, XI).",
+    "exemplo_pratico": "Um Ministério Público estadual paga gratificação sem base legal aos seus membros. O Conselho pode examinar a legalidade do ato e desconstituí-lo.",
+    "atencao": "As competências são administrativas e disciplinares. O texto não autoriza o Conselho a interferir no conteúdo das manifestações processuais dos membros.",
+    "palavras_dificeis": [
+     {
+      "termo": "Avocar",
+      "explicacao": "trazer para si um processo que estava com outro órgão."
+     },
+     {
+      "termo": "Ato regulamentar",
+      "explicacao": "norma administrativa que detalha como algo deve ser feito."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Competências administrativas e disciplinares do Conselho Nacional do Ministério Público corretas e coerentes com o T1 do art. 130-A; não o trata como órgão jurisdicional.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.133",
+   "item": "B47",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.133/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.133/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 133 declara o advogado indispensável à administração da justiça. No exercício da profissão, seus atos e manifestações são invioláveis, nos limites da lei.",
+    "o_que_significa": "O artigo reconhece a advocacia como parte do funcionamento da Justiça, ao lado do Judiciário, do Ministério Público e da Defensoria.\nA inviolabilidade protege o advogado quando ele atua na defesa do cliente: suas falas e escritos no exercício da profissão não podem, em regra, gerar punição.\nO próprio texto limita essa proteção à atuação profissional e aos limites da lei.",
+    "exemplo_pratico": "Em uma audiência, o advogado critica com firmeza a prova apresentada pela parte contrária. Essa manifestação, feita na defesa do cliente, está protegida pela inviolabilidade, nos limites da lei.",
+    "atencao": "O texto não diz que todo processo exige advogado. As situações em que a parte pode atuar sem advogado são definidas em lei e na camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Indispensável",
+      "explicacao": "necessário, que não pode faltar."
+     },
+     {
+      "termo": "Inviolabilidade",
+      "explicacao": "proteção contra punição pelos atos praticados na profissão, nos limites da lei."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Os limites legais da inviolabilidade do advogado ficam no estatuto da advocacia, na camada de legislação correlata."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Indispensabilidade e inviolabilidade nos limites da lei; não afirma que todo processo exige advogado nem inviolabilidade absoluta.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.136",
+   "item": "B48",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.136/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.136/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 136 permite que o Presidente da República, depois de ouvir o Conselho da República e o Conselho de Defesa Nacional, decrete estado de defesa. A medida se limita a locais restritos e determinados e serve para preservar ou restabelecer com rapidez a ordem pública ou a paz social em duas situações: ameaça de instabilidade institucional grave e iminente, ou dano causado por calamidade natural de grandes proporções. O § 2º limita a duração a trinta dias, com uma prorrogação por igual período se persistirem as razões. Os demais parágrafos tratam das medidas permitidas, que seguem os termos e limites da lei, das garantias dos presos e do controle pelo Congresso.",
+    "o_que_significa": "O estado de defesa é a primeira e mais leve das medidas excepcionais da Constituição. Ele permite restringir alguns direitos para enfrentar uma crise localizada.\nHá limites claros. A medida só vale para locais restritos e determinados, e não para o país inteiro. As hipóteses são duas: instabilidade institucional grave e iminente, ou calamidade natural de grandes proporções.\nO Presidente decreta a medida antes de qualquer autorização, mas precisa ouvir os dois Conselhos e submeter o decreto ao Congresso, que pode rejeitá-lo.\nO prazo é curto: até trinta dias, com uma única prorrogação.",
+    "exemplo_pratico": "Uma enchente de grandes proporções destrói parte de uma região e provoca saques e desordem. O Presidente, depois de ouvir os Conselhos, decreta estado de defesa apenas nos municípios atingidos e o envia ao Congresso.",
+    "atencao": "O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presidente. As medidas coercitivas do decreto são escolhidas entre as do § 1º, e o § 3º trata das prisões feitas durante a medida; ambos têm explicação própria.",
+    "palavras_dificeis": [
+     {
+      "termo": "Estado de defesa",
+      "explicacao": "medida excepcional e temporária para enfrentar crise localizada."
+     },
+     {
+      "termo": "Instabilidade institucional",
+      "explicacao": "ameaça ao funcionamento normal das instituições."
+     },
+     {
+      "termo": "Paz social",
+      "explicacao": "convivência pacífica na sociedade."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "o_que_significa": "O estado de defesa é medida excepcional de alcance mais restrito que o estado de sítio. Ele permite restringir alguns direitos para enfrentar uma crise localizada.\nHá limites claros. A medida só vale para locais restritos e determinados, e não para o país inteiro. As hipóteses são duas: instabilidade institucional grave e iminente, ou calamidade natural de grandes proporções.\nO Presidente decreta a medida antes de qualquer autorização, mas precisa ouvir os dois Conselhos e submeter o decreto ao Congresso, que pode rejeitá-lo.\nO prazo é curto: até trinta dias, com uma única prorrogação."
+   },
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "\"A primeira e mais leve das medidas excepcionais\" trazia juízo valorativo; passa a \"medida excepcional de alcance mais restrito que o estado de sítio\".",
+   "changes": [
+    {
+     "section": "o_que_significa",
+     "before": "O estado de defesa é a primeira e mais leve das medidas excepcionais da Constituição. Ele permite restringir alguns direitos para enfrentar uma crise localizada.\nHá limites claros. A medida só vale para locais restritos e determinados, e não para o país inteiro. As hipóteses são duas: instabilidade institucional grave e iminente, ou calamidade natural de grandes proporções.\nO Presidente decreta a medida antes de qualquer autorização, mas precisa ouvir os dois Conselhos e submeter o decreto ao Congresso, que pode rejeitá-lo.\nO prazo é curto: até trinta dias, com uma única prorrogação.",
+     "after": "O estado de defesa é medida excepcional de alcance mais restrito que o estado de sítio. Ele permite restringir alguns direitos para enfrentar uma crise localizada.\nHá limites claros. A medida só vale para locais restritos e determinados, e não para o país inteiro. As hipóteses são duas: instabilidade institucional grave e iminente, ou calamidade natural de grandes proporções.\nO Presidente decreta a medida antes de qualquer autorização, mas precisa ouvir os dois Conselhos e submeter o decreto ao Congresso, que pode rejeitá-lo.\nO prazo é curto: até trinta dias, com uma única prorrogação.",
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.3",
+   "item": "B49",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.136:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.136:PAR.3/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 3º fixa regras para a prisão durante o estado de defesa. Quando o executor da medida prende alguém por crime contra o Estado, comunica imediatamente o juiz competente, que relaxa a prisão se ela for ilegal; o preso pode pedir à autoridade policial exame de corpo de delito. A comunicação vem com declaração da autoridade sobre o estado físico e mental do detido no momento da autuação. A prisão ou detenção não passa de dez dias, salvo autorização do Judiciário, e é proibida a incomunicabilidade do preso.",
+    "o_que_significa": "Mesmo em situação excepcional, o preso não fica sem proteção. O parágrafo mantém o controle judicial sobre as prisões.\nO juiz é avisado imediatamente e pode soltar o preso se a prisão for ilegal. A declaração sobre o estado físico e mental do detido no momento da prisão registra a condição do preso no momento da autuação.\nO limite de dez dias só pode ser ultrapassado com autorização judicial. E o preso não pode ser mantido isolado, sem contato com o mundo exterior.",
+    "exemplo_pratico": "Durante o estado de defesa, uma pessoa é presa pelo executor da medida. O juiz recebe a comunicação no mesmo dia, com a declaração sobre o estado físico do detido, e verifica se a prisão é legal.",
+    "atencao": "O inciso I trata da prisão por crime contra o Estado; os incisos III e IV valem para a prisão ou detenção de qualquer pessoa durante o estado de defesa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Relaxar a prisão",
+      "explicacao": "mandar soltar o preso porque a prisão é ilegal."
+     },
+     {
+      "termo": "Exame de corpo de delito",
+      "explicacao": "perícia que registra lesões no corpo da pessoa."
+     },
+     {
+      "termo": "Incomunicabilidade",
+      "explicacao": "isolamento total do preso, sem contato com advogado ou família."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Garantias do preso conferidas literalmente (comunicação imediata, estado físico e mental, dez dias salvo autorização judicial, vedação da incomunicabilidade).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.139",
+   "item": "B50",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.139/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.139/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 139 determina que, no estado de sítio decretado com base no art. 137, I, só podem ser tomadas contra as pessoas as medidas da lista. São elas: obrigação de ficar em local determinado; detenção em prédio que não seja destinado a acusados ou condenados por crime comum; restrições, na forma da lei, à inviolabilidade da correspondência e ao sigilo das comunicações, ao dever de prestar informações e à liberdade de imprensa, de radiodifusão e de televisão; suspensão da liberdade de reunião; busca e apreensão em domicílio; intervenção em empresas de serviços públicos; e requisição de bens. O parágrafo único exclui das restrições a difusão de pronunciamentos feitos por parlamentares em suas Casas, se a Mesa a liberar.",
+    "o_que_significa": "No estado de sítio do art. 137, I (comoção grave ou ineficácia do estado de defesa), a lista de medidas é fechada. A palavra só indica que nada além do que está nos incisos pode ser imposto às pessoas.\nAs medidas são mais fortes que as do estado de defesa: incluem busca e apreensão em domicílio e restrições à imprensa.\nO parágrafo único protege a voz do Parlamento: o que os parlamentares dizem nas Casas pode ser divulgado, desde que a Mesa libere.",
+    "exemplo_pratico": "Durante estado de sítio por comoção grave, o executor determina que líderes de um movimento permaneçam em uma cidade específica. Essa medida está prevista. Já a pena de banimento do país não está na lista e não pode ser aplicada.",
+    "atencao": "A lista vale para o estado de sítio do art. 137, I. No caso de guerra (inciso II), o texto não traz lista equivalente, e as garantias suspensas são indicadas no decreto (art. 138).",
+    "palavras_dificeis": [
+     {
+      "termo": "Requisição de bens",
+      "explicacao": "uso de bens particulares pelo poder público em situação de necessidade."
+     },
+     {
+      "termo": "Busca e apreensão",
+      "explicacao": "entrada em local para procurar e recolher objetos ou pessoas."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "A lista fechada vale para o estado de sítio do art. 137, I; não a estende à hipótese de guerra (art. 138).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.3",
+   "item": "B51",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.142:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.142:PAR.3/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 3º denomina militares os membros das Forças Armadas e lhes aplica, além do que a lei fixar, regras próprias. Entre elas: as patentes são conferidas pelo Presidente; o militar da ativa que assume cargo civil permanente vai para a reserva, e o que assume cargo civil temporário fica agregado, ressalvada nos dois casos a hipótese do art. 37, XVI, c; são proibidas a sindicalização e a greve; o militar em serviço ativo não pode ser filiado a partido; e o oficial só perde o posto e a patente por decisão de tribunal militar. O inciso VIII estende aos militares direitos dos arts. 7º e 37, e o inciso X remete à lei temas como ingresso, estabilidade, remuneração e inatividade.",
+    "o_que_significa": "O parágrafo cria um regime próprio para os militares, diferente do dos servidores civis.\nHá restrições que não existem para os civis: não podem fazer greve nem se sindicalizar, e, na ativa, não podem ser filiados a partido político.\nHá também garantias: o oficial só perde posto e patente se um tribunal militar o julgar indigno do oficialato ou incompatível com ele. O oficial condenado a pena de prisão superior a dois anos, por sentença definitiva, é submetido a esse julgamento.\nA acumulação com cargo civil segue a exceção do art. 37, XVI, c, para profissionais de saúde.",
+    "exemplo_pratico": "Um capitão do Exército é aprovado em concurso para cargo civil permanente de professor de escola técnica. Fora da exceção do art. 37, XVI, c, ele é transferido para a reserva ao tomar posse.",
+    "atencao": "A perda do posto depende de decisão de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII.",
+    "palavras_dificeis": [
+     {
+      "termo": "Patente",
+      "explicacao": "grau hierárquico do oficial militar."
+     },
+     {
+      "termo": "Reserva",
+      "explicacao": "situação do militar afastado do serviço ativo, mas ainda vinculado às Forças."
+     },
+     {
+      "termo": "Agregado",
+      "explicacao": "militar afastado temporariamente do quadro, sem perder o vínculo."
+     },
+     {
+      "termo": "Oficialato",
+      "explicacao": "condição de oficial militar."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "A perda do posto depende de decisão de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII.\nAs ressalvas dos incisos II, III e VIII remetem apenas à alínea c do art. 37, XVI; a hipótese da alínea b, que admite acumular um cargo de professor com outro de qualquer natureza, não foi incluída nessas ressalvas.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): EC 138/2025 deu nova redação apenas ao art. 37, XVI, b (professor com outro cargo de qualquer natureza); o art. 142, § 3º, II, III e VIII, continua a ressalvar somente a alínea c (redação da EC 77/2014). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "EC 138/2025: nova redação do art. 37, XVI, b; art. 142, § 3º, II, III e VIII, ressalva apenas a alínea c",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc138.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "EC 138/2025; texto compilado do art. 142, § 3º",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Explicita, pelo texto vigente, que a nova hipótese de acumulação do art. 37, XVI, b (EC 138/2025) não integra as ressalvas militares.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A perda do posto depende de decisão de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII.",
+     "after": "A perda do posto depende de decisão de tribunal militar permanente quando o país está em paz, ou de tribunal especial se houver guerra. Os direitos sociais do art. 7º aplicáveis aos militares são apenas os indicados no inciso VIII.\nAs ressalvas dos incisos II, III e VIII remetem apenas à alínea c do art. 37, XVI; a hipótese da alínea b, que admite acumular um cargo de professor com outro de qualquer natureza, não foi incluída nessas ressalvas.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): EC 138/2025 deu nova redação apenas ao art. 37, XVI, b (professor com outro cargo de qualquer natureza); o art. 142, § 3º, II, III e VIII, continua a ressalvar somente a alínea c (redação da EC 77/2014). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.8",
+   "item": "B52",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "exemplo_pratico",
+    "external_layer_notes",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.144:PAR.8/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.144:PAR.8/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 8º permite que os Municípios criem guardas municipais para proteger os próprios bens, serviços e instalações, conforme dispuser a lei.",
+    "o_que_significa": "A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.\nA finalidade descrita no texto é a proteção dos bens, serviços e instalações do próprio Município.\nOs detalhes de organização e as atribuições da guarda dependem da lei.",
+    "exemplo_pratico": "Um Município cria guarda municipal para proteger escolas, postos de saúde e praças públicas.",
+    "atencao": "O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações depende da lei e é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Guarda municipal",
+      "explicacao": "corporação criada pelo Município para proteger seus bens, serviços e instalações."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A fonte canônica remete à Lei n. 13.022, de 2014 (estatuto das guardas municipais), na camada de legislação correlata.",
+    "A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+   ],
+   "set": {
+    "atencao": "A guarda municipal não se confunde com a polícia militar nem com a polícia civil: não investiga crimes, e sua atuação segue as normas gerais fixadas pelo Congresso Nacional e a lei municipal.",
+    "exemplo_pratico": "Um Município cria guarda municipal para proteger escolas, postos de saúde e praças públicas. Os guardas também podem fazer patrulhamento preventivo nas ruas, em cooperação com os demais órgãos de segurança.",
+    "external_layer_notes": [
+     "A fonte canônica remete à Lei n. 13.022, de 2014 (estatuto das guardas municipais), na camada de legislação correlata.",
+     "Verificado na fonte oficial (Informativo STF 1166): Tema 656 (RE 608.588, Plenário, 20/02/2025): \"É constitucional, no âmbito dos municípios, o exercício de ações de segurança urbana pelas Guardas Municipais, inclusive policiamento ostensivo e comunitário, respeitadas as atribuições dos demais órgãos de segurança pública previstos no art. 144 da Constituição Federal e excluída qualquer atividade de polícia judiciária, sendo submetidas ao controle externo da atividade policial pelo Ministério Público\"; as leis municipais observam as normas gerais do Congresso Nacional. \"A Constituição e o Supremo\", art. 144, § 8º: RE 846.854 (atividade de segurança pública), ADC 38 (integrantes do Sistema Único de Segurança Pública), Tema 472 (poder de polícia de trânsito). Embargos de declaração pendentes no Tema 656 (não lidos). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ],
+    "o_que_significa": "A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.\nA finalidade descrita no texto é a proteção dos bens, serviços e instalações do próprio Município. Os detalhes de organização e as atribuições da guarda dependem da lei.\nO Supremo Tribunal Federal reconhece que as guardas municipais exercem atividade de segurança pública: podem realizar ações de segurança urbana, inclusive policiamento ostensivo e comunitário, respeitadas as atribuições dos demais órgãos do art. 144, sem atividade de polícia judiciária e sob controle externo do Ministério Público."
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "o_que_significa",
+     "content": "Tema 656 (RE 608.588, 2025): segurança urbana, policiamento ostensivo e comunitário, sem polícia judiciária, controle externo do MP",
+     "official_source": "https://www.stf.jus.br/arquivo/informativo/documento/informativo1166.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "exemplo_pratico",
+     "content": "Tema 656 (RE 608.588, 2025): policiamento ostensivo e comunitário pelas guardas municipais",
+     "official_source": "https://www.stf.jus.br/arquivo/informativo/documento/informativo1166.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Tema 656: exclusão da polícia judiciária e observância das normas gerais do Congresso Nacional",
+     "official_source": "https://www.stf.jus.br/arquivo/informativo/documento/informativo1166.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Tema 656; RE 846.854; ADC 38; Tema 472",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=144",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "EXTERNAL_VERIFICATION_REQUIRED (atuação na segurança pública)"
+   ],
+   "review_reason": "O T1 tratava a guarda apenas como vigilância patrimonial e deixava a segurança pública em aberto (EXTERNAL_VERIFICATION_REQUIRED). O Tema 656 admite segurança urbana, inclusive policiamento ostensivo e comunitário, com limites; o T1 não a equipara à polícia militar ou civil.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações depende da lei e é tema da camada JURISPRUDÊNCIA.",
+     "after": "A guarda municipal não se confunde com a polícia militar nem com a polícia civil: não investiga crimes, e sua atuação segue as normas gerais fixadas pelo Congresso Nacional e a lei municipal.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "exemplo_pratico",
+     "before": "Um Município cria guarda municipal para proteger escolas, postos de saúde e praças públicas.",
+     "after": "Um Município cria guarda municipal para proteger escolas, postos de saúde e praças públicas. Os guardas também podem fazer patrulhamento preventivo nas ruas, em cooperação com os demais órgãos de segurança.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A fonte canônica remete à Lei n. 13.022, de 2014 (estatuto das guardas municipais), na camada de legislação correlata.",
+      "A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+     ],
+     "after": [
+      "A fonte canônica remete à Lei n. 13.022, de 2014 (estatuto das guardas municipais), na camada de legislação correlata.",
+      "Verificado na fonte oficial (Informativo STF 1166): Tema 656 (RE 608.588, Plenário, 20/02/2025): \"É constitucional, no âmbito dos municípios, o exercício de ações de segurança urbana pelas Guardas Municipais, inclusive policiamento ostensivo e comunitário, respeitadas as atribuições dos demais órgãos de segurança pública previstos no art. 144 da Constituição Federal e excluída qualquer atividade de polícia judiciária, sendo submetidas ao controle externo da atividade policial pelo Ministério Público\"; as leis municipais observam as normas gerais do Congresso Nacional. \"A Constituição e o Supremo\", art. 144, § 8º: RE 846.854 (atividade de segurança pública), ADC 38 (integrantes do Sistema Único de Segurança Pública), Tema 472 (poder de polícia de trânsito). Embargos de declaração pendentes no Tema 656 (não lidos). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "o_que_significa",
+     "before": "A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.\nA finalidade descrita no texto é a proteção dos bens, serviços e instalações do próprio Município.\nOs detalhes de organização e as atribuições da guarda dependem da lei.",
+     "after": "A guarda municipal é uma possibilidade, e não uma obrigação: o Município decide se cria ou não.\nA finalidade descrita no texto é a proteção dos bens, serviços e instalações do próprio Município. Os detalhes de organização e as atribuições da guarda dependem da lei.\nO Supremo Tribunal Federal reconhece que as guardas municipais exercem atividade de segurança pública: podem realizar ações de segurança urbana, inclusive policiamento ostensivo e comunitário, respeitadas as atribuições dos demais órgãos do art. 144, sem atividade de polícia judiciária e sob controle externo do Ministério Público.",
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "item": "B53",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.145:INC.II/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.145:INC.II/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso II autoriza a cobrança de taxas em duas situações: pelo exercício do poder de polícia, ou pelo uso, efetivo ou potencial, de serviço público específico e divisível prestado ao contribuinte ou colocado à sua disposição.",
+    "o_que_significa": "A taxa depende de uma atuação do Estado ligada ao contribuinte. O texto indica duas situações.\nA primeira é o poder de polícia: a fiscalização que o Estado exerce sobre atividades particulares, como o licenciamento de um estabelecimento.\nA segunda é o serviço público específico e divisível, que pode ser medido por usuário. Basta que o serviço esteja à disposição: a utilização pode ser efetiva ou potencial.\nServiços prestados a toda a coletividade, sem possibilidade de individualizar o usuário, não se encaixam nessa descrição.",
+    "exemplo_pratico": "Um Município cobra taxa pela coleta de lixo das residências. O serviço está à disposição de cada imóvel, mesmo que o morador fique alguns dias sem colocar o lixo para fora.",
+    "atencao": "A classificação de cada serviço como específico e divisível é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Poder de polícia",
+      "explicacao": "atividade do Estado de fiscalizar e limitar atividades particulares em favor do interesse público."
+     },
+     {
+      "termo": "Serviço divisível",
+      "explicacao": "serviço cuja utilização pode ser medida para cada usuário."
+     },
+     {
+      "termo": "Utilização potencial",
+      "explicacao": "serviço posto à disposição, ainda que o contribuinte não o use."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Taxa pelo poder de polícia ou por serviço específico e divisível, de uso efetivo ou potencial; não admite qualquer serviço público.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "item": "B54",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.146:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.146:PAR.1/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 1º permite que a lei complementar do inciso III, d, institua um regime único para arrecadar impostos e contribuições federais, estaduais, distritais e municipais. Esse regime é opcional para o contribuinte, admite condições de enquadramento diferentes por Estado, tem recolhimento unificado e centralizado com repasse imediato aos entes e permite fiscalização e cobrança compartilhadas, com cadastro nacional único. O § 2º permite que o optante recolha fora do regime os tributos dos arts. 156-A e 195, V, e o § 3º regula os créditos desses tributos quando recolhidos pelo regime único.",
+    "o_que_significa": "O regime único permite que micro e pequenas empresas recolham vários tributos em um só recolhimento.\nO regime é uma opção, e não uma obrigação. O dinheiro arrecadado é repassado imediatamente a cada ente, sem retenção.\nOs §§ 2º e 3º tratam da relação com os novos tributos sobre bens e serviços. A empresa pode recolhê-los fora do regime único. Se recolher dentro dele, não aproveita créditos desses tributos, mas quem compra dela pode aproveitar crédito no valor cobrado pelo regime único.",
+    "exemplo_pratico": "Uma pequena padaria opta pelo regime único e paga mensalmente uma guia que reúne vários tributos. Se vende para uma empresa que não está no regime, essa empresa pode aproveitar crédito dos tributos dos arts. 156-A e 195, V, no montante equivalente ao cobrado desses tributos pelo regime único.",
+    "atencao": "Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária. A aplicação no tempo dessas regras depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Regime único de arrecadação",
+      "explicacao": "sistema que reúne vários tributos em um só recolhimento."
+     },
+     {
+      "termo": "Crédito tributário",
+      "explicacao": "neste contexto, valor de tributo pago antes que pode ser abatido do tributo devido depois."
+     },
+     {
+      "termo": "Optante",
+      "explicacao": "contribuinte que escolheu aderir ao regime."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei complementar do regime único e as regras de transição da reforma tributária ficam na camada de legislação correlata e no ADCT."
+   ],
+   "set": {
+    "atencao": "Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária. A Lei Complementar nº 214, de 2025, permite que o optante apure e recolha esses tributos pelo regime regular, na forma da Lei Complementar nº 123, de 2006, que disciplina o regime único. As alíquotas da fase de implantação de 2026 não se aplicam às operações dos optantes.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, art. 41, §§ 2º a 4º (optantes pelo Simples Nacional sujeitos às regras desse regime; opção pelo regime regular do IBS e da CBS nos termos da LC 123/2006) e art. 348, III, c (alíquotas de 2026 não aplicadas aos optantes). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, art. 41, §§ 2º a 4º, e art. 348, III, c",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, arts. 41 e 348",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "A ATENÇÃO remetia a transição à camada externa; a LC 214/2025 já disciplina a opção do optante e afasta dele as alíquotas de 2026.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária. A aplicação no tempo dessas regras depende de regra de transição do ADCT, na camada externa.",
+     "after": "Os §§ 2º e 3º dependem dos tributos criados pela reforma tributária. A Lei Complementar nº 214, de 2025, permite que o optante apure e recolha esses tributos pelo regime regular, na forma da Lei Complementar nº 123, de 2006, que disciplina o regime único. As alíquotas da fase de implantação de 2026 não se aplicam às operações dos optantes.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A lei complementar do regime único e as regras de transição da reforma tributária ficam na camada de legislação correlata e no ADCT."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, art. 41, §§ 2º a 4º (optantes pelo Simples Nacional sujeitos às regras desse regime; opção pelo regime regular do IBS e da CBS nos termos da LC 123/2006) e art. 348, III, c (alíquotas de 2026 não aplicadas aos optantes). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "item": "B55",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME",
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.149-B/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.149-B/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 149-B determina que o imposto do art. 156-A e a contribuição do art. 195, V, observem as mesmas regras sobre fato gerador, base de cálculo, casos de não incidência e sujeitos passivos; imunidades; regimes específicos, diferenciados ou favorecidos; e não cumulatividade e creditamento. O parágrafo único manda aplicar a esses tributos as imunidades do art. 150, VI, e afasta deles o art. 195, § 7º.",
+    "o_que_significa": "O artigo trata dos dois tributos sobre bens e serviços criados pela reforma tributária: o imposto do art. 156-A, dos Estados, do Distrito Federal e dos Municípios, e a contribuição do art. 195, V, da União.\nEmbora pertençam a entes diferentes, os dois seguem as mesmas regras básicas. Isso significa que um mesmo fato é tratado da mesma forma pelos dois tributos.\nO parágrafo único aplica a ambos as imunidades gerais de impostos, mesmo à contribuição, e afasta a imunidade das entidades beneficentes prevista para as contribuições de seguridade.",
+    "exemplo_pratico": "Uma operação que não sofre incidência do imposto do art. 156-A também não sofre incidência da contribuição do art. 195, V, porque as hipóteses de não incidência são as mesmas.",
+    "atencao": "Os tributos dos arts. 156-A e 195, V, foram criados por emenda recente. A partir de quando cada regra se aplica depende de regra de transição do ADCT, consultada na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Não cumulatividade",
+      "explicacao": "técnica que permite abater o tributo pago nas etapas anteriores."
+     },
+     {
+      "termo": "Sujeito passivo",
+      "explicacao": "pessoa obrigada a pagar o tributo."
+     },
+     {
+      "termo": "Imunidade",
+      "explicacao": "proibição constitucional de cobrar tributo em certos casos."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Regras de transição da reforma tributária (ADCT) e leis complementares do imposto e da contribuição sobre bens e serviços ficam na camada externa."
+   ],
+   "set": {
+    "atencao": "Os dois tributos foram instituídos pela Lei Complementar nº 214, de 2025. No exercício de 2026 estão em fase de implantação; a contribuição do art. 195, V, passa a ser cobrada a partir de 2027, e o imposto do art. 156-A segue a transição do ADCT até a extinção dos impostos que substitui, a partir de 2033.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, art. 1º: institui o IBS e a CBS",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025; ADCT, arts. 125-131",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "A ATENÇÃO tratava a aplicação no tempo como externa; coerente com o T1 aprovado do art. 156-A, passa a dar o estado de 2026 e o cronograma do ADCT.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "Os tributos dos arts. 156-A e 195, V, foram criados por emenda recente. A partir de quando cada regra se aplica depende de regra de transição do ADCT, consultada na camada externa.",
+     "after": "Os dois tributos foram instituídos pela Lei Complementar nº 214, de 2025. No exercício de 2026 estão em fase de implantação; a contribuição do art. 195, V, passa a ser cobrada a partir de 2027, e o imposto do art. 156-A segue a transição do ADCT até a extinção dos impostos que substitui, a partir de 2033.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "Regras de transição da reforma tributária (ADCT) e leis complementares do imposto e da contribuição sobre bens e serviços ficam na camada externa."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "item": "B56",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.149-C/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.149-C/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 149-C determina que a arrecadação do imposto do art. 156-A e da contribuição do art. 195, V, sobre operações contratadas pela administração pública direta, autarquias e fundações públicas, inclusive importações, seja destinada integralmente ao ente contratante. Isso ocorre pela redução a zero das alíquotas devidas aos demais entes e pela elevação equivalente da alíquota do ente contratante. Os parágrafos permitem alíquotas reduzidas de modo uniforme e hipóteses, previstas em lei complementar, em que a regra não se aplica, e tratam das importações feitas pela administração.",
+    "o_que_significa": "Quando o poder público compra bens ou serviços, parte do preço é tributo. O artigo faz com que esse tributo fique com o próprio ente que compra.\nNa prática, as alíquotas dos outros entes caem a zero, e a do ente comprador sobe na mesma medida. O valor total não muda, mas o destino da arrecadação sim.\nA lei complementar pode prever alíquotas reduzidas para essas operações e casos em que a regra não se aplica.",
+    "exemplo_pratico": "Um Município compra computadores para suas escolas. O tributo sobre essa compra, em vez de ser dividido entre União, Estado e Município, fica integralmente com o Município.",
+    "atencao": "A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ente contratante",
+      "explicacao": "ente público que faz a compra ou contrata o serviço."
+     },
+     {
+      "termo": "Alíquota",
+      "explicacao": "percentual aplicado para calcular o tributo."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Regras de transição da reforma tributária ficam no ADCT, na camada externa."
+   ],
+   "set": {
+    "atencao": "A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais. A Lei Complementar nº 214, de 2025, disciplinou essas aquisições: prevê a destinação ao ente contratante e a redução uniforme das alíquotas, por redutor aplicado a partir de 2027.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 472 e 473 (aquisições pela administração pública; redução uniforme das alíquotas do IBS e da CBS pelo redutor do art. 370, de 2027 a 2033, e no nível de 2033 a partir de 2034; redação do art. 472 dada pela LC 227/2026). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, arts. 472 e 473 (redação da LC 227/2026 no art. 472): compras governamentais",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, arts. 370, 472 e 473; LC 227/2026",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "A regulamentação das compras governamentais já existe (LC 214/2025, arts. 472 e 473); a ATENÇÃO deixa de tratá-la como futura.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+     "after": "A regra vale para administração direta, autarquias e fundações públicas, e não para empresas estatais. A Lei Complementar nº 214, de 2025, disciplinou essas aquisições: prevê a destinação ao ente contratante e a redução uniforme das alíquotas, por redutor aplicado a partir de 2027.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "Regras de transição da reforma tributária ficam no ADCT, na camada externa."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 472 e 473 (aquisições pela administração pública; redução uniforme das alíquotas do IBS e da CBS pelo redutor do art. 370, de 2027 a 2033, e no nível de 2033 a partir de 2034; redação do art. 472 dada pela LC 227/2026). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.150:INC.IV",
+   "item": "B57",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.150:INC.IV/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.150:INC.IV/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso IV proíbe utilizar tributo com efeito de confisco.",
+    "o_que_significa": "O tributo não pode ser tão pesado que, na prática, retire do contribuinte o patrimônio ou a renda.\nA tributação é legítima, mas tem um limite. Quando a carga é tão alta que inviabiliza a atividade ou absorve a propriedade, ela passa a ter efeito de confisco, o que o texto proíbe.\nO texto não diz qual percentual configura confisco. É um conceito aberto, aplicado caso a caso.",
+    "exemplo_pratico": "Uma lei municipal fixa imposto anual sobre imóveis em valor próximo ao do próprio imóvel. Em pouco tempo o proprietário teria pago o bem inteiro em tributo, o que caracteriza efeito de confisco.",
+    "atencao": "O momento em que um tributo ou uma multa passa a ter efeito confiscatório é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Confisco",
+      "explicacao": "tomada de bens sem justa compensação; aqui, tributação excessiva."
+     },
+     {
+      "termo": "Conceito aberto",
+      "explicacao": "expressão cujo conteúdo é definido na aplicação a cada caso."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Vedação ao confisco como conceito aberto, sem percentual fixo; multas apenas sinalizadas.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "item": "B58",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.150:INC.VI/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.150:INC.VI/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso VI proíbe instituir impostos sobre: patrimônio, renda ou serviços de um ente federativo cobrados por outro (alínea a); templos de qualquer culto e entidades religiosas, com suas organizações assistenciais e beneficentes (alínea b); patrimônio, renda ou serviços de partidos políticos e suas fundações, de entidades sindicais dos trabalhadores e de instituições sem fins lucrativos de educação e de assistência social, observados os requisitos da lei (alínea c); livros, jornais, periódicos e o papel destinado à impressão (alínea d); e fonogramas e videofonogramas musicais produzidos no Brasil com obras ou intérpretes brasileiros, salvo na etapa de replicação industrial de mídias ópticas (alínea e).",
+    "o_que_significa": "As imunidades impedem a cobrança de impostos sobre as pessoas e os bens indicados.\nA alínea a impede um ente de cobrar imposto de outro. As alíneas b e c alcançam templos, partidos e suas fundações, sindicatos de trabalhadores e instituições de educação e assistência sem fins lucrativos. A alínea d alcança livros, jornais, periódicos e o papel de impressão, e a alínea e alcança certas obras musicais brasileiras.\nA imunidade do inciso vale para impostos, e não para taxas ou contribuições, salvo previsão específica em outro dispositivo.",
+    "exemplo_pratico": "Uma igreja não paga imposto sobre a propriedade do imóvel onde está o templo. Uma editora não paga imposto sobre os livros que vende.",
+    "atencao": "O § 2º estende a imunidade da alínea a a autarquias, fundações públicas e à empresa pública postal, quanto ao que se liga às suas finalidades essenciais; o § 3º afasta essa imunidade na exploração de atividade econômica ou quando há preço ou tarifa; e o § 4º limita as alíneas b e c às finalidades essenciais das entidades. A alínea c exige que sejam atendidos os requisitos da lei, e o alcance de cada imunidade é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Imunidade",
+      "explicacao": "proibição constitucional de cobrar tributo em certos casos."
+     },
+     {
+      "termo": "Fonograma",
+      "explicacao": "gravação de sons, como uma música gravada."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O alcance das imunidades (por exemplo, livros digitais e imóveis alugados de entidades imunes) é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Alíneas a a e na redação vigente (inclusive entidades religiosas e organizações assistenciais e beneficentes); limites dos §§ 2º a 4º indicados.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.2",
+   "item": "B59",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.150:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.150:PAR.2/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 2º estende a imunidade recíproca (inciso VI, a) às autarquias, às fundações criadas e mantidas pelo poder público e à empresa pública que presta o serviço postal. A extensão alcança patrimônio, renda e serviços ligados às finalidades essenciais dessas entidades ou delas decorrentes. O § 3º afasta essas imunidades quando patrimônio, renda e serviços se ligam à exploração de atividade econômica sujeita às regras dos empreendimentos privados ou quando o usuário paga preço ou tarifa. Também não libera do imposto sobre o imóvel quem se comprometeu a comprá-lo.",
+    "o_que_significa": "A imunidade recíproca protege os entes federativos. O § 2º a estende a entidades que fazem parte da estrutura pública, como autarquias e fundações públicas, e à empresa pública dos correios.\nA proteção, porém, vale apenas para o que está ligado às finalidades essenciais dessas entidades.\nO § 3º mostra os limites. Quando o ente ou a entidade explora atividade econômica como uma empresa privada, ou cobra preço ou tarifa do usuário, não há imunidade. E quem se compromete a comprar um imóvel público continua devendo o imposto sobre ele.",
+    "exemplo_pratico": "Uma universidade federal, que é autarquia, não paga imposto municipal sobre o prédio onde funcionam as salas de aula. Se o mesmo prédio for usado para atividade econômica comum, a imunidade pode deixar de valer.",
+    "atencao": "A aplicação da imunidade a empresas estatais além da empresa postal é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Autarquia",
+      "explicacao": "entidade pública com personalidade própria criada por lei para atividade típica do Estado."
+     },
+     {
+      "termo": "Promitente comprador",
+      "explicacao": "quem se compromete, por contrato, a comprar um imóvel."
+     },
+     {
+      "termo": "Tarifa",
+      "explicacao": "preço cobrado do usuário por um serviço."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A extensão da imunidade recíproca a outras empresas estatais prestadoras de serviço público é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Imunidade recíproca estendida só às entidades e finalidades do texto; exclusões do § 3º (atividade econômica, preço ou tarifa, promitente comprador) corretas; não a estende a estatais em geral.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "item": "B60",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.150:PAR.7/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.150:PAR.7/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 7º permite que a lei torne um sujeito passivo responsável por pagar imposto ou contribuição de fato gerador que ainda vai acontecer. Se o fato gerador presumido não se realizar, fica assegurada a restituição imediata e preferencial da quantia paga.",
+    "o_que_significa": "O parágrafo autoriza a chamada substituição tributária para frente. O tributo é cobrado antecipadamente de alguém da cadeia, antes que a operação final aconteça.\nComo o pagamento é feito sobre um fato que ainda não aconteceu, o texto garante a devolução imediata e preferencial se ele não ocorrer.",
+    "exemplo_pratico": "Uma fábrica de cerveja recolhe, na saída do produto, o imposto que seria devido pelos bares na venda ao consumidor. Se o lote for destruído antes da venda, a quantia paga deve ser restituída.",
+    "atencao": "O texto garante restituição quando o fato gerador não se realiza. Se há direito à diferença quando a venda ocorre por valor menor que o presumido é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Substituição tributária",
+      "explicacao": "regime em que um contribuinte paga o tributo devido por outro da cadeia."
+     },
+     {
+      "termo": "Fato gerador presumido",
+      "explicacao": "operação futura que se supõe que vai acontecer."
+     },
+     {
+      "termo": "Restituição",
+      "explicacao": "devolução do valor pago."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+   ],
+   "set": {
+    "atencao": "O texto garante restituição quando o fato gerador não se realiza. O Supremo Tribunal Federal reconhece também o direito à restituição da diferença quando a base de cálculo efetiva da operação for inferior à presumida.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 150, § 7º): Tema 201 (RE 593.849, 2016) e ADI 2.777: é devida a restituição da diferença do ICMS pago a mais na substituição tributária para frente se a base de cálculo efetiva for inferior à presumida; altera parcialmente a ADI 1.851, com efeitos para os litígios futuros e os pendentes submetidos à repercussão geral. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Tema 201 (RE 593.849, 2016): restituição da diferença quando a base efetiva é inferior à presumida",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=150",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Tema 201; ADI 2.777; ADI 1.851",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=150",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "EXTERNAL_VERIFICATION_REQUIRED (base real inferior à presumida)"
+   ],
+   "review_reason": "A questão da diferença estava aberta (EXTERNAL_VERIFICATION_REQUIRED); o Tema 201 a resolveu.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O texto garante restituição quando o fato gerador não se realiza. Se há direito à diferença quando a venda ocorre por valor menor que o presumido é tema da camada JURISPRUDÊNCIA.",
+     "after": "O texto garante restituição quando o fato gerador não se realiza. O Supremo Tribunal Federal reconhece também o direito à restituição da diferença quando a base de cálculo efetiva da operação for inferior à presumida.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+     ],
+     "after": [
+      "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 150, § 7º): Tema 201 (RE 593.849, 2016) e ADI 2.777: é devida a restituição da diferença do ICMS pago a mais na substituição tributária para frente se a base de cálculo efetiva for inferior à presumida; altera parcialmente a ADI 1.851, com efeitos para os litígios futuros e os pendentes submetidos à repercussão geral. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.151",
+   "item": "B61",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.151/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.151/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 151 proíbe a União de três condutas. Ela não pode criar tributo sem uniformidade em todo o país, ou que favoreça ou prejudique um Estado, o Distrito Federal ou um Município em relação a outro, admitidos incentivos fiscais para promover o equilíbrio do desenvolvimento entre as regiões. Não pode tributar a renda dos títulos da dívida pública e a remuneração dos agentes públicos estaduais, distritais e municipais em níveis superiores aos que fixar para os seus. E não pode instituir isenções de tributos que pertencem aos Estados, ao Distrito Federal ou aos Municípios.",
+    "o_que_significa": "As três vedações limitam o poder tributário da União em relação aos demais entes.\nA uniformidade impede que a União cobre um tributo mais pesado em uma região do que em outra. A exceção expressa são os incentivos para reduzir desigualdades regionais.\nO inciso II impede que a União trate os títulos e os servidores dos outros entes de forma mais dura do que trata os seus.\nO inciso III impede que a União conceda isenção de tributo que não é seu: em regra, a isenção cabe ao ente que tem a competência sobre o tributo, ressalvados os casos previstos na própria Constituição.",
+    "exemplo_pratico": "Uma lei federal tenta isentar do imposto municipal sobre serviços certas empresas de tecnologia. A medida contraria o inciso III, porque o imposto pertence aos Municípios.",
+    "atencao": "A vedação do inciso III trata de isenção concedida pela União em lei própria. Tratados internacionais e outras situações especiais são temas da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Uniformidade tributária",
+      "explicacao": "exigência de que o tributo federal seja igual em todo o país."
+     },
+     {
+      "termo": "Isenção",
+      "explicacao": "dispensa legal do pagamento de um tributo."
+     },
+     {
+      "termo": "Incentivo fiscal",
+      "explicacao": "redução de tributo para estimular uma atividade ou região."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A concessão de isenções de tributos locais por tratado internacional é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Uniformidade com a ressalva expressa dos incentivos regionais, tratamento dos títulos e agentes dos demais entes e vedação de isenção heterônoma corretos.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "item": "B62",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.153/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.153/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 153 lista os impostos da União: sobre importação; sobre exportação; sobre renda e proventos de qualquer natureza; sobre produtos industrializados; sobre operações de crédito, câmbio, seguro ou com títulos e valores mobiliários; sobre a propriedade territorial rural; sobre grandes fortunas, nos termos de lei complementar; e sobre bens e serviços prejudiciais à saúde ou ao meio ambiente, em sua produção, extração, comercialização ou importação, também nos termos de lei complementar. Os parágrafos trazem, entre outras, regras próprias para vários desses impostos.",
+    "o_que_significa": "O artigo é a lista dos impostos que pertencem à União. Cada um tem um campo próprio, que os outros entes não podem invadir.\nAlguns impostos, como os de importação, exportação e operações financeiras, podem ter as alíquotas alteradas pelo Executivo (§ 1º).\nO imposto de renda observa, na forma da lei, três critérios: generalidade, universalidade e progressividade (§ 2º).\nO imposto sobre grandes fortunas depende de lei complementar para ser instituído. O imposto do inciso VIII, sobre bens e serviços prejudiciais à saúde ou ao meio ambiente, também depende de lei complementar.",
+    "exemplo_pratico": "Uma empresa que importa máquinas paga imposto de importação, federal. Se depois vender produtos que fabricou com essas máquinas, pode pagar também o imposto sobre produtos industrializados, igualmente federal.",
+    "atencao": "O inciso VIII foi incluído por emenda recente, e a aplicação no tempo do novo imposto depende de regra de transição do ADCT, na camada externa. O texto prevê o imposto sobre grandes fortunas, mas sua cobrança depende de lei complementar.",
+    "palavras_dificeis": [
+     {
+      "termo": "Proventos de qualquer natureza",
+      "explicacao": "acréscimos patrimoniais que não se enquadram como renda do trabalho ou do capital."
+     },
+     {
+      "termo": "Valores mobiliários",
+      "explicacao": "títulos negociados no mercado financeiro, como ações."
+     },
+     {
+      "termo": "Progressividade",
+      "explicacao": "aumento da alíquota conforme cresce a base de cálculo."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Regras de transição da reforma tributária para o imposto do inciso VIII e para o imposto sobre produtos industrializados ficam no ADCT, na camada externa."
+   ],
+   "set": {
+    "atencao": "O imposto do inciso VIII foi instituído pela Lei Complementar nº 214, de 2025, que lista os bens e serviços alcançados, e é cobrado a partir de 2027. Nesse mesmo ano, as alíquotas do imposto sobre produtos industrializados ficam reduzidas a zero, ressalvados os produtos industrializados sob o regime favorecido da Zona Franca de Manaus.\nO texto prevê o imposto sobre grandes fortunas, mas sua cobrança depende de lei complementar.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, art. 409 (institui o imposto do art. 153, VIII, e lista veículos, embarcações e aeronaves, produtos fumígenos, bebidas alcoólicas e açucaradas, bens minerais e concursos de prognósticos); ADCT, art. 126, I, b (cobrança a partir de 2027) e III (IPI reduzido a zero a partir de 2027, ressalvada a Zona Franca de Manaus). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, art. 409: instituição e lista do imposto do art. 153, VIII",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033; art. 126, III: IPI",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, art. 409; ADCT, art. 126",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "A ATENÇÃO deixava o imposto do inciso VIII como dependente de transição externa; passa a dar a instituição (LC 214/2025) e o início em 2027, coerente com o T1 aprovado do § 3º (IPI).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O inciso VIII foi incluído por emenda recente, e a aplicação no tempo do novo imposto depende de regra de transição do ADCT, na camada externa. O texto prevê o imposto sobre grandes fortunas, mas sua cobrança depende de lei complementar.",
+     "after": "O imposto do inciso VIII foi instituído pela Lei Complementar nº 214, de 2025, que lista os bens e serviços alcançados, e é cobrado a partir de 2027. Nesse mesmo ano, as alíquotas do imposto sobre produtos industrializados ficam reduzidas a zero, ressalvados os produtos industrializados sob o regime favorecido da Zona Franca de Manaus.\nO texto prevê o imposto sobre grandes fortunas, mas sua cobrança depende de lei complementar.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "Regras de transição da reforma tributária para o imposto do inciso VIII e para o imposto sobre produtos industrializados ficam no ADCT, na camada externa."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, art. 409 (institui o imposto do art. 153, VIII, e lista veículos, embarcações e aeronaves, produtos fumígenos, bebidas alcoólicas e açucaradas, bens minerais e concursos de prognósticos); ADCT, art. 126, I, b (cobrança a partir de 2027) e III (IPI reduzido a zero a partir de 2027, ressalvada a Zona Franca de Manaus). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "item": "B63",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes",
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.153:PAR.6/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.153:PAR.6/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 6º fixa regras para o imposto do inciso VIII. Ele não incide sobre exportações nem sobre operações com energia elétrica e telecomunicações, incide uma única vez sobre o bem ou serviço e não integra sua própria base de cálculo, embora integre a base dos tributos dos arts. 155, II, 156, III, 156-A e 195, V. Pode ter fato gerador e base de cálculo coincidentes com os de outros tributos e terá alíquotas fixadas em lei ordinária, específicas ou ad valorem. Na extração, é cobrado independentemente da destinação, com alíquota máxima de um por cento do valor de mercado do produto.",
+    "o_que_significa": "O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.\nAs regras do parágrafo definem como ele funciona: incide uma só vez na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos tributos sobre consumo indicados no inciso IV.\nNa extração de recursos naturais, ele é cobrado mesmo que o produto vá para fora do país, mas com teto de um por cento do valor de mercado.\nQuais bens e serviços são alcançados é definido em lei complementar (inciso VIII).",
+    "exemplo_pratico": "Se a lei complementar incluir determinado produto prejudicial à saúde entre os bens tributados, o imposto incide uma única vez na cadeia daquele produto, e não a cada revenda.",
+    "atencao": "O imposto foi criado por emenda recente. A partir de quando ele é cobrado depende de regra de transição do ADCT e da lei complementar, consultadas na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Incidência única",
+      "explicacao": "cobrança feita uma só vez na cadeia de produção e venda."
+     },
+     {
+      "termo": "Valor de mercado",
+      "explicacao": "preço que o produto alcançaria em uma venda normal."
+     },
+     {
+      "termo": "Ad valorem",
+      "explicacao": "calculado como percentual sobre um valor."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei complementar do imposto do inciso VIII e as regras de transição da reforma tributária ficam na camada externa."
+   ],
+   "set": {
+    "atencao": "O imposto foi instituído pela Lei Complementar nº 214, de 2025, que define os bens e serviços alcançados, como veículos, embarcações e aeronaves, produtos fumígenos, bebidas alcoólicas e açucaradas, bens minerais e concursos de prognósticos. A cobrança começa a partir de 2027.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 409 e 410 (lista dos bens e serviços; incidência única, sem créditos); ADCT, art. 126, I, b (cobrança a partir de 2027). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ],
+    "o_que_significa": "O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.\nAs regras do parágrafo definem como ele funciona: tem incidência única na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos tributos sobre consumo indicados no inciso IV.\nNa extração de recursos naturais, ele é cobrado mesmo que o produto vá para fora do país, mas com teto de um por cento do valor de mercado.\nQuais bens e serviços são alcançados é definido em lei complementar (inciso VIII)."
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, arts. 409 e 410: Imposto Seletivo, lista e incidência única",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, arts. 409 e 410; ADCT, art. 126",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE",
+    "TERM_NOT_USED (Incidência única)"
+   ],
+   "review_reason": "Glossário \"Incidência única\" sem uso (TERM_NOT_USED) passa a ser usado no corpo; a ATENÇÃO deixa de tratar o imposto como pendente de lei e transição.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O imposto foi criado por emenda recente. A partir de quando ele é cobrado depende de regra de transição do ADCT e da lei complementar, consultadas na camada externa.",
+     "after": "O imposto foi instituído pela Lei Complementar nº 214, de 2025, que define os bens e serviços alcançados, como veículos, embarcações e aeronaves, produtos fumígenos, bebidas alcoólicas e açucaradas, bens minerais e concursos de prognósticos. A cobrança começa a partir de 2027.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A lei complementar do imposto do inciso VIII e as regras de transição da reforma tributária ficam na camada externa."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 409 e 410 (lista dos bens e serviços; incidência única, sem créditos); ADCT, art. 126, I, b (cobrança a partir de 2027). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "o_que_significa",
+     "before": "O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.\nAs regras do parágrafo definem como ele funciona: incide uma só vez na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos tributos sobre consumo indicados no inciso IV.\nNa extração de recursos naturais, ele é cobrado mesmo que o produto vá para fora do país, mas com teto de um por cento do valor de mercado.\nQuais bens e serviços são alcançados é definido em lei complementar (inciso VIII).",
+     "after": "O imposto do inciso VIII alcança bens e serviços prejudiciais à saúde ou ao meio ambiente.\nAs regras do parágrafo definem como ele funciona: tem incidência única na cadeia, não alcança exportações, energia e telecomunicações e entra na base de cálculo dos tributos sobre consumo indicados no inciso IV.\nNa extração de recursos naturais, ele é cobrado mesmo que o produto vá para fora do país, mas com teto de um por cento do valor de mercado.\nQuais bens e serviços são alcançados é definido em lei complementar (inciso VIII).",
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "item": "B64",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.155/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.155/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 155 reserva aos Estados e ao Distrito Federal três impostos: sobre a transmissão de bens ou direitos por morte ou por doação; sobre a circulação de mercadorias e as prestações de serviços de transporte entre Estados e entre Municípios e de comunicação, mesmo quando iniciadas no exterior; e sobre a propriedade de veículos automotores, exceto os veículos indicados no § 6º. Os parágrafos trazem, entre outras, as regras de cada imposto, com exceções como as do imposto sobre veículos e matérias reservadas à lei complementar.",
+    "o_que_significa": "Os Estados e o Distrito Federal têm três impostos.\nO primeiro alcança heranças e doações. O segundo alcança a circulação de mercadorias e certos serviços de transporte e de comunicação. O terceiro alcança a propriedade de veículos.\nCada imposto tem regras detalhadas nos parágrafos: o § 1º trata do imposto sobre heranças e doações; os §§ 2º a 5º, do imposto sobre circulação de mercadorias e serviços; e o § 6º, do imposto sobre veículos.",
+    "exemplo_pratico": "Uma pessoa herda um apartamento e um carro. Paga ao Estado o imposto sobre a herança. Depois, como dona do carro, paga anualmente o imposto sobre a propriedade do veículo.",
+    "atencao": "A reforma tributária prevê a substituição gradual do imposto sobre circulação de mercadorias pelo imposto do art. 156-A. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Causa mortis",
+      "explicacao": "em razão da morte, como na herança."
+     },
+     {
+      "termo": "Circulação de mercadorias",
+      "explicacao": "transferência de mercadorias nas operações de venda."
+     },
+     {
+      "termo": "Veículo automotor",
+      "explicacao": "veículo com motor próprio."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "As regras de transição da reforma tributária sobre o imposto de circulação de mercadorias ficam no ADCT, na camada externa."
+   ],
+   "set": {
+    "atencao": "A reforma tributária prevê a substituição gradual do imposto sobre circulação de mercadorias pelo imposto do art. 156-A. As regras permanentes deste artigo seguem aplicáveis; a redução gradual ocorre de 2029 a 2032, e a extinção, a partir de 2033, conforme o ADCT.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADCT, arts. 128 e 129",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "A ATENÇÃO remetia o cronograma à camada externa; o ADCT versionado o fixa (2029-2032 e 2033).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A reforma tributária prevê a substituição gradual do imposto sobre circulação de mercadorias pelo imposto do art. 156-A. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+     "after": "A reforma tributária prevê a substituição gradual do imposto sobre circulação de mercadorias pelo imposto do art. 156-A. As regras permanentes deste artigo seguem aplicáveis; a redução gradual ocorre de 2029 a 2032, e a extinção, a partir de 2033, conforme o ADCT.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "As regras de transição da reforma tributária sobre o imposto de circulação de mercadorias ficam no ADCT, na camada externa."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2",
+   "item": "B65",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.155:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.155:PAR.2/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 2º reúne as regras do imposto sobre circulação de mercadorias e serviços. Entre elas: o imposto é não cumulativo; isenção ou não incidência, salvo disposição em contrário, não gera crédito e anula o crédito anterior; pode ser seletivo; o Senado fixa por resolução as alíquotas interestaduais e de exportação e pode fixar mínimas e máximas internas; as alíquotas internas não podem ser inferiores às interestaduais, salvo deliberação dos Estados. O parágrafo também trata da diferença de alíquotas nas vendas a consumidor final de outro Estado, da incidência na importação, das não incidências, da base de cálculo e das matérias reservadas à lei complementar.",
+    "o_que_significa": "O parágrafo é o estatuto constitucional do principal imposto estadual.\nA não cumulatividade permite abater o imposto pago nas etapas anteriores. Mas a isenção quebra essa cadeia: em regra, quem recebe mercadoria isenta não tem crédito a abater.\nO Senado tem papel central na fixação das alíquotas interestaduais.\nA lei complementar define elementos essenciais, como contribuintes, substituição tributária, local da operação e a forma de os Estados concederem benefícios fiscais por deliberação conjunta.",
+    "exemplo_pratico": "Uma loja compra mercadorias pagando o imposto destacado na nota. Ao revender, calcula o imposto sobre a venda e abate o valor que pagou na compra.",
+    "atencao": "A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X) têm explicação própria. A substituição deste imposto pelo do art. 156-A depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Alíquota interestadual",
+      "explicacao": "percentual aplicado quando a mercadoria vai de um Estado para outro."
+     },
+     {
+      "termo": "Resolução do Senado",
+      "explicacao": "ato do Senado com força normativa em matérias de sua competência."
+     },
+     {
+      "termo": "Crédito do imposto",
+      "explicacao": "valor pago nas etapas anteriores que pode ser abatido."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei complementar do imposto e as deliberações dos Estados sobre benefícios fiscais ficam na camada de legislação correlata."
+   ],
+   "set": {
+    "atencao": "A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X) têm explicação própria. As regras deste parágrafo seguem aplicáveis durante a transição: o imposto tem redução gradual de 2029 a 2032 e é extinto a partir de 2033, conforme o ADCT.",
+    "external_layer_notes": [
+     "A lei complementar do imposto e as deliberações dos Estados sobre benefícios fiscais ficam na camada de legislação correlata.",
+     "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADCT, arts. 128 e 129",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "Cronograma do ADCT explicitado sem confundir a regra permanente com a transitória.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X) têm explicação própria. A substituição deste imposto pelo do art. 156-A depende de regra de transição do ADCT, na camada externa.",
+     "after": "A diferença de alíquotas (incisos VII e VIII) e as não incidências (inciso X) têm explicação própria. As regras deste parágrafo seguem aplicáveis durante a transição: o imposto tem redução gradual de 2029 a 2032 e é extinto a partir de 2033, conforme o ADCT.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A lei complementar do imposto e as deliberações dos Estados sobre benefícios fiscais ficam na camada de legislação correlata."
+     ],
+     "after": [
+      "A lei complementar do imposto e as deliberações dos Estados sobre benefícios fiscais ficam na camada de legislação correlata.",
+      "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "item": "B66",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/2",
+   "original_content": {
+    "o_que_diz": "O inciso VII determina que, nas vendas de bens e serviços a consumidor final localizado em outro Estado, contribuinte ou não do imposto, se aplique a alíquota interestadual, cabendo ao Estado do destinatário a diferença entre a sua alíquota interna e a interestadual. O inciso VIII atribui o recolhimento dessa diferença ao destinatário, quando ele for contribuinte, e ao remetente, quando não for.",
+    "o_que_significa": "A regra divide o imposto entre o Estado de origem e o Estado de destino.\nO Estado de onde sai a mercadoria fica com o imposto calculado pela alíquota interestadual. O Estado onde está o consumidor fica com a diferença até a sua alíquota interna.\nQuem paga essa diferença depende do comprador. Se ele é contribuinte do imposto, como uma empresa, paga ele. Se não é, como uma pessoa física, quem paga é o vendedor.",
+    "exemplo_pratico": "Uma loja virtual de um Estado vende uma geladeira a um consumidor de outro Estado. A loja recolhe o imposto ao seu Estado pela alíquota interestadual e também recolhe ao Estado do consumidor a diferença até a alíquota interna dele.",
+    "atencao": "Se a cobrança dessa diferença depende de lei complementar específica é tema da camada JURISPRUDÊNCIA. A forma e o momento dessa exigência são temas da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Consumidor final",
+      "explicacao": "quem compra para uso próprio, e não para revenda."
+     },
+     {
+      "termo": "Remetente",
+      "explicacao": "quem envia a mercadoria."
+     },
+     {
+      "termo": "Alíquota interna",
+      "explicacao": "percentual aplicado nas operações dentro do Estado."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A exigência de lei complementar para a cobrança do diferencial de alíquotas e seus efeitos no tempo são temas da camada JURISPRUDÊNCIA."
+   ],
+   "set": {
+    "atencao": "A cobrança da diferença de alíquotas pressupõe lei complementar com normas gerais, segundo o Supremo Tribunal Federal. A Lei Complementar nº 190, de 2022, trouxe essa disciplina. Questões sobre o momento de produção de efeitos dessa lei ficam na camada JURISPRUDÊNCIA.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 155, § 2º, VII): Tema 1.093 (RE 1.287.019, 2021): \"A cobrança do diferencial de alíquota alusivo ao ICMS, conforme introduzido pela Emenda Constitucional 87/2015, pressupõe edição de lei complementar veiculando normas gerais\"; ADI 7.158 (2023): constitucional o critério do art. 11, § 7º, da LC 87/1996, na redação da LC 190/2022. Efeitos temporais da LC 190/2022: não verificados nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Tema 1.093 (RE 1.287.019, 2021): o diferencial de alíquota pressupõe lei complementar; ADI 7.158 (2023): LC 190/2022",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=155",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Tema 1.093; ADI 7.158",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=155",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "A ATENÇÃO deixava em aberto, e em duplicidade, a exigência de lei complementar; o Tema 1.093 a fixou e a LC 190/2022 foi editada.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "Se a cobrança dessa diferença depende de lei complementar específica é tema da camada JURISPRUDÊNCIA. A forma e o momento dessa exigência são temas da camada JURISPRUDÊNCIA.",
+     "after": "A cobrança da diferença de alíquotas pressupõe lei complementar com normas gerais, segundo o Supremo Tribunal Federal. A Lei Complementar nº 190, de 2022, trouxe essa disciplina. Questões sobre o momento de produção de efeitos dessa lei ficam na camada JURISPRUDÊNCIA.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A exigência de lei complementar para a cobrança do diferencial de alíquotas e seus efeitos no tempo são temas da camada JURISPRUDÊNCIA."
+     ],
+     "after": [
+      "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 155, § 2º, VII): Tema 1.093 (RE 1.287.019, 2021): \"A cobrança do diferencial de alíquota alusivo ao ICMS, conforme introduzido pela Emenda Constitucional 87/2015, pressupõe edição de lei complementar veiculando normas gerais\"; ADI 7.158 (2023): constitucional o critério do art. 11, § 7º, da LC 87/1996, na redação da LC 190/2022. Efeitos temporais da LC 190/2022: não verificados nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156",
+   "item": "B67",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME",
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 156 dá aos Municípios três impostos: sobre a propriedade predial e territorial urbana; sobre a transmissão onerosa de imóveis entre vivos e de direitos reais sobre eles, exceto os de garantia, incluída a cessão de direitos à aquisição; e sobre serviços de qualquer natureza que a lei complementar definir, desde que fora do campo do imposto estadual do art. 155, II. Os parágrafos trazem as regras de cada um desses impostos.",
+    "o_que_significa": "Os Municípios têm três impostos próprios.\nO primeiro alcança a propriedade de imóveis urbanos. O segundo alcança a compra e venda e outras transmissões onerosas de imóveis, mas não as doações nem as heranças, que são do Estado. O terceiro alcança os serviços, salvo os de transporte interestadual e intermunicipal e de comunicação, que ficam com o Estado.\nA lista dos serviços tributáveis é definida em lei complementar.",
+    "exemplo_pratico": "Uma pessoa compra um apartamento na cidade. Paga ao Município o imposto sobre a transmissão do imóvel e, a partir daí, o imposto anual sobre a propriedade urbana.",
+    "atencao": "A reforma tributária prevê a substituição gradual do imposto sobre serviços pelo imposto do art. 156-A. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Inter vivos",
+      "explicacao": "entre pessoas vivas, em oposição à herança."
+     },
+     {
+      "termo": "Ato oneroso",
+      "explicacao": "negócio em que há contraprestação, como a compra e venda."
+     },
+     {
+      "termo": "Direito real de garantia",
+      "explicacao": "direito sobre um bem que assegura o pagamento de uma dívida, como a hipoteca."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "As regras de transição da reforma tributária sobre o imposto sobre serviços ficam no ADCT, na camada externa."
+   ],
+   "set": {
+    "atencao": "A reforma tributária prevê a substituição gradual do imposto sobre serviços pelo imposto do art. 156-A. As regras permanentes deste artigo seguem aplicáveis; a redução gradual ocorre de 2029 a 2032, e a extinção, a partir de 2033, conforme o ADCT.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADCT, arts. 128 e 129",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Cronograma do ADCT do imposto sobre serviços explicitado.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A reforma tributária prevê a substituição gradual do imposto sobre serviços pelo imposto do art. 156-A. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+     "after": "A reforma tributária prevê a substituição gradual do imposto sobre serviços pelo imposto do art. 156-A. As regras permanentes deste artigo seguem aplicáveis; a redução gradual ocorre de 2029 a 2032, e a extinção, a partir de 2033, conforme o ADCT.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "As regras de transição da reforma tributária sobre o imposto sobre serviços ficam no ADCT, na camada externa."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.1",
+   "item": "B68",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.156:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156:PAR.1/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 1º permite que o imposto sobre a propriedade predial e territorial urbana seja progressivo conforme o valor do imóvel, tenha alíquotas diferentes conforme a localização e o uso e tenha a base de cálculo atualizada pelo Executivo, segundo critérios de lei municipal. Isso não prejudica a progressividade no tempo do art. 182, § 4º, II. O § 1º-A afasta o imposto sobre templos de qualquer culto, ainda que a entidade religiosa seja apenas locatária do imóvel.",
+    "o_que_significa": "O imposto sobre imóveis urbanos pode variar de três formas.\nPelo valor: imóveis mais caros podem pagar alíquota maior. Pela localização e pelo uso: um imóvel comercial pode ter alíquota diferente de um residencial. E a base de cálculo pode ser atualizada pelo Executivo, desde que siga critérios fixados em lei municipal.\nHá ainda a progressividade no tempo do art. 182, que pune o imóvel urbano não aproveitado.\nO § 1º-A deixa claro que o templo não paga o imposto mesmo quando funciona em imóvel alugado.",
+    "exemplo_pratico": "Uma igreja aluga uma sala comercial para realizar seus cultos. O imposto sobre a propriedade urbana não incide sobre esse imóvel, embora a igreja não seja a dona.",
+    "atencao": "A atualização da base de cálculo pelo Executivo depende de critérios definidos em lei municipal. O texto usa poderá: as variações são possibilidades dadas ao Município.",
+    "palavras_dificeis": [
+     {
+      "termo": "Progressividade no tempo",
+      "explicacao": "aumento da alíquota ano a ano para imóvel urbano não aproveitado."
+     },
+     {
+      "termo": "Base de cálculo",
+      "explicacao": "valor sobre o qual se aplica a alíquota."
+     },
+     {
+      "termo": "Locatário",
+      "explicacao": "quem aluga o imóvel de outra pessoa."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Progressividade pelo valor, alíquotas por localização e uso, atualização da base pelo Executivo segundo lei municipal e imunidade do templo locatário corretas.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "item": "B69",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156:PAR.2/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 2º estabelece que o imposto sobre a transmissão onerosa de imóveis não incide quando bens ou direitos são incorporados ao patrimônio de pessoa jurídica para formar o capital, nem nas transmissões decorrentes de fusão, incorporação, cisão ou extinção de pessoa jurídica. A ressalva vale quando o adquirente tem como atividade preponderante a compra e venda desses bens ou direitos, fazer locação de bens imóveis ou arrendamento mercantil. O imposto cabe ao Município onde o bem está situado.",
+    "o_que_significa": "Quando alguém transfere um imóvel para uma empresa como forma de formar o capital dela, ou quando empresas se reorganizam, em regra não há o imposto municipal sobre a transmissão.\nA exceção atinge as empresas cuja atividade principal é negociar imóveis: compra e venda, aluguel ou arrendamento mercantil. Nesses casos, o imposto incide.\nO imposto pertence ao Município onde o imóvel está.",
+    "exemplo_pratico": "Dois sócios criam uma empresa de engenharia e entregam um terreno como parte do capital. Não há o imposto sobre a transmissão. Se a empresa tivesse como atividade principal a venda de imóveis, o imposto seria devido.",
+    "atencao": "O alcance da não incidência quando o valor do imóvel supera o capital integralizado é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Realização de capital",
+      "explicacao": "entrega de bens ou dinheiro pelos sócios para formar o capital da empresa."
+     },
+     {
+      "termo": "Cisão",
+      "explicacao": "divisão de uma empresa em outras."
+     },
+     {
+      "termo": "Arrendamento mercantil",
+      "explicacao": "contrato de uso de bem com opção de compra, conhecido como leasing."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+   ],
+   "set": {
+    "atencao": "O Supremo Tribunal Federal assentou que a não incidência na integralização de capital não alcança o valor dos bens que exceder o limite do capital social a ser integralizado.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 156, § 2º): Tema 796 (RE 796.376, 2020): \"A imunidade em relação ao ITBI, prevista no inciso I do § 2º do art. 156 da Constituição Federal, não alcança o valor dos bens que exceder o limite do capital social a ser integralizado\". Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Tema 796 (RE 796.376, 2020): imunidade do ITBI limitada ao capital social a integralizar",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=156",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Tema 796",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=156",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "EXTERNAL_VERIFICATION_REQUIRED (valor excedente)"
+   ],
+   "review_reason": "O excedente ao capital integralizado estava em aberto (EXTERNAL_VERIFICATION_REQUIRED); o Tema 796 o resolveu.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O alcance da não incidência quando o valor do imóvel supera o capital integralizado é tema da camada JURISPRUDÊNCIA.",
+     "after": "O Supremo Tribunal Federal assentou que a não incidência na integralização de capital não alcança o valor dos bens que exceder o limite do capital social a ser integralizado.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+     ],
+     "after": [
+      "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 156, § 2º): Tema 796 (RE 796.376, 2020): \"A imunidade em relação ao ITBI, prevista no inciso I do § 2º do art. 156 da Constituição Federal, não alcança o valor dos bens que exceder o limite do capital social a ser integralizado\". Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.3",
+   "item": "B70",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156:PAR.3/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 3º atribui à lei complementar, quanto ao imposto sobre serviços, fixar as alíquotas máximas e mínimas, excluir da incidência as exportações de serviços para o exterior e regular a forma e as condições de concessão e revogação de isenções, incentivos e benefícios fiscais.",
+    "o_que_significa": "Cada Município cria seu imposto sobre serviços, mas a lei complementar nacional define limites comuns.\nA lei complementar fixa alíquotas mínima e máxima que valem para os Municípios em geral e pode afastar o imposto das exportações de serviços.\nA concessão de benefícios fiscais segue regras gerais definidas na lei complementar.",
+    "exemplo_pratico": "Um Município quer atrair empresas cobrando alíquota abaixo do mínimo nacional. Não pode, porque a lei complementar fixa a alíquota mínima.",
+    "atencao": "O imposto sobre serviços será gradualmente substituído pelo do art. 156-A, e a aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Alíquota mínima",
+      "explicacao": "menor percentual que pode ser cobrado."
+     },
+     {
+      "termo": "Benefício fiscal",
+      "explicacao": "vantagem concedida no pagamento de tributo, como isenção ou redução."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "O imposto sobre serviços segue as regras deste parágrafo durante a transição: tem redução gradual de 2029 a 2032 e é extinto a partir de 2033, conforme o ADCT, com substituição pelo imposto do art. 156-A.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADCT, arts. 128 e 129",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "Cronograma do ADCT explicitado.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O imposto sobre serviços será gradualmente substituído pelo do art. 156-A, e a aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+     "after": "O imposto sobre serviços segue as regras deste parágrafo durante a transição: tem redução gradual de 2029 a 2032 e é extinto a partir de 2033, conforme o ADCT, com substituição pelo imposto do art. 156-A.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "item": "B71",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.1/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 1º orienta o imposto pelo princípio da neutralidade e fixa suas características. Entre elas: incide sobre operações com bens materiais ou imateriais, inclusive direitos, e com serviços, também na importação; não incide sobre exportações, e o exportador mantém e aproveita os créditos; tem legislação única e uniforme no país, ressalvada a alíquota própria que cada ente fixa por lei específica; a alíquota de cada ente é a mesma para todas as operações, salvo hipóteses da Constituição; é cobrado pela soma das alíquotas do Estado e do Município de destino; é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar e às hipóteses previstas na Constituição; e não admite incentivos ou regimes favorecidos, salvo nos casos previstos na Constituição.",
+    "o_que_significa": "Em termos gerais, a neutralidade indica que o imposto não deve distorcer as decisões econômicas de pessoas e empresas.\nO imposto incide de forma ampla, sobre quase tudo o que é consumido, com regras iguais em todo o país.\nA alíquota de cada ente é única para todas as operações, salvo exceções previstas na própria Constituição. E o imposto não pode ser objeto de incentivos, benefícios ou regimes favorecidos, salvo nos casos previstos na própria Constituição.\nA não cumulatividade é ampla: a empresa abate o imposto cobrado em suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar e as hipóteses previstas na própria Constituição.\nO Senado fixa alíquota de referência, usada quando o ente não fixar a sua.",
+    "exemplo_pratico": "Uma empresa compra matéria-prima, energia e serviços de contabilidade. Ela pode abater o imposto cobrado em todas essas compras do imposto devido nas suas vendas.",
+    "atencao": "As regras dependem de lei complementar e se aplicam conforme regra de transição do ADCT, consultada na camada externa. As exceções à alíquota única estão previstas em outros dispositivos da Constituição.",
+    "palavras_dificeis": [
+     {
+      "termo": "Neutralidade",
+      "explicacao": "princípio pelo qual o tributo não deve distorcer as decisões econômicas."
+     },
+     {
+      "termo": "Bem imaterial",
+      "explicacao": "bem sem existência física, como um software ou um direito."
+     },
+     {
+      "termo": "Alíquota de referência",
+      "explicacao": "alíquota fixada pelo Senado e aplicada quando o ente não fixa a sua."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "As regras foram disciplinadas pela Lei Complementar nº 214, de 2025, e seguem a transição do ADCT: no exercício de 2026 o imposto está em fase de implantação. As exceções à alíquota única estão previstas em outros dispositivos da Constituição.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, arts. 1º e 2º: instituição do IBS e princípio da neutralidade",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025; ADCT, arts. 125-131",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "Coerência com o T1 aprovado do art. 156-A: o imposto já foi instituído e está em fase de implantação em 2026.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "As regras dependem de lei complementar e se aplicam conforme regra de transição do ADCT, consultada na camada externa. As exceções à alíquota única estão previstas em outros dispositivos da Constituição.",
+     "after": "As regras foram disciplinadas pela Lei Complementar nº 214, de 2025, e seguem a transição do ADCT: no exercício de 2026 o imposto está em fase de implantação. As exceções à alíquota única estão previstas em outros dispositivos da Constituição.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "item": "B72",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.5/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.5/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 5º lista matérias de que a lei complementar disporá. Entre elas: regras de distribuição da arrecadação; o regime de compensação, que pode condicionar o crédito ao efetivo recolhimento do imposto em certas condições; a forma e o prazo de ressarcimento de créditos acumulados; os critérios de definição do destino da operação; a desoneração da compra de bens de capital; os regimes aduaneiros especiais e zonas de processamento de exportação; o processo administrativo fiscal; a devolução do imposto a pessoas físicas, para reduzir desigualdades de renda; e a simplificação das obrigações acessórias.",
+    "o_que_significa": "Grande parte do funcionamento do novo imposto não está na Constituição, e sim na lei complementar. O parágrafo indica os temas que ela deve tratar.\nDois pontos se destacam. O crédito pode depender de o imposto ter sido efetivamente recolhido na etapa anterior, desde que o adquirente possa recolhê-lo ou que o recolhimento ocorra na liquidação financeira da operação. E a devolução do imposto a pessoas físicas, com o objetivo declarado de reduzir desigualdades de renda, também é definida por lei complementar.",
+    "exemplo_pratico": "Uma família de baixa renda recebe de volta parte do imposto pago em suas compras, nos limites e para os beneficiários definidos na lei complementar.",
+    "atencao": "O parágrafo indica matérias, mas o conteúdo concreto está na lei complementar, aplicada conforme regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ressarcimento de créditos",
+      "explicacao": "devolução em dinheiro de créditos que o contribuinte não conseguiu usar."
+     },
+     {
+      "termo": "Obrigação acessória",
+      "explicacao": "dever formal, como emitir nota e entregar declarações."
+     },
+     {
+      "termo": "Liquidação financeira",
+      "explicacao": "momento do pagamento da operação."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei complementar do imposto sobre bens e serviços fica na camada de legislação correlata."
+   ],
+   "set": {
+    "atencao": "As matérias listadas foram disciplinadas pela Lei Complementar nº 214, de 2025; a distribuição da arrecadação e o processo administrativo fiscal foram tratados também pela Lei Complementar nº 227, de 2026. A cobrança segue a transição do ADCT.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025 (IBS e CBS) e LC 227/2026 (Comitê Gestor, processo administrativo do IBS e distribuição da arrecadação). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025 (matérias do § 5º)",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 227/2026: distribuição da arrecadação e processo administrativo do IBS",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025; LC 227/2026",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "O conteúdo das matérias do § 5º já está em lei complementar; a ATENÇÃO deixa de remetê-lo à camada externa.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O parágrafo indica matérias, mas o conteúdo concreto está na lei complementar, aplicada conforme regra de transição do ADCT, na camada externa.",
+     "after": "As matérias listadas foram disciplinadas pela Lei Complementar nº 214, de 2025; a distribuição da arrecadação e o processo administrativo fiscal foram tratados também pela Lei Complementar nº 227, de 2026. A cobrança segue a transição do ADCT.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A lei complementar do imposto sobre bens e serviços fica na camada de legislação correlata."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025 (IBS e CBS) e LC 227/2026 (Comitê Gestor, processo administrativo do IBS e distribuição da arrecadação). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "item": "B73",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.6/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.6/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 6º determina que a lei complementar crie regimes específicos de tributação para combustíveis e lubrificantes com incidência única, com concessão de crédito nas aquisições feitas por sujeito passivo; serviços financeiros, operações com imóveis, planos de saúde e concursos de prognósticos; sociedades cooperativas, em regime optativo; hotelaria, parques de diversão e temáticos, agências de viagem e turismo, bares e restaurantes, aviação regional e atividade esportiva desenvolvida por Sociedade Anônima do Futebol; operações alcançadas por tratados internacionais; e transporte coletivo intermunicipal e interestadual rodoviário, ferroviário e hidroviário de passageiros.",
+    "o_que_significa": "Para os setores listados no parágrafo, a lei complementar cria regimes específicos.\nNesses regimes, a lei pode alterar alíquotas, bases de cálculo e regras de crédito e, em certos casos, deixar de aplicar regras gerais do § 1º, como a alíquota única de cada ente ou, em relação aos adquirentes dos bens e serviços, a regra do crédito.\nNos combustíveis, o imposto incide uma única vez, com alíquotas uniformes no país e específicas por unidade de medida.\nPara as cooperativas, o regime é opcional e pode afastar o imposto nas operações entre a cooperativa e seus associados.",
+    "exemplo_pratico": "Um banco não segue exatamente a mesma regra de cálculo do comércio: a lei complementar pode prever, para serviços financeiros, que o imposto incida sobre a receita, com alíquota uniforme no país.",
+    "atencao": "A lista de setores é a da Constituição; a lei complementar define o regime de cada um. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Regime específico",
+      "explicacao": "conjunto de regras próprias para um setor."
+     },
+     {
+      "termo": "Concurso de prognósticos",
+      "explicacao": "loterias e apostas."
+     },
+     {
+      "termo": "Creditamento",
+      "explicacao": "direito de abater o imposto pago nas etapas anteriores."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "A lista de setores é a da Constituição. Os regimes específicos foram disciplinados pela Lei Complementar nº 214, de 2025, e se aplicam conforme a transição do ADCT.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, Título V (regimes específicos do IBS e da CBS, a partir do art. 172). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, Título V: regimes específicos do IBS e da CBS",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, Título V",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "Os regimes específicos já estão disciplinados (LC 214/2025, Título V).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A lista de setores é a da Constituição; a lei complementar define o regime de cada um. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+     "after": "A lista de setores é a da Constituição. Os regimes específicos foram disciplinados pela Lei Complementar nº 214, de 2025, e se aplicam conforme a transição do ADCT.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, Título V (regimes específicos do IBS e da CBS, a partir do art. 172). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "item": "B74",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.9/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.9/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 9º trata das mudanças na legislação federal que aumentem ou diminuam a arrecadação do imposto. Elas devem ser compensadas pelo Senado, que eleva ou reduz as alíquotas de referência para preservar a arrecadação dos entes, nos termos de lei complementar, e só entram em vigor quando esse ajuste começar a produzir efeitos. O § 10 permite que Estados, Distrito Federal e Municípios vinculem suas alíquotas à de referência. O § 11 exige estimativa de impacto nas alíquotas de referência para que projeto de lei complementar que altere a arrecadação seja apreciado.",
+    "o_que_significa": "O imposto pertence a Estados e Municípios, mas suas regras gerais estão em lei complementar federal. Pelo bloco, mudanças federais que alterem a receita dos entes vêm acompanhadas de compensação.\nSe uma lei federal diminui a arrecadação, por exemplo com nova redução para um setor, o Senado eleva a alíquota de referência para compensar. A mudança só vale quando o ajuste também valer.\nOs entes podem optar por vincular a sua alíquota à de referência.",
+    "exemplo_pratico": "Uma lei complementar amplia a redução do imposto para certo produto. Antes de ser apreciado, o projeto precisa vir com estimativa do impacto. Aprovado, o Senado ajusta a alíquota de referência, e a redução só começa a valer junto com esse ajuste.",
+    "atencao": "O texto declara a finalidade de preservar a arrecadação das esferas federativas. Os detalhes do ajuste estão na lei complementar e se aplicam conforme regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Alíquota de referência",
+      "explicacao": "alíquota fixada pelo Senado e aplicada quando o ente não fixa a sua."
+     },
+     {
+      "termo": "Estimativa de impacto",
+      "explicacao": "cálculo prévio do efeito de uma medida sobre a arrecadação."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "O texto declara a finalidade de preservar a arrecadação das esferas federativas. Os detalhes do ajuste foram disciplinados pela Lei Complementar nº 214, de 2025: as alíquotas de referência são fixadas por resolução do Senado Federal, para o imposto do art. 156-A a partir de 2029.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 18 (alíquotas de referência fixadas por resolução do Senado; IBS de 2029 a 2035) e 19 (compensação de alteração na legislação federal que reduza ou eleve a arrecadação). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, arts. 18 e 19: alíquotas de referência e compensação",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, arts. 18 e 19",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "O ajuste das alíquotas de referência já está disciplinado (LC 214/2025, arts. 18 e 19).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O texto declara a finalidade de preservar a arrecadação das esferas federativas. Os detalhes do ajuste estão na lei complementar e se aplicam conforme regra de transição do ADCT, na camada externa.",
+     "after": "O texto declara a finalidade de preservar a arrecadação das esferas federativas. Os detalhes do ajuste foram disciplinados pela Lei Complementar nº 214, de 2025: as alíquotas de referência são fixadas por resolução do Senado Federal, para o imposto do art. 156-A a partir de 2029.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 18 (alíquotas de referência fixadas por resolução do Senado; IBS de 2029 a 2035) e 19 (compensação de alteração na legislação federal que reduza ou eleve a arrecadação). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "item": "B75",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.13/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156-A:PAR.13/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 13 torna obrigatória a devolução do imposto prevista no § 5º, VIII, quando energia elétrica ou gás liquefeito de petróleo forem fornecidos ao consumidor de baixa renda. A lei complementar pode determinar que a devolução seja calculada e concedida no momento da cobrança.",
+    "o_que_significa": "A devolução do imposto a pessoas físicas é, em geral, regulada por lei complementar. Para dois itens essenciais, o texto vai além e a torna obrigatória: energia elétrica e gás de cozinha fornecidos a consumidores de baixa renda.\nA lei complementar pode prever que a devolução ocorra já na conta, no momento da cobrança, em vez de depois.",
+    "exemplo_pratico": "Uma família de baixa renda recebe a conta de luz já com o valor da devolução do imposto descontado, se a lei complementar adotar essa forma.",
+    "atencao": "Quem é consumidor de baixa renda e o valor da devolução são definidos na lei complementar. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Gás liquefeito de petróleo",
+      "explicacao": "o gás de cozinha vendido em botijões."
+     },
+     {
+      "termo": "Baixa renda",
+      "explicacao": "condição econômica definida em lei para fins de benefícios."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "A Lei Complementar nº 214, de 2025, define os beneficiários, a partir do cadastro oficial de programas sociais, e as regras da devolução. Nas contas de energia elétrica, a devolução é concedida no momento da cobrança.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 112 e seguintes: devolução da CBS e do IBS a pessoas físicas de famílias de baixa renda inscritas no CadÚnico (renda familiar mensal per capita de até meio salário-mínimo); no fornecimento de energia elétrica, água, esgoto, gás canalizado e telecomunicações, devolução no momento da cobrança. Regra específica do gás liquefeito de petróleo não lida nesta rodada. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, arts. 112 e seguintes: devolução a famílias de baixa renda (CadÚnico); devolução na cobrança da energia elétrica",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 214/2025, arts. 112 e seguintes",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "Quem é de baixa renda e a forma da devolução já estão em lei complementar; a ATENÇÃO deixa de tratá-los como futuros.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "Quem é consumidor de baixa renda e o valor da devolução são definidos na lei complementar. A aplicação no tempo depende de regra de transição do ADCT, na camada externa.",
+     "after": "A Lei Complementar nº 214, de 2025, define os beneficiários, a partir do cadastro oficial de programas sociais, e as regras da devolução. Nas contas de energia elétrica, a devolução é concedida no momento da cobrança.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 112 e seguintes: devolução da CBS e do IBS a pessoas físicas de famílias de baixa renda inscritas no CadÚnico (renda familiar mensal per capita de até meio salário-mínimo); no fornecimento de energia elétrica, água, esgoto, gás canalizado e telecomunicações, devolução no momento da cobrança. Regra específica do gás liquefeito de petróleo não lida nesta rodada. Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "item": "B76",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.156-B/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.156-B/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 156-B determina que Estados, Distrito Federal e Municípios exerçam certas competências sobre o imposto do art. 156-A somente pelo Comitê Gestor do Imposto sobre Bens e Serviços, de forma integrada. São elas: editar regulamento único e uniformizar a interpretação do imposto; arrecadar, compensar e distribuir o produto da arrecadação; e decidir o contencioso administrativo. Os parágrafos tratam, entre outros temas, da natureza do Comitê, da representação paritária dos entes e da alternância na presidência, do financiamento e do controle. Também tratam da atuação das administrações tributárias e procuradorias dos Estados e Municípios, da composição e das deliberações e da cooperação com a administração tributária da União.",
+    "o_que_significa": "Como o imposto é compartilhado, alguém precisa administrá-lo de forma única. Esse papel é do Comitê Gestor.\nO Comitê é entidade pública sob regime especial, com independência técnica, administrativa, orçamentária e financeira.\nEle não substitui as administrações tributárias: a fiscalização, o lançamento e a cobrança continuam com cada ente, na forma da lei complementar, sob coordenação do Comitê.\nO Comitê também compartilha informações com a administração tributária da União, para harmonizar o imposto e a contribuição federal equivalente.",
+    "exemplo_pratico": "Uma empresa tem dúvida sobre como aplicar o imposto. A interpretação é dada pelo regulamento único editado pelo Comitê Gestor, válido em todo o país, e não por cada Estado ou Município separadamente.",
+    "atencao": "A composição e as regras de deliberação (§§ 3º e 4º) têm explicação própria. A instalação e o funcionamento do Comitê dependem de lei complementar e de regra de transição do ADCT, consultadas na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Contencioso administrativo",
+      "explicacao": "julgamento de disputas tributárias fora do Judiciário."
+     },
+     {
+      "termo": "Regulamento único",
+      "explicacao": "norma de execução comum a todos os entes."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "atencao": "A composição e as regras de deliberação (§§ 3º e 4º) têm explicação própria. O Comitê Gestor foi instituído pela Lei Complementar nº 227, de 2026, que também disciplina o processo administrativo do imposto e a distribuição da arrecadação.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 227/2026 institui o Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS) e dispõe sobre o processo administrativo tributário do IBS e a distribuição do produto da arrecadação aos entes federativos; em 2026 a arrecadação de teste do IBS financia o Comitê (LC 214/2025, art. 343, parágrafo único). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 227/2026: institui o CGIBS, o processo administrativo do IBS e a distribuição da arrecadação",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 227/2026; LC 214/2025, art. 343",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "A instalação do Comitê Gestor não depende mais de lei futura: a LC 227/2026 o instituiu; coerente com o T1 aprovado do art. 156-A.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A composição e as regras de deliberação (§§ 3º e 4º) têm explicação própria. A instalação e o funcionamento do Comitê dependem de lei complementar e de regra de transição do ADCT, consultadas na camada externa.",
+     "after": "A composição e as regras de deliberação (§§ 3º e 4º) têm explicação própria. O Comitê Gestor foi instituído pela Lei Complementar nº 227, de 2026, que também disciplina o processo administrativo do imposto e a distribuição da arrecadação.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 227/2026 institui o Comitê Gestor do Imposto sobre Bens e Serviços (CGIBS) e dispõe sobre o processo administrativo tributário do IBS e a distribuição do produto da arrecadação aos entes federativos; em 2026 a arrecadação de teste do IBS financia o Comitê (LC 214/2025, art. 343, parágrafo único). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "item": "B77",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.159:INC.I/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.159:INC.I/BASE/2",
+   "original_content": {
+    "o_que_diz": "O inciso I determina que a União entregue cinquenta por cento da arrecadação do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII. Entre outras destinações, a maior parte vai, pelas alíneas a e b, ao Fundo de Participação dos Estados e do Distrito Federal e ao Fundo de Participação dos Municípios. Três por cento financiam o setor produtivo das Regiões Norte, Nordeste e Centro-Oeste, por instituições financeiras regionais, ficando assegurada ao semiárido do Nordeste a metade dos recursos da região, na forma da lei. Há ainda parcelas adicionais de um por cento ao Fundo dos Municípios, entregues em julho, setembro e dezembro.",
+    "o_que_significa": "O inciso divide metade da arrecadação de três impostos federais.\nOs dois fundos de participação recebem a maior parte e distribuem os recursos entre Estados e Municípios segundo critérios definidos em lei complementar (art. 161, II).\nUma parcela vai para o desenvolvimento das regiões menos favorecidas, por meio de instituições financeiras regionais.\nOs Municípios recebem ainda parcelas extras em meses fixos do ano.",
+    "exemplo_pratico": "Em dezembro, além da cota mensal, os Municípios recebem a parcela adicional de um por cento do Fundo de Participação dos Municípios prevista na alínea d.",
+    "atencao": "Os percentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar. A inclusão do imposto do art. 153, VIII, segue regra de transição do ADCT, na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Decêndio",
+      "explicacao": "período de dez dias."
+     },
+     {
+      "termo": "Rateio",
+      "explicacao": "divisão proporcional de um valor."
+     },
+     {
+      "termo": "Semiárido",
+      "explicacao": "região de clima seco, com poucas chuvas."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei complementar com os critérios de rateio dos fundos de participação fica na camada de legislação correlata."
+   ],
+   "set": {
+    "atencao": "Os percentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar. O imposto do art. 153, VIII, instituído pela Lei Complementar nº 214, de 2025, é cobrado a partir de 2027, quando sua arrecadação passa a integrar a base deste inciso.",
+    "external_layer_notes": [
+     "A lei complementar com os critérios de rateio dos fundos de participação fica na camada de legislação correlata.",
+     "Verificado na fonte oficial (Planalto): art. 159, I, na redação da EC 132/2023 (50%, alíneas a a f conferidas); LC 214/2025, art. 409; ADCT, art. 126, I, b (cobrança do imposto do art. 153, VIII, a partir de 2027). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 214/2025, art. 409; ADCT, art. 126, I, b: imposto do art. 153, VIII, cobrado a partir de 2027",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "art. 159, I (EC 132/2023); LC 214/2025, art. 409; ADCT, art. 126",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+   ],
+   "review_reason": "Percentuais conferidos no texto vigente (50%; alíneas a a f); a ATENÇÃO deixa de tratar a inclusão do imposto do art. 153, VIII, como transição externa.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "Os percentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar. A inclusão do imposto do art. 153, VIII, segue regra de transição do ADCT, na camada externa.",
+     "after": "Os percentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar. O imposto do art. 153, VIII, instituído pela Lei Complementar nº 214, de 2025, é cobrado a partir de 2027, quando sua arrecadação passa a integrar a base deste inciso.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A lei complementar com os critérios de rateio dos fundos de participação fica na camada de legislação correlata."
+     ],
+     "after": [
+      "A lei complementar com os critérios de rateio dos fundos de participação fica na camada de legislação correlata.",
+      "Verificado na fonte oficial (Planalto): art. 159, I, na redação da EC 132/2023 (50%, alíneas a a f conferidas); LC 214/2025, art. 409; ADCT, art. 126, I, b (cobrança do imposto do art. 153, VIII, a partir de 2027). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.167",
+   "item": "B78",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.167/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.167/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 167 lista vedações em matéria orçamentária. Entre elas: iniciar programas ou projetos fora da lei orçamentária; realizar despesas acima dos créditos; fazer operações de crédito acima das despesas de capital, ressalvadas as autorizadas por créditos com finalidade precisa aprovados por maioria absoluta; vincular receita de impostos, ressalvadas as exceções do inciso IV; abrir créditos suplementares ou especiais sem autorização e sem indicar recursos; remanejar recursos sem autorização; conceder créditos ilimitados; criar fundos sem autorização; e usar contribuições previdenciárias e recursos de regimes próprios para outras despesas. Os parágrafos tratam de investimentos plurianuais, vigência de créditos, créditos extraordinários, vinculações para garantia, remanejamento em ciência e tecnologia e encargos impostos por lei sem fonte.",
+    "o_que_significa": "O artigo funciona como um conjunto de regras de disciplina do orçamento.\nVárias vedações protegem o papel do Legislativo: em regra, o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa; o § 5º abre exceção para ciência, tecnologia e inovação.\nO inciso III traz a chamada regra de ouro: o ente não pode se endividar além do que investe, salvo autorização por maioria absoluta.\nO inciso IV impede amarrar a receita de impostos a destinações específicas, com exceções como saúde e educação.\nOutros incisos restringem o uso dos recursos da previdência ao pagamento de benefícios e, no regime próprio, também às despesas de organização e funcionamento.",
+    "exemplo_pratico": "Um governador quer transferir recursos da área de transporte para a de cultura no meio do ano. Sem autorização legislativa prévia, o remanejamento é proibido pelo inciso VI.",
+    "atencao": "O inciso IV e os §§ 1º, 3º e 7º têm explicação própria. A fonte oficial anota o inciso III e o § 3º com remissões a emendas constitucionais sobre períodos de calamidade, a conferir na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Crédito orçamentário",
+      "explicacao": "autorização de despesa prevista no orçamento."
+     },
+     {
+      "termo": "Remanejamento",
+      "explicacao": "mudança de recursos de uma programação ou órgão para outro."
+     },
+     {
+      "termo": "Despesa de capital",
+      "explicacao": "gasto com investimentos, como obras e equipamentos."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A fonte oficial remete o inciso III à Emenda Constitucional nº 106, de 2020, e o § 3º à Emenda Constitucional nº 109, de 2021, na camada externa."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Visão geral das vedações sem reduzi-las a regra única; regra de ouro, vinculação de impostos e previdência corretas.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.1",
+   "item": "B79",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.167:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.167:PAR.1/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 1º proíbe começar investimento que dure mais de um exercício financeiro se ele não tiver sido incluído antes no plano plurianual ou se não houver lei autorizando essa inclusão. A conduta contrária é crime de responsabilidade.",
+    "o_que_significa": "Obras e investimentos que duram mais de um ano precisam estar no planejamento de médio prazo antes de começar.\nSe não estiverem no plano plurianual, só podem ser iniciados se uma lei autorizar a inclusão.\nA consequência do descumprimento é grave: o texto qualifica a conduta como crime de responsabilidade.",
+    "exemplo_pratico": "Um prefeito inicia a construção de um hospital que levará três anos, sem que a obra conste do plano plurianual e sem lei autorizando a inclusão. A conduta configura crime de responsabilidade, nos termos da lei.",
+    "atencao": "O processo e as penas do crime de responsabilidade são definidos em lei especial, na camada de legislação correlata.",
+    "palavras_dificeis": [
+     {
+      "termo": "Crime de responsabilidade",
+      "explicacao": "infração político-administrativa de autoridades, que pode levar à perda do cargo."
+     },
+     {
+      "termo": "Exercício financeiro",
+      "explicacao": "período anual do orçamento."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Plano plurianual, lei autorizativa e crime de responsabilidade corretos (SIMPLE).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "item": "B80",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.167-B/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.167-B/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 167-B trata da calamidade pública que alcança todo o país, decretada pelo Congresso por iniciativa privativa do Presidente da República. Enquanto ela vigorar, a União deve adotar um regime extraordinário, nas áreas fiscal, financeira e de contratações, para atender às necessidades que ela gera. Esse regime vale apenas no que a urgência tornar incompatível com o regime comum, nos termos dos arts. 167-C a 167-G.",
+    "o_que_significa": "Em uma calamidade de alcance nacional, as regras fiscais e de contratação comuns podem ser lentas demais. O artigo cria um regime especial para a União.\nO texto fixa requisitos: calamidade nacional, decretada pelo Congresso por iniciativa exclusiva do Presidente. E o regime extraordinário se limita ao que a urgência tornar incompatível com o regime regular.\nOs arts. 167-C a 167-G detalham as flexibilizações.",
+    "exemplo_pratico": "Diante de uma pandemia que atinge todo o país, o Presidente propõe e o Congresso decreta calamidade pública nacional. A União passa a usar regras simplificadas apenas no que for necessário para enfrentar a situação.",
+    "atencao": "O regime é da União e depende de decreto do Congresso. A flexibilização é limitada ao que a urgência exigir.",
+    "palavras_dificeis": [
+     {
+      "termo": "Calamidade pública",
+      "explicacao": "situação grave que afeta a vida da população e exige resposta excepcional."
+     },
+     {
+      "termo": "Regime extraordinário",
+      "explicacao": "conjunto de regras especiais que valem só durante a situação excepcional."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Calamidade nacional decretada pelo Congresso por iniciativa privativa do Presidente; regime extraordinário da União limitado à urgência; não o confunde com estado de defesa ou de sítio.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.169",
+   "item": "B81",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.169/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.169/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 169 proíbe que a União, os Estados, o Distrito Federal e os Municípios gastem com pessoal ativo, inativo e pensionistas acima dos limites fixados em lei complementar. Os parágrafos exigem dotação prévia e autorização na lei de diretrizes orçamentárias para aumentos e admissões, ressalvadas as estatais quanto à autorização, preveem a suspensão de repasses federais ou estaduais a quem não se adaptar no prazo e estabelecem medidas sucessivas para reduzir a despesa: corte de cargos em comissão e funções de confiança, exoneração de não estáveis e, se preciso, perda do cargo de servidor estável.",
+    "o_que_significa": "O artigo coloca um teto nos gastos com servidores, aposentados e pensionistas. O valor do teto não está na Constituição, e sim na lei complementar.\nPara conceder aumentos, criar cargos ou contratar, é preciso ter dinheiro previsto no orçamento e autorização na lei de diretrizes orçamentárias.\nSe o ente ultrapassar o limite, a Constituição define uma ordem de medidas para voltar ao teto, que começa pelos cargos de livre nomeação e só chega aos servidores estáveis em último caso.",
+    "exemplo_pratico": "Um Município gasta com pessoal acima do limite da lei complementar. Deve reduzir em pelo menos vinte por cento o gasto com cargos em comissão e funções de confiança e exonerar servidores não estáveis.",
+    "atencao": "Os §§ 1º e 3º a 7º têm explicação própria. A fonte oficial anota o § 1º com remissão a emenda constitucional sobre período de calamidade, a conferir na camada externa.",
+    "palavras_dificeis": [
+     {
+      "termo": "Pessoal inativo",
+      "explicacao": "servidores aposentados."
+     },
+     {
+      "termo": "Cargo em comissão",
+      "explicacao": "cargo de livre nomeação e exoneração, para direção, chefia e assessoramento."
+     },
+     {
+      "termo": "Servidor estável",
+      "explicacao": "servidor efetivo que adquiriu a estabilidade."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei complementar que fixa os limites de despesa com pessoal fica na camada de legislação correlata. A fonte oficial remete o § 1º à Emenda Constitucional nº 106, de 2020."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Limite em lei complementar, dotação e autorização na lei de diretrizes, suspensão de repasses e ordem constitucional das medidas corretos.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.169:PAR.3",
+   "item": "B82",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.169:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.169:PAR.3/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 3º determina que, para cumprir os limites no prazo da lei complementar, os entes reduzam em pelo menos vinte por cento as despesas com cargos em comissão e funções de confiança e exonerem os servidores não estáveis. O § 4º permite, se essas medidas forem insuficientes, a perda do cargo pelo servidor estável, desde que ato normativo motivado de cada Poder especifique a atividade, o órgão ou a unidade atingidos. O § 5º garante indenização de um mês de remuneração por ano de serviço. O § 6º considera extinto o cargo e proíbe criar cargo, emprego ou função com atribuições iguais ou assemelhadas por quatro anos. O § 7º remete à lei federal as normas gerais do § 4º.",
+    "o_que_significa": "O bloco define uma ordem para reduzir gastos com pessoal.\nPrimeiro vêm os cortes em cargos de livre nomeação e a saída dos servidores não estáveis.\nSó se isso não bastar, o servidor estável pode perder o cargo. Mesmo nesse caso, há garantias: ato motivado que indique a área atingida, indenização e extinção do cargo, sem possibilidade de recriá-lo por quatro anos.\nA lei federal fixa as normas gerais para essa medida extrema.",
+    "exemplo_pratico": "Depois de cortar cargos em comissão e exonerar não estáveis, um Estado ainda está acima do limite. O Executivo edita ato motivado indicando o órgão atingido; os servidores estáveis exonerados recebem indenização, e os cargos são extintos.",
+    "atencao": "A perda do cargo de servidor estável é a última medida e depende de ato motivado. A proibição de recriar o cargo dura quatro anos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Exoneração",
+      "explicacao": "desligamento do servidor do cargo, sem caráter de punição."
+     },
+     {
+      "termo": "Função de confiança",
+      "explicacao": "função de direção, chefia ou assessoramento exercida por servidor efetivo."
+     },
+     {
+      "termo": "Ato normativo motivado",
+      "explicacao": "ato geral que expõe as razões da decisão."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei federal de normas gerais sobre a perda de cargo por excesso de despesa fica na camada de legislação correlata."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Ordem das medidas, pelo menos vinte por cento, ato normativo motivado, indenização e vedação de recriar o cargo por quatro anos corretos.",
+   "changes": []
+  }
+ ]
+}

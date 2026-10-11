@@ -331,9 +331,10 @@ def full_d(doc, c, title, juris_recs):
     xs = sorted([x for x in doc['rows'] if x['queue'] == 'D_FULL_HUMAN_REVIEW'], key=lambda x: (x['sub_block'], c.ctx.order[x['target_id']]))
     n = len(doc['rows'])
     L = [f'# {title} — REVISÃO HUMANA COMPLETA (fila D, segundo passe)', '',
-         f"Lote `{c.spec['batch_id']}` · {len(xs)} de {n} itens ({100 * len(xs) / n:.1f}%) · nenhum aprovado. Só itens que exigem raciocínio jurídico "
-         'profundo: LEGAL_RISK HIGH depois da compressão de risco com evidência versionada. Para cada item: Lei Seca relevante, T1 completo, motivo '
-         'exato, afirmação que depende da revisão, evidência local, evidência externa faltante e decisão sugerida.', '', '## Índice', '']
+         f"Lote `{c.spec['batch_id']}` · " + (f"{len(xs)} de {n} itens ({100 * len(xs) / n:.1f}%) · nenhum aprovado. Só itens que exigem raciocínio "
+         'jurídico profundo: LEGAL_RISK HIGH depois da compressão de risco com evidência versionada. Para cada item: Lei Seca relevante, T1 completo, '
+         'motivo exato, afirmação que depende da revisão, evidência local, evidência externa faltante e decisão sugerida.' if n else
+                                                'nenhum item pendente nesta fila.'), '', '## Índice', '']
     items = [(x, c.records[x['target_id']], d_item(x, c.records[x['target_id']], c, juris_recs)) for x in xs]
     L += [f"{i}. [{x['sub_block']}] `{x['target_id']}` — {x['title']} · {', '.join(x['legal_rules'])} · sugestão: {it['decision']}"
           for i, (x, r, it) in enumerate(items, 1)]
@@ -427,7 +428,8 @@ def report_section(doc, pre, log, pre_chars=None):
             L.append(f"| {q} | {pre['counts'][q]} | {doc['counts'][q]} |")
         for k in ('LOW', 'MEDIUM', 'HIGH'):
             L.append(f"| LEGAL_RISK {k} | {pre['legal_risk_counts'].get(k, 0)} | {doc['legal_risk_counts'].get(k, 0)} |")
-        L.append(f"| D (%) | {100 * pre['counts']['D_FULL_HUMAN_REVIEW'] / len(pre['rows']):.1f}% | {100 * doc['counts']['D_FULL_HUMAN_REVIEW'] / len(doc['rows']):.1f}% |")
+        pct = lambda d: f"{100 * d['counts']['D_FULL_HUMAN_REVIEW'] / len(d['rows']):.1f}%" if d['rows'] else 'N/A'  # noqa: E731
+        L.append(f"| D (%) | {pct(pre)} | {pct(doc)} |")
         if pre_chars:
             L.append(f"| Caracteres apresentados ao humano | {pre_chars:,} | {doc['metrics']['presented_chars']:,} |".replace(',', '.'))
         L.append('')

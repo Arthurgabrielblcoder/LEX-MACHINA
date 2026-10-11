@@ -1,0 +1,1633 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "review_date": "2026-10-10",
+ "review_scope": "CF88_MACRO07_TRIAGE_QUEUE_B_PART2",
+ "reviewer_decision": "HUMAN_PREAUTHORIZED_REVIEW_QUEUE_B_PART2",
+ "reviewer": "revisão jurídica assistida dos itens B16-B45 da fila B do Macro07, sob pré-autorização humana de Arthur (usuário do projeto) para APPROVE e ADJUST_THEN_APPROVE (política de velocidade de 2026-10-10)",
+ "approval_method": "ASSISTED_RISK_BASED_HUMAN_REVIEW",
+ "standard": "ENTENDA-T1 A6 (padrão congelado e calibrado)",
+ "review_status": "ROUND_REVIEW_COMPLETED",
+ "origin": "MACRO07_COMPACT_AB_REVIEW.md (fila B_CLEAN_MEDIUM, itens B16-B45; cópia preservada em history/pre_round_b2)",
+ "original_drafts": "drafts/MACRO07_?_DRAFTS.json (saída do segundo passe; inalterados: a rodada aplica as seções \"set\" sobre original_content)",
+ "original_evidence_sha256": {
+  "history/pre_round_b2/CF88_MACRO_07_PRE_ROUND_B2.entenda.jsonl": "a8218adbc9fd240dbfd84e69eca431846bc051818780447a70b01d963c51f745",
+  "history/pre_round_b2/MACRO07_TRIAGE_PRE_ROUND_B2.json": "913af3ae5ebe38e3cae7fc2b7c3d13bf7e9819755dd5abc754daa4f34797a819",
+  "history/pre_round_b2/MACRO07_COMPACT_AB_REVIEW_PRE_ROUND_B2.md": "d449ced7e05345a5c83aad48e473f033ee248c2949f96bbcb62be3591938c772",
+  "history/pre_round_b2/BACKLOG_INPUT_PRE_ROUND_B2.json": "f81fad3d3415a1a68d0a4e677619c42df8bd5bb80aee00677eba520199847265"
+ },
+ "decision_counts": {
+  "APPROVED": 22,
+  "APPROVED_AFTER_ADJUSTMENT": 8,
+  "REJECTED": 0
+ },
+ "human_decision_counts": {
+  "ADJUST_THEN_APPROVE": 8,
+  "APPROVE": 22
+ },
+ "external_sources_policy": "fontes oficiais conferidas na revisão e aprovadas pela revisão humana (HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE em human_review.content_provenance); a ingestão na camada externa/JURISPRUDÊNCIA segue PENDING_EXTERNAL_INGESTION",
+ "official_sources_verified": [
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=103",
+   "used_for": [
+    "ADI 1.254 AgR (1996) e ADI 4.983 (2016)",
+    "ADI 1.254 AgR; ADI 4.983; ADI 1.616"
+   ]
+  },
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=129",
+   "used_for": [
+    "ADI 2.943, ADI 3.309 e ADI 3.318 (2024)",
+    "Tema 184 (RE 593.727, 2015)",
+    "Tema 184; ADI 2.943; ADI 3.309; ADI 3.318"
+   ]
+  },
+  {
+   "source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=130",
+   "used_for": [
+    "ADI 789, ADI 3.315 (2008), ADI 3.804 (2021) e ADI 4.427 (2023)",
+    "ADI 789; ADI 3.315; ADI 3.804; ADI 4.427"
+   ]
+  },
+  {
+   "source": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2267506",
+   "used_for": [
+    "ADI 3392 (STF)"
+   ]
+  },
+  {
+   "source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11417.htm",
+   "used_for": [
+    "Lei 11.417/2006, art. 7º",
+    "Lei 11.417/2006, art. 7º, § 1º"
+   ]
+  },
+  {
+   "source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm",
+   "used_for": [
+    "LC 75/1993, art. 156",
+    "LC 75/1993, art. 156, caput e § 2º"
+   ]
+  }
+ ],
+ "source_annotation_anomalies": [
+  {
+   "target_id": "CF88:ART.98:PAR.1",
+   "annotation": "Vide ADIN 3392",
+   "classification": "SOURCE_ANNOTATION_ANOMALY_CANDIDATE",
+   "finding": "confirma o padrão de MB07-15 (anotação genérica da EC 45); o T1 do art. 98 não a usa; fonte congelada não alterada",
+   "backlog": "MB07-15"
+  },
+  {
+   "target_id": "CF88:ART.102:PAR.2",
+   "annotation": "Vide ADIN 3392",
+   "classification": "SOURCE_ANNOTATION_ANOMALY_CANDIDATE",
+   "finding": "já registrada em MB07-12; o T1 do art. 102 (visão geral) não reintroduz a ADI 3392",
+   "backlog": "MB07-12"
+  }
+ ],
+ "note": "Segunda rodada da fila B do Macro07: itens B16-B45 (30), processados sob pré-autorização humana; nenhum item HELD_FOR_HUMAN_REVIEW. B46-B82 e a fila A (143) NÃO foram decididos e continuam PENDING_HUMAN_REVIEW.",
+ "decisions": [
+  {
+   "target_id": "CF88:ART.97",
+   "item": "B16",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.97/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.97/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 97 exige o voto da maioria absoluta dos membros do tribunal, ou dos membros do seu órgão especial, para que o tribunal reconheça que uma lei ou um ato normativo do poder público é inconstitucional.",
+    "o_que_significa": "É a chamada cláusula de reserva de plenário. Quando um tribunal vai afastar uma lei por considerá-la contrária à Constituição, a decisão não pode ser tomada por uma turma ou câmara isolada.\nA declaração precisa do voto da maioria absoluta do tribunal inteiro ou do seu órgão especial, que existe nos tribunais maiores (art. 93, XI).",
+    "exemplo_pratico": "Em um recurso, uma câmara do Tribunal de Justiça entende que uma lei municipal é inconstitucional. Ela não pode declarar isso sozinha: envia a questão ao órgão especial, que decide pela maioria absoluta dos seus membros.",
+    "atencao": "O artigo se dirige aos tribunais e não trata da decisão do juiz de primeiro grau. As situações em que o órgão fracionário fica dispensado de remeter a questão são tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Reserva de plenário",
+      "explicacao": "exigência de decisão do tribunal pleno ou do órgão especial para declarar inconstitucionalidade."
+     },
+     {
+      "termo": "Órgão fracionário",
+      "explicacao": "turma, câmara ou seção de um tribunal, que reúne só parte dos seus membros."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "As hipóteses em que o órgão fracionário pode deixar de submeter a questão ao plenário ou ao órgão especial são tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Cláusula de reserva de plenário correta: maioria absoluta, plenário ou órgão especial, declaração de inconstitucionalidade; não alcança o juiz de primeiro grau.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.98",
+   "item": "B17",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.98/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.98/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 98 obriga os Estados e a União (esta, no Distrito Federal e nos Territórios) a criar juizados especiais, voltados a causas cíveis simples e a infrações penais leves (inciso I), e a justiça de paz, formada por cidadãos eleitos. O § 1º remete à lei federal os juizados no âmbito da Justiça Federal, e o § 2º destina as custas e emolumentos ao custeio das atividades da Justiça.",
+    "o_que_significa": "O artigo cria dois instrumentos de Justiça mais próxima do cidadão. Os juizados especiais resolvem causas mais simples por procedimento rápido e informal (inciso I, com explicação própria).\nA justiça de paz é formada por cidadãos eleitos para mandato de quatro anos. Ela celebra casamentos, verifica o processo de habilitação e faz conciliação, sem poder de julgar.\nO § 2º impede que as custas pagas à Justiça sejam usadas fora das atividades específicas do Judiciário.",
+    "exemplo_pratico": "Um casal procura o juiz de paz para celebrar o casamento. Se houver impugnação no processo de habilitação, o juiz de paz pode examiná-la, mas não decide disputas judiciais entre partes.",
+    "atencao": "O juiz de paz exerce atribuições conciliatórias sem caráter jurisdicional: não profere sentenças.",
+    "palavras_dificeis": [
+     {
+      "termo": "Justiça de paz",
+      "explicacao": "função exercida por cidadão eleito para celebrar casamentos e conciliar, sem julgar processos."
+     },
+     {
+      "termo": "Emolumentos",
+      "explicacao": "valores cobrados por atos de cartórios e serviços ligados à Justiça."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADI 3392 (STF): assunto oficial \"Sentença Normativa\", improcedente em 2020; a anotação \"Vide ADIN 3392\" do art. 98, § 1º, é marcação genérica da impugnação à EC 45, não jurisprudência sobre juizados federais",
+     "official_source": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=2267506",
+     "human_reason_code": "SOURCE_ANNOTATION_ANOMALY_CANDIDATE",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JUDICIAL_REVIEW_CONTEXT_ONLY (Vide ADIN 3392 no § 1º)"
+   ],
+   "review_reason": "Juizados e justiça de paz corretos (eleição, mandato, atribuições conciliatórias sem caráter jurisdicional). A anotação \"Vide ADIN 3392\" do § 1º não é usada (MB07-15).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.1",
+   "item": "B18",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "exemplo_pratico"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.100:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.100:PAR.1/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 1º define os débitos de natureza alimentícia: os que decorrem de relação de trabalho ou previdenciária, mesmo de natureza tributária, inclusive a devolução de tributo cobrado indevidamente sobre remuneração ou proventos, e as indenizações por morte ou invalidez baseadas em responsabilidade civil. Os débitos alimentícios são pagos com preferência sobre os demais débitos, exceto sobre os do § 2º. O § 2º dá preferência ainda maior aos débitos alimentícios de titulares com sessenta anos, portadores de doença grave ou pessoas com deficiência, até o triplo do valor de pequeno valor, admitido o fracionamento; o restante segue a ordem cronológica.",
+    "o_que_significa": "Há três níveis na fila. No topo está a superpreferência do § 2º: créditos alimentares de idosos, doentes graves e pessoas com deficiência, até um teto. Depois vêm os demais créditos alimentares. Por fim, os créditos comuns.\nA superpreferência tem limite: só a parte até o triplo do valor fixado em lei para as obrigações de pequeno valor recebe o tratamento especial. O que passar disso volta para a ordem cronológica.\nO § 2º alcança os titulares originários e também os que receberam o crédito por sucessão hereditária.",
+    "exemplo_pratico": "Uma aposentada de setenta anos tem precatório de natureza previdenciária. Uma parte do crédito, até o triplo do limite de pequeno valor, é paga antes dos demais créditos. O saldo restante é pago depois, na ordem cronológica.",
+    "atencao": "Doença grave e deficiência são definidas na forma da lei. A idade de sessenta anos e o momento em que ela deve ser verificada são temas que dependem da lei e da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Crédito alimentar",
+      "explicacao": "crédito ligado à subsistência, como salários, aposentadorias e pensões."
+     },
+     {
+      "termo": "Repetição de indébito",
+      "explicacao": "devolução de valor pago indevidamente, como um tributo cobrado a mais."
+     },
+     {
+      "termo": "Fracionamento",
+      "explicacao": "divisão do crédito em partes, aqui para pagar antes a parcela preferencial."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A forma de verificação da idade e dos demais requisitos da superpreferência é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {
+    "exemplo_pratico": "Uma aposentada com mais de sessenta anos tem precatório de natureza previdenciária. Uma parte do crédito, até o triplo do limite de pequeno valor, é paga antes dos demais créditos. O saldo restante é pago depois, na ordem cronológica."
+   },
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "NUMBER_FROM_OTHER_DEVICE (70 anos)"
+   ],
+   "review_reason": "Número ilustrativo desnecessário (\"setenta anos\") retirado; coerente com o T1 aprovado do art. 100 (preferência especial até o triplo e saldo na ordem cronológica).",
+   "changes": [
+    {
+     "section": "exemplo_pratico",
+     "before": "Uma aposentada de setenta anos tem precatório de natureza previdenciária. Uma parte do crédito, até o triplo do limite de pequeno valor, é paga antes dos demais créditos. O saldo restante é pago depois, na ordem cronológica.",
+     "after": "Uma aposentada com mais de sessenta anos tem precatório de natureza previdenciária. Uma parte do crédito, até o triplo do limite de pequeno valor, é paga antes dos demais créditos. O saldo restante é pago depois, na ordem cronológica.",
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.6",
+   "item": "B19",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.100:PAR.6/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.100:PAR.6/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 6º determina que as verbas para precatórios sejam entregues diretamente ao Judiciário e que o Presidente do Tribunal que proferiu a decisão determine o pagamento integral. A pedido do credor, ele pode autorizar o sequestro da quantia apenas se houver quebra da ordem de precedência ou falta de verba no orçamento. O § 7º diz que o Presidente do Tribunal que, por ação ou omissão, retardar ou tentar frustrar a liquidação regular de precatórios comete crime de responsabilidade e responde também perante o Conselho Nacional de Justiça.",
+    "o_que_significa": "O dinheiro dos precatórios não fica com o devedor: é repassado ao Judiciário, que controla os pagamentos.\nO sequestro é o bloqueio direto de valores do ente devedor para pagar o credor. Ele é medida excepcional e só cabe em duas hipóteses: quando alguém foi pago antes do credor que tinha prioridade, ou quando o orçamento não reservou o valor necessário.\nO § 7º responsabiliza o próprio Presidente do Tribunal que atrasar ou atrapalhar os pagamentos.",
+    "exemplo_pratico": "Um credor percebe que o precatório apresentado depois do seu foi pago primeiro. Ele pede ao Presidente do Tribunal o sequestro do valor que lhe é devido, com base na quebra da ordem.",
+    "atencao": "Fora das duas hipóteses do § 6º, o sequestro não é autorizado por este parágrafo. O § 27 prevê outra hipótese de sequestro para Estados, Distrito Federal e Municípios que não liberam os recursos.",
+    "palavras_dificeis": [
+     {
+      "termo": "Sequestro",
+      "explicacao": "bloqueio judicial de valores do devedor para garantir o pagamento."
+     },
+     {
+      "termo": "Preterição",
+      "explicacao": "quebra da ordem, quando alguém é pago antes de quem tinha prioridade."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME (crime)"
+   ],
+   "review_reason": "Sequestro restrito às duas hipóteses do § 6º (preterimento e não alocação orçamentária); responsabilidade do Presidente do Tribunal (§ 7º); remissão correta ao § 27, II.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.102",
+   "item": "B20",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.102/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.102/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 102 atribui ao Supremo Tribunal Federal, como função principal, a guarda da Constituição. Entre outras atribuições, ele julga causas originariamente (inciso I), julga recursos ordinários em casos específicos (inciso II) e julga o recurso extraordinário contra decisões que tocam a Constituição (inciso III). Os parágrafos tratam da arguição de descumprimento de preceito fundamental, do efeito das decisões nas ações de controle e da repercussão geral.",
+    "o_que_significa": "O artigo mostra as três portas de entrada de um processo no Supremo.\nNa competência originária, a causa começa e termina no próprio tribunal: é o caso das ações de controle de constitucionalidade e dos processos contra altas autoridades.\nNo recurso ordinário, o Supremo funciona como segunda instância de algumas decisões dos Tribunais Superiores, como as que negam habeas corpus ou mandado de segurança, e de casos de crime político.\nNo recurso extraordinário, o Supremo revisa decisões finais de outros tribunais quando está em jogo a interpretação da Constituição. A arguição de descumprimento de preceito fundamental é outra ação de controle, apreciada na forma da lei.",
+    "exemplo_pratico": "Uma lei estadual é questionada diretamente no Supremo por ação direta: competência originária. Em outro processo, uma pessoa perde no tribunal de origem e alega que a decisão contraria a Constituição: o caminho é o recurso extraordinário.",
+    "atencao": "O inciso I, o inciso III e os §§ 2º e 3º têm explicação própria. O alcance de cada competência e as condições de admissão dos recursos são definidos também pela lei processual e pela camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Competência originária",
+      "explicacao": "processo que começa diretamente no tribunal, sem passar por instância inferior."
+     },
+     {
+      "termo": "Recurso extraordinário",
+      "explicacao": "recurso ao Supremo contra decisão final que envolve questão constitucional."
+     },
+     {
+      "termo": "Repercussão geral",
+      "explicacao": "requisito de relevância da questão constitucional para que o recurso extraordinário seja examinado."
+     },
+     {
+      "termo": "Preceito fundamental",
+      "explicacao": "norma da Constituição considerada essencial para a ordem constitucional."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A lei que regula a arguição de descumprimento de preceito fundamental e as leis processuais das ações de controle ficam na camada de legislação correlata."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME",
+    "JUDICIAL_REVIEW_CONTEXT_ONLY (Vide ADIN 3392 no § 2º)"
+   ],
+   "review_reason": "Visão geral correta e coerente com o T1 aprovado do § 2º; não usa a ADI 3392.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.102:INC.I",
+   "item": "B21",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.102:INC.I/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.102:INC.I/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso I lista as causas que o Supremo Tribunal Federal processa e julga originariamente. Entre elas estão as ações de controle de constitucionalidade e o pedido de medida cautelar nessas ações. Há também os processos penais contra as mais altas autoridades, com a ressalva do art. 52, I. Aparecem também, entre outros, habeas corpus, mandado de segurança e habeas data contra certos atos e litígios com Estados estrangeiros. Há ainda conflitos entre a União e os Estados, extradição, reclamação, mandado de injunção em casos indicados e ações contra o Conselho Nacional de Justiça e o Conselho Nacional do Ministério Público.",
+    "o_que_significa": "As alíneas podem ser lidas em grupos.\nO primeiro grupo é o controle de constitucionalidade: a ação direta de inconstitucionalidade, a ação declaratória de constitucionalidade e o pedido cautelar nessas ações.\nO segundo grupo é o foro por prerrogativa de função: o Presidente, o Vice, os parlamentares federais, os Ministros do próprio tribunal e o Procurador-Geral da República, nas infrações penais comuns, e outras autoridades também nos crimes de responsabilidade, ressalvado o julgamento pelo Senado previsto no art. 52, I.\nO terceiro grupo envolve a Federação e as relações exteriores: conflitos entre entes federativos, litígios com Estado estrangeiro e extradição.\nHá ainda instrumentos para proteger a autoridade do próprio tribunal, como a reclamação, a revisão criminal e a ação rescisória de seus julgados.",
+    "exemplo_pratico": "Um Estado e a União discordam sobre a divisão de receitas. A ação é proposta diretamente no Supremo, que a julga em instância única.",
+    "atencao": "A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade de Ministro de Estado ou de Comandante militar for conexo com o do Presidente, o julgamento cabe ao Senado. O alcance exato de cada alínea depende também da lei processual e da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Foro por prerrogativa de função",
+      "explicacao": "regra que leva o julgamento de certas autoridades a um tribunal específico."
+     },
+     {
+      "termo": "Reclamação",
+      "explicacao": "ação para preservar a competência de um tribunal ou garantir que suas decisões sejam cumpridas."
+     },
+     {
+      "termo": "Extradição",
+      "explicacao": "entrega de uma pessoa a outro país que a solicitou para processo ou cumprimento de pena."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O alcance do foro por prerrogativa de função e o momento em que ele se aplica são temas da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Competência originária correta (alíneas b e c, ressalva do art. 52, I); o alcance temporal do foro fica, sem afirmação, na camada externa.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.103",
+   "item": "B22",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.103/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.103/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 103 indica quem tem legitimidade para a ação direta de inconstitucionalidade e para a declaratória de constitucionalidade: o Presidente da República; a Mesa do Senado Federal; a Mesa da Câmara dos Deputados; a Mesa de Assembleia Legislativa ou da Câmara Legislativa do Distrito Federal; o Governador de Estado ou do Distrito Federal; o Procurador-Geral da República; o Conselho Federal da Ordem dos Advogados do Brasil; partido político com representação no Congresso Nacional; e confederação sindical ou entidade de classe de âmbito nacional. Os parágrafos tratam da oitiva do Procurador-Geral, da omissão inconstitucional e da defesa da norma pelo Advogado-Geral da União.",
+    "o_que_significa": "Essas ações não podem ser propostas por qualquer pessoa. A lista é fechada e reúne autoridades e entidades com representação política ou social.\nO cidadão comum não está na lista. Se uma pessoa entende que uma lei é inconstitucional, pode discutir isso no seu próprio processo, ou pedir a um dos legitimados que proponha a ação.\nA lista mistura órgãos federais, estaduais e da sociedade civil, como partidos e entidades de classe nacionais.",
+    "exemplo_pratico": "Uma entidade nacional de médicos considera inconstitucional uma lei federal sobre a profissão. Como entidade de classe de âmbito nacional, ela pode propor a ação direta no Supremo. Um médico, sozinho, não pode.",
+    "atencao": "O texto não diz se todos os legitimados podem questionar qualquer norma. A exigência de relação entre o tema da norma e as finalidades de quem propõe a ação é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Legitimado",
+      "explicacao": "quem a Constituição autoriza a propor determinada ação."
+     },
+     {
+      "termo": "Mesa",
+      "explicacao": "órgão que dirige os trabalhos de uma Casa legislativa."
+     },
+     {
+      "termo": "Entidade de classe",
+      "explicacao": "associação que representa uma categoria profissional ou econômica."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O requisito de pertinência temática para certos legitimados é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Rol de legitimados completo e fechado; a pertinência temática é apenas sinalizada, sem afirmação incorreta.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.1",
+   "item": "B23",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.103:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.103:PAR.1/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 1º determina que o Procurador-Geral da República seja ouvido antes da decisão nas ações de inconstitucionalidade e, de modo geral, nos processos de competência do Supremo. O § 3º prevê que, quando o Supremo examinar em tese a inconstitucionalidade de norma legal ou ato normativo, o Advogado-Geral da União será citado antes para defender o ato ou texto questionado.",
+    "o_que_significa": "Os dois parágrafos colocam duas figuras diferentes no processo de controle.\nO Procurador-Geral da República atua como fiscal da ordem jurídica: dá seu parecer antes da decisão, em todos os processos do Supremo, mesmo quando não é parte.\nO Advogado-Geral da União recebe o papel de defensor da norma questionada. Assim, a ação não tramita só com o lado que ataca a lei.",
+    "exemplo_pratico": "Um partido propõe ação contra uma lei federal. O Advogado-Geral da União é citado para apresentar a defesa da lei, e o Procurador-Geral da República emite parecer antes do julgamento.",
+    "atencao": "O § 3º fala em defesa do ato impugnado. O texto não resolve se o Advogado-Geral pode deixar de defender a norma; esse tema pertence à camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Em tese",
+      "explicacao": "de forma abstrata, sem um caso concreto entre partes."
+     },
+     {
+      "termo": "Citação",
+      "explicacao": "ato que chama alguém a participar do processo."
+     },
+     {
+      "termo": "Impugnado",
+      "explicacao": "questionado, atacado no processo."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {
+    "atencao": "O § 3º atribui ao Advogado-Geral a defesa do ato impugnado, e não a emissão de parecer contrário a ele. O Supremo Tribunal Federal admite, porém, que o Advogado-Geral deixe de defender tese cuja inconstitucionalidade o próprio Supremo já tenha afirmado.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 103, § 3º): ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva do Advogado-Geral da União, sem emissão de parecer pela inconstitucionalidade; ADI 1.616 (2001): o múnus deve ser entendido com temperamentos, sem obrigação de defender tese já declarada inconstitucional pelo Supremo. A página remete ainda à ADI 3.916 (2010), não lida nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva; ADI 1.616 (2001): dispensa de defender tese já declarada inconstitucional",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=103",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADI 1.254 AgR; ADI 4.983; ADI 1.616",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=103",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "A ATENÇÃO deixava em aberto um ponto objetivo: o dever de defesa tem o temperamento da ADI 1.616, sem tornar a defesa facultativa em geral (ADI 4.983).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O § 3º fala em defesa do ato impugnado. O texto não resolve se o Advogado-Geral pode deixar de defender a norma; esse tema pertence à camada JURISPRUDÊNCIA.",
+     "after": "O § 3º atribui ao Advogado-Geral a defesa do ato impugnado, e não a emissão de parecer contrário a ele. O Supremo Tribunal Federal admite, porém, que o Advogado-Geral deixe de defender tese cuja inconstitucionalidade o próprio Supremo já tenha afirmado.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "O alcance do dever de defesa do Advogado-Geral da União é tema da camada JURISPRUDÊNCIA."
+     ],
+     "after": [
+      "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 103, § 3º): ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva do Advogado-Geral da União, sem emissão de parecer pela inconstitucionalidade; ADI 1.616 (2001): o múnus deve ser entendido com temperamentos, sem obrigação de defender tese já declarada inconstitucional pelo Supremo. A página remete ainda à ADI 3.916 (2010), não lida nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.103-A",
+   "item": "B24",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME",
+    "CONTROVERSY_TERM_FROM_LEI_SECA"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.103-A/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.103-A/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros um enunciado com efeito vinculante, depois de reiteradas decisões sobre matéria constitucional. O efeito alcança os demais órgãos do Judiciário e a administração pública direta e indireta, a partir da publicação na imprensa oficial. O tribunal também pode revisar ou cancelar o enunciado, na forma da lei. O § 1º define o objeto do enunciado, o § 2º indica quem pode pedir sua aprovação, revisão ou cancelamento, e o § 3º prevê a reclamação.",
+    "o_que_significa": "O artigo cria um instrumento para fixar, de forma obrigatória, a interpretação do Supremo sobre um tema constitucional já decidido muitas vezes.\nHá três requisitos: decisões reiteradas sobre a matéria, aprovação por dois terços dos Ministros e publicação oficial. Só a partir da publicação o efeito vinculante começa.\nO objeto é a validade, a interpretação e a eficácia de normas determinadas, quando há controvérsia atual que cause grave insegurança jurídica e multiplicação de processos sobre a mesma questão.\nOs legitimados para provocar o tribunal são os mesmos que podem propor a ação direta de inconstitucionalidade, sem prejuízo do que a lei estabelecer.",
+    "exemplo_pratico": "Depois de julgar centenas de casos iguais sobre uma cobrança feita por prefeituras, o Supremo aprova um enunciado vinculante. A partir da publicação, juízes e prefeituras precisam seguir aquele entendimento.",
+    "atencao": "Nesta explicação o instituto é chamado de enunciado vinculante; na Lei Seca ele aparece com o nome próprio que a Constituição lhe dá. O efeito vinculante alcança Judiciário e administração; o texto não inclui o Poder Legislativo na sua função de legislar.",
+    "palavras_dificeis": [
+     {
+      "termo": "De ofício",
+      "explicacao": "por iniciativa do próprio tribunal, sem pedido de ninguém."
+     },
+     {
+      "termo": "Efeito vinculante",
+      "explicacao": "obrigação de os órgãos indicados seguirem o enunciado."
+     },
+     {
+      "termo": "Insegurança jurídica",
+      "explicacao": "incerteza sobre qual regra vale, causada por decisões divergentes."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). A fonte canônica remete à Lei n. 11.417, de 2006, que disciplina o procedimento, na camada de legislação correlata."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Requisitos corretos (de ofício ou por provocação, dois terços, reiteradas decisões, matéria constitucional, publicação); o corpo usa \"enunciado vinculante\" por força do contrato.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.103-A:PAR.3",
+   "item": "B25",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.103-A:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.103-A:PAR.3/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 3º prevê reclamação ao Supremo Tribunal Federal contra ato administrativo ou decisão judicial que contrariar o enunciado vinculante aplicável ou que o aplicar indevidamente. Se julgar a reclamação procedente, o Supremo anula o ato administrativo ou cassa a decisão judicial e determina que outra seja proferida, com ou sem a aplicação do enunciado, conforme o caso.",
+    "o_que_significa": "A reclamação é o instrumento que dá força prática ao efeito vinculante.\nEla cabe em duas situações: quando o ato ou a decisão ignora um enunciado que deveria ser aplicado e quando aplica um enunciado a um caso a que ele não se refere.\nO Supremo não decide o caso no lugar da autoridade. Ele anula ou cassa o ato e manda que outro seja feito, com ou sem a aplicação do enunciado, conforme o caso.",
+    "exemplo_pratico": "Um órgão público nega um pedido contrariando um enunciado vinculante. O interessado apresenta reclamação ao Supremo, que anula a negativa e determina que o órgão decida de novo, seguindo o enunciado.",
+    "atencao": "A lei pode exigir etapas prévias para a reclamação contra atos da administração. Esses requisitos estão fora deste parágrafo e ficam na camada de legislação correlata.",
+    "palavras_dificeis": [
+     {
+      "termo": "Reclamação",
+      "explicacao": "ação para garantir que decisões e enunciados do tribunal sejam respeitados."
+     },
+     {
+      "termo": "Cassar",
+      "explicacao": "anular uma decisão judicial."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Eventuais requisitos legais prévios à reclamação contra ato administrativo ficam na Lei n. 11.417, de 2006, na camada de legislação correlata."
+   ],
+   "set": {
+    "atencao": "Contra omissão ou ato da administração pública, a Lei nº 11.417, de 2006, só admite a reclamação depois de esgotadas as vias administrativas. A reclamação não é recurso: é ação própria para garantir a observância do enunciado vinculante.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): Lei 11.417/2006, art. 7º, § 1º: contra omissão ou ato da administração pública, a reclamação só é admitida após o esgotamento das vias administrativas; § 2º: anulação do ato ou cassação da decisão. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Lei 11.417/2006, art. 7º, § 1º: esgotamento das vias administrativas antes da reclamação contra ato da administração",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11417.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Lei 11.417/2006, art. 7º",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11417.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "\"A lei pode exigir etapas prévias\" era vago: a Lei 11.417/2006 exige o esgotamento das vias administrativas; acrescentado que a reclamação não é recurso.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "A lei pode exigir etapas prévias para a reclamação contra atos da administração. Esses requisitos estão fora deste parágrafo e ficam na camada de legislação correlata.",
+     "after": "Contra omissão ou ato da administração pública, a Lei nº 11.417, de 2006, só admite a reclamação depois de esgotadas as vias administrativas. A reclamação não é recurso: é ação própria para garantir a observância do enunciado vinculante.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "Eventuais requisitos legais prévios à reclamação contra ato administrativo ficam na Lei n. 11.417, de 2006, na camada de legislação correlata."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): Lei 11.417/2006, art. 7º, § 1º: contra omissão ou ato da administração pública, a reclamação só é admitida após o esgotamento das vias administrativas; § 2º: anulação do ato ou cassação da decisão. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.103-B",
+   "item": "B26",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.103-B/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.103-B/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 103-B estabelece que o Conselho Nacional de Justiça tem quinze membros, com mandato de dois anos e uma recondução admitida. A composição reúne, entre outros, o Presidente do Supremo Tribunal Federal, magistrados de vários ramos e instâncias, membros do Ministério Público, dois advogados e dois cidadãos de notável saber jurídico e reputação ilibada, indicados pela Câmara e pelo Senado. Os parágrafos tratam da presidência, da nomeação, das competências, do Ministro-Corregedor, de quem oficia junto ao Conselho e das ouvidorias de justiça.",
+    "o_que_significa": "O Conselho é um órgão do Judiciário que não julga processos. Sua função é controlar a atuação administrativa e financeira dos tribunais e o cumprimento dos deveres dos juízes.\nA composição mistura magistrados com pessoas de fora da magistratura, como advogados, membros do Ministério Público e cidadãos indicados pelo Congresso.\nO Presidente do Supremo preside o Conselho. Os demais membros são nomeados pelo Presidente da República, depois de aprovação pela maioria absoluta do Senado. Se as indicações não forem feitas no prazo fixado em lei, a escolha passa ao Supremo.\nO Ministro do Superior Tribunal de Justiça atua como Ministro-Corregedor, recebendo reclamações e fazendo inspeções.",
+    "exemplo_pratico": "Um cidadão se queixa da demora injustificada de um juiz. Ele pode apresentar reclamação ao Conselho, que tem competência para apurar o cumprimento dos deveres funcionais.",
+    "atencao": "As competências do Conselho (§ 4º) têm explicação própria. O texto não dá ao Conselho poder de rever o conteúdo de decisões judiciais; a atuação é administrativa e disciplinar.",
+    "palavras_dificeis": [
+     {
+      "termo": "Recondução",
+      "explicacao": "nova nomeação da mesma pessoa para outro mandato seguido."
+     },
+     {
+      "termo": "Corregedor",
+      "explicacao": "autoridade que fiscaliza a atuação de juízes e serviços judiciários."
+     },
+     {
+      "termo": "Ouvidoria",
+      "explicacao": "canal para receber reclamações e denúncias do público."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Composição, mandato, nomeação e função administrativa e disciplinar corretas; não atribui jurisdição ao Conselho.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "item": "B27",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.103-B:PAR.4/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.103-B:PAR.4/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 4º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira dos tribunais e o cumprimento, pelos juízes, dos seus deveres funcionais. O Estatuto da Magistratura pode lhe dar outras atribuições. Entre as listadas nos incisos estão zelar pela autonomia do Judiciário, expedir atos regulamentares e apreciar a legalidade de atos administrativos dos tribunais. Também recebe reclamações, aplica sanções administrativas com ampla defesa, revê processos disciplinares julgados há menos de um ano, representa ao Ministério Público e elabora relatórios estatísticos e anuais.",
+    "o_que_significa": "O parágrafo mostra que o Conselho atua em duas frentes.\nNa frente administrativa, ele controla a gestão e as finanças do Judiciário, pode rever atos administrativos dos tribunais para garantir o cumprimento da lei e expedir regulamentos dentro da sua competência, sem prejuízo da competência do Tribunal de Contas da União.\nNa frente disciplinar, recebe reclamações, pode avocar processos disciplinares, aplicar sanções e rever punições recentes, sem prejuízo da competência disciplinar dos próprios tribunais.\nO Conselho também elabora relatório estatístico semestral e relatório anual sobre o Judiciário.",
+    "exemplo_pratico": "Um tribunal estadual nomeia servidores sem concurso para cargos que o exigem. O Conselho pode examinar a legalidade desses atos e desconstituí-los, por respeito ao art. 37.",
+    "atencao": "As competências são administrativas e disciplinares. O texto não autoriza o Conselho a julgar processos judiciais nem a rever o conteúdo de sentenças.",
+    "palavras_dificeis": [
+     {
+      "termo": "Avocar",
+      "explicacao": "trazer para si um processo que estava com outro órgão."
+     },
+     {
+      "termo": "Deveres funcionais",
+      "explicacao": "obrigações ligadas ao exercício do cargo."
+     },
+     {
+      "termo": "Ato regulamentar",
+      "explicacao": "norma administrativa que detalha como algo deve ser feito."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Competências administrativas e disciplinares corretas; afirma que o Conselho não revê o conteúdo de decisões judiciais.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.105",
+   "item": "B28",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.105/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.105/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 105 atribui ao Superior Tribunal de Justiça três tipos de competência. Entre outras, ele julga originariamente causas como processos penais contra Governadores e outras autoridades, conflitos de competência entre tribunais (ressalvada a competência do Supremo), homologação de sentenças estrangeiras e conflitos entre entes federativos sobre os tributos dos arts. 156-A e 195, V (inciso I). Julga recursos ordinários em casos específicos (inciso II) e o recurso especial (inciso III). O § 1º indica os órgãos que funcionam junto ao tribunal, e os §§ 2º e 3º tratam do filtro de relevância do recurso especial.",
+    "o_que_significa": "O artigo reúne as competências do tribunal em três vias.\nNa competência originária, as causas começam no próprio tribunal: é o caso do foro de Governadores nos crimes comuns e de outras autoridades estaduais e federais, ressalvada em alguns casos a competência da Justiça Eleitoral.\nNo recurso ordinário, o tribunal revisa decisões de tribunais de segundo grau que negam habeas corpus ou mandado de segurança, e causas entre Estado estrangeiro e Município ou pessoa residente no país. Já o habeas corpus originário tem ressalva em favor da Justiça Eleitoral.\nNo recurso especial, revisa decisões de tribunais que contrariam a lei federal ou divergem entre si.\nJunto ao tribunal funcionam a escola nacional de formação de magistrados e o Conselho da Justiça Federal, que supervisiona a Justiça Federal na forma da lei.",
+    "exemplo_pratico": "Um Governador é acusado de crime comum. O processo não começa em vara criminal: corre diretamente no Superior Tribunal de Justiça, por força do inciso I.",
+    "atencao": "O recurso especial e o filtro de relevância (inciso III e §§ 2º e 3º) têm explicação própria. Várias alíneas do inciso I têm ressalvas, como a competência da Justiça Eleitoral e a do Supremo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Conflito de competência",
+      "explicacao": "disputa entre órgãos judiciais sobre quem deve julgar uma causa."
+     },
+     {
+      "termo": "Homologação",
+      "explicacao": "ato que reconhece no Brasil os efeitos de uma decisão estrangeira."
+     },
+     {
+      "termo": "Exequatur",
+      "explicacao": "autorização para cumprir no Brasil um pedido de justiça estrangeira."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Visão geral correta e coerente com o T1 aprovado do § 2º (filtro de relevância vigente); não trata a regulamentação como futura.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.105:INC.III",
+   "item": "B29",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.105:INC.III/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.105:INC.III/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso III atribui ao Superior Tribunal de Justiça o julgamento, por recurso especial, das causas que os Tribunais Regionais Federais e os tribunais dos Estados, do Distrito Federal e dos Territórios julgaram em única ou última instância. O recurso cabe quando a decisão contrariar tratado ou lei federal ou negar sua vigência, quando julgar válido ato de governo local contestado diante de lei federal, ou quando interpretar lei federal de modo diferente de outro tribunal.",
+    "o_que_significa": "O recurso especial é o caminho para levar ao Superior Tribunal de Justiça uma questão sobre lei federal.\nHá duas exigências de partida. A decisão precisa vir de um tribunal de segundo grau, e não de juiz de primeira instância ou de turma de juizado. E a questão precisa se encaixar em uma das três alíneas.\nA alínea c mostra a função de uniformizar: quando dois tribunais leem a mesma lei federal de formas diferentes, o recurso permite fixar uma leitura única.",
+    "exemplo_pratico": "O Tribunal de Justiça de um Estado interpreta uma regra do Código Civil de um modo, e o de outro Estado, de modo oposto. A parte que perdeu pode interpor recurso especial com base na divergência.",
+    "atencao": "O recurso especial cuida de lei federal; a questão constitucional vai ao Supremo por recurso extraordinário. A admissão depende também do filtro de relevância dos §§ 2º e 3º, com explicação própria.",
+    "palavras_dificeis": [
+     {
+      "termo": "Negar vigência",
+      "explicacao": "deixar de aplicar uma lei que deveria ser aplicada."
+     },
+     {
+      "termo": "Divergência",
+      "explicacao": "diferença de interpretação entre tribunais sobre a mesma norma."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O cabimento de recurso especial contra decisões de turmas recursais de juizados é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Hipóteses do recurso especial corretas; remete ao filtro de relevância sem contradizer o T1 aprovado do § 2º.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.108",
+   "item": "B30",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.108/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.108/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 108 atribui aos Tribunais Regionais Federais o julgamento originário, por crimes comuns e de responsabilidade, dos juízes federais da sua área (incluídos os juízes militares e os do trabalho) e dos membros do Ministério Público da União, com ressalva para a competência da Justiça Eleitoral. Também julgam originariamente revisões criminais e ações rescisórias, mandados de segurança e habeas data contra ato do tribunal ou de juiz federal, habeas corpus contra juiz federal e conflitos de competência entre juízes federais vinculados. Em grau de recurso, revisam as decisões dos juízes federais da área de jurisdição do tribunal e as dos juízes estaduais quando atuam em competência federal.",
+    "o_que_significa": "O tribunal regional tem duas funções.\nA principal é julgar recursos: as decisões dos juízes federais da região sobem a ele. Também sobem as decisões de juízes estaduais que julgam causas federais por delegação, nos casos que a Constituição admite.\nA outra função é a competência originária, com foco em autoridades e atos ligados à própria Justiça Federal da região.",
+    "exemplo_pratico": "Um juiz federal é acusado de crime comum. O processo corre diretamente no Tribunal Regional Federal da sua área, e não em vara de primeira instância.",
+    "atencao": "A competência penal originária tem ressalva expressa: os casos da competência da Justiça Eleitoral ficam fora.",
+    "palavras_dificeis": [
+     {
+      "termo": "Revisão criminal",
+      "explicacao": "ação para rever condenação penal já definitiva, nos casos da lei."
+     },
+     {
+      "termo": "Ação rescisória",
+      "explicacao": "ação para desfazer uma decisão cível definitiva, nos casos da lei."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Competências originária e recursal corretas; membros do Ministério Público da União (inclusive o do Distrito Federal e Territórios) no TRF.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.109",
+   "item": "B31",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.109/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.109/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 109 lista as causas que os juízes federais processam e julgam. Entre elas estão as causas em que a União, suas autarquias ou empresas públicas sejam interessadas, salvo as exceções do inciso I. Também estão os crimes contra bens e interesses da União, ressalvadas as Justiças Militar e Eleitoral, e os crimes a bordo de navios ou aeronaves, ressalvada a Justiça Militar. Completam a lista, entre outros, crimes previstos em tratado, crimes contra a organização do trabalho, mandado de segurança contra autoridade federal (salvo competência dos tribunais federais), causas sobre nacionalidade e a disputa sobre direitos indígenas. Os parágrafos tratam do local das ações da União, da delegação a juízes estaduais e do deslocamento de competência em grave violação de direitos humanos.",
+    "o_que_significa": "A lógica do artigo é o interesse federal. A Justiça Federal julga, em regra, o que envolve a União, suas entidades e temas que a Constituição considera nacionais ou internacionais.\nNo cível, o critério principal é a presença da União, de autarquia ou de empresa pública federal no processo. No penal, o critério é a ofensa a bens, serviços ou interesses federais, além de crimes específicos indicados no texto.\nOutros incisos tratam de temas ligados à soberania e às relações exteriores, como nacionalidade, cartas rogatórias e direitos indígenas.",
+    "exemplo_pratico": "Uma pessoa falsifica documento para sacar um benefício do instituto federal de previdência. Como o crime atinge interesse de autarquia federal, o processo vai à Justiça Federal.",
+    "atencao": "Os incisos I e IV têm exceções importantes e explicação própria. Os §§ 1º a 5º também têm explicações próprias.",
+    "palavras_dificeis": [
+     {
+      "termo": "Autarquia",
+      "explicacao": "entidade pública com personalidade própria criada por lei para atividade típica do Estado."
+     },
+     {
+      "termo": "Empresa pública",
+      "explicacao": "empresa com capital inteiramente público."
+     },
+     {
+      "termo": "Carta rogatória",
+      "explicacao": "pedido de autoridade judicial estrangeira para que um ato seja cumprido no Brasil."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Visão geral correta (União, autarquias e empresas públicas federais; ressalvas; §§ 1º a 5º com explicação própria, § 4º coberto pelo bloco do § 3º).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.109:INC.I",
+   "item": "B32",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.109:INC.I/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.109:INC.I/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso I atribui aos juízes federais as causas de que participem, como autoras, rés, assistentes ou oponentes, a União, uma autarquia federal ou uma empresa pública federal. Ficam de fora as falências, os acidentes de trabalho e as causas da competência das Justiças Eleitoral e do Trabalho.",
+    "o_que_significa": "O critério é a pessoa que está no processo, e não o assunto. Basta que a União, uma autarquia federal ou uma empresa pública federal participe em uma das posições indicadas para a causa ir à Justiça Federal.\nAs exceções retiram desse critério quatro tipos de causa. Falência e acidentes de trabalho seguem para a Justiça estadual. As causas eleitorais e trabalhistas seguem para as suas justiças especializadas.\nO texto menciona empresa pública federal, e não sociedade de economia mista.",
+    "exemplo_pratico": "Um segurado sofre acidente de trabalho e pede benefício acidentário ao instituto federal de previdência. Embora a autarquia seja federal, a ação corre na Justiça estadual, por causa da exceção de acidentes de trabalho.",
+    "atencao": "A participação da entidade federal precisa ocorrer em uma das posições listadas. Questões como a situação das sociedades de economia mista e dos conselhos profissionais são da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Assistente",
+      "explicacao": "quem entra no processo para ajudar uma das partes por ter interesse no resultado."
+     },
+     {
+      "termo": "Oponente",
+      "explicacao": "quem entra no processo disputando o mesmo bem ou direito das partes."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A competência para causas de sociedades de economia mista e de conselhos de fiscalização profissional é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Critério pessoal correto; exclusões corretas; não inclui sociedade de economia mista.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.109:INC.IV",
+   "item": "B33",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.109:INC.IV/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.109:INC.IV/BASE/1",
+   "original_content": {
+    "o_que_diz": "O inciso IV atribui aos juízes federais os crimes políticos e as infrações penais praticadas contra bens, serviços ou interesse da União, de suas autarquias ou de suas empresas públicas. Ficam excluídas as contravenções penais, com ressalva para a competência das Justiças Militar e Eleitoral.",
+    "o_que_significa": "No campo penal, a Justiça Federal julga o que ofende diretamente a União ou suas entidades.\nA exclusão das contravenções é expressa: mesmo que atinjam interesse federal, essas infrações mais leves ficam com a Justiça estadual.\nAs ressalvas retiram crimes militares e eleitorais, que vão às suas justiças especializadas.",
+    "exemplo_pratico": "Uma pessoa danifica um bem de uma universidade federal, que é autarquia. Trata-se de crime contra bem de entidade federal, julgado pela Justiça Federal. Se a conduta fosse apenas uma contravenção, iria à Justiça estadual.",
+    "atencao": "O texto menciona empresas públicas, e não sociedades de economia mista. O que conta como interesse direto da União em cada crime é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Contravenção penal",
+      "explicacao": "infração penal de menor gravidade que o crime."
+     },
+     {
+      "termo": "Crime político",
+      "explicacao": "crime que atenta contra a segurança e a ordem política do Estado."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Crimes políticos e infrações contra bens, serviços e interesses federais; exclusão das contravenções e ressalvas militar e eleitoral corretas.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.1",
+   "item": "B34",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.109:PAR.1/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.109:PAR.1/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 1º determina que as causas em que a União for autora sejam propostas na seção judiciária do domicílio da outra parte. O § 2º permite que as causas contra a União sejam propostas na seção judiciária do domicílio do autor, onde ocorreu o ato ou fato que originou a demanda, onde está a coisa ou no Distrito Federal.",
+    "o_que_significa": "Os dois parágrafos definem onde são propostas as causas de que a União participa.\nQuando a União processa alguém, ela vai até o domicílio da pessoa. Quando alguém processa a União, pode escolher entre várias opções, incluindo o próprio domicílio.\nAssim, a causa pode tramitar na seção judiciária ligada ao domicílio da pessoa, e não necessariamente na capital federal.",
+    "exemplo_pratico": "Uma moradora de uma cidade do interior quer processar a União por um dano causado por obra federal na sua rua. Ela pode propor a ação na seção judiciária do seu domicílio, no local do fato ou no Distrito Federal.",
+    "atencao": "No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.",
+    "palavras_dificeis": [
+     {
+      "termo": "Seção judiciária",
+      "explicacao": "divisão territorial da Justiça Federal, em regra correspondente a um Estado."
+     },
+     {
+      "termo": "Aforar",
+      "explicacao": "propor uma ação em determinado juízo."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A aplicação do § 2º a autarquias federais é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Foro das causas da União correto (§ 1º fixo; § 2º à escolha do autor).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.5",
+   "item": "B35",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.109:PAR.5/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.109:PAR.5/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 5º permite que, em caso de violação grave de direitos humanos, o Procurador-Geral da República peça ao Superior Tribunal de Justiça, em qualquer fase do inquérito ou do processo, o deslocamento da competência para a Justiça Federal. A finalidade declarada é garantir o cumprimento de obrigações assumidas pelo Brasil em tratados internacionais de direitos humanos. O inciso V-A do artigo remete a essas causas.",
+    "o_que_significa": "O parágrafo cria uma via excepcional para levar à Justiça Federal casos que, pelas regras comuns de competência, não estariam nela.\nSó o Procurador-Geral da República pode pedir, e só o Superior Tribunal de Justiça decide. O pedido pode ser feito durante a investigação ou já no processo.\nA razão indicada no próprio texto é internacional: assegurar que o Brasil cumpra as obrigações assumidas em tratados internacionais de direitos humanos de que é parte.",
+    "exemplo_pratico": "Uma chacina com suspeita de participação de agentes locais fica anos sem investigação efetiva. O Procurador-Geral pede ao Superior Tribunal de Justiça que o caso passe à Justiça Federal.",
+    "atencao": "O texto exige grave violação de direitos humanos e a finalidade de cumprir obrigações de tratados. Os demais requisitos para o deslocamento ser deferido são tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Incidente de deslocamento de competência",
+      "explicacao": "pedido para transferir um caso para a Justiça Federal."
+     },
+     {
+      "termo": "Inquérito",
+      "explicacao": "investigação que antecede a ação penal."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Os requisitos aplicados para deferir o deslocamento de competência são tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Caráter excepcional, legitimidade exclusiva do Procurador-Geral da República e decisão do Superior Tribunal de Justiça preservados.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.124",
+   "item": "B36",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.124/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.124/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 124 atribui à Justiça Militar o processo e o julgamento dos crimes militares definidos em lei. O parágrafo único remete à lei a organização, o funcionamento e a competência da Justiça Militar.",
+    "o_que_significa": "A competência da Justiça Militar da União é definida pela natureza do crime: ela julga crimes militares.\nO que é crime militar não está na Constituição. A definição está na lei, que indica quais condutas, em quais circunstâncias, são crimes militares.\nO artigo fala em crimes; ele não atribui à Justiça Militar da União o julgamento de ações civis ou disciplinares, diferentemente do que o art. 125, § 4º, faz para a Justiça Militar estadual.",
+    "exemplo_pratico": "Um soldado das Forças Armadas desvia armamento do quartel. Se a lei penal militar define a conduta como crime militar, o caso é julgado pela Justiça Militar da União.",
+    "atencao": "Quando um civil pode ser julgado pela Justiça Militar da União depende da lei e é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Crime militar",
+      "explicacao": "crime definido como tal na lei penal militar."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Competência pela natureza do crime militar definido em lei; não afirma regra categórica sobre civis.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.125",
+   "item": "B37",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.125/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.125/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 125 determina que os Estados organizem sua Justiça, observados os princípios da Constituição. A competência dos tribunais é definida na Constituição do Estado, e a lei de organização judiciária é de iniciativa do Tribunal de Justiça. Os parágrafos tratam do controle de constitucionalidade estadual, da Justiça Militar estadual, das câmaras regionais e da justiça itinerante.",
+    "o_que_significa": "A Justiça estadual é organizada por cada Estado, mas dentro dos limites da Constituição Federal.\nDois instrumentos dividem essa tarefa: a Constituição estadual define a competência dos tribunais, e a lei de organização judiciária, proposta pelo Tribunal de Justiça, estrutura comarcas, varas e serviços.\nOs §§ 6º e 7º aproximam a Justiça do cidadão, com câmaras regionais e justiça itinerante.",
+    "exemplo_pratico": "Um Estado quer criar novas varas em cidades do interior. A mudança é feita por lei de organização judiciária, cujo projeto é enviado pelo Tribunal de Justiça à Assembleia Legislativa.",
+    "atencao": "O controle de constitucionalidade estadual (§ 2º) e a Justiça Militar estadual (§§ 3º a 5º) têm explicações próprias.",
+    "palavras_dificeis": [
+     {
+      "termo": "Organização judiciária",
+      "explicacao": "estrutura de comarcas, varas, tribunais e serviços da Justiça."
+     },
+     {
+      "termo": "Iniciativa",
+      "explicacao": "poder de apresentar o projeto de lei."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Organização da Justiça estadual correta (Constituição estadual e lei de organização judiciária de iniciativa do Tribunal de Justiça).",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.2",
+   "item": "B38",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.125:PAR.2/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.125:PAR.2/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 2º atribui aos Estados a criação da representação de inconstitucionalidade contra leis ou atos normativos estaduais e municipais que contrariem a Constituição do Estado. É proibido atribuir a legitimação para propor essa ação a um único órgão.",
+    "o_que_significa": "Assim como existe controle de constitucionalidade em relação à Constituição Federal, os Estados podem ter um controle próprio, tendo como parâmetro a Constituição estadual.\nO objeto são leis e atos normativos estaduais e municipais. O parâmetro é a Constituição do Estado.\nA vedação final impede que só uma autoridade possa propor a ação: a Constituição estadual precisa prever mais de um legitimado.",
+    "exemplo_pratico": "Uma lei municipal contraria regra da Constituição do Estado sobre servidores. Um dos legitimados previstos na Constituição estadual propõe a representação de inconstitucionalidade no Tribunal de Justiça.",
+    "atencao": "O parágrafo trata do parâmetro estadual. O uso de normas da Constituição Federal como parâmetro nesse controle estadual é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Representação de inconstitucionalidade",
+      "explicacao": "ação estadual para declarar uma norma contrária à Constituição do Estado."
+     },
+     {
+      "termo": "Legitimação para agir",
+      "explicacao": "autorização para propor a ação."
+     },
+     {
+      "termo": "Parâmetro",
+      "explicacao": "norma usada como referência para julgar a validade de outra."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "Distingue o parâmetro estadual; o uso de normas federais de reprodução obrigatória fica sinalizado, sem afirmação incorreta.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.3",
+   "item": "B39",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.125:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.125:PAR.3/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 3º permite que a lei estadual, por proposta do Tribunal de Justiça, crie a Justiça Militar estadual. No primeiro grau atuam os juízes de direito e os Conselhos de Justiça. No segundo grau atua o Tribunal de Justiça ou, onde o efetivo militar passar de vinte mil integrantes, um Tribunal de Justiça Militar. O § 4º lhe atribui os crimes militares dos militares estaduais e as ações judiciais contra punições disciplinares militares, com ressalva para o júri quando a vítima for civil. O § 5º divide o primeiro grau entre o juiz de direito e o Conselho de Justiça.",
+    "o_que_significa": "A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.\nSua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, prevalece a competência do júri, que a Constituição reserva aos crimes dolosos contra a vida (art. 5º, XXXVIII, d).\nNo primeiro grau, o juiz de direito julga sozinho os crimes militares contra civis e as ações disciplinares. Os demais crimes militares ficam com o Conselho de Justiça, presidido pelo juiz de direito.\nCabe ao tribunal competente decidir se oficiais perdem posto e patente e se praças perdem a graduação.",
+    "exemplo_pratico": "Um policial militar é acusado de lesão corporal contra um civil durante uma abordagem, conduta prevista como crime militar. O caso é julgado pelo juiz de direito do juízo militar, sozinho, porque a vítima é civil.",
+    "atencao": "A ressalva do júri vale quando a vítima é civil; a delimitação dos crimes abrangidos é da lei e da camada JURISPRUDÊNCIA. O Tribunal de Justiça Militar depende de efetivo superior a vinte mil integrantes.",
+    "palavras_dificeis": [
+     {
+      "termo": "Conselho de Justiça",
+      "explicacao": "órgão colegiado do primeiro grau da Justiça Militar, presidido por juiz de direito."
+     },
+     {
+      "termo": "Patente",
+      "explicacao": "grau hierárquico do oficial militar."
+     },
+     {
+      "termo": "Praça",
+      "explicacao": "militar que não é oficial, como soldados e sargentos."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "Os crimes abrangidos pela ressalva do júri e a distribuição entre juiz singular e Conselho de Justiça são temas da lei e da camada JURISPRUDÊNCIA."
+   ],
+   "set": {
+    "o_que_significa": "A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.\nSua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, os crimes dolosos contra a vida ficam com o júri, conforme a competência que a Constituição lhe reserva (art. 5º, XXXVIII, d).\nNo primeiro grau, o juiz de direito julga sozinho os crimes militares contra civis e as ações disciplinares. Os demais crimes militares ficam com o Conselho de Justiça, presidido pelo juiz de direito.\nCabe ao tribunal competente decidir se oficiais perdem posto e patente e se praças perdem a graduação."
+   },
+   "content_provenance": [],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "A ressalva do júri podia ser lida como alcançando todo crime militar com vítima civil; passa a dizer que alcança os crimes dolosos contra a vida.",
+   "changes": [
+    {
+     "section": "o_que_significa",
+     "before": "A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.\nSua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, prevalece a competência do júri, que a Constituição reserva aos crimes dolosos contra a vida (art. 5º, XXXVIII, d).\nNo primeiro grau, o juiz de direito julga sozinho os crimes militares contra civis e as ações disciplinares. Os demais crimes militares ficam com o Conselho de Justiça, presidido pelo juiz de direito.\nCabe ao tribunal competente decidir se oficiais perdem posto e patente e se praças perdem a graduação.",
+     "after": "A Justiça Militar estadual julga policiais militares e bombeiros militares dos Estados.\nSua competência tem duas partes: os crimes militares definidos em lei e as ações contra punições disciplinares militares. Há uma ressalva: quando a vítima é civil, os crimes dolosos contra a vida ficam com o júri, conforme a competência que a Constituição lhe reserva (art. 5º, XXXVIII, d).\nNo primeiro grau, o juiz de direito julga sozinho os crimes militares contra civis e as ações disciplinares. Os demais crimes militares ficam com o Conselho de Justiça, presidido pelo juiz de direito.\nCabe ao tribunal competente decidir se oficiais perdem posto e patente e se praças perdem a graduação.",
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.128",
+   "item": "B40",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [
+    "o_que_significa"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.128/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.128/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 128 divide o Ministério Público em Ministério Público da União, que compreende o Federal, o do Trabalho, o Militar e o do Distrito Federal e Territórios, e Ministérios Públicos dos Estados. Os parágrafos tratam da escolha e da destituição dos Procuradores-Gerais, das leis complementares que organizam cada Ministério Público, das garantias e vedações dos membros e da quarentena do art. 95, parágrafo único, V.",
+    "o_que_significa": "Não existe um único Ministério Público, mas vários, cada um com sua chefia. O da União reúne quatro ramos sob o comando do Procurador-Geral da República; cada Estado tem o seu, chefiado pelo Procurador-Geral de Justiça.\nA forma de escolha das chefias é diferente: na União, o Presidente escolhe entre membros da carreira; nos Estados, o Governador escolhe a partir de lista tríplice formada pela própria carreira.\nAs leis complementares definem a organização, as atribuições e o estatuto de cada ramo, respeitando as garantias e vedações do § 5º.",
+    "exemplo_pratico": "Um crime contra uma autarquia federal leva à atuação do Ministério Público Federal. Um homicídio comum, sem interesse federal, fica com o Ministério Público do Estado.",
+    "atencao": "O Ministério Público do Distrito Federal e Territórios faz parte do Ministério Público da União. Os Ministérios Públicos junto aos Tribunais de Contas seguem regra própria (art. 130).",
+    "palavras_dificeis": [
+     {
+      "termo": "Procurador-Geral",
+      "explicacao": "chefe de um Ministério Público."
+     },
+     {
+      "termo": "Lista tríplice",
+      "explicacao": "lista com três nomes, da qual a autoridade escolhe um."
+     },
+     {
+      "termo": "Quarentena",
+      "explicacao": "período em que quem deixa o cargo não pode exercer certas atividades."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {
+    "o_que_significa": "Não existe um único Ministério Público, mas vários, cada um com sua chefia. O da União reúne quatro ramos sob o comando do Procurador-Geral da República; cada Estado tem o seu, chefiado pelo Procurador-Geral de Justiça.\nA forma de escolha das chefias é diferente: o Procurador-Geral da República é nomeado pelo Presidente da República entre integrantes da carreira, maiores de trinta e cinco anos, após aprovação pela maioria absoluta do Senado; nos Estados e no Distrito Federal e Territórios, o chefe é escolhido a partir de lista tríplice formada pela própria carreira.\nAs leis complementares definem a organização, as atribuições e o estatuto de cada ramo, respeitando as garantias e vedações do § 5º."
+   },
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Omitia a aprovação pelo Senado na escolha do Procurador-Geral da República (§ 1º) e dava a entender que a lista tríplice vale só nos Estados, quando também se aplica ao Ministério Público do Distrito Federal e Territórios (§ 3º).",
+   "changes": [
+    {
+     "section": "o_que_significa",
+     "before": "Não existe um único Ministério Público, mas vários, cada um com sua chefia. O da União reúne quatro ramos sob o comando do Procurador-Geral da República; cada Estado tem o seu, chefiado pelo Procurador-Geral de Justiça.\nA forma de escolha das chefias é diferente: na União, o Presidente escolhe entre membros da carreira; nos Estados, o Governador escolhe a partir de lista tríplice formada pela própria carreira.\nAs leis complementares definem a organização, as atribuições e o estatuto de cada ramo, respeitando as garantias e vedações do § 5º.",
+     "after": "Não existe um único Ministério Público, mas vários, cada um com sua chefia. O da União reúne quatro ramos sob o comando do Procurador-Geral da República; cada Estado tem o seu, chefiado pelo Procurador-Geral de Justiça.\nA forma de escolha das chefias é diferente: o Procurador-Geral da República é nomeado pelo Presidente da República entre integrantes da carreira, maiores de trinta e cinco anos, após aprovação pela maioria absoluta do Senado; nos Estados e no Distrito Federal e Territórios, o chefe é escolhido a partir de lista tríplice formada pela própria carreira.\nAs leis complementares definem a organização, as atribuições e o estatuto de cada ramo, respeitando as garantias e vedações do § 5º.",
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.3",
+   "item": "B41",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.128:PAR.3/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.128:PAR.3/BASE/2",
+   "original_content": {
+    "o_que_diz": "O § 3º prevê que, nos Estados e no Ministério Público do Distrito Federal e Territórios, a própria carreira forme lista tríplice, na forma da lei respectiva. Dessa lista, o Chefe do Poder Executivo escolhe o Procurador-Geral, com mandato de dois anos e uma recondução permitida. O § 4º admite a destituição desses Procuradores-Gerais por deliberação do Legislativo, tomada por maioria absoluta, conforme a lei complementar de cada Ministério Público.",
+    "o_que_significa": "Nos Estados, a escolha do chefe do Ministério Público começa dentro da própria instituição: a carreira forma uma lista de três nomes, e o chefe do Executivo escolhe um deles.\nO mandato é de dois anos, com apenas uma recondução.\nA destituição depende do Legislativo, por maioria absoluta, conforme a lei complementar.",
+    "exemplo_pratico": "Os promotores e procuradores de um Estado votam e formam lista com três nomes. O Governador escolhe um deles para Procurador-Geral de Justiça, com mandato de dois anos.",
+    "atencao": "No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a destituição. Essa identificação depende da lei complementar e da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Lista tríplice",
+      "explicacao": "lista com três nomes, da qual a autoridade escolhe um."
+     },
+     {
+      "termo": "Procurador-Geral de Justiça",
+      "explicacao": "nome usual do chefe do Ministério Público de um Estado."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são definidos na lei complementar do Ministério Público da União e na camada JURISPRUDÊNCIA."
+   ],
+   "set": {
+    "atencao": "O Ministério Público do Distrito Federal e Territórios integra o Ministério Público da União. Nele, a lei complementar respectiva atribui ao Presidente da República a nomeação do Procurador-Geral, a partir da lista tríplice. A destituição cabe à maioria absoluta do Senado Federal, mediante representação do Presidente da República.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (Planalto): LC 75/1993, art. 156: o Procurador-Geral de Justiça do Distrito Federal e Territórios é nomeado pelo Presidente da República dentre integrantes de lista tríplice, para mandato de dois anos, permitida uma recondução; § 2º: destituição por deliberação da maioria absoluta do Senado Federal, mediante representação do Presidente da República. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "LC 75/1993, art. 156, caput e § 2º: nomeação pelo Presidente da República e destituição pelo Senado Federal",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "LC 75/1993, art. 156",
+     "official_source": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "O regime do Ministério Público do Distrito Federal e Territórios estava em aberto; a LC 75/1993, art. 156, o define (Presidente da República e Senado Federal).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "No caso do Ministério Público do Distrito Federal e Territórios, que integra o Ministério Público da União, o texto não identifica qual chefe do Executivo nomeia nem qual Legislativo delibera a destituição. Essa identificação depende da lei complementar e da camada JURISPRUDÊNCIA.",
+     "after": "O Ministério Público do Distrito Federal e Territórios integra o Ministério Público da União. Nele, a lei complementar respectiva atribui ao Presidente da República a nomeação do Procurador-Geral, a partir da lista tríplice. A destituição cabe à maioria absoluta do Senado Federal, mediante representação do Presidente da República.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A autoridade que nomeia e o órgão legislativo que destitui o Procurador-Geral do Ministério Público do Distrito Federal e Territórios são definidos na lei complementar do Ministério Público da União e na camada JURISPRUDÊNCIA."
+     ],
+     "after": [
+      "Verificado na fonte oficial (Planalto): LC 75/1993, art. 156: o Procurador-Geral de Justiça do Distrito Federal e Territórios é nomeado pelo Presidente da República dentre integrantes de lista tríplice, para mandato de dois anos, permitida uma recondução; § 2º: destituição por deliberação da maioria absoluta do Senado Federal, mediante representação do Presidente da República. Ingestão na camada de legislação correlata: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "item": "B42",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.128:PAR.5/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.128:PAR.5/BASE/1",
+   "original_content": {
+    "o_que_diz": "O § 5º determina que leis complementares da União e dos Estados, de iniciativa facultada aos Procuradores-Gerais, definam como cada Ministério Público se organiza, suas atribuições e o estatuto dos membros. Essas leis observam as garantias dos membros, que são a vitaliciedade após dois anos de exercício, a inamovibilidade, salvo por interesse público em decisão do órgão colegiado por maioria absoluta, e a irredutibilidade de subsídio, com as ressalvas indicadas. E observam as vedações: honorários, advocacia, participação em sociedade comercial na forma da lei, outra função pública, mesmo em disponibilidade, salvo uma de magistério, atividade político-partidária e auxílios ou contribuições, ressalvadas as exceções da lei.",
+    "o_que_significa": "O texto dá garantias ao membro do Ministério Público. Depois de dois anos, ele só perde o cargo por sentença judicial definitiva. Não pode ser removido contra a vontade, salvo por interesse público, com decisão colegiada e ampla defesa. E seu subsídio não pode ser reduzido, observadas as ressalvas do texto.\nO texto também impõe vedações aos membros. O membro não recebe honorários nem custas, não advoga, não exerce política partidária e não acumula outra função pública, salvo uma de magistério.\nO modelo é semelhante ao dos juízes (art. 95).",
+    "exemplo_pratico": "Uma promotora quer dar aulas em uma universidade pública. Pode fazê-lo, porque o texto ressalva uma função de magistério. Já não pode atuar como advogada em causas particulares.",
+    "atencao": "A irredutibilidade tem ressalvas expressas, como o teto remuneratório e as regras tributárias indicadas no texto. O alcance de cada vedação é definido também pela lei e pela camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Vitaliciedade",
+      "explicacao": "garantia de só perder o cargo por sentença judicial definitiva."
+     },
+     {
+      "termo": "Inamovibilidade",
+      "explicacao": "garantia de não ser transferido contra a vontade, salvo por interesse público."
+     },
+     {
+      "termo": "Irredutibilidade de subsídio",
+      "explicacao": "proibição de reduzir a remuneração, com as ressalvas do texto."
+     },
+     {
+      "termo": "Sentença transitada em julgado",
+      "explicacao": "decisão judicial contra a qual não cabe mais recurso."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Garantias e as seis vedações completas no O QUE DIZ; resumo do O QUE SIGNIFICA sem afirmação incorreta.",
+   "changes": []
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "item": "B43",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.129/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.129/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 129 lista as funções institucionais do Ministério Público. Entre elas estão promover privativamente a ação penal pública, zelar pelo respeito dos poderes públicos aos direitos constitucionais, promover o inquérito civil e a ação civil pública. Também estão propor ação de inconstitucionalidade e representação para intervenção, defender os direitos das populações indígenas, expedir notificações e requisitar informações, exercer o controle externo da atividade policial e requisitar diligências e inquérito policial. Os parágrafos tratam da legitimação de terceiros, da exigência de carreira e residência, do concurso, da aplicação do art. 93 e da distribuição imediata de processos.",
+    "o_que_significa": "O artigo mostra que o Ministério Público atua em várias frentes.\nNa área penal, é o titular da ação penal pública e pode requisitar diligências e a instauração de inquérito policial.\nNa área civil, defende interesses coletivos, como o meio ambiente e o patrimônio público, por meio do inquérito civil e da ação civil pública.\nHá ainda funções de fiscalização: controle externo da polícia e zelo pelo respeito dos poderes públicos aos direitos da Constituição.\nO § 1º esclarece que a legitimação do Ministério Público para as ações civis não exclui a de outros legitimados, segundo a Constituição e a lei.",
+    "exemplo_pratico": "Um hospital público deixa de atender pacientes por falta de medicamentos. O Ministério Público instaura inquérito civil, requisita documentos e pode propor ação civil pública para obrigar o poder público a regularizar o atendimento.",
+    "atencao": "O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto é tema da camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.",
+    "palavras_dificeis": [
+     {
+      "termo": "Ação penal pública",
+      "explicacao": "ação penal proposta pelo Estado, por meio do Ministério Público."
+     },
+     {
+      "termo": "Inquérito civil",
+      "explicacao": "investigação do Ministério Público para apurar lesão a interesses coletivos."
+     },
+     {
+      "termo": "Interesses difusos",
+      "explicacao": "interesses que pertencem a um número indeterminado de pessoas, como o meio ambiente."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+   ],
+   "set": {
+    "atencao": "O Supremo Tribunal Federal reconhece que o Ministério Público pode promover, por autoridade própria e por prazo razoável, investigações de natureza penal, respeitados os direitos dos investigados, a reserva de jurisdição e o controle judicial; os requisitos detalhados desse procedimento estão na camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 129): Tema 184 (RE 593.727, 2015): o Ministério Público dispõe de competência para promover, por autoridade própria e por prazo razoável, investigações de natureza penal, respeitados os direitos e garantias dos investigados, a reserva constitucional de jurisdição, as prerrogativas dos advogados e o controle jurisdicional dos atos documentados; ADI 2.943, ADI 3.309 e ADI 3.318 (2024): parâmetros adicionais do procedimento investigatório criminal (entre eles distribuição por dependência ao juízo, aplicação do art. 18 do CPP, motivação da instauração quando houver suspeita de envolvimento de agentes de segurança e requisição de perícias). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "Tema 184 (RE 593.727, 2015): investigação penal por autoridade própria do Ministério Público, com limites",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=129",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADI 2.943, ADI 3.309 e ADI 3.318 (2024): parâmetros do procedimento investigatório criminal",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=129",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "Tema 184; ADI 2.943; ADI 3.309; ADI 3.318",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=129",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY",
+    "EXTERNAL_VERIFICATION_REQUIRED (investigação criminal direta)"
+   ],
+   "review_reason": "A ATENÇÃO tratava a investigação criminal direta como questão aberta (EXTERNAL_VERIFICATION_REQUIRED). O Supremo a reconhece (Tema 184) e fixou parâmetros (ADIs 2.943, 3.309 e 3.318); o T1 registra o estado atual sem virar tratado.",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O texto não diz se o Ministério Público pode conduzir, ele próprio, investigação criminal; esse ponto é tema da camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.",
+     "after": "O Supremo Tribunal Federal reconhece que o Ministério Público pode promover, por autoridade própria e por prazo razoável, investigações de natureza penal, respeitados os direitos dos investigados, a reserva de jurisdição e o controle judicial; os requisitos detalhados desse procedimento estão na camada JURISPRUDÊNCIA. A lista termina com cláusula aberta (inciso IX), com explicação própria.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+     ],
+     "after": [
+      "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 129): Tema 184 (RE 593.727, 2015): o Ministério Público dispõe de competência para promover, por autoridade própria e por prazo razoável, investigações de natureza penal, respeitados os direitos e garantias dos investigados, a reserva constitucional de jurisdição, as prerrogativas dos advogados e o controle jurisdicional dos atos documentados; ADI 2.943, ADI 3.309 e ADI 3.318 (2024): parâmetros adicionais do procedimento investigatório criminal (entre eles distribuição por dependência ao juízo, aplicação do art. 18 do CPP, motivação da instauração quando houver suspeita de envolvimento de agentes de segurança e requisição de perícias). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.130",
+   "item": "B44",
+   "decision": "APPROVED_AFTER_ADJUSTMENT",
+   "human_decision": "ADJUST_THEN_APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "changed_sections": [
+    "atencao",
+    "external_layer_notes"
+   ],
+   "from_explanation_id": "ENTENDA/CF88:ART.130/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.130/BASE/2",
+   "original_content": {
+    "o_que_diz": "O art. 130 estende aos membros do Ministério Público que atuam junto aos Tribunais de Contas as disposições desta Seção sobre direitos, vedações e forma de investidura.",
+    "o_que_significa": "Junto aos Tribunais de Contas atua um Ministério Público especial, que fiscaliza a aplicação da lei nos processos de controle das contas públicas.\nO artigo não o inclui no art. 128, que lista os ramos do Ministério Público comum. Mas manda aplicar aos seus membros três grupos de regras da Seção: os direitos, como as garantias de vitaliciedade e inamovibilidade; as vedações, como a proibição de advogar; e a forma de investidura, que inclui o concurso público.\nAssim, quem atua nesse Ministério Público especial tem estatuto pessoal semelhante ao dos demais membros.",
+    "exemplo_pratico": "Um procurador do Ministério Público junto ao Tribunal de Contas de um Estado quer exercer a advocacia privada. Não pode, porque a vedação do art. 128, § 5º, também se aplica a ele.",
+    "atencao": "O artigo estende direitos, vedações e investidura. Outras questões, como autonomia administrativa e financeira, não estão mencionadas, e sua aplicação é tema da camada JURISPRUDÊNCIA.",
+    "palavras_dificeis": [
+     {
+      "termo": "Tribunal de Contas",
+      "explicacao": "órgão que auxilia o Legislativo na fiscalização das contas públicas."
+     },
+     {
+      "termo": "Vitaliciedade",
+      "explicacao": "garantia de só perder o cargo por sentença judicial definitiva."
+     },
+     {
+      "termo": "Inamovibilidade",
+      "explicacao": "garantia de não ser transferido contra a vontade, salvo por interesse público."
+     },
+     {
+      "termo": "Investidura",
+      "explicacao": "ato pelo qual alguém assume formalmente um cargo."
+     }
+    ]
+   },
+   "original_external_layer_notes": [
+    "A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA."
+   ],
+   "set": {
+    "atencao": "O Supremo Tribunal Federal entende que esse Ministério Público especial integra a estrutura do Tribunal de Contas e não recebeu a autonomia administrativa e financeira do Ministério Público comum: a extensão do art. 130 protege os membros, e não a instituição.",
+    "external_layer_notes": [
+     "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 130): ADI 789 (citada na ADI 3.315, 2008), ADI 3.804 (2021) e ADI 4.427 (2023): o Ministério Público especial integra a estrutura do Tribunal de Contas, sem vínculo com o Ministério Público comum; o art. 130 não lhe outorga as prerrogativas de autonomia do Ministério Público comum e alcança só direitos, vedações e forma de investidura dos membros. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    ]
+   },
+   "content_provenance": [
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "atencao",
+     "content": "ADI 789, ADI 3.315 (2008), ADI 3.804 (2021) e ADI 4.427 (2023): integração à estrutura do Tribunal de Contas; sem autonomia institucional",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=130",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    },
+    {
+     "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+     "in_cf88_runtime": false,
+     "section": "external_layer_notes",
+     "content": "ADI 789; ADI 3.315; ADI 3.804; ADI 4.427",
+     "official_source": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=130",
+     "human_reason_code": "OFFICIAL_SOURCE_VERIFIED",
+     "note": "conferida diretamente na fonte oficial na revisão de 2026-10-10 e aprovada pela revisão humana; ingestão na camada externa/jurisprudencial: PENDING_EXTERNAL_INGESTION"
+    }
+   ],
+   "flags_resolved": [
+    "JURISPRUDENCE_CONTEXT_ONLY"
+   ],
+   "review_reason": "A autonomia institucional ficava em aberto; o Supremo a resolveu (integração à estrutura do Tribunal de Contas; garantia pessoal dos membros).",
+   "changes": [
+    {
+     "section": "atencao",
+     "before": "O artigo estende direitos, vedações e investidura. Outras questões, como autonomia administrativa e financeira, não estão mencionadas, e sua aplicação é tema da camada JURISPRUDÊNCIA.",
+     "after": "O Supremo Tribunal Federal entende que esse Ministério Público especial integra a estrutura do Tribunal de Contas e não recebeu a autonomia administrativa e financeira do Ministério Público comum: a extensão do art. 130 protege os membros, e não a instituição.",
+     "kind": "HUMAN_REQUESTED"
+    },
+    {
+     "section": "external_layer_notes",
+     "before": [
+      "A autonomia do Ministério Público junto aos Tribunais de Contas é tema da camada JURISPRUDÊNCIA."
+     ],
+     "after": [
+      "Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 130): ADI 789 (citada na ADI 3.315, 2008), ADI 3.804 (2021) e ADI 4.427 (2023): o Ministério Público especial integra a estrutura do Tribunal de Contas, sem vínculo com o Ministério Público comum; o art. 130 não lhe outorga as prerrogativas de autonomia do Ministério Público comum e alcança só direitos, vedações e forma de investidura dos membros. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+     ],
+     "kind": "HUMAN_REQUESTED"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.130-A",
+   "item": "B45",
+   "decision": "APPROVED",
+   "human_decision": "APPROVE",
+   "calibration_queue": "B",
+   "legal_risk_before": "MEDIUM",
+   "legal_rules_before": [
+    "SENSITIVE_THEME"
+   ],
+   "changed_sections": [],
+   "from_explanation_id": "ENTENDA/CF88:ART.130-A/BASE/1",
+   "to_explanation_id": "ENTENDA/CF88:ART.130-A/BASE/1",
+   "original_content": {
+    "o_que_diz": "O art. 130-A estabelece que o Conselho Nacional do Ministério Público tem quatorze membros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado, para mandato de dois anos com uma recondução. A composição reúne o Procurador-Geral da República, que o preside, quatro membros do Ministério Público da União, três dos Ministérios Públicos estaduais, dois juízes, dois advogados e dois cidadãos de notável saber jurídico e reputação ilibada. Os parágrafos tratam, entre outros temas, da indicação dos membros, das competências (sem prejuízo da competência disciplinar e correicional do Ministério Público da União e dos Estados e da competência dos Tribunais de Contas). Também tratam do Corregedor nacional, da atuação do Presidente do Conselho Federal da Ordem dos Advogados do Brasil e das ouvidorias.",
+    "o_que_significa": "O Conselho tem para o Ministério Público papel semelhante ao do Conselho Nacional de Justiça para o Judiciário: controla a atuação administrativa e financeira e o cumprimento dos deveres funcionais dos membros, sem prejuízo da competência dos Tribunais de Contas e da competência disciplinar da própria instituição.\nA composição mistura membros da instituição com juízes, advogados e cidadãos indicados pela Câmara e pelo Senado.\nOs membros vindos do Ministério Público são indicados pelos próprios Ministérios Públicos, na forma da lei. O Corregedor nacional é escolhido em votação secreta entre esses membros, sem possibilidade de recondução.",
+    "exemplo_pratico": "Um cidadão se queixa de que um promotor não dá andamento a um procedimento há anos. Ele pode apresentar reclamação à ouvidoria ou ao Conselho Nacional do Ministério Público.",
+    "atencao": "As competências do Conselho (§ 2º) têm explicação própria. O texto atribui ao Conselho controle administrativo, financeiro e disciplinar; ele não menciona revisão do conteúdo das manifestações dos membros.",
+    "palavras_dificeis": [
+     {
+      "termo": "Recondução",
+      "explicacao": "nova nomeação da mesma pessoa para outro mandato seguido."
+     },
+     {
+      "termo": "Corregedor",
+      "explicacao": "autoridade que fiscaliza a conduta dos membros e serviços."
+     },
+     {
+      "termo": "Ouvidoria",
+      "explicacao": "canal para receber reclamações e denúncias do público."
+     }
+    ]
+   },
+   "original_external_layer_notes": [],
+   "set": {},
+   "content_provenance": [],
+   "flags_resolved": [
+    "SENSITIVE_THEME"
+   ],
+   "review_reason": "Composição (14 membros), nomeação, mandato e Corregedor nacional corretos; não confunde o Conselho com o Ministério Público da União nem com o Conselho Nacional de Justiça.",
+   "changes": []
+  }
+ ]
+}
