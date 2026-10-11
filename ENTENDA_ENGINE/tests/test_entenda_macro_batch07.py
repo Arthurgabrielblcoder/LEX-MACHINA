@@ -717,5 +717,36 @@ class MacroBatch07HumanRoundB2(_HumanRoundChecks, unittest.TestCase):
             self.assertNotIn('3392', b(t))
         self.assertIn('MB07-17', {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
 
+class MacroBatch07HumanRoundB3(_HumanRoundChecks, unittest.TestCase):
+    """Terceira rodada da fila B do Macro07 (B46-B82), sob pré-autorização humana: encerra a fila B (MEDIUM); a fila A segue pendente."""
+    SCOPE = 'CF88_MACRO07_TRIAGE_QUEUE_B_PART3'
+    QUEUE = 'B_CLEAN_MEDIUM'
+
+    def test_counts_and_medium_queue_closed(self):
+        self.assertEqual(self.dec['decision_counts'], dict(APPROVED=15, APPROVED_AFTER_ADJUSTMENT=22, REJECTED=0))
+        self.assertEqual(len(self.by), 37)
+        if not self.later:
+            self.assertEqual(self.triage['counts']['B_CLEAN_MEDIUM'], 0)
+
+    def test_legal_points_of_the_round(self):
+        b = self.body
+        self.assertNotIn('mais leve', b('CF88:ART.136'))
+        self.assertIn('apenas à alínea c do art. 37, XVI', b('CF88:ART.142:PAR.3'))
+        self.assertIn('policiamento ostensivo e comunitário', b('CF88:ART.144:PAR.8'))
+        self.assertIn('não investiga crimes', b('CF88:ART.144:PAR.8'))
+        self.assertIn('base de cálculo efetiva da operação for inferior à presumida', b('CF88:ART.150:PAR.7'))
+        self.assertIn('Lei Complementar nº 214, de 2025', b('CF88:ART.153:PAR.6'))
+        self.assertIn('incidência única', b('CF88:ART.153:PAR.6'))
+        self.assertIn('Lei Complementar nº 190, de 2022', b('CF88:ART.155:PAR.2:INC.VII'))
+        self.assertIn('capital social a ser integralizado', b('CF88:ART.156:PAR.2'))
+        self.assertIn('Lei Complementar nº 227, de 2026', b('CF88:ART.156-B'))
+        for t in ('CF88:ART.155', 'CF88:ART.155:PAR.2', 'CF88:ART.156', 'CF88:ART.156:PAR.3'):
+            self.assertIn('de 2029 a 2032', b(t), t)
+        for t, d in self.by.items():
+            if d['decision'] == 'APPROVED_AFTER_ADJUSTMENT' and 'TRANSITION_RESOLVED_BY_VERSIONED_SOURCE' in d['flags_resolved']:
+                self.assertNotIn('na camada externa', self.act[t]['content']['atencao'] or '', t)
+            self.assertFalse([n for n in self.act[t]['external_layer_notes'] if 'EXTERNAL_VERIFICATION_REQUIRED' in n], t)
+        self.assertIn('MB07-18', {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
+
 if __name__ == '__main__':
     unittest.main()
