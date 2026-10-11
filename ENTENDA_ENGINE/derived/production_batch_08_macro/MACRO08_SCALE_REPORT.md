@@ -64,7 +64,7 @@ Sub-blocos construídos: MACRO_08_A, MACRO_08_B, MACRO_08_C, MACRO_08_D, MACRO_0
 | E_HARD_FAIL | 0 |
 
 D = 0.0% das novas.
-Jurisprudência: .
+Jurisprudência: nenhum item pendente.
 
 ## Motivos dos D
 
@@ -79,11 +79,11 @@ Jurisprudência: .
 |---|---|
 | Rascunhos (5 seções + glossário) | 0 |
 | Modelo antigo (pacote completo de todos os itens) | 0 |
-| **Apresentado ao humano (pacotes + prioridade)** | **1.063** |
+| **Apresentado ao humano (pacotes + prioridade)** | **902** |
 | — MACRO08_COMPACT_AB_REVIEW.md | 262 |
 | — MACRO08_FULL_D_REVIEW.md | 140 |
 | — MACRO08_HARD_FAIL_REPORT.md | 143 |
-| — MACRO08_HUMAN_REVIEW_PRIORITY.md | 387 |
+| — MACRO08_HUMAN_REVIEW_PRIORITY.md | 226 |
 | — MACRO08_QUICK_C_REVIEW.md | 131 |
 | Redução vs. modelo antigo | 0 (0.0%) |
 
@@ -91,9 +91,9 @@ Jurisprudência: .
 
 | Segmento | Rascunhos | Modelo antigo | Apresentado | Redução |
 |---|---|---|---|---|
-| CORPO | 0 | 0 | 0 | 0 (None%) |
-| ADCT | 0 | 0 | 0 | 0 (None%) |
-| TOTAL (lote, empacotado junto) | 0 | 0 | 1.063 | 0 (0.0%) |
+| CORPO | 0 | 0 | 0 | 0 (N/A) |
+| ADCT | 0 | 0 | 0 | 0 (N/A) |
+| TOTAL (lote, empacotado junto) | 0 | 0 | 902 | 0 (0.0%) |
 
 ## Checks estruturais
 

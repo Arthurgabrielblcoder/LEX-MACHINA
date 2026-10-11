@@ -1111,7 +1111,7 @@ def report(doc, sel, c, ms, nm, skips, tmaps):
     for a, b in zip(('LOW', 'MEDIUM', 'HIGH'), ('SIMPLE', 'STRUCTURED', 'EXTERNAL')):
         L.append(f"| {a} | {doc['legal_risk_counts'].get(a, 0)} | | {b} | {doc['complexity_counts'].get(b, 0)} |")
     L += ['', '| Fila | Itens |', '|---|---|'] + [f"| {q} | {doc['counts'][q]} |" for q in BP.QUEUES]
-    L += ['', f"D = {doc['d_ratio'] * 100:.1f}% das novas.", f"Jurisprudência: {', '.join(f'{k} {v}' for k, v in sorted(doc['jurisprudence_counts'].items()))}.", '',
+    L += ['', f"D = {doc['d_ratio'] * 100:.1f}% das novas.", f"Jurisprudência: {', '.join(f'{k} {v}' for k, v in sorted(doc['jurisprudence_counts'].items())) or 'nenhum item pendente'}.", '',
           '## Motivos dos D', ''] + [f"- {k}: {v}" for k, v in doc['d_reasons'].items()]
     L += ['', '## Achados REVIEW_REQUIRED', ''] + ([f"- {k}: {v}" for k, v in doc['finding_counts'].items()] or ['- nenhum'])
     L += ['', '## Volume para o humano', '', '| Métrica | Caracteres |', '|---|---|',
@@ -1125,7 +1125,7 @@ def report(doc, sel, c, ms, nm, skips, tmaps):
     for seg, d in doc['segments'].items():
         sm = d['metrics']
         L.append(f"| {seg} | {_n(sm['total_draft_chars'])} | {_n(sm['old_model_full_package_chars'])} | {_n(sm['presented_chars'])} | "
-                 f"{_n(sm['reduction_abs'])} ({sm['reduction_pct']}%) |")
+                 f"{_n(sm['reduction_abs'])} ({'N/A' if sm['reduction_pct'] is None else str(sm['reduction_pct']) + '%'}) |")
     L += [f"| TOTAL (lote, empacotado junto) | {_n(m['total_draft_chars'])} | {_n(m['old_model_full_package_chars'])} | {_n(m['presented_chars'])} | "
           f"{_n(m['reduction_abs'])} ({m['reduction_pct']}%) |", '',
           '## Checks estruturais', '', f"- {doc['checks']['status']}: contrato do motor, Lei Seca idêntica ao texto do perfil em todos os registros, "

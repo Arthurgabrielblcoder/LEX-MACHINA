@@ -4,7 +4,7 @@ Registro de problemas encontrados durante a missao em modulos compartilhados, ru
 
 ## Regra nova aplicada ao conteúdo antigo
 
-`JUDICIAL_REVIEW_ANNOTATED` (anotação Vide ADI/ADIN/ADC/ADPF/ADO no escopo) aplicada a 631 registros ACTIVE dos corpora anteriores (HUMAN_APPROVED_T1 382, PENDING_HUMAN_REVIEW 249). 26 registro(s) caem na regra; pela recalibração do segundo passe cada um precisa ser classificado `JUDICIAL_REVIEW_CONTEXT_ONLY` (MEDIUM) ou `JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS` (HIGH); sem classificação, a regra é REQUIRED (fail closed). Nenhum foi alterado nem reclassificado; a revisão fica para missão própria.
+`JUDICIAL_REVIEW_ANNOTATED` (anotação Vide ADI/ADIN/ADC/ADPF/ADO no escopo) aplicada a 631 registros ACTIVE dos corpora anteriores (HUMAN_APPROVED_T1 631). 26 registro(s) caem na regra; pela recalibração do segundo passe cada um precisa ser classificado `JUDICIAL_REVIEW_CONTEXT_ONLY` (MEDIUM) ou `JUDICIAL_REVIEW_REQUIRED_FOR_CORRECTNESS` (HIGH); sem classificação, a regra é REQUIRED (fail closed). Nenhum foi alterado nem reclassificado; a revisão fica para missão própria.
 
 | Target | Status | Corpus | Anotações |
 |---|---|---|---|
@@ -20,20 +20,20 @@ Registro de problemas encontrados durante a missao em modulos compartilhados, ru
 | `CF88:ART.39` | HUMAN_APPROVED_T1 | CF88_BATCH_05.entenda.jsonl | Vide ADI n. 2.135 |
 | `CF88:ART.40` | HUMAN_APPROVED_T1 | CF88_BATCH_05.entenda.jsonl | Vide ADIN 3133, Vide ADIN 3143, Vide ADIN 3184 |
 | `CF88:ART.40:PAR.18` | HUMAN_APPROVED_T1 | CF88_BATCH_05.entenda.jsonl | Vide ADIN 3133, Vide ADIN 3143, Vide ADIN 3184 |
-| `CF88:ART.92` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
-| `CF88:ART.98` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
-| `CF88:ART.100` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 4425, Vide ADI 7047, Vide ADI 7064 |
-| `CF88:ART.100:PAR.9` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 4425, Vide ADI 7047, Vide ADI 7064 |
-| `CF88:ART.100:PAR.12` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 4425 |
-| `CF88:ART.102` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
-| `CF88:ART.102:PAR.2` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
-| `CF88:ART.114` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI n. 3392, Vide ADI n. 3423, Vide ADI n. 3431, Vide ADI n. 3432, Vide ADI n. 3520, Vide ADIN 3392, Vide ADIN 3432 |
-| `CF88:ART.114:PAR.1` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI n. 3392, Vide ADI n. 3423, Vide ADI n. 3431, Vide ADI n. 3432, Vide ADI n. 3520, Vide ADIN 3432 |
-| `CF88:ART.114:PAR.3` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI n. 3423, Vide ADI n. 3431, Vide ADI n. 3520, Vide ADIN 3392, Vide ADIN 3432 |
-| `CF88:ART.166` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
-| `CF88:ART.166:PAR.9` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
-| `CF88:ART.166:PAR.11` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
-| `CF88:ART.166-A` | PENDING_HUMAN_REVIEW | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
+| `CF88:ART.92` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
+| `CF88:ART.98` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
+| `CF88:ART.100` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 4425, Vide ADI 7047, Vide ADI 7064 |
+| `CF88:ART.100:PAR.9` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 4425, Vide ADI 7047, Vide ADI 7064 |
+| `CF88:ART.100:PAR.12` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 4425 |
+| `CF88:ART.102` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
+| `CF88:ART.102:PAR.2` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADIN 3392 |
+| `CF88:ART.114` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI n. 3392, Vide ADI n. 3423, Vide ADI n. 3431, Vide ADI n. 3432, Vide ADI n. 3520, Vide ADIN 3392, Vide ADIN 3432 |
+| `CF88:ART.114:PAR.1` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI n. 3392, Vide ADI n. 3423, Vide ADI n. 3431, Vide ADI n. 3432, Vide ADI n. 3520, Vide ADIN 3432 |
+| `CF88:ART.114:PAR.3` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI n. 3423, Vide ADI n. 3431, Vide ADI n. 3520, Vide ADIN 3392, Vide ADIN 3432 |
+| `CF88:ART.166` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
+| `CF88:ART.166:PAR.9` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
+| `CF88:ART.166:PAR.11` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
+| `CF88:ART.166-A` | HUMAN_APPROVED_T1 | CF88_MACRO_07.entenda.jsonl | Vide ADI 7697 |
 
 ## Itens registrados durante a missão
 
