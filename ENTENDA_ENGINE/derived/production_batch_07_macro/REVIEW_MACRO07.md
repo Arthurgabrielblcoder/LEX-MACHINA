@@ -17,7 +17,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1586 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 211 palavras · 1583 bytes · referências 0
 - **Motivo da seleção:** Visao geral: abre o capitulo do Poder Executivo e define quem o exerce (sistema presidencialista).
 
 **O QUE DIZ**
@@ -51,7 +51,7 @@ O artigo trata do Executivo da União. Estados e Municípios têm seus próprios
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -66,7 +66,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 265 palavras · 1872 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 265 palavras · 1869 bytes · referências 0
 - **Motivo da seleção:** Visao geral: datas da eleicao presidencial, eleicao conjunta do Vice e regras de substituicao e desempate entre candidatos.
 
 **O QUE DIZ**
@@ -100,7 +100,7 @@ A regra do segundo turno vale para Presidente; Governadores e Prefeitos de Munic
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -111,7 +111,7 @@ A regra do segundo turno vale para Presidente; Governadores e Prefeitos de Munic
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.77:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.77`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 215 palavras · 1662 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 215 palavras · 1659 bytes · referências 0
 - **Motivo da seleção:** Bloco com regra central da eleicao presidencial: maioria absoluta de votos validos no primeiro turno e segundo turno entre os dois mais votados.
 
 **O QUE DIZ**
@@ -145,7 +145,7 @@ Maioria absoluta, aqui, é calculada sobre os votos válidos, e não sobre o tot
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -155,12 +155,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 78 — Posse do Presidente e do Vice-Presidente
 
-- **TARGET:** `CF88:ART.78` · `ENTENDA/CF88:ART.78/BASE/1`
+- **TARGET:** `CF88:ART.78` · `ENTENDA/CF88:ART.78/BASE/2`
 - **DISPLAY TITLE:** Art. 78 — Posse do Presidente e do Vice-Presidente
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1592 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 232 palavras · 1555 bytes · referências 0
 - **Motivo da seleção:** Visao geral: posse em sessao do Congresso, compromisso constitucional e vacancia por falta de posse em dez dias.
 
 **O QUE DIZ**
@@ -177,7 +177,7 @@ A ressalva da força maior protege o eleito que não assumiu por um motivo que n
 
 **EXEMPLO PRÁTICO**
 
-Se o Vice-Presidente eleito estiver internado em estado grave na data da posse e só puder comparecer quinze dias depois, a internação pode ser tratada como força maior, e o cargo não é declarado vago apenas pelo atraso.
+Se o Vice-Presidente eleito estiver internado em estado grave na data da posse e só puder comparecer depois de esgotado o prazo de dez dias, a internação pode ser tratada como força maior, e o cargo não é declarado vago apenas pelo atraso.
 
 **ATENÇÃO**
 
@@ -187,15 +187,14 @@ O prazo de dez dias conta da data fixada para a posse. Quem decide se houve for�
 
 - *Posse*: ato formal pelo qual a pessoa eleita assume o cargo.
 - *Força maior*: acontecimento inevitável e alheio à vontade da pessoa, que a impede de agir.
-- *Vacância*: situação em que o cargo fica sem titular.
 
 **CAMADA EXTERNA**
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Vacância)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Número ilustrativo desnecessário (quinze dias) substituído pela referência ao prazo do texto; glossário "Vacância" sem uso no corpo retirado. (seções: exemplo_pratico, palavras_dificeis)
 
 ---
 
@@ -210,7 +209,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 205 palavras · 1580 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 205 palavras · 1577 bytes · referências 0
 - **Motivo da seleção:** Visao geral: distingue substituicao (impedimento) de sucessao (vaga) e situa as atribuicoes do Vice.
 
 **O QUE DIZ**
@@ -244,7 +243,7 @@ Se Presidente e Vice estiverem impedidos ou os dois cargos vagarem, aplicam-se o
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -259,7 +258,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 206 palavras · 1461 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 206 palavras · 1458 bytes · referências 0
 - **Motivo da seleção:** Visao geral: ordem dos chamados ao exercicio da Presidencia quando Presidente e Vice faltam.
 
 **O QUE DIZ**
@@ -292,7 +291,7 @@ Exercer a Presidência não é o mesmo que suceder no cargo. Os chamados pelo ar
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -302,12 +301,12 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 
 ### Art. 81 — Dupla vacância: nova eleição
 
-- **TARGET:** `CF88:ART.81` · `ENTENDA/CF88:ART.81/BASE/1`
+- **TARGET:** `CF88:ART.81` · `ENTENDA/CF88:ART.81/BASE/2`
 - **DISPLAY TITLE:** Art. 81 — Dupla vacância: nova eleição
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 221 palavras · 1599 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 224 palavras · 1616 bytes · referências 0
 - **Motivo da seleção:** Visao geral: eleicao direta ou indireta quando vagam os cargos de Presidente e Vice, e mandato-tampao.
 
 **O QUE DIZ**
@@ -316,7 +315,7 @@ O art. 81 determina nova eleição quando vagam os cargos de Presidente e Vice: 
 
 **O QUE SIGNIFICA**
 
-Quando só o Presidente sai, o Vice o sucede (art. 79). O art. 81 trata da situação mais rara em que os dois cargos ficam vagos.
+Quando só o Presidente sai, o Vice o sucede (art. 79). O art. 81 trata da situação mais rara de dupla vacância, em que os dois cargos ficam vagos.
 
 A Constituição distingue o momento da vacância. Se ela ocorre antes dos dois últimos anos do período, a eleição é direta, pelo povo. Nos dois últimos anos, a eleição é indireta, feita pelo Congresso, na forma da lei (§ 1º, com explicação própria).
 
@@ -339,9 +338,9 @@ Enquanto a nova eleição não acontece, a Presidência é exercida pela linha d
 
 —
 
-**WARNINGS:** TERM_NOT_USED (palavras_dificeis: Dupla vacância)
+**WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Glossário "Dupla vacância" passa a ser usado no corpo (TERM_NOT_USED). (seções: o_que_significa)
 
 ---
 
@@ -352,7 +351,7 @@ Enquanto a nova eleição não acontece, a Presidência é exercida pela linha d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.81`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 182 palavras · 1443 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 182 palavras · 1440 bytes · referências 0
 - **Motivo da seleção:** Dispositivo com regra autonoma e excepcional: eleicao indireta do Presidente e do Vice pelo Congresso Nacional.
 
 **O QUE DIZ**
@@ -385,7 +384,7 @@ A eleição indireta depende do momento da segunda vaga, que precisa ocorrer nos
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: anos do período presidencial a eleição para ambos); PARENT_REPETITION (*: CF88:ART.81: 0.333)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Eleição indireta nos dois últimos anos, em trinta dias, na forma da lei; coerente com o T1 do art. 81.
 
 ---
 
@@ -496,7 +495,7 @@ Sem explicação própria: 28 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 261 palavras · 2154 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 261 palavras · 2151 bytes · referências 0
 - **Motivo da seleção:** Visao geral: organiza por tema as competencias privativas do Presidente e situa a possibilidade de delegacao.
 
 **O QUE DIZ**
@@ -531,7 +530,7 @@ O inciso XXVII mostra que a lista não é fechada: outras atribuições do Presi
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -542,7 +541,7 @@ O inciso XXVII mostra que a lista não é fechada: outras atribuições do Presi
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.84`, `CF88:ART.84:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 216 palavras · 1688 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 216 palavras · 1685 bytes · referências 0
 - **Motivo da seleção:** Item com conceito proprio relevante: participacao final no processo legislativo e poder regulamentar (decreto de execucao).
 
 **O QUE DIZ**
@@ -577,7 +576,7 @@ O decreto de execução do inciso IV é diferente do decreto previsto no inciso 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -588,7 +587,7 @@ O decreto de execução do inciso IV é diferente do decreto previsto no inciso 
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.84`, `CF88:ART.84:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1758 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 217 palavras · 1755 bytes · referências 0
 - **Motivo da seleção:** Inciso-bloco com duas alineas: decreto presidencial sem lei previa para organizacao da administracao e extincao de cargos vagos.
 
 **O QUE DIZ**
@@ -622,7 +621,7 @@ Criar ou extinguir órgão público e criar cargo continuam exigindo lei. O decr
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -679,7 +678,7 @@ A competência presidencial não é ilimitada. O Supremo Tribunal Federal reconh
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · DEPENDENT_ON_PARENT · contexto: `CF88:ART.84`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 197 palavras · 1611 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 197 palavras · 1608 bytes · referências 0
 - **Motivo da seleção:** Dispositivo com regra propria: quais atribuicoes podem ser delegadas e a quem.
 
 **O QUE DIZ**
@@ -711,7 +710,7 @@ A expressão "primeira parte" significa que, no inciso XXV, só o provimento de 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -915,7 +914,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1818 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 241 palavras · 1815 bytes · referências 0
 - **Motivo da seleção:** Visao geral: requisitos para ser Ministro de Estado e suas atribuicoes, incluindo a referenda de atos do Presidente.
 
 **O QUE DIZ**
@@ -949,7 +948,7 @@ Só para um Ministério a Constituição exige brasileiro nato: o cargo de Minis
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -964,7 +963,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1411 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 179 palavras · 1408 bytes · referências 0
 - **Motivo da seleção:** Visao geral: reserva de lei para criar e extinguir Ministerios e orgaos publicos.
 
 **O QUE DIZ**
@@ -997,7 +996,7 @@ Transferir atribuições entre órgãos já existentes, sem criar nem extinguir 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1012,7 +1011,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1371 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 179 palavras · 1368 bytes · referências 0
 - **Motivo da seleção:** Visao geral: natureza consultiva do Conselho da Republica e quem o integra.
 
 **O QUE DIZ**
@@ -1046,7 +1045,7 @@ O Conselho é consultivo: sua manifestação não obriga o Presidente.
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1061,7 +1060,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1572 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 211 palavras · 1569 bytes · referências 0
 - **Motivo da seleção:** Visao geral: materias sobre as quais o Conselho da Republica se pronuncia e regras de funcionamento.
 
 **O QUE DIZ**
@@ -1094,7 +1093,7 @@ Ouvir o Conselho é etapa prevista para a intervenção federal, o estado de def
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: federal estado de defesa e estado de sítio); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Diante de uma grave crise entre Poderes, o Presidente convoc)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1109,7 +1108,7 @@ Sem explicação própria: 15 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 237 palavras · 1754 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 237 palavras · 1751 bytes · referências 0
 - **Motivo da seleção:** Visao geral: natureza, composicao e competencias do Conselho de Defesa Nacional.
 
 **O QUE DIZ**
@@ -1143,7 +1142,7 @@ As hipóteses de estado de defesa, estado de sítio e intervenção federal apar
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1298,7 +1297,7 @@ O inciso não define o que conta como atividade jurídica. O Supremo Tribunal Fe
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.93`, `CF88:ART.93:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 287 palavras · 2173 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 287 palavras · 2170 bytes · referências 0
 - **Motivo da seleção:** Inciso-bloco: alternancia entre antiguidade e merecimento e as cinco alineas com requisitos e limites da promocao.
 
 **O QUE DIZ**
@@ -1333,7 +1332,7 @@ A ressalva da alínea b permite promover quem não preenche os requisitos de tem
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Em outra vaga, aberta por antiguidade, para deixar de promov)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1344,7 +1343,7 @@ A ressalva da alínea b permite promover quem não preenche os requisitos de tem
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.93`, `CF88:ART.93:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 236 palavras · 1731 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 236 palavras · 1728 bytes · referências 2
 - **Motivo da seleção:** Item com regra numerica propria: escalonamento do subsidio da magistratura a partir dos Ministros do Supremo.
 
 **O QUE DIZ**
@@ -1378,7 +1377,7 @@ O inciso trata da estrutura do escalonamento; os valores concretos dependem de l
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1389,7 +1388,7 @@ O inciso trata da estrutura do escalonamento; os valores concretos dependem de l
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.93`, `CF88:ART.93:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 225 palavras · 1745 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 225 palavras · 1742 bytes · referências 0
 - **Motivo da seleção:** Item com garantia procedimental propria: remocao e disponibilidade do magistrado por interesse publico exigem maioria absoluta e ampla defesa.
 
 **O QUE DIZ**
@@ -1425,7 +1424,7 @@ Remoção por interesse público é diferente da remoção a pedido do próprio 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1530,7 +1529,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 268 palavras · 1900 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 268 palavras · 1897 bytes · referências 0
 - **Motivo da seleção:** Visao geral: reserva de um quinto das vagas de certos tribunais para membros do Ministerio Publico e advogados, e o procedimento de escolha.
 
 **O QUE DIZ**
@@ -1565,7 +1564,7 @@ O quinto também aparece, com regras próprias, em outros tribunais, como os do 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: um quinto dos lugares dos tribunais regionais federais)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1669,7 +1668,7 @@ Vitaliciedade não é o mesmo que estabilidade dos servidores (art. 41): o vital
 - **DISPOSITIVO:** PARAGRAFO_UNICO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · DEPENDENT_ON_PARENT · contexto: `CF88:ART.95`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1697 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 222 palavras · 1694 bytes · referências 0
 - **Motivo da seleção:** Paragrafo-bloco com cinco vedacoes da magistratura, cada uma com ressalva ou prazo proprio.
 
 **O QUE DIZ**
@@ -1703,7 +1702,7 @@ As exceções do inciso IV dependem de previsão em lei; não basta a vontade do
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1904,7 +1903,7 @@ O juiz de paz exerce atribuições conciliatórias sem caráter jurisdicional: n
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.98`, `CF88:ART.98:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 249 palavras · 2040 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 249 palavras · 2037 bytes · referências 0
 - **Motivo da seleção:** Item com conceitos proprios muito cobrados: causas de menor complexidade, infracoes de menor potencial ofensivo, procedimento oral e sumarissimo, transacao e turmas recursais.
 
 **O QUE DIZ**
@@ -1940,7 +1939,7 @@ O conceito de causa de menor complexidade e de infração de menor potencial ofe
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -1955,7 +1954,7 @@ Sem explicação própria: 7 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1897 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 241 palavras · 1894 bytes · referências 0
 - **Motivo da seleção:** Visao geral: autonomia do Judiciario e o procedimento da proposta orcamentaria dos tribunais.
 
 **O QUE DIZ**
@@ -1989,7 +1988,7 @@ A proposta do Judiciário integra o projeto de lei orçamentária, que depende d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: com os demais poderes na lei de diretrizes); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: do supremo tribunal federal e dos tribunais superiores)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2000,7 +1999,7 @@ A proposta do Judiciário integra o projeto de lei orçamentária, que depende d
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.99:PAR.4`, `CF88:ART.99:PAR.5`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.99`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 234 palavras · 1936 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 234 palavras · 1933 bytes · referências 0
 - **Motivo da seleção:** Bloco: consequencias do atraso e do excesso da proposta orcamentaria do Judiciario e limite na execucao.
 
 **O QUE DIZ**
@@ -2034,7 +2033,7 @@ A ressalva do § 5º exige autorização prévia: créditos suplementares ou esp
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.99: 0.263)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2141,7 +2140,7 @@ Doença grave e deficiência são definidas na forma da lei. A idade de sessenta
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.100:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 222 palavras · 1775 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 222 palavras · 1772 bytes · referências 0
 - **Motivo da seleção:** Bloco: pagamento sem precatorio das obrigacoes de pequeno valor e fixacao de limites por cada ente.
 
 **O QUE DIZ**
@@ -2175,7 +2174,7 @@ O município não pode fixar limite abaixo do maior benefício do regime geral d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: maior benefício do regime geral de previdência social)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2322,7 +2321,7 @@ A redação literal desses parágrafos permanece relevante para compreender a ev
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 250 palavras · 1922 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 250 palavras · 1919 bytes · referências 0
 - **Motivo da seleção:** Paragrafo-bloco: cinco finalidades para as quais o credor pode oferecer creditos reconhecidos contra o proprio ente devedor.
 
 **O QUE DIZ**
@@ -2357,7 +2356,7 @@ As operações valem com o mesmo ente devedor. O crédito contra um Estado não 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: próprios ou adquiridos de terceiros reconhecidos pelo ente)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Hipóteses do § 11 conferidas literalmente (redação da EC 113/2021).
 
 ---
 
@@ -2411,12 +2410,12 @@ O regime federal está no art. 3º da Emenda Constitucional nº 113, de 2021, na
 
 ### Art. 100, §§ 13 e 14 — Cessão de precatórios
 
-- **TARGET:** `CF88:ART.100:PAR.13` · `ENTENDA/CF88:ART.100:PAR.13/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.13` · `ENTENDA/CF88:ART.100:PAR.13/BASE/2`
 - **DISPLAY TITLE:** Art. 100, §§ 13 e 14 — Cessão de precatórios
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.100:PAR.14`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 190 palavras · 1567 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 208 palavras · 1707 bytes · referências 0
 - **Motivo da seleção:** Bloco: cessao do credito em precatorio sem concordancia do devedor, perda das preferencias pelo cessionario e eficacia apos comunicacao.
 
 **O QUE DIZ**
@@ -2437,7 +2436,7 @@ Um aposentado com direito à superpreferência vende seu precatório a uma empre
 
 **ATENÇÃO**
 
-Enquanto não houver a comunicação por petição ao Tribunal e ao ente devedor, a cessão não produz efeitos.
+Enquanto não houver a comunicação por petição ao Tribunal e ao ente devedor, a cessão não produz efeitos. A remissão ao § 9º não restabelece a compensação unilateral, afastada pelo Supremo Tribunal Federal (§ 9º, com explicação própria).
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2450,18 +2449,18 @@ Enquanto não houver a comunicação por petição ao Tribunal e ao ente devedor
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: ceder total ou parcialmente seus créditos em precatórios)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Coerência com o T1 aprovado do § 9º: a remissão do § 14 ao § 9º não restabelece a compensação unilateral declarada inconstitucional. (seções: atencao)
 
 ---
 
 ### Art. 100, § 20 — Precatório de valor muito alto
 
-- **TARGET:** `CF88:ART.100:PAR.20` · `ENTENDA/CF88:ART.100:PAR.20/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.20` · `ENTENDA/CF88:ART.100:PAR.20/BASE/2`
 - **DISPLAY TITLE:** Art. 100, § 20 — Precatório de valor muito alto
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1791 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 246 palavras · 1812 bytes · referências 0
 - **Motivo da seleção:** Dispositivo com regra autonoma e numerica: parcelamento do precatorio superior a quinze por cento do total e acordo com desconto maximo.
 
 **O QUE DIZ**
@@ -2476,7 +2475,7 @@ A outra opção é o acordo. O credor pode aceitar receber menos para receber an
 
 **EXEMPLO PRÁTICO**
 
-Uma construtora tem precatório que representa vinte por cento do total de precatórios apresentados para o ano. Ela recebe quinze por cento do valor no ano seguinte e o saldo em cinco parcelas anuais, corrigidas, ou pode fazer acordo com desconto de até quarenta por cento.
+Uma construtora tem precatório de valor superior a quinze por cento do total de precatórios apresentados para o ano. Ela recebe quinze por cento do valor até o fim do exercício seguinte e o saldo em cinco parcelas anuais, corrigidas, ou pode fazer acordo com desconto de até quarenta por cento.
 
 **ATENÇÃO**
 
@@ -2493,23 +2492,23 @@ O acordo depende da regulamentação do ente devedor e de não haver recurso ou 
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Número ilustrativo desnecessário (vinte por cento) substituído pela condição do texto; prazo do pagamento inicial alinhado ao texto. (seções: exemplo_pratico)
 
 ---
 
 ### Art. 100, §§ 23 e 24 — Limites anuais de pagamento de Estados, Distrito Federal e Municípios
 
-- **TARGET:** `CF88:ART.100:PAR.23` · `ENTENDA/CF88:ART.100:PAR.23/BASE/1`
+- **TARGET:** `CF88:ART.100:PAR.23` · `ENTENDA/CF88:ART.100:PAR.23/BASE/2`
 - **DISPLAY TITLE:** Art. 100, §§ 23 e 24 — Limites anuais de pagamento de Estados, Distrito Federal e Municípios
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.100:PAR.24`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 320 palavras · 2510 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 338 palavras · 2820 bytes · referências 0
 - **Motivo da seleção:** Bloco: limites percentuais da receita corrente liquida para pagamento de precatorios conforme o estoque em mora e sua elevacao por decenio.
 
 **O QUE DIZ**
 
-O § 23 limita os pagamentos anuais de precatórios dos Estados, do Distrito Federal e dos Municípios a um percentual da receita corrente líquida do exercício anterior. Há nove faixas; por exemplo, o percentual vai de um por cento, para quem não tem estoque ou tem estoque em mora de até quinze por cento dessa receita, a cinco por cento, quando o estoque ultrapassa oitenta e cinco por cento, em nove faixas. O § 24 eleva esses limites em meio ponto percentual por decênio, a partir de 1º de janeiro de 2036, se ainda houver estoque em mora.
+O § 23 limita os pagamentos anuais de precatórios dos Estados, do Distrito Federal e dos Municípios a um percentual da receita corrente líquida do exercício anterior. Há nove faixas; por exemplo, o percentual vai de um por cento, para quem não tem estoque ou tem estoque em mora de até quinze por cento dessa receita, a cinco por cento, quando o estoque ultrapassa oitenta e cinco por cento. O § 24 eleva esses limites em meio ponto percentual por decênio, a partir de 1º de janeiro de 2036, se ainda houver estoque em mora.
 
 **O QUE SIGNIFICA**
 
@@ -2525,7 +2524,7 @@ Um Município com estoque de precatórios em mora igual a trinta por cento da su
 
 **ATENÇÃO**
 
-As faixas, os percentuais e a data de 2036 constam do texto atual, mas a sistemática foi introduzida recentemente por emenda; a transição entre regimes deve ser consultada na camada externa. O § 23 trata apenas de Estados, Distrito Federal e Municípios.
+As faixas, os percentuais e a data de 2036 constam do texto atual. A emenda que instituiu essa sistemática, de 2025, vigora desde a publicação e manda aplicar o limite inclusive aos precatórios inscritos antes dela; o prazo de quitação do regime especial do art. 101 do ADCT deixou de ser aplicável. O § 23 trata apenas de Estados, Distrito Federal e Municípios.
 
 **PALAVRAS DIFÍCEIS**
 
@@ -2535,11 +2534,11 @@ As faixas, os percentuais e a data de 2036 constam do texto atual, mas a sistem�
 
 **CAMADA EXTERNA**
 
-- §§ 23 e 24 incluídos pela Emenda Constitucional nº 136, de 2025 (fonte canônica estrutural); eventuais regras de transição e do ADCT ficam na camada externa: EXTERNAL_VERIFICATION_REQUIRED.
+- §§ 23 e 24 incluídos pela Emenda Constitucional nº 136, de 2025 (fonte canônica estrutural); verificado na fonte oficial (Planalto): EC 136/2025, art. 7º (o prazo de quitação do art. 101 do ADCT deixa de ser aplicável), art. 8º (o § 23 aplica-se inclusive aos precatórios inscritos até a promulgação) e art. 9º (vigência na publicação). Ingestão na camada externa: PENDING_EXTERNAL_INGESTION.
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a partir de 1 de janeiro de 2036); EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Município com estoque de precatórios em mora igual a trin)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — A transição estava em aberto (EXTERNAL_VERIFICATION_REQUIRED); a EC 136/2025 a define (arts. 7º a 9º). Retirada a repetição "em nove faixas". (seções: atencao, external_layer_notes, o_que_diz)
 
 ---
 
@@ -2550,7 +2549,7 @@ As faixas, os percentuais e a data de 2036 constam do texto atual, mas a sistem�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.100`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 232 palavras · 1851 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 232 palavras · 1848 bytes · referências 0
 - **Motivo da seleção:** Paragrafo-bloco: quatro consequencias para o ente que nao libera no prazo os recursos dos precatorios.
 
 **O QUE DIZ**
@@ -2582,7 +2581,7 @@ O inciso III remete à legislação de responsabilidade fiscal e de improbidade:
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da legislação de responsabilidade fiscal e de improbidade)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2597,7 +2596,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 1825 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 1822 bytes · referências 0
 - **Motivo da seleção:** Visao geral: numero de Ministros, requisitos e forma de escolha do Supremo Tribunal Federal.
 
 **O QUE DIZ**
@@ -2632,7 +2631,7 @@ O artigo exige apenas cidadania; outra regra da Constituição reserva o cargo d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de trinta e cinco e menos de setenta)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2746,7 +2745,7 @@ A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.102`, `CF88:ART.102:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 224 palavras · 1897 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 224 palavras · 1894 bytes · referências 0
 - **Motivo da seleção:** Item: hipoteses de cabimento do recurso extraordinario.
 
 **O QUE DIZ**
@@ -2781,7 +2780,7 @@ Além das alíneas, o recorrente precisa demonstrar a repercussão geral da ques
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: julgar válida lei ou ato de governo local)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2838,7 +2837,7 @@ O texto não menciona o Poder Legislativo entre os destinatários do efeito vinc
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.102`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 177 palavras · 1618 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 177 palavras · 1615 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: requisito da repercussao geral e quorum de recusa.
 
 **O QUE DIZ**
@@ -2872,7 +2871,7 @@ Os critérios do que tem repercussão geral estão na lei processual, e não nes
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (o_que_diz: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (o_que_significa: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (exemplo_pratico: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: repercussão geral); JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: lo pela manifestação de dois terços de seus)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -2979,7 +2978,7 @@ O § 3º atribui ao Advogado-Geral a defesa do ato impugnado, e não a emissão 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.103`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 202 palavras · 1655 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 202 palavras · 1652 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: consequencia da declaracao de inconstitucionalidade por omissao e prazo para orgao administrativo.
 
 **O QUE DIZ**
@@ -3013,7 +3012,7 @@ O texto não fixa prazo para o Poder Legislativo. O que acontece quando a omiss�
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3225,7 +3224,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 285 palavras · 2018 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 285 palavras · 2015 bytes · referências 0
 - **Motivo da seleção:** Visao geral: numero minimo de Ministros, requisitos, nomeacao e origem das vagas do Superior Tribunal de Justica.
 
 **O QUE DIZ**
@@ -3262,7 +3261,7 @@ Diferentemente do art. 101, aqui o texto exige que o escolhido seja brasileiro. 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de trinta e cinco e menos de setenta); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: desembargadores dos tribunais de justiça indicados em lista)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3425,7 +3424,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1531 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 203 palavras · 1528 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estrutura em dois graus da Justica Federal.
 
 **O QUE DIZ**
@@ -3459,7 +3458,7 @@ O artigo apenas lista os órgãos. A composição dos tribunais está no art. 10
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3474,7 +3473,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 263 palavras · 1909 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 263 palavras · 1906 bytes · referências 0
 - **Motivo da seleção:** Visao geral: numero minimo, requisitos, origem das vagas, justica itinerante e camaras regionais.
 
 **O QUE DIZ**
@@ -3509,7 +3508,7 @@ A remoção e a permuta de juízes dos tribunais, assim como a jurisdição e a 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: brasileiros com mais de trinta e menos de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3754,7 +3753,7 @@ No § 2º, a escolha é do autor da ação; no § 1º, o local é fixo.
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.109:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.109`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 192 palavras · 1734 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 192 palavras · 1731 bytes · referências 1
 - **Motivo da seleção:** Bloco: delegacao por lei de causas previdenciarias a Justica estadual e o recurso ao tribunal federal.
 
 **O QUE DIZ**
@@ -3788,7 +3787,7 @@ O § 3º é permissivo: a lei pode autorizar a delegação e definir suas condi�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3848,7 +3847,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 203 palavras · 1531 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 203 palavras · 1528 bytes · referências 0
 - **Motivo da seleção:** Visao geral: organizacao territorial da Justica Federal e regra para os Territorios.
 
 **O QUE DIZ**
@@ -3882,7 +3881,7 @@ A localização das varas é definida em lei. A regra dos Territórios depende d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nos territórios federais a jurisdição e as atribuições)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3897,7 +3896,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 176 palavras · 1384 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 176 palavras · 1381 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estrutura em tres niveis da Justica do Trabalho.
 
 **O QUE DIZ**
@@ -3931,7 +3930,7 @@ Os parágrafos originais do artigo foram revogados; a composição e o funcionam
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3946,7 +3945,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 293 palavras · 2135 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 293 palavras · 2132 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao, requisitos, nomeacao, orgaos junto ao tribunal e reclamacao.
 
 **O QUE DIZ**
@@ -3982,7 +3981,7 @@ A competência do Tribunal Superior do Trabalho é definida em lei (§ 1º). As 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: de trinta e cinco e menos de setenta)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -3997,7 +3996,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 195 palavras · 1405 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 195 palavras · 1402 bytes · referências 0
 - **Motivo da seleção:** Visao geral: criacao das varas por lei e atribuicao da jurisdicao trabalhista a juizes de direito.
 
 **O QUE DIZ**
@@ -4031,7 +4030,7 @@ A atribuição ao juiz de direito é uma possibilidade, a ser definida em lei, e
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: aos juízes de direito com recurso para o)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4046,7 +4045,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 207 palavras · 1645 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 207 palavras · 1642 bytes · referências 0
 - **Motivo da seleção:** Visao geral: remissao a lei da organizacao dos orgaos da Justica do Trabalho.
 
 **O QUE DIZ**
@@ -4080,7 +4079,7 @@ As garantias da magistratura do trabalho incluem as que a própria Constituiçã
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Quem quer saber como funciona internamente um Tribunal Regio)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4286,7 +4285,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1824 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 241 palavras · 1821 bytes · referências 0
 - **Motivo da seleção:** Visao geral: composicao, origem das vagas, justica itinerante e camaras regionais.
 
 **O QUE DIZ**
@@ -4320,7 +4319,7 @@ O texto não exige tempo mínimo de exercício para a promoção dos juízes do 
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: mais de trinta e menos de setenta anos)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4335,7 +4334,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 163 palavras · 1230 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 163 palavras · 1227 bytes · referências 0
 - **Motivo da seleção:** Visao geral: jurisdicao exercida por juiz singular na primeira instancia trabalhista.
 
 **O QUE DIZ**
@@ -4371,7 +4370,7 @@ O artigo trata apenas da vara do trabalho. Onde não há vara, a lei pode atribu
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4390,7 +4389,7 @@ Sem explicação própria: 5 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1588 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 179 palavras · 1585 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estrutura da Justica Eleitoral.
 
 **O QUE DIZ**
@@ -4424,7 +4423,7 @@ A composição dos tribunais eleitorais está nos arts. 119 e 120. A organizaç�
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4439,7 +4438,7 @@ Sem explicação própria: 6 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 226 palavras · 1728 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 226 palavras · 1725 bytes · referências 0
 - **Motivo da seleção:** Visao geral: numero minimo, origem das vagas, presidencia e corregedoria do Tribunal Superior Eleitoral.
 
 **O QUE DIZ**
@@ -4473,7 +4472,7 @@ O número sete é mínimo. O tempo de permanência dos juízes eleitorais é tra
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: advogados de notável saber jurídico e idoneidade moral)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4488,7 +4487,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 241 palavras · 1779 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 241 palavras · 1776 bytes · referências 0
 - **Motivo da seleção:** Visao geral: sede, composicao e presidencia dos tribunais regionais eleitorais.
 
 **O QUE DIZ**
@@ -4524,7 +4523,7 @@ As vagas da advocacia exigem notável saber jurídico e idoneidade moral. O temp
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: juízes de direito escolhidos pelo tribunal de justiça)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4539,7 +4538,7 @@ Sem explicação própria: 8 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 211 palavras · 1829 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 211 palavras · 1826 bytes · referências 0
 - **Motivo da seleção:** Visao geral: lei complementar, garantias, mandato dos juizes e recorribilidade das decisoes.
 
 **O QUE DIZ**
@@ -4573,7 +4572,7 @@ Os §§ 2º, 3º e 4º têm explicações próprias. A garantia de inamovibilida
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4584,7 +4583,7 @@ Os §§ 2º, 3º e 4º têm explicações próprias. A garantia de inamovibilida
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.121`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 189 palavras · 1511 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 189 palavras · 1508 bytes · referências 2
 - **Motivo da seleção:** Dispositivo: periodo minimo, limite de bienios consecutivos e escolha dos substitutos.
 
 **O QUE DIZ**
@@ -4620,7 +4619,7 @@ O limite fala em biênios consecutivos. O texto não proíbe que a pessoa volte 
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); TERM_LOW_UTILITY (palavras_dificeis: Biênio)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4631,7 +4630,7 @@ O limite fala em biênios consecutivos. O texto não proíbe que a pessoa volte 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.121:PAR.4`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.121`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 252 palavras · 2094 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 252 palavras · 2091 bytes · referências 0
 - **Motivo da seleção:** Bloco: irrecorribilidade das decisoes do Tribunal Superior Eleitoral (§ 3º) e hipoteses de recurso contra os tribunais regionais (§ 4º).
 
 **O QUE DIZ**
@@ -4666,7 +4665,7 @@ As hipóteses de recurso contra os tribunais regionais formam lista fechada, ind
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4681,7 +4680,7 @@ Sem explicação própria: 3 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 164 palavras · 1280 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 164 palavras · 1277 bytes · referências 0
 - **Motivo da seleção:** Visao geral: estrutura da Justica Militar da Uniao.
 
 **O QUE DIZ**
@@ -4715,7 +4714,7 @@ A organização da primeira instância da Justiça Militar da União é definida
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: os tribunais e juízes militares instituídos por lei)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4730,7 +4729,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 269 palavras · 1925 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 269 palavras · 1922 bytes · referências 0
 - **Motivo da seleção:** Visao geral: quinze Ministros vitalicios, divisao entre militares e civis, requisitos dos civis.
 
 **O QUE DIZ**
@@ -4765,7 +4764,7 @@ Para os Ministros militares, o texto não fixa limite de idade; a faixa de trint
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: advogados de notório saber jurídico e conduta ilibada)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -4971,7 +4970,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 217 palavras · 1599 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 217 palavras · 1596 bytes · referências 0
 - **Motivo da seleção:** Visao geral: proposta de varas especializadas em questoes agrarias e presenca do juiz no local do litigio.
 
 **O QUE DIZ**
@@ -5006,7 +5005,7 @@ O artigo fala em proposta do Tribunal de Justiça. A instalação efetiva da var
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5021,7 +5020,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 229 palavras · 1781 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 229 palavras · 1778 bytes · referências 1
 - **Motivo da seleção:** Visao geral: natureza, funcoes e mapa dos paragrafos do Ministerio Publico.
 
 **O QUE DIZ**
@@ -5056,7 +5055,7 @@ O texto não inclui o Ministério Público em nenhum dos Poderes, mas a sua orga
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5067,7 +5066,7 @@ O texto não inclui o Ministério Público em nenhum dos Poderes, mas a sua orga
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.127`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1607 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 196 palavras · 1604 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: unidade, indivisibilidade e independencia funcional.
 
 **O QUE DIZ**
@@ -5101,7 +5100,7 @@ A independência funcional protege a convicção do membro, mas não afasta a or
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5112,7 +5111,7 @@ A independência funcional protege a convicção do membro, mas não afasta a or
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.127`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 208 palavras · 1686 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 208 palavras · 1683 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: autonomia funcional e administrativa, iniciativa sobre cargos e lei de organizacao.
 
 **O QUE DIZ**
@@ -5146,7 +5145,7 @@ O texto fala em autonomia funcional e administrativa. A proposta orçamentária 
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Um Ministério Público estadual precisa de mais servidores.)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5157,7 +5156,7 @@ O texto fala em autonomia funcional e administrativa. A proposta orçamentária 
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.127:PAR.4`, `CF88:ART.127:PAR.5`, `CF88:ART.127:PAR.6`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.127`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 230 palavras · 2039 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 230 palavras · 2036 bytes · referências 0
 - **Motivo da seleção:** Bloco: proposta orcamentaria nos limites da LDO e consequencias de atraso, excesso e despesa fora dos limites.
 
 **O QUE DIZ**
@@ -5192,7 +5191,7 @@ As regras são semelhantes às do Judiciário (art. 99, §§ 3º a 5º). O Execu
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5248,12 +5247,12 @@ O Ministério Público do Distrito Federal e Territórios faz parte do Ministér
 
 ### Art. 128, §§ 1º e 2º — Procurador-Geral da República
 
-- **TARGET:** `CF88:ART.128:PAR.1` · `ENTENDA/CF88:ART.128:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.128:PAR.1` · `ENTENDA/CF88:ART.128:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 128, §§ 1º e 2º — Procurador-Geral da República
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.128:PAR.2`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.128`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 213 palavras · 1737 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 1804 bytes · referências 0
 - **Motivo da seleção:** Bloco: nomeacao, requisitos, mandato e destituicao do Procurador-Geral da Republica.
 
 **O QUE DIZ**
@@ -5264,7 +5263,7 @@ O § 1º estabelece que o Procurador-Geral da República chefia o Ministério P�
 
 A escolha do Procurador-Geral da República combina três elementos: indicação do Presidente, limitada a membros da carreira, aprovação do Senado e mandato fixo.
 
-O texto não exige lista tríplice para o cargo federal, diferentemente do que ocorre nos Estados.
+O texto não exige lista tríplice para o cargo federal, diferentemente do que ocorre nos Estados e no Ministério Público do Distrito Federal e Territórios (§ 3º).
 
 O mandato é de dois anos, e a recondução é permitida. A destituição por iniciativa do Presidente, antes do fim do mandato, exige autorização do Senado por maioria absoluta.
 
@@ -5285,9 +5284,9 @@ O § 1º permite a recondução sem dizer quantas vezes; o § 3º, para os Estad
 
 —
 
-**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da carreira maiores de trinta e cinco anos)
+**WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: da carreira maiores de trinta e cinco anos); PARENT_REPETITION (*: CF88:ART.128: 0.237)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Coerência com os T1 aprovados do art. 128 e do § 3º: a lista tríplice vale também para o Ministério Público do Distrito Federal e Territórios. (seções: o_que_significa)
 
 ---
 
@@ -5439,12 +5438,12 @@ O Supremo Tribunal Federal reconhece que o Ministério Público pode promover, p
 
 ### Art. 129, inciso I — Ação penal pública
 
-- **TARGET:** `CF88:ART.129:INC.I` · `ENTENDA/CF88:ART.129:INC.I/BASE/1`
+- **TARGET:** `CF88:ART.129:INC.I` · `ENTENDA/CF88:ART.129:INC.I/BASE/2`
 - **DISPLAY TITLE:** Art. 129, inciso I — Ação penal pública
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 196 palavras · 1516 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 211 palavras · 1622 bytes · referências 1
 - **Motivo da seleção:** Item: titularidade privativa da acao penal publica.
 
 **O QUE DIZ**
@@ -5457,7 +5456,7 @@ Nos crimes de ação penal pública, quem acusa o réu perante o juiz é o Minis
 
 O texto diz que a ação é promovida na forma da lei. É a lei que define quais crimes são de ação pública e quais dependem de iniciativa da vítima.
 
-A polícia investiga; o Ministério Público decide se há elementos para oferecer a denúncia.
+Em regra, a polícia conduz a investigação; o Ministério Público, que também pode investigar nos limites reconhecidos pelo Supremo Tribunal Federal, decide se há elementos para oferecer a denúncia.
 
 **EXEMPLO PRÁTICO**
 
@@ -5478,7 +5477,7 @@ A Constituição admite ação privada nos crimes de ação pública quando o Mi
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Coerência com o T1 aprovado do art. 129: "a polícia investiga" sugeria exclusividade da investigação policial (Tema 184). (seções: o_que_significa)
 
 ---
 
@@ -5489,7 +5488,7 @@ A Constituição admite ação privada nos crimes de ação pública quando o Mi
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 183 palavras · 1537 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 183 palavras · 1534 bytes · referências 0
 - **Motivo da seleção:** Item: instrumentos de tutela coletiva do Ministerio Publico.
 
 **O QUE DIZ**
@@ -5523,7 +5522,7 @@ O Ministério Público não é o único legitimado para a ação civil pública:
 
 **WARNINGS:** PARENT_REPETITION (*: CF88:ART.129: 0.25)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5534,7 +5533,7 @@ O Ministério Público não é o único legitimado para a ação civil pública:
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 139 palavras · 1300 bytes · referências 1
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 139 palavras · 1297 bytes · referências 1
 - **Motivo da seleção:** Item: controle externo da policia na forma da lei complementar.
 
 **O QUE DIZ**
@@ -5566,7 +5565,7 @@ O inciso fala em controle externo da atividade policial, e não em comando da po
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5577,7 +5576,7 @@ O inciso fala em controle externo da atividade policial, e não em comando da po
 - **DISPOSITIVO:** INCISO
 - **COVERED TARGETS:** —
 - **ROLE:** ITEM · DEPENDENT_ON_PARENT · contexto: `CF88:ART.129`, `CF88:ART.129:CAPUT`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 186 palavras · 1539 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 186 palavras · 1536 bytes · referências 0
 - **Motivo da seleção:** Item: clausula aberta de funcoes compativeis e vedacao de representacao e consultoria de entidades publicas.
 
 **O QUE DIZ**
@@ -5609,7 +5608,7 @@ O inciso condiciona as novas funções à compatibilidade com a finalidade da in
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: a representação judicial e a consultoria jurídica de)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5620,7 +5619,7 @@ O inciso condiciona as novas funções à compatibilidade com a finalidade da in
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.129`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 155 palavras · 1291 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 155 palavras · 1288 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: exclusividade da carreira e dever de residir na comarca, salvo autorizacao.
 
 **O QUE DIZ**
@@ -5654,7 +5653,7 @@ A residência na comarca é a regra, e a autorização do chefe é a exceção p
 
 **WARNINGS:** EXAMPLE_REQUIREMENT_LANGUAGE (exemplo_pratico: Para isso, precisa de autorização do Procurador-Geral de Jus)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5817,7 +5816,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 279 palavras · 2228 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 279 palavras · 2225 bytes · referências 2
 - **Motivo da seleção:** Visao geral: funcoes, chefia, ingresso e representacao na execucao da divida ativa tributaria.
 
 **O QUE DIZ**
@@ -5854,7 +5853,7 @@ O § 2º tem nota de remissão a lei na fonte oficial. A organização da instit
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: ingresso nas classes iniciais das carreiras da instituição)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5869,7 +5868,7 @@ Sem explicação própria: 2 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 223 palavras · 1841 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 223 palavras · 1838 bytes · referências 0
 - **Motivo da seleção:** Visao geral: carreira, concurso com participacao da OAB, funcoes e estabilidade dos procuradores estaduais.
 
 **O QUE DIZ**
@@ -5904,7 +5903,7 @@ O artigo fala em Estados e Distrito Federal. A nota do texto oficial remete a um
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: participação da ordem dos advogados do brasil em); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_significa: da ordem dos advogados do brasil em todas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -5968,7 +5967,7 @@ Sem explicação própria: 4 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 235 palavras · 2025 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 235 palavras · 2022 bytes · referências 0
 - **Motivo da seleção:** Visao geral: natureza, funcoes, organizacao e principios da Defensoria Publica.
 
 **O QUE DIZ**
@@ -6005,7 +6004,7 @@ O texto fala em necessitados, na forma do art. 5º, LXXIV, que exige comprovaç�
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: instituição permanente essencial à função jurisdicional do e)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6016,7 +6015,7 @@ O texto fala em necessitados, na forma do art. 5º, LXXIV, que exige comprovaç�
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.134:PAR.3`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.134`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 179 palavras · 1592 bytes · referências 2
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 179 palavras · 1589 bytes · referências 2
 - **Motivo da seleção:** Bloco: autonomia funcional e administrativa e iniciativa orcamentaria das Defensorias estaduais (§ 2º), estendidas a Uniao e Distrito Federal (§ 3º).
 
 **O QUE DIZ**
@@ -6050,7 +6049,7 @@ A remissão ao art. 99, § 2º, trata do encaminhamento da proposta orçamentár
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: defensorias públicas da união e do distrito federal)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 
@@ -6065,7 +6064,7 @@ Sem explicação própria: 1 dispositivos (ver `SELECTION_REPORT.json`).
 - **DISPOSITIVO:** ARTIGO
 - **COVERED TARGETS:** —
 - **ROLE:** OVERVIEW · AUTONOMOUS · contexto: —
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 149 palavras · 1265 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 149 palavras · 1262 bytes · referências 0
 - **Motivo da seleção:** Visao geral: remuneracao por subsidio para as carreiras das Secoes II e III.
 
 **O QUE DIZ**
@@ -6097,7 +6096,7 @@ O artigo remete ao art. 39, § 4º. As parcelas que podem ser pagas além do sub
 
 **WARNINGS:** JURISPRUDENCE_WORDING_IN_BODY (atencao: JURISPRUDÊNCIA); NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: das carreiras disciplinadas nas seções ii e iii)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Não estende o art. 135 à Defensoria: após a EC 80/2014 a Defensoria passou à Seção IV, e o artigo remete às Seções II e III (MB07-19).
 
 ---
 
@@ -6155,12 +6154,12 @@ O parecer dos Conselhos é exigido, mas o texto não diz que ele vincula o Presi
 
 ### Art. 136, § 1º — Medidas do estado de defesa
 
-- **TARGET:** `CF88:ART.136:PAR.1` · `ENTENDA/CF88:ART.136:PAR.1/BASE/1`
+- **TARGET:** `CF88:ART.136:PAR.1` · `ENTENDA/CF88:ART.136:PAR.1/BASE/2`
 - **DISPLAY TITLE:** Art. 136, § 1º — Medidas do estado de defesa
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** —
 - **ROLE:** DEVICE · AUTONOMOUS · contexto: `CF88:ART.136`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 254 palavras · 1902 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 255 palavras · 1906 bytes · referências 0
 - **Motivo da seleção:** Dispositivo: conteudo obrigatorio do decreto e lista fechada de medidas coercitivas.
 
 **O QUE DIZ**
@@ -6177,7 +6176,7 @@ A ocupação de bens e serviços públicos só é admitida em caso de calamidade
 
 **EXEMPLO PRÁTICO**
 
-Diante de uma crise institucional em uma capital, o decreto restringe reuniões em determinadas praças por quinze dias. O decreto não pode, por exemplo, autorizar busca em residências, porque essa medida não está na lista.
+Diante de uma crise institucional em uma capital, o decreto restringe reuniões em determinadas praças pelo prazo nele fixado. O decreto não pode, por exemplo, autorizar busca em residências, porque essa medida não está na lista.
 
 **ATENÇÃO**
 
@@ -6194,7 +6193,7 @@ As medidas são aplicadas nos termos e limites da lei. A restrição ao sigilo d
 
 **WARNINGS:** NEAR_COPY_OF_OFFICIAL_TEXT (o_que_diz: nos termos e limites da lei as medidas)
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED_AFTER_ADJUSTMENT — Número ilustrativo desnecessário (quinze dias) retirado. (seções: exemplo_pratico)
 
 ---
 
@@ -6251,7 +6250,7 @@ O inciso I trata da prisão por crime contra o Estado; os incisos III e IV valem
 - **DISPOSITIVO:** PARAGRAFO
 - **COVERED TARGETS:** `CF88:ART.136:PAR.5`, `CF88:ART.136:PAR.6`, `CF88:ART.136:PAR.7`
 - **ROLE:** BLOCK · AUTONOMOUS · contexto: `CF88:ART.136`
-- **STATUS:** PENDING_HUMAN_REVIEW · vigência CURRENT · 237 palavras · 1908 bytes · referências 0
+- **STATUS:** HUMAN_APPROVED_T1 · vigência CURRENT · 237 palavras · 1905 bytes · referências 0
 - **Motivo da seleção:** Bloco: envio do decreto ao Congresso em vinte e quatro horas, convocacao no recesso, prazo de exame e efeito da rejeicao.
 
 **O QUE DIZ**
@@ -6285,7 +6284,7 @@ A maioria absoluta do § 4º é exigida para a decisão do Congresso. O fim da m
 
 **WARNINGS:** —
 
-- [ ] APROVAR   - [ ] AJUSTAR   - [ ] REJEITAR
+**DECISÃO HUMANA:** APPROVED — Conteúdo conferido com a Lei Seca e com os T1 aprovados relacionados; sem omissão material nem conflito.
 
 ---
 

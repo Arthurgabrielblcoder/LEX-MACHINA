@@ -748,5 +748,29 @@ class MacroBatch07HumanRoundB3(_HumanRoundChecks, unittest.TestCase):
             self.assertFalse([n for n in self.act[t]['external_layer_notes'] if 'EXTERNAL_VERIFICATION_REQUIRED' in n], t)
         self.assertIn('MB07-18', {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
 
+class MacroBatch07HumanRoundA1(_HumanRoundChecks, unittest.TestCase):
+    """Primeira rodada da fila A do Macro07 (A1-A72), sob pré-autorização humana: 64 aprovações sem alteração e 8 ajustes; nenhum item retido."""
+    SCOPE = 'CF88_MACRO07_TRIAGE_QUEUE_A_PART1'
+    QUEUE = 'A_CLEAN_LOW'
+
+    def test_counts(self):
+        self.assertEqual(self.dec['decision_counts'], dict(APPROVED=64, APPROVED_AFTER_ADJUSTMENT=8, REJECTED=0))
+        self.assertEqual(len(self.by), 72)
+
+    def test_legal_points_of_the_round(self):
+        b = self.body
+        self.assertNotIn('quinze dias depois', b('CF88:ART.78'))
+        self.assertNotIn('Vacância', [g['termo'] for g in self.act['CF88:ART.78']['content']['palavras_dificeis']])
+        self.assertIn('dupla vacância', b('CF88:ART.81'))
+        self.assertIn('não restabelece a compensação unilateral', b('CF88:ART.100:PAR.13'))
+        self.assertNotIn('vinte por cento', b('CF88:ART.100:PAR.20'))
+        self.assertIn('inclusive aos precatórios inscritos antes dela', b('CF88:ART.100:PAR.23'))
+        self.assertFalse([n for n in self.act['CF88:ART.100:PAR.23']['external_layer_notes'] if 'EXTERNAL_VERIFICATION_REQUIRED' in n])
+        self.assertIn('Ministério Público do Distrito Federal e Territórios', b('CF88:ART.128:PAR.1'))
+        self.assertIn('também pode investigar', b('CF88:ART.129:INC.I'))
+        self.assertNotIn('por quinze dias', b('CF88:ART.136:PAR.1'))
+        self.assertNotIn('Defensoria', b('CF88:ART.135'))
+        self.assertTrue({'MB07-19', 'MB07-20'} <= {i['id'] for i in load('BACKLOG_INPUT.json')['items']})
+
 if __name__ == '__main__':
     unittest.main()
