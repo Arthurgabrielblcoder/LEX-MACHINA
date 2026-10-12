@@ -44,10 +44,11 @@
    - Agora: com JUDICIAL_RESTRICTIONS, exige status judicial completo; sem, exige `temporal_note` e `revalidate_on` (`PARTIAL_EFFECTS_WITHOUT_BASIS`).
 2. **Lacunas no índice de artigos do cartão.** O `EXT_ARTIGOS.IDX` do cartão não tem o art. 10 da LC 87/1996 nem o art. 9º da Lei 7.998/1990, embora os dois estejam no texto.
    - A checagem jurídica usa o texto da norma (`ext_text_article_index.json`, sha do pin); o aparelho usa o índice do cartão.
-   - Quando falta o artigo, o aparelho usa o fallback seguro da C2 (abrir a norma sem salto). Casos: 2.
+   - Quando falta o artigo, o aparelho usa o fallback seguro da C2 (abrir a norma sem salto).
+   - C3A.1: o `EXT_ARTIGOS.IDX` candidato recebe as 2 entradas, com offsets tirados dos bytes do texto. Casos restantes em fallback: 0.
 3. **Tipo de relação dos retargets legados.** A revisão legada não classificou o tipo.
-   - Esses registros levam `NAO_CLASSIFICADA_REVISAO_LEGADA`, aceito só quando todas as decisões de origem são legadas.
-   - Nenhuma decisão jurídica nova foi tomada. Ponto para a revisão independente.
+   - Na C3A eles levaram o marcador transitório `NAO_CLASSIFICADA_REVISAO_LEGADA`.
+   - C3A.1: classificados por decisão humana (LC 63 REGULAMENTA; LC 70 IMPLEMENTA; PNE EXECUTA_POLÍTICA_CONSTITUCIONAL). O marcador agora é rejeitado.
 4. **Status judicial da Lei 14.701.** Foi acrescentado `notice_short` ao consolidado HIGH (campo exigido pela política C2). As decisões não mudaram.
 
 ## Contagens (derivadas)
@@ -74,7 +75,7 @@
 | RUN4_LEGAL_VIEW_LINKS | 103 |
 | RUN4_DEVICE_READY_VISIBLE_LINKS | 24 |
 | RUN4_DEVICE_HIDDEN_HISTORICAL | 2 |
-| DEVICE_ARTICLE_INDEX_GAPS_FALLBACK | 2 |
+| DEVICE_ARTICLE_INDEX_GAPS_FALLBACK | 0 |
 | Cache do firmware usado (linhas de lookup / normas) | 26 / 15 (limites 64 / 32) |
 
 **Diferenças em relação às estimativas da missão:**
@@ -113,13 +114,13 @@
 
 - **C3B (aparelho):**
   - teste físico do candidato device_ready: RELACOES, REL_LOOKUP e REF_* candidatos num cartão de teste;
-  - corrigir as lacunas do `EXT_ARTIGOS.IDX`.
+  - lacunas do `EXT_ARTIGOS.IDX` corrigidas no candidato (C3A.1); o cartão ainda não foi alterado.
 - **C3C (firmware):**
   - rota `ABRIR_NORMA_PRINCIPAL` para os 21 MAIN_CORPUS;
   - UI do aviso judicial;
   - origem ADCT em RELACOES ainda não verificada no cartão;
   - limite de cache 32/64 para a escala futura.
 - **Ingestão:** 55 relações dependem de normas novas. Adiada.
-- **Revisão:** o tipo de relação dos 3 retargets legados não classificados.
+- **Revisão:** tipos de relação dos retargets legados resolvidos na C3A.1.
 - **MEDIUM (191) e LOW (446):** não iniciados.
 

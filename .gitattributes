@@ -155,3 +155,8 @@ ENTENDA_ENGINE/derived/**/*.IDX -text
 # Fontes oficiais travadas do Senado (sha256 em SOURCES_LOCK.json; base da reconstrucao byte a byte do texto operacional da CF
 # usado pelo ENTENDA, ENTENDA_ENGINE/editorial/TEXT_SOURCE_RECONSTRUCTION.json): bytes exatos, sem conversao de fim de linha.
 updater/fontes_oficiais_senado/** -text
+
+# C3A.1/C3B: textos do cartao lidos por OFFSET de byte e pacote fisico C3B -- nenhuma conversao de fim de linha.
+CORRELATA_COVERAGE_AUDIT/C3A/inputs/ext_texts/** -text
+CORRELATA_COVERAGE_AUDIT/C3B_PHYSICAL_TEST_PACKAGE/candidate/** -text
+CORRELATA_COVERAGE_AUDIT/C3B_PHYSICAL_TEST_PACKAGE/rollback/** -text

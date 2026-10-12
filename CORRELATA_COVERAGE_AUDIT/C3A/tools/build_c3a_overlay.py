@@ -169,10 +169,26 @@ def merge(records):
     out = list(by.values())
     for r in out:
         if not r['relation_type']:
-            if not all(d.startswith('LEGACY:') for d in r['decision_ids']):
+            c = RELATION_TYPE_DECISIONS.get((r['target_id'], r['destination_norm_key']))
+            if not c:
                 raise SystemExit(f"RELATION_TYPE_MISSING {r['relation_id']}")
-            r['relation_type'] = O.LEGACY_RELATION_TYPE        # not decided by the legacy review; no new legal decision here
+            r['relation_type'], r['relation_type_basis'] = c
+            r['decision_ids'] = sorted(set(r['decision_ids']) | {f"C3A1:RELATION_TYPE:{r['target_id']}"})
     return sorted(out, key=lambda r: (r['target_id'], r['destination_norm_key']))
+
+
+# C3A.1 human decisions: relation type of the legacy retargets, which the legacy review never classified (legal content unchanged)
+RELATION_TYPE_DECISIONS = {
+    ('CF88:ART.158:PAR.1:INC.I', 'LC:63/1990'): (
+        'REGULAMENTA', 'O art. 158, § 1º, I, manda distribuir ao menos 65% da parcela municipal do ICMS pelo valor adicionado; a LC 63/1990 '
+        'disciplina essa distribuição (art. 3º, I, critério do valor adicionado; § 1º, definição do valor adicionado).'),
+    ('CF88:ART.195:INC.I:AL.b', 'LC:70/1991'): (
+        'IMPLEMENTA', 'A LC 70/1991 instituiu a COFINS sobre o faturamento "nos termos do inciso I do art. 195"; depois da EC 20/1998 essa '
+        'materialidade é a alínea b. A lei concretiza essa fonte de financiamento; não regulamenta todo o inciso I.'),
+    ('CF88:ART.214:CAPUT', 'LEI:15388/2026'): (
+        'EXECUTA_POLÍTICA_CONSTITUCIONAL', 'O caput do art. 214 manda a lei estabelecer o PNE decenal; a Lei 15.388/2026 aprova o PNE '
+        '"para cumprir o disposto no art. 214" (art. 1º). NEXT_STEP = ANNEX_ROUTE_SUPPORT (Meta 19.a, inciso VI).'),
+}
 
 
 def jdump(o):

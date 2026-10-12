@@ -37,6 +37,7 @@ PIN = AUDIT / 'inputs/CORRELATA_EVIDENCE_PIN.json'
 CARD = AUDIT / 'C3A/inputs/card_relations_v2'
 MAIN_INDEX = AUDIT / 'C3A/inputs/main_corpus_article_index.json'
 EXT_TEXT_INDEX = AUDIT / 'C3A/inputs/ext_text_article_index.json'
+EXT_TEXTS = AUDIT / 'C3A/inputs/ext_texts'          # card texts frozen for the EXT_ARTIGOS repair (sha checked against the pin)
 STATUS = 'RUN4_CANDIDATE_HOST_ONLY'
 RUN3_FILES = ('CF88_REFERENCES_EXPORT.json', 'REF_LOOKUP.IDX', 'REF_PAYLOAD.IDX')
 
@@ -52,6 +53,19 @@ def load(p):
 def context(reg):
     dev = load(PIN)['device_tables']
     return O.Context(reg, NORM, dev['targets'], dev['text_map_targets'], CARD, MAIN_INDEX, EXT_TEXT_INDEX)
+
+
+def ext_texts():
+    """Frozen card texts (bytes), each checked against the sha256 recorded in the C0 evidence pin (fail closed)."""
+    files = load(PIN)['relations_v2_package']['files']
+    out = {}
+    for p in sorted(EXT_TEXTS.glob('*/*')):
+        key = f'99_RELATIONS_V2/03_NORMAS_EXTERNAS/{p.parent.name}/{p.name}'
+        b = p.read_bytes()
+        if key not in files or sha(b) != files[key]['sha256']:
+            raise O.OverlayError('EXT_TEXT_NOT_PINNED', key)
+        out[p.parent.name] = b
+    return out
 
 
 def build(out):
@@ -81,6 +95,23 @@ def build(out):
         if hit:
             raise O.OverlayError('ADDITION_DUPLICATES_EXISTING_LINK', f"{r['relation_id']} = {hit}")
     materialized = {v['record']['relation_id'] for v in adds}
+    # C3A.1: candidate EXT_ARTIGOS = card index + only the entries that DEVICE_READY jumps need and the card lacks (offsets from text bytes)
+    card_rows_by_rel = {}
+    for r in ctx.relacoes:
+        card_rows_by_rel.setdefault((r[5], r[6]), set()).update(a for a in r[9].split(',') if a)
+    needed = set()
+    for c in corr:
+        if effect[c['reference_id']] == 'VISIBLE':
+            arts = c['route_fix']['articles'] if c['action'] == 'ROUTE_FIX' else card_rows_by_rel.get((c['relation_id'], c['source_id']), ())
+            needed |= {(c['source_id'], a) for a in arts}
+    for v in adds:
+        if not O.device_blockers(v['record'], ctx, AS_OF):
+            needed |= {(v['record']['destination_norm_id'], a) for a in v['record']['destination_articles']}
+    ext_idx, index_repairs = O.repair_ext_artigos((CARD / 'EXT_ARTIGOS.IDX').read_bytes(), needed, ext_texts())
+    ctx.ext_articles = {}
+    for l in ext_idx.decode('utf-8').splitlines():
+        if l and not l.startswith('#'):
+            ctx.ext_articles.setdefault(l.split('|')[0], set()).add(l.split('|')[1])
     entries, new_links = [], []
     for v in register:
         r = v['record']
@@ -139,6 +170,12 @@ def build(out):
         else:
             r = reg_by_id[rel]
             rows.append(O.relacoes_row(o, rel, r['destination_norm_id'], ctx, r['destination_articles']))
+    mode_of = {(tuple(r[:5]), r[5]): (r[8], r[9]) for r in rows}
+    for e in entries:
+        if e['device_state'] == 'DEVICE_READY':
+            mode, arts = mode_of[(O.origin_of(e['target_id']), e['relation_id'])]
+            e['device_article_resolution'] = ('DIRECT_ARTICLE_RESOLUTION' if mode == 'ABRIR_ARTIGO_INTERNO' else
+                                              ('FALLBACK_OPEN_NORM_START' if e.get('device_article_gap') else 'OPEN_NORM_START_BY_DECISION'))
     rel_b, look_b, caps = O.write_relacoes(rows, ctx)
     for k, lim in O.FIRMWARE_CACHE.items():
         if caps[k] > lim:
@@ -149,6 +186,7 @@ def build(out):
     files = E.export(NORM, device_links, dev_dir, list(work_excl) + hidden, work_add)
     (dev_dir / 'RELACOES.IDX').write_bytes(rel_b)
     (dev_dir / 'REL_LOOKUP.IDX').write_bytes(look_b)
+    (dev_dir / 'EXT_ARTIGOS.IDX').write_bytes(ext_idx)
 
     def cnt(kind, key='device_state'):
         return dict(sorted(collections.Counter(e[key] for e in entries if e['kind'] == kind).items()))
@@ -169,6 +207,11 @@ def build(out):
                           correlata_visible=sum(l['reference_type'] == 'CORRELATA' and l['visibility'] == 'CURRENT_VISIBLE' for l in device_links),
                           correlata_hidden_historical=sum(l['reference_type'] == 'CORRELATA' and l['visibility'] != 'CURRENT_VISIBLE' for l in device_links),
                           new_correlata_links=len(new_links), relacoes_rows=len(rows), firmware_cache=dict(used=caps, limit=O.FIRMWARE_CACHE),
+                          ext_artigos_index_repairs=index_repairs,
+                          device_article_gaps=sum(bool(e.get('device_article_gap')) for e in entries if e['device_state'] == 'DEVICE_READY'),
+                          device_article_resolution=dict(sorted(collections.Counter(e['device_article_resolution'] for e in entries
+                                                                                     if e['device_state'] == 'DEVICE_READY').items())),
+                          unclassified_relation_types=sum(e.get('relation_type') == O.UNCLASSIFIED_RELATION_TYPE for e in entries),
                           non_correlata_links_identical_to_run3=[l for l in device_links if l['reference_type'] != 'CORRELATA'] ==
                           [l for l in links if l['reference_type'] != 'CORRELATA']),
         files={k: v for k, v in files.items()})

@@ -25,9 +25,9 @@ APPROVED = 'HUMAN_APPROVED_CORRELATA_V1'
 ROUTES = ('EXT_NORMAS', 'MAIN_CORPUS')
 RESOLUTIONS = ('ON_CARD', 'MAIN_CORPUS', 'INGESTION_REQUIRED')
 FALLBACKS = ('OPEN_NORM_START',)
-RELATION_TYPES = ('REGULAMENTA', 'COMPLEMENTA', 'IMPLEMENTA', 'PROCEDIMENTO', 'CONDIÇÃO_OU_EXCEÇÃO', 'ORGANIZA_INSTITUIÇÃO')
-# legacy decisions (KEEP/RETARGET/REPLACE review) never classified the relation type: allowed only when every decision is a legacy one
-LEGACY_RELATION_TYPE = 'NAO_CLASSIFICADA_REVISAO_LEGADA'
+RELATION_TYPES = ('REGULAMENTA', 'COMPLEMENTA', 'IMPLEMENTA', 'PROCEDIMENTO', 'CONDIÇÃO_OU_EXCEÇÃO', 'ORGANIZA_INSTITUIÇÃO',
+                  'EXECUTA_POLÍTICA_CONSTITUCIONAL')
+UNCLASSIFIED_RELATION_TYPE = 'NAO_CLASSIFICADA_REVISAO_LEGADA'    # C3A transitional marker; rejected since C3A.1 (every relation is classified)
 TEMPORAL = ('IN_FORCE', 'VACATIO_LEGIS', 'PARTIAL_EFFECTS', 'TRANSITIONAL', 'REVOKED', 'UNCERTAIN')
 TEMPORAL_PUBLISHABLE = ('IN_FORCE', 'VACATIO_LEGIS', 'PARTIAL_EFFECTS', 'TRANSITIONAL')
 VACATIO_POLICIES = ('DO_NOT_PUBLISH_AS_CURRENT',)
@@ -191,8 +191,7 @@ def validate_record(r, ctx):
         raise OverlayError('MISSING_FIELD', f"{r.get('relation_id')}: {missing[0]}")
     if r['review_status'] != APPROVED:
         raise OverlayError('NOT_APPROVED', r['relation_id'])
-    legacy_only = all(d.startswith('LEGACY:') for d in r['decision_ids'])
-    if r['relation_type'] not in RELATION_TYPES and not (legacy_only and r['relation_type'] == LEGACY_RELATION_TYPE):
+    if r['relation_type'] not in RELATION_TYPES:
         raise OverlayError('RELATION_TYPE_INVALID', r['relation_id'])
     if r['relation_id'] != relation_id_for(r['target_id'], r['destination_norm_id']):
         raise OverlayError('RELATION_ID_NOT_DETERMINISTIC', r['relation_id'])
@@ -297,6 +296,47 @@ def relacoes_row(origin, rel, dest, ctx, articles):
     n = ctx.ext[dest]
     mode, arts, _ = device_route(dest, articles, ctx)
     return tuple(origin) + (rel, dest, n['name'], mode, ','.join(arts), n['path'])
+
+
+ART_HEAD = re.compile(rb'(?:^|\n)(Art\.\s*(\d+)(?:\xc2\xba|\xc2\xb0|o)?(?:\s*-\s*([A-Z]))?(?=[\s.,;:]))')
+
+
+def article_heading_offsets(text, article):
+    """Byte offsets where the heading of `article` ("9", "9-A") starts a line in the UTF-8 text ("Art. 9º ", "Art.\n10. ")."""
+    num, _, suf = article.partition('-')
+    return [m.start(1) for m in ART_HEAD.finditer(text) if m.group(2).decode() == num and (m.group(3) or b'').decode() == suf]
+
+
+def repair_ext_artigos(index_bytes, needed, texts):
+    """Candidate EXT_ARTIGOS.IDX: the card index plus ONLY the (norm, article) entries in `needed` that it lacks.
+
+    The offset comes from the real bytes of the norm text: exactly one line-start heading of the article, lying inside the range of an
+    existing entry (the article was swallowed by its predecessor). The new entry takes the rest of that range and the predecessor's size is
+    cut at the new offset (format: ID|ARTIGO|OFFSET|TAMANHO, contiguous ranges). Fail closed when the position cannot be proved."""
+    lines = index_bytes.decode('utf-8').split('\n')
+    entries = [l.split('|') for l in lines if l and not l.startswith('#')]
+    have = {(e[0], e[1]) for e in entries}
+    repairs = []
+    for nid, art in sorted(n for n in needed if n not in have):
+        if nid not in texts:
+            raise OverlayError('EXT_TEXT_REQUIRED_FOR_INDEX_REPAIR', f'{nid} art. {art}')
+        hits = article_heading_offsets(texts[nid], art)
+        if len(hits) != 1:
+            raise OverlayError('ARTICLE_HEADING_NOT_UNIQUE', f'{nid} art. {art}: {len(hits)}')
+        off = hits[0]
+        host = [e for e in entries if e[0] == nid and int(e[2]) < off < int(e[2]) + int(e[3])]
+        if len(host) != 1:
+            raise OverlayError('ARTICLE_NOT_INSIDE_INDEXED_RANGE', f'{nid} art. {art}')
+        h = host[0]
+        end = int(h[2]) + int(h[3])
+        new = [nid, art, str(off), str(end - off)]
+        repairs.append(dict(norm_id=nid, article=art, offset=off, size=end - off, predecessor=h[1], predecessor_size_before=int(h[3]),
+                            predecessor_size_after=off - int(h[2]), heading=texts[nid][off:off + 24].decode('utf-8', 'replace')))
+        h[3] = str(off - int(h[2]))
+        entries.insert(entries.index(h) + 1, new)
+    head = [l for l in lines if l.startswith('#')]
+    out = ('\n'.join(head + ['|'.join(e) for e in entries]) + '\n').encode('utf-8')
+    return out, repairs
 
 
 def write_relacoes(rows, ctx):
