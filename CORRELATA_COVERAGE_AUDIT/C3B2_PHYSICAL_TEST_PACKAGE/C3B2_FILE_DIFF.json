@@ -1,0 +1,127 @@
+{
+ "schema_version": 1,
+ "status": "C3B2_CANDIDATE_HOST_ONLY",
+ "engine_status": "RUN4_CANDIDATE_HOST_ONLY",
+ "physical_approved": false,
+ "card_touched": false,
+ "as_of": "2026-10-12",
+ "artifact": "C3B2_FILE_DIFF",
+ "files": [
+  {
+   "path": "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "baseline_sha256": "616a469b11dd673347dc665232a83fc8d5bcd8e3c6bfd5f07a4a56c62f5972a7",
+   "candidate_sha256": "d2fcc15bbe41ef16c51bbe1ef7cb201bd9677b6ac54198b96ad2abc08395e06c",
+   "baseline_bytes": 165466,
+   "candidate_bytes": 165466,
+   "reason": {
+    "lines_removed": 31,
+    "lines_added": 31,
+    "why": "C3B.1: somente a posição C (disponibilidade de 1 CORR.) recalculada a partir do REF_PAYLOAD DEVICE_READY"
+   }
+  },
+  {
+   "path": "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "baseline_sha256": "6d6c88d79bb63a74443de92a52768bb058b56f7b6da1e899746c58d513970ac8",
+   "candidate_sha256": "27c67eea6a38e3cba012d4a3d02c3856d37fd4cd1bae15473854fab0edea5430",
+   "baseline_bytes": 6955,
+   "candidate_bytes": 6702,
+   "reason": {
+    "lines_removed": 221,
+    "lines_added": 212,
+    "why": "offsets/contagens recalculados porque REF_PAYLOAD mudou (só alvos com CORRELATA mudam de conteúdo)"
+   }
+  },
+  {
+   "path": "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "baseline_sha256": "24b4f0d97ec004303a6e327a6abf76054eeb05c8cd2a44a424bd70c8341f58ea",
+   "candidate_sha256": "1762642d337aff83ac5b95e074235bc58028b8a68bac17a384e9eed4a4a5addd",
+   "baseline_bytes": 68075,
+   "candidate_bytes": 65248,
+   "reason": {
+    "lines_removed": 36,
+    "lines_added": 16,
+    "why": "linhas CORRELATA: exclusões/supressões do legado saem, adições DEVICE_READY entram; demais tipos idênticos"
+   }
+  },
+  {
+   "path": "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX",
+   "baseline_sha256": "a156a2d6c1546fd1f692f0dfec19c15a728621647dce467632caca91b7c1ecad",
+   "candidate_sha256": "5c54face7ea7eff62dbbb0a4193b5e2452e7fb03d82012d09919e74d234b3e5e",
+   "baseline_bytes": 15904,
+   "candidate_bytes": 15960,
+   "reason": {
+    "lines_removed": 2,
+    "lines_added": 4,
+    "why": "C3A.1: entradas de artigos ausentes do índice do cartão (offsets dos bytes do texto); predecessor encurtado"
+   }
+  },
+  {
+   "path": "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX",
+   "baseline_sha256": "bb3c37168829f4fc102ad51f8fd413f8c8658785181c46888e4d3d76c64af96d",
+   "candidate_sha256": "691790f3ee5d4aaa9b88235bca33008357b99d87324c07b1da8b51355c20685c",
+   "baseline_bytes": 8101,
+   "candidate_bytes": 4650,
+   "reason": {
+    "lines_removed": 39,
+    "lines_added": 19,
+    "why": "linhas de relação: removidas (exclusões/supressões), adicionadas (adições), rota corrigida (ROUTE_FIX)"
+   }
+  },
+  {
+   "path": "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX",
+   "baseline_sha256": "863ff5383d9b338fef2e980edb7972953fe57943e170e42d909e9c7c4ddb4b7e",
+   "candidate_sha256": "efac06cee0a1d8f0676564ba128d0ab8f474b89399f40de6422cc6fded37ef2c",
+   "baseline_bytes": 934,
+   "candidate_bytes": 626,
+   "reason": {
+    "lines_removed": 40,
+    "lines_added": 25,
+    "why": "offsets por origem recalculados porque RELACOES.IDX mudou"
+   }
+  }
+ ],
+ "compared_unchanged": [],
+ "host_only_not_on_card": [
+  "CF88_REFERENCES_EXPORT.json"
+ ],
+ "isolation": {
+  "changed_paths_only_in": [
+   "99_RELATIONS_V2/05_INDICES_ESP32_V2/",
+   "99_LEX_V1/20_REFERENCES/",
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX"
+  ],
+  "forbidden_dirs_unchanged": [
+   "99_LEX_V1/05_TEXT/",
+   "99_LEX_V1/10_TARGETS/",
+   "99_LEX_V1/30_ENTENDA/",
+   "99_LEX_V1/00_SYS/",
+   "99_RELATIONS_V2/03_NORMAS_EXTERNAS/"
+  ],
+  "targets_flags": {
+   "ENTENDA_FLAGS_CHANGED": 0,
+   "CORRELATA_FLAGS_CHANGED": 31,
+   "JURIS_FLAGS_CHANGED": 0,
+   "WORK_REFERENCE_FLAGS_CHANGED": 0,
+   "R_FLAGS_CHANGED": 0,
+   "X_FLAGS_CHANGED": 0,
+   "OTHER_FIELDS_CHANGED": 0,
+   "verdict": "CORRELATA_FLAG_CHANGES_ONLY"
+  },
+  "non_correlata_payload_lines": 405,
+  "non_correlata_identical": true,
+  "correlata_lines_before": 46,
+  "correlata_lines_after": 26,
+  "targets_resolved_identically_outside_correlata": 263,
+  "firmware_unchanged_vs": "9108d72812802de941e54b7e4e3ec556b7abd019"
+ },
+ "firmware_cache": {
+  "used": {
+   "lookup_rows": 26,
+   "norms": 15
+  },
+  "limit": {
+   "lookup_rows": 64,
+   "norms": 32
+  }
+ }
+}

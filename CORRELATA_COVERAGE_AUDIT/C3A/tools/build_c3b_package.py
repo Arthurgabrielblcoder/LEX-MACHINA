@@ -163,7 +163,8 @@ def caps(cand):
     return dict(used=used, limit=O.FIRMWARE_CACHE)
 
 
-def build(out):
+def build(out, prefix=None):
+    prefix = prefix or PREFIX
     out = Path(out)
     if out.exists():
         shutil.rmtree(out)
@@ -189,15 +190,15 @@ def build(out):
         diff.append(dict(path=p, baseline_sha256=sha(base[p]), candidate_sha256=sha(mapped[p]), baseline_bytes=len(base[p]),
                          candidate_bytes=len(mapped[p]), reason=reason(p, base[p], mapped[p])))
     unchanged = sorted(p for p in mapped if p not in changed)
-    common = dict(schema_version=1, status='C3B1_CANDIDATE_HOST_ONLY', engine_status=R4.STATUS, physical_approved=False, card_touched=False, as_of=R4.AS_OF)
-    dump(out / f'{PREFIX}_FILE_DIFF.json', dict(common, artifact=f'{PREFIX}_FILE_DIFF', files=diff, compared_unchanged=unchanged, host_only_not_on_card=host_only,
+    common = dict(schema_version=1, status=f'{prefix}_CANDIDATE_HOST_ONLY', engine_status=R4.STATUS, physical_approved=False, card_touched=False, as_of=R4.AS_OF)
+    dump(out / f'{prefix}_FILE_DIFF.json', dict(common, artifact=f'{prefix}_FILE_DIFF', files=diff, compared_unchanged=unchanged, host_only_not_on_card=host_only,
                                           isolation=iso, firmware_cache=cap))
-    dump(out / f'{PREFIX}_ROLLBACK_MANIFEST.json', dict(common, artifact=f'{PREFIX}_ROLLBACK_MANIFEST', device_identity=DEVICE_ID,
+    dump(out / f'{prefix}_ROLLBACK_MANIFEST.json', dict(common, artifact=f'{prefix}_ROLLBACK_MANIFEST', device_identity=DEVICE_ID,
                                                   files=[dict(path=p, sha256=sha(base[p]), bytes=len(base[p]), rollback_copy=f'rollback/SD/{p}',
                                                               physical_manifest_sha256=phys[p]['sha256']) for p in changed]))
-    (out / f'{PREFIX}_PHYSICAL_TEST_PLAN.md').write_bytes(plan(diff, legal, cap, summary).encode('utf-8'))
+    (out / f'{prefix}_PHYSICAL_TEST_PLAN.md').write_bytes(PLANS[prefix](diff, legal, cap, summary).encode('utf-8'))
     files = sorted(p for p in out.rglob('*') if p.is_file())
-    dump(out / f'{PREFIX}_PACKAGE_MANIFEST.json', dict(common, artifact=f'{PREFIX}_PACKAGE_MANIFEST', files_changed=len(changed),
+    dump(out / f'{prefix}_PACKAGE_MANIFEST.json', dict(common, artifact=f'{prefix}_PACKAGE_MANIFEST', files_changed=len(changed),
                                                  run4_sha256sums=sha((Path(R4.OUT) / 'SHA256SUMS.txt').read_bytes().replace(b'\r\n', b'\n')),
                                                  package={p.relative_to(out).as_posix(): sha(p.read_bytes()) for p in files}))
     return tree(out)
@@ -291,22 +292,72 @@ def plan(diff, legal, cap, summary):
     return '\n'.join(L) + '\n'
 
 
+def plan_c3b2(diff, legal, cap, summary):
+    """C3B.2: same device bytes as C3B.1 (no data defect found); the plan fixes the two wrong physical expectations."""
+    L = []
+    a = L.append
+    a('# C3B.2 — plano do terceiro teste físico (preparado, NÃO executado)')
+    a('')
+    a('**Candidato `C3B2_CANDIDATE_HOST_ONLY`.** Não é baseline nem aprovado. Nada foi copiado para nenhum cartão.')
+    a('')
+    a('- **Bytes iguais ao C3B.1:** os arquivos do aparelho são byte a byte os do C3B.1.')
+    a('  - A auditoria C3B.2 (`C3B2/C3B2_ROOT_CAUSE_REPORT.md`) não encontrou defeito de dados nas duas falhas residuais.')
+    a('  - As expectativas físicas é que divergiam das decisões humanas registradas.')
+    a('- **Se você aceitar as expectativas corrigidas:** o resultado físico do C3B.1 já cobre os testes, e basta reconfirmar os 3 itens abaixo.')
+    a('- **Se preferir outro destino** (ex.: a LC 63 abrindo no início da norma): isso é uma NOVA decisão jurídica. Ela entra como decisão humana e gera outro candidato.')
+    a('')
+    a('## Arquivos do pacote (idênticos ao C3B.1)')
+    a('')
+    a('| Caminho no cartão | SHA256 baseline | SHA256 candidato |')
+    a('|---|---|---|')
+    for d in diff:
+        a(f"| `{d['path']}` | `{d['baseline_sha256']}` | `{d['candidate_sha256']}` |")
+    a('')
+    a(f"- **Cache do firmware:** REL_LOOKUP {cap['used']['lookup_rows']}/64 linhas; {cap['used']['norms']}/32 normas.")
+    a('- **Instalação e rollback:** mesmo procedimento do `C3B1_PHYSICAL_TEST_PLAN.md`, com os hashes desta tabela.')
+    a('')
+    a('## Testes com expectativa corrigida')
+    a('')
+    a('| # | Onde | Expectativa corrigida (decisão registrada) |')
+    a('|---|---|---|')
+    a('| 3 | CF art. 158, § 1º, I | LC 63/1990 abre NO art. 3º (critério e definição do valor adicionado), não no início da norma |')
+    a('| 5 | CF art. 161, I | LC 63/1990 abre NO art. 3º (definição do valor adicionado, art. 3º, § 1º), não no início da norma |')
+    a('| 7 | CF art. 202 (caput) | LC 109/2001 CONTINUA, abrindo no art. 1º (KEEP legado); no § 1º, a LC 109 abre no art. 3º (decisão HIGH independente) |')
+    a('')
+    a('## Regressão mínima (já PASS no C3B.1; repetir só se reinstalar)')
+    a('')
+    a('- Art. 202, § 5º → LC 108 no art. 26.')
+    a('- Art. 158, § 1º, II, art. 214, I a VI, art. 37, § 3º, III e art. 37, II: sem `1 CORR.`.')
+    a('- Art. 214 (caput) e art. 239, § 3º: com `1 CORR.`.')
+    a('- Art. 150, § 7º → LC 87 no art. 10.')
+    a('- Lei 14.965 ausente nos arts. 131, § 2º e 132.')
+    a('- ENTENDA, JURIS e REFERÊNCIAS sem efeito colateral.')
+    a('')
+    return '\n'.join(L) + '\n'
+
+
+PLANS = {'C3B1': plan, 'C3B2': plan_c3b2}
+PROFILE_OUT = {'C3B1': AUDIT / 'C3B1_PHYSICAL_TEST_PACKAGE', 'C3B2': AUDIT / 'C3B2_PHYSICAL_TEST_PACKAGE'}
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--out', default=str(OUT))
+    ap.add_argument('--profile', default=PREFIX, choices=sorted(PLANS))
+    ap.add_argument('--out', default=None)
     ap.add_argument('--check', action='store_true')
     a = ap.parse_args()
+    a.out = a.out or str(PROFILE_OUT[a.profile])
     trees = []
     for _ in range(2):
         with tempfile.TemporaryDirectory() as t:
-            trees.append(build(Path(t) / 'pkg'))
+            trees.append(build(Path(t) / 'pkg', a.profile))
     if trees[0] != trees[1]:
         raise SystemExit('C3B_PACKAGE_NOT_REPRODUCIBLE')
     if a.check:
         ok = Path(a.out).exists() and tree(a.out) == trees[0]
         print('check', 'OK' if ok else 'DIFF')
         sys.exit(0 if ok else 1)
-    t = build(a.out)
+    t = build(a.out, a.profile)
     print(json.dumps(dict(files=len(t), reproducible=t == trees[0]), indent=1))
 
 

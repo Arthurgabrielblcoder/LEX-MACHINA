@@ -1,0 +1,551 @@
+{
+ "schema_version": 1,
+ "artifact": "C3B2_TARGET_DUPLICATION_AUDIT",
+ "summary": {
+  "C3B1_PHYSICAL_TEST": "FAIL_RESIDUAL",
+  "FULL_PASS": "12/15",
+  "PARTIAL_FAIL": 2,
+  "FAIL": 1,
+  "LC63_DESTINATION_ROOT_CAUSE": "CONFIRMED",
+  "LC63_FINDING": "EXPECTATION_MISMATCH: as decisões humanas registradas fixam o art. 3º (C1A REPLACE \"ABRIR_ARTIGO_INTERNO art. 3º\"; retarget legado com route_fix art. 3º); o aparelho executa exatamente essa rota",
+  "LC63_CORRECT_DESTINATION_ART158": "article (art. 3º)",
+  "LC63_CORRECT_DESTINATION_ART161": "article (art. 3º)",
+  "ART202_CAPUT_LC109_ROOT_CAUSE": "CONFIRMED",
+  "ART202_FINDING": "EXPECTATION_MISMATCH: o caput tem decisão humana própria (KEEP legado, art. 1º); o § 1º é um HIGH independente (target original § 1º, sem supersedes); não é relação movida nem duplicação de materialização",
+  "ART202_CAPUT_LC109_SHOULD_EXIST": "YES",
+  "DEVICE_READY_EDITORIAL_MODE": "24/24",
+  "TARGET_DUPLICATION_AUDIT": "PASS",
+  "RELATIONS_CORRECTED": 0,
+  "C3B2_DEVICE_BYTES_EQUAL_C3B1": true
+ },
+ "route_modes": [
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.146:INC.III:AL.b",
+   "destination": "EXT_LC199_2023",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): CORRC0-8CF6938B096C, LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 445
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "destination": "EXT_LC87_1996",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "4",
+    "11"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): CORRC0-BD6BE3620174",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "4",
+    "11"
+   ],
+   "device_offsets": {
+    "4": 4660,
+    "11": 12936
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.158:PAR.1:INC.I",
+   "destination": "EXT_LC63_1990",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "3"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): C3A1:RELATION_TYPE:CF88:ART.158:PAR.1:INC.I, LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "3"
+   ],
+   "device_offsets": {
+    "3": 1265
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.161:INC.I",
+   "destination": "EXT_LC63_1990",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "3"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): LEGACY:C1A:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "3"
+   ],
+   "device_offsets": {
+    "3": 1265
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.195:INC.I:AL.b",
+   "destination": "EXT_LC70_1991",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): C3A1:RELATION_TYPE:CF88:ART.195:INC.I:AL.b, LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 388
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.202:PAR.1",
+   "destination": "EXT_LC109_2001",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "3"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): CORRC0-362157C332DE",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "3"
+   ],
+   "device_offsets": {
+    "3": 884
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.214:CAPUT",
+   "destination": "EXT_LEI15388_2026",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): C3A1:RELATION_TYPE:CF88:ART.214:CAPUT, LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 266
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.239:PAR.3",
+   "destination": "EXT_LEI7998_1990",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "9"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): CORRC0-5C8AFC368627",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "9"
+   ],
+   "device_offsets": {
+    "9": 19559
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "ADDITION",
+   "target_id": "CF88:ART.239:PAR.4",
+   "destination": "EXT_LEI7998_1990",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "11"
+   ],
+   "editorial_source": "registro jurídico (decisão humana): CORRC0-7867B93D94DA",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "11"
+   ],
+   "device_offsets": {
+    "11": 23070
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.5:INC.XLIII",
+   "destination": "EXT_LEI13260_2016",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DD3B2F9749F1A8A7@CF88:ART.5:INC.XLIII)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 485
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.34:INC.V:AL.b",
+   "destination": "EXT_LC63_1990",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "10"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_A0A931F9E613AA9F@CF88:ART.34:INC.V:AL.b)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "10"
+   ],
+   "device_offsets": {
+    "10": 13006
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.37:PAR.3:INC.I",
+   "destination": "EXT_LEI13460_2017",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.I)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 348
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.150:PAR.7",
+   "destination": "EXT_LC87_1996",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "10"
+   ],
+   "editorial_source": "ROUTE_FIX da revisão legada (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_839B2CF9F1A80DA2@CF88:ART.150:PAR.7)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "10"
+   ],
+   "device_offsets": {
+    "10": 12152
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "destination": "EXT_LEI9393_1996",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "2"
+   ],
+   "editorial_source": "ROUTE_FIX da revisão legada (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.II)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "2"
+   ],
+   "device_offsets": {
+    "2": 1302
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "destination": "EXT_LEI11250_2005",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.III)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 258
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "destination": "EXT_LC87_1996",
+   "editorial_mode": "DESTINATION_WHOLE_NORM",
+   "editorial_articles": [],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DD78F9101785B52A@CF88:ART.155:PAR.2:INC.XII)",
+   "device_mode": "DESTINATION_WHOLE_NORM",
+   "device_articles": [],
+   "device_offsets": {},
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.161:INC.II",
+   "destination": "EXT_LC62_1989",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.II)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 353
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.161:INC.III",
+   "destination": "EXT_LC62_1989",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.III)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 353
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.182",
+   "destination": "EXT_LEI13425_2017",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:C1A:CORRELATA:REL_70C4549A507F6E00@CF88:ART.182)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 487
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.201:INC.III",
+   "destination": "EXT_LEI7998_1990",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "2"
+   ],
+   "editorial_source": "ROUTE_FIX da revisão legada (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.III)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "2"
+   ],
+   "device_offsets": {
+    "2": 579
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.202:CAPUT",
+   "destination": "EXT_LC109_2001",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_E3E07057AD3E162C@CF88:ART.202:CAPUT)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 308
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.202:PAR.4",
+   "destination": "EXT_LC108_2001",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "1"
+   ],
+   "editorial_source": "KEEP: rota legada mantida pela decisão (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.4)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "1"
+   ],
+   "device_offsets": {
+    "1": 508
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.202:PAR.5",
+   "destination": "EXT_LC108_2001",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "26"
+   ],
+   "editorial_source": "ROUTE_FIX da revisão legada (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.5)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "26"
+   ],
+   "device_offsets": {
+    "26": 13267
+   },
+   "result": "PASS"
+  },
+  {
+   "kind": "LEGACY",
+   "target_id": "CF88:ART.202:PAR.6",
+   "destination": "EXT_LC108_2001",
+   "editorial_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "editorial_articles": [
+    "11",
+    "20"
+   ],
+   "editorial_source": "ROUTE_FIX da revisão legada (LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.6)",
+   "device_mode": "DESTINATION_SPECIFIC_ARTICLE",
+   "device_articles": [
+    "11",
+    "20"
+   ],
+   "device_offsets": {
+    "11": 5309,
+    "20": 10058
+   },
+   "result": "PASS"
+  }
+ ],
+ "duplication_groups": [
+  {
+   "article": "CF88:ART.155",
+   "destination": "EXT_LC87_1996",
+   "targets": [
+    "CF88:ART.155:PAR.2:INC.VII",
+    "CF88:ART.155:PAR.2:INC.XII"
+   ],
+   "decisions": [
+    [
+     "CORRC0-BD6BE3620174"
+    ],
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DD78F9101785B52A@CF88:ART.155:PAR.2:INC.XII"
+    ]
+   ],
+   "superseded_still_published": [],
+   "verdict": "INDEPENDENT_HUMAN_DECISIONS"
+  },
+  {
+   "article": "CF88:ART.161",
+   "destination": "EXT_LC62_1989",
+   "targets": [
+    "CF88:ART.161:INC.II",
+    "CF88:ART.161:INC.III"
+   ],
+   "decisions": [
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.II"
+    ],
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.III"
+    ]
+   ],
+   "superseded_still_published": [],
+   "verdict": "INDEPENDENT_HUMAN_DECISIONS"
+  },
+  {
+   "article": "CF88:ART.202",
+   "destination": "EXT_LC108_2001",
+   "targets": [
+    "CF88:ART.202:PAR.4",
+    "CF88:ART.202:PAR.5",
+    "CF88:ART.202:PAR.6"
+   ],
+   "decisions": [
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.4"
+    ],
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.5"
+    ],
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.6"
+    ]
+   ],
+   "superseded_still_published": [],
+   "verdict": "INDEPENDENT_HUMAN_DECISIONS"
+  },
+  {
+   "article": "CF88:ART.202",
+   "destination": "EXT_LC109_2001",
+   "targets": [
+    "CF88:ART.202:PAR.1",
+    "CF88:ART.202:CAPUT"
+   ],
+   "decisions": [
+    [
+     "CORRC0-362157C332DE"
+    ],
+    [
+     "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_E3E07057AD3E162C@CF88:ART.202:CAPUT"
+    ]
+   ],
+   "superseded_still_published": [],
+   "verdict": "INDEPENDENT_HUMAN_DECISIONS"
+  },
+  {
+   "article": "CF88:ART.239",
+   "destination": "EXT_LEI7998_1990",
+   "targets": [
+    "CF88:ART.239:PAR.3",
+    "CF88:ART.239:PAR.4"
+   ],
+   "decisions": [
+    [
+     "CORRC0-5C8AFC368627"
+    ],
+    [
+     "CORRC0-7867B93D94DA"
+    ]
+   ],
+   "superseded_still_published": [],
+   "verdict": "INDEPENDENT_HUMAN_DECISIONS"
+  }
+ ]
+}
