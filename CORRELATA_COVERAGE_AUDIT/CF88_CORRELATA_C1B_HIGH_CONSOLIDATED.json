@@ -20,15 +20,15 @@
   },
   "decisions": {
    "APPROVE": 36,
-   "ADJUST": 39,
-   "REJECT": 27,
-   "HOLD": 4,
+   "ADJUST": 41,
+   "REJECT": 29,
+   "HOLD": 0,
    "NEEDS_SOURCE": 0
   },
-  "accepted": 75,
+  "accepted": 77,
   "accepted_device_route": {
    "MAIN_CORPUS_ROUTE_REQUIRED": 19,
-   "INGESTION_REQUIRED": 49,
+   "INGESTION_REQUIRED": 51,
    "DEVICE_RESOLVABLE_NOW": 7
   },
   "temporal_device_block": 2,
@@ -36,7 +36,7 @@
   "transitional_accepted": 2,
   "accepted_temporal": {
    "IN_FORCE": 62,
-   "PARTIAL_EFFECTS": 9,
+   "PARTIAL_EFFECTS": 11,
    "TRANSITIONAL": 2,
    "VACATIO_LEGIS": 2
   },
@@ -46,15 +46,15 @@
     "ADCT": 2
    },
    "accepted": {
-    "CF88": 73,
+    "CF88": 75,
     "ADCT": 2
    },
    "reject": {
-    "CF88": 27,
+    "CF88": 29,
     "ADCT": 0
    },
    "hold": {
-    "CF88": 4,
+    "CF88": 0,
     "ADCT": 0
    },
    "needs_source": {
@@ -62,6 +62,17 @@
     "ADCT": 0
    }
   },
+  "final_closure_review": {
+   "source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "hold_resolved": 4,
+   "resolutions": {
+    "CORRC0-78E258F9B624": "REJECT",
+    "CORRC0-E86B55D28D44": "ADJUST",
+    "CORRC0-E0C9C2F5CDBD": "REJECT",
+    "CORRC0-FC57ED913387": "ADJUST"
+   }
+  },
+  "judicial_restrictions_accepted": 2,
   "new_candidate_backlog_total": 18,
   "new_candidate_backlog_by_priority": {
    "HIGH": 7,
@@ -784,10 +795,10 @@
    "namespace": "CF88",
    "norm_key": "LEI:8112/1990",
    "norm_name": "Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais",
-   "decision": "HOLD",
+   "decision": "REJECT",
    "target_final": null,
    "relation_type_final": null,
-   "confidence": "BAIXA",
+   "confidence": "ALTA",
    "temporal_status": "IN_FORCE",
    "temporal": {
     "temporal_status": "IN_FORCE",
@@ -796,10 +807,17 @@
     "revalidate_on": null,
     "note": null
    },
-   "temporal_source": "CONSOLIDATED_MAPPING",
+   "temporal_source": "HIGH_FINAL_CLOSURE_REVIEW",
    "scope": [],
    "device_route_status": null,
-   "device_flags": []
+   "device_flags": [],
+   "batch_decision": "HOLD",
+   "decision_source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "flags": [],
+   "reject_reason": "CURRENT_CONSTITUTIONAL_REGIME_NOT_REPRESENTED_BY_LEI_8112",
+   "judicial": null,
+   "final_analysis": "O regime atual do art. 40, § 7º, depois da EC 103/2019, tem regras gerais de pensão para a União e uma regra diferenciada para a morte dos servidores do § 4º-B. A Lei 8.112/1990 não deve ser apresentada como regulamentadora atual desse comando. A EC 103 não é transformada em CORRELATA infraconstitucional.",
+   "final_sources": []
   },
   {
    "batch": "BATCH01",
@@ -2634,22 +2652,75 @@
    "namespace": "CF88",
    "norm_key": "LEI:14701/2023",
    "norm_name": "Lei nº 14.701/2023",
-   "decision": "HOLD",
-   "target_final": null,
-   "relation_type_final": null,
-   "confidence": "BAIXA",
-   "temporal_status": "UNCERTAIN",
+   "decision": "ADJUST",
+   "target_final": "CF88:ART.231:PAR.1",
+   "relation_type_final": "REGULAMENTA",
+   "confidence": "MEDIA",
+   "temporal_status": "PARTIAL_EFFECTS",
    "temporal": {
-    "temporal_status": "UNCERTAIN",
-    "effective_from": "2023-10-20 (publicação)",
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2023-10-20",
     "early_application_possible": null,
-    "revalidate_on": null,
-    "note": "a página oficial do Planalto anota \"(Vide ADC 87) (Vide ADI 7582) (Vide ADI 7583) (Vide ADI 7586)\" no art. 4º: lei sob controle concentrado no STF; situação atual de eficácia não verificada nesta rodada"
+    "revalidate_on": "julgamento final dos embargos de declaração na ADC 87",
+    "note": "STF, mérito em 2025-12-19: inconstitucionalidade parcial e interpretação conforme; o texto original não está integralmente vigente"
    },
-   "temporal_source": "BATCH04",
-   "scope": [],
-   "device_route_status": null,
-   "device_flags": []
+   "temporal_source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "batch_decision": "HOLD",
+   "decision_source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "flags": [
+    "JUDICIAL_RESTRICTIONS",
+    "PARTIAL_EFFECTS"
+   ],
+   "reject_reason": null,
+   "judicial": {
+    "judicial_status": "STF_PARTIAL_UNCONSTITUTIONALITY",
+    "cases": [
+     "ADC 87",
+     "ADI 7582",
+     "ADI 7583",
+     "ADI 7586"
+    ],
+    "merits_decided_on": "2025-12-19",
+    "merits_summary": "Procedência parcial (sessão virtual extraordinária de 15 a 18/12/2025, decisão registrada em 19/12/2025): inconstitucionais a expressão \"na data da promulgação da Constituição Federal\" do caput do art. 4º e os §§ 2º, 3º e 4º do art. 4º; os §§ 1º e 2º do art. 9º; os arts. 10 e 13; o parágrafo único do art. 20; interpretação conforme nos arts. 5º, 6º, 14, 18, §§ 1º e 2º, 20, caput, e 22, entre outros.",
+    "embargos_status": "PENDING: segundos embargos de declaração em sessão virtual; pedido de vista do Min. Dias Toffoli em 19/08/2026; último andamento oficial em 02/09/2026 (petição); sem julgamento final dos embargos até 2026-10-11.",
+    "status_checked_until": "2026-10-11",
+    "REVALIDATE_ON_FINAL_ED": true,
+    "CORRELATA_REQUIRES_JUDICIAL_STATUS": true
+   },
+   "final_analysis": "A lei tem relação material direta com a definição e a demarcação das terras tradicionalmente ocupadas (§ 1º). O STF, porém, atingiu dispositivos centrais (art. 4º, marco temporal). O vínculo só pode ser exibido com aviso de status judicial; o texto original não é tratado como integralmente vigente.",
+   "final_sources": [
+    {
+     "source_id": "L14701",
+     "norm": "Lei nº 14.701/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14701.htm",
+     "sha256": "d51bcfe35e5dbf038dbd814a0b026914b0a1500b76989fe5b6ad7027a47e1bf8",
+     "bytes": 126386,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "STF_ADC87_DECISOES",
+     "norm": "STF, ADC 87 (julgamento conjunto com ADIs 7582, 7583 e 7586), aba Decisões",
+     "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6824155",
+     "sha256": "385afc97854239dd4976104efa884d6beb0460673abdd7c82c398e71ada39df5",
+     "bytes": 76207,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "STF_ADC87_ANDAMENTOS",
+     "norm": "STF, ADC 87, aba Andamentos",
+     "url": "https://portal.stf.jus.br/processos/abaAndamentos.asp?incidente=6824155",
+     "sha256": "b232dd6628c7c1fd1c206fa5127712b6c7e60ff5cee30322a541a755516d8e94",
+     "bytes": 3529015,
+     "verified_on": "2026-10-11"
+    }
+   ]
   },
   {
    "batch": "BATCH04",
@@ -2658,22 +2729,68 @@
    "namespace": "CF88",
    "norm_key": "LEI:14701/2023",
    "norm_name": "Lei nº 14.701/2023",
-   "decision": "HOLD",
+   "decision": "REJECT",
    "target_final": null,
    "relation_type_final": null,
-   "confidence": "BAIXA",
-   "temporal_status": "UNCERTAIN",
+   "confidence": "ALTA",
+   "temporal_status": "PARTIAL_EFFECTS",
    "temporal": {
-    "temporal_status": "UNCERTAIN",
-    "effective_from": "2023-10-20 (publicação)",
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2023-10-20",
     "early_application_possible": null,
-    "revalidate_on": null,
-    "note": "a página oficial do Planalto anota \"(Vide ADC 87) (Vide ADI 7582) (Vide ADI 7583) (Vide ADI 7586)\" no art. 4º: lei sob controle concentrado no STF; situação atual de eficácia não verificada nesta rodada"
+    "revalidate_on": "julgamento final dos embargos de declaração na ADC 87",
+    "note": "STF, mérito em 2025-12-19: inconstitucionalidade parcial e interpretação conforme; o texto original não está integralmente vigente"
    },
-   "temporal_source": "BATCH04",
+   "temporal_source": "HIGH_FINAL_CLOSURE_REVIEW",
    "scope": [],
    "device_route_status": null,
-   "device_flags": []
+   "device_flags": [],
+   "batch_decision": "HOLD",
+   "decision_source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "flags": [],
+   "reject_reason": "CROSS_REFERENCE_ONLY",
+   "judicial": {
+    "judicial_status": "STF_PARTIAL_UNCONSTITUTIONALITY",
+    "cases": [
+     "ADC 87",
+     "ADI 7582",
+     "ADI 7583",
+     "ADI 7586"
+    ],
+    "merits_decided_on": "2025-12-19",
+    "merits_summary": "Procedência parcial (sessão virtual extraordinária de 15 a 18/12/2025, decisão registrada em 19/12/2025): inconstitucionais a expressão \"na data da promulgação da Constituição Federal\" do caput do art. 4º e os §§ 2º, 3º e 4º do art. 4º; os §§ 1º e 2º do art. 9º; os arts. 10 e 13; o parágrafo único do art. 20; interpretação conforme nos arts. 5º, 6º, 14, 18, §§ 1º e 2º, 20, caput, e 22, entre outros.",
+    "embargos_status": "PENDING: segundos embargos de declaração em sessão virtual; pedido de vista do Min. Dias Toffoli em 19/08/2026; último andamento oficial em 02/09/2026 (petição); sem julgamento final dos embargos até 2026-10-11.",
+    "status_checked_until": "2026-10-11",
+    "REVALIDATE_ON_FINAL_ED": true,
+    "CORRELATA_REQUIRES_JUDICIAL_STATUS": true
+   },
+   "final_analysis": "A remissão ao § 3º não representa disciplina material suficiente do aproveitamento de recursos hídricos e da lavra de riquezas minerais em terras indígenas (autorização do Congresso, oitiva das comunidades, participação nos resultados).",
+   "final_sources": [
+    {
+     "source_id": "L14701",
+     "norm": "Lei nº 14.701/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14701.htm",
+     "sha256": "d51bcfe35e5dbf038dbd814a0b026914b0a1500b76989fe5b6ad7027a47e1bf8",
+     "bytes": 126386,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "STF_ADC87_DECISOES",
+     "norm": "STF, ADC 87 (julgamento conjunto com ADIs 7582, 7583 e 7586), aba Decisões",
+     "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6824155",
+     "sha256": "385afc97854239dd4976104efa884d6beb0460673abdd7c82c398e71ada39df5",
+     "bytes": 76207,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "STF_ADC87_ANDAMENTOS",
+     "norm": "STF, ADC 87, aba Andamentos",
+     "url": "https://portal.stf.jus.br/processos/abaAndamentos.asp?incidente=6824155",
+     "sha256": "b232dd6628c7c1fd1c206fa5127712b6c7e60ff5cee30322a541a755516d8e94",
+     "bytes": 3529015,
+     "verified_on": "2026-10-11"
+    }
+   ]
   },
   {
    "batch": "BATCH04",
@@ -2682,22 +2799,77 @@
    "namespace": "CF88",
    "norm_key": "LEI:14701/2023",
    "norm_name": "Lei nº 14.701/2023",
-   "decision": "HOLD",
-   "target_final": null,
-   "relation_type_final": null,
-   "confidence": "BAIXA",
-   "temporal_status": "UNCERTAIN",
+   "decision": "ADJUST",
+   "target_final": "CF88:ART.231:PAR.6",
+   "relation_type_final": "COMPLEMENTA",
+   "confidence": "MEDIA",
+   "temporal_status": "PARTIAL_EFFECTS",
    "temporal": {
-    "temporal_status": "UNCERTAIN",
-    "effective_from": "2023-10-20 (publicação)",
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2023-10-20",
     "early_application_possible": null,
-    "revalidate_on": null,
-    "note": "a página oficial do Planalto anota \"(Vide ADC 87) (Vide ADI 7582) (Vide ADI 7583) (Vide ADI 7586)\" no art. 4º: lei sob controle concentrado no STF; situação atual de eficácia não verificada nesta rodada"
+    "revalidate_on": "julgamento final dos embargos de declaração na ADC 87",
+    "note": "STF, mérito em 2025-12-19: inconstitucionalidade parcial e interpretação conforme; o texto original não está integralmente vigente"
    },
-   "temporal_source": "BATCH04",
-   "scope": [],
-   "device_route_status": null,
-   "device_flags": []
+   "temporal_source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "scope": [
+    "ESCOPO_PARCIAL",
+    "NON_EXCLUSIVE"
+   ],
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "batch_decision": "HOLD",
+   "decision_source": "HIGH_FINAL_CLOSURE_REVIEW",
+   "flags": [
+    "DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION",
+    "JUDICIAL_RESTRICTIONS",
+    "PARTIAL_EFFECTS"
+   ],
+   "reject_reason": null,
+   "judicial": {
+    "judicial_status": "STF_PARTIAL_UNCONSTITUTIONALITY",
+    "cases": [
+     "ADC 87",
+     "ADI 7582",
+     "ADI 7583",
+     "ADI 7586"
+    ],
+    "merits_decided_on": "2025-12-19",
+    "merits_summary": "Procedência parcial (sessão virtual extraordinária de 15 a 18/12/2025, decisão registrada em 19/12/2025): inconstitucionais a expressão \"na data da promulgação da Constituição Federal\" do caput do art. 4º e os §§ 2º, 3º e 4º do art. 4º; os §§ 1º e 2º do art. 9º; os arts. 10 e 13; o parágrafo único do art. 20; interpretação conforme nos arts. 5º, 6º, 14, 18, §§ 1º e 2º, 20, caput, e 22, entre outros.",
+    "embargos_status": "PENDING: segundos embargos de declaração em sessão virtual; pedido de vista do Min. Dias Toffoli em 19/08/2026; último andamento oficial em 02/09/2026 (petição); sem julgamento final dos embargos até 2026-10-11.",
+    "status_checked_until": "2026-10-11",
+    "REVALIDATE_ON_FINAL_ED": true,
+    "CORRELATA_REQUIRES_JUDICIAL_STATUS": true
+   },
+   "final_analysis": "A lei complementa parcialmente o § 6º (nulidade de atos e efeitos sobre ocupação e domínio). É lei ordinária e não satisfaz a exigência de lei complementar para a ressalva do relevante interesse público da União: DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION = true.",
+   "final_sources": [
+    {
+     "source_id": "L14701",
+     "norm": "Lei nº 14.701/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14701.htm",
+     "sha256": "d51bcfe35e5dbf038dbd814a0b026914b0a1500b76989fe5b6ad7027a47e1bf8",
+     "bytes": 126386,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "STF_ADC87_DECISOES",
+     "norm": "STF, ADC 87 (julgamento conjunto com ADIs 7582, 7583 e 7586), aba Decisões",
+     "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6824155",
+     "sha256": "385afc97854239dd4976104efa884d6beb0460673abdd7c82c398e71ada39df5",
+     "bytes": 76207,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "STF_ADC87_ANDAMENTOS",
+     "norm": "STF, ADC 87, aba Andamentos",
+     "url": "https://portal.stf.jus.br/processos/abaAndamentos.asp?incidente=6824155",
+     "sha256": "b232dd6628c7c1fd1c206fa5127712b6c7e60ff5cee30322a541a755516d8e94",
+     "bytes": 3529015,
+     "verified_on": "2026-10-11"
+    }
+   ]
   },
   {
    "batch": "BATCH04",

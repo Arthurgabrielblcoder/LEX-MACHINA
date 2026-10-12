@@ -150,6 +150,27 @@ class Consolidated(unittest.TestCase):
         # no backlog pair is counted among the 106 (backlogs never become original HIGH rows)
         self.assertFalse(backlog_keys & {(r['norm_key'], r['target_original']) for r in rows})
 
+    def test_final_closure_resolves_all_holds(self):
+        s = CONS['summary']
+        self.assertEqual(s['decisions'], dict(APPROVE=36, ADJUST=41, REJECT=29, HOLD=0, NEEDS_SOURCE=0))
+        self.assertEqual(s['accepted'], 77)
+        by = {r['candidate_id']: r for r in CONS['candidates']}
+        r = by['CORRC0-78E258F9B624']
+        self.assertEqual((r['batch_decision'], r['decision'], r['reject_reason']),
+                         ('HOLD', 'REJECT', 'CURRENT_CONSTITUTIONAL_REGIME_NOT_REPRESENTED_BY_LEI_8112'))
+        self.assertEqual(by['CORRC0-E0C9C2F5CDBD']['reject_reason'], 'CROSS_REFERENCE_ONLY')
+        for cid, rel, tgt in (('CORRC0-E86B55D28D44', 'REGULAMENTA', 'CF88:ART.231:PAR.1'), ('CORRC0-FC57ED913387', 'COMPLEMENTA', 'CF88:ART.231:PAR.6')):
+            r = by[cid]
+            self.assertEqual((r['decision'], r['relation_type_final'], r['target_final'], r['temporal_status']), ('ADJUST', rel, tgt, 'PARTIAL_EFFECTS'))
+            self.assertIn('JUDICIAL_RESTRICTIONS', r['flags'])
+            self.assertIn('NON_EXCLUSIVE', r['scope'])
+            j = r['judicial']
+            self.assertEqual((j['judicial_status'], j['merits_decided_on'], j['REVALIDATE_ON_FINAL_ED'], j['CORRELATA_REQUIRES_JUDICIAL_STATUS']),
+                             ('STF_PARTIAL_UNCONSTITUTIONALITY', '2025-12-19', True, True))
+            self.assertTrue(any(x['url'].startswith('https://portal.stf.jus.br/') for x in r['final_sources']))
+        self.assertIn('ESCOPO_PARCIAL', by['CORRC0-FC57ED913387']['scope'])
+        self.assertIn('DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION', by['CORRC0-FC57ED913387']['flags'])
+
     def test_rows_complete(self):
         for r in CONS['candidates']:
             self.assertIn(r['temporal_status'], B3.TEMPORAL)

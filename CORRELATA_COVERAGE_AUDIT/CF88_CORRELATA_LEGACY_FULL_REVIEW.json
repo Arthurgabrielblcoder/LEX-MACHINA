@@ -1,0 +1,2164 @@
+{
+ "schema_version": 1,
+ "artifact": "CF88_CORRELATA_LEGACY_FULL_REVIEW",
+ "applied": false,
+ "verified_on": "2026-10-11",
+ "baseline": {
+  "branch": "cf-correlata-coverage-audit",
+  "head": "a597844bc42b0da944b97cc67d428294eff86c2f",
+  "device_entenda_810": "44ef69ba3957d9c55a6b4b5fe9f9f68fcd77efef"
+ },
+ "decision_values": [
+  "KEEP",
+  "KEEP_WITH_ROUTE_FIX",
+  "RETARGET",
+  "REPLACE",
+  "REMOVE",
+  "HOLD"
+ ],
+ "policy": "Cada um dos 44 vínculos visíveis tem decisão auditável. Nada aplicado: o catálogo legado, as exclusões e o export RUN3 não foram alterados. Um vínculo não é mantido só porque a norma cita o artigo: conteúdo material, dispositivo, renumeração, vigência, fan-out, lei alteradora e target específico foram verificados.",
+ "summary": {
+  "LEGACY_EXPORT_TOTAL": 46,
+  "LEGACY_VISIBLE_TOTAL": 44,
+  "LEGACY_HIDDEN_HISTORICAL": 2,
+  "LEGACY_VISIBLE_REVIEWED": 44,
+  "decided_in_c1a": 19,
+  "reviewed_now": 25,
+  "decisions": {
+   "KEEP": 10,
+   "KEEP_WITH_ROUTE_FIX": 5,
+   "RETARGET": 5,
+   "REPLACE": 5,
+   "REMOVE": 18,
+   "HOLD": 1
+  },
+  "decisions_reviewed_now": {
+   "KEEP": 10,
+   "KEEP_WITH_ROUTE_FIX": 5,
+   "RETARGET": 4,
+   "REPLACE": 0,
+   "REMOVE": 6,
+   "HOLD": 0
+  },
+  "flags_reviewed_now": {
+   "ALTERADORA_INCORPORADA": 1,
+   "FAN_OUT_CONSOLIDATED": 5,
+   "SCHEDULED_EXTINCTION": 1,
+   "SUPPRESS_UNTIL_EFFECTIVE": 1,
+   "TEMPORAL_DEVICE_BLOCK": 1
+  },
+  "new_official_downloads": 0
+ },
+ "links": [
+  {
+   "reference_id": "CORRELATA:REL_DD3B2F9749F1A8A7@CF88:ART.5:INC.XLIII",
+   "target_id": "CF88:ART.5:INC.XLIII",
+   "display_target": "CF art. 5, XLIII",
+   "relation_id": "REL_DD3B2F9749F1A8A7",
+   "destination_norm_id": "EXT_LEI13260_2016",
+   "destination_norm_key": "LEI:13260/2016",
+   "destination_norm_name": "Lei nº 13.260/2016",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Ementa e art. 1º: \"regulamenta o disposto no inciso XLIII do art. 5º\", disciplinando o terrorismo. Relação material direta (crime inafiançável e insuscetível de graça).",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "note": "A Lei 8.072/1990 (crimes hediondos) também disciplina o inciso; não exclusivo.",
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI13260_2016/lei_13260_2016_correlata.txt",
+     "sha256": "ad786ee7d0a40917cac843fabb1a6b05de61b5b0efff95dbc0a49b7069d0e082",
+     "bytes": 10231,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_7525C422E1E1B4A1@CF88:ART.20:PAR.1",
+   "target_id": "CF88:ART.20:PAR.1",
+   "display_target": "CF art. 20, § 1",
+   "relation_id": "REL_7525C422E1E1B4A1",
+   "destination_norm_id": "EXT_LEI12734_2012",
+   "destination_norm_key": "LEI:12734/2012",
+   "destination_norm_name": "Lei nº 12.734/2012",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1",
+     "2"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "REMOVE",
+   "confidence": "MEDIA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 12.734/2012 é lei alteradora: modifica as Leis 9.478/1997 e 12.351/2010 (ementa; arts. 2º e 3º) para redistribuir royalties e participação especial. O conteúdo está incorporado às leis alteradas; o art. 1º só enuncia o objeto. Pela regra das leis alteradoras incorporadas, o vínculo não se sustenta. A disciplina direta do § 1º já tem substituição decidida na C1A (REPLACE do vínculo Lei 9.984/2000 no mesmo target).",
+   "relevant_provisions": "arts. 1º a 3º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [
+    "ALTERADORA_INCORPORADA"
+   ],
+   "scope": [],
+   "note": "Risco adicional não usado como fundamento: as novas regras de distribuição foram objeto de cautelar na ADI 4917 (não verificado nesta rodada).",
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI12734_2012/lei_12734_2012_correlata.txt",
+     "sha256": "80369bba9c1ddf61a92ceed787904c46b30292c440e6e7d2ed76f016ae23350c",
+     "bytes": 39557,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_0628FE08FD9A170F@CF88:ART.20:PAR.1",
+   "target_id": "CF88:ART.20:PAR.1",
+   "display_target": "CF art. 20, § 1",
+   "relation_id": "REL_0628FE08FD9A170F",
+   "destination_norm_id": "EXT_LEI9984_2000",
+   "destination_norm_key": "LEI:9984/2000",
+   "destination_norm_name": "Lei nº 9.984/2000",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "c0_flags": [
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 9.984/2000 cria a ANA; a participacao/compensacao financeira do § 1º nao e o objeto da ementa"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REPLACE",
+   "confidence": "MEDIA",
+   "retarget_to": null,
+   "replacement_norms": [
+    {
+     "norm_key": "LEI:7990/1989",
+     "norm_name": "Lei nº 7.990/1989",
+     "target_id": "CF88:ART.20:PAR.1",
+     "relation_type": "REGULAMENTA",
+     "route": "ABRIR_ARTIGO_INTERNO art. 1º (ou norma inteira)",
+     "acervo_status": "INGESTION_REQUIRED"
+    }
+   ],
+   "route_fix": null,
+   "legal_analysis": "O § 1º assegura, nos termos da lei, participação ou compensação financeira pela exploração de petróleo, gás, recursos hídricos e minerais. A Lei 9.984/2000 é a lei da ANA: só os arts. 28 e 29, que alteram outras leis, tocam a compensação hídrica, e o salto atual abre a norma sem artigo. A lei que institui e disciplina a compensação do § 1º é a Lei 7.990/1989, depois complementada pela Lei 8.001/1990. Manter a Lei 9.984 como correlata do § 1º inteiro dá destaque a uma norma de órgão, com conteúdo só reflexo.",
+   "independent_review": {
+    "verdict": "APPROVED_WITH_NOTES",
+    "NON_EXCLUSIVE_PRIMARY_CORRELATA": true,
+    "notes": [
+     "NON_EXCLUSIVE_PRIMARY_CORRELATA: a Lei 7.990/1989 tem relação direta e primária com a compensação financeira do art. 20, § 1º, mas a aprovação não a torna a única legislação correlata do dispositivo.",
+     "Não exclui futuros vínculos setoriais aprovados, como a Lei 8.001/1990 e a Lei 12.734/2012, que já está vinculada."
+    ]
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_A0A931F9E613AA9F@CF88:ART.34:INC.V:AL.b",
+   "target_id": "CF88:ART.34:INC.V:AL.b",
+   "display_target": "CF art. 34, V, b)",
+   "relation_id": "REL_A0A931F9E613AA9F",
+   "destination_norm_id": "EXT_LC63_1990",
+   "destination_norm_key": "LC:63/1990",
+   "destination_norm_name": "Lei Complementar nº 63/1990",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "10"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Art. 10: a falta de entrega aos Municípios, nos prazos da lei complementar, sujeita o Estado à intervenção \"nos termos do disposto na alínea b do inciso V do art. 34\". A LC 63 fixa os prazos a que a alínea b se refere.",
+   "relevant_provisions": "art. 10",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC63_1990/lc_63_1990_correlata.txt",
+     "sha256": "c34ce481626da1cb63a483455794984e15ed11cf6654be5bc99c94305e3c2b6e",
+     "bytes": 13922,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_63_1990",
+     "norm": "Lei Complementar nº 63/1990 (parcelas municipais; valor adicionado)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp63.htm",
+     "sha256": "da8f7f7a27a50d58ec4e1825bf94991d8b00cd0368c836ec3ad329e28b687120",
+     "bytes": 27959
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_167CD90B031F3404@CF88:ART.37:INC.II",
+   "target_id": "CF88:ART.37:INC.II",
+   "display_target": "CF art. 37, II",
+   "relation_id": "REL_167CD90B031F3404",
+   "destination_norm_id": "EXT_LEI14965_2024",
+   "destination_norm_key": "LEI:14965/2024",
+   "destination_norm_name": "Lei nº 14.965/2024",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Art. 1º: normas gerais sobre concurso público \"para assegurar ... o disposto no inciso II do caput do art. 37\". Relação jurídica correta. A lei, porém, está em vacatio legis até 2028-01-01: o vínculo visível hoje apresenta como vigente uma lei futura.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "VACATIO_LEGIS",
+    "effective_from": "2028-01-01",
+    "early_application_possible": true,
+    "revalidate_on": null,
+    "note": "Lei 14.965/2024, art. 13; mesma situação dos HIGH dos arts. 131, § 2º e 132"
+   },
+   "flags": [
+    "TEMPORAL_DEVICE_BLOCK",
+    "SUPPRESS_UNTIL_EFFECTIVE"
+   ],
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "note": "Decisão jurídica KEEP; ação de aparelho segue a política C2 de vacatio (DO_NOT_PUBLISH_AS_CURRENT): neutralizar por exclusão temporária até a vigência.",
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI14965_2024/lei_14965_2024_correlata.txt",
+     "sha256": "d45b8a75f0eee7e399bb2b5d7678e99fe078175e970533c284173f644d5a4c03",
+     "bytes": 15565,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LEI_14965_2024",
+     "norm": "Lei nº 14.965/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14965.htm",
+     "sha256": "48c23ae7efc4f8d7d895170c5b59202c9635f3585326cd54a2b6b5f304678ce3",
+     "bytes": 55968,
+     "verified_on": "2026-10-11"
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.I",
+   "target_id": "CF88:ART.37:PAR.3:INC.I",
+   "display_target": "CF art. 37, § 3, I",
+   "relation_id": "REL_9DFE2FF258879347",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "destination_norm_key": "LEI:13460/2017",
+   "destination_norm_name": "Lei nº 13.460/2017",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Lei de participação, proteção e defesa do usuário de serviços públicos: reclamações (ouvidorias), manutenção dos serviços e avaliação de qualidade, conteúdo do § 3º, I. O texto cita o inciso I expressamente.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": "O fan-out da mesma relação nos incisos II e III já foi decidido na C1A (REPLACE e HOLD).",
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI13460_2017/lei_13460_2017_correlata.txt",
+     "sha256": "28476fc91e7742c75e271470f491a557672fe5d01c5f8ab3f02bca9bb070d22d",
+     "bytes": 20656,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LEI_13460_2017",
+     "norm": "Lei nº 13.460/2017 (usuário de serviços públicos)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13460.htm",
+     "sha256": "28d0650407dea4bbc49b141fb5f4d65a5659e8194990b3249ddb45c681569722",
+     "bytes": 69906
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.II",
+   "target_id": "CF88:ART.37:PAR.3:INC.II",
+   "display_target": "CF art. 37, § 3, II",
+   "relation_id": "REL_9DFE2FF258879347",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "destination_norm_key": "LEI:13460/2017",
+   "destination_norm_name": "Lei nº 13.460/2017",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: inciso II (acesso a registros/informacoes) e regulado pela LAI (Lei 12.527/2011, ementa); Lei 13.460/2017 e o inciso I"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REPLACE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [
+    {
+     "norm_key": "LEI:12527/2011",
+     "norm_name": "Lei nº 12.527/2011 (LAI)",
+     "target_id": "CF88:ART.37:PAR.3:INC.II",
+     "relation_type": "REGULAMENTA",
+     "route": "norma principal LAI2011, art. 1º",
+     "acervo_status": "IN_MAIN_CORPUS"
+    }
+   ],
+   "route_fix": null,
+   "legal_analysis": "O inciso II trata do acesso a registros administrativos e a informações sobre atos de governo. A própria Lei 13.460 remete essa matéria à LAI e declara apoio apenas no inciso I. A LAI regulamenta expressamente o inciso II. O vínculo atual vem do fan-out da relação do inciso I.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.III",
+   "target_id": "CF88:ART.37:PAR.3:INC.III",
+   "display_target": "CF art. 37, § 3, III",
+   "relation_id": "REL_9DFE2FF258879347",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "destination_norm_key": "LEI:13460/2017",
+   "destination_norm_name": "Lei nº 13.460/2017",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "HOLD",
+   "confidence": "BAIXA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso III trata da disciplina da representação contra exercício negligente ou abusivo de cargo, emprego ou função. A Lei 13.460 não se declara regulamentadora do inciso III, mas o regime de manifestações e denúncias sobre a conduta de agentes cobre parte da matéria, só no âmbito da prestação de serviços. Não localizei em fonte oficial uma norma geral apontada como disciplina do inciso III. Sem essa base, nem remover nem manter é seguro.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.I",
+   "target_id": "CF88:ART.43:PAR.1:INC.I",
+   "display_target": "CF art. 43, § 1, I",
+   "relation_id": "REL_4468A85CBDDD620A",
+   "destination_norm_id": "EXT_LC112_2001",
+   "destination_norm_key": "LC:112/2001",
+   "destination_norm_name": "Lei Complementar nº 112/2001",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: LC 112/2001 cria uma RIDE especifica (Grande Teresina): instancia, nao a lei geral do inciso"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso I pede a lei complementar das condições gerais de integração de regiões em desenvolvimento. A LC 112 cria uma região específica: é aplicação concreta, uma entre várias RIDEs, e não a disciplina geral. Ela não cita o § 1º nem o inciso I. O vínculo é estreito e resulta do fan-out para os dois incisos.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II",
+   "target_id": "CF88:ART.43:PAR.1:INC.II",
+   "display_target": "CF art. 43, § 1, II",
+   "relation_id": "REL_4468A85CBDDD620A",
+   "destination_norm_id": "EXT_LC112_2001",
+   "destination_norm_key": "LC:112/2001",
+   "destination_norm_name": "Lei Complementar nº 112/2001",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: LC 112/2001 cria uma RIDE especifica (Grande Teresina): instancia, nao a lei geral do inciso"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REPLACE",
+   "confidence": "MEDIA",
+   "retarget_to": null,
+   "replacement_norms": [
+    {
+     "norm_key": "LC:124/2007",
+     "norm_name": "Lei Complementar nº 124/2007 (SUDAM)",
+     "target_id": "CF88:ART.43:PAR.1:INC.II",
+     "relation_type": "ORGANIZA_INSTITUIÇÃO",
+     "route": "ementa / art. 1º",
+     "acervo_status": "INGESTION_REQUIRED"
+    },
+    {
+     "norm_key": "LC:125/2007",
+     "norm_name": "Lei Complementar nº 125/2007 (SUDENE)",
+     "target_id": "CF88:ART.43:PAR.1:INC.II",
+     "relation_type": "ORGANIZA_INSTITUIÇÃO",
+     "route": "ementa / art. 1º",
+     "acervo_status": "INGESTION_REQUIRED"
+    },
+    {
+     "norm_key": "LC:129/2009",
+     "norm_name": "Lei Complementar nº 129/2009 (SUDECO)",
+     "target_id": "CF88:ART.43:PAR.1:INC.II",
+     "relation_type": "ORGANIZA_INSTITUIÇÃO",
+     "route": "ementa / art. 1º",
+     "acervo_status": "INGESTION_REQUIRED"
+    }
+   ],
+   "route_fix": null,
+   "legal_analysis": "O inciso II trata da composição dos organismos regionais que executam os planos regionais. As LCs 124, 125 e 129 instituem, na forma do art. 43, SUDAM, SUDENE e SUDECO: são exatamente esses organismos. As ementas das LCs 124 e 125 dizem que elas estabelecem a composição; a da LC 129 fala em estrutura e natureza. A LC 112 (uma RIDE) não fixa composição de organismo executor de plano regional nacional. Substituição confirmada pelas ementas oficiais.",
+   "independent_review": {
+    "verdict": "APPROVED_WITH_NOTES",
+    "independent_confidence": "ALTA",
+    "relation_assessment": "IMPLEMENTACAO_MATERIAL_DIRETA",
+    "notes": [
+     "A avaliação jurídica sobe de MEDIA para ALTA. As LCs 124/2007 (SUDAM), 125/2007 (SUDENE) e 129/2009 (SUDECO):",
+     "são leis complementares;",
+     "são editadas \"na forma do art. 43\";",
+     "instituem os organismos regionais;",
+     "disciplinam sua composição e estrutura.",
+     "São implementação material direta do comando do § 1º, II. A decisão REPLACE se mantém; o campo `confidence` original fica preservado como registro histórico."
+    ]
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146",
+   "target_id": "CF88:ART.146",
+   "display_target": "CF art. 146",
+   "relation_id": "REL_5EB3E41B2BB014D3",
+   "destination_norm_id": "EXT_LC199_2023",
+   "destination_norm_key": "LC:199/2023",
+   "destination_norm_name": "Lei Complementar nº 199/2023",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_SUBDIVISAO_DO_TARGET",
+   "c0_flags": [
+    "ARTICLE_LEVEL_LINK (artigo com subdivisoes: revisar target mais especifico)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "RETARGET",
+   "confidence": "ALTA",
+   "retarget_to": "CF88:ART.146:INC.III:AL.b",
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Art. 1º: o Estatuto de simplificação de obrigações acessórias é instituído \"em observância ao disposto na alínea b do inciso III do caput do art. 146\". O vínculo no artigo inteiro é genérico; o dispositivo específico é a alínea b do inciso III.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": "Converge com o HIGH CORRC0-8CF6938B096C (APPROVE, mesmo target): aplicar uma única relação.",
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC199_2023/lc_199_2023_correlata.txt",
+     "sha256": "ac91bd41b1d8e1e0f161a12861fc7039e004095da10672f8be4c98afd1ae5d36",
+     "bytes": 8489,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_199_2023",
+     "norm": "Lei Complementar nº 199/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp199.htm",
+     "sha256": "f99a6c41aa0b22d5d2f523a15255b16f103feb992b69588db09a60dc2541ec55",
+     "bytes": 38182,
+     "verified_on": "2026-10-11"
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_839B2CF9F1A80DA2@CF88:ART.150:PAR.7",
+   "target_id": "CF88:ART.150:PAR.7",
+   "display_target": "CF art. 150, § 7",
+   "relation_id": "REL_839B2CF9F1A80DA2",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_norm_name": "Lei Complementar nº 87/1996",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP_WITH_ROUTE_FIX",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "10"
+    ]
+   },
+   "legal_analysis": "O § 7º autoriza a substituição tributária para frente com \"imediata e preferencial restituição\" se o fato gerador presumido não ocorrer. O art. 10 da LC 87 assegura essa restituição no ICMS. Relação material direta, mas restrita ao ICMS; a rota atual abre a norma sem salto.",
+   "relevant_provisions": "art. 10",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": "2033-01-01",
+    "note": "ADCT, arts. 128 a 133 (EC 132/2023): transição e extinção do ICMS até 2033"
+   },
+   "flags": [],
+   "scope": [
+    "ESCOPO_PARCIAL",
+    "NON_EXCLUSIVE"
+   ],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC87_1996/lc_87_1996_correlata.txt",
+     "sha256": "405aecd1b274f3c9746c92c8c591fdf1c07ec4a5cbd913030e874e26e9ad2c2e",
+     "bytes": 65214,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_87_1996",
+     "norm": "Lei Complementar nº 87/1996 (ICMS, Lei Kandir)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp87.htm",
+     "sha256": "47bb22063ba170cd75425fb6a927780f83b8dbef6e047db857d3a113eceac772",
+     "bytes": 270282
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "CF88",
+     "norm": "Constituição Federal (texto compilado, com redações anteriores)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "display_target": "CF art. 153, § 4, II",
+   "relation_id": "REL_0920FF60E61E5491",
+   "destination_norm_id": "EXT_LEI11250_2005",
+   "destination_norm_key": "LEI:11250/2005",
+   "destination_norm_name": "Lei nº 11.250/2005",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 11.250/2005 \"Regulamenta o inciso III do § 4º do art. 153\" (ementa): nao o inciso II"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso II é a não incidência sobre pequenas glebas. A Lei 11.250 regula só a opção municipal do inciso III, irmão. A disciplina das pequenas glebas está no art. 2º da Lei 9.393/1996, que já tem vínculo nesse inciso (fora do escopo C1A, avaliado PLAUSIBLE pela C0). É fan-out puro.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "display_target": "CF art. 153, § 4, II",
+   "relation_id": "REL_2C57B972486FE4AE",
+   "destination_norm_id": "EXT_LEI8981_1995",
+   "destination_norm_key": "LEI:8981/1995",
+   "destination_norm_name": "Lei nº 8.981/1995",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "90",
+     "117"
+    ]
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 8.981/1995 \"Altera a legislacao tributaria federal\": vinculo amplo, sem relacao direta demonstrada"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Nenhum dispositivo da lei trata de pequenas glebas. O art. 90 alterava o prazo de pagamento numa lei de ITR já revogada. O vínculo é temático e obsoleto.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "display_target": "CF art. 153, § 4, II",
+   "relation_id": "REL_D152FF761345E231",
+   "destination_norm_id": "EXT_LEI9393_1996",
+   "destination_norm_key": "LEI:9393/1996",
+   "destination_norm_name": "Lei nº 9.393/1996",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP_WITH_ROUTE_FIX",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "2"
+    ]
+   },
+   "legal_analysis": "Art. 2º: \"Nos termos do art. 153, § 4º, in fine\", o ITR não incide sobre pequenas glebas rurais. A lei cita o § 4º pela redação anterior à EC 42/2003; o conteúdo corresponde hoje ao inciso II do § 4º (renumeração verificada no texto compilado). A rota atual abre a norma sem salto.",
+   "relevant_provisions": "art. 2º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI9393_1996/lei_9393_1996_correlata.txt",
+     "sha256": "4ac26f118b2210703a84dc6d9b663a8006086d98ea7ae4a980387861f72a7a6d",
+     "bytes": 22259,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LEI_9393_1996",
+     "norm": "Lei nº 9.393/1996 (ITR)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l9393.htm",
+     "sha256": "3e81e78a7d7b56d0f741f84a0df1941af4391b2d67301cf4ae3f4ce19df15814",
+     "bytes": 54425
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "CF88",
+     "norm": "Constituição Federal (texto compilado, com redações anteriores)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "display_target": "CF art. 153, § 4, III",
+   "relation_id": "REL_0920FF60E61E5491",
+   "destination_norm_id": "EXT_LEI11250_2005",
+   "destination_norm_key": "LEI:11250/2005",
+   "destination_norm_name": "Lei nº 11.250/2005",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Ementa: \"Regulamenta o inciso III do § 4º do art. 153\"; art. 1º disciplina os convênios de fiscalização e cobrança do ITR com os Municípios que optarem.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI11250_2005/lei_11250_2005_correlata.txt",
+     "sha256": "1cedc8c5405963ff28e73a8f934502e564513e2b94c4284f9940bee8f8373011",
+     "bytes": 1904,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LEI_11250_2005",
+     "norm": "Lei nº 11.250/2005",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11250.htm",
+     "sha256": "cf6fc96bbe7ed7031974c7cfc64294234212526592345953c419d145c73939d0",
+     "bytes": 12862
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "display_target": "CF art. 153, § 4, III",
+   "relation_id": "REL_2C57B972486FE4AE",
+   "destination_norm_id": "EXT_LEI8981_1995",
+   "destination_norm_key": "LEI:8981/1995",
+   "destination_norm_name": "Lei nº 8.981/1995",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "90",
+     "117"
+    ]
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 8.981/1995 \"Altera a legislacao tributaria federal\": vinculo amplo, sem relacao direta demonstrada"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A lei é anterior ao próprio inciso III, que nasceu com a EC 42/2003, e não tem conteúdo sobre a opção municipal. É falso vínculo.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "display_target": "CF art. 153, § 4, III",
+   "relation_id": "REL_D152FF761345E231",
+   "destination_norm_id": "EXT_LEI9393_1996",
+   "destination_norm_key": "LEI:9393/1996",
+   "destination_norm_name": "Lei nº 9.393/1996",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_2_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 9.393/1996 (ITR) e a lei do imposto; o inciso III trata da opcao municipal (Lei 11.250/2005)"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso III, opção dos Municípios para fiscalizar e cobrar, foi criado pela EC 42/2003 e é regulamentado pela Lei 11.250/2005, que já está vinculada. A Lei 9.393 serve ao inciso II, não ao III. É fan-out entre irmãos.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_FEB2B8ACAD1A48FA@CF88:ART.155:PAR.1:INC.III",
+   "target_id": "CF88:ART.155:PAR.1:INC.III",
+   "display_target": "CF art. 155, § 1, III",
+   "relation_id": "REL_FEB2B8ACAD1A48FA",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_norm_name": "Lei Complementar nº 87/1996",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "c0_flags": [
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: o § 1º trata do imposto do inciso I (ITCMD); a LC 87/1996 e a lei do ICMS (inciso II)"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O § 1º do art. 155 disciplina o imposto do inciso I (ITCMD). O inciso III pede lei complementar para a competência em casos com elemento no exterior. A LC 87 é a lei do ICMS (inciso II e § 2º). Não há relação normativa: é erro de atribuição. Não confirmei substituta específica para o inciso III nesta rodada.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_DD78F9101785B52A@CF88:ART.155:PAR.2:INC.XII",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "relation_id": "REL_DD78F9101785B52A",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_norm_name": "Lei Complementar nº 87/1996",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "CITA_IRMAO_MAS_O_TARGET_EXIGE_LC_E_O_DESTINO_E_LC (sem inconsistencia evidente)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso XII reserva à lei complementar contribuintes, substituição tributária, compensação, local das operações, exclusão nas exportações, manutenção de crédito e base de cálculo do ICMS. A LC 87 é a lei geral do ICMS que disciplina essas alíneas. Não exclusiva: a alínea g (isenções por deliberação dos Estados) é da LC 24/1975.",
+   "relevant_provisions": "arts. 1º a 36",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": "2033-01-01",
+    "note": "ADCT, arts. 128 a 133 (EC 132/2023): transição e extinção do ICMS até 2033"
+   },
+   "flags": [],
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC87_1996/lc_87_1996_correlata.txt",
+     "sha256": "405aecd1b274f3c9746c92c8c591fdf1c07ec4a5cbd913030e874e26e9ad2c2e",
+     "bytes": 65214,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_87_1996",
+     "norm": "Lei Complementar nº 87/1996 (ICMS, Lei Kandir)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp87.htm",
+     "sha256": "47bb22063ba170cd75425fb6a927780f83b8dbef6e047db857d3a113eceac772",
+     "bytes": 270282
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "CF88",
+     "norm": "Constituição Federal (texto compilado, com redações anteriores)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II",
+   "target_id": "CF88:ART.158:PAR.1:INC.II",
+   "display_target": "CF art. 158, § 1, II",
+   "relation_id": "REL_DF3F18219DDA1CD5",
+   "destination_norm_id": "EXT_LC63_1990",
+   "destination_norm_key": "LC:63/1990",
+   "destination_norm_name": "Lei Complementar nº 63/1990",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_NAO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "RETARGET",
+   "confidence": "ALTA",
+   "retarget_to": "CF88:ART.158:PAR.1:INC.I",
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "3"
+    ]
+   },
+   "legal_analysis": "O inciso II do § 1º remete à lei estadual (até 35%, indicadores de educação); a LC 63 não disciplina essa parcela. O art. 3º, I, da LC 63 disciplina a parcela \"na proporção do valor adicionado\", que é o inciso I.",
+   "relevant_provisions": "art. 3º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC63_1990/lc_63_1990_correlata.txt",
+     "sha256": "c34ce481626da1cb63a483455794984e15ed11cf6654be5bc99c94305e3c2b6e",
+     "bytes": 13922,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_63_1990",
+     "norm": "Lei Complementar nº 63/1990 (parcelas municipais; valor adicionado)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp63.htm",
+     "sha256": "da8f7f7a27a50d58ec4e1825bf94991d8b00cd0368c836ec3ad329e28b687120",
+     "bytes": 27959
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "CF88",
+     "norm": "Constituição Federal (texto compilado, com redações anteriores)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I",
+   "target_id": "CF88:ART.161:INC.I",
+   "display_target": "CF art. 161, I",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "destination_norm_id": "EXT_LC62_1989",
+   "destination_norm_key": "LC:62/1989",
+   "destination_norm_name": "Lei Complementar nº 62/1989",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: inciso I (valor adicionado do art. 158, § 1º, I) e materia da LC 63/1990; a LC 62/1989 trata dos fundos (inciso II)"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REPLACE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [
+    {
+     "norm_key": "LC:63/1990",
+     "norm_name": "Lei Complementar nº 63/1990",
+     "target_id": "CF88:ART.161:INC.I",
+     "relation_type": "REGULAMENTA",
+     "route": "ABRIR_ARTIGO_INTERNO art. 3º (EXT_LC63_1990)",
+     "acervo_status": "EXTERNAL_ALREADY_INGESTED"
+    }
+   ],
+   "route_fix": null,
+   "legal_analysis": "O inciso I manda a lei complementar definir valor adicionado para o art. 158, § 1º, I. A LC 62 se declara apoiada só nos incisos II e III. A definição de valor adicionado está no art. 3º, § 1º, da LC 63/1990. A LC 62 continua correta nos incisos II e III.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.II",
+   "target_id": "CF88:ART.161:INC.II",
+   "display_target": "CF art. 161, II",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "destination_norm_id": "EXT_LC62_1989",
+   "destination_norm_key": "LC:62/1989",
+   "destination_norm_name": "Lei Complementar nº 62/1989",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Art. 1º: cálculo, entrega e controle das liberações do FPE e do FPM \"consoante o disposto nos incisos II e III do art. 161\". O inciso II exige a LC dos critérios de rateio e da entrega.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC62_1989/lc_62_1989_correlata.txt",
+     "sha256": "0dbbed6be23675e00cb609a55a6fe7f2b11518319b4b3b7e862a609a4241872a",
+     "bytes": 10808,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_62_1989",
+     "norm": "Lei Complementar nº 62/1989 (FPE/FPM)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp62.htm",
+     "sha256": "a0970c8be6abcb36817a4bc72b8402f53524a1d49c7b8a50810e8c2d4fb9c688",
+     "bytes": 34151
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.III",
+   "target_id": "CF88:ART.161:INC.III",
+   "display_target": "CF art. 161, III",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "destination_norm_id": "EXT_LC62_1989",
+   "destination_norm_key": "LC:62/1989",
+   "destination_norm_name": "Lei Complementar nº 62/1989",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Mesmo art. 1º: o inciso III exige a LC do acompanhamento, pelos beneficiários, do cálculo das quotas e da liberação; a LC 62 disciplina o controle das liberações.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC62_1989/lc_62_1989_correlata.txt",
+     "sha256": "0dbbed6be23675e00cb609a55a6fe7f2b11518319b4b3b7e862a609a4241872a",
+     "bytes": 10808,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_62_1989",
+     "norm": "Lei Complementar nº 62/1989 (FPE/FPM)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp62.htm",
+     "sha256": "a0970c8be6abcb36817a4bc72b8402f53524a1d49c7b8a50810e8c2d4fb9c688",
+     "bytes": 34151
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_70C4549A507F6E00@CF88:ART.182",
+   "target_id": "CF88:ART.182",
+   "display_target": "CF art. 182",
+   "relation_id": "REL_70C4549A507F6E00",
+   "destination_norm_id": "EXT_LEI13425_2017",
+   "destination_norm_key": "LEI:13425/2017",
+   "destination_norm_name": "Lei nº 13.425/2017",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SUBDIVISAO_DO_TARGET",
+   "c0_flags": [
+    "ARTICLE_LEVEL_LINK (artigo com subdivisoes: revisar target mais especifico)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 13.425/2017 (prevencao de incendios) no artigo inteiro; vinculo tematico/estreito para a politica urbana"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "RETARGET",
+   "confidence": "MEDIA",
+   "retarget_to": "CF88:ART.182:CAPUT",
+   "replacement_norms": [],
+   "route_fix": "ABRIR_ARTIGO_INTERNO art. 1º (inalterado)",
+   "legal_analysis": "A lei declara expressamente apoio no caput do art. 182, que trata de diretrizes gerais da política urbana fixadas em lei, e não nos §§ 1º a 4º (plano diretor, desapropriação, parcelamento compulsório). A relação é real, mas setorial. O target correto é o caput, não o artigo inteiro. A correlata principal do art. 182 é o Estatuto da Cidade, Lei 10.257/2001, que \"Regulamenta os arts. 182 e 183\". Ele já é candidato C0, fora deste escopo, e não deve ser confundido com esta revisão.",
+   "independent_review": {
+    "verdict": "APPROVED_WITH_NOTES",
+    "PRESENTATION_EQUIVALENT_RETARGET": true,
+    "ART_CAPUT_DUPLICATION": false,
+    "presentation_target_id": "CF88:ART.182",
+    "canonical_overlay_target_if_required": "CF88:ART.182",
+    "notes": [
+     "O RETARGET é técnico e só vale se compatível com a arquitetura. ART.182 e ART.182:CAPUT são a mesma unidade de apresentação, a única equivalência física permitida.",
+     "O retarget não cria segunda unidade de apresentação e não aumenta coverage_count.",
+     "Também não deve gerar dois botões nem vínculos duplicados no DEVICE.",
+     "Se o overlay futuro exigir o target canônico de apresentação, a decisão vira o equivalente técnico em CF88:ART.182, sem alteração jurídica.",
+     "Nada aplicado agora."
+    ]
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I",
+   "target_id": "CF88:ART.195:INC.I",
+   "display_target": "CF art. 195, I",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "RETARGET",
+   "confidence": "ALTA",
+   "retarget_to": "CF88:ART.195:INC.I:AL.b",
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "legal_analysis": "Art. 1º institui a COFINS \"nos termos do inciso I do art. 195\", na redação original. Depois da EC 20/1998 o inciso I se divide em alíneas, e a contribuição sobre faturamento/receita é a alínea b. A EC 132/2023 extingue essa contribuição a partir de 2027 (ADCT, art. 126, II).",
+   "relevant_provisions": "arts. 1º e 2º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "ADCT, art. 126, II (EC 132/2023): extinção da contribuição do art. 195, I, \"b\", a partir de 2027"
+   },
+   "flags": [
+    "SCHEDULED_EXTINCTION"
+   ],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC70_1991/lc_70_1991_correlata.txt",
+     "sha256": "1cbb50cc73de81a9e4bd2f029d6dd51289af1ccde63a23267ffd6b40198974aa",
+     "bytes": 7034,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_70_1991",
+     "norm": "Lei Complementar nº 70/1991 (COFINS)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp70.htm",
+     "sha256": "63315c060d197e272f449ae244cde5093ea93c90c1d21eb187fbd287c72b0a88",
+     "bytes": 22142
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "CF88",
+     "norm": "Constituição Federal (texto compilado, com redações anteriores)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.II",
+   "target_id": "CF88:ART.195:INC.II",
+   "display_target": "CF art. 195, II",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: LC 70/1991 institui a COFINS (contribuicao do empregador/empresa, inciso I); inciso II e a contribuicao do trabalhador"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REPLACE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [
+    {
+     "norm_key": "LEI:8212/1991",
+     "norm_name": "Lei nº 8.212/1991",
+     "target_id": "CF88:ART.195:INC.II",
+     "relation_type": "REGULAMENTA",
+     "route": "norma principal CUSTEIO1991, art. 20",
+     "acervo_status": "IN_MAIN_CORPUS"
+    }
+   ],
+   "route_fix": null,
+   "legal_analysis": "O inciso II é a contribuição do trabalhador e dos demais segurados. A LC 70 trata da contribuição do empregador sobre o faturamento (inciso I, b) e se declara apoiada só no inciso I. A contribuição dos segurados é disciplinada pela Lei 8.212/1991, arts. 20 e seguintes.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.1",
+   "target_id": "CF88:ART.195:PAR.1",
+   "display_target": "CF art. 195, § 1",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: § 1º trata das receitas de Estados/DF/Municipios nos orcamentos; a ementa da LC 70/1991 nao trata disso"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O § 1º é regra orçamentária federativa. A COFINS é tributo federal sobre faturamento, sem relação normativa com o parágrafo. É fan-out da relação do inciso I.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.2",
+   "target_id": "CF88:ART.195:PAR.2",
+   "display_target": "CF art. 195, § 2",
+   "relation_id": "REL_EA8171739858C1AC",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_norm_name": "Lei Complementar nº 70/1991",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_4_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: § 2º trata da proposta orcamentaria da seguridade; a ementa da LC 70/1991 nao trata disso"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O § 2º trata da proposta orçamentária integrada (saúde, previdência e assistência) e das metas da LDO, matéria orçamentária e periódica. A LC 70 não a disciplina. É fan-out.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.I",
+   "target_id": "CF88:ART.201:INC.I",
+   "display_target": "CF art. 201, I",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 7.998/1990 regula seguro-desemprego/abono (inciso III); inciso I e incapacidade e idade avancada"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso I trata de incapacidade temporária ou permanente e idade avançada (Lei 8.213/1991). A Lei 7.998 não trata desses eventos. É fan-out temático.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.II",
+   "target_id": "CF88:ART.201:INC.II",
+   "display_target": "CF art. 201, II",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 7.998/1990 regula seguro-desemprego/abono (inciso III); inciso II e protecao a maternidade"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso II é a proteção à maternidade (salário-maternidade, Lei 8.213/1991). Não há relação com o seguro-desemprego. É fan-out.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.III",
+   "target_id": "CF88:ART.201:INC.III",
+   "display_target": "CF art. 201, III",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "NOTA_DO_AUDITOR: texto vigente do inciso III = desemprego involuntario, objeto da Lei 7.998/1990 (ementa: seguro-desemprego); a lei cita o \"inciso IV\" pela numeracao anterior"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP_WITH_ROUTE_FIX",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "2"
+    ]
+   },
+   "legal_analysis": "O inciso III vigente trata da proteção ao trabalhador em desemprego involuntário; a Lei 7.998 regula o seguro-desemprego e cita o \"inciso IV do art. 201\" pela numeração anterior à EC 20/1998 (renumeração verificada). A rota atual abre a norma sem salto; o programa está no art. 2º.",
+   "relevant_provisions": "arts. 1º e 2º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI7998_1990/lei_7998_1990_correlata.txt",
+     "sha256": "64e5e005465e715f2235b5958713b88208a77db866fff2edcfd594a734aa548c",
+     "bytes": 32538,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LEI_7998_1990",
+     "norm": "Lei nº 7.998/1990 (seguro-desemprego/abono/FAT)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l7998.htm",
+     "sha256": "674335b5ec1bf3edd518c27bbbad3838cca9635225dd08967733ae88fcf36558",
+     "bytes": 118913
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "CF88",
+     "norm": "Constituição Federal (texto compilado, com redações anteriores)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.IV",
+   "target_id": "CF88:ART.201:INC.IV",
+   "display_target": "CF art. 201, IV",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: a Lei 7.998/1990 cita \"inciso IV do art. 201\" na numeracao de 1990; no texto vigente o inciso IV e salario-familia/auxilio-reclusao e o desemprego involuntario esta no inciso III (renumeracao: confirmar)"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 7.998 cita o \"inciso IV do art. 201\" pela numeração anterior à EC 20/1998. No texto vigente o inciso IV trata de salário-família e auxílio-reclusão, sem relação com a lei. O conteúdo citado corresponde ao inciso III, que já tem o mesmo vínculo (REL_294595B0B7254C57@CF88:ART.201:INC.III). Retargetar duplicaria o vínculo, por isso a decisão é remover.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.V",
+   "target_id": "CF88:ART.201:INC.V",
+   "display_target": "CF art. 201, V",
+   "relation_id": "REL_294595B0B7254C57",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_norm_name": "Lei nº 7.998/1990",
+   "current_route": {
+    "mode": "ABRIR_NORMA_SEM_SALTO",
+    "articles": []
+   },
+   "c0_plausibility": "NEEDS_REVIEW",
+   "c0_citation": "DESTINO_CITA_SO_DISPOSITIVO_IRMAO",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_5_TARGETS (revisar especificidade)",
+    "DESTINO_REGULA_DISPOSITIVO_IRMAO (texto da norma cita outro dispositivo do mesmo nivel)",
+    "INCONSISTENCIA_EVIDENTE_PARA_REVISAO: Lei 7.998/1990 regula seguro-desemprego/abono (inciso III); inciso V e pensao por morte"
+   ],
+   "applied": false,
+   "review_round": "C1A",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "O inciso V é a pensão por morte (Lei 8.213/1991). A Lei 7.998 não a disciplina. É fan-out.",
+   "independent_review": {
+    "verdict": "APPROVED",
+    "notes": []
+   }
+  },
+  {
+   "reference_id": "CORRELATA:REL_E3E07057AD3E162C@CF88:ART.202:CAPUT",
+   "target_id": "CF88:ART.202:CAPUT",
+   "display_target": "CF art. 202, caput",
+   "relation_id": "REL_E3E07057AD3E162C",
+   "destination_norm_id": "EXT_LC109_2001",
+   "destination_norm_key": "LC:109/2001",
+   "destination_norm_name": "Lei Complementar nº 109/2001",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Art. 1º: regime de previdência complementar \"nos termos do caput do art. 202\". É a lei complementar geral exigida pelo caput.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC109_2001/lc_109_2001_correlata.txt",
+     "sha256": "23fffbbaea8b9fcbfb02f518f8d05fe0f9919dc60a553097696f579460229359",
+     "bytes": 54999,
+     "on_card": true
+    },
+    {
+     "kind": "OFFICIAL_PLANALTO",
+     "source_id": "LC_109_2001",
+     "norm": "Lei Complementar nº 109/2001",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp109.htm",
+     "sha256": "98477f7eb4c8033840602397bb261fcf0fd94137617215abafe59708bc8870b9",
+     "bytes": 93736,
+     "verified_on": "2026-10-11"
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.4",
+   "target_id": "CF88:ART.202:PAR.4",
+   "display_target": "CF art. 202, § 4",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "destination_norm_id": "EXT_LC108_2001",
+   "destination_norm_key": "LC:108/2001",
+   "destination_norm_name": "Lei Complementar nº 108/2001",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "Art. 1º: a relação entre entes públicos patrocinadores e suas entidades fechadas, \"a que se referem os §§ 3º, 4º, 5º e 6º do art. 202\", é disciplinada pela LC 108. O § 4º exige exatamente essa lei complementar.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC108_2001/lc_108_2001_correlata.txt",
+     "sha256": "b5e52931f71b4cf5694abd87eb0ec1fe2f5403d7d6df8fd4ae26bdb23da96e8a",
+     "bytes": 15543,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.5",
+   "target_id": "CF88:ART.202:PAR.5",
+   "display_target": "CF art. 202, § 5",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "destination_norm_id": "EXT_LC108_2001",
+   "destination_norm_key": "LC:108/2001",
+   "destination_norm_name": "Lei Complementar nº 108/2001",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP_WITH_ROUTE_FIX",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "26"
+    ]
+   },
+   "legal_analysis": "O § 5º estende a LC do § 4º, no que couber, às permissionárias e concessionárias de serviços públicos patrocinadoras. O art. 26 da LC 108 trata disso expressamente; a rota atual leva ao art. 1º.",
+   "relevant_provisions": "art. 26",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC108_2001/lc_108_2001_correlata.txt",
+     "sha256": "b5e52931f71b4cf5694abd87eb0ec1fe2f5403d7d6df8fd4ae26bdb23da96e8a",
+     "bytes": 15543,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.6",
+   "target_id": "CF88:ART.202:PAR.6",
+   "display_target": "CF art. 202, § 6",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "destination_norm_id": "EXT_LC108_2001",
+   "destination_norm_key": "LC:108/2001",
+   "destination_norm_name": "Lei Complementar nº 108/2001",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_STRONG",
+   "c0_citation": "DESTINO_CITA_O_TARGET",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_3_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "KEEP_WITH_ROUTE_FIX",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "11",
+     "20"
+    ]
+   },
+   "legal_analysis": "O § 6º manda a LC estabelecer requisitos para a designação das diretorias e disciplinar a inserção dos participantes nos colegiados. A LC 108 faz isso nos arts. 9º a 20 (estrutura, composição paritária do conselho deliberativo no art. 11, requisitos da diretoria no art. 20); a rota atual leva ao art. 1º.",
+   "relevant_provisions": "arts. 9º, 11 e 20",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "flags": [],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LC108_2001/lc_108_2001_correlata.txt",
+     "sha256": "b5e52931f71b4cf5694abd87eb0ec1fe2f5403d7d6df8fd4ae26bdb23da96e8a",
+     "bytes": 15543,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I",
+   "target_id": "CF88:ART.214:INC.I",
+   "display_target": "CF art. 214, I",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "4"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "RETARGET",
+   "confidence": "ALTA",
+   "retarget_to": "CF88:ART.214:CAPUT",
+   "replacement_norms": [],
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "1"
+    ]
+   },
+   "legal_analysis": "A Lei 15.388/2026 aprova o PNE \"para cumprir o disposto no art. 214\" (art. 1º). É a lei exigida pelo caput. Os incisos I a VI são os fins a que o plano deve conduzir; o art. 4º da lei lista objetivos gerais próprios, que não correspondem um a um aos incisos. Seis vínculos idênticos (mesma relação, mesmo art. 4º) nos incisos são fan-out sem especificidade. Os seis vínculos são consolidados em um único, no caput.",
+   "relevant_provisions": "art. 1º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": "2026-04-14",
+    "early_application_possible": null,
+    "revalidate_on": "2036-04-14",
+    "note": "PNE decenal (art. 1º da Lei 15.388/2026)"
+   },
+   "flags": [],
+   "scope": [],
+   "note": "A meta de investimento em proporção do PIB (inciso VI) está no Anexo (Meta 19.a), sem artigo roteável: NEXT_STEP se a rota suportar anexos.",
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI15388_2026/lei_15388_2026_correlata.txt",
+     "sha256": "e7e56fc6c084be736db0aff04d19f3d68d622ed32ef47fb63dd3ad3cff2cb8e3",
+     "bytes": 197092,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.II",
+   "target_id": "CF88:ART.214:INC.II",
+   "display_target": "CF art. 214, II",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "4"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 15.388/2026 aprova o PNE \"para cumprir o disposto no art. 214\" (art. 1º). É a lei exigida pelo caput. Os incisos I a VI são os fins a que o plano deve conduzir; o art. 4º da lei lista objetivos gerais próprios, que não correspondem um a um aos incisos. Seis vínculos idênticos (mesma relação, mesmo art. 4º) nos incisos são fan-out sem especificidade. Este vínculo é removido por consolidação no caput (ver inciso I).",
+   "relevant_provisions": "art. 4º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": "2026-04-14",
+    "early_application_possible": null,
+    "revalidate_on": "2036-04-14",
+    "note": "PNE decenal (art. 1º da Lei 15.388/2026)"
+   },
+   "flags": [
+    "FAN_OUT_CONSOLIDATED"
+   ],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI15388_2026/lei_15388_2026_correlata.txt",
+     "sha256": "e7e56fc6c084be736db0aff04d19f3d68d622ed32ef47fb63dd3ad3cff2cb8e3",
+     "bytes": 197092,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.III",
+   "target_id": "CF88:ART.214:INC.III",
+   "display_target": "CF art. 214, III",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "4"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 15.388/2026 aprova o PNE \"para cumprir o disposto no art. 214\" (art. 1º). É a lei exigida pelo caput. Os incisos I a VI são os fins a que o plano deve conduzir; o art. 4º da lei lista objetivos gerais próprios, que não correspondem um a um aos incisos. Seis vínculos idênticos (mesma relação, mesmo art. 4º) nos incisos são fan-out sem especificidade. Este vínculo é removido por consolidação no caput (ver inciso I).",
+   "relevant_provisions": "art. 4º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": "2026-04-14",
+    "early_application_possible": null,
+    "revalidate_on": "2036-04-14",
+    "note": "PNE decenal (art. 1º da Lei 15.388/2026)"
+   },
+   "flags": [
+    "FAN_OUT_CONSOLIDATED"
+   ],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI15388_2026/lei_15388_2026_correlata.txt",
+     "sha256": "e7e56fc6c084be736db0aff04d19f3d68d622ed32ef47fb63dd3ad3cff2cb8e3",
+     "bytes": 197092,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.IV",
+   "target_id": "CF88:ART.214:INC.IV",
+   "display_target": "CF art. 214, IV",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "4"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 15.388/2026 aprova o PNE \"para cumprir o disposto no art. 214\" (art. 1º). É a lei exigida pelo caput. Os incisos I a VI são os fins a que o plano deve conduzir; o art. 4º da lei lista objetivos gerais próprios, que não correspondem um a um aos incisos. Seis vínculos idênticos (mesma relação, mesmo art. 4º) nos incisos são fan-out sem especificidade. Este vínculo é removido por consolidação no caput (ver inciso I).",
+   "relevant_provisions": "art. 4º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": "2026-04-14",
+    "early_application_possible": null,
+    "revalidate_on": "2036-04-14",
+    "note": "PNE decenal (art. 1º da Lei 15.388/2026)"
+   },
+   "flags": [
+    "FAN_OUT_CONSOLIDATED"
+   ],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI15388_2026/lei_15388_2026_correlata.txt",
+     "sha256": "e7e56fc6c084be736db0aff04d19f3d68d622ed32ef47fb63dd3ad3cff2cb8e3",
+     "bytes": 197092,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.V",
+   "target_id": "CF88:ART.214:INC.V",
+   "display_target": "CF art. 214, V",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "4"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 15.388/2026 aprova o PNE \"para cumprir o disposto no art. 214\" (art. 1º). É a lei exigida pelo caput. Os incisos I a VI são os fins a que o plano deve conduzir; o art. 4º da lei lista objetivos gerais próprios, que não correspondem um a um aos incisos. Seis vínculos idênticos (mesma relação, mesmo art. 4º) nos incisos são fan-out sem especificidade. Este vínculo é removido por consolidação no caput (ver inciso I).",
+   "relevant_provisions": "art. 4º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": "2026-04-14",
+    "early_application_possible": null,
+    "revalidate_on": "2036-04-14",
+    "note": "PNE decenal (art. 1º da Lei 15.388/2026)"
+   },
+   "flags": [
+    "FAN_OUT_CONSOLIDATED"
+   ],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI15388_2026/lei_15388_2026_correlata.txt",
+     "sha256": "e7e56fc6c084be736db0aff04d19f3d68d622ed32ef47fb63dd3ad3cff2cb8e3",
+     "bytes": 197092,
+     "on_card": true
+    }
+   ]
+  },
+  {
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.VI",
+   "target_id": "CF88:ART.214:INC.VI",
+   "display_target": "CF art. 214, VI",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_norm_name": "Lei nº 15.388/2026",
+   "current_route": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "4"
+    ]
+   },
+   "c0_plausibility": "PLAUSIBLE_NOT_VERIFIED",
+   "c0_citation": "DESTINO_CITA_O_DISPOSITIVO_SUPERIOR",
+   "c0_flags": [
+    "FAN_OUT_MESMA_RELACAO_EM_6_TARGETS (revisar especificidade)"
+   ],
+   "applied": false,
+   "review_round": "LEGACY_FULL_REVIEW",
+   "decision": "REMOVE",
+   "confidence": "ALTA",
+   "retarget_to": null,
+   "replacement_norms": [],
+   "route_fix": null,
+   "legal_analysis": "A Lei 15.388/2026 aprova o PNE \"para cumprir o disposto no art. 214\" (art. 1º). É a lei exigida pelo caput. Os incisos I a VI são os fins a que o plano deve conduzir; o art. 4º da lei lista objetivos gerais próprios, que não correspondem um a um aos incisos. Seis vínculos idênticos (mesma relação, mesmo art. 4º) nos incisos são fan-out sem especificidade. Este vínculo é removido por consolidação no caput (ver inciso I).",
+   "relevant_provisions": "art. 4º",
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": "2026-04-14",
+    "early_application_possible": null,
+    "revalidate_on": "2036-04-14",
+    "note": "PNE decenal (art. 1º da Lei 15.388/2026)"
+   },
+   "flags": [
+    "FAN_OUT_CONSOLIDATED"
+   ],
+   "scope": [],
+   "note": null,
+   "evidence": [
+    {
+     "kind": "CARD_TEXT_PIN",
+     "path": "99_RELATIONS_V2/03_NORMAS_EXTERNAS/EXT_LEI15388_2026/lei_15388_2026_correlata.txt",
+     "sha256": "e7e56fc6c084be736db0aff04d19f3d68d622ed32ef47fb63dd3ad3cff2cb8e3",
+     "bytes": 197092,
+     "on_card": true
+    }
+   ]
+  }
+ ],
+ "hidden_historical": [
+  {
+   "reference_id": "CORRELATA:REL_521CE46DBB902C96@CF88:ART.40:PAR.4:INC.II",
+   "target_id": "CF88:ART.40:PAR.4:INC.II",
+   "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT"
+  },
+  {
+   "reference_id": "CORRELATA:REL_521CE46DBB902C96@CF88:ART.40:PAR.4:INC.III",
+   "target_id": "CF88:ART.40:PAR.4:INC.III",
+   "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT"
+  }
+ ]
+}

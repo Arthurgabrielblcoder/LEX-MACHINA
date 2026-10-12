@@ -10,36 +10,39 @@
 | Decisão | n |
 |---|---:|
 | APPROVE | 36 |
-| ADJUST | 39 |
-| REJECT | 27 |
-| HOLD | 4 |
+| ADJUST | 41 |
+| REJECT | 29 |
+| HOLD | 0 |
 | NEEDS_SOURCE | 0 |
-| **Aceitos (APPROVE + ADJUST)** | **75** |
+| **Aceitos (APPROVE + ADJUST)** | **77** |
 
 | Aceitos: rota de aparelho / temporal | n |
 |---|---:|
 | MAIN_CORPUS_ROUTE_REQUIRED | 19 |
-| INGESTION_REQUIRED | 49 |
+| INGESTION_REQUIRED | 51 |
 | DEVICE_RESOLVABLE_NOW | 7 |
 | TEMPORAL_DEVICE_BLOCK | 2 |
 | VACATIO_LEGIS | 2 |
 | TRANSITIONAL | 2 |
 
-- **Situação temporal dos aceitos:** {'IN_FORCE': 62, 'PARTIAL_EFFECTS': 9, 'TRANSITIONAL': 2, 'VACATIO_LEGIS': 2}.
+- **Situação temporal dos aceitos:** {'IN_FORCE': 62, 'PARTIAL_EFFECTS': 11, 'TRANSITIONAL': 2, 'VACATIO_LEGIS': 2}.
 
 | CF permanente × ADCT | CF | ADCT |
 |---|---:|---:|
 | total | 104 | 2 |
-| accepted | 73 | 2 |
-| reject | 27 | 0 |
-| hold | 4 | 0 |
+| accepted | 75 | 2 |
+| reject | 29 | 0 |
+| hold | 0 | 0 |
 | needs_source | 0 | 0 |
 
 ## Pontos para a revisão independente do fechamento
 
-- **HOLD (4):**
-  - art. 40, § 7º × Lei 8.112/1990 (Batch01);
-  - art. 231, §§ 1º, 3º e 6º × Lei 14.701/2023 (Batch04). A lei está sob controle concentrado no STF (ADC 87; ADIs 7582, 7583 e 7586, anotadas na página oficial).
+- **HOLD resolvidos na revisão final (4), fonte `HIGH_FINAL_CLOSURE_REVIEW`:**
+  - art. 40, § 7º × Lei 8.112/1990: REJECT (`CURRENT_CONSTITUTIONAL_REGIME_NOT_REPRESENTED_BY_LEI_8112`);
+  - art. 231, § 1º × Lei 14.701/2023: ADJUST, REGULAMENTA, `PARTIAL_EFFECTS`, `JUDICIAL_RESTRICTIONS`, `NON_EXCLUSIVE`;
+  - art. 231, § 3º × Lei 14.701/2023: REJECT (`CROSS_REFERENCE_ONLY`);
+  - art. 231, § 6º × Lei 14.701/2023: ADJUST, COMPLEMENTA, `ESCOPO_PARCIAL`, `DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION`.
+- **Lei 14.701/2023 no STF** (consulta oficial única, portal do STF, ADC 87): mérito julgado em 2025-12-19 com inconstitucionalidade parcial (ADC 87; ADIs 7582, 7583 e 7586); segundos embargos pendentes, com vista ao Min. Dias Toffoli desde 19/08/2026. `judicial_status = STF_PARTIAL_UNCONSTITUTIONALITY`, `REVALIDATE_ON_FINAL_ED = true`.
 - **Vacatio legis:** Lei 14.965/2024 nos arts. 131, § 2º e 132, aceita com `TEMPORAL_DEVICE_BLOCK` até 2028-01-01.
   - Dívida `FUTURE_EFFECTIVE_CORRELATA_POLICY_REQUIRED`.
   - O vínculo atual Lei 14.965 × art. 37, II, já visível no RUN3, tem o mesmo problema; registrado para C2.
@@ -80,7 +83,7 @@
 | 01 | `CF88:ART.37:PAR.5` | Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais | REJECT | — | — | IN_FORCE | — |
 | 01 | `CF88:ART.37:PAR.7` | Lei nº 12.813/2013 | APPROVE | IMPLEMENTA | = | IN_FORCE | INGESTION_REQUIRED |
 | 01 | `CF88:ART.40:PAR.1:INC.II` | Lei Complementar nº 152/2015 | ADJUST | REGULAMENTA | = | IN_FORCE | INGESTION_REQUIRED |
-| 01 | `CF88:ART.40:PAR.7` | Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais | HOLD | — | — | IN_FORCE | — |
+| 01 | `CF88:ART.40:PAR.7` | Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais | REJECT | — | — | IN_FORCE | — |
 | 01 | `CF88:ART.40:PAR.22` | Lei nº 9.717/1998 | APPROVE | REGULAMENTA | = | TRANSITIONAL | INGESTION_REQUIRED |
 | 02 | `CF88:ART.45:PAR.1` | Lei Complementar nº 78/1993 | APPROVE | REGULAMENTA | = | IN_FORCE | INGESTION_REQUIRED |
 | 02 | `CF88:ART.49:INC.II` | Lei Complementar nº 90/1997 | ADJUST | CONDIÇÃO_OU_EXCEÇÃO | = | IN_FORCE | INGESTION_REQUIRED |
@@ -150,9 +153,9 @@
 | 04 | `CF88:ART.227:PAR.3` | Lei 8.069/1990 - Estatuto da Criança e do Adolescente | APPROVE | REGULAMENTA | = | IN_FORCE | MAIN_CORPUS_ROUTE_REQUIRED |
 | 04 | `CF88:ART.227:PAR.4` | Lei 8.069/1990 - Estatuto da Criança e do Adolescente | APPROVE | COMPLEMENTA | = | IN_FORCE | MAIN_CORPUS_ROUTE_REQUIRED |
 | 04 | `CF88:ART.227:PAR.5` | Lei 8.069/1990 - Estatuto da Criança e do Adolescente | ADJUST | REGULAMENTA | = | IN_FORCE | MAIN_CORPUS_ROUTE_REQUIRED |
-| 04 | `CF88:ART.231:PAR.1` | Lei nº 14.701/2023 | HOLD | — | — | UNCERTAIN | — |
-| 04 | `CF88:ART.231:PAR.3` | Lei nº 14.701/2023 | HOLD | — | — | UNCERTAIN | — |
-| 04 | `CF88:ART.231:PAR.6` | Lei nº 14.701/2023 | HOLD | — | — | UNCERTAIN | — |
+| 04 | `CF88:ART.231:PAR.1` | Lei nº 14.701/2023 | ADJUST | REGULAMENTA | = | PARTIAL_EFFECTS | INGESTION_REQUIRED |
+| 04 | `CF88:ART.231:PAR.3` | Lei nº 14.701/2023 | REJECT | — | — | PARTIAL_EFFECTS | — |
+| 04 | `CF88:ART.231:PAR.6` | Lei nº 14.701/2023 | ADJUST | COMPLEMENTA | = | PARTIAL_EFFECTS | INGESTION_REQUIRED |
 | 04 | `CF88:ART.239` | Lei Complementar nº 7/1970 | APPROVE | COMPLEMENTA | = | IN_FORCE | INGESTION_REQUIRED |
 | 04 | `CF88:ART.239` | Lei Complementar nº 8/1970 | APPROVE | COMPLEMENTA | = | IN_FORCE | INGESTION_REQUIRED |
 | 04 | `CF88:ART.239:PAR.3` | Lei nº 7.998/1990 | APPROVE | REGULAMENTA | = | IN_FORCE | DEVICE_RESOLVABLE_NOW |
@@ -185,7 +188,6 @@
 
 ## Próximo passo
 
-- Revisão independente dos Batch03 e Batch04 e do fechamento.
-- Depois, decisão arquitetural (overlay CORRELATA_ADDITIONS, regra do ADCT, política de vacatio e rota do acervo principal).
+- Fila HIGH fechada sem HOLD. Arquitetura C2 desenhada em `C2/` (overlay, ADCT, vacatio, status judicial, rota do acervo principal).
 - Nada de MEDIUM ou LOW antes disso.
 

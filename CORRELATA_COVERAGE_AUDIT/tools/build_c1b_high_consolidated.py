@@ -45,6 +45,74 @@ BATCH01_SUGGESTIONS = [   # suggestions that Batch01 recorded only in notes, mad
           'HIGH', 'sugestão do Batch01; não herdar do § 2º'),
 ]
 
+# Final independent HIGH closure review: resolution of the 4 HOLD (batch files keep the decision taken at the time; this layer is final).
+STF_P = 'https://portal.stf.jus.br/processos/'
+STF_SOURCES = [
+    dict(source_id='STF_ADC87_DECISOES', norm='STF, ADC 87 (julgamento conjunto com ADIs 7582, 7583 e 7586), aba Decisões',
+         url=STF_P + 'abaDecisoes.asp?incidente=6824155', sha256='385afc97854239dd4976104efa884d6beb0460673abdd7c82c398e71ada39df5', bytes=76207,
+         verified_on=B1.VERIFIED_ON),
+    dict(source_id='STF_ADC87_ANDAMENTOS', norm='STF, ADC 87, aba Andamentos', url=STF_P + 'abaAndamentos.asp?incidente=6824155',
+         sha256='b232dd6628c7c1fd1c206fa5127712b6c7e60ff5cee30322a541a755516d8e94', bytes=3529015, verified_on=B1.VERIFIED_ON),
+]
+L14701_JUDICIAL = dict(
+    judicial_status='STF_PARTIAL_UNCONSTITUTIONALITY', cases=['ADC 87', 'ADI 7582', 'ADI 7583', 'ADI 7586'], merits_decided_on='2025-12-19',
+    merits_summary='Procedência parcial (sessão virtual extraordinária de 15 a 18/12/2025, decisão registrada em 19/12/2025): '
+                   'inconstitucionais a expressão "na data da promulgação da Constituição Federal" do caput do art. 4º e os §§ 2º, 3º e 4º do '
+                   'art. 4º; os §§ 1º e 2º do art. 9º; os arts. 10 e 13; o parágrafo único do art. 20; interpretação conforme nos arts. 5º, 6º, '
+                   '14, 18, §§ 1º e 2º, 20, caput, e 22, entre outros.',
+    embargos_status='PENDING: segundos embargos de declaração em sessão virtual; pedido de vista do Min. Dias Toffoli em 19/08/2026; '
+                    'último andamento oficial em 02/09/2026 (petição); sem julgamento final dos embargos até 2026-10-11.',
+    status_checked_until='2026-10-11', REVALIDATE_ON_FINAL_ED=True, CORRELATA_REQUIRES_JUDICIAL_STATUS=True)
+L14701_FINAL_T = B3.TS('PARTIAL_EFFECTS', effective_from='2023-10-20', revalidate_on='julgamento final dos embargos de declaração na ADC 87',
+                       note='STF, mérito em 2025-12-19: inconstitucionalidade parcial e interpretação conforme; o texto original não está '
+                            'integralmente vigente')
+FINAL_CLOSURE = {
+    'CORRC0-78E258F9B624': dict(
+        decision='REJECT', relation_type_final=None, target_final=None, scope=[], temporal=None, judicial=None, sources=[],
+        reject_reason='CURRENT_CONSTITUTIONAL_REGIME_NOT_REPRESENTED_BY_LEI_8112',
+        analysis='O regime atual do art. 40, § 7º, depois da EC 103/2019, tem regras gerais de pensão para a União e uma regra diferenciada '
+                 'para a morte dos servidores do § 4º-B. A Lei 8.112/1990 não deve ser apresentada como regulamentadora atual desse comando. '
+                 'A EC 103 não é transformada em CORRELATA infraconstitucional.'),
+    'CORRC0-E86B55D28D44': dict(
+        decision='ADJUST', relation_type_final='REGULAMENTA', target_final='CF88:ART.231:PAR.1',
+        scope=['NON_EXCLUSIVE'], extra_flags=['PARTIAL_EFFECTS', 'JUDICIAL_RESTRICTIONS'], temporal=L14701_FINAL_T, judicial=L14701_JUDICIAL,
+        sources=['L14701'],
+        analysis='A lei tem relação material direta com a definição e a demarcação das terras tradicionalmente ocupadas (§ 1º). O STF, porém, '
+                 'atingiu dispositivos centrais (art. 4º, marco temporal). O vínculo só pode ser exibido com aviso de status judicial; o texto '
+                 'original não é tratado como integralmente vigente.'),
+    'CORRC0-E0C9C2F5CDBD': dict(
+        decision='REJECT', relation_type_final=None, target_final=None, scope=[], temporal=L14701_FINAL_T, judicial=L14701_JUDICIAL, sources=['L14701'],
+        reject_reason='CROSS_REFERENCE_ONLY',
+        analysis='A remissão ao § 3º não representa disciplina material suficiente do aproveitamento de recursos hídricos e da lavra de '
+                 'riquezas minerais em terras indígenas (autorização do Congresso, oitiva das comunidades, participação nos resultados).'),
+    'CORRC0-FC57ED913387': dict(
+        decision='ADJUST', relation_type_final='COMPLEMENTA', target_final='CF88:ART.231:PAR.6',
+        scope=['ESCOPO_PARCIAL', 'NON_EXCLUSIVE'], extra_flags=['PARTIAL_EFFECTS', 'JUDICIAL_RESTRICTIONS', 'DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION'],
+        temporal=L14701_FINAL_T, judicial=L14701_JUDICIAL, sources=['L14701'],
+        analysis='A lei complementa parcialmente o § 6º (nulidade de atos e efeitos sobre ocupação e domínio). É lei ordinária e não satisfaz '
+                 'a exigência de lei complementar para a ressalva do relevante interesse público da União: '
+                 'DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION = true.'),
+}
+
+
+def apply_final_closure(rs):
+    cands = {c['candidate_id']: c for c in json.loads(B1.CANDS.read_text(encoding='utf-8'))['candidates']}
+    for r in rs:
+        f = FINAL_CLOSURE.get(r['candidate_id'])
+        if not f:
+            continue
+        assert r['decision'] == 'HOLD', r['candidate_id']
+        ok = f['decision'] in ('APPROVE', 'ADJUST')
+        t = f['temporal'] or r['temporal']
+        dev = cands[r['candidate_id']]['device_status'] if ok else None
+        r.update(batch_decision=r['decision'], decision=f['decision'], decision_source='HIGH_FINAL_CLOSURE_REVIEW', target_final=f['target_final'],
+                 relation_type_final=f['relation_type_final'], confidence='ALTA' if f['decision'] == 'REJECT' else 'MEDIA', temporal_status=t['temporal_status'],
+                 temporal=t, temporal_source='HIGH_FINAL_CLOSURE_REVIEW', scope=sorted(f['scope']), device_route_status=dev,
+                 device_flags=[dev] if ok else [], flags=sorted(f.get('extra_flags', [])), reject_reason=f.get('reject_reason'),
+                 judicial=f['judicial'], final_analysis=f['analysis'],
+                 final_sources=[dict(source_id=k, **B4.SOURCES[k]) for k in f['sources']] + (STF_SOURCES if f['judicial'] else []))
+    return rs
+
 
 def _flags(text):
     return set(re.findall(r'\b[A-Z]{2,}(?:_[A-Z0-9]+)+\b', text or ''))
@@ -82,7 +150,8 @@ def _row(batch, d, scope, temporal, tsrc):
 
 def build():
     rs, d1, d2 = rows()
-    q = json.loads(B1.QUEUE.read_text(encoding='utf-8'))
+    rs = apply_final_closure(rs)
+    q =json.loads(B1.QUEUE.read_text(encoding='utf-8'))
     original = [x['candidate_id'] for x in q['HIGH']]
     ids = [r['candidate_id'] for r in rs]
     if sorted(ids) != sorted(original) or len(ids) != len(set(ids)):
@@ -120,6 +189,9 @@ def build():
         cf_vs_adct=dict(total=by_ns(lambda r: True), accepted=by_ns(lambda r: r['decision'] in ('APPROVE', 'ADJUST')),
                         reject=by_ns(lambda r: r['decision'] == 'REJECT'), hold=by_ns(lambda r: r['decision'] == 'HOLD'),
                         needs_source=by_ns(lambda r: r['decision'] == 'NEEDS_SOURCE')),
+        final_closure_review=dict(source='HIGH_FINAL_CLOSURE_REVIEW', hold_resolved=len(FINAL_CLOSURE),
+                                  resolutions={c: f['decision'] for c, f in FINAL_CLOSURE.items()}),
+        judicial_restrictions_accepted=sum(1 for r in acc if 'JUDICIAL_RESTRICTIONS' in r.get('flags', [])),
         new_candidate_backlog_total=len(backlog),
         new_candidate_backlog_by_priority=dict(sorted(Counter(b['suggested_priority'] for b in backlog).items())))
     doc = dict(schema_version=1, artifact='CF88_CORRELATA_C1B_HIGH_CONSOLIDATED', applied=False, verified_on=B1.VERIFIED_ON,
@@ -164,10 +236,14 @@ def report(s, rs, backlog):
     a('')
     a('## Pontos para a revisão independente do fechamento')
     a('')
-    a('- **HOLD (4):**')
-    a('  - art. 40, § 7º × Lei 8.112/1990 (Batch01);')
-    a('  - art. 231, §§ 1º, 3º e 6º × Lei 14.701/2023 (Batch04). A lei está sob controle concentrado no STF (ADC 87; ADIs 7582, 7583 e 7586, '
-      'anotadas na página oficial).')
+    a(f"- **HOLD resolvidos na revisão final ({s['final_closure_review']['hold_resolved']}), fonte `HIGH_FINAL_CLOSURE_REVIEW`:**")
+    a('  - art. 40, § 7º × Lei 8.112/1990: REJECT (`CURRENT_CONSTITUTIONAL_REGIME_NOT_REPRESENTED_BY_LEI_8112`);')
+    a('  - art. 231, § 1º × Lei 14.701/2023: ADJUST, REGULAMENTA, `PARTIAL_EFFECTS`, `JUDICIAL_RESTRICTIONS`, `NON_EXCLUSIVE`;')
+    a('  - art. 231, § 3º × Lei 14.701/2023: REJECT (`CROSS_REFERENCE_ONLY`);')
+    a('  - art. 231, § 6º × Lei 14.701/2023: ADJUST, COMPLEMENTA, `ESCOPO_PARCIAL`, `DOES_NOT_IMPLEMENT_COMPLEMENTARY_LAW_EXCEPTION`.')
+    a('- **Lei 14.701/2023 no STF** (consulta oficial única, portal do STF, ADC 87): mérito julgado em 2025-12-19 com inconstitucionalidade '
+      'parcial (ADC 87; ADIs 7582, 7583 e 7586); segundos embargos pendentes, com vista ao Min. Dias Toffoli desde 19/08/2026. '
+      '`judicial_status = STF_PARTIAL_UNCONSTITUTIONALITY`, `REVALIDATE_ON_FINAL_ED = true`.')
     a('- **Vacatio legis:** Lei 14.965/2024 nos arts. 131, § 2º e 132, aceita com `TEMPORAL_DEVICE_BLOCK` até 2028-01-01.')
     a('  - Dívida `FUTURE_EFFECTIVE_CORRELATA_POLICY_REQUIRED`.')
     a('  - O vínculo atual Lei 14.965 × art. 37, II, já visível no RUN3, tem o mesmo problema; registrado para C2.')
@@ -195,8 +271,7 @@ def report(s, rs, backlog):
     a('')
     a('## Próximo passo')
     a('')
-    a('- Revisão independente dos Batch03 e Batch04 e do fechamento.')
-    a('- Depois, decisão arquitetural (overlay CORRELATA_ADDITIONS, regra do ADCT, política de vacatio e rota do acervo principal).')
+    a('- Fila HIGH fechada sem HOLD. Arquitetura C2 desenhada em `C2/` (overlay, ADCT, vacatio, status judicial, rota do acervo principal).')
     a('- Nada de MEDIUM ou LOW antes disso.')
     a('')
     return '\n'.join(L) + '\n'
