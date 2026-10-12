@@ -15,6 +15,23 @@
   "HOLD",
   "NEEDS_SOURCE"
  ],
+ "independent_review": {
+  "verdict": "APPROVED_WITH_ONE_ADJUSTMENT",
+  "accepted": 21,
+  "reject": 7,
+  "hold": 1,
+  "relation_type_changes": 1,
+  "decisions_materially_changed": "NO",
+  "new_candidate_backlog": [
+   {
+    "norm": "Lei nº 13.709/2018 (LGPD)",
+    "norm_key": "LEI:13709/2018",
+    "target_id": "CF88:ART.21:INC.XXVI",
+    "reason": "o regime vigente da ANPD e da proteção de dados está consolidado na LGPD (arts. 55-A e ss.), inclusive após as alterações de 2026; entra em fila própria, sem herança automática",
+    "status": "BACKLOG_NOT_DECIDED"
+   }
+  ]
+ },
  "relation_types": [
   "REGULAMENTA",
   "COMPLEMENTA",
@@ -46,7 +63,8 @@
    "INGESTION_REQUIRED": 15,
    "MAIN_CORPUS_ROUTE_REQUIRED": 14
   },
-  "relation_type_changed": 11
+  "relation_type_changed": 11,
+  "independent_review_relation_changes": 1
  },
  "decisions": [
   {
@@ -63,6 +81,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.5:INC.XII",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -80,7 +100,10 @@
    "relevant_provisions": "Ementa: \"Regulamenta o inciso XII, parte final, do art. 5°\". O art. 1º trata da interceptação de comunicações telefônicas por ordem judicial, para investigação criminal e instrução processual penal.",
    "legal_analysis": "A lei é a regulamentadora expressa da parte final do inciso XII. O target está correto. A natureza muda de COMPLEMENTA para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-ABBD129F7E41",
@@ -97,6 +120,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.5:INC.XXXII",
    "route": "art. 1º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -114,7 +139,10 @@
    "relevant_provisions": "Art. 1º: \"O presente código estabelece normas de proteção e defesa do consumidor ... nos termos dos arts. 5°, inciso XXXII, 170, inciso V\".",
    "legal_analysis": "O inciso XXXII manda o Estado promover, na forma da lei, a defesa do consumidor, e o CDC se declara a lei desse comando. A natureza muda de COMPLEMENTA para REGULAMENTA. A rota de aparelho é um problema separado e não invalida o vínculo.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-514534A6E80F",
@@ -130,6 +158,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.5:INC.XXXIII",
    "route": "art. 1º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -147,7 +177,10 @@
    "relevant_provisions": "Ementa: \"Regula o acesso a informações previsto no inciso XXXIII do art. 5º, no inciso II do § 3º do art. 37 e no § 2º do art. 216\". O art. 1º diz o mesmo.",
    "legal_analysis": "Regulamentação expressa do inciso XXXIII. A natureza muda para REGULAMENTA. Sem fan-out: o vínculo fica só neste inciso, e o art. 37, § 3º, II foi tratado na C1A.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-06D0375C4D5A",
@@ -163,6 +196,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.5:INC.XLIII",
    "route": "arts. 1º e 2º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -180,7 +215,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre os crimes hediondos, nos termos do art. 5º, inciso XLIII\". O art. 1º traz o rol dos crimes hediondos e o art. 2º as vedações (anistia, graça, indulto e fiança).",
    "legal_analysis": "É a lei que concretiza a parte \"crimes hediondos\" do inciso XLIII. A natureza muda para REGULAMENTA. Não exclui as leis de tortura, drogas e terrorismo (a Lei 13.260/2016 já está vinculada).",
    "notes": "NON_EXCLUSIVE: o inciso XLIII é regulado por várias leis, cada uma na sua parte.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-A809DD115D5A",
@@ -196,6 +234,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.5:INC.LXXIX",
    "route": "art. 1º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -213,7 +253,10 @@
    "relevant_provisions": "Art. 1º: \"dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais ... com o objetivo de proteger os direitos fundamentais\".",
    "legal_analysis": "O inciso LXXIX, incluído pela EC 115/2022, assegura a proteção de dados \"nos termos da lei\". A LGPD é essa lei, mesmo sendo anterior à emenda. A natureza muda para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-AFD5D339090B",
@@ -229,6 +272,8 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.7:PAR.UNICO",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -246,7 +291,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre o contrato de trabalho doméstico\". O art. 1º define o empregado doméstico e o âmbito de aplicação.",
    "legal_analysis": "O parágrafo único condiciona direitos dos domésticos às \"condições estabelecidas em lei\", e a LC 150/2015 é essa disciplina legal. A classificação da C0 está correta.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-142570A4C40E",
@@ -262,6 +310,8 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.9:PAR.2",
    "route": "arts. 14 e 15",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -279,7 +329,10 @@
    "relevant_provisions": "Art. 14: \"Constitui abuso do direito de greve a inobservância das normas contidas na presente Lei...\"; o art. 15 trata da responsabilidade pelos atos praticados.",
    "legal_analysis": "O § 2º sujeita os abusos às penas da lei, e a Lei 7.783/1989 define o abuso (art. 14) e a responsabilidade (art. 15). O target e a natureza estão corretos.",
    "notes": "A mesma lei também regula o caput (art. 1º) e o § 1º (atividades essenciais, arts. 10 a 13). Esses vínculos não são herdados; ficam como sugestão para candidatos próprios.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-EE675AD3A3EF",
@@ -294,6 +347,8 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -319,7 +374,10 @@
    "relevant_provisions": "Ementa: \"Altera a Lei Complementar nº 64, de 18 de maio de 1990, que estabelece, de acordo com o § 9º do art. 14 ... casos de inelegibilidade\".",
    "legal_analysis": "A LC 135/2010 (Ficha Limpa) é lei alteradora. Seu conteúdo normativo vigente está incorporado ao texto compilado da LC 64/1990, que é a correlata do § 9º e foi aprovada neste lote. Como vínculo independente no botão 1, só duplicaria o mesmo conteúdo.",
    "notes": "ALTERADORA_INCORPORADA: o nome \"Lei da Ficha Limpa\" pode entrar como rótulo/explicação da LC 64, não como vínculo.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-FFA7F8C1F500",
@@ -336,6 +394,8 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.14:PAR.9",
    "route": "art. 1º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -353,7 +413,10 @@
    "relevant_provisions": "Ementa: \"Estabelece, de acordo com o art. 14, § 9º da Constituição Federal, casos de inelegibilidade, prazos de cessação\". O art. 1º traz o rol de inelegibilidades.",
    "legal_analysis": "É a lei complementar exigida pelo § 9º, com remissão expressa. A classificação da C0 está correta.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-23FDAA617AC7",
@@ -369,6 +432,8 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.17:PAR.2",
    "route": "art. 7º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -386,7 +451,10 @@
    "relevant_provisions": "Ementa: \"regulamenta os arts. 17 e 14, § 3º, inciso V\". Art. 7º: \"O partido político, após adquirir personalidade jurídica na forma da lei civil, registra seu estatuto no Tribunal Superior Eleitoral.\"",
    "legal_analysis": "O art. 7º reproduz e disciplina exatamente o § 2º (registro do estatuto no TSE). O target específico está sustentado.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-EC2800C205A0",
@@ -402,6 +470,8 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.17:PAR.3",
    "route": "art. 41-A (e art. 50-B)",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -419,7 +489,10 @@
    "relevant_provisions": "Capítulo II \"Do Fundo Partidário\" (arts. 38 a 44; art. 41-A trata da distribuição). O art. 50-B trata da propaganda partidária gratuita no rádio e na TV para partido com estatuto registrado.",
    "legal_analysis": "O § 3º condiciona fundo partidário e acesso gratuito a rádio e TV \"na forma da lei\". A Lei 9.096 é essa forma (fundo: arts. 38 a 44; propaganda: art. 50-B, incluído pela Lei 14.291/2022).",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-7C51431603DB",
@@ -435,6 +508,15 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": {
+    "scope": "PARTIAL",
+    "flags": [
+     "ESCOPO_PARCIAL"
+    ],
+    "covers": "desmembramento de parte de Município para incorporação a outro limítrofe",
+    "not_covered": "criação, fusão e as demais hipóteses do § 4º"
+   },
    "target_final": "CF88:ART.18:PAR.4",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -452,7 +534,10 @@
    "relevant_provisions": "Ementa e art. 1º: \"normas gerais aplicáveis ao desmembramento de parte de um Município para incorporação a outro, limítrofe, nos termos do § 4º do art. 18\".",
    "legal_analysis": "É a lei complementar federal do § 4º, com remissão expressa, mas com escopo parcial: só o desmembramento para incorporação a Município limítrofe.",
    "notes": "ESCOPO_PARCIAL: criação, fusão e demais hipóteses do § 4º não estão cobertas por esta LC (confirmado pela ementa oficial).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-643E8D275C20",
@@ -467,6 +552,8 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.21:INC.IV",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -484,7 +571,10 @@
    "relevant_provisions": "Ementa: \"Determina os casos em que forças estrangeiras possam transitar pelo território nacional ou nele permanecer temporariamente\". O art. 1º lista as hipóteses.",
    "legal_analysis": "É exatamente a lei complementar exigida pelo inciso IV (\"nos casos previstos em lei complementar\"): o art. 1º lista os casos em que o Presidente pode permitir o trânsito ou a permanência sem autorização do Congresso.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-0ACA5FF28F47",
@@ -499,6 +589,8 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -524,7 +616,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre a gestão, a organização, o processo decisório e o controle social das agências reguladoras...\".",
    "legal_analysis": "É a lei geral das agências reguladoras. A ligação com o inciso XXVI (organizar e fiscalizar a proteção de dados) é só reflexa, porque a ANPD passou a integrar o rol de agências. A organização da proteção de dados está na LGPD (arts. 55-A e seguintes, ANPD).",
    "notes": "Sugestão fora do lote: candidato LGPD × art. 21, XXVI (arts. 55-A e ss.), a avaliar em rodada própria.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-1FA33FCCC066",
@@ -539,6 +634,8 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -564,7 +661,10 @@
    "relevant_provisions": "Ementa: \"Transforma cargos ...; altera a Lei nº 13.709 (LGPD), para dispor sobre a Agência Nacional de Proteção de Dados (ANPD)...\".",
    "legal_analysis": "Lei alteradora: as regras sobre a ANPD foram incorporadas ao texto da LGPD. Como correlata independente só duplicaria conteúdo; a utilidade jurídica atual está na LGPD.",
    "notes": "ALTERADORA_INCORPORADA.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-5F7CFBD5912A",
@@ -579,6 +679,8 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -596,7 +698,10 @@
    "relevant_provisions": "Cabeçalho oficial: \"Convertida na Lei nº 15.352, de 2026\".",
    "legal_analysis": "Medida provisória já convertida em lei: é ato histórico, sem utilidade como correlata vigente.",
    "notes": "HISTORICA_CONVERTIDA.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-9C3FB3B95B9B",
@@ -611,6 +716,8 @@
    "legal_decision": "APPROVE",
    "confidence": "MEDIA",
    "relation_type_final": "COMPLEMENTA",
+   "relation_type_final_initial": "COMPLEMENTA",
+   "scope": null,
    "target_final": "CF88:ART.22:INC.XXVII",
    "route": "art. 28",
    "device_route_status": "INGESTION_REQUIRED",
@@ -636,7 +743,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre o estatuto jurídico da empresa pública, da sociedade de economia mista e de suas subsidiárias\". Título II, Capítulo I, \"Das Licitações\" (art. 28 e seguintes).",
    "legal_analysis": "O inciso XXVII inclui as normas gerais de licitação das empresas públicas e sociedades de economia mista \"nos termos do art. 173, § 1º, III\", e a Lei 13.303 traz esse regime. COMPLEMENTA é a natureza correta: a regulamentação primária é do art. 173, § 1º.",
    "notes": "Sugestão fora do lote: vínculo primário Lei 13.303 × art. 173, § 1º (III).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-C6956D31D6B7",
@@ -652,6 +762,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.22:INC.XXVII",
    "route": "art. 1º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -669,7 +781,10 @@
    "relevant_provisions": "Art. 1º: \"Esta Lei estabelece normas gerais de licitação e contratação para as Administrações Públicas diretas, autárquicas e fundacionais da União, dos Estados, do Distrito Federal e dos Municípios\".",
    "legal_analysis": "São as normas gerais do inciso XXVII para a administração direta, autárquica e fundacional. A natureza muda para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-7387F1A2A033",
@@ -685,6 +800,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "IMPLEMENTA",
+   "relation_type_final_initial": "IMPLEMENTA",
+   "scope": null,
    "target_final": "CF88:ART.22:PAR.UNICO",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -702,7 +819,10 @@
    "relevant_provisions": "Ementa: \"Autoriza os Estados e o Distrito Federal a instituir o piso salarial a que se refere o inciso V do art. 7º ... por aplicação do disposto no parágrafo único do seu art. 22\".",
    "legal_analysis": "A LC 103/2000 é um exercício concreto da autorização do parágrafo único. A natureza muda de REGULAMENTA para IMPLEMENTA.",
    "notes": "NON_EXCLUSIVE: outras leis complementares podem usar a mesma autorização.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-6B89F3FB8FD7",
@@ -717,6 +837,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.23:INC.VI",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -734,7 +856,10 @@
    "relevant_provisions": "Ementa: \"Fixa normas, nos termos dos incisos III, VI e VII do caput e do parágrafo único do art. 23 ... para a cooperação ... relativas à proteção do meio ambiente, ao combate à poluição...\".",
    "legal_analysis": "Remissão expressa ao inciso VI. A LC disciplina o exercício cooperativo dessa competência comum. A natureza muda para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-2E98C1949CA4",
@@ -749,6 +874,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.23:PAR.UNICO",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -766,7 +893,10 @@
    "relevant_provisions": "Ementa: as normas são fixadas \"nos termos ... do parágrafo único do art. 23\".",
    "legal_analysis": "É uma das leis complementares de cooperação do parágrafo único, para a matéria ambiental. A natureza muda para REGULAMENTA.",
    "notes": "NON_EXCLUSIVE / ESCOPO_PARCIAL: o parágrafo único fala em \"leis complementares\"; a LC 140 cobre só o meio ambiente.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-9F2A47C4A756",
@@ -781,6 +911,8 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -798,7 +930,10 @@
    "relevant_provisions": "Lei 8.112/1990: regime jurídico dos servidores civis federais. Não há dispositivo específico sobre nulidade de investidura sem concurso nem sobre punição da autoridade nos termos do § 2º.",
    "legal_analysis": "O § 2º trata da nulidade e da punição da autoridade quando os incisos II e III do art. 37 não são observados, para todos os entes. O estatuto federal é genérico para esse comando e restrito à União. O vínculo legado é apenas temático.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-75E9432F8BCD",
@@ -813,6 +948,8 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -838,7 +975,10 @@
    "relevant_provisions": "Lei 8.112/1990: a demissão por improbidade (art. 132, IV) é consequência disciplinar federal. A Lei 8.429/1992, pela ementa, é a lei \"de que trata o § 4º do art. 37\".",
    "legal_analysis": "A lei da forma e gradação das sanções de improbidade é a LIA, aprovada neste lote. O estatuto federal é incidental e restrito à União.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-9CC6494851BB",
@@ -854,6 +994,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.37:PAR.4",
    "route": "art. 1º",
    "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
@@ -871,7 +1013,10 @@
    "relevant_provisions": "Ementa (redação da Lei 14.230/2021): \"Dispõe sobre as sanções aplicáveis em virtude da prática de atos de improbidade administrativa, de que trata o § 4º do art. 37\".",
    "legal_analysis": "Remissão expressa: é a lei do § 4º. A natureza muda para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-D961094C030C",
@@ -886,6 +1031,8 @@
    "legal_decision": "REJECT",
    "confidence": "MEDIA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -911,7 +1058,10 @@
    "relevant_provisions": "Lei 8.112/1990, art. 142: prescrição da ação disciplinar (5 anos, 2 anos, 180 dias), só para servidores federais. Lei 8.429/1992, art. 23: prescrição das ações de improbidade.",
    "legal_analysis": "O § 5º trata dos prazos de prescrição de ilícitos que causem prejuízo ao erário, praticados por \"qualquer agente, servidor ou não\". O art. 142 da Lei 8.112 é prescrição disciplinar interna da União, sem relação direta e geral com o comando.",
    "notes": "Sugestão fora do lote: LIA (Lei 8.429/1992, art. 23) × art. 37, § 5º, a avaliar como candidato próprio.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-E1D20570E8DC",
@@ -926,7 +1076,14 @@
    "c0_relation_type": "REGULAMENTA",
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
-   "relation_type_final": "REGULAMENTA",
+   "relation_type_final": "IMPLEMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": {
+    "scope": "FEDERAL_EXECUTIVE",
+    "flags": [
+     "ESCOPO_FEDERAL"
+    ]
+   },
    "target_final": "CF88:ART.37:PAR.7",
    "route": "art. 1º (arts. 5º e 6º)",
    "device_route_status": "INGESTION_REQUIRED",
@@ -944,7 +1101,12 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre o conflito de interesses no exercício de cargo ou emprego do Poder Executivo federal e impedimentos posteriores...\". O art. 1º e os arts. 5º e 6º tratam de informação privilegiada.",
    "legal_analysis": "O § 7º pede lei sobre requisitos e restrições para quem tem acesso a informações privilegiadas. A Lei 12.813 é essa lei no Executivo federal. A natureza está correta, com escopo federal.",
    "notes": "ESCOPO_FEDERAL: não é regulamentação universal do § 7º (T1_EXTERNAL_CATALOG, LEI_12813_2013).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "APPROVED_WITH_ADJUSTMENT",
+    "relation_type_final": "IMPLEMENTA",
+    "note": "natureza REGULAMENTA → IMPLEMENTA, SCOPE = FEDERAL_EXECUTIVE. A Lei 12.813/2013 concretiza o § 7º só no Poder Executivo federal; não é regulamentação geral para União, Estados, DF e Municípios. ESCOPO_FEDERAL preservado e vínculo mantido."
+   }
   },
   {
    "candidate_id": "CORRC0-F3505EF9129C",
@@ -960,6 +1122,8 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": null,
    "target_final": "CF88:ART.40:PAR.1:INC.II",
    "route": "arts. 1º e 2º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -977,7 +1141,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre a aposentadoria compulsória por idade, com proventos proporcionais, nos termos do inciso II do § 1º do art. 40\". O art. 2º fixa os 75 anos.",
    "legal_analysis": "É a lei complementar exigida pelo inciso II, com remissão expressa. A natureza muda para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-78E258F9B624",
@@ -992,6 +1159,8 @@
    "legal_decision": "HOLD",
    "confidence": "BAIXA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
+   "scope": null,
    "target_final": null,
    "route": null,
    "device_route_status": null,
@@ -1017,7 +1186,10 @@
    "relevant_provisions": "Lei 8.112/1990: Seção VII \"Da Pensão\" (art. 215 e seguintes), regime dos servidores federais.",
    "legal_analysis": "O § 7º, na redação da EC 103/2019, remete a pensão à \"lei do respectivo ente federativo\" e exige tratamento diferenciado da morte dos servidores do § 4º-B decorrente de agressão. A Lei 8.112 é a lei da União, mas não verifiquei se ela, ou outra lei federal, implementa esse tratamento diferenciado. Também não verifiquei como as regras transitórias da EC 103 sobre pensão interagem com a Seção VII. Sem isso, não é seguro aprovar nem rejeitar.",
    "notes": "Revisão independente: confirmar a lei federal que implementa o § 7º (policiais do § 4º-B) e o alcance atual da Seção VII.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-DAD68D5F75A2",
@@ -1032,6 +1204,16 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
+   "scope": {
+    "scope": "TRANSITORY",
+    "flags": [
+     "TRANSITORIA"
+    ],
+    "basis": "EC 103/2019, art. 9º",
+    "REVALIDATE_ON_NEW_COMPLEMENTARY_LAW": true,
+    "note": "não é a solução constitucional definitiva do art. 40, § 22"
+   },
    "target_final": "CF88:ART.40:PAR.22",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
@@ -1057,7 +1239,10 @@
    "relevant_provisions": "EC 103/2019, art. 9º: \"Até que entre em vigor lei complementar que discipline o § 22 do art. 40 ..., aplicam-se aos regimes próprios de previdência social o disposto na Lei nº 9.717\". A Lei 9.717/1998 traz as regras gerais de organização e funcionamento dos RPPS.",
    "legal_analysis": "Por determinação constitucional transitória, a Lei 9.717 faz hoje o papel da LC do § 22. O vínculo é direto e útil.",
    "notes": "TRANSITORIA: vale até a lei complementar do § 22 (EC 103/2019, art. 9º). Reavaliar quando ela for editada.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   }
  ]
 }

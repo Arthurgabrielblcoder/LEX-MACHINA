@@ -59,7 +59,7 @@
 | 23 | CF art. 37, § 4 | Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais | **REJECT** | — | — | — |
 | 24 | CF art. 37, § 4 | Lei 8.429/1992 - Improbidade Administrativa | **ADJUST** | REGULAMENTA | art. 1º | MAIN_CORPUS_ROUTE_REQUIRED |
 | 25 | CF art. 37, § 5 | Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais | **REJECT** | — | — | — |
-| 26 | CF art. 37, § 7 | Lei nº 12.813/2013 | **APPROVE** | REGULAMENTA | art. 1º (arts. 5º e 6º) | INGESTION_REQUIRED |
+| 26 | CF art. 37, § 7 | Lei nº 12.813/2013 | **APPROVE** | IMPLEMENTA | art. 1º (arts. 5º e 6º) | INGESTION_REQUIRED |
 | 27 | CF art. 40, § 1, II | Lei Complementar nº 152/2015 | **ADJUST** | REGULAMENTA | arts. 1º e 2º | INGESTION_REQUIRED |
 | 28 | CF art. 40, § 7 | Lei 8.112/1990 - Regime Jurídico dos Servidores Públicos Federais | **HOLD** | — | — | — |
 | 29 | CF art. 40, § 22 | Lei nº 9.717/1998 | **APPROVE** | REGULAMENTA | art. 1º | INGESTION_REQUIRED |
@@ -375,6 +375,18 @@
 - **Dispositivos relevantes:** EC 103/2019, art. 9º: "Até que entre em vigor lei complementar que discipline o § 22 do art. 40 ..., aplicam-se aos regimes próprios de previdência social o disposto na Lei nº 9.717". A Lei 9.717/1998 traz as regras gerais de organização e funcionamento dos RPPS.
 - **Análise:** Por determinação constitucional transitória, a Lei 9.717 faz hoje o papel da LC do § 22. O vínculo é direto e útil.
 - **Observações:** TRANSITORIA: vale até a lei complementar do § 22 (EC 103/2019, art. 9º). Reavaliar quando ela for editada.
+
+## Revisão independente do Batch01
+
+- `BATCH01_INDEPENDENT_REVIEW = APPROVED_WITH_ONE_ADJUSTMENT`
+- **Contagem:** inclusões e exclusões inalteradas: aceitos 21, REJECT 7, HOLD 1.
+- **Ajuste:** só 1 aceito muda de natureza.
+- **CF art. 37, § 7 × Lei nº 12.813/2013:** natureza REGULAMENTA → IMPLEMENTA, SCOPE = FEDERAL_EXECUTIVE. A Lei 12.813/2013 concretiza o § 7º só no Poder Executivo federal; não é regulamentação geral para União, Estados, DF e Municípios. ESCOPO_FEDERAL preservado e vínculo mantido.
+- **CF art. 37, § 7 × Lei nº 12.813/2013:** escopo `{"scope": "FEDERAL_EXECUTIVE", "flags": ["ESCOPO_FEDERAL"]}`.
+- **CF art. 18, § 4 × Lei Complementar nº 230/2026:** escopo `{"scope": "PARTIAL", "flags": ["ESCOPO_PARCIAL"], "covers": "desmembramento de parte de Município para incorporação a outro limítrofe", "not_covered": "criação, fusão e as demais hipóteses do § 4º"}`.
+- **CF art. 40, § 22 × Lei nº 9.717/1998:** escopo `{"scope": "TRANSITORY", "flags": ["TRANSITORIA"], "basis": "EC 103/2019, art. 9º", "REVALIDATE_ON_NEW_COMPLEMENTARY_LAW": true, "note": "não é a solução constitucional definitiva do art. 40, § 22"}`.
+- **NEW_CANDIDATE_BACKLOG** (não é decisão deste lote):
+  - Lei nº 13.709/2018 (LGPD) × `CF88:ART.21:INC.XXVI`: o regime vigente da ANPD e da proteção de dados está consolidado na LGPD (arts. 55-A e ss.), inclusive após as alterações de 2026; entra em fila própria, sem herança automática
 
 ## Fora deste lote
 

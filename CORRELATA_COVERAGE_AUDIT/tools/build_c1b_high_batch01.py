@@ -247,6 +247,29 @@ REVIEW = {
 }
 
 
+INDEPENDENT_REVIEW = dict(
+    verdict='APPROVED_WITH_ONE_ADJUSTMENT', accepted=21, reject=7, hold=1, relation_type_changes=1, decisions_materially_changed='NO',
+    new_candidate_backlog=[dict(norm='Lei nº 13.709/2018 (LGPD)', norm_key='LEI:13709/2018', target_id='CF88:ART.21:INC.XXVI',
+                                reason='o regime vigente da ANPD e da proteção de dados está consolidado na LGPD (arts. 55-A e ss.), inclusive '
+                                       'após as alterações de 2026; entra em fila própria, sem herança automática',
+                                status='BACKLOG_NOT_DECIDED')])
+INDEPENDENT_ITEMS = {
+    'CORRC0-E1D20570E8DC': dict(verdict='APPROVED_WITH_ADJUSTMENT', relation_type_final='IMPLEMENTA',
+                                note='natureza REGULAMENTA → IMPLEMENTA, SCOPE = FEDERAL_EXECUTIVE. A Lei 12.813/2013 concretiza o § 7º só no '
+                                     'Poder Executivo federal; não é regulamentação geral para União, Estados, DF e Municípios. ESCOPO_FEDERAL '
+                                     'preservado e vínculo mantido.'),
+}
+ITEM_SCOPE = {
+    'CORRC0-E1D20570E8DC': dict(scope='FEDERAL_EXECUTIVE', flags=['ESCOPO_FEDERAL']),
+    'CORRC0-7C51431603DB': dict(scope='PARTIAL', flags=['ESCOPO_PARCIAL'],
+                                covers='desmembramento de parte de Município para incorporação a outro limítrofe',
+                                not_covered='criação, fusão e as demais hipóteses do § 4º'),
+    'CORRC0-DAD68D5F75A2': dict(scope='TRANSITORY', flags=['TRANSITORIA'], basis='EC 103/2019, art. 9º',
+                                REVALIDATE_ON_NEW_COMPLEMENTARY_LAW=True,
+                                note='não é a solução constitucional definitiva do art. 40, § 22'),
+}
+
+
 def jdump(o):
     return (json.dumps(o, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
 
@@ -286,11 +309,14 @@ def build():
         dec.append(dict(candidate_id=i['candidate_id'], target=i['target_id'], display_target=i['display_target'], norm_key=i['norm_key'],
                         norm_name=i['norm_name'], c0_signals=i['c0_signal_families'], c0_relation_type=i['c0_relation_type'],
                         legal_decision=r['decision'], confidence=r['confidence'],
-                        relation_type_final=r['relation_type_final'], target_final=(r['target_final'] or i['target_id']) if accepted else None,
+                        relation_type_final=INDEPENDENT_ITEMS.get(i['candidate_id'], {}).get('relation_type_final', r['relation_type_final']),
+                        relation_type_final_initial=r['relation_type_final'],
+                        scope=ITEM_SCOPE.get(i['candidate_id']), target_final=(r['target_final'] or i['target_id']) if accepted else None,
                         route=r['route'], device_route_status=dev if accepted else None,
                         ingestion_status=('INGESTION_REQUIRED' if dev == 'INGESTION_REQUIRED' else 'NOT_REQUIRED') if accepted else None,
                         official_sources=[dict(source_id=k, **SOURCES[k]) for k in r['sources']], relevant_provisions=r['provisions'],
-                        legal_analysis=r['analysis'], notes=r['notes'], applied=False))
+                        legal_analysis=r['analysis'], notes=r['notes'], applied=False,
+                        independent_review=INDEPENDENT_ITEMS.get(i['candidate_id'], dict(verdict='CONFIRMED'))))
     cnt = Counter(d['legal_decision'] for d in dec)
     acc = [d for d in dec if d['legal_decision'] in ('APPROVE', 'ADJUST')]
     dcnt = Counter(d['device_route_status'] for d in acc)
@@ -299,13 +325,15 @@ def build():
                    decisions={k: cnt.get(k, 0) for k in DECISIONS},
                    accepted_device_route={k: dcnt.get(k, 0) for k in ('MAIN_CORPUS_ROUTE_REQUIRED', 'INGESTION_REQUIRED', 'DEVICE_RESOLVABLE_NOW')},
                    all_batch_device_status=dict(sorted(Counter(i['c0_device_status'] for i in inp).items())),
-                   relation_type_changed=sum(1 for d in acc if d['relation_type_final'] != d['c0_relation_type']))
+                   relation_type_changed=sum(1 for d in acc if d['relation_type_final_initial'] != d['c0_relation_type']),
+                   independent_review_relation_changes=sum(1 for d in acc if d['relation_type_final'] != d['relation_type_final_initial']))
     common = dict(schema_version=1, mission=MISSION, baseline=BASE, applied=False, verified_on=VERIFIED_ON)
     j_in = jdump(dict(common, artifact='CF88_CORRELATA_C1B_HIGH_BATCH01_INPUT',
                       selection=dict(source=f'{QUEUE.relative_to(ROOT).as_posix()} :: HIGH', rule='target CF88 art. 5 a 43; ordem estrutural do Target Index',
                                      pool=len(pool), taken=len(batch), limit_rule=summary['limit_rule'], candidate_ids=ids),
                       candidates=inp))
     j_dec = jdump(dict(common, artifact='CF88_CORRELATA_C1B_HIGH_BATCH01_DECISIONS', decision_values=list(DECISIONS),
+                       independent_review=INDEPENDENT_REVIEW,
                        relation_types=list(RELATION_TYPES), source_policy='Somente Planalto (fonte oficial); HTML identificado por sha256, nao versionado.',
                        summary=summary, decisions=dec))
     return j_in, j_dec, report(summary, dec).encode('utf-8')
@@ -366,6 +394,22 @@ def report(s, dec):
         if d['notes']:
             a(f"- **Observações:** {d['notes']}")
         a('')
+    ir = INDEPENDENT_REVIEW
+    a('## Revisão independente do Batch01')
+    a('')
+    a(f"- `BATCH01_INDEPENDENT_REVIEW = {ir['verdict']}`")
+    a(f"- **Contagem:** inclusões e exclusões inalteradas: aceitos {ir['accepted']}, REJECT {ir['reject']}, HOLD {ir['hold']}.")
+    a(f"- **Ajuste:** só {ir['relation_type_changes']} aceito muda de natureza.")
+    for k, v in INDEPENDENT_ITEMS.items():
+        d = next(x for x in dec if x['candidate_id'] == k)
+        a(f"- **{d['display_target']} × {d['norm_name']}:** {v['note']}")
+    for k, v in ITEM_SCOPE.items():
+        d = next(x for x in dec if x['candidate_id'] == k)
+        a(f"- **{d['display_target']} × {d['norm_name']}:** escopo `{json.dumps(v, ensure_ascii=False)}`.")
+    a('- **NEW_CANDIDATE_BACKLOG** (não é decisão deste lote):')
+    for b in ir['new_candidate_backlog']:
+        a(f"  - {b['norm']} × `{b['target_id']}`: {b['reason']}")
+    a('')
     a('## Fora deste lote')
     a('')
     a('- **Candidatos sugeridos nas observações** (decididos aqui só como sugestão, não como vínculo):')
