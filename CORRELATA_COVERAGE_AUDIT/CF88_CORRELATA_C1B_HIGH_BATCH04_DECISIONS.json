@@ -1,0 +1,953 @@
+{
+ "schema_version": 1,
+ "mission": "CF88_CORRELATA_C1B_HIGH_REVIEW_BATCH04",
+ "baseline": {
+  "branch": "cf-correlata-coverage-audit",
+  "head": "825f4ad6fed7d476c4dc71405451e848e441c798"
+ },
+ "applied": false,
+ "verified_on": "2026-10-11",
+ "artifact": "CF88_CORRELATA_C1B_HIGH_BATCH04_DECISIONS",
+ "decision_values": [
+  "APPROVE",
+  "ADJUST",
+  "REJECT",
+  "HOLD",
+  "NEEDS_SOURCE"
+ ],
+ "relation_types": [
+  "REGULAMENTA",
+  "COMPLEMENTA",
+  "IMPLEMENTA",
+  "PROCEDIMENTO",
+  "CONDIÇÃO_OU_EXCEÇÃO",
+  "ORGANIZA_INSTITUIÇÃO",
+  "EXECUTA_POLÍTICA_CONSTITUCIONAL"
+ ],
+ "temporal_values": [
+  "IN_FORCE",
+  "VACATIO_LEGIS",
+  "PARTIAL_EFFECTS",
+  "TRANSITIONAL",
+  "REVOKED",
+  "UNCERTAIN"
+ ],
+ "scope_values": [
+  "ESCOPO_FEDERAL",
+  "ESCOPO_FEDERAL_EXECUTIVE",
+  "ESCOPO_ESTADUAL",
+  "ESCOPO_MUNICIPAL",
+  "ESCOPO_SETORIAL",
+  "ESCOPO_PARCIAL",
+  "NON_EXCLUSIVE",
+  "TRANSITORIA",
+  "SUBSIDIARIA",
+  "ESCOPO_MPU",
+  "ESCOPO_MPDFT"
+ ],
+ "source_policy": "Somente Planalto (fonte oficial); HTML identificado por sha256, nao versionado.",
+ "summary": {
+  "batch_candidates": 17,
+  "high_total": 106,
+  "eligible_pool_before": 17,
+  "high_remaining_after": 0,
+  "decisions": {
+   "APPROVE": 7,
+   "ADJUST": 7,
+   "REJECT": 0,
+   "HOLD": 3,
+   "NEEDS_SOURCE": 0
+  },
+  "accepted": 14,
+  "accepted_device_route": {
+   "MAIN_CORPUS_ROUTE_REQUIRED": 5,
+   "INGESTION_REQUIRED": 6,
+   "DEVICE_RESOLVABLE_NOW": 3
+  },
+  "accepted_temporal": {
+   "IN_FORCE": 13,
+   "TRANSITIONAL": 1
+  },
+  "temporal_device_block": 0,
+  "engine_overlay_blocked": 2,
+  "relation_type_changed": 5,
+  "target_changed": 2,
+  "cf_vs_adct": {
+   "CF88": {
+    "ADJUST": 6,
+    "APPROVE": 6,
+    "HOLD": 3
+   },
+   "ADCT": {
+    "ADJUST": 1,
+    "APPROVE": 1
+   }
+  },
+  "new_candidate_backlog": 2
+ },
+ "decisions": [
+  {
+   "candidate_id": "CORRC0-A88AB3189E73",
+   "target": "CF88:ART.195:PAR.8",
+   "display_target": "CF art. 195, § 8",
+   "namespace": "CF88",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.195:PAR.8",
+   "route": "art. 25",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L8212",
+     "norm": "Lei nº 8.212/1991 (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm",
+     "sha256": "12c5bda5cffd920da7093757ceb796651f937e0306d341c19348a3d040a09e1d",
+     "bytes": 771751,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 8.212/1991, Capítulo VI, art. 25: contribuição do segurado especial e do produtor rural pessoa física sobre a receita bruta da comercialização da produção.",
+   "legal_analysis": "O § 8º prevê a contribuição do produtor em economia familiar sobre o resultado da comercialização. O art. 25 é essa disciplina; a referência legada ao \"art. 55\" estava errada. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-C4B7D896EEC4",
+   "target": "CF88:ART.198:PAR.3",
+   "display_target": "CF art. 198, § 3",
+   "namespace": "CF88",
+   "norm_key": "LC:141/2012",
+   "norm_name": "Lei Complementar nº 141/2012",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.198:PAR.3",
+   "route": "art. 1º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC141",
+     "norm": "Lei Complementar nº 141/2012",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp141.htm",
+     "sha256": "bef7e768506e0e9c5c0666a58b41546d18549865f7e445891df62428c9efe2a3",
+     "bytes": 85924,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Regulamenta o § 3º do art. 198 da Constituição Federal para dispor sobre os valores mínimos a serem aplicados anualmente ... em ações e serviços públicos de saúde; estabelece os critérios de rateio...\".",
+   "legal_analysis": "O § 3º exige lei complementar sobre os percentuais mínimos em saúde, os critérios de rateio e as normas de fiscalização. A LC 141 é essa lei, com remissão expressa.",
+   "notes": "O § 3º exige reavaliação pelo menos a cada cinco anos; registrado para revalidação editorial futura.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-2053DEF59022",
+   "target": "CF88:ART.201:PAR.1",
+   "display_target": "CF art. 201, § 1",
+   "namespace": "CF88",
+   "norm_key": "LC:142/2013",
+   "norm_name": "Lei Complementar nº 142/2013",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.201:PAR.1:INC.I",
+   "route": "art. 1º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC142",
+     "norm": "Lei Complementar nº 142/2013",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp142.htm",
+     "sha256": "bf2272518f8b70e40fdfe6123d797e920996710c7621adcacb6edafd2a0e1172",
+     "bytes": 17481,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Regulamenta o § 1º do art. 201 ..., no tocante à aposentadoria da pessoa com deficiência segurada do RGPS\".",
+   "legal_analysis": "Após a EC 103/2019, o § 1º tem dois incisos: (I) segurados com deficiência e (II) exposição a agentes nocivos. A LC 142 disciplina só a hipótese da pessoa com deficiência. O target vai para o inciso I, sem fan-out ao parágrafo inteiro.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-67B5D9C94E07",
+   "target": "CF88:ART.201:PAR.4",
+   "display_target": "CF art. 201, § 4",
+   "namespace": "CF88",
+   "norm_key": "LEI:8213/1991",
+   "norm_name": "Lei 8.213/1991 - Planos de Benefícios da Previdência Social",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.201:PAR.4",
+   "route": "art. 41-A",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L8213",
+     "norm": "Lei nº 8.213/1991 (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm",
+     "sha256": "d9b8d1fe23dfe9cbad0b99bc50f0a474b8cfc1359323f653ab25397aa198d3fc",
+     "bytes": 755476,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 8.213/1991, art. 41-A: \"O valor dos benefícios em manutenção será reajustado, anualmente, na mesma data do reajuste do salário mínimo ... com base no INPC\".",
+   "legal_analysis": "O § 4º assegura o reajustamento para preservar o valor real \"conforme critérios definidos em lei\". O art. 41-A define esses critérios. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-362157C332DE",
+   "target": "CF88:ART.202:PAR.1",
+   "display_target": "CF art. 202, § 1",
+   "namespace": "CF88",
+   "norm_key": "LC:109/2001",
+   "norm_name": "Lei Complementar nº 109/2001",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.202:PAR.1",
+   "route": "art. 3º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "DEVICE_RESOLVABLE_NOW",
+   "device_flags": [
+    "DEVICE_RESOLVABLE_NOW"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC109",
+     "norm": "Lei Complementar nº 109/2001",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp109.htm",
+     "sha256": "98477f7eb4c8033840602397bb261fcf0fd94137617215abafe59708bc8870b9",
+     "bytes": 93736,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 109/2001, art. 3º, IV: a ação do Estado visa \"assegurar aos participantes e assistidos o pleno acesso às informações relativas à gestão de seus respectivos planos de benefícios\".",
+   "legal_analysis": "O § 1º manda a lei complementar assegurar o pleno acesso às informações da gestão, e o art. 3º, IV, da LC 109 reproduz e concretiza o comando. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-C8087244A9DB",
+   "target": "CF88:ART.227:PAR.3",
+   "display_target": "CF art. 227, § 3",
+   "namespace": "CF88",
+   "norm_key": "LEI:8069/1990",
+   "norm_name": "Lei 8.069/1990 - Estatuto da Criança e do Adolescente",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.227:PAR.3",
+   "route": "art. 60",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L8069",
+     "norm": "Lei nº 8.069/1990 (ECA)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+     "sha256": "6c98180184cea3913ca7681d865eea766cfcc7764751e4b6cfd11a42bbcbf0af",
+     "bytes": 696951,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "ECA: Capítulo V, \"Do Direito à Profissionalização e à Proteção no Trabalho\" (art. 60: proibição de trabalho a menores de 14 anos, salvo aprendiz); garantias processuais (arts. 110 e 111); excepcionalidade da internação (art. 121).",
+   "legal_analysis": "O § 3º enumera os aspectos da proteção especial (idade mínima, direitos trabalhistas, garantias processuais, brevidade da privação de liberdade). O ECA disciplina esses aspectos.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-8D80396BDEEB",
+   "target": "CF88:ART.227:PAR.4",
+   "display_target": "CF art. 227, § 4",
+   "namespace": "CF88",
+   "norm_key": "LEI:8069/1990",
+   "norm_name": "Lei 8.069/1990 - Estatuto da Criança e do Adolescente",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.227:PAR.4",
+   "route": "art. 240",
+   "scope": [
+    "NON_EXCLUSIVE",
+    "ESCOPO_PARCIAL"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L8069",
+     "norm": "Lei nº 8.069/1990 (ECA)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+     "sha256": "6c98180184cea3913ca7681d865eea766cfcc7764751e4b6cfd11a42bbcbf0af",
+     "bytes": 696951,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "ECA, crimes: art. 240 (cena de sexo explícito ou pornográfica com criança ou adolescente) e art. 244-A (submissão à prostituição ou exploração sexual).",
+   "legal_analysis": "O § 4º manda a lei punir severamente o abuso, a violência e a exploração sexual. O ECA tipifica parte dessas condutas; o Código Penal tipifica outras.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-A2C12E99BECD",
+   "target": "CF88:ART.227:PAR.5",
+   "display_target": "CF art. 227, § 5",
+   "namespace": "CF88",
+   "norm_key": "LEI:8069/1990",
+   "norm_name": "Lei 8.069/1990 - Estatuto da Criança e do Adolescente",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.227:PAR.5",
+   "route": "art. 39",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L8069",
+     "norm": "Lei nº 8.069/1990 (ECA)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+     "sha256": "6c98180184cea3913ca7681d865eea766cfcc7764751e4b6cfd11a42bbcbf0af",
+     "bytes": 696951,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "ECA, Subseção IV \"Da Adoção\": art. 39 (\"A adoção de criança e de adolescente reger-se-á segundo o disposto nesta Lei\") e adoção internacional (arts. 51 a 52-D).",
+   "legal_analysis": "O § 5º manda a lei estabelecer casos e condições da adoção, inclusive por estrangeiros. O ECA é essa lei. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-E86B55D28D44",
+   "target": "CF88:ART.231:PAR.1",
+   "display_target": "CF art. 231, § 1",
+   "namespace": "CF88",
+   "norm_key": "LEI:14701/2023",
+   "norm_name": "Lei nº 14.701/2023",
+   "c0_signals": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "HOLD",
+   "confidence": "BAIXA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "UNCERTAIN",
+    "effective_from": "2023-10-20 (publicação)",
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": "a página oficial do Planalto anota \"(Vide ADC 87) (Vide ADI 7582) (Vide ADI 7583) (Vide ADI 7586)\" no art. 4º: lei sob controle concentrado no STF; situação atual de eficácia não verificada nesta rodada"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L14701",
+     "norm": "Lei nº 14.701/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14701.htm",
+     "sha256": "d51bcfe35e5dbf038dbd814a0b026914b0a1500b76989fe5b6ad7027a47e1bf8",
+     "bytes": 126386,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 14.701/2023, art. 4º (conceito de terras tradicionalmente ocupadas).",
+   "legal_analysis": "A Lei 14.701/2023 se declara regulamentadora do art. 231 (ementa). A página oficial, porém, anota no art. 4º, que define as terras tradicionalmente ocupadas pelo critério da data da promulgação, a remissão a ADC 87 e ADIs 7582, 7583 e 7586. O núcleo da lei está sob controle concentrado no STF, e a situação atual de eficácia não foi verificada em fonte oficial nesta rodada. Aprovar pode exibir como correlata vigente disciplina cuja validade está em disputa; rejeitar ignora uma regulamentação expressa.",
+   "notes": "Confirmar em fonte oficial (STF/Planalto) a situação atual de ADC 87 e ADIs 7582, 7583 e 7586 antes de decidir.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-E0C9C2F5CDBD",
+   "target": "CF88:ART.231:PAR.3",
+   "display_target": "CF art. 231, § 3",
+   "namespace": "CF88",
+   "norm_key": "LEI:14701/2023",
+   "norm_name": "Lei nº 14.701/2023",
+   "c0_signals": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "HOLD",
+   "confidence": "BAIXA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "UNCERTAIN",
+    "effective_from": "2023-10-20 (publicação)",
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": "a página oficial do Planalto anota \"(Vide ADC 87) (Vide ADI 7582) (Vide ADI 7583) (Vide ADI 7586)\" no art. 4º: lei sob controle concentrado no STF; situação atual de eficácia não verificada nesta rodada"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L14701",
+     "norm": "Lei nº 14.701/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14701.htm",
+     "sha256": "d51bcfe35e5dbf038dbd814a0b026914b0a1500b76989fe5b6ad7027a47e1bf8",
+     "bytes": 126386,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 14.701/2023 (regulamenta o art. 231; aproveitamento de recursos em terras indígenas).",
+   "legal_analysis": "A Lei 14.701/2023 se declara regulamentadora do art. 231 (ementa). A página oficial, porém, anota no art. 4º, que define as terras tradicionalmente ocupadas pelo critério da data da promulgação, a remissão a ADC 87 e ADIs 7582, 7583 e 7586. O núcleo da lei está sob controle concentrado no STF, e a situação atual de eficácia não foi verificada em fonte oficial nesta rodada. Aprovar pode exibir como correlata vigente disciplina cuja validade está em disputa; rejeitar ignora uma regulamentação expressa.",
+   "notes": "Além do status no STF, identificar o artigo da lei que disciplina a participação nos resultados da lavra (§ 3º, \"na forma da lei\").",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-FC57ED913387",
+   "target": "CF88:ART.231:PAR.6",
+   "display_target": "CF art. 231, § 6",
+   "namespace": "CF88",
+   "norm_key": "LEI:14701/2023",
+   "norm_name": "Lei nº 14.701/2023",
+   "c0_signals": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "HOLD",
+   "confidence": "BAIXA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "UNCERTAIN",
+    "effective_from": "2023-10-20 (publicação)",
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": "a página oficial do Planalto anota \"(Vide ADC 87) (Vide ADI 7582) (Vide ADI 7583) (Vide ADI 7586)\" no art. 4º: lei sob controle concentrado no STF; situação atual de eficácia não verificada nesta rodada"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L14701",
+     "norm": "Lei nº 14.701/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14701.htm",
+     "sha256": "d51bcfe35e5dbf038dbd814a0b026914b0a1500b76989fe5b6ad7027a47e1bf8",
+     "bytes": 126386,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 14.701/2023 (regulamenta o art. 231).",
+   "legal_analysis": "A Lei 14.701/2023 se declara regulamentadora do art. 231 (ementa). A página oficial, porém, anota no art. 4º, que define as terras tradicionalmente ocupadas pelo critério da data da promulgação, a remissão a ADC 87 e ADIs 7582, 7583 e 7586. O núcleo da lei está sob controle concentrado no STF, e a situação atual de eficácia não foi verificada em fonte oficial nesta rodada. Aprovar pode exibir como correlata vigente disciplina cuja validade está em disputa; rejeitar ignora uma regulamentação expressa. O § 6º exige, além disso, lei complementar para o relevante interesse público da União, e a Lei 14.701 é ordinária.",
+   "notes": "Espécie normativa (LO × LC exigida pelo § 6º) a verificar.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-7F28FCF12C37",
+   "target": "CF88:ART.239",
+   "display_target": "CF art. 239",
+   "namespace": "CF88",
+   "norm_key": "LC:7/1970",
+   "norm_name": "Lei Complementar nº 7/1970",
+   "c0_signals": [
+    "S2_REMISSAO_NOMINAL"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "MEDIA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.239",
+   "route": "art. 1º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC7",
+     "norm": "Lei Complementar nº 7/1970 (PIS)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp07.htm",
+     "sha256": "ea1bc507aa5b234d27fea2bc08da7a5d7a4feebca8d22cdf235cd92d5a9ca791",
+     "bytes": 19195,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 7/1970, ementa: \"Institui o Programa de Integração Social\". Parte dos dispositivos aparece \"(Revogado pela Lei Complementar nº 26, de 1975)\".",
+   "legal_analysis": "O caput do art. 239 cita nominalmente a LC 7/1970 como lei criadora do PIS, cuja arrecadação a Constituição redireciona. É remissão expressa ao diploma de origem; a destinação atual está na Lei 7.998/1990.",
+   "notes": "Norma parcialmente revogada (LC 26/1975); vínculo útil como origem do PIS citada pelo texto.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-D2D0CD6A150D",
+   "target": "CF88:ART.239",
+   "display_target": "CF art. 239",
+   "namespace": "CF88",
+   "norm_key": "LC:8/1970",
+   "norm_name": "Lei Complementar nº 8/1970",
+   "c0_signals": [
+    "S2_REMISSAO_NOMINAL"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "MEDIA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.239",
+   "route": "art. 1º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC8",
+     "norm": "Lei Complementar nº 8/1970 (PASEP)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp08.htm",
+     "sha256": "87eed61b818add9c5e3d81de18574f1a3a2cb090183848b9f16a9129d3f6138a",
+     "bytes": 14949,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 8/1970, ementa: \"Institui o Programa de Formação do Patrimônio do Servidor Público\". Parte dos dispositivos foi revogada pela LC 26/1975.",
+   "legal_analysis": "Remissão expressa do caput do art. 239 à lei criadora do PASEP, com o mesmo raciocínio da LC 7/1970.",
+   "notes": "Norma parcialmente revogada (LC 26/1975).",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-5C8AFC368627",
+   "target": "CF88:ART.239:PAR.3",
+   "display_target": "CF art. 239, § 3",
+   "namespace": "CF88",
+   "norm_key": "LEI:7998/1990",
+   "norm_name": "Lei nº 7.998/1990",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.239:PAR.3",
+   "route": "art. 9º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "DEVICE_RESOLVABLE_NOW",
+   "device_flags": [
+    "DEVICE_RESOLVABLE_NOW"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L7998",
+     "norm": "Lei nº 7.998/1990",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l7998.htm",
+     "sha256": "674335b5ec1bf3edd518c27bbbad3838cca9635225dd08967733ae88fcf36558",
+     "bytes": 118913,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 7.998/1990, art. 1º: regula o seguro-desemprego e \"o abono de que tratam ... o art. 239\". Art. 9º: \"É assegurado o recebimento de abono salarial anual...\".",
+   "legal_analysis": "O § 3º assegura o abono anual aos empregados que ganham até o limite constitucional. O art. 9º da Lei 7.998 disciplina o abono.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-7867B93D94DA",
+   "target": "CF88:ART.239:PAR.4",
+   "display_target": "CF art. 239, § 4",
+   "namespace": "CF88",
+   "norm_key": "LEI:7998/1990",
+   "norm_name": "Lei nº 7.998/1990",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "MEDIA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.239:PAR.4",
+   "route": "art. 11",
+   "scope": [
+    "ESCOPO_PARCIAL"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "DEVICE_RESOLVABLE_NOW",
+   "device_flags": [
+    "DEVICE_RESOLVABLE_NOW"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L7998",
+     "norm": "Lei nº 7.998/1990",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l7998.htm",
+     "sha256": "674335b5ec1bf3edd518c27bbbad3838cca9635225dd08967733ae88fcf36558",
+     "bytes": 118913,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 7.998/1990, art. 11, IV: entre os recursos do FAT, \"o produto da arrecadação da contribuição adicional pelo índice de rotatividade, de que trata o § 4º do art. 239\".",
+   "legal_analysis": "A lei destina ao FAT a contribuição adicional do § 4º, mas não verifiquei nela a disciplina de cálculo e cobrança. A relação é direta e parcial (destinação). A natureza muda de REGULAMENTA para COMPLEMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-F2C3596A37CB",
+   "target": "ADCT:ART.10:INC.II",
+   "display_target": "ADCT art. 10, II",
+   "namespace": "ADCT",
+   "norm_key": "LC:146/2014",
+   "norm_name": "Lei Complementar nº 146/2014",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "ADCT:ART.10:INC.II:AL.b",
+   "route": "art. 1º",
+   "scope": [
+    "TRANSITORIA"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": false,
+   "official_sources": [
+    {
+     "source_id": "LC146",
+     "norm": "Lei Complementar nº 146/2014",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp146.htm",
+     "sha256": "22dca8f0bef78dc879a074f183b2fb7212b1838f800b5c729d00b3bf40719d0e",
+     "bytes": 6817,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Estende a estabilidade provisória prevista na alínea b do inciso II do art. 10 do ADCT à trabalhadora gestante, nos casos de morte desta, a quem detiver a guarda de seu filho\".",
+   "legal_analysis": "A remissão expressa é à alínea b. A LC 146 complementa a garantia, estendendo-a ao guardião. O target vai do inciso II para a alínea b.",
+   "notes": "Target do ADCT: o status do motor (UNKNOWN_VALIDITY) bloqueia o overlay atual (dívida da C0).",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-A28C8B1C8F51",
+   "target": "ADCT:ART.128:PAR.2",
+   "display_target": "ADCT art. 128, § 2",
+   "namespace": "ADCT",
+   "norm_key": "LC:160/2017",
+   "norm_name": "Lei Complementar nº 160/2017",
+   "c0_signals": [
+    "S2_REMISSAO_NOMINAL",
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "ADCT:ART.128:PAR.2",
+   "route": "art. 3º",
+   "scope": [
+    "TRANSITORIA"
+   ],
+   "temporal": {
+    "temporal_status": "TRANSITIONAL",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": "2033-01-01",
+    "note": "benefícios do ICMS reduzidos de 2029 a 2032 pelo ADCT, art. 128; extinção do ICMS em 2033"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": false,
+   "official_sources": [
+    {
+     "source_id": "LC160",
+     "norm": "Lei Complementar nº 160/2017",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp160.htm",
+     "sha256": "56dca4c1d6f4d5e13ae98f7e19d33313d544757fd110ec0a88d71310006e886d",
+     "bytes": 39741,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 160/2017, ementa: convênio para remissão de créditos e reinstituição de benefícios fiscais do ICMS concedidos em desacordo com a alínea g do inciso XII do § 2º do art. 155. O art. 3º trata dos benefícios reinstituídos e prazos.",
+   "legal_analysis": "O § 2º do art. 128 do ADCT manda reduzir os benefícios do art. 3º da LC 160, sem aplicar o § 2º-A desse artigo. A relação é expressa e operativa na transição.",
+   "notes": "Target do ADCT: o status do motor bloqueia o overlay atual.",
+   "applied": false
+  }
+ ],
+ "NEW_CANDIDATE_BACKLOG": [
+  {
+   "norm": "Lei nº 8.213/1991 (arts. 57 e 58, aposentadoria especial)",
+   "norm_key": "LEI:8213/1991",
+   "target_id": "CF88:ART.201:PAR.1:INC.II",
+   "basis": "o inciso II (exposição a agentes nocivos) é hipótese distinta da LC 142, que cobre só o inciso I",
+   "origin": "CORRC0-2053DEF59022",
+   "suggested_priority": "MEDIUM",
+   "reason_not_decided": "vínculo distinto, sem herança do inciso I; exige verificação própria após a EC 103/2019",
+   "status": "BACKLOG_NOT_DECIDED"
+  },
+  {
+   "norm": "Decreto-Lei nº 2.848/1940 (Código Penal, crimes contra a dignidade sexual)",
+   "norm_key": "DL:2848/1940",
+   "target_id": "CF88:ART.227:PAR.4",
+   "basis": "o § 4º é concretizado também pelo Código Penal (NON_EXCLUSIVE com o ECA)",
+   "origin": "CORRC0-8D80396BDEEB",
+   "suggested_priority": "LOW",
+   "reason_not_decided": "fora da fila HIGH original",
+   "status": "BACKLOG_NOT_DECIDED"
+  }
+ ]
+}

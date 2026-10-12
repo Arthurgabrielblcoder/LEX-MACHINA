@@ -25,6 +25,18 @@
   "EXECUTA_POLÍTICA_CONSTITUCIONAL"
  ],
  "source_policy": "Somente Planalto (fonte oficial); HTML identificado por sha256, nao versionado.",
+ "independent_review": {
+  "verdict": "APPROVED_WITH_TWO_ADJUSTMENTS",
+  "accepted": 22,
+  "reject": 8,
+  "hold": 0,
+  "accepted_count_changed": "NO",
+  "architectural_debt": {
+   "id": "FUTURE_EFFECTIVE_CORRELATA_POLICY_REQUIRED",
+   "rule": "até existir política própria, correlata juridicamente aprovada em vacatio legis não pode ir ao DEVICE como se estivesse plenamente vigente sem indicação temporal visível; opções futuras: ocultar até a vigência ou exibir com rótulo de vigência futura (UI não decidida)",
+   "finding": "o vínculo CORRELATA atual REL_167CD90B031F3404 (Lei 14.965/2024 × CF88:ART.37:INC.II, visível no RUN3) também aponta para lei em vacatio legis até 2028-01-01; registrar para C2, sem alteração nesta missão"
+  }
+ },
  "summary": {
   "batch_candidates": 30,
   "high_total": 106,
@@ -52,8 +64,10 @@
    "MAIN_CORPUS_ROUTE_REQUIRED": 1
   },
   "relation_type_changed": 11,
-  "target_changed": 1,
-  "new_candidate_backlog": 6
+  "target_changed": 0,
+  "new_candidate_backlog": 7,
+  "independent_review_adjustments": 3,
+  "vacatio_legis_accepted": 2
  },
  "decisions": [
   {
@@ -70,11 +84,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.45:PAR.1",
+   "target_final_initial": "CF88:ART.45:PAR.1",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC78",
@@ -88,7 +105,10 @@
    "relevant_provisions": "Ementa: \"Disciplina a fixação do número de Deputados, nos termos do art. 45, § 1º\". O art. 1º trata do limite de 513 e da base populacional fornecida pelo IBGE.",
    "legal_analysis": "É a lei complementar exigida pelo § 1º, com remissão expressa.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-9AB7A934F0B2",
@@ -103,11 +123,14 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "CONDIÇÃO_OU_EXCEÇÃO",
+   "relation_type_final_initial": "CONDIÇÃO_OU_EXCEÇÃO",
    "target_final": "CF88:ART.49:INC.II",
+   "target_final_initial": "CF88:ART.49:INC.II",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC90",
@@ -121,7 +144,10 @@
    "relevant_provisions": "Art. 1º: o Presidente pode permitir o trânsito ou a permanência de forças estrangeiras \"independente da autorização do Congresso Nacional\", nos casos listados.",
    "legal_analysis": "O inciso II atribui ao Congresso autorizar a permissão a forças estrangeiras, \"ressalvados os casos previstos em lei complementar\". A LC 90 define exatamente essa ressalva. A natureza é exceção à competência do Congresso (CONDIÇÃO_OU_EXCEÇÃO), não regulamentação.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-DB7354F1B905",
@@ -136,13 +162,16 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
    "scope_flags": [
     "ALTERADORA_INCORPORADA"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC107",
@@ -164,7 +193,10 @@
    "relevant_provisions": "Ementa: \"Altera a Lei Complementar nº 95, de 26 de fevereiro de 1998\"; o art. 1º dá nova redação aos arts. 8º, 9º, 11 a 14 da LC 95.",
    "legal_analysis": "Lei alteradora sem conteúdo autônomo relevante: as novas redações estão incorporadas ao texto compilado da LC 95, aprovada neste lote.",
    "notes": "ALTERADORA_INCORPORADA.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-C6DD33BDB4E1",
@@ -179,11 +211,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.59:PAR.UNICO",
+   "target_final_initial": "CF88:ART.59:PAR.UNICO",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC95",
@@ -197,7 +232,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre a elaboração, a redação, a alteração e a consolidação das leis, conforme determina o parágrafo único do art. 59\".",
    "legal_analysis": "É a lei complementar do parágrafo único, com remissão expressa.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-245CA29208BF",
@@ -212,11 +250,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.84:INC.XXII",
+   "target_final_initial": "CF88:ART.84:INC.XXII",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC90",
@@ -230,7 +271,10 @@
    "relevant_provisions": "Art. 1º: \"Poderá o Presidente da República permitir que forças estrangeiras transitem ... nos seguintes casos\".",
    "legal_analysis": "O inciso XXII atribui ao Presidente a permissão \"nos casos previstos em lei complementar\", e a LC 90 enumera esses casos. Do lado do Presidente, ela regulamenta diretamente a competência.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-690721F4196B",
@@ -245,11 +289,14 @@
    "legal_decision": "REJECT",
    "confidence": "MEDIA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "L4320",
@@ -263,7 +310,10 @@
    "relevant_provisions": "Lei 4.320/1964, art. 34: \"O exercício financeiro coincidirá com o ano civil.\"",
    "legal_analysis": "O § 5º trata da inclusão orçamentária obrigatória e do prazo de pagamento dos precatórios. A Lei 4.320 só fornece o conceito auxiliar de exercício financeiro e não disciplina precatórios. A relação é definitória e incidental.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-35E96F1CA181",
@@ -278,11 +328,14 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "PROCEDIMENTO",
+   "relation_type_final_initial": "PROCEDIMENTO",
    "target_final": "CF88:ART.102:PAR.2",
+   "target_final_initial": "CF88:ART.102:PAR.2",
    "route": "art. 28",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "L9868",
@@ -296,7 +349,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre o processo e julgamento da ADI e da ADC perante o STF\". Art. 28, parágrafo único: a declaração tem \"eficácia contra todos e efeito vinculante\". O art. 27 trata da modulação de efeitos.",
    "legal_analysis": "A lei disciplina o processo em que se produzem os efeitos do § 2º e os detalha (arts. 27 e 28). A natureza muda de COMPLEMENTA para PROCEDIMENTO.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-420E49E80EF9",
@@ -312,11 +368,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.103-A:PAR.2",
+   "target_final_initial": "CF88:ART.103-A:PAR.2",
    "route": "art. 3º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "L11417",
@@ -330,7 +389,10 @@
    "relevant_provisions": "Ementa: \"Regulamenta o art. 103-A ... disciplinando a edição, a revisão e o cancelamento de enunciado de súmula vinculante\". O art. 3º lista os legitimados a propor.",
    "legal_analysis": "O § 2º ressalva \"o que vier a ser estabelecido em lei\" sobre quem pode provocar a súmula, e o art. 3º da Lei 11.417 é essa lei.",
    "notes": "A mesma lei também regula o caput do art. 103-A (art. 2º). Não há herança automática: fica para candidato próprio.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-8E5A28F8F96F",
@@ -346,11 +408,14 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.103-A:PAR.3",
+   "target_final_initial": "CF88:ART.103-A:PAR.3",
    "route": "art. 7º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "L11417",
@@ -364,7 +429,10 @@
    "relevant_provisions": "Art. 7º: cabe reclamação ao STF da decisão ou do ato que contrariar a súmula vinculante. O § 1º exige o esgotamento das vias administrativas contra ato ou omissão da administração.",
    "legal_analysis": "O art. 7º disciplina diretamente a reclamação do § 3º, inclusive com condição de cabimento. A natureza muda de COMPLEMENTA para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-312A79978F0C",
@@ -379,11 +447,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.105:PAR.2",
+   "target_final_initial": "CF88:ART.105:PAR.2",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "L15484",
@@ -397,7 +468,10 @@
    "relevant_provisions": "Ementa e art. 1º: \"Regulamenta o regime de relevância das questões de direito federal infraconstitucional para admissão dos recursos especiais no STJ\".",
    "legal_analysis": "O § 2º exige a demonstração da relevância \"nos termos da lei\", e a Lei 15.484/2026 é essa lei.",
    "notes": "Norma recente (2026): ingestão necessária; a vigência deve ser reconferida na ingestão.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-3A3521E4F0DB",
@@ -412,7 +486,9 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "IMPLEMENTA",
+   "relation_type_final_initial": "IMPLEMENTA",
    "target_final": "CF88:ART.128:PAR.3",
+   "target_final_initial": "CF88:ART.128:PAR.3",
    "route": "art. 156",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
@@ -420,6 +496,7 @@
     "ESCOPO_MPDFT",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC75",
@@ -433,7 +510,10 @@
    "relevant_provisions": "LC 75/1993, art. 156: o Procurador-Geral de Justiça do DF e Territórios é nomeado pelo Presidente da República dentre integrantes de lista tríplice, para mandato de dois anos, permitida uma recondução.",
    "legal_analysis": "O § 3º remete à \"lei respectiva\" de cada MP. A LC 75 concretiza o comando só para o MPDFT; os Ministérios Públicos estaduais seguem suas próprias leis. A natureza muda para IMPLEMENTA, com escopo restrito.",
    "notes": "ESCOPO_MPDFT; NON_EXCLUSIVE (leis orgânicas estaduais e Lei 8.625/1993).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-FB380CBD6CBF",
@@ -448,7 +528,9 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "IMPLEMENTA",
+   "relation_type_final_initial": "IMPLEMENTA",
    "target_final": "CF88:ART.128:PAR.4",
+   "target_final_initial": "CF88:ART.128:PAR.4",
    "route": "art. 156, § 2º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
@@ -456,6 +538,7 @@
     "ESCOPO_MPDFT",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC75",
@@ -469,7 +552,10 @@
    "relevant_provisions": "LC 75/1993, art. 156, § 2º: o Procurador-Geral pode ser destituído antes do término do mandato por deliberação da maioria absoluta do Senado Federal.",
    "legal_analysis": "O § 4º remete à \"lei complementar respectiva\". Para o MPDFT, a LC 75 é essa lei, com o Senado no papel de Poder Legislativo. Nos Estados valem as leis complementares estaduais. A natureza muda para IMPLEMENTA, com escopo MPDFT.",
    "notes": "ESCOPO_MPDFT; NON_EXCLUSIVE.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-E0CCCEFB92EC",
@@ -484,7 +570,9 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "IMPLEMENTA",
+   "relation_type_final_initial": "IMPLEMENTA",
    "target_final": "CF88:ART.129:INC.VI",
+   "target_final_initial": "CF88:ART.129:INC.VI",
    "route": "art. 8º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
@@ -492,6 +580,7 @@
     "ESCOPO_MPU",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC75",
@@ -505,7 +594,10 @@
    "relevant_provisions": "LC 75/1993, art. 8º: nos procedimentos de sua competência, o MPU pode notificar testemunhas e requisitar informações, exames, perícias e documentos.",
    "legal_analysis": "O inciso VI remete à \"lei complementar respectiva\". A LC 75 implementa o poder de notificação e requisição para o MPU; os MPs estaduais seguem as leis complementares estaduais. A natureza muda para IMPLEMENTA.",
    "notes": "ESCOPO_MPU; NON_EXCLUSIVE.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-02E5634C2228",
@@ -520,7 +612,9 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "IMPLEMENTA",
+   "relation_type_final_initial": "IMPLEMENTA",
    "target_final": "CF88:ART.129:INC.VII",
+   "target_final_initial": "CF88:ART.129:INC.VII",
    "route": "art. 9º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
@@ -528,6 +622,7 @@
     "ESCOPO_MPU",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC75",
@@ -541,7 +636,10 @@
    "relevant_provisions": "LC 75/1993, Capítulo III, \"Do Controle Externo da Atividade Policial\", art. 9º: o MPU exerce o controle externo por medidas judiciais e extrajudiciais, com livre ingresso em estabelecimentos policiais e acesso a documentos.",
    "legal_analysis": "O inciso VII remete à lei complementar do art. 128, § 5º. A LC 75 implementa o controle externo no âmbito do MPU. A natureza muda para IMPLEMENTA.",
    "notes": "ESCOPO_MPU; NON_EXCLUSIVE.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-29C48A0D5DA7",
@@ -558,13 +656,23 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "COMPLEMENTA",
+   "relation_type_final_initial": "COMPLEMENTA",
    "target_final": "CF88:ART.131:PAR.2",
+   "target_final_initial": "CF88:ART.131:PAR.2",
    "route": "art. 1º, § 2º",
    "device_route_status": "DEVICE_RESOLVABLE_NOW",
    "ingestion_status": "NOT_REQUIRED",
    "scope_flags": [
-    "NON_EXCLUSIVE"
+    "NON_EXCLUSIVE",
+    "SUBSIDIARIA",
+    "TEMPORAL_DEVICE_BLOCK"
    ],
+   "temporal": {
+    "temporal_status": "VACATIO_LEGIS",
+    "effective_from": "2028-01-01",
+    "early_application_possible": true,
+    "basis": "Lei 14.965/2024, art. 13: vigência em 1º de janeiro do quarto ano após a publicação (DOU 10/09/2024), aplicação antecipada possível pelo ato que autorizar cada concurso"
+   },
    "official_sources": [
     {
      "source_id": "L14965",
@@ -578,7 +686,11 @@
    "relevant_provisions": "Lei 14.965/2024, art. 1º, § 2º: \"Esta Lei aplica-se subsidiariamente aos concursos públicos previstos no § 2º do art. 131 e no art. 132 ..., naquilo que não contrariar normas específicas ... e das leis orgânicas\".",
    "legal_analysis": "Remissão expressa ao § 2º. A aplicação é subsidiária: as normas gerais de concurso complementam a lei orgânica da AGU. COMPLEMENTA está correto.",
    "notes": "SUBSIDIARIA; NON_EXCLUSIVE: a disciplina principal da carreira está na lei orgânica da AGU (LC 73/1993), não avaliada neste lote.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "APPROVED_WITH_TEMPORAL_NOTE",
+    "note": "VACATIO_LEGIS até 2028-01-01; não tratar como vigente."
+   }
   },
   {
    "candidate_id": "CORRC0-08F347BF86E6",
@@ -595,13 +707,23 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "COMPLEMENTA",
+   "relation_type_final_initial": "COMPLEMENTA",
    "target_final": "CF88:ART.132",
+   "target_final_initial": "CF88:ART.132",
    "route": "art. 1º, § 2º",
    "device_route_status": "DEVICE_RESOLVABLE_NOW",
    "ingestion_status": "NOT_REQUIRED",
    "scope_flags": [
-    "NON_EXCLUSIVE"
+    "NON_EXCLUSIVE",
+    "SUBSIDIARIA",
+    "TEMPORAL_DEVICE_BLOCK"
    ],
+   "temporal": {
+    "temporal_status": "VACATIO_LEGIS",
+    "effective_from": "2028-01-01",
+    "early_application_possible": true,
+    "basis": "Lei 14.965/2024, art. 13; § 2º do art. 13: Estados, DF e Municípios podem optar por normas próprias"
+   },
    "official_sources": [
     {
      "source_id": "L14965",
@@ -615,7 +737,11 @@
    "relevant_provisions": "Lei 14.965/2024, art. 1º, § 2º: aplicação subsidiária \"aos concursos públicos previstos ... no art. 132\".",
    "legal_analysis": "O caput do art. 132 exige concurso público de provas e títulos para os Procuradores dos Estados e do DF, e a lei o alcança de forma expressa e subsidiária. O target é ART.132, a unidade de apresentação do caput.",
    "notes": "SUBSIDIARIA; NON_EXCLUSIVE (leis orgânicas estaduais).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "APPROVED_WITH_TEMPORAL_NOTE",
+    "note": "VACATIO_LEGIS até 2028-01-01; não tratar como vigente."
+   }
   },
   {
    "candidate_id": "CORRC0-0232EB5B26DB",
@@ -630,11 +756,14 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "ORGANIZA_INSTITUIÇÃO",
+   "relation_type_final_initial": "ORGANIZA_INSTITUIÇÃO",
    "target_final": "CF88:ART.134:PAR.1",
+   "target_final_initial": "CF88:ART.134:PAR.1",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC80",
@@ -648,7 +777,10 @@
    "relevant_provisions": "Ementa: \"Organiza a Defensoria Pública da União, do Distrito Federal e dos Territórios e prescreve normas gerais para sua organização nos Estados\".",
    "legal_analysis": "A ementa reproduz o comando do § 1º. É a lei orgânica da instituição. A natureza muda de REGULAMENTA para ORGANIZA_INSTITUIÇÃO.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-4EEAA9F57A2A",
@@ -663,13 +795,16 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
    "scope_flags": [
     "HISTORICA_ALTERADORA_DE_LEI_REVOGADA"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC83",
@@ -691,7 +826,10 @@
    "relevant_provisions": "LC 83/1995, ementa: \"Altera dispositivo da Lei Complementar nº 69, de 23 de julho de 1991\". A página oficial da LC 69/1991 indica \"Revogada pela Lei Complementar nº 97, de 1999\".",
    "legal_analysis": "É alteração de uma lei complementar revogada: ato histórico, sem utilidade como correlata vigente. A correlata atual do § 1º é a LC 97/1999, aprovada neste lote.",
    "notes": "HISTORICA_ALTERADORA_DE_LEI_REVOGADA.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-7A1757A796C5",
@@ -707,11 +845,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.142:PAR.1",
+   "target_final_initial": "CF88:ART.142:PAR.1",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC97",
@@ -725,7 +866,10 @@
    "relevant_provisions": "Ementa: \"Dispõe sobre as normas gerais para a organização, o preparo e o emprego das Forças Armadas\".",
    "legal_analysis": "A ementa reproduz exatamente o comando do § 1º. É a lei complementar exigida.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-4A61114D26A5",
@@ -741,13 +885,16 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
    "scope_flags": [
     "NEW_CANDIDATE_BACKLOG"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC97",
@@ -769,7 +916,10 @@
    "relevant_provisions": "LC 97/1999: normas gerais de organização, preparo e emprego das Forças Armadas. Lei 6.880/1980, art. 1º: \"O presente Estatuto regula a situação, obrigações, deveres, direitos e prerrogativas\" dos militares.",
    "legal_analysis": "O § 3º trata do estatuto pessoal dos militares, além das disposições \"que vierem a ser fixadas em lei\". Essa matéria é do Estatuto dos Militares, não da LC 97. A ligação com a LC 97 é só temática: é fan-out do § 1º para o § 3º.",
    "notes": "NEW_CANDIDATE_BACKLOG: Lei 6.880/1980 × art. 142, § 3º.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-B603B2579A60",
@@ -785,11 +935,14 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.144:PAR.8",
+   "target_final_initial": "CF88:ART.144:PAR.8",
    "route": "art. 1º",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "L13022",
@@ -803,7 +956,10 @@
    "relevant_provisions": "Art. 1º: \"Esta Lei institui normas gerais para as guardas municipais, disciplinando o § 8º do art. 144\".",
    "legal_analysis": "Regulamentação expressa do § 8º. A natureza muda de COMPLEMENTA para REGULAMENTA.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-E6E419F28886",
@@ -818,13 +974,16 @@
    "legal_decision": "REJECT",
    "confidence": "MEDIA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
    "scope_flags": [
     "NEW_CANDIDATE_BACKLOG"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC214",
@@ -846,7 +1005,10 @@
    "relevant_provisions": "Ementa: \"Institui o IBS, a CBS e o Imposto Seletivo; cria o Comitê Gestor do IBS e altera a legislação tributária\".",
    "legal_analysis": "O inciso III reserva à lei complementar as normas gerais em matéria tributária. A LC 214 institui tributos específicos (arts. 156-A, 195, V, e 153, VIII), não é a lei geral do inciso. Ela só toca as alíneas c e d reflexamente. O vínculo útil está nos dispositivos dos novos tributos.",
    "notes": "NEW_CANDIDATE_BACKLOG: LC 214/2025 × art. 156-A e art. 195, V (dispositivos instituidores).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-8CF6938B096C",
@@ -862,7 +1024,9 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.146:INC.III:AL.b",
+   "target_final_initial": "CF88:ART.146:INC.III:AL.b",
    "route": "art. 1º",
    "device_route_status": "DEVICE_RESOLVABLE_NOW",
    "ingestion_status": "NOT_REQUIRED",
@@ -870,6 +1034,7 @@
     "ESCOPO_PARCIAL",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC199",
@@ -883,7 +1048,10 @@
    "relevant_provisions": "Art. 1º: institui o Estatuto Nacional de Simplificação de Obrigações Tributárias Acessórias \"em observância ao disposto na alínea b do inciso III do caput do art. 146\".",
    "legal_analysis": "Remissão expressa à alínea b. A LC 199 é uma lei complementar de normas gerais sobre obrigação tributária (acessória). O escopo é parcial: não cobre lançamento, crédito, prescrição nem decadência, que estão no CTN.",
    "notes": "ESCOPO_PARCIAL; NON_EXCLUSIVE (CTN). O vínculo atual LC 199 × ART.146, no nível do artigo, deve ser reavaliado em C2 como retarget para esta alínea.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-781D2FD631FD",
@@ -899,11 +1067,14 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.146:PAR.1",
+   "target_final_initial": "CF88:ART.146:PAR.1",
    "route": "art. 12",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
    "scope_flags": [],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC123",
@@ -917,7 +1088,10 @@
    "relevant_provisions": "LC 123/2006, art. 12: \"Fica instituído o Regime Especial Unificado de Arrecadação de Tributos e Contribuições devidos pelas Microempresas e Empresas de Pequeno Porte - Simples Nacional\". O art. 1º, IV remete ao cadastro do \"inciso IV do § 1º do art. 146\".",
    "legal_analysis": "O § 1º prevê o regime único de arrecadação por lei complementar, e o Simples Nacional da LC 123 é esse regime.",
    "notes": null,
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-2C927C32607D",
@@ -932,7 +1106,9 @@
    "legal_decision": "APPROVE",
    "confidence": "MEDIA",
    "relation_type_final": "COMPLEMENTA",
+   "relation_type_final_initial": "COMPLEMENTA",
    "target_final": "CF88:ART.146:PAR.1",
+   "target_final_initial": "CF88:ART.146:PAR.1",
    "route": "art. 41",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
@@ -940,6 +1116,7 @@
     "ESCOPO_PARCIAL",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC214",
@@ -961,7 +1138,10 @@
    "relevant_provisions": "LC 214/2025, art. 41, §§ 1º a 3º: os optantes pelo Simples Nacional ficam sujeitos às regras desse regime e podem optar por apurar e recolher IBS e CBS pelo regime regular.",
    "legal_analysis": "O § 1º, após a EC 132, admite o IBS e a CBS no regime único. A LC 214 também alterou a LC 123 (essas alterações estão incorporadas lá), mas o art. 41 tem conteúdo autônomo vigente sobre a convivência Simples × IBS/CBS que não está representado na LC 123. Pela exceção da política de leis alteradoras, aprovo como COMPLEMENTA.",
    "notes": "ESCOPO_PARCIAL; NON_EXCLUSIVE (LC 123 é a principal).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-83C4D0DE51F8",
@@ -976,13 +1156,16 @@
    "legal_decision": "REJECT",
    "confidence": "MEDIA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
    "scope_flags": [
     "NEW_CANDIDATE_BACKLOG"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC214",
@@ -996,7 +1179,10 @@
    "relevant_provisions": "LC 214/2025, art. 454: a partir de 2027, as alíquotas do IPI ficam reduzidas a zero para certos produtos não industrializados na Zona Franca de Manaus.",
    "legal_analysis": "O § 3º fixa as características constitucionais do IPI (seletividade, não cumulatividade, imunidade na exportação etc.). O art. 454 é regra de transição ligada à Zona Franca (reforma tributária), não disciplina esses atributos. A relação com o § 3º é temática.",
    "notes": "NEW_CANDIDATE_BACKLOG: LC 214/2025, art. 454 × ADCT, regras de transição da Zona Franca (EC 132/2023).",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-4A80B12218AA",
@@ -1011,11 +1197,16 @@
    "legal_decision": "ADJUST",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
-   "target_final": "CF88:ART.153:INC.VIII",
+   "relation_type_final_initial": "REGULAMENTA",
+   "target_final": "CF88:ART.153:PAR.6",
+   "target_final_initial": "CF88:ART.153:INC.VIII",
    "route": "art. 409",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
-   "scope_flags": [],
+   "scope_flags": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC214",
@@ -1029,7 +1220,11 @@
    "relevant_provisions": "LC 214/2025, art. 409: \"Fica instituído o Imposto Seletivo, de que trata o inciso VIII do art. 153...\"; o Livro II disciplina o imposto, inclusive a incidência única.",
    "legal_analysis": "A remissão expressa da LC 214 é ao inciso VIII, que cria a competência. O § 6º só lista características do imposto. Pela regra do target mais específico sustentado pela fonte, o vínculo vai para o inciso VIII; a relação com o § 6º é reflexa. O ajuste é de target.",
    "notes": "O § 6º deixa de ser target deste candidato; um vínculo próprio no § 6º exigiria fundamento individual.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CORRECTED",
+    "note": "o retarget exclusivo para o inciso VIII foi desfeito. A LC 214/2025 tem relação própria com o § 6º: disciplina o regime do Imposto Seletivo que concretiza as características constitucionais do parágrafo (fato gerador e incidência, art. 412; não incidência sobre energia elétrica e telecomunicações, art. 413, II; base de cálculo, art. 414). O inciso VIII vira backlog próprio (HIGH)."
+   }
   },
   {
    "candidate_id": "CORRC0-A97DCCBA85CF",
@@ -1044,7 +1239,9 @@
    "legal_decision": "APPROVE",
    "confidence": "ALTA",
    "relation_type_final": "REGULAMENTA",
+   "relation_type_final_initial": "REGULAMENTA",
    "target_final": "CF88:ART.155:PAR.1",
+   "target_final_initial": "CF88:ART.155:PAR.1",
    "route": "art. 146",
    "device_route_status": "INGESTION_REQUIRED",
    "ingestion_status": "INGESTION_REQUIRED",
@@ -1052,6 +1249,7 @@
     "NEW_CANDIDATE_BACKLOG",
     "NON_EXCLUSIVE"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC227",
@@ -1065,7 +1263,10 @@
    "relevant_provisions": "LC 227/2026: a ementa \"institui normas gerais relativas ao ITCMD\". O Livro II (art. 146: \"de que trata o inciso I do caput do art. 155\") regula competência, base e regras de domicílio, e o art. 158 trata dos casos com elemento no exterior.",
    "legal_analysis": "O § 1º disciplina o imposto do inciso I (ITCMD): competência por situação do bem e domicílio, progressividade e demais regras. A LC 227 é a lei complementar de normas gerais que concretiza esses comandos.",
    "notes": "NON_EXCLUSIVE. NEW_CANDIDATE_BACKLOG: LC 227/2026 (art. 158) × art. 155, § 1º, III, alvo que ficou sem correlata após a remoção da LC 87 na C1A.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-E1EE9B658B50",
@@ -1080,7 +1281,9 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
@@ -1088,6 +1291,7 @@
     "ALTERADORA_INCORPORADA",
     "FAN_OUT_LEGADO"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC102",
@@ -1101,7 +1305,10 @@
    "relevant_provisions": "Ementa: \"Altera dispositivos da Lei Complementar nº 87, de 13 de setembro de 1996\", que é a lei do ICMS.",
    "legal_analysis": "O § 1º, III é ITCMD. A LC 102 é alteradora da lei do ICMS. Não há relação com o target e o conteúdo está incorporado à LC 87.",
    "notes": "ALTERADORA_INCORPORADA; FAN_OUT_LEGADO.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   },
   {
    "candidate_id": "CORRC0-ED873A7A92E9",
@@ -1116,7 +1323,9 @@
    "legal_decision": "REJECT",
    "confidence": "ALTA",
    "relation_type_final": null,
+   "relation_type_final_initial": null,
    "target_final": null,
+   "target_final_initial": null,
    "route": null,
    "device_route_status": null,
    "ingestion_status": null,
@@ -1124,6 +1333,7 @@
     "ALTERADORA_INCORPORADA",
     "FAN_OUT_LEGADO"
    ],
+   "temporal": null,
    "official_sources": [
     {
      "source_id": "LC99",
@@ -1137,7 +1347,10 @@
    "relevant_provisions": "Ementa: \"Dá nova redação ao inciso I do art. 33 da Lei Complementar nº 87, de 13 de setembro de 1996\" (ICMS).",
    "legal_analysis": "Alteradora pontual da lei do ICMS, sem relação com o ITCMD do § 1º, III.",
    "notes": "ALTERADORA_INCORPORADA; FAN_OUT_LEGADO.",
-   "applied": false
+   "applied": false,
+   "independent_review": {
+    "verdict": "CONFIRMED"
+   }
   }
  ],
  "NEW_CANDIDATE_BACKLOG": [
@@ -1146,6 +1359,7 @@
    "norm_key": "LEI:6880/1980",
    "target_id": "CF88:ART.142:PAR.3",
    "origin": "CORRC0-4A61114D26A5",
+   "suggested_priority": "MEDIUM",
    "status": "BACKLOG_NOT_DECIDED"
   },
   {
@@ -1153,6 +1367,7 @@
    "norm_key": "LC:214/2025",
    "target_id": "CF88:ART.156-A",
    "origin": "CORRC0-E6E419F28886",
+   "suggested_priority": "MEDIUM",
    "status": "BACKLOG_NOT_DECIDED"
   },
   {
@@ -1160,6 +1375,7 @@
    "norm_key": "LC:214/2025",
    "target_id": "CF88:ART.195:INC.V",
    "origin": "CORRC0-E6E419F28886",
+   "suggested_priority": "HIGH",
    "status": "BACKLOG_NOT_DECIDED"
   },
   {
@@ -1167,6 +1383,7 @@
    "norm_key": "LC:214/2025",
    "target_id": "ADCT (transição Zona Franca, EC 132/2023)",
    "origin": "CORRC0-83C4D0DE51F8",
+   "suggested_priority": "LOW",
    "status": "BACKLOG_NOT_DECIDED"
   },
   {
@@ -1174,6 +1391,8 @@
    "norm_key": "LC:227/2026",
    "target_id": "CF88:ART.155:PAR.1:INC.III",
    "origin": "CORRC0-A97DCCBA85CF",
+   "suggested_priority": "HIGH",
+   "reason": "o inciso III manda lei complementar regular a competência do ITCMD com elemento no exterior; a LC 227/2026 (art. 158) disciplina essa sujeição ativa (prioridade elevada na revisão independente do Batch02)",
    "status": "BACKLOG_NOT_DECIDED"
   },
   {
@@ -1181,6 +1400,17 @@
    "norm_key": "LEI:11417/2006",
    "target_id": "CF88:ART.103-A",
    "origin": "CORRC0-420E49E80EF9",
+   "suggested_priority": "MEDIUM",
+   "status": "BACKLOG_NOT_DECIDED"
+  },
+  {
+   "norm": "Lei Complementar nº 214/2025 (art. 409)",
+   "norm_key": "LC:214/2025",
+   "target_id": "CF88:ART.153:INC.VIII",
+   "origin": "CORRC0-4A80B12218AA",
+   "suggested_priority": "HIGH",
+   "added_by": "BATCH02_INDEPENDENT_REVIEW",
+   "reason": "a LC 214 institui expressamente o Imposto Seletivo do inciso VIII (art. 409); vínculo próprio, sem reutilizar o candidate_id do § 6º",
    "status": "BACKLOG_NOT_DECIDED"
   }
  ]

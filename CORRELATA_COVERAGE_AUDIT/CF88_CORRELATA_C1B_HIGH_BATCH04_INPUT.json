@@ -1,0 +1,735 @@
+{
+ "schema_version": 1,
+ "mission": "CF88_CORRELATA_C1B_HIGH_REVIEW_BATCH04",
+ "baseline": {
+  "branch": "cf-correlata-coverage-audit",
+  "head": "825f4ad6fed7d476c4dc71405451e848e441c798"
+ },
+ "applied": false,
+ "verified_on": "2026-10-11",
+ "artifact": "CF88_CORRELATA_C1B_HIGH_BATCH04_INPUT",
+ "selection": {
+  "source": "CORRELATA_COVERAGE_AUDIT/CF88_CORRELATA_REVIEW_QUEUE.json :: HIGH (fila original)",
+  "rule": "HIGH original - Batch01 - Batch02 - Batch03 - C1A - duplicatas; TODOS os restantes",
+  "eligible_pool_before": 17,
+  "taken": 17,
+  "candidate_ids": [
+   "CORRC0-A88AB3189E73",
+   "CORRC0-C4B7D896EEC4",
+   "CORRC0-2053DEF59022",
+   "CORRC0-67B5D9C94E07",
+   "CORRC0-362157C332DE",
+   "CORRC0-C8087244A9DB",
+   "CORRC0-8D80396BDEEB",
+   "CORRC0-A2C12E99BECD",
+   "CORRC0-E86B55D28D44",
+   "CORRC0-E0C9C2F5CDBD",
+   "CORRC0-FC57ED913387",
+   "CORRC0-7F28FCF12C37",
+   "CORRC0-D2D0CD6A150D",
+   "CORRC0-5C8AFC368627",
+   "CORRC0-7867B93D94DA",
+   "CORRC0-F2C3596A37CB",
+   "CORRC0-A28C8B1C8F51"
+  ],
+  "remaining_after": []
+ },
+ "candidates": [
+  {
+   "candidate_id": "CORRC0-A88AB3189E73",
+   "target_id": "CF88:ART.195:PAR.8",
+   "display_target": "CF art. 195, § 8",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0152",
+     "evidence": "Legislação anterior: Decreto nº 83.081, de 24/01/1979 e alterações Legislação ordinária: Lei nº 8.212, de 24/07/1991, art. 55 Lei nº 8.213, de 24/07/1991"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:CUSTEIO1991:art.10:BODY",
+     "evidence": "A Seguridade Social será financiada por toda sociedade, de forma direta e indireta, nos termos do art. 195 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-C4B7D896EEC4",
+   "target_id": "CF88:ART.198:PAR.3",
+   "display_target": "CF art. 198, § 3",
+   "norm_key": "LC:141/2012",
+   "norm_name": "Lei Complementar nº 141/2012",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D6_4_P1_CONSOLIDADAS",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D6_4_P1_CONSOLIDADAS:0004",
+     "evidence": "Legislação Complementar: Lei Complementar nº 141, de 13/01/2012"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-2053DEF59022",
+   "target_id": "CF88:ART.201:PAR.1",
+   "display_target": "CF art. 201, § 1",
+   "norm_key": "LC:142/2013",
+   "norm_name": "Lei Complementar nº 142/2013",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D6_4_P1_CONSOLIDADAS",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D6_4_P1_CONSOLIDADAS:0005",
+     "evidence": "3.807, de 26/08/1960 Decreto nº 89.312, de 23/01/1984 (art. 35) Legislação Complementar: Lei Complementar nº 142, de 08/05/2013"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-67B5D9C94E07",
+   "target_id": "CF88:ART.201:PAR.4",
+   "display_target": "CF art. 201, § 4",
+   "norm_key": "LEI:8213/1991",
+   "norm_name": "Lei 8.213/1991 - Planos de Benefícios da Previdência Social",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=NAO_CAMARA",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0159",
+     "evidence": "Legislação ordinária: Lei nº 8.213, de 24/07/1991 (art. 41-A) Lei nº 8212, de 24/07/2991"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0157",
+     "evidence": "- para fins de elegibilidade às aposentadorias especiais referidas no § 4º do art. 40 e no § 1º do art. 201 da Constituição Federal , os períodos reconhecidos pelo regime previdenciário de origem como de tempo especial, sem convers"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-362157C332DE",
+   "target_id": "CF88:ART.202:PAR.1",
+   "display_target": "CF art. 202, § 1",
+   "norm_key": "LC:109/2001",
+   "norm_name": "Lei Complementar nº 109/2001",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "DEVICE_RESOLVABLE_NOW",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D8_P2_A",
+    "LEGADO_2D8_P2_B",
+    "REVERSE_ART1_COMPLEMENTA",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "secao_camara=ORDINARIA",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LC109_2001:art.1:ART1",
+     "evidence": "O regime de previdência privada, de caráter complementar e organizado de forma autônoma em relação ao regime geral de previdência social, é facultativo, baseado na constituição de reservas que garantam o benefício, nos termos do caput do art. 202 da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_A:0011",
+     "evidence": "Legislação ordinária: Lei Complementar nº 109, de 29/05/2001"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0033",
+     "evidence": "Legislação anterior: Decreto nº 89.312, de 23/01/1984, (CLPS) Legislação Complementar: Lei Complementar nº 109, de 29/05/2001 Legislação ordinária: Lei nº 8.213, de 24/07/1991"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-C8087244A9DB",
+   "target_id": "CF88:ART.227:PAR.3",
+   "display_target": "CF art. 227, § 3",
+   "norm_key": "LEI:8069/1990",
+   "norm_name": "Lei 8.069/1990 - Estatuto da Criança e do Adolescente",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_INCIDENTAL",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=COMPLEMENTAR",
+    "secao_camara=NAO_CAMARA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0175",
+     "evidence": "Legislação Complementar: Lei nº 8.069, de 13/07/1990"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0172",
+     "evidence": "servando-se o princípio da prioridade absoluta à criança e ao adolescente preconizado pelo caput do art. 227 da Constituição Federal e pelo caput e parágrafo único do art. 4º desta Lei. (Parágrafo acrescido pela Lei nº 12.010, de 3/"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:ECA1990:art.90:BODY",
+     "evidence": "igo serão previstos nas dotações orçamentárias dos órgãos públicos encarregados das áreas de Educação, Saúde e Assistência Social, dentre outros, observando-se o princípio da prioridade absoluta à criança e ao adolescente preconizado pelo caput do art. 227 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-8D80396BDEEB",
+   "target_id": "CF88:ART.227:PAR.4",
+   "display_target": "CF art. 227, § 4",
+   "norm_key": "LEI:8069/1990",
+   "norm_name": "Lei 8.069/1990 - Estatuto da Criança e do Adolescente",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_INCIDENTAL",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=NAO_CAMARA",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0173",
+     "evidence": "slação anterior: Decreto-Lei nº 2.848, de 07/12/1940 (Código Penal) Legislação ordinária: Lei nº 8.069, de 13/07/1990"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0172",
+     "evidence": "servando-se o princípio da prioridade absoluta à criança e ao adolescente preconizado pelo caput do art. 227 da Constituição Federal e pelo caput e parágrafo único do art. 4º desta Lei. (Parágrafo acrescido pela Lei nº 12.010, de 3/"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:ECA1990:art.90:BODY",
+     "evidence": "igo serão previstos nas dotações orçamentárias dos órgãos públicos encarregados das áreas de Educação, Saúde e Assistência Social, dentre outros, observando-se o princípio da prioridade absoluta à criança e ao adolescente preconizado pelo caput do art. 227 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-A2C12E99BECD",
+   "target_id": "CF88:ART.227:PAR.5",
+   "display_target": "CF art. 227, § 5",
+   "norm_key": "LEI:8069/1990",
+   "norm_name": "Lei 8.069/1990 - Estatuto da Criança e do Adolescente",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_INCIDENTAL",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=NAO_CAMARA",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0174",
+     "evidence": "Legislação anterior: Lei nº 3.071, de 01/01/1916 (CC) Legislação ordinária: Lei nº 8.069, de 13/07/1990"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0172",
+     "evidence": "servando-se o princípio da prioridade absoluta à criança e ao adolescente preconizado pelo caput do art. 227 da Constituição Federal e pelo caput e parágrafo único do art. 4º desta Lei. (Parágrafo acrescido pela Lei nº 12.010, de 3/"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:ECA1990:art.90:BODY",
+     "evidence": "igo serão previstos nas dotações orçamentárias dos órgãos públicos encarregados das áreas de Educação, Saúde e Assistência Social, dentre outros, observando-se o princípio da prioridade absoluta à criança e ao adolescente preconizado pelo caput do art. 227 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-E86B55D28D44",
+   "target_id": "CF88:ART.231:PAR.1",
+   "display_target": "CF art. 231, § 1",
+   "norm_key": "LEI:14701/2023",
+   "norm_name": "Lei nº 14.701/2023",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "NOTA_EDITORIAL_VIDE (anotacao da fonte, nao texto constitucional; nunca vira vinculo automaticamente)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.231/BASE/2:external_layer_notes",
+     "evidence": "O texto oficial remete à Lei nº 14.701/2023 (nota de remissão da compilação oficial); seu conteúdo e os critérios de ocupação tradicional são temas da legislação correlata e da camada JURISPRUD"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.231:PAR.1/BASE/1:external_layer_notes",
+     "evidence": "A exigência ou não de marco temporal de ocupação é tema da camada JURISPRUDÊNCIA e da legislação correlata (remissão oficial à Lei nº 14.701/2023 no caput); EXTERNAL_VERIFICATION_REQUIRED."
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei nº 14.701, de 2023"
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei nº 14.701, de 2023"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-E0C9C2F5CDBD",
+   "target_id": "CF88:ART.231:PAR.3",
+   "display_target": "CF art. 231, § 3",
+   "norm_key": "LEI:14701/2023",
+   "norm_name": "Lei nº 14.701/2023",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_OVERVIEW",
+    "LEGADO_2D4_QUARENTENA",
+    "NOTA_EDITORIAL_VIDE (anotacao da fonte, nao texto constitucional; nunca vira vinculo automaticamente)",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.231/BASE/2:external_layer_notes",
+     "evidence": "O texto oficial remete à Lei nº 14.701/2023 (nota de remissão da compilação oficial); seu conteúdo e os critérios de ocupação tradicional são temas da legislação correlata e da camada JURISPRUD"
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei nº 14.701, de 2023"
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei nº 14.701, de 2023"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0231",
+     "evidence": "rior: Decreto-Lei nº 227, de 28/02/1967 Lei nº 6.001, de 19/12/1973 Legislação ordinária: Lei nº 14.701, de 20/10/2023"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-FC57ED913387",
+   "target_id": "CF88:ART.231:PAR.6",
+   "display_target": "CF art. 231, § 6",
+   "norm_key": "LEI:14701/2023",
+   "norm_name": "Lei nº 14.701/2023",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_OVERVIEW",
+    "LEGADO_2D4_QUARENTENA",
+    "NOTA_EDITORIAL_VIDE (anotacao da fonte, nao texto constitucional; nunca vira vinculo automaticamente)",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.231/BASE/2:external_layer_notes",
+     "evidence": "O texto oficial remete à Lei nº 14.701/2023 (nota de remissão da compilação oficial); seu conteúdo e os critérios de ocupação tradicional são temas da legislação correlata e da camada JURISPRUD"
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei nº 14.701, de 2023"
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei nº 14.701, de 2023"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0232",
+     "evidence": "Legislação anterior: Lei nº 6.001, de 19/12/1973, art. 62 Legislação ordinária: Lei nº 14.701, de 20/10/2023"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-7F28FCF12C37",
+   "target_id": "CF88:ART.239",
+   "display_target": "CF art. 239",
+   "norm_key": "LC:7/1970",
+   "norm_name": "Lei Complementar nº 7/1970",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "A",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_REMISSAO_NOMINAL"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S2_REMISSAO_NOMINAL",
+     "source": "RUNTIME_TEXT",
+     "evidence": "Art. 239. A arrecadação decorrente das contribuições para o Programa de Integração Social, criado pela Lei Complementar nº 7, de 7 de setembro de 1970, e para o Programa de Formação do Patrimônio do Servidor Público, criado pela Lei Complementar nº 8, de 3 de…"
+    },
+    {
+     "family": "S2_REMISSAO_NOMINAL",
+     "source": "RUNTIME_TEXT",
+     "evidence": "Art. 239. A arrecadação decorrente das contribuições para o Programa de Integração Social, criado pela Lei Complementar nº 7, de 7 de setembro de 1970, e para o Programa de Formação do Patrimônio do Servidor Público, criado pela Lei Complementar nº 8, de 3 de…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-D2D0CD6A150D",
+   "target_id": "CF88:ART.239",
+   "display_target": "CF art. 239",
+   "norm_key": "LC:8/1970",
+   "norm_name": "Lei Complementar nº 8/1970",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "A",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_REMISSAO_NOMINAL"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S2_REMISSAO_NOMINAL",
+     "source": "RUNTIME_TEXT",
+     "evidence": ", criado pela Lei Complementar nº 7, de 7 de setembro de 1970, e para o Programa de Formação do Patrimônio do Servidor Público, criado pela Lei Complementar nº 8, de 3 de dezembro de 1970, passa, a partir da promulgação desta Constituição, a financiar, nos te…"
+    },
+    {
+     "family": "S2_REMISSAO_NOMINAL",
+     "source": "RUNTIME_TEXT",
+     "evidence": ", criado pela Lei Complementar nº 7, de 7 de setembro de 1970, e para o Programa de Formação do Patrimônio do Servidor Público, criado pela Lei Complementar nº 8, de 3 de dezembro de 1970, passa, a partir da promulgação desta Constituição, a financiar, nos te…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-5C8AFC368627",
+   "target_id": "CF88:ART.239:PAR.3",
+   "display_target": "CF art. 239, § 3",
+   "norm_key": "LEI:7998/1990",
+   "norm_name": "Lei nº 7.998/1990",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "DEVICE_RESOLVABLE_NOW",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_QUARENTENA",
+    "REVERSE_ART1_REGULAMENTA",
+    "REVERSE_BODY_COMPLEMENTA",
+    "REVERSE_BODY_INCIDENTAL",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.1:ART1",
+     "evidence": "Esta Lei regula o Programa do Seguro-Desemprego e o abono de que tratam o inciso II do art. 7º, o inciso IV do art. 201 e o art. 239, da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0241",
+     "evidence": "Legislação ordinária: Lei nº 7.998, de 11/01/1990 Lei nº 10.147, de 21/12/2000 Lei nº 9.715, de 25/11/1998"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.28:BODY",
+     "evidence": "No prazo de 30 (trinta) dias, as contribuições ao PIS e ao PASEP, arrecadadas a partir de 5 de outubro de 1988 e não utilizadas nas finalidades previstas no art. 239 da Constituição Federal"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.19:BODY",
+     "evidence": "XI - propor alteração das alíquotas referentes às contribuições a que alude o art. 239 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-7867B93D94DA",
+   "target_id": "CF88:ART.239:PAR.4",
+   "display_target": "CF art. 239, § 4",
+   "norm_key": "LEI:7998/1990",
+   "norm_name": "Lei nº 7.998/1990",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "DEVICE_RESOLVABLE_NOW",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_QUARENTENA",
+    "REVERSE_ART1_REGULAMENTA",
+    "REVERSE_BODY_COMPLEMENTA",
+    "REVERSE_BODY_INCIDENTAL",
+    "REVERSE_BODY_REGULAMENTA",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.1:ART1",
+     "evidence": "Esta Lei regula o Programa do Seguro-Desemprego e o abono de que tratam o inciso II do art. 7º, o inciso IV do art. 201 e o art. 239, da Constituição Federal"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0242",
+     "evidence": "Legislação anterior: Decreto-Lei nº 2.284, de 10/03/1986 Legislação ordinária: Lei nº 7.998, de 11/01/1990"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.11:BODY",
+     "evidence": "IV - o produto da arrecadação da contribuição adicional pelo índice de rotatividade, de que trata o § 4º do art. 239 da Constituição Federal"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.28:BODY",
+     "evidence": "No prazo de 30 (trinta) dias, as contribuições ao PIS e ao PASEP, arrecadadas a partir de 5 de outubro de 1988 e não utilizadas nas finalidades previstas no art. 239 da Constituição Federal"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.30:BODY",
+     "evidence": "O Poder Executivo regulamentará esta Lei no prazo de 90 (noventa) dias e apresentará projeto lei regulamentando a contribuição adicional pelo índice de rotatividade, de que trata o § 4º do art. 239 da Constituição Federal"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:EXT_LEI7998_1990:art.19:BODY",
+     "evidence": "XI - propor alteração das alíquotas referentes às contribuições a que alude o art. 239 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-F2C3596A37CB",
+   "target_id": "ADCT:ART.10:INC.II",
+   "display_target": "ADCT art. 10, II",
+   "norm_key": "LC:146/2014",
+   "norm_name": "Lei Complementar nº 146/2014",
+   "namespace": "ADCT",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": false,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/ADCT:ART.10:INC.II/BASE/2:external_layer_notes",
+     "evidence": "O próprio texto remete à Lei Complementar nº 146/2014 para hipótese relacionada à alínea b; o conteúdo dessa lei e as consequências da dispensa no período de estabilidade pertencem à legislação trabalhis"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-A28C8B1C8F51",
+   "target_id": "ADCT:ART.128:PAR.2",
+   "display_target": "ADCT art. 128, § 2",
+   "norm_key": "LC:160/2017",
+   "norm_name": "Lei Complementar nº 160/2017",
+   "namespace": "ADCT",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_REMISSAO_NOMINAL",
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ADCT_OU_CONTEXTO_TRANSITORIO_HISTORICO (vigencia/funcao a confirmar)",
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": false,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/ADCT:ART.128/BASE/1:content",
+     "evidence": "ncentivos desses impostos não alcançados por essa redução diminuem na mesma proporção (§ 1º). O § 2º aplica essa redução aos benefícios do art. 3º da Lei Complementar nº 160, de 2017, sem a redução do § 2º-A desse artigo. O § 3º mantém, até 31 de dezembro de …"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/ADCT:ART.128/BASE/1:content",
+     "evidence": "líquota cobrada passa a ser 9/10 disso, isto é, 18% (valores ilustrativos). O artigo produz efeitos a partir de 2029, data fixada no próprio texto. A Lei Complementar nº 160, de 2017, pertence à legislação correlata. Benefício fiscal vantagem tributária conce…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/ADCT:ART.128/BASE/1:external_layer_notes",
+     "evidence": "Lei Complementar nº 160, de 2017: legislação correlata, ainda não ingerida."
+    },
+    {
+     "family": "S2_REMISSAO_NOMINAL",
+     "source": "RUNTIME_TEXT",
+     "evidence": "§ 2º Os benefícios e incentivos fiscais ou financeiros referidos no art. 3º da Lei Complementar nº 160, de 7 de agosto de 2017 , serão reduzidos na forma deste artigo, não se aplicando a redução prevista no § 2º-A do art. 3º da referida Lei Complementar."
+    }
+   ]
+  }
+ ]
+}

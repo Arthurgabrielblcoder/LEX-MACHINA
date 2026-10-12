@@ -1,0 +1,1570 @@
+{
+ "schema_version": 1,
+ "mission": "CF88_CORRELATA_C1B_HIGH_REVIEW_BATCH03",
+ "baseline": {
+  "branch": "cf-correlata-coverage-audit",
+  "head": "825f4ad6fed7d476c4dc71405451e848e441c798"
+ },
+ "applied": false,
+ "verified_on": "2026-10-11",
+ "artifact": "CF88_CORRELATA_C1B_HIGH_BATCH03_DECISIONS",
+ "decision_values": [
+  "APPROVE",
+  "ADJUST",
+  "REJECT",
+  "HOLD",
+  "NEEDS_SOURCE"
+ ],
+ "relation_types": [
+  "REGULAMENTA",
+  "COMPLEMENTA",
+  "IMPLEMENTA",
+  "PROCEDIMENTO",
+  "CONDIÇÃO_OU_EXCEÇÃO",
+  "ORGANIZA_INSTITUIÇÃO",
+  "EXECUTA_POLÍTICA_CONSTITUCIONAL"
+ ],
+ "temporal_values": [
+  "IN_FORCE",
+  "VACATIO_LEGIS",
+  "PARTIAL_EFFECTS",
+  "TRANSITIONAL",
+  "REVOKED",
+  "UNCERTAIN"
+ ],
+ "scope_values": [
+  "ESCOPO_FEDERAL",
+  "ESCOPO_FEDERAL_EXECUTIVE",
+  "ESCOPO_ESTADUAL",
+  "ESCOPO_MUNICIPAL",
+  "ESCOPO_SETORIAL",
+  "ESCOPO_PARCIAL",
+  "NON_EXCLUSIVE",
+  "TRANSITORIA",
+  "SUBSIDIARIA",
+  "ESCOPO_MPU",
+  "ESCOPO_MPDFT"
+ ],
+ "source_policy": "Somente Planalto (fonte oficial); HTML identificado por sha256, nao versionado.",
+ "summary": {
+  "batch_candidates": 30,
+  "high_total": 106,
+  "eligible_pool_before": 47,
+  "high_remaining_after": 17,
+  "decisions": {
+   "APPROVE": 7,
+   "ADJUST": 11,
+   "REJECT": 12,
+   "HOLD": 0,
+   "NEEDS_SOURCE": 0
+  },
+  "accepted": 18,
+  "accepted_device_route": {
+   "MAIN_CORPUS_ROUTE_REQUIRED": 4,
+   "INGESTION_REQUIRED": 13,
+   "DEVICE_RESOLVABLE_NOW": 1
+  },
+  "accepted_temporal": {
+   "IN_FORCE": 12,
+   "PARTIAL_EFFECTS": 6
+  },
+  "temporal_device_block": 0,
+  "engine_overlay_blocked": 0,
+  "relation_type_changed": 9,
+  "target_changed": 2,
+  "cf_vs_adct": {
+   "CF88": {
+    "ADJUST": 11,
+    "APPROVE": 7,
+    "REJECT": 12
+   },
+   "ADCT": {}
+  },
+  "new_candidate_backlog": 4
+ },
+ "decisions": [
+  {
+   "candidate_id": "CORRC0-ED340FAA29A6",
+   "target": "CF88:ART.155:PAR.2",
+   "display_target": "CF art. 155, § 2",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "MEDIA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa da LC 214: institui o IBS, a CBS e o Imposto Seletivo. A redução e a extinção do ICMS estão no próprio ADCT (arts. 128 e 129), não em regras da LC 214 sobre o § 2º do art. 155.",
+   "legal_analysis": "O § 2º fixa o regime constitucional do ICMS (não cumulatividade, seletividade, alíquotas, DIFAL, lei complementar). A LC 214 não disciplina esses atributos. A ligação com o ICMS é de transição e substituição, e a ENTENDA cita os arts. 128 e 129 do ADCT. A relação é temática.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-FB5381D4D3A5",
+   "target": "CF88:ART.155:PAR.2:INC.VII",
+   "display_target": "CF art. 155, § 2, VII",
+   "namespace": "CF88",
+   "norm_key": "LC:190/2022",
+   "norm_name": "Lei Complementar nº 190/2022",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC190",
+     "norm": "Lei Complementar nº 190/2022",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp190.htm",
+     "sha256": "6b1863792fd850cdd6601e6579c97abe344e24a2324ee81551ebaf8ac599543d",
+     "bytes": 26839,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "LC87",
+     "norm": "Lei Complementar nº 87/1996 (ICMS)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp87.htm",
+     "sha256": "47bb22063ba170cd75425fb6a927780f83b8dbef6e047db857d3a113eceac772",
+     "bytes": 270282,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Altera a Lei Complementar nº 87 ... para regulamentar a cobrança do ICMS nas operações e prestações interestaduais destinadas a consumidor final não contribuinte\". Os dispositivos estão incorporados à LC 87 (ex.: art. 4º, § 2º; art. 11, § 7º; art. 12, XVI). O art. 3º trata da produção de efeitos.",
+   "legal_analysis": "É lei alteradora: a disciplina vigente do DIFAL está no texto compilado da LC 87, avaliada neste lote. O conteúdo autônomo que sobra é só a regra de produção de efeitos (art. 3º), já exaurida.",
+   "notes": "ALTERADORA_INCORPORADA.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-BD6BE3620174",
+   "target": "CF88:ART.155:PAR.2:INC.VII",
+   "display_target": "CF art. 155, § 2, VII",
+   "namespace": "CF88",
+   "norm_key": "LC:87/1996",
+   "norm_name": "Lei Complementar nº 87/1996",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.155:PAR.2:INC.VII",
+   "route": "art. 4º, § 2º (e art. 11, § 7º)",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": "2033-01-01",
+    "note": "ICMS em extinção gradual pela EC 132/2023 (ADCT, arts. 128 e 129)"
+   },
+   "device_route_status": "DEVICE_RESOLVABLE_NOW",
+   "device_flags": [
+    "DEVICE_RESOLVABLE_NOW"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC87",
+     "norm": "Lei Complementar nº 87/1996 (ICMS)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp87.htm",
+     "sha256": "47bb22063ba170cd75425fb6a927780f83b8dbef6e047db857d3a113eceac772",
+     "bytes": 270282,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "LC190",
+     "norm": "Lei Complementar nº 190/2022",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp190.htm",
+     "sha256": "6b1863792fd850cdd6601e6579c97abe344e24a2324ee81551ebaf8ac599543d",
+     "bytes": 26839,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 87/1996, na redação da LC 190/2022: fato gerador da saída a consumidor final não contribuinte de outro Estado (art. 12, XVI) e cálculo e sujeição da diferença de alíquotas (art. 4º, § 2º; art. 11, § 7º).",
+   "legal_analysis": "O inciso VII atribui ao Estado de destino a diferença entre alíquotas. A LC 87 é a lei complementar de normas gerais que viabiliza essa cobrança. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-EFBBD4456F98",
+   "target": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "namespace": "CF88",
+   "norm_key": "LC:102/2000",
+   "norm_name": "Lei Complementar nº 102/2000",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC102",
+     "norm": "Lei Complementar nº 102/2000",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp102.htm",
+     "sha256": "9320865d69ec2ed729d9fce32b45a1df9753e5711b7182a42a25542c836f9061",
+     "bytes": 51664,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Altera dispositivos da Lei Complementar nº 87\".",
+   "legal_analysis": "Lei alteradora sem disciplina autônoma vigente: as alterações estão incorporadas à LC 87, a lei-base do inciso XII.",
+   "notes": "ALTERADORA_INCORPORADA.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-0EF4365F1CB4",
+   "target": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "namespace": "CF88",
+   "norm_key": "LC:201/2023",
+   "norm_name": "Lei Complementar nº 201/2023",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC201",
+     "norm": "Lei Complementar nº 201/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp201.htm",
+     "sha256": "ec15b7a30e9d0e396b7516c3c68f3ef472e686c39bab6b39e0490238444255c1",
+     "bytes": 111579,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Dispõe sobre a compensação devida pela União nos termos dos arts. 3º e 14 da Lei Complementar nº 194, de 2022, a dedução das parcelas dos contratos de dívida...\".",
+   "legal_analysis": "O inciso XII lista matérias reservadas à lei complementar do ICMS. A LC 201 trata da compensação financeira federativa por perdas de arrecadação, não dessas matérias. A relação é temática.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-546E42DB4BCA",
+   "target": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "namespace": "CF88",
+   "norm_key": "LC:24/1975",
+   "norm_name": "Lei Complementar nº 24/1975",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.155:PAR.2:INC.XII:AL.g",
+   "route": "arts. 1º e 2º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": "2033-01-01",
+    "note": "ICMS em extinção gradual pela EC 132/2023 (ADCT, arts. 128 e 129)"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC24",
+     "norm": "Lei Complementar nº 24/1975",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp24.htm",
+     "sha256": "2e521bd4a17ed0be0672ee4e5e5920cf6fec40c4336c84e841cfcef2e386e268",
+     "bytes": 22058,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 24/1975: \"Dispõe sobre os convênios para a concessão de isenções do ICM\". O art. 1º diz que isenções são concedidas ou revogadas por convênios; o art. 2º trata do quórum e da forma de celebração.",
+   "legal_analysis": "A LC 24 (recepcionada) é a lei complementar da alínea g: forma como, mediante deliberação dos Estados e do DF, isenções, incentivos e benefícios são concedidos e revogados. O target vai para a alínea g, não para o inciso XII inteiro.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-A5A1F929253C",
+   "target": "CF88:ART.156:PAR.3",
+   "display_target": "CF art. 156, § 3",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "LC116",
+     "norm": "Lei Complementar nº 116/2003 (ISS)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm",
+     "sha256": "24533ca41a83bc95eee469003cad07ef3d9675d3242f0b9be44e41c7047c29ce",
+     "bytes": 104392,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 116/2003: \"Dispõe sobre o Imposto Sobre Serviços de Qualquer Natureza\". A LC 214 institui IBS, CBS e IS.",
+   "legal_analysis": "O § 3º reserva à lei complementar alíquotas, exclusões e benefícios do ISS, matéria da LC 116/2003. A LC 214 não disciplina o ISS. A extinção do ISS está no ADCT. A relação é temática.",
+   "notes": "NEW_CANDIDATE_BACKLOG: LC 116/2003 × art. 156, § 3º.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-D2CF3E042053",
+   "target": "CF88:ART.156-A:PAR.1",
+   "display_target": "CF art. 156-A, § 1",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.156-A:PAR.1",
+   "route": "art. 1º (Livro I)",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 214/2025, Livro I: normas do IBS e da CBS (incidência ampla, não cumulatividade, alíquotas de referência, arts. 14 a 19; regime regular e créditos).",
+   "legal_analysis": "O § 1º fixa os princípios e características do IBS (neutralidade, incidência ampla, não cumulatividade, alíquota única por ente). A LC 214 concretiza esse regime.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-E3C2F652AB8A",
+   "target": "CF88:ART.156-A:PAR.5",
+   "display_target": "CF art. 156-A, § 5",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.156-A:PAR.5",
+   "route": "Livro I (art. 112 e ss. para o inciso VIII)",
+   "scope": [
+    "ESCOPO_PARCIAL",
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "LC227",
+     "norm": "Lei Complementar nº 227/2026",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+     "sha256": "39503f69ea3ce721199b712536fdcee0609f128dbe9c25228ae510baae23b83b",
+     "bytes": 1334008,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 214/2025: regime de compensação e créditos; ressarcimento; destino da operação; bens de capital; regimes aduaneiros e ZPE; devolução personalizada (Título III, arts. 112 e ss.); obrigações acessórias.",
+   "legal_analysis": "O § 5º lista nove matérias de lei complementar. A LC 214 cobre os incisos II a VI, VIII e IX. Os incisos I (distribuição da arrecadação) e VII (processo administrativo) estão na LC 227/2026.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-945D4CF3CD87",
+   "target": "CF88:ART.156-A:PAR.5",
+   "display_target": "CF art. 156-A, § 5",
+   "namespace": "CF88",
+   "norm_key": "LC:227/2026",
+   "norm_name": "Lei Complementar nº 227/2026",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.156-A:PAR.5:INC.VII",
+   "route": "art. 54",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2026-01-13 (publicação; parte dos dispositivos a partir de 2027-01-01)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 227/2026, art. 182"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC227",
+     "norm": "Lei Complementar nº 227/2026",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp227.htm",
+     "sha256": "39503f69ea3ce721199b712536fdcee0609f128dbe9c25228ae510baae23b83b",
+     "bytes": 1334008,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 227/2026, ementa: \"dispõe sobre o processo administrativo tributário do IBS e sobre a distribuição do produto da arrecadação\". Título II, \"Do Processo Administrativo Tributário do IBS\" (art. 54 e ss.).",
+   "legal_analysis": "O vínculo materialmente sustentado é com o inciso VII do § 5º (processo administrativo fiscal do imposto). A distribuição da arrecadação (inciso I) é vínculo distinto e vai para o backlog. Nada de fan-out para o § 5º inteiro.",
+   "notes": "NEW_CANDIDATE_BACKLOG: LC 227/2026 × art. 156-A, § 5º, I.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-6236AB9C2784",
+   "target": "CF88:ART.156-A:PAR.6",
+   "display_target": "CF art. 156-A, § 6",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.156-A:PAR.6",
+   "route": "art. 172 (Título V)",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 214/2025, Título V, \"Dos Regimes Específicos do IBS e da CBS\": combustíveis (art. 172, incidência única), serviços financeiros, imóveis, planos de saúde, cooperativas, hotelaria e turismo, transporte coletivo.",
+   "legal_analysis": "O § 6º manda a lei complementar dispor sobre regimes específicos para os setores que lista, e o Título V da LC 214 é essa disciplina.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-AE4FC77A0E24",
+   "target": "CF88:ART.156-A:PAR.9",
+   "display_target": "CF art. 156-A, § 9",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.156-A:PAR.9",
+   "route": "art. 19",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 214/2025, art. 19: \"Qualquer alteração na legislação federal que reduza ou eleve a arrecadação do IBS ou da CBS: I - deverá ser compensada pela elevação ou redução, pelo Senado Federal, ... das alíquotas de referência...; II - somente entrará em vigor com o início da produção de efeitos do ajuste...\". O art. 18 trata das alíquotas de referência.",
+   "legal_analysis": "O art. 19 reproduz e disciplina o mecanismo do § 9º. A relação é direta.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-E80CB2DF38CE",
+   "target": "CF88:ART.156-A:PAR.13",
+   "display_target": "CF art. 156-A, § 13",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.156-A:PAR.13",
+   "route": "art. 118",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 214/2025, Título III, \"Da Devolução Personalizada do IBS e da CBS (Cashback)\", arts. 112 e ss. O art. 118 fixa os percentuais de devolução, inclusive em energia elétrica e botijão de GLP.",
+   "legal_analysis": "O § 13 torna obrigatória a devolução na energia elétrica e no GLP para a baixa renda e permite à lei complementar definir o cálculo no momento da cobrança. A LC 214 disciplina isso. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-1A40567592C0",
+   "target": "CF88:ART.159:INC.I",
+   "display_target": "CF art. 159, I",
+   "namespace": "CF88",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "MEDIA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "PARTIAL_EFFECTS",
+    "effective_from": "2025-01-16 (publicação; efeitos escalonados no art. 544)",
+    "early_application_possible": null,
+    "revalidate_on": "2027-01-01",
+    "note": "LC 214/2025, art. 544: vigência na publicação, com produção de efeitos escalonada; transição do IBS/CBS até 2033"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC214",
+     "norm": "Lei Complementar nº 214/2025",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+     "sha256": "56324955fe0d7644fda1adc5475f1a06edac77801606fbac03ce9204ebe84e2b",
+     "bytes": 5403613,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 214/2025, art. 409: institui o Imposto Seletivo. Os percentuais de repartição do art. 159, I, estão no próprio texto constitucional.",
+   "legal_analysis": "O inciso I do art. 159 é regra constitucional de repartição. A LC 214 só institui um dos impostos repartidos, sem disciplinar a repartição. O vínculo útil da LC 214 com o IS fica no art. 153, VIII e § 6º.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-EFB85C7CCADA",
+   "target": "CF88:ART.165:PAR.9",
+   "display_target": "CF art. 165, § 9",
+   "namespace": "CF88",
+   "norm_key": "LC:101/2000",
+   "norm_name": "Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "MEDIA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.165:PAR.9",
+   "route": "art. 1º",
+   "scope": [
+    "ESCOPO_PARCIAL",
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC101",
+     "norm": "Lei Complementar nº 101/2000 (LRF)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm",
+     "sha256": "e353e6697c9e7adabfece3f8b4474be459b1c266a72c7b9a2757a0efae2fde7b",
+     "bytes": 254857,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LRF, art. 1º: normas de finanças públicas voltadas para a responsabilidade na gestão fiscal, \"com amparo no Capítulo II do Título VI\". Disciplina gestão fiscal, limites e transparência.",
+   "legal_analysis": "O § 9º reserva à lei complementar (I) exercício financeiro e organização das leis orçamentárias, (II) normas de gestão financeira e patrimonial e (III) execução equitativa. A LRF cobre parte do inciso II e não esgota o parágrafo (Lei 4.320/1964 e LC 210/2024 também atuam). A natureza muda de REGULAMENTA para COMPLEMENTA, com escopo parcial.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-3EAE25BCF28E",
+   "target": "CF88:ART.165:PAR.10",
+   "display_target": "CF art. 165, § 10",
+   "namespace": "CF88",
+   "norm_key": "LEI:14436/2022",
+   "norm_name": "Lei nº 14.436/2022",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "TRANSITIONAL",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": "lei periódica do exercício de 2023; eficácia exaurida"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L14436",
+     "norm": "Lei nº 14.436/2022 (LDO 2023)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14436.htm",
+     "sha256": "4b3f4a68bafe46a417fe2df12a6bb2b17c0bd352850f71178f9f5d23b9d3c07b",
+     "bytes": 685182,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Dispõe sobre as diretrizes para a elaboração e a execução da Lei Orçamentária de 2023\".",
+   "legal_analysis": "Lei de diretrizes de um exercício encerrado, com eficácia exaurida. A nota oficial da ENTENDA se referia ao § 11 (fonte desalinhada), e o dever de executar do § 10 é permanente. Lei periódica não é correlata útil.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-68DD94F14824",
+   "target": "CF88:ART.165:PAR.18",
+   "display_target": "CF art. 165, § 18",
+   "namespace": "CF88",
+   "norm_key": "LC:200/2023",
+   "norm_name": "Lei Complementar nº 200/2023",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.165:PAR.18",
+   "route": "art. 3º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC200",
+     "norm": "Lei Complementar nº 200/2023",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm",
+     "sha256": "62d132404acbf2a483bfe49af137158cf7e9cf4bafafb486f6fb776317f48d32",
+     "bytes": 98589,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Institui regime fiscal sustentável ... com fundamento no art. 6º da Emenda Constitucional nº 126\". O art. 3º fixa os limites individualizados de despesas primárias.",
+   "legal_analysis": "O § 18 exclui despesas com precatórios e RPV do \"limite individualizado ... estabelecido na lei complementar de que trata o art. 6º da EC 126\", que é a LC 200/2023. A relação é de complementação recíproca.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-56E3853E56E6",
+   "target": "CF88:ART.166:PAR.9",
+   "display_target": "CF art. 166, § 9",
+   "namespace": "CF88",
+   "norm_key": "LC:210/2024",
+   "norm_name": "Lei Complementar nº 210/2024",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "MEDIA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.166:PAR.9",
+   "route": "art. 6º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC210",
+     "norm": "Lei Complementar nº 210/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp210.htm",
+     "sha256": "cda0c0c0035f17d6794a82140a62624eea149cb842eb8e0e4c123c797cf52ee8",
+     "bytes": 50633,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 210/2024, ementa: proposição e execução de emendas parlamentares na LOA. Capítulo IV, \"Das Emendas Individuais\" (arts. 6º e 7º).",
+   "legal_analysis": "O § 9º fixa o limite constitucional das emendas individuais (2% da RCL, metade para a saúde). A LC 210 disciplina proposição e execução, sem criar o limite. A natureza muda de REGULAMENTA para COMPLEMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-FEF94155C26B",
+   "target": "CF88:ART.166:PAR.11",
+   "display_target": "CF art. 166, § 11",
+   "namespace": "CF88",
+   "norm_key": "LC:210/2024",
+   "norm_name": "Lei Complementar nº 210/2024",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.166:PAR.11",
+   "route": "art. 10",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC210",
+     "norm": "Lei Complementar nº 210/2024",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp210.htm",
+     "sha256": "cda0c0c0035f17d6794a82140a62624eea149cb842eb8e0e4c123c797cf52ee8",
+     "bytes": 50633,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LC 210/2024, Capítulo V, art. 10: \"São consideradas hipóteses de impedimentos de ordem técnica para execução de emendas parlamentares, exclusivamente...\".",
+   "legal_analysis": "O § 11 torna obrigatória a execução das emendas individuais \"conforme os critérios para a execução equitativa da programação definidos na lei complementar\". A LC 210 disciplina execução e impedimentos.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-40EDEC92644D",
+   "target": "CF88:ART.166:PAR.11",
+   "display_target": "CF art. 166, § 11",
+   "namespace": "CF88",
+   "norm_key": "LEI:14436/2022",
+   "norm_name": "Lei nº 14.436/2022",
+   "c0_signals": [
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "TRANSITIONAL",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": "lei periódica do exercício de 2023; eficácia exaurida"
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L14436",
+     "norm": "Lei nº 14.436/2022 (LDO 2023)",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14436.htm",
+     "sha256": "4b3f4a68bafe46a417fe2df12a6bb2b17c0bd352850f71178f9f5d23b9d3c07b",
+     "bytes": 685182,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 14.436/2022: diretrizes da LOA de 2023.",
+   "legal_analysis": "Lei periódica de exercício encerrado. Não é a lei complementar permanente que o § 11 exige.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-FE5F5C013375",
+   "target": "CF88:ART.169:PAR.3",
+   "display_target": "CF art. 169, § 3",
+   "namespace": "CF88",
+   "norm_key": "LC:101/2000",
+   "norm_name": "Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "APPROVE",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.169:PAR.3",
+   "route": "art. 23",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC101",
+     "norm": "Lei Complementar nº 101/2000 (LRF)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm",
+     "sha256": "e353e6697c9e7adabfece3f8b4474be459b1c266a72c7b9a2757a0efae2fde7b",
+     "bytes": 254857,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LRF, art. 23: o percentual de despesa com pessoal que exceder o limite \"terá de ser eliminado nos dois quadrimestres seguintes ..., adotando-se, entre outras, as providências previstas nos §§ 3º e 4º do art. 169\".",
+   "legal_analysis": "O § 3º manda adotar as providências \"durante o prazo fixado na lei complementar referida no caput\", e a LRF fixa esse prazo e remete expressamente ao § 3º.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-8A985C226863",
+   "target": "CF88:ART.169:PAR.4",
+   "display_target": "CF art. 169, § 4",
+   "namespace": "CF88",
+   "norm_key": "LC:101/2000",
+   "norm_name": "Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "COMPLEMENTA",
+   "target_final": "CF88:ART.169:PAR.4",
+   "route": "art. 23",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC101",
+     "norm": "Lei Complementar nº 101/2000 (LRF)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm",
+     "sha256": "e353e6697c9e7adabfece3f8b4474be459b1c266a72c7b9a2757a0efae2fde7b",
+     "bytes": 254857,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "L9801",
+     "norm": "Lei nº 9.801/1999",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l9801.htm",
+     "sha256": "de298f9c6dcd6cfad83057dc196e5de5c28e82b26291abfba93572a8f2735e44",
+     "bytes": 8281,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "LRF, art. 23 (prazo e remissão aos §§ 3º e 4º). Lei 9.801/1999, art. 1º: \"regula a exoneração de servidor público estável com fundamento no § 4º e seguintes do art. 169\".",
+   "legal_analysis": "O § 4º prevê a perda do cargo do estável quando as medidas do § 3º não bastam \"para assegurar o cumprimento da determinação da lei complementar referida neste artigo\". A LRF dá o parâmetro (limites e prazo), mas as normas gerais da exoneração estão na Lei 9.801 (§ 7º). A natureza muda de REGULAMENTA para COMPLEMENTA.",
+   "notes": "NEW_CANDIDATE_BACKLOG: Lei 9.801/1999 × art. 169, §§ 4º e 7º.",
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-0F1CB8ABDC7C",
+   "target": "CF88:ART.170:PAR.UNICO",
+   "display_target": "CF art. 170, p.u.",
+   "namespace": "CF88",
+   "norm_key": "LEI:13874/2019",
+   "norm_name": "Lei nº 13.874/2019",
+   "c0_signals": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.170:PAR.UNICO",
+   "route": "art. 3º",
+   "scope": [
+    "NON_EXCLUSIVE"
+   ],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L13874",
+     "norm": "Lei nº 13.874/2019",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13874.htm",
+     "sha256": "99cc67a286076f183732bbbaa20be07b6f93e09e20bf33f6da0e4d11b218431f",
+     "bytes": 160728,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 13.874/2019, art. 3º: direitos de toda pessoa essenciais ao desenvolvimento econômico, \"observado o disposto no parágrafo único do art. 170\", inciso I: atividade de baixo risco sem atos públicos de liberação.",
+   "legal_analysis": "O parágrafo único assegura o livre exercício de atividade econômica sem autorização, \"salvo nos casos previstos em lei\". A Declaração de Direitos de Liberdade Econômica disciplina exatamente o regime de liberação. A natureza muda para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-31BBEFA99046",
+   "target": "CF88:ART.184:PAR.3",
+   "display_target": "CF art. 184, § 3",
+   "namespace": "CF88",
+   "norm_key": "LC:76/1993",
+   "norm_name": "Lei Complementar nº 76/1993",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "PROCEDIMENTO",
+   "target_final": "CF88:ART.184:PAR.3",
+   "route": "art. 1º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC76",
+     "norm": "Lei Complementar nº 76/1993",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp76.htm",
+     "sha256": "f6b25ddbad94769f54faf78b890424e97c0d37e8e02996fb7a9bdfdf92944227",
+     "bytes": 27123,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Dispõe sobre o procedimento contraditório especial, de rito sumário, para o processo de desapropriação de imóvel rural, por interesse social, para fins de reforma agrária\".",
+   "legal_analysis": "A ementa reproduz o § 3º. A natureza correta é PROCEDIMENTO, não REGULAMENTA genérico.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-6BFA71365AA0",
+   "target": "CF88:ART.184:PAR.3",
+   "display_target": "CF art. 184, § 3",
+   "namespace": "CF88",
+   "norm_key": "LC:93/1998",
+   "norm_name": "Lei Complementar nº 93/1998",
+   "c0_signals": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "REGULAMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "LC93",
+     "norm": "Lei Complementar nº 93/1998",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp93.htm",
+     "sha256": "591e381ac041cab6d56e2bee9e8bf240e6caa30fcc21d23571e5307c86b98904",
+     "bytes": 23481,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Institui o Fundo de Terras e da Reforma Agrária - Banco da Terra\".",
+   "legal_analysis": "O § 3º trata do rito processual da desapropriação. A LC 93 cria um fundo de financiamento fundiário. A relação é temática, vinda da página legada da Câmara.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-E2384C29633B",
+   "target": "CF88:ART.195:PAR.1",
+   "display_target": "CF art. 195, § 1",
+   "namespace": "CF88",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L8212",
+     "norm": "Lei nº 8.212/1991 (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm",
+     "sha256": "12c5bda5cffd920da7093757ceb796651f937e0306d341c19348a3d040a09e1d",
+     "bytes": 771751,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 8.212/1991, art. 10: \"A Seguridade Social será financiada por toda sociedade, ... nos termos do art. 195\". Não há regra sobre a inclusão das receitas estaduais e municipais da seguridade nos respectivos orçamentos.",
+   "legal_analysis": "O § 1º é regra orçamentária federativa. A citação do art. 10 é genérica ao art. 195. A remoção da LC 70 deste target (C1A) não deve ser compensada com vínculo temático.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-410A3EF072CA",
+   "target": "CF88:ART.195:PAR.3",
+   "display_target": "CF art. 195, § 3",
+   "namespace": "CF88",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.195:PAR.3",
+   "route": "art. 47",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "device_flags": [
+    "MAIN_CORPUS_ROUTE_REQUIRED"
+   ],
+   "ingestion_status": "NOT_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "L8212",
+     "norm": "Lei nº 8.212/1991 (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm",
+     "sha256": "12c5bda5cffd920da7093757ceb796651f937e0306d341c19348a3d040a09e1d",
+     "bytes": 771751,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 8.212/1991, Capítulo XI, \"Da Prova de Inexistência de Débito\", art. 47: exige CND da empresa \"na contratação com o Poder Público e no recebimento de benefícios ou incentivo fiscal ou creditício\".",
+   "legal_analysis": "O § 3º veda contratar com o poder público ou receber benefícios à pessoa jurídica em débito \"como estabelecido em lei\". O art. 47 é essa disciplina. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-123B2C35009A",
+   "target": "CF88:ART.195:PAR.4",
+   "display_target": "CF art. 195, § 4",
+   "namespace": "CF88",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "MEDIA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L8212",
+     "norm": "Lei nº 8.212/1991 (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm",
+     "sha256": "12c5bda5cffd920da7093757ceb796651f937e0306d341c19348a3d040a09e1d",
+     "bytes": 771751,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "CF88",
+     "norm": "Constituição Federal (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "d22db6b86fe90c8626e26753adf5b34d127272959b280e7955df0a9eb0b946cf",
+     "bytes": 1840587,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 8.212/1991: lei ordinária de custeio. A referência legada ao \"cap. XI\" aponta para a CND (art. 47), não para novas fontes.",
+   "legal_analysis": "O § 4º autoriza outras fontes de custeio obedecido o art. 154, I (lei complementar, competência residual). A Lei 8.212 não institui fontes residuais. A indicação legada estava desalinhada.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-47F967871B91",
+   "target": "CF88:ART.195:PAR.7",
+   "display_target": "CF art. 195, § 7",
+   "namespace": "CF88",
+   "norm_key": "LC:187/2021",
+   "norm_name": "Lei Complementar nº 187/2021",
+   "c0_signals": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "ADJUST",
+   "confidence": "ALTA",
+   "relation_type_final": "REGULAMENTA",
+   "target_final": "CF88:ART.195:PAR.7",
+   "route": "art. 1º",
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": "INGESTION_REQUIRED",
+   "device_flags": [
+    "INGESTION_REQUIRED"
+   ],
+   "ingestion_status": "INGESTION_REQUIRED",
+   "engine_overlay_eligible_now": true,
+   "official_sources": [
+    {
+     "source_id": "LC187",
+     "norm": "Lei Complementar nº 187/2021",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp187.htm",
+     "sha256": "cf47392daa3ed10c87a83961be9cf4ca77104852e4d40aa5ae80a024470effe0",
+     "bytes": 300608,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Ementa: \"Dispõe sobre a certificação das entidades beneficentes e regula os procedimentos referentes à imunidade de contribuições à seguridade social de que trata o § 7º do art. 195\".",
+   "legal_analysis": "Remissão expressa: é a lei complementar das exigências do § 7º. A nota \"Vide\" da compilação não basta; a ementa oficial basta. A natureza muda de COMPLEMENTA para REGULAMENTA.",
+   "notes": null,
+   "applied": false
+  },
+  {
+   "candidate_id": "CORRC0-80D1B099C1D9",
+   "target": "CF88:ART.195:PAR.7",
+   "display_target": "CF art. 195, § 7",
+   "namespace": "CF88",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "c0_signals": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_relation_type": "COMPLEMENTA",
+   "legal_decision": "REJECT",
+   "confidence": "ALTA",
+   "relation_type_final": null,
+   "target_final": null,
+   "route": null,
+   "scope": [],
+   "temporal": {
+    "temporal_status": "IN_FORCE",
+    "effective_from": null,
+    "early_application_possible": null,
+    "revalidate_on": null,
+    "note": null
+   },
+   "device_route_status": null,
+   "device_flags": [],
+   "ingestion_status": null,
+   "engine_overlay_eligible_now": null,
+   "official_sources": [
+    {
+     "source_id": "L8212",
+     "norm": "Lei nº 8.212/1991 (compilada)",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm",
+     "sha256": "12c5bda5cffd920da7093757ceb796651f937e0306d341c19348a3d040a09e1d",
+     "bytes": 771751,
+     "verified_on": "2026-10-11"
+    },
+    {
+     "source_id": "LC187",
+     "norm": "Lei Complementar nº 187/2021",
+     "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp187.htm",
+     "sha256": "cf47392daa3ed10c87a83961be9cf4ca77104852e4d40aa5ae80a024470effe0",
+     "bytes": 300608,
+     "verified_on": "2026-10-11"
+    }
+   ],
+   "relevant_provisions": "Lei 8.212/1991, art. 55 (isenção das entidades beneficentes): \"(Revogado pela Lei nº 12.101, de 2009)\". O regime vigente é o da LC 187/2021.",
+   "legal_analysis": "A disciplina da Lei 8.212 para o § 7º foi revogada, e a correlata vigente é a LC 187/2021, aprovada neste lote. O vínculo é histórico.",
+   "notes": "DISPOSITIVO_REVOGADO.",
+   "applied": false
+  }
+ ],
+ "NEW_CANDIDATE_BACKLOG": [
+  {
+   "norm": "Lei Complementar nº 116/2003 (ISS)",
+   "norm_key": "LC:116/2003",
+   "target_id": "CF88:ART.156:PAR.3",
+   "basis": "ementa oficial: dispõe sobre o ISS; o § 3º reserva à LC alíquotas, exclusões e benefícios do ISS",
+   "origin": "CORRC0-A5A1F929253C",
+   "suggested_priority": "MEDIUM",
+   "reason_not_decided": "norma não estava na fila HIGH original; exige rodada própria",
+   "status": "BACKLOG_NOT_DECIDED"
+  },
+  {
+   "norm": "Lei Complementar nº 227/2026",
+   "norm_key": "LC:227/2026",
+   "target_id": "CF88:ART.156-A:PAR.5:INC.I",
+   "basis": "ementa oficial: dispõe sobre a distribuição do produto da arrecadação do IBS",
+   "origin": "CORRC0-945D4CF3CD87",
+   "suggested_priority": "HIGH",
+   "reason_not_decided": "vínculo distinto do inciso VII; sem fan-out no mesmo candidate_id",
+   "status": "BACKLOG_NOT_DECIDED"
+  },
+  {
+   "norm": "Lei nº 9.801/1999",
+   "norm_key": "LEI:9801/1999",
+   "target_id": "CF88:ART.169:PAR.4",
+   "basis": "art. 1º: regula a exoneração do estável \"com fundamento no § 4º e seguintes do art. 169\"",
+   "origin": "CORRC0-8A985C226863",
+   "suggested_priority": "HIGH",
+   "reason_not_decided": "norma não estava na fila HIGH original",
+   "status": "BACKLOG_NOT_DECIDED"
+  },
+  {
+   "norm": "Lei nº 9.801/1999",
+   "norm_key": "LEI:9801/1999",
+   "target_id": "CF88:ART.169:PAR.7",
+   "basis": "§ 7º: \"Lei federal disporá sobre as normas gerais\" do § 4º; a Lei 9.801 é essa lei",
+   "origin": "CORRC0-8A985C226863",
+   "suggested_priority": "HIGH",
+   "reason_not_decided": "norma não estava na fila HIGH original",
+   "status": "BACKLOG_NOT_DECIDED"
+  }
+ ]
+}

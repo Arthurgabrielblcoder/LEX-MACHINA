@@ -29,8 +29,8 @@
 | DEVICE_RESOLVABLE_NOW | 3 |
 
 - **Natureza da relação:** reclassificada em 11 aceitos.
-- **Target:** ajustado em 1.
-- **NEW_CANDIDATE_BACKLOG:** 6 sugestões, não decididas.
+- **Target:** ajustado em 0.
+- **NEW_CANDIDATE_BACKLOG:** 7 sugestões, não decididas.
 
 ## Decisões
 
@@ -62,7 +62,7 @@
 | 24 | CF art. 146, § 1 | Lei Complementar nº 123/2006 | **APPROVE** | REGULAMENTA | = | art. 12 | INGESTION_REQUIRED |
 | 25 | CF art. 146, § 1 | Lei Complementar nº 214/2025 | **APPROVE** | COMPLEMENTA | = | art. 41 | INGESTION_REQUIRED |
 | 26 | CF art. 153, § 3 | Lei Complementar nº 214/2025 | **REJECT** | — | — | — | — |
-| 27 | CF art. 153, § 6 | Lei Complementar nº 214/2025 | **ADJUST** | REGULAMENTA | CF88:ART.153:INC.VIII | art. 409 | INGESTION_REQUIRED |
+| 27 | CF art. 153, § 6 | Lei Complementar nº 214/2025 | **ADJUST** | REGULAMENTA | = | art. 409 | INGESTION_REQUIRED |
 | 28 | CF art. 155, § 1 | Lei Complementar nº 227/2026 | **APPROVE** | REGULAMENTA | = | art. 146 | INGESTION_REQUIRED |
 | 29 | CF art. 155, § 1, III | Lei Complementar nº 102/2000 | **REJECT** | — | — | — | — |
 | 30 | CF art. 155, § 1, III | Lei Complementar nº 99/1999 | **REJECT** | — | — | — | — |
@@ -350,7 +350,7 @@
 ### 27. CF art. 153, § 6 × Lei Complementar nº 214/2025: **ADJUST** (ALTA)
 
 - **candidate_id:** `CORRC0-4A80B12218AA`
-- **Target:** `CF88:ART.153:PAR.6`; target final `CF88:ART.153:INC.VIII`.
+- **Target:** `CF88:ART.153:PAR.6`; target final `CF88:ART.153:PAR.6`.
 - **Sinais C0:** S3_ENTENDA; natureza C0 COMPLEMENTA.
 - **Fonte oficial:**
   - Lei Complementar nº 214/2025: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm (2026-10-11, sha256 `56324955fe0d7644…`)
@@ -391,12 +391,23 @@
 - **Análise:** Alteradora pontual da lei do ICMS, sem relação com o ITCMD do § 1º, III.
 - **Observações:** ALTERADORA_INCORPORADA; FAN_OUT_LEGADO.
 
+## Revisão independente do Batch02
+
+- `BATCH02_INDEPENDENT_REVIEW = APPROVED_WITH_TWO_ADJUSTMENTS`
+- **Contagem:** aceitos 22, REJECT 8, HOLD 0. ACCEPTED_COUNT_CHANGED: NO.
+- **CF art. 131, § 2 × Lei nº 14.965/2024:** VACATIO_LEGIS até 2028-01-01; não tratar como vigente. Target final `CF88:ART.131:PAR.2`, natureza COMPLEMENTA, flags ['NON_EXCLUSIVE', 'SUBSIDIARIA', 'TEMPORAL_DEVICE_BLOCK']. Temporal: VACATIO_LEGIS a partir de 2028-01-01 (antecipação possível: sim).
+- **CF art. 132 × Lei nº 14.965/2024:** VACATIO_LEGIS até 2028-01-01; não tratar como vigente. Target final `CF88:ART.132`, natureza COMPLEMENTA, flags ['NON_EXCLUSIVE', 'SUBSIDIARIA', 'TEMPORAL_DEVICE_BLOCK']. Temporal: VACATIO_LEGIS a partir de 2028-01-01 (antecipação possível: sim).
+- **CF art. 153, § 6 × Lei Complementar nº 214/2025:** o retarget exclusivo para o inciso VIII foi desfeito. A LC 214/2025 tem relação própria com o § 6º: disciplina o regime do Imposto Seletivo que concretiza as características constitucionais do parágrafo (fato gerador e incidência, art. 412; não incidência sobre energia elétrica e telecomunicações, art. 413, II; base de cálculo, art. 414). O inciso VIII vira backlog próprio (HIGH). Target final `CF88:ART.153:PAR.6`, natureza REGULAMENTA, flags ['NON_EXCLUSIVE'].
+- **Dívida arquitetural `FUTURE_EFFECTIVE_CORRELATA_POLICY_REQUIRED`:** até existir política própria, correlata juridicamente aprovada em vacatio legis não pode ir ao DEVICE como se estivesse plenamente vigente sem indicação temporal visível; opções futuras: ocultar até a vigência ou exibir com rótulo de vigência futura (UI não decidida).
+  - Achado: o vínculo CORRELATA atual REL_167CD90B031F3404 (Lei 14.965/2024 × CF88:ART.37:INC.II, visível no RUN3) também aponta para lei em vacatio legis até 2028-01-01; registrar para C2, sem alteração nesta missão.
+
 ## NEW_CANDIDATE_BACKLOG (não decidido; exige rodada própria)
 
-- Lei nº 6.880/1980 (Estatuto dos Militares) × `CF88:ART.142:PAR.3` (origem `CORRC0-4A61114D26A5`)
-- Lei Complementar nº 214/2025 × `CF88:ART.156-A` (origem `CORRC0-E6E419F28886`)
-- Lei Complementar nº 214/2025 × `CF88:ART.195:INC.V` (origem `CORRC0-E6E419F28886`)
-- Lei Complementar nº 214/2025 (art. 454) × `ADCT (transição Zona Franca, EC 132/2023)` (origem `CORRC0-83C4D0DE51F8`)
-- Lei Complementar nº 227/2026 (art. 158) × `CF88:ART.155:PAR.1:INC.III` (origem `CORRC0-A97DCCBA85CF`)
-- Lei nº 11.417/2006 (art. 2º) × `CF88:ART.103-A` (origem `CORRC0-420E49E80EF9`)
+- Lei nº 6.880/1980 (Estatuto dos Militares) × `CF88:ART.142:PAR.3` (origem `CORRC0-4A61114D26A5`, prioridade sugerida MEDIUM)
+- Lei Complementar nº 214/2025 × `CF88:ART.156-A` (origem `CORRC0-E6E419F28886`, prioridade sugerida MEDIUM)
+- Lei Complementar nº 214/2025 × `CF88:ART.195:INC.V` (origem `CORRC0-E6E419F28886`, prioridade sugerida HIGH)
+- Lei Complementar nº 214/2025 (art. 454) × `ADCT (transição Zona Franca, EC 132/2023)` (origem `CORRC0-83C4D0DE51F8`, prioridade sugerida LOW)
+- Lei Complementar nº 227/2026 (art. 158) × `CF88:ART.155:PAR.1:INC.III` (origem `CORRC0-A97DCCBA85CF`, prioridade sugerida HIGH): o inciso III manda lei complementar regular a competência do ITCMD com elemento no exterior; a LC 227/2026 (art. 158) disciplina essa sujeição ativa (prioridade elevada na revisão independente do Batch02)
+- Lei nº 11.417/2006 (art. 2º) × `CF88:ART.103-A` (origem `CORRC0-420E49E80EF9`, prioridade sugerida MEDIUM)
+- Lei Complementar nº 214/2025 (art. 409) × `CF88:ART.153:INC.VIII` (origem `CORRC0-4A80B12218AA`, prioridade sugerida HIGH): a LC 214 institui expressamente o Imposto Seletivo do inciso VIII (art. 409); vínculo próprio, sem reutilizar o candidate_id do § 6º
 

@@ -220,13 +220,49 @@ REVIEW = {
 }
 
 NEW_CANDIDATE_BACKLOG = [
-    dict(norm='Lei nº 6.880/1980 (Estatuto dos Militares)', norm_key='LEI:6880/1980', target_id='CF88:ART.142:PAR.3', origin='CORRC0-4A61114D26A5'),
-    dict(norm='Lei Complementar nº 214/2025', norm_key='LC:214/2025', target_id='CF88:ART.156-A', origin='CORRC0-E6E419F28886'),
-    dict(norm='Lei Complementar nº 214/2025', norm_key='LC:214/2025', target_id='CF88:ART.195:INC.V', origin='CORRC0-E6E419F28886'),
-    dict(norm='Lei Complementar nº 214/2025 (art. 454)', norm_key='LC:214/2025', target_id='ADCT (transição Zona Franca, EC 132/2023)', origin='CORRC0-83C4D0DE51F8'),
-    dict(norm='Lei Complementar nº 227/2026 (art. 158)', norm_key='LC:227/2026', target_id='CF88:ART.155:PAR.1:INC.III', origin='CORRC0-A97DCCBA85CF'),
-    dict(norm='Lei nº 11.417/2006 (art. 2º)', norm_key='LEI:11417/2006', target_id='CF88:ART.103-A', origin='CORRC0-420E49E80EF9'),
+    dict(norm='Lei nº 6.880/1980 (Estatuto dos Militares)', norm_key='LEI:6880/1980', target_id='CF88:ART.142:PAR.3', origin='CORRC0-4A61114D26A5',
+         suggested_priority='MEDIUM'),
+    dict(norm='Lei Complementar nº 214/2025', norm_key='LC:214/2025', target_id='CF88:ART.156-A', origin='CORRC0-E6E419F28886', suggested_priority='MEDIUM'),
+    dict(norm='Lei Complementar nº 214/2025', norm_key='LC:214/2025', target_id='CF88:ART.195:INC.V', origin='CORRC0-E6E419F28886', suggested_priority='HIGH'),
+    dict(norm='Lei Complementar nº 214/2025 (art. 454)', norm_key='LC:214/2025', target_id='ADCT (transição Zona Franca, EC 132/2023)', origin='CORRC0-83C4D0DE51F8',
+         suggested_priority='LOW'),
+    dict(norm='Lei Complementar nº 227/2026 (art. 158)', norm_key='LC:227/2026', target_id='CF88:ART.155:PAR.1:INC.III', origin='CORRC0-A97DCCBA85CF',
+         suggested_priority='HIGH',
+         reason='o inciso III manda lei complementar regular a competência do ITCMD com elemento no exterior; a LC 227/2026 (art. 158) '
+                'disciplina essa sujeição ativa (prioridade elevada na revisão independente do Batch02)'),
+    dict(norm='Lei nº 11.417/2006 (art. 2º)', norm_key='LEI:11417/2006', target_id='CF88:ART.103-A', origin='CORRC0-420E49E80EF9', suggested_priority='MEDIUM'),
+    dict(norm='Lei Complementar nº 214/2025 (art. 409)', norm_key='LC:214/2025', target_id='CF88:ART.153:INC.VIII', origin='CORRC0-4A80B12218AA',
+         suggested_priority='HIGH', added_by='BATCH02_INDEPENDENT_REVIEW',
+         reason='a LC 214 institui expressamente o Imposto Seletivo do inciso VIII (art. 409); vínculo próprio, sem reutilizar o candidate_id do § 6º'),
 ]
+
+# Independent review of Batch02 (2026-10-11): two adjustments, accepted/rejected counts unchanged.
+INDEPENDENT_REVIEW = dict(
+    verdict='APPROVED_WITH_TWO_ADJUSTMENTS', accepted=22, reject=8, hold=0, accepted_count_changed='NO',
+    architectural_debt=dict(
+        id='FUTURE_EFFECTIVE_CORRELATA_POLICY_REQUIRED',
+        rule='até existir política própria, correlata juridicamente aprovada em vacatio legis não pode ir ao DEVICE como se estivesse '
+             'plenamente vigente sem indicação temporal visível; opções futuras: ocultar até a vigência ou exibir com rótulo de vigência futura '
+             '(UI não decidida)',
+        finding='o vínculo CORRELATA atual REL_167CD90B031F3404 (Lei 14.965/2024 × CF88:ART.37:INC.II, visível no RUN3) também aponta para lei '
+                'em vacatio legis até 2028-01-01; registrar para C2, sem alteração nesta missão'))
+ITEM_OVERRIDES = {
+    'CORRC0-4A80B12218AA': dict(
+        target_final='CF88:ART.153:PAR.6', relation_type_final='REGULAMENTA', extra_flags=['NON_EXCLUSIVE'],
+        independent_review=dict(verdict='CORRECTED', note=(
+            'o retarget exclusivo para o inciso VIII foi desfeito. A LC 214/2025 tem relação própria com o § 6º: disciplina o regime do Imposto '
+            'Seletivo que concretiza as características constitucionais do parágrafo (fato gerador e incidência, art. 412; não incidência sobre '
+            'energia elétrica e telecomunicações, art. 413, II; base de cálculo, art. 414). O inciso VIII vira backlog próprio (HIGH).'))),
+    'CORRC0-29C48A0D5DA7': dict(temporal=dict(temporal_status='VACATIO_LEGIS', effective_from='2028-01-01', early_application_possible=True,
+                                              basis='Lei 14.965/2024, art. 13: vigência em 1º de janeiro do quarto ano após a publicação (DOU 10/09/2024), '
+                                                    'aplicação antecipada possível pelo ato que autorizar cada concurso'),
+                                extra_flags=['SUBSIDIARIA', 'TEMPORAL_DEVICE_BLOCK'],
+                                independent_review=dict(verdict='APPROVED_WITH_TEMPORAL_NOTE', note='VACATIO_LEGIS até 2028-01-01; não tratar como vigente.')),
+    'CORRC0-08F347BF86E6': dict(temporal=dict(temporal_status='VACATIO_LEGIS', effective_from='2028-01-01', early_application_possible=True,
+                                              basis='Lei 14.965/2024, art. 13; § 2º do art. 13: Estados, DF e Municípios podem optar por normas próprias'),
+                                extra_flags=['SUBSIDIARIA', 'TEMPORAL_DEVICE_BLOCK'],
+                                independent_review=dict(verdict='APPROVED_WITH_TEMPORAL_NOTE', note='VACATIO_LEGIS até 2028-01-01; não tratar como vigente.')),
+}
 
 
 def select():
@@ -268,15 +304,21 @@ def build():
         r = REVIEW[i['candidate_id']]
         ok = r['decision'] in ('APPROVE', 'ADJUST')
         dev = i['c0_device_status']
+        ov = ITEM_OVERRIDES.get(i['candidate_id'], {})
+        tf_initial = (r['target_final'] or i['target_id']) if ok else None
         dec.append(dict(candidate_id=i['candidate_id'], target=i['target_id'], display_target=i['display_target'], norm_key=i['norm_key'],
                         norm_name=i['norm_name'], c0_signals=i['c0_signal_families'], c0_relation_type=i['c0_relation_type'],
-                        legal_decision=r['decision'], confidence=r['confidence'], relation_type_final=r['relation_type_final'],
-                        target_final=(r['target_final'] or i['target_id']) if ok else None, route=r['route'],
+                        legal_decision=r['decision'], confidence=r['confidence'],
+                        relation_type_final=ov.get('relation_type_final', r['relation_type_final']),
+                        relation_type_final_initial=r['relation_type_final'],
+                        target_final=ov.get('target_final', tf_initial), target_final_initial=tf_initial, route=r['route'],
                         device_route_status=dev if ok else None,
                         ingestion_status=('INGESTION_REQUIRED' if dev == 'INGESTION_REQUIRED' else 'NOT_REQUIRED') if ok else None,
-                        scope_flags=sorted(set(re.findall(r'\b[A-Z]{2,}(?:_[A-Z0-9]+)+\b', r['notes'] or ''))),
+                        scope_flags=sorted(set(re.findall(r'\b[A-Z]{2,}(?:_[A-Z0-9]+)+\b', r['notes'] or '')) | set(ov.get('extra_flags', []))),
+                        temporal=ov.get('temporal'),
                         official_sources=[dict(source_id=k, **SOURCES[k]) for k in r['sources']], relevant_provisions=r['provisions'],
-                        legal_analysis=r['analysis'], notes=r['notes'], applied=False))
+                        legal_analysis=r['analysis'], notes=r['notes'], applied=False,
+                        independent_review=ov.get('independent_review', dict(verdict='CONFIRMED'))))
     cnt = Counter(d['legal_decision'] for d in dec)
     acc = [d for d in dec if d['legal_decision'] in ('APPROVE', 'ADJUST')]
     dcnt = Counter(d['device_route_status'] for d in acc)
@@ -287,7 +329,9 @@ def build():
                    accepted_device_route={k: dcnt.get(k, 0) for k in ('MAIN_CORPUS_ROUTE_REQUIRED', 'INGESTION_REQUIRED', 'DEVICE_RESOLVABLE_NOW')},
                    all_batch_device_status=dict(sorted(Counter(i['c0_device_status'] for i in inp).items())),
                    relation_type_changed=sum(1 for d in acc if d['relation_type_final'] != d['c0_relation_type']),
-                   target_changed=sum(1 for d in acc if d['target_final'] != d['target']), new_candidate_backlog=len(NEW_CANDIDATE_BACKLOG))
+                   target_changed=sum(1 for d in acc if d['target_final'] != d['target']), new_candidate_backlog=len(NEW_CANDIDATE_BACKLOG),
+                   independent_review_adjustments=sum(1 for d in dec if d['independent_review']['verdict'] != 'CONFIRMED'),
+                   vacatio_legis_accepted=sum(1 for d in acc if (d['temporal'] or {}).get('temporal_status') == 'VACATIO_LEGIS'))
     common = dict(schema_version=1, mission=MISSION, baseline=BASE, applied=False, verified_on=B1.VERIFIED_ON)
     j_in = B1.jdump(dict(common, artifact='CF88_CORRELATA_C1B_HIGH_BATCH02_INPUT',
                          selection=dict(source='CORRELATA_COVERAGE_AUDIT/CF88_CORRELATA_REVIEW_QUEUE.json :: HIGH',
@@ -297,7 +341,7 @@ def build():
                          candidates=inp))
     j_dec = B1.jdump(dict(common, artifact='CF88_CORRELATA_C1B_HIGH_BATCH02_DECISIONS', decision_values=list(B1.DECISIONS),
                           relation_types=list(B1.RELATION_TYPES), source_policy='Somente Planalto (fonte oficial); HTML identificado por sha256, nao versionado.',
-                          summary=summary, decisions=dec, NEW_CANDIDATE_BACKLOG=[dict(b, status='BACKLOG_NOT_DECIDED') for b in NEW_CANDIDATE_BACKLOG]))
+                          independent_review=INDEPENDENT_REVIEW, summary=summary, decisions=dec, NEW_CANDIDATE_BACKLOG=[dict(b, status='BACKLOG_NOT_DECIDED') for b in NEW_CANDIDATE_BACKLOG]))
     return j_in, j_dec, report(summary, dec).encode('utf-8')
 
 
@@ -357,10 +401,26 @@ def report(s, dec):
         if d['notes']:
             a(f"- **Observações:** {d['notes']}")
         a('')
+    ir = INDEPENDENT_REVIEW
+    a('## Revisão independente do Batch02')
+    a('')
+    a(f"- `BATCH02_INDEPENDENT_REVIEW = {ir['verdict']}`")
+    a(f"- **Contagem:** aceitos {ir['accepted']}, REJECT {ir['reject']}, HOLD {ir['hold']}. ACCEPTED_COUNT_CHANGED: {ir['accepted_count_changed']}.")
+    for d in dec:
+        if d['independent_review']['verdict'] != 'CONFIRMED':
+            t = d['temporal']
+            extra = (f" Temporal: {t['temporal_status']} a partir de {t['effective_from']} (antecipação possível: "
+                     f"{'sim' if t['early_application_possible'] else 'não'}).") if t else ''
+            a(f"- **{d['display_target']} × {d['norm_name']}:** {d['independent_review']['note']} Target final `{d['target_final']}`, natureza "
+              f"{d['relation_type_final']}, flags {d['scope_flags']}.{extra}")
+    a(f"- **Dívida arquitetural `{ir['architectural_debt']['id']}`:** {ir['architectural_debt']['rule']}.")
+    a(f"  - Achado: {ir['architectural_debt']['finding']}.")
+    a('')
     a('## NEW_CANDIDATE_BACKLOG (não decidido; exige rodada própria)')
     a('')
     for b in NEW_CANDIDATE_BACKLOG:
-        a(f"- {b['norm']} × `{b['target_id']}` (origem `{b['origin']}`)")
+        a(f"- {b['norm']} × `{b['target_id']}` (origem `{b['origin']}`, prioridade sugerida {b['suggested_priority']})"
+          + (f": {b['reason']}" if b.get('reason') else ''))
     a('')
     return '\n'.join(L) + '\n'
 

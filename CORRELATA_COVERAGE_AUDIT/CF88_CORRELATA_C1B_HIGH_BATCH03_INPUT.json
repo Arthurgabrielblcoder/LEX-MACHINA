@@ -1,0 +1,1191 @@
+{
+ "schema_version": 1,
+ "mission": "CF88_CORRELATA_C1B_HIGH_REVIEW_BATCH03",
+ "baseline": {
+  "branch": "cf-correlata-coverage-audit",
+  "head": "825f4ad6fed7d476c4dc71405451e848e441c798"
+ },
+ "applied": false,
+ "verified_on": "2026-10-11",
+ "artifact": "CF88_CORRELATA_C1B_HIGH_BATCH03_INPUT",
+ "selection": {
+  "source": "CORRELATA_COVERAGE_AUDIT/CF88_CORRELATA_REVIEW_QUEUE.json :: HIGH (fila original)",
+  "rule": "HIGH original - Batch01 - Batch02 - C1A - duplicatas; ordem estrutural; proximos 30",
+  "eligible_pool_before": 47,
+  "taken": 30,
+  "candidate_ids": [
+   "CORRC0-ED340FAA29A6",
+   "CORRC0-FB5381D4D3A5",
+   "CORRC0-BD6BE3620174",
+   "CORRC0-EFBBD4456F98",
+   "CORRC0-0EF4365F1CB4",
+   "CORRC0-546E42DB4BCA",
+   "CORRC0-A5A1F929253C",
+   "CORRC0-D2CF3E042053",
+   "CORRC0-E3C2F652AB8A",
+   "CORRC0-945D4CF3CD87",
+   "CORRC0-6236AB9C2784",
+   "CORRC0-AE4FC77A0E24",
+   "CORRC0-E80CB2DF38CE",
+   "CORRC0-1A40567592C0",
+   "CORRC0-EFB85C7CCADA",
+   "CORRC0-3EAE25BCF28E",
+   "CORRC0-68DD94F14824",
+   "CORRC0-56E3853E56E6",
+   "CORRC0-FEF94155C26B",
+   "CORRC0-40EDEC92644D",
+   "CORRC0-FE5F5C013375",
+   "CORRC0-8A985C226863",
+   "CORRC0-0F1CB8ABDC7C",
+   "CORRC0-31BBEFA99046",
+   "CORRC0-6BFA71365AA0",
+   "CORRC0-E2384C29633B",
+   "CORRC0-410A3EF072CA",
+   "CORRC0-123B2C35009A",
+   "CORRC0-47F967871B91",
+   "CORRC0-80D1B099C1D9"
+  ],
+  "remaining_after": [
+   "CORRC0-A88AB3189E73",
+   "CORRC0-C4B7D896EEC4",
+   "CORRC0-2053DEF59022",
+   "CORRC0-67B5D9C94E07",
+   "CORRC0-362157C332DE",
+   "CORRC0-C8087244A9DB",
+   "CORRC0-8D80396BDEEB",
+   "CORRC0-A2C12E99BECD",
+   "CORRC0-E86B55D28D44",
+   "CORRC0-E0C9C2F5CDBD",
+   "CORRC0-FC57ED913387",
+   "CORRC0-7F28FCF12C37",
+   "CORRC0-D2D0CD6A150D",
+   "CORRC0-5C8AFC368627",
+   "CORRC0-7867B93D94DA",
+   "CORRC0-F2C3596A37CB",
+   "CORRC0-A28C8B1C8F51"
+  ]
+ },
+ "candidates": [
+  {
+   "candidate_id": "CORRC0-ED340FAA29A6",
+   "target_id": "CF88:ART.155:PAR.2",
+   "display_target": "CF art. 155, § 2",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.155/BASE/2:external_layer_notes",
+     "evidence": "26: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PE…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.155:PAR.2/BASE/2:external_layer_notes",
+     "evidence": "26: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PE…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-FB5381D4D3A5",
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "display_target": "CF art. 155, § 2, VII",
+   "norm_key": "LC:190/2022",
+   "norm_name": "Lei Complementar nº 190/2022",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/2:content",
+     "evidence": "até a alíquota interna dele. A cobrança da diferença de alíquotas pressupõe lei complementar com normas gerais, segundo o Supremo Tribunal Federal. A Lei Complementar nº 190, de 2022, trouxe essa disciplina. Questões sobre o momento de produção de efeitos des…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/2:external_layer_notes",
+     "evidence": "upõe edição de lei complementar veiculando normas gerais\"; ADI 7.158 (2023): constitucional o critério do art. 11, § 7º, da LC 87/1996, na redação da LC 190/2022. Efeitos temporais da LC 190/2022: não verificados nesta rodada. Ingestão na camada JURISPRUDÊNCI…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/2:external_layer_notes",
+     "evidence": "iculando normas gerais\"; ADI 7.158 (2023): constitucional o critério do art. 11, § 7º, da LC 87/1996, na redação da LC 190/2022. Efeitos temporais da LC 190/2022: não verificados nesta rodada. Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-BD6BE3620174",
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "display_target": "CF art. 155, § 2, VII",
+   "norm_key": "LC:87/1996",
+   "norm_name": "Lei Complementar nº 87/1996",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "DEVICE_RESOLVABLE_NOW",
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.155:PAR.2:INC.VII/BASE/2:external_layer_notes",
+     "evidence": "stitucional 87/2015, pressupõe edição de lei complementar veiculando normas gerais\"; ADI 7.158 (2023): constitucional o critério do art. 11, § 7º, da LC 87/1996, na redação da LC 190/2022. Efeitos temporais da LC 190/2022: não verificados nesta rodada. Ingest…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-EFBBD4456F98",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "norm_key": "LC:102/2000",
+   "norm_name": "Lei Complementar nº 102/2000",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D8_P2_B",
+    "classe=C_SECAO_INDETERMINADA",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0063",
+     "evidence": "de 13/09/1996 Lei Complementar nº 92, de 23/12/1997 Lei Complementar nº 99, de 20/12/1999 Lei Complementar nº 102, de 11/07/2000 Lei Complementar nº 201, de 24/10/2023 Legislação ordinária: Lei nº 9.424, de 24/12/1996"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-0EF4365F1CB4",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "norm_key": "LC:201/2023",
+   "norm_name": "Lei Complementar nº 201/2023",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D8_P2_B",
+    "classe=C_SECAO_INDETERMINADA",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0065",
+     "evidence": "e 23/12/1997 Lei Complementar nº 99, de 20/12/1999 Lei Complementar nº 102, de 11/07/2000 Lei Complementar nº 201, de 24/10/2023 Legislação ordinária: Lei nº 9.424, de 24/12/1996"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-546E42DB4BCA",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "display_target": "CF art. 155, § 2, XII",
+   "norm_key": "LC:24/1975",
+   "norm_name": "Lei Complementar nº 24/1975",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D8_P2_B",
+    "classe=C_SECAO_INDETERMINADA",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0066",
+     "evidence": "nº 406, de 31/12/1968 Decreto-Lei nº 834, de 08/09/1969 Decreto-Lei nº 932, de 10/10/1969 Lei Complementar nº 24, de 24/01/1975 Legislação Complementar: Lei Complementar nº 87, de 13/09/1996 Lei Complementar nº 92, de 23/12/1997 Lei Complementar n"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-A5A1F929253C",
+   "target_id": "CF88:ART.156:PAR.3",
+   "display_target": "CF art. 156, § 3",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156/BASE/2:external_layer_notes",
+     "evidence": "26: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PE…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156:PAR.3/BASE/2:external_layer_notes",
+     "evidence": "26: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PE…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-D2CF3E042053",
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "display_target": "CF art. 156-A, § 1",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)",
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "inculações e repartições constitucionais; dispensa por lei complementar), 127 (2027-2028), 128 (2029-2032) e 129 (extinção do ICMS e do ISS em 2033). LC 214/2025 institui o IBS: art. 343 (0,1% em 2026), art. 344 (0,05% estadual e 0,05% municipal em 2027-2028)…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.1/BASE/2:content",
+     "evidence": "iços de contabilidade. Ela pode abater o imposto cobrado em todas essas compras do imposto devido nas suas vendas. As regras foram disciplinadas pela Lei Complementar nº 214, de 2025, e seguem a transição do ADCT: no exercício de 2026 o imposto está em fase d…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.1/BASE/2:external_layer_notes",
+     "evidence": "26: CBS e imposto do art. 153, VIII, cobrados a partir de 2027; arts. 128 e 129: redução do ICMS e do ISS de 2029 a 2032 e extinção a partir de 2033. LC 214/2025: institui o IBS e a CBS (art. 1º) e o Imposto Seletivo (art. 409). Ingestão na camada externa: PE…"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0034",
+     "evidence": "Legislação Complementar: Lei Complementar nº 214, de 16/01/2025"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-E3C2F652AB8A",
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "display_target": "CF art. 156-A, § 5",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)",
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "inculações e repartições constitucionais; dispensa por lei complementar), 127 (2027-2028), 128 (2029-2032) e 129 (extinção do ICMS e do ISS em 2033). LC 214/2025 institui o IBS: art. 343 (0,1% em 2026), art. 344 (0,05% estadual e 0,05% municipal em 2027-2028)…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.5/BASE/2:content",
+     "evidence": "rte do imposto pago em suas compras, nos limites e para os beneficiários definidos na lei complementar. As matérias listadas foram disciplinadas pela Lei Complementar nº 214, de 2025; a distribuição da arrecadação e o processo administrativo fiscal foram trat…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.5/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): LC 214/2025 (IBS e CBS) e LC 227/2026 (Comitê Gestor, processo administrativo do IBS e distribuição da arrecadação). ADCT, arts. 125-131 (texto compilado): trans"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0034",
+     "evidence": "Legislação Complementar: Lei Complementar nº 214, de 16/01/2025"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0035",
+     "evidence": "Legislação Complementar: Lei Complementar nº 214, de 16/01/2025"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-945D4CF3CD87",
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "display_target": "CF art. 156-A, § 5",
+   "norm_key": "LC:227/2026",
+   "norm_name": "Lei Complementar nº 227/2026",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "S/Cofins, outro tributo federal ou ressarcimento; § 1º, dispensa do recolhimento para quem cumpre as obrigações acessórias; §§ 3º e 4º incluídos pela LC 227/2026). LC 227/2026 institui o Comitê Gestor do IBS e disciplina o processo administrativo e a distribu…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "o tributo federal ou ressarcimento; § 1º, dispensa do recolhimento para quem cumpre as obrigações acessórias; §§ 3º e 4º incluídos pela LC 227/2026). LC 227/2026 institui o Comitê Gestor do IBS e disciplina o processo administrativo e a distribuição. Ingestão…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.5/BASE/2:content",
+     "evidence": "oram disciplinadas pela Lei Complementar nº 214, de 2025; a distribuição da arrecadação e o processo administrativo fiscal foram tratados também pela Lei Complementar nº 227, de 2026. A cobrança segue a transição do ADCT. Ressarcimento de créditos devolução e…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.5/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): LC 214/2025 (IBS e CBS) e LC 227/2026 (Comitê Gestor, processo administrativo do IBS e distribuição da arrecadação). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-6236AB9C2784",
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "display_target": "CF art. 156-A, § 6",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)",
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "inculações e repartições constitucionais; dispensa por lei complementar), 127 (2027-2028), 128 (2029-2032) e 129 (extinção do ICMS e do ISS em 2033). LC 214/2025 institui o IBS: art. 343 (0,1% em 2026), art. 344 (0,05% estadual e 0,05% municipal em 2027-2028)…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.6/BASE/2:content",
+     "evidence": "mposto incida sobre a receita, com alíquota uniforme no país. A lista de setores é a da Constituição. Os regimes específicos foram disciplinados pela Lei Complementar nº 214, de 2025, e se aplicam conforme a transição do ADCT. Regime específico conjunto de re…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.6/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): LC 214/2025, Título V (regimes específicos do IBS e da CBS, a partir do art. 172). ADCT, arts. 125-131 (texto compilado): transição do IBS e da CBS; art. 126: CB"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0034",
+     "evidence": "Legislação Complementar: Lei Complementar nº 214, de 16/01/2025"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-AE4FC77A0E24",
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "display_target": "CF art. 156-A, § 9",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)",
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "inculações e repartições constitucionais; dispensa por lei complementar), 127 (2027-2028), 128 (2029-2032) e 129 (extinção do ICMS e do ISS em 2033). LC 214/2025 institui o IBS: art. 343 (0,1% em 2026), art. 344 (0,05% estadual e 0,05% municipal em 2027-2028)…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.9/BASE/2:content",
+     "evidence": "unto com esse ajuste. O texto declara a finalidade de preservar a arrecadação das esferas federativas. Os detalhes do ajuste foram disciplinados pela Lei Complementar nº 214, de 2025: as alíquotas de referência são fixadas por resolução do Senado Federal, par…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.9/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 18 (alíquotas de referência fixadas por resolução do Senado; IBS de 2029 a 2035) e 19 (compensação de alteração na legislação federal que redu"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0034",
+     "evidence": "Legislação Complementar: Lei Complementar nº 214, de 16/01/2025"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-E80CB2DF38CE",
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "display_target": "CF art. 156-A, § 13",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_DEVICE",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)",
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A/BASE/2:external_layer_notes",
+     "evidence": "inculações e repartições constitucionais; dispensa por lei complementar), 127 (2027-2028), 128 (2029-2032) e 129 (extinção do ICMS e do ISS em 2033). LC 214/2025 institui o IBS: art. 343 (0,1% em 2026), art. 344 (0,05% estadual e 0,05% municipal em 2027-2028)…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.13/BASE/2:content",
+     "evidence": "epois. Uma família de baixa renda recebe a conta de luz já com o valor da devolução do imposto descontado, se a lei complementar adotar essa forma. A Lei Complementar nº 214, de 2025, define os beneficiários, a partir do cadastro oficial de programas sociais,…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.156-A:PAR.13/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): LC 214/2025, arts. 112 e seguintes: devolução da CBS e do IBS a pessoas físicas de famílias de baixa renda inscritas no CadÚnico (renda familiar mensal per capit"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0034",
+     "evidence": "Legislação Complementar: Lei Complementar nº 214, de 16/01/2025"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-1A40567592C0",
+   "target_id": "CF88:ART.159:INC.I",
+   "display_target": "CF art. 159, I",
+   "norm_key": "LC:214/2025",
+   "norm_name": "Lei Complementar nº 214/2025",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_ITEM",
+    "EXTERNAL_VERIFICATION_REQUIRED (norma recente; sem proveniencia oficial no registro)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.159:INC.I/BASE/2:content",
+     "evidence": "rcentuais exatos de cada fundo estão nas alíneas, e os critérios de rateio dependem de lei complementar. O imposto do art. 153, VIII, instituído pela Lei Complementar nº 214, de 2025, é cobrado a partir de 2027, quando sua arrecadação passa a integrar a base …"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.159:INC.I/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): art. 159, I, na redação da EC 132/2023 (50%, alíneas a a f conferidas); LC 214/2025, art. 409; ADCT, art. 126, I, b (cobrança do imposto do art. 153, VIII, a partir de 2027). Ingestão na camada externa: PENDING_EXTERNAL…"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-EFB85C7CCADA",
+   "target_id": "CF88:ART.165:PAR.9",
+   "display_target": "CF art. 165, § 9",
+   "norm_key": "LC:101/2000",
+   "norm_name": "Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=COMPLEMENTAR",
+    "secao_camara=NAO_CAMARA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0121",
+     "evidence": "Legislação Complementar: Lei Complementar nº 79, de 07/01/1994 Lei Complementar nº 101, de 04/05/2000"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0120",
+     "evidence": "Art. 4 o A lei de diretrizes orçamentárias atenderá o disposto no § 2 o do art. 165 da Constituição e: I - disporá também sobre: a) equilíbrio entre receitas e despesas; b) critérios e forma de limit | Art. 52. O relatório a que se refere o § 3 o do art. 165 …"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-3EAE25BCF28E",
+   "target_id": "CF88:ART.165:PAR.10",
+   "display_target": "CF art. 165, § 10",
+   "norm_key": "LEI:14436/2022",
+   "norm_name": "Lei nº 14.436/2022",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.165:PAR.10/BASE/1:external_layer_notes",
+     "evidence": "A fonte oficial remete o § 11 à Lei n. 14.436, de 2022, na camada de legislação correlata."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-68DD94F14824",
+   "target_id": "CF88:ART.165:PAR.18",
+   "display_target": "CF art. 165, § 18",
+   "norm_key": "LC:200/2023",
+   "norm_name": "Lei Complementar nº 200/2023",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.165:PAR.18/BASE/2:content",
+     "evidence": "esultado primário; no ano seguinte, a parte computada aumenta, conforme a incorporação gradual. A lei complementar mencionada nesses dispositivos é a Lei Complementar nº 200, de 2023, que instituiu o regime fiscal sustentável com fundamento no art. 6º da Emen…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.165:PAR.18/BASE/2:external_layer_notes",
+     "evidence": "Verificado na fonte oficial (Planalto): a LC 200/2023 declara fundamento no art. 6º da EC 126/2022 e institui o regime fiscal sustentável; é a lei complementar referida nos §§ 18 e 19. EC 136/2025: usa o"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-56E3853E56E6",
+   "target_id": "CF88:ART.166:PAR.9",
+   "display_target": "CF art. 166, § 9",
+   "norm_key": "LC:210/2024",
+   "norm_name": "Lei Complementar nº 210/2024",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.166/BASE/2:external_layer_notes",
+     "evidence": "ADI 7060 (Constituição de Sergipe, emendas impositivas estaduais; procedente em 2023) não é pertinente ao art. 166 federal. LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técn…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.166:PAR.9/BASE/2:external_layer_notes",
+     "evidence": "LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técnica; art. 12, contingencia"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-FEF94155C26B",
+   "target_id": "CF88:ART.166:PAR.11",
+   "display_target": "CF art. 166, § 11",
+   "norm_key": "LC:210/2024",
+   "norm_name": "Lei Complementar nº 210/2024",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "ENTENDA_OVERVIEW",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.166/BASE/2:external_layer_notes",
+     "evidence": "ADI 7060 (Constituição de Sergipe, emendas impositivas estaduais; procedente em 2023) não é pertinente ao art. 166 federal. LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técn…"
+    },
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.166:PAR.11/BASE/2:external_layer_notes",
+     "evidence": "LC 210/2024 (Planalto): disciplina a proposição e a execução das emendas parlamentares; art. 10, hipóteses de impedimento de ordem técnica; art. 12, contingencia"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-40EDEC92644D",
+   "target_id": "CF88:ART.166:PAR.11",
+   "display_target": "CF art. 166, § 11",
+   "norm_key": "LEI:14436/2022",
+   "norm_name": "Lei nº 14.436/2022",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_BLOCK",
+    "ENTENDA_BLOCK_ANCHOR (a norma pode pertencer a um target coberto)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.166:PAR.11/BASE/2:external_layer_notes",
+     "evidence": "A fonte oficial remete o § 13 à Lei n. 14.436, de 2022, na camada de legislação correlata."
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-FE5F5C013375",
+   "target_id": "CF88:ART.169:PAR.3",
+   "display_target": "CF art. 169, § 3",
+   "norm_key": "LC:101/2000",
+   "norm_name": "Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "REVERSE_BODY_INCIDENTAL",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=COMPLEMENTAR",
+    "secao_camara=SEM_ROTULO",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0127",
+     "evidence": "Legislação Complementar: Lei Complementar nº 96, de 31/05/1999 Lei Complementar nº 101, de 04/05/2000"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LRF2000:art.19:BODY",
+     "evidence": "Para os fins do disposto no caput do art. 169 da Constituição"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0126",
+     "evidence": "Art. 19. Para os fins do disposto no caput do art. 169 da Constituição , a despesa total com pessoal, em cada período de apuração e em cada ente da Federação, não poderá | Complementar: Lei Complementar nº 82, de 27/03/1995 Lei Complementar nº 96, de 31/05/19…"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LRF2000:art.23:BODY",
+     "evidence": "os no mesmo artigo, sem prejuízo das medidas previstas no art. 22, o percentual excedente terá de ser eliminado nos dois quadrimestres seguintes, sendo pelo menos um terço no primeiro, adotando-se, entre outras, as providências previstas nos §§ 3º e 4º do art. 169 da Constituição"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-8A985C226863",
+   "target_id": "CF88:ART.169:PAR.4",
+   "display_target": "CF art. 169, § 4",
+   "norm_key": "LC:101/2000",
+   "norm_name": "Lei Complementar 101/2000 - Lei de Responsabilidade Fiscal",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "REVERSE_BODY_INCIDENTAL",
+    "classe=A_EXPRESSA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=COMPLEMENTAR",
+    "secao_camara=SEM_ROTULO",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0128",
+     "evidence": "Legislação Complementar: Lei Complementar nº 96, de 31/05/1999 Lei Complementar nº 101, de 04/05/2000"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LRF2000:art.19:BODY",
+     "evidence": "Para os fins do disposto no caput do art. 169 da Constituição"
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0126",
+     "evidence": "Art. 19. Para os fins do disposto no caput do art. 169 da Constituição , a despesa total com pessoal, em cada período de apuração e em cada ente da Federação, não poderá | Complementar: Lei Complementar nº 82, de 27/03/1995 Lei Complementar nº 96, de 31/05/19…"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:LRF2000:art.23:BODY",
+     "evidence": "os no mesmo artigo, sem prejuízo das medidas previstas no art. 22, o percentual excedente terá de ser eliminado nos dois quadrimestres seguintes, sendo pelo menos um terço no primeiro, adotando-se, entre outras, as providências previstas nos §§ 3º e 4º do art. 169 da Constituição"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-0F1CB8ABDC7C",
+   "target_id": "CF88:ART.170:PAR.UNICO",
+   "display_target": "CF art. 170, p.u.",
+   "norm_key": "LEI:13874/2019",
+   "norm_name": "Lei nº 13.874/2019",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S3_ENTENDA",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "LEGADO_2D4_QUARENTENA",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=ORDINARIA",
+    "vigencia=NAO_LOCALIZADA",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.170:PAR.UNICO/BASE/1:external_layer_notes",
+     "evidence": "A fonte canônica remete à Lei n. 13.874, de 2019 (liberdade econômica), na camada de legislação correlata."
+    },
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_QUARENTENA:0135",
+     "evidence": "Lei Complementar nº 123, de 14/12/2006 Legislação ordinária: Lei nº 9.841, de 05/10/1999 Lei nº 13.874, de 20/09/2019"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-31BBEFA99046",
+   "target_id": "CF88:ART.184:PAR.3",
+   "display_target": "CF art. 184, § 3",
+   "norm_key": "LC:76/1993",
+   "norm_name": "Lei Complementar nº 76/1993",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D8_P2_B",
+    "classe=C_EXTERNA_PENDENTE_VALIDACAO",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0030",
+     "evidence": "Legislação Complementar: Lei Complementar nº 76, de 06/07/1993 Lei Complementar nº 88, de 23/121996 Lei Complementar nº 93, de 04/02/1998"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-6BFA71365AA0",
+   "target_id": "CF88:ART.184:PAR.3",
+   "display_target": "CF art. 184, § 3",
+   "norm_key": "LC:93/1998",
+   "norm_name": "Lei Complementar nº 93/1998",
+   "namespace": "CF88",
+   "c0_relation_type": "REGULAMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "LEGADO_2D8_P2_B",
+    "classe=C_SECAO_INDETERMINADA",
+    "secao_camara=COMPLEMENTAR",
+    "vigencia=SEM_REVOGACAO_EXPRESSA"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D8_P2_B:0077",
+     "evidence": "Complementar: Lei Complementar nº 76, de 06/07/1993 Lei Complementar nº 88, de 23/121996 Lei Complementar nº 93, de 04/02/1998"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-E2384C29633B",
+   "target_id": "CF88:ART.195:PAR.1",
+   "display_target": "CF art. 195, § 1",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0148",
+     "evidence": ": Lei Complementar nº 70, de 30/12/1991 Legislação ordinária: Lei nº 7.689, de 15/12/1988 Lei nº 8.212, de 24/07/1991 Decreto nº 3.048, de 6/08/1999"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:CUSTEIO1991:art.10:BODY",
+     "evidence": "A Seguridade Social será financiada por toda sociedade, de forma direta e indireta, nos termos do art. 195 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-410A3EF072CA",
+   "target_id": "CF88:ART.195:PAR.3",
+   "display_target": "CF art. 195, § 3",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0149",
+     "evidence": "o nº 83.081, de 24/01/1979 e alterações Lei nº 3.807, de 26/08/1960 Legislação ordinária: Lei nº 8.212, de 24/07/1991"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:CUSTEIO1991:art.10:BODY",
+     "evidence": "A Seguridade Social será financiada por toda sociedade, de forma direta e indireta, nos termos do art. 195 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-123B2C35009A",
+   "target_id": "CF88:ART.195:PAR.4",
+   "display_target": "CF art. 195, § 4",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0150",
+     "evidence": "ções Legislação Complementar: Lei Complementar nº 84, de 18/01/1996 Legislação ordinária: Lei nº 8.212, de 24/07/1991, cap. XI"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:CUSTEIO1991:art.10:BODY",
+     "evidence": "A Seguridade Social será financiada por toda sociedade, de forma direta e indireta, nos termos do art. 195 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-47F967871B91",
+   "target_id": "CF88:ART.195:PAR.7",
+   "display_target": "CF art. 195, § 7",
+   "norm_key": "LC:187/2021",
+   "norm_name": "Lei Complementar nº 187/2021",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S2_NOTA_EDITORIAL_VIDE",
+    "S3_ENTENDA"
+   ],
+   "c0_device_status": "INGESTION_REQUIRED",
+   "c0_flags": [
+    "ENTENDA_DEVICE",
+    "NOTA_EDITORIAL_VIDE (anotacao da fonte, nao texto constitucional; nunca vira vinculo automaticamente)",
+    "EXTERNAL_VERIFICATION_REQUIRED (vigencia da norma: SEM_EVIDENCIA_LOCAL)"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S3_ENTENDA",
+     "source": "ENTENDA:ENTENDA/CF88:ART.195:PAR.7/BASE/2:external_layer_notes",
+     "evidence": "O texto oficial remete à Lei Complementar nº 187/2021 (nota de remissão da compilação oficial). A natureza da dispensa (isenção ou imunidade) e a espécie normativa exigida para os requisitos são temas da"
+    },
+    {
+     "family": "S2_NOTA_EDITORIAL_VIDE",
+     "source": "RUNTIME_EDITORIAL_VIDE",
+     "evidence": "Vide a Lei Complementar nº 187, de 2021"
+    }
+   ]
+  },
+  {
+   "candidate_id": "CORRC0-80D1B099C1D9",
+   "target_id": "CF88:ART.195:PAR.7",
+   "display_target": "CF art. 195, § 7",
+   "norm_key": "LEI:8212/1991",
+   "norm_name": "Lei 8.212/1991 - Organização da Seguridade Social e Plano de Custeio",
+   "namespace": "CF88",
+   "c0_relation_type": "COMPLEMENTA",
+   "c0_confidence": "B",
+   "c0_priority": "HIGH",
+   "c0_signal_families": [
+    "S4_ACERVO_REVERSO",
+    "S5_RELATIONS_V2_LEGADO"
+   ],
+   "c0_device_status": "MAIN_CORPUS_ROUTE_REQUIRED",
+   "c0_flags": [
+    "ARTICLE_LEVEL_EVIDENCE_MERGED",
+    "LEGADO_2D4_EXIBIVEIS",
+    "REVERSE_BODY_COMPLEMENTA",
+    "classe=B_REGULAMENTACAO_OFICIAL",
+    "secao_camara=ORDINARIA",
+    "vigencia=-"
+   ],
+   "c0_engine_overlay_eligible_now": true,
+   "c0_signals": [
+    {
+     "family": "S5_RELATIONS_V2_LEGADO",
+     "source": "LEGADO:2D4_EXIBIVEIS:0151",
+     "evidence": "º 89.312, de 23/01/1984 Legislação Complementar: 187, de 16/12/2021 Legislação ordinária: Lei nº 8.212, de 24/07/1991, art. 25"
+    },
+    {
+     "family": "S4_ACERVO_REVERSO",
+     "source": "ACERVO:CUSTEIO1991:art.10:BODY",
+     "evidence": "A Seguridade Social será financiada por toda sociedade, de forma direta e indireta, nos termos do art. 195 da Constituição Federal"
+    }
+   ]
+  }
+ ]
+}
