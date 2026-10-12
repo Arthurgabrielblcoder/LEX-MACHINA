@@ -185,11 +185,19 @@ class Build(unittest.TestCase):
                  'LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json', 'LEGAL_TARGET_ID/derived/CF88_TARGET_INDEX.json',
                  'LEGAL_TARGET_ID/derived/CF88_TARGET_STATUS.json', 'LEGAL_TARGET_ID/derived/CF88_WORK_REFERENCE_ADDITIONS.json',
                  'LEGAL_TARGET_ID/engine_config.json', 'LEGAL_TARGET_ID/reference_engine.py', 'DEVICE_INTEGRATION', 'firmware']
-        diff = subprocess.run(['git', 'diff', '--name-only', BASELINE, '--'] + paths, cwd=ROOT, capture_output=True, text=True, check=True).stdout
+        # existing operational files: never modified nor deleted (new files are allowed only for the C3B.2 physical promotion record)
+        diff = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=MDR', BASELINE, '--'] + paths, cwd=ROOT, capture_output=True,
+                              text=True, check=True).stdout
         self.assertEqual(diff.strip(), '')
         untracked = subprocess.run(['git', 'ls-files', '--others', '--exclude-standard', '--'] + paths, cwd=ROOT, capture_output=True,
                                    text=True, check=True).stdout
-        self.assertEqual(untracked.strip(), '')
+        added = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=A', BASELINE, '--'] + paths, cwd=ROOT, capture_output=True,
+                               text=True, check=True).stdout
+        allowed = ('DEVICE_INTEGRATION/C3B2_CORRELATA_PROMOTION/', 'DEVICE_INTEGRATION/C3B2_CORRELATA_PHYSICAL_BASELINE_APPROVED.md',
+                   'DEVICE_INTEGRATION/tools/build_c3b2_promotion_candidate.py', 'DEVICE_INTEGRATION/tools/deploy_c3b2_promotion_sd.py',
+                   'DEVICE_INTEGRATION/staging_sd_v1_c3b2_promotion_candidate/')
+        for f in (untracked + added).split():
+            self.assertTrue(f.startswith(allowed), f)
         pin = R4.load(R4.PIN)['relations_v2_package']['files']
         for f in ('RELACOES.IDX', 'REL_LOOKUP.IDX', 'EXT_NORMAS.IDX', 'EXT_ARTIGOS.IDX'):
             self.assertEqual(hashlib.sha256((R4.CARD / f).read_bytes()).hexdigest(), pin[f'99_RELATIONS_V2/05_INDICES_ESP32_V2/{f}']['sha256'])

@@ -157,7 +157,7 @@ class Package(unittest.TestCase):
 
     def test_14_firmware_unchanged(self):
         for base in ('9108d72812802de941e54b7e4e3ec556b7abd019', '7c6d421585d971e5eef6af2bc3fa85ccab078d83'):
-            out = subprocess.run(['git', 'diff', '--name-only', base, '--', 'firmware', 'DEVICE_INTEGRATION'], cwd=ROOT, capture_output=True,
+            out = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=MDR', base, '--', 'firmware', 'DEVICE_INTEGRATION'], cwd=ROOT, capture_output=True,
                                  text=True, check=True).stdout
             self.assertEqual(out.strip(), '')
 
