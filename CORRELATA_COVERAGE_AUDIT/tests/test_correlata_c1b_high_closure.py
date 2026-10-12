@@ -197,7 +197,10 @@ class Consolidated(unittest.TestCase):
         for p in OPERATIONAL:
             blob = subprocess.run(['git', 'show', f"{B3.BASE['head']}:{p}"], cwd=ROOT, capture_output=True, check=True).stdout
             self.assertEqual((ROOT / p).read_bytes().replace(b'\r\n', b'\n'), blob.replace(b'\r\n', b'\n'), p)
-        self.assertFalse((ROOT / 'LEGAL_TARGET_ID/derived/CF88_CORRELATA_ADDITIONS.json').exists())
+        # since C3A the overlay exists, but only as a host-only candidate that the engine configuration (RUN3) does not reference
+        ov = ROOT / 'LEGAL_TARGET_ID/derived/CF88_CORRELATA_ADDITIONS.json'
+        self.assertTrue(not ov.exists() or json.loads(ov.read_text(encoding='utf-8'))['status'] == 'RUN4_CANDIDATE_HOST_ONLY')
+        self.assertNotIn('CORRELATA_ADDITIONS', (ROOT / 'LEGAL_TARGET_ID/engine_config.json').read_text(encoding='utf-8'))
         self.assertFalse(CONS['applied'])
 
 

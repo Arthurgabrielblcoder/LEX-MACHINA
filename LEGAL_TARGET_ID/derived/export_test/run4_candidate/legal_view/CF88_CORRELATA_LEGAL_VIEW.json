@@ -1,0 +1,3564 @@
+{
+ "schema_version": 1,
+ "artifact": "CF88_CORRELATA_LEGAL_VIEW",
+ "status": "RUN4_CANDIDATE_HOST_ONLY",
+ "as_of": "2026-10-12",
+ "principle": "LEGAL_APPROVED != DEVICE_READY",
+ "summary": {
+  "status": "RUN4_CANDIDATE_HOST_ONLY",
+  "as_of": "2026-10-12",
+  "principle": "LEGAL_APPROVED != DEVICE_READY",
+  "run3": {
+   "correlata_total": 46,
+   "visible": 44,
+   "hidden_historical": 2
+  },
+  "legacy_actions": {
+   "EXCLUDE": 27,
+   "KEEP": 10,
+   "ROUTE_FIX": 5,
+   "SUPPRESS_HOLD": 1,
+   "SUPPRESS_TEMPORAL": 1
+  },
+  "legacy_device_states": {
+   "DEVICE_READY": 15,
+   "HISTORICAL_HIDDEN_UNCHANGED": 2,
+   "MATERIAL_MISMATCH_EXCLUDED": 27,
+   "REVIEW_HOLD_SUPPRESSED": 1,
+   "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE": 1
+  },
+  "additions_register": 87,
+  "additions_materialized": 11,
+  "additions_device_states": {
+   "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS": 21,
+   "BLOCKED_INGESTION_REQUIRED": 55,
+   "DEVICE_READY": 9,
+   "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE": 2
+  },
+  "additions_blockers": {
+   "BLOCKED_DEVICE_JUDICIAL_NOTICE_UNSUPPORTED": 2,
+   "BLOCKED_DEVICE_ORIGIN_UNVERIFIED": 2,
+   "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS": 21,
+   "BLOCKED_INGESTION_REQUIRED": 55,
+   "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE": 2
+  },
+  "adct_runtime_confirmed": {
+   "total": 2,
+   "device_ready": 0
+  },
+  "legal_view": {
+   "entries": 133,
+   "legal_current_relations": 103
+  },
+  "device_ready": {
+   "correlata_links": 26,
+   "correlata_visible": 24,
+   "correlata_hidden_historical": 2,
+   "new_correlata_links": 9,
+   "relacoes_rows": 26,
+   "firmware_cache": {
+    "used": {
+     "lookup_rows": 26,
+     "norms": 15
+    },
+    "limit": {
+     "lookup_rows": 64,
+     "norms": 32
+    }
+   },
+   "non_correlata_links_identical_to_run3": true
+  },
+  "files": {
+   "CF88_REFERENCES_EXPORT.json": {
+    "sha256": "f26cbe21e40682424a86fc8f7127119c9495915f937b6d062523d83c905614ed",
+    "bytes": 453317
+   },
+   "REF_LOOKUP.IDX": {
+    "sha256": "27c67eea6a38e3cba012d4a3d02c3856d37fd4cd1bae15473854fab0edea5430",
+    "bytes": 6702
+   },
+   "REF_PAYLOAD.IDX": {
+    "sha256": "235b8db6c8d1c6b608853ec2a659b7b911d1d77d61983947555b151cc913013b",
+    "bytes": 65248
+   }
+  }
+ },
+ "entries": [
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_434D01E5132D30B2",
+   "target_id": "ADCT:ART.10:INC.II:AL.b",
+   "destination_norm_id": "PENDING_INGESTION:LC:146/2014",
+   "destination_norm_key": "LC:146/2014",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED",
+    "BLOCKED_DEVICE_ORIGIN_UNVERIFIED"
+   ],
+   "target_check": "ADCT_RUNTIME_CONFIRMED",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-F2C3596A37CB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_B6BF0A4A5EDBCEBC",
+   "target_id": "ADCT:ART.128:PAR.2",
+   "destination_norm_id": "PENDING_INGESTION:LC:160/2017",
+   "destination_norm_key": "LC:160/2017",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "TRANSITIONAL",
+   "effective_from": null,
+   "revalidate_on": "2033-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED",
+    "BLOCKED_DEVICE_ORIGIN_UNVERIFIED"
+   ],
+   "target_check": "ADCT_RUNTIME_CONFIRMED",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-A28C8B1C8F51"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_BD5B7BD5FD8797BC",
+   "target_id": "CF88:ART.102:PAR.2",
+   "destination_norm_id": "PENDING_INGESTION:LEI:9868/1999",
+   "destination_norm_key": "LEI:9868/1999",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "28"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "PROCEDIMENTO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-35E96F1CA181"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_58B7A037043A5A3F",
+   "target_id": "CF88:ART.103-A:PAR.2",
+   "destination_norm_id": "PENDING_INGESTION:LEI:11417/2006",
+   "destination_norm_key": "LEI:11417/2006",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-420E49E80EF9"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_FB031B4D14626DE9",
+   "target_id": "CF88:ART.103-A:PAR.3",
+   "destination_norm_id": "PENDING_INGESTION:LEI:11417/2006",
+   "destination_norm_key": "LEI:11417/2006",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "7"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-8E5A28F8F96F"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_9C4F4B23005AB87B",
+   "target_id": "CF88:ART.105:PAR.2",
+   "destination_norm_id": "PENDING_INGESTION:LEI:15484/2026",
+   "destination_norm_key": "LEI:15484/2026",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-312A79978F0C"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_E98FEB94D5A47397",
+   "target_id": "CF88:ART.128:PAR.3",
+   "destination_norm_id": "PENDING_INGESTION:LC:75/1993",
+   "destination_norm_key": "LC:75/1993",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "156"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "IMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-3A3521E4F0DB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_45947172F37F6FF3",
+   "target_id": "CF88:ART.128:PAR.4",
+   "destination_norm_id": "PENDING_INGESTION:LC:75/1993",
+   "destination_norm_key": "LC:75/1993",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "156"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "IMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-FB380CBD6CBF"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_61FE5321FDAE9905",
+   "target_id": "CF88:ART.129:INC.VI",
+   "destination_norm_id": "PENDING_INGESTION:LC:75/1993",
+   "destination_norm_key": "LC:75/1993",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "8"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "IMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-E0CCCEFB92EC"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_77C9F9C85D220174",
+   "target_id": "CF88:ART.129:INC.VII",
+   "destination_norm_id": "PENDING_INGESTION:LC:75/1993",
+   "destination_norm_key": "LC:75/1993",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "9"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "IMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-02E5634C2228"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_02100CF0638F50C6",
+   "target_id": "CF88:ART.131:PAR.2",
+   "destination_norm_id": "EXT_LEI14965_2024",
+   "destination_norm_key": "LEI:14965/2024",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "VACATIO_LEGIS",
+   "effective_from": "2028-01-01",
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE",
+   "device_blockers": [
+    "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-29C48A0D5DA7"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_496925C7984E601B",
+   "target_id": "CF88:ART.132",
+   "destination_norm_id": "EXT_LEI14965_2024",
+   "destination_norm_key": "LEI:14965/2024",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "VACATIO_LEGIS",
+   "effective_from": "2028-01-01",
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE",
+   "device_blockers": [
+    "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE"
+   ],
+   "target_check": "ENGINE_STRUCTURAL",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-08F347BF86E6"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_541E61CA33574D41",
+   "target_id": "CF88:ART.134:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:80/1994",
+   "destination_norm_key": "LC:80/1994",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "ORGANIZA_INSTITUIÇÃO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-0232EB5B26DB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_6B1005F13EDF4CA2",
+   "target_id": "CF88:ART.142:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:97/1999",
+   "destination_norm_key": "LC:97/1999",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-7A1757A796C5"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_CB0BABF31EAF52D7",
+   "target_id": "CF88:ART.144:PAR.8",
+   "destination_norm_id": "PENDING_INGESTION:LEI:13022/2014",
+   "destination_norm_key": "LEI:13022/2014",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-B603B2579A60"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_6A31C0CCA89F1312",
+   "target_id": "CF88:ART.146:INC.III:AL.b",
+   "destination_norm_id": "EXT_LC199_2023",
+   "destination_norm_key": "LC:199/2023",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-8CF6938B096C",
+    "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_7EC835D53AE3CD03",
+   "target_id": "CF88:ART.146:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:123/2006",
+   "destination_norm_key": "LC:123/2006",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "12"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-781D2FD631FD"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_E187DB91049E0A37",
+   "target_id": "CF88:ART.146:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "41"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-2C927C32607D"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_4125746110EDDE7E",
+   "target_id": "CF88:ART.14:PAR.9",
+   "destination_norm_id": "INELEG1990",
+   "destination_norm_key": "LC:64/1990",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-FFA7F8C1F500"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_BF527671D5F50983",
+   "target_id": "CF88:ART.153:PAR.6",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "409"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-4A80B12218AA"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_245B59E81F78A5AE",
+   "target_id": "CF88:ART.155:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:227/2026",
+   "destination_norm_key": "LC:227/2026",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "146"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-A97DCCBA85CF"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_742CC0B5CC083FC0",
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "destination_norm_id": "EXT_LC87_1996",
+   "destination_norm_key": "LC:87/1996",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "4",
+    "11"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": "2033-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-BD6BE3620174"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_255E5B93CFF74B38",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII:AL.g",
+   "destination_norm_id": "PENDING_INGESTION:LC:24/1975",
+   "destination_norm_key": "LC:24/1975",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1",
+    "2"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": "2033-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-546E42DB4BCA"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_F858D3D0D7FCC01A",
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-D2CF3E042053"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_F5E94045D4E31EC7",
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "118"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-E80CB2DF38CE"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_99251ECF55C5045A",
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "112"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-E3C2F652AB8A"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_8EEC3F405D6E8F2A",
+   "target_id": "CF88:ART.156-A:PAR.5:INC.VII",
+   "destination_norm_id": "PENDING_INGESTION:LC:227/2026",
+   "destination_norm_key": "LC:227/2026",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "54"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-945D4CF3CD87"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_12FC51268856AC8A",
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "172"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-6236AB9C2784"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_19F6B36A02E8C67F",
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "destination_norm_id": "PENDING_INGESTION:LC:214/2025",
+   "destination_norm_key": "LC:214/2025",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "19"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-AE4FC77A0E24"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_21E430F499454751",
+   "target_id": "CF88:ART.158:PAR.1:INC.I",
+   "destination_norm_id": "EXT_LC63_1990",
+   "destination_norm_key": "LC:63/1990",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "NAO_CLASSIFICADA_REVISAO_LEGADA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_39A8D87CD18EC477",
+   "target_id": "CF88:ART.161:INC.I",
+   "destination_norm_id": "EXT_LC63_1990",
+   "destination_norm_key": "LC:63/1990",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_F9F34B10796F3F1B",
+   "target_id": "CF88:ART.165:PAR.18",
+   "destination_norm_id": "PENDING_INGESTION:LC:200/2023",
+   "destination_norm_key": "LC:200/2023",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-68DD94F14824"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_D0D836CA98152AC9",
+   "target_id": "CF88:ART.165:PAR.9",
+   "destination_norm_id": "LRF2000",
+   "destination_norm_key": "LC:101/2000",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-EFB85C7CCADA"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_8B90D80FD855570A",
+   "target_id": "CF88:ART.166:PAR.11",
+   "destination_norm_id": "PENDING_INGESTION:LC:210/2024",
+   "destination_norm_key": "LC:210/2024",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "10"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-FEF94155C26B"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_95394BBD30B0A02A",
+   "target_id": "CF88:ART.166:PAR.9",
+   "destination_norm_id": "PENDING_INGESTION:LC:210/2024",
+   "destination_norm_key": "LC:210/2024",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "6"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-56E3853E56E6"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_F424E4BDDF29C708",
+   "target_id": "CF88:ART.169:PAR.3",
+   "destination_norm_id": "LRF2000",
+   "destination_norm_key": "LC:101/2000",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "23"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-FE5F5C013375"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_3D62D41573853B06",
+   "target_id": "CF88:ART.169:PAR.4",
+   "destination_norm_id": "LRF2000",
+   "destination_norm_key": "LC:101/2000",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "23"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-8A985C226863"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_7B8F41070A8FB194",
+   "target_id": "CF88:ART.170:PAR.UNICO",
+   "destination_norm_id": "PENDING_INGESTION:LEI:13874/2019",
+   "destination_norm_key": "LEI:13874/2019",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-0F1CB8ABDC7C"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_A1C43F3D68A82F6A",
+   "target_id": "CF88:ART.17:PAR.2",
+   "destination_norm_id": "PARTIDOS1995",
+   "destination_norm_key": "LEI:9096/1995",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "7"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-23FDAA617AC7"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_D8EEDE8809928D5D",
+   "target_id": "CF88:ART.17:PAR.3",
+   "destination_norm_id": "PARTIDOS1995",
+   "destination_norm_key": "LEI:9096/1995",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "41-A",
+    "50-B"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-EC2800C205A0"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_03C51AA316151ABC",
+   "target_id": "CF88:ART.184:PAR.3",
+   "destination_norm_id": "PENDING_INGESTION:LC:76/1993",
+   "destination_norm_key": "LC:76/1993",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "PROCEDIMENTO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-31BBEFA99046"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_C878EFCBBA81DD8F",
+   "target_id": "CF88:ART.18:PAR.4",
+   "destination_norm_id": "PENDING_INGESTION:LC:230/2026",
+   "destination_norm_key": "LC:230/2026",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-7C51431603DB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_46D119DBBE755ABB",
+   "target_id": "CF88:ART.195:INC.I:AL.b",
+   "destination_norm_id": "EXT_LC70_1991",
+   "destination_norm_key": "LC:70/1991",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "NAO_CLASSIFICADA_REVISAO_LEGADA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": "2027-01-01",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_653C9F653CDC9F48",
+   "target_id": "CF88:ART.195:INC.II",
+   "destination_norm_id": "CUSTEIO1991",
+   "destination_norm_key": "LEI:8212/1991",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "20"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.II"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.II"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_48C2AAEFAB245531",
+   "target_id": "CF88:ART.195:PAR.3",
+   "destination_norm_id": "CUSTEIO1991",
+   "destination_norm_key": "LEI:8212/1991",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "47"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-410A3EF072CA"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_3F38F48C6292D0A5",
+   "target_id": "CF88:ART.195:PAR.7",
+   "destination_norm_id": "PENDING_INGESTION:LC:187/2021",
+   "destination_norm_key": "LC:187/2021",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-47F967871B91"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_4E397898BF9257E5",
+   "target_id": "CF88:ART.195:PAR.8",
+   "destination_norm_id": "CUSTEIO1991",
+   "destination_norm_key": "LEI:8212/1991",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "25"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-A88AB3189E73"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_FB32B8BF0F3ECBE3",
+   "target_id": "CF88:ART.198:PAR.3",
+   "destination_norm_id": "PENDING_INGESTION:LC:141/2012",
+   "destination_norm_key": "LC:141/2012",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-C4B7D896EEC4"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_B7724DA5D5A36CEA",
+   "target_id": "CF88:ART.201:PAR.1:INC.I",
+   "destination_norm_id": "PENDING_INGESTION:LC:142/2013",
+   "destination_norm_key": "LC:142/2013",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-2053DEF59022"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_5E9EA2A138C9E144",
+   "target_id": "CF88:ART.201:PAR.4",
+   "destination_norm_id": "BENEF1991",
+   "destination_norm_key": "LEI:8213/1991",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "41-A"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-67B5D9C94E07"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_301AD05C48332703",
+   "target_id": "CF88:ART.202:PAR.1",
+   "destination_norm_id": "EXT_LC109_2001",
+   "destination_norm_key": "LC:109/2001",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "3"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-362157C332DE"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_28799E38D7BA37A0",
+   "target_id": "CF88:ART.20:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LEI:7990/1989",
+   "destination_norm_key": "LEI:7990/1989",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_0628FE08FD9A170F@CF88:ART.20:PAR.1"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_0628FE08FD9A170F@CF88:ART.20:PAR.1"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_FDD14AE949104029",
+   "target_id": "CF88:ART.214:CAPUT",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "destination_norm_key": "LEI:15388/2026",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "NAO_CLASSIFICADA_REVISAO_LEGADA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": "2036-04-14",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_FBA7C365E21E92BB",
+   "target_id": "CF88:ART.21:INC.IV",
+   "destination_norm_id": "PENDING_INGESTION:LC:90/1997",
+   "destination_norm_key": "LC:90/1997",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-643E8D275C20"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_1F5E3A9A49A82733",
+   "target_id": "CF88:ART.227:PAR.3",
+   "destination_norm_id": "ECA1990",
+   "destination_norm_key": "LEI:8069/1990",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "60"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-C8087244A9DB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_870B0A2B48B51D09",
+   "target_id": "CF88:ART.227:PAR.4",
+   "destination_norm_id": "ECA1990",
+   "destination_norm_key": "LEI:8069/1990",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "240"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-8D80396BDEEB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_749BF4FC17EF1F40",
+   "target_id": "CF88:ART.227:PAR.5",
+   "destination_norm_id": "ECA1990",
+   "destination_norm_key": "LEI:8069/1990",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "39"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-A2C12E99BECD"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_2A1871C2700B5B56",
+   "target_id": "CF88:ART.22:INC.XXVII",
+   "destination_norm_id": "PENDING_INGESTION:LEI:13303/2016",
+   "destination_norm_key": "LEI:13303/2016",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "28"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-9C3FB3B95B9B"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_BC231B19ED588C3A",
+   "target_id": "CF88:ART.22:INC.XXVII",
+   "destination_norm_id": "LIC2021",
+   "destination_norm_key": "LEI:14133/2021",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-C6956D31D6B7"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_5C2083472F811816",
+   "target_id": "CF88:ART.22:PAR.UNICO",
+   "destination_norm_id": "PENDING_INGESTION:LC:103/2000",
+   "destination_norm_key": "LC:103/2000",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "IMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-7387F1A2A033"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_A176C9E30E6F7297",
+   "target_id": "CF88:ART.231:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LEI:14701/2023",
+   "destination_norm_key": "LEI:14701/2023",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "julgamento final dos embargos de declaração na ADC 87",
+   "judicial_notice": "STF: inconstitucionalidade parcial (ADC 87). Embargos pendentes.",
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED",
+    "BLOCKED_DEVICE_JUDICIAL_NOTICE_UNSUPPORTED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-E86B55D28D44"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_1A17D12C28E33521",
+   "target_id": "CF88:ART.231:PAR.6",
+   "destination_norm_id": "PENDING_INGESTION:LEI:14701/2023",
+   "destination_norm_key": "LEI:14701/2023",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "PARTIAL_EFFECTS",
+   "effective_from": null,
+   "revalidate_on": "julgamento final dos embargos de declaração na ADC 87",
+   "judicial_notice": "STF: inconstitucionalidade parcial (ADC 87). Embargos pendentes.",
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED",
+    "BLOCKED_DEVICE_JUDICIAL_NOTICE_UNSUPPORTED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-FC57ED913387"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_3A940A79F373894B",
+   "target_id": "CF88:ART.239",
+   "destination_norm_id": "PENDING_INGESTION:LC:7/1970",
+   "destination_norm_key": "LC:7/1970",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_STRUCTURAL",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-7F28FCF12C37"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_AB556D0ECAEB0F45",
+   "target_id": "CF88:ART.239",
+   "destination_norm_id": "PENDING_INGESTION:LC:8/1970",
+   "destination_norm_key": "LC:8/1970",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_STRUCTURAL",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-D2D0CD6A150D"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_B3039F1D64A6840E",
+   "target_id": "CF88:ART.239:PAR.3",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "9"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [
+    "9"
+   ],
+   "decision_ids": [
+    "CORRC0-5C8AFC368627"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_B4B013752546BF35",
+   "target_id": "CF88:ART.239:PAR.4",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "destination_norm_key": "LEI:7998/1990",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "ON_CARD",
+   "destination_articles": [
+    "11"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "COMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": true,
+   "device_state": "DEVICE_READY",
+   "device_blockers": [],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-7867B93D94DA"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_D8306E7971E979AC",
+   "target_id": "CF88:ART.23:INC.VI",
+   "destination_norm_id": "PENDING_INGESTION:LC:140/2011",
+   "destination_norm_key": "LC:140/2011",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-6B89F3FB8FD7"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_90278816D002D881",
+   "target_id": "CF88:ART.23:PAR.UNICO",
+   "destination_norm_id": "PENDING_INGESTION:LC:140/2011",
+   "destination_norm_key": "LC:140/2011",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-2E98C1949CA4"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_3287C527B9977756",
+   "target_id": "CF88:ART.37:PAR.3:INC.II",
+   "destination_norm_id": "LAI2011",
+   "destination_norm_key": "LEI:12527/2011",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.II"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.II"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_5B9E9C97AA8D5572",
+   "target_id": "CF88:ART.37:PAR.4",
+   "destination_norm_id": "LIA1992",
+   "destination_norm_key": "LEI:8429/1992",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-9CC6494851BB"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_DBFD168517616A90",
+   "target_id": "CF88:ART.37:PAR.7",
+   "destination_norm_id": "PENDING_INGESTION:LEI:12813/2013",
+   "destination_norm_key": "LEI:12813/2013",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1",
+    "5",
+    "6"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "IMPLEMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-E1D20570E8DC"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_DEF3EB347A17C69C",
+   "target_id": "CF88:ART.40:PAR.1:INC.II",
+   "destination_norm_id": "PENDING_INGESTION:LC:152/2015",
+   "destination_norm_key": "LC:152/2015",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1",
+    "2"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-F3505EF9129C"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_6EB2A01EA2006B90",
+   "target_id": "CF88:ART.40:PAR.22",
+   "destination_norm_id": "PENDING_INGESTION:LEI:9717/1998",
+   "destination_norm_key": "LEI:9717/1998",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "TRANSITIONAL",
+   "effective_from": null,
+   "revalidate_on": "nova LC do art. 40, § 22",
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-DAD68D5F75A2"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_F6D3A0381BBB8273",
+   "target_id": "CF88:ART.43:PAR.1:INC.II",
+   "destination_norm_id": "PENDING_INGESTION:LC:124/2007",
+   "destination_norm_key": "LC:124/2007",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "ORGANIZA_INSTITUIÇÃO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_B7813300D0F2A509",
+   "target_id": "CF88:ART.43:PAR.1:INC.II",
+   "destination_norm_id": "PENDING_INGESTION:LC:125/2007",
+   "destination_norm_key": "LC:125/2007",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "ORGANIZA_INSTITUIÇÃO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_6508C65A05C8F3AE",
+   "target_id": "CF88:ART.43:PAR.1:INC.II",
+   "destination_norm_id": "PENDING_INGESTION:LC:129/2009",
+   "destination_norm_key": "LC:129/2009",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "ORGANIZA_INSTITUIÇÃO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "LEGACY:C1A:CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II"
+   ],
+   "supersedes": [
+    "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II"
+   ]
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_78B44FA53A7CFA1F",
+   "target_id": "CF88:ART.45:PAR.1",
+   "destination_norm_id": "PENDING_INGESTION:LC:78/1993",
+   "destination_norm_key": "LC:78/1993",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-EF96FA80B154"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_13BE53E28DEA053D",
+   "target_id": "CF88:ART.49:INC.II",
+   "destination_norm_id": "PENDING_INGESTION:LC:90/1997",
+   "destination_norm_key": "LC:90/1997",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "CONDIÇÃO_OU_EXCEÇÃO",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-9AB7A934F0B2"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_CD4E4C97533CE2B3",
+   "target_id": "CF88:ART.59:PAR.UNICO",
+   "destination_norm_id": "PENDING_INGESTION:LC:95/1998",
+   "destination_norm_key": "LC:95/1998",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-C6DD33BDB4E1"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_BD9FC610ED5FDF47",
+   "target_id": "CF88:ART.5:INC.LXXIX",
+   "destination_norm_id": "LGPD2018",
+   "destination_norm_key": "LEI:13709/2018",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-A809DD115D5A"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_3F8B6CD8F00E82CE",
+   "target_id": "CF88:ART.5:INC.XII",
+   "destination_norm_id": "PENDING_INGESTION:LEI:9296/1996",
+   "destination_norm_key": "LEI:9296/1996",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-BDB0C3B6A45D"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_52A1DB80E3A95146",
+   "target_id": "CF88:ART.5:INC.XLIII",
+   "destination_norm_id": "HEDIONDOS1990",
+   "destination_norm_key": "LEI:8072/1990",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1",
+    "2"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-06D0375C4D5A"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_42E8B53EE4137317",
+   "target_id": "CF88:ART.5:INC.XXXII",
+   "destination_norm_id": "CDC1990",
+   "destination_norm_key": "LEI:8078/1990",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-ABBD129F7E41"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_8FE11E64D678AB11",
+   "target_id": "CF88:ART.5:INC.XXXIII",
+   "destination_norm_id": "LAI2011",
+   "destination_norm_key": "LEI:12527/2011",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-514534A6E80F"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_1D316F647E5C2966",
+   "target_id": "CF88:ART.7:PAR.UNICO",
+   "destination_norm_id": "PENDING_INGESTION:LC:150/2015",
+   "destination_norm_key": "LC:150/2015",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-AFD5D339090B"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_F71BF0570FA10C6B",
+   "target_id": "CF88:ART.84:INC.XXII",
+   "destination_norm_id": "PENDING_INGESTION:LC:90/1997",
+   "destination_norm_key": "LC:90/1997",
+   "destination_route": "EXT_NORMAS",
+   "destination_resolution": "INGESTION_REQUIRED",
+   "destination_articles": [
+    "1"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_INGESTION_REQUIRED",
+   "device_blockers": [
+    "BLOCKED_INGESTION_REQUIRED"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_DEFERRED_UNTIL_INGESTION",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-245CA29208BF"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "ADDITION",
+   "relation_id": "REL_13491E375F9C1F98",
+   "target_id": "CF88:ART.9:PAR.2",
+   "destination_norm_id": "GREVE1989",
+   "destination_norm_key": "LEI:7783/1989",
+   "destination_route": "MAIN_CORPUS",
+   "destination_resolution": "MAIN_CORPUS",
+   "destination_articles": [
+    "14",
+    "15"
+   ],
+   "fallback": "OPEN_NORM_START",
+   "relation_type": "REGULAMENTA",
+   "temporal_status": "IN_FORCE",
+   "effective_from": null,
+   "revalidate_on": null,
+   "judicial_notice": null,
+   "legal_state": "LEGAL_APPROVED",
+   "materialized_in_additions": false,
+   "device_state": "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS",
+   "device_blockers": [
+    "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS"
+   ],
+   "target_check": "ENGINE_CURRENT",
+   "article_check": "ARTICLES_VERIFIED",
+   "device_article_gap": [],
+   "decision_ids": [
+    "CORRC0-142570A4C40E"
+   ],
+   "supersedes": []
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_DD3B2F9749F1A8A7@CF88:ART.5:INC.XLIII",
+   "target_id": "CF88:ART.5:INC.XLIII",
+   "destination_norm_id": "EXT_LEI13260_2016",
+   "relation_id": "REL_DD3B2F9749F1A8A7",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DD3B2F9749F1A8A7@CF88:ART.5:INC.XLIII",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_7525C422E1E1B4A1@CF88:ART.20:PAR.1",
+   "target_id": "CF88:ART.20:PAR.1",
+   "destination_norm_id": "EXT_LEI12734_2012",
+   "relation_id": "REL_7525C422E1E1B4A1",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_7525C422E1E1B4A1@CF88:ART.20:PAR.1",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_0628FE08FD9A170F@CF88:ART.20:PAR.1",
+   "target_id": "CF88:ART.20:PAR.1",
+   "destination_norm_id": "EXT_LEI9984_2000",
+   "relation_id": "REL_0628FE08FD9A170F",
+   "legacy_decision": "REPLACE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_0628FE08FD9A170F@CF88:ART.20:PAR.1",
+   "note": "REPLACE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_A0A931F9E613AA9F@CF88:ART.34:INC.V:AL.b",
+   "target_id": "CF88:ART.34:INC.V:AL.b",
+   "destination_norm_id": "EXT_LC63_1990",
+   "relation_id": "REL_A0A931F9E613AA9F",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_A0A931F9E613AA9F@CF88:ART.34:INC.V:AL.b",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_167CD90B031F3404@CF88:ART.37:INC.II",
+   "target_id": "CF88:ART.37:INC.II",
+   "destination_norm_id": "EXT_LEI14965_2024",
+   "relation_id": "REL_167CD90B031F3404",
+   "legacy_decision": "KEEP",
+   "action": "SUPPRESS_TEMPORAL",
+   "route_fix": null,
+   "until": "2028-01-01",
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_167CD90B031F3404@CF88:ART.37:INC.II",
+   "note": "VACATIO_LEGIS: política C2 DO_NOT_PUBLISH_AS_CURRENT"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.I",
+   "target_id": "CF88:ART.37:PAR.3:INC.I",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "relation_id": "REL_9DFE2FF258879347",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.I",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.II",
+   "target_id": "CF88:ART.37:PAR.3:INC.II",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "relation_id": "REL_9DFE2FF258879347",
+   "legacy_decision": "REPLACE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.II",
+   "note": "REPLACE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.III",
+   "target_id": "CF88:ART.37:PAR.3:INC.III",
+   "destination_norm_id": "EXT_LEI13460_2017",
+   "relation_id": "REL_9DFE2FF258879347",
+   "legacy_decision": "HOLD",
+   "action": "SUPPRESS_HOLD",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_HOLD",
+   "device_state": "REVIEW_HOLD_SUPPRESSED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_9DFE2FF258879347@CF88:ART.37:PAR.3:INC.III",
+   "note": "decisão humana HOLD preservada; não publicado no candidato; restaurável"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_521CE46DBB902C96@CF88:ART.40:PAR.4:INC.II",
+   "target_id": "CF88:ART.40:PAR.4:INC.II",
+   "destination_norm_id": "EXT_LC144_2014",
+   "relation_id": "REL_521CE46DBB902C96",
+   "legacy_decision": null,
+   "action": null,
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "HISTORICAL",
+   "device_state": "HISTORICAL_HIDDEN_UNCHANGED",
+   "decision_id": null,
+   "note": null
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_521CE46DBB902C96@CF88:ART.40:PAR.4:INC.III",
+   "target_id": "CF88:ART.40:PAR.4:INC.III",
+   "destination_norm_id": "EXT_LC144_2014",
+   "relation_id": "REL_521CE46DBB902C96",
+   "legacy_decision": null,
+   "action": null,
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "HISTORICAL",
+   "device_state": "HISTORICAL_HIDDEN_UNCHANGED",
+   "decision_id": null,
+   "note": null
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.I",
+   "target_id": "CF88:ART.43:PAR.1:INC.I",
+   "destination_norm_id": "EXT_LC112_2001",
+   "relation_id": "REL_4468A85CBDDD620A",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.I",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II",
+   "target_id": "CF88:ART.43:PAR.1:INC.II",
+   "destination_norm_id": "EXT_LC112_2001",
+   "relation_id": "REL_4468A85CBDDD620A",
+   "legacy_decision": "REPLACE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_4468A85CBDDD620A@CF88:ART.43:PAR.1:INC.II",
+   "note": "REPLACE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146",
+   "target_id": "CF88:ART.146",
+   "destination_norm_id": "EXT_LC199_2023",
+   "relation_id": "REL_5EB3E41B2BB014D3",
+   "legacy_decision": "RETARGET",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5EB3E41B2BB014D3@CF88:ART.146",
+   "note": "RETARGET"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_839B2CF9F1A80DA2@CF88:ART.150:PAR.7",
+   "target_id": "CF88:ART.150:PAR.7",
+   "destination_norm_id": "EXT_LC87_1996",
+   "relation_id": "REL_839B2CF9F1A80DA2",
+   "legacy_decision": "KEEP_WITH_ROUTE_FIX",
+   "action": "ROUTE_FIX",
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "10"
+    ]
+   },
+   "until": null,
+   "device_article_gap": [
+    "10"
+   ],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_839B2CF9F1A80DA2@CF88:ART.150:PAR.7",
+   "note": "rota corrigida, mesmo vínculo"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "destination_norm_id": "EXT_LEI11250_2005",
+   "relation_id": "REL_0920FF60E61E5491",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.II",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "destination_norm_id": "EXT_LEI8981_1995",
+   "relation_id": "REL_2C57B972486FE4AE",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.II",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.II",
+   "target_id": "CF88:ART.153:PAR.4:INC.II",
+   "destination_norm_id": "EXT_LEI9393_1996",
+   "relation_id": "REL_D152FF761345E231",
+   "legacy_decision": "KEEP_WITH_ROUTE_FIX",
+   "action": "ROUTE_FIX",
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "2"
+    ]
+   },
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.II",
+   "note": "rota corrigida, mesmo vínculo"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "destination_norm_id": "EXT_LEI11250_2005",
+   "relation_id": "REL_0920FF60E61E5491",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_0920FF60E61E5491@CF88:ART.153:PAR.4:INC.III",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "destination_norm_id": "EXT_LEI8981_1995",
+   "relation_id": "REL_2C57B972486FE4AE",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_2C57B972486FE4AE@CF88:ART.153:PAR.4:INC.III",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.III",
+   "target_id": "CF88:ART.153:PAR.4:INC.III",
+   "destination_norm_id": "EXT_LEI9393_1996",
+   "relation_id": "REL_D152FF761345E231",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_D152FF761345E231@CF88:ART.153:PAR.4:INC.III",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_FEB2B8ACAD1A48FA@CF88:ART.155:PAR.1:INC.III",
+   "target_id": "CF88:ART.155:PAR.1:INC.III",
+   "destination_norm_id": "EXT_LC87_1996",
+   "relation_id": "REL_FEB2B8ACAD1A48FA",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_FEB2B8ACAD1A48FA@CF88:ART.155:PAR.1:INC.III",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_DD78F9101785B52A@CF88:ART.155:PAR.2:INC.XII",
+   "target_id": "CF88:ART.155:PAR.2:INC.XII",
+   "destination_norm_id": "EXT_LC87_1996",
+   "relation_id": "REL_DD78F9101785B52A",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DD78F9101785B52A@CF88:ART.155:PAR.2:INC.XII",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II",
+   "target_id": "CF88:ART.158:PAR.1:INC.II",
+   "destination_norm_id": "EXT_LC63_1990",
+   "relation_id": "REL_DF3F18219DDA1CD5",
+   "legacy_decision": "RETARGET",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_DF3F18219DDA1CD5@CF88:ART.158:PAR.1:INC.II",
+   "note": "RETARGET"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I",
+   "target_id": "CF88:ART.161:INC.I",
+   "destination_norm_id": "EXT_LC62_1989",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "legacy_decision": "REPLACE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.I",
+   "note": "REPLACE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.II",
+   "target_id": "CF88:ART.161:INC.II",
+   "destination_norm_id": "EXT_LC62_1989",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.II",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.III",
+   "target_id": "CF88:ART.161:INC.III",
+   "destination_norm_id": "EXT_LC62_1989",
+   "relation_id": "REL_B41DCE7A7582235E",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_B41DCE7A7582235E@CF88:ART.161:INC.III",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_70C4549A507F6E00@CF88:ART.182",
+   "target_id": "CF88:ART.182",
+   "destination_norm_id": "EXT_LEI13425_2017",
+   "relation_id": "REL_70C4549A507F6E00",
+   "legacy_decision": "RETARGET",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_70C4549A507F6E00@CF88:ART.182",
+   "note": "PRESENTATION_EQUIVALENT_RETARGET_NOOP (ART = CAPUT)"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I",
+   "target_id": "CF88:ART.195:INC.I",
+   "destination_norm_id": "EXT_LC70_1991",
+   "relation_id": "REL_EA8171739858C1AC",
+   "legacy_decision": "RETARGET",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.I",
+   "note": "RETARGET"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.II",
+   "target_id": "CF88:ART.195:INC.II",
+   "destination_norm_id": "EXT_LC70_1991",
+   "relation_id": "REL_EA8171739858C1AC",
+   "legacy_decision": "REPLACE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:INC.II",
+   "note": "REPLACE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.1",
+   "target_id": "CF88:ART.195:PAR.1",
+   "destination_norm_id": "EXT_LC70_1991",
+   "relation_id": "REL_EA8171739858C1AC",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.1",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.2",
+   "target_id": "CF88:ART.195:PAR.2",
+   "destination_norm_id": "EXT_LC70_1991",
+   "relation_id": "REL_EA8171739858C1AC",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_EA8171739858C1AC@CF88:ART.195:PAR.2",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.I",
+   "target_id": "CF88:ART.201:INC.I",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "relation_id": "REL_294595B0B7254C57",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.I",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.II",
+   "target_id": "CF88:ART.201:INC.II",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "relation_id": "REL_294595B0B7254C57",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.II",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.III",
+   "target_id": "CF88:ART.201:INC.III",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "relation_id": "REL_294595B0B7254C57",
+   "legacy_decision": "KEEP_WITH_ROUTE_FIX",
+   "action": "ROUTE_FIX",
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "2"
+    ]
+   },
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.III",
+   "note": "rota corrigida, mesmo vínculo"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.IV",
+   "target_id": "CF88:ART.201:INC.IV",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "relation_id": "REL_294595B0B7254C57",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.IV",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.V",
+   "target_id": "CF88:ART.201:INC.V",
+   "destination_norm_id": "EXT_LEI7998_1990",
+   "relation_id": "REL_294595B0B7254C57",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:C1A:CORRELATA:REL_294595B0B7254C57@CF88:ART.201:INC.V",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_E3E07057AD3E162C@CF88:ART.202:CAPUT",
+   "target_id": "CF88:ART.202:CAPUT",
+   "destination_norm_id": "EXT_LC109_2001",
+   "relation_id": "REL_E3E07057AD3E162C",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_E3E07057AD3E162C@CF88:ART.202:CAPUT",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.4",
+   "target_id": "CF88:ART.202:PAR.4",
+   "destination_norm_id": "EXT_LC108_2001",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "legacy_decision": "KEEP",
+   "action": "KEEP",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.4",
+   "note": "KEEP"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.5",
+   "target_id": "CF88:ART.202:PAR.5",
+   "destination_norm_id": "EXT_LC108_2001",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "legacy_decision": "KEEP_WITH_ROUTE_FIX",
+   "action": "ROUTE_FIX",
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "26"
+    ]
+   },
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.5",
+   "note": "rota corrigida, mesmo vínculo"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.6",
+   "target_id": "CF88:ART.202:PAR.6",
+   "destination_norm_id": "EXT_LC108_2001",
+   "relation_id": "REL_D7475B8BEB5B6C53",
+   "legacy_decision": "KEEP_WITH_ROUTE_FIX",
+   "action": "ROUTE_FIX",
+   "route_fix": {
+    "mode": "ABRIR_ARTIGO_INTERNO",
+    "articles": [
+     "11",
+     "20"
+    ]
+   },
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_KEPT",
+   "device_state": "DEVICE_READY",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_D7475B8BEB5B6C53@CF88:ART.202:PAR.6",
+   "note": "rota corrigida, mesmo vínculo"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I",
+   "target_id": "CF88:ART.214:INC.I",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "legacy_decision": "RETARGET",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.I",
+   "note": "RETARGET"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.II",
+   "target_id": "CF88:ART.214:INC.II",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.II",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.III",
+   "target_id": "CF88:ART.214:INC.III",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.III",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.IV",
+   "target_id": "CF88:ART.214:INC.IV",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.IV",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.V",
+   "target_id": "CF88:ART.214:INC.V",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.V",
+   "note": "REMOVE"
+  },
+  {
+   "kind": "LEGACY",
+   "reference_id": "CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.VI",
+   "target_id": "CF88:ART.214:INC.VI",
+   "destination_norm_id": "EXT_LEI15388_2026",
+   "relation_id": "REL_5084B9E9143D03D6",
+   "legacy_decision": "REMOVE",
+   "action": "EXCLUDE",
+   "route_fix": null,
+   "until": null,
+   "device_article_gap": [],
+   "legal_state": "LEGAL_REMOVED",
+   "device_state": "MATERIAL_MISMATCH_EXCLUDED",
+   "decision_id": "LEGACY:LEGACY_FULL_REVIEW:CORRELATA:REL_5084B9E9143D03D6@CF88:ART.214:INC.VI",
+   "note": "REMOVE"
+  }
+ ]
+}

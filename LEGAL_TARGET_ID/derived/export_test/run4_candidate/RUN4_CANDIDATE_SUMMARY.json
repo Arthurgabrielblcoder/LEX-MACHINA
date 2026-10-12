@@ -1,0 +1,79 @@
+{
+ "status": "RUN4_CANDIDATE_HOST_ONLY",
+ "as_of": "2026-10-12",
+ "principle": "LEGAL_APPROVED != DEVICE_READY",
+ "run3": {
+  "correlata_total": 46,
+  "visible": 44,
+  "hidden_historical": 2
+ },
+ "legacy_actions": {
+  "EXCLUDE": 27,
+  "KEEP": 10,
+  "ROUTE_FIX": 5,
+  "SUPPRESS_HOLD": 1,
+  "SUPPRESS_TEMPORAL": 1
+ },
+ "legacy_device_states": {
+  "DEVICE_READY": 15,
+  "HISTORICAL_HIDDEN_UNCHANGED": 2,
+  "MATERIAL_MISMATCH_EXCLUDED": 27,
+  "REVIEW_HOLD_SUPPRESSED": 1,
+  "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE": 1
+ },
+ "additions_register": 87,
+ "additions_materialized": 11,
+ "additions_device_states": {
+  "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS": 21,
+  "BLOCKED_INGESTION_REQUIRED": 55,
+  "DEVICE_READY": 9,
+  "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE": 2
+ },
+ "additions_blockers": {
+  "BLOCKED_DEVICE_JUDICIAL_NOTICE_UNSUPPORTED": 2,
+  "BLOCKED_DEVICE_ORIGIN_UNVERIFIED": 2,
+  "BLOCKED_DEVICE_ROUTE_MAIN_CORPUS": 21,
+  "BLOCKED_INGESTION_REQUIRED": 55,
+  "TEMPORAL_SUPPRESSED_UNTIL_EFFECTIVE": 2
+ },
+ "adct_runtime_confirmed": {
+  "total": 2,
+  "device_ready": 0
+ },
+ "legal_view": {
+  "entries": 133,
+  "legal_current_relations": 103
+ },
+ "device_ready": {
+  "correlata_links": 26,
+  "correlata_visible": 24,
+  "correlata_hidden_historical": 2,
+  "new_correlata_links": 9,
+  "relacoes_rows": 26,
+  "firmware_cache": {
+   "used": {
+    "lookup_rows": 26,
+    "norms": 15
+   },
+   "limit": {
+    "lookup_rows": 64,
+    "norms": 32
+   }
+  },
+  "non_correlata_links_identical_to_run3": true
+ },
+ "files": {
+  "CF88_REFERENCES_EXPORT.json": {
+   "sha256": "f26cbe21e40682424a86fc8f7127119c9495915f937b6d062523d83c905614ed",
+   "bytes": 453317
+  },
+  "REF_LOOKUP.IDX": {
+   "sha256": "27c67eea6a38e3cba012d4a3d02c3856d37fd4cd1bae15473854fab0edea5430",
+   "bytes": 6702
+  },
+  "REF_PAYLOAD.IDX": {
+   "sha256": "235b8db6c8d1c6b608853ec2a659b7b911d1d77d61983947555b151cc913013b",
+   "bytes": 65248
+  }
+ }
+}

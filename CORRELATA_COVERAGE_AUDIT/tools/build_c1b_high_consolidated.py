@@ -62,7 +62,8 @@ L14701_JUDICIAL = dict(
                    '14, 18, §§ 1º e 2º, 20, caput, e 22, entre outros.',
     embargos_status='PENDING: segundos embargos de declaração em sessão virtual; pedido de vista do Min. Dias Toffoli em 19/08/2026; '
                     'último andamento oficial em 02/09/2026 (petição); sem julgamento final dos embargos até 2026-10-11.',
-    status_checked_until='2026-10-11', REVALIDATE_ON_FINAL_ED=True, CORRELATA_REQUIRES_JUDICIAL_STATUS=True)
+    status_checked_until='2026-10-11', REVALIDATE_ON_FINAL_ED=True, CORRELATA_REQUIRES_JUDICIAL_STATUS=True,
+    notice_short='STF: inconstitucionalidade parcial (ADC 87). Embargos pendentes.')
 L14701_FINAL_T = B3.TS('PARTIAL_EFFECTS', effective_from='2023-10-20', revalidate_on='julgamento final dos embargos de declaração na ADC 87',
                        note='STF, mérito em 2025-12-19: inconstitucionalidade parcial e interpretação conforme; o texto original não está '
                             'integralmente vigente')
