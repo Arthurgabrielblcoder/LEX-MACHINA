@@ -37,6 +37,7 @@ PIN = AUDIT / 'inputs/CORRELATA_EVIDENCE_PIN.json'
 CARD = AUDIT / 'C3A/inputs/card_relations_v2'
 MAIN_INDEX = AUDIT / 'C3A/inputs/main_corpus_article_index.json'
 EXT_TEXT_INDEX = AUDIT / 'C3A/inputs/ext_text_article_index.json'
+CARD_TARGETS = AUDIT / 'C3A/inputs/card_lex_v1/CF88_TARGETS.IDX'   # physical baseline (sha checked against the pin)
 EXT_TEXTS = AUDIT / 'C3A/inputs/ext_texts'          # card texts frozen for the EXT_ARTIGOS repair (sha checked against the pin)
 STATUS = 'RUN4_CANDIDATE_HOST_ONLY'
 RUN3_FILES = ('CF88_REFERENCES_EXPORT.json', 'REF_LOOKUP.IDX', 'REF_PAYLOAD.IDX')
@@ -176,6 +177,21 @@ def build(out):
             mode, arts = mode_of[(O.origin_of(e['target_id']), e['relation_id'])]
             e['device_article_resolution'] = ('DIRECT_ARTICLE_RESOLUTION' if mode == 'ABRIR_ARTIGO_INTERNO' else
                                               ('FALLBACK_OPEN_NORM_START' if e.get('device_article_gap') else 'OPEN_NORM_START_BY_DECISION'))
+    # C3B.1 root cause 2: one device relation id per RELACOES row (REF reference id -> exactly one RELACOES line)
+    dev_id = O.unique_device_relation_ids(rows)
+    for e in entries:
+        key = (O.origin_of(e['target_id']), e['relation_id'])
+        if e.get('kind') in ('ADDITION', 'LEGACY') and key in dev_id:
+            e['device_relation_id'] = dev_id[key]
+    renamed = O.apply_device_relation_ids(device_links, dev_id)
+    rows = [tuple(r[:5]) + (dev_id[(tuple(r[:5]), r[5])],) + tuple(r[6:]) for r in rows]
+    device_links.sort(key=lambda l: (reg.order(NORM, l['target_id']), E.TYPE_ORDER.get(l['reference_type'], 9), l['label'], l['reference_id']))
+    # C3B.1 root cause 1: availability flag C of CF88_TARGETS.IDX derived from the SAME device export (only position [1] changes)
+    tb = CARD_TARGETS.read_bytes()
+    if sha(tb) != load(PIN)['physical_sd']['files']['99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX']['sha256']:
+        raise O.OverlayError('TARGETS_BASELINE_NOT_PHYSICAL', CARD_TARGETS.name)
+    targets_b, flag_changes = O.retarget_c_flags(tb, {l['target_id'] for l in device_links
+                                                     if l['reference_type'] == 'CORRELATA' and l['visibility'] == 'CURRENT_VISIBLE'})
     rel_b, look_b, caps = O.write_relacoes(rows, ctx)
     for k, lim in O.FIRMWARE_CACHE.items():
         if caps[k] > lim:
@@ -187,6 +203,7 @@ def build(out):
     (dev_dir / 'RELACOES.IDX').write_bytes(rel_b)
     (dev_dir / 'REL_LOOKUP.IDX').write_bytes(look_b)
     (dev_dir / 'EXT_ARTIGOS.IDX').write_bytes(ext_idx)
+    (dev_dir / 'CF88_TARGETS.IDX').write_bytes(targets_b)
 
     def cnt(kind, key='device_state'):
         return dict(sorted(collections.Counter(e[key] for e in entries if e['kind'] == kind).items()))
@@ -208,6 +225,7 @@ def build(out):
                           correlata_hidden_historical=sum(l['reference_type'] == 'CORRELATA' and l['visibility'] != 'CURRENT_VISIBLE' for l in device_links),
                           new_correlata_links=len(new_links), relacoes_rows=len(rows), firmware_cache=dict(used=caps, limit=O.FIRMWARE_CACHE),
                           ext_artigos_index_repairs=index_repairs,
+                          device_relation_ids_renamed=renamed, target_c_flag_changes=flag_changes,
                           device_article_gaps=sum(bool(e.get('device_article_gap')) for e in entries if e['device_state'] == 'DEVICE_READY'),
                           device_article_resolution=dict(sorted(collections.Counter(e['device_article_resolution'] for e in entries
                                                                                      if e['device_state'] == 'DEVICE_READY').items())),

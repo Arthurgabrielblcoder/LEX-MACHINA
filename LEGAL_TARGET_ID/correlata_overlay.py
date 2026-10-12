@@ -357,3 +357,61 @@ def write_relacoes(rows, ctx):
     rel = head + b''.join(body)
     look = ('\n'.join(LOOKUP_HEADER + tuple(lookup)) + '\n').encode('utf-8')
     return rel, look, dict(lookup_rows=len(lookup), norms=len({r[6] for r in rows}))
+
+
+# ---------------------------------------------------------------- C3B.1: device relation ids and TARGETS availability flags
+def unique_device_relation_ids(rows):
+    """One device relation id per RELACOES row. The firmware resolves a REF reference id by the FIRST RELACOES line containing
+    "|<id>|" (lexV1AdicionarCorrelataPorId), so an id shared by several rows (same editorial relation fanned out to several origins)
+    opens the wrong route. Rows whose id is already unique keep it; shared ids get a deterministic per-row id
+    (origin x parent id x destination x mode x articles). Returns {(origin, parent_id): device_id}."""
+    from collections import Counter
+    count = Counter(r[5] for r in rows)
+    out = {}
+    for r in rows:
+        o = tuple(r[:5])
+        if count[r[5]] == 1:
+            out[(o, r[5])] = r[5]
+        else:
+            h = hashlib.sha256('|'.join(('DEVICE_RELATION',) + o + (r[5], r[6], r[8], r[9])).encode('utf-8')).hexdigest()
+            out[(o, r[5])] = 'REL_' + h[:16].upper()
+    if len(set(out.values())) != len(out) or len(out) != len(rows):
+        raise OverlayError('DEVICE_RELATION_ID_COLLISION', str(len(rows)))
+    return out
+
+
+def apply_device_relation_ids(links, dev_id):
+    """Point every CORRELATA link of the device export at its device relation id (parent id kept in provenance)."""
+    renamed = []
+    for l in links:
+        if l['reference_type'] != 'CORRELATA':
+            continue
+        parent = l['payload']['relacao_id']
+        new = dev_id[(origin_of(l['target_id']), parent)]
+        if new == parent:
+            continue
+        l['reference_id'] = f"CORRELATA:{new}@{l['target_id']}"
+        l['source_reference_id'] = new
+        l['payload'] = dict(l['payload'], relacao_id=new)
+        l['provenance'] = dict(l['provenance'], parent_relation_id=parent, relacao_id=new)
+        renamed.append(dict(target_id=l['target_id'], parent_relation_id=parent, device_relation_id=new))
+    return renamed
+
+
+def retarget_c_flags(targets_bytes, correlata_targets):
+    """CF88_TARGETS.IDX with ONLY the C position ([1]) recomputed: 'C' iff the exact target has a CURRENT_VISIBLE CORRELATA link in the
+    device export (same rule as the SD staging generator: no inheritance, ART and ART:CAPUT are separate keys). Every other byte is kept."""
+    out, changes = [], []
+    for line in targets_bytes.decode('utf-8').split('\n'):
+        if line and not line.startswith('#'):
+            tid, kind, status, flags = line.split('|')
+            want = 'C' if tid in correlata_targets else '-'
+            if flags[1] != want:
+                changes.append(dict(target_id=tid, before=flags, after=flags[0] + want + flags[2:], change='GAINED_C' if want == 'C' else 'LOST_C'))
+                line = '|'.join((tid, kind, status, flags[0] + want + flags[2:]))
+        out.append(line)
+    known = {l.split('|')[0] for l in targets_bytes.decode('utf-8').split('\n') if l and not l.startswith('#')}
+    missing = sorted(set(correlata_targets) - known)
+    if missing:
+        raise OverlayError('CORRELATA_TARGET_NOT_IN_DEVICE_TARGETS', missing[0])
+    return '\n'.join(out).encode('utf-8'), changes

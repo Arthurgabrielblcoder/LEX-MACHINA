@@ -22,7 +22,7 @@ ADDS = R4.load(R4.ADDITIONS)['records']
 SUMMARY = R4.load(R4.OUT / 'RUN4_CANDIDATE_SUMMARY.json')
 VIEW = R4.load(R4.OUT / 'legal_view/CF88_CORRELATA_LEGAL_VIEW.json')
 DEV = R4.OUT / 'device_ready'
-PKG = P.OUT
+PKG = AUDIT / 'C3B_PHYSICAL_TEST_PACKAGE'      # C3B package as tested physically (failed; frozen evidence, see C3B.1)
 DIFF = json.loads((PKG / 'C3B_FILE_DIFF.json').read_text(encoding='utf-8'))
 PHYS = P.physical()
 TEXTS = R4.ext_texts()
@@ -174,7 +174,7 @@ class Package(unittest.TestCase):
             with tempfile.TemporaryDirectory() as t:
                 trees.append(P.build(Path(t) / 'pkg'))
         self.assertEqual(trees[0], trees[1])
-        self.assertEqual(trees[0], P.tree(PKG))
+        self.assertEqual(trees[0], P.tree(P.OUT))                 # current package builder output (C3B.1)
 
 
 if __name__ == '__main__':
