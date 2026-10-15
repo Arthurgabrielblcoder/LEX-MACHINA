@@ -1,0 +1,347 @@
+{
+  "schema_version": 1,
+  "artifact": "MACRO08_HUMAN_REVIEW_DECISIONS",
+  "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+  "review_date": "2026-10-06",
+  "branch": "cf-macro-176-250-adct-cloud",
+  "base_commit": "1286875ddeb19f2c4608ee12a766dd0cd02462df",
+  "review_summary": {
+    "total_explanations": 179,
+    "approved_unchanged": 148,
+    "adjust_then_approve": 31,
+    "rejected": 0,
+    "adjusted_by_queue": {
+      "A": 20,
+      "B": 7,
+      "C": 4
+    },
+    "d_previously_resolved": 22
+  },
+  "application_policy": "Apply only these 31 human-approved patches to authoring sources; leave the other 148 explanations byte-unchanged. Then rebuild all Macro08 derived artifacts, recalculate hashes/index/determinism evidence, run validation suites, and only then promote human review statuses.",
+  "validator_lessons": [
+    "SEMANTIC_EQUIVALENCE_OVER_LEXICAL_MATCH",
+    "OVERVIEW_MAY_SUMMARIZE_CHILDREN",
+    "SEMANTIC_REFERENCE_CAN_REPLACE_LITERAL_CROSS_REFERENCE",
+    "CROSS_DEVICE_ATTRIBUTION_ERROR",
+    "NO_EXTERNAL_PROCEDURAL_STEP_IN_T1",
+    "NO_EXTERNAL_REQUIREMENT_IN_EXAMPLE",
+    "NO_TELEOLOGY_AS_RULE",
+    "DESVINCULATION_IS_NOT_FREE_SPENDING",
+    "PRESERVE_LITERALITY_WHEN_SOURCE_HAS_INTERNAL_SCOPE_TENSION"
+  ],
+  "patches": [
+    {
+      "target_id": "CF88:ART.177:PAR.4",
+      "queue": "C",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "EXAMPLE_FORM_OF_ACT_OVERCLAIM",
+      "set": {
+        "exemplo_pratico": "Diante de uma alta no preço do diesel, o Poder Executivo reduz a alíquota da contribuição sobre esse combustível. Meses depois, pode restabelecê-la por ato do Poder Executivo, sem precisar esperar o exercício seguinte."
+      }
+    },
+    {
+      "target_id": "CF88:ART.194",
+      "queue": "C",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "CROSS_DEVICE_ATTRIBUTION_ERROR",
+      "set": {
+        "o_que_significa": "A seguridade social reúne saúde, previdência e assistência social, mas cada área possui regime próprio.\nAs ações vêm do poder público e também da sociedade.\nA saúde é direito de todos, nos termos do art. 196; a previdência tem caráter contributivo, conforme o art. 201; e a assistência social é prestada a quem dela necessitar, nos termos do art. 203."
+      }
+    },
+    {
+      "target_id": "CF88:ART.227:PAR.3",
+      "queue": "C",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "ENUMERATION_SCOPE_LOSS",
+      "set": {
+        "o_que_diz": "O § 3º lista sete aspectos da proteção especial: idade mínima de quatorze anos para começar a trabalhar, observado o art. 7º, XXXIII; garantia de direitos previdenciários e trabalhistas; acesso do trabalhador adolescente e jovem à escola; conhecimento pleno e formal da acusação de ato infracional, igualdade entre as partes no processo e defesa técnica por profissional habilitado; observância da brevidade, da excepcionalidade e da condição de pessoa em desenvolvimento ao aplicar medida privativa de liberdade; estímulo público, nos termos da lei, inclusive por assistência jurídica, incentivos fiscais e subsídios, ao acolhimento por guarda de criança ou adolescente órfão ou abandonado; e programas de prevenção e atendimento especializado à criança, ao adolescente e ao jovem dependentes de entorpecentes e drogas afins."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.101",
+      "queue": "C",
+      "decision": "ADJUST_PROVENANCE_THEN_APPROVE",
+      "reason_code": "OFFICIAL_CANONICAL_ANNOTATION",
+      "set_metadata": {
+        "external_layer_notes_provenance": "OFFICIAL_CANONICAL_ANNOTATION",
+        "note": "A remissão oficial do § 5º às ADIs 7047 e 7064 é provenance da compilação oficial; conteúdo e alcance das decisões permanecem na camada JURISPRUDÊNCIA."
+      }
+    },
+    {
+      "target_id": "CF88:ART.182:PAR.4",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "EXTERNAL_PROCEDURAL_DETAIL_IN_EXAMPLE",
+      "set": {
+        "exemplo_pratico": "Um terreno no centro de uma cidade fica anos sem uso em área incluída no plano diretor. O Município, com lei específica e nos termos da lei federal, exige o adequado aproveitamento. Persistindo o descumprimento, aplica as medidas sucessivas previstas no § 4º, até a desapropriação com pagamento em títulos."
+      }
+    },
+    {
+      "target_id": "CF88:ART.195:PAR.7",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "TAXONOMIC_GLOSSARY_RISK",
+      "set": {
+        "palavras_dificeis_replace": [
+          {
+            "match_term": "Isenção",
+            "replacement": {
+              "termo": "Isentas (no texto constitucional)",
+              "explicacao": "expressão usada pelo § 7º para a dispensa de contribuição; sua qualificação jurídica como imunidade é tratada na jurisprudência."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target_id": "CF88:ART.198:PAR.4",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "EXTERNAL_REQUIREMENT_IN_EXAMPLE",
+      "set": {
+        "o_que_significa": "Para esses agentes, o § 4º prevê admissão por processo seletivo público, de acordo com a natureza e a complexidade das atribuições e com os requisitos específicos para a atuação.\nO regime e o piso salarial são definidos por lei federal, e a União presta assistência financeira complementar aos demais entes para o cumprimento do piso, nos termos da lei.\nAlém das hipóteses gerais dos arts. 41 e 169, o servidor que exerça funções equivalentes pode perder o cargo se descumprir os requisitos específicos fixados em lei para o exercício da função.",
+        "exemplo_pratico": "Um Município abre processo seletivo público para admitir agentes comunitários de saúde. Depois da admissão, o agente deve cumprir os requisitos específicos que a lei fixar para o exercício da função; o descumprimento pode levar à perda do cargo nos termos do § 6º.",
+        "atencao": "Os requisitos específicos da função são os fixados em lei. Os §§ 7º a 11 trazem regras sobre o vencimento desses agentes."
+      }
+    },
+    {
+      "target_id": "CF88:ART.198:PAR.12",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "SCOPE_NARROWING_AND_TELEOLOGY",
+      "set": {
+        "o_que_significa": "Os pisos não são fixados pela Constituição: ela exige uma lei federal que os institua para enfermeiro, técnico de enfermagem, auxiliar de enfermagem e parteira.\nOs pisos devem ser observados por pessoas jurídicas de direito público e de direito privado.\nA União presta assistência financeira complementar, nos termos da lei, aos entes federativos, às entidades filantrópicas e aos prestadores de serviços contratualizados que atendam no mínimo 60% de seus pacientes pelo sistema único, para o cumprimento dos pisos."
+      }
+    },
+    {
+      "target_id": "CF88:ART.231",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "OVERBROAD_USUFRUCT_SCOPE",
+      "set": {
+        "o_que_diz": "O art. 231 reconhece a organização social, os costumes, as línguas, as crenças e as tradições dos índios, e os seus direitos originários sobre as terras de ocupação tradicional, cabendo à União demarcá-las e proteger e fazer respeitar todos os seus bens. Os parágrafos definem essas terras e as destinam à posse permanente dos índios, com usufruto exclusivo das riquezas do solo, dos rios e dos lagos nelas existentes. Também condicionam o aproveitamento de recursos hídricos e minerais à autorização do Congresso, tornam as terras inalienáveis e indisponíveis e os direitos imprescritíveis e proíbem a remoção dos grupos, salvo em hipóteses excepcionais. Por fim, anulam os atos de ocupação e domínio dessas terras e afastam a regra do art. 174, §§ 3º e 4º."
+      }
+    },
+    {
+      "target_id": "CF88:ART.245",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "OVER_NARROW_PARAPHRASE",
+      "set": {
+        "o_que_significa": "Quando uma pessoa é vitimada por crime doloso, seus herdeiros e dependentes carentes podem ficar desamparados.\nO artigo prevê que o poder público lhes dê assistência, nos casos e condições que a lei definir.\nEssa assistência não afasta a responsabilidade civil do autor do ilícito."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.49",
+      "queue": "B",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "TELEOLOGY_AND_OMITTED_CONSEQUENCE",
+      "set": {
+        "o_que_diz": "O art. 49 do ADCT manda a lei dispor sobre a enfiteuse em imóveis urbanos e faculta aos foreiros, se ela for extinta, remir o aforamento adquirindo o domínio direto, conforme os contratos. Sem cláusula contratual, valem os critérios da legislação especial dos imóveis da União. Os direitos dos atuais ocupantes inscritos ficam assegurados por outra modalidade de contrato. A enfiteuse continua a ser aplicada aos terrenos de marinha e acrescidos, situados na faixa de segurança a partir da orla. Remido o foro, o antigo titular deve entregar a documentação ao registro de imóveis em noventa dias, sob pena de responsabilidade.",
+        "o_que_significa": "Na enfiteuse, o domínio do imóvel se divide: um titular tem o domínio direto e outro, o foreiro, usa o imóvel pagando uma prestação anual, o foro.\nO artigo disciplina a hipótese de extinção da enfiteuse em imóveis urbanos e permite que o foreiro, nessa situação, remia o aforamento e adquira o domínio direto conforme o contrato.\nNos terrenos de marinha, porém, a enfiteuse continua aplicável."
+      }
+    },
+    {
+      "target_id": "CF88:ART.184",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "OVER_NARROW_INDEMNITY_PARAPHRASE",
+      "set": {
+        "o_que_significa": "A competência para desapropriar para reforma agrária é da União, e o alvo é o imóvel rural que não cumpre a função social.\nA indenização é paga em títulos da dívida agrária, preservado o valor real, ressalvadas as benfeitorias úteis e necessárias, que são indenizadas em dinheiro.\nDepois do decreto que declara o imóvel de interesse social para fins de reforma agrária, a União pode propor a ação de desapropriação, cujo procedimento contraditório especial e sumário é disciplinado por lei complementar.\nAs operações de transferência de imóveis desapropriados para fins de reforma agrária são isentas de impostos federais, estaduais e municipais."
+      }
+    },
+    {
+      "target_id": "CF88:ART.195",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "BUDGET_SOURCE_OVERGENERALIZATION",
+      "set": {
+        "o_que_significa": "A seguridade é financiada de forma indireta por recursos dos orçamentos públicos e de forma direta pelas contribuições sociais previstas no artigo.\nCada inciso indica quem paga ou sobre o que incide: empresas, trabalhadores, concursos de prognósticos, importações e, no inciso V, bens e serviços.\nO § 1º separa as receitas estaduais e municipais da seguridade do orçamento da União. O § 3º impede a pessoa jurídica em débito com a seguridade de contratar com o poder público. O § 4º permite à lei criar outras fontes, observado o art. 154, I.\nOs §§ 9º, 11 e 12 trazem regras de alíquotas diferenciadas, de parcelamento e de não cumulatividade; o § 13 está revogado."
+      }
+    },
+    {
+      "target_id": "CF88:ART.195:PAR.5",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "PROCEDURAL_REQUIREMENT_INVENTED",
+      "set": {
+        "exemplo_pratico": "Uma lei pretende estender um benefício previdenciário a uma nova categoria de trabalhadores. Essa extensão só pode existir se houver a correspondente fonte de custeio total."
+      }
+    },
+    {
+      "target_id": "CF88:ART.201",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "CONTRIBUTORY_RULE_OVERGENERALIZATION",
+      "set": {
+        "o_que_significa": "O Regime Geral de Previdência Social tem caráter contributivo e filiação obrigatória nos casos previstos em lei.\nA filiação obrigatória significa que quem exerce atividade remunerada abrangida pelo regime entra nele por força da lei.\nO equilíbrio financeiro e atuarial exige que as regras considerem o que entra e o que sai, inclusive no longo prazo.\nOs parágrafos detalham o sistema: benefícios com reajuste para manter o valor real (§ 4º) e salários de contribuição atualizados (§ 3º); gratificação natalina com base nos proventos de dezembro (§ 6º); idade reduzida para o professor da educação básica (§ 8º); proibição de tempo de contribuição fictício (§ 14); acumulação de benefícios disciplinada por lei complementar (§ 15).",
+        "palavras_dificeis_replace": [
+          {
+            "match_term": "Caráter contributivo",
+            "replacement": {
+              "termo": "Caráter contributivo",
+              "explicacao": "característica do regime previdenciário financiado por contribuições, conforme as regras legais de filiação e benefícios."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "target_id": "CF88:ART.201:PAR.1",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "EXTERNAL_THRESHOLD_IN_EXAMPLE",
+      "set": {
+        "exemplo_pratico": "Um trabalhador exerce atividade com efetiva exposição a ruído e a produtos químicos prejudiciais à saúde. Ele pode ter idade e tempo de contribuição diferenciados para aposentadoria, nos termos da lei complementar, por causa da exposição efetiva, e não pelo nome do cargo que ocupa."
+      }
+    },
+    {
+      "target_id": "CF88:ART.208:INC.I",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "CROSS_DEVICE_DUTY_ATTRIBUTION",
+      "set": {
+        "o_que_significa": "Dos 4 aos 17 anos, a educação básica é obrigatória e gratuita.\nO Estado deve assegurar sua oferta, e quem passou dessa idade sem ter tido acesso à educação básica não perde o direito à oferta gratuita.\nAssim, o inciso protege também jovens e adultos que não estudaram na idade própria."
+      }
+    },
+    {
+      "target_id": "CF88:ART.209",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "PROCEDURAL_SEQUENCE_INVENTED",
+      "set": {
+        "o_que_significa": "A iniciativa privada pode oferecer ensino, desde que cumpra as duas condições do artigo.\nA primeira é observar as normas gerais da educação nacional.\nA segunda é submeter-se à autorização e à avaliação de qualidade pelo poder público."
+      }
+    },
+    {
+      "target_id": "CF88:ART.213",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "TELEOLOGY_NOT_IN_TEXT",
+      "set": {
+        "o_que_significa": "A regra é dinheiro público para escola pública.\nO texto admite que recursos também sejam dirigidos a escolas comunitárias, confessionais ou filantrópicas definidas em lei, desde que cumpram as condições constitucionais.\nAs bolsas de estudo do § 1º são admitidas quando faltarem vagas e cursos regulares da rede pública na localidade da residência do educando, permanecendo o dever de o poder público investir prioritariamente na expansão de sua rede naquela localidade."
+      }
+    },
+    {
+      "target_id": "CF88:ART.220:PAR.3",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "ABSOLUTE_INFERENCE",
+      "set": {
+        "o_que_significa": "No inciso I, o texto atribui ao poder público a função de informar sobre a natureza das diversões e espetáculos, as faixas etárias a que não se recomendam e os locais e horários em que sua apresentação se mostre inadequada.\nO inciso II manda a lei criar meios de defesa contra determinada programação de rádio e televisão e contra propaganda de produtos, práticas e serviços nocivos à saúde e ao meio ambiente.\nPara cinco grupos de produtos e serviços, o § 4º admite restrições legais à propaganda comercial e exige advertência sobre malefícios quando necessário."
+      }
+    },
+    {
+      "target_id": "CF88:ART.224",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "EXTERNAL_FUNCTION_ATTRIBUTION",
+      "set": {
+        "o_que_significa": "O Conselho de Comunicação Social é órgão auxiliar do Congresso Nacional para os efeitos do capítulo da comunicação social.\nO artigo não define sua composição nem detalha suas atribuições; esses pontos ficam para a lei."
+      }
+    },
+    {
+      "target_id": "CF88:ART.236",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "ACTOR_ATTRIBUTION_NOT_IN_TEXT",
+      "set": {
+        "exemplo_pratico": "O titular de um cartório de registro de imóveis se aposenta. A serventia não pode permanecer vaga por mais de seis meses sem que seja aberto concurso de provimento ou de remoção."
+      }
+    },
+    {
+      "target_id": "CF88:ART.246",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "UNSUPPORTED_LEGISLATIVE_CONSEQUENCE",
+      "set": {
+        "exemplo_pratico": "Um artigo da Constituição teve a redação alterada por emenda promulgada em 1998 (ano ilustrativo, dentro do período). Para regulamentá-lo, o Presidente não pode usar medida provisória com fundamento nesse artigo."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.68",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "TERM_NOT_IN_DEVICE",
+      "set": {
+        "o_que_significa": "O artigo reconhece aos remanescentes das comunidades dos quilombos que estejam ocupando suas terras a propriedade definitiva delas, e impõe ao Estado o dever de emitir os títulos correspondentes.\nO reconhecimento vem da própria Constituição: o título emitido pelo Estado documenta o direito declarado pelo texto.\nO dever de titular não tem prazo final no artigo.\nA regra também se relaciona com a proteção do patrimônio cultural tratada no art. 216 da Constituição."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.76",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "DESVINCULATION_NOT_FREE_SPENDING",
+      "set": {
+        "o_que_significa": "Muitas receitas da União nascem com destino obrigatório, chamado vinculação.\nO artigo permite que uma parcela de 30% das receitas abrangidas seja utilizada sem a vinculação original até o fim de 2032.\nOs parágrafos preservam receitas que permanecem excluídas da desvinculação, como as indicadas no próprio artigo."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.76-B",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "DESVINCULATION_NOT_FREE_SPENDING",
+      "set": {
+        "exemplo_pratico": "Um Município tem receita abrangida pelo art. 76-B com destino previamente vinculado. Até o fim de 2026, 50% dessa receita pode ser utilizada sem a vinculação original; de 2027 a 2032, o percentual passa a 30%, ressalvadas as exceções do artigo."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.113",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "MANDATORY_EXPENSE_SCOPE_NARROWING",
+      "set": {
+        "o_que_diz": "O art. 113 do ADCT exige que a proposição legislativa que crie ou altere despesa obrigatória ou renúncia de receita venha acompanhada da estimativa de seu impacto orçamentário e financeiro. A regra alcança tanto a criação quanto a alteração dessas duas categorias."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.117",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "TEXTUAL_TENSION_PRESERVE_LITERALITY",
+      "set": {
+        "o_que_significa": "O artigo fixa prazo e condição para formalizar os parcelamentos a que remete e estabelece uma ordem de preferência no uso dos recursos vinculados do Fundo de Participação dos Municípios.\nO caput remete expressamente aos arts. 115, 116 e 116-A. Como a própria condição de vinculação é formulada em termos do Município e do FPM, esta explicação não amplia nem restringe por inferência o alcance dessa remissão.\nEm 5 de outubro de 2026, data de referência deste lote, o prazo de formalização já havia terminado.",
+        "atencao": "O caput remete aos arts. 115, 116 e 116-A e exige autorização para vinculação do Fundo de Participação dos Municípios. O alcance concreto dessa combinação deve ser preservado literalmente no T1 e aprofundado na camada externa.",
+        "external_layer_notes_append": [
+          "O alcance concreto da remissão do art. 117 aos arts. 115, 116 e 116-A, diante da vinculação expressa ao Fundo de Participação dos Municípios, requer tratamento conservador na camada externa."
+        ]
+      }
+    },
+    {
+      "target_id": "ADCT:ART.125",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "TAX_NEUTRALITY_OVERCLAIM",
+      "set": {
+        "o_que_significa": "O art. 125 estabelece para 2026 alíquotas específicas do novo imposto e da nova contribuição.\nO valor recolhido é compensado com os tributos indicados no § 1º; se não houver débitos suficientes, o § 2º admite compensação com outro tributo federal ou ressarcimento em até sessenta dias, mediante requerimento.\nEm 5 de outubro de 2026, data de referência deste lote, este é o ano em curso previsto no caput."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.127",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "CAUSAL_PURPOSE_NOT_IN_TEXT",
+      "set": {
+        "o_que_significa": "O artigo fixa para 2027 e 2028 alíquotas estaduais e municipais de 0,05% para o imposto do art. 156-A.\nNo mesmo período, o parágrafo único determina redução de 0,1 ponto percentual na alíquota da contribuição do art. 195, V.\nDepois desse período, a transição continua pelas regras dos artigos seguintes."
+      }
+    },
+    {
+      "target_id": "ADCT:ART.130",
+      "queue": "A",
+      "decision": "ADJUST_THEN_APPROVE",
+      "reason_code": "REVENUE_EQUIVALENCE_OVERCLAIM_AND_EXTERNAL_RULE",
+      "set": {
+        "o_que_significa": "O artigo estabelece mecanismos para que as alíquotas de referência considerem a equivalência entre a receita dos novos tributos e a redução das receitas dos tributos substituídos, nos períodos e segundo as fórmulas constitucionais.\nO Senado fixa as alíquotas de referência com base em cálculo do Tribunal de Contas da União e nos limites previstos em lei complementar.\nAs travas de 2030 e 2035 reduzem as alíquotas se as receitas-base superarem os respectivos tetos de referência.",
+        "palavras_dificeis_replace": [
+          {
+            "match_term": "Alíquota de referência",
+            "replacement": {
+              "termo": "Alíquota de referência",
+              "explicacao": "percentual fixado pelo Senado segundo os critérios constitucionais e a forma de cálculo prevista em lei complementar."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

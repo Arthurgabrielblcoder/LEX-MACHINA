@@ -1,0 +1,58 @@
+{
+ "schema_version": 1,
+ "profile": "CF88_OFFICIAL_RUNTIME",
+ "norma_id": "CF88",
+ "builder": "ENTENDA_ENGINE/entenda_text_profile.py",
+ "builder_sha256_lf": "9413f56d44209613f267fdca35cfa1c32ba45d5721518842e510ec625dec8a07",
+ "base_config": "ENTENDA_ENGINE/entenda_config.json",
+ "runtime": "DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt",
+ "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+ "runtime_provenance": "DEVICE_INTEGRATION/runtime/CF88_RUNTIME.provenance.json",
+ "runtime_composition": [
+  "CF88 (Senado 579494, Compilação Monovigente)",
+  "ADCT (Senado 604119, Compilação Monovigente)"
+ ],
+ "parser": {
+  "end_markers": [
+   "Brasília, 5 de outubro de 1988."
+  ],
+  "article_case_sensitive": true,
+  "same_as": "DEVICE_INTEGRATION/tools/runtime_targets.py::build_runtime_index (END_MARKERS, article_case_sensitive=True)"
+ },
+ "namespaces": [
+  "ADCT"
+ ],
+ "counts": {
+  "ADCT": {
+   "runtime_targets": 891,
+   "legacy_targets": 961,
+   "legacy_only_historical": 72,
+   "runtime_only": [
+    "ADCT:ART.77:INC.I:AL.a",
+    "ADCT:ART.77:INC.I:AL.b"
+   ],
+   "text_file": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/RUNTIME_TEXT.txt"
+  }
+ },
+ "status_counts": {
+  "CURRENT": 3386,
+  "HISTORICAL_ONLY": 146,
+  "STRUCTURAL": 426
+ },
+ "round_trip": {
+  "profiled_targets_with_text": 742,
+  "mismatched": [],
+  "mismatched_count": 0,
+  "extra_targets": [],
+  "other_namespaces_text_mismatch": 0,
+  "other_namespaces_status_mismatch": 0,
+  "status": "PASS"
+ },
+ "files": {
+  "RUNTIME_TEXT.txt": "b6e44719201fc5e4143f4243f096d307e1f6e654b341e5f01637ebe0a9d0503d",
+  "TARGET_INDEX.json": "8c95796b92e374843001633b8476608928392d37a45c85536b955564de76592b",
+  "TARGET_STATUS.json": "e7ffc58906e2d1ae91d7bc94f4b4a7b0b97c4878f45f61c03663d59be76c87a2",
+  "entenda_config.json": "c8eb9b6db13ff98802a7514610efc5622be1127a851cd8bb2e8e7ba2e5535b60"
+ },
+ "policy": "Nenhuma palavra da lei e editada. O texto de cada dispositivo e o do runtime oficial lido pelo parser estrito aprovado. O perfil nao altera o indice, o status nem a config globais; e usado por lotes que o declaram (MACRO_SPEC.entenda_config)."
+}

@@ -1,0 +1,116 @@
+[
+ {
+  "target": "ADCT:ART.17",
+  "section": "o_que_diz",
+  "before": "e de dois cargos ou empregos privativos de profissionais de saúde que já estavam sendo exercidos na administração pública.",
+  "after": "e de dois cargos ou empregos privativos de profissional de saúde, nos dois casos quando já exercidos na administração pública.",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "ADCT:ART.18-A",
+  "section": "o_que_diz",
+  "before": "praticados entre 1º de janeiro de 1989 e 31 de dezembro de 1994,",
+  "after": "praticados de 1º de janeiro de 1989 até 31 de dezembro de 1994,",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "ADCT:ART.19",
+  "section": "o_que_diz",
+  "before": "O art. 19 do ADCT considera estáveis no serviço público os servidores civis da União, dos Estados, do Distrito Federal e dos Municípios, da administração direta, autárquica e das fundações públicas, que estavam em exercício na data da promulgação há pelo menos cinco anos continuados",
+  "after": "O art. 19 do ADCT considera estáveis no serviço público os servidores civis dos quatro entes da Federação, na administração direta, nas autarquias e nas fundações públicas, que na data da promulgação estavam em exercício havia pelo menos cinco anos continuados",
+  "category": "COPIA_DA_LEI_SECA",
+  "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "ADCT:ART.19",
+  "section": "exemplo_pratico",
+  "before": "trabalhava continuamente desde 1982 quando a Constituição foi promulgada.",
+  "after": "trabalhava continuamente desde 1982 (ano ilustrativo) quando a Constituição foi promulgada.",
+  "category": "NUMERO_ILUSTRATIVO",
+  "reason": "Ano do exemplo marcado como ilustrativo (DATES_AND_YEARS_PARITY)."
+ },
+ {
+  "target": "ADCT:ART.27",
+  "section": "palavras_dificeis",
+  "before": "{\"termo\": \"Tribunal Federal de Recursos\", \"explicacao\": \"tribunal federal da ordem anterior, substituído pelo STJ e pelos TRFs.\"}",
+  "after": "{\"termo\": \"Tribunal Federal de Recursos\", \"explicacao\": \"tribunal federal da ordem anterior, substituído pelo Superior Tribunal de Justiça e pelos Tribunais Regionais Federais.\"}",
+  "category": "SIGLA",
+  "reason": "Sigla de tribunal no corpo bloqueada pelo contrato (A6.6 item 1: sigla por extenso).",
+  "detector": "ENGINE_CONTRACT"
+ },
+ {
+  "target": "ADCT:ART.8",
+  "section": "o_que_diz",
+  "before": "Os parágrafos estendem os benefícios a trabalhadores do setor privado e a dirigentes sindicais punidos por motivos políticos, preveem reparação econômica, por lei, para os impedidos de exercer certas profissões por portarias reservadas da Aeronáutica, contam para aposentadoria o mandato de vereador exercido sem remuneração e aplicam a anistia a servidores e empregados públicos, salvo nos Ministérios militares.",
+  "after": "Os parágrafos estendem os benefícios a trabalhadores do setor privado e a dirigentes sindicais punidos por motivos políticos. Também preveem reparação econômica, por lei, para os impedidos de exercer certas profissões por portarias reservadas da Aeronáutica, contam para aposentadoria o mandato de vereador exercido sem remuneração e aplicam a anistia a servidores e empregados públicos, salvo nos Ministérios militares.",
+  "category": "FRASE_LONGA",
+  "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+  "detector": "EDITORIAL_CHECKS"
+ },
+ {
+  "target": "ADCT:ART.17",
+  "section": "atencao",
+  "before": "O texto oficial traz nota de remissão a emenda de 2003 no caput;",
+  "after": "O texto oficial traz, no caput, nota de remissão à Emenda Constitucional nº 41;",
+  "category": "DATA",
+  "reason": "Ano da emenda nao presente na fundamentacao em forma reconhecivel; mantida so a identificacao da emenda anotada."
+ },
+ {
+  "target": "ADCT:ART.18-A",
+  "section": "o_que_diz",
+  "before": "O art. 18-A do ADCT declara convalidados, depois de 5 anos contados da data em que foram praticados, os atos administrativos do Estado do Tocantins ligados à sua instalação, praticados de 1º de janeiro de 1989 até 31 de dezembro de 1994, que tenham algum vício jurídico e que tenham produzido efeitos favoráveis aos destinatários, salvo comprovada má-fé.",
+  "after": "O art. 18-A do ADCT trata dos atos administrativos do Estado do Tocantins ligados à sua instalação, praticados de 1º de janeiro de 1989 até 31 de dezembro de 1994. Se tiverem algum vício jurídico e tiverem produzido efeitos favoráveis aos destinatários, esses atos ficam convalidados quando completam 5 anos da data de sua prática, salvo comprovada má-fé.",
+  "category": "FRASE_LONGA",
+  "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+  "detector": "EDITORIAL_CHECKS"
+ },
+ {
+  "target": "ADCT:ART.18-A",
+  "section": "exemplo_pratico",
+  "before": "Um servidor foi nomeado em 1990 por ato com vício formal,",
+  "after": "Um servidor foi nomeado em 1990 (ano ilustrativo, dentro do período do artigo) por ato com vício formal,",
+  "category": "NUMERO_ILUSTRATIVO",
+  "reason": "Ano do exemplo marcado como ilustrativo (DATES_AND_YEARS_PARITY)."
+ },
+ {
+  "target": "ADCT:ART.19",
+  "section": "o_que_diz",
+  "before": "O art. 19 do ADCT considera estáveis no serviço público os servidores civis dos quatro entes da Federação, na administração direta, nas autarquias e nas fundações públicas, que na data da promulgação estavam em exercício havia pelo menos cinco anos continuados e não tinham sido admitidos na forma do art. 37.",
+  "after": "O art. 19 do ADCT considera estáveis no serviço público certos servidores civis dos quatro entes da Federação, na administração direta, nas autarquias e nas fundações públicas. São os que, na data da promulgação, estavam em exercício havia pelo menos cinco anos continuados e não tinham sido admitidos na forma do art. 37.",
+  "category": "FRASE_LONGA",
+  "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+  "detector": "EDITORIAL_CHECKS"
+ },
+ {
+  "target": "ADCT:ART.25",
+  "section": "o_que_diz",
+  "before": "O art. 25 do ADCT revogou, a partir de cento e oitenta dias da promulgação, prazo que a lei podia prorrogar, os dispositivos legais que atribuíam ou delegavam a órgão do Poder Executivo competência que a Constituição dá ao Congresso Nacional, em especial quanto à ação normativa e à alocação ou transferência de recursos.",
+  "after": "O art. 25 do ADCT revogou os dispositivos legais que atribuíam ou delegavam a órgão do Poder Executivo competência que a Constituição dá ao Congresso Nacional, em especial quanto à ação normativa e à alocação ou transferência de recursos. A revogação valeu a partir de cento e oitenta dias da promulgação, prazo que a lei podia prorrogar.",
+  "category": "FRASE_LONGA",
+  "reason": "Frase com mais de 45 palavras dividida (editorial_checks LONG_SENTENCE).",
+  "detector": "EDITORIAL_CHECKS"
+ },
+ {
+  "target": "ADCT:ART.25",
+  "section": "o_que_diz",
+  "before": "seriam apreciados pelo Congresso em até cento e oitenta dias, sob pena de rejeição,",
+  "after": "seriam apreciados pelo Congresso em até cento e oitenta dias, sem contar o recesso parlamentar, sob pena de rejeição,",
+  "category": "LISTA_INCOMPLETA",
+  "reason": "Elemento do § 1º, I (\"nao computado o recesso parlamentar\") restaurado.",
+  "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED"
+ },
+ {
+  "target": "ADCT:ART.27",
+  "section": "o_que_diz",
+  "before": "e fixou regras de competência e de promoção para a transição.",
+  "after": "e fixou regras de competência e de promoção para o período de implantação.",
+  "category": "TRANSICAO_NO_NUCLEO",
+  "reason": "Palavra \"transicao\" no nucleo (TRANSITION_IN_CORE); reformulada.",
+  "detector": "EDITORIAL_CHECKS"
+ }
+]

@@ -1,0 +1,215 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "G",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "ADCT:ART.92-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "criem mecanismos, com ou sem contrapartidas, para manter em caráter geral o diferencial competitivo da Zona Franca de Manaus e das áreas de livre comércio existentes em 31 de maio de 2023.",
+   "after": "criem mecanismos, que podem ou não exigir contrapartidas, para preservar de forma geral o diferencial competitivo da Zona Franca de Manaus. A mesma proteção alcança as áreas de livre comércio que já existiam em 31 de maio de 2023."
+  },
+  {
+   "target_id": "ADCT:ART.99",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "disciplina a partilha do imposto correspondente à diferença entre a alíquota interna e a interestadual do ICMS, nas operações que destinam bens e serviços a consumidor final não contribuinte localizado em outro Estado (art. 155, § 2º, VII).",
+   "after": "disciplina a divisão do ICMS relativo à diferença entre a alíquota interna e a interestadual nas vendas de bens e serviços a consumidor final de outro Estado que não seja contribuinte do imposto (art. 155, § 2º, VII)."
+  },
+  {
+   "target_id": "ADCT:ART.102",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "e, entre eles, os ligados à idade, ao estado de saúde e à deficiência, nos termos do art. 100, § 2º.",
+   "after": "e, entre eles, os de credores idosos, doentes graves ou com deficiência, conforme o art. 100, § 2º."
+  },
+  {
+   "target_id": "ADCT:ART.102",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "vá para acordos diretos perante Juízos Auxiliares de Conciliação de Precatórios, com redução máxima de 40% do crédito atualizado,",
+   "after": "vá para acordos diretos firmados nos juízos auxiliares de conciliação, com desconto de no máximo 40% sobre o crédito atualizado,"
+  },
+  {
+   "target_id": "ADCT:ART.103",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Ficam ressalvadas as desapropriações por necessidade pública em saúde, educação, segurança pública, transporte público, saneamento básico e habitação de interesse social.",
+   "after": "Ficam ressalvadas as desapropriações por necessidade pública nas áreas de saúde, educação, segurança, transporte coletivo, saneamento e moradia de interesse social."
+  },
+  {
+   "target_id": "ADCT:ART.104",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "Os Estados e o Comitê Gestor do Imposto sobre Bens e Serviços retêm os repasses",
+   "after": "Os Estados e o comitê gestor do novo imposto sobre bens e serviços retêm os repasses"
+  },
+  {
+   "target_id": "ADCT:ART.113",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras seguidas do texto oficial.",
+   "before": "exige que toda proposição legislativa que crie ou altere despesa obrigatória ou renúncia de receita venha acompanhada",
+   "after": "exige que a proposta legislativa que crie ou modifique despesa obrigatória ou renúncia de receita venha acompanhada"
+  },
+  {
+   "target_id": "ADCT:ART.92-A",
+   "section": "o_que_diz",
+   "category": "NUMERO",
+   "detector": "V3_NUMBER_NOT_IN_TEXT",
+   "reason": "Total derivado (85) removido; mantidas as parcelas do texto.",
+   "before": "a soma dos três artigos dá oitenta e cinco anos contados da promulgação da Constituição.",
+   "after": "a soma dos três prazos é contada a partir da promulgação da Constituição."
+  },
+  {
+   "target_id": "ADCT:ART.92-A",
+   "section": "o_que_significa",
+   "category": "AFIRMACAO_UNIVERSAL",
+   "detector": "V3_UNIVERSAL_CLAIM",
+   "reason": "\"sempre\" removido.",
+   "before": "mais cinquenta anos (art. 92-A), sempre a partir da promulgação.",
+   "after": "mais cinquenta anos (art. 92-A), contados da promulgação."
+  },
+  {
+   "target_id": "ADCT:ART.97",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "V3_RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva do caput (excecao aos paragrafos do art. 100) incluida.",
+   "before": "até a edição da lei complementar do art. 100, § 15.",
+   "after": "até a edição da lei complementar do art. 100, § 15, afastando o art. 100, exceto alguns de seus parágrafos."
+  },
+  {
+   "target_id": "ADCT:ART.97",
+   "section": "o_que_diz",
+   "category": "NUMERO",
+   "detector": "V3_NUMBER_NOT_IN_TEXT",
+   "reason": "Quantidade na forma do texto.",
+   "before": "e ao menos metade dos recursos segue a ordem cronológica",
+   "after": "e ao menos 50% dos recursos segue a ordem cronológica"
+  },
+  {
+   "target_id": "ADCT:ART.97",
+   "section": "exemplo_pratico",
+   "category": "NUMERO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Ano do exemplo marcado como ilustrativo.",
+   "before": "expedido em 2026.",
+   "after": "expedido em 2026 (data ilustrativa)."
+  },
+  {
+   "target_id": "ADCT:ART.101",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase dividida; \"nunca\" (ABSOLUTE_CLAIM) trocado por \"nao pode ficar abaixo\".",
+   "before": "O pagamento é feito por depósitos mensais em conta especial do Tribunal de Justiça local, de um doze avos de um percentual da receita corrente líquida, suficiente para a quitação e nunca inferior ao praticado no início do regime, conforme plano anual apresentado ao Tribunal.",
+   "after": "O pagamento é feito por depósitos mensais em conta especial do Tribunal de Justiça local, de um doze avos de um percentual da receita corrente líquida. O percentual deve bastar para a quitação, não pode ficar abaixo do praticado no início do regime e segue plano anual apresentado ao Tribunal."
+  },
+  {
+   "target_id": "ADCT:ART.101",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Frase dividida (LONG_SENTENCE / remissao ao ADCT com datas em frase unica).",
+   "before": "O art. 101 do ADCT determina que Estados, Distrito Federal e Municípios que estavam em mora no pagamento de precatórios em 25 de março de 2015 quitem, até 31 de dezembro de 2029, os débitos vencidos e os que vencerem nesse período, corrigidos pelo IPCA-E ou índice substituto.",
+   "after": "O art. 101 do ADCT trata dos Estados, do Distrito Federal e dos Municípios que estavam em mora no pagamento de precatórios em 25 de março de 2015. Eles devem quitar, até 31 de dezembro de 2029, os débitos vencidos e os que vencerem nesse período, corrigidos pelo IPCA-E ou índice substituto."
+  },
+  {
+   "target_id": "ADCT:ART.101",
+   "section": "external_layer_notes",
+   "category": "NOTA_JURISPRUDENCIA",
+   "detector": "V3_EXTERNAL_FACT_NEEDS_PROVENANCE",
+   "reason": "Nota externa reescrita no formato da camada JURISPRUDENCIA (anotacao oficial + PENDING_EXTERNAL_INGESTION), sem afirmar conteudo da decisao.",
+   "before": "Controle de constitucionalidade anotado no § 5º (ADI 7047 e ADI 7064): camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION).",
+   "after": "A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION)."
+  },
+  {
+   "target_id": "ADCT:ART.102",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "V3_NUMBER_NOT_IN_TEXT",
+   "reason": "Fracao convertida para a forma do texto.",
+   "before": "Metade ou mais segue a fila cronológica, respeitadas as prioridades de quem mais precisa.",
+   "after": "Pelo menos 50% dos recursos seguem a fila cronológica, respeitadas as prioridades de quem mais precisa."
+  },
+  {
+   "target_id": "ADCT:ART.103",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "V3_RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Excecao incorporada a frase da regra.",
+   "before": "enquanto estiverem pagando a parcela mensal do art. 101. A exceção é a falta de liberação dos recursos no tempo devido.",
+   "after": "enquanto estiverem pagando a parcela mensal do art. 101, exceto se os recursos não forem liberados no tempo devido."
+  },
+  {
+   "target_id": "ADCT:ART.103",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "V3_RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Excecao incorporada a frase da vedacao.",
+   "before": "pelos entes cujo estoque de precatórios pendentes, incluídos os da administração indireta, supere 70% da receita corrente líquida. Ficam ressalvadas as desapropriações por necessidade pública nas áreas de saúde, educação, segurança, transporte coletivo, saneamento e moradia de interesse social.",
+   "after": "pelos entes cujo estoque de precatórios pendentes supere 70% da receita corrente líquida, excetuadas as feitas por necessidade pública em saúde, educação, segurança, transporte coletivo, saneamento e moradia de interesse social."
+  },
+  {
+   "target_id": "ADCT:ART.105",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Modalidade atribuida ao texto (\"observados os requisitos\").",
+   "before": "Devem ser observados os requisitos da lei de cada ente.",
+   "after": "O texto manda observar os requisitos da lei de cada ente."
+  },
+  {
+   "target_id": "ADCT:ART.105",
+   "section": "exemplo_pratico",
+   "category": "NUMERO",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Ano fora do texto trocado pela data-limite do texto.",
+   "before": "inscrita em dívida ativa em 2014.",
+   "after": "inscrita em dívida ativa antes de 25 de março de 2015."
+  },
+  {
+   "target_id": "ADCT:ART.107-A",
+   "section": "external_layer_notes",
+   "category": "NOTA_JURISPRUDENCIA",
+   "detector": "V3_EXTERNAL_FACT_NEEDS_PROVENANCE",
+   "reason": "Nota externa reescrita no formato da camada JURISPRUDENCIA (anotacao oficial + PENDING_EXTERNAL_INGESTION), sem afirmar conteudo da decisao.",
+   "before": "Ações anotadas no texto oficial (ADI 7064 e MI 7300): camada JURISPRUDENCIA (PENDING_EXTERNAL_INGESTION).",
+   "after": "As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION)."
+  },
+  {
+   "target_id": "ADCT:ART.115",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "EDITORIAL_CHECKS",
+   "reason": "Condicao atribuida ao texto (\"desde que comprovem\").",
+   "before": "O ente deve comprovar, em até quinze meses",
+   "after": "A autorização exige que o ente comprove, em até quinze meses"
+  },
+  {
+   "target_id": "ADCT:ART.115",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "V3_LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Referencia normativa do inciso IV restaurada.",
+   "before": "e previdência complementar com gestão adequada.",
+   "after": "e previdência complementar com gestão adequada, nos termos do art. 9º da emenda de 12 de novembro de 2019 citada nos incisos."
+  }
+ ]
+}

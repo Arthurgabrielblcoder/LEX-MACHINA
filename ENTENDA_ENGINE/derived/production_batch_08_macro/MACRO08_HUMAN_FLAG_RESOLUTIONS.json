@@ -1,0 +1,561 @@
+{
+ "schema_version": 1,
+ "artifact": "MACRO08_HUMAN_FLAG_RESOLUTIONS",
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "policy": "Decisoes humanas explicitas por target/flag (revisao 3). Cada registro fecha apenas o achado do detector indicado, para a versao editorial aprovada indicada, no numero de ocorrencias declarado; o builder falha fechado se um registro nao encontrar exatamente essas ocorrencias ou se restar REVIEW_REQUIRED sem registro. Sem regra generica, sem alteracao do motor ou dos validadores. applied_as: VALIDATOR_KNOWN_RESOLUTION (resolucao conhecida do validador, escopo explanation_id + flag:match), EDITORIAL_CHECK_RESOLUTION (resolucao do editorial_checks por target) ou HUMAN_REVIEW_CONTENT_PROVENANCE (decisao de provenance OFFICIAL_CANONICAL_ANNOTATION registrada em human_review.content_provenance, mecanismo do Batch06; o validador exige proveniencia de fato externo em aprovado sob A6).",
+ "conditional_not_used": [
+  {
+   "target_id": "CF88:ART.220:PAR.3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason_code": "SEMANTIC_ENUMERATION_PRESENT",
+   "note": "autorizada pela revisao 3 apenas se o flag persistisse; o texto da revisao 3 nao dispara o detector, logo nao registrada"
+  }
+ ],
+ "records": [
+  {
+   "id": "MB08-HFR-01",
+   "target_id": "CF88:ART.177",
+   "approved_explanation_id": "ENTENDA/CF88:ART.177/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.177:INC.II",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_EQUIVALENCE_PRESENT",
+   "justification": "O OVERVIEW usa \"refino do petróleo\", expressão semanticamente equivalente a \"refinação do petróleo nacional ou estrangeiro\". A formulação genérica abrange petróleo independentemente de sua origem e não restringe o monopólio constitucional.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-02",
+   "target_id": "CF88:ART.177",
+   "approved_explanation_id": "ENTENDA/CF88:ART.177/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ao pagamento de subsídios a preços",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_DESTINATION_CATEGORY_PRESERVED",
+   "justification": "O OVERVIEW resume a destinação como subsídio a preços ou transporte de combustíveis dentro do contexto já delimitado pelo próprio § 4º, que trata de petróleo e derivados, gás natural e derivados e álcool combustível. Não há perda material da finalidade constitucional.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-03",
+   "target_id": "CF88:ART.177:PAR.4",
+   "approved_explanation_id": "ENTENDA/CF88:ART.177:PAR.4/BASE/2",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "PERMISSION_NOT_IN_TEXT",
+   "match": "pode ser reduzida",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "FALSE_POSITIVE_PERMISSION_EXPLICIT_IN_SOURCE",
+   "justification": "O texto oficial afirma expressamente que a alíquota \"poderá ser\" diferenciada e que poderá ser reduzida e restabelecida por ato do Poder Executivo. A permissão não foi inferida externamente.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-04",
+   "target_id": "CF88:ART.177:PAR.4",
+   "approved_explanation_id": "ENTENDA/CF88:ART.177:PAR.4/BASE/2",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ao pagamento de subsídios a preços",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ENUMERATION_PRESENT",
+   "justification": "O bloco preserva as quatro destinações do inciso II. A primeira aparece em forma sintética, mas continua ligada aos combustíveis delimitados pelo caput do próprio § 4º.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-05",
+   "target_id": "CF88:ART.182",
+   "approved_explanation_id": "ENTENDA/CF88:ART.182/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.182:PAR.4:INC.I",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN",
+   "justification": "Este target é OVERVIEW. Ele informa que o § 4º estabelece medidas sucessivas para imóvel subutilizado e existe bloco próprio para o § 4º. O OVERVIEW não precisa repetir integralmente \"parcelamento ou edificação compulsórios\".",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-06",
+   "target_id": "CF88:ART.194",
+   "approved_explanation_id": "ENTENDA/CF88:ART.194/BASE/2",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.194:PAR.UNICO:INC.I, ART.194:PAR.UNICO:INC.V",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN",
+   "justification": "O OVERVIEW declara expressamente que o parágrafo único possui sete objetivos e remete ao bloco próprio. Não se apresenta como enumeração exaustiva dos sete incisos.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-07",
+   "target_id": "CF88:ART.195:INC.I",
+   "approved_explanation_id": "ENTENDA/CF88:ART.195:INC.I/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "a qualquer título",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_EQUIVALENCE_PRESENT",
+   "justification": "A redação aprovada explica que a base alcança os demais rendimentos do trabalho pagos ou creditados à pessoa física, inclusive sem vínculo de emprego. A expressão sintetiza adequadamente o alcance de \"a qualquer título\" sem restringi-lo.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-08",
+   "target_id": "CF88:ART.212-A",
+   "approved_explanation_id": "ENTENDA/CF88:ART.212-A/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ao desenvolvimento do ensino não integrantes dos fundos refe",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN",
+   "justification": "O OVERVIEW explica que o VAAT considera, além do fundo, outras receitas e transferências vinculadas à educação. A distinção material entre recursos do fundo e disponibilidades adicionais permanece compreensível, enquanto o detalhamento pertence ao § 1º.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-09",
+   "target_id": "CF88:ART.212-A:INC.V",
+   "approved_explanation_id": "ENTENDA/CF88:ART.212-A:INC.V/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.212-A:INC.V:AL.a",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT",
+   "justification": "A redação aprovada contém expressamente 10 pontos percentuais para o VAAF.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-10",
+   "target_id": "CF88:ART.212-A:INC.V",
+   "approved_explanation_id": "ENTENDA/CF88:ART.212-A:INC.V/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "5 (dois inteiros",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT",
+   "justification": "A redação contém expressamente 2,5 pontos percentuais e preserva melhoria de gestão, evolução dos indicadores de atendimento e aprendizagem e redução das desigualdades.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-11",
+   "target_id": "CF88:ART.225:PAR.1",
+   "approved_explanation_id": "ENTENDA/CF88:ART.225:PAR.1/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "provoquem a extinção de espécies",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT",
+   "justification": "O texto aprovado diz expressamente que são vedadas práticas que \"extingam espécies\". É equivalência direta com \"provoquem a extinção de espécies\".",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-12",
+   "target_id": "CF88:ART.225:PAR.1",
+   "approved_explanation_id": "ENTENDA/CF88:ART.225:PAR.1/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "aos impostos a que se referem os arts. 155",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "BLOCK_MAY_SUMMARIZE_SUBENUMERATION",
+   "justification": "O bloco preserva a existência do regime fiscal favorecido, sua finalidade de tributação inferior e registra que há tributos especificamente indicados pelo inciso. A lista de referências constitucionais não precisa ser copiada integralmente no T1 para que a regra seja compreendida.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-13",
+   "target_id": "CF88:ART.227",
+   "approved_explanation_id": "ENTENDA/CF88:ART.227/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.227:PAR.3:INC.I",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_MAY_SUMMARIZE_CHILDREN",
+   "justification": "O target é OVERVIEW e informa que os parágrafos tratam da proteção especial. Existe bloco específico do § 3º que contém a idade mínima e os demais sete aspectos. Repetir os sete itens no OVERVIEW seria redundância, não aumento necessário de precisão.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-14",
+   "target_id": "CF88:ART.235",
+   "approved_explanation_id": "ENTENDA/CF88:ART.235/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "superior a esse número",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT",
+   "justification": "O inciso I oficial estabelece 17 deputados abaixo de 600 mil habitantes e 24 quando a população for igual ou superior a 600 mil, até 1,5 milhão. O texto aprovado reproduz semanticamente exatamente essas duas faixas: \"inferior a seiscentos mil\" e \"desse número até um milhão e quinhentos mil\". Não existe no inciso I uma terceira fórmula para população acima de 1,5 milhão.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-15",
+   "target_id": "ADCT:ART.53",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.53/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "de valor igual à do inciso anterior",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_REFERENCE_RESOLVES_LITERAL_CROSS_REFERENCE",
+   "justification": "\"De valor igual ao da pensão especial\" comunica corretamente o conteúdo de \"valor igual à do inciso anterior\". A referência semântica é mais clara para o usuário e não modifica o valor do benefício.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-16",
+   "target_id": "ADCT:ART.60",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.60/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.60:PAR.1:INC.VI",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT",
+   "justification": "A redação aprovada contém expressamente 10,5 pontos percentuais no sexto ano para a parcela correspondente. O detector falhou por correspondência lexical/numérica, não por omissão material.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-17",
+   "target_id": "ADCT:ART.101",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.101/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+   "match": "ADI 7047",
+   "occurrences": 2,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OFFICIAL_CANONICAL_ANNOTATION",
+   "justification": "ADI 7047 e ADI 7064 aparecem como remissões/anotações da compilação oficial vinculadas ao dispositivo. O T1 não afirma o resultado nem o alcance dessas ações. Esses conteúdos permanecem PENDING_EXTERNAL_INGESTION na camada JURISPRUDÊNCIA. A mesma decisão humana de provenance (revisão 1, ADJUST_PROVENANCE_THEN_APPROVE) resolve as duas ocorrências; o T1 do ADCT:ART.101 permanece byte-idêntico.",
+   "applied_as": "HUMAN_REVIEW_CONTENT_PROVENANCE",
+   "provenance_entry": {
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+    "in_cf88_runtime": false,
+    "section": "external_layer_notes",
+    "content": "remissao oficial da compilacao (Vide ADI 7047; Vide ADI 7064): so na camada externa; resultado e alcance na camada JURISPRUDENCIA",
+    "official_annotation": [
+     "Vide ADI 7047",
+     "Vide ADI 7064"
+    ],
+    "official_annotation_source": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+    "note": "anotacao oficial versionada indicada pela revisao humana; nenhum conteudo da decisao/lei incorporado ao T1; PENDING_EXTERNAL_INGESTION"
+   },
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-18",
+   "target_id": "ADCT:ART.116",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.116/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "desde que haja manifestação de aceite por ambas as partes",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "SEMANTIC_ITEM_ALREADY_PRESENT",
+   "justification": "O OVERVIEW registra transferência de bens com aceite das partes e autorização por lei específica municipal. Isso preserva materialmente a exigência de manifestação de aceite de ambas as partes.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-19",
+   "target_id": "ADCT:ART.116",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.116/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ART.116:PAR.12:INC.VI:AL.f",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_MAY_SUMMARIZE_SUBENUMERATION",
+   "justification": "O artigo possui extensa enumeração de mecanismos e condições de quitação. O OVERVIEW sintetiza o conjunto e registra \"outros ativos aceitos em comum acordo\", sem se apresentar como transcrição exaustiva de cada alínea. Não há afirmação incompatível com a alínea omitida lexicalmente.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-20",
+   "target_id": "CF88:ART.231:PAR.1",
+   "approved_explanation_id": "ENTENDA/CF88:ART.231:PAR.1/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+   "match": "Lei nº 14.701",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OFFICIAL_CANONICAL_ANNOTATION",
+   "justification": "A Lei nº 14.701/2023 aparece como remissão oficial vinculada à compilação constitucional utilizada. O T1 não incorpora como verdade constitucional uma conclusão extraída da lei; registra a existência de legislação e controvérsia externa sobre marco temporal. O conteúdo substantivo dessa legislação permanece fora do T1.",
+   "applied_as": "HUMAN_REVIEW_CONTENT_PROVENANCE",
+   "provenance_entry": {
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+    "in_cf88_runtime": true,
+    "section": "external_layer_notes",
+    "content": "remissao oficial da compilacao (Vide a Lei nº 14.701, de 2023): so na camada externa; resultado e alcance na camada JURISPRUDENCIA",
+    "official_annotation": [
+     "Vide a Lei nº 14.701, de 2023"
+    ],
+    "official_annotation_source": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/RUNTIME_TEXT.txt",
+    "note": "anotacao oficial versionada indicada pela revisao humana; nenhum conteudo da decisao/lei incorporado ao T1; PENDING_EXTERNAL_INGESTION"
+   },
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-21",
+   "target_id": "ADCT:ART.27",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.27/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+   "match": "ADI 5017",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OFFICIAL_CANONICAL_ANNOTATION",
+   "justification": "A referência à ADI 5017 decorre de anotação oficial do texto-fonte. O T1 não afirma qual foi o julgamento nem seus efeitos. Resultado e alcance continuam na camada JURISPRUDÊNCIA como PENDING_EXTERNAL_INGESTION.",
+   "applied_as": "HUMAN_REVIEW_CONTENT_PROVENANCE",
+   "provenance_entry": {
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+    "in_cf88_runtime": false,
+    "section": "external_layer_notes",
+    "content": "remissao oficial da compilacao (Vide ADIN nº 5017, de 2013): so na camada externa; resultado e alcance na camada JURISPRUDENCIA",
+    "official_annotation": [
+     "Vide ADIN nº 5017, de 2013"
+    ],
+    "official_annotation_source": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+    "note": "anotacao oficial versionada indicada pela revisao humana; nenhum conteudo da decisao/lei incorporado ao T1; PENDING_EXTERNAL_INGESTION"
+   },
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-22",
+   "target_id": "ADCT:ART.97",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.97/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "RESSALVA_OMITTED_IN_SUMMARY",
+   "match": "ressalvados",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OVERVIEW_OMITS_NESTED_CONDITION_WITHOUT_CONTRADICTION",
+   "justification": "O OVERVIEW apenas informa que parte dos recursos pode ser destinada a leilões, pagamento à vista ou acordos. Ele não descreve a compensação prevista dentro do mecanismo do § 9º e, portanto, não afirma que débitos com exigibilidade suspensa possam ser compensados. A ressalva apontada qualifica um submecanismo que o OVERVIEW não pretende explicar exaustivamente.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-23",
+   "target_id": "ADCT:ART.107-A",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.107-A/BASE/1",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "EXTERNAL_FACT_NEEDS_PROVENANCE",
+   "match": "ADI 7064",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "OFFICIAL_CANONICAL_ANNOTATION",
+   "justification": "A referência à ADI 7064 decorre das anotações oficiais associadas ao artigo. O T1 se limita a advertir que a eficácia concreta depende de controle de constitucionalidade externo e não afirma o resultado da ação. Resultado e alcance permanecem na camada JURISPRUDÊNCIA.",
+   "applied_as": "HUMAN_REVIEW_CONTENT_PROVENANCE",
+   "provenance_entry": {
+    "source_type": "HUMAN_REVIEW_EXTERNAL_OFFICIAL_SOURCE",
+    "in_cf88_runtime": false,
+    "section": "external_layer_notes",
+    "content": "remissao oficial da compilacao (Vide ADI 7064): so na camada externa; resultado e alcance na camada JURISPRUDENCIA",
+    "official_annotation": [
+     "Vide ADI 7064"
+    ],
+    "official_annotation_source": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+    "note": "anotacao oficial versionada indicada pela revisao humana; nenhum conteudo da decisao/lei incorporado ao T1; PENDING_EXTERNAL_INGESTION"
+   },
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-24",
+   "target_id": "CF88:ART.201:PAR.1",
+   "approved_explanation_id": "ENTENDA/CF88:ART.201:PAR.1/BASE/2",
+   "detector_layer": "VALIDATOR_V3",
+   "flag": "LIST_ITEM_POSSIBLY_DROPPED",
+   "match": "ou associação desses agentes",
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "EXAMPLE_MAY_ILLUSTRATE_ONE_ENUMERATED_HYPOTHESIS",
+   "justification": "O exemplo ilustra apenas a hipótese de exposição efetiva a agentes nocivos. O conteúdo principal do bloco preserva tanto a hipótese da pessoa com deficiência quanto a hipótese de exposição a agentes químicos, físicos ou biológicos, inclusive sua associação. Exemplo prático não precisa repetir toda a enumeração quando não se apresenta como síntese exaustiva.",
+   "applied_as": "VALIDATOR_KNOWN_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  },
+  {
+   "id": "MB08-HFR-25",
+   "target_id": "ADCT:ART.127",
+   "approved_explanation_id": "ENTENDA/ADCT:ART.127/BASE/2",
+   "detector_layer": "EDITORIAL_CHECKS",
+   "flag": "TRANSITION_IN_CORE",
+   "match": null,
+   "occurrences": 1,
+   "decision": "RESOLVED_BY_HUMAN_REVIEW",
+   "reason_code": "TRANSITION_IS_THE_DEVICE_CORE",
+   "justification": "O caráter transitório pertence ao próprio conteúdo normativo do art. 127, que fixa expressamente regras para 2027 e 2028. Retirar datas ou transição para satisfazer o detector reduziria a precisão jurídica do T1. O mapa temporal do Macro08 complementa, mas não substitui, essa informação.",
+   "applied_as": "EDITORIAL_CHECK_RESOLUTION",
+   "provenance": {
+    "review_revision": 3,
+    "decisions_file": "MACRO08_HUMAN_REVIEW_DECISIONS.json",
+    "decisions_sha256": "3af93df7624a43ade7f9d679a4fdfc27b0c3985803577ee6cb5653e6dc8394c9",
+    "reviewed_on": "2026-10-09",
+    "reviewer": "revisao juridica humana do Macro08 (rev. 3), informada por Arthur (usuario do projeto)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "schema_version": 1,
+ "policy": "Perfis de texto do ENTENDA (entenda_text_profile.py). Um perfil gera uma config ENTENDA completa em que os namespaces listados leem estrutura, status e texto do runtime oficial aprovado (Lei Seca do dispositivo), segmentado pelo parser estrito aprovado. A config global (entenda_config.json) e o indice/status do LEGAL_TARGET_ID nao mudam.",
+ "profiles": {
+  "CF88_OFFICIAL_RUNTIME": {
+   "norma_id": "CF88",
+   "base_config": "ENTENDA_ENGINE/entenda_config.json",
+   "runtime": "DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt",
+   "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "runtime_provenance": "DEVICE_INTEGRATION/runtime/CF88_RUNTIME.provenance.json",
+   "parser": {
+    "end_markers": [
+     "Brasília, 5 de outubro de 1988."
+    ],
+    "article_case_sensitive": true,
+    "same_as": "DEVICE_INTEGRATION/tools/runtime_targets.py::build_runtime_index (END_MARKERS, article_case_sensitive=True)"
+   },
+   "namespaces": [
+    "ADCT"
+   ],
+   "out_dir": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME"
+  }
+ }
+}

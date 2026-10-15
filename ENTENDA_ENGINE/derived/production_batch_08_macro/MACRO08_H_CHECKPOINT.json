@@ -1,0 +1,76 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_H",
+ "namespace": "ADCT",
+ "articles_range": "ADCT 116-138",
+ "stats": {
+  "articles": 18,
+  "targets_evaluated": 174,
+  "targets_current": 174,
+  "select": 18,
+  "skip": 156,
+  "excluded": {},
+  "new_explanations": 18,
+  "reused": 0,
+  "roles": {
+   "OVERVIEW": 18
+  },
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {},
+  "pending_in_triage": 0,
+  "human_approved_t1": 18,
+  "skipped_articles": [
+   "ADCT:ART.118",
+   "ADCT:ART.119",
+   "ADCT:ART.120",
+   "ADCT:ART.122",
+   "ADCT:ART.123",
+   "ADCT:ART.137"
+  ]
+ },
+ "critic": {
+  "corrections": 18,
+  "by_category": {
+   "COPIA_DA_LEI_SECA": 4,
+   "DATA": 3,
+   "FRASE_LONGA": 1,
+   "LISTA_INCOMPLETA": 3,
+   "NUMERO": 1,
+   "REMISSAO_EXTERNA": 2,
+   "RESSALVA_OMITIDA": 1,
+   "TELEOLOGIA": 2,
+   "TERMO_TECNICO": 1
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "status": "PASS",
+  "approved_by_recorded_round": 179,
+  "approval_gate": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 18,
+ "status": "PASS"
+}
