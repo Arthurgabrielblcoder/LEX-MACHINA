@@ -15,6 +15,7 @@ work in the official registry, por_que, alcance + limites as a second paragraph,
 round). The candidate header is written OUTSIDE the firmware folder and never replaces the baseline header.
 Usage: python build_ref_detail_header.py [--check]            (sketch header = APPROVED_PAYLOAD + APPROVED_ADDITIONS)
        python build_ref_detail_header.py --payload RUN3/REF_PAYLOAD.IDX --additions ADDITIONS.json --out CANDIDATE.h [--check]
+       python build_ref_detail_header.py --payload RUN5/REF_PAYLOAD.IDX --additions A.json,B.json --out CANDIDATE.h  (several overlays)
 """
 import hashlib
 import json
@@ -67,6 +68,13 @@ def c_str(s):
     return '"' + ''.join(res) + '"'
 
 
+def _overlays(additions):
+    """None, one overlay path, or several (list, or comma-separated on the command line), applied in the given order."""
+    if not additions:
+        return []
+    return [additions] if isinstance(additions, (str, Path)) else list(additions)
+
+
 def records(payload=PAYLOAD, additions=None):
     canon = json.loads(CANON.read_text(encoding='utf-8'))
     visible = set()
@@ -98,7 +106,7 @@ def records(payload=PAYLOAD, additions=None):
             prev['nota'] = max(prev['nota'], rec['nota'])
             continue
         out[rec['key']] = rec
-    for a in (json.loads(Path(additions).read_text(encoding='utf-8'))['records'] if additions else []):
+    for a in (r for f in _overlays(additions) for r in json.loads(Path(f).read_text(encoding='utf-8'))['records']):
         key = (a['target_id'], a['work_id'])
         if key not in visible:
             continue
@@ -125,8 +133,8 @@ def render(payload=PAYLOAD, additions=None):
     recs, incomplete, n_visible = records(payload, additions)
     src = hashlib.sha256(CANON.read_bytes()).hexdigest()
     pay = hashlib.sha256(Path(payload).read_bytes()).hexdigest()
-    extra = [f'// CANDIDATO (nao substitui o header do baseline): + overlay {Path(additions).name} sha256 '
-             f'{hashlib.sha256(Path(additions).read_bytes()).hexdigest()}'] if additions else []
+    extra = [f'// CANDIDATO (nao substitui o header do baseline): + overlay {Path(f).name} sha256 '
+             f'{hashlib.sha256(Path(f).read_bytes()).hexdigest()}' for f in _overlays(additions)]
     L = ['#pragma once'] + extra + [
          '// GERADO por DEVICE_INTEGRATION/tools/build_ref_detail_header.py - NAO EDITAR.',
          '// Metadados editoriais APROVADOS (RC2 revisado) dos vinculos obra <-> dispositivo, transportados sem reescrita.',
@@ -160,6 +168,8 @@ if __name__ == '__main__':
         sys.exit('CANDIDATE_MUST_NOT_REPLACE_BASELINE_HEADER')       # sketch header only from the approved inputs
     payload = Path(_arg('--payload', APPROVED_PAYLOAD if not explicit else PAYLOAD))
     additions = _arg('--additions', None if explicit else APPROVED_ADDITIONS)
+    if isinstance(additions, str) and ',' in additions:
+        additions = additions.split(',')
     txt, recs, inc = render(payload, additions)
     if '--check' in sys.argv:
         ok = out.is_file() and out.read_text(encoding='utf-8') == txt
