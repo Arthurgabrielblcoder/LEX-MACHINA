@@ -138,14 +138,31 @@ O builder e o teste de aparelho ficam em `REFERENCE_COVERAGE_AUDIT/`, e não em 
 
 ## 8. Testes
 
-| Suíte | Resultado |
+| Suíte | Resultado (working tree) |
 |---|---|
-| `LEGAL_TARGET_ID/tests` (inclui `test_references4_r1.py`, 13 testes novos) | ver contagem final no commit |
-| `REFERENCE_COVERAGE_AUDIT/tests/test_references4_r1_device.py` (9 testes: simulador do aparelho, header, pacote, Correlatas críticas) | ver contagem final |
-| `DEVICE_INTEGRATION/tests` | ver contagem final |
-| `CORRELATA_COVERAGE_AUDIT/tests`, por arquivo | 4 falhas **pré-existentes**, idênticas num checkout limpo de `af8f68d`: C0 `test_committed_artifacts_are_the_build`, C3A.1 `test_15`, C3B.1 `test_reproducible`, C3B.2 `test_c3b2_package_reproducible…`. São hashes de relatórios reconstruídos que diferem dos versionados, e não foram introduzidas pela R1 |
+| `LEGAL_TARGET_ID/tests` (inclui `test_references4_r1.py`, 13 novos) | **90/90 OK** |
+| `REFERENCE_COVERAGE_AUDIT/tests/test_references4_r1_device.py` (simulador do aparelho, header, pacote, Correlatas críticas) | **9/9 OK** |
+| `DEVICE_INTEGRATION/tests` | **362/362 OK** |
+| `CORRELATA_COVERAGE_AUDIT/tests`, por arquivo (12 suítes, 120 testes) | **115/120** |
 
-As contagens finais estão na mensagem de commit e na saída da missão.
+**Falhas de Correlatas.** As 5 falhas não foram introduzidas pela R1:
+
+- **4 pré-existentes**, idênticas num checkout limpo de `af8f68d`:
+  - C0 `test_committed_artifacts_are_the_build`;
+  - C3A.1 `test_15_run4_and_package_deterministic`;
+  - C3B.1 `test_reproducible`;
+  - C3B.2 `test_c3b2_package_reproducible_and_equal_device_bytes`.
+
+  Nos quatro casos, o hash de um relatório ou pacote reconstruído difere do versionado.
+- **1 ambiental:** `test_16_operational_files_untouched`. Falha só neste working tree, por causa de arquivos não versionados do usuário (`DEVICE_INTEGRATION/_tmp_det_*.log`, `staging_entenda_batch05_candidate/`).
+
+**Checkout limpo de `2d5f966`:**
+
+- `test_16` e `test_14` (guards de Correlatas 1) passam;
+- os `--check` de R1A, R1 e auditoria dão `UP_TO_DATE`;
+- os demais resultados batem com a base.
+
+As únicas falhas fora de Correlatas dependem de insumos não versionados e ocorrem igualmente na base: `test_target_id` (`CF_SEGMENTADA_V2`) e stagings ignorados de `DEVICE_INTEGRATION`.
 
 ## 9. Fora do escopo (não feito)
 
