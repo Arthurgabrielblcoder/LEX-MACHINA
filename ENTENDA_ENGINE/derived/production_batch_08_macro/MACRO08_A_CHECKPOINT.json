@@ -1,0 +1,89 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_A",
+ "namespace": "CF88",
+ "articles_range": "CF88 176-200",
+ "stats": {
+  "articles": 25,
+  "targets_evaluated": 204,
+  "targets_current": 182,
+  "select": 41,
+  "skip": 141,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 7,
+   "EXCLUDED_REVOKED": 15
+  },
+  "new_explanations": 41,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 9,
+   "DEVICE": 7,
+   "OVERVIEW": 25
+  },
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {},
+  "pending_in_triage": 0,
+  "human_approved_t1": 41,
+  "skipped_articles": []
+ },
+ "critic": {
+  "corrections": 66,
+  "by_category": {
+   "CAMADA_EXTERNA": 1,
+   "CONDICAO_FORA_DO_TEXTO": 1,
+   "CONSEQUENCIA_INVENTADA": 1,
+   "COPIA_DA_LEI_SECA": 21,
+   "DEPENDENCIA_DE_LEI_OMITIDA": 1,
+   "DUPLICACAO": 1,
+   "EXCECAO_OMITIDA": 1,
+   "EXEMPLO_CRIA_REQUISITO": 3,
+   "FRASE_LONGA": 4,
+   "GENERALIZACAO_ABSOLUTA": 7,
+   "GLOSSARIO": 3,
+   "HISTORICO_SEM_PROVENIENCIA": 1,
+   "INTERPRETACAO_COMO_REGRA": 2,
+   "JURISPRUDENCIA_VELADA": 3,
+   "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA": 2,
+   "LISTA_INCOMPLETA": 2,
+   "NUMERO_ERRADO": 1,
+   "PAI_FILHO_REPETICAO": 1,
+   "RESSALVA": 1,
+   "TELEOLOGIA": 7,
+   "TEMPORAL": 2
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "status": "PASS",
+  "approved_by_recorded_round": 179,
+  "approval_gate": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 41,
+ "status": "PASS"
+}

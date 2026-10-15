@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_C",
+ "namespace": "CF88",
+ "articles_range": "CF88 226-250",
+ "stats": {
+  "articles": 25,
+  "targets_evaluated": 117,
+  "targets_current": 112,
+  "select": 30,
+  "skip": 82,
+  "excluded": {
+   "EXCLUDED_HISTORICAL": 4,
+   "EXCLUDED_REVOKED": 1
+  },
+  "new_explanations": 30,
+  "reused": 0,
+  "roles": {
+   "BLOCK": 2,
+   "DEVICE": 4,
+   "OVERVIEW": 24
+  },
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {},
+  "pending_in_triage": 0,
+  "human_approved_t1": 30,
+  "skipped_articles": []
+ },
+ "critic": {
+  "corrections": 44,
+  "by_category": {
+   "CONDICAO_FORA_DO_TEXTO": 1,
+   "COPIA_DA_LEI_SECA": 20,
+   "DATA": 4,
+   "DEPENDENCIA_DE_LEI_OMITIDA": 1,
+   "EXEMPLO_CRIA_REQUISITO": 2,
+   "FRASE_LONGA": 4,
+   "GENERALIZACAO_ABSOLUTA": 2,
+   "HISTORICO_SEM_PROVENIENCIA": 1,
+   "INTERPRETACAO_COMO_REGRA": 1,
+   "LEGISLACAO_EXTERNA_SEM_PROVENIENCIA": 5,
+   "NUMERO_ILUSTRATIVO": 1,
+   "PROVENIENCIA": 1,
+   "TELEOLOGIA": 1
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "status": "PASS",
+  "approved_by_recorded_round": 179,
+  "approval_gate": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 30,
+ "status": "PASS"
+}

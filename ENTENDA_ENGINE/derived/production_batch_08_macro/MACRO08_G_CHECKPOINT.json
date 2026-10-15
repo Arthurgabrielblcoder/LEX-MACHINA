@@ -1,0 +1,80 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_08",
+ "sub_block": "MACRO_08_G",
+ "namespace": "ADCT",
+ "articles_range": "ADCT 91-115",
+ "stats": {
+  "articles": 24,
+  "targets_evaluated": 234,
+  "targets_current": 141,
+  "select": 14,
+  "skip": 127,
+  "excluded": {
+   "EXCLUDED_REVOKED": 26,
+   "EXCLUDED_HISTORICAL": 67
+  },
+  "new_explanations": 14,
+  "reused": 0,
+  "roles": {
+   "OVERVIEW": 14
+  },
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {},
+  "pending_in_triage": 0,
+  "human_approved_t1": 14,
+  "skipped_articles": [
+   "ADCT:ART.93",
+   "ADCT:ART.94",
+   "ADCT:ART.95",
+   "ADCT:ART.96",
+   "ADCT:ART.100"
+  ]
+ },
+ "critic": {
+  "corrections": 23,
+  "by_category": {
+   "AFIRMACAO_UNIVERSAL": 1,
+   "COPIA_DA_LEI_SECA": 7,
+   "FRASE_LONGA": 2,
+   "LISTA_INCOMPLETA": 1,
+   "MODALIDADE": 2,
+   "NOTA_JURISPRUDENCIA": 2,
+   "NUMERO": 5,
+   "RESSALVA_OMITIDA": 3
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "status": "PASS",
+  "approved_by_recorded_round": 179,
+  "approval_gate": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 14,
+ "status": "PASS"
+}

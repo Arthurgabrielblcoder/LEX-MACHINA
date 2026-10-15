@@ -1,0 +1,114 @@
+{
+ "schema_version": 1,
+ "artifact": "RECONCILIATION_UPDATE_MACRO07_FINAL",
+ "branch": "reconcile-macro07-macro08",
+ "date": "2026-10-11",
+ "inputs": {
+  "macro07": {
+   "branch": "cf-macro-76-175-cloud",
+   "sha": "bc831c539185ecddb04fe0bbcf7bf6eb7fe95783",
+   "content_sha": "8daf73a4b7a67833c879f4f64e75ace16cfbdc80"
+  },
+  "macro08": {
+   "branch": "cf-macro-176-250-adct-cloud",
+   "sha": "5c4f1a0c71c5081c5d57622acf9d306edb27904c"
+  },
+  "reconciliation_before": "1e8d9ce97904cc3be26b54dceac3c49f6f1fb66b",
+  "merge_base": "1cf879f61433b6abb03238dbdb0e544a5d357d9b"
+ },
+ "strategy": "git merge --no-ff de bc831c5; 0 caminhos tocados pelos dois lados desde o merge-base; 0 conflitos; arvore do merge identica a simulada por git merge-tree (d7e0a9741c8f0286955d98c212753af6fb64ef72)",
+ "macro07": {
+  "status": "CLOSED",
+  "approved": 249,
+  "pending": 0,
+  "rounds": 7,
+  "approved_unchanged": 162,
+  "adjusted": 87,
+  "rejected": 0,
+  "held": 0,
+  "versions": {
+   "ACTIVE/HUMAN_APPROVED_T1/v1": 162,
+   "ACTIVE/HUMAN_APPROVED_T1/v2": 87,
+   "RETIRED/CHANGES_REQUESTED/v1": 87
+  },
+  "provenance_entries": 184,
+  "provenance_targets": 70,
+  "directory_identical_to_input": true
+ },
+ "macro08": {
+  "approvals_preserved": "179/179",
+  "corpus_versions": {
+   "ACTIVE/HUMAN_APPROVED_T1/v1": 149,
+   "ACTIVE/HUMAN_APPROVED_T1/v2": 30,
+   "RETIRED/CHANGES_REQUESTED/v1": 30
+  },
+  "tracked_files": 94,
+  "byte_identical_to_5c4f1a0": 76,
+  "regenerated_aggregates_or_presentation": [
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/DETERMINISM_EVIDENCE.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_A_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_BACKLOG.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_B_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_COMPACT_AB_REVIEW.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_C_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_D_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_E_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_FULL_D_REVIEW.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_F_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_G_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_HARD_FAIL_REPORT.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_HUMAN_REVIEW_PRIORITY.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_H_CHECKPOINT.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_MANIFEST.json",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_QUICK_C_REVIEW.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_SCALE_REPORT.md",
+   "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_TRIAGE.json"
+  ]
+ },
+ "accounting": {
+  "before": {
+   "approved": 561,
+   "pending": 249,
+   "active": 810
+  },
+  "after": {
+   "approved": 810,
+   "pending": 0,
+   "active": 810
+  },
+  "delta": {
+   "approved": 249,
+   "pending": -249,
+   "new_active_keys": 0,
+   "removed_active_keys": 0
+  },
+  "converted_equal_macro07_final": true,
+  "approvals_lost": 0,
+  "union": "382 (base e Batch06) + 249 (Macro07) + 179 (Macro08)"
+ },
+ "uniqueness": {
+  "historical_multi_corpus_presence": 145,
+  "active_conflict": 0,
+  "note": "presencas multi-corpus = pares preexistentes rascunho pendente / final aprovado dos lotes 01-03"
+ },
+ "materialization": {
+  "clone": "completo",
+  "files": 483,
+  "byte_identical": 483,
+  "index_pairs": 12,
+  "lookup_rows": 1346,
+  "payload_blocks": 1346,
+  "problems": 0
+ },
+ "sha256": {
+  "ENTENDA_ENGINE/derived/production_batch_07_macro/CF88_MACRO_07.entenda.jsonl": "324363b0862e0ce889ec49c0e3bca384b77c82e73b9c99b59ad2010e257acc0c",
+  "ENTENDA_ENGINE/derived/production_batch_08_macro/CF88_MACRO_08.entenda.jsonl": "e862b916d4c14b6d88289e497032ba1387776a60587fcfc2c771588e4a8e1dc6",
+  "ENTENDA_ENGINE/derived/production_batch_07_macro/MACRO07_FINAL_CLOSURE_LOG.md": "ad11a16387d19be1a31d2872f9c840611524bbad9af066784d17262be738c918",
+  "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_ROUND_FINAL_HUMAN_REVIEW_DECISIONS.json": "f64591a6f044a7fade6adaafa703550e4f5db562220dd2865a7312eb73bc5722",
+  "ENTENDA_ENGINE/derived/production_batch_08_macro/MACRO08_HUMAN_FLAG_RESOLUTIONS.json": "21a7dfe417d38d055c0f9d06b7e967e3ab0daa00276bd9d787952841fabf01b1",
+  "ENTENDA_ENGINE/editorial/T1_KNOWN_RESOLUTIONS.json": "2af875ebee8828dea8d8d42259b96f240b54c4b51886db8c420fee3191acfcff",
+  "ENTENDA_ENGINE/build_entenda_macro_batch.py": "a8dc4046713ff08e2a57bedee5f517222e0e67a56bb67b40721352c927ed5bc0",
+  "ENTENDA_ENGINE/build_entenda_macro_segment.py": "44b80cab99d55e6177a8e4de32ee6f99a96146de10cd1d8b76421b87b80c5a63",
+  "ENTENDA_ENGINE/t1_second_pass.py": "f1371b5f5723078e5315add34b0f12bb66884df99b05d91e180a54acedbb4805"
+ }
+}

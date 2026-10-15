@@ -1,0 +1,51 @@
+{
+ "schema_version": 1,
+ "note": "GERADO por ENTENDA_ENGINE/entenda_text_profile.py (perfil CF88_OFFICIAL_RUNTIME); nao editar. Igual a ENTENDA_ENGINE/entenda_config.json exceto: indice, status e fonte de texto dos namespaces ADCT lidos do runtime oficial (DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt).",
+ "usage_policy": "EDITORIAL_OUTPUT_ONLY: ENTENDA e saida editorial derivada; nunca e fonte para correlatas, jurisprudencia, referencias ou relations engine.",
+ "limits": {
+  "words_overview": [
+   120,
+   560
+  ],
+  "words_device": [
+   80,
+   400
+  ],
+  "max_terms": 5,
+  "max_verbatim_words": 10,
+  "max_section_similarity": 0.35,
+  "max_payload_bytes": 6144
+ },
+ "norms": {
+  "CF88": {
+   "target_index": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/TARGET_INDEX.json",
+   "target_status": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/TARGET_STATUS.json",
+   "text_sources": [
+    {
+     "namespaces": [
+      "CF88"
+     ],
+     "path": "updater/saida/1- CONSTITUIÇÃO FEDERAL/constituicao_federal_1988.txt",
+     "role": "OPERATIONAL_CURRENT_TEXT_SOURCE"
+    },
+    {
+     "namespaces": [
+      "ADCT"
+     ],
+     "path": "ENTENDA_ENGINE/profiles/CF88_OFFICIAL_RUNTIME/RUNTIME_TEXT.txt",
+     "role": "OFFICIAL_RUNTIME_PROFILE_TEXT",
+     "note": "leitura ENTENDA do runtime oficial DEVICE_INTEGRATION/runtime/CF88_RUNTIME.txt (sha256 7ef82290d30f...), um dispositivo por linha; texto de cada dispositivo identico ao do parser estrito (PROFILE_MANIFEST.json, ROUND_TRIP); so os namespaces listados sao lidos daqui"
+    }
+   ],
+   "corpus": "ENTENDA_ENGINE/corpus/CF88.entenda.jsonl",
+   "reference_export": "LEGAL_TARGET_ID/derived/export_test/run1/CF88_REFERENCES_EXPORT.json",
+   "jurisprudence_catalog": "C:/LMA/p545e/20260928/LEX_MACHINA_JURIS_CF_J4/VINCULOS_EXPLICITOS.json",
+   "allow_historical": false,
+   "export_review_statuses": [
+    "PENDING_HUMAN_REVIEW",
+    "HUMAN_APPROVED_T1",
+    "APPROVED"
+   ]
+  }
+ }
+}
