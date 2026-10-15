@@ -36,7 +36,7 @@ def c_unescape(s):
 
 def header_table(p):
     """{key: (titulo, tipo, ano, nota10, sobre, fonte)} parsed from the generated C table, in file order."""
-    txt = Path(p).read_text(encoding='utf-8')
+    txt = Path(p).read_bytes().replace(b'\r\n', b'\n').decode('utf-8')     # checkout may use autocrlf
     out = {}
     for m in re.finditer(r'\n  \{("(?:[^"\\]|\\.|"")*?"), ("(?:[^"\\]|\\.|"")*?"), ("(?:[^"\\]|\\.|"")*?"), (\d+), (-?\d+),\n   '
                          r'("(?:[^"\\]|\\.|"")*?"),\n   ("(?:[^"\\]|\\.|"")*?"),\n   ("(?:[^"\\]|\\.|"")*?"), ("(?:[^"\\]|\\.|"")*?"), '
@@ -85,7 +85,7 @@ class DetailHeaderTest(unittest.TestCase):
             self.assertEqual(busca_detalhe(self.keys, *k.split('|')), k)
 
     def test_baseline_header_untouched(self):
-        self.assertEqual(sha(HDR_BASE), '2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b')
+        self.assertEqual(hashlib.sha256(HDR_BASE.read_bytes().replace(b'\r\n', b'\n')).hexdigest(), '2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b')
 
 
 class HostOnlyPackageTest(unittest.TestCase):

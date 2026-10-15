@@ -33,6 +33,11 @@ PROMOTED = 'PROMOTED_FROM_R1A_IDENTITY'
 YEAR_EXCEPTION = {'REFERENCE_EXPANSION_01-P21'}      # see ano_decisao in the identity record
 
 
+def sha_lf(p):
+    """sha256 of the committed (LF) form of a text input: a checkout with core.autocrlf may materialize it as CRLF."""
+    return hashlib.sha256(Path(p).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+
+
 def promote(d, reg, ident):
     """Approved held decision -> registry record (same shape as R1E.promote) + check log. Fail closed."""
     rows = [o for o in ident['obras'] if o['required_by']['decision_id'] == d['decision_id']]
@@ -69,7 +74,7 @@ def promote(d, reg, ident):
                provenance=dict(status=PROMOTED, editorial_approval=R1E.EDITORIAL_APPROVAL, approval_method=R1E.APPROVAL_METHOD,
                                round=ROUND, decision_round=R1E.ROUND, decided_on=R1E.DECIDED_ON, decision_id=d['decision_id'], candidate_id=cid,
                                candidate_status_triagem=o['status_triagem'], candidate_catalog=IDENTITY.relative_to(ROOT).as_posix(),
-                               candidate_catalog_sha256=R1E.sha(IDENTITY),
+                               candidate_catalog_sha256=sha_lf(IDENTITY),
                                candidate_record_sha256=hashlib.sha256(json.dumps(o, ensure_ascii=False, sort_keys=True).encode('utf-8')).hexdigest(),
                                required_by=d['target_id']),
                registro_origem_integral=o)
@@ -97,7 +102,7 @@ def build():
         promoted.append(rec)
         logs.append(log)
     v3 = dict(schema='WORK_REGISTRY_V3', status='OFFICIAL_REGISTRY', round=ROUND,
-              supersedes=dict(path=REGISTRY_V2.relative_to(ROOT).as_posix(), sha256=R1E.sha(REGISTRY_V2), total=v2['total'],
+              supersedes=dict(path=REGISTRY_V2.relative_to(ROOT).as_posix(), sha256=sha_lf(REGISTRY_V2), total=v2['total'],
                               note='Registros do V2 copiados sem alteração (mesmos valores JSON); o V2 permanece versionado como base do RUN3.'),
               promotion_policy='Somente obras exigidas por vínculos aprovados e retidos (APPROVED_PENDING_WORK_IDENTITY) do REFERENCE_EXPANSION_01, '
                                'com identidade registrada no R1A_WORK_IDENTITY (fontes consultadas).',
@@ -120,8 +125,8 @@ def build():
             decision=d['decision'], decision_id=d['decision_id'], work_registry_status=PROMOTED,
             external_verification=f.get('external_verification'), external_editorial_support=f.get('external_editorial_support'),
             provenance=dict(round=ROUND, decision_round=R1E.ROUND, decided_on=R1E.DECIDED_ON, decisions_file=DECISIONS.relative_to(ROOT).as_posix(),
-                            decisions_sha256=R1E.sha(DECISIONS), identity_file=IDENTITY.relative_to(ROOT).as_posix(),
-                            identity_sha256=R1E.sha(IDENTITY))))
+                            decisions_sha256=sha_lf(DECISIONS), identity_file=IDENTITY.relative_to(ROOT).as_posix(),
+                            identity_sha256=sha_lf(IDENTITY))))
     add_bytes = R1E.jdump(dict(
         schema_version=1, norma_id='CF88', round=ROUND, status=R1E.REVIEW_STATUS, reference_type='WORK_REFERENCE',
         policy='Overlay editorial R1: somente as duas aprovações humanas retidas por falta de identidade de obra (P20, P21). Nenhuma relação '

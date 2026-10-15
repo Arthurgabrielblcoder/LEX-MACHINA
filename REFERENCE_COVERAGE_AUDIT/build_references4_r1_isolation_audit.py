@@ -45,14 +45,18 @@ def pair(name):
 
 def fw_define(name):
     for p in sorted(FW.glob('*.h')) + sorted(FW.glob('*.ino')):
-        m = re.search(rf'#define {name} (\d+)', p.read_text(encoding='utf-8', errors='replace'))
+        m = re.search(rf'#define {name} (\d+)', lf(p.read_bytes()).decode('utf-8', errors='replace'))
         if m:
             return int(m.group(1))
     raise SystemExit(f'DEFINE_NOT_FOUND {name}')
 
 
+def lf(b):
+    return b.replace(b'\r\n', b'\n')                  # committed (LF) form; a checkout with core.autocrlf may give CRLF
+
+
 def header_entries(p):
-    txt = Path(p).read_text(encoding='utf-8')
+    txt = lf(Path(p).read_bytes()).decode('utf-8')
     body = txt[txt.index('LEXV1_REF_DETALHES[LEXV1_REF_DETAIL_COUNT] = {'):]
     ents = re.findall(r'\n  \{"((?:[^"\\]|\\.)*)", .*?\},(?=\n  \{|\n\};)', body, re.S)
     blocks = re.findall(r'\n  (\{"(?:[^"\\]|\\.)*", .*?\},)(?=\n  \{|\n\};)', body, re.S)
@@ -130,7 +134,7 @@ def audit():
         new_keys=sorted(set(ec) - set(eb)), removed_keys=sorted(set(eb) - set(ec)), unique_keys=len(keys) == len(set(keys)),
         sorted_for_strcmp=keys == sorted(keys, key=lambda k: k.encode('utf-8')),
         every_visible_work_link_has_detail={f'{r[0]}|{r[5]}' for r in wc if r[2] == 'CURRENT_VISIBLE'} == set(ec),
-        candidate_sha256=sha(HDR_CAND.read_bytes()), base_sha256=sha(HDR_BASE.read_bytes()))
+        candidate_sha256=sha(lf(HDR_CAND.read_bytes())), base_sha256=sha(lf(HDR_BASE.read_bytes())))
     # ---- firmware limits of the layer-4 path (registered, not optimized)
     key_max, line_max, itens_max = fw_define('LEXV1_KEY_MAX'), fw_define('LEXV1_LINE_MAX'), fw_define('LEXV1_REF_ITENS_MAX')
     per_article = collections.Counter()

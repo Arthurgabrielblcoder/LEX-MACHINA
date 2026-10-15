@@ -35,6 +35,10 @@ def sha(p):
     return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
+def sha_lf(p):                                       # committed (LF) form of a text file (checkout may use autocrlf)
+    return hashlib.sha256(Path(p).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+
+
 def run(*args):
     return subprocess.run([sys.executable, '-I', '-B', *map(str, args)], capture_output=True, text=True, cwd=ROOT)
 
@@ -77,7 +81,7 @@ class R1RegistryAndOverlayTest(unittest.TestCase):
         self.assertEqual((self.v3['total_before'], self.v3['total'], len(self.v3['obras'])), (73, 75, 75))
         self.assertEqual(self.v3['obras'][:73], self.v2['obras'])                    # V2 records unchanged
         self.assertEqual(self.v3['promoted'], ['R1A-DOC-001', 'R1A-DOC-002'])
-        self.assertEqual(self.v3['supersedes']['sha256'], sha(V2))
+        self.assertEqual(self.v3['supersedes']['sha256'], sha_lf(V2))
         ids = [o['id'] for o in self.v3['obras']]
         self.assertEqual(len(ids), len(set(ids)))
         for log in self.v3['promotion_log']:
@@ -102,7 +106,7 @@ class R1RegistryAndOverlayTest(unittest.TestCase):
             for k in ('conexao_juridica', 'por_que_esta_aqui', 'alcance_neste_dispositivo', 'limites', 'confidence'):
                 self.assertEqual(r[k], d['final'][k], k)                                # approved text transported, not rewritten
             self.assertEqual(r['score_editorial'], d['final']['score'])
-        self.assertEqual(self.adds['work_registry_sha256'], sha(V3))
+        self.assertEqual(self.adds['work_registry_sha256'], sha_lf(V3))
 
     def test_engine_fail_closed_without_registry_v3(self):
         reg = E.TargetRegistry()
