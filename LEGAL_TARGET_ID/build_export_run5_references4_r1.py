@@ -12,6 +12,7 @@ Rules (Correlatas 1 is frozen):
   - CF88_TARGETS.IDX: C3B.2 bytes with ONLY position [3] (W) recomputed: 'W' iff the exact target has a CURRENT_VISIBLE WORK_REFERENCE in the
     device export (same rule as build_sd_staging.build_targets). E, C, J, R, X are never touched (R stays as approved in C3B.2);
   - RELACOES.IDX, REL_LOOKUP.IDX, EXT_ARTIGOS.IDX: byte copies of RUN4 (CORRELATA files, not regenerated).
+Also writes CF88_WORK_REFERENCE_ADDITIONS_RUN5_EFFECTIVE.json (RUN3 + R1 overlay records, unchanged) for the detail-header generator.
 Deterministic (no clock). Usage: python build_export_run5_references4_r1.py [--out DIR]
 """
 import argparse
@@ -39,6 +40,7 @@ ADDITIONS_R1 = 'derived/CF88_WORK_REFERENCE_ADDITIONS_R1.json'
 REGISTRY_V3 = '../REFERENCE_REGISTRY/WORK_REGISTRY_V3.json'
 OUT = D / 'export_test/run5_references4_r1_candidate'
 STATUS = 'RUN5_REFERENCES4_R1_CANDIDATE_HOST_ONLY'
+EFFECTIVE_OVERLAY = 'CF88_WORK_REFERENCE_ADDITIONS_RUN5_EFFECTIVE.json'
 COPIED = ('RELACOES.IDX', 'REL_LOOKUP.IDX', 'EXT_ARTIGOS.IDX')
 W_POS = 3
 
@@ -160,6 +162,14 @@ def build(out):
                             works_used_after=len({l['source_id'] for l in wl}), w_targets_before=len(base_w), w_targets_after=len(work_targets)),
         target_flag_changes=w_changes, untouched_files=list(COPIED),
         files={**files, **{n: dict(sha256=sha((dev / n).read_bytes()), bytes=(dev / n).stat().st_size) for n in ('CF88_TARGETS.IDX',) + COPIED}})
+    # effective WORK_REFERENCE overlay of RUN5 (RUN3 overlay + R1 overlay, records copied unchanged): input of the official detail-header
+    # generator (DEVICE_INTEGRATION/tools/build_ref_detail_header.py --additions), which takes one overlay file
+    eff = dict(schema_version=1, norma_id=NORM, round='RUN5_EFFECTIVE_OVERLAY', status='HUMAN_APPROVED_REFERENCE_V1', reference_type='WORK_REFERENCE',
+               policy='Concatenação, sem alteração, dos overlays aprovados aplicados no RUN5 (gerado; não editar).',
+               sources=[dict(path=p.relative_to(ROOT).as_posix(), sha256=sha(p.read_bytes()), total=len(r))
+                        for p, r in ((ADDITIONS_RUN3, adds_run3), (HERE / ADDITIONS_R1, adds_r1))],
+               total=len(adds_run3) + len(adds_r1), records=list(adds_run3) + list(adds_r1))
+    (out / EFFECTIVE_OVERLAY).write_bytes((json.dumps(eff, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     (out / 'RUN5_SUMMARY.json').write_bytes((json.dumps(summary, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     sums = sorted((p.relative_to(out).as_posix(), sha(p.read_bytes())) for p in out.rglob('*')
                   if p.is_file() and p.name != 'SHA256SUMS.txt' and 'device_candidate' not in p.relative_to(out).parts)

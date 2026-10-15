@@ -1,6 +1,5 @@
 #pragma once
-// CANDIDATO (nao substitui o header do baseline): + overlay CF88_WORK_REFERENCE_ADDITIONS.json sha256 e6cb6b04994c2e224fb1bd838b840c481755a3b305f6355da36e038258f5dcae
-// CANDIDATO (nao substitui o header do baseline): + overlay CF88_WORK_REFERENCE_ADDITIONS_R1.json sha256 65379d1bf9b3a83906b22fe4ecf777031d444b472cffec5fb9dcce2ff7a59724
+// CANDIDATO (nao substitui o header do baseline): + overlay CF88_WORK_REFERENCE_ADDITIONS_RUN5_EFFECTIVE.json sha256 1b07842719767e22188ec526d08156ae6f7fdac259c2d0f375c400c1fae7ba46
 // GERADO por DEVICE_INTEGRATION/tools/build_ref_detail_header.py - NAO EDITAR.
 // Metadados editoriais APROVADOS (RC2 revisado) dos vinculos obra <-> dispositivo, transportados sem reescrita.
 // Fonte: LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json sha256 89bd39c48c45e71eeb4b14c4e323f67c2e945c14ded8c86089c37e6578e19319

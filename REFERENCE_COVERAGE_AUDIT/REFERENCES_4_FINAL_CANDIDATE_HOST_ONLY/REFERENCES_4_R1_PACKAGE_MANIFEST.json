@@ -1,0 +1,176 @@
+{
+ "profile": "FULL_CF_ENTENDA_810",
+ "package": "REFERENCES_4_R1",
+ "status": "HOST_ONLY_CANDIDATE",
+ "physical_approved": false,
+ "card_touched": false,
+ "device_flashed": false,
+ "staging": "DEVICE_INTEGRATION/staging_sd_v1_references4_r1_candidate",
+ "build_id": "5eb2a9298c1edbd6",
+ "git_commit": "453922ffcbc5d15fb9bed832a9cfa5206348e3df",
+ "reference_engine": {
+  "tag": "cf-reference-engine-run5-references4-r1",
+  "run": "run5",
+  "status": "RUN5_REFERENCES4_R1_CANDIDATE_HOST_ONLY",
+  "derived_from": "run4 (C3B.2 physically approved) + WORK_REFERENCE overlay REFERENCES_4_R1 (P20, P21)"
+ },
+ "c3b2_baseline_reproduced": true,
+ "deterministic_runs": 2,
+ "byte_identical_rebuild": true,
+ "targets_r_only_divergence_vs_generator": [
+  "CF88:ART.146",
+  "CF88:ART.155:PAR.2:INC.VII",
+  "CF88:ART.158:PAR.1:INC.I",
+  "CF88:ART.158:PAR.1:INC.II",
+  "CF88:ART.195:INC.I:AL.b",
+  "CF88:ART.195:PAR.1",
+  "CF88:ART.195:PAR.2",
+  "CF88:ART.196",
+  "CF88:ART.201:INC.II",
+  "CF88:ART.202:PAR.1",
+  "CF88:ART.206:INC.I",
+  "CF88:ART.20:PAR.1",
+  "CF88:ART.214:CAPUT",
+  "CF88:ART.214:INC.I",
+  "CF88:ART.214:INC.II",
+  "CF88:ART.214:INC.III",
+  "CF88:ART.214:INC.IV",
+  "CF88:ART.214:INC.V",
+  "CF88:ART.214:INC.VI",
+  "CF88:ART.239:PAR.3",
+  "CF88:ART.239:PAR.4",
+  "CF88:ART.37:PAR.3:INC.II",
+  "CF88:ART.37:PAR.3:INC.III",
+  "CF88:ART.43:PAR.1:INC.I",
+  "CF88:ART.43:PAR.1:INC.II"
+ ],
+ "device_manifest_matches_package": true,
+ "changed_vs_c3b2": [
+  "99_LEX_V1/00_SYS/LEXV1.VER",
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+ ],
+ "unchanged_vs_c3b2": [
+  "99_LEX_V1/05_TEXT/CF88_RUNTIME.txt",
+  "99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX",
+  "99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX",
+  "99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX",
+  "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX",
+  "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT",
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX",
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX",
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX"
+ ],
+ "file_diff": [
+  {
+   "path": "/99_LEX_V1/00_SYS/LEXV1.VER",
+   "before_sha256": "9132a73deb6e7ef8f8cecca76ac35bf28d0d1202b6403a40d96a15f3f9266c9d",
+   "before_bytes": 585,
+   "after_sha256": "edaf6147767ceece3fdd3149b63d79037e8e06a9de8ca71e3589da88a3758125",
+   "after_bytes": 600
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "before_sha256": "6186c3574b0fd46dd4d7fe9ce74d6769587eaac33d017e7f02833b5fd829665a",
+   "before_bytes": 7605,
+   "after_sha256": "7b8da57d943aef59f6dda55f1eb86484b516f7170da7074e3638949c7ce292fb",
+   "after_bytes": 7622
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "before_sha256": "d2fcc15bbe41ef16c51bbe1ef7cb201bd9677b6ac54198b96ad2abc08395e06c",
+   "before_bytes": 165466,
+   "after_sha256": "d4e3342b99f5a5efb732eb9b36f786f3eaf5a33ab651500c7ce8a387bfe593f7",
+   "after_bytes": 165466
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "before_sha256": "27c67eea6a38e3cba012d4a3d02c3856d37fd4cd1bae15473854fab0edea5430",
+   "before_bytes": 6702,
+   "after_sha256": "efabb245e3beb8b63df33249a7a2e3c178aace02b361d9d344cb348d0fa823a0",
+   "after_bytes": 6750
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "before_sha256": "1762642d337aff83ac5b95e074235bc58028b8a68bac17a384e9eed4a4a5addd",
+   "before_bytes": 65248,
+   "after_sha256": "da49c43b7a21990334a6a1af63fbc605fec7fde195a06a2014776285455006eb",
+   "after_bytes": 65514
+  }
+ ],
+ "file_count": 14,
+ "files": [
+  {
+   "path": "/99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "sha256": "7b8da57d943aef59f6dda55f1eb86484b516f7170da7074e3638949c7ce292fb",
+   "same_as_c3b2": false
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEXV1.VER",
+   "sha256": "edaf6147767ceece3fdd3149b63d79037e8e06a9de8ca71e3589da88a3758125",
+   "same_as_c3b2": false
+  },
+  {
+   "path": "/99_LEX_V1/05_TEXT/CF88_RUNTIME.txt",
+   "sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX",
+   "sha256": "674c9971925c29aaca9685fb2d0b9515fe87e4072d644858ea27495c327d3a68",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX",
+   "sha256": "56e437a0c9cebb113c47f6a7b100ee64363c63207a647eca0456e86d6db27fae",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "sha256": "d4e3342b99f5a5efb732eb9b36f786f3eaf5a33ab651500c7ce8a387bfe593f7",
+   "same_as_c3b2": false
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX",
+   "sha256": "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "sha256": "efabb245e3beb8b63df33249a7a2e3c178aace02b361d9d344cb348d0fa823a0",
+   "same_as_c3b2": false
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "sha256": "da49c43b7a21990334a6a1af63fbc605fec7fde195a06a2014776285455006eb",
+   "same_as_c3b2": false
+  },
+  {
+   "path": "/99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX",
+   "sha256": "017050dc98b76cdbea9997c6d3ad49f34673393c6768fcb43fa0eb9767120c99",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT",
+   "sha256": "dbea72601046e6d9fba2f6a6442a490f905a03911186f9aeb44db7e6184e0fd3",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX",
+   "sha256": "5c54face7ea7eff62dbbb0a4193b5e2452e7fb03d82012d09919e74d234b3e5e",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX",
+   "sha256": "efac06cee0a1d8f0676564ba128d0ab8f474b89399f40de6422cc6fded37ef2c",
+   "same_as_c3b2": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX",
+   "sha256": "691790f3ee5d4aaa9b88235bca33008357b99d87324c07b1da8b51355c20685c",
+   "same_as_c3b2": true
+  }
+ ]
+}

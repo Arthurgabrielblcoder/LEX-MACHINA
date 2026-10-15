@@ -9,7 +9,7 @@ OFFICIAL staging generator (build_sd_staging), exactly as the C3B.2 promotion wa
 Proof first: the official C3B.2 promotion build is re-run and must reproduce the approved C3B.2 staging tree (STAGING_FILE_MANIFEST.json).
 Outputs: DEVICE_INTEGRATION/staging_sd_v1_references4_r1_candidate/ (full SD tree, gitignored) and the package
 REFERENCES_4_FINAL_CANDIDATE_HOST_ONLY/ (only the changed SD files, rollback = C3B.2 bytes, manifests, diff). Never writes to a removable volume.
-Usage: python build_references4_r1_candidate.py --commit <sha> [--runs N]
+Usage: python REFERENCE_COVERAGE_AUDIT/build_references4_r1_candidate.py --commit <sha> [--runs N]
 """
 import argparse
 import hashlib
@@ -19,9 +19,9 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-DI = HERE.parent
-ROOT = DI.parent
-sys.path.insert(0, str(HERE))
+ROOT = HERE.parent
+DI = ROOT / 'DEVICE_INTEGRATION'                      # official staging tools; this file lives outside the frozen DEVICE_INTEGRATION tree
+sys.path.insert(0, str(DI / 'tools'))
 import build_sd_staging as S  # noqa: E402
 import build_c3b2_promotion_candidate as C  # noqa: E402
 
