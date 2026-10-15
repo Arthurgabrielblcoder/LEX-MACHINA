@@ -1,0 +1,839 @@
+{
+ "schema_version": 1,
+ "as_of_date": "2026-10-05",
+ "policy": "Nenhuma conclusao temporal depende de memoria: toda citacao e conferida contra a fonte versionada (sha256) pelo builder; sem fonte versionada, a transicao fica ACTIVE_TRANSITION_HIGH com evidencia externa PENDING_EXTERNAL_INGESTION.",
+ "sources": {
+  "CF88_CANONICAL": {
+   "path": "updater/backup_catalogos/catalogo_mestre_20260913_145217/1- CONSTITUI#U00c7#U00c3O FEDERAL/cf.txt",
+   "sha256": "0742175b553199d97d9ea8a8b6dcd8a97adf4ef730c84e992cede7aa047c55cc"
+  },
+  "CF88_SENADO": {
+   "path": "updater/fontes_oficiais_senado/CF88/16434817_5beff7a4/normalizado.txt",
+   "sha256": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2"
+  },
+  "ADCT_SENADO": {
+   "path": "updater/fontes_oficiais_senado/ADCT/16434816_2e7bf19d/normalizado.txt",
+   "sha256": "887617267a648cccd36128323db07c2659194326c1e85020f1ddfd636067006a"
+  }
+ },
+ "resolutions": {
+  "RESOLVED_BY_VERSIONED_SOURCE": "marco temporal fixado em fonte versionada; a explicacao nao depende de regime coexistente: TRANSITION deixa de ser HIGH (MEDIUM, motivo TRANSITION_RESOLVED_BY_VERSIONED_SOURCE)",
+  "ACTIVE_TRANSITION_HIGH": "HIGH mantido por criterio explicito (high_criteria)"
+ },
+ "targets": [
+  {
+   "target_id": "CF88:ART.100:PAR.5",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 136/2025"
+   ],
+   "adct_articles": [],
+   "temporal_marker": "nova data de apresentacao dos precatorios (redacao da EC 136/2025)",
+   "current_rule_2026": "o texto vigente fixa a data de apresentacao e o pagamento ate o fim do exercicio seguinte; a aplicacao da nova redacao aos orcamentos em curso depende das regras da propria emenda",
+   "produces_effect_in_2026": "SIM: emenda de 2025; orcamentos de 2026 e 2027 alcancados",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "EMENDA_RECENTE_COM_TRANSICAO_PROPRIA",
+    "TEXTO_VIGENTE_INSUFICIENTE"
+   ],
+   "missing_external_evidence": "regras de transicao da EC 136/2025 (texto da emenda nao versionado): PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 5º É obrigatória a inclusão no orçamento das entidades de direito público de verba necessária ao pagamento de seus débitos oriundos de sentenças transitadas em julgado constantes de precatórios judiciários apresentados até 1º de fevereiro, fazendo-se o pagamento até o final do exercício seguinte, quando terão seus valores atualizados monetariamente. (Redação dada pela Emenda Constitucional nº 136, de 2025)"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.105:PAR.2",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 125/2022"
+   ],
+   "adct_articles": [],
+   "temporal_marker": "filtro de relevancia do recurso especial \"nos termos da lei\"",
+   "current_rule_2026": "o texto exige a demonstracao da relevancia nos termos da lei; a exigibilidade no tempo depende dessa lei e da regra da emenda",
+   "produces_effect_in_2026": "SIM",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA"
+   ],
+   "missing_external_evidence": "lei regulamentadora do filtro e regra de aplicacao da EC 125/2022: PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 2º No recurso especial, o recorrente deve demonstrar a relevância das questões de direito federal infraconstitucional discutidas no caso, nos termos da lei, a fim de que a admissão do recurso seja examinada pelo Tribunal, o qual somente pode dele não conhecer com base nesse motivo pela manifestação de 2/3 (dois terços) dos membros do órgão competente para o julgamento. (Incluído pela Emenda Constitucional nº 125, de 2022) (Regulamento) Vigência"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 42/2003",
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 124",
+    "ADCT 125",
+    "ADCT 126",
+    "ADCT 127"
+   ],
+   "temporal_marker": "cobranca do IBS (art. 156-A) e da CBS (art. 195, V): 2026 em teste (ADCT 125); CBS integral a partir de 2027 (ADCT 126); IBS 0,05% + 0,05% em 2027-2028 (ADCT 127)",
+   "current_rule_2026": "o regime unico (§ 1º) vigora desde a EC 42/2003; as opcoes dos §§ 2º e 3º se referem a tributos cuja cobranca segue datas fixas do ADCT",
+   "produces_effect_in_2026": "SIM (IBS/CBS em fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "A transição para os tributos previstos no art. 156-A e no art. 195, V, todos da Constituição Federal , atenderá aos critérios estabelecidos nos arts. 125 a 133 deste Ato das Disposições Constitucionais Transitórias"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "126. A partir de 2027: I – serão cobrados: a) a contribuição prevista no art. 195, V, da Constituição Federal ; b) o imposto previsto no art. 153, VIII, da Constituição Federal ;"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.149-B",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 124",
+    "ADCT 125",
+    "ADCT 126",
+    "ADCT 127"
+   ],
+   "temporal_marker": "cobranca do IBS e da CBS conforme ADCT 125 a 127",
+   "current_rule_2026": "as regras comuns do art. 149-B valem para o IBS e a CBS desde que cobrados; as datas de cobranca estao fixadas no ADCT",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "Art. 149-B. Os tributos previstos nos arts. 156-A e 195, V, observarão as mesmas regras em relação a: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "A transição para os tributos previstos no art. 156-A e no art. 195, V, todos da Constituição Federal , atenderá aos critérios estabelecidos nos arts. 125 a 133 deste Ato das Disposições Constitucionais Transitórias"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "126. A partir de 2027: I – serão cobrados: a) a contribuição prevista no art. 195, V, da Constituição Federal ; b) o imposto previsto no art. 153, VIII, da Constituição Federal ;"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.149-C",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 124",
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 131"
+   ],
+   "temporal_marker": "cobranca do IBS e da CBS conforme ADCT 125 a 127; retencao do IBS de 2029 a 2077 (ADCT 131) aplicada nos termos do art. 149-C",
+   "current_rule_2026": "a regra do art. 149-C acompanha a cobranca do IBS e da CBS, com datas fixadas no ADCT",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "Art. 149-C. O produto da arrecadação do imposto previsto no art. 156-A e da contribuição prevista no art. 195, V, incidentes sobre operações contratadas pela administração pública direta, por autarquias e por fundações públicas, inclusive suas importações, será integralmente destinado ao ente federativo contratante, mediante redução a zero das alíquotas do imposto e da contribuição devidos aos demais entes e equivalente elevação da alíquota do tributo devido ao ente contratante. (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "A transição para os tributos previstos no art. 156-A e no art. 195, V, todos da Constituição Federal , atenderá aos critérios estabelecidos nos arts. 125 a 133 deste Ato das Disposições Constitucionais Transitórias"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "131. De 2029 a 2077, o produto da arrecadação dos Estados, do Distrito Federal e dos Municípios com o imposto de que trata o art. 156-A da Constituição Federal será distribuído a esses entes federativos conforme o disposto neste artigo."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 126"
+   ],
+   "temporal_marker": "imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b); IPI com aliquota zero a partir de 2027, salvo Zona Franca (ADCT 126, III)",
+   "current_rule_2026": "em 2026 o imposto do inciso VIII ainda nao e cobrado; as datas estao fixadas no ADCT",
+   "produces_effect_in_2026": "NAO para o inciso VIII (inicio em 2027); SIM para os demais incisos",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "VIII - produção, extração, comercialização ou importação de bens e serviços prejudiciais à saúde ou ao meio ambiente, nos termos de lei complementar. (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "126. A partir de 2027: I – serão cobrados: a) a contribuição prevista no art. 195, V, da Constituição Federal ; b) o imposto previsto no art. 153, VIII, da Constituição Federal ;"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "III – o imposto previsto no art. 153, IV, da Constituição Federal : a) terá suas alíquotas reduzidas a zero, exceto em relação aos produtos que tenham industrialização incentivada na Zona Franca de Manaus, conforme critérios estabelecidos em lei complementar; e b) não incidirá de forma cumulativa com o imposto previsto no art. 153, VIII"
+    }
+   ],
+   "note": "a explicacao geral nao afirma data; o detalhe do IPI (excecao da Zona Franca por lei complementar) fica no § 3º, que segue HIGH"
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.3",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 126"
+   ],
+   "temporal_marker": "IPI com aliquota zero a partir de 2027, salvo produtos com industrializacao incentivada na Zona Franca de Manaus, conforme criterios de lei complementar (ADCT 126, III)",
+   "current_rule_2026": "em 2026 o IPI segue cobrado; a partir de 2027 convivem aliquota zero e a excecao da Zona Franca definida em lei complementar",
+   "produces_effect_in_2026": "SIM: implantacao em 2027, a menos de um exercicio da data de referencia",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "DATA_DE_IMPLANTACAO_AINDA_MATERIAL",
+    "REGIMES_COEXISTENTES",
+    "TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA"
+   ],
+   "missing_external_evidence": "lei complementar com os criterios da Zona Franca: PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "III – o imposto previsto no art. 153, IV, da Constituição Federal : a) terá suas alíquotas reduzidas a zero, exceto em relação aos produtos que tenham industrialização incentivada na Zona Franca de Manaus, conforme critérios estabelecidos em lei complementar; e b) não incidirá de forma cumulativa com o imposto previsto no art. 153, VIII"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 126"
+   ],
+   "temporal_marker": "imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b)",
+   "current_rule_2026": "o § 6º descreve o imposto do inciso VIII, cuja cobranca comeca em 2027 por data fixa do ADCT",
+   "produces_effect_in_2026": "NAO (inicio em 2027)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 6º O imposto previsto no inciso VIII do caput deste artigo: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "126. A partir de 2027: I – serão cobrados: a) a contribuição prevista no art. 195, V, da Constituição Federal ; b) o imposto previsto no art. 153, VIII, da Constituição Federal ;"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 128",
+    "ADCT 129"
+   ],
+   "temporal_marker": "reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)",
+   "current_rule_2026": "o imposto do art. 155, II, segue integral em 2026; reducao proporcional de 2029 a 2032 e extincao em 2033, por datas fixas do ADCT",
+   "produces_effect_in_2026": "SIM (regime atual integral em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "128. De 2029 a 2032, as alíquotas dos impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal , serão fixadas nas seguintes proporções das alíquotas fixadas nas respectivas legislações:"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "129. Ficam extintos, a partir de 2033, os impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal ."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 128",
+    "ADCT 129"
+   ],
+   "temporal_marker": "reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)",
+   "current_rule_2026": "as regras do § 2º valem integralmente em 2026; reducao proporcional de 2029 a 2032 e extincao em 2033, por datas fixas do ADCT",
+   "produces_effect_in_2026": "SIM (regime atual integral em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "128. De 2029 a 2032, as alíquotas dos impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal , serão fixadas nas seguintes proporções das alíquotas fixadas nas respectivas legislações:"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "129. Ficam extintos, a partir de 2033, os impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal ."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 42/2003",
+    "EC 132/2023"
+   ],
+   "adct_articles": [],
+   "temporal_marker": "ampliacao do imposto sobre veiculos (aquaticos e aereos) e aliquotas por impacto ambiental, incluidas pela EC 132/2023",
+   "current_rule_2026": "o texto vigente define o alcance do imposto; a aplicacao no tempo da ampliacao depende da lei de cada Estado e de regras da propria emenda, fora do ADCT versionado",
+   "produces_effect_in_2026": "SIM",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA",
+    "TEXTO_VIGENTE_INSUFICIENTE"
+   ],
+   "missing_external_evidence": "regras da EC 132/2023 fora do ADCT e legislacao estadual: PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "III - incidirá sobre a propriedade de veículos automotores terrestres, aquáticos e aéreos, excetuados: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 128",
+    "ADCT 129"
+   ],
+   "temporal_marker": "reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)",
+   "current_rule_2026": "o imposto do art. 156, III, segue integral em 2026; reducao proporcional de 2029 a 2032 e extincao em 2033, por datas fixas do ADCT",
+   "produces_effect_in_2026": "SIM (regime atual integral em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "128. De 2029 a 2032, as alíquotas dos impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal , serão fixadas nas seguintes proporções das alíquotas fixadas nas respectivas legislações:"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "129. Ficam extintos, a partir de 2033, os impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal ."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 124",
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 128",
+    "ADCT 129",
+    "ADCT 130"
+   ],
+   "temporal_marker": "2026: aliquota estadual de teste de 0,1%, compensavel e com dispensa possivel por lei complementar (ADCT 125); 2027-2028: 0,05% + 0,05% (ADCT 127); 2029-2032: convivencia com a reducao dos impostos substituidos (ADCT 128); 2033: extincao dos impostos substituidos (ADCT 129)",
+   "current_rule_2026": "em 2026 o imposto esta em fase de teste e convive integralmente com os impostos que substituira",
+   "produces_effect_in_2026": "SIM: fase de teste em 2026",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "REGIMES_COEXISTENTES",
+    "VIGENCIA_PARCIAL",
+    "TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA"
+   ],
+   "missing_external_evidence": "lei complementar do imposto (dispensa do ADCT 125, § 4º): PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "Art. 156-A. Lei complementar instituirá imposto sobre bens e serviços de competência compartilhada entre Estados, Distrito Federal e Municípios. (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "A transição para os tributos previstos no art. 156-A e no art. 195, V, todos da Constituição Federal , atenderá aos critérios estabelecidos nos arts. 125 a 133 deste Ato das Disposições Constitucionais Transitórias"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "§ 1º O montante recolhido na forma do caput será compensado com o valor devido das contribuições previstas no art. 195, I, \"b\", e IV, e da contribuição para o Programa de Integração Social"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "poderão ser dispensados do seu recolhimento, nos termos de lei complementar."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "128. De 2029 a 2032, as alíquotas dos impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal , serão fixadas nas seguintes proporções das alíquotas fixadas nas respectivas legislações:"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "129. Ficam extintos, a partir de 2033, os impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal ."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 130"
+   ],
+   "temporal_marker": "cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)",
+   "current_rule_2026": "a regra do paragrafo vale para o imposto do art. 156-A, cuja cobranca segue datas fixas do ADCT; o paragrafo nao traz marco temporal proprio",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 1º O imposto previsto no caput será informado pelo princípio da neutralidade e atenderá ao seguinte: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "130. Resolução do Senado Federal fixará, para todas as esferas federativas, as alíquotas de referência dos tributos previstos nos arts. 156-A e 195, V, da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 130"
+   ],
+   "temporal_marker": "cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)",
+   "current_rule_2026": "a regra do paragrafo vale para o imposto do art. 156-A, cuja cobranca segue datas fixas do ADCT; o paragrafo nao traz marco temporal proprio",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 13. A devolução de que trata o § 5º, VIII, será obrigatória nas operações de fornecimento de energia elétrica e de gás liquefeito de petróleo ao consumidor de baixa renda, podendo a lei complementar determinar que seja calculada e concedida no momento da cobrança da operação. (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "130. Resolução do Senado Federal fixará, para todas as esferas federativas, as alíquotas de referência dos tributos previstos nos arts. 156-A e 195, V, da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 130"
+   ],
+   "temporal_marker": "cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)",
+   "current_rule_2026": "a regra do paragrafo vale para o imposto do art. 156-A, cuja cobranca segue datas fixas do ADCT; o paragrafo nao traz marco temporal proprio",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 5º Lei complementar disporá sobre: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "130. Resolução do Senado Federal fixará, para todas as esferas federativas, as alíquotas de referência dos tributos previstos nos arts. 156-A e 195, V, da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 130"
+   ],
+   "temporal_marker": "cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)",
+   "current_rule_2026": "a regra do paragrafo vale para o imposto do art. 156-A, cuja cobranca segue datas fixas do ADCT; o paragrafo nao traz marco temporal proprio",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 6º Lei complementar disporá sobre regimes específicos de tributação para: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "130. Resolução do Senado Federal fixará, para todas as esferas federativas, as alíquotas de referência dos tributos previstos nos arts. 156-A e 195, V, da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 127",
+    "ADCT 130"
+   ],
+   "temporal_marker": "cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)",
+   "current_rule_2026": "a regra do paragrafo vale para o imposto do art. 156-A, cuja cobranca segue datas fixas do ADCT; o paragrafo nao traz marco temporal proprio",
+   "produces_effect_in_2026": "SIM (fase de teste em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 9º Qualquer alteração na legislação federal que reduza ou eleve a arrecadação do imposto: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "Em 2026, o imposto previsto no art. 156-A será cobrado à alíquota estadual de 0,1% (um décimo por cento), e a contribuição prevista no art. 195, V, ambos da Constituição Federal , será cobrada à alíquota de 0,9% (nove décimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "127. Em 2027 e 2028, o imposto previsto no art. 156-A da Constituição Federal será cobrado à alíquota estadual de 0,05% (cinco centésimos por cento) e à alíquota municipal de 0,05% (cinco centésimos por cento)."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "130. Resolução do Senado Federal fixará, para todas as esferas federativas, as alíquotas de referência dos tributos previstos nos arts. 156-A e 195, V, da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125"
+   ],
+   "temporal_marker": "em 2026 a arrecadacao de teste do imposto financia o Comite Gestor (ADCT 125, § 3º, I)",
+   "current_rule_2026": "as competencias do Comite estao no texto; o financiamento inicial esta fixado no ADCT; a organizacao depende de lei complementar (dependencia de conteudo, nao de transicao)",
+   "produces_effect_in_2026": "SIM",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "Art. 156-B. Os Estados, o Distrito Federal e os Municípios exercerão de forma integrada, exclusivamente por meio do Comitê Gestor do Imposto sobre Bens e Serviços, nos termos e limites estabelecidos nesta Constituição e em lei complementar, as seguintes competências administrativas relativas ao imposto de que trata o art. 156-A: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "decorrente do disposto no caput deste artigo não observará as vinculações, repartições e destinações previstas na Constituição Federal , devendo ser aplicada, integral e sucessivamente, para: I – o financiamento do Comitê Gestor do Imposto sobre Bens e Serviços, nos termos do art. 156-B, § 2º, III"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.3",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 128",
+    "ADCT 129"
+   ],
+   "temporal_marker": "reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)",
+   "current_rule_2026": "as regras do § 3º valem integralmente em 2026; o imposto do art. 156, III, e extinto em 2033 (ADCT 129)",
+   "produces_effect_in_2026": "SIM (regime atual integral em 2026)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "128. De 2029 a 2032, as alíquotas dos impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal , serão fixadas nas seguintes proporções das alíquotas fixadas nas respectivas legislações:"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "129. Ficam extintos, a partir de 2033, os impostos previstos nos arts. 155, II, e 156, III, da Constituição Federal ."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 131"
+   ],
+   "temporal_marker": "2026: arrecadacao de teste sem reparticao (ADCT 125, § 3º); 2029-2077: retencao e distribuicao proprias, sem aplicar o art. 158, IV, b, aos recursos do ADCT 131, § 2º, I (ADCT 131, § 3º)",
+   "current_rule_2026": "a parcela municipal do imposto do art. 156-A (inciso IV, b) convive com o regime de retencao do ADCT 131 de 2029 a 2077",
+   "produces_effect_in_2026": "SIM: ADCT 125, § 3º afasta reparticoes em 2026",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "REGIMES_COEXISTENTES",
+    "VIGENCIA_PARCIAL"
+   ],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "decorrente do disposto no caput deste artigo não observará as vinculações, repartições e destinações previstas na Constituição Federal , devendo ser aplicada, integral e sucessivamente, para: I – o financiamento do Comitê Gestor do Imposto sobre Bens e Serviços, nos termos do art. 156-B, § 2º, III"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "131. De 2029 a 2077, o produto da arrecadação dos Estados, do Distrito Federal e dos Municípios com o imposto de que trata o art. 156-A da Constituição Federal será distribuído a esses entes federativos conforme o disposto neste artigo."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "§ 3º Não se aplica o disposto no art. 158, IV, \"b\", da Constituição Federal aos recursos distribuídos na forma do § 2º, I, deste artigo."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.158:PAR.1",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 125",
+    "ADCT 131"
+   ],
+   "temporal_marker": "idem art. 158: o § 2º (parcela do imposto do art. 156-A) convive com o regime do ADCT 131 de 2029 a 2077",
+   "current_rule_2026": "o § 1º (imposto do art. 155, II) vale integralmente; o § 2º se aplica com as retencoes e exclusoes do ADCT 131",
+   "produces_effect_in_2026": "SIM",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "REGIMES_COEXISTENTES",
+    "VIGENCIA_PARCIAL"
+   ],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 2º As parcelas de receita pertencentes aos Municípios mencionadas no inciso IV, \"b\", serão creditadas conforme os seguintes critérios: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "decorrente do disposto no caput deste artigo não observará as vinculações, repartições e destinações previstas na Constituição Federal , devendo ser aplicada, integral e sucessivamente, para: I – o financiamento do Comitê Gestor do Imposto sobre Bens e Serviços, nos termos do art. 156-B, § 2º, III"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "131. De 2029 a 2077, o produto da arrecadação dos Estados, do Distrito Federal e dos Municípios com o imposto de que trata o art. 156-A da Constituição Federal será distribuído a esses entes federativos conforme o disposto neste artigo."
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "§ 3º Não se aplica o disposto no art. 158, IV, \"b\", da Constituição Federal aos recursos distribuídos na forma do § 2º, I, deste artigo."
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [],
+   "temporal_marker": "valores e cronograma de entrega do fundo",
+   "current_rule_2026": "o texto vigente cria o fundo e fixa os criterios de rateio; valores e cronograma nao constam do art. 159-A nem do ADCT versionado",
+   "produces_effect_in_2026": "INDETERMINADO a partir das fontes versionadas",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "TEXTO_VIGENTE_INSUFICIENTE"
+   ],
+   "missing_external_evidence": "valores e cronograma do fundo (fora do texto versionado): PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "Art. 159-A. Fica instituído o Fundo Nacional de Desenvolvimento Regional, com o objetivo de reduzir as desigualdades regionais e sociais, nos termos do art. 3º, III, mediante a entrega de recursos da União aos Estados e ao Distrito Federal para: (Incluído pela Emenda Constitucional nº 132, de 2023)"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 132/2023"
+   ],
+   "adct_articles": [
+    "ADCT 126"
+   ],
+   "temporal_marker": "imposto do art. 153, VIII, cobrado a partir de 2027 (ADCT 126, I, b), quando passa a compor a base do inciso I",
+   "current_rule_2026": "em 2026 a base do inciso I e formada pelos impostos de renda e sobre produtos industrializados; o imposto do art. 153, VIII, entra a partir de 2027 por data fixa",
+   "produces_effect_in_2026": "SIM (inciso vigente; parcela do art. 153, VIII, a partir de 2027)",
+   "resolution": "RESOLVED_BY_VERSIONED_SOURCE",
+   "high_criteria": [],
+   "missing_external_evidence": null,
+   "quotes": [
+    {
+     "source": "ADCT_SENADO",
+     "quote": "126. A partir de 2027: I – serão cobrados: a) a contribuição prevista no art. 195, V, da Constituição Federal ; b) o imposto previsto no art. 153, VIII, da Constituição Federal ;"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.18",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 136/2025"
+   ],
+   "adct_articles": [
+    "ADCT 107-A"
+   ],
+   "temporal_marker": "a partir do exercicio de 2026 (texto do § 18) convivendo com o limite de precatorios do ADCT 107-A ate o fim de 2026",
+   "current_rule_2026": "em 2026 vigoram ao mesmo tempo a exclusao do § 18 e o limite do ADCT 107-A; a lei complementar do art. 6º da EC 126/2022 nao esta versionada",
+   "produces_effect_in_2026": "SIM: o § 18 comeca em 2026",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "REGIMES_COEXISTENTES",
+    "EMENDA_RECENTE_COM_TRANSICAO_PROPRIA",
+    "TRANSICAO_DEPENDENTE_DE_LEI_EXTERNA"
+   ],
+   "missing_external_evidence": "lei complementar do art. 6º da EC 126/2022 e regras da EC 136/2025: PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "§ 18. A partir do exercício financeiro de 2026, serão excluídas do limite individualizado do Poder Executivo estabelecido na lei complementar de que trata o art. 6º da Emenda Constitucional nº 126, de 21 de dezembro de 2022, as despesas com precatórios e requisições de pequeno valor. (Incluído pela Emenda Constitucional nº 136, de 2025)"
+    },
+    {
+     "source": "ADCT_SENADO",
+     "quote": "107-A. Até o fim de 2026, fica estabelecido, para cada exercício financeiro, limite para alocação na proposta orçamentária das despesas com pagamentos em virtude de sentença judiciária de que trata o art. 100 da Constituição Federal"
+    }
+   ]
+  },
+  {
+   "target_id": "CF88:ART.82",
+   "origin_norm": "CF88",
+   "amendments": [
+    "EC 111/2021"
+   ],
+   "adct_articles": [],
+   "temporal_marker": "inicio do mandato em 5 de janeiro (redacao da EC 111/2021); a regra de aplicacao temporal esta na propria emenda",
+   "current_rule_2026": "o texto vigente fixa o inicio em 5 de janeiro do ano seguinte ao da eleicao; a partir de qual mandato isso se aplica nao esta no texto vigente nem no ADCT versionado",
+   "produces_effect_in_2026": "SIM: a primeira posse alcancada depende da eleicao de 2026 (data de implantacao ainda material)",
+   "resolution": "ACTIVE_TRANSITION_HIGH",
+   "high_criteria": [
+    "DATA_DE_IMPLANTACAO_AINDA_MATERIAL",
+    "TEXTO_VIGENTE_INSUFICIENTE"
+   ],
+   "missing_external_evidence": "regra de aplicacao temporal da EC 111/2021 (texto da emenda nao versionado): PENDING_EXTERNAL_INGESTION",
+   "quotes": [
+    {
+     "source": "CF88_CANONICAL",
+     "quote": "Art. 82. O mandato do Presidente da República é de 4 (quatro) anos e terá início em 5 de janeiro do ano seguinte ao de sua eleição. (Redação dada pela Emenda Constitucional nº 111, de 2021)"
+    }
+   ]
+  }
+ ]
+}

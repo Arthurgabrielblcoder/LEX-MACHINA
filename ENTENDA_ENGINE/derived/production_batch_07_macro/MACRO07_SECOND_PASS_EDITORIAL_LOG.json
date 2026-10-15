@@ -1,0 +1,1533 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "human_approved_t1_granted": 0,
+ "policy": "segundo passe: correcao automatica so quando segura; o que exige interpretacao juridica externa vai para C/D; nada aprovado",
+ "editorial_corrections": {
+  "total": 94,
+  "by_category": {
+   "ABSOLUTO": 12,
+   "AFIRMACAO_NAO_VERIFICAVEL": 2,
+   "DUPLICACAO_COM_DIFERENCA_JURIDICA": 1,
+   "ENUMERACAO_INCOMPLETA": 4,
+   "EXEMPLO_CRIA_REQUISITO": 3,
+   "FONTE_SANEADA": 2,
+   "GLOSSARIO_ERRADO": 1,
+   "JURISPRUDENCIA_RECLASSIFICADA": 9,
+   "JURISPRUDENCIA_VELADA": 7,
+   "LEI_COMO_CONSTITUICAO": 4,
+   "NUMERO": 4,
+   "PAI_CONTRADIZ_FILHO": 8,
+   "REGRA_INVENTADA": 12,
+   "REMISSAO_ERRADA": 7,
+   "TELEOLOGIA": 18
+  },
+  "by_detector": {
+   "SECOND_PASS_CRITIC": 79,
+   "SECOND_PASS_DUPLICATION": 1,
+   "SECOND_PASS_JURIS": 9,
+   "SECOND_PASS_REVIEW": 3,
+   "SOURCE_SANITY": 2
+  },
+  "entries": [
+   {
+    "target_id": "CF88:ART.77",
+    "section": "atencao",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Os arts. 28 e 29, II mandam aplicar o art. 77; o criterio municipal e o numero de eleitores.",
+    "before": "Governadores e Prefeitos de grandes Municípios seguem regras próprias, por remissão (arts. 28 e 29, II)",
+    "after": "Governadores e Prefeitos de Municípios acima do número de eleitores fixado no art. 29, II, seguem as mesmas regras do art. 77, por remissão (arts. 28 e 29, II)"
+   },
+   {
+    "target_id": "CF88:ART.85",
+    "section": "o_que_diz",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso II cita Legislativo e Judiciario e \"unidades da Federacao\" (inclui o Distrito Federal).",
+    "before": "o livre exercício dos Poderes, do Ministério Público e dos Poderes dos Estados",
+    "after": "o livre exercício do Legislativo, do Judiciário, do Ministério Público e dos Poderes das unidades da Federação"
+   },
+   {
+    "target_id": "CF88:ART.87",
+    "section": "atencao",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O art. 12, § 3º, VII, reserva a brasileiro nato um unico cargo de Ministro de Estado.",
+    "before": "Para alguns Ministérios a Constituição exige brasileiro nato: é o caso do Ministro de Estado da Defesa",
+    "after": "Só para um Ministério a Constituição exige brasileiro nato: o cargo de Ministro de Estado da Defesa"
+   },
+   {
+    "target_id": "CF88:ART.89",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O artigo so lista os membros; nao declara finalidade.",
+    "before": "A presença dos líderes da minoria garante que a oposição também seja ouvida.",
+    "after": "Entre os membros estão também os líderes da minoria na Câmara e no Senado."
+   },
+   {
+    "target_id": "CF88:ART.90",
+    "section": "exemplo_pratico",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O Ministro da Justica ja e membro (art. 89, VI); o § 1º serve para os demais Ministros.",
+    "before": "chama o Ministro da Justiça para a reunião, porque a pauta envolve sua área",
+    "after": "chama para a reunião o Ministro de Estado cuja pasta está ligada ao tema em pauta (o Ministro da Justiça não precisa ser chamado, porque já integra o Conselho)"
+   },
+   {
+    "target_id": "CF88:ART.92",
+    "section": "exemplo_pratico",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Jurisdicao nacional (§ 2º) nao torna a decisao valida para todo o pais.",
+    "before": "em Brasília, cuja decisão vale para todo o país",
+    "after": "em Brasília, que tem jurisdição em todo o território nacional"
+   },
+   {
+    "target_id": "CF88:ART.93",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A aplicacao direta dos principios antes do novo Estatuto nao esta no texto; trecho retirado (correcao segura, sem nova afirmacao).",
+    "before": ", inclusive antes de qualquer alteração do Estatuto.",
+    "after": "."
+   },
+   {
+    "target_id": "CF88:ART.95",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O art. 95 lista as garantias sem declarar finalidade.",
+    "before": "As garantias protegem a independência do juiz para decidir sem pressões.",
+    "after": "O artigo dá ao juiz três garantias, ligadas ao cargo, ao local de exercício e ao subsídio."
+   },
+   {
+    "target_id": "CF88:ART.95:PAR.UNICO",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O paragrafo unico so enumera as proibicoes.",
+    "before": "As vedações procuram manter o juiz dedicado à função e afastado de interesses que possam influenciar suas decisões.",
+    "after": "O parágrafo lista cinco proibições ligadas a outras atividades, a recebimentos, à política partidária e à advocacia depois de deixar o cargo."
+   },
+   {
+    "target_id": "CF88:ART.95:PAR.UNICO",
+    "section": "o_que_significa",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso III fala em dedicacao a atividade politico-partidaria, nao em filiacao.",
+    "before": "O juiz não pode filiar-se a partido nem atuar em política partidária.",
+    "after": "O juiz não pode se dedicar a atividade político-partidária."
+   },
+   {
+    "target_id": "CF88:ART.96:INC.III",
+    "section": "atencao",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O MPDFT integra o MPU (art. 128, I, d), julgado pelo TRF (art. 108, I, a): harmonizacao so com o texto.",
+    "before": "O inciso trata dos juízes e do Ministério Público ligados aos Estados e ao Distrito Federal; juízes federais e membros do Ministério Público da União seguem outra regra (art. 108, I, a).",
+    "after": "O inciso trata dos juízes estaduais e do Distrito Federal e Territórios e dos membros do Ministério Público dos Estados. Juízes federais e membros do Ministério Público da União, do qual faz parte o do Distrito Federal e Territórios (art. 128, I, d), seguem outra regra (art. 108, I, a)."
+   },
+   {
+    "target_id": "CF88:ART.98:INC.I",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O texto so permite, nas hipoteses previstas em lei.",
+    "before": "Os recursos não sobem ao tribunal: são julgados por turmas formadas por juízes de primeiro grau.",
+    "after": "Nas hipóteses previstas em lei, os recursos podem ser julgados por turmas formadas por juízes de primeiro grau, sem subir ao tribunal."
+   },
+   {
+    "target_id": "CF88:ART.99:PAR.3",
+    "section": "exemplo_pratico",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "No ambito da Uniao, quem encaminha sao os Presidentes do STF e dos Tribunais Superiores (§ 2º, I).",
+    "before": "Um Tribunal Regional envia proposta acima do limite combinado.",
+    "after": "A proposta encaminhada pelo Presidente de um Tribunal Superior vem acima do limite combinado."
+   },
+   {
+    "target_id": "CF88:ART.100:PAR.13",
+    "section": "exemplo_pratico",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 13 so afasta os §§ 2º e 3º do cessionario.",
+    "before": "mas recebe pela ordem comum, sem a preferência que o aposentado teria",
+    "after": "mas não fica com a superpreferência do § 2º que o aposentado teria"
+   },
+   {
+    "target_id": "CF88:ART.100:PAR.20",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Finalidade nao declarada; o texto e impositivo (\"serao pagos\").",
+    "before": "Um único precatório muito grande poderia consumir quase todo o orçamento destinado a precatórios. O parágrafo permite que esse crédito seja pago em partes",
+    "after": "Quando um precatório passa desse percentual, o parágrafo determina que ele seja pago em partes"
+   },
+   {
+    "target_id": "CF88:ART.86:PAR.3",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo so parafraseia o texto (sem prisao antes de sentenca condenatoria); investigacoes e prescricao sao extensao: CONTEXT_ONLY.",
+    "before": " e não deve ser deduzida apenas do texto.",
+    "after": "."
+   },
+   {
+    "target_id": "CF88:ART.114",
+    "section": "external_layer_notes",
+    "category": "FONTE_SANEADA",
+    "detector": "SOURCE_SANITY",
+    "reason": "A anomalia de segmentacao do art. 114, VII/VIII foi corrigida na camada tecnica (correcao de transcricao aprovada SRC-CORR-CF88-579494-16434817-ART114-INC-VIII aplicada pelo parser; errata de status): o runtime agora tem os incisos VII e VIII separados.",
+    "before": "Observação estrutural: no texto consolidado do runtime, o conteúdo do inciso VIII aparece anexado ao inciso VII; a separação deve ser conferida na fonte oficial.",
+    "after": ""
+   },
+   {
+    "target_id": "CF88:ART.102:INC.I",
+    "section": "o_que_diz",
+    "category": "ENUMERACAO_INCOMPLETA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A lista tem outras alineas (j, m, n, o...).",
+    "before": "Completam a lista habeas corpus, mandado de segurança e habeas data contra certos atos",
+    "after": "Aparecem também, entre outros, habeas corpus, mandado de segurança e habeas data contra certos atos"
+   },
+   {
+    "target_id": "CF88:ART.102:INC.I",
+    "section": "exemplo_pratico",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A alinea f nao exige ameaca a relacao federativa; o filtro e interpretativo. Trecho retirado (correcao segura).",
+    "before": " e o conflito ameaça a relação federativa",
+    "after": ""
+   },
+   {
+    "target_id": "CF88:ART.103-A:PAR.3",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 3º preve os dois casos.",
+    "before": "e manda que outro seja feito, agora de acordo com o enunciado",
+    "after": "e manda que outro seja feito, com ou sem a aplicação do enunciado, conforme o caso"
+   },
+   {
+    "target_id": "CF88:ART.109:PAR.1",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Os §§ 1º e 2º so fixam o foro.",
+    "before": "Os dois parágrafos protegem a parte que litiga contra a União.",
+    "after": "Os dois parágrafos definem onde são propostas as causas de que a União participa."
+   },
+   {
+    "target_id": "CF88:ART.109:PAR.1",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Mesma frase de finalidade, reescrita como consequencia do texto.",
+    "before": "Com isso, o cidadão pode se defender ou reclamar um direito sem ir obrigatoriamente à capital federal.",
+    "after": "Assim, a causa pode tramitar na seção judiciária ligada ao domicílio da pessoa, e não necessariamente na capital federal."
+   },
+   {
+    "target_id": "CF88:ART.109:PAR.3",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 3º nao declara finalidade.",
+    "before": "Os parágrafos tratam de uma delegação de competência para facilitar o acesso do segurado.",
+    "after": "Os parágrafos tratam de uma delegação de competência à Justiça estadual, que depende de lei."
+   },
+   {
+    "target_id": "CF88:ART.109:PAR.5",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A finalidade declarada e assegurar o cumprimento das obrigacoes dos tratados.",
+    "before": "o Brasil responde perante outros países e organismos se não cumprir tratados de direitos humanos",
+    "after": "assegurar que o Brasil cumpra as obrigações assumidas em tratados internacionais de direitos humanos de que é parte"
+   },
+   {
+    "target_id": "CF88:ART.111-A",
+    "section": "o_que_diz",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A indicacao e do proprio TST (inciso II).",
+    "before": "entre juízes de carreira indicados pelo próprio tribunal",
+    "after": "entre juízes de carreira indicados pelo próprio Tribunal Superior do Trabalho"
+   },
+   {
+    "target_id": "CF88:ART.112",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O art. 112 nao declara finalidade.",
+    "before": "Para não deixar o trabalhador sem acesso, o artigo permite",
+    "after": "O artigo permite"
+   },
+   {
+    "target_id": "CF88:ART.121",
+    "section": "o_que_significa",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O limite do § 2º vale para os juizes dos tribunais eleitorais (explicacao propria do § 2º).",
+    "before": "os juízes atuam por períodos limitados",
+    "after": "os juízes dos tribunais eleitorais atuam por períodos limitados"
+   },
+   {
+    "target_id": "CF88:ART.124",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo afirma so o texto (crimes militares definidos em lei); o julgamento de civis e extensao: CONTEXT_ONLY.",
+    "before": "Quando um civil pode ser julgado pela Justiça Militar da União não deve ser deduzido apenas do texto: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.",
+    "after": "Quando um civil pode ser julgado pela Justiça Militar da União depende da lei e é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.125:PAR.2",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo descreve so o parametro estadual do texto: CONTEXT_ONLY.",
+    "before": "O uso de normas da Constituição Federal como parâmetro nesse controle estadual não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.",
+    "after": "O uso de normas da Constituição Federal como parâmetro nesse controle estadual é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.127",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O caput nao opoe o MP ao governo.",
+    "before": "Sua missão é defender a sociedade, e não um governo.",
+    "after": "O texto diz quais são suas tarefas."
+   },
+   {
+    "target_id": "CF88:ART.127:PAR.1",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Leitura doutrinaria/jurisprudencial apresentada como regra do texto.",
+    "before": "A unidade se refere a cada Ministério Público, e não ao conjunto de todos eles.",
+    "after": "O texto não diz se a unidade vale para cada Ministério Público separadamente ou para o conjunto deles; esse alcance é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.128",
+    "section": "exemplo_pratico",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A investigacao direta pelo MP e tema da camada JURISPRUDENCIA (art. 129); a apuracao cabe a policia federal (art. 144, § 1º, I).",
+    "before": "Um crime contra uma autarquia federal é investigado pelo Ministério Público Federal.",
+    "after": "Um crime contra uma autarquia federal leva à atuação do Ministério Público Federal."
+   },
+   {
+    "target_id": "CF88:ART.128:PAR.5",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 5º lista as garantias sem declarar finalidade.",
+    "before": "As garantias protegem o membro do Ministério Público para que possa atuar sem medo de retaliação.",
+    "after": "O texto dá garantias ao membro do Ministério Público."
+   },
+   {
+    "target_id": "CF88:ART.128:PAR.5",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Finalidade nao declarada.",
+    "before": "As vedações protegem a imparcialidade.",
+    "after": "O texto também impõe vedações aos membros."
+   },
+   {
+    "target_id": "CF88:ART.129:INC.IX",
+    "section": "o_que_significa",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Os arts. 131 e 132 nao tratam dos Municipios.",
+    "before": "Quem defende a União, os Estados e os Municípios em juízo e lhes dá pareceres são as procuradorias (arts. 131 e 132)",
+    "after": "Quem defende a União, os Estados e o Distrito Federal em juízo e lhes dá orientação jurídica é a advocacia pública (arts. 131 e 132)"
+   },
+   {
+    "target_id": "CF88:ART.131",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 2º exige concurso para o ingresso nas classes iniciais.",
+    "before": "Os demais integrantes ingressam por concurso público.",
+    "after": "O ingresso nas classes iniciais das carreiras da instituição é feito por concurso público de provas e títulos."
+   },
+   {
+    "target_id": "CF88:ART.134",
+    "section": "o_que_significa",
+    "category": "LEI_COMO_CONSTITUICAO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "\"Solucao extrajudicial de conflitos\" vem da lei complementar; o caput fala em defesa judicial e extrajudicial e promocao dos direitos humanos.",
+    "before": "inclui orientação jurídica, solução extrajudicial de conflitos e defesa de direitos coletivos",
+    "after": "inclui orientação jurídica, promoção dos direitos humanos e defesa extrajudicial de direitos individuais e coletivos"
+   },
+   {
+    "target_id": "CF88:ART.134:PAR.2",
+    "section": "exemplo_pratico",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O limite ao corte pelo Executivo nao esta no § 2º; retirado e substituido pela remissao do proprio texto.",
+    "before": "e a encaminha dentro dos limites da lei de diretrizes orçamentárias, sem que a Secretaria de Governo possa cortá-la livremente.",
+    "after": "dentro dos limites da lei de diretrizes orçamentárias e a envia observando a remissão do parágrafo ao art. 99, § 2º."
+   },
+   {
+    "target_id": "CF88:ART.136",
+    "section": "atencao",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 3º, I, preve prisao por crime contra o Estado fora da lista do § 1º (harmonizacao com o texto).",
+    "before": "As medidas permitidas são apenas as do § 1º, com explicação própria.",
+    "after": "As medidas coercitivas do decreto são escolhidas entre as do § 1º, e o § 3º trata das prisões feitas durante a medida; ambos têm explicação própria."
+   },
+   {
+    "target_id": "CF88:ART.136:PAR.1",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Ignorava o § 3º, I (harmonizacao com o texto).",
+    "before": "Fora delas, nenhuma outra restrição de direitos é autorizada pelo estado de defesa.",
+    "after": "As medidas coercitivas do decreto ficam limitadas a essa lista; a prisão durante o estado de defesa segue as regras próprias do § 3º."
+   },
+   {
+    "target_id": "CF88:ART.136:PAR.3",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso II exige a declaracao sem declarar finalidade.",
+    "before": "permite verificar depois se houve maus-tratos",
+    "after": "registra a condição do preso no momento da autuação"
+   },
+   {
+    "target_id": "CF88:ART.138",
+    "section": "o_que_significa",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Conclusao nao decorre do texto; so a ausencia da restricao do art. 136 e textual.",
+    "before": "o que mostra que o estado de sítio pode alcançar áreas mais amplas",
+    "after": "e, diferentemente do art. 136, o texto não limita o estado de sítio a locais restritos e determinados"
+   },
+   {
+    "target_id": "CF88:ART.139",
+    "section": "o_que_significa",
+    "category": "ENUMERACAO_INCOMPLETA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A lista vale para todo o art. 137, I.",
+    "before": "Na comoção grave, a lista de medidas é fechada.",
+    "after": "No estado de sítio do art. 137, I (comoção grave ou ineficácia do estado de defesa), a lista de medidas é fechada."
+   },
+   {
+    "target_id": "CF88:ART.140",
+    "section": "exemplo_pratico",
+    "category": "EXEMPLO_CRIA_REQUISITO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O art. 140 so da a Comissao a tarefa de acompanhar e fiscalizar.",
+    "before": "Ela pode pedir explicações ao executor das medidas e levar o caso ao Congresso.",
+    "after": "Ela registra o fato no seu trabalho de acompanhamento e fiscalização das medidas."
+   },
+   {
+    "target_id": "CF88:ART.144",
+    "section": "o_que_significa",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Art. 21, XIV: a Uniao organiza e mantem as forcas do DF.",
+    "before": "Os Estados e o Distrito Federal mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais e distrital.",
+    "after": "Os Estados mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais; as forças correspondentes do Distrito Federal são organizadas e mantidas pela União (art. 21, XIV)."
+   },
+   {
+    "target_id": "CF88:ART.145",
+    "section": "palavras_dificeis",
+    "category": "LEI_COMO_CONSTITUICAO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A ligacao com a valorizacao do imovel vem da legislacao tributaria, nao do texto.",
+    "before": "tributo cobrado de quem teve imóvel valorizado por obra pública",
+    "after": "tributo decorrente de obra pública"
+   },
+   {
+    "target_id": "CF88:ART.146:PAR.1",
+    "section": "exemplo_pratico",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 3º, II, limita o credito aos tributos dos arts. 156-A e 195, V.",
+    "before": "essa empresa pode aproveitar crédito equivalente ao valor recolhido pela padaria",
+    "after": "essa empresa pode aproveitar crédito dos tributos dos arts. 156-A e 195, V, no montante equivalente ao cobrado desses tributos pelo regime único"
+   },
+   {
+    "target_id": "CF88:ART.149",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O caput as trata como instrumento de atuacao da Uniao.",
+    "before": "As de interesse de categorias financiam entidades profissionais ou econômicas.",
+    "after": "As de interesse das categorias profissionais ou econômicas são instrumento de atuação da União nessa área."
+   },
+   {
+    "target_id": "CF88:ART.149-A",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Motivo vindo de jurisprudencia sobre a taxa de iluminacao, nao do texto.",
+    "before": "A iluminação pública beneficia todos ao mesmo tempo, e não é possível medir quanto cada pessoa usa. Por isso, o artigo prevê uma contribuição própria para financiá-la.",
+    "after": "O artigo prevê uma contribuição própria para custear, expandir e melhorar o serviço de iluminação pública."
+   },
+   {
+    "target_id": "CF88:ART.150:INC.I",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O art. 62, § 2º trata da medida provisoria em materia de impostos.",
+    "before": "sem que uma lei, aprovada pelo Legislativo, preveja isso",
+    "after": "sem que uma lei preveja isso. A Constituição também trata da medida provisória que cria ou aumenta impostos (art. 62, § 2º)"
+   },
+   {
+    "target_id": "CF88:ART.150:INC.III",
+    "section": "atencao",
+    "category": "ENUMERACAO_INCOMPLETA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Ha excecoes as anterioridades fora do § 1º (arts. 195, § 6º; 177, § 4º, I, b; 155, § 4º, IV, c).",
+    "before": "as exceções estão no § 1º, com explicação própria",
+    "after": "parte das exceções está no § 1º, com explicação própria, e outras aparecem em dispositivos como os arts. 195, § 6º, 177, § 4º, I, b, e 155, § 4º, IV, c"
+   },
+   {
+    "target_id": "CF88:ART.150:INC.VI",
+    "section": "atencao",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Cada paragrafo tem alcance proprio (§ 2º extensao; § 3º afastamento; § 4º finalidades essenciais).",
+    "before": "Os §§ 2º a 4º limitam o alcance das imunidades das alíneas a, b e c às finalidades essenciais das entidades.",
+    "after": "O § 2º estende a imunidade da alínea a a autarquias, fundações públicas e à empresa pública postal, quanto ao que se liga às suas finalidades essenciais; o § 3º afasta essa imunidade na exploração de atividade econômica ou quando há preço ou tarifa; e o § 4º limita as alíneas b e c às finalidades essenciais das entidades."
+   },
+   {
+    "target_id": "CF88:ART.130-A:PAR.2",
+    "section": "o_que_diz",
+    "category": "DUPLICACAO_COM_DIFERENCA_JURIDICA",
+    "detector": "SECOND_PASS_DUPLICATION",
+    "reason": "Similaridade 0,636 com o art. 103-B, § 4º: a semelhanca vem do texto constitucional, mas a copia da explicacao escondia diferencas juridicas (autonomia funcional e administrativa, alcance MPU/Estados, ausencia de representacao e de relatorio semestral). Passa a remeter ao CNJ e destacar o que e proprio.",
+    "before": "O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais. Entre as atribuições listadas nos incisos estão zelar pela autonomia da instituição, expedir atos regulamentares ou recomendar providências e apreciar a legalidade de atos administrativos. Também recebe reclamações, pode determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, revê processos disciplinares julgados há menos de um ano e elabora relatório anual sobre a situação do Ministério Público e as atividades do Conselho.",
+    "after": "O § 2º aplica ao Ministério Público o modelo de controle do Conselho Nacional de Justiça (art. 103-B, § 4º): gestão administrativa e financeira da instituição e deveres funcionais dos membros. As diferenças estão nos detalhes. O Conselho zela pela autonomia funcional e administrativa do Ministério Público. O controle de legalidade alcança atos de membros e órgãos do Ministério Público da União e dos Estados, sem afastar os Tribunais de Contas. Como o Conselho Nacional de Justiça, recebe reclamações, pode avocar processos disciplinares, determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, e revê processos disciplinares julgados há menos de um ano. A lista não traz a representação ao Ministério Público nem o relatório estatístico semestral previstos para o Conselho Nacional de Justiça, e o relatório anual integra a mensagem do art. 84, XI."
+   },
+   {
+    "target_id": "CF88:ART.142:PAR.2",
+    "section": "o_que_significa",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_REVIEW",
+    "reason": "O o_que_significa afirmava que punicao ilegal fica fora do habeas corpus, contrariando a propria ATENCAO; passa a remeter sem afirmar.",
+    "before": "A forma de questionar uma punição disciplinar ilegal fica, então, fora do habeas corpus, nos termos da lei e da camada JURISPRUDÊNCIA.",
+    "after": "O que pode ser examinado em habeas corpus quanto à legalidade dessa punição é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.129",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo nao afirma nem nega a investigacao direta; so registra o silencio do texto: CONTEXT_ONLY.",
+    "before": "esse ponto não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA.",
+    "after": "esse ponto é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.144:PAR.8",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo parafraseia o texto; o alcance alem dele e extensao: CONTEXT_ONLY.",
+    "before": "O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações não deve ser deduzido apenas do texto do parágrafo: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.",
+    "after": "O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações depende da lei e é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.145:INC.II",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo explica os requisitos do texto; a classificacao caso a caso e aplicacao: CONTEXT_ONLY.",
+    "before": "Quais serviços são específicos e divisíveis não deve ser deduzido apenas do texto; a classificação de cada serviço é tema da camada JURISPRUDÊNCIA.",
+    "after": "A classificação de cada serviço como específico e divisível é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.150:INC.IV",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo explica a vedacao do texto; o limiar e aplicacao: CONTEXT_ONLY.",
+    "before": "O momento em que um tributo ou uma multa passa a ter efeito confiscatório não deve ser deduzido apenas do texto: é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.",
+    "after": "O momento em que um tributo ou uma multa passa a ter efeito confiscatório é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.150:PAR.7",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo afirma so a restituicao do texto (fato gerador que nao se realiza): CONTEXT_ONLY.",
+    "before": "Se há direito à diferença quando a venda ocorre por valor menor que o presumido não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.",
+    "after": "Se há direito à diferença quando a venda ocorre por valor menor que o presumido é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.155",
+    "section": "article_notes",
+    "category": "FONTE_SANEADA",
+    "detector": "SOURCE_SANITY",
+    "reason": "A alinea c do inciso I e a redacao original renumerada para o inciso III (errata de status: HISTORICAL_ONLY); deixa de ser alvo vigente.",
+    "before": " e a alinea c do inciso I (sem texto no runtime)",
+    "after": ""
+   },
+   {
+    "target_id": "CF88:ART.151",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A propria Constituicao permite que lei complementar afaste incidencias de tributos estaduais e municipais (arts. 155, § 2º, XII, e; 156, § 3º, II).",
+    "before": "só o ente que tem a competência pode isentar.",
+    "after": "em regra, a isenção cabe ao ente que tem a competência sobre o tributo, ressalvados os casos previstos na própria Constituição."
+   },
+   {
+    "target_id": "CF88:ART.153:PAR.5",
+    "section": "o_que_significa",
+    "category": "LEI_COMO_CONSTITUICAO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A definicao da operacao de origem vem da lei; trecho retirado (correcao segura).",
+    "before": "A cobrança ocorre na operação de origem, isto é, na primeira venda do ouro extraído.",
+    "after": "A cobrança ocorre na operação de origem."
+   },
+   {
+    "target_id": "CF88:ART.153:PAR.5",
+    "section": "o_que_significa",
+    "category": "NUMERO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Trinta mais setenta por cento somam todo o montante.",
+    "before": "a arrecadação vai quase toda para os entes de onde o ouro saiu",
+    "after": "a arrecadação vai inteira para os entes de onde o ouro saiu"
+   },
+   {
+    "target_id": "CF88:ART.153:PAR.6",
+    "section": "o_que_significa",
+    "category": "REMISSAO_ERRADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O art. 195, V, e contribuicao; o texto fala em tributos.",
+    "before": "entra na base de cálculo dos impostos sobre consumo indicados",
+    "after": "entra na base de cálculo dos tributos sobre consumo indicados no inciso IV"
+   },
+   {
+    "target_id": "CF88:ART.155:PAR.2:INC.VII",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A exigencia de lei complementar vem de interpretacao judicial; passa a ser remetida.",
+    "before": "A cobrança dessa diferença depende de lei complementar sobre o imposto.",
+    "after": "Se a cobrança dessa diferença depende de lei complementar específica é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.155:PAR.3",
+    "section": "o_que_significa",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Conclusao jurisprudencial afirmada como regra; passa a ser remetida.",
+    "before": "Contribuições não estão abrangidas pela palavra imposto usada no texto.",
+    "after": "O texto fala apenas em impostos; a situação das contribuições é tratada na camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.155:PAR.4",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A incidencia unica vale para os combustiveis definidos em lei complementar (§ 2º, XII, h).",
+    "before": "Os combustíveis têm um regime especial: o imposto é cobrado uma única vez na cadeia.",
+    "after": "Os combustíveis e lubrificantes definidos em lei complementar têm um regime especial: o imposto é cobrado uma única vez na cadeia."
+   },
+   {
+    "target_id": "CF88:ART.156-A",
+    "section": "exemplo_pratico",
+    "category": "EXEMPLO_CRIA_REQUISITO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O texto nao fixa o domicilio do comprador como destino (§ 5º, IV).",
+    "before": "O imposto é calculado pelas alíquotas do Estado e do Município onde mora o comprador.",
+    "after": "O imposto é calculado pelas alíquotas do Estado e do Município de destino da operação, definido conforme os critérios da lei complementar."
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.1",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso VIII ressalva tambem as hipoteses previstas na Constituicao.",
+    "before": "a empresa abate o imposto cobrado em todas as suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar",
+    "after": "a empresa abate o imposto cobrado em suas aquisições, salvo as de uso ou consumo pessoal definidas em lei complementar e as hipóteses previstas na própria Constituição"
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.1",
+    "section": "o_que_diz",
+    "category": "ENUMERACAO_INCOMPLETA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Mesma ressalva do inciso VIII.",
+    "before": "é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar",
+    "after": "é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar e às hipóteses previstas na Constituição"
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.1",
+    "section": "o_que_significa",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso X veda incentivos e beneficios relativos ao imposto, salvo hipoteses constitucionais.",
+    "before": "E os entes não podem conceder benefícios fiscais por conta própria.",
+    "after": "E o imposto não pode ser objeto de incentivos, benefícios ou regimes favorecidos, salvo nos casos previstos na própria Constituição."
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.6",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O paragrafo nao declara a razao dos regimes especificos.",
+    "before": "Alguns setores não se encaixam bem nas regras gerais do imposto. Para eles, a lei complementar cria regimes específicos.",
+    "after": "Para os setores listados no parágrafo, a lei complementar cria regimes específicos."
+   },
+   {
+    "target_id": "CF88:ART.158",
+    "section": "o_que_significa",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Os §§ 1º e 2º tratam so das parcelas do inciso IV.",
+    "before": "Os §§ 1º e 2º definem como essas parcelas estaduais são divididas entre os Municípios.",
+    "after": "Os §§ 1º e 2º definem como as parcelas do imposto sobre circulação de mercadorias e do imposto do art. 156-A são divididas entre os Municípios."
+   },
+   {
+    "target_id": "CF88:ART.158",
+    "section": "o_que_diz",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Os paragrafos alcancam apenas as parcelas do inciso IV.",
+    "before": "Os parágrafos fixam critérios para creditar essas parcelas estaduais.",
+    "after": "Os parágrafos fixam critérios para creditar as parcelas do inciso IV."
+   },
+   {
+    "target_id": "CF88:ART.165",
+    "section": "o_que_significa",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A visao geral generalizava alem do filho (§§ 10, 11 e 13).",
+    "before": "criam deveres como a transparência da execução e a obrigação de executar o que foi aprovado.",
+    "after": "criam deveres como a transparência da execução e o dever de executar as programações, que tem limites e, pelo § 13, alcança os orçamentos fiscal e da seguridade social da União."
+   },
+   {
+    "target_id": "CF88:ART.165:PAR.18",
+    "section": "o_que_significa",
+    "category": "REGRA_INVENTADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 18 nao preve termo final; o marco \"a partir de 2026\" e do proprio texto.",
+    "before": "O bloco muda temporariamente a forma de contar os precatórios da União nas regras fiscais.",
+    "after": "O bloco muda, a partir de 2026, a forma de contar os precatórios da União nas regras fiscais."
+   },
+   {
+    "target_id": "CF88:ART.166",
+    "section": "o_que_significa",
+    "category": "LEI_COMO_CONSTITUICAO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A sessao conjunta vem das normas regimentais.",
+    "before": "e depois são votadas em sessão conjunta.",
+    "after": "e depois são apreciadas pelas duas Casas, na forma do regimento comum."
+   },
+   {
+    "target_id": "CF88:ART.166",
+    "section": "exemplo_pratico",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Omitia as excecoes dos §§ 13 e 18 (explicacao propria).",
+    "before": "se aprovada dentro do limite das emendas individuais, tem execução obrigatória.",
+    "after": "se aprovada dentro do limite das emendas individuais, tem execução obrigatória, salvo impedimento de ordem técnica ou redução admitida pelo texto para cumprir a meta fiscal."
+   },
+   {
+    "target_id": "CF88:ART.166:PAR.3",
+    "section": "o_que_diz",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O_que_diz escolhia uma leitura (tres situacoes) que contradizia o_que_significa e a ATENCAO; paráfrase neutra, inciso por inciso; a cumulatividade segue remetida.",
+    "before": "O § 3º permite aprovar emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, apenas em três situações. Na primeira, a emenda respeita o plano plurianual e a lei de diretrizes orçamentárias e indica os recursos necessários. Esses recursos só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. Nas outras duas, a emenda corrige erros ou omissões ou se refere aos dispositivos do texto do projeto.",
+    "after": "O § 3º limita a aprovação de emendas ao projeto de lei do orçamento anual, ou aos que o modifiquem, às hipóteses dos incisos I a III. O inciso I pede compatibilidade com o plano plurianual e a lei de diretrizes orçamentárias. O inciso II exige a indicação dos recursos, que só podem vir da anulação de outras despesas, protegidas as dotações de pessoal e encargos, o serviço da dívida e as transferências tributárias constitucionais aos entes. O inciso III trata de emendas que corrigem erros ou omissões ou que se referem aos dispositivos do texto do projeto."
+   },
+   {
+    "target_id": "CF88:ART.166:PAR.3",
+    "section": "o_que_significa",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Mesma harmonizacao: sem afirmar a cumulatividade.",
+    "before": "Além disso, a emenda precisa respeitar o plano plurianual e a lei de diretrizes orçamentárias.",
+    "after": "O texto também menciona a compatibilidade com o plano plurianual e a lei de diretrizes orçamentárias (inciso I)."
+   },
+   {
+    "target_id": "CF88:ART.166:PAR.11",
+    "section": "o_que_diz",
+    "category": "NUMERO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 18 fixa um teto (\"em ate\").",
+    "before": "O § 18 permite reduzir esses montantes na mesma proporção da limitação das demais despesas discricionárias",
+    "after": "O § 18 permite reduzir esses montantes em até a mesma proporção da limitação das demais despesas discricionárias"
+   },
+   {
+    "target_id": "CF88:ART.166:PAR.11",
+    "section": "o_que_significa",
+    "category": "NUMERO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Idem.",
+    "before": "os valores podem ser reduzidos na mesma proporção das demais despesas discricionárias",
+    "after": "os valores podem ser reduzidos em até a mesma proporção da limitação das demais despesas discricionárias"
+   },
+   {
+    "target_id": "CF88:ART.167",
+    "section": "atencao",
+    "category": "PAI_CONTRADIZ_FILHO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso III nao tem explicacao propria (PARENT_CHILD_LEGAL_CONSISTENCY).",
+    "before": "Os incisos III e IV e os §§ 1º, 3º e 7º têm explicação própria.",
+    "after": "O inciso IV e os §§ 1º, 3º e 7º têm explicação própria."
+   },
+   {
+    "target_id": "CF88:ART.167",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O inciso XII admite despesas de organizacao e funcionamento.",
+    "before": "Outros incisos protegem os recursos da previdência, que só podem pagar benefícios.",
+    "after": "Outros incisos restringem o uso dos recursos da previdência ao pagamento de benefícios e, no regime próprio, também às despesas de organização e funcionamento."
+   },
+   {
+    "target_id": "CF88:ART.167",
+    "section": "o_que_significa",
+    "category": "ABSOLUTO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Ignorava o § 5º.",
+    "before": "o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa.",
+    "after": "em regra, o Executivo não pode gastar, remanejar ou abrir créditos sem autorização legislativa; o § 5º abre exceção para ciência, tecnologia e inovação."
+   },
+   {
+    "target_id": "CF88:ART.167:INC.IV",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Finalidade nao declarada.",
+    "before": "A receita dos impostos deve ficar livre para que o orçamento decida, a cada ano, onde aplicá-la.",
+    "after": "A regra é a não vinculação da receita de impostos."
+   },
+   {
+    "target_id": "CF88:ART.167:PAR.3",
+    "section": "o_que_significa",
+    "category": "TELEOLOGIA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "Relacao causal nao declarada.",
+    "before": "Por isso, o texto o limita a situações excepcionais.",
+    "after": "O texto limita esse crédito a situações excepcionais."
+   },
+   {
+    "target_id": "CF88:ART.167-A:PAR.1",
+    "section": "o_que_significa",
+    "category": "NUMERO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 3º, III, fala em deixar de existir a hipotese do § 1º.",
+    "before": "ou se a relação cair abaixo de 85%, ele deixa de valer",
+    "after": "ou se deixar de existir a situação do § 1º, ele deixa de valer"
+   },
+   {
+    "target_id": "CF88:ART.167-D",
+    "section": "palavras_dificeis",
+    "category": "GLOSSARIO_ERRADO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A definicao atrelava o conceito a calamidade.",
+    "before": "despesa permanente, criada por lei ou ato, que continua depois do fim da calamidade.",
+    "after": "despesa criada por lei ou ato que obriga o ente por período prolongado; o conceito técnico vem da legislação de finanças públicas."
+   },
+   {
+    "target_id": "CF88:ART.169",
+    "section": "exemplo_pratico",
+    "category": "EXEMPLO_CRIA_REQUISITO",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "O § 3º nao fixa ordem entre as providencias.",
+    "before": "Primeiro, reduz em no mínimo vinte por cento o gasto com cargos em comissão e funções de confiança; depois, exonera servidores não estáveis.",
+    "after": "Deve reduzir em pelo menos vinte por cento o gasto com cargos em comissão e funções de confiança e exonerar servidores não estáveis."
+   },
+   {
+    "target_id": "CF88:ART.169:PAR.1",
+    "section": "o_que_significa",
+    "category": "JURISPRUDENCIA_VELADA",
+    "detector": "SECOND_PASS_CRITIC",
+    "reason": "A propria ATENCAO remete o ponto a camada JURISPRUDENCIA.",
+    "before": "mas continuam sujeitas à exigência de dotação.",
+    "after": "e a aplicação a elas da exigência de dotação é tema da camada JURISPRUDÊNCIA."
+   },
+   {
+    "target_id": "CF88:ART.159-A",
+    "section": "atencao",
+    "category": "AFIRMACAO_NAO_VERIFICAVEL",
+    "detector": "SECOND_PASS_REVIEW",
+    "reason": "O ADCT versionado nao traz valores nem cronograma do fundo (MACRO07_TRANSITION_EVIDENCE.json); a afirmacao \"estao no ADCT\" nao e verificavel.",
+    "before": "Os valores do fundo e o cronograma de entrega estão no ADCT e dependem de regra de transição, consultada na camada externa.",
+    "after": "Os valores do fundo e o cronograma de entrega não estão no texto do artigo; ficam na camada externa."
+   },
+   {
+    "target_id": "CF88:ART.159-A",
+    "section": "external_layer_notes",
+    "category": "AFIRMACAO_NAO_VERIFICAVEL",
+    "detector": "SECOND_PASS_REVIEW",
+    "reason": "Idem.",
+    "before": "Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional estão no ADCT, na camada externa.",
+    "after": "Os valores e o cronograma do Fundo Nacional de Desenvolvimento Regional não constam do art. 159-A nem do ADCT versionado: EXTERNAL_VERIFICATION_REQUIRED."
+   },
+   {
+    "target_id": "CF88:ART.156:PAR.2",
+    "section": "atencao",
+    "category": "JURISPRUDENCIA_RECLASSIFICADA",
+    "detector": "SECOND_PASS_JURIS",
+    "reason": "O corpo parafraseia a nao incidencia do texto; o excesso e extensao: CONTEXT_ONLY.",
+    "before": "O alcance da não incidência quando o valor do imóvel supera o capital integralizado não deve ser deduzido apenas do texto; é tema da camada JURISPRUDÊNCIA.",
+    "after": "O alcance da não incidência quando o valor do imóvel supera o capital integralizado é tema da camada JURISPRUDÊNCIA."
+   }
+  ]
+ },
+ "risk_reclassification": {
+  "total": 29,
+  "entries": [
+   {
+    "target_id": "CF88:ART.86:PAR.3",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY",
+     "SENSITIVE_THEME"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: O alcance das imunidades do Presidente previstas nos §§ 3º e 4º, inclusive quanto a investigações e prescrição durante o mandato, é tema da ",
+     "SENSITIVE_THEME: prisão"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.92",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "JUDICIAL_REVIEW_ANNOTATED"
+    ],
+    "rules_after": [
+     "JUDICIAL_REVIEW_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.92:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.98",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "JUDICIAL_REVIEW_ANNOTATED"
+    ],
+    "rules_after": [
+     "JUDICIAL_REVIEW_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.98:PAR.1: Vide ADIN 3392 — a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.102",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "JUDICIAL_REVIEW_ANNOTATED"
+    ],
+    "rules_after": [
+     "SENSITIVE_THEME",
+     "JUDICIAL_REVIEW_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "SENSITIVE_THEME: crimes",
+     "JUDICIAL_REVIEW_CONTEXT_ONLY: ART.102:PAR.2: Vide ADIN 3392 — a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.103-A",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "CONTEXT_ONLY",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "INTERPRETIVE_CONTROVERSY"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY",
+     "SENSITIVE_THEME",
+     "CONTROVERSY_TERM_FROM_LEI_SECA"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). ",
+     "SENSITIVE_THEME: cassa",
+     "CONTROVERSY_TERM_FROM_LEI_SECA: o termo e da propria Lei Seca, nao marca debate"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.124",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY",
+     "SENSITIVE_THEME"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA.",
+     "SENSITIVE_THEME: crimes"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.125:PAR.2",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: O uso de normas da Constituição Federal de reprodução obrigatória como parâmetro do controle estadual é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   {
+    "target_id": "CF88:ART.129",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: O poder de investigação criminal direta do Ministério Público é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+    ]
+   },
+   {
+    "target_id": "CF88:ART.144:PAR.8",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: A atuação das guardas municipais na segurança pública é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+    ]
+   },
+   {
+    "target_id": "CF88:ART.145:INC.II",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: A classificação de serviços como específicos e divisíveis (por exemplo, iluminação pública e segurança) é tema da camada JURISPRUDÊNCIA."
+    ]
+   },
+   {
+    "target_id": "CF88:ART.146:PAR.1",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS (art. 156-A) e da CBS (art. 195, V): 2026 em teste (ADCT 125); CBS integral a partir de 2027 (ADCT 126); IBS 0,05% + 0,05% em 2027-2028 (ADCT 127)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.149-B",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "SENSITIVE_THEME",
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "SENSITIVE_THEME: imunidade",
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 126, ADCT 127 — cobranca do IBS e da CBS conforme ADCT 125 a 127"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.149-C",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 124, ADCT 125, ADCT 127, ADCT 131 — cobranca do IBS e da CBS conforme ADCT 125 a 127; retencao do IBS de 2029 a 2077 (ADCT 131) aplicada nos termos do art. 149-C"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.150:INC.IV",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: A aplicação da vedação ao confisco às multas tributárias e os parâmetros usados são temas da camada JURISPRUDÊNCIA."
+    ]
+   },
+   {
+    "target_id": "CF88:ART.150:PAR.7",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: A restituição da diferença quando a base de cálculo real é inferior à presumida é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUI"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.153",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b); IPI com aliquota zero a partir de 2027, salvo Zona Franca (ADCT 126, III)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.153:PAR.6",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do inciso VIII cobrado a partir de 2027 (ADCT 126, I, b)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.155",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.155:PAR.2",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "SENSITIVE_THEME",
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "SENSITIVE_THEME: imunidade",
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156:PAR.2",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "REQUIRED_FOR_CORRECTNESS",
+    "jurisprudence_after": "CONTEXT_ONLY",
+    "rules_before": [
+     "JURISPRUDENCE_REQUIRED_FOR_CORRECTNESS"
+    ],
+    "rules_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY"
+    ],
+    "reasons_after": [
+     "JURISPRUDENCE_CONTEXT_ONLY: A não incidência sobre o valor que excede o capital integralizado é tema da camada JURISPRUDÊNCIA: EXTERNAL_VERIFICATION_REQUIRED."
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156:PAR.3",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 128, ADCT 129 — reducao de 2029 a 2032 (ADCT 128) e extincao a partir de 2033 (ADCT 129)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.1",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.5",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.6",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.9",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156-A:PAR.13",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125, ADCT 127, ADCT 130 — cobranca do imposto do art. 156-A por datas fixas: 2026 (ADCT 125), 2027-2028 (ADCT 127), aliquotas de referencia (ADCT 130)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.156-B",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 125 — em 2026 a arrecadacao de teste do imposto financia o Comite Gestor (ADCT 125, § 3º, I)"
+    ]
+   },
+   {
+    "target_id": "CF88:ART.159:INC.I",
+    "queue_before": "D_FULL_HUMAN_REVIEW",
+    "queue_after": "B_CLEAN_MEDIUM",
+    "risk_before": "HIGH",
+    "risk_after": "MEDIUM",
+    "jurisprudence_before": "NONE",
+    "jurisprudence_after": "NONE",
+    "rules_before": [
+     "TRANSITION_OR_TEMPORAL"
+    ],
+    "rules_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE"
+    ],
+    "reasons_after": [
+     "TRANSITION_RESOLVED_BY_VERSIONED_SOURCE: ADCT 126 — imposto do art. 153, VIII, cobrado a partir de 2027 (ADCT 126, I, b), quando passa a compor a base do inciso I"
+    ]
+   }
+  ]
+ },
+ "transition": {
+  "evidence_file": "MACRO07_TRANSITION_EVIDENCE.json",
+  "targets": 26,
+  "resolved": [
+   "CF88:ART.146:PAR.1",
+   "CF88:ART.149-B",
+   "CF88:ART.149-C",
+   "CF88:ART.153",
+   "CF88:ART.153:PAR.6",
+   "CF88:ART.155",
+   "CF88:ART.155:PAR.2",
+   "CF88:ART.156",
+   "CF88:ART.156-A:PAR.1",
+   "CF88:ART.156-A:PAR.13",
+   "CF88:ART.156-A:PAR.5",
+   "CF88:ART.156-A:PAR.6",
+   "CF88:ART.156-A:PAR.9",
+   "CF88:ART.156-B",
+   "CF88:ART.156:PAR.3",
+   "CF88:ART.159:INC.I"
+  ],
+  "kept_high": [
+   "CF88:ART.100:PAR.5",
+   "CF88:ART.105:PAR.2",
+   "CF88:ART.153:PAR.3",
+   "CF88:ART.155:PAR.6",
+   "CF88:ART.156-A",
+   "CF88:ART.158",
+   "CF88:ART.158:PAR.1",
+   "CF88:ART.159-A",
+   "CF88:ART.165:PAR.18",
+   "CF88:ART.82"
+  ]
+ },
+ "judicial_review": {
+  "classified": 14,
+  "by_class": {
+   "CONTEXT_ONLY": 3,
+   "REQUIRED_FOR_CORRECTNESS": 11
+  },
+  "entries": {
+   "CF88:ART.100": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a visao geral explica a regra do caput (ordem cronologica), cuja redacao esta anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.100:PAR.12": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve o indice de correcao do § 12, redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.100:PAR.9": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve a compensacao do § 9º, redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.102": {
+    "classification": "CONTEXT_ONLY",
+    "reason": "a anotacao recai no § 2º, que tem explicacao propria classificada REQUIRED; a visao geral so remete a ele"
+   },
+   "CF88:ART.102:PAR.2": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve a eficacia das decisoes do § 2º, redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.114": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a visao geral descreve a competencia do caput, redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.114:PAR.1": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao cobre o dissidio coletivo do § 2º (comum acordo), redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.114:PAR.3": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve o dissidio de greve do § 3º, redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.166": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a visao geral descreve a execucao obrigatoria das emendas individuais e de bancada (§§ 9º a 19), redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.166-A": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve as transferencias do caput, redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.166:PAR.11": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve a execucao obrigatoria (§§ 11 e 19), redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.166:PAR.9": {
+    "classification": "REQUIRED_FOR_CORRECTNESS",
+    "reason": "a explicacao descreve os limites das emendas individuais (§§ 9º, 9º-A e 10), redacao anotada com controle de constitucionalidade"
+   },
+   "CF88:ART.92": {
+    "classification": "CONTEXT_ONLY",
+    "reason": "a anotacao recai no § 1º (sede e jurisdicao dos tribunais), apenas mencionado na visao geral; a explicacao nao interpreta a redacao anotada"
+   },
+   "CF88:ART.98": {
+    "classification": "CONTEXT_ONLY",
+    "reason": "a anotacao recai no § 1º, apenas mencionado na visao geral; nenhuma afirmacao da explicacao depende da redacao anotada"
+   }
+  }
+ },
+ "parent_child": {
+  "overviews_checked": 118,
+  "open_findings": [],
+  "fixed_in_second_pass": [
+   "CF88:ART.121",
+   "CF88:ART.142:PAR.2",
+   "CF88:ART.158",
+   "CF88:ART.165",
+   "CF88:ART.166:PAR.3",
+   "CF88:ART.167"
+  ]
+ }
+}

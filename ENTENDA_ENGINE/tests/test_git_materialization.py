@@ -32,7 +32,7 @@ class GitMaterializationTest(unittest.TestCase):
         self.assertEqual(problems, [])
         self.assertEqual(stats['byte_identical'], stats['files'])
         self.assertGreater(stats['files'], 150)
-        self.assertEqual(stats['index_pairs'], 10)                                        # pilot + batches 01-05 (pending and final) + batch 06 candidate
+        self.assertEqual(stats['index_pairs'], 11)                                        # pilot + batches 01-05 (pending and final) + batch 06 + macro batch 07 candidate
         self.assertEqual(stats['payload_blocks'], stats['lookup_rows'])                   # every OFFSET/BYTES row reads a whole block
         self.assertEqual(stats['logical_equal'], 1)                                       # approved main corpus: normalization-safe
 

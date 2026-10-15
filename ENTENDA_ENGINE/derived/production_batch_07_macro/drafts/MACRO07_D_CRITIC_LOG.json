@@ -1,0 +1,1412 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "D",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.151",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Ela não pode instituir tributo que não seja uniforme em todo o território nacional ou que favoreça",
+   "after": "Ela não pode criar tributo sem uniformidade em todo o país, ou que favoreça"
+  },
+  {
+   "target_id": "CF88:ART.151",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade reformulada como descricao do texto.",
+   "before": "O artigo protege a Federação contra o poder tributário da União.\n",
+   "after": "As três vedações limitam o poder tributário da União em relação aos demais entes.\n"
+  },
+  {
+   "target_id": "CF88:ART.151",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto substituido.",
+   "before": "{\"termo\": \"Isenção heterônoma\", \"explicacao\": \"isenção concedida por um ente sobre tributo de outro.\"}",
+   "after": "{\"termo\": \"Isenção\", \"explicacao\": \"dispensa legal do pagamento de um tributo.\"}"
+  },
+  {
+   "target_id": "CF88:ART.152",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "O artigo impede uma espécie de guerra comercial interna entre os entes da Federação.\n",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; lista dos paragrafos marcada como seletiva.",
+   "before": "O art. 153 dá à União competência para instituir impostos sobre importação; exportação; renda e proventos de qualquer natureza; produtos industrializados; operações de crédito, câmbio e seguro ou relativas a títulos ou valores mobiliários; propriedade territorial rural; grandes fortunas, nos termos de lei complementar; e produção, extração, comercialização ou importação de bens e serviços prejudiciais à saúde ou ao meio ambiente, também nos termos de lei complementar. Os parágrafos trazem regras próprias para vários desses impostos.",
+   "after": "O art. 153 lista os impostos da União: sobre importação; sobre exportação; sobre renda e proventos de qualquer natureza; sobre produtos industrializados; sobre operações de crédito, câmbio, seguro ou com títulos e valores mobiliários; sobre a propriedade territorial rural; sobre grandes fortunas, nos termos de lei complementar; e sobre produção, extração, comercialização ou importação de bens e serviços prejudiciais à saúde ou ao meio ambiente, também nos termos de lei complementar. Os parágrafos trazem, entre outras, regras próprias para vários desses impostos."
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "section": "o_que_significa",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de 10 palavras.",
+   "before": "O imposto de renda segue os critérios da generalidade, da universalidade e da progressividade, na forma da lei (§ 2º).",
+   "after": "O imposto de renda observa, na forma da lei, três critérios: generalidade, universalidade e progressividade (§ 2º)."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.1",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "\"excecao\" sem marcador no texto.",
+   "before": "O parágrafo abre uma exceção para quatro impostos:",
+   "after": "O parágrafo trata de forma diferente quatro impostos:"
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 3º estabelece que o imposto sobre produtos industrializados será seletivo, conforme a essencialidade do produto; será não cumulativo, compensando-se o devido em cada operação com o cobrado nas anteriores; não incidirá sobre produtos industrializados destinados ao exterior; e terá reduzido seu impacto sobre a aquisição de bens de capital pelo contribuinte, na forma da lei.",
+   "after": "O § 3º dá quatro características ao imposto sobre produtos industrializados: é seletivo, conforme a essencialidade do produto; é não cumulativo, compensando-se o que é devido em cada operação com o que foi cobrado nas anteriores; não incide sobre produtos industrializados destinados ao exterior; e, na forma da lei, tem impacto reduzido quando o contribuinte adquire bens de capital."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "\"evitando\" reformulado.",
+   "before": "A não cumulatividade permite abater o imposto pago nas etapas anteriores, evitando que ele se acumule ao longo da cadeia.",
+   "after": "A não cumulatividade permite abater o imposto pago nas etapas anteriores da cadeia."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elemento \"conforme a origem\" sem traco.",
+   "before": "O § 5º determina que o ouro, quando a lei o definir como ativo financeiro ou instrumento cambial, se sujeite exclusivamente ao imposto do inciso V, devido na operação de origem, com alíquota mínima de um por cento. A arrecadação é transferida em trinta por cento para o Estado, o Distrito Federal ou o Território de origem e em setenta por cento para o Município de origem.",
+   "after": "O § 5º determina que o ouro, quando a lei o definir como ativo financeiro ou instrumento cambial, sofra apenas o imposto do inciso V, devido na operação de origem, com alíquota mínima de um por cento. O montante arrecadado é transferido conforme a origem: trinta por cento ao Estado, ao Distrito Federal ou ao Território, e setenta por cento ao Município."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elementos da lista (inciso IV) sem traco.",
+   "before": "O § 6º estabelece que o imposto do inciso VIII não incidirá sobre exportações nem sobre operações com energia elétrica e telecomunicações; incidirá uma única vez sobre o bem ou serviço; não integrará sua própria base de cálculo, mas integrará a base de outros tributos indicados; poderá ter o mesmo fato gerador e base de cálculo de outros tributos; terá alíquotas fixadas em lei ordinária, específicas ou ad valorem; e, na extração, será cobrado independentemente da destinação, com alíquota máxima de um por cento do valor de mercado do produto.",
+   "after": "O § 6º fixa regras para o imposto do inciso VIII. Ele não incide sobre exportações nem sobre operações com energia elétrica e telecomunicações, incide uma única vez sobre o bem ou serviço e não integra sua própria base de cálculo, embora integre a base dos tributos dos arts. 155, II, 156, III, 156-A e 195, V. Pode ter fato gerador e base de cálculo coincidentes com os de outros tributos e terá alíquotas fixadas em lei ordinária, específicas ou ad valorem. Na extração, é cobrado independentemente da destinação, com alíquota máxima de um por cento do valor de mercado do produto."
+  },
+  {
+   "target_id": "CF88:ART.153:PAR.6",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Termo tecnico usado sem definicao.",
+   "before": "{\"termo\": \"Valor de mercado\", \"explicacao\": \"preço que o produto alcançaria em uma venda normal.\"}",
+   "after": "{\"termo\": \"Valor de mercado\", \"explicacao\": \"preço que o produto alcançaria em uma venda normal.\"}, {\"termo\": \"Ad valorem\", \"explicacao\": \"calculado como percentual sobre um valor.\"}"
+  },
+  {
+   "target_id": "CF88:ART.154",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; \"devem\" reformulado.",
+   "before": "O art. 154 permite à União instituir, por lei complementar, impostos não previstos no artigo anterior, desde que sejam não cumulativos e não tenham fato gerador ou base de cálculo próprios dos impostos discriminados na Constituição. Permite também, na iminência ou no caso de guerra externa, impostos extraordinários, compreendidos ou não em sua competência, que devem ser suprimidos gradativamente quando cessarem as causas da criação.",
+   "after": "O art. 154 permite à União criar, por lei complementar, impostos além dos previstos no art. 153. Esses impostos precisam ser não cumulativos e não podem ter fato gerador ou base de cálculo próprios dos impostos já discriminados na Constituição. Na iminência ou no caso de guerra externa, a União também pode instituir impostos extraordinários, compreendidos ou não em sua competência tributária. Eles serão suprimidos gradativamente quando cessarem as causas da criação."
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; resumo dos paragrafos marcado como seletivo, com excecoes e lei complementar.",
+   "before": "O art. 155 dá aos Estados e ao Distrito Federal competência para instituir impostos sobre a transmissão causa mortis e a doação de quaisquer bens ou direitos; sobre operações relativas à circulação de mercadorias e prestações de serviços de transporte interestadual e intermunicipal e de comunicação, ainda que iniciadas no exterior; e sobre a propriedade de veículos automotores. Os parágrafos trazem as regras de cada imposto.",
+   "after": "O art. 155 reserva aos Estados e ao Distrito Federal três impostos: sobre a transmissão de bens ou direitos por morte ou por doação; sobre a circulação de mercadorias e as prestações de serviços de transporte entre Estados e entre Municípios e de comunicação, mesmo quando iniciadas no exterior; e sobre a propriedade de veículos automotores. Os parágrafos trazem, entre outras, as regras de cada imposto, com exceções como as do imposto sobre veículos e matérias reservadas à lei complementar."
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Dado de arrecadacao sem proveniencia.",
+   "before": "O segundo, o mais importante em arrecadação, alcança",
+   "after": "O segundo alcança"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.1",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "As alíquotas máximas são fixadas pelo Senado, o imposto é progressivo conforme o valor do quinhão, do legado ou da doação, e não incide",
+   "after": "As alíquotas máximas são fixadas pelo Senado, e o imposto é progressivo conforme o valor do quinhão, do legado ou da doação. O imposto não incide"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "O Senado tem papel central na fixação das alíquotas interestaduais, o que reduz conflitos entre Estados.",
+   "after": "O Senado tem papel central na fixação das alíquotas interestaduais."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.X",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso X estabelece que o imposto não incide: sobre operações que destinem mercadorias ao exterior e serviços prestados a destinatários no exterior, assegurada a manutenção e o aproveitamento do imposto cobrado nas etapas anteriores; sobre operações que destinem a outros Estados petróleo, lubrificantes, combustíveis dele derivados e energia elétrica; sobre o ouro nas hipóteses do art. 153, § 5º; e sobre serviços de radiodifusão sonora e de sons e imagens de recepção livre e gratuita.",
+   "after": "O inciso X afasta o imposto em quatro casos: nas operações que destinem mercadorias ao exterior e nos serviços a destinatários no exterior, mantido e aproveitado o imposto cobrado nas operações e prestações anteriores; nas operações que destinem a outros Estados petróleo, lubrificantes, combustíveis dele derivados e energia elétrica; no ouro, nas hipóteses do art. 153, § 5º; e nos serviços de radiodifusão sonora e de sons e imagens de recepção livre e gratuita."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.X",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "Na exportação, o imposto não incide, e o exportador ainda mantém os créditos das etapas anteriores, para que o produto chegue ao exterior sem o peso do imposto.",
+   "after": "Na exportação, o imposto não incide, e o exportador ainda mantém os créditos das etapas anteriores."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.X",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "EXTRAPOLATION_NUMBER",
+   "reason": "Remissao reescrita para nao ser lida como numero solto.",
+   "before": "esse ponto se relaciona com regras especiais dos §§ 2º, XII, h, e 4º.",
+   "after": "esse ponto se relaciona com as regras especiais do § 2º, XII, h, e do § 4º."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.X",
+   "section": "exemplo_pratico",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "\"aproveitar\" lido como finalidade; reformulado.",
+   "before": "Não paga o imposto na venda e pode aproveitar o imposto que pagou na compra dos fios.",
+   "after": "Não paga o imposto na venda e mantém o crédito do imposto pago na compra dos fios."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 3º determina que, à exceção do imposto estadual sobre circulação de mercadorias e dos impostos dos arts. 153, I e II, e 156-A, nenhum outro imposto pode incidir sobre operações relativas a energia elétrica e serviços de telecomunicações. Sobre derivados de petróleo, combustíveis e minerais do País, além desses, admite-se apenas o imposto do art. 153, VIII.",
+   "after": "O § 3º limita os impostos sobre certos setores. Sobre operações com energia elétrica e serviços de telecomunicações, só podem incidir o imposto estadual sobre circulação de mercadorias, os impostos federais de importação e de exportação (art. 153, I e II) e o imposto do art. 156-A. Sobre derivados de petróleo, combustíveis e minerais do País, além desses, admite-se apenas o imposto do art. 153, VIII."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Qualificacao (\"estrategicos\") nao declarada.",
+   "before": "O parágrafo limita os impostos que podem recair sobre setores considerados estratégicos.\n",
+   "after": "O parágrafo limita os impostos que podem recair sobre esses setores.\n"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.4",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento \"mesma proporcionalidade\" sem traco.",
+   "before": "Nas operações interestaduais com gás natural e outros combustíveis, entre contribuintes, o imposto é repartido entre origem e destino;",
+   "after": "Nas operações interestaduais com gás natural e outros combustíveis, entre contribuintes, o imposto é repartido entre origem e destino na mesma proporção das demais mercadorias;"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.4",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo alinhado ao texto.",
+   "before": "\"termo\": \"Incidência monofásica\"",
+   "after": "\"termo\": \"Incidência única\""
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "Ele incide sobre veículos terrestres, aquáticos e aéreos, excetuados aeronaves agrícolas",
+   "after": "Ele incide sobre veículos terrestres, aquáticos e aéreos. Ficam excetuados aeronaves agrícolas"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "section": "o_que_diz",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "Marcador alinhado ao do texto (\"excetuados\").",
+   "before": "com vinte anos ou mais de fabricação, salvo micro-ônibus, ônibus, reboques e semirreboques.",
+   "after": "com vinte anos ou mais de fabricação, exceto micro-ônibus, ônibus, reboques e semirreboques."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "section": "o_que_significa",
+   "category": "HISTORICO_NAO_VERIFICADO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"passa a\" sugere mudanca no tempo sem verificacao.",
+   "before": "O imposto sobre veículos passa a alcançar, além dos carros, também embarcações e aeronaves.",
+   "after": "O imposto sobre veículos alcança, além dos carros, também embarcações e aeronaves."
+  },
+  {
+   "target_id": "CF88:ART.153",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e sobre produção, extração, comercialização ou importação de bens e serviços prejudiciais à saúde ou ao meio ambiente, também nos termos de lei complementar.",
+   "after": "e sobre bens e serviços prejudiciais à saúde ou ao meio ambiente, em sua produção, extração, comercialização ou importação, também nos termos de lei complementar."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.2:INC.X",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e nos serviços de radiodifusão sonora e de sons e imagens de recepção livre e gratuita.",
+   "after": "e na radiodifusão sonora ou de sons e imagens, quando a recepção for livre e gratuita."
+  },
+  {
+   "target_id": "CF88:ART.155",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva do § 6º, III, sem marcador na frase que resume o imposto.",
+   "before": "e sobre a propriedade de veículos automotores.",
+   "after": "e sobre a propriedade de veículos automotores, exceto os veículos indicados no § 6º."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida; marcador alinhado ao texto.",
+   "before": "Ficam excetuados aeronaves agrícolas e de serviços aéreos a terceiros, embarcações de transporte aquaviário e de pesca, plataformas móveis e embarcações de exploração econômica em águas brasileiras, tratores e máquinas agrícolas e veículos terrestres de passageiros, caminhonetes e mistos com vinte anos ou mais de fabricação, exceto micro-ônibus, ônibus, reboques e semirreboques.",
+   "after": "Ficam excetuados aeronaves agrícolas e de serviços aéreos a terceiros, embarcações de transporte aquaviário e de pesca, plataformas móveis e embarcações de exploração econômica em águas brasileiras e tratores e máquinas agrícolas. Também ficam excetuados os veículos terrestres de passageiros, caminhonetes e mistos com vinte anos ou mais de fabricação, mas não os micro-ônibus, ônibus, reboques e semirreboques."
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "Marcador alinhado ao do texto (\"excetuados\").",
+   "before": "Há várias exceções ligadas a atividades econômicas específicas,",
+   "after": "Vários veículos ficam excetuados por estarem ligados a atividades econômicas específicas,"
+  },
+  {
+   "target_id": "CF88:ART.155:PAR.6",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "Marcador \"salvo\" ausente do texto; reformulado sem alterar o sentido.",
+   "before": "Também ficam fora os veículos de passageiros antigos, com vinte anos ou mais, salvo os de transporte coletivo e os reboques.",
+   "after": "Também ficam fora os veículos de passageiros antigos, com vinte anos ou mais; ônibus, micro-ônibus e reboques continuam alcançados mesmo quando antigos."
+  },
+  {
+   "target_id": "CF88:ART.156",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 156 dá aos Municípios competência para instituir impostos sobre a propriedade predial e territorial urbana; sobre a transmissão onerosa de imóveis entre vivos e de direitos reais sobre eles, exceto os de garantia, incluída a cessão de direitos à aquisição; e sobre serviços de qualquer natureza não compreendidos no art. 155, II, definidos em lei complementar. Os parágrafos trazem as regras de cada um desses impostos.",
+   "after": "O art. 156 dá aos Municípios três impostos: sobre a propriedade predial e territorial urbana; sobre a transmissão onerosa de imóveis entre vivos e de direitos reais sobre eles, exceto os de garantia, incluída a cessão de direitos à aquisição; e sobre serviços de qualquer natureza que a lei complementar definir, desde que fora do campo do imposto estadual do art. 155, II. Os parágrafos trazem as regras de cada um desses impostos."
+  },
+  {
+   "target_id": "CF88:ART.156",
+   "section": "o_que_significa",
+   "category": "CONTRATO_DO_MOTOR",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Ajuste de redacao.",
+   "before": "O terceiro alcança os serviços, exceto os de transporte interestadual e intermunicipal e de comunicação, que ficam com o Estado.",
+   "after": "O terceiro alcança os serviços, salvo os de transporte interestadual e intermunicipal e de comunicação, que ficam com o Estado."
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 2º estabelece que o imposto sobre a transmissão onerosa de imóveis não incide quando bens ou direitos são incorporados ao patrimônio de pessoa jurídica para formar o capital, nem nas transmissões decorrentes de fusão, incorporação, cisão ou extinção de pessoa jurídica. A ressalva é o caso em que a atividade preponderante do adquirente for a compra e venda desses bens ou direitos, a locação de imóveis ou o arrendamento mercantil. O imposto cabe ao Município onde o bem está situado.",
+   "after": "O § 2º estabelece que o imposto sobre a transmissão onerosa de imóveis não incide quando bens ou direitos são incorporados ao patrimônio de pessoa jurídica para formar o capital, nem nas transmissões decorrentes de fusão, incorporação, cisão ou extinção de pessoa jurídica. A ressalva vale quando o adquirente tem como atividade preponderante comprar e vender esses bens ou direitos, alugar imóveis ou fazer arrendamento mercantil. O imposto cabe ao Município onde o bem está situado."
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"sempre\" retirado.",
+   "before": "O imposto pertence sempre ao Município onde o imóvel está.",
+   "after": "O imposto pertence ao Município onde o imóvel está."
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "As alíquotas mínima e máxima evitam que um Município cobre valores muito baixos para atrair empresas de outros, ou valores excessivos. A lei complementar também pode afastar o imposto das exportações de serviços.",
+   "after": "A lei complementar fixa alíquotas mínima e máxima que valem para todos os Municípios e pode afastar o imposto das exportações de serviços."
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; resumo marcado como seletivo e com excecoes.",
+   "before": "O art. 156-A determina que lei complementar institua imposto sobre bens e serviços de competência compartilhada entre Estados, Distrito Federal e Municípios. Os parágrafos definem seus princípios e características, o sujeito passivo, a distribuição da arrecadação pelo Comitê Gestor, as matérias da lei complementar, os regimes específicos, os efeitos da isenção e da imunidade, a alíquota de referência e a devolução do imposto a pessoas físicas.",
+   "after": "O art. 156-A determina que lei complementar crie um imposto sobre bens e serviços cuja competência é dividida entre Estados, Distrito Federal e Municípios. Os parágrafos tratam, entre outros temas, dos princípios e características do imposto, inclusive suas exceções, do sujeito passivo, da distribuição da arrecadação pelo Comitê Gestor, das matérias da lei complementar, dos regimes específicos, dos efeitos da isenção e da imunidade, da alíquota de referência e da devolução do imposto a pessoas físicas."
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"ideia central\" reformulada como descricao do texto.",
+   "before": "A ideia central é um imposto amplo sobre o consumo,",
+   "after": "O texto desenha um imposto amplo sobre o consumo,"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva do inciso VIII e elemento do inciso III sem traco no resumo.",
+   "before": "O § 1º estabelece que o imposto será orientado pelo princípio da neutralidade. Entre suas características: incide sobre operações com bens materiais ou imateriais, inclusive direitos, e com serviços, também na importação; não incide sobre exportações, mantidos os créditos do exportador; tem legislação única e uniforme no país, ressalvada a alíquota própria que cada ente fixa por lei específica; a alíquota de cada ente é a mesma para todas as operações, salvo hipóteses da Constituição; é cobrado pela soma das alíquotas do Estado e do Município de destino; é não cumulativo; e não pode ser objeto de incentivos ou regimes favorecidos fora dos casos constitucionais.",
+   "after": "O § 1º orienta o imposto pelo princípio da neutralidade e fixa suas características. Entre elas: incide sobre operações com bens materiais ou imateriais, inclusive direitos, e com serviços, também na importação; não incide sobre exportações, assegurados ao exportador a manutenção e o aproveitamento dos créditos; tem legislação única e uniforme no país, ressalvada a alíquota própria que cada ente fixa por lei específica; a alíquota de cada ente é a mesma para todas as operações, salvo hipóteses da Constituição; é cobrado pela soma das alíquotas do Estado e do Município de destino; é não cumulativo, excetuadas as aquisições de uso ou consumo pessoal definidas em lei complementar; e não admite incentivos ou regimes favorecidos fora dos casos constitucionais."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Relacao causal (\"para isso\") nao declarada.",
+   "before": "A neutralidade significa que o imposto não deve interferir nas decisões econômicas das pessoas e das empresas.\nPara isso, o imposto incide",
+   "after": "Em termos gerais, a neutralidade indica que o imposto não deve distorcer as decisões econômicas de pessoas e empresas.\nO imposto incide"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.5",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "MODALITY_SHIFT",
+   "reason": "\"deve\" ajustado ao texto.",
+   "before": "O § 5º lista matérias que a lei complementar deve disciplinar.",
+   "after": "O § 5º lista matérias de que a lei complementar disporá."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "bares e restaurantes, atividade esportiva de Sociedade Anônima do Futebol e aviação regional;",
+   "after": "bares e restaurantes, atividade esportiva desenvolvida por Sociedade Anônima do Futebol e aviação regional;"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "section": "o_que_significa",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento das alineas sem traco.",
+   "before": "Nesses regimes, a lei pode alterar alíquotas, bases de cálculo e regras de crédito e, em certos casos, deixar de aplicar regras gerais do § 1º, como a alíquota única de cada ente.",
+   "after": "Nesses regimes, a lei pode alterar alíquotas, bases de cálculo e regras de crédito e, em certos casos, deixar de aplicar regras gerais do § 1º, como a alíquota única de cada ente ou, em relação aos adquirentes dos bens e serviços, a regra do crédito."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 9º determina que qualquer alteração na legislação federal que reduza ou eleve a arrecadação do imposto seja compensada pela elevação ou redução, pelo Senado, das alíquotas de referência, para preservar a arrecadação dos entes, nos termos de lei complementar. Essa alteração só entra em vigor quando o ajuste das alíquotas de referência começar a produzir efeitos. O § 10 permite que Estados, Distrito Federal e Municípios vinculem suas alíquotas à de referência. O § 11 exige estimativa de impacto nas alíquotas de referência para que projeto de lei complementar que altere a arrecadação seja apreciado.",
+   "after": "O § 9º trata das mudanças na legislação federal que aumentem ou diminuam a arrecadação do imposto. Elas devem ser compensadas pelo Senado, que eleva ou reduz as alíquotas de referência para preservar a arrecadação dos entes, nos termos de lei complementar, e só entram em vigor quando esse ajuste começar a produzir efeitos. O § 10 permite que Estados, Distrito Federal e Municípios vinculem suas alíquotas à de referência. O § 11 exige estimativa de impacto nas alíquotas de referência para que projeto de lei complementar que altere a arrecadação seja apreciado."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "\"evita\" reformulado.",
+   "before": "O bloco evita que mudanças federais reduzam ou aumentem a receita dos entes sem compensação.",
+   "after": "Pelo bloco, mudanças federais que alterem a receita dos entes vêm acompanhadas de compensação."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.9",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "AUTOMATIC_CONSEQUENCE",
+   "reason": "\"automaticamente\" retirado.",
+   "before": "Os entes podem optar por acompanhar automaticamente a alíquota de referência.",
+   "after": "Os entes podem optar por vincular a sua alíquota à de referência."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.13",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 13 torna obrigatória a devolução do imposto prevista no § 5º, VIII, nas operações de fornecimento de energia elétrica e de gás liquefeito de petróleo ao consumidor de baixa renda. A lei complementar pode determinar que a devolução seja calculada e concedida no momento da cobrança.",
+   "after": "O § 13 torna obrigatória a devolução do imposto prevista no § 5º, VIII, quando energia elétrica ou gás liquefeito de petróleo forem fornecidos ao consumidor de baixa renda. A lei complementar pode determinar que a devolução seja calculada e concedida no momento da cobrança."
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida; elementos dos paragrafos com traco.",
+   "before": "O art. 156-B determina que Estados, Distrito Federal e Municípios exerçam de forma integrada, exclusivamente por meio do Comitê Gestor do Imposto sobre Bens e Serviços, as competências de editar regulamento único e uniformizar a interpretação do imposto, arrecadar, compensar e distribuir o produto da arrecadação e decidir o contencioso administrativo. Os parágrafos definem a natureza do Comitê, as regras de lei complementar sobre representação, presidência, financiamento e controle, a composição e as deliberações, os requisitos do Presidente e a cooperação com a administração tributária da União.",
+   "after": "O art. 156-B determina que Estados, Distrito Federal e Municípios exerçam certas competências sobre o imposto do art. 156-A somente por meio do Comitê Gestor do Imposto sobre Bens e Serviços, de forma integrada. São elas: editar regulamento único e uniformizar a interpretação do imposto; arrecadar, compensar e distribuir o produto da arrecadação; e decidir o contencioso administrativo. Os parágrafos tratam, entre outros temas, da natureza do Comitê, da representação paritária dos entes e da alternância na presidência, do financiamento e do controle, da atuação das administrações tributárias e procuradorias dos Estados e Municípios, da composição e das deliberações e da cooperação com a administração tributária da União."
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Nome de orgao nao usado no texto.",
+   "before": "O Comitê também compartilha informações com a Receita da União,",
+   "after": "O Comitê também compartilha informações com a administração tributária da União,"
+  },
+  {
+   "target_id": "CF88:ART.156-B:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "com vinte e sete membros representando cada Estado e o Distrito Federal e vinte e sete representando o conjunto dos Municípios e do Distrito Federal.",
+   "after": "com vinte e sete membros, um por Estado e um pelo Distrito Federal, e outros vinte e sete que representam o conjunto dos Municípios e do Distrito Federal."
+  },
+  {
+   "target_id": "CF88:ART.156-B:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Inferencia sobre o efeito politico retirada.",
+   "before": " Assim, nem os Estados mais populosos nem a maioria numérica decidem sozinhos.",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.157",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "NUMBER_NOT_IN_TEXT",
+   "reason": "Fracao \"um quinto\" nao esta no texto.",
+   "before": "um quinto da arrecadação, isto é, vinte por cento,",
+   "after": "vinte por cento da arrecadação"
+  },
+  {
+   "target_id": "CF88:ART.157",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "o produto da arrecadação do imposto da União sobre a renda retido na fonte",
+   "after": "o produto da arrecadação do imposto da União sobre a renda e proventos de qualquer natureza retido na fonte"
+  },
+  {
+   "target_id": "CF88:ART.157",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto substituido.",
+   "before": "{\"termo\": \"Repartição de receitas\", \"explicacao\": \"divisão da arrecadação de um tributo entre entes.\"}",
+   "after": "{\"termo\": \"Competência residual\", \"explicacao\": \"poder da União de criar impostos além dos listados (art. 154, I).\"}"
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "NUMBER_NOT_IN_TEXT",
+   "reason": "Fracoes nao usadas no texto.",
+   "before": "Do Estado, recebe metade do imposto sobre veículos e um quarto do imposto sobre circulação de mercadorias e do novo imposto sobre bens e serviços destinado ao Estado.",
+   "after": "Do Estado, recebe cinquenta por cento do imposto sobre veículos e vinte e cinco por cento do imposto sobre circulação de mercadorias e do novo imposto sobre bens e serviços destinado ao Estado."
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "cinquenta por cento do imposto estadual sobre veículos licenciados em seu território",
+   "after": "cinquenta por cento do produto da arrecadação do imposto estadual sobre veículos licenciados em seu território"
+  },
+  {
+   "target_id": "CF88:ART.158",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_NOT_USED",
+   "reason": "Termo nao usado no texto substituido.",
+   "before": "{\"termo\": \"Cota-parte\", \"explicacao\": \"parcela da arrecadação que pertence a outro ente.\"}",
+   "after": "{\"termo\": \"Retenção na fonte\", \"explicacao\": \"desconto do imposto feito por quem paga o rendimento.\"}"
+  },
+  {
+   "target_id": "CF88:ART.158:PAR.1",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "e em até trinta e cinco por cento conforme lei estadual, com no mínimo dez pontos percentuais ligados a indicadores de melhoria da aprendizagem e de equidade.",
+   "after": "e em até trinta e cinco por cento conforme lei estadual. Dentro dessa parte, no mínimo dez pontos percentuais seguem indicadores de melhoria da aprendizagem e de equidade."
+  },
+  {
+   "target_id": "CF88:ART.159",
+   "section": "o_que_diz",
+   "category": "MODALIDADE",
+   "detector": "MODALITY_SHIFT",
+   "reason": "\"obriga\" ajustado ao texto (\"entregara\"); elementos sem traco; dependencia de lei mencionada.",
+   "before": "O art. 159 obriga a União a entregar parte da arrecadação de impostos e contribuições. Do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII, entrega cinquenta por cento a fundos de participação e a programas regionais (inciso I). Do imposto sobre produtos industrializados e do imposto do art. 153, VIII, entrega dez por cento aos Estados, conforme suas exportações de produtos industrializados (inciso II). Da contribuição de intervenção sobre combustíveis, entrega vinte e nove por cento aos Estados (inciso III). Os parágrafos tratam de exclusões no cálculo, do limite por Estado e dos repasses aos Municípios.",
+   "after": "O art. 159 determina que a União entregue parte da arrecadação de impostos e contribuições. Do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII, entrega cinquenta por cento a fundos de participação e a programas regionais (inciso I). Do imposto sobre produtos industrializados e do imposto do art. 153, VIII, entrega dez por cento aos Estados, proporcionalmente às suas exportações de produtos industrializados (inciso II). Da contribuição de intervenção do art. 177, § 4º, entrega vinte e nove por cento aos Estados, distribuídos na forma da lei e observadas as destinações daquele parágrafo (inciso III). Os parágrafos tratam, entre outros temas, de exclusões no cálculo, do limite por Estado e dos repasses aos Municípios."
+  },
+  {
+   "target_id": "CF88:ART.159",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade (\"compensa\") nao declarada.",
+   "before": "O inciso II compensa os Estados exportadores.",
+   "after": "O inciso II distribui recursos conforme as exportações de produtos industrializados de cada Estado."
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elementos das alineas com traco.",
+   "before": "O inciso I determina que a União entregue cinquenta por cento da arrecadação do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII. A maior parte vai ao Fundo de Participação dos Estados e do Distrito Federal e ao Fundo de Participação dos Municípios; três por cento vão a programas de financiamento ao setor produtivo das Regiões Norte, Nordeste e Centro-Oeste, com metade da parcela da região reservada ao semiárido nordestino, na forma da lei; e há parcelas adicionais de um por cento ao Fundo dos Municípios entregues em julho, setembro e dezembro.",
+   "after": "O inciso I determina que a União entregue cinquenta por cento da arrecadação do imposto de renda, do imposto sobre produtos industrializados e do imposto do art. 153, VIII. A maior parte vai, pelas alíneas a e b, ao Fundo de Participação dos Estados e do Distrito Federal e ao Fundo de Participação dos Municípios. Três por cento financiam o setor produtivo das Regiões Norte, Nordeste e Centro-Oeste, por instituições financeiras regionais, ficando assegurada ao semiárido do Nordeste a metade dos recursos da região, na forma da lei. Há ainda parcelas adicionais de um por cento ao Fundo dos Municípios, entregues em julho, setembro e dezembro."
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "section": "o_que_significa",
+   "category": "REMISSAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Fonte constitucional da afirmacao explicitada.",
+   "before": "segundo critérios definidos em lei complementar.",
+   "after": "segundo critérios definidos em lei complementar (art. 161, II)."
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O art. 159-A institui o Fundo Nacional de Desenvolvimento Regional, com o objetivo de reduzir as desigualdades regionais e sociais, por meio da entrega de recursos da União aos Estados e ao Distrito Federal para estudos, projetos e obras de infraestrutura, fomento a atividades produtivas com potencial de gerar emprego e renda e ações de desenvolvimento científico, tecnológico e de inovação. É vedada a retenção dos recursos, os entes priorizam projetos de sustentabilidade ambiental e redução de emissões de carbono e decidem sobre a aplicação. A partilha usa a população, com peso de trinta por cento, e o coeficiente do fundo de participação dos Estados, com peso de setenta por cento, calculados pelo Tribunal de Contas da União.",
+   "after": "O art. 159-A cria o Fundo Nacional de Desenvolvimento Regional, que tem o objetivo declarado de reduzir as desigualdades regionais e sociais, nos termos do art. 3º, III. A União entrega recursos aos Estados e ao Distrito Federal para estudos, projetos e obras de infraestrutura, fomento a atividades produtivas com potencial de gerar emprego e renda e ações de desenvolvimento científico, tecnológico e de inovação. É vedada a retenção dos recursos; os entes priorizam projetos de sustentabilidade ambiental e redução de emissões de carbono e decidem sobre a aplicação. A partilha usa a população, com peso de trinta por cento, e o coeficiente do fundo de participação dos Estados, com peso de setenta por cento, calculados pelo Tribunal de Contas da União."
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Efeito distributivo do fundo de participacao sem proveniencia.",
+   "before": "A divisão combina a população de cada Estado e o critério do fundo de participação, que favorece os Estados com menor renda.",
+   "after": "A divisão combina a população de cada Estado e o coeficiente do fundo de participação dos Estados."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "não incide sobre exportações, assegurados ao exportador a manutenção e o aproveitamento dos créditos;",
+   "after": "não incide sobre exportações, e o exportador mantém e aproveita os créditos;"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.1",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Marcadores de excecao reconheciveis para as ressalvas dos incisos VIII e X.",
+   "before": "é não cumulativo, excetuadas as aquisições de uso ou consumo pessoal definidas em lei complementar; e não admite incentivos ou regimes favorecidos fora dos casos constitucionais.",
+   "after": "é não cumulativo, exceto quanto às aquisições de uso ou consumo pessoal definidas em lei complementar; e não admite incentivos ou regimes favorecidos, salvo nos casos previstos na Constituição."
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "bares e restaurantes, atividade esportiva desenvolvida por Sociedade Anônima do Futebol e aviação regional;",
+   "after": "bares e restaurantes, aviação regional e atividade esportiva desenvolvida por Sociedade Anônima do Futebol;"
+  },
+  {
+   "target_id": "CF88:ART.156-A:PAR.6",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento da alinea c sem traco.",
+   "before": "para combustíveis e lubrificantes com incidência única;",
+   "after": "para combustíveis e lubrificantes com incidência única, com concessão de crédito nas aquisições feitas por sujeito passivo;"
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "somente por meio do Comitê Gestor do Imposto sobre Bens e Serviços, de forma integrada.",
+   "after": "somente pelo Comitê Gestor do Imposto sobre Bens e Serviços, de forma integrada."
+  },
+  {
+   "target_id": "CF88:ART.156-B",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "do financiamento e do controle, da atuação das administrações tributárias",
+   "after": "do financiamento e do controle. Também tratam da atuação das administrações tributárias"
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "das matérias da lei complementar, dos regimes específicos,",
+   "after": "das matérias da lei complementar. Também tratam dos regimes específicos,"
+  },
+  {
+   "target_id": "CF88:ART.159-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "que tem o objetivo declarado de reduzir as desigualdades regionais e sociais, nos termos do art. 3º, III.",
+   "after": "que tem o objetivo declarado de reduzir desigualdades regionais e sociais (art. 3º, III)."
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "alugar imóveis ou fazer arrendamento mercantil.",
+   "after": "fazer locação de bens imóveis ou arrendamento mercantil."
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.3",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "que valem para todos os Municípios",
+   "after": "que valem para os Municípios em geral"
+  },
+  {
+   "target_id": "CF88:ART.159:INC.I",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Resumo das alineas marcado como seletivo.",
+   "before": "A maior parte vai, pelas alíneas a e b,",
+   "after": "Entre outras destinações, a maior parte vai, pelas alíneas a e b,"
+  },
+  {
+   "target_id": "CF88:ART.156:PAR.2",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "tem como atividade preponderante comprar e vender esses bens ou direitos,",
+   "after": "tem como atividade preponderante a compra e venda desses bens ou direitos,"
+  },
+  {
+   "target_id": "CF88:ART.156-A",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalvas do § 1º sem marcador na frase que resume o imposto.",
+   "before": "crie um imposto sobre bens e serviços cuja competência",
+   "after": "crie um imposto sobre bens e serviços, com as exceções e os regimes previstos na própria Constituição, cuja competência"
+  },
+  {
+   "target_id": "CF88:ART.160",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade nao declarada.",
+   "before": "\nA regra protege a autonomia financeira dos entes, que depende desses recursos.",
+   "after": ""
+  },
+  {
+   "target_id": "CF88:ART.161",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e dispor sobre o acompanhamento, pelos beneficiários, do cálculo das quotas e da liberação das participações.",
+   "after": "e regular a forma como os beneficiários acompanham o cálculo das quotas e a liberação das participações dos arts. 157, 158 e 159."
+  },
+  {
+   "target_id": "CF88:ART.162",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O art. 162 obriga a União, os Estados, o Distrito Federal e os Municípios a divulgar, até o último dia do mês seguinte ao da arrecadação, os valores de cada tributo arrecadado, os recursos recebidos, os valores de origem tributária entregues e a entregar e a expressão numérica dos critérios de rateio. O parágrafo único exige que a União divulgue os dados por Estado e por Município, e os Estados, por Município.",
+   "after": "O art. 162 obriga a União, os Estados, o Distrito Federal e os Municípios a divulgar dados sobre os tributos até o último dia do mês seguinte ao da arrecadação. Devem ser divulgados o montante de cada tributo arrecadado, os recursos que o ente recebeu, os valores de origem tributária que já entregou ou ainda vai entregar e a expressão numérica dos critérios de rateio. O parágrafo único exige que a União divulgue os dados por Estado e por Município, e os Estados, por Município."
+  },
+  {
+   "target_id": "CF88:ART.163",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "A lei complementar dá regras gerais para todos os entes sobre como gastar,",
+   "after": "A lei complementar dá regras gerais à União, aos Estados, ao Distrito Federal e aos Municípios sobre como gastar,"
+  },
+  {
+   "target_id": "CF88:ART.163",
+   "section": "o_que_significa",
+   "category": "HISTORICO_NAO_VERIFICADO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "\"mais recentes\" sem verificacao.",
+   "before": "Os incisos mais recentes tratam da sustentabilidade da dívida:",
+   "after": "Os incisos VIII e IX tratam da sustentabilidade da dívida e dos benefícios tributários:"
+  },
+  {
+   "target_id": "CF88:ART.163",
+   "section": "exemplo_pratico",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao sobre lei existente sem proveniencia; reformulada como materia reservada.",
+   "before": "As regras gerais sobre limites de endividamento e sobre responsabilidade na gestão fiscal, que valem para União, Estados e Municípios, estão em lei complementar editada com base neste artigo.",
+   "after": "As regras gerais sobre limites de endividamento e sobre gestão fiscal, válidas para os quatro níveis da Federação, são matéria da lei complementar prevista neste artigo, e não de leis de cada ente."
+  },
+  {
+   "target_id": "CF88:ART.164",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 1º proíbe o Banco Central de conceder, direta ou indiretamente, empréstimos ao Tesouro Nacional e a qualquer órgão ou entidade que não seja instituição financeira.",
+   "after": "O § 1º proíbe o Banco Central de emprestar, direta ou indiretamente, ao Tesouro Nacional ou a qualquer órgão ou entidade que não seja instituição financeira."
+  },
+  {
+   "target_id": "CF88:ART.164-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "conduzam suas políticas fiscais para manter a dívida pública em níveis sustentáveis, na forma da lei complementar do art. 163, VIII.",
+   "after": "conduzam suas políticas fiscais de modo que a dívida pública permaneça em níveis sustentáveis, conforme a lei complementar do art. 163, VIII."
+  },
+  {
+   "target_id": "CF88:ART.164-A",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "O artigo transforma a sustentabilidade da dívida em dever de todos os entes.",
+   "after": "O artigo transforma a sustentabilidade da dívida em dever da União, dos Estados, do Distrito Federal e dos Municípios."
+  },
+  {
+   "target_id": "CF88:ART.165",
+   "section": "atencao",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao sobre aplicacao aos demais entes (simetria) sem base no texto.",
+   "before": "Muitas regras do artigo valem para a União e se aplicam aos demais entes conforme suas Constituições e leis.",
+   "after": "Várias regras se referem expressamente à União, como indica o § 13."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.2",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Exigencia atribuida ao texto.",
+   "before": "e fixa as metas fiscais, que precisam ser compatíveis com uma dívida sustentável.",
+   "after": "e fixa as metas fiscais, que o texto liga a uma trajetória sustentável da dívida."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elemento \"fundacoes instituidos\" sem traco.",
+   "before": "O § 5º determina que a lei orçamentária anual compreenda três orçamentos: o fiscal, dos Poderes da União, seus fundos, órgãos e entidades da administração direta e indireta, inclusive fundações mantidas pelo poder público; o de investimento das empresas em que a União detenha, direta ou indiretamente, a maioria do capital com direito a voto; e o da seguridade social, com as entidades e órgãos a ela vinculados e os fundos e fundações mantidos pelo poder público.",
+   "after": "O § 5º determina que a lei orçamentária anual compreenda três orçamentos. O fiscal abrange os Poderes da União, seus fundos, órgãos e entidades, da administração direta e da indireta, inclusive as fundações instituídas e mantidas pelo poder público. O de investimento abrange as empresas em que a União detenha, direta ou indiretamente, a maioria do capital com direito a voto. O da seguridade social abrange as entidades e órgãos a ela vinculados, além dos fundos e fundações instituídos e mantidos pelo poder público."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.8",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 8º proíbe que a lei orçamentária anual tenha dispositivo estranho à previsão da receita e à fixação da despesa. A proibição não alcança a autorização para abrir créditos suplementares e para contratar operações de crédito, ainda que por antecipação de receita, nos termos da lei.",
+   "after": "O § 8º proíbe que a lei orçamentária anual traga dispositivo que não trate de prever a receita e fixar a despesa. A proibição não alcança a autorização para abrir créditos suplementares e para contratar operações de crédito, ainda que por antecipação de receita, nos termos da lei."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.10",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O § 10 estabelece que a administração tem o dever de executar as programações orçamentárias, adotando os meios e as medidas necessários, com o propósito declarado de garantir a efetiva entrega de bens e serviços à sociedade. O § 11 determina que esse dever, nos termos da lei de diretrizes orçamentárias, se subordina às regras constitucionais e legais de metas fiscais e limites de despesa, não impede cancelamentos necessários à abertura de créditos adicionais, não se aplica a impedimentos técnicos justificados e alcança apenas as despesas primárias discricionárias.",
+   "after": "O § 10 impõe à administração o dever de executar as programações do orçamento, com os meios e medidas necessários, tendo como propósito declarado a efetiva entrega de bens e serviços à sociedade. O § 11 limita esse dever, nos termos da lei de diretrizes orçamentárias. Ele se subordina ao cumprimento das regras constitucionais e legais de metas fiscais e limites de despesa e não impede cancelamentos necessários à abertura de créditos adicionais. Também não se aplica a impedimentos técnicos justificados e alcança apenas as despesas primárias discricionárias."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.10",
+   "section": "o_que_significa",
+   "category": "INTERPRETACAO_COMO_REGRA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Inferencia retirada.",
+   "before": ", e não as obrigatórias, como salários e aposentadorias, que já seguem regras próprias.",
+   "after": ", e não as obrigatórias, como salários e aposentadorias."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Na primeira, a emenda é compatível com o plano plurianual e com a lei de diretrizes orçamentárias e indica os recursos necessários,",
+   "after": "Na primeira, a emenda respeita o plano plurianual e a lei de diretrizes orçamentárias e indica os recursos necessários,"
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.9",
+   "section": "o_que_diz",
+   "category": "NUMERO",
+   "detector": "NUMBER_NOT_IN_TEXT",
+   "reason": "Percentual com decimal lido de forma divergente; remissao aos percentuais do texto.",
+   "before": "O § 9º-A divide esse limite: 1,55% para as emendas de Deputados e 0,45% para as de Senadores.",
+   "after": "O § 9º-A divide esse limite entre as emendas de Deputados e as de Senadores, nos percentuais que indica, com a maior parte para os Deputados."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.9",
+   "section": "atencao",
+   "category": "CONTRATO_DO_MOTOR",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Numero de acao de controle no corpo; mantido apenas na camada externa.",
+   "before": "Os parágrafos têm anotação de controle de constitucionalidade na fonte canônica (Vide ADI 7697).",
+   "after": "Os parágrafos têm anotação de controle de constitucionalidade na fonte canônica."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "section": "o_que_significa",
+   "category": "EXCECAO_FORA_DO_TEXTO",
+   "detector": "EXCEPTION_NOT_IN_TEXT",
+   "reason": "\"excecao\" e regra geral nao declaradas no texto.",
+   "before": "Em regra, o Executivo decide o ritmo de execução do orçamento. Para as emendas individuais e de bancada, o texto cria uma exceção: a execução é obrigatória, dentro dos limites.",
+   "after": "Para as emendas individuais e de bancada, o texto torna a execução obrigatória, dentro dos limites."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Exigencia atribuida ao texto.",
+   "before": "E a execução precisa ser equitativa, sem favorecer parlamentares por critério de autoria.",
+   "after": "E o texto exige execução equitativa, que atenda às emendas independentemente da autoria."
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Numero de acao no corpo retirado; afirmacao sobre conteudo da jurisprudencia (transparencia e rastreabilidade) sem proveniencia substituida.",
+   "before": "O regime das emendas impositivas tem anotação de controle de constitucionalidade na fonte canônica (Vide ADI 7697). Requisitos de transparência e rastreabilidade não devem ser deduzidos apenas do texto e estão na camada JURISPRUDÊNCIA.",
+   "after": "O regime das emendas impositivas tem anotação de controle de constitucionalidade na fonte canônica. O alcance atual dessas regras depende do resultado desse controle e não deve ser deduzido apenas do texto; a conferência fica na camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.166-A",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Numero de acao no corpo retirado; afirmacao sobre conteudo da jurisprudencia sem proveniencia substituida.",
+   "before": "O artigo tem anotação de controle de constitucionalidade na fonte canônica (Vide ADI 7697). Exigências de transparência e de fiscalização dessas transferências não devem ser deduzidas apenas do texto e estão na camada JURISPRUDÊNCIA.",
+   "after": "O artigo tem anotação de controle de constitucionalidade na fonte canônica. O alcance atual dessas transferências depende do resultado desse controle e não deve ser deduzido apenas do texto; a conferência fica na camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O fiscal abrange os Poderes da União, seus fundos, órgãos e entidades, da administração direta e da indireta,",
+   "after": "O fiscal abrange os Poderes da União e seus fundos, órgãos e entidades, tanto da administração direta quanto da indireta,"
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.8",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e para contratar operações de crédito, ainda que por antecipação de receita, nos termos da lei.",
+   "after": "e para contratar operações de crédito, inclusive por antecipação de receita, conforme a lei."
+  },
+  {
+   "target_id": "CF88:ART.165:PAR.10",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "Ele se subordina ao cumprimento das regras constitucionais e legais de metas fiscais e limites de despesa",
+   "after": "Ele se subordina ao cumprimento de normas constitucionais e legais que estabeleçam metas fiscais ou limites de despesa"
+  },
+  {
+   "target_id": "CF88:ART.166",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Exigencia atribuida ao texto.",
+   "before": "Os parlamentares podem apresentar emendas, mas com limites: precisam ser compatíveis com o planejamento e indicar de onde vem o dinheiro.",
+   "after": "Os parlamentares podem apresentar emendas, mas com limites: o texto exige compatibilidade com o planejamento e a indicação de onde vem o dinheiro."
+  },
+  {
+   "target_id": "CF88:ART.166",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "das condições para aprovar emendas, da mensagem do Presidente",
+   "after": "das condições para aprovar emendas. Também tratam da mensagem do Presidente"
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.3",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "e indica os recursos necessários, que só podem vir da anulação de outras despesas,",
+   "after": "e indica os recursos necessários. Esses recursos só podem vir da anulação de outras despesas,"
+  },
+  {
+   "target_id": "CF88:ART.166-A",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "LAW_DEPENDENCY_OMITTED",
+   "reason": "Referencia a lei orcamentaria explicitada.",
+   "before": "O art. 166-A permite que as emendas individuais impositivas destinem recursos",
+   "after": "O art. 166-A permite que as emendas individuais impositivas ao projeto de lei orçamentária anual destinem recursos"
+  },
+  {
+   "target_id": "CF88:ART.166-A",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "\"objetivo\" reformulado pelo texto.",
+   "before": "Na transferência com finalidade definida, o recurso segue amarrado ao objetivo da emenda.",
+   "after": "Na transferência com finalidade definida, o recurso segue vinculado à programação da emenda."
+  },
+  {
+   "target_id": "CF88:ART.167",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Marcador de ressalva reconhecivel.",
+   "before": "vincular receita de impostos, com ressalvas;",
+   "after": "vincular receita de impostos, ressalvadas as exceções do inciso IV;"
+  },
+  {
+   "target_id": "CF88:ART.167:INC.IV",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso IV proíbe vincular a receita de impostos a órgão, fundo ou despesa. Ficam ressalvadas a repartição de impostos prevista nos arts. 158 e 159; a destinação de recursos para ações e serviços públicos de saúde, para manutenção e desenvolvimento do ensino e para atividades da administração tributária, conforme os arts. 198, § 2º, 212 e 37, XXII; a garantia às operações de crédito por antecipação de receita do art. 165, § 8º; e o § 4º deste artigo.",
+   "after": "O inciso IV proíbe vincular a receita de impostos a órgão, fundo ou despesa. Ficam ressalvadas a repartição de impostos prevista nos arts. 158 e 159; a destinação de recursos para a saúde, para a manutenção e o desenvolvimento do ensino e para as atividades da administração tributária, conforme, respectivamente, os arts. 198, § 2º, 212 e 37, XXII; a garantia às operações de crédito por antecipação de receita do art. 165, § 8º; e o § 4º deste artigo."
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 1º proíbe iniciar investimento cuja execução ultrapasse um exercício financeiro sem prévia inclusão no plano plurianual ou sem lei que autorize a inclusão, sob pena de crime de responsabilidade.",
+   "after": "O § 1º proíbe começar investimento que dure mais de um exercício financeiro se ele não tiver sido incluído antes no plano plurianual ou se não houver lei autorizando essa inclusão. A conduta contrária é crime de responsabilidade."
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 3º admite a abertura de crédito extraordinário somente para atender a despesas imprevisíveis e urgentes, como as decorrentes de guerra, comoção interna ou calamidade pública, observado o art. 62.",
+   "after": "O § 3º só admite crédito extraordinário para despesas que sejam ao mesmo tempo imprevisíveis e urgentes, a exemplo das causadas por guerra, comoção interna ou calamidade pública, observado o art. 62."
+  },
+  {
+   "target_id": "CF88:ART.167:PAR.7",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 7º proíbe que a lei imponha ou transfira encargo financeiro decorrente da prestação de serviço público, inclusive despesas de pessoal,",
+   "after": "O § 7º proíbe que a lei imponha ou transfira encargo financeiro gerado pela prestação de serviço público, inclusive despesas de pessoal,"
+  },
+  {
+   "target_id": "CF88:ART.167-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O art. 167-A permite que, quando a relação entre despesas correntes e receitas correntes superar 95% em doze meses, os Poderes Executivo, Legislativo e Judiciário,",
+   "after": "O art. 167-A trata da situação em que, em doze meses, a relação entre despesas correntes e receitas correntes supera 95% nos Estados, no Distrito Federal e nos Municípios. Nesse caso, os Poderes Executivo, Legislativo e Judiciário,"
+  },
+  {
+   "target_id": "CF88:ART.167-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Ajuste da frase dividida.",
+   "before": "e a Defensoria Pública dos Estados, do Distrito Federal e dos Municípios apliquem",
+   "after": "e a Defensoria Pública do ente podem aplicar"
+  },
+  {
+   "target_id": "CF88:ART.167-A",
+   "section": "exemplo_pratico",
+   "category": "NUMERO",
+   "detector": "EXAMPLE_NUMBER",
+   "reason": "Numero do exemplo sem base no texto.",
+   "before": "chegaram a 96% das receitas correntes.",
+   "after": "passaram de 95% das receitas correntes."
+  },
+  {
+   "target_id": "CF88:ART.167-A:PAR.1",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "EXTRAPOLATION_NUMBER",
+   "reason": "Numero do caput citado fora do escopo do bloco.",
+   "before": "O bloco permite agir antes de chegar aos 95%.",
+   "after": "O bloco permite agir antes de atingir o percentual do caput."
+  },
+  {
+   "target_id": "CF88:ART.167-A:PAR.1",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "EXTRAPOLATION_NUMBER",
+   "reason": "Numero do caput citado fora do escopo do bloco.",
+   "before": "Entre 85% e 95%, o próprio chefe",
+   "after": "Acima de 85%, sem chegar ao percentual do caput, o próprio chefe"
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O art. 167-B determina que, durante o estado de calamidade pública de âmbito nacional decretado pelo Congresso Nacional por iniciativa privativa do Presidente da República, a União adote regime extraordinário fiscal, financeiro e de contratações para atender às necessidades decorrentes, somente naquilo em que a urgência for incompatível com o regime regular, nos termos dos arts. 167-C a 167-G.",
+   "after": "O art. 167-B trata da calamidade pública de âmbito nacional, decretada pelo Congresso Nacional por iniciativa privativa do Presidente da República. Enquanto ela vigorar, a União deve adotar regime extraordinário fiscal, financeiro e de contratações para atender às necessidades dela decorrentes. Esse regime vale somente naquilo em que a urgência for incompatível com o regime regular, nos termos dos arts. 167-C a 167-G."
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Exigencias atribuidas ao texto; condicao reformulada.",
+   "before": "Há requisitos claros. A calamidade precisa ser nacional e decretada pelo Congresso, por iniciativa exclusiva do Presidente. E o regime extraordinário só se aplica onde a urgência não for compatível com o regime regular.",
+   "after": "O texto fixa requisitos: calamidade nacional, decretada pelo Congresso por iniciativa exclusiva do Presidente. E o regime extraordinário se limita ao que a urgência tornar incompatível com o regime regular."
+  },
+  {
+   "target_id": "CF88:ART.167-C",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O art. 167-C permite que o Poder Executivo federal, exclusivamente para enfrentar a calamidade pública e seus efeitos e durante a sua duração, adote processos simplificados",
+   "after": "O art. 167-C trata do Poder Executivo federal durante a calamidade. Com o propósito exclusivo de enfrentá-la e a seus efeitos, e enquanto ela durar, ele pode adotar processos simplificados"
+  },
+  {
+   "target_id": "CF88:ART.167-C",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"sempre\" retirado.",
+   "before": "Mesmo assim, deve haver competição entre os interessados sempre que possível.",
+   "after": "Mesmo assim, o texto pede competição entre os interessados quando possível."
+  },
+  {
+   "target_id": "CF88:ART.167-D",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O art. 167-D dispensa das limitações legais sobre criação, expansão ou aperfeiçoamento de ação governamental que aumente despesa e sobre concessão ou ampliação de benefício tributário com renúncia de receita as proposições legislativas e os atos do Executivo com propósito exclusivo de enfrentar a calamidade e suas consequências, com vigência e efeitos restritos à sua duração, desde que não impliquem despesa obrigatória de caráter continuado. O parágrafo único afasta, durante a calamidade nacional, o art. 195, § 3º.",
+   "after": "O art. 167-D trata das proposições legislativas e dos atos do Executivo feitos com o único propósito de enfrentar a calamidade e suas consequências, com vigência e efeitos limitados à sua duração. Se não implicarem despesa obrigatória de caráter continuado, eles ficam dispensados das limitações legais sobre ações governamentais que aumentem a despesa e sobre benefícios tributários que gerem renúncia de receita. O parágrafo único afasta, durante a calamidade nacional, o art. 195, § 3º."
+  },
+  {
+   "target_id": "CF88:ART.167-D",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Conteudo de lei de financas publicas sem proveniencia; exigencias atribuidas ao texto.",
+   "before": "Normalmente, a lei exige estimativas de impacto e compensações para criar despesas ou renúncias de receita. Na calamidade, essas exigências legais ficam dispensadas para medidas temporárias de enfrentamento.\nHá limites: a medida deve ter finalidade exclusiva de enfrentar a calamidade, durar apenas enquanto ela durar e não criar despesa obrigatória de caráter continuado.",
+   "after": "As limitações legais mencionadas no texto tratam do aumento de despesa e da renúncia de receita. Na calamidade, elas ficam dispensadas para medidas temporárias de enfrentamento.\nO texto fixa limites: finalidade exclusiva de enfrentar a calamidade, duração restrita à calamidade e ausência de despesa obrigatória de caráter continuado."
+  },
+  {
+   "target_id": "CF88:ART.167-D",
+   "section": "palavras_dificeis",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Definicao de lei externa retirada do glossario.",
+   "before": "\"explicacao\": \"despesa fixada por lei que se repete por mais de dois exercícios.\"",
+   "after": "\"explicacao\": \"despesa permanente, criada por lei ou ato, que continua depois do fim da calamidade.\""
+  },
+  {
+   "target_id": "CF88:ART.167-F",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "ficam dispensados, por todo o exercício financeiro,",
+   "after": "ficam dispensados, durante a integralidade do exercício financeiro,"
+  },
+  {
+   "target_id": "CF88:ART.167-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "em doze meses, a relação entre despesas correntes e receitas correntes supera 95%",
+   "after": "a relação entre despesas correntes e receitas correntes, medida em doze meses, passa de 95%"
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "a União deve adotar regime extraordinário fiscal, financeiro e de contratações para atender às necessidades dela decorrentes.",
+   "after": "a União deve adotar um regime extraordinário, nas áreas fiscal, financeira e de contratações, para atender às necessidades que ela gera."
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 167-B trata da calamidade pública de âmbito nacional, decretada pelo Congresso Nacional por iniciativa privativa do Presidente da República.",
+   "after": "O art. 167-B trata da calamidade pública que alcança todo o país, decretada pelo Congresso por iniciativa privativa do Presidente da República."
+  },
+  {
+   "target_id": "CF88:ART.168",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O art. 168 determina que os recursos das dotações orçamentárias dos órgãos dos Poderes Legislativo e Judiciário, do Ministério Público e da Defensoria Pública, incluídos os créditos suplementares e especiais, sejam entregues até o dia 20 de cada mês, em duodécimos, na forma da lei complementar do art. 165, § 9º. O § 1º proíbe transferir a fundos os recursos desses repasses. O § 2º manda restituir o saldo ao caixa único do Tesouro do ente ou deduzi-lo das primeiras parcelas do exercício seguinte.",
+   "after": "O art. 168 garante aos órgãos do Legislativo e do Judiciário, ao Ministério Público e à Defensoria Pública a entrega dos recursos de suas dotações orçamentárias, incluídos os créditos suplementares e especiais. A entrega é feita em duodécimos, até o dia 20 de cada mês, na forma da lei complementar do art. 165, § 9º. O § 1º proíbe transferir a fundos os recursos desses repasses. O § 2º manda restituir o saldo ao caixa único do Tesouro do ente ou deduzi-lo das primeiras parcelas do exercício seguinte."
+  },
+  {
+   "target_id": "CF88:ART.168",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Relacao causal (\"por isso\") nao declarada.",
+   "before": "O Executivo arrecada e administra o caixa, mas não pode controlar o funcionamento dos outros Poderes e órgãos autônomos segurando o dinheiro.\nPor isso, o artigo garante o repasse mensal,",
+   "after": "O Executivo arrecada e administra o caixa. O artigo garante aos outros Poderes e órgãos autônomos o repasse mensal,"
+  },
+  {
+   "target_id": "CF88:ART.169",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 169 proíbe que a despesa com pessoal ativo, inativo e pensionistas da União, dos Estados, do Distrito Federal e dos Municípios ultrapasse os limites fixados em lei complementar.",
+   "after": "O art. 169 proíbe que a União, os Estados, o Distrito Federal e os Municípios gastem com pessoal ativo, inativo e pensionistas acima dos limites fixados em lei complementar."
+  },
+  {
+   "target_id": "CF88:ART.169",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva do § 1º, II, omitida no resumo.",
+   "before": "Os parágrafos exigem dotação prévia e autorização na lei de diretrizes orçamentárias para aumentos e admissões,",
+   "after": "Os parágrafos exigem dotação prévia e autorização na lei de diretrizes orçamentárias para aumentos e admissões, ressalvadas as estatais quanto à autorização,"
+  },
+  {
+   "target_id": "CF88:ART.169",
+   "section": "exemplo_pratico",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Primeiro, corta pelo menos vinte por cento das despesas com cargos em comissão e funções de confiança;",
+   "after": "Primeiro, reduz em no mínimo vinte por cento o gasto com cargos em comissão e funções de confiança;"
+  },
+  {
+   "target_id": "CF88:ART.169:PAR.1",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "só podem ser feitos com prévia dotação orçamentária suficiente",
+   "after": "dependem de duas condições. A primeira é a prévia dotação orçamentária suficiente"
+  },
+  {
+   "target_id": "CF88:ART.169:PAR.1",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": " e com autorização específica na lei de diretrizes orçamentárias.",
+   "after": ". A segunda é a autorização específica na lei de diretrizes orçamentárias."
+  },
+  {
+   "target_id": "CF88:ART.170",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 170 estabelece que a ordem econômica, fundada na valorização do trabalho humano e na livre iniciativa, tem por fim assegurar a todos existência digna, conforme os ditames da justiça social. Ela observa os princípios da soberania nacional, da propriedade privada, da função social da propriedade, da livre concorrência, da defesa do consumidor, da defesa do meio ambiente, inclusive com tratamento diferenciado conforme o impacto ambiental, da redução das desigualdades regionais e sociais, da busca do pleno emprego e do tratamento favorecido para empresas de pequeno porte constituídas sob as leis brasileiras e com sede e administração no País.",
+   "after": "O art. 170 apoia a ordem econômica em dois fundamentos, a valorização do trabalho humano e a livre iniciativa, e lhe dá a finalidade de assegurar a todos existência digna, conforme os ditames da justiça social. Ela observa os princípios da soberania nacional, da propriedade privada, da função social da propriedade, da livre concorrência, da defesa do consumidor, da defesa do meio ambiente, inclusive com tratamento diferenciado conforme o impacto ambiental, da redução das desigualdades regionais e sociais, da busca do pleno emprego e do tratamento favorecido para empresas de pequeno porte constituídas sob as leis brasileiras e com sede e administração no País."
+  },
+  {
+   "target_id": "CF88:ART.170:PAR.UNICO",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O parágrafo único assegura a todos o livre exercício de qualquer atividade econômica, sem necessidade de autorização de órgãos públicos, salvo nos casos previstos em lei.",
+   "after": "O parágrafo único assegura a todos o livre exercício de qualquer atividade econômica, sem necessidade de autorização de órgãos públicos, exceto nos casos que a lei indicar."
+  },
+  {
+   "target_id": "CF88:ART.173",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida; lista marcada como seletiva.",
+   "before": "O art. 173 permite que o Estado explore diretamente atividade econômica somente quando necessário aos imperativos da segurança nacional ou a relevante interesse coletivo, conforme definidos em lei, ressalvados os casos previstos na Constituição. Os parágrafos tratam do estatuto jurídico das empresas estatais, da proibição de privilégios fiscais não extensivos ao setor privado, das relações da empresa pública com o Estado e a sociedade, da repressão ao abuso do poder econômico e da responsabilidade da pessoa jurídica por atos contra a ordem econômica e a economia popular.",
+   "after": "O art. 173 só permite que o Estado explore diretamente atividade econômica quando isso for necessário à segurança nacional ou a relevante interesse coletivo, nos termos definidos em lei, ressalvados os casos previstos na Constituição. Os parágrafos tratam, entre outros temas, do estatuto jurídico das empresas estatais e da proibição de privilégios fiscais não extensivos ao setor privado. Também tratam das relações da empresa pública com o Estado e a sociedade, da repressão ao abuso do poder econômico e da responsabilidade da pessoa jurídica por atos contra a ordem econômica e a economia popular."
+  },
+  {
+   "target_id": "CF88:ART.173:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 1º determina que a lei estabeleça o estatuto jurídico da empresa pública, da sociedade de economia mista e de suas subsidiárias que explorem atividade econômica de produção ou comercialização de bens ou de prestação de serviços. A lei deve tratar da função social e das formas de fiscalização, da sujeição ao regime jurídico das empresas privadas, inclusive quanto a direitos e obrigações civis, comerciais, trabalhistas e tributários, da licitação e contratação observados os princípios da administração pública, dos conselhos de administração e fiscal com participação de minoritários e dos mandatos, avaliação e responsabilidade dos administradores.",
+   "after": "O § 1º determina que a lei crie o estatuto jurídico das empresas públicas, das sociedades de economia mista e de suas subsidiárias que exploram atividade econômica, seja produzindo ou comercializando bens, seja prestando serviços. O estatuto deve tratar da função social e das formas de fiscalização pelo Estado e pela sociedade; da sujeição ao regime das empresas privadas, inclusive quanto a direitos e obrigações civis, comerciais, trabalhistas e tributários; da licitação e contratação, observados os princípios da administração pública; dos conselhos de administração e fiscal, com participação de minoritários; e dos mandatos, avaliação e responsabilidade dos administradores."
+  },
+  {
+   "target_id": "CF88:ART.174",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "exerce, na forma da lei, as funções de fiscalização, incentivo e planejamento,",
+   "after": "fiscaliza, incentiva e planeja, na forma da lei,"
+  },
+  {
+   "target_id": "CF88:ART.175",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO",
+   "detector": "ABSOLUTE_CLAIM",
+   "reason": "\"sempre\" reformulado sem perder a exigencia do texto.",
+   "before": "diretamente ou sob regime de concessão ou permissão, sempre por meio de licitação.",
+   "after": "diretamente ou sob regime de concessão ou permissão; nesses regimes, o texto exige licitação em todos os casos."
+  },
+  {
+   "target_id": "CF88:ART.175",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O parágrafo único determina que a lei disponha sobre o regime das empresas concessionárias e permissionárias, o caráter especial de seus contratos e da prorrogação, as condições de caducidade, fiscalização e rescisão,",
+   "after": "O parágrafo único determina que a lei disponha sobre o regime das empresas concessionárias e permissionárias, o caráter especial de seus contratos e da prorrogação e as condições de caducidade, fiscalização e rescisão. A lei também trata"
+  },
+  {
+   "target_id": "CF88:ART.175",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Ajuste da frase dividida.",
+   "before": " os direitos dos usuários, a política tarifária e a obrigação de manter serviço adequado.",
+   "after": " dos direitos dos usuários, da política tarifária e da obrigação de manter serviço adequado."
+  },
+  {
+   "target_id": "CF88:ART.175",
+   "section": "palavras_dificeis",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Caracteristica legal (precariedade) retirada do glossario.",
+   "before": "\"explicacao\": \"delegação de serviço público, em regra mais precária que a concessão.\"",
+   "after": "\"explicacao\": \"delegação da prestação de serviço público, com regime próprio definido em lei.\""
+  },
+  {
+   "target_id": "CF88:ART.167-B",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Esse regime vale somente naquilo em que a urgência for incompatível com o regime regular,",
+   "after": "Esse regime vale apenas no que a urgência tornar incompatível com o regime comum,"
+  },
+  {
+   "target_id": "CF88:ART.170",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "e lhe dá a finalidade de assegurar a todos existência digna, conforme os ditames da justiça social. Ela observa os princípios da soberania nacional, da propriedade privada, da função social da propriedade, da livre concorrência, da defesa do consumidor,",
+   "after": "com a finalidade de garantir existência digna a todos, segundo a justiça social. Seus princípios são a soberania nacional, a propriedade privada e sua função social, a livre concorrência e a defesa do consumidor. Também são princípios"
+  },
+  {
+   "target_id": "CF88:ART.170",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Ajuste da frase dividida.",
+   "before": "da defesa do meio ambiente, inclusive com tratamento diferenciado conforme o impacto ambiental, da redução das desigualdades regionais e sociais, da busca do pleno emprego e do tratamento favorecido para empresas de pequeno porte constituídas sob as leis brasileiras e com sede e administração no País.",
+   "after": "a defesa do meio ambiente, inclusive com tratamento diferenciado conforme o impacto ambiental, a redução das desigualdades regionais e sociais, a busca do pleno emprego e o tratamento favorecido para empresas de pequeno porte constituídas sob as leis brasileiras e com sede e administração no País."
+  },
+  {
+   "target_id": "CF88:ART.170",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "EXCEPTION_OR_RESSALVA_DROPPED",
+   "reason": "\"todos\" lido como generalizacao; reformulado pelo texto.",
+   "before": "deve servir à existência digna de todos",
+   "after": "deve servir à existência digna, conforme a justiça social"
+  },
+  {
+   "target_id": "CF88:ART.174",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "sendo o planejamento determinante para o setor público e indicativo para o setor privado.",
+   "after": "e o planejamento é obrigatório para o setor público e apenas indicativo para o privado."
+  },
+  {
+   "target_id": "CF88:ART.173:PAR.1",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Elemento sem traco.",
+   "before": "da licitação e contratação, observados os princípios da administração pública;",
+   "after": "da licitação e contratação de obras, serviços, compras e alienações, observados os princípios da administração pública;"
+  },
+  {
+   "target_id": "CF88:ART.175",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "nesses regimes, o texto exige licitação em todos os casos.",
+   "after": "para a concessão e para a permissão, o texto exige licitação."
+  },
+  {
+   "target_id": "CF88:ART.173:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "da licitação e contratação de obras, serviços, compras e alienações, observados os princípios da administração pública;",
+   "after": "das licitações e contratações de obras, serviços, compras e alienações, com respeito aos princípios da administração pública;"
+  },
+  {
+   "target_id": "CF88:ART.170",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "a redução das desigualdades regionais e sociais, a busca do pleno emprego e o tratamento favorecido",
+   "after": "e a redução das desigualdades regionais e sociais. Completam a lista a busca do pleno emprego e o tratamento favorecido"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "MACRO_07_D",
+ "articles_range": "151-175",
+ "stats": {
+  "articles": 38,
+  "targets_evaluated": 553,
+  "targets_current": 525,
+  "select": 79,
+  "skip": 446,
+  "excluded": {
+   "EXCLUDED_REVOKED": 11,
+   "EXCLUDED_HISTORICAL": 17
+  },
+  "new_explanations": 79,
+  "pending_in_triage": 0,
+  "human_approved_t1": 79,
+  "reused": 0,
+  "roles": {},
+  "legal_risk": {
+   "LOW": 0,
+   "MEDIUM": 0,
+   "HIGH": 0
+  },
+  "verification_complexity": {
+   "SIMPLE": 0,
+   "STRUCTURED": 0,
+   "EXTERNAL": 0
+  },
+  "queues": {
+   "A_CLEAN_LOW": 0,
+   "B_CLEAN_MEDIUM": 0,
+   "C_QUICK_REVIEW": 0,
+   "D_FULL_HUMAN_REVIEW": 0,
+   "E_HARD_FAIL": 0
+  },
+  "jurisprudence": {}
+ },
+ "critic": {
+  "corrections": 156,
+  "by_category": {
+   "CONTRATO_DO_MOTOR": 2,
+   "COPIA_DA_LEI_SECA": 56,
+   "EXCECAO_FORA_DO_TEXTO": 5,
+   "FATO_EXTERNO": 11,
+   "FRASE_LONGA": 17,
+   "GENERALIZACAO": 9,
+   "GLOSSARIO": 5,
+   "HISTORICO_NAO_VERIFICADO": 2,
+   "INTERPRETACAO_COMO_REGRA": 2,
+   "JURISPRUDENCIA_VELADA": 2,
+   "LISTA_INCOMPLETA": 12,
+   "MODALIDADE": 2,
+   "NUMERO": 7,
+   "REMISSAO": 1,
+   "RESSALVA_OMITIDA": 7,
+   "TELEOLOGIA": 16
+  }
+ },
+ "checks": {
+  "engine_contract": "PASS (production_batch.validate_corpus)",
+  "lei_seca_divergence": [],
+  "hard_fail": [],
+  "new_not_pending": [],
+  "stale": [],
+  "transition_without_evidence": [],
+  "transition_evidence_unused": [],
+  "judicial_review_unclassified": [],
+  "approved_by_recorded_round": 249,
+  "status": "PASS",
+  "scope": "lote acumulado ate este sub-bloco"
+ },
+ "determinism": "ver DETERMINISM_EVIDENCE.json (builds completos comparados byte a byte)",
+ "human_approved_t1_granted": 79,
+ "status": "PASS"
+}

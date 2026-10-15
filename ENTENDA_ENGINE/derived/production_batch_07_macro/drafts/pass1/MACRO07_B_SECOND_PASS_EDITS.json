@@ -1,0 +1,119 @@
+[
+ {
+  "target": "CF88:ART.114",
+  "section": "external_layer_notes",
+  "before": "Observação estrutural: no texto consolidado do runtime, o conteúdo do inciso VIII aparece anexado ao inciso VII; a separação deve ser conferida na fonte oficial.",
+  "after": "",
+  "category": "FONTE_SANEADA",
+  "reason": "A anomalia de segmentacao do art. 114, VII/VIII foi corrigida na camada tecnica (correcao de transcricao aprovada SRC-CORR-CF88-579494-16434817-ART114-INC-VIII aplicada pelo parser; errata de status): o runtime agora tem os incisos VII e VIII separados.",
+  "detector": "SOURCE_SANITY"
+ },
+ {
+  "target": "CF88:ART.102:INC.I",
+  "section": "o_que_diz",
+  "before": "Completam a lista habeas corpus, mandado de segurança e habeas data contra certos atos",
+  "after": "Aparecem também, entre outros, habeas corpus, mandado de segurança e habeas data contra certos atos",
+  "category": "ENUMERACAO_INCOMPLETA",
+  "reason": "A lista tem outras alineas (j, m, n, o...).",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.102:INC.I",
+  "section": "exemplo_pratico",
+  "before": " e o conflito ameaça a relação federativa",
+  "after": "",
+  "category": "JURISPRUDENCIA_VELADA",
+  "reason": "A alinea f nao exige ameaca a relacao federativa; o filtro e interpretativo. Trecho retirado (correcao segura).",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.103-A:PAR.3",
+  "section": "o_que_significa",
+  "before": "e manda que outro seja feito, agora de acordo com o enunciado",
+  "after": "e manda que outro seja feito, com ou sem a aplicação do enunciado, conforme o caso",
+  "category": "ABSOLUTO",
+  "reason": "O § 3º preve os dois casos.",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.109:PAR.1",
+  "section": "o_que_significa",
+  "before": "Os dois parágrafos protegem a parte que litiga contra a União.",
+  "after": "Os dois parágrafos definem onde são propostas as causas de que a União participa.",
+  "category": "TELEOLOGIA",
+  "reason": "Os §§ 1º e 2º so fixam o foro.",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.109:PAR.1",
+  "section": "o_que_significa",
+  "before": "Com isso, o cidadão pode se defender ou reclamar um direito sem ir obrigatoriamente à capital federal.",
+  "after": "Assim, a causa pode tramitar na seção judiciária ligada ao domicílio da pessoa, e não necessariamente na capital federal.",
+  "category": "TELEOLOGIA",
+  "reason": "Mesma frase de finalidade, reescrita como consequencia do texto.",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.109:PAR.3",
+  "section": "o_que_significa",
+  "before": "Os parágrafos tratam de uma delegação de competência para facilitar o acesso do segurado.",
+  "after": "Os parágrafos tratam de uma delegação de competência à Justiça estadual, que depende de lei.",
+  "category": "TELEOLOGIA",
+  "reason": "O § 3º nao declara finalidade.",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.109:PAR.5",
+  "section": "o_que_significa",
+  "before": "o Brasil responde perante outros países e organismos se não cumprir tratados de direitos humanos",
+  "after": "assegurar que o Brasil cumpra as obrigações assumidas em tratados internacionais de direitos humanos de que é parte",
+  "category": "TELEOLOGIA",
+  "reason": "A finalidade declarada e assegurar o cumprimento das obrigacoes dos tratados.",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.111-A",
+  "section": "o_que_diz",
+  "before": "entre juízes de carreira indicados pelo próprio tribunal",
+  "after": "entre juízes de carreira indicados pelo próprio Tribunal Superior do Trabalho",
+  "category": "REGRA_INVENTADA",
+  "reason": "A indicacao e do proprio TST (inciso II).",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.112",
+  "section": "o_que_significa",
+  "before": "Para não deixar o trabalhador sem acesso, o artigo permite",
+  "after": "O artigo permite",
+  "category": "TELEOLOGIA",
+  "reason": "O art. 112 nao declara finalidade.",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.121",
+  "section": "o_que_significa",
+  "before": "os juízes atuam por períodos limitados",
+  "after": "os juízes dos tribunais eleitorais atuam por períodos limitados",
+  "category": "PAI_CONTRADIZ_FILHO",
+  "reason": "O limite do § 2º vale para os juizes dos tribunais eleitorais (explicacao propria do § 2º).",
+  "detector": "SECOND_PASS_CRITIC"
+ },
+ {
+  "target": "CF88:ART.124",
+  "section": "atencao",
+  "before": "Quando um civil pode ser julgado pela Justiça Militar da União não deve ser deduzido apenas do texto: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.",
+  "after": "Quando um civil pode ser julgado pela Justiça Militar da União depende da lei e é tema da camada JURISPRUDÊNCIA.",
+  "category": "JURISPRUDENCIA_RECLASSIFICADA",
+  "reason": "O corpo afirma so o texto (crimes militares definidos em lei); o julgamento de civis e extensao: CONTEXT_ONLY.",
+  "detector": "SECOND_PASS_JURIS"
+ },
+ {
+  "target": "CF88:ART.125:PAR.2",
+  "section": "atencao",
+  "before": "O uso de normas da Constituição Federal como parâmetro nesse controle estadual não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.",
+  "after": "O uso de normas da Constituição Federal como parâmetro nesse controle estadual é tema da camada JURISPRUDÊNCIA.",
+  "category": "JURISPRUDENCIA_RECLASSIFICADA",
+  "reason": "O corpo descreve so o parametro estadual do texto: CONTEXT_ONLY.",
+  "detector": "SECOND_PASS_JURIS"
+ }
+]

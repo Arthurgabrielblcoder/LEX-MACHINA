@@ -1,0 +1,278 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "C",
+ "policy": "SEGUNDO PASSE: revisao critica adicional (teleologia, regra inventada, absolutos, pai x filho, numero ilustrativo, enumeracao incompleta, remissao errada, lei infraconstitucional como CF, jurisprudencia velada, emenda recente, transicao ativa, exemplo que cria requisito) e saneamento de fonte. Correcao automatica so quando segura; o que exige interpretacao juridica externa vai para C/D. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.127",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O caput nao opoe o MP ao governo.",
+   "before": "Sua missão é defender a sociedade, e não um governo.",
+   "after": "O texto diz quais são suas tarefas."
+  },
+  {
+   "target_id": "CF88:ART.127:PAR.1",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Leitura doutrinaria/jurisprudencial apresentada como regra do texto.",
+   "before": "A unidade se refere a cada Ministério Público, e não ao conjunto de todos eles.",
+   "after": "O texto não diz se a unidade vale para cada Ministério Público separadamente ou para o conjunto deles; esse alcance é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.128",
+   "section": "exemplo_pratico",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A investigacao direta pelo MP e tema da camada JURISPRUDENCIA (art. 129); a apuracao cabe a policia federal (art. 144, § 1º, I).",
+   "before": "Um crime contra uma autarquia federal é investigado pelo Ministério Público Federal.",
+   "after": "Um crime contra uma autarquia federal leva à atuação do Ministério Público Federal."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 5º lista as garantias sem declarar finalidade.",
+   "before": "As garantias protegem o membro do Ministério Público para que possa atuar sem medo de retaliação.",
+   "after": "O texto dá garantias ao membro do Ministério Público."
+  },
+  {
+   "target_id": "CF88:ART.128:PAR.5",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Finalidade nao declarada.",
+   "before": "As vedações protegem a imparcialidade.",
+   "after": "O texto também impõe vedações aos membros."
+  },
+  {
+   "target_id": "CF88:ART.129:INC.IX",
+   "section": "o_que_significa",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Os arts. 131 e 132 nao tratam dos Municipios.",
+   "before": "Quem defende a União, os Estados e os Municípios em juízo e lhes dá pareceres são as procuradorias (arts. 131 e 132)",
+   "after": "Quem defende a União, os Estados e o Distrito Federal em juízo e lhes dá orientação jurídica é a advocacia pública (arts. 131 e 132)"
+  },
+  {
+   "target_id": "CF88:ART.131",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 2º exige concurso para o ingresso nas classes iniciais.",
+   "before": "Os demais integrantes ingressam por concurso público.",
+   "after": "O ingresso nas classes iniciais das carreiras da instituição é feito por concurso público de provas e títulos."
+  },
+  {
+   "target_id": "CF88:ART.134",
+   "section": "o_que_significa",
+   "category": "LEI_COMO_CONSTITUICAO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "\"Solucao extrajudicial de conflitos\" vem da lei complementar; o caput fala em defesa judicial e extrajudicial e promocao dos direitos humanos.",
+   "before": "inclui orientação jurídica, solução extrajudicial de conflitos e defesa de direitos coletivos",
+   "after": "inclui orientação jurídica, promoção dos direitos humanos e defesa extrajudicial de direitos individuais e coletivos"
+  },
+  {
+   "target_id": "CF88:ART.134:PAR.2",
+   "section": "exemplo_pratico",
+   "category": "JURISPRUDENCIA_VELADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O limite ao corte pelo Executivo nao esta no § 2º; retirado e substituido pela remissao do proprio texto.",
+   "before": "e a encaminha dentro dos limites da lei de diretrizes orçamentárias, sem que a Secretaria de Governo possa cortá-la livremente.",
+   "after": "dentro dos limites da lei de diretrizes orçamentárias e a envia observando a remissão do parágrafo ao art. 99, § 2º."
+  },
+  {
+   "target_id": "CF88:ART.136",
+   "section": "atencao",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 3º, I, preve prisao por crime contra o Estado fora da lista do § 1º (harmonizacao com o texto).",
+   "before": "As medidas permitidas são apenas as do § 1º, com explicação própria.",
+   "after": "As medidas coercitivas do decreto são escolhidas entre as do § 1º, e o § 3º trata das prisões feitas durante a medida; ambos têm explicação própria."
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.1",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Ignorava o § 3º, I (harmonizacao com o texto).",
+   "before": "Fora delas, nenhuma outra restrição de direitos é autorizada pelo estado de defesa.",
+   "after": "As medidas coercitivas do decreto ficam limitadas a essa lista; a prisão durante o estado de defesa segue as regras próprias do § 3º."
+  },
+  {
+   "target_id": "CF88:ART.136:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O inciso II exige a declaracao sem declarar finalidade.",
+   "before": "permite verificar depois se houve maus-tratos",
+   "after": "registra a condição do preso no momento da autuação"
+  },
+  {
+   "target_id": "CF88:ART.138",
+   "section": "o_que_significa",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Conclusao nao decorre do texto; so a ausencia da restricao do art. 136 e textual.",
+   "before": "o que mostra que o estado de sítio pode alcançar áreas mais amplas",
+   "after": "e, diferentemente do art. 136, o texto não limita o estado de sítio a locais restritos e determinados"
+  },
+  {
+   "target_id": "CF88:ART.139",
+   "section": "o_que_significa",
+   "category": "ENUMERACAO_INCOMPLETA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A lista vale para todo o art. 137, I.",
+   "before": "Na comoção grave, a lista de medidas é fechada.",
+   "after": "No estado de sítio do art. 137, I (comoção grave ou ineficácia do estado de defesa), a lista de medidas é fechada."
+  },
+  {
+   "target_id": "CF88:ART.140",
+   "section": "exemplo_pratico",
+   "category": "EXEMPLO_CRIA_REQUISITO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O art. 140 so da a Comissao a tarefa de acompanhar e fiscalizar.",
+   "before": "Ela pode pedir explicações ao executor das medidas e levar o caso ao Congresso.",
+   "after": "Ela registra o fato no seu trabalho de acompanhamento e fiscalização das medidas."
+  },
+  {
+   "target_id": "CF88:ART.144",
+   "section": "o_que_significa",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Art. 21, XIV: a Uniao organiza e mantem as forcas do DF.",
+   "before": "Os Estados e o Distrito Federal mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais e distrital.",
+   "after": "Os Estados mantêm as polícias civis, as polícias militares, os bombeiros militares e as polícias penais estaduais; as forças correspondentes do Distrito Federal são organizadas e mantidas pela União (art. 21, XIV)."
+  },
+  {
+   "target_id": "CF88:ART.145",
+   "section": "palavras_dificeis",
+   "category": "LEI_COMO_CONSTITUICAO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "A ligacao com a valorizacao do imovel vem da legislacao tributaria, nao do texto.",
+   "before": "tributo cobrado de quem teve imóvel valorizado por obra pública",
+   "after": "tributo decorrente de obra pública"
+  },
+  {
+   "target_id": "CF88:ART.146:PAR.1",
+   "section": "exemplo_pratico",
+   "category": "REGRA_INVENTADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O § 3º, II, limita o credito aos tributos dos arts. 156-A e 195, V.",
+   "before": "essa empresa pode aproveitar crédito equivalente ao valor recolhido pela padaria",
+   "after": "essa empresa pode aproveitar crédito dos tributos dos arts. 156-A e 195, V, no montante equivalente ao cobrado desses tributos pelo regime único"
+  },
+  {
+   "target_id": "CF88:ART.149",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O caput as trata como instrumento de atuacao da Uniao.",
+   "before": "As de interesse de categorias financiam entidades profissionais ou econômicas.",
+   "after": "As de interesse das categorias profissionais ou econômicas são instrumento de atuação da União nessa área."
+  },
+  {
+   "target_id": "CF88:ART.149-A",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Motivo vindo de jurisprudencia sobre a taxa de iluminacao, nao do texto.",
+   "before": "A iluminação pública beneficia todos ao mesmo tempo, e não é possível medir quanto cada pessoa usa. Por isso, o artigo prevê uma contribuição própria para financiá-la.",
+   "after": "O artigo prevê uma contribuição própria para custear, expandir e melhorar o serviço de iluminação pública."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.I",
+   "section": "o_que_significa",
+   "category": "ABSOLUTO",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "O art. 62, § 2º trata da medida provisoria em materia de impostos.",
+   "before": "sem que uma lei, aprovada pelo Legislativo, preveja isso",
+   "after": "sem que uma lei preveja isso. A Constituição também trata da medida provisória que cria ou aumenta impostos (art. 62, § 2º)"
+  },
+  {
+   "target_id": "CF88:ART.150:INC.III",
+   "section": "atencao",
+   "category": "ENUMERACAO_INCOMPLETA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Ha excecoes as anterioridades fora do § 1º (arts. 195, § 6º; 177, § 4º, I, b; 155, § 4º, IV, c).",
+   "before": "as exceções estão no § 1º, com explicação própria",
+   "after": "parte das exceções está no § 1º, com explicação própria, e outras aparecem em dispositivos como os arts. 195, § 6º, 177, § 4º, I, b, e 155, § 4º, IV, c"
+  },
+  {
+   "target_id": "CF88:ART.150:INC.VI",
+   "section": "atencao",
+   "category": "REMISSAO_ERRADA",
+   "detector": "SECOND_PASS_CRITIC",
+   "reason": "Cada paragrafo tem alcance proprio (§ 2º extensao; § 3º afastamento; § 4º finalidades essenciais).",
+   "before": "Os §§ 2º a 4º limitam o alcance das imunidades das alíneas a, b e c às finalidades essenciais das entidades.",
+   "after": "O § 2º estende a imunidade da alínea a a autarquias, fundações públicas e à empresa pública postal, quanto ao que se liga às suas finalidades essenciais; o § 3º afasta essa imunidade na exploração de atividade econômica ou quando há preço ou tarifa; e o § 4º limita as alíneas b e c às finalidades essenciais das entidades."
+  },
+  {
+   "target_id": "CF88:ART.130-A:PAR.2",
+   "section": "o_que_diz",
+   "category": "DUPLICACAO_COM_DIFERENCA_JURIDICA",
+   "detector": "SECOND_PASS_DUPLICATION",
+   "reason": "Similaridade 0,636 com o art. 103-B, § 4º: a semelhanca vem do texto constitucional, mas a copia da explicacao escondia diferencas juridicas (autonomia funcional e administrativa, alcance MPU/Estados, ausencia de representacao e de relatorio semestral). Passa a remeter ao CNJ e destacar o que e proprio.",
+   "before": "O § 2º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira do Ministério Público e o cumprimento, pelos membros, dos seus deveres funcionais. Entre as atribuições listadas nos incisos estão zelar pela autonomia da instituição, expedir atos regulamentares ou recomendar providências e apreciar a legalidade de atos administrativos. Também recebe reclamações, pode determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, revê processos disciplinares julgados há menos de um ano e elabora relatório anual sobre a situação do Ministério Público e as atividades do Conselho.",
+   "after": "O § 2º aplica ao Ministério Público o modelo de controle do Conselho Nacional de Justiça (art. 103-B, § 4º): gestão administrativa e financeira da instituição e deveres funcionais dos membros. As diferenças estão nos detalhes. O Conselho zela pela autonomia funcional e administrativa do Ministério Público. O controle de legalidade alcança atos de membros e órgãos do Ministério Público da União e dos Estados, sem afastar os Tribunais de Contas. Como o Conselho Nacional de Justiça, recebe reclamações, pode avocar processos disciplinares, determinar remoção ou disponibilidade e aplicar outras sanções com ampla defesa, e revê processos disciplinares julgados há menos de um ano. A lista não traz a representação ao Ministério Público nem o relatório estatístico semestral previstos para o Conselho Nacional de Justiça, e o relatório anual integra a mensagem do art. 84, XI."
+  },
+  {
+   "target_id": "CF88:ART.142:PAR.2",
+   "section": "o_que_significa",
+   "category": "PAI_CONTRADIZ_FILHO",
+   "detector": "SECOND_PASS_REVIEW",
+   "reason": "O o_que_significa afirmava que punicao ilegal fica fora do habeas corpus, contrariando a propria ATENCAO; passa a remeter sem afirmar.",
+   "before": "A forma de questionar uma punição disciplinar ilegal fica, então, fora do habeas corpus, nos termos da lei e da camada JURISPRUDÊNCIA.",
+   "after": "O que pode ser examinado em habeas corpus quanto à legalidade dessa punição é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.129",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo nao afirma nem nega a investigacao direta; so registra o silencio do texto: CONTEXT_ONLY.",
+   "before": "esse ponto não deve ser deduzido apenas do texto e fica na camada JURISPRUDÊNCIA.",
+   "after": "esse ponto é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.144:PAR.8",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo parafraseia o texto; o alcance alem dele e extensao: CONTEXT_ONLY.",
+   "before": "O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações não deve ser deduzido apenas do texto do parágrafo: depende da lei e da interpretação do Supremo, na camada JURISPRUDÊNCIA.",
+   "after": "O alcance das atribuições das guardas municipais além da proteção de bens, serviços e instalações depende da lei e é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.145:INC.II",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo explica os requisitos do texto; a classificacao caso a caso e aplicacao: CONTEXT_ONLY.",
+   "before": "Quais serviços são específicos e divisíveis não deve ser deduzido apenas do texto; a classificação de cada serviço é tema da camada JURISPRUDÊNCIA.",
+   "after": "A classificação de cada serviço como específico e divisível é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.150:INC.IV",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo explica a vedacao do texto; o limiar e aplicacao: CONTEXT_ONLY.",
+   "before": "O momento em que um tributo ou uma multa passa a ter efeito confiscatório não deve ser deduzido apenas do texto: é definido pela interpretação do Supremo, na camada JURISPRUDÊNCIA.",
+   "after": "O momento em que um tributo ou uma multa passa a ter efeito confiscatório é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.150:PAR.7",
+   "section": "atencao",
+   "category": "JURISPRUDENCIA_RECLASSIFICADA",
+   "detector": "SECOND_PASS_JURIS",
+   "reason": "O corpo afirma so a restituicao do texto (fato gerador que nao se realiza): CONTEXT_ONLY.",
+   "before": "Se há direito à diferença quando a venda ocorre por valor menor que o presumido não deve ser deduzido apenas do texto: é tema da camada JURISPRUDÊNCIA.",
+   "after": "Se há direito à diferença quando a venda ocorre por valor menor que o presumido é tema da camada JURISPRUDÊNCIA."
+  }
+ ]
+}

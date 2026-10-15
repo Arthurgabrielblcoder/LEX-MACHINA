@@ -1,0 +1,1481 @@
+{
+ "tests_dir": "DEVICE_INTEGRATION/tests",
+ "python": "3.12.3",
+ "missing_git_tags": {
+  "test_article_search_indexed": [
+   "lex-device-v1-physical-approved-2026-10-01"
+  ],
+  "test_article_search_landing": [
+   "lex-device-v1-physical-approved-2026-10-01"
+  ],
+  "test_article_search_next_occurrence": [
+   "lex-device-v1-physical-approved-2026-10-01"
+  ],
+  "test_bidirectional_scroll": [
+   "lex-device-v1-physical-approved-2026-10-01"
+  ],
+  "test_context_citation_guard": [
+   "lex-device-v1-72-indexes-approved-2026-10-04"
+  ],
+  "test_reference_run3_device": [
+   "lex-device-v1-physical-approved-2026-10-01"
+  ],
+  "test_thousands_parser": [
+   "lex-device-v1-physical-approved-2026-10-01"
+  ]
+ },
+ "total": 353,
+ "collected": 326,
+ "not_collected_methods": 27,
+ "counts": {
+  "PASS": 120,
+  "FAIL": 2,
+  "SKIPPED": 136,
+  "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY": 68,
+  "NOT_COLLECTED": 27
+ },
+ "unittest_summary": {
+  "ran": 282,
+  "failures": 7,
+  "errors": 27,
+  "skipped": 136
+ },
+ "local_dependency_reasons": {
+  "LOCAL_SD_STAGING": 59,
+  "LOCAL_GIT_TAG": 9
+ },
+ "skip_reasons": {
+  "flash dumps are local only (not in Git)": 3,
+  "esp32 core 3.3.11 not installed here": 1,
+  "index / staging not built": 8,
+  "index / RUN3 staging not built": 1,
+  "baseline staging not built": 28,
+  "RUN3 staging candidate not built": 16,
+  "consolidated staging candidate / physical baseline staging not built": 25,
+  "staging SD not built": 1,
+  "CC TXT (local SD backup) / staged CC index not present": 5,
+  "staged files not present": 3,
+  "approved RUN3 staging not present": 2,
+  "local SD copy / MARIA2006 repair staging / CF runtime not present": 6,
+  "MARIA2006 repair staging not present": 4,
+  "staging not built (run tools/build_sd_staging.py)": 14,
+  "local SD copy / approved staging absent": 9,
+  "staging not built": 7,
+  "no SD backup": 2,
+  "Codigo Civil TXT from the local SD backup (not in Git)": 1
+ },
+ "tests": {
+  "test_a3b_prep.DiagnosticCoverageTest.test_all_queries_and_expectations_match_simulator": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep.DiagnosticCoverageTest.test_block_same_payload_as_anchor": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep.DiagnosticCoverageTest.test_reference_zero_single_multiple": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep.DiagnosticCoverageTest.test_runtime_and_text_map_guards": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep.DiagnosticCoverageTest.test_sd_read_only": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep.DiagnosticCoverageTest.test_text_to_target_114_viii": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep.DiagnosticCoverageTest.test_timing_and_memory_instrumentation": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep.FlashIntegrityPolicyTest.test_fail_closed_outside_nvs": {
+   "category": "SKIPPED",
+   "detail": "flash dumps are local only (not in Git)"
+  },
+  "test_a3b_prep.FlashIntegrityPolicyTest.test_nvs_not_blanket_safe": {
+   "category": "SKIPPED",
+   "detail": "flash dumps are local only (not in Git)"
+  },
+  "test_a3b_prep.FlashIntegrityPolicyTest.test_real_diff_confined_to_explained_nvs": {
+   "category": "SKIPPED",
+   "detail": "flash dumps are local only (not in Git)"
+  },
+  "test_a3b_prep.SchemaContractTest.test_builder_equals_firmware": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep.SchemaContractTest.test_exact_version_rule": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep.SchemaContractTest.test_firmware_source_uses_single_constant": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep.SchemaContractTest.test_flag_default_off": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep2.HandleModelTest.test_new_flow_bounded": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep2.HandleModelTest.test_old_flow_exceeds_default_5": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep2.HandleModelTest.test_payloads_on_demand": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep2.SdBeginTest.test_core_signature": {
+   "category": "SKIPPED",
+   "detail": "esp32 core 3.3.11 not installed here"
+  },
+  "test_a3b_prep2.SdBeginTest.test_max_files_only_with_device_v1_and_legacy_preserved": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep2.SdBeginTest.test_policy_constants": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep2.SourceLifecycleTest.test_open_sequence_matches_model": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_a3b_prep2.SourceLifecycleTest.test_previous_diagnostics_preserved": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep2.SourceLifecycleTest.test_read_only": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep2.SourceLifecycleTest.test_short_lived_handles": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_a3b_prep2.SourceLifecycleTest.test_tracker_and_fail_io": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.CfIndexTest.test_bounded_comparisons_and_no_text_scan": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_deterministic_rebuild": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_every_article_matches_the_text_map": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_header_and_size": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_landing_context_reread_is_bounded": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_occurrences_and_namespaces": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_parity_with_the_structural_linear_search": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.CfIndexTest.test_remissions_never_indexed": {
+   "category": "SKIPPED",
+   "detail": "index / staging not built"
+  },
+  "test_article_search_indexed.FailClosedTest.test_reader_falls_back_safely": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_article_search_indexed.FailClosedTest.test_rejections": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_article_search_indexed.FirmwareContractTest.test_context_seed_hook": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.FirmwareContractTest.test_flag0_unchanged": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_article_search_indexed.FirmwareContractTest.test_indexed_branch_first_and_no_scan": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.FirmwareContractTest.test_landing_has_no_textmap_io_and_logs": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.FirmwareContractTest.test_loader_fail_closed": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.FirmwareContractTest.test_lookup_is_binary": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.SyntheticNormTest.test_art10_vs_art2400": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.SyntheticNormTest.test_second_structure_and_remissions": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.SyntheticNormTest.test_size": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_indexed.UxPreservedWithIndexTest.test_flows": {
+   "category": "SKIPPED",
+   "detail": "index / RUN3 staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_adct_occurrence_lands_on_its_own_target": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_clamp_start_and_end": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_entenda_immediately_available": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_every_cf_article_lands_active": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_landing_wrap_is_the_reading_wrap": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_layers_follow_the_active_target": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingBaselineDataTest.test_text_and_data_untouched": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_art193": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_art37_43_62": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_before_after_requested": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_every_caput_with_work_reference": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_gaps_do_not_gain_layer4": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_scroll_after_art193": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.LandingRun3Test.test_scroll_after_art37_no_leak": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_landing.SourceContractTest.test_called_only_by_the_article_search": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_article_search_landing.SourceContractTest.test_flag0_source_unchanged": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_article_search_landing.SourceContractTest.test_landing_function": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_landing.SourceContractTest.test_single_definition_of_the_active_row": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_next_occurrence.LayersAfterNextOccurrenceTest.test_art193_still_lands_with_layer4": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_next_occurrence.LayersAfterNextOccurrenceTest.test_layers_only_for_the_new_active_target": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_art5_cf_then_adct_then_end": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_back_resets_and_restores_origin_of_the_operation": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_every_number_walks_its_structural_occurrences": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_file_change_invalidates": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_near_start_and_adct": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_query_change_resets_cursor": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_remission_is_never_an_occurrence": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.NextOccurrenceModelTest.test_unique_article": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_next_occurrence.SourceContractTest.test_legacy_untouched_and_flag0": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_article_search_next_occurrence.SourceContractTest.test_next_occurrence": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_next_occurrence.SourceContractTest.test_no_sticky_target_and_no_stale_cache": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_next_occurrence.SourceContractTest.test_repeat_condition": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_next_occurrence.SourceContractTest.test_resets": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_article_search_next_occurrence.SourceContractTest.test_structural_occurrence": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_repeat_ready.FirmwareRepeatReadyTest.test_enter_always_opens_search_with_preload": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_repeat_ready.FirmwareRepeatReadyTest.test_first_backspace_edits": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_repeat_ready.FirmwareRepeatReadyTest.test_first_digit_replaces": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_repeat_ready.FirmwareRepeatReadyTest.test_flag_declared_in_v1_region": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_repeat_ready.FirmwareRepeatReadyTest.test_next_and_cancel_close_the_search": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_01_no_history_enter_opens_empty_search": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_02_history_preloaded": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_03_enter_untouched_is_next_occurrence": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_04_05_06_07_first_digit_replaces_then_new_query": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_08_key4_opens_layer_and_never_edits": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_09_back_cancels_and_keeps_current_position": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_10_backspace_on_preloaded_query_edits": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_11_edited_query_never_uses_old_cursor": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_12_end_of_occurrences_preserved": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyModelTest.test_scroll_drops_preload_but_enter_still_opens": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_article_search_repeat_ready.RepeatReadyRun3Test.test_37_layer4_and_preload": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_01_entenda_art25": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_02_entenda_art29A_and_block": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_03_entenda_art34_cleanup": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_04_entenda_art36_and_historical": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_05_ref_art37_no_inheritance": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_06_07_08_ref_art43_and_62": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_09_ref_art193_after_search": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_10_ref_adct68": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_11_12_reference_gaps": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_13_cf5_to_adct5": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_14_15_cc_art2000_and_parser": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_16_scroll_deep_cc": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_17_loader_cf_cc_cf": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_18_excluded_temas_absent": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_pending_and_rejected_works_stay_out": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_run3_counts_recomputed": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationEndToEndTest.test_strong_sample_arts_25_to_36": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_boot_diagnostic_cases_on_both_packages": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_deterministic_rebuild": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_eleven_files": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_entenda_220_and_previous_byte_identical": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_firmware_source_candidate": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_refs_are_run3_and_indexes_are_the_validated_ones": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_rich_header_matches_payload": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_batch04_run3_consolidation.ConsolidationStagingTest.test_unchanged_runtime_and_textmap": {
+   "category": "SKIPPED",
+   "detail": "consolidated staging candidate / physical baseline staging not built"
+  },
+  "test_bidirectional_scroll.ColdFirstUpTest.test_01_art2000_landing_then_first_up": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.ColdFirstUpTest.test_02_first_up_has_no_global_scan": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.ColdFirstUpTest.test_03_first_up_bytes_do_not_grow_with_offset": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.EdgeTest.test_cf_isolated_article_marker_anchor": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.EdgeTest.test_chosen_previous_block_size": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.EdgeTest.test_file_start_without_article_is_exact": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.EdgeTest.test_giant_paragraph_refill_failsafe": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.EdgeTest.test_no_article_in_32k_is_bounded": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_context_rebuild_order": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_flag0_unchanged": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_header_buffered_reader": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_landing_and_search_untouched": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_model_reads_firmware_constants": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_refill_blocks_and_limits": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FirmwareContractTest.test_same_wrap_body": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.FixtureTest.test_codigo_civil_like_fixture": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_04_ten_up": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_05_ten_down": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_06_alternating": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_07_previous_cache_refill": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_08_next_cache_refill": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_09_target_transition": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_10_context_transition": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_bidirectional_scroll.SequenceTest.test_11_layer_footer_transition_cf_runtime": {
+   "category": "SKIPPED",
+   "detail": "staging SD not built"
+  },
+  "test_bidirectional_scroll.SequenceTest.test_12_rapid_event_backlog": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.ExportEqualsDeviceQueryTest.test_432_links_grouped_by_target": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.ExportEqualsDeviceQueryTest.test_flags_derive_from_exact_records": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.ExportEqualsDeviceQueryTest.test_items_resolvable_by_id_in_legacy_indices": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.ExportEqualsDeviceQueryTest.test_zero_mismatches_per_layer": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.FirmwareSourceContractTest.test_exact_loader": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FirmwareSourceContractTest.test_footer_mask_from_exact_flags": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FirmwareSourceContractTest.test_keys_1_2_use_layer_target": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FirmwareSourceContractTest.test_legacy_caches_preserved": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FirmwareSourceContractTest.test_v1_never_loads_by_article": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FixtureNoInheritanceTest.test_article_gets_only_its_own": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FixtureNoInheritanceTest.test_inciso_gets_only_its_own": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FixtureNoInheritanceTest.test_prefix_keys_do_not_leak": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.FixtureNoInheritanceTest.test_target_without_records_fails_closed": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_canonical_layers.RealDataTest.test_art37_par6_only_par6": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.RealDataTest.test_art5_table": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.RealDataTest.test_papers_please_and_timbuktu_only_layer4": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.RealDataTest.test_target_without_juris_hides_2_even_if_article_has_many": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.RealDataTest.test_v_and_vi_differ_because_the_data_differs": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_canonical_layers.RealDataTest.test_why_the_old_list_was_identical": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_caput_equivalence.FixtureUnionTest.test_art_plus_caput_union": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_caput_equivalence.FixtureUnionTest.test_dedup": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_caput_equivalence.FixtureUnionTest.test_no_descendant_inheritance": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_caput_equivalence.QueryKeysTest.test_entenda_untouched": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_caput_equivalence.QueryKeysTest.test_firmware_rule_mirrors_host": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_caput_equivalence.QueryKeysTest.test_only_the_article_line_gets_two_keys": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_caput_equivalence.RealDataTest.test_32_links_17_targets_all_reachable": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_caput_equivalence.RealDataTest.test_detail_keyed_by_real_link_target": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_caput_equivalence.RealDataTest.test_no_leak_and_union_equals_export": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_caput_equivalence.RealDataTest.test_paragraph_exclusion_art37": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_caput_equivalence.RealDataTest.test_rg113_caput_art5": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_caput_equivalence.RealDataTest.test_rg113_excluded_from_incisos": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_cc_article_index.CcIndexTest.test_rebuild_byte_identical": {
+   "category": "SKIPPED",
+   "detail": "CC TXT (local SD backup) / staged CC index not present"
+  },
+  "test_cc_article_index.CcIndexTest.test_records_computed_not_assumed": {
+   "category": "SKIPPED",
+   "detail": "CC TXT (local SD backup) / staged CC index not present"
+  },
+  "test_cc_article_index.CcIndexTest.test_required_articles": {
+   "category": "SKIPPED",
+   "detail": "CC TXT (local SD backup) / staged CC index not present"
+  },
+  "test_cc_article_index.CcIndexTest.test_source_binding": {
+   "category": "SKIPPED",
+   "detail": "CC TXT (local SD backup) / staged CC index not present"
+  },
+  "test_cc_article_index.CcIndexTest.test_suffix_records": {
+   "category": "SKIPPED",
+   "detail": "CC TXT (local SD backup) / staged CC index not present"
+  },
+  "test_cc_article_index.FirmwareLoaderContractTest.test_fd_policy": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_cc_article_index.FirmwareLoaderContractTest.test_hooks": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_cc_article_index.FirmwareLoaderContractTest.test_no_norm_in_loader": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_cc_article_index.FirmwareLoaderContractTest.test_production_logs_off": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_cc_article_index.LoaderSelectionModelTest.test_cf_cc_cf": {
+   "category": "SKIPPED",
+   "detail": "staged files not present"
+  },
+  "test_cc_article_index.LoaderSelectionModelTest.test_psram_one_index_at_a_time": {
+   "category": "SKIPPED",
+   "detail": "staged files not present"
+  },
+  "test_cc_article_index.LoaderSelectionModelTest.test_wrong_or_missing_index_never_used": {
+   "category": "SKIPPED",
+   "detail": "staged files not present"
+  },
+  "test_context_citation_guard.ActiveTargetAndLayersTest.test_14_15_active_target_and_layers_identical": {
+   "category": "SKIPPED",
+   "detail": "approved RUN3 staging not present"
+  },
+  "test_context_citation_guard.ActiveTargetAndLayersTest.test_14_active_row_context_matches_text_map_on_cf": {
+   "category": "SKIPPED",
+   "detail": "approved RUN3 staging not present"
+  },
+  "test_context_citation_guard.CorpusTest.test_01_maria2006_art1_context_before_after": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / MARIA2006 repair staging / CF runtime not present"
+  },
+  "test_context_citation_guard.CorpusTest.test_cc_and_cpc_paragraphs_preserved": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / MARIA2006 repair staging / CF runtime not present"
+  },
+  "test_context_citation_guard.CorpusTest.test_cf_art37_par6_and_art40": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / MARIA2006 repair staging / CF runtime not present"
+  },
+  "test_context_citation_guard.CorpusTest.test_cf_text_map_agreement_not_reduced": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / MARIA2006 repair staging / CF runtime not present"
+  },
+  "test_context_citation_guard.CorpusTest.test_full_corpus_no_legitimate_structure_lost": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / MARIA2006 repair staging / CF runtime not present"
+  },
+  "test_context_citation_guard.CorpusTest.test_maria2006_real_subdivisions": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / MARIA2006 repair staging / CF runtime not present"
+  },
+  "test_context_citation_guard.LineRuleTest.test_01_maria2006_art1_par8_line": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_02_paragraph_in_running_text": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_03_inciso_in_running_text": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_04_alinea_in_running_text": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_05_structural_paragraph": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_06_paragrafo_unico": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_07_structural_inciso": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_08_structural_alinea": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.LineRuleTest.test_article_headings_kept": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.ReaderPathTest.test_09_visual_wrap": {
+   "category": "SKIPPED",
+   "detail": "MARIA2006 repair staging not present"
+  },
+  "test_context_citation_guard.ReaderPathTest.test_10_11_scroll_down_and_up_equal_fresh_landing": {
+   "category": "SKIPPED",
+   "detail": "MARIA2006 repair staging not present"
+  },
+  "test_context_citation_guard.ReaderPathTest.test_12_search_landing": {
+   "category": "SKIPPED",
+   "detail": "MARIA2006 repair staging not present"
+  },
+  "test_context_citation_guard.ReaderPathTest.test_13_norm_switch_has_no_stale_context": {
+   "category": "SKIPPED",
+   "detail": "MARIA2006 repair staging not present"
+  },
+  "test_context_citation_guard.SourceContractTest.test_firmware_self_test_table_matches_port": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.SourceContractTest.test_guard_only_in_device_v1_build": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-72-indexes-approved-2026-10-04 ausente no clone)"
+  },
+  "test_context_citation_guard.SourceContractTest.test_no_io_no_state_in_guard": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.SourceContractTest.test_remission_words_are_the_approved_structural_ones": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_context_citation_guard.SourceContractTest.test_sketch_untouched": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-72-indexes-approved-2026-10-04 ausente no clone)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_approved_artifacts_and_firmware_unchanged": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_block_and_direct_resolution": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_builder_refuses_physical_or_outside_paths": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_deterministic_rebuild": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_entenda_163_only_approved": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_layer_flags": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_manifest_hashes_and_offsets": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_nine_pilots": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_no_linear_scan": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_payload_identical_to_approved_batches": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_references": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_target_without_entenda_and_invalid": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_text_map_runtime_and_fail_closed": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_device_integration_v1.DeviceIntegrationV1Test.test_text_resolution_strategy": {
+   "category": "SKIPPED",
+   "detail": "staging not built (run tools/build_sd_staging.py)"
+  },
+  "test_fast_track_ui.FastTrackUiFlowTest.test_reader_position_to_layers": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_fast_track_ui\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_pat"
+  },
+  "test_fast_track_ui.FastTrackUiSourceTest.test_legacy_paths_untouched_without_flag": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_fast_track_ui\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_pat"
+  },
+  "test_fast_track_ui.FastTrackUiSourceTest.test_ui_wiring_is_flag_gated_and_fail_closed": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_fast_track_ui\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_pat"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_01_discovery_eligibility_and_block": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_02_unique_namespaces_and_filenames": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_03_manifest_file_sizes_and_hashes": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_04_all_records_body_hash_source_binding_and_structure": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_05_first_middle_last_and_special_cases_every_norm": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_06_thousands_absence_suffix_occurrence_and_ranges": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_07_parser_opt_in_variants_and_false_remissions": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_08_out_of_order_is_explicit_and_bounded": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_09_legacy_three_level_classification_totals": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_10_catalog_roundtrip_corruption_and_source_mismatch": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_11_loader_catalog_wrong_index_rejection_fallback_fd_psram": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_12_keep_rebuild_add_remove_blocked": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_13_binary_corruption_is_rejected": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_14_approved_cf_and_cc_are_byte_identical": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_15_maria_signature_and_no_deceptive_index": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_16_manifest_completeness_and_resource_accounting": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_full_corpus_article_indexes.FullCorpusArticleIndexes.test_17_three_complete_generations_are_byte_identical": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingAuditTest.test_flags_use_the_same_taxonomy": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingAuditTest.test_routing_counts_and_no_duplicates": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingCasesTest.test_footer_combinations": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingCasesTest.test_real_correlata_layer1_only": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingCasesTest.test_rg995_in_legacy_article_list": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingCasesTest.test_rg995_layer2_not_layer4": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingCasesTest.test_timbuktu_layer4": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_layer_routing.LayerRoutingFirmwareSourceTest.test_central_classifier": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_layer_routing.LayerRoutingFirmwareSourceTest.test_footer_list_detail_use_the_classifier": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_catalog_71_to_72_covers_catalogo_mestre": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_corrupted_file_only_diagnosed": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_deterministic_against_the_committed_staging": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_device_loader_selects_maria_index_through_catalog": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_full_corpus_72_of_72": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_index_schema_binding_and_full_record_audit": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_mini_deploy_only_three_files": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_provenance_of_the_official_source": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_maria2006_source_repair.Maria2006RepairTest.test_txt_candidate": {
+   "category": "SKIPPED",
+   "detail": "local SD copy / approved staging absent"
+  },
+  "test_predeploy_a2c.HistoricalReferenceFilterTest.test_entenda_and_pilots": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_predeploy_a2c.HistoricalReferenceFilterTest.test_filtered_targets_are_not_navigable": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_predeploy_a2c.ReviewedExceptionsTest.test_three_exceptions_and_no_unexpected": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_predeploy_a2c.SourceCorrectionTest.test_ec45_cross_source": {
+   "category": "FAIL",
+   "detail": "+ 76f9b562e1782262f21dad82433e39952223317ec25ebea602524590e762b42a"
+  },
+  "test_predeploy_a2c.SourceCorrectionTest.test_fail_closed": {
+   "category": "FAIL",
+   "detail": "exportar_cf88_runtime.ExportError: SOURCE_CORRECTION_NOT_VERIFIED SRC-CORR-CF88-579494-16434817-ART114-INC-VIII: copia da fonte de verificacao ausente ou alterada"
+  },
+  "test_predeploy_a2c.SourceCorrectionTest.test_only_structural_label_changed": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_predeploy_a2c.SourceCorrectionTest.test_raw_preserved_and_contains_anomaly": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_predeploy_a2c.SourceCorrectionTest.test_runtime_sequence_114": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_SD_STAGING"
+  },
+  "test_reader_state_machine.FirmwareEncodesStateMachineTest.test_handler_rules": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.FirmwareEncodesStateMachineTest.test_layers_and_loop": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.FirmwareEncodesStateMachineTest.test_provisional_letters_removed": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_backspace_edits_then_cancels_to_same_point": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_digits_never_open_layers_in_search": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_empty_enter_and_not_found": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_forbidden_sequence": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_layers_block_numbers_and_enter": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_normal_mode_numbers": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reader_state_machine.StateMachineModelTest.test_searches_land_on_the_article": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_reader_state_machine\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_t"
+  },
+  "test_reference_run3_device.Art193DiagnosticTest.test_after_search_active_target_is_paragrafo_unico": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_reference_run3_device.Art193DiagnosticTest.test_caput_centred_shows_button4": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_reference_run3_device.Art193DiagnosticTest.test_wrap_matches_reader_width": {
+   "category": "SKIPPED",
+   "detail": "baseline staging not built"
+  },
+  "test_reference_run3_device.Run3DeviceLayer4Test.test_baseline_untouched": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_reference_run3_device.Run3DeviceLayer4Test.test_caput_rule_only_on_article_line": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_reference_run3_device.Run3DeviceLayer4Test.test_new_links": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_reference_run3_device.Run3DeviceLayer4Test.test_no_propagation_from_caput": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_reference_run3_device.Run3DeviceLayer4Test.test_rejected_and_gaps": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_reference_run3_device.Run3DeviceLayer4Test.test_rich_detail_for_every_new_link": {
+   "category": "SKIPPED",
+   "detail": "RUN3 staging candidate not built"
+  },
+  "test_runtime_a2b.FirmwareCandidateTest.test_original_release_untouched_and_candidate_isolated": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.HeaderNormalizationTest.test_case_a_joins_only_label": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.HeaderNormalizationTest.test_case_a_refuses_unsafe_join": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.HeaderNormalizationTest.test_case_b_exact_concatenation": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.HeaderNormalizationTest.test_case_c_glued_paragraph_only_inserts_newline": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.HeaderNormalizationTest.test_lowercase_citations_untouched": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.OfficialSourcesTest.test_adct_registered_in_official_pipeline": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.OfficialSourcesTest.test_lock_raw_and_metadata": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_runtime_a2b.RuntimeTest.test_adct_targets_and_pilot": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.RuntimeTest.test_layers_resolve_and_diff_not_blocking": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.RuntimeTest.test_legacy_index_unchanged_by_parser_option": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.RuntimeTest.test_runtime_deterministic_and_identical_to_export": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.RuntimeTest.test_runtime_encoding_content": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.RuntimeTest.test_target_index_built_from_runtime_bytes": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.RuntimeTest.test_text_map_bound_to_runtime": {
+   "category": "SKIPPED",
+   "detail": "staging not built"
+  },
+  "test_runtime_a2b.SdBackupTest.test_manifest_and_verification": {
+   "category": "SKIPPED",
+   "detail": "no SD backup"
+  },
+  "test_runtime_a2b.SdBackupTest.test_sample_files_match_manifest": {
+   "category": "SKIPPED",
+   "detail": "no SD backup"
+  },
+  "test_target_sync.PapersPleaseAndExportTest.test_export_did_not_shift_targets": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.PapersPleaseAndExportTest.test_papers_please_approved_only_at_xv": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncFirmwareSourceTest.test_active_target_from_context_line": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncFirmwareSourceTest.test_debounce_only_for_availability_io": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncFirmwareSourceTest.test_keypress_uses_resolved_target": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncFirmwareSourceTest.test_layer_target_is_frozen_and_detail_keyed_by_target": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_every_transition_kind_every_key": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_labels_agree": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_prefix_bug_reproduced_by_old_model": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_simulator_and_map_agree": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_stale_cache_rejected": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_sweep_all_transitions_all_widths": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_xv_to_xvi_immediate": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_target_sync.TargetSyncModelTest.test_xvi_to_xv_immediate": {
+   "category": "NOT_COLLECTED",
+   "detail": "import falhou: ImportError: Failed to import test module: test_target_sync\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/unittest/loader.py\", line 394, in _find_test_path\n"
+  },
+  "test_thousands_parser.FirmwareContractTest.test_boot_self_test_covers_table": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.FirmwareContractTest.test_flag0_header_unchanged": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "LOCAL_GIT_TAG (lex-device-v1-physical-approved-2026-10-01 ausente no clone)"
+  },
+  "test_thousands_parser.FirmwareContractTest.test_header_rule_inside_v1": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.FixtureTest.test_cache_hit_refill_and_landings": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.FixtureTest.test_first_up_art2000_bounded": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.FixtureTest.test_fixture_uses_thousands_separator": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.FixtureTest.test_landing_active_target_and_context": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.FixtureTest.test_scroll_1999_2000_2001": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.IndexedSearchTest.test_firmware_search_and_repeat_untouched": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.IndexedSearchTest.test_index_finds_2000_without_text_scan": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.ParsingTableTest.test_bug_reproduced_without_fix": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.ParsingTableTest.test_malformed_fail_safe": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.ParsingTableTest.test_remissions_keep_their_own_number": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.ParsingTableTest.test_suffix_ordinal_and_other_devices_preserved": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.ParsingTableTest.test_table": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.RealCodigoCivilTest.test_every_header_distinct_and_up_to_2046": {
+   "category": "SKIPPED",
+   "detail": "Codigo Civil TXT from the local SD backup (not in Git)"
+  },
+  "test_thousands_parser.StructuralParserTest.test_host_art_re": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.StructuralParserTest.test_parse_structure_targets": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_thousands_parser.StructuralParserTest.test_strict_mode_still_rejects_remission_lines": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_ui_refinement.DynamicFooterTest.test_firmware_footer_and_keys": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_ui_refinement.DynamicFooterTest.test_full_mask_with_legacy_layers": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_ui_refinement.DynamicFooterTest.test_real_targets_per_combination": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_ui_refinement.DynamicFooterTest.test_required_cases": {
+   "category": "NOT_RUN_CLOUD_MISSING_LOCAL_DEPENDENCY",
+   "detail": "setUpClass: LOCAL_SD_STAGING"
+  },
+  "test_ui_refinement.ReferenceRichDetailTest.test_every_payload_work_row_has_detail": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_ui_refinement.ReferenceRichDetailTest.test_firmware_detail_and_list": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_ui_refinement.ReferenceRichDetailTest.test_header_up_to_date_and_counts": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_ui_refinement.ReferenceRichDetailTest.test_timbuktu": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_ui_refinement.TypographyAndScrollTest.test_same_renderer_as_dry_law": {
+   "category": "PASS",
+   "detail": ""
+  },
+  "test_ui_refinement.TypographyAndScrollTest.test_scroll_without_clearing": {
+   "category": "PASS",
+   "detail": ""
+  }
+ }
+}

@@ -1,0 +1,701 @@
+{
+ "schema_version": 1,
+ "batch_id": "ENTENDA_CF_MACRO_BATCH_07",
+ "sub_block": "B",
+ "policy": "PASSO 2 (CRITIC): revisao adversarial do rascunho antes da triagem: regra inventada, excecao perdida, numero/quorum/prazo, lista incompleta, teleologia, condicao fora do texto, jurisprudencia velada, generalizacao, historico tratado como vigente, dependencia externa sem proveniencia, copia da Lei Seca e contrato do motor. Cada correcao registra antes/depois e motivo.",
+ "corrections": [
+  {
+   "target_id": "CF88:ART.101",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "escolhidos entre cidadãos com mais de trinta e cinco e menos de setenta anos, que tenham",
+   "after": "escolhidos entre cidadãos que tenham mais de trinta e cinco e menos de setenta anos, e que tenham"
+  },
+  {
+   "target_id": "CF88:ART.102",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Resumo das tres vias sem marcar que as alineas foram agrupadas.",
+   "before": "Ele julga causas originariamente (inciso I),",
+   "after": "Entre outras atribuições, ele julga causas originariamente (inciso I),"
+  },
+  {
+   "target_id": "CF88:ART.102",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TECHNICAL_TERM_UNDEFINED",
+   "reason": "Termo tecnico usado sem definicao.",
+   "before": "{\"termo\": \"Preceito fundamental\",",
+   "after": "{\"termo\": \"Repercussão geral\", \"explicacao\": \"requisito de relevância da questão constitucional para que o recurso extraordinário seja examinado.\"}, {\"termo\": \"Preceito fundamental\","
+  },
+  {
+   "target_id": "CF88:ART.102:INC.I",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva da alinea c omitida no resumo; frase longa dividida.",
+   "before": "Entre elas estão as ações de controle de constitucionalidade e o pedido de medida cautelar nessas ações, os processos penais contra as mais altas autoridades, habeas corpus,",
+   "after": "Entre elas estão as ações de controle de constitucionalidade e o pedido de medida cautelar nessas ações. Há também os processos penais contra as mais altas autoridades, com a ressalva do art. 52, I. Completam a lista habeas corpus,"
+  },
+  {
+   "target_id": "CF88:ART.102:INC.I",
+   "section": "atencao",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; dependencia de lei nao mencionada.",
+   "before": "A alínea c tem ressalva: nos crimes de responsabilidade, os Ministros de Estado e os Comandantes militares conexos com o Presidente são julgados pelo Senado (art. 52, I). O alcance exato de cada alínea depende também da camada JURISPRUDÊNCIA.",
+   "after": "A ressalva da alínea c remete ao art. 52, I: quando o crime de responsabilidade de Ministro de Estado ou de Comandante militar for conexo com o do Presidente, o julgamento cabe ao Senado. O alcance exato de cada alínea depende também da lei processual e da camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.102:INC.III",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TECHNICAL_TERM_UNDEFINED",
+   "reason": "Termo tecnico usado sem definicao.",
+   "before": "{\"termo\": \"Governo local\",",
+   "after": "{\"termo\": \"Repercussão geral\", \"explicacao\": \"requisito de relevância da questão constitucional, exigido no § 3º.\"}, {\"termo\": \"Governo local\","
+  },
+  {
+   "target_id": "CF88:ART.102:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 2º estabelece que as decisões definitivas de mérito do Supremo Tribunal Federal nas ações diretas de inconstitucionalidade e nas ações declaratórias de constitucionalidade têm eficácia contra todos e efeito vinculante.",
+   "after": "O § 2º estabelece que, na ação direta de inconstitucionalidade e na declaratória de constitucionalidade, a decisão definitiva de mérito do Supremo tem eficácia contra todos e efeito vinculante."
+  },
+  {
+   "target_id": "CF88:ART.102:PAR.3",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "EXTERNAL_NORMATIVE_CLAIM_WITHOUT_PROVENANCE",
+   "reason": "Definicao de repercussao geral vem da lei processual, nao do paragrafo; inferencia (\"tende a ser admitido\") retirada.",
+   "before": "Não basta que a questão seja constitucional: ela precisa ter importância que ultrapasse o interesse das partes do processo.\nCabe ao recorrente demonstrar essa relevância. O tribunal então decide se o recurso merece ser examinado.\nA recusa tem um quórum elevado: dois terços dos Ministros. Na dúvida, portanto, o recurso tende a ser admitido.",
+   "after": "Não basta que a questão seja constitucional: o recorrente precisa demonstrar a repercussão geral. O parágrafo não define esse conceito; ele remete à lei.\nCom base nessa demonstração, o tribunal decide se o recurso será examinado.\nA recusa tem um quórum elevado: dois terços dos Ministros."
+  },
+  {
+   "target_id": "CF88:ART.102:PAR.3",
+   "section": "palavras_dificeis",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Glossario nao deve trazer definicao legal como se fosse constitucional.",
+   "before": "\"explicacao\": \"relevância da questão constitucional para além do interesse das partes.\"",
+   "after": "\"explicacao\": \"requisito de relevância da questão constitucional, cujos critérios estão na lei processual.\""
+  },
+  {
+   "target_id": "CF88:ART.103",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 103 indica quem pode propor a ação direta de inconstitucionalidade e a ação declaratória de constitucionalidade:",
+   "after": "O art. 103 indica quem tem legitimidade para a ação direta de inconstitucionalidade e para a declaratória de constitucionalidade:"
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.1",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 1º determina que o Procurador-Geral da República seja ouvido previamente nas ações de inconstitucionalidade e em todos os processos de competência do Supremo Tribunal Federal.",
+   "after": "O § 1º determina que o Procurador-Geral da República seja ouvido antes da decisão nas ações de inconstitucionalidade e, de modo geral, nos processos de competência do Supremo."
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.1",
+   "section": "atencao",
+   "category": "GENERALIZACAO",
+   "detector": "ABSOLUTE_CLAIM",
+   "reason": "\"em qualquer caso\" retirado.",
+   "before": "O § 3º fala em defesa do ato impugnado. Se essa defesa é obrigatória em qualquer caso é tema da camada JURISPRUDÊNCIA, e não está resolvido no texto.",
+   "after": "O § 3º fala em defesa do ato impugnado. O texto não resolve se o Advogado-Geral pode deixar de defender a norma; esse tema pertence à camada JURISPRUDÊNCIA."
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.2",
+   "section": "o_que_diz",
+   "category": "QUALIFICADOR_FORA_DO_TEXTO",
+   "detector": "QUALIFIER_NOT_IN_TEXT",
+   "reason": "\"omisso\" nao esta no texto; reformulado pela providencia.",
+   "before": "Se o omisso for órgão administrativo, ele deve agir em trinta dias.",
+   "after": "Se a providência couber a órgão administrativo, ele deve adotá-la em trinta dias."
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.2",
+   "section": "o_que_significa",
+   "category": "QUALIFICADOR_FORA_DO_TEXTO",
+   "detector": "QUALIFIER_NOT_IN_TEXT",
+   "reason": "\"omisso\" nao esta no texto.",
+   "before": "Quando o omisso é um Poder, a decisão dá ciência para que ele tome as providências. Quando o omisso é órgão administrativo, há um prazo certo: trinta dias.",
+   "after": "Quando a medida cabe a um Poder, a decisão dá ciência para que ele tome as providências. Quando cabe a órgão administrativo, há um prazo certo: trinta dias."
+  },
+  {
+   "target_id": "CF88:ART.103:PAR.2",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_LOW_UTILITY",
+   "reason": "Termo de baixa utilidade substituido.",
+   "before": "{\"termo\": \"Dar ciência\", \"explicacao\": \"comunicar oficialmente.\"}",
+   "after": "{\"termo\": \"Órgão administrativo\", \"explicacao\": \"órgão da administração pública que executa tarefas do Estado, sem legislar nem julgar.\"}"
+  },
+  {
+   "target_id": "CF88:ART.103-A",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros, após reiteradas decisões sobre matéria constitucional, um enunciado com efeito vinculante para os demais órgãos do Judiciário e para a administração pública direta e indireta, a partir da publicação na imprensa oficial.",
+   "after": "O art. 103-A permite ao Supremo Tribunal Federal, de ofício ou por provocação, aprovar por dois terços de seus membros um enunciado com efeito vinculante, depois de reiteradas decisões sobre matéria constitucional. O efeito alcança os demais órgãos do Judiciário e a administração pública direta e indireta, a partir da publicação na imprensa oficial."
+  },
+  {
+   "target_id": "CF88:ART.103-B",
+   "section": "o_que_diz",
+   "category": "LISTA_INCOMPLETA",
+   "detector": "LIST_ITEM_POSSIBLY_DROPPED",
+   "reason": "Composicao resumida sem marcar que e parcial; requisito de reputacao omitido.",
+   "before": "A composição reúne o Presidente do Supremo Tribunal Federal, magistrados de vários ramos e instâncias, membros do Ministério Público, dois advogados e dois cidadãos de notável saber jurídico indicados pela Câmara e pelo Senado.",
+   "after": "A composição reúne, entre outros, o Presidente do Supremo Tribunal Federal, magistrados de vários ramos e instâncias, membros do Ministério Público, dois advogados e dois cidadãos de notável saber jurídico e reputação ilibada, indicados pela Câmara e pelo Senado."
+  },
+  {
+   "target_id": "CF88:ART.103-B",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "LAW_DEPENDENCY_OMITTED",
+   "reason": "Dependencia de lei explicitada.",
+   "before": "Se as indicações não forem feitas no prazo legal, a escolha passa ao Supremo.",
+   "after": "Se as indicações não forem feitas no prazo fixado em lei, a escolha passa ao Supremo."
+  },
+  {
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O § 4º atribui ao Conselho o controle da atuação administrativa e financeira do Poder Judiciário e do cumprimento dos deveres funcionais dos juízes, além de outras atribuições dadas pelo Estatuto da Magistratura. Entre as atribuições listadas estão zelar pela autonomia do Judiciário, expedir atos regulamentares, apreciar a legalidade de atos administrativos dos tribunais, receber reclamações contra membros e órgãos do Judiciário e aplicar sanções administrativas com ampla defesa, rever processos disciplinares julgados há menos de um ano, representar ao Ministério Público e elaborar relatórios estatísticos e anuais.",
+   "after": "O § 4º dá ao Conselho duas tarefas de controle: a gestão administrativa e financeira dos tribunais e o cumprimento, pelos juízes, dos seus deveres funcionais. O Estatuto da Magistratura pode lhe dar outras atribuições. Entre as listadas nos incisos estão zelar pela autonomia do Judiciário, expedir atos regulamentares e apreciar a legalidade de atos administrativos dos tribunais. Também recebe reclamações, aplica sanções administrativas com ampla defesa, revê processos disciplinares julgados há menos de um ano, representa ao Ministério Público e elabora relatórios estatísticos e anuais."
+  },
+  {
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "LAW_DEPENDENCY_OMITTED",
+   "reason": "Dependencia de lei explicitada.",
+   "before": "pode rever atos administrativos dos tribunais e expedir regulamentos",
+   "after": "pode rever atos administrativos dos tribunais para garantir o cumprimento da lei e expedir regulamentos"
+  },
+  {
+   "target_id": "CF88:ART.105",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva da alinea d (art. 102, I, o) omitida; lista sem marca de selecao.",
+   "before": "Ele julga originariamente certas causas, como processos penais contra Governadores e outras autoridades, conflitos de competência entre tribunais,",
+   "after": "Entre outras, ele julga originariamente causas como processos penais contra Governadores e outras autoridades, conflitos de competência entre tribunais (ressalvada a competência do Supremo),"
+  },
+  {
+   "target_id": "CF88:ART.105",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva da Justica Eleitoral (alinea c) omitida.",
+   "before": "é o caso do foro de Governadores nos crimes comuns e de outras autoridades estaduais e federais.",
+   "after": "é o caso do foro de Governadores nos crimes comuns e de outras autoridades estaduais e federais, ressalvada em alguns casos a competência da Justiça Eleitoral."
+  },
+  {
+   "target_id": "CF88:ART.105:INC.III",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "das causas decididas em única ou última instância pelos Tribunais Regionais Federais e pelos tribunais dos Estados, do Distrito Federal e dos Territórios.",
+   "after": "das causas que os Tribunais Regionais Federais e os tribunais dos Estados, do Distrito Federal e dos Territórios julgaram em única ou última instância."
+  },
+  {
+   "target_id": "CF88:ART.105:PAR.2",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TECHNICAL_TERM_UNDEFINED",
+   "reason": "Termo tecnico usado sem definicao.",
+   "before": "{\"termo\": \"Inelegibilidade\",",
+   "after": "{\"termo\": \"Repercussão geral\", \"explicacao\": \"filtro equivalente exigido no recurso extraordinário ao Supremo (art. 102, § 3º).\"}, {\"termo\": \"Inelegibilidade\","
+  },
+  {
+   "target_id": "CF88:ART.107",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "da promoção de juízes federais com mais de cinco anos de exercício, alternando",
+   "after": "da promoção de juízes federais que tenham mais de cinco anos no cargo, alternando"
+  },
+  {
+   "target_id": "CF88:ART.108",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 108 atribui aos Tribunais Regionais Federais o julgamento originário de juízes federais da sua área, inclusive os da Justiça Militar e da Justiça do Trabalho, nos crimes comuns e de responsabilidade, e de membros do Ministério Público da União, ressalvada a competência da Justiça Eleitoral.",
+   "after": "O art. 108 atribui aos Tribunais Regionais Federais o julgamento originário, por crimes comuns e de responsabilidade, dos juízes federais da sua área (incluídos os juízes militares e os do trabalho) e dos membros do Ministério Público da União, com ressalva para a competência da Justiça Eleitoral."
+  },
+  {
+   "target_id": "CF88:ART.109",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalvas dos incisos I, IV, VIII e IX omitidas no resumo; frase longa dividida.",
+   "before": "Entre elas estão as causas em que a União, suas autarquias ou empresas públicas sejam interessadas, crimes contra bens e interesses da União, crimes previstos em tratado com execução que atravesse a fronteira, crimes contra a organização do trabalho, habeas corpus e mandado de segurança contra autoridade federal, crimes a bordo de navios ou aeronaves, causas sobre nacionalidade e naturalização e a disputa sobre direitos indígenas.",
+   "after": "Entre elas estão as causas em que a União, suas autarquias ou empresas públicas sejam interessadas, salvo as exceções do inciso I. Também estão os crimes contra bens e interesses da União, ressalvadas as Justiças Militar e Eleitoral, e os crimes a bordo de navios ou aeronaves, ressalvada a Justiça Militar. Completam a lista, entre outros, crimes previstos em tratado, crimes contra a organização do trabalho, mandado de segurança contra autoridade federal (salvo competência dos tribunais federais), causas sobre nacionalidade e a disputa sobre direitos indígenas."
+  },
+  {
+   "target_id": "CF88:ART.109:INC.I",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O inciso I atribui aos juízes federais as causas em que a União, entidade autárquica ou empresa pública federal participam como autoras, rés, assistentes ou oponentes.",
+   "after": "O inciso I atribui aos juízes federais as causas de que participem, como autoras, rés, assistentes ou oponentes, a União, uma autarquia federal ou uma empresa pública federal."
+  },
+  {
+   "target_id": "CF88:ART.109:INC.IV",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Ficam excluídas as contravenções penais e ressalvada a competência da Justiça Militar e da Justiça Eleitoral.",
+   "after": "Ficam excluídas as contravenções penais, com ressalva para a competência das Justiças Militar e Eleitoral."
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.1",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada (\"evitar\") reformulada como efeito das regras.",
+   "before": "O resultado é evitar que o cidadão precise se deslocar até a capital federal para se defender ou para reclamar um direito.",
+   "after": "Com isso, o cidadão pode se defender ou reclamar um direito sem ir obrigatoriamente à capital federal."
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 3º permite que a lei autorize que causas da Justiça Federal entre instituição de previdência social e segurado sejam processadas e julgadas na Justiça estadual, quando a comarca do domicílio do segurado não for sede de vara federal.",
+   "after": "O § 3º permite que a lei leve à Justiça estadual causas federais entre instituição de previdência social e segurado, quando não houver vara federal sediada na comarca onde o segurado mora."
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.5",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 5º permite que, nos casos de grave violação de direitos humanos, o Procurador-Geral da República peça",
+   "after": "O § 5º permite que, em caso de violação grave de direitos humanos, o Procurador-Geral da República peça"
+  },
+  {
+   "target_id": "CF88:ART.109:PAR.5",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Generalizacao sobre a pratica (\"muitos crimes\") sem base no texto.",
+   "before": "Em regra, muitos crimes contra direitos humanos são julgados pela Justiça estadual. O parágrafo cria uma via excepcional para levá-los à Justiça Federal.",
+   "after": "O parágrafo cria uma via excepcional para levar à Justiça Federal casos que, pelas regras comuns de competência, não estariam nela."
+  },
+  {
+   "target_id": "CF88:ART.110",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"sempre\" retirado.",
+   "before": "Há uma por Estado e uma no Distrito Federal, sempre com sede na capital.",
+   "after": "Há uma por Estado e uma no Distrito Federal, com sede na capital."
+  },
+  {
+   "target_id": "CF88:ART.110",
+   "section": "atencao",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Afirmacao de fato atual (inexistencia de Territorios) sem proveniencia; substituida por remissao constitucional.",
+   "before": "A localização das varas é definida em lei. Não há Territórios Federais criados atualmente, mas a regra continua no texto.",
+   "after": "A localização das varas é definida em lei. A regra dos Territórios depende da existência de Território Federal, cuja criação é regulada em lei complementar (art. 18, § 2º)."
+  },
+  {
+   "target_id": "CF88:ART.111-A",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O art. 111-A estabelece que o Tribunal Superior do Trabalho tem vinte e sete Ministros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado, entre brasileiros que tenham mais de trinta e cinco e menos de setenta anos, notável saber jurídico e reputação ilibada. Um quinto vem da advocacia e do Ministério Público do Trabalho, com mais de dez anos de atividade,",
+   "after": "O art. 111-A estabelece que o Tribunal Superior do Trabalho tem vinte e sete Ministros, nomeados pelo Presidente da República após aprovação da maioria absoluta do Senado. Eles são escolhidos entre brasileiros que tenham mais de trinta e cinco e menos de setenta anos, notável saber jurídico e reputação ilibada. Um quinto vem da advocacia e do Ministério Público do Trabalho, exigidos mais de dez anos de atividade ou de exercício,"
+  },
+  {
+   "target_id": "CF88:ART.108",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; elemento \"area de jurisdicao\" sem traco.",
+   "before": "Em grau de recurso, julgam as causas decididas pelos juízes federais e pelos juízes estaduais no exercício de competência federal.",
+   "after": "Em grau de recurso, revisam as decisões dos juízes federais da área de jurisdição do tribunal e as dos juízes estaduais quando atuam em competência federal."
+  },
+  {
+   "target_id": "CF88:ART.109:INC.I",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Ficam excluídas as causas de falência, as de acidentes de trabalho e as sujeitas à Justiça Eleitoral e à Justiça do Trabalho.",
+   "after": "Ficam de fora as falências, os acidentes de trabalho e as causas da competência das Justiças Eleitoral e do Trabalho."
+  },
+  {
+   "target_id": "CF88:ART.102:INC.I",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva da alinea c omitida na explicacao do grupo.",
+   "before": "nas infrações penais comuns, e outras autoridades também nos crimes de responsabilidade.",
+   "after": "nas infrações penais comuns, e outras autoridades também nos crimes de responsabilidade, ressalvado o julgamento pelo Senado previsto no art. 52, I."
+  },
+  {
+   "target_id": "CF88:ART.102:INC.I",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "Completam a lista habeas corpus, mandado de segurança e habeas data contra certos atos, litígios com Estados estrangeiros, conflitos entre a União e os Estados,",
+   "after": "Completam a lista habeas corpus, mandado de segurança e habeas data contra certos atos e litígios com Estados estrangeiros. Há ainda conflitos entre a União e os Estados,"
+  },
+  {
+   "target_id": "CF88:ART.105",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Funcao institucional (\"uniformizar\") e leitura doutrinaria, nao texto do artigo.",
+   "before": "O Superior Tribunal de Justiça tem a função de uniformizar a interpretação da lei federal no país.",
+   "after": "O artigo reúne as competências do tribunal em três vias."
+  },
+  {
+   "target_id": "CF88:ART.105",
+   "section": "o_que_significa",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalva da alinea c do inciso I omitida.",
+   "before": "No recurso ordinário, o tribunal revisa decisões que negam habeas corpus ou mandado de segurança nos tribunais de segundo grau, e causas entre Estado estrangeiro e Município ou pessoa residente no país.",
+   "after": "No recurso ordinário, o tribunal revisa decisões de tribunais de segundo grau que negam habeas corpus ou mandado de segurança, e causas entre Estado estrangeiro e Município ou pessoa residente no país. Já o habeas corpus originário tem ressalva em favor da Justiça Eleitoral."
+  },
+  {
+   "target_id": "CF88:ART.114:INC.I",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O texto inclui expressamente os entes de direito público externo e a administração pública direta e indireta da União, dos Estados, do Distrito Federal e dos Municípios.",
+   "after": "O texto menciona expressamente os entes de direito público externo e a administração pública, direta e indireta, de todos os níveis da Federação."
+  },
+  {
+   "target_id": "CF88:ART.114:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 3º estabelece que, em caso de greve em atividade essencial com possibilidade de lesão ao interesse público,",
+   "after": "O § 3º estabelece que, havendo greve em atividade essencial que possa lesar o interesse público,"
+  },
+  {
+   "target_id": "CF88:ART.114:PAR.3",
+   "section": "o_que_significa",
+   "category": "CONTRATO_DO_MOTOR",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Ajuste de redacao para manter as duas condicoes sem copia.",
+   "before": "O texto exige duas condições: atividade essencial e possibilidade de lesão ao interesse público.",
+   "after": "O texto exige duas condições: que a atividade seja essencial e que haja possibilidade de lesão ao interesse público."
+  },
+  {
+   "target_id": "CF88:ART.115",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Um quinto vem da advocacia e do Ministério Público do Trabalho, com mais de dez anos de atividade, observado o art. 94.",
+   "after": "Um quinto vem da advocacia e do Ministério Público do Trabalho, exigidos mais de dez anos de atividade ou de exercício, observado o art. 94."
+  },
+  {
+   "target_id": "CF88:ART.119",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Outros dois são nomeados pelo Presidente da República entre seis advogados de notável saber jurídico e idoneidade moral indicados pelo Supremo.",
+   "after": "Outros dois são advogados de notável saber jurídico e idoneidade moral: o Supremo indica seis nomes, e o Presidente da República nomeia dois."
+  },
+  {
+   "target_id": "CF88:ART.120",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 120 prevê um Tribunal Regional Eleitoral na capital de cada Estado e no Distrito Federal.",
+   "after": "O art. 120 prevê que cada Estado tenha um Tribunal Regional Eleitoral sediado na capital, e que o Distrito Federal também tenha o seu."
+  },
+  {
+   "target_id": "CF88:ART.120",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e dois juízes nomeados pelo Presidente da República entre seis advogados indicados pelo Tribunal de Justiça.",
+   "after": "e dois advogados nomeados pelo Presidente da República a partir de lista de seis nomes do Tribunal de Justiça."
+  },
+  {
+   "target_id": "CF88:ART.120",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "NUMBER_NOT_IN_TEXT",
+   "reason": "Total \"sete\" nao esta no texto do art. 120 (soma inferida).",
+   "before": "A composição soma sete membros: quatro da Justiça estadual, um da Justiça Federal e dois advogados.",
+   "after": "A composição reúne quatro membros da Justiça estadual, um da Justiça Federal e dois advogados."
+  },
+  {
+   "target_id": "CF88:ART.121",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O art. 121 remete à lei complementar a organização e a competência dos tribunais, dos juízes de direito e das juntas eleitorais.",
+   "after": "O art. 121 remete à lei complementar a organização e a competência dos órgãos da Justiça Eleitoral: tribunais, juízes de direito e juntas."
+  },
+  {
+   "target_id": "CF88:ART.121",
+   "section": "o_que_diz",
+   "category": "RESSALVA_OMITIDA",
+   "detector": "RESSALVA_OMITTED_IN_SUMMARY",
+   "reason": "Ressalvas dos §§ 2º e 3º omitidas no resumo.",
+   "before": "Os §§ 2º a 4º tratam do tempo de atuação dos juízes eleitorais e dos recursos contra as decisões dos tribunais eleitorais.",
+   "after": "Os §§ 2º a 4º tratam do tempo de atuação dos juízes eleitorais, salvo motivo justificado, e dos recursos contra as decisões dos tribunais eleitorais, que têm exceções à regra da irrecorribilidade."
+  },
+  {
+   "target_id": "CF88:ART.121",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada no texto.",
+   "before": "e as decisões dos tribunais eleitorais têm recursos restritos, o que contribui para a definição rápida dos resultados.",
+   "after": "e as decisões dos tribunais eleitorais têm recursos restritos."
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; \"nunca\" substituido por \"no maximo\".",
+   "before": "O § 2º determina que os juízes dos tribunais eleitorais sirvam por no mínimo dois anos, salvo motivo justificado, e nunca por mais de dois biênios consecutivos. Os substitutos são escolhidos na mesma ocasião e pelo mesmo processo, em número igual para cada categoria.",
+   "after": "O § 2º determina que os juízes dos tribunais eleitorais sirvam por pelo menos dois anos, salvo motivo justificado, e por no máximo dois biênios seguidos. Os substitutos são escolhidos ao mesmo tempo e da mesma forma que os titulares, na mesma quantidade em cada categoria."
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.2",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "NUMBER_NOT_IN_TEXT",
+   "reason": "\"quatro anos\" nao esta no texto; finalidade (\"rodizio\") nao declarada.",
+   "before": "O limite é de dois biênios seguidos: depois de quatro anos consecutivos, o juiz precisa deixar o tribunal eleitoral. Isso garante rodízio entre os membros.",
+   "after": "O limite é de dois biênios seguidos: completado o segundo biênio consecutivo, o juiz precisa deixar o tribunal eleitoral."
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.2",
+   "section": "palavras_dificeis",
+   "category": "GLOSSARIO",
+   "detector": "TERM_LOW_UTILITY",
+   "reason": "Termo de baixa utilidade substituido.",
+   "before": "{\"termo\": \"Substituto\", \"explicacao\": \"membro que atua no lugar do titular em ausências e impedimentos.\"}",
+   "after": "{\"termo\": \"Categoria\", \"explicacao\": \"cada grupo de origem dos membros, como desembargadores, juízes federais ou advogados.\"}"
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras; frase longa dividida.",
+   "before": "O § 3º declara irrecorríveis as decisões do Tribunal Superior Eleitoral, salvo as que contrariarem a Constituição e as que negarem habeas corpus ou mandado de segurança. O § 4º permite recurso contra decisão dos Tribunais Regionais Eleitorais somente quando ela violar disposição expressa da Constituição ou de lei, divergir de outro tribunal eleitoral na interpretação de lei, tratar de inelegibilidade ou de expedição de diplomas nas eleições federais ou estaduais, anular diplomas ou decretar perda de mandato federal ou estadual, ou negar habeas corpus, mandado de segurança, habeas data ou mandado de injunção.",
+   "after": "O § 3º estabelece que não cabe recurso contra as decisões do Tribunal Superior Eleitoral, salvo quando contrariarem a Constituição ou negarem habeas corpus ou mandado de segurança. O § 4º só admite recurso contra decisão de Tribunal Regional Eleitoral em cinco hipóteses. São elas: violação de disposição expressa da Constituição ou de lei; divergência com outro tribunal eleitoral na interpretação de lei; decisão sobre inelegibilidade ou expedição de diplomas nas eleições federais ou estaduais; anulação de diplomas ou perda de mandato federal ou estadual; e negativa de habeas corpus, mandado de segurança, habeas data ou mandado de injunção."
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.3",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "TELEOLOGY_SPECULATIVE",
+   "reason": "Finalidade nao declarada no texto.",
+   "before": "O processo eleitoral precisa terminar em prazo curto, e os parágrafos limitam os recursos.",
+   "after": "Os parágrafos limitam os recursos no processo eleitoral."
+  },
+  {
+   "target_id": "CF88:ART.123",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O parágrafo único define que os civis são brasileiros com mais de trinta e cinco e menos de setenta anos:",
+   "after": "O parágrafo único exige que os civis sejam brasileiros que tenham mais de trinta e cinco e menos de setenta anos:"
+  },
+  {
+   "target_id": "CF88:ART.123",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "três advogados de notório saber jurídico e conduta ilibada, com mais de dez anos de atividade,",
+   "after": "três advogados de notório saber jurídico e conduta ilibada, exigidos mais de dez anos de atividade profissional,"
+  },
+  {
+   "target_id": "CF88:ART.123",
+   "section": "o_que_significa",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "Em todos os casos, a indicação passa pelo Senado.",
+   "after": "Para os quinze Ministros, a indicação passa pelo Senado."
+  },
+  {
+   "target_id": "CF88:ART.125",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Qualificacao doutrinaria retirada.",
+   "before": "A Justiça estadual é organizada por cada Estado, mas dentro dos limites da Constituição Federal. É expressão da autonomia dos Estados na Federação.",
+   "after": "A Justiça estadual é organizada por cada Estado, mas dentro dos limites da Constituição Federal."
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.2",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 2º atribui aos Estados a criação da representação de inconstitucionalidade de leis ou atos normativos estaduais ou municipais diante da Constituição estadual.",
+   "after": "O § 2º atribui aos Estados a criação da representação de inconstitucionalidade contra leis ou atos normativos estaduais e municipais que contrariem a Constituição do Estado."
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "Em primeiro grau ela é formada pelos juízes de direito e pelos Conselhos de Justiça; em segundo grau, pelo próprio Tribunal de Justiça ou por Tribunal de Justiça Militar, nos Estados com efetivo militar superior a vinte mil integrantes.",
+   "after": "No primeiro grau atuam os juízes de direito e os Conselhos de Justiça. No segundo grau atua o Tribunal de Justiça ou, onde o efetivo militar passar de vinte mil integrantes, um Tribunal de Justiça Militar."
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.3",
+   "section": "o_que_significa",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O tribunal competente decide sobre a perda do posto e da patente dos oficiais e da graduação das praças.",
+   "after": "Cabe ao tribunal competente decidir se oficiais perdem posto e patente e se praças perdem a graduação."
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.3",
+   "section": "o_que_significa",
+   "category": "REMISSAO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Combinacao com o art. 5º explicitada como remissao, sem afirmar alcance alem do texto.",
+   "before": "Há uma ressalva importante: crime doloso contra a vida de civil vai ao júri, e não à Justiça Militar.",
+   "after": "Há uma ressalva: quando a vítima é civil, prevalece a competência do júri, que a Constituição reserva aos crimes dolosos contra a vida (art. 5º, XXXVIII, d)."
+  },
+  {
+   "target_id": "CF88:ART.118",
+   "section": "o_que_significa",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Funcao das juntas vem da lei eleitoral, nao do texto constitucional.",
+   "before": "As juntas eleitorais têm papel ligado à apuração das eleições, e sua organização e competência ficam em lei complementar (art. 121).",
+   "after": "A organização e a competência das juntas eleitorais ficam em lei complementar (art. 121)."
+  },
+  {
+   "target_id": "CF88:ART.118",
+   "section": "palavras_dificeis",
+   "category": "FATO_EXTERNO",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Glossario sem conteudo de lei externa.",
+   "before": "\"explicacao\": \"órgão da Justiça Eleitoral ligado à apuração dos votos.\"",
+   "after": "\"explicacao\": \"órgão colegiado da Justiça Eleitoral, com competência definida em lei complementar.\""
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "decisão sobre inelegibilidade ou expedição de diplomas nas eleições federais ou estaduais;",
+   "after": "decisão sobre inelegibilidade ou sobre a expedição de diplomas em eleições federais ou estaduais;"
+  },
+  {
+   "target_id": "CF88:ART.125:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "O § 4º lhe atribui os crimes militares dos militares estaduais e as ações contra atos disciplinares militares, ressalvada a competência do júri quando a vítima for civil.",
+   "after": "O § 4º lhe atribui os crimes militares dos militares estaduais e as ações judiciais contra punições disciplinares militares, com ressalva para o júri quando a vítima for civil."
+  },
+  {
+   "target_id": "CF88:ART.120",
+   "section": "o_que_significa",
+   "category": "NUMERO",
+   "detector": "NUMBER_NOT_IN_TEXT",
+   "reason": "Contagem agregada (\"quatro\") nao esta no texto.",
+   "before": "A composição reúne quatro membros da Justiça estadual, um da Justiça Federal e dois advogados.",
+   "after": "A composição combina membros da Justiça estadual, da Justiça Federal e da advocacia."
+  },
+  {
+   "target_id": "CF88:ART.121:PAR.3",
+   "section": "o_que_diz",
+   "category": "COPIA_DA_LEI_SECA",
+   "detector": "ENGINE_CONTRACT",
+   "reason": "Copia de mais de 10 palavras.",
+   "before": "e negativa de habeas corpus, mandado de segurança, habeas data ou mandado de injunção.",
+   "after": "e negativa de habeas corpus, habeas data, mandado de segurança ou mandado de injunção."
+  },
+  {
+   "target_id": "CF88:ART.114",
+   "section": "o_que_diz",
+   "category": "FRASE_LONGA",
+   "detector": "LONG_SENTENCE",
+   "reason": "Frase com mais de 45 palavras dividida.",
+   "before": "os mandados de segurança, habeas corpus e habeas data em matéria trabalhista, os conflitos de competência",
+   "after": "os mandados de segurança, habeas corpus e habeas data em matéria trabalhista. Também estão os conflitos de competência"
+  },
+  {
+   "target_id": "CF88:ART.114:INC.I",
+   "section": "o_que_diz",
+   "category": "GENERALIZACAO",
+   "detector": "UNIVERSAL_CLAIM",
+   "reason": "\"todos os\" reformulado.",
+   "before": "de todos os níveis da Federação.",
+   "after": "de qualquer nível da Federação."
+  },
+  {
+   "target_id": "CF88:ART.115",
+   "section": "o_que_diz",
+   "category": "DUPLICACAO",
+   "detector": "DUPLICATION",
+   "reason": "Resumo quase identico ao do art. 107 (estrutura paralela); redacao diferenciada.",
+   "before": "O art. 115 estabelece que os Tribunais Regionais do Trabalho têm no mínimo sete juízes, recrutados quando possível na própria região e nomeados pelo Presidente da República entre brasileiros com mais de trinta e menos de setenta anos. Um quinto vem da advocacia e do Ministério Público do Trabalho, exigidos mais de dez anos de atividade ou de exercício, observado o art. 94. As demais vagas são preenchidas pela promoção de juízes do trabalho, alternando antiguidade e merecimento. Os parágrafos tratam da justiça itinerante e das câmaras regionais.",
+   "after": "O art. 115 fixa a composição dos Tribunais Regionais do Trabalho: pelo menos sete juízes, nomeados pelo Presidente da República entre brasileiros que tenham mais de trinta e menos de setenta anos, recrutados na região quando possível. O quinto destinado a advogados e a membros do Ministério Público do Trabalho segue o art. 94 e exige mais de dez anos de atividade ou de exercício. Nas outras vagas entram juízes do trabalho promovidos, uma vez por antiguidade e outra por merecimento. Os §§ 1º e 2º preveem justiça itinerante e câmaras regionais."
+  },
+  {
+   "target_id": "CF88:ART.115",
+   "section": "o_que_significa",
+   "category": "DUPLICACAO",
+   "detector": "DUPLICATION",
+   "reason": "Frases compartilhadas com o art. 107 reescritas.",
+   "before": "O artigo repete, para a Justiça do Trabalho, o desenho dos Tribunais Regionais Federais: número mínimo, quinto constitucional e promoção de juízes de carreira.\nO número sete é um piso, e não um total fixo.\nOs parágrafos aproximam o tribunal do trabalhador. A justiça itinerante leva audiências a locais distantes, usando equipamentos públicos e comunitários. As câmaras regionais permitem que o tribunal funcione de forma descentralizada.",
+   "after": "O desenho é o mesmo dos Tribunais Regionais Federais (art. 107): número mínimo, quinto constitucional e promoção de juízes de carreira.\nSete é o mínimo de juízes; a lei pode prever mais.\nOs §§ 1º e 2º tratam do acesso do trabalhador ao tribunal: audiências realizadas fora da sede, com apoio de equipamentos públicos e comunitários, e órgãos do tribunal instalados em outras cidades da região."
+  },
+  {
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "section": "o_que_significa",
+   "category": "TELEOLOGIA",
+   "detector": "CRITIC_REVIEW",
+   "reason": "Finalidade (\"transparencia\") nao declarada no texto; achado na revisao cruzada do sub-bloco C.",
+   "before": "\nOs relatórios semestral e anual dão transparência ao funcionamento do Judiciário.",
+   "after": "\nO Conselho também elabora relatório estatístico semestral e relatório anual sobre o Judiciário."
+  }
+ ]
+}
