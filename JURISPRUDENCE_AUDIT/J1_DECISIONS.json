@@ -1,0 +1,2393 @@
+{
+ "artifact": "J1_DECISIONS",
+ "mode": "READ_ONLY",
+ "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)",
+ "inputs": {
+  "j0_sha256": "0bd25c5c11ea2edaa75413f99c6cd755040757b7e54469d9a94cc2ea05e16fc4",
+  "j4_sha256": "0e3c16d78f95d70d74405139d374452009aabc74546dbf665d9e75ff16e27689"
+ },
+ "reconciliation": {
+  "CRITICAL_SIGNAL_COUNT": 8,
+  "PROBABLE_CROSS_NORM_FALSE_POSITIVES": 7,
+  "critical_other": [
+   {
+    "relation_id": "JURISPRUDENCE:STF:RG:231:CF88:78:4:-:-@ADCT:ART.78:PAR.4",
+    "reasons": [
+     "NORM_CONTEXT_NO_NORM_MARKER",
+     "TARGET_STATUS_UNKNOWN_VALIDITY"
+    ]
+   }
+  ],
+  "note": "J0: 8 HIGH = 7 LIKELY_OTHER_NORM_ARTICLE + 1 TARGET_STATUS_UNKNOWN_VALIDITY (ADCT art. 78, § 4º ← Tema 231). A revisão local encontrou mais 13 falsos positivos da mesma classe em sinais MEDIUM/LOW (total 20)."
+ },
+ "summary": {
+  "KEEP_CONFIRMED": 61,
+  "REMOVE_FALSE_POSITIVE": 20,
+  "EXTERNAL_REVIEW_REQUIRED": 4,
+  "DUPLICATE_OR_REDUNDANT": 1,
+  "WEAK_PROVENANCE": 0,
+  "NO_SIGNAL": 191,
+  "TOTAL": 277
+ },
+ "decisions": [
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1031:CF88:16:-:-:-@CF88:ART.16",
+   "target_id": "CF88:ART.16",
+   "precedent": "STF:RG:1031",
+   "processo": "RE 1017365",
+   "tier": 1,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Convenção 169 da OIT, art. 16.4",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "O trecho cita \"art. 16.4 da Convenção 169 OIT\"; o art. 16 da CF é a anterioridade eleitoral. O Tema 1031 segue no art. 231.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "cional compensação às comunidades indígenas (art. 16.4 da Convenção 169 OIT);VIII – A instauração de procedimento de redimensionamento de terra indígena não é vedada em caso de descumprimento dos elementos contidos no artigo 231 da Constituição da República",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "aec00c90d1a6d1eb43ee1b7bba81a0896fb7b97aa6bace0b61f77fc1620d9fcf",
+    "thesis_sha256": "2f54d4134bc3b5d0a28abe4147ddc5644949c87e7fc983703fc288beb24f2ee0"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1031:CF88:231:1:-:-@CF88:ART.231:PAR.1",
+   "target_id": "CF88:ART.231:PAR.1",
+   "precedent": "STF:RG:1031",
+   "processo": "RE 1017365",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "PARENT_CHILD_SAME_SOURCE:CF88:ART.231",
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A tese cita o artigo e o parágrafo separadamente; os dois vínculos são legítimos.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "§ 1º do artigo 231",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "aec00c90d1a6d1eb43ee1b7bba81a0896fb7b97aa6bace0b61f77fc1620d9fcf",
+    "thesis_sha256": "2f54d4134bc3b5d0a28abe4147ddc5644949c87e7fc983703fc288beb24f2ee0"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1157:CF88:19:-:-:-@CF88:ART.19",
+   "target_id": "CF88:ART.19",
+   "precedent": "STF:RG:1157",
+   "processo": "ARE 1306505",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "ADCT, art. 19",
+   "cause": "NAMESPACE_ADCT_LIDO_COMO_CF",
+   "comment": "Estabilidade excepcional do art. 19 do ADCT, não o art. 19 da CF (vedações federativas).",
+   "relocation_candidate": "ADCT:ART.19",
+   "local_evidence": {
+    "excerpt": "beneficiado pela estabilidade excepcional do artigo 19 do ADCT, haja vista que esta regra transitória não prevê o di-reito à efetividade, nos termos do artigo 37, II, da Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8683f1a6b2044fc474d601fe550a0e8dc2a4b4b4a46552231bcfd196a4188c64",
+    "thesis_sha256": "ba75e6ee8cf2cf6ba5007feb1b467ab216f660ea0b84b788fa452b4c290b11b8"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1164:CF88:169:-:-:-@CF88:ART.169",
+   "target_id": "CF88:ART.169",
+   "precedent": "STF:RG:1164",
+   "processo": "RE 1316010",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "visto em lei complementar regulamentadora do art. 169 da Constituição Federal, desde que anterior ao término",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "1e6e75709545e2eec2d9d959be95aad346e5e3b6b0bc0c40e8c2de743e389804",
+    "thesis_sha256": "ba47fbfa0010b8b7da71eba0999a02272322570e3a60356a2476bd2707878bc7"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1169:CF88:5:-:XXXIX:-@CF88:ART.5:INC.XXXIX",
+   "target_id": "CF88:ART.5:INC.XXXIX",
+   "precedent": "STF:RG:1169",
+   "processo": "ARE 1327963",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "legalidade e a taxatividade da norma penal (art. 5º, XXXIX, CF), a alteração promovida pela Lei 13.964/201",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "124b4de6edf585e112c0862981d2e2d6dbf49aa098c18406ffc980736321e5b1",
+    "thesis_sha256": "c514248df3459461966dd052a0a7ddf723aa2e9707502e45277ed7fb8d0d03af"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1182:CF88:7:-:XVIII:-@CF88:ART.7:INC.XVIII",
+   "target_id": "CF88:ART.7:INC.XVIII",
+   "precedent": "STF:RG:1182",
+   "processo": "RE 1348854",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ponsável, a licença maternidade, prevista no art. 7º, XVIII, da CF/88 e regulamentada pelo art. 207 da Lei",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "2f4ea44c1fcd724493c3d946d9d97cd02b6821a16e4b1217b56dc6d884878a2a",
+    "thesis_sha256": "b07f6ff01a30900096d43950077260fd5b5eec9666b0e53d2046b784224333b3"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:123:CF88:5:-:XXXVI:-@CF88:ART.5:INC.XXXVI",
+   "target_id": "CF88:ART.5:INC.XXXVI",
+   "precedent": "STF:RG:123",
+   "processo": "RE 948634",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "As disposições da Lei 9.656/1998, à luz do art. 5º, XXXVI, da Constituição Federal, somente incidem sobre",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "23f805a42642079302c72fe217ef1f80d736457bf83f97b55d2fc018e41f783e",
+    "thesis_sha256": "31ebabda2a83f8710987196cf026c2cd8468f7dfa7ab5f1ab6eaff169ce818d2"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1266:CF88:3:-:-:-@CF88:ART.3",
+   "target_id": "CF88:ART.3",
+   "precedent": "STF:RG:1266",
+   "processo": "RE 1426271",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "LC 190/2022, art. 3º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "O \"art. 3º\" é da LC 190/2022 (vacatio legis do ICMS-DIFAL); a CF citada é o art. 150, III, c.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "I - É Constitucional o art. 3º da Lei Complementar 190/2022, o qual estabelece vacatio legis no prazo correspondente à anterioridade nonagesimal prevista no art. 150, III, ‘c’, da Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "4d21d693ce213953588e30caf5c331202246f4bde2a318ea3517dd0dd9463d3f",
+    "thesis_sha256": "2d7638e5b13be61305f58e7fc090b45cb1423f3fc988ed25a405697b4bd5684d"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:231:CF88:78:4:-:-@ADCT:ART.78:PAR.4",
+   "target_id": "ADCT:ART.78:PAR.4",
+   "precedent": "STF:RG:231",
+   "processo": "RE 597092",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER",
+    "TARGET_STATUS_UNKNOWN_VALIDITY"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A tese completa (arquivada) situa o dispositivo na CF/ADCT corretamente.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "§4º do art. 78",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "ed371116babb656f34a7a3eb517a672199bb75884eff3dd2c3e7a60cb274798a",
+    "thesis_sha256": "7a62ad72c096beb2b3f81afe29c04f76eb1e8d9ec6f19745e2e890c6c80921c6"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:241:CF88:48:-:III:-@CF88:ART.48:INC.III",
+   "target_id": "CF88:ART.48:INC.III",
+   "precedent": "STF:RG:241",
+   "processo": "RE 603583",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Lei 4.215/1963, art. 48, III",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Exame de Ordem previsto no art. 48, III, da antiga Lei 4.215/63.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "O Exame, inicialmente previsto no artigo 48, inciso III, da Lei nº 4.215/63 e hoje no artigo 8º, inciso IV, da Lei nº 8.906/94, mostra-se consentâneo com a Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "4358fc4902d4de37ecf0aeedd76d861aa51e02cdc52ccf75708aee1b0c8cb005",
+    "thesis_sha256": "eb92f557e2b981e2dcc6dffb97567bda8d44299550f474c2301c28f651cdad7f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:241:CF88:8:-:IV:-@CF88:ART.8:INC.IV",
+   "target_id": "CF88:ART.8:INC.IV",
+   "precedent": "STF:RG:241",
+   "processo": "RE 603583",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Lei 8.906/1994 (EOAB), art. 8º, IV",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Exame de Ordem do art. 8º, IV, do Estatuto da OAB; o art. 8º, IV, da CF (contribuição confederativa) não é objeto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "48, inciso III, da Lei nº 4.215/63 e hoje no artigo 8º, inciso IV, da Lei nº 8.906/94, mostra-se consentâneo com a Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "4358fc4902d4de37ecf0aeedd76d861aa51e02cdc52ccf75708aee1b0c8cb005",
+    "thesis_sha256": "eb92f557e2b981e2dcc6dffb97567bda8d44299550f474c2301c28f651cdad7f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:295:CF88:3:-:-:-@CF88:ART.3",
+   "target_id": "CF88:ART.3",
+   "precedent": "STF:RG:295",
+   "processo": "RE 612360",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Lei 8.009/1990, art. 3º, VII",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "O \"art. 3º, VII\" é da Lei 8.009/1990 (fiador/bem de família); o vínculo com o art. 6º da CF permanece.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "de da compatibilidade da exceção prevista no art. 3°, VII, da Lei 8.009/1990 com o direito à moradia consagrado no art. 6° da Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "3e8ca44c351b2667b92dcfcfed8924e0db6c839893e00fddddd915e0ca05fefc",
+    "thesis_sha256": "e68e19073c8d30b0b26e7071f9f5b2c322965bb4bdfa4580e01cea17761e66c4"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:346:CF88:155:2:-:-@CF88:ART.155:PAR.2",
+   "target_id": "CF88:ART.155:PAR.2",
+   "precedent": "STF:RG:346",
+   "processo": "RE 601967",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Não viola o princípio da não cumulatividade (art. 155, §2º, incisos I e XII, alínea c, da CF/1988) lei compl",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8bf874d4be2f690c93ef15130203243c01bd079725e68e61ef445fc9dc6d4c15",
+    "thesis_sha256": "568ef48f3b2a608042f2dc38e6aaf4d4b8386bb914519917e7a88bcb6e752bdc"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:396:CF88:3:-:-:-@CF88:ART.3",
+   "target_id": "CF88:ART.3",
+   "precedent": "STF:RG:396",
+   "processo": "RE 603580",
+   "tier": 1,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "EC 47/2005, art. 3º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Regra de transição do art. 3º da EC 47/2005; o art. 3º da CF (objetivos fundamentais) não é objeto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "enquadrem na regra de transição prevista no art. 3º da EC 47/2005. Não tem, contudo, direito à integralidade (CF",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "3dcae2db1871354e3ad8973004ba57d15074066f11f42c938992b17597924c7d",
+    "thesis_sha256": "33ba05dbcc3cfc92d1b10ffe8701f1be9abbfba26988f715d8b1e68d61859344"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:396:CF88:7:-:-:-@CF88:ART.7",
+   "target_id": "CF88:ART.7",
+   "precedent": "STF:RG:396",
+   "processo": "RE 603580",
+   "tier": 1,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "EC 41/2003, art. 7º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Paridade do art. 7º da EC 41/2003; o art. 7º da CF (direitos dos trabalhadores) não é objeto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ade com servidores em atividade (EC 41/2003, art. 7º), caso se enquadrem na regra de transição prevista no art. 3º da EC 47/2005. Não tem, contudo, direito à integralidade (CF",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "3dcae2db1871354e3ad8973004ba57d15074066f11f42c938992b17597924c7d",
+    "thesis_sha256": "33ba05dbcc3cfc92d1b10ffe8701f1be9abbfba26988f715d8b1e68d61859344"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:400:CF88:96:-:-:-@CF88:ART.96",
+   "target_id": "CF88:ART.96",
+   "precedent": "STF:RG:400",
+   "processo": "RE 1171699",
+   "tier": 1,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "ADCT, art. 96",
+   "cause": "NAMESPACE_ADCT_LIDO_COMO_CF",
+   "comment": "O trecho cita \"art. 96, inserido no Ato das Disposições Constitucionais Transitórias\".",
+   "relocation_candidate": "ADCT:ART.96",
+   "local_evidence": {
+    "excerpt": "tituição da República, não foi afastada pelo art. 96, inserido no Ato das Disposições Constitucionais Transitórias da Constituição da República",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "898af04ace163ba85d6bc54b1230c6e09371a5e9093e41012b48c8e3d8f372d9",
+    "thesis_sha256": "e392ede410b65c0e1e5c6e05c2a7bd2547c92014b825f218a56ae96fb4e7c131"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:455:CF88:5:-:XIII:-@CF88:ART.5:INC.XIII",
+   "target_id": "CF88:ART.5:INC.XIII",
+   "precedent": "STF:RG:455",
+   "processo": "RE 1263641",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "º do Decreto 21.981/1932, é compatível com o artigo 5º, XIII, da CF/1988.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "46f2a3517c7fb37b6120b062819b2d12f1fe4787d63181b1e3cd3485da8db239",
+    "thesis_sha256": "4c9437f304e3bd2d5dcdd0c0d801171776e326d0c04ae5eff037e21b5380e564"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:455:CF88:6:-:-:-@CF88:ART.6",
+   "target_id": "CF88:ART.6",
+   "precedent": "STF:RG:455",
+   "processo": "RE 1263641",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Decreto 21.981/1932, arts. 6º a 8º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Profissão de leiloeiro (arts. 6º a 8º do Decreto 21.981/1932); o vínculo com o art. 5º, XIII, da CF permanece.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ício da profissão de leiloeiro, prevista nos artigos 6º a 8º do Decreto 21.981/1932, é compatível com o artigo 5º, XIII, da CF/1988",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "46f2a3517c7fb37b6120b062819b2d12f1fe4787d63181b1e3cd3485da8db239",
+    "thesis_sha256": "4c9437f304e3bd2d5dcdd0c0d801171776e326d0c04ae5eff037e21b5380e564"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:5:CF88:22:-:VI:-@CF88:ART.22:INC.VI",
+   "target_id": "CF88:ART.22:INC.VI",
+   "precedent": "STF:RG:5",
+   "processo": "RE 561836",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ário e exerceu a sua competência prevista no art. 22, VI, da Constituição de 1988. Assim, qualquer lei, sej",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "73267cc8e169404cf22ecf9106acca6e841d21efcbe84b32b474509b87cc649f",
+    "thesis_sha256": "7bf6745692149f109f33e0406549d402fc1b2a335ca0aaf149e4ec0ba28892ff"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:63:CF88:1:-:-:-@CF88:ART.1",
+   "target_id": "CF88:ART.1",
+   "precedent": "STF:RG:63",
+   "processo": "RE 561485",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Decreto-Lei 491/1969, art. 1º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Tese trata do crédito-prêmio de IPI instituído pelo art. 1º do DL 491/1969; não interpreta o art. 1º da CF.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "fiscal de natureza setorial instituído pelo art. 1º do Decreto-Lei 491/1969, deixou de vigorar em 5/10/1990 ante a ausência de sua confirmação por lei no prazo de dois anos após a publicação da Constituição",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "890fdb9b99101fc9b6fca8ae0d3a2f8a16e6a7b1ba00e02a237a6882ba2fac47",
+    "thesis_sha256": "2564e6db149a3f51c3be73df0219e67dbdc06dbff7abd7f02e0d2b63c704b60d"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:63:CF88:41:1:-:-@CF88:ART.41:PAR.1",
+   "target_id": "CF88:ART.41:PAR.1",
+   "precedent": "STF:RG:63",
+   "processo": "RE 561485",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "ADCT, art. 41, § 1º",
+   "cause": "NAMESPACE_ADCT_LIDO_COMO_CF",
+   "comment": "A tese cita \"§ 1º do art. 41 do ADCT\" (revogação de incentivos fiscais); o art. 41, § 1º, da CF trata da perda do cargo do servidor estável.",
+   "relocation_candidate": "ADCT:ART.41:PAR.1",
+   "local_evidence": {
+    "excerpt": "§ 1º do art. 41",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "890fdb9b99101fc9b6fca8ae0d3a2f8a16e6a7b1ba00e02a237a6882ba2fac47",
+    "thesis_sha256": "2564e6db149a3f51c3be73df0219e67dbdc06dbff7abd7f02e0d2b63c704b60d"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:703:CF88:47:-:-:-@CF88:ART.47",
+   "target_id": "CF88:ART.47",
+   "precedent": "STF:RG:703",
+   "processo": "RE 603116",
+   "tier": 1,
+   "j0_severity": "HIGH",
+   "signal_reasons": [
+    "LIKELY_OTHER_NORM_ARTICLE",
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Lei 6.880/1980 (Estatuto dos Militares), art. 47",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Recepção do art. 47 da Lei 6.880/80; o art. 47 da CF (quórum de deliberação) não é objeto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "O art. 47 da Lei nº 6.880/80 foi recepcionado pela Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8c94b9233782c19e44a0794bcf20d7745a95d68265d762cbb103e4f7e2a80506",
+    "thesis_sha256": "0141137c364c64a8065f29184574388228d2914dcecf1b87f4a2aa5b9ca5a0dc"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:727:CF88:40:4:-:-@CF88:ART.40:PAR.4",
+   "target_id": "CF88:ART.40:PAR.4",
+   "precedent": "STF:RG:727",
+   "processo": "RE 797905",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "nto à edição da lei complementar prevista no art. 40, § 4º, da Constituição de 1988.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "d10f2fd3531020649c6692a659d4df9603b48d01756053611d1e994b96920ff2",
+    "thesis_sha256": "41e58acf8d9a301aad31a22a1e9fa6d5f5b69aa47e0209f73bf1e19d77d57a46"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:739:CF88:97:-:-:-@CF88:ART.97",
+   "target_id": "CF88:ART.97",
+   "precedent": "STF:RG:739",
+   "processo": "ARE 791932",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ervar a cláusula de reserva de Plenário (CF, art. 97), observado o art. 949 do Código de Processo Civil.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "c5dedd4cf710a3f611cb2bb68819bb9fa34cc5815b8c6a88c2103b9e3aaffb6c",
+    "thesis_sha256": "9b11d2e1641c2bcaa385626fd3f88c11bd28748f4cec8302235d3a3c1b53d450"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:847:CF88:98:-:-:-@CF88:ART.98:CAPUT",
+   "target_id": "CF88:ART.98:CAPUT",
+   "precedent": "STF:RG:847",
+   "processo": "RE 887671",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "ADCT, art. 98, caput",
+   "cause": "NAMESPACE_ADCT_LIDO_COMO_CF",
+   "comment": "Lotação de defensores conforme o art. 98 do ADCT (EC 80/2014); o art. 98 da CF trata dos juizados especiais.",
+   "relocation_candidate": "ADCT:ART.98",
+   "local_evidence": {
+    "excerpt": "art. 98, caput e § 2º",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "84f8b90f714677ec53e89828ec4db034d996aaaf69523525c04fb216715eb56d",
+    "thesis_sha256": "c1e0cdf897697dfad2c37c83be625cb756b13fbb71067b2840c8bd224b7b8b87"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:847:CF88:98:2:-:-@CF88:ART.98:PAR.2",
+   "target_id": "CF88:ART.98:PAR.2",
+   "precedent": "STF:RG:847",
+   "processo": "RE 887671",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "ADCT, art. 98, § 2º",
+   "cause": "NAMESPACE_ADCT_LIDO_COMO_CF",
+   "comment": "Mesma tese; o § 2º citado é do art. 98 do ADCT.",
+   "relocation_candidate": "ADCT:ART.98:PAR.2",
+   "local_evidence": {
+    "excerpt": "art. 98, caput e § 2º",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "84f8b90f714677ec53e89828ec4db034d996aaaf69523525c04fb216715eb56d",
+    "thesis_sha256": "c1e0cdf897697dfad2c37c83be625cb756b13fbb71067b2840c8bd224b7b8b87"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:84:CF88:14:2:-:-@CF88:ART.14:PAR.2",
+   "target_id": "CF88:ART.14:PAR.2",
+   "precedent": "STF:RG:84",
+   "processo": "RE 567935",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "Lei 4.502/1964, art. 14, § 2º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Tese declara inconstitucional o § 2º do art. 14 da Lei 4.502/64 (IPI); a CF citada é o art. 146, III, a. O art. 14, § 2º, da CF é alistamento eleitoral.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "§ 2º do artigo 14",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "7d4c2ca1e3ef6f934c58a9b9e36f0dbf39cd189c92cd5b991c144737159f9758",
+    "thesis_sha256": "0d64fd25899ae2e2d2f9d4361830282dd1b252d92cb6fa29cfaa3c8b5ccb9455"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:88:CF88:201:-:-:-@CF88:ART.201:CAPUT",
+   "target_id": "CF88:ART.201:CAPUT",
+   "precedent": "STF:RG:88",
+   "processo": "RE 583834",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ivo do regime geral de previdência (CF/1988, art. 201, caput), o art. 29, § 5º, da Lei nº 8.213/1991 não se",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "deb283c7a3694f279a5f4f01546bb778ddefe93efd4966d9992dda76428ed7ae",
+    "thesis_sha256": "ce06ff76cac951998f4cd4368b6039f7224929d451c48314e04ff66a34fff654"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:92:CF88:167:-:IV:-@CF88:ART.167:INC.IV",
+   "target_id": "CF88:ART.167:INC.IV",
+   "precedent": "STF:RG:92",
+   "processo": "RE 585535",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Não viola o art. 167, IV, da Constituição Federal lei estadual que, ao prev",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "c5b063ddcd9bf58321678039ac89ffded8a3fec32b6a228be736a25baf17c672",
+    "thesis_sha256": "44e13a2f54767739ab3982e3c9f430f68727bfd7bd635b8dd7ca8a0c95e7848b"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:932:CF88:7:-:XXVIII:-@CF88:ART.7:INC.XXVIII",
+   "target_id": "CF88:ART.7:INC.XXVIII",
+   "precedent": "STF:RG:932",
+   "processo": "RE 828040",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "fo único, do Código Civil é compatível com o artigo 7º, XXVIII, da Constituição Federal, sendo constitucional",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6cd115fab5bfcb8cb26287f9930140fa783d97d660bfaade4783fc50322aed9e",
+    "thesis_sha256": "2f8f811a077f07481163286a9228867cedaebbc4bdb363161277036e2743133f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:937:CF88:5:-:LXVII:-@CF88:ART.5:INC.LXVII",
+   "target_id": "CF88:ART.5:INC.LXVII",
+   "precedent": "STF:RG:937",
+   "processo": "ARE 999425",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "a Lei nº 8.137/1990 não violam o disposto no art. 5º, inc. LXVII, da Constituição da República.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "b24e9a06973de47a9b5e33beda6141cd91115ed78cb342bb289510e8ac206385",
+    "thesis_sha256": "b92133c9cb80b192d0abcc95758810a3c298ba7083b5439ccec6400476bb6e29"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:102:-:I:-@CF88:ART.102:INC.I",
+   "target_id": "CF88:ART.102:INC.I",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "por decisão do Supremo Tribunal Federal (CF, art. 102, I, “n”); 10. Resolução conjunta do Conselho Nacional",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:121:2:-:-@CF88:ART.121:PAR.2",
+   "target_id": "CF88:ART.121:PAR.2",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "paga pelo acúmulo de funções eleitorais (CF, art. 121, §2º c/c Lei nº 8.350/1991); 7. Os pagamentos de todas",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:227:-:-:-@CF88:ART.227",
+   "target_id": "CF88:ART.227",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "LC 75/1993, art. 227",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Lista de parcelas remuneratórias cita \"art. 227, da LC nº 75/1993\"; o art. 227 da CF (criança e adolescente) não é objeto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "etivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:975:CF88:43:-:-:-@CF88:ART.43:CAPUT",
+   "target_id": "CF88:ART.43:CAPUT",
+   "precedent": "STF:RG:975",
+   "processo": "RE 1167842",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "LC estadual SP 1.059/2008, art. 43, caput",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Constitucionalidade do art. 43 da LC paulista 1.059/2008 (licença-prêmio); o art. 43 da CF (regiões) não é objeto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "art. 43, caput e § 1º",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "21b8931042551914ebf84bf777becc2adaa65d520a851c5e012b0bf9b00ffb52",
+    "thesis_sha256": "24cbb9a35b8110d869eb3294c8113dad7acb352aa02cf0e0a32d4fd8274e0d9f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:975:CF88:43:1:-:-@CF88:ART.43:PAR.1",
+   "target_id": "CF88:ART.43:PAR.1",
+   "precedent": "STF:RG:975",
+   "processo": "RE 1167842",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_NO_NORM_MARKER"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "LC estadual SP 1.059/2008, art. 43, § 1º",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Mesma tese; o § 1º citado é da LC paulista.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "art. 43, caput e § 1º",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "21b8931042551914ebf84bf777becc2adaa65d520a851c5e012b0bf9b00ffb52",
+    "thesis_sha256": "24cbb9a35b8110d869eb3294c8113dad7acb352aa02cf0e0a32d4fd8274e0d9f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:102:-:I:-@CF88:ART.102:INC.I",
+   "target_id": "CF88:ART.102:INC.I",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "por decisão do Supremo Tribunal Federal (CF, art. 102, I, “n”); 10. Resolução conjunta do Conselho Nacional",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:121:2:-:-@CF88:ART.121:PAR.2",
+   "target_id": "CF88:ART.121:PAR.2",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "O dispositivo é citado como da CF; a outra norma aparece no mesmo trecho apenas como objeto/contexto.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "paga pelo acúmulo de funções eleitorais (CF, art. 121, §2º c/c Lei nº 8.350/1991); 7. Os pagamentos de todas",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:227:-:-:-@CF88:ART.227",
+   "target_id": "CF88:ART.227",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION",
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "REMOVE_FALSE_POSITIVE",
+   "confidence": "ALTA",
+   "cited_norm": "LC 75/1993, art. 227",
+   "cause": "NUMERACAO_DE_OUTRA_NORMA",
+   "comment": "Mesmo trecho do Tema 966 (julgamento conjunto).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "etivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:98:CF88:192:3:-:-@CF88:ART.192:PAR.3",
+   "target_id": "CF88:ART.192:PAR.3",
+   "precedent": "STF:RG:98",
+   "processo": "RE 582650",
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Idem SV 7: § 3º revogado pela EC 40/2003 é o próprio objeto da tese.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "A norma do § 3º do artigo 192 da Constituição, revogada pela Emenda Constitucional n",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "b87ab2bd05d2e7bd5df4051b2cd753369714451c02004f853d422ae00397993c",
+    "thesis_sha256": "9fbcf195b274d9fceb0f640248f88d6f439cf67ee2bc810325f0df6f3767ed32"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:SV:7:CF88:192:3:-:-@CF88:ART.192:PAR.3",
+   "target_id": "CF88:ART.192:PAR.3",
+   "precedent": "STF:SV:7",
+   "processo": null,
+   "tier": 1,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "NORM_CONTEXT_CF_AND_OTHER_NORM_IN_SAME_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Vínculo correto (a SV trata do § revogado); o target revogado aparece com status CURRENT no catálogo de status — registrar para a Lei Seca.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "A norma do § 3º do artigo 192 da Constituição, revogada pela Emenda Constitucional 4",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1205",
+    "official_sha256": "48864f801058f451f056c5aadede32d05362b5059e2b1cd6988d2308bf4b40e5",
+    "thesis_sha256": "ce22e73d354cb3e876d4720eeeef362fe19a1ae697588bb03bfc212db44d7233"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:387:CF88:16:-:-:-@CF88:ART.16",
+   "target_id": "CF88:ART.16",
+   "precedent": "STF:RG:387",
+   "processo": "RE 633703",
+   "tier": 2,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "DUPLICATE_OR_REDUNDANT",
+   "confidence": "ALTA",
+   "cited_norm": "CF, art. 16",
+   "cause": "TESE_IDENTICA_A_OUTRO_PRECEDENTE",
+   "comment": "Texto da tese idêntico ao do Tema 367 no mesmo target; ambos válidos. Decidir se a exibição mantém os dois (temas distintos) ou consolida.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ace do princípio da anterioridade eleitoral (art. 16 da Constituição Federal).",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "82a2eeb4184b464211cbd7f6baf22813297d3340939d45a87315ae420b90f746",
+    "thesis_sha256": "faf66f82949e4bcd07dd5812f40b47f95f9a904d257e805985f299f735b2e5b2"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1031:CF88:231:6:-:-@CF88:ART.231:PAR.6",
+   "target_id": "CF88:ART.231:PAR.6",
+   "precedent": "STF:RG:1031",
+   "processo": "RE 1017365",
+   "tier": 3,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "PARENT_CHILD_SAME_SOURCE:CF88:ART.231"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A tese cita o artigo e o parágrafo separadamente; os dois vínculos são legítimos.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ias úteis e necessárias, previsto no § 6º do art. 231 da CF/88;V – Ausente ocupação tradicional indígena ao",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "aec00c90d1a6d1eb43ee1b7bba81a0896fb7b97aa6bace0b61f77fc1620d9fcf",
+    "thesis_sha256": "2f54d4134bc3b5d0a28abe4147ddc5644949c87e7fc983703fc288beb24f2ee0"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:656:CF88:144:8:-:-@CF88:ART.144:PAR.8",
+   "target_id": "CF88:ART.144:PAR.8",
+   "precedent": "STF:RG:656",
+   "processo": "RE 608588",
+   "tier": 3,
+   "j0_severity": "MEDIUM",
+   "signal_reasons": [
+    "PARENT_CHILD_SAME_SOURCE:CF88:ART.144"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A tese cita o artigo e o parágrafo separadamente; os dois vínculos são legítimos.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "do artigo 129, inciso VII, da CF. Conforme o art. 144, § 8º, da Constituição Federal, as leis municipais dev",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "9feac3e97f4b1a0b9c66bf4901b331468b3dfcc1a5315a03653dcecc65395555",
+    "thesis_sha256": "04e561d4c50858cc841528b4e1a6e9e9794261e510276e10e059e282a712838f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1013:CF88:221:-:-:-@CF88:ART.221",
+   "target_id": "CF88:ART.221",
+   "precedent": "STF:RG:1013",
+   "processo": "RE 1070522",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "sticos e jornalísticos locais, nos termos do artigo 221 da Constituição Federal de 1988.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "3c83b438f2a1951a3f4a161e0844898071bf57f4975f06ddfc8497f43f6b2a49",
+    "thesis_sha256": "92d799568e1770eb9ecad9ea2825a7fb64c7e354fadc420c333d7753f0544376"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1031:CF88:231:-:-:-@CF88:ART.231",
+   "target_id": "CF88:ART.231",
+   "precedent": "STF:RG:1031",
+   "processo": "RE 1017365",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "de descumprimento dos elementos contidos no artigo 231 da Constituição da República, por meio de pedido de re",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "aec00c90d1a6d1eb43ee1b7bba81a0896fb7b97aa6bace0b61f77fc1620d9fcf",
+    "thesis_sha256": "2f54d4134bc3b5d0a28abe4147ddc5644949c87e7fc983703fc288beb24f2ee0"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1120:CF88:2:-:-:-@CF88:ART.2",
+   "target_id": "CF88:ART.2",
+   "precedent": "STF:RG:1120",
+   "processo": "RE 1297884",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ncípio da separação dos poderes, previsto no art. 2º da Constituição Federal, quando não caracterizado o de",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "b4ecce217d293323d44f80ecaf513fda088ef1772ad63b7b2a8508db6145e3db",
+    "thesis_sha256": "ff31aacb8b18fb46184f0b8765bd5aa94a26fd6a2cf7370da3ed21a31c4f1f80"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1180:CF88:133:-:-:-@CF88:ART.133",
+   "target_id": "CF88:ART.133",
+   "precedent": "STF:RG:1180",
+   "processo": "ARE 1336047",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "el à administração da Justiça, nos termos do artigo 133 da Constituição Federal, tendo o Supremo Tribunal Fede",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "96c3f4ece5fd0fbd04a2c6f597fdd2edc2327e755738da36492242edf550d415",
+    "thesis_sha256": "48dfaf8a219a8c06d82b29d2624bf1ab78e27d7faef99a0141adba969677aedd"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1182:CF88:227:-:-:-@CF88:ART.227",
+   "target_id": "CF88:ART.227",
+   "precedent": "STF:RG:1182",
+   "processo": "RE 1348854",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "À luz do art. 227 da CF, que confere proteção integral da criança com ab",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "2f4ea44c1fcd724493c3d946d9d97cd02b6821a16e4b1217b56dc6d884878a2a",
+    "thesis_sha256": "b07f6ff01a30900096d43950077260fd5b5eec9666b0e53d2046b784224333b3"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1254:CF88:40:-:-:-@CF88:ART.40",
+   "target_id": "CF88:ART.40",
+   "precedent": "STF:RG:1254",
+   "processo": "RE 1426306",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Cita o art. 40 \"na redação dada pela EC 20/98\"; vínculo de artigo mantido, com nota temporal.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "públicos civis detentores de cargo efetivo (art. 40, CF, na redação dada pela EC 20/98) são vinculados ao",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "3391190399c469987bbb2c8ce5ebb4a3b57c04adf6b0fe6d9def7d1a4b4b61f8",
+    "thesis_sha256": "c11f4a5bf78c1a99c7408bcd4c10db16e91d5eb7afe8c6270fd32a2ab43bfee9"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:1262:CF88:100:-:-:-@CF88:ART.100",
+   "target_id": "CF88:ART.100",
+   "precedent": "STF:RG:1262",
+   "processo": "RE 1420691",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "constitucional de precatórios, nos termos do art. 100 da Constituição Federal.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "959b9cbecd46437dcf7a46a2570ec637871867befd47b1f91a5b40ddc9b6ca2b",
+    "thesis_sha256": "f4f169cba30479caf62af5e00e5b7034cf7359dee3e26657339816f0fe5a1861"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:147:CF88:100:-:-:-@CF88:ART.100:PAR.1",
+   "target_id": "CF88:ART.100:PAR.1",
+   "precedent": "STF:RG:147",
+   "processo": "RE 591085",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION:WORDING_NOTE"
+   ],
+   "decision": "EXTERNAL_REVIEW_REQUIRED",
+   "confidence": "MEDIA",
+   "cited_norm": "CF, art. 100, § 1º (redação original e EC 30/2000)",
+   "cause": "RENUMERACAO_POR_EMENDA",
+   "comment": "Mesma questão do período de graça; o trecho declara expressamente a redação original/EC 30.",
+   "relocation_candidate": "CF88:ART.100:PAR.5?",
+   "local_evidence": {
+    "excerpt": "urante o período previsto no parágrafo 1º do artigo 100 (redação original e redação da EC 30/2000) da Constituição",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8c679e1f18a9765815de2ea8c57089315fb5f59332cdce0aa0b314484c503474",
+    "thesis_sha256": "81363f164f807c23f0775b2397845ac25022fb76d132e6c0d950cebad079e886"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:160:CF88:40:-:-:-@CF88:ART.40:PAR.12",
+   "target_id": "CF88:ART.40:PAR.12",
+   "precedent": "STF:RG:160",
+   "processo": "RE 596701",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "e a interpretação integrativa dos textos dos artigos 40, §§ 8º e 12, e artigo 195, II, da Constituição da República",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6742702b1b13e3a73612e877e92e55ca8290911ef633d856b23538586d428e53",
+    "thesis_sha256": "c06d36db3f1a128538d87902afd74028fd928ea731f93f96fdab53785ce3b9bf"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:160:CF88:40:-:-:-@CF88:ART.40:PAR.8",
+   "target_id": "CF88:ART.40:PAR.8",
+   "precedent": "STF:RG:160",
+   "processo": "RE 596701",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "e a interpretação integrativa dos textos dos artigos 40, §§ 8º e 12, e artigo 195, II, da Constituição da República",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6742702b1b13e3a73612e877e92e55ca8290911ef633d856b23538586d428e53",
+    "thesis_sha256": "c06d36db3f1a128538d87902afd74028fd928ea731f93f96fdab53785ce3b9bf"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:210:CF88:178:-:-:-@CF88:ART.178",
+   "target_id": "CF88:ART.178",
+   "precedent": "STF:RG:210",
+   "processo": "RE 636331",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Nos termos do art. 178 da Constituição da República, as normas e os tratados",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "02e0d8448c1ad3ecedf78ad93c1ae0b4147257c77479feb2e6a7702b6dcc4e70",
+    "thesis_sha256": "fd4f2cfbebb1f0bf1e11fd5fe5f45435b9d69adebcc9e246e4c43d1d7f34ea20"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:253:CF88:100:-:-:-@CF88:ART.100",
+   "target_id": "CF88:ART.100",
+   "precedent": "STF:RG:253",
+   "processo": "RE 599628",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ficiam do regime de precatórios, previsto no art. 100 da Constituição da República.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "f4db2b421a8474c5e1baf7f594234f23eda004a27f7e33a3592966aa57992735",
+    "thesis_sha256": "d13e3b790ba32202d0ab2a5ce2bea7aabd999f0b04dbb5e09a124a85b70cbdac"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:295:CF88:6:-:-:-@CF88:ART.6",
+   "target_id": "CF88:ART.6",
+   "precedent": "STF:RG:295",
+   "processo": "RE 612360",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "9/1990 com o direito à moradia consagrado no art. 6° da Constituição Federal, com redação da EC 26/2000.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "3e8ca44c351b2667b92dcfcfed8924e0db6c839893e00fddddd915e0ca05fefc",
+    "thesis_sha256": "e68e19073c8d30b0b26e7071f9f5b2c322965bb4bdfa4580e01cea17761e66c4"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:33:CF88:62:-:-:-@CF88:ART.62",
+   "target_id": "CF88:ART.62",
+   "precedent": "STF:RG:33",
+   "processo": "RE 592377",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "isitos de relevância e urgência previstos no art. 62 da Constituição Federal estão presentes na Medida Prov",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "ceb636c2f0cae43f38d9299e773c2b3da03e78c81ea614880f13556d28f91a4f",
+    "thesis_sha256": "f70ec13b3f699047031e8d64c88079bc12dbb906289d61207316d4fe5d1e2371"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:367:CF88:16:-:-:-@CF88:ART.16",
+   "target_id": "CF88:ART.16",
+   "precedent": "STF:RG:367",
+   "processo": "RE 631102",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ace do princípio da anterioridade eleitoral (art. 16 da Constituição Federal).",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "4b81d568a8fd516bc56390d6acaa3604ab4c3284576b0ddd31d4d61eb1b6ecb6",
+    "thesis_sha256": "faf66f82949e4bcd07dd5812f40b47f95f9a904d257e805985f299f735b2e5b2"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:399:CF88:243:-:-:-@CF88:ART.243",
+   "target_id": "CF88:ART.243",
+   "precedent": "STF:RG:399",
+   "processo": "RE 635336",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "A expropriação prevista no art. 243 da Constituição Federal pode ser afastada, desde que o",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "1db2bf50d573ac58fd6f6bbc8cb9cdeaba291e7fdd0b8d3d85b31f197527cb98",
+    "thesis_sha256": "7d309c026d19215c54bbab4fb56e23abed7d548d7e35bedda93f3781162625bf"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:416:CF88:100:-:-:-@CF88:ART.100",
+   "target_id": "CF88:ART.100",
+   "precedent": "STF:RG:416",
+   "processo": "RE 635347",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "a sistemática dos precatórios, nos termos do art. 100 da Constituição Federal.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6a4abf666bb7d12dd9eb37a83ef0b8d71fa478d3cacac77c886823f3b10a333e",
+    "thesis_sha256": "6abe46bcd57ca4e2c76de9abbc844aae2d28faf9ccba89261bc5be292cd33574"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:471:CF88:127:-:-:-@CF88:ART.127",
+   "target_id": "CF88:ART.127",
+   "precedent": "STF:RG:471",
+   "processo": "RE 631111",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Com fundamento no art. 127 da Constituição Federal, o Ministério Público está leg",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "5ddad206d2f8377d7728cbd224fb954f567c46d8805a71f5e65e60642a26a62b",
+    "thesis_sha256": "a7b9bb7aeb50c5d155efa7c77c3ab284d9195adffb1a8485f2da4167eb10965b"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:558:CF88:100:-:-:-@CF88:ART.100:PAR.10",
+   "target_id": "CF88:ART.100:PAR.10",
+   "precedent": "STF:RG:558",
+   "processo": "RE 678360",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "s em precatórios, prevista nos §§ 9º e 10 do art. 100 da Constituição Federal, incluídos pela EC nº 62/09, v",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "1964f4c01218fd1be0837ab7003763ee2719e800d36441e84e5747304337e433",
+    "thesis_sha256": "54e3ddde8417f56b44b37faf659b744f26bf491b808dcb72e05385314f991926"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:558:CF88:100:-:-:-@CF88:ART.100:PAR.9",
+   "target_id": "CF88:ART.100:PAR.9",
+   "precedent": "STF:RG:558",
+   "processo": "RE 678360",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "s em precatórios, prevista nos §§ 9º e 10 do art. 100 da Constituição Federal, incluídos pela EC nº 62/09, v",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "1964f4c01218fd1be0837ab7003763ee2719e800d36441e84e5747304337e433",
+    "thesis_sha256": "54e3ddde8417f56b44b37faf659b744f26bf491b808dcb72e05385314f991926"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:571:CF88:40:-:-:-@CF88:ART.40:PAR.1:INC.II",
+   "target_id": "CF88:ART.40:PAR.1:INC.II",
+   "precedent": "STF:RG:571",
+   "processo": "RE 647827",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "lica a aposentadoria compulsória prevista no artigo 40, parágrafo 1º, inciso II, da Constituição Federal aos",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "deabbc3b1a5ece1d6b94556acb0a7f6ff17f5cadcc83d47270ea3326e97392ce",
+    "thesis_sha256": "7856dcd7cd15a97b666788028c6287aa329d1a35abb35f496deacd3707cc675d"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40:PAR.4",
+   "target_id": "CF88:ART.40:PAR.4",
+   "precedent": "STF:RG:594",
+   "processo": "RE 627294",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION:WORDING_NOTE"
+   ],
+   "decision": "EXTERNAL_REVIEW_REQUIRED",
+   "confidence": "MEDIA",
+   "cited_norm": "CF, art. 40, § 4º (redação anterior à EC 20/1998)",
+   "cause": "REDACAO_ANTERIOR",
+   "comment": "O § 4º atual (local) veda critérios diferenciados; a tese trata das regras na redação anterior à EC 20/98.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "As regras dos parágrafos 4º e 5º do artigo 40 da Constituição Federal, na redação anterior à EC 20/1",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "252618b2e5cee2fffd48a128368a8c70c5929464e19daa2227fc193bf7cbc11e",
+    "thesis_sha256": "ba0c0bc378c7c00f0bb8ec77f385c72847ff8fe2938b084c5a06b3afb6421074"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40:PAR.5",
+   "target_id": "CF88:ART.40:PAR.5",
+   "precedent": "STF:RG:594",
+   "processo": "RE 627294",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION:WORDING_NOTE"
+   ],
+   "decision": "EXTERNAL_REVIEW_REQUIRED",
+   "confidence": "MEDIA",
+   "cited_norm": "CF, art. 40, § 5º (redação anterior à EC 20/1998)",
+   "cause": "REDACAO_ANTERIOR",
+   "comment": "O § 5º atual (local) trata da idade do professor; a tese trata da redação anterior à EC 20/98.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "As regras dos parágrafos 4º e 5º do artigo 40 da Constituição Federal, na redação anterior à EC 20/1",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "252618b2e5cee2fffd48a128368a8c70c5929464e19daa2227fc193bf7cbc11e",
+    "thesis_sha256": "ba0c0bc378c7c00f0bb8ec77f385c72847ff8fe2938b084c5a06b3afb6421074"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:647:CF88:243:-:-:-@CF88:ART.243:PAR.UNICO",
+   "target_id": "CF88:ART.243:PAR.UNICO",
+   "precedent": "STF:RG:647",
+   "processo": "RE 638491",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ito além daqueles previstos expressamente no art. 243, parágrafo único, da Constituição Federal.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "9b8e2b5777a0c048c8e4102ee4cddb3bdf59e40dbf4639381a06743923f8b9ec",
+    "thesis_sha256": "ed1181967a0298762a50d7dddbce9b11ab38b4310f13d9701a1907f90bc098c8"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:656:CF88:144:-:-:-@CF88:ART.144",
+   "target_id": "CF88:ART.144",
+   "precedent": "STF:RG:656",
+   "processo": "RE 608588",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ais órgãos de segurança pública previstos no art. 144 da Constituição Federal e excluída qualquer atividade",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "9feac3e97f4b1a0b9c66bf4901b331468b3dfcc1a5315a03653dcecc65395555",
+    "thesis_sha256": "04e561d4c50858cc841528b4e1a6e9e9794261e510276e10e059e282a712838f"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:815:CF88:183:-:-:-@CF88:ART.183",
+   "target_id": "CF88:ART.183",
+   "precedent": "STF:RG:815",
+   "processo": "RE 422349",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Preenchidos os requisitos do art. 183 da Constituição Federal, o reconhecimento do direito à",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "eb4de54d7ead63dfac7df52f1430b30db15244c48e4cc969ba81bd9206eb02c3",
+    "thesis_sha256": "bcd7209b63123d7a87556f43f1784903694351142c967b676eccbba1808f8b18"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:831:CF88:100:-:-:-@CF88:ART.100",
+   "target_id": "CF88:ART.100",
+   "precedent": "STF:RG:831",
+   "processo": "RE 889173",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "observar o regime de precatórios previsto no artigo 100 da Constituição Federal.",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "7e70cf104a9ea68d49716399c0843fb1ec92199b7615c9f5592aae1c02b05a65",
+    "thesis_sha256": "1157cc985d7bf505ef96b2aa47d860220f840dc45db944aebb1e4849cc8dd942"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:93:CF88:97:-:-:-@CF88:ART.97",
+   "target_id": "CF88:ART.97",
+   "precedent": "STF:RG:93",
+   "processo": "RE 580108",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Viola a cláusula de reserva de plenário (CF, art. 97) a decisão de órgão fracionário de Tribunal que, embor",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "ed908655cc5612163f9e6f90ba3972822dabf07f951e0339abe9980a16c14676",
+    "thesis_sha256": "a81deae813ad6e1206ace8c6f91149530ce414632f4b5487e8dc30fdc5f946fb"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:131:-:-:-@CF88:ART.131",
+   "target_id": "CF88:ART.131",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "F, §2º, art. 134) e a Advocacia Pública (CF, arts. 131 e 132) deverão respeitar o teto constitucional, nos te",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:134:-:-:-@CF88:ART.134:PAR.2",
+   "target_id": "CF88:ART.134:PAR.2",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "art. 75), as Defensorias Públicas (CF, §2º, art. 134) e a Advocacia Pública (CF, arts. 131 e 132) deverão r",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:73:-:-:-@CF88:ART.73:PAR.3",
+   "target_id": "CF88:ART.73:PAR.3",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ntrole; 11. Os Tribunais de Contas (CF, §3º, art. 73 e art. 75), as Defensorias Públicas (CF, §2º, art. 134",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:966:CF88:75:-:-:-@CF88:ART.75",
+   "target_id": "CF88:ART.75",
+   "precedent": "STF:RG:966",
+   "processo": "RE 1059466",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": ". Os Tribunais de Contas (CF, §3º, art. 73 e art. 75), as Defensorias Públicas (CF, §2º, art. 134) e a Advo",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:969:CF88:5:-:-:-@CF88:ART.5:INC.II",
+   "target_id": "CF88:ART.5:INC.II",
+   "precedent": "STF:RG:969",
+   "processo": "RE 902261",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "fiscalização, são constitucionais, à luz dos arts. 5º, incs. II e XIII, 84, incs. II e VI, 87, parágrafo único e inc. II, 88, 170 e 174 da Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "35922ba56fc7f17baa80cdf67af26141d5a292c6342b7e223c2823f232c54892",
+    "thesis_sha256": "91ad321a9f0b6c6775ddbbb47cc4746d4f9f83017a726a271e01e85fdb6c3d5d"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:969:CF88:5:-:-:-@CF88:ART.5:INC.XIII",
+   "target_id": "CF88:ART.5:INC.XIII",
+   "precedent": "STF:RG:969",
+   "processo": "RE 902261",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "fiscalização, são constitucionais, à luz dos arts. 5º, incs. II e XIII, 84, incs. II e VI, 87, parágrafo único e inc. II, 88, 170 e 174 da Constituição Federal",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "35922ba56fc7f17baa80cdf67af26141d5a292c6342b7e223c2823f232c54892",
+    "thesis_sha256": "91ad321a9f0b6c6775ddbbb47cc4746d4f9f83017a726a271e01e85fdb6c3d5d"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:131:-:-:-@CF88:ART.131",
+   "target_id": "CF88:ART.131",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "F, §2º, art. 134) e a Advocacia Pública (CF, arts. 131 e 132) deverão respeitar o teto constitucional, nos te",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:134:-:-:-@CF88:ART.134:PAR.2",
+   "target_id": "CF88:ART.134:PAR.2",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "art. 75), as Defensorias Públicas (CF, §2º, art. 134) e a Advocacia Pública (CF, arts. 131 e 132) deverão r",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:73:-:-:-@CF88:ART.73:PAR.3",
+   "target_id": "CF88:ART.73:PAR.3",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "ntrole; 11. Os Tribunais de Contas (CF, §3º, art. 73 e art. 75), as Defensorias Públicas (CF, §2º, art. 134",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:976:CF88:75:-:-:-@CF88:ART.75",
+   "target_id": "CF88:ART.75",
+   "precedent": "STF:RG:976",
+   "processo": "RE 968646",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": ". Os Tribunais de Contas (CF, §3º, art. 73 e art. 75), as Defensorias Públicas (CF, §2º, art. 134) e a Advo",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:995:CF88:5:-:-:-@CF88:ART.5:INC.V",
+   "target_id": "CF88:ART.5:INC.V",
+   "precedent": "STF:RG:995",
+   "processo": "RE 1075412",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "onsabilidade nos termos dos incisos V e X do artigo 5º da Constituição Federal; 3. Constatada a falsidade ref",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "fc0f123c612270f4a15a7a16d466e56a8058e0a6f0bcfd5ab9566093c1ffdc5f",
+    "thesis_sha256": "b070b4421aef0026bafc10789b18737f15f1cc038416b080670e50127a969ad5"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:RG:995:CF88:5:-:-:-@CF88:ART.5:INC.X",
+   "target_id": "CF88:ART.5:INC.X",
+   "precedent": "STF:RG:995",
+   "processo": "RE 1075412",
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "Split determinístico fiel à citação literal da CF (cada dispositivo nomeado vira um vínculo).",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "onsabilidade nos termos dos incisos V e X do artigo 5º da Constituição Federal; 3. Constatada a falsidade ref",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "official_sha256": "fc0f123c612270f4a15a7a16d466e56a8058e0a6f0bcfd5ab9566093c1ffdc5f",
+    "thesis_sha256": "b070b4421aef0026bafc10789b18737f15f1cc038416b080670e50127a969ad5"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:SV:10:CF88:97:-:-:-@CF88:ART.97",
+   "target_id": "CF88:ART.97",
+   "precedent": "STF:SV:10",
+   "processo": null,
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS"
+   ],
+   "decision": "KEEP_CONFIRMED",
+   "confidence": "ALTA",
+   "cited_norm": "CF",
+   "cause": null,
+   "comment": "A citação nomeia o artigo da CF sem subdivisão; a granularidade do vínculo é fiel à fonte.",
+   "relocation_candidate": null,
+   "local_evidence": {
+    "excerpt": "Viola a cláusula de reserva de plenário (CF, artigo 97) a decisão de órgão fracionário de tribunal que, embor",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1216",
+    "official_sha256": "7ba69c2053c5dadbba8bce6433d3550fd46626f816e4a9e1f24901894b3bc647",
+    "thesis_sha256": "81b91c6a897ac6e88c193d7bd72b89ba5df1ff13a30e17f75600ce0ef2fedfc8"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  },
+  {
+   "relation_id": "JURISPRUDENCE:STF:SV:17:CF88:100:-:-:-@CF88:ART.100:PAR.1",
+   "target_id": "CF88:ART.100:PAR.1",
+   "precedent": "STF:SV:17",
+   "processo": null,
+   "tier": 5,
+   "j0_severity": "LOW",
+   "signal_reasons": [
+    "SPLIT_FROM_MIXED_CITATION"
+   ],
+   "decision": "EXTERNAL_REVIEW_REQUIRED",
+   "confidence": "MEDIA",
+   "cited_norm": "CF, art. 100, § 1º (redação anterior à EC 62/2009)",
+   "cause": "RENUMERACAO_POR_EMENDA",
+   "comment": "SV 17 refere-se ao \"período previsto no § 1º\"; o § 1º atual (local) define débitos alimentícios e o prazo de pagamento está no § 5º. Confirmar correspondência antes de realocar.",
+   "relocation_candidate": "CF88:ART.100:PAR.5?",
+   "local_evidence": {
+    "excerpt": "urante o período previsto no parágrafo 1º do artigo 100 da Constituição, não incidem juros de mora sobre os pr",
+    "source": "J4 VINCULOS_EXPLICITOS.evidencia_vinculo (texto oficial arquivado)",
+    "official_url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1241",
+    "official_sha256": "9868768904b9ab69069858f585fe0f97dc31e47b6de94766a830a62c2a7e11d6",
+    "thesis_sha256": "ed04bbda217e266de41668104bd354ff5d549a028cf999c31c1f441fd779cb64"
+   },
+   "authority": "CLAUDE_LOCAL_EVIDENCE_REVIEW_2026-10-16 (pendente de ratificação humana; sem web)"
+  }
+ ],
+ "no_signal_light_control": {
+  "relations": 191,
+  "classification": "NO_SIGNAL_KEEP_PENDING_GLOBAL_REVIEW",
+  "structure_ok": true,
+  "broader_other_norm_scan_hits": 5,
+  "needs_look": 0,
+  "scan": [
+   {
+    "relation_id": "JURISPRUDENCE:STF:RG:1167:CF88:40:7:-:-@CF88:ART.40:PAR.7",
+    "target_id": "CF88:ART.40:PAR.7",
+    "precedent": "STF:RG:1167",
+    "hits": [
+     "art. 40, § 7º, da Constituição Federal, na redação da Emenda Constitucional"
+    ],
+    "verdict": "CF_CITATION_WITH_AMENDMENT_WORDING_NOTE"
+   },
+   {
+    "relation_id": "JURISPRUDENCE:STF:RG:1177:CF88:22:-:XXI:-@CF88:ART.22:INC.XXI",
+    "target_id": "CF88:ART.22:INC.XXI",
+    "precedent": "STF:RG:1177",
+    "hits": [
+     "artigo 22, XXI, da Constituição, na redação da Emenda Constitucional"
+    ],
+    "verdict": "CF_CITATION_WITH_AMENDMENT_WORDING_NOTE"
+   },
+   {
+    "relation_id": "JURISPRUDENCE:STF:RG:1207:CF88:40:1:III:-@CF88:ART.40:PAR.1:INC.III",
+    "target_id": "CF88:ART.40:PAR.1:INC.III",
+    "precedent": "STF:RG:1207",
+    "hits": [
+     "artigo 40, § 1º, inciso III, da Constituição Federal, na redação da Emenda Constitucional"
+    ],
+    "verdict": "CF_CITATION_WITH_AMENDMENT_WORDING_NOTE"
+   },
+   {
+    "relation_id": "JURISPRUDENCE:STF:RG:282:CF88:37:-:XI:-@CF88:ART.37:INC.XI",
+    "target_id": "CF88:ART.37:INC.XI",
+    "precedent": "STF:RG:282",
+    "hits": [
+     "artigo 37 da Constituição Federal, decorrente da redação da Emenda Constitucional"
+    ],
+    "verdict": "CF_CITATION_WITH_AMENDMENT_WORDING_NOTE"
+   },
+   {
+    "relation_id": "JURISPRUDENCE:STF:RG:825:CF88:155:1:III:-@CF88:ART.155:PAR.1:INC.III",
+    "target_id": "CF88:ART.155:PAR.1:INC.III",
+    "precedent": "STF:RG:825",
+    "hits": [
+     "art. 155, § 1º, III, da Constituição Federal sem a intervenção da lei"
+    ],
+    "verdict": "CF_CITATION_WITH_AMENDMENT_WORDING_NOTE"
+   }
+  ]
+ },
+ "identical_theses": [
+  [
+   "STF:RG:367",
+   "STF:RG:387"
+  ],
+  [
+   "STF:RG:40",
+   "STF:SV:12"
+  ],
+  [
+   "STF:RG:533",
+   "STF:RG:987"
+  ],
+  [
+   "STF:RG:61",
+   "STF:SV:18"
+  ],
+  [
+   "STF:RG:630",
+   "STF:RG:684"
+  ]
+ ],
+ "removal_impact": {
+  "relations_before": 277,
+  "proposed_removals": 20,
+  "relations_after": 257,
+  "targets_touched": 17,
+  "targets_losing_last_j": 13,
+  "targets_keeping_j": 4,
+  "targets_losing_last_j_list": [
+   "CF88:ART.1",
+   "CF88:ART.14:PAR.2",
+   "CF88:ART.19",
+   "CF88:ART.3",
+   "CF88:ART.41:PAR.1",
+   "CF88:ART.43:CAPUT",
+   "CF88:ART.43:PAR.1",
+   "CF88:ART.47",
+   "CF88:ART.48:INC.III",
+   "CF88:ART.7",
+   "CF88:ART.96",
+   "CF88:ART.98:CAPUT",
+   "CF88:ART.98:PAR.2"
+  ],
+  "j_flags_that_would_change": [
+   {
+    "target_id": "CF88:ART.1",
+    "before": "E-J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.14:PAR.2",
+    "before": "B-J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.19",
+    "before": "E-J-RX",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.3",
+    "before": "E-J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.41:PAR.1",
+    "before": "E-J-RX",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.43:CAPUT",
+    "before": "--JWR-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.43:PAR.1",
+    "before": "--J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.47",
+    "before": "E-J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.48:INC.III",
+    "before": "--J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.7",
+    "before": "E-J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.96",
+    "before": "E-J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.98:CAPUT",
+    "before": "--J-R-",
+    "after_position2": "-"
+   },
+   {
+    "target_id": "CF88:ART.98:PAR.2",
+    "before": "--J-R-",
+    "after_position2": "-"
+   }
+  ],
+  "reader_lines_losing_2_juris": [
+   "CF88:ART.1",
+   "CF88:ART.14:PAR.2",
+   "CF88:ART.19",
+   "CF88:ART.3",
+   "CF88:ART.41:PAR.1",
+   "CF88:ART.43",
+   "CF88:ART.43:PAR.1",
+   "CF88:ART.47",
+   "CF88:ART.48:INC.III",
+   "CF88:ART.7",
+   "CF88:ART.96",
+   "CF88:ART.98",
+   "CF88:ART.98:PAR.2"
+  ],
+  "relocation_candidates": [
+   "ADCT:ART.19",
+   "ADCT:ART.41:PAR.1",
+   "ADCT:ART.96",
+   "ADCT:ART.98",
+   "ADCT:ART.98:PAR.2"
+  ],
+  "note": "Simulação lógica. Materializar exige export RUN6 com exclusões (CF88_LINK_EXCLUSIONS) e prova de invariância das camadas congeladas."
+ },
+ "backlog_148_touched": false
+}
