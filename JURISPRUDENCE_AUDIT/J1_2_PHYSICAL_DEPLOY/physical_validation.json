@@ -1,0 +1,60 @@
+{
+ "result": "SD_VALIDATED",
+ "readback": {
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+   "bytes": 62528,
+   "sha256": "1f87d1af57f1ecd4171212c23414c7e8540099ef20d62607a49a255746efc5e3"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+   "bytes": 6476,
+   "sha256": "53ed70579c5f4a8f6182f19f3020b231aa3af34f11045f159321c0eb0995664c"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+   "bytes": 165466,
+   "sha256": "8eb99cd5d03b058437d4e024ea68dbb0a45daa37f56d69de7e27f81ad8b7dc1e"
+  },
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": {
+   "bytes": 7644,
+   "sha256": "d6d5fc360a2878573c3f0ce642c8be48cd86b4a1cb0ca51d8e1b375b78f2fcf6"
+  },
+  "99_LEX_V1/00_SYS/LEXV1.VER": {
+   "bytes": 594,
+   "sha256": "9366524ec7a54f37175de76e6201a944e9c83b142ecfbba3c8096d0cd1c6acd0"
+  }
+ },
+ "mismatch": [],
+ "diff_full": {
+  "added": [],
+  "removed": [],
+  "changed": [
+   "99_LEX_V1/00_SYS/LEXV1.VER",
+   "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+  ]
+ },
+ "files_written": 5,
+ "manifest_vs_card": "PASS",
+ "manifest_entries_checked": 10,
+ "correlata_files_unchanged": {
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX": true,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": true,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": true
+ },
+ "other_files_untouched": true,
+ "file_count_pre": 1142,
+ "file_count_post": 1142,
+ "candidate": {
+  "build_id": "c4046eaca3ef18a2",
+  "git_commit": "6d1c65ecba4ed6abce101d59d205caaa42879636",
+  "reference_engine": {
+   "tag": "cf-reference-engine-run6-juris-j1",
+   "run": "run6",
+   "status": "RUN6_JURIS_J1_CANDIDATE_HOST_ONLY",
+   "derived_from": "run5 (REFERENCES 4 physically approved) − 20 jurisprudence false positives (CF88_LINK_EXCLUSIONS_J1, ratified 20/20)"
+  }
+ }
+}
