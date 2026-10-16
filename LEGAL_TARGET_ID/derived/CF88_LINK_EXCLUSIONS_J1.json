@@ -1,0 +1,437 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J1.1",
+ "policy": "Overlay editorial de vínculos de jurisprudência materialmente incorretos (falsos positivos de numeração: dispositivo de outra norma ou do ADCT lido como da CF). Mesmo mecanismo de CF88_LINK_EXCLUSIONS.json: cada registro retira exatamente um vínculo (reference_id) do export visível; o corpus J4 e o catálogo canônico não são editados. Fail closed.",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-16",
+  "statement": "J1_REMOVE_FALSE_POSITIVE_APPROVED = 20/20",
+  "scope": "Remover somente os 20 vínculos errados da CF (15 de outra norma, 5 do ADCT lidos como CF); sem realocação para o ADCT; preservar todos os demais vínculos; EXTERNAL_REVIEW_REQUIRED (4) e DUPLICATE_OR_REDUNDANT (1) permanecem pendentes; backlog 148 intocado."
+ },
+ "decisions_file": "JURISPRUDENCE_AUDIT/J1_DECISIONS.json",
+ "decisions_sha256": "fde02e9248166216779e35a4bee3f9d4d1b03ea0b4deff72e3bdb87564eac275",
+ "total": 20,
+ "records": [
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:1031:CF88:16:-:-:-@CF88:ART.16",
+   "target_id": "CF88:ART.16",
+   "source_id": "STF:RG:1031",
+   "source_reference_id": "STF:RG:1031:CF88:16:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:1031 (RE 1017365): o dispositivo citado é Convenção 169 da OIT, art. 16.4.",
+   "expected_subject": "CF88:ART.16 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: O trecho cita \"art. 16.4 da Convenção 169 OIT\"; o art. 16 da CF é a anterioridade eleitoral. O Tema 1031 segue no art. 231.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "2f54d4134bc3b5d0a28abe4147ddc5644949c87e7fc983703fc288beb24f2ee0",
+    "official_content_sha256": "aec00c90d1a6d1eb43ee1b7bba81a0896fb7b97aa6bace0b61f77fc1620d9fcf",
+    "excerpt": "cional compensação às comunidades indígenas (art. 16.4 da Convenção 169 OIT);VIII – A instauração de procedimento de redimensionamento de terra indígena não é vedada em caso de descumprimento dos elementos contidos no artigo 231 da Constituição da República",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-01), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:1157:CF88:19:-:-:-@CF88:ART.19",
+   "target_id": "CF88:ART.19",
+   "source_id": "STF:RG:1157",
+   "source_reference_id": "STF:RG:1157:CF88:19:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:1157 (ARE 1306505): o dispositivo citado é ADCT, art. 19.",
+   "expected_subject": "CF88:ART.19 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NAMESPACE_ADCT_LIDO_COMO_CF: Estabilidade excepcional do art. 19 do ADCT, não o art. 19 da CF (vedações federativas).",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "ba75e6ee8cf2cf6ba5007feb1b467ab216f660ea0b84b788fa452b4c290b11b8",
+    "official_content_sha256": "8683f1a6b2044fc474d601fe550a0e8dc2a4b4b4a46552231bcfd196a4188c64",
+    "excerpt": "beneficiado pela estabilidade excepcional do artigo 19 do ADCT, haja vista que esta regra transitória não prevê o di-reito à efetividade, nos termos do artigo 37, II, da Constituição Federal",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": "ADCT:ART.19",
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-02), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:1266:CF88:3:-:-:-@CF88:ART.3",
+   "target_id": "CF88:ART.3",
+   "source_id": "STF:RG:1266",
+   "source_reference_id": "STF:RG:1266:CF88:3:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:1266 (RE 1426271): o dispositivo citado é LC 190/2022, art. 3º.",
+   "expected_subject": "CF88:ART.3 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: O \"art. 3º\" é da LC 190/2022 (vacatio legis do ICMS-DIFAL); a CF citada é o art. 150, III, c.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "2d7638e5b13be61305f58e7fc090b45cb1423f3fc988ed25a405697b4bd5684d",
+    "official_content_sha256": "4d21d693ce213953588e30caf5c331202246f4bde2a318ea3517dd0dd9463d3f",
+    "excerpt": "I - É Constitucional o art. 3º da Lei Complementar 190/2022, o qual estabelece vacatio legis no prazo correspondente à anterioridade nonagesimal prevista no art. 150, III, ‘c’, da Constituição Federal",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-03), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:241:CF88:48:-:III:-@CF88:ART.48:INC.III",
+   "target_id": "CF88:ART.48:INC.III",
+   "source_id": "STF:RG:241",
+   "source_reference_id": "STF:RG:241:CF88:48:-:III:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:241 (RE 603583): o dispositivo citado é Lei 4.215/1963, art. 48, III.",
+   "expected_subject": "CF88:ART.48:INC.III (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Exame de Ordem previsto no art. 48, III, da antiga Lei 4.215/63.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "eb92f557e2b981e2dcc6dffb97567bda8d44299550f474c2301c28f651cdad7f",
+    "official_content_sha256": "4358fc4902d4de37ecf0aeedd76d861aa51e02cdc52ccf75708aee1b0c8cb005",
+    "excerpt": "O Exame, inicialmente previsto no artigo 48, inciso III, da Lei nº 4.215/63 e hoje no artigo 8º, inciso IV, da Lei nº 8.906/94, mostra-se consentâneo com a Constituição Federal",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-04), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:241:CF88:8:-:IV:-@CF88:ART.8:INC.IV",
+   "target_id": "CF88:ART.8:INC.IV",
+   "source_id": "STF:RG:241",
+   "source_reference_id": "STF:RG:241:CF88:8:-:IV:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:241 (RE 603583): o dispositivo citado é Lei 8.906/1994 (EOAB), art. 8º, IV.",
+   "expected_subject": "CF88:ART.8:INC.IV (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Exame de Ordem do art. 8º, IV, do Estatuto da OAB; o art. 8º, IV, da CF (contribuição confederativa) não é objeto.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "eb92f557e2b981e2dcc6dffb97567bda8d44299550f474c2301c28f651cdad7f",
+    "official_content_sha256": "4358fc4902d4de37ecf0aeedd76d861aa51e02cdc52ccf75708aee1b0c8cb005",
+    "excerpt": "48, inciso III, da Lei nº 4.215/63 e hoje no artigo 8º, inciso IV, da Lei nº 8.906/94, mostra-se consentâneo com a Constituição Federal",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-05), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:295:CF88:3:-:-:-@CF88:ART.3",
+   "target_id": "CF88:ART.3",
+   "source_id": "STF:RG:295",
+   "source_reference_id": "STF:RG:295:CF88:3:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:295 (RE 612360): o dispositivo citado é Lei 8.009/1990, art. 3º, VII.",
+   "expected_subject": "CF88:ART.3 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: O \"art. 3º, VII\" é da Lei 8.009/1990 (fiador/bem de família); o vínculo com o art. 6º da CF permanece.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "e68e19073c8d30b0b26e7071f9f5b2c322965bb4bdfa4580e01cea17761e66c4",
+    "official_content_sha256": "3e8ca44c351b2667b92dcfcfed8924e0db6c839893e00fddddd915e0ca05fefc",
+    "excerpt": "de da compatibilidade da exceção prevista no art. 3°, VII, da Lei 8.009/1990 com o direito à moradia consagrado no art. 6° da Constituição Federal",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-06), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:396:CF88:3:-:-:-@CF88:ART.3",
+   "target_id": "CF88:ART.3",
+   "source_id": "STF:RG:396",
+   "source_reference_id": "STF:RG:396:CF88:3:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:396 (RE 603580): o dispositivo citado é EC 47/2005, art. 3º.",
+   "expected_subject": "CF88:ART.3 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Regra de transição do art. 3º da EC 47/2005; o art. 3º da CF (objetivos fundamentais) não é objeto.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "33ba05dbcc3cfc92d1b10ffe8701f1be9abbfba26988f715d8b1e68d61859344",
+    "official_content_sha256": "3dcae2db1871354e3ad8973004ba57d15074066f11f42c938992b17597924c7d",
+    "excerpt": "enquadrem na regra de transição prevista no art. 3º da EC 47/2005. Não tem, contudo, direito à integralidade (CF",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-07), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:396:CF88:7:-:-:-@CF88:ART.7",
+   "target_id": "CF88:ART.7",
+   "source_id": "STF:RG:396",
+   "source_reference_id": "STF:RG:396:CF88:7:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:396 (RE 603580): o dispositivo citado é EC 41/2003, art. 7º.",
+   "expected_subject": "CF88:ART.7 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Paridade do art. 7º da EC 41/2003; o art. 7º da CF (direitos dos trabalhadores) não é objeto.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "33ba05dbcc3cfc92d1b10ffe8701f1be9abbfba26988f715d8b1e68d61859344",
+    "official_content_sha256": "3dcae2db1871354e3ad8973004ba57d15074066f11f42c938992b17597924c7d",
+    "excerpt": "ade com servidores em atividade (EC 41/2003, art. 7º), caso se enquadrem na regra de transição prevista no art. 3º da EC 47/2005. Não tem, contudo, direito à integralidade (CF",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-08), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:400:CF88:96:-:-:-@CF88:ART.96",
+   "target_id": "CF88:ART.96",
+   "source_id": "STF:RG:400",
+   "source_reference_id": "STF:RG:400:CF88:96:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:400 (RE 1171699): o dispositivo citado é ADCT, art. 96.",
+   "expected_subject": "CF88:ART.96 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NAMESPACE_ADCT_LIDO_COMO_CF: O trecho cita \"art. 96, inserido no Ato das Disposições Constitucionais Transitórias\".",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "e392ede410b65c0e1e5c6e05c2a7bd2547c92014b825f218a56ae96fb4e7c131",
+    "official_content_sha256": "898af04ace163ba85d6bc54b1230c6e09371a5e9093e41012b48c8e3d8f372d9",
+    "excerpt": "tituição da República, não foi afastada pelo art. 96, inserido no Ato das Disposições Constitucionais Transitórias da Constituição da República",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": "ADCT:ART.96",
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-09), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:455:CF88:6:-:-:-@CF88:ART.6",
+   "target_id": "CF88:ART.6",
+   "source_id": "STF:RG:455",
+   "source_reference_id": "STF:RG:455:CF88:6:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:455 (RE 1263641): o dispositivo citado é Decreto 21.981/1932, arts. 6º a 8º.",
+   "expected_subject": "CF88:ART.6 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Profissão de leiloeiro (arts. 6º a 8º do Decreto 21.981/1932); o vínculo com o art. 5º, XIII, da CF permanece.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "4c9437f304e3bd2d5dcdd0c0d801171776e326d0c04ae5eff037e21b5380e564",
+    "official_content_sha256": "46f2a3517c7fb37b6120b062819b2d12f1fe4787d63181b1e3cd3485da8db239",
+    "excerpt": "ício da profissão de leiloeiro, prevista nos artigos 6º a 8º do Decreto 21.981/1932, é compatível com o artigo 5º, XIII, da CF/1988",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-10), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:63:CF88:1:-:-:-@CF88:ART.1",
+   "target_id": "CF88:ART.1",
+   "source_id": "STF:RG:63",
+   "source_reference_id": "STF:RG:63:CF88:1:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:63 (RE 561485): o dispositivo citado é Decreto-Lei 491/1969, art. 1º.",
+   "expected_subject": "CF88:ART.1 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Tese trata do crédito-prêmio de IPI instituído pelo art. 1º do DL 491/1969; não interpreta o art. 1º da CF.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "2564e6db149a3f51c3be73df0219e67dbdc06dbff7abd7f02e0d2b63c704b60d",
+    "official_content_sha256": "890fdb9b99101fc9b6fca8ae0d3a2f8a16e6a7b1ba00e02a237a6882ba2fac47",
+    "excerpt": "fiscal de natureza setorial instituído pelo art. 1º do Decreto-Lei 491/1969, deixou de vigorar em 5/10/1990 ante a ausência de sua confirmação por lei no prazo de dois anos após a publicação da Constituição",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-11), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:63:CF88:41:1:-:-@CF88:ART.41:PAR.1",
+   "target_id": "CF88:ART.41:PAR.1",
+   "source_id": "STF:RG:63",
+   "source_reference_id": "STF:RG:63:CF88:41:1:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:63 (RE 561485): o dispositivo citado é ADCT, art. 41, § 1º.",
+   "expected_subject": "CF88:ART.41:PAR.1 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NAMESPACE_ADCT_LIDO_COMO_CF: A tese cita \"§ 1º do art. 41 do ADCT\" (revogação de incentivos fiscais); o art. 41, § 1º, da CF trata da perda do cargo do servidor estável.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "2564e6db149a3f51c3be73df0219e67dbdc06dbff7abd7f02e0d2b63c704b60d",
+    "official_content_sha256": "890fdb9b99101fc9b6fca8ae0d3a2f8a16e6a7b1ba00e02a237a6882ba2fac47",
+    "excerpt": "§ 1º do art. 41",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": "ADCT:ART.41:PAR.1",
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-12), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:703:CF88:47:-:-:-@CF88:ART.47",
+   "target_id": "CF88:ART.47",
+   "source_id": "STF:RG:703",
+   "source_reference_id": "STF:RG:703:CF88:47:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:703 (RE 603116): o dispositivo citado é Lei 6.880/1980 (Estatuto dos Militares), art. 47.",
+   "expected_subject": "CF88:ART.47 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Recepção do art. 47 da Lei 6.880/80; o art. 47 da CF (quórum de deliberação) não é objeto.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "0141137c364c64a8065f29184574388228d2914dcecf1b87f4a2aa5b9ca5a0dc",
+    "official_content_sha256": "8c94b9233782c19e44a0794bcf20d7745a95d68265d762cbb103e4f7e2a80506",
+    "excerpt": "O art. 47 da Lei nº 6.880/80 foi recepcionado pela Constituição Federal",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-13), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:847:CF88:98:-:-:-@CF88:ART.98:CAPUT",
+   "target_id": "CF88:ART.98:CAPUT",
+   "source_id": "STF:RG:847",
+   "source_reference_id": "STF:RG:847:CF88:98:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:847 (RE 887671): o dispositivo citado é ADCT, art. 98, caput.",
+   "expected_subject": "CF88:ART.98:CAPUT (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NAMESPACE_ADCT_LIDO_COMO_CF: Lotação de defensores conforme o art. 98 do ADCT (EC 80/2014); o art. 98 da CF trata dos juizados especiais.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "c1e0cdf897697dfad2c37c83be625cb756b13fbb71067b2840c8bd224b7b8b87",
+    "official_content_sha256": "84f8b90f714677ec53e89828ec4db034d996aaaf69523525c04fb216715eb56d",
+    "excerpt": "art. 98, caput e § 2º",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": "ADCT:ART.98",
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-14), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:847:CF88:98:2:-:-@CF88:ART.98:PAR.2",
+   "target_id": "CF88:ART.98:PAR.2",
+   "source_id": "STF:RG:847",
+   "source_reference_id": "STF:RG:847:CF88:98:2:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:847 (RE 887671): o dispositivo citado é ADCT, art. 98, § 2º.",
+   "expected_subject": "CF88:ART.98:PAR.2 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NAMESPACE_ADCT_LIDO_COMO_CF: Mesma tese; o § 2º citado é do art. 98 do ADCT.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "c1e0cdf897697dfad2c37c83be625cb756b13fbb71067b2840c8bd224b7b8b87",
+    "official_content_sha256": "84f8b90f714677ec53e89828ec4db034d996aaaf69523525c04fb216715eb56d",
+    "excerpt": "art. 98, caput e § 2º",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": "ADCT:ART.98:PAR.2",
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-15), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:84:CF88:14:2:-:-@CF88:ART.14:PAR.2",
+   "target_id": "CF88:ART.14:PAR.2",
+   "source_id": "STF:RG:84",
+   "source_reference_id": "STF:RG:84:CF88:14:2:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:84 (RE 567935): o dispositivo citado é Lei 4.502/1964, art. 14, § 2º.",
+   "expected_subject": "CF88:ART.14:PAR.2 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Tese declara inconstitucional o § 2º do art. 14 da Lei 4.502/64 (IPI); a CF citada é o art. 146, III, a. O art. 14, § 2º, da CF é alistamento eleitoral.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "0d64fd25899ae2e2d2f9d4361830282dd1b252d92cb6fa29cfaa3c8b5ccb9455",
+    "official_content_sha256": "7d4c2ca1e3ef6f934c58a9b9e36f0dbf39cd189c92cd5b991c144737159f9758",
+    "excerpt": "§ 2º do artigo 14",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-16), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:966:CF88:227:-:-:-@CF88:ART.227",
+   "target_id": "CF88:ART.227",
+   "source_id": "STF:RG:966",
+   "source_reference_id": "STF:RG:966:CF88:227:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:966 (RE 1059466): o dispositivo citado é LC 75/1993, art. 227.",
+   "expected_subject": "CF88:ART.227 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Lista de parcelas remuneratórias cita \"art. 227, da LC nº 75/1993\"; o art. 227 da CF (criança e adolescente) não é objeto.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "13e0f57c621d680c4f1cbdd5f6caf38e7c136f4e6b03e7823a589b8e597bd43a",
+    "official_content_sha256": "8ae9ff4579ecd79428465be32e90ebe3e5755a1a9bfb6acc4594f79cdea13b89",
+    "excerpt": "etivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-17), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:975:CF88:43:-:-:-@CF88:ART.43:CAPUT",
+   "target_id": "CF88:ART.43:CAPUT",
+   "source_id": "STF:RG:975",
+   "source_reference_id": "STF:RG:975:CF88:43:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:975 (RE 1167842): o dispositivo citado é LC estadual SP 1.059/2008, art. 43, caput.",
+   "expected_subject": "CF88:ART.43:CAPUT (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Constitucionalidade do art. 43 da LC paulista 1.059/2008 (licença-prêmio); o art. 43 da CF (regiões) não é objeto.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "24cbb9a35b8110d869eb3294c8113dad7acb352aa02cf0e0a32d4fd8274e0d9f",
+    "official_content_sha256": "21b8931042551914ebf84bf777becc2adaa65d520a851c5e012b0bf9b00ffb52",
+    "excerpt": "art. 43, caput e § 1º",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-18), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:975:CF88:43:1:-:-@CF88:ART.43:PAR.1",
+   "target_id": "CF88:ART.43:PAR.1",
+   "source_id": "STF:RG:975",
+   "source_reference_id": "STF:RG:975:CF88:43:1:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:975 (RE 1167842): o dispositivo citado é LC estadual SP 1.059/2008, art. 43, § 1º.",
+   "expected_subject": "CF88:ART.43:PAR.1 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Mesma tese; o § 1º citado é da LC paulista.",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "24cbb9a35b8110d869eb3294c8113dad7acb352aa02cf0e0a32d4fd8274e0d9f",
+    "official_content_sha256": "21b8931042551914ebf84bf777becc2adaa65d520a851c5e012b0bf9b00ffb52",
+    "excerpt": "art. 43, caput e § 1º",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-19), ratificado em J1.1"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:976:CF88:227:-:-:-@CF88:ART.227",
+   "target_id": "CF88:ART.227",
+   "source_id": "STF:RG:976",
+   "source_reference_id": "STF:RG:976:CF88:227:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "STF:RG:976 (RE 968646): o dispositivo citado é LC 75/1993, art. 227.",
+   "expected_subject": "CF88:ART.227 (dispositivo da Constituição Federal de mesmo número)",
+   "reason": "NUMERACAO_DE_OUTRA_NORMA: Mesmo trecho do Tema 966 (julgamento conjunto).",
+   "evidence": {
+    "official_source": "STF (texto oficial arquivado no J4)",
+    "official_source_url": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "local_thesis_sha256": "05e1e980145978a52266c390b3edb8cfa6cca878b8446b2bef0b786b988d5370",
+    "official_content_sha256": "6397dbd3a42f9799a9a326f67d780e4c59ef756d5c7a6387b0ece550e8c1bdfc",
+    "excerpt": "etivamente pago (art. 65, I, da LC nº 35/79; art. 227, da LC nº 75/1993; art. 50, II, da Lei nº 8.625/1993); Abono de permanência de caráter previdenciário (CF",
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão de evidência local (J1) ratificada por Arthur em 2026-10-16"
+   },
+   "relocation_candidate_not_applied": null,
+   "decided_in": "J1_RISK_REVIEW (J1-REMOVE-20), ratificado em J1.1"
+  }
+ ]
+}
