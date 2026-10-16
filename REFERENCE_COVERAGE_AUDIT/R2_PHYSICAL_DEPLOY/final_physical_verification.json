@@ -1,0 +1,45 @@
+{
+ "artifact": "REFERENCES_4_FINAL_PHYSICAL_VERIFICATION",
+ "date": "2026-10-16",
+ "mode": "READ_ONLY (nenhuma escrita no SD, nenhum flash)",
+ "human_physical_test": {
+  "result": "PASS",
+  "tests": "8/8",
+  "note": "Teste 2 executado primeiro por engano no art. 47 (não considerado falha); repetido no CF art. 37: PASS."
+ },
+ "firmware": {
+  "tool": "esptool 5.4.0 --chip esp32s3 -p COM3 (CH343) -b 460800 --after no-reset read-flash",
+  "device": "ESP32-S3 rev v0.2, MAC e0:72:a1:f4:fd:28, 16MB",
+  "app0_read1_sha256": "dde8fa2990353409cae44f60ffbda0d6c13d4ba7af352779d081068b2d3a673d",
+  "app0_read2_sha256": "dde8fa2990353409cae44f60ffbda0d6c13d4ba7af352779d081068b2d3a673d",
+  "reads_identical": true,
+  "app_image_bytes": 1101136,
+  "app_image_sha256": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c",
+  "PHYSICALLY_TESTED_FIRMWARE": "EXACT",
+  "partitions_sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+  "otadata_sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+ },
+ "sd": {
+  "drive": "D:",
+  "file_count": 1142,
+  "PHYSICALLY_TESTED_SD_BYTES": "5/5",
+  "whole_card_vs_r2_post": {
+   "added": [],
+   "removed": [],
+   "changed": []
+  },
+  "MANIFEST_VS_SD": "PASS",
+  "manifest_entries_checked": 10,
+  "correlata_vs_c3b2": {
+   "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX": true,
+   "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX": true,
+   "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX": true
+  },
+  "other_files_differing_from_c3b2": 0,
+  "full_manifest_sha256": "34df83c0c4fc9b2bdd40b27f8ebba5a61357deffef94be650aa60f0c2ec11c11"
+ },
+ "writes": {
+  "SD_WRITES_THIS_MISSION": 0,
+  "FIRMWARE_FLASH_THIS_MISSION": "NO"
+ }
+}
