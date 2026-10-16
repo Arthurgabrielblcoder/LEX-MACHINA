@@ -101,5 +101,70 @@ class J11(unittest.TestCase):
             self.assertEqual(r.returncode, 0, p.name)
 
 
+SD = ROOT / 'DEVICE_INTEGRATION/staging_sd_v1_juris_j1_1_candidate/SD'
+PKG = AUD / 'J1_1_CANDIDATE_HOST_ONLY'
+
+
+class Package(unittest.TestCase):
+    def test_package_manifest_and_rollback(self):
+        m = json.loads((PKG / 'J1_1_PACKAGE_MANIFEST.json').read_text(encoding='utf-8'))
+        self.assertEqual((m['status'], m['card_touched'], m['device_flashed']), ('HOST_ONLY_CANDIDATE', False, False))
+        self.assertTrue(m['physical_baseline_reproduced'] and m['byte_identical_rebuild'] and m['device_manifest_matches_package'])
+        self.assertEqual(len(m['changed_vs_physical']), 5)
+        card = {k: v['sha256'] for k, v in json.loads((ROOT / 'REFERENCE_COVERAGE_AUDIT/R2_PHYSICAL_DEPLOY/sd_manifest_post_full.json')
+                                                      .read_text(encoding='utf-8'))['entries'].items()}
+        for d in m['file_diff']:
+            rel = d['path'].lstrip('/')
+            self.assertEqual(sha(PKG / 'rollback/SD' / rel), card[rel], rel)
+            self.assertEqual(sha(PKG / 'candidate/SD' / rel), d['after_sha256'], rel)
+
+
+@unittest.skipUnless((SD / '99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX').is_file(), 'J1.1 staging not built')
+class DeviceSimulator(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        sys.path.insert(0, str(ROOT / 'DEVICE_INTEGRATION/tools'))
+        import canonical_layer_audit as A
+        import device_lookup_simulator as S
+        cls.A, cls.S = A, S
+        cls.dev = S.Device(SD / '99_LEX_V1')
+        cls.flags = {p[0]: p[3] for p in A.rows(SD / '99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX')}
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.dev.close()
+
+    def juris(self, tid):
+        return sorted(r[5] for r in self.A.device_query_union(self.dev, tid)[0].get(self.A.JURIS, []))
+
+    def available(self, tid, layer):
+        return any(self.A.flag(self.flags.get(k, '------'), layer) for k in self.A.query_keys(tid))
+
+    def test_removed_lines_show_no_juris(self):
+        for tid in ('CF88:ART.1', 'CF88:ART.3', 'CF88:ART.7', 'CF88:ART.19', 'CF88:ART.47', 'CF88:ART.96', 'CF88:ART.98', 'CF88:ART.43',
+                    'CF88:ART.14:PAR.2', 'CF88:ART.41:PAR.1', 'CF88:ART.43:PAR.1', 'CF88:ART.48:INC.III', 'CF88:ART.98:PAR.2'):
+            self.assertEqual(self.juris(tid), [], tid)
+            self.assertFalse(self.available(tid, self.A.JURIS), tid)
+
+    def test_kept_links(self):
+        self.assertIn('STF:RG:295', self.juris('CF88:ART.6'))
+        self.assertNotIn('STF:RG:455', self.juris('CF88:ART.6'))
+        self.assertIn('STF:RG:455', self.juris('CF88:ART.5:INC.XIII'))
+        self.assertIn('STF:RG:1031', self.juris('CF88:ART.231'))
+        self.assertNotIn('STF:RG:1031', self.juris('CF88:ART.16'))
+        self.assertTrue({'STF:RG:367', 'STF:RG:387'} <= set(self.juris('CF88:ART.16')))
+        self.assertEqual(len(self.juris('CF88:ART.37:INC.XI')), 10)
+
+    def test_frozen_layers_on_device(self):
+        A = self.A
+        rows = A.device_query_union(self.dev, 'CF88:ART.202:PAR.5')[0].get(A.CORRELATA, [])
+        self.assertEqual([r[5] for r in rows], ['EXT_LC108_2001'])
+        self.assertFalse(self.available('CF88:ART.37:PAR.3:INC.III', A.CORRELATA))
+        works = lambda t: sorted(r[6] for r in A.device_query_union(self.dev, t)[0].get(A.REFERENCIA, []))  # noqa: E731
+        self.assertEqual(works('CF88:ART.196'), ['Sicko - S.O.S. Saúde'])
+        self.assertEqual(works('CF88:ART.43'), ['Formação Econômica do Brasil'])
+        self.assertTrue(self.available('CF88:ART.43', A.REFERENCIA))
+
+
 if __name__ == '__main__':
     unittest.main()
