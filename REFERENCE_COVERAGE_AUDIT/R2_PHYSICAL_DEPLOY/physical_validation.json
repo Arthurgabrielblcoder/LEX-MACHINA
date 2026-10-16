@@ -1,0 +1,58 @@
+{
+ "result": "SD_VALIDATED",
+ "readback": {
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+   "bytes": 65514,
+   "sha256": "da49c43b7a21990334a6a1af63fbc605fec7fde195a06a2014776285455006eb"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+   "bytes": 6750,
+   "sha256": "efabb245e3beb8b63df33249a7a2e3c178aace02b361d9d344cb348d0fa823a0"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+   "bytes": 165466,
+   "sha256": "d4e3342b99f5a5efb732eb9b36f786f3eaf5a33ab651500c7ce8a387bfe593f7"
+  },
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": {
+   "bytes": 7622,
+   "sha256": "7b8da57d943aef59f6dda55f1eb86484b516f7170da7074e3638949c7ce292fb"
+  },
+  "99_LEX_V1/00_SYS/LEXV1.VER": {
+   "bytes": 600,
+   "sha256": "edaf6147767ceece3fdd3149b63d79037e8e06a9de8ca71e3589da88a3758125"
+  }
+ },
+ "mismatch": [],
+ "diff_full": {
+  "added": [],
+  "removed": [],
+  "changed": [
+   "99_LEX_V1/00_SYS/LEXV1.VER",
+   "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+  ]
+ },
+ "files_written": 5,
+ "manifest_vs_card": "PASS",
+ "manifest_entries_checked": 10,
+ "correlata_files_unchanged": {
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX": true
+ },
+ "other_files_untouched": true,
+ "file_count_pre": 1142,
+ "file_count_post": 1142,
+ "candidate": {
+  "build_id": "5eb2a9298c1edbd6",
+  "git_commit": "453922ffcbc5d15fb9bed832a9cfa5206348e3df",
+  "reference_engine": {
+   "tag": "cf-reference-engine-run5-references4-r1",
+   "run": "run5",
+   "status": "RUN5_REFERENCES4_R1_CANDIDATE_HOST_ONLY",
+   "derived_from": "run4 (C3B.2 physically approved) + WORK_REFERENCE overlay REFERENCES_4_R1 (P20, P21)"
+  }
+ }
+}

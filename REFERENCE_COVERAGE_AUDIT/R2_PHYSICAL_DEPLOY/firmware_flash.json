@@ -1,0 +1,37 @@
+{
+ "device": {
+  "port": "COM3 (USB-Enhanced-SERIAL CH343 1A86:55D3)",
+  "chip": "ESP32-S3 (QFN56) rev v0.2",
+  "psram": "8MB embedded",
+  "mac": "e0:72:a1:f4:fd:28",
+  "flash": "16MB (0x68/0x4018)"
+ },
+ "tool": "esptool 5.4.0 --chip esp32s3 -p COM3 -b 460800 --after no-reset",
+ "pre": {
+  "partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+  "otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+  "nvs": "155eb09ace84de83cc41b23b23bc93e0596e3aedcb4fef60f088a0ba08217e0e",
+  "app0_full": "cd20fd52a07300034394539f8124ecc8d3f7a1a309a1ebbbf82876820077a852",
+  "app0_full_verify": "cd20fd52a07300034394539f8124ecc8d3f7a1a309a1ebbbf82876820077a852",
+  "app0_running_image_sha256": "445fdb7fe4d9392070c7c3b7524ba2d26fbefe85e4503135af40a65ccfbecca3",
+  "app0_running_image": "445fdb7f (FULL_ENTENDA_810 diag flash, approved)"
+ },
+ "candidate": {
+  "file": "DEVICE_INTEGRATION/backups/references4_r1/build_cand/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino.bin",
+  "bytes": 1101136,
+  "sha256": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c"
+ },
+ "write": {
+  "command": "write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x10000 candidate_app.bin",
+  "result": "Hash of data verified",
+  "region": "app0 0x10000 only"
+ },
+ "post": {
+  "app0_readback_sha256": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c",
+  "readback_match": true,
+  "partitions": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+  "otadata": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+  "partitions_otadata_unchanged": true
+ },
+ "rollback": "write-flash 0x10000 DEVICE_INTEGRATION/backups/references4_r1_physical_deploy/fw/app0_pre.bin (particao app0 inteira) + readback; SD: restaurar sd_pre/ (bytes C3B.2)"
+}
