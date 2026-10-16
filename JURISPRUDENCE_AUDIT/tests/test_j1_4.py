@@ -78,5 +78,76 @@ class J14(unittest.TestCase):
             self.assertTrue(v[k], k)
 
 
+SD = ROOT / 'DEVICE_INTEGRATION/staging_sd_v1_juris_j1_4_candidate/SD'
+PKG = AUD / 'J1_4_CANDIDATE_HOST_ONLY'
+
+
+class Package(unittest.TestCase):
+    def test_package_manifest_and_rollback(self):
+        m = json.loads((PKG / 'J1_4_PACKAGE_MANIFEST.json').read_text(encoding='utf-8'))
+        self.assertEqual((m['status'], m['card_touched'], m['device_flashed']), ('HOST_ONLY_CANDIDATE', False, False))
+        self.assertTrue(m['physical_baseline_reproduced'] and m['byte_identical_rebuild'] and m['device_manifest_matches_package'])
+        self.assertEqual(len(m['changed_vs_physical']), 5)
+        self.assertEqual(len(m['targets_r_only_divergence_vs_generator']), 38)
+        card = {k: v['sha256'] for k, v in json.loads((AUD / 'J1_2_PHYSICAL_DEPLOY/sd_manifest_post_full.json')
+                                                      .read_text(encoding='utf-8'))['entries'].items()}
+        for d in m['file_diff']:
+            rel = d['path'].lstrip('/')
+            self.assertEqual(sha(PKG / 'rollback/SD' / rel), card[rel], rel)
+            self.assertEqual(sha(PKG / 'candidate/SD' / rel), d['after_sha256'], rel)
+        for n in ('CF88_TARGETS.IDX', 'REF_LOOKUP.IDX', 'REF_PAYLOAD.IDX'):
+            sub = '10_TARGETS' if n.startswith('CF88') else '20_REFERENCES'
+            if n != 'CF88_TARGETS.IDX':
+                self.assertEqual(sha(PKG / 'candidate/SD/99_LEX_V1' / sub / n), sha(R7.OUT / 'device_ready' / n), n)
+
+
+@unittest.skipUnless((SD / '99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX').is_file(), 'J1.4 staging not built')
+class DeviceSimulator(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        sys.path.insert(0, str(ROOT / 'DEVICE_INTEGRATION/tools'))
+        import canonical_layer_audit as A
+        import device_lookup_simulator as S
+        cls.A, cls.S = A, S
+        cls.dev = S.Device(SD / '99_LEX_V1')
+        cls.flags = {p[0]: p[3] for p in A.rows(SD / '99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX')}
+
+    @classmethod
+    def tearDownClass(cls):
+        cls.dev.close()
+
+    def juris(self, tid):
+        return sorted(r[5] for r in self.A.device_query_union(self.dev, tid)[0].get(self.A.JURIS, []))
+
+    def available(self, tid, layer):
+        return any(self.A.flag(self.flags.get(k, '------'), layer) for k in self.A.query_keys(tid))
+
+    def test_wrong_targets_cleared(self):
+        self.assertEqual(self.juris('CF88:ART.100:PAR.1'), [])
+        self.assertFalse(self.available('CF88:ART.100:PAR.1', self.A.JURIS))
+        for tid in ('CF88:ART.40:PAR.4', 'CF88:ART.40:PAR.5'):
+            self.assertNotIn('STF:RG:594', self.juris(tid), tid)
+            self.assertTrue(self.available(tid, self.A.JURIS), tid)   # Temas 727/888/942/965 remain
+
+    def test_relocated(self):
+        self.assertTrue({'STF:SV:17', 'STF:RG:147', 'STF:RG:1037', 'STF:RG:1335'} <= set(self.juris('CF88:ART.100:PAR.5')))
+        self.assertIn('STF:RG:594', self.juris('CF88:ART.40'))
+        self.assertTrue(self.available('CF88:ART.100:PAR.5', self.A.JURIS) and self.available('CF88:ART.40', self.A.JURIS))
+
+    def test_kept_links(self):
+        self.assertTrue({'STF:RG:367', 'STF:RG:387'} <= set(self.juris('CF88:ART.16')))
+        self.assertIn('STF:RG:295', self.juris('CF88:ART.6'))
+        self.assertEqual(self.juris('CF88:ART.1'), [])
+        self.assertEqual(len(self.juris('CF88:ART.37:INC.XI')), 10)
+
+    def test_frozen_layers_on_device(self):
+        A = self.A
+        rows_ = A.device_query_union(self.dev, 'CF88:ART.202:PAR.5')[0].get(A.CORRELATA, [])
+        self.assertEqual([r[5] for r in rows_], ['EXT_LC108_2001'])
+        works = lambda t: sorted(r[6] for r in A.device_query_union(self.dev, t)[0].get(A.REFERENCIA, []))  # noqa: E731
+        self.assertEqual(works('CF88:ART.196'), ['Sicko - S.O.S. Saúde'])
+        self.assertEqual(works('CF88:ART.43'), ['Formação Econômica do Brasil'])
+
+
 if __name__ == '__main__':
     unittest.main()

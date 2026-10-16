@@ -1,0 +1,179 @@
+{
+ "profile": "FULL_CF_ENTENDA_810",
+ "package": "JURIS_J1_4",
+ "status": "HOST_ONLY_CANDIDATE",
+ "physical_approved": false,
+ "card_touched": false,
+ "device_flashed": false,
+ "firmware_change": "NONE (SD only; boot DIAG cases do not use the affected targets)",
+ "staging": "DEVICE_INTEGRATION/staging_sd_v1_juris_j1_4_candidate",
+ "build_id": "cbed709a40356681",
+ "git_commit": "7786bbc50a5f33fcf7eec01ce0de170b2d02a4f6",
+ "reference_engine": {
+  "tag": "cf-reference-engine-run7-juris-j1-4",
+  "run": "run7",
+  "status": "RUN7_JURIS_J1_4_CANDIDATE_HOST_ONLY",
+  "derived_from": "run6 (J1.1 installed, J1.2 10/10) − 4 links on historically wrong targets + 3 relocations (J1.3 ratified 4/4)"
+ },
+ "physical_baseline_reproduced": true,
+ "deterministic_runs": 2,
+ "byte_identical_rebuild": true,
+ "targets_r_only_divergence_vs_generator": [
+  "CF88:ART.1",
+  "CF88:ART.100:PAR.1",
+  "CF88:ART.146",
+  "CF88:ART.14:PAR.2",
+  "CF88:ART.155:PAR.2:INC.VII",
+  "CF88:ART.158:PAR.1:INC.I",
+  "CF88:ART.158:PAR.1:INC.II",
+  "CF88:ART.19",
+  "CF88:ART.195:INC.I:AL.b",
+  "CF88:ART.195:PAR.1",
+  "CF88:ART.195:PAR.2",
+  "CF88:ART.196",
+  "CF88:ART.201:INC.II",
+  "CF88:ART.202:PAR.1",
+  "CF88:ART.206:INC.I",
+  "CF88:ART.20:PAR.1",
+  "CF88:ART.214:CAPUT",
+  "CF88:ART.214:INC.I",
+  "CF88:ART.214:INC.II",
+  "CF88:ART.214:INC.III",
+  "CF88:ART.214:INC.IV",
+  "CF88:ART.214:INC.V",
+  "CF88:ART.214:INC.VI",
+  "CF88:ART.239:PAR.3",
+  "CF88:ART.239:PAR.4",
+  "CF88:ART.3",
+  "CF88:ART.37:PAR.3:INC.II",
+  "CF88:ART.37:PAR.3:INC.III",
+  "CF88:ART.41:PAR.1",
+  "CF88:ART.43:PAR.1",
+  "CF88:ART.43:PAR.1:INC.I",
+  "CF88:ART.43:PAR.1:INC.II",
+  "CF88:ART.47",
+  "CF88:ART.48:INC.III",
+  "CF88:ART.7",
+  "CF88:ART.96",
+  "CF88:ART.98:CAPUT",
+  "CF88:ART.98:PAR.2"
+ ],
+ "device_manifest_matches_package": true,
+ "changed_vs_physical": [
+  "99_LEX_V1/00_SYS/LEXV1.VER",
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+ ],
+ "file_diff": [
+  {
+   "path": "/99_LEX_V1/00_SYS/LEXV1.VER",
+   "before_sha256": "9366524ec7a54f37175de76e6201a944e9c83b142ecfbba3c8096d0cd1c6acd0",
+   "before_bytes": 594,
+   "after_sha256": "71eb25ce67c461c7b573976f1f299065f77beaccb5d3e5224c5a3f11131a1af8",
+   "after_bytes": 596
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "before_sha256": "d6d5fc360a2878573c3f0ce642c8be48cd86b4a1cb0ca51d8e1b375b78f2fcf6",
+   "before_bytes": 7644,
+   "after_sha256": "28b412d163aaccc183c0751e026debfcad2f0a40248e462135ea161750d7cf4e",
+   "after_bytes": 7641
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "before_sha256": "8eb99cd5d03b058437d4e024ea68dbb0a45daa37f56d69de7e27f81ad8b7dc1e",
+   "before_bytes": 165466,
+   "after_sha256": "75d483c081c23e5fea981f516abae510af0a8104c4fa9e3e59ca52a8bbb9d213",
+   "after_bytes": 165466
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "before_sha256": "53ed70579c5f4a8f6182f19f3020b231aa3af34f11045f159321c0eb0995664c",
+   "before_bytes": 6476,
+   "after_sha256": "66bea5f0ddddb4c17ef4c25e587fcb95cc705f955b7620c6c31ea2a072bcfe38",
+   "after_bytes": 6450
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "before_sha256": "1f87d1af57f1ecd4171212c23414c7e8540099ef20d62607a49a255746efc5e3",
+   "before_bytes": 62528,
+   "after_sha256": "d07cb0764735a56d9f7eecb915a56ed083d35e662cd47164293e388d048f72e1",
+   "after_bytes": 62364
+  }
+ ],
+ "file_count": 14,
+ "files": [
+  {
+   "path": "/99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "sha256": "28b412d163aaccc183c0751e026debfcad2f0a40248e462135ea161750d7cf4e",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEXV1.VER",
+   "sha256": "71eb25ce67c461c7b573976f1f299065f77beaccb5d3e5224c5a3f11131a1af8",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/05_TEXT/CF88_RUNTIME.txt",
+   "sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX",
+   "sha256": "674c9971925c29aaca9685fb2d0b9515fe87e4072d644858ea27495c327d3a68",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX",
+   "sha256": "56e437a0c9cebb113c47f6a7b100ee64363c63207a647eca0456e86d6db27fae",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "sha256": "75d483c081c23e5fea981f516abae510af0a8104c4fa9e3e59ca52a8bbb9d213",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX",
+   "sha256": "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "sha256": "66bea5f0ddddb4c17ef4c25e587fcb95cc705f955b7620c6c31ea2a072bcfe38",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "sha256": "d07cb0764735a56d9f7eecb915a56ed083d35e662cd47164293e388d048f72e1",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX",
+   "sha256": "017050dc98b76cdbea9997c6d3ad49f34673393c6768fcb43fa0eb9767120c99",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT",
+   "sha256": "dbea72601046e6d9fba2f6a6442a490f905a03911186f9aeb44db7e6184e0fd3",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX",
+   "sha256": "5c54face7ea7eff62dbbb0a4193b5e2452e7fb03d82012d09919e74d234b3e5e",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX",
+   "sha256": "efac06cee0a1d8f0676564ba128d0ab8f474b89399f40de6422cc6fded37ef2c",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX",
+   "sha256": "691790f3ee5d4aaa9b88235bca33008357b99d87324c07b1da8b51355c20685c",
+   "same_as_physical": true
+  }
+ ]
+}

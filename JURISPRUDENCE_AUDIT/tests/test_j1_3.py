@@ -36,7 +36,7 @@ class J13(unittest.TestCase):
         for line in (RUN6 / 'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
             h, name = line.split('  ', 1)
             self.assertEqual(hashlib.sha256((RUN6 / name).read_bytes()).hexdigest(), h, name)
-        r = subprocess.run(['git', 'diff', '--quiet', 'd873037', '--', 'LEGAL_TARGET_ID', 'JURISPRUDENCE_AUDIT/J1_1_CANDIDATE_HOST_ONLY',
+        r = subprocess.run(['git', 'diff', '--quiet', 'd873037', '7b644ab', '--', 'LEGAL_TARGET_ID', 'JURISPRUDENCE_AUDIT/J1_1_CANDIDATE_HOST_ONLY',
                             'CORRELATA_COVERAGE_AUDIT', 'REFERENCE_COVERAGE_AUDIT', 'ENTENDA_ENGINE', 'firmware', 'DEVICE_INTEGRATION'], cwd=ROOT)
         self.assertEqual(r.returncode, 0)
 
