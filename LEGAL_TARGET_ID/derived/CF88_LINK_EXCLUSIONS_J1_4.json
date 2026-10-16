@@ -1,0 +1,147 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J1.4",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-16",
+  "statement": "J1_3_EXTERNAL_DECISIONS_APPROVED = 4/4; TEMAS_367_387 = KEEP_BOTH",
+  "directives": "SV 17 e Tema 147: retirar do art. 100, § 1º e materializar no § 5º, com proveniência da redação histórica. Tema 594: não vincular aos §§ 4º/5º atuais; associar ao art. 40 com nota temporal expressa (redação originária dos §§ 4º e 5º)."
+ },
+ "decisions_file": "JURISPRUDENCE_AUDIT/J1_3_DECISIONS.json",
+ "decisions_sha256": "1dad12d15e6e5c3782aa5a6609becb6ff6279e76ebe982e47bb3bed40681d803",
+ "policy": "Overlay de exclusão J1.4: vínculos de jurisprudência associados a dispositivo cuja redação atual não corresponde ao que o precedente interpreta (redação histórica). Mesmo mecanismo de CF88_LINK_EXCLUSIONS*.json. Fail closed.",
+ "total": 4,
+ "records": [
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:147:CF88:100:-:-:-@CF88:ART.100:PAR.1",
+   "target_id": "CF88:ART.100:PAR.1",
+   "source_id": "STF:RG:147",
+   "source_reference_id": "STF:RG:147:CF88:100:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "O objeto oficial é o período entre expedição e pagamento até o final do exercício seguinte, hoje no § 5º (Tema 1037); o § 1º atual não trata disso.",
+   "expected_subject": "CF88:ART.100:PAR.1 (conteúdo atual do dispositivo)",
+   "reason": "ALVO_HISTORICO_INCORRETO: Mesmo ponto da SV 17 (o Tema 147 originou a SV 17).",
+   "evidence": {
+    "official_source": "Tema 147 — Incidência de juros de mora durante o prazo constitucional de pagamento de precatório",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=2632171&numeroProcesso=591085&classeProcesso=RE&numeroTema=147",
+    "sources": [
+     {
+      "id": "S3",
+      "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=2632171&numeroProcesso=591085&classeProcesso=RE&numeroTema=147",
+      "sha256": "fff81faf5c0365355d089954c85773ad879c1ff1cd18cfedd6eed37f1e2b02a6"
+     },
+     {
+      "id": "S1",
+      "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=5568791&numeroProcesso=1169289&classeProcesso=RE&numeroTema=1037",
+      "sha256": "f7bedbe65cfd178b6603f84323fa0e7af49ac75bf4c28fbde714494945c69d3b"
+     },
+     {
+      "id": "S5",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "sha256": "a87c94793fb29df572d82f2a10042be8bfe58b64309ab5219bb9f5d6cb585da0"
+     }
+    ],
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão em fontes oficiais (J1.3) ratificada por Arthur em 2026-10-16"
+   },
+   "relocated_to": "CF88:ART.100:PAR.5",
+   "decided_in": "J1_3 (J1.3-EXT-01), ratificado em J1.4"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40:PAR.4",
+   "target_id": "CF88:ART.40:PAR.4",
+   "source_id": "STF:RG:594",
+   "source_reference_id": "STF:RG:594:CF88:40:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "O § 4º originário (paridade de proventos) não corresponde ao § 4º atual (vedação de critérios diferenciados); não há parágrafo atual com o mesmo conteúdo. O vínculo correto possível é com o art. 40, com nota temporal.",
+   "expected_subject": "CF88:ART.40:PAR.4 (conteúdo atual do dispositivo)",
+   "reason": "ALVO_HISTORICO_INCORRETO: A tese sobre os §§ 4º/5º na redação originária pode permanecer no § 4º atual?",
+   "evidence": {
+    "official_source": "Tema 594 — §§ 4º e 5º do art. 40 da CF (redação originária) e servidor celetista",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=3920556&numeroProcesso=627294&classeProcesso=RE&numeroTema=594",
+    "sources": [
+     {
+      "id": "S4",
+      "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=3920556&numeroProcesso=627294&classeProcesso=RE&numeroTema=594",
+      "sha256": "39a2d3c521eb4bcc4e8df4325995ad6526e0ccebe43f70dbb7f0b1229d0596e8"
+     },
+     {
+      "id": "S5",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "sha256": "a87c94793fb29df572d82f2a10042be8bfe58b64309ab5219bb9f5d6cb585da0"
+     }
+    ],
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão em fontes oficiais (J1.3) ratificada por Arthur em 2026-10-16"
+   },
+   "relocated_to": "CF88:ART.40",
+   "decided_in": "J1_3 (J1.3-EXT-02), ratificado em J1.4"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40:PAR.5",
+   "target_id": "CF88:ART.40:PAR.5",
+   "source_id": "STF:RG:594",
+   "source_reference_id": "STF:RG:594:CF88:40:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "O § 5º originário (pensão integral) não corresponde ao § 5º atual (redução de idade do professor).",
+   "expected_subject": "CF88:ART.40:PAR.5 (conteúdo atual do dispositivo)",
+   "reason": "ALVO_HISTORICO_INCORRETO: Idem, para o § 5º.",
+   "evidence": {
+    "official_source": "Tema 594 — §§ 4º e 5º do art. 40 da CF (redação originária) e servidor celetista",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=3920556&numeroProcesso=627294&classeProcesso=RE&numeroTema=594",
+    "sources": [
+     {
+      "id": "S4",
+      "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=3920556&numeroProcesso=627294&classeProcesso=RE&numeroTema=594",
+      "sha256": "39a2d3c521eb4bcc4e8df4325995ad6526e0ccebe43f70dbb7f0b1229d0596e8"
+     },
+     {
+      "id": "S5",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "sha256": "a87c94793fb29df572d82f2a10042be8bfe58b64309ab5219bb9f5d6cb585da0"
+     }
+    ],
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão em fontes oficiais (J1.3) ratificada por Arthur em 2026-10-16"
+   },
+   "relocated_to": "CF88:ART.40",
+   "decided_in": "J1_3 (J1.3-EXT-03), ratificado em J1.4"
+  },
+  {
+   "reference_id": "JURISPRUDENCE:STF:SV:17:CF88:100:-:-:-@CF88:ART.100:PAR.1",
+   "target_id": "CF88:ART.100:PAR.1",
+   "source_id": "STF:SV:17",
+   "source_reference_id": "STF:SV:17:CF88:100:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "O STF (Tema 1037) afirma que a EC 62/2009 apenas transferiu o dispositivo da SV 17 do § 1º para o § 5º; o § 1º atual define débitos alimentícios. O destino § 5º já tem os Temas 1037 e 1335, que reafirmam a SV 17.",
+   "expected_subject": "CF88:ART.100:PAR.1 (conteúdo atual do dispositivo)",
+   "reason": "ALVO_HISTORICO_INCORRETO: O \"período previsto no § 1º\" da SV 17 corresponde ao § 1º atual (débitos alimentícios) ou ao prazo hoje no § 5º?",
+   "evidence": {
+    "official_source": "Tema 1037 — Incidência de juros da mora entre a expedição do precatório/RPV e o pagamento",
+    "official_source_url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=5568791&numeroProcesso=1169289&classeProcesso=RE&numeroTema=1037",
+    "sources": [
+     {
+      "id": "S1",
+      "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=5568791&numeroProcesso=1169289&classeProcesso=RE&numeroTema=1037",
+      "sha256": "f7bedbe65cfd178b6603f84323fa0e7af49ac75bf4c28fbde714494945c69d3b"
+     },
+     {
+      "id": "S2",
+      "url": "https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1241",
+      "sha256": "2483c8f01093d9bebb984537e1b88f2d3c761ff7028b619957d79a11d7366ab1"
+     },
+     {
+      "id": "S5",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "sha256": "a87c94793fb29df572d82f2a10042be8bfe58b64309ab5219bb9f5d6cb585da0"
+     }
+    ],
+    "verified_on": "2026-10-16",
+    "verified_by": "revisão em fontes oficiais (J1.3) ratificada por Arthur em 2026-10-16"
+   },
+   "relocated_to": "CF88:ART.100:PAR.5",
+   "decided_in": "J1_3 (J1.3-EXT-04), ratificado em J1.4"
+  }
+ ]
+}

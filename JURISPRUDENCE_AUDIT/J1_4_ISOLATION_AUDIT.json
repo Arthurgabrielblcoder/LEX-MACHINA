@@ -1,0 +1,85 @@
+{
+ "artifact": "J1_4_ISOLATION_AUDIT",
+ "base": "candidato J1.1 instalado e validado fisicamente (J1.2, 10/10)",
+ "candidate": "LEGAL_TARGET_ID/derived/export_test/run7_juris_j1_4_candidate/device_ready",
+ "ref_payload_by_type": {
+  "CORRELATA": {
+   "base": 26,
+   "candidate": 26,
+   "removed": [],
+   "added": []
+  },
+  "JURISPRUDENCE": {
+   "base": 263,
+   "candidate": 262,
+   "removed": [
+    "JURISPRUDENCE:STF:RG:147:CF88:100:-:-:-@CF88:ART.100:PAR.1",
+    "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40:PAR.4",
+    "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40:PAR.5",
+    "JURISPRUDENCE:STF:SV:17:CF88:100:-:-:-@CF88:ART.100:PAR.1"
+   ],
+   "added": [
+    "JURISPRUDENCE:STF:RG:147:CF88:100:-:-:-@CF88:ART.100:PAR.5",
+    "JURISPRUDENCE:STF:RG:594:CF88:40:-:-:-@CF88:ART.40",
+    "JURISPRUDENCE:STF:SV:17:CF88:100:-:-:-@CF88:ART.100:PAR.5"
+   ]
+  },
+  "WORK_REFERENCE": {
+   "base": 124,
+   "candidate": 124,
+   "removed": [],
+   "added": []
+  }
+ },
+ "targets": {
+  "rows": 3810,
+  "same_target_set": true,
+  "j_before": 157,
+  "j_after": 156,
+  "j_changes": [
+   {
+    "target_id": "CF88:ART.100:PAR.1",
+    "before": "E-J-RX",
+    "after": "E---RX"
+   }
+  ],
+  "targets_lost_last_juris": [
+   "CF88:ART.100:PAR.1"
+  ]
+ },
+ "ref_lookup": {
+  "rows_before": 237,
+  "rows_after": 236,
+  "removed_rows": [
+   "CF88:ART.100:PAR.1"
+  ],
+  "count_changed": [
+   "CF88:ART.100:PAR.5",
+   "CF88:ART.40",
+   "CF88:ART.40:PAR.4",
+   "CF88:ART.40:PAR.5"
+  ]
+ },
+ "r_flag_note": "R ([4], não lido pelo firmware) mantido como aprovado: 1 targets deixam de ter linha no REF_LOOKUP e continuam com R (mesma política de C3B.2, R1 e J1.1; dívida conhecida).",
+ "verdict": {
+  "CORRELATA_RELATION_SET_CHANGED": 0,
+  "WORK_REFERENCE_SET_CHANGED": 0,
+  "JURIS_REMOVED": 4,
+  "JURIS_ADDED": 3,
+  "JURIS_REMOVED_EQUALS_RATIFIED_4": true,
+  "JURIS_ADDED_EQUALS_RELOCATIONS_3": true,
+  "RELOCATED_KEYS_IN_LEGACY_IDX": true,
+  "J_FLAGS_CHANGED": 1,
+  "J_FLAG_CHANGES_ONLY_LOST_LAST_LINK": true,
+  "C_FLAGS_CHANGED": 0,
+  "E_FLAGS_CHANGED": 0,
+  "W_FLAGS_CHANGED": 0,
+  "R_FLAGS_CHANGED": 0,
+  "X_FLAGS_CHANGED": 0,
+  "NON_FLAG_FIELDS_CHANGED": 0,
+  "NON_J_TARGET_FLAGS_CHANGED": 0,
+  "J_FLAG_EQUALS_VISIBLE_JURIS": true,
+  "CORRELATA_FILES_BYTE_IDENTICAL": true,
+  "HISTORICAL_HIDDEN_JURIS_UNCHANGED": true
+ }
+}
