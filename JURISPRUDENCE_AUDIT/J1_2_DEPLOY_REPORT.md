@@ -107,3 +107,24 @@ Remova o cartão com segurança, recoloque no LEX MACHINA e ligue normalmente.
 Depois, devolva o cartão ao PC.
 
 **Rollback:** restaurar os 5 arquivos de `DEVICE_INTEGRATION/backups/juris_j1_1_physical_deploy/sd_pre/`, que são os bytes físicos de Referências nº 4. O firmware não precisa de rollback, porque não foi alterado.
+
+## Resultado físico (relatado por Arthur em 2026-10-16)
+
+```
+J1_2_PHYSICAL_TEST = PASS · PHYSICAL_TESTS = 10/10 · J1_CLEANUP_PHYSICAL_VALIDATION = PASS
+```
+
+| # | Teste | Resultado |
+|---|---|---|
+| 1 | Boot | PASS: boot normal |
+| 2 | CF art. 1º | PASS: sem jurisprudência indevida |
+| 3 | CF art. 47 | PASS: sem jurisprudência indevida |
+| 4 | CF art. 19 | PASS: sem o Tema 1157 indevido |
+| 5 | CF art. 6º | PASS: jurisprudência válida preservada; Tema 455 removido |
+| 6 | CF art. 16 | PASS: Temas 367/387 preservados; Tema 1031 removido |
+| 7 | CF art. 37, XI | PASS: jurisprudência antiga mantida; a tese abre |
+| 8 | Correlatas C3B.2 | PASS: sem regressão |
+| 9 | Referências nº 4 | PASS: sem regressão |
+| 10 | ENTENDA | PASS: sem regressão |
+
+O cartão continua com o candidato J1.1 (257 vínculos J). A Jurisprudência **não** foi promovida nem congelada.
