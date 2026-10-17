@@ -1,0 +1,60 @@
+{
+ "result": "SD_VALIDATED",
+ "readback": {
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+   "bytes": 62364,
+   "sha256": "d07cb0764735a56d9f7eecb915a56ed083d35e662cd47164293e388d048f72e1"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+   "bytes": 6450,
+   "sha256": "66bea5f0ddddb4c17ef4c25e587fcb95cc705f955b7620c6c31ea2a072bcfe38"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+   "bytes": 165466,
+   "sha256": "75d483c081c23e5fea981f516abae510af0a8104c4fa9e3e59ca52a8bbb9d213"
+  },
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": {
+   "bytes": 7641,
+   "sha256": "28b412d163aaccc183c0751e026debfcad2f0a40248e462135ea161750d7cf4e"
+  },
+  "99_LEX_V1/00_SYS/LEXV1.VER": {
+   "bytes": 596,
+   "sha256": "71eb25ce67c461c7b573976f1f299065f77beaccb5d3e5224c5a3f11131a1af8"
+  }
+ },
+ "mismatch": [],
+ "diff_full": {
+  "added": [],
+  "removed": [],
+  "changed": [
+   "99_LEX_V1/00_SYS/LEXV1.VER",
+   "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+  ]
+ },
+ "files_written": 5,
+ "manifest_vs_card": "PASS",
+ "manifest_entries_checked": 10,
+ "correlata_files_unchanged": {
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX": true,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": true,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": true
+ },
+ "other_files_untouched": true,
+ "file_count_pre": 1142,
+ "file_count_post": 1142,
+ "candidate": {
+  "build_id": "cbed709a40356681",
+  "git_commit": "7786bbc50a5f33fcf7eec01ce0de170b2d02a4f6",
+  "reference_engine": {
+   "tag": "cf-reference-engine-run7-juris-j1-4",
+   "run": "run7",
+   "status": "RUN7_JURIS_J1_4_CANDIDATE_HOST_ONLY",
+   "derived_from": "run6 (J1.1 installed, J1.2 10/10) − 4 links on historically wrong targets + 3 relocations (J1.3 ratified 4/4)"
+  }
+ }
+}
