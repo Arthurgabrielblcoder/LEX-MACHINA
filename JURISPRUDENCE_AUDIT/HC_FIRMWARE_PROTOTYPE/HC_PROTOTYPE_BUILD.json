@@ -1,0 +1,71 @@
+{
+ "phase": "C",
+ "status": "HOST_ONLY_PROTOTYPE",
+ "flashed": false,
+ "firmware_dir_modified": false,
+ "physical_approval": false,
+ "toolchain": {
+  "arduino_cli": "arduino-cli.exe",
+  "core": "esp32:esp32 3.3.11",
+  "fqbn": "esp32:esp32:esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default",
+  "build_property": "compiler.cpp.extra_flags=-DLEX_DEVICE_V1_ENABLED=1"
+ },
+ "reproducibility": {
+  "source": "firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE (sem mudança desde e9c7d53)",
+  "header": {
+   "path": "LEGAL_TARGET_ID/derived/export_test/run5_references4_r1_candidate/device_candidate/lex_ref_detail_data.RUN5_CANDIDATE.h",
+   "sha256": "e420f4dec7923036448b4cf1129c6092a9489b8c36c8cef4921a5d534b6f55f8",
+   "fichas": 124
+  },
+  "header_in_firmware_dir": {
+   "sha256": "2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b",
+   "fichas": 122,
+   "note": "dívida conhecida: NÃO usado neste build"
+  },
+  "approved_app_sha256": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c",
+  "approved_bin_available": true,
+  "approved_bin_sha_matches": true,
+  "base_rebuild": {
+   "program_bytes": 1100991,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1101136,
+   "app_sha256": "e4da386313ca2267407dd2033a62a904a4352518b8e1842a1a621014969eeb27",
+   "app_partition_bytes": 1310720,
+   "app_partition_free": 209584
+  },
+  "base_vs_approved_differing_bytes": 70,
+  "base_vs_approved_metadata_only": true,
+  "FIRMWARE_BASELINE_REPRODUCED": "YES (idêntico exceto metadados de build)"
+ },
+ "hc_patch": {
+  "file": "JURISPRUDENCE_AUDIT/HC_FIRMWARE_PROTOTYPE/hc_type.patch",
+  "edits": 4,
+  "other_files_identical": true,
+  "ino_sha256_base": "7afc5106293e8cbe6c5fb5cfaa91c33dcc4903ab0af29c44de76dc8871a13cb0",
+  "ino_sha256_hc": "91f6b619af766b86d0a6233b74fcb50a8900ba4743d7376376e949220e5daced"
+ },
+ "hc_build": {
+  "program_bytes": 1101127,
+  "static_ram_bytes": 126148,
+  "app_bin_bytes": 1101280,
+  "app_sha256": "169b6619c7d3261b75738bc16ed7db36f0edbbd057f2af6a83e4102782911079",
+  "app_partition_bytes": 1310720,
+  "app_partition_free": 209440
+ },
+ "delta_vs_base": {
+  "program_bytes": 136,
+  "static_ram_bytes": 0,
+  "app_bin_bytes": 144
+ },
+ "labels_in_bin": {
+  "base_has_HC_label": false,
+  "hc_has_HC_label": true
+ },
+ "not_verified": [
+  "teste físico (boot, lista, ficha, BACK)",
+  "tempo de boot",
+  "PSRAM em execução",
+  "BLE"
+ ],
+ "binaries": "DEVICE_INTEGRATION/backups/hc_prototype/{build_base,build_hc} (fora do Git)"
+}

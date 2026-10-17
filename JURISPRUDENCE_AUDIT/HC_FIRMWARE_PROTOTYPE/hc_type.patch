@@ -1,0 +1,29 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino
+@@ -765,5 +765,5 @@
+   JTIPO_SV=0, JTIPO_SUMULA_STF, JTIPO_RG, JTIPO_REPETITIVO_STJ,
+   JTIPO_IAC, JTIPO_SIRDR, JTIPO_ADI, JTIPO_ADC, JTIPO_ADPF,
+-  JTIPO_ACORDAO, JTIPO_OUTRO
++  JTIPO_ACORDAO, JTIPO_HC, JTIPO_OUTRO
+ };
+ 
+@@ -1068,4 +1068,5 @@
+   if(tipo=="adpf") return JTIPO_ADPF;
+   if(tipo=="acordao") return JTIPO_ACORDAO;
++  if(tipo=="hc" || tipo=="habeas_corpus") return JTIPO_HC;
+   return JTIPO_OUTRO;
+ }
+@@ -1084,4 +1085,5 @@
+     case JTIPO_ADPF: return "ADPF "+r.numero;
+     case JTIPO_ACORDAO: return "ACORDAO "+r.numero;
++    case JTIPO_HC: return "HC "+r.numero;
+     default: return "OUTRO "+r.numero;
+   }
+@@ -2002,5 +2004,6 @@
+     case JTIPO_ADI:
+     case JTIPO_ADC:
+-    case JTIPO_ADPF: totalAcordaosArtigo++; break;
++    case JTIPO_ADPF:
++    case JTIPO_HC: totalAcordaosArtigo++; break;
+     default: totalOutrosJurisArtigo++; break;
+   }
