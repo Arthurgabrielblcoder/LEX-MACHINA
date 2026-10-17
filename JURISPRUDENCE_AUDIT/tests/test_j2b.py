@@ -12,6 +12,8 @@ AUD = Path(__file__).resolve().parents[1]
 ROOT = AUD.parent
 sys.path.insert(0, str(ROOT / 'LEGAL_TARGET_ID'))
 sys.path.insert(0, str(AUD))
+sys.path.insert(0, str(AUD / 'FIRMWARE_REPRODUCIBILITY'))
+import firmware_baseline as FB  # noqa: E402  (Parte D: only the sha-pinned 124-ficha header may differ)
 import build_export_run8_juris_j2b as R8  # noqa: E402
 import check_j2b_provisional as G  # noqa: E402
 
@@ -121,8 +123,7 @@ class J2B(unittest.TestCase):
         self.assertEqual(reg['items'][0]['targets'], ['CF88:ART.166:PAR.9', 'CF88:ART.166:PAR.11', 'CF88:ART.166-A'])
 
     def test_firmware_untouched(self):
-        r = subprocess.run(['git', 'diff', '--quiet', 'a57937e', 'HEAD', '--', 'firmware'], cwd=ROOT)
-        self.assertEqual(r.returncode, 0)
+        self.assertEqual(FB.firmware_changes('a57937e'), [])
 
 
 if __name__ == '__main__':

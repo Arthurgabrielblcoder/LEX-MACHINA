@@ -14,11 +14,13 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+sys.path.insert(0, str(ROOT / 'JURISPRUDENCE_AUDIT/FIRMWARE_REPRODUCIBILITY'))
+import firmware_baseline as FB  # noqa: E402  (Parte D: pre-R1 header pinned in Git)
 BASE = ROOT / 'CORRELATA_COVERAGE_AUDIT/C3B2_PHYSICAL_TEST_PACKAGE/candidate/SD'
 RUN5 = ROOT / 'LEGAL_TARGET_ID/derived/export_test/run5_references4_r1_candidate'
 CAND = RUN5 / 'device_ready'
 ADDS_R1 = ROOT / 'LEGAL_TARGET_ID/derived/CF88_WORK_REFERENCE_ADDITIONS_R1.json'
-HDR_BASE = ROOT / 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/lex_ref_detail_data.h'
+HDR_BASE = FB.pre_r1_header_bytes()       # pre-R1 header (122) from Git @10e199f; firmware/ now holds the R1 header (Parte D)
 HDR_CAND = RUN5 / 'device_candidate/lex_ref_detail_data.RUN5_CANDIDATE.h'
 FW = ROOT / 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE'
 OUT = HERE / 'REFERENCES_4_R1_ISOLATION_AUDIT.json'
@@ -56,7 +58,7 @@ def lf(b):
 
 
 def header_entries(p):
-    txt = lf(Path(p).read_bytes()).decode('utf-8')
+    txt = lf(p if isinstance(p, bytes) else Path(p).read_bytes()).decode('utf-8')
     body = txt[txt.index('LEXV1_REF_DETALHES[LEXV1_REF_DETAIL_COUNT] = {'):]
     ents = re.findall(r'\n  \{"((?:[^"\\]|\\.)*)", .*?\},(?=\n  \{|\n\};)', body, re.S)
     blocks = re.findall(r'\n  (\{"(?:[^"\\]|\\.)*", .*?\},)(?=\n  \{|\n\};)', body, re.S)
@@ -134,7 +136,7 @@ def audit():
         new_keys=sorted(set(ec) - set(eb)), removed_keys=sorted(set(eb) - set(ec)), unique_keys=len(keys) == len(set(keys)),
         sorted_for_strcmp=keys == sorted(keys, key=lambda k: k.encode('utf-8')),
         every_visible_work_link_has_detail={f'{r[0]}|{r[5]}' for r in wc if r[2] == 'CURRENT_VISIBLE'} == set(ec),
-        candidate_sha256=sha(lf(HDR_CAND.read_bytes())), base_sha256=sha(lf(HDR_BASE.read_bytes())))
+        candidate_sha256=sha(lf(HDR_CAND.read_bytes())), base_sha256=sha(lf(HDR_BASE)))
     # ---- firmware limits of the layer-4 path (registered, not optimized)
     key_max, line_max, itens_max = fw_define('LEXV1_KEY_MAX'), fw_define('LEXV1_LINE_MAX'), fw_define('LEXV1_REF_ITENS_MAX')
     per_article = collections.Counter()

@@ -11,6 +11,8 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'JURISPRUDENCE_AUDIT/FIRMWARE_REPRODUCIBILITY'))
+import firmware_baseline as FB  # noqa: E402  (Parte D: pre-R1 header pinned in Git)
 DI = ROOT / 'DEVICE_INTEGRATION'
 sys.path.insert(0, str(DI / 'tools'))
 import canonical_layer_audit as A  # noqa: E402
@@ -22,7 +24,7 @@ C3B2 = ROOT / 'CORRELATA_COVERAGE_AUDIT/C3B2_PHYSICAL_TEST_PACKAGE/candidate/SD'
 C3B2_STAGING = DI / 'C3B2_CORRELATA_PROMOTION/STAGING_FILE_MANIFEST.json'
 RUN5 = ROOT / 'LEGAL_TARGET_ID/derived/export_test/run5_references4_r1_candidate'
 HDR = RUN5 / 'device_candidate/lex_ref_detail_data.RUN5_CANDIDATE.h'
-HDR_BASE = ROOT / 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/lex_ref_detail_data.h'
+HDR_BASE = FB.pre_r1_header_bytes()       # pre-R1 header (122) from Git @10e199f; firmware/ now holds the R1 header (Parte D)
 REF, COR = A.REFERENCIA, A.CORRELATA
 
 
@@ -36,7 +38,7 @@ def c_unescape(s):
 
 def header_table(p):
     """{key: (titulo, tipo, ano, nota10, sobre, fonte)} parsed from the generated C table, in file order."""
-    txt = Path(p).read_bytes().replace(b'\r\n', b'\n').decode('utf-8')     # checkout may use autocrlf
+    txt = (p if isinstance(p, bytes) else Path(p).read_bytes()).replace(b'\r\n', b'\n').decode('utf-8')     # checkout may use autocrlf
     out = {}
     for m in re.finditer(r'\n  \{("(?:[^"\\]|\\.|"")*?"), ("(?:[^"\\]|\\.|"")*?"), ("(?:[^"\\]|\\.|"")*?"), (\d+), (-?\d+),\n   '
                          r'("(?:[^"\\]|\\.|"")*?"),\n   ("(?:[^"\\]|\\.|"")*?"),\n   ("(?:[^"\\]|\\.|"")*?"), ("(?:[^"\\]|\\.|"")*?"), '
@@ -85,7 +87,8 @@ class DetailHeaderTest(unittest.TestCase):
             self.assertEqual(busca_detalhe(self.keys, *k.split('|')), k)
 
     def test_baseline_header_untouched(self):
-        self.assertEqual(hashlib.sha256(HDR_BASE.read_bytes().replace(b'\r\n', b'\n')).hexdigest(), '2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b')
+        self.assertEqual(FB._sha_lf((ROOT / FB.HEADER).read_bytes()), FB.HEADER_R1_SHA_LF)       # firmware/ = approved R1 header
+        self.assertEqual(hashlib.sha256(HDR_BASE.replace(b'\r\n', b'\n')).hexdigest(), '2ca5820a170a3b08ecfa869685d319d65eee5bc94ddf0bfa5854282acce9710b')
 
 
 class HostOnlyPackageTest(unittest.TestCase):

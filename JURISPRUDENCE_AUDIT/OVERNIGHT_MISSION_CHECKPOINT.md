@@ -7,10 +7,10 @@
 | Item | Valor |
 |---|---|
 | Branch | `cf-jurisprudence-audit` (sem merge em main, sem tag, sem force push) |
-| Fase atual | **H (MEDIUM)**; Batch08 concluído · próxima: Batch09 MEDIUM, depois as fases K/L/M e o relatório final |
+| Fase atual | **Operação noturna encerrada.** A operação pós-noturna a sucedeu; ver `POST_OVERNIGHT_CHECKPOINT.md` |
 | Baseline físico | J2C: **261 vínculos / 160 targets** (instalado, 12/12) |
 | Candidatos preparados (NÃO instalados) | J2E-A (268/166, firmware atual) · J2E-B (269/167, exige firmware HC) |
-| Firmware HC | protótipo compilado host-only (`169b6619…`); base reproduzida (= `6e329c91…` exceto metadados); **não gravado** |
+| Firmware HC | protótipo compilado host-only (`169b6619…`), **substituído** pelo protótipo de tipos genéricos (Parte F); **não gravado** |
 
 ## Guardrails (mantidos)
 
@@ -31,6 +31,7 @@ UNRATIFIED_JURIS_RELATIONS_PUBLISHED = 0 · UNRATIFIED_DECISIONS_MARKED_HUMAN_AP
 | 06 | MEDIUM | `J2_MEDIUM_BACKLOG/J2_BATCH06_DECISIONS.json` | aguardando ratificação |
 | 07 | MEDIUM | `J2_MEDIUM_BACKLOG/J2_BATCH07_DECISIONS.json` | aguardando ratificação |
 | 08 | MEDIUM | `J2_MEDIUM_BACKLOG/J2_BATCH08_DECISIONS.json` | aguardando ratificação (1 UNRESOLVED: STJ bloqueado) |
+| 09 | MEDIUM | `J2_MEDIUM_BACKLOG/J2_BATCH09_DECISIONS.json` | aguardando ratificação (pós-noturna) |
 
 **Como gerar o próximo lote:**
 
@@ -62,7 +63,7 @@ Depois:
 |---|---|
 | STJ (`scon.stj.jus.br`) | Desafio anti-robô; não contornado. Súmula 403 = UNRESOLVED_EXTERNAL |
 | `constituicao.stf.jus.br` ("A Constituição e o Supremo") | Não carrega no navegador embutido; ADIs verificadas pela pesquisa de jurisprudência |
-| Dívida do header em `firmware/` (122 fichas) | Não corrigida (guard das Correlatas); não bloqueia o protótipo HC, que usa o header versionado de 124 fichas |
+| Dívida do header em `firmware/` (122 fichas) | **Resolvida na pós-noturna (Parte D, `aa8cdd3`)**: `firmware/` reconstrói o app aprovado |
 
 ## Commits relevantes
 
@@ -75,4 +76,5 @@ Depois:
 | `368e644` | Batch04/05 + cobertura HIGH |
 | `a5cb2e3` | Batch06 |
 | `1738773` | Batch07 |
-| (próximo) | Batch08 |
+| `150ae1c` | Batch08 |
+| `aefe545` | relatório parcial |

@@ -11,6 +11,8 @@ AUD = Path(__file__).resolve().parents[1]
 ROOT = AUD.parent
 sys.path.insert(0, str(ROOT / 'LEGAL_TARGET_ID'))
 sys.path.insert(0, str(AUD))
+sys.path.insert(0, str(AUD / 'FIRMWARE_REPRODUCIBILITY'))
+import firmware_baseline as FB  # noqa: E402  (Parte D: only the sha-pinned 124-ficha header may differ)
 import build_export_run10_juris_j2e as R10  # noqa: E402
 import apply_j2e_batch02_overlay as O  # noqa: E402
 
@@ -102,8 +104,7 @@ class J2E(unittest.TestCase):
         for d in m['file_diff'] + m['file_additions']:
             rel = d['path'].lstrip('/')
             self.assertEqual(sha(AUD / 'J2B_1_CANDIDATE_HOST_ONLY/candidate/SD' / rel), self.card[rel], rel)
-        r = subprocess.run(['git', 'diff', '--quiet', 'a57937e', 'HEAD', '--', 'firmware'], cwd=ROOT)
-        self.assertEqual(r.returncode, 0)
+        self.assertEqual(FB.firmware_changes('a57937e'), [])
 
 
 if __name__ == '__main__':

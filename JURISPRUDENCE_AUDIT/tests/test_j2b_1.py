@@ -11,6 +11,8 @@ AUD = Path(__file__).resolve().parents[1]
 ROOT = AUD.parent
 sys.path.insert(0, str(ROOT / 'LEGAL_TARGET_ID'))
 sys.path.insert(0, str(AUD))
+sys.path.insert(0, str(AUD / 'FIRMWARE_REPRODUCIBILITY'))
+import firmware_baseline as FB  # noqa: E402  (Parte D: only the sha-pinned 124-ficha header may differ)
 import build_export_run9_juris_j2b_1 as R9  # noqa: E402
 import build_j2b_isolation_audit as A  # noqa: E402
 
@@ -77,8 +79,7 @@ class J2B1(unittest.TestCase):
             self.assertEqual(self.v[k], 0, k)
         for k in ('CORRELATA_FILES_BYTE_IDENTICAL', 'ENTENDA_FILES_BYTE_IDENTICAL', 'FIRMWARE_CACHE_RULES_HOLD', 'REGRESSION_TARGETS_UNCHANGED'):
             self.assertTrue(self.v[k], k)
-        r = subprocess.run(['git', 'diff', '--quiet', 'a57937e', 'HEAD', '--', 'firmware'], cwd=ROOT)
-        self.assertEqual(r.returncode, 0)
+        self.assertEqual(FB.firmware_changes('a57937e'), [])
 
     def test_9_reproducible(self):
         for _ in range(3):

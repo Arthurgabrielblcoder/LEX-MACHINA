@@ -6,6 +6,9 @@ from pathlib import Path
 
 AUD = Path(__file__).resolve().parents[1]
 ROOT = AUD.parent
+import sys  # noqa: E402
+sys.path.insert(0, str(AUD / 'FIRMWARE_REPRODUCIBILITY'))
+import firmware_baseline as FB  # noqa: E402  (Parte D: only the sha-pinned 124-ficha header may differ)
 HC = AUD / 'HC_FIRMWARE_PROTOTYPE'
 
 
@@ -17,8 +20,7 @@ class HCPrototype(unittest.TestCase):
 
     def test_not_flashed_and_firmware_dir_untouched(self):
         self.assertEqual((self.r['flashed'], self.r['firmware_dir_modified'], self.r['physical_approval']), (False, False, False))
-        r = subprocess.run(['git', 'diff', '--quiet', 'e9c7d53', 'HEAD', '--', 'firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE'], cwd=ROOT)
-        self.assertEqual(r.returncode, 0)
+        self.assertEqual(FB.firmware_changes('e9c7d53'), [])
 
     def test_baseline_reproduced_with_124_header(self):
         rp = self.r['reproducibility']
