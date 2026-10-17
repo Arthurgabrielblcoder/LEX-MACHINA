@@ -1,0 +1,2057 @@
+{
+ "schema_version": 1,
+ "round": "J2A",
+ "batch": "BATCH01",
+ "mode": "HOST_ONLY_DECISIONS_NO_MATERIALIZATION",
+ "status": "AWAITING_USER_RATIFICATION",
+ "current_baseline": {
+  "file": "JURISPRUDENCE_AUDIT/J1_4_CANDIDATE_HOST_ONLY/candidate/SD/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+  "sha256": "d07cb0764735a56d9f7eecb915a56ed083d35e662cd47164293e388d048f72e1",
+  "JURIS_RELATIONS": 256,
+  "JURIS_TARGETS": 156,
+  "physical": "J1_5_PHYSICAL_VALIDATION = 11/11 PASS"
+ },
+ "inputs": {
+  "JURISPRUDENCE_AUDIT/J0_DIAGNOSTIC_AUDIT.json": "0bd25c5c11ea2edaa75413f99c6cd755040757b7e54469d9a94cc2ea05e16fc4",
+  "ENTENDA_ENGINE/derived/production_batch_01_final/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "e4cb270e4d98626eca366bf14e2f83386efef56b811e6c4dd8af9d7ea528c0fc",
+  "ENTENDA_ENGINE/derived/production_batch_02_final/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "c40548fbfdc4f80b8a52d3c3ff6efaf3ac193b2b0f029546f47edc330a465eb0",
+  "ENTENDA_ENGINE/derived/production_batch_03_final/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "bdf6278d5afdcd908d1268dbe6b4b5a45e032b875a276d3dfd6abd6a2461b252",
+  "ENTENDA_ENGINE/derived/production_batch_04/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "38ae39265f91761dc83b1b20876e9718c3e4bea65464529b3cc50bc8cd1e0875",
+  "ENTENDA_ENGINE/derived/production_batch_05/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "d3866ed5f32455fcfb8d6525ef2dfd1845b6c4e31b030fbe09cf01f2987f256b",
+  "ENTENDA_ENGINE/derived/production_batch_06/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "8a735d5da6c20e83f32aba212f6bcec46e3914998d22aa44bfb7ac8c58216e8d",
+  "ENTENDA_ENGINE/derived/production_batch_07_macro/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "d5b184c2cb5be3ccc1bcbef67b79bbd7f26fe2aad29ee86e94c15d5f0879114f",
+  "ENTENDA_ENGINE/derived/production_batch_08_macro/JURISPRUDENCE_LINK_RECOMMENDATIONS.json": "7a1b42e707b3b7b31e1f51666e70ced6ab3e8616eb92401f612f3c979a130cd9"
+ },
+ "reconstruction": {
+  "raw_recommendations": 170,
+  "unique": 170,
+  "by_category": {
+   "ALREADY_LINKED": 19,
+   "EXCLUDED_MATERIAL_DIVERGENCE": 3,
+   "NEEDS_EXTERNAL_INGESTION": 148
+  },
+  "BACKLOG_PENDING": 148,
+  "BACKLOG_TARGETS": 110,
+  "pending_by_priority": {
+   "HIGH": 42,
+   "LOW": 26,
+   "MEDIUM": 80
+  },
+  "HIGH_TOTAL": 42,
+  "equals_J0": {
+   "pending": true,
+   "targets": true,
+   "by_priority": false,
+   "high_set": false
+  }
+ },
+ "selection_rules": {
+  "1_explicit_identifier": "2 = desired_reference names exactly one identifier; 1 = identifiers only in the note or more than one; 0 = none",
+  "2_constitutional_weight": "2 = precedent with general/binding effect (ADI/ADC/ADO/ADPF, Tema RG, SV); 1 = other STF classes / súmula comum",
+  "3_recurrence": "1 = the same identifier is recommended in more than one pending recommendation (or occurrences > 1)",
+  "4_specificity": "1 = target below article level (caput, parágrafo, inciso, alínea); 0 = whole article",
+  "5_low_ambiguity": "1 = exactly one identifier in reference + note and reference is not IDENTIFICACAO_PENDENTE",
+  "6_utility": "1 = article without any visible jurisprudence in the current baseline",
+  "7_tiebreak": "recommendation_id ascending"
+ },
+ "high_queue": [
+  {
+   "recommendation_id": "J0-BL-039",
+   "target_id": "CF88:ART.23:INC.II",
+   "desired_reference": "STF Tema 793 (Repercussão Geral) — responsabilidade dos entes federados em demandas de saúde",
+   "origin": [
+    "production_batch_03_final"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Tema 793"
+   ],
+   "suggested_type": [
+    "Tema"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 17,
+   "recommendation_text": "responsabilidade solidaria dos entes na saude, mantida fora do corpo"
+  },
+  {
+   "recommendation_id": "J0-BL-045",
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 157 (RE 729744) — natureza opinativa do parecer previo; julgamento das contas anuais do Prefeito pela Camara",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "RE 729744",
+    "Tema 157"
+   ],
+   "suggested_type": [
+    "RE",
+    "Tema"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 37,
+   "recommendation_text": "natureza do parecer previo e competencia da Camara"
+  },
+  {
+   "recommendation_id": "J0-BL-046",
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 835 (RE 848826) — contas de governo e de gestao do Prefeito apreciadas pela Camara (LC 64/1990)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "RE 848826",
+    "Tema 835"
+   ],
+   "suggested_type": [
+    "RE",
+    "Tema"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 38,
+   "recommendation_text": "contas de governo x contas de gestao"
+  },
+  {
+   "recommendation_id": "J0-BL-047",
+   "target_id": "CF88:ART.29:INC.X",
+   "desired_reference": "STF Sumula 702 — competencia do Tribunal de Justica para julgar prefeitos restrita aos crimes da Justica comum estadual",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Súmula 702"
+   ],
+   "suggested_type": [
+    "Súmula"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 24,
+   "recommendation_text": "delimitar o foro do Prefeito"
+  },
+  {
+   "recommendation_id": "J0-BL-048",
+   "target_id": "CF88:ART.29:INC.X",
+   "desired_reference": "STF 2025 — HC 232627 e Inq 4787: prerrogativa de foro para crimes praticados no cargo e em razao das funcoes subsiste apos o afastamento",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "HC 232627",
+    "Inq 4787"
+   ],
+   "suggested_type": [
+    "HC",
+    "Inq"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 35,
+   "recommendation_text": "permanencia do foro apos o termino do mandato (entendimento mutavel; somente CAMADA EXTERNA)"
+  },
+  {
+   "recommendation_id": "J0-BL-049",
+   "target_id": "CF88:ART.29-A:PAR.2",
+   "desired_reference": "STF Sumula Vinculante 46 — competencia legislativa privativa da Uniao para definir crimes de responsabilidade e normas de processo e julgamento",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "SV 46"
+   ],
+   "suggested_type": [
+    "SV"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 18,
+   "recommendation_text": "quem define os crimes de responsabilidade do art. 29-A"
+  },
+  {
+   "recommendation_id": "J0-BL-051",
+   "target_id": "CF88:ART.35:INC.IV",
+   "desired_reference": "STF — taxatividade das hipoteses de intervencao estadual (art. 35) e natureza politico-administrativa do procedimento no Judiciario (ADI 336, ADI 7369, AI 343461 AgR)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 336",
+    "ADI 7369",
+    "AI 343461"
+   ],
+   "suggested_type": [
+    "ADI",
+    "AI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 39,
+   "recommendation_text": "provenance da aprovacao do art. 35, IV (texto principal inalterado)"
+  },
+  {
+   "recommendation_id": "J0-BL-052",
+   "target_id": "CF88:ART.36:INC.I",
+   "desired_reference": "STF ADI 2167 — intervencao com carater vinculado ou discricionario conforme a hipotese constitucional",
+   "origin": [
+    "production_batch_04"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 2167"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 19,
+   "recommendation_text": "grau de vinculacao do chefe do Executivo (somente CAMADA EXTERNA)"
+  },
+  {
+   "recommendation_id": "J0-BL-053",
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "desired_reference": "MS 34.418 (STF, Plenario, 25/09/2023)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "MS 34418"
+   ],
+   "suggested_type": [
+    "MS"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 25,
+   "recommendation_text": "votacao separada da perda do cargo e da inabilitacao"
+  },
+  {
+   "recommendation_id": "J0-BL-054",
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "desired_reference": "MS 21.689 (STF)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "MS 21689"
+   ],
+   "suggested_type": [
+    "MS"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 26,
+   "recommendation_text": "contexto historico da votacao separada"
+  },
+  {
+   "recommendation_id": "J0-BL-055",
+   "target_id": "CF88:ART.53:CAPUT",
+   "desired_reference": "Inq 4.781 Ref (STF)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Inq 4781"
+   ],
+   "suggested_type": [
+    "Inq"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 27,
+   "recommendation_text": "nexo da imunidade material com o mandato"
+  },
+  {
+   "recommendation_id": "J0-BL-056",
+   "target_id": "CF88:ART.53:CAPUT",
+   "desired_reference": "Pet 7.174 (STF)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Pet 7174"
+   ],
+   "suggested_type": [
+    "Pet"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 28,
+   "recommendation_text": "imunidade material (indicada como catalogavel pela revisao)"
+  },
+  {
+   "recommendation_id": "J0-BL-057",
+   "target_id": "CF88:ART.53:CAPUT",
+   "desired_reference": "Tema 950 da repercussao geral (STF, 2025)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Tema 950"
+   ],
+   "suggested_type": [
+    "Tema"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 20,
+   "recommendation_text": "responsabilidade civil por manifestacao de parlamentar"
+  },
+  {
+   "recommendation_id": "J0-BL-058",
+   "target_id": "CF88:ART.53:PAR.1",
+   "desired_reference": "HC 232.627 (STF, 2025)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "HC 232627"
+   ],
+   "suggested_type": [
+    "HC"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 21,
+   "recommendation_text": "foro restrito a crimes no cargo e em razao das funcoes; subsistencia apos o termino"
+  },
+  {
+   "recommendation_id": "J0-BL-059",
+   "target_id": "CF88:ART.53:PAR.1",
+   "desired_reference": "Inq 4.787-QO (STF, 2025)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Inq 4787"
+   ],
+   "suggested_type": [
+    "Inq"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 22,
+   "recommendation_text": "foro restrito a crimes no cargo e em razao das funcoes; subsistencia apos o termino"
+  },
+  {
+   "recommendation_id": "J0-BL-060",
+   "target_id": "CF88:ART.53:PAR.1",
+   "desired_reference": "HC 232.627 ED (STF, 2026)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "HC 232627"
+   ],
+   "suggested_type": [
+    "HC"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 23,
+   "recommendation_text": "esclarecimentos sobre o alcance da regra"
+  },
+  {
+   "recommendation_id": "J0-BL-061",
+   "target_id": "CF88:ART.55:INC.VI",
+   "desired_reference": "AP 694 (STF)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "AP 694"
+   ],
+   "suggested_type": [
+    "AP"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 29,
+   "recommendation_text": "perda do mandato por condenacao criminal e cumprimento da pena"
+  },
+  {
+   "recommendation_id": "J0-BL-067",
+   "target_id": "CF88:ART.86",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADPF 378",
+    "MS 21564"
+   ],
+   "suggested_type": [
+    "ADPF",
+    "MS"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 0,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 42,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", arts. 52 e 86): ADPF 378 MC (2015): cabe ao Senado o juízo inicial de instauração ou não do processo, por maioria simples; MS 21.564 (1992): a Câmara profere juízo político de "
+  },
+  {
+   "recommendation_id": "J0-BL-068",
+   "target_id": "CF88:ART.86:PAR.3",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 1021",
+    "ADI 978",
+    "Inq 672"
+   ],
+   "suggested_type": [
+    "ADI",
+    "Inq"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 40,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 86): ADI 978 e ADI 1.021 (1995): o § 3º é imunidade à prisão cautelar (em flagrante, preventiva e temporária), exclusiva do Presidente; Inq 672 QO (1992): o § 4º impede, n"
+  },
+  {
+   "recommendation_id": "J0-BL-069",
+   "target_id": "CF88:ART.92",
+   "desired_reference": "ADIN 3392",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 3392"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 7,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-072",
+   "target_id": "CF88:ART.96:INC.III",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "Rcl 84738"
+   ],
+   "suggested_type": [
+    "Rcl"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 41,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (Informativo STF 1212): Rcl 84.738 AgR/PI, Segunda Turma, unânime, julgamento finalizado em 14/04/2026: membro de Ministério Público estadual processado por crimes não relacionados com o cargo mantém foro no Trib"
+  },
+  {
+   "recommendation_id": "J0-BL-074",
+   "target_id": "CF88:ART.98",
+   "desired_reference": "ADIN 3392",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 3392"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 8,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-075",
+   "target_id": "CF88:ART.100",
+   "desired_reference": "ADI 4425",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 4425"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 14,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-076",
+   "target_id": "CF88:ART.100",
+   "desired_reference": "ADI 7047",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7047"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 15,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-077",
+   "target_id": "CF88:ART.100",
+   "desired_reference": "ADI 7064",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7064"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 16,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-080",
+   "target_id": "CF88:ART.100:PAR.9",
+   "desired_reference": "ADI 4425",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 4425"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 3,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-081",
+   "target_id": "CF88:ART.100:PAR.9",
+   "desired_reference": "ADI 7047",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7047"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 4,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-082",
+   "target_id": "CF88:ART.100:PAR.9",
+   "desired_reference": "ADI 7064",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7064"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 5,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-084",
+   "target_id": "CF88:ART.100:PAR.12",
+   "desired_reference": "ADI 4425",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 4425"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 0
+   },
+   "rank": 6,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-090",
+   "target_id": "CF88:ART.103:PAR.1",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 1254",
+    "ADI 1616",
+    "ADI 4983"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 32,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 103, § 3º): ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva do Advogado-Geral da União, sem emissão de parecer pela inconstitucionalidade; ADI 1.616 (2001): o mú"
+  },
+  {
+   "recommendation_id": "J0-BL-122",
+   "target_id": "CF88:ART.130",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 3315",
+    "ADI 3804",
+    "ADI 4427",
+    "ADI 789"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 0,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 33,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 130): ADI 789 (citada na ADI 3.315, 2008), ADI 3.804 (2021) e ADI 4.427 (2023): o Ministério Público especial integra a estrutura do Tribunal de Contas, sem vínculo com o "
+  },
+  {
+   "recommendation_id": "J0-BL-134",
+   "target_id": "CF88:ART.165:PAR.18",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7047",
+    "ADI 7064"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 30,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, ADI 7064, com a ADI 7047): interpretação conforme ao art. 107-A do ADCT, com efeitos apenas para o exercício de 2022 (decisão de 30/11/2023). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+  },
+  {
+   "recommendation_id": "J0-BL-135",
+   "target_id": "CF88:ART.166",
+   "desired_reference": "ADI 7697",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 9,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-136",
+   "target_id": "CF88:ART.166:PAR.9",
+   "desired_reference": "ADI 7697",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 1,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-137",
+   "target_id": "CF88:ART.166:PAR.11",
+   "desired_reference": "ADI 7697",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 1,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 2,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-138",
+   "target_id": "CF88:ART.166-A",
+   "desired_reference": "ADI 7697",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 10,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-165",
+   "target_id": "ADCT:ART.27",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 5017"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 0,
+    "4_specificity": 0,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 34,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A anotação oficial do § 11 remete à ADI 5017; o resultado e o alcance da decisão e a situação de cada tribunal pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION)."
+  },
+  {
+   "recommendation_id": "J0-BL-166",
+   "target_id": "ADCT:ART.101",
+   "desired_reference": "ADI 7047",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7047"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 11,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-167",
+   "target_id": "ADCT:ART.101",
+   "desired_reference": "ADI 7064",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7064"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 12,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-168",
+   "target_id": "ADCT:ART.101",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7047",
+    "ADI 7064"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 31,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A anotação oficial do § 5º remete à ADI 7047 e à ADI 7064; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION)."
+  },
+  {
+   "recommendation_id": "J0-BL-169",
+   "target_id": "ADCT:ART.107-A",
+   "desired_reference": "ADI 7064",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7064"
+   ],
+   "suggested_type": [
+    "ADI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_constitutional_weight": 2,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 1,
+    "6_utility": 1
+   },
+   "rank": 13,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-170",
+   "target_id": "ADCT:ART.107-A",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "occurrences": 1,
+   "suggested_identifiers": [
+    "ADI 7064",
+    "MI 7300"
+   ],
+   "suggested_type": [
+    "ADI",
+    "MI"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "same_local_identity_linked_at": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_constitutional_weight": 1,
+    "3_recurrence": 1,
+    "4_specificity": 0,
+    "5_low_ambiguity": 0,
+    "6_utility": 1
+   },
+   "rank": 36,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: As anotações oficiais de incisos e parágrafos remetem à ADI 7064 e ao MI 7300; o resultado e o alcance das decisões pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION)."
+  }
+ ],
+ "selected": [
+  "J0-BL-136",
+  "J0-BL-137",
+  "J0-BL-080",
+  "J0-BL-081",
+  "J0-BL-082",
+  "J0-BL-084",
+  "J0-BL-069",
+  "J0-BL-074",
+  "J0-BL-135",
+  "J0-BL-138"
+ ],
+ "HIGH_REMAINING_AFTER_BATCH": 32,
+ "sources": {
+  "P1": {
+   "tier": "A",
+   "org": "Presidência da República (Planalto)",
+   "title": "Constituição Federal — texto compilado (com redações anteriores e anotações \"Vide ADI\")",
+   "identifier": "constituicao.htm",
+   "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+   "accessed_on": "2026-10-16",
+   "method": "download direto (curl)",
+   "snapshot_sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb",
+   "proves": "Origem das 10 recomendações (CANONICAL_VIGENCY_ANNOTATION). \"Vide ADIN 3392\" aparece em todo dispositivo incluído ou alterado pela EC 45/2004 (art. 5º LXXVIII e § 3º, 92 § 1º, 93 IV, 98 § 1º, 102 § 2º, 114). Art. 100, § 9º tem duas redações: a da EC 62/2009 (compensação no momento da expedição; \"Vide ADI 4425\") e a da EC 113/2021 (vigente; \"Vide ADI 7047/7064\"). § 12 tem só a redação da EC 62/2009. \"Vide ADI 7697\" em art. 165 § 9º III e § 10, art. 166 §§ 9º a 20 e art. 166-A."
+  },
+  "S1": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — acórdão ADI 3423 (no mesmo sentido: ADI 3392, 3432, 3520)",
+   "identifier": "ADI 3392",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "e34505f34d27614b43a4acbed26a2af7bed9ed662959e8917bd7c488c01903e8",
+   "proves": "Ementa oficial: EC 45/2004 na parte que deu nova redação ao art. 114, §§ 2º e 3º (mútuo acordo para o dissídio coletivo; MPT na greve em atividade essencial). Improcedente, Pleno, j. 29/05/2020, DJe 18/06/2020."
+  },
+  "S2": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADI 3392 (detalhe e aba Informações)",
+   "identifier": "ADI 3392 (incidente 2267506)",
+   "url": "https://portal.stf.jus.br/processos/abaInformacoes.asp?incidente=2267506",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "ba74c40c7d38b22919324da516b0bff11f76e95ed669155c409fc074f2424e55",
+   "proves": "Requerente CNPL; Rel. Min. Gilmar Mendes; apenso principal ADI 3423; assunto \"Direito do Trabalho | Sentença Normativa\"; improcedente (sessão virtual 22-28/05/2020); trânsito em julgado 21/08/2020."
+  },
+  "S3": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — acórdãos ADI 4425 (mérito, QO de modulação, ED)",
+   "identifier": "ADI 4425",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "ac1ee1c771f6d0e57797b81e20fdbb078ae1453f20189f711f3af78ca89f2577",
+   "proves": "Mérito (Pleno, j. 14/03/2013, DJe 19/12/2013, red. p/ acórdão Min. Luiz Fux): inconstitucional o regime de compensação dos §§ 9º e 10 do art. 100 (EC 62/2009); inconstitucional a correção pela poupança; declaração parcial sem redução de \"independentemente de sua natureza\" do art. 100, § 12. QO (j. 25/03/2015): modulação (TR até 25/03/2015; depois IPCA-E)."
+  },
+  "S4": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — acórdão ADI 7064",
+   "identifier": "ADI 7064",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207064%22&base=acordaos",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "4d1e398dc576b636f36fcb263c5189eb95ad724c316755ddd838a2c21a2c4e79",
+   "proves": "Ementa (Pleno, Rel. Min. Luiz Fux, j. 01/12/2023, DJe 19/12/2023), item 28: a redação do art. 100, § 9º dada pela EC 113/2021, embora diferente da declarada inconstitucional nas ADIs 4425/4357, tem a mesma essência e é incompatível com a Constituição."
+  },
+  "S5": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADI 7047, aba Decisões",
+   "identifier": "ADI 7047 (incidente 6318731)",
+   "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6318731",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "d63a00509b6be37c53616c9f905b632fcdcac167d5edd42409abd4475ee2a7df",
+   "proves": "Decisão de julgamento (sessão virtual extraordinária de 30/11/2023): parcialmente procedente; inconstitucionais o art. 100, § 9º da CF e o art. 101, § 5º do ADCT, na redação da EC 113/21; interpretação conforme ao art. 100, § 11. Julgada em conjunto com a ADI 7064."
+  },
+  "S6": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADI 7064, aba Decisões",
+   "identifier": "ADI 7064 (incidente 6330822)",
+   "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6330822",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "b71b5b660193853058fb78cd70d7ae31063bceddabf9a7f2843efadcfda644b0",
+   "proves": "Decisão de julgamento (30/11/2023): interpretação conforme ao caput do art. 107-A do ADCT (só 2022); incisos II e III e §§ 3º, 5º e 6º inconstitucionais; inconstitucionais o art. 100, § 9º da CF e o art. 101, § 5º do ADCT (EC 113/21); interpretação conforme ao art. 100, § 11."
+  },
+  "S7": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADI 7697, detalhe e aba Decisões",
+   "identifier": "ADI 7697 (incidente 6997560)",
+   "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6997560",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "2d68ff18bfd6a73276b5c3f5a4a1888a2a5f3da93ecf52198358a627486336bb",
+   "proves": "Requerente PSOL; Rel. Min. Flávio Dino. Liminar referendada por unanimidade (sessão virtual de 16/08/2024; registro de 19/08/2024): interpretação conforme, efeitos ex nunc, aos arts. 165 § 9º III e § 10; 166 §§ 9º, 9º-A, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20; e 166-A (emendas sem eficiência, transparência e rastreabilidade não podem ser executadas; impositividade não é absoluta). Referendo de 04/12/2024 sobre \"emendas PIX\" (plano de trabalho prévio). Mérito pendente (autos conclusos em 16/06/2026)."
+  }
+ },
+ "decisions": [
+  {
+   "recommendation_id": "J0-BL-136",
+   "rank": 1,
+   "recommended_by_backlog": "CF88:ART.166:PAR.9",
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "precedent": "STF:ADI:7697",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "7697",
+   "rapporteur": "Min. Flávio Dino",
+   "judgment": "MC referendada pelo Pleno em 16/08/2024 (unânime); mérito pendente",
+   "publication": "DJE (referendo); registro em 19/08/2024",
+   "subject": "Emendas parlamentares impositivas: execução condicionada a eficiência, transparência e rastreabilidade",
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão nomeia \"art. 166, § 9º (EC/126) … todos da Constituição Federal\".",
+   "target_check": "PASS",
+   "recommended_target": "CF88:ART.166:PAR.9",
+   "temporal_version": "redação da EC 126/2022 (vigente)",
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH (identidade, alvo e namespace); estabilidade: MEDIUM",
+   "provisional": true,
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "reason": "O § 9º está expressamente entre os dispositivos com interpretação conforme na cautelar referendada pelo Pleno. Como o mérito está pendente, o vínculo precisa trazer o status \"medida cautelar referendada — mérito pendente\" e ser revalidado quando o mérito for julgado.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-137",
+   "rank": 2,
+   "recommended_by_backlog": "CF88:ART.166:PAR.11",
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "precedent": "STF:ADI:7697",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "7697",
+   "rapporteur": "Min. Flávio Dino",
+   "judgment": "MC referendada pelo Pleno em 16/08/2024 (unânime); mérito pendente",
+   "publication": "DJE (referendo); registro em 19/08/2024",
+   "subject": "Emendas parlamentares impositivas: a execução obrigatória do § 11 não é absoluta",
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão nomeia \"art. 166, § 11 (EC/126) … todos da Constituição Federal\".",
+   "target_check": "PASS",
+   "recommended_target": "CF88:ART.166:PAR.11",
+   "temporal_version": "redação da EC 126/2022 (vigente)",
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH (identidade, alvo e namespace); estabilidade: MEDIUM",
+   "provisional": true,
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "reason": "O § 11 (execução obrigatória das emendas individuais) é o núcleo da tese \"impositividade não absoluta\". O alvo é expresso na cautelar referendada. Mérito pendente, então vale a mesma exigência de status e revalidação do item anterior.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-080",
+   "rank": 3,
+   "recommended_by_backlog": "CF88:ART.100:PAR.9",
+   "suggested_identifiers": [
+    "ADI 4425"
+   ],
+   "precedent": "STF:ADI:4425",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "4425",
+   "rapporteur": "Min. Ayres Britto; red. p/ acórdão Min. Luiz Fux",
+   "judgment": "14/03/2013 (mérito); QO de modulação 25/03/2015",
+   "publication": "DJe 19/12/2013; QO DJe 04/08/2015",
+   "subject": "Compensação de precatórios com débitos da Fazenda (EC 62/2009)",
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa cita \"§§ 9º e 10 do art. 100 da Constituição Federal, incluídos pela EC nº 62/09\".",
+   "target_check": "FAIL_TEMPORAL",
+   "recommended_target": null,
+   "temporal_version": "Julgou o § 9º na redação da EC 62/2009 (compensação no momento da expedição). O § 9º vigente é da EC 113/2021 e tem outro texto.",
+   "decision": "REJECT_TEMPORAL_MISMATCH",
+   "confidence": "HIGH",
+   "provisional": false,
+   "sources": [
+    "S3",
+    "P1",
+    "S4"
+   ],
+   "reason": "O texto declarado inconstitucional pela ADI 4425 não está mais no § 9º. A política J1.3/J1.4 proíbe vincular uma tese de redação histórica ao dispositivo atual de conteúdo diferente. O § 9º atual é coberto pelas ADIs 7047/7064 (J0-BL-081/082), que registram a continuidade com a ADI 4425 (ementa da ADI 7064, item 28). Um vínculo da ADI 4425 em nível de artigo, com nota temporal, fica para a recomendação J0-BL-075 (art. 100), fora deste lote.",
+   "redirect": "J0-BL-075 (CF88:ART.100; fora do lote; não decidido aqui)",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-081",
+   "rank": 4,
+   "recommended_by_backlog": "CF88:ART.100:PAR.9",
+   "suggested_identifiers": [
+    "ADI 7047"
+   ],
+   "precedent": "STF:ADI:7047",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "7047",
+   "rapporteur": "Min. Luiz Fux",
+   "judgment": "30/11/2023 (sessão virtual extraordinária), julgamento conjunto com a ADI 7064",
+   "publication": "acórdão publicado em 2023",
+   "subject": "Precatórios — EC 113/2021: encontro de contas do art. 100, § 9º",
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão declara inconstitucional o \"art. 100, § 9º, da Constituição Federal … com redação estabelecida pelo art. 1º da EC 113/21\".",
+   "target_check": "PASS",
+   "recommended_target": "CF88:ART.100:PAR.9",
+   "temporal_version": "redação da EC 113/2021 (texto vigente no compilado, declarado inconstitucional)",
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "provisional": false,
+   "sources": [
+    "S5",
+    "S4",
+    "P1"
+   ],
+   "joint_judgment_with": "STF:ADI:7064",
+   "reason": "Decisão definitiva de mérito que declara inconstitucional exatamente o § 9º vigente. Alta utilidade: o texto continua no compilado, mas não vale. A ADI 7064, julgada em conjunto, também é recomendada; os números são distintos e pesquisáveis (mesma lógica do KEEP_BOTH 367/387).",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-082",
+   "rank": 5,
+   "recommended_by_backlog": "CF88:ART.100:PAR.9",
+   "suggested_identifiers": [
+    "ADI 7064"
+   ],
+   "precedent": "STF:ADI:7064",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "7064",
+   "rapporteur": "Min. Luiz Fux",
+   "judgment": "30/11/2023 (sessão virtual extraordinária); acórdão j. 01/12/2023",
+   "publication": "DJe 19/12/2023",
+   "subject": "Precatórios — EC 113 e 114/2021: § 9º, § 11, ADCT 101 § 5º e 107-A",
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão declara inconstitucional o \"art. 100, § 9º, da Constituição Federal … com redação estabelecida pelo art. 1º da EC 113/21\"; a ementa (item 28) trata do mesmo § 9º.",
+   "target_check": "PASS",
+   "recommended_target": "CF88:ART.100:PAR.9",
+   "temporal_version": "redação da EC 113/2021 (vigente no compilado, declarado inconstitucional)",
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "provisional": false,
+   "sources": [
+    "S6",
+    "S4",
+    "P1"
+   ],
+   "joint_judgment_with": "STF:ADI:7047",
+   "reason": "Mérito definitivo; o § 9º atual é declarado inconstitucional, e a ementa explicita a continuidade com as ADIs 4425/4357. É o processo com a ementa publicada mais completa do julgamento conjunto.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-084",
+   "rank": 6,
+   "recommended_by_backlog": "CF88:ART.100:PAR.12",
+   "suggested_identifiers": [
+    "ADI 4425"
+   ],
+   "precedent": "STF:ADI:4425",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "4425",
+   "rapporteur": "Min. Ayres Britto; red. p/ acórdão Min. Luiz Fux",
+   "judgment": "14/03/2013 (mérito); QO de modulação 25/03/2015",
+   "publication": "DJe 19/12/2013; QO DJe 04/08/2015",
+   "subject": "Atualização de precatórios pela poupança e juros de precatórios tributários (art. 100, § 12)",
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa cita a expressão \"contida no art. 100, §12, da CF, incluído pela EC nº 62/09\".",
+   "target_check": "PASS",
+   "recommended_target": "CF88:ART.100:PAR.12",
+   "temporal_version": "redação da EC 62/2009, que continua sendo a única do § 12 no compilado",
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "provisional": false,
+   "sources": [
+    "S3",
+    "P1"
+   ],
+   "reason": "O texto atual do § 12 é o mesmo julgado: a correção pela poupança é inconstitucional e \"independentemente de sua natureza\" tem declaração parcial sem redução. A modulação da QO (TR até 25/03/2015, depois IPCA-E) deve constar da nota.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-069",
+   "rank": 7,
+   "recommended_by_backlog": "CF88:ART.92",
+   "suggested_identifiers": [
+    "ADI 3392"
+   ],
+   "precedent": "STF:ADI:3392",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "3392",
+   "rapporteur": "Min. Gilmar Mendes",
+   "judgment": "29/05/2020 (sessão virtual 22-28/05/2020), improcedente",
+   "publication": "DJe 18/06/2020",
+   "subject": "EC 45/2004 — art. 114, §§ 2º e 3º (dissídio coletivo de comum acordo)",
+   "namespace": "CF88",
+   "namespace_evidence": "É a CF, mas o dispositivo é o art. 114, §§ 2º e 3º (ementa da ADI 3423, mesmo sentido da 3392).",
+   "target_check": "FAIL",
+   "recommended_target": null,
+   "temporal_version": null,
+   "decision": "REJECT_FALSE_POSITIVE",
+   "confidence": "HIGH",
+   "provisional": false,
+   "sources": [
+    "S1",
+    "S2",
+    "P1"
+   ],
+   "reason": "Falso positivo de anotação: o Planalto põe \"Vide ADIN 3392\" em todo dispositivo tocado pela EC 45/2004. A ação só impugnou o art. 114, §§ 2º e 3º e não tem relação com o art. 92 (§ 1º). É o mesmo padrão do erro J1 (número coincidente, objeto diverso). Um eventual vínculo correto (art. 114, § 2º) não faz parte do backlog e não foi criado.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-074",
+   "rank": 8,
+   "recommended_by_backlog": "CF88:ART.98",
+   "suggested_identifiers": [
+    "ADI 3392"
+   ],
+   "precedent": "STF:ADI:3392",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "3392",
+   "rapporteur": "Min. Gilmar Mendes",
+   "judgment": "29/05/2020 (sessão virtual 22-28/05/2020), improcedente",
+   "publication": "DJe 18/06/2020",
+   "subject": "EC 45/2004 — art. 114, §§ 2º e 3º (dissídio coletivo de comum acordo)",
+   "namespace": "CF88",
+   "namespace_evidence": "É a CF, mas o dispositivo é o art. 114, §§ 2º e 3º.",
+   "target_check": "FAIL",
+   "recommended_target": null,
+   "temporal_version": null,
+   "decision": "REJECT_FALSE_POSITIVE",
+   "confidence": "HIGH",
+   "provisional": false,
+   "sources": [
+    "S1",
+    "S2",
+    "P1"
+   ],
+   "reason": "Mesmo falso positivo de anotação genérica da EC 45/2004, aqui no art. 98 (§ 1º, juizados especiais federais). A ADI 3392 não trata do art. 98.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-135",
+   "rank": 9,
+   "recommended_by_backlog": "CF88:ART.166",
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "precedent": "STF:ADI:7697",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "7697",
+   "rapporteur": "Min. Flávio Dino",
+   "judgment": "MC referendada pelo Pleno em 16/08/2024; mérito pendente",
+   "publication": "DJE (referendo)",
+   "subject": "Emendas parlamentares (art. 166, em nível de artigo)",
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão nomeia parágrafos do art. 166 da Constituição Federal; o caput não é objeto.",
+   "target_check": "FAIL_GRANULARITY",
+   "recommended_target": null,
+   "temporal_version": null,
+   "decision": "DUPLICATE_RECOMMENDATION",
+   "confidence": "HIGH",
+   "provisional": true,
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "duplicate_of": [
+    "J0-BL-136",
+    "J0-BL-137"
+   ],
+   "reason": "A cautelar interpreta parágrafos específicos (§§ 9º a 20), não o caput do art. 166. O aparelho não herda vínculos entre níveis (query keys exatas), e os vínculos específicos do § 9º e do § 11 deste lote já levam o precedente aos dispositivos interpretados. Um vínculo no artigo seria o alvo amplo que o J0 sinaliza (BROAD_ARTICLE_TARGET_WITH_SUBDIVISIONS).",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  },
+  {
+   "recommendation_id": "J0-BL-138",
+   "rank": 10,
+   "recommended_by_backlog": "CF88:ART.166-A",
+   "suggested_identifiers": [
+    "ADI 7697"
+   ],
+   "precedent": "STF:ADI:7697",
+   "court": "STF",
+   "klass": "ADI",
+   "number": "7697",
+   "rapporteur": "Min. Flávio Dino",
+   "judgment": "MC referendada pelo Pleno em 16/08/2024 (unânime); referendo de 04/12/2024 (emendas PIX); mérito pendente",
+   "publication": "DJE (referendos)",
+   "subject": "Transferências especiais (\"emendas PIX\") — art. 166-A: plano de trabalho prévio, transparência",
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão nomeia \"art. 166- A (EC/105) … da Constituição Federal\".",
+   "target_check": "PASS",
+   "recommended_target": "CF88:ART.166-A",
+   "temporal_version": "redação da EC 105/2019 (vigente)",
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH (identidade, alvo e namespace); estabilidade: MEDIUM",
+   "provisional": true,
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "reason": "O art. 166-A inteiro está entre os dispositivos com interpretação conforme, e o referendo de 04/12/2024 trata das transferências especiais. O alvo em nível de artigo é o correto, porque a decisão nomeia o artigo, não um parágrafo. Mérito pendente: exige status e revalidação.",
+   "NAMESPACE_CHECK": "PASS",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_record_exists": false,
+   "device_note": "O índice de jurisprudência do aparelho (JURISPRUDENCIA.IDX legado, f85108ba…) só tem Temas de RG (284) e SVs (12); nenhuma ADI. Materializar exige definir na J2B um registro e um conteúdo para controle concentrado, compatíveis com o firmware.",
+   "status": "AWAITING_USER_RATIFICATION"
+  }
+ ],
+ "totals": {
+  "DUPLICATE_RECOMMENDATION": 1,
+  "PROMOTE_RECOMMENDED": 6,
+  "REJECT_FALSE_POSITIVE": 2,
+  "REJECT_TEMPORAL_MISMATCH": 1
+ }
+}

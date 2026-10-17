@@ -122,3 +122,23 @@ Depois, devolva o cartão ao PC.
 ```
 READY_FOR_J1_5_PHYSICAL_TEST = YES · JURISPRUDENCE_FROZEN = NO (backlog J2 pendente)
 ```
+
+## Resultado físico (relatado por Arthur em 2026-10-16)
+
+```
+J1_5_PHYSICAL_TEST = 11/11 PASS · J1_5_PHYSICAL_VALIDATION = 11/11 PASS
+ORIGINAL_277_REVIEW_COMPLETE = YES · CURRENT_APPROVED_J_BASELINE = 256 (156 targets; cartão = candidato J1.4, BUILD_ID cbed709a40356681)
+JURISPRUDENCE_FROZEN = NO (sem freeze geral, sem tag; backlog J2 pendente)
+```
+
+Validado no aparelho:
+
+- art. 100, § 1º sem `2 JURIS.`;
+- art. 100, § 5º com a SV 17 e os Temas 147, 1037 e 1335;
+- Tema 594 no art. 40;
+- Tema 594 ausente dos §§ 4º e 5º atuais do art. 40;
+- Temas 367 e 387 preservados no art. 16;
+- jurisprudência antiga funcionando (art. 37, XI);
+- Correlatas, Referências nº 4 e ENTENDA sem regressão.
+
+O cartão permanece com o candidato J1.4. A base de 256 vínculos é a referência da J2 e não deve ser reaberta.
