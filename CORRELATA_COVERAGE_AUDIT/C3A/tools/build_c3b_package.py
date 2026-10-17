@@ -126,10 +126,20 @@ def isolation(changed, base, cand):
         out.update(non_correlata_payload_lines=len(bn), non_correlata_identical=True, correlata_lines_before=len(bc), correlata_lines_after=len(cc),
                    targets_resolved_identically_outside_correlata=len(set(rb) | set(rc)))
     fw = subprocess.run(['git', 'diff', '--name-only', BASELINE_HEAD, '--', 'firmware'], cwd=ROOT, capture_output=True, text=True, check=True).stdout
-    if fw.strip():
+    # J2 Parte D: the only authorized firmware/ change is the 124-fiche header (sha-pinned) that makes firmware/ rebuild the approved app
+    if [f for f in fw.split() if not authorized_firmware_header_update(f)]:
         raise SystemExit('ISOLATION_FAIL firmware changed')
     out['firmware_unchanged_vs'] = BASELINE_HEAD
     return out
+
+_AUTHORIZED_HEADER = ('firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/lex_ref_detail_data.h',
+                      'e420f4dec7923036448b4cf1129c6092a9489b8c36c8cef4921a5d534b6f55f8')   # J2 Parte D (124 fichas)
+
+
+def authorized_firmware_header_update(path):
+    if path != _AUTHORIZED_HEADER[0]:
+        return False
+    return hashlib.sha256((ROOT / path).read_bytes().replace(b'\r\n', b'\n')).hexdigest() == _AUTHORIZED_HEADER[1]
 
 
 def targets_c_only(base, cand):

@@ -45,6 +45,19 @@ def ext_offset(index_bytes, nid, art):
     return None
 
 
+# PARTE D (pós-noturna, 2026-10-17): única alteração autorizada em firmware/ — o header de Referências passa de 122 para as 124 fichas
+# do app fisicamente aprovado (R2, 6e329c91…), para que firmware/ recompile o baseline. Aceita SOMENTE esse arquivo e SOMENTE com este sha.
+_AUTHORIZED_HEADER = ('firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE/lex_ref_detail_data.h',
+                      'e420f4dec7923036448b4cf1129c6092a9489b8c36c8cef4921a5d534b6f55f8')
+
+
+def authorized_firmware_header_update(path):
+    if path != _AUTHORIZED_HEADER[0]:
+        return False
+    import hashlib as _h
+    return _h.sha256((ROOT / path).read_bytes().replace(b'\r\n', b'\n')).hexdigest() == _AUTHORIZED_HEADER[1]
+
+
 class RelationTypes(unittest.TestCase):
     def test_01_no_unclassified(self):
         for doc in (REG, ADDS):
@@ -159,7 +172,7 @@ class Package(unittest.TestCase):
         for base in ('9108d72812802de941e54b7e4e3ec556b7abd019', '7c6d421585d971e5eef6af2bc3fa85ccab078d83'):
             out = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=MDR', base, '--', 'firmware', 'DEVICE_INTEGRATION'], cwd=ROOT, capture_output=True,
                                  text=True, check=True).stdout
-            self.assertEqual(out.strip(), '')
+            self.assertEqual([f for f in out.split() if not authorized_firmware_header_update(f)], [])
 
     def test_15_run4_and_package_deterministic(self):
         sums = []

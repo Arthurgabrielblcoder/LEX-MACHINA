@@ -1,13 +1,13 @@
 #pragma once
-// CANDIDATO (nao substitui o header do baseline): + overlay CF88_WORK_REFERENCE_ADDITIONS.json sha256 e6cb6b04994c2e224fb1bd838b840c481755a3b305f6355da36e038258f5dcae
+// CANDIDATO (nao substitui o header do baseline): + overlay CF88_WORK_REFERENCE_ADDITIONS_RUN5_EFFECTIVE.json sha256 1b07842719767e22188ec526d08156ae6f7fdac259c2d0f375c400c1fae7ba46
 // GERADO por DEVICE_INTEGRATION/tools/build_ref_detail_header.py - NAO EDITAR.
 // Metadados editoriais APROVADOS (RC2 revisado) dos vinculos obra <-> dispositivo, transportados sem reescrita.
 // Fonte: LEGAL_TARGET_ID/derived/CF88_REFERENCES_CANONICAL.json sha256 89bd39c48c45e71eeb4b14c4e323f67c2e945c14ded8c86089c37e6578e19319
-// Filtro: linhas WORK_REFERENCE CURRENT_VISIBLE do REF_PAYLOAD aprovado sha256 24b4f0d97ec004303a6e327a6abf76054eeb05c8cd2a44a424bd70c8341f58ea
-// Vinculos: 122 de 122 visiveis. REFERENCE_DETAIL_INCOMPLETE (campos ausentes): tipo=0, ano=0, nota=18, sobre=0, por_que=0, temas=122
+// Filtro: linhas WORK_REFERENCE CURRENT_VISIBLE do REF_PAYLOAD aprovado sha256 da49c43b7a21990334a6a1af63fbc605fec7fde195a06a2014776285455006eb
+// Vinculos: 124 de 124 visiveis. REFERENCE_DETAIL_INCOMPLETE (campos ausentes): tipo=0, ano=0, nota=18, sobre=0, por_que=0, temas=124
 // nota = score_editorial do VINCULO x 10 (-1 = ausente). Ordenado por chave "TARGET_ID|WORK_ID" (bytewise).
 #define LEXV1_REF_DETAIL_SCHEMA 1
-#define LEXV1_REF_DETAIL_COUNT 122
+#define LEXV1_REF_DETAIL_COUNT 124
 #define LEXV1_REF_DETAIL_SOURCE_SHA256 "89bd39c48c45e71eeb4b14c4e323f67c2e945c14ded8c86089c37e6578e19319"
 struct LexV1RefDetalhe { const char *chave, *titulo, *tipo; uint16_t ano; int16_t nota10;
                         const char *sobre, *porQue, *alcance, *relacao, *fonte; };
@@ -128,6 +128,10 @@ static const LexV1RefDetalhe LEXV1_REF_DETALHES[LEXV1_REF_DETAIL_COUNT] = {
    "Ap\xc3\xb3s infarto e orienta\xc3\xa7\xc3\xa3o m\xc3\xa9""dica para n\xc3\xa3o trabalhar, Daniel \xc3\xa9 considerado apto pelo sistema de benef\xc3\xad""cios e precisa sobreviver nessa condi\xc3\xa7\xc3\xa3o.",
    "Ap\xc3\xb3s infarto e orienta\xc3\xa7\xc3\xa3o m\xc3\xa9""dica para n\xc3\xa3o trabalhar, Daniel \xc3\xa9 considerado apto pelo sistema de benef\xc3\xad""cios e precisa sobreviver nessa condi\xc3\xa7\xc3\xa3o. A refer\xc3\xaancia ajuda a compreender a prote\xc3\xa7\xc3\xa3o social diante da incapacidade para o trabalho, no \xc3\xa2mbito da seguridade social. N\xc3\xa3o demonstra recusa de servi\xc3\xa7o de sa\xc3\xba""de nem a organiza\xc3\xa7\xc3\xa3o integrada do sistema brasileiro de seguridade.",
    "a prote\xc3\xa7\xc3\xa3o social diante da incapacidade para o trabalho, no \xc3\xa2mbito da seguridade social", "Ilustra\xc3\xa7\xc3\xa3o de consequ\xc3\xaancia", "EXP-FIL-006"},
+  {"CF88:ART.196|R1A-DOC-001", "Sicko - S.O.S. Sa\xc3\xba""de", "DOCUMENT\xc3\x81RIO", 2007, 74,
+   "Document\xc3\xa1rio de Michael Moore que examina o sistema de sa\xc3\xba""de dos Estados Unidos a partir de casos de pessoas comuns e o compara com sistemas p\xc3\xba""blicos de sa\xc3\xba""de de outros pa\xc3\xadses, como Canad\xc3\xa1 e Cuba.",
+   "Michael Moore compara o sistema de sa\xc3\xba""de baseado em seguros privados dos Estados Unidos com sistemas universais.",
+   "Ajuda a compreender por contraste o que significa acesso universal e igualit\xc3\xa1rio. Document\xc3\xa1rio opinativo; n\xc3\xa3o descreve o SUS.\x0aLimites: Document\xc3\xa1rio de autor, opinativo.", "", "R1A-DOC-001 \xc2\xb7 REFERENCES_4_R1"},
   {"CF88:ART.1:INC.III|EXP-FIL-006", "Eu, Daniel Blake", "FILME", 2016, 62,
    "Katie, m\xc3\xa3""e de duas crian\xc3\xa7""as, e Daniel enfrentam falta de sustento e recorrem a banco alimentar.",
    "Katie, m\xc3\xa3""e de duas crian\xc3\xa7""as, e Daniel enfrentam falta de sustento e recorrem a banco alimentar. A refer\xc3\xaancia ajuda a compreender a dignidade humana diante da priva\xc3\xa7\xc3\xa3o de condi\xc3\xa7\xc3\xb5""es materiais b\xc3\xa1sicas. N\xc3\xa3o atribui \xc3\xa0 obra cobertura de todas as dimens\xc3\xb5""es da dignidade humana.",
@@ -176,6 +180,10 @@ static const LexV1RefDetalhe LEXV1_REF_DETALHES[LEXV1_REF_DETAIL_COUNT] = {
    "Carvalho analisa historicamente a educa\xc3\xa7\xc3\xa3o popular como condi\xc3\xa7\xc3\xa3o de conhecimento e expans\xc3\xa3o de direitos civis e pol\xc3\xadticos.",
    "Carvalho analisa historicamente a educa\xc3\xa7\xc3\xa3o popular como condi\xc3\xa7\xc3\xa3o de conhecimento e expans\xc3\xa3o de direitos civis e pol\xc3\xadticos. A refer\xc3\xaancia ajuda a compreender o direito \xc3\xa0 educa\xc3\xa7\xc3\xa3o e sua fun\xc3\xa7\xc3\xa3o na forma\xc3\xa7\xc3\xa3o da cidadania. N\xc3\xa3o demonstra realiza\xc3\xa7\xc3\xa3o de todas as finalidades de desenvolvimento pessoal, preparo para cidadania e qualifica\xc3\xa7\xc3\xa3o profissional.",
    "o direito \xc3\xa0 educa\xc3\xa7\xc3\xa3o e sua fun\xc3\xa7\xc3\xa3o na forma\xc3\xa7\xc3\xa3o da cidadania", "Contextualiza\xc3\xa7\xc3\xa3o hist\xc3\xb3rica", "EXP-LIV-004"},
+  {"CF88:ART.206:INC.I|R1A-DOC-002", "Pro Dia Nascer Feliz", "DOCUMENT\xc3\x81RIO", 2005, 80,
+   "Document\xc3\xa1rio de Jo\xc3\xa3o Jardim que acompanha estudantes de 14 a 17 anos, de escolas p\xc3\xba""blicas e particulares de Pernambuco, S\xc3\xa3o Paulo e Rio de Janeiro, e registra o que eles relatam sobre a escola, o futuro, o preconceito e a viol\xc3\xaancia.",
+   "O document\xc3\xa1rio acompanha estudantes de escolas p\xc3\xba""blicas e privadas em diferentes estados brasileiros.",
+   "Ajuda a visualizar a desigualdade de condi\xc3\xa7\xc3\xb5""es que o inciso I quer enfrentar. N\xc3\xa3o trata dos demais princ\xc3\xadpios do ensino.", "", "R1A-DOC-002 \xc2\xb7 REFERENCES_4_R1"},
   {"CF88:ART.215:PAR.1|EXP-JOG-006", "Never Alone (Kisima In\xc5\x8bitchu\xc5\x8b""a)", "JOGO", 2014, 74,
    "Jogo de plataforma produzido com anci\xc3\xa3os e narradores I\xc3\xb1upiat, baseado em hist\xc3\xb3rias e valores culturais da comunidade.",
    "O jogo foi criado com a comunidade I\xc3\xb1upiat e transmite suas hist\xc3\xb3rias tradicionais.",

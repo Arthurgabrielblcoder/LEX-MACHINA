@@ -188,7 +188,8 @@ class Build(unittest.TestCase):
         # existing operational files: never modified nor deleted (new files are allowed only for the C3B.2 physical promotion record)
         diff = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=MDR', BASELINE, '--'] + paths, cwd=ROOT, capture_output=True,
                               text=True, check=True).stdout
-        self.assertEqual(diff.strip(), '')
+        from test_correlata_c3a1_c3b_prep import authorized_firmware_header_update   # PARTE D: only the 124-ficha header, pinned by sha
+        self.assertEqual([f for f in diff.split() if not authorized_firmware_header_update(f)], [])
         untracked = subprocess.run(['git', 'ls-files', '--others', '--exclude-standard', '--'] + paths, cwd=ROOT, capture_output=True,
                                    text=True, check=True).stdout
         added = subprocess.run(['git', 'diff', '--name-only', '--diff-filter=A', BASELINE, '--'] + paths, cwd=ROOT, capture_output=True,
