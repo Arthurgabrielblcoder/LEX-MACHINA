@@ -47,12 +47,13 @@ class J2Batches(unittest.TestCase):
                     self.assertEqual((x['status'], x['human_approved']), ('AWAITING_USER_RATIFICATION', False))
                     self.assertIn(x['NAMESPACE_CHECK'], ('PASS', 'FAIL'))
                     self.assertIn(x['temporal_version'], ('CURRENT', 'HISTORICAL', 'MIXED', 'NOT_APPLICABLE'))
-                    self.assertTrue(x['OFFICIAL_SOURCE_REVIEWED'] and x['sources'] and x['reason'])
+                    self.assertTrue(x['sources'] and x['reason'])
+                    self.assertEqual(x['OFFICIAL_SOURCE_REVIEWED'], not x['decision'].startswith('UNRESOLVED'))
                     for s in x['sources']:
                         src = d['sources'][s]
                         self.assertTrue(src['url'].startswith('https://') and (src.get('dom_text_sha256') or src.get('snapshot_sha256')), s)
                     for pr in x['precedents']:
-                        self.assertTrue(pr['id'].startswith('STF:'))
+                        self.assertTrue(pr['id'].split(':')[0] in ('STF', 'STJ', 'TSE', 'TST', 'STM'))
                 seen |= set(sel)
 
     def test_installed_baseline_unchanged(self):

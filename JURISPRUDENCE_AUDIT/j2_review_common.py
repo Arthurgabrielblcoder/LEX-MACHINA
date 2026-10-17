@@ -44,7 +44,7 @@ def make_decisions(doc, REVIEW, SOURCES):
         out.append(dict(recommendation_id=rid, rank=q[rid]['rank'], recommended_by_backlog=q[rid]['target_id'],
                         original_recommendation=q[rid]['desired_reference'], suggested_identifiers=q[rid]['suggested_identifiers'], **r,
                         NAMESPACE_CHECK='PASS' if r['namespace'] in ('CF88', 'ADCT') else 'FAIL', TEMPORAL_CHECK='DONE',
-                        OFFICIAL_SOURCE_REVIEWED=all(SOURCES[s]['tier'] == 'A' for s in r['sources']),
+                        OFFICIAL_SOURCE_REVIEWED=all(SOURCES[s]['tier'] == 'A' for s in r['sources']) and not r['decision'].startswith('UNRESOLVED'),
                         device_type_status=device,
                         NEW_JURIS_TYPE_REQUIRES_DESIGN='YES' if any(v != 'VALIDATED' for v in device.values()) else 'NO',
                         auditor_flags=AUD.review_flags(q[rid]['recommendation_text'], r['evidence_excerpt']),
