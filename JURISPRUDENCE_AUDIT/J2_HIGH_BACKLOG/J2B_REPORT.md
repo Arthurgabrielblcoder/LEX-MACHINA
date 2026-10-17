@@ -1,5 +1,7 @@
 # JURISPRUDÊNCIA — CF: J2B, modelo de registro de ADI + candidato HOST-ONLY do BATCH01
 
+> **Atualização (J2B.1, 2026-10-16).** O pacote desta J2B ficou `SUPERSEDED_BEFORE_PHYSICAL_DEPLOY`: a correção temporal do Tema 558 (art. 100, § 9º → art. 100) gerou o pacote `J2B_1_CANDIDATE_HOST_ONLY`, que é o que vale para a J2C. Ver `J2B_1_TEMA558_TEMPORAL_FIX.md`. A observação da seção 9 foi resolvida assim.
+
 ```
 MISSION = J2B (HOST-ONLY: modelar, materializar em candidato, auditar, testar; SEM deploy)
 BRANCH = cf-jurisprudence-audit · DADOS = 1907ba0 · PACOTE = este commit
