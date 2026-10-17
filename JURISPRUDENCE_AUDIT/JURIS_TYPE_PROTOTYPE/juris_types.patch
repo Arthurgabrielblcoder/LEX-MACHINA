@@ -1,0 +1,77 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino
+@@ -765,5 +765,5 @@
+   JTIPO_SV=0, JTIPO_SUMULA_STF, JTIPO_RG, JTIPO_REPETITIVO_STJ,
+   JTIPO_IAC, JTIPO_SIRDR, JTIPO_ADI, JTIPO_ADC, JTIPO_ADPF,
+-  JTIPO_ACORDAO, JTIPO_OUTRO
++  JTIPO_ACORDAO, JTIPO_CLASSE, JTIPO_OUTRO
+ };
+ 
+@@ -1055,4 +1055,14 @@
+ }
+ 
++// Classes processuais (tribunal separado da classe): TIPO minusculo do IDX -> rotulo. Nova classe = nova linha, sem novo enum.
++struct ClasseJurisRotulo { const char *tipo; const char *rotulo; };
++static const ClasseJurisRotulo CLASSES_JURIS[]={{"hc","HC"},{"habeas_corpus","HC"},{"rhc","RHC"},{"ms","MS"},{"rms","RMS"},{"ap","AP"},{"ai","AI"},{"inq","Inq"},{"rcl","Rcl"},{"mi","MI"},{"pet","Pet"},{"ado","ADO"},{"re","RE"},{"are","ARE"},{"ext","Ext"}};
++static const char *rotuloClasseJuris(const String &tipoMinusculo)
++{
++  for(size_t i=0;i<sizeof(CLASSES_JURIS)/sizeof(CLASSES_JURIS[0]);i++)
++    if(tipoMinusculo==CLASSES_JURIS[i].tipo) return CLASSES_JURIS[i].rotulo;
++  return nullptr;
++}
++
+ TipoJurisprudencia classificarTipoJurisprudencia(String tipo)
+ {
+@@ -1068,4 +1078,5 @@
+   if(tipo=="adpf") return JTIPO_ADPF;
+   if(tipo=="acordao") return JTIPO_ACORDAO;
++  if(rotuloClasseJuris(tipo)) return JTIPO_CLASSE;
+   return JTIPO_OUTRO;
+ }
+@@ -1075,5 +1086,5 @@
+   switch(classificarTipoJurisprudencia(r.tipo)){
+     case JTIPO_SV: return "SV "+r.numero;
+-    case JTIPO_SUMULA_STF: return "SUMULA STF "+r.numero;
++    case JTIPO_SUMULA_STF: return "Súmula "+r.numero+(r.tribunal.length()?" "+r.tribunal:String(""));   // súmula comum de QUALQUER tribunal
+     case JTIPO_RG: return "RG TEMA "+r.numero;
+     case JTIPO_REPETITIVO_STJ: return "REPETITIVO STJ "+r.numero;
+@@ -1084,4 +1095,5 @@
+     case JTIPO_ADPF: return "ADPF "+r.numero;
+     case JTIPO_ACORDAO: return "ACORDAO "+r.numero;
++    case JTIPO_CLASSE: { String t=r.tipo; t.toLowerCase(); return String(rotuloClasseJuris(t))+" "+r.numero; }
+     default: return "OUTRO "+r.numero;
+   }
+@@ -2002,7 +2014,17 @@
+     case JTIPO_ADI:
+     case JTIPO_ADC:
+-    case JTIPO_ADPF: totalAcordaosArtigo++; break;
++    case JTIPO_ADPF:
++    case JTIPO_CLASSE: totalAcordaosArtigo++; break;
+     default: totalOutrosJurisArtigo++; break;
+   }
++}
++
++// ID = TRIBUNAL:CLASSE:NUMERO:...: o tribunal do ID deve estar na lista e ser o da coluna TRIBUNAL (fail closed). Legado STF inalterado.
++static bool tribunalJurisSuportado(const String &id, const String &tribunal)
++{
++  static const char *TRIBUNAIS[]={"STF","STJ","TSE","TST","STM"};
++  for(size_t i=0;i<sizeof(TRIBUNAIS)/sizeof(TRIBUNAIS[0]);i++)
++    if(tribunal==TRIBUNAIS[i] && id.startsWith(String(TRIBUNAIS[i])+":")) return true;
++  return false;
+ }
+ 
+@@ -2019,5 +2041,5 @@
+   String status=campoPipe(linha,4);
+   String identificador=campoPipe(linha,6);
+-  if(!classe.startsWith("STF:") || tipo.length()==0 || identificador.length()==0)
++  if(!tribunalJurisSuportado(classe,tribunal) || tipo.length()==0 || identificador.length()==0)
+     return false;
+ 
+@@ -4176,5 +4198,6 @@
+ 
+   caminhoArquivoAtual=caminho;
+-  nomeArquivoAtual=r.tribunal+" "+rotuloTipoJurisprudencia(r);
++  nomeArquivoAtual=(classificarTipoJurisprudencia(r.tipo)==JTIPO_SUMULA_STF)?rotuloTipoJurisprudencia(r)
++                   :r.tribunal+" "+rotuloTipoJurisprudencia(r);
+   tamanhoArquivoAtual=arquivo.size();
+   arquivo.close();
