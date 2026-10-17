@@ -1,0 +1,2952 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J2F",
+ "physical_baseline": {
+  "relations": 261,
+  "targets": 160,
+  "source": "J2_BASELINE_RECONCILIATION.json"
+ },
+ "ratification": {
+  "file": "J2_RATIFICATION_RECORD_03_09.json",
+  "sha256": "bac0f074e9b2b22f68cd1628779147e6272c6ebb73bb3bfa93866a2f03155fa9",
+  "by": "ARTHUR",
+  "on": "2026-10-17"
+ },
+ "includes_j2e": {
+  "file": "LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2E.json",
+  "sha256": "147fe4b200e58d231f98f18be60fff045c60306f7324a9812a67a69a320f89d3",
+  "records": 8
+ },
+ "provisional_gate": {
+  "as_of": "2026-10-17",
+  "registry": "J2_PROVISIONAL_REGISTRY.json",
+  "result": "PASS",
+  "items": [
+   "STF:ADI:7697",
+   "STF:ADI:5017",
+   "STF:ADPF:378",
+   "STF:RCL:84738"
+  ]
+ },
+ "revalidated_before_materialization": {
+  "STF:RG:935": {
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=935",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "53861094bc1714a219ed02b0397387ea1bcb1c1a2bb586a2558bde614defdf2c",
+   "result": "Situação: \"Acórdão de mérito publicado - Publicado em: 09/12/2025\"; sem registro de trânsito em julgado. Decisão de mérito (não provisória): materializável com nota.",
+   "ficha_note": "Situação verificada em 17/10/2026 na página oficial do tema: acórdão de mérito publicado em 09/12/2025; a página não registra trânsito em julgado."
+  }
+ },
+ "joint_records": {
+  "STF:ADI:3423-3392-3432-3520": {
+   "numero": "3423/3392/3432/3520",
+   "source": "S1",
+   "extra_source": "S2",
+   "note": "Julgamento conjunto: ADI 3423 (principal), 3392, 3432 e 3520, no mesmo sentido."
+  }
+ },
+ "archive_corpus": {
+  "sha256": "5559620ec7f0f98eac3198021825b6f0ce1e97e49502b2a4804aa59a9659e7fe"
+ },
+ "corpus_text_checks": [
+  {
+   "record": "STF:RG:157",
+   "comparison": "BATCH_EXCERPT_IS_PREFIX",
+   "review": null,
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:835",
+   "comparison": "DIFFERENT",
+   "review": "idênticos salvo pontuação/espaço final",
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:855",
+   "comparison": "BATCH_EXCERPT_IS_PREFIX",
+   "review": null,
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:SV:5",
+   "comparison": "EQUAL",
+   "review": null,
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:1046",
+   "comparison": "DIFFERENT",
+   "review": "trecho do lote resumido; corpus traz a tese integral",
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:1068",
+   "comparison": "EQUAL",
+   "review": null,
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:935",
+   "comparison": "EQUAL",
+   "review": null,
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:1229",
+   "comparison": "EQUAL",
+   "review": null,
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:184",
+   "comparison": "DIFFERENT",
+   "review": "trecho do lote é a descrição do tema (a página não exibe a tese); corpus traz a tese",
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:201",
+   "comparison": "DIFFERENT",
+   "review": "trecho do lote é a ementa da ADI 2777 (mesma orientação); corpus traz a tese do tema",
+   "ficha_text": "corpus J4 (tese integral)"
+  },
+  {
+   "record": "STF:RG:1093",
+   "comparison": "DIFFERENT",
+   "review": "trecho do lote é a descrição do tema; corpus traz a tese",
+   "ficha_text": "corpus J4 (tese integral)"
+  }
+ ],
+ "groups": {
+  "A": "tipos que o firmware atual mostra corretamente: repercussao_geral, sumula_vinculante, adi",
+  "B": "exige o firmware genérico de tribunal/classe"
+ },
+ "normalization": {
+  "RATIFIED_DECISIONS": 54,
+  "LINKING_DECISIONS": 39,
+  "PAIRS_BEFORE_DEDUP": 51,
+  "PAIRS_ALREADY_PRESENT": 0,
+  "NEW_DEVICE_RELATIONS_CURRENT_FW": 31,
+  "NEW_DEVICE_RELATIONS_GENERIC_FW": 46,
+  "NEW_DEVICE_RELATIONS_GROUP_B_ONLY": 15,
+  "NEW_PRECEDENT_RECORDS": 46,
+  "NEW_PRECEDENTS": 42,
+  "NEW_FICHAS_CURRENT_FW": 26,
+  "NEW_FICHAS_GENERIC_FW": 40
+ },
+ "skipped": [],
+ "total": 54,
+ "records": [
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.29:INC.X",
+   "source_id": "STF:SUMULA:702",
+   "source_reference_id": "STF:SUMULA:702:CF88:29:-:X:-",
+   "label": "Súmula 702 STF",
+   "legacy_idx_row": "STF:SUMULA:702:CF88:29:-:X:-|sumula|STF|702|vigente|Súmula 702 STF|STF:SUMULA:702|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula702/false",
+   "legacy_lookup": [
+    "CF88",
+    "29",
+    "",
+    "X",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:SUMULA:702",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SUMULA_702.TXT",
+   "members": [
+    "STF:SUMULA:702"
+   ],
+   "ratified_decisions": [
+    "J0-BL-047"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U1",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula702/false",
+     "sha256": "4921c31b1c8f9967168e099eaf65f6633c0b595731c1dc4399672df1c333603f"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 702",
+    "GENERIC": "Súmula 702 STF"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula",
+    "numero": "702",
+    "titulo": "Súmula 702 STF",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula702/false",
+    "status_processual": "vigente"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "source_id": "STF:MS:21689",
+   "source_reference_id": "STF:MS:21689:CF88:52:UNICO:-:-",
+   "label": "MS 21689",
+   "legacy_idx_row": "STF:MS:21689:CF88:52:UNICO:-:-|ms|STF|21689|julgado|MS 21689|STF:MS:21689|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021689%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "52",
+    "UNICO",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:MS:21689",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21689.TXT",
+   "members": [
+    "STF:MS:21689"
+   ],
+   "ratified_decisions": [
+    "J0-BL-054"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021689%22&base=acordaos",
+     "sha256": "daecc0462c29f6b2a4cfa78c686001bcad3f2b1562676c4dc5d2bc40aea2e12b"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 21689",
+    "GENERIC": "MS 21689"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "ms",
+    "numero": "21689",
+    "titulo": "MS 21689",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021689%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.55:INC.VI",
+   "source_id": "STF:AP:694",
+   "source_reference_id": "STF:AP:694:CF88:55:-:VI:-",
+   "label": "AP 694",
+   "legacy_idx_row": "STF:AP:694:CF88:55:-:VI:-|ap|STF|694|julgado|AP 694|STF:AP:694|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AP%20694%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "55",
+    "",
+    "VI",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:AP:694",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AP_694.TXT",
+   "members": [
+    "STF:AP:694"
+   ],
+   "ratified_decisions": [
+    "J0-BL-061"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AP%20694%22&base=acordaos",
+     "sha256": "3d2084172b6bf00ca8e21e0cce3042baa53c349eae3219cbfa06f4122d18856d"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 694",
+    "GENERIC": "AP 694"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "ap",
+    "numero": "694",
+    "titulo": "AP 694",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AP%20694%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.103:PAR.3",
+   "source_id": "STF:ADI:1616",
+   "source_reference_id": "STF:ADI:1616:CF88:103:3:-:-",
+   "label": "ADI 1616",
+   "legacy_idx_row": "STF:ADI:1616:CF88:103:3:-:-|adi|STF|1616|merito_julgado|ADI 1616|STF:ADI:1616|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201616%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "103",
+    "3",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:1616",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1616.TXT",
+   "members": [
+    "STF:ADI:1616"
+   ],
+   "ratified_decisions": [
+    "J0-BL-090"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U5",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201616%22&base=acordaos",
+     "sha256": "900c18ebf98caa497ac6ce8af7b1e9f9084488ac2e65955caf4b9aa5602fdd95"
+    },
+    {
+     "id": "U6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201254%22&base=acordaos",
+     "sha256": "0fa9d7236c23e97c1545c56c647918dad44824ce91d4d9458097f1fe4330adcc"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 1616",
+    "GENERIC": "ADI 1616"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "1616",
+    "titulo": "ADI 1616",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201616%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.103:PAR.3",
+   "source_id": "STF:ADI:1254",
+   "source_reference_id": "STF:ADI:1254:CF88:103:3:-:-",
+   "label": "ADI 1254",
+   "legacy_idx_row": "STF:ADI:1254:CF88:103:3:-:-|adi|STF|1254|merito_julgado|ADI 1254|STF:ADI:1254|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201254%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "103",
+    "3",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:1254",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1254.TXT",
+   "members": [
+    "STF:ADI:1254"
+   ],
+   "ratified_decisions": [
+    "J0-BL-090"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U5",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201616%22&base=acordaos",
+     "sha256": "900c18ebf98caa497ac6ce8af7b1e9f9084488ac2e65955caf4b9aa5602fdd95"
+    },
+    {
+     "id": "U6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201254%22&base=acordaos",
+     "sha256": "0fa9d7236c23e97c1545c56c647918dad44824ce91d4d9458097f1fe4330adcc"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 1254",
+    "GENERIC": "ADI 1254"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "1254",
+    "titulo": "ADI 1254",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201254%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.130",
+   "source_id": "STF:ADI:789",
+   "source_reference_id": "STF:ADI:789:CF88:130:-:-:-",
+   "label": "ADI 789",
+   "legacy_idx_row": "STF:ADI:789:CF88:130:-:-:-|adi|STF|789|merito_julgado|ADI 789|STF:ADI:789|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20789%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "130",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:789",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_789.TXT",
+   "members": [
+    "STF:ADI:789"
+   ],
+   "ratified_decisions": [
+    "J0-BL-122"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20789%22&base=acordaos",
+     "sha256": "df485ceea2cd806ae3532e8d894fef29e064a8c4b82788b075c219777abce59b"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 789",
+    "GENERIC": "ADI 789"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "789",
+    "titulo": "ADI 789",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20789%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "ADCT:ART.27:PAR.11",
+   "source_id": "STF:ADI:5017",
+   "source_reference_id": "STF:ADI:5017:CF88:27:11:-:-",
+   "label": "ADI 5017",
+   "legacy_idx_row": "STF:ADI:5017:CF88:27:11:-:-|adi|STF|5017 (CAUTELAR)|cautelar_monocratica_merito_pendente|ADI 5017|STF:ADI:5017|https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=4437805",
+   "legacy_lookup": [
+    "CF88",
+    "27",
+    "11",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:5017",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_5017.TXT",
+   "members": [
+    "STF:ADI:5017"
+   ],
+   "ratified_decisions": [
+    "J0-BL-165"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": {
+    "state": "REFERENDUM_PENDING",
+    "description": "cautelar monocrática sem referendo; mérito pendente",
+    "last_verified_on": "2026-10-17",
+    "trigger": "REFERENDO_OU_JULGAMENTO_DE_MERITO",
+    "source_id": "STF:ADI:5017"
+   },
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "U8",
+     "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=4437805",
+     "sha256": "43f9db70b1bd9d6e28ab3cabc78c0236bf085a391fdd896b441e07c181d8684a"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 5017 (CAUTELAR)",
+    "GENERIC": "ADI 5017 (CAUTELAR)"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "5017 (CAUTELAR)",
+    "titulo": "ADI 5017",
+    "fonte": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=4437805",
+    "status_processual": "cautelar_monocratica_merito_pendente"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.31:PAR.2",
+   "source_id": "STF:RG:157",
+   "source_reference_id": "STF:RG:157:CF88:31:2:-:-",
+   "label": "Tema de Repercussão Geral 157",
+   "legacy_idx_row": "STF:RG:157:CF88:31:2:-:-|repercussao_geral|STF|157|tese_fixada|Tema de Repercussão Geral 157|STF:RG:157|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157",
+   "legacy_lookup": [
+    "CF88",
+    "31",
+    "2",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:157",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_157.TXT",
+   "members": [
+    "STF:RG:157"
+   ],
+   "ratified_decisions": [
+    "J0-BL-045"
+   ],
+   "batches": [
+    "BATCH03"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "U10",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157",
+     "sha256": "732326315c7f3c1977425a7faaf590f41667350f33b390585ac8f8343129c7bf"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 157",
+    "GENERIC": "RG TEMA 157"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "157",
+    "titulo": "Tema de Repercussão Geral 157",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.31:PAR.2",
+   "source_id": "STF:RG:835",
+   "source_reference_id": "STF:RG:835:CF88:31:2:-:-",
+   "label": "Tema de Repercussão Geral 835",
+   "legacy_idx_row": "STF:RG:835:CF88:31:2:-:-|repercussao_geral|STF|835|tese_fixada|Tema de Repercussão Geral 835|STF:RG:835|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=835",
+   "legacy_lookup": [
+    "CF88",
+    "31",
+    "2",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:835",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_835.TXT",
+   "members": [
+    "STF:RG:835"
+   ],
+   "ratified_decisions": [
+    "J0-BL-046"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V1",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=835",
+     "sha256": "1b3d6fa98be24d1d5fcf5307f17daf60576a516176c545b3aeeaef2fd0ace681"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 835",
+    "GENERIC": "RG TEMA 835"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "835",
+    "titulo": "Tema de Repercussão Geral 835",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=835",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.35:INC.IV",
+   "source_id": "STF:ADI:7369",
+   "source_reference_id": "STF:ADI:7369:CF88:35:-:IV:-",
+   "label": "ADI 7369",
+   "legacy_idx_row": "STF:ADI:7369:CF88:35:-:IV:-|adi|STF|7369|merito_julgado|ADI 7369|STF:ADI:7369|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "35",
+    "",
+    "IV",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:7369",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7369.TXT",
+   "members": [
+    "STF:ADI:7369"
+   ],
+   "ratified_decisions": [
+    "J0-BL-051"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V2",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos",
+     "sha256": "0a6a19fc471fd91cd050a9f5641eb4d22a3b8198c0b2a5fb44d1fe7c571bfe01"
+    },
+    {
+     "id": "V3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos",
+     "sha256": "e5814ff5311de056317d3a2a54ec7d4ae973c2c44b803dcff4789902db26603b"
+    },
+    {
+     "id": "V4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos",
+     "sha256": "0578345990f1979c850077ab9fc01fce2dbba4d5cb4a0d4681c0e62ee62d210a"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 7369",
+    "GENERIC": "ADI 7369"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7369",
+    "titulo": "ADI 7369",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.35:INC.IV",
+   "source_id": "STF:AI:343461",
+   "source_reference_id": "STF:AI:343461:CF88:35:-:IV:-",
+   "label": "AI 343461",
+   "legacy_idx_row": "STF:AI:343461:CF88:35:-:IV:-|ai|STF|343461|julgado|AI 343461|STF:AI:343461|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "35",
+    "",
+    "IV",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:AI:343461",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AI_343461.TXT",
+   "members": [
+    "STF:AI:343461"
+   ],
+   "ratified_decisions": [
+    "J0-BL-051"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V2",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos",
+     "sha256": "0a6a19fc471fd91cd050a9f5641eb4d22a3b8198c0b2a5fb44d1fe7c571bfe01"
+    },
+    {
+     "id": "V3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos",
+     "sha256": "e5814ff5311de056317d3a2a54ec7d4ae973c2c44b803dcff4789902db26603b"
+    },
+    {
+     "id": "V4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos",
+     "sha256": "0578345990f1979c850077ab9fc01fce2dbba4d5cb4a0d4681c0e62ee62d210a"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 343461",
+    "GENERIC": "AI 343461"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "ai",
+    "numero": "343461",
+    "titulo": "AI 343461",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.35",
+   "source_id": "STF:ADI:336",
+   "source_reference_id": "STF:ADI:336:CF88:35:-:-:-",
+   "label": "ADI 336",
+   "legacy_idx_row": "STF:ADI:336:CF88:35:-:-:-|adi|STF|336|merito_julgado|ADI 336|STF:ADI:336|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "35",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:336",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_336.TXT",
+   "members": [
+    "STF:ADI:336"
+   ],
+   "ratified_decisions": [
+    "J0-BL-051"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V2",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos",
+     "sha256": "0a6a19fc471fd91cd050a9f5641eb4d22a3b8198c0b2a5fb44d1fe7c571bfe01"
+    },
+    {
+     "id": "V3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos",
+     "sha256": "e5814ff5311de056317d3a2a54ec7d4ae973c2c44b803dcff4789902db26603b"
+    },
+    {
+     "id": "V4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos",
+     "sha256": "0578345990f1979c850077ab9fc01fce2dbba4d5cb4a0d4681c0e62ee62d210a"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 336",
+    "GENERIC": "ADI 336"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "336",
+    "titulo": "ADI 336",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.86",
+   "source_id": "STF:MS:21564",
+   "source_reference_id": "STF:MS:21564:CF88:86:-:-:-",
+   "label": "MS 21564",
+   "legacy_idx_row": "STF:MS:21564:CF88:86:-:-:-|ms|STF|21564|julgado|MS 21564|STF:MS:21564|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "86",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:MS:21564",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21564.TXT",
+   "members": [
+    "STF:MS:21564"
+   ],
+   "ratified_decisions": [
+    "J0-BL-067"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V5",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+     "sha256": "4685348c08714fc638a6a38403a8e6266105a88388e1a2c266b2a761247ea146"
+    },
+    {
+     "id": "V6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos",
+     "sha256": "0f5aefaaca850bf7611c8f4d72fc45dd90a2f444bf72d56a8e694d7d8e9d0eef"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 21564",
+    "GENERIC": "MS 21564"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "ms",
+    "numero": "21564",
+    "titulo": "MS 21564",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.86:PAR.1:INC.II",
+   "source_id": "STF:ADPF:378",
+   "source_reference_id": "STF:ADPF:378:CF88:86:1:II:-",
+   "label": "ADPF 378",
+   "legacy_idx_row": "STF:ADPF:378:CF88:86:1:II:-|adpf|STF|378 (CAUTELAR)|cautelar_plenario_merito_pendente|ADPF 378|STF:ADPF:378|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "86",
+    "1",
+    "II",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADPF:378",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_378.TXT",
+   "members": [
+    "STF:ADPF:378"
+   ],
+   "ratified_decisions": [
+    "J0-BL-067"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": {
+    "state": "CAUTIONARY_ONLY",
+    "description": "só há decisão cautelar do Plenário; mérito nunca julgado",
+    "last_verified_on": "2026-10-17",
+    "trigger": "JULGAMENTO_DE_MERITO_OU_EXTINCAO",
+    "source_id": "STF:ADPF:378"
+   },
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V5",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+     "sha256": "4685348c08714fc638a6a38403a8e6266105a88388e1a2c266b2a761247ea146"
+    },
+    {
+     "id": "V6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos",
+     "sha256": "0f5aefaaca850bf7611c8f4d72fc45dd90a2f444bf72d56a8e694d7d8e9d0eef"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 378 (CAUTELAR)",
+    "GENERIC": "ADPF 378 (CAUTELAR)"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adpf",
+    "numero": "378 (CAUTELAR)",
+    "titulo": "ADPF 378",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+    "status_processual": "cautelar_plenario_merito_pendente"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.52:INC.I",
+   "source_id": "STF:ADPF:378",
+   "source_reference_id": "STF:ADPF:378:CF88:52:-:I:-",
+   "label": "ADPF 378",
+   "legacy_idx_row": "STF:ADPF:378:CF88:52:-:I:-|adpf|STF|378 (CAUTELAR)|cautelar_plenario_merito_pendente|ADPF 378|STF:ADPF:378|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "52",
+    "",
+    "I",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADPF:378",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_378.TXT",
+   "members": [
+    "STF:ADPF:378"
+   ],
+   "ratified_decisions": [
+    "J0-BL-067"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": {
+    "state": "CAUTIONARY_ONLY",
+    "description": "só há decisão cautelar do Plenário; mérito nunca julgado",
+    "last_verified_on": "2026-10-17",
+    "trigger": "JULGAMENTO_DE_MERITO_OU_EXTINCAO",
+    "source_id": "STF:ADPF:378"
+   },
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V5",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+     "sha256": "4685348c08714fc638a6a38403a8e6266105a88388e1a2c266b2a761247ea146"
+    },
+    {
+     "id": "V6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos",
+     "sha256": "0f5aefaaca850bf7611c8f4d72fc45dd90a2f444bf72d56a8e694d7d8e9d0eef"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 378 (CAUTELAR)",
+    "GENERIC": "ADPF 378 (CAUTELAR)"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adpf",
+    "numero": "378 (CAUTELAR)",
+    "titulo": "ADPF 378",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+    "status_processual": "cautelar_plenario_merito_pendente"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.86:PAR.3",
+   "source_id": "STF:ADI:978",
+   "source_reference_id": "STF:ADI:978:CF88:86:3:-:-",
+   "label": "ADI 978",
+   "legacy_idx_row": "STF:ADI:978:CF88:86:3:-:-|adi|STF|978|merito_julgado|ADI 978|STF:ADI:978|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20978%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "86",
+    "3",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:978",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_978.TXT",
+   "members": [
+    "STF:ADI:978"
+   ],
+   "ratified_decisions": [
+    "J0-BL-068"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20978%22&base=acordaos",
+     "sha256": "025e6325fa05e4bf9811dd1f549f0605d46819701aca64595695396400e6bb49"
+    },
+    {
+     "id": "V8",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%20672%22&base=acordaos",
+     "sha256": "4d82e98e47f479e085dcfe5e0f5b3e76be7cfb249bb0e20fd1abba85037e8ba4"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 978",
+    "GENERIC": "ADI 978"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "978",
+    "titulo": "ADI 978",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20978%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.86:PAR.4",
+   "source_id": "STF:INQ:672",
+   "source_reference_id": "STF:INQ:672:CF88:86:4:-:-",
+   "label": "Inq 672",
+   "legacy_idx_row": "STF:INQ:672:CF88:86:4:-:-|inq|STF|672|julgado|Inq 672|STF:INQ:672|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%20672%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "86",
+    "4",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:INQ:672",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_672.TXT",
+   "members": [
+    "STF:INQ:672"
+   ],
+   "ratified_decisions": [
+    "J0-BL-068"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20978%22&base=acordaos",
+     "sha256": "025e6325fa05e4bf9811dd1f549f0605d46819701aca64595695396400e6bb49"
+    },
+    {
+     "id": "V8",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%20672%22&base=acordaos",
+     "sha256": "4d82e98e47f479e085dcfe5e0f5b3e76be7cfb249bb0e20fd1abba85037e8ba4"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 672",
+    "GENERIC": "Inq 672"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "inq",
+    "numero": "672",
+    "titulo": "Inq 672",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%20672%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.96:INC.III",
+   "source_id": "STF:RCL:84738",
+   "source_reference_id": "STF:RCL:84738:CF88:96:-:III:-",
+   "label": "Rcl 84738",
+   "legacy_idx_row": "STF:RCL:84738:CF88:96:-:III:-|rcl|STF|84738 (PROVISÓRIA)|provisoria_tema_rg_pendente|Rcl 84738|STF:RCL:84738|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Rcl%2084738%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "96",
+    "",
+    "III",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RCL:84738",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RCL_84738.TXT",
+   "members": [
+    "STF:RCL:84738"
+   ],
+   "ratified_decisions": [
+    "J0-BL-072"
+   ],
+   "batches": [
+    "BATCH04"
+   ],
+   "provisional": {
+    "state": "LEADING_CASE_PENDING",
+    "description": "decisão de Turma condicionada a tema de repercussão geral ainda pendente",
+    "last_verified_on": "2026-10-17",
+    "trigger": "JULGAMENTO_DO_TEMA_1147_OU_PLENARIO",
+    "source_id": "STF:RCL:84738"
+   },
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "V9",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Rcl%2084738%22&base=acordaos",
+     "sha256": "d735d7e62842bb525c09bd75372762c4984ec48b1054fd7f6e201d02af631bbc"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 84738 (PROVISÓRIA)",
+    "GENERIC": "Rcl 84738 (PROVISÓRIA)"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "rcl",
+    "numero": "84738 (PROVISÓRIA)",
+    "titulo": "Rcl 84738",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Rcl%2084738%22&base=acordaos",
+    "status_processual": "provisoria_tema_rg_pendente"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.114:PAR.2",
+   "source_id": "STF:ADI:3423-3392-3432-3520",
+   "source_reference_id": "STF:ADI:3423-3392-3432-3520:CF88:114:2:-:-",
+   "label": "ADI 3423/3392/3432/3520",
+   "legacy_idx_row": "STF:ADI:3423-3392-3432-3520:CF88:114:2:-:-|adi|STF|3423/3392/3432/3520|merito_julgado|ADI 3423/3392/3432/3520|STF:ADI:3423-3392-3432-3520|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "114",
+    "2",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3423-3392-3432-3520",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3423-3392-3432-3520.TXT",
+   "members": [
+    "STF:ADI:3392",
+    "STF:ADI:3432"
+   ],
+   "ratified_decisions": [
+    "J0-BL-102",
+    "J0-BL-103"
+   ],
+   "batches": [
+    "BATCH06"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "S1",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+     "sha256": "e34505f34d27614b43a4acbed26a2af7bed9ed662959e8917bd7c488c01903e8"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3423/3392/3432/3520",
+    "GENERIC": "ADI 3423/3392/3432/3520"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3423/3392/3432/3520",
+    "titulo": "ADI 3423/3392/3432/3520",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.114:PAR.3",
+   "source_id": "STF:ADI:3423-3392-3432-3520",
+   "source_reference_id": "STF:ADI:3423-3392-3432-3520:CF88:114:3:-:-",
+   "label": "ADI 3423/3392/3432/3520",
+   "legacy_idx_row": "STF:ADI:3423-3392-3432-3520:CF88:114:3:-:-|adi|STF|3423/3392/3432/3520|merito_julgado|ADI 3423/3392/3432/3520|STF:ADI:3423-3392-3432-3520|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "114",
+    "3",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3423-3392-3432-3520",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3423-3392-3432-3520.TXT",
+   "members": [
+    "STF:ADI:3392",
+    "STF:ADI:3432"
+   ],
+   "ratified_decisions": [
+    "J0-BL-102",
+    "J0-BL-103",
+    "J0-BL-116",
+    "J0-BL-117"
+   ],
+   "batches": [
+    "BATCH06"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "S1",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+     "sha256": "e34505f34d27614b43a4acbed26a2af7bed9ed662959e8917bd7c488c01903e8"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3423/3392/3432/3520",
+    "GENERIC": "ADI 3423/3392/3432/3520"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3423/3392/3432/3520",
+    "titulo": "ADI 3423/3392/3432/3520",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.198",
+   "source_id": "STF:ADPF:672",
+   "source_reference_id": "STF:ADPF:672:CF88:198:-:-:-",
+   "label": "ADPF 672",
+   "legacy_idx_row": "STF:ADPF:672:CF88:198:-:-:-|adpf|STF|672|julgado|ADPF 672|STF:ADPF:672|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20672%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "198",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADPF:672",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_672.TXT",
+   "members": [
+    "STF:ADPF:672"
+   ],
+   "ratified_decisions": [
+    "J0-BL-144"
+   ],
+   "batches": [
+    "BATCH06"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "W1",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20672%22&base=acordaos",
+     "sha256": "725dbec9e9648f92bffa0d23d900dbb0ef97368ecaae17fb18d35223ea037915"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 672",
+    "GENERIC": "ADPF 672"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adpf",
+    "numero": "672",
+    "titulo": "ADPF 672",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20672%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.5:INC.XVI",
+   "source_id": "STF:RG:855",
+   "source_reference_id": "STF:RG:855:CF88:5:-:XVI:-",
+   "label": "Tema de Repercussão Geral 855",
+   "legacy_idx_row": "STF:RG:855:CF88:5:-:XVI:-|repercussao_geral|STF|855|tese_fixada|Tema de Repercussão Geral 855|STF:RG:855|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=855",
+   "legacy_lookup": [
+    "CF88",
+    "5",
+    "",
+    "XVI",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:855",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_855.TXT",
+   "members": [
+    "STF:RG:855"
+   ],
+   "ratified_decisions": [
+    "J0-BL-002"
+   ],
+   "batches": [
+    "BATCH06"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "W3",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=855",
+     "sha256": "0cd1763bf9b2f0538db5140111eb8fd4c7bb8eebc6b2cd92e48573887b694e0f"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 855",
+    "GENERIC": "RG TEMA 855"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "855",
+    "titulo": "Tema de Repercussão Geral 855",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=855",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.5:INC.LV",
+   "source_id": "STF:SV:5",
+   "source_reference_id": "STF:SV:5:CF88:5:-:LV:-",
+   "label": "Súmula Vinculante 5",
+   "legacy_idx_row": "STF:SV:5:CF88:5:-:LV:-|sumula_vinculante|STF|5|vigente|Súmula Vinculante 5|STF:SV:5|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula741/false",
+   "legacy_lookup": [
+    "CF88",
+    "5",
+    "",
+    "LV",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:SV:5",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_5.TXT",
+   "members": [
+    "STF:SV:5"
+   ],
+   "ratified_decisions": [
+    "J0-BL-004"
+   ],
+   "batches": [
+    "BATCH06"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "W2",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula741/false",
+     "sha256": "54106231d6e2208f5d18537ea0bb47e408d62b777c14011d1801ad6ffc0da3f3"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "SV 5",
+    "GENERIC": "SV 5"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula_vinculante",
+    "numero": "5",
+    "titulo": "Súmula Vinculante 5",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula741/false",
+    "status_processual": "vigente"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.7:INC.XXVI",
+   "source_id": "STF:RG:1046",
+   "source_reference_id": "STF:RG:1046:CF88:7:-:XXVI:-",
+   "label": "Tema de Repercussão Geral 1046",
+   "legacy_idx_row": "STF:RG:1046:CF88:7:-:XXVI:-|repercussao_geral|STF|1046|tese_fixada|Tema de Repercussão Geral 1046|STF:RG:1046|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1046",
+   "legacy_lookup": [
+    "CF88",
+    "7",
+    "",
+    "XXVI",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:1046",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1046.TXT",
+   "members": [
+    "STF:RG:1046"
+   ],
+   "ratified_decisions": [
+    "J0-BL-011"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X1",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1046",
+     "sha256": "3a6f389f973c3a65bafcd8adb815387b6ba3a7ea24b72350c5491a41cebff95c"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 1046",
+    "GENERIC": "RG TEMA 1046"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "1046",
+    "titulo": "Tema de Repercussão Geral 1046",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1046",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.21:INC.XVI",
+   "source_id": "STF:ADI:2404",
+   "source_reference_id": "STF:ADI:2404:CF88:21:-:XVI:-",
+   "label": "ADI 2404",
+   "legacy_idx_row": "STF:ADI:2404:CF88:21:-:XVI:-|adi|STF|2404|merito_julgado|ADI 2404|STF:ADI:2404|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202404%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "21",
+    "",
+    "XVI",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:2404",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2404.TXT",
+   "members": [
+    "STF:ADI:2404"
+   ],
+   "ratified_decisions": [
+    "J0-BL-031"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X2",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202404%22&base=acordaos",
+     "sha256": "8ec3defdc5691dd489d2f8b9b884e27dc41f356973258e35d43283b65837fdf3"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 2404",
+    "GENERIC": "ADI 2404"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "2404",
+    "titulo": "ADI 2404",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202404%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.63",
+   "source_id": "STF:ADI:3114",
+   "source_reference_id": "STF:ADI:3114:CF88:63:-:-:-",
+   "label": "ADI 3114",
+   "legacy_idx_row": "STF:ADI:3114:CF88:63:-:-:-|adi|STF|3114|merito_julgado|ADI 3114|STF:ADI:3114|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203114%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "63",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3114",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3114.TXT",
+   "members": [
+    "STF:ADI:3114"
+   ],
+   "ratified_decisions": [
+    "J0-BL-063"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203114%22&base=acordaos",
+     "sha256": "ab59b1496679569b13d373261212234617cb924171fe30908663b8830975d6a9"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3114",
+    "GENERIC": "ADI 3114"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3114",
+    "titulo": "ADI 3114",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203114%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.63:INC.I",
+   "source_id": "STF:ADI:2681",
+   "source_reference_id": "STF:ADI:2681:CF88:63:-:I:-",
+   "label": "ADI 2681",
+   "legacy_idx_row": "STF:ADI:2681:CF88:63:-:I:-|adi|STF|2681|merito_julgado|ADI 2681|STF:ADI:2681|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202681%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "63",
+    "",
+    "I",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:2681",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2681.TXT",
+   "members": [
+    "STF:ADI:2681"
+   ],
+   "ratified_decisions": [
+    "J0-BL-064"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202681%22&base=acordaos",
+     "sha256": "469317debab4330ed3effde30c2097719a640cc24638fc01e0b833c17d0df5ad"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 2681",
+    "GENERIC": "ADI 2681"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "2681",
+    "titulo": "ADI 2681",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202681%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.100",
+   "source_id": "STF:ADI:4425",
+   "source_reference_id": "STF:ADI:4425:CF88:100:-:-:-",
+   "label": "ADI 4425",
+   "legacy_idx_row": "STF:ADI:4425:CF88:100:-:-:-|adi|STF|4425|merito_julgado|ADI 4425|STF:ADI:4425|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "100",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": null,
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_4425.TXT",
+   "members": [
+    "STF:ADI:4425"
+   ],
+   "ratified_decisions": [
+    "J0-BL-075"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "MIXED",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "S3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+     "sha256": "ac1ee1c771f6d0e57797b81e20fdbb078ae1453f20189f711f3af78ca89f2577"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 4425",
+    "GENERIC": "ADI 4425"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "4425",
+    "titulo": "ADI 4425",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.5:INC.XXXVIII",
+   "source_id": "STF:RG:1068",
+   "source_reference_id": "STF:RG:1068:CF88:5:-:XXXVIII:-",
+   "label": "Tema de Repercussão Geral 1068",
+   "legacy_idx_row": "STF:RG:1068:CF88:5:-:XXXVIII:-|repercussao_geral|STF|1068|tese_fixada|Tema de Repercussão Geral 1068|STF:RG:1068|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1068",
+   "legacy_lookup": [
+    "CF88",
+    "5",
+    "",
+    "XXXVIII",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:1068",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1068.TXT",
+   "members": [
+    "STF:RG:1068"
+   ],
+   "ratified_decisions": [
+    "J0-BL-005"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X6",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1068",
+     "sha256": "425be9b47c6aa71fabfb1f6efa07c7496d9aebfd552dbe472550e9cd4cc7f28c"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 1068",
+    "GENERIC": "RG TEMA 1068"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "1068",
+    "titulo": "Tema de Repercussão Geral 1068",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1068",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.5:INC.LXVII",
+   "source_id": "STF:SV:25",
+   "source_reference_id": "STF:SV:25:CF88:5:-:LXVII:-",
+   "label": "Súmula Vinculante 25",
+   "legacy_idx_row": "STF:SV:25:CF88:5:-:LXVII:-|sumula_vinculante|STF|25|vigente|Súmula Vinculante 25|STF:SV:25|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula774/false",
+   "legacy_lookup": [
+    "CF88",
+    "5",
+    "",
+    "LXVII",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": null,
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_25.TXT",
+   "members": [
+    "STF:SV:25"
+   ],
+   "ratified_decisions": [
+    "J0-BL-006"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula774/false",
+     "sha256": "18e25eda1ac82fc464e59c83c02250105d4aeae088396867d77f241d4c9e26c1"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "SV 25",
+    "GENERIC": "SV 25"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula_vinculante",
+    "numero": "25",
+    "titulo": "Súmula Vinculante 25",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula774/false",
+    "status_processual": "vigente"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.7:INC.XXVI",
+   "source_id": "STF:RG:935",
+   "source_reference_id": "STF:RG:935:CF88:7:-:XXVI:-",
+   "label": "Tema de Repercussão Geral 935",
+   "legacy_idx_row": "STF:RG:935:CF88:7:-:XXVI:-|repercussao_geral|STF|935|tese_fixada|Tema de Repercussão Geral 935|STF:RG:935|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=935",
+   "legacy_lookup": [
+    "CF88",
+    "7",
+    "",
+    "XXVI",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:935",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_935.TXT",
+   "members": [
+    "STF:RG:935"
+   ],
+   "ratified_decisions": [
+    "J0-BL-013"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X8",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=935",
+     "sha256": "2f34046b64b022ed6b45283d550dcbe2aca4a89274b248b7ebbcc560c1ca3130"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 935",
+    "GENERIC": "RG TEMA 935"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "935",
+    "titulo": "Tema de Repercussão Geral 935",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=935",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.14:PAR.5",
+   "source_id": "STF:RG:1229",
+   "source_reference_id": "STF:RG:1229:CF88:14:5:-:-",
+   "label": "Tema de Repercussão Geral 1229",
+   "legacy_idx_row": "STF:RG:1229:CF88:14:5:-:-|repercussao_geral|STF|1229|tese_fixada|Tema de Repercussão Geral 1229|STF:RG:1229|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1229",
+   "legacy_lookup": [
+    "CF88",
+    "14",
+    "5",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:1229",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1229.TXT",
+   "members": [
+    "STF:RG:1229"
+   ],
+   "ratified_decisions": [
+    "J0-BL-017"
+   ],
+   "batches": [
+    "BATCH07"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "X9",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1229",
+     "sha256": "bfc776c2f9c0647e465bf95e1383b665172f40a0e4202dfc55dfdb8e85bcb248"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 1229",
+    "GENERIC": "RG TEMA 1229"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "1229",
+    "titulo": "Tema de Repercussão Geral 1229",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1229",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.15:INC.III",
+   "source_id": "TSE:SUMULA:9",
+   "source_reference_id": "TSE:SUMULA:9:CF88:15:-:III:-",
+   "label": "Súmula 9 TSE",
+   "legacy_idx_row": "TSE:SUMULA:9:CF88:15:-:III:-|sumula|TSE|9|vigente|Súmula 9 TSE|TSE:SUMULA:9|https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse/sumula-nb0-9",
+   "legacy_lookup": [
+    "CF88",
+    "15",
+    "",
+    "III",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "TSE:SUMULA:9",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/TSE_SUMULA_9.TXT",
+   "members": [
+    "TSE:SUMULA:9"
+   ],
+   "ratified_decisions": [
+    "J0-BL-020"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y1",
+     "url": "https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse/sumula-nb0-9",
+     "sha256": "1f4b62a53dd070705a8dcd4ab4cacf0bc275b41849a94779f86020045055fbfd"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 9",
+    "GENERIC": "Súmula 9 TSE"
+   },
+   "payload": {
+    "tribunal": "TSE",
+    "tipo": "sumula",
+    "numero": "9",
+    "titulo": "Súmula 9 TSE",
+    "fonte": "https://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse/sumula-nb0-9",
+    "status_processual": "vigente"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.62:PAR.6",
+   "source_id": "STF:MS:27931",
+   "source_reference_id": "STF:MS:27931:CF88:62:6:-:-",
+   "label": "MS 27931",
+   "legacy_idx_row": "STF:MS:27931:CF88:62:6:-:-|ms|STF|27931|julgado|MS 27931|STF:MS:27931|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2027931%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "62",
+    "6",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:MS:27931",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_27931.TXT",
+   "members": [
+    "STF:MS:27931"
+   ],
+   "ratified_decisions": [
+    "J0-BL-062"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y2",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2027931%22&base=acordaos",
+     "sha256": "bb990605db280414caa48c8d7e38fb53835975546ed3f8a2f84465d45d261be3"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 27931",
+    "GENERIC": "MS 27931"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "ms",
+    "numero": "27931",
+    "titulo": "MS 27931",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2027931%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.53:CAPUT",
+   "source_id": "STF:INQ:4781",
+   "source_reference_id": "STF:INQ:4781:CF88:53:-:-:-",
+   "label": "Inq 4781",
+   "legacy_idx_row": "STF:INQ:4781:CF88:53:-:-:-|inq|STF|4781|julgado|Inq 4781|STF:INQ:4781|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%204781%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "53",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:INQ:4781",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_4781.TXT",
+   "members": [
+    "STF:INQ:4781"
+   ],
+   "ratified_decisions": [
+    "J0-BL-055"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%204781%22&base=acordaos",
+     "sha256": "f3c015962df2e5f04ee0cc20e2e7805be2401307df82ab6b0ef20876d683262e"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 4781",
+    "GENERIC": "Inq 4781"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "inq",
+    "numero": "4781",
+    "titulo": "Inq 4781",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%204781%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.114:INC.I",
+   "source_id": "STF:ADI:3395",
+   "source_reference_id": "STF:ADI:3395:CF88:114:-:I:-",
+   "label": "ADI 3395",
+   "legacy_idx_row": "STF:ADI:3395:CF88:114:-:I:-|adi|STF|3395|merito_julgado|ADI 3395|STF:ADI:3395|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "114",
+    "",
+    "I",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3395",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3395.TXT",
+   "members": [
+    "STF:ADI:3395"
+   ],
+   "ratified_decisions": [
+    "J0-BL-104",
+    "J0-BL-105"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos",
+     "sha256": "a57846742cfdeb29dec6957e5c7b02f257e9987c4771cfbf3d63bc44fa05c3db"
+    },
+    {
+     "id": "Y7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+     "sha256": "56e7246184fed1b4591c15336df3cad1c7c5ebb6a28df1f75887534fab389c67"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3395",
+    "GENERIC": "ADI 3395"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3395",
+    "titulo": "ADI 3395",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.114:INC.I",
+   "source_id": "STF:ADI:3684",
+   "source_reference_id": "STF:ADI:3684:CF88:114:-:I:-",
+   "label": "ADI 3684",
+   "legacy_idx_row": "STF:ADI:3684:CF88:114:-:I:-|adi|STF|3684|merito_julgado|ADI 3684|STF:ADI:3684|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "114",
+    "",
+    "I",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3684",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3684.TXT",
+   "members": [
+    "STF:ADI:3684"
+   ],
+   "ratified_decisions": [
+    "J0-BL-104"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos",
+     "sha256": "a57846742cfdeb29dec6957e5c7b02f257e9987c4771cfbf3d63bc44fa05c3db"
+    },
+    {
+     "id": "Y7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+     "sha256": "56e7246184fed1b4591c15336df3cad1c7c5ebb6a28df1f75887534fab389c67"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3684",
+    "GENERIC": "ADI 3684"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3684",
+    "titulo": "ADI 3684",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.114:INC.IV",
+   "source_id": "STF:ADI:3684",
+   "source_reference_id": "STF:ADI:3684:CF88:114:-:IV:-",
+   "label": "ADI 3684",
+   "legacy_idx_row": "STF:ADI:3684:CF88:114:-:IV:-|adi|STF|3684|merito_julgado|ADI 3684|STF:ADI:3684|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "114",
+    "",
+    "IV",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3684",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3684.TXT",
+   "members": [
+    "STF:ADI:3684"
+   ],
+   "ratified_decisions": [
+    "J0-BL-104"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos",
+     "sha256": "a57846742cfdeb29dec6957e5c7b02f257e9987c4771cfbf3d63bc44fa05c3db"
+    },
+    {
+     "id": "Y7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+     "sha256": "56e7246184fed1b4591c15336df3cad1c7c5ebb6a28df1f75887534fab389c67"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3684",
+    "GENERIC": "ADI 3684"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3684",
+    "titulo": "ADI 3684",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.114:INC.IX",
+   "source_id": "STF:ADI:3684",
+   "source_reference_id": "STF:ADI:3684:CF88:114:-:IX:-",
+   "label": "ADI 3684",
+   "legacy_idx_row": "STF:ADI:3684:CF88:114:-:IX:-|adi|STF|3684|merito_julgado|ADI 3684|STF:ADI:3684|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "114",
+    "",
+    "IX",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:3684",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3684.TXT",
+   "members": [
+    "STF:ADI:3684"
+   ],
+   "ratified_decisions": [
+    "J0-BL-104"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos",
+     "sha256": "a57846742cfdeb29dec6957e5c7b02f257e9987c4771cfbf3d63bc44fa05c3db"
+    },
+    {
+     "id": "Y7",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+     "sha256": "56e7246184fed1b4591c15336df3cad1c7c5ebb6a28df1f75887534fab389c67"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 3684",
+    "GENERIC": "ADI 3684"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "3684",
+    "titulo": "ADI 3684",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.142",
+   "source_id": "STF:ADI:6457",
+   "source_reference_id": "STF:ADI:6457:CF88:142:-:-:-",
+   "label": "ADI 6457",
+   "legacy_idx_row": "STF:ADI:6457:CF88:142:-:-:-|adi|STF|6457|merito_julgado|ADI 6457|STF:ADI:6457|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%206457%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "142",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:6457",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_6457.TXT",
+   "members": [
+    "STF:ADI:6457"
+   ],
+   "ratified_decisions": [
+    "J0-BL-123"
+   ],
+   "batches": [
+    "BATCH08"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Y9",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%206457%22&base=acordaos",
+     "sha256": "bb0fd915990d3be428cc188aea43df548d2fedd244d94f69080f5030cc3dc3ea"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 6457",
+    "GENERIC": "ADI 6457"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "6457",
+    "titulo": "ADI 6457",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%206457%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.84:INC.XII",
+   "source_id": "STF:ADPF:964",
+   "source_reference_id": "STF:ADPF:964:CF88:84:-:XII:-",
+   "label": "ADPF 964",
+   "legacy_idx_row": "STF:ADPF:964:CF88:84:-:XII:-|adpf|STF|964|julgado|ADPF 964|STF:ADPF:964|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20964%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "84",
+    "",
+    "XII",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADPF:964",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_964.TXT",
+   "members": [
+    "STF:ADPF:964"
+   ],
+   "ratified_decisions": [
+    "J0-BL-066"
+   ],
+   "batches": [
+    "BATCH09"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Z1",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20964%22&base=acordaos",
+     "sha256": "acf12139558da827dec0e1cb15ebd2c4344170431656865cd984046c150be3f3"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 964",
+    "GENERIC": "ADPF 964"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adpf",
+    "numero": "964",
+    "titulo": "ADPF 964",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20964%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.129",
+   "source_id": "STF:RG:184",
+   "source_reference_id": "STF:RG:184:CF88:129:-:-:-",
+   "label": "Tema de Repercussão Geral 184",
+   "legacy_idx_row": "STF:RG:184:CF88:129:-:-:-|repercussao_geral|STF|184|tese_fixada|Tema de Repercussão Geral 184|STF:RG:184|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=184",
+   "legacy_lookup": [
+    "CF88",
+    "129",
+    "",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:184",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_184.TXT",
+   "members": [
+    "STF:RG:184"
+   ],
+   "ratified_decisions": [
+    "J0-BL-121"
+   ],
+   "batches": [
+    "BATCH09"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "Z3",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=184",
+     "sha256": "aa3129173503ec0343a9365464b80f32ce64592b5fda0b86cc2a0528a511bdf7"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 184",
+    "GENERIC": "RG TEMA 184"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "184",
+    "titulo": "Tema de Repercussão Geral 184",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=184",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "B",
+   "origin": "J2F",
+   "target_id": "CF88:ART.142:PAR.2",
+   "source_id": "STF:HC:70648",
+   "source_reference_id": "STF:HC:70648:CF88:142:2:-:-",
+   "label": "HC 70648",
+   "legacy_idx_row": "STF:HC:70648:CF88:142:2:-:-|hc|STF|70648|julgado|HC 70648|STF:HC:70648|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%2070648%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "142",
+    "2",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:HC:70648",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_70648.TXT",
+   "members": [
+    "STF:HC:70648"
+   ],
+   "ratified_decisions": [
+    "J0-BL-124"
+   ],
+   "batches": [
+    "BATCH09"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Z4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%2070648%22&base=acordaos",
+     "sha256": "834468b26bc5da4606dc1471bec7ad36fac33fe1585ce5e36f156c4eb8cd3bfd"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "OUTRO 70648",
+    "GENERIC": "HC 70648"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "hc",
+    "numero": "70648",
+    "titulo": "HC 70648",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%2070648%22&base=acordaos",
+    "status_processual": "julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.150:PAR.7",
+   "source_id": "STF:RG:201",
+   "source_reference_id": "STF:RG:201:CF88:150:7:-:-",
+   "label": "Tema de Repercussão Geral 201",
+   "legacy_idx_row": "STF:RG:201:CF88:150:7:-:-|repercussao_geral|STF|201|tese_fixada|Tema de Repercussão Geral 201|STF:RG:201|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=201",
+   "legacy_lookup": [
+    "CF88",
+    "150",
+    "7",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:201",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_201.TXT",
+   "members": [
+    "STF:RG:201"
+   ],
+   "ratified_decisions": [
+    "J0-BL-130"
+   ],
+   "batches": [
+    "BATCH09"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Z5",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=201",
+     "sha256": "57b67c6fbe10df663a4ee15e0a281ed94a07d333cb46a52d753c8a8b26c8066e"
+    },
+    {
+     "id": "Z6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202777%22&base=acordaos",
+     "sha256": "f09d9484c4333965b0bb825de87a5364c524de6421aa2eb99d80960a741279ec"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 201",
+    "GENERIC": "RG TEMA 201"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "201",
+    "titulo": "Tema de Repercussão Geral 201",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=201",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.150:PAR.7",
+   "source_id": "STF:ADI:2777",
+   "source_reference_id": "STF:ADI:2777:CF88:150:7:-:-",
+   "label": "ADI 2777",
+   "legacy_idx_row": "STF:ADI:2777:CF88:150:7:-:-|adi|STF|2777|merito_julgado|ADI 2777|STF:ADI:2777|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202777%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "150",
+    "7",
+    "",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:ADI:2777",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2777.TXT",
+   "members": [
+    "STF:ADI:2777"
+   ],
+   "ratified_decisions": [
+    "J0-BL-130"
+   ],
+   "batches": [
+    "BATCH09"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Z5",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=201",
+     "sha256": "57b67c6fbe10df663a4ee15e0a281ed94a07d333cb46a52d753c8a8b26c8066e"
+    },
+    {
+     "id": "Z6",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202777%22&base=acordaos",
+     "sha256": "f09d9484c4333965b0bb825de87a5364c524de6421aa2eb99d80960a741279ec"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "ADI 2777",
+    "GENERIC": "ADI 2777"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "2777",
+    "titulo": "ADI 2777",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202777%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   }
+  },
+  {
+   "group": "A",
+   "origin": "J2F",
+   "target_id": "CF88:ART.155:PAR.2:INC.VII",
+   "source_id": "STF:RG:1093",
+   "source_reference_id": "STF:RG:1093:CF88:155:2:VII:-",
+   "label": "Tema de Repercussão Geral 1093",
+   "legacy_idx_row": "STF:RG:1093:CF88:155:2:VII:-|repercussao_geral|STF|1093|tese_fixada|Tema de Repercussão Geral 1093|STF:RG:1093|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1093",
+   "legacy_lookup": [
+    "CF88",
+    "155",
+    "2",
+    "VII",
+    ""
+   ],
+   "legacy_row_already_on_card": false,
+   "new_ficha": "STF:RG:1093",
+   "ficha": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1093.TXT",
+   "members": [
+    "STF:RG:1093"
+   ],
+   "ratified_decisions": [
+    "J0-BL-132"
+   ],
+   "batches": [
+    "BATCH09"
+   ],
+   "provisional": null,
+   "temporal_version": "CURRENT",
+   "sources": [
+    {
+     "id": "Z7",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1093",
+     "sha256": "438d3e4df738df40c54cfc38995c9758e4451c999e281c68b7b15e5ce9726314"
+    }
+   ],
+   "device_labels": {
+    "CURRENT": "RG TEMA 1093",
+    "GENERIC": "RG TEMA 1093"
+   },
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "1093",
+    "titulo": "Tema de Repercussão Geral 1093",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1093",
+    "status_processual": "tese_fixada"
+   }
+  },
+  {
+   "variant": "A",
+   "target_id": "ADCT:ART.101:PAR.5",
+   "source_id": "STF:ADI:7047-7064",
+   "source_reference_id": "STF:ADI:7047-7064:CF88:101:5:-:-",
+   "label": "ADI 7047/7064 (julgamento conjunto)",
+   "legacy_idx_row": "STF:ADI:7047-7064:CF88:101:5:-:-|adi|STF|7047/7064|merito_julgado|ADI 7047/7064 (julgamento conjunto)|STF:ADI:7047-7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "101",
+    "5",
+    "",
+    ""
+   ],
+   "new_ficha": null,
+   "ratified_decisions": [
+    "J0-BL-166",
+    "J0-BL-167"
+   ],
+   "ratification": [
+    "REALLOCATE -> ADCT art. 101, § 5º (registro conjunto ADI 7047/7064)",
+    "REALLOCATE -> ADCT art. 101, § 5º (registro conjunto ADI 7047/7064)"
+   ],
+   "sources": [
+    "P1",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7047/7064",
+    "titulo": "ADI 7047/7064 (julgamento conjunto)",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7047",
+     "ADI 7064"
+    ]
+   },
+   "joint": "SAME_JUDGMENT_SAME_SCOPE",
+   "joint_with": null,
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "A",
+   "target_id": "ADCT:ART.107-A",
+   "source_id": "STF:ADI:7064",
+   "source_reference_id": "STF:ADI:7064:CF88:107-A:-:-:-",
+   "label": "ADI 7064",
+   "legacy_idx_row": "STF:ADI:7064:CF88:107-A:-:-:-|adi|STF|7064|merito_julgado|ADI 7064|STF:ADI:7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "107-A",
+    "",
+    "",
+    ""
+   ],
+   "new_ficha": "STF:ADI:7064",
+   "ratified_decisions": [
+    "J0-BL-169"
+   ],
+   "ratification": [
+    "PROMOTE (rótulo \"ADI 7064\", não \"ADI 7047/7064\")"
+   ],
+   "sources": [
+    "P1",
+    "S4",
+    "S6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7064",
+    "titulo": "ADI 7064",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7064"
+    ]
+   },
+   "joint": "SAME_JUDGMENT_NOT_SAME_SCOPE",
+   "joint_with": "STF:ADI:7047 (não tratou do art. 107-A)",
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.100:PAR.11",
+   "source_id": "STF:ADI:7047-7064",
+   "source_reference_id": "STF:ADI:7047-7064:CF88:100:11:-:-",
+   "label": "ADI 7047/7064 (julgamento conjunto)",
+   "legacy_idx_row": "STF:ADI:7047-7064:CF88:100:11:-:-|adi|STF|7047/7064|merito_julgado|ADI 7047/7064 (julgamento conjunto)|STF:ADI:7047-7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "100",
+    "11",
+    "",
+    ""
+   ],
+   "new_ficha": null,
+   "ratified_decisions": [
+    "J0-BL-076",
+    "J0-BL-077"
+   ],
+   "ratification": [
+    "REALLOCATE -> CF art. 100, § 11 (registro conjunto)",
+    "REALLOCATE -> CF art. 100, § 11 (registro conjunto)"
+   ],
+   "sources": [
+    "P1",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7047/7064",
+    "titulo": "ADI 7047/7064 (julgamento conjunto)",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7047",
+     "ADI 7064"
+    ]
+   },
+   "joint": "SAME_JUDGMENT_SAME_SCOPE",
+   "joint_with": null,
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.23:INC.II",
+   "source_id": "STF:RG:793",
+   "source_reference_id": "STF:RG:793:CF88:23:-:II:-",
+   "label": "Tema de Repercussão Geral 793",
+   "legacy_idx_row": "STF:RG:793:CF88:23:-:II:-|repercussao_geral|STF|793|tese_fixada|Tema de Repercussão Geral 793|STF:RG:793|https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+   "legacy_lookup": [
+    "CF88",
+    "23",
+    "",
+    "II",
+    ""
+   ],
+   "new_ficha": "STF:RG:793",
+   "ratified_decisions": [
+    "J0-BL-039"
+   ],
+   "ratification": [
+    "PROMOTE"
+   ],
+   "sources": [
+    "T1",
+    "T2"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "793",
+    "titulo": "Tema de Repercussão Geral 793",
+    "fonte": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "status_processual": "tese_fixada"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.22:INC.I",
+   "source_id": "STF:SV:46",
+   "source_reference_id": "STF:SV:46:CF88:22:-:I:-",
+   "label": "Súmula Vinculante 46",
+   "legacy_idx_row": "STF:SV:46:CF88:22:-:I:-|sumula_vinculante|STF|46|vigente|Súmula Vinculante 46|STF:SV:46|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+   "legacy_lookup": [
+    "CF88",
+    "22",
+    "",
+    "I",
+    ""
+   ],
+   "new_ficha": "STF:SV:46",
+   "ratified_decisions": [
+    "J0-BL-049"
+   ],
+   "ratification": [
+    "REALLOCATE -> CF art. 22, I e art. 85, parágrafo único (ficha única)"
+   ],
+   "sources": [
+    "T3"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula_vinculante",
+    "numero": "46",
+    "titulo": "Súmula Vinculante 46",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+    "status_processual": "vigente"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.85:PAR.UNICO",
+   "source_id": "STF:SV:46",
+   "source_reference_id": "STF:SV:46:CF88:85:UNICO:-:-",
+   "label": "Súmula Vinculante 46",
+   "legacy_idx_row": "STF:SV:46:CF88:85:UNICO:-:-|sumula_vinculante|STF|46|vigente|Súmula Vinculante 46|STF:SV:46|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+   "legacy_lookup": [
+    "CF88",
+    "85",
+    "UNICO",
+    "",
+    ""
+   ],
+   "new_ficha": null,
+   "ratified_decisions": [
+    "J0-BL-049"
+   ],
+   "ratification": [
+    "REALLOCATE -> CF art. 22, I e art. 85, parágrafo único (ficha única)"
+   ],
+   "sources": [
+    "T3"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula_vinculante",
+    "numero": "46",
+    "titulo": "Súmula Vinculante 46",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+    "status_processual": "vigente"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.53:CAPUT",
+   "source_id": "STF:RG:950",
+   "source_reference_id": "STF:RG:950:CF88:53:-:-:-",
+   "label": "Tema de Repercussão Geral 950",
+   "legacy_idx_row": "STF:RG:950:CF88:53:-:-:-|repercussao_geral|STF|950|tese_fixada|Tema de Repercussão Geral 950|STF:RG:950|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=950",
+   "legacy_lookup": [
+    "CF88",
+    "53",
+    "",
+    "",
+    ""
+   ],
+   "new_ficha": "STF:RG:950",
+   "ratified_decisions": [
+    "J0-BL-057"
+   ],
+   "ratification": [
+    "PROMOTE"
+   ],
+   "sources": [
+    "T5",
+    "T6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "950",
+    "titulo": "Tema de Repercussão Geral 950",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=950",
+    "status_processual": "tese_fixada"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null,
+   "group": "A",
+   "origin": "J2E"
+  },
+  {
+   "variant": "B",
+   "target_id": "CF88:ART.53:PAR.1",
+   "source_id": "STF:HC:232627",
+   "source_reference_id": "STF:HC:232627:CF88:53:1:-:-",
+   "label": "HC 232627",
+   "legacy_idx_row": "STF:HC:232627:CF88:53:1:-:-|hc|STF|232627|merito_julgado|HC 232627|STF:HC:232627|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "53",
+    "1",
+    "",
+    ""
+   ],
+   "new_ficha": "STF:HC:232627",
+   "ratified_decisions": [
+    "J0-BL-058"
+   ],
+   "ratification": [
+    "PROMOTE editorial (HC232627_EDITORIAL_APPROVAL = YES; HC232627_PHYSICAL_APPROVAL = NO; tipo HC próprio)"
+   ],
+   "sources": [
+    "T7"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "hc",
+    "numero": "232627",
+    "titulo": "HC 232627",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": "JTIPO_HC (rótulo \"HC <NUMERO>\")",
+   "group": "B",
+   "origin": "J2E"
+  }
+ ],
+ "fichas": {
+  "STF:ADI:7064": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 7064\nTRIBUNAL: STF\nSTATUS: mérito julgado\nPROCESSO: ADI 7064 (Rel. Min. Luiz Fux)\n\nART. 107-A DO ADCT (TETO DE PRECATÓRIOS, EC 114/2021)\nEm 30/11/2023 o Plenário julgou a ação parcialmente procedente e:\n- deu interpretação conforme ao caput do art. 107-A do ADCT, para que seus efeitos operem somente no exercício de 2022;\n- declarou inconstitucionais os incisos II e III do art. 107-A e, por arrastamento, os §§ 3º, 5º e 6º;\n- deferiu a abertura de créditos extraordinários para quitar os precatórios dos exercícios de 2022 a 2026 que excederam o subteto, reconhecendo que o pagamento se insere nas exceções do art. 3º, § 2º, da LC 200/2023.\n\nJULGAMENTO CONJUNTO\nJulgada em conjunto com a ADI 7047. Os pontos sobre o art. 107-A são somente da ADI 7064. Os pontos comuns às duas ações (art. 100, §§ 9º e 11, da CF e art. 101, § 5º, do ADCT) estão na ficha ADI 7047/7064.\n\nACÓRDÃO\nJulgamento em 01/12/2023, DJe de 19/12/2023.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822\n",
+  "STF:RG:793": "REPERCUSSÃO GERAL 793\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 855178\n\nTESE/ENUNCIADO\nOs entes da federação, em decorrência da competência comum, são solidariamente responsáveis nas demandas prestacionais na área da saúde, e diante dos critérios constitucionais de descentralização e hierarquização, compete à autoridade judicial direcionar o cumprimento conforme as regras de repartição de competências e determinar o ressarcimento a quem suportou o ônus financeiro.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:SV:46": "SÚMULA VINCULANTE 46\nTRIBUNAL: STF\nSTATUS: vigente\nPROCESSO: Não disponível na fonte.\n\nTESE/ENUNCIADO\nA definição dos crimes de responsabilidade e o estabelecimento das respectivas normas de processo e julgamento são da competência legislativa privativa da União.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false\n",
+  "STF:RG:950": "REPERCUSSÃO GERAL 950\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 632115\n\nTESE/ENUNCIADO\n1. A imunidade material parlamentar (art. 53, caput, c/c art. 27, § 1º, e art. 29, VIII, CF/1988) configura excludente da responsabilidade civil objetiva do Estado (art. 37, § 6º, CF/1988), afastando qualquer pretensão indenizatória em face do ente público por opiniões, palavras e votos cobertos por essa garantia. 2. Nas hipóteses em que a conduta do parlamentar extrapolar os limites da imunidade material, eventual responsabilização recairá de forma pessoal, direta e exclusiva sobre o próprio parlamentar, sob o regime de responsabilidade civil subjetiva.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=950\n",
+  "STF:HC:232627": "HABEAS CORPUS 232627\nTRIBUNAL: STF\nSTATUS: mérito julgado (Plenário)\nPROCESSO: HC 232627 (Rel. Min. Gilmar Mendes)\n\nTESE\nA prerrogativa de foro para julgamento de crimes praticados no cargo e em razão das funções subsiste mesmo após o afastamento do cargo, ainda que o inquérito ou a ação penal sejam iniciados depois de cessado seu exercício.\n\nJULGAMENTO\nPlenário, 12/03/2025; DJe de 16/07/2025. Dispositivo constitucional citado: art. 53, § 1º. Revê em parte a orientação da AP 937-QO.\n\nEMBARGOS DE DECLARAÇÃO\nEm 25/05/2026 (DJe de 08/06/2026) o Plenário acolheu embargos da PGR, com efeitos integrativos, para fixar balizas de aplicação da tese.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos\n",
+  "STF:SUMULA:702": "SÚMULA 702 DO STF\nTRIBUNAL: STF\nSTATUS: súmula vigente\nPROCESSO: Súmula 702 STF\n\nJULGAMENTO\naprovação 24/09/2003; DJ 09, 10 e 13/10/2003.\n\nRESUMO DA FONTE OFICIAL\nEnunciado; aprovação 24/09/2003; DJ 09-13/10/2003; \"Referência Legislativa: Constituição Federal de 1988, art. 29, X\".\n\nTRECHO OFICIAL\nA competência do Tribunal de Justiça para julgar prefeitos restringe-se aos crimes de competência da Justiça comum estadual. Referência Legislativa: Constituição Federal de 1988, art. 29, X.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search/seq-sumula702/false\n",
+  "STF:MS:21689": "MANDADO DE SEGURANÇA 21689\nTRIBUNAL: STF\nSTATUS: mérito julgado (1993)\nPROCESSO: MS 21689 (Min. Carlos Velloso)\n\nJULGAMENTO\nPleno, 16/12/1993; DJ 07/04/1995.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Carlos Velloso, j. 16/12/1993, DJ 07/04/1995: art. 52, p.u.: duas penas (perda do cargo e inabilitação por oito anos), a inabilitação não é acessória; a renúncia apresentada na sessão de julgamento não paralisa o impeachment.\n\nTRECHO OFICIAL\nA existência, no impeachment brasileiro, segundo a Constituição (C.F., 1988, art. 52, parag. único), de duas penas: a) perda do cargo; b) inabilitação, por oito anos. A renúncia ao cargo, apresentada na sessão de julgamento, não paralisa o processo.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021689%22&base=acordaos\n",
+  "STF:AP:694": "AÇÃO PENAL 694\nTRIBUNAL: STF\nSTATUS: mérito julgado (Turma); orientação do STF oscilante (AP 470 × AP 565 × AP 694)\nPROCESSO: AP 694 (Min. Rosa Weber)\n\nJULGAMENTO\n1ª Turma, 02/05/2017; DJe 31/08/2017.\n\nRESUMO DA FONTE OFICIAL\n1ª Turma, Rel. Min. Rosa Weber, j. 02/05/2017, DJe 31/08/2017, item 7: perda do mandato do congressista condenado cabe à Casa (art. 55, VI e § 2º), salvo regime fechado incompatível com o mandato: perda automática declarada pela Mesa (art. 55, III, § 3º).\n\nTRECHO OFICIAL\nPerda do mandato parlamentar: É da competência das Casas Legislativas decidir sobre a perda do mandato do Congressista condenado criminalmente (artigo 55, VI e § 2º, da CF). Regra excepcionada quando a condenação impõe regime fechado.\n\nNOTA\nInterpreta diretamente o art. 55, VI.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AP%20694%22&base=acordaos\n",
+  "STF:ADI:1616": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 1616\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 1616 (Min. Maurício Corrêa)\n\nJULGAMENTO\nPleno, 24/05/2001; DJ 24/08/2001.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Maurício Corrêa, j. 24/05/2001, DJ 24/08/2001, item 4: o múnus do AGU (CF, art. 103, § 3º) deve ser entendido com temperamentos; o AGU não está obrigado a defender tese já declarada inconstitucional pelo STF.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201616%22&base=acordaos\n",
+  "STF:ADI:1254": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 1254\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 1254\n\nJULGAMENTO\nPleno (AgR); DJ 17/03/2000 (acórdão do processo).\n\nRESUMO DA FONTE OFICIAL\nPleno: \"A função processual do Advogado-Geral da União, nos processos de controle de constitucionalidade por via de ação, é eminentemente defensiva\".\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201254%22&base=acordaos\n",
+  "STF:ADI:789": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 789\nTRIBUNAL: STF\nSTATUS: mérito julgado (improcedente)\nPROCESSO: ADI 789 (Min. Celso de Mello)\n\nJULGAMENTO\nPleno, 26/05/1994; DJ 19/12/1994.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Celso de Mello, j. 26/05/1994, DJ 19/12/1994: \"inteligência da norma inscrita no art. 130\": o MP junto ao TCU é órgão de extração constitucional, sem fisionomia institucional própria, na intimidade estrutural da Corte de Contas.\n\nTRECHO OFICIAL\nMINISTÉRIO PÚBLICO JUNTO AO TCU - INSTITUIÇÃO QUE NÃO INTEGRA O MINISTÉRIO PÚBLICO DA UNIÃO - INTELIGÊNCIA DA NORMA INSCRITA NO ART. 130 DA CONSTITUIÇÃO. Lei n. 8.443/92.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20789%22&base=acordaos\n",
+  "STF:ADI:5017": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 5017\nTRIBUNAL: STF\nSTATUS: cautelar monocrática sem referendo; mérito pendente\nPROCESSO: ADI 5017 (Min. Luiz Fux (relator atual))\n\nDECISÃO PROVISÓRIA\nEsta decisão não é definitiva. Pode mudar quando o Plenário referendar a cautelar ou julgar o mérito.\n\nJULGAMENTO\nliminar monocrática da Presidência, 17/07/2013 (sujeita a referendo); DJe 2013.\n\nRESUMO DA FONTE OFICIAL\nLiminar deferida pela Presidência em 17/07/2013, \"sujeito ao referendo do Colegiado\", para suspender os efeitos da EC 73/2013; não há referendo nem mérito registrados; autos conclusos ao relator (Min. Luiz Fux) em 18/06/2025.\n\nTRECHO OFICIAL\nem caráter excepcional, e sujeito ao referendo do Colegiado, defiro a medida cautelar pleiteada, para suspender os efeitos da EC 73/2013.\n\nNOTA\nInformação essencial para quem lê o § 11 (a criação dos TRFs pela EC 73/2013 está suspensa desde 2013).\n\nVERIFICADO EM\n17/10/2026.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=4437805\n",
+  "STF:RG:157": "REPERCUSSÃO GERAL 157\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 729744\n\nTESE/ENUNCIADO\nO parecer técnico elaborado pelo Tribunal de Contas tem natureza meramente opinativa, competindo exclusivamente à Câmara de Vereadores o julgamento das contas anuais do Chefe do Poder Executivo local, sendo incabível o julgamento ficto das contas por decurso de prazo.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:RG:835": "REPERCUSSÃO GERAL 835\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 848826\n\nTESE/ENUNCIADO\nPara os fins do art. 1º, inciso I, alínea \"g\", da Lei Complementar 64, de 18 de maio de 1990, alterado pela Lei Complementar 135, de 4 de junho de 2010, a apreciação das contas de prefeitos, tanto as de governo quanto as de gestão, será exercida pelas Câmaras Municipais, com o auxílio dos Tribunais de Contas competentes, cujo parecer prévio somente deixará de prevalecer por decisão de 2/3 dos vereadores.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:ADI:7369": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 7369\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 7369\n\nJULGAMENTO\nPleno, 13/05/2024; DJe 08/08/2024.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Cármen Lúcia, j. 13/05/2024, DJe 08/08/2024: hipóteses de intervenção estadual taxativas (art. 34, VII e art. 35); princípios sensíveis de observância obrigatória pelos Estados, sem necessidade de reprodução na Constituição estadual.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos\n",
+  "STF:AI:343461": "AGRAVO DE INSTRUMENTO 343461\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: AI 343461\n\nJULGAMENTO\n2ª Turma, 18/06/2002 (AgR); DJ 29/11/2002.\n\nRESUMO DA FONTE OFICIAL\n2ª Turma, Rel. Min. Celso de Mello, j. 18/06/2002, DJ 29/11/2002: intervenção estadual por inexecução de ordem judicial \"(CF, ART. 35, IV)\"; procedimento de caráter político-administrativo; inviável o recurso extraordinário.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos\n",
+  "STF:ADI:336": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 336\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 336\n\nJULGAMENTO\nPleno, 10/02/2010; DJe 17/09/2010.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Eros Grau, j. 10/02/2010, DJe 17/09/2010: Constituição de Sergipe; \"O artigo 35 da Constituição do Brasil prevê as hipóteses de intervenção dos Estados nos Municípios. A Constituição sergipana acrescentou outras hipóteses\" (inconstitucional).\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos\n",
+  "STF:MS:21564": "MANDADO DE SEGURANÇA 21564\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: MS 21564\n\nJULGAMENTO\nPleno, 23/09/1992; DJ 27/08/1993.\n\nRESUMO DA FONTE OFICIAL\nPleno, red. p/ acórdão Min. Carlos Velloso, j. 23/09/1992, DJ 27/08/1993: \"a Câmara dos Deputados ... examina a admissibilidade da acusação (C.F., art. 86, caput)\" e \"profere juízo político\"; Senado processa e julga (art. 52, I; art. 86, § 1º, II).\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos\n",
+  "STF:ADPF:378": "ARGUIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 378\nTRIBUNAL: STF\nSTATUS: só há decisão cautelar do Plenário; mérito nunca julgado\nPROCESSO: ADPF 378\n\nDECISÃO PROVISÓRIA\nEsta decisão não é definitiva. Pode mudar quando o mérito for julgado ou a ação for extinta.\n\nJULGAMENTO\nPleno, MC 17/12/2015; ED 16/03/2016; DJe 08/03/2016.\n\nRESUMO DA FONTE OFICIAL\nMC: Pleno, red. p/ acórdão Min. Roberto Barroso, j. 17/12/2015, DJe 08/03/2016: Câmara autoriza (art. 51, I); Senado processa e julga, incluído o juízo inicial de instauração (art. 52, I); arts. da Lei 1.079/50 não recepcionados por incompatibilidade com os arts. 51, I; 52, I; e 86, § 1º, II. ED: j. 16/03/2016.\n\nVERIFICADO EM\n17/10/2026.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos\n",
+  "STF:ADI:978": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 978\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 978\n\nJULGAMENTO\nPleno, 19/10/1995; DJ 17/11/1995.\n\nRESUMO DA FONTE OFICIAL\nPleno, red. p/ acórdão Min. Celso de Mello, j. 19/10/1995, DJ 17/11/1995: Constituição da Paraíba; prerrogativas inerentes ao Presidente \"(CF/88, ART. 86, PAR. 3. E 4.)\"; imunidade à prisão cautelar não extensível ao Governador.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20978%22&base=acordaos\n",
+  "STF:INQ:672": "INQUÉRITO 672\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: Inq 672\n\nJULGAMENTO\nPleno, 16/09/1992 (QO); DJ 16/04/1993.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Celso de Mello, j. 16/09/1992, DJ 16/04/1993: \"CF, ART. 86, § 4º\": imunidade temporária do Presidente à persecução penal por atos estranhos à função; exegese estrita; inaplicável a situações extrapenais.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%20672%22&base=acordaos\n",
+  "STF:RCL:84738": "RECLAMAÇÃO 84738\nTRIBUNAL: STF\nSTATUS: decisão de Turma condicionada a tema de repercussão geral ainda pendente\nPROCESSO: Rcl 84738 (Min. Dias Toffoli)\n\nDECISÃO PROVISÓRIA\nEsta decisão não é definitiva. Pode mudar quando o tema de repercussão geral for julgado.\n\nJULGAMENTO\n2ª Turma, 14/04/2026 (AgR); DJe 03/09/2026.\n\nRESUMO DA FONTE OFICIAL\n2ª Turma, Rel. Min. Dias Toffoli, j. 14/04/2026, DJe 03/09/2026: membro do MP mantém o foro (TJ) mesmo por crime não relacionado à função; \"enquanto não sobrevier o julgamento do Tema nº 1.147 da Repercussão Geral ou eventual pronunciamento do Plenário\".\n\nTRECHO OFICIAL\nenquanto não sobrevier o julgamento do Tema nº 1.147 da Repercussão Geral ou eventual pronunciamento do Plenário, referida prerrogativa abarca quaisquer crimes comuns.\n\nNOTA\nPertinente ao art. 96, III, mas a própria ementa diz que é provisória e depende do Tema 1147.\n\nVERIFICADO EM\n17/10/2026.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Rcl%2084738%22&base=acordaos\n",
+  "STF:ADI:3423-3392-3432-3520": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 3423/3392/3432/3520\nTRIBUNAL: STF\nSTATUS: mérito julgado (improcedente)\nPROCESSO: ADI 3423/3392/3432/3520\n\nJULGAMENTO\nPleno, 29/05/2020 (julgamento conjunto com a ADI 3423); DJe 2020.\n\nJULGAMENTO CONJUNTO\nJulgamento conjunto: ADI 3423 (principal), 3392, 3432 e 3520, no mesmo sentido.\n\nRESUMO DA FONTE OFICIAL\nEmenta oficial: EC 45/2004 na parte que deu nova redação ao art. 114, §§ 2º e 3º (mútuo acordo para o dissídio coletivo; MPT na greve em atividade essencial). Improcedente, Pleno, j. 29/05/2020, DJe 18/06/2020.\nRequerente CNPL; Rel. Min. Gilmar Mendes; apenso principal ADI 3423; assunto \"Direito do Trabalho | Sentença Normativa\"; improcedente (sessão virtual 22-28/05/2020); trânsito em julgado 21/08/2020.\n\nTRECHO OFICIAL\nArt. 1º, da Emenda Constitucional nº 45/2004, na parte em que deu nova redação ao art. 114, §§ 2º e 3º, da Constituição Federal. Necessidade de \"mútuo acordo\" para ajuizamento do Dissídio Coletivo. Legitimidade do MPT para ajuizar Dissídio Coletivo em caso de greve em atividade essencial. Ação direta julgada improcedente.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203392%22&base=acordaos\n",
+  "STF:ADPF:672": "ARGUIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 672\nTRIBUNAL: STF\nSTATUS: mérito julgado (conversão do referendo)\nPROCESSO: ADPF 672 (Min. Alexandre de Moraes)\n\nJULGAMENTO\nPleno, 13/10/2020 (MC-Ref convertido em mérito); DJe 29/10/2020.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Alexandre de Moraes, j. 13/10/2020, DJe 29/10/2020: referendo convertido em julgamento definitivo de mérito; competência comum (art. 23, II e IX), concorrente (art. 24, XII), suplementar municipal (art. 30, II) e \"descentralização político-administrativa do Sistema de Saúde (art. 198, CF)\".\n\nTRECHO OFICIAL\nprescrevendo ainda a descentralização político-administrativa do Sistema de Saúde (art. 198, CF, e art. 7º da Lei 8.080/1990). Proposta de conversão de referendo de medida cautelar em julgamento definitivo de mérito.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20672%22&base=acordaos\n",
+  "STF:RG:855": "REPERCUSSÃO GERAL 855\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 806339\n\nTESE/ENUNCIADO\nA exigência constitucional de aviso prévio relativamente ao direito de reunião é satisfeita com a veiculação de informação que permita ao poder público zelar para que seu exercício se dê de forma pacífica ou para que não frustre outra reunião no mesmo local.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:SV:5": "SÚMULA VINCULANTE 5\nTRIBUNAL: STF\nSTATUS: vigente\nPROCESSO: Não disponível na fonte.\n\nTESE/ENUNCIADO\nA falta de defesa técnica por advogado no processo administrativo disciplinar não ofende a Constituição.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=26&sumula=1199\n",
+  "STF:RG:1046": "REPERCUSSÃO GERAL 1046\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: ARE 1121633\n\nTESE/ENUNCIADO\nSão constitucionais os acordos e as convenções coletivos que, ao considerarem a adequação setorial negociada, pactuam limitações ou afastamentos de direitos trabalhistas, independentemente da explicitação especificada de vantagens compensatórias, desde que respeitados os direitos absolutamente indisponíveis.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:ADI:2404": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 2404\nTRIBUNAL: STF\nSTATUS: mérito julgado (procedente)\nPROCESSO: ADI 2404 (Min. Dias Toffoli)\n\nJULGAMENTO\nPleno, 31/08/2016; DJe 01/08/2017.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Dias Toffoli, j. 31/08/2016, DJe 01/08/2017: art. 254 do ECA (\"em horário diverso do autorizado\") inconstitucional; a CF conferiu à União, no art. 21, XVI, a classificação \"para efeito indicativo\"; classificação não é autorização prévia.\n\nTRECHO OFICIAL\na própria Carta de 1988 conferiu à União, com exclusividade, no art. 21, inciso XVI, o desempenho da atividade material de exercer a classificação, para efeito indicativo. Expressão contida no art. 254 da Lei nº 8.069/90.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202404%22&base=acordaos\n",
+  "STF:ADI:3114": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 3114\nTRIBUNAL: STF\nSTATUS: mérito julgado (improcedente)\nPROCESSO: ADI 3114 (Min. Carlos Britto)\n\nJULGAMENTO\nPleno, 24/08/2005; DJ 07/04/2006.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Carlos Britto, j. 24/08/2005, DJ 07/04/2006: emendas parlamentares a projeto de iniciativa reservada: limites da pertinência temática e da vedação de aumento de despesa \"(inciso I do art. 63 da CF)\"; LC 836/97-SP.\n\nTRECHO OFICIAL\nduas limitações: a) a impossibilidade de o parlamento veicular matérias diferentes das versadas no projeto de lei; e b) a impossibilidade de as emendas implicarem aumento de despesa pública (inciso I do art. 63 da CF).\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203114%22&base=acordaos\n",
+  "STF:ADI:2681": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 2681\nTRIBUNAL: STF\nSTATUS: mérito julgado (procedente)\nPROCESSO: ADI 2681 (Min. Celso de Mello)\n\nJULGAMENTO\nPleno, mérito 01/08/2018 (MC de 2002 superada); DJe 28/08/2018.\n\nRESUMO DA FONTE OFICIAL\nMérito: Pleno, Rel. Min. Celso de Mello, j. 01/08/2018, DJe 28/08/2018 (MC 2002 superada): aumento de despesa por emenda parlamentar; \"INCIDÊNCIA DA RESTRIÇÃO PREVISTA NO ART. 63, I, DA CONSTITUIÇÃO DA REPÚBLICA\"; procedente.\n\nTRECHO OFICIAL\nCONSEQUENTE AUMENTO DA DESPESA GLOBAL PREVISTA NO PROJETO DE LEI – IMPOSSIBILIDADE CONSTITUCIONAL – INCIDÊNCIA DA RESTRIÇÃO PREVISTA NO ART. 63, I, DA CONSTITUIÇÃO DA REPÚBLICA – AÇÃO DIRETA JULGADA PROCEDENTE.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202681%22&base=acordaos\n",
+  "STF:RG:1068": "REPERCUSSÃO GERAL 1068\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 1235340\n\nTESE/ENUNCIADO\nA soberania dos veredictos do Tribunal do Júri autoriza a imediata execução de condenação imposta pelo corpo de jurados, independentemente do total da pena aplicada.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:RG:935": "REPERCUSSÃO GERAL 935\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: ARE 1018459\n\nTESE/ENUNCIADO\nÉ constitucional a instituição, por acordo ou convenção coletivos, de contribuições assistenciais a serem impostas a todos os empregados da categoria, ainda que não sindicalizados, desde que assegurado o direito de oposição.\n\nNOTA\nSituação verificada em 17/10/2026 na página oficial do tema: acórdão de mérito publicado em 09/12/2025; a página não registra trânsito em julgado.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:RG:1229": "REPERCUSSÃO GERAL 1229\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 1355228\n\nTESE/ENUNCIADO\nO exercício da chefia do Poder Executivo, nos seis meses anteriores ao pleito, em decorrência de decisão judicial não transitada em julgado, não conta como exercício de um mandato para efeito de reeleição.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "TSE:SUMULA:9": "SÚMULA 9 DO TSE\nTRIBUNAL: TSE\nSTATUS: súmula vigente (TSE)\nPROCESSO: Súmula 9 TSE\n\nJULGAMENTO\nedição 1992 (Rel. Min. Paulo Brossard); DJs de 28-30/10/1992.\n\nRESUMO DA FONTE OFICIAL\nEnunciado: a suspensão de direitos políticos por condenação criminal transitada em julgado cessa com o cumprimento ou a extinção da pena; \"Referências: CF, art. 15, III\"; publicada nos DJs de 28 a 30/10/1992.\n\nTRECHO OFICIAL\nA suspensão de direitos políticos decorrente de condenação criminal transitada em julgado cessa com o cumprimento ou a extinção da pena, independendo de reabilitação ou de prova de reparação dos danos. Referências: CF, art. 15, III.\n\nFONTE OFICIAL\nhttps://www.tse.jus.br/legislacao/codigo-eleitoral/sumulas/sumulas-do-tse/sumula-nb0-9\n",
+  "STF:MS:27931": "MANDADO DE SEGURANÇA 27931\nTRIBUNAL: STF\nSTATUS: mérito julgado (Pleno)\nPROCESSO: MS 27931 (Min. Celso de Mello)\n\nJULGAMENTO\nPleno, 29/06/2017; DJe 28/10/2020.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Celso de Mello, j. 29/06/2017, DJe 28/10/2020: interpretação restritiva do § 6º do art. 62: o sobrestamento só afeta matérias passíveis de regramento por medida provisória; segurança indeferida.\n\nTRECHO OFICIAL\nINTERPRETAÇÃO RESTRITIVA CONFERIDA AO § 6º DO ART. 62 DA CONSTITUIÇÃO DA REPÚBLICA, NO SENTIDO DE QUE O REGIME DE URGÊNCIA SOMENTE AFETA AQUELAS MATÉRIAS QUE SE MOSTREM PASSÍVEIS DE REGRAMENTO POR MEDIDA PROVISÓRIA.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2027931%22&base=acordaos\n",
+  "STF:INQ:4781": "INQUÉRITO 4781\nTRIBUNAL: STF\nSTATUS: referendo de prisão em flagrante pelo Pleno (decisão definitiva do incidente)\nPROCESSO: Inq 4781 (Min. Alexandre de Moraes)\n\nJULGAMENTO\nPleno, Ref 17/02/2021; DJe 14/05/2021.\n\nRESUMO DA FONTE OFICIAL\nRef: Pleno, Rel. Min. Alexandre de Moraes, j. 17/02/2021, DJe 14/05/2021: \"Não incidência da imunidade parlamentar prevista no caput, do art. 53\"; a imunidade material só incide com conexão com o desempenho da função; flagrante de crime inafiançável (art. 53, § 2º).\n\nTRECHO OFICIAL\nNão incidência da imunidade parlamentar prevista no caput, do art. 53, da Constituição Federal. A garantia constitucional da imunidade parlamentar material somente incide no caso de as manifestações guardarem conexão com o desempenho da função legislativa.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%204781%22&base=acordaos\n",
+  "STF:ADI:3395": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 3395\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 3395\n\nJULGAMENTO\nPleno, 15/04/2020; DJe 01/07/2020.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Alexandre de Moraes, j. 15/04/2020, DJe 01/07/2020: \"ART.114, I\"; interpretação conforme: a competência da Justiça do Trabalho não alcança as ações entre o Poder Público e seus servidores estatutários.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203395%22&base=acordaos\n",
+  "STF:ADI:3684": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 3684\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 3684\n\nJULGAMENTO\nPleno, 11/05/2020; DJe 01/06/2020.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Gilmar Mendes, j. 11/05/2020, DJe 01/06/2020: interpretação conforme ao \"art. 114, I, IV e IX\" para afastar a competência da Justiça do Trabalho para ações penais.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%203684%22&base=acordaos\n",
+  "STF:ADI:6457": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 6457\nTRIBUNAL: STF\nSTATUS: mérito julgado\nPROCESSO: ADI 6457 (Min. Luiz Fux)\n\nJULGAMENTO\nPleno, 09/04/2024; DJe 04/06/2024.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Luiz Fux, j. 09/04/2024, DJe 04/06/2024: \"ART. 142 DA CONSTITUIÇÃO\"; LC 97/1999 com interpretação conforme; inexistência de poder moderador na CF/1988.\n\nTRECHO OFICIAL\nART. 142 DA CONSTITUIÇÃO. ATRIBUIÇÕES DAS FORÇAS ARMADAS. LEI COMPLEMENTAR FEDERAL 97/1999. PODER MODERADOR. CONSTITUIÇÃO FEDERAL DE 1988. INEXISTÊNCIA. INTERPRETAÇÃO CONFORME.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%206457%22&base=acordaos\n",
+  "STF:ADPF:964": "ARGUIÇÃO DE DESCUMPRIMENTO DE PRECEITO FUNDAMENTAL 964\nTRIBUNAL: STF\nSTATUS: mérito julgado\nPROCESSO: ADPF 964 (Min. Rosa Weber)\n\nJULGAMENTO\nPleno, 10/05/2023 (julgamento conjunto com as ADPFs 965, 966 e 967); publ. 17/08/2023.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Rosa Weber, j. 10/05/2023, publ. 17/08/2023: decreto de indulto de 21/04/2022; indulto como ato político sujeito a controle judicial; desvio de finalidade caracterizado; \"Indulto não atinge os efeitos secundários da pena, tanto os penais quanto os extrapenais\".\n\nTRECHO OFICIAL\nIndulto como ato político, espécie de ato administrativo. Elementos do ato administrativo. Controle pelo Poder Judiciário. Legitimidade. Desvio de finalidade caracterizado. ... Indulto não atinge os efeitos secundários da pena, tanto os penais quanto os extrapenais.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20964%22&base=acordaos\n",
+  "STF:RG:184": "REPERCUSSÃO GERAL 184\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 593727\n\nTESE/ENUNCIADO\nO Ministério Público dispõe de competência para promover, por autoridade própria, e por prazo razoável, investigações de natureza penal, desde que respeitados os direitos e garantias que assistem a qualquer indiciado ou a qualquer pessoa sob investigação do Estado, observadas, sempre, por seus agentes, as hipóteses de reserva constitucional de jurisdição e, também, as prerrogativas profissionais de que se acham investidos, em nosso País, os Advogados (Lei 8.906/1994, art. 7º, notadamente os incisos I, II, III, XI, XIII, XIV e XIX), sem prejuízo da possibilidade – sempre presente no Estado democrático de Direito – do permanente controle jurisdicional dos atos, necessariamente documentados (Súmula Vinculante 14), praticados pelos membros dessa Instituição.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:HC:70648": "HABEAS CORPUS 70648\nTRIBUNAL: STF\nSTATUS: acórdão de Turma (1993)\nPROCESSO: HC 70648 (Min. Moreira Alves)\n\nJULGAMENTO\n1ª Turma, 09/11/1993; publ. 04/03/1994.\n\nRESUMO DA FONTE OFICIAL\n1ª Turma, Rel. Min. Moreira Alves, j. 09/11/1993, publ. 04/03/1994: sentido da restrição do habeas corpus quanto às punições disciplinares militares (art. 142, § 2º); exame dos quatro pressupostos de legalidade.\n\nTRECHO OFICIAL\nnão impedia que se examinasse, nele, a ocorrencia dos quatro pressupostos de legalidade dessas transgressões (a hierarquia, o poder disciplinar, o ato ligado a função e a pena susceptivel de ser aplicada disciplinarmente), continua valido para o disposto no PAR. 2. do ARTIGO 142 da atual Constituição\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%2070648%22&base=acordaos\n",
+  "STF:RG:201": "REPERCUSSÃO GERAL 201\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 593849\n\nTESE/ENUNCIADO\nÉ devida a restituição da diferença do Imposto sobre Circulação de Mercadorias e Serviços (ICMS) pago a mais no regime de substituição tributária para a frente se a base de cálculo efetiva da operação for inferior à presumida.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:ADI:2777": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 2777\nTRIBUNAL: STF\nSTATUS: julgado\nPROCESSO: ADI 2777 (red. p/ acórdão Min. Ricardo Lewandowski)\n\nJULGAMENTO\nPleno, 19/10/2016; publ. 30/06/2017.\n\nRESUMO DA FONTE OFICIAL\nPleno, Rel. Min. Cezar Peluso, red. p/ acórdão Min. Ricardo Lewandowski, j. 19/10/2016, publ. 30/06/2017: \"Com base no § 7° do art. 150 da Constituição Federal, é constitucional exigir-se a restituição de quantia cobrada a maior\"; ADI improcedente.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%202777%22&base=acordaos\n",
+  "STF:RG:1093": "REPERCUSSÃO GERAL 1093\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 1287019\n\nTESE/ENUNCIADO\nA cobrança do diferencial de alíquota alusivo ao ICMS, conforme introduzido pela Emenda Constitucional nº 87/2015, pressupõe edição de lei complementar veiculando normas gerais.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n"
+ }
+}

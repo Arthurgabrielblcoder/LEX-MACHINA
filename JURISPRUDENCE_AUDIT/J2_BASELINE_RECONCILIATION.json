@@ -1,0 +1,43 @@
+{
+ "artifact": "J2_BASELINE_RECONCILIATION",
+ "source": "bytes do pacote J2B.1 = cartão J2C (sha256 conferido no manifesto físico)",
+ "PHYSICAL_BASELINE_RELATIONS": 261,
+ "PHYSICAL_BASELINE_TARGETS": 160,
+ "PHYSICAL_BASELINE_RECONCILED": "PASS",
+ "ref_payload": {
+  "jurisprudence_lines": 267,
+  "current_visible": 261,
+  "historical_hidden": 6,
+  "hidden_targets": [
+   "CF88:ART.114:INC.VIII",
+   "CF88:ART.40:PAR.4:INC.II",
+   "CF88:ART.40:PAR.4:INC.III",
+   "CF88:ART.40:PAR.7:INC.I"
+  ]
+ },
+ "legacy_index": {
+  "LEGACY_JURIS_RECORDS": 301,
+  "distinct_identifiers": 224,
+  "by_type": {
+   "adi": 5,
+   "repercussao_geral": 284,
+   "sumula_vinculante": 12
+  },
+  "lookup_rows": 183,
+  "lookup_quantity_sum": 301
+ },
+ "decomposition_of_301": {
+  "records_referenced_by_visible_relations": 257,
+  "records_referenced_only_by_hidden_historical_relations": 6,
+  "records_not_referenced_by_ref_payload": 38,
+  "visible_relations_sharing_a_record": 4,
+  "shared_records": [
+   "STF:RG:160:CF88:40:-:-:-",
+   "STF:RG:558:CF88:100:-:-:-",
+   "STF:RG:969:CF88:5:-:-:-",
+   "STF:RG:995:CF88:5:-:-:-"
+  ]
+ },
+ "WHAT_WAS_301": "301 = número de LINHAS (registros de precedente) do índice legado JURISPRUDENCIA.IDX do cartão J2C, e não de vínculos. Inclui registros usados por vínculos visíveis, registros usados só por vínculos históricos ocultos e registros legados que nenhum vínculo V1 referencia (o caminho V1 resolve só pela chave do REF_PAYLOAD). O baseline físico de VÍNCULOS é 261 (REF_PAYLOAD, JURISPRUDENCE, CURRENT_VISIBLE) em 160 targets. O erro foi de texto: o JURIS_TYPE_ARCHITECTURE.md chamou as 301 linhas de \"vínculos\"/\"linhas legadas instaladas\", e a resposta final da operação pós-noturna repetiu \"301 vínculos já instalados\".",
+ "CANDIDATE_BASELINE_RULE": "Todo builder J2F parte de PHYSICAL_BASELINE = 261/160 (REF_PAYLOAD do cartão J2C). 301 é só a contagem de registros do índice legado (LEGACY_JURIS_RECORDS_J2C) e nunca é baseline de vínculos."
+}

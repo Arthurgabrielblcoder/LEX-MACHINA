@@ -13,9 +13,9 @@ O app aprovado tem três limitações:
 2. **Classes processuais caem em `OUTRO n`.** É o caso de HC, MS, AP, AI, Inq, Rcl e MI, que não têm `case` no `rotuloTipoJurisprudencia`.
 3. **Súmula comum sai como `SUMULA STF n`, seja qual for o tribunal.**
 
-Instalado hoje (J2C), tudo STF:
+No cartão J2C, tudo é STF. O baseline físico de **vínculos** é **261 em 160 targets** (`REF_PAYLOAD`, JURISPRUDENCE, CURRENT_VISIBLE). A tabela abaixo conta outra coisa: os **registros de precedente** (linhas) do índice legado `JURISPRUDENCIA.IDX`, que são 301 (ver `J2_BASELINE_RECONCILIATION.json`):
 
-| Tipo | Vínculos |
+| Tipo | Registros no `JURISPRUDENCIA.IDX` (não são vínculos) |
 |---|---:|
 | `repercussao_geral` | 284 |
 | `sumula_vinculante` | 12 |
@@ -61,7 +61,7 @@ Instalado hoje (J2C), tudo STF:
 
 Os vínculos legados não mudam:
 
-- **IDs e linhas:** as 301 linhas legadas (`STF:RG:…`, `STF:SV:…`, `STF:ADI:…`, TRIBUNAL = STF) passam na nova checagem `tribunalJurisSuportado`.
+- **IDs e registros:** os 301 registros do índice legado, que não são vínculos (`STF:RG:…`, `STF:SV:…`, `STF:ADI:…`, TRIBUNAL = STF) passam na nova checagem `tribunalJurisSuportado`.
 - **Rótulos:** idênticos.
 - **Fichas e índices:** mesmos nomes de ficha; `JUR_LOOKUP.IDX` e o formato do IDX inalterados.
 - **Testes:** `test_legacy_ids_and_labels_unchanged`.

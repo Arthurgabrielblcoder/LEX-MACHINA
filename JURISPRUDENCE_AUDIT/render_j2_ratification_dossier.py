@@ -17,6 +17,9 @@ import build_j2_batch as G  # noqa: E402
 import build_j2d_batch02 as D2  # noqa: E402
 
 BATCHES = (3, 4, 6, 7, 8, 9)
+RAT = HERE / 'J2_RATIFICATION_RECORD_03_09.json'
+J2F = ROOT / 'LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2F.json'
+RATIFIED_ON = '2026-10-17'
 EMPTY = (5,)
 ORDER = ('PROMOTE_RECOMMENDED', 'PROMOTE_PROVISIONAL_RECOMMENDED', 'REALLOCATE_RECOMMENDED', 'REJECT_FALSE_POSITIVE_RECOMMENDED',
          'REJECT_TEMPORAL_MISMATCH_RECOMMENDED', 'REJECT_NOT_MATERIAL_RECOMMENDED', 'ALREADY_COVERED', 'DUPLICATE_RECOMMENDATION',
@@ -77,17 +80,26 @@ def render():
             rows.append((n, d['level'], p, x))
     installed = ['|'.join(r) for r in D2.current_baseline()]                   # CURRENT_VISIBLE only (fails closed unless 261/160)
     j2e = json.loads(G.J2E.read_text(encoding='utf-8'))['records']
+    rat = {i['recommendation_id']: i for i in json.loads(RAT.read_text(encoding='utf-8'))['items']}
+    j2f_doc = json.loads(J2F.read_text(encoding='utf-8'))
+    j2f = [r for r in j2f_doc['records'] if r['origin'] == 'J2F']
+    if sorted(rat) != sorted(x['recommendation_id'] for *_, x in rows):
+        raise SystemExit('RATIFICATION_RECORD_DOES_NOT_MATCH_BATCHES')
     items, pending, analyzed, covered, prev = G.reconstruct(10)          # counting only: Batch10 is NOT created
     prop_rel = sorted({r for *_, x in rows for r in relations(x)})
     unresolved = [x for *_, x in rows if x['decision'].startswith('UNRESOLVED')]
     recon = dict(
         PHYSICAL_RELATIONS=dict(state='PHYSICALLY_INSTALLED (J2C, CURRENT_VISIBLE)', relations=len(installed),
                                 targets=len({l.split('|')[0] for l in installed})),
-        RATIFIED_HOST_ONLY_RELATIONS=dict(state='EDITORIALLY_APPROVED_HOST_ONLY (Batch02 → J2E, não instalado)', relations=len(j2e),
-                                          variant_A=sum(1 for r in j2e if r.get('variant', 'A') == 'A'),
-                                          variant_B_requires_hc_firmware=sum(1 for r in j2e if r.get('variant') == 'B')),
+        RATIFIED_HOST_ONLY_RELATIONS=dict(state='EDITORIALLY_APPROVED_HOST_ONLY (Batch02 → J2E e Batches 03–09 → J2F; nada instalado)',
+                                          relations=len(j2e) + len(j2f), j2e_batch02=len(j2e), j2f_batches_03_09=len(j2f),
+                                          group_A_current_firmware=sum(1 for r in j2e if r.get('variant', 'A') == 'A') + sum(1 for r in j2f if r['group'] == 'A'),
+                                          group_B_requires_generic_firmware=sum(1 for r in j2e if r.get('variant') == 'B') + sum(1 for r in j2f if r['group'] == 'B'),
+                                          normalization=j2f_doc['normalization']),
+        RATIFIED_RECOMMENDATIONS=sum(1 for i in rat.values() if i['human_approved']),
         AWAITING_RATIFICATION_RECOMMENDATIONS=dict(state='UNAPPROVED_RESEARCH_PROPOSAL', batches=[f'BATCH{n:02d}' for n in BATCHES],
-                                                   recommendations=len(rows),
+                                                   recommendations=sum(1 for i in rat.values() if i['ratification_status'] == 'AWAITING_USER_RATIFICATION'),
+                                                   reviewed_recommendations=len(rows),
                                                    decisions_by_type=dict(sorted(collections.Counter(x['decision'] for *_, x in rows).items())),
                                                    promoting_decisions=sum(1 for *_, x in rows if x['decision'] in PROMOTING),
                                                    proposed_relations_upper_bound=len(prop_rel),
@@ -102,7 +114,8 @@ def render():
     L('# J2 — DOSSIÊ DE RATIFICAÇÃO (Batches 03, 04, 06, 07, 08, 09)')
     L('')
     L('```')
-    L('STATUS = AWAITING_USER_RATIFICATION · NADA ESTÁ RATIFICADO NESTE DOSSIÊ · human_approved = false em todas as linhas')
+    L(f'RATIFICADO PELO USUÁRIO em {RATIFIED_ON}: {recon["RATIFIED_RECOMMENDATIONS"]} decisões HUMAN_APPROVED · '
+      f'{recon["UNRESOLVED_RECOMMENDATIONS"]["count"]} UNRESOLVED_EXTERNAL (J0-BL-001) · registro: J2_RATIFICATION_RECORD_03_09.json')
     L(f'Gerado por render_j2_ratification_dossier.py a partir dos JSONs dos lotes · Batch05 = vazio (fechamento HIGH)')
     L('```')
     L('')
@@ -140,7 +153,7 @@ def render():
                     reason += (f' **Provisório{" (" + rv["applies_to"] + ")" if rv.get("applies_to") else ""}** — natureza: {x["status_processual"]}; '
                                f'última verificação: {rv["last_verified_on"]}; gatilho: {rv["trigger"]}; prazo: {rv["max_age_days"]} dias.')
                 L(f'| {i} | {x["recommendation_id"]} | {orig} | {"; ".join(label(q) for q in x["precedents"])} | '
-                  f'{", ".join(sorted({tipo(q) for q in x["precedents"]}))} | {cell(tgt)} | {dec} | AWAITING_USER_RATIFICATION | {cell(reason)} |')
+                  f'{", ".join(sorted({tipo(q) for q in x["precedents"]}))} | {cell(tgt)} | {dec} | {rat[x["recommendation_id"]]["ratification_status"]} | {cell(reason)} |')
             L('')
     L('## Reconciliação de estados (Parte C)')
     L('')
@@ -151,18 +164,20 @@ def render():
     r = recon
     L(f'| PHYSICAL_RELATIONS | {r["PHYSICAL_RELATIONS"]["state"]} | {r["PHYSICAL_RELATIONS"]["relations"]} relações / {r["PHYSICAL_RELATIONS"]["targets"]} targets |')
     h = r['RATIFIED_HOST_ONLY_RELATIONS']
-    L(f'| RATIFIED_HOST_ONLY_RELATIONS | {h["state"]} | {h["relations"]} relações (A: {h["variant_A"]}; B, exige firmware HC: '
-      f'{h["variant_B_requires_hc_firmware"]}) |')
+    L(f'| RATIFIED_HOST_ONLY_RELATIONS | {h["state"]} | {h["relations"]} relações normalizadas (Batch02: {h["j2e_batch02"]}; Batches 03–09: '
+      f'{h["j2f_batches_03_09"]}) · grupo A, firmware atual: {h["group_A_current_firmware"]} · grupo B, firmware genérico: '
+      f'{h["group_B_requires_generic_firmware"]} |')
     a = r['AWAITING_RATIFICATION_RECOMMENDATIONS']
-    L(f'| AWAITING_RATIFICATION_RECOMMENDATIONS | {a["state"]} | {a["recommendations"]} recomendações; {a["promoting_decisions"]} decisões que '
-      f'vinculam; até {a["proposed_relations_upper_bound"]} relações em {a["proposed_targets"]} targets, com {a["proposed_precedents"]} precedentes distintos |')
+    L(f'| RATIFIED_RECOMMENDATIONS | HUMAN_APPROVED | {r["RATIFIED_RECOMMENDATIONS"]} de {a["reviewed_recommendations"]} recomendações '
+      f'({a["promoting_decisions"]} decisões que vinculam) |')
+    L(f'| AWAITING_RATIFICATION_RECOMMENDATIONS | {a["state"]} | {a["recommendations"]} |')
     L(f'| UNRESOLVED_RECOMMENDATIONS | não resolvidas | {r["UNRESOLVED_RECOMMENDATIONS"]["count"]} ({", ".join(r["UNRESOLVED_RECOMMENDATIONS"]["ids"]) or "—"}) |')
     L(f'| IN_RESEARCH | em pesquisa | {r["IN_RESEARCH"]["count"]} ({r["IN_RESEARCH"]["note"]}) |')
     nr = r['NOT_RESEARCHED']
     L(f'| NOT_RESEARCHED | não pesquisadas | {nr["backlog_pending"]} pendentes ({", ".join(f"{k} {v}" for k, v in nr["by_level"].items())}) |')
     L('| UNRATIFIED_RELATIONS_PUBLISHED | — | **0** |')
     L('')
-    L('**Decisões propostas por tipo (Batches 03–09):**')
+    L('**Decisões por tipo (Batches 03–09; classificação preservada na ratificação):**')
     L('')
     L('| Decisão | Quantidade |')
     L('|---|---:|')
@@ -170,8 +185,9 @@ def render():
         if k in a['decisions_by_type']:
             L(f'| {k} | {a["decisions_by_type"][k]} |')
     L('')
-    L('O limite superior de relações conta todos os pares *target × precedente* das decisões que vinculam. Registros conjuntos, como ADI 3423/3392 '
-      'ou ADI 7047/7064, podem reduzir o número final na materialização.')
+    L(f'O limite superior bruto era de {a["proposed_relations_upper_bound"]} pares *target × precedente*. Após a normalização J2F (divisão por alvo, '
+      f'registro conjunto da ADI 3423 e deduplicação) ficam {h["j2f_batches_03_09"]} relações novas dos Batches 03–09 '
+      f'(`LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2F.json`).')
     md = '\n'.join(lines) + '\n'
     js = json.dumps(dict(schema_version=1, round='J2', kind='RECONCILIATION', **recon,
                          inputs={G.batch_file(n).relative_to(ROOT).as_posix(): None for n in BATCHES}), ensure_ascii=False, indent=1) + '\n'
@@ -190,7 +206,7 @@ def main():
         sys.exit(1 if bad else 0)
     for p, b in outs.items():
         p.write_bytes(b)
-    print(json.loads(js)['AWAITING_RATIFICATION_RECOMMENDATIONS'])
+    print(json.loads(js)['RATIFIED_HOST_ONLY_RELATIONS'])
 
 
 if __name__ == '__main__':
