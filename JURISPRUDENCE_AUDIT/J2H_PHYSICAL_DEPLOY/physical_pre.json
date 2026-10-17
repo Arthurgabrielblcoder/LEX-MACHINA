@@ -1,0 +1,171 @@
+{
+ "result": "PRE_OK",
+ "drive": "D:",
+ "PREDEPLOY_SD_BASELINE": "299/186",
+ "CANDIDATE_A_HASHES": "ALL_EXACT",
+ "CARD_FILESET_MATCHES_A": "YES",
+ "full_files": 1175,
+ "baseline_diff": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ },
+ "recount_from_card": [
+  299,
+  186
+ ],
+ "PROVISIONAL_GATE": "PASS",
+ "gates": {
+  "A_physical_validation": "21/21 PASS",
+  "firmware": {
+   "FIRMWARE_SOURCE_BASELINE_REPRODUCIBLE": "PASS",
+   "GENERIC_FIRMWARE_PROTOTYPE": "PASS",
+   "PROGRAM_DELTA": 1040,
+   "STATIC_RAM_DELTA": 0,
+   "generic_app_sha256": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+   "generic_app_bytes": 1102176
+  },
+  "provisional_gate": {
+   "as_of": "2026-10-17",
+   "registry": "J2_PROVISIONAL_REGISTRY.json",
+   "items": [
+    {
+     "source_id": "STF:ADI:7697",
+     "targets": [
+      "CF88:ART.166:PAR.9",
+      "CF88:ART.166:PAR.11",
+      "CF88:ART.166-A"
+     ],
+     "last_verified_on": "2026-10-16",
+     "age_days": 1,
+     "max_age_days": 90,
+     "trigger": "JULGAMENTO_DE_MERITO",
+     "result": "PASS"
+    },
+    {
+     "source_id": "STF:ADI:5017",
+     "targets": [
+      "ADCT:ART.27:PAR.11"
+     ],
+     "last_verified_on": "2026-10-17",
+     "age_days": 0,
+     "max_age_days": 90,
+     "trigger": "REFERENDO_OU_JULGAMENTO_DE_MERITO",
+     "result": "PASS"
+    },
+    {
+     "source_id": "STF:ADPF:378",
+     "targets": [
+      "CF88:ART.86",
+      "CF88:ART.86:PAR.1:INC.II",
+      "CF88:ART.52:INC.I"
+     ],
+     "last_verified_on": "2026-10-17",
+     "age_days": 0,
+     "max_age_days": 180,
+     "trigger": "JULGAMENTO_DE_MERITO_OU_EXTINCAO",
+     "result": "PASS"
+    },
+    {
+     "source_id": "STF:RCL:84738",
+     "targets": [
+      "CF88:ART.96:INC.III"
+     ],
+     "last_verified_on": "2026-10-17",
+     "age_days": 0,
+     "max_age_days": 90,
+     "trigger": "JULGAMENTO_DO_TEMA_1147_OU_PLENARIO",
+     "result": "PASS"
+    }
+   ]
+  }
+ },
+ "replace": [
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX",
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+  "99_LEX_V1/00_SYS/LEXV1.VER"
+ ],
+ "create": [
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_378.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_672.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_964.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AI_343461.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AP_694.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_232627.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_70648.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_4781.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_672.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21564.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21689.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_27931.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RCL_84738.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SUMULA_702.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/TSE_SUMULA_9.TXT"
+ ],
+ "legacy": {
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX": {
+   "A_INDEX_PREFIX_IDENTICAL": "YES",
+   "OLD_OFFSETS_PRESERVED": "YES",
+   "old_bytes": 61873,
+   "appended_bytes": 2822,
+   "old_lines": 340,
+   "appended_lines": 16
+  },
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX": {
+   "A_INDEX_PREFIX_IDENTICAL": "YES",
+   "OLD_OFFSETS_PRESERVED": "YES",
+   "old_bytes": 4663,
+   "appended_bytes": 333,
+   "old_lines": 222,
+   "appended_lines": 16
+  }
+ },
+ "candidate": {
+  "package": "J2H_CANDIDATE_B_OVER_A",
+  "build_id": "def71b31a64c2a54",
+  "git_commit": "64564d6d667440208a7f71dbf1150c262524e017"
+ },
+ "ROLLBACK_TO_A_READY": "YES",
+ "ROLLBACK_DELETE_FILES": 15,
+ "backup": {
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_JURISPRUDENCIA_V2\\05_INDICES_ESP32\\JURISPRUDENCIA.IDX",
+   "bytes": 61873,
+   "sha256": "c4c12a764cf76a810152823aa3a90bc51b1fd635b30b037a94c4facb472c3b25"
+  },
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_JURISPRUDENCIA_V2\\05_INDICES_ESP32\\JUR_LOOKUP.IDX",
+   "bytes": 4663,
+   "sha256": "3d2b5f3ebf81dfcf7e8d890908bd2358f460e4f1165540a5b7cdc9873adb2493"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_LEX_V1\\20_REFERENCES\\REF_PAYLOAD.IDX",
+   "bytes": 68817,
+   "sha256": "716f79a1f48410e00b5e309ee6d4b562ed249cb7a9323b602589fe7a3b182457"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_LEX_V1\\20_REFERENCES\\REF_LOOKUP.IDX",
+   "bytes": 7144,
+   "sha256": "ba00a4e9c01d31fbcb592ddcc49cc6c8832501b17d04465939ef1c009f2bf0d1"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_LEX_V1\\10_TARGETS\\CF88_TARGETS.IDX",
+   "bytes": 165466,
+   "sha256": "8b422e1d4eb18a0b8056609c0deeb397e934ef404c84ef5fd81865c438c93977"
+  },
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_LEX_V1\\00_SYS\\LEX_DEVICE_MANIFEST.json",
+   "bytes": 7624,
+   "sha256": "441a6b751896c54c1910b5223e61ad733479b75c26e9e789aeb07e50e7908359"
+  },
+  "99_LEX_V1/00_SYS/LEXV1.VER": {
+   "backup_path": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2h_physical_deploy\\sd_pre\\99_LEX_V1\\00_SYS\\LEXV1.VER",
+   "bytes": 598,
+   "sha256": "16449faf75c592e89b3556d583020482a6e75679a6dd086a634c337a6c1ad79c"
+  }
+ }
+}

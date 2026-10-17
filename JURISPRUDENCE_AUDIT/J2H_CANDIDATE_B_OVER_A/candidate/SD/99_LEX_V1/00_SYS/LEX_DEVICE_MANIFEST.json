@@ -1,0 +1,203 @@
+{
+ "schema_version": 3,
+ "package_type": "SD_OVERLAY_CANDIDATE",
+ "build_id": "def71b31a64c2a54",
+ "build_date": "2026-10-17T19:18:14Z",
+ "build_date_source": "SOURCE_DATE_EPOCH or HEAD commit time",
+ "git_commit": "64564d6d667440208a7f71dbf1150c262524e017",
+ "git_tags_at_commit": [],
+ "legal_corpus_version": {
+  "runtime_text": "/99_LEX_V1/05_TEXT/CF88_RUNTIME.txt",
+  "runtime_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+  "runtime_bytes": 587133,
+  "runtime_lines": 4537,
+  "normalization_version": "HEADER_NORMALIZATION_RULE_V1",
+  "adct_offset": 429242,
+  "sources": {
+   "CF88": {
+    "norma_id_senado": "579494",
+    "publicacao_url": "https://legis.senado.leg.br/norma/579494/publicacao/16434817",
+    "raw_sha256": "5beff7a47d7723594a6c48b5a72a99bbe13b300c91f4befce2284ae7f3b86808",
+    "normalizado_sha256": "d2f681e014c68ab3cbd4758eaacc4cbf0bb22d20d4737945e25f4409abd07be2",
+    "adquirido_em_utc": "2026-09-29T16:37:48Z",
+    "tipo_compilacao": "COMPILACAO_MONOVIGENTE"
+   },
+   "ADCT": {
+    "norma_id_senado": "604119",
+    "publicacao_url": "https://legis.senado.leg.br/norma/604119/publicacao/16434816",
+    "raw_sha256": "2e7bf19d595106fdd83f6ddc13ed9dd2a8f3561c4d2e2b34bc036d50d70b03ee",
+    "normalizado_sha256": "887617267a648cccd36128323db07c2659194326c1e85020f1ddfd636067006a",
+    "adquirido_em_utc": "2026-09-29T16:37:50Z",
+    "tipo_compilacao": "COMPILACAO_MONOVIGENTE"
+   }
+  }
+ },
+ "target_id_version": {
+  "grammar": "LEGAL_TARGET_ID/target_id.py",
+  "parser": "LEGAL_TARGET_ID/structure_parser.py (article_case_sensitive=True)",
+  "target_index_sha256": "09ad649e9b0ab798af1f5991ebfaab443c050d97a4124c9c615333d6fb2d15c5",
+  "targets": 3812,
+  "legacy_index_sha256": "96ab692a6f3b16f686974556683a1e2b2db69115efc2a6c0030e65f7ed14b5c0",
+  "legacy_vs_runtime": {
+   "ADDED:EXPECTED_RUNTIME_CHANGE": 2,
+   "REMOVED:EXPECTED_REMOVAL_HISTORICAL": 143,
+   "REMOVED:EXPECTED_RUNTIME_CHANGE": 3
+  }
+ },
+ "reference_engine_version": {
+  "tag": "cf-reference-engine-run11-juris-j2f-b",
+  "run": "run11",
+  "status": "RUN11_JURIS_J2F_B_CANDIDATE_HOST_ONLY",
+  "derived_from": "run9 (J2B.1 installed, J2C 12/12, 261/160) + Batch02 (J2E) + Batches 03-09 ratified (J2F)",
+  "blobs": {
+   "REF_LOOKUP.IDX": "3398ab99ebabb441886068f234d89c3ccbfe3afb",
+   "REF_PAYLOAD.IDX": "c48eb7c769b4b7b7653124c9b28d3fea5eb4f7bc"
+  }
+ },
+ "entenda_version": {
+  "contract": "entenda-contract/1",
+  "tags": [
+   "entenda-cf-batch01-approved-2026-09-28",
+   "entenda-cf-batch02-approved-2026-09-28",
+   "entenda-cf-batch03-approved-2026-09-29",
+   "entenda-batch05-t1-frozen-2026-10-04",
+   "reconcile-macro07-macro08 fa9719a6bd335275252473a5f154e4e11f5532f4 (Batch04-06, Macro07 249/249, Macro08 179/179)"
+  ],
+  "review_status": "HUMAN_APPROVED_T1",
+  "lookup_rows": 1069
+ },
+ "entenda_explanation_count": 810,
+ "entenda_scope": "CF88_ADCT_FULL_HUMAN_APPROVED_T1",
+ "entenda_pilots_included": [
+  "CF88:ART.37",
+  "CF88:ART.37:PAR.6",
+  "CF88:ART.37:PAR.10",
+  "CF88:ART.60",
+  "CF88:ART.60:PAR.4",
+  "CF88:ART.60:PAR.4:INC.IV",
+  "CF88:ART.150",
+  "CF88:ART.225",
+  "ADCT:ART.10:INC.II"
+ ],
+ "runtime_cf": {
+  "status": "CF88_RUNTIME_RESOLVED",
+  "text_map_runtime_status": "RUNTIME"
+ },
+ "layer_validation": {
+  "entenda_lookup_rows": 1069,
+  "entenda_direct": 810,
+  "entenda_resolved": 1069,
+  "reference_targets": 274,
+  "reference_rows": 471,
+  "reference_targets_resolved": 271,
+  "reference_targets_absent_historical_hidden": [
+   "CF88:ART.40:PAR.4:INC.II",
+   "CF88:ART.40:PAR.4:INC.III",
+   "CF88:ART.40:PAR.7:INC.I"
+  ],
+  "historical_reference_targets_filtered": [
+   {
+    "target_id": "CF88:ART.40:PAR.4:INC.II",
+    "status": "HISTORICAL_REFERENCE_TARGET_FILTERED",
+    "rows": 3,
+    "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT"
+   },
+   {
+    "target_id": "CF88:ART.40:PAR.4:INC.III",
+    "status": "HISTORICAL_REFERENCE_TARGET_FILTERED",
+    "rows": 2,
+    "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT"
+   },
+   {
+    "target_id": "CF88:ART.40:PAR.7:INC.I",
+    "status": "HISTORICAL_REFERENCE_TARGET_FILTERED",
+    "rows": 1,
+    "visibility": "HISTORICAL_HIDDEN_BY_DEFAULT"
+   }
+  ]
+ },
+ "sd_root": "/99_LEX_V1",
+ "files": {
+  "99_LEX_V1/00_SYS/LEXV1.VER": {
+   "bytes": 598,
+   "sha256": "ed258cd30f2f6b40bd0b674c251b83d6b1ad61ceb3441bdafd325b31edccf041"
+  },
+  "99_LEX_V1/05_TEXT/CF88_RUNTIME.txt": {
+   "bytes": 587133,
+   "sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a"
+  },
+  "99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX": {
+   "bytes": 25036,
+   "sha256": "674c9971925c29aaca9685fb2d0b9515fe87e4072d644858ea27495c327d3a68"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX": {
+   "bytes": 5216,
+   "sha256": "56e437a0c9cebb113c47f6a7b100ee64363c63207a647eca0456e86d6db27fae"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+   "bytes": 165466,
+   "sha256": "fe233de1af79d64552f4f1ee40d37f5498e06e26f015fdaa6bcee0f0644458a4"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX": {
+   "bytes": 123578,
+   "sha256": "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+   "bytes": 7434,
+   "sha256": "2ea28d50dec6b2abea65dfe9fe16e47654557725b8a6ffd6a58ea5bcbff8c394"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+   "bytes": 71064,
+   "sha256": "b16f1f81c484e64a349a264f312d133be67b1a12d7716fa312ff02a5e9d757e1"
+  },
+  "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": {
+   "bytes": 110312,
+   "sha256": "017050dc98b76cdbea9997c6d3ad49f34673393c6768fcb43fa0eb9767120c99"
+  },
+  "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": {
+   "bytes": 1560621,
+   "sha256": "dbea72601046e6d9fba2f6a6442a490f905a03911186f9aeb44db7e6184e0fd3"
+  }
+ },
+ "targets": {
+  "rows": 3810,
+  "legal_status_counts": {
+   "CURRENT": 3707,
+   "REVOKED": 103
+  },
+  "source_index_sha256": "09ad649e9b0ab798af1f5991ebfaab443c050d97a4124c9c615333d6fb2d15c5"
+ },
+ "text_map": {
+  "rows": 3387,
+  "line_checks": 3387,
+  "bound_to_source_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+  "adct_offset": 429242
+ },
+ "compatibility_notes": [
+  "Overlay novo em /99_LEX_V1: nao altera nem substitui 99_RELATIONS_V2, 99_JURISPRUDENCIA_V2 ou os TXT da Lei Seca do cartao legado.",
+  "O firmware v7.12.0 ignora /99_LEX_V1 (nenhum caminho do sketch aponta para ele): copiar o overlay nao muda o comportamento atual.",
+  "Todos os indices: UTF-8, LF, linhas pipe-separadas, cabecalho #LEXMACHINA|<TIPO>|<versao>, ordenacao bytewise pelo campo-chave.",
+  "CF88_TEXT_MAP.IDX so pode ser usado se RUNTIME_STATUS=RUNTIME e tamanho E sha256 do texto exibido coincidirem com o cabecalho; senao a resolucao de target falha fechada.",
+  "O texto exibido pelo runtime V1 e /99_LEX_V1/05_TEXT/CF88_RUNTIME.txt, exatamente os bytes indexados.",
+  "ENTENDA: acervo completo CF88 + ADCT aprovado por revisao humana (HUMAN_APPROVED_T1) na reconciliacao final Macro07 x Macro08; ausencia de linha no lookup = sem ENTENDA aprovado."
+ ],
+ "profile": "FULL_CF_ENTENDA_810",
+ "article_search_indexes": [
+  {
+   "file": "/99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX",
+   "sha256": "56e437a0c9cebb113c47f6a7b100ee64363c63207a647eca0456e86d6db27fae",
+   "bytes": 5216,
+   "records": 424,
+   "text_bytes": 587133,
+   "text_sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a"
+  },
+  {
+   "file": "/99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX",
+   "sha256": "674c9971925c29aaca9685fb2d0b9515fe87e4072d644858ea27495c327d3a68",
+   "bytes": 25036,
+   "records": 2077,
+   "text_bytes": 660268,
+   "text_sha256": "ad5ba178613b6181e2d8a61919eda0c6223c68feb6e47bef4ea65bc45c13e6ae"
+  }
+ ]
+}
