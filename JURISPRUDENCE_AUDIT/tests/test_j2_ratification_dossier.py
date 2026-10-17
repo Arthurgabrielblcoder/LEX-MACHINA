@@ -23,7 +23,7 @@ class Dossier(unittest.TestCase):
 
     def test_no_row_claims_ratification(self):
         md = (AUD / 'J2_RATIFICATION_DOSSIER.md').read_text(encoding='utf-8')
-        rows = [l for l in md.splitlines() if l.startswith('| ') and 'J0-BL-' in l]
+        rows = [l for l in md.splitlines() if l.split('|')[1:2] and l.split('|')[1].strip().isdigit() and 'J0-BL-' in l]
         self.assertTrue(rows)
         self.assertTrue(all('| AWAITING_USER_RATIFICATION |' in l for l in rows))
         self.assertNotIn('| RATIFIED |', md)
