@@ -30,7 +30,10 @@ def make_decisions(doc, REVIEW, SOURCES):
             if not all(k in p for k in ('id', 'court', 'klass', 'number', 'judgment', 'publication')):
                 raise SystemExit(f'INCOMPLETE_PRECEDENT {rid}')
         if r['decision'] in PROMOTING:
-            if not r['recommended_targets'] or r['namespace'] not in ('CF88', 'ADCT') or r['temporal_version'] != 'CURRENT':
+            article_only = all(len(t.split(':')) == 2 for t in r['recommended_targets'])
+            historical_ok = r['temporal_version'] in ('HISTORICAL', 'MIXED') and article_only and len(r['temporal_note']) > 20
+            # J1.4/J2B.1 policy: a precedent on a historical wording may only be linked at article level, with an explicit temporal note
+            if not r['recommended_targets'] or r['namespace'] not in ('CF88', 'ADCT') or not (r['temporal_version'] == 'CURRENT' or historical_ok):
                 raise SystemExit(f'PROMOTION_WITHOUT_TARGET_NAMESPACE_OR_CURRENT_TEXT {rid}')
             if any(not t.startswith('ADCT:' if r['namespace'] == 'ADCT' else 'CF88:') for t in r['recommended_targets']):
                 raise SystemExit(f'TARGET_NAMESPACE_MISMATCH {rid}')
