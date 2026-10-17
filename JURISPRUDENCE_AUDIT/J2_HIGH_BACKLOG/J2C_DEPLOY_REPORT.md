@@ -153,3 +153,24 @@ O firmware não precisa de rollback.
 ```
 READY_FOR_J2C_PHYSICAL_TEST = YES · JURISPRUDENCE_FROZEN = NO (restam 32 HIGH)
 ```
+
+## Resultado físico (relatado por Arthur)
+
+```
+J2C_PHYSICAL_TEST = 12/12 PASS · J2C_PHYSICAL_VALIDATION = 12/12 PASS
+BASELINE INSTALADO = 261 vínculos J / 160 targets (candidato J2B.1, BUILD_ID 12b9fb5624112d9e)
+JURISPRUDENCE_FROZEN = NO (backlog HIGH pendente)
+```
+
+Confirmado no aparelho:
+
+- ADI 7047/7064 no art. 100, § 9º;
+- ADI 4425 no § 12;
+- ADI 7697 nos três targets (§§ 9º e 11 do art. 166 e art. 166-A), com o marcador `(CAUTELAR)` e o aviso provisório;
+- as fichas abrem;
+- Tema 558 corrigido (fora do § 9º, presente no art. 100);
+- Temas 367/387 preservados;
+- jurisprudência antiga preservada;
+- Correlatas, Referências nº 4 e ENTENDA sem regressão.
+
+As decisões do Batch01 e a correção do Tema 558 não devem ser reabertas.
