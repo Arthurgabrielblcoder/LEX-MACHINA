@@ -1,0 +1,85 @@
+{
+ "phase": "F",
+ "status": "HOST_ONLY_PROTOTYPE",
+ "flashed": false,
+ "firmware_dir_modified": false,
+ "physical_approval": false,
+ "toolchain": {
+  "arduino_cli": "arduino-cli.exe",
+  "core": "esp32:esp32 3.3.11",
+  "fqbn": "esp32:esp32:esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default",
+  "build_property": "compiler.cpp.extra_flags=-DLEX_DEVICE_V1_ENABLED=1"
+ },
+ "base": {
+  "source": "firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE (Parte D, header 124)",
+  "build": {
+   "program_bytes": 1100991,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1101136,
+   "app_sha256": "525e4c5779ab21a5b55f1f7594160e446fa9cdd320ad0c9142d595465f67f1e8",
+   "app_partition_bytes": 1310720,
+   "app_partition_free": 209584
+  },
+  "vs_approved_differing_bytes": 71,
+  "vs_approved_metadata_only": true
+ },
+ "patch": {
+  "file": "JURISPRUDENCE_AUDIT/JURIS_TYPE_PROTOTYPE/juris_types.patch",
+  "edits": 9,
+  "other_files_identical": true,
+  "ino_sha256_base": "7afc5106293e8cbe6c5fb5cfaa91c33dcc4903ab0af29c44de76dc8871a13cb0",
+  "ino_sha256_types": "97f2add5b2ed367f3e6805d2a1bb7b9d5c9e961ab2c11907ec73c9df6c6c76e4",
+  "firmware_tables_equal_host": true
+ },
+ "types_build": {
+  "program_bytes": 1102031,
+  "static_ram_bytes": 126148,
+  "app_bin_bytes": 1102176,
+  "app_sha256": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+  "app_partition_bytes": 1310720,
+  "app_partition_free": 208544
+ },
+ "comparison": [
+  {
+   "build": "aprovado (R2, gravado)",
+   "program_bytes": 1100991,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1101136
+  },
+  {
+   "build": "base firmware/ (Parte D)",
+   "program_bytes": 1100991,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1101136
+  },
+  {
+   "build": "protótipo HC (overnight)",
+   "program_bytes": 1101127,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1101280
+  },
+  {
+   "build": "protótipo tipos genéricos",
+   "program_bytes": 1102031,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1102176
+  }
+ ],
+ "delta_vs_base": {
+  "program_bytes": 1040,
+  "static_ram_bytes": 0,
+  "app_bin_bytes": 1040
+ },
+ "runtime_memory": {
+  "psram": "inalterado pelo código: o cache PSRAM do JURISPRUDENCIA.IDX cresce só com as linhas de dados (~150-200 B por vínculo)",
+  "buffers": "MAX_RELACOES_ARTIGO=32 e RelacaoJuridica inalterados; nenhuma alocação nova",
+  "tables_in_flash": "15 pares de const char* + 5 tribunais (rodata)"
+ },
+ "not_verified": [
+  "teste físico (boot, lista, ficha, BACK)",
+  "renderização de \"Súmula\" na tela",
+  "tempo de boot",
+  "PSRAM em execução"
+ ],
+ "binaries": "DEVICE_INTEGRATION/backups/juris_type_prototype/{build_base,build_types} (fora do Git)"
+}

@@ -1,0 +1,810 @@
+{
+ "profile": "FULL_CF_ENTENDA_810",
+ "package": "J2_GENERIC_FW_CANDIDATE",
+ "variant": "B",
+ "status": "HOST_ONLY_CANDIDATE",
+ "physical_approved": false,
+ "card_touched": false,
+ "device_flashed": false,
+ "firmware": "REQUIRES the generic tribunal/classe firmware (JURIS_TYPE_PROTOTYPE/juris_types.patch; compiled host-only; NOT flashed; NOT physically approved)",
+ "firmware_files": {
+  "patch": "firmware/juris_types.patch",
+  "build": "firmware/JURIS_TYPE_PROTOTYPE_BUILD.json",
+  "flashed": false,
+  "physical_approved": false,
+  "binary": "DEVICE_INTEGRATION/backups/juris_type_prototype/build_types (fora do Git; não gravado)"
+ },
+ "staging": "DEVICE_INTEGRATION/staging_sd_v1_juris_j2f_b_candidate",
+ "build_id": "def71b31a64c2a54",
+ "git_commit": "64564d6d667440208a7f71dbf1150c262524e017",
+ "physical_baseline": "J2C 261/160 (J2C_PHYSICAL_DEPLOY/sd_manifest_post_full.json; J2_BASELINE_RECONCILIATION.json)",
+ "physical_baseline_reproduced": true,
+ "physical_files_reproduced": 19,
+ "deterministic_runs": 2,
+ "byte_identical_rebuild": true,
+ "legacy_append_only": true,
+ "lookup_tuples_shared": [
+  "CF88|103|3||",
+  "CF88|31|2||",
+  "CF88|35||IV|",
+  "CF88|114|2||",
+  "CF88|63||I|",
+  "CF88|100|||",
+  "CF88|5||XXXVIII|",
+  "CF88|5||LXVII|",
+  "CF88|7||XXVI|",
+  "CF88|14|5||",
+  "CF88|15||III|",
+  "CF88|114||I|",
+  "CF88|84||XII|",
+  "CF88|150|7||",
+  "CF88|22||I|",
+  "CF88|53|||"
+ ],
+ "targets_r_only_divergence_vs_generator": [
+  "ADCT:ART.101:PAR.5",
+  "ADCT:ART.107-A",
+  "ADCT:ART.27:PAR.11",
+  "CF88:ART.1",
+  "CF88:ART.100:PAR.1",
+  "CF88:ART.100:PAR.11",
+  "CF88:ART.100:PAR.12",
+  "CF88:ART.103:PAR.3",
+  "CF88:ART.114:INC.I",
+  "CF88:ART.114:INC.IV",
+  "CF88:ART.114:INC.IX",
+  "CF88:ART.114:PAR.3",
+  "CF88:ART.129",
+  "CF88:ART.130",
+  "CF88:ART.142",
+  "CF88:ART.142:PAR.2",
+  "CF88:ART.146",
+  "CF88:ART.14:PAR.2",
+  "CF88:ART.155:PAR.2:INC.VII",
+  "CF88:ART.158:PAR.1:INC.I",
+  "CF88:ART.158:PAR.1:INC.II",
+  "CF88:ART.166-A",
+  "CF88:ART.166:PAR.11",
+  "CF88:ART.166:PAR.9",
+  "CF88:ART.19",
+  "CF88:ART.195:INC.I:AL.b",
+  "CF88:ART.195:PAR.1",
+  "CF88:ART.195:PAR.2",
+  "CF88:ART.196",
+  "CF88:ART.198",
+  "CF88:ART.201:INC.II",
+  "CF88:ART.202:PAR.1",
+  "CF88:ART.206:INC.I",
+  "CF88:ART.20:PAR.1",
+  "CF88:ART.214:CAPUT",
+  "CF88:ART.214:INC.I",
+  "CF88:ART.214:INC.II",
+  "CF88:ART.214:INC.III",
+  "CF88:ART.214:INC.IV",
+  "CF88:ART.214:INC.V",
+  "CF88:ART.214:INC.VI",
+  "CF88:ART.21:INC.XVI",
+  "CF88:ART.239:PAR.3",
+  "CF88:ART.239:PAR.4",
+  "CF88:ART.23:INC.II",
+  "CF88:ART.29:INC.X",
+  "CF88:ART.3",
+  "CF88:ART.31:PAR.2",
+  "CF88:ART.35",
+  "CF88:ART.35:INC.IV",
+  "CF88:ART.37:PAR.3:INC.II",
+  "CF88:ART.37:PAR.3:INC.III",
+  "CF88:ART.41:PAR.1",
+  "CF88:ART.43:PAR.1",
+  "CF88:ART.43:PAR.1:INC.I",
+  "CF88:ART.43:PAR.1:INC.II",
+  "CF88:ART.47",
+  "CF88:ART.48:INC.III",
+  "CF88:ART.52:PAR.UNICO",
+  "CF88:ART.53:CAPUT",
+  "CF88:ART.53:PAR.1",
+  "CF88:ART.55:INC.VI",
+  "CF88:ART.5:INC.XVI",
+  "CF88:ART.62:PAR.6",
+  "CF88:ART.63",
+  "CF88:ART.7",
+  "CF88:ART.7:INC.XXVI",
+  "CF88:ART.85:PAR.UNICO",
+  "CF88:ART.86",
+  "CF88:ART.86:PAR.1:INC.II",
+  "CF88:ART.86:PAR.3",
+  "CF88:ART.86:PAR.4",
+  "CF88:ART.96",
+  "CF88:ART.96:INC.III",
+  "CF88:ART.98:CAPUT",
+  "CF88:ART.98:PAR.2"
+ ],
+ "device_manifest_matches_package": true,
+ "temas_367_387_fichas_untouched": true,
+ "changed_vs_physical": [
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX",
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX",
+  "99_LEX_V1/00_SYS/LEXV1.VER",
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+ ],
+ "added_vs_physical": [
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1254.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1616.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2404.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2681.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2777.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3114.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_336.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3395.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3423-3392-3432-3520.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3684.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_5017.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_6457.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7064.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7369.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_789.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_978.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_378.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_672.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_964.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AI_343461.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AP_694.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_232627.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_70648.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_4781.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_672.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21564.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21689.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_27931.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RCL_84738.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1046.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1068.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1093.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1229.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_157.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_184.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_201.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_793.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_835.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_855.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_935.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_950.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SUMULA_702.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_46.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_5.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/TSE_SUMULA_9.TXT"
+ ],
+ "file_diff": [
+  {
+   "path": "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX",
+   "before_sha256": "05e9c2afec5991d25a84ccc99ba4077b4a9730e9009a70983b00dd304d1bc09d",
+   "before_bytes": 55106,
+   "after_sha256": "f1dc758108c96324ca587a5ac43d706211311049496922b0ed87bf813dbd8867",
+   "after_bytes": 64695
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX",
+   "before_sha256": "603d9963181727d22aa8a99af50f197cfc71702e136309ace536979bc936c1f3",
+   "before_bytes": 3863,
+   "after_sha256": "afa689cf4d52a37f783610d852d6a252b0871cd81b6106e3221c8a3c947793e6",
+   "after_bytes": 4996
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEXV1.VER",
+   "before_sha256": "01ff09b4af77e4bbf91d5cf2f328b7cc89c0a4e2eab09e0b922242b51fd357f1",
+   "before_bytes": 597,
+   "after_sha256": "ed258cd30f2f6b40bd0b674c251b83d6b1ad61ceb3441bdafd325b31edccf041",
+   "after_bytes": 598
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "before_sha256": "dce393db84f7fe8a392e9bf13da67272c2e90414805c83b2cf87cd985e3f1672",
+   "before_bytes": 7712,
+   "after_sha256": "d8bb3278bd282d96ffa84a22d90a7e01e7ab976e445c7f3211197b4f6ad0643a",
+   "after_bytes": 7624
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "before_sha256": "103abadec9c4af3c131de744d49efd1f11c291b16f39f676bdca8b204056d570",
+   "before_bytes": 165466,
+   "after_sha256": "fe233de1af79d64552f4f1ee40d37f5498e06e26f015fdaa6bcee0f0644458a4",
+   "after_bytes": 165466
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "before_sha256": "aa84fbbf8929495a599a70532860ac4e2f90739ecb07e03ece5d3e8145aef03b",
+   "before_bytes": 6557,
+   "after_sha256": "2ea28d50dec6b2abea65dfe9fe16e47654557725b8a6ffd6a58ea5bcbff8c394",
+   "after_bytes": 7434
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "before_sha256": "62b06deb45b3c1ec9e2ead4fe577241b78658fc62d67f91516b61841e83456e9",
+   "before_bytes": 63095,
+   "after_sha256": "b16f1f81c484e64a349a264f312d133be67b1a12d7716fa312ff02a5e9d757e1",
+   "after_bytes": 71064
+  }
+ ],
+ "file_additions": [
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1254.TXT",
+   "after_sha256": "77c81b555987371a3b2a2323586f3040daf883bf9a58b3c21faece3287a4c50a",
+   "after_bytes": 453,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1616.TXT",
+   "after_sha256": "be3702ba3b787e717b7dd89612c89b433bf65e57cfce77dc90a0fd5cae2a867e",
+   "after_bytes": 538,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2404.TXT",
+   "after_sha256": "d83e6a28c4e4f177eec24dce15f3db1d5b32e3fd67f77c431ad6d496228efb31",
+   "after_bytes": 833,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2681.TXT",
+   "after_sha256": "a66b3b7329e8aea991cd691f8f9fd84146dbd30d4ad248e75c6f9d9a52c0192d",
+   "after_bytes": 827,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2777.TXT",
+   "after_sha256": "696285860cdede3746e2937cef176a23fb3737853d8af07ddd2cec17a83d7eee",
+   "after_bytes": 585,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3114.TXT",
+   "after_sha256": "0570701cb199267b1d294e468dd485a76505223c6abb04c73fc0dd9a257141b1",
+   "after_bytes": 797,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_336.TXT",
+   "after_sha256": "2cbcfc1664527e345fcac389af33cac24db3c06f321f35c1a50fe81a003af340",
+   "after_bytes": 549,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3395.TXT",
+   "after_sha256": "d3f4d35b41787a5c53f0921c55ae1167f9692974e30d28a2fa7567b2db2c2bfd",
+   "after_bytes": 509,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3423-3392-3432-3520.TXT",
+   "after_sha256": "529697f1a298abc8b1ae838ac4114cebdb62b3b0bbb2bc64e93311f7ead3f470",
+   "after_bytes": 1240,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3684.TXT",
+   "after_sha256": "cb6052ee2c0955fed8c5ed786dfc85414b88ff89d7cc2f2f3ac5908ca3ab5ae8",
+   "after_bytes": 467,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_5017.TXT",
+   "after_sha256": "d79aae45b6755bd1e1fa863aeb49a79e31cb25f2f95c17d5e4a48e064a161897",
+   "after_bytes": 1033,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_6457.TXT",
+   "after_sha256": "f664f4769d86bd3478f233860ea83360b9243bd961be0ce4f6ee4f1b2da518c6",
+   "after_bytes": 681,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7064.TXT",
+   "after_sha256": "2ea5247aa0f5ac349023de54e3bfdd07a669105b7ba9764f9f1a8bff3892d343",
+   "after_bytes": 1079,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7369.TXT",
+   "after_sha256": "933e028dd9ac73bb25740c6205a220e318ff87146dcfca23c78df97710c235b8",
+   "after_bytes": 544,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_789.TXT",
+   "after_sha256": "7ff33d2d192dd544ab25ed41cb1b0bc79bcabc22bc892c98a2c8f0b2bcea6bd8",
+   "after_bytes": 772,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_978.TXT",
+   "after_sha256": "313c40abf73178d4e24630af9a73e7b77f529ced8b2ef9b6a110f5cab4e7066d",
+   "after_bytes": 514,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_378.TXT",
+   "after_sha256": "e4983a47398b469f9343da7a9e2ba533395e4f80318bca60691db33e55d24f51",
+   "after_bytes": 836,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_672.TXT",
+   "after_sha256": "d5f686f19978fd86c0a335ebed71a4b709d14b6972419af615d4fae89d6d0679",
+   "after_bytes": 940,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_964.TXT",
+   "after_sha256": "3e424bc5e0d09fbd2899f5c47153d06810ee25af275eb9fe5b1fc422c52bc301",
+   "after_bytes": 941,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AI_343461.TXT",
+   "after_sha256": "4543027cafa8d7b2c9d7ffd6984310336d3d05b4d31a6e5204de1feac678bc0f",
+   "after_bytes": 510,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AP_694.TXT",
+   "after_sha256": "f99b0fac51419f7e54df2834443d219f90703efdf3251b8e0fd2dc1d46f5c764",
+   "after_bytes": 913,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_232627.TXT",
+   "after_sha256": "b2d0ff8a19556c4532055653221b62e3328b0462db06b62555263c6aa21cc1a6",
+   "after_bytes": 786,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_70648.TXT",
+   "after_sha256": "6c22e0b51e15b719be17086ca7887a8d037b5531799e3555743c9d4dfac04c28",
+   "after_bytes": 845,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_4781.TXT",
+   "after_sha256": "0a4751c14ba939a21bae04ab78bc46f9ead74798d48ccec2b738fe28890de772",
+   "after_bytes": 914,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_672.TXT",
+   "after_sha256": "65e98eaeedca989935194d987c9cfab9719c5f649a5574675ba6f4298525a7bc",
+   "after_bytes": 486,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21564.TXT",
+   "after_sha256": "9adaafe0f24f77fc4ca6d53023e080b493978db6cfcf106e5c781df446635645",
+   "after_bytes": 521,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21689.TXT",
+   "after_sha256": "93ff54957f5b5184a0678bb83ecde249a1132e117eb2538abbe26dd962c46c1f",
+   "after_bytes": 828,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_27931.TXT",
+   "after_sha256": "ce353ce46bc83ef5f7be7198209a8834f27e24756cbed38de9134d4d664182eb",
+   "after_bytes": 766,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RCL_84738.TXT",
+   "after_sha256": "55a1366d5c4acac248dfa45beba67f64a6edd0a9cd3f2654f895c205fffa4cb2",
+   "after_bytes": 1053,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1046.TXT",
+   "after_sha256": "8622593c5c045548f831053a7a1c76bd25c9d059135013853658e9c575167386",
+   "after_bytes": 509,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1068.TXT",
+   "after_sha256": "9ee0b4932825eda0a5a743a9e46a64974d868f8d4631442cb6342c5014fb917b",
+   "after_bytes": 358,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1093.TXT",
+   "after_sha256": "2d544ef8ffef86dae2de6725b0502274d85c275fe9cf486c429b8e0274e45b1c",
+   "after_bytes": 371,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1229.TXT",
+   "after_sha256": "a20a82afc7b07498eed7af40d3e89ce2e7a2a6868f79bc2f584681efa3b632be",
+   "after_bytes": 401,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_157.TXT",
+   "after_sha256": "d5354b3b34232d922c7044ca1038a3e92cf0efc8d6c78876a500b7ce1b11917b",
+   "after_bytes": 458,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_184.TXT",
+   "after_sha256": "cdc4d04f08a01e2d3167dc6186bd9625b197b5818f28df0ffedbf80e64252f2c",
+   "after_bytes": 975,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_201.TXT",
+   "after_sha256": "cc39b1a3e38aa5d761cbbc541b11e315d442ae137f834002329d88cfe1ab9b99",
+   "after_bytes": 426,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_793.TXT",
+   "after_sha256": "b4c52c4ea0d77aee34864d10897410a1e4cfcf8ef5f78480b8b61bb88c530976",
+   "after_bytes": 585,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_835.TXT",
+   "after_sha256": "6b4fa9a9da7de1010f64a5c05ac313d170cd6bca27a899f7f49f85c1fd2800d8",
+   "after_bytes": 604,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_855.TXT",
+   "after_sha256": "79c327ebec18e2659412c2ac95e23cd8f14f36eb89736c1277475642bb5faa8f",
+   "after_bytes": 458,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_935.TXT",
+   "after_sha256": "e646d6035425d17fff827bcae01290c8b325d8831bab83d79e9714c91a50f76c",
+   "after_bytes": 584,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_950.TXT",
+   "after_sha256": "0c0252364b92e8e486047d0e885fe3cc7dca3ee791c0a4a2845e9bec91000bdd",
+   "after_bytes": 751,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SUMULA_702.TXT",
+   "after_sha256": "eb5c0a02fd63ace9c6b22241333f7b0110e775d712f142dc161e5220a866e891",
+   "after_bytes": 588,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_46.TXT",
+   "after_sha256": "8fe0e0b1ff3502cb87c23933300087cd5718c1a6e42d39e08a3136e1f907057f",
+   "after_bytes": 354,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_5.TXT",
+   "after_sha256": "3a2121448c56c7ab28573a8e4ad75c66376cf022e2d6edae6c74def68c26af43",
+   "after_bytes": 308,
+   "rollback": "DELETE"
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/TSE_SUMULA_9.TXT",
+   "after_sha256": "7c0e74fa16221a4cf2a3867cc1fd2925d6964f3c70d8b58fb48e6359525e8c76",
+   "after_bytes": 764,
+   "rollback": "DELETE"
+  }
+ ],
+ "files": [
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1254.TXT",
+   "sha256": "77c81b555987371a3b2a2323586f3040daf883bf9a58b3c21faece3287a4c50a",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_1616.TXT",
+   "sha256": "be3702ba3b787e717b7dd89612c89b433bf65e57cfce77dc90a0fd5cae2a867e",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2404.TXT",
+   "sha256": "d83e6a28c4e4f177eec24dce15f3db1d5b32e3fd67f77c431ad6d496228efb31",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2681.TXT",
+   "sha256": "a66b3b7329e8aea991cd691f8f9fd84146dbd30d4ad248e75c6f9d9a52c0192d",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_2777.TXT",
+   "sha256": "696285860cdede3746e2937cef176a23fb3737853d8af07ddd2cec17a83d7eee",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3114.TXT",
+   "sha256": "0570701cb199267b1d294e468dd485a76505223c6abb04c73fc0dd9a257141b1",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_336.TXT",
+   "sha256": "2cbcfc1664527e345fcac389af33cac24db3c06f321f35c1a50fe81a003af340",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3395.TXT",
+   "sha256": "d3f4d35b41787a5c53f0921c55ae1167f9692974e30d28a2fa7567b2db2c2bfd",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3423-3392-3432-3520.TXT",
+   "sha256": "529697f1a298abc8b1ae838ac4114cebdb62b3b0bbb2bc64e93311f7ead3f470",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_3684.TXT",
+   "sha256": "cb6052ee2c0955fed8c5ed786dfc85414b88ff89d7cc2f2f3ac5908ca3ab5ae8",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_5017.TXT",
+   "sha256": "d79aae45b6755bd1e1fa863aeb49a79e31cb25f2f95c17d5e4a48e064a161897",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_6457.TXT",
+   "sha256": "f664f4769d86bd3478f233860ea83360b9243bd961be0ce4f6ee4f1b2da518c6",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7064.TXT",
+   "sha256": "2ea5247aa0f5ac349023de54e3bfdd07a669105b7ba9764f9f1a8bff3892d343",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7369.TXT",
+   "sha256": "933e028dd9ac73bb25740c6205a220e318ff87146dcfca23c78df97710c235b8",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_789.TXT",
+   "sha256": "7ff33d2d192dd544ab25ed41cb1b0bc79bcabc22bc892c98a2c8f0b2bcea6bd8",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_978.TXT",
+   "sha256": "313c40abf73178d4e24630af9a73e7b77f529ced8b2ef9b6a110f5cab4e7066d",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_378.TXT",
+   "sha256": "e4983a47398b469f9343da7a9e2ba533395e4f80318bca60691db33e55d24f51",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_672.TXT",
+   "sha256": "d5f686f19978fd86c0a335ebed71a4b709d14b6972419af615d4fae89d6d0679",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADPF_964.TXT",
+   "sha256": "3e424bc5e0d09fbd2899f5c47153d06810ee25af275eb9fe5b1fc422c52bc301",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AI_343461.TXT",
+   "sha256": "4543027cafa8d7b2c9d7ffd6984310336d3d05b4d31a6e5204de1feac678bc0f",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_AP_694.TXT",
+   "sha256": "f99b0fac51419f7e54df2834443d219f90703efdf3251b8e0fd2dc1d46f5c764",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_232627.TXT",
+   "sha256": "b2d0ff8a19556c4532055653221b62e3328b0462db06b62555263c6aa21cc1a6",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_HC_70648.TXT",
+   "sha256": "6c22e0b51e15b719be17086ca7887a8d037b5531799e3555743c9d4dfac04c28",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_4781.TXT",
+   "sha256": "0a4751c14ba939a21bae04ab78bc46f9ead74798d48ccec2b738fe28890de772",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_INQ_672.TXT",
+   "sha256": "65e98eaeedca989935194d987c9cfab9719c5f649a5574675ba6f4298525a7bc",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21564.TXT",
+   "sha256": "9adaafe0f24f77fc4ca6d53023e080b493978db6cfcf106e5c781df446635645",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_21689.TXT",
+   "sha256": "93ff54957f5b5184a0678bb83ecde249a1132e117eb2538abbe26dd962c46c1f",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_MS_27931.TXT",
+   "sha256": "ce353ce46bc83ef5f7be7198209a8834f27e24756cbed38de9134d4d664182eb",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RCL_84738.TXT",
+   "sha256": "55a1366d5c4acac248dfa45beba67f64a6edd0a9cd3f2654f895c205fffa4cb2",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1046.TXT",
+   "sha256": "8622593c5c045548f831053a7a1c76bd25c9d059135013853658e9c575167386",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1068.TXT",
+   "sha256": "9ee0b4932825eda0a5a743a9e46a64974d868f8d4631442cb6342c5014fb917b",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1093.TXT",
+   "sha256": "2d544ef8ffef86dae2de6725b0502274d85c275fe9cf486c429b8e0274e45b1c",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_1229.TXT",
+   "sha256": "a20a82afc7b07498eed7af40d3e89ce2e7a2a6868f79bc2f584681efa3b632be",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_157.TXT",
+   "sha256": "d5354b3b34232d922c7044ca1038a3e92cf0efc8d6c78876a500b7ce1b11917b",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_184.TXT",
+   "sha256": "cdc4d04f08a01e2d3167dc6186bd9625b197b5818f28df0ffedbf80e64252f2c",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_201.TXT",
+   "sha256": "cc39b1a3e38aa5d761cbbc541b11e315d442ae137f834002329d88cfe1ab9b99",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_793.TXT",
+   "sha256": "b4c52c4ea0d77aee34864d10897410a1e4cfcf8ef5f78480b8b61bb88c530976",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_835.TXT",
+   "sha256": "6b4fa9a9da7de1010f64a5c05ac313d170cd6bca27a899f7f49f85c1fd2800d8",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_855.TXT",
+   "sha256": "79c327ebec18e2659412c2ac95e23cd8f14f36eb89736c1277475642bb5faa8f",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_935.TXT",
+   "sha256": "e646d6035425d17fff827bcae01290c8b325d8831bab83d79e9714c91a50f76c",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_950.TXT",
+   "sha256": "0c0252364b92e8e486047d0e885fe3cc7dca3ee791c0a4a2845e9bec91000bdd",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SUMULA_702.TXT",
+   "sha256": "eb5c0a02fd63ace9c6b22241333f7b0110e775d712f142dc161e5220a866e891",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_46.TXT",
+   "sha256": "8fe0e0b1ff3502cb87c23933300087cd5718c1a6e42d39e08a3136e1f907057f",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_SV_5.TXT",
+   "sha256": "3a2121448c56c7ab28573a8e4ad75c66376cf022e2d6edae6c74def68c26af43",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/03_CONTEUDO/TSE_SUMULA_9.TXT",
+   "sha256": "7c0e74fa16221a4cf2a3867cc1fd2925d6964f3c70d8b58fb48e6359525e8c76",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX",
+   "sha256": "afa689cf4d52a37f783610d852d6a252b0871cd81b6106e3221c8a3c947793e6",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX",
+   "sha256": "f1dc758108c96324ca587a5ac43d706211311049496922b0ed87bf813dbd8867",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "sha256": "d8bb3278bd282d96ffa84a22d90a7e01e7ab976e445c7f3211197b4f6ad0643a",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/00_SYS/LEXV1.VER",
+   "sha256": "ed258cd30f2f6b40bd0b674c251b83d6b1ad61ceb3441bdafd325b31edccf041",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/05_TEXT/CF88_RUNTIME.txt",
+   "sha256": "7ef82290d30f4af180c5010709a7c11b84655e7ed1d3a4951566d3bb18b2e42a",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CC2002_ARTICLE_SEARCH.IDX",
+   "sha256": "674c9971925c29aaca9685fb2d0b9515fe87e4072d644858ea27495c327d3a68",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_ARTICLE_SEARCH.IDX",
+   "sha256": "56e437a0c9cebb113c47f6a7b100ee64363c63207a647eca0456e86d6db27fae",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "sha256": "fe233de1af79d64552f4f1ee40d37f5498e06e26f015fdaa6bcee0f0644458a4",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/10_TARGETS/CF88_TEXT_MAP.IDX",
+   "sha256": "889f82002e82fb2b7d9165e6ce2a4e0dcb78d311432e268c341f1d0b1e436b96",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "sha256": "2ea28d50dec6b2abea65dfe9fe16e47654557725b8a6ffd6a58ea5bcbff8c394",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX",
+   "sha256": "b16f1f81c484e64a349a264f312d133be67b1a12d7716fa312ff02a5e9d757e1",
+   "same_as_physical": false
+  },
+  {
+   "path": "/99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX",
+   "sha256": "017050dc98b76cdbea9997c6d3ad49f34673393c6768fcb43fa0eb9767120c99",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT",
+   "sha256": "dbea72601046e6d9fba2f6a6442a490f905a03911186f9aeb44db7e6184e0fd3",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX",
+   "sha256": "5c54face7ea7eff62dbbb0a4193b5e2452e7fb03d82012d09919e74d234b3e5e",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX",
+   "sha256": "efac06cee0a1d8f0676564ba128d0ab8f474b89399f40de6422cc6fded37ef2c",
+   "same_as_physical": true
+  },
+  {
+   "path": "/99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX",
+   "sha256": "691790f3ee5d4aaa9b88235bca33008357b99d87324c07b1da8b51355c20685c",
+   "same_as_physical": true
+  }
+ ]
+}
