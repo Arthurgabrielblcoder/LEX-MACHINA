@@ -1,0 +1,103 @@
+{
+ "result": "SD_VALIDATED",
+ "readback": {
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX": {
+   "bytes": 55106,
+   "sha256": "05e9c2afec5991d25a84ccc99ba4077b4a9730e9009a70983b00dd304d1bc09d"
+  },
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX": {
+   "bytes": 3863,
+   "sha256": "603d9963181727d22aa8a99af50f197cfc71702e136309ace536979bc936c1f3"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": {
+   "bytes": 63095,
+   "sha256": "62b06deb45b3c1ec9e2ead4fe577241b78658fc62d67f91516b61841e83456e9"
+  },
+  "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX": {
+   "bytes": 6557,
+   "sha256": "aa84fbbf8929495a599a70532860ac4e2f90739ecb07e03ece5d3e8145aef03b"
+  },
+  "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX": {
+   "bytes": 165466,
+   "sha256": "103abadec9c4af3c131de744d49efd1f11c291b16f39f676bdca8b204056d570"
+  },
+  "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json": {
+   "bytes": 7712,
+   "sha256": "dce393db84f7fe8a392e9bf13da67272c2e90414805c83b2cf87cd985e3f1672"
+  },
+  "99_LEX_V1/00_SYS/LEXV1.VER": {
+   "bytes": 597,
+   "sha256": "01ff09b4af77e4bbf91d5cf2f328b7cc89c0a4e2eab09e0b922242b51fd357f1"
+  },
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_4425.TXT": {
+   "bytes": 1441,
+   "sha256": "be757508b3472dc4a25fa538a3f7915f290f10c7be5c7e5850982c3b5aa1a3eb"
+  },
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7047-7064.TXT": {
+   "bytes": 1338,
+   "sha256": "1a4ca8c76dc0588ca1b6fbc9063c0d4cbc4746d9777d4c52b771bd6b784a283b"
+  },
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7697.TXT": {
+   "bytes": 1206,
+   "sha256": "0b62db3e0d5b3f9032f4cbf1733afe5b385fd569737d0ea902b957d5e6e68527"
+  }
+ },
+ "mismatch": [],
+ "diff_full": {
+  "added": [
+   "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_4425.TXT",
+   "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7047-7064.TXT",
+   "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7697.TXT"
+  ],
+  "removed": [],
+  "changed": [
+   "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX",
+   "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX",
+   "99_LEX_V1/00_SYS/LEXV1.VER",
+   "99_LEX_V1/00_SYS/LEX_DEVICE_MANIFEST.json",
+   "99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX",
+   "99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX"
+  ]
+ },
+ "files_modified": 7,
+ "files_created": 3,
+ "files_deleted": 0,
+ "legacy_index_prefix_identical": {
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX": true,
+  "99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX": true
+ },
+ "tema558_ficha_changed": false,
+ "rollback": {
+  "restore_from": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\juris_j2c_physical_deploy\\sd_pre",
+  "delete": [
+   "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_4425.TXT",
+   "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7047-7064.TXT",
+   "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_ADI_7697.TXT"
+  ]
+ },
+ "manifest_vs_card": "PASS",
+ "manifest_entries_checked": 10,
+ "correlata_files_unchanged": {
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/RELACOES.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/REL_LOOKUP.IDX": true,
+  "99_RELATIONS_V2/05_INDICES_ESP32_V2/EXT_ARTIGOS.IDX": true,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_LOOKUP.IDX": true,
+  "99_LEX_V1/30_ENTENDA/ENTENDA_PAYLOAD.DAT": true
+ },
+ "other_files_untouched": true,
+ "unexpected_sd_changes": 0,
+ "file_count_pre": 1142,
+ "file_count_post": 1145,
+ "candidate": {
+  "build_id": "12b9fb5624112d9e",
+  "git_commit": "de0b1812a9bf0d3c89d3bb094bb7bf0012a36625",
+  "reference_engine": {
+   "tag": "cf-reference-engine-run9-juris-j2b-1",
+   "run": "run9",
+   "status": "RUN9_JURIS_J2B_1_CANDIDATE_HOST_ONLY",
+   "derived_from": "run8 (J2B: 256 + 5 ADI links) with J2B_PREDEPLOY_TEMPORAL_FIX (Tema 558: art. 100 § 9º -> art. 100)",
+   "supersedes": "J2B_CANDIDATE_HOST_ONLY (SUPERSEDED_BEFORE_PHYSICAL_DEPLOY)"
+  }
+ }
+}
