@@ -1,0 +1,28 @@
+{
+ "schema_version": 1,
+ "round": "J2B",
+ "policy": "Itens provisórios (cautelar / mérito pendente). Gate obrigatório antes de qualquer deploy: check_j2b_provisional.py --as-of <data>. Fail closed.",
+ "items": [
+  {
+   "source_id": "STF:ADI:7697",
+   "targets": [
+    "CF88:ART.166:PAR.9",
+    "CF88:ART.166:PAR.11",
+    "CF88:ART.166-A"
+   ],
+   "status_processual": [
+    "cautelar_referendada",
+    "merito_pendente"
+   ],
+   "trigger": "JULGAMENTO_DE_MERITO",
+   "max_age_days": 90,
+   "last_verified_on": "2026-10-16",
+   "last_known_state": "MC referendada em 16/08/2024 e referendo de 04/12/2024; autos conclusos ao relator em 16/06/2026; sem mérito",
+   "check": {
+    "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560 (abas Andamentos e Decisões)",
+    "look_for": "Decisão de julgamento de mérito (Procedente / Improcedente / Prejudicada / Não conhecida) ou nova decisão do Plenário"
+   },
+   "on_trigger": "Rever o vínculo e a ficha antes de qualquer novo deploy; sem revisão, o item volta a pendente (fail closed)."
+  }
+ ]
+}

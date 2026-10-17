@@ -1,0 +1,287 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J2B",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-16",
+  "statement": "J2A_BATCH01_USER_RATIFIED = YES",
+  "decisions": {
+   "J0-BL-136": "PROMOTE_PROVISIONAL",
+   "J0-BL-137": "PROMOTE_PROVISIONAL",
+   "J0-BL-138": "PROMOTE_PROVISIONAL",
+   "J0-BL-081": "PROMOTE",
+   "J0-BL-082": "PROMOTE",
+   "J0-BL-084": "PROMOTE",
+   "J0-BL-080": "REJECT_TEMPORAL_MISMATCH",
+   "J0-BL-069": "REJECT_FALSE_POSITIVE",
+   "J0-BL-074": "REJECT_FALSE_POSITIVE",
+   "J0-BL-135": "DUPLICATE_DO_NOT_PROMOTE"
+  },
+  "directives": "ADI 7697: status explícito de cautelar referendada, mérito pendente, gatilho obrigatório de revalidação. ADIs 7047 e 7064: as duas ratificadas; representação no aparelho decidida na J2B sem duplicar a ficha. HIGH = 42 é o estado correto."
+ },
+ "decisions_file": "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2A_BATCH01_DECISIONS.json",
+ "decisions_sha256": "35cb39e511d811dbbdda823393a1c243c5c430acc1b70326a7fb969980ecaa14",
+ "model": {
+  "tipo": "adi",
+  "status_values": [
+   "cautelar",
+   "cautelar_referendada",
+   "merito_julgado",
+   "merito_pendente"
+  ],
+  "firmware_change": "NONE",
+  "list_label": "\"ADI \" + NUMERO",
+  "ficha": "03_CONTEUDO/<IDENTIFICADOR com : -> _>.TXT",
+  "joint_judgment": "um registro com aliases; uma ficha; as decisões ratificadas ficam na provenance"
+ },
+ "total": 5,
+ "records": [
+  {
+   "target_id": "CF88:ART.100:PAR.9",
+   "source_id": "STF:ADI:7047-7064",
+   "source_reference_id": "STF:ADI:7047-7064:CF88:100:9:-:-",
+   "label": "ADI 7047/7064 (julgamento conjunto)",
+   "aliases": [
+    "ADI 7047",
+    "ADI 7064"
+   ],
+   "status_processual": [
+    "merito_julgado"
+   ],
+   "provisional": false,
+   "ratified_decisions": [
+    "J0-BL-081",
+    "J0-BL-082"
+   ],
+   "ratification": [
+    "PROMOTE",
+    "PROMOTE"
+   ],
+   "sources": [
+    "S5",
+    "S6",
+    "S4",
+    "P1"
+   ],
+   "joint_judgment": {
+    "processes": [
+     "STF:ADI:7047",
+     "STF:ADI:7064"
+    ],
+    "date": "2023-11-30",
+    "ratified_decisions": [
+     "J0-BL-081",
+     "J0-BL-082"
+    ],
+    "model": "um registro, dois identificadores (aliases); uma ficha"
+   },
+   "legacy_idx_row": "STF:ADI:7047-7064:CF88:100:9:-:-|adi|STF|7047/7064|merito_julgado|ADI 7047/7064 (julgamento conjunto)|STF:ADI:7047-7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "100",
+    "9",
+    "",
+    ""
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7047/7064",
+    "titulo": "ADI 7047/7064 (julgamento conjunto)",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7047",
+     "ADI 7064"
+    ],
+    "provisorio": false
+   }
+  },
+  {
+   "target_id": "CF88:ART.100:PAR.12",
+   "source_id": "STF:ADI:4425",
+   "source_reference_id": "STF:ADI:4425:CF88:100:12:-:-",
+   "label": "ADI 4425",
+   "aliases": [
+    "ADI 4425"
+   ],
+   "status_processual": [
+    "merito_julgado"
+   ],
+   "provisional": false,
+   "ratified_decisions": [
+    "J0-BL-084"
+   ],
+   "ratification": [
+    "PROMOTE"
+   ],
+   "sources": [
+    "S3",
+    "S4",
+    "P1"
+   ],
+   "joint_judgment": null,
+   "legacy_idx_row": "STF:ADI:4425:CF88:100:12:-:-|adi|STF|4425|merito_julgado|ADI 4425|STF:ADI:4425|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "100",
+    "12",
+    "",
+    ""
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "4425",
+    "titulo": "ADI 4425",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 4425"
+    ],
+    "provisorio": false
+   }
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.9",
+   "source_id": "STF:ADI:7697",
+   "source_reference_id": "STF:ADI:7697:CF88:166:9:-:-",
+   "label": "ADI 7697",
+   "aliases": [
+    "ADI 7697"
+   ],
+   "status_processual": [
+    "cautelar_referendada",
+    "merito_pendente"
+   ],
+   "provisional": true,
+   "ratified_decisions": [
+    "J0-BL-136"
+   ],
+   "ratification": [
+    "PROMOTE_PROVISIONAL"
+   ],
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "joint_judgment": null,
+   "legacy_idx_row": "STF:ADI:7697:CF88:166:9:-:-|adi|STF|7697 (CAUTELAR)|cautelar_referendada_merito_pendente|ADI 7697|STF:ADI:7697|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560",
+   "legacy_lookup": [
+    "CF88",
+    "166",
+    "9",
+    "",
+    ""
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7697 (CAUTELAR)",
+    "titulo": "ADI 7697",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560",
+    "status_processual": "cautelar_referendada_merito_pendente",
+    "aliases": [
+     "ADI 7697"
+    ],
+    "provisorio": true
+   }
+  },
+  {
+   "target_id": "CF88:ART.166:PAR.11",
+   "source_id": "STF:ADI:7697",
+   "source_reference_id": "STF:ADI:7697:CF88:166:11:-:-",
+   "label": "ADI 7697",
+   "aliases": [
+    "ADI 7697"
+   ],
+   "status_processual": [
+    "cautelar_referendada",
+    "merito_pendente"
+   ],
+   "provisional": true,
+   "ratified_decisions": [
+    "J0-BL-137"
+   ],
+   "ratification": [
+    "PROMOTE_PROVISIONAL"
+   ],
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "joint_judgment": null,
+   "legacy_idx_row": "STF:ADI:7697:CF88:166:11:-:-|adi|STF|7697 (CAUTELAR)|cautelar_referendada_merito_pendente|ADI 7697|STF:ADI:7697|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560",
+   "legacy_lookup": [
+    "CF88",
+    "166",
+    "11",
+    "",
+    ""
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7697 (CAUTELAR)",
+    "titulo": "ADI 7697",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560",
+    "status_processual": "cautelar_referendada_merito_pendente",
+    "aliases": [
+     "ADI 7697"
+    ],
+    "provisorio": true
+   }
+  },
+  {
+   "target_id": "CF88:ART.166-A",
+   "source_id": "STF:ADI:7697",
+   "source_reference_id": "STF:ADI:7697:CF88:166-A:-:-:-",
+   "label": "ADI 7697",
+   "aliases": [
+    "ADI 7697"
+   ],
+   "status_processual": [
+    "cautelar_referendada",
+    "merito_pendente"
+   ],
+   "provisional": true,
+   "ratified_decisions": [
+    "J0-BL-138"
+   ],
+   "ratification": [
+    "PROMOTE_PROVISIONAL"
+   ],
+   "sources": [
+    "S7",
+    "P1"
+   ],
+   "joint_judgment": null,
+   "legacy_idx_row": "STF:ADI:7697:CF88:166-A:-:-:-|adi|STF|7697 (CAUTELAR)|cautelar_referendada_merito_pendente|ADI 7697|STF:ADI:7697|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560",
+   "legacy_lookup": [
+    "CF88",
+    "166-A",
+    "",
+    "",
+    ""
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7697 (CAUTELAR)",
+    "titulo": "ADI 7697",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560",
+    "status_processual": "cautelar_referendada_merito_pendente",
+    "aliases": [
+     "ADI 7697"
+    ],
+    "provisorio": true
+   }
+  }
+ ],
+ "fichas": {
+  "STF:ADI:7697": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 7697\nTRIBUNAL: STF\nSTATUS: medida cautelar referendada pelo Plenário - mérito pendente\nPROCESSO: ADI 7697 (Rel. Min. Flávio Dino; requerente: PSOL)\n\nDECISÃO PROVISÓRIA\nEsta é uma decisão cautelar, não definitiva. Pode mudar quando o mérito for julgado.\n\nDISPOSITIVOS DA CF ALCANÇADOS\nArt. 165, § 9º, III, e § 10; art. 166, §§ 9º, 9º-A, 10, 11, 12, 13, 14, 16, 17, 18, 19 e 20; art. 166-A.\n\nDECISÃO (RESUMO)\nEm 16/08/2024 o Plenário referendou, por unanimidade, a cautelar que deu interpretação conforme a esses dispositivos, com efeitos ex nunc: não é compatível com a Constituição executar emendas ao orçamento que não obedeçam a critérios técnicos de eficiência, transparência e rastreabilidade; a impositividade das emendas parlamentares não é absoluta.\nEm 04/12/2024 o Plenário referendou nova decisão: nas transferências especiais (\"emendas PIX\", art. 166-A), a apresentação e a aprovação prévias do plano de trabalho no Transferegov.br são obrigatórias.\n\nVERIFICADO EM\n16/10/2026 (andamento: autos conclusos ao relator em 16/06/2026).\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560\n",
+  "STF:ADI:7047-7064": "AÇÕES DIRETAS DE INCONSTITUCIONALIDADE 7047 E 7064 (JULGAMENTO CONJUNTO)\nTRIBUNAL: STF\nSTATUS: mérito julgado\nPROCESSO: ADI 7047 e ADI 7064 (Rel. Min. Luiz Fux)\n\nDECISÃO\nEm 30/11/2023, em sessão virtual extraordinária, o Plenário converteu o julgamento das cautelares em julgamento de mérito e julgou as duas ações parcialmente procedentes (vencido em parte o Min. André Mendonça).\n\nART. 100 DA CF\n- Declarado inconstitucional o § 9º do art. 100, na redação da EC 113/2021 (depósito, à conta do juízo, do valor de débitos do credor inscritos em dívida ativa). Segundo a ementa, a nova redação, embora diferente, tem a mesma essência da compensação já declarada inconstitucional nas ADIs 4357 e 4425.\n- Interpretação conforme ao § 11 do art. 100 (EC 113/2021), para excluir a expressão \"com auto aplicabilidade para a União\".\n- Declarado inconstitucional também o art. 101, § 5º, do ADCT (EC 113/2021).\n\nSOMENTE NA ADI 7064\nArt. 107-A do ADCT (teto de precatórios) válido só para 2022; incisos II e III e §§ 3º, 5º e 6º inconstitucionais; inconstitucional o art. 6º da EC 114/2021.\n\nACÓRDÃO\nADI 7064: julgamento em 01/12/2023, DJe de 19/12/2023.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822\nhttps://portal.stf.jus.br/processos/detalhe.asp?incidente=6318731\n",
+  "STF:ADI:4425": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 4425\nTRIBUNAL: STF\nSTATUS: mérito julgado (com modulação de efeitos)\nPROCESSO: ADI 4425 (Rel. Min. Ayres Britto; redator do acórdão Min. Luiz Fux), julgada com a ADI 4357\n\nDECISÃO (MÉRITO: 14/03/2013; DJe 19/12/2013)\nPedido julgado procedente em parte contra a EC 62/2009 (regime de precatórios). Sobre o § 12 do art. 100:\n- é inconstitucional atualizar os precatórios pelo índice oficial de remuneração da caderneta de poupança;\n- declaração parcial de inconstitucionalidade, sem redução de texto, da expressão \"independentemente de sua natureza\": nos precatórios tributários valem os mesmos juros de mora dos créditos tributários.\nO acórdão também invalidou a compensação dos §§ 9º e 10 (redação da EC 62/2009), o marco \"na data de expedição do precatório\" do § 2º e o regime especial de pagamento criado pela EC 62/2009.\n\nMODULAÇÃO (QUESTÃO DE ORDEM: 25/03/2015; DJe 04/08/2015)\nA TR foi mantida até 25/03/2015; depois, IPCA-E para os precatórios em geral e, nos tributários, os mesmos critérios com que a Fazenda corrige seus créditos.\n\nNOTA\nO § 12 continua no texto compilado com a redação da EC 62/2009. A EC 113/2021 adotou a SELIC como índice único de atualização, e o STF admitiu esse índice ao julgar as ADIs 7047 e 7064.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos\n"
+ }
+}
