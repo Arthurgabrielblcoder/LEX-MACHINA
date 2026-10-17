@@ -1,0 +1,1507 @@
+{
+ "schema_version": 1,
+ "round": "J2",
+ "batch": "BATCH03",
+ "level": "HIGH",
+ "mode": "HOST_ONLY_DECISIONS_NO_MATERIALIZATION",
+ "status": "AWAITING_USER_RATIFICATION",
+ "state_model": {
+  "PHYSICALLY_INSTALLED": "J2C 261/160 (J2B_1 REF_PAYLOAD)",
+  "EDITORIALLY_APPROVED_HOST_ONLY": "Batch02 J2E: 8 relações (A+B)",
+  "UNAPPROVED_RESEARCH_PROPOSAL": []
+ },
+ "previous_batches": {
+  "1": "RATIFIED",
+  "2": "RATIFIED"
+ },
+ "inputs": {
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2A_BATCH01_DECISIONS.json": "35cb39e511d811dbbdda823393a1c243c5c430acc1b70326a7fb969980ecaa14",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2D_BATCH02_DECISIONS.json": "1e5dd0102b855e5bf9b16c57e9eb0dac974c999b9b703674df902d759004ddce",
+  "LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2E.json": "147fe4b200e58d231f98f18be60fff045c60306f7324a9812a67a69a320f89d3",
+  "JURISPRUDENCE_AUDIT/J0_DIAGNOSTIC_AUDIT.json": "0bd25c5c11ea2edaa75413f99c6cd755040757b7e54469d9a94cc2ea05e16fc4"
+ },
+ "reconstruction": {
+  "ANALYZED_IN_PREVIOUS_BATCHES": 20,
+  "COVERED_BY_RATIFIED": {
+   "J0-BL-060": {
+    "target": "CF88:ART.53:PAR.1",
+    "covered_by": [
+     "CF88:ART.53:PAR.1|STF:HC:232627"
+    ]
+   },
+   "J0-BL-083": {
+    "target": "CF88:ART.100:PAR.9",
+    "covered_by": [
+     "CF88:ART.100:PAR.9|STF:ADI:4425",
+     "CF88:ART.100:PAR.9|STF:ADI:7064"
+    ]
+   },
+   "J0-BL-085": {
+    "target": "CF88:ART.100:PAR.12",
+    "covered_by": [
+     "CF88:ART.100:PAR.12|STF:ADI:4425"
+    ]
+   },
+   "J0-BL-168": {
+    "target": "ADCT:ART.101",
+    "covered_by": [
+     "ADCT:ART.101|STF:ADI:7047",
+     "ADCT:ART.101|STF:ADI:7064"
+    ]
+   }
+  },
+  "BACKLOG_PENDING_CURRENT": 124,
+  "HIGH_CURRENT": 15,
+  "MEDIUM_CURRENT": 82,
+  "LOW_CURRENT": 27,
+  "WITHOUT_IDENTIFIER": 67,
+  "LEFT_LEVEL_SINCE_PREVIOUS_BATCH": {
+   "J0-BL-055": {
+    "now": "MEDIUM",
+    "reason": {
+     "named_identifier": true,
+     "recurrent": false,
+     "article_without_juris": false,
+     "reference_described": true
+    },
+    "approved_links_on_article": true
+   },
+   "J0-BL-056": {
+    "now": "MEDIUM",
+    "reason": {
+     "named_identifier": true,
+     "recurrent": false,
+     "article_without_juris": false,
+     "reference_described": true
+    },
+    "approved_links_on_article": true
+   },
+   "J0-BL-059": {
+    "now": "MEDIUM",
+    "reason": {
+     "named_identifier": true,
+     "recurrent": false,
+     "article_without_juris": false,
+     "reference_described": true
+    },
+    "approved_links_on_article": true
+   },
+   "J0-BL-060": {
+    "now": "COVERED_BY_RATIFIED"
+   },
+   "J0-BL-168": {
+    "now": "COVERED_BY_RATIFIED"
+   },
+   "J0-BL-170": {
+    "now": "MEDIUM",
+    "reason": {
+     "named_identifier": true,
+     "recurrent": true,
+     "article_without_juris": false,
+     "reference_described": false
+    },
+    "approved_links_on_article": true
+   }
+  }
+ },
+ "queue": [
+  {
+   "recommendation_id": "J0-BL-047",
+   "target_id": "CF88:ART.29:INC.X",
+   "desired_reference": "STF Sumula 702 — competencia do Tribunal de Justica para julgar prefeitos restrita aos crimes da Justica comum estadual",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "Súmula 702"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 1
+   },
+   "rank": 1,
+   "recommendation_text": "delimitar o foro do Prefeito"
+  },
+  {
+   "recommendation_id": "J0-BL-053",
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "desired_reference": "MS 34.418 (STF, Plenario, 25/09/2023)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "suggested_identifiers": [
+    "MS 34418"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 1
+   },
+   "rank": 2,
+   "recommendation_text": "votacao separada da perda do cargo e da inabilitacao"
+  },
+  {
+   "recommendation_id": "J0-BL-054",
+   "target_id": "CF88:ART.52:PAR.UNICO",
+   "desired_reference": "MS 21.689 (STF)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "suggested_identifiers": [
+    "MS 21689"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 1
+   },
+   "rank": 3,
+   "recommendation_text": "contexto historico da votacao separada"
+  },
+  {
+   "recommendation_id": "J0-BL-061",
+   "target_id": "CF88:ART.55:INC.VI",
+   "desired_reference": "AP 694 (STF)",
+   "origin": [
+    "production_batch_06"
+   ],
+   "suggested_identifiers": [
+    "AP 694"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 2,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 1
+   },
+   "rank": 4,
+   "recommendation_text": "perda do mandato por condenacao criminal e cumprimento da pena"
+  },
+  {
+   "recommendation_id": "J0-BL-134",
+   "target_id": "CF88:ART.165:PAR.18",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADI 7047",
+    "ADI 7064"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 2,
+    "3_target_without_juris": 1,
+    "4_recurrence": 1,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 5,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, ADI 7064, com a ADI 7047): interpretação conforme ao art. 107-A do ADCT, com efeitos apenas para o exercício de 2022 (decisão de 30/11/2023). Ingestão na camada JURISPRUDÊNCIA: PENDING_EXTERNAL_INGESTION."
+  },
+  {
+   "recommendation_id": "J0-BL-090",
+   "target_id": "CF88:ART.103:PAR.1",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADI 1254",
+    "ADI 1616",
+    "ADI 4983"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 2,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 6,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 103, § 3º): ADI 1.254 AgR (1996) e ADI 4.983 (2016): função defensiva do Advogado-Geral da União, sem emissão de parecer pela inconstitucionalidade; ADI 1.616 (2001): o mú"
+  },
+  {
+   "recommendation_id": "J0-BL-122",
+   "target_id": "CF88:ART.130",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADI 3315",
+    "ADI 3804",
+    "ADI 4427",
+    "ADI 789"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 2,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 7,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 130): ADI 789 (citada na ADI 3.315, 2008), ADI 3.804 (2021) e ADI 4.427 (2023): o Ministério Público especial integra a estrutura do Tribunal de Contas, sem vínculo com o "
+  },
+  {
+   "recommendation_id": "J0-BL-165",
+   "target_id": "ADCT:ART.27",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [
+    "ADI 5017"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 2,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 8,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A anotação oficial do § 11 remete à ADI 5017; o resultado e o alcance da decisão e a situação de cada tribunal pertencem à camada JURISPRUDÊNCIA (PENDING_EXTERNAL_INGESTION)."
+  },
+  {
+   "recommendation_id": "J0-BL-048",
+   "target_id": "CF88:ART.29:INC.X",
+   "desired_reference": "STF 2025 — HC 232627 e Inq 4787: prerrogativa de foro para crimes praticados no cargo e em razao das funcoes subsiste apos o afastamento",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "HC 232627",
+    "Inq 4787"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 1,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 9,
+   "recommendation_text": "permanencia do foro apos o termino do mandato (entendimento mutavel; somente CAMADA EXTERNA)"
+  },
+  {
+   "recommendation_id": "J0-BL-045",
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 157 (RE 729744) — natureza opinativa do parecer previo; julgamento das contas anuais do Prefeito pela Camara",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "RE 729744",
+    "Tema 157"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 10,
+   "recommendation_text": "natureza do parecer previo e competencia da Camara"
+  },
+  {
+   "recommendation_id": "J0-BL-046",
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 835 (RE 848826) — contas de governo e de gestao do Prefeito apreciadas pela Camara (LC 64/1990)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "RE 848826",
+    "Tema 835"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 11,
+   "recommendation_text": "contas de governo x contas de gestao"
+  },
+  {
+   "recommendation_id": "J0-BL-051",
+   "target_id": "CF88:ART.35:INC.IV",
+   "desired_reference": "STF — taxatividade das hipoteses de intervencao estadual (art. 35) e natureza politico-administrativa do procedimento no Judiciario (ADI 336, ADI 7369, AI 343461 AgR)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "ADI 336",
+    "ADI 7369",
+    "AI 343461"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 12,
+   "recommendation_text": "provenance da aprovacao do art. 35, IV (texto principal inalterado)"
+  },
+  {
+   "recommendation_id": "J0-BL-067",
+   "target_id": "CF88:ART.86",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADPF 378",
+    "MS 21564"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 13,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", arts. 52 e 86): ADPF 378 MC (2015): cabe ao Senado o juízo inicial de instauração ou não do processo, por maioria simples; MS 21.564 (1992): a Câmara profere juízo político de "
+  },
+  {
+   "recommendation_id": "J0-BL-068",
+   "target_id": "CF88:ART.86:PAR.3",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADI 1021",
+    "ADI 978",
+    "Inq 672"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 14,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 86): ADI 978 e ADI 1.021 (1995): o § 3º é imunidade à prisão cautelar (em flagrante, preventiva e temporária), exclusiva do Presidente; Inq 672 QO (1992): o § 4º impede, n"
+  },
+  {
+   "recommendation_id": "J0-BL-072",
+   "target_id": "CF88:ART.96:INC.III",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "Rcl 84738"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 15,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (Informativo STF 1212): Rcl 84.738 AgR/PI, Segunda Turma, unânime, julgamento finalizado em 14/04/2026: membro de Ministério Público estadual processado por crimes não relacionados com o cargo mantém foro no Trib"
+  }
+ ],
+ "selected": [
+  "J0-BL-047",
+  "J0-BL-053",
+  "J0-BL-054",
+  "J0-BL-061",
+  "J0-BL-134",
+  "J0-BL-090",
+  "J0-BL-122",
+  "J0-BL-165",
+  "J0-BL-048",
+  "J0-BL-045"
+ ],
+ "LEVEL_REMAINING_AFTER_BATCH": 5,
+ "sources": {
+  "P1": {
+   "tier": "A",
+   "org": "Presidência da República (Planalto)",
+   "title": "Constituição Federal — texto compilado (com redações anteriores e anotações \"Vide ADI\")",
+   "identifier": "constituicao.htm",
+   "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+   "accessed_on": "2026-10-16",
+   "method": "download direto (curl)",
+   "snapshot_sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb",
+   "proves": "Origem das 10 recomendações (CANONICAL_VIGENCY_ANNOTATION). \"Vide ADIN 3392\" aparece em todo dispositivo incluído ou alterado pela EC 45/2004 (art. 5º LXXVIII e § 3º, 92 § 1º, 93 IV, 98 § 1º, 102 § 2º, 114). Art. 100, § 9º tem duas redações: a da EC 62/2009 (compensação no momento da expedição; \"Vide ADI 4425\") e a da EC 113/2021 (vigente; \"Vide ADI 7047/7064\"). § 12 tem só a redação da EC 62/2009. \"Vide ADI 7697\" em art. 165 § 9º III e § 10, art. 166 §§ 9º a 20 e art. 166-A.",
+   "reused_from": "J2A"
+  },
+  "S4": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — acórdão ADI 7064",
+   "identifier": "ADI 7064",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207064%22&base=acordaos",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "4d1e398dc576b636f36fcb263c5189eb95ad724c316755ddd838a2c21a2c4e79",
+   "proves": "Ementa (Pleno, Rel. Min. Luiz Fux, j. 01/12/2023, DJe 19/12/2023), item 28: a redação do art. 100, § 9º dada pela EC 113/2021, embora diferente da declarada inconstitucional nas ADIs 4425/4357, tem a mesma essência e é incompatível com a Constituição.",
+   "reused_from": "J2A"
+  },
+  "S6": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADI 7064, aba Decisões",
+   "identifier": "ADI 7064 (incidente 6330822)",
+   "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=6330822",
+   "accessed_on": "2026-10-16",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "b71b5b660193853058fb78cd70d7ae31063bceddabf9a7f2843efadcfda644b0",
+   "proves": "Decisão de julgamento (30/11/2023): interpretação conforme ao caput do art. 107-A do ADCT (só 2022); incisos II e III e §§ 3º, 5º e 6º inconstitucionais; inconstitucionais o art. 100, § 9º da CF e o art. 101, § 5º do ADCT (EC 113/21); interpretação conforme ao art. 100, § 11.",
+   "reused_from": "J2A"
+  },
+  "T7": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — HC 232627 e HC 232627 ED",
+   "identifier": "HC 232627",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "310ca610e6f0fd53275ab4519d90f7d555fcc7d0d5d2124c4881fd2b181c638b",
+   "proves": "Pleno, Rel. Min. Gilmar Mendes, j. 12/03/2025, DJe 16/07/2025. Tese: o foro por prerrogativa para crimes praticados no cargo e em razão das funções subsiste após o afastamento. \"Dispositivos relevantes citados: CF/1988, art. 53, §1º\". ED (PGR) acolhidos com efeitos integrativos em 25/05/2026 (DJe 08/06/2026) para fixar balizas.",
+   "reused_from": "J2D"
+  },
+  "U1": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Súmula 702 (página oficial)",
+   "identifier": "Súmula 702",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula702/false",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "4921c31b1c8f9967168e099eaf65f6633c0b595731c1dc4399672df1c333603f",
+   "proves": "Enunciado; aprovação 24/09/2003; DJ 09-13/10/2003; \"Referência Legislativa: Constituição Federal de 1988, art. 29, X\"."
+  },
+  "U2": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — MS 34379 (mesmo sentido: MS 34384 e MS 34418)",
+   "identifier": "MS 34418",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2034418%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "8c5b0e99a884960a38855bfd62eaca60e1262d946d97b044de2a47780185899d",
+   "proves": "Pleno, Rel. Min. Rosa Weber, j. 25/09/2023, DJe 06/10/2023: cisão das votações do impeachment (art. 52, p.u.); mandado de segurança PREJUDICADO (perda do mandato do impetrante) ou não conhecido; sem tese sobre a validade da cisão."
+  },
+  "U3": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — MS 21689",
+   "identifier": "MS 21689",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021689%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "daecc0462c29f6b2a4cfa78c686001bcad3f2b1562676c4dc5d2bc40aea2e12b",
+   "proves": "Pleno, Rel. Min. Carlos Velloso, j. 16/12/1993, DJ 07/04/1995: art. 52, p.u.: duas penas (perda do cargo e inabilitação por oito anos), a inabilitação não é acessória; a renúncia apresentada na sessão de julgamento não paralisa o impeachment."
+  },
+  "U4": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — AP 694",
+   "identifier": "AP 694",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AP%20694%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "3d2084172b6bf00ca8e21e0cce3042baa53c349eae3219cbfa06f4122d18856d",
+   "proves": "1ª Turma, Rel. Min. Rosa Weber, j. 02/05/2017, DJe 31/08/2017, item 7: perda do mandato do congressista condenado cabe à Casa (art. 55, VI e § 2º), salvo regime fechado incompatível com o mandato: perda automática declarada pela Mesa (art. 55, III, § 3º)."
+  },
+  "U5": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 1616",
+   "identifier": "ADI 1616",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201616%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "900c18ebf98caa497ac6ce8af7b1e9f9084488ac2e65955caf4b9aa5602fdd95",
+   "proves": "Pleno, Rel. Min. Maurício Corrêa, j. 24/05/2001, DJ 24/08/2001, item 4: o múnus do AGU (CF, art. 103, § 3º) deve ser entendido com temperamentos; o AGU não está obrigado a defender tese já declarada inconstitucional pelo STF."
+  },
+  "U6": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 1254 (AgR)",
+   "identifier": "ADI 1254",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201254%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "0fa9d7236c23e97c1545c56c647918dad44824ce91d4d9458097f1fe4330adcc",
+   "proves": "Pleno: \"A função processual do Advogado-Geral da União, nos processos de controle de constitucionalidade por via de ação, é eminentemente defensiva\"."
+  },
+  "U7": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 789",
+   "identifier": "ADI 789",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20789%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "df485ceea2cd806ae3532e8d894fef29e064a8c4b82788b075c219777abce59b",
+   "proves": "Pleno, Rel. Min. Celso de Mello, j. 26/05/1994, DJ 19/12/1994: \"inteligência da norma inscrita no art. 130\": o MP junto ao TCU é órgão de extração constitucional, sem fisionomia institucional própria, na intimidade estrutural da Corte de Contas."
+  },
+  "U8": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADI 5017, aba Decisões",
+   "identifier": "ADI 5017 (incidente 4437805)",
+   "url": "https://portal.stf.jus.br/processos/abaDecisoes.asp?incidente=4437805",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "43f9db70b1bd9d6e28ab3cabc78c0236bf085a391fdd896b441e07c181d8684a",
+   "proves": "Liminar deferida pela Presidência em 17/07/2013, \"sujeito ao referendo do Colegiado\", para suspender os efeitos da EC 73/2013; não há referendo nem mérito registrados; autos conclusos ao relator (Min. Luiz Fux) em 18/06/2025."
+  },
+  "U9": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — Inq 4787 AgR-QO",
+   "identifier": "Inq 4787",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%204787%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "54ba687b866dba99abaa4bd11d064e81b2d49773e05d0c1376c10690769927d4",
+   "proves": "Pleno, Rel. Min. Gilmar Mendes, j. 12/03/2025 (mesma sessão do HC 232627), DJe 27/05/2025: mesma tese; \"Dispositivos relevantes citados: CF/1988, art. 53, §1º\"; ex-parlamentar."
+  },
+  "U10": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Repercussão Geral — Tema 157 (página do tema)",
+   "identifier": "Tema 157 / RE 729744",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "732326315c7f3c1977425a7faaf590f41667350f33b390585ac8f8343129c7bf",
+   "proves": "Título \"Competência exclusiva da Câmara Municipal para o julgamento das contas de Prefeito\"; discussão \"à luz do art. 31\"; parecer prévio meramente opinativo; trânsito em julgado 15/10/2019. Tese no corpus oficial arquivado (J4, 2026-09-21)."
+  }
+ },
+ "decisions": [
+  {
+   "recommendation_id": "J0-BL-047",
+   "rank": 1,
+   "recommended_by_backlog": "CF88:ART.29:INC.X",
+   "original_recommendation": "STF Sumula 702 — competencia do Tribunal de Justica para julgar prefeitos restrita aos crimes da Justica comum estadual",
+   "suggested_identifiers": [
+    "Súmula 702"
+   ],
+   "precedents": [
+    {
+     "id": "STF:SUMULA:702",
+     "court": "STF",
+     "klass": "SUMULA",
+     "number": "702",
+     "judgment": "aprovação 24/09/2003",
+     "publication": "DJ 09, 10 e 13/10/2003"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "Referência legislativa oficial: \"Constituição Federal de 1988, art. 29, X\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 29, X (redação dada pela EC 1/1992 ao antigo VIII, mantida).",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.29:INC.X"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "súmula vigente",
+   "sources": [
+    "U1"
+   ],
+   "evidence_excerpt": "A competência do Tribunal de Justiça para julgar prefeitos restringe-se aos crimes de competência da Justiça comum estadual. Referência Legislativa: Constituição Federal de 1988, art. 29, X.",
+   "reason": "Súmula do STF cuja referência legislativa oficial é exatamente o art. 29, X. Súmula comum: o firmware tem o rótulo \"SUMULA STF\", mas o tipo nunca foi validado fisicamente.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "SUMULA": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-053",
+   "rank": 2,
+   "recommended_by_backlog": "CF88:ART.52:PAR.UNICO",
+   "original_recommendation": "MS 34.418 (STF, Plenario, 25/09/2023)",
+   "suggested_identifiers": [
+    "MS 34418"
+   ],
+   "precedents": [
+    {
+     "id": "STF:MS:34418",
+     "court": "STF",
+     "klass": "MS",
+     "number": "34418",
+     "judgment": "Pleno, 25/09/2023 (com MS 34379 e 34384)",
+     "publication": "DJe 06/10/2023",
+     "rapporteur": "Min. Rosa Weber",
+     "result": "prejudicado / não conhecido"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa cita o \"ART. 52, Parágrafo Único, Da Constituição Federal\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 52, p.u. sem alteração.",
+   "target_check": "FAIL_MATERIALITY",
+   "recommended_targets": [],
+   "decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito não apreciado (prejudicado)",
+   "sources": [
+    "U2"
+   ],
+   "evidence_excerpt": "Mandado de segurança prejudicado ou, se assim não se entender, não conhecido. Cisão de votações referentes à perda do cargo e à inabilitação (art. 52, parágrafo único, da Constituição Federal).",
+   "reason": "O STF não decidiu se a votação separada (perda do cargo × inabilitação) é válida: o mandado foi julgado prejudicado ou não conhecido. Vincular ao art. 52, p.u. sugeriria uma tese que o tribunal não fixou.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "MS": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [
+      "PERDA_DE_OBJETO"
+     ],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-054",
+   "rank": 3,
+   "recommended_by_backlog": "CF88:ART.52:PAR.UNICO",
+   "original_recommendation": "MS 21.689 (STF)",
+   "suggested_identifiers": [
+    "MS 21689"
+   ],
+   "precedents": [
+    {
+     "id": "STF:MS:21689",
+     "court": "STF",
+     "klass": "MS",
+     "number": "21689",
+     "judgment": "Pleno, 16/12/1993",
+     "publication": "DJ 07/04/1995",
+     "rapporteur": "Min. Carlos Velloso"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa cita \"C.F., art. 52, parágrafo único\" e \"C.F., 1988, art. 52, parag. único\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 52, p.u. vigente; a ementa compara com as Constituições anteriores (contexto histórico, não versão do target).",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.52:PAR.UNICO"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado (1993)",
+   "sources": [
+    "U3"
+   ],
+   "evidence_excerpt": "A existência, no impeachment brasileiro, segundo a Constituição (C.F., 1988, art. 52, parag. único), de duas penas: a) perda do cargo; b) inabilitação, por oito anos. A renúncia ao cargo, apresentada na sessão de julgamento, não paralisa o processo.",
+   "reason": "Precedente do Pleno que interpreta diretamente o art. 52, p.u.: inabilitação autônoma e efeito da renúncia (caso Collor). MS é um tipo novo no aparelho (NEW_JURIS_TYPE_REQUIRES_DESIGN).",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "MS": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-061",
+   "rank": 4,
+   "recommended_by_backlog": "CF88:ART.55:INC.VI",
+   "original_recommendation": "AP 694 (STF)",
+   "suggested_identifiers": [
+    "AP 694"
+   ],
+   "precedents": [
+    {
+     "id": "STF:AP:694",
+     "court": "STF",
+     "klass": "AP",
+     "number": "694",
+     "judgment": "1ª Turma, 02/05/2017",
+     "publication": "DJe 31/08/2017",
+     "rapporteur": "Min. Rosa Weber",
+     "organ": "Turma (não Plenário)"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "O item 7 da ementa cita \"artigo 55, VI e § 2º, da CF\" e \"artigo 55, III, § 3º, da CF\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 55 vigente (EC 76/2013 no § 2º: votação aberta).",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.55:INC.VI"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "MEDIUM",
+   "status_processual": "mérito julgado (Turma); orientação do STF oscilante (AP 470 × AP 565 × AP 694)",
+   "sources": [
+    "U4"
+   ],
+   "evidence_excerpt": "Perda do mandato parlamentar: É da competência das Casas Legislativas decidir sobre a perda do mandato do Congressista condenado criminalmente (artigo 55, VI e § 2º, da CF). Regra excepcionada quando a condenação impõe regime fechado.",
+   "reason": "Interpreta diretamente o art. 55, VI. A confiança é MEDIUM porque é precedente de Turma num tema em que a orientação do STF oscilou; a ficha precisa dizer isso. AP é um tipo novo no aparelho.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "AP": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-134",
+   "rank": 5,
+   "recommended_by_backlog": "CF88:ART.165:PAR.18",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "ADI 7047",
+    "ADI 7064"
+   ],
+   "precedents": [
+    {
+     "id": "STF:ADI:7047-7064",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "7047/7064",
+     "judgment": "Pleno, 30/11/2023",
+     "publication": "DJe 19/12/2023 (ADI 7064)"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "O art. 165, § 18 é da CF, mas foi incluído pela EC 136/2025 (P1), depois do julgamento.",
+   "temporal_version": "NOT_APPLICABLE",
+   "temporal_note": "O precedente (2023) é anterior ao dispositivo (EC 136/2025); não há \"Vide ADI\" no § 18.",
+   "target_check": "FAIL_TEMPORAL",
+   "recommended_targets": [],
+   "decision": "REJECT_TEMPORAL_MISMATCH_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado",
+   "sources": [
+    "P1",
+    "S6",
+    "S4"
+   ],
+   "evidence_excerpt": "§ 18. A partir do exercício financeiro de 2026, serão excluídas do limite individualizado do Poder Executivo as despesas com precatórios e requisições de pequeno valor. (Incluído pela Emenda Constitucional nº 136, de 2025)",
+   "reason": "Uma decisão de 2023 não pode ter interpretado um parágrafo criado em 2025. A nota do backlog descreve o art. 107-A do ADCT, que já foi decidido no Batch02 (ADI 7064).",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "EMENDA_CONSTITUCIONAL"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "ADCT"
+     ],
+     "alert": true
+    },
+    "temporal": {
+     "signals": [
+      "REDACAO_DADA_POR_EC"
+     ],
+     "ecs_cited": [
+      136
+     ],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-090",
+   "rank": 6,
+   "recommended_by_backlog": "CF88:ART.103:PAR.1",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "ADI 1254",
+    "ADI 1616",
+    "ADI 4983"
+   ],
+   "precedents": [
+    {
+     "id": "STF:ADI:1616",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "1616",
+     "judgment": "Pleno, 24/05/2001",
+     "publication": "DJ 24/08/2001",
+     "rapporteur": "Min. Maurício Corrêa"
+    },
+    {
+     "id": "STF:ADI:1254",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "1254",
+     "judgment": "Pleno (AgR)",
+     "publication": "DJ 17/03/2000 (acórdão do processo)"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ADI 1616 cita \"CF, artigo 103, § 3º\"; a ADI 1254 trata da \"função processual do Advogado-Geral da União\" (art. 103, § 3º).",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 103, § 3º vigente (redação originária).",
+   "target_check": "FAIL_TARGET",
+   "recommended_targets": [
+    "CF88:ART.103:PAR.3"
+   ],
+   "decision": "REALLOCATE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado",
+   "sources": [
+    "U5",
+    "U6"
+   ],
+   "evidence_excerpt": "O munus a que se refere o imperativo constitucional (CF, artigo 103, § 3º) deve ser entendido com temperamentos. A função processual do Advogado-Geral da União é eminentemente defensiva.",
+   "reason": "A nota do backlog cita \"art. 103, § 3º\", mas o target ficou no § 1º (oitiva do PGR). Os precedentes verificados tratam do AGU, § 3º. A ADI 4983 não foi verificada para esse ponto e não entra na proposta.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-122",
+   "rank": 7,
+   "recommended_by_backlog": "CF88:ART.130",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "ADI 3315",
+    "ADI 3804",
+    "ADI 4427",
+    "ADI 789"
+   ],
+   "precedents": [
+    {
+     "id": "STF:ADI:789",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "789",
+     "judgment": "Pleno, 26/05/1994",
+     "publication": "DJ 19/12/1994",
+     "rapporteur": "Min. Celso de Mello"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa traz \"INTELIGÊNCIA DA NORMA INSCRITA NO ART. 130 DA CONSTITUIÇÃO\" (o objeto era a Lei 8.443/92, interpretada à luz do art. 130).",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 130 na redação originária.",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.130"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado (improcedente)",
+   "sources": [
+    "U7"
+   ],
+   "evidence_excerpt": "MINISTÉRIO PÚBLICO JUNTO AO TCU - INSTITUIÇÃO QUE NÃO INTEGRA O MINISTÉRIO PÚBLICO DA UNIÃO - INTELIGÊNCIA DA NORMA INSCRITA NO ART. 130 DA CONSTITUIÇÃO. Lei n. 8.443/92.",
+   "reason": "Precedente-base do STF sobre o art. 130. As ADIs 3315, 3804 e 4427 da nota não foram verificadas nesta rodada; a proposta cobre só a ADI 789. O alerta de namespace (Lei 8.443/92) foi conferido: a lei era o objeto, e o art. 130 o parâmetro interpretado.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "LEI"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-165",
+   "rank": 8,
+   "recommended_by_backlog": "ADCT:ART.27",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "ADI 5017"
+   ],
+   "precedents": [
+    {
+     "id": "STF:ADI:5017",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "5017",
+     "judgment": "liminar monocrática da Presidência, 17/07/2013 (sujeita a referendo)",
+     "publication": "DJe 2013",
+     "rapporteur": "Min. Luiz Fux (relator atual)"
+    }
+   ],
+   "namespace": "ADCT",
+   "namespace_evidence": "A decisão suspende os efeitos da EC 73/2013, que incluiu o § 11 no art. 27 do ADCT (anotação oficial \"Vide ADI 5017\").",
+   "temporal_version": "CURRENT",
+   "temporal_note": "ADCT art. 27, § 11 (EC 73/2013) continua no texto compilado, com efeitos suspensos.",
+   "target_check": "GRANULARITY",
+   "recommended_targets": [
+    "ADCT:ART.27:PAR.11"
+   ],
+   "decision": "PROMOTE_PROVISIONAL_RECOMMENDED",
+   "confidence": "MEDIUM",
+   "status_processual": "cautelar monocrática não referendada; mérito pendente (conclusos em 18/06/2025)",
+   "sources": [
+    "U8",
+    "P1"
+   ],
+   "revalidation": {
+    "trigger": "REFERENDO_OU_JULGAMENTO_DE_MERITO",
+    "max_age_days": 90,
+    "last_verified_on": "2026-10-17",
+    "check": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4437805"
+   },
+   "evidence_excerpt": "em caráter excepcional, e sujeito ao referendo do Colegiado, defiro a medida cautelar pleiteada, para suspender os efeitos da EC 73/2013.",
+   "reason": "Informação essencial para quem lê o § 11 (a criação dos TRFs pela EC 73/2013 está suspensa desde 2013). Mas é cautelar monocrática nunca referendada, por isso a proposta é provisória, com gatilho de revalidação. O alvo vai do artigo para o § 11.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "EMENDA_CONSTITUCIONAL"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [
+      73
+     ],
+     "alert": false
+    },
+    "status": {
+     "signals": [
+      "CAUTELAR",
+      "REFERENDO"
+     ],
+     "provisional": true
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-048",
+   "rank": 9,
+   "recommended_by_backlog": "CF88:ART.29:INC.X",
+   "original_recommendation": "STF 2025 — HC 232627 e Inq 4787: prerrogativa de foro para crimes praticados no cargo e em razao das funcoes subsiste apos o afastamento",
+   "suggested_identifiers": [
+    "HC 232627",
+    "Inq 4787"
+   ],
+   "precedents": [
+    {
+     "id": "STF:HC:232627",
+     "court": "STF",
+     "klass": "HC",
+     "number": "232627",
+     "judgment": "Pleno, 12/03/2025",
+     "publication": "DJe 16/07/2025"
+    },
+    {
+     "id": "STF:INQ:4787",
+     "court": "STF",
+     "klass": "INQ",
+     "number": "4787",
+     "judgment": "Pleno, 12/03/2025 (AgR-QO; mesma sessão)",
+     "publication": "DJe 27/05/2025"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "Os dois acórdãos citam só \"CF/1988, art. 53, §1º\" e tratam de ex-parlamentares; nada sobre o art. 29, X.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "—",
+   "target_check": "FAIL_MATERIALITY",
+   "recommended_targets": [],
+   "decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado; ED do HC em 2026",
+   "sources": [
+    "T7",
+    "U9"
+   ],
+   "evidence_excerpt": "Dispositivos relevantes citados: CF/1988, art. 53, §1º. Inquérito instaurado para apurar envolvimento de ex-parlamentar.",
+   "reason": "A tese é geral sobre foro após o fim do cargo, mas os acórdãos interpretam só o art. 53, § 1º (já aprovado no Batch02 para o HC). Aplicá-la ao foro do prefeito (art. 29, X) seria extensão, não interpretação do dispositivo. O Inq 4787 é o mesmo julgamento do HC 232627 (SAME_JUDGMENT_SAME_SCOPE), relevante para a recomendação J0-BL-059 (MEDIUM).",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "HC": "FIRMWARE_PROTOTYPE_ONLY",
+    "INQ": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-045",
+   "rank": 10,
+   "recommended_by_backlog": "CF88:ART.31:PAR.2",
+   "original_recommendation": "STF Tema 157 (RE 729744) — natureza opinativa do parecer previo; julgamento das contas anuais do Prefeito pela Camara",
+   "suggested_identifiers": [
+    "RE 729744",
+    "Tema 157"
+   ],
+   "precedents": [
+    {
+     "id": "STF:RG:157",
+     "court": "STF",
+     "klass": "RG",
+     "number": "157",
+     "judgment": "RE 729744 (Rel. Min. Gilmar Mendes); tese de 2016",
+     "publication": "trânsito em julgado 15/10/2019"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A página do tema diz que a discussão é \"à luz do art. 31 da Constituição Federal\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 31, § 2º na redação originária.",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.31:PAR.2"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "tese fixada; trânsito em julgado",
+   "sources": [
+    "U10"
+   ],
+   "evidence_excerpt": "O parecer técnico elaborado pelo Tribunal de Contas tem natureza meramente opinativa, competindo exclusivamente à Câmara de Vereadores o julgamento das contas anuais do Chefe do Poder Executivo local (art. 31 da Constituição Federal).",
+   "reason": "Tese vinculante que define a natureza do parecer prévio do § 2º do art. 31. A tese está no corpus oficial arquivado (formato J4 de ficha disponível).",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "RG": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  }
+ ],
+ "totals": {
+  "PROMOTE_PROVISIONAL_RECOMMENDED": 1,
+  "PROMOTE_RECOMMENDED": 5,
+  "REALLOCATE_RECOMMENDED": 1,
+  "REJECT_NOT_MATERIAL_RECOMMENDED": 2,
+  "REJECT_TEMPORAL_MISMATCH_RECOMMENDED": 1
+ }
+}
