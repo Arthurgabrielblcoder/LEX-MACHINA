@@ -1,0 +1,391 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J2E",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-17",
+  "statement": "Batch02 (J2D) ratificado integralmente",
+  "decisions": {
+   "J0-BL-166": "REALLOCATE -> ADCT art. 101, § 5º (registro conjunto ADI 7047/7064)",
+   "J0-BL-167": "REALLOCATE -> ADCT art. 101, § 5º (registro conjunto ADI 7047/7064)",
+   "J0-BL-169": "PROMOTE (rótulo \"ADI 7064\", não \"ADI 7047/7064\")",
+   "J0-BL-039": "PROMOTE",
+   "J0-BL-049": "REALLOCATE -> CF art. 22, I e art. 85, parágrafo único (ficha única)",
+   "J0-BL-052": "REJECT_FALSE_POSITIVE (sem vínculo alternativo)",
+   "J0-BL-057": "PROMOTE",
+   "J0-BL-076": "REALLOCATE -> CF art. 100, § 11 (registro conjunto)",
+   "J0-BL-077": "REALLOCATE -> CF art. 100, § 11 (registro conjunto)",
+   "J0-BL-058": "PROMOTE editorial (HC232627_EDITORIAL_APPROVAL = YES; HC232627_PHYSICAL_APPROVAL = NO; tipo HC próprio)"
+  }
+ },
+ "decisions_file": "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2D_BATCH02_DECISIONS.json",
+ "decisions_sha256": "1e5dd0102b855e5bf9b16c57e9eb0dac974c999b9b703674df902d759004ddce",
+ "archive_corpus": {
+  "path": "C:/LMA/p545e/20260928/LEX_MACHINA_JURIS_CF_J4/CORPUS_JURIS_CF_COMPLETO_PARCIAL.json",
+  "sha256": "5559620ec7f0f98eac3198021825b6f0ce1e97e49502b2a4804aa59a9659e7fe"
+ },
+ "text_notes": {
+  "rg793": "Corpus J4 arquivado (endpoint oficial de teses, 2026-09-21); tese idêntica à do RE 855178 ED conferida em 2026-10-17 (T2).",
+  "sv46": "Corpus J4 arquivado trazia \"são de competência\"; a página oficial consultada em 2026-10-17 (T3) traz \"são da competência\": usado o texto oficial atual.",
+  "rg950": "Não consta do corpus J4 (captura de 2026-09-21). Tese copiada da página oficial do acórdão (T6, 2026-10-17)."
+ },
+ "variants": {
+  "A": "Batch02 compatível com o firmware físico atual (sem HC)",
+  "B": "A + HC 232627 (exige firmware candidato com JTIPO_HC)"
+ },
+ "legacy_key_convention": "ADCT usa o prefixo CF88 na chave e no lookup legado (STF:RG:231:CF88:78:4:-:- = ADCT art. 78, § 4º); o target lógico (ADCT:ART.x) é o do REF_PAYLOAD.",
+ "rejected": {
+  "recommendation_id": "J0-BL-052",
+  "precedent": "STF:ADI:2167",
+  "decision": "REJECT_FALSE_POSITIVE",
+  "alternative_link": null
+ },
+ "total": 8,
+ "records": [
+  {
+   "variant": "A",
+   "target_id": "ADCT:ART.101:PAR.5",
+   "source_id": "STF:ADI:7047-7064",
+   "source_reference_id": "STF:ADI:7047-7064:CF88:101:5:-:-",
+   "label": "ADI 7047/7064 (julgamento conjunto)",
+   "legacy_idx_row": "STF:ADI:7047-7064:CF88:101:5:-:-|adi|STF|7047/7064|merito_julgado|ADI 7047/7064 (julgamento conjunto)|STF:ADI:7047-7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "101",
+    "5",
+    "",
+    ""
+   ],
+   "new_ficha": null,
+   "ratified_decisions": [
+    "J0-BL-166",
+    "J0-BL-167"
+   ],
+   "ratification": [
+    "REALLOCATE -> ADCT art. 101, § 5º (registro conjunto ADI 7047/7064)",
+    "REALLOCATE -> ADCT art. 101, § 5º (registro conjunto ADI 7047/7064)"
+   ],
+   "sources": [
+    "P1",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7047/7064",
+    "titulo": "ADI 7047/7064 (julgamento conjunto)",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7047",
+     "ADI 7064"
+    ]
+   },
+   "joint": "SAME_JUDGMENT_SAME_SCOPE",
+   "joint_with": null,
+   "requires_firmware": null
+  },
+  {
+   "variant": "A",
+   "target_id": "ADCT:ART.107-A",
+   "source_id": "STF:ADI:7064",
+   "source_reference_id": "STF:ADI:7064:CF88:107-A:-:-:-",
+   "label": "ADI 7064",
+   "legacy_idx_row": "STF:ADI:7064:CF88:107-A:-:-:-|adi|STF|7064|merito_julgado|ADI 7064|STF:ADI:7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "107-A",
+    "",
+    "",
+    ""
+   ],
+   "new_ficha": "STF:ADI:7064",
+   "ratified_decisions": [
+    "J0-BL-169"
+   ],
+   "ratification": [
+    "PROMOTE (rótulo \"ADI 7064\", não \"ADI 7047/7064\")"
+   ],
+   "sources": [
+    "P1",
+    "S4",
+    "S6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7064",
+    "titulo": "ADI 7064",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7064"
+    ]
+   },
+   "joint": "SAME_JUDGMENT_NOT_SAME_SCOPE",
+   "joint_with": "STF:ADI:7047 (não tratou do art. 107-A)",
+   "requires_firmware": null
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.100:PAR.11",
+   "source_id": "STF:ADI:7047-7064",
+   "source_reference_id": "STF:ADI:7047-7064:CF88:100:11:-:-",
+   "label": "ADI 7047/7064 (julgamento conjunto)",
+   "legacy_idx_row": "STF:ADI:7047-7064:CF88:100:11:-:-|adi|STF|7047/7064|merito_julgado|ADI 7047/7064 (julgamento conjunto)|STF:ADI:7047-7064|https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+   "legacy_lookup": [
+    "CF88",
+    "100",
+    "11",
+    "",
+    ""
+   ],
+   "new_ficha": null,
+   "ratified_decisions": [
+    "J0-BL-076",
+    "J0-BL-077"
+   ],
+   "ratification": [
+    "REALLOCATE -> CF art. 100, § 11 (registro conjunto)",
+    "REALLOCATE -> CF art. 100, § 11 (registro conjunto)"
+   ],
+   "sources": [
+    "P1",
+    "S4",
+    "S5",
+    "S6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "adi",
+    "numero": "7047/7064",
+    "titulo": "ADI 7047/7064 (julgamento conjunto)",
+    "fonte": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822",
+    "status_processual": "merito_julgado",
+    "aliases": [
+     "ADI 7047",
+     "ADI 7064"
+    ]
+   },
+   "joint": "SAME_JUDGMENT_SAME_SCOPE",
+   "joint_with": null,
+   "requires_firmware": null
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.23:INC.II",
+   "source_id": "STF:RG:793",
+   "source_reference_id": "STF:RG:793:CF88:23:-:II:-",
+   "label": "Tema de Repercussão Geral 793",
+   "legacy_idx_row": "STF:RG:793:CF88:23:-:II:-|repercussao_geral|STF|793|tese_fixada|Tema de Repercussão Geral 793|STF:RG:793|https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+   "legacy_lookup": [
+    "CF88",
+    "23",
+    "",
+    "II",
+    ""
+   ],
+   "new_ficha": "STF:RG:793",
+   "ratified_decisions": [
+    "J0-BL-039"
+   ],
+   "ratification": [
+    "PROMOTE"
+   ],
+   "sources": [
+    "T1",
+    "T2"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "793",
+    "titulo": "Tema de Repercussão Geral 793",
+    "fonte": "https://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp",
+    "status_processual": "tese_fixada"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.22:INC.I",
+   "source_id": "STF:SV:46",
+   "source_reference_id": "STF:SV:46:CF88:22:-:I:-",
+   "label": "Súmula Vinculante 46",
+   "legacy_idx_row": "STF:SV:46:CF88:22:-:I:-|sumula_vinculante|STF|46|vigente|Súmula Vinculante 46|STF:SV:46|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+   "legacy_lookup": [
+    "CF88",
+    "22",
+    "",
+    "I",
+    ""
+   ],
+   "new_ficha": "STF:SV:46",
+   "ratified_decisions": [
+    "J0-BL-049"
+   ],
+   "ratification": [
+    "REALLOCATE -> CF art. 22, I e art. 85, parágrafo único (ficha única)"
+   ],
+   "sources": [
+    "T3"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula_vinculante",
+    "numero": "46",
+    "titulo": "Súmula Vinculante 46",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+    "status_processual": "vigente"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.85:PAR.UNICO",
+   "source_id": "STF:SV:46",
+   "source_reference_id": "STF:SV:46:CF88:85:UNICO:-:-",
+   "label": "Súmula Vinculante 46",
+   "legacy_idx_row": "STF:SV:46:CF88:85:UNICO:-:-|sumula_vinculante|STF|46|vigente|Súmula Vinculante 46|STF:SV:46|https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+   "legacy_lookup": [
+    "CF88",
+    "85",
+    "UNICO",
+    "",
+    ""
+   ],
+   "new_ficha": null,
+   "ratified_decisions": [
+    "J0-BL-049"
+   ],
+   "ratification": [
+    "REALLOCATE -> CF art. 22, I e art. 85, parágrafo único (ficha única)"
+   ],
+   "sources": [
+    "T3"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "sumula_vinculante",
+    "numero": "46",
+    "titulo": "Súmula Vinculante 46",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false",
+    "status_processual": "vigente"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null
+  },
+  {
+   "variant": "A",
+   "target_id": "CF88:ART.53:CAPUT",
+   "source_id": "STF:RG:950",
+   "source_reference_id": "STF:RG:950:CF88:53:-:-:-",
+   "label": "Tema de Repercussão Geral 950",
+   "legacy_idx_row": "STF:RG:950:CF88:53:-:-:-|repercussao_geral|STF|950|tese_fixada|Tema de Repercussão Geral 950|STF:RG:950|https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=950",
+   "legacy_lookup": [
+    "CF88",
+    "53",
+    "",
+    "",
+    ""
+   ],
+   "new_ficha": "STF:RG:950",
+   "ratified_decisions": [
+    "J0-BL-057"
+   ],
+   "ratification": [
+    "PROMOTE"
+   ],
+   "sources": [
+    "T5",
+    "T6"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "repercussao_geral",
+    "numero": "950",
+    "titulo": "Tema de Repercussão Geral 950",
+    "fonte": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=950",
+    "status_processual": "tese_fixada"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": null
+  },
+  {
+   "variant": "B",
+   "target_id": "CF88:ART.53:PAR.1",
+   "source_id": "STF:HC:232627",
+   "source_reference_id": "STF:HC:232627:CF88:53:1:-:-",
+   "label": "HC 232627",
+   "legacy_idx_row": "STF:HC:232627:CF88:53:1:-:-|hc|STF|232627|merito_julgado|HC 232627|STF:HC:232627|https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos",
+   "legacy_lookup": [
+    "CF88",
+    "53",
+    "1",
+    "",
+    ""
+   ],
+   "new_ficha": "STF:HC:232627",
+   "ratified_decisions": [
+    "J0-BL-058"
+   ],
+   "ratification": [
+    "PROMOTE editorial (HC232627_EDITORIAL_APPROVAL = YES; HC232627_PHYSICAL_APPROVAL = NO; tipo HC próprio)"
+   ],
+   "sources": [
+    "T7"
+   ],
+   "temporal_version": [
+    "CURRENT"
+   ],
+   "payload": {
+    "tribunal": "STF",
+    "tipo": "hc",
+    "numero": "232627",
+    "titulo": "HC 232627",
+    "fonte": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos",
+    "status_processual": "merito_julgado"
+   },
+   "joint": null,
+   "joint_with": null,
+   "requires_firmware": "JTIPO_HC (rótulo \"HC <NUMERO>\")"
+  }
+ ],
+ "fichas": {
+  "STF:ADI:7064": "AÇÃO DIRETA DE INCONSTITUCIONALIDADE 7064\nTRIBUNAL: STF\nSTATUS: mérito julgado\nPROCESSO: ADI 7064 (Rel. Min. Luiz Fux)\n\nART. 107-A DO ADCT (TETO DE PRECATÓRIOS, EC 114/2021)\nEm 30/11/2023 o Plenário julgou a ação parcialmente procedente e:\n- deu interpretação conforme ao caput do art. 107-A do ADCT, para que seus efeitos operem somente no exercício de 2022;\n- declarou inconstitucionais os incisos II e III do art. 107-A e, por arrastamento, os §§ 3º, 5º e 6º;\n- deferiu a abertura de créditos extraordinários para quitar os precatórios dos exercícios de 2022 a 2026 que excederam o subteto, reconhecendo que o pagamento se insere nas exceções do art. 3º, § 2º, da LC 200/2023.\n\nJULGAMENTO CONJUNTO\nJulgada em conjunto com a ADI 7047. Os pontos sobre o art. 107-A são somente da ADI 7064. Os pontos comuns às duas ações (art. 100, §§ 9º e 11, da CF e art. 101, § 5º, do ADCT) estão na ficha ADI 7047/7064.\n\nACÓRDÃO\nJulgamento em 01/12/2023, DJe de 19/12/2023.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/processos/detalhe.asp?incidente=6330822\n",
+  "STF:RG:793": "REPERCUSSÃO GERAL 793\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 855178\n\nTESE/ENUNCIADO\nOs entes da federação, em decorrência da competência comum, são solidariamente responsáveis nas demandas prestacionais na área da saúde, e diante dos critérios constitucionais de descentralização e hierarquização, compete à autoridade judicial direcionar o cumprimento conforme as regras de repartição de competências e determinar o ressarcimento a quem suportou o ônus financeiro.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/repercussaogeral/retornartesesrepercussaogeral.asp\n",
+  "STF:SV:46": "SÚMULA VINCULANTE 46\nTRIBUNAL: STF\nSTATUS: vigente\nPROCESSO: Não disponível na fonte.\n\nTESE/ENUNCIADO\nA definição dos crimes de responsabilidade e o estabelecimento das respectivas normas de processo e julgamento são da competência legislativa privativa da União.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search/seq-sumula805/false\n",
+  "STF:RG:950": "REPERCUSSÃO GERAL 950\nTRIBUNAL: STF\nSTATUS: tese_fixada\nPROCESSO: RE 632115\n\nTESE/ENUNCIADO\n1. A imunidade material parlamentar (art. 53, caput, c/c art. 27, § 1º, e art. 29, VIII, CF/1988) configura excludente da responsabilidade civil objetiva do Estado (art. 37, § 6º, CF/1988), afastando qualquer pretensão indenizatória em face do ente público por opiniões, palavras e votos cobertos por essa garantia. 2. Nas hipóteses em que a conduta do parlamentar extrapolar os limites da imunidade material, eventual responsabilização recairá de forma pessoal, direta e exclusiva sobre o próprio parlamentar, sob o regime de responsabilidade civil subjetiva.\n\nFONTE OFICIAL\nhttps://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=950\n",
+  "STF:HC:232627": "HABEAS CORPUS 232627\nTRIBUNAL: STF\nSTATUS: mérito julgado (Plenário)\nPROCESSO: HC 232627 (Rel. Min. Gilmar Mendes)\n\nTESE\nA prerrogativa de foro para julgamento de crimes praticados no cargo e em razão das funções subsiste mesmo após o afastamento do cargo, ainda que o inquérito ou a ação penal sejam iniciados depois de cessado seu exercício.\n\nJULGAMENTO\nPlenário, 12/03/2025; DJe de 16/07/2025. Dispositivo constitucional citado: art. 53, § 1º. Revê em parte a orientação da AP 937-QO.\n\nEMBARGOS DE DECLARAÇÃO\nEm 25/05/2026 (DJe de 08/06/2026) o Plenário acolheu embargos da PGR, com efeitos integrativos, para fixar balizas de aplicação da tese.\n\nFONTE OFICIAL\nhttps://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22HC%20232627%22&base=acordaos\n"
+ }
+}
