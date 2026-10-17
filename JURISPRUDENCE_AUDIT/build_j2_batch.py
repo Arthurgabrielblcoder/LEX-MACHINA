@@ -150,7 +150,9 @@ def build(n, level, selection_only=False):
                       for i, b in enumerate(lvl)],
                selected=chosen, LEVEL_REMAINING_AFTER_BATCH=len(lvl) - len(chosen))
     review = LEVEL_DIR[level] / f'j2_batch{n:02d}_review.py'
-    if not selection_only and review.is_file():
+    if not selection_only and not chosen:
+        doc.update(sources={}, decisions=[], totals={}, closure=f'Fila {level} esgotada: nenhum candidato {level} restante; lote vazio de fechamento.')
+    elif not selection_only and review.is_file():
         sys.path.insert(0, str(LEVEL_DIR[level]))
         R = __import__(f'j2_batch{n:02d}_review')
         decisions = R.decisions(doc)

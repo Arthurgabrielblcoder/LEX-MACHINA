@@ -1,0 +1,759 @@
+{
+ "schema_version": 1,
+ "round": "J2",
+ "batch": "BATCH04",
+ "level": "HIGH",
+ "mode": "HOST_ONLY_DECISIONS_NO_MATERIALIZATION",
+ "status": "AWAITING_USER_RATIFICATION",
+ "state_model": {
+  "PHYSICALLY_INSTALLED": "J2C 261/160 (J2B_1 REF_PAYLOAD)",
+  "EDITORIALLY_APPROVED_HOST_ONLY": "Batch02 J2E: 8 relações (A+B)",
+  "UNAPPROVED_RESEARCH_PROPOSAL": [
+   "BATCH03"
+  ]
+ },
+ "previous_batches": {
+  "1": "RATIFIED",
+  "2": "RATIFIED",
+  "3": "AWAITING_USER_RATIFICATION"
+ },
+ "inputs": {
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2A_BATCH01_DECISIONS.json": "35cb39e511d811dbbdda823393a1c243c5c430acc1b70326a7fb969980ecaa14",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2D_BATCH02_DECISIONS.json": "1e5dd0102b855e5bf9b16c57e9eb0dac974c999b9b703674df902d759004ddce",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2_BATCH03_DECISIONS.json": "a89cf876e8dc2ceeee4656ebd7f26a18c31cfde1aabba95c47c34510632fcc09",
+  "LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2E.json": "147fe4b200e58d231f98f18be60fff045c60306f7324a9812a67a69a320f89d3",
+  "JURISPRUDENCE_AUDIT/J0_DIAGNOSTIC_AUDIT.json": "0bd25c5c11ea2edaa75413f99c6cd755040757b7e54469d9a94cc2ea05e16fc4"
+ },
+ "reconstruction": {
+  "ANALYZED_IN_PREVIOUS_BATCHES": 30,
+  "COVERED_BY_RATIFIED": {
+   "J0-BL-060": {
+    "target": "CF88:ART.53:PAR.1",
+    "covered_by": [
+     "CF88:ART.53:PAR.1|STF:HC:232627"
+    ]
+   },
+   "J0-BL-083": {
+    "target": "CF88:ART.100:PAR.9",
+    "covered_by": [
+     "CF88:ART.100:PAR.9|STF:ADI:4425",
+     "CF88:ART.100:PAR.9|STF:ADI:7064"
+    ]
+   },
+   "J0-BL-085": {
+    "target": "CF88:ART.100:PAR.12",
+    "covered_by": [
+     "CF88:ART.100:PAR.12|STF:ADI:4425"
+    ]
+   },
+   "J0-BL-168": {
+    "target": "ADCT:ART.101",
+    "covered_by": [
+     "ADCT:ART.101|STF:ADI:7047",
+     "ADCT:ART.101|STF:ADI:7064"
+    ]
+   }
+  },
+  "BACKLOG_PENDING_CURRENT": 114,
+  "HIGH_CURRENT": 5,
+  "MEDIUM_CURRENT": 82,
+  "LOW_CURRENT": 27,
+  "WITHOUT_IDENTIFIER": 67,
+  "LEFT_LEVEL_SINCE_PREVIOUS_BATCH": {}
+ },
+ "queue": [
+  {
+   "recommendation_id": "J0-BL-046",
+   "target_id": "CF88:ART.31:PAR.2",
+   "desired_reference": "STF Tema 835 (RE 848826) — contas de governo e de gestao do Prefeito apreciadas pela Camara (LC 64/1990)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "RE 848826",
+    "Tema 835"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 1,
+   "recommendation_text": "contas de governo x contas de gestao"
+  },
+  {
+   "recommendation_id": "J0-BL-051",
+   "target_id": "CF88:ART.35:INC.IV",
+   "desired_reference": "STF — taxatividade das hipoteses de intervencao estadual (art. 35) e natureza politico-administrativa do procedimento no Judiciario (ADI 336, ADI 7369, AI 343461 AgR)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [
+    "ADI 336",
+    "ADI 7369",
+    "AI 343461"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 2,
+   "recommendation_text": "provenance da aprovacao do art. 35, IV (texto principal inalterado)"
+  },
+  {
+   "recommendation_id": "J0-BL-067",
+   "target_id": "CF88:ART.86",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADPF 378",
+    "MS 21564"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 3,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", arts. 52 e 86): ADPF 378 MC (2015): cabe ao Senado o juízo inicial de instauração ou não do processo, por maioria simples; MS 21.564 (1992): a Câmara profere juízo político de "
+  },
+  {
+   "recommendation_id": "J0-BL-068",
+   "target_id": "CF88:ART.86:PAR.3",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "ADI 1021",
+    "ADI 978",
+    "Inq 672"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 4,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 86): ADI 978 e ADI 1.021 (1995): o § 3º é imunidade à prisão cautelar (em flagrante, preventiva e temporária), exclusiva do Presidente; Inq 672 QO (1992): o § 4º impede, n"
+  },
+  {
+   "recommendation_id": "J0-BL-072",
+   "target_id": "CF88:ART.96:INC.III",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "Rcl 84738"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 5,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (Informativo STF 1212): Rcl 84.738 AgR/PI, Segunda Turma, unânime, julgamento finalizado em 14/04/2026: membro de Ministério Público estadual processado por crimes não relacionados com o cargo mantém foro no Trib"
+  }
+ ],
+ "selected": [
+  "J0-BL-046",
+  "J0-BL-051",
+  "J0-BL-067",
+  "J0-BL-068",
+  "J0-BL-072"
+ ],
+ "LEVEL_REMAINING_AFTER_BATCH": 0,
+ "sources": {
+  "V1": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Repercussão Geral — Tema 835 (página do tema)",
+   "identifier": "Tema 835 / RE 848826",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=835",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "1b3d6fa98be24d1d5fcf5307f17daf60576a516176c545b3aeeaef2fd0ace681",
+   "proves": "Discussão \"à luz dos arts. 5º, XXXIV, a, XXXV, LIV e LV, 31, § 2º, 71, I, 75, e 93, IX\"; Rel. Min. Luís Roberto Barroso; trânsito em julgado 08/10/2019. Tese no corpus oficial arquivado (J4)."
+  },
+  "V2": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 336",
+   "identifier": "ADI 336",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20336%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "0a6a19fc471fd91cd050a9f5641eb4d22a3b8198c0b2a5fb44d1fe7c571bfe01",
+   "proves": "Pleno, Rel. Min. Eros Grau, j. 10/02/2010, DJe 17/09/2010: Constituição de Sergipe; \"O artigo 35 da Constituição do Brasil prevê as hipóteses de intervenção dos Estados nos Municípios. A Constituição sergipana acrescentou outras hipóteses\" (inconstitucional)."
+  },
+  "V3": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 7369",
+   "identifier": "ADI 7369",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207369%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "e5814ff5311de056317d3a2a54ec7d4ae973c2c44b803dcff4789902db26603b",
+   "proves": "Pleno, Rel. Min. Cármen Lúcia, j. 13/05/2024, DJe 08/08/2024: hipóteses de intervenção estadual taxativas (art. 34, VII e art. 35); princípios sensíveis de observância obrigatória pelos Estados, sem necessidade de reprodução na Constituição estadual."
+  },
+  "V4": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — AI 343461 AgR",
+   "identifier": "AI 343461",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22AI%20343461%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "0578345990f1979c850077ab9fc01fce2dbba4d5cb4a0d4681c0e62ee62d210a",
+   "proves": "2ª Turma, Rel. Min. Celso de Mello, j. 18/06/2002, DJ 29/11/2002: intervenção estadual por inexecução de ordem judicial \"(CF, ART. 35, IV)\"; procedimento de caráter político-administrativo; inviável o recurso extraordinário."
+  },
+  "V5": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADPF 378 (MC e ED)",
+   "identifier": "ADPF 378",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADPF%20378%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "4685348c08714fc638a6a38403a8e6266105a88388e1a2c266b2a761247ea146",
+   "proves": "MC: Pleno, red. p/ acórdão Min. Roberto Barroso, j. 17/12/2015, DJe 08/03/2016: Câmara autoriza (art. 51, I); Senado processa e julga, incluído o juízo inicial de instauração (art. 52, I); arts. da Lei 1.079/50 não recepcionados por incompatibilidade com os arts. 51, I; 52, I; e 86, § 1º, II. ED: j. 16/03/2016."
+  },
+  "V6": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — MS 21564",
+   "identifier": "MS 21564",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22MS%2021564%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "0f5aefaaca850bf7611c8f4d72fc45dd90a2f444bf72d56a8e694d7d8e9d0eef",
+   "proves": "Pleno, red. p/ acórdão Min. Carlos Velloso, j. 23/09/1992, DJ 27/08/1993: \"a Câmara dos Deputados ... examina a admissibilidade da acusação (C.F., art. 86, caput)\" e \"profere juízo político\"; Senado processa e julga (art. 52, I; art. 86, § 1º, II)."
+  },
+  "V7": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 978",
+   "identifier": "ADI 978",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%20978%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "025e6325fa05e4bf9811dd1f549f0605d46819701aca64595695396400e6bb49",
+   "proves": "Pleno, red. p/ acórdão Min. Celso de Mello, j. 19/10/1995, DJ 17/11/1995: Constituição da Paraíba; prerrogativas inerentes ao Presidente \"(CF/88, ART. 86, PAR. 3. E 4.)\"; imunidade à prisão cautelar não extensível ao Governador."
+  },
+  "V8": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — Inq 672 QO",
+   "identifier": "Inq 672",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Inq%20672%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "4d82e98e47f479e085dcfe5e0f5b3e76be7cfb249bb0e20fd1abba85037e8ba4",
+   "proves": "Pleno, Rel. Min. Celso de Mello, j. 16/09/1992, DJ 16/04/1993: \"CF, ART. 86, § 4º\": imunidade temporária do Presidente à persecução penal por atos estranhos à função; exegese estrita; inaplicável a situações extrapenais."
+  },
+  "V9": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — Rcl 84738 AgR",
+   "identifier": "Rcl 84738",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22Rcl%2084738%22&base=acordaos",
+   "accessed_on": "2026-10-17",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "d735d7e62842bb525c09bd75372762c4984ec48b1054fd7f6e201d02af631bbc",
+   "proves": "2ª Turma, Rel. Min. Dias Toffoli, j. 14/04/2026, DJe 03/09/2026: membro do MP mantém o foro (TJ) mesmo por crime não relacionado à função; \"enquanto não sobrevier o julgamento do Tema nº 1.147 da Repercussão Geral ou eventual pronunciamento do Plenário\"."
+  }
+ },
+ "decisions": [
+  {
+   "recommendation_id": "J0-BL-046",
+   "rank": 1,
+   "recommended_by_backlog": "CF88:ART.31:PAR.2",
+   "original_recommendation": "STF Tema 835 (RE 848826) — contas de governo e de gestao do Prefeito apreciadas pela Camara (LC 64/1990)",
+   "suggested_identifiers": [
+    "RE 848826",
+    "Tema 835"
+   ],
+   "precedents": [
+    {
+     "id": "STF:RG:835",
+     "court": "STF",
+     "klass": "RG",
+     "number": "835",
+     "judgment": "RE 848826 (Rel. Min. Luís Roberto Barroso); tese de 2016",
+     "publication": "trânsito em julgado 08/10/2019"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A tese é fixada \"para os fins do art. 1º, I, g, da LC 64/1990\" (alerta), mas define a competência das Câmaras e o quórum de 2/3 do art. 31, § 2º; o tema é discutido \"à luz do art. 31, § 2º\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 31, § 2º na redação originária.",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.31:PAR.2"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "tese fixada; trânsito em julgado",
+   "sources": [
+    "V1"
+   ],
+   "evidence_excerpt": "Para os fins do art. 1º, inciso I, alínea \"g\", da Lei Complementar 64, a apreciação das contas de prefeitos, tanto as de governo quanto as de gestão, será exercida pelas Câmaras Municipais, com o auxílio dos Tribunais de Contas competentes, cujo parecer prévio somente deixará de prevalecer por decisão de 2/3 dos vereadores. (arts. 31, § 2º, 71, I, da Constituição Federal)",
+   "reason": "Complementa o Tema 157 (Batch03) no mesmo § 2º: também as contas de gestão do prefeito são julgadas pela Câmara. O alerta de namespace (LC 64/90) foi conferido: a lei é o contexto da inelegibilidade, e a regra aplicada é a do art. 31, § 2º.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "RG": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [
+      "LEI_COMPLEMENTAR"
+     ],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-051",
+   "rank": 2,
+   "recommended_by_backlog": "CF88:ART.35:INC.IV",
+   "original_recommendation": "STF — taxatividade das hipoteses de intervencao estadual (art. 35) e natureza politico-administrativa do procedimento no Judiciario (ADI 336, ADI 7369, AI 343461 AgR)",
+   "suggested_identifiers": [
+    "ADI 336",
+    "ADI 7369",
+    "AI 343461"
+   ],
+   "precedents": [
+    {
+     "id": "STF:ADI:7369",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "7369",
+     "judgment": "Pleno, 13/05/2024",
+     "publication": "DJe 08/08/2024",
+     "target": "CF88:ART.35:INC.IV"
+    },
+    {
+     "id": "STF:AI:343461",
+     "court": "STF",
+     "klass": "AI",
+     "number": "343461",
+     "judgment": "2ª Turma, 18/06/2002 (AgR)",
+     "publication": "DJ 29/11/2002",
+     "target": "CF88:ART.35:INC.IV"
+    },
+    {
+     "id": "STF:ADI:336",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "336",
+     "judgment": "Pleno, 10/02/2010",
+     "publication": "DJe 17/09/2010",
+     "target": "CF88:ART.35"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "As ADIs julgaram Constituições estaduais (MT, SE) usando como parâmetro o art. 35 da CF; o AI cita \"CF, ART. 35, IV\". O objeto é norma estadual, mas o dispositivo interpretado é a CF.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 35 na redação originária.",
+   "target_check": "PASS_WITH_SPLIT",
+   "recommended_targets": [
+    "CF88:ART.35:INC.IV",
+    "CF88:ART.35"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado (ADIs no Pleno; AI na Turma)",
+   "sources": [
+    "V3",
+    "V4",
+    "V2"
+   ],
+   "evidence_excerpt": "Na intervenção estadual, as hipóteses excepcionais estão taxativas e exaustivamente previstas no inc. VII do art. 34 e no art. 35 da Constituição da República. INTERVENÇÃO ESTADUAL EM MUNICÍPIO - INEXECUÇÃO DE ORDEM JUDICIAL (CF, ART. 35, IV). Constituição do Estado de Sergipe.",
+   "reason": "Divisão por alvo. ADI 7369 e AI 343461 vão para o inciso IV: princípios sensíveis e natureza político-administrativa da representação interventiva. A ADI 336 (taxatividade das hipóteses) vai para o art. 35 como um todo. AI é tipo novo no aparelho.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED",
+    "AI": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [
+      "CONSTITUICAO_ESTADUAL"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-067",
+   "rank": 3,
+   "recommended_by_backlog": "CF88:ART.86",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "ADPF 378",
+    "MS 21564"
+   ],
+   "precedents": [
+    {
+     "id": "STF:MS:21564",
+     "court": "STF",
+     "klass": "MS",
+     "number": "21564",
+     "judgment": "Pleno, 23/09/1992",
+     "publication": "DJ 27/08/1993",
+     "target": "CF88:ART.86"
+    },
+    {
+     "id": "STF:ADPF:378",
+     "court": "STF",
+     "klass": "ADPF",
+     "number": "378",
+     "judgment": "Pleno, MC 17/12/2015; ED 16/03/2016",
+     "publication": "DJe 08/03/2016",
+     "target": "CF88:ART.86:PAR.1:INC.II",
+     "provisional": true,
+     "additional_target": "CF88:ART.52:INC.I"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "MS 21564 cita \"C.F., art. 86, caput\"; ADPF 378 cita \"arts. 51, I; 52, I; e 86, § 1º, II, todos da CF/1988\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 86 na redação originária.",
+   "target_check": "PASS_WITH_SPLIT",
+   "recommended_targets": [
+    "CF88:ART.86",
+    "CF88:ART.86:PAR.1:INC.II",
+    "CF88:ART.52:INC.I"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "MS 21564: mérito; ADPF 378: medida cautelar do Plenário (com ED)",
+   "sources": [
+    "V6",
+    "V5"
+   ],
+   "revalidation": {
+    "applies_to": "STF:ADPF:378",
+    "trigger": "JULGAMENTO_DE_MERITO_OU_EXTINCAO",
+    "max_age_days": 180,
+    "last_verified_on": "2026-10-17",
+    "check": "https://portal.stf.jus.br/processos/listarProcessos.asp?classe=ADPF&numeroProcesso=378"
+   },
+   "evidence_excerpt": "No regime da Carta de 1988, a Câmara dos Deputados examina a admissibilidade da acusação (C.F., art. 86, caput). Medida cautelar em ADPF. Não foram recepcionados os arts. da Lei nº 1.079/1950 incompatíveis com os arts. 51, I; 52, I; e 86, § 1º, II.",
+   "reason": "O MS 21564 (mérito, caso Collor) interpreta o caput do art. 86: a Câmara faz juízo político de admissibilidade. A ADPF 378 (rito do caso Dilma) é medida cautelar do Plenário, por isso entra marcada como provisória e com revalidação: no § 1º, II do art. 86 e no art. 52, I. MS e ADPF não estão validados no aparelho.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADPF": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+    "MS": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "LEI"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [
+      "CAUTELAR"
+     ],
+     "provisional": true
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-068",
+   "rank": 4,
+   "recommended_by_backlog": "CF88:ART.86:PAR.3",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "ADI 1021",
+    "ADI 978",
+    "Inq 672"
+   ],
+   "precedents": [
+    {
+     "id": "STF:ADI:978",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "978",
+     "judgment": "Pleno, 19/10/1995",
+     "publication": "DJ 17/11/1995",
+     "target": "CF88:ART.86:PAR.3"
+    },
+    {
+     "id": "STF:INQ:672",
+     "court": "STF",
+     "klass": "INQ",
+     "number": "672",
+     "judgment": "Pleno, 16/09/1992 (QO)",
+     "publication": "DJ 16/04/1993",
+     "target": "CF88:ART.86:PAR.4"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "ADI 978: objeto é a Constituição da Paraíba, parâmetro \"CF/88, art. 86, par. 3. e 4.\"; Inq 672: \"CF, art. 86, § 4º\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 86, §§ 3º e 4º na redação originária.",
+   "target_check": "PASS_WITH_SPLIT",
+   "recommended_targets": [
+    "CF88:ART.86:PAR.3",
+    "CF88:ART.86:PAR.4"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado",
+   "sources": [
+    "V7",
+    "V8"
+   ],
+   "evidence_excerpt": "PRERROGATIVAS INERENTES AO PRESIDENTE DA REPUBLICA ENQUANTO CHEFE DE ESTADO (CF/88, ART. 86, PAR. 3. E 4.). Constituição do Estado da Paraiba. O art. 86, § 4º, da Constituição exclui o Presidente, durante o mandato e por atos estranhos ao seu exercício, da persecução.",
+   "reason": "Divisão por alvo: a ADI 978 vai para o § 3º (imunidade à prisão cautelar, exclusiva do Presidente) e o Inq 672 QO para o § 4º. O backlog punha os dois no § 3º. A ADI 1021 da nota não foi verificada e fica de fora. Inq é tipo novo no aparelho.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED",
+    "INQ": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [
+      "CONSTITUICAO_ESTADUAL"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-072",
+   "rank": 5,
+   "recommended_by_backlog": "CF88:ART.96:INC.III",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "Rcl 84738"
+   ],
+   "precedents": [
+    {
+     "id": "STF:RCL:84738",
+     "court": "STF",
+     "klass": "RCL",
+     "number": "84738",
+     "judgment": "2ª Turma, 14/04/2026 (AgR)",
+     "publication": "DJe 03/09/2026",
+     "rapporteur": "Min. Dias Toffoli"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A decisão mantém o processo no TJ (foro do membro do MP estadual), competência do art. 96, III.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 96, III na redação originária.",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.96:INC.III"
+   ],
+   "decision": "PROMOTE_PROVISIONAL_RECOMMENDED",
+   "confidence": "MEDIUM",
+   "status_processual": "orientação de Turma condicionada ao Tema 1147 (RG, pendente) ou a pronunciamento do Plenário",
+   "sources": [
+    "V9"
+   ],
+   "revalidation": {
+    "trigger": "JULGAMENTO_DO_TEMA_1147_OU_PLENARIO",
+    "max_age_days": 90,
+    "last_verified_on": "2026-10-17",
+    "check": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1147"
+   },
+   "evidence_excerpt": "enquanto não sobrevier o julgamento do Tema nº 1.147 da Repercussão Geral ou eventual pronunciamento do Plenário, referida prerrogativa abarca quaisquer crimes comuns.",
+   "reason": "Pertinente ao art. 96, III, mas a própria ementa diz que é provisória e depende do Tema 1147. Proposta como provisória, com gatilho no julgamento do tema. Rcl é tipo novo no aparelho.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "RCL": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  }
+ ],
+ "totals": {
+  "PROMOTE_PROVISIONAL_RECOMMENDED": 1,
+  "PROMOTE_RECOMMENDED": 4
+ }
+}
