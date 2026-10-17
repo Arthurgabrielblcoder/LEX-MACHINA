@@ -3,7 +3,7 @@
 Reads JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2B_REVALIDATION_REGISTRY.json. For each item: FAIL when last_verified_on is older than max_age_days
 relative to --as-of (explicit date, never the clock, so the result is reproducible), or when the registry records the trigger as fired
 (merit_judged=true) without a new review. Exit 0 = PASS, 2 = REVALIDATION_REQUIRED.
-Usage: python check_j2b_provisional.py --as-of YYYY-MM-DD
+Usage: python check_j2b_provisional.py --as-of YYYY-MM-DD [--registry J2_PROVISIONAL_REGISTRY.json]
 """
 import argparse
 import datetime as dt
@@ -28,6 +28,9 @@ def check(as_of, reg=REG):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--as-of', required=True)
-    res = check(dt.date.fromisoformat(ap.parse_args().as_of))
+    ap.add_argument('--registry', default=str(REG), help='default: J2B registry (unchanged); consolidated: J2_PROVISIONAL_REGISTRY.json')
+    a = ap.parse_args()
+    reg = Path(a.registry) if Path(a.registry).is_absolute() else Path(__file__).resolve().parent / a.registry
+    res = check(dt.date.fromisoformat(a.as_of), reg)
     print(json.dumps(res, ensure_ascii=False, indent=1))
     sys.exit(0 if all(r['result'] == 'PASS' for r in res) else 2)

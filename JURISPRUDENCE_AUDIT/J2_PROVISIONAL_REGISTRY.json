@@ -1,0 +1,114 @@
+{
+ "schema_version": 1,
+ "round": "J2",
+ "kind": "PROVISIONAL_REGISTRY",
+ "auto_publish": false,
+ "states": {
+  "MERIT_PENDING": "cautelar referendada; mérito pendente",
+  "REFERENDUM_PENDING": "cautelar monocrática sem referendo; mérito pendente",
+  "CAUTIONARY_ONLY": "só há decisão cautelar do Plenário; mérito nunca julgado",
+  "LEADING_CASE_PENDING": "decisão de Turma condicionada a tema de repercussão geral ainda pendente",
+  "SUPERSEDED": "substituída por decisão posterior"
+ },
+ "policy": "Itens provisórios de jurisprudência (cautelar, mérito ou referendo pendente, tema-líder pendente). Gate obrigatório antes de qualquer ratificação material ou deploy: check_j2b_provisional.py --registry J2_PROVISIONAL_REGISTRY.json --as-of <data>.",
+ "items": [
+  {
+   "source_id": "STF:ADI:7697",
+   "classe": "ADI",
+   "processo": "7697",
+   "targets": [
+    "CF88:ART.166:PAR.9",
+    "CF88:ART.166:PAR.11",
+    "CF88:ART.166-A"
+   ],
+   "state": "MERIT_PENDING",
+   "status_processual": "cautelar_referendada; merito_pendente",
+   "last_known_state": "MC referendada em 16/08/2024 e referendo de 04/12/2024; autos conclusos ao relator em 16/06/2026; sem mérito",
+   "last_verified_on": "2026-10-16",
+   "max_age_days": 90,
+   "deadline": "2027-01-14",
+   "trigger": "JULGAMENTO_DE_MERITO",
+   "check": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=6997560 (abas Andamentos e Decisões)",
+   "origin": {
+    "file": "J2_HIGH_BACKLOG/J2B_REVALIDATION_REGISTRY.json",
+    "recommendations": []
+   },
+   "publication_state": "PHYSICALLY_INSTALLED (J2C)",
+   "on_trigger": "Rever o vínculo e a ficha antes de qualquer novo deploy; sem revisão, o item volta a pendente (fail closed)."
+  },
+  {
+   "source_id": "STF:ADI:5017",
+   "classe": "ADI",
+   "processo": "5017",
+   "targets": [
+    "ADCT:ART.27:PAR.11"
+   ],
+   "state": "REFERENDUM_PENDING",
+   "status_processual": "cautelar monocrática não referendada; mérito pendente (conclusos em 18/06/2025)",
+   "last_known_state": "cautelar monocrática não referendada; mérito pendente (conclusos em 18/06/2025)",
+   "last_verified_on": "2026-10-17",
+   "max_age_days": 90,
+   "deadline": "2027-01-15",
+   "trigger": "REFERENDO_OU_JULGAMENTO_DE_MERITO",
+   "check": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4437805",
+   "origin": {
+    "file": "J2_HIGH_BACKLOG/J2_BATCH03_DECISIONS.json",
+    "recommendations": [
+     "J0-BL-165"
+    ]
+   },
+   "publication_state": "AWAITING_USER_RATIFICATION (PROMOTE_PROVISIONAL_RECOMMENDED)",
+   "on_trigger": "Rever o vínculo e a ficha antes de ratificar ou publicar; sem revisão, não publicar (fail closed)."
+  },
+  {
+   "source_id": "STF:ADPF:378",
+   "classe": "ADPF",
+   "processo": "378",
+   "targets": [
+    "CF88:ART.86",
+    "CF88:ART.86:PAR.1:INC.II",
+    "CF88:ART.52:INC.I"
+   ],
+   "state": "CAUTIONARY_ONLY",
+   "status_processual": "MS 21564: mérito; ADPF 378: medida cautelar do Plenário (com ED)",
+   "last_known_state": "MS 21564: mérito; ADPF 378: medida cautelar do Plenário (com ED)",
+   "last_verified_on": "2026-10-17",
+   "max_age_days": 180,
+   "deadline": "2027-04-15",
+   "trigger": "JULGAMENTO_DE_MERITO_OU_EXTINCAO",
+   "check": "https://portal.stf.jus.br/processos/listarProcessos.asp?classe=ADPF&numeroProcesso=378",
+   "origin": {
+    "file": "J2_HIGH_BACKLOG/J2_BATCH04_DECISIONS.json",
+    "recommendations": [
+     "J0-BL-067"
+    ]
+   },
+   "publication_state": "AWAITING_USER_RATIFICATION (PROMOTE_RECOMMENDED)",
+   "on_trigger": "Rever o vínculo e a ficha antes de ratificar ou publicar; sem revisão, não publicar (fail closed)."
+  },
+  {
+   "source_id": "STF:RCL:84738",
+   "classe": "RCL",
+   "processo": "84738",
+   "targets": [
+    "CF88:ART.96:INC.III"
+   ],
+   "state": "LEADING_CASE_PENDING",
+   "status_processual": "orientação de Turma condicionada ao Tema 1147 (RG, pendente) ou a pronunciamento do Plenário",
+   "last_known_state": "orientação de Turma condicionada ao Tema 1147 (RG, pendente) ou a pronunciamento do Plenário",
+   "last_verified_on": "2026-10-17",
+   "max_age_days": 90,
+   "deadline": "2027-01-15",
+   "trigger": "JULGAMENTO_DO_TEMA_1147_OU_PLENARIO",
+   "check": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1147",
+   "origin": {
+    "file": "J2_HIGH_BACKLOG/J2_BATCH04_DECISIONS.json",
+    "recommendations": [
+     "J0-BL-072"
+    ]
+   },
+   "publication_state": "AWAITING_USER_RATIFICATION (PROMOTE_PROVISIONAL_RECOMMENDED)",
+   "on_trigger": "Rever o vínculo e a ficha antes de ratificar ou publicar; sem revisão, não publicar (fail closed)."
+  }
+ ]
+}
