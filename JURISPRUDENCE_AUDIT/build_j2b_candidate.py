@@ -42,6 +42,9 @@ OUT = DI / 'staging_sd_v1_juris_j2b_candidate'
 TMP = DI / '_tmp_juris_j2b_rebuild'
 TMP_BASE = DI / '_tmp_juris_j2b_physical_reproduction'
 PKG = HERE / 'J2B_CANDIDATE_HOST_ONLY'
+PACKAGE = 'JURIS_J2B'
+MANIFEST_NAME = 'J2B_PACKAGE_MANIFEST.json'
+RUN_NAMES = ('REF_LOOKUP.IDX', 'REF_PAYLOAD.IDX', 'CF88_TARGETS.IDX')
 ENGINE_VERSION = dict(tag='cf-reference-engine-run8-juris-j2b', run='run8', status='RUN8_JURIS_J2B_CANDIDATE_HOST_ONLY',
                       derived_from='run7 (J1.4 installed, J1.5 11/11) + 5 ADI links (J2A BATCH01 ratified; ADI 7047/7064 joint record)')
 R_POS = 4
@@ -177,7 +180,7 @@ def main():
     for name, rel in (('REF_LOOKUP.IDX', '99_LEX_V1/20_REFERENCES/REF_LOOKUP.IDX'), ('REF_PAYLOAD.IDX', '99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX'),
                       ('CF88_TARGETS.IDX', '99_LEX_V1/10_TARGETS/CF88_TARGETS.IDX')):
         if trees[0][rel] != sha(RUN8_DEV / name):
-            raise SystemExit(f'STAGING_NOT_RUN8 {rel}')
+            raise SystemExit(f'STAGING_NOT_RUN {rel}')
     for rel in (IDX, LOOKUP):                                    # append-only: the card bytes are an exact prefix
         if not (OUT / 'SD' / rel).read_bytes().startswith((LEGACY / rel).read_bytes()):
             raise SystemExit(f'LEGACY_NOT_APPEND_ONLY {rel}')
@@ -205,7 +208,7 @@ def main():
                  after_bytes=(PKG / 'candidate/SD' / rel).stat().st_size) for rel in changed]
     adds = [dict(path='/' + rel, after_sha256=trees[0][rel], after_bytes=(PKG / 'candidate/SD' / rel).stat().st_size, rollback='DELETE')
             for rel in added]
-    report = dict(profile=PROFILE, package='JURIS_J2B', status='HOST_ONLY_CANDIDATE', physical_approved=False, card_touched=False,
+    report = dict(profile=PROFILE, package=PACKAGE, status='HOST_ONLY_CANDIDATE', physical_approved=False, card_touched=False,
                   device_flashed=False, firmware_change='NONE (firmware already classifies TIPO adi: list "ADI <NUMERO>", ficha 03_CONTEUDO)',
                   staging=OUT.relative_to(ROOT).as_posix(), build_id=man['build_id'], git_commit=man['git_commit'], reference_engine=ENGINE_VERSION,
                   physical_baseline_reproduced=True, legacy_base='J4.6 archive bytes == card manifest (JURISPRUDENCIA.IDX, JUR_LOOKUP.IDX)',
@@ -213,7 +216,7 @@ def main():
                   targets_r_only_divergence_vs_generator=rec['targets_r_only_divergence_vs_generator'], device_manifest_matches_package=man_ok,
                   changed_vs_physical=list(changed), added_vs_physical=list(added), file_diff=diff, file_additions=adds,
                   files=[dict(path='/' + k, sha256=v, same_as_physical=card.get(k) == v) for k, v in trees[0].items()])
-    (PKG / 'J2B_PACKAGE_MANIFEST.json').write_bytes((json.dumps(report, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
+    (PKG / MANIFEST_NAME).write_bytes((json.dumps(report, ensure_ascii=False, indent=1) + '\n').encode('utf-8'))
     print(json.dumps({k: v for k, v in report.items() if k not in ('files',)}, ensure_ascii=False, indent=1))
 
 

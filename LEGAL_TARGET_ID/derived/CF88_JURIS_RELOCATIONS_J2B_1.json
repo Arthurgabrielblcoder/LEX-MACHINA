@@ -1,0 +1,55 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J2B.1",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-16",
+  "statement": "TEMA_558_CURRENT_TARGET = CF art. 100",
+  "label": "J2B_PREDEPLOY_TEMPORAL_FIX",
+  "directives": "Remover CF art. 100, § 9º ← Tema 558; criar CF art. 100 ← Tema 558 com TEMPORAL_VERSION = EC 62/2009 e nota de redação histórica. Não alterar a tese; não retirar o tema do acervo; não reabrir a J1."
+ },
+ "decisions_file": "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2A_BATCH01_DECISIONS.json",
+ "decisions_sha256": "35cb39e511d811dbbdda823393a1c243c5c430acc1b70326a7fb969980ecaa14",
+ "policy": "Overlay de realocação J2B.1: mesmo precedente e mesma chave, no art. 100 (nível estrutural), com nota temporal. Aplicado pelo build RUN9 depois da exclusão. Fail closed.",
+ "total": 1,
+ "records": [
+  {
+   "relocation_id": "J2B.1-RELOC:STF:RG:558:CF88:100:-:-:-@CF88:ART.100",
+   "reference_id": "JURISPRUDENCE:STF:RG:558:CF88:100:-:-:-@CF88:ART.100",
+   "target_id": "CF88:ART.100",
+   "source_id": "STF:RG:558",
+   "source_reference_id": "STF:RG:558:CF88:100:-:-:-",
+   "relocated_from": [
+    "JURISPRUDENCE:STF:RG:558:CF88:100:-:-:-@CF88:ART.100:PAR.9"
+   ],
+   "temporal_note": "Tema referente aos antigos §§ 9º e 10 do art. 100, incluídos pela EC 62/2009 (compensação de precatórios). Não corresponde ao texto atual do § 9º, dado pela EC 113/2021.",
+   "temporal_version": "EC 62/2009",
+   "review_status": "HUMAN_APPROVED_RELOCATION",
+   "decision_refs": [
+    "J2B_PREDEPLOY_TEMPORAL_FIX"
+   ],
+   "main_source": "P1",
+   "sources": [
+    {
+     "id": "P1",
+     "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+     "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+    },
+    {
+     "id": "S4",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207064%22&base=acordaos",
+     "sha256": "4d1e398dc576b636f36fcb263c5189eb95ad724c316755ddd838a2c21a2c4e79"
+    },
+    {
+     "id": "S3",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+     "sha256": "ac1ee1c771f6d0e57797b81e20fdbb078ae1453f20189f711f3af78ca89f2577"
+    }
+   ],
+   "untouched": [
+    "JURISPRUDENCE:STF:RG:558:CF88:100:-:-:-@CF88:ART.100:PAR.10"
+   ]
+  }
+ ]
+}

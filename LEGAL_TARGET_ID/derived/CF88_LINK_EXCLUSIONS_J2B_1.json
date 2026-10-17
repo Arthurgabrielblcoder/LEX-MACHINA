@@ -1,0 +1,63 @@
+{
+ "schema_version": 1,
+ "norma_id": "CF88",
+ "round": "J2B.1",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-16",
+  "statement": "TEMA_558_CURRENT_TARGET = CF art. 100",
+  "label": "J2B_PREDEPLOY_TEMPORAL_FIX",
+  "directives": "Remover CF art. 100, § 9º ← Tema 558; criar CF art. 100 ← Tema 558 com TEMPORAL_VERSION = EC 62/2009 e nota de redação histórica. Não alterar a tese; não retirar o tema do acervo; não reabrir a J1."
+ },
+ "decisions_file": "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2A_BATCH01_DECISIONS.json",
+ "decisions_sha256": "35cb39e511d811dbbdda823393a1c243c5c430acc1b70326a7fb969980ecaa14",
+ "policy": "Overlay de exclusão J2B.1: vínculo de jurisprudência num dispositivo cuja redação atual não é a que o precedente julgou. Mesmo mecanismo de CF88_LINK_EXCLUSIONS*.json. Fail closed.",
+ "total": 1,
+ "records": [
+  {
+   "reference_id": "JURISPRUDENCE:STF:RG:558:CF88:100:-:-:-@CF88:ART.100:PAR.9",
+   "target_id": "CF88:ART.100:PAR.9",
+   "source_id": "STF:RG:558",
+   "source_reference_id": "STF:RG:558:CF88:100:-:-:-",
+   "status": "MATERIAL_MISMATCH_EXCLUDED",
+   "verified_subject": "Compensação de precatórios dos §§ 9º e 10 na redação da EC 62/2009.",
+   "expected_subject": "CF88:ART.100:PAR.9 (conteúdo atual, EC 113/2021)",
+   "reason": "ALVO_HISTORICO_INCORRETO: a tese julgou o § 9º da EC 62/2009; o § 9º exibido hoje é o da EC 113/2021.",
+   "evidence": {
+    "official_source": "Constituição Federal — texto compilado (com redações anteriores e anotações \"Vide ADI\")",
+    "official_source_url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "sources": [
+     {
+      "id": "P1",
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb"
+     },
+     {
+      "id": "S4",
+      "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%207064%22&base=acordaos",
+      "sha256": "4d1e398dc576b636f36fcb263c5189eb95ad724c316755ddd838a2c21a2c4e79"
+     },
+     {
+      "id": "S3",
+      "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204425%22&base=acordaos",
+      "sha256": "ac1ee1c771f6d0e57797b81e20fdbb078ae1453f20189f711f3af78ca89f2577"
+     }
+    ],
+    "legacy_ficha": {
+     "path": "99_JURISPRUDENCIA_V2/03_CONTEUDO/STF_RG_558.TXT",
+     "sha256_on_card": "e1c022853ec2e52b79e978a586fa466274b918307251c57b4d880c0261d4ce86",
+     "states": "A tese do Tema 558 (RE 678360) trata da compensação \"prevista nos §§ 9º e 10 do art. 100 da Constituição Federal, incluídos pela EC nº 62/09\"."
+    },
+    "verified_on": "2026-10-16",
+    "verified_by": "J2B (observação) ratificada por Arthur em 2026-10-16 como J2B_PREDEPLOY_TEMPORAL_FIX",
+    "findings": [
+     "P1 (Planalto): o § 9º tem duas redações; a vigente é a da EC 113/2021 (\"Sem que haja interrupção no pagamento…\"); a da EC 62/2009 (compensação no momento da expedição) não está mais em vigor.",
+     "Ficha do Tema 558 no cartão: a tese trata dos §§ 9º e 10 incluídos pela EC 62/2009.",
+     "S4 (ementa da ADI 7064, item 28): a redação do § 9º dada pela EC 113/2021 é \"sensivelmente diferente\" da declarada inconstitucional nas ADIs 4425/4357."
+    ]
+   },
+   "relocated_to": "CF88:ART.100",
+   "decided_in": "J2B.1 (J2B_PREDEPLOY_TEMPORAL_FIX), ratificado em 2026-10-16"
+  }
+ ]
+}
