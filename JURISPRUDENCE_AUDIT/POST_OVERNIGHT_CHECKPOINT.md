@@ -1,5 +1,21 @@
 # OPERAÇÃO PÓS-NOTURNA — CHECKPOINT (2026-10-17)
 
+## Estado atual (J2J, 2026-10-18) — prevalece sobre o histórico abaixo
+
+```
+CURRENT_PHYSICAL_JURIS_BASELINE = J2I   (J2I_FROZEN_315_198)
+RELATIONS = 315
+TARGETS = 198
+GENERIC_FIRMWARE = PHYSICALLY_APPROVED   (app 1371e69a…, app0 @ 0x10000)
+J2I_PHYSICAL_VALIDATION = 32/32 PASS
+FROZEN_LAYERS_MODIFIED = NO · STJ_SUMULA_403 = UNRESOLVED_EXTERNAL
+NEXT_RESEARCH_BATCH = BATCH10   (NÃO iniciado)
+```
+
+Documento de freeze: `JURIS_CF_ADCT_J2I_FROZEN.md`. Registro físico: `J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json`. Toda nova rodada parte explicitamente de `J2I_FROZEN_315_198`.
+
+O restante deste arquivo é o checkpoint histórico de 2026-10-17 (baseline físico 261/160 da época).
+
 > Sucede `OVERNIGHT_MISSION_CHECKPOINT.md`. Host-only: sem deploy, sem flash e sem acesso ao microSD.
 
 ```
