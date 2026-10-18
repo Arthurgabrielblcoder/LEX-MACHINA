@@ -17,7 +17,8 @@ SUMULA = ('sumula', 'sumula_stf')
 # review-module klass -> (IDX TIPO, tribunal override)
 KLASS_TO_TIPO = {'RG': 'repercussao_geral', 'SV': 'sumula_vinculante', 'ADI': 'adi', 'ADC': 'adc', 'ADPF': 'adpf', 'HC': 'hc', 'RHC': 'rhc',
                  'MS': 'ms', 'RMS': 'rms', 'AP': 'ap', 'AI': 'ai', 'INQ': 'inq', 'RCL': 'rcl', 'MI': 'mi', 'PET': 'pet', 'ADO': 'ado', 'RE': 're',
-                 'ARE': 'are', 'EXT': 'ext', 'SUMULA': 'sumula', 'SUMULA_TSE': 'sumula', 'SUMULA_STJ': 'sumula'}
+                 'ARE': 'are', 'EXT': 'ext', 'SUMULA': 'sumula', 'SUMULA_TSE': 'sumula', 'SUMULA_STJ': 'sumula',
+                 'REPETITIVO': 'repetitivo_stj', 'IAC': 'iac'}   # STJ qualified precedents (CC-J2): labels already in the firmware
 LIST_WIDTH = 34          # imprimirUTF8(…, 34) in the relation list; the row prefix is "<pos> "
 # Device support of each review-module klass — SINGLE source of truth for review modules (j2_review_common, Batch11+).
 # PHYSICALLY_VALIDATED = shown, opened and BACK-tested on the device: J2I_PHYSICAL_VALIDATION 32/32 (2026-10-18) + J2C/J2G legacy types.

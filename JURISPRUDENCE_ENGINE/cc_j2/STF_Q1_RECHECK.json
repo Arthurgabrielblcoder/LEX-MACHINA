@@ -1,0 +1,68 @@
+{
+ "schema_version": 1,
+ "channel": "STF_Q1_RECHECK",
+ "rule": "Linhas da pesquisa Q1 do piloto (pilot_cc/cc_pilot_evidence.py, Q1_ROWS) com tema e ao menos um artigo do CC extraído, que a regra do piloto descartou por terem o sufixo 'RG'. Cada tema é conferido na página oficial do STF antes de virar candidato. Motivo: a regra do piloto ('mérito = sem sufixo RG') perde as reafirmações de jurisprudência julgadas no Plenário Virtual, cujo acórdão de mérito também tem o sufixo RG.",
+ "accessed_on": "2026-10-18",
+ "method": "navegador embutido (innerText); sha256 do innerText do body (portal) ou do main (pesquisa de jurisprudência); nenhum desafio anti-robô",
+ "rows": [
+  {
+   "q1_row": "RE 828075 RG",
+   "precedent": "STF:RG:920",
+   "discovered_targets": [
+    "CC2002:ART.927"
+   ],
+   "judgment_year": 2016,
+   "status_text": "Repercussão geral: Não há repercussão geral (questão infraconstitucional); 07/10/2016; Trânsito em Julgado - em 07/03/2017",
+   "evidence": "Tema 920 — Possibilidade de responsabilização objetiva do empregador por danos decorrentes de doenças ocupacionais. Descrição: aplicação da teoria do risco, prevista no art. 927, parágrafo único, do Código Civil, aos danos decorrentes de acidentes de trabalho. Situação: não há repercussão geral (questão infraconstitucional).",
+   "merit": false,
+   "sources": [
+    {
+     "id": "T920",
+     "org": "STF",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=920",
+     "sha256": "5d16d80ace739fb84697e821d03e9a68b4b89632c9921e4f243a5693b98b4552",
+     "tier": "A"
+    }
+   ]
+  },
+  {
+   "q1_row": "RE 1269353 RG",
+   "precedent": "STF:RG:1191",
+   "discovered_targets": [
+    "CC2002:ART.406"
+   ],
+   "judgment_year": 2021,
+   "status_text": "Repercussão Geral – Mérito (Tema 1191), Tribunal Pleno, j. 16/12/2021, publ. 23/02/2022 (reafirmação de jurisprudência); Trânsito em Julgado - 05/03/2022",
+   "evidence": "Tese I: inconstitucional a TR para débitos trabalhistas; devem ser aplicados, até que sobrevenha solução legislativa, os índices das condenações cíveis em geral: IPCA-E na fase pré-judicial e, a partir do ajuizamento, a taxa SELIC (art. 406 do Código Civil).",
+   "merit": true,
+   "sources": [
+    {
+     "id": "T1191",
+     "org": "STF",
+     "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1191",
+     "sha256": "99f4f53f36d46fd8583cb3a01d420b31e65e8b7745d020d5d48989e9b205f692",
+     "tier": "A"
+    },
+    {
+     "id": "J1269353",
+     "org": "STF",
+     "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22RE%201269353%22&base=acordaos",
+     "sha256": "11ded01dcf935188f4892bd6f06ea6fc0dc392d1aa7d35d429ada005768a68ab",
+     "tier": "A"
+    }
+   ]
+  }
+ ],
+ "supplementary_evidence": [
+  {
+   "precedent": "STF:RG:1236",
+   "for_target": "CC2002:ART.1639:PAR.2",
+   "org": "STF",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ARE%201309642%22&base=acordaos",
+   "sha256": "82e6ffb7b42610de798c85c862c8f9bb3b76f5c257b98f04be375a03f42b327c",
+   "tier": "A",
+   "accessed_on": "2026-10-18",
+   "evidence": "Ementa do ARE 1309642 (Tema 1236), item 10: \"A presente decisão tem efeitos prospectivos ... É possível, todavia, a mudança consensual de regime, nos casos em que validamente admitida (e.g., art. 1.639, § 2º, do Código Civil).\" Atos normativos citados: Código Civil, arts. 1.641, II; e 1.639, § 2º. A tese não nomeia o art. 1.639, § 2º."
+  }
+ ]
+}
