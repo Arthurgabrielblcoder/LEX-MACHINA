@@ -1,6 +1,18 @@
 --- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (J2I = base + juris_types.patch)
 +++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (multinorma)
-@@ -921,7 +921,7 @@
+@@ -884,6 +884,11 @@
+   "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JUR_LOOKUP.IDX";
+ const char *CAMINHO_JURISPRUDENCIA_CF =
+   "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX";
++// Camada normalizada multinorma (empacotador genérico): uma linha de lookup por chave; preferida quando existe no cartão.
++const char *CAMINHO_JUR_LOOKUP_NORMALIZADO =
++  "/99_JURISPRUDENCIA_V2/06_NORMALIZADO/JUR_LOOKUP.IDX";
++const char *CAMINHO_JURISPRUDENCIA_NORMALIZADO =
++  "/99_JURISPRUDENCIA_V2/06_NORMALIZADO/JURISPRUDENCIA.IDX";
+ const char *PASTA_CONTEUDO_JURIS_CF =
+   "/99_JURISPRUDENCIA_V2/03_CONTEUDO";
+ 
+@@ -921,7 +926,7 @@
  // A capacidade real e contada no arquivo e alocada dinamicamente em PSRAM.
  #define MAX_JUR_LOOKUPS_SEGURANCA 4096
  struct LookupJurisCFCache {
@@ -9,7 +21,19 @@
    char artigo[12];
    char paragrafo[12];
    char inciso[16];
-@@ -1698,6 +1698,106 @@
+@@ -1111,6 +1116,11 @@
+   if(cacheJurisCFCarregado) return true;
+   if(cacheJurisCFTentado) return false;
+   cacheJurisCFTentado=true;
++  if(sdOK && SD.exists(CAMINHO_JUR_LOOKUP_NORMALIZADO) && SD.exists(CAMINHO_JURISPRUDENCIA_NORMALIZADO)){
++    CAMINHO_JUR_LOOKUP_CF=CAMINHO_JUR_LOOKUP_NORMALIZADO;           // sem a camada: arquivos legados, exatamente como antes
++    CAMINHO_JURISPRUDENCIA_CF=CAMINHO_JURISPRUDENCIA_NORMALIZADO;
++    Serial.println("JUR CACHE: camada normalizada multinorma");
++  }
+   if(!sdOK || !SD.exists(CAMINHO_JUR_LOOKUP_CF) ||
+      !SD.exists(CAMINHO_JURISPRUDENCIA_CF)) return false;
+ 
+@@ -1698,6 +1708,106 @@
           caminhoArquivoAtual.startsWith("/1-CONSTITUIÇÃO FEDERAL/");
  }
  
@@ -116,7 +140,7 @@
  String normaOrigemRelationsV2Atual()
  {
    if(arquivoAtualPertenceACF()) return "CF88";
-@@ -1991,7 +2091,7 @@
+@@ -1991,7 +2101,7 @@
    if(par.length()) tentativas[total++]={par,"",""};
    tentativas[total++]={"","",""};
    for(int i=0;i<total;i++){
@@ -125,7 +149,7 @@
                                 tentativas[i].i,tentativas[i].a,
                                 offset,quantidade)){
        parUsado=tentativas[i].p;
-@@ -2064,7 +2164,7 @@
+@@ -2064,7 +2174,7 @@
    bool achou=buscarMelhorLookupJurisCF(artigo,offset,quantidade,
                                         parUsado,incUsado,aliUsada);
    if(achou){
@@ -134,7 +158,7 @@
      int lidas=0;
      if(cacheJurisCFCarregado && jurisprudenciaCFCache &&
         offset<tamanhoJurisprudenciaCFCache){
-@@ -2315,6 +2415,7 @@
+@@ -2315,6 +2425,7 @@
  bool carregarRelacoesDoArtigo(const String &artigo)
  {
    uint32_t t0=micros();
@@ -142,7 +166,7 @@
  
    // A Constituicao e atualizada muitas vezes durante a rolagem (cada inciso
    // pode mudar o contexto). Nao fazemos a limpeza pesada dos caches V1 aqui.
-@@ -2337,6 +2438,21 @@
+@@ -2337,6 +2448,21 @@
    artigoRelacoes=artigo;
    contextoRelacoesRotulo=montarRotuloContextoRelacoes(artigo);
    if(!sdOK) return false;
@@ -164,7 +188,7 @@
  
    // O CDC continua no V1 nesta fase para preservar a jurisprudencia e
    // O CDC continua no V1 nesta fase para preservar a jurisprudencia e
-@@ -7497,7 +7613,7 @@
+@@ -7497,7 +7623,7 @@
      case '2':
        if(v1cf) lexV1AbrirRelacaoTarget(false,alvo);      // so jurisprudencia do target EXATO
        else if(totalCategoriasJuris>0){
@@ -173,7 +197,7 @@
            abrirCategoriaRelacao(REL_JURIS_TODAS);
          else abrirTelaCategoriasJuris();
        }
-@@ -7583,7 +7699,7 @@
+@@ -7583,7 +7709,7 @@
      uint8_t categoria=pedirCategoriaRelacao;
      pedirCategoriaRelacao=0;
      if(categoria==255 && telaAtual==TELA_LEITOR && menuRelacoesAtivo && !visualizandoReferencia){

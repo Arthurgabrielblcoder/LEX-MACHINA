@@ -9,6 +9,8 @@ Multinorm patch (exact anchors, fail closed; CRLF as in the .ino):
   4. lookup + context label use normaJurisConsulta (default "CF88") instead of the literal "CF88"
   5. carregarRelacoesDoArtigo: CF branch unchanged; NEW branch for any other norm WITH rows (else the previous flow, byte-for-byte)
   6. key '2' / footer: a single "JURISPRUDENCIA" category opens the list directly also for the multinorm branch (as in the CF)
+  7. CC-J1: the boot cache prefers the NORMALIZED layer (99_JURISPRUDENCIA_V2/06_NORMALIZADO, generic packager: one lookup line per key)
+     when both files exist on the card; otherwise the legacy files, exactly as before
 CF behaviour: the CF branch, its lookups and labels are untouched; ADCT keeps the LEXV1 layer (JUR_LOOKUP has no ADCT rows).
 Sketch/binaries: %TEMP%/lex_machina_fw_multinorm/ (scratch, outside the repository). Writes MULTINORM_PROTOTYPE_BUILD.json + multinorm.patch.
 Usage: python build_multinorm_prototype.py [--no-compile]
@@ -101,7 +103,17 @@ def patch_list():
         '      return menuRelacoesAtivo;' + E +
         '    }' + E +
         '  }' + E + E)
+    norm_paths = ('// Camada normalizada multinorma (empacotador genérico): uma linha de lookup por chave; preferida quando existe no cartão.' + E +
+                  'const char *CAMINHO_JUR_LOOKUP_NORMALIZADO =' + E + '  "/99_JURISPRUDENCIA_V2/06_NORMALIZADO/JUR_LOOKUP.IDX";' + E +
+                  'const char *CAMINHO_JURISPRUDENCIA_NORMALIZADO =' + E + '  "/99_JURISPRUDENCIA_V2/06_NORMALIZADO/JURISPRUDENCIA.IDX";' + E)
+    prefer = ('  if(sdOK && SD.exists(CAMINHO_JUR_LOOKUP_NORMALIZADO) && SD.exists(CAMINHO_JURISPRUDENCIA_NORMALIZADO)){' + E +
+              '    CAMINHO_JUR_LOOKUP_CF=CAMINHO_JUR_LOOKUP_NORMALIZADO;           // sem a camada: arquivos legados, exatamente como antes' + E +
+              '    CAMINHO_JURISPRUDENCIA_CF=CAMINHO_JURISPRUDENCIA_NORMALIZADO;' + E +
+              '    Serial.println("JUR CACHE: camada normalizada multinorma");' + E + '  }' + E)
     return [  # (anchor, replacement, expected count)
+        ('const char *CAMINHO_JURISPRUDENCIA_CF =' + E + '  "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX";' + E,
+         'const char *CAMINHO_JURISPRUDENCIA_CF =' + E + '  "/99_JURISPRUDENCIA_V2/05_INDICES_ESP32/JURISPRUDENCIA.IDX";' + E + norm_paths, 1),
+        ('  cacheJurisCFTentado=true;' + E, '  cacheJurisCFTentado=true;' + E + prefer, 1),
         ('struct LookupJurisCFCache {' + E + '  char norma[8];' + E, 'struct LookupJurisCFCache {' + E + '  char norma[16];' + E, 1),
         ('String normaOrigemRelationsV2Atual()' + E, new_funcs + 'String normaOrigemRelationsV2Atual()' + E, 1),
         ('    if(buscarLookupJurisCFExato("CF88",artigo,tentativas[i].p,' + E, '    if(buscarLookupJurisCFExato(normaJurisConsulta,artigo,tentativas[i].p,' + E, 1),

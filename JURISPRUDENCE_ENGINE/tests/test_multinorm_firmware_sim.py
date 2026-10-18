@@ -100,6 +100,20 @@ class MultinormSim(unittest.TestCase):
         with self.assertRaises(ValueError):
             S.Package(b'#H\nCC2002|1||||5|1\n', b'#H\nabc\n', set())          # misaligned offset: whole cache refused (fail closed)
 
+    def test_long_catalog_ids_not_truncated(self):
+        cases = {'/16- LEI DE CRIMES HEDIONDOS/lei.txt': 'HEDIONDOS1990',
+                 '/39- MERCADO FINANCEIRO SEGUROS E CAPITAIS/lei_11795_2008_consorcios.txt': 'CONSORCIO2008',
+                 '/43- FAMILIA E SUCESSOES ESPECIAL/lei_12318_2010_alienacao_parental.txt': 'ALIENPAR2010'}
+        for path, nid in cases.items():
+            self.assertEqual(S.norma_juris_atual(path), nid)
+            self.assertGreater(len(nid), 7)
+            lookup, rec = f'#H\n{nid}|1||||3|1\n'.encode(), b'#H\nSTF:ADI:1:x|adi|STF|1|x|ADI 1|STF:ADI:1|u\n'
+            self.assertTrue(S.Package(lookup, rec, {'STF_ADI_1.TXT'}).has_norm(nid))                      # char[16]: exact
+            self.assertFalse(S.Package(lookup, rec, set(), norma_field=8).has_norm(nid))                 # J2I char[8]: truncated
+            self.assertEqual(S.carregar(S.Package(lookup, rec, {'STF_ADI_1.TXT'}), path, '1')['branch'], 'MULTINORMA')
+        longest = max((i for *_, i in P.catalog_table()), key=len)
+        self.assertLessEqual(len(longest), 15)
+
     def test_catalog_table_and_patch(self):
         rows = P.catalog_table()
         self.assertEqual(len(rows), 71)
@@ -108,6 +122,7 @@ class MultinormSim(unittest.TestCase):
         base = P.types_module().patched_text()
         multi = P.multinorm_text(base)
         self.assertIn('char norma[16];', multi)
+        self.assertIn('06_NORMALIZADO/JUR_LOOKUP.IDX', multi)                          # normalized layer preferred when present
         self.assertEqual(multi.count('normaJurisConsulta'), base.count('normaJurisConsulta') + 5)
         cf_branch = re.search(r'if\(arquivoAtualPertenceACF\(\)\)\{.*?return menuRelacoesAtivo;\r\n  \}', base, re.S).group(0)
         self.assertIn(cf_branch, multi)                                       # CF branch byte-identical
