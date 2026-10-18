@@ -49,8 +49,26 @@ class Batch10(unittest.TestCase):
             r = subprocess.run([sys.executable, '-I', '-B', str(AUD / cmd[0])] + cmd[1:], capture_output=True, text=True, cwd=ROOT)
             self.assertEqual((r.returncode, r.stdout.strip()), (0, 'UP_TO_DATE'), cmd[0])
         s = load(AUD / 'J2_BACKLOG_STATE.json')
-        self.assertEqual((s['after_batch'], s['HIGH_REMAINING'], s['AWAITING_USER_RATIFICATION']), ('BATCH10', 0, 10))
-        self.assertEqual(s['ALREADY_REVIEWED'], s['HUMAN_APPROVED'] + s['AWAITING_USER_RATIFICATION'] + 1)   # + BL-001 (ratified as UNRESOLVED)
+        self.assertEqual((s['after_batch'], s['HIGH_REMAINING'], s['AWAITING_USER_RATIFICATION']), ('BATCH10', 0, 0))   # Batch10 ratified
+        unresolved = sum(len(v) for v in s['UNRESOLVED'].values())
+        self.assertEqual(s['ALREADY_REVIEWED'], s['HUMAN_APPROVED'] + s['AWAITING_USER_RATIFICATION'] + unresolved)
+
+    def test_ratification_record(self):
+        r = subprocess.run([sys.executable, '-I', '-B', str(AUD / 'build_j2_ratification_record_10.py'), '--check'], capture_output=True, text=True, cwd=ROOT)
+        self.assertEqual((r.returncode, r.stdout.strip()), (0, 'UP_TO_DATE'))
+        rec = load(AUD / 'J2_RATIFICATION_RECORD_10.json')
+        self.assertEqual({k: v for k, v in rec.items() if k.startswith('BATCH10_')},
+                         dict(BATCH10_RATIFIED_RECOMMENDATIONS=8, BATCH10_NEW_RELATIONS=6, BATCH10_NEW_TARGETS=6, BATCH10_ALREADY_COVERED=2,
+                              BATCH10_REJECTED=1, BATCH10_UNRESOLVED=2))
+        it = {i['recommendation_id']: i for i in rec['items']}
+        self.assertEqual(it['J0-BL-023']['ratified_targets'], ['CF88:ART.17:PAR.1'])
+        self.assertEqual(it['J0-BL-023']['temporal_provenance']['judgment_year'], 2015)
+        self.assertEqual(it['J0-BL-027']['ratified_targets'], ['CF88:ART.19:INC.I', 'CF88:ART.210:PAR.1'])
+        self.assertEqual([i for i, x in it.items() if x['editorial_modification']], ['J0-BL-027'])
+        self.assertFalse(any(t.endswith('ART.17:PAR.6') for x in rec['normalized_relations'] for t in [x['target_id']]))
+        self.assertEqual(it['J0-BL-093']['ratification_status'], 'UNRESOLVED_EXTERNAL')
+        self.assertEqual(it['J0-BL-118']['ratification_status'], 'UNRESOLVED_IDENTIFICATION')
+        self.assertEqual((rec['materialized'], rec['deployed']), (False, False))
 
     def test_nothing_materialized(self):
         self.assertEqual(hashlib.sha256(G.J2I_PAYLOAD.read_bytes()).hexdigest(), G.J2I_PAYLOAD_SHA)

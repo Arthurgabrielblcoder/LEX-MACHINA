@@ -28,16 +28,21 @@ def build():
     items, pending, analyzed, covered, prev = G.reconstruct(n + 1)
     rat = G.ratified_03_09()
     rat_ids = {x['recommendation_id'] for x in rat['items'] if x['human_approved']}
+    exceptions = dict(rat['ratification']['exceptions'])
+    if G.RATIFICATION_10.is_file():
+        r10 = json.loads(G.RATIFICATION_10.read_text(encoding='utf-8'))
+        rat_ids |= {x['recommendation_id'] for x in r10['items'] if x['human_approved']}
+        exceptions.update(r10['ratification']['exceptions'])
     by_rec = {}
     for k, doc in sorted(prev.items()):
         for d in doc['decisions']:
             by_rec[d['recommendation_id']] = (k, d['decision'])
     human = {r for r, (k, _) in by_rec.items() if k in (1, 2) or r in rat_ids}
-    awaiting = sorted(r for r, (k, _) in by_rec.items() if r not in human and r not in rat['ratification']['exceptions'])
+    awaiting = sorted(r for r, (k, _) in by_rec.items() if r not in human and r not in exceptions)
     unresolved = collections.defaultdict(list)
     for r, (k, dec) in sorted(by_rec.items()):
         if dec.startswith('UNRESOLVED'):
-            unresolved[dec].append(dict(recommendation_id=r, batch=f'BATCH{k:02d}', human_ratified_as_unresolved=r in rat['ratification']['exceptions']))
+            unresolved[dec].append(dict(recommendation_id=r, batch=f'BATCH{k:02d}', human_ratified_as_unresolved=r in exceptions))
     cats = collections.Counter(b['category'] for b in items)
     pr = collections.Counter(b['priority'] for b in pending)
     doc = dict(schema_version=1, round='J2', kind='BACKLOG_STATE', physical_baseline='J2I_FROZEN_315_198', after_batch=f'BATCH{n:02d}',
@@ -50,7 +55,7 @@ def build():
                WITHOUT_IDENTIFIER=sum(1 for b in pending if not b['suggested_identifiers']),
                decisions_by_type=dict(sorted(collections.Counter(d for _, d in by_rec.values()).items())),
                inputs={G.batch_file(k).relative_to(G.ROOT).as_posix(): G.B.sha_lf(G.batch_file(k)) for k in prev}
-               | {G.RATIFICATION_03_09.relative_to(G.ROOT).as_posix(): G.B.sha_lf(G.RATIFICATION_03_09)})
+               | {r.relative_to(G.ROOT).as_posix(): G.B.sha_lf(r) for r in (G.RATIFICATION_03_09, G.RATIFICATION_10) if r.is_file()})
     return (json.dumps(doc, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
 
 

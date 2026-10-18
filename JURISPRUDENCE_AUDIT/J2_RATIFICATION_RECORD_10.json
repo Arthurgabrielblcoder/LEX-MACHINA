@@ -1,0 +1,269 @@
+{
+ "schema_version": 1,
+ "round": "J2",
+ "kind": "HUMAN_RATIFICATION",
+ "batch": "BATCH10",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-18",
+  "channel": "chat",
+  "statement": "O usuário ratifica as 10 decisões do Batch10 com uma modificação editorial: a ADI 4439 é ratificada em dois targets (CF art. 19, I e CF art. 210, § 1º), como vínculos legítimos e independentes do mesmo precedente.",
+  "exceptions": {
+   "J0-BL-093": "UNRESOLVED_EXTERNAL (Súmula 203/STJ; fonte oficial do STJ bloqueada por anti-robô; sem ficha, sem vínculo)",
+   "J0-BL-118": "UNRESOLVED_IDENTIFICATION (art. 124; ADPF 289 com mérito pendente; não materializar)"
+  }
+ },
+ "decision_files_sha256_lf": {
+  "J2_MEDIUM_BACKLOG/J2_BATCH10_DECISIONS.json": "45f19be02739356f70595c48462897a40515340c89f1be537f13ee209a442787"
+ },
+ "physical_baseline": "J2I_FROZEN_315_198",
+ "materialized": false,
+ "deployed": false,
+ "BATCH10_RATIFIED_RECOMMENDATIONS": 8,
+ "BATCH10_NEW_RELATIONS": 6,
+ "BATCH10_NEW_TARGETS": 6,
+ "BATCH10_ALREADY_COVERED": 2,
+ "BATCH10_REJECTED": 1,
+ "BATCH10_UNRESOLVED": 2,
+ "normalized_relations": [
+  {
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "source_id": "STF:ADC:12"
+  },
+  {
+   "target_id": "CF88:ART.151:INC.III",
+   "source_id": "STF:RE:229096"
+  },
+  {
+   "target_id": "CF88:ART.17:PAR.1",
+   "source_id": "STF:ADI:5081"
+  },
+  {
+   "target_id": "CF88:ART.19:INC.I",
+   "source_id": "STF:ADI:4439"
+  },
+  {
+   "target_id": "CF88:ART.210:PAR.1",
+   "source_id": "STF:ADI:4439"
+  },
+  {
+   "target_id": "CF88:ART.25:PAR.3",
+   "source_id": "STF:ADI:1842"
+  }
+ ],
+ "new_targets": [
+  "CF88:ART.103-B:PAR.4",
+  "CF88:ART.151:INC.III",
+  "CF88:ART.17:PAR.1",
+  "CF88:ART.19:INC.I",
+  "CF88:ART.210:PAR.1",
+  "CF88:ART.25:PAR.3"
+ ],
+ "ratified_by_decision": {
+  "HUMAN_APPROVED_ALREADY_COVERED": 2,
+  "HUMAN_APPROVED_MULTI_TARGET": 1,
+  "HUMAN_APPROVED_PROMOTE": 2,
+  "HUMAN_APPROVED_REALLOCATE": 2,
+  "HUMAN_APPROVED_REJECT_NOT_MATERIAL": 1,
+  "UNRESOLVED_EXTERNAL": 1,
+  "UNRESOLVED_IDENTIFICATION": 1
+ },
+ "items": [
+  {
+   "recommendation_id": "J0-BL-125",
+   "batch": "BATCH10",
+   "proposed_decision": "ALREADY_COVERED",
+   "ratified_decision": "HUMAN_APPROVED_ALREADY_COVERED",
+   "proposed_targets": [],
+   "ratified_targets": [],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:RG:656"
+   ],
+   "creates_device_relations": false,
+   "note": "Tema 656 já instalado; nenhum vínculo novo.",
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-133",
+   "batch": "BATCH10",
+   "proposed_decision": "ALREADY_COVERED",
+   "ratified_decision": "HUMAN_APPROVED_ALREADY_COVERED",
+   "proposed_targets": [],
+   "ratified_targets": [],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:RG:796"
+   ],
+   "creates_device_relations": false,
+   "note": "Tema 796 já instalado; nenhum vínculo novo.",
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-023",
+   "batch": "BATCH10",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "ratified_decision": "HUMAN_APPROVED_REALLOCATE",
+   "proposed_targets": [
+    "CF88:ART.17:PAR.1"
+   ],
+   "ratified_targets": [
+    "CF88:ART.17:PAR.1"
+   ],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:ADI:5081"
+   ],
+   "creates_device_relations": true,
+   "note": "Não criar vínculo no § 6º.",
+   "temporal_provenance": {
+    "temporal_version": "MIXED",
+    "judgment_year": 2015,
+    "wording_at_judgment": "§ 1º na redação da EC 52/2006",
+    "current_wording": "§ 1º na redação da EC 97/2017",
+    "note": "Julgado em 2015, quando o § 1º tinha a redação da EC 52/2006. O vínculo é mantido pela pertinência material à autonomia e à fidelidade partidária (\"normas de disciplina e fidelidade partidária\", cláusula presente nas duas redações). A decisão não interpretou a redação de 2021 (§ 6º, EC 111/2021).",
+    "policy": "Exceção à regra J1.4/J2B.1 (redação histórica só no nível de artigo), ratificada expressamente pelo usuário para o § 1º."
+   },
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-027",
+   "batch": "BATCH10",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "ratified_decision": "HUMAN_APPROVED_MULTI_TARGET",
+   "proposed_targets": [
+    "CF88:ART.19:INC.I"
+   ],
+   "ratified_targets": [
+    "CF88:ART.19:INC.I",
+    "CF88:ART.210:PAR.1"
+   ],
+   "editorial_modification": true,
+   "precedents": [
+    "STF:ADI:4439"
+   ],
+   "creates_device_relations": true,
+   "note": "Modificação editorial do usuário: dois vínculos legítimos do mesmo precedente, não aliases. Art. 19, I integra a fundamentação constitucional explícita; art. 210, § 1º é interpretado diretamente na ementa e no mérito.",
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-050",
+   "batch": "BATCH10",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "ratified_decision": "HUMAN_APPROVED_PROMOTE",
+   "proposed_targets": [
+    "CF88:ART.25:PAR.3"
+   ],
+   "ratified_targets": [
+    "CF88:ART.25:PAR.3"
+   ],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:ADI:1842"
+   ],
+   "creates_device_relations": true,
+   "note": null,
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-091",
+   "batch": "BATCH10",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "ratified_decision": "HUMAN_APPROVED_REJECT_NOT_MATERIAL",
+   "proposed_targets": [],
+   "ratified_targets": [],
+   "editorial_modification": false,
+   "precedents": [],
+   "creates_device_relations": false,
+   "note": "Não materializar.",
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-092",
+   "batch": "BATCH10",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "ratified_decision": "HUMAN_APPROVED_PROMOTE",
+   "proposed_targets": [
+    "CF88:ART.103-B:PAR.4"
+   ],
+   "ratified_targets": [
+    "CF88:ART.103-B:PAR.4"
+   ],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:ADC:12"
+   ],
+   "creates_device_relations": true,
+   "note": null,
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  },
+  {
+   "recommendation_id": "J0-BL-093",
+   "batch": "BATCH10",
+   "proposed_decision": "UNRESOLVED_EXTERNAL",
+   "ratified_decision": "UNRESOLVED_EXTERNAL",
+   "proposed_targets": [],
+   "ratified_targets": [],
+   "editorial_modification": false,
+   "precedents": [
+    "STJ:SUMULA:203"
+   ],
+   "creates_device_relations": false,
+   "note": "Não criar ficha nem vínculo.",
+   "temporal_provenance": null,
+   "ratification_status": "UNRESOLVED_EXTERNAL",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-118",
+   "batch": "BATCH10",
+   "proposed_decision": "UNRESOLVED_IDENTIFICATION",
+   "ratified_decision": "UNRESOLVED_IDENTIFICATION",
+   "proposed_targets": [],
+   "ratified_targets": [],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:ADPF:289"
+   ],
+   "creates_device_relations": false,
+   "note": "Não materializar enquanto não houver precedente adequado identificado e julgado.",
+   "temporal_provenance": null,
+   "ratification_status": "UNRESOLVED_IDENTIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-131",
+   "batch": "BATCH10",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "ratified_decision": "HUMAN_APPROVED_REALLOCATE",
+   "proposed_targets": [
+    "CF88:ART.151:INC.III"
+   ],
+   "ratified_targets": [
+    "CF88:ART.151:INC.III"
+   ],
+   "editorial_modification": false,
+   "precedents": [
+    "STF:RE:229096"
+   ],
+   "creates_device_relations": true,
+   "note": null,
+   "temporal_provenance": null,
+   "ratification_status": "HUMAN_APPROVED",
+   "human_approved": true
+  }
+ ]
+}
