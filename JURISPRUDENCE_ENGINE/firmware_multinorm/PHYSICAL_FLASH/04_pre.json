@@ -1,0 +1,55 @@
+{
+ "partition_table": {
+  "nvs": {
+   "type": 1,
+   "subtype": 2,
+   "offset": 36864,
+   "size": 20480
+  },
+  "otadata": {
+   "type": 1,
+   "subtype": 0,
+   "offset": 57344,
+   "size": 8192
+  },
+  "app0": {
+   "type": 0,
+   "subtype": 16,
+   "offset": 65536,
+   "size": 1310720
+  },
+  "app1": {
+   "type": 0,
+   "subtype": 17,
+   "offset": 1376256,
+   "size": 1310720
+  },
+  "spiffs": {
+   "type": 1,
+   "subtype": 130,
+   "offset": 2686976,
+   "size": 1441792
+  },
+  "coredump": {
+   "type": 1,
+   "subtype": 3,
+   "offset": 4128768,
+   "size": 65536
+  }
+ },
+ "app0_offset": "0x10000",
+ "app0_partition_size": 1310720,
+ "app0_partition_size_hex": "0x140000",
+ "partitions_sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+ "otadata_sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+ "nvs_sha256": "2ad43c13d08634faec16fa4c8f36f4bcfbde61c562cf9159d019e08cf73036ea",
+ "app0_full_sha256": "8bab9de537a091cfdffdf3d494749809e1592cc2184e329e4ea676b048355833",
+ "PRE_APP_READ_STABLE": "PASS",
+ "CURRENT_APP_PRE_HASH": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+ "J2I_APPROVED_APP_SHA256": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+ "j2i_frozen_copy_sha256": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+ "CURRENT_APP_MATCHES_J2I_APPROVED": "YES",
+ "PARTITION_LAYOUT_MATCH": "PASS",
+ "OTADATA_MATCH_J2I": true,
+ "FITS_APP0": true
+}

@@ -1,0 +1,20 @@
+{
+ "command": "esptool --chip esp32s3 -p COM3 -b 460800 --after no-reset write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x10000 C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\multinorm_flash_candidate\\multinorm_app.bin",
+ "FLASH_ADDRESS": "0x10000",
+ "FLASH_SCOPE": "APP_ONLY",
+ "image": "DEVICE_INTEGRATION\\backups\\multinorm_flash_candidate\\multinorm_app.bin",
+ "image_sha256": "38c4d71f77b89223860a6643ef9880416cb1f22a8ba933524e6b083442216bb2",
+ "bytes": 1107504,
+ "erase_flash_used": false,
+ "esptool_hash_verified": true,
+ "output_tail": [
+  "Writing at 0x00115240 ============================>   95.9% 560.00kB/584.21kB [13s] ",
+  "Writing at 0x0011b34e =============================>  98.6% 576.00kB/584.21kB [13s] ",
+  "Writing at 0x0011e630 ============================== 100.0% 584.21kB/584.21kB [14s] ",
+  "Wrote 1107504 bytes (598226 compressed) at 0x00010000 in 14.2 seconds (621.8 kbit/s).",
+  "Verifying written data...",
+  "Hash of data verified.",
+  "",
+  "Staying in bootloader."
+ ]
+}
