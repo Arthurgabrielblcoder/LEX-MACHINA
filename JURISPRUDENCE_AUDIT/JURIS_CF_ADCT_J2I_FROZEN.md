@@ -19,7 +19,9 @@ FREEZE_TAG = lex-device-v1-juris-j2i-physical-approved-2026-10-18
 NEXT_RESEARCH_BATCH = BATCH10 (NÃO iniciado)
 ```
 
-**Commit final:** o commit apontado por `FREEZE_TAG`, que contém este documento e o registro `J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json`. A missão de freeze (J2J) foi só documental: não acessou o microSD, não conectou o ESP32 e não gravou firmware. Nenhum conteúdo jurídico foi alterado e nenhuma relação foi acrescentada.
+**Commit final:** o commit apontado por `FREEZE_TAG`, que contém este documento e o registro `J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json`. **Reconciliação pós-freeze (J2J.1, `METADATA_ONLY_POST_FREEZE_RECONCILIATION`):** um commit posterior à tag corrigiu só os metadados editoriais dos provisórios (seção 6), este documento e os testes. A tag física não foi movida. O baseline físico, o cartão, o firmware, os índices, as fichas e os candidatos não mudaram (seção 10).
+
+A missão de freeze (J2J) foi só documental: não acessou o microSD, não conectou o ESP32 e não gravou firmware. Nenhum conteúdo jurídico foi alterado e nenhuma relação foi acrescentada.
 
 ## 1. Baseline físico
 
@@ -166,7 +168,9 @@ Cobertura: boot com o cartão B; HC, MS, AP, AI, Inq, Rcl, ADPF, Súmula TSE e S
 
 ## 6. Provisórios (continuam provisórios)
 
-Registro consolidado: `J2_PROVISIONAL_REGISTRY.json` (preservado sem alteração). Os quatro itens estão no cartão e continuam sujeitos a revalidação temporal; **não** foram convertidos em definitivos.
+Registro consolidado: `J2_PROVISIONAL_REGISTRY.json`, gerado por `build_j2_provisional_registry.py`. Os quatro itens estão no cartão e continuam juridicamente **provisórios**, sujeitos a revalidação temporal. **Não** foram convertidos em definitivos.
+
+**Estado jurídico/processual (inalterado):**
 
 | Precedente | Estado | Última verificação | Prazo (máx.) | Gatilho |
 |---|---|---|---|---|
@@ -175,9 +179,25 @@ Registro consolidado: `J2_PROVISIONAL_REGISTRY.json` (preservado sem alteração
 | ADPF 378 (CAUTELAR) | CAUTIONARY_ONLY | 2026-10-17 | 2027-04-15 (180 dias) | JULGAMENTO_DE_MERITO_OU_EXTINCAO |
 | Rcl 84738 (PROVISÓRIA) | LEADING_CASE_PENDING | 2026-10-17 | 2027-01-15 (90 dias) | JULGAMENTO_DO_TEMA_1147_OU_PLENARIO |
 
+**Estado editorial/físico no LEX MACHINA** (reconciliado na J2J.1):
+
+| Precedente | `editorial_state` | Ratificação humana | Instalado em | `physical_state` | Validações físicas |
+|---|---|---|---|---|---|
+| ADI 7697 | HUMAN_APPROVED | ARTHUR, 2026-10-16 (Batch01, `J2B_REPORT.md`) | J2C | PHYSICALLY_APPROVED | J2C 12/12; J2G 21/21; J2I 32/32 |
+| ADI 5017 | HUMAN_APPROVED | ARTHUR, 2026-10-17 (`J2_RATIFICATION_RECORD_03_09.json`) | J2G | PHYSICALLY_APPROVED | J2G 21/21; J2I 32/32 |
+| ADPF 378 | HUMAN_APPROVED | ARTHUR, 2026-10-17 (`J2_RATIFICATION_RECORD_03_09.json`) | J2H | PHYSICALLY_APPROVED | J2I 32/32 |
+| Rcl 84738 | HUMAN_APPROVED | ARTHUR, 2026-10-17 (`J2_RATIFICATION_RECORD_03_09.json`) | J2H | PHYSICALLY_APPROVED | J2I 32/32 |
+
+Em resumo: decisão humana ratificada, publicada e aprovada fisicamente, e o item permanece provisório e sujeito a revalidação. Nenhum item aprovado fisicamente consta como aguardando ratificação.
+
 - **Gate obrigatório** antes de qualquer novo deploy ou ratificação material: `check_j2b_provisional.py --registry J2_PROVISIONAL_REGISTRY.json --as-of <data>`.
-- **Fail closed:** item vencido ou com gatilho disparado volta a pendente até ser revisto.
-- **`publication_state`:** o campo do registro ficou com o valor da data de geração (para ADI 5017, ADPF 378 e Rcl 84738: `AWAITING_USER_RATIFICATION`). O estado físico real é "instalado (J2H) e validado (J2I)". O campo não foi editado nesta missão, para preservar o registro; a próxima regeneração do registro deve atualizá-lo.
+- **Fail closed:** item vencido ou com gatilho disparado volta a pendente até ser revisto (`on_trigger` igual para os quatro).
+- **Campos do registro (J2J.1, só metadados, compatível com os consumidores):**
+  - o estado jurídico continua nos campos `state`, `status_processual`, `last_verified_on`, `max_age_days`, `deadline` e `trigger`, mais o novo `legal_nature = PROVISIONAL`;
+  - o estado editorial/físico foi separado em campos próprios: `editorial_state`, `ratification`, `installed_by`, `physical_state`, `physical_validations` e `physical_baseline`;
+  - `publication_state` foi mantido e agora diz `PHYSICALLY_APPROVED (…)`;
+  - o código da recomendação original dos lotes ficou em `decision`.
+- **Correção desta seção:** a nota anterior, de que ADI 5017, ADPF 378 e Rcl 84738 constavam como aguardando ratificação, ficou obsoleta. Ela também atribuía a instalação da ADI 5017 à J2H; o correto é J2G.
 
 ## 7. Pendências
 
@@ -208,18 +228,26 @@ Rollbacks anteriores (J2C 261/160 e antes) continuam documentados nos respectivo
 | `f384a76` | Arquitetura extensível de tipos + protótipo de firmware genérico |
 | `aa8cdd3`, `f80d6b3` | `firmware/` reconstrói o app aprovado; guards com sha fixado |
 | `45a0084` | Freeze de Referências nº 4 (tag `lex-device-v1-references4-physical-approved-2026-10-16`), ancestral deste baseline |
-| tag `FREEZE_TAG` | Este freeze (J2J) |
+| `399d9b4` (tag `FREEZE_TAG`) | Este freeze (J2J) |
+| commit posterior à tag | J2J.1: reconciliação de metadados dos provisórios (`METADATA_ONLY_POST_FREEZE_RECONCILIATION`) |
 
 ## 10. Testes host (J2J, 2026-10-18)
 
 | Suíte | Resultado |
 |---|---|
-| Jurisprudência (`JURISPRUDENCE_AUDIT/tests`, inclui os 6 testes novos de `test_j2j_freeze`) | 108/108 OK |
+| Jurisprudência (`JURISPRUDENCE_AUDIT/tests`, inclui `test_j2j_freeze`) | 108/108 OK no freeze J2J; 110/110 OK após a J2J.1 (+2 testes: estado editorial reconciliado e gate temporal) |
 | Motor de referências (`LEGAL_TARGET_ID/tests`) | 90/90 OK |
 | Referências nº 4 (`REFERENCE_COVERAGE_AUDIT/tests`) | 15/15 OK |
 | Correlatas (`CORRELATA_COVERAGE_AUDIT/tests`, por arquivo: 12 suítes, 120 testes) | 115/120. As 5 falhas são as históricas, nome a nome: c0 `test_committed_artifacts_are_the_build`; c3a1 `test_15_run4_and_package_deterministic`; c3a_engine `test_16_operational_files_untouched`; c3b1 `test_reproducible`; c3b2 `test_c3b2_package_reproducible_and_equal_device_bytes`. NEW_REGRESSION = 0 |
 
 Antes da criação de `test_j2j_freeze.py`, a suíte de Jurisprudência deu 102/102 OK. Nenhum candidato foi reconstruído ou alterado; os testes não deixaram mudança em arquivo rastreado.
+
+**Prova de metadata-only da J2J.1:** comparei o sha256 de 330 artefatos físicos autoritativos antes e depois da reconciliação. São os arquivos rastreados de `J2H_CANDIDATE_B_OVER_A`, `J2H_PHYSICAL_DEPLOY`, `J2I_PHYSICAL_FLASH`, `J2G_PHYSICAL_DEPLOY`, `J2F_CANDIDATES_HOST_ONLY`, `JURIS_TYPE_PROTOTYPE`, `firmware/` e `LEGAL_TARGET_ID/derived`, mais os binários de backup da J2I. Todos são idênticos. Arquivos alterados: só `J2_PROVISIONAL_REGISTRY.json`, o gerador dele, este documento e `test_j2j_freeze.py`.
+
+```
+DEVICE_DATA_CHANGED = NO · FIRMWARE_CHANGED = NO · SD_PACKAGE_CHANGED = NO
+JURIS_RELATIONS = 315 · JURIS_TARGETS = 198 · PHYSICAL_BASELINE_CHANGED = NO
+```
 
 ## 11. Testes físicos
 

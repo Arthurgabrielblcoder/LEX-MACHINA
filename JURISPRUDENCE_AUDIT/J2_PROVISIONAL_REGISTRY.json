@@ -10,7 +10,7 @@
   "LEADING_CASE_PENDING": "decisão de Turma condicionada a tema de repercussão geral ainda pendente",
   "SUPERSEDED": "substituída por decisão posterior"
  },
- "policy": "Itens provisórios de jurisprudência (cautelar, mérito ou referendo pendente, tema-líder pendente). Gate obrigatório antes de qualquer ratificação material ou deploy: check_j2b_provisional.py --registry J2_PROVISIONAL_REGISTRY.json --as-of <data>.",
+ "policy": "Itens provisórios de jurisprudência (cautelar, mérito ou referendo pendente, tema-líder pendente). Gate obrigatório antes de qualquer ratificação material ou deploy: check_j2b_provisional.py --registry J2_PROVISIONAL_REGISTRY.json --as-of <data>. Estado jurídico (state, status_processual, legal_nature, revalidação) é separado do estado editorial/físico (editorial_state, physical_state, publication_state): aprovação humana e física NÃO tornam o item definitivo.",
  "items": [
   {
    "source_id": "STF:ADI:7697",
@@ -33,7 +33,22 @@
     "file": "J2_HIGH_BACKLOG/J2B_REVALIDATION_REGISTRY.json",
     "recommendations": []
    },
-   "publication_state": "PHYSICALLY_INSTALLED (J2C)",
+   "legal_nature": "PROVISIONAL",
+   "editorial_state": "HUMAN_APPROVED",
+   "ratification": {
+    "by": "ARTHUR",
+    "on": "2026-10-16",
+    "record": "J2_HIGH_BACKLOG/J2B_REPORT.md (J2A_BATCH01_USER_RATIFIED = YES)"
+   },
+   "physical_state": "PHYSICALLY_APPROVED",
+   "installed_by": "J2C",
+   "physical_validations": [
+    "J2C 12/12 PASS (J2_HIGH_BACKLOG/J2C_DEPLOY_REPORT.md)",
+    "J2G 21/21 PASS (J2G_PHYSICAL_DEPLOY/J2G_PHYSICAL_VALIDATION.json)",
+    "J2I 32/32 PASS (J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json)"
+   ],
+   "physical_baseline": "J2I_FROZEN_315_198",
+   "publication_state": "PHYSICALLY_APPROVED (J2C 12/12 PASS; J2G 21/21 PASS; J2I 32/32 PASS)",
    "on_trigger": "Rever o vínculo e a ficha antes de qualquer novo deploy; sem revisão, o item volta a pendente (fail closed)."
   },
   {
@@ -57,8 +72,23 @@
      "J0-BL-165"
     ]
    },
-   "publication_state": "AWAITING_USER_RATIFICATION (PROMOTE_PROVISIONAL_RECOMMENDED)",
-   "on_trigger": "Rever o vínculo e a ficha antes de ratificar ou publicar; sem revisão, não publicar (fail closed)."
+   "decision": "PROMOTE_PROVISIONAL_RECOMMENDED",
+   "legal_nature": "PROVISIONAL",
+   "editorial_state": "HUMAN_APPROVED",
+   "ratification": {
+    "by": "ARTHUR",
+    "on": "2026-10-17",
+    "record": "J2_RATIFICATION_RECORD_03_09.json"
+   },
+   "physical_state": "PHYSICALLY_APPROVED",
+   "installed_by": "J2G",
+   "physical_validations": [
+    "J2G 21/21 PASS (J2G_PHYSICAL_DEPLOY/J2G_PHYSICAL_VALIDATION.json)",
+    "J2I 32/32 PASS (J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json)"
+   ],
+   "physical_baseline": "J2I_FROZEN_315_198",
+   "publication_state": "PHYSICALLY_APPROVED (J2G 21/21 PASS; J2I 32/32 PASS)",
+   "on_trigger": "Rever o vínculo e a ficha antes de qualquer novo deploy; sem revisão, o item volta a pendente (fail closed)."
   },
   {
    "source_id": "STF:ADPF:378",
@@ -83,8 +113,22 @@
      "J0-BL-067"
     ]
    },
-   "publication_state": "AWAITING_USER_RATIFICATION (PROMOTE_RECOMMENDED)",
-   "on_trigger": "Rever o vínculo e a ficha antes de ratificar ou publicar; sem revisão, não publicar (fail closed)."
+   "decision": "PROMOTE_RECOMMENDED",
+   "legal_nature": "PROVISIONAL",
+   "editorial_state": "HUMAN_APPROVED",
+   "ratification": {
+    "by": "ARTHUR",
+    "on": "2026-10-17",
+    "record": "J2_RATIFICATION_RECORD_03_09.json"
+   },
+   "physical_state": "PHYSICALLY_APPROVED",
+   "installed_by": "J2H",
+   "physical_validations": [
+    "J2I 32/32 PASS (J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json)"
+   ],
+   "physical_baseline": "J2I_FROZEN_315_198",
+   "publication_state": "PHYSICALLY_APPROVED (J2I 32/32 PASS)",
+   "on_trigger": "Rever o vínculo e a ficha antes de qualquer novo deploy; sem revisão, o item volta a pendente (fail closed)."
   },
   {
    "source_id": "STF:RCL:84738",
@@ -107,8 +151,22 @@
      "J0-BL-072"
     ]
    },
-   "publication_state": "AWAITING_USER_RATIFICATION (PROMOTE_PROVISIONAL_RECOMMENDED)",
-   "on_trigger": "Rever o vínculo e a ficha antes de ratificar ou publicar; sem revisão, não publicar (fail closed)."
+   "decision": "PROMOTE_PROVISIONAL_RECOMMENDED",
+   "legal_nature": "PROVISIONAL",
+   "editorial_state": "HUMAN_APPROVED",
+   "ratification": {
+    "by": "ARTHUR",
+    "on": "2026-10-17",
+    "record": "J2_RATIFICATION_RECORD_03_09.json"
+   },
+   "physical_state": "PHYSICALLY_APPROVED",
+   "installed_by": "J2H",
+   "physical_validations": [
+    "J2I 32/32 PASS (J2I_PHYSICAL_FLASH/J2I_PHYSICAL_VALIDATION.json)"
+   ],
+   "physical_baseline": "J2I_FROZEN_315_198",
+   "publication_state": "PHYSICALLY_APPROVED (J2I 32/32 PASS)",
+   "on_trigger": "Rever o vínculo e a ficha antes de qualquer novo deploy; sem revisão, o item volta a pendente (fail closed)."
   }
  ]
 }

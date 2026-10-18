@@ -62,6 +62,32 @@ class J2JFreeze(unittest.TestCase):
             self.assertIn(i['state'], t)
             self.assertIn(i['deadline'], t)
 
+    def test_provisional_editorial_state_reconciled(self):
+        """J2J.1: physically approved items are never AWAITING_*RATIFICATION; legal state stays provisional and separate."""
+        reg = load(AUD / 'J2_PROVISIONAL_REGISTRY.json')
+        installed = {'STF:ADI:7697': 'J2C', 'STF:ADI:5017': 'J2G', 'STF:ADPF:378': 'J2H', 'STF:RCL:84738': 'J2H'}
+        self.assertEqual({i['source_id']: i['installed_by'] for i in reg['items']}, installed)
+        for i in reg['items']:
+            sid = i['source_id']
+            self.assertEqual((i['legal_nature'], i['editorial_state'], i['physical_state']), ('PROVISIONAL', 'HUMAN_APPROVED', 'PHYSICALLY_APPROVED'), sid)
+            self.assertTrue(i['publication_state'].startswith('PHYSICALLY_APPROVED'), sid)
+            self.assertNotIn('AWAITING', json.dumps({k: v for k, v in i.items() if k != 'decision'}, ensure_ascii=False), sid)
+            self.assertIn(i['state'], ('MERIT_PENDING', 'REFERENDUM_PENDING', 'CAUTIONARY_ONLY', 'LEADING_CASE_PENDING'), sid)
+            self.assertTrue(any(v.startswith('J2I 32/32 PASS') for v in i['physical_validations']), sid)
+            self.assertEqual(i['physical_baseline'], 'J2I_FROZEN_315_198')
+            self.assertTrue(i['ratification']['by'] and i['ratification']['on'], sid)
+        t = DOC.read_text(encoding='utf-8')
+        self.assertNotIn('`AWAITING_USER_RATIFICATION`', t)
+
+    def test_provisional_gate_still_works(self):
+        import datetime as dt
+        import sys
+        sys.path.insert(0, str(AUD))
+        import check_j2b_provisional as gate
+        reg = AUD / 'J2_PROVISIONAL_REGISTRY.json'
+        self.assertEqual({r['result'] for r in gate.check(dt.date(2026, 10, 18), reg)}, {'PASS'})
+        self.assertEqual({r['result'] for r in gate.check(dt.date(2027, 6, 1), reg)}, {'REVALIDATION_REQUIRED'})
+
     def test_no_stj_sumula_403_on_card(self):
         entries = load(AUD / 'J2H_PHYSICAL_DEPLOY/sd_manifest_post_full.json')['entries']
         self.assertFalse([p for p in entries if re.search(r'STJ_SUMULA_403', p, re.I)])
