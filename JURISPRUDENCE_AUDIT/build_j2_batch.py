@@ -32,6 +32,30 @@ LEVEL_DIR = {'HIGH': HIGH_DIR, 'MEDIUM': HERE / 'J2_MEDIUM_BACKLOG', 'LOW': HERE
 J2E = ROOT / 'LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2E.json'
 RATIFIED = {1: HIGH_DIR / 'J2A_BATCH01_DECISIONS.json', 2: HIGH_DIR / 'J2D_BATCH02_DECISIONS.json'}
 BATCH_SIZE = 10
+# Batch10+ (post J2I freeze): coverage is measured against the FROZEN physical baseline J2I_FROZEN_315_198 and the human ratification of
+# Batches 03–09. Batches 03–09 keep their original reconstruction (J2C 261 + J2E) so they stay byte-reproducible.
+J2I_FIRST_BATCH = 10
+J2I_PAYLOAD = HERE / 'J2H_CANDIDATE_B_OVER_A/candidate/SD/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX'
+J2I_PAYLOAD_SHA = 'b16f1f81c484e64a349a264f312d133be67b1a12d7716fa312ff02a5e9d757e1'   # on the card, J2I 32/32 PASS
+RATIFICATION_03_09 = HERE / 'J2_RATIFICATION_RECORD_03_09.json'
+
+
+def j2i_baseline():
+    if B.sha(J2I_PAYLOAD) != J2I_PAYLOAD_SHA:
+        raise SystemExit('J2I_BASELINE_NOT_FROZEN_BYTES')
+    rows = [l.split('|') for l in J2I_PAYLOAD.read_bytes().decode('utf-8').split('\n') if l and not l.startswith('#')]
+    vis = [r for r in rows if r[1] == 'JURISPRUDENCE' and r[2] == 'CURRENT_VISIBLE']
+    if (len(vis), len({r[0] for r in vis})) != (315, 198):
+        raise SystemExit('J2I_BASELINE_NOT_315_198')
+    return vis
+
+
+def ratified_03_09():
+    rec = json.loads(RATIFICATION_03_09.read_text(encoding='utf-8'))
+    for rel, h in rec['decision_files_sha256_lf'].items():
+        if B.sha_lf(HERE / rel) != h:
+            raise SystemExit(f'RATIFIED_FILE_CHANGED {rel}')
+    return rec
 
 
 def batch_file(n):
@@ -59,14 +83,16 @@ def _num(s):
     return m.group(1).split('-') if m else []
 
 
-def reconstruct(n):
+def reconstruct(n, j2i=None):
+    """j2i: None = automatic (Batch10+ over J2I_FROZEN_315_198); False = historical J2C/J2E view (ratification dossier of Batches 03–09)."""
+    j2i = n >= J2I_FIRST_BATCH if j2i is None else j2i
     original = B.current_baseline
     B.current_baseline = D2.current_baseline                    # installed 261 (J2C)
     try:
         items, _, j0 = B.reconstruct()
     finally:
         B.current_baseline = original
-    installed = D2.current_baseline()
+    installed = j2i_baseline() if j2i else D2.current_baseline()
     approved = json.loads(J2E.read_text(encoding='utf-8'))['records']
     prev = previous_batches(n)
     analyzed = {d['recommendation_id']: k for k, doc in prev.items() for d in doc['decisions']}
@@ -77,6 +103,11 @@ def reconstruct(n):
                 if t:
                     ratified_pairs.add((t, d['precedent']))
     ratified_pairs |= {(r['target_id'], r['source_id']) for r in approved}
+    if j2i:                                               # ratified Batches 03–09 (HUMAN_APPROVED) + every link on the frozen J2I card
+        for x in ratified_03_09()['items']:
+            if x['human_approved'] and x['creates_device_relations']:
+                ratified_pairs |= {(t, p) for t in x['recommended_targets'] for p in x['precedents']}
+        ratified_pairs |= {(r[0], r[5]) for r in installed}
     vis_targets = {r[0] for r in installed} | {r['target_id'] for r in approved}
     art_with = {':'.join(t.split(':')[:2]) for t in vis_targets}
     pending, covered = [], {}
@@ -125,7 +156,9 @@ def build(n, level, selection_only=False):
     lvl = sorted([b for b in pending if b['priority'] == level], key=key)
     chosen = [b['recommendation_id'] for b in lvl[:BATCH_SIZE]]
     cnt = collections.Counter(b['priority'] for b in pending)
-    status = {k: ('RATIFIED' if k in (1, 2) else 'AWAITING_USER_RATIFICATION') for k in prev}
+    rat39 = {x['batch'] for x in ratified_03_09()['items']} if n >= J2I_FIRST_BATCH else set()
+    status = {k: ('RATIFIED' if k in (1, 2) or f'BATCH{k:02d}' in rat39 else
+                  'CLOSED_EMPTY' if n >= J2I_FIRST_BATCH and not prev[k]['selected'] else 'AWAITING_USER_RATIFICATION') for k in prev}
     last = prev[max(prev)]
     prev_level = {q['recommendation_id'] for q in last.get('queue') or last.get('high_queue') or []
                   if q['recommendation_id'] not in set(last['selected'])}
@@ -138,9 +171,14 @@ def build(n, level, selection_only=False):
                status='AWAITING_USER_RATIFICATION',
                state_model=dict(PHYSICALLY_INSTALLED='J2C 261/160 (J2B_1 REF_PAYLOAD)',
                                 EDITORIALLY_APPROVED_HOST_ONLY=f'Batch02 J2E: {len(json.loads(J2E.read_text(encoding="utf-8"))["records"])} relações (A+B)',
-                                UNAPPROVED_RESEARCH_PROPOSAL=[f'BATCH{k:02d}' for k, s in status.items() if s != 'RATIFIED']),
+                                UNAPPROVED_RESEARCH_PROPOSAL=[f'BATCH{k:02d}' for k, s in status.items() if s != 'RATIFIED'])
+               if n < J2I_FIRST_BATCH else
+               dict(PHYSICALLY_INSTALLED='J2I_FROZEN_315_198 (J2H_CANDIDATE_B_OVER_A REF_PAYLOAD; J2I 32/32 PASS)',
+                    HUMAN_RATIFIED='Batches 01–04 e 06–09 (J2_RATIFICATION_RECORD_03_09.json para 03–09); Batch05 = fechamento vazio',
+                    UNAPPROVED_RESEARCH_PROPOSAL=[f'BATCH{k:02d}' for k, s in status.items() if s == 'AWAITING_USER_RATIFICATION']),
                previous_batches=status,
-               inputs={p.relative_to(ROOT).as_posix(): B.sha_lf(p) for p in [batch_file(k) for k in prev] + [J2E, B.J0_AUDIT]},
+               inputs={p.relative_to(ROOT).as_posix(): B.sha_lf(p) for p in [batch_file(k) for k in prev] + [J2E, B.J0_AUDIT]
+                       + ([J2I_PAYLOAD, RATIFICATION_03_09] if n >= J2I_FIRST_BATCH else [])},
                reconstruction=dict(ANALYZED_IN_PREVIOUS_BATCHES=len(analyzed), COVERED_BY_RATIFIED=covered, BACKLOG_PENDING_CURRENT=len(pending),
                                    HIGH_CURRENT=cnt['HIGH'], MEDIUM_CURRENT=cnt['MEDIUM'], LOW_CURRENT=cnt['LOW'],
                                    WITHOUT_IDENTIFIER=sum(1 for b in pending if not b['suggested_identifiers']),

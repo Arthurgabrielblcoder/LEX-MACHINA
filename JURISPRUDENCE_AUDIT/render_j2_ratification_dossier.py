@@ -85,7 +85,7 @@ def render():
     j2f = [r for r in j2f_doc['records'] if r['origin'] == 'J2F']
     if sorted(rat) != sorted(x['recommendation_id'] for *_, x in rows):
         raise SystemExit('RATIFICATION_RECORD_DOES_NOT_MATCH_BATCHES')
-    items, pending, analyzed, covered, prev = G.reconstruct(10)          # counting only: Batch10 is NOT created
+    items, pending, analyzed, covered, prev = G.reconstruct(10, j2i=False)  # counting only (historical J2C view): Batch10 is NOT created
     prop_rel = sorted({r for *_, x in rows for r in relations(x)})
     unresolved = [x for *_, x in rows if x['decision'].startswith('UNRESOLVED')]
     recon = dict(

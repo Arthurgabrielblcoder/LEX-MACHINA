@@ -1,0 +1,2208 @@
+{
+ "schema_version": 1,
+ "round": "J2",
+ "batch": "BATCH10",
+ "level": "MEDIUM",
+ "mode": "HOST_ONLY_DECISIONS_NO_MATERIALIZATION",
+ "status": "AWAITING_USER_RATIFICATION",
+ "state_model": {
+  "PHYSICALLY_INSTALLED": "J2I_FROZEN_315_198 (J2H_CANDIDATE_B_OVER_A REF_PAYLOAD; J2I 32/32 PASS)",
+  "HUMAN_RATIFIED": "Batches 01–04 e 06–09 (J2_RATIFICATION_RECORD_03_09.json para 03–09); Batch05 = fechamento vazio",
+  "UNAPPROVED_RESEARCH_PROPOSAL": []
+ },
+ "previous_batches": {
+  "1": "RATIFIED",
+  "2": "RATIFIED",
+  "3": "RATIFIED",
+  "4": "RATIFIED",
+  "5": "CLOSED_EMPTY",
+  "6": "RATIFIED",
+  "7": "RATIFIED",
+  "8": "RATIFIED",
+  "9": "RATIFIED"
+ },
+ "inputs": {
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2A_BATCH01_DECISIONS.json": "35cb39e511d811dbbdda823393a1c243c5c430acc1b70326a7fb969980ecaa14",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2D_BATCH02_DECISIONS.json": "1e5dd0102b855e5bf9b16c57e9eb0dac974c999b9b703674df902d759004ddce",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2_BATCH03_DECISIONS.json": "a89cf876e8dc2ceeee4656ebd7f26a18c31cfde1aabba95c47c34510632fcc09",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2_BATCH04_DECISIONS.json": "8378b989f4ee94294f313e4b3c33fddad53985f0b93e9b1e24b83934201f80af",
+  "JURISPRUDENCE_AUDIT/J2_HIGH_BACKLOG/J2_BATCH05_DECISIONS.json": "22e7ed41ef69bc3d34bdf6748b80d1cce72fa57dca53370e46ad8f6f21a40c98",
+  "JURISPRUDENCE_AUDIT/J2_MEDIUM_BACKLOG/J2_BATCH06_DECISIONS.json": "0f4c22a963c421eea41d69f83953f53f695a7fe0ff5121b09ca0e19f502018bd",
+  "JURISPRUDENCE_AUDIT/J2_MEDIUM_BACKLOG/J2_BATCH07_DECISIONS.json": "e4d2f931058357880ad9b496fb11462700fef721d1400a4b6ad0851795754dbe",
+  "JURISPRUDENCE_AUDIT/J2_MEDIUM_BACKLOG/J2_BATCH08_DECISIONS.json": "0189b80ae56a08d1209ab1528123fac5b05f5581033368af8bfdfcb80c098f75",
+  "JURISPRUDENCE_AUDIT/J2_MEDIUM_BACKLOG/J2_BATCH09_DECISIONS.json": "01b0a28e655a059df3f7fcc467e828358d1f8eec193ba8a018c35c13d22df4f3",
+  "LEGAL_TARGET_ID/derived/CF88_JURIS_ADDITIONS_J2E.json": "147fe4b200e58d231f98f18be60fff045c60306f7324a9812a67a69a320f89d3",
+  "JURISPRUDENCE_AUDIT/J0_DIAGNOSTIC_AUDIT.json": "0bd25c5c11ea2edaa75413f99c6cd755040757b7e54469d9a94cc2ea05e16fc4",
+  "JURISPRUDENCE_AUDIT/J2H_CANDIDATE_B_OVER_A/candidate/SD/99_LEX_V1/20_REFERENCES/REF_PAYLOAD.IDX": "b16f1f81c484e64a349a264f312d133be67b1a12d7716fa312ff02a5e9d757e1",
+  "JURISPRUDENCE_AUDIT/J2_RATIFICATION_RECORD_03_09.json": "bac0f074e9b2b22f68cd1628779147e6272c6ebb73bb3bfa93866a2f03155fa9"
+ },
+ "reconstruction": {
+  "ANALYZED_IN_PREVIOUS_BATCHES": 75,
+  "COVERED_BY_RATIFIED": {
+   "J0-BL-060": {
+    "target": "CF88:ART.53:PAR.1",
+    "covered_by": [
+     "CF88:ART.53:PAR.1|STF:HC:232627"
+    ]
+   },
+   "J0-BL-083": {
+    "target": "CF88:ART.100:PAR.9",
+    "covered_by": [
+     "CF88:ART.100:PAR.9|STF:ADI:4425",
+     "CF88:ART.100:PAR.9|STF:ADI:7047-7064",
+     "CF88:ART.100:PAR.9|STF:ADI:7064"
+    ]
+   },
+   "J0-BL-085": {
+    "target": "CF88:ART.100:PAR.12",
+    "covered_by": [
+     "CF88:ART.100:PAR.12|STF:ADI:4425"
+    ]
+   },
+   "J0-BL-168": {
+    "target": "ADCT:ART.101",
+    "covered_by": [
+     "ADCT:ART.101|STF:ADI:7047",
+     "ADCT:ART.101|STF:ADI:7064"
+    ]
+   }
+  },
+  "BACKLOG_PENDING_CURRENT": 69,
+  "HIGH_CURRENT": 0,
+  "MEDIUM_CURRENT": 40,
+  "LOW_CURRENT": 29,
+  "WITHOUT_IDENTIFIER": 67,
+  "LEFT_LEVEL_SINCE_PREVIOUS_BATCH": {
+   "J0-BL-089": {
+    "now": "LOW",
+    "reason": {
+     "named_identifier": false,
+     "recurrent": true,
+     "article_without_juris": false,
+     "reference_described": false
+    },
+    "approved_links_on_article": true
+   },
+   "J0-BL-164": {
+    "now": "LOW",
+    "reason": {
+     "named_identifier": false,
+     "recurrent": false,
+     "article_without_juris": false,
+     "reference_described": true
+    },
+    "approved_links_on_article": true
+   }
+  }
+ },
+ "queue": [
+  {
+   "recommendation_id": "J0-BL-125",
+   "target_id": "CF88:ART.144:PAR.8",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "RE 608588",
+    "Tema 656"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "target_juris_installed": [
+     "STF:RG:656"
+    ],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 0,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 1,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (Informativo STF 1166): Tema 656 (RE 608.588, Plenário, 20/02/2025): \"É constitucional, no âmbito dos municípios, o exercício de ações de segurança urbana pelas Guardas Municipais, inclusive policiamento ostensiv"
+  },
+  {
+   "recommendation_id": "J0-BL-133",
+   "target_id": "CF88:ART.156:PAR.2",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [
+    "RE 796376",
+    "Tema 796"
+   ],
+   "priority_reason": {
+    "named_identifier": true,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "target_juris_installed": [
+     "STF:RG:796"
+    ],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 1,
+    "2_direct_constitutional_weight": 1,
+    "3_target_without_juris": 0,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 2,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Verificado na fonte oficial (STF, \"A Constituição e o Supremo\", art. 156, § 2º): Tema 796 (RE 796.376, 2020): \"A imunidade em relação ao ITBI, prevista no inciso I do § 2º do art. 156 da Constituição Federal, não alcança o valor dos bens qu"
+  },
+  {
+   "recommendation_id": "J0-BL-023",
+   "target_id": "CF88:ART.17:PAR.6",
+   "desired_reference": "STF — fidelidade partidária e eleitos pelo sistema majoritário",
+   "origin": [
+    "production_batch_02_final"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 3,
+   "recommendation_text": "situacao dos eleitos pelo sistema majoritario"
+  },
+  {
+   "recommendation_id": "J0-BL-027",
+   "target_id": "CF88:ART.19",
+   "desired_reference": "STF — ensino religioso em escolas públicas e laicidade",
+   "origin": [
+    "production_batch_03_final"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 4,
+   "recommendation_text": "laicidade, mantida fora do corpo"
+  },
+  {
+   "recommendation_id": "J0-BL-050",
+   "target_id": "CF88:ART.25:PAR.3",
+   "desired_reference": "STF — gestao compartilhada das funcoes publicas de interesse comum em regioes metropolitanas (saneamento) (candidato a confirmar em fonte oficial)",
+   "origin": [
+    "production_batch_04"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": false,
+    "article_without_juris": true,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 5,
+   "recommendation_text": "limites da atuacao estadual na regiao metropolitana"
+  },
+  {
+   "recommendation_id": "J0-BL-091",
+   "target_id": "CF88:ART.103-A",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 6,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA; o corpo usa 'enunciado vinculante'). A fonte canônica remete à Lei n. 11.417, de 2006, que disciplina o procedimento, na camada de legisl"
+  },
+  {
+   "recommendation_id": "J0-BL-092",
+   "target_id": "CF88:ART.103-B:PAR.4",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 7,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Os limites do poder regulamentar do Conselho são tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-093",
+   "target_id": "CF88:ART.105:INC.III",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 8,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O cabimento de recurso especial contra decisões de turmas recursais de juizados é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-118",
+   "target_id": "CF88:ART.124",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 9,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O julgamento de civis pela Justiça Militar da União é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-131",
+   "target_id": "CF88:ART.151",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 10,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A concessão de isenções de tributos locais por tratado internacional é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-139",
+   "target_id": "CF88:ART.185",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 11,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A compatibilização entre a imunidade da propriedade produtiva e os requisitos do art. 186 é tema da camada JURISPRUDÊNCIA e da doutrina."
+  },
+  {
+   "recommendation_id": "J0-BL-140",
+   "target_id": "CF88:ART.190",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 12,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A lei que regula a aquisição de imóvel rural por estrangeiro e o enquadramento de empresas brasileiras de capital estrangeiro pertencem à legislação correlata e à camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-141",
+   "target_id": "CF88:ART.194:PAR.UNICO",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 13,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O alcance da irredutibilidade (valor nominal ou real) é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-143",
+   "target_id": "CF88:ART.196",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 14,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O fornecimento judicial de medicamentos e tratamentos é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-148",
+   "target_id": "CF88:ART.210",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 15,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O modelo de ensino religioso nas escolas públicas (confessional ou não) é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-149",
+   "target_id": "CF88:ART.217:PAR.1",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 16,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O que ocorre se o prazo de sessenta dias não for cumprido é tema da legislação desportiva e da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-150",
+   "target_id": "CF88:ART.220",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 17,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: Os limites da liberdade de expressão e de imprensa em casos concretos são tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-151",
+   "target_id": "CF88:ART.226",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 18,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O reconhecimento de outras configurações familiares é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-152",
+   "target_id": "CF88:ART.226:PAR.3",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 19,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O alcance da expressão 'entre o homem e a mulher' (uniões entre pessoas do mesmo sexo) é tema da camada JURISPRUDÊNCIA (EXTERNAL_VERIFICATION_REQUIRED). Os requisitos legais da união estável pertencem à legislação correlata."
+  },
+  {
+   "recommendation_id": "J0-BL-153",
+   "target_id": "CF88:ART.228",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 20,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A possibilidade de reduzir a idade penal por emenda é tema de debate constitucional (camada JURISPRUDÊNCIA e doutrina)."
+  },
+  {
+   "recommendation_id": "J0-BL-156",
+   "target_id": "CF88:ART.240",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 21,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O alcance da ressalva para contribuições criadas depois de 1988 é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-158",
+   "target_id": "ADCT:ART.3",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 22,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A possibilidade de nova revisão fora do art. 60 é tema da camada JURISPRUDÊNCIA e da doutrina."
+  },
+  {
+   "recommendation_id": "J0-BL-159",
+   "target_id": "ADCT:ART.7",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 23,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A adesão do Brasil a tribunais internacionais de direitos humanos e seus efeitos pertencem aos tratados e à camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-160",
+   "target_id": "ADCT:ART.8",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 24,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A lei que regulamenta a reparação dos anistiados políticos e sua aplicação pertencem à legislação correlata e à camada JURISPRUDÊNCIA (EXTERNAL_VERIFICATION_REQUIRED)."
+  },
+  {
+   "recommendation_id": "J0-BL-161",
+   "target_id": "ADCT:ART.17",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 25,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: O texto oficial remete à Emenda Constitucional nº 41/2003 no caput (nota da fonte canônica); a aplicação atual do artigo é tema da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-162",
+   "target_id": "ADCT:ART.19",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 26,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: A diferença entre estabilidade e efetividade e seus efeitos práticos são temas da camada JURISPRUDÊNCIA."
+  },
+  {
+   "recommendation_id": "J0-BL-163",
+   "target_id": "ADCT:ART.25",
+   "desired_reference": "IDENTIFICACAO_PENDENTE",
+   "origin": [
+    "production_batch_08_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": true,
+    "reference_described": false
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": false,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 1,
+    "6_low_ambiguity": 0
+   },
+   "rank": 27,
+   "recommendation_text": "DRAFT_EXTERNAL_LAYER_NOTE: As leis que prorrogaram o prazo do caput e o alcance da revogação (por exemplo, sobre competências normativas de órgãos do sistema financeiro) são temas da legislação correlata e da camada JURISPRUDÊNCIA (EXTERNAL_VERIFICATION_REQUIRED)."
+  },
+  {
+   "recommendation_id": "J0-BL-097",
+   "target_id": "CF88:ART.114",
+   "desired_reference": "ADI n. 3392",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 28,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-098",
+   "target_id": "CF88:ART.114",
+   "desired_reference": "ADI n. 3423",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 29,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-099",
+   "target_id": "CF88:ART.114",
+   "desired_reference": "ADI n. 3431",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 30,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-100",
+   "target_id": "CF88:ART.114",
+   "desired_reference": "ADI n. 3432",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 31,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-101",
+   "target_id": "CF88:ART.114",
+   "desired_reference": "ADI n. 3520",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 32,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-106",
+   "target_id": "CF88:ART.114:PAR.1",
+   "desired_reference": "ADI n. 3392",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 33,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-107",
+   "target_id": "CF88:ART.114:PAR.1",
+   "desired_reference": "ADI n. 3423",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 34,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-108",
+   "target_id": "CF88:ART.114:PAR.1",
+   "desired_reference": "ADI n. 3431",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 35,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-109",
+   "target_id": "CF88:ART.114:PAR.1",
+   "desired_reference": "ADI n. 3432",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 36,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-110",
+   "target_id": "CF88:ART.114:PAR.1",
+   "desired_reference": "ADI n. 3520",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": false,
+    "article_has_juris": true,
+    "target_juris_installed": [],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 1,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 37,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-113",
+   "target_id": "CF88:ART.114:PAR.3",
+   "desired_reference": "ADI n. 3423",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "target_juris_installed": [
+     "STF:ADI:3423-3392-3432-3520"
+    ],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 0,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 38,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-114",
+   "target_id": "CF88:ART.114:PAR.3",
+   "desired_reference": "ADI n. 3431",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "target_juris_installed": [
+     "STF:ADI:3423-3392-3432-3520"
+    ],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 0,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 39,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  },
+  {
+   "recommendation_id": "J0-BL-115",
+   "target_id": "CF88:ART.114:PAR.3",
+   "desired_reference": "ADI n. 3520",
+   "origin": [
+    "production_batch_07_macro"
+   ],
+   "suggested_identifiers": [],
+   "priority_reason": {
+    "named_identifier": false,
+    "recurrent": true,
+    "article_without_juris": false,
+    "reference_described": true
+   },
+   "current_baseline_equivalent": {
+    "target_has_juris": true,
+    "article_has_juris": true,
+    "target_juris_installed": [
+     "STF:ADI:3423-3392-3432-3520"
+    ],
+    "target_juris_approved_not_installed": []
+   },
+   "selection_scores": {
+    "1_explicit_identifier": 0,
+    "2_direct_constitutional_weight": 0,
+    "3_target_without_juris": 0,
+    "4_recurrence": 0,
+    "5_practical_relevance": 0,
+    "6_low_ambiguity": 0
+   },
+   "rank": 40,
+   "recommendation_text": "controle de constitucionalidade anotado na fonte canonica sobre dispositivo do escopo da explicacao (CANONICAL_VIGENCY_ANNOTATION); resultado e alcance: EXTERNAL_VERIFICATION_REQUIRED"
+  }
+ ],
+ "selected": [
+  "J0-BL-125",
+  "J0-BL-133",
+  "J0-BL-023",
+  "J0-BL-027",
+  "J0-BL-050",
+  "J0-BL-091",
+  "J0-BL-092",
+  "J0-BL-093",
+  "J0-BL-118",
+  "J0-BL-131"
+ ],
+ "LEVEL_REMAINING_AFTER_BATCH": 30,
+ "sources": {
+  "P1": {
+   "tier": "A",
+   "org": "Presidência da República (Planalto)",
+   "title": "Constituição Federal — texto compilado (com redações anteriores e anotações \"Vide ADI\")",
+   "identifier": "constituicao.htm",
+   "url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+   "accessed_on": "2026-10-16",
+   "method": "download direto (curl)",
+   "snapshot_sha256": "51ac764ae9b5e417897bea83d9a4e108b941ed7226fce23e9a56251236fc17cb",
+   "proves": "Origem das 10 recomendações (CANONICAL_VIGENCY_ANNOTATION). \"Vide ADIN 3392\" aparece em todo dispositivo incluído ou alterado pela EC 45/2004 (art. 5º LXXVIII e § 3º, 92 § 1º, 93 IV, 98 § 1º, 102 § 2º, 114). Art. 100, § 9º tem duas redações: a da EC 62/2009 (compensação no momento da expedição; \"Vide ADI 4425\") e a da EC 113/2021 (vigente; \"Vide ADI 7047/7064\"). § 12 tem só a redação da EC 62/2009. \"Vide ADI 7697\" em art. 165 § 9º III e § 10, art. 166 §§ 9º a 20 e art. 166-A.",
+   "reused_from": "J2A"
+  },
+  "K1": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Repercussão Geral — Tema 656",
+   "identifier": "Tema 656 / RE 608588",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=656",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "aff8802c42b8b9994c3a09c87869d53ff4bcacf6a33d84c607f10c6d27e47a69",
+   "proves": "Título: limites da atuação legislativa local para disciplinar as atribuições das guardas municipais; à luz do art. 144, § 8º; leading case RE 608588; acórdão de mérito publicado em 22/08/2025."
+  },
+  "K2": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Repercussão Geral — Tema 796",
+   "identifier": "Tema 796 / RE 796376",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=796",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "b1b0f25b5366cb626d5e8b7bfbd14bd0660d86248b560d2bf4eb6dc972dcd3f5",
+   "proves": "Título: alcance da imunidade do ITBI (art. 156, § 2º, I) sobre imóveis incorporados acima do capital a integralizar; leading case RE 796376."
+  },
+  "K3": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 17 (página renderizada)",
+   "identifier": "CF art. 17",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=17",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "d71bc23eb4ebf2635ebce465c97682b9af605e98ea9cd67f4841b788e8999060",
+   "proves": "Sob o § 1º (\"... normas de disciplina e fidelidade partidária\", red. EC 97/2017): \"Inaplicabilidade da regra de perda do mandato por infidelidade partidária ao sistema eleitoral majoritário\" [ADI 5.081, j. 27-5-2015, P]. O § 6º (incluído pela EC 111/2021) não tem julgado anotado."
+  },
+  "K4": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 5081",
+   "identifier": "ADI 5081",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%205081%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "d72cac96b80d1a102d0604404063ba55ddf5b37e024875bec86c2da9b67895bf",
+   "proves": "Pleno, Rel. Min. Roberto Barroso, j. 27/05/2015, publ. 19/08/2015: Res. TSE 22.610/2007; \"inaplicabilidade da regra de perda do mandato por infidelidade partidária ao sistema eleitoral majoritário\"."
+  },
+  "K5": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 19",
+   "identifier": "CF art. 19",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=19",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch da página oficial; innerText)",
+   "dom_text_sha256": "ce6db4af927703d1df0f25a18d438244e268c9cddd99ecab02574f5052559478",
+   "proves": "Art. 19, I: \"Vide ADI 4.439, red. do ac. min. Alexandre de Moraes, j. 27-9-2017, P, DJE de 21-6-2018\"."
+  },
+  "K6": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 210",
+   "identifier": "CF art. 210",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=210",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch da página oficial; innerText)",
+   "dom_text_sha256": "ac57f54587f799daa3bdbd61e6cf78add05c5c850377db3d713eaea8ea8cad89",
+   "proves": "Art. 210, § 1º: ADI 4.439 (constitucionalidade do ensino religioso confessional como disciplina facultativa)."
+  },
+  "K7": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 4439",
+   "identifier": "ADI 4439",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204439%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "95bf1edbf16e3f0b5437845bd24ba054a9c861a48cd998c758d569cb839a1be4",
+   "proves": "Pleno, Rel. Min. Roberto Barroso, red. p/ acórdão Min. Alexandre de Moraes, j. 27/09/2017, publ. 21/06/2018: \"binômio Laicidade do Estado (CF, art. 19, I)/Consagração da Liberdade religiosa\"; conformidade com o art. 210, § 1º."
+  },
+  "K8": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 25",
+   "identifier": "CF art. 25",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=25",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch da página oficial; innerText)",
+   "dom_text_sha256": "be4fd0805b2ec2d7484c9c0956b33cd13e60f29da330ed04ca8996323673bedc",
+   "proves": "Art. 25, § 3º: ADI 1.842 (red. do ac. min. Gilmar Mendes, j. 6-3-2013, P) — titularidade conjunta do interesse metropolitano; saneamento básico como função de interesse comum."
+  },
+  "K9": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 1842 (mérito e EDs)",
+   "identifier": "ADI 1842",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%201842%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "32e8ae0b2c5f550fdce5a53a608c3229cf34c1f4007216346185af36c4ab54ea",
+   "proves": "Mérito: Pleno, Rel. Min. Luiz Fux, red. p/ acórdão Min. Gilmar Mendes, j. 06/03/2013, publ. 16/09/2013 (\"nos termos do art. 25, § 3º, da Constituição Federal\"). ED, ED-segundos e ED-terceiros rejeitados em 23/11/2020 (publ. 03/12/2020)."
+  },
+  "K10": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADC 12 (mérito e MC)",
+   "identifier": "ADC 12",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADC%2012%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "52a60caa8019922860eeb2be5a4361df09a82007cee6181167d3b492dab78acc",
+   "proves": "Mérito: Pleno, Rel. Min. Carlos Britto, j. 20/08/2008, publ. 18/12/2009: Resolução CNJ 7/2005; \"caráter normativo primário, dado que arranca diretamente do § 4º do art. 103-B\". MC: j. 16/02/2006."
+  },
+  "K11": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 105",
+   "identifier": "CF art. 105",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=105",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch da página oficial; innerText)",
+   "dom_text_sha256": "50666f6fffaf2c6daebdf979bdfedc3ea0e4b142672bd5f363b949dc244ec8fc",
+   "proves": "Art. 105: nenhum julgado do STF anotado no inciso III sobre recurso especial contra decisão de turma recursal (só o CC 7.090 sobre conflito de competência, art. 105, I, d)."
+  },
+  "K12": {
+   "tier": "A",
+   "org": "STJ",
+   "title": "STJ — pesquisa de súmulas (Súmula 203)",
+   "identifier": "Súmula STJ 203",
+   "url": "https://scon.stj.jus.br/SCON/sumstj/toc.jsp?livre=%27203%27.num.&b=SUMU",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "a533a79828ed5e2529b6f076db404f5a6be63c72ec03bed4db86a554d32df13a",
+   "proves": "BLOQUEADO: \"Verificação automática em andamento ... responda ao desafio abaixo\" (anti-robô). O desafio NÃO foi contornado; o conteúdo da súmula não foi acessado. O hash é da página de bloqueio."
+  },
+  "K13": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 124",
+   "identifier": "CF art. 124",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=124",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch da página oficial; innerText)",
+   "dom_text_sha256": "8806dc70b76f1d0d2783f46b9922f88bf1a67e621aeb2e02a0acaa1d66b0bbcb",
+   "proves": "Art. 124: julgados sobre civis na Justiça Militar quase todos de Turma (HC 83.003, HC 110.286, RMS 26.315 etc.), em sentidos casuísticos; nenhum precedente plenário de mérito sobre o tema geral."
+  },
+  "K14": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Portal — ADPF 289 (abas Decisões e Andamentos)",
+   "identifier": "ADPF 289",
+   "url": "https://portal.stf.jus.br/processos/detalhe.asp?incidente=4448028",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch das abas; innerText)",
+   "dom_text_sha256": "3745be8066e78ea594dca9076557e27bbd3fb18942cddfdf995c9bb3c892bf68",
+   "proves": "Julgamento de civis pela Justiça Militar em tempo de paz: mérito incluído na sessão virtual de 29/08/2025 e retirado de pauta em 20/08/2025; conclusos ao relator (Min. Gilmar Mendes) em 08/06/2026; sem julgamento de mérito."
+  },
+  "K15": {
+   "tier": "A",
+   "org": "STF",
+   "title": "A Constituição e o Supremo — art. 151",
+   "identifier": "CF art. 151",
+   "url": "https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&abrirArtigo=151",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (fetch da página oficial; innerText)",
+   "dom_text_sha256": "71f46d104e804e8d08b74551f73448bc6e9ec580d9408bd16b8798513ba1767e",
+   "proves": "Art. 151, III: RE 229.096 (red. do ac. min. Cármen Lúcia, j. 16-8-2007, P) — isenção prevista em tratado (GATT) não é isenção heterônoma; = AI 235.708 AgR; vide RE 543.943 AgR (tributos locais, como o ISS)."
+  },
+  "K16": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — RE 229096",
+   "identifier": "RE 229096",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22RE%20229096%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "dom_text_sha256": "de90dfceb3fa9a7917f413513b9646cfb079b486fbf903f0b131b590eeff28fc",
+   "proves": "Pleno, Rel. Min. Ilmar Galvão, red. p/ acórdão Min. Cármen Lúcia, j. 16/08/2007, publ. 11/04/2008: \"ISENÇÃO DE TRIBUTO ESTADUAL PREVISTA EM TRATADO INTERNACIONAL ... ARTIGO 151, INCISO III ... NÃO CARACTERIZAÇÃO DE ISENÇÃO HETERÔNOMA\"."
+  }
+ },
+ "decisions": [
+  {
+   "recommendation_id": "J0-BL-125",
+   "rank": 1,
+   "recommended_by_backlog": "CF88:ART.144:PAR.8",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "RE 608588",
+    "Tema 656"
+   ],
+   "precedents": [
+    {
+     "id": "STF:RG:656",
+     "court": "STF",
+     "klass": "RG",
+     "number": "656",
+     "judgment": "RE 608588 (Plenário, 20/02/2025)",
+     "publication": "acórdão de mérito publicado em 22/08/2025"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "O tema é decidido \"à luz do art. 144, § 8º, da Constituição federal\" (página oficial do tema).",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 144, § 8º, vigente (redação originária).",
+   "target_check": "ALREADY_COVERED",
+   "recommended_targets": [],
+   "decision": "ALREADY_COVERED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado; acórdão publicado em 22/08/2025",
+   "sources": [
+    "K1"
+   ],
+   "evidence_excerpt": "Recurso extraordinário em que se discute, à luz do art. 144, § 8º, da Constituição federal, o limite da atuação legislativa dos municípios para fixar as atribuições de suas guardas municipais.",
+   "reason": "O RE 608588 é o leading case do Tema 656, que já está instalado em CF88:ART.144:PAR.8 no baseline J2I (STF:RG:656). O seletor não casou \"RE 608588\" com \"Tema 656\" porque os números diferem. Nenhum vínculo novo.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "RG": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-133",
+   "rank": 2,
+   "recommended_by_backlog": "CF88:ART.156:PAR.2",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [
+    "RE 796376",
+    "Tema 796"
+   ],
+   "precedents": [
+    {
+     "id": "STF:RG:796",
+     "court": "STF",
+     "klass": "RG",
+     "number": "796",
+     "judgment": "RE 796376 (Plenário, 2020)",
+     "publication": "mérito julgado"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "Título oficial: imunidade do ITBI \"prevista no art. 156, § 2º, I, da Constituição\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 156, § 2º, I, vigente.",
+   "target_check": "ALREADY_COVERED",
+   "recommended_targets": [],
+   "decision": "ALREADY_COVERED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado",
+   "sources": [
+    "K2"
+   ],
+   "evidence_excerpt": "Alcance da imunidade tributária do ITBI, prevista no art. 156, § 2º, I, da Constituição, sobre imóveis incorporados ao patrimônio de pessoa jurídica.",
+   "reason": "O RE 796376 é o leading case do Tema 796, já instalado em CF88:ART.156:PAR.2 no baseline J2I (STF:RG:796). Uma eventual descida do vínculo para o inciso I seria realocação de vínculo já aprovado, fora do escopo deste lote. Nenhum vínculo novo.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "RG": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-023",
+   "rank": 3,
+   "recommended_by_backlog": "CF88:ART.17:PAR.6",
+   "original_recommendation": "STF — fidelidade partidária e eleitos pelo sistema majoritário",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STF:ADI:5081",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "5081",
+     "judgment": "Pleno, 27/05/2015",
+     "publication": "DJe 19/08/2015",
+     "rapporteur": "Min. Roberto Barroso"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A compilação oficial do STF anota a ADI 5081 no art. 17, § 1º (fidelidade partidária), não no § 6º.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "A cláusula \"normas de disciplina e fidelidade partidária\" do § 1º existe desde a EC 52/2006 e continua na redação da EC 97/2017. O § 6º só foi incluído pela EC 111/2021, depois do julgamento (2015); ele positiva a perda do mandato apenas para cargos proporcionais, em linha com a ADI 5081.",
+   "target_check": "REALLOCATED",
+   "recommended_targets": [
+    "CF88:ART.17:PAR.1"
+   ],
+   "decision": "REALLOCATE_RECOMMENDED",
+   "confidence": "MEDIUM",
+   "status_processual": "mérito julgado",
+   "sources": [
+    "K3",
+    "K4"
+   ],
+   "evidence_excerpt": "INAPLICABILIDADE DA REGRA DE PERDA DO MANDATO POR INFIDELIDADE PARTIDÁRIA AO SISTEMA ELEITORAL MAJORITÁRIO.",
+   "reason": "A nota pede a situação dos eleitos pelo sistema majoritário. O precedente oficial é a ADI 5081, mas ele é anterior ao § 6º (EC 111/2021) e o STF o anota no § 1º. Vincular no § 6º atribuiria ao acórdão a interpretação de um texto que ele não examinou. Proposta: § 1º. Julgamento humano necessário: o usuário pode preferir só nível de artigo (CF88:ART.17), com nota temporal.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-027",
+   "rank": 4,
+   "recommended_by_backlog": "CF88:ART.19",
+   "original_recommendation": "STF — ensino religioso em escolas públicas e laicidade",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STF:ADI:4439",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "4439",
+     "judgment": "Pleno, 27/09/2017",
+     "publication": "DJe 21/06/2018",
+     "rapporteur": "Min. Alexandre de Moraes (redator)"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa cita o \"binômio Laicidade do Estado (CF, art. 19, I)\"; a compilação oficial traz \"Vide ADI 4.439\" no art. 19, I, e o acórdão no art. 210, § 1º.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 19, I, e art. 210, § 1º, na redação originária, vigentes.",
+   "target_check": "REALLOCATED",
+   "recommended_targets": [
+    "CF88:ART.19:INC.I"
+   ],
+   "decision": "REALLOCATE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado (improcedência)",
+   "sources": [
+    "K5",
+    "K6",
+    "K7"
+   ],
+   "evidence_excerpt": "A singularidade da previsão constitucional de ensino religioso, de matrícula facultativa, observado o binômio Laicidade do Estado (CF, art. 19, I)/Consagração da Liberdade religiosa.",
+   "reason": "A nota é sobre laicidade e ensino religioso; o dispositivo da laicidade é o inciso I do art. 19, não o caput. O art. 210, § 1º, onde o STF ancora o acórdão, é um segundo target possível, mas fica fora da recomendação original; não é proposto aqui (decisão do usuário).",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-050",
+   "rank": 5,
+   "recommended_by_backlog": "CF88:ART.25:PAR.3",
+   "original_recommendation": "STF — gestao compartilhada das funcoes publicas de interesse comum em regioes metropolitanas (saneamento) (candidato a confirmar em fonte oficial)",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STF:ADI:1842",
+     "court": "STF",
+     "klass": "ADI",
+     "number": "1842",
+     "judgment": "Pleno, 06/03/2013 (EDs rejeitados em 23/11/2020)",
+     "publication": "DJe 16/09/2013",
+     "rapporteur": "Min. Gilmar Mendes (redator)"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa decide \"nos termos do art. 25, § 3º, da Constituição Federal\"; a compilação oficial anota a ADI 1.842 no § 3º.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 25, § 3º, na redação originária, vigente.",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.25:PAR.3"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado; três embargos de declaração rejeitados (23/11/2020)",
+   "sources": [
+    "K8",
+    "K9"
+   ],
+   "evidence_excerpt": "A função pública do saneamento básico frequentemente extrapola o interesse local e passa a ter natureza de interesse comum no caso de instituição de regiões metropolitanas, aglomerações urbanas e microrregiões, nos termos do art. 25, § 3º, da Constituição Federal.",
+   "reason": "Precedente plenário central sobre os limites da atuação estadual na região metropolitana (titularidade conjunta, vedação de concentração do poder decisório). O alvo da recomendação já é o § 3º. Nenhum julgamento conjunto aparece na ementa.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADI": "VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": true,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-091",
+   "rank": 6,
+   "recommended_by_backlog": "CF88:ART.103-A",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [],
+   "precedents": [],
+   "namespace": "CF88",
+   "namespace_evidence": "Nota terminológica sobre o art. 103-A; nenhum precedente é indicado.",
+   "temporal_version": "NOT_APPLICABLE",
+   "temporal_note": "—",
+   "target_check": "NOT_MATERIAL",
+   "recommended_targets": [],
+   "decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "não se aplica",
+   "sources": [
+    "P1"
+   ],
+   "evidence_excerpt": "Termo constitucional: súmula vinculante (o contrato ENTENDA reserva a palavra à camada JURISPRUDÊNCIA ...). A fonte canônica remete à Lei n. 11.417, de 2006, que disciplina o procedimento, na camada de legislação.",
+   "reason": "A nota não pede jurisprudência: trata da palavra \"súmula vinculante\" no texto ENTENDA e remete à Lei 11.417/2006 (camada de legislação correlata). Não há precedente a vincular; criar um vínculo genérico seria escolha editorial sem base na recomendação.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {},
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "NO",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "LEI"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "LEI"
+     ],
+     "alert": true
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-092",
+   "rank": 7,
+   "recommended_by_backlog": "CF88:ART.103-B:PAR.4",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STF:ADC:12",
+     "court": "STF",
+     "klass": "ADC",
+     "number": "12",
+     "judgment": "Pleno, 20/08/2008 (MC 16/02/2006)",
+     "publication": "DJe 18/12/2009",
+     "rapporteur": "Min. Carlos Britto"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa: a Resolução CNJ 7/2005 tem \"caráter normativo primário, dado que arranca diretamente do § 4º do art. 103-B\".",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Caput do § 4º (incluído pela EC 45/2004) inalterado; a EC 103/2019 mexeu só no inciso III, que não é o fundamento da ADC 12.",
+   "target_check": "PASS",
+   "recommended_targets": [
+    "CF88:ART.103-B:PAR.4"
+   ],
+   "decision": "PROMOTE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado (procedência)",
+   "sources": [
+    "K10"
+   ],
+   "evidence_excerpt": "A Resolução nº 07/05 se dota, ainda, de caráter normativo primário, dado que arranca diretamente do § 4º do art. 103-B da Carta-cidadã.",
+   "reason": "Precedente plenário de referência sobre o poder normativo do CNJ (e seus limites: a resolução só \"debulha\" princípios do art. 37). Tipo ADC: rótulo existe no firmware genérico, ainda sem teste físico.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "ADC": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "REGIMENTO_RESOLUCAO"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-093",
+   "rank": 8,
+   "recommended_by_backlog": "CF88:ART.105:INC.III",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STJ:SUMULA:203",
+     "court": "STJ",
+     "klass": "SUMULA_STJ",
+     "number": "203",
+     "judgment": "não verificado (fonte oficial bloqueada)",
+     "publication": "não verificado"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "Não confirmado: a página oficial do STJ não foi acessada (desafio anti-robô). A compilação do STF não anota julgado sobre o tema no art. 105, III.",
+   "temporal_version": "NOT_APPLICABLE",
+   "temporal_note": "Não avaliável sem a fonte oficial.",
+   "target_check": "UNVERIFIED",
+   "recommended_targets": [],
+   "decision": "UNRESOLVED_EXTERNAL",
+   "confidence": "N/A",
+   "status_processual": "não verificado",
+   "sources": [
+    "K12",
+    "K11"
+   ],
+   "evidence_excerpt": "Verificação automática em andamento. Aguarde a verificação automática. Caso não seja redirecionado, responda ao desafio abaixo.",
+   "reason": "O candidato natural é a Súmula 203 do STJ (recurso especial contra decisão de órgão de segundo grau dos juizados). A fonte oficial do STJ bloqueou o acesso com desafio anti-robô, que não foi contornado; nenhum texto foi presumido e não se usou fonte secundária. Mesma pendência estrutural da Súmula 403/STJ.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": false,
+   "device_type_status": {
+    "SUMULA_STJ": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-118",
+   "rank": 9,
+   "recommended_by_backlog": "CF88:ART.124",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STF:ADPF:289",
+     "court": "STF",
+     "klass": "ADPF",
+     "number": "289",
+     "judgment": "mérito pendente (retirado de pauta em 20/08/2025; conclusos em 08/06/2026)",
+     "publication": "não julgado",
+     "rapporteur": "Min. Gilmar Mendes"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "Tema (julgamento de civis pela Justiça Militar da União) ligado ao art. 124; a compilação oficial só traz julgados de Turma, casuísticos.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 124, vigente.",
+   "target_check": "UNRESOLVED",
+   "recommended_targets": [],
+   "decision": "UNRESOLVED_IDENTIFICATION",
+   "confidence": "N/A",
+   "status_processual": "ADPF 289: mérito pendente",
+   "sources": [
+    "K13",
+    "K14"
+   ],
+   "evidence_excerpt": "ADPF 289 Mérito: Sessão Ordinária Virtual do Plenário 27-2025 ... Retirado de pauta.",
+   "reason": "Não há precedente plenário de mérito sobre o tema geral: a questão está pendente na ADPF 289, e os julgados anotados são de Turma, sobre hipóteses específicas do CPM. Escolher um deles seria decisão editorial sem base suficiente. Retomar quando a ADPF 289 for julgada (ou por decisão humana de usar um julgado de Turma).",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": false,
+   "device_type_status": {
+    "ADPF": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [],
+     "alert": false
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "recommendation_id": "J0-BL-131",
+   "rank": 10,
+   "recommended_by_backlog": "CF88:ART.151",
+   "original_recommendation": "IDENTIFICACAO_PENDENTE",
+   "suggested_identifiers": [],
+   "precedents": [
+    {
+     "id": "STF:RE:229096",
+     "court": "STF",
+     "klass": "RE",
+     "number": "229096",
+     "judgment": "Pleno, 16/08/2007",
+     "publication": "DJe 11/04/2008",
+     "rapporteur": "Min. Cármen Lúcia (redatora)"
+    }
+   ],
+   "namespace": "CF88",
+   "namespace_evidence": "A ementa cita o \"ARTIGO 151, INCISO III, DA CONSTITUIÇÃO DA REPÚBLICA\"; a compilação oficial anota o RE 229.096 no inciso III.",
+   "temporal_version": "CURRENT",
+   "temporal_note": "Art. 151, III, na redação originária, vigente.",
+   "target_check": "REALLOCATED",
+   "recommended_targets": [
+    "CF88:ART.151:INC.III"
+   ],
+   "decision": "REALLOCATE_RECOMMENDED",
+   "confidence": "HIGH",
+   "status_processual": "mérito julgado",
+   "sources": [
+    "K15",
+    "K16"
+   ],
+   "evidence_excerpt": "ISENÇÃO DE TRIBUTO ESTADUAL PREVISTA EM TRATADO INTERNACIONAL FIRMADO PELA REPÚBLICA FEDERATIVA DO BRASIL. ARTIGO 151, INCISO III, DA CONSTITUIÇÃO DA REPÚBLICA. ARTIGO 98 DO CÓDIGO TRIBUTÁRIO NACIONAL. NÃO CARACTERIZAÇÃO DE ISENÇÃO HETERÔNOMA.",
+   "reason": "Precedente plenário sobre isenção por tratado. O alvo desce do caput para o inciso III (vedação de isenção heterônoma). O RE 543.943 AgR (Turma) estende o raciocínio a tributos locais e fica como reforço, sem vínculo próprio. Tipo RE: suportado pela arquitetura, ainda sem teste físico.",
+   "NAMESPACE_CHECK": "PASS",
+   "TEMPORAL_CHECK": "DONE",
+   "OFFICIAL_SOURCE_REVIEWED": true,
+   "device_type_status": {
+    "RE": "NEW_JURIS_TYPE_REQUIRES_DESIGN"
+   },
+   "NEW_JURIS_TYPE_REQUIRES_DESIGN": "YES",
+   "auditor_flags": {
+    "namespace": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "CODIGO",
+      "CONVENCAO_TRATADO"
+     ],
+     "alert": true
+    },
+    "namespace_in_recommendation": {
+     "cf_mentioned": false,
+     "other_norms": [
+      "CONVENCAO_TRATADO"
+     ],
+     "alert": true
+    },
+    "temporal": {
+     "signals": [],
+     "ecs_cited": [],
+     "alert": false
+    },
+    "status": {
+     "signals": [],
+     "provisional": false
+    }
+   },
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  }
+ ],
+ "totals": {
+  "ALREADY_COVERED": 2,
+  "PROMOTE_RECOMMENDED": 2,
+  "REALLOCATE_RECOMMENDED": 3,
+  "REJECT_NOT_MATERIAL_RECOMMENDED": 1,
+  "UNRESOLVED_EXTERNAL": 1,
+  "UNRESOLVED_IDENTIFICATION": 1
+ }
+}
