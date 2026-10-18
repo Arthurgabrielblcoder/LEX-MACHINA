@@ -45,3 +45,11 @@ CAPTCHA_OR_CHALLENGE_BYPASSED = NO · MATERIALIZADO = NÃO · BATCH08 ALTERADO =
 **Registro:** `STJ_OFFICIAL_SOURCE_RESOLUTIONS.json`, que também traz a Súmula 203 (Batch10, J0-BL-093: CF art. 105, III). Índice completo: `JURISPRUDENCE_ENGINE/stj/STJ_SUMULAS_INDEX.json`.
 
 Nenhuma ficha ou vínculo foi criado. A recomendação do Batch08 só muda com nova decisão editorial do usuário.
+
+## Encerramento editorial (2026-10-18)
+
+```
+STJ_SUMULA403 = HUMAN_APPROVED em CF art. 5º, V e CF art. 5º, X · CC arts. 186 e 927 → revisão no CC-J1
+STJ_SUMULA203 = HUMAN_APPROVED em CF art. 105, III (redação vigente; alteração de 2002 preservada na ficha)
+Histórico: UNRESOLVED_EXTERNAL → OFFICIAL_SOURCE_RESOLVED → HUMAN_APPROVED · registro: J2_STJ_RESOLUTION_RECORD.json · nada materializado
+```

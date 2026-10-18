@@ -39,6 +39,7 @@ J2I_PAYLOAD = HERE / 'J2H_CANDIDATE_B_OVER_A/candidate/SD/99_LEX_V1/20_REFERENCE
 J2I_PAYLOAD_SHA = 'b16f1f81c484e64a349a264f312d133be67b1a12d7716fa312ff02a5e9d757e1'   # on the card, J2I 32/32 PASS
 RATIFICATION_03_09 = HERE / 'J2_RATIFICATION_RECORD_03_09.json'
 RATIFICATION_10 = HERE / 'J2_RATIFICATION_RECORD_10.json'
+RATIFICATION_STJ = HERE / 'J2_STJ_RESOLUTION_RECORD.json'
 
 
 def j2i_baseline():
@@ -114,6 +115,9 @@ def reconstruct(n, j2i=None):
             if B.sha_lf(batch_file(10)) != next(iter(r10['decision_files_sha256_lf'].values())):
                 raise SystemExit('RATIFIED_FILE_CHANGED BATCH10')
             ratified_pairs |= {(x['target_id'], x['source_id']) for x in r10['normalized_relations']}
+            if RATIFICATION_STJ.is_file():                # Súmulas 203/403 STJ ratified on the CF (2026-10-18)
+                rs = json.loads(RATIFICATION_STJ.read_text(encoding='utf-8'))
+                ratified_pairs |= {(t, i['precedent']) for i in rs['items'] for t in i['ratified_cf_targets']}
     vis_targets = {r[0] for r in installed} | {r['target_id'] for r in approved}
     art_with = {':'.join(t.split(':')[:2]) for t in vis_targets}
     pending, covered = [], {}

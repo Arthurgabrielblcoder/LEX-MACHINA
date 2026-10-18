@@ -1,0 +1,113 @@
+{
+ "schema_version": 1,
+ "round": "J2",
+ "kind": "STJ_EDITORIAL_RESOLUTION",
+ "ratification": {
+  "by": "ARTHUR",
+  "on": "2026-10-18",
+  "channel": "chat",
+  "statement": "Súmula 203/STJ ratificada em CF art. 105, III (redação vigente; histórico da alteração de 2002 preservado na ficha). Súmula 403/STJ ratificada em CF art. 5º, V e CF art. 5º, X (dois vínculos, não duplicatas). Os vínculos da Súmula 403 a CC arts. 186 e 927 seguem para revisão normal no CC-J1."
+ },
+ "source_resolutions_file": "STJ_OFFICIAL_SOURCE_RESOLUTIONS.json",
+ "source_resolutions_sha256_lf": "2d41c425ed85219e2ccb10c8d6af587c9f572bab74051b89788124176f2210a8",
+ "decision_files_unchanged": {
+  "J2_MEDIUM_BACKLOG/J2_BATCH08_DECISIONS.json": "0189b80ae56a08d1209ab1528123fac5b05f5581033368af8bfdfcb80c098f75",
+  "J2_MEDIUM_BACKLOG/J2_BATCH10_DECISIONS.json": "45f19be02739356f70595c48462897a40515340c89f1be537f13ee209a442787"
+ },
+ "materialized": false,
+ "deployed": false,
+ "NEW_CF_RELATIONS": 3,
+ "NEW_CF_TARGETS": 1,
+ "normalized_relations": [
+  {
+   "target_id": "CF88:ART.105:INC.III",
+   "source_id": "STJ:SUMULA:203"
+  },
+  {
+   "target_id": "CF88:ART.5:INC.V",
+   "source_id": "STJ:SUMULA:403"
+  },
+  {
+   "target_id": "CF88:ART.5:INC.X",
+   "source_id": "STJ:SUMULA:403"
+  }
+ ],
+ "items": [
+  {
+   "precedent": "STJ:SUMULA:203",
+   "recommendation_id": "J0-BL-093",
+   "batch": "BATCH10",
+   "source_status": "OFFICIAL_SOURCE_RESOLVED",
+   "history": [
+    {
+     "on": "2026-10-18",
+     "state": "UNRESOLVED_EXTERNAL",
+     "why": "scon.stj.jus.br: desafio anti-robô (Batch10, fonte K12); não contornado"
+    },
+    {
+     "on": "2026-10-18",
+     "state": "OFFICIAL_SOURCE_RESOLVED",
+     "why": "PDF oficial \"Súmulas do STJ\" publicado na página oficial"
+    },
+    {
+     "on": "2026-10-18",
+     "state": "HUMAN_APPROVED (CF 105, III)",
+     "why": "ratificação editorial do usuário"
+    }
+   ],
+   "ratified_cf_targets": [
+    "CF88:ART.105:INC.III"
+   ],
+   "ratification_status": "HUMAN_APPROVED",
+   "cc_targets_forwarded_to_cc_j1": [],
+   "cc_status": "FORWARDED_TO_CC_J1 (AWAITING_USER_RATIFICATION)",
+   "device_label": "Súmula 203 STJ",
+   "ficha_file": "STJ_SUMULA_203.TXT",
+   "ficha_draft": "SÚMULA 203 DO STJ\nTRIBUNAL: STJ\nSTATUS: vigente (enunciado alterado)\nÓRGÃO JULGADOR: CORTE ESPECIAL\n\nENUNCIADO\nNão cabe recurso especial contra decisão proferida por órgão de segundo grau dos Juizados Especiais.\n\nHISTÓRICO DO ENUNCIADO\nA Corte Especial, na sessão extraordinária de 23 de maio de 2002, julgando o AgRg no Ag 400.076-BA, deliberou pela ALTERAÇÃO do enunciado da Súmula n. 203. REDAÇÃO ANTERIOR (decisão de 04/02/1998, DJ 12/02/1998, PG: 35): NÃO CABE RECURSO ESPECIAL CONTRA DECISÃO PROFERIDA, NOS LIMITES DE SUA COMPETÊNCIA, POR ÓRGÃO DE SEGUNDO GRAU DOS JUIZADOS ESPECIAIS.\n\nJULGAMENTO\n23/05/2002; DJ DATA:03/06/2002 PG:00269 DJ DATA:12/02/1998 PG:00035 RSSTJ VOL.:00015 PG:00011 RSTJ VOL.:00108 PG:00079 RSTJ VOL.:00155 PG:00017 RT VOL.:00750 PG:00211.\n\nFONTE OFICIAL\nhttps://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf\n(PDF oficial, sha256 bf92bdb1ae0d2573…)\n",
+   "official_source": {
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "pdf_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0"
+   }
+  },
+  {
+   "precedent": "STJ:SUMULA:403",
+   "recommendation_id": "J0-BL-001",
+   "batch": "BATCH08",
+   "source_status": "OFFICIAL_SOURCE_RESOLVED",
+   "history": [
+    {
+     "on": "2026-10-17",
+     "state": "UNRESOLVED_EXTERNAL",
+     "why": "scon.stj.jus.br: desafio anti-robô (Batch08, fonte Y3); não contornado"
+    },
+    {
+     "on": "2026-10-18",
+     "state": "OFFICIAL_SOURCE_RESOLVED",
+     "why": "PDF oficial \"Súmulas do STJ\" publicado na página oficial"
+    },
+    {
+     "on": "2026-10-18",
+     "state": "HUMAN_APPROVED (CF 5º V e X)",
+     "why": "ratificação editorial do usuário"
+    }
+   ],
+   "ratified_cf_targets": [
+    "CF88:ART.5:INC.V",
+    "CF88:ART.5:INC.X"
+   ],
+   "ratification_status": "HUMAN_APPROVED",
+   "cc_targets_forwarded_to_cc_j1": [
+    "CC2002:ART.186",
+    "CC2002:ART.927"
+   ],
+   "cc_status": "FORWARDED_TO_CC_J1 (AWAITING_USER_RATIFICATION)",
+   "device_label": "Súmula 403 STJ",
+   "ficha_file": "STJ_SUMULA_403.TXT",
+   "ficha_draft": "SÚMULA 403 DO STJ\nTRIBUNAL: STJ\nSTATUS: vigente\nÓRGÃO JULGADOR: SEGUNDA SEÇÃO\n\nENUNCIADO\nIndepende de prova do prejuízo a indenização pela publicação não autorizada de imagem de pessoa com fins econômicos ou comerciais.\n\nJULGAMENTO\n28/10/2009; DJE DATA:24/11/2009 RSSTJ VOL.:00038 PG:00053 RSTJ VOL.:00216 PG:00758.\n\nFONTE OFICIAL\nhttps://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf\n(PDF oficial, sha256 bf92bdb1ae0d2573…)\n",
+   "official_source": {
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "pdf_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0"
+   }
+  }
+ ]
+}

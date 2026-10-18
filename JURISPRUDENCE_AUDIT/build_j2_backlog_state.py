@@ -29,10 +29,17 @@ def build():
     rat = G.ratified_03_09()
     rat_ids = {x['recommendation_id'] for x in rat['items'] if x['human_approved']}
     exceptions = dict(rat['ratification']['exceptions'])
+    resolved_later = {}
     if G.RATIFICATION_10.is_file():
         r10 = json.loads(G.RATIFICATION_10.read_text(encoding='utf-8'))
         rat_ids |= {x['recommendation_id'] for x in r10['items'] if x['human_approved']}
         exceptions.update(r10['ratification']['exceptions'])
+    if G.RATIFICATION_STJ.is_file():                      # 203/403 STJ: UNRESOLVED_EXTERNAL -> OFFICIAL_SOURCE_RESOLVED -> HUMAN_APPROVED (CF)
+        rs = json.loads(G.RATIFICATION_STJ.read_text(encoding='utf-8'))
+        for i in rs['items']:
+            rat_ids.add(i['recommendation_id'])
+            exceptions.pop(i['recommendation_id'], None)
+            resolved_later[i['recommendation_id']] = dict(precedent=i['precedent'], history=[h['state'] for h in i['history']])
     by_rec = {}
     for k, doc in sorted(prev.items()):
         for d in doc['decisions']:
@@ -41,7 +48,7 @@ def build():
     awaiting = sorted(r for r, (k, _) in by_rec.items() if r not in human and r not in exceptions)
     unresolved = collections.defaultdict(list)
     for r, (k, dec) in sorted(by_rec.items()):
-        if dec.startswith('UNRESOLVED'):
+        if dec.startswith('UNRESOLVED') and r not in resolved_later:
             unresolved[dec].append(dict(recommendation_id=r, batch=f'BATCH{k:02d}', human_ratified_as_unresolved=r in exceptions))
     cats = collections.Counter(b['category'] for b in items)
     pr = collections.Counter(b['priority'] for b in pending)
@@ -49,13 +56,13 @@ def build():
                J0_CATEGORIES=dict(sorted(cats.items())),
                ALREADY_REVIEWED=len(by_rec), HUMAN_APPROVED=len(human), AWAITING_USER_RATIFICATION=len(awaiting),
                AWAITING_IDS=awaiting, COVERED_BY_RATIFIED_OR_INSTALLED=len(covered),
-               UNRESOLVED=dict(sorted(unresolved.items())),
+               UNRESOLVED=dict(sorted(unresolved.items())), RESOLVED_AFTER_REVIEW=resolved_later,
                UNRESOLVED_EXTERNAL=len(unresolved['UNRESOLVED_EXTERNAL']), UNRESOLVED_IDENTIFICATION=len(unresolved['UNRESOLVED_IDENTIFICATION']),
                PENDING_NOT_RESEARCHED=len(pending), HIGH_REMAINING=pr['HIGH'], MEDIUM_REMAINING=pr['MEDIUM'], LOW_REMAINING=pr['LOW'],
                WITHOUT_IDENTIFIER=sum(1 for b in pending if not b['suggested_identifiers']),
                decisions_by_type=dict(sorted(collections.Counter(d for _, d in by_rec.values()).items())),
                inputs={G.batch_file(k).relative_to(G.ROOT).as_posix(): G.B.sha_lf(G.batch_file(k)) for k in prev}
-               | {r.relative_to(G.ROOT).as_posix(): G.B.sha_lf(r) for r in (G.RATIFICATION_03_09, G.RATIFICATION_10) if r.is_file()})
+               | {r.relative_to(G.ROOT).as_posix(): G.B.sha_lf(r) for r in (G.RATIFICATION_03_09, G.RATIFICATION_10, G.RATIFICATION_STJ) if r.is_file()})
     return (json.dumps(doc, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
 
 
