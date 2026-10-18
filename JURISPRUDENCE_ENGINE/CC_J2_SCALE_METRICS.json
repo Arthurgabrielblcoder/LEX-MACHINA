@@ -1,0 +1,106 @@
+{
+ "schema_version": 1,
+ "kind": "FACTORY_SPEED_METRICS",
+ "batch": "CC-J2",
+ "compared_with": "CC-J1",
+ "CC_J1": {
+  "CANDIDATES": 30,
+  "CANDIDATE_UNIT": "par (alvo, precedente); 28 precedentes distintos",
+  "AUTO_DISCOVERED": 30,
+  "AUTO_TARGET_NORMALIZED": 28,
+  "AUTO_NAMESPACE_CHECKED": 30,
+  "AUTO_TEMPORAL_CHECKED": 30,
+  "AUTO_DUPLICATE_CHECKED": 30,
+  "AUTO_SOURCE_VERIFIED": 30,
+  "AUTO_FICHA_DRAFTED": 22,
+  "HUMAN_JUDGMENT_REQUIRED": 15,
+  "RELATIONS_PROPOSED": 25,
+  "TARGETS_PROPOSED": 22,
+  "NEW_CODE_LINES_REQUIRED": 310,
+  "REVIEW_DATA_LINES": 152,
+  "code_by_file": {
+   "build_cc_j1.py": {
+    "code": 133,
+    "review_data": 72
+   },
+   "build_cc_j1_dossier.py": {
+    "code": 112,
+    "review_data": 80
+   },
+   "build_cc_j1_simulation.py": {
+    "code": 65,
+    "review_data": 0
+   }
+  },
+  "NEW_CORE_ENGINE_CODE_LINES": 310,
+  "EXISTING_TOOLS_MODIFIED": 0,
+  "NEW_TOOLS_REQUIRED": 3,
+  "NEW_SOURCE_ADAPTERS": 0,
+  "SOURCE_ADAPTERS_BUILT_JUST_BEFORE": [
+   "discovery_planalto.py (piloto)",
+   "discovery_stj_sumulas.py (sprint de escala)"
+  ],
+  "SOURCE_BLOCKS": 1,
+  "source_blocks_note": "busca de súmulas do STJ com desafio anti-robô (não contornado); resolvido antes do lote pelo PDF oficial",
+  "BATCH_SPECIFIC_LOGIC": "seleção, revisão, dossiê e simulação codificados só para o CC-J1"
+ },
+ "CC_J2": {
+  "CANDIDATES": 30,
+  "CANDIDATE_UNIT": "precedente (todos os seus alvos juntos); 45 pares (alvo, precedente)",
+  "AUTO_DISCOVERED": 30,
+  "AUTO_TARGET_NORMALIZED": 30,
+  "AUTO_NAMESPACE_CHECKED": 30,
+  "AUTO_TEMPORAL_CHECKED": 29,
+  "AUTO_DUPLICATE_CHECKED": 30,
+  "AUTO_SOURCE_VERIFIED": 30,
+  "AUTO_FICHA_DRAFTED": 22,
+  "HUMAN_JUDGMENT_REQUIRED": 14,
+  "RELATIONS_PROPOSED": 25,
+  "TARGETS_PROPOSED": 22,
+  "NEW_CODE_LINES_REQUIRED": 745,
+  "REVIEW_DATA_LINES": 184,
+  "code_by_file": {
+   "batch_engine.py": {
+    "role": "NEW_CORE_ENGINE",
+    "code": 351,
+    "review_data": 0
+   },
+   "discovery_stj_precedentes.py": {
+    "role": "NEW_SOURCE_ADAPTER",
+    "code": 122,
+    "review_data": 0
+   },
+   "build_cc_j2.py": {
+    "role": "BATCH_CONFIG",
+    "code": 270,
+    "review_data": 19
+   },
+   "cc_j2_review.py": {
+    "role": "REVIEW_DATA",
+    "code": 2,
+    "review_data": 165
+   }
+  },
+  "NEW_CORE_ENGINE_CODE_LINES": 351,
+  "EXISTING_TOOLS_MODIFIED": 1,
+  "existing_tools_modified": [
+   "JURISPRUDENCE_AUDIT/juris_types.py: +2 entradas na tabela KLASS_TO_TIPO (REPETITIVO -> repetitivo_stj, IAC -> iac; rótulos já existentes no firmware)"
+  ],
+  "NEW_TOOLS_REQUIRED": 4,
+  "NEW_SOURCE_ADAPTERS": 1,
+  "SOURCE_BLOCKS": 0,
+  "MANUAL_TARGET_CORRECTIONS": 3,
+  "AUTO_EXCLUDED_AT_BACKLOG": 49
+ },
+ "NEW_CORE_ENGINE_CODE": 351,
+ "SCALABILITY_WARNING": {
+  "status": "YES_ONE_TIME",
+  "reason": "O CC-J1 tinha a etapa de lote (seleção, revisão, dossiê, simulação) codificada só para ele; repeti-la exigiria reescrever lógica de lote a cada lote. O CC-J2 a generalizou uma vez em batch_engine.py, sem nada específico do CC (a norma entra por configuração). Nenhuma lógica específica do CC foi reescrita. Meta do próximo lote: NEW_CORE_ENGINE_CODE = 0 (só configuração + tabela de revisão).",
+  "cc_specific_logic_rewritten": false
+ },
+ "automation_gaps": [
+  "realocação \"parágrafo único do art.\" (Tema 1019) e referência inexistente \"943, I\" (Súmula 642)",
+  "duplicata de tese idêntica entre temas (308/309): detectável automaticamente (questão + tese iguais); hoje humana",
+  "pertinência material, temporalidade jurídica (Leis 14.905/2024 e 15.040/2024) e interação com o CC-J1: humanas"
+ ]
+}

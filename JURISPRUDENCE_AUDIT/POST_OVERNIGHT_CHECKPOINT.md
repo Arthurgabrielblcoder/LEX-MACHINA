@@ -12,6 +12,8 @@ CC_J1_PHYSICAL_VALIDATION = 36/36 PASS · NEXT_OPTIONS = CC-J2 | CF Batch11 | in
 
 Documento: `JURISPRUDENCE_ENGINE/MULTINORM_CF_CC_J1_FROZEN.md`.
 
+**CC-J2 (2026-10-18, host-only, não ratificado):** 30 candidatos; GREEN 9 / YELLOW 13 / RED 8. Se tudo GREEN+YELLOW fosse ratificado, o CC projetado seria 54/42; a projeção não é baseline. Simulação sem regressão (CF 0, CC-J1 0). Fonte nova: precedentes qualificados do STJ (dados abertos, AVAILABLE). Fila separada `CF_MATERIALIZATION_PENDING`: 9 relações da CF ratificadas e não instaladas. Documentos: `JURISPRUDENCE_ENGINE/CC_J2_REVIEW.md` e `CC_J2_RATIFICATION_DOSSIER.md`. O baseline físico acima não muda.
+
 ## Estado anterior (J2J, 2026-10-18)
 
 ```
