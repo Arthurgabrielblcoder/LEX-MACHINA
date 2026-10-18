@@ -1,0 +1,61 @@
+{
+ "part": "C",
+ "status": "HOST_ONLY_PROTOTYPE",
+ "flashed": false,
+ "firmware_dir_modified": false,
+ "physical_approval": false,
+ "base": {
+  "source": "firmware/LEX_MACHINA_DEVICE_V1_CANDIDATE + JURIS_TYPE_PROTOTYPE/juris_types.patch",
+  "physical_app_sha256": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+  "ino_sha256": "97f2add5b2ed367f3e6805d2a1bb7b9d5c9e961ab2c11907ec73c9df6c6c76e4"
+ },
+ "patch": {
+  "file": "JURISPRUDENCE_ENGINE/firmware_multinorm/multinorm.patch",
+  "edits": 8,
+  "ino_sha256": "6314f7fb69192e1b04584d92689f7f3ebf20cc6a19d274d9afd576ce28507249",
+  "catalog_norms_in_table": 71,
+  "shared_folder_rows": 45
+ },
+ "runtime_memory": {
+  "psram_lookup_cache": "LookupJurisCFCache: 60 -> 68 B por lookup (+8 B no campo norma); J2I: 237 lookups -> +1896 B de PSRAM",
+  "psram_records": "JURISPRUDENCIA.IDX inteiro em PSRAM, como antes; cresce só com as linhas de dados de outras normas (~150-200 B por vínculo)",
+  "cache_limits": "MAX_JUR_LOOKUPS_SEGURANCA=4096, MAX_RELACOES_ARTIGO=32 e quantidade por lookup <= 255 inalterados; o mesmo cache serve todas as normas",
+  "boot": "nenhuma leitura nova no boot: o cache é o mesmo arquivo; a tabela de normas está em flash (const)",
+  "per_lookup": "CF: idêntico (mesma função, norma \"CF88\"); outras normas: +1 varredura linear do cache (<= 4096 entradas) em normaTemJurisLookup",
+  "not_verified": [
+   "teste físico",
+   "tempo real de boot e de lookup no ESP32",
+   "PSRAM em execução"
+  ]
+ },
+ "toolchain": {
+  "fqbn": "esp32:esp32:esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default",
+  "build_property": "compiler.cpp.extra_flags=-DLEX_DEVICE_V1_ENABLED=1",
+  "arduino_cli": "arduino-cli.exe",
+  "core": "esp32:esp32 3.3.11"
+ },
+ "builds": {
+  "j2i_base": {
+   "program_bytes": 1102031,
+   "static_ram_bytes": 126148,
+   "app_bin_bytes": 1102176,
+   "app_sha256": "d9ff1aaeafba28dd7cd5497466e1845f751f0800b9856e8c34e1f807cc30a0ab",
+   "app_partition_bytes": 1310720,
+   "app_partition_free": 208544
+  },
+  "multinorm": {
+   "program_bytes": 1107119,
+   "static_ram_bytes": 126172,
+   "app_bin_bytes": 1107264,
+   "app_sha256": "e4fa704c2b1bb0c375c6fe249915998d5d45dec4045625883f0225cae9fcb94c",
+   "app_partition_bytes": 1310720,
+   "app_partition_free": 203456
+  }
+ },
+ "base_reproduces_j2i_app": true,
+ "delta": {
+  "program_bytes": 5088,
+  "static_ram_bytes": 24,
+  "app_bin_bytes": 5088
+ }
+}

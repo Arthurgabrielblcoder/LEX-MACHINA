@@ -1,0 +1,184 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (J2I = base + juris_types.patch)
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (multinorma)
+@@ -921,7 +921,7 @@
+ // A capacidade real e contada no arquivo e alocada dinamicamente em PSRAM.
+ #define MAX_JUR_LOOKUPS_SEGURANCA 4096
+ struct LookupJurisCFCache {
+-  char norma[8];
++  char norma[16];
+   char artigo[12];
+   char paragrafo[12];
+   char inciso[16];
+@@ -1698,6 +1698,106 @@
+          caminhoArquivoAtual.startsWith("/1-CONSTITUIÇÃO FEDERAL/");
+ }
+ 
++// MULTINORMA (protótipo host-only): norma corrente derivada do arquivo aberto, a partir do Catálogo Mestre (gerado; fonte única).
++// arquivo vazio = pasta de uma norma só; preenchido = pasta compartilhada (exige o nome do arquivo). Sem correspondência: "" (fail closed).
++struct NormaJurisCatalogo { const char *pasta; const char *arquivo; const char *id; };
++static const NormaJurisCatalogo NORMAS_JURIS[]={
++  {"2- CÓDIGO CIVIL","","CC2002"},
++  {"3-CÓDIGO PROCESSO CIVIL","","CPC2015"},
++  {"4-CÓDIGO PENAL","","CP1940"},
++  {"5-CÓDIGO PROCESSO PENAL","","CPP1941"},
++  {"6-CÓDIGO TRIBUTARIO NACIONAL","","CTN1966"},
++  {"7-CÓDIGO ELEITORAL","","CE1965"},
++  {"8-CLT CONSOLIDAÇÃO DAS LEIS DO TRABALHO","","CLT1943"},
++  {"9-CÓDIGO DE DEFESA DO CONSUMIDOR","","CDC1990"},
++  {"10- ECA ESTATUTO DA CRIANÇA E DO ADOLESCENTE","","ECA1990"},
++  {"11- ESTATUTO DA PESSOA IDOSA","","IDOSO2003"},
++  {"12-LEI BRASILEIRA DE INCLUSÃO DA PESSOA COM DEFICIÊNCIA","","LBI2015"},
++  {"13- LEI DA EXECUÇÃO PENAL","","LEP1984"},
++  {"14- LEI DE DROGAS","","DROGAS2006"},
++  {"15-LEI MARIA DA PENHA","","MARIA2006"},
++  {"16- LEI DE CRIMES HEDIONDOS","","HEDIONDOS1990"},
++  {"17- LEI DE LICITAÇÕES E CONTRATOS","","LIC2021"},
++  {"18- MARCO CIVIL DA INTERNET","","MCI2014"},
++  {"19-LGPD LEI GERAL DA PROTEÇÃO DE DADOS","","LGPD2018"},
++  {"20- LEI DE ACESSO A INFORMAÇÃO","","LAI2011"},
++  {"21- DIREITO ADMINISTRATIVO","lei_9784_1999_processo_administrativo.txt","PAF1999"},
++  {"21- DIREITO ADMINISTRATIVO","lei_8429_1992_improbidade.txt","LIA1992"},
++  {"21- DIREITO ADMINISTRATIVO","lei_8112_1990_servidores_federais.txt","RJU1990"},
++  {"22- DIREITO PREVIDENCIARIO","lei_8212_1991_custeio.txt","CUSTEIO1991"},
++  {"22- DIREITO PREVIDENCIARIO","lei_8213_1991_beneficios.txt","BENEF1991"},
++  {"23- DIREITO EMPRESARIAL","lei_11101_2005_recuperacao_falencia.txt","FALENCIA2005"},
++  {"23- DIREITO EMPRESARIAL","lei_6404_1976_sociedades_acoes.txt","SA1976"},
++  {"23- DIREITO EMPRESARIAL","lei_8934_1994_registro_empresarial.txt","RPEM1994"},
++  {"24- REGISTROS PUBLICOS","","LRP1973"},
++  {"25- DIREITO URBANISTICO","","CIDADE2001"},
++  {"26- DIREITO AMBIENTAL","lei_6938_1981_pnma.txt","PNMA1981"},
++  {"26- DIREITO AMBIENTAL","lei_9605_1998_crimes_ambientais.txt","CRIMAMB1998"},
++  {"27- JUIZADOS ESPECIAIS","lei_9099_1995_juizados_especiais.txt","JEC1995"},
++  {"28- LEGISLACAO ELEITORAL COMPLEMENTAR","lei_9504_1997_eleicoes.txt","ELEICOES1997"},
++  {"28- LEGISLACAO ELEITORAL COMPLEMENTAR","lei_9096_1995_partidos.txt","PARTIDOS1995"},
++  {"28- LEGISLACAO ELEITORAL COMPLEMENTAR","lc_64_1990_inelegibilidades.txt","INELEG1990"},
++  {"29- REMEDIOS CONSTITUCIONAIS E TUTELA PUBLICA","lei_4717_1965_acao_popular.txt","ACAOPOP1965"},
++  {"29- REMEDIOS CONSTITUCIONAIS E TUTELA PUBLICA","lei_12016_2009_mandado_seguranca.txt","MS2009"},
++  {"30- METODOS ADEQUADOS DE SOLUCAO DE CONFLITOS","lei_9307_1996_arbitragem.txt","ARBIT1996"},
++  {"30- METODOS ADEQUADOS DE SOLUCAO DE CONFLITOS","lei_13140_2015_mediacao.txt","MED2015"},
++  {"27- JUIZADOS ESPECIAIS","lei_10259_2001_juizados_federais.txt","JEF2001"},
++  {"27- JUIZADOS ESPECIAIS","lei_12153_2009_juizados_fazenda_publica.txt","JEFAZ2009"},
++  {"31- LEGISLACAO PENAL ESPECIAL","lei_13869_2019_abuso_autoridade.txt","ABUSO2019"},
++  {"31- LEGISLACAO PENAL ESPECIAL","lei_12850_2013_organizacoes_criminosas.txt","ORCRIM2013"},
++  {"31- LEGISLACAO PENAL ESPECIAL","lei_9613_1998_lavagem_dinheiro.txt","LAVAGEM1998"},
++  {"31- LEGISLACAO PENAL ESPECIAL","lei_10826_2003_desarmamento.txt","ARMAS2003"},
++  {"31- LEGISLACAO PENAL ESPECIAL","lei_9455_1997_tortura.txt","TORTURA1997"},
++  {"32- DIREITO IMOBILIARIO","","COND1964"},
++  {"33- EXECUCAO FISCAL E FINANCAS PUBLICAS","lei_6830_1980_execucao_fiscal.txt","EXECFISC1980"},
++  {"33- EXECUCAO FISCAL E FINANCAS PUBLICAS","lei_4320_1964_direito_financeiro.txt","FINPUB1964"},
++  {"33- EXECUCAO FISCAL E FINANCAS PUBLICAS","lc_101_2000_responsabilidade_fiscal.txt","LRF2000"},
++  {"34- PROPRIEDADE INTELECTUAL","lei_9279_1996_propriedade_industrial.txt","LPI1996"},
++  {"34- PROPRIEDADE INTELECTUAL","lei_9610_1998_direitos_autorais.txt","LDA1998"},
++  {"35- COOPERATIVISMO","","COOP1971"},
++  {"36- DIREITO AGRARIO","lei_4504_1964_estatuto_terra.txt","TERRA1964"},
++  {"36- DIREITO AGRARIO","lei_8629_1993_reforma_agraria.txt","REFAGR1993"},
++  {"37- DIREITO MINERARIO","","MINER1967"},
++  {"38- DIREITO AERONAUTICO","","CBA1986"},
++  {"39- MERCADO FINANCEIRO SEGUROS E CAPITAIS","lei_6385_1976_mercado_valores_mobiliarios.txt","CVM1976"},
++  {"39- MERCADO FINANCEIRO SEGUROS E CAPITAIS","decreto_lei_73_1966_seguros_privados.txt","SEGUROS1966"},
++  {"39- MERCADO FINANCEIRO SEGUROS E CAPITAIS","lei_6024_1974_liquidacao_instituicoes_financeiras.txt","LIQFIN1974"},
++  {"39- MERCADO FINANCEIRO SEGUROS E CAPITAIS","lei_11795_2008_consorcios.txt","CONSORCIO2008"},
++  {"40- DIREITO IMOBILIARIO COMPLEMENTAR","lei_8245_1991_inquilinato.txt","INQUIL1991"},
++  {"40- DIREITO IMOBILIARIO COMPLEMENTAR","lei_9514_1997_financiamento_imobiliario.txt","SFI1997"},
++  {"41- LEGISLACAO TRABALHISTA COMPLEMENTAR","lei_6019_1974_trabalho_temporario.txt","TEMP1974"},
++  {"41- LEGISLACAO TRABALHISTA COMPLEMENTAR","lei_7783_1989_greve.txt","GREVE1989"},
++  {"41- LEGISLACAO TRABALHISTA COMPLEMENTAR","lei_8036_1990_fgts.txt","FGTS1990"},
++  {"42- PREVIDENCIARIO COMPLEMENTAR","","RPS1999"},
++  {"43- FAMILIA E SUCESSOES ESPECIAL","lei_5478_1968_alimentos.txt","ALIMENTOS1968"},
++  {"43- FAMILIA E SUCESSOES ESPECIAL","lei_8560_1992_investigacao_paternidade.txt","PATERN1992"},
++  {"43- FAMILIA E SUCESSOES ESPECIAL","lei_11804_2008_alimentos_gravidicos.txt","ALIMGRAV2008"},
++  {"43- FAMILIA E SUCESSOES ESPECIAL","lei_12318_2010_alienacao_parental.txt","ALIENPAR2010"}
++};
++String normaJurisConsulta="CF88";     // norma usada pela consulta do JUR_LOOKUP (CF por padrão: comportamento anterior)
++bool jurisMultinormaAtiva=false;      // a lista atual veio do ramo multinorma (não-CF)
++
++String normaJurisAtual()
++{
++  if(arquivoAtualPertenceACF()) return "CF88";
++#if LEX_DEVICE_V1_ENABLED
++  if(caminhoArquivoAtual==LEXV1_RUNTIME_CF_PATH) return "ADCT";   // runtime da CF, parte do ADCT (sub-namespace)
++#endif
++  for(size_t i=0;i<sizeof(NORMAS_JURIS)/sizeof(NORMAS_JURIS[0]);i++){
++    String pasta=String("/")+NORMAS_JURIS[i].pasta+"/";
++    if(!caminhoArquivoAtual.startsWith(pasta)) continue;
++    if(!NORMAS_JURIS[i].arquivo[0] || caminhoArquivoAtual.substring(pasta.length())==NORMAS_JURIS[i].arquivo) return NORMAS_JURIS[i].id;
++  }
++  return "";
++}
++
++bool normaTemJurisLookup(const String &norma)
++{
++  if(!cacheJurisCFCarregado || norma.length()==0) return false;   // normas novas exigem o cache de boot (sem varredura no SD)
++  for(int i=0;i<totalJurLookupCFCache;i++) if(norma==jurLookupCFCache[i].norma) return true;
++  return false;
++}
++
+ String normaOrigemRelationsV2Atual()
+ {
+   if(arquivoAtualPertenceACF()) return "CF88";
+@@ -1991,7 +2091,7 @@
+   if(par.length()) tentativas[total++]={par,"",""};
+   tentativas[total++]={"","",""};
+   for(int i=0;i<total;i++){
+-    if(buscarLookupJurisCFExato("CF88",artigo,tentativas[i].p,
++    if(buscarLookupJurisCFExato(normaJurisConsulta,artigo,tentativas[i].p,
+                                tentativas[i].i,tentativas[i].a,
+                                offset,quantidade)){
+       parUsado=tentativas[i].p;
+@@ -2064,7 +2164,7 @@
+   bool achou=buscarMelhorLookupJurisCF(artigo,offset,quantidade,
+                                        parUsado,incUsado,aliUsada);
+   if(achou){
+-    String rotulo=rotuloOrigemRelationsV2("CF88",artigo,parUsado,incUsado,aliUsada);
++    String rotulo=rotuloOrigemRelationsV2(normaJurisConsulta,artigo,parUsado,incUsado,aliUsada);
+     int lidas=0;
+     if(cacheJurisCFCarregado && jurisprudenciaCFCache &&
+        offset<tamanhoJurisprudenciaCFCache){
+@@ -2315,6 +2415,7 @@
+ bool carregarRelacoesDoArtigo(const String &artigo)
+ {
+   uint32_t t0=micros();
++  jurisMultinormaAtiva=false;
+ 
+   // A Constituicao e atualizada muitas vezes durante a rolagem (cada inciso
+   // pode mudar o contexto). Nao fazemos a limpeza pesada dos caches V1 aqui.
+@@ -2337,6 +2438,21 @@
+   artigoRelacoes=artigo;
+   contextoRelacoesRotulo=montarRotuloContextoRelacoes(artigo);
+   if(!sdOK) return false;
++
++  // MULTINORMA: outra norma do catálogo COM linhas no JUR_LOOKUP. Sem linhas, segue exatamente o fluxo anterior.
++  {
++    String nj=normaJurisAtual();
++    if(nj.length() && nj!="CF88" && normaTemJurisLookup(nj)){
++      normaJurisConsulta=nj;
++      carregarJurisprudenciaCF(artigo);
++      normaJurisConsulta="CF88";
++      jurisMultinormaAtiva=totalRelacoesArtigo>0;
++      menuRelacoesAtivo=jurisMultinormaAtiva;
++      modoDigitacaoArtigo=!menuRelacoesAtivo;
++      Serial.printf("PERF RODAPE_MULTINORMA: %lu us (norma=%s juris=%d)\n",micros()-t0,nj.c_str(),totalRelacoesArtigo);
++      return menuRelacoesAtivo;
++    }
++  }
+ 
+   // O CDC continua no V1 nesta fase para preservar a jurisprudencia e
+   // O CDC continua no V1 nesta fase para preservar a jurisprudencia e
+@@ -7497,7 +7613,7 @@
+     case '2':
+       if(v1cf) lexV1AbrirRelacaoTarget(false,alvo);      // so jurisprudencia do target EXATO
+       else if(totalCategoriasJuris>0){
+-        if(arquivoAtualPertenceACF() && totalCategoriasJuris==1 && categoriasJurisDisponiveis[0]==REL_JURIS_TODAS)
++        if((arquivoAtualPertenceACF() || jurisMultinormaAtiva) && totalCategoriasJuris==1 && categoriasJurisDisponiveis[0]==REL_JURIS_TODAS)
+           abrirCategoriaRelacao(REL_JURIS_TODAS);
+         else abrirTelaCategoriasJuris();
+       }
+@@ -7583,7 +7699,7 @@
+     uint8_t categoria=pedirCategoriaRelacao;
+     pedirCategoriaRelacao=0;
+     if(categoria==255 && telaAtual==TELA_LEITOR && menuRelacoesAtivo && !visualizandoReferencia){
+-      if(arquivoAtualPertenceACF() && totalCategoriasJuris==1 &&
++      if((arquivoAtualPertenceACF() || jurisMultinormaAtiva) && totalCategoriasJuris==1 &&
+          categoriasJurisDisponiveis[0]==REL_JURIS_TODAS)
+         abrirCategoriaRelacao(REL_JURIS_TODAS);
+       else
