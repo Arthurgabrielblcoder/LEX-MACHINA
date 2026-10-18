@@ -1,0 +1,1274 @@
+{
+ "schema_version": 1,
+ "kind": "PORTABILITY_PILOT",
+ "norm": "CC2002",
+ "status": "PORTABILITY_EVIDENCE",
+ "publishes": false,
+ "CC_RELATIONS_PUBLISHED": 0,
+ "CC_FILES_DEPLOYED": 0,
+ "SD_CHANGED": "NO",
+ "FIRMWARE_CHANGED": "NO",
+ "profile": {
+  "norm_id": "CC2002",
+  "namespaces": [
+   "CC2002"
+  ],
+  "expected_courts": [
+   "STJ",
+   "STF"
+  ],
+  "discovery_adapters": [
+   "PLANALTO_VIDE_ANNOTATIONS",
+   "STF_SEARCH_RG_MERIT_CITING_NORM"
+  ]
+ },
+ "corpus": {
+  "planalto_sha256": "c50bf11c560ea431e73fac7aab453e6ace2624462ce54a416c990cf6577faf5f",
+  "cc2002_target_index_sha256": "647c5f228ca3f50ed39b1a98ec31e1e1f0df775cfbf62ca13b3c4ca142209cf2",
+  "cc2002_targets": 5956,
+  "cc2002_articles": 2077
+ },
+ "sources": {
+  "PL1": {
+   "tier": "A",
+   "org": "Planalto",
+   "title": "Lei 10.406/2002 — texto compilado",
+   "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+   "accessed_on": "2026-10-18",
+   "method": "download direto (curl)",
+   "sha256": "c50bf11c560ea431e73fac7aab453e6ace2624462ce54a416c990cf6577faf5f",
+   "proves": "Anotações \"Vide\" e notas de redação por dispositivo."
+  },
+  "Q1": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Pesquisa de jurisprudência: \"do Código Civil\" e \"repercussão geral\" (50 primeiros, relevância)",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?base=acordaos&queryString=%22do%20C%C3%B3digo%20Civil%22%20e%20%22repercuss%C3%A3o%20geral%22&sinonimo=true&plural=true&page=1&pageSize=50&sort=_score&sortBy=desc",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "9e95fedf1d911b7042cfc8e108b7847e1e1f9ad00ad77dd480e6b54271219931",
+   "proves": "611 acórdãos; os 50 primeiros resultados com órgão, data, tema e trechos de ementa/tese que citam artigos do Código Civil."
+  },
+  "T498": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 498",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=498",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "67813660fc22a2f3020e8ed8e37a83af8f56caa401f0b21471d8e47ce02774f8",
+   "proves": "Leading case RE 646721; trânsito em julgado 28/03/2019."
+  },
+  "T809": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 809",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=809",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "5dd5633ff4584d1d4d9a661f9e7ed1f09623d360e51b18113635f7de83cf0ee0",
+   "proves": "Validade do art. 1.790 do CC (vs. art. 1.829); leading case RE 878694; trânsito em julgado 04/12/2018."
+  },
+  "T529": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 529",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=529",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "93f3adff4d56c612cb2a95698cedfb45a97ef94b1b09e4e213af9b8153e89180",
+   "proves": "Uniões concomitantes e rateio de pensão; leading case RE 1045273; trânsito em julgado 29/05/2021."
+  },
+  "T1236": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 1236",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1236",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "d2500318a1c089a75cf4589639ec082b25b20dde96c02b724b6c306880461b14",
+   "proves": "Constitucionalidade do art. 1.641, II, do CC; leading case ARE 1309642; trânsito em julgado 10/04/2024."
+  },
+  "T932": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 932",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=932",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "ee0d5e6495f1ae97bab47815d090b0a02df6415d70d278c07d34dde749333cb6",
+   "proves": "Teoria do risco do art. 927, parágrafo único, do CC; leading case RE 828040; trânsito em julgado 05/08/2020."
+  },
+  "T526": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 526",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=526",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "0c769d30b368097183079c8940602e4b566d9e6f7fc35311f5dc0c8ec4402a63",
+   "proves": "Concubinato e pensão por morte (arts. 201, V, e 226, § 3º, da CF); leading case RE 883168; trânsito em julgado 02/04/2022."
+  },
+  "T1194": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Tema 1194",
+   "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1194",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "343e767aff28193ed7c9a4bb68215589edd80bceafb9a399f7cf53f199d482aa",
+   "proves": "Prescrição da execução de dano ambiental; leading case ARE 1352872; trânsito em julgado 16/04/2025."
+  },
+  "A4815": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 4815",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204815%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "b42151c9c4280bd3c968ed04aa563b098e3037fddb505eece71330e8a77d3f48",
+   "proves": "Pleno, j. 10/06/2015, publ. 01/02/2016: interpretação conforme aos arts. 20 e 21 do CC, sem redução de texto (biografias)."
+  },
+  "A6792": {
+   "tier": "A",
+   "org": "STF",
+   "title": "Jurisprudência — ADI 6792 (com ADI 7055)",
+   "url": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%206792%22&base=acordaos",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "c8b36453d332a177a5c72959995d20b694b4080bb675b7b34e10d63a497aa101",
+   "proves": "Pleno, j. 22/05/2024, publ. 04/04/2025: assédio judicial contra jornalistas; \"ADI 7.055 que se julga totalmente procedente, para conferir interpretação conforme ... aos arts. 186 e 927 do Código Civil\"; julgamento conjunto."
+  },
+  "STJ1": {
+   "tier": "A",
+   "org": "STJ",
+   "title": "STJ — pesquisa de súmulas (canal de descoberta STJ)",
+   "url": "https://scon.stj.jus.br/SCON/sumstj/toc.jsp?livre=%27203%27.num.&b=SUMU",
+   "accessed_on": "2026-10-18",
+   "method": "navegador embutido (innerText)",
+   "sha256": "a533a79828ed5e2529b6f076db404f5a6be63c72ec03bed4db86a554d32df13a",
+   "proves": "BLOQUEADO por desafio anti-robô (não contornado). Nenhum conteúdo do STJ foi acessado."
+  }
+ },
+ "metrics": {
+  "CANDIDATES_ANALYZED": 20,
+  "STEP_AUTOMATION": {
+   "AUTO_DISCOVERED": 20,
+   "AUTO_TARGET_NORMALIZATION": 17,
+   "AUTO_NAMESPACE_CHECK": 20,
+   "AUTO_TEMPORAL_CHECK": 20,
+   "AUTO_STATUS_CHECK": 16,
+   "AUTO_DUPLICATE_CHECK": 20,
+   "OFFICIAL_SOURCE_FOUND": 20
+  },
+  "FULLY_AUTOMATED_STEPS": 133,
+  "TOTAL_STEPS": 140,
+  "CANDIDATES_FULLY_AUTOMATIC": 9,
+  "ITEMS_REQUIRING_HUMAN_JUDGMENT": 11,
+  "ITEMS_BLOCKED_BY_SOURCE_ACCESS": 0,
+  "DISCOVERY_CHANNELS_BLOCKED": [
+   "STJ (anti-robô; fonte STJ1)"
+  ],
+  "FALSE_POSITIVES_DETECTED": 1,
+  "REALLOCATIONS_DETECTED": 5,
+  "REALLOCATIONS_DETECTED_AUTOMATICALLY": 2,
+  "ENGINE_TARGET_AGREES_WITH_HUMAN": 17,
+  "DUPLICATES_DETECTED": 4,
+  "DUPLICATES_DETECTED_AUTOMATICALLY": 2,
+  "TEMPORAL_ALERTS": 0,
+  "CF_AUDITOR_FALSE_NAMESPACE_ALERTS": 19,
+  "ASSESSMENTS": {
+   "DUPLICATE_RECOMMENDATION": 4,
+   "PROMOTE_RECOMMENDED": 10,
+   "REALLOCATE_RECOMMENDED": 5,
+   "REJECT_NOT_MATERIAL_RECOMMENDED": 1
+  },
+  "TOOLS_REUSED_WITHOUT_CHANGE": 4,
+  "TOOLS_REUSED_AFTER_PARAMETERIZATION": 3,
+  "TOOLS_REQUIRING_NEW_CODE": 3,
+  "TOOLS_NOT_REUSABLE": 2,
+  "TOOLS_GENERIC_NOT_EXERCISED": 1
+ },
+ "tools": [
+  {
+   "tool": "LEGAL_TARGET_ID/target_id.py",
+   "classification": "GENERIC_ALREADY",
+   "pilot_use": "REUSED_UNCHANGED"
+  },
+  {
+   "tool": "LEGAL_TARGET_ID/structure_parser.py + build_target_index.py (CC2002_TARGET_INDEX já existente)",
+   "classification": "GENERIC_ALREADY",
+   "pilot_use": "REUSED_UNCHANGED"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/juris_types.py",
+   "classification": "GENERIC_ALREADY",
+   "pilot_use": "REUSED_UNCHANGED"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/j2_auditors.status_signals / joint_scope",
+   "classification": "GENERIC_ALREADY",
+   "pilot_use": "REUSED_UNCHANGED"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/check_j2b_provisional.py",
+   "classification": "GENERIC_ALREADY",
+   "pilot_use": "NOT_EXERCISED (nenhum provisório no piloto)"
+  },
+  {
+   "tool": "LEGAL_TARGET_ID/citation_parser.py",
+   "classification": "CF_SPECIFIC_BUT_PARAMETERIZABLE",
+   "pilot_use": "REUSED_AFTER_PARAMETERIZATION"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/j2_auditors.namespace_alerts",
+   "classification": "CF_SPECIFIC_BUT_PARAMETERIZABLE",
+   "pilot_use": "REUSED_AFTER_PARAMETERIZATION"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/j2_auditors.temporal_alerts",
+   "classification": "CF_SPECIFIC_BUT_PARAMETERIZABLE",
+   "pilot_use": "REUSED_AFTER_PARAMETERIZATION"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/j2_review_common.make_decisions",
+   "classification": "BLOCKER_FOR_OTHER_NORMS",
+   "pilot_use": "NOT_REUSED (namespace CF88/ADCT fixo)"
+  },
+  {
+   "tool": "JURISPRUDENCE_AUDIT/build_j2_batch.py + build_j0/build_j2a (descoberta via ENTENDA)",
+   "classification": "BLOCKER_FOR_OTHER_NORMS",
+   "pilot_use": "REPLACED_BY_NEW_ADAPTERS"
+  },
+  {
+   "tool": "JURISPRUDENCE_ENGINE/discovery_planalto.py",
+   "classification": "NEW_CODE",
+   "pilot_use": "NEW"
+  },
+  {
+   "tool": "JURISPRUDENCE_ENGINE/norm_profiles.py",
+   "classification": "NEW_CODE",
+   "pilot_use": "NEW"
+  },
+  {
+   "tool": "JURISPRUDENCE_ENGINE/build_pilot_cc.py (descoberta STF + orquestração)",
+   "classification": "NEW_CODE",
+   "pilot_use": "NEW"
+  }
+ ],
+ "candidates": [
+  {
+   "id": "C01",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.20",
+   "cited_as": "(Vide ADIN 4815)",
+   "raw_precedent": "STF:ADI:4815",
+   "precedent": "STF:ADI:4815",
+   "device_label": "ADI 4815",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "MERITO_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.20",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.20"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Ementa nomeia os arts. 20 e 21 do CC.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C02",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.21",
+   "cited_as": "(Vide ADIN 4815)",
+   "raw_precedent": "STF:ADI:4815",
+   "precedent": "STF:ADI:4815",
+   "device_label": "ADI 4815",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "MERITO_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.21",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.21"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Idem.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C03",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.186",
+   "cited_as": "(Vide ADI nº 7055)",
+   "raw_precedent": "STF:ADI:7055",
+   "precedent": "STF:ADI:7055",
+   "device_label": "ADI 7055",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": false,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.186",
+   "duplicate_of": null,
+   "joint_detected": [
+    "STF:ADI:6792"
+   ],
+   "pilot_assessment": "DUPLICATE_RECOMMENDATION",
+   "proposed_targets": [],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Mesmo acórdão da ADI 6792 (julgamento conjunto).",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C04",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.186",
+   "cited_as": "(Vide ADI nº 6792)",
+   "raw_precedent": "STF:ADI:6792",
+   "precedent": "STF:ADI:6792",
+   "device_label": "ADI 6792",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": false,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.186",
+   "duplicate_of": null,
+   "joint_detected": [
+    "STF:ADI:7055"
+   ],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.186"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Julgamento conjunto ADI 6792/7055: um único registro conjunto (como ADI 7047/7064 na CF) é decisão humana.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C05",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.927",
+   "cited_as": "(Vide ADI nº 7055)",
+   "raw_precedent": "STF:ADI:7055",
+   "precedent": "STF:ADI:7055",
+   "device_label": "ADI 7055",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": false,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.927",
+   "duplicate_of": null,
+   "joint_detected": [
+    "STF:ADI:6792"
+   ],
+   "pilot_assessment": "DUPLICATE_RECOMMENDATION",
+   "proposed_targets": [],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Mesmo acórdão da ADI 6792.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C06",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.927",
+   "cited_as": "(Vide ADI nº 6792)",
+   "raw_precedent": "STF:ADI:6792",
+   "precedent": "STF:ADI:6792",
+   "device_label": "ADI 6792",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": false,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.927",
+   "duplicate_of": null,
+   "joint_detected": [
+    "STF:ADI:7055"
+   ],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.927"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Idem ao art. 186 (registro conjunto).",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C07",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.1790",
+   "cited_as": "(Vide Recurso Extraordinário nº 646.721)",
+   "raw_precedent": "STF:RE:646721",
+   "precedent": "STF:RG:498",
+   "device_label": "RG TEMA 498",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1790",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1790"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Tese declara inconstitucional o art. 1.790.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C08",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.1790",
+   "cited_as": "(Vide Recurso Extraordinário nº 878.694)",
+   "raw_precedent": "STF:RE:878694",
+   "precedent": "STF:RG:809",
+   "device_label": "RG TEMA 809",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1790",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1790"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Mesma tese, tema próprio (registro separado).",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C09",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.1829",
+   "cited_as": "(Vide Recurso Extraordinário nº 646.721)",
+   "raw_precedent": "STF:RE:646721",
+   "precedent": "STF:RG:498",
+   "device_label": "RG TEMA 498",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1829",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1829"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Tese manda aplicar o regime do art. 1.829.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C10",
+   "source": "PLANALTO_VIDE",
+   "discovered_target": "CC2002:ART.1829",
+   "cited_as": "(Vide Recurso Extraordinário nº 878.694)",
+   "raw_precedent": "STF:RE:878694",
+   "precedent": "STF:RG:809",
+   "device_label": "RG TEMA 809",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1829",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1829"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Idem.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C11",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1727",
+   "cited_as": "RE 1045273 (Tema 529): art. 1.727",
+   "raw_precedent": "STF:RE:1045273",
+   "precedent": "STF:RG:529",
+   "device_label": "RG TEMA 529",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": false,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1727",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1723:PAR.1"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "A tese ressalva a exceção do art. 1.723, § 1º; o art. 1.727 é só fundamento.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C12",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1566",
+   "cited_as": "RE 1045273 (Tema 529): art. 1.566",
+   "raw_precedent": "STF:RE:1045273",
+   "precedent": "STF:RG:529",
+   "device_label": "RG TEMA 529",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": false,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1566",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1566:INC.I"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Ementa cita \"1.566, I\" (dever de fidelidade); pertinência secundária, decisão humana.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C13",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1641",
+   "cited_as": "ARE 1309642 (Tema 1236): art. 1.641",
+   "raw_precedent": "STF:ARE:1309642",
+   "precedent": "STF:RG:1236",
+   "device_label": "RG TEMA 1236",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": false,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [
+     "CONVENCAO_TRATADO"
+    ],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1641",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1641:INC.II"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Tese sobre o inciso II (maior de 70 anos); o extrator só pegou o artigo.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C14",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1639:PAR.2",
+   "cited_as": "ARE 1309642 (Tema 1236): art. 1.639, § 2º",
+   "raw_precedent": "STF:ARE:1309642",
+   "precedent": "STF:RG:1236",
+   "device_label": "RG TEMA 1236",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [
+     "CONVENCAO_TRATADO"
+    ],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1639:PAR.2",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1639:PAR.2"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Citado entre parênteses (mudança de regime); pertinência a confirmar.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C15",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.927",
+   "cited_as": "RE 828040 (Tema 932): art. 927",
+   "raw_precedent": "STF:RE:828040",
+   "precedent": "STF:RG:932",
+   "device_label": "RG TEMA 932",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "OK",
+    "targets": [
+     "CC2002:ART.927:PAR.UNICO"
+    ]
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": false,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.927:PAR.UNICO",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.927:PAR.UNICO"
+   ],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Tese nomeia o parágrafo único; o parser de citação já aponta o alvo certo.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C16",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1790",
+   "cited_as": "RE 878694 (Tema 809): art. 1790",
+   "raw_precedent": "STF:RE:878694",
+   "precedent": "STF:RG:809",
+   "device_label": "RG TEMA 809",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "OK",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1790",
+   "duplicate_of": "C08",
+   "joint_detected": [],
+   "pilot_assessment": "DUPLICATE_RECOMMENDATION",
+   "proposed_targets": [],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Duplicata automática de C08 (alias STF:RE:878694 → STF:RG:809).",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C17",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1790",
+   "cited_as": "RE 646721 (Tema 498): art. 1790",
+   "raw_precedent": "STF:RE:646721",
+   "precedent": "STF:RG:498",
+   "device_label": "RG TEMA 498",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "OK",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1790",
+   "duplicate_of": "C07",
+   "joint_detected": [],
+   "pilot_assessment": "DUPLICATE_RECOMMENDATION",
+   "proposed_targets": [],
+   "HUMAN_REVIEW_NEEDED": false,
+   "assessment_note": "Duplicata automática de C07 (alias STF:RE:646721 → STF:RG:498).",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C18",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1521",
+   "cited_as": "RE 883168 (Tema 526): art. 1.521",
+   "raw_precedent": "STF:RE:883168",
+   "precedent": "STF:RG:526",
+   "device_label": "RG TEMA 526",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1521",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "proposed_targets": [],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Tema previdenciário; o art. 1.521 (impedimentos) aparece só como fundamento.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C19",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.1727",
+   "cited_as": "RE 883168 (Tema 526): art. 1.727",
+   "raw_precedent": "STF:RE:883168",
+   "precedent": "STF:RG:526",
+   "device_label": "RG TEMA 526",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.1727",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1727"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "Concubinato (art. 1.727) é o conceito decisivo, mas o tema é previdenciário; baixa confiança.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  },
+  {
+   "id": "C20",
+   "source": "STF_SEARCH_Q1",
+   "discovered_target": "CC2002:ART.206",
+   "cited_as": "ARE 1352872 (Tema 1194): art. 206",
+   "raw_precedent": "STF:ARE:1352872",
+   "precedent": "STF:RG:1194",
+   "device_label": "RG TEMA 1194",
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZATION": true,
+    "AUTO_NAMESPACE_CHECK": true,
+    "AUTO_TEMPORAL_CHECK": true,
+    "AUTO_STATUS_CHECK": true,
+    "AUTO_DUPLICATE_CHECK": true,
+    "OFFICIAL_SOURCE_FOUND": true
+   },
+   "citation_parser": {
+    "status": "UNPARSEABLE",
+    "reason": "ARTICLE_NOT_FOUND_IN_CITATION",
+    "targets": []
+   },
+   "namespace": {
+    "home_norm_mentioned": true,
+    "other_norms": [],
+    "cf_auditor_alert": true,
+    "result": "PASS"
+   },
+   "temporal": {
+    "amendments": [],
+    "later_than_judgment": [],
+    "result": "CURRENT"
+   },
+   "status_signals": {
+    "signals": [
+     "TRANSITO_EM_JULGADO"
+    ],
+    "provisional": false
+   },
+   "engine_target": "CC2002:ART.206-A",
+   "duplicate_of": null,
+   "joint_detected": [],
+   "pilot_assessment": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.206-A"
+   ],
+   "HUMAN_REVIEW_NEEDED": true,
+   "assessment_note": "O texto oficial diz \"206-A\" (prescrição intercorrente); o extrator truncou para 206.",
+   "decision_status": "PORTABILITY_PILOT_ONLY",
+   "human_approved": false
+  }
+ ]
+}
