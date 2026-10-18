@@ -1,0 +1,2567 @@
+{
+ "schema_version": 1,
+ "batch": "CC-J2",
+ "norm": "CC2002",
+ "mode": "HOST_ONLY_DECISIONS_NO_MATERIALIZATION",
+ "status": "AWAITING_USER_RATIFICATION",
+ "baseline": "MULTINORM_FROZEN_CF315_198_CC29_24 (CC_J1_FROZEN_29_24 inalterado)",
+ "selection": {
+  "rule": "Unidade = precedente (todos os alvos descobertos dele juntos). Pontuação = citação oficial direta + vigência do dispositivo + vigência do precedente + lacuna de cobertura do alvo + vários dispositivos; ordem dentro do tema por (-pontuação, canal, id); rodízio entre os temas do CC até 30.",
+  "n": 30,
+  "channels": [
+   "PLANALTO_VIDE",
+   "STF_SEARCH_Q1",
+   "STF_Q1_RECHECK",
+   "STJ_SUMULAS_PDF",
+   "STJ_PRECEDENTES_DADOS_ABERTOS"
+  ]
+ },
+ "metrics": {
+  "CC_J2_CANDIDATES": 30,
+  "GREEN": 9,
+  "YELLOW": 13,
+  "RED": 8,
+  "PROMOTE_RECOMMENDED": 14,
+  "PROMOTE_PROVISIONAL_RECOMMENDED": 1,
+  "REALLOCATE_RECOMMENDED": 2,
+  "MULTI_TARGET_RECOMMENDED": 3,
+  "CONTEXTUAL_RECOMMENDED": 2,
+  "REJECT_RECOMMENDED": 7,
+  "ALREADY_COVERED": 0,
+  "DUPLICATE_RECOMMENDATION": 1,
+  "UNRESOLVED": 0,
+  "HUMAN_JUDGMENT_REQUIRED": 14,
+  "RELATIONS_PROPOSED": 25,
+  "TARGETS_PROPOSED": 22,
+  "NEW_TARGETS_WITHOUT_J": 18,
+  "CC_PHYSICAL_BASELINE": "29/24",
+  "CC_PROJECTED_IF_RATIFIED": "54/42",
+  "CC_PROJECTED_GREEN_ONLY": "38/32",
+  "CC_J1_REVALIDATION_REQUIRED": 0,
+  "CF_REGRESSION": 0,
+  "CC_J1_REGRESSION": 0,
+  "DUPLICATE_QUERY_KEYS": 0,
+  "STJ_QUALIFIED_PRECEDENTS_SOURCE": "AVAILABLE"
+ },
+ "notes": {
+  "CCJ1_09": "Tema 1194 continua PENDING_HUMAN_REVIEW: nenhuma fonte oficial nova liga o tema ao art. 206-A (Planalto sem anotação; dataset do STJ sem tema sobre o art. 206-A).",
+  "CCJ1_30": "Súmula 609 continua PENDING_TEMPORAL_REVALIDATION: nenhuma decisão do STJ posterior à Lei 15.040/2024, nenhuma revisão ou cancelamento no PDF oficial nem no dataset de precedentes qualificados.",
+  "CC_J1_REVALIDATION_REQUIRED": "0 — interações encontradas são todas compatíveis (Súmula 655 × Tema 1236; Temas 610/639 × Súmula 547; Tema 920 × Tema 932) ou novos alvos de precedentes já publicados.",
+  "CF_MATERIALIZATION_PENDING": "9 relações da CF ratificadas e não instaladas (Batch10 6 + Súmulas 203/403 STJ 3): fila separada, não pesquisada nem tocada no CC-J2."
+ },
+ "totals": {
+  "CONTEXTUAL_RECOMMENDED": 2,
+  "DUPLICATE_RECOMMENDATION": 1,
+  "MULTI_TARGET_RECOMMENDED": 3,
+  "PROMOTE_PROVISIONAL_RECOMMENDED": 1,
+  "PROMOTE_RECOMMENDED": 14,
+  "REALLOCATE_RECOMMENDED": 2,
+  "REJECT_NOT_MATERIAL_RECOMMENDED": 1,
+  "REJECT_SUPERSEDED_RECOMMENDED": 1,
+  "REJECT_TEMPORAL_MISMATCH_RECOMMENDED": 5
+ },
+ "proposed_relations": [
+  {
+   "target_id": "CC2002:ART.1208",
+   "precedent": "STJ:SUMULA:619"
+  },
+  {
+   "target_id": "CC2002:ART.1210:PAR.2",
+   "precedent": "STJ:SUMULA:637"
+  },
+  {
+   "target_id": "CC2002:ART.1238:PAR.UNICO",
+   "precedent": "STJ:REPETITIVO:1019"
+  },
+  {
+   "target_id": "CC2002:ART.1255",
+   "precedent": "STJ:SUMULA:619"
+  },
+  {
+   "target_id": "CC2002:ART.1566:INC.I",
+   "precedent": "STF:RG:529"
+  },
+  {
+   "target_id": "CC2002:ART.1639:PAR.2",
+   "precedent": "STF:RG:1236"
+  },
+  {
+   "target_id": "CC2002:ART.1641:INC.II",
+   "precedent": "STJ:SUMULA:655"
+  },
+  {
+   "target_id": "CC2002:ART.1829",
+   "precedent": "STF:RG:498"
+  },
+  {
+   "target_id": "CC2002:ART.1829",
+   "precedent": "STF:RG:809"
+  },
+  {
+   "target_id": "CC2002:ART.191",
+   "precedent": "STJ:REPETITIVO:1109"
+  },
+  {
+   "target_id": "CC2002:ART.2028",
+   "precedent": "STJ:REPETITIVO:610"
+  },
+  {
+   "target_id": "CC2002:ART.2028",
+   "precedent": "STJ:REPETITIVO:639"
+  },
+  {
+   "target_id": "CC2002:ART.202:PAR.UNICO",
+   "precedent": "STJ:IAC:1"
+  },
+  {
+   "target_id": "CC2002:ART.206:PAR.3:INC.III",
+   "precedent": "STJ:REPETITIVO:308"
+  },
+  {
+   "target_id": "CC2002:ART.206:PAR.3:INC.IV",
+   "precedent": "STJ:REPETITIVO:610"
+  },
+  {
+   "target_id": "CC2002:ART.206:PAR.5:INC.I",
+   "precedent": "STJ:REPETITIVO:639"
+  },
+  {
+   "target_id": "CC2002:ART.286",
+   "precedent": "STJ:REPETITIVO:368"
+  },
+  {
+   "target_id": "CC2002:ART.354",
+   "precedent": "STJ:REPETITIVO:381"
+  },
+  {
+   "target_id": "CC2002:ART.354",
+   "precedent": "STJ:REPETITIVO:426"
+  },
+  {
+   "target_id": "CC2002:ART.368",
+   "precedent": "STJ:REPETITIVO:587"
+  },
+  {
+   "target_id": "CC2002:ART.405",
+   "precedent": "STJ:REPETITIVO:1133"
+  },
+  {
+   "target_id": "CC2002:ART.50",
+   "precedent": "STJ:REPETITIVO:1210"
+  },
+  {
+   "target_id": "CC2002:ART.76:PAR.UNICO",
+   "precedent": "STJ:REPETITIVO:1130"
+  },
+  {
+   "target_id": "CC2002:ART.835",
+   "precedent": "STJ:SUMULA:656"
+  },
+  {
+   "target_id": "CC2002:ART.943",
+   "precedent": "STJ:SUMULA:642"
+  }
+ ],
+ "coverage": {
+  "CURRENT": {
+   "PARTE_GERAL": {
+    "relations": 10,
+    "targets": 8,
+    "articles_with_j": 6,
+    "articles_in_norm": 236,
+    "density_pct": 2.54,
+    "themes": {
+     "PARTE_GERAL": 3,
+     "PERSONALIDADE": 2,
+     "PRESCRICAO_DECADENCIA": 5
+    }
+   },
+   "OBRIGACOES": {
+    "relations": 6,
+    "targets": 5,
+    "articles_with_j": 4,
+    "articles_in_norm": 736,
+    "density_pct": 0.54,
+    "themes": {
+     "CONTRATOS": 1,
+     "OBRIGACOES": 2,
+     "RESPONSABILIDADE_CIVIL": 3
+    }
+   },
+   "EMPRESA": {
+    "relations": 1,
+    "targets": 1,
+    "articles_with_j": 1,
+    "articles_in_norm": 232,
+    "density_pct": 0.43,
+    "themes": {
+     "EMPRESA": 1
+    }
+   },
+   "COISAS": {
+    "relations": 4,
+    "targets": 4,
+    "articles_with_j": 4,
+    "articles_in_norm": 350,
+    "density_pct": 1.14,
+    "themes": {
+     "COISAS": 4
+    }
+   },
+   "FAMILIA": {
+    "relations": 4,
+    "targets": 4,
+    "articles_with_j": 4,
+    "articles_in_norm": 259,
+    "density_pct": 1.54,
+    "themes": {
+     "FAMILIA": 4
+    }
+   },
+   "SUCESSOES": {
+    "relations": 2,
+    "targets": 1,
+    "articles_with_j": 1,
+    "articles_in_norm": 245,
+    "density_pct": 0.41,
+    "themes": {
+     "SUCESSOES": 2
+    }
+   },
+   "DISPOSICOES_FINAIS_TRANSITORIAS": {
+    "relations": 2,
+    "targets": 1,
+    "articles_with_j": 1,
+    "articles_in_norm": 19,
+    "density_pct": 5.26,
+    "themes": {
+     "TRANSICAO": 2
+    }
+   }
+  },
+  "PROJECTED": {
+   "PARTE_GERAL": {
+    "relations": 17,
+    "targets": 13,
+    "articles_with_j": 10,
+    "articles_in_norm": 236,
+    "density_pct": 4.24,
+    "themes": {
+     "PARTE_GERAL": 5,
+     "PERSONALIDADE": 2,
+     "PRESCRICAO_DECADENCIA": 10
+    }
+   },
+   "OBRIGACOES": {
+    "relations": 13,
+    "targets": 11,
+    "articles_with_j": 10,
+    "articles_in_norm": 736,
+    "density_pct": 1.36,
+    "themes": {
+     "CONTRATOS": 2,
+     "OBRIGACOES": 7,
+     "RESPONSABILIDADE_CIVIL": 4
+    }
+   },
+   "EMPRESA": {
+    "relations": 1,
+    "targets": 1,
+    "articles_with_j": 1,
+    "articles_in_norm": 232,
+    "density_pct": 0.43,
+    "themes": {
+     "EMPRESA": 1
+    }
+   },
+   "COISAS": {
+    "relations": 8,
+    "targets": 8,
+    "articles_with_j": 8,
+    "articles_in_norm": 350,
+    "density_pct": 2.29,
+    "themes": {
+     "COISAS": 8
+    }
+   },
+   "FAMILIA": {
+    "relations": 7,
+    "targets": 6,
+    "articles_with_j": 6,
+    "articles_in_norm": 259,
+    "density_pct": 2.32,
+    "themes": {
+     "FAMILIA": 7
+    }
+   },
+   "SUCESSOES": {
+    "relations": 4,
+    "targets": 2,
+    "articles_with_j": 2,
+    "articles_in_norm": 245,
+    "density_pct": 0.82,
+    "themes": {
+     "SUCESSOES": 4
+    }
+   },
+   "DISPOSICOES_FINAIS_TRANSITORIAS": {
+    "relations": 4,
+    "targets": 1,
+    "articles_with_j": 1,
+    "articles_in_norm": 19,
+    "density_pct": 5.26,
+    "themes": {
+     "TRANSICAO": 4
+    }
+   }
+  }
+ },
+ "decisions": [
+  {
+   "id": "CCJ2-01",
+   "rank": 1,
+   "precedent": "STJ:SUMULA:619",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "COISAS",
+   "score": 9,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1208",
+    "CC2002:ART.1255"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1208": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.1255": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1208": true,
+    "CC2002:ART.1255": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "619",
+   "device_label": "Súmula 619 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "CORTE ESPECIAL, 24/10/2018",
+   "evidence": "A ocupação indevida de bem público configura mera detenção, de natureza precária, insuscetível de retenção ou indenização por acessões e benfeitorias.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "MULTI_TARGET_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1208",
+    "CC2002:ART.1255"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "YELLOW",
+   "risk": "BAIXO",
+   "motive": "Ocupação indevida de bem público é mera detenção (art. 1.208), sem indenização por acessões (art. 1.255); dois alvos.",
+   "yellow": [
+    "Dois alvos: o fundamento (1.208) e o dispositivo cuja indenização a súmula afasta (1.255).",
+    "Súmula 619 (Corte Especial, 24/10/2018); o STJ referencia CC 1.208 e 1.255 (e CF 191).",
+    "Baixo; benfeitorias (art. 1.219) não são referenciadas pelo STJ.",
+    "vincular só no art. 1.208",
+    "A — 1.208 e 1.255."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-02",
+   "rank": 2,
+   "precedent": "STJ:SUMULA:656",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "CONTRATOS",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.835"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.835": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.835": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "656",
+   "device_label": "Súmula 656 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 09/11/2022",
+   "evidence": "É válida a cláusula de prorrogação automática de fiança na renovação do contrato principal. A exoneração do fiador depende da notificação prevista no art. 835 do Código Civil.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.835"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "O enunciado nomeia o art. 835: a exoneração do fiador depende da notificação ali prevista.",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-03",
+   "rank": 3,
+   "precedent": "STF:RG:1236",
+   "channel": "STF_SEARCH_Q1",
+   "theme": "FAMILIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1639:PAR.2"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1639:PAR.2": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1639:PAR.2": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STF",
+   "klass": "RG",
+   "number": "1236",
+   "device_label": "RG TEMA 1236",
+   "device_type": "VALIDATED",
+   "status_text": "Trânsito em Julgado - 10/04/2024",
+   "judgment": "Trânsito em Julgado - 10/04/2024",
+   "evidence": "art. 1.641, II, do Código Civil, atribuindo-lhe o sentido de norma dispositiva, que deve prevalecer à falta de convenção das partes em sentido diverso",
+   "source": {
+    "id": "T1236+Q1",
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1236",
+    "sha256": "d2500318a1c089a75cf4589639ec082b25b20dde96c02b724b6c306880461b14",
+    "tier": "A"
+   },
+   "decision": "CONTEXTUAL_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1639:PAR.2"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "A ementa cita o art. 1.639, § 2º como exemplo de mudança consensual de regime para situações já constituídas; a tese não o nomeia.",
+   "yellow": [
+    "Relação contextual: o § 2º aparece na modulação (\"e.g.\"), não na tese.",
+    "ARE 1309642 (Pleno, 01/02/2024), ementa item 10 e \"atos normativos citados: arts. 1.641, II; e 1.639, § 2º\".",
+    "Leitor pode entender que o tema decidiu a mudança de regime; não decidiu.",
+    "não vincular (fundamento lateral)",
+    "A — 1.639, § 2º como contextual, com a nota de modulação na ficha."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_SAME_PRECEDENT_NEW_TARGET",
+    "note": "Mesmo precedente do CCJ1-06 (art. 1.641, II); novo alvo; ficha STF_RG_1236.TXT já no cartão."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-04",
+   "rank": 4,
+   "precedent": "STJ:REPETITIVO:1133",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "OBRIGACOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.405"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.405": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.405": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "1133",
+   "device_label": "REPETITIVO STJ 1133",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S1, j. 2023-05-10",
+   "evidence": "O termo inicial dos juros de mora, em ação de cobrança de valores pretéritos ao ajuizamento de anterior mandado de segurança que reconheceu o direito, é a data da notificação da autoridade coatora no mandado de segurança, quando o devedor é constituído em mora (art. 405 do Código Civil e art. 240 do CPC).",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.405"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "Tese fixa o termo inicial dos juros de mora \"(art. 405 do Código Civil e art. 240 do CPC)\"; art. 405 vigente, sem nota de redação.",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-05",
+   "rank": 5,
+   "precedent": "STJ:REPETITIVO:1210",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PARTE_GERAL",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.50"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.50": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": [
+      "Redação dada pela Lei nº 13.874, de 2019"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.50": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "1210",
+   "device_label": "REPETITIVO STJ 1210",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S2, j. 2026-05-07",
+   "evidence": "Nas relações jurídicas de direito civil e empresarial, a desconsideração da personalidade jurídica requer a efetiva comprovação de abuso da personalidade jurídica, caracterizado por desvio de finalidade ou por confusão patrimonial, nos termos exigidos pelo art. 50 do Código Civil (Teoria Maior), sendo insuficiente a mera inexistência de bens penhoráveis e/ou de encerramento irregular das atividades da sociedade empresária.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.50"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "Desconsideração exige abuso \"nos termos exigidos pelo art. 50 do Código Civil (Teoria Maior)\"; julgado em 2026, depois da redação da Lei 13.874/2019.",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-06",
+   "rank": 6,
+   "precedent": "STJ:IAC:1",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PRESCRICAO_DECADENCIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.202:PAR.UNICO"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.202:PAR.UNICO": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.202:PAR.UNICO": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "IAC",
+   "number": "1",
+   "device_label": "IAC 1",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S2, j. 2018-06-27",
+   "evidence": "1.1. Incide a prescrição intercorrente, nas causas regidas pelo CPC/73, quando o exequente permanece inerte por prazo superior ao de prescrição do direito material vindicado, conforme interpretação extraída do art. 202, parágrafo único, do Código Civil de 2002.1.2. O termo inicial do prazo prescricional, na vigência do CPC/1973, conta-se do fim do prazo judicial de suspensão do processo ou, inexistindo prazo fixado, do transcurso de 1 (um) ano (aplicação analógica do art. 40, § 2º, da Lei 6.830/1980).1.3. O termo inicial do art. 1.056 do CPC/2015 tem incidência apenas nas hipóteses em que o processo se encontrava suspenso na data da entrada em vigor da novel lei processual, uma vez que não se pode extrair interpretação que viabilize o reinício ou a reabertura de prazo prescricional ocorridos na vigência do revogado CPC/1973 (aplicação irretroativa da norma processual).1.4. O contraditório é princípio que deve ser respeitado em todas as manifestações do Poder Judiciário, que deve zelar pela sua observância, inclusive nas hipóteses de declaração de ofício da prescrição intercorrente, devendo o credor ser previamente intimado para opor algum fato impeditivo à incidência da prescrição.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.202:PAR.UNICO"
+   ],
+   "temporal": "HISTORICAL_BUT_RELEVANT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Prescrição intercorrente \"conforme interpretação extraída do art. 202, parágrafo único, do Código Civil de 2002\", mas só nas causas regidas pelo CPC/73.",
+   "yellow": [
+    "Tese restrita às execuções regidas pelo CPC/73 (hoje vale o art. 921 do CPC/2015).",
+    "IAC 1 (Segunda Seção, 27/06/2018; RG STF 1162 correlata): tese nomeia o art. 202, parágrafo único.",
+    "Aplicação indevida a execuções sob o CPC/2015.",
+    "rejeitar como temporalmente restrito",
+    "A — 202, p.u., com a restrição ao CPC/73 na ficha. Primeiro IAC do aparelho: rótulo \"IAC 1\" sem validação física."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-07",
+   "rank": 7,
+   "precedent": "STF:RG:498",
+   "channel": "PLANALTO_VIDE",
+   "theme": "SUCESSOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1829"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1829": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1829": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STF",
+   "klass": "RG",
+   "number": "498",
+   "device_label": "RG TEMA 498",
+   "device_type": "VALIDATED",
+   "status_text": "Trânsito em Julgado - em 28/03/2019",
+   "judgment": "Trânsito em Julgado - em 28/03/2019",
+   "evidence": "É inconstitucional a distinção de regimes sucessórios entre cônjuges e companheiros prevista no art. 1.790 do CC/2002, devendo ser aplicado ... o regime do art. 1.829 do CC/2002.",
+   "source": {
+    "id": "T498+Q1",
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=498",
+    "sha256": "67813660fc22a2f3020e8ed8e37a83af8f56caa401f0b21471d8e47ce02774f8",
+    "tier": "A"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1829"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "A tese manda aplicar \"o regime do art. 1.829 do CC/2002\"; o Planalto anota o RE 646.721 no próprio art. 1.829.",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_SAME_PRECEDENT_NEW_TARGET",
+    "note": "Mesmo precedente do CCJ1-03 (art. 1.790); novo alvo, mesma ficha STF_RG_498.TXT já no cartão. O CC-J1 não muda."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-08",
+   "rank": 8,
+   "precedent": "STJ:REPETITIVO:639",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "TRANSICAO",
+   "score": 8,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 0,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.2028",
+    "CC2002:ART.206:PAR.5:INC.I"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.2028": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.206:PAR.5:INC.I": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.2028": true,
+    "CC2002:ART.206:PAR.5:INC.I": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "639",
+   "device_label": "REPETITIVO STJ 639",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S1, j. 2014-10-22",
+   "evidence": "Ao crédito rural cujo contrato tenha sido celebrado sob a égide do Código Civil de 1916, aplica-se o prazo prescricional de 20 (vinte) anos (prescrição das ações pessoais - direito pessoal de crédito), a contar da data do vencimento, consoante o disposto no art. 177, do CC/16, para que dentro dele (observado o disposto no art. 2º, §3º da LEF) sejam feitos a inscrição e o ajuizamento da respectiva execução fiscal. Sem embargo da norma de transição prevista no art. 2.028 do CC/2002. Também para os efeitos próprios do art. 543-C, do CPC: \"para o crédito rural cujo contrato tenha sido celebrado sob a égide do Código Civil de 2002, aplica-se o prazo prescricional de 5 (cinco) anos (prescrição da pretensão para a cobrança de dívidas líquidas constantes de instrumento público ou particular), a contar da data do vencimento, consoante o disposto no art. 206, §5º, I, do CC/2002, para que dentro dele (observado o disposto no art. 2º, §3º da LEF) sejam feitos a inscrição em dívida ativa e o ajuizamento da respectiva execução fiscal",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "MULTI_TARGET_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.206:PAR.5:INC.I",
+    "CC2002:ART.2028"
+   ],
+   "temporal": "HISTORICAL_BUT_RELEVANT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Crédito rural sob o CC/2002 prescreve em 5 anos (art. 206, § 5º, I); sob o CC/1916, 20 anos, com a transição do art. 2.028.",
+   "yellow": [
+    "Dois alvos, um de transição; tema da Primeira Seção (crédito rural cedido à União, execução fiscal).",
+    "Tese nomeia o art. 206, § 5º, I e \"a norma de transição prevista no art. 2.028 do CC/2002\".",
+    "Alvos já cobertos pela Súmula 547 (CC-J1): risco de lista redundante, não de conflito.",
+    "vincular só no art. 206, § 5º, I",
+    "A — 206, § 5º, I e 2.028 (nota temporal na ficha)."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_COMPATIBLE_INTERACTION",
+    "note": "Alvos com a Súmula 547 (CCJ1-25), mesma solução de prazo e transição: coerente."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-09",
+   "rank": 9,
+   "precedent": "STJ:SUMULA:642",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "PERSONALIDADE",
+   "score": 6,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 0,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 1,
+    "in_index": -1
+   },
+   "discovered_targets": [
+    "CC2002:ART.12",
+    "CC2002:ART.943:INC.I",
+    "CC2002:ART.948",
+    "CC2002:ART.1829",
+    "CC2002:ART.1839"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.12": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.943:INC.I": {
+     "checked": false,
+     "result": "UNKNOWN",
+     "notes": []
+    },
+    "CC2002:ART.948": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.1829": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.1839": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.12": true,
+    "CC2002:ART.943:INC.I": false,
+    "CC2002:ART.948": true,
+    "CC2002:ART.1829": true,
+    "CC2002:ART.1839": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": false,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "642",
+   "device_label": "Súmula 642 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "CORTE ESPECIAL, 02/12/2020",
+   "evidence": "O direito à indenização por danos morais transmite-se com o falecimento do titular, possuindo os herdeiros da vítima legitimidade ativa para ajuizar ou prosseguir a ação indenizatória.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.943"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Transmissão do direito à indenização por dano moral com a morte: núcleo no art. 943; a referência \"943, I\" do STJ não existe no índice (o artigo não tem incisos).",
+   "yellow": [
+    "Normalização de alvo (943, I → 943) e escolha entre cinco referências oficiais (12, 943, 948, 1.829, 1.839).",
+    "Súmula 642 (Corte Especial, 02/12/2020): \"transmite-se com o falecimento do titular\"; art. 943: \"transmitem-se com a herança\".",
+    "Arts. 1.829/1.839 só dizem quem são os herdeiros; art. 948 trata de homicídio.",
+    "acrescentar o art. 12",
+    "A — 943 (a referência ao art. 12 fica para lote futuro)."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-10",
+   "rank": 10,
+   "precedent": "STF:RG:920",
+   "channel": "STF_Q1_RECHECK",
+   "theme": "RESPONSABILIDADE_CIVIL",
+   "score": 3,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": -2,
+    "coverage_gap": 0,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.927"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.927": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.927": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STF",
+   "klass": "RG",
+   "number": "920",
+   "device_label": "RG TEMA 920",
+   "device_type": "VALIDATED",
+   "status_text": "Repercussão geral: Não há repercussão geral (questão infraconstitucional); 07/10/2016; Trânsito em Julgado - em 07/03/2017",
+   "judgment": "Repercussão geral: Não há repercussão geral (questão infraconstitucional); 07/10/2016; Trânsito em Julgado - em 07/03/2017",
+   "evidence": "Tema 920 — Possibilidade de responsabilização objetiva do empregador por danos decorrentes de doenças ocupacionais. Descrição: aplicação da teoria do risco, prevista no art. 927, parágrafo único, do Código Civil, aos danos decorrentes de acidentes de trabalho. Situação: não há repercussão geral (questão infraconstitucional).",
+   "source": {
+    "id": "T920",
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=920",
+    "sha256": "5d16d80ace739fb84697e821d03e9a68b4b89632c9921e4f243a5693b98b4552",
+    "tier": "A",
+    "extra": []
+   },
+   "decision": "REJECT_SUPERSEDED_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "SUPERSEDED",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Repercussão geral negada (questão infraconstitucional): não há tese de mérito; a matéria foi depois decidida no Tema 932.",
+   "yellow": null,
+   "red_reopen": "Nunca como precedente de mérito; o art. 927, p.u. já tem o Tema 932 (CCJ1-07).",
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_COMPATIBLE_INTERACTION",
+    "note": "Confirma o CCJ1-07 (Tema 932 no art. 927, p.u.)."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-11",
+   "rank": 11,
+   "precedent": "STJ:REPETITIVO:1019",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "COISAS",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1238"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1238": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1238": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "1019",
+   "device_label": "REPETITIVO STJ 1019",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S1, j. 2020-02-12",
+   "evidence": "O prazo prescricional aplicável à desapropriação indireta, na hipótese em que o Poder Público tenha realizado obras no local ou atribuído natureza de utilidade pública ou de interesse social ao imóvel, é de 10 anos, conforme parágrafo único do art. 1.238 do CC.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "REALLOCATE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1238:PAR.UNICO"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "YELLOW",
+   "risk": "BAIXO",
+   "motive": "Desapropriação indireta prescreve em 10 anos \"conforme parágrafo único do art. 1.238 do CC\"; o adaptador pegou só o artigo.",
+   "yellow": [
+    "Realocação artigo → parágrafo único (o adaptador não lê \"parágrafo único do art.\").",
+    "Tema 1019 (Primeira Seção, 12/02/2020): prazo de 10 anos do art. 1.238, parágrafo único.",
+    "Tema de direito público num dispositivo de usucapião.",
+    "manter no artigo",
+    "A — 1.238, p.u."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-12",
+   "rank": 12,
+   "precedent": "STJ:REPETITIVO:26",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "CONTRATOS",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 1,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.591",
+    "CC2002:ART.406"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.591": {
+     "checked": true,
+     "result": "AMENDED_AFTER_JUDGMENT",
+     "notes": [
+      "Redação dada pela Lei nº 14.905, de 2024"
+     ]
+    },
+    "CC2002:ART.406": {
+     "checked": true,
+     "result": "AMENDED_AFTER_JUDGMENT",
+     "notes": [
+      "Redação dada pela Lei nº 14.905, de 2024"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.591": true,
+    "CC2002:ART.406": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "26",
+   "device_label": "REPETITIVO STJ 26",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S2, j. 2008-10-22",
+   "evidence": "São inaplicáveis aos juros remuneratórios dos contratos de mútuo bancário as disposições do art. 591 c/c o art. 406 do CC/02.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "REJECT_TEMPORAL_MISMATCH_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "SUPERSEDED",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Afasta o limite \"do art. 591 c/c o art. 406\"; a Lei 14.905/2024 reescreveu os dois artigos e o limite não existe mais no texto.",
+   "yellow": null,
+   "red_reopen": "Se o STJ reafirmar a tese sob a redação da Lei 14.905/2024.",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-13",
+   "rank": 13,
+   "precedent": "STF:RG:529",
+   "channel": "STF_SEARCH_Q1",
+   "theme": "FAMILIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1566"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1566": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1566": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STF",
+   "klass": "RG",
+   "number": "529",
+   "device_label": "RG TEMA 529",
+   "device_type": "VALIDATED",
+   "status_text": "Trânsito em Julgado - 29/05/2021",
+   "judgment": "Trânsito em Julgado - 29/05/2021",
+   "evidence": "A preexistência de casamento ou de união estável de um dos conviventes, ressalvada a exceção do artigo 1723, § 1º, do Código Civil, impede o reconhecimento de novo vínculo referente ao mesmo período",
+   "source": {
+    "id": "T529+Q1",
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=529",
+    "sha256": "93f3adff4d56c612cb2a95698cedfb45a97ef94b1b09e4e213af9b8153e89180",
+    "tier": "A"
+   },
+   "decision": "CONTEXTUAL_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1566:INC.I"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "A tese invoca \"o dever de fidelidade e a monogamia\"; a ementa cita o art. 1.566, I.",
+   "yellow": [
+    "Relação por fundamento (dever de fidelidade), não pelo dispositivo julgado.",
+    "Tese do Tema 529: \"em virtude da consagração do dever de fidelidade e da monogamia\"; ementa do RE 1045273: \"1.566, I\".",
+    "No CC-J1 o usuário recusou o art. 1.727 como alvo adicional deste tema (fundamento).",
+    "não vincular (coerente com a recusa do 1.727)",
+    "D — decisão do usuário; recomendação fraca de A."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_SAME_PRECEDENT_NEW_TARGET",
+    "note": "Mesmo precedente do CCJ1-05 (art. 1.723, § 1º); o 1.566, I nunca foi apresentado no CC-J1. Ficha STF_RG_529.TXT já no cartão."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-14",
+   "rank": 14,
+   "precedent": "STJ:REPETITIVO:368",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "OBRIGACOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.286"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.286": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.286": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "368",
+   "device_label": "REPETITIVO STJ 368",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S1, j. 2012-05-09",
+   "evidence": "Os créditos decorrentes da obrigação de devolução do empréstimo compulsório, incidente sobre o consumo de energia elétrica, podem ser cedidos a terceiros, uma vez inexistente impedimento legal expresso à transferência ou à cessão dos aludidos créditos, nada inibindo a incidência das normas de direito privado à espécie, notadamente o art. 286 do Código Civil.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.286"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "Créditos do empréstimo compulsório podem ser cedidos, incidindo \"notadamente o art. 286 do Código Civil\" (cessão de crédito).",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-15",
+   "rank": 15,
+   "precedent": "STJ:SUMULA:530",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "PARTE_GERAL",
+   "score": 8,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 1,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.112",
+    "CC2002:ART.122",
+    "CC2002:ART.170",
+    "CC2002:ART.406",
+    "CC2002:ART.591"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.112": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.122": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.170": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.406": {
+     "checked": true,
+     "result": "AMENDED_AFTER_JUDGMENT",
+     "notes": [
+      "Redação dada pela Lei nº 14.905, de 2024"
+     ]
+    },
+    "CC2002:ART.591": {
+     "checked": true,
+     "result": "AMENDED_AFTER_JUDGMENT",
+     "notes": [
+      "Redação dada pela Lei nº 14.905, de 2024"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.112": true,
+    "CC2002:ART.122": true,
+    "CC2002:ART.170": true,
+    "CC2002:ART.406": true,
+    "CC2002:ART.591": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "530",
+   "device_label": "Súmula 530 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 13/05/2015",
+   "evidence": "Nos contratos bancários, na impossibilidade de comprovar a taxa de juros efetivamente contratada - por ausência de pactuação ou pela falta de juntada do instrumento aos autos -, aplica-se a taxa média de mercado, divulgada pelo Bacen, praticada nas operações da mesma espécie, salvo se a taxa cobrada for mais vantajosa para o devedor.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Núcleo é a taxa média do Bacen nos contratos bancários; arts. 112/122/170 são cânones gerais e 406/591 foram reescritos em 2024.",
+   "yellow": null,
+   "red_reopen": "Se surgir precedente que fundamente a taxa média na conversão (art. 170) ou na condição potestativa (art. 122).",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-16",
+   "rank": 16,
+   "precedent": "STJ:REPETITIVO:1109",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PRESCRICAO_DECADENCIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.191"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.191": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.191": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "1109",
+   "device_label": "REPETITIVO STJ 1109",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S1, j. 2023-09-13",
+   "evidence": "Não ocorre renúncia tácita à prescrição (art. 191 do Código Civil), a ensejar o pagamento retroativo de parcelas anteriores à mudança de orientação jurídica, quando a Administração Pública, inexistindo lei que, no caso concreto, autorize a mencionada retroação, reconhece administrativamente o direito pleiteado pelo interessado.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.191"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "Tese delimita a renúncia tácita à prescrição \"(art. 191 do Código Civil)\" no reconhecimento administrativo de direito.",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-17",
+   "rank": 17,
+   "precedent": "STF:RG:809",
+   "channel": "PLANALTO_VIDE",
+   "theme": "SUCESSOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1829"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1829": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1829": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STF",
+   "klass": "RG",
+   "number": "809",
+   "device_label": "RG TEMA 809",
+   "device_type": "VALIDATED",
+   "status_text": "Trânsito em Julgado - em 04/12/2018",
+   "judgment": "Trânsito em Julgado - em 04/12/2018",
+   "evidence": "É inconstitucional a distinção de regimes sucessórios entre cônjuges e companheiros prevista no art. 1.790 do CC/2002, devendo ser aplicado ... o regime do art. 1.829 do CC/2002.",
+   "source": {
+    "id": "T809+Q1",
+    "url": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=809",
+    "sha256": "5dd5633ff4584d1d4d9a661f9e7ed1f09623d360e51b18113635f7de83cf0ee0",
+    "tier": "A"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1829"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "Mesma tese do Tema 498, tema próprio (união heteroafetiva); o Planalto anota o RE 878.694 no art. 1.829.",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_SAME_PRECEDENT_NEW_TARGET",
+    "note": "Mesmo precedente do CCJ1-04; ficha STF_RG_809.TXT já no cartão."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-18",
+   "rank": 18,
+   "precedent": "STJ:SUMULA:637",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "COISAS",
+   "score": 8,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1210:PAR.2"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1210:PAR.2": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1210:PAR.2": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "637",
+   "device_label": "Súmula 637 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "CORTE ESPECIAL, 06/11/2019",
+   "evidence": "O ente público detém legitimidade e interesse para intervir, incidentalmente, na ação possessória entre particulares, podendo deduzir qualquer matéria defensiva, inclusive, se for o caso, o domínio.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1210:PAR.2"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "O ente público pode deduzir até o domínio na possessória entre particulares: exceção ao art. 1.210, § 2º.",
+   "yellow": [
+    "Súmula de exceção e em parte processual (intervenção do ente público).",
+    "Súmula 637 (Corte Especial, 06/11/2019); o STJ referencia CC 1.210, § 2º (e CPC/2015, 557).",
+    "Leitor tomar a exceção como regra geral.",
+    "rejeitar como processual",
+    "A — 1.210, § 2º."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-19",
+   "rank": 19,
+   "precedent": "STJ:SUMULA:539",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "CONTRATOS",
+   "score": 7,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 1,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.591"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.591": {
+     "checked": true,
+     "result": "AMENDED_AFTER_JUDGMENT",
+     "notes": [
+      "Redação dada pela Lei nº 14.905, de 2024"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.591": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "539",
+   "device_label": "Súmula 539 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 10/06/2015",
+   "evidence": "É permitida a capitalização de juros com periodicidade inferior à anual em contratos celebrados com instituições integrantes do Sistema Financeiro Nacional a partir de 31/3/2000 (MP n. 1.963-17/2000, reeditada como MP n. 2.170-36/2001), desde que expressamente pactuada.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "REJECT_TEMPORAL_MISMATCH_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "SUPERSEDED",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "A referência ao art. 591 era à \"capitalização anual\"; a Lei 14.905/2024 tirou a capitalização do texto.",
+   "yellow": null,
+   "red_reopen": "Se a capitalização voltar ao CC ou o STJ vincular a súmula à redação nova.",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-20",
+   "rank": 20,
+   "precedent": "STJ:SUMULA:655",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "FAMILIA",
+   "score": 7,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 1,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.1641:INC.II"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.1641:INC.II": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": [
+      "Redação dada pela Lei nº 12.344, de 2010"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.1641:INC.II": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "655",
+   "device_label": "Súmula 655 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 09/11/2022",
+   "evidence": "Aplica-se à união estável contraída por septuagenário o regime da separação obrigatória de bens, comunicandose os adquiridos na constância, quando comprovado o esforço comum.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.1641:INC.II"
+   ],
+   "temporal": "NEEDS_REVIEW",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "União estável de septuagenário: separação obrigatória, comunicando-se os aquestos com esforço comum; precisa ser lida junto com o Tema 1236 (2024).",
+   "yellow": [
+    "Compatibilidade com o Tema 1236, que tornou o art. 1.641, II norma dispositiva.",
+    "Súmula 655 (Segunda Seção, 09/11/2022); o Tema 1236 mantém o regime \"à falta de convenção\" (caso concreto aplicou-o).",
+    "Ficha sem a ressalva do Tema 1236 induziria a ler o regime como cogente.",
+    "rejeitar como superada",
+    "A — 1.641, II, com a ressalva do Tema 1236 na ficha."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_COMPATIBLE_INTERACTION",
+    "note": "Responde ao alerta do dossiê do CC-J1 (item 6): a súmula não foi superada; rege o caso sem pacto. O vínculo do Tema 1236 no CC-J1 não muda."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-21",
+   "rank": 21,
+   "precedent": "STJ:REPETITIVO:381",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "OBRIGACOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.354"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.354": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.354": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "381",
+   "device_label": "REPETITIVO STJ 381",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S1, j. 2010-06-09",
+   "evidence": "A regra de imputação de pagamentos estabelecida no art. 354 do Código Civil não se aplica às hipóteses de compensação tributária.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.354"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Tese de exclusão: a imputação do art. 354 não se aplica à compensação tributária (originou a Súmula 464/STJ).",
+   "yellow": [
+    "Relação de exclusão, em tema tributário.",
+    "Tema 381 (Primeira Seção, 09/06/2010): \"a regra de imputação ... do art. 354 do Código Civil não se aplica\".",
+    "Ao lado do Tema 426 (que aplica o art. 354 ao SFH), o leitor precisa ver os dois sentidos.",
+    "rejeitar como tributário",
+    "A — 354 (a ficha diz que é exclusão)."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-22",
+   "rank": 22,
+   "precedent": "STJ:REPETITIVO:1130",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PARTE_GERAL",
+   "score": 8,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 1,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.76:PAR.UNICO"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.76:PAR.UNICO": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.76:PAR.UNICO": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "1130",
+   "device_label": "REPETITIVO STJ 1130",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Acórdão Publicado - RE Pendente",
+   "judgment": "S1, j. 2024-10-09",
+   "evidence": "A eficácia do título judicial resultante de ação coletiva promovida por sindicato de âmbito estadual está restrita aos integrantes da categoria profissional, filiados ou não, com domicílio necessário (art. 76, parágrafo único, do Código Civil) na base territorial da entidade sindical autora e àqueles em exercício provisório ou em missão em outra localidade.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_PROVISIONAL_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.76:PAR.UNICO"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Título coletivo do sindicato restrito aos que têm domicílio necessário (art. 76, p.u.) na base territorial; RE pendente no STF (RG 1432).",
+   "yellow": [
+    "Situação \"Acórdão Publicado - RE Pendente\": tese ainda pode mudar.",
+    "Tema 1130 (Primeira Seção, 09/10/2024): \"domicílio necessário (art. 76, parágrafo único, do Código Civil)\".",
+    "Provisório: exige gatilho de revalidação no trânsito em julgado.",
+    "aguardar o trânsito em julgado",
+    "A — provisório, com gatilho na RG 1432."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-23",
+   "rank": 23,
+   "precedent": "STJ:REPETITIVO:308",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PRESCRICAO_DECADENCIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.206:PAR.3:INC.III"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.206:PAR.3:INC.III": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.206:PAR.3:INC.III": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "308",
+   "device_label": "REPETITIVO STJ 308",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S2, j. 2010-04-28",
+   "evidence": "A pretensão de cobrança de indenização decorrente de dividendos relativos à subscrição complementar das ações da CRT/Celular CRT prescreve em três anos, nos termos do art. 206, § 3º, inciso III, do Código Civil de 2002, somente começando a correr tal prazo após o reconhecimento do direito à complementação acionária.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.206:PAR.3:INC.III"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "Dividendos da subscrição complementar CRT prescrevem em três anos \"nos termos do art. 206, § 3º, inciso III, do Código Civil de 2002\".",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-24",
+   "rank": 24,
+   "precedent": "STJ:SUMULA:541",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "CONTRATOS",
+   "score": 7,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": 1,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.591"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.591": {
+     "checked": true,
+     "result": "AMENDED_AFTER_JUDGMENT",
+     "notes": [
+      "Redação dada pela Lei nº 14.905, de 2024"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.591": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "541",
+   "device_label": "Súmula 541 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 10/06/2015",
+   "evidence": "A previsão no contrato bancário de taxa de juros anual superior ao duodécuplo da mensal é suficiente para permitir a cobrança da taxa efetiva anual contratada.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "REJECT_TEMPORAL_MISMATCH_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "SUPERSEDED",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Mesmo caso da Súmula 539: pactuação da capitalização contra a antiga redação do art. 591.",
+   "yellow": null,
+   "red_reopen": "Idem à Súmula 539.",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-25",
+   "rank": 25,
+   "precedent": "STJ:REPETITIVO:426",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "OBRIGACOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.354"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.354": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.354": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "426",
+   "device_label": "REPETITIVO STJ 426",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "CE, j. 2011-09-21",
+   "evidence": "Salvo disposição contratual em sentido diferente, aplica-se aos contratos celebrados no âmbito do Sistema Financeiro da Habitação a regra de imputação prevista no art. 354 do Código Civil de 2002, que reproduz o art. 993 do Código Civil de 1916 e foi adotada pela RD BNH 81/1969.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.354"
+   ],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "GREEN",
+   "risk": "BAIXO",
+   "motive": "No SFH aplica-se, salvo cláusula em contrário, \"a regra de imputação prevista no art. 354 do Código Civil de 2002\".",
+   "yellow": null,
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-26",
+   "rank": 26,
+   "precedent": "STJ:REPETITIVO:309",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PRESCRICAO_DECADENCIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.206:PAR.3:INC.III"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.206:PAR.3:INC.III": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.206:PAR.3:INC.III": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "309",
+   "device_label": "REPETITIVO STJ 309",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S2, j. 2010-04-28",
+   "evidence": "A pretensão de cobrança de indenização decorrente de dividendos relativos à subscrição complementar das ações da CRT/Celular CRT prescreve em três anos, nos termos do art. 206, § 3º, inciso III, do Código Civil de 2002, somente começando a correr tal prazo após o reconhecimento do direito à complementação acionária.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "DUPLICATE_RECOMMENDATION",
+   "proposed_targets": [],
+   "temporal": "CURRENT",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Questão e tese idênticas às do Tema 308 (mesmo julgamento, outro recurso): um único vínculo basta.",
+   "yellow": null,
+   "red_reopen": "Se o usuário preferir registrar os dois temas, como no par 498/809 (lá as questões eram diferentes).",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-27",
+   "rank": 27,
+   "precedent": "STJ:SUMULA:465",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "CONTRATOS",
+   "score": 3,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": -4,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.757",
+    "CC2002:ART.765",
+    "CC2002:ART.785"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.757": {
+     "checked": true,
+     "result": "REVOKED",
+     "notes": [
+      "Revogado pela Lei nº 15.040, de 2024"
+     ]
+    },
+    "CC2002:ART.765": {
+     "checked": true,
+     "result": "REVOKED",
+     "notes": [
+      "Revogado pela Lei nº 15.040, de 2024"
+     ]
+    },
+    "CC2002:ART.785": {
+     "checked": true,
+     "result": "REVOKED",
+     "notes": [
+      "Revogado pela Lei nº 15.040, de 2024"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.757": true,
+    "CC2002:ART.765": true,
+    "CC2002:ART.785": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "465",
+   "device_label": "Súmula 465 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 13/10/2010",
+   "evidence": "Ressalvada a hipótese de efetivo agravamento do risco, a seguradora não se exime do dever de indenizar em razão da transferência do veículo sem a sua prévia comunicação.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "REJECT_TEMPORAL_MISMATCH_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "SUPERSEDED",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Arts. 757, 765 e 785 revogados pela Lei 15.040/2024 (contrato de seguro saiu do CC).",
+   "yellow": null,
+   "red_reopen": "Se o STJ reafirmar a súmula sob a Lei 15.040/2024 (o vínculo iria para a lei nova, fora do CC).",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-28",
+   "rank": 28,
+   "precedent": "STJ:REPETITIVO:587",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "OBRIGACOES",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 0,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.368"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.368": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.368": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "587",
+   "device_label": "REPETITIVO STJ 587",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "CE, j. 2018-12-18",
+   "evidence": "a) Os embargos do devedor são ação de conhecimento incidental à execução, razão porque os honorários advocatícios podem ser fixados em cada uma das duas ações, de forma relativamente autônoma, respeitando-se os limites de repercussão recíproca entre elas, desde que a cumulação da verba honorária não exceda o limite máximo previsto no § 3º do art. 20 do CPC/1973. b) Inexistência de reciprocidade das obrigações ou de bilateralidade de créditos: ausência dos pressupostos do instituto da compensação (art. 368 do Código Civil). Impossibilidade de se compensarem os honorários fixados em embargos à execução com aqueles fixados na própria ação de execução.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "PROMOTE_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.368"
+   ],
+   "temporal": "HISTORICAL_BUT_RELEVANT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Honorários de embargos e de execução não se compensam por falta de reciprocidade, pressuposto do art. 368.",
+   "yellow": [
+    "Contexto processual do CPC/73 (o CPC/2015, art. 85, § 14, já veda a compensação de honorários).",
+    "Tema 587 (Corte Especial, 18/12/2018): \"ausência dos pressupostos do instituto da compensação (art. 368 do CC)\".",
+    "Valor prático hoje limitado.",
+    "rejeitar como processual/histórico",
+    "A — 368 (nota de contexto na ficha)."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-29",
+   "rank": 29,
+   "precedent": "STJ:REPETITIVO:610",
+   "channel": "STJ_PRECEDENTES_DADOS_ABERTOS",
+   "theme": "PRESCRICAO_DECADENCIA",
+   "score": 9,
+   "score_parts": {
+    "direct": 3,
+    "target_validity": 2,
+    "precedent": 2,
+    "coverage_gap": 1,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.206:PAR.3:INC.IV",
+    "CC2002:ART.2028"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.206:PAR.3:INC.IV": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    },
+    "CC2002:ART.2028": {
+     "checked": true,
+     "result": "CURRENT",
+     "notes": []
+    }
+   },
+   "in_index": {
+    "CC2002:ART.206:PAR.3:INC.IV": true,
+    "CC2002:ART.2028": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": true
+   },
+   "tribunal": "STJ",
+   "klass": "REPETITIVO",
+   "number": "610",
+   "device_label": "REPETITIVO STJ 610",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "Trânsito em Julgado",
+   "judgment": "S2, j. 2016-08-10",
+   "evidence": "Na vigência dos contratos de plano ou de seguro de assistência à saúde, a pretensão condenatória decorrente da declaração de nulidade de cláusula de reajuste nele prevista prescreve em 20 anos (art. 177 do CC/1916) ou em 3 anos (art. 206, § 3º, IV, do CC/2002), observada a regra de transição do art. 2.028 do CC/2002.",
+   "source": {
+    "id": "STJ_DADOS_ABERTOS_TEMAS",
+    "url": "https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-b345-4402accacdcf/resource/df29da13-7d6b-41ba-ad96-cd1a5bbd191c/download/temas.csv",
+    "sha256": "98f1506ec8f02c4e849e968c9550268a947e32e2e7a10f188385add5cf31fd16",
+    "tier": "A",
+    "page": "https://processo.stj.jus.br/repetitivos/temas_repetitivos/"
+   },
+   "decision": "MULTI_TARGET_RECOMMENDED",
+   "proposed_targets": [
+    "CC2002:ART.206:PAR.3:INC.IV",
+    "CC2002:ART.2028"
+   ],
+   "temporal": "HISTORICAL_BUT_RELEVANT",
+   "confidence": "MEDIUM",
+   "group": "YELLOW",
+   "risk": "MÉDIO",
+   "motive": "Nulidade de reajuste de plano de saúde: 3 anos (art. 206, § 3º, IV) sob o CC/2002, com a transição do art. 2.028.",
+   "yellow": [
+    "Dois alvos, um de transição.",
+    "Tema 610 (Segunda Seção, 10/08/2016) nomeia o art. 206, § 3º, IV e o art. 2.028.",
+    "Alvos já cobertos pela Súmula 547 (CC-J1).",
+    "vincular só no art. 206, § 3º, IV",
+    "A — 206, § 3º, IV e 2.028."
+   ],
+   "red_reopen": null,
+   "CC_J1_INTERACTION": {
+    "kind": "CC_J1_COMPATIBLE_INTERACTION",
+    "note": "Mesma solução de prazo da Súmula 547 (CCJ1-25): coerente."
+   },
+   "HUMAN_JUDGMENT_REQUIRED": true,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  },
+  {
+   "id": "CCJ2-30",
+   "rank": 30,
+   "precedent": "STJ:SUMULA:610",
+   "channel": "STJ_SUMULAS_PDF",
+   "theme": "CONTRATOS",
+   "score": 3,
+   "score_parts": {
+    "direct": 2,
+    "target_validity": -4,
+    "precedent": 2,
+    "coverage_gap": 2,
+    "multi_dispositivo": 1,
+    "in_index": 0
+   },
+   "discovered_targets": [
+    "CC2002:ART.797",
+    "CC2002:ART.798"
+   ],
+   "temporal_auto": {
+    "CC2002:ART.797": {
+     "checked": true,
+     "result": "REVOKED",
+     "notes": [
+      "Revogado pela Lei nº 15.040, de 2024"
+     ]
+    },
+    "CC2002:ART.798": {
+     "checked": true,
+     "result": "REVOKED",
+     "notes": [
+      "Revogado pela Lei nº 15.040, de 2024"
+     ]
+    }
+   },
+   "in_index": {
+    "CC2002:ART.797": true,
+    "CC2002:ART.798": true
+   },
+   "steps": {
+    "AUTO_DISCOVERED": true,
+    "AUTO_TARGET_NORMALIZED": true,
+    "AUTO_NAMESPACE_CHECKED": true,
+    "AUTO_TEMPORAL_CHECKED": true,
+    "AUTO_DUPLICATE_CHECKED": true,
+    "AUTO_SOURCE_VERIFIED": true,
+    "AUTO_FICHA_DRAFTED": false
+   },
+   "tribunal": "STJ",
+   "klass": "SUMULA_STJ",
+   "number": "610",
+   "device_label": "Súmula 610 STJ",
+   "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED",
+   "status_text": "VIGENTE",
+   "judgment": "SEGUNDA SEÇÃO, 25/04/2018",
+   "evidence": "O suicídio não é coberto nos dois primeiros anos de vigência do contrato de seguro de vida, ressalvado o direito do beneficiário à devolução do montante da reserva técnica formada.",
+   "source": {
+    "id": "STJ_PDF",
+    "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "tier": "A"
+   },
+   "decision": "REJECT_TEMPORAL_MISMATCH_RECOMMENDED",
+   "proposed_targets": [],
+   "temporal": "SUPERSEDED",
+   "confidence": "HIGH",
+   "group": "RED",
+   "risk": "—",
+   "motive": "Arts. 797 e 798 revogados pela Lei 15.040/2024.",
+   "yellow": null,
+   "red_reopen": "Idem à Súmula 465.",
+   "CC_J1_INTERACTION": null,
+   "HUMAN_JUDGMENT_REQUIRED": false,
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false
+  }
+ ]
+}
