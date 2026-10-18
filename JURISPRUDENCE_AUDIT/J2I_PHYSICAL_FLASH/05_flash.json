@@ -1,0 +1,20 @@
+{
+ "command": "esptool --chip esp32s3 -p COM3 -b 460800 --after no-reset write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x10000 C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\j2i_flash_candidate\\generic_app.bin",
+ "FLASH_ADDRESS": "0x10000",
+ "FLASH_SCOPE": "APP_ONLY",
+ "image": "DEVICE_INTEGRATION\\backups\\j2i_flash_candidate\\generic_app.bin",
+ "image_sha256": "1371e69a0ef3b16773c36e240b166ee99f73d48c2629d11ebf09191701de2b6c",
+ "bytes": 1102176,
+ "erase_flash_used": false,
+ "esptool_hash_verified": true,
+ "output_tail": [
+  "Writing at 0x00114aab ============================>   96.3% 560.00kB/581.73kB [13s] ",
+  "Writing at 0x0011ac27 =============================>  99.0% 576.00kB/581.73kB [13s] ",
+  "Writing at 0x0011d160 ============================== 100.0% 581.73kB/581.73kB [14s] ",
+  "Wrote 1102176 bytes (595696 compressed) at 0x00010000 in 14.2 seconds (622.5 kbit/s).",
+  "Verifying written data...",
+  "Hash of data verified.",
+  "",
+  "Staying in bootloader."
+ ]
+}

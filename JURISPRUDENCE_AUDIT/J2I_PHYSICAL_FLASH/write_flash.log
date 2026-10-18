@@ -1,0 +1,62 @@
+C:\Program Files\Python312\python.exe -m esptool --chip esp32s3 -p COM3 -b 460800 --after no-reset write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x10000 C:\GitHub\LEX-MACHINA\DEVICE_INTEGRATION\backups\j2i_flash_candidate\generic_app.bin
+
+esptool v5.4.0
+Serial port COM3:
+Connecting...
+Connected to ESP32-S3 on COM3:
+Chip type:          ESP32-S3 (QFN56) (revision v0.2)
+Features:           Wi-Fi, BT 5 (LE), Dual Core + LP Core, 240MHz, Embedded PSRAM 8MB (AP_3v3)
+Crystal frequency:  40MHz
+MAC:                e0:72:a1:f4:fd:28
+
+Uploading stub flasher...
+Running stub flasher...
+Stub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+Flash will be erased from 0x00010000 to 0x0011dfff...
+Compressed 1102176 bytes to 595696...
+Writing at 0x0001fa2f >                                2.8% 16.00kB/581.73kB [0s] 
+Writing at 0x0002d5a6 =>                               5.5% 32.00kB/581.73kB [0s] 
+Writing at 0x0003ce5e ==                               8.3% 48.00kB/581.73kB [1s] 
+Writing at 0x0004da50 ===                             11.0% 64.00kB/581.73kB [1s] 
+Writing at 0x0005e2f1 ====                            13.8% 80.00kB/581.73kB [2s] 
+Writing at 0x000670c5 ====>                           16.5% 96.00kB/581.73kB [2s] 
+Writing at 0x00071484 =====>                          19.3% 112.00kB/581.73kB [3s] 
+Writing at 0x000771e6 ======>                         22.0% 128.00kB/581.73kB [3s] 
+Writing at 0x0007cfa6 =======                         24.8% 144.00kB/581.73kB [3s] 
+Writing at 0x00082cbe ========                        27.5% 160.00kB/581.73kB [4s] 
+Writing at 0x000885c8 =========                       30.3% 176.00kB/581.73kB [4s] 
+Writing at 0x0008e1b2 =========>                      33.0% 192.00kB/581.73kB [5s] 
+Writing at 0x00093cab ==========>                     35.8% 208.00kB/581.73kB [5s] 
+Writing at 0x00099a13 ===========>                    38.5% 224.00kB/581.73kB [5s] 
+Writing at 0x0009fba4 ============                    41.3% 240.00kB/581.73kB [6s] 
+Writing at 0x000a5548 =============                   44.0% 256.00kB/581.73kB [6s] 
+Writing at 0x000aae8a ==============                  46.8% 272.00kB/581.73kB [6s] 
+Writing at 0x000b0839 ==============>                 49.5% 288.00kB/581.73kB [7s] 
+Writing at 0x000b6453 ===============>                52.3% 304.00kB/581.73kB [7s] 
+Writing at 0x000bc41f ================>               55.0% 320.00kB/581.73kB [7s] 
+Writing at 0x000c1d69 =================               57.8% 336.00kB/581.73kB [8s] 
+Writing at 0x000c74a0 ==================              60.5% 352.00kB/581.73kB [8s] 
+Writing at 0x000cc621 ==================>             63.3% 368.00kB/581.73kB [9s] 
+Writing at 0x000d1ef8 ===================>            66.0% 384.00kB/581.73kB [9s] 
+Writing at 0x000d7668 ====================>           68.8% 400.00kB/581.73kB [9s] 
+Writing at 0x000dd206 =====================           71.5% 416.00kB/581.73kB [10s] 
+Writing at 0x000e3103 ======================          74.3% 432.00kB/581.73kB [10s] 
+Writing at 0x000e86d2 =======================         77.0% 448.00kB/581.73kB [10s] 
+Writing at 0x000ee039 =======================>        79.8% 464.00kB/581.73kB [11s] 
+Writing at 0x000f7034 ========================>       82.5% 480.00kB/581.73kB [11s] 
+Writing at 0x000fd162 =========================>      85.3% 496.00kB/581.73kB [12s] 
+Writing at 0x00103b29 ==========================      88.0% 512.00kB/581.73kB [12s] 
+Writing at 0x00109987 ===========================     90.8% 528.00kB/581.73kB [12s] 
+Writing at 0x0010f0f6 ============================    93.5% 544.00kB/581.73kB [13s] 
+Writing at 0x00114aab ============================>   96.3% 560.00kB/581.73kB [13s] 
+Writing at 0x0011ac27 =============================>  99.0% 576.00kB/581.73kB [13s] 
+Writing at 0x0011d160 ============================== 100.0% 581.73kB/581.73kB [14s] 
+Wrote 1102176 bytes (595696 compressed) at 0x00010000 in 14.2 seconds (622.5 kbit/s).
+Verifying written data...
+Hash of data verified.
+
+Staying in bootloader.

@@ -1,0 +1,61 @@
+{
+ "partition_table": {
+  "nvs": {
+   "type": 1,
+   "subtype": 2,
+   "offset": 36864,
+   "size": 20480
+  },
+  "otadata": {
+   "type": 1,
+   "subtype": 0,
+   "offset": 57344,
+   "size": 8192
+  },
+  "app0": {
+   "type": 0,
+   "subtype": 16,
+   "offset": 65536,
+   "size": 1310720
+  },
+  "app1": {
+   "type": 0,
+   "subtype": 17,
+   "offset": 1376256,
+   "size": 1310720
+  },
+  "spiffs": {
+   "type": 1,
+   "subtype": 130,
+   "offset": 2686976,
+   "size": 1441792
+  },
+  "coredump": {
+   "type": 1,
+   "subtype": 3,
+   "offset": 4128768,
+   "size": 65536
+  }
+ },
+ "partitions_sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+ "partitions_match_r2": true,
+ "otadata_sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+ "otadata_match_r2": true,
+ "nvs_sha256": "2ad43c13d08634faec16fa4c8f36f4bcfbde61c562cf9159d019e08cf73036ea",
+ "app0_partition_size": 1310720,
+ "app0_full_sha256": "dde8fa2990353409cae44f60ffbda0d6c13d4ba7af352779d081068b2d3a673d",
+ "app0_double_read_identical": true,
+ "approved_frozen_sha256": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c",
+ "approved_frozen_is_6e329c91": true,
+ "r2_recorded_app_sha256": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c",
+ "CURRENT_APP_PRE_HASH": "6e329c91d22d84590d0c9ff1dc3945519513a0bfe7cbeeb6509b280372cfd31c",
+ "app0_tail_after_app_sha256": "0b5ba40ccfd4e08d5b52658dcb757e710e9b608dbe8040dc7da85d64c0ea1f28",
+ "backup": {
+  "dir": "C:\\GitHub\\LEX-MACHINA\\DEVICE_INTEGRATION\\backups\\j2i_physical_flash",
+  "app0": "app0_pre_flash.bin",
+  "partitions": "partitions_pre.bin",
+  "otadata": "otadata_pre.bin",
+  "nvs": "nvs_pre.bin"
+ },
+ "CURRENT_APP_MATCHES_APPROVED": "PASS"
+}
