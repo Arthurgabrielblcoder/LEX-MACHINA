@@ -156,3 +156,18 @@ STJ_AUTOMATION = PARTIAL · STJ_SUMULA403_OFFICIAL_SOURCE = RESOLVED · CAPTCHA_
   - os repetitivos do STJ continuam parciais.
 - **Por que não B:** o Batch11 da CF rende pouco (59 itens sem identificador).
 - **Por que não C:** TST e TSE podem esperar a próxima norma que dependa deles, porque o CC não depende.
+
+## 8. Atualização (CC-J1 + empacotador genérico, 2026-10-18)
+
+| Item | Estado |
+|---|---|
+| Súmulas 203/403 STJ | Fonte oficial resolvida e **ratificadas na CF**: 203 → CF 105, III; 403 → CF 5º, V e X. Os vínculos da 403 no CC (186, 927) foram para o CC-J1. Registro: `JURISPRUDENCE_AUDIT/J2_STJ_RESOLUTION_RECORD.json` |
+| Empacotador genérico | Camada normalizada `06_NORMALIZADO` com **0 chaves duplicadas**. A fixture J2I reproduz 315/315 relações e 198/198 targets, com rótulos, fichas e BACK idênticos (`GENERIC_PACKAGER.md`) |
+| Firmware multinorma | Prefere a camada normalizada; programa +5.332 B, RAM +40 B, app0 livre 203.216 B. **Não gravado** |
+| CC-J1 | 30 candidatos (10 Planalto/STF + 20 súmulas STJ): PROMOTE 17, REALLOCATE 7, REJECT 6. São 25 relações em 22 targets; 15 exigem revisão humana; 2 NEEDS_REVIEW (`CC_J1_REVIEW.md`) |
+| Simulação CF + CC | `CC_E2E_SIMULATION = PASS`, `CF_AFTER_CC_REGRESSION = PASS` (`CC_J1_SIMULATION_REPORT.md`) |
+
+**O que ainda falta para publicar o CC:**
+1. Ratificação humana do CC-J1.
+2. Gravação do firmware multinorma, com missão e teste físico próprios.
+3. Deploy da camada normalizada no cartão, com missão própria.
