@@ -19,6 +19,22 @@ KLASS_TO_TIPO = {'RG': 'repercussao_geral', 'SV': 'sumula_vinculante', 'ADI': 'a
                  'MS': 'ms', 'RMS': 'rms', 'AP': 'ap', 'AI': 'ai', 'INQ': 'inq', 'RCL': 'rcl', 'MI': 'mi', 'PET': 'pet', 'ADO': 'ado', 'RE': 're',
                  'ARE': 'are', 'EXT': 'ext', 'SUMULA': 'sumula', 'SUMULA_TSE': 'sumula', 'SUMULA_STJ': 'sumula'}
 LIST_WIDTH = 34          # imprimirUTF8(…, 34) in the relation list; the row prefix is "<pos> "
+# Device support of each review-module klass — SINGLE source of truth for review modules (j2_review_common, Batch11+).
+# PHYSICALLY_VALIDATED = shown, opened and BACK-tested on the device: J2I_PHYSICAL_VALIDATION 32/32 (2026-10-18) + J2C/J2G legacy types.
+PHYSICALLY_VALIDATED = frozenset({'RG', 'SV', 'ADI', 'HC', 'MS', 'AP', 'AI', 'INQ', 'RCL', 'ADPF', 'SUMULA', 'SUMULA_TSE'})
+DEVICE_STATUS = ('VALIDATED', 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED', 'NEW_JURIS_TYPE_REQUIRES_DESIGN')
+
+
+def device_status(klass):
+    """VALIDATED (physically tested) | FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED (the generic firmware labels it: classes table,
+    legacy labels, súmula of any listed tribunal) | NEW_JURIS_TYPE_REQUIRES_DESIGN (the firmware would not accept/label it)."""
+    k = klass.upper()
+    if k in PHYSICALLY_VALIDATED:
+        return 'VALIDATED'
+    tipo = KLASS_TO_TIPO.get(k)
+    if tipo and (tipo in LEGACY or tipo in SUMULA or any(t == tipo for t, _ in CLASSES)):
+        return 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED'
+    return 'NEW_JURIS_TYPE_REQUIRES_DESIGN'
 
 
 def label(tipo, tribunal, numero):

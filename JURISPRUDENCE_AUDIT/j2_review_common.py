@@ -2,17 +2,31 @@
 recommendation) and calls make_decisions(doc, REVIEW, SOURCES). Every decision is a PROPOSAL (AWAITING_USER_RATIFICATION); this module
 never marks anything human-approved. The Fase D detectors run over the stored official excerpt and are recorded next to the decision.
 """
+import re
+
 import j2_auditors as AUD
+import juris_types as JT
 
 DECISIONS = ('PROMOTE_RECOMMENDED', 'PROMOTE_PROVISIONAL_RECOMMENDED', 'REALLOCATE_RECOMMENDED', 'REJECT_FALSE_POSITIVE_RECOMMENDED',
              'REJECT_TEMPORAL_MISMATCH_RECOMMENDED', 'REJECT_NOT_MATERIAL_RECOMMENDED', 'ALREADY_COVERED', 'DUPLICATE_RECOMMENDATION',
              'UNRESOLVED_EXTERNAL', 'UNRESOLVED_IDENTIFICATION')
 TEMPORAL = ('CURRENT', 'HISTORICAL', 'MIXED', 'NOT_APPLICABLE')
-DEVICE_TYPES = {'RG': 'VALIDATED', 'SV': 'VALIDATED', 'ADI': 'VALIDATED', 'HC': 'FIRMWARE_PROTOTYPE_ONLY',
+# Frozen table used by Batches 03–10 (their decision files are pinned by hash). Batch11+ asks juris_types.device_status (single source).
+LEGACY_DEVICE_TYPES = {'RG': 'VALIDATED', 'SV': 'VALIDATED', 'ADI': 'VALIDATED', 'HC': 'FIRMWARE_PROTOTYPE_ONLY',
                 'SUMULA': 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED', 'ADC': 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED',
                 'ADPF': 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED'}
 FIELDS = ('precedents', 'namespace', 'namespace_evidence', 'temporal_version', 'temporal_note', 'target_check', 'recommended_targets',
           'decision', 'confidence', 'status_processual', 'sources', 'evidence_excerpt', 'reason')
+LEGACY_DEVICE_TABLE_LAST_BATCH = 10
+
+
+def device_status(doc, klass):
+    n = int(re.sub(r'\D', '', doc['batch']))
+    if n <= LEGACY_DEVICE_TABLE_LAST_BATCH:
+        return LEGACY_DEVICE_TYPES.get(klass, 'NEW_JURIS_TYPE_REQUIRES_DESIGN')
+    return JT.device_status(klass)
+
+
 PROMOTING = ('PROMOTE_RECOMMENDED', 'PROMOTE_PROVISIONAL_RECOMMENDED', 'REALLOCATE_RECOMMENDED')
 
 
@@ -40,7 +54,7 @@ def make_decisions(doc, REVIEW, SOURCES):
         if r['decision'] == 'PROMOTE_PROVISIONAL_RECOMMENDED' and not r.get('revalidation'):
             raise SystemExit(f'PROVISIONAL_WITHOUT_REVALIDATION {rid}')
         types = sorted({p['klass'] for p in r['precedents']})
-        device = {t: DEVICE_TYPES.get(t, 'NEW_JURIS_TYPE_REQUIRES_DESIGN') for t in types}
+        device = {t: device_status(doc, t) for t in types}
         out.append(dict(recommendation_id=rid, rank=q[rid]['rank'], recommended_by_backlog=q[rid]['target_id'],
                         original_recommendation=q[rid]['desired_reference'], suggested_identifiers=q[rid]['suggested_identifiers'], **r,
                         NAMESPACE_CHECK='PASS' if r['namespace'] in ('CF88', 'ADCT') else 'FAIL', TEMPORAL_CHECK='DONE',

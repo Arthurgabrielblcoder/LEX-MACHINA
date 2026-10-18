@@ -1270,5 +1270,1254 @@
    "decision_status": "PORTABILITY_PILOT_ONLY",
    "human_approved": false
   }
- ]
+ ],
+ "sprint": {
+  "before": {
+   "steps": "133/140",
+   "candidates_fully_automatic": 9,
+   "human_judgment": 11,
+   "distinct_pairs": 18
+  },
+  "after_same_20": {
+   "steps": "133/140",
+   "candidates_fully_automatic": 9,
+   "human_judgment": 11,
+   "distinct_pairs": 18,
+   "note": "Mesmos 20 candidatos e mesmas regras: os bloqueadores atacados (firmware, gramática, STJ) não alteram essas etapas."
+  },
+  "reachable_distinct_pairs_with_stj": 77,
+  "tools_added": [
+   {
+    "tool": "JURISPRUDENCE_ENGINE/discovery_stj_sumulas.py (PDF oficial de súmulas do STJ)",
+    "classification": "NEW_CODE",
+    "use": "NEW"
+   },
+   {
+    "tool": "LEGAL_TARGET_ID/target_id.py (alínea sem inciso fora da CF)",
+    "classification": "GENERIC_ALREADY",
+    "use": "EXTENDED_BACKWARD_COMPATIBLE"
+   },
+   {
+    "tool": "JURISPRUDENCE_AUDIT/juris_types.device_status (fonte única de tipos)",
+    "classification": "GENERIC_ALREADY",
+    "use": "EXTENDED_BACKWARD_COMPATIBLE"
+   },
+   {
+    "tool": "JURISPRUDENCE_ENGINE/firmware_multinorm (protótipo multinorma + simulador)",
+    "classification": "NEW_CODE",
+    "use": "NEW"
+   }
+  ]
+ },
+ "stj_channel": {
+  "source": {
+   "url": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+   "index_page": "https://processo.stj.jus.br/SCON/sumstj/",
+   "tier": "A",
+   "org": "STJ",
+   "title": "Súmulas do STJ — inteiro teor (PDF oficial)",
+   "pdf_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+   "accessed_on": "2026-10-18",
+   "method": "download direto do arquivo oficial publicado na página \"Súmulas do STJ\"; texto via pdftotext; nenhum desafio anti-robô contornado"
+  },
+  "PAIRS": 59,
+  "DISTINCT_SUMULAS": 33,
+  "DISTINCT_TARGETS": 46,
+  "STEP_AUTOMATION": {
+   "AUTO_DISCOVERED": 59,
+   "AUTO_TARGET_NORMALIZATION": 58,
+   "AUTO_NAMESPACE_CHECK": 59,
+   "AUTO_TEMPORAL_CHECK": 59,
+   "AUTO_STATUS_CHECK": 59,
+   "AUTO_DUPLICATE_CHECK": 59,
+   "OFFICIAL_SOURCE_FOUND": 59
+  },
+  "AUTOMATED_STEPS": "412/413",
+  "TEMPORAL_ALERTS": 14,
+  "TARGETS_ON_PILOT_TARGETS": 7,
+  "HUMAN_PERTINENCE_REVIEW": "REQUIRED_FOR_ALL (não avaliado nesta missão: o CC não é expandido além do piloto)",
+  "SUMULAS_CITING_ONLY_CC1916": 34,
+  "pairs": [
+   {
+    "target": "CC2002:ART.1420",
+    "precedent": "STJ:SUMULA:308",
+    "status": "VIGENTE",
+    "data_decisao": "30/03/2005",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 308 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.877",
+    "precedent": "STJ:SUMULA:322",
+    "status": "VIGENTE",
+    "data_decisao": "23/11/2005",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 322 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1647:INC.III",
+    "precedent": "STJ:SUMULA:332",
+    "status": "VIGENTE",
+    "data_decisao": "05/03/2008",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 332 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.205",
+    "precedent": "STJ:SUMULA:371",
+    "status": "VIGENTE",
+    "data_decisao": "11/03/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 371 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.2028",
+    "precedent": "STJ:SUMULA:371",
+    "status": "VIGENTE",
+    "data_decisao": "11/03/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 371 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.186",
+    "precedent": "STJ:SUMULA:403",
+    "status": "VIGENTE",
+    "data_decisao": "28/10/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 403 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.927",
+    "precedent": "STJ:SUMULA:403",
+    "status": "VIGENTE",
+    "data_decisao": "28/10/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 403 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.206:PAR.3:INC.IX",
+    "precedent": "STJ:SUMULA:405",
+    "status": "VIGENTE",
+    "data_decisao": "28/10/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 405 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.2028",
+    "precedent": "STJ:SUMULA:405",
+    "status": "VIGENTE",
+    "data_decisao": "28/10/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 405 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.205",
+    "precedent": "STJ:SUMULA:412",
+    "status": "VIGENTE",
+    "data_decisao": "25/11/2009",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 412 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.405",
+    "precedent": "STJ:SUMULA:426",
+    "status": "VIGENTE",
+    "data_decisao": "10/03/2010",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 426 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.757",
+    "precedent": "STJ:SUMULA:426",
+    "status": "VIGENTE",
+    "data_decisao": "10/03/2010",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 426 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1142",
+    "precedent": "STJ:SUMULA:451",
+    "status": "VIGENTE",
+    "data_decisao": "02/06/2010",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 451 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.757",
+    "precedent": "STJ:SUMULA:465",
+    "status": "VIGENTE",
+    "data_decisao": "13/10/2010",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 465 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.765",
+    "precedent": "STJ:SUMULA:465",
+    "status": "VIGENTE",
+    "data_decisao": "13/10/2010",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 465 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.785",
+    "precedent": "STJ:SUMULA:465",
+    "status": "VIGENTE",
+    "data_decisao": "13/10/2010",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 465 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.186",
+    "precedent": "STJ:SUMULA:476",
+    "status": "VIGENTE",
+    "data_decisao": "13/06/2012",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 476 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.662",
+    "precedent": "STJ:SUMULA:476",
+    "status": "VIGENTE",
+    "data_decisao": "13/06/2012",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 476 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.917",
+    "precedent": "STJ:SUMULA:476",
+    "status": "VIGENTE",
+    "data_decisao": "13/06/2012",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 476 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.99",
+    "precedent": "STJ:SUMULA:496",
+    "status": "VIGENTE",
+    "data_decisao": "08/08/2012",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 496 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1231",
+    "precedent": "STJ:SUMULA:496",
+    "status": "VIGENTE",
+    "data_decisao": "08/08/2012",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 496 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.966",
+    "precedent": "STJ:SUMULA:499",
+    "status": "VIGENTE",
+    "data_decisao": "13/03/2013",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 499 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.206:PAR.5:INC.I",
+    "precedent": "STJ:SUMULA:503",
+    "status": "VIGENTE",
+    "data_decisao": "11/12/2013",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 503 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.206:PAR.5:INC.I",
+    "precedent": "STJ:SUMULA:504",
+    "status": "VIGENTE",
+    "data_decisao": "11/12/2013",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 504 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.787",
+    "precedent": "STJ:SUMULA:529",
+    "status": "VIGENTE",
+    "data_decisao": "13/05/2015",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 529 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.112",
+    "precedent": "STJ:SUMULA:530",
+    "status": "VIGENTE",
+    "data_decisao": "13/05/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 530 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.122",
+    "precedent": "STJ:SUMULA:530",
+    "status": "VIGENTE",
+    "data_decisao": "13/05/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 530 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.170",
+    "precedent": "STJ:SUMULA:530",
+    "status": "VIGENTE",
+    "data_decisao": "13/05/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 530 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.406",
+    "precedent": "STJ:SUMULA:530",
+    "status": "VIGENTE",
+    "data_decisao": "13/05/2015",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 530 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.591",
+    "precedent": "STJ:SUMULA:530",
+    "status": "VIGENTE",
+    "data_decisao": "13/05/2015",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 530 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.591",
+    "precedent": "STJ:SUMULA:539",
+    "status": "VIGENTE",
+    "data_decisao": "10/06/2015",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 539 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.591",
+    "precedent": "STJ:SUMULA:541",
+    "status": "VIGENTE",
+    "data_decisao": "10/06/2015",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 541 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.122",
+    "precedent": "STJ:SUMULA:543",
+    "status": "VIGENTE",
+    "data_decisao": "26/08/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 543 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.206:PAR.3:INC.IV",
+    "precedent": "STJ:SUMULA:547",
+    "status": "VIGENTE",
+    "data_decisao": "14/10/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 547 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.206:PAR.5:INC.I",
+    "precedent": "STJ:SUMULA:547",
+    "status": "VIGENTE",
+    "data_decisao": "14/10/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 547 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.2028",
+    "precedent": "STJ:SUMULA:547",
+    "status": "VIGENTE",
+    "data_decisao": "14/10/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 547 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.187",
+    "precedent": "STJ:SUMULA:550",
+    "status": "VIGENTE",
+    "data_decisao": "14/10/2015",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 550 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1226",
+    "precedent": "STJ:SUMULA:585",
+    "status": "VIGENTE",
+    "data_decisao": "14/12/2016",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 585 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1267",
+    "precedent": "STJ:SUMULA:585",
+    "status": "VIGENTE",
+    "data_decisao": "14/12/2016",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 585 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.186",
+    "precedent": "STJ:SUMULA:595",
+    "status": "VIGENTE",
+    "data_decisao": "25/10/2017",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 595 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.927",
+    "precedent": "STJ:SUMULA:595",
+    "status": "VIGENTE",
+    "data_decisao": "25/10/2017",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 595 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1696",
+    "precedent": "STJ:SUMULA:596",
+    "status": "VIGENTE",
+    "data_decisao": "08/11/2017",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 596 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1698",
+    "precedent": "STJ:SUMULA:596",
+    "status": "VIGENTE",
+    "data_decisao": "08/11/2017",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 596 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.422",
+    "precedent": "STJ:SUMULA:609",
+    "status": "VIGENTE",
+    "data_decisao": "11/04/2018",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 609 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.765",
+    "precedent": "STJ:SUMULA:609",
+    "status": "VIGENTE",
+    "data_decisao": "11/04/2018",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 609 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.766",
+    "precedent": "STJ:SUMULA:609",
+    "status": "VIGENTE",
+    "data_decisao": "11/04/2018",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 609 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.797",
+    "precedent": "STJ:SUMULA:610",
+    "status": "VIGENTE",
+    "data_decisao": "25/04/2018",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 610 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.798",
+    "precedent": "STJ:SUMULA:610",
+    "status": "VIGENTE",
+    "data_decisao": "25/04/2018",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 610 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1208",
+    "precedent": "STJ:SUMULA:619",
+    "status": "VIGENTE",
+    "data_decisao": "24/10/2018",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 619 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1255",
+    "precedent": "STJ:SUMULA:619",
+    "status": "VIGENTE",
+    "data_decisao": "24/10/2018",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 619 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.768",
+    "precedent": "STJ:SUMULA:620",
+    "status": "VIGENTE",
+    "data_decisao": "12/12/2018",
+    "temporal": "TEMPORAL_ALERT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 620 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1210:PAR.2",
+    "precedent": "STJ:SUMULA:637",
+    "status": "VIGENTE",
+    "data_decisao": "06/11/2019",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 637 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.12",
+    "precedent": "STJ:SUMULA:642",
+    "status": "VIGENTE",
+    "data_decisao": "02/12/2020",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 642 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.943:INC.I",
+    "precedent": "STJ:SUMULA:642",
+    "status": "VIGENTE",
+    "data_decisao": "02/12/2020",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": false,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 642 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.948",
+    "precedent": "STJ:SUMULA:642",
+    "status": "VIGENTE",
+    "data_decisao": "02/12/2020",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 642 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1829",
+    "precedent": "STJ:SUMULA:642",
+    "status": "VIGENTE",
+    "data_decisao": "02/12/2020",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 642 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1839",
+    "precedent": "STJ:SUMULA:642",
+    "status": "VIGENTE",
+    "data_decisao": "02/12/2020",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 642 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.1641:INC.II",
+    "precedent": "STJ:SUMULA:655",
+    "status": "VIGENTE",
+    "data_decisao": "09/11/2022",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": true,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 655 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   },
+   {
+    "target": "CC2002:ART.835",
+    "precedent": "STJ:SUMULA:656",
+    "status": "VIGENTE",
+    "data_decisao": "09/11/2022",
+    "temporal": "CURRENT",
+    "steps": {
+     "AUTO_DISCOVERED": true,
+     "AUTO_TARGET_NORMALIZATION": true,
+     "AUTO_NAMESPACE_CHECK": true,
+     "AUTO_TEMPORAL_CHECK": true,
+     "AUTO_STATUS_CHECK": true,
+     "AUTO_DUPLICATE_CHECK": true,
+     "OFFICIAL_SOURCE_FOUND": true
+    },
+    "overlaps_pilot_target": false,
+    "duplicate_of_pilot": false,
+    "device_label": "Súmula 656 STJ",
+    "device_type": "FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED"
+   }
+  ]
+ }
 }

@@ -143,6 +143,49 @@ TOOLS = [  # (tool, classification for other norms, used in the pilot as)
 ]
 
 
+STJ_INDEX = HERE / 'stj' / 'STJ_SUMULAS_INDEX.json'
+BEFORE_SPRINT = dict(steps='133/140', candidates_fully_automatic=9, human_judgment=11, distinct_pairs=18)   # PORTABILITY_PILOT_CC.md (5e7e4f6)
+SPRINT_TOOLS = [  # what the scale sprint added, kept apart from the original pilot tool list (no rewriting of the before numbers)
+    ('JURISPRUDENCE_ENGINE/discovery_stj_sumulas.py (PDF oficial de súmulas do STJ)', 'NEW_CODE', 'NEW'),
+    ('LEGAL_TARGET_ID/target_id.py (alínea sem inciso fora da CF)', 'GENERIC_ALREADY', 'EXTENDED_BACKWARD_COMPATIBLE'),
+    ('JURISPRUDENCE_AUDIT/juris_types.device_status (fonte única de tipos)', 'GENERIC_ALREADY', 'EXTENDED_BACKWARD_COMPATIBLE'),
+    ('JURISPRUDENCE_ENGINE/firmware_multinorm (protótipo multinorma + simulador)', 'NEW_CODE', 'NEW'),
+]
+
+
+def stj_channel(idx, amend, rows):
+    """STJ discovery channel for CC2002 (official súmulas PDF), measured separately from the 20 original candidates."""
+    d = load(STJ_INDEX)
+    existing = {(r['discovered_target'], r['precedent']) for r in rows}
+    existing_targets = {t for r in rows for t in [r['discovered_target']] + r['proposed_targets']}
+    pairs, cc16_only = [], 0
+    for e in d['entries']:
+        if e['status'] in ('CANCELADA', 'REVOGADA'):
+            continue
+        siglas = {r['sigla'] for r in e['references']}
+        if 'CC-16' in siglas and not any(r['catalog_id'] == 'CC2002' for r in e['references']):
+            cc16_only += 1
+        for r in e['references']:
+            if r['catalog_id'] != 'CC2002':
+                continue
+            year = int(e['data_decisao'][-4:]) if re.search(r'\d{4}$', e['data_decisao']) else None
+            for t in r['targets']:
+                tmp = NP.temporal_check(PROFILE, amend.get(t, []), year) if year else dict(result='UNKNOWN')
+                steps = dict(AUTO_DISCOVERED=True, AUTO_TARGET_NORMALIZATION=t in idx, AUTO_NAMESPACE_CHECK=True,
+                             AUTO_TEMPORAL_CHECK=tmp['result'] in ('CURRENT', 'TEMPORAL_ALERT'), AUTO_STATUS_CHECK=bool(e['status']),
+                             AUTO_DUPLICATE_CHECK=True, OFFICIAL_SOURCE_FOUND=d['source']['tier'] == 'A')
+                pairs.append(dict(target=t, precedent=f"STJ:SUMULA:{e['number']}", status=e['status'], data_decisao=e['data_decisao'],
+                                  temporal=tmp['result'], steps=steps, overlaps_pilot_target=t in existing_targets,
+                                  duplicate_of_pilot=(t, f"STJ:SUMULA:{e['number']}") in existing,
+                                  device_label=JT.label('sumula', 'STJ', str(e['number'])), device_type=JT.device_status('SUMULA_STJ')))
+    auto = {s: sum(1 for p in pairs if p['steps'][s]) for s in STEPS}
+    return dict(source=d['source'], PAIRS=len(pairs), DISTINCT_SUMULAS=len({p['precedent'] for p in pairs}),
+                DISTINCT_TARGETS=len({p['target'] for p in pairs}), STEP_AUTOMATION=auto, AUTOMATED_STEPS=f'{sum(auto.values())}/{len(pairs) * len(STEPS)}',
+                TEMPORAL_ALERTS=sum(1 for p in pairs if p['temporal'] == 'TEMPORAL_ALERT'), TARGETS_ON_PILOT_TARGETS=sum(p['overlaps_pilot_target'] for p in pairs),
+                HUMAN_PERTINENCE_REVIEW='REQUIRED_FOR_ALL (não avaliado nesta missão: o CC não é expandido além do piloto)',
+                SUMULAS_CITING_ONLY_CC1916=cc16_only, pairs=pairs)
+
+
 def build():
     rows = run()
     m = metrics(rows)
@@ -157,6 +200,20 @@ def build():
                corpus=dict(planalto_sha256=load(ANNOT)['source_sha256'], cc2002_target_index_sha256=load(CC_INDEX)['target_index_sha256'],
                            cc2002_targets=load(CC_INDEX)['total_targets'], cc2002_articles=load(CC_INDEX)['counts_by_kind']['ARTIGO']),
                sources=EV.SOURCES, metrics=m, tools=[dict(tool=t, classification=c, pilot_use=u) for t, c, u in TOOLS], candidates=rows)
+    if STJ_INDEX.is_file():
+        idx = {x['target_id'] for x in load(CC_INDEX)['targets']}
+        stj = stj_channel(idx, load(ANNOT)['amendments'], rows)
+        reach = len({(r['discovered_target'], r['precedent']) for r in rows if not r['duplicate_of']}) + \
+            len({(p['target'], p['precedent']) for p in stj['pairs'] if not p['duplicate_of_pilot']})
+        doc['sprint'] = dict(
+            before=BEFORE_SPRINT,
+            after_same_20=dict(steps=f"{m['FULLY_AUTOMATED_STEPS']}/{m['TOTAL_STEPS']}", candidates_fully_automatic=m['CANDIDATES_FULLY_AUTOMATIC'],
+                               human_judgment=m['ITEMS_REQUIRING_HUMAN_JUDGMENT'],
+                               distinct_pairs=len({(r['discovered_target'], r['precedent']) for r in rows if not r['duplicate_of']}),
+                               note='Mesmos 20 candidatos e mesmas regras: os bloqueadores atacados (firmware, gramática, STJ) não alteram essas etapas.'),
+            reachable_distinct_pairs_with_stj=reach,
+            tools_added=[dict(tool=t, classification=c, use=u) for t, c, u in SPRINT_TOOLS])
+        doc['stj_channel'] = stj
     return (json.dumps(doc, ensure_ascii=False, indent=1) + '\n').encode('utf-8')
 
 

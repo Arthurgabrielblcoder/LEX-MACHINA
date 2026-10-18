@@ -87,6 +87,19 @@ class Pilot(unittest.TestCase):
             if p.is_file():
                 self.assertNotIn(b'CC2002', p.read_bytes())
 
+    def test_sprint_comparison_and_stj_channel(self):
+        d = load(PILOT)
+        sp, stj = d['sprint'], d['stj_channel']
+        self.assertEqual(sp['before'], dict(steps='133/140', candidates_fully_automatic=9, human_judgment=11, distinct_pairs=18))
+        m = d['metrics']
+        self.assertEqual(sp['after_same_20']['steps'], f"{m['FULLY_AUTOMATED_STEPS']}/{m['TOTAL_STEPS']}")     # recomputed, not typed in
+        self.assertEqual(stj['PAIRS'], len(stj['pairs']))
+        self.assertEqual(stj['AUTOMATED_STEPS'], f"{sum(stj['STEP_AUTOMATION'].values())}/{len(stj['pairs']) * 7}")
+        self.assertTrue(all(p['precedent'].startswith('STJ:SUMULA:') and p['target'].startswith('CC2002:') for p in stj['pairs']))
+        self.assertTrue(all(p['status'] in ('VIGENTE', 'ALTERADA') for p in stj['pairs']))
+        self.assertIn(('CC2002:ART.186', 'STJ:SUMULA:403'), {(p['target'], p['precedent']) for p in stj['pairs']})
+        self.assertEqual(d['CC_RELATIONS_PUBLISHED'], 0)
+
     def test_metrics_consistent(self):
         d = load(PILOT)
         m, rows = d['metrics'], d['candidates']
