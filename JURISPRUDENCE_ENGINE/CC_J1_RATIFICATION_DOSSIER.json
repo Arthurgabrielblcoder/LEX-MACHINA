@@ -1,0 +1,1114 @@
+{
+ "schema_version": 1,
+ "kind": "CC_J1_RATIFICATION_DOSSIER",
+ "batch": "CC-J1",
+ "not_ratified": true,
+ "HUMAN_APPROVED_NEW": 0,
+ "CC_RELATIONS_PUBLISHED": 0,
+ "SD_CHANGED": "NO",
+ "FIRMWARE_CHANGED": "NO",
+ "decisions_sha256_lf": "83e7e895bc8f7ed6d5a46a318fcf05aeb9fb5dbd361a1e22161ebabd5c69791a",
+ "counts": {
+  "TOTAL": 30,
+  "GREEN": 8,
+  "YELLOW": 16,
+  "RED": 6
+ },
+ "RATIFY_GREEN_SET_PROPOSAL": {
+  "ids": [
+   "CCJ1-01",
+   "CCJ1-03",
+   "CCJ1-04",
+   "CCJ1-10",
+   "CCJ1-14",
+   "CCJ1-15",
+   "CCJ1-23",
+   "CCJ1-29"
+  ],
+  "executed": false,
+  "new_relations": 8,
+  "new_targets": 7,
+  "distinct_precedents": 7,
+  "distinct_fichas": 7,
+  "fichas_already_on_card": [],
+  "relations": [
+   {
+    "target_id": "CC2002:ART.1647:INC.III",
+    "precedent": "STJ:SUMULA:332"
+   },
+   {
+    "target_id": "CC2002:ART.1696",
+    "precedent": "STJ:SUMULA:596"
+   },
+   {
+    "target_id": "CC2002:ART.1790",
+    "precedent": "STF:RG:498"
+   },
+   {
+    "target_id": "CC2002:ART.1790",
+    "precedent": "STF:RG:809"
+   },
+   {
+    "target_id": "CC2002:ART.20",
+    "precedent": "STF:ADI:4815"
+   },
+   {
+    "target_id": "CC2002:ART.206:PAR.5:INC.I",
+    "precedent": "STJ:SUMULA:503"
+   },
+   {
+    "target_id": "CC2002:ART.21",
+    "precedent": "STF:ADI:4815"
+   },
+   {
+    "target_id": "CC2002:ART.877",
+    "precedent": "STJ:SUMULA:322"
+   }
+  ]
+ },
+ "items": [
+  {
+   "id": "CCJ1-01",
+   "rank": 1,
+   "target": "CC2002:ART.20",
+   "proposed_targets": [
+    "CC2002:ART.20"
+   ],
+   "precedent": "STF:ADI:4815",
+   "label": "ADI 4815",
+   "tribunal": "STF",
+   "channel": "PLANALTO_VIDE",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Ementa nomeia o art. 20; interpretação conforme vigente, sem redução de texto.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204815%22&base=acordaos",
+    "source_sha256": "b42151c9c4280bd3c968ed04aa563b098e3037fddb505eece71330e8a77d3f48",
+    "official_reference": "ADI 4815",
+    "original_target": "CC2002:ART.20",
+    "proposed_targets": [
+     "CC2002:ART.20"
+    ],
+    "essence": "AÇÃO DIRETA JULGADA PROCEDENTE PARA DAR INTERPRETAÇÃO CONFORME À CONSTITUIÇÃO AOS ARTS. 20 E 21 DO CÓDIGO CIVIL, SEM REDUÇÃO DE TEXTO.",
+    "precedent_date": "2015 (Julgamento: 10/06/2015 ... AÇÃO DIRETA JULGADA PROCEDENTE)",
+    "target_validity": {
+     "CC2002:ART.20": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-02",
+   "rank": 2,
+   "target": "CC2002:ART.186",
+   "proposed_targets": [
+    "CC2002:ART.186",
+    "CC2002:ART.927"
+   ],
+   "precedent": "STF:ADI:6792-7055",
+   "label": "ADI 6792/7055",
+   "tribunal": "STF",
+   "channel": "PLANALTO_VIDE",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Julgamento conjunto ADI 6792/7055 em dois targets (186 e 927); exige decidir o registro conjunto.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%206792%22&base=acordaos",
+    "source_sha256": "c8b36453d332a177a5c72959995d20b694b4080bb675b7b34e10d63a497aa101",
+    "official_reference": "ADI 6792/7055",
+    "original_target": "CC2002:ART.186",
+    "proposed_targets": [
+     "CC2002:ART.186",
+     "CC2002:ART.927"
+    ],
+    "essence": "ADI 7.055 que se julga totalmente procedente, para conferir interpretação conforme a Constituição aos arts. 186 e 927 do Código Civil",
+    "precedent_date": "2024 (Julgamento: 22/05/2024 ... Pedido parcialmente procedente)",
+    "target_validity": {
+     "CC2002:ART.186": "VIGENTE",
+     "CC2002:ART.927": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Registro conjunto (como ADI 7047/7064 na CF) e dois targets do mesmo acórdão.",
+    "favor": "Ementa confere interpretação conforme \"aos arts. 186 e 927 do Código Civil\" (j. 22/05/2024).",
+    "risk": "Rotular como duas ADIs separadas duplicaria a ficha; o alcance é só a responsabilidade de jornalistas.",
+    "option_b": "registrar só a ADI 6792 (sem a 7055) nos dois targets",
+    "recommendation": "A — registro conjunto \"ADI 6792/7055\" em 186 e 927."
+   }
+  },
+  {
+   "id": "CCJ1-03",
+   "rank": 3,
+   "target": "CC2002:ART.1790",
+   "proposed_targets": [
+    "CC2002:ART.1790"
+   ],
+   "precedent": "STF:RG:498",
+   "label": "RG TEMA 498",
+   "tribunal": "STF",
+   "channel": "PLANALTO_VIDE",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Tese do Tema 498 declara inconstitucional a distinção do art. 1.790; o vínculo é justamente o aviso disso.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=498",
+    "source_sha256": "67813660fc22a2f3020e8ed8e37a83af8f56caa401f0b21471d8e47ce02774f8",
+    "official_reference": "RG TEMA 498",
+    "original_target": "CC2002:ART.1790",
+    "proposed_targets": [
+     "CC2002:ART.1790"
+    ],
+    "essence": "É inconstitucional a distinção de regimes sucessórios entre cônjuges e companheiros prevista no art. 1.790 do CC/2002, devendo ser aplicado ... o regime do art. 1.829 do CC/2002.",
+    "precedent_date": "2017 (Trânsito em Julgado - em 28/03/2019)",
+    "target_validity": {
+     "CC2002:ART.1790": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-04",
+   "rank": 4,
+   "target": "CC2002:ART.1790",
+   "proposed_targets": [
+    "CC2002:ART.1790"
+   ],
+   "precedent": "STF:RG:809",
+   "label": "RG TEMA 809",
+   "tribunal": "STF",
+   "channel": "PLANALTO_VIDE",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Tese do Tema 809 (mesma tese, tema próprio) sobre o art. 1.790; registro separado do Tema 498, não duplicata.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=809",
+    "source_sha256": "5dd5633ff4584d1d4d9a661f9e7ed1f09623d360e51b18113635f7de83cf0ee0",
+    "official_reference": "RG TEMA 809",
+    "original_target": "CC2002:ART.1790",
+    "proposed_targets": [
+     "CC2002:ART.1790"
+    ],
+    "essence": "É inconstitucional a distinção de regimes sucessórios entre cônjuges e companheiros prevista no art. 1.790 do CC/2002, devendo ser aplicado ... o regime do art. 1.829 do CC/2002.",
+    "precedent_date": "2017 (Trânsito em Julgado - em 04/12/2018)",
+    "target_validity": {
+     "CC2002:ART.1790": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-05",
+   "rank": 5,
+   "target": "CC2002:ART.1727",
+   "proposed_targets": [
+    "CC2002:ART.1723:PAR.1"
+   ],
+   "precedent": "STF:RG:529",
+   "label": "RG TEMA 529",
+   "tribunal": "STF",
+   "channel": "STF_SEARCH_Q1",
+   "temporal": "CURRENT",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Realocação de 1.727 para 1.723, § 1º, ditada pela tese.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=529",
+    "source_sha256": "93f3adff4d56c612cb2a95698cedfb45a97ef94b1b09e4e213af9b8153e89180",
+    "official_reference": "RG TEMA 529",
+    "original_target": "CC2002:ART.1727",
+    "proposed_targets": [
+     "CC2002:ART.1723:PAR.1"
+    ],
+    "essence": "A preexistência de casamento ou de união estável de um dos conviventes, ressalvada a exceção do artigo 1723, § 1º, do Código Civil, impede o reconhecimento de novo vínculo referente ao mesmo período",
+    "precedent_date": "2020 (Trânsito em Julgado - 29/05/2021)",
+    "target_validity": {
+     "CC2002:ART.1723:PAR.1": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "O extrator associou o art. 1.727 (concubinato); a tese cita a exceção do art. 1.723, § 1º.",
+    "favor": "Tese: \"ressalvada a exceção do artigo 1723, § 1º, do Código Civil, impede o reconhecimento de novo vínculo\".",
+    "risk": "O art. 1.727 também é pertinente (concubinato); escolher só um pode empobrecer a lista.",
+    "option_b": "promover nos dois (1.723, § 1º e 1.727)",
+    "recommendation": "A — 1.723, § 1º."
+   }
+  },
+  {
+   "id": "CCJ1-06",
+   "rank": 6,
+   "target": "CC2002:ART.1641",
+   "proposed_targets": [
+    "CC2002:ART.1641:INC.II"
+   ],
+   "precedent": "STF:RG:1236",
+   "label": "RG TEMA 1236",
+   "tribunal": "STF",
+   "channel": "STF_SEARCH_Q1",
+   "temporal": "CURRENT",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Realocação para o inciso II; a Súmula 655/STJ (2022) sobre o mesmo inciso pode ter sido afetada por este tema.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1236",
+    "source_sha256": "d2500318a1c089a75cf4589639ec082b25b20dde96c02b724b6c306880461b14",
+    "official_reference": "RG TEMA 1236",
+    "original_target": "CC2002:ART.1641",
+    "proposed_targets": [
+     "CC2002:ART.1641:INC.II"
+    ],
+    "essence": "art. 1.641, II, do Código Civil, atribuindo-lhe o sentido de norma dispositiva, que deve prevalecer à falta de convenção das partes em sentido diverso",
+    "precedent_date": "2024 (Trânsito em Julgado - 10/04/2024)",
+    "target_validity": {
+     "CC2002:ART.1641:INC.II": "VIGENTE"
+    },
+    "legislative_changes": [
+     "CC2002:ART.1641:INC.II: Redação dada pela Lei nº 12.344, de 2010"
+    ]
+   },
+   "yellow": {
+    "problem": "Alvo desce do caput para o inciso II; interação com a Súmula 655/STJ.",
+    "favor": "Tese do Tema 1236 (2024): separação obrigatória do art. 1.641, II é norma dispositiva, afastável por convenção.",
+    "risk": "Baixo para o vínculo; a Súmula 655 (fora do lote) precisará de análise de superação.",
+    "option_b": "manter no artigo (CC2002:ART.1641)",
+    "recommendation": "A — 1.641, II."
+   }
+  },
+  {
+   "id": "CCJ1-07",
+   "rank": 7,
+   "target": "CC2002:ART.927",
+   "proposed_targets": [
+    "CC2002:ART.927:PAR.UNICO"
+   ],
+   "precedent": "STF:RG:932",
+   "label": "RG TEMA 932",
+   "tribunal": "STF",
+   "channel": "STF_SEARCH_Q1",
+   "temporal": "CURRENT",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "YELLOW",
+   "motive": "Realocação incontroversa para o parágrafo único; amarelo só pela regra de realocação.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=932",
+    "source_sha256": "ee0d5e6495f1ae97bab47815d090b0a02df6415d70d278c07d34dde749333cb6",
+    "official_reference": "RG TEMA 932",
+    "original_target": "CC2002:ART.927",
+    "proposed_targets": [
+     "CC2002:ART.927:PAR.UNICO"
+    ],
+    "essence": "O artigo 927, parágrafo único, do Código Civil é compatível com o artigo 7º, XXVIII, da Constituição Federal",
+    "precedent_date": "2020 (Trânsito em Julgado - 05/08/2020)",
+    "target_validity": {
+     "CC2002:ART.927:PAR.UNICO": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Realocação 927 → 927, p.u.",
+    "favor": "Tese: \"O artigo 927, parágrafo único, do Código Civil é compatível com o artigo 7º, XXVIII, da CF\".",
+    "risk": "Mínimo; ficha STF_RG_932 já existe no cartão (compartilhada com a CF).",
+    "option_b": "manter no caput do 927",
+    "recommendation": "A — 927, p.u."
+   }
+  },
+  {
+   "id": "CCJ1-08",
+   "rank": 8,
+   "target": "CC2002:ART.1521",
+   "proposed_targets": [],
+   "precedent": "STF:RG:526",
+   "label": "RG TEMA 526",
+   "tribunal": "STF",
+   "channel": "STF_SEARCH_Q1",
+   "temporal": "CURRENT",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "risk": "—",
+   "group": "RED",
+   "motive": "Tema previdenciário; o art. 1.521 é só fundamento (não material).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "reopen": "Reabrir só se surgir precedente que interprete os impedimentos do art. 1.521."
+  },
+  {
+   "id": "CCJ1-09",
+   "rank": 9,
+   "target": "CC2002:ART.206",
+   "proposed_targets": [
+    "CC2002:ART.206-A"
+   ],
+   "precedent": "STF:RG:1194",
+   "label": "RG TEMA 1194",
+   "tribunal": "STF",
+   "channel": "STF_SEARCH_Q1",
+   "temporal": "CURRENT",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Realocação 206 → 206-A; o tema afasta a prescrição intercorrente só na execução de dano ambiental.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1194",
+    "source_sha256": "343e767aff28193ed7c9a4bb68215589edd80bceafb9a399f7cf53f199d482aa",
+    "official_reference": "RG TEMA 1194",
+    "original_target": "CC2002:ART.206",
+    "proposed_targets": [
+     "CC2002:ART.206-A"
+    ],
+    "essence": "É imprescritível a pretensão executória e inaplicável a prescrição intercorrente na execução de reparação de dano ambiental ... art. 206-A do Código Civil",
+    "precedent_date": "2025 (Trânsito em Julgado - 16/04/2025)",
+    "target_validity": {
+     "CC2002:ART.206-A": "VIGENTE"
+    },
+    "legislative_changes": [
+     "CC2002:ART.206-A: Redação dada pela Lei nº 14.382, de 2022"
+    ]
+   },
+   "yellow": {
+    "problem": "Alvo corrigido para o art. 206-A (o extrator truncou o número).",
+    "favor": "Tese: \"imprescritível a pretensão executória e inaplicável a prescrição intercorrente na execução de reparação de dano ambiental\".",
+    "risk": "Relação é de exceção (o tema afasta o 206-A num campo específico); art. 206-A tem redação de 2022.",
+    "option_b": "não vincular no CC (tema ambiental)",
+    "recommendation": "A — 206-A, com o alcance ambiental na ficha."
+   }
+  },
+  {
+   "id": "CCJ1-10",
+   "rank": 10,
+   "target": "CC2002:ART.21",
+   "proposed_targets": [
+    "CC2002:ART.21"
+   ],
+   "precedent": "STF:ADI:4815",
+   "label": "ADI 4815",
+   "tribunal": "STF",
+   "channel": "PLANALTO_VIDE",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Mesmo acórdão da ADI 4815, que nomeia o art. 21; segundo target legítimo (não duplicata).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://jurisprudencia.stf.jus.br/pages/search?classeNumeroIncidente=%22ADI%204815%22&base=acordaos",
+    "source_sha256": "b42151c9c4280bd3c968ed04aa563b098e3037fddb505eece71330e8a77d3f48",
+    "official_reference": "ADI 4815",
+    "original_target": "CC2002:ART.21",
+    "proposed_targets": [
+     "CC2002:ART.21"
+    ],
+    "essence": "AÇÃO DIRETA JULGADA PROCEDENTE PARA DAR INTERPRETAÇÃO CONFORME À CONSTITUIÇÃO AOS ARTS. 20 E 21 DO CÓDIGO CIVIL, SEM REDUÇÃO DE TEXTO.",
+    "precedent_date": "2015 (Julgamento: 10/06/2015 ... AÇÃO DIRETA JULGADA PROCEDENTE)",
+    "target_validity": {
+     "CC2002:ART.21": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-11",
+   "rank": 11,
+   "target": "CC2002:ART.186",
+   "proposed_targets": [
+    "CC2002:ART.186"
+   ],
+   "precedent": "STJ:SUMULA:403",
+   "label": "Súmula 403 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Referência oficial do STJ, mas genérica: o direito à imagem (art. 20) não é citado pela súmula.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 403 STJ",
+    "original_target": "CC2002:ART.186",
+    "proposed_targets": [
+     "CC2002:ART.186"
+    ],
+    "essence": "Independe de prova do prejuízo a indenização pela publicação não autorizada de imagem de pessoa com fins econômicos ou comerciais.",
+    "precedent_date": "28/10/2009",
+    "target_validity": {
+     "CC2002:ART.186": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Arts. 186/927 são base geral da responsabilidade; o dispositivo específico seria o art. 20.",
+    "favor": "Súmula 403 (Segunda Seção, 28/10/2009): indenização por uso comercial da imagem independe de prova do prejuízo; STJ referencia CC 186 e 927.",
+    "risk": "Relação verdadeira porém indireta; texto vigente do 186 inalterado (Vide ADI 6792/7055).",
+    "option_b": "acrescentar o art. 20 como alvo",
+    "recommendation": "A — 186 (e avaliar o art. 20 em lote futuro)."
+   }
+  },
+  {
+   "id": "CCJ1-12",
+   "rank": 12,
+   "target": "CC2002:ART.927",
+   "proposed_targets": [
+    "CC2002:ART.927"
+   ],
+   "precedent": "STJ:SUMULA:403",
+   "label": "Súmula 403 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Mesma súmula e mesma ficha do item 11; dever de indenizar sem prova do prejuízo.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 403 STJ",
+    "original_target": "CC2002:ART.927",
+    "proposed_targets": [
+     "CC2002:ART.927"
+    ],
+    "essence": "Independe de prova do prejuízo a indenização pela publicação não autorizada de imagem de pessoa com fins econômicos ou comerciais.",
+    "precedent_date": "28/10/2009",
+    "target_validity": {
+     "CC2002:ART.927": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Mesmo caso do 186: base geral, não o dispositivo específico.",
+    "favor": "Mesmo enunciado; STJ referencia o art. 927.",
+    "risk": "Indireta; texto vigente do 927 inalterado.",
+    "option_b": "acrescentar o art. 20 como alvo",
+    "recommendation": "A — 927 (mesma ficha STJ_SUMULA_403)."
+   }
+  },
+  {
+   "id": "CCJ1-13",
+   "rank": 13,
+   "target": "CC2002:ART.1420",
+   "proposed_targets": [
+    "CC2002:ART.1420"
+   ],
+   "precedent": "STJ:SUMULA:308",
+   "label": "Súmula 308 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Súmula do SFH sobre ineficácia da hipoteca; o art. 1.420 (legitimação para hipotecar) é pertinência indireta.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 308 STJ",
+    "original_target": "CC2002:ART.1420",
+    "proposed_targets": [
+     "CC2002:ART.1420"
+    ],
+    "essence": "A hipoteca firmada entre a construtora e o agente financeiro, anterior ou posterior à celebração da promessa de compra e venda, não tem eficácia perante os adquirentes do imóvel.",
+    "precedent_date": "30/03/2005",
+    "target_validity": {
+     "CC2002:ART.1420": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Núcleo da súmula é a proteção do adquirente (CDC/boa-fé), não a legitimação do 1.420.",
+    "favor": "Súmula 308 (30/03/2005): hipoteca entre construtora e agente financeiro não tem eficácia perante adquirentes; STJ referencia o 1.420.",
+    "risk": "Associação fraca pode confundir o leitor.",
+    "option_b": "rejeitar como não material",
+    "recommendation": "D — manter pendente até decidir o padrão para referências indiretas."
+   }
+  },
+  {
+   "id": "CCJ1-14",
+   "rank": 14,
+   "target": "CC2002:ART.877",
+   "proposed_targets": [
+    "CC2002:ART.877"
+   ],
+   "precedent": "STJ:SUMULA:322",
+   "label": "Súmula 322 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Súmula excepciona expressamente a prova do erro exigida pelo art. 877.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 322 STJ",
+    "original_target": "CC2002:ART.877",
+    "proposed_targets": [
+     "CC2002:ART.877"
+    ],
+    "essence": "Para a repetição de indébito, nos contratos de abertura de crédito em conta-corrente, não se exige a prova do erro.",
+    "precedent_date": "23/11/2005",
+    "target_validity": {
+     "CC2002:ART.877": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-15",
+   "rank": 15,
+   "target": "CC2002:ART.1647:INC.III",
+   "proposed_targets": [
+    "CC2002:ART.1647:INC.III"
+   ],
+   "precedent": "STJ:SUMULA:332",
+   "label": "Súmula 332 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Fiança sem autorização do cônjuge: aplicação direta do art. 1.647, III.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 332 STJ",
+    "original_target": "CC2002:ART.1647:INC.III",
+    "proposed_targets": [
+     "CC2002:ART.1647:INC.III"
+    ],
+    "essence": "A fiança prestada sem autorização de um dos cônjuges implica a ineficácia total da garantia.",
+    "precedent_date": "05/03/2008",
+    "target_validity": {
+     "CC2002:ART.1647:INC.III": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-16",
+   "rank": 16,
+   "target": "CC2002:ART.2028",
+   "proposed_targets": [],
+   "precedent": "STJ:SUMULA:371",
+   "label": "Súmula 371 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "risk": "—",
+   "group": "RED",
+   "motive": "Súmula sobre cálculo do VPA; a regra de transição do art. 2.028 não é seu objeto.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "reopen": "Reabrir só se o STJ revisar a súmula com foco na transição de prazos."
+  },
+  {
+   "id": "CCJ1-17",
+   "rank": 17,
+   "target": "CC2002:ART.2028",
+   "proposed_targets": [
+    "CC2002:ART.206:PAR.3:INC.IX"
+   ],
+   "precedent": "STJ:SUMULA:405",
+   "label": "Súmula 405 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "NEEDS_REVIEW",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "ALTO",
+   "group": "YELLOW",
+   "motive": "Realocação para 206, § 3º, IX, mas o regime do seguro obrigatório mudou em 2024 (NEEDS_REVIEW).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 405 STJ",
+    "original_target": "CC2002:ART.2028",
+    "proposed_targets": [
+     "CC2002:ART.206:PAR.3:INC.IX"
+    ],
+    "essence": "A ação de cobrança do seguro obrigatório (DPVAT) prescreve em três anos.",
+    "precedent_date": "28/10/2009",
+    "target_validity": {
+     "CC2002:ART.206:PAR.3:INC.IX": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Seguro obrigatório: impacto de mudanças legislativas de 2024 (inclusive o contexto da Lei 15.040/2024).",
+    "favor": "Súmula 405 (28/10/2009): DPVAT prescreve em três anos; STJ referencia o 206, § 3º, IX (vigente).",
+    "risk": "Risco de vincular regra possivelmente restrita a fatos antigos.",
+    "option_b": "vincular no 2.028",
+    "recommendation": "D — manter pendente até análise individual."
+   }
+  },
+  {
+   "id": "CCJ1-18",
+   "rank": 18,
+   "target": "CC2002:ART.205",
+   "proposed_targets": [
+    "CC2002:ART.205"
+   ],
+   "precedent": "STJ:SUMULA:412",
+   "label": "Súmula 412 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "O enunciado remete ao \"prazo do Código Civil\" sem dizer qual; o art. 205 é a referência oficial.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 412 STJ",
+    "original_target": "CC2002:ART.205",
+    "proposed_targets": [
+     "CC2002:ART.205"
+    ],
+    "essence": "A ação de repetição de indébito de tarifas de água e esgoto sujeita-se ao prazo prescricional estabelecido no Código Civil.",
+    "precedent_date": "25/11/2009",
+    "target_validity": {
+     "CC2002:ART.205": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Extensão da súmula: prazo geral (205) ou outro prazo do CC.",
+    "favor": "Súmula 412 (25/11/2009): repetição de tarifas de água e esgoto segue o prazo do CC; STJ referencia o art. 205.",
+    "risk": "Se o prazo aplicado for outro, o vínculo induz erro.",
+    "option_b": "vincular também no 206",
+    "recommendation": "A — 205, após conferir o precedente originário."
+   }
+  },
+  {
+   "id": "CCJ1-19",
+   "rank": 19,
+   "target": "CC2002:ART.1142",
+   "proposed_targets": [],
+   "precedent": "STJ:SUMULA:451",
+   "label": "Súmula 451 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "risk": "—",
+   "group": "RED",
+   "motive": "Penhorabilidade da sede é questão processual; conceito de estabelecimento é pano de fundo.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "reopen": "Reabrir se surgir precedente que interprete o art. 1.142."
+  },
+  {
+   "id": "CCJ1-20",
+   "rank": 20,
+   "target": "CC2002:ART.186",
+   "proposed_targets": [
+    "CC2002:ART.917"
+   ],
+   "precedent": "STJ:SUMULA:476",
+   "label": "Súmula 476 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "YELLOW",
+   "motive": "Realocação 186 → 917 (endosso-mandato), também referência oficial do STJ.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 476 STJ",
+    "original_target": "CC2002:ART.186",
+    "proposed_targets": [
+     "CC2002:ART.917"
+    ],
+    "essence": "O endossatário de título de crédito por endosso-mandato só responde por danos decorrentes de protesto indevido se extrapolar os poderes de mandatário.",
+    "precedent_date": "13/06/2012",
+    "target_validity": {
+     "CC2002:ART.917": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Alvo descoberto genérico (186); núcleo é o endosso-mandato.",
+    "favor": "Súmula 476 (13/06/2012); STJ referencia CC 186, 662 e 917.",
+    "risk": "Baixo.",
+    "option_b": "vincular também no 662 (mandato sem poderes)",
+    "recommendation": "A — 917."
+   }
+  },
+  {
+   "id": "CCJ1-21",
+   "rank": 21,
+   "target": "CC2002:ART.1231",
+   "proposed_targets": [
+    "CC2002:ART.99"
+   ],
+   "precedent": "STJ:SUMULA:496",
+   "label": "Súmula 496 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REALLOCATE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Realocação 1.231 → 99 (bens públicos); a súmula afasta a presunção do 1.231.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 496 STJ",
+    "original_target": "CC2002:ART.1231",
+    "proposed_targets": [
+     "CC2002:ART.99"
+    ],
+    "essence": "Os registros de propriedade particular de imóveis situados em terrenos de marinha não são oponíveis à União.",
+    "precedent_date": "08/08/2012",
+    "target_validity": {
+     "CC2002:ART.99": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Escolher entre o fundamento (99) e o dispositivo afastado (1.231).",
+    "favor": "Súmula 496 (08/08/2012); STJ referencia CC 99 e 1.231.",
+    "risk": "O art. 99 tem incisos; vincular no artigo é genérico.",
+    "option_b": "vincular no 1.231",
+    "recommendation": "A — 99 (artigo)."
+   }
+  },
+  {
+   "id": "CCJ1-22",
+   "rank": 22,
+   "target": "CC2002:ART.966",
+   "proposed_targets": [
+    "CC2002:ART.966"
+   ],
+   "precedent": "STJ:SUMULA:499",
+   "label": "Súmula 499 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Súmula tributária que se apoia no conceito de empresário do art. 966; relação indireta.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 499 STJ",
+    "original_target": "CC2002:ART.966",
+    "proposed_targets": [
+     "CC2002:ART.966"
+    ],
+    "essence": "As empresas prestadoras de serviços estão sujeitas às contribuições ao Sesc e Senac, salvo se integradas noutro serviço social.",
+    "precedent_date": "13/03/2013",
+    "target_validity": {
+     "CC2002:ART.966": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Relação conceitual (empresa) num tema tributário.",
+    "favor": "Súmula 499 (13/03/2013); STJ referencia CC 966 (e CF 240, CLT 570/577).",
+    "risk": "Leitor do CC pode esperar jurisprudência civil.",
+    "option_b": "rejeitar como não material",
+    "recommendation": "A — 966, com ficha explicando o uso tributário."
+   }
+  },
+  {
+   "id": "CCJ1-23",
+   "rank": 23,
+   "target": "CC2002:ART.206:PAR.5:INC.I",
+   "proposed_targets": [
+    "CC2002:ART.206:PAR.5:INC.I"
+   ],
+   "precedent": "STJ:SUMULA:503",
+   "label": "Súmula 503 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Monitória de cheque sem força executiva: prazo quinquenal do art. 206, § 5º, I (vigente).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 503 STJ",
+    "original_target": "CC2002:ART.206:PAR.5:INC.I",
+    "proposed_targets": [
+     "CC2002:ART.206:PAR.5:INC.I"
+    ],
+    "essence": "O prazo para ajuizamento de ação monitória em face do emitente de cheque sem força executiva é quinquenal, a contar do dia seguinte à data de emissão estampada na cártula.",
+    "precedent_date": "11/12/2013",
+    "target_validity": {
+     "CC2002:ART.206:PAR.5:INC.I": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-24",
+   "rank": 24,
+   "target": "CC2002:ART.122",
+   "proposed_targets": [],
+   "precedent": "STJ:SUMULA:543",
+   "label": "Súmula 543 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "risk": "—",
+   "group": "RED",
+   "motive": "Restituição na resolução de compra de imóvel é regra consumerista; art. 122 é lateral.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "reopen": "Reabrir se surgir precedente sobre condição potestativa (art. 122)."
+  },
+  {
+   "id": "CCJ1-25",
+   "rank": 25,
+   "target": "CC2002:ART.2028",
+   "proposed_targets": [
+    "CC2002:ART.2028"
+   ],
+   "precedent": "STJ:SUMULA:547",
+   "label": "Súmula 547 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "HISTORICAL_BUT_RELEVANT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "HISTORICAL_BUT_RELEVANT: o enunciado manda aplicar a transição do art. 2.028 (CC/1916 → CC/2002).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 547 STJ",
+    "original_target": "CC2002:ART.2028",
+    "proposed_targets": [
+     "CC2002:ART.2028"
+    ],
+    "essence": "Nas ações em que se pleiteia o ressarcimento dos valores pagos a título de participação financeira do consumidor no custeio de construção de rede elétrica, o prazo prescricional é de vinte anos na vigência do Código Civil de 1916. Na vigência do Código Civil de 2002, o prazo é de cinco anos se houve",
+    "precedent_date": "14/10/2015",
+    "target_validity": {
+     "CC2002:ART.2028": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Regra de transição: útil para fatos anteriores a 2003; precisa distinguir CC/1916 de CC/2002 na ficha.",
+    "favor": "Súmula 547 (14/10/2015): \"observada a regra de transição disciplinada em seu art. 2.028\".",
+    "risk": "Baixo para o vínculo; a ficha deve deixar clara a natureza transitória.",
+    "option_b": "vincular também no 206, § 3º, IV e § 5º, I",
+    "recommendation": "A — 2.028 (com nota temporal)."
+   }
+  },
+  {
+   "id": "CCJ1-26",
+   "rank": 26,
+   "target": "CC2002:ART.187",
+   "proposed_targets": [],
+   "precedent": "STJ:SUMULA:550",
+   "label": "Súmula 550 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "risk": "—",
+   "group": "RED",
+   "motive": "Credit scoring: núcleo no CDC e na Lei do Cadastro Positivo; abuso de direito é lateral.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "reopen": "Reabrir se o STJ fundamentar no art. 187."
+  },
+  {
+   "id": "CCJ1-27",
+   "rank": 27,
+   "target": "CC2002:ART.1226",
+   "proposed_targets": [
+    "CC2002:ART.1226"
+   ],
+   "precedent": "STJ:SUMULA:585",
+   "label": "Súmula 585 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "MÉDIO",
+   "group": "YELLOW",
+   "motive": "Súmula tributária (IPVA) apoiada na tradição; dois targets possíveis (1.226 e 1.267).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 585 STJ",
+    "original_target": "CC2002:ART.1226",
+    "proposed_targets": [
+     "CC2002:ART.1226"
+    ],
+    "essence": "A responsabilidade solidária do ex-proprietário, prevista no art. 134 do Código de Trânsito Brasileiro - CTB, não abrange o IPVA incidente sobre o veículo automotor, no que se refere ao período posterior à sua alienação.",
+    "precedent_date": "14/12/2016",
+    "target_validity": {
+     "CC2002:ART.1226": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Relação indireta e escolha entre 1.226 (móveis) e 1.267 (regra geral da tradição).",
+    "favor": "Súmula 585 (14/12/2016); STJ referencia CC 1.226 e 1.267.",
+    "risk": "Tema tributário no CC.",
+    "option_b": "vincular no 1.267",
+    "recommendation": "A — 1.226."
+   }
+  },
+  {
+   "id": "CCJ1-28",
+   "rank": 28,
+   "target": "CC2002:ART.186",
+   "proposed_targets": [],
+   "precedent": "STJ:SUMULA:595",
+   "label": "Súmula 595 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "REJECT_NOT_MATERIAL_RECOMMENDED",
+   "risk": "—",
+   "group": "RED",
+   "motive": "Responsabilidade objetiva do fornecedor (CDC); o ilícito culposo do art. 186 não é o fundamento.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "reopen": "Reabrir só com fundamentação no CC."
+  },
+  {
+   "id": "CCJ1-29",
+   "rank": 29,
+   "target": "CC2002:ART.1696",
+   "proposed_targets": [
+    "CC2002:ART.1696"
+   ],
+   "precedent": "STJ:SUMULA:596",
+   "label": "Súmula 596 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "CURRENT",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "BAIXO",
+   "group": "GREEN",
+   "motive": "Alimentos avoengos: aplicação direta do art. 1.696 (o 1.698 é alvo adicional possível, não alternativo).",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 596 STJ",
+    "original_target": "CC2002:ART.1696",
+    "proposed_targets": [
+     "CC2002:ART.1696"
+    ],
+    "essence": "A obrigação alimentar dos avós tem natureza complementar e subsidiária, somente se configurando no caso de impossibilidade total ou parcial de seu cumprimento pelos pais.",
+    "precedent_date": "08/11/2017",
+    "target_validity": {
+     "CC2002:ART.1696": "VIGENTE"
+    },
+    "legislative_changes": []
+   }
+  },
+  {
+   "id": "CCJ1-30",
+   "rank": 30,
+   "target": "CC2002:ART.422",
+   "proposed_targets": [
+    "CC2002:ART.422"
+   ],
+   "precedent": "STJ:SUMULA:609",
+   "label": "Súmula 609 STJ",
+   "tribunal": "STJ",
+   "channel": "STJ_SUMULAS_PDF",
+   "temporal": "NEEDS_REVIEW",
+   "proposed_decision": "PROMOTE_RECOMMENDED",
+   "risk": "ALTO",
+   "group": "YELLOW",
+   "motive": "Boa-fé (art. 422) vigente, mas a súmula é de seguro e os arts. 765/766 foram revogados pela Lei 15.040/2024.",
+   "status": "AWAITING_USER_RATIFICATION",
+   "human_approved": false,
+   "evidence": {
+    "official_source": "https://processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf",
+    "source_sha256": "bf92bdb1ae0d257379cdd8c5009e30152e6a91ca8a2dc631b15122962ec6e2a0",
+    "official_reference": "Súmula 609 STJ",
+    "original_target": "CC2002:ART.422",
+    "proposed_targets": [
+     "CC2002:ART.422"
+    ],
+    "essence": "A recusa de cobertura securitária, sob a alegação de doença preexistente, é ilícita se não houve a exigência de exames médicos prévios à contratação ou a demonstração de má-fé do segurado.",
+    "precedent_date": "11/04/2018",
+    "target_validity": {
+     "CC2002:ART.422": "VIGENTE"
+    },
+    "legislative_changes": []
+   },
+   "yellow": {
+    "problem": "Possível impacto da Lei 15.040/2024 (nova disciplina do contrato de seguro).",
+    "favor": "Súmula 609 (11/04/2018): recusa de cobertura por doença preexistente é ilícita sem exames prévios ou prova de má-fé.",
+    "risk": "A súmula pode não subsistir integralmente sob a lei nova.",
+    "option_b": "rejeitar como superada",
+    "recommendation": "D — manter pendente até análise individual."
+   }
+  }
+ ]
+}
