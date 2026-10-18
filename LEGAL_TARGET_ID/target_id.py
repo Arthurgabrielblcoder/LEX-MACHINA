@@ -7,6 +7,7 @@ Grammar (ASCII, no spaces, ':' separates levels, '.' separates label and value):
 
     target_id := NS
                | NS ":ART." ART [ ":CAPUT" | [":PAR." PAR] [":INC." INC [":AL." AL]] ]
+               | NS ":ART." ART [":PAR." PAR] ":AL." AL      only where NS allows an alínea without inciso (see below)
     NS   := registered namespace   [A-Z][A-Z0-9]{1,15}          e.g. CF88, ADCT, CC2002
     ART  := [1-9][0-9]{0,3} ("-" [A-Z])?                          e.g. 5, 103-A
     PAR  := [1-9][0-9]{0,2} ("-" [A-Z])? | "UNICO"               e.g. 6, 4-A, UNICO
@@ -19,6 +20,9 @@ Semantics:
     segment) and their structural parent is `CF88:ART.37:CAPUT`. `...:CAPUT:INC.I` is rejected as NON_CANONICAL.
   * A namespace may belong to a parent norm (ADCT -> CF88): `ADCT` and `CF88` are different targets and
     `parent("ADCT") == "CF88"`, so ADCT art. 5 (`ADCT:ART.5`) never collides with CF art. 5 (`CF88:ART.5`).
+  * Alínea without inciso (e.g. CP art. 7º, § 2º, a; CLT): valid only for namespaces NOT listed in namespaces.json
+    `alinea_requires_inciso` (CF88, ADCT stay strict: ALINEA_WITHOUT_INCISO). Like caput incisos, a caput alínea is
+    written without CAPUT (`CP1940:ART.n:AL.a`, parent `CP1940:ART.n:CAPUT`); a paragraph alínea's parent is the paragraph.
   * Parent is purely structural (breadcrumbs, aggregation). No legal inheritance is implied.
 All functions fail closed with TargetIdError(code, detail).
 """
@@ -51,9 +55,11 @@ class TargetIdError(ValueError):
 class NamespaceRegistry:
     """Namespaces = norm ids from the master catalog + explicit sub-namespaces (e.g. ADCT inside CF88)."""
 
-    def __init__(self, norms, subnamespaces):
+    def __init__(self, norms, subnamespaces, alinea_requires_inciso=None):
         self.norms = set(norms)
         self.sub = dict(subnamespaces)
+        # default (no config): every namespace strict, i.e. the historical behaviour
+        self.strict_alinea = None if alinea_requires_inciso is None else set(alinea_requires_inciso)
         clash = self.norms & set(self.sub)
         if clash:
             raise TargetIdError('NAMESPACE_CONFLICT', ','.join(sorted(clash)))
@@ -69,13 +75,16 @@ class NamespaceRegistry:
         cfg = json.loads(Path(path).read_text(encoding='utf-8'))
         catalog = REPO / cfg['norm_catalog']
         norms = [item['id'] for item in json.loads(catalog.read_text(encoding='utf-8'))['itens']]
-        return cls(norms, cfg['subnamespaces'])
+        return cls(norms, cfg['subnamespaces'], cfg.get('alinea_requires_inciso'))
 
     def known(self, ns):
         return ns in self.norms or ns in self.sub
 
     def parent(self, ns):
         return self.sub[ns]['parent'] if ns in self.sub else None
+
+    def alinea_requires_inciso(self, ns):
+        return self.strict_alinea is None or ns in self.strict_alinea
 
     def norm_of(self, ns):
         return self.sub[ns]['parent'] if ns in self.sub else ns
@@ -143,13 +152,13 @@ def parse_target_id(target_id, reg=None):
                 raise TargetIdError('INVALID_INCISO', value)
             out['inciso'] = value
         elif label == 'AL':
-            if out['inciso'] is None:
+            if out['inciso'] is None and reg.alinea_requires_inciso(ns):
                 raise TargetIdError('ALINEA_WITHOUT_INCISO', target_id)
             if not AL_RE.fullmatch(value):
                 raise TargetIdError('INVALID_ALINEA', value)
             out['alinea'] = value
         last = pos
-    if out['caput'] and (out['paragraph'] or out['inciso']):
+    if out['caput'] and (out['paragraph'] or out['inciso'] or out['alinea']):
         raise TargetIdError('NON_CANONICAL', 'CAPUT is terminal; caput incisos are written without CAPUT: ' + target_id)
     out['kind'] = kind_of(out, reg)
     return out
@@ -194,6 +203,8 @@ def parent_target_id(target_id, reg=None):
     t = parse_target_id(target_id, reg)
     ns = t['namespace']
     if t['alinea']:
+        if t['inciso'] is None and t['paragraph'] is None:      # caput alínea (namespaces that allow it)
+            return format_target_id(ns, t['article'], caput=True, reg=reg)
         return format_target_id(ns, t['article'], paragraph=t['paragraph'], inciso=t['inciso'], reg=reg)
     if t['inciso']:
         if t['paragraph']:

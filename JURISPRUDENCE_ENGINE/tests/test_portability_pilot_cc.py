@@ -37,9 +37,14 @@ class Adapters(unittest.TestCase):
         self.assertEqual(am['CC2002:ART.1641:INC.II'][0]['year'], 2010)
 
     def test_grammar_gap_recorded_not_invented(self):
-        an = []
-        got = list(DP.walk('<p>Art. 7º Ficam sujeitos:</p><p>§ 2º Nos casos:</p><p>a) entrar o agente;</p>', 'CP1940', an))
-        self.assertEqual([t for t, _ in got], ['CP1940:ART.7', 'CP1940:ART.7:PAR.2'])
+        html = '<p>Art. 7º Ficam sujeitos:</p><p>§ 2º Nos casos:</p><p>a) entrar o agente;</p>'
+        an = []                                       # codes: alínea without inciso is now a valid target (grammar extension)
+        got = list(DP.walk(html, 'CP1940', an))
+        self.assertEqual([t for t, _ in got], ['CP1940:ART.7', 'CP1940:ART.7:PAR.2', 'CP1940:ART.7:PAR.2:AL.a'])
+        self.assertEqual(an, [])
+        an = []                                       # CF stays strict: recorded as anomaly, never invented
+        got = list(DP.walk(html, 'CF88', an))
+        self.assertEqual([t for t, _ in got], ['CF88:ART.7', 'CF88:ART.7:PAR.2'])
         self.assertEqual([a['error'] for a in an], ['ALINEA_WITHOUT_INCISO'])
         y = load(ENG / 'pilot_cc' / 'PLANALTO_DISCOVERY_YIELD_7_NORMS.json')['norms']
         self.assertEqual(sorted(y), ['CC2002', 'CE1965', 'CLT1943', 'CP1940', 'CPC2015', 'CPP1941', 'CTN1966'])
