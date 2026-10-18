@@ -21,3 +21,27 @@ CAPTCHA_OR_CHALLENGE_BYPASSED = NO · FONTES NÃO OFICIAIS USADAS = NÃO (sem Ju
 - autorizar o download do PDF oficial `VerbetesSTJ.pdf`.
 
 Nenhum vínculo da Súmula 403 será proposto sem a fonte oficial lida.
+
+## Atualização (2026-10-18, sprint de escala): fonte oficial resolvida
+
+```
+STJ_SUMULA403_OFFICIAL_SOURCE = RESOLVED (OFFICIAL_SOURCE_RESOLVED) · EDITORIAL_STATE = UNRESOLVED_EXTERNAL (inalterado)
+CAPTCHA_OR_CHALLENGE_BYPASSED = NO · MATERIALIZADO = NÃO · BATCH08 ALTERADO = NÃO
+```
+
+| # | Via oficial | Resultado |
+|---|---|---|
+| 6 | Página "Súmulas do STJ", `processo.stj.jus.br/SCON/sumstj/`. Respondeu sem desafio; o rodapé do PDF indica o endereço canônico `scon.stj.jus.br/SCON/sumstj/` | A página publica o link oficial "Súmulas do STJ (PDF)" |
+| 7 | `processo.stj.jus.br/SCON/getFile?url=/docs_internet/jurisprudencia/tematica/download/SU/Sumulas/SumulasSTJ.pdf` | PDF oficial "Inteiro teor das súmulas", 40.255.386 bytes, sha256 `bf92bdb1…e6e2a0`. Download feito com a autorização desta missão para "PDFs/downloads oficiais"; texto extraído com `pdftotext` |
+
+**Súmula 403/STJ, conforme o documento oficial (p. 1366):**
+
+- **Enunciado:** "Independe de prova do prejuízo a indenização pela publicação não autorizada de imagem de pessoa com fins econômicos ou comerciais."
+- **Órgão julgador:** Segunda Seção.
+- **Decisão:** 28/10/2009.
+- **Fonte:** DJe 24/11/2009; RSSTJ v. 38, p. 53; RSTJ v. 216, p. 758.
+- **Referências legislativas do próprio STJ:** CF/1988, art. 5º, V e X; CC/1916, art. 159; CC/2002, arts. 186 e 927.
+
+**Registro:** `STJ_OFFICIAL_SOURCE_RESOLUTIONS.json`, que também traz a Súmula 203 (Batch10, J0-BL-093: CF art. 105, III). Índice completo: `JURISPRUDENCE_ENGINE/stj/STJ_SUMULAS_INDEX.json`.
+
+Nenhuma ficha ou vínculo foi criado. A recomendação do Batch08 só muda com nova decisão editorial do usuário.
