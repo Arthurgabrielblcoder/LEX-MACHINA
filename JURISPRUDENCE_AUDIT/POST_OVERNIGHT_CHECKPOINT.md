@@ -1,6 +1,15 @@
 # OPERAÇÃO PÓS-NOTURNA — CHECKPOINT (2026-10-17)
 
-## Estado atual (freeze multinorma, 2026-10-18) — prevalece sobre tudo abaixo
+## Estado atual (CC-J2 aprovado fisicamente, 2026-10-19) — prevalece sobre tudo abaixo
+
+```
+CURRENT_PHYSICAL_JURIS_BASELINE = MULTINORM_FROZEN_CF315_198_CC49_39 · CF/ADCT 315/198 · CC2002 49/39 · TOTAL 364/237
+CC_J2_PHYSICAL_VALIDATION = 38/38 PASS · REPETITIVO STJ e IAC validados no aparelho
+```
+
+Documento: `JURISPRUDENCE_ENGINE/CC_J2_PHYSICAL_FROZEN.md`.
+
+## Estado anterior (freeze multinorma, 2026-10-18)
 
 ```
 CURRENT_PHYSICAL_JURIS_BASELINE = MULTINORM_FROZEN_CF315_198_CC29_24   (J2I_FROZEN_315_198 + CC_J1_FROZEN_29_24)

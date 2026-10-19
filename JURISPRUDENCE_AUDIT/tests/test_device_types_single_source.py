@@ -16,9 +16,9 @@ import juris_types as JT  # noqa: E402
 class DeviceTypes(unittest.TestCase):
     def test_single_source_for_future_batches(self):
         doc11 = dict(batch='BATCH11')
-        for k in ('RG', 'SV', 'ADI', 'HC', 'MS', 'AP', 'AI', 'INQ', 'RCL', 'ADPF', 'SUMULA', 'SUMULA_TSE', 'SUMULA_STJ'):
-            self.assertEqual(RC.device_status(doc11, k), 'VALIDATED', k)              # J2I 32/32; SUMULA_STJ: CC-J1 36/36 (metadata-only)
-        for k in ('ADC', 'RE', 'ARE', 'MI', 'RHC', 'REPETITIVO', 'IAC'):
+        for k in ('RG', 'SV', 'ADI', 'HC', 'MS', 'AP', 'AI', 'INQ', 'RCL', 'ADPF', 'SUMULA', 'SUMULA_TSE', 'SUMULA_STJ', 'REPETITIVO', 'IAC'):
+            self.assertEqual(RC.device_status(doc11, k), 'VALIDATED', k)              # J2I 32/32; SUMULA_STJ CC-J1 36/36; REPETITIVO/IAC CC-J2 38/38
+        for k in ('ADC', 'RE', 'ARE', 'MI', 'RHC'):
             self.assertEqual(RC.device_status(doc11, k), 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED', k)
         self.assertEqual(RC.device_status(doc11, 'XYZ'), 'NEW_JURIS_TYPE_REQUIRES_DESIGN')
         self.assertTrue(all(RC.device_status(doc11, k) == JT.physical_status(k) for k in JT.KLASS_TO_TIPO))

@@ -28,7 +28,10 @@ DEVICE_STATUS = ('VALIDATED', 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED', 
 # batches were built with (pilot CC, CC-J1, CC-J2 decisions are pinned by hash); physical_status is the current truth for new batches/records.
 PHYSICAL_VALIDATION_RECORDS = {
     'SUMULA_STJ': 'CC_J1_PHYSICAL_VALIDATION = 36/36 PASS (2026-10-18; JURISPRUDENCE_ENGINE/CC_J1_PHYSICAL_DEPLOY/CC_J1_PHYSICAL_VALIDATION.json)',
+    'REPETITIVO': 'CC_J2_PHYSICAL_VALIDATION = 38/38 PASS (2026-10-19; JURISPRUDENCE_ENGINE/CC_J2_PHYSICAL_DEPLOY/CC_J2_PHYSICAL_VALIDATION.json)',
+    'IAC': 'CC_J2_PHYSICAL_VALIDATION = 38/38 PASS (2026-10-19; JURISPRUDENCE_ENGINE/CC_J2_PHYSICAL_DEPLOY/CC_J2_PHYSICAL_VALIDATION.json)',
 }
+PHYSICAL_VALIDATION_DATES = {'SUMULA_STJ': '2026-10-18', 'REPETITIVO': '2026-10-19', 'IAC': '2026-10-19'}
 
 
 def device_status(klass):
@@ -43,9 +46,13 @@ def device_status(klass):
     return 'NEW_JURIS_TYPE_REQUIRES_DESIGN'
 
 
-def physical_status(klass):
-    """device_status + the physical validations recorded later (PHYSICAL_VALIDATION_RECORDS)."""
-    return 'VALIDATED' if klass.upper() in PHYSICAL_VALIDATION_RECORDS else device_status(klass)
+def physical_status(klass, as_of=None):
+    """device_status + the physical validations recorded later (PHYSICAL_VALIDATION_RECORDS). `as_of` (ISO date) reproduces the status known
+    on that date, so records generated earlier stay byte-identical."""
+    k = klass.upper()
+    if k in PHYSICAL_VALIDATION_RECORDS and (as_of is None or PHYSICAL_VALIDATION_DATES[k] <= as_of):
+        return 'VALIDATED'
+    return device_status(klass)
 
 
 def label(tipo, tribunal, numero):

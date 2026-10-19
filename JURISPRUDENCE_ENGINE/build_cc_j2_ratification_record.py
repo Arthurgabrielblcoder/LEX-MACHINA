@@ -17,6 +17,7 @@ sys.path[:0] = [str(HERE), str(ROOT / 'JURISPRUDENCE_AUDIT')]
 import batch_engine as E  # noqa: E402
 import juris_types as JT  # noqa: E402
 
+AS_OF = '2026-10-18'                    # device knowledge at ratification time (record stays reproducible)
 DEC = HERE / 'CC_J2_DECISIONS.json'
 FINAL = HERE / 'CC_J2_RATIFICATION_DOSSIER_FINAL.json'
 CC_INDEX = ROOT / 'DEVICE_INTEGRATION/staging_article_index_cc/_host/CC2002_TARGET_INDEX.json'
@@ -127,7 +128,7 @@ def build():
                           editorial_flags=flags, relation=f['relation'], temporal=f['temporal'], note=note, ficha_note=f.get('ficha_note'),
                           source=x['source'], source_anomaly=f.get('source_anomaly'), reopen=None if ok else f['reopen'], provisional=provisional,
                           ficha=ficha if ok else None, ficha_on_card=(ficha in card) if ok else None,
-                          device_status_physical=JT.physical_status(x['klass']) if ok else None, human_approved=ok, materialized=False))
+                          device_status_physical=JT.physical_status(x['klass'], as_of=AS_OF) if ok else None, human_approved=ok, materialized=False))
     appr = sorted(set(approved))
     new_t = sorted({t for t, _ in appr} - phys_targets)
     proj = sorted(phys | set(appr))
@@ -148,11 +149,11 @@ def build():
                               CF_PHYSICAL_BASELINE='315/198 (LEXV1; inalterado)',
                               PROJECTED_AFTER_CC_J2_MATERIALIZATION=f'{len(proj)}/{len({t for t, _ in proj})}',
                               projection_note='projeção, não baseline físico'),
-               device=dict(SUMULA_STJ_PHYSICALLY_VALIDATED='YES' if JT.physical_status('SUMULA_STJ') == 'VALIDATED' else 'NO',
+               device=dict(SUMULA_STJ_PHYSICALLY_VALIDATED='YES' if JT.physical_status('SUMULA_STJ', as_of=AS_OF) == 'VALIDATED' else 'NO',
                            SUMULA_STJ_REFERENCE=JT.PHYSICAL_VALIDATION_RECORDS.get('SUMULA_STJ'),
                            IAC_SUPPORTED_ARCHITECTURALLY='YES' if JT.device_status('IAC') != 'NEW_JURIS_TYPE_REQUIRES_DESIGN' else 'NO',
-                           IAC_PHYSICALLY_VALIDATED='YES' if JT.physical_status('IAC') == 'VALIDATED' else 'NO',
-                           REPETITIVO_STJ_PHYSICALLY_VALIDATED='YES' if JT.physical_status('REPETITIVO') == 'VALIDATED' else 'NO',
+                           IAC_PHYSICALLY_VALIDATED='YES' if JT.physical_status('IAC', as_of=AS_OF) == 'VALIDATED' else 'NO',
+                           REPETITIVO_STJ_PHYSICALLY_VALIDATED='YES' if JT.physical_status('REPETITIVO', as_of=AS_OF) == 'VALIDATED' else 'NO',
                            physical_checklist_requirements=['IAC 1 (rótulo IAC) no CC art. 202, p.u.',
                                                             'REPETITIVO STJ n (primeira exibição física do rótulo)']),
                approved_relations=[dict(target_id=t, precedent=p) for t, p in appr], new_targets=new_t,

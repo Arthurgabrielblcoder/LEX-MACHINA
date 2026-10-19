@@ -23,6 +23,7 @@ import juris_types as JT  # noqa: E402
 from build_cc_j1_materialization import human_target, target_order, CC_FILE, CF_FILE, LOOKUP_ENTRY_BYTES, CACHE_ENTRIES_MAX  # noqa: E402
 
 P, S, T = E.P, E.S, E.T
+AS_OF = '2026-10-18'                    # device knowledge at preflight time (record stays reproducible)
 REC = HERE / 'CC_J2_RATIFICATION_RECORD.json'
 DEC = HERE / 'CC_J2_DECISIONS.json'
 STJ = HERE / 'stj/STJ_SUMULAS_INDEX.json'
@@ -292,10 +293,10 @@ def build():
         IAC_LABEL_SIMULATION='PASS' if labels.get('IAC n') == 1 and JT.label('iac', 'STJ', '1') == 'IAC 1' else 'FAIL',
         REPETITIVO_STJ_LABEL_SIMULATION='PASS' if labels.get('REPETITIVO STJ n', 0) == sum(1 for _, p in rels if ':REPETITIVO:' in p) else 'FAIL',
         IAC_ARCHITECTURAL_SUPPORT='YES' if JT.device_status('IAC') != 'NEW_JURIS_TYPE_REQUIRES_DESIGN' else 'NO',
-        IAC_PHYSICAL_VALIDATION='YES' if JT.physical_status('IAC') == 'VALIDATED' else 'NO',
+        IAC_PHYSICAL_VALIDATION='YES' if JT.physical_status('IAC', as_of=AS_OF) == 'VALIDATED' else 'NO',
         REPETITIVO_STJ_ARCHITECTURAL_SUPPORT='YES' if JT.device_status('REPETITIVO') != 'NEW_JURIS_TYPE_REQUIRES_DESIGN' else 'NO',
-        REPETITIVO_STJ_PHYSICAL_VALIDATION='YES' if JT.physical_status('REPETITIVO') == 'VALIDATED' else 'NO',
-        SUMULA_STJ_PHYSICALLY_VALIDATED='YES' if JT.physical_status('SUMULA_STJ') == 'VALIDATED' else 'NO', DEVICE_STATUS_SOURCE='physical_status',
+        REPETITIVO_STJ_PHYSICAL_VALIDATION='YES' if JT.physical_status('REPETITIVO', as_of=AS_OF) == 'VALIDATED' else 'NO',
+        SUMULA_STJ_PHYSICALLY_VALIDATED='YES' if JT.physical_status('SUMULA_STJ', as_of=AS_OF) == 'VALIDATED' else 'NO', DEVICE_STATUS_SOURCE='physical_status',
         NEW_TYPES=dict(sorted(ty.items())), TRIBUNALS=dict(sorted(collections.Counter(p.split(':')[0] for p in by_prec).items())),
         CACHE_ENTRIES_USED=len(keys), CACHE_ENTRIES_MAX=CACHE_ENTRIES_MAX, CACHE_MARGIN=CACHE_ENTRIES_MAX - len(keys), RECORDS=len(rec_lines),
         RECORDS_BYTES=len(recs), LOOKUP_BYTES=len(look), PSRAM_ESTIMATED=psram, PSRAM_PREVIOUS_LAYER=len(pkg0.lookups) * LOOKUP_ENTRY_BYTES + len(recs0) + 1,
