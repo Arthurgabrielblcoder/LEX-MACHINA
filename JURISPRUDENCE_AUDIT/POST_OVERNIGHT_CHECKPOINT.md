@@ -18,6 +18,8 @@ Documento: `JURISPRUDENCE_ENGINE/MULTINORM_CF_CC_J1_FROZEN.md`.
 
 **CC-J2 MATERIALIZATION PREFLIGHT (2026-10-18, host-only): PARTIAL.** O candidato está validado: 20 relações, 18 targets (15 novos), CC 49/39, total 364/237, E2E 18/18, regressão 0 no CC-J1 e na CF. Bloqueio de deploy: ADDITIVE_ONLY = NO, porque os 4 arquivos da camada 06_NORMALIZADO precisam ser substituídos (o firmware lê caminhos fixos). Falta a decisão do usuário (opções A/B/C em `JURISPRUDENCE_ENGINE/CC_J2_MATERIALIZATION_PREFLIGHT.md`).
 
+**CC-J2 no cartão (2026-10-19, deploy misto transacional, só dados):** 17 fichas novas e os 4 arquivos da 06_NORMALIZADO substituídos. Leitura dos bytes do cartão: CC 49/39, total 364/237, CF 315/198; regressão 0 no CC-J1 e na CF. O baseline físico só muda depois do teste humano (`CC_J2_PHYSICAL_VALIDATION` PENDENTE). Relatório: `JURISPRUDENCE_ENGINE/CC_J2_PHYSICAL_DEPLOY_REPORT.md`.
+
 ## Estado anterior (J2J, 2026-10-18)
 
 ```
