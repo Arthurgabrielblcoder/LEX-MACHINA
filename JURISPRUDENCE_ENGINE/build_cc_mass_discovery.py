@@ -38,7 +38,7 @@ SOURCES = {
     'STJ_SUMULAS_PDF': HERE / 'stj/STJ_SUMULAS_INDEX.json',
     'STJ_PRECEDENTES_QUALIFICADOS': HERE / 'stj/STJ_PRECEDENTES_INDEX_V2.json',
     'STJ_ESPELHOS_ACORDAOS': HERE / 'stj/STJ_ESPELHOS_CC2002_INDEX.json',
-    'STJ_ESPELHOS_TURMAS': HERE / 'stj/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json',
+    'STJ_ESPELHOS_TURMAS': HERE / 'stj/_local/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json',   # 47 MB derived index: not versioned (sha + rebuild recipe)
     'STF_JURISPRUDENCIA': HERE / 'stf/STF_CC2002_INDEX.json',
     'PLANALTO_VIDE': PLANALTO,
 }
@@ -50,6 +50,7 @@ BLOCKED_SOURCES = {
                                       'desafio / 404 no navegador, 2026-10-19',
     'STF_API_DIRETA_DO_HOST': 'POST direto do host recebe desafio WAF 202; captura feita pelo navegador (caminho normal da página)',
 }
+LOCAL_RAW, LOCAL_REJ = '_local/CC_MASS_DISCOVERY_RAW_FULL.jsonl', '_local/CC_MASS_DISCOVERY_REJECTED_TURMAS.jsonl'
 JOINT = {'STF:ADI:6792': 'STF:ADI:6792-7055', 'STF:ADI:7055': 'STF:ADI:6792-7055', 'STF:ADI:7047': 'STF:ADI:7047-7064', 'STF:ADI:7064': 'STF:ADI:7047-7064'}
 NON_MERIT_CLASSES = ('APN', 'CC', 'MC', 'PET', 'AI', 'AR', 'RCL', 'HC', 'RHC', 'SLS', 'SS', 'SL', 'IF', 'EXSUSP', 'INQ', 'SD', 'CAUINOM')
 HOMOLOGATORY = ('SEC', 'HDE')
@@ -432,14 +433,121 @@ def build():
         if x['tier'] in 'AB' and any(o != x['target_id'] and o.startswith(x['target_id'] + ':') for o in spec[x['precedent_id']]):
             x.update(tier='C', tier_code='SUBSUMED_BY_SPECIFIC_TARGET', tier_reason='o mesmo precedente tem vínculo a um dispositivo mais específico deste artigo',
                      status='NOT_QUALIFIED')
+    turma_representatives(out, phys_targets | {t for t, _ in dpair}, recs)
     return recs, inv, out, index_doc, phys
+
+
+NOT_KNOWN = re.compile(r'conhecid[oa]s?\s+para\s+n[ãa]o\s+conhecer|(?:recursos?\s+especia(?:l|is)|agravos?(?:\s+interno)?|embargos(?:\s+de\s+diverg[êe]ncia)?)'
+                       r'[^.;]{0,90}?\bn[ãa]o\s+conhecid[oa]s?', re.I)
+MERIT_VERB = re.compile(r'(?:recursos?|agravos?|embargos)[^.;]{0,120}?\b(?:des|im)?provid[oa]s?\b|\bdesprov[êe]-l|'      # this court's dispositivo,
+                        r'\b(?:negar|dar)(?:-lhes?)?\s+(?:parcial\s+)?provimento', re.I)                            # not 'a origem negou provimento'
+ADMISSIBILITY = re.compile(r's[úu]mulas?\s*(?:n[º°.]*\s*)?(?:5|7|83|211|282|283|284|356|518)\b|prequestion|reexame|fundamento\s+(?:aut[ôo]nomo|inatacado)|'
+                           r'intempestiv|deser[çc][ãa]o|similitude|dissenso\s+n[ãa]o|paradigmas?|incognosc', re.I)
+CLAIM_ZONE = re.compile(r'\bI\.?\s*[-–]?\s*CASO EM EXAME\b(.*?)(?=\bIII\.?\s*[-–]?\s*RAZ[ÕO]ES DE DECIDIR\b)', re.I | re.S)
+HOLDING_LIST = re.compile(r'Dispositivos?\s+relevantes?\s+citados?', re.I)
+CORRESP = re.compile(r'correspond|atualmente\s+(?:regid|previst|disciplinad)|equivalente|reproduzid|repetid[oa]\s+(?:pelo|no)|mesma\s+reda', re.I)
+CC1916 = re.compile(r'C[óo]digo\s+Civil\s+(?:de\s+)?1916|C[óo]digo\s+Civil\s+anterior|CC\s*/?\s*(?:1916|16)\b|C[óo]digo\s+Bevil', re.I)
+CLAIM_CUE = re.compile(r'alegad|apontad|sustent|suscit|aduz|inadmit|[óo]bices?|prequestion|saber se|quest[ãa]o em discuss|'
+                       r's[úu]mulas?\s*(?:n[º°.]*\s*)?(?:5|7|211|282|283|284|356)\b', re.I)
+
+
+def merit_check(text, target):
+    """Non-qualified acórdão: does the court decide on the dispositivo? None when it does; else (code, reason). (a) The appeal was not known
+    for an admissibility bar (Súmula 7/5/211..., prequestionamento, paradigma) and nothing was provided/denied -> no merit decision (older
+    acórdãos that 'não conhecem' after deciding the question, with no such bar, are kept). (b) Every mention of the article is in the party's
+    claim or the question ('alegada violação', 'saber se', admissibility bars, the 'caso em exame / questão em discussão' sections, the latter
+    only when the 'III. Razões de decidir' marker bounds them) -> mention only. The court's own 'Dispositivos relevantes citados' / 'Tese de
+    julgamento'. The CNJ-format 'Dispositivos relevantes citados' list names every cited dispositivo (barred ones too): it is neutral, and keeps
+    the relation only when it is the article's sole mention."""
+    text = text or ''
+    if NOT_KNOWN.search(text) and not MERIT_VERB.search(text) and ADMISSIBILITY.search(text):
+        return ('NO_MERIT_DECISION', 'recurso não conhecido por óbice de admissibilidade: o acórdão não decide a questão de direito civil')
+    art = E.T.parse_target_id(target)['article']
+    m = re.match(r'(\d+)(.*)', art)
+    num = f"{int(m.group(1)):,}".replace(',', '.') + m.group(2)
+    zones = [(z.start(1), z.end(1)) for z in CLAIM_ZONE.finditer(text)]
+    hl = HOLDING_LIST.search(text)
+    hits = [h.start() for h in re.finditer(r'(?<![\d.])' + re.escape(num) + r'(?![\d])', text)]
+    if not hits:
+        return None
+    body = [h for h in hits if not (hl and h > hl.start())]
+    if not body:
+        return None                                       # cited only in the court's own list: kept for human review
+    for h in body:
+        in_zone = any(a <= h < b for a, b in zones)
+        window = re.sub(r'\b(arts?|n|fls?|inc|par|al)\.', r'\1', text[max(0, h - 160):h], flags=re.I)   # abbreviation dots are not sentence ends
+        window = window[max(window.rfind('. '), window.rfind('; ')) + 1:]
+        if not in_zone and not CLAIM_CUE.search(window):
+            return None
+    return ('MENTION_IN_CLAIM_ONLY', 'o dispositivo aparece só na alegação da parte, na questão submetida ou no óbice de admissibilidade, não nas razões de decidir')
+
+
+def cc1916_correspondence(text, target):
+    """'arts. 849, III, e 851 do CC/1916, correspondentes aos arts. 1.499, IV, e 1.500 do CC/2002' / 'matéria atualmente regida pelo art.
+    1.641, II': the decision applied the CC/1916; the CC/2002 article is cited as its correspondent (temporal review, never TIER A)."""
+    if not CC1916.search(text or ''):
+        return False
+    art = E.T.parse_target_id(target)['article']
+    m = re.match(r'(\d+)(.*)', art)
+    num = f"{int(m.group(1)):,}".replace(',', '.') + m.group(2)
+    for h in re.finditer(r'(?<![\d.])' + re.escape(num) + r'(?![\d])', text):
+        if CORRESP.search(text[max(0, h.start() - 90):h.start()]):
+            return True
+    return False
+
+
+def turma_representatives(out, covered, recs):
+    """Non-qualified acórdãos of the Turmas (3ª/4ª, private law) repeat the same article hundreds of times (art. 205: 384 acórdãos): counting
+    each would replicate one relation to inflate the count. They only fill targets that no published, decided or higher-source A/B relation
+    covers; per such target ONE representative is kept — strong text evidence in the ementa, article named in the ementa header first, then
+    the most recent judgment, then the id — and the others are corroboration (TIER C, linked to it). Deterministic."""
+    raw = {r['raw_id']: r for r in recs}
+    for x in out:                                         # non-qualified espelho acórdãos must decide on the dispositivo (any órgão)
+        txt = ' '.join(sorted({raw[i].get('text') or '' for i in x['raw_ids']}))
+        if x['tier'] in 'AB' and cc1916_correspondence(txt, x['target_id']):
+            x['flags'] = sorted(set(x['flags']) | {'CORRESPONDENCIA_CC1916'})
+            if x['tier'] == 'A':
+                x.update(tier='B', tier_code='OFFICIAL_BUT_HUMAN_REVIEW_REQUIRED', tier_reason='CORRESPONDENCIA_CC1916')
+            else:
+                x['tier_reason'] = ', '.join(['CORRESPONDENCIA_CC1916'] + [r for r in x['tier_reason'].split(', ') if r])
+        if x['tier'] in 'AB' and not x['qualified_precedent'] and set(x['sources']) <= set(ESPELHO_SOURCES):
+            why = merit_check(txt, x['target_id'])
+            if why:
+                x.update(tier='C', tier_code=why[0], tier_reason=why[1], status='NOT_QUALIFIED')
+    higher = covered | {x['target_id'] for x in out if x['tier'] in 'AB' and x['sources'] != ['STJ_ESPELHOS_TURMAS']}
+    pool = collections.defaultdict(list)
+    for x in out:
+        if x['tier'] not in 'AB' or x['sources'] != ['STJ_ESPELHOS_TURMAS']:
+            continue
+        if x['target_id'] in higher:
+            x.update(tier='C', tier_code='COVERED_BY_HIGHER_SOURCE', status='NOT_QUALIFIED',
+                     tier_reason='acórdão de Turma (não qualificado) para dispositivo já coberto por vínculo publicado, decidido ou de fonte superior')
+        elif x['evidence_strength'] != 'STRONG' or not any(f == 'ementa' for f in x['evidence_fields']):
+            x.update(tier='C', tier_code='NON_QUALIFIED_WEAK_EVIDENCE', status='NOT_QUALIFIED',
+                     tier_reason='acórdão de Turma sem o dispositivo nomeado de forma direta na ementa (só indexação ou evidência indireta)')
+        else:
+            pool[x['target_id']].append(x)
+    for t, xs in pool.items():
+        art = E.T.parse_target_id(t)['article']
+        m = re.match(r'(\d+)(.*)', art)
+        num = f"{int(m.group(1)):,}".replace(',', '.') + m.group(2)                 # '1368-B' -> '1.368-B', as ementas write it
+
+        def rank(x):
+            head = (raw[x['raw_ids'][0]].get('citation_context') or '')[:300]
+            return ('CORRESPONDENCIA_CC1916' not in x['flags'], bool(re.search(r'\bARTS?\.?\s*(?:[\d.]+\s*(?:,|E)\s*)*' + re.escape(num) + r'\b', head.upper())), iso_date(x['judgment_date']) or '', x['id'])
+        xs.sort(key=rank, reverse=True)
+        rep = xs[0]
+        rep['corroborating_precedents'] = [o['precedent_id'] for o in xs[1:]]
+        for o in xs[1:]:
+            o.update(tier='C', tier_code='CORROBORATION_NON_QUALIFIED', status='NOT_QUALIFIED', representative=rep['id'],
+                     tier_reason=f"corrobora {rep['precedent_id']} (representante do dispositivo entre os acórdãos de Turma)")
 
 
 def area_counts(index_doc):
     return collections.Counter(E.theme_of(t['target_id'], AREAS) for t in index_doc['targets'] if t['kind'] == 'ARTIGO')
 
 
-RISK_GROUPS = [('TEMPORALIDADE', ('REDACAO_ALTERADA_APOS_JULGAMENTO', 'PRECEDENTE_ANTERIOR_AO_CC2002', 'POSSIVEL_REGIME_CC1916')),
+RISK_GROUPS = [('TEMPORALIDADE', ('REDACAO_ALTERADA_APOS_JULGAMENTO', 'PRECEDENTE_ANTERIOR_AO_CC2002', 'POSSIVEL_REGIME_CC1916', 'CORRESPONDENCIA_CC1916')),
                ('USO_CONTEXTUAL_STF', ('USO_CONTEXTUAL_POSSIVEL',)),
                ('CLASSE_HOMOLOGATORIA', ('CLASSE_HOMOLOGATORIA',)),
                ('PROVISORIO_OU_CAUTELAR', ('PRECEDENTE_PROVISORIO', 'DECISAO_CAUTELAR')),
@@ -517,8 +625,14 @@ def outputs():
                  groups=dict(GREEN=[x['id'] for x in q if x['tier'] == 'A'],
                              YELLOW={g: [x['id'] for x in q if x['tier'] == 'B' and risk_group(x) == g] for g, _ in RISK_GROUPS + [('OUTROS', ())]},
                              RED_COUNT=c['C']), items=items)
-    files = {'CC_MASS_DISCOVERY_RAW.jsonl': jsonl([{k: v for k, v in r.items() if k not in ('text', 'tese')} for r in recs]), 'CC_MASS_DISCOVERY_QUALIFIED.jsonl': jsonl(q),
-             'CC_MASS_DISCOVERY_REJECTED.jsonl': jsonl([x for x in out if x['tier'] == 'C']),
+    # large raw data of the Turmas is not versioned (project policy): the versioned RAW keeps every other source plus the Turma records behind a
+    # qualified relation; the full RAW and the Turma rejections go to _local/ (git-ignored), with their sha256 in the manifest
+    q_raw = {i for x in q for i in x['raw_ids']}
+    slim = [{k: v for k, v in r.items() if k not in ('text', 'tese')} for r in recs]
+    files = {'CC_MASS_DISCOVERY_RAW.jsonl': jsonl([r for r in slim if r['source'] != 'STJ_ESPELHOS_TURMAS' or r['raw_id'] in q_raw]),
+             'CC_MASS_DISCOVERY_QUALIFIED.jsonl': jsonl(q),
+             'CC_MASS_DISCOVERY_REJECTED.jsonl': jsonl([x for x in out if x['tier'] == 'C' and x['sources'] != ['STJ_ESPELHOS_TURMAS']]),
+             LOCAL_RAW: jsonl(slim), LOCAL_REJ: jsonl([x for x in out if x['tier'] == 'C' and x['sources'] == ['STJ_ESPELHOS_TURMAS']]),
              'CC_MASS_RATIFICATION_QUEUE.json': dumpb(queue),
              'CC_MASS_SOURCE_INVENTORY.json': dumpb(dict(completed=inv, blocked=BLOCKED_SOURCES, run_date=RUN_DATE)),
              'CC_JURIS_COVERAGE_MAP.json': dumpb(cov), 'CC_MASS_DISCOVERY_METRICS.json': dumpb(metrics)}
@@ -631,7 +745,25 @@ def audit_md(q, sam, review):
           '- **Dupla contagem do acórdão paradigma:** o REsp paradigma de um Tema Repetitivo contava como precedente próprio e como o Tema; agora conta uma vez.',
           '- **Indexação documental sem texto:** legislação citada (STF e espelhos do STJ) sem o artigo na tese/ementa vira C (só menção); o mesmo critério '
           'para STF e STJ.',
-          '- **Questão submetida contra a tese:** dispositivo só na questão, com a tese aplicando outra norma, vira C.']
+          '- **Questão submetida contra a tese:** dispositivo só na questão, com a tese aplicando outra norma, vira C.',
+          '- **Julgamentos conjuntos do STJ:** acórdãos gêmeos da mesma sessão (mesmo órgão, data e ementa salvo "provido/improvido") contavam um por '
+          'processo (ex.: REsp 2082647, 2100103 e 1929926, 2ª Seção, 12/03/2025); agora uma relação, como já era no STF (ADC 29/30 + ADI 4578).',
+          '- **Fallback antes da deduplicação:** "art. 723, parágrafo único" (inexistente no índice) caía no art. 723 e duplicava o par já existente; o '
+          'fallback passou a ser resolvido antes do agrupamento, e a classe do julgamento conjunto vem do precedente canônico.',
+          '- **Inflação por acórdãos de Turma:** a 3ª e a 4ª Turmas repetem o mesmo artigo centenas de vezes (art. 205: 384 acórdãos). Contar cada um '
+          'seria replicar a relação. Acórdão de Turma (não qualificado) só preenche dispositivo sem vínculo publicado, decidido ou de fonte superior; '
+          'por dispositivo, um representante (evidência textual forte na ementa; artigo na verbetação; julgamento mais recente; id), os demais '
+          'viram corroboração (C, ligada ao representante).',
+          '- **Recurso não conhecido:** acórdão não qualificado que não conhece do recurso por óbice de admissibilidade (Súmulas 5/7/211/282/283/284, '
+          'prequestionamento, paradigma) e não dá nem nega provimento não decide o dispositivo → C. O verbo de mérito tem de ser do próprio julgado '
+          '("a origem negou provimento" não conta); acórdãos antigos que "não conhecem" depois de decidir a questão, sem óbice, ficam.',
+          '- **Menção só na alegação:** dispositivo citado apenas na alegação da parte, na questão em discussão ("saber se..."), no óbice de '
+          'admissibilidade ou na seção "caso em exame" → C. A lista "Dispositivos relevantes citados" (formato CNJ) cita também os dispositivos barrados: '
+          'é neutra, e só mantém o vínculo quando for a única menção.',
+          '- **Correspondência com o CC/1916:** "arts. 849, III, e 851 do CC/1916, correspondentes aos arts. 1.499, IV, e 1.500 do CC/2002" — a decisão '
+          'aplicou o código antigo; o vínculo recebe CORRESPONDENCIA_CC1916 (grupo TEMPORALIDADE, nunca TIER A) e perde prioridade como representante.',
+          '- **Fonte oficial malformada:** o arquivo mensal 20240229.json da 2ª Seção é JSON inválido ("Sem lançamentos para o mês de fevereiro/2024") e '
+          'um campo de referência traz "PAR:000P3": registrados (MALFORMED_FILES / GRAMMAR_REJECTS), nunca reparados nem adivinhados.']
     return '\n'.join(L) + '\n', m
 
 
@@ -667,6 +799,21 @@ def report_md(metrics, cov, q, inv, aud):
          '15. Estratégia de ratificação em massa: aprovar o GREEN (TIER A) em bloco; revisar o YELLOW por grupo de risco (temporalidade, provisório, '
          'realocação, não qualificado, homologatória, evidência indireta), decidindo por regra de grupo e só os casos sinalizados individualmente; manter o '
          'RED fora.', '',
+         '## Composição do qualificado (leitura honesta)', '',
+         f"- Precedentes qualificados, Seções, Corte Especial e STF: {sum(1 for x in q if x['sources'] != ['STJ_ESPELHOS_TURMAS'])} relações "
+         f"(TIER A {len(a)}).",
+         f"- Representantes de acórdãos da 3ª/4ª Turma: {sum(1 for x in q if x['sources'] == ['STJ_ESPELHOS_TURMAS'])} relações, uma por dispositivo "
+         'sem outro vínculo; todas TIER B (precedente não qualificado). '
+         f"{metrics['TIER_C_BY_REASON'].get('CORROBORATION_NON_QUALIFIED', 0)} acórdãos ficaram como corroboração e "
+         f"{metrics['TIER_C_BY_REASON'].get('COVERED_BY_HIGHER_SOURCE', 0)} já estavam cobertos por fonte superior (não contados).",
+         '- Sem os acórdãos de Turma o total seria inferior a 200: a meta foi atingida com jurisprudência oficial real, mas em grande parte não '
+         'vinculante — o ganho é cobertura (dispositivos sem nenhuma jurisprudência), não autoridade.', '',
+         '## Dados não versionados (política de datasets brutos)', '',
+         '- `stj/_local/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json` (índice derivado, 47 MB) e `CC_MASS_DISCOVERY/_local/` (RAW completo e rejeições das '
+         'Turmas) ficam fora do git; os hashes estão em CC_MASS_DISCOVERY_SHA256.json e CC_MASS_SOURCE_INVENTORY.json (arquivo a arquivo).',
+         '- Reconstrução: baixar os recursos dos datasets `espelhos-de-acordaos-terceira-turma` e `espelhos-de-acordaos-quarta-turma` do portal '
+         'https://dadosabertos.web.stj.jus.br (CKAN, CC-BY) e rodar `python discovery_stj_espelhos.py --dir <3ª Turma> --dir <4ª Turma> --out '
+         'stj/_local/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json`, depois `python build_cc_mass_discovery.py`; o `--check` confere byte a byte.', '',
          '## Cobertura por livro', '', '| Livro | Artigos no CC | Artigos com J física | Novos targets candidatos | Relações candidatas (A/B) | Lacuna |',
          '|---|---:|---:|---:|---:|---|']
     L += [f"| {k} | {v['articles_in_cc']} | {v['articles_with_physical_j']} | {v['new_candidate_targets']} | {v['candidate_relations']} "
@@ -677,7 +824,9 @@ def report_md(metrics, cov, q, inv, aud):
           '## Riscos jurídicos identificados', '',
           '- Lei 14.905/2024 (arts. 406 e 591) e Lei 15.040/2024 (seguros, arts. 757–802 revogados): pares temporais marcados ou rejeitados.',
           '- Precedentes anteriores ao CC/2002 e regras de transição (art. 2.028): marcados para revisão.',
-          '- Acórdãos não qualificados (EREsp/EAREsp/REsp da Segunda Seção e da Corte Especial, homologações) ficam no máximo em B.',
+          '- Acórdãos não qualificados (Seções, Corte Especial, Turmas, homologações) ficam no máximo em B; os de Turma, só como representante.',
+          '- Recurso não conhecido por óbice de admissibilidade e dispositivo citado só na alegação da parte: rejeitados (C).',
+          '- Decisões que aplicaram o CC/1916 citando o artigo correspondente do CC/2002: sinalizadas (CORRESPONDENCIA_CC1916).',
           '- Indexação documental (legislação citada) não basta: exige o artigo no texto da tese/ementa.',
           '- Temas afetados/sobrestados/"RE pendente": provisórios (B).', '',
           f"Auditoria da amostra: {aud['REVIEWED']}/{aud['SAMPLED_RELATIONS']} revisados; erros de identidade {aud['SOURCE_IDENTITY_ERRORS']}, de target "
@@ -696,6 +845,7 @@ def main():
         sys.exit(0 if ok else 1)
     OUT.mkdir(exist_ok=True)
     for k, v in files.items():
+        (OUT / k).parent.mkdir(parents=True, exist_ok=True)
         (OUT / k).write_bytes(v)
     print(json.dumps({k: v for k, v in metrics.items() if not isinstance(v, dict)}, ensure_ascii=False, indent=1))
 

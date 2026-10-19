@@ -76,7 +76,11 @@ def refs(raw_list, norm, laws):
         key = (m.group(2), 0 if '*' in m.group(3) else int(m.group(3)), int(m.group(4)))
         if laws.get(key) != norm:
             continue
-        t, b = SUM.ref_targets(norm, r[m.end():])
+        try:
+            t, b = SUM.ref_targets(norm, r[m.end():])
+        except ValueError:                       # malformed official field (e.g. 'PAR:000P3'): rejected whole, never guessed
+            bad.append(r.strip()[:200])
+            continue
         out += t
         bad += b
     return list(dict.fromkeys(out)), bad
