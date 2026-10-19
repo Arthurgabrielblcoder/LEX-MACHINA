@@ -1,0 +1,21 @@
+# CC MASS AUDIT — erros sistemáticos (regra corrigida e grupo inteiro reprocessado)
+
+Cada padrão foi achado na auditoria aprofundada (amostra de 200) ou na validação independente, corrigido na regra do construtor e reaplicado às 932 relações. A coluna "relações afetadas" conta quantas das 932 deixaram o estado favorável por causa do padrão (uma relação pode cair em mais de um); para S09 conta os representantes de Turma substituídos.
+
+Relações que deixaram o estado favorável (todas eram TIER A/B na descoberta): 251.
+
+| Código | Padrão | Exemplos | Correção | Relações afetadas |
+|---|---|---|---|---:|
+| S01_CC1916_NUMBERING | Numeração do CC/1916 lida como CC/2002 | REsp 1695201 -> art. 1.178 ("CC16"); REsp 1428206 -> art. 1.521, III; REsp 1034302 -> art. 1.537; REsp 550940 -> art. 633 | marcas "antigo/anterior/revogado", "de 1.916", "CC16"; identidade do código propagada entre menções do mesmo número; "mesmo diploma" segue a lei mais próxima; julgados de 2003-2010 sem "2002" e de assunto alheio -> código ambíguo; assunto alheio ao texto do artigo do CC/2002 -> evidência insuficiente | 55 |
+| S02_OTHER_LAW | Número de outra norma (CPC, CDC, decreto, código estrangeiro, número de processo) | EAREsp 1294919 -> "art. 219 do CPC/1973"; ADI 6792 -> "art. 53, IV, a, do CPC"; SEC 11686 -> "Código Civil Francês"; REsp 1949262 -> "EAREsp n. 600.811" | atribuição da menção pela primeira lei na mesma oração; códigos estrangeiros; número seguido de ".ddd" não é artigo | 11 |
+| S03_ADMISSIBILITY | Artigo citado só no óbice de admissibilidade ou na alegação da parte | AREsp 2447501 -> art. 629 ("inexistência de ofensa ... Súmula 7"); AREsp 2915975 -> art. 692 ("o recorrente alegou"); AREsp 3137546 -> art. 166, I ("sem alteração da premissa fática") | o óbice e o verbo de alegação são lidos na oração inteira (antes e depois da menção) | 12 |
+| S04_QUESTION_NARRATIVE | Artigo só na questão submetida, na lista de teses ou na narrativa da decisão recorrida | REsp 1757560 -> art. 1.061 ("cinge-se a controvérsia"); REsp 1912956 -> art. 450 ("a controvérsia jurídica consiste"); AREsp 3061217 -> art. 1.026 ("(ii) a penhora ... contraria"); AREsp 2669468 -> art. 1.007 ("o acórdão de apelação reconheceu") | questão, lista enumerada de teses e narrativa da decisão recorrida não são razões de decidir (evidência insuficiente, não rejeição) | 15 |
+| S05_HEADING_ONLY | Verbetação ("ART. 157 DO CC/02") contada como fundamentação | REsp 1117137 -> art. 157; REsp 1839078 -> art. 1.053 | trecho curto em maiúsculas é verbetação; acórdão de Turma só com verbetação não fica pronto sem substituto | 64 |
+| S06_UNIT_NOT_IN_TEXT | Target de parágrafo/inciso sem o parágrafo/inciso no trecho | REsp 1758946 -> art. 1.410, I (trecho: "caput"); REsp 1294101 -> art. 395, p.ú. | o trecho precisa nomear a unidade do target | 26 |
+| S07_STF_CONTEXTUAL | Uso contextual ou analógico do CC em julgados do STF | RG 581 (ISS) -> arts. 233, 247, 250; ADC 29 -> art. 187; ADI 3890 -> art. 45; ADI 6019 -> arts. 205 e 2.028; ADI 5971 -> art. 1.723 | todas as 20 relações do STF revistas uma a uma na auditoria aprofundada | 15 |
+| S08_DUPLICATES | Julgamento conjunto ou acórdão paradigma contado ao lado do tema | ADPF 132 + ADI 4277 -> art. 1.723; REsp 1108013 (paradigma dos Temas 128/129) | índice oficial processos.csv (precedentes qualificados) marca o acórdão paradigma; duplicata com o tema é rejeitada | 3 |
+| S09_REPRESENTATIVE | Representante de Turma inferior a outro acórdão disponível | AREsp 2516630 -> art. 663 (só questão) => REsp 2175185; AREsp 3193287 -> art. 369 (verbetação) => AREsp 2634251 | substituição proposta quando o representante não tem fundamento direto e há acórdão de mérito com o artigo nas razões | 81 |
+
+Recomendação em bloco suspensa para cada grupo afetado até a correção; depois dela, nenhum grupo ficou BLOCKED_BY_SYSTEMIC_AUDIT: os casos que a regra não resolve com segurança vão para NEEDS_MORE_EVIDENCE ou INDIVIDUAL_REVIEW_REQUIRED, nunca para READY.
+
+Limites conhecidos (não corrigíveis por regra sem perder casos válidos): o validador de assunto produz falsos positivos (2 na amostra), só rebaixa para NEEDS_MORE_EVIDENCE; a corroboração entre acórdãos de Turma é um indício textual (polaridade + vocabulário), não prova de jurisprudência consolidada.
