@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "HOST_ONLY_CANDIDATE",
+  "flashed": false,
+  "sd_changed": false,
+  "source_base": "JURISPRUDENCE_ENGINE/firmware_multinorm (tipos genéricos + multinorma)",
+  "toolchain": {
+    "arduino_cli": "C:\\Users\\arthu\\AppData\\Local\\Programs\\Arduino IDE\\resources\\app\\lib\\backend\\resources\\arduino-cli.exe",
+    "core": "esp32:esp32 3.3.11",
+    "fqbn": "esp32:esp32:esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default",
+    "build_property": "compiler.cpp.extra_flags=-DLEX_DEVICE_V1_ENABLED=1",
+    "physical_hardware": "ESP32-S3 Dev Module; PSRAM 8 MB; flash física 16 MB"
+  },
+  "before": {
+    "program_bytes": 1107363,
+    "static_ram_bytes": 126188,
+    "app_bin_bytes": 1107504,
+    "app_sha256": "38c4d71f77b89223860a6643ef9880416cb1f22a8ba933524e6b083442216bb2",
+    "app_partition_bytes": 1310720,
+    "app_partition_free": 203216
+  },
+  "after": {
+    "program_bytes": 1108967,
+    "static_ram_bytes": 127724,
+    "app_bin_bytes": 1109120,
+    "app_sha256": "e2945cf55a00f27f6c35ff709e81732d804fd8c6f01958230cef0016f740a4a0",
+    "app_partition_bytes": 1310720,
+    "app_partition_free": 201600
+  },
+  "delta": {
+    "program_bytes": 1604,
+    "static_ram_bytes": 1536,
+    "app_bin_bytes": 1616
+  },
+  "candidate": {
+    "source": "candidate/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino",
+    "source_sha256": "3e8f8a2db7805c260b0d8d177b95cc6ad2aae9cf89f19e98e9f272c220b9a164",
+    "binary": "candidate/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino.bin",
+    "binary_sha256": "e2945cf55a00f27f6c35ff709e81732d804fd8c6f01958230cef0016f740a4a0",
+    "patch": "turma_display.patch"
+  },
+  "schema": {
+    "change": true,
+    "backward_compatible": true,
+    "optional_columns": [
+      "ORGAO",
+      "DATA",
+      "NATUREZA"
+    ],
+    "legacy_rows": "campos ausentes resultam em String vazia e preservam o rótulo legado"
+  },
+  "display": {
+    "preferred": "STJ 3ª T. · REsp 2.145.365",
+    "safe_fallback": "STJ · Acórdão 2.145.365",
+    "metadata_internal_tokens_exposed": []
+  }
+}

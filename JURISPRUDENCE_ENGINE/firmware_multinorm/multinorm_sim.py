@@ -18,6 +18,25 @@ CF_RUNTIME = '/99_LEX_V1/05_TEXT/CF88_RUNTIME.txt'
 NORMA_FIELD = 16          # LookupJurisCFCache.norma (multinorm); the J2I firmware had 8
 MAX_RELACOES_ARTIGO = 32
 TABLE = catalog_table()
+TURMA_CLASSES = {'resp': 'REsp', 'aresp': 'AREsp', 'eresp': 'EREsp', 'earesp': 'EAREsp', 'rms': 'RMS'}
+
+
+def format_process_number(number):
+    """Firmware-equivalent thousands grouping; non-numeric legacy values stay unchanged."""
+    value = str(number)
+    return f'{int(value):,}'.replace(',', '.') if value.isdigit() else value
+
+
+def turma_list_label(tribunal, tipo, numero, orgao='', natureza=''):
+    """Compact 320x240 list label; missing metadata fails safely without inventing a class or chamber."""
+    if natureza != 'PERSUASIVE_NON_BINDING':
+        return JT.label(tipo, tribunal, numero)
+    short = {'TERCEIRA TURMA': '3ª T.', 'QUARTA TURMA': '4ª T.'}.get(orgao)
+    klass = TURMA_CLASSES.get(tipo.lower())
+    number = format_process_number(numero)
+    if not short or not klass:
+        return f'{tribunal} · Acórdão {number}'
+    return f'{tribunal} {short} · {klass} {number}'
 
 
 def norma_juris_atual(path, in_adct=False, legacy=False):
@@ -94,8 +113,12 @@ def relation(line, rotulo):
     if not JT.id_accepted(rid, trib) or not tipo or not ident:
         return None
     arquivo = ident.replace(':', '_').replace('/', '_') + '.TXT'
-    return dict(referencia=rotulo, tribunal=trib, tipo=tipo, numero=num, status=status, label=JT.label(tipo, trib, num),
-                title=JT.title(tipo, trib, num), arquivo=arquivo, caminho='/99_JURISPRUDENCIA_V2/03_CONTEUDO/' + arquivo)
+    orgao, data, natureza = (f[8] if len(f) > 8 else ''), (f[9] if len(f) > 9 else ''), (f[10] if len(f) > 10 else '')
+    label = turma_list_label(trib, tipo, num, orgao, natureza)
+    title = f'{trib} {TURMA_CLASSES[tipo.lower()]} {format_process_number(num)}' if natureza == 'PERSUASIVE_NON_BINDING' and tipo.lower() in TURMA_CLASSES \
+        else JT.title(tipo, trib, num)
+    return dict(referencia=rotulo, tribunal=trib, tipo=tipo, numero=num, status=status, orgao=orgao, data=data, natureza=natureza, label=label,
+                title=title, arquivo=arquivo, caminho='/99_JURISPRUDENCIA_V2/03_CONTEUDO/' + arquivo)
 
 
 def carregar(pkg, path, art, par='', inc='', ali='', in_adct=False, legacy=False):

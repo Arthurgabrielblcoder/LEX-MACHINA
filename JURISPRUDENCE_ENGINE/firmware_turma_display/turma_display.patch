@@ -1,0 +1,91 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (multinorma)
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (turma display)
+@@ -773,6 +773,9 @@
+   String tipo;
+   String numero;
+   String status;
++  String orgao;
++  String dataJulgamento;
++  String natureza;
+   String arquivo;
+   String caminho;
+ };
+@@ -819,6 +822,7 @@
+ bool carregarCacheJurisCF();
+ TipoJurisprudencia classificarTipoJurisprudencia(String tipo);
+ String rotuloTipoJurisprudencia(const RelacaoJuridica &r);
++String rotuloListaJurisprudencia(const RelacaoJuridica &r);
+ void abrirCategoriaRelacao(CategoriaRelacao categoria);
+ void desenharBarraBusca();
+ String nomeCategoriaRelacao(CategoriaRelacao categoria);
+@@ -1061,7 +1065,7 @@
+
+ // Classes processuais (tribunal separado da classe): TIPO minusculo do IDX -> rotulo. Nova classe = nova linha, sem novo enum.
+ struct ClasseJurisRotulo { const char *tipo; const char *rotulo; };
+-static const ClasseJurisRotulo CLASSES_JURIS[]={{"hc","HC"},{"habeas_corpus","HC"},{"rhc","RHC"},{"ms","MS"},{"rms","RMS"},{"ap","AP"},{"ai","AI"},{"inq","Inq"},{"rcl","Rcl"},{"mi","MI"},{"pet","Pet"},{"ado","ADO"},{"re","RE"},{"are","ARE"},{"ext","Ext"}};
++static const ClasseJurisRotulo CLASSES_JURIS[]={{"hc","HC"},{"habeas_corpus","HC"},{"rhc","RHC"},{"ms","MS"},{"rms","RMS"},{"ap","AP"},{"ai","AI"},{"inq","Inq"},{"rcl","Rcl"},{"mi","MI"},{"pet","Pet"},{"ado","ADO"},{"re","RE"},{"are","ARE"},{"ext","Ext"},{"resp","REsp"},{"aresp","AREsp"},{"eresp","EREsp"},{"earesp","EAREsp"}};
+ static const char *rotuloClasseJuris(const String &tipoMinusculo)
+ {
+   for(size_t i=0;i<sizeof(CLASSES_JURIS)/sizeof(CLASSES_JURIS[0]);i++)
+@@ -1102,6 +1106,32 @@
+     case JTIPO_CLASSE: { String t=r.tipo; t.toLowerCase(); return String(rotuloClasseJuris(t))+" "+r.numero; }
+     default: return "OUTRO "+r.numero;
+   }
++}
++
++// Display de Turma: identidade jurídica compacta, derivada apenas dos metadados oficiais opcionais do IDX.
++String formatarNumeroProcesso(String numero)
++{
++  String digitos="";
++  for(size_t i=0;i<numero.length();i++){ if(numero[i]<'0' || numero[i]>'9') return numero; digitos+=numero[i]; }
++  String saida=""; int primeiro=digitos.length()%3; if(primeiro==0) primeiro=3;
++  for(int i=0;i<(int)digitos.length();i++){ if(i>0 && (i-primeiro)%3==0) saida+="."; saida+=digitos[i]; }
++  return saida;
++}
++
++String orgaoTurmaCompacto(const String &orgao)
++{
++  if(orgao=="TERCEIRA TURMA") return "3ª T.";
++  if(orgao=="QUARTA TURMA") return "4ª T.";
++  return "";
++}
++
++String rotuloListaJurisprudencia(const RelacaoJuridica &r)
++{
++  if(r.natureza!="PERSUASIVE_NON_BINDING") return rotuloTipoJurisprudencia(r);
++  String tipo=r.tipo; tipo.toLowerCase(); const char *classe=rotuloClasseJuris(tipo);
++  String numero=formatarNumeroProcesso(r.numero); String turma=orgaoTurmaCompacto(r.orgao);
++  if(!classe || turma.length()==0) return r.tribunal+" · Acórdão "+numero;
++  return r.tribunal+" "+turma+" · "+String(classe)+" "+numero;
+ }
+
+ String arquivoDetalheJurisCF(String identificador)
+@@ -2159,6 +2189,9 @@
+   r.tipo=tipo;
+   r.numero=numero;
+   r.status=status;
++  r.orgao=campoPipe(linha,8);
++  r.dataJulgamento=campoPipe(linha,9);
++  r.natureza=campoPipe(linha,10);
+   r.arquivo=arquivoDetalheJurisCF(identificador);
+   r.caminho=String(PASTA_CONTEUDO_JURIS_CF)+"/"+r.arquivo;
+   contabilizarTipoJurisCF(tipo);
+@@ -2274,6 +2307,9 @@
+     relacoesArtigo[i].tipo="";
+     relacoesArtigo[i].numero="";
+     relacoesArtigo[i].status="";
++    relacoesArtigo[i].orgao="";
++    relacoesArtigo[i].dataJulgamento="";
++    relacoesArtigo[i].natureza="";
+     relacoesArtigo[i].arquivo="";
+     relacoesArtigo[i].caminho="";
+   }
+@@ -4038,7 +4074,7 @@
+   }else{
+     int idx=indicesRelacaoCategoria[pos];
+     RelacaoJuridica &r=relacoesArtigo[idx];
+-    rotulo+=rotuloTipoJurisprudencia(r);
++    rotulo+=rotuloListaJurisprudencia(r);
+   }
+   imprimirUTF8(14,y+6,rotulo,cor,COR_FUNDO,34);
+ }
