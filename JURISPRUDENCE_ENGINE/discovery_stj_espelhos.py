@@ -24,7 +24,23 @@ sys.path[:0] = [str(HERE), str(HERE.parent / 'LEGAL_TARGET_ID')]
 import discovery_stj_precedentes as TXT  # noqa: E402
 import discovery_stj_sumulas as SUM  # noqa: E402
 
-TEMA = re.compile(r'Tema\s+Repetitivo\s+(\d+)(?:.*?Situa[çc][ãa]o do tema:\s*([^\n]+))?', re.I | re.S)
+TEMAS = re.compile(r'Temas?\s+Repetitivos?\s+([\d,\se]+)', re.I)
+SITU = re.compile(r'Situa[çc][ãa]o d[oa]s?\s+temas?:\s*([^\n]+)', re.I)
+IAC = re.compile(r'Incidente de Assun[çc][ãa]o de Compet[êe]ncia|\bIAC\b', re.I)
+
+
+def themes(x):
+    """'Tema(s) Repetitivo(s) N[, N...]' + 'Situação do(s) tema(s): A / B'. The STJ records IAC judgments in the same field; the nature comes
+    from the notes or the ementa ('Incidente de Assunção de Competência')."""
+    t = x.get('tema') or ''
+    m = TEMAS.search(t)
+    if not m:
+        return []
+    nums = re.findall(r'\d+', m.group(1))
+    sm = SITU.search(t)
+    sit = [s.strip() for s in sm.group(1).split('/')] if sm else []
+    kind = 'IAC' if IAC.search((x.get('notas') or '') + ' ' + (x.get('ementa') or '')[:300]) else 'REPETITIVO'
+    return [dict(numero=n, situacao=sit[i] if i < len(sit) else (sit[-1] if sit else ''), kind=kind) for i, n in enumerate(nums)]
 INCIDENTAL = ('EDcl', 'AgRg', 'AgInt', 'ProAfR', 'QO')
 PORTAL = 'https://dadosabertos.web.stj.jus.br/dataset/'
 
@@ -43,7 +59,12 @@ def iter_files(dirs):
                         if n.lower().endswith('.json'):
                             yield f'{Path(d).name}/{p.name}!{n}', h, json.loads(z.read(n).decode('utf-8'))
             else:
-                yield f'{Path(d).name}/{p.name}', h, json.loads(raw.decode('utf-8'))
+                try:
+                    docs = json.loads(raw.decode('utf-8'))
+                except ValueError as e:     # official file not valid JSON (e.g. 20240229 'Sem lançamentos' placeholder): recorded, never repaired
+                    yield f'{Path(d).name}/{p.name}', h, dict(malformed=str(e), head=raw[:200].decode('utf-8', 'replace'))
+                    continue
+                yield f'{Path(d).name}/{p.name}', h, docs
 
 
 def refs(raw_list, norm, laws):
@@ -65,8 +86,16 @@ def parse(dirs, norm):
     laws = SUM.catalog_laws()
     latest, files, st = {}, [], collections.Counter()
     for name, h, docs in iter_files(dirs):
+        if isinstance(docs, dict):
+            files.append(dict(file=name, sha256=h, espelhos=0, malformed_json=docs['malformed'],
+                              sem_lancamentos='Sem lan' in docs['head']))
+            st['MALFORMED_FILES'] += 1
+            continue
         files.append(dict(file=name, sha256=h, espelhos=len(docs)))
         for x in docs:
+            if not x.get('id'):
+                st['EMPTY_PLACEHOLDERS'] += 1
+                continue
             st['ESPELHOS_READ'] += 1
             latest[x['id']] = (x, name, h)
     entries = []
@@ -84,13 +113,14 @@ def parse(dirs, norm):
         st['WITH_TARGETS'] += 1
         sigla = re.sub(r'\s+', ' ', x.get('siglaClasse') or '').strip()
         main = sigla.split(' ')[-1] if sigla else 'ACORDAO'
-        temas = [dict(numero=m.group(1), situacao=(m.group(2) or '').strip()) for m in TEMA.finditer(x.get('tema') or '')]
+        temas = themes(x)
         full = re.sub(r'[^A-Za-z0-9]+', '_', sigla).strip('_').upper() or 'ACORDAO'          # 'AgInt nos EREsp' -> AGINT_NOS_ERESP (incident kept)
         entries.append(dict(id=f"STJ:{full}:{x.get('numeroProcesso')}", klass=main.upper(), sigla=sigla, number=str(x.get('numeroProcesso')),
                             incidental=any(sigla.startswith(i) for i in INCIDENTAL), espelho_id=eid, registro=x.get('numeroRegistro'),
                             orgao=x.get('nomeOrgaoJulgador'), relator=x.get('ministroRelator'), julgamento=x.get('dataDecisao'),
                             publicacao=re.sub(r'\s+', ' ', x.get('dataPublicacao') or '').strip(), ementa=re.sub(r'\s+', ' ', x.get('ementa') or '').strip(),
-                            tese=re.sub(r'\s+', ' ', x.get('teseJuridica') or '').strip(), temas=temas, targets=hits, grammar_rejects=bad,
+                            tese=re.sub(r'\s+', ' ', x.get('teseJuridica') or '').strip(), notas=re.sub(r'\s+', ' ', x.get('notas') or '').strip()[:300],
+                            temas=temas, targets=hits, grammar_rejects=bad,
                             source_document_id=f'espelho {eid} ({name})', source_url=PORTAL, file_sha256=h))
     return entries, files, st
 
@@ -110,7 +140,7 @@ def main():
                stats=dict(ESPELHOS_READ=st['ESPELHOS_READ'], ACORDAOS=st['ACORDAOS'], WITH_TARGETS=st['WITH_TARGETS'],
                           PAIRS=sum(len(e['targets']) for e in entries),
                           BY_EVIDENCE=dict(sorted(collections.Counter(m.split(':')[0] for e in entries for ms in e['targets'].values() for m in ms).items())),
-                          WITH_TEMA=sum(1 for e in entries if e['temas']), GRAMMAR_REJECTS=sum(len(e['grammar_rejects']) for e in entries)),
+                          WITH_TEMA=sum(1 for e in entries if e['temas']), MALFORMED_FILES=st['MALFORMED_FILES'], EMPTY_PLACEHOLDERS=st['EMPTY_PLACEHOLDERS'], GRAMMAR_REJECTS=sum(len(e['grammar_rejects']) for e in entries)),
                entries=entries)
     Path(a.out).write_text(json.dumps(doc, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
     print(json.dumps(doc['stats'], ensure_ascii=False, indent=1))

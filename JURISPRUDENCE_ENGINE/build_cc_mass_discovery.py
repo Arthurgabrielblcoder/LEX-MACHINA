@@ -38,9 +38,11 @@ SOURCES = {
     'STJ_SUMULAS_PDF': HERE / 'stj/STJ_SUMULAS_INDEX.json',
     'STJ_PRECEDENTES_QUALIFICADOS': HERE / 'stj/STJ_PRECEDENTES_INDEX_V2.json',
     'STJ_ESPELHOS_ACORDAOS': HERE / 'stj/STJ_ESPELHOS_CC2002_INDEX.json',
+    'STJ_ESPELHOS_TURMAS': HERE / 'stj/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json',
     'STF_JURISPRUDENCIA': HERE / 'stf/STF_CC2002_INDEX.json',
     'PLANALTO_VIDE': PLANALTO,
 }
+ESPELHO_SOURCES = ('STJ_ESPELHOS_ACORDAOS', 'STJ_ESPELHOS_TURMAS')
 BLOCKED_SOURCES = {
     'STJ_JURISPRUDENCIA_EM_TESES': 'https://scon.stj.jus.br/SCON/jt/ — desafio Cloudflare com resposta exigida (não contornado), 2026-10-19',
     'STJ_PESQUISA_PRONTA': 'https://scon.stj.jus.br/SCON/pesquisa_pronta/ — mesmo desafio (403), 2026-10-19',
@@ -52,7 +54,7 @@ JOINT = {'STF:ADI:6792': 'STF:ADI:6792-7055', 'STF:ADI:7055': 'STF:ADI:6792-7055
 NON_MERIT_CLASSES = ('APN', 'CC', 'MC', 'PET', 'AI', 'AR', 'RCL', 'HC', 'RHC', 'SLS', 'SS', 'SL', 'IF', 'EXSUSP', 'INQ', 'SD', 'CAUINOM')
 HOMOLOGATORY = ('SEC', 'HDE')
 QUALIFIED_KLASS = ('SUMULA', 'REPETITIVO', 'IAC', 'RG', 'ADI', 'ADC', 'ADPF', 'ADO', 'SIRDR')
-STRONG = ('DIRECT', 'COMPONENT_FIRST', 'LIST_TAIL', 'SAME_DIPLOMA')
+STRONG = ('DIRECT', 'COMPONENT_FIRST', 'LIST_TAIL', 'SAME_DIPLOMA', 'ADJACENT')
 AREAS = [('PARTE_GERAL', 1, 232), ('OBRIGACOES', 233, 965), ('EMPRESA', 966, 1195), ('COISAS', 1196, 1510), ('FAMILIA', 1511, 1783),
          ('SUCESSOES', 1784, 2027), ('DISPOSICOES_FINAIS_TRANSITORIAS', 2028, 2046)]
 THEMES = [('PERSONALIDADE', 11, 21), ('PARTE_GERAL', 1, 10), ('PARTE_GERAL', 22, 188), ('PRESCRICAO_DECADENCIA', 189, 211), ('PARTE_GERAL', 212, 232),
@@ -78,17 +80,35 @@ def art_label(t):
     return f'{n[:-3]}.{n[-3:]}' if len(n) > 3 else n
 
 
+def iso_date(s):
+    s = (s or '').strip()
+    m = re.match(r'(\d{2})/(\d{2})/(\d{4})', s) or None
+    if m:
+        return f'{m.group(3)}-{m.group(2)}-{m.group(1)}'
+    m = re.match(r'(\d{4})-?(\d{2})-?(\d{2})', s)
+    return f'{m.group(1)}-{m.group(2)}-{m.group(3)}' if m else None
+
+
 def number_in_text(t, text):
     """'art. 1.790' (any formatting of the article number) mentioned in the text and not immediately attributed to another law."""
     n = art_label(t).replace('.', r'\.?')
     for m in re.finditer(rf'\barts?\.?\s*(?:n[º°o.]\s*)?{n}(?!\d)', text or '', re.I):
-        tail = text[m.end():m.end() + 45]
-        if not TXT.OTHER_LAW.search(re.split(r'[;.]\s', tail)[0] or ''):
+        tail = re.split(r'[;.]\s', text[m.end():m.end() + 45])[0] or ''
+        before = (text or '')[max(0, m.start() - 45):m.start()]
+        foreign = TXT.OTHER_LAW.search(tail) or re.match(r'^[^a-zA-Z]{0,12}(?:d[oa]s?|e)\s+(?!C[óo]digo Civil|CC\b|mesmo)[A-ZÁ-Ú][A-Za-zÀ-ú]', tail) or \
+            re.search(r'(?:\b(?!CC\b)[A-Z]{2,}[\w/.-]*|Lei[^,;()]{0,25}|Decreto[^,;()]{0,25}|Resolu[çc][ãa]o[^,;()]{0,25})\s*,\s*$', before)
+        if not foreign and not TXT.OLDER_RIGHT_AFTER.match(tail):
             return True
     return False
 
 
 # ------------------------------------------------------------------ raw discovery (one record per evidence)
+def ementa_key(t):
+    """Ementa without the result words ('PROVIDO', 'IMPROVIDO', 'ACOLHIDOS'...) that differ between twin acórdãos of one joint judgment."""
+    t = re.sub(r'\b(N[ÃA]O\s+)?(IM)?PROVID[OA]S?\b|\b(DES)?ACOLHID[OA]S?\b|\bCONHECID[OA]S?\b', '', (t or '').upper())
+    return re.sub(r'\W+', '', t)[:300]
+
+
 def raw_records():
     recs, inv = [], {}
     ts = RUN_DATE
@@ -134,46 +154,71 @@ def raw_records():
                     tese=e['tese'])
     inv['STJ_PRECEDENTES_QUALIFICADOS'] = dict(path=str(p.relative_to(HERE)), sha256=sha_file(p), records=q['stats']['ROWS'],
                                                version=q['source']['accessed_on'], citing=q['stats']['ENTRIES_CITING_NORM'])
-    # STJ espelhos
-    p = SOURCES['STJ_ESPELHOS_ACORDAOS']
-    if p.exists():
-        x = load(p)
-        for e in x['entries']:
-            inc = next((i for i in ('EDcl', 'AgRg', 'AgInt', 'ProAfR', 'QO') if e['sigla'].startswith(i)), None)
-            jd = e['julgamento'] or ''
-            jd = f'{jd[6:8]}/{jd[4:6]}/{jd[:4]}' if re.fullmatch(r'\d{8}', jd) else jd
-            for t, methods in e['targets'].items():
-                for m in methods:
-                    field, meth = m.split(':')
-                    common = dict(source='STJ_ESPELHOS_ACORDAOS', source_url=e['source_url'], source_document_id=e['source_document_id'], tribunal='STJ',
-                                  judgment_date=jd, publication_date=e['publicacao'], legal_reference_raw=field, candidate_target=t,
-                                  citation_context=e['ementa'][:400], evidence_field=field, source_hash_or_capture_id=e['file_sha256'],
-                                  text=e['ementa'] + ' ' + e.get('tese', ''), orgao=e['orgao'], incidente=inc)
-                    meth_name = 'STRUCTURED_LEGISLATIVE_REFERENCE' if meth == 'STRUCTURED' else f'TEXT_{meth}'
-                    if inc or not e['temas']:                          # a leading case is counted once, as its theme (no double count)
-                        add(classe=e['sigla'].replace(' ', '_').upper(), precedent_number=e['number'], precedent_id=e['id'], discovery_method=meth_name,
-                            status='JULGADO', **common)
-                    if not inc:
-                        for tm in e['temas']:                        # leading case of a repetitive theme: its espelho evidences the theme
-                            add(classe='REPETITIVO', precedent_number=tm['numero'], precedent_id=f"STJ:REPETITIVO:{tm['numero']}",
-                                discovery_method='LEADING_CASE_' + meth_name, status=tm['situacao'] or 'TEMA', leading_case=e['id'], **common)
-        inv['STJ_ESPELHOS_ACORDAOS'] = dict(path=str(p.relative_to(HERE)), sha256=sha_file(p), records=x['stats']['ACORDAOS'], versions=x['source']['files'],
-                                            citing=x['stats']['WITH_TARGETS'])
+    # STJ espelhos (Seções/Corte Especial; Turmas de direito privado)
+    for src in ESPELHO_SOURCES:
+        p = SOURCES[src]
+        if p.exists():
+            x = load(p)
+            # joint judgments (same session, órgão and ementa apart from the dispositivo's result words): one relation, not one per process
+            by_id = {e['id']: e for e in x['entries']}
+            sess = collections.defaultdict(list)
+            for e in x['entries']:
+                if not e['temas']:
+                    sess[(e['julgamento'], e['orgao'], ementa_key(e['ementa']))].append(e['id'])
+            canon = {i: sorted(ids)[0] for ids in sess.values() if len(set(ids)) > 1 for i in ids}
+            for e in x['entries']:
+                ce = by_id[canon.get(e['id'], e['id'])]
+                inc = next((i for i in ('EDcl', 'AgRg', 'AgInt', 'ProAfR', 'QO') if e['sigla'].startswith(i)), None)
+                jd = e['julgamento'] or ''
+                jd = f'{jd[6:8]}/{jd[4:6]}/{jd[:4]}' if re.fullmatch(r'\d{8}', jd) else jd
+                for t, methods in e['targets'].items():
+                    for m in methods:
+                        field, meth = m.split(':')
+                        common = dict(source=src, source_url=e['source_url'], source_document_id=e['source_document_id'], tribunal='STJ',
+                                      judgment_date=jd, publication_date=e['publicacao'], legal_reference_raw=field, candidate_target=t,
+                                      citation_context=e['ementa'][:400], evidence_field=field, source_hash_or_capture_id=e['file_sha256'],
+                                      text=e['ementa'] + ' ' + e.get('tese', ''), orgao=e['orgao'], incidente=inc)
+                        meth_name = 'STRUCTURED_LEGISLATIVE_REFERENCE' if meth == 'STRUCTURED' else f'TEXT_{meth}'
+                        single = len(e['temas']) == 1                      # one leading case judging several themes cannot attribute a citation to one
+                        if inc or not single:                              # a single-theme leading case is counted once, as its theme (no double count)
+                            if ce is not e:
+                                common['legal_reference_raw'] = common['evidence_field'] = field + '+JOINT'
+                                common['joint_of'] = e['id']
+                            add(classe=ce['sigla'].replace(' ', '_').upper(), precedent_number=ce['number'], precedent_id=ce['id'], discovery_method=meth_name,
+                                status='JULGADO', **common)
+                        if not inc and single:
+                            for tm in e['temas']:                        # leading case of a repetitive theme: its espelho evidences the theme
+                                add(classe=tm.get('kind', 'REPETITIVO'), precedent_number=tm['numero'], precedent_id=f"STJ:{tm.get('kind', 'REPETITIVO')}:{tm['numero']}",
+                                    discovery_method='LEADING_CASE_' + meth_name, status=tm['situacao'] or 'TEMA', leading_case=e['id'], **common)
+            inv[src] = dict(path=str(p.relative_to(HERE)), sha256=sha_file(p), records=x['stats']['ACORDAOS'], versions=x['source']['files'],
+                                                citing=x['stats']['WITH_TARGETS'])
     # STF
     p = SOURCES['STF_JURISPRUDENCIA']
     f = load(p)
+    # joint judgments (same date, same ementa): one precedent, the others are the same judgment
+    joint = collections.defaultdict(list)
     for e in f['entries']:
+        if not e['incidente']:
+            joint[(e['julgamento'], e['ementa'][:400])].append(e['id'])
+    joint_of = {i: sorted(ids)[0] for ids in joint.values() if len(set(ids)) > 1 for i in ids}
+    for e in f['entries']:
+        civil_object = bool(re.search(r'interpreta[çc][ãa]o conforme|inconstitucional|constitucionalidade|C[óo]digo Civil', e['tema'] or '', re.I)) or \
+            bool(re.search(r'C[ÓO]DIGO CIVIL|DIREITO CIVIL|SUCESS|FAM[ÍI]LIA|UNI[ÃA]O EST[ÁA]VEL|CASAMENTO|RESPONSABILIDADE CIVIL', e['ementa'][:300], re.I))
         for t, methods in e['targets'].items():
             for m in methods:
                 field, meth = m.split(':')
                 pid = JOINT.get(e['id'], e['id'])
+                if e['id'] in joint_of and joint_of[e['id']] != e['id']:
+                    pid = JOINT.get(joint_of[e['id']], joint_of[e['id']])
+                    field = field + '+JOINT'
                 add(source='STF_JURISPRUDENCIA', source_url=e['url'] or f['source']['api'], source_document_id=f"{e['titulo']} ({e['source_document_id']})",
-                    tribunal='STF', classe=e['klass'], precedent_number=e['number'], precedent_id=pid, judgment_date=e['julgamento'],
+                    tribunal='STF', classe=(pid.split(':')[1] if pid != e['id'] else e['klass']), precedent_number=(pid.split(':')[-1] if pid != e['id'] else e['number']), precedent_id=pid, judgment_date=e['julgamento'],
                     publication_date=e['publicacao'], legal_reference_raw=field, candidate_target=t,
                     citation_context=(e['tese'] or e['ementa'])[:400], discovery_method=('STRUCTURED_LEGISLATIVE_REFERENCE' if meth == 'STRUCTURED' else f'TEXT_{meth}'),
                     evidence_field=field, status=e['observacao'][:80] or ('RG MÉRITO' if e['rg_merito'] else 'JULGADO'),
                     source_hash_or_capture_id=f['source']['capture_sha256'], text=e['tese'] + ' ' + e['ementa'], orgao=e['orgao'], incidente=e['incidente'],
-                    titulo=e['titulo'], rg_merito=e['rg_merito'])
+                    titulo=e['titulo'], rg_merito=e['rg_merito'], civil_object=civil_object,
+                    joint_with=sorted(i for i, c in joint_of.items() if c == joint_of.get(e['id'])) or None)
     inv['STF_JURISPRUDENCIA'] = dict(path=str(p.relative_to(HERE)), sha256=sha_file(p), records=f['stats']['DOCS'], version=f['source']['captured_at'],
                                      citing=f['stats']['WITH_TARGETS'])
     # Planalto
@@ -194,7 +239,7 @@ def raw_records():
             text_cited[r['precedent_id']].add(r['candidate_target'])
     for r in recs:
         p = E.T.parse_target_id(r['candidate_target'])
-        if r['discovery_method'] == 'STRUCTURED_LEGISLATIVE_REFERENCE' and (p['paragraph'] or p['inciso'] or p['alinea']) and                 r['candidate_target'] not in text_cited[r['precedent_id']]:
+        if r['discovery_method'] == 'STRUCTURED_LEGISLATIVE_REFERENCE' and r['source'] in ('STF_JURISPRUDENCIA',) + ESPELHO_SOURCES and                 (p['paragraph'] or p['inciso'] or p['alinea']) and                 r['candidate_target'] not in text_cited[r['precedent_id']]:
             r['target_collapsed_from'] = r['candidate_target']
             r['candidate_target'] = E.T.format_target_id(NORM, p['article'])
     for i, r in enumerate(recs, 1):
@@ -235,9 +280,17 @@ def build():
     phys_targets = {t for t, _ in phys}
     phys_prec = {p for _, p in phys}
     dpair, dprec = decided()
+    phys_or_decided = set(phys) | set(dpair)
     recs, inv = raw_records()
     groups = collections.OrderedDict()
     for r in recs:
+        t = r['candidate_target']
+        if t not in index:                                       # resolve the fallback BEFORE grouping: one relation per final target
+            p = E.T.parse_target_id(t)
+            parent = (E.T.format_target_id(NORM, p['article'], paragraph=p['paragraph']) if p['inciso'] else E.T.format_target_id(NORM, p['article'])
+                      if p['paragraph'] else None)
+            if parent and parent in index:
+                r['target_fallback_from'], r['candidate_target'] = t, parent
         key = (NORM, r['candidate_target'], r['tribunal'], r['classe'], r['precedent_id'])
         groups.setdefault(key, []).append(r)
     out = []
@@ -251,6 +304,8 @@ def build():
         flags, reasons = [], []
         # structure
         target = t
+        if any(r.get('target_fallback_from') for r in ev):
+            flags.append('TARGET_FALLBACK_TO_PARENT')
         if t not in index:
             p = E.T.parse_target_id(t)
             parent = E.T.format_target_id(NORM, p['article'], paragraph=p['paragraph']) if p['inciso'] else E.T.format_target_id(NORM, p['article']) \
@@ -267,8 +322,13 @@ def build():
             flags.append('DISPOSITIVO_REVOGADO')
         elif year and any(a['year'] > year for a in notes):
             flags.append('REDACAO_ALTERADA_APOS_JULGAMENTO')
-        if year and year < 2003 and klass in ('SUMULA', 'REPETITIVO', 'IAC'):
-            flags.append('PRECEDENTE_ANTERIOR_AO_CC2002')
+        jd = iso_date(first.get('judgment_date'))
+        if jd and jd < '2003-01-11':                              # CC/2002 in force on 11/01/2003: before it, "Código Civil" is the CC/1916
+            explicit = re.search(r'C[óo]digo Civil de 2002|CC\s*/?\s*(?:2002|02)\b|CC-02|novo C[óo]digo Civil|10\.406', text, re.I)
+            flags.append('PRECEDENTE_ANTERIOR_AO_CC2002' if explicit else 'NAMESPACE_CC1916_BY_DATE')
+        elif jd and jd < '2006-01-01':
+            explicit = re.search(r'C[óo]digo Civil de 2002|CC\s*/?\s*(?:2002|02)\b|CC-02|novo C[óo]digo Civil|atual C[óo]digo Civil|10\.406', text, re.I)
+            flags.append('POSSIVEL_REGIME_CC1916' if explicit else 'NAMESPACE_CC1916_BY_DATE')
         # status
         st = ' '.join(sorted({str(r.get('status') or '') for r in ev}))
         if re.search(r'CANCELAD|REVOGAD|Vinculada a Tema|Revisado', st, re.I):
@@ -287,9 +347,16 @@ def build():
         # evidence strength
         base_methods = [m.replace('LEADING_CASE_', '') for m in methods]
         txt_methods = {m.replace('TEXT_', '') for m in base_methods if m.startswith('TEXT_')}
-        strong_fields = {r['evidence_field'] for r in ev if r['discovery_method'].replace('LEADING_CASE_', '').replace('TEXT_', '') in STRONG}
+        strong_ev = set()
+        for r in ev:
+            mth, fld = r['discovery_method'].replace('LEADING_CASE_', '').replace('TEXT_', ''), r['evidence_field'].split('+')[0]
+            if (mth in STRONG and fld in ('tese', 'enunciado')) or (mth in ('DIRECT', 'COMPONENT_FIRST', 'SAME_DIPLOMA', 'ADJACENT') and fld == 'ementa'):
+                strong_ev.add((mth, fld))                      # a bare list tail counts as strong only inside a tese/enunciado
         corroborated = number_in_text(target, text)
-        if txt_methods & set(STRONG) and strong_fields & {'tese', 'enunciado', 'ementa', 'vide'}:
+        if first['source'] == 'STF_JURISPRUDENCIA' and not any(r.get('civil_object') for r in ev) and not any(
+                r['evidence_field'].startswith('tese') and r['discovery_method'].startswith('TEXT_') for r in ev):
+            flags.append('USO_CONTEXTUAL_POSSIVEL')               # public-law case citing the CC by analogy: needs a human reading
+        if strong_ev:
             strength = 'STRONG'
         elif 'OFFICIAL_ANNOTATION' in methods:
             strength = 'STRONG'
@@ -309,14 +376,18 @@ def build():
             status = ('C', 'PREVIOUSLY_DECIDED', dpair[(target, pid_al)])
         elif pid_al in dprec:
             status = ('C', 'PREVIOUSLY_DECIDED_PRECEDENT', dprec[pid_al])
+        elif any(o.startswith(target + ':') for o, p in phys_or_decided if p == pid_al):
+            status = ('C', 'SUBSUMED_BY_PUBLISHED_SPECIFIC', 'o mesmo precedente já tem vínculo publicado/decidido a um dispositivo mais específico deste')
         if not status:
-            if 'TARGET_NOT_IN_INDEX' in flags:
+            if 'NAMESPACE_CC1916_BY_DATE' in flags:
+                status = ('C', 'NAMESPACE_CC1916_BY_DATE', 'julgado antes de 11/01/2003 sem menção expressa ao CC/2002: o "Código Civil" citado é o de 1916')
+            elif 'TARGET_NOT_IN_INDEX' in flags:
                 status = ('C', 'INVALID_TARGET', 'target inexistente no índice do CC2002, sem pai válido')
             elif 'DISPOSITIVO_REVOGADO' in flags:
                 status = ('C', 'REVOKED_DISPOSITIVO', 'dispositivo revogado (Planalto)')
             elif 'PRECEDENTE_NAO_VIGENTE' in flags:
                 status = ('C', 'PRECEDENT_NOT_CURRENT', st[:80])
-            elif first['source'] == 'STJ_ESPELHOS_ACORDAOS' and klass.split('_')[-1] in NON_MERIT_CLASSES and klass != 'REPETITIVO':
+            elif first['source'] in ESPELHO_SOURCES and klass.split('_')[-1] in NON_MERIT_CLASSES and klass != 'REPETITIVO':
                 status = ('C', 'CLASS_WITHOUT_CIVIL_THESIS', f'classe processual {klass} (penal, competência, cautelar ou incidente): sem tese de direito civil')
             elif 'AFETACAO_SEM_MERITO' in flags:
                 status = ('C', 'NO_MERIT_DECISION', 'proposta de afetação: não há tese de mérito')
@@ -331,7 +402,7 @@ def build():
                 status = ('C', 'RG_WITHOUT_MERIT', 'acórdão sem mérito de repercussão geral confirmado')
         if not status:
             risky = set(flags) & {'TARGET_FALLBACK_TO_PARENT', 'REDACAO_ALTERADA_APOS_JULGAMENTO', 'PRECEDENTE_ANTERIOR_AO_CC2002', 'PRECEDENTE_PROVISORIO',
-                                  'DECISAO_CAUTELAR'}
+                                  'DECISAO_CAUTELAR', 'USO_CONTEXTUAL_POSSIVEL', 'POSSIVEL_REGIME_CC1916'}
             if qualified and strength == 'STRONG' and not risky:
                 status = ('A', 'DIRECT_OFFICIAL_RELATION', 'fonte oficial nomeia o dispositivo na tese/enunciado/ementa de precedente qualificado')
             else:
@@ -339,7 +410,7 @@ def build():
                 why += ['CLASSE_HOMOLOGATORIA'] if klass.split('_')[-1] in HOMOLOGATORY else []
                 status = ('B', 'OFFICIAL_BUT_HUMAN_REVIEW_REQUIRED', ', '.join(why))
         tier, code, reason = status
-        out.append(dict(id=f'CCMD-{n:05d}', key='|'.join(key), norm=NORM, target_id=target, target_raw=t,
+        out.append(dict(id='CCMD-' + sha('|'.join(key).encode())[:10].upper(), key='|'.join(key), norm=NORM, target_id=target, target_raw=next((r['target_fallback_from'] for r in ev if r.get('target_fallback_from')), t),
                         target_collapsed_from=sorted({r['target_collapsed_from'] for r in ev if r.get('target_collapsed_from')}), tribunal=trib, classe=klass,
                         precedent_id=pid_al, precedent_number=first['precedent_number'], judgment_date=first.get('judgment_date'),
                         publication_date=first.get('publication_date'), orgao=first.get('orgao'), sources=sources, evidence_fields=fields,
@@ -368,7 +439,8 @@ def area_counts(index_doc):
     return collections.Counter(E.theme_of(t['target_id'], AREAS) for t in index_doc['targets'] if t['kind'] == 'ARTIGO')
 
 
-RISK_GROUPS = [('TEMPORALIDADE', ('REDACAO_ALTERADA_APOS_JULGAMENTO', 'PRECEDENTE_ANTERIOR_AO_CC2002')),
+RISK_GROUPS = [('TEMPORALIDADE', ('REDACAO_ALTERADA_APOS_JULGAMENTO', 'PRECEDENTE_ANTERIOR_AO_CC2002', 'POSSIVEL_REGIME_CC1916')),
+               ('USO_CONTEXTUAL_STF', ('USO_CONTEXTUAL_POSSIVEL',)),
                ('CLASSE_HOMOLOGATORIA', ('CLASSE_HOMOLOGATORIA',)),
                ('PROVISORIO_OU_CAUTELAR', ('PRECEDENTE_PROVISORIO', 'DECISAO_CAUTELAR')),
                ('REALOCACAO_DE_TARGET', ('TARGET_FALLBACK_TO_PARENT',)),
@@ -588,7 +660,7 @@ def report_md(metrics, cov, q, inv, aud):
          '12. Código novo de motor: 0 linhas em `batch_engine.py`/`generic_packager.py`. Código novo: adapters genéricos (#5 STF, #6 espelhos STJ, v2 do #4) '
          'e o construtor desta operação.',
          '13. Escala: sim — a operação processou o dataset inteiro de precedentes qualificados (2.403), as 676 súmulas, 331 acórdãos de mérito do STF e '
-         f"{inv.get('STJ_ESPELHOS_ACORDAOS', {}).get('records', 0)} espelhos de acórdãos do STJ sem triagem manual por item; o juízo humano ficou "
+         f"{sum(inv.get(k, {}).get('records', 0) for k in ESPELHO_SOURCES)} espelhos de acórdãos do STJ sem triagem manual por item; o juízo humano ficou "
          'concentrado no TIER B.',
          f"14. Projeção (não é aprovação): só TIER A → CC {metrics['PROJECTED_CC_IF_ONLY_A_APPROVED']}; TIER A + B → CC "
          f"{metrics['PROJECTED_CC_IF_ALL_A_AND_B_APPROVED']}.",

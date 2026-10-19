@@ -160,6 +160,8 @@ CCJ2_TOOLS = [('batch_engine.py', 'NEW_CORE_ENGINE', ()), ('discovery_stj_preced
               ('build_cc_j2.py', 'BATCH_CONFIG', ('THEMES', 'AREAS', 'CCJ1_OPTIONS_DECLINED', 'CHANNELS', 'JOINT', 'CCJ1_TOOLS', 'CCJ2_TOOLS',
                                                   'STEP_MAP')),
               ('cc_j2_review.py', 'REVIEW_DATA', ('REVIEW', 'BATCH_NOTES'))]
+# tools later extended by other missions are measured as they were when CC-J2 was frozen (the CC-J2 metric must not drift)
+CCJ2_PINS = {'discovery_stj_precedentes.py': 'a8a4d7a', 'build_cc_j2.py': 'a8a4d7a'}
 STEP_MAP = dict(AUTO_DISCOVERED='AUTO_DISCOVERED', AUTO_TARGET_NORMALIZED='AUTO_TARGET_NORMALIZATION', AUTO_NAMESPACE_CHECKED='AUTO_NAMESPACE_CHECK',
                 AUTO_TEMPORAL_CHECKED='AUTO_TEMPORAL_CHECK', AUTO_DUPLICATE_CHECKED='AUTO_DUPLICATE_CHECK', AUTO_SOURCE_VERIFIED='OFFICIAL_SOURCE_FOUND')
 
@@ -192,7 +194,8 @@ def ccj1_metrics():
 def scale_metrics(out):
     decs = out['decisions']
     steps = {k: sum(1 for x in decs if x['steps'].get(k)) for k in E.STEPS}
-    code = {f: dict(role=role, **dict(zip(('code', 'review_data'), E.sloc(HERE / f, dn)))) for f, role, dn in CCJ2_TOOLS}
+    code = {f: dict(role=role, **dict(zip(('code', 'review_data'), git_sloc(CCJ2_PINS[f], 'JURISPRUDENCE_ENGINE/' + f, dn) if f in CCJ2_PINS
+                                          else E.sloc(HERE / f, dn)))) for f, role, dn in CCJ2_TOOLS}
     core = code['batch_engine.py']['code']
     j2 = dict(CANDIDATES=len(decs), CANDIDATE_UNIT='precedente (todos os seus alvos juntos); %d pares (alvo, precedente)' % sum(
                   len(x['discovered_targets']) for x in decs), **steps,

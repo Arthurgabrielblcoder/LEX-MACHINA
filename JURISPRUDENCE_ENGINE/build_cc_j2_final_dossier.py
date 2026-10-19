@@ -10,7 +10,9 @@ import ast
 import collections
 import hashlib
 import json
+import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -34,9 +36,11 @@ def sha_lf(p):
     return hashlib.sha256(Path(p).read_bytes().replace(b'\r\n', b'\n')).hexdigest()
 
 
-def split_sloc(path, one_off, to_engine):
-    """Code lines of a builder split by top-level definition: one-off, generic (should move to the engine), recurring."""
-    src = Path(path).read_text(encoding='utf-8')
+def split_sloc(path, one_off, to_engine, commit=None):
+    """Code lines of a builder split by top-level definition: one-off, generic (should move to the engine), recurring. With `commit`, the
+    builder as frozen at that commit (later missions may extend it; the CC-J2 metric must not drift)."""
+    src = (subprocess.run(['git', 'show', f'{commit}:{Path(path).relative_to(ROOT).as_posix()}'], cwd=ROOT, capture_output=True, check=True)
+           .stdout.decode('utf-8') if commit else Path(path).read_text(encoding='utf-8'))
     tree = ast.parse(src)
     code_lines = set()
     doc = tree.body[0] if isinstance(tree.body[0], ast.Expr) else None
@@ -111,8 +115,11 @@ def build():
                   for t in it['targets_final']})
     pg, pf = sorted(phys | set(green)), sorted(phys | set(green) | set(fav))
     sm = E.load(HERE / 'CC_J2_SCALE_METRICS.json')
-    me = E.sloc(Path(__file__))[0]
-    split = split_sloc(HERE / 'build_cc_j2.py', BATCH_ONE_OFF, BATCH_TO_ENGINE)
+    with tempfile.TemporaryDirectory() as d:                        # this builder as frozen with CC-J2 (later pins must not move the metric)
+        f = Path(d) / Path(__file__).name
+        f.write_bytes(subprocess.run(['git', 'show', 'a8a4d7a:JURISPRUDENCE_ENGINE/' + f.name], cwd=ROOT, capture_output=True, check=True).stdout)
+        me = E.sloc(f)[0]
+    split = split_sloc(HERE / 'build_cc_j2.py', BATCH_ONE_OFF, BATCH_TO_ENGINE, commit='a8a4d7a')
     scale = dict(ONE_TIME_ENGINE_GENERALIZATION=dict(lines=sm['CC_J2']['code_by_file']['batch_engine.py']['code'], file='batch_engine.py',
                                                      note='custo pago uma vez; não conta como custo recorrente dos próximos lotes'),
                  ONE_TIME_SOURCE_ADAPTER=dict(lines=sm['CC_J2']['code_by_file']['discovery_stj_precedentes.py']['code'], file='discovery_stj_precedentes.py'),

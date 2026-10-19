@@ -28,9 +28,9 @@ RESOURCE_URL = ('https://dadosabertos.web.stj.jus.br/dataset/4238da2f-c07b-4c1a-
 SEARCH_PAGE = 'https://processo.stj.jus.br/repetitivos/temas_repetitivos/'
 KLASS = {'Tema': 'REPETITIVO', 'IAC': 'IAC', 'SIRDR': 'SIRDR', 'PUIL': 'PUIL', 'Controvérsia': 'CONTROVERSIA'}
 # norm markers per catalog norm: (regex for the norm named right after the article, regex for an older code of the same name)
-NORMS = {'CC2002': (r'C[óo]digo\s+Civil(?:\s+(?:de|/)\s*(?:2002|1916))?|C[óo]digo\s+Civil\s+anterior|\bCC\s*/\s*(?:2002|02|1916|16)\b|\bCC-(?:02|16)\b|'
-                    r'\bCC\b|Lei\s*(?:n[º°o.]\s*)?10\.406(?:/2002)?',
-                    r'1916|/16\b|-16\b|anterior')}
+NORMS = {'CC2002': (r'(?<!Introdu[çc][ãa]o ao )C[óo]digo\s+Civil(?:\s+(?:de|/)\s*(?:2002|1916))?|C[óo]digo\s+Civil\s+anterior|\bCC\s*/?\s*(?:2002|02|1916|16)\b|'
+                    r'\bCC-(?:02|16)\b|\bCC\b|Lei\s*(?:n[º°o.]\s*)?10\.406(?:/2002)?',
+                    r'1916|/16\b|-16\b|anterior|\bCC\s+16\b')}
 ROM = r'[IVXLC]+'
 COMP = rf'(?:\s*,\s*(?:§\s*\d+\s*[º°o]?|par[áa]grafo\s+[úu]nico|(?:inc(?:iso)?\.?\s*)?{ROM}\b|al[íi]nea\s*["“]?[a-z]["”]?))'
 ART = re.compile(rf'\barts?\.\s*(?P<n>\d{{1,2}}\.\d{{3}}|\d{{1,4}})(?!\d)\s*(?:[º°o])?(?P<suf>-[A-Z])?(?P<comp>{COMP}*)', re.I)
@@ -84,8 +84,10 @@ def cites(text, norm):
 
 
 OTHER_LAW = re.compile(r'\b(CPC|CPC/\d+|C[óo]digo de Processo|CF|Constitui[çc][ãa]o|CTN|CDC|C[óo]digo (?:Tribut|Penal|de Defesa|Comercial)|CCom|Lei\s*(?:n[º°o.]\s*)?'
-                       r'(?!10\.406)\d|Decreto|LEF|MP\b|Medida Provis[óo]ria|ECA|CLT|CP\b)', re.I)
-SAME = re.compile(r'^\s*,?\s*(?:(?:do|da)\s+mesm[oa]|deste|desse|dess[ea]\s+[úu]ltim[oa])\s+(?:diploma(?:\s+legal)?|c[óo]digo|estatuto)\b', re.I)
+                       r'(?!10\.406)\d|Decreto|LEF|MP\b|Medida Provis[óo]ria|ECA|CLT|CP\b|LINDB|LICC|Lei de Introdu|Resolu[çc][ãa]o|Regimento|RISTJ|'
+                       r'Portaria|MCI|Marco Civil|Estatuto|EOAB|LRP|Lei de Registros)', re.I)
+OLDER_RIGHT_AFTER = re.compile(r'^\W{0,6}(?:d[oa]\s+)?(?:CC|C[óo]digo\s+Civil)\s*[/-]?\s*(?:de\s+)?(?:1916|16)\b', re.I)
+SAME = re.compile(r'^\s*,?\s*(?:(?:do|da)\s+mesm[oa]|deste|desse|dess[ea]\s+[úu]ltim[oa])\s+(?:diploma(?:\s+legal)?|c[óo]digo|codex|estatuto)\b', re.I)
 
 
 def _target(norm, n, suf, comp, bad, raw):
@@ -134,6 +136,14 @@ def cites_extended(text, norm):
             if t:
                 out.setdefault(t, 'SAME_DIPLOMA')
             continue
+        if OLDER_RIGHT_AFTER.match(tail):
+            continue                                            # 'art. 993 CC 1916': the older code
+        before = text[max(0, h.start() - 14):h.start()]
+        if re.match(r'^\s*[/,]?\s*(?:CC\s*/?\s*(?:2002|02)\b|CC-02\b)', tail, re.I) or re.search(r'(?:CC\s*/?\s*(?:2002|02)|CC-02)\s*,\s*$', before, re.I):
+            t = _target(norm, n, suf, comp, bad, h.group(0))    # 'art. 354 CC 2002' / '(CC/2002, art. 1.641, II)': marker adjacent, no preposition
+            if t:
+                out.setdefault(t, 'ADJACENT')
+            continue
         if LINK.match(tail) or SAME.match(tail):
             continue                                            # names some law right after: DIRECT already decided
         if re.match(r'^\s*(?:,|e|c/c)\s*(?:o\s+)?(?:arts?\.\s*)?\d', tail) and (markre.search(tail) or OTHER_LAW.search(tail)):
@@ -147,6 +157,9 @@ def cites_extended(text, norm):
         between = window[last.end():]
         if re.search(older, last.group(0) + window[last.end():last.end() + 8], re.I) or OTHER_LAW.search(between):
             continue
+        nn = re.escape(n).replace(r'\.', r'\.?')
+        if re.search(rf'\barts?\.\s*{nn}(?!\d)[^.;]{{0,40}}?(?:d[oa]\s+)?(?:CC|C[óo]digo\s+Civil)\s*[/-]?\s*(?:de\s+)?(?:1916|16)\b', text, re.I):
+            continue                                            # the same article is attributed to the CC/1916 elsewhere in this text
         t = _target(norm, n, suf, comp, bad, h.group(0))
         if t:
             out.setdefault(t, 'NEAREST_MARKER')
