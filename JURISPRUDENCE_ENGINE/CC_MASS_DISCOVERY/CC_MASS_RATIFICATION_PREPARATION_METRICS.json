@@ -1,0 +1,120 @@
+{
+  "ALL_HUMAN_DECISIONS_PENDING": "YES",
+  "CAPACITY_BLOCKER": "NO",
+  "CORROBORATED_TURMA": 97,
+  "CURRENT_CC_BASELINE": "49/39",
+  "CURRENT_CF_BASELINE": "315/198",
+  "DECISION_GROUPS": 6,
+  "DETERMINISTIC_OUTPUT": "PASS",
+  "FIRMWARE_CHANGED": "NO",
+  "GROUP_COUNTS": {
+    "GROUP_A": 17,
+    "GROUP_B": 77,
+    "GROUP_C": 88,
+    "GROUP_D": 395,
+    "GROUP_E": 76,
+    "GROUP_F": 28
+  },
+  "GROUP_HASH_REQUIRED": "YES",
+  "LEADING_CASE_DUPLICATES_IN_READY": 0,
+  "LOCAL_RAW_REBUILD_REQUIRED": "NO",
+  "MASS_RATIFICATION_PREPARATION": "PASS",
+  "NEW_CORE_ENGINE_CODE": 0,
+  "NEW_EXTERNAL_LEGAL_RESEARCH": 0,
+  "NEW_HUMAN_APPROVED": 0,
+  "NEW_MATERIALIZED": 0,
+  "NEW_REGRESSION": 0,
+  "READY_RELATIONS": 681,
+  "REPLACEMENT_IDENTITY_ERRORS": 0,
+  "REPLACEMENT_RELATIONS": 81,
+  "SD_CHANGED": "NO",
+  "TESTS": {
+    "CC_MASS_AUDIT_STRUCTURAL": "11/11",
+    "CC_MASS_DISCOVERY_STRUCTURAL": "12/12",
+    "CC_MASS_RATIFICATION": "18/18",
+    "CORRELATA_COVERAGE_AUDIT": "115/120 (cinco falhas históricas aceitas)",
+    "JURISPRUDENCE_AUDIT": "119/119",
+    "LEGAL_TARGET_ID": "93/93",
+    "MULTINORM_AND_TYPE_FREEZES": "19/19",
+    "REFERENCES_4_SELECTED": "42/42"
+  },
+  "TURMA_DISPLAY_GATE": "PENDING",
+  "TURMA_RELATIONS": 579,
+  "audit_commit": "9e1febc",
+  "baseline": "MULTINORM_FROZEN_CF315_198_CC49_39",
+  "capacity": {
+    "BACK": "878/878",
+    "CC_J1_J2_REGRESSION": 0,
+    "CF_REGRESSION": 0,
+    "DUPLICATE_QUERY_KEYS": 0,
+    "FICHA_OPEN": "878/878",
+    "LOOKUP_COMPARISONS_PER_QUERY": {
+      "baseline": 236,
+      "note": "busca linear sobre o cache (for i < totalJurLookupCFCache): custo proporcional ao número de entradas; razão em relação ao baseline físico, sem medição de tempo",
+      "ratio": 4.36,
+      "simulated": 1030
+    },
+    "LOOKUP_ENTRIES": 1030,
+    "LOOKUP_ENTRIES_BASELINE": 236,
+    "LOOKUP_LIMIT": 4096,
+    "LOOKUP_PSRAM_BYTES": 70040,
+    "LOOKUP_PSRAM_BYTES_BASELINE": 16048,
+    "MAX_RELACOES_ARTIGO": 32,
+    "MAX_RELATIONS_PER_KEY": 19,
+    "NEW_FICHAS": 758,
+    "NEW_FICHAS_BYTES": 40185,
+    "OUTRO_LABELS": 0,
+    "PSRAM_TOTAL_BYTES": 224666,
+    "RECORDS_IDX_BYTES": 154625,
+    "RECORDS_IDX_BYTES_BASELINE": 66909,
+    "RECORDS_LIMIT_BYTES": 16777216,
+    "TYPE_COMPATIBILITY": {
+      "acordao": "rótulo \"ACORDAO n\" existe no firmware, sem validação física; não distingue REsp/AREsp nem Turma",
+      "others": "SÚMULA, REPETITIVO STJ e IAC validados fisicamente; RG/ADI/ADC/ADPF com rótulos legados"
+    },
+    "VISIBLE": "878/878",
+    "deployable": false,
+    "labels": {
+      "ACORDAO": 811,
+      "ADI": 2,
+      "REPETITIVO": 58,
+      "RG": 3,
+      "Súmula": 4
+    },
+    "simulated_precedents": 761,
+    "simulated_relations": 878,
+    "status": "SIMULATION_ONLY"
+  },
+  "projections": {
+    "PROJECTED_A": {
+      "added_relations": 17,
+      "new_targets": 2,
+      "relations": 66,
+      "targets": 41
+    },
+    "PROJECTED_ALL_READY": {
+      "added_relations": 681,
+      "new_targets": 624,
+      "relations": 730,
+      "targets": 663
+    },
+    "PROJECTED_HIGH_AUTHORITY": {
+      "added_relations": 94,
+      "new_targets": 38,
+      "relations": 143,
+      "targets": 77
+    },
+    "PROJECTED_WITH_ALL_DIRECT_TURMA": {
+      "added_relations": 577,
+      "new_targets": 521,
+      "relations": 626,
+      "targets": 560
+    },
+    "PROJECTED_WITH_CORROBORATED_TURMA": {
+      "added_relations": 182,
+      "new_targets": 126,
+      "relations": 231,
+      "targets": 165
+    }
+  }
+}
