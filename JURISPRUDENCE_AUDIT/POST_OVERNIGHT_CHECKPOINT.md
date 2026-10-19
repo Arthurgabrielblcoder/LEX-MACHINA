@@ -16,6 +16,8 @@ Documento: `JURISPRUDENCE_ENGINE/MULTINORM_CF_CC_J1_FROZEN.md`.
 
 **CC-J2 ratificado (2026-10-18, host-only):** 19 aprovadas (9 GREEN + 10 YELLOW) e 11 RED não aprovadas; 20 relações, 15 targets novos. A projeção após a materialização é 49/39 e não é baseline. Nada foi materializado. Registro: `JURISPRUDENCE_ENGINE/CC_J2_RATIFICATION_RECORD.json`. Próximo passo: `CC-J2 MATERIALIZATION PREFLIGHT`.
 
+**CC-J2 MATERIALIZATION PREFLIGHT (2026-10-18, host-only): PARTIAL.** O candidato está validado: 20 relações, 18 targets (15 novos), CC 49/39, total 364/237, E2E 18/18, regressão 0 no CC-J1 e na CF. Bloqueio de deploy: ADDITIVE_ONLY = NO, porque os 4 arquivos da camada 06_NORMALIZADO precisam ser substituídos (o firmware lê caminhos fixos). Falta a decisão do usuário (opções A/B/C em `JURISPRUDENCE_ENGINE/CC_J2_MATERIALIZATION_PREFLIGHT.md`).
+
 ## Estado anterior (J2J, 2026-10-18)
 
 ```

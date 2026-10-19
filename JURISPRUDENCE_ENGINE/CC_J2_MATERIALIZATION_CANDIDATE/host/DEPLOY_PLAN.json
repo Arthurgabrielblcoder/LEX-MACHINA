@@ -1,0 +1,60 @@
+{
+ "mode": "ADDITIVE_FICHAS_PLUS_INDEX_REPLACEMENT",
+ "additive_only": false,
+ "files_to_add": [
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_IAC_1.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_1019.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_1109.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_1130.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_1133.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_1210.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_308.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_368.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_381.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_426.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_610.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_REPETITIVO_639.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_SUMULA_619.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_SUMULA_637.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_SUMULA_642.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_SUMULA_655.TXT",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/STJ_SUMULA_656.TXT"
+ ],
+ "files_to_replace": [
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JURISPRUDENCIA.IDX",
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JUR_LOOKUP.IDX",
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/LAYER.VER",
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/MULTINORM_MANIFEST.json"
+ ],
+ "files_identical_on_card": [],
+ "unexpected_path_collisions": [],
+ "card_files_before": {
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JUR_LOOKUP.IDX": {
+   "bytes": 4734,
+   "sha256": "135e81a52ddbfc084a07daf69e681e3c1ec0f2a0bbdade75793ad89eafe07e93"
+  },
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JURISPRUDENCIA.IDX": {
+   "bytes": 63241,
+   "sha256": "181416428f2a8bac3c8bf0bd0ee8e8d88bcb1ddbef28d01976b07d21d2ae8443"
+  },
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/MULTINORM_MANIFEST.json": {
+   "bytes": 4003,
+   "sha256": "0939d31153243a584c854bc5180be215118a82e2ce77763a47bffe045b33704f"
+  },
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/LAYER.VER": {
+   "bytes": 277,
+   "sha256": "28808539de6058c785464a36bab03d6330010d3c3aeeecbf98a9c81de6ee7f77"
+  }
+ },
+ "minimum_replacement_for_firmware": [
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JUR_LOOKUP.IDX",
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JURISPRUDENCIA.IDX"
+ ],
+ "why": "O firmware multinorma lê caminhos FIXOS (06_NORMALIZADO/JUR_LOOKUP.IDX e JURISPRUDENCIA.IDX) e uma única camada; os índices são agregados (uma linha por chave). Acrescentar relações a uma camada já instalada exige substituir esses índices. LAYER.VER e MULTINORM_MANIFEST.json não são lidos pelo firmware, mas ficariam com contagens antigas se não forem trocados.",
+ "options": [
+  "A — substituir os 4 arquivos da camada (2 índices + LAYER.VER + manifesto) com escrita segura e backup; rollback restaura os bytes do CC-J1 (hashes conhecidos) e apaga as fichas novas",
+  "B — substituir só os 2 índices (mínimo para o firmware); LAYER.VER e manifesto ficam com as contagens do CC-J1",
+  "C — mudar o firmware para ler camadas aditivas (exige novo flash e nova validação física; não recomendado agora)"
+ ],
+ "recommendation": "A"
+}
