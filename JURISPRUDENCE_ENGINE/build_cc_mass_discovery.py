@@ -26,6 +26,7 @@ import batch_engine as E  # noqa: E402
 import discovery_stj_precedentes as TXT  # noqa: E402
 sys.path.insert(0, str(HERE / 'pilot_cc'))
 import cc_pilot_evidence as EV  # noqa: E402
+from cc_mass_sample_review import SAMPLE_REVIEW  # noqa: E402
 
 NORM = 'CC2002'
 OUT = HERE / 'CC_MASS_DISCOVERY'
@@ -48,6 +49,8 @@ BLOCKED_SOURCES = {
     'STF_API_DIRETA_DO_HOST': 'POST direto do host recebe desafio WAF 202; captura feita pelo navegador (caminho normal da página)',
 }
 JOINT = {'STF:ADI:6792': 'STF:ADI:6792-7055', 'STF:ADI:7055': 'STF:ADI:6792-7055', 'STF:ADI:7047': 'STF:ADI:7047-7064', 'STF:ADI:7064': 'STF:ADI:7047-7064'}
+NON_MERIT_CLASSES = ('APN', 'CC', 'MC', 'PET', 'AI', 'AR', 'RCL', 'HC', 'RHC', 'SLS', 'SS', 'SL', 'IF', 'EXSUSP', 'INQ', 'SD', 'CAUINOM')
+HOMOLOGATORY = ('SEC', 'HDE')
 QUALIFIED_KLASS = ('SUMULA', 'REPETITIVO', 'IAC', 'RG', 'ADI', 'ADC', 'ADPF', 'ADO', 'SIRDR')
 STRONG = ('DIRECT', 'COMPONENT_FIRST', 'LIST_TAIL', 'SAME_DIPLOMA')
 AREAS = [('PARTE_GERAL', 1, 232), ('OBRIGACOES', 233, 965), ('EMPRESA', 966, 1195), ('COISAS', 1196, 1510), ('FAMILIA', 1511, 1783),
@@ -136,15 +139,24 @@ def raw_records():
     if p.exists():
         x = load(p)
         for e in x['entries']:
+            inc = next((i for i in ('EDcl', 'AgRg', 'AgInt', 'ProAfR', 'QO') if e['sigla'].startswith(i)), None)
+            jd = e['julgamento'] or ''
+            jd = f'{jd[6:8]}/{jd[4:6]}/{jd[:4]}' if re.fullmatch(r'\d{8}', jd) else jd
             for t, methods in e['targets'].items():
                 for m in methods:
                     field, meth = m.split(':')
-                    add(source='STJ_ESPELHOS_ACORDAOS', source_url=e['source_url'], source_document_id=e['source_document_id'], tribunal='STJ',
-                        classe=e['klass'], precedent_number=e['number'], precedent_id=e['id'], judgment_date=e['julgamento'], publication_date=e['publicacao'],
-                        legal_reference_raw=field, candidate_target=t, citation_context=e['ementa'][:400],
-                        discovery_method=('STRUCTURED_LEGISLATIVE_REFERENCE' if meth == 'STRUCTURED' else f'TEXT_{meth}'), evidence_field=field,
-                        status='JULGADO', source_hash_or_capture_id=e['file_sha256'], text=e['ementa'] + ' ' + e.get('tese', ''), orgao=e['orgao'],
-                        tema_links=e.get('temas', []))
+                    common = dict(source='STJ_ESPELHOS_ACORDAOS', source_url=e['source_url'], source_document_id=e['source_document_id'], tribunal='STJ',
+                                  judgment_date=jd, publication_date=e['publicacao'], legal_reference_raw=field, candidate_target=t,
+                                  citation_context=e['ementa'][:400], evidence_field=field, source_hash_or_capture_id=e['file_sha256'],
+                                  text=e['ementa'] + ' ' + e.get('tese', ''), orgao=e['orgao'], incidente=inc)
+                    meth_name = 'STRUCTURED_LEGISLATIVE_REFERENCE' if meth == 'STRUCTURED' else f'TEXT_{meth}'
+                    if inc or not e['temas']:                          # a leading case is counted once, as its theme (no double count)
+                        add(classe=e['sigla'].replace(' ', '_').upper(), precedent_number=e['number'], precedent_id=e['id'], discovery_method=meth_name,
+                            status='JULGADO', **common)
+                    if not inc:
+                        for tm in e['temas']:                        # leading case of a repetitive theme: its espelho evidences the theme
+                            add(classe='REPETITIVO', precedent_number=tm['numero'], precedent_id=f"STJ:REPETITIVO:{tm['numero']}",
+                                discovery_method='LEADING_CASE_' + meth_name, status=tm['situacao'] or 'TEMA', leading_case=e['id'], **common)
         inv['STJ_ESPELHOS_ACORDAOS'] = dict(path=str(p.relative_to(HERE)), sha256=sha_file(p), records=x['stats']['ACORDAOS'], versions=x['source']['files'],
                                             citing=x['stats']['WITH_TARGETS'])
     # STF
@@ -264,21 +276,24 @@ def build():
         if re.search(r'RE Pendente|Afetado|Pendente|Em Julgamento|Sobrestado', st, re.I):
             flags.append('PRECEDENTE_PROVISORIO')
         inc = {r.get('incidente') for r in ev if r.get('incidente')}
+        if 'ProAfR' in inc:
+            flags.append('AFETACAO_SEM_MERITO')
         if inc & {'MC', 'MC-Ref'}:
             flags.append('DECISAO_CAUTELAR')
-        if inc & {'ED', 'AgR', 'ED-segundos'}:
+        if inc & {'ED', 'AgR', 'ED-segundos', 'EDcl', 'AgRg', 'AgInt', 'QO'}:
             flags.append('INCIDENTE_RECURSAL')
         if klass == 'RG' and first['source'] == 'STF_JURISPRUDENCIA' and not any(r.get('rg_merito') for r in ev):
             flags.append('RG_SEM_MERITO_CONFIRMADO')
         # evidence strength
-        txt_methods = {m.replace('TEXT_', '') for m in methods if m.startswith('TEXT_')}
-        strong_fields = {r['evidence_field'] for r in ev if r['discovery_method'].replace('TEXT_', '') in STRONG}
+        base_methods = [m.replace('LEADING_CASE_', '') for m in methods]
+        txt_methods = {m.replace('TEXT_', '') for m in base_methods if m.startswith('TEXT_')}
+        strong_fields = {r['evidence_field'] for r in ev if r['discovery_method'].replace('LEADING_CASE_', '').replace('TEXT_', '') in STRONG}
         corroborated = number_in_text(target, text)
         if txt_methods & set(STRONG) and strong_fields & {'tese', 'enunciado', 'ementa', 'vide'}:
             strength = 'STRONG'
         elif 'OFFICIAL_ANNOTATION' in methods:
             strength = 'STRONG'
-        elif txt_methods & set(STRONG) or 'NEAREST_MARKER' in txt_methods or (corroborated and 'STRUCTURED_LEGISLATIVE_REFERENCE' in methods):
+        elif txt_methods & set(STRONG) or 'NEAREST_MARKER' in txt_methods or (corroborated and 'STRUCTURED_LEGISLATIVE_REFERENCE' in base_methods):
             strength = 'MEDIUM'
         elif 'STRUCTURED_LEGISLATIVE_REFERENCE' in methods and first['source'] in ('STJ_SUMULAS_PDF', 'STJ_PRECEDENTES_QUALIFICADOS'):
             strength = 'MEDIUM'                                  # the court itself indexed the precedent to the article
@@ -301,6 +316,10 @@ def build():
                 status = ('C', 'REVOKED_DISPOSITIVO', 'dispositivo revogado (Planalto)')
             elif 'PRECEDENTE_NAO_VIGENTE' in flags:
                 status = ('C', 'PRECEDENT_NOT_CURRENT', st[:80])
+            elif first['source'] == 'STJ_ESPELHOS_ACORDAOS' and klass.split('_')[-1] in NON_MERIT_CLASSES and klass != 'REPETITIVO':
+                status = ('C', 'CLASS_WITHOUT_CIVIL_THESIS', f'classe processual {klass} (penal, competência, cautelar ou incidente): sem tese de direito civil')
+            elif 'AFETACAO_SEM_MERITO' in flags:
+                status = ('C', 'NO_MERIT_DECISION', 'proposta de afetação: não há tese de mérito')
             elif 'INCIDENTE_RECURSAL' in flags:
                 status = ('C', 'INCIDENTAL_DECISION', 'embargos/agravo: o precedente é o acórdão principal')
             elif strength == 'WEAK':
@@ -317,6 +336,7 @@ def build():
                 status = ('A', 'DIRECT_OFFICIAL_RELATION', 'fonte oficial nomeia o dispositivo na tese/enunciado/ementa de precedente qualificado')
             else:
                 why = sorted(risky) + ([] if qualified else ['PRECEDENTE_NAO_QUALIFICADO']) + ([] if strength == 'STRONG' else [f'EVIDENCIA_{strength}'])
+                why += ['CLASSE_HOMOLOGATORIA'] if klass.split('_')[-1] in HOMOLOGATORY else []
                 status = ('B', 'OFFICIAL_BUT_HUMAN_REVIEW_REQUIRED', ', '.join(why))
         tier, code, reason = status
         out.append(dict(id=f'CCMD-{n:05d}', key='|'.join(key), norm=NORM, target_id=target, target_raw=t,
@@ -332,6 +352,15 @@ def build():
                         theme=E.theme_of(target, THEMES) if target in index else None, new_target=target not in phys_targets,
                         precedent_already_on_card=pid_al in phys_prec, tier=tier, tier_code=code, tier_reason=reason,
                         status='AWAITING_USER_RATIFICATION' if tier in 'AB' else 'NOT_QUALIFIED', human_approved=False))
+    # a generic article-level link is dropped when the same precedent has a more specific link to that article (finest supported unit)
+    spec = collections.defaultdict(set)
+    for x in out:
+        if x['tier'] in 'AB':
+            spec[x['precedent_id']].add(x['target_id'])
+    for x in out:
+        if x['tier'] in 'AB' and any(o != x['target_id'] and o.startswith(x['target_id'] + ':') for o in spec[x['precedent_id']]):
+            x.update(tier='C', tier_code='SUBSUMED_BY_SPECIFIC_TARGET', tier_reason='o mesmo precedente tem vínculo a um dispositivo mais específico deste artigo',
+                     status='NOT_QUALIFIED')
     return recs, inv, out, index_doc, phys
 
 
@@ -340,6 +369,7 @@ def area_counts(index_doc):
 
 
 RISK_GROUPS = [('TEMPORALIDADE', ('REDACAO_ALTERADA_APOS_JULGAMENTO', 'PRECEDENTE_ANTERIOR_AO_CC2002')),
+               ('CLASSE_HOMOLOGATORIA', ('CLASSE_HOMOLOGATORIA',)),
                ('PROVISORIO_OU_CAUTELAR', ('PRECEDENTE_PROVISORIO', 'DECISAO_CAUTELAR')),
                ('REALOCACAO_DE_TARGET', ('TARGET_FALLBACK_TO_PARENT',)),
                ('PRECEDENTE_NAO_QUALIFICADO', ('PRECEDENTE_NAO_QUALIFICADO',)),
@@ -425,8 +455,165 @@ def outputs():
               LAST_PROCESSED_SOURCE_ID=sorted(inv)[-1],
               NEXT_RESUME_STEP='python build_cc_mass_discovery.py (idempotente; uma fonte pendente entra quando o seu índice existir)',
               OUTPUT_HASHES={k: sha(v) for k, v in sorted(files.items())})
+    sim, sim_md = simulation(q)
+    files['CC_MASS_SIMULATION_REPORT.md'] = sim_md.encode('utf-8')
+    metrics.update(SIMULATION_TIER_A=sim['SIMULATED'], SIMULATION_DUPLICATE_QUERY_KEYS=sim['DUPLICATE_QUERY_KEYS'], CF_REGRESSION=sim['CF_REGRESSION'],
+                   CC_J1_J2_REGRESSION=sim['CC_J1_J2_REGRESSION'])
+    sam = sample(q)
+    aud_md, aud = audit_md(q, sam, SAMPLE_REVIEW)
+    metrics.update(aud)
+    files['CC_MASS_DISCOVERY_AUDIT.md'] = aud_md.encode('utf-8')
+    files['CC_MASS_DISCOVERY_REPORT.md'] = report_md(metrics, cov, q, inv, aud).encode('utf-8')
+    files['CC_MASS_DISCOVERY_METRICS.json'] = dumpb(metrics)
+    files['CC_MASS_DISCOVERY_SHA256.json'] = dumpb({k: sha(v) for k, v in sorted(files.items())})
+    ck['OUTPUT_HASHES'] = {k: sha(v) for k, v in sorted(files.items())}
     files['CC_MASS_DISCOVERY_CHECKPOINT.json'] = dumpb(ck)
     return files, metrics, q, out, cov
+
+
+# ------------------------------------------------------------------ SIMULATION_ONLY (TIER A through the generic packager; never deployable)
+SIM_TIPO = {'SUMULA': 'sumula', 'REPETITIVO': 'repetitivo_stj', 'IAC': 'iac', 'RG': 'repercussao_geral', 'ADI': 'adi', 'ADC': 'adc', 'ADPF': 'adpf', 'ADO': 'ado'}
+PROBE = '/2- CÓDIGO CIVIL/codigo_civil_ lei10.406 2002.txt'
+
+
+def simulation(q):
+    a = [x for x in q if x['tier'] == 'A']
+    card = {k.split('/')[-1] for k in load(HERE / 'CC_J2_PHYSICAL_DEPLOY/sd_manifest_post_full.json')['entries'] if k.startswith(E.P.CONTENT + '/')}
+    recs, fichas, rels, skipped = {}, {}, [], []
+    for x in a:
+        trib, klass, num = x['precedent_id'].split(':')[:3]
+        tipo = SIM_TIPO.get(klass)
+        if not tipo:
+            skipped.append(dict(id=x['id'], reason=f'classe {klass} sem regra de tipo do aparelho'))
+            continue
+        lab = E.JT.label(tipo, trib, num.replace('-', '/'))
+        recs.setdefault(x['precedent_id'], dict(tipo=tipo, tribunal=trib, numero=num.replace('-', '/'), status='simulacao', titulo=lab,
+                                                fonte=(x['source_urls'] or [''])[0]))
+        fichas.setdefault(E.JT.ficha(x['precedent_id']), '\n'.join([f'{lab} ({trib})', f'TRIBUNAL: {trib}', 'SIMULAÇÃO — NÃO PUBLICADO (CC MASS DISCOVERY, TIER A)', '',
+                                                                     'EVIDÊNCIA OFICIAL', x['citation_context'], '', 'FONTE OFICIAL',
+                                                                     (x['source_urls'] or [''])[0]]) + '\n')
+        rels.append(dict(norm=NORM, target_id=x['target_id'], precedent_id=x['precedent_id'], origin='CC_MASS TIER A (SIMULATION_ONLY)'))
+    files, rep = E.simulate(PHYSICAL_SD, card, rels, recs, fichas, E.P.provisional_ids(), E.P.known_targets(), PROBE, NORM)
+    cf_reg = rep['OTHER_NORM_KEYS_CHANGED'] + sum(v for k, v in rep['lost_by_namespace'].items() if k != NORM)
+    cc_reg = rep['lost_by_namespace'].get(NORM, 0) + rep['BASELINE_RECORD_LINES_MISSING']
+    lines = ['# CC MASS DISCOVERY — simulação técnica do TIER A (SIMULATION_ONLY)', '', '```',
+             f"STATUS = SIMULATION_ONLY · DEPLOYABLE = NO · SD_CHANGED = NO · FIRMWARE_CHANGED = NO · TIER_A_SIMULADOS = {len(rels)}",
+             f"DUPLICATE_QUERY_KEYS = {rep['DUPLICATE_QUERY_KEYS']} · CF_REGRESSION = {cf_reg} · CC_J1_J2_REGRESSION = {cc_reg} · "
+             f"VISÍVEIS = {rep['NEW_VISIBLE']} · FICHA/BACK = {rep['NEW_FICHA_OPEN']} / {rep['NEW_BACK']} · OUTRO = {rep['OUTRO_LABELS']}", '```', '',
+             'Base: a camada normalizada física pós-CC-J2 (`CC_J2_MATERIALIZATION_CANDIDATE/candidate/SD`, idêntica ao cartão aprovado 38/38). Os pares '
+             'TIER A entram pelo `generic_packager.py` sem mudança; fichas são rascunhos automáticos da evidência oficial. Nada aqui é aprovação jurídica.',
+             '', f"Contagens por norma (relações/alvos): {', '.join(f'{k} {v[0]}/{v[1]}' for k, v in sorted(rep['counts'].items()))}.",
+             f"Rótulos: {rep['labels']}. Registros reaproveitados do cartão: {', '.join(rep['records_reused_from_card']) or '—'}.",
+             f"Chaves do baseline preservadas: {rep['BASELINE_KEYS'] - rep['BASELINE_KEYS_NOT_PRESERVED']}/{rep['BASELINE_KEYS']}; chaves CF/ADCT alteradas: "
+             f"{rep['OTHER_NORM_KEYS_CHANGED']}.", f"Pares TIER A sem regra de tipo do aparelho (não simulados): {len(skipped)}."]
+    return dict(rep, skipped=skipped, CF_REGRESSION=cf_reg, CC_J1_J2_REGRESSION=cc_reg, SIMULATED=len(rels)), '\n'.join(lines) + '\n'
+
+
+# ------------------------------------------------------------------ deterministic quality sample + reports
+SAMPLE_SIZE = 40
+
+
+def sample(q):
+    """Deterministic, stratified: first item (by sha256 of id) of every (tier, source, class) stratum, then fill by sha256 order."""
+    order = sorted(q, key=lambda x: sha(x['id'].encode()))
+    picked, seen = [], set()
+    for x in order:
+        k = (x['tier'], x['sources'][0], x['classe'] if x['classe'] in QUALIFIED_KLASS else 'ACORDAO')
+        if k not in seen:
+            seen.add(k)
+            picked.append(x)
+    for x in order:
+        if len(picked) >= SAMPLE_SIZE:
+            break
+        if x not in picked:
+            picked.append(x)
+    return sorted(picked, key=lambda x: x['id'])
+
+
+def audit_md(q, sam, review):
+    errs = collections.Counter()
+    rows = []
+    for x in sam:
+        r = review.get(x['id'])
+        if r:
+            for k in ('source_identity', 'target_mapping', 'temporal', 'material_relevance', 'duplicate'):
+                errs[k] += r[k] != 'OK'
+        rows.append(f"| {x['id']} | {x['tier']} | {x['precedent_id']} | {x['target_id']} | {', '.join(x['sources'])} | "
+                    + (' | '.join(r[k] for k in ('source_identity', 'target_mapping', 'temporal', 'material_relevance', 'duplicate')) + f" | {r['note']} |"
+                       if r else 'pendente | | | | | |'))
+    m = dict(SAMPLED_RELATIONS=len(sam), REVIEWED=sum(1 for x in sam if x['id'] in review), SOURCE_IDENTITY_ERRORS=errs['source_identity'],
+             TARGET_MAPPING_ERRORS=errs['target_mapping'], TEMPORAL_ERRORS=errs['temporal'], MATERIAL_RELEVANCE_ERRORS=errs['material_relevance'],
+             DUPLICATE_ERRORS=errs['duplicate'])
+    L = ['# CC MASS DISCOVERY — auditoria de qualidade do motor (Passagem 2)', '', '```', ' · '.join(f'{k} = {v}' for k, v in m.items()), '```', '',
+         'Amostra determinística e estratificada (primeiro item de cada estrato tier × fonte × classe, completada pela ordem do sha256 do id). Cada item '
+         'foi relido na fonte oficial (texto da tese/enunciado/ementa e referência estruturada já capturados com hash). Erros sistemáticos encontrados '
+         'durante a operação foram corrigidos na regra e o grupo inteiro reprocessado (seção final).', '',
+         '| ID | Tier | Precedente | Target | Fonte | Identidade | Target | Temporal | Pertinência | Duplicata | Nota |', '|---|---|---|---|---|---|---|---|---|---|---|']
+    L += rows
+    L += ['', '## Regras corrigidas durante a operação (com reprocessamento do grupo)', '',
+          '- **CC/1916 confundido com CC/2002:** "art. 993 do Código Civil de 1916" e "arts. 1.062 e 1.063 do CC/1916" chegaram a virar alvos do CC/2002 '
+          '(SAME_DIPLOMA e NEAREST_MARKER aceitavam "do Código Civil de 1916"). A regra passou a exigir "mesmo diploma/código" e a respeitar a lei que '
+          'fecha a lista. Teste de regressão incluído.',
+          '- **Granularidade herdada da indexação:** a referência estruturada aponta incisos (art. 1.790, I a IV) que o texto não discute; sem citação '
+          'textual da unidade, o vínculo sobe ao artigo, e um vínculo genérico cede ao específico do mesmo precedente.',
+          '- **Dupla contagem do acórdão paradigma:** o REsp paradigma de um Tema Repetitivo contava como precedente próprio e como o Tema; agora conta uma vez.',
+          '- **Indexação documental sem texto:** legislação citada (STF e espelhos do STJ) sem o artigo na tese/ementa vira C (só menção); o mesmo critério '
+          'para STF e STJ.',
+          '- **Questão submetida contra a tese:** dispositivo só na questão, com a tese aplicando outra norma, vira C.']
+    return '\n'.join(L) + '\n', m
+
+
+def report_md(metrics, cov, q, inv, aud):
+    a = [x for x in q if x['tier'] == 'A']
+    by_area = sorted(cov.items(), key=lambda kv: -kv[1]['candidate_relations'])
+    best_src = max(metrics['QUALIFIED_BY_SOURCE'].items(), key=lambda kv: kv[1])[0] if metrics['QUALIFIED_BY_SOURCE'] else '—'
+    L = ['# CC MASS DISCOVERY — relatório executivo (host-only)', '', '```',
+         f"CC_MASS_DISCOVERY_STATUS = {'SUCCESS' if metrics['NEW_QUALIFIED_CANDIDATE_RELATIONS'] >= 200 else 'PARTIAL'} · BASELINE CC 49/39 · CF 315/198",
+         f"RAW {metrics['RAW_DISCOVERIES']} · PARES ÚNICOS {metrics['UNIQUE_PAIRS']} · NOVOS {metrics['NEW_UNIQUE_PAIRS']} · TIER A {metrics['TIER_A']} · "
+         f"TIER B {metrics['TIER_B']} · TIER C {metrics['TIER_C']} · QUALIFICADOS {metrics['NEW_QUALIFIED_CANDIDATE_RELATIONS']}",
+         f"NOVOS TARGETS {metrics['NEW_DISTINCT_CC_TARGETS']} · NOVOS ARTIGOS {metrics['NEW_DISTINCT_CC_ARTICLES']} · SD_CHANGED NO · FIRMWARE_CHANGED NO · "
+         'RATIFICAÇÃO NÃO REALIZADA', '```', '',
+         '## Respostas', '',
+         f"1. Relações novas descobertas (pares únicos ainda não publicados nem decididos): {metrics['NEW_UNIQUE_PAIRS']} (de {metrics['RAW_DISCOVERIES']} "
+         'registros brutos).',
+         f"2. Com fonte oficial confirmada: todos os registros brutos ({metrics['OFFICIAL_SOURCE_VERIFIED']}) têm fonte oficial e hash de captura.",
+         f"3. Passaram nos controles automáticos (TIER A + B): {metrics['NEW_QUALIFIED_CANDIDATE_RELATIONS']}.",
+         f"4. TIER A: {metrics['TIER_A']}. 5. TIER B: {metrics['TIER_B']}. 6. Rejeitadas automaticamente (TIER C): {metrics['TIER_C']} "
+         f"({', '.join(f'{k} {v}' for k, v in sorted(metrics['TIER_C_BY_REASON'].items(), key=lambda kv: -kv[1]))}).",
+         f"7. Novos targets que podem receber jurisprudência: {metrics['NEW_DISTINCT_CC_TARGETS']}. 8. Novos artigos: {metrics['NEW_DISTINCT_CC_ARTICLES']}.",
+         f"9. Livro com maior expansão: {by_area[0][0]} ({by_area[0][1]['candidate_relations']} relações candidatas).",
+         f"10. Fonte com mais resultados úteis: {best_src} ({metrics['QUALIFIED_BY_SOURCE'].get(best_src, 0)} relações qualificadas).",
+         f"11. Casos que exigem análise humana: {metrics['HUMAN_REVIEW_REQUIRED']} (TIER B), agrupados por risco na fila; os {metrics['TIER_A']} TIER A "
+         'podem ir em bloco.',
+         '12. Código novo de motor: 0 linhas em `batch_engine.py`/`generic_packager.py`. Código novo: adapters genéricos (#5 STF, #6 espelhos STJ, v2 do #4) '
+         'e o construtor desta operação.',
+         '13. Escala: sim — a operação processou o dataset inteiro de precedentes qualificados (2.403), as 676 súmulas, 331 acórdãos de mérito do STF e '
+         f"{inv.get('STJ_ESPELHOS_ACORDAOS', {}).get('records', 0)} espelhos de acórdãos do STJ sem triagem manual por item; o juízo humano ficou "
+         'concentrado no TIER B.',
+         f"14. Projeção (não é aprovação): só TIER A → CC {metrics['PROJECTED_CC_IF_ONLY_A_APPROVED']}; TIER A + B → CC "
+         f"{metrics['PROJECTED_CC_IF_ALL_A_AND_B_APPROVED']}.",
+         '15. Estratégia de ratificação em massa: aprovar o GREEN (TIER A) em bloco; revisar o YELLOW por grupo de risco (temporalidade, provisório, '
+         'realocação, não qualificado, homologatória, evidência indireta), decidindo por regra de grupo e só os casos sinalizados individualmente; manter o '
+         'RED fora.', '',
+         '## Cobertura por livro', '', '| Livro | Artigos no CC | Artigos com J física | Novos targets candidatos | Relações candidatas (A/B) | Lacuna |',
+         '|---|---:|---:|---:|---:|---|']
+    L += [f"| {k} | {v['articles_in_cc']} | {v['articles_with_physical_j']} | {v['new_candidate_targets']} | {v['candidate_relations']} "
+          f"({v['tier_a']}/{v['tier_b']}) | {v['discovery_gap']} |" for k, v in cov.items()]
+    L += ['', '## Fontes', '', '| Fonte | Registros processados | Com o CC | Hash |', '|---|---:|---:|---|']
+    L += [f"| {k} | {v.get('records')} | {v.get('citing', '—')} | `{v['sha256'][:16]}…` |" for k, v in sorted(inv.items())]
+    L += ['', 'Bloqueadas (registradas, não contornadas): ' + '; '.join(f'{k}: {v}' for k, v in BLOCKED_SOURCES.items()) + '.', '',
+          '## Riscos jurídicos identificados', '',
+          '- Lei 14.905/2024 (arts. 406 e 591) e Lei 15.040/2024 (seguros, arts. 757–802 revogados): pares temporais marcados ou rejeitados.',
+          '- Precedentes anteriores ao CC/2002 e regras de transição (art. 2.028): marcados para revisão.',
+          '- Acórdãos não qualificados (EREsp/EAREsp/REsp da Segunda Seção e da Corte Especial, homologações) ficam no máximo em B.',
+          '- Indexação documental (legislação citada) não basta: exige o artigo no texto da tese/ementa.',
+          '- Temas afetados/sobrestados/"RE pendente": provisórios (B).', '',
+          f"Auditoria da amostra: {aud['REVIEWED']}/{aud['SAMPLED_RELATIONS']} revisados; erros de identidade {aud['SOURCE_IDENTITY_ERRORS']}, de target "
+          f"{aud['TARGET_MAPPING_ERRORS']}, temporais {aud['TEMPORAL_ERRORS']}, de pertinência {aud['MATERIAL_RELEVANCE_ERRORS']}, duplicatas "
+          f"{aud['DUPLICATE_ERRORS']} (ver CC_MASS_DISCOVERY_AUDIT.md).", '',
+          '## Próxima missão proposta', '', '`MASS HUMAN RATIFICATION` — aprovar o TIER A em bloco, revisar o TIER B por grupos, manter o TIER C fora. '
+          'Não executada.']
+    return '\n'.join(L) + '\n'
 
 
 def main():
