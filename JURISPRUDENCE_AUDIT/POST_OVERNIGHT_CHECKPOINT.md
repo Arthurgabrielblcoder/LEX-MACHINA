@@ -9,6 +9,18 @@ CC_J2_PHYSICAL_VALIDATION = 38/38 PASS · REPETITIVO STJ e IAC validados no apar
 
 Documento: `JURISPRUDENCE_ENGINE/CC_J2_PHYSICAL_FROZEN.md`.
 
+**CC MASS DISCOVERY (2026-10-19, host-only, sem ratificação): SUCCESS com ressalva.**
+- **Qualificadas: 932** (TIER A 29 · TIER B 903), em 840 targets novos e 661 artigos.
+- **Composição:**
+  - 184 vêm de precedentes qualificados, Seções, Corte Especial e STF.
+  - 748 são representantes de acórdãos da 3ª/4ª Turma (não vinculantes), um por dispositivo sem outro vínculo.
+  - Sem as Turmas, o total ficaria abaixo de 200.
+- **Rejeitadas: 26.957 (C).** A amostra de 40 relações teve 3 erros de pertinência, todos STF já sinalizados como USO_CONTEXTUAL_POSSIVEL.
+- **Simulação TIER A:** 29/29, regressão 0.
+- **Cartão e firmware:** nada mudou. O baseline físico acima não muda.
+
+Relatório: `JURISPRUDENCE_ENGINE/CC_MASS_DISCOVERY/CC_MASS_DISCOVERY_REPORT.md`. Próxima missão proposta: `MASS HUMAN RATIFICATION`, ainda não iniciada.
+
 ## Estado anterior (freeze multinorma, 2026-10-18)
 
 ```

@@ -13,6 +13,9 @@ ROOT = ENG.parent
 OUT = ENG / 'CC_MASS_DISCOVERY'
 sys.path.insert(0, str(ENG))
 import batch_engine as E  # noqa: E402
+import build_cc_mass_discovery as B  # noqa: E402
+
+TURMAS_INDEX = ENG / 'stj/_local/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json'      # not versioned (47 MB): rebuild recipe in the report
 
 
 def jl(p):
@@ -28,6 +31,7 @@ class CCMassDiscovery(unittest.TestCase):
         cls.index = {t['target_id'] for t in json.loads((ROOT / 'DEVICE_INTEGRATION/staging_article_index_cc/_host/CC2002_TARGET_INDEX.json')
                                                         .read_text(encoding='utf-8'))['targets']}
 
+    @unittest.skipUnless(TURMAS_INDEX.is_file(), 'índice local das Turmas ausente (não versionado): reconstruir pela receita do relatório')
     def test_up_to_date(self):
         r = subprocess.run([sys.executable, '-B', str(ENG / 'build_cc_mass_discovery.py'), '--check'], capture_output=True, text=True, cwd=ROOT)
         self.assertEqual((r.returncode, r.stdout.strip()), (0, 'UP_TO_DATE'), r.stderr[-1500:])
@@ -82,6 +86,53 @@ class CCMassDiscovery(unittest.TestCase):
                 self.assertIn('TARGET_FALLBACK_TO_PARENT', x['flags'], x['id'])
                 self.assertEqual(x['tier'], 'B', x['id'])
 
+    def test_turma_one_representative_per_uncovered_target(self):
+        turma = [x for x in self.q if x['sources'] == ['STJ_ESPELHOS_TURMAS']]
+        self.assertTrue(turma)
+        targets = [x['target_id'] for x in turma]
+        self.assertEqual(len(targets), len(set(targets)))                                 # one representative per dispositivo
+        higher = {x['target_id'] for x in self.q if x['sources'] != ['STJ_ESPELHOS_TURMAS']}
+        for x in turma:
+            self.assertEqual(x['tier'], 'B', x['id'])
+            self.assertNotIn(x['target_id'], higher, x['id'])                             # only fills what nothing else covers
+            self.assertEqual(x['evidence_strength'], 'STRONG', x['id'])
+            self.assertIn('ementa', x['evidence_fields'], x['id'])
+        self.assertGreater(self.m['TIER_C_BY_REASON']['CORROBORATION_NON_QUALIFIED'], 0)
+
+    def test_merit_rules(self):
+        # recurso não conhecido (Súmula 7) — 'a origem negou provimento' is not this court's merit verb
+        self.assertFalse([x for x in self.q if x['precedent_id'] == 'STJ:RESP:2172770'])
+        # only in the question / admissibility bar (Súmulas 5 e 7 quanto aos arts. 1.072-1.074) and in the 'Dispositivos relevantes' list
+        self.assertFalse([x for x in self.q if x['precedent_id'] == 'STJ:ARESP:3120248'])
+        # Súmula 168: 'quanto à alegada divergência sobre o art. 200' — not decided
+        self.assertFalse([x for x in self.q if (x['precedent_id'], x['target_id']) == ('STJ:ERESP:1280825', 'CC2002:ART.200')])
+        # older acórdão that decides the question (art. 205) and then 'não conhece', with no admissibility bar: kept
+        self.assertTrue([x for x in self.q if (x['precedent_id'], x['target_id']) == ('STJ:RESP:976968', 'CC2002:ART.205')])
+        why = B.merit_check('I. CASO EM EXAME 1. Agravo. II. QUESTÃO EM DISCUSSÃO 2. saber se o art. 344 do CC se aplica. III. RAZÕES DE DECIDIR '
+                            '3. Incide a Súmula 7/STJ. Dispositivos relevantes citados: CC, art. 344.', 'CC2002:ART.344')
+        self.assertEqual(why[0], 'MENTION_IN_CLAIM_ONLY')
+        self.assertIsNone(B.merit_check('3. Nos termos do art. 935 do CC/02, a responsabilidade civil é independente. Recurso especial provido.',
+                                        'CC2002:ART.935'))
+
+    def test_cc1916_correspondence_flagged(self):
+        for pid in ('STJ:ERESP:1171820', 'STJ:RESP:665651'):
+            xs = [x for x in self.q if x['precedent_id'] == pid]
+            self.assertTrue(xs, pid)
+            for x in xs:
+                self.assertIn('CORRESPONDENCIA_CC1916', x['flags'], x['id'])
+                self.assertNotEqual(x['tier'], 'A')
+
+    def test_large_raw_not_versioned(self):
+        for k in ('CC_MASS_DISCOVERY_RAW.jsonl', 'CC_MASS_DISCOVERY_REJECTED.jsonl', 'CC_MASS_DISCOVERY_QUALIFIED.jsonl', 'CC_MASS_RATIFICATION_QUEUE.json'):
+            self.assertLess((OUT / k).stat().st_size, 10_000_000, k)
+        ign = (ROOT / '.gitignore').read_text(encoding='utf-8')
+        self.assertIn('JURISPRUDENCE_ENGINE/stj/_local/', ign)
+        self.assertIn('JURISPRUDENCE_ENGINE/CC_MASS_DISCOVERY/_local/', ign)
+
+    def test_sample_reviewed(self):
+        self.assertEqual((self.m['SAMPLED_RELATIONS'], self.m['REVIEWED']), (40, 40))
+        self.assertEqual(self.m['SOURCE_IDENTITY_ERRORS'] + self.m['TARGET_MAPPING_ERRORS'] + self.m['DUPLICATE_ERRORS'], 0)
+
     def test_baselines_and_flags(self):
         m = self.m
         self.assertEqual((m['BASELINE_CC_PHYSICAL'], m['BASELINE_CF_PHYSICAL'], m['SD_CHANGED'], m['FIRMWARE_CHANGED'],
@@ -91,6 +142,8 @@ class CCMassDiscovery(unittest.TestCase):
     def test_checkpoint(self):
         ck = json.loads((OUT / 'CC_MASS_DISCOVERY_CHECKPOINT.json').read_text(encoding='utf-8'))
         for k, h in ck['OUTPUT_HASHES'].items():
+            if k.startswith('_local/') and not (OUT / k).is_file():
+                continue                                                                   # local-only large file (not versioned)
             self.assertEqual(hashlib.sha256((OUT / k).read_bytes().replace(b'\r\n', b'\n')).hexdigest(), h, k)
         self.assertEqual(ck['QUALIFIED_COUNT'], len(self.q))
         self.assertFalse(ck['SOURCES_PENDING'])
