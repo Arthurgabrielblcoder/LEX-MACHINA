@@ -14,6 +14,8 @@ Documento: `JURISPRUDENCE_ENGINE/MULTINORM_CF_CC_J1_FROZEN.md`.
 
 **CC-J2 (2026-10-18, host-only, não ratificado):** 30 candidatos; GREEN 9 / YELLOW 13 / RED 8. Se tudo GREEN+YELLOW fosse ratificado, o CC projetado seria 54/42; a projeção não é baseline. Simulação sem regressão (CF 0, CC-J1 0). Fonte nova: precedentes qualificados do STJ (dados abertos, AVAILABLE). Fila separada `CF_MATERIALIZATION_PENDING`: 9 relações da CF ratificadas e não instaladas. Documentos: `JURISPRUDENCE_ENGINE/CC_J2_REVIEW.md` e `CC_J2_RATIFICATION_DOSSIER.md`. O baseline físico acima não muda.
 
+**CC-J2 ratificado (2026-10-18, host-only):** 19 aprovadas (9 GREEN + 10 YELLOW) e 11 RED não aprovadas; 20 relações, 15 targets novos. A projeção após a materialização é 49/39 e não é baseline. Nada foi materializado. Registro: `JURISPRUDENCE_ENGINE/CC_J2_RATIFICATION_RECORD.json`. Próximo passo: `CC-J2 MATERIALIZATION PREFLIGHT`.
+
 ## Estado anterior (J2J, 2026-10-18)
 
 ```

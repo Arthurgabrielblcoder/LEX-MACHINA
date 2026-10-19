@@ -16,14 +16,15 @@ import juris_types as JT  # noqa: E402
 class DeviceTypes(unittest.TestCase):
     def test_single_source_for_future_batches(self):
         doc11 = dict(batch='BATCH11')
-        for k in ('RG', 'SV', 'ADI', 'HC', 'MS', 'AP', 'AI', 'INQ', 'RCL', 'ADPF', 'SUMULA', 'SUMULA_TSE'):
-            self.assertEqual(RC.device_status(doc11, k), 'VALIDATED', k)              # J2I 32/32 (ADPF no longer "novo")
-        for k in ('ADC', 'RE', 'ARE', 'MI', 'SUMULA_STJ', 'RHC'):
+        for k in ('RG', 'SV', 'ADI', 'HC', 'MS', 'AP', 'AI', 'INQ', 'RCL', 'ADPF', 'SUMULA', 'SUMULA_TSE', 'SUMULA_STJ'):
+            self.assertEqual(RC.device_status(doc11, k), 'VALIDATED', k)              # J2I 32/32; SUMULA_STJ: CC-J1 36/36 (metadata-only)
+        for k in ('ADC', 'RE', 'ARE', 'MI', 'RHC', 'REPETITIVO', 'IAC'):
             self.assertEqual(RC.device_status(doc11, k), 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED', k)
         self.assertEqual(RC.device_status(doc11, 'XYZ'), 'NEW_JURIS_TYPE_REQUIRES_DESIGN')
-        self.assertTrue(all(RC.device_status(doc11, k) == JT.device_status(k) for k in JT.KLASS_TO_TIPO))
+        self.assertTrue(all(RC.device_status(doc11, k) == JT.physical_status(k) for k in JT.KLASS_TO_TIPO))
 
     def test_historical_batches_unchanged(self):
+        self.assertEqual(JT.device_status('SUMULA_STJ'), 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED')   # frozen-batch table unchanged
         self.assertEqual(RC.device_status(dict(batch='BATCH10'), 'ADPF'), 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED')   # frozen table
         rec = json.loads((AUD / 'J2_RATIFICATION_RECORD_03_09.json').read_text(encoding='utf-8'))
         rec10 = json.loads((AUD / 'J2_RATIFICATION_RECORD_10.json').read_text(encoding='utf-8'))

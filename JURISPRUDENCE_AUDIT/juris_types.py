@@ -24,6 +24,11 @@ LIST_WIDTH = 34          # imprimirUTF8(…, 34) in the relation list; the row p
 # PHYSICALLY_VALIDATED = shown, opened and BACK-tested on the device: J2I_PHYSICAL_VALIDATION 32/32 (2026-10-18) + J2C/J2G legacy types.
 PHYSICALLY_VALIDATED = frozenset({'RG', 'SV', 'ADI', 'HC', 'MS', 'AP', 'AI', 'INQ', 'RCL', 'ADPF', 'SUMULA', 'SUMULA_TSE'})
 DEVICE_STATUS = ('VALIDATED', 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED', 'NEW_JURIS_TYPE_REQUIRES_DESIGN')
+# Physical validations recorded AFTER batches that used device_status were frozen (metadata-only). device_status keeps the table those
+# batches were built with (pilot CC, CC-J1, CC-J2 decisions are pinned by hash); physical_status is the current truth for new batches/records.
+PHYSICAL_VALIDATION_RECORDS = {
+    'SUMULA_STJ': 'CC_J1_PHYSICAL_VALIDATION = 36/36 PASS (2026-10-18; JURISPRUDENCE_ENGINE/CC_J1_PHYSICAL_DEPLOY/CC_J1_PHYSICAL_VALIDATION.json)',
+}
 
 
 def device_status(klass):
@@ -36,6 +41,11 @@ def device_status(klass):
     if tipo and (tipo in LEGACY or tipo in SUMULA or any(t == tipo for t, _ in CLASSES)):
         return 'FIRMWARE_LABEL_EXISTS_NOT_PHYSICALLY_VALIDATED'
     return 'NEW_JURIS_TYPE_REQUIRES_DESIGN'
+
+
+def physical_status(klass):
+    """device_status + the physical validations recorded later (PHYSICAL_VALIDATION_RECORDS)."""
+    return 'VALIDATED' if klass.upper() in PHYSICAL_VALIDATION_RECORDS else device_status(klass)
 
 
 def label(tipo, tribunal, numero):

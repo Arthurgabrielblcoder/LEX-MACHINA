@@ -24,7 +24,7 @@ def device_status(doc, klass):
     n = int(re.sub(r'\D', '', doc['batch']))
     if n <= LEGACY_DEVICE_TABLE_LAST_BATCH:
         return LEGACY_DEVICE_TYPES.get(klass, 'NEW_JURIS_TYPE_REQUIRES_DESIGN')
-    return JT.device_status(klass)
+    return JT.physical_status(klass)
 
 
 PROMOTING = ('PROMOTE_RECOMMENDED', 'PROMOTE_PROVISIONAL_RECOMMENDED', 'REALLOCATE_RECOMMENDED')
