@@ -1,0 +1,85 @@
+{
+  "deploy": "DEPLOY_PASS",
+  "dry_run": "PREFLIGHT_OK",
+  "expected": {
+    "CC": "702/636",
+    "CF_ADCT": "315/198",
+    "group_f": 0,
+    "lookups": "833/4096",
+    "new_fichas": 572,
+    "new_targets": 597,
+    "relations_visible": "653/653",
+    "replacements": 76,
+    "reused_fichas": 2
+  },
+  "failure_injection": [
+    {
+      "byte_exact": true,
+      "point": "after_first_normalized",
+      "result": "INJECTED_FAILURE_ROLLED_BACK",
+      "semantic": {
+        "cc_relations": 49,
+        "cc_targets": 39,
+        "lookup_entries": 236
+      }
+    },
+    {
+      "byte_exact": true,
+      "point": "after_lookup",
+      "result": "INJECTED_FAILURE_ROLLED_BACK",
+      "semantic": {
+        "cc_relations": 49,
+        "cc_targets": 39,
+        "lookup_entries": 236
+      }
+    },
+    {
+      "byte_exact": true,
+      "point": "after_partial_fichas",
+      "result": "INJECTED_FAILURE_ROLLED_BACK",
+      "semantic": {
+        "cc_relations": 49,
+        "cc_targets": 39,
+        "lookup_entries": 236
+      }
+    },
+    {
+      "byte_exact": true,
+      "point": "before_lookup",
+      "result": "INJECTED_FAILURE_ROLLED_BACK",
+      "semantic": {
+        "cc_relations": 49,
+        "cc_targets": 39,
+        "lookup_entries": 236
+      }
+    },
+    {
+      "byte_exact": true,
+      "point": "before_replace",
+      "result": "INJECTED_FAILURE_ROLLED_BACK",
+      "semantic": {
+        "cc_relations": 49,
+        "cc_targets": 39,
+        "lookup_entries": 236
+      }
+    }
+  ],
+  "failure_injection_result": "PASS",
+  "idempotency": "ALREADY_DEPLOYED_NOOP",
+  "physical": false,
+  "post_fixture_validated_path": {
+    "deploy": "DEPLOY_PASS",
+    "fixture_byte_exact": true,
+    "rollback": "ROLLBACK_PASS"
+  },
+  "pre_post_pre_byte_exact": true,
+  "result": "PASS",
+  "rollback": "ROLLBACK_PASS",
+  "schema_version": 1,
+  "semantic": {
+    "cc_relations": 49,
+    "cc_targets": 39,
+    "lookup_entries": 236
+  },
+  "verify": "VERIFY_PASS"
+}
