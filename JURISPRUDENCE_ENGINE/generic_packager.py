@@ -29,6 +29,8 @@ MAX_GROUP = 255                       # LookupJurisCFCache.quantidade (uint8_t)
 MAX_RELACOES_ARTIGO = 32
 HEADER_LOOKUP = '#ORIGEM_NORMA|ARTIGO|PARAGRAFO|INCISO|ALINEA|OFFSET|QUANTIDADE\n'
 HEADER_RECORDS = '#ID|TIPO|TRIBUNAL|NUMERO|STATUS|TITULO_CURTO|IDENTIFICADOR|FONTE\n'
+DISPLAY_FIELDS = ('orgao', 'data', 'natureza')
+HEADER_RECORDS_DISPLAY = HEADER_RECORDS.rstrip('\n') + '|ORGAO|DATA|NATUREZA\n'
 
 
 class PackagerError(ValueError):
@@ -40,10 +42,12 @@ def query_key(target_id):
     return T.to_pipe_fields(target_id)
 
 
-def record_line(rel, p):
+def record_line(rel, p, extended_display=False):
     norm, art, par, inc, ali = query_key(rel['target_id']).split('|')
     tail = ':'.join([norm, art, par.upper() if par else '-', inc or '-', ali or '-'])
     cells = [f"{rel['precedent_id']}:{tail}", p['tipo'], p['tribunal'], p['numero'], p['status'], p['titulo'], rel['precedent_id'], p['fonte']]
+    if extended_display:
+        cells.extend(p.get(field, '') for field in DISPLAY_FIELDS)
     if any('|' in c or '\n' in c for c in cells):
         raise PackagerError(f'FIELD_WITH_SEPARATOR {rel["precedent_id"]}')
     return '|'.join(cells) + '\n'
@@ -70,12 +74,15 @@ def package(relations, precedents, card_fichas, new_fichas=None, provisional_ids
             continue                                                     # the same link twice is one link
         seen.add(key)
         groups.setdefault(query_key(rel['target_id']), []).append(rel)
-    look, rec = [HEADER_LOOKUP], [HEADER_RECORDS]
-    offset = len(HEADER_RECORDS.encode('utf-8'))
+    extended_display = any(any(precedents[r['precedent_id']].get(field) for field in DISPLAY_FIELDS)
+                           for rels in groups.values() for r in rels)
+    records_header = HEADER_RECORDS_DISPLAY if extended_display else HEADER_RECORDS
+    look, rec = [HEADER_LOOKUP], [records_header]
+    offset = len(records_header.encode('utf-8'))
     for key, rels in groups.items():
         if len(rels) > MAX_GROUP or len(rels) > MAX_RELACOES_ARTIGO:
             raise PackagerError(f'GROUP_TOO_LARGE {key} {len(rels)}')
-        lines = [record_line(r, precedents[r['precedent_id']]) for r in rels]
+        lines = [record_line(r, precedents[r['precedent_id']], extended_display) for r in rels]
         look.append(f'{key}|{offset}|{len(rels)}\n')
         rec += lines
         offset += sum(len(l.encode('utf-8')) for l in lines)
@@ -85,12 +92,13 @@ def package(relations, precedents, card_fichas, new_fichas=None, provisional_ids
         raise PackagerError(f'FICHA_MISSING {missing[:5]}')
     files = {f'{LAYER}/JUR_LOOKUP.IDX': ''.join(look).encode('utf-8'), f'{LAYER}/JURISPRUDENCIA.IDX': ''.join(rec).encode('utf-8')}
     files.update({f'{CONTENT}/{k}': v.encode('utf-8') for k, v in sorted(new_fichas.items()) if k in fichas_needed and k not in card_fichas})
-    files[f'{LAYER}/MULTINORM_MANIFEST.json'] = (json.dumps(manifest(groups, precedents, fichas_needed, card_fichas, provisional_ids, files),
+    files[f'{LAYER}/MULTINORM_MANIFEST.json'] = (json.dumps(manifest(groups, precedents, fichas_needed, card_fichas, provisional_ids, files,
+                                                                    extended_display=extended_display),
                                                              ensure_ascii=False, indent=1) + '\n').encode('utf-8')
     return files
 
 
-def manifest(groups, precedents, fichas_needed, card_fichas, provisional_ids, files):
+def manifest(groups, precedents, fichas_needed, card_fichas, provisional_ids, files, extended_display=False):
     by_norm = collections.defaultdict(list)
     for rels in groups.values():
         for r in rels:
@@ -108,12 +116,17 @@ def manifest(groups, precedents, fichas_needed, card_fichas, provisional_ids, fi
         for r in rels:
             shared[JT.ficha(r['precedent_id'])].add(T.parse_target_id(r['target_id'])['namespace'])
     keys = list(groups)
-    return dict(schema_version=1, kind='MULTINORM_JURIS_MANIFEST', layer=LAYER, norms=norms,
+    out = dict(schema_version=1, kind='MULTINORM_JURIS_MANIFEST', layer=LAYER, norms=norms,
                 totals=dict(relations=sum(v['relations'] for v in norms.values()), query_keys=len(keys),
                             DUPLICATE_QUERY_KEYS=len(keys) - len(set(keys)), fichas_referenced=len(fichas_needed),
                             fichas_new=len([f for f in fichas_needed if f not in card_fichas])),
                 fichas_shared_across_norms=sorted(f for f, ns in shared.items() if len(ns) > 1),
                 files={k: hashlib.sha256(v).hexdigest() for k, v in sorted(files.items())})
+    if extended_display:
+        out['optional_display_extension'] = dict(schema_version=1, fields=['ORGAO', 'DATA', 'NATUREZA'], backward_compatible=True,
+                                                 populated_records=sum(any(precedents[r['precedent_id']].get(f) for f in DISPLAY_FIELDS)
+                                                                       for rels in groups.values() for r in rels))
+    return out
 
 
 # ---------- CF fixture: J2I_FROZEN_315_198 (visible LEXV1 relations + legacy precedent records) ----------
