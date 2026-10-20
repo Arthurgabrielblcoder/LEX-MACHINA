@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "kind": "MULTINORM_JURIS_MANIFEST",
+ "layer": "99_JURISPRUDENCIA_V2/06_NORMALIZADO",
+ "norms": {
+  "ADCT": {
+   "relations": 4,
+   "targets_with_j": 4,
+   "query_keys": 4,
+   "distinct_precedents": 4,
+   "fichas": 4,
+   "tipos": {
+    "adi": 3,
+    "repercussao_geral": 1
+   },
+   "tribunais": {
+    "STF": 4
+   },
+   "provisionals": []
+  },
+  "CC2002": {
+   "relations": 55,
+   "targets_with_j": 45,
+   "query_keys": 45,
+   "distinct_precedents": 43,
+   "fichas": 43,
+   "tipos": {
+    "adi": 2,
+    "aresp": 3,
+    "iac": 1,
+    "repercussao_geral": 5,
+    "repetitivo_stj": 11,
+    "resp": 3,
+    "sumula": 18
+   },
+   "tribunais": {
+    "STF": 7,
+    "STJ": 36
+   },
+   "provisionals": []
+  },
+  "CF88": {
+   "relations": 311,
+   "targets_with_j": 193,
+   "query_keys": 193,
+   "distinct_precedents": 254,
+   "fichas": 254,
+   "tipos": {
+    "adi": 17,
+    "adpf": 3,
+    "ai": 1,
+    "ap": 1,
+    "hc": 2,
+    "inq": 2,
+    "ms": 3,
+    "rcl": 1,
+    "repercussao_geral": 209,
+    "sumula": 2,
+    "sumula_vinculante": 13
+   },
+   "tribunais": {
+    "STF": 253,
+    "TSE": 1
+   },
+   "provisionals": []
+  }
+ },
+ "totals": {
+  "relations": 370,
+  "query_keys": 242,
+  "DUPLICATE_QUERY_KEYS": 0,
+  "fichas_referenced": 299,
+  "fichas_new": 6
+ },
+ "fichas_shared_across_norms": [
+  "STF_ADI_7047-7064.TXT",
+  "STF_RG_932.TXT"
+ ],
+ "files": {
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/CCMD_006371F260.TXT": "1eb93efd549e0fced98759dbcd860c893812de55d4c639f11b9f66435a0476bc",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/CCMD_0124F833D5.TXT": "71bdd9a19cee4a9d92481c9a1bca652523b17371a9313d7ed1a4e441313de9b4",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/CCMD_0BCA168976.TXT": "87b1447a6bb23ace166aa8f4fa02e6b2fb130a9e0a18520c8abc370b1f5696da",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/CCMD_0C72C29089.TXT": "4866278be5d1be9e8ceac1031d48cc3ff7e50741edf1de224c9174484a10f93c",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/CCMD_11CED92827.TXT": "0ddcfef14d045538d47f8f2ff6fa1713ad59e1f0060122b989e1484fc0efbf65",
+  "99_JURISPRUDENCIA_V2/03_CONTEUDO/CCMD_151AFCE0D1.TXT": "a132b68927c61caf0fac7a9759c797acd1549bfb569ee0929e8c6cfae9912528",
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JURISPRUDENCIA.IDX": "0073d10dc104ed1a5c9b43cada32adba138cb677fa75a6ce71ee036e1d003135",
+  "99_JURISPRUDENCIA_V2/06_NORMALIZADO/JUR_LOOKUP.IDX": "de9bec742a32c8bf8e25e1ddf42d52e586ba593abd3e4d8ec50b3dd78d0628fc"
+ },
+ "optional_display_extension": {
+  "schema_version": 1,
+  "fields": [
+   "ORGAO",
+   "DATA",
+   "NATUREZA"
+  ],
+  "backward_compatible": true,
+  "populated_records": 6
+ },
+ "optional_relation_ficha_extension": {
+  "schema_version": 1,
+  "field": "FICHA_RELACAO",
+  "column": 11,
+  "backward_compatible": true,
+  "populated_records": 6,
+  "fallback": "IDENTIFICADOR-derived shared precedent ficha"
+ }
+}
