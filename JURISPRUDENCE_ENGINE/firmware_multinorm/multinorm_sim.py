@@ -114,6 +114,10 @@ def relation(line, rotulo):
         return None
     arquivo = ident.replace(':', '_').replace('/', '_') + '.TXT'
     orgao, data, natureza = (f[8] if len(f) > 8 else ''), (f[9] if len(f) > 9 else ''), (f[10] if len(f) > 10 else '')
+    # Optional, backward-compatible relation-level composed ficha.  Legacy
+    # eight- and eleven-column rows still use the shared precedent filename.
+    if len(f) > 11 and f[11]:
+        arquivo = f[11]
     label = turma_list_label(trib, tipo, num, orgao, natureza)
     title = f'{trib} {TURMA_CLASSES[tipo.lower()]} {format_process_number(num)}' if natureza == 'PERSUASIVE_NON_BINDING' and tipo.lower() in TURMA_CLASSES \
         else JT.title(tipo, trib, num)

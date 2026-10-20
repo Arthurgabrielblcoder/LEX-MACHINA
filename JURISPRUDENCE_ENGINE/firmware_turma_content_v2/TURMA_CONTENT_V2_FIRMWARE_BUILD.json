@@ -1,0 +1,42 @@
+{
+  "schema_version": 2,
+  "status": "HOST_ONLY_CANDIDATE",
+  "flashed": false,
+  "sd_changed": false,
+  "physical_firmware_unchanged_sha256": "e2945cf55a00f27f6c35ff709e81732d804fd8c6f01958230cef0016f740a4a0",
+  "before": {
+    "program_bytes": 1108967,
+    "static_ram_bytes": 127724,
+    "app_bin_bytes": 1109120,
+    "app_sha256": "e2945cf55a00f27f6c35ff709e81732d804fd8c6f01958230cef0016f740a4a0",
+    "app_partition_bytes": 1310720,
+    "app_partition_free": 201600
+  },
+  "after": {
+    "program_bytes": 1109011,
+    "static_ram_bytes": 127724,
+    "app_bin_bytes": 1109152,
+    "app_sha256": "723ce23229d84fb9107db8cb499ee45f5f67b936c31e92b4b7f5f7471a57cb64",
+    "app_partition_bytes": 1310720,
+    "app_partition_free": 201568
+  },
+  "delta": {
+    "program_bytes": 44,
+    "static_ram_bytes": 0,
+    "app_bin_bytes": 32
+  },
+  "candidate": {
+    "source": "candidate/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino",
+    "source_sha256": "b78d910b4a9c8760ceb9503f4cfdaa91887a1dca16048574f95c861da197525e",
+    "binary": "candidate/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino.bin",
+    "binary_sha256": "723ce23229d84fb9107db8cb499ee45f5f67b936c31e92b4b7f5f7471a57cb64",
+    "patch": "turma_content_v2.patch"
+  },
+  "schema": {
+    "change": true,
+    "backward_compatible": true,
+    "optional_column": "FICHA_RELACAO",
+    "column": 11,
+    "fallback": "arquivo derivado de IDENTIFICADOR quando ausente"
+  }
+}

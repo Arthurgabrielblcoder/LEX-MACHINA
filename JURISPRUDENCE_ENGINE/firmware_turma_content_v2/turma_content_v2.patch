@@ -1,0 +1,12 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (turma display físico)
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (content v2)
+@@ -2192,7 +2192,8 @@
+   r.orgao=campoPipe(linha,8);
+   r.dataJulgamento=campoPipe(linha,9);
+   r.natureza=campoPipe(linha,10);
+-  r.arquivo=arquivoDetalheJurisCF(identificador);
++  r.arquivo=campoPipe(linha,11);
++  if(r.arquivo.length()==0) r.arquivo=arquivoDetalheJurisCF(identificador);
+   r.caminho=String(PASTA_CONTEUDO_JURIS_CF)+"/"+r.arquivo;
+   contabilizarTipoJurisCF(tipo);
+   return true;
