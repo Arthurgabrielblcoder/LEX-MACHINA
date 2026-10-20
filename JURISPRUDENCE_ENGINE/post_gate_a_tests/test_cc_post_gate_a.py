@@ -45,7 +45,8 @@ class PostGateAArtifactsTest(unittest.TestCase):
         self.assertEqual(len({x["TARGET"] for x in self.fixture["fixtures"]}), 6)
 
     def test_mass_counts(self):
-        self.assertEqual(self.mass_profile["post_state"]["semantic"], {"cc_relations": 702, "cc_targets": 636, "lookup_entries": 833})
+        self.assertEqual(self.mass_profile["post_state"]["semantic"], {"cc_relations": 702, "cc_targets": 636,
+            "cf_adct_normalized_relations": 315, "cf_adct_normalized_targets": 197, "lookup_entries": 833})
         self.assertEqual(len(self.mass_profile["content_files"]), 572)
 
     def test_mass_two_authorized_pre_states(self):

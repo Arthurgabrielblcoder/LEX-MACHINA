@@ -117,8 +117,11 @@ def semantic_counts(root: Path) -> dict:
                 target = fields[0][len(fields[6]) + 1:]
                 rows.append((target, fields[6]))
     cc = [(target, precedent) for target, precedent in rows if target.startswith("CC2002:")]
+    cf = [(target, precedent) for target, precedent in rows if not target.startswith("CC2002:")]
     lookup = [line for line in (root / AGGREGATES[3]).read_text(encoding="utf-8").splitlines() if line and not line.startswith("#")]
-    return {"cc_relations": len(cc), "cc_targets": len({x[0] for x in cc}), "lookup_entries": len(lookup)}
+    return {"cc_relations": len(cc), "cc_targets": len({x[0] for x in cc}),
+            "cf_adct_normalized_relations": len(cf), "cf_adct_normalized_targets": len({x[0] for x in cf}),
+            "lookup_entries": len(lookup)}
 
 
 def detect_state(root: Path, profile: dict) -> tuple[str | None, dict]:
@@ -145,6 +148,23 @@ def preflight(root: Path, profile: dict, *, write: bool = False, confirm: str | 
     expected = profile["post_state"] if state == "POST" else profile["allowed_pre_states"][state]
     if semantic != expected["semantic"]:
         raise RefuseWrite(f"recontagem semântica divergente: {semantic}")
+    if not mock:
+        baseline_doc = json.loads((ROOT / profile["physical_baseline_manifest"]).read_text(encoding="utf-8"))["entries"]
+        exempt = set(AGGREGATES) | set(profile["content_files"])
+        failures = []
+        for rel, meta in baseline_doc.items():
+            if rel in exempt:
+                continue
+            path = root / rel
+            if not path.is_file() or file_record(path) != {"bytes": meta["bytes"], "sha256": meta["sha256"]}:
+                failures.append(rel)
+        physical_files = sum(1 for path in root.rglob("*") if path.is_file())
+        if failures or physical_files < len(baseline_doc):
+            raise RefuseWrite(f"inventário físico baseline divergente: {len(failures)} hashes; {physical_files}/{len(baseline_doc)} arquivos")
+        from deploy_cc_j1_sd import recount_lexv1
+        _, cf_relations, cf_targets = recount_lexv1(root)
+        if (cf_relations, cf_targets) != (315, 198):
+            raise RefuseWrite(f"recontagem CF/ADCT LexV1 divergente: {cf_relations}/{cf_targets}")
     content = {}
     for rel, meta in profile["content_files"].items():
         path = root / rel
@@ -156,7 +176,8 @@ def preflight(root: Path, profile: dict, *, write: bool = False, confirm: str | 
         unexpected = sorted(rel for rel, value in content.items() if value and rel not in expected_present)
         if unexpected:
             raise RefuseWrite(f"fixture/conteúdo parcial não autorizado: {unexpected[:3]}")
-    return {"result": "PREFLIGHT_OK", "mock": mock, "state": state, "semantic": semantic, "aggregates": actual}
+    return {"result": "PREFLIGHT_OK", "mock": mock, "state": state, "semantic": semantic,
+            "CF_ADCT_LEXV1": "NOT_APPLICABLE_SYNTHETIC_MOCK" if mock else "315/198", "aggregates": actual}
 
 
 def backup(root: Path, profile: dict, backup_dir: Path, pre: dict) -> dict:
@@ -221,6 +242,10 @@ def deploy(root: Path, profile: dict, backup_dir: Path, *, confirm: str | None =
     pre = preflight(root, profile, write=True, confirm=confirm, firmware=firmware, backup_dir=backup_dir)
     if pre["state"] == "POST":
         return {"result": "ALREADY_DEPLOYED_NOOP", "semantic": pre["semantic"]}
+    required = sum(meta["bytes"] for rel, meta in profile["content_files"].items() if not (root / rel).exists())
+    required += 2 * sum(meta["bytes"] for meta in profile["post_state"]["aggregates"].values())
+    if shutil.disk_usage(root).free < required:
+        raise RefuseWrite(f"espaço livre insuficiente: requer {required} bytes")
     tx = backup(root, profile, backup_dir, pre)
     try:
         pending = [(rel, meta) for rel, meta in profile["content_files"].items() if not (root / rel).exists()]

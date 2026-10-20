@@ -63,6 +63,11 @@ def lookup_count(source_root: Path) -> int:
                if line and not line.startswith("#"))
 
 
+def semantic(relations: int, targets: int, lookups: int) -> dict:
+    return {"cc_relations": relations, "cc_targets": targets, "cf_adct_normalized_relations": 315,
+            "cf_adct_normalized_targets": 197, "lookup_entries": lookups}
+
+
 def gate_outputs() -> dict[Path, bytes]:
     record = {
         "schema_version": 1, "date": DATE, "source_commit": START_HEAD,
@@ -149,11 +154,12 @@ def fixture_outputs(ctx) -> tuple[dict[Path, bytes], dict, dict]:
         content_meta[path] = meta(data, f"{candidate_prefix}/{path}")
     profile = {"schema_version": 1, "name": "CC_TURMA_FIXTURE_B", "confirmation_token": "CC_TURMA_FIXTURE_B",
                "firmware_requirement": {"sha256": FIRMWARE_SHA, "gate": "FIRMWARE_GATE_A_PHYSICAL=APPROVED"},
+               "physical_baseline_manifest": rel(M.CARD_MANIFEST),
                "aggregate_order": list(AGGREGATES),
                "allowed_pre_states": {"CLEAN_BASELINE": {"aggregates": base_agg,
-                    "semantic": {"cc_relations": 49, "cc_targets": 39, "lookup_entries": lookup_count(M.BASE)}, "content_present": []}},
+                    "semantic": semantic(49, 39, lookup_count(M.BASE)), "content_present": []}},
                "post_state": {"aggregates": post_agg,
-                    "semantic": {"cc_relations": 55, "cc_targets": 45, "lookup_entries": fixture_lookup_count}},
+                    "semantic": semantic(55, 45, fixture_lookup_count)},
                "content_files": content_meta, "expected_CF_ADCT": "315/198", "real_execution_performed": False}
     outputs[FIXTURE / "DEPLOY_PROFILE.json"] = jb(profile)
     manifest_files = {rel(path): meta(data) for path, data in outputs.items() if path.is_relative_to(FIXTURE)}
@@ -195,12 +201,13 @@ def mass_outputs(ctx, fixture_profile: dict) -> tuple[dict[Path, bytes], dict]:
     base_agg = aggregate_meta(M.BASE, rel(M.BASE))
     profile = {"schema_version": 1, "name": "CC_MASS_653", "confirmation_token": "CC_MASS_653",
                "firmware_requirement": {"sha256": FIRMWARE_SHA, "gate": "FIRMWARE_GATE_A_PHYSICAL=APPROVED"},
+               "physical_baseline_manifest": rel(M.CARD_MANIFEST),
                "aggregate_order": list(AGGREGATES),
                "allowed_pre_states": {
-                   "CLEAN_BASELINE": {"aggregates": base_agg, "semantic": {"cc_relations": 49, "cc_targets": 39, "lookup_entries": lookup_count(M.BASE)}, "content_present": []},
+                   "CLEAN_BASELINE": {"aggregates": base_agg, "semantic": semantic(49, 39, lookup_count(M.BASE)), "content_present": []},
                    "POST_FIXTURE_VALIDATED": {"aggregates": fixture_profile["post_state"]["aggregates"],
                        "semantic": fixture_profile["post_state"]["semantic"], "content_present": sorted(fixture_profile["content_files"])}},
-               "post_state": {"aggregates": post_agg, "semantic": {"cc_relations": 702, "cc_targets": 636, "lookup_entries": 833}},
+               "post_state": {"aggregates": post_agg, "semantic": semantic(702, 636, 833)},
                "content_files": content_meta, "expected_CF_ADCT": "315/198",
                "recommended_physical_path": "POST_FIXTURE_VALIDATED", "reason": "seis fichas já verificadas e seis writes aditivos a menos",
                "real_execution_performed": False}
