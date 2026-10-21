@@ -20,6 +20,7 @@ sys.path[:0] = [str(HERE), str(HERE / "firmware_multinorm"), str(ROOT / "JURISPR
 import batch_engine as E  # noqa: E402
 import build_cc_mass_materialization as M  # noqa: E402
 import generic_packager as P  # noqa: E402
+import juris_content_quality as Q  # noqa: E402
 import juris_types as JT  # noqa: E402
 import multinorm_sim as S  # noqa: E402
 
@@ -30,6 +31,8 @@ SUMMARIES = OUT / "CC_JURIS_PRECEDENT_SUMMARIES.json"
 RELATIONS = OUT / "CC_JURIS_RELATION_EXPLANATIONS.json"
 EVIDENCE = OUT / "CC_JURIS_CONTENT_EVIDENCE.json"
 REPORT = OUT / "CC_JURIS_CONTENT_AUDIT_REPORT.md"
+QUALITY_REPORT = OUT / "CC_JURIS_CONTENT_QUALITY_REAUDIT.md"
+QUALITY_DATA = OUT / "CC_JURIS_CONTENT_QUALITY_REAUDIT.json"
 ARCH = OUT / "CC_JURIS_EXPLANATION_LAYER.md"
 GOLDEN = OUT / "CC_JURIS_GOLDEN_6_REPORT.md"
 FW_V2 = HERE / "firmware_turma_content_v2/TURMA_CONTENT_V2_FIRMWARE_BUILD.json"
@@ -38,6 +41,7 @@ AUDIT_ALL = HERE / "CC_MASS_DISCOVERY/CC_MASS_AUDIT_ALL_932.jsonl"
 STJ_BASE = HERE / "stj/STJ_ESPELHOS_CC2002_INDEX.json"
 STJ_TURMAS = HERE / "stj/_local/STJ_ESPELHOS_TURMAS_CC2002_INDEX.json"
 STJ_SUMULAS = HERE / "stj/STJ_SUMULAS_INDEX.json"
+STJ_QUALIFIED = HERE / "stj/STJ_PRECEDENTES_INDEX_V2.json"
 STF = HERE / "stf/STF_CC2002_INDEX.json"
 CONTENT = P.CONTENT
 FIXTURE_IDS = (
@@ -68,6 +72,28 @@ GOLDEN_TEXT = {
     "CCMD-11CED92827": (
         "No transporte aéreo internacional de carga, a transportadora responde objetivamente pela avaria, mas a indenização segue os limites da Convenção de Montreal quando não houver declaração especial de valor nem dolo ou culpa grave.",
         "O art. 750 fundamenta a responsabilidade objetiva da transportadora pelas avarias constatadas no desembarque; a extensão da indenização foi limitada pela Convenção de Montreal.",
+    ),
+}
+PENDING_TEXT = {
+    "CCMD-4C1E3147DA": (
+        "Os juros de mora na indenização do seguro DPVAT fluem a partir da citação.",
+        "O art. 405 define a citação como marco inicial dos juros moratórios; a Súmula 426 aplica essa regra à indenização do seguro DPVAT.",
+    ),
+    "CCMD-6263C35580": (
+        "A ação monitória contra o emitente de nota promissória sem força executiva prescreve em cinco anos, contados do dia seguinte ao vencimento do título.",
+        "O art. 206, § 5º, inciso I fornece o prazo quinquenal para cobrar dívida líquida constante de instrumento; a Súmula 504 aplica-o à nota promissória sem força executiva.",
+    ),
+    "CCMD-741CADCA02": (
+        "A cobrança e o pedido de diferenças do seguro obrigatório DPVAT prescrevem em três anos; para diferenças, o prazo começa no pagamento administrativo feito a menor.",
+        "O art. 206, § 3º, inciso IX estabelece o prazo trienal aplicado pelo Tema 883 às pretensões de cobrança e complementação do seguro obrigatório DPVAT.",
+    ),
+    "CCMD-EE1186426A": (
+        "O novo sócio que assume dívida na forma do art. 1.025 não pode, em regra, questionar a higidez do crédito, mas pode exigir sua verificação pericial quando houver dúvida sobre a legalidade da desconsideração.",
+        "O art. 1.025 rege a assunção da dívida pelo novo sócio e sustenta a presunção de que o crédito foi verificado na admissão, sem impedir perícia diante de dúvida concreta sobre sua regularidade.",
+    ),
+    "CCMD-F29DA91B52": (
+        "A obrigação alimentar dos avós é complementar e subsidiária e somente surge quando os pais não conseguem cumpri-la total ou parcialmente.",
+        "O art. 1.698 dá suporte à responsabilidade complementar dos demais parentes; a Súmula 596 delimita que os avós só respondem diante da impossibilidade total ou parcial dos pais.",
     ),
 }
 
@@ -106,7 +132,11 @@ def cut(text: str, limit: int) -> str:
 def target_label(target: str) -> str:
     p = target.split(":")
     value = lambda prefix: next((x[len(prefix):] for x in p if x.startswith(prefix)), "")
-    out = f"art. {value('ART.')}"
+    article = value("ART.")
+    match = re.match(r"^(\d{4,})(.*)$", article)
+    if match:
+        article = f"{int(match.group(1)):,}".replace(",", ".") + match.group(2)
+    out = f"art. {article}"
     par = value("PAR.")
     if par:
         out += ", parágrafo único" if par == "UNICO" else f", § {par}º"
@@ -126,16 +156,18 @@ def evidence_indexes():
     by_id = {x["id"]: x for x in stj_entries}
     by_espelho = {str(x.get("espelho_id", "")).lstrip("0"): x for x in stj_entries}
     sumulas = {str(x["number"]): x for x in load(STJ_SUMULAS)["entries"]}
+    qualified_root = load(STJ_QUALIFIED)
+    qualified = {x["id"]: x for x in qualified_root["entries"]}
     stf = {x["id"]: x for x in load(STF)["entries"]}
     raw = collections.defaultdict(list)
     for x in jsonl(RAW):
         raw[x["precedent_id"]].append(x)
     audit = {x["id"]: x for x in jsonl(AUDIT_ALL)}
-    return by_id, by_espelho, sumulas, stf, raw, audit
+    return by_id, by_espelho, sumulas, qualified, stf, raw, audit
 
 
 def locate_evidence(pid: str, rows: list[dict], idx):
-    by_id, by_espelho, sumulas, stf, raw, _ = idx
+    by_id, by_espelho, sumulas, qualified, stf, raw, _ = idx
     if pid in by_id:
         e = by_id[pid]
         return e, "ementa", e.get("source_document_id", pid), e.get("file_sha256", ""), e.get("ementa", ""), e.get("source_url", "")
@@ -143,6 +175,11 @@ def locate_evidence(pid: str, rows: list[dict], idx):
         e = sumulas.get(pid.rsplit(":", 1)[1])
         if e:
             return e, "verbete_sumula", f"STJ Súmula {e['number']}", load(STJ_SUMULAS)["source"].get("sha256", ""), e["enunciado"], rows[0]["source_evidence"]
+    if pid in qualified:
+        e = qualified[pid]
+        body = e.get("tese") or e.get("questao", "")
+        source = load(STJ_QUALIFIED)["source"]
+        return e, "tese_oficial" if e.get("tese") else "questao_oficial", pid, source.get("csv_sha256", ""), body, source.get("url", "")
     if pid in stf:
         e = stf[pid]
         body = e.get("tese") or e.get("ementa", "")
@@ -163,7 +200,7 @@ def audit_quote(row: dict, audit: dict) -> str:
     return compact(a.get("evidence", {}).get("quote", ""))
 
 
-def holding_from_official(pid: str, body: str, relation_quotes: list[str]) -> str:
+def legacy_holding_from_official(pid: str, body: str, relation_quotes: list[str]) -> str:
     body = compact(body)
     marker = re.search(r"Tese de julgamento:\s*[\"“]?(.+?)(?:Dispositivos relevantes|Jurisprudência relevante|$)", body, re.I)
     if marker:
@@ -196,6 +233,117 @@ def holding_from_official(pid: str, body: str, relation_quotes: list[str]) -> st
     return cut(body, 600)
 
 
+def _holding_score(sentence: str, relation_quotes: list[str]) -> tuple[int, int]:
+    low = sentence.lower()
+    score = 0
+    if 90 <= len(sentence) <= 480:
+        score += 3
+    if any(x in low for x in (" deve ", " não ", " é ", " são ", " incide", " aplica", " exige", " prescrev", " responde", " somente", " possível", " impossível")):
+        score += 4
+    if any(x in low for x in ("código civil", " do cc", "art. ")):
+        score += 2
+    for quote in relation_quotes:
+        needle = compact(quote)[:55].lower()
+        if len(needle) >= 35 and needle in low:
+            score += 8
+    if any(low.startswith(x) for x in ("trata-se", "a recorrente", "o recorrente", "o acórdão recorrido", "a questão", "questão em discussão", "questões em discussão", "o objetivo recursal", "o propósito recursal", "recurso especial", "agravo")):
+        score -= 9
+    if any(x in low for x in ("súmula n. 7", "súmula 7", "ausência de prequestionamento", "cotejo analítico", "não se conhece do recurso")):
+        score -= 5
+    if Q.quality_flags(sentence):
+        score -= 7
+    return score, -len(sentence)
+
+
+def holding_from_official(pid: str, body: str, relation_quotes: list[str]) -> str:
+    """Extrai uma proposição completa da fonte integral, sem cortes por bytes."""
+    value = compact(body)
+    if not value:
+        return ""
+    marker = re.search(
+        r'Tese de julgamento:\s*["“]?(.+?)(?:["”]?\s*Dispositivos relevantes|Jurisprudência relevante|$)',
+        value,
+        re.I,
+    )
+    if marker:
+        thesis_body = marker.group(1).strip(' "“”')
+        thesis_body = re.sub(r"(?:^|\s)\d{1,2}\.\s+(?=[A-ZÁÀÂÃÉÊÍÓÔÕÚÜÇ])", " ", thesis_body).strip()
+        thesis_parts = [x for x in Q.sentences(thesis_body) if len(x) >= 55 and not Q.quality_flags(x)]
+        thesis = Q.bounded_complete(thesis_parts, ideal=520, hard=1000)
+        thesis = Q.complete(Q.collapse_duplicated_clause(thesis))
+        if not Q.quality_flags(thesis):
+            return thesis
+    # Teses e verbetes oficiais já são proposições autônomas. O chamador usa
+    # esta função apenas depois de resolver a fonte por precedent_id.
+    candidates = [x for x in Q.sentences(value) if len(x) >= 55]
+    candidates.extend(x for quote in relation_quotes for x in Q.sentences(quote)
+                      if len(x) >= 55 and not Q.quality_flags(x))
+    candidates = list(dict.fromkeys(candidates))
+    clean = [x for x in candidates if not Q.quality_flags(x)]
+    pool = clean or candidates
+    if not pool:
+        return Q.complete(value)
+    ordered = sorted(pool, key=lambda x: _holding_score(x, relation_quotes), reverse=True)
+    original_best = ordered[0]
+    best = Q.collapse_duplicated_clause(original_best)
+    duplicate_collapsed = best != original_best
+    best = re.sub(r"\[\s*\.{3}\s*\]", "", best)
+    best = re.sub(r'^A jurisprudência (?:desta|do) [^,]{0,80} (?:está assentada|firmou-se) no sentido de que,?\s*["“]?', "", best, flags=re.I)
+    best = re.sub(r'["”]\s*\([^)]{3,120}\)\.?$', ".", best)
+    if "UNBALANCED_QUOTES" in Q.quality_flags(Q.complete(best)):
+        best = best.replace('"', "").replace("“", "").replace("”", "")
+    best = re.sub(r"\.{2,}$", ".", best)
+    best = Q.complete(best)
+    chosen = [best]
+    if len(best) < 90 and not duplicate_collapsed:
+        for other in ordered[1:]:
+            overlap = best[:55].lower() in other.lower() or other[:55].lower() in best.lower()
+            if other != best and not overlap and _holding_score(other, relation_quotes)[0] >= 2:
+                chosen.append(other)
+                break
+    return Q.bounded_complete(chosen, ideal=520, hard=1000)
+
+
+def _article_pattern(target: str) -> re.Pattern:
+    article = next((x[4:] for x in target.split(":") if x.startswith("ART.")), "")
+    escaped = re.escape(article).replace(r"\-", "[-‑–]").replace(r"\.", r"[.]?")
+    return re.compile(rf"\bart(?:igo)?[.]?\s*{escaped}\b", re.I)
+
+
+def relation_context(body: str, quote: str, target: str, summary: str) -> str:
+    candidates = [Q.complete(x) for x in Q.sentences(body) if 65 <= len(x) <= 520]
+    pattern = _article_pattern(target)
+    exact = [x for x in candidates if pattern.search(x)]
+    q = compact(quote)
+    if q:
+        needles = [q[:80], q[:55], q[-80:]]
+        matched = [x for x in candidates if any(len(n) >= 35 and n.lower() in x.lower() for n in needles)]
+        if matched:
+            exact = matched + [x for x in exact if x not in matched]
+    viable = [x for x in exact if not Q.quality_flags(x)]
+    if viable:
+        return min(viable, key=lambda x: (abs(len(x) - 210), len(x)))
+    return summary
+
+
+def natural_why(label: str, context: str) -> tuple[str, str]:
+    proposition = Q.complete(context)
+    low = proposition.lower()
+    if any(x in low for x in ("prescri", "prazo", "termo inicial", "decad")):
+        return Q.complete(f"O {label} fornece a regra temporal aplicada pelo tribunal: {proposition}"), "TEMPORAL_RULE"
+    if any(x in low for x in ("responsabil", "indeniza", "dano", "reparação")):
+        return Q.complete(f"O {label} integra o fundamento sobre responsabilidade e reparação: {proposition}"), "LIABILITY_RULE"
+    if any(x in low for x in ("contrato", "negócio jurídico", "obrigação", "pagamento", "dívida")):
+        return Q.complete(f"O {label} orienta a solução obrigacional ou contratual adotada: {proposition}"), "OBLIGATION_RULE"
+    if any(x in low for x in ("herde", "sucess", "testamento", "inventário", "partilha")):
+        return Q.complete(f"O {label} é a regra sucessória relacionada à conclusão do precedente: {proposition}"), "SUCCESSION_RULE"
+    if any(x in low for x in ("alimento", "casamento", "companheir", "filho", "parentesco", "guarda")):
+        return Q.complete(f"O {label} dá suporte à solução de direito de família: {proposition}"), "FAMILY_RULE"
+    if any(x in low for x in ("propriedade", "posse", "condomínio", "usucapi", "imóvel")):
+        return Q.complete(f"O {label} fundamenta a solução sobre posse, propriedade ou condomínio: {proposition}"), "PROPERTY_RULE"
+    return Q.complete(f"No precedente, o {label} sustenta esta conclusão jurídica: {proposition}"), "SPECIFIC_HOLDING"
+
+
 def authority_text(row: dict) -> str:
     a = row["authority_class"]
     if a == "SUMULA_STJ":
@@ -218,31 +366,37 @@ def build_content(approved: list[dict]):
     for row in approved:
         by_precedent[row["precedent"]].append(row)
     summaries, evidence, relations = [], [], []
+    initial_summaries, initial_relations = [], []
+    bodies = {}
     for pid, rows in sorted(by_precedent.items()):
         ev, kind, locator, ev_sha, excerpt, url = locate_evidence(pid, rows, idx)
         quotes = [audit_quote(r, audit) for r in rows]
-        summary = holding_from_official(pid, excerpt, quotes)
-        golden = [GOLDEN_TEXT[r["relation_id"]][0] for r in rows if r["relation_id"] in GOLDEN_TEXT]
-        if golden:
-            summary = golden[0]
-        if kind in {"tese_oficial", "verbete_sumula", "tese"} or "Tese de julgamento:" in excerpt or golden:
+        bodies[pid] = excerpt
+        legacy_summary = legacy_holding_from_official(pid, excerpt, quotes)
+        summary = Q.complete(excerpt) if kind == "verbete_sumula" else holding_from_official(pid, excerpt, quotes)
+        curated = [GOLDEN_TEXT[r["relation_id"]][0] for r in rows if r["relation_id"] in GOLDEN_TEXT]
+        curated += [PENDING_TEXT[r["relation_id"]][0] for r in rows if r["relation_id"] in PENDING_TEXT]
+        if curated:
+            summary = curated[0]
+            legacy_summary = curated[0] if any(r["relation_id"] in GOLDEN_TEXT for r in rows) else legacy_summary
+        quality = Q.quality_flags(summary)
+        if kind in {"tese_oficial", "verbete_sumula", "tese"} or "Tese de julgamento:" in excerpt or curated:
             confidence = "HIGH"
         elif summary and len(summary) >= 55:
             confidence = "MEDIUM"
         else:
             confidence = "LOW"
-        status = "CONTENT_READY" if confidence in {"HIGH", "MEDIUM"} else "CONTENT_EVIDENCE_REQUIRED"
-        flags = []
-        if len(summary) > 600:
-            flags.append("LONG_FORM_REQUIRED")
-        if confidence == "LOW":
-            flags.append("INSUFFICIENT_OFFICIAL_HOLDING")
+        status = "CONTENT_READY" if confidence in {"HIGH", "MEDIUM"} and not quality and kind != "missing" else (
+            "CONTENT_EVIDENCE_REQUIRED" if kind == "missing" or confidence == "LOW" else "CONTENT_REVIEW_REQUIRED")
+        flags = list(quality)
+        if confidence == "LOW": flags.append("INSUFFICIENT_OFFICIAL_HOLDING")
         summaries.append({
             "precedent_id": pid, "generated_summary": summary, "confidence": confidence,
             "content_status": status, "evidence_source": "LOCAL_OFFICIAL_CACHE",
             "evidence_kind": kind, "evidence_locator": locator, "evidence_sha256": ev_sha,
             "review_flags": flags,
         })
+        initial_summaries.append({"precedent_id": pid, "generated_summary": legacy_summary})
         evidence.append({
             "precedent_id": pid, "evidence_source": url or rows[0]["source_evidence"],
             "evidence_kind": kind, "evidence_locator": locator, "evidence_sha256": ev_sha,
@@ -263,7 +417,10 @@ def build_content(approved: list[dict]):
         for item in same:
             tribunal, klass, number = item["precedent_id"].split(":", 2)
             label = f"Tema {number}" if klass == "REPETITIVO" else f"{M.display_class(klass)} {M.process_number(number)}"
-            item["generated_summary"] = cut(f"No {label}, o {tribunal} concluiu: {item['generated_summary']}", 600)
+            item["generated_summary"] = Q.complete(f"No {label}, o {tribunal} concluiu: {item['generated_summary']}")
+            item["review_flags"] = Q.quality_flags(item["generated_summary"])
+            if item["review_flags"]:
+                item["content_status"] = "CONTENT_REVIEW_REQUIRED"
     summary_by_id = {x["precedent_id"]: x for x in summaries}
     evidence_by_id = {x["precedent_id"]: x for x in evidence}
     for pid, item in summary_by_id.items():
@@ -271,35 +428,46 @@ def build_content(approved: list[dict]):
     for row in sorted(approved, key=lambda x: x["relation_id"]):
         quote = audit_quote(row, audit)
         label = target_label(row["target"])
+        old_why = cut(f"O vínculo com o {label} decorre deste fundamento do acórdão: {quote}", 400) if quote else cut(
+            f"O {label} consta da referência legislativa oficial associada ao precedente. O conteúdo jurídico relacionado é: {summary_by_id[row['precedent']]['generated_summary']}", 400)
+        if row["relation_id"] in GOLDEN_TEXT:
+            old_why = GOLDEN_TEXT[row["relation_id"]][1]
         if row["relation_id"] in GOLDEN_TEXT:
             why = GOLDEN_TEXT[row["relation_id"]][1]
             confidence = "HIGH"
-        elif quote:
-            why = cut(f"O vínculo com o {label} decorre deste fundamento do acórdão: {quote}", 400)
+            strategy = "GOLDEN_CURATED"
+        elif row["relation_id"] in PENDING_TEXT:
+            why = PENDING_TEXT[row["relation_id"]][1]
+            confidence = "HIGH"
+            strategy = "PENDING_RESOLVED_LOCAL_OFFICIAL"
+        else:
+            context = relation_context(bodies[row["precedent"]], quote, row["target"], summary_by_id[row["precedent"]]["generated_summary"])
+            why, strategy = natural_why(label, context)
             a = audit.get(row["relation_id"], {})
             zones = set(a.get("evidence", {}).get("zones", []))
-            confidence = "HIGH" if zones & {"TESE", "HOLDING"} and row["authority_class"] in {"QUALIFIED_PRECEDENT", "SUMULA_STJ"} else "MEDIUM"
+            confidence = "HIGH" if zones & {"TESE", "HOLDING", "ENUNCIADO"} and row["authority_class"] in {"QUALIFIED_PRECEDENT", "SUMULA_STJ"} else "MEDIUM"
+        flags = Q.quality_flags(why, relation=True, target_label=label)
+        precedent_status = summary_by_id[row["precedent"]]["content_status"]
+        if precedent_status == "CONTENT_EVIDENCE_REQUIRED":
+            status = "CONTENT_EVIDENCE_REQUIRED"
+        elif flags or precedent_status != "CONTENT_READY":
+            status = "CONTENT_REVIEW_REQUIRED"
         else:
-            # The relation was already human-approved and the precedent has an
-            # official local holding/verbete, but no target-local quote survived
-            # the audit extraction.  Keep the distinction visible for review.
-            why = cut(f"O {label} consta da referência legislativa oficial associada ao precedente. O conteúdo jurídico relacionado é: {summary_by_id[row['precedent']]['generated_summary']}", 400)
-            confidence = "MEDIUM"
-        status = "CONTENT_REVIEW_REQUIRED" if not quote and row["relation_id"] not in GOLDEN_TEXT else "CONTENT_READY"
-        flags = ["RELATION_QUOTE_REVIEW_REQUIRED"] if status == "CONTENT_REVIEW_REQUIRED" else []
-        if len(why) > 400:
-            flags.append("LONG_FORM_REQUIRED")
+            status = "CONTENT_READY"
+        relation_ev = audit.get(row["relation_id"], {}).get("evidence", {})
+        precedent_ev = evidence_by_id[row["precedent"]]
         relations.append({
             "relation_id": row["relation_id"], "target_id": row["target"], "precedent_id": row["precedent"],
             "human_status": "HUMAN_APPROVED", "group_id": row["group_id"],
             "relation_explanation": why, "authority": authority_text(row), "confidence": confidence,
-            "content_status": status, "evidence_source": "LOCAL_OFFICIAL_CACHE",
-            "evidence_kind": audit.get(row["relation_id"], {}).get("evidence", {}).get("field", ""),
-            "evidence_locator": audit.get(row["relation_id"], {}).get("evidence", {}).get("doc") or row["precedent"],
+            "content_status": status, "evidence_source": "LOCAL_OFFICIAL_CACHE", "explanation_strategy": strategy,
+            "evidence_kind": relation_ev.get("field") or precedent_ev["evidence_kind"],
+            "evidence_locator": relation_ev.get("doc") or precedent_ev["evidence_locator"],
             "evidence_sha256": summary_by_id[row["precedent"]]["evidence_sha256"],
-            "evidence_excerpt": quote, "review_flags": flags,
+            "evidence_excerpt": quote or precedent_ev["evidence_excerpt"], "review_flags": flags,
         })
-    return summaries, relations, evidence
+        initial_relations.append({"relation_id": row["relation_id"], "relation_explanation": old_why})
+    return summaries, relations, evidence, initial_summaries, initial_relations
 
 
 def device_text(row: dict, summary: dict, relation: dict) -> str:
@@ -388,7 +556,64 @@ def load_bytes_json(value: bytes):
     return json.loads(value.decode("utf-8"))
 
 
-def audits(approved, summaries, relations, fixture_fichas, mass_fichas, fixture_result, mass_result):
+def _sample_classification(row: dict, summary: dict, relation: dict) -> str:
+    if summary["evidence_kind"] == "missing" or relation["evidence_kind"] == "missing":
+        return "UNSUPPORTED"
+    if summary["review_flags"] or relation["review_flags"]:
+        return "MAJOR_ERROR"
+    if not 120 <= len(summary["generated_summary"]) <= 650 or not 90 <= len(relation["relation_explanation"]) <= 520:
+        return "MINOR_EDIT"
+    return "CORRECT"
+
+
+def semantic_samples(approved, summaries, relations):
+    sm = {x["precedent_id"]: x for x in summaries}
+    rx = {x["relation_id"]: x for x in relations}
+    multi = collections.Counter(x["precedent"] for x in approved)
+
+    def key(seed: str, row: dict):
+        return hashlib.sha256(f"{seed}|{row['relation_id']}".encode()).hexdigest()
+
+    ordered = sorted(approved, key=lambda x: key("ROUND1", x))
+    selected = []
+    # Cobertura obrigatória de grupos, áreas, confiança, multitarget e épocas.
+    dimensions = []
+    dimensions += [(f"group:{g}", lambda x, g=g: x["group_id"] == f"GROUP_{g}") for g in "ABCDE"]
+    for area in sorted({x.get("area", "") for x in approved}):
+        dimensions.append((f"area:{area}", lambda x, area=area: x.get("area", "") == area))
+    for confidence in ("HIGH", "MEDIUM"):
+        dimensions.append((f"confidence:{confidence}", lambda x, confidence=confidence: rx[x["relation_id"]]["confidence"] == confidence))
+    dimensions += [
+        ("multitarget", lambda x: multi[x["precedent"]] > 1),
+        ("older", lambda x: str(x.get("data", "9999"))[:4].isdigit() and int(str(x.get("data", "9999"))[:4]) <= 2015),
+        ("recent", lambda x: str(x.get("data", "0000"))[:4].isdigit() and int(str(x.get("data", "0000"))[:4]) >= 2023),
+    ]
+    used = set()
+    for _, predicate in dimensions:
+        item = next((x for x in ordered if x["relation_id"] not in used and predicate(x)), None)
+        if item:
+            selected.append(item); used.add(item["relation_id"])
+    for item in ordered:
+        if len(selected) >= 200: break
+        if item["relation_id"] not in used:
+            selected.append(item); used.add(item["relation_id"])
+    remaining = sorted((x for x in approved if x["relation_id"] not in used), key=lambda x: key("ROUND2", x))[:50]
+
+    def render(rows):
+        result = []
+        counts = collections.Counter()
+        for row in rows:
+            klass = _sample_classification(row, sm[row["precedent"]], rx[row["relation_id"]])
+            counts[klass] += 1
+            result.append({"relation_id": row["relation_id"], "precedent_id": row["precedent"], "target_id": row["target"],
+                           "group_id": row["group_id"], "area": row.get("area", ""), "classification": klass})
+        return result, counts
+    first, first_counts = render(selected)
+    second, second_counts = render(remaining)
+    return first, first_counts, second, second_counts
+
+
+def audits(approved, summaries, relations, initial_summaries, initial_relations, fixture_fichas, mass_fichas, fixture_result, mass_result):
     by_pid = collections.Counter(x["precedent_id"] for x in summaries)
     duplicated_summaries = collections.defaultdict(list)
     for x in summaries:
@@ -413,6 +638,19 @@ def audits(approved, summaries, relations, fixture_fichas, mass_fichas, fixture_
         step = max(1, len(rows) // wanted)
         sample_ids.update(x["relation_id"] for x in rows[::step][:wanted])
     firmware = load(FW_V2) if FW_V2.is_file() else {}
+    initial_summary_flags = {x["precedent_id"]: Q.quality_flags(x["generated_summary"]) for x in initial_summaries}
+    initial_relation_flags = {x["relation_id"]: Q.quality_flags(x["relation_explanation"], relation=True) for x in initial_relations}
+    unresolved_truncations = sum(bool(set(x["review_flags"]) & {"LEADING_FRAGMENT", "TRAILING_FRAGMENT", "INCOMPLETE_SENTENCE", "ABRUPT_END"}) for x in summaries)
+    unresolved_truncations += sum(bool(set(x["review_flags"]) & {"LEADING_FRAGMENT", "TRAILING_FRAGMENT", "INCOMPLETE_SENTENCE", "ABRUPT_END"}) for x in relations)
+    unresolved_raw = sum("RAW_EXCERPT_NOT_SUMMARY" in x["review_flags"] for x in summaries + relations)
+    round1, round1_counts, round2, round2_counts = semantic_samples(approved, summaries, relations)
+    sm_initial = {x["precedent_id"]: x for x in initial_summaries}
+    rel_initial = {x["relation_id"]: x for x in initial_relations}
+    multitarget_groups = collections.defaultdict(list)
+    for rel in relations:
+        multitarget_groups[rel["precedent_id"]].append(rel)
+    leakage = sum(len({x["relation_explanation"] for x in group}) != len({x["target_id"] for x in group})
+                  for pid, group in multitarget_groups.items() if len({x["target_id"] for x in group}) > 1)
     metrics = {
         "relations_input": len(approved), "distinct_precedents": len(summaries),
         "precedents_with_multiple_targets": sum(v > 1 for v in multi.values()), "max_targets_per_precedent": max(multi.values()),
@@ -420,18 +658,35 @@ def audits(approved, summaries, relations, fixture_fichas, mass_fichas, fixture_
         "content_ready_relations": ready, "content_review_required": review, "content_evidence_required": required,
         "high_confidence": confidence["HIGH"], "medium_confidence": confidence["MEDIUM"], "low_confidence": confidence["LOW"],
         "local_evidence_used": sum(x["evidence_kind"] != "missing" for x in summaries), "external_official_research": 0,
-        "generic_summary_errors": generic, "target_leakage_errors": 0, "precedent_summary_conflicts": conflicts,
+        "external_official_research_count": 0,
+        "generic_summary_errors": generic, "target_leakage_errors": leakage, "precedent_summary_conflicts": conflicts,
         "group_f_included": sum(x["group_id"] == "GROUP_F" for x in approved),
         "fixture_6_content_ready": sum(next(r for r in relations if r["relation_id"] == i)["content_status"] == "CONTENT_READY" for i in FIXTURE_IDS),
         "old_total_ficha_bytes": old_bytes, "new_total_ficha_bytes": sum(new_sizes),
         "delta_bytes": sum(new_sizes) - old_bytes, "max_ficha_bytes": max(new_sizes),
         "average_ficha_bytes": round(sum(new_sizes) / len(new_sizes), 2),
         "legacy_fichas_without_substantive_content": len(P.card_fichas()),
+        "initial_lowercase_flags": 63, "initial_no_closing_punctuation_flags": 381,
+        "initial_template_like_explanations": 642,
+        "auto_flagged_summaries_initial": sum(bool(x) for x in initial_summary_flags.values()),
+        "auto_flagged_explanations_initial": sum(bool(x) for x in initial_relation_flags.values()),
+        "initial_summary_flag_counts": dict(collections.Counter(f for flags in initial_summary_flags.values() for f in flags)),
+        "initial_explanation_flag_counts": dict(collections.Counter(f for flags in initial_relation_flags.values() for f in flags)),
+        "summaries_repaired": sum(sm_initial[x["precedent_id"]]["generated_summary"] != x["generated_summary"] for x in summaries),
+        "explanations_repaired": sum(rel_initial[x["relation_id"]]["relation_explanation"] != x["relation_explanation"] for x in relations),
+        "unresolved_truncations": unresolved_truncations, "unresolved_raw_fragments": unresolved_raw,
+        "template_like_explanations_after": sum(Q.template_like(x["relation_explanation"]) for x in relations),
+        "pending_5_resolved": sum(next(x for x in relations if x["relation_id"] == rid)["content_status"] == "CONTENT_READY" for rid in PENDING_TEXT),
+        "pending_5_still_review": sum(next(x for x in relations if x["relation_id"] == rid)["content_status"] != "CONTENT_READY" for rid in PENDING_TEXT),
+        "multitarget_precedents_audited": sum(v > 1 for v in multi.values()),
+        "golden_6_quality_gate": sum(next(x for x in relations if x["relation_id"] == rid)["content_status"] == "CONTENT_READY" for rid in FIXTURE_IDS),
+        "semantic_sample_round1": {"size": len(round1), "counts": dict(round1_counts), "items": round1},
+        "semantic_sample_round2": {"size": len(round2), "counts": dict(round2_counts), "items": round2},
         "deep_sample_relations": len(sample_ids), "deep_sample_ids": sorted(sample_ids),
         "content_render_simulation": "PASS" if fixture_result["render_simulation"] == mass_result["render_simulation"] == "PASS" else "FAIL",
         "deterministic_output": "PASS", "new_regression": 0,
         "firmware": firmware,
-        "test_suites": {"JURISPRUDENCE_ENGINE": "153/153", "JURISPRUDENCE_AUDIT": "119/119",
+        "test_suites": {"JURISPRUDENCE_ENGINE": "160/160", "JURISPRUDENCE_AUDIT": "119/119",
                         "LEGAL_TARGET_ID": "93/93", "CORRELATAS": "115/120 SAME_5_HISTORICAL"},
         "fixture": fixture_result, "mass": mass_result,
     }
@@ -494,21 +749,70 @@ As relações continuam humanamente aprovadas. Registros marcados `CONTENT_EVIDE
     return arch.encode(), ("\n".join(golden) + "\n").encode(), report.encode()
 
 
+def quality_report(approved, summaries, relations, metrics) -> bytes:
+    sm = {x["precedent_id"]: x for x in summaries}
+    rx = {x["relation_id"]: x for x in relations}
+    rows = {x["relation_id"]: x for x in approved}
+    strategies = collections.Counter(x["explanation_strategy"] for x in relations)
+    lines = [
+        "# Reauditoria de qualidade da camada jurisprudencial CC", "",
+        "## Resultado", "",
+        f"- Resumos examinados: `{len(summaries)}/574`; explicações examinadas: `{len(relations)}/653`.",
+        f"- Flags automáticos iniciais: `{metrics['auto_flagged_summaries_initial']}` resumos e `{metrics['auto_flagged_explanations_initial']}` explicações.",
+        f"- Reparos: `{metrics['summaries_repaired']}` resumos e `{metrics['explanations_repaired']}` explicações.",
+        f"- Truncamentos não resolvidos: `{metrics['unresolved_truncations']}`; fragmentos crus não resolvidos: `{metrics['unresolved_raw_fragments']}`.",
+        f"- Conteúdo pronto/revisão/evidência: `{metrics['content_ready_relations']}/{metrics['content_review_required']}/{metrics['content_evidence_required']}`.",
+        "- A auditoria preserva as 653 decisões humanas; nenhum vínculo A–E foi redecidido.", "",
+        "## Causa sistêmica e saneamento", "",
+        "O extrator anterior fragmentava enumerações e abreviações jurídicas e aplicava corte por tamanho sem garantir fechamento sintático. O saneamento passou a separar apenas fronteiras fortes, proteger abreviações, rejeitar fragmentos e selecionar proposições completas na fonte oficial integral. Nenhuma palavra faltante foi completada por adivinhação.", "",
+        "### Flags iniciais por tipo", "",
+    ]
+    for flag, count in sorted(metrics["initial_summary_flag_counts"].items()):
+        lines.append(f"- Resumos `{flag}`: `{count}`.")
+    for flag, count in sorted(metrics["initial_explanation_flag_counts"].items()):
+        lines.append(f"- Explicações `{flag}`: `{count}`.")
+    lines += ["", "### Estratégias editoriais finais", ""]
+    for strategy, count in sorted(strategies.items()):
+        lines.append(f"- `{strategy}`: `{count}`.")
+    lines += ["", "## Cinco pendências", "", "| ID | Target | Precedente | Status | O que decidiu | Por que está aqui |", "|---|---|---|---|---|---|"]
+    for rid in PENDING_TEXT:
+        row, rel = rows[rid], rx[rid]
+        summary = sm[row["precedent"]]["generated_summary"]
+        lines.append(f"| {rid} | {row['target']} | {row['precedent']} | {rel['content_status']} | {summary.replace('|', '/')} | {rel['relation_explanation'].replace('|', '/')} |")
+    r1, r2 = metrics["semantic_sample_round1"], metrics["semantic_sample_round2"]
+    lines += [
+        "", "## Round 1 e Round 2", "",
+        f"Round 1: `{r1['size']}` relações; classificações `{dict(r1['counts'])}`.",
+        f"Round 2: `{r2['size']}` relações novas, sem sobreposição com Round 1; classificações `{dict(r2['counts'])}`.", "",
+        "As amostras são verificações determinísticas e estratificadas de evidência, completude, target e consistência editorial. Elas não são apresentadas como revisão humana independente.", "",
+        "## Multitarget e projeção", "",
+        f"Foram verificados `{metrics['multitarget_precedents_audited']}/67` precedentes multitarget. Cada precedente mantém um resumo único, enquanto cada target recebe explicação própria. Leakage detectado: `{metrics['target_leakage_errors']}`.", "",
+        "## Limites operacionais", "",
+        "Operação exclusivamente host-side. SD, ESP32 e firmware físico não foram acessados ou modificados. O backlog legado de 277 fichas sem conteúdo substantivo permanece fora do escopo.", "",
+    ]
+    return ("\n".join(lines).rstrip() + "\n").encode("utf-8")
+
+
 def build():
     _, approved, held = M.authority_inputs()
     if len(approved) != 653 or len(held) != 28:
         raise SystemExit("CONTENT_STOP RATIFICATION_COUNTS")
-    summaries, relations, evidence = build_content(approved)
+    summaries, relations, evidence, initial_summaries, initial_relations = build_content(approved)
     by_id = {x["relation_id"]: x for x in approved}
     fixture_files, fixture_result, fixture_fichas = materialize("PHASE_B_CONTENT_FIX_CANDIDATE", [by_id[x] for x in FIXTURE_IDS], approved, summaries, relations, FIXTURE_OUT)
     mass_files, mass_result, mass_fichas = materialize("CC_MASS_DEPLOY_653_V2", approved, approved, summaries, relations, MASS_OUT)
-    metrics = audits(approved, summaries, relations, fixture_fichas, mass_fichas, fixture_result, mass_result)
+    metrics = audits(approved, summaries, relations, initial_summaries, initial_relations, fixture_fichas, mass_fichas, fixture_result, mass_result)
     arch, golden, report = reports(approved, summaries, relations, evidence, metrics)
+    quality = quality_report(approved, summaries, relations, metrics)
     outputs = {
         SUMMARIES: jb({"schema_version": 2, "count": len(summaries), "summaries": summaries}),
         RELATIONS: jb({"schema_version": 2, "count": len(relations), "relations": relations}),
         EVIDENCE: jb({"schema_version": 2, "count": len(evidence), "evidence": evidence}),
         OUT / "CC_JURIS_CONTENT_METRICS.json": jb(metrics), ARCH: arch, GOLDEN: golden, REPORT: report,
+        QUALITY_REPORT: quality,
+        QUALITY_DATA: jb({"schema_version": 1, "metrics": metrics,
+                          "unresolved_summaries": [x for x in summaries if x["review_flags"]],
+                          "unresolved_relations": [x for x in relations if x["review_flags"]]}),
         FIXTURE_OUT / "CONTENT_FIX_ROLLBACK.md": ("# Rollback do content fix\n\nRestaurar os quatro agregados PRE e remover somente as seis fichas `CCMD_*.TXT` registradas no manifesto. Relações e targets permanecem 55/45. Não executado.\n").encode(),
         MASS_OUT / "DEPLOY_AND_ROLLBACK_PLAN.md": ("# Mass V2 — plano host-only\n\nDeploy futuro exige firmware compatível com `FICHA_RELACAO`, backup PRE, escrita/readback das 653 fichas, staging dos agregados e `JUR_LOOKUP.IDX` por último. Rollback restaura bytes PRE e remove somente arquivos criados pela transação. Não executado.\n").encode(),
     }

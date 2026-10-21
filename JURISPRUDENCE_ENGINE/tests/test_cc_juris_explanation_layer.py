@@ -7,6 +7,7 @@ HERE = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(HERE), str(HERE / "firmware_multinorm")]
 import build_cc_juris_explanation_layer as X
 import generic_packager as P
+import juris_content_quality as Q
 import multinorm_sim as S
 
 
@@ -91,6 +92,68 @@ def test_build_is_byte_deterministic_in_process():
     assert all(a[k] == b[k] for k in a)
 
 
+def test_quality_gate_detects_real_leading_fragments():
+    for value in (
+        "rato bancário com intuito de novar afasta a discussão.",
+        "ase em dados comprobatórios hábeis a tal mister.",
+        "º, do CPC. Litigância de má-fé não configurada.",
+        "6, e em cinco anos prescreve a pretensão.",
+    ):
+        flags = Q.quality_flags(value)
+        assert "LEADING_FRAGMENT" in flags
+
+
+def test_quality_gate_detects_truncated_word_and_sentence():
+    assert "ABRUPT_END" in Q.quality_flags("A regra disciplina a regulação dos direitos su")
+    assert "TRAILING_FRAGMENT" in Q.quality_flags("As pessoas sempre serão cons")
+    assert "INCOMPLETE_SENTENCE" in Q.quality_flags("A indenização depende de")
+
+
+def test_quality_gate_detects_quotes_parentheses_and_enumeration():
+    assert "UNBALANCED_QUOTES" in Q.quality_flags('A Corte decidiu que "a dívida não é exigível.')
+    assert "UNBALANCED_PARENTHESES" in Q.quality_flags("A regra incide (salvo prova em contrário.")
+    assert "BROKEN_ENUMERATION" in Q.quality_flags("1. Aplica-se o prazo trienal.")
+
+
+def test_quality_gate_detects_raw_excerpt_and_mechanical_why_here():
+    assert "RAW_EXCERPT_NOT_SUMMARY" in Q.quality_flags("EMENTA. RECURSO ESPECIAL. PROCESSUAL CIVIL. PRELIMINAR AFASTADA.")
+    flags = Q.quality_flags("O vínculo com o art. 682 decorre deste fundamento do acórdão: aplica-se a regra legal.", relation=True)
+    assert "TEMPLATE_LIKE_EXPLANATION" in flags
+
+
+def test_reaudited_corpus_has_no_unresolved_quality_flags():
+    _, metrics, summaries, relations = docs()
+    assert metrics["unresolved_truncations"] == 0
+    assert metrics["unresolved_raw_fragments"] == 0
+    assert metrics["template_like_explanations_after"] == 0
+    assert all(not x["review_flags"] for x in summaries)
+    assert all(not x["review_flags"] for x in relations)
+
+
+def test_repeated_clause_is_collapsed_without_cutting_the_first_sentence():
+    text = (
+        "A consignação em pagamento somente libera o devedor quando for integral e tempestiva "
+        "A consignação em pagamento somente libera o devedor quando for integral e tempestiva."
+    )
+    assert Q.collapse_duplicated_clause(text) == (
+        "A consignação em pagamento somente libera o devedor quando for integral e tempestiva."
+    )
+
+
+def test_multitarget_precedents_keep_one_summary_and_distinct_explanations():
+    _, metrics, summaries, relations = docs()
+    assert metrics["multitarget_precedents_audited"] == 67
+    assert metrics["target_leakage_errors"] == 0
+    by_precedent = {}
+    for relation in relations:
+        by_precedent.setdefault(relation["precedent_id"], []).append(relation)
+    for group in by_precedent.values():
+        targets = {x["target_id"] for x in group}
+        if len(targets) > 1:
+            assert len({x["relation_explanation"] for x in group}) == len(targets)
+    assert len({x["precedent_id"] for x in summaries}) == len(summaries)
+
+
 class TestCcJurisExplanationLayer(unittest.TestCase):
     def test_cardinality(self): test_exact_cardinality_and_identity_layers()
     def test_provenance(self): test_provenance_and_no_summary_conflict()
@@ -100,3 +163,10 @@ class TestCcJurisExplanationLayer(unittest.TestCase):
     def test_counts(self): test_fixture_and_mass_keep_relation_and_target_counts()
     def test_projection(self): test_device_projection_has_all_sections_without_target_leakage()
     def test_determinism(self): test_build_is_byte_deterministic_in_process()
+    def test_leading_fragments(self): test_quality_gate_detects_real_leading_fragments()
+    def test_trailing_fragments(self): test_quality_gate_detects_truncated_word_and_sentence()
+    def test_balance_and_enumeration(self): test_quality_gate_detects_quotes_parentheses_and_enumeration()
+    def test_raw_and_template(self): test_quality_gate_detects_raw_excerpt_and_mechanical_why_here()
+    def test_corpus_quality(self): test_reaudited_corpus_has_no_unresolved_quality_flags()
+    def test_duplicated_clause(self): test_repeated_clause_is_collapsed_without_cutting_the_first_sentence()
+    def test_multitarget_quality(self): test_multitarget_precedents_keep_one_summary_and_distinct_explanations()

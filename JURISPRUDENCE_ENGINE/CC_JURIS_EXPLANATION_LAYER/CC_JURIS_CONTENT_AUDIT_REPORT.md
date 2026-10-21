@@ -3,8 +3,8 @@
 ## Resultado
 
 - Precedentes: `574/574`; relações: `653/653`.
-- Conteúdo pronto: `648`; revisão: `5`; evidência requerida: `0`.
-- Confiança HIGH/MEDIUM/LOW: `39/614/0`.
+- Conteúdo pronto: `653`; revisão: `0`; evidência requerida: `0`.
+- Confiança HIGH/MEDIUM/LOW: `45/608/0`.
 - Evidência oficial local: `574` precedentes; pesquisa externa: `0`.
 - Erros genéricos: `0`; leakage: `0`; conflitos de resumo: `0`; Group F: `0`.
 - Amostra semântica estratificada: `131` relações, incluindo todos Group A e os seis fixtures. A amostra valida regras e provenance; não é uma segunda revisão humana independente.
@@ -15,8 +15,8 @@
 ## Tamanho
 
 - Fichas antigas compartilhadas (572 artefatos da materialização V1): `300824` bytes.
-- Fichas V2 compostas (653): `545159` bytes.
-- Delta: `244335` bytes; máxima `1320`; média `834.85`.
+- Fichas V2 compostas (653): `588487` bytes.
+- Delta: `287663` bytes; máxima `2336`; média `901.21`.
 
 ## Diagnóstico legado
 
