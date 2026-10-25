@@ -111,3 +111,34 @@ Depois, `read-flash 0x10000 1109152` deve dar SHA `f7e6b190…09f9`.
 ```
 python -m esptool --chip esp32s3 -p COM3 -b 460800 write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x0 C:\Users\arthu\Desktop\LEX_MACHINA_BACKUP\LEX_MACHINA_ORIGINAL.bin
 ```
+
+## 8. Gate físico — gravação de app0 (2026-10-25, autorizada pelo usuário)
+
+Evidência local (não versionada): `DEVICE_INTEGRATION/TELA_VERMELHA/_local/physical_gate_20261025_190734/`.
+
+Preparação declarada pelo usuário: microSD retirado, bateria e carregador desconectados, ESP32-S3 ligado por USB-C.
+A porta mudou: o aparelho agora aparece em **COM5** (USB-Serial/JTAG nativo, `303A:1001`, SER = MAC). Os comandos com COM3 das
+seções 6 e 7 **não** valem mais: usar `-p COM5`.
+
+**PRE (somente leitura)**: todas PASS
+- Chip: ESP32-S3 (QFN56) rev v0.2, MAC `e0:72:a1:f4:fd:28` (o mesmo aparelho do projeto), PSRAM embutida de 8 MB, flash de 16 MB (68/4018).
+- Tabela de partições: `nvs 0x9000`, `otadata 0xe000`, `app0 0x10000 (0x140000)`, `app1 0x150000`, `spiffs 0x290000`, `coredump 0x3f0000`.
+  SHA `f3134b74…`, igual ao gate de 21/10.
+- app0 instalado (primeiros 1.109.152 B): `f7e6b1908e8c91c99582c377b6db3a46b06f18d4f59f2cddeb1b4666514b09f9`, o app aprovado.
+  O app0 completo é idêntico ao do backup de 16 MB.
+- Candidato: 1.109.152 B, SHA `936851787ee780c6…302d`, magic 0xE9, chip_id 9 (ESP32-S3); cabe em app0 com 201.568 B livres.
+- Backup de 16 MB (`Desktop\LEX_MACHINA_BACKUP\LEX_MACHINA_ORIGINAL.bin`, SHA `9711fdb2…`): o app0 é `f7e6b190`, e boot,
+  tabela e otadata são idênticos aos lidos do aparelho.
+- Boot `0x0..0x7fff` `110f4d29…`; otadata `f94c5d78…`.
+
+**Gravação**: `write-flash --flash-mode keep --flash-freq keep --flash-size keep 0x10000 <candidato>` (`-p COM5 -b 460800`).
+O esptool apagou apenas `0x10000..0x11efff` e gravou 1.109.152 B. `Hash of data verified`. Sem erase-flash e sem Arduino IDE.
+
+**POST**: PASS
+- Readback de `0x10000` + 1.109.152 B: `936851787ee780c626a61d714ec798e806c5d4df45679b99c0becd9460ff302d`, idêntico byte a byte ao candidato.
+- Boot, tabela de partições e otadata: PRE = POST (hashes acima).
+- NVS POST `bf1f287f…`. A NVS não foi lida antes da gravação. Ela difere do backup de 24/10, o que é esperado porque o aparelho rodou
+  depois disso (ex.: pareamento BLE). Pelo log do esptool, a gravação não alcança `0x9000..0xdfff`.
+
+**Hash da aplicação**: antes `f7e6b190…09f9` → depois `93685178…302d`.
+O aparelho ficou parado no bootloader após o readback, aguardando o teste físico. Aprovação visual: **PENDENTE**.
