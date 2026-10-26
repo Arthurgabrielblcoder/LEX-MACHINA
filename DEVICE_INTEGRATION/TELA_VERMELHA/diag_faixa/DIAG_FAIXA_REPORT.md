@@ -1,7 +1,7 @@
 # Faixa de pixels aleatórios — hipóteses e teste diagnóstico
 
 Data: 2026-10-25 · Branch `fw-tela-vermelha` · Firmware no aparelho: INVON=0 (`93685178…302d`), **aprovado para cores**.
-Status deste documento: diagnóstico **preparado e compilado**; nada foi gravado. A gravação do teste depende de autorização.
+Status: **substituído pela v2** (ver `DIAG_FAIXA_V2_GATE_REPORT.md`); a v1 nunca foi gravada.
 
 ## 1. O que o código garante
 

@@ -45,6 +45,23 @@ Observação sem medidor: a faixa muda ao pressionar **de leve** a borda do vidr
 - Rail interno (M4) ≥ 3,0 V, M2 com diferença ≤ 0,1 V e M3 < 50 mV → alimentação **descartada** como causa; pode gravar o LEX_DIAG_FAIXA.
 - Fora disso → corrigir a alimentação primeiro (uma alteração só) e observar a faixa de novo com o firmware INVON=0, ainda sem o diagnóstico.
 
+## Medições reais (informadas pelo usuário, 2026-10-25)
+
+Configuração: VCC da tela no **3V3** do ESP32, J1 **aberto**, ESP32 alimentado pelo USB.
+
+| # | Leitura | Critério | Resultado |
+|---|---|---|---|
+| M1 | VCC → GND nos pinos da tela: **3,2 V** | ≥ 3,15 V (3V3) | OK |
+| M2 | 3V3 do ESP32 → GND: **3,2 V** | diferença M1/M2 ≤ 0,1 V | OK (≈ 0 V) |
+| M3 | GND ESP32 ↔ GND módulo, aparelho ligado: **28–34 mV** | < 50 mV | OK |
+| M4 | J1: pad 1 = **3,30 V** (entrada) · pad 2 = **3,11 V** (saída do regulador) | saída ≥ 3,0 V | OK; queda no regulador ≈ 0,19 V |
+
+`POWER_PREFLIGHT = PASS` · `POWER_AS_PRIMARY_CAUSE = UNLIKELY`
+
+Evidência experimental (teste curto feito pelo usuário; **não repetir**): só o VCC da tela foi passado de 3,3 V para 5 V, com J1 aberto.
+A tela ficou totalmente escura, sem imagem, e o aparelho foi desligado imediatamente. Com o VCC de volta em 3,3 V, a tela voltou a
+funcionar como antes, e a faixa anômala continuou igual. Decisão: manter 3,3 V, J1 aberto, sem novos testes de alimentação.
+
 Fontes: https://www.lcdwiki.com/3.2inch_SPI_Module_ILI9341_SKU:MSP3218 ·
 https://protosupplies.com/product/tft-lcd-3-2-240x320-rgb-spi-display-with-touchscreen/ ·
 https://done.land/components/humaninterface/display/tft/ili9341/2.8inch320x240/
