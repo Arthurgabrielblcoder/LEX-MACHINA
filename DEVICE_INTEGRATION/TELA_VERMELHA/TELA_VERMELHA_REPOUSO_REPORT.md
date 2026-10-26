@@ -34,10 +34,11 @@ python -m esptool --chip esp32s3 -p COM5 -b 460800 --before default-reset --afte
 ```
 O readback de `0x10000`+1.113.952 B deve dar `1bb3deb0…`.
 
-## Validação física pendente
-- [ ] Após 3 min sem tocar, a tela fica **preta** (não branca)
-- [ ] A primeira tecla só acorda e a tela anterior volta completa (pastas, leitor, camada ENTENDER/correlatas)
-- [ ] Nada aparece sobre a tela preta durante o repouso
-- [ ] O resto inalterado (orientação, cores, navegação, SD, BLE)
+## Validação física (2026-10-26, usuário)
+- [x] Após 3 min sem tocar, a tela fica **preta** (não branca)
+- [x] Nada aparece sobre a tela preta durante o repouso
+- [x] A primeira tecla só acorda e a tela anterior volta completa
 
-`REPOUSO_PHYSICAL: PENDING` — sem merge e sem congelar o firmware.
+`REPOUSO_PHYSICAL_VISUAL: PASS` — firmware `a7beea0b…` (commit `40272ed`). Continua sendo **solução visual provisória**: o backlight
+segue aceso, sem economia de energia real. Sem merge e sem congelar o firmware: a validação completa do candidato (navegação jurídica,
+BLE, SD, ENTENDER/correlatas/jurisprudência/referências) continua sob decisão do usuário.
