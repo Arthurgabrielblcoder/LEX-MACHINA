@@ -1,0 +1,76 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (INVON=0 93685178)
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (painel tela vermelha)
+@@ -128,7 +128,7 @@
+ // ---------------- PINOS ----------------
+ #define TFT_CS    10
+ #define TFT_DC     9
+-#define TFT_RST   14
++#define TFT_RST   15   // tela vermelha 3,2": fio RESET no GPIO15 (DEVICE_INTEGRATION/TELA_VERMELHA/diag_faixa)
+ #define TFT_MOSI  11
+ #define TFT_SCK   12
+ #define TFT_MISO  13
+@@ -142,7 +142,25 @@
+ 
+ // ---------------- SPI COMPARTILHADO ----------------
+ SPIClass spiBus(FSPI);
+-Adafruit_ILI9341 tft(&spiBus, TFT_DC, TFT_CS, TFT_RST);
++// Tela vermelha 3,2": painel nativo em paisagem. Orientacao validada fisicamente no LEX_DIAG_CFG5_BOOT (58a22b0):
++// MADCTL 0x40 (MX, ordem RGB, sem MV) com geometria logica 320x240. setRotation() fica neutralizado: qualquer chamada
++// reaplica essa configuracao, para nenhum codigo sobrescrever o MADCTL aprovado. A lib so usa _width/_height para recorte.
++#define PAINEL_MADCTL 0x40
++class Adafruit_ILI9341_PainelLex : public Adafruit_ILI9341
++{
++public:
++  using Adafruit_ILI9341::Adafruit_ILI9341;
++  void setRotation(uint8_t) override { aplicarOrientacaoPainel(); }
++  void aplicarOrientacaoPainel()
++  {
++    uint8_t m=PAINEL_MADCTL;
++    sendCommand(ILI9341_MADCTL,&m,1);
++    rotation=0; _width=320; _height=240;
++  }
++};
++Adafruit_ILI9341_PainelLex tft(&spiBus, TFT_DC, TFT_CS, TFT_RST);
++// USB-Serial/JTAG nativo (a COM da USB-C), so para uma linha de boot. Serial continua na UART0, como no aprovado.
++HWCDC lexUsbSerial;
+ 
+ // ---------------- BLUETOOTH ----------------
+ EspBle ble;
+@@ -5790,6 +5808,7 @@
+ // =====================================================
+ void setup()
+ {
++  pinMode(TFT_RST,OUTPUT); digitalWrite(TFT_RST,LOW);   // painel em reset ate tft.begin(): sem chuvisco no boot
+   Serial.begin(115200);
+   delay(800);
+ 
+@@ -5822,7 +5841,8 @@
+   spiBus.begin(TFT_SCK,TFT_MISO,TFT_MOSI,-1);
+ 
+   tft.begin(40000000);
+-  tft.setRotation(3);
++  tft.sendCommand(ILI9341_DISPOFF);   // a init da lib termina com DISPON e GRAM aleatoria
++  tft.setRotation(3);                 // neutralizado: aplica MADCTL 0x40 + 320x240 (Adafruit_ILI9341_PainelLex)
+ 
+ #if PAINEL_PRECISA_INVON
+   tft.invertDisplay(true);
+@@ -5832,6 +5852,7 @@
+   delay(30);
+ 
+   desenharTransicaoSplash(true);
++  uint32_t msSplashVisivel=(uint32_t)millis();
+   delay(3500);
+ 
+   iniciarSDUmaVez();
+@@ -5850,6 +5871,11 @@
+   lexV1DiagnosticoBoot();
+ #endif
+   ultimaInteracaoMs=(uint32_t)millis();
++  // Uma linha de boot pela USB nativa (COM do USB-Serial/JTAG), sem bloquear se ninguem estiver lendo a porta.
++  lexUsbSerial.setTxTimeoutMs(0);
++  lexUsbSerial.begin();
++  lexUsbSerial.printf("[LEXUSB] BOOT OK %lums splash=%lums SD=%s pastas=%d MADCTL=0x%02X 320x240 RST=%d\n",
++                     (unsigned long)millis(),(unsigned long)msSplashVisivel,sdOK?"OK":"FALHA",totalPastas,PAINEL_MADCTL,TFT_RST);
+ }
+ 
+ #if LEX_DEVICE_V1_ENABLED
