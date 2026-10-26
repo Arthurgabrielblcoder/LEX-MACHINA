@@ -76,3 +76,30 @@ SD_MODIFIED: NO
 MAIN_FIRMWARE_SOURCE_MODIFIED: NO
 USER_VISUAL_DIAG: PENDING
 ```
+
+## Atualização 2026-10-25 — RESET da tela no GPIO15
+
+`TFT_RST_PHYSICAL = GPIO15`
+
+Motivo:
+- O fio RESET da tela estava ligado por engano ao **GPIO8**, enquanto o firmware e o diagnóstico usavam `TFT_RST = 14`. Com o fio no GPIO8,
+  mediram-se ~0,9 V no RST, e o diagnóstico rodava pelo Serial com a tela branca.
+- O GPIO8 é reservado ao `TOUCH_INT` no firmware principal.
+- O usuário moveu fisicamente o fio RST para o **GPIO15**.
+- Só o diagnóstico foi atualizado para corresponder ao hardware: `#define TFT_RST 15`. Os demais pinos não mudaram (CS 10, DC 9, MOSI 11, SCK 12,
+  MISO 13, SD_CS 4). O GPIO15 não é usado por mais nada no sketch, nem como pino no firmware principal (o `15` que aparece lá é a constante
+  `LEITOR_LINHA_H`). **O firmware principal ainda declara `TFT_RST 14`** e não foi alterado nesta etapa.
+
+Gate (evidência local: `_local/diag_faixa_rst15_20261025_224120/`):
+- Compilação com o mesmo FQBN (`…esp32s3:PSRAM=opi,FlashSize=4M,PartitionScheme=default,CDCOnBoot=cdc`), 0 avisos: 344.368 B de programa, 24.560 B de RAM,
+  `.bin` de 344.512 B, SHA **`98774093c536fbdca261b27d815c905e59e4088130f1ef7d58df4e125eadfa92`**.
+- Porta COM5 (`303A:1001`, SER `E0:72:A1:F4:FD:28`), ESP32-S3 rev v0.2, 16 MB. A primeira tentativa foi bloqueada porque o Monitor Serial do Arduino IDE
+  ocupava a porta; nada foi escrito. Ele foi fechado pelo usuário.
+- Backup PRE: o app0 completo (`159aedea…024c`) começa com o diagnóstico anterior `c5b334af…` (confere).
+- Gravação somente de app0 (`0x10000..0x64fff` apagado/gravado), `Hash of data verified`; readback **idêntico byte a byte** (`98774093…`).
+- Boot `110f4d29…`, tabela `f3134b74…` e otadata `f94c5d78…`: **inalterados**. SD não acessado.
+- Serial: `LEX_DIAG_FAIXA v2` iniciou; `pinos TFT … RST=15 …`; o ciclo ROT 0 começou normalmente.
+- ID: `D3 = FF FF FF`; `0A=E1 0B=FE 0C=00 0D=E0 0F=F0`. Esses valores **não** são os esperados de um ILI9341 com esta init
+  (≈ `9C E8 05 00 C0`), portanto a leitura pelo MISO continua **inconclusiva**: linha flutuando, compartilhada ou SDO não ligado.
+
+`USER_VISUAL_VALIDATION: PENDING`

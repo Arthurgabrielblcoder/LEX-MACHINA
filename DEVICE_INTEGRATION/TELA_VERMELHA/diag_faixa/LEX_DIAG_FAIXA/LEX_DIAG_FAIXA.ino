@@ -17,7 +17,7 @@
 // Pinos copiados do firmware principal (LEX_MACHINA_DEVICE_V1_CANDIDATE.ino, secao PINOS)
 #define TFT_CS    10
 #define TFT_DC     9
-#define TFT_RST   14
+#define TFT_RST   15   // fio RESET da tela fisicamente no GPIO15 (era GPIO8, reservado ao TOUCH_INT); firmware principal ainda usa 14
 #define TFT_MOSI  11
 #define TFT_SCK   12
 #define TFT_MISO  13
