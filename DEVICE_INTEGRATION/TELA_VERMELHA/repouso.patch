@@ -1,0 +1,28 @@
+--- a/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (painel 1bb3deb0)
++++ b/LEX_MACHINA_DEVICE_V1_CANDIDATE.ino (repouso tela preta)
+@@ -5351,9 +5351,11 @@
+ 
+ void definirDisplayLigado(bool ligado)
+ {
+-  // DISPOFF preserva RAM/configuracao do ILI9341. Nao usamos SLPIN,
+-  // portanto DISPON basta e nao ha espera de SLPOUT no loop.
+-  tft.sendCommand(ligado ? ILI9341_DISPON : ILI9341_DISPOFF);
++  // Tela vermelha (TN, normally white): DISPOFF mostra BRANCO. Repouso = GRAM preta com o display ligado.
++  // SOLUCAO VISUAL PROVISORIA: o backlight continua aceso (3V3, sem GPIO); nao ha economia de energia real.
++  // Ao acordar, atualizarInatividadeDisplay() ja chama redesenharTelaAtual(): a GRAM nao precisa ser preservada.
++  if(ligado) tft.sendCommand(ILI9341_DISPON);
++  else tft.fillScreen(COR_FUNDO);
+   aplicarBacklight(ligado);
+ }
+ 
+@@ -5383,7 +5385,10 @@
+     pedirAcordarDisplay=false;
+   }else if(!displayApagado &&
+            (uint32_t)((uint32_t)millis()-ultimaInteracaoMs)>=TIMEOUT_TELA_MS){
++    // Marca o repouso ANTES de pintar e reconfere: uma tecla que chegou depois do teste acima ja atualizou
++    // ultimaInteracaoMs (desiste do repouso); uma que chegue depois desta linha e consumida so para acordar.
+     displayApagado=true;
++    if((uint32_t)((uint32_t)millis()-ultimaInteracaoMs)<TIMEOUT_TELA_MS){ displayApagado=false; return; }
+     definirDisplayLigado(false);
+   }
+ }
