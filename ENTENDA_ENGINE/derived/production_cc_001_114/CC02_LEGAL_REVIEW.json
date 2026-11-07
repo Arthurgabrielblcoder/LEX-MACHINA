@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "mission": "CC-02",
+  "decision": "CANDIDATE_ONLY_PENDING_HUMAN_LEGAL_REVIEW",
+  "human_approval_claimed": false,
+  "counts": {
+    "technically_validated": 116,
+    "pending_human_legal_review": 116,
+    "blocked": 1,
+    "approved_for_production": 0
+  },
+  "blocked": [
+    {
+      "target_id": "CC2002:ART.69-A",
+      "reason": "O dispositivo aparece como VETADO na fonte consolidada e não possui regra vigente a explicar."
+    }
+  ],
+  "high_attention_groups": [
+    {
+      "targets": ["CC2002:ART.2", "CC2002:ART.4", "CC2002:ART.7", "CC2002:ART.8"],
+      "reason": "Personalidade, incapacidade e morte presumida exigem precisão conceitual e processual."
+    },
+    {
+      "targets": ["CC2002:ART.11", "CC2002:ART.12", "CC2002:ART.13", "CC2002:ART.14", "CC2002:ART.15", "CC2002:ART.20", "CC2002:ART.21"],
+      "reason": "Direitos da personalidade envolvem ponderação constitucional, bioética e legislação especial."
+    },
+    {
+      "targets": ["CC2002:ART.43", "CC2002:ART.44", "CC2002:ART.49-A", "CC2002:ART.50", "CC2002:ART.52"],
+      "reason": "Responsabilidade pública, tipos recentes de pessoa jurídica e desconsideração possuem alterações e requisitos sensíveis."
+    },
+    {
+      "targets": ["CC2002:ART.57", "CC2002:ART.62", "CC2002:ART.66", "CC2002:ART.67", "CC2002:ART.69"],
+      "reason": "Associações e fundações dependem de devido processo, finalidade estatutária e atuação institucional."
+    },
+    {
+      "targets": ["CC2002:ART.76", "CC2002:ART.102", "CC2002:ART.104", "CC2002:ART.108", "CC2002:ART.110", "CC2002:ART.111", "CC2002:ART.113", "CC2002:ART.114"],
+      "reason": "Domicílio necessário, bens públicos e teoria do negócio jurídico exigem confronto com regras especiais e contexto contratual."
+    }
+  ],
+  "review_protocol": [
+    "Conferir cada resumo com o snapshot consolidado armazenado no corpus.",
+    "Revisar primeiro os grupos de alta atenção e todos os artigos com subdivisões.",
+    "Somente revisor humano autorizado pode mudar review_status para HUMAN_APPROVED_T1.",
+    "Alteração editorial exige incremento de editorial_version e nova validação de staleness."
+  ]
+}
