@@ -19,7 +19,8 @@ class CC03AuditTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.baseline = load_jsonl(BATCH / "CC2002_CC02_BASELINE.entenda.jsonl")
-        cls.corpus = load_jsonl(BATCH / "CC2002_CC02.entenda.jsonl")
+        corpus_path = BATCH / "CC2002_CC03_BASELINE.entenda.jsonl"
+        cls.corpus = load_jsonl(corpus_path if corpus_path.is_file() else BATCH / "CC2002_CC02.entenda.jsonl")
         cls.matrix = json.loads((BATCH / "CC03_AUDIT_MATRIX.json").read_text(encoding="utf-8"))
 
     def test_versions_and_human_status_are_preserved(self):

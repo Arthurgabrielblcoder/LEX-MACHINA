@@ -112,7 +112,8 @@ class NormContext:
             raise EntendaError('NORM_NOT_CONFIGURED', norma_id)
         self.norma_id, self.base = norma_id, Path(base)
         self.ncfg = self.cfg['norms'][norma_id]
-        self.limits = self.cfg['limits']
+        self.limits = dict(self.cfg['limits'])
+        self.limits.update(self.ncfg.get('limits', {}))
         idx = json.loads((self.base / self.ncfg['target_index']).read_text(encoding='utf-8'))
         if idx['norma_id'] != norma_id:
             raise EntendaError('INDEX_NORM_MISMATCH', norma_id)

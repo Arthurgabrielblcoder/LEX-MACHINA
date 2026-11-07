@@ -12,7 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BATCH = ROOT / "ENTENDA_ENGINE" / "derived" / "production_cc_001_114"
 BASELINE = BATCH / "CC2002_CC02_BASELINE.entenda.jsonl"
-CORPUS = BATCH / "CC2002_CC02.entenda.jsonl"
+CURRENT_CORPUS = BATCH / "CC2002_CC02.entenda.jsonl"
+CC03_BASELINE = BATCH / "CC2002_CC03_BASELINE.entenda.jsonl"
 OFFICIAL_URL = "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html"
 ACCESSED_ON = "2026-11-07"
 
@@ -86,7 +87,8 @@ def main(check: bool = False) -> None:
     if sha(BASELINE) != "86ef8d8f1843650e927b2fd2fd620dd92a7fe9508dac8934efbaae238beecd4d":
         raise SystemExit("CC02_BASELINE_HASH_MISMATCH")
     baseline_rows = load_jsonl(BASELINE)
-    current_rows = load_jsonl(CORPUS)
+    audited_corpus = CC03_BASELINE if CC03_BASELINE.is_file() else CURRENT_CORPUS
+    current_rows = load_jsonl(audited_corpus)
     base = {r["target_id"]: r for r in baseline_rows if r["status"] == "ACTIVE"}
     active = {r["target_id"]: r for r in current_rows if r["status"] == "ACTIVE"}
     if len(base) != 116 or len(active) != 116 or set(base) != set(active):
@@ -149,7 +151,7 @@ def main(check: bool = False) -> None:
         "official_source": OFFICIAL_URL,
         "accessed_on": ACCESSED_ON,
         "baseline_corpus_sha256": sha(BASELINE),
-        "audited_corpus_sha256": sha(CORPUS),
+        "audited_corpus_sha256": sha(audited_corpus),
         "explanations_audited": len(audits),
         "audit_status_counts": counts,
         "formal_review_status": "PENDING_HUMAN_REVIEW",
