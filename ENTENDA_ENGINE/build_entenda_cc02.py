@@ -29,8 +29,10 @@ SOURCE_META = BATCH / "SOURCE_PROVENANCE.json"
 TARGET_INDEX = BATCH / "CC2002_TARGET_INDEX.json"
 DRAFTS = BATCH / "CC02_DRAFTS.json"
 CORPUS = BATCH / "CC2002_CC02.entenda.jsonl"
+BASELINE_CORPUS = BATCH / "CC2002_CC02_BASELINE.entenda.jsonl"
 INDEX_DIR = BATCH / "index"
 EXPECTED_FULL_SHA256 = "ad5ba178613b6181e2d8a61919eda0c6223c68feb6e47bef4ea65bc45c13e6ae"
+EXPECTED_CC02_CORPUS_SHA256 = "86ef8d8f1843650e927b2fd2fd620dd92a7fe9508dac8934efbaae238beecd4d"
 
 
 def _sha(data: bytes) -> str:
@@ -89,7 +91,17 @@ def build(out_dir: Path | None = None) -> dict:
         _write_json(DRAFTS, rendered_drafts)
     ctx = E.NormContext("CC2002")
     drafts = rendered_drafts
-    records = E.stamp(drafts, ctx, existing=[])
+    existing = E.load_corpus(BASELINE_CORPUS) if BASELINE_CORPUS.is_file() else []
+    records = E.stamp(drafts, ctx, existing=existing)
+    for rec in records:
+        if rec["editorial_version"] == 2:
+            rec["prompt_version"] = "CC03-LEGAL-AUDIT-V1"
+            rec["authoring"] = {
+                "method": "INDEPENDENT_AUTOMATED_LEGAL_AUDIT_WITH_OFFICIAL_SOURCE",
+                "mission": "CC-03",
+                "generated_on": "2026-11-07",
+                "human_approval_claimed": False,
+            }
     E.validate_corpus(records, ctx)
     corpus_path = CORPUS if out_dir is None else out_dir / CORPUS.name
     index_path = INDEX_DIR if out_dir is None else out_dir / "index"
@@ -107,19 +119,21 @@ def build(out_dir: Path | None = None) -> dict:
         "build_manifest": manifest,
     }
     if out_dir is None:
-        _write_json(BATCH / "CC02_MANIFEST.json", summary)
-        checkpoint_dir = BATCH / "checkpoints"
+        audit_mode = any(r["editorial_version"] > 1 for r in active)
+        prefix = "CC03" if audit_mode else "CC02"
+        _write_json(BATCH / f"{prefix}_MANIFEST.json", summary)
+        checkpoint_dir = BATCH / ("checkpoints_cc03" if audit_mode else "checkpoints")
         for start, end in ((1, 25), (26, 50), (51, 75), (76, 100), (101, 114)):
             block = [r for r in active if start <= int(re.search(r"ART\.(\d+)", r["target_id"]).group(1)) <= end]
             encoded = json.dumps(block, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
-            _write_json(checkpoint_dir / f"CC02_{start:03d}_{end:03d}.json", {
+            _write_json(checkpoint_dir / f"{prefix}_{start:03d}_{end:03d}.json", {
                 "range": [start, end],
                 "explanation_count": len(block),
                 "review_status": "PENDING_HUMAN_REVIEW",
                 "target_ids": [r["target_id"] for r in block],
                 "records_sha256": _sha(encoded),
             })
-        _write_json(BATCH / "CC02_COVERAGE.json", {
+        _write_json(BATCH / f"{prefix}_COVERAGE.json", {
             "base_numbered_articles_expected": 114,
             "base_numbered_articles_explained": 114,
             "inserted_current_articles_explained": ["CC2002:ART.48-A", "CC2002:ART.49-A"],
@@ -152,10 +166,18 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--bootstrap-source", type=Path)
     ap.add_argument("--bootstrap-only", action="store_true")
+    ap.add_argument("--snapshot-cc02-baseline", action="store_true")
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
     if args.bootstrap_source:
         bootstrap(args.bootstrap_source)
+    if args.snapshot_cc02_baseline:
+        raw = CORPUS.read_bytes()
+        if _sha(raw) != EXPECTED_CC02_CORPUS_SHA256:
+            raise SystemExit("CC02_BASELINE_CORPUS_HASH_MISMATCH")
+        BASELINE_CORPUS.write_bytes(raw)
+        print(json.dumps({"baseline_corpus": str(BASELINE_CORPUS.relative_to(ROOT)), "sha256": _sha(raw)}, indent=2))
+        return
     if args.bootstrap_only:
         print(json.dumps(json.loads(SOURCE_META.read_text(encoding="utf-8")), ensure_ascii=False, indent=2))
         return
