@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT / "LEGAL_TARGET_ID"))
 
 import entenda_engine as E  # noqa: E402
 import build_target_index as BT  # noqa: E402
-from cc02_editorial import render_drafts  # noqa: E402
+from cc02_editorial import CC05_HUMAN_APPROVED_TARGETS, render_drafts  # noqa: E402
 
 BATCH = ROOT / "ENTENDA_ENGINE" / "derived" / "production_cc_001_114"
 SOURCE = BATCH / "SOURCE_CC2002_ARTS_001_114.txt"
@@ -109,12 +109,29 @@ def build(out_dir: Path | None = None) -> dict:
     for rec in records:
         if CC04_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
             rec["prompt_version"] = "CC05-CONSOLIDATION-V1"
-            rec["authoring"] = {
-                "method": "TARGETED_LEGAL_RESOLUTION_WITH_OFFICIAL_SOURCES",
-                "mission": "CC-05",
-                "generated_on": "2026-11-07",
-                "human_approval_claimed": False,
-            }
+            article = rec["target_id"].split("ART.", 1)[1].split(":", 1)[0]
+            if article in CC05_HUMAN_APPROVED_TARGETS:
+                rec["authoring"] = {
+                    "method": "OWNER_APPROVED_EXTERNAL_TEXT_TRANSCRIPTION",
+                    "mission": "CC-05",
+                    "generated_on": "2026-11-07",
+                    "human_approval_claimed": True,
+                    "formal_status_promoted": False,
+                }
+                rec["external_human_approval"] = {
+                    "origin": "Transcrição integral fornecida pelo proprietário no prompt da missão CC-05",
+                    "approval_date": "2026-11-07",
+                    "electronic_signature_verified": False,
+                    "exact_text_integrity_verified": True,
+                    "formal_status": "PENDING_HUMAN_REVIEW",
+                }
+            else:
+                rec["authoring"] = {
+                    "method": "TARGETED_LEGAL_RESOLUTION_WITH_OFFICIAL_SOURCES",
+                    "mission": "CC-05",
+                    "generated_on": "2026-11-07",
+                    "human_approval_claimed": False,
+                }
         elif CC03B_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
             rec["prompt_version"] = "CC04-DELEGATED-LEGAL-REVIEW-V1"
             rec["authoring"] = {

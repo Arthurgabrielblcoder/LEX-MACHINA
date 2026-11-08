@@ -133,9 +133,30 @@ CC04_VERSION_BUMPS = {
     "5", "9", "11", "29", "30", "45", "46", "48", "61", "64",
     "68", "69", "75", "76", "83", "96", "103", "105", "110",
 }
-CC05_VERSION_BUMPS = {"14", "21"}
+CC05_HUMAN_APPROVED_TARGETS = {"2", "4", "15", "20", "50", "113"}
+CC05_VERSION_BUMPS = {"14", "21"} | CC05_HUMAN_APPROVED_TARGETS
 
 CC05_OVERRIDES = {
+    "2": {
+        "o_que_diz": "A personalidade civil começa com o nascimento com vida, mas os direitos do nascituro são protegidos desde a concepção.",
+        "o_que_significa": "Mesmo antes de nascer, o ser humano concebido recebe proteção jurídica. A lei resguarda interesses como a vida, a saúde e direitos sucessórios. O nascimento com vida é o marco expressamente previsto para o início da personalidade civil.",
+        "exemplo_pratico": "Se uma pessoa morre deixando um filho ainda em gestação, esse filho, já concebido na abertura da sucessão, pode ter sua parte da herança resguardada. A aquisição sucessória se consolida com o nascimento com vida.",
+        "atencao": "Há divergência doutrinária sobre quando começa a personalidade e qual a natureza dos direitos do nascituro. As teorias natalista, concepcionista e da personalidade condicional oferecem explicações diferentes. A proteção jurídica antes do nascimento, porém, é expressamente assegurada pela lei.",
+        "palavras_dificeis": [
+            {"termo": "Nascituro", "explicacao": "ser humano já concebido e ainda não nascido."},
+        ],
+    },
+    "4": {
+        "o_que_diz": "São relativamente incapazes para determinados atos ou para a maneira de exercê-los: os maiores de 16 e menores de 18 anos; os ébrios habituais e viciados em tóxicos; quem, por causa transitória ou permanente, não consegue exprimir sua vontade; e os pródigos.",
+        "o_que_significa": "A incapacidade relativa limita o exercício pessoal de determinados atos, mas não retira a titularidade de direitos. Conforme a situação, pode ser necessária assistência de representante legal ou atuação de curador dentro dos limites estabelecidos judicialmente.\n\nDiferentemente da incapacidade absoluta, que exige representação, a relativa geralmente admite que a própria pessoa participe do ato com assistência. A realização de negócio jurídico sem a assistência legalmente exigida pode ocasionar sua anulabilidade (art. 171, I).",
+        "exemplo_pratico": "Um adolescente de 17 anos deseja celebrar um contrato de compra e venda. Em regra, ele participa da contratação assistido por seus responsáveis legais. Se realizar sozinho um negócio para o qual a assistência seja exigida, poderá surgir hipótese de anulabilidade.",
+        "atencao": "Deficiência ou diagnóstico médico não implicam incapacidade automaticamente. A curatela, quando cabível, é excepcional, proporcional e limitada aos atos patrimoniais e negociais, conforme a Lei Brasileira de Inclusão.\n\nO parágrafo único estabelece que a capacidade dos indígenas é disciplinada por legislação especial; a condição indígena, por si só, não significa incapacidade civil.",
+        "palavras_dificeis": [
+            {"termo": "Assistência", "explicacao": "participação de pessoa legalmente habilitada que complementa a manifestação de vontade do relativamente incapaz."},
+            {"termo": "Pródigo", "explicacao": "pessoa que dissipa seu patrimônio de forma juridicamente relevante."},
+            {"termo": "Anulabilidade", "explicacao": "possibilidade de invalidar judicialmente um ato que apresenta vício previsto em lei."},
+        ],
+    },
     "14": {
         "o_que_diz": "A pessoa pode destinar gratuitamente, para depois de sua morte, todo o corpo ou parte dele a objetivo científico ou altruístico. Essa decisão pode ser livremente revogada a qualquer momento.",
         "o_que_significa": "A pessoa pode manifestar, sem finalidade comercial, a vontade de destinar o corpo ou partes dele depois da morte para a ciência ou em benefício de outras pessoas. Essa declaração é juridicamente válida e revogável, mas sua execução deve cumprir o regime especial aplicável à finalidade escolhida. A doação de órgãos e tecidos para transplante ou tratamento não se confunde com a destinação do corpo para ensino ou pesquisa científica.",
@@ -147,6 +168,26 @@ CC05_OVERRIDES = {
             {"termo": "Revogação", "explicacao": "retirada de uma manifestação de vontade anteriormente feita"},
         ],
     },
+    "15": {
+        "o_que_diz": "Ninguém pode ser forçado a realizar tratamento médico ou intervenção cirúrgica que envolva risco de vida.",
+        "o_que_significa": "O artigo protege a autonomia do paciente sobre decisões relativas ao próprio corpo. Em regra, o paciente capaz deve receber informações claras sobre o procedimento, seus riscos, benefícios e alternativas, para decidir livremente se aceita ou recusa o tratamento.\n\nA proteção à autonomia não se limita à liberdade religiosa. O direito ao consentimento informado integra a proteção da dignidade e da integridade pessoal.",
+        "exemplo_pratico": "Um paciente adulto, consciente e capaz recebe indicação de uma cirurgia que apresenta risco relevante. Depois de compreender as consequências e alternativas, decide não realizá-la. Sua recusa livre e esclarecida deve ser respeitada, observadas as circunstâncias e normas aplicáveis.",
+        "atencao": "A recusa de paciente capaz não deve ser confundida com situações em que a pessoa não consegue manifestar sua vontade. Emergências, incapacidade e decisões envolvendo menores exigem análise específica.\n\nO STF reconhece, em decisões de repercussão geral, a possibilidade de recusa de transfusão de sangue por pacientes adultos e capazes por motivos religiosos, mediante manifestação livre, inequívoca e esclarecida.",
+        "palavras_dificeis": [
+            {"termo": "Autonomia", "explicacao": "liberdade de decidir sobre questões que dizem respeito à própria pessoa."},
+            {"termo": "Consentimento informado", "explicacao": "autorização ou recusa voluntária após receber informações suficientes para compreender o procedimento e suas consequências."},
+        ],
+    },
+    "20": {
+        "o_que_diz": "A pessoa pode buscar a proibição da divulgação de seus escritos, palavras ou imagem e eventual indenização quando presentes as condições legais, especialmente ofensa à honra, à reputação ou utilização comercial indevida.",
+        "o_que_significa": "O artigo protege direitos da personalidade, como imagem e honra. Em determinadas situações, a pessoa pode pedir judicialmente a interrupção do uso indevido e reparação pelos danos.\n\nO texto legal ressalva a autorização e os usos necessários à administração da justiça ou à manutenção da ordem pública. A aplicação também deve respeitar a liberdade de expressão e de informação.\n\nSe a pessoa estiver morta ou ausente, o cônjuge, os ascendentes e os descendentes podem requerer a proteção prevista no artigo.",
+        "exemplo_pratico": "Uma empresa utiliza, sem autorização, a fotografia de um cliente para anunciar seus produtos. A pessoa pode pedir a retirada da publicidade e indenização. Segundo a Súmula 403 do STJ, nessa hipótese de uso econômico ou comercial indevido da imagem, a indenização independe de prova do prejuízo.",
+        "atencao": "O STF decidiu, na ADI 4.815, que a publicação de biografias literárias ou audiovisuais não exige autorização prévia do biografado ou de seus familiares. Isso não elimina a responsabilidade por eventuais abusos, mas impede tratar o art. 20 como autorização geral para censura prévia.",
+        "palavras_dificeis": [
+            {"termo": "Direitos da personalidade", "explicacao": "direitos que protegem atributos essenciais da pessoa, como imagem, honra e privacidade."},
+            {"termo": "Respeitabilidade", "explicacao": "consideração e reconhecimento social relacionados à reputação de alguém."},
+        ],
+    },
     "21": {
         "o_que_diz": "A lei protege a vida privada contra violações e permite que o interessado peça ao juiz medidas necessárias para impedir a conduta ou fazê-la cessar.",
         "o_que_significa": "A pessoa pode buscar proteção judicial contra intromissões ou exposições ilícitas de sua esfera privada. Conforme o caso, o juiz pode impedir uma conduta, determinar sua cessação ou adotar outra medida adequada. A proteção deve ser aplicada em harmonia com as liberdades de expressão e de informação e não torna automaticamente ilícita toda divulgação de dado relacionado à vida de alguém.",
@@ -156,6 +197,26 @@ CC05_OVERRIDES = {
             {"termo": "Vida privada", "explicacao": "esfera pessoal protegida contra intromissões e exposições ilícitas"},
             {"termo": "Censura prévia", "explicacao": "impedimento antecipado da manifestação ou publicação antes de eventual apuração de abuso"},
             {"termo": "Responsabilização", "explicacao": "aplicação posterior das consequências jurídicas cabíveis por um abuso comprovado"},
+        ],
+    },
+    "50": {
+        "o_que_diz": "Se houver abuso da personalidade jurídica por desvio de finalidade ou confusão patrimonial, o juiz poderá, mediante requerimento, atingir bens particulares de sócios ou administradores beneficiados pelo abuso, para determinadas obrigações.",
+        "o_que_significa": "Em regra, a empresa e seus sócios possuem patrimônios separados. Excepcionalmente, essa proteção pode ser afastada:\n\n- Desvio de finalidade (§ 1º): utilização da pessoa jurídica com propósito de lesar credores e praticar atos ilícitos.\n- Confusão patrimonial (§ 2º): mistura de patrimônios, como pagamento repetido de dívidas pessoais pela empresa ou transferências sem contraprestação efetiva, ressalvados valores proporcionalmente insignificantes.\n- Desconsideração inversa (§ 3º): permite alcançar bens da pessoa jurídica por obrigações de sócios ou administradores, quando preenchidos os requisitos legais.",
+        "exemplo_pratico": "Um sócio utiliza continuamente o dinheiro da empresa para pagar suas despesas particulares. Se comprovados os requisitos legais, o juiz poderá permitir que determinados bens do sócio respondam por uma dívida da empresa, desde que ele tenha sido beneficiado pelo abuso.",
+        "atencao": "A simples existência de dívida não autoriza a desconsideração. Pertencer ao mesmo grupo econômico (§ 4º) ou apenas expandir ou alterar a atividade empresarial (§ 5º) também não basta. A medida depende de requerimento da parte ou do Ministério Público, quando cabível, e não extingue a pessoa jurídica.",
+        "palavras_dificeis": [
+            {"termo": "Desconsideração", "explicacao": "afastamento pontual da separação patrimonial para certas obrigações."},
+            {"termo": "Confusão patrimonial", "explicacao": "falta de separação efetiva entre patrimônios juridicamente distintos."},
+        ],
+    },
+    "113": {
+        "o_que_diz": "Os negócios jurídicos devem ser interpretados conforme a boa-fé e os usos do lugar onde foram celebrados, observando os critérios legais e as regras de interpretação validamente estabelecidas pelas partes.",
+        "o_que_significa": "Quando houver dúvida sobre o sentido de um negócio, o § 1º orienta considerar:\n\n- I — como as partes se comportaram depois de celebrá-lo;\n- II — os usos, costumes e práticas daquele mercado;\n- III — a boa-fé, isto é, a lealdade e a confiança legítima;\n- IV — o sentido mais favorável a quem não redigiu a cláusula, quando identificável;\n- V — o que seria razoavelmente negociado pelas partes, conforme o restante do negócio, sua racionalidade econômica e as informações disponíveis na celebração.\n\nPelo § 2º, as partes também podem estabelecer regras próprias para interpretar o negócio ou suprir suas lacunas, respeitados os limites legais.",
+        "exemplo_pratico": "Um contrato de prestação de serviços prevê atendimento 'semanal', mas não especifica o dia. Durante meses, ambas as partes realizam o atendimento às segundas-feiras. Se surgir uma dúvida sobre a cláusula, essa conduta posterior pode ajudar a identificar o sentido que deram ao acordo.",
+        "atencao": "Interpretar não é criar livremente novas obrigações nem ignorar o contrato. Os critérios devem ser aplicados conforme o caso concreto. A liberdade de pactuar regras interpretativas não afasta normas obrigatórias, nem autoriza contrariar a boa-fé.",
+        "palavras_dificeis": [
+            {"termo": "Boa-fé objetiva", "explicacao": "dever de agir com lealdade, coerência e respeito à confiança legítima."},
+            {"termo": "Integração", "explicacao": "preenchimento de questões não reguladas expressamente pelo negócio, conforme as regras aplicáveis."},
         ],
     },
 }

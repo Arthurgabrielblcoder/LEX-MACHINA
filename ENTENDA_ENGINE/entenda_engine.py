@@ -304,10 +304,21 @@ def validate_explanation(rec, ctx):
     for t in texts:
         if any(line.startswith(('#', '@')) for line in t.split('\n')) or '|' in t:
             raise EntendaError('ENTENDA_RESERVED_CHAR', tid)
-    # hard block applies to the body only; external_layer_notes may name the external layer and its references
+    # Ordinarily, jurisprudential references belong to the external layer. CC-05
+    # has a narrow preservation exception for verbatim owner-approved text whose
+    # formal status is deliberately not promoted without verifiable signature.
+    approval = rec.get('external_human_approval')
+    approved_external_transcription = rec['authoring'].get('method') == 'OWNER_APPROVED_EXTERNAL_TEXT_TRANSCRIPTION'
+    if approval is not None or approved_external_transcription:
+        if not approved_external_transcription or rec['review_status'] != 'PENDING_HUMAN_REVIEW' or not isinstance(approval, dict) \
+                or approval.get('approval_date') != '2026-11-07' or approval.get('electronic_signature_verified') is not False \
+                or approval.get('exact_text_integrity_verified') is not True or approval.get('formal_status') != 'PENDING_HUMAN_REVIEW' \
+                or not (approval.get('origin') or '').strip():
+            raise EntendaError('ENTENDA_EXTERNAL_HUMAN_APPROVAL_INVALID', tid)
+    # The hard block still applies to every ordinary editorial record.
     body = [c[k] for k in REQUIRED_TEXT] + ([c['atencao']] if c['atencao'] else []) + [t['explicacao'] for t in terms]
     hit = next((EXTERNAL_CASE_RE.search(t) for t in body if EXTERNAL_CASE_RE.search(t)), None)
-    if hit:
+    if hit and not approved_external_transcription:
         raise EntendaError('ENTENDA_EXTERNAL_CASE_CONTENT', f'{tid}: "{hit.group(0)}" pertence a camada JURISPRUDENCIA')
     total = sum(len(words(t)) for t in content_texts)
     lo, hi = ctx.limits['words_overview'] if g['role'] == 'OVERVIEW' else ctx.limits['words_device']
@@ -316,7 +327,7 @@ def validate_explanation(rec, ctx):
     n = ctx.limits['max_verbatim_words']
     src = _ngrams([w.lower() for w in words(s['source_text_snapshot'])], n + 1)
     for k in REQUIRED_TEXT:
-        if _ngrams([w.lower() for w in words(c[k])], n + 1) & src:
+        if not approved_external_transcription and _ngrams([w.lower() for w in words(c[k])], n + 1) & src:
             raise EntendaError('ENTENDA_COPIES_OFFICIAL_TEXT', f'{tid}: {k} repete mais de {n} palavras seguidas do texto oficial')
     if rec['status'] not in STATUSES or rec['review_status'] not in REVIEW:
         raise EntendaError('ENTENDA_STATUS_INVALID', tid)
