@@ -37,6 +37,11 @@ EXPECTED_FULL_SHA256 = "ad5ba178613b6181e2d8a61919eda0c6223c68feb6e47bef4ea65bc4
 EXPECTED_CC02_CORPUS_SHA256 = "86ef8d8f1843650e927b2fd2fd620dd92a7fe9508dac8934efbaae238beecd4d"
 EXPECTED_CC03_CORPUS_SHA256 = "f4f44ab5334f9adc5aa7c88015762028b2a5d1381b2cfd0e0d9959799191407e"
 EXPECTED_CC03B_CORPUS_SHA256 = "be75e9bdb93e9c28f76dd0577957d128471f159e8fe931e72276d7456dbbc1d2"
+EXPECTED_PRODUCTION_INDEX_SHA256 = {
+    "ENTENDA_LOOKUP.IDX": "38074a6d752b2a3ebd4e7411ff25c43abc3c69ad117b3cf49a4f5b73aece3e82",
+    "ENTENDA_PAYLOAD.DAT": "6caa56b1d5f047b12df087c39ab7998db579de2c445352caa7ad7219c9641638",
+    "ENTENDA_BUILD_MANIFEST.json": "213dc52380c3b359c35d9bc5c8e9a85a24043c0dd19f7eeb841b059eeda3a760",
+}
 
 
 def _sha(data: bytes) -> str:
@@ -125,7 +130,16 @@ def build(out_dir: Path | None = None) -> dict:
             }
     E.validate_corpus(records, ctx)
     corpus_path = CORPUS if out_dir is None else out_dir / CORPUS.name
-    index_path = INDEX_DIR if out_dir is None else out_dir / "index"
+    # CC-04 is an editorial-review candidate only. Its index may be built in a
+    # disposable directory for compatibility validation, but the production
+    # index committed by the preceding mission must not be modified.
+    preserve_production_index = out_dir is None and CC03B_BASELINE_CORPUS.is_file()
+    transient_index = None
+    if preserve_production_index:
+        transient_index = tempfile.TemporaryDirectory(prefix=".cc04-index-check-", dir=BATCH)
+        index_path = Path(transient_index.name) / "index"
+    else:
+        index_path = INDEX_DIR if out_dir is None else out_dir / "index"
     E.write_corpus(records, corpus_path, ctx)
     manifest = E.build_entenda_index(ctx, records, index_path)
     active = [r for r in records if r["status"] == "ACTIVE"]
@@ -138,7 +152,10 @@ def build(out_dir: Path | None = None) -> dict:
         "lookup_sha256": _sha((index_path / "ENTENDA_LOOKUP.IDX").read_bytes()),
         "payload_sha256": _sha((index_path / "ENTENDA_PAYLOAD.DAT").read_bytes()),
         "build_manifest": manifest,
+        "production_index_modified": False if CC03B_BASELINE_CORPUS.is_file() else None,
     }
+    if transient_index is not None:
+        transient_index.cleanup()
     if out_dir is None:
         audit_mode = any(r["editorial_version"] > 1 for r in active)
         prefix = "CC04" if CC03B_BASELINE_CORPUS.is_file() else ("CC03B" if CC03_BASELINE_CORPUS.is_file() else ("CC03" if audit_mode else "CC02"))
@@ -168,15 +185,23 @@ def build(out_dir: Path | None = None) -> dict:
 
 
 def check() -> dict:
+    if CC03B_BASELINE_CORPUS.is_file():
+        changed_index = [
+            name for name, expected in EXPECTED_PRODUCTION_INDEX_SHA256.items()
+            if not (INDEX_DIR / name).is_file() or _sha((INDEX_DIR / name).read_bytes()) != expected
+        ]
+        if changed_index:
+            raise SystemExit("CC04_PRODUCTION_INDEX_MODIFIED: " + ", ".join(changed_index))
     with tempfile.TemporaryDirectory(prefix=".cc02-check-", dir=BATCH) as td:
         tmp = Path(td)
         summary = build(tmp)
-        pairs = [
-            (tmp / CORPUS.name, CORPUS),
-            (tmp / "index" / "ENTENDA_LOOKUP.IDX", INDEX_DIR / "ENTENDA_LOOKUP.IDX"),
-            (tmp / "index" / "ENTENDA_PAYLOAD.DAT", INDEX_DIR / "ENTENDA_PAYLOAD.DAT"),
-            (tmp / "index" / "ENTENDA_BUILD_MANIFEST.json", INDEX_DIR / "ENTENDA_BUILD_MANIFEST.json"),
-        ]
+        pairs = [(tmp / CORPUS.name, CORPUS)]
+        if not CC03B_BASELINE_CORPUS.is_file():
+            pairs.extend([
+                (tmp / "index" / "ENTENDA_LOOKUP.IDX", INDEX_DIR / "ENTENDA_LOOKUP.IDX"),
+                (tmp / "index" / "ENTENDA_PAYLOAD.DAT", INDEX_DIR / "ENTENDA_PAYLOAD.DAT"),
+                (tmp / "index" / "ENTENDA_BUILD_MANIFEST.json", INDEX_DIR / "ENTENDA_BUILD_MANIFEST.json"),
+            ])
         changed = [str(dst.relative_to(ROOT)) for src, dst in pairs if not dst.is_file() or src.read_bytes() != dst.read_bytes()]
         if changed:
             raise SystemExit("NON_REPRODUCIBLE_OR_UNBUILT: " + ", ".join(changed))

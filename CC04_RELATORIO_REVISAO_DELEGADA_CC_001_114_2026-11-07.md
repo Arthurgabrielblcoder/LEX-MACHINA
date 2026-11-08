@@ -84,9 +84,9 @@ O detalhamento individual está em `CC04_PRIORITY_SECOND_REVIEW.json`.
 - Corpus: 269 versões, sendo 116 ativas e 153 históricas.
 - Frases genéricas: zero.
 - Alertas editoriais: zero.
-- Firmware, microSD, ESP32 e índices de produção: nenhuma alteração.
+- Firmware, microSD, ESP32 e índices de produção: nenhuma alteração. A compatibilidade do índice candidato foi verificada apenas em diretório temporário, sem persistência ou promoção.
 - Build e matrizes: reproduzíveis.
-- Testes: 37/37 aprovados.
+- Suíte aplicável CC-02 a CC-04: 18/18 testes aprovados, além dos quatro checks determinísticos das missões CC-02, CC-03, CC-03B e CC-04.
 
 ## Hashes
 
