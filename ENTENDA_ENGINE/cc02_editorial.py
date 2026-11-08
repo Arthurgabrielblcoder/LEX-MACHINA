@@ -133,27 +133,55 @@ CC04_VERSION_BUMPS = {
     "5", "9", "11", "29", "30", "45", "46", "48", "61", "64",
     "68", "69", "75", "76", "83", "96", "103", "105", "110",
 }
+CC05_VERSION_BUMPS = {"14", "21"}
+
+CC05_OVERRIDES = {
+    "14": {
+        "o_que_diz": "A pessoa pode destinar gratuitamente, para depois de sua morte, todo o corpo ou parte dele a objetivo científico ou altruístico. Essa decisão pode ser livremente revogada a qualquer momento.",
+        "o_que_significa": "A pessoa pode manifestar, sem finalidade comercial, a vontade de destinar o corpo ou partes dele depois da morte para a ciência ou em benefício de outras pessoas. Essa declaração é juridicamente válida e revogável, mas sua execução deve cumprir o regime especial aplicável à finalidade escolhida. A doação de órgãos e tecidos para transplante ou tratamento não se confunde com a destinação do corpo para ensino ou pesquisa científica.",
+        "exemplo_pratico": "Uma pessoa formaliza a vontade de doar o corpo a uma instituição de ensino para estudos científicos. Enquanto viva, pode revogar essa decisão. A instituição deverá verificar os procedimentos legais, éticos e administrativos aplicáveis antes de receber o corpo.",
+        "atencao": "Para retirada post mortem de órgãos e tecidos destinados a transplante ou outra finalidade terapêutica, o art. 4º da Lei 9.434/1997 exige autorização do cônjuge ou de parente maior de idade, observada a linha sucessória até o segundo grau, em documento assinado por duas testemunhas presentes à verificação da morte. Essa exigência especial não deve ser generalizada automaticamente para toda destinação científica. A Lei 8.501/1992 trata especificamente de cadáver não reclamado para ensino e pesquisa, situação diferente da disposição voluntária prevista neste artigo. A validade da vontade manifestada não dispensa os requisitos necessários à sua execução.",
+        "palavras_dificeis": [
+            {"termo": "Disposição gratuita", "explicacao": "destinação feita sem pagamento ou vantagem econômica"},
+            {"termo": "Finalidade altruística", "explicacao": "objetivo de beneficiar outras pessoas sem obter vantagem econômica"},
+            {"termo": "Revogação", "explicacao": "retirada de uma manifestação de vontade anteriormente feita"},
+        ],
+    },
+    "21": {
+        "o_que_diz": "A lei protege a vida privada contra violações e permite que o interessado peça ao juiz medidas necessárias para impedir a conduta ou fazê-la cessar.",
+        "o_que_significa": "A pessoa pode buscar proteção judicial contra intromissões ou exposições ilícitas de sua esfera privada. Conforme o caso, o juiz pode impedir uma conduta, determinar sua cessação ou adotar outra medida adequada. A proteção deve ser aplicada em harmonia com as liberdades de expressão e de informação e não torna automaticamente ilícita toda divulgação de dado relacionado à vida de alguém.",
+        "exemplo_pratico": "Alguém divulga, sem fundamento legítimo, dados médicos sigilosos de outra pessoa. O interessado pode pedir providências para interromper a exposição e, se houver abuso e dano, buscar a responsabilização cabível.",
+        "atencao": "O art. 21 não autoriza censura prévia de modo geral. O Supremo Tribunal Federal deu interpretação conforme à Constituição aos arts. 20 e 21 e afastou a exigência de autorização prévia para biografias literárias ou audiovisuais. Isso não elimina a proteção da privacidade, da honra e da imagem: abusos podem gerar direito de resposta, indenização e outras medidas juridicamente adequadas, conforme o caso concreto.",
+        "palavras_dificeis": [
+            {"termo": "Vida privada", "explicacao": "esfera pessoal protegida contra intromissões e exposições ilícitas"},
+            {"termo": "Censura prévia", "explicacao": "impedimento antecipado da manifestação ou publicação antes de eventual apuração de abuso"},
+            {"termo": "Responsabilização", "explicacao": "aplicação posterior das consequências jurídicas cabíveis por um abuso comprovado"},
+        ],
+    },
+}
 
 
 def render_drafts() -> dict:
     explanations = []
     for article, (rule, meaning, example, warning, term, definition) in ROWS.items():
         target_id = f"CC2002:ART.{article}"
+        content = {
+            "o_que_diz": rule,
+            "o_que_significa": meaning,
+            "exemplo_pratico": example,
+            "atencao": warning,
+            "palavras_dificeis": [{"termo": term, "explicacao": definition}],
+        }
+        content = CC05_OVERRIDES.get(article, content)
         explanations.append({
             "target_id": target_id,
             "role": "OVERVIEW",
             "semantic_autonomy": "AUTONOMOUS",
             "editorial_reason": "Visão geral autônoma do artigo; subdivisões vigentes são incorporadas ao alcance do texto-fonte e devem ser conferidas na revisão jurídica.",
-            "content": {
-                "o_que_diz": rule,
-                "o_que_significa": meaning,
-                "exemplo_pratico": example,
-                "atencao": warning,
-                "palavras_dificeis": [{"termo": term, "explicacao": definition}],
-            },
+            "content": content,
             "external_layer_notes": [],
             "review_status": "PENDING_HUMAN_REVIEW",
-            "editorial_version": (3 if article in AUDITED_VERSION_2 else 2) + (1 if article in CC04_VERSION_BUMPS else 0),
+            "editorial_version": (3 if article in AUDITED_VERSION_2 else 2) + (1 if article in CC04_VERSION_BUMPS else 0) + (1 if article in CC05_VERSION_BUMPS else 0),
         })
     return {
         "schema_version": 1,

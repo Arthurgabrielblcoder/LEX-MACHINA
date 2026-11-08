@@ -32,11 +32,13 @@ CORPUS = BATCH / "CC2002_CC02.entenda.jsonl"
 BASELINE_CORPUS = BATCH / "CC2002_CC02_BASELINE.entenda.jsonl"
 CC03_BASELINE_CORPUS = BATCH / "CC2002_CC03_BASELINE.entenda.jsonl"
 CC03B_BASELINE_CORPUS = BATCH / "CC2002_CC03B_BASELINE.entenda.jsonl"
+CC04_BASELINE_CORPUS = BATCH / "CC2002_CC04_BASELINE.entenda.jsonl"
 INDEX_DIR = BATCH / "index"
 EXPECTED_FULL_SHA256 = "ad5ba178613b6181e2d8a61919eda0c6223c68feb6e47bef4ea65bc45c13e6ae"
 EXPECTED_CC02_CORPUS_SHA256 = "86ef8d8f1843650e927b2fd2fd620dd92a7fe9508dac8934efbaae238beecd4d"
 EXPECTED_CC03_CORPUS_SHA256 = "f4f44ab5334f9adc5aa7c88015762028b2a5d1381b2cfd0e0d9959799191407e"
 EXPECTED_CC03B_CORPUS_SHA256 = "be75e9bdb93e9c28f76dd0577957d128471f159e8fe931e72276d7456dbbc1d2"
+EXPECTED_CC04_CORPUS_SHA256 = "1311c107504697a13a9a4b99d13af5b8c47d9e210edc2b446f761c1407b73bcf"
 EXPECTED_PRODUCTION_INDEX_SHA256 = {
     "ENTENDA_LOOKUP.IDX": "38074a6d752b2a3ebd4e7411ff25c43abc3c69ad117b3cf49a4f5b73aece3e82",
     "ENTENDA_PAYLOAD.DAT": "6caa56b1d5f047b12df087c39ab7998db579de2c445352caa7ad7219c9641638",
@@ -100,11 +102,20 @@ def build(out_dir: Path | None = None) -> dict:
         _write_json(DRAFTS, rendered_drafts)
     ctx = E.NormContext("CC2002")
     drafts = rendered_drafts
-    prior_corpus = CC03B_BASELINE_CORPUS if CC03B_BASELINE_CORPUS.is_file() else (CC03_BASELINE_CORPUS if CC03_BASELINE_CORPUS.is_file() else BASELINE_CORPUS)
+    prior_corpus = CC04_BASELINE_CORPUS if CC04_BASELINE_CORPUS.is_file() else (CC03B_BASELINE_CORPUS if CC03B_BASELINE_CORPUS.is_file() else (CC03_BASELINE_CORPUS if CC03_BASELINE_CORPUS.is_file() else BASELINE_CORPUS))
     existing = E.load_corpus(prior_corpus) if prior_corpus.is_file() else []
+    existing_ids = {r["explanation_id"] for r in existing}
     records = E.stamp(drafts, ctx, existing=existing)
     for rec in records:
-        if CC03B_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in {r["explanation_id"] for r in existing}:
+        if CC04_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
+            rec["prompt_version"] = "CC05-CONSOLIDATION-V1"
+            rec["authoring"] = {
+                "method": "TARGETED_LEGAL_RESOLUTION_WITH_OFFICIAL_SOURCES",
+                "mission": "CC-05",
+                "generated_on": "2026-11-07",
+                "human_approval_claimed": False,
+            }
+        elif CC03B_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
             rec["prompt_version"] = "CC04-DELEGATED-LEGAL-REVIEW-V1"
             rec["authoring"] = {
                 "method": "DELEGATED_AI_LEGAL_REVIEW_WITH_OFFICIAL_SOURCE",
@@ -158,9 +169,9 @@ def build(out_dir: Path | None = None) -> dict:
         transient_index.cleanup()
     if out_dir is None:
         audit_mode = any(r["editorial_version"] > 1 for r in active)
-        prefix = "CC04" if CC03B_BASELINE_CORPUS.is_file() else ("CC03B" if CC03_BASELINE_CORPUS.is_file() else ("CC03" if audit_mode else "CC02"))
+        prefix = "CC05" if CC04_BASELINE_CORPUS.is_file() else ("CC04" if CC03B_BASELINE_CORPUS.is_file() else ("CC03B" if CC03_BASELINE_CORPUS.is_file() else ("CC03" if audit_mode else "CC02")))
         _write_json(BATCH / f"{prefix}_MANIFEST.json", summary)
-        checkpoint_dir = BATCH / ("checkpoints_cc04" if prefix == "CC04" else ("checkpoints_cc03b" if prefix == "CC03B" else ("checkpoints_cc03" if audit_mode else "checkpoints")))
+        checkpoint_dir = BATCH / ("checkpoints_cc05" if prefix == "CC05" else ("checkpoints_cc04" if prefix == "CC04" else ("checkpoints_cc03b" if prefix == "CC03B" else ("checkpoints_cc03" if audit_mode else "checkpoints"))))
         for start, end in ((1, 25), (26, 50), (51, 75), (76, 100), (101, 114)):
             block = [r for r in active if start <= int(re.search(r"ART\.(\d+)", r["target_id"]).group(1)) <= end]
             encoded = json.dumps(block, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
