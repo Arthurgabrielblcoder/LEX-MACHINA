@@ -83,11 +83,11 @@ def build(out_dir: Path | None = None) -> dict:
     coverage = {
         "schema_version": 1,
         "scope": "CC2002 arts. 115 a 250",
-        "expected_current_explanations": 135,
+        "expected_current_explanations": 134,
         "produced_explanations": len(new_active),
-        "remaining_explanations": 135 - len(new_active),
+        "remaining_explanations": 134 - len(new_active),
         "inserted_current_articles": ["CC2002:ART.206-A"],
-        "fully_revoked_without_active_explanation": ["CC2002:ART.229", "CC2002:ART.230"],
+        "fully_revoked_without_active_explanation": ["CC2002:ART.194", "CC2002:ART.229", "CC2002:ART.230"],
         "special_anchor": {"CC2002:ART.227:PAR.UNICO": "caput revogado; parágrafo único vigente"},
         "completed_blocks": completed_blocks,
     }

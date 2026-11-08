@@ -62,6 +62,8 @@ def main() -> None:
         "CC2002:ART.62:PAR.UNICO:INC.X": "Vetado na Lei 13.151/2015",
         "CC2002:ART.69-A": "Artigo vetado na Lei 12.715/2012",
         "CC2002:ART.69-A:CAPUT": "Artigo vetado na Lei 12.715/2012",
+        "CC2002:ART.194": "Revogado pela Lei 11.280/2006",
+        "CC2002:ART.194:CAPUT": "Revogado pela Lei 11.280/2006",
         "CC2002:ART.206:PAR.1:INC.II": "Revogado pela Lei 15.040/2024, em vigor desde 10/12/2025",
         "CC2002:ART.227": "Caput revogado pela Lei 13.105/2015; parágrafo único permanece vigente",
         "CC2002:ART.227:CAPUT": "Caput revogado pela Lei 13.105/2015",
