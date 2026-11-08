@@ -1,0 +1,605 @@
+{
+  "schema_version": 1,
+  "mission": "CC-04",
+  "block": "02_039_076",
+  "review_method": "INDEPENDENT_DELEGATED_AI_LEGAL_REVIEW",
+  "reviewed_on": "2026-11-07",
+  "scope": {
+    "numeric_range": [
+      39,
+      76
+    ],
+    "included_alphanumeric": [
+      "48-A",
+      "49-A"
+    ],
+    "excluded_external_human_approval": [
+      "50"
+    ],
+    "expected_records": 39,
+    "reviewed_records": 39
+  },
+  "sources": [
+    {
+      "id": "CC_OFICIAL_CAMARA",
+      "type": "official_consolidated_legislation",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+      "accessed_on": "2026-11-07"
+    },
+    {
+      "id": "CF_ART_37_6_CAMARA",
+      "type": "official_constitution",
+      "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html",
+      "accessed_on": "2026-11-07"
+    },
+    {
+      "id": "STJ_SUMULA_227",
+      "type": "official_binding_summary_database",
+      "url": "https://processo.stj.jus.br/SCON/sumstj/doc.jsp?b=SUMU&i=1&l=10&operador=E&ordenacao=-%40NUM&p=false&sumula=227.num.",
+      "accessed_on": "2026-11-07"
+    },
+    {
+      "id": "STJ_ART_57_PROCEDIMENTO",
+      "type": "official_case_full_text",
+      "url": "https://www.stj.jus.br/websecstj/cgi/revista/REJ.cgi/ITA?CodOrgaoJgdr=&SeqCgrmaSessao=&dt=20141119&formato=PDF&nreg=201201728694&salvar=false&seq=1363916&tipo=0",
+      "accessed_on": "2026-11-07"
+    }
+  ],
+  "classification_counts": {
+    "A": 30,
+    "B": 9,
+    "C": 0,
+    "D": 0
+  },
+  "records": [
+    {
+      "target_id": "CC2002:ART.39",
+      "classification": "A",
+      "evidence": "Caput e parágrafo único cobertos: retorno em dez anos, restituição limitada e destino público residual.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; a identificação exata do ente público permanece no texto legal.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.40",
+      "classification": "A",
+      "evidence": "A divisão entre direito público interno/externo e direito privado foi preservada em linguagem didática.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.41",
+      "classification": "A",
+      "evidence": "Enumeração de entes públicos internos, autarquias e demais entidades legais está corretamente sintetizada, com ressalva à estrutura privada.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; classificação de entidades híbridas exige lei instituidora.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.42",
+      "classification": "A",
+      "evidence": "Estados estrangeiros e sujeitos regidos pelo direito internacional público foram corretamente identificados.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; imunidades dependem de direito internacional, como advertido.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.43",
+      "classification": "A",
+      "evidence": "Responsabilidade do ente por ato do agente e regresso condicionado a dolo ou culpa estão corretos e compatíveis com a Constituição, art. 37, § 6º.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; nexo, excludentes e prestadores privados de serviço público dependem do regime constitucional, já ressalvado.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA",
+        "CF_ART_37_6_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.44",
+      "classification": "A",
+      "evidence": "Seis categorias vigentes, liberdade religiosa, lei partidária e § 2º alterado em 2024 foram cobertos; inciso VI revogado não foi tratado como vigente.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; enquadramento de empreendimento de economia solidária depende da legislação especial.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.45",
+      "classification": "B",
+      "evidence": "Registro e autorização estão corretos, mas falta o prazo decadencial expresso de três anos contado da publicação da inscrição.",
+      "proposed_correction": {
+        "section": "o_que_diz/atencao",
+        "text": "A existência legal começa com a inscrição do ato constitutivo, precedida de autorização quando exigida; o direito de anular a constituição por defeito decai em três anos contados da publicação da inscrição."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Omissão de consequência temporal essencial.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.46",
+      "classification": "B",
+      "evidence": "A síntese é correta, mas chama genericamente de patrimônio o fundo social eventual e omite fundadores/diretores e destino patrimonial na extinção.",
+      "proposed_correction": {
+        "section": "o_que_diz",
+        "text": "O registro declara denominação, fins, sede, duração, fundo social quando houver, fundadores e diretores, administração e representação, reforma administrativa, responsabilidade dos membros, extinção e destino do patrimônio."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Resumo pode fazer parecer que o registro exige declaração genérica de todo o patrimônio.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.47",
+      "classification": "A",
+      "evidence": "Vinculação da pessoa jurídica foi corretamente condicionada aos poderes do administrador definidos no ato constitutivo.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; efeitos do excesso de poderes dependem de outras normas.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.48",
+      "classification": "B",
+      "evidence": "Maioria e possibilidade de regra constitutiva diversa estão presentes, porém faltam prazo de três anos e causas legais de anulação.",
+      "proposed_correction": {
+        "section": "o_que_diz/atencao",
+        "text": "Na administração coletiva, decide a maioria dos votos dos presentes, salvo regra constitutiva diversa. Decai em três anos a anulação por violação da lei ou estatuto, erro, dolo, simulação ou fraude."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Omissão de prazo decadencial e de erro, dolo, simulação, fraude ou violação legal/estatutária.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.48-A",
+      "classification": "A",
+      "evidence": "Assembleia eletrônica, participação e manifestação foram corretamente explicadas, com ressalva à legislação especial e atos constitutivos.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; requisitos tecnológicos concretos dependem do regime da entidade.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.49",
+      "classification": "A",
+      "evidence": "Falta da administração, requerimento de interessado e nomeação judicial provisória estão corretamente apresentados.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.49-A",
+      "classification": "A",
+      "evidence": "Separação subjetiva e patrimonial, alocação de riscos e limite por fraude ou abuso estão coerentes com caput, parágrafo único e art. 50.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; exceções de responsabilização pertencem a normas específicas, corretamente ressalvadas.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.51",
+      "classification": "A",
+      "evidence": "Dissolução, subsistência para liquidação, pagamento de obrigações e cancelamento registral foram distinguidos corretamente.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; regime societário especial pode complementar.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.52",
+      "classification": "A",
+      "evidence": "A aplicação apenas compatível dos direitos da personalidade está corretamente qualificada; nome e reputação são exemplos adequados. A Súmula 227 confirma dano moral da pessoa jurídica.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; alcance é direito por direito e não equivale à personalidade humana, como advertido.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA",
+        "STJ_SUMULA_227"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.53",
+      "classification": "A",
+      "evidence": "União de pessoas, fins não econômicos e ausência de obrigações recíprocas foram cobertos; receita instrumental foi corretamente distinguida de distribuição de resultado.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.54",
+      "classification": "A",
+      "evidence": "As sete categorias obrigatórias do estatuto e a consequência de nulidade estão substancialmente cobertas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; redação final pode explicitar denominação e sede, mas não há erro material.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.55",
+      "classification": "A",
+      "evidence": "Igualdade de direitos e categorias estatutárias com vantagens especiais foram preservadas sem criar privilégio automático.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; validade concreta da distinção depende do estatuto e do ordenamento.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.56",
+      "classification": "A",
+      "evidence": "Intransmissibilidade, exceção estatutária e separação entre quota patrimonial e qualidade de associado foram corretamente explicadas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.57",
+      "classification": "A",
+      "evidence": "Justa causa, procedimento estatutário, defesa e recurso estão integralmente cobertos; precedente oficial confirma a leitura procedural.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; justa causa e regularidade probatória dependem do caso concreto.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA",
+        "STJ_ART_57_PROCEDIMENTO"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.58",
+      "classification": "A",
+      "evidence": "Proteção do direito ou função legitimamente conferidos e exceções legais/estatutárias foram corretamente apresentadas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.59",
+      "classification": "A",
+      "evidence": "Competência privativa, matérias, convocação especial e quórum estatutário foram cobertos sem importar quórum revogado.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; critérios de eleição também integram o estatuto, sem afetar a correção do resumo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.60",
+      "classification": "A",
+      "evidence": "Forma estatutária e iniciativa de um quinto dos associados foram corretamente explicadas e exemplificadas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.61",
+      "classification": "B",
+      "evidence": "Destinação e restituição estão corretas, mas a explicação omite atualização das contribuições e destino subsidiário à Fazenda quando não houver instituição adequada.",
+      "proposed_correction": {
+        "section": "o_que_significa/atencao",
+        "text": "Antes da destinação, estatuto ou deliberação pode restituir aos associados o valor atualizado das contribuições patrimoniais. Sem instituição idônea no local, o saldo vai à Fazenda do Estado, Distrito Federal ou União, conforme o caso."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Omissão de duas consequências expressas dos parágrafos.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.62",
+      "classification": "A",
+      "evidence": "Forma constitutiva, bens livres, nove finalidades vigentes e inciso X vetado estão integralmente cobertos.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; suficiência patrimonial e enquadramento de finalidade exigem análise do ato concreto.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.63",
+      "classification": "A",
+      "evidence": "Insuficiência, incorporação a fundação de fim igual ou semelhante e ressalva da vontade do instituidor estão corretas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.64",
+      "classification": "B",
+      "evidence": "Transferência e mandado judicial estão identificados, mas 'pode ocorrer' enfraquece a consequência legal obrigatória: os bens serão registrados em nome da fundação.",
+      "proposed_correction": {
+        "section": "o_que_diz",
+        "text": "Na fundação constituída entre vivos, o instituidor deve transferir propriedade ou outro direito real sobre os bens dotados; se não o fizer, eles serão registrados em nome da fundação por mandado judicial."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Modalização indevida de consequência vinculada.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.65",
+      "classification": "A",
+      "evidence": "Formulação do estatuto, aprovação, recurso judicial, prazo do instituidor e prazo subsidiário de 180 dias estão cobertos.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.66",
+      "classification": "A",
+      "evidence": "Velamento estadual, Distrito Federal/Territórios e atuação em cada Estado de atividade foram corretamente distinguidos.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Médio; alcance territorial de atividade pode exigir prova administrativa.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.67",
+      "classification": "A",
+      "evidence": "Quórum de dois terços, preservação da finalidade, prazo de 45 dias e suprimento judicial estão integralmente cobertos.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.68",
+      "classification": "B",
+      "evidence": "Prazo e proteção da minoria estão corretos, mas são os administradores que requerem ao Ministério Público que dê ciência; não cientificam diretamente a minoria.",
+      "proposed_correction": {
+        "section": "o_que_diz",
+        "text": "Sem unanimidade, os administradores, ao submeter a reforma ao Ministério Público, requerem que o órgão dê ciência à minoria vencida, que pode impugná-la em dez dias."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Atribuição incorreta do ato de comunicação.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.69",
+      "classification": "B",
+      "evidence": "Causas e destinação semelhante estão corretas, mas faltam legitimidade de Ministério Público ou interessado e designação judicial da fundação destinatária.",
+      "proposed_correction": {
+        "section": "o_que_diz/o_que_significa",
+        "text": "Ministério Público ou qualquer interessado pode promover a extinção; salvo regra contrária do ato ou estatuto, o patrimônio vai a fundação de fim igual ou semelhante designada pelo juiz."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Omissão do procedimento e de quem pode promover a extinção.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.70",
+      "classification": "A",
+      "evidence": "Residência e intenção estável foram corretamente combinadas para definir domicílio.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; intenção é questão probatória.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.71",
+      "classification": "A",
+      "evidence": "Pluralidade de residências alternadas e possibilidade de qualquer delas ser domicílio estão corretas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; exige habitualidade alternada.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.72",
+      "classification": "A",
+      "evidence": "Domicílio profissional e pluralidade por relações de cada estabelecimento foram corretamente explicados.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; vínculo deve corresponder à atividade local.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.73",
+      "classification": "A",
+      "evidence": "Local de encontro como domicílio subsidiário para quem não tem residência habitual está correto.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.74",
+      "classification": "A",
+      "evidence": "Transferência, intenção manifesta e prova por declarações ou circunstâncias foram corretamente cobertas.",
+      "proposed_correction": null,
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Baixo; ânimo definitivo é matéria de prova.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.75",
+      "classification": "B",
+      "evidence": "A síntese mistura eleição estatutária de domicílio com a regra de administração estrangeira; esta fixa o estabelecimento brasileiro ligado à obrigação, não local livremente escolhido pela entidade estrangeira.",
+      "proposed_correction": {
+        "section": "o_que_diz/o_que_significa",
+        "text": "Para União, Estados, Territórios e Municípios, valem os locais legais; demais entidades usam administração ou domicílio estatutário. Cada estabelecimento vale para seus atos e, havendo direção estrangeira, vale a agência brasileira ligada à obrigação."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Confusão entre inciso IV e § 2º.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.76",
+      "classification": "B",
+      "evidence": "As categorias estão corretas, mas 'custódia' pode incluir preso provisório; a lei fixa, para o preso, o lugar onde cumpre a sentença e detalha critérios próprios para cada categoria.",
+      "proposed_correction": {
+        "section": "o_que_significa/atencao",
+        "text": "O incapaz segue representante ou assistente; servidor, função permanente; militar, local de serviço ou comando; marítimo, matrícula do navio; preso, lugar de cumprimento da sentença. Prisão provisória não está expressa no artigo."
+      },
+      "reasoning": "Classificação resultante do confronto individual entre conteúdo ativo, texto integral do artigo e fontes oficiais indicadas.",
+      "remaining_risk": "Generalização além da hipótese textual do preso condenado.",
+      "source_ids": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    }
+  ],
+  "priority_second_review": [
+    {
+      "target_id": "CC2002:ART.43",
+      "original_risk": "Responsabilidade estatal e regime constitucional.",
+      "result": "A",
+      "basis": [
+        "CC_OFICIAL_CAMARA",
+        "CF_ART_37_6_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.44",
+      "original_risk": "Alteração legislativa recente e tipos de pessoa jurídica.",
+      "result": "A",
+      "basis": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.49-A",
+      "original_risk": "Autonomia patrimonial e exceções.",
+      "result": "A",
+      "basis": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.52",
+      "original_risk": "Compatibilidade dos direitos da personalidade.",
+      "result": "A",
+      "basis": [
+        "CC_OFICIAL_CAMARA",
+        "STJ_SUMULA_227"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.57",
+      "original_risk": "Justa causa, defesa e recurso.",
+      "result": "A",
+      "basis": [
+        "CC_OFICIAL_CAMARA",
+        "STJ_ART_57_PROCEDIMENTO"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.59",
+      "original_risk": "Competência privativa, convocação e quórum.",
+      "result": "A",
+      "basis": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    },
+    {
+      "target_id": "CC2002:ART.76",
+      "original_risk": "Categorias de domicílio necessário.",
+      "result": "B",
+      "basis": [
+        "CC_OFICIAL_CAMARA"
+      ]
+    }
+  ],
+  "proposed_corrections": [
+    "45",
+    "46",
+    "48",
+    "61",
+    "64",
+    "68",
+    "69",
+    "75",
+    "76"
+  ],
+  "delegated_release_indication": {
+    "eligible_after_consolidation": 39,
+    "class_a_now": 30,
+    "class_b_after_proposed_correction_and_retest": 9,
+    "human_approval_claimed": false,
+    "formal_entenda_status_changed": false
+  },
+  "count": 39,
+  "counts": {
+    "A": 30,
+    "B": 9,
+    "C": 0,
+    "D": 0
+  },
+  "accessed_on": "2026-11-07",
+  "exclusions": [
+    "50"
+  ]
+}

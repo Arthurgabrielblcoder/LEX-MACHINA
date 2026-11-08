@@ -31,10 +31,12 @@ DRAFTS = BATCH / "CC02_DRAFTS.json"
 CORPUS = BATCH / "CC2002_CC02.entenda.jsonl"
 BASELINE_CORPUS = BATCH / "CC2002_CC02_BASELINE.entenda.jsonl"
 CC03_BASELINE_CORPUS = BATCH / "CC2002_CC03_BASELINE.entenda.jsonl"
+CC03B_BASELINE_CORPUS = BATCH / "CC2002_CC03B_BASELINE.entenda.jsonl"
 INDEX_DIR = BATCH / "index"
 EXPECTED_FULL_SHA256 = "ad5ba178613b6181e2d8a61919eda0c6223c68feb6e47bef4ea65bc45c13e6ae"
 EXPECTED_CC02_CORPUS_SHA256 = "86ef8d8f1843650e927b2fd2fd620dd92a7fe9508dac8934efbaae238beecd4d"
 EXPECTED_CC03_CORPUS_SHA256 = "f4f44ab5334f9adc5aa7c88015762028b2a5d1381b2cfd0e0d9959799191407e"
+EXPECTED_CC03B_CORPUS_SHA256 = "be75e9bdb93e9c28f76dd0577957d128471f159e8fe931e72276d7456dbbc1d2"
 
 
 def _sha(data: bytes) -> str:
@@ -93,11 +95,19 @@ def build(out_dir: Path | None = None) -> dict:
         _write_json(DRAFTS, rendered_drafts)
     ctx = E.NormContext("CC2002")
     drafts = rendered_drafts
-    prior_corpus = CC03_BASELINE_CORPUS if CC03_BASELINE_CORPUS.is_file() else BASELINE_CORPUS
+    prior_corpus = CC03B_BASELINE_CORPUS if CC03B_BASELINE_CORPUS.is_file() else (CC03_BASELINE_CORPUS if CC03_BASELINE_CORPUS.is_file() else BASELINE_CORPUS)
     existing = E.load_corpus(prior_corpus) if prior_corpus.is_file() else []
     records = E.stamp(drafts, ctx, existing=existing)
     for rec in records:
-        if CC03_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE":
+        if CC03B_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in {r["explanation_id"] for r in existing}:
+            rec["prompt_version"] = "CC04-DELEGATED-LEGAL-REVIEW-V1"
+            rec["authoring"] = {
+                "method": "DELEGATED_AI_LEGAL_REVIEW_WITH_OFFICIAL_SOURCE",
+                "mission": "CC-04",
+                "generated_on": "2026-11-07",
+                "human_approval_claimed": False,
+            }
+        elif CC03_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE":
             rec["prompt_version"] = "CC03B-PEDAGOGICAL-REFINEMENT-V1"
             rec["authoring"] = {
                 "method": "ARTICLE_SPECIFIC_PEDAGOGICAL_REWRITE_AFTER_LEGAL_AUDIT",
@@ -131,9 +141,9 @@ def build(out_dir: Path | None = None) -> dict:
     }
     if out_dir is None:
         audit_mode = any(r["editorial_version"] > 1 for r in active)
-        prefix = "CC03B" if CC03_BASELINE_CORPUS.is_file() else ("CC03" if audit_mode else "CC02")
+        prefix = "CC04" if CC03B_BASELINE_CORPUS.is_file() else ("CC03B" if CC03_BASELINE_CORPUS.is_file() else ("CC03" if audit_mode else "CC02"))
         _write_json(BATCH / f"{prefix}_MANIFEST.json", summary)
-        checkpoint_dir = BATCH / ("checkpoints_cc03b" if prefix == "CC03B" else ("checkpoints_cc03" if audit_mode else "checkpoints"))
+        checkpoint_dir = BATCH / ("checkpoints_cc04" if prefix == "CC04" else ("checkpoints_cc03b" if prefix == "CC03B" else ("checkpoints_cc03" if audit_mode else "checkpoints")))
         for start, end in ((1, 25), (26, 50), (51, 75), (76, 100), (101, 114)):
             block = [r for r in active if start <= int(re.search(r"ART\.(\d+)", r["target_id"]).group(1)) <= end]
             encoded = json.dumps(block, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
@@ -179,6 +189,7 @@ def main() -> None:
     ap.add_argument("--bootstrap-only", action="store_true")
     ap.add_argument("--snapshot-cc02-baseline", action="store_true")
     ap.add_argument("--snapshot-cc03-baseline", action="store_true")
+    ap.add_argument("--snapshot-cc03b-baseline", action="store_true")
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
     if args.bootstrap_source:
@@ -196,6 +207,13 @@ def main() -> None:
             raise SystemExit("CC03_BASELINE_CORPUS_HASH_MISMATCH")
         CC03_BASELINE_CORPUS.write_bytes(raw)
         print(json.dumps({"baseline_corpus": str(CC03_BASELINE_CORPUS.relative_to(ROOT)), "sha256": _sha(raw)}, indent=2))
+        return
+    if args.snapshot_cc03b_baseline:
+        raw = CORPUS.read_bytes()
+        if _sha(raw) != EXPECTED_CC03B_CORPUS_SHA256:
+            raise SystemExit("CC03B_BASELINE_CORPUS_HASH_MISMATCH")
+        CC03B_BASELINE_CORPUS.write_bytes(raw)
+        print(json.dumps({"baseline_corpus": str(CC03B_BASELINE_CORPUS.relative_to(ROOT)), "sha256": _sha(raw)}, indent=2))
         return
     if args.bootstrap_only:
         print(json.dumps(json.loads(SOURCE_META.read_text(encoding="utf-8")), ensure_ascii=False, indent=2))

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "mission": "CC-04",
+  "block": "03_077_114",
+  "count": 37,
+  "method": "INDEPENDENT_DELEGATED_AI_LEGAL_REVIEW",
+  "reviewer_scope": "CC2002 arts. 77 a 114, excluído o art. 113",
+  "accessed_on": "2026-11-07",
+  "sources": [
+    {
+      "type": "OFFICIAL_CONSOLIDATED_LEGISLATION",
+      "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html"
+    },
+    {
+      "type": "PINNED_OPERATIONAL_SOURCE",
+      "path": "ENTENDA_ENGINE/derived/production_cc_001_114/SOURCE_CC2002_ARTS_001_114.txt",
+      "sha256": "0c927ce1d9817c5db5b3a1c563d8320eb334431495afeb3745a0fc8bc399e385"
+    }
+  ],
+  "exclusions": [
+    {
+      "target_id": "CC2002:ART.113",
+      "reason": "Aprovação humana externa; texto final ainda não incorporado ao repositório. Não examinado nem modificado."
+    }
+  ],
+  "counts": {
+    "reviewed": 37,
+    "A_DELEGATED_SATISFACTORY": 32,
+    "B_DELEGATED_SATISFACTORY_AFTER_CORRECTION": 5,
+    "C_PENDING": 0,
+    "D_BLOCKED": 0,
+    "proposed_corrections": 5
+  },
+  "priority_second_review": [
+    {"target_id": "CC2002:ART.104", "original_risk": "Validade não esgota existência, eficácia nem defeitos do negócio jurídico.", "result": "A", "conclusion": "O texto cobre os três requisitos e alerta corretamente para vícios e regras especiais."},
+    {"target_id": "CC2002:ART.105", "original_risk": "Exceção de indivisibilidade perante cointeressados capazes.", "result": "B", "conclusion": "A exceção aparece, mas sem indicar claramente que ela permite extensão aos cointeressados capazes; correção proposta."},
+    {"target_id": "CC2002:ART.110", "original_risk": "Conhecimento da reserva mental pelo destinatário.", "result": "B", "conclusion": "A regra está correta, mas o exemplo confunde reserva mental com intenção de inadimplir; correção proposta."},
+    {"target_id": "CC2002:ART.111", "original_risk": "Silêncio como anuência é excepcional e contextual.", "result": "A", "conclusion": "O texto rejeita regra geral, exige circunstâncias ou usos e ressalva declaração expressa."},
+    {"target_id": "CC2002:ART.112", "original_risk": "Intenção consubstanciada não equivale a vontade secreta.", "result": "A", "conclusion": "A explicação usa intenção objetivamente manifestada e exclui intenção secreta não comprovada."},
+    {"target_id": "CC2002:ART.114", "original_risk": "Interpretação estrita e compatibilidade com boa-fé e contexto.", "result": "A", "conclusion": "A redação impede ampliação indevida sem eliminar validade, contexto ou boa-fé."}
+  ],
+  "records": [
+    {"target_id":"CC2002:ART.77","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Reproduz citação no exterior, alegação de extraterritorialidade, ausência de domicílio indicado e os dois locais possíveis para demanda.","reasoning":"Art. 77, caput, Código Civil consolidado.","remaining_risk":"Imunidades diplomáticas dependem de normas internacionais; ressalva já presente.","proposed_correction":null},
+    {"target_id":"CC2002:ART.78","classification":"A","evidence_type":"TEXTO_EXPRESSO_E_INTERPRETACAO_SISTEMATICA","evidence":"Explica eleição escrita de domicílio para direitos e obrigações contratuais sem confundi-la com domicílio geral.","reasoning":"Art. 78, caput; limites de competência decorrem do sistema processual.","remaining_risk":"Controle da cláusula varia conforme regime contratual.","proposed_correction":null},
+    {"target_id":"CC2002:ART.79","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Traduz solo e incorporações naturais ou artificiais e usa construção como exemplo coerente.","reasoning":"Art. 79, caput.","remaining_risk":"Máquinas e materiais podem exigir artigos seguintes.","proposed_correction":null},
+    {"target_id":"CC2002:ART.80","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Cobre direitos reais imobiliários, ações correspondentes e sucessão aberta como imóveis por determinação legal.","reasoning":"Art. 80, incisos I e II.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.81","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Distingue remoção integral da edificação e separação provisória de materiais para reemprego.","reasoning":"Art. 81, incisos I e II.","remaining_risk":"Perda de unidade ou destinação diferente altera a conclusão, como advertido.","proposed_correction":null},
+    {"target_id":"CC2002:ART.82","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Abrange movimento próprio ou remoção sem mudança de substância ou destinação e exemplifica semovente.","reasoning":"Art. 82, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.83","classification":"B","evidence_type":"OMISSAO_PARCIAL_COM_CORRECAO_VERIFICAVEL","evidence":"A síntese enumera energias e direitos, mas não explicita as ações correspondentes previstas nos incisos II e III.","reasoning":"Art. 83, incisos I a III.","remaining_risk":"Omissão pode induzir leitura incompleta do alcance da equiparação legal.","proposed_correction":{"section":"o_que_diz","text":"Energias com valor econômico, direitos reais sobre móveis, direitos pessoais patrimoniais e as ações correspondentes são móveis por determinação legal.","reason":"Incluir elemento expresso dos incisos II e III."}},
+    {"target_id":"CC2002:ART.84","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Distingue materiais ainda não empregados e materiais provenientes de demolição, com remissão pertinente ao art. 81.","reasoning":"Arts. 84 e 81, II.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.85","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Explica substituição por equivalente de mesma espécie, qualidade e quantidade sem copiar a lei.","reasoning":"Art. 85, caput.","remaining_risk":"Individualização convencional é ressalva sistemática adequada.","proposed_correction":null},
+    {"target_id":"CC2002:ART.86","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Cobre consumo físico e bens destinados à alienação, com exemplo de estoque comercial.","reasoning":"Art. 86, caput.","remaining_risk":"Classificação depende da função concreta, corretamente indicado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.87","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Inclui preservação da substância, do valor relevante e do uso na divisibilidade.","reasoning":"Art. 87, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.88","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Distingue indivisibilidade legal e convencional de bem naturalmente divisível.","reasoning":"Art. 88, caput.","remaining_risk":"Limites perante terceiros são ressalva sistemática válida.","proposed_correction":null},
+    {"target_id":"CC2002:ART.89","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Explica individualidade jurídica do bem ainda que reunido em conjunto.","reasoning":"Art. 89, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.90","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Cobre mesma titularidade, destinação unitária e autonomia negocial dos componentes.","reasoning":"Art. 90, caput e parágrafo único.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.91","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Define complexo de relações jurídicas economicamente apreciáveis e diferencia de conjunto físico.","reasoning":"Art. 91, caput.","remaining_risk":"Exemplo de herança é sistematicamente adequado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.92","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Preserva distinção entre existência autônoma do principal e dependência do acessório.","reasoning":"Art. 92, caput.","remaining_risk":"Exemplo é deliberadamente cauteloso; aplicações concretas possuem exceções.","proposed_correction":null},
+    {"target_id":"CC2002:ART.93","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Cobre autonomia da pertença, ausência de integração e destinação duradoura ao serviço de outro bem.","reasoning":"Art. 93, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.94","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Apresenta regra de não abrangência e as três fontes de exceção: lei, vontade e circunstâncias.","reasoning":"Art. 94, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.95","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Explica negociação de frutos e produtos antes da separação, com exemplo de safra ligada à plantação.","reasoning":"Art. 95, caput.","remaining_risk":"Riscos de coisa futura e limites especiais pertencem ao negócio concreto.","proposed_correction":null},
+    {"target_id":"CC2002:ART.96","classification":"B","evidence_type":"GENERALIZACAO_IMPRECISA_COM_CORRECAO_VERIFICAVEL","evidence":"A expressão 'conforme luxo' não traduz adequadamente benfeitoria voluptuária; custo elevado não é critério decisivo. A seção também pode definir melhor as três classes.","reasoning":"Art. 96, caput e §§ 1º a 3º.","remaining_risk":"Confundir luxo ou preço com deleite e recreio pode classificar incorretamente a obra.","proposed_correction":{"sections":{"o_que_diz":"Benfeitorias podem ser voluptuárias, úteis ou necessárias: as primeiras servem ao deleite ou recreio; as úteis aumentam ou facilitam o uso; as necessárias conservam o bem ou evitam deterioração.","atencao":"Valor elevado não torna a obra voluptuária por si só; importa a finalidade concreta da intervenção."},"reason":"Restaurar os critérios expressos dos três parágrafos."}},
+    {"target_id":"CC2002:ART.97","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Exclui corretamente melhorias sem intervenção do proprietário, possuidor ou detentor.","reasoning":"Art. 97, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.98","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Usa titularidade por pessoa jurídica de direito público interno como critério e classifica os demais como particulares.","reasoning":"Art. 98, caput.","remaining_risk":"Entidades estatais de direito privado exigem leitura do art. 99, parágrafo único, ressalvada no texto.","proposed_correction":null},
+    {"target_id":"CC2002:ART.99","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Cobre as três classes, suas destinações e a regra do parágrafo único para pessoa pública com estrutura privada.","reasoning":"Art. 99, incisos I a III e parágrafo único.","remaining_risk":"Afetação e desafetação dependem do direito público, adequadamente ressalvado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.100","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO_E_SISTEMATICA","evidence":"Explica inalienabilidade enquanto mantida qualificação de uso comum ou especial e relaciona-a à afetação.","reasoning":"Art. 100, caput.","remaining_risk":"Procedimento de desafetação depende da legislação aplicável.","proposed_correction":null},
+    {"target_id":"CC2002:ART.101","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO_E_SISTEMATICA","evidence":"Distingue alienabilidade dominical de venda livre e remete corretamente às exigências de direito público.","reasoning":"Art. 101, caput; legislação administrativa aplicável.","remaining_risk":"Requisitos concretos variam por ente e operação.","proposed_correction":null},
+    {"target_id":"CC2002:ART.102","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Apresenta proibição absoluta de usucapião de bem público e não a confunde com regularização por outro título.","reasoning":"Art. 102, caput.","remaining_risk":"É indispensável confirmar a natureza pública do bem, como alertado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.103","classification":"B","evidence_type":"EXEMPLO_JURIDICAMENTE_AMBIGUO_COM_CORRECAO_VERIFICAVEL","evidence":"A regra está correta, mas 'instalação pública' pode ser bem de uso especial, enquanto o artigo trata do uso comum dos bens públicos.","reasoning":"Art. 103, caput.","remaining_risk":"O exemplo pode misturar categoria do art. 99, II, com uso comum.","proposed_correction":{"section":"exemplo_pratico","text":"Lei autoriza cobrança de pedágio pelo uso de determinada rodovia pública, sem retirar seu caráter de bem de uso comum.","reason":"Usar exemplo inequivocamente ligado a bem de uso comum."}},
+    {"target_id":"CC2002:ART.104","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Enumera capacidade do agente, objeto lícito, possível e determinado ou determinável e forma admitida.","reasoning":"Art. 104, incisos I a III.","remaining_risk":"Existência, eficácia e defeitos são temas distintos, corretamente ressalvados.","proposed_correction":null},
+    {"target_id":"CC2002:ART.105","classification":"B","evidence_type":"EXCECAO_INSUFICIENTEMENTE_EXPLICADA","evidence":"A pessoalidade da proteção está correta, mas o efeito da indivisibilidade sobre cointeressados capazes não fica explícito.","reasoning":"Art. 105, caput.","remaining_risk":"Leitor pode não compreender quem se beneficia da exceção.","proposed_correction":{"section":"o_que_significa","text":"A proteção pertence ao relativamente incapaz e, em regra, não beneficia cointeressados capazes. Ela pode alcançá-los quando o objeto do direito ou da obrigação comum for indivisível.","reason":"Explicitar sujeitos e efeito da exceção final."}},
+    {"target_id":"CC2002:ART.106","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Distingue impossibilidade relativa e obstáculo que cessa antes da condição, sem estender a preservação à impossibilidade absoluta definitiva.","reasoning":"Art. 106, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.107","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Explica liberdade de forma e exceção de solenidade legal, distinguindo validade de prova.","reasoning":"Art. 107, caput.","remaining_risk":"Nenhum relevante identificado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.108","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Cobre exceção legal, patamar superior a trinta salários mínimos e constituição, transferência, modificação ou renúncia de direitos reais imobiliários.","reasoning":"Art. 108, caput.","remaining_risk":"Leis especiais podem excepcionar a escritura, adequadamente indicado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.109","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO","evidence":"Explica que a forma pública convencionada como requisito torna-se substância do ato.","reasoning":"Art. 109, caput.","remaining_risk":"É necessário distinguir solenidade constitutiva de promessa probatória, como alertado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.110","classification":"B","evidence_type":"EXEMPLO_CONFUNDE_INSTITUTOS","evidence":"A regra e a ressalva de conhecimento estão corretas, mas querer não cumprir depois não equivale necessariamente a declarar algo que secretamente não se quer.","reasoning":"Art. 110, caput.","remaining_risk":"Confusão entre reserva mental na formação e intenção de inadimplemento na execução.","proposed_correction":{"section":"exemplo_pratico","text":"Pessoa declara vender um bem, mas secretamente não quer produzir a venda; se o comprador desconhece a reserva, a manifestação subsiste.","reason":"Ilustrar divergência entre vontade interna e declaração, não simples propósito de descumprir."}},
+    {"target_id":"CC2002:ART.111","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO_E_QUALIFICACAO_CORRETA","evidence":"Exige circunstâncias ou usos e desnecessidade de declaração expressa, afastando corretamente a máxima geral de que silêncio sempre consente.","reasoning":"Art. 111, caput.","remaining_risk":"Aplicação permanece contextual; isso está claramente indicado.","proposed_correction":null},
+    {"target_id":"CC2002:ART.112","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO_E_INTERPRETACAO_SISTEMATICA","evidence":"Dá primazia à intenção consubstanciada na declaração, não à vontade interna secreta, e usa contexto objetivo.","reasoning":"Art. 112, caput, em relação sistemática com arts. 110 e 113.","remaining_risk":"Nenhum relevante após a qualificação presente.","proposed_correction":null},
+    {"target_id":"CC2002:ART.114","classification":"A","evidence_type":"TEXTO_LEGAL_EXPRESSO_E_QUALIFICACAO_CORRETA","evidence":"Explica interpretação estrita de negócio benéfico e renúncia sem ampliar gratuidade ou abandono além da manifestação.","reasoning":"Art. 114, caput.","remaining_risk":"Boa-fé, validade e contexto continuam aplicáveis; ressalva já incorporada.","proposed_correction":null}
+  ],
+  "corrections_proposed": [
+    {"target_id":"CC2002:ART.83","issue":"Omissão das ações correspondentes nos incisos II e III.","confidence":"ALTA"},
+    {"target_id":"CC2002:ART.96","issue":"Critério de benfeitoria voluptuária reduzido indevidamente a luxo.","confidence":"ALTA"},
+    {"target_id":"CC2002:ART.103","issue":"Exemplo pode retratar bem de uso especial, não uso comum.","confidence":"ALTA"},
+    {"target_id":"CC2002:ART.105","issue":"Exceção de indivisibilidade não explicita efeitos para cointeressados capazes.","confidence":"ALTA"},
+    {"target_id":"CC2002:ART.110","issue":"Exemplo confunde reserva mental com intenção de inadimplemento.","confidence":"ALTA"}
+  ],
+  "delegated_release_indication": {
+    "eligible_after_proposed_corrections": 37,
+    "pending": 0,
+    "human_approval_claimed": false,
+    "note": "A indicação A/B é auditoria delegada por IA e não altera o estado formal PENDING_HUMAN_REVIEW. Registros B só são elegíveis após incorporação e teste das correções."
+  }
+}
+
+

@@ -13,6 +13,7 @@ BATCH = ROOT / "ENTENDA_ENGINE" / "derived" / "production_cc_001_114"
 CC02 = BATCH / "CC2002_CC02_BASELINE.entenda.jsonl"
 CC03 = BATCH / "CC2002_CC03_BASELINE.entenda.jsonl"
 CURRENT = BATCH / "CC2002_CC02.entenda.jsonl"
+CC03B_BASELINE = BATCH / "CC2002_CC03B_BASELINE.entenda.jsonl"
 OFFICIAL = "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html"
 
 FILLERS = [
@@ -98,7 +99,8 @@ def encoded(value) -> bytes:
 
 
 def main(check: bool = False) -> None:
-    cc02, cc03, refined = active(CC02), active(CC03), active(CURRENT)
+    refined_path = CC03B_BASELINE if CC03B_BASELINE.is_file() else CURRENT
+    cc02, cc03, refined = active(CC02), active(CC03), active(refined_path)
     if not (len(cc02) == len(cc03) == len(refined) == 116 and set(cc02) == set(cc03) == set(refined)):
         raise SystemExit("CC03B_COVERAGE_MISMATCH")
     metric_doc = {
@@ -165,7 +167,7 @@ def main(check: bool = False) -> None:
         "formal_review_status": "PENDING_HUMAN_REVIEW",
         "human_approval_claimed": False,
         "baseline_cc03_sha256": hashlib.sha256(CC03.read_bytes()).hexdigest(),
-        "refined_corpus_sha256": hashlib.sha256(CURRENT.read_bytes()).hexdigest(),
+        "refined_corpus_sha256": hashlib.sha256(refined_path.read_bytes()).hexdigest(),
     }
     outputs = {
         BATCH / "CC03B_REPETITION_METRICS.json": metric_doc,

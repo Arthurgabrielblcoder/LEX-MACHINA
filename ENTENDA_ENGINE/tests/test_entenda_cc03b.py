@@ -18,7 +18,8 @@ class CC03BRefinementTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.prior = load(BATCH / "CC2002_CC03_BASELINE.entenda.jsonl")
-        cls.current = load(BATCH / "CC2002_CC02.entenda.jsonl")
+        baseline = BATCH / "CC2002_CC03B_BASELINE.entenda.jsonl"
+        cls.current = load(baseline if baseline.is_file() else BATCH / "CC2002_CC02.entenda.jsonl")
         cls.active = {r["target_id"]: r for r in cls.current if r["status"] == "ACTIVE"}
 
     def test_all_records_refined_and_versions_preserved(self):
