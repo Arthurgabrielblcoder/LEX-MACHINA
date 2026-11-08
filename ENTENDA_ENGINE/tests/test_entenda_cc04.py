@@ -18,7 +18,8 @@ class CC04DelegatedReviewTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.base = {r["target_id"]: r for r in load(BATCH / "CC2002_CC03B_BASELINE.entenda.jsonl") if r["status"] == "ACTIVE"}
-        cls.corpus = load(BATCH / "CC2002_CC02.entenda.jsonl")
+        cc04_snapshot = BATCH / "CC2002_CC04_BASELINE.entenda.jsonl"
+        cls.corpus = load(cc04_snapshot if cc04_snapshot.is_file() else BATCH / "CC2002_CC02.entenda.jsonl")
         cls.active = {r["target_id"]: r for r in cls.corpus if r["status"] == "ACTIVE"}
         cls.matrix = json.loads((BATCH / "CC04_DELEGATED_REVIEW_MATRIX.json").read_text(encoding="utf-8"))
 

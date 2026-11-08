@@ -104,8 +104,17 @@ def build(out_dir: Path | None = None) -> dict:
     drafts = rendered_drafts
     prior_corpus = CC04_BASELINE_CORPUS if CC04_BASELINE_CORPUS.is_file() else (CC03B_BASELINE_CORPUS if CC03B_BASELINE_CORPUS.is_file() else (CC03_BASELINE_CORPUS if CC03_BASELINE_CORPUS.is_file() else BASELINE_CORPUS))
     existing = E.load_corpus(prior_corpus) if prior_corpus.is_file() else []
+    existing_by_id = {r["explanation_id"]: r for r in existing}
     existing_ids = {r["explanation_id"] for r in existing}
     records = E.stamp(drafts, ctx, existing=existing)
+    records = [
+        dict(existing_by_id[rec["explanation_id"]])
+        if rec["explanation_id"] in existing_by_id
+        and rec["status"] == "ACTIVE"
+        and existing_by_id[rec["explanation_id"]]["status"] == "ACTIVE"
+        else rec
+        for rec in records
+    ]
     for rec in records:
         if CC04_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
             rec["prompt_version"] = "CC05-CONSOLIDATION-V1"
@@ -132,7 +141,7 @@ def build(out_dir: Path | None = None) -> dict:
                     "generated_on": "2026-11-07",
                     "human_approval_claimed": False,
                 }
-        elif CC03B_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
+        elif not CC04_BASELINE_CORPUS.is_file() and CC03B_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE" and rec["explanation_id"] not in existing_ids:
             rec["prompt_version"] = "CC04-DELEGATED-LEGAL-REVIEW-V1"
             rec["authoring"] = {
                 "method": "DELEGATED_AI_LEGAL_REVIEW_WITH_OFFICIAL_SOURCE",
@@ -140,7 +149,7 @@ def build(out_dir: Path | None = None) -> dict:
                 "generated_on": "2026-11-07",
                 "human_approval_claimed": False,
             }
-        elif CC03_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE":
+        elif not CC04_BASELINE_CORPUS.is_file() and CC03_BASELINE_CORPUS.is_file() and rec["status"] == "ACTIVE":
             rec["prompt_version"] = "CC03B-PEDAGOGICAL-REFINEMENT-V1"
             rec["authoring"] = {
                 "method": "ARTICLE_SPECIFIC_PEDAGOGICAL_REWRITE_AFTER_LEGAL_AUDIT",
@@ -148,7 +157,7 @@ def build(out_dir: Path | None = None) -> dict:
                 "generated_on": "2026-11-07",
                 "human_approval_claimed": False,
             }
-        elif rec["editorial_version"] == 2:
+        elif not CC04_BASELINE_CORPUS.is_file() and rec["editorial_version"] == 2:
             rec["prompt_version"] = "CC03-LEGAL-AUDIT-V1"
             rec["authoring"] = {
                 "method": "INDEPENDENT_AUTOMATED_LEGAL_AUDIT_WITH_OFFICIAL_SOURCE",

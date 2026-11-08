@@ -12,6 +12,7 @@ BATCH = ROOT / "ENTENDA_ENGINE" / "derived" / "production_cc_001_114"
 PROPOSALS = BATCH / "cc04_delegated"
 BASELINE = BATCH / "CC2002_CC03B_BASELINE.entenda.jsonl"
 CORPUS = BATCH / "CC2002_CC02.entenda.jsonl"
+CC04_SNAPSHOT = BATCH / "CC2002_CC04_BASELINE.entenda.jsonl"
 OFFICIAL = "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html"
 EXCLUDED = {"2", "4", "15", "20", "50", "113"}
 PRIORITY = {"2", "4", "11", "12", "13", "14", "15", "20", "21", "43", "44", "49-A", "50", "52", "57", "59", "76", "104", "105", "110", "111", "112", "114"}
@@ -42,7 +43,8 @@ def encoded(value) -> bytes:
 
 
 def main(check: bool = False) -> None:
-    base, current = active(BASELINE), active(CORPUS)
+    reviewed_corpus = CC04_SNAPSHOT if CC04_SNAPSHOT.is_file() else CORPUS
+    base, current = active(BASELINE), active(reviewed_corpus)
     proposal_files = sorted(PROPOSALS.glob("block_*_proposal.json"))
     if len(proposal_files) != 3:
         raise SystemExit("CC04_PROPOSAL_FILE_COUNT")
@@ -165,7 +167,7 @@ def main(check: bool = False) -> None:
             "pending": counts["C"] + counts["D"],
             "excluded_external_human_review": len(EXCLUDED),
             "formal_review_status": "PENDING_HUMAN_REVIEW",
-            "corpus_sha256": hashlib.sha256(CORPUS.read_bytes()).hexdigest(),
+            "corpus_sha256": hashlib.sha256(reviewed_corpus.read_bytes()).hexdigest(),
             "quality_metrics": quality,
         },
         **checkpoints,
