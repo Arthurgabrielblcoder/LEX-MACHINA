@@ -140,19 +140,21 @@ def build(through_block: int = 5, out_dir: Path | None = None) -> dict:
     write_json(root / MANIFEST.name, manifest)
     write_json(root / COVERAGE.name, coverage)
     if out_dir is None:
-        for name in names:
-            members = BLOCKS[name]
-            block_records = [r for r in new_active if r["target_id"].split("ART.", 1)[1].split(":", 1)[0] in members]
-            write_json(CHECKPOINTS / f"CC07_{name}.json", {
-                "schema_version": 1,
-                "block": name,
-                "expected": len(members),
-                "produced": len(block_records),
-                "complete": len(block_records) == len(members),
-                "target_ids": [r["target_id"] for r in block_records],
-                "records_sha256": sha(json.dumps(block_records, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")),
-                "corpus_checkpoint_sha256": manifest["corpus_sha256"],
-            })
+        # A checkpoint is immutable evidence of the corpus at the moment that
+        # block was completed. Later blocks must never rewrite earlier hashes.
+        name = names[-1]
+        members = BLOCKS[name]
+        block_records = [r for r in new_active if r["target_id"].split("ART.", 1)[1].split(":", 1)[0] in members]
+        write_json(CHECKPOINTS / f"CC07_{name}.json", {
+            "schema_version": 1,
+            "block": name,
+            "expected": len(members),
+            "produced": len(block_records),
+            "complete": len(block_records) == len(members),
+            "target_ids": [r["target_id"] for r in block_records],
+            "records_sha256": sha(json.dumps(block_records, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")),
+            "corpus_checkpoint_sha256": manifest["corpus_sha256"],
+        })
     return manifest
 
 
