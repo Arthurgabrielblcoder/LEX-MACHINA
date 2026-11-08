@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "mission": "CC-08",
+  "executed_on": "2026-11-08",
+  "required_regression_cc02_cc08": {
+    "tests": 53,
+    "passed": 53,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "cc08_deterministic_checks": {
+    "commands": [
+      "python -X utf8 ENTENDA_ENGINE/cc08_build.py --check",
+      "python -X utf8 ENTENDA_ENGINE/cc08_audit.py --check",
+      "python -X utf8 ENTENDA_ENGINE/cc08_finalize.py --check"
+    ],
+    "status": "PASS"
+  },
+  "broader_entenda_suite": {
+    "tests": 230,
+    "failures": 7,
+    "errors": 2,
+    "skipped": 1,
+    "status": "UNCHANGED_HISTORICAL_FIXTURE_DIVERGENCES",
+    "comparison_with_cc07": {
+      "cc07_tests": 221,
+      "cc07_failures": 7,
+      "cc07_errors": 2,
+      "cc08_tests": 230,
+      "cc08_failures": 7,
+      "cc08_errors": 2,
+      "conclusion": "CC-08 added nine passing tests and introduced no new global failure or error."
+    },
+    "representative_causes": [
+      "TRANSITION_SOURCE_SHA_MISMATCH CF88_CANONICAL in Macro07 fixtures",
+      "Frozen Batch06/Macro07/Macro08 hashes differ from the current shared engine/profile state",
+      "Historical macro rebuild outputs no longer match their frozen artifacts"
+    ]
+  },
+  "deployment_tests": "NOT_RUN_BY_DESIGN",
+  "hardware_access": false
+}
