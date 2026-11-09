@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "mission": "CC-09",
+  "executed_on": "2026-11-09",
+  "directed_regression_cc02_cc09": {"tests": 61, "passed": 61, "failed": 0, "status": "PASS"},
+  "deterministic_checks": {"build": "PASS", "audit": "PASS", "final_evidence": "PASS"},
+  "global_suite": {
+    "tests": 238,
+    "failures": 7,
+    "errors": 2,
+    "skipped": 1,
+    "status": "UNCHANGED_HISTORICAL_FIXTURE_DIVERGENCES",
+    "comparison_with_cc08": "Eight new CC-09 tests passed; the seven failures and two errors remain the same Batch06/Macro07/Macro08 historical divergences.",
+    "causes": ["TRANSITION_SOURCE_SHA_MISMATCH CF88_CANONICAL", "Frozen Batch06/Macro07/Macro08 hashes differ from current shared state", "Historical macro rebuild outputs differ from frozen artifacts"]
+  },
+  "hardware_access": false,
+  "deployment_tests": "NOT_RUN_BY_DESIGN"
+}
