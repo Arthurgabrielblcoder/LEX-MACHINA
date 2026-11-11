@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "mission": "CC-10",
+  "directed_regression": {
+    "tests": 70,
+    "passed": 70,
+    "status": "PASS"
+  },
+  "global_suite": {
+    "tests": 354,
+    "failures": 7,
+    "errors": 3,
+    "skipped": 2,
+    "worktree_environment_error": "test_git_materialization requires a physical .git/index, while this linked worktree has a .git pointer file",
+    "comparable_run_excluding_environment_only_test": {
+      "tests": 352,
+      "failures": 7,
+      "errors": 2,
+      "skipped": 2
+    },
+    "comparison": "The seven historical failures and two historical Macro07 errors remain; no CC-10 regression was introduced. The additional full-run error is specific to linked-worktree materialization."
+  },
+  "deterministic_checks": {
+    "build": "PASS",
+    "audit": "PASS",
+    "final_evidence": "PASS"
+  },
+  "hardware_access": false,
+  "deploy": false
+}
