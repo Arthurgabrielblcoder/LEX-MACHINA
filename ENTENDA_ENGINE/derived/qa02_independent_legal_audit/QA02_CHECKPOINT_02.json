@@ -1,0 +1,94 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02",
+ "checkpoint": 2,
+ "title": "B_OBRIGACOES_E_CONTRATOS",
+ "as_of": "2026-11-12",
+ "examined": 2,
+ "target_ids": [
+  "CC2002:ART.869",
+  "CC2002:ART.883"
+ ],
+ "pending_priority_after_wave": 577,
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.869",
+   "explanation_id": "ENTENDA/CC2002:ART.869/BASE/1",
+   "origin_mission": "CC10",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.869:CAPUT\tSe o negócio for utilmente administrado, cumprirá ao dono as obrigações contraídas em seu nome, reembolsando ao gestor as despesas necessárias ou úteis que houver feito, com os juros legais, desde o desembolso, respondendo ainda pelos prejuízos que este houver sofrido por causa da gestão.\nCC2002:ART.869:PAR.1\to A utilidade, ou necessidade, da despesa, apreciar-se-á não pelo resultado obtido, mas segundo as circunstâncias da ocasião em que se fizerem.\nCC2002:ART.869:PAR.2\to Vigora o disposto neste artigo, ainda quando o gestor, em erro quanto ao dono do negócio, der a outra pessoa as contas da gestão.",
+   "source_snapshot_sha256": "bf1abd207b3cd647574bd3235ce09c35f1c9321025ec82089338a5cc84315ea5",
+   "independent_rule_summary": "Useful management binds the owner and requires reimbursement, statutory interest and loss compensation, judged by circumstances at expenditure time.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "13524c70529540a677c91dcd27c5f6c94d0b6d3a22daf47687667338f208db14",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.883",
+   "explanation_id": "ENTENDA/CC2002:ART.883/BASE/1",
+   "origin_mission": "CC10",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.883:CAPUT\tNão terá direito à repetição aquele que deu alguma coisa para obter fim ilícito, imoral, ou proibido por lei.\nCC2002:ART.883:PAR.UNICO\tNo caso deste artigo, o que se deu reverterá em favor de estabelecimento local de beneficência, a critério do juiz.",
+   "source_snapshot_sha256": "6413f95b4770d96f6496fad91ced64a1672202e9dbfa9fccbf4e83dc688a1f88",
+   "independent_rule_summary": "A transfer made for an unlawful/immoral/prohibited purpose is not recoverable and is judicially directed to local charity.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "bd9fe5c896e23e7d8ff7d49d694dee4e70df53a2dd67f4b9eadfea06408074ed",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  }
+ ]
+}
