@@ -1,0 +1,137 @@
+{
+ "schema_version": 1,
+ "mission": "QA-01",
+ "baseline": {
+  "branch": "cc13-entenda-cc-1721-2046",
+  "head": "1dd4bc44a0a85c56ac9e69cfd846fd7da1252429",
+  "global_comparable": "380 tests: 7 failures, 2 errors, 2 skipped",
+  "global_complete": "382 tests: 7 failures, 3 errors, 2 skipped"
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "occurrences": [
+  {
+   "id": "H01",
+   "test": "test_entenda_batch06.Batch06.test_rebuild_is_byte_identical",
+   "expected": "BATCH06_MANIFEST.json sha256 e7d3aed92d47f5b0f7e5c5dced6adf4aa64fb02df81614ec35bbd9ff7d120951",
+   "obtained": "ef153f18558a9b5a52678357dce282c0e5c9557d6e7d0ba28657171703b33dc6",
+   "first_divergence": "code_sha256_lf/entenda_engine.py; a segunda e unica outra divergencia e inputs_global_sha256_lf/ENTENDA_ENGINE/entenda_config.json",
+   "artifacts": ["BATCH06_MANIFEST.json", "entenda_engine.py", "entenda_config.json"],
+   "category": "B",
+   "root_cause": "O rebuild atual reproduz todos os produtos do Batch06; apenas hashes de duas dependencias legitimamente evoluidas diferem. Os blobs historicos ainda existem no Git.",
+   "risk": "baixo; comparar o contexto historico sem liberar divergencias nos produtos",
+   "correction": "normalizar somente os dois campos de contexto e provar seus hashes no historico Git"
+  },
+  {
+   "id": "H02",
+   "test": "test_entenda_macro_batch07.MacroBatch07.test_critic_pass_reproduces_versioned_drafts",
+   "expected": "MACRO07_A_DRAFTS.json sha256 e6d50f856177a3c202608c62eacd074b407c746839733819705cd39200b8891a",
+   "obtained": "2c263df460235e96464031eeeca73c403f2ce08ef870db7c6a0436c1f4766698",
+   "first_divergence": "UTF-8 lido como cp1252; por exemplo Territorios virou a sequencia Unicode U+00C3 U+00B3",
+   "artifacts": ["macro_critic_pass.py", "drafts/pass1/*.json"],
+   "category": "A",
+   "root_cause": "json.load(open(...)) dependia do encoding padrao do sistema",
+   "risk": "alto para portabilidade; poderia produzir mojibake",
+   "correction": "abrir todas as entradas do passe critico explicitamente como UTF-8"
+  },
+  {
+   "id": "H03",
+   "test": "test_entenda_macro_batch07.MacroBatch07.test_shared_modules_untouched",
+   "expected": "entenda_engine.py sha256 LF 5e3a16e8fc7737bab061edcb32dbef51447ca81932d21dd20ab0f6b28cb028c4",
+   "obtained": "1dbef1c4e255e290ce88c9491247f8e061ed5ed519e7ba320caf5b02113c6015",
+   "first_divergence": "modulo compartilhado evoluiu depois do fechamento Macro07",
+   "artifacts": ["MACRO07_MANIFEST.json", "BATCH06_MANIFEST.json"],
+   "category": "B",
+   "root_cause": "O teste tratava hash historico como proibicao perpetua de evoluir o modulo atual",
+   "risk": "medio; atualizar hashes apagaria evidencia historica",
+   "correction": "preservar a fixture e exigir que o blob LF historico seja recuperavel no Git"
+  },
+  {
+   "id": "H04",
+   "test": "test_entenda_macro_batch07.MacroBatch07.test_rebuild_is_byte_identical",
+   "expected": "fonte CF88_CANONICAL sha256 0742175b553199d97d9ea8a8b6dcd8a97adf4ef730c84e992cede7aa047c55cc",
+   "obtained": "SecondPassError TRANSITION_SOURCE_SHA_MISMATCH; checkout CRLF d9f3d6b92ffd524c26a73e311f8c7daa4bf31772193d6d24932acff29c4c2da4",
+   "first_divergence": "a remocao reversivel de CR antes de LF reproduz exatamente 0742175...",
+   "artifacts": ["MACRO07_TRANSITION_EVIDENCE.json", "t1_second_pass.py", "cf.txt"],
+   "category": "D",
+   "root_cause": "Fonte legada sem regra eol foi materializada em CRLF embora a evidencia fixe o blob LF",
+   "risk": "baixo apos normalizacao estrita; bytes substantivos continuam protegidos",
+   "correction": "validar o hash canonico LF e manter fail-closed para qualquer outra alteracao"
+  },
+  {
+   "id": "H05",
+   "test": "test_entenda_macro_batch07.MacroBatch07SecondPass.setUpClass",
+   "expected": "carregar 26 evidencias de transicao",
+   "obtained": "SecondPassError TRANSITION_SOURCE_SHA_MISMATCH CF88_CANONICAL",
+   "first_divergence": "mesma fonte CRLF de H04",
+   "artifacts": ["MACRO07_TRANSITION_EVIDENCE.json", "cf.txt"],
+   "category": "D",
+   "root_cause": "Mesma causa de materializacao de H04, em outro ponto da suite",
+   "risk": "baixo",
+   "correction": "mesma normalizacao canonica LF de H04"
+  },
+  {
+   "id": "H06",
+   "test": "test_entenda_macro_batch08.MacroBatch08.test_critic_pass_and_human_patch_reproduce_versioned_drafts",
+   "expected": "MACRO08_A_CRITIC_LOG.json sha256 65996e...",
+   "obtained": "b883e4...",
+   "first_divergence": "entradas JSON UTF-8 interpretadas pela pagina de codigo cp1252",
+   "artifacts": ["macro_critic_pass.py", "MACRO08_*_PASS1_*.json"],
+   "category": "A",
+   "root_cause": "Mesmo defeito de encoding de H02",
+   "risk": "alto para portabilidade",
+   "correction": "mesma abertura UTF-8 explicita de H02"
+  },
+  {
+   "id": "H07",
+   "test": "test_entenda_macro_batch08.MacroBatch08.test_rebuild_is_byte_identical",
+   "expected": "CF88_MACRO_08.entenda.jsonl sha256 e862b916d4c14b6d88289e497032ba1387776a60587fcfc2c771588e4a8e1dc6",
+   "obtained": "a6bc5d9d8b3ae336b95d954a695ad49ab0f46aeca2e62b8cd690895a73be28e3",
+   "first_divergence": "source.text_source_file_sha256 usava bytes CRLF 66e314... em vez do LF canonico b6e447...",
+   "artifacts": ["entenda_engine.py", "CF88_MACRO_08.entenda.jsonl", "RUNTIME_TEXT.txt"],
+   "category": "D",
+   "root_cause": "Proveniencia textual dependia do EOL materializado no checkout",
+   "risk": "medio; afeta hashes de proveniencia, nao o texto juridico",
+   "correction": "hash de fonte canonico LF; fallback seguro para corpus-evidencia em builds temporarios"
+  },
+  {
+   "id": "H08",
+   "test": "test_entenda_macro_batch08.MacroBatch08.test_shared_modules_untouched",
+   "expected": "hashes de codigo congelados nos manifestos Batch06/Macro07",
+   "obtained": "entenda_engine.py atual 1dbef1... versus historico 5e3a16...",
+   "first_divergence": "evolucao legitima posterior do motor",
+   "artifacts": ["BATCH06_MANIFEST.json", "MACRO07_MANIFEST.json"],
+   "category": "B",
+   "root_cause": "Mesmo contrato historico incorreto de H03",
+   "risk": "medio",
+   "correction": "provar os blobs historicos no Git sem reescrever fixtures"
+  },
+  {
+   "id": "H09",
+   "test": "test_entenda_macro_batch08.TextProfile.test_profile_rebuilds_byte_identical",
+   "expected": "quatro arquivos do perfil reproduzidos",
+   "obtained": "TARGET_INDEX, TARGET_STATUS, entenda_config e RUNTIME_TEXT falsos",
+   "first_divergence": "tres arquivos diferiam apenas por CRLF; entenda_config preservava CF88 e recebeu depois a adicao global CC2002",
+   "artifacts": ["profiles/CF88_OFFICIAL_RUNTIME/*", "entenda_text_profile.py", "entenda_config.json"],
+   "category": "B/D",
+   "root_cause": "Comparacao de transporte byte a byte e ausencia de regra para extensao aditiva de normas globais",
+   "risk": "baixo se todos os campos historicos continuarem identicos",
+   "correction": "comparar LF canonico e permitir apenas novas normas, sem mudar/remover qualquer campo congelado"
+  },
+  {
+   "id": "ENV01",
+   "test": "test_git_materialization.GitMaterializationTest.test_critical_artifacts_byte_identical_after_checkout",
+   "expected": "copiar o indice do checkout corrente para um indice temporario",
+   "obtained": "FileNotFoundError em REPO/.git/index porque .git e arquivo de linked worktree",
+   "first_divergence": "suposicao de que .git e sempre diretorio",
+   "artifacts": ["git_materialization_check.py", ".git"],
+   "category": "D",
+   "root_cause": "Caminho administrativo construido manualmente",
+   "risk": "baixo",
+   "correction": "resolver index e git-dir por git rev-parse --git-path, com regressao em repositorio comum e linked worktree"
+  }
+ ]
+}
