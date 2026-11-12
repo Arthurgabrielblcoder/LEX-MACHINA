@@ -262,11 +262,28 @@ def round_trip(profile_id, parsed, p, base=REPO):
 
 
 def check(profile_id, base=REPO):
-    """Rebuild in memory and compare with the versioned files (byte-identical)."""
+    """Rebuild profile-owned data; tolerate checkout EOLs and additive global norms."""
     p = load_profiles()[profile_id]
     _, files = build(profile_id, write=False, base=base)
     out = Path(base) / p['out_dir']
-    return {n: (out / n).is_file() and (out / n).read_bytes() == b for n, b in files.items()}
+    result = {}
+    for n, b in files.items():
+        path = out / n
+        if not path.is_file():
+            result[n] = False
+            continue
+        frozen = path.read_bytes().replace(b'\r\n', b'\n')
+        rebuilt = b.replace(b'\r\n', b'\n')
+        if n != 'entenda_config.json':
+            result[n] = frozen == rebuilt
+            continue
+        # A historical profile deliberately keeps the global configuration that
+        # existed at creation. Later norms may be added globally, but no frozen
+        # root field or norm may disappear or change.
+        old, new = json.loads(frozen), json.loads(rebuilt)
+        result[n] = (all(new.get(k) == v for k, v in old.items() if k != 'norms') and
+                     all(new.get('norms', {}).get(k) == v for k, v in old.get('norms', {}).items()))
+    return result
 
 
 if __name__ == '__main__':

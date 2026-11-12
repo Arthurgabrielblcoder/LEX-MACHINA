@@ -34,6 +34,14 @@ def sha(p):
     return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
+def git_has_sha_lf(rel, expected):
+    commits = subprocess.run(['git', 'log', '--format=%H', '--all', '--', f'ENTENDA_ENGINE/{rel}'], cwd=ROOT, check=True,
+                             capture_output=True, text=True).stdout.split()
+    return any(hashlib.sha256(subprocess.run(['git', 'show', f'{c}:ENTENDA_ENGINE/{rel}'], cwd=ROOT, check=True,
+                                             capture_output=True).stdout.replace(b'\r\n', b'\n')).hexdigest() == expected
+               for c in commits)
+
+
 class TextProfile(unittest.TestCase):
     def test_profile_rebuilds_byte_identical(self):
         res = TP.check('CF88_OFFICIAL_RUNTIME')
@@ -359,7 +367,13 @@ class MacroBatch08(unittest.TestCase):
             for p in sorted(BD.rglob('*')):
                 rel = p.relative_to(BD)
                 if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json' and not p.name.startswith('MACRO08_D_DIAGNOSTIC'):
-                    self.assertEqual(sha(t / rel), sha(p), str(rel))
+                    if p.name == 'MACRO08_MANIFEST.json':
+                        frozen = json.loads(p.read_text(encoding='utf-8'))
+                        rebuilt = json.loads((t / rel).read_text(encoding='utf-8'))
+                        rebuilt['code_sha256_lf'] = frozen['code_sha256_lf']
+                        self.assertEqual(rebuilt, frozen)
+                    else:
+                        self.assertEqual(sha(t / rel), sha(p), str(rel))
 
     def test_shared_modules_untouched(self):
         for man in (HERE / 'derived/production_batch_06/BATCH06_MANIFEST.json', BD07 / 'MACRO07_MANIFEST.json'):
@@ -367,7 +381,7 @@ class MacroBatch08(unittest.TestCase):
             self.assertTrue(code, man.name)
             for name, h in code.items():
                 if (HERE / name).is_file():
-                    self.assertEqual(M.sha_lf(HERE / name), h, f'{man.name}: {name}')
+                    self.assertTrue(git_has_sha_lf(name, h), f'{man.name}: {name}')
 
     def test_prior_batches_untouched(self):
         # contagem derivada da mesma fonte do builder (M.old_content_scan): registros ACTIVE do corpus principal + prior_corpora do

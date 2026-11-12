@@ -1172,7 +1172,7 @@ def manifest(bd, ms, nm, doc, sel):
         status=(f"HUMAN_REVIEW_COMPLETED: {doc['human_approved_t1_granted']} HUMAN_APPROVED_T1 pela rodada {ms['human_review']['review_scope']}; "
                 f"{len(doc['round_approvals']['pending'])} pendente(s)") if ms.get('human_review') else 'CANDIDATE: 0 HUMAN_APPROVED_T1; nada aprovado',
         builder='ENTENDA_ENGINE/build_entenda_macro_segment.py', entenda_config=ms.get('entenda_config'),
-        text_profile_manifest_sha256=sha(prof) if prof.is_file() else None, validator=doc['validator'], sub_blocks_built=ms['sub_blocks_built'],
+        text_profile_manifest_sha256=sha_lf(prof) if prof.is_file() else None, validator=doc['validator'], sub_blocks_built=ms['sub_blocks_built'],
         selection=dict(targets_evaluated=sel['summary']['targets_evaluated'], current=sel['summary']['targets_current'], selected=sel['summary']['selected'],
                        new=sel['summary']['new_explanations'], reused=sel['summary']['reused_from_pilot'],
                        skip=sel['summary']['by_classification'].get('NO_SEPARATE_EXPLANATION', 0)),

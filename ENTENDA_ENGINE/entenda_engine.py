@@ -135,8 +135,12 @@ class NormContext:
             path = self.base / src['path']
             raw = (overrides or {}).get(src['path'])
             data = raw.encode('utf-8') if raw is not None else read_source_bytes(self.base, src['path'])
+            # Source provenance follows the repository's canonical LF bytes. Text
+            # parsing already treats CRLF and LF equally; hashing must do the same
+            # when a legacy path has no explicit .gitattributes rule on Windows.
+            canonical_data = data.replace(b'\r\n', b'\n')
             parsed, _, _ = SP.parse_structure(data.decode('utf-8-sig'), self.norma_id, preview_len=10 ** 6)
-            info = dict(role=src['role'], path=src['path'], file_sha256=hashlib.sha256(data).hexdigest())
+            info = dict(role=src['role'], path=src['path'], file_sha256=hashlib.sha256(canonical_data).hexdigest())
             for t in parsed:
                 if t['namespace'] in src['namespaces'] and t['preview']:
                     self.text[t['target_id']] = norm_text(t['preview'])

@@ -318,7 +318,16 @@ def run(batch_dir, config=HERE / 'entenda_config.json'):
     # a pending batch rebuilt from scratch may name its frozen pre-round corpus (stamping_evidence_corpus): earlier versions keep their
     # snapshots and become RETIRED when a round bumps the editorial_version
     evidence = spec.get('supersedes_corpus') or spec.get('stamping_evidence_corpus')
-    existing = E.load_corpus(ctx.base / evidence) if evidence else E.load_corpus(corpus_path)
+    if evidence:
+        evidence_path = ctx.base / evidence
+        # Temporary deterministic builds preserve the evidence beside the copied
+        # batch, while the frozen spec retains its repository-relative production
+        # path. Resolve that faithful local copy when the production path is absent.
+        if not evidence_path.is_file() and (bd / Path(evidence).name).is_file():
+            evidence_path = bd / Path(evidence).name
+        existing = E.load_corpus(evidence_path)
+    else:
+        existing = E.load_corpus(corpus_path)
     stamped = E.stamp(drafts, ctx, existing)
     new = [r for r in stamped if r['status'] == 'ACTIVE']
     if any(r['review_status'] != ('HUMAN_APPROVED_T1' if r['target_id'] in round_approved else expected) for r in new):
