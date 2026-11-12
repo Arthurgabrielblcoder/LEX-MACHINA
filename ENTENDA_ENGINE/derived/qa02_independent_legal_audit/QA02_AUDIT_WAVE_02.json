@@ -2,18 +2,18 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-02",
  "as_of": "2026-11-12",
- "completed_through_checkpoint": 9,
+ "completed_through_checkpoint": 10,
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "audited_total": 40,
+ "audited_total": 60,
  "queue_positions_completed": [
   1,
-  40
+  60
  ],
- "next_queue_position": 41,
- "findings_total": 3,
+ "next_queue_position": 61,
+ "findings_total": 6,
  "finding_counts": {
-  "ALTO": 2,
-  "MÉDIO": 1
+  "ALTO": 4,
+  "MÉDIO": 2
  },
  "protected_sha256": {
   "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
@@ -2127,6 +2127,1169 @@
    },
    "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
    "comparison": "No CC2002:ART.40, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 41,
+   "target_id": "CC2002:ART.41",
+   "explanation_id": "ENTENDA/CC2002:ART.41/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.41:CAPUT\tSão pessoas jurídicas de direito público interno:\nCC2002:ART.41:INC.I\ta União;\nCC2002:ART.41:INC.II\tos Estados, o Distrito Federal e os Territórios;\nCC2002:ART.41:INC.III\tos Municípios;\nCC2002:ART.41:INC.IV\tas autarquias, inclusive as associações públicas; (Inciso com nova redação dada pela Lei nº 11.107, de 6/4/2005)\nCC2002:ART.41:INC.V\tas demais entidades de caráter público criadas por lei.\nCC2002:ART.41:PAR.UNICO\tSalvo disposição em contrário, as pessoas jurídicas de direito público, a que se tenha dado estrutura de direito privado, regem-se, no que couber, quanto ao seu funcionamento, pelas normas deste Código.",
+   "source_snapshot_sha256": "b26f7fcedd28f857c99fab05b1cd197bc99d816c0ff7c10bcb851cba0cb40fc4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.41:CAPUT",
+     "text": "São pessoas jurídicas de direito público interno:"
+    },
+    {
+     "label": "CC2002:ART.41:INC.I",
+     "text": "a União;"
+    },
+    {
+     "label": "CC2002:ART.41:INC.II",
+     "text": "os Estados, o Distrito Federal e os Territórios;"
+    },
+    {
+     "label": "CC2002:ART.41:INC.III",
+     "text": "os Municípios;"
+    },
+    {
+     "label": "CC2002:ART.41:INC.IV",
+     "text": "as autarquias, inclusive as associações públicas; (Inciso com nova redação dada pela Lei nº 11.107, de 6/4/2005)"
+    },
+    {
+     "label": "CC2002:ART.41:INC.V",
+     "text": "as demais entidades de caráter público criadas por lei."
+    },
+    {
+     "label": "CC2002:ART.41:PAR.UNICO",
+     "text": "Salvo disposição em contrário, as pessoas jurídicas de direito público, a que se tenha dado estrutura de direito privado, regem-se, no que couber, quanto ao seu funcionamento, pelas normas deste Código."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: São pessoas jurídicas de direito público interno: | a União; | os Estados, o Distrito Federal e os Territórios; | os Municípios; | as autarquias, inclusive as associações públicas; (Inciso com nova redação dada pela Lei nº 11.107, de 6/4/2005) | as demais entidades de caráter público criadas por lei. | Salvo disposição em contrário, as pessoas jurídicas de direito público, a que se tenha dado estrutura de direito privado, regem-se, no que couber, quanto ao seu funcionamento, pelas normas deste Código.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2679e958c979ba1dc8990ea46cfb6d8767e82c87ead43e4f8ba44a6a66b0290e",
+     "o_que_significa": "3556e8461cc144e0791f3f3deb070c002faacc2bb87ddb15fae66aec346a46b0",
+     "exemplo_pratico": "87e14194f9c4b89b711a20a7b1fa913a5c7638c5f068b21725211f1a73027b51",
+     "atencao": "33ca3bcf7b86c497c0846859f5def8e31ad029579a00d02a49d7a09d736fe4ce",
+     "palavras_dificeis": "0144e339289720c2bfa91f97a958270db198bc0bc14854c7cf435d84191e65c6"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Além da enumeração, o parágrafo único do art. 41 determina que, salvo disposição contrária, pessoas jurídicas de direito público estruturadas sob direito privado se regem, no que couber ao funcionamento, pelas normas do Código Civil.",
+   "finding": {
+    "target_id": "CC2002:ART.41",
+    "audit_wave": "QA02_WAVE_02",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "O artigo enumera pessoas jurídicas de direito público interno e admite outras criadas por lei.",
+    "legal_basis": "Além da enumeração, o parágrafo único do art. 41 determina que, salvo disposição contrária, pessoas jurídicas de direito público estruturadas sob direito privado se regem, no que couber ao funcionamento, pelas normas do Código Civil.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_REGIME_JURIDICO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A explicação não informa quando e em que medida as normas civis regem o funcionamento de entidade pública com estrutura de direito privado.",
+    "correction_direction": "Acrescentar a regra subsidiária do parágrafo único, com as ressalvas 'salvo disposição em contrário' e 'no que couber ao funcionamento'.",
+    "confidence": "ALTA",
+    "human_review_required": true
+   }
+  },
+  {
+   "queue_position": 42,
+   "target_id": "CC2002:ART.42",
+   "explanation_id": "ENTENDA/CC2002:ART.42/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.42:CAPUT\tSão pessoas jurídicas de direito público externo os Estados estrangeiros e todas as pessoas que forem regidas pelo direito internacional público.",
+   "source_snapshot_sha256": "cada35c39b9af64ad838fd33ab6f12dd60f5dde7ebe05d26cd9ca66858509677",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.42:CAPUT",
+     "text": "São pessoas jurídicas de direito público externo os Estados estrangeiros e todas as pessoas que forem regidas pelo direito internacional público."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: São pessoas jurídicas de direito público externo os Estados estrangeiros e todas as pessoas que forem regidas pelo direito internacional público.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "20a4fad50c82a64e7d43c87e620275a4cacc7c83ab61823710e1abc9c61fa995",
+     "o_que_significa": "7aa9cd85e6d5a1425d0181157e90df0f083deab8fd60e59929ba89e91a04a4f5",
+     "exemplo_pratico": "100acdaa487ea3a8ca4019ab0cf9eabc36dfda6bdcc19a927e71d3e43e9d8f95",
+     "atencao": "68c76576d7533add3aefaa884149126370cd9908d6463631f5882c5328e067fa",
+     "palavras_dificeis": "bb5180e97b14b1f3190a2fe1a6b9d604194a65d39ce0524378dd57992db6d726"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.42, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 43,
+   "target_id": "CC2002:ART.43",
+   "explanation_id": "ENTENDA/CC2002:ART.43/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.43:CAPUT\tAs pessoas jurídicas de direito público interno são civilmente responsáveis por atos dos seus agentes que nessa qualidade causem danos a terceiros, ressalvado direito regressivo contra os causadores do dano, se houver, por parte destes, culpa ou dolo.",
+   "source_snapshot_sha256": "b96db18036ca56650ceee138f73a8facde58109bb3fd98c39214af72817c8d1c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.43:CAPUT",
+     "text": "As pessoas jurídicas de direito público interno são civilmente responsáveis por atos dos seus agentes que nessa qualidade causem danos a terceiros, ressalvado direito regressivo contra os causadores do dano, se houver, por parte destes, culpa ou dolo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As pessoas jurídicas de direito público interno são civilmente responsáveis por atos dos seus agentes que nessa qualidade causem danos a terceiros, ressalvado direito regressivo contra os causadores do dano, se houver, por parte destes, culpa ou dolo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "380848fd630643c276533c29e053f9704dedcab49cbccf5a10bf9e51e5bc9458",
+     "o_que_significa": "3a3c8ae07c82f8b1fdfed4d0e22e2f80c21271b41ca916dbb9d32b8524a665c5",
+     "exemplo_pratico": "acc1408c319f18318a1e550a9fd6fe079a0b27fb9d491346e349e4863bd8891e",
+     "atencao": "cf510f453f3fa40fd896b28e8cce2f5a501f788ebfbf9483e4f1b70c26fbbe3e",
+     "palavras_dificeis": "1a96134f334bdabd8945787754a850c8dfa97686f833df51c0d44e204ff028f6"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.43, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 44,
+   "target_id": "CC2002:ART.44",
+   "explanation_id": "ENTENDA/CC2002:ART.44/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.44:CAPUT\tSão pessoas jurídicas de direito privado:\nCC2002:ART.44:INC.I\tas associações;\nCC2002:ART.44:INC.II\tas sociedades;\nCC2002:ART.44:INC.III\tas fundações.\nCC2002:ART.44:INC.IV\tas organizações religiosas; (Inciso acrescido pela Lei nº 10.825, de 22/12/2003)\nCC2002:ART.44:INC.V\tos partidos políticos; (Inciso acrescido pela Lei nº 10.825, de 22/12/2003)\nCC2002:ART.44:INC.VI\t(Inciso acrescido pela Lei nº 12.441, de 11/7/2011, e revogado pela Medida Provisória nº 1.085, de 27/12/2021 , convertida na Lei nº 14.382, de 27/6/2022)\nCC2002:ART.44:INC.VII\tos empreendimentos de economia solidária. (Inciso acrescido pela Lei nº 15.068, de 23/12/2024)\nCC2002:ART.44:PAR.1\tSão livres a criação, a organização, a estruturação interna e o funcionamento das organizações religiosas, sendo vedado ao poder público negar-lhes reconhecimento ou registro dos atos constitutivos e necessários ao seu funcionamento. (Parágrafo acrescido pela Lei nº 10.825, de 22/12/2003)\nCC2002:ART.44:PAR.2\tAs disposições concernentes às associações aplicam-se subsidiariamente aos empreendimentos de economia solidária e às sociedades que são objeto do Livro II da Parte Especial deste Código. (Parágrafo único transformado em § 2º pela Lei nº 10.825, de 22/12/2003 , e com redação dada pela Lei nº 15.068, de 23/12/2024)\nCC2002:ART.44:PAR.3\tOs partidos políticos serão organizados e funcionarão conforme o disposto em lei específica. (Parágrafo acrescido pela Lei nº 10.825, de 22/12/2003)",
+   "source_snapshot_sha256": "7b6ed4119a51c35396c71941b6f0e3cb14fa77ec6f1cf3a6374624ef13bacc62",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.44:CAPUT",
+     "text": "São pessoas jurídicas de direito privado:"
+    },
+    {
+     "label": "CC2002:ART.44:INC.I",
+     "text": "as associações;"
+    },
+    {
+     "label": "CC2002:ART.44:INC.II",
+     "text": "as sociedades;"
+    },
+    {
+     "label": "CC2002:ART.44:INC.III",
+     "text": "as fundações."
+    },
+    {
+     "label": "CC2002:ART.44:INC.IV",
+     "text": "as organizações religiosas; (Inciso acrescido pela Lei nº 10.825, de 22/12/2003)"
+    },
+    {
+     "label": "CC2002:ART.44:INC.V",
+     "text": "os partidos políticos; (Inciso acrescido pela Lei nº 10.825, de 22/12/2003)"
+    },
+    {
+     "label": "CC2002:ART.44:INC.VI",
+     "text": "(Inciso acrescido pela Lei nº 12.441, de 11/7/2011, e revogado pela Medida Provisória nº 1.085, de 27/12/2021 , convertida na Lei nº 14.382, de 27/6/2022)"
+    },
+    {
+     "label": "CC2002:ART.44:INC.VII",
+     "text": "os empreendimentos de economia solidária. (Inciso acrescido pela Lei nº 15.068, de 23/12/2024)"
+    },
+    {
+     "label": "CC2002:ART.44:PAR.1",
+     "text": "São livres a criação, a organização, a estruturação interna e o funcionamento das organizações religiosas, sendo vedado ao poder público negar-lhes reconhecimento ou registro dos atos constitutivos e necessários ao seu funcionamento. (Parágrafo acrescido pela Lei nº 10.825, de 22/12/2003)"
+    },
+    {
+     "label": "CC2002:ART.44:PAR.2",
+     "text": "As disposições concernentes às associações aplicam-se subsidiariamente aos empreendimentos de economia solidária e às sociedades que são objeto do Livro II da Parte Especial deste Código. (Parágrafo único transformado em § 2º pela Lei nº 10.825, de 22/12/2003 , e com redação dada pela Lei nº 15.068, de 23/12/2024)"
+    },
+    {
+     "label": "CC2002:ART.44:PAR.3",
+     "text": "Os partidos políticos serão organizados e funcionarão conforme o disposto em lei específica. (Parágrafo acrescido pela Lei nº 10.825, de 22/12/2003)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 11 segmentos vigentes do dispositivo: São pessoas jurídicas de direito privado: | as associações; | as sociedades; | as fundações. | as organizações religiosas; (Inciso acrescido pela Lei nº 10.825, de 22/12/2003) | os partidos políticos; (Inciso acrescido pela Lei nº 10.825, de 22/12/2003) | (Inciso acrescido pela Lei nº 12.441, de 11/7/2011, e revogado pela Medida Provisória nº 1.085, de 27/12/2021 , convertida na Lei nº 14.382, de 27/6/2022) | os empreendimentos de economia solidária. (Inciso acrescido pela Lei nº 15.068, de 23/12/2024) | São livres a criação, a organização, a estruturação interna e o funcionamento das organizações religiosas, sendo vedado ao poder público negar-lhes reconhecimento ou registro dos atos constitutivos e necessários ao seu funcionamento. (Parágrafo acrescido pela Lei nº 10.825, de 22/12/2003) | As disposições concernentes às associações aplicam-se subsidiariamente aos empreendimentos de economia solidária e às sociedades que são objeto do Livro II da Parte Especial deste Código. (Parágrafo único transformado em § 2º pela Lei nº 10.825, de 22/12/2003 , e com redação dada pela Lei nº 15.068, de 23/12/2024) | Os partidos políticos serão organizados e funcionarão conforme o disposto em lei específica. (Parágrafo acrescido pela Lei nº 10.825, de 22/12/2003)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3d2d56a8233e471e5808ad245984f6908f5b89630b588fe9e67f0df2968e65e6",
+     "o_que_significa": "87da752efc213ceec1e87a95dddec85df7348eaa90cc03a1347e4ac4c7287b1e",
+     "exemplo_pratico": "304028b7a14f62147d455ecbaa10b6fc315425bb00f2e9c51878544f39519855",
+     "atencao": "7df04ac646d6df8be504dd5cbd10d691e8bca837bf120e3161aa475d6569bbd6",
+     "palavras_dificeis": "557086ed3dc5ceb91bbd6060cf711b7a01a6f7b53ff4b42672db6845408199f2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.44, os cinco campos foram comparados com todos os 11 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 45,
+   "target_id": "CC2002:ART.45",
+   "explanation_id": "ENTENDA/CC2002:ART.45/BASE/3",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.45:CAPUT\tComeça a existência legal das pessoas jurídicas de direito privado com a inscrição do ato constitutivo no respectivo registro, precedida, quando necessário, de autorização ou aprovação do Poder Executivo, averbando-se no registro todas as alterações por que passar o ato constitutivo.\nCC2002:ART.45:PAR.UNICO\tDecai em três anos o direito de anular a constituição das pessoas jurídicas de direito privado, por defeito do ato respectivo, contado o prazo da publicação de sua inscrição no registro.",
+   "source_snapshot_sha256": "aac9d6425edb400e4065e7a366472abb2ad626e1f63e17b48e97ae5ab1e0c601",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.45:CAPUT",
+     "text": "Começa a existência legal das pessoas jurídicas de direito privado com a inscrição do ato constitutivo no respectivo registro, precedida, quando necessário, de autorização ou aprovação do Poder Executivo, averbando-se no registro todas as alterações por que passar o ato constitutivo."
+    },
+    {
+     "label": "CC2002:ART.45:PAR.UNICO",
+     "text": "Decai em três anos o direito de anular a constituição das pessoas jurídicas de direito privado, por defeito do ato respectivo, contado o prazo da publicação de sua inscrição no registro."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Começa a existência legal das pessoas jurídicas de direito privado com a inscrição do ato constitutivo no respectivo registro, precedida, quando necessário, de autorização ou aprovação do Poder Executivo, averbando-se no registro todas as alterações por que passar o ato constitutivo. | Decai em três anos o direito de anular a constituição das pessoas jurídicas de direito privado, por defeito do ato respectivo, contado o prazo da publicação de sua inscrição no registro.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c47dc2e97e4cfc699c7608f0d5f0a10c7c805fbaedb6a2b422e888230391a892",
+     "o_que_significa": "372388414c4e2c079e6f34529e72a1e3f913d9ed8198dcf9135cf0d1145195ef",
+     "exemplo_pratico": "ea39ec31a53ead17433721e556e2b3ef01813e9f56a7dbcce40bf3e3a9f05450",
+     "atencao": "af0c7d0be1109ec1a1bde39827156c7c5471d1cc89221fde404af10b3089729e",
+     "palavras_dificeis": "657252ce1c695f6ae2ba1f07648237788edaf1127439a85ea50781e07fec378d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.45, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 46,
+   "target_id": "CC2002:ART.46",
+   "explanation_id": "ENTENDA/CC2002:ART.46/BASE/3",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.46:CAPUT\tO registro declarará:\nCC2002:ART.46:INC.I\ta denominação, os fins, a sede, o tempo de duração e o fundo social, quando houver;\nCC2002:ART.46:INC.II\to nome e a individualização dos fundadores ou instituidores, e dos diretores;\nCC2002:ART.46:INC.III\to modo por que se administra e representa, ativa e passivamente, judicial e extrajudicialmente;\nCC2002:ART.46:INC.IV\tse o ato constitutivo é reformável no tocante à administração, e de que modo;\nCC2002:ART.46:INC.V\tse os membros respondem, ou não, subsidiariamente, pelas obrigações sociais;\nCC2002:ART.46:INC.VI\tas condições de extinção da pessoa jurídica e o destino do seu patrimônio, nesse caso.",
+   "source_snapshot_sha256": "a6316a1aadba68596e8109c59382d8c007daf34b2a86dab4c25c86f5514b0979",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.46:CAPUT",
+     "text": "O registro declarará:"
+    },
+    {
+     "label": "CC2002:ART.46:INC.I",
+     "text": "a denominação, os fins, a sede, o tempo de duração e o fundo social, quando houver;"
+    },
+    {
+     "label": "CC2002:ART.46:INC.II",
+     "text": "o nome e a individualização dos fundadores ou instituidores, e dos diretores;"
+    },
+    {
+     "label": "CC2002:ART.46:INC.III",
+     "text": "o modo por que se administra e representa, ativa e passivamente, judicial e extrajudicialmente;"
+    },
+    {
+     "label": "CC2002:ART.46:INC.IV",
+     "text": "se o ato constitutivo é reformável no tocante à administração, e de que modo;"
+    },
+    {
+     "label": "CC2002:ART.46:INC.V",
+     "text": "se os membros respondem, ou não, subsidiariamente, pelas obrigações sociais;"
+    },
+    {
+     "label": "CC2002:ART.46:INC.VI",
+     "text": "as condições de extinção da pessoa jurídica e o destino do seu patrimônio, nesse caso."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: O registro declarará: | a denominação, os fins, a sede, o tempo de duração e o fundo social, quando houver; | o nome e a individualização dos fundadores ou instituidores, e dos diretores; | o modo por que se administra e representa, ativa e passivamente, judicial e extrajudicialmente; | se o ato constitutivo é reformável no tocante à administração, e de que modo; | se os membros respondem, ou não, subsidiariamente, pelas obrigações sociais; | as condições de extinção da pessoa jurídica e o destino do seu patrimônio, nesse caso.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "159019f2e16fdabcfc7443a036abb278fef41c8b2929825fab84b9dd68cd1994",
+     "o_que_significa": "033944250899ef1020caab679862a2865359280da828b02ef257c94760898632",
+     "exemplo_pratico": "e4504e3a6f37017d2020b5c00e6bdb89e7c70f2f7d556013de9d203b4cd4bb9e",
+     "atencao": "262171251f8a99cb71552fadbb2bb95fbb5151ecbd374c59dd30eccb793c1148",
+     "palavras_dificeis": "ff439c4cb2dd716bf4485917fc0707214c1348274ed8b5adf1de8c18d06264b4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.46, os cinco campos foram comparados com todos os 7 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 47,
+   "target_id": "CC2002:ART.47",
+   "explanation_id": "ENTENDA/CC2002:ART.47/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.47:CAPUT\tObrigam a pessoa jurídica os atos dos administradores, exercidos nos limites de seus poderes definidos no ato constitutivo.",
+   "source_snapshot_sha256": "97afe9e70a116350d9c958329c36ab9483c626126e340f75b6e99cb310f1ce53",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.47:CAPUT",
+     "text": "Obrigam a pessoa jurídica os atos dos administradores, exercidos nos limites de seus poderes definidos no ato constitutivo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Obrigam a pessoa jurídica os atos dos administradores, exercidos nos limites de seus poderes definidos no ato constitutivo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1445823c86cc4b67d2904e0eee363920473a8c8c71120d176748944893acc996",
+     "o_que_significa": "731c864de3ae2a30859be872fe78ebf9841b60524968d696f144e3b26cf606c2",
+     "exemplo_pratico": "d09721a64ad3266f8eaa8e06b88e404ad2262af877bc10b51c5adf677e28ef79",
+     "atencao": "ab2628981e591eedb8b233be1f2a48451d4353adbbc16f48504bbe8056815126",
+     "palavras_dificeis": "6a49e66ffb5d50a4c19e89ff35e27bd4fb37e80ff2f89bcb73213920411bb4be"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.47, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 48,
+   "target_id": "CC2002:ART.48",
+   "explanation_id": "ENTENDA/CC2002:ART.48/BASE/3",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.48:CAPUT\tSe a pessoa jurídica tiver administração coletiva, as decisões se tomarão pela maioria de votos dos presentes, salvo se o ato constitutivo dispuser de modo diverso.\nCC2002:ART.48:PAR.UNICO\tDecai em três anos o direito de anular as decisões a que se refere este artigo, quando violarem a lei ou estatuto, ou forem eivadas de erro, dolo, simulação ou fraude.",
+   "source_snapshot_sha256": "58b4298550ee062689010e146a19762c036c2a14fb3c122230e1b127f17a520d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.48:CAPUT",
+     "text": "Se a pessoa jurídica tiver administração coletiva, as decisões se tomarão pela maioria de votos dos presentes, salvo se o ato constitutivo dispuser de modo diverso."
+    },
+    {
+     "label": "CC2002:ART.48:PAR.UNICO",
+     "text": "Decai em três anos o direito de anular as decisões a que se refere este artigo, quando violarem a lei ou estatuto, ou forem eivadas de erro, dolo, simulação ou fraude."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Se a pessoa jurídica tiver administração coletiva, as decisões se tomarão pela maioria de votos dos presentes, salvo se o ato constitutivo dispuser de modo diverso. | Decai em três anos o direito de anular as decisões a que se refere este artigo, quando violarem a lei ou estatuto, ou forem eivadas de erro, dolo, simulação ou fraude.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "af2a2013e18b835405905b8ea72114de817db167a4652234e675cd030631dea9",
+     "o_que_significa": "b116289ad0fa650a8c8cd045c91714792fa3e7a96cdfc9526d61eaf34aa4697f",
+     "exemplo_pratico": "2f79f4418585329c019a5e21056e69b5755d7726c3ee026c6d103022864fe30f",
+     "atencao": "359b95c5ce607fb75b17b1f88f7bf083b73de997d35136fe1261061adbc9950c",
+     "palavras_dificeis": "d31691641d3ce71d1c31b08255a014239ef264e5c49a1b29e8f38e602ca7c655"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.48, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 49,
+   "target_id": "CC2002:ART.48-A",
+   "explanation_id": "ENTENDA/CC2002:ART.48-A/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.48-A:CAPUT\tAs pessoas jurídicas de direito privado, sem prejuízo do previsto em legislação especial e em seus atos constitutivos, poderão realizar suas assembleias gerais por meio eletrônico, inclusive para os fins do disposto no art. 59 deste Código, respeitados os direitos previstos de participação e de manifestação. (Artigo acrescido pela Lei nº 14.195, de 26/8/2021 , com redação dada pela Medida Provisória nº 1.085, de 27/12/2021 , convertida na Lei nº 14.382, de 27/6/2022)",
+   "source_snapshot_sha256": "41526d7d8fb976b1790819e0881247ec151906cafd5088f0eb5e721c3b0128a4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.48-A:CAPUT",
+     "text": "As pessoas jurídicas de direito privado, sem prejuízo do previsto em legislação especial e em seus atos constitutivos, poderão realizar suas assembleias gerais por meio eletrônico, inclusive para os fins do disposto no art. 59 deste Código, respeitados os direitos previstos de participação e de manifestação. (Artigo acrescido pela Lei nº 14.195, de 26/8/2021 , com redação dada pela Medida Provisória nº 1.085, de 27/12/2021 , convertida na Lei nº 14.382, de 27/6/2022)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As pessoas jurídicas de direito privado, sem prejuízo do previsto em legislação especial e em seus atos constitutivos, poderão realizar suas assembleias gerais por meio eletrônico, inclusive para os fins do disposto no art. 59 deste Código, respeitados os direitos previstos de participação e de manifestação. (Artigo acrescido pela Lei nº 14.195, de 26/8/2021 , com redação dada pela Medida Provisória nº 1.085, de 27/12/2021 , convertida na Lei nº 14.382, de 27/6/2022)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "e7a0b5e2f6575e05a2b8325ddd0aa8f9554a0ba7cede1e74070bd4e8d65650bd",
+     "o_que_significa": "23f681fe119361657fac3d9e61e5e355971c02943d8b422484a80e368f141101",
+     "exemplo_pratico": "7108fd2c9c010946d6d85898735b7956a94ad18f7d607c5c34953e5849a23851",
+     "atencao": "8a511eef6c6b35612323e9bfc4d9cd8baba7aaa968e7888c02e617152b7584bd",
+     "palavras_dificeis": "40b1c72cf3e2fec3e2c7e204882734d06aa7ad5e614b6dd2e2bde052fedd71d9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.48-A, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 50,
+   "target_id": "CC2002:ART.49",
+   "explanation_id": "ENTENDA/CC2002:ART.49/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.49:CAPUT\tSe a administração da pessoa jurídica vier a faltar, o juiz, a requerimento de qualquer interessado, nomear-lhe-á administrador provisório.",
+   "source_snapshot_sha256": "a5e1f21ef4fbc9feb24ec974609d69a7891e7839809c0fc252855e7237dd74e9",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.49:CAPUT",
+     "text": "Se a administração da pessoa jurídica vier a faltar, o juiz, a requerimento de qualquer interessado, nomear-lhe-á administrador provisório."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se a administração da pessoa jurídica vier a faltar, o juiz, a requerimento de qualquer interessado, nomear-lhe-á administrador provisório.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f1c75c9a151f6ad1bf8d4d1d8fe6aa279e674a39124f651d234371e3a6cdea11",
+     "o_que_significa": "5c68fd679fc6cf93141f4e19c61260387432e67cf514cee65a07e410e562d036",
+     "exemplo_pratico": "49e0532bf2f3dab442a8fc5b10bd457d7734aabb34c4daf495ce783e270da12c",
+     "atencao": "26be3d78f389ffa5816355356691837a7e47fd8dc466a1bdb8dba5f10be06105",
+     "palavras_dificeis": "b169a98b816576551eaaf2e13e132b62c43f0ff1e290fb749c443312828a9599"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Preenchida a falta de administração e havendo requerimento de interessado, o art. 49 usa a consequência imperativa 'nomear-lhe-á administrador provisório', e não uma faculdade genérica.",
+   "finding": {
+    "target_id": "CC2002:ART.49",
+    "audit_wave": "QA02_WAVE_02",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "o juiz pode nomear administrador provisório",
+    "legal_basis": "Preenchida a falta de administração e havendo requerimento de interessado, o art. 49 usa a consequência imperativa 'nomear-lhe-á administrador provisório', e não uma faculdade genérica.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "ALTERACAO_DA_FORCA_NORMATIVA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O modal facultativo pode induzir o leitor a entender que o juiz pode deixar a pessoa jurídica sem administração mesmo quando a hipótese legal está configurada.",
+    "correction_direction": "Empregar formulação imperativa condicionada: faltando a administração, o juiz, a requerimento de interessado, nomeará administrador provisório.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   }
+  },
+  {
+   "queue_position": 51,
+   "target_id": "CC2002:ART.49-A",
+   "explanation_id": "ENTENDA/CC2002:ART.49-A/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.49-A:CAPUT\tA pessoa jurídica não se confunde com os seus sócios, associados, instituidores ou administradores.\nCC2002:ART.49-A:PAR.UNICO\tA autonomia patrimonial das pessoas jurídicas é um instrumento lícito de alocação e segregação de riscos, estabelecido pela lei com a finalidade de estimular empreendimentos, para a geração de empregos, tributo, renda e inovação em benefício de todos. (Artigo acrescido pela Lei nº 13.874, de 20/9/2019)",
+   "source_snapshot_sha256": "617a4f898144322881ebb83b70cd9b22374a03f4f59a6e19a259e973cc93d069",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.49-A:CAPUT",
+     "text": "A pessoa jurídica não se confunde com os seus sócios, associados, instituidores ou administradores."
+    },
+    {
+     "label": "CC2002:ART.49-A:PAR.UNICO",
+     "text": "A autonomia patrimonial das pessoas jurídicas é um instrumento lícito de alocação e segregação de riscos, estabelecido pela lei com a finalidade de estimular empreendimentos, para a geração de empregos, tributo, renda e inovação em benefício de todos. (Artigo acrescido pela Lei nº 13.874, de 20/9/2019)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A pessoa jurídica não se confunde com os seus sócios, associados, instituidores ou administradores. | A autonomia patrimonial das pessoas jurídicas é um instrumento lícito de alocação e segregação de riscos, estabelecido pela lei com a finalidade de estimular empreendimentos, para a geração de empregos, tributo, renda e inovação em benefício de todos. (Artigo acrescido pela Lei nº 13.874, de 20/9/2019)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "60515492b57f7cc6579c3bb09a376c5e989c5d37e32449fe4ff708afbdacccd8",
+     "o_que_significa": "ecbcfaf132338e57d45623d00060099b49927f99586b1c8379857449041027fe",
+     "exemplo_pratico": "989e497f49e4347155bb2c91ad096a6e7ebaef47344412cff1719919c8ccde60",
+     "atencao": "2fa0b4e6a3b10130ff45c9dcaea839a296b8a39618ca96c904362d1cfb02acd8",
+     "palavras_dificeis": "a857e96c617cf0647e60e11f72d9354050dc432ed58088b513a72476d4859d17"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.49-A, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 52,
+   "target_id": "CC2002:ART.50",
+   "explanation_id": "ENTENDA/CC2002:ART.50/BASE/3",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.50:CAPUT\tEm caso de abuso da personalidade jurídica, caracterizado pelo desvio de finalidade ou pela confusão patrimonial, pode o juiz, a requerimento da parte, ou do Ministério Público quando lhe couber intervir no processo, desconsiderá-la para que os efeitos de certas e determinadas relações de obrigações sejam estendidos aos bens particulares de administradores ou de sócios da pessoa jurídica beneficiados direta ou indiretamente pelo abuso. (“Caput” do artigo com redação dada pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)\nCC2002:ART.50:PAR.1\tPara os fins do disposto neste artigo, desvio de finalidade é a utilização da pessoa jurídica com o propósito de lesar credores e para a prática de atos ilícitos de qualquer natureza. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida e com redação dada pela Lei nº 13.874, de 20/9/2019)\nCC2002:ART.50:PAR.2\tEntende-se por confusão patrimonial a ausência de separação de fato entre os patrimônios, caracterizada por:\nCC2002:ART.50:PAR.2:INC.I\tcumprimento repetitivo pela sociedade de obrigações do sócio ou do administrador ou vice-versa;\nCC2002:ART.50:PAR.2:INC.II\ttransferência de ativos ou de passivos sem efetivas contraprestações, exceto os de valor proporcionalmente insignificante; e\nCC2002:ART.50:PAR.2:INC.III\toutros atos de descumprimento da autonomia patrimonial. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)\nCC2002:ART.50:PAR.3\tO disposto no caput e nos §§ 1º e 2º deste artigo também se aplica à extensão das obrigações de sócios ou de administradores à pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)\nCC2002:ART.50:PAR.4\tA mera existência de grupo econômico sem a presença dos requisitos de que trata o caput deste artigo não autoriza a desconsideração da personalidade da pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)\nCC2002:ART.50:PAR.5\tNão constitui desvio de finalidade a mera expansão ou a alteração da finalidade original da atividade econômica específica da pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)",
+   "source_snapshot_sha256": "6406ac267f520f2ec9a00b88f3e6e8f107b044809f13f37d356cb499e3c59499",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.50:CAPUT",
+     "text": "Em caso de abuso da personalidade jurídica, caracterizado pelo desvio de finalidade ou pela confusão patrimonial, pode o juiz, a requerimento da parte, ou do Ministério Público quando lhe couber intervir no processo, desconsiderá-la para que os efeitos de certas e determinadas relações de obrigações sejam estendidos aos bens particulares de administradores ou de sócios da pessoa jurídica beneficiados direta ou indiretamente pelo abuso. (“Caput” do artigo com redação dada pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.1",
+     "text": "Para os fins do disposto neste artigo, desvio de finalidade é a utilização da pessoa jurídica com o propósito de lesar credores e para a prática de atos ilícitos de qualquer natureza. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida e com redação dada pela Lei nº 13.874, de 20/9/2019)"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.2",
+     "text": "Entende-se por confusão patrimonial a ausência de separação de fato entre os patrimônios, caracterizada por:"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.2:INC.I",
+     "text": "cumprimento repetitivo pela sociedade de obrigações do sócio ou do administrador ou vice-versa;"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.2:INC.II",
+     "text": "transferência de ativos ou de passivos sem efetivas contraprestações, exceto os de valor proporcionalmente insignificante; e"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.2:INC.III",
+     "text": "outros atos de descumprimento da autonomia patrimonial. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.3",
+     "text": "O disposto no caput e nos §§ 1º e 2º deste artigo também se aplica à extensão das obrigações de sócios ou de administradores à pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.4",
+     "text": "A mera existência de grupo econômico sem a presença dos requisitos de que trata o caput deste artigo não autoriza a desconsideração da personalidade da pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)"
+    },
+    {
+     "label": "CC2002:ART.50:PAR.5",
+     "text": "Não constitui desvio de finalidade a mera expansão ou a alteração da finalidade original da atividade econômica específica da pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: Em caso de abuso da personalidade jurídica, caracterizado pelo desvio de finalidade ou pela confusão patrimonial, pode o juiz, a requerimento da parte, ou do Ministério Público quando lhe couber intervir no processo, desconsiderá-la para que os efeitos de certas e determinadas relações de obrigações sejam estendidos aos bens particulares de administradores ou de sócios da pessoa jurídica beneficiados direta ou indiretamente pelo abuso. (“Caput” do artigo com redação dada pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019) | Para os fins do disposto neste artigo, desvio de finalidade é a utilização da pessoa jurídica com o propósito de lesar credores e para a prática de atos ilícitos de qualquer natureza. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida e com redação dada pela Lei nº 13.874, de 20/9/2019) | Entende-se por confusão patrimonial a ausência de separação de fato entre os patrimônios, caracterizada por: | cumprimento repetitivo pela sociedade de obrigações do sócio ou do administrador ou vice-versa; | transferência de ativos ou de passivos sem efetivas contraprestações, exceto os de valor proporcionalmente insignificante; e | outros atos de descumprimento da autonomia patrimonial. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019) | O disposto no caput e nos §§ 1º e 2º deste artigo também se aplica à extensão das obrigações de sócios ou de administradores à pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019) | A mera existência de grupo econômico sem a presença dos requisitos de que trata o caput deste artigo não autoriza a desconsideração da personalidade da pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019) | Não constitui desvio de finalidade a mera expansão ou a alteração da finalidade original da atividade econômica específica da pessoa jurídica. (Parágrafo acrescido pela Medida Provisória nº 881, de 30/4/2019, convertida na Lei nº 13.874, de 20/9/2019)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6b9038bcb1270ffe59512d45eedc5b6eb9de5baacef3757d01ae5d72200436af",
+     "o_que_significa": "2c65ddc99cc2c255851a60704bd6b19b45121649024627d9e4e05c8152cf6dbd",
+     "exemplo_pratico": "c6721e9450e1bb798bcc1e2dd9bc244df9f15f868fdd8a089872e41b4a74e7a3",
+     "atencao": "8030a1e78e4a955da47ec3535b8e63fb2dd68dba3f49cccf0f4663304740c662",
+     "palavras_dificeis": "2262fcf1a69fa0f544bddd47dbf8f8c0ae8113a035ff74ee423da55700876687"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.50, os cinco campos foram comparados com todos os 9 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 53,
+   "target_id": "CC2002:ART.51",
+   "explanation_id": "ENTENDA/CC2002:ART.51/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.51:CAPUT\tNos casos de dissolução da pessoa jurídica ou cassada a autorização para seu funcionamento, ela subsistirá para os fins de liquidação, até que esta se conclua.\nCC2002:ART.51:PAR.1\tFar-se-á, no registro onde a pessoa jurídica estiver inscrita, a averbação de sua dissolução.\nCC2002:ART.51:PAR.2\tAs disposições para a liquidação das sociedades aplicam-se, no que couber, às demais pessoas jurídicas de direito privado.\nCC2002:ART.51:PAR.3\tEncerrada a liquidação, promover-se-á o cancelamento da inscrição da pessoa jurídica.",
+   "source_snapshot_sha256": "ddb52179fc09b809fe43109b4c5a36ec9b395117146b1d5804eeaeb8eecefb3c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.51:CAPUT",
+     "text": "Nos casos de dissolução da pessoa jurídica ou cassada a autorização para seu funcionamento, ela subsistirá para os fins de liquidação, até que esta se conclua."
+    },
+    {
+     "label": "CC2002:ART.51:PAR.1",
+     "text": "Far-se-á, no registro onde a pessoa jurídica estiver inscrita, a averbação de sua dissolução."
+    },
+    {
+     "label": "CC2002:ART.51:PAR.2",
+     "text": "As disposições para a liquidação das sociedades aplicam-se, no que couber, às demais pessoas jurídicas de direito privado."
+    },
+    {
+     "label": "CC2002:ART.51:PAR.3",
+     "text": "Encerrada a liquidação, promover-se-á o cancelamento da inscrição da pessoa jurídica."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Nos casos de dissolução da pessoa jurídica ou cassada a autorização para seu funcionamento, ela subsistirá para os fins de liquidação, até que esta se conclua. | Far-se-á, no registro onde a pessoa jurídica estiver inscrita, a averbação de sua dissolução. | As disposições para a liquidação das sociedades aplicam-se, no que couber, às demais pessoas jurídicas de direito privado. | Encerrada a liquidação, promover-se-á o cancelamento da inscrição da pessoa jurídica.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a2d871a88374d5ff75811c7cb346299f52c6a90c356446a6c398c996d56366be",
+     "o_que_significa": "ad037a588e69c8200298770bca685d53c7eabf083568db20cf81c8caebc58a27",
+     "exemplo_pratico": "d89ff93e5419885a66fb269e66351f0f94ca331b33cefab3764a66a64156b86c",
+     "atencao": "4b7abe296325151642150887b926a547209ab45ff1be132d742082be2b439c92",
+     "palavras_dificeis": "14c1e327f852461676188b6a1d2d56d92d38ebfc429a728c8a72d5fcdd67ac12"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Os §§ 1º e 2º do art. 51 também exigem averbação da dissolução no registro e aplicam, no que couber, as regras de liquidação das sociedades às demais pessoas jurídicas privadas.",
+   "finding": {
+    "target_id": "CC2002:ART.51",
+    "audit_wave": "QA02_WAVE_02",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "subsiste para fins de liquidação após dissolução ou cassação, até conclusão e cancelamento do registro",
+    "legal_basis": "Os §§ 1º e 2º do art. 51 também exigem averbação da dissolução no registro e aplicam, no que couber, as regras de liquidação das sociedades às demais pessoas jurídicas privadas.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_EFEITOS_PROCEDIMENTAIS",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "O leitor conhece a subsistência para liquidação, mas não os dois comandos que disciplinam publicidade registral e regime subsidiário.",
+    "correction_direction": "Acrescentar a averbação obrigatória da dissolução e a aplicação, quando compatível, das regras de liquidação das sociedades.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   }
+  },
+  {
+   "queue_position": 54,
+   "target_id": "CC2002:ART.52",
+   "explanation_id": "ENTENDA/CC2002:ART.52/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.52:CAPUT\tAplica-se às pessoas jurídicas, no que couber, a proteção dos direitos da personalidade.",
+   "source_snapshot_sha256": "4b3980e759f25f8efc133c54687788760e470f8080c9f91fcbf6ef8e57381801",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.52:CAPUT",
+     "text": "Aplica-se às pessoas jurídicas, no que couber, a proteção dos direitos da personalidade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Aplica-se às pessoas jurídicas, no que couber, a proteção dos direitos da personalidade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1a6ead115d66812a606635cc96db18b6bc3e948872edf4a1178bf26bcdea1351",
+     "o_que_significa": "9f48eacb53b28d8c88956e8ef3df06e9f9382090887b4d17f9cd3ca0904a488f",
+     "exemplo_pratico": "b68ea4e723c570285a0fa231e98d31692bfa712d1d95b77d5f45de5bba0436ae",
+     "atencao": "5ce94c41ec56e85a85e4c0b37c2a3e24022873a3048884fb2c24a182240ec760",
+     "palavras_dificeis": "5f98a925f95a43e1faae6572f9bd6b991c07d2942f891f3abe086085c1b56061"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.52, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 55,
+   "target_id": "CC2002:ART.53",
+   "explanation_id": "ENTENDA/CC2002:ART.53/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.53:CAPUT\tConstituem-se as associações pela união de pessoas que se organizem para fins não econômicos.\nCC2002:ART.53:PAR.UNICO\tNão há, entre os associados, direitos e obrigações recíprocos.",
+   "source_snapshot_sha256": "8abb4cc2e9d0779328ecaa8100b7b4e98e6376b2d231ccc6b3dccf5c4fdad209",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.53:CAPUT",
+     "text": "Constituem-se as associações pela união de pessoas que se organizem para fins não econômicos."
+    },
+    {
+     "label": "CC2002:ART.53:PAR.UNICO",
+     "text": "Não há, entre os associados, direitos e obrigações recíprocos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Constituem-se as associações pela união de pessoas que se organizem para fins não econômicos. | Não há, entre os associados, direitos e obrigações recíprocos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5f5cbd91f502b27cc56a3ac4076c9ec0efc6a2a33502ef68adace7dccb6536cb",
+     "o_que_significa": "32c6a98082df89d86c27c88361c8fbe17b1ec6670536fb3a16da403978c38b42",
+     "exemplo_pratico": "918812433f869dee18bb36b380ef533302014836a141d78001b7be8544296af8",
+     "atencao": "4e50f9b75e4f6b9ce411815078afb3c8064d14cad44e5ed4ed27fc22762f6794",
+     "palavras_dificeis": "78237d3dc1de24f35999cc9d6b6f0d416d038acc1f39cf578fa71106e4977f55"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.53, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 56,
+   "target_id": "CC2002:ART.54",
+   "explanation_id": "ENTENDA/CC2002:ART.54/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.54:CAPUT\tSob pena de nulidade, o estatuto das associações conterá:\nCC2002:ART.54:INC.I\ta denominação, os fins e a sede da associação;\nCC2002:ART.54:INC.II\tos requisitos para a admissão, demissão e exclusão dos associados;\nCC2002:ART.54:INC.III\tos direitos e deveres dos associados;\nCC2002:ART.54:INC.IV\tas fontes de recursos para sua manutenção;\nCC2002:ART.54:INC.V\to modo de constituição e de funcionamento dos órgãos deliberativos; (Inciso com redação dada pela Lei nº 11.127, de 28/6/2005)\nCC2002:ART.54:INC.VI\tas condições para a alteração das disposições estatutárias e para a dissolução.\nCC2002:ART.54:INC.VII\ta forma de gestão administrativa e de aprovação das respectivas contas. (Inciso acrescido pela Lei nº 11.127, de 28/6/2005)",
+   "source_snapshot_sha256": "0b9c26e1bf37dfb32f79c114ad0a75056524f973b6eb8909d215c0bc76f2a6ff",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.54:CAPUT",
+     "text": "Sob pena de nulidade, o estatuto das associações conterá:"
+    },
+    {
+     "label": "CC2002:ART.54:INC.I",
+     "text": "a denominação, os fins e a sede da associação;"
+    },
+    {
+     "label": "CC2002:ART.54:INC.II",
+     "text": "os requisitos para a admissão, demissão e exclusão dos associados;"
+    },
+    {
+     "label": "CC2002:ART.54:INC.III",
+     "text": "os direitos e deveres dos associados;"
+    },
+    {
+     "label": "CC2002:ART.54:INC.IV",
+     "text": "as fontes de recursos para sua manutenção;"
+    },
+    {
+     "label": "CC2002:ART.54:INC.V",
+     "text": "o modo de constituição e de funcionamento dos órgãos deliberativos; (Inciso com redação dada pela Lei nº 11.127, de 28/6/2005)"
+    },
+    {
+     "label": "CC2002:ART.54:INC.VI",
+     "text": "as condições para a alteração das disposições estatutárias e para a dissolução."
+    },
+    {
+     "label": "CC2002:ART.54:INC.VII",
+     "text": "a forma de gestão administrativa e de aprovação das respectivas contas. (Inciso acrescido pela Lei nº 11.127, de 28/6/2005)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: Sob pena de nulidade, o estatuto das associações conterá: | a denominação, os fins e a sede da associação; | os requisitos para a admissão, demissão e exclusão dos associados; | os direitos e deveres dos associados; | as fontes de recursos para sua manutenção; | o modo de constituição e de funcionamento dos órgãos deliberativos; (Inciso com redação dada pela Lei nº 11.127, de 28/6/2005) | as condições para a alteração das disposições estatutárias e para a dissolução. | a forma de gestão administrativa e de aprovação das respectivas contas. (Inciso acrescido pela Lei nº 11.127, de 28/6/2005)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6e7e14d099ecf5ff4d2eb54085e727d59ed419ba8ac5d1615906dea3c9210b34",
+     "o_que_significa": "4f0ee33d5c5363847b2e186a0da24981f3d9b492bd99898f626d05065d8bda97",
+     "exemplo_pratico": "72369e98427bda9aee5b4a48a4c9d13e6ffa5e42e3f192d93c742979e9722072",
+     "atencao": "2f1509bde27b278396ebe23dd09785aef495e5d8658a5da05d092835d6422a3c",
+     "palavras_dificeis": "941c1bc9230386b7511984cc41f933835d124ee980674a256629ecede8066921"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.54, os cinco campos foram comparados com todos os 8 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 57,
+   "target_id": "CC2002:ART.55",
+   "explanation_id": "ENTENDA/CC2002:ART.55/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.55:CAPUT\tOs associados devem ter iguais direitos, mas o estatuto poderá instituir categorias com vantagens especiais.",
+   "source_snapshot_sha256": "ceb761a632fae1201a709196866c3ef41b6d9946d93439dd1124bf0daaffc6ae",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.55:CAPUT",
+     "text": "Os associados devem ter iguais direitos, mas o estatuto poderá instituir categorias com vantagens especiais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Os associados devem ter iguais direitos, mas o estatuto poderá instituir categorias com vantagens especiais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ec9febca44fd90c6699a18faa79b74c31d292f3080943f419f82d06f259eba97",
+     "o_que_significa": "6192cb35e7b80b3eccc98eb2ab2ebfb2cdbedbedc79a5103d794891bc51282a0",
+     "exemplo_pratico": "258ccf42eaa212a20211002514a4873a2e62477b061b38ef8b618b998cb9d037",
+     "atencao": "035fbb151be5745737f80fc01d4711770c137ba0af75af3286a306368e859146",
+     "palavras_dificeis": "496d32aee67d3ee92f9046f48754b52199be502baaf04895ca9bbcd6c9ce4724"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.55, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 58,
+   "target_id": "CC2002:ART.56",
+   "explanation_id": "ENTENDA/CC2002:ART.56/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.56:CAPUT\tA qualidade de associado é intransmissível, se o estatuto não dispuser o contrário.\nCC2002:ART.56:PAR.UNICO\tSe o associado for titular de quota ou fração ideal do patrimônio da associação, a transferência daquela não importará, de per si , na atribuição da qualidade de associado ao adquirente ou ao herdeiro, salvo disposição diversa do estatuto.",
+   "source_snapshot_sha256": "6ac28501ee7e5fd0df8e183e1b9e2d184e866f24b9f52c3e4abed263a815a308",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.56:CAPUT",
+     "text": "A qualidade de associado é intransmissível, se o estatuto não dispuser o contrário."
+    },
+    {
+     "label": "CC2002:ART.56:PAR.UNICO",
+     "text": "Se o associado for titular de quota ou fração ideal do patrimônio da associação, a transferência daquela não importará, de per si , na atribuição da qualidade de associado ao adquirente ou ao herdeiro, salvo disposição diversa do estatuto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A qualidade de associado é intransmissível, se o estatuto não dispuser o contrário. | Se o associado for titular de quota ou fração ideal do patrimônio da associação, a transferência daquela não importará, de per si , na atribuição da qualidade de associado ao adquirente ou ao herdeiro, salvo disposição diversa do estatuto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "247f1aa083e458d4adabe52c03c334561915c42041ab82161f631ef440a5c2be",
+     "o_que_significa": "3cfda7eeb4e3e51da253399edc890d38b78b49260308b3718914653dd420c78b",
+     "exemplo_pratico": "37d60c2beccc36388e15e15a9c0b0aaa38c462b5ba3b57dcb518a4a1abc1bed3",
+     "atencao": "ecdcf3a0b78c54fb0a75e9f1623dcdda519b350434f5b96df8151eae541419a5",
+     "palavras_dificeis": "532153d47a4870bffe1c7fd191e8c357183d5cd238dcc286b38094c965a3e286"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.56, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 59,
+   "target_id": "CC2002:ART.57",
+   "explanation_id": "ENTENDA/CC2002:ART.57/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.57:CAPUT\tA exclusão do associado só é admissível havendo justa causa, assim reconhecida em procedimento que assegure direito de defesa e de recurso, nos termos previstos no estatuto. (“Caput” do artigo com redação dada pela Lei nº 11.127, de 28/6/2005)\nCC2002:ART.57:PAR.UNICO\t(Revogado pela Lei nº 11.127, de 28/6/2005)",
+   "source_snapshot_sha256": "6d69a2c0b03aaa61440b5489d5d6b17ead6a90792bd77920af730e5c29ec3506",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.57:CAPUT",
+     "text": "A exclusão do associado só é admissível havendo justa causa, assim reconhecida em procedimento que assegure direito de defesa e de recurso, nos termos previstos no estatuto. (“Caput” do artigo com redação dada pela Lei nº 11.127, de 28/6/2005)"
+    },
+    {
+     "label": "CC2002:ART.57:PAR.UNICO",
+     "text": "(Revogado pela Lei nº 11.127, de 28/6/2005)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A exclusão do associado só é admissível havendo justa causa, assim reconhecida em procedimento que assegure direito de defesa e de recurso, nos termos previstos no estatuto. (“Caput” do artigo com redação dada pela Lei nº 11.127, de 28/6/2005) | (Revogado pela Lei nº 11.127, de 28/6/2005)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "38406e20ce96b4b1a58d1dd03175f545841e6dbb4e8db94fee182f079c4dab89",
+     "o_que_significa": "9d2b6e3757499211874b8cbfa87e17790a1994ef11b7bc34d96c47a9fba9b30c",
+     "exemplo_pratico": "32f13ae2f09d4af544447fdb59e206da75dca86974c219e2aa8557a73f70f856",
+     "atencao": "80e4214d9dd63b293f499e6def984525ba8c304e8591cb933753ee1d5b3a7d7e",
+     "palavras_dificeis": "fdf92bfdf0d1e2cd9e1f86147ef1e0ea896c4f6105013e11b754ef8748434ca9"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.57, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 60,
+   "target_id": "CC2002:ART.58",
+   "explanation_id": "ENTENDA/CC2002:ART.58/BASE/2",
+   "book": "PARTE_GERAL",
+   "origin_mission": "CC02-CC05",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.58:CAPUT\tNenhum associado poderá ser impedido de exercer direito ou função que lhe tenha sido legitimamente conferido, a não ser nos casos e pela forma previstos na lei ou no estatuto.",
+   "source_snapshot_sha256": "b63fd303f68bf532481140604fadaba0ac1335b969ebc63ea5348bd7fbea4624",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.58:CAPUT",
+     "text": "Nenhum associado poderá ser impedido de exercer direito ou função que lhe tenha sido legitimamente conferido, a não ser nos casos e pela forma previstos na lei ou no estatuto."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Nenhum associado poderá ser impedido de exercer direito ou função que lhe tenha sido legitimamente conferido, a não ser nos casos e pela forma previstos na lei ou no estatuto.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "41bd15b586835e7285563c4db4bd01615e434da03ae30718f1e61c3008225d66",
+     "o_que_significa": "09654371c46014dac7519b52750ad3e91eb4abfa8b0c3ea72bbae57454aa838f",
+     "exemplo_pratico": "3fc1193d6fd585de59ea1e9b51ea37a9b18b49194cebf19dd2d61b927eeec844",
+     "atencao": "8fb622eb8452120b3ea8bd5bd43a59160d5c7771b29a1b9ad832a6869000d350",
+     "palavras_dificeis": "f06a6339285755c0aed38f7c05816b3e5ef12d1c731b9df75dfbffed50aadabc"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.58, os cinco campos foram comparados com todos os 1 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
    "finding": null
   }
  ]

@@ -140,7 +140,49 @@
    "correction_direction": "Reproduzir as alternativas legais: bens existentes no estado em que se acharem, bens sub-rogados ou preço recebido pelos bens alienados.",
    "confidence": "ALTA",
    "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.41",
+   "audit_wave": "QA02_WAVE_02",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "O artigo enumera pessoas jurídicas de direito público interno e admite outras criadas por lei.",
+   "legal_basis": "Além da enumeração, o parágrafo único do art. 41 determina que, salvo disposição contrária, pessoas jurídicas de direito público estruturadas sob direito privado se regem, no que couber ao funcionamento, pelas normas do Código Civil.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_REGIME_JURIDICO",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "A explicação não informa quando e em que medida as normas civis regem o funcionamento de entidade pública com estrutura de direito privado.",
+   "correction_direction": "Acrescentar a regra subsidiária do parágrafo único, com as ressalvas 'salvo disposição em contrário' e 'no que couber ao funcionamento'.",
+   "confidence": "ALTA",
+   "human_review_required": true
+  },
+  {
+   "target_id": "CC2002:ART.49",
+   "audit_wave": "QA02_WAVE_02",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "o juiz pode nomear administrador provisório",
+   "legal_basis": "Preenchida a falta de administração e havendo requerimento de interessado, o art. 49 usa a consequência imperativa 'nomear-lhe-á administrador provisório', e não uma faculdade genérica.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "ALTERACAO_DA_FORCA_NORMATIVA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O modal facultativo pode induzir o leitor a entender que o juiz pode deixar a pessoa jurídica sem administração mesmo quando a hipótese legal está configurada.",
+   "correction_direction": "Empregar formulação imperativa condicionada: faltando a administração, o juiz, a requerimento de interessado, nomeará administrador provisório.",
+   "confidence": "ALTA",
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.51",
+   "audit_wave": "QA02_WAVE_02",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "subsiste para fins de liquidação após dissolução ou cassação, até conclusão e cancelamento do registro",
+   "legal_basis": "Os §§ 1º e 2º do art. 51 também exigem averbação da dissolução no registro e aplicam, no que couber, as regras de liquidação das sociedades às demais pessoas jurídicas privadas.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_EFEITOS_PROCEDIMENTAIS",
+   "severity": "MÉDIO",
+   "legal_or_pedagogical_consequence": "O leitor conhece a subsistência para liquidação, mas não os dois comandos que disciplinam publicidade registral e regime subsidiário.",
+   "correction_direction": "Acrescentar a averbação obrigatória da dissolução e a aplicação, quando compatível, das regras de liquidação das sociedades.",
+   "confidence": "ALTA",
+   "human_review_required": false
   }
  ],
- "total": 10
+ "total": 13
 }
