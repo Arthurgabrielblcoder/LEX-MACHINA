@@ -26,6 +26,7 @@ SPECIAL_SOURCES = {
     "CC2002:ART.20": ["https://portal.stf.jus.br/peticaoInicial/verPeticaoInicial.asp?base=ADI&numProcesso=4815"],
     "CC2002:ART.21": ["https://portal.stf.jus.br/peticaoInicial/verPeticaoInicial.asp?base=ADI&numProcesso=4815"],
     "CC2002:ART.38": ["https://processo.stj.jus.br/SCON/GetPDFINFJ?edicao=0716"],
+    "CC2002:ART.39": ["https://processo.stj.jus.br/SCON/GetPDFINFJ?edicao=0716"],
 }
 
 

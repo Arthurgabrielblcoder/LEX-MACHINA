@@ -2,5 +2,48 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-02",
  "as_of": "2026-11-12",
- "findings": []
+ "findings": [
+  {
+   "target_id": "CC2002:ART.31",
+   "audit_wave": "QA02_WAVE_02",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "Imóveis do ausente só podem ser vendidos ou hipotecados",
+   "legal_basis": "O art. 31 restringe qualquer alienação, salvo desapropriação, e a hipoteca sem ordem judicial destinada a evitar ruína; alienar é mais amplo que vender.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "RESTRICAO_SEMANTICA_INDEVIDA",
+   "severity": "MÉDIO",
+   "legal_or_pedagogical_consequence": "Pode sugerir que doação, permuta ou outra forma de alienação não está sujeita à restrição legal.",
+   "correction_direction": "Substituir 'vendidos' por 'alienados' e manter expressas a exceção da desapropriação, a ordem judicial e a finalidade de evitar ruína.",
+   "confidence": "ALTA",
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.33",
+   "audit_wave": "QA02_WAVE_02",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "com consequências para retorno injustificado",
+   "legal_basis": "O parágrafo único do art. 33 determina especificamente que, provada ausência voluntária e injustificada, o ausente perde em favor do sucessor sua parte nos frutos e rendimentos.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_CONSEQUENCIA_LEGAL",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor não consegue identificar qual direito patrimonial o ausente perde nem quem se beneficia da perda.",
+   "correction_direction": "Explicitar a perda da parte do ausente nos frutos e rendimentos, em favor do sucessor, quando a ausência voluntária e injustificada for provada.",
+   "confidence": "ALTA",
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.39",
+   "audit_wave": "QA02_WAVE_02",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "preços ainda identificáveis",
+   "legal_basis": "O art. 39 assegura o preço que herdeiros e interessados receberam pelos bens alienados depois da sucessão definitiva; o texto não condiciona a restituição à identificação ou subsistência física do numerário.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "REQUISITO_NAO_PREVISTO",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "A condição acrescentada pode reduzir indevidamente o direito restitutório do ausente, descendente ou ascendente que retorna no prazo legal.",
+   "correction_direction": "Reproduzir as alternativas legais: bens existentes no estado em que se acharem, bens sub-rogados ou preço recebido pelos bens alienados.",
+   "confidence": "ALTA",
+   "human_review_required": true
+  }
+ ]
 }
