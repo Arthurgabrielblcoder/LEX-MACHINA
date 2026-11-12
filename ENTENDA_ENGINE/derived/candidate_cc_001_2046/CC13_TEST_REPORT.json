@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "mission": "CC-13",
+  "directed_regression": {"tests": 98, "passed": 98, "status": "PASS"},
+  "global_suite": {
+    "tests": 382,
+    "failures": 7,
+    "errors": 3,
+    "skipped": 2,
+    "worktree_environment_error": "test_git_materialization requires a physical .git/index, while this linked worktree has a .git pointer file",
+    "comparable_run_excluding_environment_only_test": {"tests": 380, "failures": 7, "errors": 2, "skipped": 2},
+    "comparison": "The seven historical failures and two historical Macro07 errors are unchanged from CC-12; no CC-13 regression was introduced. The additional full-run error remains specific to linked-worktree materialization."
+  },
+  "deterministic_checks": {"build": "PASS", "audit": "PASS", "final_evidence": "PASS"},
+  "hardware_access": false,
+  "deploy": false
+}
