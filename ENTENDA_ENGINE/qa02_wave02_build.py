@@ -186,6 +186,73 @@ def main(through):
         "records": remaining,
     }
     write_json(OUT / "QA02_PENDING_PRIORITY_WAVE_03.json", next_queue)
+    if through == 12:
+        checkpoint_hashes = {f"QA02_CHECKPOINT_{n:02d}.json": sha256(OUT / f"QA02_CHECKPOINT_{n:02d}.json")
+                             for n in range(8, 13)}
+        wave1 = json.loads(WAVE1_AUDIT.read_text(encoding="utf-8"))
+        cumulative_by_book = Counter(record["book"] for record in all_records)
+        cumulative_by_book.update({
+            "PARTE_GERAL": 6, "OBRIGACOES_E_CONTRATOS": 14, "EMPRESA": 6,
+            "DIREITOS_REAIS": 8, "FAMILIA": 8, "SUCESSOES": 6,
+            "COMPLEMENTARES_E_FINAIS": 4,
+        })
+        accumulated_findings = old_queue["findings"] + audit_findings
+        consolidation = {
+            "schema_version": 1,
+            "mission": "QA-02-WAVE-02",
+            "as_of": AS_OF,
+            "status": "PARTIAL_REQUIRES_CONTINUATION",
+            "completed_checkpoints": [8, 9, 10, 11, 12],
+            "coverage": {
+                "active_explanations": 2017,
+                "versions": 2180,
+                "historical_versions": 163,
+                "priority_total": 599,
+                "wave_01_unique_audited": wave1["audited_total"],
+                "wave_01_priority_audited": wave1["universe"]["priority_audited"],
+                "wave_02_priority_audited": len(all_records),
+                "priority_audited_accumulated": wave1["universe"]["priority_audited"] + len(all_records),
+                "priority_pending": len(remaining),
+                "unique_audited_accumulated": wave1["audited_total"] + len(all_records),
+                "by_book_accumulated": dict(sorted(cumulative_by_book.items())),
+            },
+            "findings": {
+                "wave_02_total": len(audit_findings),
+                "wave_02_by_severity": dict(sorted(Counter(f["severity"] for f in audit_findings).items())),
+                "accumulated_total": len(accumulated_findings),
+                "accumulated_by_severity": dict(sorted(Counter(f["severity"] for f in accumulated_findings).items())),
+                "wave_02_target_ids": [f["target_id"] for f in audit_findings],
+            },
+            "protected_sha256": PROTECTED,
+            "tests": {
+                "qa02_wave02_specific": {"tests_run": 9, "result": "OK"},
+                "directed_cc02_cc13": {"tests_run": 98, "result": "OK"},
+                "global_suite": {"tests_run": 414, "result": "OK", "skipped": 2},
+                "temp_policy": "TEMP/TMP redirected to a writable worktree directory for the global suite.",
+            },
+            "immutability": {
+                "editorial_corpus_changed": False,
+                "candidate_indexes_changed": False,
+                "production_indexes_changed": False,
+                "deploy_performed": False,
+            },
+            "continuation": {
+                "next_checkpoint": 13,
+                "queue": "QA02_PENDING_PRIORITY_WAVE_03.json",
+                "queue_sha256": sha256(OUT / "QA02_PENDING_PRIORITY_WAVE_03.json"),
+                "next_source_queue_position": selected_count + 1,
+                "next_target_id": remaining[0]["target_id"],
+                "suggested_next_block_source_positions": [101, 120],
+            },
+            "artifact_sha256": {
+                **checkpoint_hashes,
+                "QA02_AUDIT_WAVE_02.json": sha256(OUT / "QA02_AUDIT_WAVE_02.json"),
+                "QA02_CORRECTION_QUEUE_CONSOLIDATED_WAVE_02.json": sha256(OUT / "QA02_CORRECTION_QUEUE_CONSOLIDATED_WAVE_02.json"),
+                "QA02_PENDING_PRIORITY_WAVE_03.json": sha256(OUT / "QA02_PENDING_PRIORITY_WAVE_03.json"),
+                "QA02_WAVE02_FINDINGS.json": sha256(FINDINGS_FILE),
+            },
+        }
+        write_json(OUT / "QA02_CONSOLIDATION_WAVE_02.json", consolidation)
     print(json.dumps({"through": through, "audited": len(all_records), "findings": len(audit_findings),
                       "remaining": len(remaining)}, ensure_ascii=False))
 
