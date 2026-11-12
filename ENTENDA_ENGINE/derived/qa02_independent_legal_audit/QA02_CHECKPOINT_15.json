@@ -1,0 +1,1292 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02-WAVE-03",
+ "checkpoint": 15,
+ "as_of": "2026-11-12",
+ "source_queue": "QA02_PENDING_PRIORITY_WAVE_03.json",
+ "source_queue_sha256": "592983de0f87603d539bc29d6c8ac75e1b1c2ae240c23e9b00e7b5238b50c86f",
+ "source_queue_positions": [
+  141,
+  160
+ ],
+ "examined": 20,
+ "target_ids": [
+  "CC2002:ART.1076",
+  "CC2002:ART.1078",
+  "CC2002:ART.1081",
+  "CC2002:ART.1084",
+  "CC2002:ART.1085",
+  "CC2002:ART.1091",
+  "CC2002:ART.1094",
+  "CC2002:ART.1101",
+  "CC2002:ART.1104",
+  "CC2002:ART.1105",
+  "CC2002:ART.1106",
+  "CC2002:ART.1109",
+  "CC2002:ART.1115",
+  "CC2002:ART.1117",
+  "CC2002:ART.1120",
+  "CC2002:ART.1122",
+  "CC2002:ART.1131",
+  "CC2002:ART.1132",
+  "CC2002:ART.1134",
+  "CC2002:ART.1136"
+ ],
+ "findings": 5,
+ "finding_counts": {
+  "ALTO": 3,
+  "MÉDIO": 2
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "queue_position": 141,
+   "target_id": "CC2002:ART.1076",
+   "explanation_id": "ENTENDA/CC2002:ART.1076/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1076:CAPUT\tRessalvado o disposto no art. 1.061, as deliberações dos sócios serão tomadas (Redação dada pela Lei nº 13.792, de 2019)\nCC2002:ART.1076:INC.I\t(revogado); (Redação dada pela Lei nº 14.451, de 2022) Vigência\nCC2002:ART.1076:INC.II\tpelos votos correspondentes a mais da metade do capital social, nos casos previstos nos incisos II, III, IV, V, VI e VIII do caput do art. 1.071 deste Código; (Redação dada pela Lei nº 14.451, de 2022) Vigência\nCC2002:ART.1076:INC.III\tpela maioria de votos dos presentes, nos demais casos previstos na lei ou no contrato, se este não exigir maioria mais elevada.",
+   "source_snapshot_sha256": "af4f10a56e3dbd1950e68a441581628f4d9ff96ded89e7be9a44d3cebf25c420",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1076:CAPUT",
+     "text": "Ressalvado o disposto no art. 1.061, as deliberações dos sócios serão tomadas (Redação dada pela Lei nº 13.792, de 2019)"
+    },
+    {
+     "label": "CC2002:ART.1076:INC.I",
+     "text": "(revogado); (Redação dada pela Lei nº 14.451, de 2022) Vigência"
+    },
+    {
+     "label": "CC2002:ART.1076:INC.II",
+     "text": "pelos votos correspondentes a mais da metade do capital social, nos casos previstos nos incisos II, III, IV, V, VI e VIII do caput do art. 1.071 deste Código; (Redação dada pela Lei nº 14.451, de 2022) Vigência"
+    },
+    {
+     "label": "CC2002:ART.1076:INC.III",
+     "text": "pela maioria de votos dos presentes, nos demais casos previstos na lei ou no contrato, se este não exigir maioria mais elevada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Ressalvado o disposto no art. 1.061, as deliberações dos sócios serão tomadas (Redação dada pela Lei nº 13.792, de 2019) | (revogado); (Redação dada pela Lei nº 14.451, de 2022) Vigência | pelos votos correspondentes a mais da metade do capital social, nos casos previstos nos incisos II, III, IV, V, VI e VIII do caput do art. 1.071 deste Código; (Redação dada pela Lei nº 14.451, de 2022) Vigência | pela maioria de votos dos presentes, nos demais casos previstos na lei ou no contrato, se este não exigir maioria mais elevada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b36359beb2f58075a0599b0fa88cc8ab4420c29e656a892399cd340f8a676e49",
+     "o_que_significa": "bbab9cb7a46f54ca3c3c4e6ce345b47e64517b81829af815c46c0eedc972695c",
+     "exemplo_pratico": "62afd06fe54e3f78f90afadae1cf8f14ec269b87962aeee3e96c6f092611d7b1",
+     "atencao": "26f00f029d19ffe914788717ced238210e305130b462362a2338cc616c85ec8d",
+     "palavras_dificeis": "dc94db279c9588897ba7dcaac6385fdedfbf55735bb54510fdd2cccf3a6f2bc2"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1076, os cinco campos foram comparados com todos os 4 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 142,
+   "target_id": "CC2002:ART.1078",
+   "explanation_id": "ENTENDA/CC2002:ART.1078/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1078:CAPUT\tA assembléia dos sócios deve realizar-se ao menos uma vez por ano, nos quatro meses seguintes à ao término do exercício social, com o objetivo de:\nCC2002:ART.1078:INC.I\ttomar as contas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico;\nCC2002:ART.1078:INC.II\tdesignar administradores, quando for o caso;\nCC2002:ART.1078:INC.III\ttratar de qualquer outro assunto constante da ordem do dia.\nCC2002:ART.1078:PAR.1\to Até trinta dias antes da data marcada para a assembléia, os documentos referidos no inciso I deste artigo devem ser postos, por escrito, e com a prova do respectivo recebimento, à disposição dos sócios que não exerçam a administração.\nCC2002:ART.1078:PAR.2\to Instalada a assembléia, proceder-se-á à leitura dos documentos referidos no parágrafo antecedente, os quais serão submetidos, pelo presidente, a discussão e votação, nesta não podendo tomar parte os membros da administração e, se houver, os do conselho fiscal.\nCC2002:ART.1078:PAR.3\to A aprovação, sem reserva, do balanço patrimonial e do de resultado econômico, salvo erro, dolo ou simulação, exonera de responsabilidade os membros da administração e, se houver, os do conselho fiscal.\nCC2002:ART.1078:PAR.4\to Extingue-se em dois anos o direito de anular a aprovação a que se refere o parágrafo antecedente.",
+   "source_snapshot_sha256": "052b98137f2a9ce8922b69d2809e9164f57811178bfe594cb92ab01faf83358b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1078:CAPUT",
+     "text": "A assembléia dos sócios deve realizar-se ao menos uma vez por ano, nos quatro meses seguintes à ao término do exercício social, com o objetivo de:"
+    },
+    {
+     "label": "CC2002:ART.1078:INC.I",
+     "text": "tomar as contas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico;"
+    },
+    {
+     "label": "CC2002:ART.1078:INC.II",
+     "text": "designar administradores, quando for o caso;"
+    },
+    {
+     "label": "CC2002:ART.1078:INC.III",
+     "text": "tratar de qualquer outro assunto constante da ordem do dia."
+    },
+    {
+     "label": "CC2002:ART.1078:PAR.1",
+     "text": "o Até trinta dias antes da data marcada para a assembléia, os documentos referidos no inciso I deste artigo devem ser postos, por escrito, e com a prova do respectivo recebimento, à disposição dos sócios que não exerçam a administração."
+    },
+    {
+     "label": "CC2002:ART.1078:PAR.2",
+     "text": "o Instalada a assembléia, proceder-se-á à leitura dos documentos referidos no parágrafo antecedente, os quais serão submetidos, pelo presidente, a discussão e votação, nesta não podendo tomar parte os membros da administração e, se houver, os do conselho fiscal."
+    },
+    {
+     "label": "CC2002:ART.1078:PAR.3",
+     "text": "o A aprovação, sem reserva, do balanço patrimonial e do de resultado econômico, salvo erro, dolo ou simulação, exonera de responsabilidade os membros da administração e, se houver, os do conselho fiscal."
+    },
+    {
+     "label": "CC2002:ART.1078:PAR.4",
+     "text": "o Extingue-se em dois anos o direito de anular a aprovação a que se refere o parágrafo antecedente."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: A assembléia dos sócios deve realizar-se ao menos uma vez por ano, nos quatro meses seguintes à ao término do exercício social, com o objetivo de: | tomar as contas dos administradores e deliberar sobre o balanço patrimonial e o de resultado econômico; | designar administradores, quando for o caso; | tratar de qualquer outro assunto constante da ordem do dia. | o Até trinta dias antes da data marcada para a assembléia, os documentos referidos no inciso I deste artigo devem ser postos, por escrito, e com a prova do respectivo recebimento, à disposição dos sócios que não exerçam a administração. | o Instalada a assembléia, proceder-se-á à leitura dos documentos referidos no parágrafo antecedente, os quais serão submetidos, pelo presidente, a discussão e votação, nesta não podendo tomar parte os membros da administração e, se houver, os do conselho fiscal. | o A aprovação, sem reserva, do balanço patrimonial e do de resultado econômico, salvo erro, dolo ou simulação, exonera de responsabilidade os membros da administração e, se houver, os do conselho fiscal. | o Extingue-se em dois anos o direito de anular a aprovação a que se refere o parágrafo antecedente.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5ba856d85c21707d1001c8d2b663c5b33c6542ac7a6b04e6a18cceace9c2f3a1",
+     "o_que_significa": "5d1bf6e20799e73fd58d0a161e89e22e8e80811ac316f4295541c49cb9cb4aa8",
+     "exemplo_pratico": "6116c7f908df9e43a2d7c1e5762e9accc11d3c7f6e9ea306d2b10d74625d5cae",
+     "atencao": "bd59c37d8b54c55b6c774795b6ccc0f3c92b6c4d81d0394ef358d7f99f7a88bc",
+     "palavras_dificeis": "a136e9ca837421b73e8bd337c3a27656dfa138ce50226b6f784e9c910cd4f197"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1078, os cinco campos foram comparados com todos os 8 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 143,
+   "target_id": "CC2002:ART.1081",
+   "explanation_id": "ENTENDA/CC2002:ART.1081/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1081:CAPUT\tRessalvado o disposto em lei especial, integralizadas as quotas, pode ser o capital aumentado, com a correspondente modificação do contrato.\nCC2002:ART.1081:PAR.1\to Até trinta dias após a deliberação, terão os sócios preferência para participar do aumento, na proporção das quotas de que sejam titulares.\nCC2002:ART.1081:PAR.2\to À cessão do direito de preferência, aplica-se o disposto no caput do art. 1.057.\nCC2002:ART.1081:PAR.3\to Decorrido o prazo da preferência, e assumida pelos sócios, ou por terceiros, a totalidade do aumento, haverá reunião ou assembléia dos sócios, para que seja aprovada a modificação do contrato.",
+   "source_snapshot_sha256": "7842dcf3ba7cf21429e3d0b929a900518bc67bec4ac80ffbf6a922869b452e9a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1081:CAPUT",
+     "text": "Ressalvado o disposto em lei especial, integralizadas as quotas, pode ser o capital aumentado, com a correspondente modificação do contrato."
+    },
+    {
+     "label": "CC2002:ART.1081:PAR.1",
+     "text": "o Até trinta dias após a deliberação, terão os sócios preferência para participar do aumento, na proporção das quotas de que sejam titulares."
+    },
+    {
+     "label": "CC2002:ART.1081:PAR.2",
+     "text": "o À cessão do direito de preferência, aplica-se o disposto no caput do art. 1.057."
+    },
+    {
+     "label": "CC2002:ART.1081:PAR.3",
+     "text": "o Decorrido o prazo da preferência, e assumida pelos sócios, ou por terceiros, a totalidade do aumento, haverá reunião ou assembléia dos sócios, para que seja aprovada a modificação do contrato."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Ressalvado o disposto em lei especial, integralizadas as quotas, pode ser o capital aumentado, com a correspondente modificação do contrato. | o Até trinta dias após a deliberação, terão os sócios preferência para participar do aumento, na proporção das quotas de que sejam titulares. | o À cessão do direito de preferência, aplica-se o disposto no caput do art. 1.057. | o Decorrido o prazo da preferência, e assumida pelos sócios, ou por terceiros, a totalidade do aumento, haverá reunião ou assembléia dos sócios, para que seja aprovada a modificação do contrato.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "15c35ece617b8b268bffa0295d09206003be21d969fc285598bd2c04250fc40d",
+     "o_que_significa": "1993f183c3a09f7a2cbf3e0f77a194d36e5663cb6e91c3bf866a724de4f4165b",
+     "exemplo_pratico": "ecbc63e1a1be49a451a3cb7e88edfff816e3f0cb083471f42506835ef79e1f99",
+     "atencao": "38371f32c270f86eb0863b134e96b153f6106534c7339fdcb28c20942150d37b",
+     "palavras_dificeis": "31fd5736e927ba7a87a69c5606ba767751dcc6bcf950c1cd42865b8e903f6a28"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.081, § 3º, exige, após o prazo de preferência e a assunção integral do aumento, reunião ou assembleia dos sócios para aprovar a modificação do contrato.",
+   "finding": {
+    "target_id": "CC2002:ART.1081",
+    "audit_wave": "QA02_WAVE_03",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "a operação é formalizada após subscrição total",
+    "legal_basis": "O art. 1.081, § 3º, exige, após o prazo de preferência e a assunção integral do aumento, reunião ou assembleia dos sócios para aprovar a modificação do contrato.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_ETAPA_DELIBERATIVA",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A expressão genérica 'formalizada' não informa que a aprovação societária posterior é etapa legal específica.",
+    "correction_direction": "Indicar a reunião ou assembleia posterior à preferência e à subscrição integral para aprovar a alteração contratual.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   }
+  },
+  {
+   "queue_position": 144,
+   "target_id": "CC2002:ART.1084",
+   "explanation_id": "ENTENDA/CC2002:ART.1084/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1084:CAPUT\tNo caso do inciso II do art. 1.082, a redução do capital será feita restituindo-se parte do valor das quotas aos sócios, ou dispensando-se as prestações ainda devidas, com diminuição proporcional, em ambos os casos, do valor nominal das quotas.\nCC2002:ART.1084:PAR.1\to No prazo de noventa dias, contado da data da publicação da ata da assembléia que aprovar a redução, o credor quirografário, por título líquido anterior a essa data, poderá opor-se ao deliberado.\nCC2002:ART.1084:PAR.2\to A redução somente se tornará eficaz se, no prazo estabelecido no parágrafo antecedente, não for impugnada, ou se provado o pagamento da dívida ou o depósito judicial do respectivo valor.\nCC2002:ART.1084:PAR.3\to Satisfeitas as condições estabelecidas no parágrafo antecedente, proceder-se-á à averbação, no Registro Público de Empresas Mercantis, da ata que tenha aprovado a redução.",
+   "source_snapshot_sha256": "8d468b45cb0026c283e3a7c9df7d3e6ffa349e6c5b5d9f1229b3efdd65375790",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1084:CAPUT",
+     "text": "No caso do inciso II do art. 1.082, a redução do capital será feita restituindo-se parte do valor das quotas aos sócios, ou dispensando-se as prestações ainda devidas, com diminuição proporcional, em ambos os casos, do valor nominal das quotas."
+    },
+    {
+     "label": "CC2002:ART.1084:PAR.1",
+     "text": "o No prazo de noventa dias, contado da data da publicação da ata da assembléia que aprovar a redução, o credor quirografário, por título líquido anterior a essa data, poderá opor-se ao deliberado."
+    },
+    {
+     "label": "CC2002:ART.1084:PAR.2",
+     "text": "o A redução somente se tornará eficaz se, no prazo estabelecido no parágrafo antecedente, não for impugnada, ou se provado o pagamento da dívida ou o depósito judicial do respectivo valor."
+    },
+    {
+     "label": "CC2002:ART.1084:PAR.3",
+     "text": "o Satisfeitas as condições estabelecidas no parágrafo antecedente, proceder-se-á à averbação, no Registro Público de Empresas Mercantis, da ata que tenha aprovado a redução."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: No caso do inciso II do art. 1.082, a redução do capital será feita restituindo-se parte do valor das quotas aos sócios, ou dispensando-se as prestações ainda devidas, com diminuição proporcional, em ambos os casos, do valor nominal das quotas. | o No prazo de noventa dias, contado da data da publicação da ata da assembléia que aprovar a redução, o credor quirografário, por título líquido anterior a essa data, poderá opor-se ao deliberado. | o A redução somente se tornará eficaz se, no prazo estabelecido no parágrafo antecedente, não for impugnada, ou se provado o pagamento da dívida ou o depósito judicial do respectivo valor. | o Satisfeitas as condições estabelecidas no parágrafo antecedente, proceder-se-á à averbação, no Registro Público de Empresas Mercantis, da ata que tenha aprovado a redução.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5f463fdb778ad3c1a539f6d07f3956596aa3a3d421cf30f737ff6fd2cc7562e1",
+     "o_que_significa": "df23b7ba1c2e30a3ee2f551777ee06fcbbd83c08b5667af8e45e10a7e14d5bbc",
+     "exemplo_pratico": "06572f4d2f94506f78cff1402158997b0d70dd8a630d65ad7c71c970f746c4a7",
+     "atencao": "e6a8b7ea3f017bf5a675c5e9cb741245377e4687c18befaadede1f04b988eac0",
+     "palavras_dificeis": "fac61b4d464d4e1b3d71a1af0d666c0623a5ccb5d600e03a1f928a317ce4ff03"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1084, os cinco campos foram comparados com todos os 4 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 145,
+   "target_id": "CC2002:ART.1085",
+   "explanation_id": "ENTENDA/CC2002:ART.1085/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1085:CAPUT\tRessalvado o disposto no art. 1.030, quando a maioria dos sócios, representativa de mais da metade do capital social, entender que um ou mais sócios estão pondo em risco a continuidade da empresa, em virtude de atos de inegável gravidade, poderá excluí-los da sociedade, mediante alteração do contrato social, desde que prevista neste a exclusão por justa causa.\nCC2002:ART.1085:PAR.UNICO\tRessalvado o caso em que haja apenas dois sócios na sociedade, a exclusão de um sócio somente poderá ser determinada em reunião ou assembleia especialmente convocada para esse fim, ciente o acusado em tempo hábil para permitir seu comparecimento e o exercício do direito de defesa. (Redação dada pela Lei nº 13.792, de 2019)",
+   "source_snapshot_sha256": "15c75a3fd4a4ec6a8180beaec3124841c692b600e921b62e605bf5452928f20e",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1085:CAPUT",
+     "text": "Ressalvado o disposto no art. 1.030, quando a maioria dos sócios, representativa de mais da metade do capital social, entender que um ou mais sócios estão pondo em risco a continuidade da empresa, em virtude de atos de inegável gravidade, poderá excluí-los da sociedade, mediante alteração do contrato social, desde que prevista neste a exclusão por justa causa."
+    },
+    {
+     "label": "CC2002:ART.1085:PAR.UNICO",
+     "text": "Ressalvado o caso em que haja apenas dois sócios na sociedade, a exclusão de um sócio somente poderá ser determinada em reunião ou assembleia especialmente convocada para esse fim, ciente o acusado em tempo hábil para permitir seu comparecimento e o exercício do direito de defesa. (Redação dada pela Lei nº 13.792, de 2019)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Ressalvado o disposto no art. 1.030, quando a maioria dos sócios, representativa de mais da metade do capital social, entender que um ou mais sócios estão pondo em risco a continuidade da empresa, em virtude de atos de inegável gravidade, poderá excluí-los da sociedade, mediante alteração do contrato social, desde que prevista neste a exclusão por justa causa. | Ressalvado o caso em que haja apenas dois sócios na sociedade, a exclusão de um sócio somente poderá ser determinada em reunião ou assembleia especialmente convocada para esse fim, ciente o acusado em tempo hábil para permitir seu comparecimento e o exercício do direito de defesa. (Redação dada pela Lei nº 13.792, de 2019)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2b3efec5a145b24d88f6f2f33c4757548c996b480ac682fc615e9a3bec5d1606",
+     "o_que_significa": "b4ce6c7573e918fdd2052bd183a1669893c94729de05f20b2154243cacb3aa58",
+     "exemplo_pratico": "6ae820f2d79413c74495ad65c761318e70fa6552c1bc7ba12ab11022dfc6a573",
+     "atencao": "716d110770b43b02b598f2c969edc9d642d73c62fa98784204a0905a21d831cb",
+     "palavras_dificeis": "6c0765e83f64eb9d1884f4e947680552bb4ccda8b90b0fc7188aee2bd546031c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1085, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 146,
+   "target_id": "CC2002:ART.1091",
+   "explanation_id": "ENTENDA/CC2002:ART.1091/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1091:CAPUT\tSomente o acionista tem qualidade para administrar a sociedade e, como diretor, responde subsidiária e ilimitadamente pelas obrigações da sociedade.\nCC2002:ART.1091:PAR.1\to Se houver mais de um diretor, serão solidariamente responsáveis, depois de esgotados os bens sociais.\nCC2002:ART.1091:PAR.2\to Os diretores serão nomeados no ato constitutivo da sociedade, sem limitação de tempo, e somente poderão ser destituídos por deliberação de acionistas que representem no mínimo dois terços do capital social.\nCC2002:ART.1091:PAR.3\to O diretor destituído ou exonerado continua, durante dois anos, responsável pelas obrigações sociais contraídas sob sua administração.",
+   "source_snapshot_sha256": "c87a17063d9dcba7fd30ae97276d13b7a1066d3eb04b3a3a64b36069fd257e7d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1091:CAPUT",
+     "text": "Somente o acionista tem qualidade para administrar a sociedade e, como diretor, responde subsidiária e ilimitadamente pelas obrigações da sociedade."
+    },
+    {
+     "label": "CC2002:ART.1091:PAR.1",
+     "text": "o Se houver mais de um diretor, serão solidariamente responsáveis, depois de esgotados os bens sociais."
+    },
+    {
+     "label": "CC2002:ART.1091:PAR.2",
+     "text": "o Os diretores serão nomeados no ato constitutivo da sociedade, sem limitação de tempo, e somente poderão ser destituídos por deliberação de acionistas que representem no mínimo dois terços do capital social."
+    },
+    {
+     "label": "CC2002:ART.1091:PAR.3",
+     "text": "o O diretor destituído ou exonerado continua, durante dois anos, responsável pelas obrigações sociais contraídas sob sua administração."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Somente o acionista tem qualidade para administrar a sociedade e, como diretor, responde subsidiária e ilimitadamente pelas obrigações da sociedade. | o Se houver mais de um diretor, serão solidariamente responsáveis, depois de esgotados os bens sociais. | o Os diretores serão nomeados no ato constitutivo da sociedade, sem limitação de tempo, e somente poderão ser destituídos por deliberação de acionistas que representem no mínimo dois terços do capital social. | o O diretor destituído ou exonerado continua, durante dois anos, responsável pelas obrigações sociais contraídas sob sua administração.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2ff81c673c467881872a6dda9b002ca2b54e095ee08531a4af063d59c0157c7e",
+     "o_que_significa": "2f9587bf9a24316a7dbd1f83aea46a6999f659b9307389a94c3c39da63ac0673",
+     "exemplo_pratico": "24e9b0b84a42d7a5301cfa9c02527f7bfa188ce9a9d14a7a13e9ed3ebc4bf794",
+     "atencao": "009d7d9285a3b3ee75cbb9be4b919bf5669aae7493e8f561665c2ce0f1625ab4",
+     "palavras_dificeis": "e57bef89ba367d4615c33e6b57c912ec849c8cc1680d22aa9dfd1460146dbce1"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.091, § 3º, mantém por dois anos a responsabilidade do ex-diretor apenas pelas obrigações sociais contraídas sob sua administração, não por obrigações posteriores à gestão.",
+   "finding": {
+    "target_id": "CC2002:ART.1091",
+    "audit_wave": "QA02_WAVE_03",
+    "problematic_field": "o_que_significa",
+    "problematic_excerpt": "inclusive por obrigações posteriores por período legal",
+    "legal_basis": "O art. 1.091, § 3º, mantém por dois anos a responsabilidade do ex-diretor apenas pelas obrigações sociais contraídas sob sua administração, não por obrigações posteriores à gestão.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "AMPLIACAO_INDEVIDA_DE_RESPONSABILIDADE",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Pode levar à imputação de dívidas constituídas depois da administração ao diretor já destituído ou exonerado.",
+    "correction_direction": "Explicar que o prazo de dois anos alcança somente obrigações contraídas durante a administração do ex-diretor.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   }
+  },
+  {
+   "queue_position": 147,
+   "target_id": "CC2002:ART.1094",
+   "explanation_id": "ENTENDA/CC2002:ART.1094/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1094:CAPUT\tSão características da sociedade cooperativa:\nCC2002:ART.1094:INC.I\tvariabilidade, ou dispensa do capital social;\nCC2002:ART.1094:INC.II\tconcurso de sócios em número mínimo necessário a compor a administração da sociedade, sem limitação de número máximo;\nCC2002:ART.1094:INC.III\tlimitação do valor da soma de quotas do capital social que cada sócio poderá tomar;\nCC2002:ART.1094:INC.IV\tintransferibilidade das quotas do capital a terceiros estranhos à sociedade, ainda que por herança;\nCC2002:ART.1094:INC.V\tquorum , para a assembléia geral funcionar e deliberar, fundado no número de sócios presentes à reunião, e não no capital social representado;\nCC2002:ART.1094:INC.VI\tdireito de cada sócio a um só voto nas deliberações, tenha ou não capital a sociedade, e qualquer que seja o valor de sua participação;\nCC2002:ART.1094:INC.VII\tdistribuição dos resultados, proporcionalmente ao valor das operações efetuadas pelo sócio com a sociedade, podendo ser atribuído juro fixo ao capital realizado;\nCC2002:ART.1094:INC.VIII\tindivisibilidade do fundo de reserva entre os sócios, ainda que em caso de dissolução da sociedade.",
+   "source_snapshot_sha256": "ef867482762568c920b8450ad32d2b9dc1ef23f9c27ff4df6312305c10472ce0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1094:CAPUT",
+     "text": "São características da sociedade cooperativa:"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.I",
+     "text": "variabilidade, ou dispensa do capital social;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.II",
+     "text": "concurso de sócios em número mínimo necessário a compor a administração da sociedade, sem limitação de número máximo;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.III",
+     "text": "limitação do valor da soma de quotas do capital social que cada sócio poderá tomar;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.IV",
+     "text": "intransferibilidade das quotas do capital a terceiros estranhos à sociedade, ainda que por herança;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.V",
+     "text": "quorum , para a assembléia geral funcionar e deliberar, fundado no número de sócios presentes à reunião, e não no capital social representado;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.VI",
+     "text": "direito de cada sócio a um só voto nas deliberações, tenha ou não capital a sociedade, e qualquer que seja o valor de sua participação;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.VII",
+     "text": "distribuição dos resultados, proporcionalmente ao valor das operações efetuadas pelo sócio com a sociedade, podendo ser atribuído juro fixo ao capital realizado;"
+    },
+    {
+     "label": "CC2002:ART.1094:INC.VIII",
+     "text": "indivisibilidade do fundo de reserva entre os sócios, ainda que em caso de dissolução da sociedade."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: São características da sociedade cooperativa: | variabilidade, ou dispensa do capital social; | concurso de sócios em número mínimo necessário a compor a administração da sociedade, sem limitação de número máximo; | limitação do valor da soma de quotas do capital social que cada sócio poderá tomar; | intransferibilidade das quotas do capital a terceiros estranhos à sociedade, ainda que por herança; | quorum , para a assembléia geral funcionar e deliberar, fundado no número de sócios presentes à reunião, e não no capital social representado; | direito de cada sócio a um só voto nas deliberações, tenha ou não capital a sociedade, e qualquer que seja o valor de sua participação; | distribuição dos resultados, proporcionalmente ao valor das operações efetuadas pelo sócio com a sociedade, podendo ser atribuído juro fixo ao capital realizado; | indivisibilidade do fundo de reserva entre os sócios, ainda que em caso de dissolução da sociedade.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "addc27d721d5cd151a4658cb0e5eb0301e0cc9422f12f301ea7bdb5117031198",
+     "o_que_significa": "488d4ec0f79d4ac6aa735d7f47d63d73e04fef1b4fdce23b68078e0f57d5f1b7",
+     "exemplo_pratico": "1cc78e32b869993d275b83f472438c6be0709feeb14c57c6c6b5ea01564e1774",
+     "atencao": "94c02a11073ffa0bc4dffd55a50c72a21d94336a73c0f235ddc54ba285363e5b",
+     "palavras_dificeis": "6f9830721d513c63543ba8b724e15470bf043e5210aa0ec859acdfbdb2f4fdac"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1094, os cinco campos foram comparados com todos os 9 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 148,
+   "target_id": "CC2002:ART.1101",
+   "explanation_id": "ENTENDA/CC2002:ART.1101/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1101:CAPUT\tSalvo disposição especial de lei, a sociedade não pode participar de outra, que seja sua sócia, por montante superior, segundo o balanço, ao das próprias reservas, excluída a reserva legal.\nCC2002:ART.1101:PAR.UNICO\tAprovado o balanço em que se verifique ter sido excedido esse limite, a sociedade não poderá exercer o direito de voto correspondente às ações ou quotas em excesso, as quais devem ser alienadas nos cento e oitenta dias seguintes àquela aprovação.",
+   "source_snapshot_sha256": "cabbf59d2aa1798aef9119adae2fd0c633e724abb3631dfdb5d32095342506c8",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1101:CAPUT",
+     "text": "Salvo disposição especial de lei, a sociedade não pode participar de outra, que seja sua sócia, por montante superior, segundo o balanço, ao das próprias reservas, excluída a reserva legal."
+    },
+    {
+     "label": "CC2002:ART.1101:PAR.UNICO",
+     "text": "Aprovado o balanço em que se verifique ter sido excedido esse limite, a sociedade não poderá exercer o direito de voto correspondente às ações ou quotas em excesso, as quais devem ser alienadas nos cento e oitenta dias seguintes àquela aprovação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Salvo disposição especial de lei, a sociedade não pode participar de outra, que seja sua sócia, por montante superior, segundo o balanço, ao das próprias reservas, excluída a reserva legal. | Aprovado o balanço em que se verifique ter sido excedido esse limite, a sociedade não poderá exercer o direito de voto correspondente às ações ou quotas em excesso, as quais devem ser alienadas nos cento e oitenta dias seguintes àquela aprovação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4287bbeb2831ec6df997d1e4e6a436beed95f4b5fbfffcce0ed18397dfd2f7ec",
+     "o_que_significa": "0fd0dc43720c3e9baa77a532fdf1a5840f2355bff638dc993c72c19978340462",
+     "exemplo_pratico": "adf2869d074304b577ef5204d4dce04f88729cbfec0137bcdd2e3e82c348a62f",
+     "atencao": "823d5548429798e1b0a696c517d1d4ac98b92d1d0b49a07e78e3de4a579e3713",
+     "palavras_dificeis": "aa38966ec6d583aecb1b6cf7654fe6444380dbc201422f94a52dd3515411927d"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O parágrafo único do art. 1.101 também impede o exercício do direito de voto correspondente às ações ou quotas excedentes desde a aprovação do balanço que revelou o excesso.",
+   "finding": {
+    "target_id": "CC2002:ART.1101",
+    "audit_wave": "QA02_WAVE_03",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "excesso deve ser alienado em 180 dias",
+    "legal_basis": "O parágrafo único do art. 1.101 também impede o exercício do direito de voto correspondente às ações ou quotas excedentes desde a aprovação do balanço que revelou o excesso.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_RESTRICAO_IMEDIATA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O leitor conhece o dever de alienar, mas pode supor que os direitos políticos do excesso continuam exercíveis durante os 180 dias.",
+    "correction_direction": "Acrescentar a impossibilidade de votar com as participações excedentes até sua alienação.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   }
+  },
+  {
+   "queue_position": 149,
+   "target_id": "CC2002:ART.1104",
+   "explanation_id": "ENTENDA/CC2002:ART.1104/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1104:CAPUT\tAs obrigações e a responsabilidade do liquidante regem-se pelos preceitos peculiares às dos administradores da sociedade liquidanda.",
+   "source_snapshot_sha256": "009af2a57d034c800a7293dc99ed1973d8429ed3798d8ea345b3be1c3548a280",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1104:CAPUT",
+     "text": "As obrigações e a responsabilidade do liquidante regem-se pelos preceitos peculiares às dos administradores da sociedade liquidanda."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: As obrigações e a responsabilidade do liquidante regem-se pelos preceitos peculiares às dos administradores da sociedade liquidanda.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "149a0ae62778a61c8d2bf17ec1da0a4a3e5cde2fe458bafaebef98ec0ed90a0f",
+     "o_que_significa": "a263093ee0f4221abe357bad38e82cedf5f76377fa484e128b02e0cad123eefa",
+     "exemplo_pratico": "2a9080d63ef8414cf6982dabf2d34e6a969ace470d0f95e71d9c0b47a2da1aa4",
+     "atencao": "a458e1c8cc92838fba3027ccc0c0846da7910882dd7772c0198c81bcc0261edd",
+     "palavras_dificeis": "a523266136eab6431cafcbb59a192d1c13299141e3cd8b01d8fdca059fb1e3ab"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.104 não enumera as atribuições do liquidante, matéria do art. 1.103; ele determina que suas obrigações e responsabilidade seguem os preceitos peculiares às dos administradores da sociedade liquidanda.",
+   "finding": {
+    "target_id": "CC2002:ART.1104",
+    "audit_wave": "QA02_WAVE_03",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "Liquidante deve averbar e publicar sua nomeação, arrecadar bens, levantar inventário e balanço, concluir negócios, cobrar créditos, pagar dívidas, vender bens, prestar contas e convocar sócios.",
+    "legal_basis": "O art. 1.104 não enumera as atribuições do liquidante, matéria do art. 1.103; ele determina que suas obrigações e responsabilidade seguem os preceitos peculiares às dos administradores da sociedade liquidanda.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "DESLOCAMENTO_DE_CONTEUDO_ENTRE_ARTIGOS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O campo principal explica outro dispositivo e deixa de apresentar a regra de responsabilidade própria do art. 1.104.",
+    "correction_direction": "Substituir a enumeração pelo regime que equipara obrigações e responsabilidade do liquidante às dos administradores da sociedade em liquidação.",
+    "confidence": "ALTA",
+    "human_review_required": true
+   }
+  },
+  {
+   "queue_position": 150,
+   "target_id": "CC2002:ART.1105",
+   "explanation_id": "ENTENDA/CC2002:ART.1105/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1105:CAPUT\tCompete ao liquidante representar a sociedade e praticar todos os atos necessários à sua liquidação, inclusive alienar bens móveis ou imóveis, transigir, receber e dar quitação.\nCC2002:ART.1105:PAR.UNICO\tSem estar expressamente autorizado pelo contrato social, ou pelo voto da maioria dos sócios, não pode o liquidante gravar de ônus reais os móveis e imóveis, contrair empréstimos, salvo quando indispensáveis ao pagamento de obrigações inadiáveis, nem prosseguir, embora para facilitar a liquidação, na atividade social.",
+   "source_snapshot_sha256": "80e2f26376b044c7c901a8a3d4a8804384e4c4c6951e63a56dcaa4134bd30d11",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1105:CAPUT",
+     "text": "Compete ao liquidante representar a sociedade e praticar todos os atos necessários à sua liquidação, inclusive alienar bens móveis ou imóveis, transigir, receber e dar quitação."
+    },
+    {
+     "label": "CC2002:ART.1105:PAR.UNICO",
+     "text": "Sem estar expressamente autorizado pelo contrato social, ou pelo voto da maioria dos sócios, não pode o liquidante gravar de ônus reais os móveis e imóveis, contrair empréstimos, salvo quando indispensáveis ao pagamento de obrigações inadiáveis, nem prosseguir, embora para facilitar a liquidação, na atividade social."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Compete ao liquidante representar a sociedade e praticar todos os atos necessários à sua liquidação, inclusive alienar bens móveis ou imóveis, transigir, receber e dar quitação. | Sem estar expressamente autorizado pelo contrato social, ou pelo voto da maioria dos sócios, não pode o liquidante gravar de ônus reais os móveis e imóveis, contrair empréstimos, salvo quando indispensáveis ao pagamento de obrigações inadiáveis, nem prosseguir, embora para facilitar a liquidação, na atividade social.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "0af0ce3ecf403e70745ac565bf045d95acc4250595786b58023e4c676cf68b23",
+     "o_que_significa": "6e46807893978e6aeb1a55e393bc4ee289f55a91703e669fb2a800878dbaa66c",
+     "exemplo_pratico": "fb899d4c5820ed37b9a22eca53eaeac5185ec18340db7234e12d9e9366b59acd",
+     "atencao": "a3263a2ac5807acfa99572c9e20567f8696e45a74c508a533b3013194ffedbc0",
+     "palavras_dificeis": "04f69fc13f53f8f23a2dabf52602ad8b1e12df2a1bca0b4901b87c685eae0b83"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1105, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 151,
+   "target_id": "CC2002:ART.1106",
+   "explanation_id": "ENTENDA/CC2002:ART.1106/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1106:CAPUT\tRespeitados os direitos dos credores preferenciais, pagará o liquidante as dívidas sociais proporcionalmente, sem distinção entre vencidas e vincendas, mas, em relação a estas, com desconto.\nCC2002:ART.1106:PAR.UNICO\tSe o ativo for superior ao passivo, pode o liquidante, sob sua responsabilidade pessoal, pagar integralmente as dívidas vencidas.",
+   "source_snapshot_sha256": "84affbb8386bff254c78cab088d09abbf43416b0c41cea532758b728147dc191",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1106:CAPUT",
+     "text": "Respeitados os direitos dos credores preferenciais, pagará o liquidante as dívidas sociais proporcionalmente, sem distinção entre vencidas e vincendas, mas, em relação a estas, com desconto."
+    },
+    {
+     "label": "CC2002:ART.1106:PAR.UNICO",
+     "text": "Se o ativo for superior ao passivo, pode o liquidante, sob sua responsabilidade pessoal, pagar integralmente as dívidas vencidas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Respeitados os direitos dos credores preferenciais, pagará o liquidante as dívidas sociais proporcionalmente, sem distinção entre vencidas e vincendas, mas, em relação a estas, com desconto. | Se o ativo for superior ao passivo, pode o liquidante, sob sua responsabilidade pessoal, pagar integralmente as dívidas vencidas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "01f0855139405808c2190249cf49fd3600d50c3d00a942f9ebd65755fa98e01a",
+     "o_que_significa": "5c8352248ecd61e999fd9c8e750efac2ca157080ec9d0bf9c8cb73a47359695d",
+     "exemplo_pratico": "49ee981887a9295eaec19aa0df18383655ea36b717cf132d793ff730be90c061",
+     "atencao": "86599a00736062f68e0b7b648393b36e80680002abb2c930b704e3c0206ba1ef",
+     "palavras_dificeis": "09d1f2cc9c61befb5ca33ef4f962c5f03a47b81720cf1f7f2fac724143d307f0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1106, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 152,
+   "target_id": "CC2002:ART.1109",
+   "explanation_id": "ENTENDA/CC2002:ART.1109/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1109:CAPUT\tAprovadas as contas, encerra-se a liquidação, e a sociedade se extingue, ao ser averbada no registro próprio a ata da assembléia.\nCC2002:ART.1109:PAR.UNICO\tO dissidente tem o prazo de trinta dias, a contar da publicação da ata, devidamente averbada, para promover a ação que couber.",
+   "source_snapshot_sha256": "ad7be81b4ebad81c61e77e4b6d1bd12fd7ac3f3b313c4db4ec2844c058f6e28b",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1109:CAPUT",
+     "text": "Aprovadas as contas, encerra-se a liquidação, e a sociedade se extingue, ao ser averbada no registro próprio a ata da assembléia."
+    },
+    {
+     "label": "CC2002:ART.1109:PAR.UNICO",
+     "text": "O dissidente tem o prazo de trinta dias, a contar da publicação da ata, devidamente averbada, para promover a ação que couber."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Aprovadas as contas, encerra-se a liquidação, e a sociedade se extingue, ao ser averbada no registro próprio a ata da assembléia. | O dissidente tem o prazo de trinta dias, a contar da publicação da ata, devidamente averbada, para promover a ação que couber.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f99e2d511212f41e4542e7ff26d28837dd30e5c57444e63f5b1a2002d583d97a",
+     "o_que_significa": "7635501beb093d6220482fd6002c25353afac9ef58241c9a7069cf6aec23155c",
+     "exemplo_pratico": "b377f148f28615d945d1170c820f4bdc023a64993d79599701e61acf4deac3f9",
+     "atencao": "e4aa288c8a88bf08b43bfcf3aaf678f0aaf5dca27866f6de4022c51e89b2f02e",
+     "palavras_dificeis": "6c873eb9b9969dbd5e336fdb567a86b10c5b0c217aa19e9a811b0970b7f95992"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1109, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 153,
+   "target_id": "CC2002:ART.1115",
+   "explanation_id": "ENTENDA/CC2002:ART.1115/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1115:CAPUT\tA transformação não modificará nem prejudicará, em qualquer caso, os direitos dos credores.\nCC2002:ART.1115:PAR.UNICO\tA falência da sociedade transformada somente produzirá efeitos em relação aos sócios que, no tipo anterior, a eles estariam sujeitos, se o pedirem os titulares de créditos anteriores à transformação, e somente a estes beneficiará.",
+   "source_snapshot_sha256": "59b521fa1279506112afd76f73372e8f7bd7dda28040709cda97b076819bd3ce",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1115:CAPUT",
+     "text": "A transformação não modificará nem prejudicará, em qualquer caso, os direitos dos credores."
+    },
+    {
+     "label": "CC2002:ART.1115:PAR.UNICO",
+     "text": "A falência da sociedade transformada somente produzirá efeitos em relação aos sócios que, no tipo anterior, a eles estariam sujeitos, se o pedirem os titulares de créditos anteriores à transformação, e somente a estes beneficiará."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: A transformação não modificará nem prejudicará, em qualquer caso, os direitos dos credores. | A falência da sociedade transformada somente produzirá efeitos em relação aos sócios que, no tipo anterior, a eles estariam sujeitos, se o pedirem os titulares de créditos anteriores à transformação, e somente a estes beneficiará.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "5b514ac8a98a1dd9dc97b9110b62a5182e0942ff5aa562a7480e7ae74e7e34b8",
+     "o_que_significa": "fcca9d737d084916eee6f3ecfe134102df0fe3caa5e97a4b7b71ba1709675e0d",
+     "exemplo_pratico": "5b6432e67cbf87f8dc14e550262f29397f293fef625269d9e53c576bd70d4212",
+     "atencao": "b39c7d9eb44dad3b84710404f1e775677a9af5187aba6ab9e07c9547acae8290",
+     "palavras_dificeis": "26e59d291790d5556e8d8da1baee49e1e51467a1ca0d1b51db1fa93107f5a62c"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1115, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 154,
+   "target_id": "CC2002:ART.1117",
+   "explanation_id": "ENTENDA/CC2002:ART.1117/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1117:CAPUT\tA deliberação dos sócios da sociedade incorporada deverá aprovar as bases da operação e o projeto de reforma do ato constitutivo.\nCC2002:ART.1117:PAR.1\to A sociedade que houver de ser incorporada tomará conhecimento desse ato, e, se o aprovar, autorizará os administradores a praticar o necessário à incorporação, inclusive a subscrição em bens pelo valor da diferença que se verificar entre o ativo e o passivo.\nCC2002:ART.1117:PAR.2\to A deliberação dos sócios da sociedade incorporadora compreenderá a nomeação dos peritos para a avaliação do patrimônio líquido da sociedade, que tenha de ser incorporada.",
+   "source_snapshot_sha256": "6fc2e8a797658f374e55cafc96499be9d88e7207123cdfc30fb6f5c46931b46d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1117:CAPUT",
+     "text": "A deliberação dos sócios da sociedade incorporada deverá aprovar as bases da operação e o projeto de reforma do ato constitutivo."
+    },
+    {
+     "label": "CC2002:ART.1117:PAR.1",
+     "text": "o A sociedade que houver de ser incorporada tomará conhecimento desse ato, e, se o aprovar, autorizará os administradores a praticar o necessário à incorporação, inclusive a subscrição em bens pelo valor da diferença que se verificar entre o ativo e o passivo."
+    },
+    {
+     "label": "CC2002:ART.1117:PAR.2",
+     "text": "o A deliberação dos sócios da sociedade incorporadora compreenderá a nomeação dos peritos para a avaliação do patrimônio líquido da sociedade, que tenha de ser incorporada."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: A deliberação dos sócios da sociedade incorporada deverá aprovar as bases da operação e o projeto de reforma do ato constitutivo. | o A sociedade que houver de ser incorporada tomará conhecimento desse ato, e, se o aprovar, autorizará os administradores a praticar o necessário à incorporação, inclusive a subscrição em bens pelo valor da diferença que se verificar entre o ativo e o passivo. | o A deliberação dos sócios da sociedade incorporadora compreenderá a nomeação dos peritos para a avaliação do patrimônio líquido da sociedade, que tenha de ser incorporada.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ed9b4651156d8e980b0cbc4bb536939ac6a0578052a98e584350f354f5136d3e",
+     "o_que_significa": "6345bc81cbfb9e3c640208bfb148f9bfd0e361705012ee41005925620f7c5614",
+     "exemplo_pratico": "5463c3fcd68d07bb8a8a6875bd3e9ba2e615cc197ddb1769e63df92c743b4190",
+     "atencao": "9ff5fb8d5fd072c0e19fb5c16711eb2c3f569be556c01b9686442d5b822b9789",
+     "palavras_dificeis": "ee3b457935c3f2739e3cd57d1652a80c0b408f571110a39aefc98b17faff78b4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1117, os cinco campos foram comparados com todos os 3 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 155,
+   "target_id": "CC2002:ART.1120",
+   "explanation_id": "ENTENDA/CC2002:ART.1120/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1120:CAPUT\tA fusão será decidida, na forma estabelecida para os respectivos tipos, pelas sociedades que pretendam unir-se.\nCC2002:ART.1120:PAR.1\to Em reunião ou assembléia dos sócios de cada sociedade, deliberada a fusão e aprovado o projeto do ato constitutivo da nova sociedade, bem como o plano de distribuição do capital social, serão nomeados os peritos para a avaliação do patrimônio da sociedade.\nCC2002:ART.1120:PAR.2\to Apresentados os laudos, os administradores convocarão reunião ou assembléia dos sócios para tomar conhecimento deles, decidindo sobre a constituição definitiva da nova sociedade.\nCC2002:ART.1120:PAR.3\to É vedado aos sócios votar o laudo de avaliação do patrimônio da sociedade de que façam parte.",
+   "source_snapshot_sha256": "f580172d10713162d05a504c8e077fa5c3bddd3b0565267b55293208ec4924c0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1120:CAPUT",
+     "text": "A fusão será decidida, na forma estabelecida para os respectivos tipos, pelas sociedades que pretendam unir-se."
+    },
+    {
+     "label": "CC2002:ART.1120:PAR.1",
+     "text": "o Em reunião ou assembléia dos sócios de cada sociedade, deliberada a fusão e aprovado o projeto do ato constitutivo da nova sociedade, bem como o plano de distribuição do capital social, serão nomeados os peritos para a avaliação do patrimônio da sociedade."
+    },
+    {
+     "label": "CC2002:ART.1120:PAR.2",
+     "text": "o Apresentados os laudos, os administradores convocarão reunião ou assembléia dos sócios para tomar conhecimento deles, decidindo sobre a constituição definitiva da nova sociedade."
+    },
+    {
+     "label": "CC2002:ART.1120:PAR.3",
+     "text": "o É vedado aos sócios votar o laudo de avaliação do patrimônio da sociedade de que façam parte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: A fusão será decidida, na forma estabelecida para os respectivos tipos, pelas sociedades que pretendam unir-se. | o Em reunião ou assembléia dos sócios de cada sociedade, deliberada a fusão e aprovado o projeto do ato constitutivo da nova sociedade, bem como o plano de distribuição do capital social, serão nomeados os peritos para a avaliação do patrimônio da sociedade. | o Apresentados os laudos, os administradores convocarão reunião ou assembléia dos sócios para tomar conhecimento deles, decidindo sobre a constituição definitiva da nova sociedade. | o É vedado aos sócios votar o laudo de avaliação do patrimônio da sociedade de que façam parte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "9fdab4a5ea18155c1e295ee36a8e930748d6ea14bba327641700e3246f966d7b",
+     "o_que_significa": "4a7274e0fd798b630be50e8b940799287381afbe9cd98056c0fed2834942ebf2",
+     "exemplo_pratico": "f673599ba024123476d6b2790633a7667d3c2e2e71954aa09706c59d06db13ac",
+     "atencao": "4efb462428f12c4c4c8184bf09b69300c557b63de1ff03ffee1802145e3683d5",
+     "palavras_dificeis": "1a2e5756159d249daa6b0893d71bfd3e233e84e07d42a39b182fdb743b17e895"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1120, os cinco campos foram comparados com todos os 4 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 156,
+   "target_id": "CC2002:ART.1122",
+   "explanation_id": "ENTENDA/CC2002:ART.1122/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1122:CAPUT\tAté noventa dias após publicados os atos relativos à incorporação, fusão ou cisão, o credor anterior, por ela prejudicado, poderá promover judicialmente a anulação deles.\nCC2002:ART.1122:PAR.1\to A consignação em pagamento prejudicará a anulação pleiteada.\nCC2002:ART.1122:PAR.2\to Sendo ilíquida a dívida, a sociedade poderá garantir-lhe a execução, suspendendo-se o processo de anulação.\nCC2002:ART.1122:PAR.3\to Ocorrendo, no prazo deste artigo, a falência da sociedade incorporadora, da sociedade nova ou da cindida, qualquer credor anterior terá direito a pedir a separação dos patrimônios, para o fim de serem os créditos pagos pelos bens das respectivas massas.",
+   "source_snapshot_sha256": "58687b3d9be1ed1344adb0aa5d72f0de631b80a350e2ed2e09983fde5105d30a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1122:CAPUT",
+     "text": "Até noventa dias após publicados os atos relativos à incorporação, fusão ou cisão, o credor anterior, por ela prejudicado, poderá promover judicialmente a anulação deles."
+    },
+    {
+     "label": "CC2002:ART.1122:PAR.1",
+     "text": "o A consignação em pagamento prejudicará a anulação pleiteada."
+    },
+    {
+     "label": "CC2002:ART.1122:PAR.2",
+     "text": "o Sendo ilíquida a dívida, a sociedade poderá garantir-lhe a execução, suspendendo-se o processo de anulação."
+    },
+    {
+     "label": "CC2002:ART.1122:PAR.3",
+     "text": "o Ocorrendo, no prazo deste artigo, a falência da sociedade incorporadora, da sociedade nova ou da cindida, qualquer credor anterior terá direito a pedir a separação dos patrimônios, para o fim de serem os créditos pagos pelos bens das respectivas massas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 4 segmentos vigentes do dispositivo: Até noventa dias após publicados os atos relativos à incorporação, fusão ou cisão, o credor anterior, por ela prejudicado, poderá promover judicialmente a anulação deles. | o A consignação em pagamento prejudicará a anulação pleiteada. | o Sendo ilíquida a dívida, a sociedade poderá garantir-lhe a execução, suspendendo-se o processo de anulação. | o Ocorrendo, no prazo deste artigo, a falência da sociedade incorporadora, da sociedade nova ou da cindida, qualquer credor anterior terá direito a pedir a separação dos patrimônios, para o fim de serem os créditos pagos pelos bens das respectivas massas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b4e14a4f5dff9b96405d48517a074c98333fd0709245b890ebf23699e004085b",
+     "o_que_significa": "bc3164d5d04cc21d1db980cf4c6e0e4919b1e767443a847edd1c8043850c28df",
+     "exemplo_pratico": "22c57a859394a750d41b6e61981818640d4dd8653126e38cee6d46178e640e5c",
+     "atencao": "e40b19645b2ef40b33e6a617247d2c8ca13074f6a41c6133bbdaf28d861aaa2d",
+     "palavras_dificeis": "21457eda3d80aded6360e942976bb469b6319826a03ef912067283669e01dfe4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1122, os cinco campos foram comparados com todos os 4 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 157,
+   "target_id": "CC2002:ART.1131",
+   "explanation_id": "ENTENDA/CC2002:ART.1131/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1131:CAPUT\tExpedido o decreto de autorização, cumprirá à sociedade publicar os atos referidos nos arts. 1.128 e 1.129, em trinta dias, no órgão oficial da União, cujo exemplar representará prova para inscrição, no registro próprio, dos atos constitutivos da sociedade.\nCC2002:ART.1131:PAR.UNICO\tA sociedade promoverá, também no órgão oficial da União e no prazo de trinta dias, a publicação do termo de inscrição.",
+   "source_snapshot_sha256": "2fc1c1746f6360dd3f687d765dcbf74a1fa4a21372f757bcaffaf3a14b3f6c01",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1131:CAPUT",
+     "text": "Expedido o decreto de autorização, cumprirá à sociedade publicar os atos referidos nos arts. 1.128 e 1.129, em trinta dias, no órgão oficial da União, cujo exemplar representará prova para inscrição, no registro próprio, dos atos constitutivos da sociedade."
+    },
+    {
+     "label": "CC2002:ART.1131:PAR.UNICO",
+     "text": "A sociedade promoverá, também no órgão oficial da União e no prazo de trinta dias, a publicação do termo de inscrição."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Expedido o decreto de autorização, cumprirá à sociedade publicar os atos referidos nos arts. 1.128 e 1.129, em trinta dias, no órgão oficial da União, cujo exemplar representará prova para inscrição, no registro próprio, dos atos constitutivos da sociedade. | A sociedade promoverá, também no órgão oficial da União e no prazo de trinta dias, a publicação do termo de inscrição.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "53f1377f277d2955715d70c3b00ea0f1cb66573fd787f498fafc8dc183163d7b",
+     "o_que_significa": "fef87b34b67da6ba04105c1a6c6518fbb74335ff70493c9f2dffaa35da7a9636",
+     "exemplo_pratico": "45c16d5a876a55266673aff98e4e73d09ae174afe28354871cd1cc6578c24c56",
+     "atencao": "f855d6f1aa86304050969b389a9cff41a08d294a6d0b54b30abf47ab98b5d6d2",
+     "palavras_dificeis": "3a371f5e7532ce841cb91a55865a35f0de0786ca8b5ac40d626b3df113054706"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1131, os cinco campos foram comparados com todos os 2 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 158,
+   "target_id": "CC2002:ART.1132",
+   "explanation_id": "ENTENDA/CC2002:ART.1132/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1132:CAPUT\tAs sociedades anônimas nacionais, que dependam de autorização do Poder Executivo para funcionar, não se constituirão sem obtê-la, quando seus fundadores pretenderem recorrer a subscrição pública para a formação do capital.\nCC2002:ART.1132:PAR.1\to Os fundadores deverão juntar ao requerimento cópias autênticas do projeto do estatuto e do prospecto.\nCC2002:ART.1132:PAR.2\to Obtida a autorização e constituída a sociedade, proceder-se-á à inscrição dos seus atos constitutivos.",
+   "source_snapshot_sha256": "d09e50694f8f41135dd1f1134df96d9235939b9725420facb5702b41f42f7bfc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1132:CAPUT",
+     "text": "As sociedades anônimas nacionais, que dependam de autorização do Poder Executivo para funcionar, não se constituirão sem obtê-la, quando seus fundadores pretenderem recorrer a subscrição pública para a formação do capital."
+    },
+    {
+     "label": "CC2002:ART.1132:PAR.1",
+     "text": "o Os fundadores deverão juntar ao requerimento cópias autênticas do projeto do estatuto e do prospecto."
+    },
+    {
+     "label": "CC2002:ART.1132:PAR.2",
+     "text": "o Obtida a autorização e constituída a sociedade, proceder-se-á à inscrição dos seus atos constitutivos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: As sociedades anônimas nacionais, que dependam de autorização do Poder Executivo para funcionar, não se constituirão sem obtê-la, quando seus fundadores pretenderem recorrer a subscrição pública para a formação do capital. | o Os fundadores deverão juntar ao requerimento cópias autênticas do projeto do estatuto e do prospecto. | o Obtida a autorização e constituída a sociedade, proceder-se-á à inscrição dos seus atos constitutivos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "f80d39e9c485d257f3a2e6bfd82a8f422969a42798f0efeeef8b96e2bcd7a497",
+     "o_que_significa": "2796ab09933067cf562979a51bd0b1cea0e7aa13492da649f26edb8fb5b942cd",
+     "exemplo_pratico": "ea8cb585f8323c06a00be32710d890d79b741782d3c2cace90a904b913d12ca6",
+     "atencao": "702cc66027a8a8b0574c5f005beac5af574c28d1a0beef54c620c1ae340d4699",
+     "palavras_dificeis": "0e411b73b441cc7d148e064e360be7add5b1436c867897ab9ab5afd635f5aafb"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1132, os cinco campos foram comparados com todos os 3 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 159,
+   "target_id": "CC2002:ART.1134",
+   "explanation_id": "ENTENDA/CC2002:ART.1134/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1134:CAPUT\tA sociedade estrangeira, qualquer que seja o seu objeto, não pode, sem autorização do Poder Executivo, funcionar no País, ainda que por estabelecimentos subordinados, podendo, todavia, ressalvados os casos expressos em lei, ser acionista de sociedade anônima brasileira.\nCC2002:ART.1134:PAR.1\to Ao requerimento de autorização devem juntar-se:\nCC2002:ART.1134:PAR.1:INC.I\tprova de se achar a sociedade constituída conforme a lei de seu país;\nCC2002:ART.1134:PAR.1:INC.II\tinteiro teor do contrato ou do estatuto;\nCC2002:ART.1134:PAR.1:INC.III\trelação dos membros de todos os órgãos da administração da sociedade, com nome, nacionalidade, profissão, domicílio e, salvo quanto a ações ao portador, o valor da participação de cada um no capital da sociedade;\nCC2002:ART.1134:PAR.1:INC.IV\tcópia do ato que autorizou o funcionamento no Brasil e fixou o capital destinado às operações no território nacional;\nCC2002:ART.1134:PAR.1:INC.V\tprova de nomeação do representante no Brasil, com poderes expressos para aceitar as condições exigidas para a autorização;\nCC2002:ART.1134:PAR.1:INC.VI\túltimo balanço.\nCC2002:ART.1134:PAR.2\to Os documentos serão autenticados, de conformidade com a lei nacional da sociedade requerente, legalizados no consulado brasileiro da respectiva sede e acompanhados de tradução em vernáculo.",
+   "source_snapshot_sha256": "3368eb61c8a7bbf7f2d041305293102f5a83af224db1f1bfaac2da8821475c1d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1134:CAPUT",
+     "text": "A sociedade estrangeira, qualquer que seja o seu objeto, não pode, sem autorização do Poder Executivo, funcionar no País, ainda que por estabelecimentos subordinados, podendo, todavia, ressalvados os casos expressos em lei, ser acionista de sociedade anônima brasileira."
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1",
+     "text": "o Ao requerimento de autorização devem juntar-se:"
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1:INC.I",
+     "text": "prova de se achar a sociedade constituída conforme a lei de seu país;"
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1:INC.II",
+     "text": "inteiro teor do contrato ou do estatuto;"
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1:INC.III",
+     "text": "relação dos membros de todos os órgãos da administração da sociedade, com nome, nacionalidade, profissão, domicílio e, salvo quanto a ações ao portador, o valor da participação de cada um no capital da sociedade;"
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1:INC.IV",
+     "text": "cópia do ato que autorizou o funcionamento no Brasil e fixou o capital destinado às operações no território nacional;"
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1:INC.V",
+     "text": "prova de nomeação do representante no Brasil, com poderes expressos para aceitar as condições exigidas para a autorização;"
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.1:INC.VI",
+     "text": "último balanço."
+    },
+    {
+     "label": "CC2002:ART.1134:PAR.2",
+     "text": "o Os documentos serão autenticados, de conformidade com a lei nacional da sociedade requerente, legalizados no consulado brasileiro da respectiva sede e acompanhados de tradução em vernáculo."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: A sociedade estrangeira, qualquer que seja o seu objeto, não pode, sem autorização do Poder Executivo, funcionar no País, ainda que por estabelecimentos subordinados, podendo, todavia, ressalvados os casos expressos em lei, ser acionista de sociedade anônima brasileira. | o Ao requerimento de autorização devem juntar-se: | prova de se achar a sociedade constituída conforme a lei de seu país; | inteiro teor do contrato ou do estatuto; | relação dos membros de todos os órgãos da administração da sociedade, com nome, nacionalidade, profissão, domicílio e, salvo quanto a ações ao portador, o valor da participação de cada um no capital da sociedade; | cópia do ato que autorizou o funcionamento no Brasil e fixou o capital destinado às operações no território nacional; | prova de nomeação do representante no Brasil, com poderes expressos para aceitar as condições exigidas para a autorização; | último balanço. | o Os documentos serão autenticados, de conformidade com a lei nacional da sociedade requerente, legalizados no consulado brasileiro da respectiva sede e acompanhados de tradução em vernáculo.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "14dca85d61a50271fff00659fd62fe160172ebc5302d139b0a5826ed45e9563d",
+     "o_que_significa": "869e9aec77b00c316f01341baf98b2ce900d6318002d0525908d3c9bd0827a0a",
+     "exemplo_pratico": "20f425eda5e35dc35c9e31d6c8967e6c80bac4617d9414dbf9be8d6ce3b10beb",
+     "atencao": "127421d8b4cb92eba5ef04b20de61c263a074abd26beb456578574a4ba73489f",
+     "palavras_dificeis": "941e5bd927ce666a1394c95e97910477f39ebb66a8123c538418f5907513c0de"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "No CC2002:ART.1134, os cinco campos foram comparados com todos os 9 segmentos legais acima; não se identificou contradição, condição inventada ou omissão material no escopo verificado.",
+   "finding": null
+  },
+  {
+   "queue_position": 160,
+   "target_id": "CC2002:ART.1136",
+   "explanation_id": "ENTENDA/CC2002:ART.1136/BASE/1",
+   "book": "EMPRESA",
+   "origin_mission": "CC11",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1136:CAPUT\tA sociedade autorizada não pode iniciar sua atividade antes de inscrita no registro próprio do lugar em que se deva estabelecer.\nCC2002:ART.1136:PAR.1\to O requerimento de inscrição será instruído com exemplar da publicação exigida no parágrafo único do artigo antecedente, acompanhado de documento do depósito em dinheiro, em estabelecimento bancário oficial, do capital ali mencionado.\nCC2002:ART.1136:PAR.2\to Arquivados esses documentos, a inscrição será feita por termo em livro especial para as sociedades estrangeiras, com número de ordem contínuo para todas as sociedades inscritas; no termo constarão:\nCC2002:ART.1136:PAR.2:INC.I\tnome, objeto, duração e sede da sociedade no estrangeiro;\nCC2002:ART.1136:PAR.2:INC.II\tlugar da sucursal, filial ou agência, no País;\nCC2002:ART.1136:PAR.2:INC.III\tdata e número do decreto de autorização;\nCC2002:ART.1136:PAR.2:INC.IV\tcapital destinado às operações no País;\nCC2002:ART.1136:PAR.2:INC.V\tindividuação do seu representante permanente.\nCC2002:ART.1136:PAR.3\to Inscrita a sociedade, promover-se-á a publicação determinada no parágrafo único do art. 1.131.",
+   "source_snapshot_sha256": "fc385390f1f8d601bd945c38deb28b0ec0cffafa8d24da4f84e680fa6878a51c",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1136:CAPUT",
+     "text": "A sociedade autorizada não pode iniciar sua atividade antes de inscrita no registro próprio do lugar em que se deva estabelecer."
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.1",
+     "text": "o O requerimento de inscrição será instruído com exemplar da publicação exigida no parágrafo único do artigo antecedente, acompanhado de documento do depósito em dinheiro, em estabelecimento bancário oficial, do capital ali mencionado."
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.2",
+     "text": "o Arquivados esses documentos, a inscrição será feita por termo em livro especial para as sociedades estrangeiras, com número de ordem contínuo para todas as sociedades inscritas; no termo constarão:"
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.2:INC.I",
+     "text": "nome, objeto, duração e sede da sociedade no estrangeiro;"
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.2:INC.II",
+     "text": "lugar da sucursal, filial ou agência, no País;"
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.2:INC.III",
+     "text": "data e número do decreto de autorização;"
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.2:INC.IV",
+     "text": "capital destinado às operações no País;"
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.2:INC.V",
+     "text": "individuação do seu representante permanente."
+    },
+    {
+     "label": "CC2002:ART.1136:PAR.3",
+     "text": "o Inscrita a sociedade, promover-se-á a publicação determinada no parágrafo único do art. 1.131."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 9 segmentos vigentes do dispositivo: A sociedade autorizada não pode iniciar sua atividade antes de inscrita no registro próprio do lugar em que se deva estabelecer. | o O requerimento de inscrição será instruído com exemplar da publicação exigida no parágrafo único do artigo antecedente, acompanhado de documento do depósito em dinheiro, em estabelecimento bancário oficial, do capital ali mencionado. | o Arquivados esses documentos, a inscrição será feita por termo em livro especial para as sociedades estrangeiras, com número de ordem contínuo para todas as sociedades inscritas; no termo constarão: | nome, objeto, duração e sede da sociedade no estrangeiro; | lugar da sucursal, filial ou agência, no País; | data e número do decreto de autorização; | capital destinado às operações no País; | individuação do seu representante permanente. | o Inscrita a sociedade, promover-se-á a publicação determinada no parágrafo único do art. 1.131.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "4baa681da757cf3e99a16117994354258d255d22dc92259c51f137f1959fe332",
+     "o_que_significa": "3b023c6bc21c7bd0e9d4c028a59aadcb7f5f7911cca99be83667472ad6effbbe",
+     "exemplo_pratico": "8ed29bde3baa7d37e9e8d3cf1544cf6e4340c20cfd513a6bd8f4e4a6582d9ccd",
+     "atencao": "0e4381e866f1135e1f84a342618bba371521265bf4b9a44c850d734d26127bdc",
+     "palavras_dificeis": "c51a62213c184b6f9f83f827e78a0b4991876727d24764308ad2c0497ec7d74e"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.136, § 3º, exige, depois da inscrição, a publicação prevista no parágrafo único do art. 1.131; essa etapa não aparece na explicação.",
+   "finding": {
+    "target_id": "CC2002:ART.1136",
+    "audit_wave": "QA02_WAVE_03",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "o registro especial contém dados e alterações de filiais também são averbadas",
+    "legal_basis": "O art. 1.136, § 3º, exige, depois da inscrição, a publicação prevista no parágrafo único do art. 1.131; essa etapa não aparece na explicação.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_PUBLICIDADE_OBRIGATORIA",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A sequência apresentada termina no registro e não informa a publicação posterior expressamente determinada.",
+    "correction_direction": "Acrescentar a publicação pós-inscrição remetida ao art. 1.131, separando-a das averbações tratadas em dispositivos subsequentes.",
+    "confidence": "ALTA",
+    "human_review_required": false
+   }
+  }
+ ]
+}
