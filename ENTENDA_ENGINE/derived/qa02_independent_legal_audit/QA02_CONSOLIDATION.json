@@ -1,0 +1,112 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02",
+ "checkpoint": 7,
+ "as_of": "2026-11-12",
+ "status": "PARTIAL_REQUIRES_CONTINUATION",
+ "scope_statement": "Wave one is complete and reproducible; QA-02 as a whole is not complete because the full priority universe was not audited.",
+ "corpus": {
+  "path": "ENTENDA_ENGINE/derived/candidate_cc_001_2046/CC2002_CC13.entenda.jsonl",
+  "sha256": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "versions": 2180,
+  "active": 2017,
+  "retired": 163
+ },
+ "coverage": {
+  "priority_total": 599,
+  "priority_audited": 22,
+  "priority_pending": 577,
+  "a_universe": 1416,
+  "a_sample_audited": 28,
+  "unique_targets_audited": 52,
+  "audited_by_book": {
+   "COMPLEMENTARES_E_FINAIS": 4,
+   "DIREITOS_REAIS": 8,
+   "EMPRESA": 6,
+   "FAMILIA": 8,
+   "OBRIGACOES_E_CONTRATOS": 14,
+   "PARTE_GERAL": 6,
+   "SUCESSOES": 6
+  },
+  "audited_by_group": {
+   "A_STRATIFIED_SAMPLE": 28,
+   "B_OR_CORRECTION_WAVE": 22,
+   "MANDATORY_SENTINEL": 6
+  },
+  "audited_by_thematic_checkpoint": {
+   "QA02_CHECKPOINT_02": 2,
+   "QA02_CHECKPOINT_03": 6,
+   "QA02_CHECKPOINT_04": 8,
+   "QA02_CHECKPOINT_05": 8,
+   "QA02_CHECKPOINT_06": 28
+  }
+ },
+ "findings": {
+  "total": 7,
+  "by_severity": {
+   "ALTO": 5,
+   "MÉDIO": 2
+  },
+  "target_ids": [
+   "CC2002:ART.1069",
+   "CC2002:ART.1097",
+   "CC2002:ART.1234",
+   "CC2002:ART.1293",
+   "CC2002:ART.1752",
+   "CC2002:ART.1765",
+   "CC2002:ART.1829"
+  ]
+ },
+ "mandatory_sentinels": {
+  "CC2002:ART.157": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+  "CC2002:ART.202": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+  "CC2002:ART.406": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+  "CC2002:ART.421-A": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+  "CC2002:ART.1790": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+  "CC2002:ART.1829": "ACHADO"
+ },
+ "insurance_757_802": {
+  "active_count": 0,
+  "active_target_ids": [],
+  "expectation": "zero active explanations after Lei 15.040/2024"
+ },
+ "tests": {
+  "qa02_specific": {
+   "tests_run": 12,
+   "result": "OK"
+  },
+  "global_suite": {
+   "tests_run": 405,
+   "result": "OK",
+   "skipped": 2
+  },
+  "environment_note": "The first sandboxed global run had 27 temporary-directory permission errors; rerun with TEMP/TMP inside the writable worktree passed without failures."
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "immutability": {
+  "editorial_corpus_changed": false,
+  "production_indexes_changed": false,
+  "deploy_performed": false
+ },
+ "continuation": {
+  "next_checkpoint": 8,
+  "queue": "QA02_PENDING_PRIORITY_WAVE_02.json",
+  "queue_sha256": "881adcca7df7a6dd91f4f69b77f3f88dc38c9d89c2bf9859612a316717cde496",
+  "instruction": "Continue at checkpoint 08 in deterministic batches, preserving this order and recording individual independent legal evidence before any conclusion."
+ },
+ "artifact_sha256": {
+  "QA02_RISK_INVENTORY.json": "bc4ca84461dacff93499e940d1db5008533e12fdd2b0015c28f962d2d578c469",
+  "QA02_CHECKPOINT_02.json": "8b88d85ea4b1b6dadfb086fa47b363056282594fcfa438a88627b51ee9a1d3d0",
+  "QA02_CHECKPOINT_03.json": "2d770ef604f360e8f6470146a51778f7154c4e5fc0aabe779dcb9ee47c32296a",
+  "QA02_CHECKPOINT_04.json": "70c97da5f993308d80125a1abe8860c50fb014db2e66a3a88a90e39d4a3ff193",
+  "QA02_CHECKPOINT_05.json": "8261b76e80175031be71b7919dd339c77a41c63e16043bea902f841cbea9edc7",
+  "QA02_CHECKPOINT_06.json": "2d62e1301c9aa5d679b7c6450e0ebbaa803bb5fe3f1ed4d9daf73807afa50a59",
+  "QA02_AUDIT_WAVE_01.json": "ca718df83ff7e4154374ca2f0dea3dc1bc9f4246a14c37ac5671c37d7de48461",
+  "QA02_CORRECTION_QUEUE.json": "397341bc7095d16488f0312c5c9c3c574cbc5b009ef6c32f6bf5343f49730d40",
+  "QA02_PENDING_PRIORITY_WAVE_02.json": "881adcca7df7a6dd91f4f69b77f3f88dc38c9d89c2bf9859612a316717cde496"
+ }
+}
