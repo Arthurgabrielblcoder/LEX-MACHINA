@@ -1,0 +1,281 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02",
+ "checkpoint": 3,
+ "title": "B_EMPRESA_E_DIREITOS_REAIS",
+ "as_of": "2026-11-12",
+ "examined": 6,
+ "target_ids": [
+  "CC2002:ART.1069",
+  "CC2002:ART.1146",
+  "CC2002:ART.1234",
+  "CC2002:ART.1293",
+  "CC2002:ART.1440",
+  "CC2002:ART.1470"
+ ],
+ "pending_priority_after_wave": 577,
+ "findings": 3,
+ "finding_counts": {
+  "ALTO": 2,
+  "MÉDIO": 1
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.1069",
+   "explanation_id": "ENTENDA/CC2002:ART.1069/BASE/1",
+   "origin_mission": "CC11",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1069:CAPUT\tAlém de outras atribuições determinadas na lei ou no contrato social, aos membros do conselho fiscal incumbem, individual ou conjuntamente, os deveres seguintes:\nCC2002:ART.1069:INC.I\texaminar, pelo menos trimestralmente, os livros e papéis da sociedade e o estado da caixa e da carteira, devendo os administradores ou liquidantes prestar-lhes as informações solicitadas;\nCC2002:ART.1069:INC.II\tlavrar no livro de atas e pareceres do conselho fiscal o resultado dos exames referidos no inciso I deste artigo;\nCC2002:ART.1069:INC.III\texarar no mesmo livro e apresentar à assembléia anual dos sócios parecer sobre os negócios e as operações sociais do exercício em que servirem, tomando por base o balanço patrimonial e o de resultado econômico;\nCC2002:ART.1069:INC.IV\tdenunciar os erros, fraudes ou crimes que descobrirem, sugerindo providências úteis à sociedade;\nCC2002:ART.1069:INC.V\tconvocar a assembléia dos sócios se a diretoria retardar por mais de trinta dias a sua convocação anual, ou sempre que ocorram motivos graves e urgentes;\nCC2002:ART.1069:INC.VI\tpraticar, durante o período da liquidação da sociedade, os atos a que se refere este artigo, tendo em vista as disposições especiais reguladoras da liquidação.",
+   "source_snapshot_sha256": "acbdc403aa1b4c759c55e6627a1ec3f5ba28bdce27df71e3f5b08109b764f57b",
+   "independent_rule_summary": "Fiscal council duties include quarterly examination, minutes, annual opinion, reporting wrongdoing, exact assembly triggers and continuation in liquidation.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "8d5cc1799a08bf14eda94d9e96ad7793729d4a230c8118372c3ba872171b33d6",
+   "result": "ACHADO",
+   "comparison": "CC art. 1.069, V-VI: atraso superior a 30 dias ou motivo grave/urgente; manutenção dos deveres durante liquidação.",
+   "finding": {
+    "target_id": "CC2002:ART.1069",
+    "mission": null,
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "convocam assembleia nas hipóteses legais",
+    "legal_basis": "CC art. 1.069, V-VI: atraso superior a 30 dias ou motivo grave/urgente; manutenção dos deveres durante liquidação.",
+    "nature": "OMISSAO_DE_CONDICOES_E_DEVER",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "The reader cannot identify the exact trigger or that all listed duties continue during liquidation.",
+    "correction_direction": "State the 30-day trigger, grave/urgent alternative and liquidation continuation explicitly.",
+    "confidence": "ALTA",
+    "human_review_required": true
+   }
+  },
+  {
+   "target_id": "CC2002:ART.1146",
+   "explanation_id": "ENTENDA/CC2002:ART.1146/BASE/1",
+   "origin_mission": "CC11",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1146:CAPUT\tO adquirente do estabelecimento responde pelo pagamento dos débitos anteriores à transferência, desde que regularmente contabilizados, continuando o devedor primitivo solidariamente obrigado pelo prazo de um ano, a partir, quanto aos créditos vencidos, da publicação, e, quanto aos outros, da data do vencimento.",
+   "source_snapshot_sha256": "11cb7466942d8d7fb673bef07ba5f8eddfc83f156d9a2cffd441255f5d9446bd",
+   "independent_rule_summary": "The buyer answers for properly booked pre-transfer debts; seller remains jointly liable for one year from publication or maturity.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "64f1796000688d066b29b3390456d50b113b82170be5a5a95fd2c0bad66023c5",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.1234",
+   "explanation_id": "ENTENDA/CC2002:ART.1234/BASE/1",
+   "origin_mission": "CC11",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1234:CAPUT\tAquele que restituir a coisa achada, nos termos do artigo antecedente, terá direito a uma recompensa não inferior a cinco por cento do seu valor, e à indenização pelas despesas que houver feito com a conservação e transporte da coisa, se o dono não preferir abandoná-la.\nCC2002:ART.1234:PAR.UNICO\tNa determinação do montante da recompensa, considerar-se-á o esforço desenvolvido pelo descobridor para encontrar o dono, ou o legítimo possuidor, as possibilidades que teria este de encontrar a coisa e a situação econômica de ambos.",
+   "source_snapshot_sha256": "8ca2ec388d6f355cbacfb9ed005f2ed9360577f4a95b86665a373768c4cc2326",
+   "independent_rule_summary": "The finder who returns property receives at least 5% plus conservation/transport costs unless the owner abandons it; judicial factors set the reward.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "2c686171a565e7980d2e9ddd4d8c8d18caec750e4476ecade4c815e5b59f8c78",
+   "result": "ACHADO",
+   "comparison": "CC arts. 1.234-1.235 provide reward criteria and liability for fraudulent conduct; they do not express a generic reduction of effects.",
+   "finding": {
+    "target_id": "CC2002:ART.1234",
+    "mission": null,
+    "problematic_field": "atencao",
+    "problematic_excerpt": "Má conduta do descobridor pode reduzir efeitos",
+    "legal_basis": "CC arts. 1.234-1.235 provide reward criteria and liability for fraudulent conduct; they do not express a generic reduction of effects.",
+    "nature": "CONSEQUENCIA_VAGA_NAO_ANCORADA",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "Obscures the actual statutory consequence and may suggest discretionary reduction without a legal basis.",
+    "correction_direction": "Identify art. 1.235 liability precisely or omit the vague sentence.",
+    "confidence": "MÉDIA",
+    "human_review_required": true
+   }
+  },
+  {
+   "target_id": "CC2002:ART.1293",
+   "explanation_id": "ENTENDA/CC2002:ART.1293/BASE/1",
+   "origin_mission": "CC11",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1293:CAPUT\tÉ permitido a quem quer que seja, mediante prévia indenização aos proprietários prejudicados, construir canais, através de prédios alheios, para receber as águas a que tenha direito, indispensáveis às primeiras necessidades da vida, e, desde que não cause prejuízo considerável à agricultura e à indústria, bem como para o escoamento de águas supérfluas ou acumuladas, ou a drenagem de terrenos.\nCC2002:ART.1293:PAR.1\to Ao proprietário prejudicado, em tal caso, também assiste direito a ressarcimento pelos danos que de futuro lhe advenham da infiltração ou irrupção das águas, bem como da deterioração das obras destinadas a canalizá-las.\nCC2002:ART.1293:PAR.2\to O proprietário prejudicado poderá exigir que seja subterrânea a canalização que atravessa áreas edificadas, pátios, hortas, jardins ou quintais.\nCC2002:ART.1293:PAR.3\to O aqueduto será construído de maneira que cause o menor prejuízo aos proprietários dos imóveis vizinhos, e a expensas do seu dono, a quem incumbem também as despesas de conservação.",
+   "source_snapshot_sha256": "0db972d12681f46fd6e2ce546b016d32d68668a7b279ce1fb8bda849bada7a0c",
+   "independent_rule_summary": "A compensated aqueduct requires a lawful water purpose/no considerable agricultural-industrial harm and carries future-damage, undergrounding and conservation safeguards.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "ce11ae4fa7b03fc2e7e545158f65c9e85cf11a0b493cab7e561d3aa6d032382e",
+   "result": "ACHADO",
+   "comparison": "CC art. 1.293 §§1-3 additionally grants future-damage compensation, undergrounding in protected areas, least-harm construction, owner cost and conservation duty.",
+   "finding": {
+    "target_id": "CC2002:ART.1293",
+    "mission": null,
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "Canais podem atravessar imóveis alheios, com indenização prévia",
+    "legal_basis": "CC art. 1.293 §§1-3 additionally grants future-damage compensation, undergrounding in protected areas, least-harm construction, owner cost and conservation duty.",
+    "nature": "OMISSAO_DE_DIREITOS_E_ENCARGOS",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "An overview covering the subtree omits material protections and continuing burdens on the aqueduct owner.",
+    "correction_direction": "Add all three paragraph safeguards and distinguish initial from future compensation.",
+    "confidence": "ALTA",
+    "human_review_required": true
+   }
+  },
+  {
+   "target_id": "CC2002:ART.1440",
+   "explanation_id": "ENTENDA/CC2002:ART.1440/BASE/1",
+   "origin_mission": "CC12",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1440:CAPUT\tSe o prédio estiver hipotecado, o penhor rural poderá constituir-se independentemente da anuência do credor hipotecário, mas não lhe prejudica o direito de preferência, nem restringe a extensão da hipoteca, ao ser executada.",
+   "source_snapshot_sha256": "0a03f4951b6a34e65d7c57a70fcf180ece82f3fedbbc65908aa00011b72c43fd",
+   "independent_rule_summary": "A prior mortgage does not bar rural pledge but retains its priority and scope on enforcement.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "61178f6c797ab41154cf219f072442c98e29440f2732aeff0f17609e23cf3f68",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.1470",
+   "explanation_id": "ENTENDA/CC2002:ART.1470/BASE/1",
+   "origin_mission": "CC12",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1470:CAPUT\tOs credores, compreendidos no art. 1.467, podem fazer efetivo o penhor, antes de recorrerem à autoridade judiciária, sempre que haja perigo na demora, dando aos devedores comprovante dos bens de que se apossarem.",
+   "source_snapshot_sha256": "a9192d0c35e623348594d35518984c10af07d70383503b538a34fed4a9b3686b",
+   "independent_rule_summary": "Legal-pledge creditors may take possession before court only on danger in delay and must provide a receipt; art. 1.471 requires prompt homologation.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "54b3457dbc3d7a846886a1e405b54507e36c327604456f903b080b1b995007b7",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  }
+ ]
+}
