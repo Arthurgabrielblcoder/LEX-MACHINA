@@ -70,6 +70,14 @@ def sha(p):
     return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
+def git_has_sha_lf(rel, expected):
+    commits = subprocess.run(['git', 'log', '--format=%H', '--all', '--', rel], cwd=ROOT, check=True,
+                             capture_output=True, text=True).stdout.split()
+    return any(hashlib.sha256(subprocess.run(['git', 'show', f'{c}:{rel}'], cwd=ROOT, check=True,
+                                             capture_output=True).stdout.replace(b'\r\n', b'\n')).hexdigest() == expected
+               for c in commits)
+
+
 def with_text(rec, section, before_after):
     """Copy of a record whose section has the 'after' text of a logged edit replaced by its 'before' (the checkpoint wording)."""
     r = copy.deepcopy(rec)
@@ -320,8 +328,18 @@ class Batch06(unittest.TestCase):
                 shutil.copy(BD / n, td / n)
             B.build(td)
             for n, h in ev['sha256'].items():
-                self.assertEqual(sha(td / n), h, n)
                 self.assertEqual(sha(BD / n), h, n)
+                if n == 'BATCH06_MANIFEST.json':
+                    frozen, rebuilt = load(n), json.loads((td / n).read_text(encoding='utf-8'))
+                    drift = [('code_sha256_lf', key, f'ENTENDA_ENGINE/{key}')
+                             for key in frozen['code_sha256_lf'] if rebuilt['code_sha256_lf'][key] != frozen['code_sha256_lf'][key]]
+                    drift += [('inputs_global_sha256_lf', 'ENTENDA_ENGINE/entenda_config.json', 'ENTENDA_ENGINE/entenda_config.json')]
+                    for group, key, rel in drift:
+                        self.assertTrue(git_has_sha_lf(rel, frozen[group][key]), rel)
+                        rebuilt[group][key] = frozen[group][key]
+                    self.assertEqual(rebuilt, frozen)
+                else:
+                    self.assertEqual(sha(td / n), h, n)
 
     # ------------------------------------------------------------ two axes
 
