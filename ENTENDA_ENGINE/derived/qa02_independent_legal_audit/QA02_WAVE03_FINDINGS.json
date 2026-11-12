@@ -2,5 +2,34 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-03",
  "as_of": "2026-11-12",
- "findings": []
+ "findings": [
+  {
+   "target_id": "CC2002:ART.1063",
+   "audit_wave": "QA02_WAVE_03",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "a cessação deve ser registrada",
+   "legal_basis": "O art. 1.063, §§ 2º e 3º, exige requerimento de averbação em dez dias e distingue a eficácia da renúncia: perante a sociedade, desde o conhecimento da comunicação escrita; perante terceiros, após averbação e publicação.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_PRAZO_E_EFICACIA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "O leitor não consegue identificar o prazo registral nem quando a renúncia passa a produzir efeitos internos e externos.",
+   "correction_direction": "Acrescentar o prazo de dez dias e separar expressamente eficácia perante a sociedade e perante terceiros.",
+   "confidence": "ALTA",
+   "human_review_required": false
+  },
+  {
+   "target_id": "CC2002:ART.1072",
+   "audit_wave": "QA02_WAVE_03",
+   "problematic_field": "o_que_diz",
+   "problematic_excerpt": "Decisões ocorrem em reunião ou assembleia convocada",
+   "legal_basis": "Os §§ 5º e 6º do art. 1.072 determinam que deliberações conformes à lei e ao contrato vinculam todos os sócios, inclusive ausentes ou dissidentes, e que as regras de assembleia se aplicam subsidiariamente às reuniões quando o contrato for omisso.",
+   "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+   "nature": "OMISSAO_DE_CONSEQUENCIA_E_REGRA_SUPLETIVA",
+   "severity": "ALTO",
+   "legal_or_pedagogical_consequence": "A explicação descreve o procedimento, mas não o efeito vinculante da decisão nem o regime aplicável às lacunas contratuais da reunião.",
+   "correction_direction": "Incluir a vinculação de ausentes e dissidentes e a aplicação supletiva das normas de assembleia às reuniões.",
+   "confidence": "ALTA",
+   "human_review_required": true
+  }
+ ]
 }
