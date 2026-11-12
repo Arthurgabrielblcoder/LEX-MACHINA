@@ -7,7 +7,7 @@ def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 class CC13Test(unittest.TestCase):
  @classmethod
  def setUpClass(c):
-  c.rows=E.load_corpus(CORPUS); c.base=E.load_corpus(BASELINE); c.active={r["target_id"]:r for r in c.rows if r["status"]=="ACTIVE"}; c.ctx=E.NormContext("CC2002",config_path=CONFIG); c.matrix=json.loads((BATCH/"CC13_DELEGATED_REVIEW_MATRIX.json").read_text())
+  c.rows=E.load_corpus(CORPUS); c.base=E.load_corpus(BASELINE); c.active={r["target_id"]:r for r in c.rows if r["status"]=="ACTIVE"}; c.ctx=E.NormContext("CC2002",config_path=CONFIG); c.matrix=json.loads((BATCH/"CC13_DELEGATED_REVIEW_MATRIX.json").read_text(encoding="utf-8"))
  def test_counts(self): self.assertEqual((len(self.rows),len(self.active)),(2180,2017)); self.assertEqual(sum(r["status"]=="RETIRED" for r in self.rows),163)
  def test_baseline(self):
   self.assertEqual(sha(BASELINE),"76b945f8af99482fb54f93f6ae9d2da331fc5483470eb4bb7892fbcb19d51f24"); by={r["explanation_id"]:r for r in self.rows}; self.assertEqual(len(self.base),1859); self.assertTrue(all(by[r["explanation_id"]]==r for r in self.base))

@@ -1,0 +1,67 @@
+{
+ "schema_version": 1,
+ "mission": "QA-01",
+ "branch": "qa01-entenda-global-test-recovery",
+ "checkpoints": [
+  {
+   "number": 1,
+   "title": "Diagnostico completo",
+   "commit": "82318de",
+   "evidence": "QA01_DIAGNOSTIC.json",
+   "result": "7 falhas, 2 erros historicos e 1 erro ambiental individualizados e classificados"
+  },
+  {
+   "number": 2,
+   "title": "Correcao ambiental",
+   "commit": "82083eb",
+   "changes": ["resolucao oficial de git-path index e git-dir", "regressao em repositorio comum e linked worktree"],
+   "tests": "3/3 OK"
+  },
+  {
+   "number": 3,
+   "title": "Batch06",
+   "commit": "4b6a2c7",
+   "changes": ["contexto historico distinguido dos produtos deterministas", "hashes antigos comprovados no historico Git"],
+   "tests": "rebuild Batch06 OK"
+  },
+  {
+   "number": 4,
+   "title": "Macro07",
+   "commit": "8349863",
+   "changes": ["JSON sempre UTF-8", "hash canonico LF para evidencia temporal", "caminhos de manifesto POSIX", "fixtures historicas preservadas"],
+   "tests": "72 testes do modulo executados; unica divergencia adicional de separador corrigida e regressao final OK"
+  },
+  {
+   "number": 5,
+   "title": "Macro08 e integracao",
+   "commit": "checkpoint que inclui este arquivo",
+   "changes": ["proveniencia de fonte em LF canonico", "resolucao de corpus-evidencia em build temporario", "perfil historico aceita somente normas globais aditivas", "fixtures CC09-CC13 lidas explicitamente em UTF-8"],
+   "tests": ["Macro08 30/30 OK", "CC02-CC13 98/98 OK", "global comparavel 390 OK, 2 skips", "global completa 393 OK, 2 skips"]
+  }
+ ],
+ "protected_artifacts": {
+  "corpus": {
+   "path": "ENTENDA_ENGINE/derived/candidate_cc_001_2046/CC2002_CC13.entenda.jsonl",
+   "sha256": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+   "records": 2180,
+   "active": 2017,
+   "historical": 163
+  },
+  "lookup": {
+   "path": "ENTENDA_ENGINE/derived/candidate_cc_001_2046/candidate_index/ENTENDA_LOOKUP.IDX",
+   "sha256": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e"
+  },
+  "payload": {
+   "path": "ENTENDA_ENGINE/derived/candidate_cc_001_2046/candidate_index/ENTENDA_PAYLOAD.DAT",
+   "sha256": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+  }
+ },
+ "final_results": {
+  "historical_failures_remaining": 0,
+  "historical_errors_remaining": 0,
+  "environmental_errors_remaining": 0,
+  "editorial_files_changed": 0,
+  "production_indexes_changed": 0,
+  "deploy": false
+ }
+}

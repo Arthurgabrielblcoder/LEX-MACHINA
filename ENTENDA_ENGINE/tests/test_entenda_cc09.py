@@ -15,7 +15,7 @@ class CC09Test(unittest.TestCase):
   self.assertEqual(sha(BASELINE),"c1951fe3af7f514c17376864fa8b3692564c6621249804afc6dc177f37dcb8bc"); by={r["explanation_id"]:r for r in self.rows}; self.assertTrue(all(by[r["explanation_id"]]==r for r in self.base)); self.assertEqual((len(self.base),sum(r["status"]=="ACTIVE" for r in self.base)),(712,549))
  def test_blocks_audits(self):
   for name,ms in BLOCKS.items():
-   cp=json.loads((BATCH/"checkpoints"/f"CC09_{name}.json").read_text()); au=json.loads((BATCH/"audit_blocks"/f"CC09_AUDIT_{name}.json").read_text()); self.assertEqual((cp["produced"],cp["complete"]),(len(ms),True)); self.assertEqual((au["reviewed"],au["complete"]),(len(ms),True))
+   cp=json.loads((BATCH/"checkpoints"/f"CC09_{name}.json").read_text(encoding="utf-8")); au=json.loads((BATCH/"audit_blocks"/f"CC09_AUDIT_{name}.json").read_text(encoding="utf-8")); self.assertEqual((cp["produced"],cp["complete"]),(len(ms),True)); self.assertEqual((au["reviewed"],au["complete"]),(len(ms),True))
  def test_review(self):
   self.assertEqual(self.matrix["classification_counts"],{"A":150,"B":0,"C":0,"D":0}); self.assertEqual(len(self.matrix["records"]),150); self.assertFalse(self.matrix["human_approval_claimed"]); self.assertTrue(all(r["formal_review_status"]=="PENDING_HUMAN_REVIEW" for r in self.matrix["records"]))
  def test_contract_utf8_unique(self):
@@ -25,5 +25,5 @@ class CC09Test(unittest.TestCase):
  def test_deposit_caution(self):
   a=str(self.active["CC2002:ART.652"]["content"]).lower(); self.assertIn("não deve ser apresentada como automática",a); self.assertIn("constitucional",a)
  def test_production_immutable(self):
-  rel=json.loads((BATCH/"CC09_RELEASE_MANIFEST.json").read_text()); self.assertFalse(rel["deployed"]); self.assertTrue(all(sha(PROD/"index"/n)==h for n,h in PH.items()))
+  rel=json.loads((BATCH/"CC09_RELEASE_MANIFEST.json").read_text(encoding="utf-8")); self.assertFalse(rel["deployed"]); self.assertTrue(all(sha(PROD/"index"/n)==h for n,h in PH.items()))
 if __name__=="__main__": unittest.main()
