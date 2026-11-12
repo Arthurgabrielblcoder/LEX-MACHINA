@@ -1,0 +1,333 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02",
+ "checkpoint": 5,
+ "title": "DEMAIS_B_E_SENTINELAS",
+ "as_of": "2026-11-12",
+ "examined": 8,
+ "target_ids": [
+  "CC2002:ART.63",
+  "CC2002:ART.66",
+  "CC2002:ART.157",
+  "CC2002:ART.202",
+  "CC2002:ART.406",
+  "CC2002:ART.421-A",
+  "CC2002:ART.2038",
+  "CC2002:ART.2045"
+ ],
+ "pending_priority_after_wave": 577,
+ "findings": 0,
+ "finding_counts": {},
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "records": [
+  {
+   "target_id": "CC2002:ART.63",
+   "explanation_id": "ENTENDA/CC2002:ART.63/BASE/2",
+   "origin_mission": "CC02-CC05",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.63:CAPUT\tQuando insuficientes para constituir a fundação, os bens a ela destinados serão, se de outro modo não dispuser o instituidor, incorporados em outra fundação que se proponha a fim igual ou semelhante.",
+   "source_snapshot_sha256": "12ab81e80d275f51193c1e14b986ff501538adbb2e75d0b78cbf887db1241ffc",
+   "independent_rule_summary": "Insufficient foundation assets go to a foundation with equal/similar purpose unless the founder validly directed otherwise.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "cc5a6a5d2e9c4d2244b14269214aa8a8e2fffd7889a595ec6864c47034973af8",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.66",
+   "explanation_id": "ENTENDA/CC2002:ART.66/BASE/3",
+   "origin_mission": "CC02-CC05",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.66:CAPUT\tVelará pelas fundações o Ministério Público do Estado onde situadas.\nCC2002:ART.66:PAR.1\tSe funcionarem no Distrito Federal ou em Território, caberá o encargo ao Ministério Público do Distrito Federal e Territórios. (Parágrafo com redação dada pela Lei nº 13.151, de 28/7/2015)\nCC2002:ART.66:PAR.2\tSe estenderem a atividade por mais de um Estado, caberá o encargo, em cada um deles, ao respectivo Ministério Público.",
+   "source_snapshot_sha256": "322c22fc5966b02a0064894b6075ea8e918d7845d3a1de9808330fa446d0dfed",
+   "independent_rule_summary": "Foundation oversight belongs to the territorially competent state/DF public prosecutor, cumulatively in each state of activity.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "c414a4a20b9840936cc2b423667f17d9ed35e70c6e3d63f66e1fd9b407c7fb84",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.157",
+   "explanation_id": "ENTENDA/CC2002:ART.157/BASE/2",
+   "origin_mission": "CC06",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE",
+    "MANDATORY_SENTINEL"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    },
+    {
+     "url": "https://scon.stj.jus.br/SCON/GetInteiroTeorDoAcordao?dt_publicacao=18%2F04%2F2024&num_registro=202101760559",
+     "role": "SPECIAL_STATUTE_OR_PRECEDENT",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.157:CAPUT\tOcorre a lesão quando uma pessoa, sob premente necessidade, ou por inexperiência, se obriga a prestação manifestamente desproporcional ao valor da prestação oposta.\nCC2002:ART.157:PAR.1\to Aprecia-se a desproporção das prestações segundo os valores vigentes ao tempo em que foi celebrado o negócio jurídico.\nCC2002:ART.157:PAR.2\to Não se decretará a anulação do negócio, se for oferecido suplemento suficiente, ou se a parte favorecida concordar com a redução do proveito.",
+   "source_snapshot_sha256": "809f524a9be3e703be506d67975ec0fa9ec5b539f3b6578e8d5274274131c19e",
+   "independent_rule_summary": "Lesion requires manifest contemporaneous imbalance plus urgent need or inexperience; supplementation/reduction can preserve the deal.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "29c6b6ddb15047a1163c8de65769d09bea6037ee6c6bac6101ecdac2780e9f5c",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.202",
+   "explanation_id": "ENTENDA/CC2002:ART.202/BASE/2",
+   "origin_mission": "CC06",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE",
+    "MANDATORY_SENTINEL"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    },
+    {
+     "url": "https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/09112021-Para-Terceira-Turma--seja-qual-for-o-fundamento--prescricao-so-e-interrompida-uma-vez-sob-o-CC2002.aspx",
+     "role": "SPECIAL_STATUTE_OR_PRECEDENT",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.202:CAPUT\tA interrupção da prescrição, que somente poderá ocorrer uma vez, dar-se-á:\nCC2002:ART.202:INC.I\tpor despacho do juiz, mesmo incompetente, que ordenar a citação, se o interessado a promover no prazo e na forma da lei processual;\nCC2002:ART.202:INC.II\tpor protesto, nas condições do inciso antecedente;\nCC2002:ART.202:INC.III\tpor protesto cambial;\nCC2002:ART.202:INC.IV\tpela apresentação do título de crédito em juízo de inventário ou em concurso de credores;\nCC2002:ART.202:INC.V\tpor qualquer ato judicial que constitua em mora o devedor;\nCC2002:ART.202:INC.VI\tpor qualquer ato inequívoco, ainda que extrajudicial, que importe reconhecimento do direito pelo devedor.\nCC2002:ART.202:PAR.UNICO\tA prescrição interrompida recomeça a correr da data do ato que a interrompeu, ou do último ato do processo para a interromper.",
+   "source_snapshot_sha256": "50f53ccf6d79d99b07a349b0330fa731bd468009cb35bba5171a11e3c5e9beab",
+   "independent_rule_summary": "Prescription is interrupted once by a listed cause and restarts under the sole paragraph; procedural citation effects follow CPC art. 240.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "334c7a3ae71b735c84ddb668c5c2915b3d5a83cd5c6ae97cfe85a36835b2a13d",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.406",
+   "explanation_id": "ENTENDA/CC2002:ART.406/BASE/1",
+   "origin_mission": "SENTINEL",
+   "audit_groups": [
+    "MANDATORY_SENTINEL"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    },
+    {
+     "url": "https://www.bcb.gov.br/content/estabilidadefinanceira/especialnor/Resolu%C3%A7%C3%A3o5171.pdf",
+     "role": "SPECIAL_STATUTE_OR_PRECEDENT",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.406:CAPUT\tQuando não forem convencionados, ou quando o forem sem taxa estipulada, ou quando provierem de determinação da lei, os juros serão fixados de acordo com a taxa legal. (Redação dada pela Lei nº 14.905, de 2024) Produção de efeitos\nCC2002:ART.406:PAR.1\tA taxa legal corresponderá à taxa referencial do Sistema Especial de Liquidação e de Custódia (Selic), deduzido o índice de atualização monetária de que trata o parágrafo único do art. 389 deste Código. (Incluído pela Lei nº 14.905, de 2024) Produção de efeitos\nCC2002:ART.406:PAR.2\tA metodologia de cálculo da taxa legal e sua forma de aplicação serão definidas pelo Conselho Monetário Nacional e divulgadas pelo Banco Central do Brasil. (Incluído pela Lei nº 14.905, de 2024)\nCC2002:ART.406:PAR.3\tCaso a taxa legal apresente resultado negativo, este será considerado igual a 0 (zero) para efeito de cálculo dos juros no período de referência. (Incluído pela Lei nº 14.905, de 2024) Produção de efeitos",
+   "source_snapshot_sha256": "b76c472c7fce6a7b950a90d9f365e6b40a4055109390bf74a927d89b18dd559a",
+   "independent_rule_summary": "The statutory rate is Selic minus the art. 389 index, floored at zero and applied by the CMN/Bacen methodology.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "44f6d966961af5d1440878eadb48e49d8092267ce0ceb3a931edf671f90e7328",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.421-A",
+   "explanation_id": "ENTENDA/CC2002:ART.421-A/BASE/1",
+   "origin_mission": "SENTINEL",
+   "audit_groups": [
+    "MANDATORY_SENTINEL"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.421-A:CAPUT\tOs contratos civis e empresariais presumem-se paritários e simétricos até a presença de elementos concretos que justifiquem o afastamento dessa presunção, ressalvados os regimes jurídicos previstos em leis especiais, garantido também que: (Incluído pela Lei nº 13.874, de 2019)\nCC2002:ART.421-A:INC.I\tas partes negociantes poderão estabelecer parâmetros objetivos para a interpretação das cláusulas negociais e de seus pressupostos de revisão ou de resolução; (Incluído pela Lei nº 13.874, de 2019)\nCC2002:ART.421-A:INC.II\ta alocação de riscos definida pelas partes deve ser respeitada e observada; e (Incluído pela Lei nº 13.874, de 2019)\nCC2002:ART.421-A:INC.III\ta revisão contratual somente ocorrerá de maneira excepcional e limitada. (Incluído pela Lei nº 13.874, de 2019)",
+   "source_snapshot_sha256": "bdbb8aacfb0fa34939544021673be02c8d95b6852d25263c96f42b187f80f3e9",
+   "independent_rule_summary": "Civil/business contracts are rebuttably presumed symmetric, subject to special regimes, negotiated interpretation/risk allocation and exceptional review.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "15c8dfbe1318e23559868a7a0dc5009d9887d3a7b51c89d5a4d4760dea968643",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.2038",
+   "explanation_id": "ENTENDA/CC2002:ART.2038/BASE/1",
+   "origin_mission": "CC13",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2038:CAPUT\tFica proibida a constituição de enfiteuses e subenfiteuses, subordinando-se as existentes, até sua extinção, às disposições do Código Civil anterior, Lei n o 3.071, de 1 o de janeiro de 1916, e leis posteriores.\nCC2002:ART.2038:PAR.1\to Nos aforamentos a que se refere este artigo é defeso:\nCC2002:ART.2038:PAR.1:INC.I\tcobrar laudêmio ou prestação análoga nas transmissões de bem aforado, sobre o valor das construções ou plantações;\nCC2002:ART.2038:PAR.1:INC.II\tconstituir subenfiteuse.\nCC2002:ART.2038:PAR.2\to A enfiteuse dos terrenos de marinha e acrescidos regula-se por lei especial.",
+   "source_snapshot_sha256": "1777dbfb2ef75806d8b74ea660c16cf6fc9b1d3e5b1357ca6f2340a59712b68d",
+   "independent_rule_summary": "New civil emphyteusis is barred; old grants remain transitional with restrictions, while federal foreshore land follows special law.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "bbaa40eed4edad83b5a70c13f9d90738cae4643b0dbb5d9d68a58a702fedfd14",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  },
+  {
+   "target_id": "CC2002:ART.2045",
+   "explanation_id": "ENTENDA/CC2002:ART.2045/BASE/1",
+   "origin_mission": "CC13",
+   "audit_groups": [
+    "B_OR_CORRECTION_WAVE"
+   ],
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.2045:CAPUT\tRevogam-se a Lei n o 3.071, de 1 o de janeiro de 1916 - Código Civil e a Parte Primeira do Código Comercial, Lei n o 556, de 25 de junho de 1850.",
+   "source_snapshot_sha256": "02b92e214f6deb9f5ad1507698ab8fd61ac2398dd1856be2536e735e53ad13ce",
+   "independent_rule_summary": "The 1916 Civil Code and Part One of the Commercial Code were expressly repealed without erasing accrued effects or unrepealed commercial law.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ]
+   },
+   "entenda_content_sha256": "2cab0a1d3b17649fef86c3b322e663695f6f4c7a8669e202034f3f31ac1de933",
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "The five ENTENDA fields preserve the independently stated rule, its material limitation and legal consequence without an identified contradiction in this review scope.",
+   "finding": null
+  }
+ ]
+}
