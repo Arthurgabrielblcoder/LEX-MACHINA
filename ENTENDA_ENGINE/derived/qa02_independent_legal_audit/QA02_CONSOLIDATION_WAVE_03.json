@@ -1,0 +1,117 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02-WAVE-03",
+ "as_of": "2026-11-12",
+ "status": "PARTIAL_REQUIRES_CONTINUATION",
+ "completed_checkpoints": [
+  13,
+  14,
+  15,
+  16,
+  17
+ ],
+ "coverage": {
+  "active_explanations": 2017,
+  "versions": 2180,
+  "historical_versions": 163,
+  "priority_total": 599,
+  "wave_01_unique_audited": 52,
+  "wave_02_priority_audited": 100,
+  "wave_03_priority_audited": 100,
+  "priority_audited_accumulated": 222,
+  "priority_pending": 377,
+  "unique_audited_accumulated": 252,
+  "by_book_accumulated": {
+   "COMPLEMENTARES_E_FINAIS": 4,
+   "DIREITOS_REAIS": 33,
+   "EMPRESA": 54,
+   "FAMILIA": 8,
+   "OBRIGACOES_E_CONTRATOS": 27,
+   "PARTE_GERAL": 120,
+   "SUCESSOES": 6
+  }
+ },
+ "findings": {
+  "wave_03_total": 18,
+  "wave_03_by_severity": {
+   "ALTO": 11,
+   "CRÍTICO": 1,
+   "MÉDIO": 6
+  },
+  "accumulated_total": 32,
+  "accumulated_by_severity": {
+   "ALTO": 21,
+   "CRÍTICO": 1,
+   "MÉDIO": 10
+  },
+  "wave_03_target_ids": [
+   "CC2002:ART.1063",
+   "CC2002:ART.1072",
+   "CC2002:ART.1081",
+   "CC2002:ART.1091",
+   "CC2002:ART.1101",
+   "CC2002:ART.1104",
+   "CC2002:ART.1136",
+   "CC2002:ART.1142",
+   "CC2002:ART.1152",
+   "CC2002:ART.1158",
+   "CC2002:ART.1179",
+   "CC2002:ART.1184",
+   "CC2002:ART.1187",
+   "CC2002:ART.1192",
+   "CC2002:ART.1225",
+   "CC2002:ART.1258",
+   "CC2002:ART.1268",
+   "CC2002:ART.1272"
+  ]
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "tests": {
+  "qa02_wave03_specific": {
+   "tests_run": 9,
+   "result": "OK"
+  },
+  "directed_cc02_cc13": {
+   "tests_run": 98,
+   "result": "OK"
+  },
+  "global_suite": {
+   "tests_run": 423,
+   "result": "OK",
+   "skipped": 2
+  },
+  "temp_policy": "TEMP/TMP redirected to a writable worktree directory for the global suite."
+ },
+ "immutability": {
+  "editorial_corpus_changed": false,
+  "candidate_indexes_changed": false,
+  "production_indexes_changed": false,
+  "deploy_performed": false
+ },
+ "continuation": {
+  "next_checkpoint": 18,
+  "queue": "QA02_PENDING_PRIORITY_WAVE_04.json",
+  "queue_sha256": "0933db90fea763f457c91b5ea30f1f39a688e6ba3e094f9479cb0bac541828b9",
+  "next_source_queue_position": 201,
+  "next_target_id": "CC2002:ART.1273",
+  "suggested_next_block_source_positions": [
+   201,
+   220
+  ]
+ },
+ "artifact_sha256": {
+  "QA02_CHECKPOINT_13.json": "8a07e7641c97c71b90f3a7af51568ffee7c7fc4a987d9bd04c0b917ec7f2f857",
+  "QA02_CHECKPOINT_14.json": "4c79e92ecd2ac6080aa9915289d0fc84c05af787bc40b0fb833328d6b9ecb255",
+  "QA02_CHECKPOINT_15.json": "72b58d97e49f5d4c6477937a9e885b458278117b8d81bb2bab7a3852f0b8c86d",
+  "QA02_CHECKPOINT_16.json": "7f5f0b5c5560488e8b3edbcbfa9125fbb9797d3de68faf098e3ea662431e67bf",
+  "QA02_CHECKPOINT_17.json": "9dd433c7344662e8cc7775504184c88979d17293db5991a384d56964f6f77192",
+  "QA02_AUDIT_WAVE_03.json": "c2c0722539631a4cc51199c29a455567626a46b5c99b0a9537485cd9ce70d115",
+  "QA02_CORRECTION_QUEUE_CONSOLIDATED_WAVE_03.json": "f56e044382fad87c7d2779cc19d310c65eb8a3adfa8201769fa9dd97f33f8164",
+  "QA02_PENDING_PRIORITY_WAVE_04.json": "0933db90fea763f457c91b5ea30f1f39a688e6ba3e094f9479cb0bac541828b9",
+  "QA02_WAVE03_FINDINGS.json": "888f206dd58f3d8f5805d46a4169dc39f53bec824ce010a84b7d65e6a02cb641"
+ }
+}

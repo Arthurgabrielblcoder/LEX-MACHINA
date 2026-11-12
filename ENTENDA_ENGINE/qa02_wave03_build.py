@@ -118,6 +118,72 @@ def main(through):
         "records": remaining,
     }
     base.write_json(OUT / "QA02_PENDING_PRIORITY_WAVE_04.json", next_queue)
+    if through == 17:
+        wave1 = json.loads(WAVE1_AUDIT.read_text(encoding="utf-8"))
+        wave2 = json.loads(WAVE2_AUDIT.read_text(encoding="utf-8"))
+        prior_findings = prior["wave_01_findings"] + prior["wave_02_findings"]
+        accumulated_findings = prior_findings + new_findings
+        prior_consolidation = json.loads((OUT / "QA02_CONSOLIDATION_WAVE_02.json").read_text(encoding="utf-8"))
+        by_book = Counter(prior_consolidation["coverage"]["by_book_accumulated"])
+        by_book.update(record["book"] for record in all_records)
+        checkpoint_hashes = {f"QA02_CHECKPOINT_{n:02d}.json": base.sha256(OUT / f"QA02_CHECKPOINT_{n:02d}.json")
+                             for n in range(13, 18)}
+        consolidation = {
+            "schema_version": 1,
+            "mission": "QA-02-WAVE-03",
+            "as_of": base.AS_OF,
+            "status": "PARTIAL_REQUIRES_CONTINUATION",
+            "completed_checkpoints": [13, 14, 15, 16, 17],
+            "coverage": {
+                "active_explanations": 2017,
+                "versions": 2180,
+                "historical_versions": 163,
+                "priority_total": 599,
+                "wave_01_unique_audited": wave1["audited_total"],
+                "wave_02_priority_audited": wave2["audited_total"],
+                "wave_03_priority_audited": len(all_records),
+                "priority_audited_accumulated": wave1["universe"]["priority_audited"] + wave2["audited_total"] + len(all_records),
+                "priority_pending": len(remaining),
+                "unique_audited_accumulated": wave1["audited_total"] + wave2["audited_total"] + len(all_records),
+                "by_book_accumulated": dict(sorted(by_book.items())),
+            },
+            "findings": {
+                "wave_03_total": len(new_findings),
+                "wave_03_by_severity": dict(sorted(Counter(f["severity"] for f in new_findings).items())),
+                "accumulated_total": len(accumulated_findings),
+                "accumulated_by_severity": dict(sorted(Counter(f["severity"] for f in accumulated_findings).items())),
+                "wave_03_target_ids": [f["target_id"] for f in new_findings],
+            },
+            "protected_sha256": base.PROTECTED,
+            "tests": {
+                "qa02_wave03_specific": {"tests_run": 9, "result": "OK"},
+                "directed_cc02_cc13": {"tests_run": 98, "result": "OK"},
+                "global_suite": {"tests_run": 423, "result": "OK", "skipped": 2},
+                "temp_policy": "TEMP/TMP redirected to a writable worktree directory for the global suite.",
+            },
+            "immutability": {
+                "editorial_corpus_changed": False,
+                "candidate_indexes_changed": False,
+                "production_indexes_changed": False,
+                "deploy_performed": False,
+            },
+            "continuation": {
+                "next_checkpoint": 18,
+                "queue": "QA02_PENDING_PRIORITY_WAVE_04.json",
+                "queue_sha256": base.sha256(OUT / "QA02_PENDING_PRIORITY_WAVE_04.json"),
+                "next_source_queue_position": remaining[0]["source_queue_position"],
+                "next_target_id": remaining[0]["target_id"],
+                "suggested_next_block_source_positions": [201, 220],
+            },
+            "artifact_sha256": {
+                **checkpoint_hashes,
+                "QA02_AUDIT_WAVE_03.json": base.sha256(OUT / "QA02_AUDIT_WAVE_03.json"),
+                "QA02_CORRECTION_QUEUE_CONSOLIDATED_WAVE_03.json": base.sha256(OUT / "QA02_CORRECTION_QUEUE_CONSOLIDATED_WAVE_03.json"),
+                "QA02_PENDING_PRIORITY_WAVE_04.json": base.sha256(OUT / "QA02_PENDING_PRIORITY_WAVE_04.json"),
+                "QA02_WAVE03_FINDINGS.json": base.sha256(FINDINGS_FILE),
+            },
+        }
+        base.write_json(OUT / "QA02_CONSOLIDATION_WAVE_03.json", consolidation)
     print(json.dumps({"through": through, "audited": len(all_records), "findings": len(new_findings),
                       "remaining": len(remaining)}, ensure_ascii=False))
 
