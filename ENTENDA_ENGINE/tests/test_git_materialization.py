@@ -22,6 +22,27 @@ def _in_git_repo():
 
 @unittest.skipUnless(_in_git_repo(), 'not inside a git checkout')
 class GitMaterializationTest(unittest.TestCase):
+    def test_git_path_resolves_regular_and_linked_worktree_indexes(self):
+        root = Path(tempfile.mkdtemp(prefix='lexm_gitpath_'))
+        linked = root / 'linked'
+        repo = root / 'regular'
+        try:
+            subprocess.run(['git', 'init', str(repo)], check=True, capture_output=True)
+            (repo / 'probe.txt').write_text('probe\n', encoding='utf-8')
+            subprocess.run(['git', 'add', 'probe.txt'], cwd=repo, check=True, capture_output=True)
+            subprocess.run(['git', '-c', 'user.name=QA-01', '-c', 'user.email=qa01@example.invalid',
+                            'commit', '-m', 'fixture'], cwd=repo, check=True, capture_output=True)
+            subprocess.run(['git', 'worktree', 'add', str(linked)], cwd=repo, check=True, capture_output=True)
+            regular_index = G.git_path('index', repo)
+            linked_index = G.git_path('index', linked)
+            self.assertTrue(regular_index.is_file())
+            self.assertTrue(linked_index.is_file())
+            self.assertNotEqual(regular_index, linked_index)
+            self.assertEqual(regular_index, repo / '.git' / 'index')
+            self.assertNotEqual(linked_index.parent, linked / '.git')
+        finally:
+            shutil.rmtree(root, ignore_errors=True)
+
     def test_critical_artifacts_byte_identical_after_checkout(self):
         out = Path(tempfile.mkdtemp(prefix='lexm_test_'))
         try:
@@ -32,7 +53,9 @@ class GitMaterializationTest(unittest.TestCase):
         self.assertEqual(problems, [])
         self.assertEqual(stats['byte_identical'], stats['files'])
         self.assertGreater(stats['files'], 150)
-        self.assertEqual(stats['index_pairs'], 12)                                        # pilot + batches 01-05 (pending and final) + batch 06 + macro batches 07 and 08 candidates
+        expected_pairs = sum(1 for man in (G.REPO / 'ENTENDA_ENGINE/derived').glob('**/ENTENDA_BUILD_MANIFEST.json')
+                             if (man.parent / 'ENTENDA_LOOKUP.IDX').is_file() and (man.parent / 'ENTENDA_PAYLOAD.DAT').is_file())
+        self.assertEqual(stats['index_pairs'], expected_pairs)                            # every currently tracked complete index pair
         self.assertEqual(stats['payload_blocks'], stats['lookup_rows'])                   # every OFFSET/BYTES row reads a whole block
         self.assertEqual(stats['logical_equal'], 1)                                       # approved main corpus: normalization-safe
 

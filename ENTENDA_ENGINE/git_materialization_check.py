@@ -43,6 +43,14 @@ def git(args, env=None, inp=None, cwd=REPO):
     return subprocess.run(['git', '-c', 'core.longpaths=true'] + args, cwd=cwd, env=env, input=inp, check=True, capture_output=True).stdout
 
 
+def git_path(name, repo=REPO):
+    """Resolve a repository administrative path in regular and linked worktrees."""
+    repo = Path(repo).resolve()
+    raw = git(['rev-parse', '--git-path', name], cwd=repo).decode('utf-8').strip()
+    path = Path(raw)
+    return path if path.is_absolute() else (repo / path).resolve()
+
+
 def materialize(source, out, paths):
     """Check out `paths` of `source` (HEAD, INDEX or a ref) into `out` through a temporary index. Returns {path: blob_sha}."""
     out = Path(out)
@@ -51,7 +59,7 @@ def materialize(source, out, paths):
     env = dict(os.environ, GIT_INDEX_FILE=str(idx))
     try:
         if source == 'INDEX':
-            shutil.copyfile(REPO / '.git' / 'index', idx)
+            shutil.copyfile(git_path('index'), idx)
         else:
             git(['read-tree', source], env)
         listing = git(['ls-files', '-s', '-z', '--'] + paths, env).split(b'\0')
@@ -61,7 +69,7 @@ def materialize(source, out, paths):
             blobs[path.decode('utf-8')] = meta.split()[1].decode()
         # the work tree is `out`, which has no .gitattributes on disk: git falls back to the .gitattributes recorded in the temporary index,
         # i.e. the attributes of the materialized source, never those of the main working tree
-        co_env = dict(env, GIT_DIR=str(REPO / '.git'), GIT_WORK_TREE=str(out))
+        co_env = dict(env, GIT_DIR=str(git_path('.')), GIT_WORK_TREE=str(out))
         names = [p for p in blobs if p != '.gitattributes']
         git(['checkout-index', '-f', '--stdin', '-z'], co_env, b'\0'.join(p.encode('utf-8') for p in names) + b'\0', cwd=out)
         return {p: blobs[p] for p in names}
