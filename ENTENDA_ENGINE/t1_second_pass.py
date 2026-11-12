@@ -65,9 +65,13 @@ def load_transition_evidence(path, root):
     texts = {}
     for key, s in doc['sources'].items():
         data = (Path(root) / s['path']).read_bytes()
-        if hashlib.sha256(data).hexdigest() != s['sha256']:
+        # Evidence pins repository (LF) bytes. A Windows checkout may materialize an
+        # un-attributed legacy source as CRLF; accept only that reversible transport
+        # normalization, while keeping every substantive byte hash-protected.
+        canonical = data.replace(b'\r\n', b'\n')
+        if hashlib.sha256(canonical).hexdigest() != s['sha256']:
             raise SecondPassError(f"TRANSITION_SOURCE_SHA_MISMATCH {key}: {s['path']}")
-        texts[key] = fold(data.decode('utf-8'))
+        texts[key] = fold(canonical.decode('utf-8'))
     out = {}
     for e in doc['targets']:
         tid = e['target_id']

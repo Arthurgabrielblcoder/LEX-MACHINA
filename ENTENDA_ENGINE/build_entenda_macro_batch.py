@@ -656,10 +656,10 @@ def doc_spec(c):
 
 
 def manifest(bd, ms, nm, doc, sel):
-    inputs = root_inputs(bd, ms) + sorted(str(p.relative_to(bd)) for p in (bd / 'drafts').glob('*.json'))
-    generated = sorted(str(p.relative_to(bd)) for p in bd.rglob('*') if p.is_file() and str(p.relative_to(bd)) not in inputs
+    inputs = root_inputs(bd, ms) + sorted(p.relative_to(bd).as_posix() for p in (bd / 'drafts').glob('*.json'))
+    generated = sorted(p.relative_to(bd).as_posix() for p in bd.rglob('*') if p.is_file() and p.relative_to(bd).as_posix() not in inputs
                        and p.name not in (nm.manifest, 'DETERMINISM_EVIDENCE.json') and p.relative_to(bd).parts[0] != HISTORY)
-    history = sorted(str(p.relative_to(bd)) for p in (bd / HISTORY).rglob('*') if p.is_file()) if (bd / HISTORY).is_dir() else []
+    history = sorted(p.relative_to(bd).as_posix() for p in (bd / HISTORY).rglob('*') if p.is_file()) if (bd / HISTORY).is_dir() else []
     ctx_errata = _status_errata_input(ms['norma_id'])
     _json(bd / nm.manifest, dict(
         schema_version=1, batch_id=ms['batch_id'], as_of=ms['as_of_date'],

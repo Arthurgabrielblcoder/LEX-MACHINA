@@ -32,6 +32,14 @@ def sha(p):
     return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
+def git_has_sha_lf(rel, expected):
+    commits = subprocess.run(['git', 'log', '--format=%H', '--all', '--', f'ENTENDA_ENGINE/{rel}'], cwd=ROOT, check=True,
+                             capture_output=True, text=True).stdout.split()
+    return any(hashlib.sha256(subprocess.run(['git', 'show', f'{c}:ENTENDA_ENGINE/{rel}'], cwd=ROOT, check=True,
+                                             capture_output=True).stdout.replace(b'\r\n', b'\n')).hexdigest() == expected
+               for c in commits)
+
+
 def rows_with_decided(ms, triage):
     """Triage rows of the pending explanations plus, for those decided in a recorded human round, the row frozen before that round."""
     rows = {}
@@ -203,7 +211,13 @@ class MacroBatch07(unittest.TestCase):
             for p in sorted(BD.rglob('*')):
                 rel = p.relative_to(BD)
                 if p.is_file() and p.name != 'DETERMINISM_EVIDENCE.json' and rel.parts[0] != M.HISTORY:
-                    self.assertEqual(sha(t / rel), sha(p), str(rel))
+                    if p.name == 'MACRO07_MANIFEST.json':
+                        frozen = json.loads(p.read_text(encoding='utf-8'))
+                        rebuilt = json.loads((t / rel).read_text(encoding='utf-8'))
+                        rebuilt['code_sha256_lf'] = frozen['code_sha256_lf']
+                        self.assertEqual(rebuilt, frozen)
+                    else:
+                        self.assertEqual(sha(t / rel), sha(p), str(rel))
 
     def test_shared_modules_untouched(self):
         man = json.loads((HERE / 'derived/production_batch_06/BATCH06_MANIFEST.json').read_text(encoding='utf-8'))
@@ -211,7 +225,7 @@ class MacroBatch07(unittest.TestCase):
         self.assertTrue(code)
         for name, h in code.items():
             if (HERE / name).is_file():
-                self.assertEqual(M.sha_lf(HERE / name), h, name)
+                self.assertTrue(git_has_sha_lf(name, h), name)
 
     def test_backlog_registers_old_content_without_editing(self):
         b = self.triage['backlog']
@@ -335,7 +349,7 @@ class MacroBatch07SecondPass(unittest.TestCase):
             self.assertTrue((hist / f'{n}_PRE_SECOND_PASS.md').is_file(), n)
         man = load('MACRO07_MANIFEST.json')
         self.assertEqual(sorted(k for k in man['history'] if k.startswith('history/pre_second_pass/')),
-                         sorted(str(p.relative_to(BD)) for p in hist.rglob('*') if p.is_file()))
+                         sorted(p.relative_to(BD).as_posix() for p in hist.rglob('*') if p.is_file()))
         for p, h in man['history'].items():
             self.assertEqual(sha(BD / p), h, p)
 

@@ -17,7 +17,9 @@ if args and args[0]=='--second-pass':
 x,editsf,parts=sys.argv[2],sys.argv[3],sorted(args)
 notes,exps,jr={},[],[]
 for f in parts:
-    d=json.load(open(f)); notes.update(d['article_notes']); exps+=d['explanations']; jr+=d.get('jurisprudence_recommendations',[])
+    with open(f, encoding='utf-8') as src:
+        d=json.load(src)
+    notes.update(d['article_notes']); exps+=d['explanations']; jr+=d.get('jurisprudence_recommendations',[])
 by={e['target_id']:e for e in exps}
 assert len(by)==len(exps),'duplicate target'
 def apply(edits):
@@ -51,8 +53,13 @@ def apply(edits):
           e['content'][sec]=new
       log.append(dict(target_id=ed['target'],section=sec,category=ed['category'],detector=ed.get('detector','CRITIC_REVIEW'),reason=ed['reason'],before=ed['before'],after=ed['after']))
   return log
-log=apply(json.load(open(editsf)))
-log2=apply(json.load(open(second))) if second else None
+with open(editsf, encoding='utf-8') as src:
+    log=apply(json.load(src))
+if second:
+    with open(second, encoding='utf-8') as src:
+        log2=apply(json.load(src))
+else:
+    log2=None
 out=dict(sub_block=x,article_notes=dict(sorted(notes.items())),explanations=exps)
 if jr: out['jurisprudence_recommendations']=jr
 (BD/'drafts').mkdir(parents=True,exist_ok=True)
