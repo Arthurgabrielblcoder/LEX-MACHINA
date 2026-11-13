@@ -221,6 +221,12 @@ def main(through):
                 "blocking_target_ids": [item["target_id"] for item in accumulated if item["severity"] == "CRÍTICO"],
             },
             "protected_sha256": base.PROTECTED,
+            "tests": {
+                "qa02_wave04_specific": {"tests_run": 10, "result": "OK"},
+                "directed_cc02_cc13": {"tests_run": 98, "result": "OK"},
+                "global_suite": {"tests_run": 433, "result": "OK", "skipped": 2},
+                "temp_policy": "TEMP/TMP redirected to a writable worktree directory for the global suite.",
+            },
             "immutability": {
                 "editorial_corpus_changed": False,
                 "candidate_indexes_changed": False,

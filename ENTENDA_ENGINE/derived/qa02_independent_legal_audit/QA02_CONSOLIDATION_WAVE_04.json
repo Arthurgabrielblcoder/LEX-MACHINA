@@ -1,0 +1,168 @@
+{
+ "schema_version": 1,
+ "mission": "QA-02-WAVE-04",
+ "as_of": "2026-11-12",
+ "status": "PRIORITY_AUDIT_COMPLETE",
+ "full_corpus_audit_complete": false,
+ "completed_checkpoints": [
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33
+ ],
+ "coverage": {
+  "active_explanations": 2017,
+  "versions": 2180,
+  "historical_versions": 163,
+  "priority_total": 599,
+  "wave_04_priority_audited": 377,
+  "priority_audited_accumulated": 599,
+  "priority_pending": 0,
+  "unique_audited_accumulated": 629,
+  "nonpriority_unaudited": 1388,
+  "by_book_accumulated": {
+   "COMPLEMENTARES_E_FINAIS": 19,
+   "DIREITOS_REAIS": 127,
+   "EMPRESA": 54,
+   "FAMILIA": 144,
+   "OBRIGACOES_E_CONTRATOS": 27,
+   "PARTE_GERAL": 120,
+   "SUCESSOES": 138
+  }
+ },
+ "findings": {
+  "wave_04_total": 46,
+  "wave_04_by_severity": {
+   "ALTO": 30,
+   "CRÍTICO": 3,
+   "MÉDIO": 13
+  },
+  "accumulated_total": 78,
+  "accumulated_by_severity": {
+   "ALTO": 51,
+   "CRÍTICO": 4,
+   "MÉDIO": 23
+  },
+  "wave_04_target_ids": [
+   "CC2002:ART.1276",
+   "CC2002:ART.1341",
+   "CC2002:ART.1358-A",
+   "CC2002:ART.1358-M",
+   "CC2002:ART.1358-N",
+   "CC2002:ART.1368-B",
+   "CC2002:ART.1395",
+   "CC2002:ART.1410",
+   "CC2002:ART.1420",
+   "CC2002:ART.1425",
+   "CC2002:ART.1443",
+   "CC2002:ART.1460",
+   "CC2002:ART.1467",
+   "CC2002:ART.1473",
+   "CC2002:ART.1477",
+   "CC2002:ART.1480",
+   "CC2002:ART.1481",
+   "CC2002:ART.1487",
+   "CC2002:ART.1559",
+   "CC2002:ART.1560",
+   "CC2002:ART.1584",
+   "CC2002:ART.1597",
+   "CC2002:ART.1637",
+   "CC2002:ART.1641",
+   "CC2002:ART.1708",
+   "CC2002:ART.1723",
+   "CC2002:ART.1783-A",
+   "CC2002:ART.1793",
+   "CC2002:ART.1796",
+   "CC2002:ART.1801",
+   "CC2002:ART.1805",
+   "CC2002:ART.1813",
+   "CC2002:ART.1824",
+   "CC2002:ART.1826",
+   "CC2002:ART.1827",
+   "CC2002:ART.1830",
+   "CC2002:ART.1893",
+   "CC2002:ART.1944",
+   "CC2002:ART.1962",
+   "CC2002:ART.1963",
+   "CC2002:ART.1968",
+   "CC2002:ART.1997",
+   "CC2002:ART.2002",
+   "CC2002:ART.2007",
+   "CC2002:ART.2016",
+   "CC2002:ART.2040"
+  ],
+  "blocking_target_ids": [
+   "CC2002:ART.1258",
+   "CC2002:ART.1276",
+   "CC2002:ART.1641",
+   "CC2002:ART.2016"
+  ]
+ },
+ "protected_sha256": {
+  "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
+  "lookup": "60f1de336f2f9ecbc5e671d0a6a9223cf20e47ab5826a5501b53f9a67551866e",
+  "payload": "9fb3f3a1b6f1c1926eda0818fc753f2d0348194cf25b0a333fc6fa18c48222cb"
+ },
+ "tests": {
+  "qa02_wave04_specific": {
+   "tests_run": 10,
+   "result": "OK"
+  },
+  "directed_cc02_cc13": {
+   "tests_run": 98,
+   "result": "OK"
+  },
+  "global_suite": {
+   "tests_run": 433,
+   "result": "OK",
+   "skipped": 2
+  },
+  "temp_policy": "TEMP/TMP redirected to a writable worktree directory for the global suite."
+ },
+ "immutability": {
+  "editorial_corpus_changed": false,
+  "candidate_indexes_changed": false,
+  "production_indexes_changed": false,
+  "deploy_performed": false
+ },
+ "continuation": {
+  "priority_queue_complete": true,
+  "pending_priority_queue": "QA02_PENDING_PRIORITY_AFTER_WAVE_04.json",
+  "pending_priority_queue_sha256": "d3d36134181a53a31bb92b1bb9c584c50f74afcd87db24dd0d50cdbf3f8e76c7",
+  "recommended_next_scope": "Independent individual audit of the 1,388 nonpriority explanations"
+ },
+ "artifact_sha256": {
+  "QA02_CHECKPOINT_18.json": "a0e1305ccbe91fa79d3576313aad556eac6665ec14a803e89f9891efe5a02498",
+  "QA02_CHECKPOINT_19.json": "3ae443b654cce3979397e78338b8e424dbf9c8b9adaad9f87c9fa6850141f181",
+  "QA02_CHECKPOINT_20.json": "73162ab97692b602456e9a4795463bfb682dca55b220c65400d516525f5f9d98",
+  "QA02_CHECKPOINT_21.json": "b43ed1175c361a1fc7d1b779be52ddcacf41fdccaeb739e7b297477c03222145",
+  "QA02_CHECKPOINT_22.json": "eb5074621490a9e8877a8fe3e83a29682ee8427f131ae04a4fd70029788cc9cc",
+  "QA02_CHECKPOINT_23.json": "974484b901b434b3659cd64486d5355a66784d13af58b5d5aed5915d18855e19",
+  "QA02_CHECKPOINT_24.json": "6da5950983ca4786e225771c539114c04b0ff3f62d17ba4cc015ba3db42fc178",
+  "QA02_CHECKPOINT_25.json": "47c179a86856fbe27809420269d5b0e2b6c0457da9096545fca06df6dc5f17f0",
+  "QA02_CHECKPOINT_26.json": "70d6355eb75b74f2d89a342fb8560e69b002d6fad5cc51399edb0891ad8b2368",
+  "QA02_CHECKPOINT_27.json": "0370960af8a34ee8a12bbb894ccba98b5977f2a9371d4516360e6fd89c692289",
+  "QA02_CHECKPOINT_28.json": "85d0e6f38b6151546f52e81970c2787308d569d9c122a7da7fdd41207c2cc999",
+  "QA02_CHECKPOINT_29.json": "29f2963a744a578135e07d203d23c8367fb4ba3a053794122214862ae6804d1f",
+  "QA02_CHECKPOINT_30.json": "57b751262ee1a69db99922d187b3fc2e6200bdab936a8e601e7927461c244aac",
+  "QA02_CHECKPOINT_31.json": "002baf6bfe16080e88d8b95162a5af45bd5f6d63e0ee1bf6e17d27b824147a34",
+  "QA02_CHECKPOINT_32.json": "e3dbe928b01aa3ecb8dd85318464e0d64bb1a1292322e38677455a6948db4dc8",
+  "QA02_CHECKPOINT_33.json": "dcf669b62585199e63b400ef8d8f13b390b3ffa9141d2e276c454f1975203b34",
+  "QA02_AUDIT_WAVE_04.json": "1d366bd3115217650e26c76a6f6002febb3258bcba4b79be81422435c080da79",
+  "QA02_CORRECTION_QUEUE_CONSOLIDATED_WAVE_04.json": "0d8cce6b3b9c335e7f71502b88c81488ae53732a7927708f2f83701504896e6b",
+  "QA02_PENDING_PRIORITY_AFTER_WAVE_04.json": "d3d36134181a53a31bb92b1bb9c584c50f74afcd87db24dd0d50cdbf3f8e76c7",
+  "QA02_WAVE04_FINDINGS.json": "ae086163944a9375ce3336030beb121e8314f5250af16a437e9d18650a48937a"
+ }
+}
