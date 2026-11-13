@@ -1,0 +1,36 @@
+{
+ "schema_version": 1,
+ "mission": "QA-03",
+ "as_of": "2026-11-13",
+ "status": "PASS",
+ "temporary_directory": ".tmp_qa03 within worktree",
+ "directed_regression": {
+  "scope": "CC-02 through CC-13 plus QA-02 waves and QA-03",
+  "executed": 148,
+  "passed": 148,
+  "failed": 0,
+  "errors": 0
+ },
+ "global_suite": {
+  "executed": 443,
+  "passed": 441,
+  "skipped": 2,
+  "failed": 0,
+  "errors": 0,
+  "elapsed_seconds": 132.156
+ },
+ "determinism": {
+  "status": "PASS",
+  "rebuilders": [
+   "qa03_prepare.py",
+   "qa03_revalidate_corrections.py",
+   "qa03_audit_build.py --through-checkpoint 16",
+   "qa03_correction_build.py"
+  ],
+  "comparison": "byte-identical queues, evidence, candidate corpus and runtime indexes"
+ },
+ "git_materialization": {
+  "status": "PASS_AFTER_CANDIDATE_COMMIT",
+  "note": "The pre-commit run exposed the expected tracked/untracked index-pair difference; the post-commit global run passed."
+ }
+}
