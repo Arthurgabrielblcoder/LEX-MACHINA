@@ -2,19 +2,19 @@
  "schema_version": 1,
  "mission": "QA-02-WAVE-04",
  "as_of": "2026-11-12",
- "completed_through_checkpoint": 19,
+ "completed_through_checkpoint": 20,
  "status": "PARTIAL_REQUIRES_CONTINUATION",
- "audited_total": 50,
+ "audited_total": 75,
  "source_queue_positions_completed": [
   201,
-  250
+  275
  ],
- "next_source_queue_position": 251,
- "findings_total": 8,
+ "next_source_queue_position": 276,
+ "findings_total": 15,
  "finding_counts": {
-  "ALTO": 6,
+  "ALTO": 12,
   "CRÍTICO": 1,
-  "MÉDIO": 1
+  "MÉDIO": 2
  },
  "protected_sha256": {
   "corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
@@ -3312,6 +3312,1572 @@
    },
    "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
    "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Mediante promessa de compra e venda, em que se não pactuou arrependimento, celebrada por instrumento público ou particular, e registrada no Cartório de Registro de Imóveis, adquire o promitente comprador direito real à a; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 251,
+   "target_id": "CC2002:ART.1418",
+   "explanation_id": "ENTENDA/CC2002:ART.1418/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1418:CAPUT\tO promitente comprador, titular de direito real, pode exigir do promitente vendedor, ou de terceiros, a quem os direitos deste forem cedidos, a outorga da escritura definitiva de compra e venda, conforme o disposto no instrumento preliminar; e, se houver recusa, requerer ao juiz a adjudicação do imóvel.",
+   "source_snapshot_sha256": "8bcfed16e1ca090b786d3527eb1191b9dd5ad5cbfa9b274e99c063a744b976a4",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1418:CAPUT",
+     "text": "O promitente comprador, titular de direito real, pode exigir do promitente vendedor, ou de terceiros, a quem os direitos deste forem cedidos, a outorga da escritura definitiva de compra e venda, conforme o disposto no instrumento preliminar; e, se houver recusa, requerer ao juiz a adjudicação do imóvel."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O promitente comprador, titular de direito real, pode exigir do promitente vendedor, ou de terceiros, a quem os direitos deste forem cedidos, a outorga da escritura definitiva de compra e venda, conforme o disposto no instrumento preliminar; e, se houver recusa, requerer ao juiz a adjudicação do imóvel.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "a688babb572064b82962858f377939abb178c029b180557dc63320ec5bfa5f3c",
+     "o_que_significa": "413109389fb7a0b2aff889ce803ee2bddf9a235b1ec6502fe8cd21632f394829",
+     "exemplo_pratico": "1065e52fc450b50de5098a69d2a22525c95ec9e441913ab5ebab818804450d09",
+     "atencao": "b1f1d21c072c27388c05da57954c1977ec1e74b656a667f2dfaef8e8d3bdfeda",
+     "palavras_dificeis": "1034a5a4b9c36000f5bc1c30abedd211a9b682070db1656e14b0e04307a949a4"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O promitente comprador, titular de direito real, pode exigir do promitente vendedor, ou de terceiros, a quem os direitos deste forem cedidos, a outorga da escritura definitiva de compra e venda, conforme o disposto no in; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 252,
+   "target_id": "CC2002:ART.1420",
+   "explanation_id": "ENTENDA/CC2002:ART.1420/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1420:CAPUT\tSó aquele que pode alienar poderá empenhar, hipotecar ou dar em anticrese; só os bens que se podem alienar poderão ser dados em penhor, anticrese ou hipoteca.\nCC2002:ART.1420:PAR.1\to A propriedade superveniente torna eficaz, desde o registro, as garantias reais estabelecidas por quem não era dono.\nCC2002:ART.1420:PAR.2\to A coisa comum a dois ou mais proprietários não pode ser dada em garantia real, na sua totalidade, sem o consentimento de todos; mas cada um pode individualmente dar em garantia real a parte que tiver.",
+   "source_snapshot_sha256": "7860b75f1a97b1a637dc197c36dbb7949acf2be480bf5c57b51e68fcc80f3e35",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1420:CAPUT",
+     "text": "Só aquele que pode alienar poderá empenhar, hipotecar ou dar em anticrese; só os bens que se podem alienar poderão ser dados em penhor, anticrese ou hipoteca."
+    },
+    {
+     "label": "CC2002:ART.1420:PAR.1",
+     "text": "o A propriedade superveniente torna eficaz, desde o registro, as garantias reais estabelecidas por quem não era dono."
+    },
+    {
+     "label": "CC2002:ART.1420:PAR.2",
+     "text": "o A coisa comum a dois ou mais proprietários não pode ser dada em garantia real, na sua totalidade, sem o consentimento de todos; mas cada um pode individualmente dar em garantia real a parte que tiver."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Só aquele que pode alienar poderá empenhar, hipotecar ou dar em anticrese; só os bens que se podem alienar poderão ser dados em penhor, anticrese ou hipoteca. | o A propriedade superveniente torna eficaz, desde o registro, as garantias reais estabelecidas por quem não era dono. | o A coisa comum a dois ou mais proprietários não pode ser dada em garantia real, na sua totalidade, sem o consentimento de todos; mas cada um pode individualmente dar em garantia real a parte que tiver.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "385d10269dbbff21382ddd7ca2e28144405eba560b9a4a9aeeff3738ff00bfd0",
+     "o_que_significa": "2b38206f67517f07433daae416656f752bec4d7c318d4c51154384a951b58957",
+     "exemplo_pratico": "3f99e9bd6902815a50f49947bc82cab45e66c36cfbd49437e4f1175678f84a16",
+     "atencao": "9f7f477a75c32bcedff5223c1870b5a6ba0bcc7b129c1d334ec21c5f366fb5af",
+     "palavras_dificeis": "c8e062f102355ff8994f2f67ad001aef41de6acee86f8b87d66bcde9964671ca"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Os §§ 1º e 2º do art. 1.420 estabelecem que propriedade superveniente torna eficaz a garantia desde o registro e que a coisa comum inteira exige consentimento de todos, embora cada condômino possa gravar sua parte.",
+   "finding": {
+    "target_id": "CC2002:ART.1420",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "Somente quem pode alienar constitui garantia real",
+    "legal_basis": "Os §§ 1º e 2º do art. 1.420 estabelecem que propriedade superveniente torna eficaz a garantia desde o registro e que a coisa comum inteira exige consentimento de todos, embora cada condômino possa gravar sua parte.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_CONVALIDACAO_E_CONSENTIMENTO",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Oculta duas exceções/qualificações decisivas ao enunciado geral sobre poder de disposição.",
+    "correction_direction": "Incluir o efeito da propriedade superveniente e distinguir garantia da totalidade da coisa comum e da parte individual.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 253,
+   "target_id": "CC2002:ART.1424",
+   "explanation_id": "ENTENDA/CC2002:ART.1424/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1424:CAPUT\tOs contratos de penhor, anticrese ou hipoteca declararão, sob pena de não terem eficácia:\nCC2002:ART.1424:INC.I\to valor do crédito, sua estimação, ou valor máximo;\nCC2002:ART.1424:INC.II\to prazo fixado para pagamento;\nCC2002:ART.1424:INC.III\ta taxa dos juros, se houver;\nCC2002:ART.1424:INC.IV\to bem dado em garantia com as suas especificações.",
+   "source_snapshot_sha256": "9853d462cb9036858df28bb41b899f5d869e993998c291469eb4dd2551ae3846",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1424:CAPUT",
+     "text": "Os contratos de penhor, anticrese ou hipoteca declararão, sob pena de não terem eficácia:"
+    },
+    {
+     "label": "CC2002:ART.1424:INC.I",
+     "text": "o valor do crédito, sua estimação, ou valor máximo;"
+    },
+    {
+     "label": "CC2002:ART.1424:INC.II",
+     "text": "o prazo fixado para pagamento;"
+    },
+    {
+     "label": "CC2002:ART.1424:INC.III",
+     "text": "a taxa dos juros, se houver;"
+    },
+    {
+     "label": "CC2002:ART.1424:INC.IV",
+     "text": "o bem dado em garantia com as suas especificações."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Os contratos de penhor, anticrese ou hipoteca declararão, sob pena de não terem eficácia: | o valor do crédito, sua estimação, ou valor máximo; | o prazo fixado para pagamento; | a taxa dos juros, se houver; | o bem dado em garantia com as suas especificações.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "1511631748d47955db47b84fad31a3a9b8147a16b3c401f3b7fa7d0657d97be0",
+     "o_que_significa": "00c265fa72dca351f13cbfc651f82283e94d77afc867708d05ed84327b64e231",
+     "exemplo_pratico": "9c01266c19f3b7484d958e65dafd89f5246c580db0f9ab35736e0e0d6417873f",
+     "atencao": "fcb1d53b9fd352fe7085835d051b704a430a79826819481f0b3e6ae1033c5cf7",
+     "palavras_dificeis": "856befbc6363ded3ffdb587c61564deed2bfa35b3fe2404711c8a678a01c1653"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 5 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Os contratos de penhor, anticrese ou hipoteca declararão, sob pena de não terem eficácia:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 254,
+   "target_id": "CC2002:ART.1425",
+   "explanation_id": "ENTENDA/CC2002:ART.1425/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1425:CAPUT\tA dívida considera-se vencida:\nCC2002:ART.1425:INC.I\tse, deteriorando-se, ou depreciando-se o bem dado em segurança, desfalcar a garantia, e o devedor, intimado, não a reforçar ou substituir;\nCC2002:ART.1425:INC.II\tse o devedor cair em insolvência ou falir;\nCC2002:ART.1425:INC.III\tse as prestações não forem pontualmente pagas, toda vez que deste modo se achar estipulado o pagamento. Neste caso, o recebimento posterior da prestação atrasada importa renúncia do credor ao seu direito de execução imediata;\nCC2002:ART.1425:INC.IV\tse perecer o bem dado em garantia, e não for substituído;\nCC2002:ART.1425:INC.V\tse se desapropriar o bem dado em garantia, hipótese na qual se depositará a parte do preço que for necessária para o pagamento integral do credor.\nCC2002:ART.1425:PAR.1\to Nos casos de perecimento da coisa dada em garantia, esta se sub-rogará na indenização do seguro, ou no ressarcimento do dano, em benefício do credor, a quem assistirá sobre ela preferência até seu completo reembolso.\nCC2002:ART.1425:PAR.2\to Nos casos dos incisos IV e V, só se vencerá a hipoteca antes do prazo estipulado, se o perecimento, ou a desapropriação recair sobre o bem dado em garantia, e esta não abranger outras; subsistindo, no caso contrário, a dívida reduzida, com a respectiva garantia sobre os demais bens, não desapropriados ou destruídos.",
+   "source_snapshot_sha256": "eb2b8b5341f4342d2627053e74b625a739cfdad027348d2547bc1856ea65d009",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1425:CAPUT",
+     "text": "A dívida considera-se vencida:"
+    },
+    {
+     "label": "CC2002:ART.1425:INC.I",
+     "text": "se, deteriorando-se, ou depreciando-se o bem dado em segurança, desfalcar a garantia, e o devedor, intimado, não a reforçar ou substituir;"
+    },
+    {
+     "label": "CC2002:ART.1425:INC.II",
+     "text": "se o devedor cair em insolvência ou falir;"
+    },
+    {
+     "label": "CC2002:ART.1425:INC.III",
+     "text": "se as prestações não forem pontualmente pagas, toda vez que deste modo se achar estipulado o pagamento. Neste caso, o recebimento posterior da prestação atrasada importa renúncia do credor ao seu direito de execução imediata;"
+    },
+    {
+     "label": "CC2002:ART.1425:INC.IV",
+     "text": "se perecer o bem dado em garantia, e não for substituído;"
+    },
+    {
+     "label": "CC2002:ART.1425:INC.V",
+     "text": "se se desapropriar o bem dado em garantia, hipótese na qual se depositará a parte do preço que for necessária para o pagamento integral do credor."
+    },
+    {
+     "label": "CC2002:ART.1425:PAR.1",
+     "text": "o Nos casos de perecimento da coisa dada em garantia, esta se sub-rogará na indenização do seguro, ou no ressarcimento do dano, em benefício do credor, a quem assistirá sobre ela preferência até seu completo reembolso."
+    },
+    {
+     "label": "CC2002:ART.1425:PAR.2",
+     "text": "o Nos casos dos incisos IV e V, só se vencerá a hipoteca antes do prazo estipulado, se o perecimento, ou a desapropriação recair sobre o bem dado em garantia, e esta não abranger outras; subsistindo, no caso contrário, a dívida reduzida, com a respectiva garantia sobre os demais bens, não desapropriados ou destruídos."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 8 segmentos vigentes do dispositivo: A dívida considera-se vencida: | se, deteriorando-se, ou depreciando-se o bem dado em segurança, desfalcar a garantia, e o devedor, intimado, não a reforçar ou substituir; | se o devedor cair em insolvência ou falir; | se as prestações não forem pontualmente pagas, toda vez que deste modo se achar estipulado o pagamento. Neste caso, o recebimento posterior da prestação atrasada importa renúncia do credor ao seu direito de execução imediata; | se perecer o bem dado em garantia, e não for substituído; | se se desapropriar o bem dado em garantia, hipótese na qual se depositará a parte do preço que for necessária para o pagamento integral do credor. | o Nos casos de perecimento da coisa dada em garantia, esta se sub-rogará na indenização do seguro, ou no ressarcimento do dano, em benefício do credor, a quem assistirá sobre ela preferência até seu completo reembolso. | o Nos casos dos incisos IV e V, só se vencerá a hipoteca antes do prazo estipulado, se o perecimento, ou a desapropriação recair sobre o bem dado em garantia, e esta não abranger outras; subsistindo, no caso contrário, a dívida reduzida, com a respectiva garantia sobre os demais bens, não desapropriados ou destruídos.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d92e838cf7e79d0da66e3b415cef56293b8ded1a6234ba71522570aef1b0ef4b",
+     "o_que_significa": "864b08902c745a735199049df14397f50ba2b2b20c08bdc2872c2ab8a5dff13a",
+     "exemplo_pratico": "6802479fdc372af47f4d8c205132786bfde7b0bd1cacfc21cdc8af781d7fdf7a",
+     "atencao": "78346f0c3880de3d749ad5e82bd28233d6f52fc46e717e0cc776c65dfb1a82b7",
+     "palavras_dificeis": "3910d2b0d88031e402a091591f8fd9d6c0cea17524380f7ecc16c68c4de30022"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.425 prevê deterioração que desfalque a garantia sem reforço após intimação, insolvência ou falência, inadimplemento quando estipulado, perecimento sem substituição e desapropriação; o § 2º limita o vencimento antecipado quando subsistem outros bens garantidores.",
+   "finding": {
+    "target_id": "CC2002:ART.1425",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "deterioração, insolvência, inadimplemento ou perda de preferência",
+    "legal_basis": "O art. 1.425 prevê deterioração que desfalque a garantia sem reforço após intimação, insolvência ou falência, inadimplemento quando estipulado, perecimento sem substituição e desapropriação; o § 2º limita o vencimento antecipado quando subsistem outros bens garantidores.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "RESUMO_INEXATO_E_OMISSAO_DE_LIMITES",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A expressão 'perda de preferência' não corresponde a uma hipótese enumerada e o resumo omite requisitos e a limitação do § 2º.",
+    "correction_direction": "Substituir a categoria imprecisa pela enumeração legal e registrar a sub-rogação e o limite relativo aos demais bens.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 255,
+   "target_id": "CC2002:ART.1427",
+   "explanation_id": "ENTENDA/CC2002:ART.1427/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1427:CAPUT\tSalvo cláusula expressa, o terceiro que presta garantia real por dívida alheia não fica obrigado a substituí-la, ou reforçá-la, quando, sem culpa sua, se perca, deteriore, ou desvalorize.",
+   "source_snapshot_sha256": "7300e5041b48ccf52670cf315716bbf8f7fb25059fcfbd67c5545f133f141249",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1427:CAPUT",
+     "text": "Salvo cláusula expressa, o terceiro que presta garantia real por dívida alheia não fica obrigado a substituí-la, ou reforçá-la, quando, sem culpa sua, se perca, deteriore, ou desvalorize."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Salvo cláusula expressa, o terceiro que presta garantia real por dívida alheia não fica obrigado a substituí-la, ou reforçá-la, quando, sem culpa sua, se perca, deteriore, ou desvalorize.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "60ee615f8d871c82ec07fb4cf6958ab1f45ae94fc884d7e9bd4c137d971578cd",
+     "o_que_significa": "3ee070fb105bdd6733d355381519e3ee9611b802577ebaeb4a0c62a7ad0422a2",
+     "exemplo_pratico": "28a8a67a4c320aeedb0f0fb5e7fed366eb3b13497d0cd86f99862545ad83c7a1",
+     "atencao": "ace1a6c25bdb0ce09d2221d9ec5e47ae6cdbea432f1feba9fe4ec2ff3cfe7873",
+     "palavras_dificeis": "2b1996682dc1ee39c3ad471de91a9bf308bcdef2c4ffaf17f3051b2b20c6b3a3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Salvo cláusula expressa, o terceiro que presta garantia real por dívida alheia não fica obrigado a substituí-la, ou reforçá-la, quando, sem culpa sua, se perca, deteriore, ou desvalorize; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 256,
+   "target_id": "CC2002:ART.1429",
+   "explanation_id": "ENTENDA/CC2002:ART.1429/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1429:CAPUT\tOs sucessores do devedor não podem remir parcialmente o penhor ou a hipoteca na proporção dos seus quinhões; qualquer deles, porém, pode fazê-lo no todo.\nCC2002:ART.1429:PAR.UNICO\tO herdeiro ou sucessor que fizer a remição fica sub-rogado nos direitos do credor pelas quotas que houver satisfeito.",
+   "source_snapshot_sha256": "9d86b89d54bef2df5b2293b8eea8e242527fd1c034020fdf3c4ece5648b94004",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1429:CAPUT",
+     "text": "Os sucessores do devedor não podem remir parcialmente o penhor ou a hipoteca na proporção dos seus quinhões; qualquer deles, porém, pode fazê-lo no todo."
+    },
+    {
+     "label": "CC2002:ART.1429:PAR.UNICO",
+     "text": "O herdeiro ou sucessor que fizer a remição fica sub-rogado nos direitos do credor pelas quotas que houver satisfeito."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Os sucessores do devedor não podem remir parcialmente o penhor ou a hipoteca na proporção dos seus quinhões; qualquer deles, porém, pode fazê-lo no todo. | O herdeiro ou sucessor que fizer a remição fica sub-rogado nos direitos do credor pelas quotas que houver satisfeito.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "48bd3c0f5c87e2c500ee3a8cdec429692710ff1ae3e58bf9432ef6d2fffaff80",
+     "o_que_significa": "121b1f384e59e6afa800572305dc1ad5ce37848c7dac91a2cf25c60fb7da74fa",
+     "exemplo_pratico": "a7d4b62727d571fc96bb181596ba4e925d9c72e7acd47e4edf3535ffbaa31701",
+     "atencao": "732e4f55672bfb33ddfb222e17bd31dc7f49376d101a7345671ac7be386e8c62",
+     "palavras_dificeis": "e9a83e3219891f1c08284abafefa51520083ba336c8543b14f860b5270a69c63"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Os sucessores do devedor não podem remir parcialmente o penhor ou a hipoteca na proporção dos seus quinhões; qualquer deles, porém, pode fazê-lo no todo; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 257,
+   "target_id": "CC2002:ART.1433",
+   "explanation_id": "ENTENDA/CC2002:ART.1433/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1433:CAPUT\tO credor pignoratício tem direito:\nCC2002:ART.1433:INC.I\tà posse da coisa empenhada;\nCC2002:ART.1433:INC.II\tà retenção dela, até que o indenizem das despesas devidamente justificadas, que tiver feito, não sendo ocasionadas por culpa sua;\nCC2002:ART.1433:INC.III\tao ressarcimento do prejuízo que houver sofrido por vício da coisa empenhada;\nCC2002:ART.1433:INC.IV\ta promover a execução judicial, ou a venda amigável, se lhe permitir expressamente o contrato, ou lhe autorizar o devedor mediante procuração;\nCC2002:ART.1433:INC.V\ta apropriar-se dos frutos da coisa empenhada que se encontra em seu poder;\nCC2002:ART.1433:INC.VI\ta promover a venda antecipada, mediante prévia autorização judicial, sempre que haja receio fundado de que a coisa empenhada se perca ou deteriore, devendo o preço ser depositado. O dono da coisa empenhada pode impedir a venda antecipada, substituindo-a, ou oferecendo outra garantia real idônea.",
+   "source_snapshot_sha256": "53ecfe4e367cc955ea176b2ada528e049b74461a784a5565e415b8b7437cd9b0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1433:CAPUT",
+     "text": "O credor pignoratício tem direito:"
+    },
+    {
+     "label": "CC2002:ART.1433:INC.I",
+     "text": "à posse da coisa empenhada;"
+    },
+    {
+     "label": "CC2002:ART.1433:INC.II",
+     "text": "à retenção dela, até que o indenizem das despesas devidamente justificadas, que tiver feito, não sendo ocasionadas por culpa sua;"
+    },
+    {
+     "label": "CC2002:ART.1433:INC.III",
+     "text": "ao ressarcimento do prejuízo que houver sofrido por vício da coisa empenhada;"
+    },
+    {
+     "label": "CC2002:ART.1433:INC.IV",
+     "text": "a promover a execução judicial, ou a venda amigável, se lhe permitir expressamente o contrato, ou lhe autorizar o devedor mediante procuração;"
+    },
+    {
+     "label": "CC2002:ART.1433:INC.V",
+     "text": "a apropriar-se dos frutos da coisa empenhada que se encontra em seu poder;"
+    },
+    {
+     "label": "CC2002:ART.1433:INC.VI",
+     "text": "a promover a venda antecipada, mediante prévia autorização judicial, sempre que haja receio fundado de que a coisa empenhada se perca ou deteriore, devendo o preço ser depositado. O dono da coisa empenhada pode impedir a venda antecipada, substituindo-a, ou oferecendo outra garantia real idônea."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 7 segmentos vigentes do dispositivo: O credor pignoratício tem direito: | à posse da coisa empenhada; | à retenção dela, até que o indenizem das despesas devidamente justificadas, que tiver feito, não sendo ocasionadas por culpa sua; | ao ressarcimento do prejuízo que houver sofrido por vício da coisa empenhada; | a promover a execução judicial, ou a venda amigável, se lhe permitir expressamente o contrato, ou lhe autorizar o devedor mediante procuração; | a apropriar-se dos frutos da coisa empenhada que se encontra em seu poder; | a promover a venda antecipada, mediante prévia autorização judicial, sempre que haja receio fundado de que a coisa empenhada se perca ou deteriore, devendo o preço ser depositado. O dono da coisa empenhada pode impedir a venda antecipada, substituindo-a, ou oferecendo outra garantia real idônea.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "c0ee21c143f666a39aa386e8a6fd1492c21b4d448ac082d5a176d53b2b58490d",
+     "o_que_significa": "28796a23b424a012678dda472904eb0e995395e33f6b1907ccc7a6b257b0751e",
+     "exemplo_pratico": "6b4d92ae294345c678417f2de4c28abde052d6127c479f27308396a270889769",
+     "atencao": "25456dd6d69a5317b7e9fb5f9b95b875d6d82c5ef4ae19eaf6607f94b4af4b0b",
+     "palavras_dificeis": "edf8e65f7f893a8c5482f93217ffd3912bff2b1ebcba8bce77d5a8c5d31df191"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 7 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O credor pignoratício tem direito:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 258,
+   "target_id": "CC2002:ART.1435",
+   "explanation_id": "ENTENDA/CC2002:ART.1435/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1435:CAPUT\tO credor pignoratício é obrigado:\nCC2002:ART.1435:INC.I\tà custódia da coisa, como depositário, e a ressarcir ao dono a perda ou deterioração de que for culpado, podendo ser compensada na dívida, até a concorrente quantia, a importância da responsabilidade;\nCC2002:ART.1435:INC.II\tà defesa da posse da coisa empenhada e a dar ciência, ao dono dela, das circunstâncias que tornarem necessário o exercício de ação possessória;\nCC2002:ART.1435:INC.III\ta imputar o valor dos frutos, de que se apropriar (art. 1.433, inciso V) nas despesas de guarda e conservação, nos juros e no capital da obrigação garantida, sucessivamente;\nCC2002:ART.1435:INC.IV\ta restituí-la, com os respectivos frutos e acessões, uma vez paga a dívida;\nCC2002:ART.1435:INC.V\ta entregar o que sobeje do preço, quando a dívida for paga, no caso do inciso IV do art. 1.433.",
+   "source_snapshot_sha256": "9bd75dea7551ea63344dbd189fe73972ba0a9f647e9fdb76f000ea3a68883661",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1435:CAPUT",
+     "text": "O credor pignoratício é obrigado:"
+    },
+    {
+     "label": "CC2002:ART.1435:INC.I",
+     "text": "à custódia da coisa, como depositário, e a ressarcir ao dono a perda ou deterioração de que for culpado, podendo ser compensada na dívida, até a concorrente quantia, a importância da responsabilidade;"
+    },
+    {
+     "label": "CC2002:ART.1435:INC.II",
+     "text": "à defesa da posse da coisa empenhada e a dar ciência, ao dono dela, das circunstâncias que tornarem necessário o exercício de ação possessória;"
+    },
+    {
+     "label": "CC2002:ART.1435:INC.III",
+     "text": "a imputar o valor dos frutos, de que se apropriar (art. 1.433, inciso V) nas despesas de guarda e conservação, nos juros e no capital da obrigação garantida, sucessivamente;"
+    },
+    {
+     "label": "CC2002:ART.1435:INC.IV",
+     "text": "a restituí-la, com os respectivos frutos e acessões, uma vez paga a dívida;"
+    },
+    {
+     "label": "CC2002:ART.1435:INC.V",
+     "text": "a entregar o que sobeje do preço, quando a dívida for paga, no caso do inciso IV do art. 1.433."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: O credor pignoratício é obrigado: | à custódia da coisa, como depositário, e a ressarcir ao dono a perda ou deterioração de que for culpado, podendo ser compensada na dívida, até a concorrente quantia, a importância da responsabilidade; | à defesa da posse da coisa empenhada e a dar ciência, ao dono dela, das circunstâncias que tornarem necessário o exercício de ação possessória; | a imputar o valor dos frutos, de que se apropriar (art. 1.433, inciso V) nas despesas de guarda e conservação, nos juros e no capital da obrigação garantida, sucessivamente; | a restituí-la, com os respectivos frutos e acessões, uma vez paga a dívida; | a entregar o que sobeje do preço, quando a dívida for paga, no caso do inciso IV do art. 1.433.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "94aa5883db5a77030bf42ccdc70b316b58fe6fab919fff772cc215ede1a85a76",
+     "o_que_significa": "c6cb51994e9733a3f147b3a52d9682cc8fff246ad572f03e9e3cba647b01a1c7",
+     "exemplo_pratico": "b4c13822eb21160aa4726fae48da6b97ddbd3c2bd3f2773816b2e4955244ae0c",
+     "atencao": "b91412d82b345e76675c5360c404051a0281a6ddecc2122d64e89fb666f16a21",
+     "palavras_dificeis": "c24c8c595837f9356c467e83c74e04b45c1ecc433aad8a95c33cf21d7a08bc9f"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O credor pignoratício é obrigado:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 259,
+   "target_id": "CC2002:ART.1439",
+   "explanation_id": "ENTENDA/CC2002:ART.1439/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1439:CAPUT\tO penhor agrícola e o penhor pecuário não podem ser convencionados por prazos superiores aos das obrigações garantidas. (Redação dada pela Lei nº 12.873, de 2013)\nCC2002:ART.1439:PAR.1\to Embora vencidos os prazos, permanece a garantia, enquanto subsistirem os bens que a constituem.\nCC2002:ART.1439:PAR.2\to A prorrogação deve ser averbada à margem do registro respectivo, mediante requerimento do credor e do devedor.",
+   "source_snapshot_sha256": "8948fc32a93a33da5ae2bbbf4a56f4a3baa7ef3e006ae4348caeb840a0256286",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1439:CAPUT",
+     "text": "O penhor agrícola e o penhor pecuário não podem ser convencionados por prazos superiores aos das obrigações garantidas. (Redação dada pela Lei nº 12.873, de 2013)"
+    },
+    {
+     "label": "CC2002:ART.1439:PAR.1",
+     "text": "o Embora vencidos os prazos, permanece a garantia, enquanto subsistirem os bens que a constituem."
+    },
+    {
+     "label": "CC2002:ART.1439:PAR.2",
+     "text": "o A prorrogação deve ser averbada à margem do registro respectivo, mediante requerimento do credor e do devedor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: O penhor agrícola e o penhor pecuário não podem ser convencionados por prazos superiores aos das obrigações garantidas. (Redação dada pela Lei nº 12.873, de 2013) | o Embora vencidos os prazos, permanece a garantia, enquanto subsistirem os bens que a constituem. | o A prorrogação deve ser averbada à margem do registro respectivo, mediante requerimento do credor e do devedor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "efee4ac994e7d59dffa711039cf127bfd22503904956a5628e1e44f8c7cb15e6",
+     "o_que_significa": "7dcbdcfcbe28cf9fde39fb9437668cbb53b41240fdefea0c7e5bb9f599123138",
+     "exemplo_pratico": "c37503cf6248e341e821a2ac8a471f1ae506af3ad2566f29a8f4549bd39282fb",
+     "atencao": "85c2e38afba3b3c315f6d5b66ea075c3089e75ef855106e7cea1e0780f7c1218",
+     "palavras_dificeis": "c482a0039275798704525866974d3e1e440b0ad243271b7e8926660b045119f0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 3 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O penhor agrícola e o penhor pecuário não podem ser convencionados por prazos superiores aos das obrigações garantidas. (Redação dada pela Lei nº 12.873, de 2013); não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 260,
+   "target_id": "CC2002:ART.1442",
+   "explanation_id": "ENTENDA/CC2002:ART.1442/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1442:CAPUT\tPodem ser objeto de penhor:\nCC2002:ART.1442:INC.I\tmáquinas e instrumentos de agricultura;\nCC2002:ART.1442:INC.II\tcolheitas pendentes, ou em via de formação;\nCC2002:ART.1442:INC.III\tfrutos acondicionados ou armazenados;\nCC2002:ART.1442:INC.IV\tlenha cortada e carvão vegetal;\nCC2002:ART.1442:INC.V\tanimais do serviço ordinário de estabelecimento agrícola.",
+   "source_snapshot_sha256": "90a98cec104d75bf01e7d3506406c083d4401372a3d8646f97f0a12c2d65b695",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1442:CAPUT",
+     "text": "Podem ser objeto de penhor:"
+    },
+    {
+     "label": "CC2002:ART.1442:INC.I",
+     "text": "máquinas e instrumentos de agricultura;"
+    },
+    {
+     "label": "CC2002:ART.1442:INC.II",
+     "text": "colheitas pendentes, ou em via de formação;"
+    },
+    {
+     "label": "CC2002:ART.1442:INC.III",
+     "text": "frutos acondicionados ou armazenados;"
+    },
+    {
+     "label": "CC2002:ART.1442:INC.IV",
+     "text": "lenha cortada e carvão vegetal;"
+    },
+    {
+     "label": "CC2002:ART.1442:INC.V",
+     "text": "animais do serviço ordinário de estabelecimento agrícola."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 6 segmentos vigentes do dispositivo: Podem ser objeto de penhor: | máquinas e instrumentos de agricultura; | colheitas pendentes, ou em via de formação; | frutos acondicionados ou armazenados; | lenha cortada e carvão vegetal; | animais do serviço ordinário de estabelecimento agrícola.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ea87d001078d64ea00b1df2e3272ef05b9c4ed4e18b6c9c29b11348e504aa25a",
+     "o_que_significa": "1a3dde862e51f5fde403ce1f3d3838f7b3a2b3e9622d9a02cb24a6740f8bfb0e",
+     "exemplo_pratico": "3cbf4f3549fbacadd61dcdeb42cb933355ee2bea009d864ee1eaed04f2ef93f4",
+     "atencao": "035ae52e78a25062c4e8e7a787f14100207d670c6709e4e361a0b122913283c5",
+     "palavras_dificeis": "dabfd0aabd142078e11a2ec894d5fd554a7d76a783f184f4f07a4b497d3c68c3"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 6 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Podem ser objeto de penhor:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 261,
+   "target_id": "CC2002:ART.1443",
+   "explanation_id": "ENTENDA/CC2002:ART.1443/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1443:CAPUT\tO penhor agrícola que recai sobre colheita pendente, ou em via de formação, abrange a imediatamente seguinte, no caso de frustrar-se ou ser insuficiente a que se deu em garantia.\nCC2002:ART.1443:PAR.UNICO\tSe o credor não financiar a nova safra, poderá o devedor constituir com outrem novo penhor, em quantia máxima equivalente à do primeiro; o segundo penhor terá preferência sobre o primeiro, abrangendo este apenas o excesso apurado na colheita seguinte.",
+   "source_snapshot_sha256": "93d30a063c9f75a9083eacb522dba819736f68c89ce68cbe522fb6db3e6099df",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1443:CAPUT",
+     "text": "O penhor agrícola que recai sobre colheita pendente, ou em via de formação, abrange a imediatamente seguinte, no caso de frustrar-se ou ser insuficiente a que se deu em garantia."
+    },
+    {
+     "label": "CC2002:ART.1443:PAR.UNICO",
+     "text": "Se o credor não financiar a nova safra, poderá o devedor constituir com outrem novo penhor, em quantia máxima equivalente à do primeiro; o segundo penhor terá preferência sobre o primeiro, abrangendo este apenas o excesso apurado na colheita seguinte."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O penhor agrícola que recai sobre colheita pendente, ou em via de formação, abrange a imediatamente seguinte, no caso de frustrar-se ou ser insuficiente a que se deu em garantia. | Se o credor não financiar a nova safra, poderá o devedor constituir com outrem novo penhor, em quantia máxima equivalente à do primeiro; o segundo penhor terá preferência sobre o primeiro, abrangendo este apenas o excesso apurado na colheita seguinte.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "86b4393009bdd77358585552bd3f159b333ceee49a3a7a17cd400df4ef780cc7",
+     "o_que_significa": "108aa5cc22e56b0d1b99e42e1485854ed218138e5204460b42971639f5639ad2",
+     "exemplo_pratico": "accae1d44b245c5def946833c9e37ce0df31cc91f5bb01335b17fb1fe53036d8",
+     "atencao": "cfb801e98374f8aaa3256b28e3923f161189f8b90f720811f7e7c4bf3890a72e",
+     "palavras_dificeis": "579b1bfaf24e1d19fbaef2ef19dc6460bca67fb8222025ec80308766e0bb44e0"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O parágrafo único do art. 1.443 autoriza novo penhor a outro financiador, até o valor do primeiro, quando o credor original não financia a nova safra, conferindo preferência ao segundo penhor e deixando ao primeiro apenas o excesso.",
+   "finding": {
+    "target_id": "CC2002:ART.1443",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "o penhor alcança a safra imediatamente seguinte",
+    "legal_basis": "O parágrafo único do art. 1.443 autoriza novo penhor a outro financiador, até o valor do primeiro, quando o credor original não financia a nova safra, conferindo preferência ao segundo penhor e deixando ao primeiro apenas o excesso.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_PREFERENCIA_ESPECIAL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A regra central de prioridade entre financiadores da safra seguinte desaparece da explicação.",
+    "correction_direction": "Acrescentar a possibilidade, o limite quantitativo e a preferência excepcional do segundo penhor.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 262,
+   "target_id": "CC2002:ART.1449",
+   "explanation_id": "ENTENDA/CC2002:ART.1449/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1449:CAPUT\tO devedor não pode, sem o consentimento por escrito do credor, alterar as coisas empenhadas ou mudar-lhes a situação, nem delas dispor. O devedor que, anuindo o credor, alienar as coisas empenhadas, deverá repor outros bens da mesma natureza, que ficarão sub-rogados no penhor.",
+   "source_snapshot_sha256": "0f55e0790f4a8d7d3fc6177d7c369df0b303ff9f6d91912ed0d31476a0d959a6",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1449:CAPUT",
+     "text": "O devedor não pode, sem o consentimento por escrito do credor, alterar as coisas empenhadas ou mudar-lhes a situação, nem delas dispor. O devedor que, anuindo o credor, alienar as coisas empenhadas, deverá repor outros bens da mesma natureza, que ficarão sub-rogados no penhor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O devedor não pode, sem o consentimento por escrito do credor, alterar as coisas empenhadas ou mudar-lhes a situação, nem delas dispor. O devedor que, anuindo o credor, alienar as coisas empenhadas, deverá repor outros bens da mesma natureza, que ficarão sub-rogados no penhor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "535a8972e6b6eab84fa41e2305da5c5cca15ce53d30c9234a0811a188cf3b8f2",
+     "o_que_significa": "24d1fa24b174ef64d0302425ca4b7fcf50c4e1e52551615f6c91d063f978d1f4",
+     "exemplo_pratico": "e4ebca3bb6ab3534e91d56a335bd6f6778121045685a74d55dd4e45e8754d79a",
+     "atencao": "ee7160d7ff502d1a541dae9c908c4ef875bbc1624b3ecd54611a9b1d8c91eaa0",
+     "palavras_dificeis": "a1c030dc27ee5fecb6d4cb1c3a7957287685cf7e4be04e8fc6a85d5f7e60f633"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O devedor não pode, sem o consentimento por escrito do credor, alterar as coisas empenhadas ou mudar-lhes a situação, nem delas dispor. O devedor que, anuindo o credor, alienar as coisas empenhadas, deverá repor outros b; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 263,
+   "target_id": "CC2002:ART.1453",
+   "explanation_id": "ENTENDA/CC2002:ART.1453/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1453:CAPUT\tO penhor de crédito não tem eficácia senão quando notificado ao devedor; por notificado tem-se o devedor que, em instrumento público ou particular, declarar-se ciente da existência do penhor.",
+   "source_snapshot_sha256": "a396b7c3f0058dc8c853bf518fdb8e6d5ec9f8771d157cb2daad211f7a518b18",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1453:CAPUT",
+     "text": "O penhor de crédito não tem eficácia senão quando notificado ao devedor; por notificado tem-se o devedor que, em instrumento público ou particular, declarar-se ciente da existência do penhor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O penhor de crédito não tem eficácia senão quando notificado ao devedor; por notificado tem-se o devedor que, em instrumento público ou particular, declarar-se ciente da existência do penhor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ff3a49f6e2a9b2562d18f99f8152d5c79211758161d8442845e5a56e186bbf1a",
+     "o_que_significa": "d398b97f51963ec649b7759b4ded78566282ca53b38ed63ccd58a75ca0fa0763",
+     "exemplo_pratico": "9778020a7482a2aecde8f044ffcc76077d4136882943be854f4fdd9a2b18a025",
+     "atencao": "ec71e5769e727bc72af1d66c9e8e874e0fcb43f329074fa0442ddf56fb203029",
+     "palavras_dificeis": "0971704b295e66e7105d6bf0b6d72da1af016b3199a1912c458271371c1c6990"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O penhor de crédito não tem eficácia senão quando notificado ao devedor; por notificado tem-se o devedor que, em instrumento público ou particular, declarar-se ciente da existência do penhor; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 264,
+   "target_id": "CC2002:ART.1455",
+   "explanation_id": "ENTENDA/CC2002:ART.1455/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1455:CAPUT\tDeverá o credor pignoratício cobrar o crédito empenhado, assim que se torne exigível. Se este consistir numa prestação pecuniária, depositará a importância recebida, de acordo com o devedor pignoratício, ou onde o juiz determinar; se consistir na entrega da coisa, nesta se sub-rogará o penhor.\nCC2002:ART.1455:PAR.UNICO\tEstando vencido o crédito pignoratício, tem o credor direito a reter, da quantia recebida, o que lhe é devido, restituindo o restante ao devedor; ou a excutir a coisa a ele entregue.",
+   "source_snapshot_sha256": "b18e480c0c3638d4f03f3262bffddb97c132c77cc30b55954e5611f1ad1e396a",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1455:CAPUT",
+     "text": "Deverá o credor pignoratício cobrar o crédito empenhado, assim que se torne exigível. Se este consistir numa prestação pecuniária, depositará a importância recebida, de acordo com o devedor pignoratício, ou onde o juiz determinar; se consistir na entrega da coisa, nesta se sub-rogará o penhor."
+    },
+    {
+     "label": "CC2002:ART.1455:PAR.UNICO",
+     "text": "Estando vencido o crédito pignoratício, tem o credor direito a reter, da quantia recebida, o que lhe é devido, restituindo o restante ao devedor; ou a excutir a coisa a ele entregue."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Deverá o credor pignoratício cobrar o crédito empenhado, assim que se torne exigível. Se este consistir numa prestação pecuniária, depositará a importância recebida, de acordo com o devedor pignoratício, ou onde o juiz determinar; se consistir na entrega da coisa, nesta se sub-rogará o penhor. | Estando vencido o crédito pignoratício, tem o credor direito a reter, da quantia recebida, o que lhe é devido, restituindo o restante ao devedor; ou a excutir a coisa a ele entregue.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "8caf5d73145fd6ee84e66ed74b6ad5aea5132cab32e36b368b3a0ae4c899667a",
+     "o_que_significa": "9849955f5f21f69909b1b0772ef37ba5f1ab8a38bea3e297e81e206012e34f7b",
+     "exemplo_pratico": "93c1a3ecb267432ed97566104ec8ba7972b7486c7813a81ed4c9702d88d4376c",
+     "atencao": "460a02fdf0d57adcc6d19be51043dfeb3015f4f5a89f6f44796f03748d979e5c",
+     "palavras_dificeis": "cd6d3a47bb3a316981a925ad00e58e7db52e0a8dcdf828e1da344ad761d86a22"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Deverá o credor pignoratício cobrar o crédito empenhado, assim que se torne exigível. Se este consistir numa prestação pecuniária, depositará a importância recebida, de acordo com o devedor pignoratício, ou onde o juiz d; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 265,
+   "target_id": "CC2002:ART.1456",
+   "explanation_id": "ENTENDA/CC2002:ART.1456/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1456:CAPUT\tSe o mesmo crédito for objeto de vários penhores, só ao credor pignoratício, cujo direito prefira aos demais, o devedor deve pagar; responde por perdas e danos aos demais credores o credor preferente que, notificado por qualquer um deles, não promover oportunamente a cobrança.",
+   "source_snapshot_sha256": "f7130dbe6f7643cb694aa17e2858fabd44b8451d5264b128e2c20faa24892f82",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1456:CAPUT",
+     "text": "Se o mesmo crédito for objeto de vários penhores, só ao credor pignoratício, cujo direito prefira aos demais, o devedor deve pagar; responde por perdas e danos aos demais credores o credor preferente que, notificado por qualquer um deles, não promover oportunamente a cobrança."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: Se o mesmo crédito for objeto de vários penhores, só ao credor pignoratício, cujo direito prefira aos demais, o devedor deve pagar; responde por perdas e danos aos demais credores o credor preferente que, notificado por qualquer um deles, não promover oportunamente a cobrança.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "033d5da06964181905ffc29c9764c777017f08bc6d0b9cff551654697f53331c",
+     "o_que_significa": "24ac2bb45bd53ed1e83ef3ae21eabe89c57779316aa1122cd6cf3a01e73a0f37",
+     "exemplo_pratico": "56a16f3eee7105ea47784b1d7dddc54f3bd3d2465dae3daca25c258980415b62",
+     "atencao": "8f2c7efab671375a05231619f49d53cb687b64072a122789745e2cec4b37d9f2",
+     "palavras_dificeis": "b72b88e21477a0dfed9ac737efa4d13f07aaaf7bfee064f88f4ce5d37650ea76"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Se o mesmo crédito for objeto de vários penhores, só ao credor pignoratício, cujo direito prefira aos demais, o devedor deve pagar; responde por perdas e danos aos demais credores o credor preferente que, notificado por ; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 266,
+   "target_id": "CC2002:ART.1458",
+   "explanation_id": "ENTENDA/CC2002:ART.1458/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1458:CAPUT\tO penhor, que recai sobre título de crédito, constitui-se mediante instrumento público ou particular ou endosso pignoratício, com a tradição do título ao credor, regendo-se pelas Disposições Gerais deste Título e, no que couber, pela presente Seção.",
+   "source_snapshot_sha256": "0fcf1284c1a5e8e47ca7dee38702601253cb00d127fa657df76a4f822cd8c681",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1458:CAPUT",
+     "text": "O penhor, que recai sobre título de crédito, constitui-se mediante instrumento público ou particular ou endosso pignoratício, com a tradição do título ao credor, regendo-se pelas Disposições Gerais deste Título e, no que couber, pela presente Seção."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: O penhor, que recai sobre título de crédito, constitui-se mediante instrumento público ou particular ou endosso pignoratício, com a tradição do título ao credor, regendo-se pelas Disposições Gerais deste Título e, no que couber, pela presente Seção.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b7e5956fb85379aa618de07e3cd104973d51b9408f5a7d7ccc452b4072dc533b",
+     "o_que_significa": "98738e92e5710cb6792dc0343bcbad2779400515a0605988134ca3e99a056ad2",
+     "exemplo_pratico": "52d75e69ca8ea574f8bb3bdefd77836cc023a39147a8272b4d41cec84735859a",
+     "atencao": "8056b13b0483ef2004903f48f3ad2f8f1015a25bc896ecfbd3f59c4cf97a14c2",
+     "palavras_dificeis": "17eb685bfa3101ed45460ff1756ca4e761527fd02ee29059e2c9b72bd727eed0"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O penhor, que recai sobre título de crédito, constitui-se mediante instrumento público ou particular ou endosso pignoratício, com a tradição do título ao credor, regendo-se pelas Disposições Gerais deste Título e, no que; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 267,
+   "target_id": "CC2002:ART.1459",
+   "explanation_id": "ENTENDA/CC2002:ART.1459/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1459:CAPUT\tAo credor, em penhor de título de crédito, compete o direito de:\nCC2002:ART.1459:INC.I\tconservar a posse do título e recuperá-la de quem quer que o detenha;\nCC2002:ART.1459:INC.II\tusar dos meios judiciais convenientes para assegurar os seus direitos, e os do credor do título empenhado;\nCC2002:ART.1459:INC.III\tfazer intimar ao devedor do título que não pague ao seu credor, enquanto durar o penhor;\nCC2002:ART.1459:INC.IV\treceber a importância consubstanciada no título e os respectivos juros, se exigíveis, restituindo o título ao devedor, quando este solver a obrigação.",
+   "source_snapshot_sha256": "ba2923a4f8949e50b60957ace826912208f4e355a347bba393fe1a5554abad4f",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1459:CAPUT",
+     "text": "Ao credor, em penhor de título de crédito, compete o direito de:"
+    },
+    {
+     "label": "CC2002:ART.1459:INC.I",
+     "text": "conservar a posse do título e recuperá-la de quem quer que o detenha;"
+    },
+    {
+     "label": "CC2002:ART.1459:INC.II",
+     "text": "usar dos meios judiciais convenientes para assegurar os seus direitos, e os do credor do título empenhado;"
+    },
+    {
+     "label": "CC2002:ART.1459:INC.III",
+     "text": "fazer intimar ao devedor do título que não pague ao seu credor, enquanto durar o penhor;"
+    },
+    {
+     "label": "CC2002:ART.1459:INC.IV",
+     "text": "receber a importância consubstanciada no título e os respectivos juros, se exigíveis, restituindo o título ao devedor, quando este solver a obrigação."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 5 segmentos vigentes do dispositivo: Ao credor, em penhor de título de crédito, compete o direito de: | conservar a posse do título e recuperá-la de quem quer que o detenha; | usar dos meios judiciais convenientes para assegurar os seus direitos, e os do credor do título empenhado; | fazer intimar ao devedor do título que não pague ao seu credor, enquanto durar o penhor; | receber a importância consubstanciada no título e os respectivos juros, se exigíveis, restituindo o título ao devedor, quando este solver a obrigação.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b0bd29d50cf490bcc69af79372bca798f5bb0b28e3a3aabc163aa0d0431e9b50",
+     "o_que_significa": "858ed1f1ad3e8f517a252227569d0712bba88a2cd3007d21bfd6a243f07a07b3",
+     "exemplo_pratico": "a589c663875697d57d43a88051b327ada711c0ec10ab000383923ac112eaab63",
+     "atencao": "d47614b1226987ece23660e5c968895e788aaa2e153a67c0cd4a5bc526c55d45",
+     "palavras_dificeis": "c7718b7aca51dc0a6f9efec781be3e229a4e46be8537a794e4105306b80734e8"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 5 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Ao credor, em penhor de título de crédito, compete o direito de:; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 268,
+   "target_id": "CC2002:ART.1460",
+   "explanation_id": "ENTENDA/CC2002:ART.1460/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1460:CAPUT\tO devedor do título empenhado que receber a intimação prevista no inciso III do artigo antecedente, ou se der por ciente do penhor, não poderá pagar ao seu credor. Se o fizer, responderá solidariamente por este, por perdas e danos, perante o credor pignoratício.\nCC2002:ART.1460:PAR.UNICO\tSe o credor der quitação ao devedor do título empenhado, deverá saldar imediatamente a dívida, em cuja garantia se constituiu o penhor.",
+   "source_snapshot_sha256": "e8737a64bdd7f1eca80d3c4d8467352289020cde7d51d738860079c4103c430d",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1460:CAPUT",
+     "text": "O devedor do título empenhado que receber a intimação prevista no inciso III do artigo antecedente, ou se der por ciente do penhor, não poderá pagar ao seu credor. Se o fizer, responderá solidariamente por este, por perdas e danos, perante o credor pignoratício."
+    },
+    {
+     "label": "CC2002:ART.1460:PAR.UNICO",
+     "text": "Se o credor der quitação ao devedor do título empenhado, deverá saldar imediatamente a dívida, em cuja garantia se constituiu o penhor."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O devedor do título empenhado que receber a intimação prevista no inciso III do artigo antecedente, ou se der por ciente do penhor, não poderá pagar ao seu credor. Se o fizer, responderá solidariamente por este, por perdas e danos, perante o credor pignoratício. | Se o credor der quitação ao devedor do título empenhado, deverá saldar imediatamente a dívida, em cuja garantia se constituiu o penhor.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "2b09172c12791129856d620571332c10eb5bfd019ed4d397dcdefe7ac0357e79",
+     "o_que_significa": "9acd9cd4847affa738a5964f19171a8bbc767793d367d8af1e70a4f8164d6213",
+     "exemplo_pratico": "fb571a224727c3492fb0dea925d0be44f6627f36d5d7ff8c7d84b3ea03758a6f",
+     "atencao": "b1d691f1dd657ee1f9867cad7e7e6aaa1f39eab13c8126885dcdfab45096d1e8",
+     "palavras_dificeis": "0664326c6a3c2ca20bb09ac267e48d54dbe88c13b71ea167e825316c5a59a87b"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "Além da responsabilidade do devedor ciente, o parágrafo único do art. 1.460 obriga o credor que der quitação ao devedor do título empenhado a saldar imediatamente a dívida garantida pelo penhor.",
+   "finding": {
+    "target_id": "CC2002:ART.1460",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "responde solidariamente pelos danos",
+    "legal_basis": "Além da responsabilidade do devedor ciente, o parágrafo único do art. 1.460 obriga o credor que der quitação ao devedor do título empenhado a saldar imediatamente a dívida garantida pelo penhor.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_OBRIGACAO_IMEDIATA",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "O leitor não identifica a consequência específica da quitação concedida pelo credor.",
+    "correction_direction": "Incluir o dever de saldar imediatamente a dívida garantida quando houver quitação.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 269,
+   "target_id": "CC2002:ART.1462",
+   "explanation_id": "ENTENDA/CC2002:ART.1462/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1462:CAPUT\tConstitui-se o penhor, a que se refere o artigo antecedente, mediante instrumento público ou particular, registrado no Cartório de Títulos e Documentos do domicílio do devedor, e anotado no certificado de propriedade.\nCC2002:ART.1462:PAR.UNICO\tPrometendo pagar em dinheiro a dívida garantida com o penhor, poderá o devedor emitir cédula de crédito, na forma e para os fins que a lei especial determinar.",
+   "source_snapshot_sha256": "ac4be8c4768e29e3f1a07ffacac7e8b1b8cf24c51f76112c7b3c99a91b784cdc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1462:CAPUT",
+     "text": "Constitui-se o penhor, a que se refere o artigo antecedente, mediante instrumento público ou particular, registrado no Cartório de Títulos e Documentos do domicílio do devedor, e anotado no certificado de propriedade."
+    },
+    {
+     "label": "CC2002:ART.1462:PAR.UNICO",
+     "text": "Prometendo pagar em dinheiro a dívida garantida com o penhor, poderá o devedor emitir cédula de crédito, na forma e para os fins que a lei especial determinar."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: Constitui-se o penhor, a que se refere o artigo antecedente, mediante instrumento público ou particular, registrado no Cartório de Títulos e Documentos do domicílio do devedor, e anotado no certificado de propriedade. | Prometendo pagar em dinheiro a dívida garantida com o penhor, poderá o devedor emitir cédula de crédito, na forma e para os fins que a lei especial determinar.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "ff09bfc95c37d24c885655b17236bf712407e8a786414d8415bba3cb327657df",
+     "o_que_significa": "2e2dc939a6f82893293c222ce05e5d366ce598d49dc26c2dc08911d1954a1f61",
+     "exemplo_pratico": "27646bf66f80e1e47046e1fdd1a15d1165b60b85ec903c117823450dae27a362",
+     "atencao": "083c76d9049e323df8465db53658c85e4de2799a9d9265a643246b1afa5cd425",
+     "palavras_dificeis": "91bc1bd0ea09d59c803072f6a38c11e749f451a76c61f7e3749998e0e73f9aed"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que Constitui-se o penhor, a que se refere o artigo antecedente, mediante instrumento público ou particular, registrado no Cartório de Títulos e Documentos do domicílio do devedor, e anotado no certificado de propriedade; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 270,
+   "target_id": "CC2002:ART.1465",
+   "explanation_id": "ENTENDA/CC2002:ART.1465/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1465:CAPUT\tA alienação, ou a mudança, do veículo empenhado sem prévia comunicação ao credor importa no vencimento antecipado do crédito pignoratício.",
+   "source_snapshot_sha256": "859a4f7554893cb28e4439bb8abacde520bc3a275fa288c8eaf2a07434d78ba0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1465:CAPUT",
+     "text": "A alienação, ou a mudança, do veículo empenhado sem prévia comunicação ao credor importa no vencimento antecipado do crédito pignoratício."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 1 segmentos vigentes do dispositivo: A alienação, ou a mudança, do veículo empenhado sem prévia comunicação ao credor importa no vencimento antecipado do crédito pignoratício.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "6957b7f2df492126027c4ee1c3231a385c360b351ede54a3e9c35719bb2e994f",
+     "o_que_significa": "cde978b9e2aa2160eef378aa14190bd5a560777c697bafe875e9489d71d7bc65",
+     "exemplo_pratico": "48b2adf094de492f75b7ff4cd7def0130a4b87c5575d13dceeb61f03734571c6",
+     "atencao": "7ea715f899b64843af02fa3c697b2c0f295f280b5f21828b019531059acc1fce",
+     "palavras_dificeis": "0578c4ed32cd5567c424adcc50bf57ee752e43d3eb719fb12e653d2df978422b"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 1 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que A alienação, ou a mudança, do veículo empenhado sem prévia comunicação ao credor importa no vencimento antecipado do crédito pignoratício; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 271,
+   "target_id": "CC2002:ART.1467",
+   "explanation_id": "ENTENDA/CC2002:ART.1467/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1467:CAPUT\tSão credores pignoratícios, independentemente de convenção:\nCC2002:ART.1467:INC.I\tos hospedeiros, ou fornecedores de pousada ou alimento, sobre as bagagens, móveis, jóias ou dinheiro que os seus consumidores ou fregueses tiverem consigo nas respectivas casas ou estabelecimentos, pelas despesas ou consumo que aí tiverem feito;\nCC2002:ART.1467:INC.II\to dono do prédio rústico ou urbano, sobre os bens móveis que o rendeiro ou inquilino tiver guarnecendo o mesmo prédio, pelos aluguéis ou rendas.",
+   "source_snapshot_sha256": "5eed9c05990919ee956c3e3a2f4d74f8ae8fe781f35f800351c83edfd5a6d2d0",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1467:CAPUT",
+     "text": "São credores pignoratícios, independentemente de convenção:"
+    },
+    {
+     "label": "CC2002:ART.1467:INC.I",
+     "text": "os hospedeiros, ou fornecedores de pousada ou alimento, sobre as bagagens, móveis, jóias ou dinheiro que os seus consumidores ou fregueses tiverem consigo nas respectivas casas ou estabelecimentos, pelas despesas ou consumo que aí tiverem feito;"
+    },
+    {
+     "label": "CC2002:ART.1467:INC.II",
+     "text": "o dono do prédio rústico ou urbano, sobre os bens móveis que o rendeiro ou inquilino tiver guarnecendo o mesmo prédio, pelos aluguéis ou rendas."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: São credores pignoratícios, independentemente de convenção: | os hospedeiros, ou fornecedores de pousada ou alimento, sobre as bagagens, móveis, jóias ou dinheiro que os seus consumidores ou fregueses tiverem consigo nas respectivas casas ou estabelecimentos, pelas despesas ou consumo que aí tiverem feito; | o dono do prédio rústico ou urbano, sobre os bens móveis que o rendeiro ou inquilino tiver guarnecendo o mesmo prédio, pelos aluguéis ou rendas.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "993d27a9c9649b277a55564eb8b9075914fb4b9eb0aa37fc23d9707a491c37d2",
+     "o_que_significa": "987214bc6c25778a9f20c3ac32a8c52aac281168e0177fa60cf17b9203ac87ed",
+     "exemplo_pratico": "83634ff31b7b89d6303bfd6161fff384b772692c06ee94acd69ca5ff65bc5ca4",
+     "atencao": "fa487620139e0cbc1f58710134a86edbe06a1e63def48bbd1fbc11479bdcd544",
+     "palavras_dificeis": "daee21e25f652730e2c7d6e7a84eb43a5763342d6381c119a24e5741a16d13b3"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O inciso II do art. 1.467 também confere penhor legal ao proprietário do prédio rústico ou urbano sobre os móveis que guarnecem o imóvel, pelos aluguéis ou rendas.",
+   "finding": {
+    "target_id": "CC2002:ART.1467",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "Hospedarias e fornecedores de pousada ou alimentos têm penhor legal",
+    "legal_basis": "O inciso II do art. 1.467 também confere penhor legal ao proprietário do prédio rústico ou urbano sobre os móveis que guarnecem o imóvel, pelos aluguéis ou rendas.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "OMISSAO_DE_HIPOTESE_LEGAL",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "Exclui inteiramente a garantia legal do locador, metade do conteúdo normativo do artigo.",
+    "correction_direction": "Acrescentar a hipótese do proprietário/locador, os bens atingidos e os créditos garantidos.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 272,
+   "target_id": "CC2002:ART.1473",
+   "explanation_id": "ENTENDA/CC2002:ART.1473/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1473:CAPUT\tPodem ser objeto de hipoteca:\nCC2002:ART.1473:INC.I\tos imóveis e os acessórios dos imóveis conjuntamente com eles;\nCC2002:ART.1473:INC.II\to domínio direto;\nCC2002:ART.1473:INC.III\to domínio útil;\nCC2002:ART.1473:INC.IV\tas estradas de ferro;\nCC2002:ART.1473:INC.V\tos recursos naturais a que se refere o art. 1.230, independentemente do solo onde se acham;\nCC2002:ART.1473:INC.VI\tos navios;\nCC2002:ART.1473:INC.VII\tas aeronaves.\nCC2002:ART.1473:INC.VIII\to direito de uso especial para fins de moradia; (Incluído pela Lei nº 11.481, de 2007)\nCC2002:ART.1473:INC.IX\to direito real de uso; (Incluído pela Lei nº 11.481, de 2007)\nCC2002:ART.1473:INC.X\ta propriedade superficiária; (Redação dada pela Lei nº 14.620, de 2023)\nCC2002:ART.1473:INC.XI\tos direitos oriundos da imissão provisória na posse, quando concedida à União, aos Estados, ao Distrito Federal, aos Municípios ou às suas entidades delegadas e a respectiva cessão e promessa de cessão. (Incluído pela Lei nº 14.620, de 2023)\nCC2002:ART.1473:PAR.1\tA hipoteca dos navios e das aeronaves reger-se-á pelo disposto em lei especial. (Renumerado do parágrafo único pela Lei nº 11.481, de 2007)\nCC2002:ART.1473:PAR.2\tOs direitos de garantia instituídos nas hipóteses dos incisos IX e X do caput deste artigo ficam limitados à duração da concessão ou direito de superfície, caso tenham sido transferidos por período determinado. (Incluído pela Lei nº 11.481, de 2007)",
+   "source_snapshot_sha256": "6311ad1d02a38923400a52dada6d0d3a74becd350993974fe34b7b9f333881f1",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1473:CAPUT",
+     "text": "Podem ser objeto de hipoteca:"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.I",
+     "text": "os imóveis e os acessórios dos imóveis conjuntamente com eles;"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.II",
+     "text": "o domínio direto;"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.III",
+     "text": "o domínio útil;"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.IV",
+     "text": "as estradas de ferro;"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.V",
+     "text": "os recursos naturais a que se refere o art. 1.230, independentemente do solo onde se acham;"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.VI",
+     "text": "os navios;"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.VII",
+     "text": "as aeronaves."
+    },
+    {
+     "label": "CC2002:ART.1473:INC.VIII",
+     "text": "o direito de uso especial para fins de moradia; (Incluído pela Lei nº 11.481, de 2007)"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.IX",
+     "text": "o direito real de uso; (Incluído pela Lei nº 11.481, de 2007)"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.X",
+     "text": "a propriedade superficiária; (Redação dada pela Lei nº 14.620, de 2023)"
+    },
+    {
+     "label": "CC2002:ART.1473:INC.XI",
+     "text": "os direitos oriundos da imissão provisória na posse, quando concedida à União, aos Estados, ao Distrito Federal, aos Municípios ou às suas entidades delegadas e a respectiva cessão e promessa de cessão. (Incluído pela Lei nº 14.620, de 2023)"
+    },
+    {
+     "label": "CC2002:ART.1473:PAR.1",
+     "text": "A hipoteca dos navios e das aeronaves reger-se-á pelo disposto em lei especial. (Renumerado do parágrafo único pela Lei nº 11.481, de 2007)"
+    },
+    {
+     "label": "CC2002:ART.1473:PAR.2",
+     "text": "Os direitos de garantia instituídos nas hipóteses dos incisos IX e X do caput deste artigo ficam limitados à duração da concessão ou direito de superfície, caso tenham sido transferidos por período determinado. (Incluído pela Lei nº 11.481, de 2007)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 14 segmentos vigentes do dispositivo: Podem ser objeto de hipoteca: | os imóveis e os acessórios dos imóveis conjuntamente com eles; | o domínio direto; | o domínio útil; | as estradas de ferro; | os recursos naturais a que se refere o art. 1.230, independentemente do solo onde se acham; | os navios; | as aeronaves. | o direito de uso especial para fins de moradia; (Incluído pela Lei nº 11.481, de 2007) | o direito real de uso; (Incluído pela Lei nº 11.481, de 2007) | a propriedade superficiária; (Redação dada pela Lei nº 14.620, de 2023) | os direitos oriundos da imissão provisória na posse, quando concedida à União, aos Estados, ao Distrito Federal, aos Municípios ou às suas entidades delegadas e a respectiva cessão e promessa de cessão. (Incluído pela Lei nº 14.620, de 2023) | A hipoteca dos navios e das aeronaves reger-se-á pelo disposto em lei especial. (Renumerado do parágrafo único pela Lei nº 11.481, de 2007) | Os direitos de garantia instituídos nas hipóteses dos incisos IX e X do caput deste artigo ficam limitados à duração da concessão ou direito de superfície, caso tenham sido transferidos por período determinado. (Incluído pela Lei nº 11.481, de 2007)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "d35a2d9e4cff70702b58117a39b1ddc3bd7b1ab864e92e234a4585992072a6e6",
+     "o_que_significa": "b51eb58412821420c56751a9465e01bfb3d8b385eb3ca11d126aad0b0277c3c5",
+     "exemplo_pratico": "199b26ade07e0988c8297417f28b9b2eb1c8c3a4dda0e1f250e152ad3d78ba7d",
+     "atencao": "77eef8463f1b2c6fb4ffcde74e2d8962ce43697121e29d9fccbeeb5b1a9b91f7",
+     "palavras_dificeis": "ec98bb9f964d7af6918dd4699caa8f4a15c796a3ba582e407375065847f3d849"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O art. 1.473 enumera onze objetos, incluindo direito de uso especial para moradia, direito real de uso, propriedade superficiária e, desde 2023, direitos oriundos da imissão provisória na posse concedida a entes públicos ou delegadas; o § 2º limita certas garantias à duração do direito.",
+   "finding": {
+    "target_id": "CC2002:ART.1473",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "certos direitos imobiliários, transportes e outros objetos",
+    "legal_basis": "O art. 1.473 enumera onze objetos, incluindo direito de uso especial para moradia, direito real de uso, propriedade superficiária e, desde 2023, direitos oriundos da imissão provisória na posse concedida a entes públicos ou delegadas; o § 2º limita certas garantias à duração do direito.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "GENERALIZACAO_QUE_OCULTA_DIREITOS_RECENTES",
+    "severity": "ALTO",
+    "legal_or_pedagogical_consequence": "A expressão genérica não informa direitos hipotecáveis recentes nem o limite temporal aplicável.",
+    "correction_direction": "Identificar expressamente os incisos VIII a XI e a limitação temporal do § 2º.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 273,
+   "target_id": "CC2002:ART.1475",
+   "explanation_id": "ENTENDA/CC2002:ART.1475/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1475:CAPUT\tÉ nula a cláusula que proíbe ao proprietário alienar imóvel hipotecado.\nCC2002:ART.1475:PAR.UNICO\tPode convencionar-se que vencerá o crédito hipotecário, se o imóvel for alienado.",
+   "source_snapshot_sha256": "068bf44d9c2ad86373f0ef626de9879ff49d6dba6a54c214c7de447fd0ca20cc",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1475:CAPUT",
+     "text": "É nula a cláusula que proíbe ao proprietário alienar imóvel hipotecado."
+    },
+    {
+     "label": "CC2002:ART.1475:PAR.UNICO",
+     "text": "Pode convencionar-se que vencerá o crédito hipotecário, se o imóvel for alienado."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: É nula a cláusula que proíbe ao proprietário alienar imóvel hipotecado. | Pode convencionar-se que vencerá o crédito hipotecário, se o imóvel for alienado.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "b2bd65ca6308c8ad5213546befde73dbeca0ade069b264977c7bf163412039b7",
+     "o_que_significa": "427ffa4dd863f4fe217c305869559b5dbe9fdad95b42ba05b230ffe722a8cff4",
+     "exemplo_pratico": "3040ec63063b744e9d1f0d43e416f86faa69fbf682792cc0cb9396721daceed5",
+     "atencao": "a15b0a29e95d197365298b74fc4ba656d04e24656f51aa5bf325dca079f94450",
+     "palavras_dificeis": "9d92e7a002e82eb8ba643a35a27e980717ce3870cf6c678102029080b2349b68"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que É nula a cláusula que proíbe ao proprietário alienar imóvel hipotecado; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
+   "finding": null,
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 274,
+   "target_id": "CC2002:ART.1477",
+   "explanation_id": "ENTENDA/CC2002:ART.1477/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1477:CAPUT\tSalvo o caso de insolvência do devedor, o credor da segunda hipoteca, embora vencida, não poderá executar o imóvel antes de vencida a primeira.\nCC2002:ART.1477:PAR.1\tNão se considera insolvente o devedor por faltar ao pagamento das obrigações garantidas por hipotecas posteriores à primeira. (Incluído pela Lei nº 14.711, de 2023)\nCC2002:ART.1477:PAR.2\tO inadimplemento da obrigação garantida por hipoteca faculta ao credor declarar vencidas as demais obrigações de que for titular garantidas pelo mesmo imóvel. (Incluído pela Lei nº 14.711, de 2023)",
+   "source_snapshot_sha256": "a19162140697f48df636226a95d755ed08c3f6a6e20171e9daa634f4ef72a2f5",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1477:CAPUT",
+     "text": "Salvo o caso de insolvência do devedor, o credor da segunda hipoteca, embora vencida, não poderá executar o imóvel antes de vencida a primeira."
+    },
+    {
+     "label": "CC2002:ART.1477:PAR.1",
+     "text": "Não se considera insolvente o devedor por faltar ao pagamento das obrigações garantidas por hipotecas posteriores à primeira. (Incluído pela Lei nº 14.711, de 2023)"
+    },
+    {
+     "label": "CC2002:ART.1477:PAR.2",
+     "text": "O inadimplemento da obrigação garantida por hipoteca faculta ao credor declarar vencidas as demais obrigações de que for titular garantidas pelo mesmo imóvel. (Incluído pela Lei nº 14.711, de 2023)"
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 3 segmentos vigentes do dispositivo: Salvo o caso de insolvência do devedor, o credor da segunda hipoteca, embora vencida, não poderá executar o imóvel antes de vencida a primeira. | Não se considera insolvente o devedor por faltar ao pagamento das obrigações garantidas por hipotecas posteriores à primeira. (Incluído pela Lei nº 14.711, de 2023) | O inadimplemento da obrigação garantida por hipoteca faculta ao credor declarar vencidas as demais obrigações de que for titular garantidas pelo mesmo imóvel. (Incluído pela Lei nº 14.711, de 2023)",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "3addf4c8cb1daace8c50f2cec8b7a12d78a4de395503bc3201643050c406716f",
+     "o_que_significa": "b4c57ee39295399257c3c8013a019cf075c6d3aa0203c2d12d79a20cf7a29116",
+     "exemplo_pratico": "a7c733f130ebb21dd9e35ecb254f689d78f30c53b6d554c475f791182fa38262",
+     "atencao": "82b20e0021b08df67089270994619e51395adaf586549f333b84af4e5fbff5e4",
+     "palavras_dificeis": "0d461c432363918dbc21946815a7820af511b028734fa452d1d67c9f2ff43452"
+    }
+   },
+   "result": "ACHADO",
+   "comparison": "O § 2º do art. 1.477 faculta ao credor declarar vencidas outras obrigações de que seja titular e garantidas pelo mesmo imóvel; o dispositivo não estabelece requisito autônomo de comunicação.",
+   "finding": {
+    "target_id": "CC2002:ART.1477",
+    "audit_wave": "QA02_WAVE_04",
+    "problematic_field": "o_que_diz",
+    "problematic_excerpt": "a lei disciplina vencimento cruzado e comunicação",
+    "legal_basis": "O § 2º do art. 1.477 faculta ao credor declarar vencidas outras obrigações de que seja titular e garantidas pelo mesmo imóvel; o dispositivo não estabelece requisito autônomo de comunicação.",
+    "source_url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+    "nature": "INSERCAO_IMPRECISA_E_OMISSAO_DE_TITULARIDADE",
+    "severity": "MÉDIO",
+    "legal_or_pedagogical_consequence": "A síntese insere comunicação não prevista no texto e não esclarece que as demais obrigações devem pertencer ao mesmo credor e ter a mesma garantia imobiliária.",
+    "correction_direction": "Retirar a referência genérica a comunicação e explicitar os requisitos subjetivo e objetivo do § 2º.",
+    "confidence": "ALTA",
+    "human_review_required": true,
+    "checkpoint": 20,
+    "auditor": "wave04_201_325"
+   },
+   "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
+   "reviewer": "delegated-independent-auditor"
+  },
+  {
+   "queue_position": 275,
+   "target_id": "CC2002:ART.1478",
+   "explanation_id": "ENTENDA/CC2002:ART.1478/BASE/1",
+   "book": "DIREITOS_REAIS",
+   "origin_mission": "CC12",
+   "norm": "Lei 10.406/2002 (Código Civil)",
+   "as_of": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://www2.camara.leg.br/legin/fed/lei/2002/lei-10406-10-janeiro-2002-432893-normaatualizada-pl.html",
+     "role": "CURRENT_CONSOLIDATED_STATUTE",
+     "accessed_on": "2026-11-12"
+    }
+   ],
+   "current_law_snapshot": "CC2002:ART.1478:CAPUT\tO credor hipotecário que efetuar o pagamento, a qualquer tempo, das dívidas garantidas pelas hipotecas anteriores sub-rogar-se-á nos seus direitos, sem prejuízo dos que lhe competirem contra o devedor comum. (Redação dada pela Lei nº 14.711, de 2023)\nCC2002:ART.1478:PAR.UNICO\tSe o primeiro credor estiver promovendo a execução da hipoteca, o credor da segunda depositará a importância do débito e as despesas judiciais.",
+   "source_snapshot_sha256": "efaadd10659363f4633fa64784c927ec3ad3f201cdb6148bae216fd053e11f74",
+   "legal_segments_checked": [
+    {
+     "label": "CC2002:ART.1478:CAPUT",
+     "text": "O credor hipotecário que efetuar o pagamento, a qualquer tempo, das dívidas garantidas pelas hipotecas anteriores sub-rogar-se-á nos seus direitos, sem prejuízo dos que lhe competirem contra o devedor comum. (Redação dada pela Lei nº 14.711, de 2023)"
+    },
+    {
+     "label": "CC2002:ART.1478:PAR.UNICO",
+     "text": "Se o primeiro credor estiver promovendo a execução da hipoteca, o credor da segunda depositará a importância do débito e as despesas judiciais."
+    }
+   ],
+   "independent_rule_summary": "Foram conferidos autonomamente os 2 segmentos vigentes do dispositivo: O credor hipotecário que efetuar o pagamento, a qualquer tempo, das dívidas garantidas pelas hipotecas anteriores sub-rogar-se-á nos seus direitos, sem prejuízo dos que lhe competirem contra o devedor comum. (Redação dada pela Lei nº 14.711, de 2023) | Se o primeiro credor estiver promovendo a execução da hipoteca, o credor da segunda depositará a importância do débito e as despesas judiciais.",
+   "checks": {
+    "requirements": true,
+    "exceptions": true,
+    "consequences": true,
+    "fields": [
+     "o_que_diz",
+     "o_que_significa",
+     "exemplo_pratico",
+     "atencao",
+     "palavras_dificeis"
+    ],
+    "field_sha256": {
+     "o_que_diz": "57c832d600dcc853147c531e3c162bac898aa7af2409deff9e175a339e17e568",
+     "o_que_significa": "c00eecee28f33c1fcea83059f8dcaaf4b4a3a419881c7dd2d75e3340dd6f9619",
+     "exemplo_pratico": "b44913a73a67894fe140c0ea10877a7ecdb909094f7bda0a70df3c14acb0c7ff",
+     "atencao": "9eaadd62a602a369c07bd2700838eaaaedcecefd184e19bfff5a8d2aef8ba431",
+     "palavras_dificeis": "2af271f7f37834a0b9c85889dc4583e1d00cae6d45b73ec0dfc21ff313516e2d"
+    }
+   },
+   "result": "SEM_ACHADO_NO_ESCOPO_VERIFICADO",
+   "comparison": "Foram cotejados os 2 segmentos vigentes com os cinco campos ENTENDA. A explicação preserva a regra específica de que O credor hipotecário que efetuar o pagamento, a qualquer tempo, das dívidas garantidas pelas hipotecas anteriores sub-rogar-se-á nos seus direitos, sem prejuízo dos que lhe competirem contra o devedor comum. (Redação dad; não foi identificada contradição, requisito inventado ou omissão material no escopo examinado.",
    "finding": null,
    "independent_review_module": "QA02_WAVE04_DELEGATED_REVIEW",
    "reviewer": "delegated-independent-auditor"
