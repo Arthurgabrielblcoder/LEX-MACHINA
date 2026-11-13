@@ -30,7 +30,11 @@ PROTECTED = {
     "qa03_corpus": "dad0a9414fd42b4e5c348ab7e87b90b99501ae4b77c950c5cbfd7dbaef58a496",
     "cc13_corpus": "b9fa2d39b6b4292fe2be466427871e75e14b2a327fb0c35ae190d5443cfd5c8c",
 }
-HEADING_RE = re.compile(r"\s+(?P<kind>SUBT[IÍ]TULO|T[IÍ]TULO)\s+(?P<number>[IVXLCDM]+)\s+(?P<name>[^\n]+)$", re.I)
+# The source snapshots sometimes append an all-uppercase structural heading to
+# the final segment of the preceding article.  Keep this match case-sensitive:
+# title-case occurrences (for example, "Título X do Livro III") are legal
+# remissions inside the provision and must never be stripped as headings.
+HEADING_RE = re.compile(r"\s+(?P<kind>SUBT[IÍ]TULO|T[IÍ]TULO)\s+(?P<number>[IVXLCDM]+)\s+(?P<name>[^\n]+)$")
 REMISSION_RE = re.compile(r"\b(?:art(?:igo)?s?\.?|§)\s*[\d.]+(?:-[A-Z]+)?(?:\s*,?\s*(?:§|inciso)\s*[\wº°.-]+)?", re.I)
 
 
